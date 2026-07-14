@@ -1,0 +1,29 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Outils/")
+    - categorie == "tooling/diagram"
+views:
+  - type: table
+    name: Outils de diagramme
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - os
+      - langage
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Diagram-as-code
+    filters:
+      and:
+        - tags.contains("diagram-as-code")
+    order:
+      - file.name
+      - pitch
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc

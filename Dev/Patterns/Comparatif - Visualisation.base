@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "tooling/viz"
+views:
+  - type: table
+    name: Visualisation
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Interactif
+    filters:
+      and:
+        - file.hasTag("interactive-viz")
+    order:
+      - file.name
+      - pitch
+      - langage
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie.startsWith("automation/")
+views:
+  - type: table
+    name: Automatisation no-code
+    order:
+      - file.name
+      - pitch
+      - categorie
+      - langage
+      - licence_type
+      - hosted
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Self-hostable
+    filters:
+      and:
+        - hosted != "managed"
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

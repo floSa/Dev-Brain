@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "framework/orm"
+views:
+  - type: table
+    name: ORM
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc

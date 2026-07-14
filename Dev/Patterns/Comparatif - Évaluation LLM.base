@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "llm/eval"
+views:
+  - type: table
+    name: Évaluation LLM
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc

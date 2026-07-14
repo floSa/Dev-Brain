@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "database/vector"
+views:
+  - type: table
+    name: Bases vectorielles
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Self-host distribué
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

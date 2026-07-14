@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("cli")
+views:
+  - type: table
+    name: Frameworks CLI
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

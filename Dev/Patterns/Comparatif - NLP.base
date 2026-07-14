@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - or:
+        - file.hasTag("nlp")
+        - file.hasTag("information-retrieval")
+        - file.hasTag("ner")
+        - file.hasTag("sequence-labeling")
+        - file.hasTag("text-classification")
+views:
+  - type: table
+    name: NLP & recherche d'information
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

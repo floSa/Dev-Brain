@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "database/search"
+views:
+  - type: table
+    name: Moteurs de recherche
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Maintenus (hors déprécié)
+    filters:
+      and:
+        - status == "actif"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - scaling
+    sort:
+      - property: file.name
+        direction: asc

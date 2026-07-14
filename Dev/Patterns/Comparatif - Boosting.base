@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("boosting")
+views:
+  - type: table
+    name: Libs de boosting
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribués
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "database/timeseries"
+views:
+  - type: table
+    name: Bases temporelles
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc

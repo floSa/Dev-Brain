@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("signal-processing")
+views:
+  - type: table
+    name: Traitement du signal
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

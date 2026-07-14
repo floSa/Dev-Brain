@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "llm/observability"
+views:
+  - type: table
+    name: Observabilité LLM
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc

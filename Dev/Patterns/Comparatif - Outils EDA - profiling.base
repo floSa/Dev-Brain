@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("eda")
+views:
+  - type: table
+    name: Outils EDA / profiling
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

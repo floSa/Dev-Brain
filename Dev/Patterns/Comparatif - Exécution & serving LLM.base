@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "llm/local"
+views:
+  - type: table
+    name: Exécution & serving LLM
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Runtimes locaux (single-node)
+    filters:
+      and:
+        - scaling == "single-node"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - hosted
+      - status
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Serveurs haut débit (distribué)
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - hosted
+      - status
+    sort:
+      - property: file.name
+        direction: asc

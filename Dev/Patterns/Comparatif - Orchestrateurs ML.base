@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "ml/orchestration"
+views:
+  - type: table
+    name: Orchestrateurs ML
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - hosted
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Kubernetes-natif
+    filters:
+      and:
+        - tags.contains("kubernetes")
+    order:
+      - file.name
+      - pitch
+      - langage
+      - hosted
+    sort:
+      - property: file.name
+        direction: asc

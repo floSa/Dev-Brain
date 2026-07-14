@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Outils/")
+    - categorie == "tooling/api"
+views:
+  - type: table
+    name: Clients d'API
+    order:
+      - file.name
+      - pitch
+      - os
+      - licence_type
+      - langage
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - os
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

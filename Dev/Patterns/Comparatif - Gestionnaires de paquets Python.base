@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("package-manager")
+views:
+  - type: table
+    name: Gestionnaires de paquets Python
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+    sort:
+      - property: file.name
+        direction: asc

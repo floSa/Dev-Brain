@@ -1,0 +1,45 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "database/relational"
+views:
+  - type: table
+    name: Bases relationnelles
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribué (NewSQL)
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

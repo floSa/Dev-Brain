@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - or:
+        - categorie == "database/document"
+        - categorie == "database/keyvalue"
+        - categorie == "database/wide-column"
+views:
+  - type: table
+    name: Bases NoSQL
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribué
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

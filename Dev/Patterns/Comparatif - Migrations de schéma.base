@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "tooling/migration"
+views:
+  - type: table
+    name: Outils de migration
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source / open-core
+    filters:
+      and:
+        - licence_type != "proprietary"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

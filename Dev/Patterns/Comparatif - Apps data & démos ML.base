@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - or:
+        - categorie == "ui/data-app"
+        - categorie == "ui/ml-demo"
+views:
+  - type: table
+    name: Apps & démos
+    order:
+      - file.name
+      - pitch
+      - categorie
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Démos ML
+    filters:
+      and:
+        - file.hasTag("ml-demo")
+    order:
+      - file.name
+      - pitch
+      - langage
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "data/orchestration"
+views:
+  - type: table
+    name: Orchestrateurs data
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - hosted
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribués
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

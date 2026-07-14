@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Outils/")
+    - categorie == "tooling/design"
+views:
+  - type: table
+    name: Design & prototypage
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - os
+      - langage
+      - tags
+    sort:
+      - property: file.name
+        direction: asc

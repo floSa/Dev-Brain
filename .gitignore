@@ -1,0 +1,44 @@
+# Obsidian
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/appearance.json
+.obsidian/graph.json
+.obsidian/plugins/
+.obsidian/community-plugins.json
+.trash/
+
+# Notes orphelines créées par clic accidentel sur wikilinks fantômes
+# (Obsidian configuré via .obsidian/app.json pour rediriger ici)
+_orphans/*
+!_orphans/README.md
+
+# Secrets — NE JAMAIS COMMIT
+.env
+.env.*
+*.key
+*.pem
+secrets/
+mcp-config.local.json
+
+# Claude Code settings perso (non versionnés)
+.claude/settings.local.json
+
+# Sessions et caches AI temporaires (à toi de décider si tu commit ou non)
+# AI/sessions/   # décommente si tu ne veux pas pousser tes sessions
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Python (pour AI/scripts/)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Node (si jamais)
+node_modules/

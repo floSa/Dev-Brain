@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "tooling/stats"
+views:
+  - type: table
+    name: Outils stats
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Maintenus en production
+    filters:
+      and:
+        - maturite == "production"
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

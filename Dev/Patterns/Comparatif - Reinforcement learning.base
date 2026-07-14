@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "ml/framework"
+    - file.hasTag("reinforcement-learning")
+views:
+  - type: table
+    name: Libs RL
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - langage
+      - maturite
+      - scaling
+      - status
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

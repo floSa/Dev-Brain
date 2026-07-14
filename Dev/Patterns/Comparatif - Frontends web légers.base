@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - or:
+        - file.name == "FastAPI"
+        - file.name == "HTMX"
+        - file.name == "Streamlit"
+        - file.name == "Gradio"
+        - file.name == "Dash"
+views:
+  - type: table
+    name: Frontends web légers
+    order:
+      - file.name
+      - pitch
+      - categorie
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

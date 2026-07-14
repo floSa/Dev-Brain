@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "tooling/optim"
+views:
+  - type: table
+    name: Solveurs d'optimisation
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

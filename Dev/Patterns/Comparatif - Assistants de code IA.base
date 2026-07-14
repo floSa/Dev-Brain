@@ -1,0 +1,29 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Outils/")
+    - categorie == "tooling/code-assistant"
+views:
+  - type: table
+    name: Assistants de code IA
+    order:
+      - file.name
+      - pitch
+      - os
+      - licence_type
+      - langage
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Mode agent
+    filters:
+      and:
+        - tags.contains("agents")
+    order:
+      - file.name
+      - pitch
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

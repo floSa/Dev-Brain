@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "tooling/data"
+views:
+  - type: table
+    name: Manipulation de données
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: DataFrames
+    filters:
+      and:
+        - file.hasTag("dataframe")
+    order:
+      - file.name
+      - pitch
+      - langage
+      - scaling
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

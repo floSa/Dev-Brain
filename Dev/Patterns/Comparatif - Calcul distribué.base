@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "compute/distributed"
+views:
+  - type: table
+    name: Calcul distribué
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source maintenu
+    filters:
+      and:
+        - licence_type == "open-source"
+        - maturite != "deprecated"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - status
+    sort:
+      - property: file.name
+        direction: asc

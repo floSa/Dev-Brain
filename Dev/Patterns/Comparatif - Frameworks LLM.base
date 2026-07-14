@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "llm/framework"
+views:
+  - type: table
+    name: Frameworks LLM
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Frameworks généralistes (RAG / agents)
+    filters:
+      and:
+        - alternatives != null
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - status
+    sort:
+      - property: file.name
+        direction: asc

@@ -1,0 +1,34 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - tags.contains("text-to-sql")
+views:
+  - type: table
+    name: Text-to-SQL (frameworks + modules)
+    order:
+      - file.name
+      - pitch
+      - categorie
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Activement maintenus (OSS)
+    filters:
+      and:
+        - status == "actif"
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+    sort:
+      - property: file.name
+        direction: asc

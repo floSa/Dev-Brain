@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - or:
+        - file.hasTag("object-detection")
+        - file.hasTag("segmentation")
+views:
+  - type: table
+    name: Détection & segmentation
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

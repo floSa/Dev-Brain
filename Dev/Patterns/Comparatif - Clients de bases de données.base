@@ -1,0 +1,44 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Outils/")
+    - categorie == "tooling/db-admin"
+views:
+  - type: table
+    name: Clients de bases de données
+    order:
+      - file.name
+      - pitch
+      - os
+      - licence_type
+      - langage
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Universels (multi-SGBD)
+    filters:
+      and:
+        - tags.contains("relational")
+        - tags.contains("nosql")
+    order:
+      - file.name
+      - pitch
+      - os
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - os
+      - langage
+    sort:
+      - property: file.name
+        direction: asc

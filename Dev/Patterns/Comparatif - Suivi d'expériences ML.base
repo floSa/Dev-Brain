@@ -1,0 +1,34 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "ml/tracking"
+views:
+  - type: table
+    name: Suivi d'expériences
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - status
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source auto-hébergeable
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - status
+    sort:
+      - property: file.name
+        direction: asc

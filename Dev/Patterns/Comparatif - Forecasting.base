@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - file.hasTag("forecasting")
+views:
+  - type: table
+    name: Libs de forecasting
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Modèles neuronaux
+    filters:
+      and:
+        - file.hasTag("deep-learning")
+    order:
+      - file.name
+      - pitch
+      - scaling
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

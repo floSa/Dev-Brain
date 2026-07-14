@@ -1,0 +1,258 @@
+/* ========================================================================
+   DevBrain — Code couleurs par galaxie
+   ========================================================================
+   4 galaxies, 4 couleurs :
+   - DEV    (bleu acier  #3B82F6) : Services/, Bugs/, Patterns/, Rules/
+   - WIKI   (vert sauge  #10B981) : Wiki/Outils/, Wiki/Concepts/, Wiki/Workflows/
+   - SKILLS (violet      #8B5CF6) : AI/skills/
+   - META   (slate-gray  #94A3B8) : docs racine + AI/audits/ + AI/decisions/
+                                    (CHANGELOG, README, INSTALL, Home, etc.)
+
+   Activation : Settings → Appearance → CSS snippets → toggle "galaxies"
+   ======================================================================== */
+
+/* Variables ajustables au besoin */
+.theme-light, .theme-dark {
+  --galaxie-dev:    #3B82F6;   /* bleu acier */
+  --galaxie-wiki:   #10B981;   /* vert sauge */
+  --galaxie-skills: #8B5CF6;   /* violet */
+  --galaxie-meta:   #94A3B8;   /* slate-gray, neutre */
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   1. SIDEBAR — file explorer
+   ───────────────────────────────────────────────────────────────────── */
+
+/* DEV : dossiers racine */
+.nav-folder-title[data-path="Services"],
+.nav-folder-title[data-path="Bugs"],
+.nav-folder-title[data-path="Patterns"],
+.nav-folder-title[data-path="Rules"],
+.nav-folder-title[data-path^="Services/"],
+.nav-folder-title[data-path^="Bugs/"],
+.nav-folder-title[data-path^="Patterns/"],
+.nav-folder-title[data-path^="Rules/"] {
+  --galaxie-color: var(--galaxie-dev);
+}
+
+/* WIKI : Wiki/ et sous-dossiers */
+.nav-folder-title[data-path="Wiki"],
+.nav-folder-title[data-path^="Wiki/"] {
+  --galaxie-color: var(--galaxie-wiki);
+}
+
+/* SKILLS : AI/skills */
+.nav-folder-title[data-path="AI/skills"],
+.nav-folder-title[data-path^="AI/skills/"] {
+  --galaxie-color: var(--galaxie-skills);
+}
+
+/* META : AI/audits, AI/decisions, AI/scripts */
+.nav-folder-title[data-path="AI/audits"],
+.nav-folder-title[data-path="AI/decisions"],
+.nav-folder-title[data-path="AI/scripts"],
+.nav-folder-title[data-path^="AI/audits/"],
+.nav-folder-title[data-path^="AI/decisions/"],
+.nav-folder-title[data-path^="AI/scripts/"] {
+  --galaxie-color: var(--galaxie-meta);
+}
+
+/* Application aux dossiers : couleur + gras du titre */
+.nav-folder-title[data-path^="Services"],
+.nav-folder-title[data-path^="Bugs"],
+.nav-folder-title[data-path^="Patterns"],
+.nav-folder-title[data-path^="Rules"],
+.nav-folder-title[data-path^="Wiki"],
+.nav-folder-title[data-path^="AI/skills"] {
+  border-left: 3px solid var(--galaxie-color);
+  padding-left: 4px;
+}
+
+.nav-folder-title[data-path^="Services"] .nav-folder-title-content,
+.nav-folder-title[data-path^="Bugs"] .nav-folder-title-content,
+.nav-folder-title[data-path^="Patterns"] .nav-folder-title-content,
+.nav-folder-title[data-path^="Rules"] .nav-folder-title-content {
+  color: var(--galaxie-dev);
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="Wiki"] .nav-folder-title-content {
+  color: var(--galaxie-wiki);
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="AI/skills"] .nav-folder-title-content {
+  color: var(--galaxie-skills);
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="AI/audits"] .nav-folder-title-content,
+.nav-folder-title[data-path^="AI/decisions"] .nav-folder-title-content,
+.nav-folder-title[data-path^="AI/scripts"] .nav-folder-title-content {
+  color: var(--galaxie-meta);
+  font-weight: 600;
+}
+
+/* Application aux fichiers individuels : petite barre verticale colorée */
+.nav-file-title[data-path^="Services/"],
+.nav-file-title[data-path^="Bugs/"],
+.nav-file-title[data-path^="Patterns/"],
+.nav-file-title[data-path^="Rules/"] {
+  border-left: 2px solid var(--galaxie-dev);
+  padding-left: 6px;
+}
+
+.nav-file-title[data-path^="Wiki/"] {
+  border-left: 2px solid var(--galaxie-wiki);
+  padding-left: 6px;
+}
+
+.nav-file-title[data-path^="AI/skills/"] {
+  border-left: 2px solid var(--galaxie-skills);
+  padding-left: 6px;
+}
+
+/* META : fichiers .md racine + AI/audits/, AI/decisions/, AI/scripts/ */
+.nav-file-title[data-path="CHANGELOG.md"],
+.nav-file-title[data-path="CLAUDE.md"],
+.nav-file-title[data-path="CLAUDE-build.md"],
+.nav-file-title[data-path="CLAUDE-project.md"],
+.nav-file-title[data-path="CONTRIBUTING.md"],
+.nav-file-title[data-path="Home.md"],
+.nav-file-title[data-path="INSTALL.md"],
+.nav-file-title[data-path="Inbox.md"],
+.nav-file-title[data-path="README.md"],
+.nav-file-title[data-path^="AI/audits/"],
+.nav-file-title[data-path^="AI/decisions/"],
+.nav-file-title[data-path^="AI/scripts/"] {
+  border-left: 2px solid var(--galaxie-meta);
+  padding-left: 6px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   2. ONGLETS (tabs) — coloration de l'onglet actif selon la galaxie
+   ───────────────────────────────────────────────────────────────────── */
+
+.workspace-tab-header[data-path^="Services/"],
+.workspace-tab-header[data-path^="Bugs/"],
+.workspace-tab-header[data-path^="Patterns/"],
+.workspace-tab-header[data-path^="Rules/"] {
+  border-top: 2px solid var(--galaxie-dev);
+}
+
+.workspace-tab-header[data-path^="Wiki/"] {
+  border-top: 2px solid var(--galaxie-wiki);
+}
+
+.workspace-tab-header[data-path^="AI/skills/"] {
+  border-top: 2px solid var(--galaxie-skills);
+}
+
+.workspace-tab-header[data-path="CHANGELOG.md"],
+.workspace-tab-header[data-path="CLAUDE.md"],
+.workspace-tab-header[data-path="CLAUDE-build.md"],
+.workspace-tab-header[data-path="CLAUDE-project.md"],
+.workspace-tab-header[data-path="CONTRIBUTING.md"],
+.workspace-tab-header[data-path="Home.md"],
+.workspace-tab-header[data-path="INSTALL.md"],
+.workspace-tab-header[data-path="Inbox.md"],
+.workspace-tab-header[data-path="README.md"],
+.workspace-tab-header[data-path^="AI/audits/"],
+.workspace-tab-header[data-path^="AI/decisions/"],
+.workspace-tab-header[data-path^="AI/scripts/"] {
+  border-top: 2px solid var(--galaxie-meta);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   3. NOTE OUVERTE — bord gauche coloré selon le frontmatter galaxie:
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Cible la zone de la note dont le frontmatter contient galaxie: dev */
+.markdown-preview-view:has(.metadata-property[data-property-key="galaxie"]
+                            .metadata-property-value[data-text="dev"]) {
+  border-left: 4px solid var(--galaxie-dev);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="galaxie"]
+                            .metadata-property-value[data-text="wiki"]) {
+  border-left: 4px solid var(--galaxie-wiki);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="galaxie"]
+                            .metadata-property-value[data-text="skills"]) {
+  border-left: 4px solid var(--galaxie-skills);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="galaxie"]
+                            .metadata-property-value[data-text="meta"]),
+.markdown-preview-view:has(.metadata-property[data-property-key="galaxie"]
+                            .metadata-property-value[data-text="ai"]) {
+  border-left: 4px solid var(--galaxie-meta);
+}
+
+/* Idem en source mode */
+.markdown-source-view:has(.metadata-property[data-property-key="galaxie"]
+                           .metadata-property-value[data-text="dev"]) {
+  border-left: 4px solid var(--galaxie-dev);
+}
+.markdown-source-view:has(.metadata-property[data-property-key="galaxie"]
+                           .metadata-property-value[data-text="wiki"]) {
+  border-left: 4px solid var(--galaxie-wiki);
+}
+.markdown-source-view:has(.metadata-property[data-property-key="galaxie"]
+                           .metadata-property-value[data-text="skills"]) {
+  border-left: 4px solid var(--galaxie-skills);
+}
+.markdown-source-view:has(.metadata-property[data-property-key="galaxie"]
+                           .metadata-property-value[data-text="meta"]),
+.markdown-source-view:has(.metadata-property[data-property-key="galaxie"]
+                           .metadata-property-value[data-text="ai"]) {
+  border-left: 4px solid var(--galaxie-meta);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   4. PROPRIÉTÉ galaxie: dans le frontmatter — badge coloré
+   ───────────────────────────────────────────────────────────────────── */
+
+.metadata-property[data-property-key="galaxie"] .metadata-property-value {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.metadata-property[data-property-key="galaxie"]
+  .metadata-property-value[data-text="dev"] {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: var(--galaxie-dev);
+}
+
+.metadata-property[data-property-key="galaxie"]
+  .metadata-property-value[data-text="wiki"] {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--galaxie-wiki);
+}
+
+.metadata-property[data-property-key="galaxie"]
+  .metadata-property-value[data-text="skills"] {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: var(--galaxie-skills);
+}
+
+.metadata-property[data-property-key="galaxie"]
+  .metadata-property-value[data-text="meta"],
+.metadata-property[data-property-key="galaxie"]
+  .metadata-property-value[data-text="ai"] {
+  background-color: rgba(148, 163, 184, 0.15);
+  color: var(--galaxie-meta);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   5. GRAPH VIEW — couleurs des nœuds par galaxie (optionnel)
+   ─────────────────────────────────────────────────────────────────────
+   Pour activer dans le graph, va dans Settings → Graph view → Groups :
+   - Group 1 : ["galaxie":"dev"]                              → color #3B82F6
+   - Group 2 : ["galaxie":"wiki"]                             → color #10B981
+   - Group 3 : path:AI/skills/                                → color #8B5CF6
+   - Group 4 : ["galaxie":"meta"] OR ["galaxie":"ai"] OR
+               path:AI/audits/ OR path:AI/decisions/ OR
+               path:AI/scripts/                                → color #94A3B8
+
+   (Pas faisable en CSS pur, à régler manuellement dans Obsidian.)
+   ───────────────────────────────────────────────────────────────────── */

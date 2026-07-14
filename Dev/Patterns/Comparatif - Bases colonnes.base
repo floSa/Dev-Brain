@@ -1,0 +1,45 @@
+filters:
+  and:
+    - file.path.startsWith("Dev/Services/")
+    - categorie == "database/columnar"
+views:
+  - type: table
+    name: Bases colonnes / OLAP
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Embarqué
+    filters:
+      and:
+        - scaling == "single-node"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribué
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
