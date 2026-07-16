@@ -216,3 +216,29 @@ Constat brut, à toi de décider si tu veux les amorcer :
 4. **Concepts data engineering** : comble l'angle mort le plus large pour ton positionnement.
 5. **Services** (§2) : rapides, mécaniques, à faire en lot via `enrichir-brain`.
 6. **Patterns + Rules** : capitalise ta signature architecturale.
+
+---
+
+## 8. Grappe « architectures LLM 2026 » (ajout 2026-07-09)
+
+> Source : vidéo *« Le Transformer en passe d'être dépassé ? »* (Alexandre TL, 56 min,
+> YouTube `SqyHPlEM40Q`), analysée en détail dans un watch-report local
+> (`video-le-transformer-en-passe-detre-depasse.md` = toutes les slides + narration ;
+> chaque candidat ci-dessous pointe vers un timestamp précis de la vidéo).
+> Non traité — en attente de validation avant création via `enrichir-brain`.
+
+Concepts candidats (`Wiki/Concepts/`), du plus structurant au plus pointu :
+
+| Nom | Description | Lien avec l'existant |
+|---|---|---|
+| **Attention linéaire** | Attention sans softmax = mémoire associative de taille fixe (Θ(1) calcul/mémoire vs Θ(n)). Cadre unificateur attention ↔ Mamba. Le « paradoxe de Mamba » : efficient mais faible en rappel (MMLU). | complète `Transformer architectures`, `Tokenization` |
+| **Architectures hybrides LLM** | Mixer N couches d'attention linéaire pour 1 couche d'attention globale (ratio 3:1-4:1) : le rappel n'est porté que par quelques têtes. Ex. Qwen 3.5, Kimi Linear. | dépend d'Attention linéaire |
+| **µP (Maximal Update Parametrization)** | LR ∝ 1/largeur + init ∝ 1/√fan_in → dynamiques d'entraînement identiques à toute échelle, transfert des hyperparamètres petit→grand. | proche de tes fiches optimisation/entraînement |
+| **Mixture of Experts (MoE)** | Découpler paramètres totaux (performance, lois d'échelle) et actifs (coût d'inférence) par sparsité. Ex. DeepSeek V3 671B/37B, Kimi K2 1000B/32B. | trou visible : tous les modèles ouverts récents sont MoE |
+| **Calculs adaptatifs (early exit, looped transformers)** | Quantité de calcul variable selon la difficulté de l'entrée : Mixture of Depths, HRM/TRM (modèle petit bouclé — biais inductif de raisonnement algorithmique), architectures sans tokenisation (H-Net), RL/effort. | relie `Reasoning`, lois d'échelle |
+| **Attention différentielle** | Deux cartes softmax soustraites (λ) pour annuler le « bruit d'attention » corrélé — gains massifs sur needle-in-a-haystack (99.6 % vs 55 % à 4k). | pointu ; optionnel |
+| **Gating & règle delta (gestion de mémoire récurrente)** | Les deux mécanismes qui ont fait évoluer Mamba : décroissance exponentielle des associations passées + remplacement chirurgical (DeltaNet → GDN → KDA). | sous-fiche possible d'Attention linéaire |
+
+Suggestion de traitement : les 5 premiers forment une grappe cohérente
+(« pourquoi les LLM 2026 ne sont plus des Transformers vanilla ») ; les 2 derniers
+peuvent vivre comme sections des fiches parentes plutôt que fiches autonomes.
