@@ -56,7 +56,10 @@ tags: [anomaly-detection, unsupervised, tree-based, ensemble]
 
 - [[Détection d'outliers multivariée]] — le chapeau : toutes les familles de détecteurs et leurs hypothèses.
 - [[Détection d'outliers univariée]] — quand une seule variable suffit (z-score, IQR) ; plus simple, à essayer d'abord.
+- [[Local Outlier Factor]] — l'approche par densité locale : plus lente ($O(n^2)$), mais seule à capter les anomalies **contextuelles** — précisément l'angle mort d'Isolation Forest.
+- [[One-Class SVM]] — l'approche par frontière : apprend l'enveloppe du normal ; à réserver à la détection de nouveauté sur jeu propre.
 - [[Random Forest]] — même brique d'arbres, mais supervisée et avec des coupes optimisées, non aléatoires.
+- [[Extra Trees]] — le cousin supervisé le plus proche : lui aussi tire ses seuils au hasard.
 - [[Gaussian Mixture Models (GMM)]] — l'approche par densité : modélise le normal explicitement, plus interprétable, plus coûteuse.
 - [[Time series anomaly detection]] — quand les points sont ordonnés dans le temps, ce modèle ne s'applique pas tel quel.
 - [[Apprentissage non supervisé]] — le cadre englobant.

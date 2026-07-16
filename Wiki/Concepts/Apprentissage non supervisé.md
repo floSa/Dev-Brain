@@ -59,6 +59,7 @@ tags: [unsupervised, clustering]
 - [[Réduction de dimension]] — le chapeau de la compression / représentation.
 - [[PCA]] — la méthode linéaire de référence, point de départ par défaut.
 - [[Détection d'outliers multivariée]] — repérer l'anormal sans étiquettes.
+- [[Isolation Forest]] / [[Local Outlier Factor]] / [[One-Class SVM]] — les trois détecteurs de référence : isolement, densité locale, frontière.
 - [[embeddings]] — représentations apprises, le non supervisé des données non structurées.
 - [[Types de données et choix de modèle]] — l'aiguillage : pas de cible, donc quelle méthode.
 - [[Reinforcement learning]] — ni cible ni structure : un signal de récompense.

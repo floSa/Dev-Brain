@@ -82,6 +82,9 @@ C'est le tableau à consulter quand la donnée est difficile plutôt que la tâc
 | [[SVM]] | **oui, critique** | non → encoder | non | oui | **oui** | ★ |
 | [[k-NN]] | **oui, critique** | non → encoder | non | non | **non** | ★★ |
 | [[Naive Bayes]] | non | oui (variante multinomiale) | non | oui | **oui** | ★★ |
+| [[Analyse discriminante]] | conseillée | non → encoder | non | oui | avec `shrinkage` | ★★ |
+| [[Gaussian Process]] | **oui** | non → encoder | non | oui | non | ★ |
+| [[Régression quantile]] | **oui** | non → encoder | non | oui | avec L1 | ★★★ |
 | [[Perceptron et MLP]] | **oui** | non → encoder | non | limité | non | ☆ |
 
 Lecture : « Extrapole » = sait prédire hors de la plage de valeurs vue à l'entraînement. Les arbres, non — ils prédisent une constante par morceaux, donc plafonnent au dernier seuil appris. C'est la raison la plus fréquente d'un [[Gradient Boosting (GBDT)|GBDT]] qui échoue sur une tendance croissante.

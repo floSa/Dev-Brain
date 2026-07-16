@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 577,
+  "count": 584,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -77,6 +77,8 @@
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Isolation Forest",
+      "Local Outlier Factor",
+      "One-Class SVM",
       "PyOD",
       "STUMPY",
       "Time series anomaly detection"
@@ -115,9 +117,11 @@
     ],
     "bayesian": [
       "A priori conjugués",
+      "Analyse discriminante",
       "ArviZ",
       "CausalImpact",
       "Estimation MAP",
+      "Gaussian Process",
       "Hyperopt",
       "Inférence bayésienne",
       "MCMC",
@@ -135,6 +139,7 @@
       "evaluate"
     ],
     "boosting": [
+      "AdaBoost",
       "Boosting",
       "CatBoost",
       "Gradient Boosting (GBDT)",
@@ -173,6 +178,8 @@
       "imbalanced-learn"
     ],
     "classification": [
+      "AdaBoost",
+      "Analyse discriminante",
       "Apprentissage supervisé",
       "Arbres de décision",
       "Calibration",
@@ -180,6 +187,7 @@
       "Classification de texte",
       "Classification metrics",
       "Cross-entropy",
+      "Extra Trees",
       "Imbalanced classification",
       "Naive Bayes",
       "Perceptron et MLP",
@@ -638,10 +646,12 @@
       "txtai"
     ],
     "ensemble": [
+      "AdaBoost",
       "Bagging",
       "Boosting",
       "CatBoost",
       "Ensembling",
+      "Extra Trees",
       "Gradient Boosting (GBDT)",
       "Isolation Forest",
       "LightGBM",
@@ -1012,10 +1022,12 @@
       "Vector norms"
     ],
     "linear-model": [
+      "Analyse discriminante",
       "GAM",
       "GLM",
       "Régression linéaire",
       "Régression logistique",
+      "Régression quantile",
       "Régularisation"
     ],
     "linear-programming": [
@@ -1421,6 +1433,8 @@
     "non-parametric": [
       "Analyse de survie",
       "Bootstrap",
+      "Gaussian Process",
+      "Régression quantile",
       "Tests non paramétriques",
       "pingouin",
       "scipy.stats"
@@ -1730,14 +1744,17 @@
       "Analyse de survie",
       "Apprentissage supervisé",
       "Arbres de décision",
+      "Extra Trees",
       "GAM",
       "GLM",
+      "Gaussian Process",
       "Maintenance prédictive et RUL",
       "Perceptron et MLP",
       "Regression metrics",
       "Régression",
       "Régression et classification multi-sorties",
       "Régression linéaire",
+      "Régression quantile",
       "SVM",
       "Types de données et choix de modèle",
       "k-NN",
@@ -2032,6 +2049,8 @@
       "tool-use"
     ],
     "supervised": [
+      "AdaBoost",
+      "Analyse discriminante",
       "Apprentissage supervisé",
       "Arbres de décision",
       "Bagging",
@@ -2044,8 +2063,10 @@
       "Data leakage",
       "Ensembling",
       "Explicabilité des modèles",
+      "Extra Trees",
       "GAM",
       "GLM",
+      "Gaussian Process",
       "Gradient Boosting (GBDT)",
       "Imbalanced classification",
       "Imitation learning",
@@ -2061,6 +2082,7 @@
       "Régression et classification multi-sorties",
       "Régression linéaire",
       "Régression logistique",
+      "Régression quantile",
       "Régularisation",
       "SHAP",
       "SVM",
@@ -2204,8 +2226,10 @@
       "segment-anything"
     ],
     "tree-based": [
+      "AdaBoost",
       "Arbres de décision",
       "CatBoost",
+      "Extra Trees",
       "Gradient Boosting (GBDT)",
       "Isolation Forest",
       "LightGBM",
@@ -2237,7 +2261,9 @@
       "HDBSCAN",
       "Isolation Forest",
       "K-Means",
+      "Local Outlier Factor",
       "Manifold learning",
+      "One-Class SVM",
       "PCA",
       "PGA",
       "PaCMAP",
@@ -9220,6 +9246,32 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/AdaBoost.md",
+      "nom": "AdaBoost",
+      "alias": [
+        "Adaptive Boosting",
+        "Boosting adaptatif",
+        "AdaBoostClassifier",
+        "SAMME"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "ensemble",
+        "boosting",
+        "tree-based",
+        "classification"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Adam optimizer.md",
       "nom": "Adam optimizer",
       "alias": [
@@ -9407,6 +9459,35 @@
         "survival-analysis",
         "regression",
         "non-parametric"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Analyse discriminante.md",
+      "nom": "Analyse discriminante",
+      "alias": [
+        "LDA",
+        "QDA",
+        "Linear Discriminant Analysis",
+        "Quadratic Discriminant Analysis",
+        "Analyse discriminante linéaire",
+        "Analyse factorielle discriminante",
+        "AFD",
+        "LinearDiscriminantAnalysis"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "bayesian",
+        "linear-model"
       ],
       "alternatives": null
     },
@@ -11001,6 +11082,33 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Extra Trees.md",
+      "nom": "Extra Trees",
+      "alias": [
+        "ExtraTrees",
+        "Extremely Randomized Trees",
+        "Arbres extrêmement aléatoires",
+        "ExtraTreesClassifier",
+        "Extra-Trees"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/FAMD.md",
       "nom": "FAMD",
       "alias": [
@@ -11353,6 +11461,33 @@
         "clustering",
         "unsupervised",
         "maximum-likelihood"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Gaussian Process.md",
+      "nom": "Gaussian Process",
+      "alias": [
+        "GP",
+        "Processus gaussien",
+        "Régression par processus gaussien",
+        "GaussianProcessRegressor",
+        "Krigeage",
+        "Kriging"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "regression",
+        "bayesian",
+        "non-parametric"
       ],
       "alternatives": null
     },
@@ -12311,6 +12446,29 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Local Outlier Factor.md",
+      "nom": "Local Outlier Factor",
+      "alias": [
+        "LOF",
+        "Facteur d'aberration locale",
+        "LocalOutlierFactor",
+        "Densité locale"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Loi des grands nombres.md",
       "nom": "Loi des grands nombres",
       "alias": [
@@ -13244,6 +13402,30 @@
       "tags": [
         "signal-processing",
         "wavelet"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/One-Class SVM.md",
+      "nom": "One-Class SVM",
+      "alias": [
+        "OCSVM",
+        "SVM à une classe",
+        "OneClassSVM",
+        "SGDOneClassSVM",
+        "Novelty detection"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
       ],
       "alternatives": null
     },
@@ -14401,6 +14583,33 @@
         "linear-model",
         "supervised",
         "maximum-likelihood"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Régression quantile.md",
+      "nom": "Régression quantile",
+      "alias": [
+        "Quantile regression",
+        "QuantileRegressor",
+        "Perte pinball",
+        "Pinball loss",
+        "Régression médiane",
+        "Intervalles de prédiction"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "supervised",
+        "linear-model",
+        "non-parametric"
       ],
       "alternatives": null
     },

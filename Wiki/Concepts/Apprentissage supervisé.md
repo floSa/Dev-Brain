@@ -36,7 +36,7 @@ tags: [supervised, classification, regression]
 - **Linéaires** — frontière ou surface lisse, très interprétables : [[Régression linéaire]], [[Régression logistique]], [[GLM]], [[GAM]].
 - **À base d'arbres** — découpages successifs, dominants sur données tabulaires : [[Arbres de décision]], [[Random Forest]], [[Gradient Boosting (GBDT)]].
 - **À noyau / à distance** — reposent sur une notion de proximité : [[SVM]], [[k-NN]].
-- **Probabilistes** — modélisent la loi des données : [[Naive Bayes]], [[Inférence bayésienne]].
+- **Probabilistes** — modélisent la loi des données : [[Naive Bayes]], [[Analyse discriminante]], [[Gaussian Process]], [[Inférence bayésienne]].
 - **Réseaux de neurones** — représentations apprises, indispensables sur données non structurées : [[Perceptron et MLP]], [[CNN]], [[Transformer architectures]].
 
 ## Les maths, simplement

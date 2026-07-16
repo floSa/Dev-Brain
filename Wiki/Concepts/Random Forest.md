@@ -26,6 +26,21 @@ tags: [supervised, tree-based, ensemble, bagging]
 ### Arbres indépendants & profonds
 - Les arbres sont construits en parallèle, sans interaction, et souvent peu élagués. La variance individuelle est élevée mais s'annule par moyenne.
 
+### Les hyperparamètres, et à quoi ils servent
+
+| Paramètre | Ce qu'il fait | Sens du curseur |
+|---|---|---|
+| `n_estimators` | Nombre d'arbres | ↑ = toujours mieux, puis plafonne. **Ne surapprend pas** : c'est une moyenne, pas une capacité. Le seul coût est le temps |
+| `max_features` | Variables tirées à chaque nœud | **Le vrai levier.** ↓ = arbres plus décorrélés, moins de variance, plus de biais. Défaut : $\sqrt{d}$ en classification, $d/3$ en régression |
+| `max_depth` | Profondeur maximale | Laissé **libre** par défaut, contrairement au [[Gradient Boosting (GBDT)|boosting]] : ici les arbres doivent être forts, la moyenne s'occupe de la variance |
+| `min_samples_leaf` | Effectif minimal d'une feuille | ↑ = lisse le modèle. Le frein utile si les arbres libres surapprennent le bruit |
+| `bootstrap` | Rééchantillonnage avec remise | `True` par défaut ; c'est lui qui rend l'OOB possible |
+| `class_weight` | Poids des classes | `balanced` sur classes rares, avant de songer au rééchantillonnage ([[Imbalanced classification]]) |
+| `n_jobs` | Parallélisme | `-1` : les arbres sont indépendants, la parallélisation est gratuite |
+
+- **`max_features` est le seul paramètre qui mérite vraiment une recherche.** Le reste tient à des valeurs par défaut correctes — c'est la raison de la réputation « ça marche sans réglage » du modèle.
+- Curseur à retenir : `max_features` bas → arbres très différents les uns des autres → la moyenne réduit fort la variance. `max_features = d` → tous les arbres se ressemblent et la forêt dégénère vers un [[Bagging|bagging]] ordinaire.
+
 ### Out-of-bag (OOB)
 - Chaque observation est absente d'environ 1/3 des rééchantillons → erreur OOB = validation quasi gratuite, sans jeu de test séparé.
 

@@ -10,8 +10,8 @@ indexe: ml-eng
 <!-- AUTO:START -->
 Domaine **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
+- [[MOC/Concepts/Machine learning (notions)|Machine learning (notions)]] — 43 notion(s)
 - [[MOC/Concepts/Deep learning|Deep learning]] — 40 notion(s)
-- [[MOC/Concepts/Machine learning (notions)|Machine learning (notions)]] — 36 notion(s)
 - [[MOC/Concepts/Maths du ML|Maths du ML]] — 26 notion(s)
 - [[MOC/Concepts/Apprentissage par renforcement|Apprentissage par renforcement]] — 17 notion(s)
 - [[MOC/Concepts/LLM (notions)|LLM (notions)]] — 11 notion(s)

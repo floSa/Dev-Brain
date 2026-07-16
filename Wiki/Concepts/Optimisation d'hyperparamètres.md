@@ -49,6 +49,7 @@ tags: [hyperparameter-tuning, model-evaluation, bayesian]
 ## Approches voisines & alternatives
 
 - [[Validation croisée]] — la fonction de score que toute recherche optimise.
+- [[Gaussian Process]] — le modèle de substitution de l'optimisation bayésienne : il sait où il est ignorant, donc où explorer.
 - [[Compromis biais-variance]] — ce que le réglage navigue concrètement.
 - [[Régularisation]] — son $\lambda$ est l'hyperparamètre le plus emblématique à régler.
 

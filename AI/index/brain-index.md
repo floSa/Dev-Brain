@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 577 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 584 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -597,6 +597,8 @@
 - **Wasserstein distance** — domaines : data-sci, ml-eng · alias : Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal
 
 #### concept/ml
+- **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
+- **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
 - **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
 - **Apprentissage supervisé** — domaines : data-sci, ml-eng · alias : Supervised learning, Apprentissage supervise, Modélisation supervisée
 - **Arbres de décision** — domaines : data-sci, ml-eng · alias : Decision tree, Arbre de décision, CART
@@ -620,9 +622,11 @@
 - **Encodage des variables catégorielles** — domaines : data-sci · alias : Encodage catégoriel, Categorical encoding, One-Hot encoding, Target encoding, Weight of Evidence, WoE
 - **Ensembling** — domaines : data-sci, ml-eng · alias : méthodes d'ensemble, ensemble learning, ensemble de modèles, agrégation de modèles
 - **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
+- **Extra Trees** — domaines : data-sci, ml-eng · alias : ExtraTrees, Extremely Randomized Trees, Arbres extrêmement aléatoires, ExtraTreesClassifier, Extra-Trees
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
 - **GAM** — domaines : data-sci, ml-eng · alias : Modèles additifs généralisés, Generalized Additive Model, Modèle additif généralisé
 - **Gaussian Mixture Models (GMM)** — domaines : data-sci · alias : GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens
+- **Gaussian Process** — domaines : data-sci, ml-eng · alias : GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging
 - **GLM** — domaines : data-sci, ml-eng · alias : Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé
 - **Gradient Boosting (GBDT)** — domaines : data-sci, ml-eng · alias : GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM
 - **HDBSCAN** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
@@ -633,11 +637,13 @@
 - **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
 - **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
 - **k-NN** — domaines : data-sci, ml-eng · alias : KNN, k plus proches voisins, k-Nearest Neighbors, Plus proches voisins, KNeighborsClassifier, Apprentissage paresseux, Lazy learning
+- **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
 - **Mise à l'échelle** — domaines : data-sci · alias : Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler
 - **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
 - **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
 - **Naive Bayes** — domaines : data-sci, ml-eng · alias : Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB
+- **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
 - **Perceptron et MLP** — domaines : data-sci, ml-eng · alias : Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier
 - **Random Forest** — domaines : data-sci, ml-eng · alias : RF, Forêts aléatoires, Random forests, Forêt aléatoire
@@ -648,6 +654,7 @@
 - **Régression et classification multi-sorties** — domaines : data-sci · alias : multi-output, multioutput, multi-sorties, multi-target, multi-label, MultiOutputRegressor, MultiOutputClassifier, RegressorChain, ClassifierChain
 - **Régression linéaire** — domaines : data-sci, ml-eng · alias : Linear regression, OLS, Moindres carrés ordinaires
 - **Régression logistique** — domaines : data-sci, ml-eng · alias : Logistic regression, Régression logit
+- **Régression quantile** — domaines : data-sci, ml-eng · alias : Quantile regression, QuantileRegressor, Perte pinball, Pinball loss, Régression médiane, Intervalles de prédiction
 - **Régularisation** — domaines : data-sci, ml-eng · alias : Ridge, Lasso, ElasticNet, Pénalisation L1/L2, Regularization
 - **SVM** — domaines : data-sci, ml-eng · alias : Support Vector Machine, Machine à vecteurs de support, Séparateur à vaste marge, SVC, SVR, Astuce du noyau, Kernel trick
 - **Systèmes de recommandation** — domaines : data-sci, ml-eng · alias : recommender systems, recsys, filtrage collaboratif, collaborative filtering, factorisation matricielle, matrix factorization, two-tower

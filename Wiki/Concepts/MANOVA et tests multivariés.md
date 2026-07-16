@@ -54,7 +54,8 @@ tags: [hypothesis-testing, parametric-test, multivariate, effect-size]
 - [[Test t et ANOVA]] — le cas **univarié** (une seule réponse) que MANOVA généralise.
 - [[Correction des tests multiples]] — l'alternative (ANOVA séparées) qui exige une correction ; MANOVA contrôle nativement.
 - [[Tests d'hypothèse]] — le cadre général de décision H0 / H1.
-- [[Réduction de dimension]] — l'analyse discriminante (LDA), débouché naturel côté séparation des groupes.
+- [[Analyse discriminante]] — le débouché prédictif : là où MANOVA teste si les groupes diffèrent, LDA prédit l'appartenance et projette sur les axes qui séparent.
+- [[Réduction de dimension]] — la famille des projections, dont l'analyse discriminante est le membre supervisé.
 
 ## Pour aller plus loin
 

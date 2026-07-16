@@ -65,6 +65,9 @@ tags: [regression, supervised]
 - [[GLM]] — cibles non gaussiennes (comptages, proportions, durées).
 - [[GAM]] — non-linéarités lisses tout en gardant la lecture variable par variable.
 - [[Gradient Boosting (GBDT)]] — l'état de l'art sur tabulaire, au prix de l'extrapolation.
+- [[Régression quantile]] — prédire un quantile plutôt que la moyenne : intervalles de prédiction sans hypothèse de loi, et robustesse aux extrêmes.
+- [[Gaussian Process]] — l'incertitude native, à petit $n$ et évaluations coûteuses.
+- [[Analyse discriminante]] — le pendant côté classification de l'approche générative gaussienne.
 - [[Regression metrics]] — RMSE, MAE, MAPE, $R^2$ : laquelle et pourquoi.
 - [[Analyse de survie]] — quand la cible est une durée partiellement observée (censure).
 - [[Forecasting framing]] — quand la cible est une série temporelle.

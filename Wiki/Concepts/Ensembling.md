@@ -49,6 +49,7 @@ tags: [ensemble, supervised]
 - [[Bagging]] — famille parallèle, orientée variance.
 - [[Boosting]] — famille séquentielle, orientée biais.
 - [[Random Forest]], [[Gradient Boosting (GBDT)]] — les ensembles d'arbres les plus utilisés.
+- [[AdaBoost]] — le boosting fondateur ; [[Extra Trees]] — la variante la plus randomisée du bagging.
 - [[Arbres de décision]] — l'apprenant de base le plus courant des ensembles.
 - [[Compromis biais-variance]] — la grille de lecture des gains d'un ensemble.
 

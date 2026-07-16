@@ -45,6 +45,7 @@ tags: [supervised, ensemble, bagging]
 
 - [[Ensembling]] — la page chapeau : le bagging y figure comme la famille **parallèle** (réduction de variance).
 - [[Random Forest]] — l'application archétypale du bagging (arbres + décorrélation des variables).
+- [[Extra Trees]] — la variante qui pousse la décorrélation plus loin : seuils tirés au hasard, et pas de bootstrap par défaut.
 - [[Boosting]] — l'autre grande famille d'ensembles : **séquentielle** et orientée **biais**, là où le bagging est parallèle et orienté variance.
 - [[Arbres de décision]] — l'apprenant de base typique d'un bagging.
 

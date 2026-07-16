@@ -64,6 +64,8 @@ tags: [classification, supervised]
 - [[SVM]] — marge maximale ; efficace en grande dimension et à petit $n$.
 - [[k-NN]] — décision locale par vote des voisins ; baseline non paramétrique.
 - [[Naive Bayes]] — probabiliste, très rapide, référence historique sur le texte.
+- [[Analyse discriminante]] — le génératif gaussien : LDA/QDA, la baseline oubliée, excellente à petit $n$.
+- [[AdaBoost]] / [[Extra Trees]] — les autres membres des familles boosting et bagging.
 - [[Classification metrics]] / [[ROC-AUC & courbe PR]] — comment mesurer.
 - [[Imbalanced classification]] — quand une classe est rare.
 - [[Clustering]] — le pendant non supervisé : former des groupes sans étiquettes connues.

@@ -10,6 +10,8 @@ indexe: concept/ml
 <!-- AUTO:START -->
 Notions de la famille `concept/ml`.
 
+- [[Wiki/Concepts/AdaBoost|AdaBoost]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/Analyse discriminante|Analyse discriminante]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Apprentissage non supervisé|Apprentissage non supervisé]] — domaines : data-sci
 - [[Wiki/Concepts/Apprentissage supervisé|Apprentissage supervisé]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Arbres de décision|Arbres de décision]] — domaines : data-sci, ml-eng
@@ -33,9 +35,11 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/Encodage des variables catégorielles|Encodage des variables catégorielles]] — domaines : data-sci
 - [[Wiki/Concepts/Ensembling|Ensembling]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Explicabilité des modèles|Explicabilité des modèles]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/Extra Trees|Extra Trees]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Feature store — concept|Feature store — concept]] — domaines : mlops, data-eng
 - [[Wiki/Concepts/GAM|GAM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Gaussian Mixture Models (GMM)|Gaussian Mixture Models (GMM)]] — domaines : data-sci
+- [[Wiki/Concepts/Gaussian Process|Gaussian Process]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/GLM|GLM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Gradient Boosting (GBDT)|Gradient Boosting (GBDT)]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/HDBSCAN|HDBSCAN]] — domaines : data-sci
@@ -46,11 +50,13 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/K-Means|K-Means]] — domaines : data-sci
 - [[Wiki/Concepts/k-médoïds (PAM)|k-médoïds (PAM)]] — domaines : data-sci
 - [[Wiki/Concepts/k-NN|k-NN]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/Local Outlier Factor|Local Outlier Factor]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Mise à l'échelle|Mise à l'échelle]] — domaines : data-sci
 - [[Wiki/Concepts/Model registry & versioning|Model registry & versioning]] — domaines : mlops
 - [[Wiki/Concepts/Monitoring de modèle en production|Monitoring de modèle en production]] — domaines : mlops
 - [[Wiki/Concepts/Mécanismes de données manquantes|Mécanismes de données manquantes]] — domaines : data-sci
 - [[Wiki/Concepts/Naive Bayes|Naive Bayes]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/One-Class SVM|One-Class SVM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Optimisation d'hyperparamètres|Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Perceptron et MLP|Perceptron et MLP]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Random Forest|Random Forest]] — domaines : data-sci, ml-eng
@@ -61,6 +67,7 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/Régression et classification multi-sorties|Régression et classification multi-sorties]] — domaines : data-sci
 - [[Wiki/Concepts/Régression linéaire|Régression linéaire]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Régression logistique|Régression logistique]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/Régression quantile|Régression quantile]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Régularisation|Régularisation]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/SVM|SVM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Systèmes de recommandation|Systèmes de recommandation]] — domaines : data-sci, ml-eng

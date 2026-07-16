@@ -43,6 +43,7 @@ tags: [supervised, ensemble, boosting]
 ## Approches voisines & alternatives
 
 - [[Ensembling]] — la page chapeau : le boosting y figure comme la famille **séquentielle** (réduction de biais).
+- [[AdaBoost]] — le membre fondateur : repondère les exemples ratés. Cas particulier du gradient boosting à perte exponentielle.
 - [[Gradient Boosting (GBDT)|Gradient Boosting]] — la variante par descente de gradient, dominante sur tabulaire.
 - [[Bagging]] — l'autre grande famille d'ensembles : **parallèle** et orientée **variance**, là où le boosting est séquentiel et orienté biais.
 - [[Arbres de décision]] — l'apprenant faible typique d'un boosting.
