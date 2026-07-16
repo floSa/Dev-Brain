@@ -46,6 +46,8 @@ tags: [supervised, tree-based, ensemble, boosting]
 
 - [[Arbres de décision]] — l'apprenant de base ; le boosting en empile beaucoup, faibles et séquentiels.
 - [[Random Forest]] — l'autre famille d'ensembles d'arbres : parallèle et orientée variance, là où le boosting est séquentiel et orienté biais. Random Forest se règle plus facilement ; le boosting plafonne souvent plus haut.
+- [[Perceptron et MLP]] — le concurrent des réseaux, qui perd sur tabulaire à taille de données usuelle.
+- [[Types de données et choix de modèle]] — pourquoi c'est le défaut sur tabulaire, et sa limite : il n'extrapole pas.
 
 ## Pour aller plus loin
 

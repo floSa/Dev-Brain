@@ -48,6 +48,7 @@ tags: [model-evaluation, regression, supervised]
 
 ## Approches voisines & alternatives
 
+- [[Régression]] — le chapeau de la tâche dont ces métriques mesurent le résultat.
 - [[Régression linéaire]] — le modèle de référence dont on mesure ici l'erreur.
 - [[GLM]] — pour des cibles non gaussiennes, la déviance généralise l'erreur quadratique.
 - [[Validation croisée]] — estimation hors échantillon de ces métriques.

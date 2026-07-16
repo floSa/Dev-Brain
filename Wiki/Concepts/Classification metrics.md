@@ -48,6 +48,7 @@ tags: [model-evaluation, classification, supervised]
 
 ## Approches voisines & alternatives
 
+- [[Classification]] — le chapeau de la tâche dont ces métriques mesurent le résultat.
 - [[ROC-AUC & courbe PR]] — évaluation indépendante du seuil (toutes les décisions à la fois) vs résumé à un seuil fixé.
 - [[Calibration]] — justesse des probabilités prédites, complémentaire des métriques de décision.
 - [[Ranking metrics]] — quand seul l'ordre des prédictions compte ; Precision@k/Recall@k en transposent l'esprit à une liste.

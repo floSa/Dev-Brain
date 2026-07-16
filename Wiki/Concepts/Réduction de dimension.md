@@ -73,7 +73,9 @@ PCA est ici le cas pivot (tout quantitatif, un seul bloc), au même niveau que F
 
 ## Approches voisines & alternatives
 
+- [[Apprentissage non supervisé]] — le chapeau : réduire, regrouper, détecter l'anormal.
 - [[PCA]] — le socle linéaire quantitatif dont tout le reste dérive.
+- [[k-NN]] — le modèle que la réduction sauve : en grande dimension, les distances se concentrent et le voisinage perd son sens.
 - [[CA]], [[MCA]], [[FAMD]], [[MFA]] — déclinaisons selon le type et la structure des variables.
 - [[GPA]] — superposition de configurations multiples.
 - [[PGA]] — l'extension non euclidienne (variétés riemanniennes).

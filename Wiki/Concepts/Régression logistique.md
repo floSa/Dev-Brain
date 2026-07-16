@@ -49,7 +49,11 @@ tags: [classification, linear-model, supervised, maximum-likelihood]
 - [[Régularisation]] — pénalités L1/L2 sur les coefficients logistiques.
 - [[Maximum de vraisemblance]] — le principe d'estimation sous-jacent.
 - [[Gradient descent]], [[Newton & quasi-Newton]] — la log-vraisemblance n'a pas de forme close : descente de gradient ou Newton (IRLS).
-- SVM, arbres, gradient boosting — autres classifieurs (hors cluster).
+- [[Classification]] — le chapeau de la tâche : score, seuil, métriques, choix de famille.
+- [[SVM]] — même frontière linéaire, mais par marge maximale ; meilleur quand $d \gg n$, sans probabilités natives.
+- [[Naive Bayes]] — le pendant génératif : converge plus vite à petit $n$, mais probabilités sur-confiantes.
+- [[Perceptron et MLP]] — la logistique *est* un perceptron sans couche cachée ; le MLP en est la généralisation non linéaire.
+- [[Arbres de décision]], [[Gradient Boosting (GBDT)]] — les alternatives non linéaires, dominantes sur tabulaire.
 
 ## Pour aller plus loin
 

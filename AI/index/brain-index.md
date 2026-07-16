@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 567 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 577 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -597,10 +597,13 @@
 - **Wasserstein distance** — domaines : data-sci, ml-eng · alias : Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal
 
 #### concept/ml
+- **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
+- **Apprentissage supervisé** — domaines : data-sci, ml-eng · alias : Supervised learning, Apprentissage supervise, Modélisation supervisée
 - **Arbres de décision** — domaines : data-sci, ml-eng · alias : Decision tree, Arbre de décision, CART
 - **Bagging** — domaines : data-sci, ml-eng · alias : Bootstrap aggregating, Ensachage
 - **Boosting** — domaines : data-sci, ml-eng · alias : Boostage
 - **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
+- **Classification** — domaines : data-sci, ml-eng · alias : Classification supervisée, Classifieur, Classifier, Classement
 - **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
 - **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, MCC, Brier
 - **Clustering** — domaines : data-sci · alias : Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement
@@ -626,24 +629,31 @@
 - **Imbalanced classification** — domaines : data-sci, ml-eng · alias : classes déséquilibrées, déséquilibre de classes, class imbalance
 - **Imputation des valeurs manquantes** — domaines : data-sci · alias : Imputation, Missing value imputation, Gestion des valeurs manquantes, MICE, KNN imputer
 - **Ingénierie des caractéristiques** — domaines : data-sci, ml-eng · alias : Feature engineering, Ingénierie des variables, Feature preprocessing
+- **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
 - **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
 - **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
+- **k-NN** — domaines : data-sci, ml-eng · alias : KNN, k plus proches voisins, k-Nearest Neighbors, Plus proches voisins, KNeighborsClassifier, Apprentissage paresseux, Lazy learning
 - **Mise à l'échelle** — domaines : data-sci · alias : Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler
 - **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
 - **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
+- **Naive Bayes** — domaines : data-sci, ml-eng · alias : Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
+- **Perceptron et MLP** — domaines : data-sci, ml-eng · alias : Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier
 - **Random Forest** — domaines : data-sci, ml-eng · alias : RF, Forêts aléatoires, Random forests, Forêt aléatoire
 - **Ranking metrics** — domaines : data-sci, ml-eng · alias : Métriques de ranking, métriques d'ordonnancement, NDCG, DCG, MAP, MRR, Precision@k, Recall@k, Hit Rate, learning-to-rank, métriques de recherche d'information
 - **Regression metrics** — domaines : data-sci, ml-eng · alias : Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile
 - **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
+- **Régression** — domaines : data-sci, ml-eng · alias : Regression, Régression supervisée, Modélisation de cible continue
 - **Régression et classification multi-sorties** — domaines : data-sci · alias : multi-output, multioutput, multi-sorties, multi-target, multi-label, MultiOutputRegressor, MultiOutputClassifier, RegressorChain, ClassifierChain
 - **Régression linéaire** — domaines : data-sci, ml-eng · alias : Linear regression, OLS, Moindres carrés ordinaires
 - **Régression logistique** — domaines : data-sci, ml-eng · alias : Logistic regression, Régression logit
 - **Régularisation** — domaines : data-sci, ml-eng · alias : Ridge, Lasso, ElasticNet, Pénalisation L1/L2, Regularization
+- **SVM** — domaines : data-sci, ml-eng · alias : Support Vector Machine, Machine à vecteurs de support, Séparateur à vaste marge, SVC, SVR, Astuce du noyau, Kernel trick
 - **Systèmes de recommandation** — domaines : data-sci, ml-eng · alias : recommender systems, recsys, filtrage collaboratif, collaborative filtering, factorisation matricielle, matrix factorization, two-tower
 - **Sélection de variables** — domaines : data-sci, ml-eng · alias : Feature selection, Sélection de caractéristiques, Sélection d'attributs, RFE, SelectKBest
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
+- **Types de données et choix de modèle** — domaines : data-sci, ml-eng · alias : Choix de modèle, Model selection, Quel modèle choisir, Aiguillage modèle, Cheat sheet modèles, Types de variables
 - **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
 #### concept/nlp

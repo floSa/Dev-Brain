@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 567,
+  "count": 577,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -76,6 +76,7 @@
     "anomaly-detection": [
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
+      "Isolation Forest",
       "PyOD",
       "STUMPY",
       "Time series anomaly detection"
@@ -120,6 +121,7 @@
       "Hyperopt",
       "Inférence bayésienne",
       "MCMC",
+      "Naive Bayes",
       "Optimisation d'hyperparamètres",
       "Optuna",
       "PyMC",
@@ -171,21 +173,29 @@
       "imbalanced-learn"
     ],
     "classification": [
+      "Apprentissage supervisé",
       "Arbres de décision",
       "Calibration",
+      "Classification",
       "Classification de texte",
       "Classification metrics",
       "Cross-entropy",
       "Imbalanced classification",
+      "Naive Bayes",
+      "Perceptron et MLP",
       "ROC-AUC / courbe PR",
       "Régression et classification multi-sorties",
       "Régression logistique",
-      "imbalanced-learn"
+      "SVM",
+      "Types de données et choix de modèle",
+      "imbalanced-learn",
+      "k-NN"
     ],
     "cli": [
       "Typer"
     ],
     "clustering": [
+      "Apprentissage non supervisé",
       "Classification hiérarchique (CAH)",
       "Clustering",
       "Clustering evaluation",
@@ -454,6 +464,7 @@
       "Mixed precision",
       "Mixture of Experts",
       "OCR",
+      "Perceptron et MLP",
       "Pruning",
       "PyTorch",
       "PyTorch Geometric",
@@ -632,6 +643,7 @@
       "CatBoost",
       "Ensembling",
       "Gradient Boosting (GBDT)",
+      "Isolation Forest",
       "LightGBM",
       "Random Forest",
       "XGBoost"
@@ -688,6 +700,7 @@
       "Sélection de variables",
       "TF-IDF",
       "Time series feature engineering",
+      "Types de données et choix de modèle",
       "category_encoders",
       "librosa"
     ],
@@ -1715,13 +1728,19 @@
     ],
     "regression": [
       "Analyse de survie",
+      "Apprentissage supervisé",
       "Arbres de décision",
       "GAM",
       "GLM",
       "Maintenance prédictive et RUL",
+      "Perceptron et MLP",
       "Regression metrics",
+      "Régression",
       "Régression et classification multi-sorties",
       "Régression linéaire",
+      "SVM",
+      "Types de données et choix de modèle",
+      "k-NN",
       "lifelines"
     ],
     "regret-minimization": [
@@ -2013,10 +2032,12 @@
       "tool-use"
     ],
     "supervised": [
+      "Apprentissage supervisé",
       "Arbres de décision",
       "Bagging",
       "Boosting",
       "CatBoost",
+      "Classification",
       "Classification de texte",
       "Classification metrics",
       "Compromis biais-variance",
@@ -2031,18 +2052,24 @@
       "LIME",
       "LightGBM",
       "NER et étiquetage de séquence",
+      "Naive Bayes",
+      "Perceptron et MLP",
       "ROC-AUC / courbe PR",
       "Random Forest",
       "Regression metrics",
+      "Régression",
       "Régression et classification multi-sorties",
       "Régression linéaire",
       "Régression logistique",
       "Régularisation",
       "SHAP",
+      "SVM",
       "Scikit-Learn",
+      "Types de données et choix de modèle",
       "Validation croisée",
       "XGBoost",
-      "imbalanced-learn"
+      "imbalanced-learn",
+      "k-NN"
     ],
     "survival-analysis": [
       "Analyse de survie",
@@ -2180,6 +2207,7 @@
       "Arbres de décision",
       "CatBoost",
       "Gradient Boosting (GBDT)",
+      "Isolation Forest",
       "LightGBM",
       "Random Forest",
       "XGBoost"
@@ -2196,6 +2224,7 @@
       "Typer"
     ],
     "unsupervised": [
+      "Apprentissage non supervisé",
       "Classification hiérarchique (CAH)",
       "Clustering",
       "Clustering evaluation",
@@ -2206,6 +2235,7 @@
       "Gaussian Mixture Models (GMM)",
       "HCPC",
       "HDBSCAN",
+      "Isolation Forest",
       "K-Means",
       "Manifold learning",
       "PCA",
@@ -2215,6 +2245,7 @@
       "PyOD",
       "Réduction de dimension",
       "Scikit-Learn",
+      "Types de données et choix de modèle",
       "hdbscan",
       "k-médoïds (PAM)",
       "t-SNE and UMAP",
@@ -9411,6 +9442,50 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Apprentissage non supervisé.md",
+      "nom": "Apprentissage non supervisé",
+      "alias": [
+        "Unsupervised learning",
+        "Apprentissage non supervise",
+        "Méthodes non supervisées"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "unsupervised",
+        "clustering"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Apprentissage supervisé.md",
+      "nom": "Apprentissage supervisé",
+      "alias": [
+        "Supervised learning",
+        "Apprentissage supervise",
+        "Modélisation supervisée"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Arbres de décision.md",
       "nom": "Arbres de décision",
       "alias": [
@@ -10024,6 +10099,29 @@
       "pitch": null,
       "tags": [
         "model-evaluation",
+        "classification",
+        "supervised"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Classification.md",
+      "nom": "Classification",
+      "alias": [
+        "Classification supervisée",
+        "Classifieur",
+        "Classifier",
+        "Classement"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
         "classification",
         "supervised"
       ],
@@ -11851,6 +11949,30 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Isolation Forest.md",
+      "nom": "Isolation Forest",
+      "alias": [
+        "iForest",
+        "Forêt d'isolement",
+        "IsolationForest"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised",
+        "tree-based",
+        "ensemble"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Jailbreaking and defenses.md",
       "nom": "Jailbreaking and defenses",
       "alias": [
@@ -12919,6 +13041,32 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Naive Bayes.md",
+      "nom": "Naive Bayes",
+      "alias": [
+        "Bayésien naïf",
+        "Classifieur bayésien naïf",
+        "GaussianNB",
+        "MultinomialNB",
+        "BernoulliNB",
+        "ComplementNB"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "bayesian"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Newton & quasi-Newton.md",
       "nom": "Newton & quasi-Newton",
       "alias": [
@@ -13344,6 +13492,34 @@
         "file-format",
         "lakehouse",
         "olap"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Perceptron et MLP.md",
+      "nom": "Perceptron et MLP",
+      "alias": [
+        "Perceptron",
+        "MLP",
+        "Multi-Layer Perceptron",
+        "Perceptron multicouche",
+        "Réseau de neurones",
+        "Feedforward network",
+        "MLPClassifier"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "deep-learning",
+        "classification",
+        "regression"
       ],
       "alternatives": null
     },
@@ -14229,6 +14405,28 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Régression.md",
+      "nom": "Régression",
+      "alias": [
+        "Regression",
+        "Régression supervisée",
+        "Modélisation de cible continue"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "supervised"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Régularisation.md",
       "nom": "Régularisation",
       "alias": [
@@ -14323,6 +14521,33 @@
         "matrix-decomposition",
         "eigenvalue",
         "dimensionality-reduction"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/SVM.md",
+      "nom": "SVM",
+      "alias": [
+        "Support Vector Machine",
+        "Machine à vecteurs de support",
+        "Séparateur à vaste marge",
+        "SVC",
+        "SVR",
+        "Astuce du noyau",
+        "Kernel trick"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
       ],
       "alternatives": null
     },
@@ -15208,6 +15433,34 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Types de données et choix de modèle.md",
+      "nom": "Types de données et choix de modèle",
+      "alias": [
+        "Choix de modèle",
+        "Model selection",
+        "Quel modèle choisir",
+        "Aiguillage modèle",
+        "Cheat sheet modèles",
+        "Types de variables"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "unsupervised",
+        "classification",
+        "regression",
+        "feature-engineering"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/VC dimension.md",
       "nom": "VC dimension",
       "alias": [
@@ -15551,6 +15804,33 @@
         "embeddings",
         "semantic-search",
         "representation-learning"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/k-NN.md",
+      "nom": "k-NN",
+      "alias": [
+        "KNN",
+        "k plus proches voisins",
+        "k-Nearest Neighbors",
+        "Plus proches voisins",
+        "KNeighborsClassifier",
+        "Apprentissage paresseux",
+        "Lazy learning"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
       ],
       "alternatives": null
     },

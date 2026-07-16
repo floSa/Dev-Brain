@@ -44,6 +44,7 @@ tags: [cnn, computer-vision, deep-learning]
 
 ## Approches voisines & alternatives
 
+- [[Perceptron et MLP]] — la brique dont le CNN dérive : un MLP à connexions locales et poids partagés.
 - [[Architectures CNN]] — les familles concrètes (ResNet, MobileNet…) bâties sur ces briques.
 - [[Vision par ordinateur]] — le cadre et les tâches que les CNN servent.
 - [[Classification d'images]] / [[Détection d'objets]] / [[Segmentation]] — les tâches bâties sur un backbone convolutif.

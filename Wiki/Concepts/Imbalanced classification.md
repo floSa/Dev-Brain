@@ -48,7 +48,10 @@ tags: [classification, supervised, class-imbalance]
 
 ## Approches voisines & alternatives
 
+- [[Classification]] — le chapeau de la tâche ; le déséquilibre en est le cas particulier le plus fréquent.
 - [[Classification metrics]], [[ROC-AUC & courbe PR]] — choisir la métrique adaptée aux classes rares (PR-AUC plutôt qu'accuracy).
+- [[Isolation Forest]] — l'alternative non supervisée quand la classe rare est si rare qu'on ne l'étiquette pas.
+- [[k-NN]] — particulièrement vulnérable au déséquilibre : les voisins d'un point rare sont majoritairement fréquents.
 - [[Calibration]] — après rééchantillonnage les probabilités sont biaisées ; recalibrer.
 - [[Data leakage]] — rééchantillonner hors du pli d'entraînement est une cause classique de fuite.
 

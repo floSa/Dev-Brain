@@ -46,6 +46,9 @@ tags: [nlp, text-classification, classification, supervised, class-imbalance]
 ## Approches voisines & alternatives
 
 - [[TF-IDF]] — le baseline de features.
+- [[Naive Bayes]] — le classifieur de référence sur du TF-IDF : une seconde d'entraînement, souvent difficile à battre.
+- [[SVM]] — le concurrent historique sur texte, à l'aise quand le vocabulaire dépasse le nombre de documents.
+- [[Classification]] — le chapeau de la tâche.
 - [[embeddings]] — représentations denses pour la voie neuronale.
 - [[NER et étiquetage de séquence]] — la sœur : étiqueter les tokens plutôt que le document entier.
 - [[Classification metrics]] — comment l'évaluer correctement.

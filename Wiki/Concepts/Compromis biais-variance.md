@@ -45,7 +45,9 @@ tags: [model-evaluation, supervised]
 
 ## Approches voisines & alternatives
 
+- [[Apprentissage supervisé]] — le cadre dont ce compromis est le dilemme central.
 - [[Régularisation]] — ajoute du biais pour réduire la variance ; l'incarnation la plus directe du compromis.
+- [[k-NN]] — l'illustration la plus lisible du compromis : la courbe erreur vs `k` le donne à voir directement.
 - [[Random Forest]] — réduit la variance par agrégation (bagging) sans toucher au biais.
 - [[Gradient Boosting (GBDT)]] — réduit le biais séquentiellement, au risque d'augmenter la variance.
 - [[Validation croisée]] — l'outil de mesure du point d'équilibre.

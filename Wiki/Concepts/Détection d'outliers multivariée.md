@@ -50,6 +50,7 @@ tags: [anomaly-detection, unsupervised]
 ## Approches voisines & alternatives
 
 - [[Détection d'outliers univariée]] — seuils par variable, quand les corrélations n'entrent pas en jeu.
+- [[Isolation Forest]] — le détecteur par défaut sur tabulaire : linéaire en $n$, sans standardisation.
 - [[Time series anomaly detection|Détection d'anomalies temporelles]] — anomalies de forme/dynamique dans une série.
 - [[DBSCAN]] — clustering par densité ; les points « bruit » sont de fait des outliers.
 - [[Clustering]] — l'éloignement à tout cluster est un signal d'anomalie.

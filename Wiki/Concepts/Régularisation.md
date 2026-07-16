@@ -47,6 +47,8 @@ tags: [regularization, linear-model, supervised]
 ## Approches voisines & alternatives
 
 - [[Régression linéaire]] — le modèle de base que la pénalité contraint.
+- [[SVM]] — le terme $\lVert w \rVert^2$ de sa marge **est** une pénalité L2 ; son `C` est l'inverse de $\lambda$.
+- [[Perceptron et MLP]] — même pénalité L2 (`alpha`), complétée par dropout et early stopping.
 - [[Régression logistique]] — même pénalité, cible catégorielle.
 - [[GLM]] — la régularisation s'étend aux GLM (déviance + L1/L2).
 - [[Estimation MAP]] — la lecture bayésienne des pénalités.

@@ -48,6 +48,8 @@ tags: [feature-engineering]
 - [[Ingénierie des caractéristiques]] — l'étape englobante.
 - [[Régularisation]] — la pénalité dépend de l'échelle, standardiser d'abord.
 - [[Clustering]], [[K-Means]] — méthodes à distance, échelle déterminante.
+- [[SVM]], [[k-NN]] — les deux modèles supervisés où l'oubli de standardisation est l'erreur n°1.
+- [[Types de données et choix de modèle]] — quels modèles l'exigent, lesquels s'en passent (les arbres).
 - [[PCA]] — l'ACP doit être précédée d'une standardisation.
 
 ## Pour aller plus loin

@@ -49,6 +49,8 @@ tags: [clustering, unsupervised]
 
 ## Approches voisines & alternatives
 
+- [[Apprentissage non supervisé]] — le chapeau : clustering, réduction de dimension et détection d'anomalies.
+- [[Classification]] — le pendant supervisé : des classes connues d'avance, et une vérité terrain pour trancher.
 - [[K-Means]] — partition en $K$ groupes minimisant l'inertie intra-classe ; rapide, baseline.
 - [[Classification hiérarchique (CAH)]] — hiérarchie de fusions visualisée par dendrogramme ; pas de $K$ imposé.
 - [[DBSCAN]] — clustering par densité ; formes arbitraires et détection du bruit.

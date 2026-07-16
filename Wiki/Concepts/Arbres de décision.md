@@ -50,6 +50,11 @@ tags: [supervised, tree-based, classification, regression]
 - [[Random Forest]] — moyenne de nombreux arbres décorrélés ([[Bagging|bagging]]) ; réduit la variance au prix de la lisibilité.
 - [[Gradient Boosting (GBDT)|Gradient Boosting]] — arbres construits séquentiellement ([[Boosting|boosting]]) pour corriger les erreurs résiduelles ; souvent le meilleur en performance sur données tabulaires.
 - [[Régression logistique]] / [[Régression linéaire]] — alternatives linéaires, plus stables et interprétables quand la frontière est lisse.
+- [[SVM]] — frontière à marge maximale : lisse et globale, là où l'arbre découpe en escaliers orthogonaux aux axes.
+- [[k-NN]] — l'autre non-paramétrique, mais à distance : exige de standardiser, ce dont l'arbre se dispense.
+- [[Isolation Forest]] — la même brique d'arbre retournée vers le non supervisé : isoler l'anormal au lieu de prédire.
+- [[Classification]] / [[Régression]] — les deux tâches que l'arbre sert indifféremment.
+- [[Types de données et choix de modèle]] — pourquoi l'arbre se passe de standardisation et n'extrapole pas.
 
 ## Pour aller plus loin
 

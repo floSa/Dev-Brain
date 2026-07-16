@@ -48,6 +48,7 @@ tags: [feature-engineering]
 
 ## Approches voisines & alternatives
 
+- [[Types de données et choix de modèle]] — l'amont : quel type de variable appelle quel traitement, et quel modèle l'exige.
 - [[Imputation des valeurs manquantes]] — combler les trous avant de modéliser.
 - [[Encodage des variables catégorielles]] — passer de la catégorie au numérique.
 - [[Mise à l'échelle]] — homogénéiser les amplitudes des variables numériques.

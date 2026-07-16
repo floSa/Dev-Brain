@@ -47,6 +47,7 @@ tags: [nlp, information-retrieval, feature-engineering]
 - [[embeddings]] — la représentation **dense** apprise, qui capte le sens là où TF-IDF reste lexical.
 - [[Recherche d'information]] — TF-IDF en est la brique de pondération historique.
 - [[Classification de texte]] — TF-IDF + classifieur linéaire = le baseline de référence.
+- [[Naive Bayes]] — le classifieur qui l'accompagne par défaut : TF-IDF + MultinomialNB, la baseline texte imbattable en rapport qualité/effort.
 - [[Ingénierie des caractéristiques]] — TF-IDF vu comme extraction de features textuelles.
 - [[Traitement du langage naturel]] — page chapeau du sous-domaine.
 

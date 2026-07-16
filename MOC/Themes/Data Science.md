@@ -10,7 +10,7 @@ indexe: data-sci
 <!-- AUTO:START -->
 Domaine **Data Science** (`data-sci`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[MOC/Concepts/Machine learning (notions)|Machine learning (notions)]] — 44 notion(s)
+- [[MOC/Concepts/Machine learning (notions)|Machine learning (notions)]] — 54 notion(s)
 - [[MOC/Concepts/Statistiques|Statistiques]] — 37 notion(s)
 - [[MOC/Concepts/Maths du ML|Maths du ML]] — 24 notion(s)
 - [[MOC/Concepts/Deep learning|Deep learning]] — 17 notion(s)

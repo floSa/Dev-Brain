@@ -46,6 +46,8 @@ tags: [supervised, tree-based, ensemble, bagging]
 
 - [[Arbres de décision]] — l'apprenant de base ; Random Forest = son ensemble par bagging.
 - [[Gradient Boosting (GBDT)|Gradient Boosting]] — l'autre grande famille d'ensembles d'arbres : séquentiel (réduit le biais) là où Random Forest est parallèle (réduit la variance).
+- [[Isolation Forest]] — même brique d'arbres, mais non supervisée et à coupes aléatoires : isoler les anomalies plutôt que prédire.
+- [[Types de données et choix de modèle]] — ce que Random Forest exige de la donnée, et quand lui préférer autre chose.
 
 ## Pour aller plus loin
 

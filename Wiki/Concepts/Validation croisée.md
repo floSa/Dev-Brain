@@ -47,6 +47,7 @@ tags: [model-evaluation, resampling, supervised]
 
 ## Approches voisines & alternatives
 
+- [[Apprentissage supervisé]] — le cadre dont la CV mesure l'objectif réel : généraliser hors échantillon.
 - [[Walk-forward CV]] — la déclinaison temporelle (TimeSeriesSplit en détail) : origine de prévision glissante, jamais d'entraînement sur le futur.
 - [[Optimisation d'hyperparamètres]] — consomme la CV comme fonction de score pour comparer des configurations.
 - [[Compromis biais-variance]] — la CV mesure l'écart de généralisation que ce compromis décrit.

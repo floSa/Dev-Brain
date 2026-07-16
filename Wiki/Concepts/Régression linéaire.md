@@ -48,7 +48,8 @@ tags: [regression, linear-model, supervised]
 - [[Régularisation]] — Ridge/Lasso/ElasticNet contre la colinéarité et le surapprentissage.
 - [[Gradient descent]] — alternative itérative aux équations normales pour estimer les coefficients sur gros volumes.
 - [[GLM]] — la généralisation aux cibles non normales (la régression linéaire = GLM lien identité + loi normale).
-- [[Arbres de décision]], [[Random Forest]], k-NN — alternatives non linéaires non paramétriques (autre cluster).
+- [[Arbres de décision]], [[Random Forest]], [[k-NN]] — alternatives non linéaires non paramétriques (autre cluster).
+- [[Régression]] — le chapeau de la tâche : quand régresser, quelle métrique, quelle famille.
 
 ## Pour aller plus loin
 
