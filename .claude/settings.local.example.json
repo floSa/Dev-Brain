@@ -1,0 +1,10 @@
+{
+  "_comment": "Renomme en settings.local.json (gitignored). Permissions personnelles non-partageables : push, ouverture d'URLs, identité, etc.",
+  "permissions": {
+    "allow": [
+      "Bash(git push origin main:*)",
+      "Bash(git push origin:*)",
+      "Bash(git config --local user.*)"
+    ]
+  }
+}

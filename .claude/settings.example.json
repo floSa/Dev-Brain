@@ -1,0 +1,42 @@
+{
+  "_comment": "Renomme ce fichier en settings.json après lecture. Permissions read-only + WebFetch ciblé + deny destructeur. Tu peux ajouter/enlever des entrées selon ta tolérance.",
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote -v)",
+      "Bash(git ls-files:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(uvx:*)",
+      "Bash(uv --version)",
+      "Bash(npm --version)",
+      "Bash(node --version)",
+      "Bash(python --version)",
+      "Bash(claude --version)",
+      "Bash(claude mcp list)",
+      "Bash(claude plugin list)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:obsidian.md)",
+      "WebFetch(domain:help.obsidian.md)",
+      "WebFetch(domain:modelcontextprotocol.io)",
+      "WebFetch(domain:docs.astral.sh)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:arxiv.org)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git clean -f:*)",
+      "Bash(git branch -D:*)"
+    ]
+  }
+}
