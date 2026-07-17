@@ -56,4 +56,5 @@ tags: [linear-algebra, matrix-decomposition]
 
 - Golub & Van Loan — *Matrix Computations* (la référence).
 - Trefethen & Bau — *Numerical Linear Algebra*.
-- Factorisations non négatives (NMF) et creuses : variantes orientées interprétabilité / scalabilité.
+- [[NMF]] — la factorisation contrainte au positif : parties additives interprétables, non convexe et sans unicité.
+- [[ICA]] — la décomposition en sources indépendantes, qui prolonge le blanchiment par PCA d'une rotation.

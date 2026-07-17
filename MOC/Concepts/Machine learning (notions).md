@@ -43,6 +43,7 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/GLM|GLM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Gradient Boosting (GBDT)|Gradient Boosting (GBDT)]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/HDBSCAN|HDBSCAN]] — domaines : data-sci
+- [[Wiki/Concepts/ICA|ICA]] — domaines : data-sci
 - [[Wiki/Concepts/Imbalanced classification|Imbalanced classification]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Imputation des valeurs manquantes|Imputation des valeurs manquantes]] — domaines : data-sci
 - [[Wiki/Concepts/Ingénierie des caractéristiques|Ingénierie des caractéristiques]] — domaines : data-sci, ml-eng
@@ -56,6 +57,7 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/Monitoring de modèle en production|Monitoring de modèle en production]] — domaines : mlops
 - [[Wiki/Concepts/Mécanismes de données manquantes|Mécanismes de données manquantes]] — domaines : data-sci
 - [[Wiki/Concepts/Naive Bayes|Naive Bayes]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/NMF|NMF]] — domaines : data-sci
 - [[Wiki/Concepts/One-Class SVM|One-Class SVM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Optimisation d'hyperparamètres|Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Perceptron et MLP|Perceptron et MLP]] — domaines : data-sci, ml-eng

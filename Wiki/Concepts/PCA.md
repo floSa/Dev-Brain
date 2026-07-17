@@ -57,7 +57,10 @@ tags: [dimensionality-reduction, factor-analysis, unsupervised]
 - [[GPA]] — superposition de plusieurs configurations.
 - [[PGA]] — la généralisation aux variétés riemanniennes.
 - [[HCPC]] — clustering sur les composantes principales.
-- ICA, kernel PCA, t-SNE / UMAP — alternatives (indépendance, non-linéarité) hors brain.
+- [[ICA]] — le contraste majeur : décorréler (ordre 2) ne suffit pas, l'ICA vise l'indépendance (ordres supérieurs). Le blanchiment qu'elle exige *est* une PCA.
+- [[NMF]] — la factorisation contrainte au positif : parties additives interprétables, au prix de l'orthogonalité et de la qualité de reconstruction.
+- [[Autoencodeurs]] — la généralisation non linéaire : un autoencodeur linéaire retrouve exactement le sous-espace de la PCA.
+- kernel PCA, [[t-SNE and UMAP]] — les autres voies non linéaires.
 
 ## Pour aller plus loin
 

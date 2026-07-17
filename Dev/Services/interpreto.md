@@ -10,7 +10,7 @@ hosted: self
 maturite: experimental
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/LIME|LIME]]"]
+alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/LIME|LIME]]", "[[Dev/Services/Captum|Captum]]", "[[Dev/Services/SAELens|SAELens]]"]
 remplace_par: []
 status: actif
 tags: [explainability, llm, nlp]
@@ -62,10 +62,18 @@ Projet des équipes FOR et DEEL de l'**IRT Saint-Exupéry** (Toulouse), soutenu 
 
 - [[Dev/Services/SHAP|SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
 - [[Dev/Services/LIME|LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales.
+- [[Dev/Services/Captum|Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
+- [[Dev/Services/SAELens|SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 
 ## Liens
 
 - [[Explicabilité des modèles]] — le concept parent : familles de méthodes, limites, et pourquoi une explication n'est pas une cause.
+- [[Attribution par gradient]] — la moitié « attributions » de la bibliothèque : Saliency, Integrated Gradients, SmoothGrad, GradientShap.
+- [[Probing]] — ses sondes supervisées (linéaires, par centroïdes).
+- [[Sparse autoencoders]] — ses dictionnaires appris (Vanilla, TopK, JumpReLU, BatchTopK).
+- [[NMF]] / [[ICA]] — ses autres méthodes de dictionnaire, linéaires : les baselines honnêtes avant de sortir un SAE.
+- [[Interprétabilité mécaniste]] — le domaine dont relèvent ses méthodes à base de concepts.
+- [[Dev/Services/nnsight|nnsight]] — sa dépendance directe pour l'extraction d'activations.
 - [[Dev/Patterns/Comparatif - Explicabilité|Comparatif - Explicabilité]] — le tableau de la famille.
 - [[Traitement du langage naturel]] — le domaine visé.
 - [[Transformer architectures]] / [[Self-attention]] — les modèles que la bibliothèque instrumente.

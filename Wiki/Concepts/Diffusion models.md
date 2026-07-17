@@ -24,7 +24,7 @@ tags: [generative-model, diffusion, deep-learning]
 - Apprendre à débruiter revient à estimer le **gradient de la log-densité** (le *score*) — d'où l'équivalence avec les *score-based models* / SDE (Song et al.).
 
 ### Diffusion latente
-- Diffuser non pas dans l'espace **pixel** mais dans un **espace latent** compressé par un autoencodeur → coût divisé. C'est la base de Stable Diffusion. Le débruiteur fut un **U-Net**, de plus en plus un [[Transformer architectures|Transformer]] (DiT, backbone de SD3 et Sora).
+- Diffuser non pas dans l'espace **pixel** mais dans un **espace latent** compressé par un [[Autoencodeurs|autoencodeur]] → coût divisé. C'est la base de Stable Diffusion. Le débruiteur fut un **U-Net**, de plus en plus un [[Transformer architectures|Transformer]] (DiT, backbone de SD3 et Sora).
 
 ### Conditionnement et guidance
 - On conditionne par un **texte** (via les [[embeddings]] d'un encodeur type CLIP/T5) injecté par cross-attention. La **classifier-free guidance** amplifie l'effet du prompt au prix de la diversité.

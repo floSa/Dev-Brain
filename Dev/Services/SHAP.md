@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/LIME|LIME]]", "[[Dev/Services/interpreto|interpreto]]"]
+alternatives: ["[[Dev/Services/LIME|LIME]]", "[[Dev/Services/interpreto|interpreto]]", "[[Dev/Services/Captum|Captum]]"]
 remplace_par: []
 status: actif
 tags: [explainability, supervised]
@@ -53,6 +53,7 @@ Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de 
 
 - [[Dev/Services/LIME|LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales.
 - [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
+- [[Dev/Services/Captum|Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
 
 ## Liens
 

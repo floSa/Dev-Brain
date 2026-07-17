@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 585,
+  "count": 597,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -448,8 +448,11 @@
       "AlphaZero and self-play",
       "Apprentissage auto-supervisé en vision",
       "Architectures CNN",
+      "Attribution par gradient",
       "Augmentation d'images",
+      "Autoencodeurs",
       "CNN",
+      "Captum",
       "Chronos",
       "Classification d'images",
       "DeepSpeed",
@@ -464,6 +467,7 @@
       "Gradient checkpointing",
       "Graph Neural Networks",
       "HuggingFace",
+      "Interprétabilité mécaniste",
       "JAX",
       "Keras",
       "Kolmogorov-Arnold Networks",
@@ -473,6 +477,7 @@
       "Mixture of Experts",
       "OCR",
       "Perceptron et MLP",
+      "Probing",
       "Pruning",
       "PyTorch",
       "PyTorch Geometric",
@@ -484,10 +489,12 @@
       "Segment Anything (SAM)",
       "Segmentation",
       "Self-attention",
+      "Sparse autoencoders",
       "Speech models",
       "Stable-Baselines3",
       "State Space Models",
       "Suivi d'objets",
+      "Superposition",
       "TensorBoard",
       "TensorFlow",
       "Transfer learning vision",
@@ -536,13 +543,16 @@
       "scipy.signal"
     ],
     "dimensionality-reduction": [
+      "Autoencodeurs",
       "CA",
       "FAMD",
       "Fanalysis",
       "GPA",
+      "ICA",
       "MCA",
       "MFA",
       "Manifold learning",
+      "NMF",
       "PCA",
       "PGA",
       "PaCMAP",
@@ -678,10 +688,19 @@
       "Sequential testing"
     ],
     "explainability": [
+      "Attribution par gradient",
+      "Captum",
       "Explicabilité des modèles",
+      "Interprétabilité mécaniste",
       "LIME",
+      "Probing",
+      "SAELens",
       "SHAP",
-      "interpreto"
+      "Sparse autoencoders",
+      "Superposition",
+      "TransformerLens",
+      "interpreto",
+      "nnsight"
     ],
     "exploration-exploitation": [
       "Exploration vs exploitation"
@@ -692,8 +711,10 @@
       "Fanalysis",
       "GPA",
       "HCPC",
+      "ICA",
       "MCA",
       "MFA",
+      "NMF",
       "PCA",
       "Prince",
       "Réduction de dimension"
@@ -1073,6 +1094,7 @@
       "Human-in-the-loop",
       "Inference optimization",
       "Instructor",
+      "Interprétabilité mécaniste",
       "Jailbreaking and defenses",
       "LLM benchmarks",
       "LLM caching",
@@ -1113,14 +1135,17 @@
       "Reliability patterns",
       "Reward modeling",
       "Routing and cascading",
+      "SAELens",
       "SFT",
       "SGLang",
       "Scaling laws",
       "Semantic Kernel",
       "Server-Sent Events & streaming LLM",
       "Small Language Models",
+      "Sparse autoencoders",
       "Speculative decoding",
       "Structured outputs",
+      "Superposition",
       "Synthetic data generation",
       "TGI",
       "TRL",
@@ -1128,6 +1153,7 @@
       "Text-to-SQL",
       "Tokenization",
       "Tool use patterns",
+      "TransformerLens",
       "TruLens",
       "Tunix",
       "Unsloth",
@@ -1138,6 +1164,7 @@
       "interpreto",
       "llama.cpp",
       "mcp-protocol",
+      "nnsight",
       "prompt-caching",
       "promptfoo",
       "smolagents",
@@ -1831,9 +1858,11 @@
     ],
     "representation-learning": [
       "Apprentissage auto-supervisé en vision",
+      "Autoencodeurs",
       "Graph Neural Networks",
       "Metric learning & ré-identification",
       "Modèles de fondation vision",
+      "Probing",
       "PyTorch Geometric",
       "embeddings"
     ],
@@ -2252,6 +2281,7 @@
     ],
     "unsupervised": [
       "Apprentissage non supervisé",
+      "Autoencodeurs",
       "Classification hiérarchique (CAH)",
       "Clustering",
       "Clustering evaluation",
@@ -2262,10 +2292,12 @@
       "Gaussian Mixture Models (GMM)",
       "HCPC",
       "HDBSCAN",
+      "ICA",
       "Isolation Forest",
       "K-Means",
       "Local Outlier Factor",
       "Manifold learning",
+      "NMF",
       "One-Class SVM",
       "PCA",
       "PGA",
@@ -2274,6 +2306,7 @@
       "PyOD",
       "Réduction de dimension",
       "Scikit-Learn",
+      "Sparse autoencoders",
       "Types de données et choix de modèle",
       "hdbscan",
       "k-médoïds (PAM)",
@@ -3351,6 +3384,28 @@
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/Captum.md",
+      "nom": "Captum",
+      "alias": [
+        "captum",
+        "Captum.ai"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "ml/framework",
+      "domaines": null,
+      "pitch": "Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.",
+      "tags": [
+        "explainability",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[Dev/Services/SHAP|SHAP]]",
+        "[[Dev/Services/interpreto|interpreto]]",
+        "[[Dev/Services/nnsight|nnsight]]"
       ]
     },
     {
@@ -6515,6 +6570,28 @@
       "alternatives": []
     },
     {
+      "path": "Dev/Services/SAELens.md",
+      "nom": "SAELens",
+      "alias": [
+        "sae_lens",
+        "SAE Lens",
+        "HookedSAETransformer"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "ml/framework",
+      "domaines": null,
+      "pitch": "Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Dev/Services/TransformerLens|TransformerLens]]",
+        "[[Dev/Services/interpreto|interpreto]]"
+      ]
+    },
+    {
       "path": "Dev/Services/SDV.md",
       "nom": "SDV",
       "alias": [
@@ -6581,7 +6658,8 @@
       ],
       "alternatives": [
         "[[Dev/Services/LIME|LIME]]",
-        "[[Dev/Services/interpreto|interpreto]]"
+        "[[Dev/Services/interpreto|interpreto]]",
+        "[[Dev/Services/Captum|Captum]]"
       ]
     },
     {
@@ -7249,6 +7327,28 @@
         "[[Dev/Services/Seldon Core|Seldon Core]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/TransformerLens.md",
+      "nom": "TransformerLens",
+      "alias": [
+        "transformer_lens",
+        "HookedTransformer",
+        "TransformerBridge"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "ml/framework",
+      "domaines": null,
+      "pitch": "Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Dev/Services/nnsight|nnsight]]",
+        "[[Dev/Services/SAELens|SAELens]]"
       ]
     },
     {
@@ -8073,7 +8173,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/SHAP|SHAP]]",
-        "[[Dev/Services/LIME|LIME]]"
+        "[[Dev/Services/LIME|LIME]]",
+        "[[Dev/Services/Captum|Captum]]",
+        "[[Dev/Services/SAELens|SAELens]]"
       ]
     },
     {
@@ -8288,6 +8390,28 @@
         "[[Dev/Services/statsforecast|statsforecast]]",
         "[[Dev/Services/darts|darts]]",
         "[[Dev/Services/Prophet|Prophet]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/nnsight.md",
+      "nom": "nnsight",
+      "alias": [
+        "NNsight",
+        "nnsight.net",
+        "NDIF"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "ml/framework",
+      "domaines": null,
+      "pitch": "Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Dev/Services/TransformerLens|TransformerLens]]",
+        "[[Dev/Services/Captum|Captum]]"
       ]
     },
     {
@@ -9669,6 +9793,35 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Attribution par gradient.md",
+      "nom": "Attribution par gradient",
+      "alias": [
+        "Saliency",
+        "Saliency map",
+        "Carte de saillance",
+        "Integrated Gradients",
+        "IntegratedGradients",
+        "SmoothGrad",
+        "InputxGradient",
+        "Grad-CAM",
+        "GradientShap",
+        "Attribution methods"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Augmentation d'images.md",
       "nom": "Augmentation d'images",
       "alias": [
@@ -9714,6 +9867,35 @@
       "tags": [
         "timeseries",
         "stochastic-process"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Autoencodeurs.md",
+      "nom": "Autoencodeurs",
+      "alias": [
+        "Autoencodeur",
+        "Autoencoder",
+        "Auto-encodeur",
+        "AE",
+        "VAE",
+        "Variational Autoencoder",
+        "Autoencodeur variationnel",
+        "Denoising autoencoder"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "deep-learning",
+        "unsupervised",
+        "representation-learning",
+        "dimensionality-reduction"
       ],
       "alternatives": null
     },
@@ -11812,6 +11994,31 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/ICA.md",
+      "nom": "ICA",
+      "alias": [
+        "Independent Component Analysis",
+        "Analyse en composantes indépendantes",
+        "ACI",
+        "FastICA",
+        "Séparation aveugle de sources",
+        "Blind source separation"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Image generation.md",
       "nom": "Image generation",
       "alias": [
@@ -12064,6 +12271,33 @@
       "tags": [
         "forecasting",
         "timeseries"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Interprétabilité mécaniste.md",
+      "nom": "Interprétabilité mécaniste",
+      "alias": [
+        "Mechanistic interpretability",
+        "Mech interp",
+        "Interpretabilite mecaniste",
+        "Circuits",
+        "Transformer circuits",
+        "Activation patching",
+        "Causal tracing"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm"
       ],
       "alternatives": null
     },
@@ -13226,6 +13460,31 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/NMF.md",
+      "nom": "NMF",
+      "alias": [
+        "Non-negative Matrix Factorization",
+        "Factorisation en matrices non négatives",
+        "Factorisation non négative",
+        "NNMF",
+        "Semi-NMF",
+        "Convex NMF"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/ml",
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Naive Bayes.md",
       "nom": "Naive Bayes",
       "alias": [
@@ -13802,6 +14061,33 @@
         "positional-encoding",
         "transformers",
         "attention"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Probing.md",
+      "nom": "Probing",
+      "alias": [
+        "Probe",
+        "Probes",
+        "Sonde linéaire",
+        "Linear probe",
+        "Sondage",
+        "Diagnostic classifier",
+        "Probing classifier"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "representation-learning"
       ],
       "alternatives": null
     },
@@ -14997,6 +15283,35 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Sparse autoencoders.md",
+      "nom": "Sparse autoencoders",
+      "alias": [
+        "SAE",
+        "Sparse autoencoder",
+        "Autoencodeur parcimonieux",
+        "Autoencodeur creux",
+        "TopK SAE",
+        "JumpReLU SAE",
+        "BatchTopK",
+        "Dictionary learning"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm",
+        "unsupervised"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Speculative decoding.md",
       "nom": "Speculative decoding",
       "alias": [
@@ -15180,6 +15495,31 @@
         "object-detection",
         "computer-vision",
         "deep-learning"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Superposition.md",
+      "nom": "Superposition",
+      "alias": [
+        "Superposition hypothesis",
+        "Hypothèse de superposition",
+        "Polysémanticité",
+        "Polysemanticity",
+        "Neurones polysémantiques"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm"
       ],
       "alternatives": null
     },

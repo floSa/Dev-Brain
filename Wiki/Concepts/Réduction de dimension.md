@@ -80,6 +80,9 @@ PCA est ici le cas pivot (tout quantitatif, un seul bloc), au même niveau que F
 - [[GPA]] — superposition de configurations multiples.
 - [[PGA]] — l'extension non euclidienne (variétés riemanniennes).
 - [[Manifold learning]] — la branche non linéaire générale (Isomap, LLE, Kernel PCA).
+- [[ICA]] — sépare des sources indépendantes ; ne réduit pas vraiment (ni ordre ni variance expliquée).
+- [[NMF]] — parties additives sur données positives ; interprétable là où la PCA ne l'est pas.
+- [[Autoencodeurs]] — la version apprise et non linéaire de la PCA.
 - [[t-SNE and UMAP]] — la branche non linéaire (manifold), pour visualiser plutôt que pour chiffrer.
 - [[HCPC]] — le débouché naturel : classer sur les composantes.
 

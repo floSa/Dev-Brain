@@ -56,6 +56,10 @@ tags: [explainability, supervised]
 
 - [[Dev/Services/SHAP|SHAP]], [[Dev/Services/LIME|LIME]] — les deux bibliothèques post-hoc de référence.
 - [[Dev/Services/interpreto|interpreto]] — le versant modèles de langage : attributions **et** méthodes à base de concepts (probes, dictionnaires appris), avec des métriques pour évaluer les explications elles-mêmes.
+- [[Attribution par gradient]] — le versant réseaux de la même question : exploiter la dérivabilité (Integrated Gradients, SmoothGrad) plutôt que perturber des milliers de fois.
+- [[Probing]] — ce que le modèle **encode** dans ses couches, plutôt que ce qui a pesé sur une prédiction.
+- [[Interprétabilité mécaniste]] — l'ambition supérieure : rétro-concevoir le **mécanisme** appris, et l'établir causalement par intervention. Cette page-ci décrit un comportement ; celle-là cherche un algorithme.
+- [[Dev/Services/Captum|Captum]] — la référence PyTorch pour les attributions par gradient.
 - [[Sélection de variables]] — les scores d'importance (permutation, MDI, **Boruta**) servent directement de critère de sélection.
 - [[Ingénierie des caractéristiques]] — l'importance de variables guide la **sélection** de features.
 - [[GAM]], [[GLM]] — modèles interprétables par construction, sans explication post-hoc.

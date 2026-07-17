@@ -27,7 +27,7 @@ tags: [timeseries, anomaly-detection]
 - STL sépare tendance / saison / résidu ; le test ESD sur le résidu (S-H-ESD, Twitter) gère la saisonnalité et évite de confondre un pic saisonnier normal avec une anomalie.
 
 ### Méthodes distance / ML
-- **Isolation forest** sur features temporelles (cf. [[Time series feature engineering]]), détecteurs multivariés sur fenêtres ([[Détection d'outliers multivariée]]) ; autoencodeurs / LSTM jugés sur l'erreur de reconstruction.
+- **Isolation forest** sur features temporelles (cf. [[Time series feature engineering]]), détecteurs multivariés sur fenêtres ([[Détection d'outliers multivariée]]) ; [[Autoencodeurs|autoencodeurs]] / LSTM jugés sur l'erreur de reconstruction.
 
 ### Matrix profile
 - Pour chaque sous-séquence de longueur $m$, distance euclidienne **z-normalisée** à sa plus proche voisine ailleurs dans la série. Une sous-séquence sans voisine proche est un **discord** = anomalie de **forme** ; la plus répétée est un **motif**.

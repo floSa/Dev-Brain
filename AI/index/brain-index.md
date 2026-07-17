@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 585 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 597 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -209,6 +209,7 @@
 - **Acme** — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
 - **albumentations** — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
 - **bm25s** — Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
+- **Captum** — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
 - **CatBoost** — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
 - **category_encoders** — Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.
 - **Chronos** — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).
@@ -233,6 +234,7 @@
 - **LIME** — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales.
 - **neuralforecast** — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - **NLTK** — Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
+- **nnsight** — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
 - **OpenCV** — Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.
 - **OpenSpiel** — Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python.
 - **PaCMAP** — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
@@ -247,6 +249,7 @@
 - **rank-bm25** — Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 - **River** — ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow.
 - **RLax** — Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.
+- **SAELens** — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 - **Scikit-Learn** — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 - **SDV** — Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL).
 - **segment-anything** — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).
@@ -263,6 +266,7 @@
 - **TF-Agents** — Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.
 - **timm** — La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
 - **torchvision** — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
+- **TransformerLens** — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
 - **Ultralytics YOLO** — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.
 - **umap-learn** — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
 - **XGBoost** — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
@@ -478,7 +482,9 @@
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
 - **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif
 - **Architectures CNN** — domaines : ml-eng · alias : ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures
+- **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods
 - **Augmentation d'images** — domaines : data-sci, ml-eng · alias : data augmentation, augmentation de données, Mixup, CutMix, RandAugment
+- **Autoencodeurs** — domaines : data-sci, ml-eng · alias : Autoencodeur, Autoencoder, Auto-encodeur, AE, VAE, Variational Autoencoder, Autoencodeur variationnel, Denoising autoencoder
 - **Classification audio par spectrogramme** — domaines : data-sci, ml-eng · alias : classification audio, audio classification, sound classification, reconnaissance de sons, audio CNN, mel-spectrogramme CNN, acoustic scene classification, SpecAugment
 - **Classification d'images** — domaines : data-sci, ml-eng · alias : image classification, classification d'image, top-1, top-5, ImageNet
 - **CNN** — domaines : data-sci, ml-eng · alias : convnet, réseau convolutif, convolutional neural network, convolution, pooling, champ réceptif
@@ -492,6 +498,7 @@
 - **Gradient checkpointing** — domaines : ml-eng · alias : Gradient checkpointing, activation checkpointing, recomputation, rematerialization, rematérialisation, recalcul d'activations, checkpoint
 - **Graph Neural Networks** — domaines : ml-eng, data-sci · alias : GNN, graph neural network, réseaux de neurones sur graphes, GCN, GAT, GraphSAGE, message passing, passage de messages
 - **Image generation** — domaines : ml-eng, ai-eng · alias : text-to-image, T2I, génération d'images, Stable Diffusion, DALL-E, Midjourney, FLUX, inpainting
+- **Interprétabilité mécaniste** — domaines : ai-eng, data-sci · alias : Mechanistic interpretability, Mech interp, Interpretabilite mecaniste, Circuits, Transformer circuits, Activation patching, Causal tracing
 - **Kolmogorov-Arnold Networks** — domaines : ml-eng · alias : KAN, KANs, réseaux de Kolmogorov-Arnold, kolmogorov-arnold network
 - **Metric learning & ré-identification** — domaines : data-sci, ml-eng · alias : metric learning, apprentissage de métrique, ré-identification, re-identification, re-id, person re-id, reconnaissance faciale, face recognition, triplet loss, contrastive loss, ArcFace, CosFace, Siamese, CMC, Rank-1
 - **Mixed precision** — domaines : ml-eng · alias : Mixed precision, précision mixte, AMP, automatic mixed precision, fp16, bf16, float16, bfloat16, loss scaling, autocast, half precision, demi-précision
@@ -500,15 +507,18 @@
 - **Métriques vision** — domaines : data-sci, ml-eng · alias : métriques de vision, vision metrics, mAP, mean average precision, IoU, intersection over union, Dice, mIoU, AP
 - **OCR** — domaines : data-sci, ml-eng · alias : reconnaissance optique de caractères, reconnaissance de texte, text recognition, text detection, scene text, Tesseract, PaddleOCR, EasyOCR, docTR, CRNN, CTC, TrOCR, CER, WER
 - **Positional encoding** — domaines : ml-eng, ai-eng · alias : encodage de position, encodage positionnel, RoPE, rotary embeddings, ALiBi, sinusoidal positional encoding
+- **Probing** — domaines : data-sci, ai-eng · alias : Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier
 - **Pruning** — domaines : ml-eng, ai-eng · alias : Pruning, élagage, élagage de modèle, sparsity, sparsité, structured pruning, unstructured pruning, élagage structuré, élagage non structuré, magnitude pruning, lottery ticket
 - **Quantization** — domaines : ml-eng, ai-eng · alias : Quantification, quantisation, INT8, INT4, FP8, GGUF, GPTQ, AWQ, PTQ, QAT, K-quants
 - **Rendu neuronal 3D & estimation de profondeur** — domaines : data-sci, ml-eng · alias : NeRF, neural radiance fields, 3D Gaussian Splatting, 3DGS, gaussian splatting, rendu neuronal, novel view synthesis, estimation de profondeur, depth estimation, MiDaS, DPT, Depth Anything
 - **Segment Anything (SAM)** — domaines : ml-eng, ai-eng · alias : SAM, Segment Anything Model, segmentation promptable, promptable segmentation, SAM 2, SAM 3, SA-1B
 - **Segmentation** — domaines : data-sci, ml-eng · alias : segmentation d'image, image segmentation, segmentation sémantique, segmentation d'instance, segmentation panoptique, U-Net, Mask R-CNN, DeepLab
 - **Self-attention** — domaines : ml-eng, ai-eng · alias : auto-attention, scaled dot-product attention, multi-head attention, MHA, attention QKV, cross-attention
+- **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
 - **Speech models** — domaines : ml-eng, ai-eng · alias : ASR, TTS, speech-to-text, text-to-speech, reconnaissance vocale, synthèse vocale, Whisper, modèles de parole, speech-to-speech
 - **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, S4, S5, selective state space, linear-time sequence model
 - **Suivi d'objets** — domaines : data-sci, ml-eng · alias : object tracking, MOT, multi-object tracking, suivi multi-cibles, tracking-by-detection, SORT, DeepSORT, ByteTrack, Kalman, MOTA, IDF1, HOTA
+- **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
 - **Transfer learning vision** — domaines : data-sci, ml-eng · alias : transfer learning, transfert d'apprentissage, fine-tuning vision, feature extraction, backbone gelé
 - **Transformer architectures** — domaines : ml-eng, ai-eng · alias : Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only
 - **Video generation** — domaines : ml-eng, ai-eng · alias : text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video
@@ -631,6 +641,7 @@
 - **GLM** — domaines : data-sci, ml-eng · alias : Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé
 - **Gradient Boosting (GBDT)** — domaines : data-sci, ml-eng · alias : GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM
 - **HDBSCAN** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
+- **ICA** — domaines : data-sci · alias : Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation
 - **Imbalanced classification** — domaines : data-sci, ml-eng · alias : classes déséquilibrées, déséquilibre de classes, class imbalance
 - **Imputation des valeurs manquantes** — domaines : data-sci · alias : Imputation, Missing value imputation, Gestion des valeurs manquantes, MICE, KNN imputer
 - **Ingénierie des caractéristiques** — domaines : data-sci, ml-eng · alias : Feature engineering, Ingénierie des variables, Feature preprocessing
@@ -644,6 +655,7 @@
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
 - **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
 - **Naive Bayes** — domaines : data-sci, ml-eng · alias : Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB
+- **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
 - **Perceptron et MLP** — domaines : data-sci, ml-eng · alias : Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier
