@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 598,
+  "count": 600,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -39,6 +39,7 @@
       "PydanticAI",
       "Reliability patterns",
       "Semantic Kernel",
+      "Spec Kit",
       "Text-to-SQL",
       "Tool use patterns",
       "Vanna",
@@ -201,6 +202,7 @@
       "k-NN"
     ],
     "cli": [
+      "Spec Kit",
       "Typer"
     ],
     "clustering": [
@@ -229,14 +231,16 @@
       "Aider",
       "Cline",
       "Continue",
-      "Graphify"
+      "Graphify",
+      "Spec Kit"
     ],
     "code-generation": [
       "Aider",
       "Cline",
       "Code and math benchmarks",
       "Continue",
-      "OpenHands"
+      "OpenHands",
+      "Spec Kit"
     ],
     "columnar": [
       "ADBC",
@@ -2395,6 +2399,7 @@
       "Web scraping",
       "cloudscraper",
       "curl_cffi",
+      "minim",
       "selectolax"
     ],
     "whiteboard": [
@@ -2804,6 +2809,31 @@
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
       ]
+    },
+    {
+      "path": "Dev/Outils/Spec Kit.md",
+      "nom": "Spec Kit",
+      "alias": [
+        "spec-kit",
+        "specify",
+        "specify-cli",
+        "spec-driven development",
+        "SDD"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "agents",
+        "cli"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Outils/draw.io.md",
@@ -8326,6 +8356,22 @@
         "mcp",
         "testing",
         "tool-use"
+      ],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Services/minim.md",
+      "nom": "minim",
+      "alias": [
+        "minim"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "data/scraping",
+      "domaines": null,
+      "pitch": "Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé.",
+      "tags": [
+        "web-scraping"
       ],
       "alternatives": []
     },

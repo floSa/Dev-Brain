@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain v2
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 598 pages actives.
+> 600 pages actives.
 
 ## Par page
 
@@ -33,7 +33,7 @@
 ### Aider  ·  dev/outil
 - tags : `code-assistant`, `code-generation`, `llm`, `version-control`
 - liens sortants : [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]]
-- liens entrants : [[Cline]], [[Continue]], [[Graphify]]
+- liens entrants : [[Cline]], [[Continue]], [[Graphify]], [[Spec Kit]]
 
 ### Aim  ·  dev/service
 - tags : `experiment-tracking`
@@ -173,7 +173,7 @@
 ### Cline  ·  dev/outil
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`, `mcp`
 - liens sortants : [[Aider]], [[Comparatif - Assistants de code IA]], [[Continue]]
-- liens entrants : [[Aider]], [[Continue]], [[Graphify]]
+- liens entrants : [[Aider]], [[Continue]], [[Graphify]], [[Spec Kit]]
 
 ### Cloudflare R2  ·  dev/service
 - tags : `object-storage`, `s3-compatible`
@@ -203,7 +203,7 @@
 ### Continue  ·  dev/outil
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`
 - liens sortants : [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]]
-- liens entrants : [[Aider]], [[Cline]], [[Graphify]]
+- liens entrants : [[Aider]], [[Cline]], [[Graphify]], [[Spec Kit]]
 
 ### Crawlee  ·  dev/service
 - tags : `web-scraping`
@@ -383,7 +383,7 @@
 ### Firecrawl  ·  dev/service
 - tags : `web-scraping`, `markdown-conversion`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Maxun]], [[Playwright]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Maxun]], [[Web scraping]]
+- liens entrants : [[Maxun]], [[Web scraping]], [[minim]]
 
 ### Flask  ·  dev/service
 - tags : `web-framework`
@@ -734,6 +734,11 @@
 - tags : `synthetic-data`, `testing`
 - liens sortants : [[Faker]], [[SDV]], [[Synthetic data generation]], [[imbalanced-learn]]
 - liens entrants : [[Faker]], [[SDV]], [[Synthetic data generation]]
+
+### minim  ·  dev/service
+- tags : `web-scraping`
+- liens sortants : [[Firecrawl]], [[Scrapy]]
+- liens entrants : —
 
 ### MinIO  ·  dev/service
 - tags : `object-storage`, `s3-compatible`
@@ -1218,7 +1223,7 @@
 ### Scrapy  ·  dev/service
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Playwright]], [[Scrapling]], [[Web scraping]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Scrapling]], [[Web scraping]]
+- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Scrapling]], [[Web scraping]], [[minim]]
 
 ### SDV  ·  dev/service
 - tags : `synthetic-data`, `generative-model`, `gan`
@@ -1304,6 +1309,11 @@
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
 - liens sortants : [[Apache Iceberg]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
 - liens entrants : [[Dask]], [[Hyperopt]], [[Ray]]
+
+### Spec Kit  ·  dev/outil
+- tags : `code-assistant`, `code-generation`, `agents`, `cli`
+- liens sortants : [[Aider]], [[Cline]], [[Continue]]
+- liens entrants : —
 
 ### SQLAlchemy  ·  dev/service
 - tags : `orm`, `relational`, `type-hints`
@@ -2998,7 +3008,7 @@
 ## Tags → pages
 
 - `ab-testing` : A/B testing, CUPED
-- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents  — pas de page concept dédiée
+- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents  — pas de page concept dédiée
 - `ai-security` : AI security, Prompt injection, promptfoo
 - `alignment` : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
@@ -3022,11 +3032,11 @@
 - `ci-cd` : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Types de données et choix de modèle, imbalanced-learn, k-NN
-- `cli` : Typer  — pas de page concept dédiée
+- `cli` : Spec Kit, Typer  — pas de page concept dédiée
 - `clustering` : Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, K-Means, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision par ordinateur, timm, torchvision
-- `code-assistant` : Aider, Cline, Continue, Graphify  — pas de page concept dédiée
-- `code-generation` : Aider, Cline, Code and math benchmarks, Continue, OpenHands  — pas de page concept dédiée
+- `code-assistant` : Aider, Cline, Continue, Graphify, Spec Kit  — pas de page concept dédiée
+- `code-generation` : Aider, Cline, Code and math benchmarks, Continue, OpenHands, Spec Kit  — pas de page concept dédiée
 - `columnar` : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Detectron2, Détection d'objets, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
@@ -3298,7 +3308,7 @@
 - `vit` : Vision Transformers (ViT), timm
 - `wavelet` : Ondelettes, PyWavelets  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn  — pas de page concept dédiée
-- `web-scraping` : Crawlee, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, selectolax
+- `web-scraping` : Crawlee, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
 
@@ -3308,7 +3318,7 @@
 - aucun
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
-- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents)
+- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Postman)
 - `array` (porté par : CuPy, JAX, numpy, xarray)
@@ -3320,9 +3330,9 @@
 - `bugs` (porté par : REX - Postgres)
 - `caching` (porté par : LLM caching, prompt-caching)
 - `ci-cd` (porté par : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
-- `cli` (porté par : Typer)
-- `code-assistant` (porté par : Aider, Cline, Continue, Graphify)
-- `code-generation` (porté par : Aider, Cline, Code and math benchmarks, Continue, OpenHands)
+- `cli` (porté par : Spec Kit, Typer)
+- `code-assistant` (porté par : Aider, Cline, Continue, Graphify, Spec Kit)
+- `code-generation` (porté par : Aider, Cline, Code and math benchmarks, Continue, OpenHands, Spec Kit)
 - `columnar` (porté par : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx)
 - `concentration` (porté par : Inégalités de concentration)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
