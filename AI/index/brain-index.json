@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 584,
+  "count": 585,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -680,7 +680,8 @@
     "explainability": [
       "Explicabilité des modèles",
       "LIME",
-      "SHAP"
+      "SHAP",
+      "interpreto"
     ],
     "exploration-exploitation": [
       "Exploration vs exploitation"
@@ -1134,6 +1135,7 @@
       "Vision Language Models",
       "WrenAI",
       "agent-loops",
+      "interpreto",
       "llama.cpp",
       "mcp-protocol",
       "prompt-caching",
@@ -1422,6 +1424,7 @@
       "Transformer architectures",
       "datasets",
       "evaluate",
+      "interpreto",
       "sentence-transformers",
       "sentencepiece",
       "seqeval",
@@ -4679,7 +4682,8 @@
         "supervised"
       ],
       "alternatives": [
-        "[[Dev/Services/SHAP|SHAP]]"
+        "[[Dev/Services/SHAP|SHAP]]",
+        "[[Dev/Services/interpreto|interpreto]]"
       ]
     },
     {
@@ -6576,7 +6580,8 @@
         "supervised"
       ],
       "alternatives": [
-        "[[Dev/Services/LIME|LIME]]"
+        "[[Dev/Services/LIME|LIME]]",
+        "[[Dev/Services/interpreto|interpreto]]"
       ]
     },
     {
@@ -8048,6 +8053,28 @@
         "supervised"
       ],
       "alternatives": []
+    },
+    {
+      "path": "Dev/Services/interpreto.md",
+      "nom": "interpreto",
+      "alias": [
+        "Interpreto",
+        "FOR-sight interpreto"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "ml/framework",
+      "domaines": null,
+      "pitch": "Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.",
+      "tags": [
+        "explainability",
+        "llm",
+        "nlp"
+      ],
+      "alternatives": [
+        "[[Dev/Services/SHAP|SHAP]]",
+        "[[Dev/Services/LIME|LIME]]"
+      ]
     },
     {
       "path": "Dev/Services/jupysql.md",

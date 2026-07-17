@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/SHAP|SHAP]]"]
+alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/interpreto|interpreto]]"]
 remplace_par: []
 status: actif
 tags: [explainability, supervised]
@@ -52,6 +52,7 @@ url_repo: https://github.com/marcotcr/lime
 ## Alternatives
 
 - [[Dev/Services/SHAP|SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
+- [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
 
 ## Liens
 

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain v2
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 584 pages actives.
+> 585 pages actives.
 
 ## Par page
 
@@ -488,7 +488,7 @@
 ### HuggingFace  ·  dev/service
 - tags : `transformers`, `model-hub`, `fine-tuning`, `nlp`, `deep-learning`, `embeddings`
 - liens sortants : [[Gradio]], [[JAX]], [[LightGBM]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]], [[accelerate]], [[datasets]], [[evaluate]]
-- liens entrants : [[Aim]], [[Axolotl]], [[BentoML]], [[Chronos]], [[Classification d'images]], [[DSPy]], [[DeepSpeed]], [[Detectron2]], [[Détection d'objets]], [[Foundation models pour séries temporelles]], [[GLiNER]], [[Haystack]], [[JAX]], [[Keras]], [[LLaMA-Factory]], [[LM Studio]], [[LangChain]], [[LlamaIndex]], [[LoRA et QLoRA]], [[Modèles de fondation vision]], [[NER et étiquetage de séquence]], [[NLTK]], [[Ollama]], [[PEFT]], [[PyTorch]], [[PyTorch Lightning]], [[RL for LLMs]], [[Ray Serve]], [[Rendu neuronal 3D & estimation de profondeur]], [[Reranking]], [[Reward modeling]], [[SFT]], [[SGLang]], [[Segment Anything (SAM)]], [[Self-attention]], [[SetFit]], [[TGI]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT-LLM]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Transformer architectures]], [[Unsloth]], [[Vision Transformers (ViT)]], [[Weights & Biases]], [[accelerate]], [[datasets]], [[evaluate]], [[librosa]], [[llama.cpp]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]], [[supervision]], [[text-generation-webui]], [[timm]], [[txtai]], [[vLLM]]
+- liens entrants : [[Aim]], [[Axolotl]], [[BentoML]], [[Chronos]], [[Classification d'images]], [[DSPy]], [[DeepSpeed]], [[Detectron2]], [[Détection d'objets]], [[Foundation models pour séries temporelles]], [[GLiNER]], [[Haystack]], [[JAX]], [[Keras]], [[LLaMA-Factory]], [[LM Studio]], [[LangChain]], [[LlamaIndex]], [[LoRA et QLoRA]], [[Modèles de fondation vision]], [[NER et étiquetage de séquence]], [[NLTK]], [[Ollama]], [[PEFT]], [[PyTorch]], [[PyTorch Lightning]], [[RL for LLMs]], [[Ray Serve]], [[Rendu neuronal 3D & estimation de profondeur]], [[Reranking]], [[Reward modeling]], [[SFT]], [[SGLang]], [[Segment Anything (SAM)]], [[Self-attention]], [[SetFit]], [[TGI]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT-LLM]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Transformer architectures]], [[Unsloth]], [[Vision Transformers (ViT)]], [[Weights & Biases]], [[accelerate]], [[datasets]], [[evaluate]], [[interpreto]], [[librosa]], [[llama.cpp]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]], [[supervision]], [[text-generation-webui]], [[timm]], [[txtai]], [[vLLM]]
 
 ### hydra  ·  dev/service
 - tags : `config`
@@ -514,6 +514,11 @@
 - tags : `llm`, `structured-output`, `data-validation`, `type-hints`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Guardrails]], [[Guidance]], [[LangChain]], [[Outlines]], [[Pydantic]], [[PydanticAI]], [[Structured outputs]]
 - liens entrants : [[Agno]], [[Constrained decoding]], [[CrewAI]], [[Guardrails]], [[Guidance]], [[Langflow]], [[Letta]], [[Outlines]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]], [[Tool use patterns]], [[tool-use]]
+
+### interpreto  ·  dev/service
+- tags : `explainability`, `llm`, `nlp`
+- liens sortants : [[Classification de texte]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[HuggingFace]], [[LIME]], [[PyTorch]], [[SHAP]], [[Self-attention]], [[Traitement du langage naturel]], [[Transformer architectures]]
+- liens entrants : [[Explicabilité des modèles]], [[LIME]], [[SHAP]]
 
 ### JAX  ·  dev/service
 - tags : `deep-learning`, `gpu`, `autograd`, `array`
@@ -612,8 +617,8 @@
 
 ### LIME  ·  dev/service
 - tags : `explainability`, `supervised`
-- liens sortants : [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[SHAP]]
-- liens entrants : [[Explicabilité des modèles]], [[SHAP]]
+- liens sortants : [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[SHAP]], [[interpreto]]
+- liens entrants : [[Explicabilité des modèles]], [[SHAP]], [[interpreto]]
 
 ### Liquibase  ·  dev/service
 - tags : `migration`, `relational`
@@ -1048,7 +1053,7 @@
 ### PyTorch  ·  dev/service
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
 - liens sortants : [[BentoML]], [[Entraînement distribué]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[Keras]], [[LightGBM]], [[Mixed precision]], [[NVIDIA Triton]], [[Optuna]], [[Pruning]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[TorchServe]], [[XGBoost]], [[accelerate]]
-- liens entrants : [[Aim]], [[Apprentissage supervisé]], [[Architectures CNN]], [[BentoML]], [[CNN]], [[Classification d'images]], [[ClearML]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Ray Serve]], [[Reward modeling]], [[River]], [[SFT]], [[SGLang]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[neuralforecast]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
+- liens entrants : [[Aim]], [[Apprentissage supervisé]], [[Architectures CNN]], [[BentoML]], [[CNN]], [[Classification d'images]], [[ClearML]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Ray Serve]], [[Reward modeling]], [[River]], [[SFT]], [[SGLang]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[interpreto]], [[neuralforecast]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
 
 ### PyTorch Geometric  ·  dev/service
 - tags : `gnn`, `deep-learning`, `gpu`, `representation-learning`
@@ -1262,8 +1267,8 @@
 
 ### SHAP  ·  dev/service
 - tags : `explainability`, `supervised`
-- liens sortants : [[CatBoost]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[GAM]], [[GLM]], [[LIME]], [[LightGBM]], [[XGBoost]]
-- liens entrants : [[Explicabilité des modèles]], [[LIME]]
+- liens sortants : [[CatBoost]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[GAM]], [[GLM]], [[LIME]], [[LightGBM]], [[XGBoost]], [[interpreto]]
+- liens entrants : [[Explicabilité des modèles]], [[LIME]], [[interpreto]]
 
 ### Shiny for Python  ·  dev/service
 - tags : `data-app`, `dashboard`, `web-framework`
@@ -1728,7 +1733,7 @@
 ### Classification de texte  ·  wiki/concept
 - tags : `nlp`, `text-classification`, `classification`, `supervised`, `class-imbalance`
 - liens sortants : [[Classification]], [[Classification metrics]], [[Cross-entropy]], [[Data leakage]], [[Imbalanced classification]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Random Forest]], [[Régression logistique]], [[SFT]], [[SVM]], [[SetFit]], [[TF-IDF]], [[Traitement du langage naturel]], [[embeddings]], [[sentence-transformers]]
-- liens entrants : [[NER et étiquetage de séquence]], [[NLTK]], [[Naive Bayes]], [[SetFit]], [[TF-IDF]], [[Traitement du langage naturel]], [[spaCy]]
+- liens entrants : [[NER et étiquetage de séquence]], [[NLTK]], [[Naive Bayes]], [[SetFit]], [[TF-IDF]], [[Traitement du langage naturel]], [[interpreto]], [[spaCy]]
 
 ### Classification hiérarchique (CAH)  ·  wiki/concept
 - tags : `clustering`, `unsupervised`
@@ -1912,8 +1917,8 @@
 
 ### Explicabilité des modèles  ·  wiki/concept
 - tags : `explainability`, `supervised`
-- liens sortants : [[Arbres de décision]], [[Data drift]], [[Diff-in-Diff]], [[GAM]], [[GLM]], [[Gradient Boosting (GBDT)]], [[Ingénierie des caractéristiques]], [[LIME]], [[LightGBM]], [[Random Forest]], [[SHAP]], [[Sélection de variables]], [[XGBoost]]
-- liens entrants : [[Extra Trees]], [[LIME]], [[Perceptron et MLP]], [[SHAP]], [[Sélection de variables]]
+- liens sortants : [[Arbres de décision]], [[Data drift]], [[Diff-in-Diff]], [[GAM]], [[GLM]], [[Gradient Boosting (GBDT)]], [[Ingénierie des caractéristiques]], [[LIME]], [[LightGBM]], [[Random Forest]], [[SHAP]], [[Sélection de variables]], [[XGBoost]], [[interpreto]]
+- liens entrants : [[Extra Trees]], [[LIME]], [[Perceptron et MLP]], [[SHAP]], [[Sélection de variables]], [[interpreto]]
 
 ### Exploration vs exploitation  ·  wiki/concept
 - tags : `exploration-exploitation`, `reinforcement-learning`, `multi-armed-bandit`
@@ -2673,7 +2678,7 @@
 ### Self-attention  ·  wiki/concept
 - tags : `attention`, `transformers`, `deep-learning`
 - liens sortants : [[Flash Attention and efficient attention]], [[HuggingFace]], [[Inference optimization]], [[Positional encoding]], [[PyTorch]], [[Tokenization]], [[Transformer architectures]]
-- liens entrants : [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Kolmogorov-Arnold Networks]], [[NER et étiquetage de séquence]], [[Positional encoding]], [[State Space Models]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
+- liens entrants : [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Kolmogorov-Arnold Networks]], [[NER et étiquetage de séquence]], [[Positional encoding]], [[State Space Models]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]]
 
 ### Sequential testing  ·  wiki/concept
 - tags : `experimentation`, `sequential-analysis`, `hypothesis-testing`
@@ -2838,7 +2843,7 @@
 ### Traitement du langage naturel  ·  wiki/concept
 - tags : `nlp`
 - liens sortants : [[BM25]], [[Classification de texte]], [[Comparatif - NLP]], [[Data leakage]], [[GLiNER]], [[HuggingFace]], [[Hybrid retrieval]], [[Imbalanced classification]], [[NER et étiquetage de séquence]], [[NLTK]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Scikit-Learn]], [[SetFit]], [[TF-IDF]], [[Tokenization]], [[Transformer architectures]], [[embeddings]], [[rank-bm25]], [[sentence-transformers]], [[spaCy]]
-- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NER et étiquetage de séquence]], [[NLTK]], [[OCR]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[spaCy]]
+- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NER et étiquetage de séquence]], [[NLTK]], [[OCR]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[interpreto]], [[spaCy]]
 
 ### Traitement du signal  ·  wiki/concept
 - tags : `signal-processing`
@@ -2853,7 +2858,7 @@
 ### Transformer architectures  ·  wiki/concept
 - tags : `transformers`, `deep-learning`, `attention`, `nlp`
 - liens sortants : [[CNN]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Mixture of Experts]], [[PEFT]], [[Positional encoding]], [[PyTorch]], [[Scaling laws]], [[Self-attention]], [[Small Language Models]], [[State Space Models]], [[Tokenization]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Apprentissage supervisé]], [[Architectures CNN]], [[CNN]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Mixture of Experts]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Perceptron et MLP]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[pykan]]
+- liens entrants : [[Apprentissage supervisé]], [[Architectures CNN]], [[CNN]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Mixture of Experts]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Perceptron et MLP]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]], [[pykan]]
 
 ### Transformée de Fourier  ·  wiki/concept
 - tags : `signal-processing`, `fourier`
@@ -3013,7 +3018,7 @@
 - `entropy` : Shannon entropy
 - `experiment-tracking` : Aim, ClearML, Comet, MLflow, Model registry & versioning, Neptune, TensorBoard, Weights & Biases  — pas de page concept dédiée
 - `experimentation` : A/B testing, CUPED, Multi-armed bandits, Sequential testing  — pas de page concept dédiée
-- `explainability` : Explicabilité des modèles, LIME, SHAP
+- `explainability` : Explicabilité des modèles, LIME, SHAP, interpreto
 - `exploration-exploitation` : Exploration vs exploitation
 - `factor-analysis` : CA, FAMD, Fanalysis, GPA, HCPC, MCA, MFA, PCA, Prince, Réduction de dimension  — pas de page concept dédiée
 - `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Ingénierie des caractéristiques, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
@@ -3063,7 +3068,7 @@
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation  — pas de page concept dédiée
 - `linear-programming` : Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Speculative decoding, Structured outputs, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, llama.cpp, mcp-protocol, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Speculative decoding, Structured outputs, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : DeepEval, LLM-as-judge, TruLens
 - `llm-eval` : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG eval, Ragas, TruLens, promptfoo  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LiteLLM, OpenRouter  — pas de page concept dédiée
@@ -3105,7 +3110,7 @@
 - `mutual-information` : Mutual information
 - `ner` : Construction de graphes de connaissances, GLiNER, NER et étiquetage de séquence, pytorch-crf, seqeval, spaCy
 - `neural-rendering` : Rendu neuronal 3D & estimation de profondeur  — pas de page concept dédiée
-- `nlp` : BM25, Classification de texte, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, sentence-transformers, sentencepiece, seqeval, spaCy
+- `nlp` : BM25, Classification de texte, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem
 - `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Régression quantile, Tests non paramétriques, pingouin, scipy.stats
 - `nosql` : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
@@ -3315,7 +3320,7 @@
 - `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation)
 - `linter` (porté par : Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Speculative decoding, Structured outputs, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, llama.cpp, mcp-protocol, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Speculative decoding, Structured outputs, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG eval, Ragas, TruLens, promptfoo)
 - `llm-gateway` (porté par : Helicone, LiteLLM, OpenRouter)
 - `local-llm` (porté par : LM Studio, Ollama, Small Language Models, Vanna, llama.cpp, text-generation-webui)

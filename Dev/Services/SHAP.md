@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/LIME|LIME]]"]
+alternatives: ["[[Dev/Services/LIME|LIME]]", "[[Dev/Services/interpreto|interpreto]]"]
 remplace_par: []
 status: actif
 tags: [explainability, supervised]
@@ -52,6 +52,7 @@ Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de 
 ## Alternatives
 
 - [[Dev/Services/LIME|LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales.
+- [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
 
 ## Liens
 

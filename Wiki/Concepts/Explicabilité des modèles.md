@@ -55,6 +55,7 @@ tags: [explainability, supervised]
 ## Approches voisines & alternatives
 
 - [[Dev/Services/SHAP|SHAP]], [[Dev/Services/LIME|LIME]] — les deux bibliothèques post-hoc de référence.
+- [[Dev/Services/interpreto|interpreto]] — le versant modèles de langage : attributions **et** méthodes à base de concepts (probes, dictionnaires appris), avec des métriques pour évaluer les explications elles-mêmes.
 - [[Sélection de variables]] — les scores d'importance (permutation, MDI, **Boruta**) servent directement de critère de sélection.
 - [[Ingénierie des caractéristiques]] — l'importance de variables guide la **sélection** de features.
 - [[GAM]], [[GLM]] — modèles interprétables par construction, sans explication post-hoc.
