@@ -42,6 +42,7 @@ Notions de la famille `concept/llm`.
 - [[Wiki/Concepts/prompt-caching|prompt-caching]] — domaines : ai-eng
 - [[Wiki/Concepts/Query transformations|Query transformations]] — domaines : ai-eng
 - [[Wiki/Concepts/RAG|RAG]] — domaines : ai-eng
+- [[Wiki/Concepts/RAG benchmarks|RAG benchmarks]] — domaines : ai-eng
 - [[Wiki/Concepts/RAG eval|RAG eval]] — domaines : ai-eng
 - [[Wiki/Concepts/Reasoning models|Reasoning models]] — domaines : ai-eng
 - [[Wiki/Concepts/Reliability patterns|Reliability patterns]] — domaines : ai-eng

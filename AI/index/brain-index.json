@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 597,
+  "count": 598,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -135,6 +135,7 @@
     "benchmark": [
       "Code and math benchmarks",
       "LLM benchmarks",
+      "RAG benchmarks",
       "Text-to-SQL",
       "evaluate"
     ],
@@ -1187,6 +1188,7 @@
       "LangSmith",
       "Langfuse",
       "Phoenix Arize",
+      "RAG benchmarks",
       "RAG eval",
       "Ragas",
       "TruLens",
@@ -1732,6 +1734,7 @@
       "Qdrant",
       "Query transformations",
       "RAG",
+      "RAG benchmarks",
       "RAG eval",
       "RAGatouille",
       "Ragas",
@@ -1745,6 +1748,7 @@
       "txtai"
     ],
     "rag-eval": [
+      "RAG benchmarks",
       "RAG eval",
       "Ragas"
     ],
@@ -1896,6 +1900,7 @@
       "LlamaIndex NLSQLTableQueryEngine",
       "Query transformations",
       "RAG",
+      "RAG benchmarks",
       "RAG eval",
       "RAGatouille",
       "Recherche d'information",
@@ -10376,6 +10381,13 @@
         "matrice de confusion",
         "sensibilité",
         "spécificité",
+        "taux de vrais négatifs",
+        "VPP",
+        "VPN",
+        "valeur prédictive positive",
+        "valeur prédictive négative",
+        "prévalence",
+        "rapport de vraisemblance",
         "MCC",
         "Brier"
       ],
@@ -14324,6 +14336,39 @@
         "rag",
         "retrieval",
         "llm"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/RAG benchmarks.md",
+      "nom": "RAG benchmarks",
+      "alias": [
+        "benchmarks RAG",
+        "bancs d'essai RAG",
+        "RGB",
+        "CRAG",
+        "RAGBench",
+        "TRACe",
+        "RAGTruth",
+        "FRAMES",
+        "TREC RAG",
+        "robustesse RAG",
+        "noise robustness",
+        "negative rejection"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "benchmark",
+        "rag-eval",
+        "rag",
+        "retrieval",
+        "llm-eval"
       ],
       "alternatives": null
     },

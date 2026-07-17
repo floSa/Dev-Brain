@@ -33,6 +33,13 @@ tags: [rag-eval, llm-eval, rag, retrieval]
 ### La triade RAG
 - Formalisée par [[Dev/Services/TruLens|TruLens]] : *context relevance*, *groundedness*, *answer relevance* — un triangle qui couvre retrieval + génération.
 
+### Robustesse, au-delà de la triade
+- La triade note une réponse « propre » mais ignore les **modes de défaillance** : bruit dans le contexte, incapacité à s'abstenir, recopie de désinformation, agrégation multi-documents. Ces axes sont formalisés et outillés par les [[RAG benchmarks]] (RGB, CRAG…).
+
+### Évaluation par nuggets & niveau claim
+- Alternative au score scalaire d'un juge : décomposer la réponse de référence en **faits atomiques (nuggets)** et mesurer leur couverture dans la sortie — plus interprétable et reproductible (TREC 2024, AutoNuggetizer).
+- Même esprit au niveau **claim** : [[Dev/Services/Ragas|Ragas]] décompose déjà la faithfulness en affirmations ; RAGChecker pousse la logique pour **attribuer** chaque erreur au retriever ou au générateur.
+
 ## Les maths, simplement
 
 - Faithfulness $\approx \dfrac{\#\,\text{affirmations de la réponse soutenues par le contexte}}{\#\,\text{affirmations totales de la réponse}}$ — proche de 1 = peu d'hallucination.
@@ -40,7 +47,7 @@ tags: [rag-eval, llm-eval, rag, retrieval]
 
 ## En pratique
 
-- Outiller : [[Dev/Services/Ragas|Ragas]] (référence open-source, sans référence), [[Dev/Services/DeepEval|DeepEval]] (assertions façon pytest, en CI), [[Dev/Services/TruLens|TruLens]] (tracing + feedback functions).
+- Outiller : [[Dev/Services/Ragas|Ragas]] (référence open-source, sans référence), [[Dev/Services/DeepEval|DeepEval]] (assertions façon pytest, en CI), [[Dev/Services/TruLens|TruLens]] (tracing + feedback functions). Pour le diagnostic fin : **RAGChecker** (attribution retriever vs générateur au niveau claim), **ARES** (juges légers calibrés sur ~150 annotations humaines).
 - Le **LLM-as-judge** a des biais (verbosité, position), du coût et de la variance : fixer le modèle juge, calibrer sur quelques jugements humains avant de lui faire confiance.
 - Figer un **golden set** et évaluer en CI à chaque changement : c'est ce qui détecte les régressions quand on ajoute une brique d'[[Advanced RAG]].
 - Mesurer **avant** d'optimiser : sans eval, un pipeline avancé masque ses propres régressions.
@@ -53,8 +60,11 @@ tags: [rag-eval, llm-eval, rag, retrieval]
 - [[Dev/Services/Ragas|Ragas]], [[Dev/Services/DeepEval|DeepEval]], [[Dev/Services/TruLens|TruLens]] — l'outillage dédié.
 - [[LLM-as-judge]] — le mécanisme sous-jacent des métriques reference-free.
 - [[LLM eval metrics]] — l'éval LLM générale, dont le RAG eval est la spécialisation retrieval.
+- [[RAG benchmarks]] — les suites standardisées (RGB, CRAG, RAGBench, RAGTruth…) qui appliquent ces métriques à un jeu figé et stressent les modes de défaillance.
 
 ## Pour aller plus loin
 
 - Es et al. (2023) — *RAGAS: Automated Evaluation of Retrieval Augmented Generation*.
 - Documentation TruLens — *The RAG Triad*.
+- Saad-Falcon et al. (2023) — *ARES: An Automated Evaluation Framework for RAG*.
+- Ru et al. (2024) — *RAGChecker: A Fine-grained Framework for Diagnosing RAG*.

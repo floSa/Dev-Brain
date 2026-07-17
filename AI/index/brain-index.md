@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 597 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 598 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -559,6 +559,7 @@
 - **prompt-caching** — domaines : ai-eng · alias : prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching
 - **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
+- **RAG benchmarks** — domaines : ai-eng · alias : benchmarks RAG, bancs d'essai RAG, RGB, CRAG, RAGBench, TRACe, RAGTruth, FRAMES, TREC RAG, robustesse RAG, noise robustness, negative rejection
 - **RAG eval** — domaines : ai-eng · alias : RAG evaluation, évaluation RAG, évaluation des pipelines RAG, faithfulness, groundedness, context precision, context recall, answer relevancy
 - **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
 - **Reliability patterns** — domaines : ai-eng · alias : patrons de fiabilité, reliability patterns, fiabilité des apps LLM
@@ -618,7 +619,7 @@
 - **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
 - **Classification** — domaines : data-sci, ml-eng · alias : Classification supervisée, Classifieur, Classifier, Classement
 - **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
-- **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, MCC, Brier
+- **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier
 - **Clustering** — domaines : data-sci · alias : Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement
 - **Clustering evaluation** — domaines : data-sci · alias : Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV
 - **Compromis biais-variance** — domaines : data-sci, ml-eng · alias : Bias-variance tradeoff, Biais-variance, Sous-apprentissage, Surapprentissage, Underfitting, Overfitting
