@@ -48,7 +48,8 @@ tags: [reasoning, llm, alignment]
 - [[RLHF and DPO]] — même famille de post-training par renforcement ; ici la récompense est la justesse vérifiable.
 - [[Scaling laws]] — le raisonnement ajoute l'axe **test-time** à l'échelle d'entraînement.
 - [[Inference optimization]] — indispensable car les traces sont longues et coûteuses à générer.
-- *GRPO*, *RL for LLMs*, *Reward modeling* (à créer) — la mécanique d'entraînement détaillée.
+- [[Calculs adaptatifs]] — l'autre échelle d'adaptation du calcul : profondeur variable **dans** une passe, contre nombre de tokens de réflexion **entre** les passes. C'est le second qui a percé industriellement.
+- [[GRPO]], [[RL for LLMs]], [[Reward modeling]] — la mécanique d'entraînement détaillée.
 - Servir ces modèles : [[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]] (débit sur longues sorties).
 
 ## Pour aller plus loin

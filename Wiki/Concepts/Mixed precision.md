@@ -41,8 +41,9 @@ tags: [mixed-precision, deep-learning, gpu, memory-optimization]
 
 ## Approches voisines & alternatives
 
-- [[Quantization]] — réduction de précision côté **inférence/déploiement** (entiers), pendant de la précision mixte côté entraînement.
+- [[Quantization]] — réduction de précision côté **inférence/déploiement** (entiers), pendant de la précision mixte côté entraînement. La frontière s'estompe depuis 2026 : les formats microscaling (NVFP4, MXFP4) rendent le 4 bits utilisable **à l'entraînement**.
 - [[Gradient checkpointing]] — autre levier mémoire, cumulable.
+- [[Maximal Update Parametrization]] — l'interaction entre paramétrisation et basse précision motive la variante *u-µP* (unit-scaled µP).
 - [[Entraînement distribué]] — la précision mixte y est quasi systématique (FSDP/ZeRO en bf16).
 - [[Dev/Services/PyTorch|PyTorch]] — `torch.amp` (autocast + GradScaler) en standard.
 

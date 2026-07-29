@@ -47,8 +47,8 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 
 - [[Scaling laws]] — les SLM appliquent la logique **inference-optimal** (sur-entraînement).
 - [[PEFT]] — fine-tuning abordable pour spécialiser un SLM.
-- *Distillation* (à créer, `concept/dl`) — fabrique un petit modèle à partir d'un grand.
-- *Quantization* (à créer, `concept/dl`) — réduit encore l'empreinte pour l'edge.
+- [[Distillation]] — fabrique un petit modèle à partir d'un grand.
+- [[Quantization]] — réduit encore l'empreinte pour l'edge.
 - [[Reasoning models]] — pari inverse : dépenser plus à l'inférence plutôt que viser le compact.
 - Runtimes locaux : [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/LM Studio|LM Studio]].
 

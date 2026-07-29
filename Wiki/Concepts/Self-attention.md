@@ -47,6 +47,9 @@ tags: [attention, transformers, deep-learning]
 - [[Transformer architectures]] — l'architecture qui empile self-attention + réseau feed-forward ; la self-attention en est le sous-bloc central.
 - [[Positional encoding]] — fournit l'information d'ordre que l'attention, à elle seule, ignore.
 - [[Flash Attention and efficient attention]] — mêmes maths, mais calcul économe en mémoire et variantes sous-quadratiques (MQA, GQA, fenêtre glissante).
+- [[Attention linéaire]] — retire le softmax : le mécanisme devient une récurrence à état fixe, coût linéaire contre perte de rappel exact.
+- [[Multi-head Latent Attention]] — garde le softmax exact mais ne met en cache qu'une projection latente de rang faible.
+- [[Attention Residuals]] — le même mécanisme d'attention appliqué à l'axe **profondeur** (entre couches) au lieu de l'axe séquence.
 - [[Inference optimization]] — le KV-cache et le batching s'appuient directement sur la structure de l'attention.
 
 ## Pour aller plus loin

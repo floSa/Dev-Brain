@@ -48,6 +48,9 @@ tags: [scaling-laws, llm, deep-learning]
 - [[Perplexity]] — la « perte » des lois d'échelle est l'entropie croisée dont la perplexité est l'exponentielle.
 - [[Transformer architectures]] — l'estimation $C \approx 6ND$ suppose un transformeur dense.
 - [[Mixture of Experts]] — casse précisément cette hypothèse : capacité découplée du calcul, donc un autre régime d'échelle.
+- [[Maximal Update Parametrization]] — complément indispensable : les lois d'échelle disent **quelle taille** entraîner, µP dit **avec quels hyperparamètres** sans les rechercher à l'échelle cible.
+- [[Attention Residuals]] — exemple de gain présenté comme un déplacement de la frontière compute ↔ qualité (1,25×) plutôt qu'un changement d'échelle.
+- [[Calculs adaptatifs]] — introduit un axe supplémentaire : le calcul dépensé varie selon l'entrée, ce que $C \approx 6ND$ ne modélise pas.
 
 ## Pour aller plus loin
 

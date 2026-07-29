@@ -52,8 +52,12 @@ tags: [inference-optimization, inference, llm, gpu]
 - [[Speculative decoding]] — technique d'optimisation d'inférence à part entière : plusieurs tokens vérifiés par passe.
 - [[Decoding strategies]] — l'optimisation accélère le décodage sans changer la distribution cible.
 - [[prompt-caching]] — cache des préfixes au niveau API ; s'appuie sur le KV-cache côté serveur.
-- *Quantization* (à créer, `concept/dl`) — réduit les octets à lire : levier d'inférence majeur.
+- [[Quantization]] — réduit les octets à lire : levier d'inférence majeur, cumulable avec tout le reste.
+- [[Multi-Token Prediction]] — brouillon intégré au modèle, source de gain de débit au decode (baseline MTP-1).
 - [[Flash Attention and efficient attention]] — attention optimisée mémoire (et MQA/GQA pour alléger le KV-cache).
+- [[Multi-head Latent Attention]] — compresse le KV-cache par projection latente de rang faible, là où MQA/GQA le compressent en partageant les têtes.
+- [[Architectures hybrides LLM]] — attaque le même goulot à l'**architecture** : la majorité des couches ne portent plus de cache croissant.
+- [[Calculs adaptatifs]] — moduler la profondeur traversée selon la difficulté ; prometteur mais peu déployé (variance de latence).
 - Runtimes qui implémentent tout ceci : [[Dev/Services/vLLM|vLLM]] (PagedAttention), [[Dev/Services/SGLang|SGLang]] (RadixAttention), [[Dev/Services/TGI|TGI]] (continuous batching), [[Dev/Services/TensorRT-LLM|TensorRT-LLM]].
 
 ## Pour aller plus loin

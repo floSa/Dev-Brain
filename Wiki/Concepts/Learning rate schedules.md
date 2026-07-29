@@ -48,6 +48,7 @@ tags: [optimization, learning-rate]
 - [[Convexity]] — sur problème convexe, un pas décroissant simple garantit déjà la convergence.
 - [[Loss landscape and saddle points]] — la géométrie qui dicte le pas à chaque phase.
 - [[Optimisation d'hyperparamètres]] — le LR est l'hyperparamètre numéro un à régler.
+- [[Maximal Update Parametrization]] — fixe l'**échelle** du LR selon la largeur du modèle (et la rend transférable d'un proxy vers la cible) ; le calendrier reste un problème distinct qui ne transfère pas automatiquement.
 
 ## Pour aller plus loin
 

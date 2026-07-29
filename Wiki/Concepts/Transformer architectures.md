@@ -47,8 +47,13 @@ tags: [transformers, deep-learning, attention, nlp]
 - [[Positional encoding]] — fournit l'ordre des tokens, indispensable à l'attention.
 - [[Mixture of Experts]] — remplace les FFN denses par des experts conditionnels pour découpler capacité et calcul.
 - [[Flash Attention and efficient attention]] — rend l'attention viable sur longs contextes.
+- [[Attention Residuals]] — remet en cause la **connexion résiduelle** du bloc : attention apprise sur la profondeur au lieu d'une addition à poids fixes.
+- [[Multi-head Latent Attention]] — variante de la couche d'attention pensée pour le KV-cache.
+- [[Calculs adaptatifs]] — remet en cause l'autre invariant du bloc : le fait que **tous** les tokens traversent **toutes** les couches.
 - [[Vision Transformers (ViT)]] — applique cette architecture aux images (patchs au lieu de tokens texte), en concurrence des [[CNN]] ; voir aussi [[Vision par ordinateur]].
 - [[State Space Models]] — Mamba et alternatives sous-quadratiques au Transformer.
+- [[Attention linéaire]] — le cadre qui unifie ces alternatives : attention sans softmax = mémoire associative à état fixe.
+- [[Architectures hybrides LLM]] — ce que sont réellement les modèles de 2026 : ni Transformer pur, ni linéaire pur.
 
 ## Pour aller plus loin
 

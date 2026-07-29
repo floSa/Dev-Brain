@@ -52,6 +52,7 @@ tags: [hyperparameter-tuning, model-evaluation, bayesian]
 - [[Gaussian Process]] — le modèle de substitution de l'optimisation bayésienne : il sait où il est ignorant, donc où explorer.
 - [[Compromis biais-variance]] — ce que le réglage navigue concrètement.
 - [[Régularisation]] — son $\lambda$ est l'hyperparamètre le plus emblématique à régler.
+- [[Maximal Update Parametrization]] — sur les gros réseaux, déplace la recherche vers un **proxy étroit** dont l'optimum se transfère à la cible, au lieu de chercher à l'échelle réelle.
 
 ## Pour aller plus loin
 

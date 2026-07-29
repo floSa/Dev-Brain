@@ -49,6 +49,7 @@ tags: [routing, llm, rag]
 - [[Query transformations]] — souvent en amont : transformer la requête, puis l'aiguiller.
 - [[Small Language Models]] — l'étage léger naturel d'une cascade.
 - [[LLM caching]] — l'étage 0, avant tout modèle.
+- [[Calculs adaptatifs]] — la même idée d'« allouer le calcul selon la difficulté », mais **dans** le modèle (couches traversées) au lieu d'**entre** modèles. La cascade est la version qui fonctionne aujourd'hui en production.
 - [[RAG eval]] — pour valider que le routeur dirige bien et que la cascade ne dégrade pas.
 - [[Dev/Services/LiteLLM|LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
 

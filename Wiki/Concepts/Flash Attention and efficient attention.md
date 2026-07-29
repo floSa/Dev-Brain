@@ -45,6 +45,9 @@ tags: [attention, inference-optimization, gpu, transformers]
 - [[Self-attention]] — le mécanisme exact que ces techniques accélèrent ou approchent.
 - [[Inference optimization]] — Flash Attention, MQA/GQA et le KV-cache sont les briques de l'inférence LLM efficace.
 - [[Transformer architectures]] — le choix d'attention (multi-head, MQA, GQA, fenêtre) est un paramètre d'architecture.
+- [[Multi-head Latent Attention]] — troisième voie sur le KV-cache : compresser le **rang** de l'information au lieu de partager les têtes.
+- [[Attention linéaire]] — rupture plus radicale : abandonner le softmax et le cache pour un état de taille fixe.
+- [[Architectures hybrides LLM]] — combine les deux mondes ; les couches d'attention globale y restent servies par ces noyaux.
 - [[Speculative decoding]] — autre levier d'accélération, orthogonal (plusieurs tokens par passe).
 
 ## Pour aller plus loin

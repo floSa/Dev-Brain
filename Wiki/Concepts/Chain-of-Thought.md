@@ -26,7 +26,7 @@ tags: [prompting, reasoning, llm]
 
 ### Extensions
 - **Tree / Graph of Thoughts** : explorer plusieurs branches de raisonnement avec retour arrière, au-delà de la chaîne linéaire.
-- Lien avec les **modèles de raisonnement** (à créer) : ceux-ci internalisent le CoT par entraînement (RL), produisant une longue réflexion avant la réponse, sans qu'on ait à la demander.
+- Lien avec les [[Reasoning models|modèles de raisonnement]] : ceux-ci internalisent le CoT par entraînement (RL), produisant une longue réflexion avant la réponse, sans qu'on ait à la demander.
 
 ### Limites
 - Le raisonnement affiché n'est pas toujours le raisonnement **réel** (rationalisation a posteriori) — utile pour la perf, pas comme preuve d'explicabilité.
@@ -50,7 +50,7 @@ tags: [prompting, reasoning, llm]
 - [[Prompt engineering]] — le CoT en est une technique phare ; tout le reste du prompt s'applique aussi.
 - [[Decoding strategies]] — la self-consistency repose sur l'échantillonnage à température.
 - [[Structured outputs]] — pour isoler proprement raisonnement et réponse.
-- *Reasoning models* (à créer) — internalisent le CoT par entraînement plutôt que par prompt.
+- [[Reasoning models]] — internalisent le CoT par entraînement plutôt que par prompt.
 
 ## Pour aller plus loin
 

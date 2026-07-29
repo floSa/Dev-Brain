@@ -51,7 +51,8 @@ tags: [decoding, llm, nlp]
 - [[Structured outputs]] — applique un décodage **contraint** par un schéma.
 - [[Constrained decoding]] — le mécanisme détaillé (compilation en automate, masquage, *token healing*) et ses bibliothèques ([[Dev/Services/Outlines|Outlines]], [[Dev/Services/Guidance|Guidance]]).
 - [[Server-Sent Events & streaming LLM]] — le décodage token par token **alimente** le flux streamé au client.
-- *Speculative decoding* (à créer) — accélère la génération sans changer la distribution cible.
+- [[Speculative decoding]] — accélère la génération sans changer la distribution cible.
+- [[Multi-Token Prediction]] — têtes auxiliaires qui prédisent plusieurs positions d'avance ; change le rythme de validation, pas le choix du token.
 
 ## Pour aller plus loin
 

@@ -44,6 +44,9 @@ tags: [positional-encoding, transformers, attention]
 - [[Self-attention]] — c'est elle que l'encodage de position complète ; les deux sont indissociables dans un [[Transformer architectures|Transformer]].
 - [[Transformer architectures]] — l'encodage de position est une brique systématique de l'architecture.
 - [[Context engineering]] — la fenêtre de contexte utilisable dépend de l'encodage choisi et de son extension.
+- [[Multi-head Latent Attention]] — RoPE est incompatible avec la compression latente telle quelle, d'où le **découplage** d'une partie des dimensions.
+- [[State Space Models]] — un état récurrent encode la position implicitement ; Mamba-3 établit le pont entre SSM à état complexe et RoPE dépendant des données.
+- [[Attention linéaire]] — même remarque : la position vient de l'ordre des mises à jour, pas d'un encodage explicite.
 
 ## Pour aller plus loin
 
