@@ -2,7 +2,7 @@
 galaxie: wiki
 type: concept
 nom: Flash Attention and efficient attention
-alias: [Flash Attention, FlashAttention, attention efficace, multi-query attention, MQA, grouped-query attention, GQA, sparse attention, sliding window attention]
+alias: [Flash Attention, FlashAttention, attention efficace, multi-query attention, MQA, grouped-query attention, GQA, sparse attention, sliding window attention, attention différentielle, Differential Transformer, DIFF Transformer, bruit d'attention]
 categorie: concept/dl
 domaines: [ml-eng, mlops, ai-eng]
 tags: [attention, inference-optimization, gpu, transformers]
@@ -26,7 +26,14 @@ tags: [attention, inference-optimization, gpu, transformers]
 - **Grouped-Query Attention** (GQA) : compromis — des **groupes** de têtes partagent leurs K/V. Standard des LLM récents (Llama 2/3, Mistral) : presque la qualité du multi-head, le coût du multi-query.
 
 ### Casser la quadratique : attention creuse
-- **Fenêtre glissante** (Longformer, Mistral) : chaque token n'attend que ses voisins proches → coût linéaire. **Block-sparse**, attention dilatée, et **approximations linéaires** (Performer, Linear Attention) visent le même but avec une perte de qualité variable.
+- **Fenêtre glissante** (Longformer, Mistral) : chaque token n'attend que ses voisins proches → coût linéaire. **Block-sparse**, attention dilatée, et **approximations linéaires** (Performer, [[Attention linéaire|Linear Attention]]) visent le même but avec une perte de qualité variable.
+
+### Nettoyer l'attention plutôt que l'accélérer : attention différentielle
+- Problème distinct du coût : le **bruit d'attention**. Sur un long contexte, le softmax distribue une masse de probabilité non négligeable sur des tokens sans rapport ; la vraie information se noie. Mesure parlante : un Transformer standard n'alloue que **3 à 9 %** de son attention au passage contenant la réponse.
+- **Différential Transformer** (Microsoft, ICLR 2025) calcule **deux** cartes d'attention softmax indépendantes et **soustrait** la seconde de la première, pondérée par un scalaire appris $\lambda$ : $\text{DiffAttn} = \big(\text{softmax}(Q_1K_1^\top) - \lambda\,\text{softmax}(Q_2K_2^\top)\big)V$.
+- Le raisonnement est celui d'un montage différentiel en électronique : le bruit est **corrélé** entre les deux cartes (les deux voient le même contexte parasite), le signal ne l'est pas. La soustraction annule le commun et laisse le pertinent.
+- Effets mesurés : attention allouée au passage-réponse portée à **27-40 %**, rapport signal/bruit de 0,31 contre 0,03, et rappel long contexte de **85 % contre 55 %** pour la baseline. Bénéfice secondaire utile : moins de valeurs aberrantes dans les activations, ce qui facilite la [[Quantization|quantization]].
+- À noter : cette famille **ne réduit pas** le coût quadratique — elle améliore la **qualité** du rappel à coût comparable. C'est un levier orthogonal aux autres de cette page.
 
 ## Les maths, simplement
 
@@ -55,3 +62,4 @@ tags: [attention, inference-optimization, gpu, transformers]
 - Dao et al. (2022) — *FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness* ; Dao (2023) — *FlashAttention-2*.
 - Shazeer (2019) — *Multi-Query Attention* ; Ainslie et al. (2023) — *GQA*.
 - Beltagy et al. (2020) — *Longformer* (attention à fenêtre glissante).
+- Ye et al. (2024-2025, Microsoft) — *Differential Transformer* (arXiv 2410.05258, ICLR 2025 — soustraction de deux cartes softmax, annulation du bruit d'attention).
