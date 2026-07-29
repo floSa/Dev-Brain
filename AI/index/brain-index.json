@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 600,
+  "count": 607,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -48,6 +48,7 @@
       "agent-loops",
       "fastmcp",
       "gumloop",
+      "mcp-protocol",
       "n8n",
       "smolagents"
     ],
@@ -95,7 +96,11 @@
       "xarray"
     ],
     "attention": [
+      "Architectures hybrides LLM",
+      "Attention Residuals",
+      "Attention linéaire",
       "Flash Attention and efficient attention",
+      "Multi-head Latent Attention",
       "Positional encoding",
       "Self-attention",
       "Transformer architectures"
@@ -445,6 +450,7 @@
       "Constrained decoding",
       "Decoding strategies",
       "Guidance",
+      "Multi-Token Prediction",
       "Outlines",
       "Speculative decoding"
     ],
@@ -453,10 +459,12 @@
       "AlphaZero and self-play",
       "Apprentissage auto-supervisé en vision",
       "Architectures CNN",
+      "Attention Residuals",
       "Attribution par gradient",
       "Augmentation d'images",
       "Autoencodeurs",
       "CNN",
+      "Calculs adaptatifs",
       "Captum",
       "Chronos",
       "Classification d'images",
@@ -477,6 +485,7 @@
       "Keras",
       "Kolmogorov-Arnold Networks",
       "Kornia",
+      "Maximal Update Parametrization",
       "Metric learning & ré-identification",
       "Mixed precision",
       "Mixture of Experts",
@@ -836,6 +845,7 @@
       "Kornia",
       "LM Studio",
       "Mixed precision",
+      "Multi-head Latent Attention",
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ollama",
@@ -890,6 +900,7 @@
     ],
     "hyperparameter-tuning": [
       "Hyperopt",
+      "Maximal Update Parametrization",
       "Optimisation d'hyperparamètres",
       "Optuna",
       "Ray Tune"
@@ -958,8 +969,13 @@
       "vLLM"
     ],
     "inference-optimization": [
+      "Architectures hybrides LLM",
+      "Attention linéaire",
+      "Calculs adaptatifs",
       "Flash Attention and efficient attention",
       "Inference optimization",
+      "Multi-Token Prediction",
+      "Multi-head Latent Attention",
       "ONNX Runtime",
       "Pruning",
       "Quantization",
@@ -1031,7 +1047,8 @@
     ],
     "learning-rate": [
       "Adam optimizer",
-      "Learning rate schedules"
+      "Learning rate schedules",
+      "Maximal Update Parametrization"
     ],
     "learning-theory": [
       "Generalization bounds",
@@ -1119,6 +1136,7 @@
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
+      "Multi-Token Prediction",
       "Multi-agent systems",
       "Ollama",
       "OpenAI Agents SDK",
@@ -1310,6 +1328,7 @@
       "accelerate"
     ],
     "mixture-of-experts": [
+      "Calculs adaptatifs",
       "Mixture of Experts"
     ],
     "ml-demo": [
@@ -1551,6 +1570,7 @@
       "Gradient descent",
       "Learning rate schedules",
       "Loss landscape and saddle points",
+      "Maximal Update Parametrization",
       "Newton & quasi-Newton",
       "Optimal transport",
       "Optimisation combinatoire",
@@ -1770,6 +1790,7 @@
       "Metric learning & ré-identification"
     ],
     "reasoning": [
+      "Calculs adaptatifs",
       "Chain-of-Thought",
       "Code and math benchmarks",
       "GRPO",
@@ -1942,6 +1963,7 @@
       "Jailbreaking and defenses"
     ],
     "scaling-laws": [
+      "Maximal Update Parametrization",
       "Mixture of Experts",
       "Scaling laws",
       "Small Language Models"
@@ -2037,6 +2059,8 @@
       "Speech models"
     ],
     "state-space-model": [
+      "Architectures hybrides LLM",
+      "Attention linéaire",
       "State Space Models"
     ],
     "static-viz": [
@@ -2251,12 +2275,18 @@
       "torchvision"
     ],
     "transformers": [
+      "Architectures hybrides LLM",
+      "Attention Residuals",
+      "Attention linéaire",
+      "Calculs adaptatifs",
       "Chronos",
       "Flash Attention and efficient attention",
       "Foundation models pour séries temporelles",
       "GLiNER",
       "HuggingFace",
       "Mixture of Experts",
+      "Multi-Token Prediction",
+      "Multi-head Latent Attention",
       "Positional encoding",
       "Segment Anything (SAM)",
       "Self-attention",
@@ -9844,6 +9874,95 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Architectures hybrides LLM.md",
+      "nom": "Architectures hybrides LLM",
+      "alias": [
+        "hybrid attention",
+        "architecture hybride",
+        "hybrid linear attention",
+        "ratio 3:1",
+        "Kimi Linear",
+        "Qwen3-Next",
+        "Nemotron-3",
+        "Jamba",
+        "MiniMax-01",
+        "interleaved attention"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "state-space-model",
+        "transformers",
+        "inference-optimization"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Attention Residuals.md",
+      "nom": "Attention Residuals",
+      "alias": [
+        "AttnRes",
+        "Block AttnRes",
+        "résiduels par attention",
+        "attention sur la profondeur",
+        "depth-wise attention",
+        "dilution PreNorm"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "transformers",
+        "deep-learning"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Attention linéaire.md",
+      "nom": "Attention linéaire",
+      "alias": [
+        "linear attention",
+        "attention sans softmax",
+        "DeltaNet",
+        "Gated DeltaNet",
+        "GDN",
+        "KDA",
+        "règle delta",
+        "delta rule",
+        "mémoire associative",
+        "RWKV",
+        "Transformers are RNNs"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "state-space-model",
+        "transformers",
+        "inference-optimization"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Attribution par gradient.md",
       "nom": "Attribution par gradient",
       "alias": [
@@ -10184,6 +10303,39 @@
         "experimentation",
         "variance-reduction",
         "ab-testing"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Calculs adaptatifs.md",
+      "nom": "Calculs adaptatifs",
+      "alias": [
+        "adaptive computation",
+        "calcul adaptatif",
+        "early exit",
+        "sortie anticipée",
+        "Mixture of Depths",
+        "MoD",
+        "looped transformers",
+        "Mixture of Recursions",
+        "MoR",
+        "adaptive depth",
+        "ponder"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "reasoning",
+        "transformers",
+        "mixture-of-experts",
+        "deep-learning"
       ],
       "alternatives": null
     },
@@ -11460,7 +11612,11 @@
         "grouped-query attention",
         "GQA",
         "sparse attention",
-        "sliding window attention"
+        "sliding window attention",
+        "attention différentielle",
+        "Differential Transformer",
+        "DIFF Transformer",
+        "bruit d'attention"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -13049,6 +13205,37 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Maximal Update Parametrization.md",
+      "nom": "Maximal Update Parametrization",
+      "alias": [
+        "µP",
+        "muP",
+        "mu-P",
+        "µTransfer",
+        "muTransfer",
+        "transfert d'hyperparamètres",
+        "hyperparameter transfer",
+        "Tensor Programs",
+        "u-µP"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-rate",
+        "scaling-laws",
+        "hyperparameter-tuning",
+        "optimization",
+        "deep-learning"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Maximum de vraisemblance.md",
       "nom": "Maximum de vraisemblance",
       "alias": [
@@ -13195,7 +13382,12 @@
         "sparse MoE",
         "Switch Transformer",
         "experts conditionnels",
-        "top-k routing"
+        "top-k routing",
+        "fine-grained experts",
+        "shared experts",
+        "DeepSeekMoE",
+        "ratio de sparsité",
+        "expert parallelism"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -13364,6 +13556,33 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Multi-Token Prediction.md",
+      "nom": "Multi-Token Prediction",
+      "alias": [
+        "MTP",
+        "prédiction multi-tokens",
+        "MTP heads",
+        "têtes MTP",
+        "MTP-1",
+        "self-speculative decoding"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "decoding",
+        "transformers",
+        "inference-optimization",
+        "llm"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Multi-agent systems.md",
       "nom": "Multi-agent systems",
       "alias": [
@@ -13406,6 +13625,33 @@
       "tags": [
         "experimentation",
         "multi-armed-bandit"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Multi-head Latent Attention.md",
+      "nom": "Multi-head Latent Attention",
+      "alias": [
+        "MLA",
+        "attention latente multi-tête",
+        "latent attention",
+        "compression du KV-cache",
+        "low-rank KV compression",
+        "decoupled RoPE"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/dl",
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "inference-optimization",
+        "transformers",
+        "gpu"
       ],
       "alternatives": null
     },
@@ -14339,7 +14585,13 @@
         "AWQ",
         "PTQ",
         "QAT",
-        "K-quants"
+        "K-quants",
+        "NVFP4",
+        "MXFP4",
+        "FP4",
+        "microscaling",
+        "block scaling",
+        "quantization 4 bits"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -15412,7 +15664,11 @@
         "draft model",
         "modèle brouillon",
         "EAGLE",
-        "Medusa"
+        "Medusa",
+        "DSpark",
+        "DeepSpec",
+        "semi-autoregressive",
+        "ordonnanceur de confiance"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -15465,10 +15721,14 @@
         "SSM",
         "modèles à espace d'états",
         "Mamba",
+        "Mamba-2",
+        "Mamba-3",
         "S4",
         "S5",
         "selective state space",
-        "linear-time sequence model"
+        "linear-time sequence model",
+        "MIMO",
+        "discrétisation trapézoïdale"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -16530,7 +16790,12 @@
       "alias": [
         "MCP",
         "Model Context Protocol",
-        "protocole MCP"
+        "protocole MCP",
+        "MCP Apps",
+        "MCP Tasks",
+        "MRTR",
+        "spec 2026-07-28",
+        "Agentic AI Foundation"
       ],
       "type": "concept",
       "galaxie": "wiki",
@@ -16542,7 +16807,8 @@
       "tags": [
         "mcp",
         "tool-use",
-        "llm"
+        "llm",
+        "agents"
       ],
       "alternatives": null
     },

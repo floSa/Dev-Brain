@@ -225,20 +225,42 @@ Constat brut, à toi de décider si tu veux les amorcer :
 > YouTube `SqyHPlEM40Q`), analysée en détail dans un watch-report local
 > (`video-le-transformer-en-passe-detre-depasse.md` = toutes les slides + narration ;
 > chaque candidat ci-dessous pointe vers un timestamp précis de la vidéo).
-> Non traité — en attente de validation avant création via `enrichir-brain`.
+> **TRAITÉ le 2026-07-29** via `enrichir-brain` — grappe élargie à la demande de
+> l'utilisateur (MCP, quantization, Mamba-3, DSpark, MLA, MTP, AttnRes).
 
 Concepts candidats (`Wiki/Concepts/`), du plus structurant au plus pointu :
 
-| Nom | Description | Lien avec l'existant |
+| Nom | Description | Statut |
 |---|---|---|
-| **Attention linéaire** | Attention sans softmax = mémoire associative de taille fixe (Θ(1) calcul/mémoire vs Θ(n)). Cadre unificateur attention ↔ Mamba. Le « paradoxe de Mamba » : efficient mais faible en rappel (MMLU). | complète `Transformer architectures`, `Tokenization` |
-| **Architectures hybrides LLM** | Mixer N couches d'attention linéaire pour 1 couche d'attention globale (ratio 3:1-4:1) : le rappel n'est porté que par quelques têtes. Ex. Qwen 3.5, Kimi Linear. | dépend d'Attention linéaire |
-| **µP (Maximal Update Parametrization)** | LR ∝ 1/largeur + init ∝ 1/√fan_in → dynamiques d'entraînement identiques à toute échelle, transfert des hyperparamètres petit→grand. | proche de tes fiches optimisation/entraînement |
-| **Mixture of Experts (MoE)** | Découpler paramètres totaux (performance, lois d'échelle) et actifs (coût d'inférence) par sparsité. Ex. DeepSeek V3 671B/37B, Kimi K2 1000B/32B. | trou visible : tous les modèles ouverts récents sont MoE |
-| **Calculs adaptatifs (early exit, looped transformers)** | Quantité de calcul variable selon la difficulté de l'entrée : Mixture of Depths, HRM/TRM (modèle petit bouclé — biais inductif de raisonnement algorithmique), architectures sans tokenisation (H-Net), RL/effort. | relie `Reasoning`, lois d'échelle |
-| **Attention différentielle** | Deux cartes softmax soustraites (λ) pour annuler le « bruit d'attention » corrélé — gains massifs sur needle-in-a-haystack (99.6 % vs 55 % à 4k). | pointu ; optionnel |
-| **Gating & règle delta (gestion de mémoire récurrente)** | Les deux mécanismes qui ont fait évoluer Mamba : décroissance exponentielle des associations passées + remplacement chirurgical (DeltaNet → GDN → KDA). | sous-fiche possible d'Attention linéaire |
+| **Attention linéaire** | Attention sans softmax = mémoire associative de taille fixe (Θ(1) calcul/mémoire vs Θ(n)). Cadre unificateur attention ↔ Mamba. Le « paradoxe de Mamba » : efficient mais faible en rappel (MMLU). | ✅ créé |
+| **Architectures hybrides LLM** | Mixer N couches d'attention linéaire pour 1 couche d'attention globale (ratio 3:1-4:1) : le rappel n'est porté que par quelques têtes. Ex. Qwen 3.5, Kimi Linear. | ✅ créé |
+| **µP (Maximal Update Parametrization)** | LR ∝ 1/largeur + init ∝ 1/√fan_in → dynamiques d'entraînement identiques à toute échelle, transfert des hyperparamètres petit→grand. | ✅ créé (`Maximal Update Parametrization`) |
+| **Mixture of Experts (MoE)** | Découpler paramètres totaux (performance, lois d'échelle) et actifs (coût d'inférence) par sparsité. Ex. DeepSeek V3 671B/37B, Kimi K2 1000B/32B. | ✅ la fiche existait — mise à jour 2026 (ratio de sparsité, fine-grained + shared, effet straggler) |
+| **Calculs adaptatifs (early exit, looped transformers)** | Quantité de calcul variable selon la difficulté de l'entrée : Mixture of Depths, HRM/TRM (modèle petit bouclé — biais inductif de raisonnement algorithmique), architectures sans tokenisation (H-Net), RL/effort. | ✅ créé |
+| **Attention différentielle** | Deux cartes softmax soustraites (λ) pour annuler le « bruit d'attention » corrélé. | ✅ section de `Flash Attention and efficient attention` — chiffres corrigés depuis le papier ICLR 2025 : rappel **85 % vs 55 %**, pas 99,6 % |
+| **Gating & règle delta (gestion de mémoire récurrente)** | Les deux mécanismes qui ont fait évoluer Mamba : décroissance exponentielle des associations passées + remplacement chirurgical (DeltaNet → GDN → KDA). | ✅ section de `Attention linéaire` |
 
-Suggestion de traitement : les 5 premiers forment une grappe cohérente
-(« pourquoi les LLM 2026 ne sont plus des Transformers vanilla ») ; les 2 derniers
-peuvent vivre comme sections des fiches parentes plutôt que fiches autonomes.
+Ajouts hors liste initiale, nécessaires à la cohérence de la grappe :
+
+| Nom | Pourquoi | Statut |
+|---|---|---|
+| **Multi-head Latent Attention** | Trou visible : la fiche Flash Attention couvrait MQA/GQA mais pas MLA, brique DeepSeek et couche globale des hybrides. | ✅ créé |
+| **Multi-Token Prediction** | Sans elle, DSpark n'a pas de baseline (MTP-1) et le lien entraînement ↔ décodage spéculatif manque. | ✅ créé |
+| **Attention Residuals** | Seule vraie création de la liste demandée par l'utilisateur (Kimi, arXiv 2603.15031). | ✅ créé |
+| `mcp-protocol` | La fiche citait la spec 2025-11-25 : périmée par la révision 2026-07-28 (stateless, MRTR, extensions, autorisation durcie). | ✅ mise à jour |
+| `Quantization` | Manquaient les formats microscaling natifs (NVFP4/MXFP4) et la bascule du 4 bits vers l'entraînement. | ✅ mise à jour |
+| `State Space Models` | S'arrêtait à Mamba-1. | ✅ mise à jour (state space duality + Mamba-3 ICLR 2026) |
+| `Speculative decoding` | Manquait DSpark (arXiv 2607.05147) et le lien MTP. | ✅ mise à jour |
+| `agent-loops` | Fiche déjà solide ; complétée sur le budget de contexte et les trois échecs types. | ✅ mise à jour |
+
+Corrigés au passage : 7 renvois « (à créer) » pointant vers des fiches désormais
+existantes (`Quantization`, `Distillation`, `Speculative decoding`,
+`Reasoning models`, `GRPO`, `RL for LLMs`, `Reward modeling`).
+
+### Reste à trancher sur cette grappe
+
+- **Fiche service `Dev/Services/DeepSpec`** (`categorie: ml/optimization`, MIT) — DSpark est
+  documenté côté concept, mais le codebase déployable n'a pas sa fiche Dev. Non fait.
+- **Renommage des 5 fiches en kebab-case** (`mcp-protocol`, `agent-loops`, `tool-use`,
+  `prompt-caching`, `embeddings`) vers la casse du reste du vault. Non fait — demande une
+  reprise des wikilinks entrants.

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain v2
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 600 pages actives.
+> 607 pages actives.
 
 ## Par page
 
@@ -1283,7 +1283,7 @@
 ### SGLang  ·  dev/service
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PyTorch]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Ollama]], [[Outlines]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### SHAP  ·  dev/service
 - tags : `explainability`, `supervised`
@@ -1513,7 +1513,7 @@
 ### vLLM  ·  dev/service
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]]
-- liens entrants : [[Flash Attention and efficient attention]], [[GRPO]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mixture of Experts]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Quantization]], [[RL for LLMs]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[text-generation-webui]]
+- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Quantization]], [[RL for LLMs]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[text-generation-webui]]
 
 ### Weaviate  ·  dev/service
 - tags : `vector-db`, `rag`, `hybrid-search`
@@ -1583,7 +1583,7 @@
 ### Adam optimizer  ·  wiki/concept
 - tags : `optimization`, `gradient-descent`, `deep-learning`, `learning-rate`
 - liens sortants : [[Convexity]], [[Distillation]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Quantization]], [[Régularisation]]
-- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Gradient descent]], [[Perceptron et MLP]]
+- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Gradient descent]], [[Maximal Update Parametrization]], [[Perceptron et MLP]]
 
 ### Advanced RAG  ·  wiki/concept
 - tags : `rag`, `llm`, `retrieval`
@@ -1607,8 +1607,8 @@
 
 ### agent-loops  ·  wiki/concept
 - tags : `agents`, `llm`, `tool-use`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Context engineering]], [[Human-in-the-loop]], [[LLM observability]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[Tool use patterns]], [[tool-use]]
-- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Human-in-the-loop]], [[LLM observability]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[Reliability patterns]], [[Tool use patterns]], [[smolagents]], [[tool-use]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Context engineering]], [[Human-in-the-loop]], [[LLM observability]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
+- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Human-in-the-loop]], [[LLM observability]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[Reliability patterns]], [[Tool use patterns]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
 
 ### AI security  ·  wiki/concept
 - tags : `ai-security`, `safety`, `llm`
@@ -1665,10 +1665,25 @@
 - liens sortants : [[CNN]], [[Distillation]], [[Inference optimization]], [[Keras]], [[PyTorch]], [[Quantization]], [[Scaling laws]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
 - liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Transfer learning vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
 
+### Architectures hybrides LLM  ·  wiki/concept
+- tags : `attention`, `state-space-model`, `transformers`, `inference-optimization`
+- liens sortants : [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Quantization]], [[SGLang]], [[Self-attention]], [[State Space Models]], [[vLLM]]
+- liens entrants : [[Attention Residuals]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[State Space Models]], [[Transformer architectures]]
+
 ### ARIMA SARIMA  ·  wiki/concept
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[pmdarima]], [[statsforecast]]
 - liens entrants : [[Autocorrelation]], [[Chronos]], [[Exponential smoothing]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[STUMPY]], [[Stationarity]], [[Time series anomaly detection]], [[pmdarima]], [[statsforecast]]
+
+### Attention linéaire  ·  wiki/concept
+- tags : `attention`, `state-space-model`, `transformers`, `inference-optimization`
+- liens sortants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Positional encoding]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Flash Attention and efficient attention]], [[Multi-head Latent Attention]], [[Positional encoding]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]]
+
+### Attention Residuals  ·  wiki/concept
+- tags : `attention`, `transformers`, `deep-learning`
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Mixture of Experts]], [[Scaling laws]], [[Self-attention]], [[Transformer architectures]]
+- liens entrants : [[Attention linéaire]], [[Maximal Update Parametrization]], [[Scaling laws]], [[Self-attention]], [[Transformer architectures]]
 
 ### Attribution par gradient  ·  wiki/concept
 - tags : `explainability`, `deep-learning`
@@ -1730,6 +1745,11 @@
 - liens sortants : [[MCA]], [[PCA]], [[Réduction de dimension]], [[Test du khi-deux]]
 - liens entrants : [[Apprentissage non supervisé]], [[Fanalysis]], [[MCA]], [[PCA]], [[Prince]], [[Réduction de dimension]]
 
+### Calculs adaptatifs  ·  wiki/concept
+- tags : `inference-optimization`, `reasoning`, `transformers`, `mixture-of-experts`, `deep-learning`
+- liens sortants : [[Inference optimization]], [[Mixture of Experts]], [[Pruning]], [[Quantization]], [[Reasoning models]], [[Routing and cascading]], [[Scaling laws]], [[Small Language Models]], [[Speculative decoding]], [[Transformer architectures]]
+- liens entrants : [[Inference optimization]], [[Mixture of Experts]], [[Reasoning models]], [[Routing and cascading]], [[Scaling laws]], [[Speculative decoding]], [[Transformer architectures]]
+
 ### Calibration  ·  wiki/concept
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
@@ -1737,7 +1757,7 @@
 
 ### Chain-of-Thought  ·  wiki/concept
 - tags : `prompting`, `reasoning`, `llm`
-- liens sortants : [[Decoding strategies]], [[Prompt engineering]], [[Structured outputs]]
+- liens sortants : [[Decoding strategies]], [[Prompt engineering]], [[Reasoning models]], [[Structured outputs]]
 - liens entrants : [[Code and math benchmarks]], [[LLM-as-judge]], [[Monte Carlo Tree Search]], [[Prompt engineering]], [[Reasoning models]]
 
 ### Change Data Capture (CDC)  ·  wiki/concept
@@ -1848,7 +1868,7 @@
 ### Cross-entropy  ·  wiki/concept
 - tags : `information-theory`, `cross-entropy`, `classification`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Imbalanced classification]], [[KL divergence]], [[Maximum de vraisemblance]], [[Perplexity]], [[PyTorch]], [[Scikit-Learn]], [[Shannon entropy]]
-- liens entrants : [[AlphaZero and self-play]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[CNN]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Classification de texte]], [[Classification metrics]], [[Distillation]], [[KL divergence]], [[Metric learning & ré-identification]], [[NER et étiquetage de séquence]], [[Perplexity]], [[Segment Anything (SAM)]], [[Segmentation]], [[Shannon entropy]], [[Speech models]], [[Vision par ordinateur]]
+- liens entrants : [[AlphaZero and self-play]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[CNN]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Classification de texte]], [[Classification metrics]], [[Distillation]], [[KL divergence]], [[Metric learning & ré-identification]], [[Multi-Token Prediction]], [[NER et étiquetage de séquence]], [[Perplexity]], [[Segment Anything (SAM)]], [[Segmentation]], [[Shannon entropy]], [[Speech models]], [[Vision par ordinateur]]
 
 ### CUPED  ·  wiki/concept
 - tags : `experimentation`, `variance-reduction`, `ab-testing`
@@ -1872,8 +1892,8 @@
 
 ### Decoding strategies  ·  wiki/concept
 - tags : `decoding`, `llm`, `nlp`
-- liens sortants : [[Constrained decoding]], [[Guidance]], [[Outlines]], [[Perplexity]], [[Server-Sent Events & streaming LLM]], [[Structured outputs]], [[Tokenization]]
-- liens entrants : [[Chain-of-Thought]], [[Constrained decoding]], [[Guidance]], [[Inference optimization]], [[Outlines]], [[Perplexity]], [[Server-Sent Events & streaming LLM]], [[Speculative decoding]], [[Structured outputs]], [[Tokenization]]
+- liens sortants : [[Constrained decoding]], [[Guidance]], [[Multi-Token Prediction]], [[Outlines]], [[Perplexity]], [[Server-Sent Events & streaming LLM]], [[Speculative decoding]], [[Structured outputs]], [[Tokenization]]
+- liens entrants : [[Chain-of-Thought]], [[Constrained decoding]], [[Guidance]], [[Inference optimization]], [[Multi-Token Prediction]], [[Outlines]], [[Perplexity]], [[Server-Sent Events & streaming LLM]], [[Speculative decoding]], [[Structured outputs]], [[Tokenization]]
 
 ### Diff-in-Diff  ·  wiki/concept
 - tags : `causal-inference`, `hypothesis-testing`
@@ -1888,7 +1908,7 @@
 ### Distillation  ·  wiki/concept
 - tags : `model-compression`, `deep-learning`, `small-language-model`, `synthetic-data`, `fine-tuning`
 - liens sortants : [[Cross-entropy]], [[KL divergence]], [[PEFT]], [[Pruning]], [[Quantization]], [[SFT]], [[Small Language Models]], [[Synthetic data generation]]
-- liens entrants : [[Adam optimizer]], [[Architectures CNN]], [[Augmentation d'images]], [[Diffusion models]], [[Pruning]], [[Quantization]], [[Superposition]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
+- liens entrants : [[Adam optimizer]], [[Architectures CNN]], [[Augmentation d'images]], [[Diffusion models]], [[Pruning]], [[Quantization]], [[Small Language Models]], [[Superposition]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
 
 ### Déploiement de modèles  ·  wiki/concept
 - tags : `deployment-strategy`, `model-serving`, `inference`
@@ -1943,7 +1963,7 @@
 ### Entraînement distribué  ·  wiki/concept
 - tags : `distributed-training`, `deep-learning`, `gpu`, `memory-optimization`
 - liens sortants : [[DeepSpeed]], [[Gradient checkpointing]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
-- liens entrants : [[Axolotl]], [[DeepSpeed]], [[Gradient checkpointing]], [[LLaMA-Factory]], [[Mixed precision]], [[PyTorch]], [[accelerate]]
+- liens entrants : [[Axolotl]], [[DeepSpeed]], [[Gradient checkpointing]], [[LLaMA-Factory]], [[Mixed precision]], [[Mixture of Experts]], [[PyTorch]], [[accelerate]]
 
 ### Estimation de pose  ·  wiki/concept
 - tags : `pose-estimation`, `computer-vision`, `deep-learning`
@@ -1992,8 +2012,8 @@
 
 ### Flash Attention and efficient attention  ·  wiki/concept
 - tags : `attention`, `inference-optimization`, `gpu`, `transformers`
-- liens sortants : [[Inference optimization]], [[PyTorch]], [[SGLang]], [[Self-attention]], [[Speculative decoding]], [[TGI]], [[Transformer architectures]], [[vLLM]]
-- liens entrants : [[Inference optimization]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Inference optimization]], [[Multi-head Latent Attention]], [[PyTorch]], [[Quantization]], [[SGLang]], [[Self-attention]], [[Speculative decoding]], [[TGI]], [[Transformer architectures]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
 
 ### Forecasting framing  ·  wiki/concept
 - tags : `forecasting`, `timeseries`
@@ -2063,7 +2083,7 @@
 ### Gradient descent  ·  wiki/concept
 - tags : `optimization`, `gradient-descent`
 - liens sortants : [[Adam optimizer]], [[Convexity]], [[Gradient Boosting (GBDT)]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Vector norms]]
-- liens entrants : [[Adam optimizer]], [[Attribution par gradient]], [[CNN]], [[Classification audio par spectrogramme]], [[Convexity]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
+- liens entrants : [[Adam optimizer]], [[Attribution par gradient]], [[CNN]], [[Classification audio par spectrogramme]], [[Convexity]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
 
 ### Graph Neural Networks  ·  wiki/concept
 - tags : `gnn`, `deep-learning`, `representation-learning`
@@ -2078,7 +2098,7 @@
 ### GRPO  ·  wiki/concept
 - tags : `reinforcement-learning`, `reasoning`, `alignment`, `llm`
 - liens sortants : [[PEFT]], [[PPO]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reward modeling]], [[SFT]], [[vLLM]]
-- liens entrants : [[Actor-Critic methods]], [[AlphaZero and self-play]], [[PPO]], [[Policy gradient]], [[RL for LLMs]], [[RLHF and DPO]], [[Reinforcement learning]], [[Reward modeling]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens entrants : [[Actor-Critic methods]], [[AlphaZero and self-play]], [[PPO]], [[Policy gradient]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward modeling]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### Guardrails  ·  wiki/concept
 - tags : `guardrails`, `safety`, `llm`
@@ -2142,8 +2162,8 @@
 
 ### Inference optimization  ·  wiki/concept
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
-- liens sortants : [[Decoding strategies]], [[Flash Attention and efficient attention]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[prompt-caching]], [[vLLM]]
-- liens entrants : [[Architectures CNN]], [[Flash Attention and efficient attention]], [[Positional encoding]], [[Pruning]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[TGI]], [[prompt-caching]], [[vLLM]]
+- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Calculs adaptatifs]], [[Flash Attention and efficient attention]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Positional encoding]], [[Pruning]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[TGI]], [[prompt-caching]], [[vLLM]]
 
 ### Inférence bayésienne  ·  wiki/concept
 - tags : `bayesian`, `statistical-inference`, `prior`
@@ -2227,8 +2247,8 @@
 
 ### Learning rate schedules  ·  wiki/concept
 - tags : `optimization`, `learning-rate`
-- liens sortants : [[Convexity]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Optimisation d'hyperparamètres]], [[Validation croisée]]
-- liens entrants : [[Adam optimizer]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Perceptron et MLP]], [[Transfer learning vision]]
+- liens sortants : [[Convexity]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Optimisation d'hyperparamètres]], [[Validation croisée]]
+- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Perceptron et MLP]], [[Transfer learning vision]]
 
 ### LLM benchmarks  ·  wiki/concept
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
@@ -2273,7 +2293,7 @@
 ### Loss landscape and saddle points  ·  wiki/concept
 - tags : `optimization`, `loss-landscape`
 - liens sortants : [[Compromis biais-variance]], [[Convexity]], [[Eigendecomposition]], [[Gradient descent]], [[Learning rate schedules]], [[Newton & quasi-Newton]]
-- liens entrants : [[Adam optimizer]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Newton & quasi-Newton]]
+- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]]
 
 ### Maintenance prédictive et RUL  ·  wiki/concept
 - tags : `timeseries`, `survival-analysis`, `regression`
@@ -2305,6 +2325,11 @@
 - liens sortants : [[Eigendecomposition]], [[Matrix decompositions]], [[Projections]], [[PyTorch]], [[Vector norms]], [[embeddings]], [[numpy]]
 - liens entrants : [[Eigendecomposition]], [[Matrix decompositions]], [[Projections]], [[Vector norms]]
 
+### Maximal Update Parametrization  ·  wiki/concept
+- tags : `learning-rate`, `scaling-laws`, `hyperparameter-tuning`, `optimization`, `deep-learning`
+- liens sortants : [[Adam optimizer]], [[Attention Residuals]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Mixed precision]], [[Optimisation d'hyperparamètres]], [[Scaling laws]]
+- liens entrants : [[Learning rate schedules]], [[Mixed precision]], [[Optimisation d'hyperparamètres]], [[Scaling laws]]
+
 ### Maximum de vraisemblance  ·  wiki/concept
 - tags : `maximum-likelihood`, `point-estimation`, `statistical-inference`
 - liens sortants : [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Régression linéaire]], [[Régression logistique]], [[Tests d'hypothèse]]
@@ -2321,9 +2346,9 @@
 - liens entrants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[PyMC]], [[Stan]]
 
 ### mcp-protocol  ·  wiki/concept
-- tags : `mcp`, `tool-use`, `llm`
-- liens sortants : [[Agent memory]], [[Context engineering]], [[LangGraph]], [[PydanticAI]], [[Reliability patterns]], [[Tool use patterns]], [[fastmcp]], [[mcpjam]], [[tool-use]]
-- liens entrants : [[AI security]], [[Activepieces]], [[Agent memory]], [[Multi-agent systems]], [[Prompt injection]], [[Tool use patterns]], [[fastmcp]], [[mcpjam]], [[tool-use]]
+- tags : `mcp`, `tool-use`, `llm`, `agents`
+- liens sortants : [[Agent memory]], [[Context engineering]], [[LangGraph]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcpjam]], [[tool-use]]
+- liens entrants : [[AI security]], [[Activepieces]], [[Agent memory]], [[Multi-agent systems]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcpjam]], [[tool-use]]
 
 ### Metric learning & ré-identification  ·  wiki/concept
 - tags : `metric-learning`, `re-identification`, `representation-learning`, `computer-vision`, `deep-learning`
@@ -2347,13 +2372,13 @@
 
 ### Mixed precision  ·  wiki/concept
 - tags : `mixed-precision`, `deep-learning`, `gpu`, `memory-optimization`
-- liens sortants : [[Entraînement distribué]], [[Gradient checkpointing]], [[PyTorch]], [[Quantization]]
-- liens entrants : [[DeepSpeed]], [[Entraînement distribué]], [[Gradient checkpointing]], [[PyTorch]], [[accelerate]]
+- liens sortants : [[Entraînement distribué]], [[Gradient checkpointing]], [[Maximal Update Parametrization]], [[PyTorch]], [[Quantization]]
+- liens entrants : [[DeepSpeed]], [[Entraînement distribué]], [[Gradient checkpointing]], [[Maximal Update Parametrization]], [[PyTorch]], [[Quantization]], [[accelerate]]
 
 ### Mixture of Experts  ·  wiki/concept
 - tags : `mixture-of-experts`, `transformers`, `deep-learning`, `scaling-laws`
-- liens sortants : [[PEFT]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Transformer architectures]], [[vLLM]]
-- liens entrants : [[Scaling laws]], [[State Space Models]], [[Transformer architectures]]
+- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Entraînement distribué]], [[PEFT]], [[Quantization]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Transformer architectures]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Calculs adaptatifs]], [[Quantization]], [[Scaling laws]], [[State Space Models]], [[Transformer architectures]]
 
 ### Model registry & versioning  ·  wiki/concept
 - tags : `model-registry`, `experiment-tracking`
@@ -2394,6 +2419,16 @@
 - tags : `experimentation`, `multi-armed-bandit`
 - liens sortants : [[A/B testing]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Reinforcement learning]], [[Sequential testing]]
 - liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Sequential testing]], [[Systèmes de recommandation]], [[Théorie des jeux]]
+
+### Multi-head Latent Attention  ·  wiki/concept
+- tags : `attention`, `inference-optimization`, `transformers`, `gpu`
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[SGLang]], [[SVD]], [[Self-attention]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[Self-attention]], [[Transformer architectures]]
+
+### Multi-Token Prediction  ·  wiki/concept
+- tags : `decoding`, `transformers`, `inference-optimization`, `llm`
+- liens sortants : [[Cross-entropy]], [[Decoding strategies]], [[Inference optimization]], [[Scaling laws]], [[Speculative decoding]], [[Transformer architectures]]
+- liens entrants : [[Decoding strategies]], [[Inference optimization]], [[Speculative decoding]]
 
 ### Mutual information  ·  wiki/concept
 - tags : `information-theory`, `mutual-information`
@@ -2477,8 +2512,8 @@
 
 ### Optimisation d'hyperparamètres  ·  wiki/concept
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
-- liens sortants : [[Compromis biais-variance]], [[Gaussian Process]], [[Hyperopt]], [[Optuna]], [[Ray Tune]], [[Régularisation]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Learning rate schedules]], [[Optuna]], [[Ray Tune]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
+- liens sortants : [[Compromis biais-variance]], [[Gaussian Process]], [[Hyperopt]], [[Maximal Update Parametrization]], [[Optuna]], [[Ray Tune]], [[Régularisation]], [[Scikit-Learn]], [[Validation croisée]]
+- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Learning rate schedules]], [[Maximal Update Parametrization]], [[Optuna]], [[Ray Tune]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
 
 ### Optimisation sous contrainte  ·  wiki/concept
 - tags : `optimization`, `constrained-optimization`, `convexity`
@@ -2532,8 +2567,8 @@
 
 ### Positional encoding  ·  wiki/concept
 - tags : `positional-encoding`, `transformers`, `attention`
-- liens sortants : [[Context engineering]], [[Inference optimization]], [[Self-attention]], [[Transformer architectures]]
-- liens entrants : [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
+- liens sortants : [[Attention linéaire]], [[Context engineering]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]]
+- liens entrants : [[Attention linéaire]], [[Multi-head Latent Attention]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
 
 ### PPO  ·  wiki/concept
 - tags : `reinforcement-learning`, `policy-gradient`
@@ -2568,7 +2603,7 @@
 ### Prompt injection  ·  wiki/concept
 - tags : `prompt-injection`, `ai-security`, `llm`
 - liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[RAG]], [[Reliability patterns]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]]
+- liens entrants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[mcp-protocol]]
 
 ### prompt-caching  ·  wiki/concept
 - tags : `caching`, `inference-optimization`, `llm`, `context-engineering`
@@ -2578,7 +2613,7 @@
 ### Pruning  ·  wiki/concept
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[PyTorch]], [[Quantization]], [[Small Language Models]]
-- liens entrants : [[Distillation]], [[PyTorch]], [[Quantization]], [[Superposition]]
+- liens entrants : [[Calculs adaptatifs]], [[Distillation]], [[PyTorch]], [[Quantization]], [[Superposition]]
 
 ### Q-learning and DQN  ·  wiki/concept
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
@@ -2587,8 +2622,8 @@
 
 ### Quantization  ·  wiki/concept
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
-- liens sortants : [[Distillation]], [[Inference optimization]], [[LoRA et QLoRA]], [[PEFT]], [[Pruning]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Adam optimizer]], [[Architectures CNN]], [[Axolotl]], [[Diffusion models]], [[Distillation]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[PEFT]], [[Pruning]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[vLLM]]
+- liens sortants : [[Distillation]], [[Inference optimization]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[Adam optimizer]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Small Language Models]], [[Speculative decoding]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[vLLM]]
 
 ### Query transformations  ·  wiki/concept
 - tags : `query-transformation`, `rag`, `retrieval`, `llm`
@@ -2627,8 +2662,8 @@
 
 ### Reasoning models  ·  wiki/concept
 - tags : `reasoning`, `llm`, `alignment`
-- liens sortants : [[Chain-of-Thought]], [[Inference optimization]], [[RLHF and DPO]], [[SGLang]], [[Scaling laws]], [[vLLM]]
-- liens entrants : [[Code and math benchmarks]], [[GRPO]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[RL for LLMs]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Synthetic data generation]], [[vLLM]]
+- liens sortants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[GRPO]], [[Inference optimization]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[GRPO]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[RL for LLMs]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Synthetic data generation]], [[vLLM]]
 
 ### Recherche d'information  ·  wiki/concept
 - tags : `nlp`, `information-retrieval`, `retrieval`, `hybrid-search`, `ranking`, `semantic-search`
@@ -2663,7 +2698,7 @@
 ### Reward modeling  ·  wiki/concept
 - tags : `alignment`, `reinforcement-learning`, `llm`
 - liens sortants : [[GRPO]], [[HuggingFace]], [[LLM-as-judge]], [[PPO]], [[PyTorch]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reward shaping and hacking]], [[SFT]]
-- liens entrants : [[GRPO]], [[Imitation learning]], [[PPO]], [[RL for LLMs]], [[RLHF and DPO]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Synthetic data generation]], [[TRL]]
+- liens entrants : [[GRPO]], [[Imitation learning]], [[PPO]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Synthetic data generation]], [[TRL]]
 
 ### Reward shaping and hacking  ·  wiki/concept
 - tags : `reinforcement-learning`, `reward-shaping`, `alignment`
@@ -2673,7 +2708,7 @@
 ### RL for LLMs  ·  wiki/concept
 - tags : `reinforcement-learning`, `alignment`, `fine-tuning`, `llm`
 - liens sortants : [[GRPO]], [[HuggingFace]], [[PEFT]], [[PPO]], [[Policy gradient]], [[PyTorch]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward modeling]], [[SFT]], [[Tunix]], [[vLLM]]
-- liens entrants : [[AlphaZero and self-play]], [[GRPO]], [[Imitation learning]], [[Monte Carlo Tree Search]], [[PEFT]], [[PPO]], [[Policy gradient]], [[RLHF and DPO]], [[Reinforcement learning]], [[Reward modeling]], [[Reward shaping and hacking]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens entrants : [[AlphaZero and self-play]], [[GRPO]], [[Imitation learning]], [[Monte Carlo Tree Search]], [[PEFT]], [[PPO]], [[Policy gradient]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward modeling]], [[Reward shaping and hacking]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### RLHF and DPO  ·  wiki/concept
 - tags : `alignment`, `fine-tuning`, `llm`
@@ -2687,8 +2722,8 @@
 
 ### Routing and cascading  ·  wiki/concept
 - tags : `routing`, `llm`, `rag`
-- liens sortants : [[Advanced RAG]], [[LLM caching]], [[LiteLLM]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[LLM caching]], [[OpenRouter]], [[Query transformations]], [[RAG]], [[RAG eval]]
+- liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM caching]], [[LiteLLM]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
+- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM caching]], [[OpenRouter]], [[Query transformations]], [[RAG]], [[RAG eval]]
 
 ### Réduction de dimension  ·  wiki/concept
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -2727,8 +2762,8 @@
 
 ### Scaling laws  ·  wiki/concept
 - tags : `scaling-laws`, `llm`, `deep-learning`
-- liens sortants : [[Mixture of Experts]], [[Perplexity]], [[Reasoning models]], [[Small Language Models]], [[Transformer architectures]]
-- liens entrants : [[Architectures CNN]], [[Foundation models pour séries temporelles]], [[LLM benchmarks]], [[Mixture of Experts]], [[Reasoning models]], [[Small Language Models]], [[State Space Models]], [[Transformer architectures]]
+- liens sortants : [[Attention Residuals]], [[Calculs adaptatifs]], [[Maximal Update Parametrization]], [[Mixture of Experts]], [[Perplexity]], [[Reasoning models]], [[Small Language Models]], [[Transformer architectures]]
+- liens entrants : [[Architectures CNN]], [[Attention Residuals]], [[Calculs adaptatifs]], [[Foundation models pour séries temporelles]], [[LLM benchmarks]], [[Maximal Update Parametrization]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Reasoning models]], [[Small Language Models]], [[State Space Models]], [[Transformer architectures]]
 
 ### Segment Anything (SAM)  ·  wiki/concept
 - tags : `segmentation`, `computer-vision`, `transformers`, `deep-learning`
@@ -2742,8 +2777,8 @@
 
 ### Self-attention  ·  wiki/concept
 - tags : `attention`, `transformers`, `deep-learning`
-- liens sortants : [[Flash Attention and efficient attention]], [[HuggingFace]], [[Inference optimization]], [[Positional encoding]], [[PyTorch]], [[Tokenization]], [[Transformer architectures]]
-- liens entrants : [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Kolmogorov-Arnold Networks]], [[NER et étiquetage de séquence]], [[Positional encoding]], [[State Space Models]], [[Transformer architectures]], [[TransformerLens]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]]
+- liens sortants : [[Attention Residuals]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Positional encoding]], [[PyTorch]], [[Tokenization]], [[Transformer architectures]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Kolmogorov-Arnold Networks]], [[Multi-head Latent Attention]], [[NER et étiquetage de séquence]], [[Positional encoding]], [[State Space Models]], [[Transformer architectures]], [[TransformerLens]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]]
 
 ### Sequential testing  ·  wiki/concept
 - tags : `experimentation`, `sequential-analysis`, `hypothesis-testing`
@@ -2767,8 +2802,8 @@
 
 ### Small Language Models  ·  wiki/concept
 - tags : `small-language-model`, `scaling-laws`, `llm`, `local-llm`
-- liens sortants : [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PEFT]], [[Reasoning models]], [[Scaling laws]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Distillation]], [[Mixture of Experts]], [[Pruning]], [[Quantization]], [[Routing and cascading]], [[Scaling laws]], [[Transformer architectures]], [[vLLM]]
+- liens sortants : [[Distillation]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PEFT]], [[Quantization]], [[Reasoning models]], [[Scaling laws]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Distillation]], [[Mixture of Experts]], [[Pruning]], [[Quantization]], [[Routing and cascading]], [[Scaling laws]], [[Transformer architectures]], [[vLLM]]
 
 ### Sparse autoencoders  ·  wiki/concept
 - tags : `explainability`, `deep-learning`, `llm`, `unsupervised`
@@ -2777,8 +2812,8 @@
 
 ### Speculative decoding  ·  wiki/concept
 - tags : `inference-optimization`, `decoding`, `llm`, `inference`
-- liens sortants : [[Decoding strategies]], [[Inference optimization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[vLLM]]
-- liens entrants : [[Flash Attention and efficient attention]], [[Inference optimization]], [[SGLang]], [[TGI]], [[vLLM]]
+- liens sortants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Inference optimization]], [[Multi-Token Prediction]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Multi-Token Prediction]], [[SGLang]], [[TGI]], [[vLLM]]
 
 ### Speech models  ·  wiki/concept
 - tags : `speech`, `deep-learning`, `multimodal`
@@ -2787,8 +2822,8 @@
 
 ### State Space Models  ·  wiki/concept
 - tags : `state-space-model`, `deep-learning`, `inference-optimization`
-- liens sortants : [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Scaling laws]], [[Self-attention]], [[Transformer architectures]]
-- liens entrants : [[Transformer architectures]]
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Transformer architectures]]
+- liens entrants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Positional encoding]], [[Transformer architectures]]
 
 ### Stationarity  ·  wiki/concept
 - tags : `timeseries`, `stochastic-process`
@@ -2823,7 +2858,7 @@
 ### SVD  ·  wiki/concept
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`, `dimensionality-reduction`
 - liens sortants : [[Eigendecomposition]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[numpy]]
-- liens entrants : [[Apprentissage non supervisé]], [[Eigendecomposition]], [[Matrix decompositions]], [[NMF]], [[PCA]], [[Projections]], [[Systèmes de recommandation]], [[Vector norms]]
+- liens entrants : [[Apprentissage non supervisé]], [[Eigendecomposition]], [[Matrix decompositions]], [[Multi-head Latent Attention]], [[NMF]], [[PCA]], [[Projections]], [[Systèmes de recommandation]], [[Vector norms]]
 
 ### SVM  ·  wiki/concept
 - tags : `supervised`, `classification`, `regression`
@@ -2932,8 +2967,8 @@
 
 ### Transformer architectures  ·  wiki/concept
 - tags : `transformers`, `deep-learning`, `attention`, `nlp`
-- liens sortants : [[CNN]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Mixture of Experts]], [[PEFT]], [[Positional encoding]], [[PyTorch]], [[Scaling laws]], [[Self-attention]], [[Small Language Models]], [[State Space Models]], [[Tokenization]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Apprentissage supervisé]], [[Architectures CNN]], [[CNN]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Mixture of Experts]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Perceptron et MLP]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[TransformerLens]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]], [[nnsight]], [[pykan]]
+- liens sortants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Calculs adaptatifs]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Positional encoding]], [[PyTorch]], [[Scaling laws]], [[Self-attention]], [[Small Language Models]], [[State Space Models]], [[Tokenization]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
+- liens entrants : [[Apprentissage supervisé]], [[Architectures CNN]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Calculs adaptatifs]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Perceptron et MLP]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[TransformerLens]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]], [[nnsight]], [[pykan]]
 
 ### Transformée de Fourier  ·  wiki/concept
 - tags : `signal-processing`, `fourier`
@@ -3008,14 +3043,14 @@
 ## Tags → pages
 
 - `ab-testing` : A/B testing, CUPED
-- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents  — pas de page concept dédiée
+- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents  — pas de page concept dédiée
 - `ai-security` : AI security, Prompt injection, promptfoo
 - `alignment` : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Time series anomaly detection
 - `api-client` : Bruno, Postman  — pas de page concept dédiée
 - `array` : CuPy, JAX, numpy, xarray  — pas de page concept dédiée
-- `attention` : Flash Attention and efficient attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
+- `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme
 - `authentication` : PyJWT  — pas de page concept dédiée
 - `autograd` : JAX, Kornia, PyTorch, TensorFlow  — pas de page concept dédiée
@@ -3068,8 +3103,8 @@
 - `db-driver` : ADBC, psycopg2  — pas de page concept dédiée
 - `declarative-config` : Axolotl, Kestra, LLaMA-Factory  — pas de page concept dédiée
 - `declarative-viz` : altair  — pas de page concept dédiée
-- `decoding` : Constrained decoding, Decoding strategies, Guidance, Outlines, Speculative decoding  — pas de page concept dédiée
-- `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
+- `decoding` : Constrained decoding, Decoding strategies, Guidance, Multi-Token Prediction, Outlines, Speculative decoding  — pas de page concept dédiée
+- `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
 - `deployment-strategy` : Déploiement de modèles  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
 - `design-tool` : Figma, Penpot  — pas de page concept dédiée
@@ -3109,14 +3144,14 @@
 - `generalization-bound` : Generalization bounds
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent
 - `graph-db` : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
 - `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
 - `hypermedia` : HTMX  — pas de page concept dédiée
-- `hyperparameter-tuning` : Hyperopt, Optimisation d'hyperparamètres, Optuna, Ray Tune
+- `hyperparameter-tuning` : Hyperopt, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : ELT vs ETL & idempotence, Stream processing
 - `image-classification` : Classification d'images
@@ -3124,7 +3159,7 @@
 - `imitation-learning` : Imitation learning
 - `in-memory` : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
 - `inference` : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
-- `inference-optimization` : Flash Attention and efficient attention, Inference optimization, ONNX Runtime, Pruning, Quantization, Speculative decoding, State Space Models, TensorRT, prompt-caching
+- `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : altair, bokeh, plotly  — pas de page concept dédiée
@@ -3137,13 +3172,13 @@
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Partitionnement & layout de données  — pas de page concept dédiée
 - `layout-analysis` : Docling, docTR  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, Polars  — pas de page concept dédiée
-- `learning-rate` : Adam optimizer, Learning rate schedules  — pas de page concept dédiée
+- `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension  — pas de page concept dédiée
 - `linear-algebra` : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation  — pas de page concept dédiée
 - `linear-programming` : Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : DeepEval, LLM-as-judge, TruLens
 - `llm-eval` : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LiteLLM, OpenRouter  — pas de page concept dédiée
@@ -3165,7 +3200,7 @@
 - `migration` : Alembic, Flyway, Liquibase, Migrations de schéma
 - `missing-data` : EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno  — pas de page concept dédiée
 - `mixed-precision` : DeepSpeed, Mixed precision, accelerate
-- `mixture-of-experts` : Mixture of Experts
+- `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
 - `ml-demo` : Gradio, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `ml-pipeline` : Flyte, Metaflow, ZenML  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
@@ -3199,7 +3234,7 @@
 - `offline-rl` : Offline RL
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Wasserstein distance
-- `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
+- `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `out-of-core` : Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
@@ -3233,7 +3268,7 @@
 - `rag-eval` : RAG benchmarks, RAG eval, Ragas
 - `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25  — pas de page concept dédiée
 - `re-identification` : Metric learning & ré-identification
-- `reasoning` : Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models  — pas de page concept dédiée
+- `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models  — pas de page concept dédiée
 - `recommender-systems` : Systèmes de recommandation
 - `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Types de données et choix de modèle, k-NN, lifelines
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
@@ -3253,7 +3288,7 @@
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
 - `s3-compatible` : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS  — pas de page concept dédiée
 - `safety` : AI security, Guardrails, Jailbreaking and defenses  — pas de page concept dédiée
-- `scaling-laws` : Mixture of Experts, Scaling laws, Small Language Models
+- `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Scaling laws, Small Language Models
 - `scheduler` : Airflow  — pas de page concept dédiée
 - `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité  — pas de page concept dédiée
 - `search` : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
@@ -3269,7 +3304,7 @@
 - `small-language-model` : Distillation, Small Language Models
 - `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Speech models  — pas de page concept dédiée
-- `state-space-model` : State Space Models  — pas de page concept dédiée
+- `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : matplotlib, missingno, seaborn  — pas de page concept dédiée
 - `statistical-inference` : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
 - `statistical-power` : Analyse de puissance, pingouin
@@ -3293,7 +3328,7 @@
 - `tool-use` : Agent patterns, Agno, AutoGen, CrewAI, LangChain, LangChain SQL agent, LangGraph, Letta, OpenAI Agents SDK, OpenHands, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, agent-loops, fastmcp, mcp-protocol, mcpjam, smolagents, tool-use
 - `tracing` : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens  — pas de page concept dédiée
 - `transfer-learning` : Transfer learning vision, timm, torchvision
-- `transformers` : Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
+- `transformers` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost  — pas de page concept dédiée
 - `type-hints` : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer  — pas de page concept dédiée
 - `unsupervised` : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
@@ -3318,11 +3353,11 @@
 - aucun
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
-- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, n8n, smolagents)
+- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Dify, Flowise, Haystack, Human-in-the-loop, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Multi-agent systems, OpenAI Agents SDK, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Postman)
 - `array` (porté par : CuPy, JAX, numpy, xarray)
-- `attention` (porté par : Flash Attention and efficient attention, Positional encoding, Self-attention, Transformer architectures)
+- `attention` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `authentication` (porté par : PyJWT)
 - `autograd` (porté par : JAX, Kornia, PyTorch, TensorFlow)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan)
@@ -3351,8 +3386,8 @@
 - `db-driver` (porté par : ADBC, psycopg2)
 - `declarative-config` (porté par : Axolotl, Kestra, LLaMA-Factory)
 - `declarative-viz` (porté par : altair)
-- `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Outlines, Speculative decoding)
-- `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
+- `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Multi-Token Prediction, Outlines, Speculative decoding)
+- `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
 - `deployment-strategy` (porté par : Déploiement de modèles)
 - `design-tool` (porté par : Figma, Penpot)
 - `diagram` (porté par : Excalidraw, FossFLOW, Mermaid, draw.io)
@@ -3376,7 +3411,7 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, segment-anything)
 - `fourier` (porté par : STFT et spectrogramme, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `gpu` (porté par : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hypermedia` (porté par : HTMX)
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
@@ -3390,12 +3425,12 @@
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Partitionnement & layout de données)
 - `layout-analysis` (porté par : Docling, docTR)
 - `lazy-evaluation` (porté par : Dask, Polars)
-- `learning-rate` (porté par : Adam optimizer, Learning rate schedules)
+- `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization)
 - `learning-theory` (porté par : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension)
 - `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation)
 - `linter` (porté par : Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Decoding strategies, DeepEval, Dify, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo)
 - `llm-gateway` (porté par : Helicone, LiteLLM, OpenRouter)
 - `local-llm` (porté par : LM Studio, Ollama, Small Language Models, Vanna, llama.cpp, text-generation-webui)
@@ -3426,7 +3461,7 @@
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS)
 - `observability` (porté par : Grafana, Loki)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
-- `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
+- `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `out-of-core` (porté par : Dask, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
@@ -3444,7 +3479,7 @@
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering)
 - `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25)
-- `reasoning` (porté par : Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models)
+- `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
 - `relational` (porté par : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
@@ -3466,7 +3501,7 @@
 - `serialization` (porté par : Avro)
 - `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Speech models)
-- `state-space-model` (porté par : State Space Models)
+- `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : matplotlib, missingno, seaborn)
 - `statistical-inference` (porté par : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Tests d'hypothèse, statsmodels)
 - `statistical-viz` (porté par : seaborn, sweetviz)
@@ -3481,7 +3516,7 @@
 - `testing` (porté par : DeepEval, Faker, Mimesis, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `tracing` (porté par : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens)
-- `transformers` (porté par : Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
+- `transformers` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost)
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
 - `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)

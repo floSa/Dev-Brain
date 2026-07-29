@@ -13,9 +13,13 @@ Notions de la famille `concept/dl`.
 - [[Wiki/Concepts/Adam optimizer|Adam optimizer]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Apprentissage auto-supervisé en vision|Apprentissage auto-supervisé en vision]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Architectures CNN|Architectures CNN]] — domaines : ml-eng
+- [[Wiki/Concepts/Architectures hybrides LLM|Architectures hybrides LLM]] — domaines : ml-eng, ai-eng
+- [[Wiki/Concepts/Attention linéaire|Attention linéaire]] — domaines : ml-eng, ai-eng
+- [[Wiki/Concepts/Attention Residuals|Attention Residuals]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Attribution par gradient|Attribution par gradient]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Augmentation d'images|Augmentation d'images]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Autoencodeurs|Autoencodeurs]] — domaines : data-sci, ml-eng
+- [[Wiki/Concepts/Calculs adaptatifs|Calculs adaptatifs]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Classification audio par spectrogramme|Classification audio par spectrogramme]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Classification d'images|Classification d'images]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/CNN|CNN]] — domaines : data-sci, ml-eng
@@ -31,10 +35,12 @@ Notions de la famille `concept/dl`.
 - [[Wiki/Concepts/Image generation|Image generation]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Interprétabilité mécaniste|Interprétabilité mécaniste]] — domaines : ai-eng, data-sci
 - [[Wiki/Concepts/Kolmogorov-Arnold Networks|Kolmogorov-Arnold Networks]] — domaines : ml-eng
+- [[Wiki/Concepts/Maximal Update Parametrization|Maximal Update Parametrization]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Metric learning & ré-identification|Metric learning & ré-identification]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Mixed precision|Mixed precision]] — domaines : ml-eng
 - [[Wiki/Concepts/Mixture of Experts|Mixture of Experts]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Modèles de fondation vision|Modèles de fondation vision]] — domaines : ml-eng, ai-eng
+- [[Wiki/Concepts/Multi-head Latent Attention|Multi-head Latent Attention]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Métriques vision|Métriques vision]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/OCR|OCR]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Positional encoding|Positional encoding]] — domaines : ml-eng, ai-eng

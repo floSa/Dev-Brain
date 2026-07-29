@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 600 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 607 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -484,9 +484,13 @@
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
 - **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif
 - **Architectures CNN** — domaines : ml-eng · alias : ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures
+- **Architectures hybrides LLM** — domaines : ml-eng, ai-eng · alias : hybrid attention, architecture hybride, hybrid linear attention, ratio 3:1, Kimi Linear, Qwen3-Next, Nemotron-3, Jamba, MiniMax-01, interleaved attention
+- **Attention linéaire** — domaines : ml-eng, ai-eng · alias : linear attention, attention sans softmax, DeltaNet, Gated DeltaNet, GDN, KDA, règle delta, delta rule, mémoire associative, RWKV, Transformers are RNNs
+- **Attention Residuals** — domaines : ml-eng, ai-eng · alias : AttnRes, Block AttnRes, résiduels par attention, attention sur la profondeur, depth-wise attention, dilution PreNorm
 - **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods
 - **Augmentation d'images** — domaines : data-sci, ml-eng · alias : data augmentation, augmentation de données, Mixup, CutMix, RandAugment
 - **Autoencodeurs** — domaines : data-sci, ml-eng · alias : Autoencodeur, Autoencoder, Auto-encodeur, AE, VAE, Variational Autoencoder, Autoencodeur variationnel, Denoising autoencoder
+- **Calculs adaptatifs** — domaines : ml-eng, ai-eng · alias : adaptive computation, calcul adaptatif, early exit, sortie anticipée, Mixture of Depths, MoD, looped transformers, Mixture of Recursions, MoR, adaptive depth, ponder
 - **Classification audio par spectrogramme** — domaines : data-sci, ml-eng · alias : classification audio, audio classification, sound classification, reconnaissance de sons, audio CNN, mel-spectrogramme CNN, acoustic scene classification, SpecAugment
 - **Classification d'images** — domaines : data-sci, ml-eng · alias : image classification, classification d'image, top-1, top-5, ImageNet
 - **CNN** — domaines : data-sci, ml-eng · alias : convnet, réseau convolutif, convolutional neural network, convolution, pooling, champ réceptif
@@ -495,30 +499,32 @@
 - **Détection d'objets** — domaines : data-sci, ml-eng · alias : object detection, détection d'objet, bounding box, boîtes englobantes, anchors, NMS, YOLO, Faster R-CNN, RetinaNet, DETR
 - **Entraînement distribué** — domaines : ml-eng, mlops · alias : Distributed training, DDP, DistributedDataParallel, FSDP, ZeRO, data parallelism, model parallelism, pipeline parallelism, tensor parallelism, sharding, DeepSpeed, parallélisme de données
 - **Estimation de pose** — domaines : data-sci, ml-eng · alias : pose estimation, keypoints, points-clés, pose humaine, OpenPose, HRNet, ViTPose, MediaPipe, OKS, PCK, heatmap
-- **Flash Attention and efficient attention** — domaines : ml-eng, mlops, ai-eng · alias : Flash Attention, FlashAttention, attention efficace, multi-query attention, MQA, grouped-query attention, GQA, sparse attention, sliding window attention
+- **Flash Attention and efficient attention** — domaines : ml-eng, mlops, ai-eng · alias : Flash Attention, FlashAttention, attention efficace, multi-query attention, MQA, grouped-query attention, GQA, sparse attention, sliding window attention, attention différentielle, Differential Transformer, DIFF Transformer, bruit d'attention
 - **GANs** — domaines : ml-eng, ai-eng · alias : GAN, generative adversarial network, génération adversariale, réseau antagoniste génératif, DCGAN, StyleGAN, WGAN, CycleGAN, pix2pix
 - **Gradient checkpointing** — domaines : ml-eng · alias : Gradient checkpointing, activation checkpointing, recomputation, rematerialization, rematérialisation, recalcul d'activations, checkpoint
 - **Graph Neural Networks** — domaines : ml-eng, data-sci · alias : GNN, graph neural network, réseaux de neurones sur graphes, GCN, GAT, GraphSAGE, message passing, passage de messages
 - **Image generation** — domaines : ml-eng, ai-eng · alias : text-to-image, T2I, génération d'images, Stable Diffusion, DALL-E, Midjourney, FLUX, inpainting
 - **Interprétabilité mécaniste** — domaines : ai-eng, data-sci · alias : Mechanistic interpretability, Mech interp, Interpretabilite mecaniste, Circuits, Transformer circuits, Activation patching, Causal tracing
 - **Kolmogorov-Arnold Networks** — domaines : ml-eng · alias : KAN, KANs, réseaux de Kolmogorov-Arnold, kolmogorov-arnold network
+- **Maximal Update Parametrization** — domaines : ml-eng, ai-eng · alias : µP, muP, mu-P, µTransfer, muTransfer, transfert d'hyperparamètres, hyperparameter transfer, Tensor Programs, u-µP
 - **Metric learning & ré-identification** — domaines : data-sci, ml-eng · alias : metric learning, apprentissage de métrique, ré-identification, re-identification, re-id, person re-id, reconnaissance faciale, face recognition, triplet loss, contrastive loss, ArcFace, CosFace, Siamese, CMC, Rank-1
 - **Mixed precision** — domaines : ml-eng · alias : Mixed precision, précision mixte, AMP, automatic mixed precision, fp16, bf16, float16, bfloat16, loss scaling, autocast, half precision, demi-précision
-- **Mixture of Experts** — domaines : ml-eng, ai-eng · alias : MoE, mélange d'experts, sparse MoE, Switch Transformer, experts conditionnels, top-k routing
+- **Mixture of Experts** — domaines : ml-eng, ai-eng · alias : MoE, mélange d'experts, sparse MoE, Switch Transformer, experts conditionnels, top-k routing, fine-grained experts, shared experts, DeepSeekMoE, ratio de sparsité, expert parallelism
 - **Modèles de fondation vision** — domaines : ml-eng, ai-eng · alias : foundation models vision, vision foundation models, CLIP, DINOv2, DINOv3, SigLIP, OpenCLIP, modèles de fondation visuels
+- **Multi-head Latent Attention** — domaines : ml-eng, ai-eng · alias : MLA, attention latente multi-tête, latent attention, compression du KV-cache, low-rank KV compression, decoupled RoPE
 - **Métriques vision** — domaines : data-sci, ml-eng · alias : métriques de vision, vision metrics, mAP, mean average precision, IoU, intersection over union, Dice, mIoU, AP
 - **OCR** — domaines : data-sci, ml-eng · alias : reconnaissance optique de caractères, reconnaissance de texte, text recognition, text detection, scene text, Tesseract, PaddleOCR, EasyOCR, docTR, CRNN, CTC, TrOCR, CER, WER
 - **Positional encoding** — domaines : ml-eng, ai-eng · alias : encodage de position, encodage positionnel, RoPE, rotary embeddings, ALiBi, sinusoidal positional encoding
 - **Probing** — domaines : data-sci, ai-eng · alias : Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier
 - **Pruning** — domaines : ml-eng, ai-eng · alias : Pruning, élagage, élagage de modèle, sparsity, sparsité, structured pruning, unstructured pruning, élagage structuré, élagage non structuré, magnitude pruning, lottery ticket
-- **Quantization** — domaines : ml-eng, ai-eng · alias : Quantification, quantisation, INT8, INT4, FP8, GGUF, GPTQ, AWQ, PTQ, QAT, K-quants
+- **Quantization** — domaines : ml-eng, ai-eng · alias : Quantification, quantisation, INT8, INT4, FP8, GGUF, GPTQ, AWQ, PTQ, QAT, K-quants, NVFP4, MXFP4, FP4, microscaling, block scaling, quantization 4 bits
 - **Rendu neuronal 3D & estimation de profondeur** — domaines : data-sci, ml-eng · alias : NeRF, neural radiance fields, 3D Gaussian Splatting, 3DGS, gaussian splatting, rendu neuronal, novel view synthesis, estimation de profondeur, depth estimation, MiDaS, DPT, Depth Anything
 - **Segment Anything (SAM)** — domaines : ml-eng, ai-eng · alias : SAM, Segment Anything Model, segmentation promptable, promptable segmentation, SAM 2, SAM 3, SA-1B
 - **Segmentation** — domaines : data-sci, ml-eng · alias : segmentation d'image, image segmentation, segmentation sémantique, segmentation d'instance, segmentation panoptique, U-Net, Mask R-CNN, DeepLab
 - **Self-attention** — domaines : ml-eng, ai-eng · alias : auto-attention, scaled dot-product attention, multi-head attention, MHA, attention QKV, cross-attention
 - **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
 - **Speech models** — domaines : ml-eng, ai-eng · alias : ASR, TTS, speech-to-text, text-to-speech, reconnaissance vocale, synthèse vocale, Whisper, modèles de parole, speech-to-speech
-- **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, S4, S5, selective state space, linear-time sequence model
+- **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, Mamba-2, Mamba-3, S4, S5, selective state space, linear-time sequence model, MIMO, discrétisation trapézoïdale
 - **Suivi d'objets** — domaines : data-sci, ml-eng · alias : object tracking, MOT, multi-object tracking, suivi multi-cibles, tracking-by-detection, SORT, DeepSORT, ByteTrack, Kalman, MOTA, IDF1, HOTA
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
 - **Transfer learning vision** — domaines : data-sci, ml-eng · alias : transfer learning, transfert d'apprentissage, fine-tuning vision, feature extraction, backbone gelé
@@ -553,8 +559,9 @@
 - **LLM observability** — domaines : ai-eng, mlops · alias : observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens
 - **LLM-as-judge** — domaines : ai-eng · alias : LLM as a judge, LLM juge, LLM évaluateur, G-Eval, pairwise comparison, reference-free evaluation, MT-Bench
 - **LoRA et QLoRA** — domaines : ml-eng, ai-eng · alias : LoRA, Low-Rank Adaptation, QLoRA, quantized LoRA, adapters LoRA, low-rank adapters
-- **mcp-protocol** — domaines : ai-eng · alias : MCP, Model Context Protocol, protocole MCP
+- **mcp-protocol** — domaines : ai-eng · alias : MCP, Model Context Protocol, protocole MCP, MCP Apps, MCP Tasks, MRTR, spec 2026-07-28, Agentic AI Foundation
 - **Multi-agent systems** — domaines : ai-eng · alias : systèmes multi-agents, multi-agent systems, MAS
+- **Multi-Token Prediction** — domaines : ml-eng, ai-eng · alias : MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding
 - **PEFT** — domaines : ml-eng, ai-eng · alias : parameter-efficient fine-tuning, fine-tuning paramétriquement efficace, adapters
 - **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
 - **Prompt engineering** — domaines : ai-eng · alias : conception de prompts, prompt design, few-shot prompting, in-context learning
@@ -574,7 +581,7 @@
 - **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
 - **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
 - **Small Language Models** — domaines : ai-eng · alias : SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM
-- **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa
+- **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
 - **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
 - **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
 - **Text-to-SQL** — domaines : ai-eng · alias : text to sql, nl2sql, natural language to sql, texte vers SQL, requête en langage naturel

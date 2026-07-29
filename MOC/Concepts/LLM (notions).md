@@ -36,6 +36,7 @@ Notions de la famille `concept/llm`.
 - [[Wiki/Concepts/LoRA et QLoRA|LoRA et QLoRA]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/mcp-protocol|mcp-protocol]] — domaines : ai-eng
 - [[Wiki/Concepts/Multi-agent systems|Multi-agent systems]] — domaines : ai-eng
+- [[Wiki/Concepts/Multi-Token Prediction|Multi-Token Prediction]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/PEFT|PEFT]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Perplexity|Perplexity]] — domaines : ai-eng
 - [[Wiki/Concepts/Prompt engineering|Prompt engineering]] — domaines : ai-eng
