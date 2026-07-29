@@ -30,6 +30,13 @@ tags: [agents, llm, tool-use]
 
 ### Accumulation du contexte
 - À chaque tour le contexte grossit (historique + observations) → coût et latence croissent, et la fenêtre finit par saturer. D'où le besoin de [[Agent memory]] (résumé, troncature, récupération).
+- Le **budget de contexte** est donc un garde-fou de même rang que le plafond d'itérations : il faut décider *à l'avance* ce qui se passe quand la fenêtre se remplit (compaction, éviction des vieilles observations, échec propre). Sans règle, l'agent meurt en pleine tâche sur un dépassement de fenêtre.
+
+### Les trois échecs types
+- **Boucle infinie** — l'agent réessaie indéfiniment le même outil qui échoue, ou n'estime jamais l'objectif atteint. Parade : $T_{\max}$, plus une détection de répétition (même appel, mêmes arguments, $n$ fois de suite).
+- **Débordement de contexte** — une observation énorme (un fichier, une page HTML, un dump SQL) sature la fenêtre en un seul tour. Parade : **tronquer les sorties d'outils à la source**, jamais après coup.
+- **Mauvais outil** — le modèle choisit un outil inadapté et s'entête. Parade : descriptions d'outils disjointes, et une observation d'erreur qui **dit quoi faire à la place** plutôt que de signaler un échec sec.
+- Les travaux longs sont un cas à part : plutôt que de faire attendre la boucle, les déléguer à un mécanisme de tâche asynchrone (l'extension *Tasks* de [[mcp-protocol|MCP]] existe exactement pour ça) et reprendre sur notification.
 
 ## Les maths, simplement
 
