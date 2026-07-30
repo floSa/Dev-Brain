@@ -72,7 +72,8 @@ Mode build (pages Dev/) ou mode wiki (pages Wiki/). Ne jamais toucher au réserv
    uv run AI/scripts/check_brain.py   # DOIT passer : réciprocité, liens, tags, catégorie, gabarit
    ```
 9. **Corriger jusqu'au vert** : toute violation dure signalée par `check_brain` se corrige et on relance. Ne pas clore tant que ce n'est pas OK.
-10. **Commit + push + intégration dans `main` (d'office, sans demander)** : `check_brain` vert → commit (Conventional Commits) → `git push` de la branche → **intégrer dans `main`** : `git -C <vault-principal> merge --ff-only <branche-courante>` puis `git -C <vault-principal> push origin main`. Fast-forward uniquement ; si la divergence empêche le FF, le signaler — jamais de `--force`. Ne jamais répondre « à toi de committer / merger ».
+10. **Avant de pousser, vérifier que `origin/main` n'a pas divergé** : `git fetch origin` puis `git merge-base HEAD origin/main`. Si aucun ancêtre commun n'est trouvé, ou si `git log HEAD..origin/main --oneline` montre des commits distants absents en local, **s'arrêter et signaler l'écart** — ne pas committer/pousser sur une base potentiellement obsolète (cf. incident du 2026-07-29, `CLAUDE.md` §Protocole de session).
+11. **Commit + push + intégration dans `main` (d'office, sans demander)** : `check_brain` vert et divergence vérifiée → commit (Conventional Commits) → `git push` de la branche → **intégrer dans `main`** : `git -C <vault-principal> merge --ff-only <branche-courante>` puis `git -C <vault-principal> push origin main`. Fast-forward uniquement ; si la divergence empêche le FF, le signaler — jamais de `--force`. Ne jamais répondre « à toi de committer / merger ».
 
 ## Procédure — mode sujet / balayage (plan d'abord, PUIS go)
 
@@ -82,7 +83,7 @@ Déclencheurs : « fais-moi les pages sur les statistiques », « ajoute le suje
 2. **Présenter le plan et ATTENDRE le GO.** Ne rien créer avant validation. L'utilisateur ajoute / retire / renomme des pages.
 3. **Écrire la file validée** dans `AI/backlog.md` (une page par ligne).
 4. **Drainer la file une page à la fois**, chacune via la procédure ciblée ci-dessus. Cocher au fur et à mesure.
-5. **Clôturer** : `build_index.py`, `build_mocs.py`, `build_links.py`, `check_brain.py` (doit passer), puis **commit + push + intégration dans `main` d'office** (cf. étape 10). Repassable tant qu'il reste des items → rien d'oublié.
+5. **Clôturer** : `build_index.py`, `build_mocs.py`, `build_links.py`, `check_brain.py` (doit passer), puis **commit + push + intégration dans `main` d'office** (cf. étapes 10-11). Repassable tant qu'il reste des items → rien d'oublié.
 
 ## Anti-patterns
 
@@ -91,6 +92,7 @@ Déclencheurs : « fais-moi les pages sur les statistiques », « ajoute le suje
 - Recopier un pitch divergent au lieu de réinjecter le `pitch:` de la cible.
 - Modifier une fiche du réservoir v1.
 - Oublier `uv run AI/scripts/build_index.py` à la fin.
+- Pousser sans avoir vérifié que `origin/main` n'a pas divergé (historique republié, commits distants absents en local) — cf. étape 10.
 
 ## Voir aussi
 

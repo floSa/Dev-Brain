@@ -152,6 +152,23 @@ AI/                          ← TON espace agent
 ## Protocole de session
 
 ### Au début de chaque session
+
+0. **Vérifier que le `main` local suit `origin/main` — avant tout commit ou push** :
+   ```bash
+   git fetch origin
+   git log HEAD..origin/main --oneline   # commits distants absents en local
+   git merge-base HEAD origin/main       # doit renvoyer un ancêtre commun
+   ```
+   Si `origin/main` contient des commits absents en local, ou si `merge-base` ne trouve
+   **aucun** ancêtre commun (historiques divergents ou republiés), **s'arrêter et signaler
+   l'écart à l'utilisateur** avant d'écrire ou de committer quoi que ce soit — ne jamais
+   travailler ni pousser sur une base potentiellement obsolète.
+   > Cause de la règle : le 2026-07-29, une session a travaillé plusieurs heures sur un
+   > `main` local vieux de trois semaines sans vérifier que `origin/main` avait été
+   > republié entre-temps (repo republié en snapshot, historiques sans ancêtre commun,
+   > 33 pages créées côté distant invisibles en local). Le travail a dû être reporté
+   > après coup dans un worktree isolé — resté correct par chance, pas par méthode.
+
 1. Liste les 3 derniers fichiers de `AI/sessions/` :
    ```bash
    ls -t AI/sessions/ | head -3
