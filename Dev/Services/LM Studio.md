@@ -64,6 +64,7 @@ Application de bureau qui rend l'exécution locale de LLM accessible via une **i
 ## Liens
 
 - Construit sur [[Dev/Services/llama.cpp|llama.cpp]] (inférence GGUF) et Apple MLX.
+- Sert de runtime à [[Dev/Services/LM Studio Bionic|LM Studio Bionic]], l'agent de bureau du même éditeur — application distincte, pas un mode de LM Studio.
 - Modèles tirés du hub [[Dev/Services/HuggingFace|HuggingFace]].
 - Endpoint OpenAI-compatible : se branche comme une API [[Dev/Services/FastAPI|FastAPI]] devant les apps.
 - [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie

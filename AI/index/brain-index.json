@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 615,
+  "count": 616,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -30,6 +30,7 @@
       "Haystack",
       "Hermes Agent",
       "Human-in-the-loop",
+      "LM Studio Bionic",
       "LangChain",
       "LangChain SQL agent",
       "LangGraph",
@@ -255,6 +256,7 @@
       "Cline",
       "Code and math benchmarks",
       "Continue",
+      "LM Studio Bionic",
       "OpenHands",
       "Spec Kit"
     ],
@@ -1146,6 +1148,7 @@
       "LLM-as-judge",
       "LLaMA-Factory",
       "LM Studio",
+      "LM Studio Bionic",
       "LangChain",
       "LangChain SQL agent",
       "LangGraph",
@@ -1255,6 +1258,7 @@
     ],
     "local-llm": [
       "LM Studio",
+      "LM Studio Bionic",
       "Ollama",
       "Small Language Models",
       "Vanna",
@@ -1318,6 +1322,7 @@
       "Cline",
       "Graphify",
       "Hermes Agent",
+      "LM Studio Bionic",
       "OpenClaw",
       "fastmcp",
       "mcp-protocol",
@@ -4658,7 +4663,8 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenClaw|OpenClaw]]"
+        "[[Dev/Services/OpenClaw|OpenClaw]]",
+        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"
       ]
     },
     {
@@ -4936,6 +4942,32 @@
         "[[Dev/Services/Unsloth|Unsloth]]",
         "[[Dev/Services/Axolotl|Axolotl]]",
         "[[Dev/Services/Tunix|Tunix]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/LM Studio Bionic.md",
+      "nom": "LM Studio Bionic",
+      "alias": [
+        "Bionic",
+        "lm studio bionic",
+        "LM Studio Secure Cloud",
+        "LM Link"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.",
+      "tags": [
+        "llm",
+        "agents",
+        "local-llm",
+        "mcp",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Dev/Services/OpenClaw|OpenClaw]]",
+        "[[Dev/Services/Hermes Agent|Hermes Agent]]"
       ]
     },
     {
@@ -5917,7 +5949,8 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/Hermes Agent|Hermes Agent]]"
+        "[[Dev/Services/Hermes Agent|Hermes Agent]]",
+        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"
       ]
     },
     {

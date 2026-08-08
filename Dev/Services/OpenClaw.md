@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: "TypeScript, Swift"
 scaling: single-node
-alternatives: ["[[Dev/Services/Hermes Agent|Hermes Agent]]"]
+alternatives: ["[[Dev/Services/Hermes Agent|Hermes Agent]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, mcp]
@@ -55,6 +55,7 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 ## Alternatives
 
 - [[Dev/Services/Hermes Agent|Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
+- [[Dev/Services/LM Studio Bionic|LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
 
 ## Liens
 
