@@ -38,7 +38,7 @@ tags: [agents, llm, retrieval]
 
 - Le court terme suffit pour des tâches courtes ; n'ajouter du long terme que si l'agent doit se souvenir entre sessions ou dépasse la fenêtre.
 - **Résumer** plutôt que tronquer brutalement quand l'historique compte ; garder les ancres (objectif, décisions clés) en clair.
-- Outillage : [[Dev/Services/Letta|Letta]] (ex-MemGPT) fait de la mémoire persistante hiérarchique sa **primitive centrale** ; [[Dev/Services/LangGraph|LangGraph]] persiste l'état entre les pas (checkpointers) ; les frameworks RAG ([[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/LangChain|LangChain]]) fournissent stockage et récupération de mémoire.
+- Outillage : [[Dev/Services/Letta|Letta]] (ex-MemGPT) fait de la mémoire persistante hiérarchique sa **primitive centrale** ; [[Dev/Services/Hermes Agent|Hermes Agent]] la couple à une boucle d'apprentissage (skills auto-créés = mémoire procédurale) ; [[Dev/Services/LangGraph|LangGraph]] persiste l'état entre les pas (checkpointers) ; les frameworks RAG ([[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/LangChain|LangChain]]) fournissent stockage et récupération de mémoire.
 - Pièges : mémoire qui enfle sans tri (bruit, coût) ; souvenirs périmés jamais invalidés ; fuite de données entre utilisateurs si la mémoire n'est pas cloisonnée.
 
 ## Approches voisines & alternatives

@@ -63,7 +63,7 @@ tags: [mcp, tool-use, llm, agents]
 - Utiliser MCP quand plusieurs apps doivent partager les mêmes outils, ou pour brancher un agent sur un écosystème de serveurs existants sans recâbler.
 - Pour un seul agent maison avec 2-3 outils, le [[tool-use|function calling]] direct reste plus simple — MCP ajoute une couche serveur à faire tourner.
 - **Vérifier la version de spec** avant de promettre une intégration : `2026-07-28` (stateless, extensions) et `2025-11-25` (stateful, sessions) ne se comportent pas pareil côté déploiement. C'est la première question à poser sur un serveur tiers.
-- Côté clients : Claude Desktop/Code, et un nombre croissant de frameworks d'agents ([[Dev/Services/LangGraph|LangGraph]], [[Dev/Services/PydanticAI|PydanticAI]]) consomment des serveurs MCP.
+- Côté clients : Claude Desktop/Code, un nombre croissant de frameworks d'agents ([[Dev/Services/LangGraph|LangGraph]], [[Dev/Services/PydanticAI|PydanticAI]]), et les agents auto-hébergés prêts à l'emploi ([[Dev/Services/OpenClaw|OpenClaw]], [[Dev/Services/Hermes Agent|Hermes Agent]]) consomment des serveurs MCP — pour ces derniers, MCP remplace les intégrations ad hoc, une par service.
 - Côté serveurs : [[Dev/Services/fastmcp|fastmcp]] construit serveurs et clients MCP en Python (décorateurs, génération depuis OpenAPI/FastAPI) ; [[Dev/Services/mcpjam|mcpjam]] les **inspecte et débogue** (« Postman pour MCP »).
 - Traiter un serveur tiers comme du **code non fiable** : permissions minimales, validation des entrées, garde-fous sur les outils sensibles (cf. [[Reliability patterns]]).
 

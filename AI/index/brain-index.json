@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 607,
+  "count": 609,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -25,6 +25,7 @@
       "Dify",
       "Flowise",
       "Haystack",
+      "Hermes Agent",
       "Human-in-the-loop",
       "LangChain",
       "LangChain SQL agent",
@@ -34,6 +35,7 @@
       "LlamaIndex",
       "Multi-agent systems",
       "OpenAI Agents SDK",
+      "OpenClaw",
       "OpenHands",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PydanticAI",
@@ -1113,6 +1115,7 @@
       "Guidance",
       "Haystack",
       "Helicone",
+      "Hermes Agent",
       "Human-in-the-loop",
       "Inference optimization",
       "Instructor",
@@ -1140,6 +1143,7 @@
       "Multi-agent systems",
       "Ollama",
       "OpenAI Agents SDK",
+      "OpenClaw",
       "OpenHands",
       "OpenRouter",
       "Outlines",
@@ -1292,6 +1296,8 @@
       "Activepieces",
       "Cline",
       "Graphify",
+      "Hermes Agent",
+      "OpenClaw",
       "fastmcp",
       "mcp-protocol",
       "mcpjam",
@@ -2244,11 +2250,13 @@
       "Agno",
       "AutoGen",
       "CrewAI",
+      "Hermes Agent",
       "LangChain",
       "LangChain SQL agent",
       "LangGraph",
       "Letta",
       "OpenAI Agents SDK",
+      "OpenClaw",
       "OpenHands",
       "PydanticAI",
       "Semantic Kernel",
@@ -4559,6 +4567,28 @@
       ]
     },
     {
+      "path": "Dev/Services/Hermes Agent.md",
+      "nom": "Hermes Agent",
+      "alias": [
+        "hermes-agent",
+        "nous-hermes-agent"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Dev/Services/OpenClaw|OpenClaw]]"
+      ]
+    },
+    {
       "path": "Dev/Services/HuggingFace.md",
       "nom": "HuggingFace",
       "alias": [
@@ -5766,6 +5796,30 @@
       ],
       "alternatives": [
         "[[Dev/Services/Kornia|Kornia]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/OpenClaw.md",
+      "nom": "OpenClaw",
+      "alias": [
+        "openclaw",
+        "clawdbot",
+        "moltbot",
+        "warelay"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Dev/Services/Hermes Agent|Hermes Agent]]"
       ]
     },
     {
