@@ -63,3 +63,22 @@ File validée (GO utilisateur). 5 concepts `concept/dl`, galaxie wiki. Chapeau �
 ### Clôture
 - [x] build_index + build_mocs + build_links + check_brain (vert)
 - [x] commit + push + merge --ff-only main
+
+## Idée parquée — champ `contraintes:` indexé (2026-08-08)
+
+**Statut : pas retenu pour l'instant.** Les pièges et contraintes vont dans la
+section `## Pièges` de la fiche, comme le prévoient les gabarits. C'est la règle.
+
+Limite constatée : `AI/index/brain-index.json` ne stocke que
+`path, nom, alias, type, galaxie, categorie, domaines, pitch, tags, alternatives`.
+`planifier-projet` filtre ses candidats sur l'index (« sans lire 160 fichiers ») et
+n'ouvre la fiche qu'après sélection. Une contrainte bloquante en corps de page
+alimente donc la **justification**, pas le **filtrage** — le skill ne peut pas
+écarter d'office un candidat incompatible (ex. LM Studio Bionic quand le serving
+imposé est Ollama).
+
+Piste si le besoin se confirme : champ `contraintes:` (1-3 lignes dures) dans le
+frontmatter Service, remonté par `build_index.py`, posé d'abord sur les seules
+fiches où la contrainte est réellement éliminatoire (agents, runtimes) plutôt que
+généralisé à vide. Touche `Templates/Service-Dev.md`, `build_index.py`,
+`check_brain.py` → décision de gouvernance, à valider avant.
