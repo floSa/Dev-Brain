@@ -62,6 +62,8 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 - Partage avec [[Dev/Services/Letta|Letta]] l'idée de **mémoire persistante comme primitive** ; Letta l'expose en API pour d'autres produits, Hermes la garde interne à son propre agent.
 - Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire — et implémente [[a2a-protocol|A2A]] v1.0 depuis la v0.20.0 pour dialoguer avec des agents tiers.
 - Backends d'exécution : local et Docker, puis les bacs à sable managés [[Dev/Services/Modal|Modal]] et [[Dev/Services/Daytona|Daytona]] — cf. [[Sandboxing de code généré]].
+- C'est un **harnais** au sens de [[Harnais d'agent]] : compatible avec tout endpoint OpenAI-compatible.
+- [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local ; exige 64 k de contexte minimum.
 - Concepts : [[Agent memory]], [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]].
 - Sécurité : [[Prompt injection]], [[AI security]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie

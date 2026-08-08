@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain v2
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 616 pages actives.
+> 618 pages actives.
 
 ## Par page
 
@@ -492,8 +492,8 @@
 
 ### Hermes Agent  ·  dev/service
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Daytona]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Modal]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Prompt injection]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
-- liens entrants : [[Agent memory]], [[Agent skills]], [[Daytona]], [[E2B]], [[LM Studio Bionic]], [[Modal]], [[OpenClaw]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
+- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Daytona]], [[Harnais d'agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Modal]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
+- liens entrants : [[Agent memory]], [[Agent skills]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Modal]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
 
 ### hnswlib  ·  dev/service
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -658,7 +658,7 @@
 ### llama.cpp  ·  dev/service
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[Ollama]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Guidance]], [[LM Studio]], [[Ollama]], [[Outlines]], [[Quantization]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Guidance]], [[LM Studio]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantization]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[text-generation-webui]], [[vLLM]]
 
 ### LlamaIndex  ·  dev/service
 - tags : `llm`, `rag`, `embeddings`, `agents`
@@ -677,13 +677,13 @@
 
 ### LM Studio  ·  dev/service
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[LM Studio Bionic]], [[Ollama]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[LM Studio Bionic]], [[Ollama]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[LM Studio Bionic]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Harnais d'agent]], [[LM Studio Bionic]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### LM Studio Bionic  ·  dev/service
 - tags : `llm`, `agents`, `local-llm`, `mcp`, `code-generation`
-- liens sortants : [[AI security]], [[Agent patterns]], [[Agno]], [[Comparatif - Frameworks LLM]], [[Hermes Agent]], [[LM Studio]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Prompt injection]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
-- liens entrants : [[Hermes Agent]], [[LM Studio]], [[OpenClaw]]
+- liens sortants : [[AI security]], [[Agent patterns]], [[Agno]], [[Comparatif - Frameworks LLM]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
+- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]]
 
 ### Loki  ·  dev/service
 - tags : `observability`, `logging`, `distributed`
@@ -852,8 +852,8 @@
 
 ### Ollama  ·  dev/service
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[LM Studio]], [[LiteLLM]], [[Outlines]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Harnais d'agent]], [[LM Studio]], [[LiteLLM]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### ONNX Runtime  ·  dev/service
 - tags : `inference`, `model-serving`, `inference-optimization`, `gpu`, `quantization`
@@ -867,8 +867,8 @@
 
 ### OpenClaw  ·  dev/service
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Guardrails]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[OpenAI Agents SDK]], [[OpenHands]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
-- liens entrants : [[Agent skills]], [[Hermes Agent]], [[LM Studio Bionic]], [[mcp-protocol]]
+- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Guardrails]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[OpenAI Agents SDK]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
+- liens entrants : [[Agent skills]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[Pattern - Agent sur LLM auto-hébergé]], [[mcp-protocol]]
 
 ### OpenCV  ·  dev/service
 - tags : `computer-vision`, `object-detection`, `object-tracking`
@@ -878,12 +878,12 @@
 ### OpenHands  ·  dev/service
 - tags : `llm`, `agents`, `tool-use`, `code-generation`
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[OpenAI Agents SDK]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[E2B]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenClaw]]
+- liens entrants : [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenClaw]]
 
 ### OpenRouter  ·  dev/service
 - tags : `llm`, `llm-gateway`, `routing`, `inference`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Dify]], [[Flowise]], [[LangChain]], [[Langflow]], [[LiteLLM]], [[LlamaIndex]], [[Reliability patterns]], [[Routing and cascading]], [[TGI]], [[vLLM]]
-- liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[promptfoo]]
+- liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[Pattern - Agent sur LLM auto-hébergé]], [[promptfoo]]
 
 ### OpenSpiel  ·  dev/service
 - tags : `reinforcement-learning`, `game-theory`
@@ -919,6 +919,11 @@
 - tags : `file-format`, `columnar`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Avro]], [[Polars]], [[Postgres]]
 - liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Partitionnement & layout de données]], [[Spark]]
+
+### Pattern - Agent sur LLM auto-hébergé  ·  dev/pattern
+- tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[OpenRouter]], [[SGLang]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]]
 
 ### Pattern - Moteur de jeu pur + IA séparée  ·  dev/pattern
 - tags : `pattern`, `reinforcement-learning`, `self-play`, `game-theory`, `planning`
@@ -1313,7 +1318,7 @@
 ### SGLang  ·  dev/service
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PyTorch]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### SHAP  ·  dev/service
 - tags : `explainability`, `supervised`
@@ -1543,7 +1548,7 @@
 ### vLLM  ·  dev/service
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]]
-- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Quantization]], [[RL for LLMs]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[text-generation-webui]]
+- liens entrants : [[Architectures hybrides LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantization]], [[RL for LLMs]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[text-generation-webui]]
 
 ### Weaviate  ·  dev/service
 - tags : `vector-db`, `rag`, `hybrid-search`
@@ -1627,8 +1632,8 @@
 
 ### Agent evaluation  ·  wiki/concept
 - tags : `agents`, `llm-eval`, `llm`
-- liens sortants : [[Agent patterns]], [[DeepEval]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Multi-agent systems]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[Reliability patterns]], [[TruLens]], [[agent-loops]]
-- liens entrants : [[Agent patterns]], [[Agent skills]], [[Human-in-the-loop]], [[Multi-agent systems]], [[Reliability patterns]], [[Sandboxing de code généré]], [[a2a-protocol]]
+- liens sortants : [[Agent patterns]], [[DeepEval]], [[Harnais d'agent]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Multi-agent systems]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[Reliability patterns]], [[TruLens]], [[agent-loops]]
+- liens entrants : [[Agent patterns]], [[Agent skills]], [[Harnais d'agent]], [[Human-in-the-loop]], [[Multi-agent systems]], [[Reliability patterns]], [[Sandboxing de code généré]], [[a2a-protocol]]
 
 ### Agent memory  ·  wiki/concept
 - tags : `agents`, `llm`, `retrieval`
@@ -1637,18 +1642,18 @@
 
 ### Agent patterns  ·  wiki/concept
 - tags : `agents`, `llm`, `tool-use`
-- liens sortants : [[Advanced RAG]], [[Agent evaluation]], [[Agent memory]], [[CrewAI]], [[Human-in-the-loop]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[RAG]], [[Reliability patterns]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent skills]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Dify]], [[Flowise]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[Langflow]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Text-to-SQL]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[gumloop]], [[smolagents]], [[tool-use]]
+- liens sortants : [[Advanced RAG]], [[Agent evaluation]], [[Agent memory]], [[CrewAI]], [[Harnais d'agent]], [[Human-in-the-loop]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[RAG]], [[Reliability patterns]], [[Tool use patterns]], [[agent-loops]]
+- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent skills]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Dify]], [[Flowise]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[Langflow]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Text-to-SQL]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[gumloop]], [[smolagents]], [[tool-use]]
 
 ### Agent skills  ·  wiki/concept
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
 - liens sortants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Context engineering]], [[Hermes Agent]], [[OpenClaw]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[Agent memory]], [[Hermes Agent]], [[OpenClaw]], [[Sandboxing de code généré]], [[mcp-protocol]]
+- liens entrants : [[Agent memory]], [[Harnais d'agent]], [[Hermes Agent]], [[OpenClaw]], [[Sandboxing de code généré]], [[mcp-protocol]]
 
 ### agent-loops  ·  wiki/concept
 - tags : `agents`, `llm`, `tool-use`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Context engineering]], [[Human-in-the-loop]], [[LLM observability]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Context engineering]], [[Harnais d'agent]], [[Human-in-the-loop]], [[LLM observability]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
+- liens entrants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Harnais d'agent]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
 
 ### AI security  ·  wiki/concept
 - tags : `ai-security`, `safety`, `llm`
@@ -1883,7 +1888,7 @@
 ### Context engineering  ·  wiki/concept
 - tags : `context-engineering`, `llm`, `agents`
 - liens sortants : [[Agent memory]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Tokenization]], [[Tool use patterns]], [[prompt-caching]]
-- liens entrants : [[Agent skills]], [[Dify]], [[Flowise]], [[Langflow]], [[Positional encoding]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Tokenization]], [[agent-loops]], [[mcp-protocol]], [[prompt-caching]]
+- liens entrants : [[Agent skills]], [[Dify]], [[Flowise]], [[Harnais d'agent]], [[Langflow]], [[Pattern - Agent sur LLM auto-hébergé]], [[Positional encoding]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Tokenization]], [[agent-loops]], [[mcp-protocol]], [[prompt-caching]]
 
 ### Contrats de données & qualité  ·  wiki/concept
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
@@ -2145,6 +2150,11 @@
 - liens sortants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM observability]], [[LLM-as-judge]], [[LiteLLM]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]]
 - liens entrants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LiteLLM]], [[OpenClaw]], [[Probing]], [[Prompt injection]], [[Sandboxing de code généré]], [[fastmcp]]
 
+### Harnais d'agent  ·  wiki/concept
+- tags : `agents`, `llm`, `tool-use`, `context-engineering`
+- liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Context engineering]], [[Hermes Agent]], [[LLM benchmarks]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[tool-use]]
+- liens entrants : [[Agent evaluation]], [[Agent patterns]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]], [[agent-loops]]
+
 ### HCPC  ·  wiki/concept
 - tags : `clustering`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[K-Means]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
@@ -2293,7 +2303,7 @@
 ### LLM benchmarks  ·  wiki/concept
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
 - liens sortants : [[Code and math benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Perplexity]], [[Reasoning models]], [[Scaling laws]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[RAG benchmarks]], [[Text-to-SQL]]
+- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[Harnais d'agent]], [[LLM eval metrics]], [[LLM-as-judge]], [[RAG benchmarks]], [[Text-to-SQL]]
 
 ### LLM caching  ·  wiki/concept
 - tags : `caching`, `llm`, `semantic-search`, `in-memory`
@@ -2388,7 +2398,7 @@
 ### mcp-protocol  ·  wiki/concept
 - tags : `mcp`, `tool-use`, `llm`, `agents`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Context engineering]], [[Hermes Agent]], [[LangGraph]], [[OpenClaw]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcpjam]], [[tool-use]]
-- liens entrants : [[AI security]], [[Activepieces]], [[Agent memory]], [[Agent skills]], [[Hermes Agent]], [[LM Studio Bionic]], [[Multi-agent systems]], [[OpenClaw]], [[Prompt injection]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcpjam]], [[tool-use]]
+- liens entrants : [[AI security]], [[Activepieces]], [[Agent memory]], [[Agent skills]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[Multi-agent systems]], [[OpenClaw]], [[Prompt injection]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcpjam]], [[tool-use]]
 
 ### Metric learning & ré-identification  ·  wiki/concept
 - tags : `metric-learning`, `re-identification`, `representation-learning`, `computer-vision`, `deep-learning`
@@ -2703,7 +2713,7 @@
 ### Reasoning models  ·  wiki/concept
 - tags : `reasoning`, `llm`, `alignment`
 - liens sortants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[GRPO]], [[Inference optimization]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[vLLM]]
-- liens entrants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[GRPO]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[RL for LLMs]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Synthetic data generation]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[GRPO]], [[Harnais d'agent]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[RL for LLMs]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Synthetic data generation]], [[vLLM]]
 
 ### Recherche d'information  ·  wiki/concept
 - tags : `nlp`, `information-retrieval`, `retrieval`, `hybrid-search`, `ranking`, `semantic-search`
@@ -2803,7 +2813,7 @@
 ### Sandboxing de code généré  ·  wiki/concept
 - tags : `agents`, `llm`, `ai-security`, `container`
 - liens sortants : [[AI security]], [[Agent evaluation]], [[Agent skills]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[Modal]], [[Prompt injection]], [[agent-loops]]
-- liens entrants : [[Daytona]], [[E2B]], [[Hermes Agent]], [[LM Studio Bionic]], [[Modal]], [[Prompt injection]]
+- liens entrants : [[Daytona]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[Modal]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]]
 
 ### Scaling laws  ·  wiki/concept
 - tags : `scaling-laws`, `llm`, `deep-learning`
@@ -2848,7 +2858,7 @@
 ### Small Language Models  ·  wiki/concept
 - tags : `small-language-model`, `scaling-laws`, `llm`, `local-llm`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PEFT]], [[Quantization]], [[Reasoning models]], [[Scaling laws]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Calculs adaptatifs]], [[Distillation]], [[LM Studio Bionic]], [[Mixture of Experts]], [[Pruning]], [[Quantization]], [[Routing and cascading]], [[Scaling laws]], [[Transformer architectures]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Distillation]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Mixture of Experts]], [[Pruning]], [[Quantization]], [[Routing and cascading]], [[Scaling laws]], [[Transformer architectures]], [[vLLM]]
 
 ### Sparse autoencoders  ·  wiki/concept
 - tags : `explainability`, `deep-learning`, `llm`, `unsupervised`
@@ -2988,12 +2998,12 @@
 ### Tool use patterns  ·  wiki/concept
 - tags : `tool-use`, `agents`, `llm`
 - liens sortants : [[Advanced RAG]], [[Agent patterns]], [[CrewAI]], [[Instructor]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[RAG]], [[Reliability patterns]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agno]], [[AutoGen]], [[Context engineering]], [[CrewAI]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Reliability patterns]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
+- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agno]], [[AutoGen]], [[Context engineering]], [[CrewAI]], [[Harnais d'agent]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reliability patterns]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
 
 ### tool-use  ·  wiki/concept
 - tags : `tool-use`, `structured-output`, `llm`
 - liens sortants : [[Agent patterns]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]]
-- liens entrants : [[Agent skills]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
+- liens entrants : [[Agent skills]], [[Harnais d'agent]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
 
 ### Traitement du langage naturel  ·  wiki/concept
 - tags : `nlp`
@@ -3088,7 +3098,7 @@
 ## Tags → pages
 
 - `ab-testing` : A/B testing, CUPED
-- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents  — pas de page concept dédiée
+- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents  — pas de page concept dédiée
 - `ai-security` : AI security, Daytona, E2B, Prompt injection, Sandboxing de code généré, promptfoo
 - `alignment` : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
@@ -3126,7 +3136,7 @@
 - `config` : Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
 - `container` : Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
-- `context-engineering` : Agent skills, Claude Video, Context engineering, Graphify, prompt-caching
+- `context-engineering` : Agent skills, Claude Video, Context engineering, Graphify, Harnais d'agent, prompt-caching
 - `convergence` : Loi des grands nombres, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy
@@ -3223,12 +3233,12 @@
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation  — pas de page concept dédiée
 - `linear-programming` : Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenClaw, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenClaw, OpenHands, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : DeepEval, LLM-as-judge, TruLens
 - `llm-eval` : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LiteLLM, OpenRouter  — pas de page concept dédiée
 - `llm-observability` : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize
-- `local-llm` : LM Studio, LM Studio Bionic, Ollama, Small Language Models, Vanna, llama.cpp, text-generation-webui  — pas de page concept dédiée
+- `local-llm` : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Vanna, llama.cpp, text-generation-webui  — pas de page concept dédiée
 - `logging` : Loki  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
@@ -3289,7 +3299,7 @@
 - `parallel` : Dask, Modin, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
-- `pattern` : Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
+- `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `pdf` : Marker, PyMuPDF, pdfplumber  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
@@ -3370,7 +3380,7 @@
 - `text-to-sql` : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI
 - `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, NLTK, Tokenization, sentencepiece, spaCy
-- `tool-use` : Agent patterns, Agent skills, Agno, AutoGen, CrewAI, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, OpenAI Agents SDK, OpenClaw, OpenHands, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, smolagents, tool-use
+- `tool-use` : Agent patterns, Agent skills, Agno, AutoGen, CrewAI, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, smolagents, tool-use
 - `tracing` : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens  — pas de page concept dédiée
 - `transfer-learning` : Transfer learning vision, timm, torchvision
 - `transformers` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
@@ -3398,7 +3408,7 @@
 - aucun
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
-- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents)
+- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, AutoGen, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, gumloop, mcp-protocol, n8n, smolagents)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Postman)
 - `array` (porté par : CuPy, JAX, numpy, xarray)
@@ -3475,10 +3485,10 @@
 - `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation)
 - `linter` (porté par : Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Haystack, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenClaw, OpenHands, OpenRouter, Outlines, PEFT, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OpenAI Agents SDK, OpenClaw, OpenHands, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo)
 - `llm-gateway` (porté par : Helicone, LiteLLM, OpenRouter)
-- `local-llm` (porté par : LM Studio, LM Studio Bionic, Ollama, Small Language Models, Vanna, llama.cpp, text-generation-webui)
+- `local-llm` (porté par : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Vanna, llama.cpp, text-generation-webui)
 - `logging` (porté par : Loki)
 - `low-code` (porté par : Activepieces, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
@@ -3513,7 +3523,7 @@
 - `package-manager` (porté par : Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
-- `pattern` (porté par : Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
+- `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Marker, PyMuPDF, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Estimation MAP, Maximum de vraisemblance)

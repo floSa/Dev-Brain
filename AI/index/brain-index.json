@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 616,
+  "count": 618,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -27,6 +27,7 @@
       "Dify",
       "E2B",
       "Flowise",
+      "Harnais d'agent",
       "Haystack",
       "Hermes Agent",
       "Human-in-the-loop",
@@ -42,6 +43,7 @@
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
+      "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PydanticAI",
       "Reliability patterns",
@@ -345,6 +347,7 @@
       "Claude Video",
       "Context engineering",
       "Graphify",
+      "Harnais d'agent",
       "prompt-caching"
     ],
     "convergence": [
@@ -1133,6 +1136,7 @@
       "GraphRAG",
       "Guardrails",
       "Guidance",
+      "Harnais d'agent",
       "Haystack",
       "Helicone",
       "Hermes Agent",
@@ -1170,6 +1174,7 @@
       "OpenRouter",
       "Outlines",
       "PEFT",
+      "Pattern - Agent sur LLM auto-hébergé",
       "Perplexity",
       "Phoenix Arize",
       "Prompt engineering",
@@ -1260,6 +1265,7 @@
       "LM Studio",
       "LM Studio Bionic",
       "Ollama",
+      "Pattern - Agent sur LLM auto-hébergé",
       "Small Language Models",
       "Vanna",
       "llama.cpp",
@@ -1673,6 +1679,7 @@
       "Partitionnement & layout de données"
     ],
     "pattern": [
+      "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - Moteur de jeu pur + IA séparée",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Pattern - RAG structuré graphe + human-in-the-loop",
@@ -2278,6 +2285,7 @@
       "Agno",
       "AutoGen",
       "CrewAI",
+      "Harnais d'agent",
       "Hermes Agent",
       "LangChain",
       "LangChain SQL agent",
@@ -2286,6 +2294,7 @@
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
+      "Pattern - Agent sur LLM auto-hébergé",
       "PydanticAI",
       "Semantic Kernel",
       "Structured outputs",
@@ -2946,6 +2955,24 @@
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
       ]
+    },
+    {
+      "path": "Dev/Patterns/Pattern - Agent sur LLM auto-hébergé.md",
+      "nom": "Pattern - Agent sur LLM auto-hébergé",
+      "alias": null,
+      "type": "pattern",
+      "galaxie": "dev",
+      "categorie": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "agents",
+        "llm",
+        "local-llm",
+        "tool-use"
+      ],
+      "alternatives": null
     },
     {
       "path": "Dev/Patterns/Pattern - Moteur de jeu pur + IA séparée.md",
@@ -12340,6 +12367,32 @@
       "tags": [
         "clustering",
         "unsupervised"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Harnais d'agent.md",
+      "nom": "Harnais d'agent",
+      "alias": [
+        "harnais",
+        "harness",
+        "agent harness",
+        "scaffolding",
+        "échafaudage",
+        "agent scaffold"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use",
+        "context-engineering"
       ],
       "alternatives": null
     },

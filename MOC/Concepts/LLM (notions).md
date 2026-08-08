@@ -26,6 +26,7 @@ Notions de la famille `concept/llm`.
 - [[Wiki/Concepts/Decoding strategies|Decoding strategies]] — domaines : ai-eng
 - [[Wiki/Concepts/GraphRAG|GraphRAG]] — domaines : ai-eng
 - [[Wiki/Concepts/GRPO|GRPO]] — domaines : ml-eng, ai-eng
+- [[Wiki/Concepts/Harnais d'agent|Harnais d'agent]] — domaines : ai-eng
 - [[Wiki/Concepts/Human-in-the-loop|Human-in-the-loop]] — domaines : ai-eng
 - [[Wiki/Concepts/Hybrid retrieval|Hybrid retrieval]] — domaines : ai-eng
 - [[Wiki/Concepts/Inference optimization|Inference optimization]] — domaines : ai-eng, mlops

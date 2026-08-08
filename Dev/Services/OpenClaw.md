@@ -61,6 +61,8 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 
 - Même famille d'**agents prêts à l'emploi** que [[Dev/Services/Hermes Agent|Hermes Agent]] (assistant généraliste) et [[Dev/Services/OpenHands|OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Dev/Services/Agno|Agno]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]]).
 - Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
+- C'est un **harnais** au sens de [[Harnais d'agent]] : le modèle reste interchangeable derrière.
+- [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local ; attention à l'endpoint natif d'Ollama.
 - Concepts : [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - Sécurité : [[Prompt injection]], [[AI security]], [[Guardrails]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie

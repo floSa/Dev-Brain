@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 616 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 618 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -410,6 +410,7 @@
 ### pattern
 
 #### (sans catégorie)
+- **Pattern - Agent sur LLM auto-hébergé** — —
 - **Pattern - Moteur de jeu pur + IA séparée** — —
 - **Pattern - Pipeline scraping → matching → optimisation** — —
 - **Pattern - RAG structuré graphe + human-in-the-loop** — —
@@ -561,6 +562,7 @@
 - **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
 - **GraphRAG** — domaines : ai-eng · alias : graph RAG, knowledge graph RAG, RAG sur graphe, RAG augmenté par graphe de connaissances
 - **GRPO** — domaines : ml-eng, ai-eng · alias : Group Relative Policy Optimization, optimisation de politique par groupes, optimisation de politique relative par groupe
+- **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
 - **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
 - **Hybrid retrieval** — domaines : ai-eng · alias : recherche hybride, hybrid search, retrieval hybride, dense + sparse
 - **Inference optimization** — domaines : ai-eng, mlops · alias : optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM

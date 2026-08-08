@@ -52,6 +52,7 @@ tags: [agents, llm, tool-use]
 
 ## Approches voisines & alternatives
 
+- [[Harnais d'agent]] — la boucle est le **cœur d'exécution** du harnais ; cette page-là en décrit l'ensemble et les frontières.
 - [[Agent patterns]] — les façons d'organiser cette boucle (ReAct, plan-execute, réflexion).
 - [[Tool use patterns]] — l'étape « action » de la boucle.
 - [[Agent memory]] — gère le contexte qui s'accumule à chaque tour.

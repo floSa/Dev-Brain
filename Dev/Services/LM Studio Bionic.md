@@ -71,6 +71,8 @@ L'inférence est **locale par défaut**, via le runtime LM Studio ; trois origin
 - Couche agentique posée sur le runtime de [[Dev/Services/LM Studio|LM Studio]] — même éditeur, applications distinctes.
 - Même famille d'**agents prêts à l'emploi** que [[Dev/Services/OpenClaw|OpenClaw]], [[Dev/Services/Hermes Agent|Hermes Agent]] et [[Dev/Services/OpenHands|OpenHands]] — mais seul à être une application de bureau fermée, les trois autres étant auto-hébergés et open-source.
 - Consomme des serveurs [[mcp-protocol|MCP]] — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
+- C'est un **harnais** au sens de [[Harnais d'agent]] — le seul fermé du brain, et le seul à ne pas accepter d'endpoint arbitraire.
+- [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet et ses pièges.
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Small Language Models]].
 - Sécurité : [[Prompt injection]], [[AI security]], [[Sandboxing de code généré]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie

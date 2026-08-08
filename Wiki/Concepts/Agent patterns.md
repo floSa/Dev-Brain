@@ -46,6 +46,8 @@ tags: [agents, llm, tool-use]
 
 ## Approches voisines & alternatives
 
+- [[Harnais d'agent]] — ces patrons décrivent l'organisation interne du harnais.
+
 - [[agent-loops]] — le moteur d'exécution que ces patrons orchestrent.
 - [[Tool use patterns]] — comment l'agent agit sur le monde.
 - [[Agent memory]] — ce que l'agent retient entre les étapes.

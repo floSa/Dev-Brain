@@ -63,5 +63,6 @@ Runtime local de LLM qui privilégie la simplicité : `ollama run llama3` télé
 
 - Construit sur [[Dev/Services/llama.cpp|llama.cpp]] (inférence GGUF sous-jacente).
 - Modèles tirés du hub [[Dev/Services/HuggingFace|HuggingFace]] (conversion en GGUF).
+- Sert de couche modèle à un agent auto-hébergé — cf. [[Pattern - Agent sur LLM auto-hébergé]]. **Deux pièges y sont documentés** : l'endpoint `/v1` casse le tool calling avec certains harnais (utiliser l'API native), et le contexte par défaut de 4 096 tokens est très en dessous de ce qu'exige un agent.
 - [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
 - Doc : https://docs.ollama.com/

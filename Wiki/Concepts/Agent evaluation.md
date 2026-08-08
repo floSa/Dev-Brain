@@ -48,6 +48,8 @@ tags: [agents, llm-eval, llm]
 
 ## Approches voisines & alternatives
 
+- [[Harnais d'agent]] — un score mesure toujours le **couple** modèle + harnais ; comparer suppose d'en figer un.
+
 - [[LLM eval metrics]] — l'éval d'agent réutilise ces métriques, appliquées au niveau de chaque étape.
 - [[RAG eval]] — cas particulier quand l'agent récupère du contexte (faithfulness, context precision).
 - [[Agent patterns]] / [[agent-loops]] — ce qu'on évalue ; la boucle produit la trajectoire notée.
