@@ -50,6 +50,7 @@ tags: [prompt-injection, ai-security, llm]
 - [[Jailbreaking and defenses]] — viser l'alignement vs détourner les instructions ; souvent combinés.
 - [[Guardrails]] — la couche de défense concrète (détection, filtrage).
 - [[tool-use]] — les outils transforment une injection en action : surface critique.
+- [[Sandboxing de code généré]] — contient les dégâts quand l'injection aboutit à de l'exécution de code.
 - [[mcp-protocol]] — *resources* et outils tiers sont des vecteurs d'injection indirecte.
 - [[RAG]] — le contenu récupéré est une entrée non fiable comme une autre.
 

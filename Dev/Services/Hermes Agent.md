@@ -46,7 +46,7 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 
 ## Pièges
 
-- **Skills auto-créés non relus** : l'agent écrit lui-même du code réutilisable ensuite en boucle. Un skill erroné se rejoue indéfiniment — les relire comme du code de production.
+- **Skills auto-créés non relus** : l'agent écrit lui-même du code réutilisable ensuite en boucle. Un skill erroné se rejoue indéfiniment — les relire comme du code de production. Cf. [[Agent skills]].
 - **Mémoire qui enfle et dérive** : sans invalidation, les souvenirs s'accumulent (bruit, coût, contexte saturé) et les faits périmés survivent — cf. [[Agent memory]].
 - **Injection de prompt** : agent connecté à des messageries ouvertes et doté d'un shell ; cloisonner via un backend Docker plutôt que local. Cf. [[Prompt injection]].
 - Versions **0.x** et rythme de publication rapide (v0.20.0 début août 2026) — épingler la version.
@@ -59,8 +59,9 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 
 - Même famille d'**agents prêts à l'emploi** que [[Dev/Services/OpenClaw|OpenClaw]] (assistant généraliste sur messageries) et [[Dev/Services/OpenHands|OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Dev/Services/Agno|Agno]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]]).
 - Partage avec [[Dev/Services/Letta|Letta]] l'idée de **mémoire persistante comme primitive** ; Letta l'expose en API pour d'autres produits, Hermes la garde interne à son propre agent.
-- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
-- Concepts : [[Agent memory]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]].
+- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire — et implémente [[a2a-protocol|A2A]] v1.0 depuis la v0.20.0 pour dialoguer avec des agents tiers.
+- Backends d'exécution : local et Docker, puis les bacs à sable managés [[Dev/Services/Modal|Modal]] et [[Dev/Services/Daytona|Daytona]] — cf. [[Sandboxing de code généré]].
+- Concepts : [[Agent memory]], [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]].
 - Sécurité : [[Prompt injection]], [[AI security]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://hermes-agent.nousresearch.com/docs/

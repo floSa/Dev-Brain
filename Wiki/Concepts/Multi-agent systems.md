@@ -49,6 +49,7 @@ tags: [multi-agent, agents, llm]
 - [[Agent memory]] — l'état partagé entre agents est un problème de mémoire.
 - [[Agent evaluation]] — évaluer une équipe d'agents : à qui imputer l'échec ?
 - [[mcp-protocol]] — outils et ressources partagés entre agents via des serveurs MCP.
+- [[a2a-protocol]] — le protocole de coordination quand les agents sont **opaques** et relèvent d'organisations distinctes.
 - [[Reliability patterns]] — contenir la propagation d'erreurs d'un agent à l'autre.
 - Alternative : **un agent unique avec plusieurs outils** — souvent suffisant, toujours moins cher ; ne passer au multi-agents qu'avec une raison mesurée.
 

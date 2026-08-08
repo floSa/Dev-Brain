@@ -10,10 +10,12 @@ indexe: concept/llm
 <!-- AUTO:START -->
 Notions de la famille `concept/llm`.
 
+- [[Wiki/Concepts/a2a-protocol|a2a-protocol]] — domaines : ai-eng
 - [[Wiki/Concepts/Advanced RAG|Advanced RAG]] — domaines : ai-eng
 - [[Wiki/Concepts/Agent evaluation|Agent evaluation]] — domaines : ai-eng
 - [[Wiki/Concepts/Agent memory|Agent memory]] — domaines : ai-eng
 - [[Wiki/Concepts/Agent patterns|Agent patterns]] — domaines : ai-eng
+- [[Wiki/Concepts/Agent skills|Agent skills]] — domaines : ai-eng
 - [[Wiki/Concepts/agent-loops|agent-loops]] — domaines : ai-eng
 - [[Wiki/Concepts/Chain-of-Thought|Chain-of-Thought]] — domaines : ai-eng
 - [[Wiki/Concepts/Chunking strategies|Chunking strategies]] — domaines : ai-eng
@@ -52,6 +54,7 @@ Notions de la famille `concept/llm`.
 - [[Wiki/Concepts/RL for LLMs|RL for LLMs]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/RLHF and DPO|RLHF and DPO]] — domaines : ml-eng, ai-eng
 - [[Wiki/Concepts/Routing and cascading|Routing and cascading]] — domaines : ai-eng
+- [[Wiki/Concepts/Sandboxing de code généré|Sandboxing de code généré]] — domaines : ai-eng
 - [[Wiki/Concepts/Scaling laws|Scaling laws]] — domaines : ai-eng, ml-eng
 - [[Wiki/Concepts/Server-Sent Events & streaming LLM|Server-Sent Events & streaming LLM]] — domaines : ai-eng
 - [[Wiki/Concepts/SFT|SFT]] — domaines : ml-eng, ai-eng

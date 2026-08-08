@@ -48,7 +48,7 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 
 - **Injection de prompt** : c'est la faiblesse structurelle du produit — l'agent lit des messages entrants non fiables et dispose d'outils réels. Cf. [[Prompt injection]] et [[AI security]].
 - **Permissions trop larges** : accès mail, calendrier et messagerie demandés d'un bloc ; le périmètre accordé est rarement réduit ensuite.
-- **Skills tiers non audités** : des cas d'**exfiltration de données** via des skills communautaires ont été documentés (Cisco, 2026). Traiter un skill comme du code non fiable.
+- **Skills tiers non audités** : des cas d'**exfiltration de données** via des skills communautaires ont été documentés (Cisco, 2026). Traiter un skill comme du code non fiable — cf. [[Agent skills]].
 - Usage **restreint par certaines administrations** (Chine, mars 2026, pour les entités publiques) — vérifier le cadre avant tout déploiement professionnel.
 - Rythme de publication très soutenu et **renommages successifs** : épingler une version, et se méfier de la documentation tierce périmée.
 
@@ -60,7 +60,7 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 
 - Même famille d'**agents prêts à l'emploi** que [[Dev/Services/Hermes Agent|Hermes Agent]] (assistant généraliste) et [[Dev/Services/OpenHands|OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Dev/Services/Agno|Agno]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]]).
 - Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
-- Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
+- Concepts : [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - Sécurité : [[Prompt injection]], [[AI security]], [[Guardrails]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.openclaw.ai/

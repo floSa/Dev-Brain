@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 609,
+  "count": 615,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -16,13 +16,16 @@
       "Agent evaluation",
       "Agent memory",
       "Agent patterns",
+      "Agent skills",
       "Agno",
       "AutoGen",
       "Cline",
       "Context engineering",
       "Continue",
       "CrewAI",
+      "Daytona",
       "Dify",
+      "E2B",
       "Flowise",
       "Haystack",
       "Hermes Agent",
@@ -33,6 +36,7 @@
       "Langflow",
       "Letta",
       "LlamaIndex",
+      "Modal",
       "Multi-agent systems",
       "OpenAI Agents SDK",
       "OpenClaw",
@@ -40,6 +44,7 @@
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PydanticAI",
       "Reliability patterns",
+      "Sandboxing de code généré",
       "Semantic Kernel",
       "Spec Kit",
       "Text-to-SQL",
@@ -47,6 +52,7 @@
       "Vanna",
       "WrenAI",
       "Zapier",
+      "a2a-protocol",
       "agent-loops",
       "fastmcp",
       "gumloop",
@@ -56,7 +62,10 @@
     ],
     "ai-security": [
       "AI security",
+      "Daytona",
+      "E2B",
       "Prompt injection",
+      "Sandboxing de code généré",
       "promptfoo"
     ],
     "alignment": [
@@ -320,12 +329,17 @@
       "Optimisation sous contrainte"
     ],
     "container": [
+      "Daytona",
       "Docker",
+      "E2B",
+      "Modal",
       "Pattern - Stack démo ML locale multi-services",
       "Rule - Packaging démo",
+      "Sandboxing de code généré",
       "testcontainers"
     ],
     "context-engineering": [
+      "Agent skills",
       "Claude Video",
       "Context engineering",
       "Graphify",
@@ -847,6 +861,7 @@
       "Kornia",
       "LM Studio",
       "Mixed precision",
+      "Modal",
       "Multi-head Latent Attention",
       "NVIDIA Triton",
       "ONNX Runtime",
@@ -1092,6 +1107,7 @@
       "Agent evaluation",
       "Agent memory",
       "Agent patterns",
+      "Agent skills",
       "Agno",
       "Aider",
       "AutoGen",
@@ -1105,9 +1121,11 @@
       "CrewAI",
       "DB-GPT",
       "DSPy",
+      "Daytona",
       "Decoding strategies",
       "DeepEval",
       "Dify",
+      "E2B",
       "Flowise",
       "GRPO",
       "GraphRAG",
@@ -1139,6 +1157,7 @@
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
+      "Modal",
       "Multi-Token Prediction",
       "Multi-agent systems",
       "Ollama",
@@ -1165,6 +1184,7 @@
       "SAELens",
       "SFT",
       "SGLang",
+      "Sandboxing de code généré",
       "Scaling laws",
       "Semantic Kernel",
       "Server-Sent Events & streaming LLM",
@@ -1187,6 +1207,7 @@
       "Vanna",
       "Vision Language Models",
       "WrenAI",
+      "a2a-protocol",
       "agent-loops",
       "interpreto",
       "llama.cpp",
@@ -1423,7 +1444,8 @@
       "CrewAI",
       "DB-GPT",
       "Multi-agent systems",
-      "OpenAI Agents SDK"
+      "OpenAI Agents SDK",
+      "a2a-protocol"
     ],
     "multi-armed-bandit": [
       "Exploration vs exploitation",
@@ -2247,6 +2269,7 @@
     ],
     "tool-use": [
       "Agent patterns",
+      "Agent skills",
       "Agno",
       "AutoGen",
       "CrewAI",
@@ -2262,6 +2285,7 @@
       "Semantic Kernel",
       "Structured outputs",
       "Tool use patterns",
+      "a2a-protocol",
       "agent-loops",
       "fastmcp",
       "mcp-protocol",
@@ -3912,6 +3936,30 @@
       ]
     },
     {
+      "path": "Dev/Services/Daytona.md",
+      "nom": "Daytona",
+      "alias": [
+        "daytona",
+        "daytonaio",
+        "Daytona Sandboxes"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "compute/sandbox",
+      "domaines": null,
+      "pitch": "Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu.",
+      "tags": [
+        "agents",
+        "llm",
+        "container",
+        "ai-security"
+      ],
+      "alternatives": [
+        "[[Dev/Services/E2B|E2B]]",
+        "[[Dev/Services/Modal|Modal]]"
+      ]
+    },
+    {
       "path": "Dev/Services/DeepEval.md",
       "nom": "DeepEval",
       "alias": [
@@ -4069,6 +4117,31 @@
       ],
       "alternatives": [
         "[[Dev/Services/ClickHouse|ClickHouse]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/E2B.md",
+      "nom": "E2B",
+      "alias": [
+        "e2b",
+        "e2b-dev",
+        "E2B Sandbox",
+        "Code Interpreter SDK"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "compute/sandbox",
+      "domaines": null,
+      "pitch": "Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.",
+      "tags": [
+        "agents",
+        "llm",
+        "container",
+        "ai-security"
+      ],
+      "alternatives": [
+        "[[Dev/Services/Modal|Modal]]",
+        "[[Dev/Services/Daytona|Daytona]]"
       ]
     },
     {
@@ -5514,6 +5587,31 @@
         "[[Dev/Services/Garage|Garage]]",
         "[[Dev/Services/AWS S3|AWS S3]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/Modal.md",
+      "nom": "Modal",
+      "alias": [
+        "modal",
+        "modal.com",
+        "Modal Labs",
+        "Modal Sandboxes"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "compute/serverless",
+      "domaines": null,
+      "pitch": "Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.",
+      "tags": [
+        "agents",
+        "gpu",
+        "llm",
+        "container"
+      ],
+      "alternatives": [
+        "[[Dev/Services/E2B|E2B]]",
+        "[[Dev/Services/Daytona|Daytona]]"
       ]
     },
     {
@@ -9669,6 +9767,32 @@
         "agents",
         "llm",
         "tool-use"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/Agent skills.md",
+      "nom": "Agent skills",
+      "alias": [
+        "skill",
+        "skills",
+        "agent skill",
+        "mémoire procédurale",
+        "procedural memory",
+        "SKILL.md"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use",
+        "context-engineering"
       ],
       "alternatives": null
     },
@@ -15471,6 +15595,32 @@
       "alternatives": null
     },
     {
+      "path": "Wiki/Concepts/Sandboxing de code généré.md",
+      "nom": "Sandboxing de code généré",
+      "alias": [
+        "sandboxing",
+        "sandbox",
+        "bac à sable",
+        "code execution sandbox",
+        "exécution isolée",
+        "microVM"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "ai-security",
+        "container"
+      ],
+      "alternatives": null
+    },
+    {
       "path": "Wiki/Concepts/Scaling laws.md",
       "nom": "Scaling laws",
       "alias": [
@@ -16738,6 +16888,31 @@
       "tags": [
         "web-scraping",
         "data-pipeline"
+      ],
+      "alternatives": null
+    },
+    {
+      "path": "Wiki/Concepts/a2a-protocol.md",
+      "nom": "a2a-protocol",
+      "alias": [
+        "A2A",
+        "Agent2Agent",
+        "Agent-to-Agent",
+        "protocole A2A",
+        "agent card"
+      ],
+      "type": "concept",
+      "galaxie": "wiki",
+      "categorie": "concept/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "multi-agent",
+        "llm",
+        "tool-use"
       ],
       "alternatives": null
     },

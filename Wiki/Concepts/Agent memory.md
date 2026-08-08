@@ -45,6 +45,7 @@ tags: [agents, llm, retrieval]
 
 - [[RAG]] / [[Advanced RAG]] — la même mécanique de récupération, appliquée à la mémoire.
 - [[embeddings]] / [[Bases de données vectorielles]] — le socle de la mémoire long terme.
+- [[Agent skills]] — le pendant **procédural** : la mémoire retient les faits, le skill retient la marche à suivre.
 - [[agent-loops]] — c'est le contexte qui s'y accumule que la mémoire gère.
 - [[Agent patterns]] — la mémoire conditionne les patrons (réflexion, plan-execute).
 - [[mcp-protocol]] — les *resources* MCP sont un canal d'alimentation de la mémoire long terme.

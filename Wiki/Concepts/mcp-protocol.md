@@ -70,6 +70,8 @@ tags: [mcp, tool-use, llm, agents]
 ## Approches voisines & alternatives
 
 - [[tool-use]] — MCP **standardise** l'exposition des outils que le function calling appelle.
+- [[a2a-protocol]] — le pendant **horizontal** : MCP relie un agent à ses outils, A2A relie des agents entre eux. Complémentaires, un même agent expose souvent les deux.
+- [[Agent skills]] — MCP fournit les **outils**, un skill fournit la **méthode** pour s'en servir.
 - [[Tool use patterns]] — les patrons d'appel d'outils s'appliquent aux outils servis par MCP.
 - [[agent-loops]] — l'extension Tasks règle un problème précis de la boucle d'agent : les travaux qui dépassent la durée d'un appel.
 - [[Agent memory]] — les *resources* MCP sont une voie d'alimentation du contexte/mémoire.

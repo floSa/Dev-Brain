@@ -25,7 +25,7 @@ ml/{tracking, training, serving, hyperopt, orchestration, framework,
 data/{orchestration, parsing, ingestion, format, quality,
       transformation, streaming, lakehouse, versioning, scraping}
 automation/{workflow, ipaas, ai-agent}
-compute/distributed
+compute/{distributed, sandbox, serverless}
 auth
 storage
 observability/{log, metric, trace}
@@ -38,6 +38,8 @@ tooling/{lint, format, build, test, package, data, viz, stats, notebook, migrati
   - `automation/workflow` — moteurs d'automatisation de workflows self-hostables, orientés intégration d'apps et tâches techniques (n8n, Activepieces, Windmill).
   - `automation/ipaas` — plateformes SaaS d'intégration entre applications (iPaaS), entièrement managées (Zapier).
   - `automation/ai-agent` — automatisation no-code dont chaque étape peut porter de la logique IA / agents (gumloop).
+- `compute/sandbox` — bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM) : isolation forte (microVM, kernel dédié), création et destruction à la demande, cycle de vie court. Distinct de `devops/container` (packaging et déploiement d'applications de confiance) et de `compute/distributed` (calcul réparti sur plusieurs nœuds).
+- `compute/serverless` — plateformes de calcul à la demande facturées à l'usage, sans serveur à provisionner (scale-to-zero, démarrage à froid rapide, GPU inclus le cas échéant).
 - `tooling/optim` — recherche opérationnelle / programmation mathématique : modélisation et résolution de problèmes d'optimisation (LP, MIP, optimisation convexe) via des solveurs ; modeleurs Python (PuLP, Pyomo, CVXPY) et bindings de solveurs. Distinct de `ml/optimization` (compression / optimisation de modèles ML) et de `tooling/stats` (modélisation statistique).
 - `ml/eval` — bibliothèques de calcul de métriques et de validation de modèles ML (accuracy, F1, BLEU, ROUGE, exact match…) : HuggingFace `evaluate`, jeux de métriques réutilisables. Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring par juge) et du concept transverse `model-evaluation` (le tag).
 - `llm/framework-module` — **sous-composant notable d'un gros framework LLM** (LangChain, LlamaIndex…) qui mérite sa page dédiée parce que le framework parent est trop vaste pour le mettre en avant : p. ex. le SQL agent de LangChain, le NLSQLTableQueryEngine de LlamaIndex. Ce n'est **pas** une brique déployable seule (elle s'utilise via son framework parent, qu'elle référence dans ses liens), d'où la distinction avec `llm/framework` — et l'exclusion des comparatifs de frameworks. Fiche `type: service`, `licence_type`/`langage` hérités du parent.

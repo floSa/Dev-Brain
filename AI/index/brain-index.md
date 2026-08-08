@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 609 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 615 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -26,6 +26,13 @@
 - **Dask** — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 - **Ray** — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 - **Spark** — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
+
+#### compute/sandbox
+- **Daytona** — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu.
+- **E2B** — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
+
+#### compute/serverless
+- **Modal** — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
 
 #### data/format
 - **Avro** — Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
@@ -537,10 +544,12 @@
 - **Vision Transformers (ViT)** — domaines : ml-eng, ai-eng · alias : ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision
 
 #### concept/llm
+- **a2a-protocol** — domaines : ai-eng · alias : A2A, Agent2Agent, Agent-to-Agent, protocole A2A, agent card
 - **Advanced RAG** — domaines : ai-eng · alias : RAG avancé, advanced retrieval-augmented generation, modular RAG
 - **Agent evaluation** — domaines : ai-eng · alias : évaluation d'agents, agent evaluation, agent eval
 - **Agent memory** — domaines : ai-eng · alias : mémoire d'agent, agent memory, mémoire LLM
 - **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
+- **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
 - **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
 - **Chain-of-Thought** — domaines : ai-eng · alias : CoT, chaîne de pensée, raisonnement pas à pas, self-consistency, zero-shot CoT
 - **Chunking strategies** — domaines : ai-eng · alias : chunking, découpage de documents, stratégies de découpage, text splitting
@@ -579,6 +588,7 @@
 - **RL for LLMs** — domaines : ml-eng, ai-eng · alias : RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR
 - **RLHF and DPO** — domaines : ml-eng, ai-eng · alias : RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization
 - **Routing and cascading** — domaines : ai-eng · alias : routing, query routing, semantic routing, model routing, model cascading, cascade de modèles, routage et cascade
+- **Sandboxing de code généré** — domaines : ai-eng · alias : sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM
 - **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
 - **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
 - **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
