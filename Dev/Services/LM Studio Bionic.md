@@ -45,7 +45,11 @@ L'inférence est **locale par défaut**, via le runtime LM Studio ; trois origin
 ## Déploiement & coût
 
 - Application de bureau, **macOS et Windows**. Pas de version serveur ni headless — la contrepartie de la GUI.
-- **Gratuit** en inférence locale ; le cloud (LM Studio Secure Cloud) est facturé au crédit, grille encore peu détaillée à ce stade.
+- Trois paliers annoncés :
+  - **Gratuit (0 $)** — l'agent, les modèles locaux (llama.cpp et MLX), la transcription vocale hors ligne, la recherche web, et LM Link jusqu'à 5 appareils. Aucune donnée ne quitte la machine.
+  - **Pay as you go** — crédits pour le cloud, facturés au token : de ~0,13 $ / M tokens en entrée (DeepSeek V4 Flash) à ~15 $ / M en sortie (Kimi K3). Inférence aux États-Unis, rétention zéro par défaut.
+  - **Bionic Pass** — abonnement annoncé, grille non publiée à ce stade.
+- Le gratuit couvre donc tout l'usage **local** ; seul l'appel aux modèles de frontière hébergés est payant.
 - Scaling **single-node** : une machine, éventuellement épaulée par une autre du réseau via LM Link.
 - Le matériel commande la qualité : un modèle qui dépasse la VRAM bascule en RAM et l'agent devient lent, exactement comme sous LM Studio.
 
