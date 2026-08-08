@@ -1,0 +1,33 @@
+# Normalisation des fins de ligne.
+# Le depot stocke tout en LF ; Git convertit au format natif a la sortie.
+# Sans ce fichier, une fiche editee sous Windows apparait "modifiee" sur une
+# autre machine alors que le texte est identique — bruit qui masque les vraies
+# modifications quand le vault circule entre postes.
+
+* text=auto
+
+# Formats texte du vault, explicites pour lever toute ambiguite.
+*.md      text
+*.base    text
+*.json    text
+*.py      text
+*.ps1     text eol=crlf
+*.sh      text eol=lf
+*.yml     text
+*.yaml    text
+*.toml    text
+
+# Binaires : ne jamais convertir.
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.webp    binary
+*.pdf     binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
+*.ttf     binary
+*.otf     binary
+*.mp4     binary
+*.zip     binary
