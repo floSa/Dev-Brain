@@ -56,6 +56,21 @@ def active(scan_dir: str, fm: dict) -> bool:
     return scan_dir == "Dev" or not (V1 & set(fm.keys()))
 
 
+def hors_vault(p, racine) -> bool:
+    """Le chemin est-il hors du perimetre logique du vault ?
+
+    Les worktrees git vivent sous `.claude/worktrees/` et sont des copies completes :
+    les balayer double tout. Le test porte sur le chemin RELATIF a la racine — un
+    vault qui vit lui-meme sous `.claude/` (cas d'un worktree) reste entierement
+    valide, seul son propre `.claude/` interne est ecarte.
+    """
+    try:
+        parts = p.relative_to(racine).parts
+    except ValueError:
+        return True
+    return bool(parts) and parts[0] in {".git", ".claude"}
+
+
 def main() -> int:
     pages = []
     for d in SCAN:
@@ -82,7 +97,7 @@ def main() -> int:
     resolvable = set()
     for ext in ("*.md", "*.base"):
         for f in VAULT.rglob(ext):
-            if not ({".git", ".claude"} & set(f.parts)):
+            if not hors_vault(f, VAULT):
                 resolvable.add(f.stem.lower())
 
     backlinks = {p["nom"]: set() for p in pages}

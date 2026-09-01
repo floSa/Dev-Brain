@@ -117,6 +117,21 @@ BASE_MIN_CAT = 3
 BASE_MIN_MEMBRES = 2
 
 
+def hors_vault(p, racine) -> bool:
+    """Le chemin est-il hors du perimetre logique du vault ?
+
+    Les worktrees git vivent sous `.claude/worktrees/` et sont des copies completes :
+    les balayer double tout. Le test porte sur le chemin RELATIF a la racine — un
+    vault qui vit lui-meme sous `.claude/` (cas d'un worktree) reste entierement
+    valide, seul son propre `.claude/` interne est ecarte.
+    """
+    try:
+        parts = p.relative_to(racine).parts
+    except ValueError:
+        return True
+    return bool(parts) and parts[0] in {".git", ".claude"}
+
+
 def parse(text: str) -> tuple[dict | None, str]:
     if not text.startswith("---"):
         return None, text
@@ -203,8 +218,8 @@ def resolvable_names() -> set[str]:
     names: set[str] = set()
     for ext in ("*.md", "*.base"):
         for p in VAULT.rglob(ext):
-            if {".git", ".claude"} & set(p.parts):
-                continue  # .claude/worktrees/ contient des copies completes du vault
+            if hors_vault(p, VAULT):
+                continue
             names.add(p.stem.lower())
     return names
 
@@ -313,8 +328,8 @@ def check_bases(active: list[tuple[str, dict, str]], cited: set[str]) -> list[st
     warn: list[str] = []
     membres: dict[str, list[str] | None] = {}
     for base in sorted(VAULT.rglob("*.base")):
-        if {".git", ".claude"} & set(base.parts):
-            continue  # idem : ne pas compter les .base des worktrees imbriques
+        if hors_vault(base, VAULT):
+            continue
         nom = rel(base)
         txt = base.read_text(encoding="utf-8")
         try:
