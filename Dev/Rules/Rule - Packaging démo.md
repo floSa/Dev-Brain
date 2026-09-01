@@ -4,8 +4,6 @@ type: rule
 domaine: docs
 applicable: global
 strictness: nice-to-have
-created: 2026-06-11
-modified: 2026-06-11
 tags: [rule, container, ci-cd, reproducibility]
 ---
 

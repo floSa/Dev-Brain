@@ -4,8 +4,6 @@ type: rule
 domaine: dependencies
 applicable: global
 strictness: must
-created: 2026-06-11
-modified: 2026-06-11
 tags: [rule, package-manager, linter, formatter]
 ---
 

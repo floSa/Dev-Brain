@@ -2,8 +2,6 @@
 galaxie: dev
 type: pattern
 contexte: Piloter un agent prêt à l'emploi avec un modèle servi sur sa propre machine ou son propre réseau, sans dépendre d'une API cloud — le harnais d'un côté, le serveur d'inférence de l'autre.
-created: 2026-08-08
-modified: 2026-08-08
 services_cles: [LM Studio, Ollama, vLLM, llama.cpp, OpenClaw, Hermes Agent, LM Studio Bionic]
 projets_appliques: []
 tags: [pattern, agents, llm, local-llm, tool-use]

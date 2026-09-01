@@ -2,8 +2,6 @@
 galaxie: dev
 type: pattern
 contexte: IA de jeu où la logique de règles et l'algorithme de décision sont découplés — le moteur joue les règles, l'agent décide.
-created: 2026-06-11
-modified: 2026-06-11
 services_cles: [Gymnasium, Stable-Baselines3, PyTorch]
 projets_appliques: []
 tags: [pattern, reinforcement-learning, self-play, game-theory, planning]

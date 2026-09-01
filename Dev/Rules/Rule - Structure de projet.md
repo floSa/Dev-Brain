@@ -4,8 +4,6 @@ type: rule
 domaine: code-style
 applicable: global
 strictness: should
-created: 2026-06-11
-modified: 2026-06-11
 tags: [rule, reproducibility]
 ---
 

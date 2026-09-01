@@ -2,8 +2,6 @@
 galaxie: dev
 type: pattern
 contexte: RAG sur connaissance relationnelle (entités liées, multi-hop) où les réponses engagent et passent par une validation humaine aux points sensibles.
-created: 2026-06-11
-modified: 2026-06-11
 services_cles: [Neo4j, LangGraph, sentence-transformers, Qdrant]
 projets_appliques: []
 tags: [pattern, rag, knowledge-graph, graph-db, human-in-the-loop, agents]

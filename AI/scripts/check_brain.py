@@ -61,7 +61,7 @@ SCAN_DIRS = ["Dev", "Wiki"]
 DOC = VAULT / "Documentation" / "general"
 MOC = VAULT / "MOC"
 
-V1_MARKERS = {"created", "modified", "maturite", "lecture_min", "auteurs_cles",
+V1_MARKERS = {"maturite", "lecture_min", "auteurs_cles",
               "sous_categories", "score", "mes_projets", "clients_officiels",
               "plateforme", "remplace", "url_officiel", "licence"}
 
@@ -89,10 +89,8 @@ OUTIL_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "domai
                  "url_docs", "url_repo"}
 # `type: pattern` / `type: rule` — gabarits sans `nom:` ni `categorie:` (la
 # taxonomie ne les couvre pas ; leur porte d'entrée est MOC/Types/, cf. build_mocs).
-PATTERN_ALLOWED = {"galaxie", "type", "tags", "created", "modified",
-                   "contexte", "services_cles", "projets_appliques"}
-RULE_ALLOWED = {"galaxie", "type", "tags", "created", "modified",
-                "domaine", "applicable", "strictness"}
+PATTERN_ALLOWED = {"galaxie", "type", "tags", "contexte", "services_cles", "projets_appliques"}
+RULE_ALLOWED = {"galaxie", "type", "tags", "domaine", "applicable", "strictness"}
 ALLOWED = {"service": SERVICE_ALLOWED, "concept": CONCEPT_ALLOWED,
            "outil": OUTIL_ALLOWED, "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED}
 # Valeurs autorisées (listes fermées) pour les champs Service à enum.

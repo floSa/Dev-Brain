@@ -4,8 +4,6 @@ type: rule
 domaine: security
 applicable: global
 strictness: must
-created: 2026-06-11
-modified: 2026-06-11
 tags: [rule, config, data-validation, type-hints]
 ---
 
