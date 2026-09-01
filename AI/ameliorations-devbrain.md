@@ -17,8 +17,12 @@ entrée décrit le besoin constaté, la piste envisagée et ce qu'elle impacte.
 fiche, comme le prévoient les gabarits — c'est la règle et elle convient à la
 lecture humaine.
 
-**Limite.** `AI/index/brain-index.json` ne stocke que dix champs :
-`path, nom, alias, type, galaxie, categorie, domaines, pitch, tags, alternatives`.
+**Limite.** `AI/index/brain-index.json` ne stocke que douze champs :
+`path, nom, alias, type, galaxie, categorie, domaines, pitch, tags, alternatives, status,
+maturite`. (`status` et `maturite` ont été ajoutés le 2026-09-02 par le correctif L3-1 —
+avant cela ils manquaient, et `planifier-projet` proposait des briques abandonnées sans le
+savoir. Le fond de cette entrée reste entier : `contraintes:` n'existe toujours pas, et
+`remplace_par:` n'est pas indexé non plus.)
 Le skill `planifier-projet` filtre ses candidats sur cet index (« sans lire
 160 fichiers ») et n'ouvre la fiche qu'après sélection. Une contrainte
 éliminatoire écrite en corps de page alimente donc la **justification**, jamais

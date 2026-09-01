@@ -32,8 +32,17 @@ OUT_JSON = VAULT / "AI" / "index" / "brain-index.json"
 OUT_MD = VAULT / "AI" / "index" / "brain-index.md"
 
 # Champs repris dans l'index. Ordre stable.
+# `status` et `maturite` sont des critères ÉLIMINATOIRES : sans eux, un consommateur
+# machine (planifier-projet) qui filtre sur l'index sans ouvrir les fiches proposerait
+# une brique `status: abandonne` sans jamais voir qu'elle l'est.
+# Tous les champs sont facultatifs : `fm.get()` écrit `null` pour une page qui ne les
+# porte pas (les `type: concept` n'ont ni `status` ni `maturite` ; les `type: pattern`
+# et `type: rule` n'ont ni `nom` ni `categorie`).
+# Note : `maturite` figure aussi dans V1_MARKERS ci-dessous — côté Wiki, une page qui
+# le porte est du réservoir v1 et sort de l'index. `maturite` n'est donc jamais renseigné
+# que sur des pages Dev. Les deux usages du nom ne se contredisent pas.
 FIELDS = ["nom", "alias", "type", "galaxie", "categorie", "domaines",
-          "pitch", "tags", "alternatives"]
+          "pitch", "tags", "alternatives", "status", "maturite"]
 
 # Champs hérités v1 : leur présence dans une page Wiki = réservoir → hors index actif.
 V1_MARKERS = {"created", "modified", "maturite", "lecture_min", "auteurs_cles",

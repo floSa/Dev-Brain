@@ -14,6 +14,8 @@ Exemples :
     uv run AI/scripts/query_index.py --categorie database/vector    # candidats alternatives
     uv run AI/scripts/query_index.py --tag rag --galaxie dev        # pages d'un tag
     uv run AI/scripts/query_index.py --tag-of "Weaviate"            # tags d'une page
+    uv run AI/scripts/query_index.py --categorie llm/framework \
+        --status abandonne                                          # briques à écarter
 
 Lit seulement l'index (pas de re-scan du vault). Cross-OS, chemins relatifs.
 """
@@ -35,11 +37,16 @@ def main() -> int:
     ap.add_argument("--categorie")
     ap.add_argument("--tag")
     ap.add_argument("--galaxie", choices=["dev", "wiki"])
+    ap.add_argument("--status", choices=["actif", "en-eval", "abandonne"],
+                    help="filtre sur status: (critère éliminatoire côté planifier-projet)")
+    ap.add_argument("--maturite",
+                    choices=["production", "beta", "experimental", "deprecated"])
     ap.add_argument("--tag-of", metavar="NOM", help="liste les tags d'une page")
     ap.add_argument(
         "--fields",
-        default="nom,categorie,galaxie,pitch,tags,alternatives,path",
-        help="champs renvoyés (csv)",
+        default="nom,categorie,galaxie,pitch,status,maturite,tags,alternatives,path",
+        help="champs renvoyés (csv) — status/maturite inclus par défaut : ce sont "
+             "des critères éliminatoires, les masquer ferait filtrer à l'aveugle",
     )
     args = ap.parse_args()
 
@@ -66,6 +73,10 @@ def main() -> int:
         if args.categorie and p.get("categorie") != args.categorie:
             return False
         if args.tag and args.tag not in (p.get("tags") or []):
+            return False
+        if args.status and p.get("status") != args.status:
+            return False
+        if args.maturite and p.get("maturite") != args.maturite:
             return False
         if args.name:
             wanted = args.name.lower()

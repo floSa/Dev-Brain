@@ -2660,7 +2660,9 @@
         "[[Dev/Outils/freebuff|freebuff]]",
         "[[Dev/Outils/t3code|t3code]]",
         "[[Dev/Outils/pi|pi]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Archify.md",
@@ -2687,7 +2689,9 @@
         "[[Dev/Outils/draw.io|draw.io]]",
         "[[Dev/Outils/Excalidraw|Excalidraw]]",
         "[[Dev/Outils/FossFLOW|FossFLOW]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/BMAD.md",
@@ -2713,7 +2717,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Spec Kit|Spec Kit]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Bruno.md",
@@ -2736,7 +2742,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Postman|Postman]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Claude Video.md",
@@ -2757,7 +2765,9 @@
         "speech",
         "context-engineering"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Cline.md",
@@ -2785,7 +2795,9 @@
         "[[Dev/Outils/freebuff|freebuff]]",
         "[[Dev/Outils/t3code|t3code]]",
         "[[Dev/Outils/pi|pi]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Continue.md",
@@ -2814,7 +2826,9 @@
         "[[Dev/Outils/freebuff|freebuff]]",
         "[[Dev/Outils/t3code|t3code]]",
         "[[Dev/Outils/pi|pi]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/DBeaver.md",
@@ -2841,7 +2855,9 @@
         "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]",
         "[[Dev/Outils/MongoDB Compass|MongoDB Compass]]",
         "[[Dev/Outils/Redis Insight|Redis Insight]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/DataGrip.md",
@@ -2864,7 +2880,9 @@
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]",
         "[[Dev/Outils/HeidiSQL|HeidiSQL]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Excalidraw.md",
@@ -2884,7 +2902,9 @@
       "alternatives": [
         "[[Dev/Outils/draw.io|draw.io]]",
         "[[Dev/Outils/Archify|Archify]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Figma.md",
@@ -2902,7 +2922,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Penpot|Penpot]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/FossFLOW.md",
@@ -2923,7 +2945,9 @@
       "alternatives": [
         "[[Dev/Outils/draw.io|draw.io]]",
         "[[Dev/Outils/Archify|Archify]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Graphify.md",
@@ -2947,7 +2971,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/ai-memory|ai-memory]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/HeidiSQL.md",
@@ -2970,7 +2996,9 @@
         "[[Dev/Outils/DBeaver|DBeaver]]",
         "[[Dev/Outils/DataGrip|DataGrip]]",
         "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Maka.md",
@@ -2996,7 +3024,9 @@
       "alternatives": [
         "[[Dev/Services/OpenHands|OpenHands]]",
         "[[Dev/Outils/t3code|t3code]]"
-      ]
+      ],
+      "status": "en-eval",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Mermaid.md",
@@ -3018,7 +3048,9 @@
       "alternatives": [
         "[[Dev/Outils/draw.io|draw.io]]",
         "[[Dev/Outils/Archify|Archify]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/MongoDB Compass.md",
@@ -3041,7 +3073,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/MySQL Workbench.md",
@@ -3064,7 +3098,9 @@
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]",
         "[[Dev/Outils/HeidiSQL|HeidiSQL]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/OpenCut.md",
@@ -3082,7 +3118,9 @@
         "video-editing",
         "privacy"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Page to Markdown.md",
@@ -3104,7 +3142,9 @@
         "note-taking",
         "privacy"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Penpot.md",
@@ -3122,7 +3162,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Figma|Figma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Postman.md",
@@ -3143,7 +3185,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Bruno|Bruno]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Redis Insight.md",
@@ -3166,7 +3210,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/SmartTube.md",
@@ -3185,7 +3231,9 @@
         "media-player",
         "privacy"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Sniffnet.md",
@@ -3205,7 +3253,9 @@
         "networking",
         "traffic-analysis"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Spec Kit.md",
@@ -3232,7 +3282,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/BMAD|BMAD]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/Superwhisper.md",
@@ -3252,7 +3304,9 @@
         "multimodal",
         "local-llm"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/ai-memory.md",
@@ -3277,7 +3331,9 @@
       "alternatives": [
         "[[Dev/Outils/Graphify|Graphify]]",
         "[[Dev/Services/OpenViking|OpenViking]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/croc.md",
@@ -3300,7 +3356,9 @@
         "cli",
         "self-hosted"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/draw.io.md",
@@ -3323,7 +3381,9 @@
         "[[Dev/Outils/Mermaid|Mermaid]]",
         "[[Dev/Outils/FossFLOW|FossFLOW]]",
         "[[Dev/Outils/Archify|Archify]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/freebuff.md",
@@ -3351,7 +3411,9 @@
         "[[Dev/Outils/Cline|Cline]]",
         "[[Dev/Outils/Continue|Continue]]",
         "[[Dev/Outils/pi|pi]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/i-have-adhd.md",
@@ -3373,7 +3435,9 @@
         "code-assistant",
         "agents"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/llmfit.md",
@@ -3396,7 +3460,9 @@
         "benchmark",
         "terminal-ui"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/osint4all.md",
@@ -3415,7 +3481,9 @@
       "tags": [
         "osint"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "abandonne",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/pgAdmin.md",
@@ -3438,7 +3506,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/pi.md",
@@ -3467,7 +3537,9 @@
         "[[Dev/Outils/Cline|Cline]]",
         "[[Dev/Outils/Continue|Continue]]",
         "[[Dev/Outils/freebuff|freebuff]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/public-apis.md",
@@ -3485,7 +3557,9 @@
       ],
       "pitch": "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.",
       "tags": [],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/swarm-forge.md",
@@ -3511,7 +3585,9 @@
       "alternatives": [
         "[[Dev/Services/CrewAI|CrewAI]]",
         "[[Dev/Services/AutoGen|AutoGen]]"
-      ]
+      ],
+      "status": "en-eval",
+      "maturite": null
     },
     {
       "path": "Dev/Outils/t3code.md",
@@ -3538,7 +3614,9 @@
         "[[Dev/Outils/Aider|Aider]]",
         "[[Dev/Outils/Continue|Continue]]",
         "[[Dev/Outils/Maka|Maka]]"
-      ]
+      ],
+      "status": "en-eval",
+      "maturite": null
     },
     {
       "path": "Dev/Patterns/Pattern - Agent sur LLM auto-hébergé.md",
@@ -3556,7 +3634,9 @@
         "local-llm",
         "tool-use"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Patterns/Pattern - Moteur de jeu pur + IA séparée.md",
@@ -3574,7 +3654,9 @@
         "game-theory",
         "planning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Patterns/Pattern - Pipeline scraping → matching → optimisation.md",
@@ -3593,7 +3675,9 @@
         "linear-programming",
         "data-pipeline"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Patterns/Pattern - RAG structuré graphe + human-in-the-loop.md",
@@ -3612,7 +3696,9 @@
         "human-in-the-loop",
         "agents"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Patterns/Pattern - Stack démo ML locale multi-services.md",
@@ -3630,7 +3716,9 @@
         "container",
         "object-storage"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Rules/Rule - Config typée.md",
@@ -3647,7 +3735,9 @@
         "data-validation",
         "type-hints"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Rules/Rule - Packaging démo.md",
@@ -3664,7 +3754,9 @@
         "ci-cd",
         "reproducibility"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Rules/Rule - Qualité stricte.md",
@@ -3682,7 +3774,9 @@
         "testing",
         "ci-cd"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Rules/Rule - Structure de projet.md",
@@ -3697,7 +3791,9 @@
         "rule",
         "reproducibility"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Rules/Rule - Toolchain Python.md",
@@ -3714,7 +3810,9 @@
         "linter",
         "formatter"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Dev/Services/ADBC.md",
@@ -3734,7 +3832,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/connectorx|connectorx]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/AWS S3.md",
@@ -3758,7 +3858,9 @@
         "[[Dev/Services/SeaweedFS|SeaweedFS]]",
         "[[Dev/Services/Garage|Garage]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Acme.md",
@@ -3780,7 +3882,9 @@
         "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
         "[[Dev/Services/TF-Agents|TF-Agents]]",
         "[[Dev/Services/RLax|RLax]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Activepieces.md",
@@ -3804,7 +3908,9 @@
         "[[Dev/Services/Windmill|Windmill]]",
         "[[Dev/Services/Zapier|Zapier]]",
         "[[Dev/Services/gumloop|gumloop]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Agno.md",
@@ -3832,7 +3938,9 @@
         "[[Dev/Services/smolagents|smolagents]]",
         "[[Dev/Services/Letta|Letta]]",
         "[[Dev/Services/PraisonAI|PraisonAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Aim.md",
@@ -3856,7 +3964,9 @@
         "[[Dev/Services/Neptune|Neptune]]",
         "[[Dev/Services/Comet|Comet]]",
         "[[Dev/Services/ClearML|ClearML]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Airflow.md",
@@ -3881,7 +3991,9 @@
         "[[Dev/Services/Mage|Mage]]",
         "[[Dev/Services/Kestra|Kestra]]",
         "[[Dev/Services/Temporal|Temporal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Alembic.md",
@@ -3901,7 +4013,9 @@
       "alternatives": [
         "[[Dev/Services/Flyway|Flyway]]",
         "[[Dev/Services/Liquibase|Liquibase]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Annoy.md",
@@ -3925,7 +4039,9 @@
         "[[Dev/Services/Faiss|Faiss]]",
         "[[Dev/Services/ScaNN|ScaNN]]",
         "[[Dev/Services/Chroma|Chroma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Apache Cassandra.md",
@@ -3947,7 +4063,9 @@
       "alternatives": [
         "[[Dev/Services/MongoDB|MongoDB]]",
         "[[Dev/Services/Redis|Redis]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Apache Iceberg.md",
@@ -3966,7 +4084,9 @@
         "olap",
         "schema-evolution"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ArviZ.md",
@@ -3984,7 +4104,9 @@
         "bayesian",
         "monte-carlo"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/AutoGen.md",
@@ -4012,7 +4134,9 @@
         "[[Dev/Services/Letta|Letta]]",
         "[[Dev/Outils/swarm-forge|swarm-forge]]",
         "[[Dev/Services/PraisonAI|PraisonAI]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/Avro.md",
@@ -4033,7 +4157,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Parquet|Parquet]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Axolotl.md",
@@ -4059,7 +4185,9 @@
         "[[Dev/Services/Unsloth|Unsloth]]",
         "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
         "[[Dev/Services/Tunix|Tunix]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/BentoML.md",
@@ -4084,7 +4212,9 @@
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Beszel.md",
@@ -4105,7 +4235,9 @@
         "dashboard",
         "container"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Captum.md",
@@ -4127,7 +4259,9 @@
         "[[Dev/Services/SHAP|SHAP]]",
         "[[Dev/Services/interpreto|interpreto]]",
         "[[Dev/Services/nnsight|nnsight]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/CatBoost.md",
@@ -4151,7 +4285,9 @@
         "[[Dev/Services/XGBoost|XGBoost]]",
         "[[Dev/Services/LightGBM|LightGBM]]",
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/CausalImpact.md",
@@ -4171,7 +4307,9 @@
         "bayesian",
         "timeseries"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ceph.md",
@@ -4197,7 +4335,9 @@
         "[[Dev/Services/Garage|Garage]]",
         "[[Dev/Services/AWS S3|AWS S3]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Chroma.md",
@@ -4222,7 +4362,9 @@
         "[[Dev/Services/hnswlib|hnswlib]]",
         "[[Dev/Services/Annoy|Annoy]]",
         "[[Dev/Services/ScaNN|ScaNN]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Chronos.md",
@@ -4248,7 +4390,9 @@
       "alternatives": [
         "[[Dev/Services/darts|darts]]",
         "[[Dev/Services/Prophet|Prophet]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ClearML.md",
@@ -4274,7 +4418,9 @@
         "[[Dev/Services/Neptune|Neptune]]",
         "[[Dev/Services/Comet|Comet]]",
         "[[Dev/Services/Aim|Aim]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ClickHouse.md",
@@ -4294,7 +4440,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/DuckDB|DuckDB]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Cloudflare R2.md",
@@ -4318,7 +4466,9 @@
         "[[Dev/Services/Ceph|Ceph]]",
         "[[Dev/Services/SeaweedFS|SeaweedFS]]",
         "[[Dev/Services/Garage|Garage]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/CockroachDB.md",
@@ -4343,7 +4493,9 @@
         "[[Dev/Services/MariaDB|MariaDB]]",
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Comet.md",
@@ -4368,7 +4520,9 @@
         "[[Dev/Services/Neptune|Neptune]]",
         "[[Dev/Services/ClearML|ClearML]]",
         "[[Dev/Services/Aim|Aim]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Crawlee.md",
@@ -4389,7 +4543,9 @@
         "[[Dev/Services/Scrapy|Scrapy]]",
         "[[Dev/Services/Scrapling|Scrapling]]",
         "[[Dev/Services/Playwright|Playwright]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/CrewAI.md",
@@ -4417,7 +4573,9 @@
         "[[Dev/Services/Letta|Letta]]",
         "[[Dev/Outils/swarm-forge|swarm-forge]]",
         "[[Dev/Services/PraisonAI|PraisonAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/CuPy.md",
@@ -4436,7 +4594,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/numpy|numpy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/DB-GPT.md",
@@ -4462,7 +4622,9 @@
       "alternatives": [
         "[[Dev/Services/Vanna|Vanna]]",
         "[[Dev/Services/WrenAI|WrenAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/DSPy.md",
@@ -4486,7 +4648,9 @@
         "[[Dev/Services/LangChain|LangChain]]",
         "[[Dev/Services/LlamaIndex|LlamaIndex]]",
         "[[Dev/Services/Haystack|Haystack]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Dagster.md",
@@ -4509,7 +4673,9 @@
         "[[Dev/Services/Mage|Mage]]",
         "[[Dev/Services/Kestra|Kestra]]",
         "[[Dev/Services/Temporal|Temporal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Dash.md",
@@ -4532,7 +4698,9 @@
         "[[Dev/Services/Streamlit|Streamlit]]",
         "[[Dev/Services/Shiny for Python|Shiny for Python]]",
         "[[Dev/Services/Gradio|Gradio]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Dask.md",
@@ -4559,7 +4727,9 @@
         "[[Dev/Services/Modin|Modin]]",
         "[[Dev/Services/Spark|Spark]]",
         "[[Dev/Services/Ray|Ray]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Daytona.md",
@@ -4583,7 +4753,9 @@
       "alternatives": [
         "[[Dev/Services/E2B|E2B]]",
         "[[Dev/Services/Modal|Modal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/DeepEval.md",
@@ -4607,7 +4779,9 @@
         "[[Dev/Services/Ragas|Ragas]]",
         "[[Dev/Services/TruLens|TruLens]]",
         "[[Dev/Services/promptfoo|promptfoo]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/DeepSpeed.md",
@@ -4633,7 +4807,9 @@
       "alternatives": [
         "[[Dev/Services/accelerate|accelerate]]",
         "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Detectron2.md",
@@ -4659,7 +4835,9 @@
       "alternatives": [
         "[[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]]",
         "[[Dev/Services/segment-anything|segment-anything]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Dify.md",
@@ -4683,7 +4861,9 @@
       "alternatives": [
         "[[Dev/Services/Langflow|Langflow]]",
         "[[Dev/Services/Flowise|Flowise]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Docker.md",
@@ -4699,7 +4879,9 @@
       "tags": [
         "container"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Docling.md",
@@ -4725,7 +4907,9 @@
         "[[Dev/Services/Marker|Marker]]",
         "[[Dev/Services/pdf-inspector|pdf-inspector]]",
         "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/DuckDB.md",
@@ -4745,7 +4929,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/ClickHouse|ClickHouse]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/E2B.md",
@@ -4770,7 +4956,9 @@
       "alternatives": [
         "[[Dev/Services/Modal|Modal]]",
         "[[Dev/Services/Daytona|Daytona]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Elasticsearch.md",
@@ -4793,7 +4981,9 @@
         "[[Dev/Services/Vespa|Vespa]]",
         "[[Dev/Services/txtai|txtai]]",
         "[[Dev/Services/Marqo|Marqo]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Evidently.md",
@@ -4814,7 +5004,9 @@
         "concept-drift",
         "model-evaluation"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Faiss.md",
@@ -4840,7 +5032,9 @@
         "[[Dev/Services/Annoy|Annoy]]",
         "[[Dev/Services/ScaNN|ScaNN]]",
         "[[Dev/Services/Chroma|Chroma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Faker.md",
@@ -4861,7 +5055,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Mimesis|Mimesis]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Fanalysis.md",
@@ -4881,7 +5077,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Prince|Prince]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/FastAPI.md",
@@ -4900,7 +5098,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Flask|Flask]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Feast.md",
@@ -4916,7 +5116,9 @@
       "tags": [
         "feature-store"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Featuretools.md",
@@ -4936,7 +5138,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Firecrawl.md",
@@ -4955,7 +5159,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Maxun|Maxun]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Flask.md",
@@ -4973,7 +5179,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/FastAPI|FastAPI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Flink.md",
@@ -4991,7 +5199,9 @@
         "streaming",
         "distributed"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Flowise.md",
@@ -5014,7 +5224,9 @@
       "alternatives": [
         "[[Dev/Services/Langflow|Langflow]]",
         "[[Dev/Services/Dify|Dify]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Flyte.md",
@@ -5036,7 +5248,9 @@
       "alternatives": [
         "[[Dev/Services/ZenML|ZenML]]",
         "[[Dev/Services/Metaflow|Metaflow]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Flyway.md",
@@ -5056,7 +5270,9 @@
       "alternatives": [
         "[[Dev/Services/Liquibase|Liquibase]]",
         "[[Dev/Services/Alembic|Alembic]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/GLiNER.md",
@@ -5077,7 +5293,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/spaCy|spaCy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Garage.md",
@@ -5100,7 +5318,9 @@
         "[[Dev/Services/Ceph|Ceph]]",
         "[[Dev/Services/AWS S3|AWS S3]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/GitHub Actions.md",
@@ -5118,7 +5338,9 @@
       "tags": [
         "ci-cd"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Gradio.md",
@@ -5139,7 +5361,9 @@
         "[[Dev/Services/Streamlit|Streamlit]]",
         "[[Dev/Services/Dash|Dash]]",
         "[[Dev/Services/Shiny for Python|Shiny for Python]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Grafana.md",
@@ -5158,7 +5382,9 @@
         "dashboard",
         "dataviz"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Guidance.md",
@@ -5179,7 +5405,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Outlines|Outlines]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Gymnasium.md",
@@ -5200,7 +5428,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/OpenSpiel|OpenSpiel]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/HTMX.md",
@@ -5216,7 +5446,9 @@
       "tags": [
         "hypermedia"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Haystack.md",
@@ -5242,7 +5474,9 @@
         "[[Dev/Services/LangChain|LangChain]]",
         "[[Dev/Services/LlamaIndex|LlamaIndex]]",
         "[[Dev/Services/DSPy|DSPy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Headroom.md",
@@ -5264,7 +5498,9 @@
         "caching",
         "mcp"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Helicone.md",
@@ -5287,7 +5523,9 @@
         "[[Dev/Services/Langfuse|Langfuse]]",
         "[[Dev/Services/LangSmith|LangSmith]]",
         "[[Dev/Services/Phoenix Arize|Phoenix Arize]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Hermes Agent.md",
@@ -5311,7 +5549,9 @@
         "[[Dev/Services/OpenClaw|OpenClaw]]",
         "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]",
         "[[Dev/Services/OpenViking|OpenViking]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/HuggingFace.md",
@@ -5336,7 +5576,9 @@
         "deep-learning",
         "embeddings"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Hyperopt.md",
@@ -5359,7 +5601,9 @@
       "alternatives": [
         "[[Dev/Services/Optuna|Optuna]]",
         "[[Dev/Services/Ray Tune|Ray Tune]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/InfluxDB.md",
@@ -5378,7 +5622,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/TimescaleDB|TimescaleDB]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Instructor.md",
@@ -5400,7 +5646,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/PydanticAI|PydanticAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/JAX.md",
@@ -5424,7 +5672,9 @@
       "alternatives": [
         "[[Dev/Services/PyTorch|PyTorch]]",
         "[[Dev/Services/TensorFlow|TensorFlow]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Jinja2.md",
@@ -5441,7 +5691,9 @@
       "tags": [
         "templating"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/KServe.md",
@@ -5467,7 +5719,9 @@
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Keras.md",
@@ -5489,7 +5743,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Kestra.md",
@@ -5513,7 +5769,9 @@
         "[[Dev/Services/Prefect|Prefect]]",
         "[[Dev/Services/Mage|Mage]]",
         "[[Dev/Services/Temporal|Temporal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Kornia.md",
@@ -5538,7 +5796,9 @@
         "[[Dev/Services/albumentations|albumentations]]",
         "[[Dev/Services/torchvision|torchvision]]",
         "[[Dev/Services/OpenCV|OpenCV]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LIME.md",
@@ -5559,7 +5819,9 @@
       "alternatives": [
         "[[Dev/Services/SHAP|SHAP]]",
         "[[Dev/Services/interpreto|interpreto]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/LLaMA-Factory.md",
@@ -5588,7 +5850,9 @@
         "[[Dev/Services/Unsloth|Unsloth]]",
         "[[Dev/Services/Axolotl|Axolotl]]",
         "[[Dev/Services/Tunix|Tunix]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LM Studio Bionic.md",
@@ -5614,7 +5878,9 @@
       "alternatives": [
         "[[Dev/Services/OpenClaw|OpenClaw]]",
         "[[Dev/Services/Hermes Agent|Hermes Agent]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LM Studio.md",
@@ -5644,7 +5910,9 @@
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LanceDB.md",
@@ -5666,7 +5934,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Chroma|Chroma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LangChain SQL agent.md",
@@ -5691,7 +5961,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LangChain.md",
@@ -5717,7 +5989,9 @@
         "[[Dev/Services/DSPy|DSPy]]",
         "[[Dev/Services/Semantic Kernel|Semantic Kernel]]",
         "[[Dev/Services/PydanticAI|PydanticAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LangGraph.md",
@@ -5736,7 +6010,9 @@
         "agents",
         "tool-use"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LangSmith.md",
@@ -5759,7 +6035,9 @@
         "[[Dev/Services/Langfuse|Langfuse]]",
         "[[Dev/Services/Phoenix Arize|Phoenix Arize]]",
         "[[Dev/Services/Helicone|Helicone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Langflow.md",
@@ -5782,7 +6060,9 @@
       "alternatives": [
         "[[Dev/Services/Dify|Dify]]",
         "[[Dev/Services/Flowise|Flowise]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Langfuse.md",
@@ -5805,7 +6085,9 @@
         "[[Dev/Services/LangSmith|LangSmith]]",
         "[[Dev/Services/Phoenix Arize|Phoenix Arize]]",
         "[[Dev/Services/Helicone|Helicone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Letta.md",
@@ -5832,7 +6114,9 @@
         "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
         "[[Dev/Services/smolagents|smolagents]]",
         "[[Dev/Services/OpenViking|OpenViking]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LightGBM.md",
@@ -5858,7 +6142,9 @@
         "[[Dev/Services/XGBoost|XGBoost]]",
         "[[Dev/Services/CatBoost|CatBoost]]",
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Liquibase.md",
@@ -5878,7 +6164,9 @@
       "alternatives": [
         "[[Dev/Services/Flyway|Flyway]]",
         "[[Dev/Services/Alembic|Alembic]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LiteLLM.md",
@@ -5900,7 +6188,9 @@
       "alternatives": [
         "[[Dev/Services/OpenRouter|OpenRouter]]",
         "[[Dev/Services/OmniRoute|OmniRoute]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LlamaIndex NLSQLTableQueryEngine.md",
@@ -5925,7 +6215,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/LangChain SQL agent|LangChain SQL agent]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LlamaIndex.md",
@@ -5952,7 +6244,9 @@
         "[[Dev/Services/LangChain|LangChain]]",
         "[[Dev/Services/Haystack|Haystack]]",
         "[[Dev/Services/DSPy|DSPy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/LlamaParse.md",
@@ -5976,7 +6270,9 @@
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/Docling|Docling]]",
         "[[Dev/Services/Marker|Marker]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Loki.md",
@@ -5995,7 +6291,9 @@
         "logging",
         "distributed"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/MLflow.md",
@@ -6019,7 +6317,9 @@
         "[[Dev/Services/ClearML|ClearML]]",
         "[[Dev/Services/Aim|Aim]]",
         "[[Dev/Services/TensorBoard|TensorBoard]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Mage.md",
@@ -6045,7 +6345,9 @@
         "[[Dev/Services/Prefect|Prefect]]",
         "[[Dev/Services/Kestra|Kestra]]",
         "[[Dev/Services/Temporal|Temporal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/MariaDB.md",
@@ -6067,7 +6369,9 @@
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Marimo.md",
@@ -6087,7 +6391,9 @@
       ],
       "alternatives": [
         "jupytext"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Marker.md",
@@ -6115,7 +6421,9 @@
         "[[Dev/Services/LlamaParse|LlamaParse]]",
         "[[Dev/Services/pdf-inspector|pdf-inspector]]",
         "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Marqo.md",
@@ -6139,7 +6447,9 @@
         "[[Dev/Services/Vespa|Vespa]]",
         "[[Dev/Services/txtai|txtai]]",
         "[[Dev/Services/Elasticsearch|Elasticsearch]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/Maxun.md",
@@ -6158,7 +6468,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Firecrawl|Firecrawl]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Metaflow.md",
@@ -6178,7 +6490,9 @@
       "alternatives": [
         "[[Dev/Services/ZenML|ZenML]]",
         "[[Dev/Services/Flyte|Flyte]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Microsoft SQL Server.md",
@@ -6203,7 +6517,9 @@
         "[[Dev/Services/MariaDB|MariaDB]]",
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Milvus.md",
@@ -6226,7 +6542,9 @@
         "[[Dev/Services/Qdrant|Qdrant]]",
         "[[Dev/Services/pgvector|pgvector]]",
         "[[Dev/Services/Pinecone|Pinecone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Mimesis.md",
@@ -6246,7 +6564,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Faker|Faker]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/MinIO.md",
@@ -6269,7 +6589,9 @@
         "[[Dev/Services/Garage|Garage]]",
         "[[Dev/Services/AWS S3|AWS S3]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Modal.md",
@@ -6294,7 +6616,9 @@
       "alternatives": [
         "[[Dev/Services/E2B|E2B]]",
         "[[Dev/Services/Daytona|Daytona]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Modin.md",
@@ -6316,7 +6640,9 @@
         "[[Dev/Services/pandas|pandas]]",
         "[[Dev/Services/Polars|Polars]]",
         "[[Dev/Services/Dask|Dask]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/MongoDB.md",
@@ -6337,7 +6663,9 @@
       "alternatives": [
         "[[Dev/Services/Redis|Redis]]",
         "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/MySQL.md",
@@ -6359,7 +6687,9 @@
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/NLTK.md",
@@ -6380,7 +6710,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/spaCy|spaCy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/NVIDIA Triton.md",
@@ -6407,7 +6739,9 @@
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Nebula Graph.md",
@@ -6428,7 +6762,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Neo4j|Neo4j]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Neo4j.md",
@@ -6448,7 +6784,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Nebula Graph|Nebula Graph]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Neptune.md",
@@ -6473,7 +6811,9 @@
         "[[Dev/Services/Comet|Comet]]",
         "[[Dev/Services/ClearML|ClearML]]",
         "[[Dev/Services/Aim|Aim]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/ONNX Runtime.md",
@@ -6497,7 +6837,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/TensorRT|TensorRT]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ollama.md",
@@ -6526,7 +6868,9 @@
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
         "[[Dev/Services/needle|needle]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OmniRoute.md",
@@ -6549,7 +6893,9 @@
       "alternatives": [
         "[[Dev/Services/LiteLLM|LiteLLM]]",
         "[[Dev/Services/OpenRouter|OpenRouter]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/OpenAI Agents SDK.md",
@@ -6577,7 +6923,9 @@
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]",
         "[[Dev/Services/Letta|Letta]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenCV.md",
@@ -6600,7 +6948,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Kornia|Kornia]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenClaw.md",
@@ -6625,7 +6975,9 @@
       "alternatives": [
         "[[Dev/Services/Hermes Agent|Hermes Agent]]",
         "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenDataLoader PDF.md",
@@ -6654,7 +7006,9 @@
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/Marker|Marker]]",
         "[[Dev/Services/pdf-inspector|pdf-inspector]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenHands.md",
@@ -6677,7 +7031,9 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Maka|Maka]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenMAIC.md",
@@ -6699,7 +7055,9 @@
         "education",
         "self-hosted"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/OpenRouter.md",
@@ -6722,7 +7080,9 @@
       "alternatives": [
         "[[Dev/Services/LiteLLM|LiteLLM]]",
         "[[Dev/Services/OmniRoute|OmniRoute]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenSpiel.md",
@@ -6744,7 +7104,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Gymnasium|Gymnasium]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/OpenViking.md",
@@ -6770,7 +7132,9 @@
         "[[Dev/Services/Letta|Letta]]",
         "[[Dev/Services/Hermes Agent|Hermes Agent]]",
         "[[Dev/Outils/ai-memory|ai-memory]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Optuna.md",
@@ -6793,7 +7157,9 @@
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]",
         "[[Dev/Services/Hyperopt|Hyperopt]]",
         "[[Dev/Services/Ray Tune|Ray Tune]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Outlines.md",
@@ -6814,7 +7180,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Guidance|Guidance]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PaCMAP.md",
@@ -6835,7 +7203,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/umap-learn|umap-learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Parquet.md",
@@ -6856,7 +7226,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Avro|Avro]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Phoenix Arize.md",
@@ -6882,7 +7254,9 @@
         "[[Dev/Services/Langfuse|Langfuse]]",
         "[[Dev/Services/LangSmith|LangSmith]]",
         "[[Dev/Services/Helicone|Helicone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Pinecone.md",
@@ -6905,7 +7279,9 @@
         "[[Dev/Services/Qdrant|Qdrant]]",
         "[[Dev/Services/pgvector|pgvector]]",
         "[[Dev/Services/Milvus|Milvus]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Playwright.md",
@@ -6927,7 +7303,9 @@
         "[[Dev/Services/cloudscraper|cloudscraper]]",
         "[[Dev/Services/Crawlee|Crawlee]]",
         "[[Dev/Services/Scrapling|Scrapling]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Polars.md",
@@ -6951,7 +7329,9 @@
         "[[Dev/Services/pandas|pandas]]",
         "[[Dev/Services/Modin|Modin]]",
         "[[Dev/Services/Dask|Dask]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Postgres.md",
@@ -6976,7 +7356,9 @@
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PraisonAI.md",
@@ -7004,7 +7386,9 @@
         "[[Dev/Services/AutoGen|AutoGen]]",
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Prefect.md",
@@ -7027,7 +7411,9 @@
         "[[Dev/Services/Mage|Mage]]",
         "[[Dev/Services/Kestra|Kestra]]",
         "[[Dev/Services/Temporal|Temporal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Prince.md",
@@ -7047,7 +7433,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Fanalysis|Fanalysis]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Prisma.md",
@@ -7068,7 +7456,9 @@
       "alternatives": [
         "[[Dev/Services/SQLAlchemy|SQLAlchemy]]",
         "[[Dev/Services/SQLModel|SQLModel]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Prophet.md",
@@ -7091,7 +7481,9 @@
         "[[Dev/Services/neuralforecast|neuralforecast]]",
         "[[Dev/Services/darts|darts]]",
         "[[Dev/Services/Chronos|Chronos]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PuLP.md",
@@ -7109,7 +7501,9 @@
         "linear-programming",
         "combinatorial-optimization"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyJWT.md",
@@ -7127,7 +7521,9 @@
         "authentication",
         "cryptography"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyMC.md",
@@ -7150,7 +7546,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Stan|Stan]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyMuPDF.md",
@@ -7172,7 +7570,9 @@
       "alternatives": [
         "[[Dev/Services/pdfplumber|pdfplumber]]",
         "[[Dev/Services/pdf-inspector|pdf-inspector]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyOD.md",
@@ -7192,7 +7592,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/STUMPY|STUMPY]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyTorch Geometric.md",
@@ -7214,7 +7616,9 @@
         "gpu",
         "representation-learning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyTorch Lightning.md",
@@ -7240,7 +7644,9 @@
         "[[Dev/Services/Keras|Keras]]",
         "[[Dev/Services/accelerate|accelerate]]",
         "[[Dev/Services/DeepSpeed|DeepSpeed]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyTorch.md",
@@ -7264,7 +7670,9 @@
       "alternatives": [
         "[[Dev/Services/TensorFlow|TensorFlow]]",
         "[[Dev/Services/JAX|JAX]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PyWavelets.md",
@@ -7285,7 +7693,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/scipy.signal|scipy.signal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Pydantic Settings.md",
@@ -7308,7 +7718,9 @@
         "[[Dev/Services/dynaconf|dynaconf]]",
         "[[Dev/Services/hydra|hydra]]",
         "[[Dev/Services/python-dotenv|python-dotenv]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Pydantic.md",
@@ -7325,7 +7737,9 @@
         "data-validation",
         "type-hints"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/PydanticAI.md",
@@ -7349,7 +7763,9 @@
       "alternatives": [
         "[[Dev/Services/Instructor|Instructor]]",
         "[[Dev/Services/LangChain|LangChain]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Qdrant.md",
@@ -7372,7 +7788,9 @@
         "[[Dev/Services/pgvector|pgvector]]",
         "[[Dev/Services/Milvus|Milvus]]",
         "[[Dev/Services/Pinecone|Pinecone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Quarto.md",
@@ -7389,7 +7807,9 @@
         "notebook",
         "reproducibility"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/RAGatouille.md",
@@ -7408,7 +7828,9 @@
         "rag",
         "nlp"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/RLax.md",
@@ -7430,7 +7852,9 @@
         "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
         "[[Dev/Services/Acme|Acme]]",
         "[[Dev/Services/TF-Agents|TF-Agents]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ragas.md",
@@ -7454,7 +7878,9 @@
         "[[Dev/Services/DeepEval|DeepEval]]",
         "[[Dev/Services/TruLens|TruLens]]",
         "[[Dev/Services/promptfoo|promptfoo]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ray Serve.md",
@@ -7481,7 +7907,9 @@
         "[[Dev/Services/Seldon Core|Seldon Core]]",
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ray Tune.md",
@@ -7504,7 +7932,9 @@
       "alternatives": [
         "[[Dev/Services/Optuna|Optuna]]",
         "[[Dev/Services/Hyperopt|Hyperopt]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ray.md",
@@ -7527,7 +7957,9 @@
       "alternatives": [
         "[[Dev/Services/Dask|Dask]]",
         "[[Dev/Services/Spark|Spark]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Redis.md",
@@ -7548,7 +7980,9 @@
       "alternatives": [
         "[[Dev/Services/MongoDB|MongoDB]]",
         "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Rich.md",
@@ -7564,7 +7998,9 @@
       "tags": [
         "terminal-ui"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/River.md",
@@ -7583,7 +8019,9 @@
         "streaming",
         "concept-drift"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ruff.md",
@@ -7600,7 +8038,9 @@
         "linter",
         "formatter"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SAELens.md",
@@ -7622,7 +8062,9 @@
       "alternatives": [
         "[[Dev/Services/TransformerLens|TransformerLens]]",
         "[[Dev/Services/interpreto|interpreto]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SDV.md",
@@ -7642,7 +8084,9 @@
         "generative-model",
         "gan"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SGLang.md",
@@ -7669,7 +8113,9 @@
         "[[Dev/Services/vLLM|vLLM]]",
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SHAP.md",
@@ -7693,7 +8139,9 @@
         "[[Dev/Services/LIME|LIME]]",
         "[[Dev/Services/interpreto|interpreto]]",
         "[[Dev/Services/Captum|Captum]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SQLAlchemy.md",
@@ -7714,7 +8162,9 @@
       "alternatives": [
         "[[Dev/Services/Prisma|Prisma]]",
         "[[Dev/Services/SQLModel|SQLModel]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SQLModel.md",
@@ -7736,7 +8186,9 @@
       "alternatives": [
         "[[Dev/Services/SQLAlchemy|SQLAlchemy]]",
         "[[Dev/Services/Prisma|Prisma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/SQLite.md",
@@ -7760,7 +8212,9 @@
         "[[Dev/Services/MariaDB|MariaDB]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/STUMPY.md",
@@ -7780,7 +8234,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/PyOD|PyOD]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ScaNN.md",
@@ -7805,7 +8261,9 @@
         "[[Dev/Services/hnswlib|hnswlib]]",
         "[[Dev/Services/Annoy|Annoy]]",
         "[[Dev/Services/Chroma|Chroma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Scikit-Learn.md",
@@ -7834,7 +8292,9 @@
         "[[Dev/Services/Optuna|Optuna]]",
         "[[Dev/Services/hdbscan|hdbscan]]",
         "[[Dev/Services/umap-learn|umap-learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Scrapling.md",
@@ -7854,7 +8314,9 @@
         "[[Dev/Services/Scrapy|Scrapy]]",
         "[[Dev/Services/Crawlee|Crawlee]]",
         "[[Dev/Services/Playwright|Playwright]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Scrapy.md",
@@ -7873,7 +8335,9 @@
       "alternatives": [
         "[[Dev/Services/Crawlee|Crawlee]]",
         "[[Dev/Services/Scrapling|Scrapling]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SeaweedFS.md",
@@ -7898,7 +8362,9 @@
         "[[Dev/Services/Garage|Garage]]",
         "[[Dev/Services/AWS S3|AWS S3]]",
         "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Seldon Core.md",
@@ -7924,7 +8390,9 @@
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Semantic Kernel.md",
@@ -7945,7 +8413,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/LangChain|LangChain]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/SetFit.md",
@@ -7964,7 +8434,9 @@
         "nlp",
         "fine-tuning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Shiny for Python.md",
@@ -7988,7 +8460,9 @@
         "[[Dev/Services/Streamlit|Streamlit]]",
         "[[Dev/Services/Dash|Dash]]",
         "[[Dev/Services/Gradio|Gradio]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Spark.md",
@@ -8013,7 +8487,9 @@
       "alternatives": [
         "[[Dev/Services/Dask|Dask]]",
         "[[Dev/Services/Ray|Ray]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Stable-Baselines3.md",
@@ -8037,7 +8513,9 @@
         "[[Dev/Services/Acme|Acme]]",
         "[[Dev/Services/TF-Agents|TF-Agents]]",
         "[[Dev/Services/RLax|RLax]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Stan.md",
@@ -8060,7 +8538,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/PyMC|PyMC]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Stirling PDF.md",
@@ -8080,7 +8560,9 @@
         "ocr",
         "self-hosted"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Streamlit.md",
@@ -8101,7 +8583,9 @@
         "[[Dev/Services/Dash|Dash]]",
         "[[Dev/Services/Shiny for Python|Shiny for Python]]",
         "[[Dev/Services/Gradio|Gradio]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TF-Agents.md",
@@ -8123,7 +8607,9 @@
         "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
         "[[Dev/Services/Acme|Acme]]",
         "[[Dev/Services/RLax|RLax]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TGI.md",
@@ -8151,7 +8637,9 @@
         "[[Dev/Services/vLLM|vLLM]]",
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TRL.md",
@@ -8181,7 +8669,9 @@
         "[[Dev/Services/Axolotl|Axolotl]]",
         "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
         "[[Dev/Services/Tunix|Tunix]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Temporal.md",
@@ -8206,7 +8696,9 @@
         "[[Dev/Services/Prefect|Prefect]]",
         "[[Dev/Services/Mage|Mage]]",
         "[[Dev/Services/Kestra|Kestra]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TensorBoard.md",
@@ -8228,7 +8720,9 @@
       "alternatives": [
         "[[Dev/Services/MLflow|MLflow]]",
         "[[Dev/Services/Weights & Biases|Weights & Biases]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TensorFlow Serving.md",
@@ -8255,7 +8749,9 @@
         "[[Dev/Services/Seldon Core|Seldon Core]]",
         "[[Dev/Services/TorchServe|TorchServe]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TensorFlow.md",
@@ -8279,7 +8775,9 @@
       "alternatives": [
         "[[Dev/Services/PyTorch|PyTorch]]",
         "[[Dev/Services/JAX|JAX]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TensorRT-LLM.md",
@@ -8309,7 +8807,9 @@
         "[[Dev/Services/vLLM|vLLM]]",
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TensorRT.md",
@@ -8334,7 +8834,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/ONNX Runtime|ONNX Runtime]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TimescaleDB.md",
@@ -8354,7 +8856,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/InfluxDB|InfluxDB]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TorchServe.md",
@@ -8380,7 +8884,9 @@
         "[[Dev/Services/Seldon Core|Seldon Core]]",
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/TransformerLens.md",
@@ -8402,7 +8908,9 @@
       "alternatives": [
         "[[Dev/Services/nnsight|nnsight]]",
         "[[Dev/Services/SAELens|SAELens]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/TruLens.md",
@@ -8427,7 +8935,9 @@
         "[[Dev/Services/Ragas|Ragas]]",
         "[[Dev/Services/DeepEval|DeepEval]]",
         "[[Dev/Services/promptfoo|promptfoo]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Tunix.md",
@@ -8453,7 +8963,9 @@
         "[[Dev/Services/Unsloth|Unsloth]]",
         "[[Dev/Services/Axolotl|Axolotl]]",
         "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/Typer.md",
@@ -8470,7 +8982,9 @@
         "cli",
         "type-hints"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Ultralytics YOLO.md",
@@ -8498,7 +9012,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Detectron2|Detectron2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Unsloth.md",
@@ -8525,7 +9041,9 @@
         "[[Dev/Services/Axolotl|Axolotl]]",
         "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
         "[[Dev/Services/Tunix|Tunix]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Unstructured.md",
@@ -8549,7 +9067,9 @@
         "[[Dev/Services/LlamaParse|LlamaParse]]",
         "[[Dev/Services/Marker|Marker]]",
         "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Uvicorn.md",
@@ -8565,7 +9085,9 @@
       "tags": [
         "web-framework"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Vanna.md",
@@ -8590,7 +9112,9 @@
       "alternatives": [
         "[[Dev/Services/WrenAI|WrenAI]]",
         "[[Dev/Services/DB-GPT|DB-GPT]]"
-      ]
+      ],
+      "status": "abandonne",
+      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/Vespa.md",
@@ -8616,7 +9140,9 @@
         "[[Dev/Services/Elasticsearch|Elasticsearch]]",
         "[[Dev/Services/txtai|txtai]]",
         "[[Dev/Services/Marqo|Marqo]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Weaviate.md",
@@ -8639,7 +9165,9 @@
         "[[Dev/Services/pgvector|pgvector]]",
         "[[Dev/Services/Milvus|Milvus]]",
         "[[Dev/Services/Pinecone|Pinecone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Web-Check.md",
@@ -8659,7 +9187,9 @@
         "osint",
         "self-hosted"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Weights & Biases.md",
@@ -8684,7 +9214,9 @@
         "[[Dev/Services/ClearML|ClearML]]",
         "[[Dev/Services/Aim|Aim]]",
         "[[Dev/Services/TensorBoard|TensorBoard]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Windmill.md",
@@ -8708,7 +9240,9 @@
         "[[Dev/Services/Activepieces|Activepieces]]",
         "[[Dev/Services/Zapier|Zapier]]",
         "[[Dev/Services/gumloop|gumloop]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/WrenAI.md",
@@ -8733,7 +9267,9 @@
       "alternatives": [
         "[[Dev/Services/Vanna|Vanna]]",
         "[[Dev/Services/DB-GPT|DB-GPT]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/XGBoost.md",
@@ -8758,7 +9294,9 @@
         "[[Dev/Services/LightGBM|LightGBM]]",
         "[[Dev/Services/CatBoost|CatBoost]]",
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/Zapier.md",
@@ -8781,7 +9319,9 @@
         "[[Dev/Services/Activepieces|Activepieces]]",
         "[[Dev/Services/Windmill|Windmill]]",
         "[[Dev/Services/gumloop|gumloop]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ZenML.md",
@@ -8801,7 +9341,9 @@
       "alternatives": [
         "[[Dev/Services/Metaflow|Metaflow]]",
         "[[Dev/Services/Flyte|Flyte]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/accelerate.md",
@@ -8825,7 +9367,9 @@
       "alternatives": [
         "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]",
         "[[Dev/Services/DeepSpeed|DeepSpeed]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/albumentations.md",
@@ -8849,7 +9393,9 @@
       "alternatives": [
         "[[Dev/Services/torchvision|torchvision]]",
         "[[Dev/Services/Kornia|Kornia]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/altair.md",
@@ -8871,7 +9417,9 @@
       "alternatives": [
         "[[Dev/Services/plotly|plotly]]",
         "[[Dev/Services/bokeh|bokeh]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/bm25s.md",
@@ -8892,7 +9440,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/rank-bm25|rank-bm25]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/bokeh.md",
@@ -8910,7 +9460,9 @@
       "alternatives": [
         "[[Dev/Services/plotly|plotly]]",
         "[[Dev/Services/altair|altair]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/category_encoders.md",
@@ -8930,7 +9482,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/cloudscraper.md",
@@ -8949,7 +9503,9 @@
       "alternatives": [
         "[[Dev/Services/curl_cffi|curl_cffi]]",
         "[[Dev/Services/Playwright|Playwright]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/connectorx.md",
@@ -8969,7 +9525,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/ADBC|ADBC]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/curl_cffi.md",
@@ -8988,7 +9546,9 @@
       "alternatives": [
         "[[Dev/Services/cloudscraper|cloudscraper]]",
         "[[Dev/Services/Playwright|Playwright]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/darts.md",
@@ -9013,7 +9573,9 @@
         "[[Dev/Services/neuralforecast|neuralforecast]]",
         "[[Dev/Services/pmdarima|pmdarima]]",
         "[[Dev/Services/Chronos|Chronos]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/datasets.md",
@@ -9034,7 +9596,9 @@
         "nlp",
         "deep-learning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/docTR.md",
@@ -9057,7 +9621,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/dynaconf.md",
@@ -9077,7 +9643,9 @@
         "[[Dev/Services/hydra|hydra]]",
         "[[Dev/Services/python-dotenv|python-dotenv]]",
         "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/evaluate.md",
@@ -9097,7 +9665,9 @@
         "nlp",
         "benchmark"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/fastmcp.md",
@@ -9115,7 +9685,9 @@
         "tool-use",
         "agents"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/gumloop.md",
@@ -9139,7 +9711,9 @@
         "[[Dev/Services/Activepieces|Activepieces]]",
         "[[Dev/Services/Windmill|Windmill]]",
         "[[Dev/Services/Zapier|Zapier]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/hdbscan.md",
@@ -9159,7 +9733,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/hnswlib.md",
@@ -9184,7 +9760,9 @@
         "[[Dev/Services/Annoy|Annoy]]",
         "[[Dev/Services/ScaNN|ScaNN]]",
         "[[Dev/Services/Chroma|Chroma]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/hydra.md",
@@ -9205,7 +9783,9 @@
         "[[Dev/Services/dynaconf|dynaconf]]",
         "[[Dev/Services/python-dotenv|python-dotenv]]",
         "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/imbalanced-learn.md",
@@ -9225,7 +9805,9 @@
         "classification",
         "supervised"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/interpreto.md",
@@ -9249,7 +9831,9 @@
         "[[Dev/Services/LIME|LIME]]",
         "[[Dev/Services/Captum|Captum]]",
         "[[Dev/Services/SAELens|SAELens]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "experimental"
     },
     {
       "path": "Dev/Services/jupysql.md",
@@ -9267,7 +9851,9 @@
         "notebook",
         "dataframe"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/jupytext.md",
@@ -9287,7 +9873,9 @@
       ],
       "alternatives": [
         "Marimo"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/librosa.md",
@@ -9309,7 +9897,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/scipy.signal|scipy.signal]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/lifelines.md",
@@ -9324,7 +9914,9 @@
         "survival-analysis",
         "regression"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/llama.cpp.md",
@@ -9355,7 +9947,9 @@
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
         "[[Dev/Services/needle|needle]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/matplotlib.md",
@@ -9376,7 +9970,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/seaborn|seaborn]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/mcpjam.md",
@@ -9396,7 +9992,9 @@
         "testing",
         "tool-use"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/minim.md",
@@ -9412,7 +10010,9 @@
       "tags": [
         "web-scraping"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/missingno.md",
@@ -9433,7 +10033,9 @@
       "alternatives": [
         "[[Dev/Services/ydata-profiling|ydata-profiling]]",
         "[[Dev/Services/sweetviz|sweetviz]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/n8n.md",
@@ -9457,7 +10059,9 @@
         "[[Dev/Services/Windmill|Windmill]]",
         "[[Dev/Services/Zapier|Zapier]]",
         "[[Dev/Services/gumloop|gumloop]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/needle.md",
@@ -9482,7 +10086,9 @@
       "alternatives": [
         "[[Dev/Services/llama.cpp|llama.cpp]]",
         "[[Dev/Services/Ollama|Ollama]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/neuralforecast.md",
@@ -9505,7 +10111,9 @@
         "[[Dev/Services/statsforecast|statsforecast]]",
         "[[Dev/Services/darts|darts]]",
         "[[Dev/Services/Prophet|Prophet]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/nnsight.md",
@@ -9527,7 +10135,9 @@
       "alternatives": [
         "[[Dev/Services/TransformerLens|TransformerLens]]",
         "[[Dev/Services/Captum|Captum]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/numpy.md",
@@ -9549,7 +10159,9 @@
         "[[Dev/Services/xarray|xarray]]",
         "[[Dev/Services/Dask|Dask]]",
         "[[Dev/Services/CuPy|CuPy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pandas.md",
@@ -9570,7 +10182,9 @@
         "[[Dev/Services/Polars|Polars]]",
         "[[Dev/Services/Modin|Modin]]",
         "[[Dev/Services/Dask|Dask]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/papermill.md",
@@ -9587,7 +10201,9 @@
         "notebook",
         "reproducibility"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pdf-inspector.md",
@@ -9615,7 +10231,9 @@
         "[[Dev/Services/Docling|Docling]]",
         "[[Dev/Services/Marker|Marker]]",
         "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "beta"
     },
     {
       "path": "Dev/Services/pdfplumber.md",
@@ -9637,7 +10255,9 @@
       "alternatives": [
         "[[Dev/Services/PyMuPDF|PyMuPDF]]",
         "[[Dev/Services/pdf-inspector|pdf-inspector]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pgvector.md",
@@ -9661,7 +10281,9 @@
         "[[Dev/Services/Qdrant|Qdrant]]",
         "[[Dev/Services/Milvus|Milvus]]",
         "[[Dev/Services/Pinecone|Pinecone]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pingouin.md",
@@ -9682,7 +10304,9 @@
       "alternatives": [
         "[[Dev/Services/scipy.stats|scipy.stats]]",
         "[[Dev/Services/statsmodels|statsmodels]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pip.md",
@@ -9698,7 +10322,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/uv|uv]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/plotly.md",
@@ -9720,7 +10346,9 @@
       "alternatives": [
         "[[Dev/Services/bokeh|bokeh]]",
         "[[Dev/Services/altair|altair]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pmdarima.md",
@@ -9742,7 +10370,9 @@
       "alternatives": [
         "[[Dev/Services/statsforecast|statsforecast]]",
         "[[Dev/Services/darts|darts]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/promptfoo.md",
@@ -9766,7 +10396,9 @@
         "[[Dev/Services/DeepEval|DeepEval]]",
         "[[Dev/Services/Ragas|Ragas]]",
         "[[Dev/Services/TruLens|TruLens]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/psycopg2.md",
@@ -9785,7 +10417,9 @@
         "relational",
         "db-driver"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pykan.md",
@@ -9802,7 +10436,9 @@
       "tags": [
         "deep-learning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "en-eval",
+      "maturite": "experimental"
     },
     {
       "path": "Dev/Services/pytest.md",
@@ -9818,7 +10454,9 @@
       "tags": [
         "testing"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/python-dotenv.md",
@@ -9839,7 +10477,9 @@
         "[[Dev/Services/dynaconf|dynaconf]]",
         "[[Dev/Services/hydra|hydra]]",
         "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/pytorch-crf.md",
@@ -9859,7 +10499,9 @@
         "ner",
         "deep-learning"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/rank-bm25.md",
@@ -9881,7 +10523,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/bm25s|bm25s]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/scipy.signal.md",
@@ -9905,7 +10549,9 @@
       "alternatives": [
         "[[Dev/Services/PyWavelets|PyWavelets]]",
         "[[Dev/Services/librosa|librosa]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/scipy.stats.md",
@@ -9928,7 +10574,9 @@
       "alternatives": [
         "[[Dev/Services/statsmodels|statsmodels]]",
         "[[Dev/Services/pingouin|pingouin]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/seaborn.md",
@@ -9948,7 +10596,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/matplotlib|matplotlib]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/segment-anything.md",
@@ -9974,7 +10624,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/Detectron2|Detectron2]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/selectolax.md",
@@ -9991,7 +10643,9 @@
         "web-scraping",
         "document-parsing"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/sentence-transformers.md",
@@ -10013,7 +10667,9 @@
         "reranking",
         "nlp"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/sentencepiece.md",
@@ -10032,7 +10688,9 @@
         "tokenization",
         "nlp"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/seqeval.md",
@@ -10051,7 +10709,9 @@
         "model-evaluation",
         "nlp"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/smolagents.md",
@@ -10078,7 +10738,9 @@
         "[[Dev/Services/AutoGen|AutoGen]]",
         "[[Dev/Services/Letta|Letta]]",
         "[[Dev/Services/PraisonAI|PraisonAI]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/spaCy.md",
@@ -10101,7 +10763,9 @@
       "alternatives": [
         "[[Dev/Services/GLiNER|GLiNER]]",
         "[[Dev/Services/NLTK|NLTK]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/statsforecast.md",
@@ -10124,7 +10788,9 @@
         "[[Dev/Services/neuralforecast|neuralforecast]]",
         "[[Dev/Services/darts|darts]]",
         "[[Dev/Services/pmdarima|pmdarima]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/statsmodels.md",
@@ -10144,7 +10810,9 @@
       "alternatives": [
         "[[Dev/Services/scipy.stats|scipy.stats]]",
         "[[Dev/Services/pingouin|pingouin]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/supervision.md",
@@ -10163,7 +10831,9 @@
         "object-tracking",
         "computer-vision"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/sweetviz.md",
@@ -10184,7 +10854,9 @@
       "alternatives": [
         "[[Dev/Services/ydata-profiling|ydata-profiling]]",
         "[[Dev/Services/missingno|missingno]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/testcontainers.md",
@@ -10202,7 +10874,9 @@
         "testing",
         "container"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/text-generation-webui.md",
@@ -10232,7 +10906,9 @@
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/timm.md",
@@ -10258,7 +10934,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/torchvision|torchvision]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/torchvision.md",
@@ -10285,7 +10963,9 @@
         "[[Dev/Services/timm|timm]]",
         "[[Dev/Services/albumentations|albumentations]]",
         "[[Dev/Services/Kornia|Kornia]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/txtai.md",
@@ -10310,7 +10990,9 @@
         "[[Dev/Services/Vespa|Vespa]]",
         "[[Dev/Services/Marqo|Marqo]]",
         "[[Dev/Services/Elasticsearch|Elasticsearch]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/umap-learn.md",
@@ -10332,7 +11014,9 @@
       "alternatives": [
         "[[Dev/Services/Scikit-Learn|Scikit-Learn]]",
         "[[Dev/Services/PaCMAP|PaCMAP]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/uv.md",
@@ -10348,7 +11032,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/pip|pip]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/vLLM.md",
@@ -10375,7 +11061,9 @@
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]",
         "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/xarray.md",
@@ -10395,7 +11083,9 @@
       ],
       "alternatives": [
         "[[Dev/Services/numpy|numpy]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Dev/Services/ydata-profiling.md",
@@ -10417,7 +11107,9 @@
       "alternatives": [
         "[[Dev/Services/sweetviz|sweetviz]]",
         "[[Dev/Services/missingno|missingno]]"
-      ]
+      ],
+      "status": "actif",
+      "maturite": "production"
     },
     {
       "path": "Wiki/Concepts/A priori conjugués.md",
@@ -10440,7 +11132,9 @@
         "bayesian",
         "prior"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/A-B testing.md",
@@ -10465,7 +11159,9 @@
         "ab-testing",
         "hypothesis-testing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/AI security.md",
@@ -10490,7 +11186,9 @@
         "safety",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/ARIMA SARIMA.md",
@@ -10514,7 +11212,9 @@
         "forecasting",
         "timeseries"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Actor-Critic methods.md",
@@ -10539,7 +11239,9 @@
         "policy-gradient",
         "value-function"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/AdaBoost.md",
@@ -10565,7 +11267,9 @@
         "tree-based",
         "classification"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Adam optimizer.md",
@@ -10592,7 +11296,9 @@
         "deep-learning",
         "learning-rate"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Advanced RAG.md",
@@ -10614,7 +11320,9 @@
         "llm",
         "retrieval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Agent evaluation.md",
@@ -10636,7 +11344,9 @@
         "llm-eval",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Agent memory.md",
@@ -10658,7 +11368,9 @@
         "llm",
         "retrieval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Agent patterns.md",
@@ -10680,7 +11392,9 @@
         "llm",
         "tool-use"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Agent skills.md",
@@ -10706,7 +11420,9 @@
         "tool-use",
         "context-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/AlphaZero and self-play.md",
@@ -10733,7 +11449,9 @@
         "deep-learning",
         "reinforcement-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Analyse de puissance.md",
@@ -10755,7 +11473,9 @@
         "hypothesis-testing",
         "effect-size"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Analyse de survie.md",
@@ -10782,7 +11502,9 @@
         "regression",
         "non-parametric"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Analyse discriminante.md",
@@ -10811,7 +11533,9 @@
         "bayesian",
         "linear-model"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Apprentissage auto-supervisé en vision.md",
@@ -10842,7 +11566,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Apprentissage non supervisé.md",
@@ -10863,7 +11589,9 @@
         "unsupervised",
         "clustering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Apprentissage supervisé.md",
@@ -10886,7 +11614,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Arbres de décision.md",
@@ -10910,7 +11640,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Architecture médaillon.md",
@@ -10936,7 +11668,9 @@
         "lakehouse",
         "data-quality"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Architectures CNN.md",
@@ -10961,7 +11695,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Architectures hybrides LLM.md",
@@ -10992,7 +11728,9 @@
         "transformers",
         "inference-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Attention Residuals.md",
@@ -11018,7 +11756,9 @@
         "transformers",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Attention linéaire.md",
@@ -11050,7 +11790,9 @@
         "transformers",
         "inference-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Attribution par gradient.md",
@@ -11079,7 +11821,9 @@
         "explainability",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Augmentation d'images.md",
@@ -11105,7 +11849,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Autocorrelation.md",
@@ -11128,7 +11874,9 @@
         "timeseries",
         "stochastic-process"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Autoencodeurs.md",
@@ -11157,7 +11905,9 @@
         "representation-learning",
         "dimensionality-reduction"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/BM25.md",
@@ -11181,7 +11931,9 @@
         "ranking",
         "search"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Bagging.md",
@@ -11203,7 +11955,9 @@
         "ensemble",
         "bagging"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Bases de données vectorielles.md",
@@ -11227,7 +11981,9 @@
         "semantic-search",
         "rag"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Bases de données.md",
@@ -11257,7 +12013,9 @@
         "vector-db",
         "search"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Bellman equations.md",
@@ -11282,7 +12040,9 @@
         "dynamic-programming",
         "value-function"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Boosting.md",
@@ -11303,7 +12063,9 @@
         "ensemble",
         "boosting"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Bootstrap.md",
@@ -11324,7 +12086,9 @@
         "confidence-interval",
         "non-parametric"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/CA.md",
@@ -11346,7 +12110,9 @@
         "dimensionality-reduction",
         "factor-analysis"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/CNN.md",
@@ -11372,7 +12138,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/CUPED.md",
@@ -11394,7 +12162,9 @@
         "variance-reduction",
         "ab-testing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Calculs adaptatifs.md",
@@ -11427,7 +12197,9 @@
         "mixture-of-experts",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Calibration.md",
@@ -11456,7 +12228,9 @@
         "calibration",
         "classification"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Chain-of-Thought.md",
@@ -11480,7 +12254,9 @@
         "reasoning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Change Data Capture (CDC).md",
@@ -11503,7 +12279,9 @@
         "streaming",
         "data-pipeline"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Chaînes de Markov.md",
@@ -11525,7 +12303,9 @@
         "markov",
         "probability"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Chunking strategies.md",
@@ -11548,7 +12328,9 @@
         "chunking",
         "retrieval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification audio par spectrogramme.md",
@@ -11576,7 +12358,9 @@
         "spectrogram",
         "cnn"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification d'images.md",
@@ -11602,7 +12386,9 @@
         "cnn",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification de texte.md",
@@ -11628,7 +12414,9 @@
         "supervised",
         "class-imbalance"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification hiérarchique (CAH).md",
@@ -11652,7 +12440,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification metrics.md",
@@ -11692,7 +12482,9 @@
         "classification",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Classification.md",
@@ -11715,7 +12507,9 @@
         "classification",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Clustering evaluation.md",
@@ -11745,7 +12539,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Clustering.md",
@@ -11768,7 +12564,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Code and math benchmarks.md",
@@ -11800,7 +12598,9 @@
         "llm-eval",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Compromis biais-variance.md",
@@ -11825,7 +12625,9 @@
         "model-evaluation",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Constrained decoding.md",
@@ -11848,7 +12650,9 @@
         "structured-output",
         "tokenization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Construction de graphes de connaissances.md",
@@ -11873,7 +12677,9 @@
         "ner",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Context engineering.md",
@@ -11895,7 +12701,9 @@
         "llm",
         "agents"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Contrats de données & qualité.md",
@@ -11922,7 +12730,9 @@
         "data-validation",
         "schema-evolution"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Convexity.md",
@@ -11946,7 +12756,9 @@
         "optimization",
         "convexity"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Correction des tests multiples.md",
@@ -11969,7 +12781,9 @@
         "multiple-testing",
         "p-value"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Counterfactual Regret Minimization.md",
@@ -11996,7 +12810,9 @@
         "regret-minimization",
         "self-play"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Cross-entropy.md",
@@ -12024,7 +12840,9 @@
         "cross-entropy",
         "classification"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/DBSCAN.md",
@@ -12044,7 +12862,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Data drift.md",
@@ -12068,7 +12888,9 @@
         "concept-drift",
         "model-monitoring"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Data leakage.md",
@@ -12091,7 +12913,9 @@
         "supervised",
         "data-leakage"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Decoding strategies.md",
@@ -12119,7 +12943,9 @@
         "llm",
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Diff-in-Diff.md",
@@ -12141,7 +12967,9 @@
         "causal-inference",
         "hypothesis-testing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Diffusion models.md",
@@ -12167,7 +12995,9 @@
         "diffusion",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Distillation.md",
@@ -12195,7 +13025,9 @@
         "synthetic-data",
         "fine-tuning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Déploiement de modèles.md",
@@ -12222,7 +13054,9 @@
         "model-serving",
         "inference"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Détection d'objets.md",
@@ -12252,7 +13086,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Détection d'outliers multivariée.md",
@@ -12278,7 +13114,9 @@
         "anomaly-detection",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Détection d'outliers univariée.md",
@@ -12303,7 +13141,9 @@
         "anomaly-detection",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/EDA automatisée & profiling.md",
@@ -12328,7 +13168,9 @@
         "feature-engineering",
         "missing-data"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/ELT vs ETL & idempotence.md",
@@ -12352,7 +13194,9 @@
         "data-pipeline",
         "idempotence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Eigendecomposition.md",
@@ -12378,7 +13222,9 @@
         "matrix-decomposition",
         "eigenvalue"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Encodage des variables catégorielles.md",
@@ -12401,7 +13247,9 @@
       "tags": [
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Ensembling.md",
@@ -12424,7 +13272,9 @@
         "ensemble",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Entraînement distribué.md",
@@ -12457,7 +13307,9 @@
         "gpu",
         "memory-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Estimation MAP.md",
@@ -12480,7 +13332,9 @@
         "point-estimation",
         "prior"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Estimation de pose.md",
@@ -12511,7 +13365,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Explicabilité des modèles.md",
@@ -12538,7 +13394,9 @@
         "explainability",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Exploration vs exploitation.md",
@@ -12563,7 +13421,9 @@
         "reinforcement-learning",
         "multi-armed-bandit"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Exponential smoothing.md",
@@ -12588,7 +13448,9 @@
         "forecasting",
         "timeseries"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Extra Trees.md",
@@ -12615,7 +13477,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/FAMD.md",
@@ -12636,7 +13500,9 @@
         "dimensionality-reduction",
         "factor-analysis"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Feature store — concept.md",
@@ -12661,7 +13527,9 @@
         "feature-store",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Filtrage numérique.md",
@@ -12688,7 +13556,9 @@
         "signal-processing",
         "digital-filter"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Flash Attention and efficient attention.md",
@@ -12723,7 +13593,9 @@
         "gpu",
         "transformers"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Forecasting framing.md",
@@ -12745,7 +13617,9 @@
         "forecasting",
         "timeseries"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Forecasting metrics.md",
@@ -12773,7 +13647,9 @@
         "timeseries",
         "model-evaluation"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Foundation models pour séries temporelles.md",
@@ -12799,7 +13675,9 @@
         "transformers",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Fuzzy matching & similarité de chaînes.md",
@@ -12829,7 +13707,9 @@
         "information-retrieval",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GAM.md",
@@ -12852,7 +13732,9 @@
         "linear-model",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GANs.md",
@@ -12882,7 +13764,9 @@
         "image-generation",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GLM.md",
@@ -12906,7 +13790,9 @@
         "supervised",
         "maximum-likelihood"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GPA.md",
@@ -12927,7 +13813,9 @@
         "factor-analysis",
         "dimensionality-reduction"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GRPO.md",
@@ -12951,7 +13839,9 @@
         "alignment",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Gaussian Mixture Models (GMM).md",
@@ -12975,7 +13865,9 @@
         "unsupervised",
         "maximum-likelihood"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Gaussian Process.md",
@@ -13002,7 +13894,9 @@
         "bayesian",
         "non-parametric"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Generalization bounds.md",
@@ -13026,7 +13920,9 @@
         "learning-theory",
         "generalization-bound"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Gradient Boosting (GBDT).md",
@@ -13052,7 +13948,9 @@
         "ensemble",
         "boosting"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Gradient checkpointing.md",
@@ -13078,7 +13976,9 @@
         "deep-learning",
         "gpu"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Gradient descent.md",
@@ -13103,7 +14003,9 @@
         "optimization",
         "gradient-descent"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Graph Neural Networks.md",
@@ -13131,7 +14033,9 @@
         "deep-learning",
         "representation-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/GraphRAG.md",
@@ -13156,7 +14060,9 @@
         "retrieval",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Guardrails.md",
@@ -13179,7 +14085,9 @@
         "safety",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/HCPC.md",
@@ -13200,7 +14108,9 @@
         "factor-analysis",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/HDBSCAN.md",
@@ -13220,7 +14130,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Harnais d'agent.md",
@@ -13246,7 +14158,9 @@
         "tool-use",
         "context-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Hierarchical forecasting.md",
@@ -13271,7 +14185,9 @@
         "forecasting",
         "timeseries"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Human-in-the-loop.md",
@@ -13296,7 +14212,9 @@
         "reliability",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Hybrid retrieval.md",
@@ -13321,7 +14239,9 @@
         "search",
         "rag"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/ICA.md",
@@ -13346,7 +14266,9 @@
         "factor-analysis",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Image generation.md",
@@ -13375,7 +14297,9 @@
         "diffusion",
         "multimodal"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Imbalanced classification.md",
@@ -13398,7 +14322,9 @@
         "supervised",
         "class-imbalance"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Imitation learning.md",
@@ -13426,7 +14352,9 @@
         "imitation-learning",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Imputation des valeurs manquantes.md",
@@ -13449,7 +14377,9 @@
         "feature-engineering",
         "missing-data"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Index ANN — internes.md",
@@ -13477,7 +14407,9 @@
         "vector-db",
         "embeddings"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Inference optimization.md",
@@ -13506,7 +14438,9 @@
         "llm",
         "gpu"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Inférence bayésienne.md",
@@ -13529,7 +14463,9 @@
         "statistical-inference",
         "prior"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Inférence causale.md",
@@ -13556,7 +14492,9 @@
         "causal-inference",
         "statistical-inference"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Ingénierie des caractéristiques.md",
@@ -13577,7 +14515,9 @@
       "tags": [
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Intermittent demand.md",
@@ -13602,7 +14542,9 @@
         "forecasting",
         "timeseries"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Interprétabilité mécaniste.md",
@@ -13629,7 +14571,9 @@
         "deep-learning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Intervalles de confiance.md",
@@ -13650,7 +14594,9 @@
         "statistical-inference",
         "confidence-interval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Inégalités de concentration.md",
@@ -13672,7 +14618,9 @@
         "probability",
         "concentration"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Isolation Forest.md",
@@ -13696,7 +14644,9 @@
         "tree-based",
         "ensemble"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Jailbreaking and defenses.md",
@@ -13720,7 +14670,9 @@
         "safety",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Jensen-Shannon divergence.md",
@@ -13744,7 +14696,9 @@
         "information-theory",
         "kl-divergence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/K-Means.md",
@@ -13767,7 +14721,9 @@
         "clustering",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/KL divergence.md",
@@ -13792,7 +14748,9 @@
         "information-theory",
         "kl-divergence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Kolmogorov-Arnold Networks.md",
@@ -13813,7 +14771,9 @@
       "tags": [
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LLM benchmarks.md",
@@ -13845,7 +14805,9 @@
         "model-evaluation",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LLM caching.md",
@@ -13871,7 +14833,9 @@
         "semantic-search",
         "in-memory"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LLM eval metrics.md",
@@ -13901,7 +14865,9 @@
         "llm",
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LLM observability.md",
@@ -13929,7 +14895,9 @@
         "tracing",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LLM-as-judge.md",
@@ -13955,7 +14923,9 @@
         "llm-eval",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Late-interaction retrieval.md",
@@ -13984,7 +14954,9 @@
         "information-retrieval",
         "rag"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Learning rate schedules.md",
@@ -14009,7 +14981,9 @@
         "optimization",
         "learning-rate"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/LoRA et QLoRA.md",
@@ -14034,7 +15008,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Local Outlier Factor.md",
@@ -14057,7 +15033,9 @@
         "anomaly-detection",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Loi des grands nombres.md",
@@ -14078,7 +15056,9 @@
         "probability",
         "convergence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Loss landscape and saddle points.md",
@@ -14103,7 +15083,9 @@
         "optimization",
         "loss-landscape"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/MANOVA et tests multivariés.md",
@@ -14130,7 +15112,9 @@
         "multivariate",
         "effect-size"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/MCA.md",
@@ -14151,7 +15135,9 @@
         "dimensionality-reduction",
         "factor-analysis"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/MCMC.md",
@@ -14175,7 +15161,9 @@
         "markov",
         "bayesian"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/MFA.md",
@@ -14196,7 +15184,9 @@
         "dimensionality-reduction",
         "factor-analysis"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Maintenance prédictive et RUL.md",
@@ -14224,7 +15214,9 @@
         "survival-analysis",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Manifold learning.md",
@@ -14251,7 +15243,9 @@
         "manifold",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Markov Decision Process.md",
@@ -14274,7 +15268,9 @@
         "markov-decision-process",
         "markov"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Matrix decompositions.md",
@@ -14296,7 +15292,9 @@
         "linear-algebra",
         "matrix-decomposition"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Matrix products.md",
@@ -14318,7 +15316,9 @@
       "tags": [
         "linear-algebra"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Maximal Update Parametrization.md",
@@ -14349,7 +15349,9 @@
         "optimization",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Maximum de vraisemblance.md",
@@ -14372,7 +15374,9 @@
         "point-estimation",
         "statistical-inference"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Metric learning & ré-identification.md",
@@ -14409,7 +15413,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Migrations de schéma.md",
@@ -14431,7 +15437,9 @@
         "migration",
         "relational"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mise à l'échelle.md",
@@ -14455,7 +15463,9 @@
       "tags": [
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mixed precision.md",
@@ -14487,7 +15497,9 @@
         "gpu",
         "memory-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mixture of Experts.md",
@@ -14519,7 +15531,9 @@
         "deep-learning",
         "scaling-laws"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Model registry & versioning.md",
@@ -14544,7 +15558,9 @@
         "model-registry",
         "experiment-tracking"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Model-based RL.md",
@@ -14569,7 +15585,9 @@
         "model-based-rl",
         "dynamic-programming"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Modèles de fondation vision.md",
@@ -14599,7 +15617,9 @@
         "representation-learning",
         "computer-vision"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Monitoring de modèle en production.md",
@@ -14623,7 +15643,9 @@
         "data-drift",
         "concept-drift"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Monte Carlo Tree Search.md",
@@ -14648,7 +15670,9 @@
         "monte-carlo",
         "model-based-rl"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mouvement brownien.md",
@@ -14669,7 +15693,9 @@
         "stochastic-process",
         "probability"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Multi-Token Prediction.md",
@@ -14696,7 +15722,9 @@
         "inference-optimization",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Multi-agent systems.md",
@@ -14718,7 +15746,9 @@
         "agents",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Multi-armed bandits.md",
@@ -14742,7 +15772,9 @@
         "experimentation",
         "multi-armed-bandit"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Multi-head Latent Attention.md",
@@ -14769,7 +15801,9 @@
         "transformers",
         "gpu"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mutual information.md",
@@ -14793,7 +15827,9 @@
         "information-theory",
         "mutual-information"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Mécanismes de données manquantes.md",
@@ -14819,7 +15855,9 @@
         "missing-data",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Métriques vision.md",
@@ -14849,7 +15887,9 @@
         "segmentation",
         "computer-vision"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/NER et étiquetage de séquence.md",
@@ -14877,7 +15917,9 @@
         "sequence-labeling",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/NMF.md",
@@ -14902,7 +15944,9 @@
         "factor-analysis",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Naive Bayes.md",
@@ -14928,7 +15972,9 @@
         "classification",
         "bayesian"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Newton & quasi-Newton.md",
@@ -14954,7 +16000,9 @@
         "optimization",
         "second-order"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/No Free Lunch theorem.md",
@@ -14978,7 +16026,9 @@
         "learning-theory",
         "no-free-lunch"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Notebooks-as-code.md",
@@ -15004,7 +16054,9 @@
         "reproducibility",
         "version-control"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/OCR.md",
@@ -15038,7 +16090,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/ORM.md",
@@ -15059,7 +16113,9 @@
         "orm",
         "relational"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Offline RL.md",
@@ -15084,7 +16140,9 @@
         "offline-rl",
         "value-function"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Ondelettes.md",
@@ -15109,7 +16167,9 @@
         "signal-processing",
         "wavelet"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/One-Class SVM.md",
@@ -15133,7 +16193,9 @@
         "anomaly-detection",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Optimal transport.md",
@@ -15158,7 +16220,9 @@
         "optimization",
         "optimal-transport"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Optimisation combinatoire.md",
@@ -15187,7 +16251,9 @@
         "combinatorial-optimization",
         "dynamic-programming"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Optimisation d'hyperparamètres.md",
@@ -15213,7 +16279,9 @@
         "model-evaluation",
         "bayesian"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Optimisation sous contrainte.md",
@@ -15241,7 +16309,9 @@
         "constrained-optimization",
         "convexity"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/PAC learning.md",
@@ -15265,7 +16335,9 @@
         "learning-theory",
         "pac-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/PCA.md",
@@ -15287,7 +16359,9 @@
         "factor-analysis",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/PEFT.md",
@@ -15309,7 +16383,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/PGA.md",
@@ -15330,7 +16406,9 @@
         "manifold",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/PPO.md",
@@ -15353,7 +16431,9 @@
         "reinforcement-learning",
         "policy-gradient"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Partitionnement & layout de données.md",
@@ -15381,7 +16461,9 @@
         "lakehouse",
         "olap"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Perceptron et MLP.md",
@@ -15409,7 +16491,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Perplexity.md",
@@ -15431,7 +16515,9 @@
         "model-evaluation",
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Policy gradient.md",
@@ -15456,7 +16542,9 @@
         "reinforcement-learning",
         "policy-gradient"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Positional encoding.md",
@@ -15482,7 +16570,9 @@
         "transformers",
         "attention"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Probing.md",
@@ -15509,7 +16599,9 @@
         "deep-learning",
         "representation-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Processus de Poisson.md",
@@ -15529,7 +16621,9 @@
         "stochastic-process",
         "probability"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Programmation linéaire en nombres entiers (MIP).md",
@@ -15559,7 +16653,9 @@
         "linear-programming",
         "combinatorial-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Projections.md",
@@ -15581,7 +16677,9 @@
         "linear-algebra",
         "projection"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Prompt engineering.md",
@@ -15603,7 +16701,9 @@
         "prompting",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Prompt injection.md",
@@ -15627,7 +16727,9 @@
         "ai-security",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Pruning.md",
@@ -15659,7 +16761,9 @@
         "deep-learning",
         "inference-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Q-learning and DQN.md",
@@ -15685,7 +16789,9 @@
         "temporal-difference",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Quantization.md",
@@ -15723,7 +16829,9 @@
         "deep-learning",
         "inference-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Query transformations.md",
@@ -15751,7 +16859,9 @@
         "retrieval",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/RAG benchmarks.md",
@@ -15784,7 +16894,9 @@
         "retrieval",
         "llm-eval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/RAG eval.md",
@@ -15812,7 +16924,9 @@
         "rag",
         "retrieval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/RAG.md",
@@ -15836,7 +16950,9 @@
         "embeddings",
         "semantic-search"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/RL for LLMs.md",
@@ -15863,7 +16979,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/RLHF and DPO.md",
@@ -15888,7 +17006,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/ROC-AUC & courbe PR.md",
@@ -15916,7 +17036,9 @@
         "classification",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Rademacher complexity.md",
@@ -15939,7 +17061,9 @@
         "learning-theory",
         "rademacher-complexity"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Random Forest.md",
@@ -15964,7 +17088,9 @@
         "ensemble",
         "bagging"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Ranking metrics.md",
@@ -15994,7 +17120,9 @@
         "model-evaluation",
         "ranking"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reasoning models.md",
@@ -16021,7 +17149,9 @@
         "llm",
         "alignment"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Recherche d'information.md",
@@ -16048,7 +17178,9 @@
         "ranking",
         "semantic-search"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Regression metrics.md",
@@ -16079,7 +17211,9 @@
         "regression",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reinforcement learning.md",
@@ -16102,7 +17236,9 @@
         "reinforcement-learning",
         "markov-decision-process"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reliability patterns.md",
@@ -16124,7 +17260,9 @@
         "llm",
         "agents"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Rendu neuronal 3D & estimation de profondeur.md",
@@ -16157,7 +17295,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reranking.md",
@@ -16181,7 +17321,9 @@
         "ranking",
         "rag"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reward modeling.md",
@@ -16207,7 +17349,9 @@
         "reinforcement-learning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Reward shaping and hacking.md",
@@ -16234,7 +17378,9 @@
         "reward-shaping",
         "alignment"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Routing and cascading.md",
@@ -16260,7 +17406,9 @@
         "llm",
         "rag"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Réduction de dimension.md",
@@ -16281,7 +17429,9 @@
         "factor-analysis",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régression et classification multi-sorties.md",
@@ -16310,7 +17460,9 @@
         "multi-output",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régression linéaire.md",
@@ -16333,7 +17485,9 @@
         "linear-model",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régression logistique.md",
@@ -16356,7 +17510,9 @@
         "supervised",
         "maximum-likelihood"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régression quantile.md",
@@ -16383,7 +17539,9 @@
         "linear-model",
         "non-parametric"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régression.md",
@@ -16405,7 +17563,9 @@
         "regression",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Régularisation.md",
@@ -16430,7 +17590,9 @@
         "linear-model",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/SFT.md",
@@ -16453,7 +17615,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/STFT et spectrogramme.md",
@@ -16479,7 +17643,9 @@
         "spectrogram",
         "fourier"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/SVD.md",
@@ -16503,7 +17669,9 @@
         "eigenvalue",
         "dimensionality-reduction"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/SVM.md",
@@ -16530,7 +17698,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Sandboxing de code généré.md",
@@ -16556,7 +17726,9 @@
         "ai-security",
         "container"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Scaling laws.md",
@@ -16582,7 +17754,9 @@
         "llm",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Segment Anything (SAM).md",
@@ -16610,7 +17784,9 @@
         "transformers",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Segmentation.md",
@@ -16638,7 +17814,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Self-attention.md",
@@ -16664,7 +17842,9 @@
         "transformers",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Sequential testing.md",
@@ -16689,7 +17869,9 @@
         "sequential-analysis",
         "hypothesis-testing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Server-Sent Events & streaming LLM.md",
@@ -16715,7 +17897,9 @@
         "llm",
         "web-framework"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Shannon entropy.md",
@@ -16739,7 +17923,9 @@
         "information-theory",
         "entropy"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Small Language Models.md",
@@ -16765,7 +17951,9 @@
         "llm",
         "local-llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Sparse autoencoders.md",
@@ -16794,7 +17982,9 @@
         "llm",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Speculative decoding.md",
@@ -16825,7 +18015,9 @@
         "llm",
         "inference"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Speech models.md",
@@ -16854,7 +18046,9 @@
         "deep-learning",
         "multimodal"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/State Space Models.md",
@@ -16885,7 +18079,9 @@
         "deep-learning",
         "inference-optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Stationarity.md",
@@ -16907,7 +18103,9 @@
         "timeseries",
         "stochastic-process"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Stream processing.md",
@@ -16933,7 +18131,9 @@
         "data-pipeline",
         "idempotence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Structured outputs.md",
@@ -16956,7 +18156,9 @@
         "tool-use",
         "data-validation"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Suivi d'objets.md",
@@ -16989,7 +18191,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Superposition.md",
@@ -17014,7 +18218,9 @@
         "deep-learning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Synthetic data generation.md",
@@ -17040,7 +18246,9 @@
         "fine-tuning",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Systèmes de recommandation.md",
@@ -17068,7 +18276,9 @@
         "embeddings",
         "retrieval"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Sélection de variables.md",
@@ -17091,7 +18301,9 @@
       "tags": [
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/TF-IDF.md",
@@ -17114,7 +18326,9 @@
         "information-retrieval",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Test du khi-deux.md",
@@ -17136,7 +18350,9 @@
         "hypothesis-testing",
         "p-value"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Test t et ANOVA.md",
@@ -17159,7 +18375,9 @@
         "parametric-test",
         "effect-size"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Tests d'hypothèse.md",
@@ -17182,7 +18400,9 @@
         "hypothesis-testing",
         "p-value"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Tests non paramétriques.md",
@@ -17205,7 +18425,9 @@
         "non-parametric",
         "hypothesis-testing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Text-to-SQL.md",
@@ -17231,7 +18453,9 @@
         "agents",
         "benchmark"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Théorie des jeux.md",
@@ -17258,7 +18482,9 @@
         "game-theory",
         "optimization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Théorème central limite.md",
@@ -17279,7 +18505,9 @@
         "probability",
         "convergence"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Time series anomaly detection.md",
@@ -17304,7 +18532,9 @@
         "timeseries",
         "anomaly-detection"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Time series feature engineering.md",
@@ -17329,7 +18559,9 @@
         "timeseries",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Tokenization.md",
@@ -17353,7 +18585,9 @@
         "llm",
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Tool use patterns.md",
@@ -17375,7 +18609,9 @@
         "agents",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Traitement du langage naturel.md",
@@ -17399,7 +18635,9 @@
       "tags": [
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Traitement du signal.md",
@@ -17421,7 +18659,9 @@
       "tags": [
         "signal-processing"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Transfer learning vision.md",
@@ -17447,7 +18687,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Transformer architectures.md",
@@ -17474,7 +18716,9 @@
         "attention",
         "nlp"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Transformée de Fourier.md",
@@ -17499,7 +18743,9 @@
         "signal-processing",
         "fourier"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Types de données et choix de modèle.md",
@@ -17527,7 +18773,9 @@
         "regression",
         "feature-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/VC dimension.md",
@@ -17551,7 +18799,9 @@
         "learning-theory",
         "vc-dimension"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Validation croisée.md",
@@ -17576,7 +18826,9 @@
         "resampling",
         "supervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Value functions.md",
@@ -17601,7 +18853,9 @@
         "reinforcement-learning",
         "value-function"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Vector norms.md",
@@ -17625,7 +18879,9 @@
         "vector-norm",
         "regularization"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Versionnage de données.md",
@@ -17649,7 +18905,9 @@
       "tags": [
         "data-versioning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Video generation.md",
@@ -17676,7 +18934,9 @@
         "diffusion",
         "multimodal"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Vision Language Models.md",
@@ -17703,7 +18963,9 @@
         "transformers",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Vision Transformers (ViT).md",
@@ -17730,7 +18992,9 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Vision par ordinateur.md",
@@ -17753,7 +19017,9 @@
         "cnn",
         "deep-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Walk-forward CV.md",
@@ -17780,7 +19046,9 @@
         "model-evaluation",
         "resampling"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Wasserstein distance.md",
@@ -17804,7 +19072,9 @@
         "information-theory",
         "optimal-transport"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/Web scraping.md",
@@ -17827,7 +19097,9 @@
         "web-scraping",
         "data-pipeline"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/a2a-protocol.md",
@@ -17852,7 +19124,9 @@
         "llm",
         "tool-use"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/agent-loops.md",
@@ -17875,7 +19149,9 @@
         "llm",
         "tool-use"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/embeddings.md",
@@ -17899,7 +19175,9 @@
         "semantic-search",
         "representation-learning"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/k-NN.md",
@@ -17926,7 +19204,9 @@
         "classification",
         "regression"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/k-médoïds (PAM).md",
@@ -17949,7 +19229,9 @@
         "unsupervised",
         "clustering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/mcp-protocol.md",
@@ -17977,7 +19259,9 @@
         "llm",
         "agents"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/prompt-caching.md",
@@ -18002,7 +19286,9 @@
         "llm",
         "context-engineering"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/t-SNE and UMAP.md",
@@ -18024,7 +19310,9 @@
         "manifold",
         "unsupervised"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/tool-use.md",
@@ -18047,7 +19335,9 @@
         "structured-output",
         "llm"
       ],
-      "alternatives": null
+      "alternatives": null,
+      "status": null,
+      "maturite": null
     },
     {
       "path": "Wiki/Outils/Obsidian.md",
@@ -18065,7 +19355,9 @@
         "note-taking",
         "knowledge-graph"
       ],
-      "alternatives": []
+      "alternatives": [],
+      "status": "actif",
+      "maturite": null
     }
   ]
 }
