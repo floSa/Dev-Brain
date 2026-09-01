@@ -14,6 +14,12 @@ explicites (→ arêtes visibles dans le graphe Obsidian) :
 Les liens sont régénérés entre les balises AUTO ; la zone « ## Notes » est
 préservée à chaque régénération (place pour tes ajouts manuels).
 
+Le script rend compte de ce qu'il écarte (R13, audit axe 2, annexe B) : une ligne
+`[SKIP]` donne le nombre de pages Dev sans `categorie:` sorties des hubs
+MOC/Categories, combien sont rattrapées par MOC/Types, et la liste nominative de
+celles qui restent hors de TOUT hub. Ce reste est le seul chiffre inquiétant : une
+page hors MOC est invisible à la navigation, et `check_brain` la refuse (R7).
+
 Usage : uv run AI/scripts/build_mocs.py   (après build_index.py)
 Cross-OS, chemins relatifs, sortie déterministe.
 """
@@ -134,12 +140,15 @@ def main() -> int:
 
     # Hubs Dev : par catégorie de tête (database/vector → database → « Bases de données »)
     cat_groups: dict[str, list[dict]] = {}
+    sans_categorie: list[dict] = []
     for p in pages:
         if p.get("galaxie") != "dev":
             continue
         head = (p.get("categorie") or "").split("/")[0]
         if head:
             cat_groups.setdefault(head, []).append(p)
+        else:
+            sans_categorie.append(p)  # R13 : compté, plus jamais écarté en silence
     for head, members in sorted(cat_groups.items()):
         label = CAT_LABEL.get(head, head.capitalize())
         bullets = [bullet(p) for p in sorted(members, key=lambda e: e["nom"].lower())]
@@ -160,6 +169,25 @@ def main() -> int:
         upsert(MOC_TYPE / f"{label}.md", label, TYPE_INTRO[typ],
                bullets, "dev", f"type/{typ}")
         written.append(("Types", label, len(members)))
+
+    # R13 (audit axe 2, annexe B) : le groupement par `categorie:` écarte des pages Dev,
+    # et le faisait sans le dire. On imprime combien, et surtout combien restent hors de
+    # tout hub après le rattrapage par `type:` — c'est ce reste qui est un vrai trou.
+    if sans_categorie:
+        rattrapees = [p for p in sans_categorie if p.get("type") in TYPE_LABEL]
+        orphelines = [p for p in sans_categorie if p.get("type") not in TYPE_LABEL]
+        par_type: dict[str, int] = {}
+        for p in orphelines:
+            par_type[str(p.get("type"))] = par_type.get(str(p.get("type")), 0) + 1
+        skipped.append(
+            f"{len(sans_categorie)} page(s) Dev sans `categorie:` hors des hubs "
+            f"MOC/Categories — dont {len(rattrapees)} rattrapée(s) par MOC/Types "
+            f"({', '.join(f'{t}' for t in sorted(TYPE_LABEL))})")
+        if orphelines:
+            detail = ", ".join(f"{t} x{n}" for t, n in sorted(par_type.items()))
+            skipped.append(f"{len(orphelines)} page(s) Dev hors de TOUT hub ({detail}) :")
+            for p in sorted(orphelines, key=lambda e: e["path"]):
+                skipped.append(f"    {p['path']}")
 
     # Sous-hubs Wiki : un MOC par famille de catégorie — étage intermédiaire.
     # Liste les feuilles ; c'est ce nœud (Statistiques, Maths du ML…) qui devient le gros hub concret.
