@@ -3,7 +3,7 @@ galaxie: meta
 nom: CHANGELOG
 type: meta-doc
 created: 2026-05-20
-modified: 2026-07-07
+modified: 2026-09-03
 tags: [meta]
 ---
 
@@ -18,13 +18,61 @@ Format inspiré de [Keep a Changelog](https://keepachangelog.com/).
 ## [Unreleased]
 
 À venir éventuellement :
-- CI : validation frontmatter via GitHub Action
-- Hooks PreToolUse pour frontières strictes inter-modes
+- CI : validation frontmatter via GitHub Action (le hook `Stop` la couvre en session, pas les éditions Obsidian)
+- Job planifié de joignabilité des URLs — `verifier_fraicheur.py` sonde déjà, mais 403/429 sont confondus avec un 404 et rien n'est bloquant
 - Computer vision (concepts CNN, Transformers vision, segmentation)
 - NLP traditionnel (BERT, tokenization spécialisée)
 - Patterns : Active learning, RAG hybride, Multi-tenant SaaS
 - Couche embedding sur `discover-links.ps1` (similarité sémantique au-delà des tags)
 - Pre-commit hook : auto-run `audit-links` et bloquer si liens manquants > seuil
+
+## [2026-09-03 — Audit en six axes, taxonomie à deux axes, validateur armé]
+
+Le vault avait grandi au fil de l'eau — 647 pages, 112 catégories, 321 tags — sans que son rangement, ses contrôles ni ses skills soient instruits à froid. Six audits menés en conversations isolées (rapports dans `AI/audit/rapports/`), puis dix correctifs. La cause commune de la plupart des défauts : **la mécanique annoncée n'existait pas**. Le hook `Stop` documenté depuis juin n'avait jamais tourné une seule fois et ne pouvait pas tourner.
+
+### Added — la taxonomie prend un second axe
+
+- **Champ `famille:`** sur les 336 fiches Dev — 9 valeurs fermées (`paquet` 177, `plateforme` 78, `application` 28, `cli` 17, `saas` 13, `extension` 12, `modele` 5, `specification` 4, `annuaire` 2). Il porte la **nature** de la brique ; `categorie:` garde le **domaine**. `type:` cesse de porter la nature : l'audit a mesuré qu'il n'était pas discriminant, 57 fiches en `application`/`cli`/`extension` se répartissant en 34 `type: outil` et 23 `type: service`.
+- **Arbre de décision déterministe** dans `taxonomie.md` : 9 questions fermées en ordre strict pour la famille, les branches de domaine, et des règles de départage. Le rangement d'un repo entrant ne dépend plus de qui écrit la fiche.
+- **Skill `cloturer-brain`** — la clôture mécanique (régénérer, valider, vérifier la divergence, committer, intégrer) sort d'`enrichir-brain`, où elle était **dupliquée trois fois**. Idempotent et invocable seul, il couvre le cas qui ne l'était par rien : une modification faite à la main dans Obsidian. **Seul endroit du vault où la politique git est écrite.**
+- **`AI/scripts/verifier_fraicheur.py`** — détecte les faits périmés des fiches (dépôt transféré ou archivé, licence divergente, version périmée, URL détournée, corps contredisant le `status:`). C'est un rapport, jamais un correcteur : il sort toujours en 0 et n'écrit dans aucune fiche.
+- **`AI/scripts/audit_mesures.py`** — état des lieux chiffré et reproductible, socle factuel commun des audits.
+- **`.claude/settings.json` versionné**, avec un hook `Stop` qui lance `check_brain` dès qu'une session a touché `Dev/` ou `Wiki/`.
+- **`Templates/Outil-Dev.md`** — les 39 fiches Outil suivaient un gabarit implicite parfaitement tenu mais jamais écrit ; aucune fiche neuve n'aurait posé le nouvel axe.
+- **`MOC/Types/`** — hubs générés par `type:` et non par `categorie:`, ce qui rend les Patterns et les Rules atteignables.
+
+### Changed — `categorie:` éclate en 94 domaines
+
+- **266 des 336 fiches Dev changent de catégorie.** Plus gros domaine : 13 pages contre 64 avant (`ml/framework`). Part des trois plus gros : **10,1 % contre 32,7 %**. `ml/framework` (64 pages) se répartit en 17 domaines, `llm/framework` (33) en 10, et le préfixe `tooling/*` (86 pages, 19 familles) disparaît — ce n'était pas un domaine mais un fourre-tout de natures.
+- **29 des 47 comparatifs `.base`** reprises : 15 par substitution de valeur, 10 réécrits parce que leur catégorie source éclatait, 4 filtres par tag ramenés sur `categorie` après preuve que les membres étaient identiques. Aucun ne tombe sous 2 membres. `MOC/Categories/` passe de 15 à 20 hubs.
+- **`check_brain.py` : 6 règles → 16**, dont 10 dures neuves. Les liens du **frontmatter** entrent dans le contrôle de liens morts ; les 4 types de pages qui n'avaient aucun gabarit contrôlé (`outil`, `pattern`, `rule`, `rex`) en ont un ; un `type:` absent est refusé ; la réciprocité échoue explicitement au lieu d'être ignorée en silence ; la synchronisation des pitchs — règle cardinale du skill — est enfin vérifiée. Chaque règle a été **vue échouer** avant d'être acceptée.
+- **`brain-index.json` : 10 champs → 13** (`status`, `maturite`, `famille`). Huit briques `abandonne` étaient proposables par `planifier-projet`, qui filtre l'index sans ouvrir les fiches. Le skill écarte désormais d'office une brique abandonnée et propose son `remplace_par:`.
+- **Procédure de mise à jour d'une page** dans `enrichir-brain`, avec sa table « champ modifié → consommateurs à repropager → commande de vérification » pour 12 champs. Elle n'existait pas : l'instruction tenait en cinq mots, « patch la fiche concernée ».
+- **Convention de réinjection du pitch tranchée** — quatre variantes coexistaient, ce qui rendait la règle cardinale inapplicable. Une seule reste, en trois clauses. Le passif de 14 lignes désynchronisées est soldé.
+- **16 fiches corrigées sur des faits périmés** : `fastmcp` → `PrefectHQ`, `hydra` → `hydra-ecosystem` (sortie de la tutelle Meta le 2026-08-13, gouvernance communautaire), `AutoGen` en maintenance, plus 5 `url_docs` et 6 passages en `abandonne`/`deprecated`.
+
+### Removed — le pilier REX
+
+- **Le pilier REX est supprimé**, les retours d'expérience vont dans la section `## Pièges` de la fiche Service. Motif : il n'avait **jamais produit un seul retour réel** en 86 jours — son unique fiche était un exemple de gabarit auto-déclaré — et la cible de fusion existait déjà, les 297 fiches Service portant toutes une section `## Pièges` remplie. Il coûtait 34 pointeurs morts invisibles du validateur et une exception permanente dans deux scripts, qui ne protégeait aucun lien tout en désarmant le contrôle pour la classe entière des liens `REX - *`.
+- Supprimés : `Dev/REX/`, `Templates/REX.md`, `Templates/REX-entry.md`, les tags `rex` et `bugs`, la section « Conventions REX » de `CLAUDE-build.md`, la section « Log de bug » de `CLAUDE-project.md`.
+- **`created:` et `modified:`** retirés des 5 Patterns et 5 Rules : 9 des 10 mentaient (2026-06-11 déclaré, 2026-07-14 réel), aucun script ne les lisait, et aucune autre page v2 ne les portait.
+- **Trois MOC de catégorie** dont le préfixe n'existe plus : `Auth`, `Frameworks`, `Outils & libs`.
+
+### Fixed
+
+- **La politique git n'avait pas de source unique** : `enrichir-brain` disait « d'office, sans demander », `CLAUDE-build.md` disait « ne commit et ne push jamais automatiquement », `CLAUDE.md` la rangeait dans ce qui exige confirmation. Trois documents, deux contradictions frontales. Tout renvoie désormais vers `cloturer-brain`.
+- **`scaling: serverless-ok`** documenté dans `CLAUDE-build.md` et `brain-v2.md` : valeur que ni le gabarit ni le validateur ne connaissent. Un agent suivant la consigne à la lettre écrivait une fiche rejetée.
+- **Chemin de vault en dur** (`~/DevBrain`) dans `session_to_devbrain.py` et `CLAUDE-project.md`, hérité d'une machine antérieure — en contradiction avec `Documentation/perso/machines.md`. Remplacé par une résolution racine git → variable d'environnement.
+- **`build_mocs.py` ignorait en silence** les 11 pages sans `categorie:` ; il les compte et les nomme désormais.
+- **Trois balayages depuis la racine du vault** excluaient `.git` mais pas `.claude/`, où vivent les worktrees git — donc des copies complètes du vault. Conséquence grave et silencieuse : un wikilink mort pouvait se résoudre contre la copie d'un worktree, masquant une violation d'une règle dure.
+- **Le parseur de `taxonomie.md` lisait tous les blocs de code** : déclarer les familles dans un bloc nu aurait rendu `categorie: paquet` valide (122 catégories reconnues au lieu de 112). Les fences sont désormais distingués par leur langue.
+
+### Notes
+
+- **Le `fetch` HTTPS anonyme de `origin` a cessé de fonctionner** (`could not read Username`). Or le protocole de session commence par `git fetch origin` pour détecter une divergence : cet échec est silencieux si l'on ne lit pas sa sortie. Passer par l'alias SSH, ou basculer `origin` en SSH.
+- **`Wiki/` n'a pas été touché** de toute la session, hormis quatre concepts recâblés vers de nouvelles fiches Dev. Les 12 `concept/<sous-domaine>` gardent leur vocabulaire ; l'aligner sur les 94 domaines Dev est la question ouverte 5 de l'axe 1.
+- **32 avertissements souples assumés** : 13 domaines à 3+ pages sans comparatif, 13 collisions d'alias, 6 sur les comparatifs. Plus 102 au titre de la règle R15 (une fiche service sans aucun lien vers `Wiki/Concepts`) — le couple Dev↔Wiki que le skill impose n'existe pas sur un tiers des fiches. Aucun domaine n'a été fusionné pour faire baisser un compteur.
+- **Deux arbitrages en attente** : les quatre pages hors périmètre du brain (`OpenCut`, `SmartTube`, `Superwhisper`, `public-apis`) et la création des comparatifs manquants — décisions éditoriales, pas techniques.
 
 ## [2026-07-07 — Harmonisation documentaire post-migration v2]
 

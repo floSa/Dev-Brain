@@ -146,6 +146,14 @@ AI/                          ← TON espace agent
 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
 
+**Deux axes de rangement, pas un.** Une fiche Dev porte `categorie:` (le **domaine** — de
+quoi ça parle, 94 valeurs en 20 préfixes) *et* `famille:` (la **nature** — ce que c'est, 9
+valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
+`specification`, `modele`, `annuaire`). `type:` ne porte plus la nature, il ne décrit que le
+dossier. Ne jamais choisir ces deux valeurs à l'intuition : `Documentation/general/taxonomie.md`
+porte un arbre de décision déterministe, questions fermées en ordre strict. Les deux champs
+sont des règles dures du validateur et sont indexés.
+
 **Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 
 **Convention wikilinks** (qualifiés par chemin pour éviter les collisions v1/v2) :

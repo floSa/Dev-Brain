@@ -9,14 +9,14 @@
 
 DevBrain est ma mémoire technique personnelle pour mes projets de dev (data science, data engineering, MLOps, ML/AI engineering). C'est un vault Obsidian versionné dans ce repo : des fiches structurées sur les outils, frameworks, patterns et retours d'expérience que j'utilise, écrites pour être lues aussi bien par moi que par un agent IA. Le but : ne plus jamais rechoisir une base vectorielle ou refaire une erreur déjà loguée — le brain garde la mémoire, le projet suivant en profite directement.
 
-Il est fait pour être utilisé avec [Claude Code](https://docs.claude.com/en/docs/claude-code), qui le lit et l'enrichit à travers deux skills : `enrichir-brain` pour y ajouter une fiche, `planifier-projet` pour partir d'un cadrage de projet sourcé par le brain. Inspiré du [LLM Wiki d'Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+Il est fait pour être utilisé avec [Claude Code](https://docs.claude.com/en/docs/claude-code), qui le lit et l'enrichit à travers trois skills : `enrichir-brain` pour y ajouter une fiche, `cloturer-brain` pour clore toute écriture (régénérer, valider, committer), `planifier-projet` pour partir d'un cadrage de projet sourcé par le brain. Inspiré du [LLM Wiki d'Andrej Karpathy](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 ## Installer
 
 Deux choses, pas plus :
 
 1. **Le vault** : cloner ce repo et l'ouvrir comme coffre Obsidian (+ 4 plugins : Local REST API, Templater, Dataview, File Hider).
-2. **Les skills** : rien à faire — `enrichir-brain` et `planifier-projet` sont déjà dans `.claude/skills/`, chargés automatiquement dès que tu lances `claude` dans ce dossier. Invocables en langage naturel ("ajoute Qdrant au brain") ou en commande slash (`/enrichir-brain`, `/planifier-projet`).
+2. **Les skills** : rien à faire — `enrichir-brain`, `cloturer-brain` et `planifier-projet` sont déjà dans `.claude/skills/`, chargés automatiquement dès que tu lances `claude` dans ce dossier. Invocables en langage naturel ("ajoute Qdrant au brain") ou en commande slash (`/enrichir-brain`, `/cloturer-brain`, `/planifier-projet`).
 
 ```bash
 git clone https://github.com/floSa/DevBrain.git ~/DevBrain
@@ -41,7 +41,9 @@ Pré-requis : Obsidian, Git, Node.js ≥ 18, Python ≥ 3.10, [`uv`](https://doc
 | **Dev/** (agent-readable) | quatre piliers : Services, Outils, Patterns/Comparatifs, Règles |
 | **Wiki/** (perso) | Concepts (notions DS/ML/AI eng) — `Outils/`, `Workflows/`, `Roadmaps/` pas encore repeuplés |
 | **MOC/** | hubs de navigation générés automatiquement |
-| **Skills** | `enrichir-brain`, `planifier-projet` |
+| **Skills** | `enrichir-brain` (capture), `cloturer-brain` (clôture + politique git), `planifier-projet` (cadrage) |
+| **Rangement** | deux axes : `categorie:` le domaine (94 valeurs), `famille:` la nature (9 valeurs fermées) — arbre de décision dans `Documentation/general/taxonomie.md` |
+| **Garde-fous** | `check_brain.py`, 16 règles dont 10 dures ; lancé à chaque fin de session par un hook `Stop` |
 
 ## Structure
 
@@ -60,18 +62,18 @@ DevBrain/
 │   ├── Concepts/                 (notions DS/ML/AI eng — peuplé)
 │   └── Outils/ Workflows/ Roadmaps/   (vides, pas encore remigrés depuis v1)
 │
-├── MOC/                          ← hubs de navigation générés (Themes/Categories/Concepts)
+├── MOC/                          ← hubs de navigation générés (Themes/Categories/Concepts/Types)
 ├── Documentation/                ← gouvernance (tags, taxonomie, conventions perso)
 ├── Templates/                    ← gabarits Templater
 ├── Projects/                     ← log des projets en cours (scaffold, vide)
 ├── AI/                           ← espace agent (design, index généré, sessions, scripts)
-└── .claude/skills/               ← enrichir-brain/, planifier-projet/
+└── .claude/skills/               ← enrichir-brain/, cloturer-brain/, planifier-projet/
 ```
 
 ## Conventions clés
 
 - **Wikilinks qualifiés par chemin** : `[[Dev/Services/Postgres|Postgres]]` (fiche Service).
-- **Frontmatter dense sur chaque fiche Service** (`pitch`, `categorie`, `licence_type`, `hosted`, `maturite`, `alternatives`, `status`, `tags`...) — sert d'index plat pour Claude, sans avoir à charger le contenu.
+- **Frontmatter dense sur chaque fiche Service** (`pitch`, `categorie`, `famille`, `licence_type`, `hosted`, `maturite`, `alternatives`, `status`, `tags`...) — sert d'index plat pour Claude, sans avoir à charger le contenu.
 - **Trois niveaux de règle** : `must` (bloquant), `should` (par défaut, écarts signalés), `nice-to-have` (si possible).
 
 ## Contribution

@@ -35,7 +35,7 @@ Conséquence : un même sujet peut exister des deux côtés (concept Wiki + serv
 
 ---
 
-## 2. Les deux workflows cibles (= critères d'acceptation)
+## 2. Les workflows cibles (= critères d'acceptation)
 
 ### W1 — Enrichir le brain depuis une conversation (skill `enrichir-brain`)
 
@@ -44,6 +44,28 @@ Deux modes :
 - **Balayage** : « mets à jour DevBrain » en fin de conversation → repère tout ce qui mérite une page.
 
 Exigence forte : **faire les choses bien, sans rien oublier**. Créer la page demandée *et* les pages connexes manquantes (Weaviate → concept « bases vectorielles » s'il manque), poser les bons tags, créer les liens, mettre à jour bidirectionnellement les pages existantes (alternatives qui se citent mutuellement).
+
+### W1b — Clore une écriture (skill `cloturer-brain`, ajouté le 2026-09-03)
+
+La partie mécanique de W1 — régénérer les artefacts, faire passer le validateur au vert,
+vérifier la divergence, committer et intégrer — a été extraite dans un skill dédié. Elle
+était **dupliquée trois fois** dans `enrichir-brain` (mode ciblé, mode mise à jour, mode
+balayage), ce qui la noyait et laissait sept de ses onze étapes sans aucune trace vérifiable
+(constats C2 et C7 de `AI/audit/rapports/axe-3-skills.md`).
+
+Deux conséquences qui en font un critère d'acceptation à part entière :
+
+- il est **idempotent et invocable seul**, donc il couvre le cas qu'aucun workflow ne
+  couvrait : une modification faite **à la main dans Obsidian**, hors de toute session
+  d'agent. Le vault pouvait rester des jours avec un index périmé ;
+- il est le **seul endroit où la politique git du vault est écrite**. Auparavant trois
+  documents la formulaient, dont deux se contredisaient frontalement sur le commit
+  automatique (constat C3).
+
+Un hook `Stop` lance `check_brain.py` dès qu'une session a touché `Dev/` ou `Wiki/` :
+l'omission de la clôture cesse d'être silencieuse, sans qu'aucun garde-fou n'ait à
+l'interdire — un hook ne sait pas quel skill est chargé, et un garde-fou qui refuse
+se contourne.
 
 ### W2 — Planifier un projet depuis le brain (skill `planifier-projet`)
 
@@ -110,7 +132,8 @@ type: service
 nom: Weaviate
 alias: []
 pitch: "Base vectorielle orientée production, hybride dense+keyword, self-host ou managé."  # ← une ligne, réutilisée partout
-categorie: database/vecteur
+categorie: database/vecteur      # DOMAINE — de quoi ça parle
+famille: plateforme              # NATURE — ce que c'est (cf. les deux axes, ci-dessous)
 licence_type: open-source        # sert à "commercialisable ?"
 hosted: both                     # self | managed | both — sert à "déployable ?"
 maturite: production             # production | beta | experimental | deprecated
@@ -123,6 +146,40 @@ tags: [vector-db, rag]           # pioche dans Documentation/general/tags
 url_docs:
 url_repo:
 ```
+
+#### Les deux axes de rangement (arbitrés les 2026-09-02 et 2026-09-03)
+
+Une fiche Dev se range sur **deux axes indépendants**, et pas un seul. C'est le résultat de
+l'axe 1 de l'audit (`AI/audit/rapports/axe-1-rangement.md`), qui a établi qu'un seul champ
+répondait à deux questions différentes — d'où un préfixe `tooling/*` qui n'était pas un
+domaine mais un fourre-tout de 19 natures, et trois catégories absorbant un tiers du vault.
+
+| Champ | Question | Valeurs | Exemple |
+|-------|----------|---------|---------|
+| `categorie:` | **de quoi ça parle** — le domaine | 94, en 20 préfixes de tête | `database/vecteur` |
+| `famille:` | **ce que c'est** — la nature | 9, fermées | `plateforme` |
+
+Les 9 familles : `paquet` (s'importe dans du code), `plateforme` (se déploie, un programme
+l'appelle), `application` (interface pour un humain), `cli`, `saas` (pas d'auto-hébergement
+possible), `extension` (ne tourne que dans un hôte tiers), `specification` (norme sans
+implémentation de référence), `modele` (le livrable est un jeu de poids), `annuaire` (liste
+de ressources, pas un logiciel).
+
+Trois conséquences de doctrine :
+
+1. **`type:` cesse de porter la nature.** Il ne décrit que le dossier — `service` pour ce
+   qu'on déploie, `outil` pour ce qu'on utilise. L'audit a mesuré qu'il n'était pas
+   discriminant : 57 fiches en `application`/`cli`/`extension` se répartissent en 34
+   `type: outil` et 23 `type: service`.
+2. **Le rangement ne dépend plus de qui écrit.** `Documentation/general/taxonomie.md` porte
+   un **arbre de décision déterministe** : 9 questions fermées en ordre strict pour la
+   nature, puis les branches de domaine, plus des règles de départage. Une fiche entrante se
+   range en dérivant l'arbre, pas en choisissant.
+3. **Les deux axes sont contrôlés** par `check_brain.py` (règles dures : catégorie dans la
+   taxonomie, famille dans l'énumération fermée) et **indexés** dans `brain-index.json`, donc
+   filtrables par `planifier-projet` sans ouvrir une fiche.
+
+Un `famille:` vide est toléré : c'est le signal « à trancher », pas un oubli silencieux.
 
 > **Champs morts supprimés** : `score` et `mes_projets` (jamais remplis à la main → ils mentent). « Projets où X est utilisé » se **déduit** des liens entrants depuis `Projects/`.
 
