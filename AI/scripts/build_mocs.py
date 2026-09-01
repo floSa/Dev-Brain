@@ -37,14 +37,21 @@ MOC_TYPE = VAULT / "MOC" / "Types"
 MOC_THEME = VAULT / "MOC" / "Themes"
 MOC_CONCEPT = VAULT / "MOC" / "Concepts"
 
+# Libellé français d'un préfixe de tête de `categorie:`. UN LIBELLÉ PAR PRÉFIXE :
+# un préfixe absent de cette table sort en anglais capitalisé (« Devtools »), défaut
+# déjà corrigé une fois pour `network` et `security`. Les 20 préfixes du vocabulaire
+# en vigueur sont listés dans Documentation/general/taxonomie.md.
 CAT_LABEL = {
-    "database": "Bases de données", "framework": "Frameworks",
-    "ui": "Interfaces & apps data", "language": "Langages", "devops": "DevOps",
-    "llm": "LLM & IA générative", "ml": "Machine Learning", "data": "Data & pipelines",
-    "compute": "Calcul distribué", "auth": "Auth", "storage": "Stockage",
-    "observability": "Observabilité", "tooling": "Outils & libs",
-    "network": "Réseau", "security": "Sécurité",
-    "automation": "Automatisation no-code",
+    "ml": "Machine Learning", "llm": "LLM & IA générative",
+    "database": "Bases de données", "data": "Data & pipelines",
+    "devtools": "Outils de développement", "stats": "Statistiques & inférence",
+    "compute": "Calcul distribué", "design": "Design & diagrammes",
+    "storage": "Stockage", "web": "Web & API",
+    "automation": "Automatisation no-code", "media": "Médias",
+    "ui": "Interfaces & apps data", "observability": "Observabilité",
+    "security": "Sécurité", "signal": "Signal & audio",
+    "network": "Réseau", "devops": "DevOps",
+    "docs": "Documents", "math": "Mathématiques",
 }
 # Hubs Dev groupés sur `type:` et NON sur `categorie:` : les types pattern et rule
 # n'ont pas de `categorie:` (la taxonomie ne les couvre pas), une catégorie vide est falsy,
@@ -138,7 +145,7 @@ def main() -> int:
     written: list[tuple[str, str, int]] = []
     skipped: list[str] = []
 
-    # Hubs Dev : par catégorie de tête (database/vector → database → « Bases de données »)
+    # Hubs Dev : par catégorie de tête (database/vecteur → database → « Bases de données »)
     cat_groups: dict[str, list[dict]] = {}
     sans_categorie: list[dict] = []
     for p in pages:

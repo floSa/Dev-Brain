@@ -4,7 +4,7 @@ type: service
 nom: CatBoost
 alias: [catboost, Categorical Boosting]
 pitch: "Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning."
-categorie: ml/framework
+categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
 hosted: self

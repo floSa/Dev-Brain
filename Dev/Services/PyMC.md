@@ -4,7 +4,7 @@ type: service
 nom: PyMC
 alias: [pymc3, pymc-devs]
 pitch: "Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor)."
-categorie: tooling/stats
+categorie: stats/bayesien
 famille: paquet
 licence_type: open-source
 hosted: self

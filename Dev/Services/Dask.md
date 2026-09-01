@@ -4,7 +4,7 @@ type: service
 nom: Dask
 alias: [dask, dask.distributed]
 pitch: "Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster."
-categorie: compute/distributed
+categorie: compute/distribue
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: RLax
 alias: [rlax, rl-ax, deepmind rlax]
 pitch: "Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3."
-categorie: ml/framework
+categorie: ml/rl
 famille: paquet
 licence_type: open-source
 hosted: self

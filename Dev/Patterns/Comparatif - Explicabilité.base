@@ -1,7 +1,9 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - file.hasTag("explainability")
+    # `ml/interpretabilite` existe desormais comme domaine : le detour par le tag
+    # `explainability` (C3) n'a plus d'objet. Memes 7 membres.
+    - categorie == "ml/interpretabilite"
 views:
   - type: table
     name: Explicabilité des modèles

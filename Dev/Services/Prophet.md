@@ -4,7 +4,7 @@ type: service
 nom: Prophet
 alias: [fbprophet, fb-prophet]
 pitch: "Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles."
-categorie: ml/framework
+categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
 hosted: self

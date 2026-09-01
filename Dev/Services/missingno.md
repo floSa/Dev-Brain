@@ -4,7 +4,7 @@ type: service
 nom: missingno
 alias: [missing-no]
 pitch: "Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas."
-categorie: tooling/viz
+categorie: data/eda
 famille: paquet
 licence_type: open-source
 hosted: self

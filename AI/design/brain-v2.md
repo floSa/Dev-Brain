@@ -110,7 +110,7 @@ type: service
 nom: Weaviate
 alias: []
 pitch: "Base vectorielle orientée production, hybride dense+keyword, self-host ou managé."  # ← une ligne, réutilisée partout
-categorie: database/vector
+categorie: database/vecteur
 licence_type: open-source        # sert à "commercialisable ?"
 hosted: both                     # self | managed | both — sert à "déployable ?"
 maturite: production             # production | beta | experimental | deprecated

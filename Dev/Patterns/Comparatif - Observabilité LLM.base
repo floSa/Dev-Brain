@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "llm/observability"
+    - categorie == "llm/observabilite"
 views:
   - type: table
     name: Observabilité LLM

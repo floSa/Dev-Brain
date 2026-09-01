@@ -4,7 +4,7 @@ type: service
 nom: LangSmith
 alias: [langsmith]
 pitch: "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise."
-categorie: llm/observability
+categorie: llm/observabilite
 famille: plateforme
 licence_type: proprietary
 hosted: both

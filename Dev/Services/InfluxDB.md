@@ -4,7 +4,7 @@ type: service
 nom: InfluxDB
 alias: [influxdb, influx]
 pitch: "SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles."
-categorie: database/timeseries
+categorie: database/series-temporelles
 famille: plateforme
 licence_type: open-source
 hosted: both

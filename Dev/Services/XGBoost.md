@@ -4,7 +4,7 @@ type: service
 nom: XGBoost
 alias: [xgboost, eXtreme Gradient Boosting]
 pitch: "Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires."
-categorie: ml/framework
+categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
 hosted: self

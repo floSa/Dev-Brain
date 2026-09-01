@@ -4,7 +4,7 @@ type: outil
 nom: MongoDB Compass
 alias: [compass, mongodb compass]
 pitch: "Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma."
-categorie: tooling/db-admin
+categorie: database/admin
 famille: application
 domaines: [data-eng]
 licence_type: source-available

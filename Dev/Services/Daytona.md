@@ -4,7 +4,7 @@ type: service
 nom: Daytona
 alias: [daytona, daytonaio, Daytona Sandboxes]
 pitch: "Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu."
-categorie: compute/sandbox
+categorie: compute/a-la-demande
 famille: saas
 licence_type: source-available
 hosted: managed

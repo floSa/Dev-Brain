@@ -4,7 +4,7 @@ type: service
 nom: Spark
 alias: [Apache Spark, spark, PySpark, pyspark]
 pitch: "Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark."
-categorie: compute/distributed
+categorie: compute/distribue
 famille: plateforme
 licence_type: open-source
 hosted: both

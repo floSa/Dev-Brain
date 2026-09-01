@@ -4,7 +4,7 @@ type: outil
 nom: DataGrip
 alias: [datagrip]
 pitch: "IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs."
-categorie: tooling/db-admin
+categorie: database/admin
 famille: application
 domaines: [data-eng]
 licence_type: proprietary

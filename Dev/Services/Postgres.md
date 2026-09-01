@@ -4,7 +4,7 @@ type: service
 nom: Postgres
 alias: [postgres, postgresql, pg]
 pitch: "SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne."
-categorie: database/relational
+categorie: database/relationnel
 famille: plateforme
 licence_type: open-source
 hosted: both

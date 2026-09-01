@@ -4,7 +4,7 @@ type: service
 nom: numpy
 alias: [np, NumPy]
 pitch: "Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique."
-categorie: tooling/data
+categorie: data/tableau
 famille: paquet
 licence_type: open-source
 hosted: self

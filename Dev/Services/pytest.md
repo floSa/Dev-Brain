@@ -4,7 +4,7 @@ type: service
 nom: pytest
 alias: [py.test]
 pitch: "Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins."
-categorie: tooling/test
+categorie: devtools/test
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: SQLModel
 alias: [sqlmodel]
 pitch: "Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI."
-categorie: framework/orm
+categorie: database/orm
 famille: paquet
 licence_type: open-source
 hosted: self

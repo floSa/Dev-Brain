@@ -4,7 +4,7 @@ type: service
 nom: Modin
 alias: [modin]
 pitch: "Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI."
-categorie: tooling/data
+categorie: data/tableau
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: Ray
 alias: [ray, ray-project, ray core]
 pitch: "Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib)."
-categorie: compute/distributed
+categorie: compute/distribue
 famille: paquet
 licence_type: open-source
 hosted: both

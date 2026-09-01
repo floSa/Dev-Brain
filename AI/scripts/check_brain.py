@@ -26,7 +26,8 @@ Règles DURES (bloquent) :
   - famille ∈ énumération fermée de Documentation/general/taxonomie.md (bloc
     ```famille) sur les gabarits service et outil                             [R14]
   - tags ⊆ vocabulaire contrôlé (Documentation/general/tags.md)
-  - categorie ∈ taxonomie (Documentation/general/taxonomie.md)
+  - categorie ∈ taxonomie : bloc ```domaine (94 domaines Dev) + fences nus
+    (`concept/*` et `skill/*`, côté Wiki)
   - domaines ⊆ vocabulaire de Documentation/general/themes.md                 [R4]
   - alternatives réciproques (si A cite B, B cite A)
   - cible d'alternative absente de l'index → échec explicite, plus de silence  [R12]
@@ -171,7 +172,18 @@ def load_familles() -> set[str]:
 
 
 def load_categories() -> set[str]:
-    body = "\n".join(c for langue, c in _fences("taxonomie.md") if not langue)
+    """Vocabulaire fermé de `categorie:` — le DOMAINE.
+
+    Deux sources, une par galaxie :
+      - bloc ```domaine — les 94 domaines Dev (Documentation/general/taxonomie.md) ;
+      - fences nus — les vocabulaires Wiki `concept/*` et `skill/*`.
+    L'ancien vocabulaire Dev à 74 valeurs (`ml/framework`, `tooling/*`, `auth`…) a
+    été retiré de taxonomie.md : il échoue désormais en dur. Aucune valeur legacy
+    n'est codée ici — le vocabulaire vit dans le document de gouvernance, pas dans
+    le script, et se ferme en retirant un bloc de code.
+    """
+    body = "\n".join(c for langue, c in _fences("taxonomie.md")
+                     if not langue or langue == "domaine")
     cats: set[str] = set()
     # groupes prefix/{a, b, c} (peuvent s'étaler sur plusieurs lignes)
     for m in re.finditer(r"([a-z][\w-]*)/\{([^}]*)\}", body, re.S):
@@ -179,7 +191,7 @@ def load_categories() -> set[str]:
             item = item.strip()
             if item:
                 cats.add(f"{m.group(1)}/{item}")
-    # tokens nus restants (auth, storage, compute/distributed…)
+    # tokens nus restants (une valeur sans accolades, sur sa propre ligne)
     body2 = re.sub(r"[a-z][\w-]*/\{[^}]*\}", "", body, flags=re.S)
     for tok in re.findall(r"^[a-z][\w-]*(?:/[a-z][\w-]*)?$", body2, re.M):
         cats.add(tok.strip())

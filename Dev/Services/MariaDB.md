@@ -4,7 +4,7 @@ type: service
 nom: MariaDB
 alias: [mariadb]
 pitch: "Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle."
-categorie: database/relational
+categorie: database/relationnel
 famille: plateforme
 licence_type: open-source
 hosted: both

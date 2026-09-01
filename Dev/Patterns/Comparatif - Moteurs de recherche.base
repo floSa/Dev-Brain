@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/search"
+    - categorie == "database/recherche"
 views:
   - type: table
     name: Moteurs de recherche

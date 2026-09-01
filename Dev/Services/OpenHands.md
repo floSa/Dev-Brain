@@ -4,7 +4,7 @@ type: service
 nom: OpenHands
 alias: [openhands, opendevin, open-devin]
 pitch: "Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé."
-categorie: llm/framework
+categorie: llm/assistant
 famille: plateforme
 licence_type: open-source
 hosted: both

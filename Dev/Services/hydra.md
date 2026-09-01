@@ -4,7 +4,7 @@ type: service
 nom: hydra
 alias: [Hydra, hydra-core]
 pitch: "Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML."
-categorie: tooling/package
+categorie: devtools/config
 famille: paquet
 licence_type: open-source
 hosted: self

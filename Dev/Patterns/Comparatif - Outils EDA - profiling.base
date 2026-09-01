@@ -1,7 +1,9 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - file.hasTag("eda")
+    # `data/eda` existe desormais comme domaine (les profileurs quittent
+    # `tooling/viz`). Memes 3 membres.
+    - categorie == "data/eda"
 views:
   - type: table
     name: Outils EDA / profiling

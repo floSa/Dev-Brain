@@ -4,7 +4,7 @@ type: service
 nom: SQLite
 alias: [sqlite, sqlite3]
 pitch: "Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration."
-categorie: database/relational
+categorie: database/relationnel
 famille: paquet
 licence_type: open-source
 hosted: self

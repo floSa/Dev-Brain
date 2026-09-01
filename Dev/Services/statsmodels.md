@@ -4,7 +4,7 @@ type: service
 nom: statsmodels
 alias: []
 pitch: "Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées."
-categorie: tooling/stats
+categorie: stats/inference
 famille: paquet
 licence_type: open-source
 hosted: self

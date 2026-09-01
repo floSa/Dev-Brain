@@ -4,7 +4,7 @@ type: service
 nom: LIME
 alias: [lime, Local Interpretable Model-agnostic Explanations]
 pitch: "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP."
-categorie: ml/framework
+categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
 hosted: self

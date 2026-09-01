@@ -4,7 +4,7 @@ type: service
 nom: Windmill
 alias: [windmill, windmill.dev, windmill-labs]
 pitch: "Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool."
-categorie: automation/workflow
+categorie: automation/no-code
 famille: plateforme
 licence_type: open-core
 hosted: both

@@ -4,7 +4,7 @@ type: service
 nom: jupytext
 alias: [Jupytext]
 pitch: "Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON."
-categorie: tooling/notebook
+categorie: devtools/notebook
 famille: paquet
 licence_type: open-source
 hosted: self

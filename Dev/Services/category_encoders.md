@@ -4,7 +4,7 @@ type: service
 nom: category_encoders
 alias: [category-encoders, categorical-encoding, WOEEncoder]
 pitch: "Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité."
-categorie: ml/framework
+categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
 hosted: self

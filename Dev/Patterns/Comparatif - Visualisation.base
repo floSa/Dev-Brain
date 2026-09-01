@@ -1,7 +1,9 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "tooling/viz"
+    # `tooling/viz` a eclate : les bibliotheques de trace (`data/viz`) et les
+    # profileurs EDA (`data/eda`, couverts par « Comparatif - Outils EDA - profiling »).
+    - categorie == "data/viz"
 views:
   - type: table
     name: Visualisation

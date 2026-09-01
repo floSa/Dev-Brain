@@ -1,7 +1,17 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "llm/framework"
+    # `llm/framework` (33 pages) a eclate en 13 domaines. Ce comparatif garde son
+    # sujet : les briques qu'on IMPORTE pour construire une application LLM.
+    # En sortent, et ont leur propre domaine : les passerelles (`llm/passerelle`),
+    # les runtimes (`llm/runtime`), le low-code (`llm/low-code`), les applications
+    # pretes a deployer (`llm/assistant`), la memoire (`llm/memoire`), le
+    # text-to-SQL (`llm/text-to-sql`) et MCP (`llm/mcp`).
+    - or:
+        - categorie == "llm/socle"
+        - categorie == "llm/agents"
+        - categorie == "llm/rag"
+        - categorie == "llm/sortie-structuree"
 views:
   - type: table
     name: Frameworks LLM

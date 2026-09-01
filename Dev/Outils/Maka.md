@@ -4,7 +4,7 @@ type: outil
 nom: Maka
 alias: [apache-maka, maka]
 pitch: "Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: application
 domaines: [ai-eng]
 licence_type: open-source

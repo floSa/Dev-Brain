@@ -4,7 +4,7 @@ type: service
 nom: Flyway
 alias: [flyway]
 pitch: "Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build."
-categorie: tooling/migration
+categorie: database/migration
 famille: cli
 licence_type: open-core
 hosted: self

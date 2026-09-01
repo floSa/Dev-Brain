@@ -11,10 +11,10 @@ par le nombre de correspondances, pas par la taille du brain.
 
 Exemples :
     uv run AI/scripts/query_index.py --name Weaviate                # existe ? (nom + alias)
-    uv run AI/scripts/query_index.py --categorie database/vector    # candidats alternatives
+    uv run AI/scripts/query_index.py --categorie database/vecteur   # candidats alternatives
     uv run AI/scripts/query_index.py --tag rag --galaxie dev        # pages d'un tag
     uv run AI/scripts/query_index.py --tag-of "Weaviate"            # tags d'une page
-    uv run AI/scripts/query_index.py --categorie llm/framework \
+    uv run AI/scripts/query_index.py --categorie llm/agents \
         --status abandonne                                          # briques à écarter
     uv run AI/scripts/query_index.py --famille plateforme --tag rag # nature × sujet
 

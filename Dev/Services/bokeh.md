@@ -4,7 +4,7 @@ type: service
 nom: bokeh
 alias: []
 pitch: "Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes."
-categorie: tooling/viz
+categorie: data/viz
 famille: paquet
 licence_type: open-source
 hosted: self

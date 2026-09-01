@@ -4,7 +4,7 @@ type: service
 nom: Fanalysis
 alias: [fanalysis]
 pitch: "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince."
-categorie: tooling/stats
+categorie: stats/exploratoire
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: Detectron2
 alias: [detectron2, detectron, Mask R-CNN, FAIR detection]
 pitch: "Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture."
-categorie: ml/framework
+categorie: ml/vision
 famille: paquet
 licence_type: open-source
 hosted: self

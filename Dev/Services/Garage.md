@@ -4,7 +4,7 @@ type: service
 nom: Garage
 alias: [garage]
 pitch: "Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3."
-categorie: storage
+categorie: storage/objet
 famille: plateforme
 licence_type: open-source
 hosted: self

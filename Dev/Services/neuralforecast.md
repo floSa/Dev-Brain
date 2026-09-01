@@ -4,7 +4,7 @@ type: service
 nom: neuralforecast
 alias: [nixtla-neuralforecast]
 pitch: "Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables."
-categorie: ml/framework
+categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: DSPy
 alias: [dspy, stanfordnlp-dspy, Demonstrate-Search-Predict]
 pitch: "Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques."
-categorie: llm/framework
+categorie: llm/socle
 famille: paquet
 licence_type: open-source
 hosted: self

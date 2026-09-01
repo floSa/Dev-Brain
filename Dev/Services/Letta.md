@@ -4,7 +4,7 @@ type: service
 nom: Letta
 alias: [letta, memgpt, mem-gpt]
 pitch: "Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud."
-categorie: llm/framework
+categorie: llm/memoire
 famille: plateforme
 licence_type: open-source
 hosted: both

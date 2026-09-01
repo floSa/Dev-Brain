@@ -4,7 +4,7 @@ type: service
 nom: txtai
 alias: [txtai, neuml-txtai]
 pitch: "Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI."
-categorie: database/search
+categorie: database/recherche
 famille: paquet
 licence_type: open-source
 hosted: self

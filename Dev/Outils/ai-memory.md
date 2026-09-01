@@ -4,7 +4,7 @@ type: outil
 nom: ai-memory
 alias: [akitaonrails/ai-memory]
 pitch: "Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: plateforme
 domaines: [ai-eng]
 licence_type: open-source

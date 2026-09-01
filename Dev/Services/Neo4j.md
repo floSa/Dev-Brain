@@ -4,7 +4,7 @@ type: service
 nom: Neo4j
 alias: [neo4j, neo4J, neo 4j]
 pitch: "SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher."
-categorie: database/graph
+categorie: database/graphe
 famille: plateforme
 licence_type: open-core
 hosted: both

@@ -4,7 +4,7 @@ type: service
 nom: Pydantic Settings
 alias: [pydantic-settings, pydantic_settings, BaseSettings]
 pitch: "Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic."
-categorie: tooling/package
+categorie: devtools/config
 famille: paquet
 licence_type: open-source
 hosted: self

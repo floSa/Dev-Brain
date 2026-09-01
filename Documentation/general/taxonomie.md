@@ -3,7 +3,7 @@ galaxie: meta
 nom: taxonomie
 type: gouvernance
 created: 2026-06-04
-modified: 2026-09-02
+modified: 2026-09-03
 tags: [meta, gouvernance, taxonomie]
 ---
 
@@ -13,7 +13,7 @@ Une page de `Dev/` est rangée sur **deux axes indépendants**, tous deux à voc
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | cf. sections *Services Dev* / *Outils Dev* ci-dessous |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 94 valeurs, cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -111,75 +111,186 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine
+## Axe `categorie:` — le domaine (94 valeurs, 20 préfixes de tête)
 
-Valeurs autorisées pour le champ `categorie:` du frontmatter. Une page dont la catégorie n'est pas dans cette liste n'est pas valide. Catégorie manquante → **demander avant d'inventer**.
+`categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
+rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
+lu par `check_brain.py` dans le bloc ```domaine ci-dessous, et **là seulement**. Une valeur
+hors liste échoue en dur ; catégorie manquante → **demander avant d'inventer**.
 
-## Services Dev (`Dev/Services/`) — `categorie: <domaine>/<sous-domaine>`
+Le domaine ne se **choisit** pas plus que la famille : il se **dérive** de l'arbre D1→D14, puis
+le sous-domaine se lit dans le bloc, à l'intérieur de la branche retenue.
 
+```domaine
+ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl,
+    non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
+    orchestration, tracking, serving, monitoring, feature-store, hub}
+llm/{socle, agents, agent-de-code, assistant, rag, memoire, sortie-structuree,
+     text-to-sql, low-code, mcp, passerelle, runtime, finetuning, eval,
+     observabilite, outillage}
+database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
+          analytique, recherche, driver, orm, migration, admin}
+data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
+      synthetique, eda, viz}
+devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
+stats/{inference, bayesien, exploratoire, causal}
+signal/{traitement, audio}
+math/{optimisation}
+compute/{distribue, gpu, a-la-demande}
+storage/{objet}
+web/{backend, frontend, api}
+ui/{data-app}
+network/{analyse, transfert}
+security/{recon, auth}
+devops/{ci, conteneur}
+observability/{supervision}
+automation/{no-code}
+docs/{capture, pdf}
+media/{ingestion, video}
+design/{diagramme, ui}
 ```
-database/{relational, document, keyvalue, vector, timeseries, graph, warehouse, columnar, search, wide-column, driver}
-framework/{backend, frontend, fullstack, mobile, orm}
-ui/{data-app, ml-demo}
-language/{general, runtime}
-devops/{ci, iac, container, orchestration}
-llm/{api, local, framework, framework-module, app, context, eval, embeddings, finetuning, observability, guardrails}
-ml/{tracking, training, serving, hyperopt, orchestration, framework,
-    feature-store, monitoring, annotation, optimization, quantization, eval}
-data/{orchestration, parsing, ingestion, format, quality,
-      transformation, streaming, lakehouse, versioning, scraping}
-automation/{workflow, ipaas, ai-agent}
-compute/{distributed, sandbox, serverless}
-auth
-storage
-network/{analysis, transfer}
-security/{recon, osint}
-observability/{log, metric, trace, infra}
-tooling/{lint, format, build, test, package, data, viz, stats, notebook, migration, db-admin,
-        optim, api, code-assistant, media, diagram, design, document, video, capture, llm}
-```
 
-- `database/driver` — pilote / adaptateur bas niveau d'accès à une base (DB-API 2.0, wrapper libpq) : psycopg2, asyncpg, psycopg 3. Distinct de `framework/orm` (mapping objet) : le driver transporte le SQL, il n'abstrait pas le schéma.
-- `data/scraping` — récupération de données depuis des pages web : clients HTTP furtifs (empreinte TLS), navigateurs headless, contournement d'anti-bot, parsing HTML. Distinct de `data/ingestion` (connecteurs ELT vers des sources structurées / API).
-- `automation/*` — automatisation no-code / orchestration de workflows applicatifs : connecter des applications et services via déclencheurs et actions, généralement par éditeur visuel de nœuds. **Distinct de `data/orchestration`** (Airflow, Dagster, Prefect…) qui orchestre des pipelines de **données** (DAG, dépendances, backfills) en code. Sous-domaines :
-  - `automation/workflow` — moteurs d'automatisation de workflows self-hostables, orientés intégration d'apps et tâches techniques (n8n, Activepieces, Windmill).
-  - `automation/ipaas` — plateformes SaaS d'intégration entre applications (iPaaS), entièrement managées (Zapier).
-  - `automation/ai-agent` — automatisation no-code dont chaque étape peut porter de la logique IA / agents (gumloop).
-- `compute/sandbox` — bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM) : isolation forte (microVM, kernel dédié), création et destruction à la demande, cycle de vie court. Distinct de `devops/container` (packaging et déploiement d'applications de confiance) et de `compute/distributed` (calcul réparti sur plusieurs nœuds).
-- `compute/serverless` — plateformes de calcul à la demande facturées à l'usage, sans serveur à provisionner (scale-to-zero, démarrage à froid rapide, GPU inclus le cas échéant).
-- `tooling/optim` — recherche opérationnelle / programmation mathématique : modélisation et résolution de problèmes d'optimisation (LP, MIP, optimisation convexe) via des solveurs ; modeleurs Python (PuLP, Pyomo, CVXPY) et bindings de solveurs. Distinct de `ml/optimization` (compression / optimisation de modèles ML) et de `tooling/stats` (modélisation statistique).
-- `ml/eval` — bibliothèques de calcul de métriques et de validation de modèles ML (accuracy, F1, BLEU, ROUGE, exact match…) : HuggingFace `evaluate`, jeux de métriques réutilisables. Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring par juge) et du concept transverse `model-evaluation` (le tag).
-- `llm/framework-module` — **sous-composant notable d'un gros framework LLM** (LangChain, LlamaIndex…) qui mérite sa page dédiée parce que le framework parent est trop vaste pour le mettre en avant : p. ex. le SQL agent de LangChain, le NLSQLTableQueryEngine de LlamaIndex. Ce n'est **pas** une brique déployable seule (elle s'utilise via son framework parent, qu'elle référence dans ses liens), d'où la distinction avec `llm/framework` — et l'exclusion des comparatifs de frameworks. Fiche `type: service`, `licence_type`/`langage` hérités du parent.
+### Arbre de décision `domaine` — ORDRE STRICT, première réponse positive gagne
 
-- `llm/app` — **application LLM prête à déployer**, utilisable telle quelle par un utilisateur final (chat, classe virtuelle, assistant métier). Distinct de `llm/framework` (briques et SDK avec lesquels on *construit* une application) : ici on installe et on s'en sert, on n'assemble pas.
-- `llm/context` — gestion et **compression du contexte** envoyé au modèle : réduction du nombre de tokens en entrée, élagage, réécriture, réinjection à la demande du contenu intégral. Distinct de `llm/observability` (mesurer ce qui est envoyé) et de `ml/optimization` (alléger le modèle, pas le prompt).
-- `network/*` — **réseau** : ce qui circule entre machines, indépendamment de l'applicatif. Sous-domaines :
-  - `network/analysis` — observation et analyse du trafic (qui parle à qui, ports, protocoles, volumes, alertes). Distinct de `observability/*` qui instrumente des applications *depuis l'intérieur*.
-  - `network/transfer` — transfert de fichiers de machine à machine (chiffrement, relais, reprise).
-- `security/*` — **sécurité et renseignement**, du point de vue de l'analyste. Distinct du tag `ai-security` (surface d'attaque des systèmes LLM). Sous-domaines :
-  - `security/recon` — reconnaissance d'une cible **depuis l'extérieur**, sans accès privilégié : DNS, TLS, en-têtes, technologies détectées, empreinte réseau.
-  - `security/osint` — renseignement en sources ouvertes : outils et **annuaires** de recherche en sources publiques.
-- `observability/infra` — supervision de **machines et de conteneurs** : CPU, mémoire, disque, réseau, état des conteneurs, alertes. Distinct de `observability/{log, metric, trace}` qui portent la télémétrie *applicative*, et de `ml/monitoring` (dérive de modèle).
-- `tooling/document` — manipulation de **documents et de PDF** en tant que fichiers : fusion, découpe, rotation, conversion de format, OCR, signature, compression. Distinct de `data/parsing` (extraire du contenu structuré *pour une machine*, typiquement pour du RAG) : ici on produit un document pour un humain.
-- `tooling/video` — outils **vidéo** : montage et production (timeline, découpe, export), encodage, clients de lecture. Distinct de `tooling/media` (ingestion de médias comme *input* pour un assistant IA) et de `ui/*`.
-- `tooling/capture` — **capture de contenu** externe vers un format texte réutilisable : page web ou document converti en Markdown pour des notes, de la documentation ou un prompt. Distinct de `data/scraping` (extraction *programmatique* et à l'échelle) : ici c'est un geste manuel, à l'unité.
-- `tooling/llm` — utilitaires locaux **autour** des LLM : dimensionnement matériel ↔ modèle, choix et gestion de modèles, inspection. Distinct de `llm/local` (les runtimes d'inférence eux-mêmes, type Ollama ou llama.cpp) : ici on outille la décision, on ne sert pas le modèle.
+Comme pour `famille:`, l'ordre est la seule décision de conception : il est pris une fois, écrit
+ici, et vaut pour toutes les fiches. C'est lui — et non un arbitrage — qui range `WrenAI`
+(text-to-SQL gouverné) en `llm/*` plutôt qu'en `database/*` : D1 passe avant D3, et sans LLM
+WrenAI ne produit aucun SQL.
 
-## Outils Dev (`Dev/Outils/`) — `categorie: tooling/<sous-domaine>`
+| # | Question fermée | Si oui |
+|---|-----------------|--------|
+| D1 | L'objet a-t-il besoin d'un **grand modèle de langage** pour fonctionner ? | `llm/*` |
+| D2 | Entraîne-t-il, sert-il, suit-il ou explique-t-il un **modèle d'apprentissage** ? | `ml/*` |
+| D3 | **Stocke et interroge**-t-il des données de façon persistante ? | `database/*` |
+| D4 | **Déplace ou transforme**-t-il des données destinées à une **machine** ? | `data/*` |
+| D5 | Calcule-t-il des statistiques, du signal ou de l'optimisation mathématique ? | `stats/*`, `signal/*`, `math/*` |
+| D6 | Fournit-il de la **capacité de calcul** ou de **stockage brut** ? | `compute/*`, `storage/*` |
+| D7 | Sert-il à **exposer une application** à des utilisateurs ? | `web/*`, `ui/*` |
+| D8 | Porte-t-il sur **ce qui circule entre machines** ? | `network/*` |
+| D9 | Porte-t-il sur la **sécurité** ou le renseignement ? | `security/*` |
+| D10 | Sert-il à **déployer ou surveiller** du logiciel en production ? | `devops/*`, `observability/*` |
+| D11 | Sert-il à **fabriquer** du logiciel (écrire, tester, configurer, packager) ? | `devtools/*` |
+| D12 | Produit-il un document, un média ou un dessin pour un **humain** ? | `docs/*`, `media/*`, `design/*` |
+| D13 | Connecte-t-il des applications **sans code** ? | `automation/*` |
+| D14 | Aucun des précédents | **arrêt — demander avant d'inventer** |
 
-Outils techniques que l'on **utilise** (clients GUI, CLI, utilitaires) — par opposition aux services que l'on **déploie** (`Dev/Services/`). Même galaxie `dev` : tout ce qui est technique vit dans Dev.
+### Règles de départage du domaine
 
-> **Portée du champ `categorie:` pour un Outil.** Le sous-domaine est le plus souvent `tooling/<sous-domaine>`, mais pas obligatoirement : un outil dont le domaine existe déjà par ailleurs prend ce domaine (Sniffnet en `network/analysis`, osint4all en `security/osint`). La règle est le **domaine du sujet**, pas le dossier.
->
-> **Attention.** La **nature** de l'objet — on l'utilise, on le déploie, on l'importe — ne se lit ni dans `categorie:` ni dans `type:` : elle se lit dans `famille:` (cf. section *Axe `famille:`*). `type: outil` ne dit que le gabarit et le dossier ; il ne présume ni d'une interface graphique ni d'une commande shell.
+| # | Règle | Cas qu'elle résout |
+|---|-------|--------------------|
+| D-R1 | Le tri D1/D2 se fait sur ce dont l'objet **a besoin pour tourner**, pas sur ce à quoi il ressemble. Une bibliothèque qui inspecte des transformeurs sans appeler de LLM est `ml/*`. | TransformerLens, SAELens, nnsight, interpreto, sentence-transformers → `ml/*` |
+| D-R2 | `data/*` = sortie destinée à une **machine** ; `docs/*` = sortie destinée à un **humain**. | Stirling PDF → `docs/pdf` ; docTR, PyMuPDF → `data/parsing` |
+| D-R3 | Un classement **lexical** (BM25, TF-IDF) est du stockage-interrogation, pas du NLP : `database/recherche`. Le NLP commence là où il y a un modèle de langue. | bm25s, rank-bm25 → `database/recherche` |
+| D-R4 | Un moteur qui **indexe et interroge** est `database/recherche`, même s'il embarque des embeddings ou un pipeline RAG : c'est le stockage qui est son point d'entrée. `database/vecteur` est réservé aux moteurs dont l'unique index est vectoriel. | Marqo, txtai, Vespa, Elasticsearch → `database/recherche` ; Qdrant, Milvus, Weaviate → `database/vecteur` |
+| D-R5 | Une bibliothèque qui **cherche des hyperparamètres** est `ml/hyperopt`, même si son moteur d'exécution est distribué : le distribué est son moyen, pas son sujet. | Ray Tune → `ml/hyperopt` (et non `compute/distribue`) |
+| D-R6 | Un connecteur qui **rapatrie** des lignes vers un DataFrame est `data/ingestion` ; un `database/driver` transporte du SQL sans construire de table en mémoire. | connectorx → `data/ingestion` ; psycopg2, ADBC → `database/driver` |
+| D-R7 | `famille: annuaire` n'exonère pas du domaine (cf. section *famille*). Un annuaire multi-domaines prend le domaine de l'**intention de recherche** qui le fait ouvrir, et l'arbitrage s'écrit en clair dans le corps de la fiche. | public-apis → `web/api` |
 
-- `db-admin` — clients GUI et outils d'administration de bases (DBeaver, pgAdmin, Compass…)
-- `api` — clients d'API : composer, envoyer et tester des requêtes HTTP/REST/GraphQL/gRPC, gérer collections et environnements (Postman, Bruno, Insomnia…). Distinct de `tooling/test` (frameworks de test de code, type pytest).
-- `code-assistant` — assistants IA de codage intégrés à l'éditeur ou au terminal : complétion, chat, édition multi-fichiers, mode agent (Continue, Aider, Cline…). Distinct des frameworks d'apps LLM (`llm/framework`) : ce sont des outils que l'on utilise, pas des briques que l'on déploie.
-- `media` — ingestion / traitement de médias (vidéo, audio, image) pour donner à un assistant IA un input multimodal : téléchargement, extraction de frames, transcription (claude-video/`watch`…). Distinct de `code-assistant` (assistance au codage) et de `data/*` (données structurées / ELT).
-- `diagram` — outils de création de **diagrammes et schémas** (flowcharts, UML, réseau, isométrique, whiteboard) : éditeurs GUI (draw.io, FossFLOW, Excalidraw) comme approches diagram-as-code (Mermaid). Distinct de `tooling/viz` (visualisation de **données**) : ici on dessine des schémas, pas des graphiques de données.
-- `design` — outils de **design d'interface et de prototypage** UI/UX (Figma, Penpot) : maquettes, prototypes interactifs, systèmes de composants. Distinct de `diagram` (schémas techniques) : ici on conçoit des interfaces produit.
-- `document`, `video`, `capture`, `llm` — cf. définitions en section *Services Dev* ci-dessus : les mêmes sous-domaines servent aux deux natures (Stirling PDF est un service que l'on déploie, OpenCut un outil que l'on utilise, tous deux dans un domaine `tooling/*`).
+### Frontières disputées, écrites une fois
+
+- `ml/socle` (généraliste, toutes tâches, aucune hypothèse sur le type de données) **distinct de**
+  `ml/tabulaire` (spécialisé données en colonnes) : scikit-learn ne suppose rien du type de
+  données, XGBoost si.
+- `llm/socle` (LangChain, DSPy — on **assemble**) **distinct de** `llm/agents` (on orchestre une
+  boucle d'outils) et de `llm/rag` (on indexe et on récupère).
+- `llm/runtime` (**servir** le modèle) **distinct de** `llm/passerelle` (**router** vers des
+  fournisseurs) et de `llm/outillage` (**décider** quel modèle, sans le servir).
+- `data/*` (sortie machine) **distinct de** `docs/*` (sortie humaine) — règle D-R2.
+- `devtools/*` (**fabriquer** du logiciel) **distinct de** `devops/*` (le **déployer**) et de
+  `observability/*` (le **surveiller** une fois déployé).
+- `design/diagramme` (schémas techniques) **distinct de** `design/ui` (interfaces produit) et de
+  `data/viz` (graphiques de données).
+- `llm/agent-de-code` (assistants et agents de **codage**, quelle que soit leur famille : extension
+  d'IDE, CLI, application, plateforme de mémoire d'agent) **distinct de** `llm/agents` (briques
+  génériques d'orchestration d'agents, sans spécialisation code) et de `llm/assistant`
+  (application LLM prête à déployer pour un utilisateur final non développeur).
+- `database/admin` (clients et consoles d'administration de bases) **distinct de** `devtools/*` :
+  le sujet est la base, pas la fabrication de logiciel.
+
+### Sous-domaines qui prêtent à confusion
+
+Définitions reprises du vocabulaire historique — celles qui portaient une frontière réelle et
+qui survivent sous un nouveau nom. Les autres puces de l'ancienne taxonomie décrivaient des
+valeurs disparues et ne sont pas reconduites.
+
+- `database/driver` — pilote / adaptateur bas niveau d'accès à une base (DB-API 2.0, wrapper
+  libpq) : psycopg2, ADBC. Distinct de `database/orm` (mapping objet) : le driver transporte le
+  SQL, il n'abstrait pas le schéma. Et distinct de `data/ingestion` par D-R6.
+- `data/scraping` — récupération de données depuis des **pages web** : clients HTTP furtifs
+  (empreinte TLS), navigateurs headless, contournement d'anti-bot, parsing HTML. Distinct de
+  `data/ingestion` (connecteurs vers des sources structurées ou des API).
+- `data/parsing` — extraire du contenu **structuré pour une machine** d'un document, typiquement
+  pour du RAG. Distinct de `docs/pdf` (manipuler un document pour un humain — fusion, découpe,
+  rotation, signature) par D-R2.
+- `data/orchestration` — orchestration de pipelines de **données** en code (DAG, dépendances,
+  backfills) : Airflow, Dagster, Prefect. Distinct de `automation/no-code`, qui connecte des
+  **applications** par déclencheurs et actions dans un éditeur visuel de nœuds.
+- `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
+  l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
+  isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
+  déploiement d'applications de **confiance**) et de `compute/distribue` (calcul réparti sur
+  plusieurs nœuds).
+- `math/optimisation` — recherche opérationnelle et programmation mathématique : modélisation et
+  résolution (LP, MIP, optimisation convexe), modeleurs Python et bindings de solveurs. Distinct
+  de `ml/hyperopt` (chercher des hyperparamètres) et de `stats/*` (modélisation statistique).
+- `ml/eval` — bibliothèques de **métriques** et de validation de modèles ML (accuracy, F1, BLEU,
+  ROUGE). Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring
+  par juge) et du concept transverse porté par le tag `model-evaluation`.
+- `llm/memoire` — mémoire et **contexte** persistants d'un agent : compression du contexte
+  envoyé au modèle, élagage, réinjection à la demande, base de faits qui survit à la session.
+  Distinct de `llm/observabilite` (mesurer ce qui est envoyé) et de `database/vecteur` (l'index
+  qui la stocke éventuellement).
+- `network/analyse` — observation et analyse du **trafic** (qui parle à qui, ports, protocoles,
+  volumes, alertes). Distinct d'`observability/supervision`, qui instrumente des machines et des
+  applications *depuis l'intérieur*.
+- `network/transfert` — transfert de fichiers de machine à machine (chiffrement, relais, reprise).
+- `security/recon` — reconnaissance d'une cible **depuis l'extérieur**, sans accès privilégié
+  (DNS, TLS, en-têtes, technologies détectées), et **renseignement en sources ouvertes** :
+  l'ancienne distinction `recon` / `osint` ne portait aucune conséquence, les deux valeurs sont
+  fusionnées. Distinct du tag `ai-security` (surface d'attaque des systèmes LLM).
+- `observability/supervision` — surveiller du logiciel **déployé** : métriques, journaux, état
+  des machines et des conteneurs, tableaux de bord, alertes. L'ancien découpage
+  `log` / `metric` / `trace` / `infra` n'a jamais dépassé une page par valeur ; il est fusionné.
+  Distinct de `ml/monitoring` (dérive de modèle).
+- `devtools/client-api` — clients d'API : composer, envoyer et tester des requêtes
+  HTTP/REST/GraphQL/gRPC, gérer collections et environnements. Distinct de `devtools/test`
+  (frameworks de test de code, type pytest).
+- `docs/capture` — **capture de contenu** externe vers un format texte réutilisable : page web ou
+  document converti en Markdown, à l'unité, par un geste manuel. Distinct de `data/scraping`
+  (extraction programmatique et à l'échelle).
+- `media/ingestion` — ingestion et traitement de médias (vidéo, audio, image) pour donner à un
+  assistant IA un **input** multimodal : téléchargement, extraction de frames, transcription.
+  Distinct de `media/video` (montage, production, lecture — le média est la finalité) et de
+  `signal/*` (traitement du signal comme objet d'étude).
+
+### Les 20 préfixes de tête et leur hub
+
+Un préfixe = un hub `MOC/Categories/<libellé>`, généré par `AI/scripts/build_mocs.py` (table
+`CAT_LABEL`). Un préfixe sans libellé sort en anglais capitalisé : **ajouter le libellé en même
+temps que le préfixe**.
+
+| Préfixe | Hub `MOC/Categories/` | Portée |
+|---------|----------------------|--------|
+| `ml` | Machine Learning | entraîner, servir, suivre, expliquer un modèle |
+| `llm` | LLM & IA générative | tout ce qui a besoin d'un LLM pour fonctionner |
+| `database` | Bases de données | stocker et interroger de façon persistante |
+| `data` | Data & pipelines | déplacer et transformer de la donnée pour une machine |
+| `devtools` | Outils de développement | fabriquer du logiciel : écrire, tester, configurer, packager |
+| `stats` | Statistiques & inférence | inférence, bayésien, exploratoire, causal |
+| `compute` | Calcul distribué | capacité de calcul : distribué, GPU, à la demande |
+| `design` | Design & diagrammes | dessin pour un humain : schémas, interfaces |
+| `storage` | Stockage | stockage brut d'objets |
+| `web` | Web & API | exposer une application par HTTP |
+| `automation` | Automatisation no-code | connecter des applications sans code |
+| `media` | Médias | vidéo, audio, image pour un humain |
+| `ui` | Interfaces & apps data | interfaces data et démos de modèle |
+| `observability` | Observabilité | surveiller du logiciel déployé |
+| `security` | Sécurité | sécurité et renseignement |
+| `signal` | Signal & audio | traitement du signal, audio |
+| `network` | Réseau | ce qui circule entre machines |
+| `devops` | DevOps | déployer du logiciel en production |
+| `docs` | Documents | produire un document pour un humain |
+| `math` | Mathématiques | optimisation mathématique, recherche opérationnelle |
 
 ## Concepts Wiki (`Wiki/Concepts/`) — `categorie: concept/<sous-domaine>`
 

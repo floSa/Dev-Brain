@@ -4,7 +4,7 @@ type: service
 nom: PuLP
 alias: [pulp]
 pitch: "Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…)."
-categorie: tooling/optim
+categorie: math/optimisation
 famille: paquet
 licence_type: open-source
 hosted: self

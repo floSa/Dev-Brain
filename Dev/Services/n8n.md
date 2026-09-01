@@ -4,7 +4,7 @@ type: service
 nom: n8n
 alias: [n8n.io, n8n-io]
 pitch: "Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud."
-categorie: automation/workflow
+categorie: automation/no-code
 famille: plateforme
 licence_type: source-available
 hosted: both

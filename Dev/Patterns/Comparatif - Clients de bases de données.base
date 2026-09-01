@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Outils/")
-    - categorie == "tooling/db-admin"
+    - categorie == "database/admin"
 views:
   - type: table
     name: Clients de bases de données

@@ -4,7 +4,7 @@ type: service
 nom: Typer
 alias: [typer]
 pitch: "Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click."
-categorie: tooling/package
+categorie: devtools/cli
 famille: paquet
 licence_type: open-source
 hosted: self

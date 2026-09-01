@@ -1,8 +1,11 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "ml/framework"
-    - file.hasTag("reinforcement-learning")
+    # `ml/rl` existe desormais comme domaine : le detour par le tag
+    # `reinforcement-learning` (C3 — un tag employe faute de categorie) n'a plus
+    # d'objet. Les fiches de fine-tuning par RL (TRL, Tunix) restent en
+    # `llm/finetuning` et n'entrent donc pas ici, comme avant.
+    - categorie == "ml/rl"
 views:
   - type: table
     name: Libs RL

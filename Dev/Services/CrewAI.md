@@ -4,7 +4,7 @@ type: service
 nom: CrewAI
 alias: [crewai, crew-ai]
 pitch: "Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production."
-categorie: llm/framework
+categorie: llm/agents
 famille: paquet
 licence_type: open-source
 hosted: both

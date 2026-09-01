@@ -4,7 +4,7 @@ type: service
 nom: PyTorch Lightning
 alias: [pytorch-lightning, lightning, pl, lightning ai, fabric]
 pitch: "Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code."
-categorie: ml/framework
+categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
 hosted: self

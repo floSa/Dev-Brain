@@ -1,10 +1,10 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
+    # `database/wide-column` a fusionne dans `database/cle-valeur` (Cassandra).
     - or:
         - categorie == "database/document"
-        - categorie == "database/keyvalue"
-        - categorie == "database/wide-column"
+        - categorie == "database/cle-valeur"
 views:
   - type: table
     name: Bases NoSQL

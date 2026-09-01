@@ -4,7 +4,7 @@ type: service
 nom: Prisma
 alias: [prisma, prisma orm]
 pitch: "ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées."
-categorie: framework/orm
+categorie: database/orm
 famille: paquet
 licence_type: open-source
 hosted: self

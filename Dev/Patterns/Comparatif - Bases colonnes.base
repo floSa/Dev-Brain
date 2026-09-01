@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/columnar"
+    - categorie == "database/analytique"
 views:
   - type: table
     name: Bases colonnes / OLAP

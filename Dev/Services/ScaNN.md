@@ -4,7 +4,7 @@ type: service
 nom: ScaNN
 alias: [scann, scalable-nearest-neighbors]
 pitch: "Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes."
-categorie: database/vector
+categorie: database/vecteur
 famille: paquet
 licence_type: open-source
 hosted: self

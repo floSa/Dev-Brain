@@ -4,7 +4,7 @@ type: service
 nom: pytorch-crf
 alias: [torchcrf, pytorch crf, conditional random field pytorch]
 pitch: "Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence."
-categorie: ml/framework
+categorie: ml/nlp
 famille: paquet
 licence_type: open-source
 hosted: self

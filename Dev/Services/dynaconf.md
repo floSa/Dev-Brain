@@ -4,7 +4,7 @@ type: service
 nom: dynaconf
 alias: [Dynaconf]
 pitch: "Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets."
-categorie: tooling/package
+categorie: devtools/config
 famille: paquet
 licence_type: open-source
 hosted: self

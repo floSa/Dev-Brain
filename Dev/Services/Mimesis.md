@@ -4,7 +4,7 @@ type: service
 nom: Mimesis
 alias: [mimesis, lk-geimfari mimesis]
 pitch: "Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test."
-categorie: tooling/data
+categorie: data/synthetique
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: LangChain SQL agent
 alias: [langchain sql, langchain text-to-sql, create_sql_agent, SQLDatabaseToolkit, langgraph sql agent]
 pitch: "Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle."
-categorie: llm/framework-module
+categorie: llm/text-to-sql
 famille: paquet
 licence_type: open-source
 hosted: self

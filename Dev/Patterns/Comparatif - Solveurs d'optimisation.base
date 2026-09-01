@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "tooling/optim"
+    - categorie == "math/optimisation"
 views:
   - type: table
     name: Solveurs d'optimisation

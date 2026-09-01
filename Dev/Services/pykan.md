@@ -4,7 +4,7 @@ type: service
 nom: pykan
 alias: [KAN python, kindxiaoming pykan]
 pitch: "Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance."
-categorie: ml/framework
+categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
 hosted: self

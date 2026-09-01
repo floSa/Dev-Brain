@@ -4,7 +4,7 @@ type: outil
 nom: Claude Video
 alias: [watch, claude-video]
 pitch: "Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse."
-categorie: tooling/media
+categorie: media/ingestion
 famille: extension
 domaines: [ai-eng]
 licence_type: open-source

@@ -4,7 +4,7 @@ type: service
 nom: bm25s
 alias: [bm25-sparse, bm25 sparse]
 pitch: "Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée."
-categorie: ml/framework
+categorie: database/recherche
 famille: paquet
 licence_type: open-source
 hosted: self

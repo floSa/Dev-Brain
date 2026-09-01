@@ -4,7 +4,7 @@ type: service
 nom: Elasticsearch
 alias: [elasticsearch, elastic, es]
 pitch: "Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle."
-categorie: database/search
+categorie: database/recherche
 famille: plateforme
 licence_type: open-source
 hosted: both

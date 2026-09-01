@@ -4,7 +4,7 @@ type: service
 nom: PyTorch Geometric
 alias: [PyG, pyg, torch-geometric, torch_geometric]
 pitch: "Bibliothèque de référence de deep learning sur graphes pour PyTorch — couches de message passing (GCN, GAT, GraphSAGE…), mini-batching par voisinage et datasets de graphes prêts à l'emploi pour construire et entraîner des GNN."
-categorie: ml/framework
+categorie: ml/graphe
 famille: paquet
 licence_type: open-source
 hosted: self

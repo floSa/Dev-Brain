@@ -4,7 +4,7 @@ type: service
 nom: TGI
 alias: [tgi, text-generation-inference]
 pitch: "Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF."
-categorie: llm/local
+categorie: llm/runtime
 famille: plateforme
 licence_type: open-source
 hosted: both

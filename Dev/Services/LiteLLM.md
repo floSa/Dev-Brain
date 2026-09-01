@@ -4,7 +4,7 @@ type: service
 nom: LiteLLM
 alias: [litellm, BerriAI-litellm]
 pitch: "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous."
-categorie: llm/framework
+categorie: llm/passerelle
 famille: plateforme
 licence_type: open-source
 hosted: both

@@ -4,7 +4,7 @@ type: outil
 nom: draw.io
 alias: [diagrams.net, drawio, draw io]
 pitch: "Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable."
-categorie: tooling/diagram
+categorie: design/diagramme
 famille: application
 domaines: []
 licence_type: open-source

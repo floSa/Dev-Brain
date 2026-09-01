@@ -4,7 +4,7 @@ type: service
 nom: Helicone
 alias: [helicone]
 pitch: "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode."
-categorie: llm/observability
+categorie: llm/observabilite
 famille: plateforme
 licence_type: open-source
 hosted: both

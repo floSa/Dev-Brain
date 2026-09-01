@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/relational"
+    - categorie == "database/relationnel"
 views:
   - type: table
     name: Bases relationnelles

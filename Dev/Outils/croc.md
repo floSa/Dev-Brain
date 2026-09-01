@@ -4,7 +4,7 @@ type: outil
 nom: croc
 alias: [croc, schollz/croc]
 pitch: "Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire."
-categorie: network/transfer
+categorie: network/transfert
 famille: cli
 domaines: [infra-ops]
 licence_type: open-source

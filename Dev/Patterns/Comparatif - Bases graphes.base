@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/graph"
+    - categorie == "database/graphe"
 views:
   - type: table
     name: Bases graphes

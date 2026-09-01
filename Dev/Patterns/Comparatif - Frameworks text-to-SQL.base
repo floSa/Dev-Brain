@@ -1,7 +1,10 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - tags.contains("text-to-sql")
+    # `llm/text-to-sql` existe desormais comme domaine, et absorbe les deux
+    # ex-`llm/framework-module` : le detour par le tag n'a plus d'objet.
+    # Memes 5 membres.
+    - categorie == "llm/text-to-sql"
 views:
   - type: table
     name: Text-to-SQL (frameworks + modules)

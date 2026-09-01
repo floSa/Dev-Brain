@@ -4,7 +4,7 @@ type: service
 nom: Ollama
 alias: [ollama]
 pitch: "Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage."
-categorie: llm/local
+categorie: llm/runtime
 famille: plateforme
 licence_type: open-source
 hosted: self

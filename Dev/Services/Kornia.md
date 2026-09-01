@@ -4,7 +4,7 @@ type: service
 nom: Kornia
 alias: [kornia, kornia.augmentation]
 pitch: "Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement."
-categorie: ml/framework
+categorie: ml/vision
 famille: paquet
 licence_type: open-source
 hosted: self

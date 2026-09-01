@@ -4,7 +4,7 @@ type: service
 nom: vLLM
 alias: [vllm]
 pitch: "Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU."
-categorie: llm/local
+categorie: llm/runtime
 famille: plateforme
 licence_type: open-source
 hosted: self

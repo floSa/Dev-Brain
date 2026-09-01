@@ -4,7 +4,7 @@ type: service
 nom: statsforecast
 alias: [nixtla-statsforecast]
 pitch: "Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray)."
-categorie: ml/framework
+categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
 hosted: self

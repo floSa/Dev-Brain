@@ -4,7 +4,7 @@ type: service
 nom: Ultralytics YOLO
 alias: [YOLO, ultralytics, YOLOv8, YOLO11, YOLO26]
 pitch: "Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0."
-categorie: ml/framework
+categorie: ml/vision
 famille: modele
 licence_type: open-source
 hosted: self

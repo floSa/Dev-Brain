@@ -4,7 +4,7 @@ type: outil
 nom: Penpot
 alias: [penpot]
 pitch: "Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte."
-categorie: tooling/design
+categorie: design/ui
 famille: application
 domaines: []
 licence_type: open-source

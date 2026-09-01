@@ -4,7 +4,7 @@ type: service
 nom: Pinecone
 alias: [pinecone]
 pitch: "Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire."
-categorie: database/vector
+categorie: database/vecteur
 famille: saas
 licence_type: proprietary
 hosted: managed

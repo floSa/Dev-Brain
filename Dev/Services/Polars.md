@@ -4,7 +4,7 @@ type: service
 nom: Polars
 alias: [polars, py-polars]
 pitch: "DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core."
-categorie: tooling/data
+categorie: data/tableau
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: Instructor
 alias: [instructor, 567-labs-instructor]
 pitch: "Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages."
-categorie: llm/framework
+categorie: llm/sortie-structuree
 famille: paquet
 licence_type: open-source
 hosted: self

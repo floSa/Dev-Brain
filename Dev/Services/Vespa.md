@@ -4,7 +4,7 @@ type: service
 nom: Vespa
 alias: [vespa, vespa.ai, vespa-engine]
 pitch: "Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms."
-categorie: database/search
+categorie: database/recherche
 famille: plateforme
 licence_type: open-source
 hosted: both

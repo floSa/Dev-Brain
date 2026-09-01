@@ -4,7 +4,7 @@ type: service
 nom: TF-Agents
 alias: [tf-agents, tf agents, tensorflow agents]
 pitch: "Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème."
-categorie: ml/framework
+categorie: ml/rl
 famille: paquet
 licence_type: open-source
 hosted: self

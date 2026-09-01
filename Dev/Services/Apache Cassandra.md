@@ -4,7 +4,7 @@ type: service
 nom: Apache Cassandra
 alias: [cassandra, apache cassandra]
 pitch: "Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter."
-categorie: database/wide-column
+categorie: database/cle-valeur
 famille: plateforme
 licence_type: open-source
 hosted: both

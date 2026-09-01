@@ -4,7 +4,7 @@ type: service
 nom: LangGraph
 alias: [langgraph, langchain-ai-langgraph]
 pitch: "Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain."
-categorie: llm/framework
+categorie: llm/agents
 famille: paquet
 licence_type: open-source
 hosted: self

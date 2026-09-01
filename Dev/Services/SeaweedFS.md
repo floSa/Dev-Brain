@@ -4,7 +4,7 @@ type: service
 nom: SeaweedFS
 alias: [seaweedfs, seaweed, weed]
 pitch: "Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0."
-categorie: storage
+categorie: storage/objet
 famille: plateforme
 licence_type: open-source
 hosted: self

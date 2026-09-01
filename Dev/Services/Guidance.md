@@ -4,7 +4,7 @@ type: service
 nom: Guidance
 alias: [guidance, guidance-ai]
 pitch: "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing."
-categorie: llm/framework
+categorie: llm/sortie-structuree
 famille: paquet
 licence_type: open-source
 hosted: self

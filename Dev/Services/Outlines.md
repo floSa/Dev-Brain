@@ -4,7 +4,7 @@ type: service
 nom: Outlines
 alias: [outlines, dottxt-outlines]
 pitch: "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas."
-categorie: llm/framework
+categorie: llm/sortie-structuree
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: albumentations
 alias: [albu, albumentations-team]
 pitch: "Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision."
-categorie: ml/framework
+categorie: ml/vision
 famille: paquet
 licence_type: open-source
 hosted: self

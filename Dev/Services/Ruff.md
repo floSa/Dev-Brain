@@ -4,7 +4,7 @@ type: service
 nom: Ruff
 alias: [ruff]
 pitch: "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil."
-categorie: tooling/lint
+categorie: devtools/qualite
 famille: cli
 licence_type: open-source
 hosted: self

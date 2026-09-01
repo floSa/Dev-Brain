@@ -4,7 +4,7 @@ type: service
 nom: PyTorch
 alias: [torch, pytorch, libtorch]
 pitch: "Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche."
-categorie: ml/framework
+categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
 hosted: self

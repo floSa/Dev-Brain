@@ -4,7 +4,7 @@ type: service
 nom: Semantic Kernel
 alias: [semantic-kernel, SK]
 pitch: "SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur."
-categorie: llm/framework
+categorie: llm/agents
 famille: paquet
 licence_type: open-source
 hosted: self

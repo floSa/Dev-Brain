@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "tooling/migration"
+    - categorie == "database/migration"
 views:
   - type: table
     name: Outils de migration

@@ -4,7 +4,7 @@ type: service
 nom: Alembic
 alias: [alembic]
 pitch: "Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle."
-categorie: tooling/migration
+categorie: database/migration
 famille: paquet
 licence_type: open-source
 hosted: self

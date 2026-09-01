@@ -4,7 +4,7 @@ type: service
 nom: gumloop
 alias: [Gumloop, gumloop.com]
 pitch: "Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host."
-categorie: automation/ai-agent
+categorie: automation/no-code
 famille: saas
 licence_type: proprietary
 hosted: managed

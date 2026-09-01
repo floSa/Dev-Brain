@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "framework/orm"
+    - categorie == "database/orm"
 views:
   - type: table
     name: ORM

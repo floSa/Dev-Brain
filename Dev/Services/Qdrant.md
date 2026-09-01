@@ -4,7 +4,7 @@ type: service
 nom: Qdrant
 alias: [qdrant]
 pitch: "Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple."
-categorie: database/vector
+categorie: database/vecteur
 famille: plateforme
 licence_type: open-source
 hosted: both

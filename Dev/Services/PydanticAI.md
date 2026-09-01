@@ -4,7 +4,7 @@ type: service
 nom: PydanticAI
 alias: [pydantic-ai, pydanticai]
 pitch: "Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution)."
-categorie: llm/framework
+categorie: llm/agents
 famille: paquet
 licence_type: open-source
 hosted: self

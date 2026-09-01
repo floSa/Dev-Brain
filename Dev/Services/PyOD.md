@@ -4,7 +4,7 @@ type: service
 nom: PyOD
 alias: [Python Outlier Detection, pyod]
 pitch: "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une."
-categorie: ml/framework
+categorie: ml/non-supervise
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: Annoy
 alias: [annoy, approximate-nearest-neighbors-oh-yeah]
 pitch: "Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance."
-categorie: database/vector
+categorie: database/vecteur
 famille: paquet
 licence_type: open-source
 hosted: self

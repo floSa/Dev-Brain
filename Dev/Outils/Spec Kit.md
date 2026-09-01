@@ -4,7 +4,7 @@ type: outil
 nom: Spec Kit
 alias: [spec-kit, specify, specify-cli, spec-driven development, SDD]
 pitch: "CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement)."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: extension
 domaines: [ai-eng]
 licence_type: open-source

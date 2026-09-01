@@ -4,7 +4,7 @@ type: service
 nom: rank-bm25
 alias: [rank_bm25, bm25 python, okapi bm25 python]
 pitch: "Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse."
-categorie: ml/framework
+categorie: database/recherche
 famille: paquet
 licence_type: open-source
 hosted: self

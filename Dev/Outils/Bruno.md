@@ -4,7 +4,7 @@ type: outil
 nom: Bruno
 alias: [bruno, usebruno]
 pitch: "Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud."
-categorie: tooling/api
+categorie: devtools/client-api
 famille: application
 domaines: [data-eng, ai-eng]
 licence_type: open-source

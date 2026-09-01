@@ -4,7 +4,7 @@ type: service
 nom: scipy.signal
 alias: [scipy, scipy signal, scipy.fft]
 pitch: "Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy."
-categorie: tooling/data
+categorie: signal/traitement
 famille: paquet
 licence_type: open-source
 hosted: self

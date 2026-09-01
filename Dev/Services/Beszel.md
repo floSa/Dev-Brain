@@ -4,7 +4,7 @@ type: service
 nom: Beszel
 alias: [beszel, henrygd/beszel]
 pitch: "Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents."
-categorie: observability/infra
+categorie: observability/supervision
 famille: plateforme
 licence_type: open-source
 hosted: self

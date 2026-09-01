@@ -4,7 +4,7 @@ type: service
 nom: scipy.stats
 alias: [SciPy stats]
 pitch: "Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy."
-categorie: tooling/stats
+categorie: stats/inference
 famille: paquet
 licence_type: open-source
 hosted: self

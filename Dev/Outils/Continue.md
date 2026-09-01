@@ -4,7 +4,7 @@ type: outil
 nom: Continue
 alias: [continue, continue.dev, continuedev]
 pitch: "Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API)."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: extension
 domaines: [ai-eng]
 licence_type: open-source

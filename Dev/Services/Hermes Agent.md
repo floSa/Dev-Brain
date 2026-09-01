@@ -4,7 +4,7 @@ type: service
 nom: Hermes Agent
 alias: [hermes-agent, nous-hermes-agent]
 pitch: "Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU."
-categorie: llm/framework
+categorie: llm/assistant
 famille: plateforme
 licence_type: open-source
 hosted: self

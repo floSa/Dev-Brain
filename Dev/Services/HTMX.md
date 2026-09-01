@@ -4,7 +4,7 @@ type: service
 nom: HTMX
 alias: [htmx]
 pitch: "Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd."
-categorie: framework/frontend
+categorie: web/frontend
 famille: paquet
 licence_type: open-source
 hosted: self

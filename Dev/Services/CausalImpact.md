@@ -4,7 +4,7 @@ type: service
 nom: CausalImpact
 alias: [tfcausalimpact, tfp-causalimpact, pycausalimpact]
 pitch: "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle."
-categorie: tooling/stats
+categorie: stats/causal
 famille: paquet
 licence_type: open-source
 hosted: self

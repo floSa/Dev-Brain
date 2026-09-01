@@ -4,7 +4,7 @@ type: service
 nom: TransformerLens
 alias: [transformer_lens, HookedTransformer, TransformerBridge]
 pitch: "Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris."
-categorie: ml/framework
+categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: pip
 alias: []
 pitch: "Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout."
-categorie: tooling/package
+categorie: devtools/paquet
 famille: cli
 licence_type: open-source
 hosted: self

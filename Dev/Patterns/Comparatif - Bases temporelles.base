@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/timeseries"
+    - categorie == "database/series-temporelles"
 views:
   - type: table
     name: Bases temporelles

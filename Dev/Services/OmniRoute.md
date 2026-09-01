@@ -4,7 +4,7 @@ type: service
 nom: OmniRoute
 alias: [omniroute]
 pitch: "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production."
-categorie: llm/framework
+categorie: llm/passerelle
 famille: plateforme
 licence_type: open-source
 hosted: self

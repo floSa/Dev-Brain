@@ -4,7 +4,7 @@ type: service
 nom: SAELens
 alias: [sae_lens, SAE Lens, HookedSAETransformer]
 pitch: "Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens."
-categorie: ml/framework
+categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: Ceph
 alias: [ceph, rados, radosgw, rgw]
 pitch: "Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde."
-categorie: storage
+categorie: storage/objet
 famille: plateforme
 licence_type: open-source
 hosted: self

@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "database/vector"
+    - categorie == "database/vecteur"
 views:
   - type: table
     name: Bases vectorielles

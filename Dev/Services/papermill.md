@@ -4,7 +4,7 @@ type: service
 nom: papermill
 alias: [Papermill]
 pitch: "Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI."
-categorie: tooling/notebook
+categorie: devtools/notebook
 famille: paquet
 licence_type: open-source
 hosted: self

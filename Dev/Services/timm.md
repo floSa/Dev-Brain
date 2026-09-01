@@ -4,7 +4,7 @@ type: service
 nom: timm
 alias: [pytorch-image-models, PyTorch Image Models, torch image models]
 pitch: "La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision."
-categorie: ml/framework
+categorie: ml/vision
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: sweetviz
 alias: [Sweetviz]
 pitch: "EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes)."
-categorie: tooling/viz
+categorie: data/eda
 famille: paquet
 licence_type: open-source
 hosted: self

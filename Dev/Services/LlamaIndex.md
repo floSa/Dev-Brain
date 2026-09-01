@@ -4,7 +4,7 @@ type: service
 nom: LlamaIndex
 alias: [llamaindex, llama-index, llama_index, run-llama, GPT Index]
 pitch: "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances."
-categorie: llm/framework
+categorie: llm/rag
 famille: paquet
 licence_type: open-source
 hosted: self

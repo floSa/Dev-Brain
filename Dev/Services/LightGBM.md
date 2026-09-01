@@ -4,7 +4,7 @@ type: service
 nom: LightGBM
 alias: [lightgbm, lgbm, Light Gradient Boosting Machine]
 pitch: "Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes."
-categorie: ml/framework
+categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
 hosted: self

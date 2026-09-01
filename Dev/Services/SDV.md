@@ -4,7 +4,7 @@ type: service
 nom: SDV
 alias: [Synthetic Data Vault, sdv, sdv-dev]
 pitch: "Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL)."
-categorie: ml/framework
+categorie: data/synthetique
 famille: paquet
 licence_type: source-available
 hosted: self

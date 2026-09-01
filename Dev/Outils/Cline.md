@@ -4,7 +4,7 @@ type: outil
 nom: Cline
 alias: [cline]
 pitch: "Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: extension
 domaines: [ai-eng]
 licence_type: open-source

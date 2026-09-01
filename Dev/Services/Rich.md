@@ -4,7 +4,7 @@ type: service
 nom: Rich
 alias: [rich]
 pitch: "Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes."
-categorie: tooling/package
+categorie: devtools/cli
 famille: paquet
 licence_type: open-source
 hosted: self

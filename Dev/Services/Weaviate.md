@@ -4,7 +4,7 @@ type: service
 nom: Weaviate
 alias: [weaviate]
 pitch: "Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé."
-categorie: database/vector
+categorie: database/vecteur
 famille: plateforme
 licence_type: open-source
 hosted: both

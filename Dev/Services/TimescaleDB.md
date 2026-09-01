@@ -4,7 +4,7 @@ type: service
 nom: TimescaleDB
 alias: [timescaledb, timescale]
 pitch: "Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres."
-categorie: database/timeseries
+categorie: database/series-temporelles
 famille: extension
 licence_type: open-source
 hosted: both

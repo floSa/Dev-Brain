@@ -4,7 +4,7 @@ type: service
 nom: pmdarima
 alias: [pyramid-arima, auto-arima, pmd]
 pitch: "AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels."
-categorie: ml/framework
+categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
 hosted: self

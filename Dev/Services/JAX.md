@@ -4,7 +4,7 @@ type: service
 nom: JAX
 alias: [jax, google-jax, jax-ml]
 pitch: "Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche."
-categorie: ml/framework
+categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
 hosted: self

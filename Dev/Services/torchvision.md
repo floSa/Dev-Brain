@@ -4,7 +4,7 @@ type: service
 nom: torchvision
 alias: [torch vision, tv, torchvision.transforms]
 pitch: "Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch."
-categorie: ml/framework
+categorie: ml/vision
 famille: paquet
 licence_type: open-source
 hosted: self

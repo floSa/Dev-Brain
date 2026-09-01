@@ -4,7 +4,7 @@ type: service
 nom: DB-GPT
 alias: [dbgpt, db gpt, db-gpt, eosphoros db-gpt]
 pitch: "Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python."
-categorie: llm/framework
+categorie: llm/text-to-sql
 famille: plateforme
 licence_type: open-source
 hosted: self

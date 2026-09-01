@@ -4,7 +4,7 @@ type: service
 nom: MinIO
 alias: [minio]
 pitch: "Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3."
-categorie: storage
+categorie: storage/objet
 famille: plateforme
 licence_type: open-source
 hosted: self

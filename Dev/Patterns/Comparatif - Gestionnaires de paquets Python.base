@@ -1,7 +1,8 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - file.hasTag("package-manager")
+    # `devtools/paquet` existe desormais comme domaine. Memes 2 membres.
+    - categorie == "devtools/paquet"
 views:
   - type: table
     name: Gestionnaires de paquets Python

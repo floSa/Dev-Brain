@@ -4,7 +4,7 @@ type: service
 nom: pingouin
 alias: []
 pitch: "Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas."
-categorie: tooling/stats
+categorie: stats/inference
 famille: paquet
 licence_type: open-source
 hosted: self

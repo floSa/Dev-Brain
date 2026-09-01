@@ -4,7 +4,7 @@ type: service
 nom: testcontainers
 alias: [testcontainers-python, Testcontainers]
 pitch: "Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement."
-categorie: tooling/test
+categorie: devtools/test
 famille: paquet
 licence_type: open-source
 hosted: self

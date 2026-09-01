@@ -4,7 +4,7 @@ type: outil
 nom: freebuff
 alias: [Freebuff, Codebuff]
 pitch: "Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: cli
 domaines: [ai-eng]
 licence_type: open-core

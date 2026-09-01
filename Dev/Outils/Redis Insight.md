@@ -4,7 +4,7 @@ type: outil
 nom: Redis Insight
 alias: [redisinsight, redis insight]
 pitch: "Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search)."
-categorie: tooling/db-admin
+categorie: database/admin
 famille: application
 domaines: [data-eng]
 licence_type: source-available

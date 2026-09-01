@@ -4,7 +4,7 @@ type: service
 nom: segment-anything
 alias: [SAM, Segment Anything Model, sam2, sam3]
 pitch: "Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte)."
-categorie: ml/framework
+categorie: ml/vision
 famille: modele
 licence_type: open-source
 hosted: self

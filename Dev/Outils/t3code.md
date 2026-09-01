@@ -4,7 +4,7 @@ type: outil
 nom: t3code
 alias: [t3, T3 Code, t3.codes]
 pitch: "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: application
 domaines: [ai-eng]
 licence_type: open-source
@@ -23,7 +23,7 @@ url_repo: https://github.com/pingdotgg/t3code
 
 t3code (MIT, TypeScript) n'est pas un assistant de codage : c'est une **surface de contrôle au-dessus d'assistants**. Le README parle d'*agent harness control surface*. Il ne se connecte à aucun LLM directement — il pilote des CLI d'agents déjà installées sur la machine : Claude Code, Codex, Cursor, OpenCode, Grok. L'intérêt est la supervision : lancer, suivre et reprendre plusieurs sessions d'agents depuis une interface unique, en desktop Electron, en web local, ou depuis les applications iOS et Android (accès distant décrit dans la doc). Gratuit sans réserve : pas de revente de tokens, pas de palier payant — le coût reste celui des abonnements agents déjà souscrits.
 
-Sur la taxonomie du brain, la catégorie retenue est `tooling/code-assistant` faute de case « orchestration / supervision d'agents » : c'est le rangement le moins faux, pas le rangement juste.
+Sur la taxonomie du brain, la catégorie retenue est `llm/agent-de-code` faute de case « orchestration / supervision d'agents » : c'est le rangement le moins faux, pas le rangement juste. La réserve tient toujours après la refonte des domaines — c'est la nature qui a gagné en précision (`famille: application`), pas le sujet.
 
 ## Quand l'utiliser
 

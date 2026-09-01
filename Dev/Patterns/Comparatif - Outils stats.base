@@ -1,7 +1,11 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "tooling/stats"
+    # `tooling/stats` a eclate en 4 sous-domaines `stats/*` (inference, bayesien,
+    # exploratoire, causal). Le comparatif porte sur le prefixe entier : c'est son
+    # perimetre historique, et il gagne `lifelines` (analyse de survie), qui etait
+    # range en `ml/framework`.
+    - categorie.startsWith("stats/")
 views:
   - type: table
     name: Outils stats

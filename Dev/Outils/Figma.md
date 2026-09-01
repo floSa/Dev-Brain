@@ -4,7 +4,7 @@ type: outil
 nom: Figma
 alias: [figma]
 pitch: "Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit."
-categorie: tooling/design
+categorie: design/ui
 famille: saas
 domaines: []
 licence_type: proprietary

@@ -4,7 +4,7 @@ type: outil
 nom: MySQL Workbench
 alias: [mysql workbench, workbench]
 pitch: "Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur."
-categorie: tooling/db-admin
+categorie: database/admin
 famille: application
 domaines: [data-eng]
 licence_type: open-source

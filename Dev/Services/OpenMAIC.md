@@ -4,7 +4,7 @@ type: service
 nom: OpenMAIC
 alias: [openmaic, maic, open-multi-agent-interactive-classroom]
 pitch: "Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé."
-categorie: llm/app
+categorie: llm/assistant
 famille: application
 licence_type: open-source
 hosted: both

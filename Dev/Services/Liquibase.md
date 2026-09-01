@@ -4,7 +4,7 @@ type: service
 nom: Liquibase
 alias: [liquibase]
 pitch: "Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD."
-categorie: tooling/migration
+categorie: database/migration
 famille: cli
 licence_type: open-core
 hosted: self

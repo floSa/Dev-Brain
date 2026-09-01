@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - categorie == "llm/local"
+    - categorie == "llm/runtime"
 views:
   - type: table
     name: Exécution & serving LLM

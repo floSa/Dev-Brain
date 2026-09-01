@@ -4,7 +4,7 @@ type: outil
 nom: Graphify
 alias: [graphify, graphifyy]
 pitch: "Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: cli
 domaines: [ai-eng]
 licence_type: open-source

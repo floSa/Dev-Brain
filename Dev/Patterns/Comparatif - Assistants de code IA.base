@@ -1,7 +1,7 @@
 filters:
   and:
     - file.path.startsWith("Dev/Outils/")
-    - categorie == "tooling/code-assistant"
+    - categorie == "llm/agent-de-code"
 views:
   - type: table
     name: Assistants de code IA

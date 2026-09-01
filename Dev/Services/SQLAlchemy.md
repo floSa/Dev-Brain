@@ -4,7 +4,7 @@ type: service
 nom: SQLAlchemy
 alias: [sqlalchemy]
 pitch: "Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0."
-categorie: framework/orm
+categorie: database/orm
 famille: paquet
 licence_type: open-source
 hosted: self

@@ -4,7 +4,7 @@ type: service
 nom: jupysql
 alias: [JupySQL, jupysql]
 pitch: "SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats."
-categorie: tooling/notebook
+categorie: devtools/notebook
 famille: extension
 licence_type: open-source
 hosted: self

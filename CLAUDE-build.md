@@ -77,7 +77,7 @@ type: outil
 nom: <Name>
 alias: []
 pitch: "<une ligne>"
-categorie: tooling/<famille>          # ex: tooling/db-admin, tooling/api, tooling/code-assistant
+categorie: <domaine>/<sous-domaine>   # ex: database/admin, devtools/client-api, llm/agent-de-code
 domaines: [<data-eng, ai-eng, ...>]
 licence_type: open-source | open-core | proprietary
 os: "Windows, macOS, Linux"
@@ -94,8 +94,8 @@ url_repo:
 
 Voir **`Documentation/general/taxonomie.md`** — c'est la source de vérité, ne la duplique pas ici de mémoire. Résumé des familles :
 
-- `Dev/Services/` → `<domaine>/<sous-domaine>` (`database/*`, `framework/*`, `ui/*`, `language/*`, `devops/*`, `llm/*`, `ml/*`, `data/*`, `automation/*`, `compute/distributed`, `auth`, `storage`, `observability/*`, `tooling/*`)
-- `Dev/Outils/` → `tooling/<famille>` (`db-admin`, `api`, `code-assistant`, …)
+- `Dev/Services/` **et** `Dev/Outils/` → `<domaine>/<sous-domaine>`, **même vocabulaire de 94 valeurs** : 20 préfixes de tête (`ml`, `llm`, `database`, `data`, `devtools`, `stats`, `compute`, `design`, `storage`, `web`, `automation`, `media`, `ui`, `observability`, `security`, `signal`, `network`, `devops`, `docs`, `math`). Il n'y a **plus** de préfixe `tooling/` : un outil prend le domaine de son **sujet** (DBeaver → `database/admin`, uv → `devtools/paquet`, Aider → `llm/agent-de-code`). Le dossier d'accueil ne détermine pas la catégorie.
+- Le domaine se **dérive** de l'arbre D1→D14 de `taxonomie.md`, il ne se choisit pas.
 - `Wiki/Concepts/` → `concept/<sous-domaine>` (`data`, `ai`, `ml`, `dl`, `rl`, `ts`, `nlp`, `signal`, `stats`, `math`, `devops`, `llm`)
 - `Wiki/Outils/` → `skill/<famille>` (`documents`, `dev-flow`, `code-quality`, `knowledge`, `data`, `meta`) — section vide en v2 tant qu'aucun skill perso n'est documenté
 

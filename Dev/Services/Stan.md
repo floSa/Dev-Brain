@@ -4,7 +4,7 @@ type: service
 nom: Stan
 alias: [CmdStanPy, cmdstanpy, Stan language]
 pitch: "Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy."
-categorie: tooling/stats
+categorie: stats/bayesien
 famille: paquet
 licence_type: open-source
 hosted: self

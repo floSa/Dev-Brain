@@ -4,7 +4,7 @@ type: outil
 nom: SmartTube
 alias: [SmartTubeNext, STN, yuliskov/SmartTube]
 pitch: "Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même."
-categorie: tooling/video
+categorie: media/video
 famille: application
 domaines: []
 licence_type: open-source

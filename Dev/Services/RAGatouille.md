@@ -4,7 +4,7 @@ type: service
 nom: RAGatouille
 alias: [ragatouille]
 pitch: "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025)."
-categorie: llm/framework
+categorie: llm/rag
 famille: paquet
 licence_type: open-source
 hosted: self

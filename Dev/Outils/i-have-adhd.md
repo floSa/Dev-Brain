@@ -4,7 +4,7 @@ type: outil
 nom: i-have-adhd
 alias: [ayghri/i-have-adhd, adhd-mode]
 pitch: "Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif."
-categorie: tooling/code-assistant
+categorie: llm/agent-de-code
 famille: extension
 domaines: [ai-eng]
 licence_type: open-source

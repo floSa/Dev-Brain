@@ -4,7 +4,7 @@ type: service
 nom: Langflow
 alias: [langflow, langflow-ai]
 pitch: "Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud."
-categorie: llm/framework
+categorie: llm/low-code
 famille: plateforme
 licence_type: open-source
 hosted: both

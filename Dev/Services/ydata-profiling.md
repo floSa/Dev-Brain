@@ -4,7 +4,7 @@ type: service
 nom: ydata-profiling
 alias: [pandas-profiling, ydata profiling]
 pitch: "Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark."
-categorie: tooling/viz
+categorie: data/eda
 famille: paquet
 licence_type: open-source
 hosted: self

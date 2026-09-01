@@ -1,9 +1,8 @@
 filters:
   and:
     - file.path.startsWith("Dev/Services/")
-    - or:
-        - categorie == "ui/data-app"
-        - categorie == "ui/ml-demo"
+    # `ui/ml-demo` a fusionne dans `ui/data-app` (Gradio) : une seule valeur suffit.
+    - categorie == "ui/data-app"
 views:
   - type: table
     name: Apps & démos

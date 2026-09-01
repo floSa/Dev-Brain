@@ -4,7 +4,7 @@ type: service
 nom: python-dotenv
 alias: [dotenv, python_dotenv]
 pitch: "Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs."
-categorie: tooling/package
+categorie: devtools/config
 famille: paquet
 licence_type: open-source
 hosted: self

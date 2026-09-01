@@ -4,7 +4,7 @@ type: service
 nom: Uvicorn
 alias: [uvicorn]
 pitch: "Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI."
-categorie: framework/backend
+categorie: web/backend
 famille: cli
 licence_type: open-source
 hosted: self

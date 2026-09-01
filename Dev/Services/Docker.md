@@ -4,7 +4,7 @@ type: service
 nom: Docker
 alias: [docker]
 pitch: "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre."
-categorie: devops/container
+categorie: devops/conteneur
 famille: plateforme
 licence_type: open-source
 hosted: self
