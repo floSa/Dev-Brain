@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
 status: actif
-alternatives: []
+alternatives: ["[[Dev/Outils/BMAD|BMAD]]"]
 tags: [code-assistant, code-generation, agents, cli]
 url_docs: https://github.com/github/spec-kit
 url_repo: https://github.com/github/spec-kit
@@ -49,6 +49,7 @@ Spec Kit (MIT, GitHub) outille le **spec-driven development** : au lieu d'écrir
 ## Alternatives
 
 - Pas de substitut direct dans le brain : c'est un **cadre méthodologique** (spec-driven), pas un assistant de code. Les agents qu'il pilote sont fichés à part : [[Dev/Outils/Aider|Aider]], [[Dev/Outils/Cline|Cline]], [[Dev/Outils/Continue|Continue]].
+- [[Dev/Outils/BMAD|BMAD]] — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
 
 ## Liens
 

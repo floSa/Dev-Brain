@@ -10,7 +10,7 @@ hosted: managed
 maturite: production
 langage: 
 scaling: serverless
-alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]"]
+alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
 remplace_par: []
 status: actif
 tags: [llm, llm-gateway, routing, inference]
@@ -54,6 +54,7 @@ url_repo:
 ## Alternatives
 
 - [[Dev/Services/LiteLLM|LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
+- [[Dev/Services/OmniRoute|OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
 ## Liens
 

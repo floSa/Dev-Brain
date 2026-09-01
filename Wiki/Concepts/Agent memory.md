@@ -50,6 +50,7 @@ tags: [agents, llm, retrieval]
 - [[Agent patterns]] — la mémoire conditionne les patrons (réflexion, plan-execute).
 - [[mcp-protocol]] — les *resources* MCP sont un canal d'alimentation de la mémoire long terme.
 - Alternative : **tout garder dans le contexte** (fenêtres longues) — simple, mais coûteux et plafonné ; la récupération reste préférable au-delà d'un certain volume.
+- Implémentations fichées : [[Dev/Services/OpenViking|OpenViking]] (contexte exposé en système de fichiers parcourable), [[Dev/Outils/ai-memory|ai-memory]] (mémoire partagée entre CLI de code).
 
 ## Pour aller plus loin
 

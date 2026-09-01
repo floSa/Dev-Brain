@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
-alternatives: []
+alternatives: ["[[Dev/Outils/Maka|Maka]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, code-generation]
@@ -52,6 +52,7 @@ Plateforme d'**agent de développement autonome** (ex-**OpenDevin**, portée par
 
 <!-- OpenHands est un agent de dev autonome (produit), pas un framework pour bâtir des agents : pas d'alternative directe dans le brain. -->
 - Pour **construire** un agent sur mesure plutôt que d'en utiliser un clé en main, voir les frameworks d'agents : [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]].
+- [[Dev/Outils/Maka|Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 
 ## Liens
 

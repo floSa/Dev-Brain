@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]"]
+alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
 remplace_par: []
 status: actif
 tags: [document-parsing, pdf, ocr, markdown-conversion, rag]
@@ -55,6 +55,7 @@ Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormai
 - [[Dev/Services/Unstructured|Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
 - [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
+- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 

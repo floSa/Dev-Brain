@@ -57,6 +57,7 @@ Le gain est réel, le risque aussi : un skill erroné se **rejoue indéfiniment*
 - [[Context engineering]] — le chargement conditionnel est une technique de gestion du budget de contexte.
 - [[Agent patterns]] — les patrons d'organisation de la boucle, dans laquelle les skills s'insèrent.
 - Alternative : **tout mettre dans le prompt système** — simple et prévisible, mais le contexte sature dès que les procédures se multiplient.
+- Skills fichés : [[Dev/Outils/Archify|Archify]] (génération de diagrammes), [[Dev/Outils/i-have-adhd|i-have-adhd]] (discipline de sortie), [[Dev/Outils/BMAD|BMAD]] (jeu d'agents et de workflows pour le cycle de développement).
 
 ## Pour aller plus loin
 

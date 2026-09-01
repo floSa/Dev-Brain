@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
 status: actif
-alternatives: []
+alternatives: ["[[Dev/Outils/ai-memory|ai-memory]]"]
 tags: [code-assistant, knowledge-graph, mcp, context-engineering]
 url_docs: https://github.com/safishamsi/graphify
 url_repo: https://github.com/safishamsi/graphify
@@ -49,6 +49,7 @@ Graphify (MIT, Python) indexe un dossier — code, SQL, scripts, docs, papers, i
 ## Alternatives
 
 - Pas d'équivalent direct fiché dans le brain à ce jour (voisin fonctionnel non documenté : code-review-graph / CRG). À ne pas confondre avec les assistants de code — [[Dev/Outils/Aider|Aider]], [[Dev/Outils/Cline|Cline]], [[Dev/Outils/Continue|Continue]] — de fonction différente.
+- [[Dev/Outils/ai-memory|ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
 
 ## Liens
 

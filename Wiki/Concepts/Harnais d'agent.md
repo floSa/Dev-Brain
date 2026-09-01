@@ -69,6 +69,7 @@ Ce qui relevait du harnais migre progressivement dans le modèle : la planificat
 - [[Agent evaluation]] — mesurer le couple, et savoir à qui imputer l'échec.
 - [[mcp-protocol]] — standardise la fourniture d'outils au harnais.
 - Alternative : **appeler le modèle directement**, sans échafaudage — suffisant pour une tâche en un coup, incapable de la moindre action.
+- Harnais fichés : [[Dev/Outils/pi|pi]] (boucle, TUI et API LLM unifiée), [[Dev/Outils/Maka|Maka]] (journal append-only de chaque décision), [[Dev/Outils/t3code|t3code]] (plan de contrôle au-dessus de plusieurs harnais).
 
 ## Pour aller plus loin
 

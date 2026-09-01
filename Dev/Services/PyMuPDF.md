@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: C / Python
 scaling: single-node
-alternatives: ["[[Dev/Services/pdfplumber|pdfplumber]]"]
+alternatives: ["[[Dev/Services/pdfplumber|pdfplumber]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
 remplace_par: []
 status: actif
 tags: [pdf, document-parsing]
@@ -51,6 +51,7 @@ PyMuPDF (importé `pymupdf`, alias historique `fitz`) est le **binding Python de
 ## Alternatives
 
 - [[Dev/Services/pdfplumber|pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
+- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 

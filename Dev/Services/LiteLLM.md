@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenRouter|OpenRouter]]"]
+alternatives: ["[[Dev/Services/OpenRouter|OpenRouter]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
 remplace_par: []
 status: actif
 tags: [llm, llm-gateway, inference]
@@ -56,6 +56,7 @@ url_repo: https://github.com/BerriAI/litellm
 
 <!-- Autre passerelle, mais managée : OpenRouter. Côté frameworks d'apps, pas d'alternative directe — ils s'appuient plutôt sur LiteLLM. -->
 - Les frameworks d'applications ([[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]], [[Dev/Services/DSPy|DSPy]]) offrent leur propre abstraction de modèles, mais résolvent l'orchestration, pas la passerelle multi-fournisseurs centralisée.
+- [[Dev/Services/OmniRoute|OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
 ## Liens
 

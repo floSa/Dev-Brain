@@ -52,6 +52,7 @@ tags: [routing, llm, rag]
 - [[Calculs adaptatifs]] — la même idée d'« allouer le calcul selon la difficulté », mais **dans** le modèle (couches traversées) au lieu d'**entre** modèles. La cascade est la version qui fonctionne aujourd'hui en production.
 - [[RAG eval]] — pour valider que le routeur dirige bien et que la cascade ne dégrade pas.
 - [[Dev/Services/LiteLLM|LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
+- Passerelles qui l'implémentent : [[Dev/Services/OmniRoute|OmniRoute]] (bascule sur quota épuisé), [[Dev/Services/LiteLLM|LiteLLM]], [[Dev/Services/OpenRouter|OpenRouter]].
 
 ## Pour aller plus loin
 

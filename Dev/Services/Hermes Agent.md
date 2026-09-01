@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"]
+alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]", "[[Dev/Services/OpenViking|OpenViking]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, mcp]
@@ -55,6 +55,7 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 
 - [[Dev/Services/OpenClaw|OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
 - [[Dev/Services/LM Studio Bionic|LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
+- [[Dev/Services/OpenViking|OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ## Liens
 

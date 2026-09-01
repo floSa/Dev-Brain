@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]"]
+alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
 remplace_par: []
 status: actif
 tags: [document-parsing, rag, table-extraction, layout-analysis]
@@ -54,6 +54,7 @@ Docling est une bibliothèque **open-source (MIT)** de l'équipe *AI for Knowled
 - [[Dev/Services/Unstructured|Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
 - [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 

@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
 status: actif
-alternatives: ["[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Cline|Cline]]"]
+alternatives: ["[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/freebuff|freebuff]]", "[[Dev/Outils/t3code|t3code]]", "[[Dev/Outils/pi|pi]]"]
 tags: [code-assistant, code-generation, llm, version-control]
 url_docs: https://aider.chat/docs/
 url_repo: https://github.com/Aider-AI/aider
@@ -48,6 +48,9 @@ Pair-programmeur IA qui vit dans le terminal (Apache 2.0, Python). Il relie un L
 
 - [[Dev/Outils/Continue|Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 - [[Dev/Outils/Cline|Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
+- [[Dev/Outils/freebuff|freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
+- [[Dev/Outils/t3code|t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
+- [[Dev/Outils/pi|pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 
 ## Liens
 

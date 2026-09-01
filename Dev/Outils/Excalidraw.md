@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Web, Windows, macOS, Linux"
 langage: TypeScript
 status: actif
-alternatives: ["[[Dev/Outils/draw.io|draw.io]]"]
+alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
 tags: [diagram, whiteboard]
 url_docs: https://docs.excalidraw.com/
 url_repo: https://github.com/excalidraw/excalidraw
@@ -48,6 +48,7 @@ Whiteboard open-source (MIT) au **style croquis à main levée** : le rendu volo
 ## Alternatives
 
 - [[Dev/Outils/draw.io|draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
+- [[Dev/Outils/Archify|Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
 ## Liens
 

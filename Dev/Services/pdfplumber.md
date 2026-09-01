@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]"]
+alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
 remplace_par: []
 status: actif
 tags: [pdf, table-extraction, document-parsing]
@@ -51,6 +51,7 @@ pdfplumber (Jeremy Singer-Vine, **MIT**) est bâti sur **pdfminer.six** et expos
 ## Alternatives
 
 - [[Dev/Services/PyMuPDF|PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
+- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 

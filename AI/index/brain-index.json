@@ -5,11 +5,20 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 618,
+  "count": 633,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
       "CUPED"
+    ],
+    "agent-memory": [
+      "OpenViking",
+      "ai-memory"
+    ],
+    "agent-skill": [
+      "Archify",
+      "BMAD",
+      "i-have-adhd"
     ],
     "agents": [
       "Activepieces",
@@ -18,7 +27,9 @@
       "Agent patterns",
       "Agent skills",
       "Agno",
+      "Archify",
       "AutoGen",
+      "BMAD",
       "Cline",
       "Context engineering",
       "Continue",
@@ -38,11 +49,13 @@
       "Langflow",
       "Letta",
       "LlamaIndex",
+      "Maka",
       "Modal",
       "Multi-agent systems",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
+      "OpenViking",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PydanticAI",
@@ -58,15 +71,21 @@
       "a2a-protocol",
       "agent-loops",
       "fastmcp",
+      "freebuff",
       "gumloop",
+      "i-have-adhd",
       "mcp-protocol",
       "n8n",
-      "smolagents"
+      "pi",
+      "smolagents",
+      "swarm-forge",
+      "t3code"
     ],
     "ai-security": [
       "AI security",
       "Daytona",
       "E2B",
+      "Maka",
       "Prompt injection",
       "Sandboxing de code généré",
       "promptfoo"
@@ -121,6 +140,9 @@
     ],
     "audio-classification": [
       "Classification audio par spectrogramme"
+    ],
+    "audit-log": [
+      "Maka"
     ],
     "authentication": [
       "PyJWT"
@@ -222,7 +244,9 @@
     ],
     "cli": [
       "Spec Kit",
-      "Typer"
+      "Typer",
+      "freebuff",
+      "swarm-forge"
     ],
     "clustering": [
       "Apprentissage non supervisé",
@@ -248,19 +272,31 @@
     ],
     "code-assistant": [
       "Aider",
+      "Archify",
+      "BMAD",
       "Cline",
       "Continue",
       "Graphify",
-      "Spec Kit"
+      "Maka",
+      "Spec Kit",
+      "ai-memory",
+      "freebuff",
+      "i-have-adhd",
+      "pi",
+      "swarm-forge",
+      "t3code"
     ],
     "code-generation": [
       "Aider",
+      "BMAD",
       "Cline",
       "Code and math benchmarks",
       "Continue",
       "LM Studio Bionic",
       "OpenHands",
-      "Spec Kit"
+      "Spec Kit",
+      "freebuff",
+      "t3code"
     ],
     "columnar": [
       "ADBC",
@@ -348,6 +384,9 @@
       "Context engineering",
       "Graphify",
       "Harnais d'agent",
+      "OmniRoute",
+      "OpenViking",
+      "ai-memory",
       "prompt-caching"
     ],
     "convergence": [
@@ -560,12 +599,14 @@
       "Penpot"
     ],
     "diagram": [
+      "Archify",
       "Excalidraw",
       "FossFLOW",
       "Mermaid",
       "draw.io"
     ],
     "diagram-as-code": [
+      "Archify",
       "Mermaid"
     ],
     "diffusion": [
@@ -641,6 +682,7 @@
       "PyMuPDF",
       "Unstructured",
       "docTR",
+      "pdf-inspector",
       "pdfplumber",
       "selectolax"
     ],
@@ -1061,7 +1103,8 @@
     ],
     "layout-analysis": [
       "Docling",
-      "docTR"
+      "docTR",
+      "pdf-inspector"
     ],
     "lazy-evaluation": [
       "Dask",
@@ -1168,6 +1211,7 @@
       "Multi-Token Prediction",
       "Multi-agent systems",
       "Ollama",
+      "OmniRoute",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
@@ -1252,6 +1296,7 @@
     "llm-gateway": [
       "Helicone",
       "LiteLLM",
+      "OmniRoute",
       "OpenRouter"
     ],
     "llm-observability": [
@@ -1267,8 +1312,11 @@
       "Ollama",
       "Pattern - Agent sur LLM auto-hébergé",
       "Small Language Models",
+      "Superwhisper",
       "Vanna",
       "llama.cpp",
+      "needle",
+      "pi",
       "text-generation-webui"
     ],
     "logging": [
@@ -1299,7 +1347,8 @@
     ],
     "markdown-conversion": [
       "Firecrawl",
-      "Marker"
+      "Marker",
+      "pdf-inspector"
     ],
     "markov": [
       "Chaînes de Markov",
@@ -1330,6 +1379,8 @@
       "Hermes Agent",
       "LM Studio Bionic",
       "OpenClaw",
+      "OpenViking",
+      "ai-memory",
       "fastmcp",
       "mcp-protocol",
       "mcpjam",
@@ -1452,11 +1503,14 @@
     "multi-agent": [
       "Agno",
       "AutoGen",
+      "BMAD",
       "CrewAI",
       "DB-GPT",
       "Multi-agent systems",
       "OpenAI Agents SDK",
-      "a2a-protocol"
+      "a2a-protocol",
+      "freebuff",
+      "swarm-forge"
     ],
     "multi-armed-bandit": [
       "Exploration vs exploitation",
@@ -1471,6 +1525,7 @@
       "LanceDB",
       "Marqo",
       "Speech models",
+      "Superwhisper",
       "Video generation",
       "Vision Language Models"
     ],
@@ -1587,7 +1642,8 @@
       "Marker",
       "OCR",
       "Unstructured",
-      "docTR"
+      "docTR",
+      "pdf-inspector"
     ],
     "offline-rl": [
       "Offline RL"
@@ -1688,6 +1744,7 @@
     "pdf": [
       "Marker",
       "PyMuPDF",
+      "pdf-inspector",
       "pdfplumber"
     ],
     "perplexity": [
@@ -1751,7 +1808,8 @@
     ],
     "prompting": [
       "Chain-of-Thought",
-      "Prompt engineering"
+      "Prompt engineering",
+      "i-have-adhd"
     ],
     "pruning": [
       "Pruning"
@@ -1765,6 +1823,7 @@
       "TensorRT-LLM",
       "Unsloth",
       "llama.cpp",
+      "needle",
       "text-generation-webui"
     ],
     "query-transformation": [
@@ -1793,6 +1852,7 @@
       "LlamaParse",
       "Marker",
       "Milvus",
+      "OpenViking",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Pinecone",
       "Qdrant",
@@ -1923,6 +1983,7 @@
     ],
     "reliability": [
       "Human-in-the-loop",
+      "OmniRoute",
       "Reliability patterns"
     ],
     "representation-learning": [
@@ -1963,6 +2024,7 @@
       "Hybrid retrieval",
       "Late-interaction retrieval",
       "LlamaIndex NLSQLTableQueryEngine",
+      "OpenViking",
       "Query transformations",
       "RAG",
       "RAG benchmarks",
@@ -1971,6 +2033,7 @@
       "Recherche d'information",
       "Reranking",
       "Systèmes de recommandation",
+      "ai-memory",
       "sentence-transformers"
     ],
     "reward-shaping": [
@@ -1980,6 +2043,7 @@
       "REX - Postgres"
     ],
     "routing": [
+      "OmniRoute",
       "OpenRouter",
       "Routing and cascading"
     ],
@@ -2086,7 +2150,8 @@
     ],
     "small-language-model": [
       "Distillation",
-      "Small Language Models"
+      "Small Language Models",
+      "needle"
     ],
     "spectrogram": [
       "Classification audio par spectrogramme",
@@ -2096,7 +2161,8 @@
     ],
     "speech": [
       "Claude Video",
-      "Speech models"
+      "Speech models",
+      "Superwhisper"
     ],
     "state-space-model": [
       "Architectures hybrides LLM",
@@ -2151,6 +2217,7 @@
       "Outlines",
       "PydanticAI",
       "Structured outputs",
+      "needle",
       "tool-use"
     ],
     "supervised": [
@@ -2221,7 +2288,8 @@
       "Q-learning and DQN"
     ],
     "terminal-ui": [
-      "Rich"
+      "Rich",
+      "pi"
     ],
     "testing": [
       "DeepEval",
@@ -2291,6 +2359,7 @@
       "LangChain SQL agent",
       "LangGraph",
       "Letta",
+      "Maka",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
@@ -2304,6 +2373,8 @@
       "fastmcp",
       "mcp-protocol",
       "mcpjam",
+      "needle",
+      "pi",
       "smolagents",
       "tool-use"
     ],
@@ -2437,7 +2508,8 @@
       "Aider",
       "Bruno",
       "Notebooks-as-code",
-      "jupytext"
+      "jupytext",
+      "swarm-forge"
     ],
     "video-generation": [
       "Video generation"
@@ -2507,7 +2579,63 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/Cline|Cline]]"
+        "[[Dev/Outils/Cline|Cline]]",
+        "[[Dev/Outils/freebuff|freebuff]]",
+        "[[Dev/Outils/t3code|t3code]]",
+        "[[Dev/Outils/pi|pi]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/Archify.md",
+      "nom": "Archify",
+      "alias": [
+        "archify"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/diagram",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.",
+      "tags": [
+        "agent-skill",
+        "diagram",
+        "diagram-as-code",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Mermaid|Mermaid]]",
+        "[[Dev/Outils/draw.io|draw.io]]",
+        "[[Dev/Outils/Excalidraw|Excalidraw]]",
+        "[[Dev/Outils/FossFLOW|FossFLOW]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/BMAD.md",
+      "nom": "BMAD",
+      "alias": [
+        "BMAD-METHOD",
+        "bmad-method",
+        "Breakthrough Method for Agile AI-Driven Development"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.",
+      "tags": [
+        "agent-skill",
+        "code-assistant",
+        "agents",
+        "multi-agent",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Spec Kit|Spec Kit]]"
       ]
     },
     {
@@ -2576,7 +2704,10 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/Aider|Aider]]"
+        "[[Dev/Outils/Aider|Aider]]",
+        "[[Dev/Outils/freebuff|freebuff]]",
+        "[[Dev/Outils/t3code|t3code]]",
+        "[[Dev/Outils/pi|pi]]"
       ]
     },
     {
@@ -2602,7 +2733,10 @@
       ],
       "alternatives": [
         "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/Cline|Cline]]"
+        "[[Dev/Outils/Cline|Cline]]",
+        "[[Dev/Outils/freebuff|freebuff]]",
+        "[[Dev/Outils/t3code|t3code]]",
+        "[[Dev/Outils/pi|pi]]"
       ]
     },
     {
@@ -2671,7 +2805,8 @@
         "whiteboard"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]"
+        "[[Dev/Outils/draw.io|draw.io]]",
+        "[[Dev/Outils/Archify|Archify]]"
       ]
     },
     {
@@ -2709,7 +2844,8 @@
         "isometric"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]"
+        "[[Dev/Outils/draw.io|draw.io]]",
+        "[[Dev/Outils/Archify|Archify]]"
       ]
     },
     {
@@ -2732,7 +2868,9 @@
         "mcp",
         "context-engineering"
       ],
-      "alternatives": []
+      "alternatives": [
+        "[[Dev/Outils/ai-memory|ai-memory]]"
+      ]
     },
     {
       "path": "Dev/Outils/HeidiSQL.md",
@@ -2758,6 +2896,32 @@
       ]
     },
     {
+      "path": "Dev/Outils/Maka.md",
+      "nom": "Maka",
+      "alias": [
+        "apache-maka",
+        "maka"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.",
+      "tags": [
+        "audit-log",
+        "agents",
+        "tool-use",
+        "ai-security",
+        "code-assistant"
+      ],
+      "alternatives": [
+        "[[Dev/Services/OpenHands|OpenHands]]",
+        "[[Dev/Outils/t3code|t3code]]"
+      ]
+    },
+    {
       "path": "Dev/Outils/Mermaid.md",
       "nom": "Mermaid",
       "alias": [
@@ -2775,7 +2939,8 @@
         "diagram-as-code"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]"
+        "[[Dev/Outils/draw.io|draw.io]]",
+        "[[Dev/Outils/Archify|Archify]]"
       ]
     },
     {
@@ -2909,7 +3074,54 @@
         "agents",
         "cli"
       ],
+      "alternatives": [
+        "[[Dev/Outils/BMAD|BMAD]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/Superwhisper.md",
+      "nom": "Superwhisper",
+      "alias": [
+        "superwhisper"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/media",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie.",
+      "tags": [
+        "speech",
+        "multimodal",
+        "local-llm"
+      ],
       "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/ai-memory.md",
+      "nom": "ai-memory",
+      "alias": [
+        "akitaonrails/ai-memory"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.",
+      "tags": [
+        "agent-memory",
+        "mcp",
+        "context-engineering",
+        "code-assistant",
+        "retrieval"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Graphify|Graphify]]",
+        "[[Dev/Services/OpenViking|OpenViking]]"
+      ]
     },
     {
       "path": "Dev/Outils/draw.io.md",
@@ -2930,8 +3142,59 @@
       "alternatives": [
         "[[Dev/Outils/Excalidraw|Excalidraw]]",
         "[[Dev/Outils/Mermaid|Mermaid]]",
-        "[[Dev/Outils/FossFLOW|FossFLOW]]"
+        "[[Dev/Outils/FossFLOW|FossFLOW]]",
+        "[[Dev/Outils/Archify|Archify]]"
       ]
+    },
+    {
+      "path": "Dev/Outils/freebuff.md",
+      "nom": "freebuff",
+      "alias": [
+        "Freebuff",
+        "Codebuff"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "agents",
+        "multi-agent",
+        "cli"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Aider|Aider]]",
+        "[[Dev/Outils/Cline|Cline]]",
+        "[[Dev/Outils/Continue|Continue]]",
+        "[[Dev/Outils/pi|pi]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/i-have-adhd.md",
+      "nom": "i-have-adhd",
+      "alias": [
+        "ayghri/i-have-adhd",
+        "adhd-mode"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.",
+      "tags": [
+        "agent-skill",
+        "prompting",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Outils/pgAdmin.md",
@@ -2954,6 +3217,106 @@
       ],
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/pi.md",
+      "nom": "pi",
+      "alias": [
+        "pi-coding-agent",
+        "earendil-works/pi",
+        "pi-ai"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "local-llm",
+        "terminal-ui",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Aider|Aider]]",
+        "[[Dev/Outils/Cline|Cline]]",
+        "[[Dev/Outils/Continue|Continue]]",
+        "[[Dev/Outils/freebuff|freebuff]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/public-apis.md",
+      "nom": "public-apis",
+      "alias": [
+        "public-apis/public-apis",
+        "awesome public apis"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/api",
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.",
+      "tags": [],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/swarm-forge.md",
+      "nom": "swarm-forge",
+      "alias": [
+        "unclebob/swarm-forge",
+        "swarm"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.",
+      "tags": [
+        "multi-agent",
+        "agents",
+        "code-assistant",
+        "cli",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Dev/Services/CrewAI|CrewAI]]",
+        "[[Dev/Services/AutoGen|AutoGen]]"
+      ]
+    },
+    {
+      "path": "Dev/Outils/t3code.md",
+      "nom": "t3code",
+      "alias": [
+        "t3",
+        "T3 Code",
+        "t3.codes"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/code-assistant",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Dev/Outils/Cline|Cline]]",
+        "[[Dev/Outils/Aider|Aider]]",
+        "[[Dev/Outils/Continue|Continue]]",
+        "[[Dev/Outils/Maka|Maka]]"
       ]
     },
     {
@@ -3440,7 +3803,8 @@
         "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]"
+        "[[Dev/Services/Letta|Letta]]",
+        "[[Dev/Outils/swarm-forge|swarm-forge]]"
       ]
     },
     {
@@ -3822,7 +4186,8 @@
         "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]"
+        "[[Dev/Services/Letta|Letta]]",
+        "[[Dev/Outils/swarm-forge|swarm-forge]]"
       ]
     },
     {
@@ -4128,7 +4493,8 @@
       "alternatives": [
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/Marker|Marker]]"
+        "[[Dev/Services/Marker|Marker]]",
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
       ]
     },
     {
@@ -4691,7 +5057,8 @@
       ],
       "alternatives": [
         "[[Dev/Services/OpenClaw|OpenClaw]]",
-        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"
+        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]",
+        "[[Dev/Services/OpenViking|OpenViking]]"
       ]
     },
     {
@@ -5211,7 +5578,8 @@
         "[[Dev/Services/CrewAI|CrewAI]]",
         "[[Dev/Services/AutoGen|AutoGen]]",
         "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/smolagents|smolagents]]"
+        "[[Dev/Services/smolagents|smolagents]]",
+        "[[Dev/Services/OpenViking|OpenViking]]"
       ]
     },
     {
@@ -5278,7 +5646,8 @@
         "inference"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenRouter|OpenRouter]]"
+        "[[Dev/Services/OpenRouter|OpenRouter]]",
+        "[[Dev/Services/OmniRoute|OmniRoute]]"
       ]
     },
     {
@@ -5491,7 +5860,8 @@
       "alternatives": [
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/LlamaParse|LlamaParse]]"
+        "[[Dev/Services/LlamaParse|LlamaParse]]",
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
       ]
     },
     {
@@ -5901,7 +6271,31 @@
         "[[Dev/Services/vLLM|vLLM]]",
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
+        "[[Dev/Services/needle|needle]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/OmniRoute.md",
+      "nom": "OmniRoute",
+      "alias": [
+        "omniroute"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "routing",
+        "reliability",
+        "context-engineering"
+      ],
+      "alternatives": [
+        "[[Dev/Services/LiteLLM|LiteLLM]]",
+        "[[Dev/Services/OpenRouter|OpenRouter]]"
       ]
     },
     {
@@ -5999,7 +6393,9 @@
         "tool-use",
         "code-generation"
       ],
-      "alternatives": []
+      "alternatives": [
+        "[[Dev/Outils/Maka|Maka]]"
+      ]
     },
     {
       "path": "Dev/Services/OpenRouter.md",
@@ -6020,7 +6416,8 @@
         "inference"
       ],
       "alternatives": [
-        "[[Dev/Services/LiteLLM|LiteLLM]]"
+        "[[Dev/Services/LiteLLM|LiteLLM]]",
+        "[[Dev/Services/OmniRoute|OmniRoute]]"
       ]
     },
     {
@@ -6043,6 +6440,32 @@
       ],
       "alternatives": [
         "[[Dev/Services/Gymnasium|Gymnasium]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/OpenViking.md",
+      "nom": "OpenViking",
+      "alias": [
+        "openviking",
+        "viking"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.",
+      "tags": [
+        "agent-memory",
+        "rag",
+        "context-engineering",
+        "agents",
+        "retrieval",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Dev/Services/Letta|Letta]]",
+        "[[Dev/Services/Hermes Agent|Hermes Agent]]",
+        "[[Dev/Outils/ai-memory|ai-memory]]"
       ]
     },
     {
@@ -6415,7 +6838,8 @@
         "document-parsing"
       ],
       "alternatives": [
-        "[[Dev/Services/pdfplumber|pdfplumber]]"
+        "[[Dev/Services/pdfplumber|pdfplumber]]",
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
       ]
     },
     {
@@ -8557,7 +8981,8 @@
         "[[Dev/Services/vLLM|vLLM]]",
         "[[Dev/Services/TGI|TGI]]",
         "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
+        "[[Dev/Services/needle|needle]]"
       ]
     },
     {
@@ -8660,6 +9085,31 @@
         "[[Dev/Services/Windmill|Windmill]]",
         "[[Dev/Services/Zapier|Zapier]]",
         "[[Dev/Services/gumloop|gumloop]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/needle.md",
+      "nom": "needle",
+      "alias": [
+        "cactus-needle",
+        "needle2",
+        "Cactus Needle"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/local",
+      "domaines": null,
+      "pitch": "Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.",
+      "tags": [
+        "local-llm",
+        "small-language-model",
+        "quantization",
+        "tool-use",
+        "structured-output"
+      ],
+      "alternatives": [
+        "[[Dev/Services/llama.cpp|llama.cpp]]",
+        "[[Dev/Services/Ollama|Ollama]]"
       ]
     },
     {
@@ -8768,6 +9218,33 @@
       "alternatives": []
     },
     {
+      "path": "Dev/Services/pdf-inspector.md",
+      "nom": "pdf-inspector",
+      "alias": [
+        "firecrawl/pdf-inspector",
+        "pdf2md",
+        "detect-pdf"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "data/parsing",
+      "domaines": null,
+      "pitch": "Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.",
+      "tags": [
+        "pdf",
+        "document-parsing",
+        "ocr",
+        "markdown-conversion",
+        "layout-analysis"
+      ],
+      "alternatives": [
+        "[[Dev/Services/PyMuPDF|PyMuPDF]]",
+        "[[Dev/Services/pdfplumber|pdfplumber]]",
+        "[[Dev/Services/Docling|Docling]]",
+        "[[Dev/Services/Marker|Marker]]"
+      ]
+    },
+    {
       "path": "Dev/Services/pdfplumber.md",
       "nom": "pdfplumber",
       "alias": [
@@ -8785,7 +9262,8 @@
         "document-parsing"
       ],
       "alternatives": [
-        "[[Dev/Services/PyMuPDF|PyMuPDF]]"
+        "[[Dev/Services/PyMuPDF|PyMuPDF]]",
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
       ]
     },
     {

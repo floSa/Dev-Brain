@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: TypeScript
 status: actif
-alternatives: ["[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Aider|Aider]]"]
+alternatives: ["[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/freebuff|freebuff]]", "[[Dev/Outils/t3code|t3code]]", "[[Dev/Outils/pi|pi]]"]
 tags: [code-assistant, code-generation, llm, agents, mcp]
 url_docs: https://docs.cline.bot/
 url_repo: https://github.com/cline/cline
@@ -48,6 +48,9 @@ Agent de code autonome (Apache 2.0) qui s'exécute dans l'IDE, le terminal ou co
 
 - [[Dev/Outils/Continue|Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 - [[Dev/Outils/Aider|Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
+- [[Dev/Outils/freebuff|freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
+- [[Dev/Outils/t3code|t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
+- [[Dev/Outils/pi|pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 
 ## Liens
 

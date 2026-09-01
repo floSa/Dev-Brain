@@ -48,6 +48,7 @@ tags: [ocr, computer-vision, deep-learning]
 - [[Vision Language Models]] — lecture de texte de bout en bout, alternative moderne au pipeline en deux étages.
 - [[Recherche d'information]] / [[Traitement du langage naturel]] — ce qui consomme le texte une fois extrait.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
+- Routage en amont : [[Dev/Services/pdf-inspector|pdf-inspector]] — décide page par page si l'OCR est nécessaire, pour ne pas l'appliquer à tout un corpus.
 
 ## Pour aller plus loin
 

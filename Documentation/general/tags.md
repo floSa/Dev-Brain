@@ -3,7 +3,7 @@ galaxie: meta
 nom: tags
 type: gouvernance
 created: 2026-06-04
-modified: 2026-06-11
+modified: 2026-09-01
 tags: [meta, gouvernance, vocabulaire]
 ---
 
@@ -134,6 +134,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `observability` | Observabilité d'infrastructure / d'applications (métriques, logs, traces) |
 | `metrics` | Métriques de supervision / monitoring (séries temporelles d'exploitation) |
 | `logging` | Agrégation et requêtage de logs (collecte, indexation, exploration) |
+| `audit-log` | Journal d'audit append-only et rejouable — trace infalsifiable des actions et des autorisations accordées |
 | `orchestration` | Orchestration de workflows / tâches (planification, dépendances, exécution de DAG) |
 | `data-pipeline` | Pipeline de données (ELT/ETL : ingestion → transformation → chargement) |
 | `scheduler` | Planification temporelle de tâches (déclenchement cron / par intervalle) |
@@ -183,6 +184,8 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `prompt-optimization` | Optimisation automatique de prompts — programmation déclarative de LLM compilée vers des prompts (ou un fine-tune) |
 | `llm-gateway` | Passerelle / proxy unifié vers plusieurs fournisseurs de LLM (format unique, routage, suivi des coûts) |
 | `multi-agent` | Système multi-agents — plusieurs agents LLM qui collaborent / se coordonnent pour accomplir une tâche |
+| `agent-memory` | Mémoire persistante d'agent — conserver et retrouver le contexte d'une session à l'autre, ou d'un outil à l'autre |
+| `agent-skill` | Compétence packagée installée dans un agent de code (skill / plugin) qui étend ou contraint son comportement |
 | `structured-output` | Sortie structurée — contraindre un LLM à produire un objet conforme à un schéma typé (JSON / Pydantic) |
 | `llm-eval` | Évaluation de systèmes LLM (qualité des réponses, RAG, agents) — métriques et jeux de tests |
 | `llm-observability` | Observabilité d'applications LLM en production (traces, métriques, coûts, débogage) |
