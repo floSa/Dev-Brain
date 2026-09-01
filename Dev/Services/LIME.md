@@ -3,16 +3,16 @@ galaxie: dev
 type: service
 nom: LIME
 alias: [lime, Local Interpretable Model-agnostic Explanations]
-pitch: "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales."
+pitch: "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP."
 categorie: ml/framework
 licence_type: open-source
 hosted: self
-maturite: production
+maturite: deprecated
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/interpreto|interpreto]]"]
 remplace_par: []
-status: actif
+status: abandonne
 tags: [explainability, supervised]
 url_docs: https://github.com/marcotcr/lime
 url_repo: https://github.com/marcotcr/lime
@@ -47,7 +47,7 @@ url_repo: https://github.com/marcotcr/lime
 - **Instabilité** : perturbations aléatoires → explications différentes pour le même point ; fixer la graine, augmenter l'échantillon.
 - **Voisinage arbitraire** : largeur de noyau et nombre d'échantillons influencent fortement le résultat.
 - **Fidélité locale seulement** : ne dit rien du comportement global du modèle.
-- Projet **quasi-dormant** (peu de releases récentes) ; SHAP est plus vivant et mieux fondé.
+- Projet **à l'arrêt en amont** : aucun commit depuis juillet 2021, aucune release depuis juin 2020 (`lime 0.2.0.1`). Le code fonctionne encore, mais rien n'évoluera et rien ne sera corrigé — préférer [[Dev/Services/SHAP|SHAP]], plus vivant et mieux fondé.
 
 ## Alternatives
 

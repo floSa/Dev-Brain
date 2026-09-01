@@ -14,7 +14,7 @@ alternatives: []
 remplace_par: []
 status: actif
 tags: [data-validation, type-hints]
-url_docs: https://docs.pydantic.dev/
+url_docs: https://pydantic.dev/docs/validation/
 url_repo: https://github.com/pydantic/pydantic
 ---
 
@@ -53,4 +53,4 @@ Bibliothèque de **validation de données** pilotée par les **annotations de ty
 ## Liens
 
 - Configuration typée bâtie sur Pydantic : [[Dev/Services/Pydantic Settings|Pydantic Settings]].
-- Doc : https://docs.pydantic.dev/
+- Doc : https://pydantic.dev/docs/validation/

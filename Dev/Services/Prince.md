@@ -50,7 +50,7 @@ Bibliothèque d'**analyse factorielle multivariée** (tradition Benzécri / Fact
 
 ## Alternatives
 
-- [[Dev/Services/Fanalysis|Fanalysis]] — Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR.
+- [[Dev/Services/Fanalysis|Fanalysis]] — Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
 
 ## Liens
 

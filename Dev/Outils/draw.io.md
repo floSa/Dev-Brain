@@ -12,7 +12,7 @@ langage: JavaScript
 status: actif
 alternatives: ["[[Dev/Outils/Excalidraw|Excalidraw]]", "[[Dev/Outils/Mermaid|Mermaid]]", "[[Dev/Outils/FossFLOW|FossFLOW]]", "[[Dev/Outils/Archify|Archify]]"]
 tags: [diagram]
-url_docs: https://www.drawio.com/doc/
+url_docs: https://www.drawio.com/docs/
 url_repo: https://github.com/jgraph/drawio
 ---
 
@@ -56,4 +56,4 @@ url_repo: https://github.com/jgraph/drawio
 ## Liens
 
 - [[Dev/Patterns/Comparatif - Diagrammes|Comparatif - Diagrammes]]
-- Docs : https://www.drawio.com/doc/ · Repo : https://github.com/jgraph/drawio
+- Docs : https://www.drawio.com/docs/ · Repo : https://github.com/jgraph/drawio

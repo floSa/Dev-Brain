@@ -142,6 +142,70 @@ Corps :
 
 **Mécanique du pitch (anti-duplication)** : chaque outil porte SON pitch (frontmatter `pitch:`), écrit une seule fois. La ligne d'info affichée dans la section *Alternatives* d'une autre page, et dans les propositions du skill `planifier-projet`, est **réinjectée** depuis le pitch de la page cible. Une donnée, trois usages. Le skill `enrichir-brain` synchronise.
 
+#### Convention unique de réinjection du pitch (arbitrée le 2026-09-02)
+
+Une seule convention, trois clauses. Elle remplace les quatre variantes qui coexistaient
+dans le vault (constat C2 de `AI/audit/rapports/axe-2-integrite.md`) : égalité stricte,
+pitch enrobé de `**gras**`, pitch suivi d'une remarque comparative, et prose comparative
+substituée au pitch.
+
+1. **Cible listée dans le frontmatter `alternatives:`** → la ligne affichée **commence par**
+   le `pitch:` courant de la cible, à la normalisation près (`**` retirés, espaces
+   multiples réduits à un, casse ignorée). Un **suffixe libre est autorisé après** le pitch
+   pour une remarque comparative. Le pitch n'est jamais retapé : il est copié depuis la
+   cible.
+   ```markdown
+   - [[Dev/Services/Qdrant|Qdrant]] — <pitch courant de Qdrant>
+   - [[Dev/Services/Qdrant|Qdrant]] — <pitch courant de Qdrant> — plus simple à self-host ici.
+   ```
+2. **Cible absente du frontmatter `alternatives:`** → ce n'est pas une alternative mais une
+   **mention de voisinage**. La ligne est libre, et **doit porter le marqueur `voisin :`**
+   après le tiret, pour que la clause 1 ne s'y applique pas par accident à la lecture.
+   ```markdown
+   - [[Dev/Services/SDV|SDV]] — voisin : autre nature, synthèse par modèles appris.
+   ```
+3. **Aucune prose ne remplace le pitch d'une cible listée en `alternatives:`.** Si la
+   comparaison rédigée vaut mieux que le pitch, deux issues seulement : soit elle devient le
+   suffixe de la clause 1, soit la cible sort du frontmatter `alternatives:` et la ligne
+   passe en clause 2.
+
+**Pourquoi cette convention et pas une autre.** Mesure sur le vault au 2026-09-02 :
+817 puces à cible liée, dans 334 sections `## Alternatives`.
+
+| Régime candidat | Texte accepté tel quel | À retoucher | À réécrire |
+|---|---|---|---|
+| Égalité stricte au caractère (règle d'avant l'arbitrage) | 787 | 0 | **30** |
+| **Préfixe + normalisation + clause voisinage** (retenu) | **806** | 15 (ajout du marqueur `voisin :`) | **11** |
+| Ligne libre, aucune contrainte | 817 | 0 | 0 — mais aveugle aux 5 pitchs périmés |
+
+Le régime retenu conserve le texte de 806 lignes sur 817, soit 98,7 % : il absorbe les
+787 lignes strictes au caractère, les 2 qui ne diffèrent que par du gras, les 2 à suffixe
+comparatif et le texte des 15 mentions de voisinage. Le travail restant est de deux
+natures, et il est petit :
+
+- **11 lignes à réécrire** — 5 pitchs réellement périmés (resynchronisation mécanique
+  depuis la cible), 4 proses substituées au pitch à arbitrer par la clause 3
+  (`Grafana`→`Loki`, `LangGraph`→`LangChain`, `Guidance`↔`Outlines`), 2 puces dont la cible
+  n'a pas de `pitch:` ;
+- **15 lignes à préfixer** du marqueur `voisin :`, sans toucher à leur texte.
+
+L'égalité stricte coûterait 30 réécritures et détruirait du contenu comparatif écrit à la
+main. La ligne libre ne coûterait rien et ne détecterait plus aucune dérive — c'est
+exactement le défaut mesuré. Le régime intermédiaire est le seul qui reste vérifiable par
+machine tout en laissant vivre l'annotation comparative.
+
+**Discriminant normatif** : l'appartenance au frontmatter `alternatives:` de la page
+citante — champ machine-lisible, exact sur 337 fiches. Le marqueur `voisin :` est
+redondant pour la machine mais obligatoire pour le lecteur, qui ne doit pas avoir à ouvrir
+le frontmatter pour savoir sous quelle clause il lit une puce. Les 15 mentions de
+voisinage existantes ne le portent pas encore : elles sont non conformes et relèvent d'une
+passe de contenu ultérieure. Tant qu'elle n'a pas eu lieu, le marqueur reste un
+avertissement dans `check_brain`, jamais une violation dure — on ne durcit pas une règle
+que le vault viole.
+
+Procédure d'application et commande de vérification : `.claude/skills/enrichir-brain/SKILL.md`,
+section *Procédure — mode mise à jour*.
+
 ### 5.2 Page WIKI — Concept (pour l'humain : technique + vulgarisé)
 
 Frontmatter :

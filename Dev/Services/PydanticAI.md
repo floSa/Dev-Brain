@@ -14,7 +14,7 @@ alternatives: ["[[Dev/Services/Instructor|Instructor]]", "[[Dev/Services/LangCha
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, structured-output, type-hints]
-url_docs: https://ai.pydantic.dev/
+url_docs: https://pydantic.dev/docs/ai/
 url_repo: https://github.com/pydantic/pydantic-ai
 ---
 
@@ -60,4 +60,4 @@ Framework d'**agents** de l'équipe qui édite [[Dev/Services/Pydantic|Pydantic]
 - Couple **sorties structurées** avec [[Dev/Services/Instructor|Instructor]] : PydanticAI est un framework d'agents complet, Instructor une bibliothèque focalisée extraction.
 - Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://ai.pydantic.dev/
+- Doc : https://pydantic.dev/docs/ai/

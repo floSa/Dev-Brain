@@ -4873,7 +4873,7 @@
       "galaxie": "dev",
       "categorie": "tooling/stats",
       "domaines": null,
-      "pitch": "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR.",
+      "pitch": "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.",
       "tags": [
         "dimensionality-reduction",
         "factor-analysis",
@@ -5551,7 +5551,7 @@
       "galaxie": "dev",
       "categorie": "ml/framework",
       "domaines": null,
-      "pitch": "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales.",
+      "pitch": "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.",
       "tags": [
         "explainability",
         "supervised"
@@ -7401,7 +7401,7 @@
       "galaxie": "dev",
       "categorie": "llm/framework",
       "domaines": null,
-      "pitch": "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (0.0.9, février 2025).",
+      "pitch": "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).",
       "tags": [
         "retrieval",
         "reranking",
@@ -9103,8 +9103,7 @@
       "path": "Dev/Services/fastmcp.md",
       "nom": "fastmcp",
       "alias": [
-        "FastMCP",
-        "fastmcp 2.0"
+        "FastMCP"
       ],
       "type": "service",
       "galaxie": "dev",
@@ -9198,7 +9197,7 @@
       "galaxie": "dev",
       "categorie": "tooling/package",
       "domaines": null,
-      "pitch": "Framework de configuration hiérarchique composable (Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.",
+      "pitch": "Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.",
       "tags": [
         "config"
       ],

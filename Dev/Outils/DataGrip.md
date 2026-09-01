@@ -12,7 +12,7 @@ langage: Java/Kotlin
 status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]"]
 tags: [db-client, relational, nosql]
-url_docs: https://www.jetbrains.com/datagrip/documentation/
+url_docs: https://www.jetbrains.com/help/datagrip/
 url_repo: 
 ---
 
@@ -52,4 +52,4 @@ L'IDE base de données de JetBrains. Apporte au SQL ce que les IDE apportent au 
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://www.jetbrains.com/datagrip/documentation/
+- Doc : https://www.jetbrains.com/help/datagrip/

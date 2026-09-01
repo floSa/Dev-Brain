@@ -121,16 +121,62 @@
    }
   }
  },
+ "Dev/Outils/Cline.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "cline/cline",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "cline/cline",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 67337,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.cline.bot",
+    "url": "https://docs.cline.bot/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/cline/cline"
+   }
+  }
+ },
+ "Dev/Outils/DBeaver.md": {
+  "archived": false,
+  "default_branch": "devel",
+  "full_name": "dbeaver/dbeaver",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "dbeaver/dbeaver",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 51626,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "dbeaver.com",
+    "url": "https://dbeaver.com/docs/dbeaver/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/dbeaver/dbeaver"
+   }
+  }
+ },
  "Dev/Outils/DataGrip.md": {
-  "signalements": [
-   "url_domaine_change:lp.jetbrains.com"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
   "urls": {
    "url_docs": {
     "code": 200,
-    "netloc_final": "lp.jetbrains.com",
-    "url": "https://www.jetbrains.com/datagrip/documentation/"
+    "netloc_final": "www.jetbrains.com",
+    "url": "https://www.jetbrains.com/help/datagrip/"
    }
   }
  },
@@ -176,10 +222,151 @@
    }
   }
  },
+ "Dev/Outils/MySQL Workbench.md": {
+  "archived": false,
+  "default_branch": "8.0",
+  "full_name": "mysql/mysql-workbench",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-04-23",
+  "repo": "mysql/mysql-workbench",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION",
+   "url_morte:url_docs:403"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 998,
+  "urls": {
+   "url_docs": {
+    "code": 403,
+    "netloc_final": "dev.mysql.com",
+    "url": "https://dev.mysql.com/doc/workbench/en/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/mysql/mysql-workbench"
+   }
+  }
+ },
  "Dev/Outils/OpenCut.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "OpenCut-app/OpenCut",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-08-10",
+  "repo": "OpenCut-app/OpenCut",
   "signalements": [
    "corps_declin_vs_status_actif"
-  ]
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 88464,
+  "urls": {
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/OpenCut-app/OpenCut"
+   }
+  }
+ },
+ "Dev/Outils/Redis Insight.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "redis/RedisInsight",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-01",
+  "repo": "redis/RedisInsight",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 8804,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "redis.io",
+    "url": "https://redis.io/docs/latest/develop/tools/insight/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/redis/RedisInsight"
+   }
+  }
+ },
+ "Dev/Outils/ai-memory.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "akitaonrails/ai-memory",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "akitaonrails/ai-memory",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 5451,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/akitaonrails/ai-memory"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/akitaonrails/ai-memory"
+   }
+  }
+ },
+ "Dev/Outils/croc.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "schollz/croc",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-01",
+  "repo": "schollz/croc",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 40199,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/schollz/croc"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/schollz/croc"
+   }
+  }
+ },
+ "Dev/Outils/draw.io.md": {
+  "archived": false,
+  "default_branch": "dev",
+  "full_name": "jgraph/drawio",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "jgraph/drawio",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 7873,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.drawio.com",
+    "url": "https://www.drawio.com/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/jgraph/drawio"
+   }
+  }
  },
  "Dev/Outils/osint4all.md": {
   "archived": false,
@@ -222,6 +409,30 @@
    "corps_declin_vs_status_actif"
   ]
  },
+ "Dev/Services/Agno.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "agno-agi/agno",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "agno-agi/agno",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 42011,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.agno.com",
+    "url": "https://docs.agno.com/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/agno-agi/agno"
+   }
+  }
+ },
  "Dev/Services/Airflow.md": {
   "archived": false,
   "default_branch": "main",
@@ -246,10 +457,106 @@
    }
   }
  },
+ "Dev/Services/Alembic.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "sqlalchemy/alembic",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-08-14",
+  "repo": "sqlalchemy/alembic",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 4360,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "alembic.sqlalchemy.org",
+    "url": "https://alembic.sqlalchemy.org/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/sqlalchemy/alembic"
+   }
+  }
+ },
+ "Dev/Services/Annoy.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "spotify/annoy",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2025-10-29",
+  "repo": "spotify/annoy",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 14294,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "pypi.org",
+    "url": "https://pypi.org/project/annoy/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/spotify/annoy"
+   }
+  }
+ },
+ "Dev/Services/ArviZ.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "arviz-devs/arviz",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "arviz-devs/arviz",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 1851,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "python.arviz.org",
+    "url": "https://python.arviz.org"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/arviz-devs/arviz"
+   }
+  }
+ },
  "Dev/Services/AutoGen.md": {
   "signalements": [
-   "status_maturite_incoherents:status=actif"
+   "abandonne_sans_remplacement:status=abandonne"
   ]
+ },
+ "Dev/Services/Avro.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "apache/avro",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-30",
+  "repo": "apache/avro",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 3303,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "avro.apache.org",
+    "url": "https://avro.apache.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/apache/avro"
+   }
+  }
  },
  "Dev/Services/BentoML.md": {
   "archived": false,
@@ -275,6 +582,172 @@
    }
   }
  },
+ "Dev/Services/Beszel.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "henrygd/beszel",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "henrygd/beszel",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 24985,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "beszel.dev",
+    "url": "https://beszel.dev"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/henrygd/beszel"
+   }
+  }
+ },
+ "Dev/Services/CatBoost.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "catboost/catboost",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "catboost/catboost",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 9086,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "catboost.ai",
+    "url": "https://catboost.ai/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/catboost/catboost"
+   }
+  }
+ },
+ "Dev/Services/Chroma.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "chroma-core/chroma",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "chroma-core/chroma",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 29204,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.trychroma.com",
+    "url": "https://docs.trychroma.com"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/chroma-core/chroma"
+   }
+  }
+ },
+ "Dev/Services/Cloudflare R2.md": {
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "developers.cloudflare.com",
+    "url": "https://developers.cloudflare.com/r2/"
+   }
+  }
+ },
+ "Dev/Services/Comet.md": {
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.comet.com",
+    "url": "https://www.comet.com/docs/"
+   }
+  }
+ },
+ "Dev/Services/Dash.md": {
+  "archived": false,
+  "default_branch": "dev",
+  "full_name": "plotly/dash",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-01",
+  "repo": "plotly/dash",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 24390,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "dash.plotly.com",
+    "url": "https://dash.plotly.com"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/plotly/dash"
+   }
+  }
+ },
+ "Dev/Services/DuckDB.md": {
+  "archived": false,
+  "default_branch": "v2.0-cyanoptera",
+  "full_name": "duckdb/duckdb",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "duckdb/duckdb",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 40925,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "duckdb.org",
+    "url": "https://duckdb.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/duckdb/duckdb"
+   }
+  }
+ },
+ "Dev/Services/Evidently.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "evidentlyai/evidently",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-31",
+  "repo": "evidentlyai/evidently",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 7878,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.evidentlyai.com",
+    "url": "https://docs.evidentlyai.com/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/evidentlyai/evidently"
+   }
+  }
+ },
  "Dev/Services/Faker.md": {
   "archived": false,
   "default_branch": "master",
@@ -296,6 +769,25 @@
     "code": 200,
     "netloc_final": "github.com",
     "url": "https://github.com/joke2k/faker"
+   }
+  }
+ },
+ "Dev/Services/Fanalysis.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "OlivierGarciaDev/fanalysis",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2018-06-04",
+  "repo": "OlivierGarciaDev/fanalysis",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 28,
+  "urls": {
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/OlivierGarciaDev/fanalysis"
    }
   }
  },
@@ -331,16 +823,14 @@
   "license_spdx": "Apache-2.0",
   "pushed_at": "2026-09-02",
   "repo": "gradio-app/gradio",
-  "signalements": [
-   "url_domaine_change:gradio.app"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
   "stars": 43450,
   "urls": {
    "url_docs": {
     "code": 200,
     "netloc_final": "gradio.app",
-    "url": "https://www.gradio.app/docs"
+    "url": "https://gradio.app/docs"
    },
    "url_repo": {
     "code": 200,
@@ -354,10 +844,79 @@
    "corps_declin_vs_status_actif"
   ]
  },
- "Dev/Services/LIME.md": {
+ "Dev/Services/Hyperopt.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "hyperopt/hyperopt",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-08-31",
+  "repo": "hyperopt/hyperopt",
   "signalements": [
-   "corps_declin_vs_status_actif"
-  ]
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 7592,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "hyperopt.github.io",
+    "url": "http://hyperopt.github.io/hyperopt/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/hyperopt/hyperopt"
+   }
+  }
+ },
+ "Dev/Services/LIME.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "marcotcr/lime",
+  "http_api": 200,
+  "license_spdx": "BSD-2-Clause",
+  "pushed_at": "2024-07-25",
+  "repo": "marcotcr/lime",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 12161,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/marcotcr/lime"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/marcotcr/lime"
+   }
+  }
+ },
+ "Dev/Services/LangChain.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "langchain-ai/langchain",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "langchain-ai/langchain",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 145502,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.langchain.com",
+    "url": "https://docs.langchain.com/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/langchain-ai/langchain"
+   }
+  }
  },
  "Dev/Services/MariaDB.md": {
   "archived": false,
@@ -383,10 +942,69 @@
    }
   }
  },
+ "Dev/Services/Marker.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "datalab-to/marker",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-31",
+  "repo": "datalab-to/marker",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 39475,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/datalab-to/marker"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/datalab-to/marker"
+   }
+  }
+ },
  "Dev/Services/Marqo.md": {
   "signalements": [
    "abandonne_sans_remplacement:status=abandonne"
   ]
+ },
+ "Dev/Services/Milvus.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "milvus-io/milvus",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "milvus-io/milvus",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 45931,
+  "urls": {
+   "url_docs": {
+    "code": 302,
+    "netloc_final": "milvus.io",
+    "url": "https://milvus.io/docs"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/milvus-io/milvus"
+   }
+  }
+ },
+ "Dev/Services/Modal.md": {
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "modal.com",
+    "url": "https://modal.com/docs"
+   }
+  }
  },
  "Dev/Services/Neptune.md": {
   "archived": true,
@@ -396,9 +1014,7 @@
   "license_spdx": "Apache-2.0",
   "pushed_at": "2026-03-17",
   "repo": "neptune-ai/neptune-client",
-  "signalements": [
-   "abandonne_sans_remplacement:status=abandonne"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
   "stars": 623,
   "urls": {
@@ -411,6 +1027,102 @@
     "code": 200,
     "netloc_final": "github.com",
     "url": "https://github.com/neptune-ai/neptune-client"
+   }
+  }
+ },
+ "Dev/Services/OpenSpiel.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "google-deepmind/open_spiel",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-31",
+  "repo": "google-deepmind/open_spiel",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 5452,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "openspiel.readthedocs.io",
+    "url": "https://openspiel.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/google-deepmind/open_spiel"
+   }
+  }
+ },
+ "Dev/Services/OpenViking.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "volcengine/OpenViking",
+  "http_api": 200,
+  "license_spdx": "AGPL-3.0",
+  "pushed_at": "2026-09-02",
+  "repo": "volcengine/OpenViking",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 35108,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.openviking.ai",
+    "url": "https://docs.openviking.ai/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/volcengine/OpenViking"
+   }
+  }
+ },
+ "Dev/Services/Optuna.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "optuna/optuna",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "optuna/optuna",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 14737,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "optuna.readthedocs.io",
+    "url": "https://optuna.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/optuna/optuna"
+   }
+  }
+ },
+ "Dev/Services/Outlines.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "dottxt-ai/outlines",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-31",
+  "repo": "dottxt-ai/outlines",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 15738,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "dottxt-ai.github.io",
+    "url": "https://dottxt-ai.github.io/outlines/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/dottxt-ai/outlines"
    }
   }
  },
@@ -435,6 +1147,54 @@
     "code": 200,
     "netloc_final": "github.com",
     "url": "https://github.com/apache/parquet-format"
+   }
+  }
+ },
+ "Dev/Services/Playwright.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "microsoft/playwright-python",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-27",
+  "repo": "microsoft/playwright-python",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 14969,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "playwright.dev",
+    "url": "https://playwright.dev/python/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/microsoft/playwright-python"
+   }
+  }
+ },
+ "Dev/Services/Polars.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pola-rs/polars",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "pola-rs/polars",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 39583,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.pola.rs",
+    "url": "https://docs.pola.rs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pola-rs/polars"
    }
   }
  },
@@ -464,6 +1224,30 @@
    }
   }
  },
+ "Dev/Services/PraisonAI.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "MervinPraison/PraisonAI",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "MervinPraison/PraisonAI",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 9000,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "praison.ai",
+    "url": "https://praison.ai/docs"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/MervinPraison/PraisonAI"
+   }
+  }
+ },
  "Dev/Services/Prophet.md": {
   "archived": false,
   "default_branch": "main",
@@ -485,6 +1269,32 @@
     "code": 200,
     "netloc_final": "github.com",
     "url": "https://github.com/facebook/prophet"
+   }
+  }
+ },
+ "Dev/Services/PuLP.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "coin-or/pulp",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-08-14",
+  "repo": "coin-or/pulp",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 2477,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "coin-or.github.io",
+    "url": "https://coin-or.github.io/pulp/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/coin-or/pulp"
    }
   }
  },
@@ -546,16 +1356,14 @@
   "license_spdx": "MIT",
   "pushed_at": "2026-09-02",
   "repo": "pydantic/pydantic",
-  "signalements": [
-   "url_domaine_change:pydantic.dev"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
-  "stars": 28689,
+  "stars": 28688,
   "urls": {
    "url_docs": {
     "code": 200,
     "netloc_final": "pydantic.dev",
-    "url": "https://docs.pydantic.dev/"
+    "url": "https://pydantic.dev/docs/validation/"
    },
    "url_repo": {
     "code": 200,
@@ -564,10 +1372,130 @@
    }
   }
  },
+ "Dev/Services/PydanticAI.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pydantic/pydantic-ai",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "pydantic/pydantic-ai",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 19668,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "pydantic.dev",
+    "url": "https://pydantic.dev/docs/ai/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pydantic/pydantic-ai"
+   }
+  }
+ },
  "Dev/Services/RAGatouille.md": {
   "signalements": [
    "corps_declin_vs_status_actif"
   ]
+ },
+ "Dev/Services/SGLang.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "sgl-project/sglang",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "sgl-project/sglang",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 33210,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.sglang.io",
+    "url": "https://docs.sglang.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/sgl-project/sglang"
+   }
+  }
+ },
+ "Dev/Services/SHAP.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "shap/shap",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "shap/shap",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 25725,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "shap.readthedocs.io",
+    "url": "https://shap.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/shap/shap"
+   }
+  }
+ },
+ "Dev/Services/Scrapling.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "D4Vinci/Scrapling",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-09-02",
+  "repo": "D4Vinci/Scrapling",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 77950,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "scrapling.readthedocs.io",
+    "url": "https://scrapling.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/D4Vinci/Scrapling"
+   }
+  }
+ },
+ "Dev/Services/Shiny for Python.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "posit-dev/py-shiny",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "posit-dev/py-shiny",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 1750,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "shiny.posit.co",
+    "url": "https://shiny.posit.co/py/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/posit-dev/py-shiny"
+   }
+  }
  },
  "Dev/Services/Stan.md": {
   "archived": false,
@@ -643,6 +1571,30 @@
    }
   }
  },
+ "Dev/Services/Temporal.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "temporalio/temporal",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "temporalio/temporal",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 22779,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.temporal.io",
+    "url": "https://docs.temporal.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/temporalio/temporal"
+   }
+  }
+ },
  "Dev/Services/TensorRT.md": {
   "archived": false,
   "default_branch": "main",
@@ -667,6 +1619,32 @@
    }
   }
  },
+ "Dev/Services/TimescaleDB.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "timescale/timescaledb",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "timescale/timescaledb",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 23455,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.tigerdata.com",
+    "url": "https://www.tigerdata.com/docs"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/timescale/timescaledb"
+   }
+  }
+ },
  "Dev/Services/TorchServe.md": {
   "archived": true,
   "default_branch": "master",
@@ -675,9 +1653,7 @@
   "license_spdx": "Apache-2.0",
   "pushed_at": "2025-08-06",
   "repo": "pytorch/serve",
-  "signalements": [
-   "abandonne_sans_remplacement:status=abandonne"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
   "stars": 4346,
   "urls": {
@@ -693,11 +1669,56 @@
    }
   }
  },
+ "Dev/Services/Tunix.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "google/tunix",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "google/tunix",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 2426,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "tunix.readthedocs.io",
+    "url": "https://tunix.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/google/tunix"
+   }
+  }
+ },
  "Dev/Services/Vanna.md": {
-  "signalements": [
-   "status_maturite_incoherents:maturite=production",
-   "abandonne_sans_remplacement:status=abandonne"
-  ]
+  "signalements": []
+ },
+ "Dev/Services/category_encoders.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "scikit-learn-contrib/category_encoders",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-08-25",
+  "repo": "scikit-learn-contrib/category_encoders",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 2500,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "contrib.scikit-learn.org",
+    "url": "https://contrib.scikit-learn.org/category_encoders/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/scikit-learn-contrib/category_encoders"
+   }
+  }
  },
  "Dev/Services/curl_cffi.md": {
   "archived": false,
@@ -723,10 +1744,82 @@
    }
   }
  },
+ "Dev/Services/darts.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "unit8co/darts",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-21",
+  "repo": "unit8co/darts",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 9508,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "unit8co.github.io",
+    "url": "https://unit8co.github.io/darts/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/unit8co/darts"
+   }
+  }
+ },
+ "Dev/Services/docTR.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "mindee/doctr",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "mindee/doctr",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 6334,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "mindee.github.io",
+    "url": "https://mindee.github.io/doctr/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/mindee/doctr"
+   }
+  }
+ },
  "Dev/Services/evaluate.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "huggingface/evaluate",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "majeure_affirmee": 0,
+  "pushed_at": "2026-07-06",
+  "pypi": "evaluate",
+  "pypi_version": "0.4.6",
+  "repo": "huggingface/evaluate",
   "signalements": [
    "corps_declin_vs_status_actif"
-  ]
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 2478,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "huggingface.co",
+    "url": "https://huggingface.co/docs/evaluate"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/huggingface/evaluate"
+   }
+  }
  },
  "Dev/Services/fastmcp.md": {
   "archived": false,
@@ -734,17 +1827,11 @@
   "full_name": "PrefectHQ/fastmcp",
   "http_api": 200,
   "license_spdx": "Apache-2.0",
-  "majeure_affirmee": 2,
   "pushed_at": "2026-09-02",
-  "pypi": "fastmcp",
-  "pypi_version": "4.0.1",
-  "repo": "jlowin/fastmcp",
-  "signalements": [
-   "depot_transfere:PrefectHQ/fastmcp",
-   "version_perimee:2->4.0.1"
-  ],
+  "repo": "PrefectHQ/fastmcp",
+  "signalements": [],
   "sonde_le": "2026-09-02",
-  "stars": 27484,
+  "stars": 27490,
   "urls": {
    "url_docs": {
     "code": 200,
@@ -754,7 +1841,7 @@
    "url_repo": {
     "code": 200,
     "netloc_final": "github.com",
-    "url": "https://github.com/jlowin/fastmcp"
+    "url": "https://github.com/PrefectHQ/fastmcp"
    }
   }
  },
@@ -765,12 +1852,10 @@
   "http_api": 200,
   "license_spdx": "MIT",
   "pushed_at": "2026-09-02",
-  "repo": "facebookresearch/hydra",
-  "signalements": [
-   "depot_transfere:hydra-ecosystem/hydra"
-  ],
+  "repo": "hydra-ecosystem/hydra",
+  "signalements": [],
   "sonde_le": "2026-09-02",
-  "stars": 10628,
+  "stars": 10629,
   "urls": {
    "url_docs": {
     "code": 200,
@@ -780,7 +1865,31 @@
    "url_repo": {
     "code": 200,
     "netloc_final": "github.com",
-    "url": "https://github.com/facebookresearch/hydra"
+    "url": "https://github.com/hydra-ecosystem/hydra"
+   }
+  }
+ },
+ "Dev/Services/jupysql.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "ploomber/jupysql",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-06-29",
+  "repo": "ploomber/jupysql",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 851,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "jupysql.readthedocs.io",
+    "url": "https://jupysql.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/ploomber/jupysql"
    }
   }
  },
@@ -810,6 +1919,30 @@
    }
   }
  },
+ "Dev/Services/pandas.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pandas-dev/pandas",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-09-02",
+  "repo": "pandas-dev/pandas",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 49621,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "pandas.pydata.org",
+    "url": "https://pandas.pydata.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pandas-dev/pandas"
+   }
+  }
+ },
  "Dev/Services/papermill.md": {
   "archived": false,
   "default_branch": "main",
@@ -834,6 +1967,54 @@
    }
   }
  },
+ "Dev/Services/pip.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pypa/pip",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-08-31",
+  "repo": "pypa/pip",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 10276,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "pip.pypa.io",
+    "url": "https://pip.pypa.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pypa/pip"
+   }
+  }
+ },
+ "Dev/Services/plotly.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "plotly/plotly.py",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-08-31",
+  "repo": "plotly/plotly.py",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 18763,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "plotly.com",
+    "url": "https://plotly.com/python/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/plotly/plotly.py"
+   }
+  }
+ },
  "Dev/Services/pykan.md": {
   "signalements": [
    "abandonne_sans_remplacement:status=en-eval"
@@ -845,9 +2026,30 @@
   ]
  },
  "Dev/Services/rank-bm25.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "dorianbrown/rank_bm25",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-05-02",
+  "repo": "dorianbrown/rank_bm25",
   "signalements": [
    "corps_declin_vs_status_actif"
-  ]
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 1382,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/dorianbrown/rank_bm25"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/dorianbrown/rank_bm25"
+   }
+  }
  },
  "Dev/Services/scipy.signal.md": {
   "archived": false,
@@ -923,6 +2125,30 @@
     "code": 200,
     "netloc_final": "github.com",
     "url": "https://github.com/statsmodels/statsmodels"
+   }
+  }
+ },
+ "Dev/Services/xarray.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pydata/xarray",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "pydata/xarray",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 4193,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.xarray.dev",
+    "url": "https://docs.xarray.dev/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pydata/xarray"
    }
   }
  }

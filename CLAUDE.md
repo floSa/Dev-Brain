@@ -140,6 +140,12 @@ AI/                          ← TON espace agent
 | Comparatif | `Dev/Patterns/Comparatif - <thème>.base` |
 | Règle | `Dev/Rules/Rule - <nom>.md` |
 | Concept Wiki | `Wiki/Concepts/<Nom>.md` |
+| **Entrée d'expérience datée** (dans `## Pièges` de la fiche concernée) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté |
+| **Incident né entre deux briques** | s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne ; la fiche de l'autre brique **ne le mentionne pas** (une entrée dupliquée serait une seconde chose à synchroniser) |
+
+Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
+
+**Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 
 **Convention wikilinks** (qualifiés par chemin pour éviter les collisions v1/v2) :
 - `[[Dev/Services/Postgres|Postgres]]` → fiche Service

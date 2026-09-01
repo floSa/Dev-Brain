@@ -14,7 +14,7 @@ alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Dash|Dash
 remplace_par: []
 status: actif
 tags: [ml-demo, web-framework]
-url_docs: https://www.gradio.app/docs
+url_docs: https://gradio.app/docs
 url_repo: https://github.com/gradio-app/gradio
 ---
 
@@ -60,4 +60,4 @@ Framework de **démos de modèles ML** édité par **Hugging Face** (acquisition
 - [[Dev/Patterns/Comparatif - Apps data & démos ML]] — Gradio vs Streamlit / Dash / Shiny.
 - [[Dev/Patterns/Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Dash.
 - SDK de référence pour Hugging Face Spaces.
-- Doc : https://www.gradio.app/docs
+- Doc : https://gradio.app/docs

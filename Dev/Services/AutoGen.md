@@ -12,7 +12,7 @@ langage: "Python, .NET"
 scaling: single-node
 alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Outils/swarm-forge|swarm-forge]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
 remplace_par: []
-status: actif
+status: abandonne
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://microsoft.github.io/autogen/
 url_repo: https://github.com/microsoft/autogen

@@ -33,7 +33,7 @@ L'utilisateur va te demander :
 2. **De faire un balayage en fin de conversation** ("mets à jour DevBrain") → `enrichir-brain` en mode balayage : repère tout ce qui mérite une page, draine la file dans `AI/backlog.md`.
 3. **De créer un Pattern ou Comparatif** ("compare X et Y", "fais une base pour…") → `enrichir-brain` crée/met à jour `Dev/Patterns/Comparatif - <thème>.base` ou `Pattern - <nom>.md`.
 4. **De traiter l'Inbox** ("traite mon inbox") → il n'existe pas encore de skill dédié à `Inbox.md` en v2 (le `process-inbox` v1 n'a pas été porté). Traite manuellement : lis `Inbox.md`, propose une destination par item, demande confirmation, crée la fiche via `enrichir-brain`.
-5. **D'enrichir une fiche existante** depuis un article web ou une expérience → patch la fiche concernée.
+5. **D'enrichir une fiche existante** depuis un article web ou une expérience → **jamais un patch improvisé** : suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`. Une page qui existe a des **consommateurs** (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) ; la procédure fournit, pour chaque champ modifié, la liste des consommateurs à repropager et la commande qui le vérifie. Modifier un champ sans dérouler cette table est l'origine mesurée des pitchs périmés du vault (constat C1 de `AI/audit/rapports/axe-2-integrite.md`).
 6. **De refactorer une partie du brain** ("réorganise X", "audite Y") → opération en lot ; les scripts `AI/scripts/check_brain.py` et `audit-vault.ps1` peuvent aider.
 
 ## Conventions de fiches Services (strictes)
@@ -126,7 +126,27 @@ Sections types (cf. `AI/design/brain-v2.md` §5.1, `Templates/Service-Dev.md`) :
 
 **Mécanique du pitch (anti-duplication)** : chaque page porte SON `pitch:` dans le frontmatter, écrit une seule fois. La ligne affichée dans la section *Alternatives* d'une autre page, et dans les propositions de `planifier-projet`, est **réinjectée** depuis ce pitch — jamais retapée à la main. `enrichir-brain` synchronise.
 
+**Convention unique de réinjection** (une seule, arbitrée le 2026-09-02 — cf. `AI/design/brain-v2.md` §5.1) :
+
+| Cas | Règle | Exemple |
+|---|---|---|
+| Cible listée en frontmatter `alternatives:` | la ligne **commence par** le `pitch:` courant de la cible (normalisation : `**` retirés, espaces réduits, casse ignorée) ; **suffixe libre autorisé après** | `- [[Dev/Services/Qdrant\|Qdrant]] — <pitch de Qdrant> — plus simple à self-host ici.` |
+| Cible **absente** du frontmatter `alternatives:` | mention de voisinage : ligne libre, **préfixée de `voisin :`** | `- [[Dev/Services/SDV\|SDV]] — voisin : autre nature, synthèse par modèles appris.` |
+| Prose comparative à la place du pitch | **interdit** : soit la prose devient le suffixe du cas 1, soit la cible sort de `alternatives:` et passe au cas 2 | — |
+
 **Important** : les **retours d'expérience et bugs rencontrés** vont dans la section `## Pièges` de la fiche Service/Outil concernée. Il n'y a pas de dossier séparé.
+
+| Convention | Format / règle |
+|---|---|
+| **Entrée d'expérience datée** (`## Pièges`) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté ; sans date, c'est un piège générique |
+| **Imputation d'un incident inter-briques** | il s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne. La fiche de l'autre brique **ne le mentionne pas** — une entrée dupliquée devient une seconde chose à synchroniser ; le nom en clair suffit à la retrouver par `grep` |
+
+Exemple d'entrée inter-briques, dans `Dev/Services/Docker.md` (le correctif a porté sur la configuration Docker, WSL2 et le runtime GPU sont nommés) :
+
+```markdown
+- 2026-09-02 — GPU invisible du conteneur sous WSL2 (nvidia-container-toolkit) : déclarer
+  le runtime NVIDIA côté Docker Desktop, WSL2 ne le propage pas seul.
+```
 
 ## Conventions Patterns (`Dev/Patterns/`)
 
@@ -232,3 +252,5 @@ docs(postgres): ajoute le piege de saturation du pool de connexions
 - Inventer un tag hors `Documentation/general/tags.md` sans le proposer d'abord.
 - Modifier une fiche `status: abandonne` sans demander.
 - Réécrire une fiche entière au lieu de patcher la section concernée.
+- Modifier un champ d'une fiche existante sans dérouler la *table des effets de bord* de `enrichir-brain` (workflow général, point 5) — un `pitch:` réécrit sans repropager laisse un pitch périmé chez chaque citeur.
+- Écrire un retour d'expérience sans date dans `## Pièges`, ou le dupliquer sur les deux briques d'un incident inter-briques.

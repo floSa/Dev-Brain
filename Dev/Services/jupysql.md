@@ -14,7 +14,7 @@ alternatives: []
 remplace_par: []
 status: actif
 tags: [notebook, dataframe]
-url_docs: https://jupysql.ploomber.io/
+url_docs: https://jupysql.readthedocs.io/
 url_repo: https://github.com/ploomber/jupysql
 ---
 
@@ -59,4 +59,4 @@ Exécute du **SQL directement dans un notebook** Jupyter via des *magics* : `%sq
 
 - [[Dev/Services/DuckDB|DuckDB]] — compagnon fréquent : SQL analytique local dans le notebook.
 - Sortie : [[Dev/Services/pandas|pandas]] / [[Dev/Services/Polars|Polars]] — conversion des résultats en DataFrame.
-- Doc : https://jupysql.ploomber.io/
+- Doc : https://jupysql.readthedocs.io/

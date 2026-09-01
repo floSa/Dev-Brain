@@ -7,11 +7,11 @@ pitch: "Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la 
 categorie: llm/framework
 licence_type: open-source
 hosted: both
-maturite: production
+maturite: deprecated
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/WrenAI|WrenAI]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
-remplace_par: []
+remplace_par: ["[[Dev/Services/WrenAI|WrenAI]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
 status: abandonne
 tags: [text-to-sql, llm, rag, agents, local-llm]
 url_docs: https://vanna.ai/docs/

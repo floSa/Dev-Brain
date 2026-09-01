@@ -14,7 +14,7 @@ alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen
 remplace_par: []
 status: actif
 tags: [llm, agents, multi-agent, tool-use, low-code, mcp]
-url_docs: https://docs.praison.ai
+url_docs: https://praison.ai/docs
 url_repo: https://github.com/MervinPraison/PraisonAI
 ---
 
@@ -72,4 +72,4 @@ Contrairement à une idée répandue dans les comparatifs, PraisonAI **n'enrobe 
 - Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]], [[mcp-protocol]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.praison.ai
+- Doc : https://praison.ai/docs

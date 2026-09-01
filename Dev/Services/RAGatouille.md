@@ -3,7 +3,7 @@ galaxie: dev
 type: service
 nom: RAGatouille
 alias: [ragatouille]
-pitch: "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (0.0.9, février 2025)."
+pitch: "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025)."
 categorie: llm/framework
 licence_type: open-source
 hosted: self
@@ -22,7 +22,7 @@ url_repo: https://github.com/AnswerDotAI/RAGatouille
 
 ## Pourquoi
 
-Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de rendre la **[[Late-interaction retrieval|recherche par late-interaction]] (ColBERT)** simple à utiliser dans un pipeline RAG. Elle enveloppe l'implémentation de référence **colbert-ai** (Stanford) et expose en quelques lignes : **indexation** compressée et persistée sur disque (index **PLAID**), **recherche**, et **entraînement / fine-tuning** (traitement des données, *hard negative mining*). Argument central : les modèles ColBERT **généralisent mieux hors domaine** que les embeddings denses mono-vecteur et sont **économes en données**. À noter : la **maintenance a ralenti** (dernière release **0.0.9**, février 2025) ; le projet reste l'entrée la plus simple vers ColBERT.
+Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de rendre la **[[Late-interaction retrieval|recherche par late-interaction]] (ColBERT)** simple à utiliser dans un pipeline RAG. Elle enveloppe l'implémentation de référence **colbert-ai** (Stanford) et expose en quelques lignes : **indexation** compressée et persistée sur disque (index **PLAID**), **recherche**, et **entraînement / fine-tuning** (traitement des données, *hard negative mining*). Argument central : les modèles ColBERT **généralisent mieux hors domaine** que les embeddings denses mono-vecteur et sont **économes en données**. À noter : la **maintenance a ralenti** (dernière release **0.0.9.post2**, mai 2025, dernier commit le même mois) ; le projet reste l'entrée la plus simple vers ColBERT.
 
 ## Quand l'utiliser
 
@@ -46,7 +46,7 @@ Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de r
 
 ## Pièges
 
-- **Maintenance ralentie** (0.0.9, fév. 2025) : surveiller la compatibilité des dépendances avant un usage durable.
+- **Maintenance ralentie** (0.0.9.post2, mai 2025 — aucun commit depuis) : surveiller la compatibilité des dépendances avant un usage durable.
 - Index **multi-vecteur volumineux** : prévoir le stockage ; PLAID atténue mais ne supprime pas le surcoût.
 - ColBERT ≠ cross-encoder : c'est un retriever/scorer multi-vecteur, pas un simple reranker de paire — calibrer l'usage.
 

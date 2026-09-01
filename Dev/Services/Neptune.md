@@ -11,7 +11,7 @@ maturite: deprecated
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]"]
-remplace_par: []
+remplace_par: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]"]
 status: abandonne
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.neptune.ai/

@@ -3,16 +3,16 @@ galaxie: dev
 type: service
 nom: Fanalysis
 alias: [fanalysis]
-pitch: "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR."
+pitch: "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince."
 categorie: tooling/stats
 licence_type: open-source
 hosted: self
-maturite: experimental
+maturite: deprecated
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Prince|Prince]]"]
-remplace_par: []
-status: actif
+remplace_par: ["[[Dev/Services/Prince|Prince]]"]
+status: abandonne
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 url_docs: 
 url_repo: https://github.com/OlivierGarciaDev/fanalysis
@@ -32,7 +32,7 @@ Module d'**analyse factorielle descriptive** (PCA, CA, MCA) centré sur les **ai
 ## Quand NE PAS l'utiliser
 
 - Famille complète (FAMD, MFA, GPA), maintenance active et API sklearn moderne → [[Dev/Services/Prince|Prince]] (recommandé par défaut).
-- Code de production : projet **peu maintenu** (v0.0.1, poignée de commits, pas de release récente).
+- Projet **à l'arrêt en amont** : aucun commit depuis le 4 juin 2018, resté en v0.0.1 — le code fonctionne, mais rien n'évoluera. Pour tout usage durable, [[Dev/Services/Prince|Prince]].
 - Données mixtes ou groupes de variables → [[Dev/Services/Prince|Prince]].
 
 ## Déploiement & coût
