@@ -1,6 +1,6 @@
 {
   "_comment": "Config Claude Code partagée du DevBrain — VERSIONNÉE. Permissions read-only + WebFetch ciblé + deny destructeur, et les hooks du vault. Les permissions personnelles (push, identité) vont dans settings.local.json, gitignoré.",
-  "_comment_hooks": "Hooks Stop : (1) check_brain.py, lancé seulement si la session a touché Dev/ ou Wiki/ — il rapporte, il ne bloque jamais, il sort toujours en 0 ; (2) le résumé de session dans AI/sessions/, silencieux tant que ANTHROPIC_API_KEY n'est pas positionnée. $CLAUDE_PROJECT_DIR évite tout chemin absolu (cf. Documentation/perso/machines.md).",
+  "_comment_hooks": "Hooks Stop : (1) check_brain.py, lancé seulement si la session a touché Dev/ ou Wiki/ — il rapporte, il ne bloque jamais, il sort toujours en 0 ; (2) le résumé de session dans AI/sessions/, silencieux tant que ANTHROPIC_API_KEY n'est pas positionnée. $CLAUDE_PROJECT_DIR évite tout chemin absolu (cf. Documentation/perso/machines.md). --link-mode=copy est obligatoire ici : le vault vit sur OneDrive, ou uv echoue a poser ses hardlinks de cache (os error 396) et le hook meurt avant de tourner.",
   "permissions": {
     "allow": [
       "Bash(git status:*)",
@@ -47,12 +47,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run \"$CLAUDE_PROJECT_DIR/AI/scripts/stop_check_brain.py\"",
+            "command": "uv run --link-mode=copy \"$CLAUDE_PROJECT_DIR/AI/scripts/stop_check_brain.py\"",
             "timeout": 330
           },
           {
             "type": "command",
-            "command": "uv run \"$CLAUDE_PROJECT_DIR/AI/scripts/session_to_devbrain.py\"",
+            "command": "uv run --link-mode=copy \"$CLAUDE_PROJECT_DIR/AI/scripts/session_to_devbrain.py\"",
             "timeout": 120
           }
         ]
