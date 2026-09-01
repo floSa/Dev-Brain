@@ -1,6 +1,7 @@
 {
   "newFileLocation": "folder",
   "newFileFolderPath": "_orphans",
+  "propertiesInDocument": "hidden",
   "userIgnoreFilters": [
     "AI/skills/",
     "AI/sessions/",
@@ -9,6 +10,7 @@
     "AI/prompts/",
     "AI/scripts/",
     "AI/design/",
+    "AI/index/",
     "Templates/",
     "docs/",
     "CLAUDE.md",

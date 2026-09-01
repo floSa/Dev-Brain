@@ -36,7 +36,7 @@ propre travail.
 
 | Lot | Objet | Brief | Prêt à lancer | Fait |
 |-----|-------|-------|---------------|------|
-| 0 | Réglages Obsidian — graphe et propriétés | `lot-0-reglages.md` | oui | — |
+| 0 | Réglages Obsidian — graphe et propriétés | `lot-0-reglages.md` | oui | **appliqué le 2026-09-04** — vérifications visuelles et test `base` en attente d'une ouverture du vault dans Obsidian (cf. *Remontées*) |
 | 1 | Spec et arborescence | — | — | **fait le 2026-09-04** |
 | 2 | `role:` remplace `galaxie:`/`type:` ; nettoyage du frontmatter | `lot-2-role.md` | après validation de la spec | — |
 | 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | — |
@@ -98,7 +98,9 @@ Ce qu'une conversation découvre hors de son périmètre s'écrit ici, et **seul
 
 | Date | Lot | Constat | Décision |
 |------|-----|---------|----------|
-| — | — | — | — |
+| 2026-09-04 | 0 | **Test du bloc de code `base` non exécuté.** Il demande de constater un rendu dans Obsidian ; la conversation tourne sous WSL, sans interface graphique. Brouillon prêt et laissé en place : `_orphans/test-bloc-base.md` (gitignoré), il porte la requête de `Comparatif - Bases vectorielles.base` dans un bloc ```` ```base ````. | Le lot 5 garde l'hypothèse prudente — les 47 `.base` sont **conservés**. À rouvrir si le tableau s'affiche : voir la décision ouverte n°5. Supprimer le brouillon après lecture. |
+| 2026-09-04 | 0 | **Aucun Obsidian ne pointe sur ce vault.** Le registre Windows (`AppData/Roaming/obsidian/obsidian.json`) référence `C:\Users\FlorianHorellou\Documents\Projets\DevBrain`, chemin disparu, dernière ouverture le 2026-05-21. Ce `.obsidian/` n'a ni `appearance.json` ni `workspace.json` : il n'a jamais été ouvert par l'application. | Les deux réglages du lot 0 sont écrits dans `.obsidian/app.json` et prendront effet à la première ouverture du vault depuis son chemin actuel. Les deux vérifications visuelles du lot (graphe sans `liens.md`, titre en première ligne) restent donc à faire à ce moment-là, en même temps que le test ci-dessus. |
+| 2026-09-04 | 0 | Le réglage « Propriétés dans le document → Masqué » a été appliqué **par le fichier** (`propertiesInDocument: "hidden"` dans `app.json`) et non par l'interface, faute d'accès à celle-ci. Avantage : le réglage devient portable entre machines au lieu de rester local. | À confirmer d'un œil à la réouverture — si le panneau reste visible, le passer par Réglages → Éditeur, Obsidian réécrira la clé lui-même. |
 
 ---
 
