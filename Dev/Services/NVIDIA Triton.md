@@ -5,6 +5,7 @@ nom: NVIDIA Triton
 alias: [triton, triton-inference-server, dynamo-triton]
 pitch: "Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

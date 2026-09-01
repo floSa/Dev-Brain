@@ -5,6 +5,7 @@ nom: OpenCut
 alias: [OpenCut-app/OpenCut, opencut]
 pitch: "Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés."
 categorie: tooling/video
+famille: application
 domaines: []
 licence_type: open-source
 os: "Navigateur (aujourd'hui) ; desktop et mobile annoncés, non livrés"

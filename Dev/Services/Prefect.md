@@ -5,6 +5,7 @@ nom: Prefect
 alias: [prefect]
 pitch: "Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer."
 categorie: data/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

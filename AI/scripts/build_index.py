@@ -38,10 +38,14 @@ OUT_MD = VAULT / "AI" / "index" / "brain-index.md"
 # Tous les champs sont facultatifs : `fm.get()` écrit `null` pour une page qui ne les
 # porte pas (les `type: concept` n'ont ni `status` ni `maturite` ; les `type: pattern`
 # et `type: rule` n'ont ni `nom` ni `categorie`).
+# `famille` est le second axe de rangement (la NATURE : paquet, plateforme, application…),
+# `categorie` restant le domaine — cf. Documentation/general/taxonomie.md. Sans lui dans
+# l'index, un consommateur machine ne peut pas distinguer une bibliothèque à importer d'un
+# service à déployer : `type:` ne le dit pas (il suit le dossier d'accueil, cf. audit axe 1, C6).
 # Note : `maturite` figure aussi dans V1_MARKERS ci-dessous — côté Wiki, une page qui
 # le porte est du réservoir v1 et sort de l'index. `maturite` n'est donc jamais renseigné
 # que sur des pages Dev. Les deux usages du nom ne se contredisent pas.
-FIELDS = ["nom", "alias", "type", "galaxie", "categorie", "domaines",
+FIELDS = ["nom", "alias", "type", "galaxie", "categorie", "famille", "domaines",
           "pitch", "tags", "alternatives", "status", "maturite"]
 
 # Champs hérités v1 : leur présence dans une page Wiki = réservoir → hors index actif.

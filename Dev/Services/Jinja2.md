@@ -5,6 +5,7 @@ nom: Jinja2
 alias: [jinja, jinja2]
 pitch: "Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask."
 categorie: framework/frontend
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

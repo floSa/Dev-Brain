@@ -5,6 +5,7 @@ nom: TorchServe
 alias: [torchserve, torch-serve]
 pitch: "Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: deprecated

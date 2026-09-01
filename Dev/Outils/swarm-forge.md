@@ -5,6 +5,7 @@ nom: swarm-forge
 alias: [unclebob/swarm-forge, swarm]
 pitch: "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée."
 categorie: tooling/code-assistant
+famille: cli
 domaines: [ai-eng]
 licence_type: 
 os: "Linux, macOS, Windows (WSL)"

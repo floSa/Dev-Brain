@@ -5,6 +5,7 @@ nom: pgAdmin
 alias: [pgadmin, pgadmin4]
 pitch: "Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur."
 categorie: tooling/db-admin
+famille: application
 domaines: [data-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, web (Docker)"

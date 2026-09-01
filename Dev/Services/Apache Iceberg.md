@@ -5,6 +5,7 @@ nom: Apache Iceberg
 alias: [Iceberg, iceberg]
 pitch: "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB)."
 categorie: data/lakehouse
+famille: specification
 licence_type: open-source
 hosted: both
 maturite: production

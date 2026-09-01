@@ -5,6 +5,7 @@ nom: imbalanced-learn
 alias: [imblearn, imbalanced learn, imb-learn]
 pitch: "Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

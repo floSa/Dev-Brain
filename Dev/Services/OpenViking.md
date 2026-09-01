@@ -5,6 +5,7 @@ nom: OpenViking
 alias: [openviking, viking]
 pitch: "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens."
 categorie: llm/framework
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: beta

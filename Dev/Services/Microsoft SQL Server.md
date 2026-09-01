@@ -5,6 +5,7 @@ nom: Microsoft SQL Server
 alias: [sql server, mssql, sqlserver, ms sql]
 pitch: "SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche."
 categorie: database/relational
+famille: plateforme
 licence_type: proprietary
 hosted: both
 maturite: production

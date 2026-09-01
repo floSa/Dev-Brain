@@ -5,6 +5,7 @@ nom: Headroom
 alias: [headroom, headroom-ai, headroomlabs]
 pitch: "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande."
 categorie: llm/context
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: beta

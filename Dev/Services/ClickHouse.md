@@ -5,6 +5,7 @@ nom: ClickHouse
 alias: [clickhouse]
 pitch: "SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence."
 categorie: database/columnar
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

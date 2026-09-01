@@ -5,6 +5,7 @@ nom: ArviZ
 alias: [arviz, az]
 pitch: "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC."
 categorie: tooling/stats
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

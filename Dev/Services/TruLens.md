@@ -5,6 +5,7 @@ nom: TruLens
 alias: [trulens, truera-trulens, trulens-eval]
 pitch: "Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability."
 categorie: llm/eval
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

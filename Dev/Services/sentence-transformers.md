@@ -5,6 +5,7 @@ nom: sentence-transformers
 alias: [sbert, sentence transformers, sentence-bert]
 pitch: "Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

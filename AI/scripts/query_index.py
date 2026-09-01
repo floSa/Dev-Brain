@@ -16,6 +16,7 @@ Exemples :
     uv run AI/scripts/query_index.py --tag-of "Weaviate"            # tags d'une page
     uv run AI/scripts/query_index.py --categorie llm/framework \
         --status abandonne                                          # briques à écarter
+    uv run AI/scripts/query_index.py --famille plateforme --tag rag # nature × sujet
 
 Lit seulement l'index (pas de re-scan du vault). Cross-OS, chemins relatifs.
 """
@@ -34,7 +35,11 @@ INDEX = VAULT / "AI" / "index" / "brain-index.json"
 def main() -> int:
     ap = argparse.ArgumentParser(description="Requête bornée sur brain-index.json")
     ap.add_argument("--name", help="existence par nom OU alias (insensible à la casse)")
-    ap.add_argument("--categorie")
+    ap.add_argument("--categorie", help="filtre sur le DOMAINE (categorie:)")
+    ap.add_argument("--famille",
+                    choices=["paquet", "plateforme", "application", "cli", "saas",
+                             "extension", "specification", "modele", "annuaire"],
+                    help="filtre sur la NATURE (famille:) — cf. taxonomie.md")
     ap.add_argument("--tag")
     ap.add_argument("--galaxie", choices=["dev", "wiki"])
     ap.add_argument("--status", choices=["actif", "en-eval", "abandonne"],
@@ -44,9 +49,10 @@ def main() -> int:
     ap.add_argument("--tag-of", metavar="NOM", help="liste les tags d'une page")
     ap.add_argument(
         "--fields",
-        default="nom,categorie,galaxie,pitch,status,maturite,tags,alternatives,path",
-        help="champs renvoyés (csv) — status/maturite inclus par défaut : ce sont "
-             "des critères éliminatoires, les masquer ferait filtrer à l'aveugle",
+        default="nom,categorie,famille,galaxie,pitch,status,maturite,tags,"
+                "alternatives,path",
+        help="champs renvoyés (csv) — famille/status/maturite inclus par défaut : "
+             "ce sont des critères éliminatoires, les masquer ferait filtrer à l'aveugle",
     )
     args = ap.parse_args()
 
@@ -71,6 +77,8 @@ def main() -> int:
         if args.galaxie and p.get("galaxie") != args.galaxie:
             return False
         if args.categorie and p.get("categorie") != args.categorie:
+            return False
+        if args.famille and p.get("famille") != args.famille:
             return False
         if args.tag and args.tag not in (p.get("tags") or []):
             return False

@@ -5,6 +5,7 @@ nom: ADBC
 alias: [arrow-adbc, Arrow Database Connectivity]
 pitch: "Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow."
 categorie: database/driver
+famille: specification
 licence_type: open-source
 hosted: self
 maturite: production

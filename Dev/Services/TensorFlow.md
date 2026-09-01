@@ -5,6 +5,7 @@ nom: TensorFlow
 alias: [tensorflow, tf, tf.keras]
 pitch: "Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

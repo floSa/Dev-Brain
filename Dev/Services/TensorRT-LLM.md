@@ -5,6 +5,7 @@ nom: TensorRT-LLM
 alias: [TRT-LLM, trt-llm, tensorrt-llm]
 pitch: "Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++."
 categorie: llm/local
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

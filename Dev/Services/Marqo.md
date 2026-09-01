@@ -5,6 +5,7 @@ nom: Marqo
 alias: [marqo, marqo-ai]
 pitch: "Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce."
 categorie: database/search
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: deprecated

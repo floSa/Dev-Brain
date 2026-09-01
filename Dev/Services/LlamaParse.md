@@ -5,6 +5,7 @@ nom: LlamaParse
 alias: [llamaparse, llama-parse, LlamaCloud Parse]
 pitch: "Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source."
 categorie: data/parsing
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

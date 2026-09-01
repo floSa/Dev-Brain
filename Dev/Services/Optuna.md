@@ -5,6 +5,7 @@ nom: Optuna
 alias: [optuna, TPESampler]
 pitch: "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable."
 categorie: ml/hyperopt
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

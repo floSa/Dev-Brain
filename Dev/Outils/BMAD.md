@@ -5,6 +5,7 @@ nom: BMAD
 alias: [BMAD-METHOD, bmad-method, Breakthrough Method for Agile AI-Driven Development]
 pitch: "Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story."
 categorie: tooling/code-assistant
+famille: extension
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"

@@ -5,6 +5,7 @@ nom: Unstructured
 alias: [unstructured, unstructured-io]
 pitch: "Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG."
 categorie: data/parsing
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

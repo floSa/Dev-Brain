@@ -5,6 +5,7 @@ nom: pi
 alias: [pi-coding-agent, earendil-works/pi, pi-ai]
 pitch: "Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés."
 categorie: tooling/code-assistant
+famille: cli
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, Android (Termux)"

@@ -5,6 +5,7 @@ nom: smolagents
 alias: [smolagents, smol-agents]
 pitch: "Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

@@ -5,6 +5,7 @@ nom: Evidently
 alias: [evidently, evidently ai, evidentlyai]
 pitch: "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production."
 categorie: ml/monitoring
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

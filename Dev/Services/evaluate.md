@@ -5,6 +5,7 @@ nom: evaluate
 alias: [hf evaluate, huggingface evaluate, 🤗 evaluate]
 pitch: "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre."
 categorie: ml/eval
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

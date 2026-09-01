@@ -5,6 +5,7 @@ nom: Stable-Baselines3
 alias: [SB3, stable-baselines3, stable baselines 3, sb3]
 pitch: "Implémentations fiables et testées d'algorithmes de RL en PyTorch (PPO, A2C, DQN, SAC, TD3, DDPG) — API homogène sur environnements Gymnasium ; la boîte à outils par défaut pour entraîner un agent sans réimplémenter."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

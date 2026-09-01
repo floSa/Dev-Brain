@@ -5,6 +5,7 @@ nom: xarray
 alias: [xray, pydata-xarray]
 pitch: "Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial)."
 categorie: tooling/data
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

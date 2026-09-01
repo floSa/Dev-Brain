@@ -5,6 +5,7 @@ nom: CockroachDB
 alias: [cockroachdb, cockroach, crdb]
 pitch: "Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région."
 categorie: database/relational
+famille: plateforme
 licence_type: source-available
 hosted: both
 maturite: production

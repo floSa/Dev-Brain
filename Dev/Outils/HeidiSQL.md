@@ -5,6 +5,7 @@ nom: HeidiSQL
 alias: [heidisql]
 pitch: "Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide."
 categorie: tooling/db-admin
+famille: application
 domaines: [data-eng]
 licence_type: open-source
 os: "Windows (Linux/macOS via Wine)"

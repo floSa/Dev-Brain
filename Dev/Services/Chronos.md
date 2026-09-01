@@ -5,6 +5,7 @@ nom: Chronos
 alias: [Chronos-T5, Chronos-Bolt, Chronos-2, chronos-forecasting]
 pitch: "Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params)."
 categorie: ml/framework
+famille: modele
 licence_type: open-source
 hosted: self
 maturite: production

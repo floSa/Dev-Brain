@@ -5,6 +5,7 @@ nom: Featuretools
 alias: [featuretools, Deep Feature Synthesis, DFS]
 pitch: "Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

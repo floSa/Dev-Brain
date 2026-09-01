@@ -5,6 +5,7 @@ nom: pdfplumber
 alias: [pdfplumber, jsvine-pdfplumber]
 pitch: "Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT."
 categorie: data/parsing
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

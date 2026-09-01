@@ -5,6 +5,7 @@ nom: Flask
 alias: [flask]
 pitch: "Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions."
 categorie: framework/backend
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

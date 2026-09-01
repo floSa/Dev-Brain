@@ -5,6 +5,7 @@ nom: pgvector
 alias: [pgvector, pg-vector]
 pitch: "Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place."
 categorie: database/vector
+famille: extension
 licence_type: open-source
 hosted: both
 maturite: production

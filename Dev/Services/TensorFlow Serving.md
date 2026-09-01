@@ -5,6 +5,7 @@ nom: TensorFlow Serving
 alias: [tf-serving, tensorflow-serving, tfserving]
 pitch: "Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

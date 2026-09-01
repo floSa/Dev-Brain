@@ -5,6 +5,7 @@ nom: Grafana
 alias: [grafana]
 pitch: "Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud."
 categorie: observability/metric
+famille: application
 licence_type: open-source
 hosted: both
 maturite: production

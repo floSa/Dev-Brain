@@ -5,6 +5,7 @@ nom: Sniffnet
 alias: [sniffnet, gyulyvgc/sniffnet]
 pitch: "Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP."
 categorie: network/analysis
+famille: application
 domaines: [infra-ops]
 licence_type: open-source
 os: "Windows, macOS, Linux"

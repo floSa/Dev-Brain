@@ -5,6 +5,7 @@ nom: AutoGen
 alias: [autogen, microsoft-autogen]
 pitch: "Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2)."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: deprecated

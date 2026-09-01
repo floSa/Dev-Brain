@@ -5,6 +5,7 @@ nom: Hyperopt
 alias: [hyperopt, TPE, tree-structured Parzen estimator]
 pitch: "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu."
 categorie: ml/hyperopt
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

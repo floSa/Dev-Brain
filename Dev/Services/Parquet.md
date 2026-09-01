@@ -5,6 +5,7 @@ nom: Parquet
 alias: [parquet, Apache Parquet]
 pitch: "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet."
 categorie: data/format
+famille: specification
 licence_type: open-source
 hosted: self
 maturite: production

@@ -5,6 +5,7 @@ nom: BentoML
 alias: [bentoml, bento]
 pitch: "Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes)."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

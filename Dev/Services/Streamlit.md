@@ -5,6 +5,7 @@ nom: Streamlit
 alias: [streamlit]
 pitch: "Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS."
 categorie: ui/data-app
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

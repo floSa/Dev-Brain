@@ -5,6 +5,7 @@ nom: curl_cffi
 alias: [curl-cffi]
 pitch: "Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

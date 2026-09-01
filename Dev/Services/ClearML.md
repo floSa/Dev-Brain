@@ -5,6 +5,7 @@ nom: ClearML
 alias: [clearml, Trains, Allegro Trains]
 pitch: "Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving."
 categorie: ml/tracking
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

@@ -5,6 +5,7 @@ nom: Comet
 alias: [Comet ML, comet_ml, comet.com]
 pitch: "Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives."
 categorie: ml/tracking
+famille: plateforme
 licence_type: proprietary
 hosted: both
 maturite: production

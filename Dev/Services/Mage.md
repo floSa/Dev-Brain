@@ -5,6 +5,7 @@ nom: Mage
 alias: [mage, Mage AI, mage-ai]
 pitch: "Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation."
 categorie: data/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

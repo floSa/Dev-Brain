@@ -5,6 +5,7 @@ nom: ScaNN
 alias: [scann, scalable-nearest-neighbors]
 pitch: "Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes."
 categorie: database/vector
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

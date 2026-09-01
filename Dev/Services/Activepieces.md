@@ -5,6 +5,7 @@ nom: Activepieces
 alias: [activepieces]
 pitch: "Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier."
 categorie: automation/workflow
+famille: plateforme
 licence_type: open-core
 hosted: both
 maturite: production

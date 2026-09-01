@@ -5,6 +5,7 @@ nom: llama.cpp
 alias: [llamacpp, llama-cpp, ggml]
 pitch: "Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux."
 categorie: llm/local
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

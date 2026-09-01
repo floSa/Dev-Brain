@@ -5,6 +5,7 @@ nom: Scrapling
 alias: [scrapling]
 pitch: "Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: beta

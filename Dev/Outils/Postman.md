@@ -5,6 +5,7 @@ nom: Postman
 alias: [postman]
 pitch: "Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative."
 categorie: tooling/api
+famille: saas
 domaines: [data-eng, ai-eng]
 licence_type: proprietary
 os: "Windows, macOS, Linux, Web"

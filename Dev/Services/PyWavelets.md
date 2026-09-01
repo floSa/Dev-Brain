@@ -5,6 +5,7 @@ nom: PyWavelets
 alias: [pywt, pywavelets, wavelet transform]
 pitch: "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle."
 categorie: tooling/data
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

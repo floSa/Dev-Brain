@@ -5,6 +5,7 @@ nom: Metaflow
 alias: [metaflow]
 pitch: "Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds."
 categorie: ml/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

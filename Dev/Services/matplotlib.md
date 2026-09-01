@@ -5,6 +5,7 @@ nom: matplotlib
 alias: [mpl, plt, pyplot]
 pitch: "Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz."
 categorie: tooling/viz
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

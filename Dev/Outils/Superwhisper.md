@@ -5,6 +5,7 @@ nom: Superwhisper
 alias: [superwhisper]
 pitch: "Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie."
 categorie: tooling/media
+famille: application
 domaines: [ai-eng]
 licence_type: proprietary
 os: "macOS, Windows, iOS"

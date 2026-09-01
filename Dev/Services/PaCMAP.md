@@ -5,6 +5,7 @@ nom: PaCMAP
 alias: [pacmap, Pairwise Controlled Manifold Approximation]
 pitch: "Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: beta

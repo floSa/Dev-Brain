@@ -5,6 +5,7 @@ nom: text-generation-webui
 alias: [oobabooga, textgen, text-gen-webui]
 pitch: "UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale."
 categorie: llm/local
+famille: application
 licence_type: open-source
 hosted: self
 maturite: production

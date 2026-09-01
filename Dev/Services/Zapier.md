@@ -5,6 +5,7 @@ nom: Zapier
 alias: [zapier]
 pitch: "Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host."
 categorie: automation/ipaas
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

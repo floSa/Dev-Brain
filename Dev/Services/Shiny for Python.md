@@ -5,6 +5,7 @@ nom: Shiny for Python
 alias: [shiny, py-shiny, shiny-python]
 pitch: "Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM)."
 categorie: ui/data-app
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

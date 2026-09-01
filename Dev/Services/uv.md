@@ -5,6 +5,7 @@ nom: uv
 alias: []
 pitch: "Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine."
 categorie: tooling/package
+famille: cli
 licence_type: open-source
 hosted: self
 maturite: production

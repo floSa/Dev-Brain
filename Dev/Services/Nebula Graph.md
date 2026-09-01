@@ -5,6 +5,7 @@ nom: Nebula Graph
 alias: [nebula, nebula graph, nebulagraph]
 pitch: "Base de graphes distribuée pour jeux de données massifs."
 categorie: database/graph
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

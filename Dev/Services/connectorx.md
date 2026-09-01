@@ -5,6 +5,7 @@ nom: connectorx
 alias: [connector-x, connectorx]
 pitch: "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination."
 categorie: tooling/data
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

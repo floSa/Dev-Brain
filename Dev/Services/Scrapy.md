@@ -5,6 +5,7 @@ nom: Scrapy
 alias: [scrapy]
 pitch: "Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

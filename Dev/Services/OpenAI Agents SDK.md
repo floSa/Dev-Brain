@@ -5,6 +5,7 @@ nom: OpenAI Agents SDK
 alias: [openai-agents-sdk, openai-agents, agents-sdk, swarm]
 pitch: "SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

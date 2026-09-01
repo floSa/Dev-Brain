@@ -5,6 +5,7 @@ nom: FossFLOW
 alias: [fossflow, isoflow]
 pitch: "Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON."
 categorie: tooling/diagram
+famille: application
 domaines: []
 licence_type: open-source
 os: "Web (PWA)"

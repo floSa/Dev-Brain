@@ -5,6 +5,7 @@ nom: pandas
 alias: [pd]
 pitch: "DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python."
 categorie: tooling/data
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

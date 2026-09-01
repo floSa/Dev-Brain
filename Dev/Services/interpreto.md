@@ -5,6 +5,7 @@ nom: interpreto
 alias: [Interpreto, FOR-sight interpreto]
 pitch: "Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: experimental

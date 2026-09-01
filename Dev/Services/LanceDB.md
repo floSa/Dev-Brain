@@ -5,6 +5,7 @@ nom: LanceDB
 alias: [lancedb, lance]
 pitch: "Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer."
 categorie: database/vector
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

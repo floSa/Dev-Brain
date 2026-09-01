@@ -5,6 +5,7 @@ nom: Ragas
 alias: [ragas, explodinggradients-ragas]
 pitch: "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG."
 categorie: llm/eval
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

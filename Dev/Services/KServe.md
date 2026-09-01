@@ -5,6 +5,7 @@ nom: KServe
 alias: [kserve, kfserving]
 pitch: "Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

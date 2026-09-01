@@ -5,6 +5,7 @@ nom: promptfoo
 alias: [promptfoo, promptfoo.dev]
 pitch: "Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic."
 categorie: llm/eval
+famille: cli
 licence_type: open-source
 hosted: self
 maturite: production

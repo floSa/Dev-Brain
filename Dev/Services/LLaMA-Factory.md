@@ -5,6 +5,7 @@ nom: LLaMA-Factory
 alias: [llama-factory, llamafactory, LLaMA Factory, hiyouga/LLaMA-Factory, LLaMA Board]
 pitch: "Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis."
 categorie: llm/finetuning
+famille: cli
 licence_type: open-source
 hosted: self
 maturite: production

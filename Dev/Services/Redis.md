@@ -5,6 +5,7 @@ nom: Redis
 alias: [redis]
 pitch: "Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub."
 categorie: database/keyvalue
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

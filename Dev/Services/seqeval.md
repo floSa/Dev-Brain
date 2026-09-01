@@ -5,6 +5,7 @@ nom: seqeval
 alias: [seq eval]
 pitch: "Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger."
 categorie: ml/eval
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

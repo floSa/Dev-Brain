@@ -44,9 +44,15 @@ def parse(path: Path):
 
 
 def declared_categories() -> set[str]:
-    """Meme parseur que check_brain : seuls les blocs ``` de taxonomie.md comptent."""
+    """Meme parseur que check_brain : seuls les blocs ``` NUS de taxonomie.md comptent.
+
+    Un fence a langue (```famille) porte un autre vocabulaire ferme — l'axe famille —
+    et n'entre pas dans le compte des categories.
+    """
     txt = (DOC / "taxonomie.md").read_text(encoding="utf-8")
-    body = "\n".join(re.findall(r"```(.*?)```", txt, re.S))
+    body = "\n".join(c for langue, c in
+                     re.findall(r"^```([a-z0-9-]*)\n(.*?)^```", txt, re.S | re.M)
+                     if not langue)
     cats: set[str] = set()
     for m in re.finditer(r"([a-z][\w-]*)/\{([^}]*)\}", body, re.S):
         for item in re.split(r"[,\n]", m.group(2)):

@@ -5,6 +5,7 @@ nom: Excalidraw
 alias: [excalidraw]
 pitch: "Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian."
 categorie: tooling/diagram
+famille: application
 domaines: []
 licence_type: open-source
 os: "Web, Windows, macOS, Linux"

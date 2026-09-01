@@ -5,6 +5,7 @@ nom: PyMC
 alias: [pymc3, pymc-devs]
 pitch: "Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor)."
 categorie: tooling/stats
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

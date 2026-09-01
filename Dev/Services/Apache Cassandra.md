@@ -5,6 +5,7 @@ nom: Apache Cassandra
 alias: [cassandra, apache cassandra]
 pitch: "Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter."
 categorie: database/wide-column
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

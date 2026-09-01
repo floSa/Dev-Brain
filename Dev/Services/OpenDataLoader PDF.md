@@ -5,6 +5,7 @@ nom: OpenDataLoader PDF
 alias: [opendataloader, opendataloader-pdf, open data loader pdf]
 pitch: "Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA."
 categorie: data/parsing
+famille: paquet
 licence_type: open-core
 hosted: self
 maturite: production

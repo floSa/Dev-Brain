@@ -5,6 +5,7 @@ nom: LlamaIndex NLSQLTableQueryEngine
 alias: [nlsqltablequeryengine, llamaindex text-to-sql, llamaindex sql, SQLTableRetrieverQueryEngine, llamaindex nl2sql]
 pitch: "Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle."
 categorie: llm/framework-module
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

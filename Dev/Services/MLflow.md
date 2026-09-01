@@ -5,6 +5,7 @@ nom: MLflow
 alias: [mlflow]
 pitch: "Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud."
 categorie: ml/tracking
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

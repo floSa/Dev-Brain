@@ -5,6 +5,7 @@ nom: OpenRouter
 alias: [openrouter, openrouter.ai]
 pitch: "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through."
 categorie: llm/framework
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

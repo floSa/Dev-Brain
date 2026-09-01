@@ -5,6 +5,7 @@ nom: Prince
 alias: [prince]
 pitch: "Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas."
 categorie: tooling/stats
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

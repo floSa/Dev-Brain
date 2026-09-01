@@ -1,19 +1,17 @@
 ---
 galaxie: dev
-type: service
+type: outil
 nom: <% tp.file.title %>
 alias: []
 pitch: ""
 categorie: 
 famille: 
+domaines: []
 licence_type: open-source
-hosted: both
-maturite: production
+os: ""
 langage: 
-scaling: single-node
-alternatives: []
-remplace_par: []
 status: actif
+alternatives: []
 tags: []
 url_docs: 
 url_repo: 
@@ -30,11 +28,13 @@ url_repo:
 ## Quand NE PAS l'utiliser
 - <!-- renvoyer vers les alternatives -->
 
-## Déploiement & coût
-<!-- self-host vs managé, prix indicatif, scaling (single-node | distributed | serverless) -->
+## Installation & plateformes
+<!-- canaux d'installation, OS couverts, prérequis, licence et paliers payants.
+     Variante employée quand l'outil est un client d'un magasin de données :
+     `## Bases & plateformes` (moteurs supportés, puis plateformes). -->
 
 ## Pièges
-- <!-- pièges connus et retours d'expérience de la brique -->
+- <!-- pièges connus et retours d'expérience de l'outil -->
 
 ## Alternatives
 <!-- reprendre, pour chaque cible, son pitch d'une ligne (champ `pitch:` de sa page) -->

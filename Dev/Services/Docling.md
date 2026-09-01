@@ -5,6 +5,7 @@ nom: Docling
 alias: [docling, docling-project]
 pitch: "Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local."
 categorie: data/parsing
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

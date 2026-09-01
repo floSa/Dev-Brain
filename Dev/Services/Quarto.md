@@ -5,6 +5,7 @@ nom: Quarto
 alias: [quarto]
 pitch: "Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia)."
 categorie: tooling/notebook
+famille: cli
 licence_type: open-source
 hosted: self
 maturite: production

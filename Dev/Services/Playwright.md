@@ -5,6 +5,7 @@ nom: Playwright
 alias: [playwright, playwright-python]
 pitch: "Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

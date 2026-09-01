@@ -5,6 +5,7 @@ nom: datasets
 alias: [hf datasets, huggingface datasets, 🤗 datasets]
 pitch: "Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

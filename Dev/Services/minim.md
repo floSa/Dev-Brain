@@ -5,6 +5,7 @@ nom: minim
 alias: [minim]
 pitch: "Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: beta

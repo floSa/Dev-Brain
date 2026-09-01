@@ -5,6 +5,7 @@ nom: WrenAI
 alias: [wrenai, wren-ai, wren ai, wren]
 pitch: "Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources."
 categorie: llm/framework
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

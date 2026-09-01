@@ -5,6 +5,7 @@ nom: Scikit-Learn
 alias: [sklearn, scikit-learn]
 pitch: "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

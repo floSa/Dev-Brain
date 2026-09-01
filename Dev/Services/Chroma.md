@@ -5,6 +5,7 @@ nom: Chroma
 alias: [chromadb, chroma-core]
 pitch: "Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG."
 categorie: database/vector
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

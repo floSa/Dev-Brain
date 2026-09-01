@@ -5,6 +5,7 @@ nom: XGBoost
 alias: [xgboost, eXtreme Gradient Boosting]
 pitch: "Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

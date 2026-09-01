@@ -5,6 +5,7 @@ nom: Crawlee
 alias: [crawlee, crawlee-python]
 pitch: "Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

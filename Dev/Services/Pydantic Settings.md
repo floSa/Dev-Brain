@@ -5,6 +5,7 @@ nom: Pydantic Settings
 alias: [pydantic-settings, pydantic_settings, BaseSettings]
 pitch: "Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic."
 categorie: tooling/package
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

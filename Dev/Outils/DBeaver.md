@@ -5,6 +5,7 @@ nom: DBeaver
 alias: [dbeaver]
 pitch: "Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases."
 categorie: tooling/db-admin
+famille: application
 domaines: [data-eng]
 licence_type: open-core
 os: "Windows, macOS, Linux"

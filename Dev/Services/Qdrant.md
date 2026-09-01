@@ -5,6 +5,7 @@ nom: Qdrant
 alias: [qdrant]
 pitch: "Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple."
 categorie: database/vector
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

@@ -5,6 +5,7 @@ nom: umap-learn
 alias: [UMAP, Uniform Manifold Approximation and Projection]
 pitch: "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

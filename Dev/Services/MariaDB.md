@@ -5,6 +5,7 @@ nom: MariaDB
 alias: [mariadb]
 pitch: "Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle."
 categorie: database/relational
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

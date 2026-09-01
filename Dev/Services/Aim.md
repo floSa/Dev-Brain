@@ -5,6 +5,7 @@ nom: Aim
 alias: [aim, aimstack, AimHub]
 pitch: "Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS."
 categorie: ml/tracking
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

@@ -5,6 +5,7 @@ nom: DeepEval
 alias: [deepeval, confident-ai-deepeval]
 pitch: "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option."
 categorie: llm/eval
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

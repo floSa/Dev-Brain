@@ -5,6 +5,7 @@ nom: Ray Tune
 alias: [ray tune, ray.tune, raytune]
 pitch: "Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster."
 categorie: ml/hyperopt
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

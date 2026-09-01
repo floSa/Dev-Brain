@@ -5,6 +5,7 @@ nom: PraisonAI
 alias: [praisonai, praison-ai, praisonaiagents]
 pitch: "Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket)."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

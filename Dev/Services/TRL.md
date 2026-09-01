@@ -5,6 +5,7 @@ nom: TRL
 alias: [trl, transformer reinforcement learning, transformers reinforcement learning, SFTTrainer, DPOTrainer, GRPOTrainer]
 pitch: "Bibliothèque de post-training de Hugging Face — trainers prêts à l'emploi (SFT, reward modeling, DPO, GRPO, PPO) au-dessus de Transformers ; la brique de référence pour fine-tuner et aligner un LLM par code."
 categorie: llm/finetuning
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

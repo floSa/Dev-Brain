@@ -5,6 +5,7 @@ nom: hnswlib
 alias: [hnsw, nmslib-hnswlib]
 pitch: "Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app."
 categorie: database/vector
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

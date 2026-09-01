@@ -5,6 +5,7 @@ nom: Mermaid
 alias: [mermaid, mermaid.js, mermaidjs]
 pitch: "Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian."
 categorie: tooling/diagram
+famille: extension
 domaines: []
 licence_type: open-source
 os: "Web, CLI"

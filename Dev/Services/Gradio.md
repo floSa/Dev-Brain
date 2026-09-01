@@ -5,6 +5,7 @@ nom: Gradio
 alias: [gradio]
 pitch: "Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces."
 categorie: ui/ml-demo
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

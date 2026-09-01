@@ -5,6 +5,7 @@ nom: Neptune
 alias: [neptune.ai, neptune-client, Neptune Scale]
 pitch: "Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026."
 categorie: ml/tracking
+famille: plateforme
 licence_type: proprietary
 hosted: both
 maturite: deprecated

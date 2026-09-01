@@ -5,6 +5,7 @@ nom: Avro
 alias: [avro, Apache Avro]
 pitch: "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka."
 categorie: data/format
+famille: specification
 licence_type: open-source
 hosted: self
 maturite: production

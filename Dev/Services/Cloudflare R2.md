@@ -5,6 +5,7 @@ nom: Cloudflare R2
 alias: [r2, cloudflare-r2]
 pitch: "Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers."
 categorie: storage
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

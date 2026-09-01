@@ -5,6 +5,7 @@ nom: Flowise
 alias: [flowise, flowiseai]
 pitch: "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud."
 categorie: llm/framework
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

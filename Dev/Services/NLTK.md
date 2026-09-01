@@ -5,6 +5,7 @@ nom: NLTK
 alias: [Natural Language Toolkit, nltk]
 pitch: "Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

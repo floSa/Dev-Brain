@@ -5,6 +5,7 @@ nom: Dagster
 alias: [dagster]
 pitch: "Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés."
 categorie: data/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

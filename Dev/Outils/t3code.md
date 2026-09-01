@@ -5,6 +5,7 @@ nom: t3code
 alias: [t3, T3 Code, t3.codes]
 pitch: "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM."
 categorie: tooling/code-assistant
+famille: application
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, iOS, Android"

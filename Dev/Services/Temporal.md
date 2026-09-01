@@ -5,6 +5,7 @@ nom: Temporal
 alias: [temporal, Temporal.io]
 pitch: "Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage."
 categorie: data/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

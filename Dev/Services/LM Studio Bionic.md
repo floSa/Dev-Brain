@@ -5,6 +5,7 @@ nom: LM Studio Bionic
 alias: [Bionic, lm studio bionic, LM Studio Secure Cloud, LM Link]
 pitch: "Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes."
 categorie: llm/framework
+famille: application
 licence_type: proprietary
 hosted: self
 maturite: production

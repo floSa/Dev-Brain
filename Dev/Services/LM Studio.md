@@ -5,6 +5,7 @@ nom: LM Studio
 alias: [lmstudio, lms, llmster]
 pitch: "Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit."
 categorie: llm/local
+famille: application
 licence_type: proprietary
 hosted: self
 maturite: production

@@ -5,6 +5,7 @@ nom: SGLang
 alias: [sglang]
 pitch: "Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS."
 categorie: llm/local
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

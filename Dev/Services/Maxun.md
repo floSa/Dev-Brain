@@ -5,6 +5,7 @@ nom: Maxun
 alias: [maxun]
 pitch: "Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host."
 categorie: data/scraping
+famille: application
 licence_type: open-source
 hosted: both
 maturite: beta

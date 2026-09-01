@@ -5,6 +5,7 @@ nom: Ray Serve
 alias: [ray serve, ray.serve, rayserve]
 pitch: "Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster."
 categorie: ml/serving
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

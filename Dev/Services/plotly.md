@@ -5,6 +5,7 @@ nom: plotly
 alias: [plotly.py, px, plotly-express]
 pitch: "Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash."
 categorie: tooling/viz
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

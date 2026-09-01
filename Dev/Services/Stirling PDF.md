@@ -5,6 +5,7 @@ nom: Stirling PDF
 alias: [stirling-pdf, stirling, s-pdf]
 pitch: "Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires."
 categorie: tooling/document
+famille: plateforme
 licence_type: open-core
 hosted: both
 maturite: production

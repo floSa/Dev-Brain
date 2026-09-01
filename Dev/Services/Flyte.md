@@ -5,6 +5,7 @@ nom: Flyte
 alias: [flyte, flytekit]
 pitch: "Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai."
 categorie: ml/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

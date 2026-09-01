@@ -5,6 +5,7 @@ nom: llmfit
 alias: [llm-fit, alexsjones/llmfit]
 pitch: "CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires."
 categorie: tooling/llm
+famille: cli
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"

@@ -5,6 +5,7 @@ nom: hdbscan
 alias: [HDBSCAN library, scikit-learn-contrib hdbscan]
 pitch: "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster)."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

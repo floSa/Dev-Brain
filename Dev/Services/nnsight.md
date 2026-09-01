@@ -5,6 +5,7 @@ nom: nnsight
 alias: [NNsight, nnsight.net, NDIF]
 pitch: "Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF)."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: beta

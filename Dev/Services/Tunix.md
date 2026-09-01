@@ -5,6 +5,7 @@ nom: Tunix
 alias: [tunix, google tunix, google-tunix, tune-in-jax]
 pitch: "Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL."
 categorie: llm/finetuning
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: beta

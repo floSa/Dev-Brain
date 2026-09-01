@@ -5,6 +5,7 @@ nom: FastAPI
 alias: [fastapi]
 pitch: "Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement."
 categorie: framework/backend
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

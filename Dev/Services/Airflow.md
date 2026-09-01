@@ -5,6 +5,7 @@ nom: Airflow
 alias: [airflow, Apache Airflow]
 pitch: "Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data."
 categorie: data/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

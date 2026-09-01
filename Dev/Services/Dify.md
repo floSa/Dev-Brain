@@ -5,6 +5,7 @@ nom: Dify
 alias: [dify, dify.ai, langgenius-dify]
 pitch: "Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud."
 categorie: llm/framework
+famille: plateforme
 licence_type: source-available
 hosted: both
 maturite: production

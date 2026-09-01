@@ -5,6 +5,7 @@ nom: sentencepiece
 alias: [sentence-piece, spm, google sentencepiece]
 pitch: "Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

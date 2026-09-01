@@ -5,6 +5,7 @@ nom: AWS S3
 alias: [s3, amazon s3, aws-s3]
 pitch: "Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS."
 categorie: storage
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

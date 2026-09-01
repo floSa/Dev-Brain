@@ -23,6 +23,8 @@ Règles DURES (bloquent) :
     pour les 5 types du vault : service, concept, outil, pattern, rule ; un
     `type:` inconnu ou absent est refusé, plus de page sans gabarit            [R3]
   - valeurs d'enum fermées (hosted, scaling, licence_type, maturite, status)
+  - famille ∈ énumération fermée de Documentation/general/taxonomie.md (bloc
+    ```famille) sur les gabarits service et outil                             [R14]
   - tags ⊆ vocabulaire contrôlé (Documentation/general/tags.md)
   - categorie ∈ taxonomie (Documentation/general/taxonomie.md)
   - domaines ⊆ vocabulaire de Documentation/general/themes.md                 [R4]
@@ -77,16 +79,16 @@ REQUIRED = {
     "rule": ["galaxie", "domaine", "applicable", "strictness"],
 }
 # Champs EXACTS autorisés par gabarit (§5) — tout champ hors liste = non conforme.
-SERVICE_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie",
+SERVICE_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "famille",
                    "licence_type", "hosted", "maturite", "langage", "scaling",
                    "alternatives", "remplace_par", "status", "tags",
                    "url_docs", "url_repo"}
 CONCEPT_ALLOWED = {"galaxie", "type", "nom", "alias", "categorie", "domaines", "tags"}
 # `type: outil` — même socle que service, moins les champs de déploiement
 # (hosted, scaling, maturite, remplace_par), plus `os` et `domaines`.
-OUTIL_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "domaines",
-                 "licence_type", "langage", "os", "alternatives", "status", "tags",
-                 "url_docs", "url_repo"}
+OUTIL_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "famille",
+                 "domaines", "licence_type", "langage", "os", "alternatives", "status",
+                 "tags", "url_docs", "url_repo"}
 # `type: pattern` / `type: rule` — gabarits sans `nom:` ni `categorie:` (la
 # taxonomie ne les couvre pas ; leur porte d'entrée est MOC/Types/, cf. build_mocs).
 PATTERN_ALLOWED = {"galaxie", "type", "tags", "contexte", "services_cles", "projets_appliques"}
@@ -148,9 +150,28 @@ def load_theme_vocab() -> set[str]:
     return set(re.findall(r"^\|\s*`([a-z0-9-]+)`", txt, re.M))
 
 
+def _fences(nom_fichier: str) -> list[tuple[str, str]]:
+    """Blocs de code d'un document de gouvernance, en (langue, contenu).
+
+    La langue du fence sépare les vocabulaires : ```famille porte l'axe famille,
+    un fence nu porte les catégories. Sans cette distinction, `load_categories`
+    avalerait les 9 valeurs de famille et `categorie: paquet` deviendrait valide.
+    """
+    txt = (DOC / nom_fichier).read_text(encoding="utf-8")
+    return re.findall(r"^```([a-z0-9-]*)\n(.*?)^```", txt, re.S | re.M)
+
+
+def load_familles() -> set[str]:
+    """Énumération fermée de `famille:` — bloc ```famille de taxonomie.md (R14)."""
+    fam: set[str] = set()
+    for langue, corps in _fences("taxonomie.md"):
+        if langue == "famille":
+            fam.update(tok for tok in re.findall(r"^[a-z][\w-]*$", corps, re.M))
+    return fam
+
+
 def load_categories() -> set[str]:
-    txt = (DOC / "taxonomie.md").read_text(encoding="utf-8")
-    body = "\n".join(re.findall(r"```(.*?)```", txt, re.S))
+    body = "\n".join(c for langue, c in _fences("taxonomie.md") if not langue)
     cats: set[str] = set()
     # groupes prefix/{a, b, c} (peuvent s'étaler sur plusieurs lignes)
     for m in re.finditer(r"([a-z][\w-]*)/\{([^}]*)\}", body, re.S):
@@ -359,6 +380,9 @@ def main() -> int:
     vocab = load_tag_vocab()
     themes = load_theme_vocab()
     cats = load_categories()
+    familles = load_familles()
+    if not familles:
+        return print("taxonomie.md : bloc ```famille introuvable ou vide") or 1
     names = resolvable_names()
     moc_q, moc_n = moc_targets()
 
@@ -417,6 +441,14 @@ def main() -> int:
         cat = fm.get("categorie")
         if cat and cat not in cats:
             hard.append(f"{path}: categorie hors taxonomie `{cat}`")
+
+        # 3a. R14 — famille ∈ énumération fermée (taxonomie.md). Un champ vide
+        #     (fiche laissée en suspens, arbre non concluant) passe : c'est le signal
+        #     assumé « à trancher », pas une valeur inventée.
+        fam = fm.get("famille")
+        if fam is not None and fam not in familles:
+            hard.append(f"R14 — {path}: `famille: {fam}` hors énumération fermée "
+                        f"{sorted(familles)} (cf. taxonomie.md, bloc ```famille)")
 
         # 3b. R4 — domaines ⊆ vocabulaire de themes.md
         for dom in fm.get("domaines") or []:

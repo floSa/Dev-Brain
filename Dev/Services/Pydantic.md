@@ -5,6 +5,7 @@ nom: Pydantic
 alias: [pydantic]
 pitch: "Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires."
 categorie: tooling/package
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

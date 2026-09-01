@@ -5,6 +5,7 @@ nom: MongoDB
 alias: [mongo, mongodb]
 pitch: "Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding."
 categorie: database/document
+famille: plateforme
 licence_type: source-available
 hosted: both
 maturite: production

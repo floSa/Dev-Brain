@@ -5,6 +5,7 @@ nom: Firecrawl
 alias: [firecrawl]
 pitch: "API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé."
 categorie: data/scraping
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

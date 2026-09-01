@@ -5,6 +5,7 @@ nom: TensorBoard
 alias: [tensorboard, tb]
 pitch: "Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard."
 categorie: ml/tracking
+famille: application
 licence_type: open-source
 hosted: self
 maturite: production

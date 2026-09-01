@@ -5,6 +5,7 @@ nom: Weights & Biases
 alias: [wandb, W&B]
 pitch: "Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning."
 categorie: ml/tracking
+famille: plateforme
 licence_type: proprietary
 hosted: both
 maturite: production

@@ -5,6 +5,7 @@ nom: ZenML
 alias: [zenml]
 pitch: "Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique."
 categorie: ml/orchestration
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

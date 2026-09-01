@@ -5,6 +5,7 @@ nom: accelerate
 alias: [hf accelerate, huggingface accelerate, 🤗 accelerate]
 pitch: "Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config."
 categorie: ml/training
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

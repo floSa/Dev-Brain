@@ -5,6 +5,7 @@ nom: Seldon Core
 alias: [seldon, seldon-core]
 pitch: "Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024."
 categorie: ml/serving
+famille: plateforme
 licence_type: source-available
 hosted: self
 maturite: production

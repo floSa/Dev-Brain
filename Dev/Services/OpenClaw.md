@@ -5,6 +5,7 @@ nom: OpenClaw
 alias: [openclaw, clawdbot, moltbot, warelay]
 pitch: "Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur."
 categorie: llm/framework
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

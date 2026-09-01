@@ -5,6 +5,7 @@ nom: Archify
 alias: [archify]
 pitch: "Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM."
 categorie: tooling/diagram
+famille: extension
 domaines: [ai-eng]
 licence_type: open-source
 os: 

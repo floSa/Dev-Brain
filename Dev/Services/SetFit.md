@@ -5,6 +5,7 @@ nom: SetFit
 alias: [setfit, few-shot text classification]
 pitch: "Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

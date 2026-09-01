@@ -5,6 +5,7 @@ nom: TensorRT
 alias: [tensorrt, trt, TensorRT-LLM, NVIDIA TensorRT]
 pitch: "SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM."
 categorie: ml/serving
+famille: paquet
 licence_type: proprietary
 hosted: self
 maturite: production

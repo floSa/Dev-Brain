@@ -5,6 +5,7 @@ nom: Loki
 alias: [loki, "Grafana Loki"]
 pitch: "Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana."
 categorie: observability/log
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

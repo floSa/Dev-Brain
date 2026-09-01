@@ -5,6 +5,7 @@ nom: seaborn
 alias: [sns]
 pitch: "Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas."
 categorie: tooling/viz
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

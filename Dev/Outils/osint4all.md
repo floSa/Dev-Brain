@@ -5,6 +5,7 @@ nom: osint4all
 alias: [osint4all, osint4all.github.io]
 pitch: "Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022."
 categorie: security/osint
+famille: annuaire
 domaines: [infra-ops]
 licence_type: open-source
 os: 
@@ -20,7 +21,7 @@ url_repo: https://github.com/osint4all/osint4all.github.io
 
 ## Pourquoi
 
-**Avertissement de rangement, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un outil exécutable. C'est un **annuaire de liens** — un unique `README.md` de quelque 3 000 lignes, servi en page GitHub Pages via Jekyll. Il est classé en `security/osint` faute de type `ressource` dans la taxonomie. Il ne faut pas le lire comme une brique choisissable : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre. Le vault a un précédent exact pour ce cas — [[Dev/Outils/public-apis|public-apis]], autre annuaire rangé par défaut dans une famille d'outils.
+**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un outil exécutable. C'est un **annuaire de liens** — un unique `README.md` de quelque 3 000 lignes, servi en page GitHub Pages via Jekyll. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre, et cela ne se lit pas comme une brique choisissable. Son `categorie: security/osint` porte le **sujet listé**, pas sa nature. L'autre annuaire du vault suit la même règle — [[Dev/Outils/public-apis|public-apis]].
 
 Cela posé, ce que c'est : le portage GitHub d'une page `start.me` (celle nommée « osint4all » dans la description du dépôt), sous licence CC0-1.0 — domaine public. De l'ordre de **78 rubriques** et **1 400 liens** : contacts jetables, générateurs d'identité, bacs à sable, récupération de hash, services de confidentialité et communication sécurisée, renseignement sur les menaces, résolution d'identité, recherche par personne / pseudonyme / courriel / téléphone, plateforme par plateforme pour les réseaux sociaux, moteurs et *dorking*, images et médias, plaques et véhicules, suivi aérien et maritime, WHOIS et DNS, malware, IoT, radio, immobilier, jeux de données, guides.
 

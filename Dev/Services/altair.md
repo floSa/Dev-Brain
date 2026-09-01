@@ -5,6 +5,7 @@ nom: altair
 alias: [vega-altair, alt]
 pitch: "Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré."
 categorie: tooling/viz
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

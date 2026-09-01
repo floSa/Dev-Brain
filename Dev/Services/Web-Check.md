@@ -5,6 +5,7 @@ nom: Web-Check
 alias: [web-check, lissy93/web-check]
 pitch: "Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker."
 categorie: security/recon
+famille: application
 licence_type: open-source
 hosted: both
 maturite: production

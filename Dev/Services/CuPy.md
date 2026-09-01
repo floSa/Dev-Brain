@@ -5,6 +5,7 @@ nom: CuPy
 alias: [cupy]
 pitch: "NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code."
 categorie: compute/distributed
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

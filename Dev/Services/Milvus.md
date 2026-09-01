@@ -5,6 +5,7 @@ nom: Milvus
 alias: [milvus]
 pitch: "Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN)."
 categorie: database/vector
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

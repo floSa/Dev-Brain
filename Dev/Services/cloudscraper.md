@@ -5,6 +5,7 @@ nom: cloudscraper
 alias: [cloudscraper]
 pitch: "Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests."
 categorie: data/scraping
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

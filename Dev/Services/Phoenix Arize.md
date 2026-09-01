@@ -5,6 +5,7 @@ nom: Phoenix Arize
 alias: [phoenix, "Arize Phoenix", arize-phoenix, arize-ai-phoenix]
 pitch: "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX."
 categorie: llm/observability
+famille: plateforme
 licence_type: source-available
 hosted: both
 maturite: production

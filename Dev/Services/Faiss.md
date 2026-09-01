@@ -5,6 +5,7 @@ nom: Faiss
 alias: [faiss, faiss-cpu, faiss-gpu]
 pitch: "Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores."
 categorie: database/vector
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

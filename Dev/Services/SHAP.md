@@ -5,6 +5,7 @@ nom: SHAP
 alias: [shap, SHapley Additive exPlanations, TreeSHAP, KernelSHAP]
 pitch: "Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres."
 categorie: ml/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

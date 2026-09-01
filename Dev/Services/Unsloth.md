@@ -5,6 +5,7 @@ nom: Unsloth
 alias: [unsloth, unslothai, unsloth.ai]
 pitch: "Fine-tuning de LLM ~2× plus rapide avec 70-80 % de VRAM en moins via des kernels Triton sur mesure — LoRA/QLoRA et GRPO sur un seul GPU grand public, sans perte de précision."
 categorie: llm/finetuning
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

@@ -5,6 +5,7 @@ nom: Agno
 alias: [agno, phidata, phi-data]
 pitch: "Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

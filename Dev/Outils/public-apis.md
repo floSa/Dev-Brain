@@ -5,6 +5,7 @@ nom: public-apis
 alias: [public-apis/public-apis, awesome public apis]
 pitch: "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer."
 categorie: tooling/api
+famille: annuaire
 domaines: [ai-eng, data-eng]
 licence_type: open-source
 os: 
@@ -20,7 +21,7 @@ url_repo: https://github.com/public-apis/public-apis
 
 ## Pourquoi
 
-**Avertissement de rangement, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un client d'API. C'est un annuaire de liens — un unique `README.md`. Il est classé en `tooling/api` faute de catégorie « ressource » dans la taxonomie, aux côtés de [[Dev/Outils/Postman|Postman]] et [[Dev/Outils/Bruno|Bruno]] qui, eux, sont des clients. Ne pas le lire comme une brique choisissable.
+**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un client d'API. C'est un annuaire de liens — un unique `README.md`. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre. Ne pas le lire comme une brique choisissable. Son `categorie: tooling/api` porte le **sujet listé** (des API), pas sa nature — d'où le voisinage de [[Dev/Outils/Postman|Postman]] et [[Dev/Outils/Bruno|Bruno]], qui sont des clients d'API sur le même domaine et d'une autre famille.
 
 Cela dit, c'est l'annuaire de référence : de l'ordre de **1 700 entrées** réparties en **52 catégories** (météo, finance, jeux vidéo, musique, transports, données ouvertes…), avec pour chacune l'authentification requise, le support HTTPS et le CORS. Maintenu depuis 2016 sous licence MIT.
 

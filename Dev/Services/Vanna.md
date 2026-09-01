@@ -5,6 +5,7 @@ nom: Vanna
 alias: [vanna, vanna.ai, vanna-ai]
 pitch: "Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: deprecated

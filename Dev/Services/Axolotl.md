@@ -5,6 +5,7 @@ nom: Axolotl
 alias: [axolotl, axolotl-ai-cloud, axolotl.ai]
 pitch: "Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement."
 categorie: llm/finetuning
+famille: cli
 licence_type: open-source
 hosted: self
 maturite: production

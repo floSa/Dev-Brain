@@ -5,6 +5,7 @@ nom: Dash
 alias: [dash, plotly-dash]
 pitch: "Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask."
 categorie: ui/data-app
+famille: paquet
 licence_type: open-source
 hosted: both
 maturite: production

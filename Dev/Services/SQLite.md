@@ -5,6 +5,7 @@ nom: SQLite
 alias: [sqlite, sqlite3]
 pitch: "Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration."
 categorie: database/relational
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

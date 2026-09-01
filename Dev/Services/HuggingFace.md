@@ -5,6 +5,7 @@ nom: HuggingFace
 alias: [hugging face, hf, huggingface, transformers, 🤗]
 pitch: "Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes."
 categorie: ml/framework
+famille: saas
 licence_type: open-source
 hosted: both
 maturite: production

@@ -5,6 +5,7 @@ nom: Aider
 alias: [aider]
 pitch: "Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur."
 categorie: tooling/code-assistant
+famille: cli
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"

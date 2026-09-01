@@ -5,6 +5,7 @@ nom: LangChain
 alias: [langchain, langchain-ai]
 pitch: "Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

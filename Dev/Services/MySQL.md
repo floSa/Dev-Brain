@@ -5,6 +5,7 @@ nom: MySQL
 alias: [mysql]
 pitch: "SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web."
 categorie: database/relational
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

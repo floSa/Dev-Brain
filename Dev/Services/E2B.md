@@ -5,6 +5,7 @@ nom: E2B
 alias: [e2b, e2b-dev, E2B Sandbox, Code Interpreter SDK]
 pitch: "Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform."
 categorie: compute/sandbox
+famille: plateforme
 licence_type: open-source
 hosted: both
 maturite: production

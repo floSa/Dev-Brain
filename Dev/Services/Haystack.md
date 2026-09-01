@@ -5,6 +5,7 @@ nom: Haystack
 alias: [haystack, deepset-haystack, farm-haystack]
 pitch: "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération."
 categorie: llm/framework
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

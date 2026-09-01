@@ -5,6 +5,7 @@ nom: Feast
 alias: [feast]
 pitch: "Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…)."
 categorie: ml/feature-store
+famille: plateforme
 licence_type: open-source
 hosted: self
 maturite: production

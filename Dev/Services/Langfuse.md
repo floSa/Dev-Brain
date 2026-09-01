@@ -5,6 +5,7 @@ nom: Langfuse
 alias: [langfuse]
 pitch: "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry."
 categorie: llm/observability
+famille: plateforme
 licence_type: open-core
 hosted: both
 maturite: production

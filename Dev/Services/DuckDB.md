@@ -5,6 +5,7 @@ nom: DuckDB
 alias: [duckdb]
 pitch: "Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur."
 categorie: database/columnar
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

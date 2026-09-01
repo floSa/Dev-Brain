@@ -5,6 +5,7 @@ nom: GitHub Actions
 alias: [github actions, gha, github-actions]
 pitch: "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions."
 categorie: devops/ci
+famille: saas
 licence_type: proprietary
 hosted: managed
 maturite: production

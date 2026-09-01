@@ -5,6 +5,7 @@ nom: psycopg2
 alias: [psycopg2, psycopg]
 pitch: "Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3."
 categorie: database/driver
+famille: paquet
 licence_type: open-source
 hosted: self
 maturite: production

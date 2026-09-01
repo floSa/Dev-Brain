@@ -5,6 +5,7 @@ nom: GLiNER
 alias: [gliner, generalist ner]
 pitch: "Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger."
 categorie: ml/framework
+famille: modele
 licence_type: open-source
 hosted: self
 maturite: beta

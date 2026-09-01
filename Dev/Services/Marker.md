@@ -5,6 +5,7 @@ nom: Marker
 alias: [marker, marker-pdf, datalab-marker]
 pitch: "Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte."
 categorie: data/parsing
+famille: paquet
 licence_type: source-available
 hosted: both
 maturite: production
