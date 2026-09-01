@@ -82,7 +82,7 @@ def main() -> int:
     resolvable = set()
     for ext in ("*.md", "*.base"):
         for f in VAULT.rglob(ext):
-            if ".git" not in f.parts:
+            if not ({".git", ".claude"} & set(f.parts)):
                 resolvable.add(f.stem.lower())
 
     backlinks = {p["nom"]: set() for p in pages}

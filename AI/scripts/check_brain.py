@@ -203,8 +203,8 @@ def resolvable_names() -> set[str]:
     names: set[str] = set()
     for ext in ("*.md", "*.base"):
         for p in VAULT.rglob(ext):
-            if ".git" in p.parts:
-                continue
+            if {".git", ".claude"} & set(p.parts):
+                continue  # .claude/worktrees/ contient des copies completes du vault
             names.add(p.stem.lower())
     return names
 
@@ -313,8 +313,8 @@ def check_bases(active: list[tuple[str, dict, str]], cited: set[str]) -> list[st
     warn: list[str] = []
     membres: dict[str, list[str] | None] = {}
     for base in sorted(VAULT.rglob("*.base")):
-        if ".git" in base.parts:
-            continue
+        if {".git", ".claude"} & set(base.parts):
+            continue  # idem : ne pas compter les .base des worktrees imbriques
         nom = rel(base)
         txt = base.read_text(encoding="utf-8")
         try:
