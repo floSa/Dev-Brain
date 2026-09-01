@@ -39,6 +39,7 @@ CAT_LABEL = {
 THEME_LABEL = {
     "data-sci": "Data Science", "data-eng": "Data Engineering", "mlops": "MLOps",
     "ml-eng": "ML Engineering", "ai-eng": "AI Engineering",
+    "infra-ops": "Infrastructure & Ops",
 }
 # Étage intermédiaire : un sous-hub par sous-domaine de concept (concept/<sub>).
 # Libellés sans collision avec les pages concepts ni les MOC de catégories.
