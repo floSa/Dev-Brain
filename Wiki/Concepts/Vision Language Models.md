@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Vision Language Models
 alias: [VLM, vision-language models, modèles vision-langage, multimodal LLM, MLLM, image-text]
 categorie: concept/dl

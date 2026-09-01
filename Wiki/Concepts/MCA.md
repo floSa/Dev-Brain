@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: MCA
 alias: [ACM, Analyse des correspondances multiples, Multiple Correspondence Analysis]
 categorie: concept/stats

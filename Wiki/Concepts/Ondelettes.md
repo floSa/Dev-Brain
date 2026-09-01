@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Ondelettes
 alias: [wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme]
 categorie: concept/signal

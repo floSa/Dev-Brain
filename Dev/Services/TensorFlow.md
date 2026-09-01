@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TensorFlow
 alias: [tensorflow, tf, tf.keras]
 pitch: "Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++/Python
-scaling: distributed
 alternatives: ["[[Dev/Services/PyTorch|PyTorch]]", "[[Dev/Services/JAX|JAX]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [deep-learning, gpu, autograd, distributed]
 url_docs: https://www.tensorflow.org/
 url_repo: https://github.com/tensorflow/tensorflow

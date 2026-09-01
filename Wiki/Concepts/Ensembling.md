@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Ensembling
 alias: [méthodes d'ensemble, ensemble learning, ensemble de modèles, agrégation de modèles]
 categorie: concept/ml

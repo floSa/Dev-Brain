@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: River
 alias: [riverml, river-ml, online-ml]
 pitch: "ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow."
 categorie: ml/socle
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [streaming, concept-drift]
 url_docs: https://riverml.xyz/
 url_repo: https://github.com/online-ml/river

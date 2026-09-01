@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Offline RL
 alias: [offline RL, RL hors ligne, batch RL, offline reinforcement learning, RL hors interaction, batch reinforcement learning]
 categorie: concept/rl

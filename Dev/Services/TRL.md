@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TRL
 alias: [trl, transformer reinforcement learning, transformers reinforcement learning, SFTTrainer, DPOTrainer, GRPOTrainer]
 pitch: "Bibliothèque de post-training de Hugging Face — trainers prêts à l'emploi (SFT, reward modeling, DPO, GRPO, PPO) au-dessus de Transformers ; la brique de référence pour fine-tuner et aligner un LLM par code."
 categorie: llm/finetuning
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Unsloth|Unsloth]]", "[[Dev/Services/Axolotl|Axolotl]]", "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]", "[[Dev/Services/Tunix|Tunix]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [fine-tuning, alignment, reinforcement-learning, transformers, llm]
 url_docs: https://huggingface.co/docs/trl
 url_repo: https://github.com/huggingface/trl

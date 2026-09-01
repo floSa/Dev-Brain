@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Prompt engineering
 alias: [conception de prompts, prompt design, few-shot prompting, in-context learning]
 categorie: concept/llm

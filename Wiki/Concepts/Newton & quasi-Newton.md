@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Newton & quasi-Newton
 alias: [Newton, Méthode de Newton, Newton-Raphson, quasi-Newton, BFGS, L-BFGS, IRLS]
 categorie: concept/math

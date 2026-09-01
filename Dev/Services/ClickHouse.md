@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ClickHouse
 alias: [clickhouse]
 pitch: "SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence."
 categorie: database/analytique
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[Dev/Services/DuckDB|DuckDB]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
 url_repo: https://github.com/ClickHouse/ClickHouse

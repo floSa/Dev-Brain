@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Mage
 alias: [mage, Mage AI, mage-ai]
 pitch: "Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation."
 categorie: data/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Airflow|Airflow]]", "[[Dev/Services/Dagster|Dagster]]", "[[Dev/Services/Prefect|Prefect]]", "[[Dev/Services/Kestra|Kestra]]", "[[Dev/Services/Temporal|Temporal]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, data-pipeline, low-code]
 url_docs: https://docs.mage.ai/
 url_repo: https://github.com/mage-ai/mage-ai

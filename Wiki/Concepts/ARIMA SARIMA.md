@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: ARIMA SARIMA
 alias: [ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA]
 categorie: concept/ts

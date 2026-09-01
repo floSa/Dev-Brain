@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: PEFT
 alias: [parameter-efficient fine-tuning, fine-tuning paramétriquement efficace, adapters]
 categorie: concept/llm

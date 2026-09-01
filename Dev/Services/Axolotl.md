@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Axolotl
 alias: [axolotl, axolotl-ai-cloud, axolotl.ai]
 pitch: "Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement."
 categorie: llm/finetuning
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/TRL|TRL]]", "[[Dev/Services/Unsloth|Unsloth]]", "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]", "[[Dev/Services/Tunix|Tunix]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [fine-tuning, declarative-config, distributed-training, llm]
 url_docs: https://docs.axolotl.ai/
 url_repo: https://github.com/axolotl-ai-cloud/axolotl

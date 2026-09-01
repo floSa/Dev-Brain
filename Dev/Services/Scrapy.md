@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Scrapy
 alias: [scrapy]
 pitch: "Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Crawlee|Crawlee]]", "[[Dev/Services/Scrapling|Scrapling]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: https://docs.scrapy.org/
 url_repo: https://github.com/scrapy/scrapy

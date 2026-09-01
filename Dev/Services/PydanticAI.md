@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PydanticAI
 alias: [pydantic-ai, pydanticai]
 pitch: "Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution)."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Instructor|Instructor]]", "[[Dev/Services/LangChain|LangChain]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, structured-output, type-hints]
 url_docs: https://pydantic.dev/docs/ai/
 url_repo: https://github.com/pydantic/pydantic-ai

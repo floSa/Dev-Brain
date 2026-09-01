@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: RLHF and DPO
 alias: [RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization]
 categorie: concept/llm

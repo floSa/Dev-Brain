@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Dash
 alias: [dash, plotly-dash]
 pitch: "Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask."
 categorie: ui/data-app
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]", "[[Dev/Services/Gradio|Gradio]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [data-app, dashboard, web-framework]
 url_docs: https://dash.plotly.com
 url_repo: https://github.com/plotly/dash

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ClearML
 alias: [clearml, Trains, Allegro Trains]
 pitch: "Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving."
 categorie: ml/tracking
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Neptune|Neptune]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/Aim|Aim]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [experiment-tracking, model-registry, orchestration]
 url_docs: https://clear.ml/docs/
 url_repo: https://github.com/clearml/clearml

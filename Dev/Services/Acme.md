@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Acme
 alias: [acme, dm-acme, deepmind acme]
 pitch: "Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]", "[[Dev/Services/TF-Agents|TF-Agents]]", "[[Dev/Services/RLax|RLax]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning]
 url_docs: https://dm-acme.readthedocs.io/
 url_repo: https://github.com/google-deepmind/acme

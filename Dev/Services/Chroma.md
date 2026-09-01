@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Chroma
 alias: [chromadb, chroma-core]
 pitch: "Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/LanceDB|LanceDB]]", "[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/ScaNN|ScaNN]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, rag, embedded]
 url_docs: https://docs.trychroma.com
 url_repo: https://github.com/chroma-core/chroma

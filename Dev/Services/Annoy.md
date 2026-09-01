@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Annoy
 alias: [annoy, approximate-nearest-neighbors-oh-yeah]
 pitch: "Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/ScaNN|ScaNN]]", "[[Dev/Services/Chroma|Chroma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, ann, embedded]
 url_docs: https://pypi.org/project/annoy/
 url_repo: https://github.com/spotify/annoy

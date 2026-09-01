@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Metaflow
 alias: [metaflow]
 pitch: "Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds."
 categorie: ml/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/ZenML|ZenML]]", "[[Dev/Services/Flyte|Flyte]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.metaflow.org/
 url_repo: https://github.com/Netflix/metaflow

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: agent-loops
 alias: [agent loop, boucle d'agent, boucle perception-action, agentic loop]
 categorie: concept/llm

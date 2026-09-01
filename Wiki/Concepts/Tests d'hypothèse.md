@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Tests d'hypothèse
 alias: [hypothesis testing, test statistique, H0, significativité]
 categorie: concept/stats

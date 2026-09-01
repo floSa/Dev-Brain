@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Naive Bayes
 alias: [Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB]
 categorie: concept/ml

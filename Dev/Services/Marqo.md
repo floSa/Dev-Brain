@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Marqo
 alias: [marqo, marqo-ai]
 pitch: "Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce."
 categorie: database/recherche
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: deprecated
 langage: Python/Java
 scaling: single-node
 alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Elasticsearch|Elasticsearch]]"]
-remplace_par: []
-status: abandonne
+complements: []
 tags: [search, vector-db, semantic-search, multimodal]
 url_docs: https://github.com/marqo-ai/marqo
 url_repo: https://github.com/marqo-ai/marqo

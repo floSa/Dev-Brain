@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: dynaconf
 alias: [Dynaconf]
 pitch: "Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets."
 categorie: devtools/config
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/hydra|hydra]]", "[[Dev/Services/python-dotenv|python-dotenv]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [config]
 url_docs: https://www.dynaconf.com/
 url_repo: https://github.com/dynaconf/dynaconf

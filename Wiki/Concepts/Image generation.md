@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Image generation
 alias: [text-to-image, T2I, génération d'images, Stable Diffusion, DALL-E, Midjourney, FLUX, inpainting]
 categorie: concept/dl

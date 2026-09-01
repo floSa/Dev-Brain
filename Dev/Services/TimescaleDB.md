@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TimescaleDB
 alias: [timescaledb, timescale]
 pitch: "Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres."
 categorie: database/series-temporelles
 famille: extension
 licence_type: open-source
-hosted: both
 maturite: production
 langage: C
-scaling: single-node
 alternatives: ["[[Dev/Services/InfluxDB|InfluxDB]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [timeseries, postgres]
 url_docs: https://www.tigerdata.com/docs
 url_repo: https://github.com/timescale/timescaledb

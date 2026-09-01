@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Diff-in-Diff
 alias: [DiD, difference-in-differences, différence des différences, doubles différences]
 categorie: concept/stats

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Modèles de fondation vision
 alias: [foundation models vision, vision foundation models, CLIP, DINOv2, DINOv3, SigLIP, OpenCLIP, modèles de fondation visuels]
 categorie: concept/dl

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyOD
 alias: [Python Outlier Detection, pyod]
 pitch: "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une."
 categorie: ml/non-supervise
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/STUMPY|STUMPY]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [anomaly-detection, unsupervised]
 url_docs: https://pyod.readthedocs.io/
 url_repo: https://github.com/yzhao062/pyod

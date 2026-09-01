@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Guidance
 alias: [guidance, guidance-ai]
 pitch: "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing."
 categorie: llm/sortie-structuree
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Outlines|Outlines]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [structured-output, decoding, llm]
 url_docs: https://github.com/guidance-ai/guidance
 url_repo: https://github.com/guidance-ai/guidance

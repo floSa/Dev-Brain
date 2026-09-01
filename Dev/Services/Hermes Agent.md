@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Hermes Agent
 alias: [hermes-agent, nous-hermes-agent]
 pitch: "Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU."
 categorie: llm/assistant
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
 alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]", "[[Dev/Services/OpenViking|OpenViking]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, mcp]
 url_docs: https://hermes-agent.nousresearch.com/docs/
 url_repo: https://github.com/NousResearch/hermes-agent

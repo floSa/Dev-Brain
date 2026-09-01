@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ScaNN
 alias: [scann, scalable-nearest-neighbors]
 pitch: "Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/Chroma|Chroma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://github.com/google-research/google-research/blob/master/scann/README.md
 url_repo: https://github.com/google-research/google-research/tree/master/scann

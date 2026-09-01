@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Partitionnement & layout de données
 alias: [partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem]
 categorie: concept/data

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: NLTK
 alias: [Natural Language Toolkit, nltk]
 pitch: "Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique."
 categorie: ml/nlp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/spaCy|spaCy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [nlp, tokenization, text-classification]
 url_docs: https://www.nltk.org/
 url_repo: https://github.com/nltk/nltk

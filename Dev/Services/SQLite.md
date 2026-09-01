@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SQLite
 alias: [sqlite, sqlite3]
 pitch: "Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration."
 categorie: database/relationnel
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C
-scaling: single-node
 alternatives: ["[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational, embedded]
 url_docs: https://www.sqlite.org/docs.html
 url_repo: https://github.com/sqlite/sqlite

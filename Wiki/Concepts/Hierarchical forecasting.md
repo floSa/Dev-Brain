@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Hierarchical forecasting
 alias: [Prévision hiérarchique, Réconciliation, Hierarchical reconciliation, MinT, bottom-up, top-down]
 categorie: concept/ts

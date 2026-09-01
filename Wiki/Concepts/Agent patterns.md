@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Agent patterns
 alias: [patrons d'agents, agent design patterns, agentic patterns]
 categorie: concept/llm

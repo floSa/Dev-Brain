@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: One-Class SVM
 alias: [OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection]
 categorie: concept/ml

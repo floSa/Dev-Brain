@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Autocorrelation
 alias: [Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme]
 categorie: concept/ts

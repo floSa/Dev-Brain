@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: EDA automatisée & profiling
 alias: [EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données]
 categorie: concept/ml

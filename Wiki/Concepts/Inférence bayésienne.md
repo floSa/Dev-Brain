@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Inférence bayésienne
 alias: [Bayesian inference, inference bayesienne, Bayes, statistique bayésienne]
 categorie: concept/stats

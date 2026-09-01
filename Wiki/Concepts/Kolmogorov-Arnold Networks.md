@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Kolmogorov-Arnold Networks
 alias: [KAN, KANs, réseaux de Kolmogorov-Arnold, kolmogorov-arnold network]
 categorie: concept/dl

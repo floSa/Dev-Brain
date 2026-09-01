@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Tunix
 alias: [tunix, google tunix, google-tunix, tune-in-jax]
 pitch: "Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL."
 categorie: llm/finetuning
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/TRL|TRL]]", "[[Dev/Services/Unsloth|Unsloth]]", "[[Dev/Services/Axolotl|Axolotl]]", "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, reinforcement-learning, fine-tuning]
 url_docs: https://tunix.readthedocs.io/
 url_repo: https://github.com/google/tunix

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: SmartTube
 alias: [SmartTubeNext, STN, yuliskov/SmartTube]
 pitch: "Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Android TV 4.3+ : téléviseurs Android/Google TV, box, NVIDIA Shield, Chromecast with Google TV, FireTV d'avant octobre 2025. Ni smartphone, ni tablette, ni Tizen, ni webOS, ni tvOS."
 langage: Java
-status: actif
 alternatives: []
+complements: []
 tags: [media-player, privacy]
 url_docs: https://smarttubeapp.github.io
 url_repo: https://github.com/yuliskov/SmartTube

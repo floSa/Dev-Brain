@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: SFT
 alias: [supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning]
 categorie: concept/llm

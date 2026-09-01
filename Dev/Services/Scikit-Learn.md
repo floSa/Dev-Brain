@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Scikit-Learn
 alias: [sklearn, scikit-learn]
 pitch: "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques."
 categorie: ml/socle
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/XGBoost|XGBoost]]", "[[Dev/Services/LightGBM|LightGBM]]", "[[Dev/Services/CatBoost|CatBoost]]", "[[Dev/Services/Featuretools|Featuretools]]", "[[Dev/Services/category_encoders|category_encoders]]", "[[Dev/Services/Optuna|Optuna]]", "[[Dev/Services/hdbscan|hdbscan]]", "[[Dev/Services/umap-learn|umap-learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [supervised, unsupervised, dimensionality-reduction, model-evaluation]
 url_docs: https://scikit-learn.org/stable/
 url_repo: https://github.com/scikit-learn/scikit-learn

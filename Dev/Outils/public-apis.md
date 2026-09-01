@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: public-apis
 alias: [public-apis/public-apis, awesome public apis]
 pitch: "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer."
@@ -10,8 +9,8 @@ domaines: [ai-eng, data-eng]
 licence_type: open-source
 os: 
 langage: 
-status: actif
 alternatives: []
+complements: []
 tags: []
 url_docs: https://github.com/public-apis/public-apis
 url_repo: https://github.com/public-apis/public-apis

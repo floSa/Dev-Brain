@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: CockroachDB
 alias: [cockroachdb, cockroach, crdb]
 pitch: "Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région."
 categorie: database/relationnel
 famille: plateforme
 licence_type: source-available
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational, distributed]
 url_docs: https://www.cockroachlabs.com/docs/
 url_repo: https://github.com/cockroachdb/cockroach

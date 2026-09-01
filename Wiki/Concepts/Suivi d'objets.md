@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Suivi d'objets
 alias: [object tracking, MOT, multi-object tracking, suivi multi-cibles, tracking-by-detection, SORT, DeepSORT, ByteTrack, Kalman, MOTA, IDF1, HOTA]
 categorie: concept/dl

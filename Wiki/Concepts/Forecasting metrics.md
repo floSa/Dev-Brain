@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Forecasting metrics
 alias: [Métriques de prévision, MAPE, sMAPE, MASE, WAPE, RMSSE, pinball loss, forecast accuracy]
 categorie: concept/ts

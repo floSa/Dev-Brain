@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyTorch Lightning
 alias: [pytorch-lightning, lightning, pl, lightning ai, fabric]
 pitch: "Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Keras|Keras]]", "[[Dev/Services/accelerate|accelerate]]", "[[Dev/Services/DeepSpeed|DeepSpeed]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [deep-learning, gpu, distributed]
 url_docs: https://lightning.ai/docs/pytorch/stable/
 url_repo: https://github.com/Lightning-AI/pytorch-lightning

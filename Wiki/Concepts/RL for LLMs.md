@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: RL for LLMs
 alias: [RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR]
 categorie: concept/llm

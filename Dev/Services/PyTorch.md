@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyTorch
 alias: [torch, pytorch, libtorch]
 pitch: "Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++/Python
-scaling: distributed
 alternatives: ["[[Dev/Services/TensorFlow|TensorFlow]]", "[[Dev/Services/JAX|JAX]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [deep-learning, gpu, autograd, distributed]
 url_docs: https://docs.pytorch.org/
 url_repo: https://github.com/pytorch/pytorch

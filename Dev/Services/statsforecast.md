@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: statsforecast
 alias: [nixtla-statsforecast]
 pitch: "Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray)."
 categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Prophet|Prophet]]", "[[Dev/Services/neuralforecast|neuralforecast]]", "[[Dev/Services/darts|darts]]", "[[Dev/Services/pmdarima|pmdarima]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [forecasting, timeseries, distributed]
 url_docs: https://nixtlaverse.nixtla.io/statsforecast/
 url_repo: https://github.com/Nixtla/statsforecast

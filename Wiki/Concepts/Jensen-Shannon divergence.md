@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Jensen-Shannon divergence
 alias: [Divergence de Jensen-Shannon, Jensen-Shannon, JSD, JS divergence, divergence JS]
 categorie: concept/math

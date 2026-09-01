@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Multi-armed bandits
 alias: [MAB, bandit manchot, bandits, Epsilon-Greedy, Thompson Sampling, exploration-exploitation]
 categorie: concept/stats

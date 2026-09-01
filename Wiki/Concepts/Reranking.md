@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reranking
 alias: [reranking, reclassement, re-ranking, rerank]
 categorie: concept/llm

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: NMF
 alias: [Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF]
 categorie: concept/ml

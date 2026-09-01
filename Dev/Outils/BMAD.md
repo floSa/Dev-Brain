@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: BMAD
 alias: [BMAD-METHOD, bmad-method, Breakthrough Method for Agile AI-Driven Development]
 pitch: "Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: JavaScript
-status: actif
 alternatives: ["[[Dev/Outils/Spec Kit|Spec Kit]]"]
+complements: []
 tags: [agent-skill, code-assistant, agents, multi-agent, code-generation]
 url_docs: https://docs.bmad-method.org/
 url_repo: https://github.com/bmad-code-org/BMAD-METHOD

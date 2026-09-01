@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Superposition
 alias: [Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques]
 categorie: concept/dl

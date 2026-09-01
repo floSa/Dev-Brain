@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Traitement du signal
 alias: [TdS, signal processing, DSP, traitement numérique du signal]
 categorie: concept/signal

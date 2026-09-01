@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Self-attention
 alias: [auto-attention, scaled dot-product attention, multi-head attention, MHA, attention QKV, cross-attention]
 categorie: concept/dl

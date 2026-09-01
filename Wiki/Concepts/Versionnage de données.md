@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Versionnage de données
 alias: [data versioning, versionnage de données, DVC, lakeFS, time travel, data lineage]
 categorie: concept/data

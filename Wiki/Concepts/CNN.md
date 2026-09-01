@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: CNN
 alias: [convnet, réseau convolutif, convolutional neural network, convolution, pooling, champ réceptif]
 categorie: concept/dl

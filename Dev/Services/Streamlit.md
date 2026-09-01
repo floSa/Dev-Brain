@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Streamlit
 alias: [streamlit]
 pitch: "Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS."
 categorie: ui/data-app
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]", "[[Dev/Services/Gradio|Gradio]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [data-app, web-framework]
 url_docs: https://docs.streamlit.io
 url_repo: https://github.com/streamlit/streamlit

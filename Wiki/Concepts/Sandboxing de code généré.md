@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Sandboxing de code généré
 alias: [sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM]
 categorie: concept/llm

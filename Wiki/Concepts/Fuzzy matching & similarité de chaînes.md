@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Fuzzy matching & similarité de chaînes
 alias: [fuzzy matching, similarité de chaînes, string matching, approximate string matching, distance d'édition, Levenshtein, Jaro-Winkler, record linkage, déduplication]
 categorie: concept/nlp

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Typer
 alias: [typer]
 pitch: "Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click."
 categorie: devtools/cli
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [cli, type-hints]
 url_docs: https://typer.tiangolo.com/
 url_repo: https://github.com/fastapi/typer

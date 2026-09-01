@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Beszel
 alias: [beszel, henrygd/beszel]
 pitch: "Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents."
 categorie: observability/supervision
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [observability, metrics, self-hosted, dashboard, container]
 url_docs: https://beszel.dev
 url_repo: https://github.com/henrygd/beszel

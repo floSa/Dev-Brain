@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: PCA
 alias: [ACP, Analyse en composantes principales, Principal Component Analysis]
 categorie: concept/stats

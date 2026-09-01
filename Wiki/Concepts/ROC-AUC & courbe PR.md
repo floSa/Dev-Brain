@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: ROC-AUC / courbe PR
 alias: [ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC]
 categorie: concept/ml

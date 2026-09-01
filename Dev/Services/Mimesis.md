@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Mimesis
 alias: [mimesis, lk-geimfari mimesis]
 pitch: "Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test."
 categorie: data/synthetique
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Faker|Faker]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [synthetic-data, testing]
 url_docs: https://mimesis.name/
 url_repo: https://github.com/lk-geimfari/mimesis

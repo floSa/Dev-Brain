@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: mcp-protocol
 alias: [MCP, Model Context Protocol, protocole MCP, MCP Apps, MCP Tasks, MRTR, spec 2026-07-28, Agentic AI Foundation]
 categorie: concept/llm

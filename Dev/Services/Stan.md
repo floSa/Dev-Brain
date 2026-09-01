@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Stan
 alias: [CmdStanPy, cmdstanpy, Stan language]
 pitch: "Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy."
 categorie: stats/bayesien
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++ / Python
-scaling: single-node
 alternatives: ["[[Dev/Services/PyMC|PyMC]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [bayesian, probabilistic-programming, monte-carlo, markov]
 url_docs: https://mc-stan.org
 url_repo: https://github.com/stan-dev/cmdstanpy

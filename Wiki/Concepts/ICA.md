@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: ICA
 alias: [Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation]
 categorie: concept/ml

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: supervision
 alias: [roboflow supervision, sv]
 pitch: "Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [object-detection, object-tracking, computer-vision]
 url_docs: https://supervision.roboflow.com/
 url_repo: https://github.com/roboflow/supervision

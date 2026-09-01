@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: draw.io
 alias: [diagrams.net, drawio, draw io]
 pitch: "Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Web, Windows, macOS, Linux"
 langage: JavaScript
-status: actif
 alternatives: ["[[Dev/Outils/Excalidraw|Excalidraw]]", "[[Dev/Outils/Mermaid|Mermaid]]", "[[Dev/Outils/FossFLOW|FossFLOW]]", "[[Dev/Outils/Archify|Archify]]"]
+complements: []
 tags: [diagram]
 url_docs: https://www.drawio.com/docs/
 url_repo: https://github.com/jgraph/drawio

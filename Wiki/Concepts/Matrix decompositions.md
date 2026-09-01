@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Matrix decompositions
 alias: [factorisation matricielle, décompositions matricielles, matrix factorization]
 categorie: concept/math

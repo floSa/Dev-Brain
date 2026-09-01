@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Maintenance prédictive et RUL
 alias: [Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM]
 categorie: concept/ts

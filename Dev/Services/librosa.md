@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: librosa
 alias: [librosa audio, audio features, MIR]
 pitch: "Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio."
 categorie: signal/audio
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/scipy.signal|scipy.signal]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [signal-processing, spectrogram, feature-engineering]
 url_docs: https://librosa.org/doc/
 url_repo: https://github.com/librosa/librosa

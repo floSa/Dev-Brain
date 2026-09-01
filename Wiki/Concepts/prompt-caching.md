@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: prompt-caching
 alias: [prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching]
 categorie: concept/llm

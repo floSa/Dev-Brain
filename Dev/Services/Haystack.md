@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Haystack
 alias: [haystack, deepset-haystack, farm-haystack]
 pitch: "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération."
 categorie: llm/rag
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/LlamaIndex|LlamaIndex]]", "[[Dev/Services/DSPy|DSPy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, rag, semantic-search, hybrid-search, agents]
 url_docs: https://docs.haystack.deepset.ai/
 url_repo: https://github.com/deepset-ai/haystack

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: umap-learn
 alias: [UMAP, Uniform Manifold Approximation and Projection]
 pitch: "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite."
 categorie: ml/non-supervise
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]", "[[Dev/Services/PaCMAP|PaCMAP]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dimensionality-reduction, manifold, unsupervised]
 url_docs: https://umap-learn.readthedocs.io/
 url_repo: https://github.com/lmcinnes/umap

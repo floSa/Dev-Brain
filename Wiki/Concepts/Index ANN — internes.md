@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Index ANN — internes
 alias: [ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN]
 categorie: concept/data

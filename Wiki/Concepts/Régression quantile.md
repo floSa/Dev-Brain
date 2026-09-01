@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régression quantile
 alias: [Quantile regression, QuantileRegressor, Perte pinball, Pinball loss, Régression médiane, Intervalles de prédiction]
 categorie: concept/ml

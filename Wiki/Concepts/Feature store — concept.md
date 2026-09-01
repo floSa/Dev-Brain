@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Feature store — concept
 alias: [feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew]
 categorie: concept/ml

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Chain-of-Thought
 alias: [CoT, chaîne de pensée, raisonnement pas à pas, self-consistency, zero-shot CoT]
 categorie: concept/llm

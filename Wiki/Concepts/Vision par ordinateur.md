@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Vision par ordinateur
 alias: [computer vision, CV, vision]
 categorie: concept/dl

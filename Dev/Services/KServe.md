@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: KServe
 alias: [kserve, kfserving]
 pitch: "Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif."
 categorie: ml/serving
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/Seldon Core|Seldon Core]]", "[[Dev/Services/TorchServe|TorchServe]]", "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [model-serving, inference, kubernetes]
 url_docs: https://kserve.github.io/website/
 url_repo: https://github.com/kserve/kserve

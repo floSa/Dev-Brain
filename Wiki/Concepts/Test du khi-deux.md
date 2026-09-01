@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Test du khi-deux
 alias: [chi-squared, chi-square, khi2, test d'indépendance]
 categorie: concept/stats

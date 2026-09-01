@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Garage
 alias: [garage]
 pitch: "Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3."
 categorie: storage/objet
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Dev/Services/MinIO|MinIO]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://garagehq.deuxfleurs.fr/documentation/
 url_repo: https://git.deuxfleurs.fr/Deuxfleurs/garage

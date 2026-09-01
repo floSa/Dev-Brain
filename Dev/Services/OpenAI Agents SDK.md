@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenAI Agents SDK
 alias: [openai-agents-sdk, openai-agents, agents-sdk, swarm]
 pitch: "SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: "Python, TypeScript"
-scaling: single-node
 alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://openai.github.io/openai-agents-python/
 url_repo: https://github.com/openai/openai-agents-python

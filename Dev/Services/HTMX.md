@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: HTMX
 alias: [htmx]
 pitch: "Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd."
 categorie: web/frontend
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: JavaScript
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [hypermedia]
 url_docs: https://htmx.org/
 url_repo: https://github.com/bigskysoftware/htmx

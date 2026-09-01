@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Milvus
 alias: [milvus]
 pitch: "Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN)."
 categorie: database/vecteur
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Pinecone|Pinecone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, rag, ann]
 url_docs: https://milvus.io/docs
 url_repo: https://github.com/milvus-io/milvus

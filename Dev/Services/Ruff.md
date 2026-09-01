@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Ruff
 alias: [ruff]
 pitch: "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil."
 categorie: devtools/qualite
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [linter, formatter]
 url_docs: https://docs.astral.sh/ruff/
 url_repo: https://github.com/astral-sh/ruff

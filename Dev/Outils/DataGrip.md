@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: DataGrip
 alias: [datagrip]
 pitch: "IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: proprietary
 os: "Windows, macOS, Linux"
 langage: Java/Kotlin
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]"]
+complements: []
 tags: [db-client, relational, nosql]
 url_docs: https://www.jetbrains.com/help/datagrip/
 url_repo: 

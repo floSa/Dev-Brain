@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Flask
 alias: [flask]
 pitch: "Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions."
 categorie: web/backend
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/FastAPI|FastAPI]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-framework]
 url_docs: https://flask.palletsprojects.com
 url_repo: https://github.com/pallets/flask

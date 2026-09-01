@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyJWT
 alias: [pyjwt, jwt python]
 pitch: "Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API."
 categorie: security/auth
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [authentication, cryptography]
 url_docs: https://pyjwt.readthedocs.io/
 url_repo: https://github.com/jpadilla/pyjwt

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: AWS S3
 alias: [s3, amazon s3, aws-s3]
 pitch: "Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS."
 categorie: storage/objet
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: ["[[Dev/Services/MinIO|MinIO]]", "[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Garage|Garage]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage]
 url_docs: https://docs.aws.amazon.com/s3/
 url_repo: 

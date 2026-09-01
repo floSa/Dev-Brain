@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Gaussian Mixture Models (GMM)
 alias: [GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens]
 categorie: concept/ml

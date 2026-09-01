@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Prompt injection
 alias: [injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01]
 categorie: concept/ai

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Explicabilité des modèles
 alias: [explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance]
 categorie: concept/ml

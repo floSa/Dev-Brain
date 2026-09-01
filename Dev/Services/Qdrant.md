@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Qdrant
 alias: [qdrant]
 pitch: "Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple."
 categorie: database/vecteur
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, rag, ann]
 url_docs: https://qdrant.tech/documentation/
 url_repo: https://github.com/qdrant/qdrant

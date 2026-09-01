@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Policy gradient
 alias: [policy gradient, gradient de politique, méthodes basées politique, policy-based methods, REINFORCE, policy optimization]
 categorie: concept/rl

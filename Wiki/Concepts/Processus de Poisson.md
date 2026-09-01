@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Processus de Poisson
 alias: [Poisson process, processus ponctuel de Poisson]
 categorie: concept/stats

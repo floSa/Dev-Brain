@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: OpenCut
 alias: [OpenCut-app/OpenCut, opencut]
 pitch: "Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Navigateur (aujourd'hui) ; desktop et mobile annoncés, non livrés"
 langage: TypeScript, Rust
-status: actif
 alternatives: []
+complements: []
 tags: [video-editing, privacy]
 url_docs: 
 url_repo: https://github.com/OpenCut-app/OpenCut

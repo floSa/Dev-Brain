@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régression linéaire
 alias: [Linear regression, OLS, Moindres carrés ordinaires]
 categorie: concept/ml

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: DeepSpeed
 alias: [deepspeed, ds, ZeRO, DeepSpeed-Inference]
 pitch: "Bibliothèque Microsoft d'optimisation de l'entraînement (et de l'inférence) à grande échelle — ZeRO shardle les états entre GPU pour entraîner des modèles à des dizaines/centaines de milliards de paramètres, avec offload CPU/NVMe, 3D-parallelism et précision mixte."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/accelerate|accelerate]]", "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [distributed-training, memory-optimization, deep-learning, gpu, mixed-precision]
 url_docs: https://www.deepspeed.ai/
 url_repo: https://github.com/deepspeedai/DeepSpeed

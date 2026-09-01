@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Pydantic
 alias: [pydantic]
 pitch: "Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires."
 categorie: devtools/validation
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python / Rust
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [data-validation, type-hints]
 url_docs: https://pydantic.dev/docs/validation/
 url_repo: https://github.com/pydantic/pydantic

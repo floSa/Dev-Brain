@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: HCPC
 alias: [Classification hiérarchique sur composantes principales, Hierarchical Clustering on Principal Components]
 categorie: concept/stats

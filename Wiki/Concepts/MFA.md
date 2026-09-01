@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: MFA
 alias: [AFM, Analyse factorielle multiple, Multiple Factor Analysis]
 categorie: concept/stats

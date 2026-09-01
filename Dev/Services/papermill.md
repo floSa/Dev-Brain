@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: papermill
 alias: [Papermill]
 pitch: "Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI."
 categorie: devtools/notebook
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [notebook, reproducibility]
 url_docs: https://papermill.readthedocs.io/
 url_repo: https://github.com/nteract/papermill

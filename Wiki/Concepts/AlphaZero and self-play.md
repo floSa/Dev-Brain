@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: AlphaZero and self-play
 alias: [AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play]
 categorie: concept/rl

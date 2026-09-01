@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Stable-Baselines3
 alias: [SB3, stable-baselines3, stable baselines 3, sb3]
 pitch: "Implémentations fiables et testées d'algorithmes de RL en PyTorch (PPO, A2C, DQN, SAC, TD3, DDPG) — API homogène sur environnements Gymnasium ; la boîte à outils par défaut pour entraîner un agent sans réimplémenter."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Acme|Acme]]", "[[Dev/Services/TF-Agents|TF-Agents]]", "[[Dev/Services/RLax|RLax]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning, deep-learning]
 url_docs: https://stable-baselines3.readthedocs.io/
 url_repo: https://github.com/DLR-RM/stable-baselines3

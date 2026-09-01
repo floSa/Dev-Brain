@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Cloudflare R2
 alias: [r2, cloudflare-r2]
 pitch: "Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers."
 categorie: storage/objet
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: ["[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/MinIO|MinIO]]", "[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Garage|Garage]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://developers.cloudflare.com/r2/
 url_repo: 

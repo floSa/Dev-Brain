@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Stream processing
 alias: [stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time]
 categorie: concept/data

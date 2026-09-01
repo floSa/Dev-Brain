@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ZenML
 alias: [zenml]
 pitch: "Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique."
 categorie: ml/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/Metaflow|Metaflow]]", "[[Dev/Services/Flyte|Flyte]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.zenml.io/
 url_repo: https://github.com/zenml-io/zenml

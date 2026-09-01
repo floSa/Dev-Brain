@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Classification hiérarchique (CAH)
 alias: [CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme]
 categorie: concept/ml

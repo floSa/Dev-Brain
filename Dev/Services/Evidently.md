@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Evidently
 alias: [evidently, evidently ai, evidentlyai]
 pitch: "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production."
 categorie: ml/monitoring
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [model-monitoring, data-drift, concept-drift, model-evaluation]
 url_docs: https://docs.evidentlyai.com/
 url_repo: https://github.com/evidentlyai/evidently

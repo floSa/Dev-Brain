@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Liquibase
 alias: [liquibase]
 pitch: "Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD."
 categorie: database/migration
 famille: cli
 licence_type: open-core
-hosted: self
 maturite: production
 langage: Java
-scaling: single-node
 alternatives: ["[[Dev/Services/Flyway|Flyway]]", "[[Dev/Services/Alembic|Alembic]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [migration, relational]
 url_docs: https://docs.liquibase.com/
 url_repo: https://github.com/liquibase/liquibase

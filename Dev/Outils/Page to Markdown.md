@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Page to Markdown
 alias: [page-to-markdown, page to markdown by starterbuild]
 pitch: "Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: proprietary
 os: "Chrome (Windows, macOS, Linux, ChromeOS)"
 langage: 
-status: actif
 alternatives: []
+complements: []
 tags: [browser-extension, markdown-conversion, note-taking, privacy]
 url_docs: https://starterbuild.com/page-to-markdown/
 url_repo: 

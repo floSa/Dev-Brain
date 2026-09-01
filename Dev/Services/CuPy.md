@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: CuPy
 alias: [cupy]
 pitch: "NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code."
 categorie: compute/gpu
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python / C++ / CUDA
-scaling: single-node
 alternatives: ["[[Dev/Services/numpy|numpy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [gpu, array]
 url_docs: https://docs.cupy.dev/
 url_repo: https://github.com/cupy/cupy

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Intermittent demand
 alias: [Demande intermittente, Croston, SBA, TSB, demande sporadique, slow movers]
 categorie: concept/ts

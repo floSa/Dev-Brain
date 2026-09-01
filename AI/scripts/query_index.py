@@ -12,10 +12,10 @@ par le nombre de correspondances, pas par la taille du brain.
 Exemples :
     uv run AI/scripts/query_index.py --name Weaviate                # existe ? (nom + alias)
     uv run AI/scripts/query_index.py --categorie database/vecteur   # candidats alternatives
-    uv run AI/scripts/query_index.py --tag rag --galaxie dev        # pages d'un tag
+    uv run AI/scripts/query_index.py --tag rag --role brique        # pages d'un tag
     uv run AI/scripts/query_index.py --tag-of "Weaviate"            # tags d'une page
     uv run AI/scripts/query_index.py --categorie llm/agents \
-        --status abandonne                                          # briques à écarter
+        --maturite deprecated                                       # briques à écarter
     uv run AI/scripts/query_index.py --famille plateforme --tag rag # nature × sujet
 
 Lit seulement l'index (pas de re-scan du vault). Cross-OS, chemins relatifs.
@@ -41,17 +41,19 @@ def main() -> int:
                              "extension", "specification", "modele", "annuaire"],
                     help="filtre sur la NATURE (famille:) — cf. taxonomie.md")
     ap.add_argument("--tag")
-    ap.add_argument("--galaxie", choices=["dev", "wiki"])
-    ap.add_argument("--status", choices=["actif", "en-eval", "abandonne"],
-                    help="filtre sur status: (critère éliminatoire côté planifier-projet)")
+    ap.add_argument("--role", choices=["brique", "notion", "pattern", "rule"],
+                    help="filtre sur la NATURE de la page — cf. AI/design/brain-v3.md §3")
     ap.add_argument("--maturite",
-                    choices=["production", "beta", "experimental", "deprecated"])
+                    choices=["production", "beta", "experimental", "deprecated"],
+                    help="critère éliminatoire côté planifier-projet : une brique "
+                         "`deprecated` ne se propose pas. `maturite` porte SEUL ce rôle "
+                         "depuis la suppression de `status:` au lot 2 de la migration v3")
     ap.add_argument("--tag-of", metavar="NOM", help="liste les tags d'une page")
     ap.add_argument(
         "--fields",
-        default="nom,categorie,famille,galaxie,pitch,status,maturite,tags,"
-                "alternatives,path",
-        help="champs renvoyés (csv) — famille/status/maturite inclus par défaut : "
+        default="nom,categorie,famille,role,pitch,maturite,tags,"
+                "alternatives,complements,path",
+        help="champs renvoyés (csv) — famille/maturite inclus par défaut : "
              "ce sont des critères éliminatoires, les masquer ferait filtrer à l'aveugle",
     )
     args = ap.parse_args()
@@ -74,15 +76,13 @@ def main() -> int:
         return 0
 
     def keep(p: dict) -> bool:
-        if args.galaxie and p.get("galaxie") != args.galaxie:
+        if args.role and p.get("role") != args.role:
             return False
         if args.categorie and p.get("categorie") != args.categorie:
             return False
         if args.famille and p.get("famille") != args.famille:
             return False
         if args.tag and args.tag not in (p.get("tags") or []):
-            return False
-        if args.status and p.get("status") != args.status:
             return False
         if args.maturite and p.get("maturite") != args.maturite:
             return False

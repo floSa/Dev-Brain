@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LangSmith
 alias: [langsmith]
 pitch: "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise."
 categorie: llm/observabilite
 famille: plateforme
 licence_type: proprietary
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: 
 scaling: distributed
 alternatives: ["[[Dev/Services/Langfuse|Langfuse]]", "[[Dev/Services/Phoenix Arize|Phoenix Arize]]", "[[Dev/Services/Helicone|Helicone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-observability, tracing, llm-eval]
 url_docs: https://docs.langchain.com/langsmith
 url_repo: 

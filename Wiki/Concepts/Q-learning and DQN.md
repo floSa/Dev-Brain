@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Q-learning and DQN
 alias: [Q-learning, DQN, Deep Q-Network, deep Q-learning, Q-apprentissage, apprentissage par Q]
 categorie: concept/rl

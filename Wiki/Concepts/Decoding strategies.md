@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Decoding strategies
 alias: [stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température]
 categorie: concept/llm

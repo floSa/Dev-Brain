@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: seaborn
 alias: [sns]
 pitch: "Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas."
 categorie: data/viz
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/matplotlib|matplotlib]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataviz, statistical-viz, static-viz]
 url_docs: https://seaborn.pydata.org/
 url_repo: https://github.com/mwaskom/seaborn

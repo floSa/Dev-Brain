@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Generalization bounds
 alias: [Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap]
 categorie: concept/math

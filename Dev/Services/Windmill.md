@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Windmill
 alias: [windmill, windmill.dev, windmill-labs]
 pitch: "Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool."
 categorie: automation/no-code
 famille: plateforme
 licence_type: open-core
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Dev/Services/n8n|n8n]]", "[[Dev/Services/Activepieces|Activepieces]]", "[[Dev/Services/Zapier|Zapier]]", "[[Dev/Services/gumloop|gumloop]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [low-code, orchestration]
 url_docs: https://www.windmill.dev/docs/intro
 url_repo: https://github.com/windmill-labs/windmill

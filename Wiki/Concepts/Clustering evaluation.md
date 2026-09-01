@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Clustering evaluation
 alias: [Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV]
 categorie: concept/ml

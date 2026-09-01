@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Agent evaluation
 alias: [évaluation d'agents, agent evaluation, agent eval]
 categorie: concept/llm

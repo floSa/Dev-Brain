@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Recherche d'information
 alias: [information retrieval, IR, recherche documentaire, retrieval lexical dense hybride]
 categorie: concept/nlp

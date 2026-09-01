@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Apprentissage supervisé
 alias: [Supervised learning, Apprentissage supervise, Modélisation supervisée]
 categorie: concept/ml

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: psycopg2
 alias: [psycopg2, psycopg]
 pitch: "Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3."
 categorie: database/driver
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C/Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [postgres, relational, db-driver]
 url_docs: https://www.psycopg.org/docs/
 url_repo: https://github.com/psycopg/psycopg2

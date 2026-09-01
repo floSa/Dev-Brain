@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: osint4all
 alias: [osint4all, osint4all.github.io]
 pitch: "Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022."
@@ -10,8 +9,9 @@ domaines: [infra-ops]
 licence_type: open-source
 os: 
 langage: 
-status: abandonne
+maturite: deprecated
 alternatives: []
+complements: []
 tags: [osint]
 url_docs: https://github.com/osint4all/osint4all.github.io
 url_repo: https://github.com/osint4all/osint4all.github.io

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Mise à l'échelle
 alias: [Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler]
 categorie: concept/ml

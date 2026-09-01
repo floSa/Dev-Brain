@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Alembic
 alias: [alembic]
 pitch: "Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle."
 categorie: database/migration
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Flyway|Flyway]]", "[[Dev/Services/Liquibase|Liquibase]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [migration, relational]
 url_docs: https://alembic.sqlalchemy.org/
 url_repo: https://github.com/sqlalchemy/alembic

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: minim
 alias: [minim]
 pitch: "Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: 
 url_repo: https://github.com/bbye98/minim

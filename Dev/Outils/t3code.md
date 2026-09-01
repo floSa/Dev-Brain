@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: t3code
 alias: [t3, T3 Code, t3.codes]
 pitch: "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, iOS, Android"
 langage: TypeScript
-status: en-eval
 alternatives: ["[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Maka|Maka]]"]
+complements: []
 tags: [code-assistant, agents, code-generation]
 url_docs: https://github.com/pingdotgg/t3code/tree/main/docs
 url_repo: https://github.com/pingdotgg/t3code

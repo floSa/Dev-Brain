@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: MLflow
 alias: [mlflow]
 pitch: "Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud."
 categorie: ml/tracking
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Neptune|Neptune]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]", "[[Dev/Services/TensorBoard|TensorBoard]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://mlflow.org/docs/latest/
 url_repo: https://github.com/mlflow/mlflow

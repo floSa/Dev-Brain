@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: evaluate
 alias: [hf evaluate, huggingface evaluate, 🤗 evaluate]
 pitch: "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre."
 categorie: ml/eval
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [model-evaluation, nlp, benchmark]
 url_docs: https://huggingface.co/docs/evaluate
 url_repo: https://github.com/huggingface/evaluate

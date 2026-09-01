@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Loi des grands nombres
 alias: [Law of large numbers, LGN, LLN]
 categorie: concept/stats

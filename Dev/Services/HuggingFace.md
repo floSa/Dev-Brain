@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: HuggingFace
 alias: [hugging face, hf, huggingface, transformers, 🤗]
 pitch: "Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes."
 categorie: ml/hub
 famille: saas
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [transformers, model-hub, fine-tuning, nlp, deep-learning, embeddings]
 url_docs: https://huggingface.co/docs
 url_repo: https://github.com/huggingface/transformers

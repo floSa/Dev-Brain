@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: MySQL
 alias: [mysql]
 pitch: "SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web."
 categorie: database/relationnel
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational]
 url_docs: https://dev.mysql.com/doc/
 url_repo: https://github.com/mysql/mysql-server

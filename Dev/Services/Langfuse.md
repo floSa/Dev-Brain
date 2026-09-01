@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Langfuse
 alias: [langfuse]
 pitch: "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry."
 categorie: llm/observabilite
 famille: plateforme
 licence_type: open-core
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: distributed
 alternatives: ["[[Dev/Services/LangSmith|LangSmith]]", "[[Dev/Services/Phoenix Arize|Phoenix Arize]]", "[[Dev/Services/Helicone|Helicone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-observability, tracing, llm-eval]
 url_docs: https://langfuse.com/docs
 url_repo: https://github.com/langfuse/langfuse

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: missingno
 alias: [missing-no]
 pitch: "Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas."
 categorie: data/eda
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/ydata-profiling|ydata-profiling]]", "[[Dev/Services/sweetviz|sweetviz]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [missing-data, eda, static-viz]
 url_docs: https://github.com/ResidentMario/missingno
 url_repo: https://github.com/ResidentMario/missingno

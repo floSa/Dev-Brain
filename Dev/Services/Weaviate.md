@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Weaviate
 alias: [weaviate]
 pitch: "Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé."
 categorie: database/vecteur
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, rag, hybrid-search]
 url_docs: https://weaviate.io/developers/weaviate
 url_repo: https://github.com/weaviate/weaviate

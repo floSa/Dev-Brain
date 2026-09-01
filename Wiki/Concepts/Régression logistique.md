@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régression logistique
 alias: [Logistic regression, Régression logit]
 categorie: concept/ml

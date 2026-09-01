@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: ORM
 alias: [orm, object-relational mapping, mapping objet-relationnel]
 categorie: concept/data

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: MinIO
 alias: [minio]
 pitch: "Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3."
 categorie: storage/objet
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Garage|Garage]]", "[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://min.io/docs/minio/linux/index.html
 url_repo: https://github.com/minio/minio

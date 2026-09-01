@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Multi-Token Prediction
 alias: [MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding]
 categorie: concept/llm

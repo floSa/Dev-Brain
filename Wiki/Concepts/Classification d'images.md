@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Classification d'images
 alias: [image classification, classification d'image, top-1, top-5, ImageNet]
 categorie: concept/dl

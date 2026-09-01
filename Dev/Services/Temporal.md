@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Temporal
 alias: [temporal, Temporal.io]
 pitch: "Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage."
 categorie: data/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/Airflow|Airflow]]", "[[Dev/Services/Dagster|Dagster]]", "[[Dev/Services/Prefect|Prefect]]", "[[Dev/Services/Mage|Mage]]", "[[Dev/Services/Kestra|Kestra]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, durable-execution, distributed]
 url_docs: https://docs.temporal.io/
 url_repo: https://github.com/temporalio/temporal

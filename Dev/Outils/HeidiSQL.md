@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: HeidiSQL
 alias: [heidisql]
 pitch: "Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows (Linux/macOS via Wine)"
 langage: Delphi
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/DataGrip|DataGrip]]", "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]"]
+complements: []
 tags: [db-client, relational]
 url_docs: https://www.heidisql.com/help.php
 url_repo: https://github.com/HeidiSQL/HeidiSQL

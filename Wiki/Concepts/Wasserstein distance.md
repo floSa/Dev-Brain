@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Wasserstein distance
 alias: [Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal]
 categorie: concept/math

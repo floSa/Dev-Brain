@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reinforcement learning
 alias: [RL, apprentissage par renforcement, reinforcement learning, agent-environnement]
 categorie: concept/rl

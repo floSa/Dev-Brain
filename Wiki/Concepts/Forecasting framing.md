@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Forecasting framing
 alias: [Cadrage forecasting, Cadrage d'une prévision, Forecasting problem framing]
 categorie: concept/ts

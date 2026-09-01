@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Kestra
 alias: [kestra]
 pitch: "Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches."
 categorie: data/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Dev/Services/Airflow|Airflow]]", "[[Dev/Services/Dagster|Dagster]]", "[[Dev/Services/Prefect|Prefect]]", "[[Dev/Services/Mage|Mage]]", "[[Dev/Services/Temporal|Temporal]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, data-pipeline, declarative-config]
 url_docs: https://kestra.io/docs
 url_repo: https://github.com/kestra-io/kestra

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Analyse de survie
 alias: [survival analysis, time-to-event, analyse de survie, Kaplan-Meier, Cox, risques proportionnels, hazard, censure]
 categorie: concept/stats

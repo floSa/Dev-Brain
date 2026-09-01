@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Diffusion models
 alias: [DDPM, denoising diffusion, score-based models, latent diffusion, modèles de diffusion, diffusion]
 categorie: concept/dl

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Extra Trees
 alias: [ExtraTrees, Extremely Randomized Trees, Arbres extrêmement aléatoires, ExtraTreesClassifier, Extra-Trees]
 categorie: concept/ml

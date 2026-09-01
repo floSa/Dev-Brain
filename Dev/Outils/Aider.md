@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Aider
 alias: [aider]
 pitch: "Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
-status: actif
 alternatives: ["[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/freebuff|freebuff]]", "[[Dev/Outils/t3code|t3code]]", "[[Dev/Outils/pi|pi]]"]
+complements: []
 tags: [code-assistant, code-generation, llm, version-control]
 url_docs: https://aider.chat/docs/
 url_repo: https://github.com/Aider-AI/aider

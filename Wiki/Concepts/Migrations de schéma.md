@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Migrations de schéma
 alias: [migration, migrations, schema migration, db migration]
 categorie: concept/data

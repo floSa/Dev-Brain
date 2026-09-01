@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: text-generation-webui
 alias: [oobabooga, textgen, text-gen-webui]
 pitch: "UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale."
 categorie: llm/runtime
 famille: application
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://github.com/oobabooga/text-generation-webui/wiki
 url_repo: https://github.com/oobabooga/text-generation-webui

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Agent skills
 alias: [skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md]
 categorie: concept/llm

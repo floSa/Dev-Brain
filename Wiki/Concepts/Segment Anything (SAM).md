@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Segment Anything (SAM)
 alias: [SAM, Segment Anything Model, segmentation promptable, promptable segmentation, SAM 2, SAM 3, SA-1B]
 categorie: concept/dl

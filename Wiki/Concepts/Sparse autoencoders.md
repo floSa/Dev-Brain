@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Sparse autoencoders
 alias: [SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning]
 categorie: concept/dl

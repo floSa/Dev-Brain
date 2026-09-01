@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Ceph
 alias: [ceph, rados, radosgw, rgw]
 pitch: "Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde."
 categorie: storage/objet
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[Dev/Services/MinIO|MinIO]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Garage|Garage]]", "[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://docs.ceph.com/
 url_repo: https://github.com/ceph/ceph

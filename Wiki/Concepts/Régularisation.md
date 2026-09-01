@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régularisation
 alias: [Ridge, Lasso, ElasticNet, Pénalisation L1/L2, Regularization]
 categorie: concept/ml

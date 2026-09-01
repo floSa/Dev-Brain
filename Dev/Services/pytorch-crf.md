@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pytorch-crf
 alias: [torchcrf, pytorch crf, conditional random field pytorch]
 pitch: "Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence."
 categorie: ml/nlp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [sequence-labeling, ner, deep-learning]
 url_docs: https://pytorch-crf.readthedocs.io
 url_repo: https://github.com/kmkurn/pytorch-crf

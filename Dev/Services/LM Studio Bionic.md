@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LM Studio Bionic
 alias: [Bionic, lm studio bionic, LM Studio Secure Cloud, LM Link]
 pitch: "Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes."
 categorie: llm/assistant
 famille: application
 licence_type: proprietary
-hosted: self
+hosted: [self]
 maturite: production
 langage: 
 scaling: single-node
 alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/Hermes Agent|Hermes Agent]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, local-llm, mcp, code-generation]
 url_docs: https://lmstudio.ai/docs/bionic
 url_repo: 

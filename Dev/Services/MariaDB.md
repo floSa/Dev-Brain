@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: MariaDB
 alias: [mariadb]
 pitch: "Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle."
 categorie: database/relationnel
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational]
 url_docs: https://mariadb.com/kb/en/documentation/
 url_repo: https://github.com/MariaDB/server

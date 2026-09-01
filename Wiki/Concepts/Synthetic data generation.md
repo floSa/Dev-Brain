@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Synthetic data generation
 alias: [synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données]
 categorie: concept/llm

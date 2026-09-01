@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SAELens
 alias: [sae_lens, SAE Lens, HookedSAETransformer]
 pitch: "Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/TransformerLens|TransformerLens]]", "[[Dev/Services/interpreto|interpreto]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, llm]
 url_docs: https://decoderesearch.github.io/SAELens/
 url_repo: https://github.com/jbloomAus/SAELens

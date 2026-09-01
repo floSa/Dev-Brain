@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Figma
 alias: [figma]
 pitch: "Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: proprietary
 os: "Web, Windows, macOS"
 langage: 
-status: actif
 alternatives: ["[[Dev/Outils/Penpot|Penpot]]"]
+complements: []
 tags: [design-tool]
 url_docs: https://help.figma.com/
 url_repo: 

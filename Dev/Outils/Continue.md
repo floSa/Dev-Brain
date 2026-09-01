@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Continue
 alias: [continue, continue.dev, continuedev]
 pitch: "Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API)."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: TypeScript, Kotlin
-status: actif
 alternatives: ["[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/freebuff|freebuff]]", "[[Dev/Outils/t3code|t3code]]", "[[Dev/Outils/pi|pi]]"]
+complements: []
 tags: [code-assistant, code-generation, llm, agents]
 url_docs: https://docs.continue.dev/
 url_repo: https://github.com/continuedev/continue

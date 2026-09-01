@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Loki
 alias: [loki, "Grafana Loki"]
 pitch: "Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana."
 categorie: observability/supervision
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [observability, logging, distributed]
 url_docs: https://grafana.com/docs/loki/latest/
 url_repo: https://github.com/grafana/loki

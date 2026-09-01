@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reliability patterns
 alias: [patrons de fiabilité, reliability patterns, fiabilité des apps LLM]
 categorie: concept/llm

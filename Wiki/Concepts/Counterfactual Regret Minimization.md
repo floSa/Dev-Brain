@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Counterfactual Regret Minimization
 alias: [CFR, counterfactual regret minimization, minimisation du regret contrefactuel, CFR+, regret matching, Deep CFR, MCCFR]
 categorie: concept/rl

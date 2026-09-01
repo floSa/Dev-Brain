@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Modin
 alias: [modin]
 pitch: "Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI."
 categorie: data/tableau
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/pandas|pandas]]", "[[Dev/Services/Polars|Polars]]", "[[Dev/Services/Dask|Dask]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataframe, parallel, distributed]
 url_docs: https://modin.readthedocs.io/
 url_repo: https://github.com/modin-project/modin

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Classification
 alias: [Classification supervisée, Classifieur, Classifier, Classement]
 categorie: concept/ml

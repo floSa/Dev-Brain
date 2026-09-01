@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Mouvement brownien
 alias: [Brownian motion, processus de Wiener, Wiener process]
 categorie: concept/stats

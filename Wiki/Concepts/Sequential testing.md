@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Sequential testing
 alias: [test séquentiel, analyse séquentielle, peeking, always-valid inference, SPRT, alpha spending]
 categorie: concept/stats

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Local Outlier Factor
 alias: [LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale]
 categorie: concept/ml

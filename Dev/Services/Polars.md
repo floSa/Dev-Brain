@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Polars
 alias: [polars, py-polars]
 pitch: "DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core."
 categorie: data/tableau
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/pandas|pandas]]", "[[Dev/Services/Modin|Modin]]", "[[Dev/Services/Dask|Dask]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataframe, columnar, lazy-evaluation, out-of-core]
 url_docs: https://docs.pola.rs/
 url_repo: https://github.com/pola-rs/polars

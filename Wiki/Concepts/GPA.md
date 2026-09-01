@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: GPA
 alias: [Generalized Procrustes Analysis, Analyse procustéenne généralisée, Procruste généralisé]
 categorie: concept/stats

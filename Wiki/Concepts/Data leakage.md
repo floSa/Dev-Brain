@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Data leakage
 alias: [fuite de données, fuite d'information, target leakage]
 categorie: concept/ml

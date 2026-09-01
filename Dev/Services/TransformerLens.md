@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TransformerLens
 alias: [transformer_lens, HookedTransformer, TransformerBridge]
 pitch: "Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/nnsight|nnsight]]", "[[Dev/Services/SAELens|SAELens]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, llm]
 url_docs: https://transformerlensorg.github.io/TransformerLens/
 url_repo: https://github.com/TransformerLensOrg/TransformerLens

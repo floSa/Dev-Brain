@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: gumloop
 alias: [Gumloop, gumloop.com]
 pitch: "Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host."
 categorie: automation/no-code
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: ["[[Dev/Services/n8n|n8n]]", "[[Dev/Services/Activepieces|Activepieces]]", "[[Dev/Services/Windmill|Windmill]]", "[[Dev/Services/Zapier|Zapier]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [low-code, orchestration, agents]
 url_docs: https://docs.gumloop.com/
 url_repo: 

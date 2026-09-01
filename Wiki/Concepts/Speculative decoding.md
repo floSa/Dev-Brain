@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Speculative decoding
 alias: [décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance]
 categorie: concept/llm

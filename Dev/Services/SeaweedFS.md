@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SeaweedFS
 alias: [seaweedfs, seaweed, weed]
 pitch: "Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0."
 categorie: storage/objet
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/MinIO|MinIO]]", "[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/Garage|Garage]]", "[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://github.com/seaweedfs/seaweedfs/wiki
 url_repo: https://github.com/seaweedfs/seaweedfs

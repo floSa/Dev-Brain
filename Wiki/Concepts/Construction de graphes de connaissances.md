@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Construction de graphes de connaissances
 alias: [knowledge graph construction, KG construction, extraction d'entités et de relations, knowledge graph building, peuplement de graphe de connaissances]
 categorie: concept/llm

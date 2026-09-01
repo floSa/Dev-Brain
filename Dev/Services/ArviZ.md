@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ArviZ
 alias: [arviz, az]
 pitch: "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC."
 categorie: stats/bayesien
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [bayesian, monte-carlo]
 url_docs: https://python.arviz.org
 url_repo: https://github.com/arviz-devs/arviz

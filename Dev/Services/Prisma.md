@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Prisma
 alias: [prisma, prisma orm]
 pitch: "ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées."
 categorie: database/orm
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: TypeScript
-scaling: single-node
 alternatives: ["[[Dev/Services/SQLAlchemy|SQLAlchemy]]", "[[Dev/Services/SQLModel|SQLModel]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orm, relational]
 url_docs: https://www.prisma.io/docs
 url_repo: https://github.com/prisma/prisma

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: FAMD
 alias: [AFDM, Analyse factorielle de données mixtes, Factor Analysis of Mixed Data]
 categorie: concept/stats

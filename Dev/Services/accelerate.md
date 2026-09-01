@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: accelerate
 alias: [hf accelerate, huggingface accelerate, 🤗 accelerate]
 pitch: "Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]", "[[Dev/Services/DeepSpeed|DeepSpeed]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [distributed-training, mixed-precision, gpu, deep-learning]
 url_docs: https://huggingface.co/docs/accelerate
 url_repo: https://github.com/huggingface/accelerate

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: CA
 alias: [AFC, Analyse des correspondances, Analyse factorielle des correspondances, Correspondence Analysis]
 categorie: concept/stats

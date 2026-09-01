@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: k-médoïds (PAM)
 alias: [k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA]
 categorie: concept/ml

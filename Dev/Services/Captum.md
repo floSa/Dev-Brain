@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Captum
 alias: [captum, Captum.ai]
 pitch: "Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/interpreto|interpreto]]", "[[Dev/Services/nnsight|nnsight]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, deep-learning]
 url_docs: https://captum.ai/
 url_repo: https://github.com/pytorch/captum

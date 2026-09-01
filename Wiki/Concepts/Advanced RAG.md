@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Advanced RAG
 alias: [RAG avancé, advanced retrieval-augmented generation, modular RAG]
 categorie: concept/llm

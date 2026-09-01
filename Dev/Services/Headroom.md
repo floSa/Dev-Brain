@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Headroom
 alias: [headroom, headroom-ai, headroomlabs]
 pitch: "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande."
 categorie: llm/memoire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: "Python, TypeScript, Rust"
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, context-engineering, token-optimization, caching, mcp]
 url_docs: https://headroom-docs.vercel.app/docs
 url_repo: https://github.com/headroomlabs-ai/headroom

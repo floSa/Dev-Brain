@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pingouin
 alias: []
 pitch: "Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas."
 categorie: stats/inference
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/scipy.stats|scipy.stats]]", "[[Dev/Services/statsmodels|statsmodels]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [hypothesis-testing, effect-size, statistical-power, non-parametric, parametric-test]
 url_docs: https://pingouin-stats.org/
 url_repo: https://github.com/raphaelvallat/pingouin

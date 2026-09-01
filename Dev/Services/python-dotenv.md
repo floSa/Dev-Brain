@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: python-dotenv
 alias: [dotenv, python_dotenv]
 pitch: "Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs."
 categorie: devtools/config
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/hydra|hydra]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [config]
 url_docs: https://github.com/theskumar/python-dotenv#readme
 url_repo: https://github.com/theskumar/python-dotenv

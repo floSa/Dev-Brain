@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Archify
 alias: [archify]
 pitch: "Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: 
 langage: JavaScript
-status: actif
 alternatives: ["[[Dev/Outils/Mermaid|Mermaid]]", "[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Excalidraw|Excalidraw]]", "[[Dev/Outils/FossFLOW|FossFLOW]]"]
+complements: []
 tags: [agent-skill, diagram, diagram-as-code, code-assistant, agents]
 url_docs: https://tt-a1i.github.io/archify/
 url_repo: https://github.com/tt-a1i/archify

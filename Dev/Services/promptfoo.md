@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: promptfoo
 alias: [promptfoo, promptfoo.dev]
 pitch: "Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic."
 categorie: llm/eval
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: TypeScript
-scaling: single-node
 alternatives: ["[[Dev/Services/DeepEval|DeepEval]]", "[[Dev/Services/Ragas|Ragas]]", "[[Dev/Services/TruLens|TruLens]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-eval, testing, ai-security]
 url_docs: https://www.promptfoo.dev/docs/intro/
 url_repo: https://github.com/promptfoo/promptfoo

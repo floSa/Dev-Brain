@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: ai-memory
 alias: [akitaonrails/ai-memory]
 pitch: "Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Linux, macOS, Windows (WSL2)"
 langage: Rust
-status: actif
 alternatives: ["[[Dev/Outils/Graphify|Graphify]]", "[[Dev/Services/OpenViking|OpenViking]]"]
+complements: []
 tags: [agent-memory, mcp, context-engineering, code-assistant, retrieval]
 url_docs: https://github.com/akitaonrails/ai-memory
 url_repo: https://github.com/akitaonrails/ai-memory

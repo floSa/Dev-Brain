@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Quantization
 alias: [Quantification, quantisation, INT8, INT4, FP8, GGUF, GPTQ, AWQ, PTQ, QAT, K-quants, NVFP4, MXFP4, FP4, microscaling, block scaling, quantization 4 bits]
 categorie: concept/dl

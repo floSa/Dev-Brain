@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: spaCy
 alias: [spacy, explosion spacy]
 pitch: "Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs."
 categorie: ml/nlp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/GLiNER|GLiNER]]", "[[Dev/Services/NLTK|NLTK]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [nlp, ner, sequence-labeling, tokenization]
 url_docs: https://spacy.io
 url_repo: https://github.com/explosion/spaCy

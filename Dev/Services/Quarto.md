@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Quarto
 alias: [quarto]
 pitch: "Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia)."
 categorie: devtools/notebook
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: TypeScript
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [notebook, reproducibility]
 url_docs: https://quarto.org/
 url_repo: https://github.com/quarto-dev/quarto-cli

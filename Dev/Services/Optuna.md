@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Optuna
 alias: [optuna, TPESampler]
 pitch: "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable."
 categorie: ml/hyperopt
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]", "[[Dev/Services/Hyperopt|Hyperopt]]", "[[Dev/Services/Ray Tune|Ray Tune]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [hyperparameter-tuning, bayesian, distributed]
 url_docs: https://optuna.readthedocs.io/
 url_repo: https://github.com/optuna/optuna

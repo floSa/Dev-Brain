@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Hyperopt
 alias: [hyperopt, TPE, tree-structured Parzen estimator]
 pitch: "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu."
 categorie: ml/hyperopt
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Optuna|Optuna]]", "[[Dev/Services/Ray Tune|Ray Tune]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [hyperparameter-tuning, bayesian, distributed]
 url_docs: http://hyperopt.github.io/hyperopt/
 url_repo: https://github.com/hyperopt/hyperopt

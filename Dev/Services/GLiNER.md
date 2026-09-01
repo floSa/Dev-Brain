@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: GLiNER
 alias: [gliner, generalist ner]
 pitch: "Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger."
 categorie: ml/nlp
 famille: modele
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/spaCy|spaCy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [ner, nlp, transformers]
 url_docs: https://github.com/urchade/GLiNER
 url_repo: https://github.com/urchade/GLiNER

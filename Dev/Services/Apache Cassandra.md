@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Apache Cassandra
 alias: [cassandra, apache cassandra]
 pitch: "Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter."
 categorie: database/cle-valeur
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Dev/Services/MongoDB|MongoDB]]", "[[Dev/Services/Redis|Redis]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [nosql, wide-column, distributed]
 url_docs: https://cassandra.apache.org/doc/
 url_repo: https://github.com/apache/cassandra

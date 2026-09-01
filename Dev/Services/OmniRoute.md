@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OmniRoute
 alias: [omniroute]
 pitch: "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production."
 categorie: llm/passerelle
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: beta
 langage: TypeScript
 scaling: single-node
 alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]", "[[Dev/Services/OpenRouter|OpenRouter]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-gateway, routing, reliability, context-engineering]
 url_docs: https://github.com/diegosouzapw/OmniRoute/wiki
 url_repo: https://github.com/diegosouzapw/OmniRoute

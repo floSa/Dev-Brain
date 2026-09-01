@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Filtrage numérique
 alias: [filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter]
 categorie: concept/signal

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: Chaîne de bout en bout collecte web → résolution / matching d'entités → décision par optimisation sous contraintes.
 services_cles: [Playwright, bm25s, PuLP, Prefect]
 projets_appliques: []

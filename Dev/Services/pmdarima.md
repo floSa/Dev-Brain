@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pmdarima
 alias: [pyramid-arima, auto-arima, pmd]
 pitch: "AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels."
 categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/statsforecast|statsforecast]]", "[[Dev/Services/darts|darts]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [forecasting, timeseries]
 url_docs: https://alkaline-ml.com/pmdarima/
 url_repo: https://github.com/alkaline-ml/pmdarima

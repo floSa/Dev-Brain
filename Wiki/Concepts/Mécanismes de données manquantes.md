@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Mécanismes de données manquantes
 alias: [MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin]
 categorie: concept/ml

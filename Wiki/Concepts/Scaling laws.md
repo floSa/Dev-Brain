@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Scaling laws
 alias: [lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal]
 categorie: concept/llm

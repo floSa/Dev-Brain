@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Structured outputs
 alias: [sorties structurées, sortie structurée, JSON mode]
 categorie: concept/llm

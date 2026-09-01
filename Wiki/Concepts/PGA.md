@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: PGA
 alias: [Principal Geodesic Analysis, Analyse géodésique principale]
 categorie: concept/stats

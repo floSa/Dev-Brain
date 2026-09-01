@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pdfplumber
 alias: [pdfplumber, jsvine-pdfplumber]
 pitch: "Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT."
 categorie: data/parsing
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [pdf, table-extraction, document-parsing]
 url_docs: https://github.com/jsvine/pdfplumber
 url_repo: https://github.com/jsvine/pdfplumber

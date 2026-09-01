@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Langflow
 alias: [langflow, langflow-ai]
 pitch: "Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud."
 categorie: llm/low-code
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Dify|Dify]]", "[[Dev/Services/Flowise|Flowise]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, low-code, agents, rag]
 url_docs: https://docs.langflow.org/
 url_repo: https://github.com/langflow-ai/langflow

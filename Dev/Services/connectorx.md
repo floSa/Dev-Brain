@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: connectorx
 alias: [connector-x, connectorx]
 pitch: "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination."
 categorie: data/ingestion
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/ADBC|ADBC]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataframe, columnar]
 url_docs: https://sfu-db.github.io/connector-x/
 url_repo: https://github.com/sfu-db/connector-x

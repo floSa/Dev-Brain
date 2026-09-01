@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reward modeling
 alias: [reward model, modèle de récompense, RM, preference model, modèle de préférence, RLAIF]
 categorie: concept/llm

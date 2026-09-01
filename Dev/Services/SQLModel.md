@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SQLModel
 alias: [sqlmodel]
 pitch: "Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI."
 categorie: database/orm
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/SQLAlchemy|SQLAlchemy]]", "[[Dev/Services/Prisma|Prisma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orm, relational, type-hints, data-validation]
 url_docs: https://sqlmodel.tiangolo.com/
 url_repo: https://github.com/fastapi/sqlmodel

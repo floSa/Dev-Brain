@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Vector norms
 alias: [normes vectorielles, normes, Lp norms, norme Lp]
 categorie: concept/math

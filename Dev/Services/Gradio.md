@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Gradio
 alias: [gradio]
 pitch: "Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces."
 categorie: ui/data-app
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [ml-demo, web-framework]
 url_docs: https://gradio.app/docs
 url_repo: https://github.com/gradio-app/gradio

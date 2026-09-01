@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: interpreto
 alias: [Interpreto, FOR-sight interpreto]
 pitch: "Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: experimental
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/LIME|LIME]]", "[[Dev/Services/Captum|Captum]]", "[[Dev/Services/SAELens|SAELens]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, llm, nlp]
 url_docs: https://for-sight-ai.github.io/interpreto/
 url_repo: https://github.com/FOR-sight-ai/interpreto

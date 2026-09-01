@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: sweetviz
 alias: [Sweetviz]
 pitch: "EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes)."
 categorie: data/eda
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/ydata-profiling|ydata-profiling]]", "[[Dev/Services/missingno|missingno]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [eda, statistical-viz, dataframe]
 url_docs: https://pypi.org/project/sweetviz/
 url_repo: https://github.com/fbdesignpro/sweetviz

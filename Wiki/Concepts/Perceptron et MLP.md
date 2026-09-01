@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Perceptron et MLP
 alias: [Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier]
 categorie: concept/ml

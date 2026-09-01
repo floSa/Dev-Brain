@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Playwright
 alias: [playwright, playwright-python]
 pitch: "Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/curl_cffi|curl_cffi]]", "[[Dev/Services/cloudscraper|cloudscraper]]", "[[Dev/Services/Crawlee|Crawlee]]", "[[Dev/Services/Scrapling|Scrapling]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: https://playwright.dev/python/
 url_repo: https://github.com/microsoft/playwright-python

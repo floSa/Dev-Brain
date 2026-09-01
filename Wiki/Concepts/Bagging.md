@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Bagging
 alias: [Bootstrap aggregating, Ensachage]
 categorie: concept/ml

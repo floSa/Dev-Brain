@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: MongoDB Compass
 alias: [compass, mongodb compass]
 pitch: "Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: source-available
 os: "Windows, macOS, Linux"
 langage: TypeScript/Electron
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+complements: []
 tags: [db-client, document-db, nosql]
 url_docs: https://www.mongodb.com/docs/compass/
 url_repo: https://github.com/mongodb-js/compass

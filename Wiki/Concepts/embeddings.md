@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: embeddings
 alias: [représentations vectorielles, plongements, embedding, vector embeddings]
 categorie: concept/ml

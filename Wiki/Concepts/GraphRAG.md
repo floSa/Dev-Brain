@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: GraphRAG
 alias: [graph RAG, knowledge graph RAG, RAG sur graphe, RAG augmenté par graphe de connaissances]
 categorie: concept/llm

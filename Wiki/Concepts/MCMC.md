@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: MCMC
 alias: [Markov chain Monte Carlo, Monte-Carlo par chaînes de Markov, Metropolis-Hastings, NUTS, Gibbs]
 categorie: concept/stats

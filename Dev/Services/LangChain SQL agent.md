@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LangChain SQL agent
 alias: [langchain sql, langchain text-to-sql, create_sql_agent, SQLDatabaseToolkit, langgraph sql agent]
 pitch: "Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle."
 categorie: llm/text-to-sql
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [text-to-sql, llm, agents, tool-use]
 url_docs: https://docs.langchain.com/oss/python/integrations/tools/sql_database
 url_repo: https://github.com/langchain-ai/langchain

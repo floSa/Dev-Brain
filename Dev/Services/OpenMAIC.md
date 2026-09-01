@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenMAIC
 alias: [openmaic, maic, open-multi-agent-interactive-classroom]
 pitch: "Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé."
 categorie: llm/assistant
 famille: application
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: beta
 langage: TypeScript
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, multi-agent, education, self-hosted]
 url_docs: https://github.com/THU-MAIC/OpenMAIC
 url_repo: https://github.com/THU-MAIC/OpenMAIC

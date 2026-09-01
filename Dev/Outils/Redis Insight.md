@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Redis Insight
 alias: [redisinsight, redis insight]
 pitch: "Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search)."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: source-available
 os: "Windows, macOS, Linux, web (Docker)"
 langage: TypeScript/Electron
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+complements: []
 tags: [db-client, key-value, in-memory]
 url_docs: https://redis.io/docs/latest/develop/tools/insight/
 url_repo: https://github.com/redis/RedisInsight

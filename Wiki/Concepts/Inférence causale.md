@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Inférence causale
 alias: [causal inference, inférence causale, causalité, DAG, confounding, confondeur, backdoor, propensity score, score de propension]
 categorie: concept/stats

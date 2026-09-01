@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Optimal transport
 alias: [Transport optimal, OT, Plan de transport, Monge-Kantorovich, Sinkhorn, Earth mover's distance problem]
 categorie: concept/math

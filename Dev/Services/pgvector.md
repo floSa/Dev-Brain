@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pgvector
 alias: [pgvector, pg-vector]
 pitch: "Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place."
 categorie: database/vecteur
 famille: extension
 licence_type: open-source
-hosted: both
 maturite: production
 langage: C
-scaling: single-node
 alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, rag, postgres]
 url_docs: https://github.com/pgvector/pgvector#readme
 url_repo: https://github.com/pgvector/pgvector

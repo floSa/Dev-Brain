@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: PPO
 alias: [PPO, Proximal Policy Optimization, optimisation proximale de politique, clipped surrogate]
 categorie: concept/rl

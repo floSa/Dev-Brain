@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Postgres
 alias: [postgres, postgresql, pg]
 pitch: "SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne."
 categorie: database/relationnel
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
 url_repo: https://github.com/postgres/postgres

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Penpot
 alias: [penpot]
 pitch: "Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Web (self-host Docker)"
 langage: Clojure, JavaScript
-status: actif
 alternatives: ["[[Dev/Outils/Figma|Figma]]"]
+complements: []
 tags: [design-tool]
 url_docs: https://help.penpot.app/
 url_repo: https://github.com/penpot/penpot

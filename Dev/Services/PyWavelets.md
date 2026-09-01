@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyWavelets
 alias: [pywt, pywavelets, wavelet transform]
 pitch: "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle."
 categorie: signal/traitement
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C / Cython / Python
-scaling: single-node
 alternatives: ["[[Dev/Services/scipy.signal|scipy.signal]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [signal-processing, wavelet]
 url_docs: https://pywavelets.readthedocs.io/
 url_repo: https://github.com/PyWavelets/pywt

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Excalidraw
 alias: [excalidraw]
 pitch: "Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Web, Windows, macOS, Linux"
 langage: TypeScript
-status: actif
 alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
+complements: []
 tags: [diagram, whiteboard]
 url_docs: https://docs.excalidraw.com/
 url_repo: https://github.com/excalidraw/excalidraw

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Web-Check
 alias: [web-check, lissy93/web-check]
 pitch: "Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker."
 categorie: security/recon
 famille: application
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [recon, networking, osint, self-hosted]
 url_docs: https://web-check.xyz/about
 url_repo: https://github.com/Lissy93/web-check

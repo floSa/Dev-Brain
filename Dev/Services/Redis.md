@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Redis
 alias: [redis]
 pitch: "Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub."
 categorie: database/cle-valeur
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[Dev/Services/MongoDB|MongoDB]]", "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [nosql, key-value, in-memory]
 url_docs: https://redis.io/docs/
 url_repo: https://github.com/redis/redis

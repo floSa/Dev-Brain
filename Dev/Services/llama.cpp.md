@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: llama.cpp
 alias: [llamacpp, llama-cpp, ggml]
 pitch: "Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux."
 categorie: llm/runtime
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]", "[[Dev/Services/needle|needle]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://github.com/ggml-org/llama.cpp/tree/master/docs
 url_repo: https://github.com/ggml-org/llama.cpp

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TorchServe
 alias: [torchserve, torch-serve]
 pitch: "Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025."
 categorie: ml/serving
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: deprecated
 langage: Java/Python
 scaling: distributed
 alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/KServe|KServe]]", "[[Dev/Services/Seldon Core|Seldon Core]]", "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
-remplace_par: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]"]
-status: abandonne
+complements: []
 tags: [model-serving, inference, gpu]
 url_docs: https://docs.pytorch.org/serve/
 url_repo: https://github.com/pytorch/serve

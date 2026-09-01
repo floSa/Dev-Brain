@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TensorRT-LLM
 alias: [TRT-LLM, trt-llm, tensorrt-llm]
 pitch: "Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++."
 categorie: llm/runtime
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++/Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, model-serving, inference, gpu, quantization]
 url_docs: https://nvidia.github.io/TensorRT-LLM/
 url_repo: https://github.com/NVIDIA/TensorRT-LLM

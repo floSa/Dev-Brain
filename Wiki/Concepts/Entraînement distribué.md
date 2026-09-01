@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Entraînement distribué
 alias: [Distributed training, DDP, DistributedDataParallel, FSDP, ZeRO, data parallelism, model parallelism, pipeline parallelism, tensor parallelism, sharding, DeepSpeed, parallélisme de données]
 categorie: concept/dl

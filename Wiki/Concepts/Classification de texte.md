@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Classification de texte
 alias: [text classification, classification de documents, catégorisation de texte, analyse de sentiment]
 categorie: concept/nlp

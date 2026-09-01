@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Maxun
 alias: [maxun]
 pitch: "Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host."
 categorie: data/scraping
 famille: application
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: beta
 langage: TypeScript
 scaling: single-node
 alternatives: ["[[Dev/Services/Firecrawl|Firecrawl]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping, low-code]
 url_docs: https://docs.maxun.dev/
 url_repo: https://github.com/getmaxun/maxun

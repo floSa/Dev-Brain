@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LangGraph
 alias: [langgraph, langchain-ai-langgraph]
 pitch: "Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use]
 url_docs: https://docs.langchain.com/oss/python/langgraph/overview
 url_repo: https://github.com/langchain-ai/langgraph

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: Démo / POC ML local mêlant données relationnelles, documents et artefacts binaires, le tout reproductible en docker-compose.
 services_cles: [Postgres, MongoDB, MinIO, FastAPI, Streamlit, Docker]
 projets_appliques: []

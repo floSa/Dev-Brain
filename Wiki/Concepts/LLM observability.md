@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LLM observability
 alias: [observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens]
 categorie: concept/llm

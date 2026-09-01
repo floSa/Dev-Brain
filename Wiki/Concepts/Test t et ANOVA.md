@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Test t et ANOVA
 alias: [t-test, ANOVA, test de Student, comparaison de moyennes]
 categorie: concept/stats

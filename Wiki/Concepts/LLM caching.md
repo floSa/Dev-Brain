@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LLM caching
 alias: [response caching, cache de réponses LLM, semantic cache, cache sémantique, exact-match cache, GPTCache]
 categorie: concept/llm

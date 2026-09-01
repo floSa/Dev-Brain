@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: RAG sur connaissance relationnelle (entités liées, multi-hop) où les réponses engagent et passent par une validation humaine aux points sensibles.
 services_cles: [Neo4j, LangGraph, sentence-transformers, Qdrant]
 projets_appliques: []

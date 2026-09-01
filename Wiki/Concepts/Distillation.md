@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Distillation
 alias: [Knowledge distillation, distillation de connaissances, teacher-student, distillation prof-élève, soft labels, dark knowledge]
 categorie: concept/dl

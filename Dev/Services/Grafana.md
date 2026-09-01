@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Grafana
 alias: [grafana]
 pitch: "Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud."
 categorie: observability/supervision
 famille: application
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [observability, metrics, dashboard, dataviz]
 url_docs: https://grafana.com/docs/grafana/latest/
 url_repo: https://github.com/grafana/grafana

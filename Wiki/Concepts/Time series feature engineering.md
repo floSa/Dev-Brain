@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Time series feature engineering
 alias: [Features temporelles, Lag features, Rolling features, Fourier terms, Time series features]
 categorie: concept/ts

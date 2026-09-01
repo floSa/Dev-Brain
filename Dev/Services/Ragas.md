@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Ragas
 alias: [ragas, explodinggradients-ragas]
 pitch: "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG."
 categorie: llm/eval
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/DeepEval|DeepEval]]", "[[Dev/Services/TruLens|TruLens]]", "[[Dev/Services/promptfoo|promptfoo]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-eval, rag-eval, rag]
 url_docs: https://docs.ragas.io/
 url_repo: https://github.com/explodinggradients/ragas

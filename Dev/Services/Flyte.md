@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Flyte
 alias: [flyte, flytekit]
 pitch: "Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai."
 categorie: ml/orchestration
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/ZenML|ZenML]]", "[[Dev/Services/Metaflow|Metaflow]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orchestration, ml-pipeline, kubernetes]
 url_docs: https://docs.flyte.org/
 url_repo: https://github.com/flyteorg/flyte

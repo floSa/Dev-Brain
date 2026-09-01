@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pytest
 alias: [py.test]
 pitch: "Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins."
 categorie: devtools/test
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [testing]
 url_docs: https://docs.pytest.org/
 url_repo: https://github.com/pytest-dev/pytest

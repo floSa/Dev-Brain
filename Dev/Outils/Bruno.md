@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Bruno
 alias: [bruno, usebruno]
 pitch: "Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud."
@@ -10,8 +9,8 @@ domaines: [data-eng, ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: JavaScript (Electron)
-status: actif
 alternatives: ["[[Dev/Outils/Postman|Postman]]"]
+complements: []
 tags: [api-client, version-control]
 url_docs: https://docs.usebruno.com/
 url_repo: https://github.com/usebruno/bruno

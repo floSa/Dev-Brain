@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Inference optimization
 alias: [optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM]
 categorie: concept/llm

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Ingénierie des caractéristiques
 alias: [Feature engineering, Ingénierie des variables, Feature preprocessing]
 categorie: concept/ml

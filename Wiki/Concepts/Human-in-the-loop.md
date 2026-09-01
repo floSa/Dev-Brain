@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Human-in-the-loop
 alias: [HITL, human in the loop, supervision humaine, validation humaine, intervention humaine]
 categorie: concept/llm

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Matrix products
 alias: [produit matriciel, multiplication matricielle, matrix multiplication, produit matrice-vecteur]
 categorie: concept/math

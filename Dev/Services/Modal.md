@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Modal
 alias: [modal, modal.com, Modal Labs, Modal Sandboxes]
 pitch: "Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur."
 categorie: compute/a-la-demande
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: "Python, JavaScript, Go"
 scaling: serverless
 alternatives: ["[[Dev/Services/E2B|E2B]]", "[[Dev/Services/Daytona|Daytona]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [agents, gpu, llm, container]
 url_docs: https://modal.com/docs
 url_repo: 

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: croc
 alias: [croc, schollz/croc]
 pitch: "Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire."
@@ -10,8 +9,8 @@ domaines: [infra-ops]
 licence_type: open-source
 os: "Windows, macOS, Linux, FreeBSD, Android"
 langage: Go
-status: actif
 alternatives: []
+complements: []
 tags: [file-transfer, networking, cryptography, cli, self-hosted]
 url_docs: https://github.com/schollz/croc
 url_repo: https://github.com/schollz/croc

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyMuPDF
 alias: [pymupdf, fitz, MuPDF]
 pitch: "Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale."
 categorie: data/parsing
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C / Python
-scaling: single-node
 alternatives: ["[[Dev/Services/pdfplumber|pdfplumber]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [pdf, document-parsing]
 url_docs: https://pymupdf.readthedocs.io/
 url_repo: https://github.com/pymupdf/PyMuPDF

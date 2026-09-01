@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: DBeaver
 alias: [dbeaver]
 pitch: "Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: open-core
 os: "Windows, macOS, Linux"
 langage: Java
-status: actif
 alternatives: ["[[Dev/Outils/DataGrip|DataGrip]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]", "[[Dev/Outils/pgAdmin|pgAdmin]]", "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]", "[[Dev/Outils/MongoDB Compass|MongoDB Compass]]", "[[Dev/Outils/Redis Insight|Redis Insight]]"]
+complements: []
 tags: [db-client, relational, nosql]
 url_docs: https://dbeaver.com/docs/dbeaver/
 url_repo: https://github.com/dbeaver/dbeaver

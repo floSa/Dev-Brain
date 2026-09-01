@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: AdaBoost
 alias: [Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME]
 categorie: concept/ml

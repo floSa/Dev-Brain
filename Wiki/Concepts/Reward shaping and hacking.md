@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reward shaping and hacking
 alias: [reward shaping, reward hacking, façonnage de récompense, détournement de récompense, specification gaming, reward design, potential-based shaping]
 categorie: concept/rl

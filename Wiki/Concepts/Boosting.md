@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Boosting
 alias: [Boostage]
 categorie: concept/ml

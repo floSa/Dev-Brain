@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Gradient Boosting (GBDT)
 alias: [GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM]
 categorie: concept/ml

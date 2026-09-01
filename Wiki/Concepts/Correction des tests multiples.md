@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Correction des tests multiples
 alias: [multiple testing, multiple comparisons, Bonferroni, FDR]
 categorie: concept/stats

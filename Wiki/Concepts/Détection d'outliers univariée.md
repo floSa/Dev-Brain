@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Détection d'outliers univariée
 alias: [outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score]
 categorie: concept/ml

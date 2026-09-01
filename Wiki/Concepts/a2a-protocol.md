@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: a2a-protocol
 alias: [A2A, Agent2Agent, Agent-to-Agent, protocole A2A, agent card]
 categorie: concept/llm

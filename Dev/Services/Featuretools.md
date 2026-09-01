@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Featuretools
 alias: [featuretools, Deep Feature Synthesis, DFS]
 pitch: "Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables."
 categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [feature-engineering]
 url_docs: https://featuretools.alteryx.com/
 url_repo: https://github.com/alteryx/featuretools

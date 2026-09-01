@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: mcpjam
 alias: [MCPJam, MCPJam Inspector, mcpjam inspector]
 pitch: "« Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM."
 categorie: llm/mcp
 famille: application
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: beta
 langage: TypeScript
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [mcp, testing, tool-use]
 url_docs: https://www.mcpjam.com
 url_repo: https://github.com/MCPJam/inspector

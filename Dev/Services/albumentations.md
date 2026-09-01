@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: albumentations
 alias: [albu, albumentations-team]
 pitch: "Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/torchvision|torchvision]]", "[[Dev/Services/Kornia|Kornia]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [computer-vision, data-augmentation, object-detection, segmentation, deep-learning]
 url_docs: https://albumentations.ai/docs/
 url_repo: https://github.com/albumentations-team/albumentations

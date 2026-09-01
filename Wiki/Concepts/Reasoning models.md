@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Reasoning models
 alias: [modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models]
 categorie: concept/llm

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Isolation Forest
 alias: [iForest, Forêt d'isolement, IsolationForest]
 categorie: concept/ml

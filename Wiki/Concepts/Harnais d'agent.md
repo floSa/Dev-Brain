@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Harnais d'agent
 alias: [harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold]
 categorie: concept/llm

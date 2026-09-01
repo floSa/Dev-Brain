@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: RAG
 alias: [Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation]
 categorie: concept/llm

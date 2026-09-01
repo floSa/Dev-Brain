@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Inégalités de concentration
 alias: [Concentration inequalities, Hoeffding, Chebyshev, inégalité de Markov]
 categorie: concept/stats

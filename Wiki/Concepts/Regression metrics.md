@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Regression metrics
 alias: [Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile]
 categorie: concept/ml

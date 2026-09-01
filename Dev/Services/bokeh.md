@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: bokeh
 alias: []
 pitch: "Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes."
 categorie: data/viz
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python / TypeScript
-scaling: single-node
 alternatives: ["[[Dev/Services/plotly|plotly]]", "[[Dev/Services/altair|altair]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataviz, interactive-viz]
 url_docs: https://docs.bokeh.org/
 url_repo: https://github.com/bokeh/bokeh

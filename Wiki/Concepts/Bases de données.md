@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Bases de données
 alias: [base de données, bdd, database, sgbd, dbms]
 categorie: concept/data

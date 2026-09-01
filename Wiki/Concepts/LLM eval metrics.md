@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LLM eval metrics
 alias: [métriques d'évaluation LLM, évaluation LLM, LLM evaluation, exact match, BLEU, ROUGE, BERTScore, pass@k, G-Eval, offline eval]
 categorie: concept/llm

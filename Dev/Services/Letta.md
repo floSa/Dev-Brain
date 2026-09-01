@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Letta
 alias: [letta, memgpt, mem-gpt]
 pitch: "Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud."
 categorie: llm/memoire
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Agno|Agno]]", "[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/OpenViking|OpenViking]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use]
 url_docs: https://docs.letta.com/
 url_repo: https://github.com/letta-ai/letta

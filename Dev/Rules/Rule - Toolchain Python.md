@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: rule
+role: rule
 domaine: dependencies
 applicable: global
 strictness: must

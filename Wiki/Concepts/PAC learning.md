@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: PAC learning
 alias: [Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC]
 categorie: concept/math

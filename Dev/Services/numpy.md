@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: numpy
 alias: [np, NumPy]
 pitch: "Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique."
 categorie: data/tableau
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C / Python
-scaling: single-node
 alternatives: ["[[Dev/Services/xarray|xarray]]", "[[Dev/Services/Dask|Dask]]", "[[Dev/Services/CuPy|CuPy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [array, in-memory]
 url_docs: https://numpy.org/doc/stable/
 url_repo: https://github.com/numpy/numpy

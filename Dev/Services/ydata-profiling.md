@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ydata-profiling
 alias: [pandas-profiling, ydata profiling]
 pitch: "Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark."
 categorie: data/eda
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/sweetviz|sweetviz]]", "[[Dev/Services/missingno|missingno]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [eda, data-quality, dataframe]
 url_docs: https://docs.profiling.ydata.ai/
 url_repo: https://github.com/ydataai/ydata-profiling

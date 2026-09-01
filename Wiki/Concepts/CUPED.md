@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: CUPED
 alias: [Controlled-experiment Using Pre-Experiment Data, variance reduction, regression adjustment]
 categorie: concept/stats

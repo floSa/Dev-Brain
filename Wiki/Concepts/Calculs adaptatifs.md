@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Calculs adaptatifs
 alias: [adaptive computation, calcul adaptatif, early exit, sortie anticipée, Mixture of Depths, MoD, looped transformers, Mixture of Recursions, MoR, adaptive depth, ponder]
 categorie: concept/dl

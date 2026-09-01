@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: pgAdmin
 alias: [pgadmin, pgadmin4]
 pitch: "Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, web (Docker)"
 langage: Python
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+complements: []
 tags: [db-client, postgres, relational]
 url_docs: https://www.pgadmin.org/docs/
 url_repo: https://github.com/pgadmin-org/pgadmin4

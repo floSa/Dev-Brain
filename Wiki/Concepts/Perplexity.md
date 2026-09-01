@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Perplexity
 alias: [perplexité, PPL]
 categorie: concept/llm

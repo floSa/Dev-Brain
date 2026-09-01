@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: RAG benchmarks
 alias: [benchmarks RAG, bancs d'essai RAG, RGB, CRAG, RAGBench, TRACe, RAGTruth, FRAMES, TREC RAG, robustesse RAG, noise robustness, negative rejection]
 categorie: concept/llm

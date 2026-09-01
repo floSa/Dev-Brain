@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Bases de données vectorielles
 alias: [vector db, vector store, base vectorielle]
 categorie: concept/data

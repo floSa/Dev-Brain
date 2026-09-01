@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Code and math benchmarks
 alias: [benchmarks code, benchmarks maths, HumanEval, MBPP, SWE-bench, GSM8K, MATH, AIME, pass@k, éval par exécution]
 categorie: concept/llm

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Stirling PDF
 alias: [stirling-pdf, stirling, s-pdf]
 pitch: "Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires."
 categorie: docs/pdf
 famille: plateforme
 licence_type: open-core
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [pdf, ocr, self-hosted]
 url_docs: https://docs.stirlingpdf.com/
 url_repo: https://github.com/Stirling-Tools/Stirling-PDF

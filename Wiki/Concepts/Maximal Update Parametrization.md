@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Maximal Update Parametrization
 alias: [µP, muP, mu-P, µTransfer, muTransfer, transfert d'hyperparamètres, hyperparameter transfer, Tensor Programs, u-µP]
 categorie: concept/dl

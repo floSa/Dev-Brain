@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Agent memory
 alias: [mémoire d'agent, agent memory, mémoire LLM]
 categorie: concept/llm

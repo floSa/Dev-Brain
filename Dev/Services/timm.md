@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: timm
 alias: [pytorch-image-models, PyTorch Image Models, torch image models]
 pitch: "La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/torchvision|torchvision]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [computer-vision, cnn, vit, transfer-learning, fine-tuning, deep-learning, model-hub]
 url_docs: https://huggingface.co/docs/timm/
 url_repo: https://github.com/huggingface/pytorch-image-models

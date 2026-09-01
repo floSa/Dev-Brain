@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: llmfit
 alias: [llm-fit, alexsjones/llmfit]
 pitch: "CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Rust
-status: actif
 alternatives: []
+complements: []
 tags: [local-llm, hardware-sizing, quantization, benchmark, terminal-ui]
 url_docs: https://github.com/AlexsJones/llmfit
 url_repo: https://github.com/AlexsJones/llmfit

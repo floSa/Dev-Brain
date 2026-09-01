@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: scipy.signal
 alias: [scipy, scipy signal, scipy.fft]
 pitch: "Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy."
 categorie: signal/traitement
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C / Fortran / Python
-scaling: single-node
 alternatives: ["[[Dev/Services/PyWavelets|PyWavelets]]", "[[Dev/Services/librosa|librosa]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [signal-processing, digital-filter, fourier, spectrogram]
 url_docs: https://docs.scipy.org/doc/scipy/reference/signal.html
 url_repo: https://github.com/scipy/scipy

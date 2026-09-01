@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: DeepEval
 alias: [deepeval, confident-ai-deepeval]
 pitch: "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option."
 categorie: llm/eval
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Ragas|Ragas]]", "[[Dev/Services/TruLens|TruLens]]", "[[Dev/Services/promptfoo|promptfoo]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-eval, llm-as-judge, testing]
 url_docs: https://deepeval.com/
 url_repo: https://github.com/confident-ai/deepeval

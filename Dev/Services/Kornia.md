@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Kornia
 alias: [kornia, kornia.augmentation]
 pitch: "Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/albumentations|albumentations]]", "[[Dev/Services/torchvision|torchvision]]", "[[Dev/Services/OpenCV|OpenCV]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [computer-vision, data-augmentation, deep-learning, gpu, autograd]
 url_docs: https://kornia.readthedocs.io/
 url_repo: https://github.com/kornia/kornia

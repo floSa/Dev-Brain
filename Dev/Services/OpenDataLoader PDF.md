@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenDataLoader PDF
 alias: [opendataloader, opendataloader-pdf, open data loader pdf]
 pitch: "Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA."
 categorie: data/parsing
 famille: paquet
 licence_type: open-core
-hosted: self
 maturite: production
 langage: Java
-scaling: single-node
 alternatives: ["[[Dev/Services/Docling|Docling]]", "[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [pdf, document-parsing, layout-analysis, table-extraction, markdown-conversion, rag, accessibility]
 url_docs: https://opendataloader.org/docs
 url_repo: https://github.com/opendataloader-project/opendataloader-pdf

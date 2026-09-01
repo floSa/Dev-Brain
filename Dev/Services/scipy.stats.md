@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: scipy.stats
 alias: [SciPy stats]
 pitch: "Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy."
 categorie: stats/inference
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/statsmodels|statsmodels]]", "[[Dev/Services/pingouin|pingouin]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [hypothesis-testing, p-value, confidence-interval, parametric-test, non-parametric]
 url_docs: https://docs.scipy.org/doc/scipy/reference/stats.html
 url_repo: https://github.com/scipy/scipy

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Constrained decoding
 alias: [génération contrainte, décodage contraint, structured generation, grammar-constrained decoding]
 categorie: concept/llm

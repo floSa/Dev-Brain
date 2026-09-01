@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Cross-entropy
 alias: [Entropie croisée, cross entropy, log-loss, log loss, perte d'entropie croisée, negative log-likelihood, NLL]
 categorie: concept/math

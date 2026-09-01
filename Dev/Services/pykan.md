@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pykan
 alias: [KAN python, kindxiaoming pykan]
 pitch: "Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: experimental
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: en-eval
+complements: []
 tags: [deep-learning]
 url_docs: https://kindxiaoming.github.io/pykan/
 url_repo: https://github.com/KindXiaoming/pykan

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Feast
 alias: [feast]
 pitch: "Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…)."
 categorie: ml/feature-store
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [feature-store]
 url_docs: https://docs.feast.dev/
 url_repo: https://github.com/feast-dev/feast

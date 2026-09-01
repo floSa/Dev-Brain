@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Context engineering
 alias: [ingénierie de contexte, gestion du contexte, context window management]
 categorie: concept/llm

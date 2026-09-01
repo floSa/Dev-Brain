@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Sélection de variables
 alias: [Feature selection, Sélection de caractéristiques, Sélection d'attributs, RFE, SelectKBest]
 categorie: concept/ml

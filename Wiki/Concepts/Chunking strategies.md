@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Chunking strategies
 alias: [chunking, découpage de documents, stratégies de découpage, text splitting]
 categorie: concept/llm

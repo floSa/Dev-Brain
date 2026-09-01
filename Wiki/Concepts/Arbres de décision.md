@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Arbres de décision
 alias: [Decision tree, Arbre de décision, CART]
 categorie: concept/ml

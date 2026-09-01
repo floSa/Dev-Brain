@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Stationarity
 alias: [Stationnarité, Série stationnaire, Stationnaire, Racine unitaire]
 categorie: concept/ts

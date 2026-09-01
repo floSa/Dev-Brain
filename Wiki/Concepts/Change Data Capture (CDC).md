@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Change Data Capture (CDC)
 alias: [CDC, change data capture, capture de changements, log-based replication]
 categorie: concept/data

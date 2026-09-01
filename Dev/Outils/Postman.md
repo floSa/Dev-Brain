@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Postman
 alias: [postman]
 pitch: "Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative."
@@ -10,8 +9,8 @@ domaines: [data-eng, ai-eng]
 licence_type: proprietary
 os: "Windows, macOS, Linux, Web"
 langage: JavaScript (Electron)
-status: actif
 alternatives: ["[[Dev/Outils/Bruno|Bruno]]"]
+complements: []
 tags: [api-client]
 url_docs: https://learning.postman.com/docs/
 url_repo: 

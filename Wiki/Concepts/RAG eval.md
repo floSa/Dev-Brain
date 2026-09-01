@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: RAG eval
 alias: [RAG evaluation, évaluation RAG, évaluation des pipelines RAG, faithfulness, groundedness, context precision, context recall, answer relevancy]
 categorie: concept/llm

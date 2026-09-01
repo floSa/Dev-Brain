@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: MySQL Workbench
 alias: [mysql workbench, workbench]
 pitch: "Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur."
@@ -10,8 +9,8 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: C++
-status: actif
 alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]"]
+complements: []
 tags: [db-client, relational]
 url_docs: https://dev.mysql.com/doc/workbench/en/
 url_repo: https://github.com/mysql/mysql-workbench

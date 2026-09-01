@@ -20,11 +20,13 @@ Contrat de conception (AI/audit/rapports/axe-2-integrite.md, annexe B) :
 
 Règles DURES (bloquent) :
   - frontmatter conforme au gabarit (champs requis présents, champs hors gabarit absents)
-    pour les 5 types du vault : service, concept, outil, pattern, rule ; un
-    `type:` inconnu ou absent est refusé, plus de page sans gabarit            [R3]
-  - valeurs d'enum fermées (hosted, scaling, licence_type, maturite, status)
+    pour les 4 rôles peuplés du vault : brique, notion, pattern, rule ; un
+    `role:` inconnu ou absent est refusé, plus de page sans gabarit            [R3]
+  - valeurs d'enum fermées (hosted, scaling, licence_type, maturite)
+  - `hosted:` et `scaling:` n'existent QUE si `famille:` ∈ {plateforme, saas,
+    application} — une bibliothèque ne s'héberge pas et ne « scale » pas      [R16]
   - famille ∈ énumération fermée de Documentation/general/taxonomie.md (bloc
-    ```famille) sur les gabarits service et outil                             [R14]
+    ```famille) sur le gabarit brique                                         [R14]
   - tags ⊆ vocabulaire contrôlé (Documentation/general/tags.md)
   - categorie ∈ taxonomie : bloc ```domaine (94 domaines Dev) + fences nus
     (`concept/*` et `skill/*`, côté Wiki)
@@ -35,13 +37,12 @@ Règles DURES (bloquent) :
   - pitch réinjecté : la puce d'une cible listée en `alternatives:` commence par
     le `pitch:` courant de cette cible (normalisation `**` + espaces)          [R1]
   - aucun lien [[...]] mort, dans le corps ET dans le frontmatter              [R2]
-  - `maturite: deprecated` ⇒ `status != actif`                                 [R6]
   - `nom:` identique au nom du fichier, sauf caractère illégal en nom de fichier [R9]
   - toute page atteignable depuis un MOC                                       [R7]
 Règles SOUPLES (avertissent) :
   - page trop longue → suggérer une sous-note
   - collisions d'alias : doublon interne, ou alias qui est le `nom:` d'une autre
-    page de la même galaxie — souple, l'unicité globale détruirait des usages
+    page du même rôle — souple, l'unicité globale détruirait des usages
     sémantiques légitimes (`shap`, `yolo`, `map`)                              [R5]
   - couverture des comparatifs `.base` — souple, créer un comparatif est une
     décision éditoriale, pas technique                                         [R8]
@@ -73,38 +74,45 @@ V1_MARKERS = {"maturite", "lecture_min", "auteurs_cles",
 # entrent — sinon la règle naîtrait déjà en faute (ex. `remplace_par:`, vide sur
 # 293 des 297 services).
 REQUIRED = {
-    "service": ["nom", "pitch", "categorie", "galaxie", "status"],
-    "concept": ["nom", "categorie", "galaxie", "domaines"],
-    "outil": ["nom", "pitch", "categorie", "galaxie", "status"],
-    "pattern": ["galaxie", "contexte", "services_cles"],
-    "rule": ["galaxie", "domaine", "applicable", "strictness"],
+    "brique": ["role", "nom", "pitch", "categorie"],
+    "notion": ["role", "nom", "categorie", "domaines"],
+    "pattern": ["role", "contexte", "services_cles"],
+    "rule": ["role", "domaine", "applicable", "strictness"],
 }
-# Champs EXACTS autorisés par gabarit (§5) — tout champ hors liste = non conforme.
-SERVICE_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "famille",
-                   "licence_type", "hosted", "maturite", "langage", "scaling",
-                   "alternatives", "remplace_par", "status", "tags",
-                   "url_docs", "url_repo"}
-CONCEPT_ALLOWED = {"galaxie", "type", "nom", "alias", "categorie", "domaines", "tags"}
-# `type: outil` — même socle que service, moins les champs de déploiement
-# (hosted, scaling, maturite, remplace_par), plus `os` et `domaines`.
-OUTIL_ALLOWED = {"galaxie", "type", "nom", "alias", "pitch", "categorie", "famille",
-                 "domaines", "licence_type", "langage", "os", "alternatives", "status",
-                 "tags", "url_docs", "url_repo"}
-# `type: pattern` / `type: rule` — gabarits sans `nom:` ni `categorie:` (la
+# Champs EXACTS autorisés par gabarit (spec v3 §5) — tout champ hors liste = non conforme.
+# `role: brique` fusionne les anciens gabarits `service` et `outil` : l'audit v2 avait
+# démontré qu'ils ne se distinguaient par rien (57 fiches de nature identique réparties
+# 34/23 sans discriminant). L'union de leurs champs est donc la liste de la brique —
+# `os` et `domaines` viennent d'`outil`, `hosted`, `scaling` et `maturite` de `service`.
+BRIQUE_ALLOWED = {"role", "nom", "alias", "pitch", "categorie", "famille", "domaines",
+                  "licence_type", "langage", "os", "hosted", "scaling", "maturite",
+                  "alternatives", "complements", "tags", "url_docs", "url_repo"}
+NOTION_ALLOWED = {"role", "nom", "alias", "categorie", "domaines", "tags"}
+# `role: pattern` / `role: rule` — gabarits sans `nom:` ni `categorie:` (la
 # taxonomie ne les couvre pas ; leur porte d'entrée est MOC/Types/, cf. build_mocs).
-PATTERN_ALLOWED = {"galaxie", "type", "tags", "contexte", "services_cles", "projets_appliques"}
-RULE_ALLOWED = {"galaxie", "type", "tags", "domaine", "applicable", "strictness"}
-ALLOWED = {"service": SERVICE_ALLOWED, "concept": CONCEPT_ALLOWED,
-           "outil": OUTIL_ALLOWED, "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED}
-# Valeurs autorisées (listes fermées) pour les champs Service à enum.
+PATTERN_ALLOWED = {"role", "tags", "contexte", "services_cles", "projets_appliques"}
+RULE_ALLOWED = {"role", "tags", "domaine", "applicable", "strictness"}
+# Les rôles `hub` et `comparatif` de la spec v3 §3 n'ont pas encore de page : le hub
+# naît au lot 3 (avec l'arborescence), le comparatif au lot 5 (quand les `.base`
+# deviennent des pages). Les déclarer ici avant qu'ils existent inventerait un gabarit.
+ALLOWED = {"brique": BRIQUE_ALLOWED, "notion": NOTION_ALLOWED,
+           "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED}
+# Valeurs autorisées (listes fermées) pour les champs de brique à enum.
+# `hosted` est une LISTE depuis la v3 : `both` ne disait rien qu'une énumération ne
+# dise mieux, et une brique peut être self-hébergeable ET managée sans que ce soit
+# une troisième valeur à part.
 VALUE_ENUMS = {
-    "hosted": {"self", "managed", "both"},
     "scaling": {"single-node", "distributed", "serverless"},
     "licence_type": {"open-source", "source-available", "proprietary", "open-core"},
     "maturite": {"production", "beta", "experimental", "deprecated"},
-    "status": {"actif", "en-eval", "abandonne"},
 }
-SIZE_WARN = {"service": 90, "concept": 200}
+LIST_ENUMS = {"hosted": {"self", "managed"}}
+# R16 — les seules familles pour lesquelles l'hébergement et le scaling ont un sens.
+# Mesure v2 : 177 fiches `famille: paquet` portaient une valeur d'hébergement, et
+# `scaling: single-node` sur 212 fiches n'était que la valeur par défaut de tout ce
+# qui n'est pas distribué. Deux champs qui décrivent 100 % des fiches ne discriminent rien.
+FAMILLES_HEBERGEES = {"plateforme", "saas", "application"}
+SIZE_WARN = {"brique": 90, "notion": 200}
 LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
 ALT_SECTION_RE = re.compile(r"\n## Alternatives\n(.*?)(?=\n## |\Z)", re.S)
 ALT_BULLET_RE = re.compile(r"\s*-\s*\[\[([^\]|]+)(?:\|([^\]]+))?\]\]\s*[—-]\s*(.+)")
@@ -189,10 +197,10 @@ def load_familles() -> set[str]:
 def load_categories() -> set[str]:
     """Vocabulaire fermé de `categorie:` — le DOMAINE.
 
-    Deux sources, une par galaxie :
-      - bloc ```domaine — les 94 domaines Dev (Documentation/general/taxonomie.md) ;
-      - fences nus — les vocabulaires Wiki `concept/*` et `skill/*`.
-    L'ancien vocabulaire Dev à 74 valeurs (`ml/framework`, `tooling/*`, `auth`…) a
+    Deux sources, une par rôle :
+      - bloc ```domaine — les 94 domaines des briques (Documentation/general/taxonomie.md) ;
+      - fences nus — les vocabulaires des notions, `concept/*` et `skill/*`.
+    L'ancien vocabulaire à 74 valeurs (`ml/framework`, `tooling/*`, `auth`…) a
     été retiré de taxonomie.md : il échoue désormais en dur. Aucune valeur legacy
     n'est codée ici — le vocabulaire vit dans le document de gouvernance, pas dans
     le script, et se ferme en retirant un bloc de code.
@@ -368,7 +376,7 @@ def check_bases(active: list[tuple[str, dict, str]], cited: set[str]) -> list[st
     fm_par_path = {path: fm for path, fm, _ in active}
     compte = collections.Counter(
         fm.get("categorie") for _, fm, _ in active
-        if fm.get("galaxie") == "dev" and fm.get("categorie"))
+        if fm.get("role") == "brique" and fm.get("categorie"))
     for cat, n in sorted(compte.items()):
         if n < BASE_MIN_CAT:
             continue
@@ -377,7 +385,7 @@ def check_bases(active: list[tuple[str, dict, str]], cited: set[str]) -> list[st
             and sum(1 for p in sel if fm_par_path[p].get("categorie") == cat) >= BASE_MIN_MEMBRES
             for sel in membres.values())
         if not couverte:
-            warn.append(f"R8a — categorie `{cat}` : {n} pages Dev, aucun comparatif `.base` "
+            warn.append(f"R8a — categorie `{cat}` : {n} briques, aucun comparatif `.base` "
                         "ne les réunit")
     return warn
 
@@ -389,26 +397,28 @@ def check_alias(active: list[tuple[str, dict, str]]) -> list[str]:
     noms: dict[tuple, str] = {}
     for path, fm, _ in active:
         if fm.get("nom"):
-            noms[(fm.get("galaxie"), str(fm["nom"]).lower())] = path
+            noms[(fm.get("role"), str(fm["nom"]).lower())] = path
     for path, fm, _ in active:
         bas = [str(a).lower() for a in (fm.get("alias") or [])]
         dup = sorted({a for a in bas if bas.count(a) > 1})
         if dup:
             warn.append(f"R5 — {path} : alias en doublon interne {dup}")
         for a in sorted(set(bas)):
-            proprio = noms.get((fm.get("galaxie"), a))
+            proprio = noms.get((fm.get("role"), a))
             if proprio and proprio != path:
                 warn.append(f"R5 — {path} : alias `{a}` est le `nom:` de `{proprio}` "
-                            "(même galaxie)")
+                            "(même rôle)")
 
-    # R15 — une fiche `type: service` doit porter au moins un lien vers Wiki/Concepts.
+    # R15 — une `role: brique` doit porter au moins un lien vers une notion (Wiki/Concepts).
     # Le couple Dev<->Wiki est imposé par le skill enrichir-brain (étape 6) mais rien ne
     # le vérifiait : `check_brain` contrôle qu'un lien n'est pas mort, jamais qu'il existe.
     # SOUPLE, et elle doit le rester tant que le passif n'est pas résorbé : 102 fiches
-    # service sur 297 ne portent aucun lien vers un concept (cf. axe 3, constat C2).
+    # service sur 297 ne portaient aucun lien vers un concept (cf. axe 3, constat C2), et
+    # le lot 2 étend la règle aux 39 ex-`outil` devenus briques — le passif grossit avant
+    # de se résorber, c'est le prix de la fusion des deux gabarits.
     concepts = {p.stem.lower() for p in (VAULT / "Wiki" / "Concepts").glob("*.md")}
     for path, fm, body in active:
-        if fm.get("type") != "service":
+        if fm.get("role") != "brique":
             continue
         cibles = {t.split("|")[0].split("/")[-1].strip().lower()
                   for t in LINK_RE.findall(body)}
@@ -447,7 +457,7 @@ def main() -> int:
     warn: list[str] = []
 
     for path, fm, body in active:
-        typ = fm.get("type")
+        typ = fm.get("role")
         nom = fm.get("nom") or path
         stem = Path(path).stem
 
@@ -460,14 +470,33 @@ def main() -> int:
             if extra:
                 hard.append(f"{path}: champ(s) hors gabarit §5 {sorted(extra)}")
         else:
-            hard.append(f"R3 — {path}: `type: {typ or '(absent)'}` sans gabarit déclaré "
+            hard.append(f"R3 — {path}: `role: {typ or '(absent)'}` sans gabarit déclaré "
                         f"(connus : {sorted(ALLOWED)})")
 
-        # 1b. valeurs d'enum : champs à liste fermée (hosted, scaling, licence_type, maturite, status)
+        # 1b. valeurs d'enum : champs à liste fermée (scaling, licence_type, maturite)
         for field, vals in VALUE_ENUMS.items():
             v = fm.get(field)
             if v is not None and v not in vals:
                 hard.append(f"{path}: `{field}: {v}` hors valeurs autorisées {sorted(vals)}")
+        # 1b bis. enums portées par une LISTE (hosted) — chaque élément est contrôlé,
+        # et une valeur scalaire est refusée : le champ a changé de forme en v3.
+        for field, vals in LIST_ENUMS.items():
+            v = fm.get(field)
+            if v is None:
+                continue
+            if not isinstance(v, list):
+                hard.append(f"{path}: `{field}: {v}` doit être une liste (v3), pas un scalaire")
+                continue
+            for item in v:
+                if item not in vals:
+                    hard.append(f"{path}: `{field}` contient `{item}`, hors valeurs "
+                                f"autorisées {sorted(vals)}")
+
+        # 1b ter. R16 — `hosted:` et `scaling:` sont conditionnels à `famille:`.
+        for field in ("hosted", "scaling"):
+            if field in fm and fm.get("famille") not in FAMILLES_HEBERGEES:
+                hard.append(f"R16 — {path}: `{field}:` sur `famille: {fm.get('famille')}` "
+                            f"— le champ n'existe que pour {sorted(FAMILLES_HEBERGEES)}")
 
         # 1c. R9 — `nom:` identique au nom du fichier. Exemption : un `nom:` portant
         # un caractère illégal en nom de fichier NE PEUT PAS l'être (« A/B testing »).
@@ -540,10 +569,9 @@ def main() -> int:
             if not link_target_ok(tgt, names):
                 hard.append(f"R2 — {path}: `{key}:` lien mort [[{tgt}]]")
 
-        # 5b. R6 — `maturite: deprecated` ⇒ `status != actif`
-        if fm.get("maturite") == "deprecated" and fm.get("status") == "actif":
-            hard.append(f"R6 — {path}: `maturite: deprecated` avec `status: actif` "
-                        "(une brique dépréciée n'est pas un choix actif)")
+        # 5b. R6 retirée avec `status:` (lot 2) : elle croisait deux champs dont l'un
+        #     n'existe plus. `maturite: deprecated` se suffit — c'est le seul champ qui
+        #     dit encore qu'une brique est morte.
 
         # 5c. R7 — la page doit être atteignable depuis un MOC
         if path[:-3].lower() not in moc_q and stem.lower() not in moc_n:

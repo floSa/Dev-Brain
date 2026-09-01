@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Interprétabilité mécaniste
 alias: [Mechanistic interpretability, Mech interp, Interpretabilite mecaniste, Circuits, Transformer circuits, Activation patching, Causal tracing]
 categorie: concept/dl

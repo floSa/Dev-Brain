@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Mermaid
 alias: [mermaid, mermaid.js, mermaidjs]
 pitch: "Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Web, CLI"
 langage: JavaScript
-status: actif
 alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
+complements: []
 tags: [diagram, diagram-as-code]
 url_docs: https://mermaid.js.org/
 url_repo: https://github.com/mermaid-js/mermaid

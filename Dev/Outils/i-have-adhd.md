@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: i-have-adhd
 alias: [ayghri/i-have-adhd, adhd-mode]
 pitch: "Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Markdown
-status: actif
 alternatives: []
+complements: []
 tags: [agent-skill, prompting, code-assistant, agents]
 url_docs: https://github.com/ayghri/i-have-adhd
 url_repo: https://github.com/ayghri/i-have-adhd

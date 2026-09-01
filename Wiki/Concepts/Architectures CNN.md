@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Architectures CNN
 alias: [ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures]
 categorie: concept/dl

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LIME
 alias: [lime, Local Interpretable Model-agnostic Explanations]
 pitch: "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: deprecated
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/interpreto|interpreto]]"]
-remplace_par: []
-status: abandonne
+complements: []
 tags: [explainability, supervised]
 url_docs: https://github.com/marcotcr/lime
 url_repo: https://github.com/marcotcr/lime

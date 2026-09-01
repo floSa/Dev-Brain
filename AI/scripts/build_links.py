@@ -2,7 +2,7 @@
 # requires-python = ">=3.10"
 # dependencies = ["pyyaml>=6"]
 # ///
-"""build_links.py — carte des liens & tags du DevBrain v2 + sujets à créer.
+"""build_links.py — carte des liens & tags du DevBrain + sujets à créer.
 
 Génère AI/index/liens.md (humain, régénéré à chaque build) :
   - Par page : tags · liens sortants · liens entrants (backlinks)
@@ -83,7 +83,7 @@ def main() -> int:
                 continue
             pages.append({
                 "nom": fm.get("nom") or md.stem, "stem": md.stem,
-                "gal": fm.get("galaxie"), "type": fm.get("type"),
+                "role": fm.get("role"),
                 "tags": fm.get("tags") or [], "alias": fm.get("alias") or [],
                 "outs": [t.strip().split("/")[-1] for t in LINK.findall(body)],
             })
@@ -123,16 +123,16 @@ def main() -> int:
 
     covered = set()
     for p in pages:
-        if p["type"] == "concept":
+        if p["role"] == "notion":
             covered.add(slug(p["nom"]))
             for a in p["alias"]:
                 covered.add(slug(a))
 
-    L = ["# Carte des liens — DevBrain v2", "",
+    L = ["# Carte des liens — DevBrain", "",
          "> Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.",
          f"> {len(pages)} pages actives.", "", "## Par page", ""]
-    for p in sorted(pages, key=lambda e: (e["gal"] or "", e["nom"].lower())):
-        L.append(f"### {p['nom']}  ·  {p['gal']}/{p['type']}")
+    for p in sorted(pages, key=lambda e: (e["role"] or "", e["nom"].lower())):
+        L.append(f"### {p['nom']}  ·  {p['role']}")
         L.append(f"- tags : {', '.join('`' + t + '`' for t in p['tags']) or '—'}")
         L.append(f"- liens sortants : {', '.join('[[' + x + ']]' for x in p['res']) or '—'}")
         bl = sorted(backlinks[p["nom"]])

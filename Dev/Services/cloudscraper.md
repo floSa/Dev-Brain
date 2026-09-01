@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: cloudscraper
 alias: [cloudscraper]
 pitch: "Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/curl_cffi|curl_cffi]]", "[[Dev/Services/Playwright|Playwright]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: https://github.com/VeNoMouS/cloudscraper
 url_repo: https://github.com/VeNoMouS/cloudscraper

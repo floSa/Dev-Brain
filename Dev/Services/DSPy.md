@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: DSPy
 alias: [dspy, stanfordnlp-dspy, Demonstrate-Search-Predict]
 pitch: "Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques."
 categorie: llm/socle
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/LlamaIndex|LlamaIndex]]", "[[Dev/Services/Haystack|Haystack]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, prompt-optimization, nlp]
 url_docs: https://dspy.ai/
 url_repo: https://github.com/stanfordnlp/dspy

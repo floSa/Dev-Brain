@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Small Language Models
 alias: [SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM]
 categorie: concept/llm

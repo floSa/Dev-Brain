@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Réduction de dimension
 alias: [dimensionality reduction, réduction de dimensionnalité]
 categorie: concept/stats

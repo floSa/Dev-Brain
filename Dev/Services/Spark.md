@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Spark
 alias: [Apache Spark, spark, PySpark, pyspark]
 pitch: "Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark."
 categorie: compute/distribue
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Scala / JVM
 scaling: distributed
 alternatives: ["[[Dev/Services/Dask|Dask]]", "[[Dev/Services/Ray|Ray]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
 url_repo: https://github.com/apache/spark

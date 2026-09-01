@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Pinecone
 alias: [pinecone]
 pitch: "Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire."
 categorie: database/vecteur
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: Rust
 scaling: serverless
 alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, semantic-search, rag]
 url_docs: https://docs.pinecone.io
 url_repo: 

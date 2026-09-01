@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Docker
 alias: [docker]
 pitch: "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre."
 categorie: devops/conteneur
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [container]
 url_docs: https://docs.docker.com/
 url_repo: https://github.com/moby/moby

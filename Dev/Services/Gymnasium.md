@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Gymnasium
 alias: [gymnasium, gym, openai gym, farama gymnasium]
 pitch: "Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/OpenSpiel|OpenSpiel]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning]
 url_docs: https://gymnasium.farama.org/
 url_repo: https://github.com/Farama-Foundation/Gymnasium

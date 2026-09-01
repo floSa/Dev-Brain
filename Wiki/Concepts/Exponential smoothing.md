@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Exponential smoothing
 alias: [Lissage exponentiel, ETS, Holt-Winters, SES, Holt, AutoETS]
 categorie: concept/ts

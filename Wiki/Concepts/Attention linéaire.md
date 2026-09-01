@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Attention linéaire
 alias: [linear attention, attention sans softmax, DeltaNet, Gated DeltaNet, GDN, KDA, règle delta, delta rule, mémoire associative, RWKV, Transformers are RNNs]
 categorie: concept/dl

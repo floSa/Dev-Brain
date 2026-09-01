@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Apprentissage auto-supervisé en vision
 alias: [self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif]
 categorie: concept/dl

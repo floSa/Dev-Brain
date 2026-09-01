@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: plotly
 alias: [plotly.py, px, plotly-express]
 pitch: "Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash."
 categorie: data/viz
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python / JavaScript
-scaling: single-node
 alternatives: ["[[Dev/Services/bokeh|bokeh]]", "[[Dev/Services/altair|altair]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataviz, interactive-viz]
 url_docs: https://plotly.com/python/
 url_repo: https://github.com/plotly/plotly.py

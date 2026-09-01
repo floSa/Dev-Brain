@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Jinja2
 alias: [jinja, jinja2]
 pitch: "Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask."
 categorie: web/frontend
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [templating]
 url_docs: https://jinja.palletsprojects.com/
 url_repo: https://github.com/pallets/jinja

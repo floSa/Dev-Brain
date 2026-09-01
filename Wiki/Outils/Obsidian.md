@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: outil
+role: brique
 nom: Obsidian
 alias: [obsidian, obsidian.md]
 pitch: "Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain."
@@ -9,8 +8,8 @@ domaines: []
 licence_type: proprietary
 os: "Windows, macOS, Linux, iOS, Android"
 langage: 
-status: actif
 alternatives: []
+complements: []
 tags: [note-taking, knowledge-graph]
 url_docs: https://help.obsidian.md/
 url_repo: 

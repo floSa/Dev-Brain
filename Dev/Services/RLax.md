@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: RLax
 alias: [rlax, rl-ax, deepmind rlax]
 pitch: "Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]", "[[Dev/Services/Acme|Acme]]", "[[Dev/Services/TF-Agents|TF-Agents]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning]
 url_docs: https://rlax.readthedocs.io/
 url_repo: https://github.com/google-deepmind/rlax

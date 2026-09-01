@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: hnswlib
 alias: [hnsw, nmslib-hnswlib]
 pitch: "Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/ScaNN|ScaNN]]", "[[Dev/Services/Chroma|Chroma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://pypi.org/project/hnswlib/
 url_repo: https://github.com/nmslib/hnswlib

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Crawlee
 alias: [crawlee, crawlee-python]
 pitch: "Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: TypeScript
-scaling: single-node
 alternatives: ["[[Dev/Services/Scrapy|Scrapy]]", "[[Dev/Services/Scrapling|Scrapling]]", "[[Dev/Services/Playwright|Playwright]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: https://crawlee.dev/
 url_repo: https://github.com/apify/crawlee

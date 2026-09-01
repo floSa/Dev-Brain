@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LangChain
 alias: [langchain, langchain-ai]
 pitch: "Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith."
 categorie: llm/socle
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LlamaIndex|LlamaIndex]]", "[[Dev/Services/Haystack|Haystack]]", "[[Dev/Services/DSPy|DSPy]]", "[[Dev/Services/Semantic Kernel|Semantic Kernel]]", "[[Dev/Services/PydanticAI|PydanticAI]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, rag, agents, tool-use]
 url_docs: https://docs.langchain.com/
 url_repo: https://github.com/langchain-ai/langchain

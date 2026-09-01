@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Apache Iceberg
 alias: [Iceberg, iceberg]
 pitch: "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB)."
 categorie: data/format
 famille: specification
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Java
-scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [lakehouse, olap, schema-evolution]
 url_docs: https://iceberg.apache.org/docs/latest/
 url_repo: https://github.com/apache/iceberg

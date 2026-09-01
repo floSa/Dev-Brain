@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Marimo
 alias: [marimo]
 pitch: "Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script."
 categorie: devtools/notebook
 famille: application
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: [jupytext]
-remplace_par: []
-status: actif
+complements: []
 tags: [notebook, reproducibility, data-app]
 url_docs: https://docs.marimo.io/
 url_repo: https://github.com/marimo-team/marimo

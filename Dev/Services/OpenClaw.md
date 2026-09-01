@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenClaw
 alias: [openclaw, clawdbot, moltbot, warelay]
 pitch: "Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur."
 categorie: llm/assistant
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: "TypeScript, Swift"
 scaling: single-node
 alternatives: ["[[Dev/Services/Hermes Agent|Hermes Agent]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, mcp]
 url_docs: https://docs.openclaw.ai/
 url_repo: https://github.com/openclaw/openclaw

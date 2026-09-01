@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: jupysql
 alias: [JupySQL, jupysql]
 pitch: "SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats."
 categorie: devtools/notebook
 famille: extension
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [notebook, dataframe]
 url_docs: https://jupysql.readthedocs.io/
 url_repo: https://github.com/ploomber/jupysql

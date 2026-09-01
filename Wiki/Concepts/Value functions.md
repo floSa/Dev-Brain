@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Value functions
 alias: [fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action]
 categorie: concept/rl

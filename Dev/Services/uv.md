@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: uv
 alias: []
 pitch: "Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine."
 categorie: devtools/paquet
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/pip|pip]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [package-manager]
 url_docs: https://docs.astral.sh/uv/
 url_repo: https://github.com/astral-sh/uv

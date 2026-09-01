@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: DBSCAN
 alias: [Density-Based Spatial Clustering, Density-Based Spatial Clustering of Applications with Noise]
 categorie: concept/ml

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: A priori conjugués
 alias: [conjugate priors, conjugate prior, lois a priori conjuguées, prior conjugué, conjugaison]
 categorie: concept/stats

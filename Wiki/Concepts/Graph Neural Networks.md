@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Graph Neural Networks
 alias: [GNN, graph neural network, réseaux de neurones sur graphes, GCN, GAT, GraphSAGE, message passing, passage de messages]
 categorie: concept/dl

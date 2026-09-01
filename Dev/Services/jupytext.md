@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: jupytext
 alias: [Jupytext]
 pitch: "Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON."
 categorie: devtools/notebook
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: [Marimo]
-remplace_par: []
-status: actif
+complements: []
 tags: [notebook, version-control, reproducibility]
 url_docs: https://jupytext.readthedocs.io/
 url_repo: https://github.com/mwouts/jupytext

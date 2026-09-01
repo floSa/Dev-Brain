@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Transformer architectures
 alias: [Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only]
 categorie: concept/dl

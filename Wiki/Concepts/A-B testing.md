@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: A/B testing
 alias: [AB testing, test A/B, split testing, online controlled experiment, OCE, randomized experiment]
 categorie: concept/stats

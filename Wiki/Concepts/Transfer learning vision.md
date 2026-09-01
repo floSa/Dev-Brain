@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Transfer learning vision
 alias: [transfer learning, transfert d'apprentissage, fine-tuning vision, feature extraction, backbone gelé]
 categorie: concept/dl

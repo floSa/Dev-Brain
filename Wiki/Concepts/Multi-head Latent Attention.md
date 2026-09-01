@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Multi-head Latent Attention
 alias: [MLA, attention latente multi-tête, latent attention, compression du KV-cache, low-rank KV compression, decoupled RoPE]
 categorie: concept/dl

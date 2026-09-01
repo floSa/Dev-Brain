@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Flowise
 alias: [flowise, flowiseai]
 pitch: "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud."
 categorie: llm/low-code
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: single-node
 alternatives: ["[[Dev/Services/Langflow|Langflow]]", "[[Dev/Services/Dify|Dify]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, low-code, agents, rag]
 url_docs: https://docs.flowiseai.com/
 url_repo: https://github.com/FlowiseAI/Flowise

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Multi-agent systems
 alias: [systèmes multi-agents, multi-agent systems, MAS]
 categorie: concept/llm

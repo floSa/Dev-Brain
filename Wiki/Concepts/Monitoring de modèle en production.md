@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Monitoring de modèle en production
 alias: [model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring]
 categorie: concept/ml

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: HDBSCAN
 alias: [Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering]
 categorie: concept/ml

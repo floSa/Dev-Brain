@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Tests non paramétriques
 alias: [non-parametric, non-parametric tests, Wilcoxon, Mann-Whitney, Kruskal-Wallis]
 categorie: concept/stats

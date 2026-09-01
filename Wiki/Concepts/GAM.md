@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: GAM
 alias: [Modèles additifs généralisés, Generalized Additive Model, Modèle additif généralisé]
 categorie: concept/ml

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: smolagents
 alias: [smolagents, smol-agents]
 pitch: "Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, mcp]
 url_docs: https://huggingface.co/docs/smolagents
 url_repo: https://github.com/huggingface/smolagents

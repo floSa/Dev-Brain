@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Positional encoding
 alias: [encodage de position, encodage positionnel, RoPE, rotary embeddings, ALiBi, sinusoidal positional encoding]
 categorie: concept/dl

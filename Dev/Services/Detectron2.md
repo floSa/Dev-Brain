@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Detectron2
 alias: [detectron2, detectron, Mask R-CNN, FAIR detection]
 pitch: "Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python/C++
-scaling: single-node
 alternatives: ["[[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]]", "[[Dev/Services/segment-anything|segment-anything]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [object-detection, segmentation, computer-vision, deep-learning, gpu]
 url_docs: https://detectron2.readthedocs.io/
 url_repo: https://github.com/facebookresearch/detectron2

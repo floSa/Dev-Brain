@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: MANOVA et tests multivariés
 alias: [MANOVA, tests multivariés, multivariate analysis of variance, Hotelling, Hotelling T2, Wilks lambda, trace de Pillai]
 categorie: concept/stats

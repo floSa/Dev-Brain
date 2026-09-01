@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: CatBoost
 alias: [catboost, Categorical Boosting]
 pitch: "Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning."
 categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/XGBoost|XGBoost]]", "[[Dev/Services/LightGBM|LightGBM]]", "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [supervised, tree-based, ensemble, boosting]
 url_docs: https://catboost.ai/docs/
 url_repo: https://github.com/catboost/catboost

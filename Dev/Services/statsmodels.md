@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: statsmodels
 alias: []
 pitch: "Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées."
 categorie: stats/inference
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/scipy.stats|scipy.stats]]", "[[Dev/Services/pingouin|pingouin]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [statistical-inference, hypothesis-testing, parametric-test, p-value]
 url_docs: https://www.statsmodels.org/stable/
 url_repo: https://github.com/statsmodels/statsmodels

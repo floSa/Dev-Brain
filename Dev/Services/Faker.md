@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Faker
 alias: [faker, fake-factory, joke2k faker]
 pitch: "Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos."
 categorie: data/synthetique
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Mimesis|Mimesis]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [synthetic-data, testing]
 url_docs: https://faker.readthedocs.io/
 url_repo: https://github.com/joke2k/faker

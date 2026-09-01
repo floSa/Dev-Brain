@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Théorème central limite
 alias: [Central limit theorem, CLT, TCL]
 categorie: concept/stats

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Microsoft SQL Server
 alias: [sql server, mssql, sqlserver, ms sql]
 pitch: "SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche."
 categorie: database/relationnel
 famille: plateforme
 licence_type: proprietary
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: single-node
 alternatives: ["[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [relational]
 url_docs: https://learn.microsoft.com/en-us/sql/sql-server/
 url_repo: 

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Validation croisée
 alias: [Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV]
 categorie: concept/ml

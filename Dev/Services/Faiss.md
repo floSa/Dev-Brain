@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Faiss
 alias: [faiss, faiss-cpu, faiss-gpu]
 pitch: "Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/ScaNN|ScaNN]]", "[[Dev/Services/Chroma|Chroma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://faiss.ai
 url_repo: https://github.com/facebookresearch/faiss

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Architecture médaillon
 alias: [medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture]
 categorie: concept/data

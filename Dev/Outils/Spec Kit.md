@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Spec Kit
 alias: [spec-kit, specify, specify-cli, spec-driven development, SDD]
 pitch: "CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement)."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
-status: actif
 alternatives: ["[[Dev/Outils/BMAD|BMAD]]"]
+complements: []
 tags: [code-assistant, code-generation, agents, cli]
 url_docs: https://github.com/github/spec-kit
 url_repo: https://github.com/github/spec-kit

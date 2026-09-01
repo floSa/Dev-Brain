@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Nebula Graph
 alias: [nebula, nebula graph, nebulagraph]
 pitch: "Base de graphes distribuée pour jeux de données massifs."
 categorie: database/graphe
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[Dev/Services/Neo4j|Neo4j]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [graph-db, distributed]
 url_docs: https://docs.nebula-graph.io/
 url_repo: https://github.com/vesoft-inc/nebula

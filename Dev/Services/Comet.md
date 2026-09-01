@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Comet
 alias: [Comet ML, comet_ml, comet.com]
 pitch: "Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives."
 categorie: ml/tracking
 famille: plateforme
 licence_type: proprietary
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Neptune|Neptune]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://www.comet.com/docs/
 url_repo: 

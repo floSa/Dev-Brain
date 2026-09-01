@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Détection d'objets
 alias: [object detection, détection d'objet, bounding box, boîtes englobantes, anchors, NMS, YOLO, Faster R-CNN, RetinaNet, DETR]
 categorie: concept/dl

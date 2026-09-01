@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Activepieces
 alias: [activepieces]
 pitch: "Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier."
 categorie: automation/no-code
 famille: plateforme
 licence_type: open-core
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: single-node
 alternatives: ["[[Dev/Services/n8n|n8n]]", "[[Dev/Services/Windmill|Windmill]]", "[[Dev/Services/Zapier|Zapier]]", "[[Dev/Services/gumloop|gumloop]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [low-code, orchestration, agents, mcp]
 url_docs: https://www.activepieces.com/docs
 url_repo: https://github.com/activepieces/activepieces

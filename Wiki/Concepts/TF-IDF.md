@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: TF-IDF
 alias: [tf-idf, term frequency-inverse document frequency, pondération tf-idf]
 categorie: concept/nlp

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Intervalles de confiance
 alias: [confidence interval, confidence intervals, IC]
 categorie: concept/stats

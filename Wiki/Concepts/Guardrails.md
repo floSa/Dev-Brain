@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Guardrails
 alias: [garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie]
 categorie: concept/ai

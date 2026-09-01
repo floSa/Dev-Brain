@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Foundation models pour séries temporelles
 alias: [Time series foundation models, TSFM, Modèles de fondation séries temporelles, Foundation models time series, Zero-shot forecasting]
 categorie: concept/ts

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Seldon Core
 alias: [seldon, seldon-core]
 pitch: "Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024."
 categorie: ml/serving
 famille: plateforme
 licence_type: source-available
-hosted: self
+hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/KServe|KServe]]", "[[Dev/Services/TorchServe|TorchServe]]", "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [model-serving, inference, kubernetes]
 url_docs: https://docs.seldon.ai/
 url_repo: https://github.com/SeldonIO/seldon-core

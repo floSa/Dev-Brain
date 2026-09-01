@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Late-interaction retrieval
 alias: [colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim]
 categorie: concept/llm

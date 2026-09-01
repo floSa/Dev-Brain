@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Vision Transformers (ViT)
 alias: [ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision]
 categorie: concept/dl

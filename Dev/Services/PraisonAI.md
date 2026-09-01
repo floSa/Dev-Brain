@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PraisonAI
 alias: [praisonai, praison-ai, praisonaiagents]
 pitch: "Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket)."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: "Python, JavaScript"
-scaling: single-node
 alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, multi-agent, tool-use, low-code, mcp]
 url_docs: https://praison.ai/docs
 url_repo: https://github.com/MervinPraison/PraisonAI

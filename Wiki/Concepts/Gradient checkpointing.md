@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Gradient checkpointing
 alias: [Gradient checkpointing, activation checkpointing, recomputation, rematerialization, rematérialisation, recalcul d'activations, checkpoint]
 categorie: concept/dl

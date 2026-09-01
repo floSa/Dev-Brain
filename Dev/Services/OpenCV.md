@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenCV
 alias: [opencv, cv2, opencv-python, Open Source Computer Vision Library]
 pitch: "Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning."
 categorie: ml/vision
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/Kornia|Kornia]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [computer-vision, object-detection, object-tracking]
 url_docs: https://docs.opencv.org/
 url_repo: https://github.com/opencv/opencv

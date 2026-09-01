@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SQLAlchemy
 alias: [sqlalchemy]
 pitch: "Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0."
 categorie: database/orm
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Prisma|Prisma]]", "[[Dev/Services/SQLModel|SQLModel]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [orm, relational, type-hints]
 url_docs: https://docs.sqlalchemy.org/
 url_repo: https://github.com/sqlalchemy/sqlalchemy

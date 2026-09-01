@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Vespa
 alias: [vespa, vespa.ai, vespa-engine]
 pitch: "Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms."
 categorie: database/recherche
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java/C++
 scaling: distributed
 alternatives: ["[[Dev/Services/Elasticsearch|Elasticsearch]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Marqo|Marqo]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [search, vector-db, hybrid-search, ranking, distributed]
 url_docs: https://docs.vespa.ai/
 url_repo: https://github.com/vespa-engine/vespa

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: testcontainers
 alias: [testcontainers-python, Testcontainers]
 pitch: "Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement."
 categorie: devtools/test
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [testing, container]
 url_docs: https://testcontainers.com/
 url_repo: https://github.com/testcontainers/testcontainers-python

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PaCMAP
 alias: [pacmap, Pairwise Controlled Manifold Approximation]
 pitch: "Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable."
 categorie: ml/non-supervise
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/umap-learn|umap-learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dimensionality-reduction, manifold, unsupervised]
 url_docs: https://github.com/YingfanWang/PaCMAP
 url_repo: https://github.com/YingfanWang/PaCMAP

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: darts
 alias: [u8darts, unit8-darts]
 pitch: "Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies."
 categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Prophet|Prophet]]", "[[Dev/Services/statsforecast|statsforecast]]", "[[Dev/Services/neuralforecast|neuralforecast]]", "[[Dev/Services/pmdarima|pmdarima]]", "[[Dev/Services/Chronos|Chronos]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [forecasting, timeseries, deep-learning]
 url_docs: https://unit8co.github.io/darts/
 url_repo: https://github.com/unit8co/darts

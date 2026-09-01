@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Métriques vision
 alias: [métriques de vision, vision metrics, mAP, mean average precision, IoU, intersection over union, Dice, mIoU, AP]
 categorie: concept/dl

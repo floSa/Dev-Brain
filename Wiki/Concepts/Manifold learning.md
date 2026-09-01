@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Manifold learning
 alias: [manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding]
 categorie: concept/stats

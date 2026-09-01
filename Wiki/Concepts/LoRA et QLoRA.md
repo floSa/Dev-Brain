@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LoRA et QLoRA
 alias: [LoRA, Low-Rank Adaptation, QLoRA, quantized LoRA, adapters LoRA, low-rank adapters]
 categorie: concept/llm

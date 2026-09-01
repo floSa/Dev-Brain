@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ADBC
 alias: [arrow-adbc, Arrow Database Connectivity]
 pitch: "Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow."
 categorie: database/driver
 famille: specification
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C / Go / Java
-scaling: single-node
 alternatives: ["[[Dev/Services/connectorx|connectorx]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [db-driver, columnar]
 url_docs: https://arrow.apache.org/adbc/
 url_repo: https://github.com/apache/arrow-adbc

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Outlines
 alias: [outlines, dottxt-outlines]
 pitch: "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas."
 categorie: llm/sortie-structuree
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Guidance|Guidance]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [structured-output, decoding, llm]
 url_docs: https://dottxt-ai.github.io/outlines/
 url_repo: https://github.com/dottxt-ai/outlines

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Server-Sent Events & streaming LLM
 alias: [SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource]
 categorie: concept/llm

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PyMC
 alias: [pymc3, pymc-devs]
 pitch: "Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor)."
 categorie: stats/bayesien
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Stan|Stan]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [bayesian, probabilistic-programming, monte-carlo, markov, prior]
 url_docs: https://www.pymc.io
 url_repo: https://github.com/pymc-devs/pymc

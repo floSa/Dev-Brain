@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Semantic Kernel
 alias: [semantic-kernel, SK]
 pitch: "SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: "C#, Python, Java"
-scaling: single-node
 alternatives: ["[[Dev/Services/LangChain|LangChain]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use]
 url_docs: https://learn.microsoft.com/semantic-kernel/
 url_repo: https://github.com/microsoft/semantic-kernel

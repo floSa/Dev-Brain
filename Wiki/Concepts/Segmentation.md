@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Segmentation
 alias: [segmentation d'image, image segmentation, segmentation sémantique, segmentation d'instance, segmentation panoptique, U-Net, Mask R-CNN, DeepLab]
 categorie: concept/dl

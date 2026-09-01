@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Prophet
 alias: [fbprophet, fb-prophet]
 pitch: "Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles."
 categorie: ml/series-temporelles
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python/R
-scaling: single-node
 alternatives: ["[[Dev/Services/statsforecast|statsforecast]]", "[[Dev/Services/neuralforecast|neuralforecast]]", "[[Dev/Services/darts|darts]]", "[[Dev/Services/Chronos|Chronos]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [forecasting, timeseries]
 url_docs: https://facebook.github.io/prophet/
 url_repo: https://github.com/facebook/prophet

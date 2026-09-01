@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Contrats de données & qualité
 alias: [data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données]
 categorie: concept/data

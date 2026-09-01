@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Dify
 alias: [dify, dify.ai, langgenius-dify]
 pitch: "Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud."
 categorie: llm/low-code
 famille: plateforme
 licence_type: source-available
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Langflow|Langflow]]", "[[Dev/Services/Flowise|Flowise]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, low-code, agents, rag]
 url_docs: https://docs.dify.ai/
 url_repo: https://github.com/langgenius/dify

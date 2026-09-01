@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: AutoGen
 alias: [autogen, microsoft-autogen]
 pitch: "Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2)."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: deprecated
 langage: "Python, .NET"
-scaling: single-node
 alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Outils/swarm-forge|swarm-forge]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
-remplace_par: []
-status: abandonne
+complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://microsoft.github.io/autogen/
 url_repo: https://github.com/microsoft/autogen

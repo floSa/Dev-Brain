@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: DuckDB
 alias: [duckdb]
 pitch: "Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur."
 categorie: database/analytique
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/ClickHouse|ClickHouse]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb

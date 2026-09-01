@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Time series anomaly detection
 alias: [Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord]
 categorie: concept/ts

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Fanalysis
 alias: [fanalysis]
 pitch: "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince."
 categorie: stats/exploratoire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: deprecated
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Prince|Prince]]"]
-remplace_par: ["[[Dev/Services/Prince|Prince]]"]
-status: abandonne
+complements: []
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 url_docs: 
 url_repo: https://github.com/OlivierGarciaDev/fanalysis

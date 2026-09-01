@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: FastAPI
 alias: [fastapi]
 pitch: "Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement."
 categorie: web/backend
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Flask|Flask]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-framework, type-hints]
 url_docs: https://fastapi.tiangolo.com
 url_repo: https://github.com/fastapi/fastapi

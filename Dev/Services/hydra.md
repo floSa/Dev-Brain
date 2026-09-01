@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: hydra
 alias: [Hydra, hydra-core]
 pitch: "Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML."
 categorie: devtools/config
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/python-dotenv|python-dotenv]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [config]
 url_docs: https://hydra.cc/docs/intro/
 url_repo: https://github.com/hydra-ecosystem/hydra

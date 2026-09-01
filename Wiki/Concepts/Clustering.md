@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Clustering
 alias: [Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement]
 categorie: concept/ml

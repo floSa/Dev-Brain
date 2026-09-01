@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: sentencepiece
 alias: [sentence-piece, spm, google sentencepiece]
 pitch: "Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python."
 categorie: ml/nlp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++/Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [tokenization, nlp]
 url_docs: https://github.com/google/sentencepiece/blob/master/README.md
 url_repo: https://github.com/google/sentencepiece

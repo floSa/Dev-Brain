@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Systèmes de recommandation
 alias: [recommender systems, recsys, filtrage collaboratif, collaborative filtering, factorisation matricielle, matrix factorization, two-tower]
 categorie: concept/ml

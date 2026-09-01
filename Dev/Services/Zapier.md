@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Zapier
 alias: [zapier]
 pitch: "Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host."
 categorie: automation/no-code
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: ["[[Dev/Services/n8n|n8n]]", "[[Dev/Services/Activepieces|Activepieces]]", "[[Dev/Services/Windmill|Windmill]]", "[[Dev/Services/gumloop|gumloop]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [low-code, orchestration, agents]
 url_docs: https://help.zapier.com/
 url_repo: 

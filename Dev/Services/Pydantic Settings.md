@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Pydantic Settings
 alias: [pydantic-settings, pydantic_settings, BaseSettings]
 pitch: "Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic."
 categorie: devtools/config
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/hydra|hydra]]", "[[Dev/Services/python-dotenv|python-dotenv]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [config, data-validation]
 url_docs: https://docs.pydantic.dev/latest/concepts/pydantic_settings/
 url_repo: https://github.com/pydantic/pydantic-settings

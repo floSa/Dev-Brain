@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TensorFlow Serving
 alias: [tf-serving, tensorflow-serving, tfserving]
 pitch: "Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX."
 categorie: ml/serving
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/KServe|KServe]]", "[[Dev/Services/Seldon Core|Seldon Core]]", "[[Dev/Services/TorchServe|TorchServe]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [model-serving, inference, gpu]
 url_docs: https://www.tensorflow.org/tfx/guide/serving
 url_repo: https://github.com/tensorflow/serving

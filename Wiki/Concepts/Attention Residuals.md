@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Attention Residuals
 alias: [AttnRes, Block AttnRes, résiduels par attention, attention sur la profondeur, depth-wise attention, dilution PreNorm]
 categorie: concept/dl

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: docTR
 alias: [doctr, python-doctr, Document Text Recognition, mindee docTR]
 pitch: "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents."
 categorie: data/parsing
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [ocr, document-parsing, layout-analysis, computer-vision, deep-learning]
 url_docs: https://mindee.github.io/doctr/
 url_repo: https://github.com/mindee/doctr

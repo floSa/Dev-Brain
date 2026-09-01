@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Flink
 alias: [flink, Apache Flink]
 pitch: "Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch."
 categorie: data/streaming
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [streaming, distributed]
 url_docs: https://nightlies.apache.org/flink/flink-docs-stable/
 url_repo: https://github.com/apache/flink

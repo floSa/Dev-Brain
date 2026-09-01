@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Neptune
 alias: [neptune.ai, neptune-client, Neptune Scale]
 pitch: "Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026."
 categorie: ml/tracking
 famille: plateforme
 licence_type: proprietary
-hosted: both
+hosted: [self, managed]
 maturite: deprecated
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]"]
-remplace_par: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]"]
-status: abandonne
+complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.neptune.ai/
 url_repo: https://github.com/neptune-ai/neptune-client

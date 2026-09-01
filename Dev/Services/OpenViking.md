@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenViking
 alias: [openviking, viking]
 pitch: "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens."
 categorie: llm/memoire
 famille: plateforme
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: beta
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Letta|Letta]]", "[[Dev/Services/Hermes Agent|Hermes Agent]]", "[[Dev/Outils/ai-memory|ai-memory]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [agent-memory, rag, context-engineering, agents, retrieval, mcp]
 url_docs: https://docs.openviking.ai/
 url_repo: https://github.com/volcengine/OpenViking

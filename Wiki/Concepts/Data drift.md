@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Data drift
 alias: [dérive de données, distribution shift, drift, dérive de distribution]
 categorie: concept/ml

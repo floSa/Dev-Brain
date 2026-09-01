@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pdf-inspector
 alias: [firecrawl/pdf-inspector, pdf2md, detect-pdf]
 pitch: "Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM."
 categorie: data/parsing
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: beta
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]", "[[Dev/Services/pdfplumber|pdfplumber]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [pdf, document-parsing, ocr, markdown-conversion, layout-analysis]
 url_docs: https://firecrawl.github.io/pdf-inspector/
 url_repo: https://github.com/firecrawl/pdf-inspector

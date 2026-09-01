@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Elasticsearch
 alias: [elasticsearch, elastic, es]
 pitch: "Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle."
 categorie: database/recherche
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Marqo|Marqo]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
 url_repo: https://github.com/elastic/elasticsearch

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Ray
 alias: [ray, ray-project, ray core]
 pitch: "Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib)."
 categorie: compute/distribue
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python / C++
-scaling: distributed
 alternatives: ["[[Dev/Services/Dask|Dask]]", "[[Dev/Services/Spark|Spark]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [distributed, parallel, gpu]
 url_docs: https://docs.ray.io/
 url_repo: https://github.com/ray-project/ray

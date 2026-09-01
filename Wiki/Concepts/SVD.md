@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: SVD
 alias: [décomposition en valeurs singulières, singular value decomposition, valeurs singulières]
 categorie: concept/math

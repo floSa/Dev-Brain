@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LanceDB
 alias: [lancedb, lance]
 pitch: "Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer."
 categorie: database/vecteur
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Rust
-scaling: single-node
 alternatives: ["[[Dev/Services/Chroma|Chroma]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [vector-db, embedded, multimodal, columnar]
 url_docs: https://lancedb.com/documentation/
 url_repo: https://github.com/lancedb/lancedb

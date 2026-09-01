@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: fastmcp
 alias: [FastMCP]
 pitch: "La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma."
 categorie: llm/mcp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [mcp, tool-use, agents]
 url_docs: https://gofastmcp.com
 url_repo: https://github.com/PrefectHQ/fastmcp

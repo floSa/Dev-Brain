@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Daytona
 alias: [daytona, daytonaio, Daytona Sandboxes]
 pitch: "Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu."
 categorie: compute/a-la-demande
 famille: saas
 licence_type: source-available
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: "TypeScript, Go"
 scaling: serverless
 alternatives: ["[[Dev/Services/E2B|E2B]]", "[[Dev/Services/Modal|Modal]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [agents, llm, container, ai-security]
 url_docs: https://www.daytona.io/docs
 url_repo: https://github.com/daytonaio/daytona

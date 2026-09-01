@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Analyse de puissance
 alias: [power analysis, statistical power, taille d'échantillon]
 categorie: concept/stats

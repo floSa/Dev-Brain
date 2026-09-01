@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: t-SNE and UMAP
 alias: [t-SNE, UMAP, visualisation haute dimension]
 categorie: concept/ml

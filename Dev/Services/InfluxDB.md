@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: InfluxDB
 alias: [influxdb, influx]
 pitch: "SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles."
 categorie: database/series-temporelles
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: single-node
 alternatives: ["[[Dev/Services/TimescaleDB|TimescaleDB]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [timeseries]
 url_docs: https://docs.influxdata.com/
 url_repo: https://github.com/influxdata/influxdb

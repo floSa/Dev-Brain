@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: hdbscan
 alias: [HDBSCAN library, scikit-learn-contrib hdbscan]
 pitch: "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster)."
 categorie: ml/non-supervise
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [clustering, unsupervised]
 url_docs: https://hdbscan.readthedocs.io/
 url_repo: https://github.com/scikit-learn-contrib/hdbscan

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Estimation MAP
 alias: [MAP, maximum a posteriori, maximum a posteriori estimation, estimation maximum a posteriori]
 categorie: concept/stats

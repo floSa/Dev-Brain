@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Classification metrics
 alias: [Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier]
 categorie: concept/ml

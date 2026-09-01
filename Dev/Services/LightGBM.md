@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LightGBM
 alias: [lightgbm, lgbm, Light Gradient Boosting Machine]
 pitch: "Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes."
 categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: distributed
 alternatives: ["[[Dev/Services/XGBoost|XGBoost]]", "[[Dev/Services/CatBoost|CatBoost]]", "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [supervised, tree-based, ensemble, boosting, distributed]
 url_docs: https://lightgbm.readthedocs.io/
 url_repo: https://github.com/lightgbm-org/LightGBM

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SetFit
 alias: [setfit, few-shot text classification]
 pitch: "Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM."
 categorie: ml/nlp
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [text-classification, nlp, fine-tuning]
 url_docs: https://huggingface.co/docs/setfit
 url_repo: https://github.com/huggingface/setfit

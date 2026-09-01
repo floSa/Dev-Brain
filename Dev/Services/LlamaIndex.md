@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LlamaIndex
 alias: [llamaindex, llama-index, llama_index, run-llama, GPT Index]
 pitch: "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances."
 categorie: llm/rag
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/Haystack|Haystack]]", "[[Dev/Services/DSPy|DSPy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, rag, embeddings, agents]
 url_docs: https://developers.llamaindex.ai/python/framework/
 url_repo: https://github.com/run-llama/llama_index

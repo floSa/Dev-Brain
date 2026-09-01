@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LlamaParse
 alias: [llamaparse, llama-parse, LlamaCloud Parse]
 pitch: "Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source."
 categorie: data/parsing
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: Python
 scaling: serverless
 alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/Marker|Marker]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [document-parsing, rag, ocr]
 url_docs: https://docs.cloud.llamaindex.ai/
 url_repo: 

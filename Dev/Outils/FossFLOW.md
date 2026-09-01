@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: FossFLOW
 alias: [fossflow, isoflow]
 pitch: "Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON."
@@ -10,8 +9,8 @@ domaines: []
 licence_type: open-source
 os: "Web (PWA)"
 langage: TypeScript
-status: actif
 alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
+complements: []
 tags: [diagram, isometric]
 url_docs: https://github.com/stan-smith/FossFLOW
 url_repo: https://github.com/stan-smith/FossFLOW

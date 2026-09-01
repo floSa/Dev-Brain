@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Traitement du langage naturel
 alias: [NLP, natural language processing, TALN, TAL, traitement automatique du langage]
 categorie: concept/nlp

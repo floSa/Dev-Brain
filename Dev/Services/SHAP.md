@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: SHAP
 alias: [shap, SHapley Additive exPlanations, TreeSHAP, KernelSHAP]
 pitch: "Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LIME|LIME]]", "[[Dev/Services/interpreto|interpreto]]", "[[Dev/Services/Captum|Captum]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, supervised]
 url_docs: https://shap.readthedocs.io/
 url_repo: https://github.com/shap/shap

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Neo4j
 alias: [neo4j, neo4J, neo 4j]
 pitch: "SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher."
 categorie: database/graphe
 famille: plateforme
 licence_type: open-core
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: single-node
 alternatives: ["[[Dev/Services/Nebula Graph|Nebula Graph]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [graph-db]
 url_docs: https://neo4j.com/docs/
 url_repo: https://github.com/neo4j/neo4j

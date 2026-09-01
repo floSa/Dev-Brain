@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Tool use patterns
 alias: [patrons d'appel d'outils, tool use patterns, function calling patterns]
 categorie: concept/llm

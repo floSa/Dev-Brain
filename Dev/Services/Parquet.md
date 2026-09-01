@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Parquet
 alias: [parquet, Apache Parquet]
 pitch: "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet."
 categorie: data/format
 famille: specification
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Java
-scaling: distributed
 alternatives: ["[[Dev/Services/Avro|Avro]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [file-format, columnar, olap]
 url_docs: https://parquet.apache.org/docs/
 url_repo: https://github.com/apache/parquet-format

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Théorie des jeux
 alias: [game theory, théorie des jeux, équilibre de Nash, Nash equilibrium, jeu à somme nulle, zero-sum, information imparfaite, minimax]
 categorie: concept/rl

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Model registry & versioning
 alias: [model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger]
 categorie: concept/ml

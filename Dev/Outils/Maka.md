@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Maka
 alias: [apache-maka, maka]
 pitch: "Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "macOS (Apple Silicon), Windows (preview)"
 langage: TypeScript
-status: en-eval
 alternatives: ["[[Dev/Services/OpenHands|OpenHands]]", "[[Dev/Outils/t3code|t3code]]"]
+complements: []
 tags: [audit-log, agents, tool-use, ai-security, code-assistant]
 url_docs: https://incubator.apache.org/projects/maka.html
 url_repo: https://github.com/apache/maka

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: tool-use
 alias: [function calling, appel d'outils, tool calling, appel de fonctions]
 categorie: concept/llm

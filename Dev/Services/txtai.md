@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: txtai
 alias: [txtai, neuml-txtai]
 pitch: "Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI."
 categorie: database/recherche
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/Marqo|Marqo]]", "[[Dev/Services/Elasticsearch|Elasticsearch]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [search, semantic-search, embeddings, rag, vector-db]
 url_docs: https://neuml.github.io/txtai/
 url_repo: https://github.com/neuml/txtai

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régression et classification multi-sorties
 alias: [multi-output, multioutput, multi-sorties, multi-target, multi-label, MultiOutputRegressor, MultiOutputClassifier, RegressorChain, ClassifierChain]
 categorie: concept/ml

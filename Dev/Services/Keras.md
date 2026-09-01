@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Keras
 alias: [keras, keras 3, keras3, tf.keras]
 pitch: "API de deep learning de haut niveau, multi-backend (Keras 3) — le même code de modèle s'exécute sur JAX, TensorFlow ou PyTorch ; construire, entraîner et exporter un réseau vite, sans s'enfermer dans un framework."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [deep-learning, gpu]
 url_docs: https://keras.io/
 url_repo: https://github.com/keras-team/keras

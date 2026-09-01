@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Weights & Biases
 alias: [wandb, W&B]
 pitch: "Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning."
 categorie: ml/tracking
 famille: plateforme
 licence_type: proprietary
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Neptune|Neptune]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]", "[[Dev/Services/TensorBoard|TensorBoard]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.wandb.ai/
 url_repo: https://github.com/wandb/wandb

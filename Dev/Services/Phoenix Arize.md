@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Phoenix Arize
 alias: [phoenix, "Arize Phoenix", arize-phoenix, arize-ai-phoenix]
 pitch: "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX."
 categorie: llm/observabilite
 famille: plateforme
 licence_type: source-available
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/Langfuse|Langfuse]]", "[[Dev/Services/LangSmith|LangSmith]]", "[[Dev/Services/Helicone|Helicone]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-observability, llm-eval, tracing]
 url_docs: https://arize.com/docs/phoenix
 url_repo: https://github.com/Arize-ai/phoenix

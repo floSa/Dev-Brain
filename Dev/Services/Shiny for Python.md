@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Shiny for Python
 alias: [shiny, py-shiny, shiny-python]
 pitch: "Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM)."
 categorie: ui/data-app
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Gradio|Gradio]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [data-app, dashboard, web-framework]
 url_docs: https://shiny.posit.co/py/
 url_repo: https://github.com/posit-dev/py-shiny

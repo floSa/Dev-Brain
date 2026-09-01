@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pandas
 alias: [pd]
 pitch: "DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python."
 categorie: data/tableau
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python / Cython
-scaling: single-node
 alternatives: ["[[Dev/Services/Polars|Polars]]", "[[Dev/Services/Modin|Modin]]", "[[Dev/Services/Dask|Dask]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataframe, in-memory]
 url_docs: https://pandas.pydata.org/docs/
 url_repo: https://github.com/pandas-dev/pandas

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Rademacher complexity
 alias: [Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages]
 categorie: concept/math

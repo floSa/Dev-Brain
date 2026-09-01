@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Projections
 alias: [projection orthogonale, projecteur, projection]
 categorie: concept/math

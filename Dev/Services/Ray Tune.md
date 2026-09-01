@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Ray Tune
 alias: [ray tune, ray.tune, raytune]
 pitch: "Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster."
 categorie: ml/hyperopt
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Optuna|Optuna]]", "[[Dev/Services/Hyperopt|Hyperopt]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [hyperparameter-tuning, distributed, bayesian]
 url_docs: https://docs.ray.io/en/latest/tune/
 url_repo: https://github.com/ray-project/ray

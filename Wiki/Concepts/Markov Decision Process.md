@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Markov Decision Process
 alias: [MDP, processus de décision markovien, processus décisionnel de Markov, Markov decision process]
 categorie: concept/rl

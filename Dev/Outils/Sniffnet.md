@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: Sniffnet
 alias: [sniffnet, gyulyvgc/sniffnet]
 pitch: "Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP."
@@ -10,8 +9,8 @@ domaines: [infra-ops]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Rust
-status: actif
 alternatives: []
+complements: []
 tags: [networking, traffic-analysis]
 url_docs: https://github.com/GyulyVGC/sniffnet/wiki
 url_repo: https://github.com/GyulyVGC/sniffnet

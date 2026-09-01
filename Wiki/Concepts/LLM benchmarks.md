@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LLM benchmarks
 alias: [bancs d'essai LLM, benchmarks LLM, leaderboard, MMLU, GPQA, BBH, IFEval, MT-Bench, Chatbot Arena, LMArena, HELM]
 categorie: concept/llm

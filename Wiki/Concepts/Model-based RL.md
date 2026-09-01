@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Model-based RL
 alias: [model-based RL, RL basé modèle, model-based reinforcement learning, RL avec modèle, world models, planification]
 categorie: concept/rl

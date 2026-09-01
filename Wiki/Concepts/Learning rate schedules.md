@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Learning rate schedules
 alias: [Learning rate schedules, Planification du taux d'apprentissage, LR schedule, Warmup, Cosine decay, Cyclical learning rate]
 categorie: concept/math

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Autoencodeurs
 alias: [Autoencodeur, Autoencoder, Auto-encodeur, AE, VAE, Variational Autoencoder, Autoencodeur variationnel, Denoising autoencoder]
 categorie: concept/dl

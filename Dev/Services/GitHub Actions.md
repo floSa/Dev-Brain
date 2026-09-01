@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: GitHub Actions
 alias: [github actions, gha, github-actions]
 pitch: "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions."
 categorie: devops/ci
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [ci-cd]
 url_docs: https://docs.github.com/actions
 url_repo: https://github.com/actions/runner

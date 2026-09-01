@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenSpiel
 alias: [openspiel, open_spiel, open spiel, deepmind openspiel]
 pitch: "Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Gymnasium|Gymnasium]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning, game-theory]
 url_docs: https://openspiel.readthedocs.io/
 url_repo: https://github.com/google-deepmind/open_spiel

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Avro
 alias: [avro, Apache Avro]
 pitch: "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka."
 categorie: data/format
 famille: specification
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Java
-scaling: distributed
 alternatives: ["[[Dev/Services/Parquet|Parquet]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [file-format, serialization, schema-evolution]
 url_docs: https://avro.apache.org/docs/
 url_repo: https://github.com/apache/avro

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Encodage des variables catégorielles
 alias: [Encodage catégoriel, Categorical encoding, One-Hot encoding, Target encoding, Weight of Evidence, WoE]
 categorie: concept/ml

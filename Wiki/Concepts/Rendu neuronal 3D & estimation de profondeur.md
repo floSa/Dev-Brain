@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Rendu neuronal 3D & estimation de profondeur
 alias: [NeRF, neural radiance fields, 3D Gaussian Splatting, 3DGS, gaussian splatting, rendu neuronal, novel view synthesis, estimation de profondeur, depth estimation, MiDaS, DPT, Depth Anything]
 categorie: concept/dl

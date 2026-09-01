@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: WrenAI
 alias: [wrenai, wren-ai, wren ai, wren]
 pitch: "Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources."
 categorie: llm/text-to-sql
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python, Rust
 scaling: single-node
 alternatives: ["[[Dev/Services/Vanna|Vanna]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [text-to-sql, llm, agents, dashboard]
 url_docs: https://docs.getwren.ai
 url_repo: https://github.com/Canner/WrenAI

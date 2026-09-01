@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Marker
 alias: [marker, marker-pdf, datalab-marker]
 pitch: "Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte."
 categorie: data/parsing
 famille: paquet
 licence_type: source-available
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [document-parsing, pdf, ocr, markdown-conversion, rag]
 url_docs: https://github.com/datalab-to/marker
 url_repo: https://github.com/datalab-to/marker

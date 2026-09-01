@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Maximum de vraisemblance
 alias: [MLE, maximum likelihood estimation, maximum likelihood, vraisemblance maximale]
 categorie: concept/stats

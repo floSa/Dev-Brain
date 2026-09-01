@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Adam optimizer
 alias: [Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif]
 categorie: concept/dl

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Text-to-SQL
 alias: [text to sql, nl2sql, natural language to sql, texte vers SQL, requête en langage naturel]
 categorie: concept/llm

@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Helicone
 alias: [helicone]
 pitch: "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode."
 categorie: llm/observabilite
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: distributed
 alternatives: ["[[Dev/Services/Langfuse|Langfuse]]", "[[Dev/Services/LangSmith|LangSmith]]", "[[Dev/Services/Phoenix Arize|Phoenix Arize]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-observability, llm-gateway, tracing]
 url_docs: https://docs.helicone.ai/
 url_repo: https://github.com/Helicone/helicone

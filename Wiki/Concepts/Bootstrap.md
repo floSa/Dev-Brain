@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Bootstrap
 alias: [resampling, rééchantillonnage]
 categorie: concept/stats

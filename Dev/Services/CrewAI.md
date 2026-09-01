@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: CrewAI
 alias: [crewai, crew-ai]
 pitch: "Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production."
 categorie: llm/agents
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Outils/swarm-forge|swarm-forge]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://docs.crewai.com/
 url_repo: https://github.com/crewAIInc/crewAI

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: LLM-as-judge
 alias: [LLM as a judge, LLM juge, LLM évaluateur, G-Eval, pairwise comparison, reference-free evaluation, MT-Bench]
 categorie: concept/llm

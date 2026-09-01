@@ -36,15 +36,20 @@ LINE = re.compile(r"^(\s*-\s*)([✅⬜])(\s+\*\*)(.+?)(\*\*.*)$")
 SEC = re.compile(r"^#+\s+(.*)$")
 
 
+# Le backlog est écrit en deux parties : A = les briques, B = les notions. Le seau se
+# lit donc sur `role:` depuis le lot 2 de la migration v3 — `galaxie:` n'existe plus.
+# `pattern` et `rule` rejoignent les briques : c'est la partie A qui les listait.
+ROLE_BUCKET = {"brique": "dev", "pattern": "dev", "rule": "dev", "notion": "wiki"}
+
+
 def load_done() -> dict[str, set[str]]:
-    """Done-sets séparés par galaxie (évite les collisions nom lib ↔ nom concept,
+    """Done-sets séparés par rôle (évite les collisions nom lib ↔ nom concept,
     ex. le lib `hdbscan` vs le concept `HDBSCAN`)."""
     idx = json.loads(INDEX.read_text(encoding="utf-8"))
     pages = idx.get("pages", idx) if isinstance(idx, dict) else idx
     done: dict[str, set[str]] = {"dev": set(), "wiki": set()}
     for p in pages:
-        gal = p.get("galaxie")
-        bucket = done.get(gal)
+        bucket = done.get(ROLE_BUCKET.get(p.get("role"), ""))
         if bucket is None:
             continue
         if p.get("nom"):
@@ -62,7 +67,7 @@ def main() -> int:
     lines = BACKLOG.read_text(encoding="utf-8").split("\n")
 
     section = "(début)"
-    bucket = "all"  # galaxie attendue selon la PARTIE courante
+    bucket = "all"  # seau attendu selon la PARTIE courante
     PART = re.compile(r"^#\s+PARTIE\s+([A-Z])")
     PART_BUCKET = {"A": "dev", "B": "wiki"}  # C/D = mixte → all
     counts: dict[str, list[int]] = {}

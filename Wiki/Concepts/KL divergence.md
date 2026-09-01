@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: KL divergence
 alias: [Divergence de Kullback-Leibler, Kullback-Leibler, KL, relative entropy, entropie relative, divergence KL]
 categorie: concept/math

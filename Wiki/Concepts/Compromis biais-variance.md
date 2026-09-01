@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Compromis biais-variance
 alias: [Bias-variance tradeoff, Biais-variance, Sous-apprentissage, Surapprentissage, Underfitting, Overfitting]
 categorie: concept/ml

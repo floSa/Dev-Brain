@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: freebuff
 alias: [Freebuff, Codebuff]
 pitch: "Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: open-core
 os: "Windows, macOS, Linux"
 langage: TypeScript
-status: actif
 alternatives: ["[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/pi|pi]]"]
+complements: []
 tags: [code-assistant, code-generation, agents, multi-agent, cli]
 url_docs: https://freebuff.com
 url_repo: https://github.com/CodebuffAI/freebuff

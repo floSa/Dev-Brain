@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: GRPO
 alias: [Group Relative Policy Optimization, optimisation de politique par groupes, optimisation de politique relative par groupe]
 categorie: concept/llm

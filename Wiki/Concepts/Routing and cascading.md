@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Routing and cascading
 alias: [routing, query routing, semantic routing, model routing, model cascading, cascade de modèles, routage et cascade]
 categorie: concept/llm

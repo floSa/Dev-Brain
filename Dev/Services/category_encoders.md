@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: category_encoders
 alias: [category-encoders, categorical-encoding, WOEEncoder]
 pitch: "Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité."
 categorie: ml/tabulaire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [feature-engineering]
 url_docs: https://contrib.scikit-learn.org/category_encoders/
 url_repo: https://github.com/scikit-learn-contrib/category_encoders

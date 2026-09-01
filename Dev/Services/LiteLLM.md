@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LiteLLM
 alias: [litellm, BerriAI-litellm]
 pitch: "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous."
 categorie: llm/passerelle
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/OpenRouter|OpenRouter]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-gateway, inference]
 url_docs: https://docs.litellm.ai/
 url_repo: https://github.com/BerriAI/litellm

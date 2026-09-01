@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Prince
 alias: [prince]
 pitch: "Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas."
 categorie: stats/exploratoire
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/Fanalysis|Fanalysis]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 url_docs: https://maxhalford.github.io/prince/
 url_repo: https://github.com/MaxHalford/prince

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Imbalanced classification
 alias: [classes déséquilibrées, déséquilibre de classes, class imbalance]
 categorie: concept/ml

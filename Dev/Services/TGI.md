@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TGI
 alias: [tgi, text-generation-inference]
 pitch: "Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF."
 categorie: llm/runtime
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: Rust/Python
 scaling: distributed
 alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/SGLang|SGLang]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, model-serving, inference, gpu]
 url_docs: https://huggingface.co/docs/text-generation-inference
 url_repo: https://github.com/huggingface/text-generation-inference

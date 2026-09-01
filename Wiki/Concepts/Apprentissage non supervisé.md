@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Apprentissage non supervisé
 alias: [Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées]
 categorie: concept/ml

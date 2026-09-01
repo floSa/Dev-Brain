@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TF-Agents
 alias: [tf-agents, tf agents, tensorflow agents]
 pitch: "Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème."
 categorie: ml/rl
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]", "[[Dev/Services/Acme|Acme]]", "[[Dev/Services/RLax|RLax]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [reinforcement-learning]
 url_docs: https://www.tensorflow.org/agents
 url_repo: https://github.com/tensorflow/agents

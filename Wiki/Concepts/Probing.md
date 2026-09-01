@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Probing
 alias: [Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier]
 categorie: concept/dl

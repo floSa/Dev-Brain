@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Flyway
 alias: [flyway]
 pitch: "Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build."
 categorie: database/migration
 famille: cli
 licence_type: open-core
-hosted: self
 maturite: production
 langage: Java
-scaling: single-node
 alternatives: ["[[Dev/Services/Liquibase|Liquibase]]", "[[Dev/Services/Alembic|Alembic]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [migration, relational]
 url_docs: https://documentation.red-gate.com/flyway
 url_repo: https://github.com/flyway/flyway

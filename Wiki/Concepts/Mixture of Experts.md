@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Mixture of Experts
 alias: [MoE, mélange d'experts, sparse MoE, Switch Transformer, experts conditionnels, top-k routing, fine-grained experts, shared experts, DeepSeekMoE, ratio de sparsité, expert parallelism]
 categorie: concept/dl

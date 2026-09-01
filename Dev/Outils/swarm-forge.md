@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: swarm-forge
 alias: [unclebob/swarm-forge, swarm]
 pitch: "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée."
@@ -10,8 +9,8 @@ domaines: [ai-eng]
 licence_type: 
 os: "Linux, macOS, Windows (WSL)"
 langage: Clojure
-status: en-eval
 alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]"]
+complements: []
 tags: [multi-agent, agents, code-assistant, cli, version-control]
 url_docs: https://github.com/unclebob/swarm-forge
 url_repo: https://github.com/unclebob/swarm-forge

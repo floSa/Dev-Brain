@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: CausalImpact
 alias: [tfcausalimpact, tfp-causalimpact, pycausalimpact]
 pitch: "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle."
 categorie: stats/causal
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [causal-inference, bayesian, timeseries]
 url_docs: https://google.github.io/CausalImpact/CausalImpact.html
 url_repo: https://github.com/WillianFuks/tfcausalimpact

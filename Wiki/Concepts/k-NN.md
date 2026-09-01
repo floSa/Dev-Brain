@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: k-NN
 alias: [KNN, k plus proches voisins, k-Nearest Neighbors, Plus proches voisins, KNeighborsClassifier, Apprentissage paresseux, Lazy learning]
 categorie: concept/ml

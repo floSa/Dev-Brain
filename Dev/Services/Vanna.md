@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Vanna
 alias: [vanna, vanna.ai, vanna-ai]
 pitch: "Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable."
 categorie: llm/text-to-sql
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: deprecated
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/WrenAI|WrenAI]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
-remplace_par: ["[[Dev/Services/WrenAI|WrenAI]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
-status: abandonne
+complements: []
 tags: [text-to-sql, llm, rag, agents, local-llm]
 url_docs: https://vanna.ai/docs/
 url_repo: https://github.com/vanna-ai/vanna

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: pip
 alias: []
 pitch: "Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout."
 categorie: devtools/paquet
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/uv|uv]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [package-manager]
 url_docs: https://pip.pypa.io/
 url_repo: https://github.com/pypa/pip

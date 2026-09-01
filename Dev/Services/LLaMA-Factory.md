@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LLaMA-Factory
 alias: [llama-factory, llamafactory, LLaMA Factory, hiyouga/LLaMA-Factory, LLaMA Board]
 pitch: "Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis."
 categorie: llm/finetuning
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/TRL|TRL]]", "[[Dev/Services/Unsloth|Unsloth]]", "[[Dev/Services/Axolotl|Axolotl]]", "[[Dev/Services/Tunix|Tunix]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [fine-tuning, declarative-config, low-code, distributed-training, llm]
 url_docs: https://llamafactory.readthedocs.io/en/latest/
 url_repo: https://github.com/hiyouga/LLaMA-Factory

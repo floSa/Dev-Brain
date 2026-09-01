@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenHands
 alias: [openhands, opendevin, open-devin]
 pitch: "Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé."
 categorie: llm/assistant
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
 alternatives: ["[[Dev/Outils/Maka|Maka]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, agents, tool-use, code-generation]
 url_docs: https://docs.all-hands.dev/
 url_repo: https://github.com/OpenHands/OpenHands

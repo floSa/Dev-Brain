@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: E2B
 alias: [e2b, e2b-dev, E2B Sandbox, Code Interpreter SDK]
 pitch: "Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform."
 categorie: compute/a-la-demande
 famille: plateforme
 licence_type: open-source
-hosted: both
+hosted: [self, managed]
 maturite: production
 langage: "TypeScript, Python, Go"
 scaling: serverless
 alternatives: ["[[Dev/Services/Modal|Modal]]", "[[Dev/Services/Daytona|Daytona]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [agents, llm, container, ai-security]
 url_docs: https://e2b.dev/docs
 url_repo: https://github.com/e2b-dev/E2B

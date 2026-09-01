@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: xarray
 alias: [xray, pydata-xarray]
 pitch: "Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial)."
 categorie: data/tableau
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/numpy|numpy]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [array, out-of-core]
 url_docs: https://docs.xarray.dev/
 url_repo: https://github.com/pydata/xarray

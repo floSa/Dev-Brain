@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: PuLP
 alias: [pulp]
 pitch: "Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…)."
 categorie: math/optimisation
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [optimization, linear-programming, combinatorial-optimization]
 url_docs: https://coin-or.github.io/pulp/
 url_repo: https://github.com/coin-or/pulp

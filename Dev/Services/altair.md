@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: altair
 alias: [vega-altair, alt]
 pitch: "Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré."
 categorie: data/viz
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/plotly|plotly]]", "[[Dev/Services/bokeh|bokeh]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [dataviz, declarative-viz, interactive-viz]
 url_docs: https://altair-viz.github.io/
 url_repo: https://github.com/vega/altair

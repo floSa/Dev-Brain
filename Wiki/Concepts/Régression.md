@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Régression
 alias: [Regression, Régression supervisée, Modélisation de cible continue]
 categorie: concept/ml

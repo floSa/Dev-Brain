@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Imitation learning
 alias: [imitation learning, apprentissage par imitation, behavioral cloning, BC, learning from demonstration, inverse RL, IRL, GAIL]
 categorie: concept/rl

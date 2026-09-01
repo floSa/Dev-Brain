@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Hybrid retrieval
 alias: [recherche hybride, hybrid search, retrieval hybride, dense + sparse]
 categorie: concept/llm

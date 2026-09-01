@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: TensorBoard
 alias: [tensorboard, tb]
 pitch: "Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard."
 categorie: ml/tracking
 famille: application
 licence_type: open-source
-hosted: self
+hosted: [self]
 maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [experiment-tracking, deep-learning, dataviz]
 url_docs: https://www.tensorflow.org/tensorboard
 url_repo: https://github.com/tensorflow/tensorboard

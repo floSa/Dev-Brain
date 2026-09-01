@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Random Forest
 alias: [RF, Forêts aléatoires, Random forests, Forêt aléatoire]
 categorie: concept/ml

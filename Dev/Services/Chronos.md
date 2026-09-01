@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Chronos
 alias: [Chronos-T5, Chronos-Bolt, Chronos-2, chronos-forecasting]
 pitch: "Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params)."
 categorie: ml/series-temporelles
 famille: modele
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/darts|darts]]", "[[Dev/Services/Prophet|Prophet]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [forecasting, timeseries, foundation-model, transformers, deep-learning]
 url_docs: https://github.com/amazon-science/chronos-forecasting
 url_repo: https://github.com/amazon-science/chronos-forecasting

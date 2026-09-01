@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Chaînes de Markov
 alias: [Markov chains, propriété de Markov, Markov property]
 categorie: concept/stats

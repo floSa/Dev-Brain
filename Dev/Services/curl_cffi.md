@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: curl_cffi
 alias: [curl-cffi]
 pitch: "Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests."
 categorie: data/scraping
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/cloudscraper|cloudscraper]]", "[[Dev/Services/Playwright|Playwright]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [web-scraping]
 url_docs: https://curl-cffi.readthedocs.io/
 url_repo: https://github.com/lexiforest/curl_cffi

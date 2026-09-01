@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Gaussian Process
 alias: [GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging]
 categorie: concept/ml

@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: ONNX Runtime
 alias: [onnxruntime, ort, ONNX RT]
 pitch: "Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge."
 categorie: ml/serving
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: C++
-scaling: single-node
 alternatives: ["[[Dev/Services/TensorRT|TensorRT]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [inference, model-serving, inference-optimization, gpu, quantization]
 url_docs: https://onnxruntime.ai/docs/
 url_repo: https://github.com/microsoft/onnxruntime

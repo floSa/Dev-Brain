@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: nnsight
 alias: [NNsight, nnsight.net, NDIF]
 pitch: "Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF)."
 categorie: ml/interpretabilite
 famille: paquet
 licence_type: open-source
-hosted: both
 maturite: beta
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/TransformerLens|TransformerLens]]", "[[Dev/Services/Captum|Captum]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [explainability, llm]
 url_docs: https://www.nnsight.net
 url_repo: https://github.com/ndif-team/nnsight

@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: IA de jeu où la logique de règles et l'algorithme de décision sont découplés — le moteur joue les règles, l'agent décide.
 services_cles: [Gymnasium, Stable-Baselines3, PyTorch]
 projets_appliques: []

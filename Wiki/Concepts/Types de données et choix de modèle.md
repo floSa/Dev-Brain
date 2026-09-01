@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Types de données et choix de modèle
 alias: [Choix de modèle, Model selection, Quel modèle choisir, Aiguillage modèle, Cheat sheet modèles, Types de variables]
 categorie: concept/ml

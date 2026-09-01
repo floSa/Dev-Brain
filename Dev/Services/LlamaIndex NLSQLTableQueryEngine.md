@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LlamaIndex NLSQLTableQueryEngine
 alias: [nlsqltablequeryengine, llamaindex text-to-sql, llamaindex sql, SQLTableRetrieverQueryEngine, llamaindex nl2sql]
 pitch: "Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle."
 categorie: llm/text-to-sql
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: ["[[Dev/Services/LangChain SQL agent|LangChain SQL agent]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [text-to-sql, llm, rag, retrieval]
 url_docs: https://developers.llamaindex.ai/python/examples/index_structs/struct_indices/sqlindexdemo/
 url_repo: https://github.com/run-llama/llama_index

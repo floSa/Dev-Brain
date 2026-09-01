@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: Uvicorn
 alias: [uvicorn]
 pitch: "Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI."
 categorie: web/backend
 famille: cli
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: [web-framework]
 url_docs: https://uvicorn.dev
 url_repo: https://github.com/Kludex/uvicorn

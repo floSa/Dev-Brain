@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: OpenRouter
 alias: [openrouter, openrouter.ai]
 pitch: "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through."
 categorie: llm/passerelle
 famille: saas
 licence_type: proprietary
-hosted: managed
+hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
 alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, llm-gateway, routing, inference]
 url_docs: https://openrouter.ai/docs
 url_repo: 

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Video generation
 alias: [text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video]
 categorie: concept/dl

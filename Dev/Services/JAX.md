@@ -1,19 +1,15 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: JAX
 alias: [jax, google-jax, jax-ml]
 pitch: "Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche."
 categorie: ml/apprentissage-profond
 famille: paquet
 licence_type: open-source
-hosted: self
 maturite: production
 langage: Python
-scaling: distributed
 alternatives: ["[[Dev/Services/PyTorch|PyTorch]]", "[[Dev/Services/TensorFlow|TensorFlow]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [deep-learning, gpu, autograd, array]
 url_docs: https://docs.jax.dev/
 url_repo: https://github.com/jax-ml/jax

@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Estimation de pose
 alias: [pose estimation, keypoints, points-clés, pose humaine, OpenPose, HRNet, ViTPose, MediaPipe, OKS, PCK, heatmap]
 categorie: concept/dl

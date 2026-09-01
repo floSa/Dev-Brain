@@ -1,19 +1,17 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: LM Studio
 alias: [lmstudio, lms, llmster]
 pitch: "Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit."
 categorie: llm/runtime
 famille: application
 licence_type: proprietary
-hosted: self
+hosted: [self]
 maturite: production
 langage: 
 scaling: single-node
 alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"]
-remplace_par: []
-status: actif
+complements: []
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://lmstudio.ai/docs
 url_repo: 

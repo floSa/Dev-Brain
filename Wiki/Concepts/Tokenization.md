@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: Tokenization
 alias: [tokenisation, découpage en tokens, BPE, byte-pair encoding, subword tokenization]
 categorie: concept/llm
