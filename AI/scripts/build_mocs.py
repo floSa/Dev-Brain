@@ -34,6 +34,7 @@ CAT_LABEL = {
     "llm": "LLM & IA générative", "ml": "Machine Learning", "data": "Data & pipelines",
     "compute": "Calcul distribué", "auth": "Auth", "storage": "Stockage",
     "observability": "Observabilité", "tooling": "Outils & libs",
+    "network": "Réseau", "security": "Sécurité",
     "automation": "Automatisation no-code",
 }
 THEME_LABEL = {

@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 633 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 647 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -53,6 +53,7 @@
 - **Docling** — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - **LlamaParse** — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - **Marker** — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- **OpenDataLoader PDF** — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 - **pdf-inspector** — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 - **pdfplumber** — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
 - **PyMuPDF** — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
@@ -145,6 +146,12 @@
 - **SQLAlchemy** — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
 - **SQLModel** — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
+#### llm/app
+- **OpenMAIC** — Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.
+
+#### llm/context
+- **Headroom** — Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
+
 #### llm/eval
 - **DeepEval** — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
 - **promptfoo** — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
@@ -185,6 +192,7 @@
 - **OpenRouter** — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 - **OpenViking** — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 - **Outlines** — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.
+- **PraisonAI** — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 - **PydanticAI** — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
 - **RAGatouille** — Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (0.0.9, février 2025).
 - **Semantic Kernel** — SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur.
@@ -322,11 +330,17 @@
 #### ml/training
 - **accelerate** — Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.
 
+#### observability/infra
+- **Beszel** — Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.
+
 #### observability/log
 - **Loki** — Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
 
 #### observability/metric
 - **Grafana** — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
+
+#### security/recon
+- **Web-Check** — Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.
 
 #### storage
 - **AWS S3** — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
@@ -347,6 +361,9 @@
 - **PyWavelets** — Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.
 - **scipy.signal** — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
 - **xarray** — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
+
+#### tooling/document
+- **Stirling PDF** — Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.
 
 #### tooling/lint
 - **Ruff** — Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.
@@ -436,10 +453,22 @@
 
 ### outil
 
+#### network/analysis
+- **Sniffnet** — Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.
+
+#### network/transfer
+- **croc** — Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.
+
+#### security/osint
+- **osint4all** — Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.
+
 #### tooling/api
 - **Bruno** — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 - **Postman** — Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
 - **public-apis** — Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.
+
+#### tooling/capture
+- **Page to Markdown** — Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.
 
 #### tooling/code-assistant
 - **ai-memory** — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
@@ -476,9 +505,16 @@
 - **FossFLOW** — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - **Mermaid** — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
+#### tooling/llm
+- **llmfit** — CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.
+
 #### tooling/media
 - **Claude Video** — Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.
 - **Superwhisper** — Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie.
+
+#### tooling/video
+- **OpenCut** — Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés.
+- **SmartTube** — Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même.
 
 ## Wiki — notions (galaxie wiki)
 

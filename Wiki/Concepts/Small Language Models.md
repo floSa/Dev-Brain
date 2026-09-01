@@ -52,6 +52,7 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 - [[Reasoning models]] — pari inverse : dépenser plus à l'inférence plutôt que viser le compact.
 - Runtimes locaux : [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/LM Studio|LM Studio]].
 - Modèle spécialisé pour l'edge : [[Dev/Services/needle|needle]] — 45 M paramètres en 2 bits, dédié à l'appel d'outils et à l'extraction structurée.
+- Choix du modèle selon la machine : [[Dev/Outils/llmfit|llmfit]] — classe les modèles par tenue en mémoire, vitesse estimée, qualité et contexte, sur le matériel réellement disponible.
 
 ## Pour aller plus loin
 

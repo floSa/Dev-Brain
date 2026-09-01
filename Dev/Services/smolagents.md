@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Letta|Letta]]"]
+alternatives: ["[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, mcp]
@@ -55,10 +55,11 @@ Bibliothèque d'agents **minimaliste** de **Hugging Face** : tout le cœur tient
 - [[Dev/Services/Agno|Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour la production.
 - [[Dev/Services/AutoGen|AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 - [[Dev/Services/Letta|Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- [[Dev/Services/PraisonAI|PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
 ## Liens
 
-- Même famille de **frameworks d'agents** que [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/Agno|Agno]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/Letta|Letta]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
+- Même famille de **frameworks d'agents** que [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/Agno|Agno]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/Letta|Letta]], [[Dev/Services/PraisonAI|PraisonAI]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
 - Route ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Multi-agent systems]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie

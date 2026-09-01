@@ -95,6 +95,21 @@ de natures. Résultat : le rangement d'une page dépend de qui l'écrit.
    `type: outil` — qui n'est validé par **aucun** gabarit, `ALLOWED` ne couvrant
    que `service` et `concept`. Un Outil peut donc porter n'importe quel champ.
 
+7. **Le champ `domaines:` d'une fiche Dev n'est lu par personne.** `build_mocs.py`
+   (boucle « MOC Wiki par domaine ») ne retient que les pages `galaxie: wiki` dont la
+   `categorie` commence par `concept/` : les `domaines:` portés par un Service ou un Outil
+   ne produisent aucune MOC et ne servent à aucune navigation. Conséquence constatée le
+   2026-09-02 : le thème `infra-ops` a été ajouté au vocabulaire et posé sur trois fiches
+   Dev ([[Dev/Outils/Sniffnet|Sniffnet]], [[Dev/Outils/croc|croc]],
+   [[Dev/Outils/osint4all|osint4all]]) — aucune `MOC/Themes/Infrastructure & Ops.md` n'a
+   été générée, et il n'en existera pas tant qu'aucun **concept Wiki** ne portera ce thème.
+   Le champ est donc soit à alimenter côté Wiki, soit à retirer des gabarits Dev, soit à
+   faire lire par le script. En l'état il donne l'illusion d'un classement qui n'existe pas.
+8. **Asymétrie miroir de la précédente** : `check_brain.py` **interdit** `domaines:` sur un
+   `type: service` mais la convention observée l'**impose** sur un `type: outil`
+   (toutes les fiches de `Dev/Outils/` en portent un). Deux natures voisines, deux règles
+   opposées, pour un champ que rien ne consomme.
+
 **Piste.** Deux champs au lieu d'un : `domaine:` (thématique — `llm`, `network`,
 `data`, `security`, `observability`…) et `famille:` (nature d'outillage —
 `framework`, `gateway`, `runtime`, `client`, `cli`, `annuaire`…), le couple

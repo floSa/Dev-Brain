@@ -5,11 +5,14 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 633,
+  "count": 647,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
       "CUPED"
+    ],
+    "accessibility": [
+      "OpenDataLoader PDF"
     ],
     "agent-memory": [
       "OpenViking",
@@ -55,9 +58,11 @@
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
+      "OpenMAIC",
       "OpenViking",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
+      "PraisonAI",
       "PydanticAI",
       "Reliability patterns",
       "Sandboxing de code généré",
@@ -179,7 +184,8 @@
       "LLM benchmarks",
       "RAG benchmarks",
       "Text-to-SQL",
-      "evaluate"
+      "evaluate",
+      "llmfit"
     ],
     "boosting": [
       "AdaBoost",
@@ -189,10 +195,14 @@
       "LightGBM",
       "XGBoost"
     ],
+    "browser-extension": [
+      "Page to Markdown"
+    ],
     "bugs": [
       "REX - Postgres"
     ],
     "caching": [
+      "Headroom",
       "LLM caching",
       "prompt-caching"
     ],
@@ -245,6 +255,7 @@
     "cli": [
       "Spec Kit",
       "Typer",
+      "croc",
       "freebuff",
       "swarm-forge"
     ],
@@ -369,6 +380,7 @@
       "Optimisation sous contrainte"
     ],
     "container": [
+      "Beszel",
       "Daytona",
       "Docker",
       "E2B",
@@ -384,6 +396,7 @@
       "Context engineering",
       "Graphify",
       "Harnais d'agent",
+      "Headroom",
       "OmniRoute",
       "OpenViking",
       "ai-memory",
@@ -401,9 +414,11 @@
       "Cross-entropy"
     ],
     "cryptography": [
-      "PyJWT"
+      "PyJWT",
+      "croc"
     ],
     "dashboard": [
+      "Beszel",
       "Dash",
       "Grafana",
       "Shiny for Python",
@@ -679,6 +694,7 @@
       "Docling",
       "LlamaParse",
       "Marker",
+      "OpenDataLoader PDF",
       "PyMuPDF",
       "Unstructured",
       "docTR",
@@ -699,6 +715,9 @@
       "missingno",
       "sweetviz",
       "ydata-profiling"
+    ],
+    "education": [
+      "OpenMAIC"
     ],
     "effect-size": [
       "Analyse de puissance",
@@ -821,6 +840,9 @@
       "Avro",
       "Parquet",
       "Partitionnement & layout de données"
+    ],
+    "file-transfer": [
+      "croc"
     ],
     "fine-tuning": [
       "Axolotl",
@@ -947,6 +969,9 @@
     ],
     "guardrails": [
       "Guardrails"
+    ],
+    "hardware-sizing": [
+      "llmfit"
     ],
     "human-in-the-loop": [
       "Human-in-the-loop",
@@ -1103,6 +1128,7 @@
     ],
     "layout-analysis": [
       "Docling",
+      "OpenDataLoader PDF",
       "docTR",
       "pdf-inspector"
     ],
@@ -1181,6 +1207,7 @@
       "Guidance",
       "Harnais d'agent",
       "Haystack",
+      "Headroom",
       "Helicone",
       "Hermes Agent",
       "Human-in-the-loop",
@@ -1215,12 +1242,14 @@
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
+      "OpenMAIC",
       "OpenRouter",
       "Outlines",
       "PEFT",
       "Pattern - Agent sur LLM auto-hébergé",
       "Perplexity",
       "Phoenix Arize",
+      "PraisonAI",
       "Prompt engineering",
       "Prompt injection",
       "PydanticAI",
@@ -1315,6 +1344,7 @@
       "Superwhisper",
       "Vanna",
       "llama.cpp",
+      "llmfit",
       "needle",
       "pi",
       "text-generation-webui"
@@ -1333,6 +1363,7 @@
       "Langflow",
       "Mage",
       "Maxun",
+      "PraisonAI",
       "Windmill",
       "Zapier",
       "gumloop",
@@ -1348,6 +1379,8 @@
     "markdown-conversion": [
       "Firecrawl",
       "Marker",
+      "OpenDataLoader PDF",
+      "Page to Markdown",
       "pdf-inspector"
     ],
     "markov": [
@@ -1376,15 +1409,20 @@
       "Activepieces",
       "Cline",
       "Graphify",
+      "Headroom",
       "Hermes Agent",
       "LM Studio Bionic",
       "OpenClaw",
       "OpenViking",
+      "PraisonAI",
       "ai-memory",
       "fastmcp",
       "mcp-protocol",
       "mcpjam",
       "smolagents"
+    ],
+    "media-player": [
+      "SmartTube"
     ],
     "memory-optimization": [
       "DeepSpeed",
@@ -1397,6 +1435,7 @@
       "Metric learning & ré-identification"
     ],
     "metrics": [
+      "Beszel",
       "Grafana"
     ],
     "migration": [
@@ -1508,6 +1547,8 @@
       "DB-GPT",
       "Multi-agent systems",
       "OpenAI Agents SDK",
+      "OpenMAIC",
+      "PraisonAI",
       "a2a-protocol",
       "freebuff",
       "swarm-forge"
@@ -1545,6 +1586,11 @@
       "pytorch-crf",
       "seqeval",
       "spaCy"
+    ],
+    "networking": [
+      "Sniffnet",
+      "Web-Check",
+      "croc"
     ],
     "neural-rendering": [
       "Rendu neuronal 3D & estimation de profondeur"
@@ -1598,7 +1644,8 @@
       "Redis"
     ],
     "note-taking": [
-      "Obsidian"
+      "Obsidian",
+      "Page to Markdown"
     ],
     "notebook": [
       "Marimo",
@@ -1634,6 +1681,7 @@
       "supervision"
     ],
     "observability": [
+      "Beszel",
       "Grafana",
       "Loki"
     ],
@@ -1641,6 +1689,7 @@
       "LlamaParse",
       "Marker",
       "OCR",
+      "Stirling PDF",
       "Unstructured",
       "docTR",
       "pdf-inspector"
@@ -1697,6 +1746,10 @@
       "SQLAlchemy",
       "SQLModel"
     ],
+    "osint": [
+      "Web-Check",
+      "osint4all"
+    ],
     "out-of-core": [
       "Dask",
       "Polars",
@@ -1743,7 +1796,9 @@
     ],
     "pdf": [
       "Marker",
+      "OpenDataLoader PDF",
       "PyMuPDF",
+      "Stirling PDF",
       "pdf-inspector",
       "pdfplumber"
     ],
@@ -1785,6 +1840,11 @@
       "Inférence bayésienne",
       "PyMC"
     ],
+    "privacy": [
+      "OpenCut",
+      "Page to Markdown",
+      "SmartTube"
+    ],
     "probabilistic-programming": [
       "PyMC",
       "Stan"
@@ -1823,6 +1883,7 @@
       "TensorRT-LLM",
       "Unsloth",
       "llama.cpp",
+      "llmfit",
       "needle",
       "text-generation-webui"
     ],
@@ -1852,6 +1913,7 @@
       "LlamaParse",
       "Marker",
       "Milvus",
+      "OpenDataLoader PDF",
       "OpenViking",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Pinecone",
@@ -1898,6 +1960,9 @@
     ],
     "recommender-systems": [
       "Systèmes de recommandation"
+    ],
+    "recon": [
+      "Web-Check"
     ],
     "regression": [
       "Analyse de survie",
@@ -2103,6 +2168,13 @@
       "albumentations",
       "segment-anything"
     ],
+    "self-hosted": [
+      "Beszel",
+      "OpenMAIC",
+      "Stirling PDF",
+      "Web-Check",
+      "croc"
+    ],
     "self-play": [
       "AlphaZero and self-play",
       "Counterfactual Regret Minimization",
@@ -2279,6 +2351,7 @@
     ],
     "table-extraction": [
       "Docling",
+      "OpenDataLoader PDF",
       "pdfplumber"
     ],
     "templating": [
@@ -2289,6 +2362,7 @@
     ],
     "terminal-ui": [
       "Rich",
+      "llmfit",
       "pi"
     ],
     "testing": [
@@ -2340,6 +2414,9 @@
       "pmdarima",
       "statsforecast"
     ],
+    "token-optimization": [
+      "Headroom"
+    ],
     "tokenization": [
       "Constrained decoding",
       "NLTK",
@@ -2364,6 +2441,7 @@
       "OpenClaw",
       "OpenHands",
       "Pattern - Agent sur LLM auto-hébergé",
+      "PraisonAI",
       "PydanticAI",
       "Semantic Kernel",
       "Structured outputs",
@@ -2385,6 +2463,9 @@
       "Langfuse",
       "Phoenix Arize",
       "TruLens"
+    ],
+    "traffic-analysis": [
+      "Sniffnet"
     ],
     "transfer-learning": [
       "Transfer learning vision",
@@ -2510,6 +2591,9 @@
       "Notebooks-as-code",
       "jupytext",
       "swarm-forge"
+    ],
+    "video-editing": [
+      "OpenCut"
     ],
     "video-generation": [
       "Video generation"
@@ -2990,6 +3074,46 @@
       ]
     },
     {
+      "path": "Dev/Outils/OpenCut.md",
+      "nom": "OpenCut",
+      "alias": [
+        "OpenCut-app/OpenCut",
+        "opencut"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/video",
+      "domaines": [],
+      "pitch": "Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés.",
+      "tags": [
+        "video-editing",
+        "privacy"
+      ],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/Page to Markdown.md",
+      "nom": "Page to Markdown",
+      "alias": [
+        "page-to-markdown",
+        "page to markdown by starterbuild"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/capture",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.",
+      "tags": [
+        "browser-extension",
+        "markdown-conversion",
+        "note-taking",
+        "privacy"
+      ],
+      "alternatives": []
+    },
+    {
       "path": "Dev/Outils/Penpot.md",
       "nom": "Penpot",
       "alias": [
@@ -3050,6 +3174,45 @@
       "alternatives": [
         "[[Dev/Outils/DBeaver|DBeaver]]"
       ]
+    },
+    {
+      "path": "Dev/Outils/SmartTube.md",
+      "nom": "SmartTube",
+      "alias": [
+        "SmartTubeNext",
+        "STN",
+        "yuliskov/SmartTube"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/video",
+      "domaines": [],
+      "pitch": "Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même.",
+      "tags": [
+        "media-player",
+        "privacy"
+      ],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/Sniffnet.md",
+      "nom": "Sniffnet",
+      "alias": [
+        "sniffnet",
+        "gyulyvgc/sniffnet"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "network/analysis",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.",
+      "tags": [
+        "networking",
+        "traffic-analysis"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Outils/Spec Kit.md",
@@ -3124,6 +3287,29 @@
       ]
     },
     {
+      "path": "Dev/Outils/croc.md",
+      "nom": "croc",
+      "alias": [
+        "croc",
+        "schollz/croc"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "network/transfer",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.",
+      "tags": [
+        "file-transfer",
+        "networking",
+        "cryptography",
+        "cli",
+        "self-hosted"
+      ],
+      "alternatives": []
+    },
+    {
       "path": "Dev/Outils/draw.io.md",
       "nom": "draw.io",
       "alias": [
@@ -3193,6 +3379,48 @@
         "prompting",
         "code-assistant",
         "agents"
+      ],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/llmfit.md",
+      "nom": "llmfit",
+      "alias": [
+        "llm-fit",
+        "alexsjones/llmfit"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "tooling/llm",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.",
+      "tags": [
+        "local-llm",
+        "hardware-sizing",
+        "quantization",
+        "benchmark",
+        "terminal-ui"
+      ],
+      "alternatives": []
+    },
+    {
+      "path": "Dev/Outils/osint4all.md",
+      "nom": "osint4all",
+      "alias": [
+        "osint4all",
+        "osint4all.github.io"
+      ],
+      "type": "outil",
+      "galaxie": "dev",
+      "categorie": "security/osint",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.",
+      "tags": [
+        "osint"
       ],
       "alternatives": []
     },
@@ -3625,7 +3853,8 @@
         "[[Dev/Services/AutoGen|AutoGen]]",
         "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
         "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]"
+        "[[Dev/Services/Letta|Letta]]",
+        "[[Dev/Services/PraisonAI|PraisonAI]]"
       ]
     },
     {
@@ -3804,7 +4033,8 @@
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]",
         "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Outils/swarm-forge|swarm-forge]]"
+        "[[Dev/Outils/swarm-forge|swarm-forge]]",
+        "[[Dev/Services/PraisonAI|PraisonAI]]"
       ]
     },
     {
@@ -3878,6 +4108,27 @@
         "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
         "[[Dev/Services/Ray Serve|Ray Serve]]"
       ]
+    },
+    {
+      "path": "Dev/Services/Beszel.md",
+      "nom": "Beszel",
+      "alias": [
+        "beszel",
+        "henrygd/beszel"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "observability/infra",
+      "domaines": null,
+      "pitch": "Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.",
+      "tags": [
+        "observability",
+        "metrics",
+        "self-hosted",
+        "dashboard",
+        "container"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Services/Captum.md",
@@ -4187,7 +4438,8 @@
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/smolagents|smolagents]]",
         "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Outils/swarm-forge|swarm-forge]]"
+        "[[Dev/Outils/swarm-forge|swarm-forge]]",
+        "[[Dev/Services/PraisonAI|PraisonAI]]"
       ]
     },
     {
@@ -4494,7 +4746,8 @@
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/LlamaParse|LlamaParse]]",
         "[[Dev/Services/Marker|Marker]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]",
+        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
       ]
     },
     {
@@ -5013,6 +5266,28 @@
         "[[Dev/Services/LlamaIndex|LlamaIndex]]",
         "[[Dev/Services/DSPy|DSPy]]"
       ]
+    },
+    {
+      "path": "Dev/Services/Headroom.md",
+      "nom": "Headroom",
+      "alias": [
+        "headroom",
+        "headroom-ai",
+        "headroomlabs"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/context",
+      "domaines": null,
+      "pitch": "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.",
+      "tags": [
+        "llm",
+        "context-engineering",
+        "token-optimization",
+        "caching",
+        "mcp"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Services/Helicone.md",
@@ -5861,7 +6136,8 @@
         "[[Dev/Services/Unstructured|Unstructured]]",
         "[[Dev/Services/Docling|Docling]]",
         "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]",
+        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
       ]
     },
     {
@@ -6375,6 +6651,35 @@
       ]
     },
     {
+      "path": "Dev/Services/OpenDataLoader PDF.md",
+      "nom": "OpenDataLoader PDF",
+      "alias": [
+        "opendataloader",
+        "opendataloader-pdf",
+        "open data loader pdf"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "data/parsing",
+      "domaines": null,
+      "pitch": "Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.",
+      "tags": [
+        "pdf",
+        "document-parsing",
+        "layout-analysis",
+        "table-extraction",
+        "markdown-conversion",
+        "rag",
+        "accessibility"
+      ],
+      "alternatives": [
+        "[[Dev/Services/Docling|Docling]]",
+        "[[Dev/Services/Unstructured|Unstructured]]",
+        "[[Dev/Services/Marker|Marker]]",
+        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+      ]
+    },
+    {
       "path": "Dev/Services/OpenHands.md",
       "nom": "OpenHands",
       "alias": [
@@ -6396,6 +6701,28 @@
       "alternatives": [
         "[[Dev/Outils/Maka|Maka]]"
       ]
+    },
+    {
+      "path": "Dev/Services/OpenMAIC.md",
+      "nom": "OpenMAIC",
+      "alias": [
+        "openmaic",
+        "maic",
+        "open-multi-agent-interactive-classroom"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/app",
+      "domaines": null,
+      "pitch": "Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.",
+      "tags": [
+        "llm",
+        "agents",
+        "multi-agent",
+        "education",
+        "self-hosted"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Services/OpenRouter.md",
@@ -6672,6 +6999,34 @@
         "[[Dev/Services/SQLite|SQLite]]",
         "[[Dev/Services/CockroachDB|CockroachDB]]",
         "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+      ]
+    },
+    {
+      "path": "Dev/Services/PraisonAI.md",
+      "nom": "PraisonAI",
+      "alias": [
+        "praisonai",
+        "praison-ai",
+        "praisonaiagents"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "llm/framework",
+      "domaines": null,
+      "pitch": "Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).",
+      "tags": [
+        "llm",
+        "agents",
+        "multi-agent",
+        "tool-use",
+        "low-code",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Dev/Services/CrewAI|CrewAI]]",
+        "[[Dev/Services/AutoGen|AutoGen]]",
+        "[[Dev/Services/Agno|Agno]]",
+        "[[Dev/Services/smolagents|smolagents]]"
       ]
     },
     {
@@ -7731,6 +8086,26 @@
       ]
     },
     {
+      "path": "Dev/Services/Stirling PDF.md",
+      "nom": "Stirling PDF",
+      "alias": [
+        "stirling-pdf",
+        "stirling",
+        "s-pdf"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "tooling/document",
+      "domaines": null,
+      "pitch": "Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.",
+      "tags": [
+        "pdf",
+        "ocr",
+        "self-hosted"
+      ],
+      "alternatives": []
+    },
+    {
       "path": "Dev/Services/Streamlit.md",
       "nom": "Streamlit",
       "alias": [
@@ -8195,7 +8570,8 @@
       "alternatives": [
         "[[Dev/Services/Docling|Docling]]",
         "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/Marker|Marker]]"
+        "[[Dev/Services/Marker|Marker]]",
+        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
       ]
     },
     {
@@ -8287,6 +8663,26 @@
         "[[Dev/Services/Milvus|Milvus]]",
         "[[Dev/Services/Pinecone|Pinecone]]"
       ]
+    },
+    {
+      "path": "Dev/Services/Web-Check.md",
+      "nom": "Web-Check",
+      "alias": [
+        "web-check",
+        "lissy93/web-check"
+      ],
+      "type": "service",
+      "galaxie": "dev",
+      "categorie": "security/recon",
+      "domaines": null,
+      "pitch": "Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.",
+      "tags": [
+        "recon",
+        "networking",
+        "osint",
+        "self-hosted"
+      ],
+      "alternatives": []
     },
     {
       "path": "Dev/Services/Weights & Biases.md",
@@ -9241,7 +9637,8 @@
         "[[Dev/Services/PyMuPDF|PyMuPDF]]",
         "[[Dev/Services/pdfplumber|pdfplumber]]",
         "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/Marker|Marker]]"
+        "[[Dev/Services/Marker|Marker]]",
+        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
       ]
     },
     {
@@ -9703,7 +10100,8 @@
         "[[Dev/Services/CrewAI|CrewAI]]",
         "[[Dev/Services/Agno|Agno]]",
         "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/Letta|Letta]]"
+        "[[Dev/Services/Letta|Letta]]",
+        "[[Dev/Services/PraisonAI|PraisonAI]]"
       ]
     },
     {

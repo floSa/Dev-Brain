@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
+alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
 remplace_par: []
 status: actif
 tags: [document-parsing, pdf, ocr, markdown-conversion, rag]
@@ -56,6 +56,7 @@ Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormai
 - [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 

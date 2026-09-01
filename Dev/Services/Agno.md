@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]"]
+alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, multi-agent]
@@ -55,11 +55,12 @@ Framework d'agents Python **haute performance**, anciennement **phidata** (rebra
 - [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
 - [[Dev/Services/smolagents|smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP.
 - [[Dev/Services/Letta|Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- [[Dev/Services/PraisonAI|PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
 ## Liens
 
 - **Ex-phidata** : même projet, renommé en janvier 2025.
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/Letta|Letta]], et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
+- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/Letta|Letta]], [[Dev/Services/PraisonAI|PraisonAI]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
 - Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie

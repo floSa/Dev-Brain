@@ -10,7 +10,7 @@ hosted: self
 maturite: deprecated
 langage: "Python, .NET"
 scaling: single-node
-alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Outils/swarm-forge|swarm-forge]]"]
+alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Outils/swarm-forge|swarm-forge]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
 remplace_par: []
 status: actif
 tags: [llm, agents, tool-use, multi-agent]
@@ -56,12 +56,13 @@ Framework **multi-agents** issu de **Microsoft Research**, popularisé par son m
 - [[Dev/Services/smolagents|smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
 - [[Dev/Services/Letta|Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
 - [[Dev/Outils/swarm-forge|swarm-forge]] — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
+- [[Dev/Services/PraisonAI|PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
 ## Liens
 
 - **Successeur** : Microsoft Agent Framework — fusion d'AutoGen et de [[Dev/Services/Semantic Kernel|Semantic Kernel]] ; nouveau socle Microsoft pour agents et workflows multi-agents.
 - **Fork communautaire** : AG2 (`ag2ai/ag2`) — continuité open-source du projet hors Microsoft.
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/Agno|Agno]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/Letta|Letta]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
+- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/Agno|Agno]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/Letta|Letta]], [[Dev/Services/PraisonAI|PraisonAI]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
 - Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://microsoft.github.io/autogen/

@@ -10,7 +10,7 @@ hosted: both
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]"]
+alternatives: ["[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
 remplace_par: []
 status: actif
 tags: [document-parsing, rag, ocr]
@@ -55,6 +55,7 @@ Unstructured est une boîte à outils **ETL open-source (Apache-2.0)** pour tran
 - [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 

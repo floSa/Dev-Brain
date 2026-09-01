@@ -52,7 +52,8 @@ tags: [multi-agent, agents, llm]
 - [[a2a-protocol]] — le protocole de coordination quand les agents sont **opaques** et relèvent d'organisations distinctes.
 - [[Reliability patterns]] — contenir la propagation d'erreurs d'un agent à l'autre.
 - Alternative : **un agent unique avec plusieurs outils** — souvent suffisant, toujours moins cher ; ne passer au multi-agents qu'avec une raison mesurée.
-- Mises en œuvre fichées : [[Dev/Outils/swarm-forge|swarm-forge]] (un agent par git worktree, handoffs sur tmux), [[Dev/Outils/freebuff|freebuff]] (agents spécialisés derrière une seule CLI).
+- Mises en œuvre fichées : [[Dev/Outils/swarm-forge|swarm-forge]] (un agent par git worktree, handoffs sur tmux), [[Dev/Outils/freebuff|freebuff]] (agents spécialisés derrière une seule CLI), [[Dev/Services/PraisonAI|PraisonAI]] (agents, tâches et processus déclarés en YAML).
+- Application clé en main : [[Dev/Services/OpenMAIC|OpenMAIC]] — classe virtuelle où professeur et camarades sont des agents distincts ; un cas où le multi-agents sert la mise en scène autant que la tâche.
 
 ## Pour aller plus loin
 

@@ -10,7 +10,7 @@ hosted: self
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
+alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
 remplace_par: []
 status: actif
 tags: [document-parsing, rag, table-extraction, layout-analysis]
@@ -55,6 +55,7 @@ Docling est une bibliothèque **open-source (MIT)** de l'équipe *AI for Knowled
 - [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 
