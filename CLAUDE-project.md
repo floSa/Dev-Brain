@@ -22,7 +22,7 @@ Le **DevBrain** est accessible via MCP sous le nom `devbrain`. Outils :
 - `mcp__devbrain__search` — recherche full-text dans le brain
 - `mcp__devbrain__list_files_in_dir` — lister un dossier
 - `mcp__devbrain__get_file_contents` — lire une note précise
-- `mcp__devbrain__patch_content` — modifier une section (utilisé pour logger un REX)
+- `mcp__devbrain__patch_content` — modifier une section
 - `mcp__devbrain__append_content` — append à un fichier
 
 Si le MCP n'est pas dispo : **alerte explicitement l'utilisateur**, ne fais pas de fallback silencieux.
@@ -47,8 +47,7 @@ Consulte le DevBrain :
    mcp__devbrain__search avec mots-clés du besoin
    ```
 2. Pour chaque service envisagé, lis :
-   - `Dev/Services/<nom>.md` (la fiche)
-   - `Dev/REX/REX - <nom>.md` (s'il existe — pièges connus)
+   - `Dev/Services/<nom>.md` (la fiche — sa section `## Pièges` porte les pièges connus)
 3. Cherche un **Pattern existant** : `Dev/Patterns/Pattern - <type>.md` (ex: Agent ReAct, RAG basique, Pipeline ELT moderne, Forecasting production).
 4. Cherche un **Comparatif** : `Dev/Patterns/Comparatif - <thème>.base` filtré par catégorie.
 
@@ -80,23 +79,7 @@ Il n'existe pas (encore) de skill `log-bug` en v2. Quand tu rencontres un bug li
 
 1. Reproduis et confirme la cause racine.
 2. Note dans `Projects/<projet>/Bugs.md` (DevBrain, via MCP) le détail du bug, contexte projet — ce dossier `Projects/` est un scaffold vide aujourd'hui, crée le fichier si besoin.
-3. **Et** ajoute (ou crée) un REX dans `Dev/REX/REX - <service>.md`, au format standard, via `mcp__devbrain__patch_content` / `append_content`.
-
-Format REX :
-
-```markdown
-## YYYY-MM-DD — <Symptôme court>
-
-**Symptôme** : <détails>
-**Cause racine** : <explication>
-**Fix** :
-1. ...
-2. ...
-**Référence** : [[Projects/<projet>/Bugs#YYYY-MM-DD]]
-**Leçon** : <synthèse réutilisable>
-```
-
-C'est ainsi que le brain s'enrichit naturellement depuis les projets.
+3. **Signale-le** à l'utilisateur comme piège à capitaliser dans la section `## Pièges` de la fiche `Dev/Services/<service>.md`. Tu n'écris pas dans `Dev/` depuis un projet : cette capture se fait en mode build, dans le vault.
 
 ## Audit ponctuel
 
@@ -110,7 +93,7 @@ Liste les écarts must. Liste les écarts should avec mon jugement requis.
 ## Ce que tu NE fais PAS
 
 - Ne modifie pas les fiches `Dev/Services/` ou `Dev/Outils/`. Elles sont **factuelles et durables** ; tu ne les touches qu'en mode BUILD.
-- Tu peux écrire dans `Dev/REX/REX - <service>.md` (création ou append d'une nouvelle entrée datée) — c'est l'usage prévu du mode projet.
+- N'écris rien dans `Dev/` — aucun pilier de la galaxie Dev n'est ouvert au mode projet.
 - Ne crée pas de nouvelles règles dans le brain (ça se fait en mode BUILD du brain).
 - Ne supprime rien dans le brain.
 - Ne dupliques pas le brain dans le projet (pas de `cp -r` du DevBrain).

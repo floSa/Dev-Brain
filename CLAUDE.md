@@ -11,7 +11,7 @@ tags: [meta]
 
 Tu es dans le DevBrain (v2, cf. `AI/design/brain-v2.md`). Ce vault sert **trois usages** :
 
-1. **Build** — enrichir le brain agent-readable (`Dev/Services`, `Dev/Patterns`, `Dev/Outils`, `Dev/Rules`, `Dev/REX`).
+1. **Build** — enrichir le brain agent-readable — quatre piliers Dev : `Dev/Services`, `Dev/Outils`, `Dev/Patterns`, `Dev/Rules`.
 2. **Projet** — utiliser le brain depuis un projet de dev (lancer Claude *dans le dossier projet*, pas ici).
 3. **Wiki** — entretenir l'espace de connaissance perso de l'utilisateur (`Wiki/Concepts`, à terme `Outils`/`Workflows`/`Roadmaps`). C'est sa mémoire à lui, à toi de ne pas la salir.
 
@@ -64,7 +64,7 @@ Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
 
 ## Ce que tu NE fais PAS sans confirmation explicite
 
-- Modifier des fiches `Dev/Services/*` existantes (en mode projet : tu peux ajouter un REX dans `Dev/REX/REX - <Service>.md` mais pas modifier la fiche service elle-même)
+- Modifier des fiches `Dev/Services/*` existantes (y compris leur section `## Pièges`) — en mode projet, aucune écriture dans `Dev/`
 - **Modifier ou créer des fichiers dans `Wiki/` sauf en mode wiki explicite ou demande explicite** (le wiki est l'espace perso de l'utilisateur — pas le tien)
 - Supprimer quoi que ce soit
 - Commit + push automatiques après validation (sans demander) ; jamais de --force/rebase sans accord
@@ -90,8 +90,7 @@ Dev/                        ← galaxie agent-readable (factuel, dense)
 ├── Services/                (briques à déployer : frameworks, BDD, libs…)
 ├── Outils/                  (outils techniques utilisés : clients GUI, CLI…)
 ├── Patterns/                (Comparatif - <thème>.base + Pattern - <nom>.md)
-├── Rules/                   (règles transverses : Rule - <nom>.md)
-└── REX/                     (retours d'expérience : REX - <Nom>.md, un fichier par service)
+└── Rules/                   (règles transverses : Rule - <nom>.md)
 
 Wiki/                       ← ESPACE PERSO DE L'UTILISATEUR (notions, skills perso)
 ├── Concepts/                (notions à comprendre — seul dossier peuplé aujourd'hui)
@@ -108,7 +107,7 @@ Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventi
 ├── general/                  (réutilisable : tags.md, taxonomie.md, themes.md, questions-projet.md)
 └── perso/                    (conventions.md, archetypes.md, machines.md, obsidian-graph.md, reservoir-v1.md)
 
-Templates/                   ← gabarits (Service-Dev, Concept-Wiki, Pattern, Rule, REX, REX-entry)
+Templates/                   ← gabarits (Service-Dev, Concept-Wiki, Pattern, Rule)
 Projects/                    ← log des projets en cours (scaffold, vide pour l'instant)
 
 AI/                          ← TON espace agent
@@ -137,16 +136,13 @@ AI/                          ← TON espace agent
 |------|--------|
 | Service Dev | `Dev/Services/<Nom>.md` |
 | Outil Dev | `Dev/Outils/<Nom>.md` |
-| **REX par service** | `Dev/REX/REX - <Nom>.md` (un fichier par service) |
 | Pattern | `Dev/Patterns/Pattern - <nom>.md` |
 | Comparatif | `Dev/Patterns/Comparatif - <thème>.base` |
 | Règle | `Dev/Rules/Rule - <nom>.md` |
 | Concept Wiki | `Wiki/Concepts/<Nom>.md` |
-| Entrée REX (section dans `REX - X.md`) | `## YYYY-MM-DD — <symptôme>` |
 
 **Convention wikilinks** (qualifiés par chemin pour éviter les collisions v1/v2) :
 - `[[Dev/Services/Postgres|Postgres]]` → fiche Service
-- `[[Dev/REX/REX - Postgres|REX - Postgres]]` → note de bugs
 - Pas d'ambiguïté possible.
 
 ## Protocole de session

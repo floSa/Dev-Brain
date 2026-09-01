@@ -48,7 +48,6 @@ Extension Postgres — comme [[Dev/Services/pgvector|pgvector]] — qui ajoute l
 - **Deux licences** : noyau Apache 2.0 vs fonctions Community sous TSL — vérifier ce qui est couvert.
 - Le multi-nœuds distribué est déprécié : penser scaling vertical + réplicas, pas sharding natif.
 - Bien dimensionner l'intervalle de chunk (partition temporelle) : trop fin ou trop large dégrade les perfs.
-- Retours d'expérience détaillés : `Dev/REX/REX - TimescaleDB.md`.
 
 ## Alternatives
 

@@ -32,13 +32,13 @@ Pré-requis : Obsidian, Git, Node.js ≥ 18, Python ≥ 3.10, [`uv`](https://doc
 |---|---|
 | **L'alimenter** | "ajoute Qdrant au brain", "documente le concept RAG" → le skill `enrichir-brain` crée/complète la fiche dans `Dev/` (technique) ou `Wiki/Concepts/` (notion), câble les liens, régénère l'index. |
 | **L'utiliser depuis un projet** | Depuis un *autre* projet, lancer `claude` avec `CLAUDE-project.md` en template → le skill `planifier-projet` interroge le brain et propose un stack sourcé (2-3 candidats par brique, avec pitch). |
-| **Logger un retour d'expérience** | "log un bug : timeout sur Postgres" → pas de skill dédié aujourd'hui, Claude écrit à la main dans `Dev/REX/REX - <service>.md`. |
+| **Logger un retour d'expérience** | "log un bug : timeout sur Postgres" → pas de skill dédié aujourd'hui, Claude écrit à la main dans la section `## Pièges` de `Dev/Services/<service>.md`. |
 
 ## Ce que contient le brain
 
 | | |
 |---|---|
-| **Dev/** (agent-readable) | Services, Outils, Patterns/Comparatifs, Règles, REX |
+| **Dev/** (agent-readable) | quatre piliers : Services, Outils, Patterns/Comparatifs, Règles |
 | **Wiki/** (perso) | Concepts (notions DS/ML/AI eng) — `Outils/`, `Workflows/`, `Roadmaps/` pas encore repeuplés |
 | **MOC/** | hubs de navigation générés automatiquement |
 | **Skills** | `enrichir-brain`, `planifier-projet` |
@@ -54,8 +54,7 @@ DevBrain/
 │   ├── Services/                 (briques à déployer : frameworks, BDD, libs…)
 │   ├── Outils/                   (outils utilisés : clients GUI, CLI…)
 │   ├── Patterns/                 (Comparatif - <thème>.base + Pattern - <nom>.md)
-│   ├── Rules/                    (règles transverses : Rule - <nom>.md)
-│   └── REX/                      (retours d'expérience : REX - <Nom>.md)
+│   └── Rules/                    (règles transverses : Rule - <nom>.md)
 │
 ├── Wiki/                         ← galaxie perso (humain, narratif)
 │   ├── Concepts/                 (notions DS/ML/AI eng — peuplé)
@@ -71,7 +70,7 @@ DevBrain/
 
 ## Conventions clés
 
-- **Wikilinks qualifiés par chemin** : `[[Dev/Services/Postgres|Postgres]]` (fiche), `[[Dev/REX/REX - Postgres|REX - Postgres]]` (retours d'expérience).
+- **Wikilinks qualifiés par chemin** : `[[Dev/Services/Postgres|Postgres]]` (fiche Service).
 - **Frontmatter dense sur chaque fiche Service** (`pitch`, `categorie`, `licence_type`, `hosted`, `maturite`, `alternatives`, `status`, `tags`...) — sert d'index plat pour Claude, sans avoir à charger le contenu.
 - **Trois niveaux de règle** : `must` (bloquant), `should` (par défaut, écarts signalés), `nice-to-have` (si possible).
 

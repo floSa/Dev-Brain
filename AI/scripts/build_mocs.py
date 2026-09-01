@@ -40,7 +40,7 @@ CAT_LABEL = {
     "network": "Réseau", "security": "Sécurité",
     "automation": "Automatisation no-code",
 }
-# Hubs Dev groupés sur `type:` et NON sur `categorie:` : les types pattern, rule et rex
+# Hubs Dev groupés sur `type:` et NON sur `categorie:` : les types pattern et rule
 # n'ont pas de `categorie:` (la taxonomie ne les couvre pas), une catégorie vide est falsy,
 # ils sortaient donc de toutes les MOC. `type:` est présent et fiable sur 100 % des pages.
 # On n'invente PAS de catégorie pour ces types : ce serait de la taxonomie, pas de la navigation.
@@ -48,17 +48,11 @@ CAT_LABEL = {
 TYPE_LABEL = {
     "pattern": "Patterns",
     "rule": "Rules",
-    "rex": "REX",  # place réservée — voir REX_MIN
 }
 TYPE_INTRO = {
     "pattern": "Architectures type — combinaisons de briques `Dev/` déjà éprouvées.",
     "rule": "Règles transverses, applicables quelle que soit la stack du projet.",
-    "rex": "Retours d'expérience — un fichier par service.",
 }
-# Le pilier REX n'est pas tranché (l'axe 6 de l'audit recommande une fusion). Tant que
-# Dev/REX/ ne contient que la fiche d'exemple, le hub REX n'est pas généré : le code lui
-# garde sa place, la décision reste à prendre.
-REX_MIN = 2
 
 THEME_LABEL = {
     "data-sci": "Data Science", "data-eng": "Data Engineering", "mlops": "MLOps",
@@ -162,10 +156,6 @@ def main() -> int:
             type_groups.setdefault(typ, []).append(p)
     for typ, members in sorted(type_groups.items()):
         label = TYPE_LABEL[typ]
-        if typ == "rex" and len(members) < REX_MIN:
-            skipped.append(f"MOC/Types/{label}.md — {len(members)} fiche(s) REX "
-                           f"(< {REX_MIN}) : pilier REX non tranché (axe 6)")
-            continue
         bullets = [bullet(p) for p in sorted(members, key=lambda e: e["nom"].lower())]
         upsert(MOC_TYPE / f"{label}.md", label, TYPE_INTRO[typ],
                bullets, "dev", f"type/{typ}")

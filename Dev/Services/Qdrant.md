@@ -48,7 +48,6 @@ Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** p
 - Métrique de distance figée à la création de la collection (Cosine / Dot / Euclidean), irréversible.
 - Paramètres HNSW (`m`, `ef_construct`, `ef`) à régler selon le compromis rappel / latence.
 - Quantification binaire : gain mémoire réel, mais perte de rappel possible sur petits embeddings.
-- Retours d'expérience détaillés : `Dev/REX/REX - Qdrant.md`.
 
 ## Alternatives
 
@@ -61,5 +60,4 @@ Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** p
 
 - [[Bases de données vectorielles]] — le concept (Wiki)
 - [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- `Dev/REX/REX - Qdrant.md` — retours d'expérience
 - Doc : https://qdrant.tech/documentation/

@@ -44,7 +44,6 @@ ORM de l'écosystème Node/TypeScript. Un fichier `schema.prisma` déclaratif d�
 
 - Écosystème **TypeScript** avant tout : le client Python est communautaire, pas l'usage principal.
 - L'abstraction peut gêner les requêtes très complexes (recours au SQL brut alors nécessaire).
-- Retours d'expérience détaillés : `Dev/REX/REX - Prisma.md`.
 
 ## Alternatives
 

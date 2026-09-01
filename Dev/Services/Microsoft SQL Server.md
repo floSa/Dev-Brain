@@ -48,7 +48,6 @@ SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosys
 - Coût de licence qui grimpe vite (modèle par cœur) — vérifier l'édition et les fonctionnalités incluses.
 - Verrouillage T-SQL : SQL non portable vers d'autres moteurs sans réécriture.
 - Limites strictes de l'édition Express (taille de base, RAM, CPU) à anticiper.
-- Retours d'expérience détaillés : `Dev/REX/REX - Microsoft SQL Server.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosys
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - Microsoft SQL Server.md` — retours d'expérience
 - Doc : https://learn.microsoft.com/en-us/sql/sql-server/

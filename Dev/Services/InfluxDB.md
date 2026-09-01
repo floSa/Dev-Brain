@@ -48,7 +48,6 @@ SGBD spécialisé **séries temporelles** : données horodatées (métriques, é
 - La **cardinalité des séries** (nombre de combinaisons de tags) est le facteur de coût mémoire historique — à maîtriser dès la modélisation.
 - Langage de requête mouvant selon les versions (InfluxQL, puis Flux, puis SQL en v3) — vérifier la version cible.
 - Pensé append : mises à jour et suppressions ponctuelles peu naturelles.
-- Retours d'expérience détaillés : `Dev/REX/REX - InfluxDB.md`.
 
 ## Alternatives
 

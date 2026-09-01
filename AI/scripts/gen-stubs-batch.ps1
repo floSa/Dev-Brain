@@ -82,7 +82,7 @@ function Write-Stub {
     [void]$sb.AppendLine("")
     [void]$sb.AppendLine("## Pieges connus")
     if ($Pitfalls.Count -eq 0) {
-        [void]$sb.AppendLine("- (a enrichir via REX)")
+        [void]$sb.AppendLine("- (a enrichir au fil des projets)")
     } else {
         foreach ($p in $Pitfalls) { [void]$sb.AppendLine("- $p") }
     }

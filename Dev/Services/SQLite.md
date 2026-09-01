@@ -48,7 +48,6 @@ Moteur SQL **embarqué** : pas de serveur, pas de processus à administrer — l
 - Un seul écrivain à la fois : verrou sur toute la base, pas adapté au write-heavy concurrent.
 - Typage dynamique (« type affinity ») laxiste — contraintes plus souples qu'attendu.
 - Pas de gestion d'utilisateurs ni de droits réseau : sécurité = droits du fichier.
-- Retours d'expérience détaillés : `Dev/REX/REX - SQLite.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ Moteur SQL **embarqué** : pas de serveur, pas de processus à administrer — l
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - SQLite.md` — retours d'expérience
 - Doc : https://www.sqlite.org/docs.html

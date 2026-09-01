@@ -33,7 +33,7 @@ url_repo:
 <!-- self-host vs managé, prix indicatif, scaling (single-node | distributed | serverless) -->
 
 ## Pièges
-- <!-- court ; les vrais retours d'expérience vont dans `Dev/REX/REX - <% tp.file.title %>.md` -->
+- <!-- pièges connus et retours d'expérience de la brique -->
 
 ## Alternatives
 <!-- reprendre, pour chaque cible, son pitch d'une ligne (champ `pitch:` de sa page) -->

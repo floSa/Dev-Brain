@@ -44,7 +44,6 @@ Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (co
 
 - Une route déclarée `def` (et non `async def`) qui fait de l'I/O bloque l'event loop sous charge → la basculer en `async def` ou la déporter dans un threadpool.
 - Dépendance forte à Pydantic : la migration Pydantic v1 → v2 a changé l'API de validation.
-- Retours d'expérience détaillés : `Dev/REX/REX - FastAPI.md`.
 
 ## Alternatives
 

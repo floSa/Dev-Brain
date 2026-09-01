@@ -47,7 +47,6 @@ Micro-framework web Python **synchrone (WSGI)**. « Micro » ne veut pas dire li
 - Le serveur de développement (`flask run`) est mono-thread par défaut et inadapté à la prod — oubli classique.
 - Modèle **synchrone** : une vue qui bloque sur de l'I/O monopolise un worker ; dimensionner les workers, ne pas compter sur l'`async` comme sur une pile ASGI.
 - « Micro » = beaucoup de choix laissés à l'intégrateur : sans discipline, les extensions et patterns divergent d'un projet à l'autre.
-- Retours d'expérience détaillés : `Dev/REX/REX - Flask.md`.
 
 ## Alternatives
 

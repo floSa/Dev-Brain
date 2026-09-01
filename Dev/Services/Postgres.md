@@ -48,7 +48,6 @@ SGBD relationnel-objet conforme SQL, réputé pour sa robustesse et son **extens
 - VACUUM et bloat à surveiller sous forte charge d'`UPDATE`/`DELETE`.
 - Connexions coûteuses : passer un pooler (PgBouncer) au-delà de quelques centaines.
 - Paramètres par défaut conservateurs (`work_mem`, `shared_buffers`) — tuning souvent nécessaire.
-- Retours d'expérience détaillés : `Dev/REX/REX - Postgres.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ SGBD relationnel-objet conforme SQL, réputé pour sa robustesse et son **extens
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - Postgres.md` — retours d'expérience
 - Doc : https://www.postgresql.org/docs/

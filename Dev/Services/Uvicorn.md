@@ -45,7 +45,6 @@ Serveur **ASGI** pour Python : il exécute les applications web asynchrones ([[D
 - `uvicorn[standard]` (uvloop/httptools) est nettement plus rapide que l'install minimale — penser à l'extra.
 - `uvloop` n'est pas disponible sous Windows : event loop asyncio standard par défaut.
 - Repo et docs déplacés (`encode` → `Kludex`, `uvicorn.dev`) : d'anciens liens pointent encore vers `encode/uvicorn` / `uvicorn.org`.
-- Retours d'expérience détaillés : `Dev/REX/REX - Uvicorn.md`.
 
 ## Alternatives
 

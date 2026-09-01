@@ -48,7 +48,6 @@ Framework d'**apps data en Python pur** : on écrit un script linéaire, chaque 
 - Le re-run complet à chaque interaction surprend : sans `@st.cache_*`, les calculs et I/O lourds repartent à chaque clic.
 - `st.session_state` est nécessaire dès qu'on veut conserver un état entre les re-runs.
 - Mise en page contrainte (flux vertical, colonnes) : peu adapté aux layouts complexes ou très denses.
-- Retours d'expérience détaillés : `Dev/REX/REX - Streamlit.md`.
 
 ## Alternatives
 

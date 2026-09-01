@@ -204,7 +204,7 @@ Constat brut, à toi de décider si tu veux les amorcer :
 - `Wiki/Roadmaps/` — **vide**.
 - `Wiki/Workflows/` — **vide**. Aucune procédure capturée alors que tu en répètes (scraping→matching→optim, ingestion RAG, entraînement self-play).
 - `Dev/Rules/` — **vide** (cf. §5).
-- `Dev/REX/` — un seul fichier (`REX - Postgres`). Beaucoup de tes galères (Playwright/session, WSL2+GPU+Docker, NebulaGraph) ne sont pas capitalisées.
+- **Retours d'expérience** — le pilier REX séparé est supprimé (audit axe 6, option B, le 2026-09-02) : les retours vont dans la section `## Pièges` de la fiche Service. Beaucoup de tes galères (Playwright/session, WSL2+GPU+Docker, NebulaGraph) n'y sont toujours pas capitalisées.
 
 ---
 

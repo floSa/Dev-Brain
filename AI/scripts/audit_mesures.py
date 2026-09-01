@@ -201,18 +201,8 @@ def main() -> int:
     w(f"- Tags employes **une seule fois** : {sum(1 for n in tag_used.values() if n == 1)}")
     w("")
 
-    # ---------- 8. couverture REX
-    rex = sorted(glob.glob(str(VAULT / "Dev/REX/*.md")))
-    services = [fm.get("nom") for fm, _ in pages.values() if fm.get("type") == "service"]
-    w("## 8. Couverture REX")
-    w("")
-    w(f"- Fiches dans `Dev/REX/` : **{len(rex)}** — {', '.join(Path(r).stem for r in rex) or 'aucune'}")
-    w(f"- Services fiches : **{len(services)}**")
-    w(f"- Taux de couverture : **{100 * len(rex) / max(len(services), 1):.1f} %**")
-    w("")
-
-    # ---------- 9. faits perissables
-    w("## 9. Faits perissables declares")
+    # ---------- 8. faits perissables
+    w("## 8. Faits perissables declares")
     w("")
     counts = collections.Counter()
     for fm, body in pages.values():
@@ -234,9 +224,9 @@ def main() -> int:
     w("Aucun de ces faits n'est horodate ni re-verifie par un script : c'est l'objet de l'axe 4.")
     w("")
 
-    # ---------- 10. ce que check_brain verifie
+    # ---------- 9. ce que check_brain verifie
     cb = (VAULT / "AI/scripts/check_brain.py").read_text(encoding="utf-8")
-    w("## 10. Perimetre du validateur")
+    w("## 9. Perimetre du validateur")
     w("")
     w("Regles DURES implementees dans `check_brain.py` :")
     w("")
@@ -260,7 +250,7 @@ def main() -> int:
       "Une page de ces types peut porter n'importe quel champ sans que rien ne le signale.")
     w("")
     w("Non verifie (constate par lecture du script) : synchronisation des pitchs, valeurs de")
-    w("`domaines:` contre `themes.md`, gabarits `outil` / `pattern` / `rule` / `rex`, joignabilite")
+    w("`domaines:` contre `themes.md`, gabarits `outil` / `pattern` / `rule`, joignabilite")
     w("des URLs, coherence de `remplace_par:`, pages orphelines, couverture des comparatifs `.base`.")
 
     print("\n".join(out))

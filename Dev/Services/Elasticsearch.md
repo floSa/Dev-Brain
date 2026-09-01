@@ -48,7 +48,6 @@ Moteur de **recherche et d'analytique distribué** bâti sur Apache Lucene. Inde
 - Gourmand en RAM : heap JVM plus cache du système de fichiers.
 - Sur-sharding ou mapping mal pensé dégradent perfs et stockage.
 - Quasi temps réel (intervalle de refresh) : ce n'est pas une base transactionnelle.
-- Retours d'expérience détaillés : `Dev/REX/REX - Elasticsearch.md`.
 
 ## Alternatives
 

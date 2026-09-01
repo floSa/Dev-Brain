@@ -48,7 +48,6 @@ Moteur de **recherche vectorielle end-to-end** (Apache-2.0) : contrairement à u
 - **Déprécié / non maintenu** : pas de patch de sécurité — risque de conformité en production.
 - L'inférence intégrée simplifie l'usage mais **couple** le moteur au choix de modèle et à sa charge GPU.
 - Le pivot e-commerce oriente le produit commercial vers un cas d'usage précis — vérifier l'adéquation.
-- Retours d'expérience détaillés : `Dev/REX/REX - Marqo.md`.
 
 ## Alternatives
 

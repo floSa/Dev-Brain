@@ -325,8 +325,6 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `templating` | Moteur de templates — génération de texte/HTML à partir de gabarits et de données (rendu côté serveur, héritage de templates, échappement automatique) |
 | `authentication` | Authentification — vérification d'identité et gestion des accès (tokens, sessions, JWT, OAuth/OIDC) |
 | `cryptography` | Primitives cryptographiques — signature et vérification, HMAC, chiffrement à clé symétrique / asymétrique (RSA, ECDSA, EdDSA) |
-| `rex` | Marqueur de type — page de retour d'expérience (`Dev/REX/`). Imposé par le gabarit REX |
-| `bugs` | Marqueur de type — REX centré sur des bugs / incidents rencontrés. Imposé par le gabarit REX |
 | `pattern` | Marqueur de type — page de pattern / décision d'architecture (`Dev/Patterns/`). Imposé par le gabarit Pattern |
 | `rule` | Marqueur de type — page de règle transverse (`Dev/Rules/`). Imposé par le gabarit Rule |
 

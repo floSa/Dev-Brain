@@ -97,7 +97,7 @@ def main() -> int:
                 backlinks[nm].add(p["nom"])
             elif key in resolvable:
                 res.append(t)  # cible valide non-page (ex. une vue .base)
-            elif not key.startswith("rex - "):
+            else:
                 unresolved.append((p["nom"], t))
         p["res"] = sorted(set(res))
 
@@ -130,7 +130,7 @@ def main() -> int:
         L.append(f"- `{tg}` : {', '.join(sorted(set(tagpages[tg])))}{flag}")
 
     L += ["", "## À créer (gaps)", "",
-          "**Liens non résolus** (cibles inexistantes, hors `REX - *` en attente) :"]
+          "**Liens non résolus** (cibles inexistantes) :"]
     L += [f"- depuis [[{a}]] → `{b}`" for a, b in sorted(set(unresolved))] or ["- aucun"]
     L += ["", "**Tags sans page concept dédiée** (sujets candidats à créer) :"]
     missing = sorted(t for t in tagpages if slug(t) not in covered)

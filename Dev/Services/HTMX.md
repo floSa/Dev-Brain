@@ -45,7 +45,6 @@ Petite bibliothèque JavaScript (sans dépendance) qui étend le HTML : des attr
 - L'interactivité reposant sur des allers-retours serveur, la **latence réseau** se ressent sur chaque interaction (mitiger par fragments ciblés, pas de full-page).
 - Le serveur doit savoir renvoyer des **fragments** HTML partiels distincts des pages complètes — discipline de templating à tenir.
 - Peut pousser à mettre de la logique d'UI dans des attributs HTML peu testables si l'on en abuse.
-- Retours d'expérience détaillés : `Dev/REX/REX - HTMX.md`.
 
 ## Alternatives
 

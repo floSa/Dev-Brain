@@ -44,7 +44,6 @@ Outil de migration **SQL-first** : les changements sont des fichiers SQL numéro
 
 - Pas d'abstraction : un même changement doit être réécrit par moteur si l'on cible plusieurs SGBD.
 - L'undo (rollback) est réservé aux éditions payantes.
-- Retours d'expérience détaillés : `Dev/REX/REX - Flyway.md`.
 
 ## Alternatives
 

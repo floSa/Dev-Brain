@@ -48,7 +48,6 @@ Moteur de **recherche et de serving IA** open-source (Apache-2.0), issu de Yahoo
 - **Complexité opérationnelle** réelle : modèle de déploiement, schémas, ranking profiles à maîtriser.
 - Configuration verbeuse (schémas, services) ; itérer demande des redéploiements.
 - Surdimensionné pour un besoin de recherche basique — ne pas y aller « par défaut ».
-- Retours d'expérience détaillés : `Dev/REX/REX - Vespa.md`.
 
 ## Alternatives
 

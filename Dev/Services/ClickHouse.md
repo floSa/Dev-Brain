@@ -48,7 +48,6 @@ SGBD **orienté colonnes** conçu pour l'OLAP. Les données sont stockées et tr
 - Updates et deletes coûteux (mutations asynchrones) — pas pour l'écriture en place.
 - Cohérence éventuelle sur la réplication.
 - Le choix du moteur de table (famille MergeTree) et des clés de tri détermine les perfs.
-- Retours d'expérience détaillés : `Dev/REX/REX - ClickHouse.md`.
 
 ## Alternatives
 

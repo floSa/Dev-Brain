@@ -49,7 +49,6 @@ Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de r
 - **Maintenance ralentie** (0.0.9, fév. 2025) : surveiller la compatibilité des dépendances avant un usage durable.
 - Index **multi-vecteur volumineux** : prévoir le stockage ; PLAID atténue mais ne supprime pas le surcoût.
 - ColBERT ≠ cross-encoder : c'est un retriever/scorer multi-vecteur, pas un simple reranker de paire — calibrer l'usage.
-- Retours d'expérience détaillés : `Dev/REX/REX - RAGatouille.md`.
 
 ## Alternatives
 

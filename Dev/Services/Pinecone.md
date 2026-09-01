@@ -49,7 +49,6 @@ Base vectorielle entièrement managée, pionnière du secteur. Architecture serv
 - Lock-in propriétaire : pas de dépôt, pas de migration triviale, métrique figée à la création de l'index.
 - Coût serverless à surveiller sur gros débit de lecture — modèle à l'usage qui peut surprendre.
 - Pas de réglage fin des paramètres d'index (HNSW & co) : la base décide.
-- Retours d'expérience détaillés : `Dev/REX/REX - Pinecone.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ Base vectorielle entièrement managée, pionnière du secteur. Architecture serv
 
 - [[Bases de données vectorielles]] — le concept (Wiki)
 - [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- `Dev/REX/REX - Pinecone.md` — retours d'expérience
 - Doc : https://docs.pinecone.io

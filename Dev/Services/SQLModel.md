@@ -46,7 +46,6 @@ Couche fine qui réconcilie [[Dev/Services/Pydantic|Pydantic]] (validation, sér
 - **Pré-1.0** (0.0.x) : périmètre volontairement réduit ; certaines fonctions SQLAlchemy ne sont accessibles qu'en retombant sur l'API sous-jacente.
 - Double héritage Pydantic + table : bien distinguer les modèles `table=True` (persistés) des modèles de données purs (DTO de validation), sinon confusion entre schéma API et schéma BDD.
 - Hérite des pièges SQLAlchemy : requêtes **N+1**, chargement paresseux.
-- Retours d'expérience détaillés : `Dev/REX/REX - SQLModel.md`.
 
 ## Alternatives
 

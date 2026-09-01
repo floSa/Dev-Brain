@@ -137,7 +137,7 @@ Tu vas installer ces 4 plugins. Pour chacun : tape son nom dans la barre de rech
 | # | Plugin | Auteur (id repo) | Rôle dans DevBrain |
 |---|--------|------------------|---------------------|
 | 1 | **Local REST API & MCP Server** | Adam Coddington (`coddingtonbear`) | Expose le vault via HTTPS sécurisé. Sans lui, **Claude Code ne peut rien lire ni écrire** dans ton brain. |
-| 2 | **Templater** | SilentVoid13 | Remplit automatiquement les nouvelles fiches (Service, REX, Projet) avec le bon frontmatter, la date du jour, l'arborescence cible. |
+| 2 | **Templater** | SilentVoid13 | Remplit automatiquement les nouvelles fiches (Service, Concept, Pattern) avec le bon frontmatter, la date du jour, l'arborescence cible. |
 | 3 | **Dataview** | blacksmithgu | Permet d'écrire des requêtes type SQL sur le frontmatter (`LIST FROM "Dev/Services" WHERE score=5`). Sert de fallback si tu n'utilises pas encore les `.base`. |
 | 4 | **File Hider** | Oliver Akins (`eldritch-oliver`) | Cache `AI/` (mémoire et hooks de l'agent) et autres dossiers techniques de la sidebar, pour que ta vue reste propre. |
 
@@ -171,9 +171,9 @@ Dès qu'il est activé, le serveur tourne. Tu peux le vérifier dans n'importe q
 
 - le **frontmatter standardisé** (`nom`, `categorie`, `pitch`, `licence_type`, etc. — ~14 champs, cf. `Templates/Service-Dev.md`)
 - les **sections markdown obligatoires** (`## Pourquoi`, `## Quand l'utiliser`, `## Pièges`, `## Liens`)
-- des **wikilinks pré-remplis** vers `REX - <nom>` etc.
+- des **wikilinks pré-remplis** vers les pages liées
 
-Sans Templater, tu devrais recopier ces lignes à la main à chaque nouvelle fiche. Les autres gabarits (`Concept-Wiki.md`, `Pattern.md`, `Rule.md`, `REX.md`) fonctionnent pareil.
+Sans Templater, tu devrais recopier ces lignes à la main à chaque nouvelle fiche. Les autres gabarits (`Concept-Wiki.md`, `Pattern.md`, `Rule.md`) fonctionnent pareil.
 
 Reviens à la liste *(flèche ← en haut à gauche, ou clique sur la barre de recherche puis efface)*, retape `Templater`. Le bon résultat est de **SilentVoid13** (~4M téléchargements). Clique sur sa carte → **Installer** → **Activer**.
 
@@ -350,7 +350,7 @@ Les **skills custom DevBrain** (`enrichir-brain`, `planifier-projet`) sont déj�
 
 Le brain est structuré en 3 **galaxies** portées par le champ `galaxie:` du frontmatter, plus un regroupement visuel par chemin pour les skills (qui n'ont pas ce champ) :
 
-- 🔵 **DEV** (`#3B82F6` bleu acier) — outils & pratiques : `Dev/` (Services, Patterns, Outils, Rules, REX)
+- 🔵 **DEV** (`#3B82F6` bleu acier) — outils & pratiques : `Dev/` (Services, Patterns, Outils, Rules)
 - 🟢 **WIKI** (`#10B981` vert sauge) — pensée & savoir : `Wiki/Concepts/` (peuplé), `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` (vides, pas encore remigrés)
 - ⚪ **META** (`#94A3B8` slate-gray) — docs du brain lui-même : `CHANGELOG.md`, `README.md`, `INSTALL.md`, `Home.md`, `Inbox.md`, `CLAUDE*.md`, `CONTRIBUTING.md`, + `Documentation/`, `AI/design/`, `AI/scripts/`
 - 🟣 **SKILLS** (`#8B5CF6` violet, regroupement par chemin) — `.claude/skills/` : les `SKILL.md` portent le frontmatter Anthropic strict, sans champ `galaxie:`

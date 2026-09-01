@@ -9,7 +9,7 @@ tags: [meta, build-mode]
 
 # CLAUDE-build.md — Mode construction du DevBrain
 
-Tu es en mode **BUILD** : on enrichit le brain. Toute modification est lecture/écriture légitime sur `Dev/` (Services, Outils, Patterns, Rules, REX), `Templates/`, `Documentation/`, `AI/`. Suis ces conventions strictement. Spec de référence : `AI/design/brain-v2.md`.
+Tu es en mode **BUILD** : on enrichit le brain. Toute modification est lecture/écriture légitime sur `Dev/` (quatre piliers : Services, Outils, Patterns, Rules), `Templates/`, `Documentation/`, `AI/`. Suis ces conventions strictement. Spec de référence : `AI/design/brain-v2.md`.
 
 > ⚠️ **Wiki/ est hors-périmètre du mode build**, sauf pour `Wiki/Concepts/` que le skill `enrichir-brain` alimente en même temps que `Dev/` (il ne fait pas de bascule de mode). Ne touche pas à `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` en mode build — ils appartiennent au mode wiki (cf. CLAUDE.md, section *Mode wiki*), et sont vides tant que le contenu v1 n'a pas été remigré.
 
@@ -19,7 +19,7 @@ Toute fiche du brain a un champ `galaxie:` dans son frontmatter (sauf les `SKILL
 
 | Galaxie | Dossiers | Mode d'écriture |
 |---|---|---|
-| **`dev`** | `Dev/Services/`, `Dev/Outils/`, `Dev/Patterns/`, `Dev/Rules/`, `Dev/REX/` | mode build |
+| **`dev`** | `Dev/Services/`, `Dev/Outils/`, `Dev/Patterns/`, `Dev/Rules/` | mode build |
 | **`wiki`** | `Wiki/Concepts/`, `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` | mode wiki (+ `Concepts/` via `enrichir-brain`) |
 | **`meta`** | docs racine (README, CHANGELOG, INSTALL, CLAUDE*, CONTRIBUTING, Home, Inbox) + `Documentation/`, `AI/design/`, `AI/scripts/` | tout mode |
 
@@ -106,7 +106,6 @@ Catégorie qui ne correspond à rien de listé → **demander avant d'inventer**
 | Périmètre | Valeurs |
 |---|---|
 | Services / Outils Dev | `actif`, `en-eval`, `abandonne` |
-| REX (`Dev/REX/`) | n/a (frontmatter REX dédié) |
 
 ### Corps de la fiche Service/Outil
 
@@ -119,7 +118,7 @@ Sections types (cf. `AI/design/brain-v2.md` §5.1, `Templates/Service-Dev.md`) :
 ## Quand l'utiliser  (bullets)
 ## Quand NE PAS      (bullets + wikilinks vers alternatives)
 ## Déploiement & coût (self-host vs managé, prix, scaling — pour les Services)
-## Pièges            (court → détail dans [[Dev/REX/REX - <Nom>|REX - <Nom>]] si ça existe)
+## Pièges            (pièges connus et retours d'expérience de la brique)
 ## Alternatives
 - [[Dev/Services/X|X]] — reprend le pitch de X
 ## Liens
@@ -127,65 +126,7 @@ Sections types (cf. `AI/design/brain-v2.md` §5.1, `Templates/Service-Dev.md`) :
 
 **Mécanique du pitch (anti-duplication)** : chaque page porte SON `pitch:` dans le frontmatter, écrit une seule fois. La ligne affichée dans la section *Alternatives* d'une autre page, et dans les propositions de `planifier-projet`, est **réinjectée** depuis ce pitch — jamais retapée à la main. `enrichir-brain` synchronise.
 
-**Important** : les **REX / bugs** ne vont PAS dans `Dev/Services/` ou `Dev/Outils/` — ils ont leur propre dossier `Dev/REX/REX - <Nom>.md` (cf. section suivante).
-
-## Conventions REX (dossier `Dev/REX/`)
-
-Les retours d'expérience (bugs rencontrés, pièges, leçons) sont **séparés** des fiches Service/Outil. Ils vivent dans `Dev/REX/REX - <Nom>.md` — un fichier par service.
-
-### Pourquoi séparer
-
-- Les fiches Service/Outil restent **factuelles et durables** (lisibles et partageables).
-- Les REX sont **personnels et évoluent** (une entrée par session quand un bug arrive).
-- Wikilinks clairs : `[[Dev/Services/Postgres|Postgres]]` = fiche Service, `[[Dev/REX/REX - Postgres|REX - Postgres]]` = retours d'expérience.
-
-### Frontmatter REX
-
-```yaml
----
-galaxie: dev
-service: "<Nom>"
-type: rex
-created: <YYYY-MM-DD>
-modified: <YYYY-MM-DD>
-tags: [rex, bugs, <nom>]
----
-```
-
-### Format d'une entrée REX
-
-```markdown
-## YYYY-MM-DD — <Symptôme court>
-
-**Symptôme** : <ce qu'on a vu, logs, erreurs, comportement>
-
-**Cause racine** : <ce qui le causait réellement>
-
-**Fix** :
-1. ...
-2. ...
-
-**Référence** : [[Projects/<projet>/Bugs#YYYY-MM-DD]]
-
-**Leçon** : <synthèse réutilisable, ce qu'on aurait dû savoir avant>
-```
-
-Tri : **plus récent en haut**.
-
-### Création initiale d'un fichier REX
-
-1. Créer `Dev/REX/REX - <Nom>.md` avec le frontmatter ci-dessus
-2. Titre H1 : `# REX — <Nom>`
-3. Phrase de présentation : `> Retours d'expérience et bugs rencontrés avec [[Dev/Services/<Nom>|<Nom>]].`
-4. Première entrée datée
-
-### Mise à jour des liens dans la fiche Service
-
-Quand on crée un fichier REX pour un service, ajouter dans la section "Liens" de la fiche Service :
-
-```markdown
-- [[Dev/REX/REX - <Nom>|REX - <Nom>]] — REX accumulés
-```
+**Important** : les **retours d'expérience et bugs rencontrés** vont dans la section `## Pièges` de la fiche Service/Outil concernée. Il n'y a pas de dossier séparé.
 
 ## Conventions Patterns (`Dev/Patterns/`)
 
@@ -277,11 +218,10 @@ Si l'utilisateur fournit une URL : utilise le skill `defuddle` (kepano) pour ext
 Exemple de proposition :
 ```
 À commit :
-- Dev/Services/Postgres.md (modifié — section Liens)
-- Dev/REX/REX - Postgres.md (nouveau)
+- Dev/Services/Postgres.md (modifié — section Pièges)
 
 Message suggéré :
-docs(postgres): add REX file with connection pool incident
+docs(postgres): ajoute le piege de saturation du pool de connexions
 ```
 
 ## Anti-patterns à éviter

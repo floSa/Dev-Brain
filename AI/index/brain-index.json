@@ -5,7 +5,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 647,
+  "count": 646,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,9 +197,6 @@
     ],
     "browser-extension": [
       "Page to Markdown"
-    ],
-    "bugs": [
-      "REX - Postgres"
     ],
     "caching": [
       "Headroom",
@@ -1828,7 +1825,6 @@
     ],
     "postgres": [
       "Postgres",
-      "REX - Postgres",
       "TimescaleDB",
       "pgAdmin",
       "pgvector",
@@ -2103,9 +2099,6 @@
     ],
     "reward-shaping": [
       "Reward shaping and hacking"
-    ],
-    "rex": [
-      "REX - Postgres"
     ],
     "routing": [
       "OmniRoute",
@@ -3636,22 +3629,6 @@
         "data-app",
         "container",
         "object-storage"
-      ],
-      "alternatives": null
-    },
-    {
-      "path": "Dev/REX/REX - Postgres.md",
-      "nom": "REX - Postgres",
-      "alias": null,
-      "type": "rex",
-      "galaxie": "dev",
-      "categorie": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rex",
-        "bugs",
-        "postgres"
       ],
       "alternatives": null
     },

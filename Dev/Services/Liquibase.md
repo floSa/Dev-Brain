@@ -44,7 +44,6 @@ Gère l'évolution d'un schéma de base comme du code versionné. Les changement
 
 - L'abstraction XML/YAML ajoute une couche : sur un seul SGBD, le SQL brut est parfois plus simple.
 - Les rollbacks automatiques ne couvrent pas tous les changements (DDL destructifs) — à tester.
-- Retours d'expérience détaillés : `Dev/REX/REX - Liquibase.md`.
 
 ## Alternatives
 

@@ -25,7 +25,6 @@ tags: [meta]
 | `Dev/Outils/` | build | Fiches outils techniques utilisés (clients GUI, CLI…) | skill `enrichir-brain` |
 | `Dev/Patterns/` | build | Patterns archi + comparatifs `.base` | skill `enrichir-brain` |
 | `Dev/Rules/` | build | Règles transverses | éditeur direct |
-| `Dev/REX/` | build, project | REX par service | éditeur direct / `mcp__devbrain__patch_content` (pas de skill dédié en v2) |
 | `Wiki/Concepts/` | wiki (+ build via `enrichir-brain`) | Notions à retrouver vite | skill `enrichir-brain` / Templater `Concept-Wiki` |
 | `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` | wiki | Vides — contenu v1 pas encore remigré | — |
 | `MOC/` | généré | Hubs de navigation (Themes/Categories/Concepts) | `AI/scripts/build_mocs.py`, ne pas éditer à la main |
@@ -87,11 +86,11 @@ Le skill `enrichir-brain` fait l'équivalent dans `Wiki/Concepts/<nom>.md`.
 
 ### Logger un bug rencontré
 
-Pas de skill dédié en v2. En mode build ou project :
+Pas de skill dédié en v2. En mode build :
 ```
 > log un bug : <symptôme> sur <service>
 ```
-Crée ou enrichis `Dev/REX/REX - <Service>.md` avec une entrée datée, au format standard (cf. `CLAUDE-build.md`).
+Ajoute le piège dans la section `## Pièges` de `Dev/Services/<Service>.md` (cf. `CLAUDE-build.md`).
 
 ### Comparer des services
 
@@ -113,7 +112,7 @@ docs(<scope>): améliore Z
 chore(<scope>): refactor/nettoyage W
 ```
 
-Scopes courants : `services`, `outils`, `wiki`, `patterns`, `rules`, `rex`, `moc`, `documentation`, `infra`, `docs`, `templates`.
+Scopes courants : `services`, `outils`, `wiki`, `patterns`, `rules`, `moc`, `documentation`, `infra`, `docs`, `templates`.
 
 Exemples vus dans l'historique récent :
 - `docs(brain): catégorie automation + 5 services no-code`

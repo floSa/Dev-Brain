@@ -45,7 +45,7 @@ Mode build ou projet. Lit `AI/index/brain-index.json`, `Dev/` (Services, Pattern
    - requêter `AI/index/brain-index.json` (filtrer par `categorie`, `tags`, contraintes) ;
    - proposer **2-3 candidats**, chacun affiché avec son **pitch d'une ligne** (champ `pitch:` de l'index) ;
    - laisser l'utilisateur trancher.
-6. **Produire le plan / cahier des charges**, sourcé : chaque choix renvoie à sa fiche (`[[Dev/Services/...]]`, `[[Pattern - ...]]`, `[[Rules/...]]`) et porte la raison du choix + les alternatives écartées. Inclure les risques connus si un `Dev/REX/REX - <X>.md` existe.
+6. **Produire le plan / cahier des charges**, sourcé : chaque choix renvoie à sa fiche (`[[Dev/Services/...]]`, `[[Pattern - ...]]`, `[[Rules/...]]`) et porte la raison du choix + les alternatives écartées. Inclure les risques connus depuis la section `## Pièges` des fiches retenues.
 
 ## Format de sortie
 
@@ -63,7 +63,7 @@ Mode build ou projet. Lit `AI/index/brain-index.json`, `Dev/` (Services, Pattern
 - [[Pattern - <Y>]]
 
 ## Risques connus
-- (depuis [[REX - <X>]] si présent)
+- (depuis la section `## Pièges` des fiches retenues)
 
 ## Contraintes pour l'IA de dev
 - <règles issues de Dev/Rules/ + conventions perso>

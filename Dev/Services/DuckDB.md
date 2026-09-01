@@ -48,7 +48,6 @@ Base analytique **in-process** (embarquée), le « SQLite de l'OLAP ». Pas de s
 - Pensée mono-process / un seul écrivain (comme SQLite côté concurrence).
 - Pas conçue pour servir des milliers de clients simultanés.
 - Tient sur une machine : la RAM et le disque local bornent le volume.
-- Retours d'expérience détaillés : `Dev/REX/REX - DuckDB.md`.
 
 ## Alternatives
 

@@ -547,5 +547,5 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - **Types** : ⬜ CLI · Data-pipeline · Library · ML-pipeline · Web-app
 - **Documentation** : ⬜ Config-Env · Database-{Graph,Relational,Vector} · Document-Processing · LLM-Orchestration · Orchestration-Data · Storage-Object · Project-README · README - Service · Tests · Index
 
-## REX → `Dev/REX`
-- ✅ **REX - Postgres** — *(le REX v1 existe dans le réservoir ; à recréer en `Dev/REX/` et relier au Postgres v2).*
+## REX (v1) → section `## Pièges` des fiches Service
+- ⬜ **REX - Postgres** — *(le REX v1 existe dans le réservoir ; le pilier REX est supprimé depuis le 2026-09-02 — audit axe 6, option B. À reporter, si utile, dans la section `## Pièges` de `Dev/Services/Postgres.md`).*

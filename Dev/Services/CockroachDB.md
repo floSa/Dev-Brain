@@ -48,7 +48,6 @@ Base **NewSQL** : la sémantique SQL relationnelle et les transactions ACID sér
 - La latence des transactions distribuées dépasse celle d'un mono-nœud : penser la localité des données.
 - Compatibilité Postgres élevée mais incomplète (certaines extensions et fonctions absentes).
 - Bien concevoir clés primaires et index pour éviter les hotspots de range.
-- Retours d'expérience détaillés : `Dev/REX/REX - CockroachDB.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ Base **NewSQL** : la sémantique SQL relationnelle et les transactions ACID sér
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - CockroachDB.md` — retours d'expérience
 - Doc : https://www.cockroachlabs.com/docs/

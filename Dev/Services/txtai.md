@@ -48,7 +48,6 @@ url_repo: https://github.com/neuml/txtai
 - **Single-node** : monte en charge verticalement, pas un moteur distribué — anticiper la limite de volume.
 - Tire un **écosystème HuggingFace** lourd selon les extras installés (taille d'image, dépendances).
 - Choisir un modèle d'embedding adapté à la **langue** et au domaine ; rester cohérent index/requête.
-- Retours d'expérience détaillés : `Dev/REX/REX - txtai.md`.
 
 ## Alternatives
 

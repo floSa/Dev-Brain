@@ -45,7 +45,6 @@ Moteur de templates Python de référence : des gabarits texte (typiquement HTML
 - L'échappement automatique dépend du contexte : actif pour les extensions HTML, à vérifier pour les autres formats ; `| safe` désactive la protection XSS — à manier avec prudence.
 - Tentation de mettre trop de logique dans les templates (boucles, conditions imbriquées) → gabarits illisibles.
 - Le rendu de templates non fiables (saisis par l'utilisateur) ouvre une surface d'injection (SSTI) — ne jamais compiler de template venant d'une entrée externe.
-- Retours d'expérience détaillés : `Dev/REX/REX - Jinja2.md`.
 
 ## Alternatives
 

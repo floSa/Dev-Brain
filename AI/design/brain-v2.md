@@ -60,8 +60,7 @@ DevBrain/
 │   ├── Services/             briques à déployer (frameworks, BDD, libs…)
 │   ├── Outils/               outils techniques que l'on utilise (clients GUI, CLI, utilitaires)
 │   ├── Patterns/             architectures réutilisables + comparatifs .base
-│   ├── Rules/                règles transverses (Global, Types, Documentation)
-│   └── REX/                  retours d'expérience / bugs (1 fichier par service)
+│   └── Rules/                règles transverses (Global, Types, Documentation)
 ├── Wiki/                 ← galaxie WIKI (notions + skills perso)
 │   ├── Concepts/             notions, techniques (cheat-sheet/cours)
 │   ├── Workflows/            procédures pas-à-pas
@@ -78,7 +77,7 @@ DevBrain/
     ├── sessions/  decisions/  design/
 ```
 
-Changements vs v1 : `Bugs/` → `Dev/REX/` ; `Documentation/` apparaît et se scinde general/perso ; scripts passent en Python.
+Changements vs v1 : `Bugs/` fusionne dans la section `## Pièges` des fiches Service (décision d'audit du 2026-09-02, axe 6, option B — un pilier REX séparé a existé entre-temps puis a été supprimé) ; `Documentation/` apparaît et se scinde general/perso ; scripts passent en Python.
 
 ---
 
@@ -133,7 +132,7 @@ Corps :
 ## Quand l'utiliser  (bullets)
 ## Quand NE PAS      (bullets + liens [[alternatives]])
 ## Déploiement & coût (self-host vs managé, prix, scaling)
-## Pièges            (court → détail dans [[REX - Weaviate]])
+## Pièges            (pièges connus et retours d'expérience de la brique)
 ## Alternatives
 - [[Qdrant]] — base vectorielle Rust, ultra-rapide, simple à self-host
 - [[pgvector]] — extension Postgres, idéale si du Postgres est déjà en place
@@ -190,7 +189,6 @@ Les notions trop grosses → leur propre page Wiki, liée depuis « Concepts cl�
 
 - **Pattern** (`Dev/Patterns/`) : Contexte → Décisions clés → Stack récap → Pièges → Voir aussi.
 - **Rule** (`Dev/Rules/`) : Principe → MUST / SHOULD / NICE → Exemples → Exceptions.
-- **REX** (`Dev/REX/`) : entrées datées `## YYYY-MM-DD — <symptôme>`, plus récent en haut.
 - **Workflow** (`Wiki/Workflows/`) : étapes numérotées.
 - **Outil** (`Wiki/Outils/`) : catalogue d'outils de travail (skills, CLI, MCP).
 

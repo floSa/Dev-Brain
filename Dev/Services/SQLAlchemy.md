@@ -46,7 +46,6 @@ Toolkit d'accès aux bases relationnelles le plus établi en Python, organisé e
 - Requêtes **N+1** par chargement paresseux non maîtrisé (`lazy` / `eager`, `selectinload`).
 - Saut d'API important entre 1.x et 2.0 (style `select()`, sessions) — vérifier la version visée.
 - La migration de schéma n'est **pas** incluse : c'est le rôle d'[[Dev/Services/Alembic|Alembic]].
-- Retours d'expérience détaillés : `Dev/REX/REX - SQLAlchemy.md`.
 
 ## Alternatives
 

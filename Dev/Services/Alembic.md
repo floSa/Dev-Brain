@@ -44,7 +44,6 @@ Outil de **migrations de schéma** pour [[Dev/Services/SQLAlchemy|SQLAlchemy]], 
 
 - L'autogénération ne détecte pas tout (changements de type subtils, renommages, contraintes côté serveur) → **toujours relire** le script généré.
 - L'ordre des révisions et les merges de branches peuvent diverger entre développeurs → discipline sur la révision `head`.
-- Retours d'expérience détaillés : `Dev/REX/REX - Alembic.md`.
 
 ## Alternatives
 

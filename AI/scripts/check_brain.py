@@ -15,7 +15,7 @@ Règles DURES (bloquent) :
   - tags ⊆ vocabulaire contrôlé (Documentation/general/tags.md)
   - categorie ∈ taxonomie (Documentation/general/taxonomie.md)
   - alternatives réciproques (si A cite B, B cite A)
-  - aucun lien [[...]] mort (hors [[REX - *]] assumés en attente)
+  - aucun lien [[...]] mort
 Règles SOUPLES (avertissent) :
   - page trop longue → suggérer une sous-note
 """
@@ -187,11 +187,8 @@ def main() -> int:
             if b in by_name and nom not in alt_names(by_name[b]):
                 hard.append(f"{path}: alternative `{b}` non réciproque (manque `{nom}`)")
 
-        # 5. liens morts (hors REX - * assumés)
+        # 5. liens morts
         for tgt in LINK_RE.findall(body):
-            base = tgt.strip().split("/")[-1]
-            if base.lower().startswith("rex - "):
-                continue
             if not link_target_ok(tgt, names):
                 hard.append(f"{path}: lien mort [[{tgt}]]")
 

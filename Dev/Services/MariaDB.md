@@ -48,7 +48,6 @@ Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec
 - Divergence croissante avec MySQL : compatibilité forte mais plus totale (fonctions, JSON, réplication).
 - Choisir le bon moteur de stockage selon l'usage (InnoDB transactionnel vs Aria vs ColumnStore).
 - Vérifier la parité de version quand un outil cible une version MySQL précise.
-- Retours d'expérience détaillés : `Dev/REX/REX - MariaDB.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - MariaDB.md` — retours d'expérience
 - Doc : https://mariadb.com/kb/en/documentation/

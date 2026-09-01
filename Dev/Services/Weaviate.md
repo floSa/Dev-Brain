@@ -47,7 +47,6 @@ Base vectorielle open-source en Go, pensée pour la production. Modules de vecto
 
 - Schéma à définir (classes, properties, vectorizer) ; changer de vectorizer impose une recréation.
 - Breaking changes entre versions majeures — lire les changelogs avant montée de version.
-- Retours d'expérience détaillés : `Dev/REX/REX - Weaviate.md`.
 
 ## Alternatives
 
@@ -60,5 +59,4 @@ Base vectorielle open-source en Go, pensée pour la production. Modules de vecto
 
 - [[Bases de données vectorielles]] — le concept (Wiki)
 - [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- `Dev/REX/REX - Weaviate.md` — retours d'expérience
 - Doc : https://weaviate.io/developers/weaviate

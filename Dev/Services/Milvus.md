@@ -48,7 +48,6 @@ Base vectorielle distribuée, conçue pour les très gros volumes (milliards de 
 - Stack distribuée lourde : ne pas partir en cluster pour un petit volume.
 - Cohérence éventuelle (consistency levels) à comprendre selon le cas d'usage.
 - Métrique et type d'index figés par collection.
-- Retours d'expérience détaillés : `Dev/REX/REX - Milvus.md`.
 
 ## Alternatives
 
@@ -61,5 +60,4 @@ Base vectorielle distribuée, conçue pour les très gros volumes (milliards de 
 
 - [[Bases de données vectorielles]] — le concept (Wiki)
 - [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- `Dev/REX/REX - Milvus.md` — retours d'expérience
 - Doc : https://milvus.io/docs

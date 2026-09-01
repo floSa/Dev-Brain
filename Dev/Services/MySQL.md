@@ -48,7 +48,6 @@ SGBD relationnel le plus déployé du web, pilier historique de la stack LAMP. S
 - Défauts historiques laxistes (modes SQL, encodage) : forcer `utf8mb4` et un `sql_mode` strict.
 - Divergences fonctionnelles avec [[Dev/Services/MariaDB|MariaDB]] : compatibilité non garantie à 100 %.
 - Gouvernance Oracle : certaines fonctionnalités réservées à l'édition Enterprise.
-- Retours d'expérience détaillés : `Dev/REX/REX - MySQL.md`.
 
 ## Alternatives
 
@@ -62,5 +61,4 @@ SGBD relationnel le plus déployé du web, pilier historique de la stack LAMP. S
 
 - [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- `Dev/REX/REX - MySQL.md` — retours d'expérience
 - Doc : https://dev.mysql.com/doc/

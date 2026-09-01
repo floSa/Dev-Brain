@@ -1,7 +1,7 @@
 # Index — DevBrain v2
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 647 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 646 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Dev — briques techniques (galaxie dev)
 
@@ -445,11 +445,6 @@
 - **Rule - Qualité stricte** — —
 - **Rule - Structure de projet** — —
 - **Rule - Toolchain Python** — —
-
-### rex
-
-#### (sans catégorie)
-- **REX - Postgres** — —
 
 ### outil
 

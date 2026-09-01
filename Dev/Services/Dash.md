@@ -47,7 +47,6 @@ Framework de **dashboards et apps analytiques** édité par **Plotly**. On décl
 - Verbosité : layout + callbacks demandent plus de code que Streamlit pour un résultat simple.
 - Graphe de callbacks vite complexe ; circular dependencies et `prevent_initial_call` à surveiller.
 - Partage d'état entre callbacks : passer par `dcc.Store` ou un cache, pas par des globales (multi-worker).
-- Retours d'expérience détaillés : `Dev/REX/REX - Dash.md`.
 
 ## Alternatives
 

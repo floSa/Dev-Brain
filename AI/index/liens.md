@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain v2
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 647 pages actives.
+> 646 pages actives.
 
 ## Par page
 
@@ -1108,7 +1108,7 @@
 ### Postgres  ·  dev/service
 - tags : `relational`, `postgres`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLite]], [[pgvector]]
-- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Grafana]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[REX - Postgres]], [[Redis]], [[SQLite]], [[Temporal]], [[pgAdmin]], [[psycopg2]]
+- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Grafana]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[SQLite]], [[Temporal]], [[pgAdmin]], [[psycopg2]]
 
 ### Postman  ·  dev/outil
 - tags : `api-client`
@@ -1284,11 +1284,6 @@
 - tags : `db-client`, `key-value`, `in-memory`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Redis]]
 - liens entrants : [[Bases de données]], [[DBeaver]]
-
-### REX - Postgres  ·  dev/rex
-- tags : `rex`, `bugs`, `postgres`
-- liens sortants : [[Postgres]]
-- liens entrants : —
 
 ### Rich  ·  dev/service
 - tags : `terminal-ui`
@@ -3263,7 +3258,6 @@
 - `benchmark` : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Gradient Boosting (GBDT), LightGBM, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
-- `bugs` : REX - Postgres  — pas de page concept dédiée
 - `caching` : Headroom, LLM caching, prompt-caching  — pas de page concept dédiée
 - `calibration` : Calibration
 - `causal-inference` : CausalImpact, Diff-in-Diff, Inférence causale
@@ -3463,7 +3457,7 @@
 - `policy-gradient` : Actor-Critic methods, PPO, Policy gradient
 - `pose-estimation` : Estimation de pose, Ultralytics YOLO
 - `positional-encoding` : Positional encoding
-- `postgres` : Postgres, REX - Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
+- `postgres` : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
 - `prior` : A priori conjugués, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : OpenCut, Page to Markdown, SmartTube  — pas de page concept dédiée
 - `probabilistic-programming` : PyMC, Stan  — pas de page concept dédiée
@@ -3496,7 +3490,6 @@
 - `resampling` : Bootstrap, Validation croisée, Walk-forward CV
 - `retrieval` : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers  — pas de page concept dédiée
 - `reward-shaping` : Reward shaping and hacking
-- `rex` : REX - Postgres  — pas de page concept dédiée
 - `routing` : OmniRoute, OpenRouter, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
 - `s3-compatible` : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS  — pas de page concept dédiée
@@ -3566,7 +3559,7 @@
 
 ## À créer (gaps)
 
-**Liens non résolus** (cibles inexistantes, hors `REX - *` en attente) :
+**Liens non résolus** (cibles inexistantes) :
 - aucun
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
@@ -3582,7 +3575,6 @@
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan)
 - `benchmark` (porté par : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit)
 - `browser-extension` (porté par : Page to Markdown)
-- `bugs` (porté par : REX - Postgres)
 - `caching` (porté par : Headroom, LLM caching, prompt-caching)
 - `ci-cd` (porté par : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
 - `cli` (porté par : Spec Kit, Typer, croc, freebuff, swarm-forge)
@@ -3698,7 +3690,7 @@
 - `pdf` (porté par : Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Estimation MAP, Maximum de vraisemblance)
-- `postgres` (porté par : Postgres, REX - Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
+- `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
 - `prior` (porté par : A priori conjugués, Estimation MAP, Inférence bayésienne, PyMC)
 - `privacy` (porté par : OpenCut, Page to Markdown, SmartTube)
 - `probabilistic-programming` (porté par : PyMC, Stan)
@@ -3715,7 +3707,6 @@
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Marimo, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers)
-- `rex` (porté par : REX - Postgres)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)

@@ -48,7 +48,6 @@ Framework de **démos de modèles ML** édité par **Hugging Face** (acquisition
 - Pensé pour la démo : moins adapté qu'une vraie app data à des dashboards riches multi-vues.
 - Le lien `share=True` est temporaire (quelques heures) — pas un hébergement pérenne.
 - Surface d'API mouvante entre versions majeures (la 5 date de 2024, la ligne actuelle est la 6.x) : épingler la version.
-- Retours d'expérience détaillés : `Dev/REX/REX - Gradio.md`.
 
 ## Alternatives
 

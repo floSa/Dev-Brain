@@ -48,7 +48,6 @@ Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité
 - Index HNSW (meilleur rappel) vs IVFFlat (construction plus rapide) : choisir selon le besoin.
 - `maintenance_work_mem` à augmenter pour la création d'index, sinon très lent.
 - Filtrage + ANN : pre-filter exact (lent sur gros volumes) vs post-filter (perte de rappel) — vérifier les plans de requête.
-- Retours d'expérience détaillés : `Dev/REX/REX - pgvector.md`.
 
 ## Alternatives
 
@@ -61,5 +60,4 @@ Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité
 
 - [[Bases de données vectorielles]] — le concept (Wiki)
 - [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- `Dev/REX/REX - pgvector.md` — retours d'expérience
 - Doc : https://github.com/pgvector/pgvector#readme

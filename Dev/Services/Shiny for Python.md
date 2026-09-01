@@ -48,7 +48,6 @@ Port Python de **Shiny**, le framework d'apps réactives de **Posit** (ex-RStudi
 - Courbe d'apprentissage de la réactivité (`@reactive.calc` vs `@reactive.effect`, dépendances implicites) plus raide que Streamlit.
 - Écosystème Python plus jeune que la version R : exemples et composants tiers moins nombreux.
 - Shinylive (WASM) ne charge que les paquets compatibles Pyodide — toutes les libs ne passent pas.
-- Retours d'expérience détaillés : `Dev/REX/REX - Shiny for Python.md`.
 
 ## Alternatives
 

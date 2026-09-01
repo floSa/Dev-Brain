@@ -193,7 +193,7 @@ Genere un resume Markdown avec ces sections, en francais :
 - liste des fiches lues / referencees
 
 ## Bugs logges
-- references vers les REX ajoutes au brain
+- pieges ajoutes dans la section `## Pieges` des fiches Service concernees
 
 ## Decisions
 

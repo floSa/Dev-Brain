@@ -105,7 +105,7 @@ GAL_LABEL = {
     "dev": "Dev — briques techniques (galaxie dev)",
     "wiki": "Wiki — notions (galaxie wiki)",
 }
-TYPE_ORDER = ["service", "pattern", "rule", "rex", "concept", "workflow", "outil"]
+TYPE_ORDER = ["service", "pattern", "rule", "concept", "workflow", "outil"]
 
 
 def descriptor(p: dict) -> str:
