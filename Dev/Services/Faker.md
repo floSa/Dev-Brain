@@ -52,7 +52,7 @@ Faker (importé `faker`, paquet PyPI `Faker`, par joke2k / Daniele Faraglia) gé
 ## Alternatives
 
 - [[Dev/Services/Mimesis|Mimesis]] — Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
-- [[Dev/Services/SDV|SDV]] — autre nature : apprend la distribution d'un vrai jeu tabulaire au lieu de tirer des valeurs par règles.
+- [[Dev/Services/SDV|SDV]] — voisin : autre nature, apprend la distribution d'un vrai jeu tabulaire au lieu de tirer des valeurs par règles.
 
 ## Liens
 

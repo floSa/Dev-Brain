@@ -49,7 +49,7 @@ Système d'**agrégation de logs** open-source de Grafana Labs (**AGPLv3**, écr
 
 ## Alternatives
 
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — approche concurrente par **indexation du contenu** (recherche plein-texte puissante, mais plus coûteuse) ; relève de `database/search`, pas de cette catégorie.
+- [[Dev/Services/Elasticsearch|Elasticsearch]] — voisin : approche concurrente par **indexation du contenu** (recherche plein-texte puissante, mais plus coûteuse) ; relève de `database/search`, pas de cette catégorie.
 
 ## Liens
 

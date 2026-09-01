@@ -51,7 +51,7 @@ Mimesis (par lk-geimfari) couvre le même besoin que [[Dev/Services/Faker|Faker]
 ## Alternatives
 
 - [[Dev/Services/Faker|Faker]] — Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.
-- [[Dev/Services/SDV|SDV]] — autre nature : synthèse par modèles apprise sur un vrai jeu tabulaire.
+- [[Dev/Services/SDV|SDV]] — voisin : autre nature, synthèse par modèles apprise sur un vrai jeu tabulaire.
 
 ## Liens
 

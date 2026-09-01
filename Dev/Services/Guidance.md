@@ -49,7 +49,7 @@ url_repo: https://github.com/guidance-ai/guidance
 
 ## Alternatives
 
-- [[Dev/Services/Outlines|Outlines]] — Même famille (décodage contraint) mais orientée **schéma → sortie** : on déclare un JSON Schema / une regex / une grammaire, sans tisser de flot de contrôle dans la génération ; embarqué nativement par les moteurs de serving.
+- [[Dev/Services/Outlines|Outlines]] — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas. — même famille (décodage contraint) mais orientée **schéma → sortie** : on déclare un JSON Schema, une regex ou une grammaire, sans tisser de flot de contrôle dans la génération ; embarqué nativement par les moteurs de serving.
 
 ## Liens
 

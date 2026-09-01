@@ -49,7 +49,7 @@ Bibliothèque dédiée à la **génération structurée** par [[Constrained deco
 
 ## Alternatives
 
-- [[Dev/Services/Guidance|Guidance]] — Même famille (décodage contraint) mais orientée **langage de contrôle** : on entrelace génération, conditionnels, boucles et appels d'outils dans un même programme, avec *token healing*.
+- [[Dev/Services/Guidance|Guidance]] — Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing. — même famille (décodage contraint) mais orientée **langage de contrôle** : génération, conditionnels, boucles et appels d'outils s'entrelacent dans un même programme.
 
 ## Liens
 
