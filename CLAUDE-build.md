@@ -54,7 +54,7 @@ licence_type: open-source | source-available | proprietary | open-core
 hosted: self | managed | both
 maturite: production | beta | experimental | deprecated
 langage: <langage d'implémentation>
-scaling: single-node | distributed | serverless-ok
+scaling: single-node | distributed | serverless
 alternatives: ["[[Dev/Services/X|X]]", ...]
 remplace_par: []
 status: actif | en-eval | abandonne
@@ -233,7 +233,7 @@ Si l'utilisateur fournit une URL : utilise le skill `defuddle` (kepano) pour ext
 
 ## Git
 
-**Ne commit et ne push jamais automatiquement.** Propose le commit une fois une fiche/un lot vérifié, mais attends la validation explicite de l'utilisateur avant `git commit`/`git push` — cohérent avec la règle globale de CLAUDE.md (aucune action destructrice ou visible sans confirmation).
+**La politique git n'est pas écrite ici.** Elle vit dans un seul fichier, `.claude/skills/cloturer-brain/SKILL.md`, section *Politique git du vault*. Trois formulations divergentes coexistaient auparavant dans ce document, dans `CLAUDE.md` et dans `enrichir-brain`, dont deux se contredisaient frontalement sur le commit automatique (constat C3 de `AI/audit/rapports/axe-3-skills.md`). Toute écriture dans `Dev/` ou `Wiki/` se clôt en invoquant `cloturer-brain`, y compris une modification faite à la main dans Obsidian.
 
 Exemple de proposition :
 ```

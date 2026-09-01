@@ -400,6 +400,21 @@ def check_alias(active: list[tuple[str, dict, str]]) -> list[str]:
             if proprio and proprio != path:
                 warn.append(f"R5 — {path} : alias `{a}` est le `nom:` de `{proprio}` "
                             "(même galaxie)")
+
+    # R15 — une fiche `type: service` doit porter au moins un lien vers Wiki/Concepts.
+    # Le couple Dev<->Wiki est imposé par le skill enrichir-brain (étape 6) mais rien ne
+    # le vérifiait : `check_brain` contrôle qu'un lien n'est pas mort, jamais qu'il existe.
+    # SOUPLE, et elle doit le rester tant que le passif n'est pas résorbé : 102 fiches
+    # service sur 297 ne portent aucun lien vers un concept (cf. axe 3, constat C2).
+    concepts = {p.stem.lower() for p in (VAULT / "Wiki" / "Concepts").glob("*.md")}
+    for path, fm, body in active:
+        if fm.get("type") != "service":
+            continue
+        cibles = {t.split("|")[0].split("/")[-1].strip().lower()
+                  for t in LINK_RE.findall(body)}
+        if not (cibles & concepts):
+            warn.append(f"R15 — {path} : aucun lien vers Wiki/Concepts — "
+                        "le couple Dev<->Wiki de l'étape 6 du skill n'est pas câblé")
     return warn
 
 

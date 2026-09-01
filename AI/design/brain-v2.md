@@ -115,7 +115,7 @@ licence_type: open-source        # sert à "commercialisable ?"
 hosted: both                     # self | managed | both — sert à "déployable ?"
 maturite: production             # production | beta | experimental | deprecated
 langage: Go
-scaling: distributed             # single-node | distributed | serverless-ok
+scaling: distributed             # single-node | distributed | serverless
 alternatives: ["[[Qdrant]]", "[[Milvus]]", "[[pgvector]]"]
 remplace_par: []
 status: actif                    # actif | en-eval | abandonne

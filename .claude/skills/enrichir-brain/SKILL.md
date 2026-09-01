@@ -6,7 +6,8 @@ description: |
   "ajoute le concept Z", or, at the end of a conversation, "mets à jour DevBrain" /
   "enrichis le brain" (sweep mode). Creates the requested page AND the missing
   connected pages (parent concept, alternatives, comparatif), wires links, keeps
-  alternatives and pitches in sync bidirectionally, then regenerates the index.
+  alternatives and pitches in sync bidirectionally. CAPTURE ONLY: closing the write
+  (regenerate, validate, commit) belongs to the companion skill `cloturer-brain`.
   Also owns the UPDATE path — "le pitch de X a change", "X est abandonne",
   "reclasse X", a rename or a deletion: propagate the side effects of a changed
   field to its consumers (see *Procedure — mode mise a jour*).
@@ -72,16 +73,14 @@ Mode build (pages Dev/) ou mode wiki (pages Wiki/). Ne jamais toucher au réserv
 7. **Synchroniser bidirectionnellement** :
    - **Alternatives** : si A liste B, alors B doit lister A. Mettre à jour le frontmatter `alternatives:` **et** la section *Alternatives* de chaque page concernée.
    - **Pitches** : la ligne affichée pour une cible dans une section *Alternatives* suit la **convention unique de réinjection** (clauses 1-3 ci-dessus). Vérifier avec `[V1]` de la table des effets de bord. Si un pitch a changé, ne pas resynchroniser à la main ici : passer par la *Procédure — mode mise à jour*.
-8. **Régénérer l'index puis valider** :
-   ```bash
-   uv run AI/scripts/build_index.py   # met à jour brain-index.json + brain-index.md (doc humain)
-   uv run AI/scripts/build_mocs.py    # régénère les pages hub (MOC) — liens à jour, aucun oublié
-   uv run AI/scripts/build_links.py   # carte des liens + sujets à créer (AI/index/liens.md)
-   uv run AI/scripts/check_brain.py   # DOIT passer : réciprocité, liens, tags, catégorie, gabarit
-   ```
-9. **Corriger jusqu'au vert** : toute violation dure signalée par `check_brain` se corrige et on relance. Ne pas clore tant que ce n'est pas OK.
-10. **Avant de pousser, vérifier que `origin/main` n'a pas divergé** : `git fetch origin` puis `git merge-base HEAD origin/main`. Si aucun ancêtre commun n'est trouvé, ou si `git log HEAD..origin/main --oneline` montre des commits distants absents en local, **s'arrêter et signaler l'écart** — ne pas committer/pousser sur une base potentiellement obsolète (cf. incident du 2026-07-29, `CLAUDE.md` §Protocole de session).
-11. **Commit + push + intégration dans `main` (d'office, sans demander)** : `check_brain` vert et divergence vérifiée → commit (Conventional Commits) → `git push` de la branche → **intégrer dans `main`** : `git -C <vault-principal> merge --ff-only <branche-courante>` puis `git -C <vault-principal> push origin main`. Fast-forward uniquement ; si la divergence empêche le FF, le signaler — jamais de `--force`. Ne jamais répondre « à toi de committer / merger ».
+8. **Clôturer** : invoquer le skill `cloturer-brain`. Il régénère les artefacts, fait
+   passer `check_brain` au vert, vérifie la divergence avec `origin/main`, puis commet,
+   pousse et intègre dans `main`. La capture n'est pas finie tant que la clôture n'a pas
+   tourné — mais elle ne fait pas partie de ce skill-ci.
+
+**Sortie explicite attendue de ce skill** : « la capture est faite, la clôture reste à
+lancer » — ou, si `cloturer-brain` a déjà tourné, son résultat. Ne jamais laisser l'état
+implicite : c'est ainsi qu'un index périmé survit à une session.
 
 ## Procédure — mode mise à jour
 
@@ -131,31 +130,28 @@ une page qu'on crée n'en a pas. C'est toute la différence avec la procédure c
    de la table). Fin d'étape vérifiable : **0 écart** sur chacune. Ne pas passer à l'étape 8
    avec un écart restant — c'est exactement ainsi que naissent les pitchs périmés.
 
-8. **Régénérer les artefacts `[G]` puis valider** :
+8. **Régénérer, puis contrôler que la régénération a bien pris** — ne pas la croire sur
+   parole :
    ```bash
-   uv run AI/scripts/build_index.py
-   uv run AI/scripts/build_mocs.py
-   uv run AI/scripts/build_links.py
-   uv run AI/scripts/check_brain.py   # DOIT passer
-   ```
-
-9. **Contrôler que la régénération a bien pris** — ne pas la croire sur parole :
-   ```bash
-   uv run AI/scripts/query_index.py --name "<X>" --fields nom,pitch,categorie,tags
+   uv run AI/scripts/build_index.py && uv run AI/scripts/build_mocs.py && uv run AI/scripts/build_links.py
+   uv run AI/scripts/query_index.py --name "<X>" --fields nom,pitch,categorie,famille,status
    grep -rl "<X>" MOC/                 # hubs où la page apparaît désormais
    ```
    Fin d'étape vérifiable : l'index renvoie les valeurs **après**, et la page apparaît dans
    les hubs attendus — et plus dans ceux qu'elle a quittés.
 
-10. **Relire le diff complet.** Il doit contenir exactement : la page, les fichiers de
-    l'étape 3, les artefacts générés. Rien d'autre.
-    ```bash
-    git status --porcelain
-    git diff --stat
-    ```
+9. **Relire le diff complet.** Il doit contenir exactement : la page, les fichiers de
+   l'étape 3, les artefacts générés. Rien d'autre.
+   ```bash
+   git status --porcelain
+   git diff --stat
+   ```
+   C'est la dernière occasion de voir une propagation oubliée ou une page touchée par
+   accident. Un fichier inattendu dans ce diff est une erreur, pas une surprise.
 
-11. **Divergence `origin/main`, puis commit + push + intégration** : identique aux étapes
-    10-11 de la procédure ciblée.
+10. **Clôturer** : invoquer `cloturer-brain`. Il est idempotent, donc relancer la
+    régénération ne coûte rien, et c'est lui qui porte la validation finale, la
+    vérification de divergence et l'intégration.
 
 ### Table des effets de bord — champ modifié → consommateurs → vérification
 
@@ -258,7 +254,7 @@ Déclencheurs : « fais-moi les pages sur les statistiques », « ajoute le suje
 2. **Présenter le plan et ATTENDRE le GO.** Ne rien créer avant validation. L'utilisateur ajoute / retire / renomme des pages.
 3. **Écrire la file validée** dans `AI/backlog.md` (une page par ligne).
 4. **Drainer la file une page à la fois**, chacune via la procédure ciblée ci-dessus. Cocher au fur et à mesure.
-5. **Clôturer** : `build_index.py`, `build_mocs.py`, `build_links.py`, `check_brain.py` (doit passer), puis **commit + push + intégration dans `main` d'office** (cf. étapes 10-11). Repassable tant qu'il reste des items → rien d'oublié.
+5. **Clôturer** : invoquer `cloturer-brain`. Repassable tant qu'il reste des items dans la file → rien d'oublié.
 
 ## Anti-patterns
 
@@ -271,9 +267,11 @@ Déclencheurs : « fais-moi les pages sur les statistiques », « ajoute le suje
 - Dupliquer une entrée d'expérience datée sur les deux briques d'un incident inter-briques.
 - Modifier une fiche du réservoir v1.
 - Oublier `uv run AI/scripts/build_index.py` à la fin.
-- Pousser sans avoir vérifié que `origin/main` n'a pas divergé (historique republié, commits distants absents en local) — cf. étape 10.
+- Clore soi-même au lieu d'invoquer `cloturer-brain` : la régénération, la validation, la vérification de divergence et le commit y sont écrits une seule fois, et c'est ce qui empêche les trois versions divergentes d'autrefois.
 
 ## Voir aussi
 
-- `planifier-projet` — consomme l'index produit ici.
+- `cloturer-brain` — la clôture mécanique, appelée en fin de chaque procédure. **Seul
+  endroit du vault où la politique git est écrite.**
+- `planifier-projet` — consomme l'index produit par la clôture.
 - `AI/design/brain-v2.md` §2, §5, §7.1 — spec de référence.

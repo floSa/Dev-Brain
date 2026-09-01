@@ -67,7 +67,7 @@ Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
 - Modifier des fiches `Dev/Services/*` existantes (y compris leur section `## Pièges`) — en mode projet, aucune écriture dans `Dev/`
 - **Modifier ou créer des fichiers dans `Wiki/` sauf en mode wiki explicite ou demande explicite** (le wiki est l'espace perso de l'utilisateur — pas le tien)
 - Supprimer quoi que ce soit
-- Commit + push automatiques après validation (sans demander) ; jamais de --force/rebase sans accord
+- Committer ou pousser sans avoir clôturé : toute écriture dans `Dev/` ou `Wiki/` se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateur vert, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
 - Créer des fiches dans une `categorie` non listée dans `Documentation/general/taxonomie.md`
 
 ## Mode wiki
@@ -119,6 +119,7 @@ AI/                          ← TON espace agent
 
 .claude/skills/               ← skills custom réels
 ├── enrichir-brain/            (capture Dev/ + Wiki/Concepts/ — mode build+wiki)
+├── cloturer-brain/            (clôture : régénère, valide, commit — après TOUTE écriture)
 └── planifier-projet/          (cadrage projet — mode projet)
 ```
 
