@@ -1,34 +1,28 @@
-#!/usr/bin/env python3
-"""
-Hook Stop pour DevBrain.
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["anthropic>=0.40"]
+# ///
+"""session_to_devbrain.py — hook Stop : écrit un résumé de session dans AI/sessions/.
 
-Détecte si la session était en mode BUILD (dans le vault) ou PROJET (dans
-un dossier de dev) et écrit un résumé approprié dans AI/sessions/.
+Détecte si la session était en mode BUILD (dans le vault) ou PROJET (dans un
+dossier de dev) et écrit un résumé adapté.
 
-Configuration dans ~/.claude/settings.json :
-{
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python ~/DevBrain/AI/scripts/session_to_devbrain.py"
-          }
-        ]
-      }
-    ]
-  }
-}
+Déclaré dans `.claude/settings.json` du vault (clé `hooks.Stop`) :
 
-Pré-requis :
-- pip install anthropic
-- variable d'env ANTHROPIC_API_KEY positionnée
-- adapter la constante VAULT ci-dessous au chemin de ton vault
+    uv run "$CLAUDE_PROJECT_DIR/AI/scripts/session_to_devbrain.py"
+
+Depuis un dépôt projet, pointer le script du vault et poser `DEVBRAIN_VAULT`.
+
+Pré-requis : `ANTHROPIC_API_KEY` positionnée. Sans elle, le script ne fait rien
+et sort en 0 — un hook ne casse jamais la session.
+
+Résolution du vault (aucun chemin absolu en dur, cf. `Documentation/perso/machines.md`) :
+racine git du `cwd` reçu dans le payload → `$DEVBRAIN_VAULT` → emplacement du script.
 """
 import datetime
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -38,11 +32,50 @@ except ImportError:
     print("anthropic SDK non installe : pip install anthropic", file=sys.stderr)
     sys.exit(0)  # ne pas casser la session, juste logguer
 
-# === CONFIG : adapte au chemin de ton DevBrain ===
-VAULT = Path.home() / "DevBrain"
-SESSIONS_DIR = VAULT / "AI" / "sessions"
 MODEL = "claude-haiku-4-5-20251001"  # Haiku suffit pour des résumés courts
 MAX_TRANSCRIPT_CHARS = 50000
+GIT_TIMEOUT_S = 30
+
+
+def git_root(start: Path) -> Path | None:
+    """Racine du dépôt git contenant `start`, ou None."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(start), "rev-parse", "--show-toplevel"],
+            capture_output=True, text=True, timeout=GIT_TIMEOUT_S,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if out.returncode != 0:
+        return None
+    root = out.stdout.strip()
+    return Path(root) if root else None
+
+
+def looks_like_vault(path: Path | None) -> bool:
+    """Un DevBrain a un AI/design/brain-v2.md."""
+    return bool(path) and (path / "AI" / "design" / "brain-v2.md").is_file()
+
+
+def resolve_vault(cwd: Path) -> Path:
+    """Racine git du cwd → $DEVBRAIN_VAULT → emplacement du script.
+
+    En mode projet, la racine git du cwd est celle du projet, pas du vault :
+    la détection `looks_like_vault` la rejette et on retombe sur la variable
+    d'environnement, puis sur l'emplacement du script (<vault>/AI/scripts/).
+    C'est ce qui permet à `in_vault` plus bas de distinguer build et projet.
+    """
+    root = git_root(cwd)
+    if looks_like_vault(root):
+        return root
+
+    env = os.environ.get("DEVBRAIN_VAULT")
+    if env:
+        candidate = Path(env).expanduser()
+        if looks_like_vault(candidate):
+            return candidate
+
+    return Path(__file__).resolve().parents[2]
 
 
 def main() -> None:
@@ -66,7 +99,12 @@ def main() -> None:
         return
 
     # 2. Détecter le mode (BUILD si dans le vault, PROJECT sinon)
-    in_vault = str(cwd).startswith(str(VAULT))
+    vault = resolve_vault(cwd)
+    sessions_dir = vault / "AI" / "sessions"
+    try:
+        in_vault = cwd.resolve().is_relative_to(vault.resolve())
+    except (OSError, RuntimeError):
+        in_vault = str(cwd).startswith(str(vault))
     mode = "build" if in_vault else "project"
     project_name = None if in_vault else cwd.name
 
@@ -97,10 +135,10 @@ def main() -> None:
         return
 
     # 6. Ecrire dans AI/sessions/
-    SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
+    sessions_dir.mkdir(parents=True, exist_ok=True)
     now = datetime.datetime.now()
     filename = f"{now:%Y-%m-%d-%H%M}-{mode}.md"
-    target = SESSIONS_DIR / filename
+    target = sessions_dir / filename
 
     frontmatter = (
         "---\n"
@@ -174,3 +212,4 @@ if __name__ == "__main__":
     except Exception as e:
         # Ne jamais faire planter la session a cause du hook
         print(f"Hook DevBrain a echoue : {e}", file=sys.stderr)
+    sys.exit(0)

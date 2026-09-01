@@ -36,7 +36,7 @@ Invoque le skill **`planifier-projet`** (installé dans le DevBrain, `.claude/sk
 3. Pour chaque brique technique nécessaire, interroge `AI/index/brain-index.json` et propose 2-3 candidats sourcés (pitch d'une ligne chacun).
 4. Produit un cahier des charges qui **contraint** la suite du développement. N'écrit rien dans le brain.
 
-Si le skill n'est pas invocable depuis le projet (il vit dans le repo DevBrain, pas dans celui-ci), demande directement à l'utilisateur de lancer `claude` dans `~/DevBrain` pour ce cadrage, ou interroge le brain toi-même via MCP en suivant le même protocole.
+Si le skill n'est pas invocable depuis le projet (il vit dans le repo DevBrain, pas dans celui-ci), demande directement à l'utilisateur de lancer `claude` à la racine de son vault DevBrain pour ce cadrage (l'emplacement dépend de la machine — ne suppose aucun chemin), ou interroge le brain toi-même via MCP en suivant le même protocole.
 
 ## Avant tout choix techno
 

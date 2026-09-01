@@ -1,0 +1,62 @@
+{
+  "_comment": "Config Claude Code partagée du DevBrain — VERSIONNÉE. Permissions read-only + WebFetch ciblé + deny destructeur, et les hooks du vault. Les permissions personnelles (push, identité) vont dans settings.local.json, gitignoré.",
+  "_comment_hooks": "Hooks Stop : (1) check_brain.py, lancé seulement si la session a touché Dev/ ou Wiki/ — il rapporte, il ne bloque jamais, il sort toujours en 0 ; (2) le résumé de session dans AI/sessions/, silencieux tant que ANTHROPIC_API_KEY n'est pas positionnée. $CLAUDE_PROJECT_DIR évite tout chemin absolu (cf. Documentation/perso/machines.md).",
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote -v)",
+      "Bash(git ls-files:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(uvx:*)",
+      "Bash(uv --version)",
+      "Bash(uv run AI/scripts/check_brain.py)",
+      "Bash(npm --version)",
+      "Bash(node --version)",
+      "Bash(python --version)",
+      "Bash(claude --version)",
+      "Bash(claude mcp list)",
+      "Bash(claude plugin list)",
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:obsidian.md)",
+      "WebFetch(domain:help.obsidian.md)",
+      "WebFetch(domain:modelcontextprotocol.io)",
+      "WebFetch(domain:docs.astral.sh)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:arxiv.org)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git clean -f:*)",
+      "Bash(git branch -D:*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run \"$CLAUDE_PROJECT_DIR/AI/scripts/stop_check_brain.py\"",
+            "timeout": 330
+          },
+          {
+            "type": "command",
+            "command": "uv run \"$CLAUDE_PROJECT_DIR/AI/scripts/session_to_devbrain.py\"",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

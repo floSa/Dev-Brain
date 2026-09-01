@@ -1,0 +1,929 @@
+{
+ "Dev/Outils/Aider.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "Aider-AI/aider",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-05-22",
+  "repo": "Aider-AI/aider",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 48669,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "aider.chat",
+    "url": "https://aider.chat/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/Aider-AI/aider"
+   }
+  }
+ },
+ "Dev/Outils/Archify.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "tt-a1i/archify",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "tt-a1i/archify",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 43123,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "tt-a1i.github.io",
+    "url": "https://tt-a1i.github.io/archify/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/tt-a1i/archify"
+   }
+  }
+ },
+ "Dev/Outils/BMAD.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "bmad-code-org/BMAD-METHOD",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "bmad-code-org/BMAD-METHOD",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 52589,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.bmad-method.org",
+    "url": "https://docs.bmad-method.org/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/bmad-code-org/BMAD-METHOD"
+   }
+  }
+ },
+ "Dev/Outils/Bruno.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "usebruno/bruno",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "usebruno/bruno",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 46706,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.usebruno.com",
+    "url": "https://docs.usebruno.com/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/usebruno/bruno"
+   }
+  }
+ },
+ "Dev/Outils/Claude Video.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "bradautomates/claude-video",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-07-01",
+  "repo": "bradautomates/claude-video",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 16649,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/bradautomates/claude-video"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/bradautomates/claude-video"
+   }
+  }
+ },
+ "Dev/Outils/DataGrip.md": {
+  "signalements": [
+   "url_domaine_change:lp.jetbrains.com"
+  ],
+  "sonde_le": "2026-09-02",
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "lp.jetbrains.com",
+    "url": "https://www.jetbrains.com/datagrip/documentation/"
+   }
+  }
+ },
+ "Dev/Outils/Figma.md": {
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "help.figma.com",
+    "url": "https://help.figma.com/"
+   }
+  }
+ },
+ "Dev/Outils/Maka.md": {
+  "signalements": [
+   "abandonne_sans_remplacement:status=en-eval"
+  ]
+ },
+ "Dev/Outils/MongoDB Compass.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "mongodb-js/compass",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "mongodb-js/compass",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 1494,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.mongodb.com",
+    "url": "https://www.mongodb.com/docs/compass/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/mongodb-js/compass"
+   }
+  }
+ },
+ "Dev/Outils/OpenCut.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Outils/osint4all.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "osint4all/osint4all.github.io",
+  "http_api": 200,
+  "license_spdx": "CC0-1.0",
+  "pushed_at": "2022-07-09",
+  "repo": "osint4all/osint4all.github.io",
+  "signalements": [
+   "abandonne_sans_remplacement:status=abandonne"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 95,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/osint4all/osint4all.github.io"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/osint4all/osint4all.github.io"
+   }
+  }
+ },
+ "Dev/Outils/swarm-forge.md": {
+  "signalements": [
+   "abandonne_sans_remplacement:status=en-eval"
+  ]
+ },
+ "Dev/Outils/t3code.md": {
+  "signalements": [
+   "abandonne_sans_remplacement:status=en-eval"
+  ]
+ },
+ "Dev/Services/Acme.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/Airflow.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "apache/airflow",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "apache/airflow",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 46692,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "airflow.apache.org",
+    "url": "https://airflow.apache.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/apache/airflow"
+   }
+  }
+ },
+ "Dev/Services/AutoGen.md": {
+  "signalements": [
+   "status_maturite_incoherents:status=actif"
+  ]
+ },
+ "Dev/Services/BentoML.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "bentoml/BentoML",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-28",
+  "repo": "bentoml/BentoML",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 8817,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.bentoml.com",
+    "url": "https://docs.bentoml.com/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/bentoml/BentoML"
+   }
+  }
+ },
+ "Dev/Services/Faker.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "joke2k/faker",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-01",
+  "repo": "joke2k/faker",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 19387,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "faker.readthedocs.io",
+    "url": "https://faker.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/joke2k/faker"
+   }
+  }
+ },
+ "Dev/Services/GitHub Actions.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "actions/runner",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "actions/runner",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 6226,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.github.com",
+    "url": "https://docs.github.com/actions"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/actions/runner"
+   }
+  }
+ },
+ "Dev/Services/Gradio.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "gradio-app/gradio",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "gradio-app/gradio",
+  "signalements": [
+   "url_domaine_change:gradio.app"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 43450,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "gradio.app",
+    "url": "https://www.gradio.app/docs"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/gradio-app/gradio"
+   }
+  }
+ },
+ "Dev/Services/HuggingFace.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/LIME.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/MariaDB.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "MariaDB/server",
+  "http_api": 200,
+  "license_spdx": "GPL-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "MariaDB/server",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 8169,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "mariadb.com",
+    "url": "https://mariadb.com/kb/en/documentation/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/MariaDB/server"
+   }
+  }
+ },
+ "Dev/Services/Marqo.md": {
+  "signalements": [
+   "abandonne_sans_remplacement:status=abandonne"
+  ]
+ },
+ "Dev/Services/Neptune.md": {
+  "archived": true,
+  "default_branch": "master",
+  "full_name": "neptune-ai/neptune-client",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-03-17",
+  "repo": "neptune-ai/neptune-client",
+  "signalements": [
+   "abandonne_sans_remplacement:status=abandonne"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 623,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.neptune.ai",
+    "url": "https://docs.neptune.ai/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/neptune-ai/neptune-client"
+   }
+  }
+ },
+ "Dev/Services/Parquet.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "apache/parquet-format",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "apache/parquet-format",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 2563,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "parquet.apache.org",
+    "url": "https://parquet.apache.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/apache/parquet-format"
+   }
+  }
+ },
+ "Dev/Services/Postgres.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "postgres/postgres",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "postgres/postgres",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 21984,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.postgresql.org",
+    "url": "https://www.postgresql.org/docs/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/postgres/postgres"
+   }
+  }
+ },
+ "Dev/Services/Prophet.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "facebook/prophet",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-08-27",
+  "repo": "facebook/prophet",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 20385,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "facebook.github.io",
+    "url": "https://facebook.github.io/prophet/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/facebook/prophet"
+   }
+  }
+ },
+ "Dev/Services/PyTorch Lightning.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "Lightning-AI/pytorch-lightning",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-01",
+  "repo": "Lightning-AI/pytorch-lightning",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 31313,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "lightning.ai",
+    "url": "https://lightning.ai/docs/pytorch/stable/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/Lightning-AI/pytorch-lightning"
+   }
+  }
+ },
+ "Dev/Services/PyTorch.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pytorch/pytorch",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "pytorch/pytorch",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 102710,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.pytorch.org",
+    "url": "https://docs.pytorch.org/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pytorch/pytorch"
+   }
+  }
+ },
+ "Dev/Services/Pydantic.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "pydantic/pydantic",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "pydantic/pydantic",
+  "signalements": [
+   "url_domaine_change:pydantic.dev"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 28689,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "pydantic.dev",
+    "url": "https://docs.pydantic.dev/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pydantic/pydantic"
+   }
+  }
+ },
+ "Dev/Services/RAGatouille.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/Stan.md": {
+  "archived": false,
+  "default_branch": "develop",
+  "full_name": "stan-dev/cmdstanpy",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-08-03",
+  "repo": "stan-dev/cmdstanpy",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 198,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "mc-stan.org",
+    "url": "https://mc-stan.org"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/stan-dev/cmdstanpy"
+   }
+  }
+ },
+ "Dev/Services/TF-Agents.md": {
+  "archived": false,
+  "default_branch": "master",
+  "full_name": "tensorflow/agents",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-01-16",
+  "repo": "tensorflow/agents",
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 3026,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.tensorflow.org",
+    "url": "https://www.tensorflow.org/agents"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/tensorflow/agents"
+   }
+  }
+ },
+ "Dev/Services/TRL.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "huggingface/trl",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "huggingface/trl",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 19196,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "huggingface.co",
+    "url": "https://huggingface.co/docs/trl"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/huggingface/trl"
+   }
+  }
+ },
+ "Dev/Services/TensorRT.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "NVIDIA/TensorRT",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-08-25",
+  "repo": "NVIDIA/TensorRT",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 13313,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.nvidia.com",
+    "url": "https://docs.nvidia.com/deeplearning/tensorrt/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/NVIDIA/TensorRT"
+   }
+  }
+ },
+ "Dev/Services/TorchServe.md": {
+  "archived": true,
+  "default_branch": "master",
+  "full_name": "pytorch/serve",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2025-08-06",
+  "repo": "pytorch/serve",
+  "signalements": [
+   "abandonne_sans_remplacement:status=abandonne"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 4346,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.pytorch.org",
+    "url": "https://docs.pytorch.org/serve/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/pytorch/serve"
+   }
+  }
+ },
+ "Dev/Services/Vanna.md": {
+  "signalements": [
+   "status_maturite_incoherents:maturite=production",
+   "abandonne_sans_remplacement:status=abandonne"
+  ]
+ },
+ "Dev/Services/curl_cffi.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "lexiforest/curl_cffi",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-01",
+  "repo": "lexiforest/curl_cffi",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 6431,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "curl-cffi.readthedocs.io",
+    "url": "https://curl-cffi.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/lexiforest/curl_cffi"
+   }
+  }
+ },
+ "Dev/Services/evaluate.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/fastmcp.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "PrefectHQ/fastmcp",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "majeure_affirmee": 2,
+  "pushed_at": "2026-09-02",
+  "pypi": "fastmcp",
+  "pypi_version": "4.0.1",
+  "repo": "jlowin/fastmcp",
+  "signalements": [
+   "depot_transfere:PrefectHQ/fastmcp",
+   "version_perimee:2->4.0.1"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 27484,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "gofastmcp.com",
+    "url": "https://gofastmcp.com"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/jlowin/fastmcp"
+   }
+  }
+ },
+ "Dev/Services/hydra.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "hydra-ecosystem/hydra",
+  "http_api": 200,
+  "license_spdx": "MIT",
+  "pushed_at": "2026-09-02",
+  "repo": "facebookresearch/hydra",
+  "signalements": [
+   "depot_transfere:hydra-ecosystem/hydra"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 10628,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "hydra.cc",
+    "url": "https://hydra.cc/docs/intro/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/facebookresearch/hydra"
+   }
+  }
+ },
+ "Dev/Services/mcpjam.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "MCPJam/inspector",
+  "http_api": 200,
+  "license_spdx": "NOASSERTION",
+  "pushed_at": "2026-09-02",
+  "repo": "MCPJam/inspector",
+  "signalements": [
+   "licence_divergente:spdx=NOASSERTION"
+  ],
+  "sonde_le": "2026-09-02",
+  "stars": 2182,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.mcpjam.com",
+    "url": "https://www.mcpjam.com"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/MCPJam/inspector"
+   }
+  }
+ },
+ "Dev/Services/papermill.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "nteract/papermill",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-07-06",
+  "repo": "nteract/papermill",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 6478,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "papermill.readthedocs.io",
+    "url": "https://papermill.readthedocs.io/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/nteract/papermill"
+   }
+  }
+ },
+ "Dev/Services/pykan.md": {
+  "signalements": [
+   "abandonne_sans_remplacement:status=en-eval"
+  ]
+ },
+ "Dev/Services/pytorch-crf.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/rank-bm25.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/scipy.signal.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "scipy/scipy",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-09-02",
+  "repo": "scipy/scipy",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 14982,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "docs.scipy.org",
+    "url": "https://docs.scipy.org/doc/scipy/reference/signal.html"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/scipy/scipy"
+   }
+  }
+ },
+ "Dev/Services/selectolax.md": {
+  "signalements": [
+   "corps_declin_vs_status_actif"
+  ]
+ },
+ "Dev/Services/sentence-transformers.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "huggingface/sentence-transformers",
+  "http_api": 200,
+  "license_spdx": "Apache-2.0",
+  "pushed_at": "2026-09-02",
+  "repo": "huggingface/sentence-transformers",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 19059,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.sbert.net",
+    "url": "https://www.sbert.net"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/huggingface/sentence-transformers"
+   }
+  }
+ },
+ "Dev/Services/statsmodels.md": {
+  "archived": false,
+  "default_branch": "main",
+  "full_name": "statsmodels/statsmodels",
+  "http_api": 200,
+  "license_spdx": "BSD-3-Clause",
+  "pushed_at": "2026-09-01",
+  "repo": "statsmodels/statsmodels",
+  "signalements": [],
+  "sonde_le": "2026-09-02",
+  "stars": 11602,
+  "urls": {
+   "url_docs": {
+    "code": 200,
+    "netloc_final": "www.statsmodels.org",
+    "url": "https://www.statsmodels.org/stable/"
+   },
+   "url_repo": {
+    "code": 200,
+    "netloc_final": "github.com",
+    "url": "https://github.com/statsmodels/statsmodels"
+   }
+  }
+ }
+}

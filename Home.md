@@ -12,6 +12,8 @@ tags: [meta]
 - [[MOC/Categories/Bases de données|Bases de données]]
 - [[MOC/Themes/Data Engineering|Data Engineering]]
 - [[MOC/Themes/AI Engineering|AI Engineering]]
+- [[MOC/Types/Patterns|Patterns]] — architectures type
+- [[MOC/Types/Rules|Rules]] — règles transverses
 
 ## Pilotage
 
