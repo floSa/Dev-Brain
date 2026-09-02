@@ -4,7 +4,7 @@
 # ///
 """build_index.py — génère l'index du DevBrain (machine + humain).
 
-Scanne Dev/ et Wiki/ et produit, dans AI/index/ :
+Scanne les dossiers de pages de la racine et produit, dans AI/index/ :
   - brain-index.json : catalogue machine, lu par les skills via query_index.py
   - brain-index.md   : document humain, propre — groupé par rôle, puis par domaine
 
@@ -32,7 +32,21 @@ except ModuleNotFoundError:  # pragma: no cover
     sys.exit("PyYAML manquant — lancer via uv : uv run AI/scripts/build_index.py")
 
 VAULT = Path(__file__).resolve().parents[2]
-SCAN_DIRS = ["Dev", "Wiki"]
+# Périmètre de balayage. Avant le lot 3, deux dossiers fixes : `Dev` et `Wiki`.
+# Depuis, les pages descendent dans un arbre de DOMAINES à la racine (« Bases de
+# données/ », « Machine Learning/ »…), et `Dev/`+`Wiki/` ne portent plus que les
+# domaines pas encore migrés. On énumère donc par la NÉGATIVE : tout dossier de la
+# racine qui n'est pas de l'outillage est un dossier de pages. Aucune table de
+# domaines à tenir à jour, et le jour où `Dev/` et `Wiki/` disparaissent, rien à
+# changer ici. Cf. AI/design/brain-v3.md §4 et §11.
+NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
+             "Projects", "docs", "MOC"}
+
+
+def scan_dirs() -> list[str]:
+    """Dossiers de premier niveau qui portent des pages, triés."""
+    return sorted(d.name for d in VAULT.iterdir()
+                  if d.is_dir() and d.name not in NON_PAGES)
 OUT_JSON = VAULT / "AI" / "index" / "brain-index.json"
 OUT_MD = VAULT / "AI" / "index" / "brain-index.md"
 
@@ -77,8 +91,14 @@ def rel(path: Path) -> str:
 
 
 def is_active_v2(scan_dir: str, fm: dict) -> bool:
-    """Dev/ = entièrement v2 ; Wiki/ = v2 seulement si aucun champ hérité v1."""
-    if scan_dir == "Dev":
+    """Le réservoir v1 ne vit que sous `Wiki/` — partout ailleurs, tout est v2.
+
+    Le test portait sur « pas Dev/ », ce qui aurait classé RÉSERVOIR toute brique
+    descendue dans l'arbre des domaines au lot 3 : `maturite` est un marqueur v1, et
+    337 briques le portent légitimement. Une brique déplacée serait sortie de l'index
+    en silence. Le réservoir est un fait de `Wiki/`, pas un fait de « hors Dev/ ».
+    """
+    if scan_dir != "Wiki":
         return True
     return not (V1_MARKERS & set(fm.keys()))
 
@@ -87,7 +107,7 @@ def collect() -> tuple[list[dict], list[str], int]:
     pages: list[dict] = []
     skipped: list[str] = []
     reservoir = 0
-    for d in SCAN_DIRS:
+    for d in scan_dirs():
         base = VAULT / d
         if not base.exists():
             continue
@@ -171,7 +191,7 @@ def main() -> int:
     pages, skipped, reservoir = collect()
     index = {
         "generated_by": "AI/scripts/build_index.py",
-        "scanned": SCAN_DIRS,
+        "scanned": scan_dirs(),
         "scope": "v2-only (réservoir v1 exclu)",
         "count": len(pages),
         "tags_index": build_tags_index(pages),

@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     - categorie == "database/orm"
 views:
   - type: table

@@ -10,7 +10,7 @@ indexe: data-eng
 <!-- AUTO:START -->
 Domaine **Data Engineering** (`data-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[Données (notions)]] — 13 notion(s)
+- [[Données (notions)]] — 12 notion(s)
 - [[Machine learning (notions)]] — 2 notion(s)
 - [[NLP (notions)]] — 1 notion(s)
 <!-- AUTO:END -->

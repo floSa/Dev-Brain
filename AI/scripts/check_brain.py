@@ -61,7 +61,21 @@ except ModuleNotFoundError:  # pragma: no cover
     sys.exit("PyYAML manquant — lancer via uv : uv run AI/scripts/check_brain.py")
 
 VAULT = Path(__file__).resolve().parents[2]
-SCAN_DIRS = ["Dev", "Wiki"]
+# Périmètre de balayage. Avant le lot 3, deux dossiers fixes : `Dev` et `Wiki`.
+# Depuis, les pages descendent dans un arbre de DOMAINES à la racine (« Bases de
+# données/ », « Machine Learning/ »…), et `Dev/`+`Wiki/` ne portent plus que les
+# domaines pas encore migrés. On énumère donc par la NÉGATIVE : tout dossier de la
+# racine qui n'est pas de l'outillage est un dossier de pages. Aucune table de
+# domaines à tenir à jour, et le jour où `Dev/` et `Wiki/` disparaissent, rien à
+# changer ici. Cf. AI/design/brain-v3.md §4 et §11.
+NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
+             "Projects", "docs", "MOC"}
+
+
+def scan_dirs() -> list[str]:
+    """Dossiers de premier niveau qui portent des pages, triés."""
+    return sorted(d.name for d in VAULT.iterdir()
+                  if d.is_dir() and d.name not in NON_PAGES)
 DOC = VAULT / "Documentation" / "general"
 MOC = VAULT / "MOC"
 
@@ -78,6 +92,7 @@ REQUIRED = {
     "notion": ["role", "nom", "categorie", "domaines"],
     "pattern": ["role", "contexte", "services_cles"],
     "rule": ["role", "domaine", "applicable", "strictness"],
+    "hub": ["role", "nom", "pitch"],
 }
 # Champs EXACTS autorisés par gabarit (spec v3 §5) — tout champ hors liste = non conforme.
 # `role: brique` fusionne les anciens gabarits `service` et `outil` : l'audit v2 avait
@@ -92,11 +107,15 @@ NOTION_ALLOWED = {"role", "nom", "alias", "categorie", "domaines", "tags"}
 # taxonomie ne les couvre pas ; leur porte d'entrée est MOC/Types/, cf. build_mocs).
 PATTERN_ALLOWED = {"role", "tags", "contexte", "services_cles", "projets_appliques"}
 RULE_ALLOWED = {"role", "tags", "domaine", "applicable", "strictness"}
-# Les rôles `hub` et `comparatif` de la spec v3 §3 n'ont pas encore de page : le hub
-# naît au lot 3 (avec l'arborescence), le comparatif au lot 5 (quand les `.base`
-# deviennent des pages). Les déclarer ici avant qu'ils existent inventerait un gabarit.
+# `role: hub` — la page d'un dossier, née au lot 3 avec l'arborescence (spec v3 §9).
+# Pas de `categorie:` : un hub ne se range pas, il EST le rangement — son domaine est
+# son chemin. Le hub de domaine hérite du frontmatter de la notion chapeau qu'il
+# absorbe (`alias`, `domaines`, `tags`), d'où ces trois champs facultatifs.
+HUB_ALLOWED = {"role", "nom", "alias", "pitch", "domaines", "tags"}
+# `role: comparatif` naît au lot 5, quand les `.base` deviennent des pages. Le
+# déclarer avant qu'il existe inventerait un gabarit.
 ALLOWED = {"brique": BRIQUE_ALLOWED, "notion": NOTION_ALLOWED,
-           "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED}
+           "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED, "hub": HUB_ALLOWED}
 # Valeurs autorisées (listes fermées) pour les champs de brique à enum.
 # `hosted` est une LISTE depuis la v3 : `both` ne disait rien qu'une énumération ne
 # dise mieux, et une brique peut être self-hébergeable ET managée sans que ce soit
@@ -114,6 +133,7 @@ LIST_ENUMS = {"hosted": {"self", "managed"}}
 FAMILLES_HEBERGEES = {"plateforme", "saas", "application"}
 SIZE_WARN = {"brique": 90, "notion": 200}
 LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
+RE_ROLE_HUB = re.compile(r"^role: hub\s*$", re.M)
 ALT_SECTION_RE = re.compile(r"\n## Alternatives\n(.*?)(?=\n## |\Z)", re.S)
 ALT_BULLET_RE = re.compile(r"\s*-\s*\[\[([^\]|]+)(?:\|([^\]]+))?\]\]\s*[—-]\s*(.+)")
 # Caractères interdits dans un nom de fichier (Windows compris) : un `nom:` qui en
@@ -158,7 +178,8 @@ def rel(p: Path) -> str:
 
 
 def is_active_v2(scan_dir: str, fm: dict) -> bool:
-    if scan_dir == "Dev":
+    """Le réservoir v1 ne vit que sous `Wiki/` (même correctif que build_index)."""
+    if scan_dir != "Wiki":
         return True
     return not (V1_MARKERS & set(fm.keys()))
 
@@ -271,15 +292,31 @@ def norm_pitch(s: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"\*\*", "", s or "")).strip().rstrip(".")
 
 
+def pages_aiguillage() -> list[Path]:
+    """Les pages qui servent de porte d'entrée : `MOC/`, les `role: hub`, `Home.md`.
+
+    Le lot 3 remplace `MOC/` par les pages hub, domaine par domaine — les deux
+    coexistent tant que les 20 domaines ne sont pas migrés. `Home.md` compte aussi :
+    c'est lui qui cite les hubs de domaine, lesquels n'ont pas de parent.
+    """
+    out: list[Path] = list(MOC.rglob("*.md")) if MOC.exists() else []
+    if (VAULT / "Home.md").exists():
+        out.append(VAULT / "Home.md")
+    for d in scan_dirs():
+        for md in (VAULT / d).rglob("*.md"):
+            tete = md.read_text(encoding="utf-8")[:400]
+            if RE_ROLE_HUB.search(tete):
+                out.append(md)
+    return out
+
+
 def moc_targets() -> tuple[set[str], set[str]]:
-    """Cibles citées par les MOC — (chemins qualifiés, noms nus), minuscules (R7)."""
+    """Cibles citées par les pages d'aiguillage — (chemins qualifiés, noms nus) (R7)."""
     qualifies: set[str] = set()
     nus: set[str] = set()
-    if not MOC.exists():
-        return qualifies, nus
-    for md in MOC.rglob("*.md"):
+    for md in pages_aiguillage():
         for tgt in LINK_RE.findall(md.read_text(encoding="utf-8")):
-            tgt = tgt.strip()
+            tgt = tgt.strip().split("#")[0]
             (qualifies if "/" in tgt else nus).add(tgt.lower())
     return qualifies, nus
 
@@ -409,21 +446,25 @@ def check_alias(active: list[tuple[str, dict, str]]) -> list[str]:
                 warn.append(f"R5 — {path} : alias `{a}` est le `nom:` de `{proprio}` "
                             "(même rôle)")
 
-    # R15 — une `role: brique` doit porter au moins un lien vers une notion (Wiki/Concepts).
+    # R15 — une `role: brique` doit porter au moins un lien vers une notion ou un hub.
     # Le couple Dev<->Wiki est imposé par le skill enrichir-brain (étape 6) mais rien ne
     # le vérifiait : `check_brain` contrôle qu'un lien n'est pas mort, jamais qu'il existe.
     # SOUPLE, et elle doit le rester tant que le passif n'est pas résorbé : 102 fiches
     # service sur 297 ne portaient aucun lien vers un concept (cf. axe 3, constat C2), et
     # le lot 2 étend la règle aux 39 ex-`outil` devenus briques — le passif grossit avant
     # de se résorber, c'est le prix de la fusion des deux gabarits.
-    concepts = {p.stem.lower() for p in (VAULT / "Wiki" / "Concepts").glob("*.md")}
+    # La cible attendue est une page à comprendre : `notion`, ou `hub` — le hub de
+    # domaine ABSORBE la notion chapeau homonyme à l'étape 4 du lot 3, c'est la même
+    # page. Le test lisait `Wiki/Concepts/*`, un chemin que le lot 3 vide.
+    concepts = {Path(p).stem.lower() for p, f, _ in active
+                if f.get("role") in {"notion", "hub"}}
     for path, fm, body in active:
         if fm.get("role") != "brique":
             continue
         cibles = {t.split("|")[0].split("/")[-1].strip().lower()
                   for t in LINK_RE.findall(body)}
         if not (cibles & concepts):
-            warn.append(f"R15 — {path} : aucun lien vers Wiki/Concepts — "
+            warn.append(f"R15 — {path} : aucun lien vers une notion ou un hub — "
                         "le couple Dev<->Wiki de l'étape 6 du skill n'est pas câblé")
     return warn
 
@@ -439,7 +480,7 @@ def main() -> int:
     moc_q, moc_n = moc_targets()
 
     active: list[tuple[str, dict, str]] = []  # (path, frontmatter, body)
-    for d in SCAN_DIRS:
+    for d in scan_dirs():
         base = VAULT / d
         if not base.exists():
             continue
@@ -575,7 +616,7 @@ def main() -> int:
 
         # 5c. R7 — la page doit être atteignable depuis un MOC
         if path[:-3].lower() not in moc_q and stem.lower() not in moc_n:
-            hard.append(f"R7 — {path}: atteignable depuis aucun MOC "
+            hard.append(f"R7 — {path}: atteignable depuis aucun hub ni MOC "
                         "(relancer build_index puis build_mocs)")
 
         # 6. taille (souple)

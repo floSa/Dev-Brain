@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "database/vecteur"
+    - categorie == "database/graphe"
 views:
   - type: table
-    name: Bases vectorielles
+    name: Bases graphes
     order:
       - file.name
       - pitch
@@ -18,7 +17,7 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Self-host distribué
+    name: Distribué
     filters:
       and:
         - scaling == "distributed"
@@ -26,7 +25,20 @@ views:
       - file.name
       - pitch
       - langage
-      - alternatives
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - langage
     sort:
       - property: file.name
         direction: asc

@@ -15,8 +15,8 @@ Domaine **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis descen
 - [[Apprentissage par renforcement]] — 10 notion(s)
 - [[IA & sécurité]] — 4 notion(s)
 - [[NLP (notions)]] — 4 notion(s)
-- [[Données (notions)]] — 3 notion(s)
 - [[Maths du ML]] — 3 notion(s)
+- [[Données (notions)]] — 2 notion(s)
 - [[Machine learning (notions)]] — 1 notion(s)
 <!-- AUTO:END -->
 

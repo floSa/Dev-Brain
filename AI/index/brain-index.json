@@ -1,11 +1,12 @@
 {
   "generated_by": "AI/scripts/build_index.py",
   "scanned": [
+    "Bases de données",
     "Dev",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 646,
+  "count": 650,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -2636,6 +2637,1258 @@
   },
   "pages": [
     {
+      "path": "Bases de données/ADBC.md",
+      "nom": "ADBC",
+      "alias": [
+        "arrow-adbc",
+        "Arrow Database Connectivity"
+      ],
+      "role": "brique",
+      "categorie": "database/driver",
+      "famille": "specification",
+      "domaines": null,
+      "pitch": "Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.",
+      "tags": [
+        "db-driver",
+        "columnar"
+      ],
+      "alternatives": [
+        "[[connectorx]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Administration/Administration.md",
+      "nom": "Administration",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Clients graphiques pour explorer, requêter et administrer un serveur de base de données.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/DBeaver.md",
+      "nom": "DBeaver",
+      "alias": [
+        "dbeaver"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.",
+      "tags": [
+        "db-client",
+        "relational",
+        "nosql"
+      ],
+      "alternatives": [
+        "[[DataGrip]]",
+        "[[HeidiSQL]]",
+        "[[pgAdmin]]",
+        "[[MySQL Workbench]]",
+        "[[MongoDB Compass]]",
+        "[[Redis Insight]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/DataGrip.md",
+      "nom": "DataGrip",
+      "alias": [
+        "datagrip"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.",
+      "tags": [
+        "db-client",
+        "relational",
+        "nosql"
+      ],
+      "alternatives": [
+        "[[DBeaver]]",
+        "[[HeidiSQL]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/HeidiSQL.md",
+      "nom": "HeidiSQL",
+      "alias": [
+        "heidisql"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.",
+      "tags": [
+        "db-client",
+        "relational"
+      ],
+      "alternatives": [
+        "[[DBeaver]]",
+        "[[DataGrip]]",
+        "[[MySQL Workbench]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/MongoDB Compass.md",
+      "nom": "MongoDB Compass",
+      "alias": [
+        "compass",
+        "mongodb compass"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.",
+      "tags": [
+        "db-client",
+        "document-db",
+        "nosql"
+      ],
+      "alternatives": [
+        "[[DBeaver]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/MySQL Workbench.md",
+      "nom": "MySQL Workbench",
+      "alias": [
+        "mysql workbench",
+        "workbench"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.",
+      "tags": [
+        "db-client",
+        "relational"
+      ],
+      "alternatives": [
+        "[[DBeaver]]",
+        "[[HeidiSQL]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/Redis Insight.md",
+      "nom": "Redis Insight",
+      "alias": [
+        "redisinsight",
+        "redis insight"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).",
+      "tags": [
+        "db-client",
+        "key-value",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[DBeaver]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/pgAdmin.md",
+      "nom": "pgAdmin",
+      "alias": [
+        "pgadmin",
+        "pgadmin4"
+      ],
+      "role": "brique",
+      "categorie": "database/admin",
+      "famille": "application",
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.",
+      "tags": [
+        "db-client",
+        "postgres",
+        "relational"
+      ],
+      "alternatives": [
+        "[[DBeaver]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Alembic.md",
+      "nom": "Alembic",
+      "alias": [
+        "alembic"
+      ],
+      "role": "brique",
+      "categorie": "database/migration",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.",
+      "tags": [
+        "migration",
+        "relational"
+      ],
+      "alternatives": [
+        "[[Flyway]]",
+        "[[Liquibase]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Apache Cassandra.md",
+      "nom": "Apache Cassandra",
+      "alias": [
+        "cassandra",
+        "apache cassandra"
+      ],
+      "role": "brique",
+      "categorie": "database/cle-valeur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.",
+      "tags": [
+        "nosql",
+        "wide-column",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[MongoDB]]",
+        "[[Redis]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de données.md",
+      "nom": "Bases de données",
+      "alias": [
+        "base de données",
+        "bdd",
+        "database",
+        "sgbd",
+        "dbms"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": "Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.",
+      "tags": [
+        "relational",
+        "nosql",
+        "columnar",
+        "timeseries",
+        "graph-db",
+        "vector-db",
+        "search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/ClickHouse.md",
+      "nom": "ClickHouse",
+      "alias": [
+        "clickhouse"
+      ],
+      "role": "brique",
+      "categorie": "database/analytique",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.",
+      "tags": [
+        "columnar",
+        "olap",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[DuckDB]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/DuckDB.md",
+      "nom": "DuckDB",
+      "alias": [
+        "duckdb"
+      ],
+      "role": "brique",
+      "categorie": "database/analytique",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.",
+      "tags": [
+        "columnar",
+        "olap",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[ClickHouse]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Flyway.md",
+      "nom": "Flyway",
+      "alias": [
+        "flyway"
+      ],
+      "role": "brique",
+      "categorie": "database/migration",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.",
+      "tags": [
+        "migration",
+        "relational"
+      ],
+      "alternatives": [
+        "[[Liquibase]]",
+        "[[Alembic]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/InfluxDB.md",
+      "nom": "InfluxDB",
+      "alias": [
+        "influxdb",
+        "influx"
+      ],
+      "role": "brique",
+      "categorie": "database/series-temporelles",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.",
+      "tags": [
+        "timeseries"
+      ],
+      "alternatives": [
+        "[[TimescaleDB]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Liquibase.md",
+      "nom": "Liquibase",
+      "alias": [
+        "liquibase"
+      ],
+      "role": "brique",
+      "categorie": "database/migration",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.",
+      "tags": [
+        "migration",
+        "relational"
+      ],
+      "alternatives": [
+        "[[Flyway]]",
+        "[[Alembic]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/MongoDB.md",
+      "nom": "MongoDB",
+      "alias": [
+        "mongo",
+        "mongodb"
+      ],
+      "role": "brique",
+      "categorie": "database/document",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.",
+      "tags": [
+        "nosql",
+        "document-db"
+      ],
+      "alternatives": [
+        "[[Redis]]",
+        "[[Apache Cassandra]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Nebula Graph.md",
+      "nom": "Nebula Graph",
+      "alias": [
+        "nebula",
+        "nebula graph",
+        "nebulagraph"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base de graphes distribuée pour jeux de données massifs.",
+      "tags": [
+        "graph-db",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Neo4j]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Neo4j.md",
+      "nom": "Neo4j",
+      "alias": [
+        "neo4j",
+        "neo4J",
+        "neo 4j"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.",
+      "tags": [
+        "graph-db"
+      ],
+      "alternatives": [
+        "[[Nebula Graph]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Prisma.md",
+      "nom": "Prisma",
+      "alias": [
+        "prisma",
+        "prisma orm"
+      ],
+      "role": "brique",
+      "categorie": "database/orm",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.",
+      "tags": [
+        "orm",
+        "relational"
+      ],
+      "alternatives": [
+        "[[SQLAlchemy]]",
+        "[[SQLModel]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/Elasticsearch.md",
+      "nom": "Elasticsearch",
+      "alias": [
+        "elasticsearch",
+        "elastic",
+        "es"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.",
+      "tags": [
+        "search",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Vespa]]",
+        "[[txtai]]",
+        "[[Marqo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/Marqo.md",
+      "nom": "Marqo",
+      "alias": [
+        "marqo",
+        "marqo-ai"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.",
+      "tags": [
+        "search",
+        "vector-db",
+        "semantic-search",
+        "multimodal"
+      ],
+      "alternatives": [
+        "[[Vespa]]",
+        "[[txtai]]",
+        "[[Elasticsearch]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Bases de données/Recherche/Recherche.md",
+      "nom": "Recherche",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Recherche/Vespa.md",
+      "nom": "Vespa",
+      "alias": [
+        "vespa",
+        "vespa.ai",
+        "vespa-engine"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.",
+      "tags": [
+        "search",
+        "vector-db",
+        "hybrid-search",
+        "ranking",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Elasticsearch]]",
+        "[[txtai]]",
+        "[[Marqo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/bm25s.md",
+      "nom": "bm25s",
+      "alias": [
+        "bm25-sparse",
+        "bm25 sparse"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.",
+      "tags": [
+        "information-retrieval",
+        "ranking",
+        "search"
+      ],
+      "alternatives": [
+        "[[rank-bm25]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/rank-bm25.md",
+      "nom": "rank-bm25",
+      "alias": [
+        "rank_bm25",
+        "bm25 python",
+        "okapi bm25 python"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.",
+      "tags": [
+        "information-retrieval",
+        "ranking",
+        "search"
+      ],
+      "alternatives": [
+        "[[bm25s]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/txtai.md",
+      "nom": "txtai",
+      "alias": [
+        "txtai",
+        "neuml-txtai"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.",
+      "tags": [
+        "search",
+        "semantic-search",
+        "embeddings",
+        "rag",
+        "vector-db"
+      ],
+      "alternatives": [
+        "[[Vespa]]",
+        "[[Marqo]]",
+        "[[Elasticsearch]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Redis.md",
+      "nom": "Redis",
+      "alias": [
+        "redis"
+      ],
+      "role": "brique",
+      "categorie": "database/cle-valeur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.",
+      "tags": [
+        "nosql",
+        "key-value",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[MongoDB]]",
+        "[[Apache Cassandra]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/CockroachDB.md",
+      "nom": "CockroachDB",
+      "alias": [
+        "cockroachdb",
+        "cockroach",
+        "crdb"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.",
+      "tags": [
+        "relational",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[Microsoft SQL Server]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/MariaDB.md",
+      "nom": "MariaDB",
+      "alias": [
+        "mariadb"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.",
+      "tags": [
+        "relational"
+      ],
+      "alternatives": [
+        "[[MySQL]]",
+        "[[Postgres]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/Microsoft SQL Server.md",
+      "nom": "Microsoft SQL Server",
+      "alias": [
+        "sql server",
+        "mssql",
+        "sqlserver",
+        "ms sql"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.",
+      "tags": [
+        "relational"
+      ],
+      "alternatives": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/MySQL.md",
+      "nom": "MySQL",
+      "alias": [
+        "mysql"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.",
+      "tags": [
+        "relational"
+      ],
+      "alternatives": [
+        "[[Postgres]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/Postgres.md",
+      "nom": "Postgres",
+      "alias": [
+        "postgres",
+        "postgresql",
+        "pg"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.",
+      "tags": [
+        "relational",
+        "postgres"
+      ],
+      "alternatives": [
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/Relationnel.md",
+      "nom": "Relationnel",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": "Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Relationnel/SQLite.md",
+      "nom": "SQLite",
+      "alias": [
+        "sqlite",
+        "sqlite3"
+      ],
+      "role": "brique",
+      "categorie": "database/relationnel",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.",
+      "tags": [
+        "relational",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/SQLAlchemy.md",
+      "nom": "SQLAlchemy",
+      "alias": [
+        "sqlalchemy"
+      ],
+      "role": "brique",
+      "categorie": "database/orm",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.",
+      "tags": [
+        "orm",
+        "relational",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[Prisma]]",
+        "[[SQLModel]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/SQLModel.md",
+      "nom": "SQLModel",
+      "alias": [
+        "sqlmodel"
+      ],
+      "role": "brique",
+      "categorie": "database/orm",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.",
+      "tags": [
+        "orm",
+        "relational",
+        "type-hints",
+        "data-validation"
+      ],
+      "alternatives": [
+        "[[SQLAlchemy]]",
+        "[[Prisma]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Bases de données/TimescaleDB.md",
+      "nom": "TimescaleDB",
+      "alias": [
+        "timescaledb",
+        "timescale"
+      ],
+      "role": "brique",
+      "categorie": "database/series-temporelles",
+      "famille": "extension",
+      "domaines": null,
+      "pitch": "Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.",
+      "tags": [
+        "timeseries",
+        "postgres"
+      ],
+      "alternatives": [
+        "[[InfluxDB]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Annoy.md",
+      "nom": "Annoy",
+      "alias": [
+        "annoy",
+        "approximate-nearest-neighbors-oh-yeah"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.",
+      "tags": [
+        "vector-db",
+        "ann",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[hnswlib]]",
+        "[[Faiss]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Chroma.md",
+      "nom": "Chroma",
+      "alias": [
+        "chromadb",
+        "chroma-core"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.",
+      "tags": [
+        "vector-db",
+        "rag",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[LanceDB]]",
+        "[[Faiss]]",
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[ScaNN]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Faiss.md",
+      "nom": "Faiss",
+      "alias": [
+        "faiss",
+        "faiss-cpu",
+        "faiss-gpu"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.",
+      "tags": [
+        "vector-db",
+        "ann",
+        "embedded",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/LanceDB.md",
+      "nom": "LanceDB",
+      "alias": [
+        "lancedb",
+        "lance"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.",
+      "tags": [
+        "vector-db",
+        "embedded",
+        "multimodal",
+        "columnar"
+      ],
+      "alternatives": [
+        "[[Chroma]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Milvus.md",
+      "nom": "Milvus",
+      "alias": [
+        "milvus"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).",
+      "tags": [
+        "vector-db",
+        "rag",
+        "ann"
+      ],
+      "alternatives": [
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Pinecone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Pinecone.md",
+      "nom": "Pinecone",
+      "alias": [
+        "pinecone"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.",
+      "tags": [
+        "vector-db",
+        "semantic-search",
+        "rag"
+      ],
+      "alternatives": [
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Milvus]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Qdrant.md",
+      "nom": "Qdrant",
+      "alias": [
+        "qdrant"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.",
+      "tags": [
+        "vector-db",
+        "rag",
+        "ann"
+      ],
+      "alternatives": [
+        "[[Weaviate]]",
+        "[[pgvector]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/ScaNN.md",
+      "nom": "ScaNN",
+      "alias": [
+        "scann",
+        "scalable-nearest-neighbors"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.",
+      "tags": [
+        "vector-db",
+        "ann",
+        "embedded",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[Faiss]]",
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[Chroma]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Vectoriel.md",
+      "nom": "Vectoriel",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Vectoriel/Weaviate.md",
+      "nom": "Weaviate",
+      "alias": [
+        "weaviate"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.",
+      "tags": [
+        "vector-db",
+        "rag",
+        "hybrid-search"
+      ],
+      "alternatives": [
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/hnswlib.md",
+      "nom": "hnswlib",
+      "alias": [
+        "hnsw",
+        "nmslib-hnswlib"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.",
+      "tags": [
+        "vector-db",
+        "ann",
+        "embedded",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[Faiss]]",
+        "[[Annoy]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/pgvector.md",
+      "nom": "pgvector",
+      "alias": [
+        "pgvector",
+        "pg-vector"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "extension",
+      "domaines": null,
+      "pitch": "Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.",
+      "tags": [
+        "vector-db",
+        "rag",
+        "postgres"
+      ],
+      "alternatives": [
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/psycopg2.md",
+      "nom": "psycopg2",
+      "alias": [
+        "psycopg2",
+        "psycopg"
+      ],
+      "role": "brique",
+      "categorie": "database/driver",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.",
+      "tags": [
+        "postgres",
+        "relational",
+        "db-driver"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Dev/Outils/Aider.md",
       "nom": "Aider",
       "alias": [
@@ -2831,60 +4084,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/DBeaver.md",
-      "nom": "DBeaver",
-      "alias": [
-        "dbeaver"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.",
-      "tags": [
-        "db-client",
-        "relational",
-        "nosql"
-      ],
-      "alternatives": [
-        "[[DataGrip]]",
-        "[[HeidiSQL]]",
-        "[[pgAdmin]]",
-        "[[MySQL Workbench]]",
-        "[[MongoDB Compass]]",
-        "[[Redis Insight]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/DataGrip.md",
-      "nom": "DataGrip",
-      "alias": [
-        "datagrip"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.",
-      "tags": [
-        "db-client",
-        "relational",
-        "nosql"
-      ],
-      "alternatives": [
-        "[[DBeaver]]",
-        "[[HeidiSQL]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Excalidraw.md",
       "nom": "Excalidraw",
       "alias": [
@@ -2976,31 +4175,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/HeidiSQL.md",
-      "nom": "HeidiSQL",
-      "alias": [
-        "heidisql"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.",
-      "tags": [
-        "db-client",
-        "relational"
-      ],
-      "alternatives": [
-        "[[DBeaver]]",
-        "[[DataGrip]]",
-        "[[MySQL Workbench]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Maka.md",
       "nom": "Maka",
       "alias": [
@@ -3048,56 +4222,6 @@
       "alternatives": [
         "[[draw.io]]",
         "[[Archify]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/MongoDB Compass.md",
-      "nom": "MongoDB Compass",
-      "alias": [
-        "compass",
-        "mongodb compass"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.",
-      "tags": [
-        "db-client",
-        "document-db",
-        "nosql"
-      ],
-      "alternatives": [
-        "[[DBeaver]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/MySQL Workbench.md",
-      "nom": "MySQL Workbench",
-      "alias": [
-        "mysql workbench",
-        "workbench"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.",
-      "tags": [
-        "db-client",
-        "relational"
-      ],
-      "alternatives": [
-        "[[DBeaver]]",
-        "[[HeidiSQL]]"
       ],
       "complements": [],
       "maturite": null
@@ -3185,31 +4309,6 @@
       ],
       "alternatives": [
         "[[Bruno]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Redis Insight.md",
-      "nom": "Redis Insight",
-      "alias": [
-        "redisinsight",
-        "redis insight"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).",
-      "tags": [
-        "db-client",
-        "key-value",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[DBeaver]]"
       ],
       "complements": [],
       "maturite": null
@@ -3484,31 +4583,6 @@
       "alternatives": [],
       "complements": [],
       "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Outils/pgAdmin.md",
-      "nom": "pgAdmin",
-      "alias": [
-        "pgadmin",
-        "pgadmin4"
-      ],
-      "role": "brique",
-      "categorie": "database/admin",
-      "famille": "application",
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": "Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.",
-      "tags": [
-        "db-client",
-        "postgres",
-        "relational"
-      ],
-      "alternatives": [
-        "[[DBeaver]]"
-      ],
-      "complements": [],
-      "maturite": null
     },
     {
       "path": "Dev/Outils/pi.md",
@@ -3815,28 +4889,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Services/ADBC.md",
-      "nom": "ADBC",
-      "alias": [
-        "arrow-adbc",
-        "Arrow Database Connectivity"
-      ],
-      "role": "brique",
-      "categorie": "database/driver",
-      "famille": "specification",
-      "domaines": null,
-      "pitch": "Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.",
-      "tags": [
-        "db-driver",
-        "columnar"
-      ],
-      "alternatives": [
-        "[[connectorx]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/AWS S3.md",
       "nom": "AWS S3",
       "alias": [
@@ -3991,78 +5043,6 @@
         "[[Mage]]",
         "[[Kestra]]",
         "[[Temporal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Alembic.md",
-      "nom": "Alembic",
-      "alias": [
-        "alembic"
-      ],
-      "role": "brique",
-      "categorie": "database/migration",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.",
-      "tags": [
-        "migration",
-        "relational"
-      ],
-      "alternatives": [
-        "[[Flyway]]",
-        "[[Liquibase]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Annoy.md",
-      "nom": "Annoy",
-      "alias": [
-        "annoy",
-        "approximate-nearest-neighbors-oh-yeah"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.",
-      "tags": [
-        "vector-db",
-        "ann",
-        "embedded"
-      ],
-      "alternatives": [
-        "[[hnswlib]]",
-        "[[Faiss]]",
-        "[[ScaNN]]",
-        "[[Chroma]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Apache Cassandra.md",
-      "nom": "Apache Cassandra",
-      "alias": [
-        "cassandra",
-        "apache cassandra"
-      ],
-      "role": "brique",
-      "categorie": "database/cle-valeur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.",
-      "tags": [
-        "nosql",
-        "wide-column",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[MongoDB]]",
-        "[[Redis]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4340,33 +5320,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Chroma.md",
-      "nom": "Chroma",
-      "alias": [
-        "chromadb",
-        "chroma-core"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.",
-      "tags": [
-        "vector-db",
-        "rag",
-        "embedded"
-      ],
-      "alternatives": [
-        "[[LanceDB]]",
-        "[[Faiss]]",
-        "[[hnswlib]]",
-        "[[Annoy]]",
-        "[[ScaNN]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Chronos.md",
       "nom": "Chronos",
       "alias": [
@@ -4423,28 +5376,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/ClickHouse.md",
-      "nom": "ClickHouse",
-      "alias": [
-        "clickhouse"
-      ],
-      "role": "brique",
-      "categorie": "database/analytique",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.",
-      "tags": [
-        "columnar",
-        "olap",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[DuckDB]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Cloudflare R2.md",
       "nom": "Cloudflare R2",
       "alias": [
@@ -4466,33 +5397,6 @@
         "[[Ceph]]",
         "[[SeaweedFS]]",
         "[[Garage]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/CockroachDB.md",
-      "nom": "CockroachDB",
-      "alias": [
-        "cockroachdb",
-        "cockroach",
-        "crdb"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.",
-      "tags": [
-        "relational",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Postgres]]",
-        "[[MySQL]]",
-        "[[MariaDB]]",
-        "[[SQLite]]",
-        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4912,28 +5816,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/DuckDB.md",
-      "nom": "DuckDB",
-      "alias": [
-        "duckdb"
-      ],
-      "role": "brique",
-      "categorie": "database/analytique",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.",
-      "tags": [
-        "columnar",
-        "olap",
-        "embedded"
-      ],
-      "alternatives": [
-        "[[ClickHouse]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/E2B.md",
       "nom": "E2B",
       "alias": [
@@ -4961,31 +5843,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Elasticsearch.md",
-      "nom": "Elasticsearch",
-      "alias": [
-        "elasticsearch",
-        "elastic",
-        "es"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.",
-      "tags": [
-        "search",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Vespa]]",
-        "[[txtai]]",
-        "[[Marqo]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Evidently.md",
       "nom": "Evidently",
       "alias": [
@@ -5005,34 +5862,6 @@
         "model-evaluation"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Faiss.md",
-      "nom": "Faiss",
-      "alias": [
-        "faiss",
-        "faiss-cpu",
-        "faiss-gpu"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.",
-      "tags": [
-        "vector-db",
-        "ann",
-        "embedded",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[hnswlib]]",
-        "[[Annoy]]",
-        "[[ScaNN]]",
-        "[[Chroma]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -5248,28 +6077,6 @@
       "alternatives": [
         "[[ZenML]]",
         "[[Metaflow]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Flyway.md",
-      "nom": "Flyway",
-      "alias": [
-        "flyway"
-      ],
-      "role": "brique",
-      "categorie": "database/migration",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.",
-      "tags": [
-        "migration",
-        "relational"
-      ],
-      "alternatives": [
-        "[[Liquibase]]",
-        "[[Alembic]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5606,27 +6413,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/InfluxDB.md",
-      "nom": "InfluxDB",
-      "alias": [
-        "influxdb",
-        "influx"
-      ],
-      "role": "brique",
-      "categorie": "database/series-temporelles",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.",
-      "tags": [
-        "timeseries"
-      ],
-      "alternatives": [
-        "[[TimescaleDB]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Instructor.md",
       "nom": "Instructor",
       "alias": [
@@ -5915,30 +6701,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/LanceDB.md",
-      "nom": "LanceDB",
-      "alias": [
-        "lancedb",
-        "lance"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.",
-      "tags": [
-        "vector-db",
-        "embedded",
-        "multimodal",
-        "columnar"
-      ],
-      "alternatives": [
-        "[[Chroma]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/LangChain SQL agent.md",
       "nom": "LangChain SQL agent",
       "alias": [
@@ -6147,28 +6909,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Liquibase.md",
-      "nom": "Liquibase",
-      "alias": [
-        "liquibase"
-      ],
-      "role": "brique",
-      "categorie": "database/migration",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.",
-      "tags": [
-        "migration",
-        "relational"
-      ],
-      "alternatives": [
-        "[[Flyway]]",
-        "[[Alembic]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/LiteLLM.md",
       "nom": "LiteLLM",
       "alias": [
@@ -6350,30 +7090,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/MariaDB.md",
-      "nom": "MariaDB",
-      "alias": [
-        "mariadb"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.",
-      "tags": [
-        "relational"
-      ],
-      "alternatives": [
-        "[[MySQL]]",
-        "[[Postgres]]",
-        "[[SQLite]]",
-        "[[CockroachDB]]",
-        "[[Microsoft SQL Server]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Marimo.md",
       "nom": "Marimo",
       "alias": [
@@ -6426,32 +7142,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Marqo.md",
-      "nom": "Marqo",
-      "alias": [
-        "marqo",
-        "marqo-ai"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.",
-      "tags": [
-        "search",
-        "vector-db",
-        "semantic-search",
-        "multimodal"
-      ],
-      "alternatives": [
-        "[[Vespa]]",
-        "[[txtai]]",
-        "[[Elasticsearch]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
       "path": "Dev/Services/Maxun.md",
       "nom": "Maxun",
       "alias": [
@@ -6490,58 +7180,6 @@
       "alternatives": [
         "[[ZenML]]",
         "[[Flyte]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Microsoft SQL Server.md",
-      "nom": "Microsoft SQL Server",
-      "alias": [
-        "sql server",
-        "mssql",
-        "sqlserver",
-        "ms sql"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.",
-      "tags": [
-        "relational"
-      ],
-      "alternatives": [
-        "[[Postgres]]",
-        "[[MySQL]]",
-        "[[MariaDB]]",
-        "[[SQLite]]",
-        "[[CockroachDB]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Milvus.md",
-      "nom": "Milvus",
-      "alias": [
-        "milvus"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).",
-      "tags": [
-        "vector-db",
-        "rag",
-        "ann"
-      ],
-      "alternatives": [
-        "[[Weaviate]]",
-        "[[Qdrant]]",
-        "[[pgvector]]",
-        "[[Pinecone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6645,53 +7283,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/MongoDB.md",
-      "nom": "MongoDB",
-      "alias": [
-        "mongo",
-        "mongodb"
-      ],
-      "role": "brique",
-      "categorie": "database/document",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.",
-      "tags": [
-        "nosql",
-        "document-db"
-      ],
-      "alternatives": [
-        "[[Redis]]",
-        "[[Apache Cassandra]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/MySQL.md",
-      "nom": "MySQL",
-      "alias": [
-        "mysql"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.",
-      "tags": [
-        "relational"
-      ],
-      "alternatives": [
-        "[[Postgres]]",
-        "[[MariaDB]]",
-        "[[SQLite]]",
-        "[[CockroachDB]]",
-        "[[Microsoft SQL Server]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/NLTK.md",
       "nom": "NLTK",
       "alias": [
@@ -6739,51 +7330,6 @@
         "[[TorchServe]]",
         "[[TensorFlow Serving]]",
         "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Nebula Graph.md",
-      "nom": "Nebula Graph",
-      "alias": [
-        "nebula",
-        "nebula graph",
-        "nebulagraph"
-      ],
-      "role": "brique",
-      "categorie": "database/graphe",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base de graphes distribuée pour jeux de données massifs.",
-      "tags": [
-        "graph-db",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Neo4j]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Neo4j.md",
-      "nom": "Neo4j",
-      "alias": [
-        "neo4j",
-        "neo4J",
-        "neo 4j"
-      ],
-      "role": "brique",
-      "categorie": "database/graphe",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.",
-      "tags": [
-        "graph-db"
-      ],
-      "alternatives": [
-        "[[Nebula Graph]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7259,31 +7805,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Pinecone.md",
-      "nom": "Pinecone",
-      "alias": [
-        "pinecone"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.",
-      "tags": [
-        "vector-db",
-        "semantic-search",
-        "rag"
-      ],
-      "alternatives": [
-        "[[Weaviate]]",
-        "[[Qdrant]]",
-        "[[pgvector]]",
-        "[[Milvus]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Playwright.md",
       "nom": "Playwright",
       "alias": [
@@ -7329,33 +7850,6 @@
         "[[pandas]]",
         "[[Modin]]",
         "[[Dask]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Postgres.md",
-      "nom": "Postgres",
-      "alias": [
-        "postgres",
-        "postgresql",
-        "pg"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.",
-      "tags": [
-        "relational",
-        "postgres"
-      ],
-      "alternatives": [
-        "[[MySQL]]",
-        "[[MariaDB]]",
-        "[[SQLite]]",
-        "[[CockroachDB]]",
-        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7433,29 +7927,6 @@
       ],
       "alternatives": [
         "[[Fanalysis]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Prisma.md",
-      "nom": "Prisma",
-      "alias": [
-        "prisma",
-        "prisma orm"
-      ],
-      "role": "brique",
-      "categorie": "database/orm",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.",
-      "tags": [
-        "orm",
-        "relational"
-      ],
-      "alternatives": [
-        "[[SQLAlchemy]]",
-        "[[SQLModel]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7768,31 +8239,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Qdrant.md",
-      "nom": "Qdrant",
-      "alias": [
-        "qdrant"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.",
-      "tags": [
-        "vector-db",
-        "rag",
-        "ann"
-      ],
-      "alternatives": [
-        "[[Weaviate]]",
-        "[[pgvector]]",
-        "[[Milvus]]",
-        "[[Pinecone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Quarto.md",
       "nom": "Quarto",
       "alias": [
@@ -7962,29 +8408,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Redis.md",
-      "nom": "Redis",
-      "alias": [
-        "redis"
-      ],
-      "role": "brique",
-      "categorie": "database/cle-valeur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.",
-      "tags": [
-        "nosql",
-        "key-value",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[MongoDB]]",
-        "[[Apache Cassandra]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Rich.md",
       "nom": "Rich",
       "alias": [
@@ -8144,79 +8567,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/SQLAlchemy.md",
-      "nom": "SQLAlchemy",
-      "alias": [
-        "sqlalchemy"
-      ],
-      "role": "brique",
-      "categorie": "database/orm",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.",
-      "tags": [
-        "orm",
-        "relational",
-        "type-hints"
-      ],
-      "alternatives": [
-        "[[Prisma]]",
-        "[[SQLModel]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/SQLModel.md",
-      "nom": "SQLModel",
-      "alias": [
-        "sqlmodel"
-      ],
-      "role": "brique",
-      "categorie": "database/orm",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.",
-      "tags": [
-        "orm",
-        "relational",
-        "type-hints",
-        "data-validation"
-      ],
-      "alternatives": [
-        "[[SQLAlchemy]]",
-        "[[Prisma]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/SQLite.md",
-      "nom": "SQLite",
-      "alias": [
-        "sqlite",
-        "sqlite3"
-      ],
-      "role": "brique",
-      "categorie": "database/relationnel",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.",
-      "tags": [
-        "relational",
-        "embedded"
-      ],
-      "alternatives": [
-        "[[Postgres]]",
-        "[[MySQL]]",
-        "[[MariaDB]]",
-        "[[CockroachDB]]",
-        "[[Microsoft SQL Server]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/STUMPY.md",
       "nom": "STUMPY",
       "alias": [
@@ -8234,33 +8584,6 @@
       ],
       "alternatives": [
         "[[PyOD]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/ScaNN.md",
-      "nom": "ScaNN",
-      "alias": [
-        "scann",
-        "scalable-nearest-neighbors"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.",
-      "tags": [
-        "vector-db",
-        "ann",
-        "embedded",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[Faiss]]",
-        "[[hnswlib]]",
-        "[[Annoy]]",
-        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8839,28 +9162,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/TimescaleDB.md",
-      "nom": "TimescaleDB",
-      "alias": [
-        "timescaledb",
-        "timescale"
-      ],
-      "role": "brique",
-      "categorie": "database/series-temporelles",
-      "famille": "extension",
-      "domaines": null,
-      "pitch": "Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.",
-      "tags": [
-        "timeseries",
-        "postgres"
-      ],
-      "alternatives": [
-        "[[InfluxDB]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/TorchServe.md",
       "nom": "TorchServe",
       "alias": [
@@ -9117,59 +9418,6 @@
       "maturite": "deprecated"
     },
     {
-      "path": "Dev/Services/Vespa.md",
-      "nom": "Vespa",
-      "alias": [
-        "vespa",
-        "vespa.ai",
-        "vespa-engine"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.",
-      "tags": [
-        "search",
-        "vector-db",
-        "hybrid-search",
-        "ranking",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Elasticsearch]]",
-        "[[txtai]]",
-        "[[Marqo]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Weaviate.md",
-      "nom": "Weaviate",
-      "alias": [
-        "weaviate"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.",
-      "tags": [
-        "vector-db",
-        "rag",
-        "hybrid-search"
-      ],
-      "alternatives": [
-        "[[Qdrant]]",
-        "[[pgvector]]",
-        "[[Milvus]]",
-        "[[Pinecone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Web-Check.md",
       "nom": "Web-Check",
       "alias": [
@@ -9417,29 +9665,6 @@
       "alternatives": [
         "[[plotly]]",
         "[[bokeh]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/bm25s.md",
-      "nom": "bm25s",
-      "alias": [
-        "bm25-sparse",
-        "bm25 sparse"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.",
-      "tags": [
-        "information-retrieval",
-        "ranking",
-        "search"
-      ],
-      "alternatives": [
-        "[[rank-bm25]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9733,33 +9958,6 @@
       ],
       "alternatives": [
         "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/hnswlib.md",
-      "nom": "hnswlib",
-      "alias": [
-        "hnsw",
-        "nmslib-hnswlib"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.",
-      "tags": [
-        "vector-db",
-        "ann",
-        "embedded",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[Faiss]]",
-        "[[Annoy]]",
-        "[[ScaNN]]",
-        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10260,32 +10458,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/pgvector.md",
-      "nom": "pgvector",
-      "alias": [
-        "pgvector",
-        "pg-vector"
-      ],
-      "role": "brique",
-      "categorie": "database/vecteur",
-      "famille": "extension",
-      "domaines": null,
-      "pitch": "Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.",
-      "tags": [
-        "vector-db",
-        "rag",
-        "postgres"
-      ],
-      "alternatives": [
-        "[[Weaviate]]",
-        "[[Qdrant]]",
-        "[[Milvus]]",
-        "[[Pinecone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/pingouin.md",
       "nom": "pingouin",
       "alias": [],
@@ -10401,27 +10573,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/psycopg2.md",
-      "nom": "psycopg2",
-      "alias": [
-        "psycopg2",
-        "psycopg"
-      ],
-      "role": "brique",
-      "categorie": "database/driver",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.",
-      "tags": [
-        "postgres",
-        "relational",
-        "db-driver"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/pykan.md",
       "nom": "pykan",
       "alias": [
@@ -10500,30 +10651,6 @@
         "deep-learning"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/rank-bm25.md",
-      "nom": "rank-bm25",
-      "alias": [
-        "rank_bm25",
-        "bm25 python",
-        "okapi bm25 python"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.",
-      "tags": [
-        "information-retrieval",
-        "ranking",
-        "search"
-      ],
-      "alternatives": [
-        "[[bm25s]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -10963,33 +11090,6 @@
         "[[timm]]",
         "[[albumentations]]",
         "[[Kornia]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/txtai.md",
-      "nom": "txtai",
-      "alias": [
-        "txtai",
-        "neuml-txtai"
-      ],
-      "role": "brique",
-      "categorie": "database/recherche",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.",
-      "tags": [
-        "search",
-        "semantic-search",
-        "embeddings",
-        "rag",
-        "vector-db"
-      ],
-      "alternatives": [
-        "[[Vespa]]",
-        "[[Marqo]]",
-        "[[Elasticsearch]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11980,38 +12080,6 @@
         "embeddings",
         "semantic-search",
         "rag"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Bases de données.md",
-      "nom": "Bases de données",
-      "alias": [
-        "base de données",
-        "bdd",
-        "database",
-        "sgbd",
-        "dbms"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "domaines": [
-        "data-eng",
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "relational",
-        "nosql",
-        "columnar",
-        "timeseries",
-        "graph-db",
-        "vector-db",
-        "search"
       ],
       "alternatives": null,
       "complements": null,

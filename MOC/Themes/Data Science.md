@@ -17,7 +17,7 @@ Domaine **Data Science** (`data-sci`) — explorer par sous-domaine, puis descen
 - [[Séries temporelles]] — 13 notion(s)
 - [[NLP (notions)]] — 7 notion(s)
 - [[Traitement du signal (notions)]] — 5 notion(s)
-- [[Données (notions)]] — 2 notion(s)
+- [[Données (notions)]] — 1 notion(s)
 <!-- AUTO:END -->
 
 ## Notes

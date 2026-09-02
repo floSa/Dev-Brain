@@ -11,7 +11,6 @@ indexe: concept/data
 Notions de la famille `concept/data`.
 
 - [[Architecture médaillon]] — domaines : data-eng
-- [[Bases de données]] — domaines : data-eng, data-sci, ai-eng
 - [[Bases de données vectorielles]] — domaines : data-eng, ai-eng
 - [[Change Data Capture (CDC)]] — domaines : data-eng
 - [[Contrats de données & qualité]] — domaines : data-eng

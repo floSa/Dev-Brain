@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "database/recherche"
+    - categorie == "database/analytique"
 views:
   - type: table
-    name: Moteurs de recherche
+    name: Bases colonnes / OLAP
     order:
       - file.name
       - pitch
@@ -18,15 +17,28 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Maintenus (hors déprécié)
+    name: Embarqué
     filters:
       and:
-        - maturite != "deprecated"
+        - scaling == "single-node"
     order:
       - file.name
       - pitch
       - langage
-      - scaling
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Distribué
+    filters:
+      and:
+        - scaling == "distributed"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
     sort:
       - property: file.name
         direction: asc

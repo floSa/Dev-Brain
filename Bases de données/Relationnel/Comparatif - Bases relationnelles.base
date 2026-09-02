@@ -1,13 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    # `database/wide-column` a fusionne dans `database/cle-valeur` (Cassandra).
-    - or:
-        - categorie == "database/document"
-        - categorie == "database/cle-valeur"
+    - categorie == "database/relationnel"
 views:
   - type: table
-    name: Bases NoSQL
+    name: Bases relationnelles
     order:
       - file.name
       - pitch
@@ -21,7 +17,7 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Distribué
+    name: Distribué (NewSQL)
     filters:
       and:
         - scaling == "distributed"

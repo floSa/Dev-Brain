@@ -35,6 +35,14 @@ tags: [meta, design, v3, migration]
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
 
+> **État au 2026-09-04.** Lot 3 : 1 domaine sur 20 migré (« Bases de données », 47 pages
+> plus 10 comparatifs). 598 pages restent sous `Dev/` et `Wiki/`. Deux mouvements hors
+> inventaire : `Wiki/Concepts/HDBSCAN.md` est renommée `Clustering hiérarchique par
+> densité` (collision de casse avec `Dev/Services/hdbscan.md`, impossible sur un système
+> de fichiers Windows — cf. les *Remontées* de `lot-3-arborescence.md`), et
+> `MOC/Categories/Bases de données.md` disparaît dans la fusion de l'étape 4.
+> Le vault porte donc 298 notions, 5 hubs, et plus un seul wikilink qualifié.
+
 ## Arbre cible
 
 ```
@@ -566,9 +574,14 @@ SecondBrain/
 - [ ] `[n]` prompt-caching
 - [ ] `[n]` tool-use
 
-### Bases de données  ·  47 pages
+### Bases de données  ·  47 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — les 4 sous-hubs sont écrits ; le hub de domaine porte le corps de la
+  notion fusionnée, à passer au gabarit §9 au lot 6
+- [x] sous-dossiers créés — `Vectoriel/` (11), `Administration/` (7), `Recherche/` (6),
+  `Relationnel/` (6) ; 17 pages au niveau du domaine, plus les 10 comparatifs
+- [ ] notions recatégorisées — lot 4 ; l'arbre ne porte que des briques aujourd'hui
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Vectoriel/** — `database/vecteur` — 11 pages
 
@@ -1037,7 +1050,9 @@ SecondBrain/
 
 - [ ] `[n]` AI security — actuellement `concept/ai`
 - [ ] `[n]` Architecture médaillon — actuellement `concept/data`
-- [ ] `[n]` Bases de données — actuellement `concept/data`
+- [x] `[n]` Bases de données — **résolue** : fusionnée dans le hub
+  `Bases de données/Bases de données.md` (`role: hub`) au lot 3, avec
+  `MOC/Categories/Bases de données.md`. Ne relève plus du lot 4.
 - [ ] `[n]` Bases de données vectorielles — actuellement `concept/data`
 - [ ] `[n]` Change Data Capture (CDC) — actuellement `concept/data`
 - [ ] `[n]` Contrats de données & qualité — actuellement `concept/data`

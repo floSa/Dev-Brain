@@ -1,45 +1,43 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "database/analytique"
+    - categorie == "database/admin"
 views:
   - type: table
-    name: Bases colonnes / OLAP
+    name: Clients de bases de données
     order:
       - file.name
       - pitch
-      - hosted
-      - scaling
-      - langage
+      - os
       - licence_type
-      - maturite
+      - langage
       - tags
     sort:
       - property: file.name
         direction: asc
   - type: table
-    name: Embarqué
+    name: Universels (multi-SGBD)
     filters:
       and:
-        - scaling == "single-node"
+        - tags.contains("relational")
+        - tags.contains("nosql")
     order:
       - file.name
       - pitch
-      - langage
+      - os
       - licence_type
     sort:
       - property: file.name
         direction: asc
   - type: table
-    name: Distribué
+    name: Open-source
     filters:
       and:
-        - scaling == "distributed"
+        - licence_type == "open-source"
     order:
       - file.name
       - pitch
+      - os
       - langage
-      - licence_type
     sort:
       - property: file.name
         direction: asc

@@ -151,6 +151,65 @@ def upsert(path: Path, title: str, intro: str, bullets: list[str],
         path.write_text(fm + f"# {title}\n\n{auto}\n\n## Notes\n\n", encoding="utf-8")
 
 
+# ---------------------------------------------------------------- pages hub (v3)
+
+RE_ROLE_HUB = re.compile(r"^role: hub\s*$", re.M)
+NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
+             "Projects", "docs", "MOC"}
+ROLE_SECTION = [("notion", "Notions"), ("brique", "Briques")]
+
+
+def dossiers_de_pages() -> list[Path]:
+    return sorted(d for d in VAULT.iterdir()
+                  if d.is_dir() and d.name not in NON_PAGES)
+
+
+def hubs() -> list[Path]:
+    """Les pages `role: hub` du vault — une par dossier de l'arbre des domaines."""
+    out = []
+    for racine in dossiers_de_pages():
+        for md in sorted(racine.rglob("*.md")):
+            if RE_ROLE_HUB.search(md.read_text(encoding="utf-8")[:400]):
+                out.append(md)
+    return out
+
+
+def zone_hub(hub: Path, pages: list[dict]) -> list[str]:
+    """Contenu de la zone AUTO d'un hub : ses sous-dossiers, puis SES pages.
+
+    Le perimetre d'un hub est son DOSSIER, pas une requete sur `categorie:` — c'est
+    tout l'interet de l'arborescence (brain-v3 §10) : le voisinage d'une page est
+    `ls` de son dossier, il ne se devine plus. Les pages d'un sous-dossier sont
+    listees par le hub de ce sous-dossier, jamais deux fois.
+    """
+    dossier = hub.parent
+    rel = dossier.relative_to(VAULT).as_posix()
+    lignes: list[str] = []
+
+    sous = []
+    for sd in sorted(d for d in dossier.iterdir() if d.is_dir()):
+        fils = sd / (sd.name + ".md")
+        if fils.exists() and RE_ROLE_HUB.search(fils.read_text(encoding="utf-8")[:400]):
+            sous.append(sd.name)
+    if sous:
+        lignes += ["### Sous-domaines",
+                   "- " + " · ".join("[[" + s + "]]" for s in sous), ""]
+
+    ici = [q for q in pages
+           if q["path"].rsplit("/", 1)[0] == rel and Path(q["path"]).stem != hub.stem]
+    for role, titre in ROLE_SECTION:
+        membres = sorted((q for q in ici if q.get("role") == role),
+                         key=lambda e: e["nom"].lower())
+        if membres:
+            lignes += ["### " + titre] + [bullet(q) for q in membres] + [""]
+
+    bases = sorted(b.stem for b in dossier.glob("*.base"))
+    if bases:
+        lignes += ["### Comparatifs"] + ["- [[" + b + "]]" for b in bases] + [""]
+
+    return lignes or ["*(dossier vide)*"]
+
+
 def main() -> int:
     if not INDEX.exists():
         raise SystemExit("Index absent — lancer d'abord : uv run AI/scripts/build_index.py")
@@ -246,8 +305,27 @@ def main() -> int:
                bullets, dom)
         written.append(("Themes", label, len(subs)))
 
+    # Zones AUTO des pages hub (v3) — elles remplacent `MOC/` domaine par domaine.
+    # Les pages deja descendues dans l'arbre sortent d'elles-memes des boucles MOC
+    # ci-dessus, qui filtrent sur `Dev/` et `Wiki/`.
+    for hub in hubs():
+        lignes = zone_hub(hub, pages)
+        txt = hub.read_text(encoding="utf-8")
+        if not AUTO_RE.search(txt):
+            skipped.append(hub.relative_to(VAULT).as_posix() + " : aucune zone "
+                           "<!-- AUTO:START -->/<!-- AUTO:END --> — hub non rempli")
+            continue
+        nl = "\r\n" if "\r\n" in txt else "\n"
+        auto = ("<!-- AUTO:START -->" + nl + nl.join(lignes).rstrip()
+                + nl + "<!-- AUTO:END -->")
+        hub.write_text(AUTO_RE.sub(lambda m: auto, txt), encoding="utf-8")
+        written.append(("hub", hub.relative_to(VAULT).as_posix(), len(lignes)))
+
     for kind, label, n in written:
-        print(f"  MOC/{kind}/{label}.md ({n} membre(s))")
+        if kind == "hub":
+            print(f"  {label} (zone AUTO : {n} ligne(s))")
+        else:
+            print(f"  MOC/{kind}/{label}.md ({n} membre(s))")
     for s in skipped:
         print(f"  [SKIP] {s}")
     print(f"{len(written)} MOC générés / mis à jour.")

@@ -1,13 +1,14 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "database/migration"
+    - categorie == "database/recherche"
 views:
   - type: table
-    name: Outils de migration
+    name: Moteurs de recherche
     order:
       - file.name
       - pitch
+      - hosted
+      - scaling
       - langage
       - licence_type
       - maturite
@@ -16,15 +17,15 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Open-source / open-core
+    name: Maintenus (hors déprécié)
     filters:
       and:
-        - licence_type != "proprietary"
+        - maturite != "deprecated"
     order:
       - file.name
       - pitch
-      - hosted
       - langage
+      - scaling
     sort:
       - property: file.name
         direction: asc

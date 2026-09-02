@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 646 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 650 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -542,7 +542,6 @@
 
 ### concept/data
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
-- **Bases de données** — domaines : data-eng, data-sci, ai-eng · alias : base de données, bdd, database, sgbd, dbms
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
 - **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
 - **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
@@ -872,3 +871,12 @@
 - **Rule - Qualité stricte** — —
 - **Rule - Structure de projet** — —
 - **Rule - Toolchain Python** — —
+
+## hub
+
+### (sans catégorie)
+- **Administration** — Clients graphiques pour explorer, requêter et administrer un serveur de base de données.
+- **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
+- **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
+- **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
+- **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).

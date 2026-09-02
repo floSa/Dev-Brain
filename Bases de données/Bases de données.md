@@ -1,13 +1,15 @@
 ---
-role: notion
+role: hub
 nom: Bases de données
 alias: [base de données, bdd, database, sgbd, dbms]
-categorie: concept/data
+pitch: Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 domaines: [data-eng, data-sci, ai-eng]
 tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 ---
 
 # Bases de données
+
+> Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 
 ## Aperçu
 
@@ -82,3 +84,35 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 - Comparatif des outils de migration : [[Comparatif - Migrations de schéma]] (vue Dev).
 - Notions d'outillage : [[Migrations de schéma]], [[ORM]].
 - Référence : *Designing Data-Intensive Applications* (M. Kleppmann) pour les compromis cohérence/échelle.
+
+<!-- AUTO:START -->
+### Sous-domaines
+- [[Administration]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
+
+### Briques
+- [[ADBC]] — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.
+- [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
+- [[Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
+- [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
+- [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
+- [[Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
+- [[InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
+- [[Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
+- [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
+- [[Nebula Graph]] — Base de graphes distribuée pour jeux de données massifs.
+- [[Neo4j]] — SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.
+- [[Prisma]] — ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
+- [[psycopg2]] — Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.
+- [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
+- [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
+- [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
+- [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
+
+### Comparatifs
+- [[Comparatif - Bases NoSQL]]
+- [[Comparatif - Bases colonnes]]
+- [[Comparatif - Bases graphes]]
+- [[Comparatif - Bases temporelles]]
+- [[Comparatif - Migrations de schéma]]
+- [[Comparatif - ORM]]
+<!-- AUTO:END -->

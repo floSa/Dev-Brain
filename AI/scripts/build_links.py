@@ -26,7 +26,21 @@ except ModuleNotFoundError:  # pragma: no cover
     sys.exit("PyYAML manquant — lancer via uv : uv run AI/scripts/build_links.py")
 
 VAULT = Path(__file__).resolve().parents[2]
-SCAN = ["Dev", "Wiki"]
+# Périmètre de balayage. Avant le lot 3, deux dossiers fixes : `Dev` et `Wiki`.
+# Depuis, les pages descendent dans un arbre de DOMAINES à la racine (« Bases de
+# données/ », « Machine Learning/ »…), et `Dev/`+`Wiki/` ne portent plus que les
+# domaines pas encore migrés. On énumère donc par la NÉGATIVE : tout dossier de la
+# racine qui n'est pas de l'outillage est un dossier de pages. Aucune table de
+# domaines à tenir à jour, et le jour où `Dev/` et `Wiki/` disparaissent, rien à
+# changer ici. Cf. AI/design/brain-v3.md §4 et §11.
+NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
+             "Projects", "docs", "MOC"}
+
+
+def scan_dirs() -> list[str]:
+    """Dossiers de premier niveau qui portent des pages, triés."""
+    return sorted(d.name for d in VAULT.iterdir()
+                  if d.is_dir() and d.name not in NON_PAGES)
 OUT = VAULT / "AI" / "index" / "liens.md"
 V1 = {"created", "modified", "maturite", "lecture_min", "auteurs_cles",
       "sous_categories", "score", "mes_projets", "clients_officiels",
@@ -53,7 +67,7 @@ def slug(s: str) -> str:
 
 
 def active(scan_dir: str, fm: dict) -> bool:
-    return scan_dir == "Dev" or not (V1 & set(fm.keys()))
+    return scan_dir != "Wiki" or not (V1 & set(fm.keys()))
 
 
 def hors_vault(p, racine) -> bool:
@@ -73,7 +87,7 @@ def hors_vault(p, racine) -> bool:
 
 def main() -> int:
     pages = []
-    for d in SCAN:
+    for d in scan_dirs():
         base = VAULT / d
         if not base.exists():
             continue
