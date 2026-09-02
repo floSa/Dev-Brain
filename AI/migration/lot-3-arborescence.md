@@ -53,15 +53,26 @@ Ensuite, par taille croissante de difficulté : `Data & pipelines`, `Outils de d
 les 15 petits domaines, puis `LLM` et `Machine Learning` en dernier — ce sont eux qui portent
 les notions non catégorisées, et le lot 4 devra repasser derrière.
 
+**Fait au 2026-09-04 — 15 domaines sur 20.** Le pilote, puis les 14 plus petits en une
+session : `Outils de développement` (20 pages), `Signal & audio` (3), `Design & diagrammes`
+(7), `Calcul distribué` (7), `Web & API` (6), `Stockage` (6), `Automatisation no-code` (5),
+`Médias` (4), `Interfaces & apps data` (4), `Sécurité` (3), `Observabilité` (3), `Réseau`
+(2), `Documents` (2), `DevOps` (2). Restent `Machine Learning`, `LLM & IA générative`,
+`Data & pipelines`, `Statistiques & inférence` et `Mathématiques` — les 5 gros, et les
+seuls à porter des notions à recatégoriser au lot 4.
+
 ### Pour chaque domaine
 
 1. Créer l'arborescence du domaine et ses sous-dossiers.
 2. `git mv` chaque page vers son dossier dérivé de `categorie:`.
 3. Créer la page `hub` de chaque dossier créé, avec sa zone `<!-- AUTO -->` vide.
-4. Fusionner la notion chapeau homonyme dans le hub quand elle existe — cas
-   `Wiki/Concepts/Bases de données.md` et `MOC/Categories/Bases de données.md`, qui sont la
-   **seule collision de nom du vault** et listent les mêmes briques. Le corps écrit à la main
-   de la notion devient le corps du hub ; la liste générée devient la zone `AUTO`.
+4. Faire du **hub de domaine** le descendant de ce qui jouait déjà son rôle, par `git mv` :
+   - la notion chapeau homonyme quand elle existe — le seul cas est
+     `Wiki/Concepts/Bases de données.md`, fusionnée avec `MOC/Categories/Bases de données.md` ;
+     son corps écrit à la main devient le corps du hub, la liste générée devient la zone `AUTO` ;
+   - sinon, et c'est le cas général, `MOC/Categories/<Domaine>.md` elle-même : son
+     frontmatter passe `type: moc` -> `role: hub`, son corps est réécrit au gabarit §9.
+     Cf. remontée 6.
 5. Relancer `build_mocs.py` pour remplir les zones `AUTO`.
 6. Vérifier qu'aucun wikilink n'est cassé.
 
@@ -82,21 +93,24 @@ le vault**, à la casse près. Voir la première remontée.
 
 ## Critères d'acceptation
 
-État au 2026-09-04, après le domaine pilote « Bases de données » (1 domaine sur 20).
+État au 2026-09-04, après le pilote et les 14 plus petits domaines (**15 sur 20**).
 
-- [ ] `Dev/`, `Wiki/` et `MOC/` n'existent plus — *19 domaines restants ; 598 pages
-      encore sous `Dev/` et `Wiki/`.*
+- [ ] `Dev/`, `Wiki/` et `MOC/` n'existent plus — *5 domaines restants (Machine
+      Learning, LLM & IA générative, Data & pipelines, Statistiques & inférence,
+      Mathématiques) ; 524 pages encore sous `Dev/` et `Wiki/`.*
 - [x] Le chemin de chaque page concorde avec son `categorie:` — vérifié en dur par
-      `AI/scripts/check_arbo.py`, vert sur les 47 pages migrées.
-- [x] Chaque dossier porte une page `role: hub` à son nom — 5 hubs, contrôlé par
+      `AI/scripts/check_arbo.py`, vert sur les 121 pages migrées dans 15 domaines.
+- [x] Chaque dossier porte une page `role: hub` à son nom — 23 hubs, contrôlé par
       `check_arbo.py` à tous les niveaux du chemin, pas seulement la feuille.
 - [x] Aucun wikilink cassé — `check_brain.py` vert (0 violation dure),
-      `build_links.py` : 0 lien non résolu sur 650 pages.
-- [x] `build_mocs.py` remplit les zones `AUTO` des hubs — et ne crée plus la MOC du
-      domaine migré, les boucles `MOC/` filtrant sur `Dev/` et `Wiki/`. `MOC/` survit
-      pour les 19 domaines restants, comme prévu.
-- [x] Aucun fichier perdu — 796 fichiers `.md`/`.base` avant, 799 après : −1 fusion
-      documentée (`MOC/Categories/Bases de données.md`), +4 hubs de sous-domaine.
+      `build_links.py` : 0 lien non résolu sur 668 pages.
+- [x] `build_mocs.py` remplit les zones `AUTO` des 23 hubs — et ne crée plus la MOC
+      d'un domaine migré, les boucles `MOC/` filtrant sur `Dev/` et `Wiki/`.
+      `MOC/Categories/` ne garde que les 5 domaines restants.
+- [x] Aucun fichier perdu — 796 fichiers `.md`/`.base` avant le lot, 803 après :
+      −1 fusion documentée (`MOC/Categories/Bases de données.md`), +8 hubs de
+      sous-domaine. Les 14 autres MOC de domaine ne disparaissent pas, elles
+      **deviennent** les hubs de domaine par `git mv`.
 
 ## Interdictions
 
@@ -128,7 +142,7 @@ sur elle — le jeton appartient à la brique, un alias rouvrirait la collision 
 résolution. Les 14 liens concernés (10 nus, 4 qualifiés) sont retargetés un par un :
 les 14 parlaient de la méthode, jamais du paquet.
 
-**Conséquence pour les 19 domaines suivants** : avant de créer une page, vérifier que son
+**Conséquence pour les domaines suivants** : avant de créer une page, vérifier que son
 nom de fichier est unique dans le vault, à la casse près. C'est la contrepartie du lien nu,
 et elle est maintenant écrite dans `CLAUDE.md` et dans le skill `enrichir-brain`.
 
@@ -159,7 +173,7 @@ Le filtre de chemin est **retiré** des 10 comparatifs déplacés. Il était de 
 redondant : `categorie == "database/vecteur"` ne peut désigner qu'une brique, les notions
 portant `concept/*`. Les 37 autres seront traités au fil de leur domaine.
 
-C'est le point à ne pas oublier dans les 19 conversations suivantes : un comparatif dont
+C'est le point à ne pas oublier dans les conversations suivantes : un comparatif dont
 la vue est vide ne lève aucune alerte, seul `check_brain` R8b le voit — et seulement s'il
 tombe sous 2 membres.
 
@@ -194,31 +208,179 @@ réservoir et **sortie de l'index en silence**.
 - **Les 4 sous-hubs sont écrits à la main, le hub de domaine non.** Les cases
   « hub écrit » de `v3-arborescence.md` sont cochées pour les sous-domaines ; le hub de
   domaine garde le corps de la notion fusionnée, à réécrire au gabarit §9 au lot 6.
-- **`Wiki/Outils/Obsidian.md`** (`categorie: skill/knowledge`, hors des 20 préfixes de
-  `DOM_LABEL`) va dans « Outils de développement/ » — tranché par floSa le 2026-09-04.
-  `v3-arborescence.md` ne l'assigne à aucun domaine : il est muet, il ne contredit pas.
-  À appliquer dans la conversation « Outils de développement », pas ici.
+- ~~**`Wiki/Outils/Obsidian.md`** va dans « Outils de développement/ »~~ — **fait** le
+  2026-09-04 avec le domaine, via `arbo.DOM_RATTACHE` ; cf. remontée 9.
 - **Les 9 comparatifs sans filtre `categorie`** restent dans `Dev/Patterns/` : leur
-  domaine se pose à la main, aucun n'appartient à « Bases de données ».
+  domaine se pose à la main, aucun n'appartient à « Bases de données ». 3 d'entre eux
+  ont été traités depuis — cf. remontée 7, qui montre que leur filtre de chemin **casse**
+  quand leurs membres descendent, et qu'attendre n'est donc pas neutre.
 
-## Prompt à coller dans une conversation neuve — domaines suivants
+## Remontées — les 14 plus petits domaines, 2026-09-04
+
+74 pages et 9 comparatifs, du domaine « Outils de développement » (20 pages) au domaine
+« DevOps » (2 pages). La méthode du pilote a tenu sans retouche ; ce qui suit est ce
+qu'elle n'avait pas rencontré.
+
+### 6. Une MOC de domaine ne disparaît pas, elle DEVIENT le hub
+
+Le pilote avait un cas particulier : une notion chapeau homonyme existait
+(`Wiki/Concepts/Bases de données.md`), c'est elle qui a été déplacée vers le hub, et
+`MOC/Categories/Bases de données.md` a disparu dans la fusion. Aucun des 14 domaines
+suivants n'a de notion chapeau. La MOC de domaine y est donc le **seul ancêtre** du hub.
+
+Elle est déplacée par `git mv` vers `<Domaine>/<Domaine>.md`, puis son frontmatter passe
+`type: moc` -> `role: hub` et son corps est réécrit au gabarit §9. Trois raisons :
+
+1. C'est ce qu'annonce la spec (§4, « `MOC/Categories/*` → les pages `hub` de domaine »).
+2. L'historique git du fichier est conservé.
+3. Aucun `rm` — et le compte de fichiers reste lisible : +1 par sous-dossier créé, 0 par
+   domaine. Sans ce `git mv`, il aurait fallu supprimer 14 MOC devenues fausses, ou les
+   laisser mentir : `build_mocs.py` cesse de les régénérer dès que leurs pages quittent
+   `Dev/`, mais il ne les vide pas.
+
+À faire pour chacun des 5 domaines restants.
+
+### 7. Le piège des `.base` a une SECONDE forme, invisible au script de migration
+
+La remontée 3 du pilote décrivait des comparatifs filtrant sur
+`file.path.startsWith("Dev/Services/")` **plus** une `categorie ==`. Ceux-là,
+`migrate_lot3_arbo.py` les voit : il les déplace avec leur domaine, et on retire la clause
+de chemin.
+
+Neuf comparatifs ne filtrent sur **aucune** `categorie:` — ils croisent le chemin avec un
+tag ou une liste de noms. Le script ne peut pas les voir, ils restent dans `Dev/Patterns/`,
+et leur vue **se vide au fur et à mesure que leurs membres descendent dans l'arbre**. Deux
+l'ont fait sous nos yeux : `Comparatif - Traitement du signal` est tombé de 3 membres à 0,
+`Comparatif - Frameworks CLI` de 1 à 0. Rien ne le signale dans Obsidian ; seul `R8b` de
+`check_brain` le voit, et seulement en dessous de 2 membres.
+
+Traitement des trois comparatifs dont nos domaines déplaçaient les membres :
+
+| Comparatif | Clause de chemin remplacée par | Effet |
+|---|---|---|
+| Traitement du signal | `role == "brique"` | 3 membres, ensemble identique à avant — les 5 notions `concept/signal` portent le même tag et n'ont jamais eu à entrer dans un comparatif. Déplacé dans « Signal & audio/ ». |
+| Frameworks CLI | `categorie == "devtools/cli"` | 2 membres (Typer, Rich). `file.hasTag("cli")` ne tenait que par le filtre de dossier : hors de `Dev/Services/`, le tag ramasse aussi croc (transfert de fichiers) et trois agents de code. Déplacé dans « Outils de développement/ ». L'avertissement R8b « 1 membre » disparaît. |
+| Frontends web légers | `role == "brique"` | 5 membres inchangés, la liste de noms sélectionnant seule. **Reste dans `Dev/Patterns/`** : il enjambe « Web & API » (FastAPI, HTMX) et « Interfaces & apps data » (Streamlit, Gradio, Dash). |
+
+`role == "brique"` est la traduction fidèle de ce que le chemin disait — un comparatif
+compare des briques — et elle ne bouge pas avec l'arbre. C'est la substitution à faire
+par défaut.
+
+**Les 6 comparatifs sans `categorie:` qui restent** (Boosting, Détection & segmentation,
+Détection d'anomalies, Forecasting, NLP, Réduction de dimension) portent tous des membres
+de « Machine Learning ». Leur clause de chemin cassera au moment où ce domaine descendra.
+À traiter dans cette conversation-là, pas avant.
+
+### 8. Le seuil de promotion peut capturer 100 % d'un domaine
+
+« Stockage » a 6 pages, toutes en `storage/objet`. « Automatisation no-code » en a 5,
+toutes en `automation/no-code`. Le seuil de 5 promeut donc le sous-domaine, et le dossier
+de domaine se retrouve **sans aucune page à son niveau**, avec un unique fils qui le
+redouble : `Stockage/Stockage objet/`, `Automatisation no-code/No-code/`.
+
+La règle 2 de `brain-v3.md` §4 est mécanique et ne prévoit pas ce cas. Elle est appliquée
+telle quelle — aucun arbitrage n'est permis au lot 3, et `check_arbo.py` l'exige de toute
+façon. Les deux dossiers sont des places réservées : ils prendront leur sens le jour où le
+domaine gagne un second sous-domaine (`storage/bloc`, `storage/fichier`, `automation/rpa`).
+
+**À trancher hors lot 3**, en une ligne dans `arbo.py` si la réponse est oui : plafonner la
+promotion quand elle capture la totalité du domaine, ou l'assumer.
+
+### 9. `skill/*` n'est pas un domaine — l'exception est nommée, pas absorbée
+
+`Wiki/Outils/Obsidian.md` porte `categorie: skill/knowledge`, qui n'est pas un des 20
+préfixes de `DOM_LABEL`. L'arbitrage de floSa du 2026-09-04 l'envoie dans
+« Outils de développement/ ».
+
+Deux façons de l'écrire, et la première est mauvaise : ajouter `"skill"` à `DOM_LABEL`
+ferait mentir le commentaire qui en fait la copie conforme de `CAT_LABEL`, et rendrait
+l'arbitrage indistinguable d'un vrai domaine. La table `arbo.DOM_RATTACHE` a donc été
+créée pour ça : les préfixes qui ne sont pas des domaines et qu'une décision explicite
+rattache quand même à un dossier, avec la date de la décision en commentaire.
+`arbo.domaine()` consulte les deux ; `migrate_lot3_arbo.py` accepte désormais un préfixe
+rattaché (`uv run … skill`) au lieu de refuser tout ce qui n'est pas dans `DOM_LABEL`.
+
+`Wiki/Outils/` est maintenant vide. Le dossier reste sur le disque mais git ne le suit
+plus. Le scaffold annoncé par `CLAUDE.md` pour la remigration v1 est donc à recréer le
+jour où cette remigration a lieu — ou, plus probablement, à ne pas recréer du tout, la
+v3 n'ayant plus de galaxie `Wiki/`.
+
+### 10. Une MOC de sous-hub wiki reste en arrière, vidée sans être régénérée
+
+`MOC/Concepts/Gestion des connaissances.md` (`indexe: skill/knowledge`) ne listait
+qu'Obsidian. Obsidian ayant quitté `Wiki/`, `build_mocs.py` ne construit plus ce groupe
+et ne repasse donc jamais sur la page : sa zone `AUTO` garde la liste d'avant.
+
+Le contenu est resté juste par chance (la fiche n'a pas changé) et le lien nu résout
+toujours, donc aucun validateur ne bronche. Ce n'est pas une raison de la laisser : c'est
+la même mécanique que la remontée 6, sur l'étage `MOC/Concepts/`. La différence est
+qu'aucun dossier ne porte ce nom, donc aucun hub ne l'accueille — elle disparaîtra avec
+`MOC/`, en fin de lot 3. Notée pour qu'on ne s'étonne pas de la trouver là.
+
+### 11. Trois écarts entre `v3-arborescence.md` et la population réelle
+
+Le tableau par domaine de `v3-arborescence.md` a été mesuré avant le lot 2. Trois écarts
+sont apparus, tous du même genre, et aucun n'est une contradiction à trancher :
+
+- **« Signal & audio » : 3 pages migrées, pas 8.** Le document liste 7 pages dans un
+  sous-dossier `Traitement/`, dont 5 notions ([[Traitement du signal]],
+  [[Filtrage numérique]], [[Transformée de Fourier]], [[STFT et spectrogramme]],
+  [[Ondelettes]]). Ces 5 portent `concept/signal`, pas `signal/traitement` : leur
+  recatégorisation est le **lot 4**. Le sous-dossier n'existe donc pas encore — le seuil
+  de 5 n'est pas atteint par les 2 briques restantes. C'est exactement l'écart déjà
+  signalé pour `Bases de données vectorielles` dans la remontée 5 : le document décrit
+  l'état visé **après** le lot 4. C'est le seul domaine des 14 concerné.
+- **`Wiki/Outils/Obsidian.md` n'est dans aucun tableau** — cf. remontée 9.
+- **Les libellés de sous-dossier manquants** ont été lus dans le document et ajoutés à
+  `SUB_LABEL` : `Notebooks`, `Diagrammes`, `Stockage objet`, `No-code`. Le garde-fou a
+  fonctionné comme prévu — le script s'arrête plutôt que d'inventer un nom.
+
+### 12. Le vocabulaire des tags est une règle DURE, y compris sur un hub
+
+Trois hubs ont été refusés par `check_brain` sur des tags inventés (`tooling`, `python`,
+`jupyter`, `audio`, `literate-programming`, `test`). `tags:` est contrôlé contre les 319
+valeurs de `Documentation/general/tags.md`, sans exception pour `role: hub`.
+
+De même, R5 a signalé une collision d'alias entre deux hubs : `Automatisation no-code`
+portait l'alias `no-code`, qui est le `nom:` du hub de sous-domaine `No-code`. Deux pages
+d'aiguillage que le même jeton désigne se disputent la résolution d'un lien nu. L'alias a
+été retiré du parent.
+
+À retenir pour les 5 domaines restants : écrire le frontmatter d'un hub en lisant
+`tags.md`, et ne pas donner au hub de domaine un alias qui est le nom d'un de ses
+sous-hubs.
+
+## Prompt à coller dans une conversation neuve — les 5 domaines restants
+
+Restent « Machine Learning » (241), « LLM & IA générative » (131), « Data & pipelines »
+(46), « Statistiques & inférence » (47) et « Mathématiques » (27). Ce sont eux qui portent
+les 205 notions non catégorisées, et le lot 4 devra repasser derrière — d'où l'ordre :
+les deux moyens d'abord, `Machine Learning` et `LLM` en dernier.
 
 La passe de dénudage des liens est faite une fois pour toutes : ne pas la rejouer.
 
 ```
 Lis AI/design/brain-v3.md, AI/design/v3-arborescence.md puis
-AI/migration/lot-3-arborescence.md — dont les Remontées du domaine pilote.
+AI/migration/lot-3-arborescence.md — dont les DEUX séries de Remontées.
 
 Applique le lot 3 pour le domaine « <DOMAINE> » uniquement, et arrête-toi là.
 
-Méthode, déjà rodée sur « Bases de données » :
+Méthode, rodée sur 15 domaines :
   uv run AI/migration/scripts/migrate_lot3_arbo.py <prefixe> --dry-run
   puis sans --dry-run. Si le script s'arrête sur un sous-domaine sans libellé,
   le lire dans v3-arborescence.md et l'ajouter à SUB_LABEL de AI/scripts/arbo.py.
 
-Puis : créer les pages hub des dossiers créés, retirer le filtre
-file.path.startsWith("Dev/...") des .base déplacés, régénérer, et vérifier avec
-check_brain.py ET check_arbo.py.
+Puis, dans cet ordre :
+  - `git mv MOC/Categories/<Domaine>.md` vers `<Domaine>/<Domaine>.md`, passer son
+    frontmatter en `role: hub` et réécrire son corps au gabarit §9 (remontée 6) ;
+  - créer les hubs des sous-dossiers promus, en lisant `Documentation/general/tags.md`
+    pour les `tags:` — c'est une règle dure (remontée 12) ;
+  - citer les nouveaux hubs dans `Home.md`, sinon R7 les déclare inatteignables ;
+  - retirer le filtre `file.path.startsWith("Dev/...")` des .base déplacés, ET
+    des comparatifs SANS filtre `categorie` dont ce domaine emporte les membres
+    (remontée 7 — le script ne les voit pas et leur vue se vide en silence) ;
+  - régénérer build_index / build_mocs / build_links, vérifier avec check_brain.py
+    ET check_arbo.py.
 
 Aucun rm : uniquement git mv. Clôture avec le skill cloturer-brain.
 ```

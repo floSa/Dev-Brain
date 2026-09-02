@@ -107,6 +107,11 @@ SecondBrain/
 └── … 17 domaines
 ```
 
+> Cet arbre décrit l'état visé **après le lot 4**, pas après le lot 3 :
+> `Bases de données vectorielles.md` est une notion qui porte encore `concept/data`, et le
+> lot 3 ne recatégorise rien. Même écart pour le sous-dossier `Traitement/` de
+> « Signal & audio ». Cf. les *Remontées* de `AI/migration/lot-3-arborescence.md`.
+
 ### Ce que l'arbre remplace
 
 `MOC/` disparaît en entier — 39 pages. Ses trois étages sont absorbés :
@@ -437,7 +442,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 0 | Masquer `liens.md` du graphe ; masquer le panneau de propriétés | oui, réglages |
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
-| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) | oui, `git mv` |
+| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **15 domaines sur 20 faits au 2026-09-04**, restent les 5 plus gros | oui, `git mv` |
 | 4 | Les 205 notions à recatégoriser, par lots — `ml` (67) et `llm` (57) d'abord | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
@@ -453,7 +458,16 @@ chaque étape.
 1. **Les 5 `MOC/Themes`** (data-sci, data-eng, mlops, ml-eng, ai-eng) sont le seul consommateur
    de `domaines:`. Les garder comme hubs transverses à la racine, ou supprimer le champ ?
 2. **Les 18 notions sans domaine évident** et les **9 comparatifs sans filtre `categorie`** :
-   arbitrage page par page, listés dans l'arborescence.
+   arbitrage page par page, listés dans l'arborescence. *Mesuré au lot 3* : attendre n'est
+   pas neutre pour ces 9 comparatifs — leur filtre croise un chemin `Dev/Services/` avec un
+   tag ou une liste de noms, donc leur vue **se vide en silence** quand leurs membres
+   descendent dans l'arbre, et le script de migration ne les voit pas. 3 ont été traités
+   pour cette raison. Cf. remontée 7 de `lot-3-arborescence.md`.
 3. **`Projects/`** reste hors de l'arbre des domaines. À confirmer.
 4. **Le seuil de promotion à 5 pages** est un choix de confort, pas un fait. Il donne
    28 sous-dossiers ; à 4 il en donnerait 34, à 8 il en donnerait 12.
+   *Mesuré au lot 3* : il peut capturer **100 %** d'un domaine, et produire un dossier
+   fils qui redouble son parent — `Stockage/Stockage objet/` (6 pages sur 6),
+   `Automatisation no-code/No-code/` (5 sur 5). La règle 2 ne prévoit pas ce cas ; elle a
+   été appliquée telle quelle. Reste à trancher : plafonner la promotion dans ce cas, ou
+   l'assumer comme une place réservée. Cf. remontée 8 de `lot-3-arborescence.md`.

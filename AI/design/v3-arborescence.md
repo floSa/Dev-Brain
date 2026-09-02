@@ -35,13 +35,26 @@ tags: [meta, design, v3, migration]
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
 
-> **État au 2026-09-04.** Lot 3 : 1 domaine sur 20 migré (« Bases de données », 47 pages
-> plus 10 comparatifs). 598 pages restent sous `Dev/` et `Wiki/`. Deux mouvements hors
-> inventaire : `Wiki/Concepts/HDBSCAN.md` est renommée `Clustering hiérarchique par
-> densité` (collision de casse avec `Dev/Services/hdbscan.md`, impossible sur un système
-> de fichiers Windows — cf. les *Remontées* de `lot-3-arborescence.md`), et
-> `MOC/Categories/Bases de données.md` disparaît dans la fusion de l'étape 4.
-> Le vault porte donc 298 notions, 5 hubs, et plus un seul wikilink qualifié.
+> **État au 2026-09-04.** Lot 3 : **15 domaines sur 20** migrés — le pilote
+> « Bases de données » puis les 14 plus petits, soit 121 pages et 19 comparatifs
+> descendus dans l'arbre. 524 pages restent sous `Dev/` et `Wiki/`, réparties sur les
+> 5 domaines les plus gros : Machine Learning, LLM & IA générative, Data & pipelines,
+> Statistiques & inférence, Mathématiques. Ce sont eux qui portent les 205 notions à
+> recatégoriser au lot 4.
+>
+> Le vault porte 668 pages actives et **23 hubs** (15 de domaine, 8 de sous-domaine).
+> `MOC/Categories/` ne garde que 5 pages : les 14 autres ont été déplacées par `git mv`
+> vers le hub de leur dossier — une MOC de domaine ne disparaît pas, elle *devient* le
+> hub (cf. remontée 6 de `lot-3-arborescence.md`). Seule
+> `MOC/Categories/Bases de données.md` a réellement disparu, dans la fusion de l'étape 4
+> avec la notion chapeau homonyme.
+>
+> Deux mouvements hors inventaire : `Wiki/Concepts/HDBSCAN.md` est renommée
+> `Clustering hiérarchique par densité` (collision de casse avec
+> `Dev/Services/hdbscan.md`, impossible sur un système de fichiers Windows), et
+> `Wiki/Outils/Obsidian.md` (`skill/knowledge`, aucun domaine dans ce document) rejoint
+> « Outils de développement/ » par arbitrage de floSa. `Wiki/Outils/` est vide.
+> Plus un seul wikilink qualifié dans le vault.
 
 ## Arbre cible
 
@@ -86,7 +99,8 @@ SecondBrain/
 ├── Outils de développement/   (19 pages)
 │   ├── Notebooks/   (5)
 │   └── (14 pages au niveau du domaine)
-├── Signal & audio/   (8 pages)
+├── Signal & audio/   (8 pages — APRÈS lot 4 ; 3 pages et aucun sous-dossier au lot 3,
+│   │                    les 5 notions portant encore `concept/signal`)
 │   ├── Traitement/   (7)
 │   └── (1 pages au niveau du domaine)
 ├── Design & diagrammes/   (7 pages)
@@ -96,9 +110,9 @@ SecondBrain/
 │   └── (7 pages au niveau du domaine)
 ├── Web & API/   (6 pages)
 │   └── (6 pages au niveau du domaine)
-├── Stockage/   (6 pages)
+├── Stockage/   (6 pages — le sous-dossier capture TOUT le domaine, cf. remontée 8)
 │   ├── Stockage objet/   (6)
-├── Automatisation no-code/   (5 pages)
+├── Automatisation no-code/   (5 pages — sous-dossier total, cf. remontée 8)
 │   ├── No-code/   (5)
 ├── Médias/   (4 pages)
 │   └── (4 pages au niveau du domaine)
@@ -837,9 +851,15 @@ SecondBrain/
 - [ ] `[n]` Vector norms
 - [ ] `[n]` Wasserstein distance
 
-### Outils de développement  ·  19 pages
+### Outils de développement  ·  19 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `Notebooks`
+- [x] sous-dossiers créés — `Notebooks/` (5) ; 15 pages au niveau du domaine, plus 3
+  comparatifs (`Clients d'API`, `Gestionnaires de paquets Python`, `Frameworks CLI`)
+- [x] **20 pages, pas 19** — `Wiki/Outils/Obsidian.md` (`skill/knowledge`) est rattachée
+  ici par arbitrage de floSa ; ce tableau ne la comptait pas
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Notebooks/** — `devtools/notebook` — 5 pages
 
@@ -871,9 +891,18 @@ SecondBrain/
 - `[c]` Comparatif - Clients d'API — filtre `devtools/client-api`
 - `[c]` Comparatif - Gestionnaires de paquets Python — filtre `devtools/paquet`
 
-### Signal & audio  ·  8 pages
+### Signal & audio  ·  8 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — **aucun** : seules 3 pages sont descendues, pas 8. Les 5
+  notions listées ci-dessous portent `concept/signal` et non `signal/traitement` ; leur
+  recatégorisation est le lot 4, et le seuil de 5 n'est donc pas atteint par les 2 briques
+  `signal/traitement` restantes. Le sous-dossier `Traitement/` décrit l'état visé APRÈS
+  le lot 4 — même écart que `Bases de données vectorielles`
+- [x] comparatif rattaché — `Comparatif - Traitement du signal`, dont le filtre de chemin
+  cassait au déplacement (cf. remontée 7 du lot 3)
+- [ ] notions recatégorisées — lot 4, les 5 notions de ce tableau
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Traitement/** — `signal/traitement` — 7 pages
 
@@ -889,9 +918,13 @@ SecondBrain/
 
 - `[b]` librosa — paquet, Python
 
-### Design & diagrammes  ·  7 pages
+### Design & diagrammes  ·  7 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `Diagrammes`
+- [x] sous-dossiers créés — `Diagrammes/` (5 + 1 comparatif) ; 2 pages et 1 comparatif au
+  niveau du domaine
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Diagrammes/** — `design/diagramme` — 5 pages
 
@@ -911,9 +944,13 @@ SecondBrain/
 - `[c]` Comparatif - Design & prototypage — filtre `design/ui`
 - `[c]` Comparatif - Diagrammes — filtre `design/diagramme`
 
-### Calcul distribué  ·  7 pages
+### Calcul distribué  ·  7 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun, aucun sous-domaine n'atteint 5 pages
+  (`compute/a-la-demande` 3, `compute/distribue` 3, `compute/gpu` 1)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 7 pages
 
@@ -929,9 +966,12 @@ SecondBrain/
 
 - `[c]` Comparatif - Calcul distribué — filtre `compute/distribue, compute/gpu`
 
-### Web & API  ·  6 pages
+### Web & API  ·  6 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`web/backend` 3, `web/frontend` 2, `web/api` 1)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 6 pages
 
@@ -942,9 +982,13 @@ SecondBrain/
 - `[b]` Uvicorn — cli, Python
 - `[b]` public-apis — annuaire
 
-### Stockage  ·  6 pages
+### Stockage  ·  6 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `Stockage objet`
+- [x] sous-dossiers créés — `Stockage objet/` (6), soit **tout** le domaine : aucune page
+  au niveau du domaine. Le seuil capture 100 % du domaine ; cf. remontée 8 du lot 3
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Stockage objet/** — `storage/objet` — 6 pages
 
@@ -955,9 +999,13 @@ SecondBrain/
 - `[b]` MinIO — plateforme, Go
 - `[b]` SeaweedFS — plateforme, Go
 
-### Automatisation no-code  ·  5 pages
+### Automatisation no-code  ·  5 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `No-code`
+- [x] sous-dossiers créés — `No-code/` (5 + 1 comparatif), soit **tout** le domaine :
+  aucune page au niveau du domaine ; cf. remontée 8 du lot 3
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **No-code/** — `automation/no-code` — 5 pages
 
@@ -971,9 +1019,12 @@ SecondBrain/
 
 - `[c]` Comparatif - Automatisation no-code — filtre `automation/no-code`
 
-### Médias  ·  4 pages
+### Médias  ·  4 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`media/ingestion` 2, `media/video` 2)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 4 pages
 
@@ -982,9 +1033,12 @@ SecondBrain/
 - `[b]` SmartTube — application, Java
 - `[b]` Superwhisper — application
 
-### Interfaces & apps data  ·  4 pages
+### Interfaces & apps data  ·  4 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun : `ui/data-app` a 4 pages, une sous le seuil
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 4 pages
 
@@ -997,9 +1051,14 @@ SecondBrain/
 
 - `[c]` Comparatif - Apps data & démos ML — filtre `ui/data-app`
 
-### Sécurité  ·  3 pages
+### Sécurité  ·  3 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`security/recon` 2, `security/auth` 1)
+- [ ] notions recatégorisées — lot 4 : les 4 notions de sécurité des LLM (Prompt
+  injection, Jailbreaking and defenses, Guardrails, AI security) portent `concept/ai` et
+  sont dans la liste « Hors arbre » ; le hub le dit explicitement
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 3 pages
 
@@ -1007,9 +1066,12 @@ SecondBrain/
 - `[b]` Web-Check — application, TypeScript
 - `[b]` osint4all — annuaire
 
-### Observabilité  ·  3 pages
+### Observabilité  ·  3 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun : `observability/supervision` a 3 pages
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 3 pages
 
@@ -1017,27 +1079,36 @@ SecondBrain/
 - `[b]` Grafana — application, Go
 - `[b]` Loki — plateforme, Go
 
-### Réseau  ·  2 pages
+### Réseau  ·  2 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`network/analyse` 1, `network/transfert` 1)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 2 pages
 
 - `[b]` Sniffnet — application, Rust
 - `[b]` croc — cli, Go
 
-### Documents  ·  2 pages
+### Documents  ·  2 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`docs/capture` 1, `docs/pdf` 1)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 2 pages
 
 - `[b]` Page to Markdown — extension
 - `[b]` Stirling PDF — plateforme, Java
 
-### DevOps  ·  2 pages
+### DevOps  ·  2 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
+- [x] sous-dossiers créés — aucun (`devops/ci` 1, `devops/conteneur` 1)
+- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 2 pages
 
@@ -1071,13 +1142,21 @@ SecondBrain/
 
 9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main.
 
-- [ ] `[c]` Comparatif - Boosting
-- [ ] `[c]` Comparatif - Détection & segmentation
-- [ ] `[c]` Comparatif - Détection d'anomalies
-- [ ] `[c]` Comparatif - Forecasting
-- [ ] `[c]` Comparatif - Frameworks CLI
-- [ ] `[c]` Comparatif - Frontends web légers
-- [ ] `[c]` Comparatif - NLP
-- [ ] `[c]` Comparatif - Réduction de dimension
-- [ ] `[c]` Comparatif - Traitement du signal
+Ce n'est pas une attente neutre : ces 9 croisent un chemin `Dev/Services/` avec un tag ou
+une liste de noms, donc **leur vue se vide en silence** dès que leurs membres descendent
+dans l'arbre. Le script de migration ne les voit pas. Cf. remontée 7 de
+`lot-3-arborescence.md`.
+
+- [x] `[c]` Comparatif - Frameworks CLI — **rangé** dans « Outils de développement/ » ;
+      `file.hasTag("cli")` remplacé par `categorie == "devtools/cli"` (2 membres)
+- [x] `[c]` Comparatif - Traitement du signal — **rangé** dans « Signal & audio/ » ;
+      clause de chemin remplacée par `role == "brique"` (3 membres)
+- [~] `[c]` Comparatif - Frontends web légers — **réparé** (`role == "brique"`, 5 membres)
+      mais NON rangé : il enjambe « Web & API » et « Interfaces & apps data »
+- [ ] `[c]` Comparatif - Boosting — membres dans « Machine Learning », non migré
+- [ ] `[c]` Comparatif - Détection & segmentation — idem
+- [ ] `[c]` Comparatif - Détection d'anomalies — idem
+- [ ] `[c]` Comparatif - Forecasting — idem
+- [ ] `[c]` Comparatif - NLP — idem
+- [ ] `[c]` Comparatif - Réduction de dimension — idem
 
