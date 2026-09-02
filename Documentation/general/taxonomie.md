@@ -19,14 +19,21 @@ Une page de `Dev/` est rangée sur **deux axes indépendants**, tous deux à voc
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
 `AI/scripts/check_brain.py` : une valeur hors liste échoue en dur.
 
-**`type:` cesse de porter la nature.** Le champ reste — il désigne le gabarit de frontmatter et
-la galaxie d'accueil (`service`, `outil`, `concept`, `pattern`, `rule`) — mais il ne dit rien de
-ce qu'est l'objet : il est posé par le dossier d'accueil (`Dev/Services/` vs `Dev/Outils/`), pas
-par une question sur l'objet. Le croisement le prouve : sur les 336 fiches Dev, 57 relèvent des
-familles `application`, `cli` ou `extension` — 34 en `type: outil`, 23 en `type: service`, sans
-discriminant (Marimo, notebook à interface, est `type: service` ; DBeaver, client à interface,
-est `type: outil` — même nature, types opposés ; symétriquement, 11 des 13 `saas` sont
-`type: service`). Ne pas raisonner sur `type:` pour savoir ce qu'est une brique : lire `famille:`.
+**`type:` a été supprimé** au lot 2 de la migration v3, et remplacé par `role:`. La v2 avait
+déjà constaté qu'il ne portait pas la nature : il était posé par le dossier d'accueil
+(`Dev/Services/` vs `Dev/Outils/`), pas par une question sur l'objet. Le croisement le prouvait :
+sur les 336 fiches Dev, 57 relevaient des familles `application`, `cli` ou `extension` — 34 en
+`type: outil`, 23 en `type: service`, sans discriminant (Marimo, notebook à interface, était
+`type: service` ; DBeaver, client à interface, `type: outil` — même nature, types opposés ;
+symétriquement, 11 des 13 `saas` étaient `type: service`). Les deux gabarits ont donc fusionné
+en `role: brique`.
+
+**`role:` n'est pas un troisième axe de rangement**, c'est la nature **éditoriale** de la page :
+`brique` (ce qu'on déploie ou importe), `notion` (ce qu'il faut comprendre), `pattern`, `rule` —
+et bientôt `hub` (lot 3) et `comparatif` (lot 5). Il choisit le **gabarit** que le validateur
+applique. `famille:` reste la nature **technique** d'une brique : est-ce un paquet ou une
+plateforme ? Pour savoir ce qu'**est** une brique, lire `famille:` — jamais `role:`, qui dit
+seulement que c'en est une.
 
 ## Axe `famille:` — la nature de la brique (9 valeurs fermées)
 
@@ -44,8 +51,8 @@ modele
 annuaire
 ```
 
-Le champ est attendu sur `type: service` et `type: outil`, et interdit sur les autres gabarits
-(`concept`, `pattern`, `rule` : ceux-là ne documentent pas une brique). `check_brain` refuse en
+Le champ est attendu sur `role: brique`, et interdit sur les autres gabarits (`notion`,
+`pattern`, `rule` : ceux-là ne documentent pas une brique). `check_brain` refuse en
 dur toute valeur hors de ce bloc [R14] mais **accepte un champ vide** : c'est le seul signal
 prévu pour « l'arbre n'a pas tranché, à arbitrer ». Une famille inventée est une faute, un champ
 vide est une question ouverte.
