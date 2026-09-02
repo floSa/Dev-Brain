@@ -444,7 +444,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 0 | Masquer `liens.md` du graphe ; masquer le panneau de propriétés | oui, réglages |
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
-| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **18 domaines sur 20 faits au 2026-09-04**, restent « Machine Learning » et « LLM & IA générative », un par conversation | oui, `git mv` |
+| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **19 domaines sur 20 faits au 2026-09-04**, reste « Machine Learning », dans sa propre conversation | oui, `git mv` |
 | 4 | Les 205 notions à recatégoriser, par lots — `ml` (67) et `llm` (57) d'abord | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
@@ -464,9 +464,10 @@ chaque étape.
    pas neutre pour ces 9 comparatifs — leur filtre croise un chemin `Dev/Services/` avec un
    tag ou une liste de noms, donc leur vue **se vide en silence** quand leurs membres
    descendent dans l'arbre, et le script de migration ne les voit pas. 3 ont été traités
-   pour cette raison ; un quatrième (« Réduction de dimension ») a perdu 2 de ses 5
-   membres avec un domaine qui n'est pas celui de sa majorité. Cf. remontées 7 et 14 de
-   `lot-3-arborescence.md`.
+   pour cette raison, puis « Réduction de dimension » — qui avait perdu 2 de ses 5
+   membres avec un domaine qui n'est pas celui de sa majorité — et « NLP », qui en avait
+   perdu 2 sans que personne le voie. **Il en reste 4**, tous à « Machine Learning ».
+   Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
 3. **`Projects/`** reste hors de l'arbre des domaines. À confirmer.
 4. ~~**Le seuil de promotion à 5 pages**~~ — **tranché le 2026-09-04.** Le seuil reste à 5
    (à 4 il donnerait 34 sous-dossiers, à 8 il en donnerait 12), mais il est **plafonné** :

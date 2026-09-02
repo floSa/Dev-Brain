@@ -35,19 +35,21 @@ tags: [meta, design, v3, migration]
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
 
-> **État au 2026-09-04.** Lot 3 : **15 domaines sur 20** migrés — le pilote
-> « Bases de données » puis les 14 plus petits, soit 121 pages et 19 comparatifs
-> descendus dans l'arbre. 524 pages restent sous `Dev/` et `Wiki/`, réparties sur les
-> 5 domaines les plus gros : Machine Learning, LLM & IA générative, Data & pipelines,
-> Statistiques & inférence, Mathématiques. Ce sont eux qui portent les 205 notions à
-> recatégoriser au lot 4.
+> **État au 2026-09-04.** Lot 3 : **19 domaines sur 20** migrés — le pilote
+> « Bases de données », les 14 plus petits, les trois moyens (« Statistiques &
+> inférence », « Data & pipelines », « Mathématiques »), puis « LLM & IA générative »,
+> soit 252 pages et 26 comparatifs descendus dans l'arbre. **Reste « Machine
+> Learning »** : 392 pages et 13 comparatifs sous `Dev/` et `Wiki/`, dont l'essentiel
+> des notions à recatégoriser au lot 4.
 >
-> Le vault porte 668 pages actives et **23 hubs** (15 de domaine, 8 de sous-domaine).
-> `MOC/Categories/` ne garde que 5 pages : les 14 autres ont été déplacées par `git mv`
-> vers le hub de leur dossier — une MOC de domaine ne disparaît pas, elle *devient* le
-> hub (cf. remontée 6 de `lot-3-arborescence.md`). Seule
+> Le vault porte 680 pages actives et **36 hubs** (19 de domaine, 17 de sous-domaine).
+> `MOC/Categories/` ne garde qu'une page, « Machine Learning » : les 18 autres ont été
+> déplacées par `git mv` vers le hub de leur dossier — une MOC de domaine ne disparaît
+> pas, elle *devient* le hub (cf. remontée 6 de `lot-3-arborescence.md`). Seule
 > `MOC/Categories/Bases de données.md` a réellement disparu, dans la fusion de l'étape 4
-> avec la notion chapeau homonyme.
+> avec la notion chapeau homonyme ; `Wiki/Concepts/Text-to-SQL.md` est le second cas de
+> notion chapeau, au niveau d'un sous-domaine cette fois, et elle *devient* le sous-hub
+> (cf. remontée 15).
 >
 > Deux mouvements hors inventaire : `Wiki/Concepts/HDBSCAN.md` est renommée
 > `Clustering hiérarchique par densité` (collision de casse avec
@@ -419,9 +421,19 @@ SecondBrain/
 - [ ] `[n]` k-médoïds (PAM)
 - [ ] `[n]` t-SNE and UMAP
 
-### LLM & IA générative  ·  131 pages
+### LLM & IA générative  ·  131 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine issu de `MOC/Categories/`, corps réécrit au gabarit §9 ;
+  les 6 sous-hubs sont écrits, celui de `Text-to-SQL/` portant le corps de la notion
+  chapeau absorbée (à passer au §9 au lot 6, comme celui de « Bases de données »)
+- [x] sous-dossiers créés — `Agents de code/` (13), `Runtimes/` (9), `Agents/` (9),
+  `Fine-tuning/` (5), `Text-to-SQL/` (5), `Assistants/` (5) ; 28 briques au niveau du
+  domaine, plus 3 des 7 comparatifs
+- [ ] notions recatégorisées — lot 4 : les 56 notions `concept/llm` ci-dessous, plus les
+  4 notions de sécurité des LLM en `concept/ai` (cf. « Sécurité »). Les hubs les citent
+  toutes en liens nus pour que l'arbre ne paraisse pas fait de briques seules
+  (remontée 13) ; seule `Text-to-SQL` est descendue, parce qu'elle est devenue un hub
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Agents de code/** — `llm/agent-de-code` — 13 pages
 
@@ -528,7 +540,7 @@ SecondBrain/
 - `[c]` Comparatif - Observabilité LLM — filtre `llm/observabilite`
 - `[c]` Comparatif - Évaluation LLM — filtre `llm/eval`
 
-**À arbitrer — 57 notions sans sous-domaine**
+**À arbitrer — 56 notions sans sous-domaine** (57 au relevé initial ; `Text-to-SQL` en est sortie, devenue le hub de son sous-dossier)
 
 - [ ] `[n]` Advanced RAG
 - [ ] `[n]` Agent evaluation
@@ -579,7 +591,6 @@ SecondBrain/
 - [ ] `[n]` Speculative decoding
 - [ ] `[n]` Structured outputs
 - [ ] `[n]` Synthetic data generation
-- [ ] `[n]` Text-to-SQL
 - [ ] `[n]` Tokenization
 - [ ] `[n]` Tool use patterns
 - [ ] `[n]` a2a-protocol
