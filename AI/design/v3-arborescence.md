@@ -110,10 +110,10 @@ SecondBrain/
 │   └── (7 pages au niveau du domaine)
 ├── Web & API/   (6 pages)
 │   └── (6 pages au niveau du domaine)
-├── Stockage/   (6 pages — le sous-dossier capture TOUT le domaine, cf. remontée 8)
-│   ├── Stockage objet/   (6)
-├── Automatisation no-code/   (5 pages — sous-dossier total, cf. remontée 8)
-│   ├── No-code/   (5)
+├── Stockage/   (6 pages — plafond du seuil, cf. remontée 8)
+│   └── (6 pages au niveau du domaine)
+├── Automatisation no-code/   (5 pages — plafond du seuil, cf. remontée 8)
+│   └── (5 pages au niveau du domaine)
 ├── Médias/   (4 pages)
 │   └── (4 pages au niveau du domaine)
 ├── Interfaces & apps data/   (4 pages)
@@ -984,13 +984,16 @@ SecondBrain/
 
 ### Stockage  ·  6 pages  ·  **migré le 2026-09-04**
 
-- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `Stockage objet`
-- [x] sous-dossiers créés — `Stockage objet/` (6), soit **tout** le domaine : aucune page
-  au niveau du domaine. Le seuil capture 100 % du domaine ; cf. remontée 8 du lot 3
+- [x] hub écrit — hub de domaine unique, issu de `MOC/Categories/` puis fusionné avec
+  le sous-hub `Stockage objet` (voir ci-dessous)
+- [x] sous-dossiers créés — **aucun**. `Stockage objet/` avait été créé le 2026-09-04
+  (6 pages sur 6), puis **défait le même jour** par le plafond du seuil : un
+  sous-domaine qui ne laisse aucune page au niveau du domaine ne se promeut pas.
+  Cf. remontée 8 du lot 3
 - [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Stockage objet/** — `storage/objet` — 6 pages
+**Au niveau du domaine** — `storage/objet` — 6 pages
 
 - `[b]` AWS S3 — saas
 - `[b]` Ceph — plateforme, C++
@@ -1001,13 +1004,15 @@ SecondBrain/
 
 ### Automatisation no-code  ·  5 pages  ·  **migré le 2026-09-04**
 
-- [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `No-code`
-- [x] sous-dossiers créés — `No-code/` (5 + 1 comparatif), soit **tout** le domaine :
-  aucune page au niveau du domaine ; cf. remontée 8 du lot 3
+- [x] hub écrit — hub de domaine unique, issu de `MOC/Categories/` puis fusionné avec
+  le sous-hub `No-code` (voir ci-dessous)
+- [x] sous-dossiers créés — **aucun**. `No-code/` avait été créé le 2026-09-04
+  (5 pages sur 5, plus le comparatif), puis **défait le même jour** par le plafond du
+  seuil ; cf. remontée 8 du lot 3
 - [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
 - [ ] fiches au nouveau gabarit — lot 6
 
-**No-code/** — `automation/no-code` — 5 pages
+**Au niveau du domaine** — `automation/no-code` — 5 pages
 
 - `[b]` Activepieces — plateforme, TypeScript
 - `[b]` Windmill — plateforme, Rust

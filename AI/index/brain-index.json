@@ -20,7 +20,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 668,
+  "count": 666,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1404,7 +1404,6 @@
       "Langflow",
       "Mage",
       "Maxun",
-      "No-code",
       "PraisonAI",
       "Windmill",
       "Zapier",
@@ -1722,8 +1721,7 @@
       "MinIO",
       "Pattern - Stack démo ML locale multi-services",
       "SeaweedFS",
-      "Stockage",
-      "Stockage objet"
+      "Stockage"
     ],
     "object-tracking": [
       "OpenCV",
@@ -1786,7 +1784,6 @@
       "Kestra",
       "Mage",
       "Metaflow",
-      "No-code",
       "Prefect",
       "Temporal",
       "Windmill",
@@ -2183,8 +2180,7 @@
       "Garage",
       "MinIO",
       "SeaweedFS",
-      "Stockage",
-      "Stockage objet"
+      "Stockage"
     ],
     "safety": [
       "AI security",
@@ -2231,12 +2227,10 @@
     "self-hosted": [
       "Automatisation no-code",
       "Beszel",
-      "No-code",
       "Observabilité",
       "OpenMAIC",
       "Stirling PDF",
       "Stockage",
-      "Stockage objet",
       "Web-Check",
       "croc"
     ],
@@ -2721,32 +2715,7 @@
   },
   "pages": [
     {
-      "path": "Automatisation no-code/Automatisation no-code.md",
-      "nom": "Automatisation no-code",
-      "alias": [
-        "low-code",
-        "automatisation",
-        "ipaas"
-      ],
-      "role": "hub",
-      "categorie": null,
-      "famille": null,
-      "domaines": [
-        "data-eng",
-        "ai-eng"
-      ],
-      "pitch": "Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.",
-      "tags": [
-        "low-code",
-        "orchestration",
-        "self-hosted"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Automatisation no-code/No-code/Activepieces.md",
+      "path": "Automatisation no-code/Activepieces.md",
       "nom": "Activepieces",
       "alias": [
         "activepieces"
@@ -2772,11 +2741,14 @@
       "maturite": "production"
     },
     {
-      "path": "Automatisation no-code/No-code/No-code.md",
-      "nom": "No-code",
+      "path": "Automatisation no-code/Automatisation no-code.md",
+      "nom": "Automatisation no-code",
       "alias": [
-        "workflow automation",
-        "flux a connecteurs"
+        "automatisation",
+        "no-code",
+        "low-code",
+        "ipaas",
+        "workflow automation"
       ],
       "role": "hub",
       "categorie": null,
@@ -2785,7 +2757,7 @@
         "data-eng",
         "ai-eng"
       ],
-      "pitch": "Plateformes de flux à connecteurs — les cinq briques du domaine, du SaaS pur à l'auto-hébergé qui accepte du code.",
+      "pitch": "Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.",
       "tags": [
         "low-code",
         "orchestration",
@@ -2796,7 +2768,7 @@
       "maturite": null
     },
     {
-      "path": "Automatisation no-code/No-code/Windmill.md",
+      "path": "Automatisation no-code/Windmill.md",
       "nom": "Windmill",
       "alias": [
         "windmill",
@@ -2822,7 +2794,7 @@
       "maturite": "production"
     },
     {
-      "path": "Automatisation no-code/No-code/Zapier.md",
+      "path": "Automatisation no-code/Zapier.md",
       "nom": "Zapier",
       "alias": [
         "zapier"
@@ -2847,7 +2819,7 @@
       "maturite": "production"
     },
     {
-      "path": "Automatisation no-code/No-code/gumloop.md",
+      "path": "Automatisation no-code/gumloop.md",
       "nom": "gumloop",
       "alias": [
         "Gumloop",
@@ -2873,7 +2845,7 @@
       "maturite": "production"
     },
     {
-      "path": "Automatisation no-code/No-code/n8n.md",
+      "path": "Automatisation no-code/n8n.md",
       "nom": "n8n",
       "alias": [
         "n8n.io",
@@ -11344,7 +11316,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/AWS S3.md",
+      "path": "Stockage/AWS S3.md",
       "nom": "AWS S3",
       "alias": [
         "s3",
@@ -11370,7 +11342,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/Ceph.md",
+      "path": "Stockage/Ceph.md",
       "nom": "Ceph",
       "alias": [
         "ceph",
@@ -11398,7 +11370,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/Cloudflare R2.md",
+      "path": "Stockage/Cloudflare R2.md",
       "nom": "Cloudflare R2",
       "alias": [
         "r2",
@@ -11424,7 +11396,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/Garage.md",
+      "path": "Stockage/Garage.md",
       "nom": "Garage",
       "alias": [
         "garage"
@@ -11449,7 +11421,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/MinIO.md",
+      "path": "Stockage/MinIO.md",
       "nom": "MinIO",
       "alias": [
         "minio"
@@ -11474,7 +11446,7 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/SeaweedFS.md",
+      "path": "Stockage/SeaweedFS.md",
       "nom": "SeaweedFS",
       "alias": [
         "seaweedfs",
@@ -11501,37 +11473,14 @@
       "maturite": "production"
     },
     {
-      "path": "Stockage/Stockage objet/Stockage objet.md",
-      "nom": "Stockage objet",
-      "alias": [
-        "stockage objet",
-        "object storage",
-        "s3"
-      ],
-      "role": "hub",
-      "categorie": null,
-      "famille": null,
-      "domaines": [
-        "data-eng",
-        "mlops",
-        "infra-ops"
-      ],
-      "pitch": "Servir des objets par une API S3 — la brique de base des lakehouses, des registres de modèles et des sauvegardes.",
-      "tags": [
-        "object-storage",
-        "s3-compatible",
-        "self-hosted"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Stockage/Stockage.md",
       "nom": "Stockage",
       "alias": [
         "stockage",
-        "storage"
+        "storage",
+        "stockage objet",
+        "object storage",
+        "s3"
       ],
       "role": "hub",
       "categorie": null,

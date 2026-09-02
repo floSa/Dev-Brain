@@ -81,8 +81,10 @@ aujourd'hui sur `galaxie:`.
 
 1. Un dossier par **domaine**, nommé avec son libellé français (table `DOM_LABEL`,
    reprise de `CAT_LABEL` de `build_mocs.py`). 20 domaines.
-2. Un **sous-dossier** dès qu'un sous-domaine atteint **5 pages**. En-dessous, ses pages
-   restent au niveau du domaine. Aucun arbitrage : le seuil décide.
+2. Un **sous-dossier** dès qu'un sous-domaine atteint **5 pages** — sauf s'il ne laisse
+   aucune page au niveau du domaine, auquel cas il ne se promeut pas (plafond tranché le
+   2026-09-04, cf. §14.4). En-dessous du seuil, ses pages restent au niveau du domaine.
+   Aucun arbitrage : le seuil et son plafond décident.
 3. Tout dossier porte une page à son nom, `role: hub`.
 4. Le chemin d'une page se **dérive** de son `categorie:`. Personne ne choisit un dossier :
    on pose la catégorie par l'arbre de décision de `Documentation/general/taxonomie.md`, et
@@ -464,10 +466,12 @@ chaque étape.
    descendent dans l'arbre, et le script de migration ne les voit pas. 3 ont été traités
    pour cette raison. Cf. remontée 7 de `lot-3-arborescence.md`.
 3. **`Projects/`** reste hors de l'arbre des domaines. À confirmer.
-4. **Le seuil de promotion à 5 pages** est un choix de confort, pas un fait. Il donne
-   28 sous-dossiers ; à 4 il en donnerait 34, à 8 il en donnerait 12.
-   *Mesuré au lot 3* : il peut capturer **100 %** d'un domaine, et produire un dossier
-   fils qui redouble son parent — `Stockage/Stockage objet/` (6 pages sur 6),
-   `Automatisation no-code/No-code/` (5 sur 5). La règle 2 ne prévoit pas ce cas ; elle a
-   été appliquée telle quelle. Reste à trancher : plafonner la promotion dans ce cas, ou
-   l'assumer comme une place réservée. Cf. remontée 8 de `lot-3-arborescence.md`.
+4. ~~**Le seuil de promotion à 5 pages**~~ — **tranché le 2026-09-04.** Le seuil reste à 5
+   (à 4 il donnerait 34 sous-dossiers, à 8 il en donnerait 12), mais il est **plafonné** :
+   un sous-domaine ne se promeut pas s'il ne laisse **aucune** page au niveau du domaine.
+   Un dossier fils qui redouble son parent n'apporte aucune information et ajoute un
+   niveau à la navigation. Le plafond vit dans `arbo.py` à côté du seuil, et il a été
+   appliqué rétroactivement aux deux cas que le lot 3 avait produits —
+   `Stockage/Stockage objet/` (6 pages sur 6) et `Automatisation no-code/No-code/`
+   (5 sur 5) ont été défaits, leurs pages remontées au domaine et leurs sous-hubs
+   fusionnés dans le hub de domaine. Cf. remontée 8 de `lot-3-arborescence.md`.

@@ -19,6 +19,23 @@ from __future__ import annotations
 # peser sur le seuil — un comparatif n'est pas un membre du comparatif.
 SEUIL = 5
 
+# Plafond du seuil — arbitrage de floSa du 2026-09-04, sur la remontée 8 de
+# AI/migration/lot-3-arborescence.md : un sous-domaine ne se promeut PAS s'il ne
+# laisse AUCUNE page au niveau du domaine. Un dossier fils qui redouble son parent
+# n'apporte aucune information et ajoute un niveau à la navigation.
+#
+# Mesuré sur deux domaines déjà migrés — « Stockage » (6 pages, toutes
+# `storage/objet`) et « Automatisation no-code » (5, toutes `automation/no-code`) —
+# où la règle 2 appliquée nue produisait `Stockage/Stockage objet/` et
+# `Automatisation no-code/No-code/`, seuls fils de leur parent. Les deux ont été
+# défaits rétroactivement le 2026-09-04.
+#
+# La condition est `n == total du domaine`, pas « fils unique » : deux sous-domaines
+# de 5 pages qui se partagent un domaine de 10 se promeuvent tous les deux — ils
+# séparent quelque chose, donc ils informent. Le plafond ne vise que le fils qui EST
+# son parent. Les libellés restés dans SUB_LABEL ne sont pas retirés : la promotion
+# reprendra d'elle-même le jour où le domaine gagne une seconde population.
+
 # Libellé français du domaine, un par préfixe de `categorie:`.
 # Copie conforme de CAT_LABEL (AI/scripts/build_mocs.py) — 20 préfixes.
 DOM_LABEL = {
@@ -93,20 +110,35 @@ def dossier_attendu(categorie: str, promus: dict[str, str]) -> str | None:
 
 
 def promotions(categories: list[str]) -> dict[str, str]:
-    """Sous-domaines promus en dossier, d'après le seuil et SUB_LABEL.
+    """Sous-domaines promus en dossier, d'après le seuil, son plafond et SUB_LABEL.
+
+    Accepte les catégories de PLUSIEURS domaines : le seuil comme son plafond se
+    comptent par domaine, jamais sur le total. `check_arbo.py` passe le vault entier,
+    `migrate_lot3_arbo.py` un seul domaine — les deux doivent trouver le même arbre.
 
     Lève KeyError sur un sous-domaine promu sans libellé déclaré : il faut le lire
     dans v3-arborescence.md et l'ajouter à SUB_LABEL, jamais l'inventer.
     """
     import collections
-    compte = collections.Counter(categories)
+    par_dom: dict[str, collections.Counter] = collections.defaultdict(
+        collections.Counter)
+    for cat in categories:
+        dom = domaine(cat)
+        if dom is not None:
+            par_dom[dom][cat] += 1
+
     promus: dict[str, str] = {}
-    for cat, n in sorted(compte.items()):
-        if n < SEUIL or "/" not in cat:
-            continue
-        if cat not in SUB_LABEL:
-            raise KeyError(
-                f"`{cat}` atteint {n} pages (seuil {SEUIL}) sans libellé dans "
-                f"SUB_LABEL — le lire dans AI/design/v3-arborescence.md")
-        promus[cat] = SUB_LABEL[cat]
+    for dom in sorted(par_dom):
+        compte = par_dom[dom]
+        total = sum(compte.values())
+        for cat, n in sorted(compte.items()):
+            if n < SEUIL or "/" not in cat:
+                continue
+            if n == total:
+                continue  # plafond : le fils redoublerait son parent — cf. en-tête
+            if cat not in SUB_LABEL:
+                raise KeyError(
+                    f"`{cat}` atteint {n} pages (seuil {SEUIL}) sans libellé dans "
+                    f"SUB_LABEL — le lire dans AI/design/v3-arborescence.md")
+            promus[cat] = SUB_LABEL[cat]
     return promus

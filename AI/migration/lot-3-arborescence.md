@@ -271,20 +271,43 @@ Détection d'anomalies, Forecasting, NLP, Réduction de dimension) portent tous 
 de « Machine Learning ». Leur clause de chemin cassera au moment où ce domaine descendra.
 À traiter dans cette conversation-là, pas avant.
 
-### 8. Le seuil de promotion peut capturer 100 % d'un domaine
+### 8. Le seuil de promotion peut capturer 100 % d'un domaine — **plafonné le 2026-09-04**
 
 « Stockage » a 6 pages, toutes en `storage/objet`. « Automatisation no-code » en a 5,
-toutes en `automation/no-code`. Le seuil de 5 promeut donc le sous-domaine, et le dossier
-de domaine se retrouve **sans aucune page à son niveau**, avec un unique fils qui le
-redouble : `Stockage/Stockage objet/`, `Automatisation no-code/No-code/`.
+toutes en `automation/no-code`. Le seuil de 5 promouvait donc le sous-domaine, et le dossier
+de domaine se retrouvait **sans aucune page à son niveau**, avec un unique fils qui le
+redoublait : `Stockage/Stockage objet/`, `Automatisation no-code/No-code/`.
 
-La règle 2 de `brain-v3.md` §4 est mécanique et ne prévoit pas ce cas. Elle est appliquée
-telle quelle — aucun arbitrage n'est permis au lot 3, et `check_arbo.py` l'exige de toute
-façon. Les deux dossiers sont des places réservées : ils prendront leur sens le jour où le
-domaine gagne un second sous-domaine (`storage/bloc`, `storage/fichier`, `automation/rpa`).
+La règle 2 de `brain-v3.md` §4 était mécanique et ne prévoyait pas ce cas. Elle a été
+appliquée telle quelle au moment du lot — aucun arbitrage n'est permis au lot 3, et
+`check_arbo.py` l'exigeait de toute façon.
 
-**À trancher hors lot 3**, en une ligne dans `arbo.py` si la réponse est oui : plafonner la
-promotion quand elle capture la totalité du domaine, ou l'assumer.
+**Arbitrage de floSa, 2026-09-04** : la promotion est **plafonnée**. Un sous-domaine ne se
+promeut pas s'il ne laisse aucune page au niveau du domaine — un dossier fils qui redouble
+son parent n'apporte aucune information et ajoute un niveau à la navigation. Le plafond est
+écrit dans `arbo.promotions()`, à côté du seuil, avec la date en commentaire ; la condition
+est `n == total du domaine` et non « fils unique », de sorte que deux sous-domaines de 5
+pages qui se partagent un domaine de 10 se promeuvent tous les deux : ils séparent quelque
+chose, donc ils informent.
+
+Rétroaction, le même jour, **avant** les trois domaines de la session suivante :
+
+- les 11 pages et le comparatif remontent au niveau du domaine, par `git mv` ;
+- les deux **sous-hubs disparaissent par fusion dans le hub de domaine** — `git mv -f` du
+  sous-hub sur le chemin du hub de domaine, donc aucun `rm` : le chemin survivant garde
+  l'ascendance de sa `MOC/Categories/`, et c'est le corps du sous-hub, plus fourni, qui
+  survit. Les deux corps ont ensuite été refondus à la main (le hub de domaine est le seul
+  corps que le lot 3 autorise à toucher). C'est la même mécanique que la fusion de la
+  remontée 2, à l'étage du sous-domaine ;
+- les alias des sous-hubs remontent sur le hub de domaine : `no-code` revient sur
+  « Automatisation no-code », d'où la remontée 12 l'avait retiré pour cause de collision —
+  le jeton n'a plus qu'un propriétaire ;
+- `Home.md` perd les deux mentions « 1 sous-domaine » ;
+- `SUB_LABEL` **garde** `storage/objet` et `automation/no-code` : la promotion reprendra
+  d'elle-même le jour où ces domaines gagnent une seconde population.
+
+Compte de fichiers : 668 pages avant, 666 après — les deux sous-hubs fusionnés. 21 hubs
+au lieu de 23. `check_arbo.py` et `check_brain.py` verts, 0 lien non résolu.
 
 ### 9. `skill/*` n'est pas un domaine — l'exception est nommée, pas absorbée
 

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 668 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 666 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -885,7 +885,6 @@
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
-- **No-code** — Plateformes de flux à connecteurs — les cinq briques du domaine, du SaaS pur à l'auto-hébergé qui accepte du code.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
@@ -894,7 +893,6 @@
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
 - **Signal & audio** — Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
-- **Stockage objet** — Servir des objets par une API S3 — la brique de base des lakehouses, des registres de modèles et des sauvegardes.
 - **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.
