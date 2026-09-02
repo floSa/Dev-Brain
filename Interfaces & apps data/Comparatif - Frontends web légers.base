@@ -1,6 +1,11 @@
 filters:
   and:
-    # `Dev/Services/` devient faux au lot 3 ; la liste de noms selectionne seule.
+    # Range dans « Interfaces & apps data/ » a la cloture du lot 3 : trois de ses
+    # cinq membres y vivent (Streamlit, Gradio, Dash), FastAPI et HTMX n'y figurent
+    # que comme l'option a la main. C'est un comparatif d'interfaces pour
+    # applications data, pas un comparatif de web.
+    # `file.path.startsWith("Dev/Services/")` est devenu faux au lot 3 ; la liste de
+    # noms selectionne seule, et `role == "brique"` dit ce que le chemin disait.
     - role == "brique"
     - or:
         - file.name == "FastAPI"

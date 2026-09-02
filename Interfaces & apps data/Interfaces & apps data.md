@@ -33,4 +33,5 @@ tags: [data-app, ml-demo, dashboard, interactive-viz]
 
 ### Comparatifs
 - [[Comparatif - Apps data & démos ML]]
+- [[Comparatif - Frontends web légers]]
 <!-- AUTO:END -->

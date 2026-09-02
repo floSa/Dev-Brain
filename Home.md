@@ -45,21 +45,18 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Pilotage
 
-- [[brain-index|Index lisible]] — toutes les pages par galaxie / domaine
+- [[brain-index|Index lisible]] — toutes les pages par domaine et par `role:`
 - [[liens|Carte des liens]] — tags & liens par page, + sujets à créer
 - Gouvernance : `Documentation/general/` (tags, taxonomie, themes)
 - Réservoir v1 : [[reservoir-v1|Inventaire v1]] (+ `Archive-v1.zip`)
 
-## Galaxies — en cours de dissolution
+## Ce qui n'est pas encore dans l'arbre
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-Les 20 domaines sont descendus dans l'arbre ; il ne reste dans les deux anciennes
-galaxies que ce qu'aucun domaine n'accueille encore — les notions `concept/*`, qui
-descendront au lot 4, plus les patterns, les règles et un comparatif transverse.
-
-- **Dev** — patterns, règles et [[Comparatif - Frontends web légers]] → `Dev/`
-- **Wiki** — les notions en attente du lot 4 → `Wiki/Concepts/`
+`Dev/` n'existe plus. Il reste **`Wiki/Concepts/`** — 297 notions `concept/*` que
+le lot 4 descendra dans l'arbre, et `MOC/Concepts/` avec elles : ces 10 pages sont
+aujourd'hui leur seule porte d'entrée, elles meurent le même jour.
 
 ## Skills
 

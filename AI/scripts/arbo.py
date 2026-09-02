@@ -117,7 +117,9 @@ ROLES_SANS_CATEGORIE = {"pattern", "rule"}
 NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
              "Projects", "docs", "MOC"}
 # Dossiers de la racine encore en v2, dont les pages n'ont pas de chemin à vérifier.
-LEGACY = {"Dev", "Wiki"}
+# `Dev/` en est sorti à la clôture du lot 3 : il n'existe plus. `Wiki/` survit jusqu'au
+# lot 4, qui descendra ses 297 notions `concept/*` dans l'arbre des domaines.
+LEGACY = {"Wiki"}
 
 
 def domaine(categorie: str) -> str | None:
