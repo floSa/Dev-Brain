@@ -444,7 +444,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 0 | Masquer `liens.md` du graphe ; masquer le panneau de propriétés | oui, réglages |
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
-| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **19 domaines sur 20 faits au 2026-09-04**, reste « Machine Learning », dans sa propre conversation | oui, `git mv` |
+| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **les 20 domaines faits au 2026-09-04** ; reste la disparition de `MOC/`, des 5 patterns, des 5 règles et d'un comparatif transverse, dans la conversation de clôture | oui, `git mv` |
 | 4 | Les 205 notions à recatégoriser, par lots — `ml` (67) et `llm` (57) d'abord | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
@@ -459,15 +459,15 @@ chaque étape.
 
 1. **Les 5 `MOC/Themes`** (data-sci, data-eng, mlops, ml-eng, ai-eng) sont le seul consommateur
    de `domaines:`. Les garder comme hubs transverses à la racine, ou supprimer le champ ?
-2. **Les 18 notions sans domaine évident** et les **9 comparatifs sans filtre `categorie`** :
-   arbitrage page par page, listés dans l'arborescence. *Mesuré au lot 3* : attendre n'est
-   pas neutre pour ces 9 comparatifs — leur filtre croise un chemin `Dev/Services/` avec un
-   tag ou une liste de noms, donc leur vue **se vide en silence** quand leurs membres
-   descendent dans l'arbre, et le script de migration ne les voit pas. 3 ont été traités
-   pour cette raison, puis « Réduction de dimension » — qui avait perdu 2 de ses 5
-   membres avec un domaine qui n'est pas celui de sa majorité — et « NLP », qui en avait
-   perdu 2 sans que personne le voie. **Il en reste 4**, tous à « Machine Learning ».
-   Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
+2. **Les 18 notions sans domaine évident** : arbitrage page par page, listés dans
+   l'arborescence, et c'est le lot 4. Les **9 comparatifs sans filtre `categorie`**
+   sont réglés à 8 sur 9 — attendre n'était pas neutre pour eux, leur filtre croisant un
+   chemin `Dev/Services/` avec un tag ou une liste de noms, donc leur vue **se vidait en
+   silence** quand leurs membres descendaient, sans que le script de migration les voie.
+   La substitution est partout la même, `role == "brique"`, et le relevé des membres des
+   47 `.base` avant / après chaque domaine montre qu'elle est fidèle. **Il en reste un**,
+   « Frontends web légers », qui enjambe deux domaines : il n'attend plus une migration
+   mais un arbitrage. Cf. remontées 7, 14, 16 et 19 de `lot-3-arborescence.md`.
 3. **`Projects/`** reste hors de l'arbre des domaines. À confirmer.
 4. ~~**Le seuil de promotion à 5 pages**~~ — **tranché le 2026-09-04.** Le seuil reste à 5
    (à 4 il donnerait 34 sous-dossiers, à 8 il en donnerait 12), mais il est **plafonné** :

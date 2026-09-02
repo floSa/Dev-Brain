@@ -35,21 +35,26 @@ tags: [meta, design, v3, migration]
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
 
-> **État au 2026-09-04.** Lot 3 : **19 domaines sur 20** migrés — le pilote
+> **État au 2026-09-04.** Lot 3 : **les 20 domaines sont migrés** — le pilote
 > « Bases de données », les 14 plus petits, les trois moyens (« Statistiques &
-> inférence », « Data & pipelines », « Mathématiques »), puis « LLM & IA générative »,
-> soit 252 pages et 26 comparatifs descendus dans l'arbre. **Reste « Machine
-> Learning »** : 392 pages et 13 comparatifs sous `Dev/` et `Wiki/`, dont l'essentiel
-> des notions à recatégoriser au lot 4.
+> inférence », « Data & pipelines », « Mathématiques »), « LLM & IA générative »,
+> puis « Machine Learning », soit 337 briques et 38 comparatifs descendus dans
+> l'arbre. `Dev/Services/` et `Dev/Outils/` n'existent plus.
 >
-> Le vault porte 680 pages actives et **36 hubs** (19 de domaine, 17 de sous-domaine).
-> `MOC/Categories/` ne garde qu'une page, « Machine Learning » : les 18 autres ont été
-> déplacées par `git mv` vers le hub de leur dossier — une MOC de domaine ne disparaît
-> pas, elle *devient* le hub (cf. remontée 6 de `lot-3-arborescence.md`). Seule
-> `MOC/Categories/Bases de données.md` a réellement disparu, dans la fusion de l'étape 4
-> avec la notion chapeau homonyme ; `Wiki/Concepts/Text-to-SQL.md` est le second cas de
-> notion chapeau, au niveau d'un sous-domaine cette fois, et elle *devient* le sous-hub
-> (cf. remontée 15).
+> **Ce qui reste sous `Dev/` et `Wiki/`** ne relève d'aucun domaine et clôt le lot
+> ailleurs : les 297 notions `concept/*` (lot 4), les 5 patterns, les 5 règles et
+> `Comparatif - Frontends web légers.base`, qui enjambe deux domaines.
+>
+> Le vault porte 690 pages actives et **46 hubs** (20 de domaine, 26 de sous-domaine).
+> `MOC/Categories/` est vide : ses 20 pages ont été déplacées par `git mv` vers le hub
+> de leur dossier — une MOC de domaine ne disparaît pas, elle *devient* le hub (cf.
+> remontée 6 de `lot-3-arborescence.md`). Seule `MOC/Categories/Bases de données.md` a
+> réellement disparu, dans la fusion de l'étape 4 avec la notion chapeau homonyme ;
+> `Wiki/Concepts/Text-to-SQL.md` est le second cas de notion chapeau, au niveau d'un
+> sous-domaine cette fois, et elle *devient* le sous-hub (cf. remontée 15). Deux MOC
+> de `MOC/Concepts/` — « Apprentissage par renforcement » et « Séries temporelles » —
+> deviennent de la même façon les sous-hubs homonymes de « Machine Learning »
+> (cf. remontée 18).
 >
 > Deux mouvements hors inventaire : `Wiki/Concepts/HDBSCAN.md` est renommée
 > `Clustering hiérarchique par densité` (collision de casse avec
@@ -134,9 +139,14 @@ SecondBrain/
 
 ## Détail par domaine
 
-### Machine Learning  ·  241 pages
+### Machine Learning  ·  241 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit · [x] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+
+> 85 briques et 12 comparatifs descendus, 9 sous-dossiers promus, 10 hubs écrits.
+> Les 156 notions listées ci-dessous portent encore `concept/ml`, `concept/dl`,
+> `concept/rl`, `concept/ts` ou `concept/nlp` : elles restent sous `Wiki/Concepts/`
+> jusqu'au lot 4, et les hubs les citent toutes en clair en attendant.
 
 **Apprentissage profond/** — `ml/apprentissage-profond` — 60 pages
 
@@ -1177,12 +1187,14 @@ SecondBrain/
 - [ ] `[n]` Versionnage de données — actuellement `concept/data`
 - [ ] `[n]` Web scraping — actuellement `concept/data`
 
-9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main.
+9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main. **8 sur 9
+sont traités** ; il ne reste que « Frontends web légers », qui enjambe deux domaines.
 
-Ce n'est pas une attente neutre : ces 9 croisent un chemin `Dev/Services/` avec un tag ou
-une liste de noms, donc **leur vue se vide en silence** dès que leurs membres descendent
-dans l'arbre. Le script de migration ne les voit pas. Cf. remontée 7 de
-`lot-3-arborescence.md`.
+Ce n'était pas une attente neutre : ces 9 croisaient un chemin `Dev/Services/` avec un tag
+ou une liste de noms, donc **leur vue se vidait en silence** dès que leurs membres
+descendaient dans l'arbre, sans que le script de migration les voie. La substitution est
+la même partout — `role == "brique"`, qui dit ce que le chemin disait et ne bouge plus
+avec l'arbre. Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
 
 - [x] `[c]` Comparatif - Frameworks CLI — **rangé** dans « Outils de développement/ » ;
       `file.hasTag("cli")` remplacé par `categorie == "devtools/cli"` (2 membres)
@@ -1190,10 +1202,17 @@ dans l'arbre. Le script de migration ne les voit pas. Cf. remontée 7 de
       clause de chemin remplacée par `role == "brique"` (3 membres)
 - [~] `[c]` Comparatif - Frontends web légers — **réparé** (`role == "brique"`, 5 membres)
       mais NON rangé : il enjambe « Web & API » et « Interfaces & apps data »
-- [ ] `[c]` Comparatif - Boosting — membres dans « Machine Learning », non migré
-- [ ] `[c]` Comparatif - Détection & segmentation — idem
-- [ ] `[c]` Comparatif - Détection d'anomalies — idem
-- [ ] `[c]` Comparatif - Forecasting — idem
-- [ ] `[c]` Comparatif - NLP — idem
-- [ ] `[c]` Comparatif - Réduction de dimension — idem
+- [x] `[c]` Comparatif - Boosting — **rangé** dans « Machine Learning/Tabulaire/ » (3 membres) ;
+      clause de chemin remplacée par `role == "brique"`
+- [x] `[c]` Comparatif - Détection & segmentation — **rangé** dans « Machine Learning/Vision/ » (6 membres) ;
+      clause de chemin remplacée par `role == "brique"`
+- [x] `[c]` Comparatif - Détection d'anomalies — **rangé** dans « Machine Learning/ » — ses 2 membres enjambent deux sous-domaines ;
+      clause de chemin remplacée par `role == "brique"`
+- [x] `[c]` Comparatif - Forecasting — **rangé** dans « Machine Learning/Séries temporelles/ » (6 membres) ;
+      clause de chemin remplacée par `role == "brique"`
+- [x] `[c]` Comparatif - NLP — traduit plus tôt (`role == "brique"`, 16 membres),
+      **rangé** dans « Machine Learning/NLP/ »
+- [x] `[c]` Comparatif - Réduction de dimension — traduit plus tôt
+      (`role == "brique"`, 5 membres), **rangé** dans « Machine Learning/ » : ses
+      membres se partagent `ml/non-supervise`, `ml/socle` et `stats/exploratoire`
 
