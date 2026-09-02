@@ -6,14 +6,18 @@
     "Calcul distribué",
     "Design & diagrammes",
     "Dev",
+    "Interfaces & apps data",
+    "Médias",
+    "Observabilité",
     "Outils de développement",
     "Signal & audio",
     "Stockage",
+    "Sécurité",
     "Web & API",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 661,
+  "count": 665,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -161,7 +165,8 @@
       "Maka"
     ],
     "authentication": [
-      "PyJWT"
+      "PyJWT",
+      "Sécurité"
     ],
     "autograd": [
       "JAX",
@@ -425,17 +430,21 @@
     ],
     "cryptography": [
       "PyJWT",
+      "Sécurité",
       "croc"
     ],
     "dashboard": [
       "Beszel",
       "Dash",
       "Grafana",
+      "Interfaces & apps data",
+      "Observabilité",
       "Shiny for Python",
       "WrenAI"
     ],
     "data-app": [
       "Dash",
+      "Interfaces & apps data",
       "Marimo",
       "Pattern - Stack démo ML locale multi-services",
       "Shiny for Python",
@@ -1111,6 +1120,7 @@
       "Wasserstein distance"
     ],
     "interactive-viz": [
+      "Interfaces & apps data",
       "altair",
       "bokeh",
       "plotly"
@@ -1372,7 +1382,8 @@
       "text-generation-webui"
     ],
     "logging": [
-      "Loki"
+      "Loki",
+      "Observabilité"
     ],
     "loss-landscape": [
       "Loss landscape and saddle points"
@@ -1446,6 +1457,7 @@
       "smolagents"
     ],
     "media-player": [
+      "Médias",
       "SmartTube"
     ],
     "memory-optimization": [
@@ -1460,7 +1472,8 @@
     ],
     "metrics": [
       "Beszel",
-      "Grafana"
+      "Grafana",
+      "Observabilité"
     ],
     "migration": [
       "Alembic",
@@ -1485,6 +1498,7 @@
     ],
     "ml-demo": [
       "Gradio",
+      "Interfaces & apps data",
       "Pattern - Stack démo ML locale multi-services"
     ],
     "ml-pipeline": [
@@ -1589,6 +1603,7 @@
       "Image generation",
       "LanceDB",
       "Marqo",
+      "Médias",
       "Speech models",
       "Superwhisper",
       "Video generation",
@@ -1710,7 +1725,8 @@
     "observability": [
       "Beszel",
       "Grafana",
-      "Loki"
+      "Loki",
+      "Observabilité"
     ],
     "ocr": [
       "LlamaParse",
@@ -1776,6 +1792,7 @@
       "SQLModel"
     ],
     "osint": [
+      "Sécurité",
       "Web-Check",
       "osint4all"
     ],
@@ -1993,6 +2010,7 @@
       "Systèmes de recommandation"
     ],
     "recon": [
+      "Sécurité",
       "Web-Check"
     ],
     "regression": [
@@ -2203,6 +2221,7 @@
       "Automatisation no-code",
       "Beszel",
       "No-code",
+      "Observabilité",
       "OpenMAIC",
       "Stirling PDF",
       "Stockage",
@@ -2270,6 +2289,7 @@
     ],
     "speech": [
       "Claude Video",
+      "Médias",
       "Speech models",
       "Superwhisper"
     ],
@@ -2633,6 +2653,7 @@
       "swarm-forge"
     ],
     "video-editing": [
+      "Médias",
       "OpenCut"
     ],
     "video-generation": [
@@ -4598,29 +4619,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Claude Video.md",
-      "nom": "Claude Video",
-      "alias": [
-        "watch",
-        "claude-video"
-      ],
-      "role": "brique",
-      "categorie": "media/ingestion",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.",
-      "tags": [
-        "multimodal",
-        "speech",
-        "context-engineering"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Cline.md",
       "nom": "Cline",
       "alias": [
@@ -4736,26 +4734,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/OpenCut.md",
-      "nom": "OpenCut",
-      "alias": [
-        "OpenCut-app/OpenCut",
-        "opencut"
-      ],
-      "role": "brique",
-      "categorie": "media/video",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés.",
-      "tags": [
-        "video-editing",
-        "privacy"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Page to Markdown.md",
       "nom": "Page to Markdown",
       "alias": [
@@ -4773,27 +4751,6 @@
         "browser-extension",
         "markdown-conversion",
         "note-taking",
-        "privacy"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/SmartTube.md",
-      "nom": "SmartTube",
-      "alias": [
-        "SmartTubeNext",
-        "STN",
-        "yuliskov/SmartTube"
-      ],
-      "role": "brique",
-      "categorie": "media/video",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même.",
-      "tags": [
-        "media-player",
         "privacy"
       ],
       "alternatives": [],
@@ -4848,28 +4805,6 @@
       "alternatives": [
         "[[BMAD]]"
       ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Superwhisper.md",
-      "nom": "Superwhisper",
-      "alias": [
-        "superwhisper"
-      ],
-      "role": "brique",
-      "categorie": "media/ingestion",
-      "famille": "application",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie.",
-      "tags": [
-        "speech",
-        "multimodal",
-        "local-llm"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": null
     },
@@ -5003,27 +4938,6 @@
       "alternatives": [],
       "complements": [],
       "maturite": null
-    },
-    {
-      "path": "Dev/Outils/osint4all.md",
-      "nom": "osint4all",
-      "alias": [
-        "osint4all",
-        "osint4all.github.io"
-      ],
-      "role": "brique",
-      "categorie": "security/recon",
-      "famille": "annuaire",
-      "domaines": [
-        "infra-ops"
-      ],
-      "pitch": "Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.",
-      "tags": [
-        "osint"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "deprecated"
     },
     {
       "path": "Dev/Outils/pi.md",
@@ -5566,29 +5480,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Beszel.md",
-      "nom": "Beszel",
-      "alias": [
-        "beszel",
-        "henrygd/beszel"
-      ],
-      "role": "brique",
-      "categorie": "observability/supervision",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.",
-      "tags": [
-        "observability",
-        "metrics",
-        "self-hosted",
-        "dashboard",
-        "container"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Captum.md",
       "nom": "Captum",
       "alias": [
@@ -5871,31 +5762,6 @@
         "[[Mage]]",
         "[[Kestra]]",
         "[[Temporal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Dash.md",
-      "nom": "Dash",
-      "alias": [
-        "dash",
-        "plotly-dash"
-      ],
-      "role": "brique",
-      "categorie": "ui/data-app",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.",
-      "tags": [
-        "data-app",
-        "dashboard",
-        "web-framework"
-      ],
-      "alternatives": [
-        "[[Streamlit]]",
-        "[[Shiny for Python]]",
-        "[[Gradio]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6290,50 +6156,6 @@
       "pitch": "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.",
       "tags": [
         "ci-cd"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Gradio.md",
-      "nom": "Gradio",
-      "alias": [
-        "gradio"
-      ],
-      "role": "brique",
-      "categorie": "ui/data-app",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.",
-      "tags": [
-        "ml-demo",
-        "web-framework"
-      ],
-      "alternatives": [
-        "[[Streamlit]]",
-        "[[Dash]]",
-        "[[Shiny for Python]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Grafana.md",
-      "nom": "Grafana",
-      "alias": [
-        "grafana"
-      ],
-      "role": "brique",
-      "categorie": "observability/supervision",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.",
-      "tags": [
-        "observability",
-        "metrics",
-        "dashboard",
-        "dataviz"
       ],
       "alternatives": [],
       "complements": [],
@@ -7120,27 +6942,6 @@
         "[[Docling]]",
         "[[Marker]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Loki.md",
-      "nom": "Loki",
-      "alias": [
-        "loki",
-        "Grafana Loki"
-      ],
-      "role": "brique",
-      "categorie": "observability/supervision",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.",
-      "tags": [
-        "observability",
-        "logging",
-        "distributed"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -8012,26 +7813,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/PyJWT.md",
-      "nom": "PyJWT",
-      "alias": [
-        "pyjwt",
-        "jwt python"
-      ],
-      "role": "brique",
-      "categorie": "security/auth",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.",
-      "tags": [
-        "authentication",
-        "cryptography"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/PyMC.md",
       "nom": "PyMC",
       "alias": [
@@ -8622,32 +8403,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Shiny for Python.md",
-      "nom": "Shiny for Python",
-      "alias": [
-        "shiny",
-        "py-shiny",
-        "shiny-python"
-      ],
-      "role": "brique",
-      "categorie": "ui/data-app",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).",
-      "tags": [
-        "data-app",
-        "dashboard",
-        "web-framework"
-      ],
-      "alternatives": [
-        "[[Streamlit]]",
-        "[[Dash]]",
-        "[[Gradio]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Stable-Baselines3.md",
       "nom": "Stable-Baselines3",
       "alias": [
@@ -8717,29 +8472,6 @@
         "self-hosted"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Streamlit.md",
-      "nom": "Streamlit",
-      "alias": [
-        "streamlit"
-      ],
-      "role": "brique",
-      "categorie": "ui/data-app",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.",
-      "tags": [
-        "data-app",
-        "web-framework"
-      ],
-      "alternatives": [
-        "[[Dash]]",
-        "[[Shiny for Python]]",
-        "[[Gradio]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -9212,28 +8944,6 @@
       ],
       "complements": [],
       "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/Web-Check.md",
-      "nom": "Web-Check",
-      "alias": [
-        "web-check",
-        "lissy93/web-check"
-      ],
-      "role": "brique",
-      "categorie": "security/recon",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.",
-      "tags": [
-        "recon",
-        "networking",
-        "osint",
-        "self-hosted"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/Weights & Biases.md",
@@ -10652,6 +10362,334 @@
       "maturite": "production"
     },
     {
+      "path": "Interfaces & apps data/Dash.md",
+      "nom": "Dash",
+      "alias": [
+        "dash",
+        "plotly-dash"
+      ],
+      "role": "brique",
+      "categorie": "ui/data-app",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.",
+      "tags": [
+        "data-app",
+        "dashboard",
+        "web-framework"
+      ],
+      "alternatives": [
+        "[[Streamlit]]",
+        "[[Shiny for Python]]",
+        "[[Gradio]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Interfaces & apps data/Gradio.md",
+      "nom": "Gradio",
+      "alias": [
+        "gradio"
+      ],
+      "role": "brique",
+      "categorie": "ui/data-app",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.",
+      "tags": [
+        "ml-demo",
+        "web-framework"
+      ],
+      "alternatives": [
+        "[[Streamlit]]",
+        "[[Dash]]",
+        "[[Shiny for Python]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Interfaces & apps data/Interfaces & apps data.md",
+      "nom": "Interfaces & apps data",
+      "alias": [
+        "apps data",
+        "data app",
+        "demo ml"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.",
+      "tags": [
+        "data-app",
+        "ml-demo",
+        "dashboard",
+        "interactive-viz"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Interfaces & apps data/Shiny for Python.md",
+      "nom": "Shiny for Python",
+      "alias": [
+        "shiny",
+        "py-shiny",
+        "shiny-python"
+      ],
+      "role": "brique",
+      "categorie": "ui/data-app",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).",
+      "tags": [
+        "data-app",
+        "dashboard",
+        "web-framework"
+      ],
+      "alternatives": [
+        "[[Streamlit]]",
+        "[[Dash]]",
+        "[[Gradio]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Interfaces & apps data/Streamlit.md",
+      "nom": "Streamlit",
+      "alias": [
+        "streamlit"
+      ],
+      "role": "brique",
+      "categorie": "ui/data-app",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.",
+      "tags": [
+        "data-app",
+        "web-framework"
+      ],
+      "alternatives": [
+        "[[Dash]]",
+        "[[Shiny for Python]]",
+        "[[Gradio]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Médias/Claude Video.md",
+      "nom": "Claude Video",
+      "alias": [
+        "watch",
+        "claude-video"
+      ],
+      "role": "brique",
+      "categorie": "media/ingestion",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.",
+      "tags": [
+        "multimodal",
+        "speech",
+        "context-engineering"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Médias/Médias.md",
+      "nom": "Médias",
+      "alias": [
+        "medias",
+        "media",
+        "video",
+        "audio"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.",
+      "tags": [
+        "video-editing",
+        "media-player",
+        "speech",
+        "multimodal"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Médias/OpenCut.md",
+      "nom": "OpenCut",
+      "alias": [
+        "OpenCut-app/OpenCut",
+        "opencut"
+      ],
+      "role": "brique",
+      "categorie": "media/video",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés.",
+      "tags": [
+        "video-editing",
+        "privacy"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Médias/SmartTube.md",
+      "nom": "SmartTube",
+      "alias": [
+        "SmartTubeNext",
+        "STN",
+        "yuliskov/SmartTube"
+      ],
+      "role": "brique",
+      "categorie": "media/video",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même.",
+      "tags": [
+        "media-player",
+        "privacy"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Médias/Superwhisper.md",
+      "nom": "Superwhisper",
+      "alias": [
+        "superwhisper"
+      ],
+      "role": "brique",
+      "categorie": "media/ingestion",
+      "famille": "application",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie.",
+      "tags": [
+        "speech",
+        "multimodal",
+        "local-llm"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Observabilité/Beszel.md",
+      "nom": "Beszel",
+      "alias": [
+        "beszel",
+        "henrygd/beszel"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.",
+      "tags": [
+        "observability",
+        "metrics",
+        "self-hosted",
+        "dashboard",
+        "container"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Grafana.md",
+      "nom": "Grafana",
+      "alias": [
+        "grafana"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.",
+      "tags": [
+        "observability",
+        "metrics",
+        "dashboard",
+        "dataviz"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Loki.md",
+      "nom": "Loki",
+      "alias": [
+        "loki",
+        "Grafana Loki"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.",
+      "tags": [
+        "observability",
+        "logging",
+        "distributed"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Observabilité.md",
+      "nom": "Observabilité",
+      "alias": [
+        "observabilite",
+        "observability",
+        "monitoring"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.",
+      "tags": [
+        "observability",
+        "logging",
+        "metrics",
+        "dashboard",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Outils de développement/Bruno.md",
       "nom": "Bruno",
       "alias": [
@@ -11427,6 +11465,95 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Sécurité/PyJWT.md",
+      "nom": "PyJWT",
+      "alias": [
+        "pyjwt",
+        "jwt python"
+      ],
+      "role": "brique",
+      "categorie": "security/auth",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.",
+      "tags": [
+        "authentication",
+        "cryptography"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Sécurité.md",
+      "nom": "Sécurité",
+      "alias": [
+        "securite",
+        "security",
+        "appsec"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": "Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.",
+      "tags": [
+        "authentication",
+        "recon",
+        "osint",
+        "cryptography"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Web-Check.md",
+      "nom": "Web-Check",
+      "alias": [
+        "web-check",
+        "lissy93/web-check"
+      ],
+      "role": "brique",
+      "categorie": "security/recon",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.",
+      "tags": [
+        "recon",
+        "networking",
+        "osint",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/osint4all.md",
+      "nom": "osint4all",
+      "alias": [
+        "osint4all",
+        "osint4all.github.io"
+      ],
+      "role": "brique",
+      "categorie": "security/recon",
+      "famille": "annuaire",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.",
+      "tags": [
+        "osint"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "deprecated"
     },
     {
       "path": "Web & API/FastAPI.md",

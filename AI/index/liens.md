@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 661 pages actives.
+> 665 pages actives.
 
 ## Par page
 
@@ -118,7 +118,7 @@
 ### Beszel  ·  brique
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
 - liens sortants : [[Docker]], [[Grafana]], [[Loki]], [[Sniffnet]]
-- liens entrants : [[Sniffnet]], [[Web-Check]]
+- liens entrants : [[Observabilité]], [[Sniffnet]], [[Web-Check]]
 
 ### bm25s  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
@@ -178,7 +178,7 @@
 ### Claude Video  ·  brique
 - tags : `multimodal`, `speech`, `context-engineering`
 - liens sortants : [[Graphify]]
-- liens entrants : [[OpenCut]], [[Superwhisper]]
+- liens entrants : [[Médias]], [[OpenCut]], [[Superwhisper]]
 
 ### ClearML  ·  brique
 - tags : `experiment-tracking`, `model-registry`, `orchestration`
@@ -263,7 +263,7 @@
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[plotly]]
-- liens entrants : [[Gradio]], [[Grafana]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]]
 
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
@@ -473,12 +473,12 @@
 ### Gradio  ·  brique
 - tags : `ml-demo`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Shiny for Python]], [[Streamlit]]
-- liens entrants : [[Dash]], [[HuggingFace]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
+- liens entrants : [[Dash]], [[HuggingFace]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
 - liens sortants : [[Dash]], [[Elasticsearch]], [[InfluxDB]], [[Loki]], [[Postgres]], [[Streamlit]]
-- liens entrants : [[Beszel]], [[Loki]]
+- liens entrants : [[Beszel]], [[Loki]], [[Observabilité]]
 
 ### Graphify  ·  brique
 - tags : `code-assistant`, `knowledge-graph`, `mcp`, `context-engineering`
@@ -733,7 +733,7 @@
 ### Loki  ·  brique
 - tags : `observability`, `logging`, `distributed`
 - liens sortants : [[Elasticsearch]], [[Grafana]]
-- liens entrants : [[Beszel]], [[Grafana]]
+- liens entrants : [[Beszel]], [[Grafana]], [[Observabilité]]
 
 ### Mage  ·  brique
 - tags : `orchestration`, `data-pipeline`, `low-code`
@@ -938,7 +938,7 @@
 ### OpenCut  ·  brique
 - tags : `video-editing`, `privacy`
 - liens sortants : [[Claude Video]], [[SmartTube]], [[Video generation]], [[mcp-protocol]]
-- liens entrants : [[SmartTube]]
+- liens entrants : [[Médias]], [[SmartTube]]
 
 ### OpenCV  ·  brique
 - tags : `computer-vision`, `object-detection`, `object-tracking`
@@ -983,7 +983,7 @@
 ### osint4all  ·  brique
 - tags : `osint`
 - liens sortants : [[Web-Check]], [[public-apis]]
-- liens entrants : [[Web-Check]]
+- liens entrants : [[Sécurité]], [[Web-Check]]
 
 ### Outlines  ·  brique
 - tags : `structured-output`, `decoding`, `llm`
@@ -1158,7 +1158,7 @@
 ### PyJWT  ·  brique
 - tags : `authentication`, `cryptography`
 - liens sortants : [[FastAPI]]
-- liens entrants : —
+- liens entrants : [[Sécurité]]
 
 ### pykan  ·  brique
 - tags : `deep-learning`
@@ -1388,12 +1388,12 @@
 ### Shiny for Python  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Streamlit]]
-- liens entrants : [[Dash]], [[Gradio]], [[Streamlit]]
+- liens entrants : [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 
 ### SmartTube  ·  brique
 - tags : `media-player`, `privacy`
 - liens sortants : [[OpenCut]], [[Video generation]]
-- liens entrants : [[OpenCut]]
+- liens entrants : [[Médias]], [[OpenCut]]
 
 ### smolagents  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -1463,7 +1463,7 @@
 ### Streamlit  ·  brique
 - tags : `data-app`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[plotly]]
-- liens entrants : [[Dash]], [[Gradio]], [[Grafana]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
+- liens entrants : [[Dash]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
 
 ### STUMPY  ·  brique
 - tags : `anomaly-detection`, `timeseries`
@@ -1478,7 +1478,7 @@
 ### Superwhisper  ·  brique
 - tags : `speech`, `multimodal`, `local-llm`
 - liens sortants : [[Claude Video]], [[Inference optimization]], [[Quantization]], [[Speech models]]
-- liens entrants : [[Speech models]]
+- liens entrants : [[Médias]], [[Speech models]]
 
 ### swarm-forge  ·  brique
 - tags : `multi-agent`, `agents`, `code-assistant`, `cli`, `version-control`
@@ -1648,7 +1648,7 @@
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
 - liens sortants : [[Beszel]], [[Docker]], [[Sniffnet]], [[osint4all]]
-- liens entrants : [[Sniffnet]], [[osint4all]]
+- liens entrants : [[Sniffnet]], [[Sécurité]], [[osint4all]]
 
 ### Weights & Biases  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1720,6 +1720,16 @@
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Design & diagrammes]]
 
+### Interfaces & apps data  ·  hub
+- tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Web & API]]
+- liens entrants : [[Web & API]]
+
+### Médias  ·  hub
+- tags : `video-editing`, `media-player`, `speech`, `multimodal`
+- liens sortants : [[Claude Video]], [[OpenCut]], [[SmartTube]], [[Superwhisper]]
+- liens entrants : —
+
 ### No-code  ·  hub
 - tags : `low-code`, `orchestration`, `self-hosted`
 - liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
@@ -1729,6 +1739,11 @@
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[DuckDB]], [[Marimo]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
 - liens entrants : [[Outils de développement]]
+
+### Observabilité  ·  hub
+- tags : `observability`, `logging`, `metrics`, `dashboard`, `self-hosted`
+- liens sortants : [[Beszel]], [[Grafana]], [[Loki]]
+- liens entrants : —
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
@@ -1760,6 +1775,11 @@
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
 - liens entrants : [[Stockage]]
 
+### Sécurité  ·  hub
+- tags : `authentication`, `recon`, `osint`, `cryptography`
+- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[Prompt injection]], [[PyJWT]], [[Web-Check]], [[osint4all]]
+- liens entrants : —
+
 ### Vectoriel  ·  hub
 - tags : —
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
@@ -1768,7 +1788,7 @@
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
-- liens entrants : —
+- liens entrants : [[Interfaces & apps data]]
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
@@ -1833,7 +1853,7 @@
 ### AI security  ·  notion
 - tags : `ai-security`, `safety`, `llm`
 - liens sortants : [[Guardrails]], [[Jailbreaking and defenses]], [[LLM observability]], [[Prompt injection]], [[Reliability patterns]], [[mcp-protocol]]
-- liens entrants : [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LM Studio Bionic]], [[OpenClaw]], [[Prompt injection]], [[Sandboxing de code généré]], [[promptfoo]]
+- liens entrants : [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LM Studio Bionic]], [[OpenClaw]], [[Prompt injection]], [[Sandboxing de code généré]], [[Sécurité]], [[promptfoo]]
 
 ### AlphaZero and self-play  ·  notion
 - tags : `self-play`, `planning`, `deep-learning`, `reinforcement-learning`
@@ -2323,7 +2343,7 @@
 ### Guardrails  ·  notion
 - tags : `guardrails`, `safety`, `llm`
 - liens sortants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM observability]], [[LLM-as-judge]], [[LiteLLM]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]]
-- liens entrants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LiteLLM]], [[OpenClaw]], [[Probing]], [[Prompt injection]], [[Sandboxing de code généré]], [[fastmcp]]
+- liens entrants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LiteLLM]], [[OpenClaw]], [[Probing]], [[Prompt injection]], [[Sandboxing de code généré]], [[Sécurité]], [[fastmcp]]
 
 ### Harnais d'agent  ·  notion
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
@@ -2428,7 +2448,7 @@
 ### Jailbreaking and defenses  ·  notion
 - tags : `jailbreak`, `safety`, `llm`
 - liens sortants : [[AI security]], [[Guardrails]], [[LLM observability]], [[Prompt injection]], [[RLHF and DPO]], [[Reasoning models]]
-- liens entrants : [[AI security]], [[Guardrails]], [[Prompt injection]]
+- liens entrants : [[AI security]], [[Guardrails]], [[Prompt injection]], [[Sécurité]]
 
 ### Jensen-Shannon divergence  ·  notion
 - tags : `information-theory`, `kl-divergence`
@@ -2818,7 +2838,7 @@
 ### Prompt injection  ·  notion
 - tags : `prompt-injection`, `ai-security`, `llm`
 - liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[RAG]], [[Reliability patterns]], [[Sandboxing de code généré]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[AI security]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Jailbreaking and defenses]], [[LM Studio Bionic]], [[OpenClaw]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
+- liens entrants : [[AI security]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Jailbreaking and defenses]], [[LM Studio Bionic]], [[OpenClaw]], [[Sandboxing de code généré]], [[Sécurité]], [[a2a-protocol]], [[mcp-protocol]]
 
 ### prompt-caching  ·  notion
 - tags : `caching`, `inference-optimization`, `llm`, `context-engineering`
@@ -3326,7 +3346,7 @@
 - `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme, Signal & audio
 - `audit-log` : Maka  — pas de page concept dédiée
-- `authentication` : PyJWT  — pas de page concept dédiée
+- `authentication` : PyJWT, Sécurité  — pas de page concept dédiée
 - `autograd` : JAX, Kornia, PyTorch, TensorFlow  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan  — pas de page concept dédiée
@@ -3359,9 +3379,9 @@
 - `convergence` : Loi des grands nombres, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy
-- `cryptography` : PyJWT, croc  — pas de page concept dédiée
-- `dashboard` : Beszel, Dash, Grafana, Shiny for Python, WrenAI  — pas de page concept dédiée
-- `data-app` : Dash, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
+- `cryptography` : PyJWT, Sécurité, croc  — pas de page concept dédiée
+- `dashboard` : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI  — pas de page concept dédiée
+- `data-app` : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, albumentations, torchvision
 - `data-contract` : Contrats de données & qualité
 - `data-drift` : Data drift, Evidently, Monitoring de modèle en production
@@ -3439,7 +3459,7 @@
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
-- `interactive-viz` : altair, bokeh, plotly  — pas de page concept dédiée
+- `interactive-viz` : Interfaces & apps data, altair, bokeh, plotly  — pas de page concept dédiée
 - `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
@@ -3461,7 +3481,7 @@
 - `llm-gateway` : Helicone, LiteLLM, OmniRoute, OpenRouter  — pas de page concept dédiée
 - `llm-observability` : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize
 - `local-llm` : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
-- `logging` : Loki  — pas de page concept dédiée
+- `logging` : Loki, Observabilité  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
@@ -3471,15 +3491,15 @@
 - `matrix-decomposition` : Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
 - `maximum-likelihood` : GLM, Gaussian Mixture Models (GMM), Maximum de vraisemblance, Régression logistique
 - `mcp` : Activepieces, Cline, Graphify, Headroom, Hermes Agent, LM Studio Bionic, OpenClaw, OpenViking, PraisonAI, ai-memory, fastmcp, mcp-protocol, mcpjam, smolagents
-- `media-player` : SmartTube  — pas de page concept dédiée
+- `media-player` : Médias, SmartTube  — pas de page concept dédiée
 - `memory-optimization` : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth  — pas de page concept dédiée
 - `metric-learning` : Metric learning & ré-identification
-- `metrics` : Beszel, Grafana  — pas de page concept dédiée
+- `metrics` : Beszel, Grafana, Observabilité  — pas de page concept dédiée
 - `migration` : Alembic, Flyway, Liquibase, Migrations de schéma
 - `missing-data` : EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno  — pas de page concept dédiée
 - `mixed-precision` : DeepSpeed, Mixed precision, accelerate
 - `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
-- `ml-demo` : Gradio, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
+- `ml-demo` : Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `ml-pipeline` : Flyte, Metaflow, ZenML  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Distillation, Pruning, Quantization  — pas de page concept dédiée
@@ -3492,7 +3512,7 @@
 - `multi-agent` : Agno, AutoGen, BMAD, CrewAI, DB-GPT, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, a2a-protocol, freebuff, swarm-forge  — pas de page concept dédiée
 - `multi-armed-bandit` : Exploration vs exploitation, Multi-armed bandits  — pas de page concept dédiée
 - `multi-output` : Régression et classification multi-sorties
-- `multimodal` : Claude Video, Image generation, LanceDB, Marqo, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
+- `multimodal` : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
 - `multiple-testing` : Correction des tests multiples
 - `multivariate` : MANOVA et tests multivariés  — pas de page concept dédiée
 - `mutual-information` : Mutual information
@@ -3508,7 +3528,7 @@
 - `object-detection` : Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, albumentations, supervision
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage, Stockage objet  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, supervision
-- `observability` : Beszel, Grafana, Loki  — pas de page concept dédiée
+- `observability` : Beszel, Grafana, Loki, Observabilité  — pas de page concept dédiée
 - `ocr` : LlamaParse, Marker, OCR, Stirling PDF, Unstructured, docTR, pdf-inspector
 - `offline-rl` : Offline RL
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
@@ -3516,7 +3536,7 @@
 - `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, No-code, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
-- `osint` : Web-Check, osint4all  — pas de page concept dédiée
+- `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
 - `out-of-core` : Calcul distribué, Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning
@@ -3551,7 +3571,7 @@
 - `re-identification` : Metric learning & ré-identification
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models  — pas de page concept dédiée
 - `recommender-systems` : Systèmes de recommandation
-- `recon` : Web-Check  — pas de page concept dédiée
+- `recon` : Sécurité, Web-Check  — pas de page concept dédiée
 - `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Types de données et choix de modèle, k-NN, lifelines
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
 - `regularization` : Augmentation d'images, Régularisation, Vector norms
@@ -3575,7 +3595,7 @@
 - `search` : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton  — pas de page concept dédiée
 - `segmentation` : Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, albumentations, segment-anything
-- `self-hosted` : Automatisation no-code, Beszel, No-code, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc  — pas de page concept dédiée
+- `self-hosted` : Automatisation no-code, Beszel, No-code, Observabilité, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai  — pas de page concept dédiée
@@ -3585,7 +3605,7 @@
 - `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `small-language-model` : Distillation, Small Language Models, needle
 - `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal  — pas de page concept dédiée
-- `speech` : Claude Video, Speech models, Superwhisper  — pas de page concept dédiée
+- `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : matplotlib, missingno, seaborn  — pas de page concept dédiée
 - `statistical-inference` : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
@@ -3622,7 +3642,7 @@
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Vector norms  — pas de page concept dédiée
 - `version-control` : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
-- `video-editing` : OpenCut  — pas de page concept dédiée
+- `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision Transformers (ViT), timm
@@ -3645,7 +3665,7 @@
 - `array` (porté par : CuPy, JAX, numpy, xarray)
 - `attention` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
-- `authentication` (porté par : PyJWT)
+- `authentication` (porté par : PyJWT, Sécurité)
 - `autograd` (porté par : JAX, Kornia, PyTorch, TensorFlow)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan)
 - `benchmark` (porté par : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit)
@@ -3661,9 +3681,9 @@
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Théorème central limite)
-- `cryptography` (porté par : PyJWT, croc)
-- `dashboard` (porté par : Beszel, Dash, Grafana, Shiny for Python, WrenAI)
-- `data-app` (porté par : Dash, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
+- `cryptography` (porté par : PyJWT, Sécurité, croc)
+- `dashboard` (porté par : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
+- `data-app` (porté par : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-modeling` (porté par : Architecture médaillon)
 - `data-pipeline` (porté par : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, ELT vs ETL & idempotence, Kestra, Mage, Pattern - Pipeline scraping → matching → optimisation, Prefect, Stream processing, Web scraping)
 - `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs)
@@ -3707,7 +3727,7 @@
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance)
-- `interactive-viz` (porté par : altair, bokeh, plotly)
+- `interactive-viz` (porté par : Interfaces & apps data, altair, bokeh, plotly)
 - `isometric` (porté par : Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop)
@@ -3724,17 +3744,17 @@
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo)
 - `llm-gateway` (porté par : Helicone, LiteLLM, OmniRoute, OpenRouter)
 - `local-llm` (porté par : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
-- `logging` (porté par : Loki)
+- `logging` (porté par : Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector)
 - `markov` (porté par : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan)
 - `matrix-decomposition` (porté par : Eigendecomposition, Matrix decompositions, SVD)
-- `media-player` (porté par : SmartTube)
+- `media-player` (porté par : Médias, SmartTube)
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
-- `metrics` (porté par : Beszel, Grafana)
+- `metrics` (porté par : Beszel, Grafana, Observabilité)
 - `missing-data` (porté par : EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno)
-- `ml-demo` (porté par : Gradio, Pattern - Stack démo ML locale multi-services)
+- `ml-demo` (porté par : Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
 - `ml-pipeline` (porté par : Flyte, Metaflow, ZenML)
 - `model-compression` (porté par : Distillation, Pruning, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, LLM benchmarks, LLM eval metrics, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval)
@@ -3743,7 +3763,7 @@
 - `monte-carlo` (porté par : ArviZ, MCMC, Monte Carlo Tree Search, PyMC, Stan)
 - `multi-agent` (porté par : Agno, AutoGen, BMAD, CrewAI, DB-GPT, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, a2a-protocol, freebuff, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)
-- `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Speech models, Superwhisper, Video generation, Vision Language Models)
+- `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models)
 - `multivariate` (porté par : MANOVA et tests multivariés)
 - `networking` (porté par : Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
@@ -3751,11 +3771,11 @@
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage, Stockage objet)
-- `observability` (porté par : Beszel, Grafana, Loki)
+- `observability` (porté par : Beszel, Grafana, Loki, Observabilité)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, No-code, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
-- `osint` (porté par : Web-Check, osint4all)
+- `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Dask, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
@@ -3774,7 +3794,7 @@
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
 - `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25)
 - `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Reasoning models)
-- `recon` (porté par : Web-Check)
+- `recon` (porté par : Sécurité, Web-Check)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
 - `relational` (porté par : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
@@ -3789,13 +3809,13 @@
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton)
-- `self-hosted` (porté par : Automatisation no-code, Beszel, No-code, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc)
+- `self-hosted` (porté par : Automatisation no-code, Beszel, No-code, Observabilité, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
 - `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal)
-- `speech` (porté par : Claude Video, Speech models, Superwhisper)
+- `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : matplotlib, missingno, seaborn)
 - `statistical-inference` (porté par : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Tests d'hypothèse, statsmodels)
@@ -3819,7 +3839,7 @@
 - `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Vector norms)
 - `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
-- `video-editing` (porté par : OpenCut)
+- `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio)
 - `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
