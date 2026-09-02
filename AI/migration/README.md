@@ -19,7 +19,7 @@ Cible : [[AI/design/brain-v3|brain-v3]] · Inventaire et arbre : [[AI/design/v3-
 
 ## Pourquoi une conversation par lot
 
-Le vault fait 682 pages. Une seule conversation qui déplacerait les fichiers, réécrirait les
+Le vault fait 646 pages dans `Dev/` et `Wiki/` (mesure corrigée au lot 2). Une seule conversation qui déplacerait les fichiers, réécrirait les
 scripts, recatégoriserait 205 notions et convertirait 336 fiches sature son contexte avant la
 moitié, et la qualité tombe sans que rien ne le signale.
 
@@ -36,7 +36,7 @@ propre travail.
 
 | Lot | Objet | Brief | Prêt à lancer | Fait |
 |-----|-------|-------|---------------|------|
-| 0 | Réglages Obsidian — graphe et propriétés | `lot-0-reglages.md` | oui | **appliqué le 2026-09-04** — vérifications visuelles et test `base` en attente d'une ouverture du vault dans Obsidian (cf. *Remontées*) |
+| 0 | Réglages Obsidian — graphe et propriétés | `lot-0-reglages.md` | oui | **fait le 2026-09-04** |
 | 1 | Spec et arborescence | — | — | **fait le 2026-09-04** |
 | 2 | `role:` remplace `galaxie:`/`type:` ; nettoyage du frontmatter | `lot-2-role.md` | oui | **fait le 2026-09-04** — 646 pages, validateur vert, 0 lien non résolu. Écarts au brief et pertes assumées : cf. *Remontées* |
 | 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | — |
@@ -46,8 +46,9 @@ propre travail.
 | 7 | Skills et règle de propagation | `lot-7-skills.md` | après lots 2 et 3 | — |
 | 8 | Durcissement des règles du validateur | `lot-8-durcissement.md` | en dernier | — |
 
-Les lots 5 et 6 peuvent tourner en parallèle du 4 : ils ne touchent pas les mêmes fichiers.
-Le 3 doit être seul — il déplace tout.
+**Une conversation à la fois, jamais deux en parallèle.** Les fichiers sources de 4, 5 et 6 sont
+bien disjoints, mais chaque lot se clôt par `cloturer-brain`, qui régénère `AI/index/` et `MOC/`,
+commit et pousse : deux clôtures simultanées se percutent sur les fichiers générés et sur le push.
 
 **Le lot 7 est prioritaire dès que le 3 est fait.** Tant qu'il n'a pas tourné, les skills
 suivent encore les règles v2 : toute page ajoutée entre-temps dégrade la structure neuve.
@@ -98,9 +99,7 @@ Ce qu'une conversation découvre hors de son périmètre s'écrit ici, et **seul
 
 | Date | Lot | Constat | Décision |
 |------|-----|---------|----------|
-| 2026-09-04 | 0 | **Test du bloc de code `base` non exécuté.** Il demande de constater un rendu dans Obsidian ; la conversation tourne sous WSL, sans interface graphique. Brouillon prêt et laissé en place : `_orphans/test-bloc-base.md` (gitignoré), il porte la requête de `Comparatif - Bases vectorielles.base` dans un bloc ```` ```base ````. | Le lot 5 garde l'hypothèse prudente — les 47 `.base` sont **conservés**. À rouvrir si le tableau s'affiche : voir la décision ouverte n°5. Supprimer le brouillon après lecture. |
-| 2026-09-04 | 0 | **Aucun Obsidian ne pointe sur ce vault.** Le registre Windows (`AppData/Roaming/obsidian/obsidian.json`) référence `C:\Users\FlorianHorellou\Documents\Projets\DevBrain`, chemin disparu, dernière ouverture le 2026-05-21. Ce `.obsidian/` n'a ni `appearance.json` ni `workspace.json` : il n'a jamais été ouvert par l'application. | Les deux réglages du lot 0 sont écrits dans `.obsidian/app.json` et prendront effet à la première ouverture du vault depuis son chemin actuel. Les deux vérifications visuelles du lot (graphe sans `liens.md`, titre en première ligne) restent donc à faire à ce moment-là, en même temps que le test ci-dessus. |
-| 2026-09-04 | 0 | Le réglage « Propriétés dans le document → Masqué » a été appliqué **par le fichier** (`propertiesInDocument: "hidden"` dans `app.json`) et non par l'interface, faute d'accès à celle-ci. Avantage : le réglage devient portable entre machines au lieu de rester local. | À confirmer d'un œil à la réouverture — si le panneau reste visible, le passer par Réglages → Éditeur, Obsidian réécrira la clé lui-même. |
+| 2026-09-04 | 0 | **Lot 0 clos sur pièces ; vérifications visuelles abandonnées.** Les deux réglages sont constatés dans `.obsidian/app.json` (`AI/index/` dans `userIgnoreFilters`, `propertiesInDocument: "hidden"`) — c'est le fichier qui fait foi, pas l'écran. Le vault réellement ouvert dans Obsidian est la copie WSL `~/Projets/DevBrain`, deux commits en retard au moment du constat. Le test du bloc `base` n'a jamais été exécuté ; le brouillon `_orphans/test-bloc-base.md` a été supprimé. | Aucun lot n'en dépend. Le lot 5 applique la variante prudente : les 47 `.base` sont **conservés**. Décision ouverte n°5 close. |
 | 2026-09-04 | 2 | **Le vault fait 646 pages sous `Dev/` + `Wiki/`, pas 682.** Le brief du lot 2 et la spec v3 annoncent 682 « pages du vault » — le compte inclut vraisemblablement les 47 `.base` et les 39 `MOC/`. Aucune conséquence sur le travail. | Chiffre corrigé dans les commits du lot 2. À reprendre dans `brain-v3.md` §1 et dans les briefs suivants s'ils s'appuient dessus. |
 | 2026-09-04 | 2 | **`remplace_par:` n'était PAS vide sur 297 fiches sur 297.** 4 fiches le portaient : `Fanalysis` → Prince, `Neptune` → MLflow + W&B, `TorchServe` → BentoML + Triton, `Vanna` → WrenAI + DB-GPT. Vérifié avant suppression : les 7 cibles étaient **déjà** dans l'`alternatives:` de leur fiche **et** nommées dans son corps. | Supprimé sans perte. La mesure « vide sur 297/297 » de `brain-v3.md` §5 et du brief est fausse — le chiffre juste est 293/297. |
 | 2026-09-04 | 2 | **`status: en-eval` perd de l'information sur 4 fiches**, non transposée : `Dev/Outils/Maka.md`, `Dev/Outils/swarm-forge.md`, `Dev/Outils/t3code.md` (aucune `maturite:` — le gabarit `outil` n'avait pas le champ) et `Dev/Services/pykan.md` (`maturite: experimental`). `en-eval` décrivait l'état d'évaluation de floSa, pas la maturité du produit : lui donner une `maturite` aurait fabriqué une affirmation sur l'amont. | Non transposé, décision validée par floSa. Le seul report effectué est `Dev/Outils/osint4all.md` (`abandonne` sans `maturite`) → `maturite: deprecated`, fait sourcé par son propre pitch (« sans commit depuis juillet 2022 »). Si floSa veut retenir « je suis en train de l'évaluer », il faudra un champ pour ça — ce n'est pas `maturite`. |
@@ -132,5 +131,5 @@ Elles n'empêchent aucun lot de démarrer, mais elles doivent être tranchées a
 3. **Les 9 comparatifs sans filtre `categorie`** — leur dossier d'accueil se pose à la main.
 4. **Le seuil de promotion à 5 pages** — 28 sous-dossiers. À 4 il en donnerait 34, à 8 il en
    donnerait 12. Choix de confort, révisable au lot 3 sans rien casser d'autre.
-5. **Variante « comparatif en un seul fichier »** — un bloc de code dans la page au lieu d'un
-   `.base` à côté. Test de 30 secondes dans Obsidian, à faire avant le lot 5.
+5. ~~**Variante « comparatif en un seul fichier »**~~ — **close le 2026-09-04** sans test : le lot 5
+   conserve les 47 `.base`. Rouvrable plus tard, elle ne bloque rien.

@@ -8,10 +8,14 @@ tags: [meta, migration, v3]
 
 # Lot 6 — Conversion des fiches au nouveau gabarit
 
-Effort : **une session par domaine**, 336 fiches au total. C'est le lot le plus long, et le
-seul qui touche au texte.
+Effort : **25 fiches par conversation au maximum**, 336 fiches au total — soit une quinzaine de
+conversations. C'est le lot le plus long, et le seul qui touche au texte.
 
-Prérequis : lot 2 fait. Indépendant des lots 3, 4 et 5 — il peut tourner en parallèle.
+Mesure du 2026-09-04 : 64 lignes et 407 mots médians par fiche, lues *et* réécrites, soit 3 à
+4 k tokens chacune. Au-delà de 25, la conversation sature avant la fin du domaine.
+
+Prérequis : lots 2 et 3 faits. **Jamais en parallèle d'un autre lot** — le 3 déplace les fiches
+que le 6 réécrit.
 
 ## Contexte
 
@@ -118,6 +122,9 @@ Lis AI/design/brain-v3.md puis AI/migration/lot-6-gabarit.md.
 
 Montre-moi trois fiches converties — une librairie, une plateforme, une application
 à interface — avant de dérouler le reste du domaine.
+
+Traite au maximum 25 fiches. Termine en me listant nommément celles qui restent dans
+le domaine, pour que la conversation suivante reprenne exactement là.
 
 N'invente aucun contenu : une cellule sans source dans la fiche d'origine reste vide
 et tu me la signales. Clôture avec le skill cloturer-brain.

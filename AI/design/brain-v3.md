@@ -158,8 +158,8 @@ flottaison.
 |---|---|---|
 | `galaxie`, `type` | supprimés | remplacés par `role:` |
 | `status` | supprimé | 272 fiches sur 336 sont `actif`+`production` ; 7 des 8 `abandonne` sont `deprecated`. Redondant avec `maturite` |
-| `remplace_par` | supprimé | vide sur 297 fiches sur 297 |
-| `hosted` | valeurs en **liste**, champ **conditionnel** | `both` (82 fiches) ne dit rien : on énumère `[self, managé]`. Et 177 `paquet` portent une valeur d'hébergement alors qu'une bibliothèque ne s'héberge pas. Le champ n'existe que pour `plateforme`, `saas`, `application` |
+| `remplace_par` | supprimé | vide sur 293 fiches sur 297 ; les 7 cibles des 4 restantes figuraient déjà en `alternatives` (mesure corrigée au lot 2) |
+| `hosted` | valeurs en **liste**, champ **conditionnel** | `both` (82 fiches) ne dit rien : on énumère `[self, managed]` — sans accent, orthographe de l'énumération en vigueur. Et 177 `paquet` portent une valeur d'hébergement alors qu'une bibliothèque ne s'héberge pas. Le champ n'existe que pour `plateforme`, `saas`, `application` |
 | `scaling` | champ **conditionnel** | `single-node` sur 212 fiches = la valeur par défaut de tout ce qui n'est pas distribué. Même traitement |
 | `complements` | **ajouté** | symétrique d'`alternatives:` — pgvector et Postgres ne s'excluent pas, ils s'utilisent ensemble |
 
