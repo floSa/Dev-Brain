@@ -4,6 +4,7 @@
     "Automatisation no-code",
     "Bases de données",
     "Calcul distribué",
+    "Data & pipelines",
     "Design & diagrammes",
     "Dev",
     "DevOps",
@@ -21,7 +22,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 667,
+  "count": 673,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -147,6 +148,7 @@
     ],
     "array": [
       "CuPy",
+      "DataFrames",
       "JAX",
       "numpy",
       "xarray"
@@ -483,11 +485,14 @@
       "Architecture médaillon",
       "Change Data Capture (CDC)",
       "Dagster",
+      "Data & pipelines",
       "ELT vs ETL & idempotence",
       "Kestra",
       "Mage",
+      "Orchestration",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Prefect",
+      "Scraping",
       "Stream processing",
       "Web scraping"
     ],
@@ -510,6 +515,8 @@
       "Versionnage de données"
     ],
     "dataframe": [
+      "Data & pipelines",
+      "DataFrames",
       "Modin",
       "Polars",
       "Spark",
@@ -520,8 +527,10 @@
       "ydata-profiling"
     ],
     "dataviz": [
+      "Data & pipelines",
       "Grafana",
       "TensorBoard",
+      "Visualisation",
       "altair",
       "bokeh",
       "matplotlib",
@@ -726,10 +735,12 @@
       "MongoDB Compass"
     ],
     "document-parsing": [
+      "Data & pipelines",
       "Docling",
       "LlamaParse",
       "Marker",
       "OpenDataLoader PDF",
+      "Parsing",
       "PyMuPDF",
       "Unstructured",
       "docTR",
@@ -738,6 +749,7 @@
       "selectolax"
     ],
     "durable-execution": [
+      "Orchestration",
       "Temporal"
     ],
     "dynamic-programming": [
@@ -1051,6 +1063,7 @@
     ],
     "idempotence": [
       "ELT vs ETL & idempotence",
+      "Orchestration",
       "Stream processing"
     ],
     "image-classification": [
@@ -1132,6 +1145,7 @@
     ],
     "interactive-viz": [
       "Interfaces & apps data",
+      "Visualisation",
       "altair",
       "bokeh",
       "plotly"
@@ -1176,6 +1190,7 @@
     ],
     "lazy-evaluation": [
       "Dask",
+      "DataFrames",
       "Polars"
     ],
     "learning-rate": [
@@ -1427,6 +1442,7 @@
       "Marker",
       "OpenDataLoader PDF",
       "Page to Markdown",
+      "Parsing",
       "pdf-inspector"
     ],
     "markov": [
@@ -1744,6 +1760,7 @@
       "LlamaParse",
       "Marker",
       "OCR",
+      "Parsing",
       "Stirling PDF",
       "Unstructured",
       "docTR",
@@ -1788,6 +1805,7 @@
       "Kestra",
       "Mage",
       "Metaflow",
+      "Orchestration",
       "Prefect",
       "Temporal",
       "Windmill",
@@ -1810,6 +1828,7 @@
     "out-of-core": [
       "Calcul distribué",
       "Dask",
+      "DataFrames",
       "Polars",
       "Spark",
       "datasets",
@@ -1858,6 +1877,7 @@
       "Documents",
       "Marker",
       "OpenDataLoader PDF",
+      "Parsing",
       "PyMuPDF",
       "Stirling PDF",
       "pdf-inspector",
@@ -2308,6 +2328,7 @@
       "State Space Models"
     ],
     "static-viz": [
+      "Visualisation",
       "matplotlib",
       "missingno",
       "seaborn"
@@ -2326,6 +2347,7 @@
       "pingouin"
     ],
     "statistical-viz": [
+      "Visualisation",
       "seaborn",
       "sweetviz"
     ],
@@ -2696,11 +2718,13 @@
     ],
     "web-scraping": [
       "Crawlee",
+      "Data & pipelines",
       "Documents",
       "Firecrawl",
       "Maxun",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Playwright",
+      "Scraping",
       "Scrapling",
       "Scrapy",
       "Web scraping",
@@ -4338,6 +4362,1239 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Apache Iceberg.md",
+      "nom": "Apache Iceberg",
+      "alias": [
+        "Iceberg",
+        "iceberg"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "domaines": null,
+      "pitch": "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).",
+      "tags": [
+        "lakehouse",
+        "olap",
+        "schema-evolution"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Avro.md",
+      "nom": "Avro",
+      "alias": [
+        "avro",
+        "Apache Avro"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "domaines": null,
+      "pitch": "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.",
+      "tags": [
+        "file-format",
+        "serialization",
+        "schema-evolution"
+      ],
+      "alternatives": [
+        "[[Parquet]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Data & pipelines.md",
+      "nom": "Data & pipelines",
+      "alias": [
+        "data engineering",
+        "pipelines de données"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": "Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.",
+      "tags": [
+        "data-pipeline",
+        "dataframe",
+        "web-scraping",
+        "document-parsing",
+        "dataviz"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/DataFrames/DataFrames.md",
+      "nom": "DataFrames",
+      "alias": [
+        "manipulation de données",
+        "tables en mémoire"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "data-eng"
+      ],
+      "pitch": "Charger, filtrer, joindre et agréger de la donnée tabulaire en mémoire — le geste le plus fréquent de tout le domaine.",
+      "tags": [
+        "dataframe",
+        "array",
+        "lazy-evaluation",
+        "out-of-core"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/DataFrames/Modin.md",
+      "nom": "Modin",
+      "alias": [
+        "modin"
+      ],
+      "role": "brique",
+      "categorie": "data/tableau",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.",
+      "tags": [
+        "dataframe",
+        "parallel",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[Dask]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/DataFrames/Polars.md",
+      "nom": "Polars",
+      "alias": [
+        "polars",
+        "py-polars"
+      ],
+      "role": "brique",
+      "categorie": "data/tableau",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.",
+      "tags": [
+        "dataframe",
+        "columnar",
+        "lazy-evaluation",
+        "out-of-core"
+      ],
+      "alternatives": [
+        "[[pandas]]",
+        "[[Modin]]",
+        "[[Dask]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/DataFrames/numpy.md",
+      "nom": "numpy",
+      "alias": [
+        "np",
+        "NumPy"
+      ],
+      "role": "brique",
+      "categorie": "data/tableau",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.",
+      "tags": [
+        "array",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[xarray]]",
+        "[[Dask]]",
+        "[[CuPy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/DataFrames/pandas.md",
+      "nom": "pandas",
+      "alias": [
+        "pd"
+      ],
+      "role": "brique",
+      "categorie": "data/tableau",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.",
+      "tags": [
+        "dataframe",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[Polars]]",
+        "[[Modin]]",
+        "[[Dask]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/DataFrames/xarray.md",
+      "nom": "xarray",
+      "alias": [
+        "xray",
+        "pydata-xarray"
+      ],
+      "role": "brique",
+      "categorie": "data/tableau",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).",
+      "tags": [
+        "array",
+        "out-of-core"
+      ],
+      "alternatives": [
+        "[[numpy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Faker.md",
+      "nom": "Faker",
+      "alias": [
+        "faker",
+        "fake-factory",
+        "joke2k faker"
+      ],
+      "role": "brique",
+      "categorie": "data/synthetique",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.",
+      "tags": [
+        "synthetic-data",
+        "testing"
+      ],
+      "alternatives": [
+        "[[Mimesis]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Flink.md",
+      "nom": "Flink",
+      "alias": [
+        "flink",
+        "Apache Flink"
+      ],
+      "role": "brique",
+      "categorie": "data/streaming",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch.",
+      "tags": [
+        "streaming",
+        "distributed"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Mimesis.md",
+      "nom": "Mimesis",
+      "alias": [
+        "mimesis",
+        "lk-geimfari mimesis"
+      ],
+      "role": "brique",
+      "categorie": "data/synthetique",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.",
+      "tags": [
+        "synthetic-data",
+        "testing"
+      ],
+      "alternatives": [
+        "[[Faker]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Airflow.md",
+      "nom": "Airflow",
+      "alias": [
+        "airflow",
+        "Apache Airflow"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.",
+      "tags": [
+        "orchestration",
+        "data-pipeline",
+        "scheduler"
+      ],
+      "alternatives": [
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Dagster.md",
+      "nom": "Dagster",
+      "alias": [
+        "dagster"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.",
+      "tags": [
+        "orchestration",
+        "data-pipeline"
+      ],
+      "alternatives": [
+        "[[Airflow]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Kestra.md",
+      "nom": "Kestra",
+      "alias": [
+        "kestra"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.",
+      "tags": [
+        "orchestration",
+        "data-pipeline",
+        "declarative-config"
+      ],
+      "alternatives": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Temporal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Mage.md",
+      "nom": "Mage",
+      "alias": [
+        "mage",
+        "Mage AI",
+        "mage-ai"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.",
+      "tags": [
+        "orchestration",
+        "data-pipeline",
+        "low-code"
+      ],
+      "alternatives": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Orchestration.md",
+      "nom": "Orchestration",
+      "alias": [
+        "orchestrateurs data"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": "Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.",
+      "tags": [
+        "orchestration",
+        "data-pipeline",
+        "durable-execution",
+        "idempotence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Prefect.md",
+      "nom": "Prefect",
+      "alias": [
+        "prefect"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.",
+      "tags": [
+        "orchestration",
+        "data-pipeline"
+      ],
+      "alternatives": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Orchestration/Temporal.md",
+      "nom": "Temporal",
+      "alias": [
+        "temporal",
+        "Temporal.io"
+      ],
+      "role": "brique",
+      "categorie": "data/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.",
+      "tags": [
+        "orchestration",
+        "durable-execution",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parquet.md",
+      "nom": "Parquet",
+      "alias": [
+        "parquet",
+        "Apache Parquet"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "domaines": null,
+      "pitch": "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.",
+      "tags": [
+        "file-format",
+        "columnar",
+        "olap"
+      ],
+      "alternatives": [
+        "[[Avro]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Docling.md",
+      "nom": "Docling",
+      "alias": [
+        "docling",
+        "docling-project"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.",
+      "tags": [
+        "document-parsing",
+        "rag",
+        "table-extraction",
+        "layout-analysis"
+      ],
+      "alternatives": [
+        "[[Unstructured]]",
+        "[[LlamaParse]]",
+        "[[Marker]]",
+        "[[pdf-inspector]]",
+        "[[OpenDataLoader PDF]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/LlamaParse.md",
+      "nom": "LlamaParse",
+      "alias": [
+        "llamaparse",
+        "llama-parse",
+        "LlamaCloud Parse"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.",
+      "tags": [
+        "document-parsing",
+        "rag",
+        "ocr"
+      ],
+      "alternatives": [
+        "[[Unstructured]]",
+        "[[Docling]]",
+        "[[Marker]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Marker.md",
+      "nom": "Marker",
+      "alias": [
+        "marker",
+        "marker-pdf",
+        "datalab-marker"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.",
+      "tags": [
+        "document-parsing",
+        "pdf",
+        "ocr",
+        "markdown-conversion",
+        "rag"
+      ],
+      "alternatives": [
+        "[[Unstructured]]",
+        "[[Docling]]",
+        "[[LlamaParse]]",
+        "[[pdf-inspector]]",
+        "[[OpenDataLoader PDF]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/OpenDataLoader PDF.md",
+      "nom": "OpenDataLoader PDF",
+      "alias": [
+        "opendataloader",
+        "opendataloader-pdf",
+        "open data loader pdf"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.",
+      "tags": [
+        "pdf",
+        "document-parsing",
+        "layout-analysis",
+        "table-extraction",
+        "markdown-conversion",
+        "rag",
+        "accessibility"
+      ],
+      "alternatives": [
+        "[[Docling]]",
+        "[[Unstructured]]",
+        "[[Marker]]",
+        "[[pdf-inspector]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Parsing.md",
+      "nom": "Parsing",
+      "alias": [
+        "parsing de documents"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.",
+      "tags": [
+        "document-parsing",
+        "pdf",
+        "ocr",
+        "markdown-conversion"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Parsing/PyMuPDF.md",
+      "nom": "PyMuPDF",
+      "alias": [
+        "pymupdf",
+        "fitz",
+        "MuPDF"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.",
+      "tags": [
+        "pdf",
+        "document-parsing"
+      ],
+      "alternatives": [
+        "[[pdfplumber]]",
+        "[[pdf-inspector]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Unstructured.md",
+      "nom": "Unstructured",
+      "alias": [
+        "unstructured",
+        "unstructured-io"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.",
+      "tags": [
+        "document-parsing",
+        "rag",
+        "ocr"
+      ],
+      "alternatives": [
+        "[[Docling]]",
+        "[[LlamaParse]]",
+        "[[Marker]]",
+        "[[OpenDataLoader PDF]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/docTR.md",
+      "nom": "docTR",
+      "alias": [
+        "doctr",
+        "python-doctr",
+        "Document Text Recognition",
+        "mindee docTR"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "layout-analysis",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/pdf-inspector.md",
+      "nom": "pdf-inspector",
+      "alias": [
+        "firecrawl/pdf-inspector",
+        "pdf2md",
+        "detect-pdf"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.",
+      "tags": [
+        "pdf",
+        "document-parsing",
+        "ocr",
+        "markdown-conversion",
+        "layout-analysis"
+      ],
+      "alternatives": [
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]",
+        "[[Docling]]",
+        "[[Marker]]",
+        "[[OpenDataLoader PDF]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Data & pipelines/Parsing/pdfplumber.md",
+      "nom": "pdfplumber",
+      "alias": [
+        "pdfplumber",
+        "jsvine-pdfplumber"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.",
+      "tags": [
+        "pdf",
+        "table-extraction",
+        "document-parsing"
+      ],
+      "alternatives": [
+        "[[PyMuPDF]]",
+        "[[pdf-inspector]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/SDV.md",
+      "nom": "SDV",
+      "alias": [
+        "Synthetic Data Vault",
+        "sdv",
+        "sdv-dev"
+      ],
+      "role": "brique",
+      "categorie": "data/synthetique",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL).",
+      "tags": [
+        "synthetic-data",
+        "generative-model",
+        "gan"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Crawlee.md",
+      "nom": "Crawlee",
+      "alias": [
+        "crawlee",
+        "crawlee-python"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[Scrapy]]",
+        "[[Scrapling]]",
+        "[[Playwright]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Firecrawl.md",
+      "nom": "Firecrawl",
+      "alias": [
+        "firecrawl"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.",
+      "tags": [
+        "web-scraping",
+        "markdown-conversion"
+      ],
+      "alternatives": [
+        "[[Maxun]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Maxun.md",
+      "nom": "Maxun",
+      "alias": [
+        "maxun"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.",
+      "tags": [
+        "web-scraping",
+        "low-code"
+      ],
+      "alternatives": [
+        "[[Firecrawl]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Playwright.md",
+      "nom": "Playwright",
+      "alias": [
+        "playwright",
+        "playwright-python"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[curl_cffi]]",
+        "[[cloudscraper]]",
+        "[[Crawlee]]",
+        "[[Scrapling]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Scraping.md",
+      "nom": "Scraping",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.",
+      "tags": [
+        "web-scraping",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Scraping/Scrapling.md",
+      "nom": "Scrapling",
+      "alias": [
+        "scrapling"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[Scrapy]]",
+        "[[Crawlee]]",
+        "[[Playwright]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Data & pipelines/Scraping/Scrapy.md",
+      "nom": "Scrapy",
+      "alias": [
+        "scrapy"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[Crawlee]]",
+        "[[Scrapling]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/cloudscraper.md",
+      "nom": "cloudscraper",
+      "alias": [
+        "cloudscraper"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[curl_cffi]]",
+        "[[Playwright]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/curl_cffi.md",
+      "nom": "curl_cffi",
+      "alias": [
+        "curl-cffi"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [
+        "[[cloudscraper]]",
+        "[[Playwright]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Scraping/minim.md",
+      "nom": "minim",
+      "alias": [
+        "minim"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé.",
+      "tags": [
+        "web-scraping"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Data & pipelines/Scraping/selectolax.md",
+      "nom": "selectolax",
+      "alias": [
+        "selectolax"
+      ],
+      "role": "brique",
+      "categorie": "data/scraping",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Parseur HTML5 ultra-rapide en Python (binding C Lexbor/Modest) avec sélecteurs CSS — un ordre de grandeur plus rapide que BeautifulSoup pour extraire des données de gros volumes de pages.",
+      "tags": [
+        "web-scraping",
+        "document-parsing"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Visualisation/Visualisation.md",
+      "nom": "Visualisation",
+      "alias": [
+        "dataviz",
+        "graphiques"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.",
+      "tags": [
+        "dataviz",
+        "static-viz",
+        "interactive-viz",
+        "statistical-viz"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Visualisation/altair.md",
+      "nom": "altair",
+      "alias": [
+        "vega-altair",
+        "alt"
+      ],
+      "role": "brique",
+      "categorie": "data/viz",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.",
+      "tags": [
+        "dataviz",
+        "declarative-viz",
+        "interactive-viz"
+      ],
+      "alternatives": [
+        "[[plotly]]",
+        "[[bokeh]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Visualisation/bokeh.md",
+      "nom": "bokeh",
+      "alias": [],
+      "role": "brique",
+      "categorie": "data/viz",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.",
+      "tags": [
+        "dataviz",
+        "interactive-viz"
+      ],
+      "alternatives": [
+        "[[plotly]]",
+        "[[altair]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Visualisation/matplotlib.md",
+      "nom": "matplotlib",
+      "alias": [
+        "mpl",
+        "plt",
+        "pyplot"
+      ],
+      "role": "brique",
+      "categorie": "data/viz",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.",
+      "tags": [
+        "dataviz",
+        "static-viz"
+      ],
+      "alternatives": [
+        "[[seaborn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Visualisation/plotly.md",
+      "nom": "plotly",
+      "alias": [
+        "plotly.py",
+        "px",
+        "plotly-express"
+      ],
+      "role": "brique",
+      "categorie": "data/viz",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.",
+      "tags": [
+        "dataviz",
+        "interactive-viz"
+      ],
+      "alternatives": [
+        "[[bokeh]]",
+        "[[altair]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Visualisation/seaborn.md",
+      "nom": "seaborn",
+      "alias": [
+        "sns"
+      ],
+      "role": "brique",
+      "categorie": "data/viz",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.",
+      "tags": [
+        "dataviz",
+        "statistical-viz",
+        "static-viz"
+      ],
+      "alternatives": [
+        "[[matplotlib]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/connectorx.md",
+      "nom": "connectorx",
+      "alias": [
+        "connector-x",
+        "connectorx"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.",
+      "tags": [
+        "dataframe",
+        "columnar"
+      ],
+      "alternatives": [
+        "[[ADBC]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/missingno.md",
+      "nom": "missingno",
+      "alias": [
+        "missing-no"
+      ],
+      "role": "brique",
+      "categorie": "data/eda",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.",
+      "tags": [
+        "missing-data",
+        "eda",
+        "static-viz"
+      ],
+      "alternatives": [
+        "[[ydata-profiling]]",
+        "[[sweetviz]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/sweetviz.md",
+      "nom": "sweetviz",
+      "alias": [
+        "Sweetviz"
+      ],
+      "role": "brique",
+      "categorie": "data/eda",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).",
+      "tags": [
+        "eda",
+        "statistical-viz",
+        "dataframe"
+      ],
+      "alternatives": [
+        "[[ydata-profiling]]",
+        "[[missingno]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/ydata-profiling.md",
+      "nom": "ydata-profiling",
+      "alias": [
+        "pandas-profiling",
+        "ydata profiling"
+      ],
+      "role": "brique",
+      "categorie": "data/eda",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.",
+      "tags": [
+        "eda",
+        "data-quality",
+        "dataframe"
+      ],
+      "alternatives": [
+        "[[sweetviz]]",
+        "[[missingno]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Design & diagrammes/Design & diagrammes.md",
       "nom": "Design & diagrammes",
       "alias": [
@@ -5223,54 +6480,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Airflow.md",
-      "nom": "Airflow",
-      "alias": [
-        "airflow",
-        "Apache Airflow"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.",
-      "tags": [
-        "orchestration",
-        "data-pipeline",
-        "scheduler"
-      ],
-      "alternatives": [
-        "[[Dagster]]",
-        "[[Prefect]]",
-        "[[Mage]]",
-        "[[Kestra]]",
-        "[[Temporal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Apache Iceberg.md",
-      "nom": "Apache Iceberg",
-      "alias": [
-        "Iceberg",
-        "iceberg"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "domaines": null,
-      "pitch": "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).",
-      "tags": [
-        "lakehouse",
-        "olap",
-        "schema-evolution"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/AutoGen.md",
       "nom": "AutoGen",
       "alias": [
@@ -5299,29 +6508,6 @@
       ],
       "complements": [],
       "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/Avro.md",
-      "nom": "Avro",
-      "alias": [
-        "avro",
-        "Apache Avro"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "domaines": null,
-      "pitch": "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.",
-      "tags": [
-        "file-format",
-        "serialization",
-        "schema-evolution"
-      ],
-      "alternatives": [
-        "[[Parquet]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/Axolotl.md",
@@ -5512,29 +6698,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Crawlee.md",
-      "nom": "Crawlee",
-      "alias": [
-        "crawlee",
-        "crawlee-python"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[Scrapy]]",
-        "[[Scrapling]]",
-        "[[Playwright]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/CrewAI.md",
       "nom": "CrewAI",
       "alias": [
@@ -5614,31 +6777,6 @@
         "[[LangChain]]",
         "[[LlamaIndex]]",
         "[[Haystack]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Dagster.md",
-      "nom": "Dagster",
-      "alias": [
-        "dagster"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.",
-      "tags": [
-        "orchestration",
-        "data-pipeline"
-      ],
-      "alternatives": [
-        "[[Airflow]]",
-        "[[Prefect]]",
-        "[[Mage]]",
-        "[[Kestra]]",
-        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5752,34 +6890,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Docling.md",
-      "nom": "Docling",
-      "alias": [
-        "docling",
-        "docling-project"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.",
-      "tags": [
-        "document-parsing",
-        "rag",
-        "table-extraction",
-        "layout-analysis"
-      ],
-      "alternatives": [
-        "[[Unstructured]]",
-        "[[LlamaParse]]",
-        "[[Marker]]",
-        "[[pdf-inspector]]",
-        "[[OpenDataLoader PDF]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Evidently.md",
       "nom": "Evidently",
       "alias": [
@@ -5799,29 +6909,6 @@
         "model-evaluation"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Faker.md",
-      "nom": "Faker",
-      "alias": [
-        "faker",
-        "fake-factory",
-        "joke2k faker"
-      ],
-      "role": "brique",
-      "categorie": "data/synthetique",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.",
-      "tags": [
-        "synthetic-data",
-        "testing"
-      ],
-      "alternatives": [
-        "[[Mimesis]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -5862,47 +6949,6 @@
       "alternatives": [
         "[[Scikit-Learn]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Firecrawl.md",
-      "nom": "Firecrawl",
-      "alias": [
-        "firecrawl"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.",
-      "tags": [
-        "web-scraping",
-        "markdown-conversion"
-      ],
-      "alternatives": [
-        "[[Maxun]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Flink.md",
-      "nom": "Flink",
-      "alias": [
-        "flink",
-        "Apache Flink"
-      ],
-      "role": "brique",
-      "categorie": "data/streaming",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch.",
-      "tags": [
-        "streaming",
-        "distributed"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -6277,32 +7323,6 @@
       ],
       "alternatives": [
         "[[PyTorch Lightning]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Kestra.md",
-      "nom": "Kestra",
-      "alias": [
-        "kestra"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.",
-      "tags": [
-        "orchestration",
-        "data-pipeline",
-        "declarative-config"
-      ],
-      "alternatives": [
-        "[[Airflow]]",
-        "[[Dagster]]",
-        "[[Prefect]]",
-        "[[Mage]]",
-        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6737,32 +7757,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/LlamaParse.md",
-      "nom": "LlamaParse",
-      "alias": [
-        "llamaparse",
-        "llama-parse",
-        "LlamaCloud Parse"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.",
-      "tags": [
-        "document-parsing",
-        "rag",
-        "ocr"
-      ],
-      "alternatives": [
-        "[[Unstructured]]",
-        "[[Docling]]",
-        "[[Marker]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/MLflow.md",
       "nom": "MLflow",
       "alias": [
@@ -6789,85 +7783,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Mage.md",
-      "nom": "Mage",
-      "alias": [
-        "mage",
-        "Mage AI",
-        "mage-ai"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.",
-      "tags": [
-        "orchestration",
-        "data-pipeline",
-        "low-code"
-      ],
-      "alternatives": [
-        "[[Airflow]]",
-        "[[Dagster]]",
-        "[[Prefect]]",
-        "[[Kestra]]",
-        "[[Temporal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Marker.md",
-      "nom": "Marker",
-      "alias": [
-        "marker",
-        "marker-pdf",
-        "datalab-marker"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.",
-      "tags": [
-        "document-parsing",
-        "pdf",
-        "ocr",
-        "markdown-conversion",
-        "rag"
-      ],
-      "alternatives": [
-        "[[Unstructured]]",
-        "[[Docling]]",
-        "[[LlamaParse]]",
-        "[[pdf-inspector]]",
-        "[[OpenDataLoader PDF]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Maxun.md",
-      "nom": "Maxun",
-      "alias": [
-        "maxun"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.",
-      "tags": [
-        "web-scraping",
-        "low-code"
-      ],
-      "alternatives": [
-        "[[Firecrawl]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "Dev/Services/Metaflow.md",
       "nom": "Metaflow",
       "alias": [
@@ -6885,52 +7800,6 @@
       "alternatives": [
         "[[ZenML]]",
         "[[Flyte]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Mimesis.md",
-      "nom": "Mimesis",
-      "alias": [
-        "mimesis",
-        "lk-geimfari mimesis"
-      ],
-      "role": "brique",
-      "categorie": "data/synthetique",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.",
-      "tags": [
-        "synthetic-data",
-        "testing"
-      ],
-      "alternatives": [
-        "[[Faker]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Modin.md",
-      "nom": "Modin",
-      "alias": [
-        "modin"
-      ],
-      "role": "brique",
-      "categorie": "data/tableau",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.",
-      "tags": [
-        "dataframe",
-        "parallel",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[pandas]]",
-        "[[Polars]]",
-        "[[Dask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7179,37 +8048,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/OpenDataLoader PDF.md",
-      "nom": "OpenDataLoader PDF",
-      "alias": [
-        "opendataloader",
-        "opendataloader-pdf",
-        "open data loader pdf"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.",
-      "tags": [
-        "pdf",
-        "document-parsing",
-        "layout-analysis",
-        "table-extraction",
-        "markdown-conversion",
-        "rag",
-        "accessibility"
-      ],
-      "alternatives": [
-        "[[Docling]]",
-        "[[Unstructured]]",
-        "[[Marker]]",
-        "[[pdf-inspector]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/OpenHands.md",
       "nom": "OpenHands",
       "alias": [
@@ -7407,29 +8245,6 @@
       "maturite": "beta"
     },
     {
-      "path": "Dev/Services/Parquet.md",
-      "nom": "Parquet",
-      "alias": [
-        "parquet",
-        "Apache Parquet"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "domaines": null,
-      "pitch": "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.",
-      "tags": [
-        "file-format",
-        "columnar",
-        "olap"
-      ],
-      "alternatives": [
-        "[[Avro]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Phoenix Arize.md",
       "nom": "Phoenix Arize",
       "alias": [
@@ -7453,56 +8268,6 @@
         "[[Langfuse]]",
         "[[LangSmith]]",
         "[[Helicone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Playwright.md",
-      "nom": "Playwright",
-      "alias": [
-        "playwright",
-        "playwright-python"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[curl_cffi]]",
-        "[[cloudscraper]]",
-        "[[Crawlee]]",
-        "[[Scrapling]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Polars.md",
-      "nom": "Polars",
-      "alias": [
-        "polars",
-        "py-polars"
-      ],
-      "role": "brique",
-      "categorie": "data/tableau",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.",
-      "tags": [
-        "dataframe",
-        "columnar",
-        "lazy-evaluation",
-        "out-of-core"
-      ],
-      "alternatives": [
-        "[[pandas]]",
-        "[[Modin]]",
-        "[[Dask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7533,31 +8298,6 @@
         "[[AutoGen]]",
         "[[Agno]]",
         "[[smolagents]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Prefect.md",
-      "nom": "Prefect",
-      "alias": [
-        "prefect"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.",
-      "tags": [
-        "orchestration",
-        "data-pipeline"
-      ],
-      "alternatives": [
-        "[[Airflow]]",
-        "[[Dagster]]",
-        "[[Mage]]",
-        "[[Kestra]]",
-        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7604,30 +8344,6 @@
         "combinatorial-optimization"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyMuPDF.md",
-      "nom": "PyMuPDF",
-      "alias": [
-        "pymupdf",
-        "fitz",
-        "MuPDF"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.",
-      "tags": [
-        "pdf",
-        "document-parsing"
-      ],
-      "alternatives": [
-        "[[pdfplumber]]",
-        "[[pdf-inspector]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -7928,28 +8644,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/SDV.md",
-      "nom": "SDV",
-      "alias": [
-        "Synthetic Data Vault",
-        "sdv",
-        "sdv-dev"
-      ],
-      "role": "brique",
-      "categorie": "data/synthetique",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL).",
-      "tags": [
-        "synthetic-data",
-        "generative-model",
-        "gan"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/SGLang.md",
       "nom": "SGLang",
       "alias": [
@@ -8053,49 +8747,6 @@
         "[[Optuna]]",
         "[[hdbscan]]",
         "[[umap-learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Scrapling.md",
-      "nom": "Scrapling",
-      "alias": [
-        "scrapling"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[Scrapy]]",
-        "[[Crawlee]]",
-        "[[Playwright]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Scrapy.md",
-      "nom": "Scrapy",
-      "alias": [
-        "scrapy"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[Crawlee]]",
-        "[[Scrapling]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8280,33 +8931,6 @@
         "[[Axolotl]]",
         "[[LLaMA-Factory]]",
         "[[Tunix]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Temporal.md",
-      "nom": "Temporal",
-      "alias": [
-        "temporal",
-        "Temporal.io"
-      ],
-      "role": "brique",
-      "categorie": "data/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.",
-      "tags": [
-        "orchestration",
-        "durable-execution",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Airflow]]",
-        "[[Dagster]]",
-        "[[Prefect]]",
-        "[[Mage]]",
-        "[[Kestra]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8616,32 +9240,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Unstructured.md",
-      "nom": "Unstructured",
-      "alias": [
-        "unstructured",
-        "unstructured-io"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.",
-      "tags": [
-        "document-parsing",
-        "rag",
-        "ocr"
-      ],
-      "alternatives": [
-        "[[Docling]]",
-        "[[LlamaParse]]",
-        "[[Marker]]",
-        "[[OpenDataLoader PDF]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Vanna.md",
       "nom": "Vanna",
       "alias": [
@@ -8824,50 +9422,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/altair.md",
-      "nom": "altair",
-      "alias": [
-        "vega-altair",
-        "alt"
-      ],
-      "role": "brique",
-      "categorie": "data/viz",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.",
-      "tags": [
-        "dataviz",
-        "declarative-viz",
-        "interactive-viz"
-      ],
-      "alternatives": [
-        "[[plotly]]",
-        "[[bokeh]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/bokeh.md",
-      "nom": "bokeh",
-      "alias": [],
-      "role": "brique",
-      "categorie": "data/viz",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.",
-      "tags": [
-        "dataviz",
-        "interactive-viz"
-      ],
-      "alternatives": [
-        "[[plotly]]",
-        "[[altair]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/category_encoders.md",
       "nom": "category_encoders",
       "alias": [
@@ -8885,70 +9439,6 @@
       ],
       "alternatives": [
         "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/cloudscraper.md",
-      "nom": "cloudscraper",
-      "alias": [
-        "cloudscraper"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[curl_cffi]]",
-        "[[Playwright]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/connectorx.md",
-      "nom": "connectorx",
-      "alias": [
-        "connector-x",
-        "connectorx"
-      ],
-      "role": "brique",
-      "categorie": "data/ingestion",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.",
-      "tags": [
-        "dataframe",
-        "columnar"
-      ],
-      "alternatives": [
-        "[[ADBC]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/curl_cffi.md",
-      "nom": "curl_cffi",
-      "alias": [
-        "curl-cffi"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [
-        "[[cloudscraper]]",
-        "[[Playwright]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8997,31 +9487,6 @@
         "out-of-core",
         "streaming",
         "nlp",
-        "deep-learning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/docTR.md",
-      "nom": "docTR",
-      "alias": [
-        "doctr",
-        "python-doctr",
-        "Document Text Recognition",
-        "mindee docTR"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.",
-      "tags": [
-        "ocr",
-        "document-parsing",
-        "layout-analysis",
-        "computer-vision",
         "deep-learning"
       ],
       "alternatives": [],
@@ -9174,29 +9639,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/matplotlib.md",
-      "nom": "matplotlib",
-      "alias": [
-        "mpl",
-        "plt",
-        "pyplot"
-      ],
-      "role": "brique",
-      "categorie": "data/viz",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.",
-      "tags": [
-        "dataviz",
-        "static-viz"
-      ],
-      "alternatives": [
-        "[[seaborn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/mcpjam.md",
       "nom": "mcpjam",
       "alias": [
@@ -9217,47 +9659,6 @@
       "alternatives": [],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/minim.md",
-      "nom": "minim",
-      "alias": [
-        "minim"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé.",
-      "tags": [
-        "web-scraping"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/missingno.md",
-      "nom": "missingno",
-      "alias": [
-        "missing-no"
-      ],
-      "role": "brique",
-      "categorie": "data/eda",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.",
-      "tags": [
-        "missing-data",
-        "eda",
-        "static-viz"
-      ],
-      "alternatives": [
-        "[[ydata-profiling]]",
-        "[[sweetviz]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/needle.md",
@@ -9334,131 +9735,6 @@
       ],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/numpy.md",
-      "nom": "numpy",
-      "alias": [
-        "np",
-        "NumPy"
-      ],
-      "role": "brique",
-      "categorie": "data/tableau",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.",
-      "tags": [
-        "array",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[xarray]]",
-        "[[Dask]]",
-        "[[CuPy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/pandas.md",
-      "nom": "pandas",
-      "alias": [
-        "pd"
-      ],
-      "role": "brique",
-      "categorie": "data/tableau",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.",
-      "tags": [
-        "dataframe",
-        "in-memory"
-      ],
-      "alternatives": [
-        "[[Polars]]",
-        "[[Modin]]",
-        "[[Dask]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/pdf-inspector.md",
-      "nom": "pdf-inspector",
-      "alias": [
-        "firecrawl/pdf-inspector",
-        "pdf2md",
-        "detect-pdf"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.",
-      "tags": [
-        "pdf",
-        "document-parsing",
-        "ocr",
-        "markdown-conversion",
-        "layout-analysis"
-      ],
-      "alternatives": [
-        "[[PyMuPDF]]",
-        "[[pdfplumber]]",
-        "[[Docling]]",
-        "[[Marker]]",
-        "[[OpenDataLoader PDF]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/pdfplumber.md",
-      "nom": "pdfplumber",
-      "alias": [
-        "pdfplumber",
-        "jsvine-pdfplumber"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.",
-      "tags": [
-        "pdf",
-        "table-extraction",
-        "document-parsing"
-      ],
-      "alternatives": [
-        "[[PyMuPDF]]",
-        "[[pdf-inspector]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/plotly.md",
-      "nom": "plotly",
-      "alias": [
-        "plotly.py",
-        "px",
-        "plotly-express"
-      ],
-      "role": "brique",
-      "categorie": "data/viz",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.",
-      "tags": [
-        "dataviz",
-        "interactive-viz"
-      ],
-      "alternatives": [
-        "[[bokeh]]",
-        "[[altair]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/pmdarima.md",
@@ -9552,28 +9828,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/seaborn.md",
-      "nom": "seaborn",
-      "alias": [
-        "sns"
-      ],
-      "role": "brique",
-      "categorie": "data/viz",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.",
-      "tags": [
-        "dataviz",
-        "statistical-viz",
-        "static-viz"
-      ],
-      "alternatives": [
-        "[[matplotlib]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/segment-anything.md",
       "nom": "segment-anything",
       "alias": [
@@ -9598,25 +9852,6 @@
       "alternatives": [
         "[[Detectron2]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/selectolax.md",
-      "nom": "selectolax",
-      "alias": [
-        "selectolax"
-      ],
-      "role": "brique",
-      "categorie": "data/scraping",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Parseur HTML5 ultra-rapide en Python (binding C Lexbor/Modest) avec sélecteurs CSS — un ordre de grandeur plus rapide que BeautifulSoup pour extraire des données de gros volumes de pages.",
-      "tags": [
-        "web-scraping",
-        "document-parsing"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -9787,29 +10022,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/sweetviz.md",
-      "nom": "sweetviz",
-      "alias": [
-        "Sweetviz"
-      ],
-      "role": "brique",
-      "categorie": "data/eda",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).",
-      "tags": [
-        "eda",
-        "statistical-viz",
-        "dataframe"
-      ],
-      "alternatives": [
-        "[[ydata-profiling]]",
-        "[[missingno]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/text-generation-webui.md",
       "nom": "text-generation-webui",
       "alias": [
@@ -9947,52 +10159,6 @@
         "[[TGI]]",
         "[[SGLang]]",
         "[[TensorRT-LLM]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/xarray.md",
-      "nom": "xarray",
-      "alias": [
-        "xray",
-        "pydata-xarray"
-      ],
-      "role": "brique",
-      "categorie": "data/tableau",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).",
-      "tags": [
-        "array",
-        "out-of-core"
-      ],
-      "alternatives": [
-        "[[numpy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/ydata-profiling.md",
-      "nom": "ydata-profiling",
-      "alias": [
-        "pandas-profiling",
-        "ydata profiling"
-      ],
-      "role": "brique",
-      "categorie": "data/eda",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.",
-      "tags": [
-        "eda",
-        "data-quality",
-        "dataframe"
-      ],
-      "alternatives": [
-        "[[sweetviz]]",
-        "[[missingno]]"
       ],
       "complements": [],
       "maturite": "production"

@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "data/parsing"
+    - categorie == "data/orchestration"
 views:
   - type: table
-    name: Parsing de documents
+    name: Orchestrateurs data
     order:
       - file.name
       - pitch
@@ -19,15 +18,14 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Orientés RAG / conversion
+    name: Distribués
     filters:
       and:
-        - tags.contains("rag")
+        - scaling == "distributed"
     order:
       - file.name
       - pitch
-      - licence_type
-      - hosted
+      - langage
       - alternatives
     sort:
       - property: file.name

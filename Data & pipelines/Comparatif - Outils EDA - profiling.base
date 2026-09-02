@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `data/eda` existe desormais comme domaine (les profileurs quittent
     # `tooling/viz`). Memes 3 membres.
     - categorie == "data/eda"

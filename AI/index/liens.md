@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 667 pages actives.
+> 673 pages actives.
 
 ## Par page
 
@@ -48,7 +48,7 @@
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
 - liens sortants : [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Mage]], [[Postgres]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
+- liens entrants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
 
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
@@ -63,7 +63,7 @@
 ### altair  ·  brique
 - tags : `dataviz`, `declarative-viz`, `interactive-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[bokeh]], [[matplotlib]], [[pandas]], [[plotly]]
-- liens entrants : [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens entrants : [[Visualisation]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
 
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
@@ -78,7 +78,7 @@
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`
 - liens sortants : [[Avro]], [[Flink]], [[Parquet]], [[Postgres]]
-- liens entrants : [[Architecture médaillon]], [[Avro]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[Stockage]]
+- liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[Stockage]]
 
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
@@ -98,7 +98,7 @@
 ### Avro  ·  brique
 - tags : `file-format`, `serialization`, `schema-evolution`
 - liens sortants : [[Apache Iceberg]], [[Parquet]]
-- liens entrants : [[Apache Iceberg]], [[Parquet]]
+- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Parquet]]
 
 ### AWS S3  ·  brique
 - tags : `object-storage`
@@ -133,7 +133,7 @@
 ### bokeh  ·  brique
 - tags : `dataviz`, `interactive-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[altair]], [[matplotlib]], [[plotly]], [[seaborn]]
-- liens entrants : [[altair]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens entrants : [[Visualisation]], [[altair]], [[matplotlib]], [[plotly]], [[seaborn]]
 
 ### Bruno  ·  brique
 - tags : `api-client`, `version-control`
@@ -203,7 +203,7 @@
 ### cloudscraper  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Web scraping]], [[curl_cffi]]
-- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Web scraping]], [[curl_cffi]]
+- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Web scraping]], [[curl_cffi]]
 
 ### CockroachDB  ·  brique
 - tags : `relational`, `distributed`
@@ -218,7 +218,7 @@
 ### connectorx  ·  brique
 - tags : `dataframe`, `columnar`
 - liens sortants : [[ADBC]], [[Comparatif - Manipulation de données]], [[DuckDB]], [[Polars]], [[SQLAlchemy]], [[pandas]], [[psycopg2]]
-- liens entrants : [[ADBC]]
+- liens entrants : [[ADBC]], [[Data & pipelines]], [[DataFrames]]
 
 ### Continue  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`
@@ -228,7 +228,7 @@
 ### Crawlee  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
+- liens entrants : [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
 
 ### CrewAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -248,12 +248,12 @@
 ### curl_cffi  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Web scraping]], [[cloudscraper]], [[selectolax]]
-- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Web scraping]], [[cloudscraper]], [[selectolax]]
+- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Web scraping]], [[cloudscraper]], [[selectolax]]
 
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Airflow]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
+- liens entrants : [[Airflow]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
 
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
@@ -263,7 +263,7 @@
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[plotly]]
-- liens entrants : [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]]
 
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
@@ -323,12 +323,12 @@
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Chunking strategies]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[OCR]], [[PyTorch]], [[Segmentation]], [[Vision Language Models]]
-- liens entrants : [[OCR]]
+- liens entrants : [[OCR]], [[Parsing]]
 
 ### draw.io  ·  brique
 - tags : `diagram`
@@ -383,7 +383,7 @@
 ### Faker  ·  brique
 - tags : `synthetic-data`, `testing`
 - liens sortants : [[Mimesis]], [[SDV]], [[Synthetic data generation]], [[imbalanced-learn]]
-- liens entrants : [[Mimesis]], [[SDV]], [[Synthetic data generation]]
+- liens entrants : [[Data & pipelines]], [[Mimesis]], [[SDV]], [[Synthetic data generation]]
 
 ### Fanalysis  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -418,7 +418,7 @@
 ### Firecrawl  ·  brique
 - tags : `web-scraping`, `markdown-conversion`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Maxun]], [[Playwright]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Maxun]], [[Page to Markdown]], [[Web scraping]], [[minim]], [[pdf-inspector]]
+- liens entrants : [[Maxun]], [[Page to Markdown]], [[Scraping]], [[Web scraping]], [[minim]], [[pdf-inspector]]
 
 ### Flask  ·  brique
 - tags : `web-framework`
@@ -428,7 +428,7 @@
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
 - liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Stream processing]]
-- liens entrants : [[Apache Iceberg]], [[Stream processing]], [[Temporal]]
+- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Orchestration]], [[Stream processing]], [[Temporal]]
 
 ### Flowise  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
@@ -608,7 +608,7 @@
 ### Kestra  ·  brique
 - tags : `orchestration`, `data-pipeline`, `declarative-config`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Airflow]], [[Dagster]], [[Mage]], [[Prefect]], [[Temporal]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
 ### Kornia  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `deep-learning`, `gpu`, `autograd`
@@ -713,7 +713,7 @@
 ### LlamaParse  ·  brique
 - tags : `document-parsing`, `rag`, `ocr`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PyMuPDF]], [[Unstructured]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Docling]], [[LlamaIndex]], [[Marker]], [[Unstructured]]
+- liens entrants : [[Chunking strategies]], [[Docling]], [[LlamaIndex]], [[Marker]], [[Parsing]], [[Unstructured]]
 
 ### llmfit  ·  brique
 - tags : `local-llm`, `hardware-sizing`, `quantization`, `benchmark`, `terminal-ui`
@@ -738,7 +738,7 @@
 ### Mage  ·  brique
 - tags : `orchestration`, `data-pipeline`, `low-code`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Prefect]], [[Temporal]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
 ### Maka  ·  brique
 - tags : `audit-log`, `agents`, `tool-use`, `ai-security`, `code-assistant`
@@ -758,7 +758,7 @@
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
@@ -768,12 +768,12 @@
 ### matplotlib  ·  brique
 - tags : `dataviz`, `static-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[pandas]], [[plotly]], [[seaborn]]
-- liens entrants : [[altair]], [[bokeh]], [[plotly]], [[seaborn]]
+- liens entrants : [[Visualisation]], [[altair]], [[bokeh]], [[plotly]], [[seaborn]]
 
 ### Maxun  ·  brique
 - tags : `web-scraping`, `low-code`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Firecrawl]], [[Page to Markdown]], [[Web scraping]]
+- liens entrants : [[Firecrawl]], [[Page to Markdown]], [[Scraping]], [[Web scraping]]
 
 ### mcpjam  ·  brique
 - tags : `mcp`, `testing`, `tool-use`
@@ -803,12 +803,12 @@
 ### Mimesis  ·  brique
 - tags : `synthetic-data`, `testing`
 - liens sortants : [[Faker]], [[SDV]], [[Synthetic data generation]], [[imbalanced-learn]]
-- liens entrants : [[Faker]], [[SDV]], [[Synthetic data generation]]
+- liens entrants : [[Data & pipelines]], [[Faker]], [[SDV]], [[Synthetic data generation]]
 
 ### minim  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Firecrawl]], [[Scrapy]]
-- liens entrants : —
+- liens entrants : [[Scraping]]
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -818,7 +818,7 @@
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
 - liens sortants : [[Comparatif - Outils EDA - profiling]], [[Imputation des valeurs manquantes]], [[Mécanismes de données manquantes]], [[Notebooks-as-code]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[EDA automatisée & profiling]], [[Mécanismes de données manquantes]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Data & pipelines]], [[EDA automatisée & profiling]], [[Mécanismes de données manquantes]], [[sweetviz]], [[ydata-profiling]]
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -833,7 +833,7 @@
 ### Modin  ·  brique
 - tags : `dataframe`, `parallel`, `distributed`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Polars]], [[pandas]]
-- liens entrants : [[Dask]], [[Polars]], [[Ray]], [[pandas]]
+- liens entrants : [[Dask]], [[DataFrames]], [[Polars]], [[Ray]], [[pandas]]
 
 ### MongoDB  ·  brique
 - tags : `nosql`, `document-db`
@@ -898,7 +898,7 @@
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
 - liens sortants : [[CuPy]], [[Dask]], [[JAX]], [[Polars]], [[PyTorch]], [[pandas]], [[xarray]]
-- liens entrants : [[CuPy]], [[Dask]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Polars]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
+- liens entrants : [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Polars]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
 
 ### NVIDIA Triton  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
@@ -948,7 +948,7 @@
 ### OpenDataLoader PDF  ·  brique
 - tags : `pdf`, `document-parsing`, `layout-analysis`, `table-extraction`, `markdown-conversion`, `rag`, `accessibility`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[PyMuPDF]], [[RAG]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[Marker]], [[OCR]], [[Page to Markdown]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]]
+- liens entrants : [[Docling]], [[Marker]], [[OCR]], [[Page to Markdown]], [[Parsing]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]]
 
 ### OpenHands  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `code-generation`
@@ -1003,7 +1003,7 @@
 ### pandas  ·  brique
 - tags : `dataframe`, `in-memory`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Modin]], [[Polars]], [[numpy]]
-- liens entrants : [[Dask]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[seaborn]], [[xarray]]
+- liens entrants : [[Dask]], [[Data & pipelines]], [[DataFrames]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[seaborn]], [[xarray]]
 
 ### papermill  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1013,17 +1013,17 @@
 ### Parquet  ·  brique
 - tags : `file-format`, `columnar`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Avro]], [[Polars]], [[Postgres]]
-- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Partitionnement & layout de données]], [[Spark]]
+- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Partitionnement & layout de données]], [[Spark]]
 
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[pdfplumber]]
+- liens entrants : [[Docling]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
 
 ### pdfplumber  ·  brique
 - tags : `pdf`, `table-extraction`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
-- liens entrants : [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens entrants : [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
 
 ### Penpot  ·  brique
 - tags : `design-tool`
@@ -1068,12 +1068,12 @@
 ### Playwright  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Scrapling]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Firecrawl]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Crawlee]], [[Firecrawl]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
 
 ### plotly  ·  brique
 - tags : `dataviz`, `interactive-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[seaborn]]
-- liens entrants : [[Dash]], [[Streamlit]], [[altair]], [[bokeh]], [[matplotlib]], [[seaborn]]
+- liens entrants : [[Dash]], [[Streamlit]], [[Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[seaborn]]
 
 ### pmdarima  ·  brique
 - tags : `forecasting`, `timeseries`
@@ -1083,7 +1083,7 @@
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Modin]], [[numpy]], [[pandas]]
-- liens entrants : [[ADBC]], [[Calcul distribué]], [[Dask]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[ADBC]], [[Calcul distribué]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[numpy]], [[pandas]], [[xarray]]
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
@@ -1103,7 +1103,7 @@
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Dask]], [[Kestra]], [[Mage]], [[Temporal]]
-- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Mage]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Temporal]], [[Windmill]], [[n8n]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Temporal]], [[Windmill]], [[n8n]]
 
 ### Prince  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -1173,7 +1173,7 @@
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
@@ -1313,22 +1313,22 @@
 ### Scrapling  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Playwright]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Crawlee]], [[Playwright]], [[Scrapy]], [[Web scraping]]
+- liens entrants : [[Crawlee]], [[Playwright]], [[Scraping]], [[Scrapy]], [[Web scraping]]
 
 ### Scrapy  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Playwright]], [[Scrapling]], [[Web scraping]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Scrapling]], [[Web scraping]], [[minim]]
+- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Scraping]], [[Scrapling]], [[Web scraping]], [[minim]]
 
 ### SDV  ·  brique
 - tags : `synthetic-data`, `generative-model`, `gan`
 - liens sortants : [[Faker]], [[Mimesis]], [[Synthetic data generation]], [[imbalanced-learn]]
-- liens entrants : [[Faker]], [[Mimesis]], [[Synthetic data generation]]
+- liens entrants : [[Data & pipelines]], [[Faker]], [[Mimesis]], [[Synthetic data generation]]
 
 ### seaborn  ·  brique
 - tags : `dataviz`, `statistical-viz`, `static-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[pandas]], [[plotly]]
-- liens entrants : [[bokeh]], [[matplotlib]], [[plotly]]
+- liens entrants : [[Visualisation]], [[bokeh]], [[matplotlib]], [[plotly]]
 
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -1348,7 +1348,7 @@
 ### selectolax  ·  brique
 - tags : `web-scraping`, `document-parsing`
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Web scraping]], [[curl_cffi]]
-- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scrapy]], [[Web scraping]], [[curl_cffi]]
+- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapy]], [[Web scraping]], [[curl_cffi]]
 
 ### Semantic Kernel  ·  brique
 - tags : `llm`, `agents`, `tool-use`
@@ -1488,7 +1488,7 @@
 ### sweetviz  ·  brique
 - tags : `eda`, `statistical-viz`, `dataframe`
 - liens sortants : [[Comparatif - Outils EDA - profiling]], [[EDA automatisée & profiling]], [[Notebooks-as-code]], [[missingno]], [[ydata-profiling]]
-- liens entrants : [[EDA automatisée & profiling]], [[missingno]], [[ydata-profiling]]
+- liens entrants : [[Data & pipelines]], [[EDA automatisée & profiling]], [[missingno]], [[ydata-profiling]]
 
 ### t3code  ·  brique
 - tags : `code-assistant`, `agents`, `code-generation`
@@ -1498,7 +1498,7 @@
 ### Temporal  ·  brique
 - tags : `orchestration`, `durable-execution`, `distributed`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Mage]], [[Postgres]], [[Prefect]]
-- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Mage]], [[Prefect]], [[Windmill]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Windmill]]
 
 ### TensorBoard  ·  brique
 - tags : `experiment-tracking`, `deep-learning`, `dataviz`
@@ -1613,7 +1613,7 @@
 ### Unstructured  ·  brique
 - tags : `document-parsing`, `rag`, `ocr`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Docling]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Stirling PDF]], [[pdfplumber]]
+- liens entrants : [[Chunking strategies]], [[Docling]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[pdfplumber]]
 
 ### uv  ·  brique
 - tags : `package-manager`
@@ -1668,7 +1668,7 @@
 ### xarray  ·  brique
 - tags : `array`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Polars]], [[numpy]], [[pandas]]
-- liens entrants : [[numpy]]
+- liens entrants : [[DataFrames]], [[numpy]]
 
 ### XGBoost  ·  brique
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`, `distributed`
@@ -1678,7 +1678,7 @@
 ### ydata-profiling  ·  brique
 - tags : `eda`, `data-quality`, `dataframe`
 - liens sortants : [[Comparatif - Outils EDA - profiling]], [[Data leakage]], [[EDA automatisée & profiling]], [[Notebooks-as-code]], [[missingno]], [[sweetviz]]
-- liens entrants : [[EDA automatisée & profiling]], [[Types de données et choix de modèle]], [[missingno]], [[sweetviz]]
+- liens entrants : [[Data & pipelines]], [[EDA automatisée & profiling]], [[Types de données et choix de modèle]], [[missingno]], [[sweetviz]]
 
 ### Zapier  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
@@ -1710,6 +1710,16 @@
 - liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
 - liens entrants : —
 
+### Data & pipelines  ·  hub
+- tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Faker]], [[Flink]], [[Mimesis]], [[Orchestration]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : —
+
+### DataFrames  ·  hub
+- tags : `dataframe`, `array`, `lazy-evaluation`, `out-of-core`
+- liens sortants : [[Comparatif - Manipulation de données]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[Data & pipelines]]
+
 ### Design & diagrammes  ·  hub
 - tags : `design-tool`, `diagram`, `whiteboard`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Diagrammes]], [[Figma]], [[Mermaid]], [[Penpot]]
@@ -1733,7 +1743,7 @@
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Web & API]]
-- liens entrants : [[Web & API]]
+- liens entrants : [[Visualisation]], [[Web & API]]
 
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
@@ -1750,10 +1760,20 @@
 - liens sortants : [[Beszel]], [[Grafana]], [[Loki]]
 - liens entrants : —
 
+### Orchestration  ·  hub
+- tags : `orchestration`, `data-pipeline`, `durable-execution`, `idempotence`
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
+- liens entrants : [[Data & pipelines]]
+
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 - liens entrants : [[DevOps]]
+
+### Parsing  ·  hub
+- tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Data & pipelines]]
 
 ### Recherche  ·  hub
 - tags : —
@@ -1769,6 +1789,11 @@
 - tags : `networking`, `traffic-analysis`, `file-transfer`
 - liens sortants : [[Sniffnet]], [[Stockage]], [[Web-Check]], [[croc]]
 - liens entrants : —
+
+### Scraping  ·  hub
+- tags : `web-scraping`, `data-pipeline`
+- liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
+- liens entrants : [[Data & pipelines]]
 
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
@@ -1794,6 +1819,11 @@
 - tags : —
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 - liens entrants : [[Bases de données]], [[Recherche]]
+
+### Visualisation  ·  hub
+- tags : `dataviz`, `static-viz`, `interactive-viz`, `statistical-viz`
+- liens sortants : [[Comparatif - Visualisation]], [[Dash]], [[Interfaces & apps data]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens entrants : [[Data & pipelines]]
 
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
@@ -1908,7 +1938,7 @@
 ### Architecture médaillon  ·  notion
 - tags : `data-modeling`, `data-pipeline`, `lakehouse`, `data-quality`
 - liens sortants : [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Partitionnement & layout de données]], [[Versionnage de données]]
-- liens entrants : [[Partitionnement & layout de données]]
+- liens entrants : [[Data & pipelines]], [[Partitionnement & layout de données]]
 
 ### Architectures CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -2018,7 +2048,7 @@
 ### Chunking strategies  ·  notion
 - tags : `rag`, `chunking`, `retrieval`
 - liens sortants : [[Advanced RAG]], [[Docling]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[LlamaParse]], [[RAG]], [[Reranking]], [[Unstructured]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Haystack]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[RAG]], [[Reranking]], [[pdf-inspector]]
+- liens entrants : [[Advanced RAG]], [[Haystack]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[Reranking]], [[pdf-inspector]]
 
 ### Classification  ·  notion
 - tags : `classification`, `supervised`
@@ -2098,7 +2128,7 @@
 ### Contrats de données & qualité  ·  notion
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Dagster]], [[Data drift]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
 
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
@@ -2183,7 +2213,7 @@
 ### EDA automatisée & profiling  ·  notion
 - tags : `eda`, `feature-engineering`, `missing-data`
 - liens sortants : [[Data leakage]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Encodage des variables catégorielles]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Mécanismes de données manquantes]], [[Web scraping]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Contrats de données & qualité]], [[Fuzzy matching & similarité de chaînes]], [[Types de données et choix de modèle]], [[Web scraping]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Contrats de données & qualité]], [[Data & pipelines]], [[Fuzzy matching & similarité de chaînes]], [[Types de données et choix de modèle]], [[Web scraping]], [[sweetviz]], [[ydata-profiling]]
 
 ### Eigendecomposition  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`
@@ -2193,7 +2223,7 @@
 ### ELT vs ETL & idempotence  ·  notion
 - tags : `data-pipeline`, `idempotence`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[Migrations de schéma]], [[Versionnage de données]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Notebooks-as-code]], [[Partitionnement & layout de données]], [[Stream processing]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[Stream processing]], [[Versionnage de données]]
 
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
@@ -2728,7 +2758,7 @@
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[Métriques vision]], [[OpenDataLoader PDF]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
-- liens entrants : [[Détection d'objets]], [[OpenDataLoader PDF]], [[Stirling PDF]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
+- liens entrants : [[Détection d'objets]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
 
 ### Offline RL  ·  notion
 - tags : `reinforcement-learning`, `offline-rl`, `value-function`
@@ -2778,7 +2808,7 @@
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]]
-- liens entrants : [[Architecture médaillon]], [[Stream processing]]
+- liens entrants : [[Architecture médaillon]], [[Data & pipelines]], [[Stream processing]]
 
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -3088,7 +3118,7 @@
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
 - liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Partitionnement & layout de données]]
-- liens entrants : [[Flink]], [[Partitionnement & layout de données]]
+- liens entrants : [[Data & pipelines]], [[Flink]], [[Partitionnement & layout de données]]
 
 ### Structured outputs  ·  notion
 - tags : `structured-output`, `llm`, `tool-use`, `data-validation`
@@ -3118,7 +3148,7 @@
 ### Synthetic data generation  ·  notion
 - tags : `synthetic-data`, `fine-tuning`, `llm`
 - liens sortants : [[Faker]], [[LLM-as-judge]], [[Mimesis]], [[RLHF and DPO]], [[Reasoning models]], [[Reward modeling]], [[SDV]], [[SFT]]
-- liens entrants : [[Distillation]], [[Faker]], [[Mimesis]], [[SDV]], [[SFT]]
+- liens entrants : [[Data & pipelines]], [[Distillation]], [[Faker]], [[Mimesis]], [[SDV]], [[SFT]]
 
 ### Systèmes de recommandation  ·  notion
 - tags : `recommender-systems`, `ranking`, `embeddings`, `retrieval`
@@ -3288,7 +3318,7 @@
 ### Web scraping  ·  notion
 - tags : `web-scraping`, `data-pipeline`
 - liens sortants : [[Bases de données]], [[Comparatif - Scraping]], [[Crawlee]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Documents]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Crawlee]], [[Documents]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
 
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
@@ -3352,7 +3382,7 @@
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Time series anomaly detection
 - `api-client` : Bruno, Outils de développement, Postman, Web & API  — pas de page concept dédiée
-- `array` : CuPy, JAX, numpy, xarray  — pas de page concept dédiée
+- `array` : CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme, Signal & audio
 - `audit-log` : Maka  — pas de page concept dédiée
@@ -3397,12 +3427,12 @@
 - `data-drift` : Data drift, Evidently, Monitoring de modèle en production
 - `data-leakage` : Data leakage
 - `data-modeling` : Architecture médaillon  — pas de page concept dédiée
-- `data-pipeline` : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, ELT vs ETL & idempotence, Kestra, Mage, Pattern - Pipeline scraping → matching → optimisation, Prefect, Stream processing, Web scraping  — pas de page concept dédiée
+- `data-pipeline` : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, Data & pipelines, ELT vs ETL & idempotence, Kestra, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping  — pas de page concept dédiée
 - `data-quality` : Architecture médaillon, Contrats de données & qualité, ydata-profiling
 - `data-validation` : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs  — pas de page concept dédiée
 - `data-versioning` : Versionnage de données
-- `dataframe` : Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling  — pas de page concept dédiée
-- `dataviz` : Grafana, TensorBoard, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
+- `dataframe` : Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling  — pas de page concept dédiée
+- `dataviz` : Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
 - `db-client` : DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin  — pas de page concept dédiée
 - `db-driver` : ADBC, psycopg2  — pas de page concept dédiée
 - `declarative-config` : Axolotl, Kestra, LLaMA-Factory  — pas de page concept dédiée
@@ -3420,8 +3450,8 @@
 - `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Docling, LlamaParse, Marker, OpenDataLoader PDF, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
-- `durable-execution` : Temporal  — pas de page concept dédiée
+- `document-parsing` : Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
+- `durable-execution` : Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
 - `education` : OpenMAIC  — pas de page concept dédiée
@@ -3460,7 +3490,7 @@
 - `hypermedia` : HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Hyperopt, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
-- `idempotence` : ELT vs ETL & idempotence, Stream processing
+- `idempotence` : ELT vs ETL & idempotence, Orchestration, Stream processing
 - `image-classification` : Classification d'images
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Imitation learning
@@ -3469,7 +3499,7 @@
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
-- `interactive-viz` : Interfaces & apps data, altair, bokeh, plotly  — pas de page concept dédiée
+- `interactive-viz` : Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
 - `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
@@ -3478,7 +3508,7 @@
 - `kubernetes` : Flyte, KServe, Seldon Core  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Partitionnement & layout de données  — pas de page concept dédiée
 - `layout-analysis` : Docling, OpenDataLoader PDF, docTR, pdf-inspector  — pas de page concept dédiée
-- `lazy-evaluation` : Dask, Polars  — pas de page concept dédiée
+- `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension  — pas de page concept dédiée
 - `linear-algebra` : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
@@ -3495,7 +3525,7 @@
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
-- `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector  — pas de page concept dédiée
+- `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector  — pas de page concept dédiée
 - `markov` : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
@@ -3539,15 +3569,15 @@
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, supervision
 - `observability` : Beszel, Grafana, Loki, Observabilité  — pas de page concept dédiée
-- `ocr` : Documents, LlamaParse, Marker, OCR, Stirling PDF, Unstructured, docTR, pdf-inspector
+- `ocr` : Documents, LlamaParse, Marker, OCR, Parsing, Stirling PDF, Unstructured, docTR, pdf-inspector
 - `offline-rl` : Offline RL
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Wasserstein distance
 - `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
-- `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
+- `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
-- `out-of-core` : Calcul distribué, Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
+- `out-of-core` : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning
 - `package-manager` : Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
@@ -3555,7 +3585,7 @@
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `pdf` : Documents, Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber  — pas de page concept dédiée
+- `pdf` : Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
 - `point-estimation` : Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
@@ -3617,10 +3647,10 @@
 - `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
-- `static-viz` : matplotlib, missingno, seaborn  — pas de page concept dédiée
+- `static-viz` : Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
 - `statistical-inference` : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
 - `statistical-power` : Analyse de puissance, pingouin
-- `statistical-viz` : seaborn, sweetviz  — pas de page concept dédiée
+- `statistical-viz` : Visualisation, seaborn, sweetviz  — pas de page concept dédiée
 - `stochastic-process` : Autocorrelation, Chaînes de Markov, Mouvement brownien, Processus de Poisson, Stationarity  — pas de page concept dédiée
 - `streaming` : Change Data Capture (CDC), Flink, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
 - `string-matching` : Fuzzy matching & similarité de chaînes, Pattern - Pipeline scraping → matching → optimisation
@@ -3658,7 +3688,7 @@
 - `vit` : Vision Transformers (ViT), timm
 - `wavelet` : Ondelettes, PyWavelets, Signal & audio  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
-- `web-scraping` : Crawlee, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
+- `web-scraping` : Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
 
@@ -3672,7 +3702,7 @@
 - `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Archify, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Outils de développement, Postman, Web & API)
-- `array` (porté par : CuPy, JAX, numpy, xarray)
+- `array` (porté par : CuPy, DataFrames, JAX, numpy, xarray)
 - `attention` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
 - `authentication` (porté par : PyJWT, Sécurité)
@@ -3695,10 +3725,10 @@
 - `dashboard` (porté par : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
 - `data-app` (porté par : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-modeling` (porté par : Architecture médaillon)
-- `data-pipeline` (porté par : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, ELT vs ETL & idempotence, Kestra, Mage, Pattern - Pipeline scraping → matching → optimisation, Prefect, Stream processing, Web scraping)
+- `data-pipeline` (porté par : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, Data & pipelines, ELT vs ETL & idempotence, Kestra, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping)
 - `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs)
-- `dataframe` (porté par : Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling)
-- `dataviz` (porté par : Grafana, TensorBoard, altair, bokeh, matplotlib, plotly, seaborn)
+- `dataframe` (porté par : Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling)
+- `dataviz` (porté par : Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn)
 - `db-client` (porté par : DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin)
 - `db-driver` (porté par : ADBC, psycopg2)
 - `declarative-config` (porté par : Axolotl, Kestra, LLaMA-Factory)
@@ -3711,8 +3741,8 @@
 - `diagram-as-code` (porté par : Archify, Diagrammes, Mermaid)
 - `distributed` (porté par : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Docling, LlamaParse, Marker, OpenDataLoader PDF, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
-- `durable-execution` (porté par : Temporal)
+- `document-parsing` (porté par : Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
+- `durable-execution` (porté par : Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
 - `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, pingouin)
@@ -3737,14 +3767,14 @@
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance)
-- `interactive-viz` (porté par : Interfaces & apps data, altair, bokeh, plotly)
+- `interactive-viz` (porté par : Interfaces & apps data, Visualisation, altair, bokeh, plotly)
 - `isometric` (porté par : Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop)
 - `kubernetes` (porté par : Flyte, KServe, Seldon Core)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Partitionnement & layout de données)
 - `layout-analysis` (porté par : Docling, OpenDataLoader PDF, docTR, pdf-inspector)
-- `lazy-evaluation` (porté par : Dask, Polars)
+- `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization)
 - `learning-theory` (porté par : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension)
 - `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
@@ -3757,7 +3787,7 @@
 - `logging` (porté par : Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
-- `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector)
+- `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector)
 - `markov` (porté par : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan)
 - `matrix-decomposition` (porté par : Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
@@ -3784,15 +3814,15 @@
 - `observability` (porté par : Beszel, Grafana, Loki, Observabilité)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
-- `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
+- `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
-- `out-of-core` (porté par : Calcul distribué, Dask, Polars, Spark, datasets, xarray)
+- `out-of-core` (porté par : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
-- `pdf` (porté par : Documents, Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
+- `pdf` (porté par : Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
@@ -3827,9 +3857,9 @@
 - `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
-- `static-viz` (porté par : matplotlib, missingno, seaborn)
+- `static-viz` (porté par : Visualisation, matplotlib, missingno, seaborn)
 - `statistical-inference` (porté par : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests d'hypothèse, statsmodels)
-- `statistical-viz` (porté par : seaborn, sweetviz)
+- `statistical-viz` (porté par : Visualisation, seaborn, sweetviz)
 - `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Mouvement brownien, Processus de Poisson, Stationarity)
 - `streaming` (porté par : Change Data Capture (CDC), Flink, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Constrained decoding, Guidance, Instructor, Outlines, PydanticAI, Structured outputs, needle, tool-use)

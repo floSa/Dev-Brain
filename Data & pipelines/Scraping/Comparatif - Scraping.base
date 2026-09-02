@@ -1,13 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    # `tooling/data` a eclate en 4 domaines. Ce comparatif garde les DataFrames et
-    # tableaux N-dimensionnels. En sortent : `data/synthetique` (Faker, Mimesis),
-    # `signal/traitement` (PyWavelets, scipy.signal), `data/ingestion` (connectorx).
-    - categorie == "data/tableau"
+    - categorie == "data/scraping"
 views:
   - type: table
-    name: Manipulation de données
+    name: Scraping
     order:
       - file.name
       - pitch
@@ -21,10 +17,10 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: DataFrames
+    name: Parsing HTML
     filters:
       and:
-        - file.hasTag("dataframe")
+        - file.hasTag("document-parsing")
     order:
       - file.name
       - pitch

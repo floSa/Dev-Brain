@@ -1,10 +1,11 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "data/scraping"
+    # `tooling/viz` a eclate : les bibliotheques de trace (`data/viz`) et les
+    # profileurs EDA (`data/eda`, couverts par « Comparatif - Outils EDA - profiling »).
+    - categorie == "data/viz"
 views:
   - type: table
-    name: Scraping
+    name: Visualisation
     order:
       - file.name
       - pitch
@@ -18,15 +19,14 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Parsing HTML
+    name: Interactif
     filters:
       and:
-        - file.hasTag("document-parsing")
+        - file.hasTag("interactive-viz")
     order:
       - file.name
       - pitch
       - langage
-      - scaling
       - alternatives
     sort:
       - property: file.name

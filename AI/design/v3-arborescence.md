@@ -739,9 +739,18 @@ SecondBrain/
 - [ ] `[n]` Tests non paramétriques
 - [ ] `[n]` Théorème central limite
 
-### Data & pipelines  ·  46 pages
+### Data & pipelines  ·  46 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine (issu de `MOC/Categories/` par `git mv`, corps réécrit
+  au gabarit §9) et les 5 sous-hubs `Scraping`, `Parsing`, `Orchestration`, `DataFrames`,
+  `Visualisation`
+- [x] sous-dossiers créés — les 5 ci-dessus (35 pages) plus 11 pages au niveau du
+  domaine et 6 comparatifs. `data/eda` (3), `data/format` (3), `data/synthetique` (3),
+  `data/streaming` (1) et `data/ingestion` (1) restent sous le seuil
+- [x] notions recatégorisées — sans objet au lot 3 : les 13 notions `concept/data`
+  relèvent du lot 4, et aucune n'est propre à ce domaine (elles couvrent aussi
+  « Bases de données »)
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Scraping/** — `data/scraping` — 10 pages
 

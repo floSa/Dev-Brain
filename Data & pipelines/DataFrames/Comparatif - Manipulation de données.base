@@ -1,17 +1,18 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "data/orchestration"
+    # `tooling/data` a eclate en 4 domaines. Ce comparatif garde les DataFrames et
+    # tableaux N-dimensionnels. En sortent : `data/synthetique` (Faker, Mimesis),
+    # `signal/traitement` (PyWavelets, scipy.signal), `data/ingestion` (connectorx).
+    - categorie == "data/tableau"
 views:
   - type: table
-    name: Orchestrateurs data
+    name: Manipulation de données
     order:
       - file.name
       - pitch
       - langage
       - licence_type
       - maturite
-      - hosted
       - scaling
       - tags
       - alternatives
@@ -19,14 +20,15 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Distribués
+    name: DataFrames
     filters:
       and:
-        - scaling == "distributed"
+        - file.hasTag("dataframe")
     order:
       - file.name
       - pitch
       - langage
+      - scaling
       - alternatives
     sort:
       - property: file.name

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 667 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 673 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -879,6 +879,8 @@
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
+- **Data & pipelines** — Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
+- **DataFrames** — Charger, filtrer, joindre et agréger de la donnée tabulaire en mémoire — le geste le plus fréquent de tout le domaine.
 - **Design & diagrammes** — Dessiner — une interface qu'on prototype, ou un système qu'on explique.
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
@@ -887,13 +889,17 @@
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
+- **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
+- **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
+- **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.
 - **Signal & audio** — Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.
 - **Statistiques & inférence** — Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
+- **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.

@@ -73,6 +73,12 @@ SUB_LABEL = {
     "database/admin": "Administration",
     "database/recherche": "Recherche",
     "database/relationnel": "Relationnel",
+    # Data & pipelines — « ### Data & pipelines · 46 pages »
+    "data/scraping": "Scraping",
+    "data/parsing": "Parsing",
+    "data/orchestration": "Orchestration",
+    "data/tableau": "DataFrames",
+    "data/viz": "Visualisation",
     # Outils de développement — « ### Outils de développement · 19 pages »
     "devtools/notebook": "Notebooks",
     # Design & diagrammes — « ### Design & diagrammes · 7 pages »
