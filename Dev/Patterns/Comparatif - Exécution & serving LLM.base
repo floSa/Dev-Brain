@@ -13,7 +13,6 @@ views:
       - scaling
       - langage
       - maturite
-      - status
       - tags
     sort:
       - property: file.name
@@ -28,7 +27,6 @@ views:
       - pitch
       - langage
       - hosted
-      - status
     sort:
       - property: file.name
         direction: asc
@@ -42,7 +40,6 @@ views:
       - pitch
       - langage
       - hosted
-      - status
     sort:
       - property: file.name
         direction: asc

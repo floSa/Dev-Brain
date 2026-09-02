@@ -48,7 +48,8 @@ UA = {"User-Agent": "devbrain-verifier-fraicheur"}
 
 GH_SLUG = re.compile(r"^https?://github\.com/([^/\s]+)/([^/\s?#]+?)(?:\.git)?/?$")
 # C2 : sections qui parlent du sujet lui-même (« Installation & plateformes » est
-# l'équivalent de « Déploiement & coût » pour les fiches type: outil).
+# l'équivalent de « Déploiement & coût » pour les ex-fiches `outil`, fondues dans
+# `role: brique` au lot 2 ; le lot 6 fusionnera les deux en « Mise en œuvre »).
 SECTIONS = {"## Pourquoi", "## Déploiement & coût", "## Installation & plateformes",
             "## Pièges"}
 DECLIN = re.compile(r"dormant|déclin(?:e|ant)?\b|(?:plus|non) maintenu|"
@@ -64,9 +65,19 @@ SPDX_FERMEES = {"SSPL-1.0", "BUSL-1.1", "BUSL-1.0", "Elastic-2.0", "FSL-1.1-ALv2
                 "FSL-1.1-MIT", "CC-BY-NC-4.0", "CC-BY-NC-SA-4.0", "Commons-Clause"}
 # Tri de la sortie humaine : du plus grave au plus mineur.
 GRAVITE = ["depot_disparu", "url_morte", "version_perimee", "depot_transfere",
-           "corps_declin_vs_status_actif", "depot_archive", "push_ancien",
-           "status_maturite_incoherents", "abandonne_sans_remplacement",
+           "corps_declin_vs_maturite_vive", "depot_archive", "push_ancien",
+           "deprecie_sans_alternative",
            "licence_divergente", "url_domaine_change"]
+# Le lot 2 de la migration v3 a supprimé `status:` et `remplace_par:`. Les cinq règles
+# qui les lisaient sont reportées sur les deux champs qui survivent :
+#   status != actif                  -> maturite == deprecated   (le seul champ qui dit
+#                                       encore qu'une brique est morte)
+#   status_maturite_incoherents      -> supprimée : elle croisait deux champs dont l'un
+#                                       n'existe plus, il ne reste rien à croiser
+#   abandonne_sans_remplacement      -> deprecie_sans_alternative : `alternatives:` a
+#                                       absorbé `remplace_par:` (les 7 cibles des 4 fiches
+#                                       qui le portaient y étaient déjà)
+MATURITE_MORTE = "deprecated"
 
 
 def parse(texte: str) -> tuple[dict | None, str]:
@@ -84,11 +95,11 @@ def parse(texte: str) -> tuple[dict | None, str]:
 
 
 def fiches() -> list[tuple[str, dict, str]]:
-    """Les fiches Dev/ où type ∈ {service, outil}, triées par chemin (annexe C §1)."""
+    """Les fiches Dev/ de `role: brique`, triées par chemin (annexe C §1)."""
     out = []
     for p in sorted((VAULT / "Dev").rglob("*.md"), key=lambda q: q.as_posix()):
         fm, corps = parse(p.read_text(encoding="utf-8"))
-        if fm and fm.get("type") in ("service", "outil"):
+        if fm and fm.get("role") == "brique":
             out.append((p.relative_to(VAULT).as_posix(), fm, corps))
     return out
 
@@ -120,21 +131,14 @@ def majeure_affirmee(nom: str, corps: str) -> tuple[bool, int | None]:
 
 def hors_ligne(fm: dict, corps: str) -> list[tuple[str, str, str, str]]:
     """Règles sans réseau (C2, C5, C4). Tuple : code, valeur brain, constaté, jeton."""
-    sig, status, mat = [], fm.get("status"), fm.get("maturite")
-    if mat == "deprecated" and status not in ("abandonne", "dormant"):
-        sig.append(("status_maturite_incoherents", f"status={status}",
-                    "maturite=deprecated", f"status={status}"))
-    elif status == "abandonne" and mat is not None and mat != "deprecated":
-        sig.append(("status_maturite_incoherents", f"maturite={mat}",
-                    "status=abandonne", f"maturite={mat}"))
-    if status and status != "actif" and not fm.get("remplace_par"):
-        etat = "remplace_par=[]" if "remplace_par" in fm else "remplace_par absent"
-        sig.append(("abandonne_sans_remplacement", f"status={status}", etat,
-                    f"status={status}"))
-    if status == "actif":
+    sig, mat = [], fm.get("maturite")
+    if mat == MATURITE_MORTE and not fm.get("alternatives"):
+        etat = "alternatives=[]" if "alternatives" in fm else "alternatives absent"
+        sig.append(("deprecie_sans_alternative", f"maturite={mat}", etat, f"maturite={mat}"))
+    if mat is not None and mat != MATURITE_MORTE:
         for ligne in lignes_sujet(corps):
             if DECLIN.search(ligne):
-                sig.append(("corps_declin_vs_status_actif", "status: actif",
+                sig.append(("corps_declin_vs_maturite_vive", f"maturite: {mat}",
                             ligne[:90], ""))
                 break
     return sig
@@ -212,20 +216,20 @@ def sonder(fm: dict, corps: str, token: str | None) -> dict:
 
 def en_ligne(fm: dict, rec: dict, seuil: int) -> list[tuple[str, str, str, str]]:
     """Règles dérivées des faits sondés — recalculées à chaque passe depuis fraicheur.json."""
-    sig, status = [], fm.get("status")
+    sig, mat = [], fm.get("maturite")
     if rec.get("http_api") == 404:
         sig.append(("depot_disparu", rec.get("repo", ""), "HTTP 404 sur l'API", "404"))
     plein = rec.get("full_name")
     if plein and rec.get("repo") and plein.lower() != rec["repo"].lower():
         sig.append(("depot_transfere", rec["repo"], plein, plein))
-    if rec.get("archived") and status != "abandonne":
-        sig.append(("depot_archive", f"status={status}", "archived=true", "archived"))
+    if rec.get("archived") and mat != MATURITE_MORTE:
+        sig.append(("depot_archive", f"maturite={mat}", "archived=true", "archived"))
     pushe = rec.get("pushed_at")
-    if pushe and status == "actif":
+    if pushe and mat is not None and mat != MATURITE_MORTE:
         jours = (date.today() - date.fromisoformat(pushe)).days
         if jours > seuil:
-            sig.append(("push_ancien", "status: actif", f"pushed_at={pushe} ({jours} j)",
-                        f"{jours}j"))
+            sig.append(("push_ancien", f"maturite: {mat}",
+                        f"pushed_at={pushe} ({jours} j)", f"{jours}j"))
     spdx, lt = rec.get("license_spdx"), fm.get("licence_type")
     if "license_spdx" in rec and lt:
         if spdx in (None, "NOASSERTION", "NONE", ""):

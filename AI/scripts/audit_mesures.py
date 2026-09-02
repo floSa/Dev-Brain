@@ -102,15 +102,15 @@ def main() -> int:
         w(f"- `{k}/*` — {n} page(s)")
     w("")
 
-    # ---------- 2. types et gabarits
-    w("## 2. Types et gabarits")
+    # ---------- 2. roles et gabarits
+    w("## 2. Roles et gabarits")
     w("")
-    by_type = collections.Counter(fm.get("type") for fm, _ in pages.values())
-    for t, n in by_type.most_common():
-        w(f"- `type: {t}` — {n} page(s)")
+    by_role = collections.Counter(fm.get("role") for fm, _ in pages.values())
+    for t, n in by_role.most_common():
+        w(f"- `role: {t}` — {n} page(s)")
     w("")
-    for t in sorted({fm.get("type") for fm, _ in pages.values() if fm.get("type")}):
-        sub = [fm for fm, _ in pages.values() if fm.get("type") == t]
+    for t in sorted({fm.get("role") for fm, _ in pages.values() if fm.get("role")}):
+        sub = [fm for fm, _ in pages.values() if fm.get("role") == t]
         keys = collections.Counter(k for fm in sub for k in fm)
         variable = {k: v for k, v in keys.items() if v != len(sub)}
         w(f"- `{t}` ({len(sub)} pages) — champs a geometrie variable : "
@@ -163,7 +163,7 @@ def main() -> int:
     # ---------- 5. coherence frontmatter / section
     gap = []
     for f, (fm, body) in pages.items():
-        if fm.get("type") not in ("service", "outil"):
+        if fm.get("role") != "brique":
             continue
         front = {re.sub(r".*\|", "", a).rstrip("]").split("/")[-1] for a in (fm.get("alternatives") or [])}
         sec = re.search(r"\n## Alternatives\n(.*?)(?=\n## |\Z)", body, re.S)
@@ -212,10 +212,10 @@ def main() -> int:
     w("")
     counts = collections.Counter()
     for fm, body in pages.values():
-        if fm.get("type") not in ("service", "outil"):
+        if fm.get("role") != "brique":
             continue
-        counts["fiches Dev"] += 1
-        for field in ("licence_type", "maturite", "status", "url_repo", "url_docs"):
+        counts["briques"] += 1
+        for field in ("licence_type", "maturite", "url_repo", "url_docs"):
             if fm.get(field):
                 counts[field] += 1
         if re.search(r"\bv?\d+\.\d+(\.\d+)?\b", body):
@@ -238,7 +238,7 @@ def main() -> int:
     w("")
     for label, marker in [
         ("frontmatter conforme au gabarit (champs requis + aucun champ hors liste)", "hors gabarit"),
-        ("valeurs d'enum fermees (hosted, scaling, licence_type, maturite, status)", "hors valeurs autorisées"),
+        ("valeurs d'enum fermees (hosted, scaling, licence_type, maturite)", "hors valeurs autorisées"),
         ("tags inclus dans le vocabulaire", "tag hors vocabulaire"),
         ("categorie incluse dans la taxonomie", "categorie hors taxonomie"),
         ("reciprocite des alternatives", "non réciproque"),
@@ -247,17 +247,17 @@ def main() -> int:
         w(f"- {label} — {'**present**' if marker in cb else '**absent**'}")
     w("")
     declared_templates = re.findall(r'"(\w+)":\s*\w+_ALLOWED', cb)
-    types_present = sorted({fm.get("type") for fm, _ in pages.values() if fm.get("type")})
-    unguarded = [t for t in types_present if t not in declared_templates]
+    roles_present = sorted({fm.get("role") for fm, _ in pages.values() if fm.get("role")})
+    unguarded = [t for t in roles_present if t not in declared_templates]
     w("- Gabarits declares dans `ALLOWED` : "
       + (", ".join(f"`{t}`" for t in declared_templates) if declared_templates else "aucun")
-      + f" — soit {len(declared_templates)} sur les {len(types_present)} types presents dans le vault.")
-    w(f"- Types **sans aucun gabarit controle** : {', '.join(f'`{t}`' for t in unguarded) or 'aucun'}. "
-      "Une page de ces types peut porter n'importe quel champ sans que rien ne le signale.")
+      + f" — soit {len(declared_templates)} sur les {len(roles_present)} roles presents dans le vault.")
+    w(f"- Roles **sans aucun gabarit controle** : {', '.join(f'`{t}`' for t in unguarded) or 'aucun'}. "
+      "Une page de ces roles peut porter n'importe quel champ sans que rien ne le signale.")
     w("")
     w("Non verifie (constate par lecture du script) : synchronisation des pitchs, valeurs de")
-    w("`domaines:` contre `themes.md`, gabarits `outil` / `pattern` / `rule`, joignabilite")
-    w("des URLs, coherence de `remplace_par:`, pages orphelines, couverture des comparatifs `.base`.")
+    w("`domaines:` contre `themes.md`, gabarits `pattern` / `rule`, joignabilite des URLs,")
+    w("pages orphelines, couverture des comparatifs `.base`.")
 
     print("\n".join(out))
     return 0

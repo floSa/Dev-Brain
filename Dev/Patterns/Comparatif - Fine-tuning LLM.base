@@ -13,7 +13,6 @@ views:
       - scaling
       - langage
       - maturite
-      - status
       - tags
     sort:
       - property: file.name

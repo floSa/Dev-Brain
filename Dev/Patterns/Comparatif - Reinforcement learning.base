@@ -16,7 +16,6 @@ views:
       - langage
       - maturite
       - scaling
-      - status
       - tags
       - alternatives
     sort:

@@ -192,9 +192,7 @@
   }
  },
  "Dev/Outils/Maka.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=en-eval"
-  ]
+  "signalements": []
  },
  "Dev/Outils/MongoDB Compass.md": {
   "archived": false,
@@ -257,9 +255,7 @@
   "license_spdx": "MIT",
   "pushed_at": "2026-08-10",
   "repo": "OpenCut-app/OpenCut",
-  "signalements": [
-   "corps_declin_vs_status_actif"
-  ],
+  "signalements": [],
   "sonde_le": "2026-09-02",
   "stars": 88464,
   "urls": {
@@ -377,7 +373,7 @@
   "pushed_at": "2022-07-09",
   "repo": "osint4all/osint4all.github.io",
   "signalements": [
-   "abandonne_sans_remplacement:status=abandonne"
+   "deprecie_sans_alternative:maturite=deprecated"
   ],
   "sonde_le": "2026-09-02",
   "stars": 95,
@@ -395,18 +391,14 @@
   }
  },
  "Dev/Outils/swarm-forge.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=en-eval"
-  ]
+  "signalements": []
  },
  "Dev/Outils/t3code.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=en-eval"
-  ]
+  "signalements": []
  },
  "Dev/Services/Acme.md": {
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ]
  },
  "Dev/Services/Agno.md": {
@@ -530,9 +522,7 @@
   }
  },
  "Dev/Services/AutoGen.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=abandonne"
-  ]
+  "signalements": []
  },
  "Dev/Services/Avro.md": {
   "archived": false,
@@ -841,7 +831,7 @@
  },
  "Dev/Services/HuggingFace.md": {
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ]
  },
  "Dev/Services/Hyperopt.md": {
@@ -967,9 +957,7 @@
   }
  },
  "Dev/Services/Marqo.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=abandonne"
-  ]
+  "signalements": []
  },
  "Dev/Services/Milvus.md": {
   "archived": false,
@@ -1398,7 +1386,7 @@
  },
  "Dev/Services/RAGatouille.md": {
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ]
  },
  "Dev/Services/SGLang.md": {
@@ -1530,7 +1518,7 @@
   "pushed_at": "2026-01-16",
   "repo": "tensorflow/agents",
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ],
   "sonde_le": "2026-09-02",
   "stars": 3026,
@@ -1804,7 +1792,7 @@
   "pypi_version": "0.4.6",
   "repo": "huggingface/evaluate",
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ],
   "sonde_le": "2026-09-02",
   "stars": 2478,
@@ -2016,13 +2004,11 @@
   }
  },
  "Dev/Services/pykan.md": {
-  "signalements": [
-   "abandonne_sans_remplacement:status=en-eval"
-  ]
+  "signalements": []
  },
  "Dev/Services/pytorch-crf.md": {
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ]
  },
  "Dev/Services/rank-bm25.md": {
@@ -2034,7 +2020,7 @@
   "pushed_at": "2026-05-02",
   "repo": "dorianbrown/rank_bm25",
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ],
   "sonde_le": "2026-09-02",
   "stars": 1382,
@@ -2077,7 +2063,7 @@
  },
  "Dev/Services/selectolax.md": {
   "signalements": [
-   "corps_declin_vs_status_actif"
+   "corps_declin_vs_maturite_vive"
   ]
  },
  "Dev/Services/sentence-transformers.md": {

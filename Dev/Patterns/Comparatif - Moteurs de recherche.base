@@ -13,7 +13,6 @@ views:
       - langage
       - licence_type
       - maturite
-      - status
       - tags
     sort:
       - property: file.name
@@ -22,7 +21,7 @@ views:
     name: Maintenus (hors déprécié)
     filters:
       and:
-        - status == "actif"
+        - maturite != "deprecated"
     order:
       - file.name
       - pitch

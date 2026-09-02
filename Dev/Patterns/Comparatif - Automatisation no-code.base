@@ -24,7 +24,7 @@ views:
     name: Self-hostable
     filters:
       and:
-        - hosted != "managed"
+        - hosted.contains("self")
     order:
       - file.name
       - pitch
