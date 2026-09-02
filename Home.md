@@ -12,6 +12,7 @@ tags: [meta]
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 - [[Bases de données]] — 47 briques, 4 sous-domaines
+- [[Outils de développement]] — 20 briques, 1 sous-domaine
 
 ## Hubs (MOC) — domaines pas encore migrés
 

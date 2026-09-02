@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Outils/")
     # `tooling/api` a eclate : les clients d'API d'un cote, l'annuaire
     # `public-apis` (`web/api`, famille annuaire) de l'autre — un annuaire n'est
     # pas un client, il sort du comparatif.

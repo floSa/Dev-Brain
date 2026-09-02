@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `devtools/paquet` existe desormais comme domaine. Memes 2 membres.
     - categorie == "devtools/paquet"
 views:

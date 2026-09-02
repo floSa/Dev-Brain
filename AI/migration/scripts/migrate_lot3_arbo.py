@@ -132,9 +132,12 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    if args.prefixe not in arbo.DOM_LABEL:
-        sys.exit(f"Préfixe inconnu `{args.prefixe}` — connus : {sorted(arbo.DOM_LABEL)}")
-    domaine = arbo.DOM_LABEL[args.prefixe]
+    # `arbo.domaine()` et non `DOM_LABEL[...]` : les préfixes rattachés par décision
+    # explicite (`skill` -> « Outils de développement ») doivent se migrer comme les autres.
+    domaine = arbo.domaine(args.prefixe)
+    if domaine is None:
+        sys.exit(f"Préfixe inconnu `{args.prefixe}` — connus : "
+                 f"{sorted(arbo.DOM_LABEL) + sorted(arbo.DOM_RATTACHE)}")
 
     pages = pages_du_domaine(args.prefixe)
     if not pages:

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 650 pages actives.
+> 652 pages actives.
 
 ## Par page
 
@@ -138,7 +138,7 @@
 ### Bruno  ·  brique
 - tags : `api-client`, `version-control`
 - liens sortants : [[Comparatif - Clients d'API]], [[Postman]]
-- liens entrants : [[Postman]], [[public-apis]]
+- liens entrants : [[Outils de développement]], [[Postman]], [[public-apis]]
 
 ### Captum  ·  brique
 - tags : `explainability`, `deep-learning`
@@ -343,12 +343,12 @@
 ### DuckDB  ·  brique
 - tags : `columnar`, `olap`, `embedded`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Postgres]]
-- liens entrants : [[ADBC]], [[Bases de données]], [[ClickHouse]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
+- liens entrants : [[ADBC]], [[Bases de données]], [[ClickHouse]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
 
 ### dynaconf  ·  brique
 - tags : `config`
 - liens sortants : [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
-- liens entrants : [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
+- liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
 
 ### E2B  ·  brique
 - tags : `agents`, `llm`, `container`, `ai-security`
@@ -548,7 +548,7 @@
 ### hydra  ·  brique
 - tags : `config`
 - liens sortants : [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
-- liens entrants : [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
+- liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
 
 ### Hyperopt  ·  brique
 - tags : `hyperparameter-tuning`, `bayesian`, `distributed`
@@ -593,12 +593,12 @@
 ### jupysql  ·  brique
 - tags : `notebook`, `dataframe`
 - liens sortants : [[DuckDB]], [[Polars]], [[pandas]], [[psycopg2]]
-- liens entrants : —
+- liens entrants : [[Notebooks]]
 
 ### jupytext  ·  brique
 - tags : `notebook`, `version-control`, `reproducibility`
 - liens sortants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[Ruff]], [[papermill]], [[pytest]]
-- liens entrants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[papermill]]
+- liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[papermill]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -753,7 +753,7 @@
 ### Marimo  ·  brique
 - tags : `notebook`, `reproducibility`, `data-app`
 - liens sortants : [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
-- liens entrants : [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
+- liens entrants : [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
 
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
@@ -908,7 +908,7 @@
 ### Obsidian  ·  brique
 - tags : `note-taking`, `knowledge-graph`
 - liens sortants : —
-- liens entrants : —
+- liens entrants : [[Outils de développement]]
 
 ### Ollama  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
@@ -1008,7 +1008,7 @@
 ### papermill  ·  brique
 - tags : `notebook`, `reproducibility`
 - liens sortants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[uv]]
-- liens entrants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]]
+- liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]]
 
 ### Parquet  ·  brique
 - tags : `file-format`, `columnar`, `olap`
@@ -1063,7 +1063,7 @@
 ### pip  ·  brique
 - tags : `package-manager`
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[uv]]
-- liens entrants : [[uv]]
+- liens entrants : [[Outils de développement]], [[uv]]
 
 ### Playwright  ·  brique
 - tags : `web-scraping`
@@ -1093,7 +1093,7 @@
 ### Postman  ·  brique
 - tags : `api-client`
 - liens sortants : [[Bruno]], [[Comparatif - Clients d'API]]
-- liens entrants : [[Bruno]], [[public-apis]]
+- liens entrants : [[Bruno]], [[Outils de développement]], [[public-apis]]
 
 ### PraisonAI  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `low-code`, `mcp`
@@ -1143,12 +1143,12 @@
 ### Pydantic  ·  brique
 - tags : `data-validation`, `type-hints`
 - liens sortants : [[Pydantic Settings]]
-- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]]
+- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]]
 
 ### Pydantic Settings  ·  brique
 - tags : `config`, `data-validation`
 - liens sortants : [[Pydantic]], [[dynaconf]], [[hydra]], [[python-dotenv]]
-- liens entrants : [[Pydantic]], [[Rule - Config typée]], [[dynaconf]], [[hydra]], [[python-dotenv]]
+- liens entrants : [[Outils de développement]], [[Pydantic]], [[Rule - Config typée]], [[dynaconf]], [[hydra]], [[python-dotenv]]
 
 ### PydanticAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `structured-output`, `type-hints`
@@ -1183,12 +1183,12 @@
 ### pytest  ·  brique
 - tags : `testing`
 - liens sortants : [[testcontainers]]
-- liens entrants : [[Notebooks-as-code]], [[Rule - Qualité stricte]], [[jupytext]], [[mcpjam]], [[testcontainers]]
+- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Rule - Qualité stricte]], [[jupytext]], [[mcpjam]], [[testcontainers]]
 
 ### python-dotenv  ·  brique
 - tags : `config`
 - liens sortants : [[Pydantic Settings]], [[dynaconf]], [[hydra]]
-- liens entrants : [[Pydantic Settings]], [[dynaconf]], [[hydra]]
+- liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
 
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
@@ -1223,7 +1223,7 @@
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
 - liens sortants : [[Marimo]], [[Notebooks-as-code]], [[jupytext]], [[papermill]], [[uv]]
-- liens entrants : [[Marimo]], [[Notebooks-as-code]], [[jupytext]], [[papermill]]
+- liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[jupytext]], [[papermill]]
 
 ### Ragas  ·  brique
 - tags : `llm`, `llm-eval`, `rag-eval`, `rag`
@@ -1268,7 +1268,7 @@
 ### Rich  ·  brique
 - tags : `terminal-ui`
 - liens sortants : [[Typer]]
-- liens entrants : [[Typer]]
+- liens entrants : [[Outils de développement]], [[Typer]]
 
 ### River  ·  brique
 - tags : `streaming`, `concept-drift`
@@ -1283,7 +1283,7 @@
 ### Ruff  ·  brique
 - tags : `linter`, `formatter`
 - liens sortants : [[uv]]
-- liens entrants : [[Notebooks-as-code]], [[Rule - Qualité stricte]], [[Rule - Toolchain Python]], [[jupytext]], [[uv]]
+- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Rule - Qualité stricte]], [[Rule - Toolchain Python]], [[jupytext]], [[uv]]
 
 ### SAELens  ·  brique
 - tags : `explainability`, `llm`
@@ -1528,7 +1528,7 @@
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
 - liens sortants : [[pytest]]
-- liens entrants : [[Pattern - Stack démo ML locale multi-services]], [[pytest]]
+- liens entrants : [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[pytest]]
 
 ### text-generation-webui  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
@@ -1593,7 +1593,7 @@
 ### Typer  ·  brique
 - tags : `cli`, `type-hints`
 - liens sortants : [[Comparatif - Frameworks CLI]], [[FastAPI]], [[Rich]]
-- liens entrants : [[Rich]]
+- liens entrants : [[Outils de développement]], [[Rich]]
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
@@ -1618,7 +1618,7 @@
 ### uv  ·  brique
 - tags : `package-manager`
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Ruff]], [[pip]]
-- liens entrants : [[Notebooks-as-code]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[papermill]], [[pip]]
+- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[papermill]], [[pip]]
 
 ### Uvicorn  ·  brique
 - tags : `web-framework`
@@ -1698,7 +1698,17 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+
+### Notebooks  ·  hub
+- tags : `notebook`, `reproducibility`, `version-control`
+- liens sortants : [[DuckDB]], [[Marimo]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
+- liens entrants : [[Outils de développement]]
+
+### Outils de développement  ·  hub
+- tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
+- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens entrants : —
 
 ### Recherche  ·  hub
 - tags : —
@@ -3266,7 +3276,7 @@
 - `alignment` : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Time series anomaly detection
-- `api-client` : Bruno, Postman  — pas de page concept dédiée
+- `api-client` : Bruno, Outils de développement, Postman  — pas de page concept dédiée
 - `array` : CuPy, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme
@@ -3286,7 +3296,7 @@
 - `ci-cd` : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Types de données et choix de modèle, imbalanced-learn, k-NN
-- `cli` : Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
+- `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
 - `clustering` : Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
@@ -3297,7 +3307,7 @@
 - `concentration` : Inégalités de concentration  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, River  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, scipy.stats
-- `config` : Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
+- `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
 - `container` : Beszel, Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Claude Video, Context engineering, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, ai-memory, prompt-caching
@@ -3314,7 +3324,7 @@
 - `data-modeling` : Architecture médaillon  — pas de page concept dédiée
 - `data-pipeline` : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, ELT vs ETL & idempotence, Kestra, Mage, Pattern - Pipeline scraping → matching → optimisation, Prefect, Stream processing, Web scraping  — pas de page concept dédiée
 - `data-quality` : Architecture médaillon, Contrats de données & qualité, ydata-profiling
-- `data-validation` : Contrats de données & qualité, Instructor, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs  — pas de page concept dédiée
+- `data-validation` : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs  — pas de page concept dédiée
 - `data-versioning` : Versionnage de données
 - `dataframe` : Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling  — pas de page concept dédiée
 - `dataviz` : Grafana, TensorBoard, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
@@ -3399,7 +3409,7 @@
 - `linear-algebra` : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation  — pas de page concept dédiée
 - `linear-programming` : Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
-- `linter` : Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
+- `linter` : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
 - `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : DeepEval, LLM-as-judge, TruLens
 - `llm-eval` : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo  — pas de page concept dédiée
@@ -3449,7 +3459,7 @@
 - `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Régression quantile, Tests non paramétriques, pingouin, scipy.stats
 - `nosql` : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
-- `notebook` : Marimo, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
+- `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, albumentations, supervision
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, supervision
@@ -3465,7 +3475,7 @@
 - `out-of-core` : Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning
-- `package-manager` : Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
+- `package-manager` : Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
 - `parallel` : Dask, Modin, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
@@ -3505,7 +3515,7 @@
 - `relational` : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
-- `reproducibility` : Marimo, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill  — pas de page concept dédiée
+- `reproducibility` : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill  — pas de page concept dédiée
 - `reranking` : Late-interaction retrieval, RAGatouille, Reranking, sentence-transformers
 - `resampling` : Bootstrap, Validation croisée, Walk-forward CV
 - `retrieval` : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers  — pas de page concept dédiée
@@ -3547,7 +3557,7 @@
 - `templating` : Jinja2  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
 - `terminal-ui` : Rich, llmfit, pi  — pas de page concept dédiée
-- `testing` : DeepEval, Faker, Mimesis, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
+- `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, NLTK, SetFit
 - `text-to-sql` : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI
 - `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
@@ -3566,7 +3576,7 @@
 - `vc-dimension` : VC dimension
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Vector norms  — pas de page concept dédiée
-- `version-control` : Aider, Bruno, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
+- `version-control` : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
@@ -3586,7 +3596,7 @@
 - `accessibility` (porté par : OpenDataLoader PDF)
 - `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Archify, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
-- `api-client` (porté par : Bruno, Postman)
+- `api-client` (porté par : Bruno, Outils de développement, Postman)
 - `array` (porté par : CuPy, JAX, numpy, xarray)
 - `attention` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
@@ -3597,13 +3607,13 @@
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, prompt-caching)
 - `ci-cd` (porté par : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
-- `cli` (porté par : Spec Kit, Typer, croc, freebuff, swarm-forge)
+- `cli` (porté par : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
 - `columnar` (porté par : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx)
 - `concentration` (porté par : Inégalités de concentration)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
-- `config` (porté par : Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
+- `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Théorème central limite)
 - `cryptography` (porté par : PyJWT, croc)
@@ -3611,7 +3621,7 @@
 - `data-app` (porté par : Dash, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-modeling` (porté par : Architecture médaillon)
 - `data-pipeline` (porté par : Airflow, Architecture médaillon, Change Data Capture (CDC), Dagster, ELT vs ETL & idempotence, Kestra, Mage, Pattern - Pipeline scraping → matching → optimisation, Prefect, Stream processing, Web scraping)
-- `data-validation` (porté par : Contrats de données & qualité, Instructor, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs)
+- `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Structured outputs)
 - `dataframe` (porté par : Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling)
 - `dataviz` (porté par : Grafana, TensorBoard, altair, bokeh, matplotlib, plotly, seaborn)
 - `db-client` (porté par : DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin)
@@ -3664,7 +3674,7 @@
 - `learning-theory` (porté par : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension)
 - `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation)
-- `linter` (porté par : Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
+- `linter` (porté par : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
 - `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, DeepEval, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo)
 - `llm-gateway` (porté par : Helicone, LiteLLM, OmniRoute, OpenRouter)
@@ -3694,7 +3704,7 @@
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
 - `nosql` (porté par : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
-- `notebook` (porté par : Marimo, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
+- `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS)
 - `observability` (porté par : Beszel, Grafana, Loki)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
@@ -3703,7 +3713,7 @@
 - `osint` (porté par : Web-Check, osint4all)
 - `out-of-core` (porté par : Dask, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
-- `package-manager` (porté par : Rule - Toolchain Python, pip, uv)
+- `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
@@ -3725,7 +3735,7 @@
 - `relational` (porté par : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
-- `reproducibility` (porté par : Marimo, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill)
+- `reproducibility` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS)
@@ -3753,7 +3763,7 @@
 - `templating` (porté par : Jinja2)
 - `temporal-difference` (porté par : Q-learning and DQN)
 - `terminal-ui` (porté par : Rich, llmfit, pi)
-- `testing` (porté par : DeepEval, Faker, Mimesis, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
+- `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens)
@@ -3763,7 +3773,7 @@
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
 - `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Vector norms)
-- `version-control` (porté par : Aider, Bruno, Notebooks-as-code, jupytext, swarm-forge)
+- `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets)

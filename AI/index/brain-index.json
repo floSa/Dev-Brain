@@ -3,10 +3,11 @@
   "scanned": [
     "Bases de données",
     "Dev",
+    "Outils de développement",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 650,
+  "count": 652,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -126,6 +127,7 @@
     ],
     "api-client": [
       "Bruno",
+      "Outils de développement",
       "Postman"
     ],
     "array": [
@@ -251,6 +253,7 @@
       "k-NN"
     ],
     "cli": [
+      "Outils de développement",
       "Spec Kit",
       "Typer",
       "croc",
@@ -368,6 +371,7 @@
       "scipy.stats"
     ],
     "config": [
+      "Outils de développement",
       "Pydantic Settings",
       "Rule - Config typée",
       "dynaconf",
@@ -470,6 +474,7 @@
     "data-validation": [
       "Contrats de données & qualité",
       "Instructor",
+      "Outils de développement",
       "Pydantic",
       "Pydantic Settings",
       "Rule - Config typée",
@@ -1169,6 +1174,7 @@
       "PuLP"
     ],
     "linter": [
+      "Outils de développement",
       "Ruff",
       "Rule - Qualité stricte",
       "Rule - Toolchain Python"
@@ -1647,6 +1653,7 @@
     ],
     "notebook": [
       "Marimo",
+      "Notebooks",
       "Notebooks-as-code",
       "Quarto",
       "jupysql",
@@ -1766,6 +1773,7 @@
       "PAC learning"
     ],
     "package-manager": [
+      "Outils de développement",
       "Rule - Toolchain Python",
       "pip",
       "uv"
@@ -2060,6 +2068,7 @@
     ],
     "reproducibility": [
       "Marimo",
+      "Notebooks",
       "Notebooks-as-code",
       "Quarto",
       "Rule - Packaging démo",
@@ -2363,6 +2372,7 @@
       "DeepEval",
       "Faker",
       "Mimesis",
+      "Outils de développement",
       "Rule - Qualité stricte",
       "mcpjam",
       "promptfoo",
@@ -2582,6 +2592,7 @@
     "version-control": [
       "Aider",
       "Bruno",
+      "Notebooks",
       "Notebooks-as-code",
       "jupytext",
       "swarm-forge"
@@ -3975,31 +3986,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Bruno.md",
-      "nom": "Bruno",
-      "alias": [
-        "bruno",
-        "usebruno"
-      ],
-      "role": "brique",
-      "categorie": "devtools/client-api",
-      "famille": "application",
-      "domaines": [
-        "data-eng",
-        "ai-eng"
-      ],
-      "pitch": "Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.",
-      "tags": [
-        "api-client",
-        "version-control"
-      ],
-      "alternatives": [
-        "[[Postman]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Claude Video.md",
       "nom": "Claude Video",
       "alias": [
@@ -4286,29 +4272,6 @@
       ],
       "alternatives": [
         "[[Figma]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Postman.md",
-      "nom": "Postman",
-      "alias": [
-        "postman"
-      ],
-      "role": "brique",
-      "categorie": "devtools/client-api",
-      "famille": "saas",
-      "domaines": [
-        "data-eng",
-        "ai-eng"
-      ],
-      "pitch": "Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.",
-      "tags": [
-        "api-client"
-      ],
-      "alternatives": [
-        "[[Bruno]]"
       ],
       "complements": [],
       "maturite": null
@@ -7090,28 +7053,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Marimo.md",
-      "nom": "Marimo",
-      "alias": [
-        "marimo"
-      ],
-      "role": "brique",
-      "categorie": "devtools/notebook",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.",
-      "tags": [
-        "notebook",
-        "reproducibility",
-        "data-app"
-      ],
-      "alternatives": [
-        "jupytext"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Marker.md",
       "nom": "Marker",
       "alias": [
@@ -8169,50 +8110,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Pydantic Settings.md",
-      "nom": "Pydantic Settings",
-      "alias": [
-        "pydantic-settings",
-        "pydantic_settings",
-        "BaseSettings"
-      ],
-      "role": "brique",
-      "categorie": "devtools/config",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.",
-      "tags": [
-        "config",
-        "data-validation"
-      ],
-      "alternatives": [
-        "[[dynaconf]]",
-        "[[hydra]]",
-        "[[python-dotenv]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Pydantic.md",
-      "nom": "Pydantic",
-      "alias": [
-        "pydantic"
-      ],
-      "role": "brique",
-      "categorie": "devtools/validation",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires.",
-      "tags": [
-        "data-validation",
-        "type-hints"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/PydanticAI.md",
       "nom": "PydanticAI",
       "alias": [
@@ -8235,25 +8132,6 @@
         "[[Instructor]]",
         "[[LangChain]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Quarto.md",
-      "nom": "Quarto",
-      "alias": [
-        "quarto"
-      ],
-      "role": "brique",
-      "categorie": "devtools/notebook",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia).",
-      "tags": [
-        "notebook",
-        "reproducibility"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -8408,24 +8286,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Rich.md",
-      "nom": "Rich",
-      "alias": [
-        "rich"
-      ],
-      "role": "brique",
-      "categorie": "devtools/cli",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.",
-      "tags": [
-        "terminal-ui"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/River.md",
       "nom": "River",
       "alias": [
@@ -8441,25 +8301,6 @@
       "tags": [
         "streaming",
         "concept-drift"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ruff.md",
-      "nom": "Ruff",
-      "alias": [
-        "ruff"
-      ],
-      "role": "brique",
-      "categorie": "devtools/qualite",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.",
-      "tags": [
-        "linter",
-        "formatter"
       ],
       "alternatives": [],
       "complements": [],
@@ -9269,25 +9110,6 @@
       "maturite": "beta"
     },
     {
-      "path": "Dev/Services/Typer.md",
-      "nom": "Typer",
-      "alias": [
-        "typer"
-      ],
-      "role": "brique",
-      "categorie": "devtools/cli",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click.",
-      "tags": [
-        "cli",
-        "type-hints"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Ultralytics YOLO.md",
       "nom": "Ultralytics YOLO",
       "alias": [
@@ -9851,28 +9673,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/dynaconf.md",
-      "nom": "dynaconf",
-      "alias": [
-        "Dynaconf"
-      ],
-      "role": "brique",
-      "categorie": "devtools/config",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.",
-      "tags": [
-        "config"
-      ],
-      "alternatives": [
-        "[[hydra]]",
-        "[[python-dotenv]]",
-        "[[Pydantic Settings]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/evaluate.md",
       "nom": "evaluate",
       "alias": [
@@ -9963,29 +9763,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/hydra.md",
-      "nom": "hydra",
-      "alias": [
-        "Hydra",
-        "hydra-core"
-      ],
-      "role": "brique",
-      "categorie": "devtools/config",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.",
-      "tags": [
-        "config"
-      ],
-      "alternatives": [
-        "[[dynaconf]]",
-        "[[python-dotenv]]",
-        "[[Pydantic Settings]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/imbalanced-learn.md",
       "nom": "imbalanced-learn",
       "alias": [
@@ -10032,48 +9809,6 @@
       ],
       "complements": [],
       "maturite": "experimental"
-    },
-    {
-      "path": "Dev/Services/jupysql.md",
-      "nom": "jupysql",
-      "alias": [
-        "JupySQL",
-        "jupysql"
-      ],
-      "role": "brique",
-      "categorie": "devtools/notebook",
-      "famille": "extension",
-      "domaines": null,
-      "pitch": "SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.",
-      "tags": [
-        "notebook",
-        "dataframe"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/jupytext.md",
-      "nom": "jupytext",
-      "alias": [
-        "Jupytext"
-      ],
-      "role": "brique",
-      "categorie": "devtools/notebook",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.",
-      "tags": [
-        "notebook",
-        "version-control",
-        "reproducibility"
-      ],
-      "alternatives": [
-        "Marimo"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/librosa.md",
@@ -10385,25 +10120,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/papermill.md",
-      "nom": "papermill",
-      "alias": [
-        "Papermill"
-      ],
-      "role": "brique",
-      "categorie": "devtools/notebook",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI.",
-      "tags": [
-        "notebook",
-        "reproducibility"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/pdf-inspector.md",
       "nom": "pdf-inspector",
       "alias": [
@@ -10476,24 +10192,6 @@
       "alternatives": [
         "[[scipy.stats]]",
         "[[statsmodels]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/pip.md",
-      "nom": "pip",
-      "alias": [],
-      "role": "brique",
-      "categorie": "devtools/paquet",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.",
-      "tags": [
-        "package-manager"
-      ],
-      "alternatives": [
-        "[[uv]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10590,47 +10288,6 @@
       "alternatives": [],
       "complements": [],
       "maturite": "experimental"
-    },
-    {
-      "path": "Dev/Services/pytest.md",
-      "nom": "pytest",
-      "alias": [
-        "py.test"
-      ],
-      "role": "brique",
-      "categorie": "devtools/test",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins.",
-      "tags": [
-        "testing"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/python-dotenv.md",
-      "nom": "python-dotenv",
-      "alias": [
-        "dotenv",
-        "python_dotenv"
-      ],
-      "role": "brique",
-      "categorie": "devtools/config",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.",
-      "tags": [
-        "config"
-      ],
-      "alternatives": [
-        "[[dynaconf]]",
-        "[[hydra]]",
-        "[[Pydantic Settings]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/pytorch-crf.md",
@@ -10986,26 +10643,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/testcontainers.md",
-      "nom": "testcontainers",
-      "alias": [
-        "testcontainers-python",
-        "Testcontainers"
-      ],
-      "role": "brique",
-      "categorie": "devtools/test",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.",
-      "tags": [
-        "testing",
-        "container"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/text-generation-webui.md",
       "nom": "text-generation-webui",
       "alias": [
@@ -11119,24 +10756,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/uv.md",
-      "nom": "uv",
-      "alias": [],
-      "role": "brique",
-      "categorie": "devtools/paquet",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.",
-      "tags": [
-        "package-manager"
-      ],
-      "alternatives": [
-        "[[pip]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/vLLM.md",
       "nom": "vLLM",
       "alias": [
@@ -11207,6 +10826,475 @@
       "alternatives": [
         "[[sweetviz]]",
         "[[missingno]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Bruno.md",
+      "nom": "Bruno",
+      "alias": [
+        "bruno",
+        "usebruno"
+      ],
+      "role": "brique",
+      "categorie": "devtools/client-api",
+      "famille": "application",
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.",
+      "tags": [
+        "api-client",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Postman]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Notebooks/Marimo.md",
+      "nom": "Marimo",
+      "alias": [
+        "marimo"
+      ],
+      "role": "brique",
+      "categorie": "devtools/notebook",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.",
+      "tags": [
+        "notebook",
+        "reproducibility",
+        "data-app"
+      ],
+      "alternatives": [
+        "jupytext"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Notebooks/Notebooks.md",
+      "nom": "Notebooks",
+      "alias": [
+        "notebook",
+        "jupyter"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "ml-eng"
+      ],
+      "pitch": "Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.",
+      "tags": [
+        "notebook",
+        "reproducibility",
+        "version-control"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Notebooks/Quarto.md",
+      "nom": "Quarto",
+      "alias": [
+        "quarto"
+      ],
+      "role": "brique",
+      "categorie": "devtools/notebook",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia).",
+      "tags": [
+        "notebook",
+        "reproducibility"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Notebooks/jupysql.md",
+      "nom": "jupysql",
+      "alias": [
+        "JupySQL",
+        "jupysql"
+      ],
+      "role": "brique",
+      "categorie": "devtools/notebook",
+      "famille": "extension",
+      "domaines": null,
+      "pitch": "SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.",
+      "tags": [
+        "notebook",
+        "dataframe"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Notebooks/jupytext.md",
+      "nom": "jupytext",
+      "alias": [
+        "Jupytext"
+      ],
+      "role": "brique",
+      "categorie": "devtools/notebook",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.",
+      "tags": [
+        "notebook",
+        "version-control",
+        "reproducibility"
+      ],
+      "alternatives": [
+        "Marimo"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Notebooks/papermill.md",
+      "nom": "papermill",
+      "alias": [
+        "Papermill"
+      ],
+      "role": "brique",
+      "categorie": "devtools/notebook",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI.",
+      "tags": [
+        "notebook",
+        "reproducibility"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Obsidian.md",
+      "nom": "Obsidian",
+      "alias": [
+        "obsidian",
+        "obsidian.md"
+      ],
+      "role": "brique",
+      "categorie": "skill/knowledge",
+      "famille": null,
+      "domaines": [],
+      "pitch": "Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain.",
+      "tags": [
+        "note-taking",
+        "knowledge-graph"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Outils de développement.md",
+      "nom": "Outils de développement",
+      "alias": [
+        "devtools",
+        "outillage",
+        "tooling"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.",
+      "tags": [
+        "package-manager",
+        "linter",
+        "testing",
+        "config",
+        "cli",
+        "api-client",
+        "data-validation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Postman.md",
+      "nom": "Postman",
+      "alias": [
+        "postman"
+      ],
+      "role": "brique",
+      "categorie": "devtools/client-api",
+      "famille": "saas",
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.",
+      "tags": [
+        "api-client"
+      ],
+      "alternatives": [
+        "[[Bruno]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Pydantic Settings.md",
+      "nom": "Pydantic Settings",
+      "alias": [
+        "pydantic-settings",
+        "pydantic_settings",
+        "BaseSettings"
+      ],
+      "role": "brique",
+      "categorie": "devtools/config",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.",
+      "tags": [
+        "config",
+        "data-validation"
+      ],
+      "alternatives": [
+        "[[dynaconf]]",
+        "[[hydra]]",
+        "[[python-dotenv]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Pydantic.md",
+      "nom": "Pydantic",
+      "alias": [
+        "pydantic"
+      ],
+      "role": "brique",
+      "categorie": "devtools/validation",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires.",
+      "tags": [
+        "data-validation",
+        "type-hints"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Rich.md",
+      "nom": "Rich",
+      "alias": [
+        "rich"
+      ],
+      "role": "brique",
+      "categorie": "devtools/cli",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.",
+      "tags": [
+        "terminal-ui"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Ruff.md",
+      "nom": "Ruff",
+      "alias": [
+        "ruff"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.",
+      "tags": [
+        "linter",
+        "formatter"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Typer.md",
+      "nom": "Typer",
+      "alias": [
+        "typer"
+      ],
+      "role": "brique",
+      "categorie": "devtools/cli",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click.",
+      "tags": [
+        "cli",
+        "type-hints"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/dynaconf.md",
+      "nom": "dynaconf",
+      "alias": [
+        "Dynaconf"
+      ],
+      "role": "brique",
+      "categorie": "devtools/config",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.",
+      "tags": [
+        "config"
+      ],
+      "alternatives": [
+        "[[hydra]]",
+        "[[python-dotenv]]",
+        "[[Pydantic Settings]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/hydra.md",
+      "nom": "hydra",
+      "alias": [
+        "Hydra",
+        "hydra-core"
+      ],
+      "role": "brique",
+      "categorie": "devtools/config",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.",
+      "tags": [
+        "config"
+      ],
+      "alternatives": [
+        "[[dynaconf]]",
+        "[[python-dotenv]]",
+        "[[Pydantic Settings]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/pip.md",
+      "nom": "pip",
+      "alias": [],
+      "role": "brique",
+      "categorie": "devtools/paquet",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.",
+      "tags": [
+        "package-manager"
+      ],
+      "alternatives": [
+        "[[uv]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/pytest.md",
+      "nom": "pytest",
+      "alias": [
+        "py.test"
+      ],
+      "role": "brique",
+      "categorie": "devtools/test",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins.",
+      "tags": [
+        "testing"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/python-dotenv.md",
+      "nom": "python-dotenv",
+      "alias": [
+        "dotenv",
+        "python_dotenv"
+      ],
+      "role": "brique",
+      "categorie": "devtools/config",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.",
+      "tags": [
+        "config"
+      ],
+      "alternatives": [
+        "[[dynaconf]]",
+        "[[hydra]]",
+        "[[Pydantic Settings]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/testcontainers.md",
+      "nom": "testcontainers",
+      "alias": [
+        "testcontainers-python",
+        "Testcontainers"
+      ],
+      "role": "brique",
+      "categorie": "devtools/test",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.",
+      "tags": [
+        "testing",
+        "container"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/uv.md",
+      "nom": "uv",
+      "alias": [],
+      "role": "brique",
+      "categorie": "devtools/paquet",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.",
+      "tags": [
+        "package-manager"
+      ],
+      "alternatives": [
+        "[[pip]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -19405,26 +19493,6 @@
       ],
       "alternatives": null,
       "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Outils/Obsidian.md",
-      "nom": "Obsidian",
-      "alias": [
-        "obsidian",
-        "obsidian.md"
-      ],
-      "role": "brique",
-      "categorie": "skill/knowledge",
-      "famille": null,
-      "domaines": [],
-      "pitch": "Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain.",
-      "tags": [
-        "note-taking",
-        "knowledge-graph"
-      ],
-      "alternatives": [],
-      "complements": [],
       "maturite": null
     }
   ]

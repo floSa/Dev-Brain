@@ -34,6 +34,18 @@ DOM_LABEL = {
     "docs": "Documents", "math": "Mathématiques",
 }
 
+# Préfixes de `categorie:` qui ne sont PAS des domaines et qu'une décision explicite
+# rattache quand même à un dossier de l'arbre. DOM_LABEL reste la copie conforme de
+# CAT_LABEL ; les exceptions vivent ici, nommées, avec leur date d'arbitrage.
+#
+# `skill/*` (taxonomie.md, « Skills Wiki ») désigne une pratique perso, pas un domaine
+# technique. Sa seule page, `Obsidian`, va dans « Outils de développement » — tranché
+# par floSa le 2026-09-04, cf. lot-3-arborescence.md, Remontées 5. `v3-arborescence.md`
+# ne l'assigne à aucun domaine : il est muet, il ne contredit pas.
+DOM_RATTACHE = {
+    "skill": "Outils de développement",
+}
+
 # Libellé d'un sous-domaine promu en dossier. UNE ENTRÉE PAR SOUS-DOSSIER de
 # AI/design/v3-arborescence.md, remplie domaine par domaine au fil du lot 3.
 # Un sous-domaine qui franchit le seuil sans entrée ici fait ÉCHOUER les deux
@@ -44,6 +56,14 @@ SUB_LABEL = {
     "database/admin": "Administration",
     "database/recherche": "Recherche",
     "database/relationnel": "Relationnel",
+    # Outils de développement — « ### Outils de développement · 19 pages »
+    "devtools/notebook": "Notebooks",
+    # Design & diagrammes — « ### Design & diagrammes · 7 pages »
+    "design/diagramme": "Diagrammes",
+    # Stockage — « ### Stockage · 6 pages »
+    "storage/objet": "Stockage objet",
+    # Automatisation no-code — « ### Automatisation no-code · 5 pages »
+    "automation/no-code": "No-code",
 }
 
 # Dossiers de la racine qui ne portent pas de pages du brain.
@@ -55,7 +75,8 @@ LEGACY = {"Dev", "Wiki"}
 
 def domaine(categorie: str) -> str | None:
     """Libellé du dossier de domaine d'une `categorie:`, ou None si hors table."""
-    return DOM_LABEL.get((categorie or "").split("/")[0])
+    pfx = (categorie or "").split("/")[0]
+    return DOM_LABEL.get(pfx) or DOM_RATTACHE.get(pfx)
 
 
 def dossier_attendu(categorie: str, promus: dict[str, str]) -> str | None:
