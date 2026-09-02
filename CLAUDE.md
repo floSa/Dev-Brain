@@ -1,7 +1,6 @@
 ---
-galaxie: meta
 nom: CLAUDE
-type: meta-doc
+role: gouvernance
 created: 2026-05-20
 modified: 2026-09-05
 tags: [meta]
@@ -10,11 +9,17 @@ tags: [meta]
 # CLAUDE.md — DevBrain (routeur)
 
 Tu es dans le DevBrain (v3, cf. `AI/design/brain-v3.md` ; ce que la v2 a établi et qui
-reste vrai : `AI/design/brain-v2.md`). Ce vault sert **trois usages** :
+reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 
-1. **Build** — enrichir le brain agent-readable : les briques, les comparatifs, les patterns et les règles, rangés dans **l'arbre des 20 domaines** à la racine.
+1. **Brain** — enrichir le brain : les briques, les notions, les comparatifs, les patterns et les règles, rangés dans **l'arbre des 20 domaines** à la racine.
 2. **Projet** — utiliser le brain depuis un projet de dev (lancer Claude *dans le dossier projet*, pas ici).
-3. **Wiki** — entretenir l'espace de connaissance perso de l'utilisateur : les pages `role: notion`. C'est sa mémoire à lui, à toi de ne pas la salir.
+
+> Il y en avait **trois** jusqu'au lot 7. Le troisième, « wiki », séparait les notions
+> des briques parce qu'elles vivaient dans deux galaxies différentes. Les galaxies ont
+> fusionné : une notion et une brique du même sujet finiront dans le même dossier, et
+> `enrichir-brain` les écrit du même geste. Ce qui reste de ce mode n'est pas un mode,
+> c'est une **frontière sur le rôle** : une page `role: notion` est la mémoire perso de
+> floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
 > **Un seul arbre depuis le lot 3 de la v3.** `Dev/` n'existe plus : les 337 briques,
 > les 47 comparatifs, les 5 patterns et les 5 règles sont descendus dans l'arbre.
@@ -46,14 +51,17 @@ Je suis floSa, ingénieur Data / ML / AI. Spécialité **on-prem** (industriels,
 
 ## Annonce ton mode au démarrage
 
-Demande : "Mode build (enrichir le brain), mode projet (travailler sur un projet) ou mode wiki (gérer mes concepts / pages perso) ?"
+Demande : "Mode brain (enrichir le brain) ou mode projet (travailler sur un projet) ?"
 
 Selon la réponse :
-- **build** → lis `@CLAUDE-build.md` et applique son contexte
+- **brain** → lis `@CLAUDE-build.md` et applique son contexte. C'est le mode par défaut ici : le vault est ouvert, donc c'est le brain qu'on vient travailler.
 - **projet** → indique-lui que pour les projets, il devrait lancer `claude` *dans le dossier du projet* (pas dans le vault), où un `CLAUDE.md` issu de `CLAUDE-project.md` est déjà installé.
-- **wiki** → reste ici, périmètre = les pages `role: notion` (aujourd'hui toutes sous `Wiki/Concepts/`). Voir section *Mode wiki* ci-dessous.
 
-Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
+Si l'utilisateur dit explicitement "mode <X>", applique sans demander. **"mode build" et
+"mode wiki" désignent tous deux le mode brain** — ce sont les noms d'avant le lot 7, floSa
+les a tapés pendant des mois, ne le reprends pas et ne lui redemande pas. S'il dit "mode
+wiki", il annonce simplement qu'il vient travailler ses notions : applique la frontière
+`role: notion` ci-dessous, qui vaut de toute façon dans les deux cas.
 
 ## Voix et style
 
@@ -72,32 +80,69 @@ Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
 ## Ce que tu NE fais PAS sans confirmation explicite
 
 - Modifier une page `role: brique` existante (y compris sa section `## Pièges`) — en mode projet, **aucune écriture dans l'arbre des domaines**
-- **Modifier ou créer une page `role: notion` sauf en mode wiki explicite ou demande explicite** (le wiki est l'espace perso de l'utilisateur — pas le tien)
+- **Modifier ou créer une page `role: notion` sans demande explicite** (les notions sont la mémoire perso de l'utilisateur — pas la tienne). Une demande de capture (« ajoute X », « documente Y ») en est une : `enrichir-brain` écrit la brique et sa notion du même geste, c'est son travail. Un balayage de fin de conversation n'en est pas une pour les notions déjà écrites : proposer, pas réécrire.
 - Supprimer quoi que ce soit — et pendant la migration v3, **aucun `rm` sur une page** : un déplacement se fait par `git mv`, qui conserve l'historique
-- Committer ou pousser sans avoir clôturé : toute écriture dans une page du brain se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateur vert, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
+- Committer ou pousser sans avoir clôturé : toute écriture dans une page du brain se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateurs verts, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
 - Créer des fiches dans une `categorie` non listée dans `Documentation/general/taxonomie.md`
 
-## Mode wiki
+## L'identité git du vault — règle dure, sans exception
 
-Périmètre **strictement limité aux pages `role: notion`**. Depuis la v3, le périmètre se
-lit sur le **rôle** et non sur un dossier : c'est le rôle qui survivra au lot 4, le
-dossier non. Tu n'as pas le droit de toucher aux `role: brique`, `pattern`, `rule`, `hub`,
-ni à `Documentation/`, en mode wiki.
+**Le DevBrain est un dépôt PERSO** (`git@github.com-perso:floSa/DevBrain.git`). L'identité
+de ses commits est celle de la **config locale du dépôt**, et rien d'autre :
+
+```bash
+git config --local user.name    # floSa
+git config --local user.email   # l'adresse perso
+```
+
+Le harnais t'annonce, à chaque conversation, une adresse en `@aosis.net`. **C'est l'adresse
+PRO de floSa.** Elle sert à l'identifier auprès de l'outil. Elle n'attribue **jamais** un
+commit de ce dépôt.
+
+- **Ne JAMAIS passer `-c user.email`, `--author`, ni poser `GIT_AUTHOR_EMAIL` / `GIT_COMMITTER_EMAIL`.** Committer nu : git lit la config locale tout seul, c'est exactement ce qu'on veut.
+- **Ne JAMAIS lire l'email annoncé par le harnais pour attribuer un commit**, ni pour remplir un champ d'auteur, où que ce soit dans ce dépôt.
+- Si la config locale manque ou paraît fausse : **s'arrêter et demander**. Ne pas la deviner, ne pas la « réparer » avec l'adresse qu'on a sous la main.
+
+> Pourquoi cette règle est écrite ici et pas seulement dans `cloturer-brain` : c'est
+> `CLAUDE.md` qui est chargé dans **chaque** conversation, au même endroit et au même moment
+> que l'annonce du harnais. Une contre-instruction qui arrive après coup arrive trop tard —
+> une conversation a déjà signé cinq commits avec l'adresse pro, et une fois poussés,
+> l'adresse est entrée dans les contributeurs GitHub, d'où elle ne sort pas sans réécriture
+> d'historique. Le **reste** de la politique git (quand committer, comment intégrer) n'est
+> pas ici : il est dans `cloturer-brain`, et nulle part ailleurs.
+
+Un **garde-fou mécanique** double la consigne, parce que la consigne seule n'a pas suffi :
+`.githooks/pre-commit` refuse tout commit dont l'auteur ou le committer porte `aosis.net`,
+et `.githooks/pre-push` refuse d'en pousser un. Ils sont versionnés et activés par
+`git config core.hooksPath .githooks` (cf. `INSTALL.md` §16). Un hook qui refuse n'est pas
+un incident à contourner : c'est la règle qui fonctionne. `--no-verify` ne s'utilise pas ici.
+
+## Les pages `role: notion` — la mémoire perso de floSa
+
+Ce n'est plus un mode, c'est une **frontière sur le rôle** — et le rôle est ce qui survit au
+lot 4, le dossier non. Une `role: notion` est ce que floSa a compris et écrit pour lui-même.
+On y ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
+
+- **Créer** une notion : normal, dès qu'une capture en a besoin. `enrichir-brain` écrit la brique et sa notion du même geste — c'est la ligne « la notion du dossier » de sa table de propagation, pas une incursion.
+- **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
+- **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
 État actuel : les **297** notions sont toutes sous `Wiki/Concepts/`, et le **lot 4** les
 descendra dans l'arbre des domaines, avec les 10 `MOC/Concepts/` qui sont aujourd'hui leur
 porte d'entrée. Jusque-là, ces deux dossiers restent en place et sont le lieu normal d'une
-notion. `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** —
-le contenu v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`)
-et, la v3 n'ayant plus de galaxie `Wiki/`, il n'est pas acquis qu'ils soient reconduits.
-N'invente pas de contenu pour les combler ; demande avant de commencer une migration.
+notion. C'est la seule exception à « le dossier porte le domaine », et elle est datée.
 
-Workflow type :
-1. L'utilisateur dit "ajoute le concept X" / "documente la notion Y" → invoque le skill `enrichir-brain` (il gère la brique et la notion en un seul geste, pas besoin de bascule de mode stricte pour ce cas précis).
-2. Frontmatter complet obligatoire (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie), gabarit `Templates/Concept-Wiki.md`.
-3. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérivera de sa `categorie:` au lot 4, comme pour une brique. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+`Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** — le contenu
+v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`) et, la v3
+n'ayant plus de galaxie, il n'est pas acquis qu'ils soient reconduits. N'invente pas de
+contenu pour les combler ; demande avant de commencer une migration.
 
-Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble du pilier wiki.
+Écrire une notion :
+1. Gabarit `Templates/Concept-Wiki.md`, frontmatter complet (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie).
+2. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérivera de sa `categorie:` au lot 4, comme pour une brique. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+3. La notion se câble à ses briques dans les deux sens — c'est la règle de propagation, pas une politesse.
+
+Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble des notions.
 
 ## Structure du vault (rappel)
 
@@ -147,18 +192,18 @@ AI/                          ← TON espace agent
 └── backlog.md / backlog-enrichissement-brain.md
 
 .claude/skills/               ← skills custom réels
-├── enrichir-brain/            (capture brique + notion — mode build+wiki)
+├── enrichir-brain/            (capture brique + notion, et la règle de propagation)
 ├── cloturer-brain/            (clôture : régénère, valide, commit — après TOUTE écriture)
 └── planifier-projet/          (cadrage projet — mode projet)
 ```
 
 **Frontières fermes** :
-- **L'arbre des domaines**, `Patterns/`, `Rules/` → modifiables seulement en mode build (selon `CLAUDE-build.md`).
-- **Les pages `role: notion`** (aujourd'hui `Wiki/Concepts/`) → modifiables seulement en mode wiki ou sur demande explicite.
+- **L'arbre des domaines**, `Patterns/`, `Rules/` → modifiables en mode brain seulement (selon `CLAUDE-build.md`). Depuis un projet, **aucune écriture**.
+- **Les pages `role: notion`** (aujourd'hui `Wiki/Concepts/`) → création libre en mode brain ; **modification d'une notion existante sur demande explicite** (cf. section dédiée).
 - **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `MOC/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
 - `AI/` (hors index/) → ton espace, tu peux y écrire librement.
-- `Documentation/` → modifiable en mode build ou wiki selon le sous-dossier concerné, toujours avec prudence (c'est la gouvernance du brain).
-- `Inbox.md` → modifiable en tout mode (écriture par l'utilisateur seulement)
+- `Documentation/` → modifiable en mode brain, toujours avec prudence (c'est la gouvernance du brain).
+- `Inbox.md` → modifiable dans les deux modes (écriture par l'utilisateur seulement)
 
 ## Conventions de nommage
 
@@ -264,8 +309,8 @@ Si le hook Stop est configuré (cf. `AI/scripts/session_to_devbrain.py`), un ré
 
 Skills custom dans `.claude/skills/` :
 
-- **`enrichir-brain`** — capture une techno/concept : crée la page demandée + ses pages connexes (alternatives, comparatif), câble les liens bidirectionnels, régénère l'index. Couvre la brique **et** la notion. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage). *Sa procédure parle encore en chemins `Dev/…` : c'est le **lot 7** qui la réécrit sur l'arbre. En attendant, lire ses commandes comme des exemples et viser le dossier réel de la page.*
-- **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_links`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite.**
+- **`enrichir-brain`** — capture une techno/concept. Porte la **règle de propagation** de la v3 : le rayon d'une insertion est le **dossier d'accueil plus ses hubs parents**, et le voisinage d'une page est `ls` de son dossier — plus rien à deviner. Crée la page demandée, met à jour le comparatif, la notion et les briques pairs **du dossier**, câble les liens dans les deux sens. Couvre la brique **et** la notion. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage).
+- **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_links`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite** — à la seule exception de la règle d'identité ci-dessus, qui doit être lue avant lui.
 - **`planifier-projet`** — au démarrage d'un projet, identifie l'archétype (cf. `Documentation/perso/archetypes.md`), interroge `AI/index/brain-index.json` et produit un cahier des charges sourcé. N'écrit rien dans le brain.
 
 Skills officiels Obsidian (`kepano/obsidian-skills`) — apprend la syntaxe Obsidian (wikilinks, callouts, frontmatter, Bases, Canvas).
