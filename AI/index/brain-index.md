@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 680 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 690 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -877,6 +877,8 @@
 - **Administration** — Clients graphiques pour explorer, requêter et administrer un serveur de base de données.
 - **Agents** — Les bibliothèques avec lesquelles on écrit un agent — une boucle qui planifie, appelle des outils et reprend là où elle en était.
 - **Agents de code** — Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.
+- **Apprentissage par renforcement** — Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.
+- **Apprentissage profond** — Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.
 - **Assistants** — Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
@@ -889,9 +891,12 @@
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
+- **Interprétabilité** — Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
+- **Machine Learning** — Apprendre une fonction à partir de données — la cadrer, l'entraîner, mesurer ce qu'elle vaut, puis la tenir en production.
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
+- **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
 - **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
@@ -902,11 +907,16 @@
 - **Runtimes** — Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
 - **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.
+- **Serving** — Exposer un modèle déjà entraîné derrière une API — et tenir la latence, le débit et les versions.
 - **Signal & audio** — Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.
 - **Statistiques & inférence** — Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
+- **Suivi d'expériences** — Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.
 - **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
+- **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
+- **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
 - **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
+- **Vision** — Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.

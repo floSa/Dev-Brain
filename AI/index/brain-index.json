@@ -11,6 +11,7 @@
     "Documents",
     "Interfaces & apps data",
     "LLM & IA générative",
+    "Machine Learning",
     "Mathématiques",
     "Médias",
     "Observabilité",
@@ -24,7 +25,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 680,
+  "count": 690,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -149,6 +150,7 @@
       "One-Class SVM",
       "PyOD",
       "STUMPY",
+      "Séries temporelles",
       "Time series anomaly detection"
     ],
     "api-client": [
@@ -165,6 +167,7 @@
       "xarray"
     ],
     "attention": [
+      "Apprentissage profond",
       "Architectures hybrides LLM",
       "Attention Residuals",
       "Attention linéaire",
@@ -186,6 +189,7 @@
       "Sécurité"
     ],
     "autograd": [
+      "Apprentissage profond",
       "JAX",
       "Kornia",
       "PyTorch",
@@ -227,6 +231,7 @@
       "CatBoost",
       "Gradient Boosting (GBDT)",
       "LightGBM",
+      "Tabulaire",
       "XGBoost"
     ],
     "browser-extension": [
@@ -261,6 +266,7 @@
     "class-imbalance": [
       "Classification de texte",
       "Imbalanced classification",
+      "Tabulaire",
       "imbalanced-learn"
     ],
     "classification": [
@@ -303,6 +309,7 @@
       "Gaussian Mixture Models (GMM)",
       "HCPC",
       "K-Means",
+      "Machine Learning",
       "hdbscan",
       "k-médoïds (PAM)"
     ],
@@ -311,6 +318,7 @@
       "CNN",
       "Classification audio par spectrogramme",
       "Classification d'images",
+      "Vision",
       "Vision par ordinateur",
       "timm",
       "torchvision"
@@ -382,6 +390,7 @@
       "Suivi d'objets",
       "Transfer learning vision",
       "Ultralytics YOLO",
+      "Vision",
       "Vision Transformers (ViT)",
       "Vision par ordinateur",
       "albumentations",
@@ -476,6 +485,7 @@
     "data-augmentation": [
       "Augmentation d'images",
       "Kornia",
+      "Vision",
       "albumentations",
       "torchvision"
     ],
@@ -583,6 +593,7 @@
       "Adam optimizer",
       "AlphaZero and self-play",
       "Apprentissage auto-supervisé en vision",
+      "Apprentissage profond",
       "Architectures CNN",
       "Attention Residuals",
       "Attribution par gradient",
@@ -605,6 +616,7 @@
       "Gradient checkpointing",
       "Graph Neural Networks",
       "HuggingFace",
+      "Interprétabilité",
       "Interprétabilité mécaniste",
       "JAX",
       "Keras",
@@ -655,7 +667,8 @@
     ],
     "deployment-strategy": [
       "DevOps",
-      "Déploiement de modèles"
+      "Déploiement de modèles",
+      "Serving"
     ],
     "depth-estimation": [
       "Rendu neuronal 3D & estimation de profondeur"
@@ -736,6 +749,7 @@
       "statsforecast"
     ],
     "distributed-training": [
+      "Apprentissage profond",
       "Axolotl",
       "Calcul distribué",
       "DeepSpeed",
@@ -821,7 +835,9 @@
       "Gradient Boosting (GBDT)",
       "Isolation Forest",
       "LightGBM",
+      "Machine Learning",
       "Random Forest",
+      "Tabulaire",
       "XGBoost"
     ],
     "entropy": [
@@ -834,6 +850,7 @@
       "MLflow",
       "Model registry & versioning",
       "Neptune",
+      "Suivi d'expériences",
       "TensorBoard",
       "Weights & Biases"
     ],
@@ -847,8 +864,10 @@
       "Attribution par gradient",
       "Captum",
       "Explicabilité des modèles",
+      "Interprétabilité",
       "Interprétabilité mécaniste",
       "LIME",
+      "Machine Learning",
       "Probing",
       "SAELens",
       "SHAP",
@@ -859,6 +878,7 @@
       "nnsight"
     ],
     "exploration-exploitation": [
+      "Apprentissage par renforcement",
       "Exploration vs exploitation"
     ],
     "factor-analysis": [
@@ -884,10 +904,12 @@
       "Fuzzy matching & similarité de chaînes",
       "Imputation des valeurs manquantes",
       "Ingénierie des caractéristiques",
+      "Machine Learning",
       "Mise à l'échelle",
       "Mécanismes de données manquantes",
       "Sélection de variables",
       "TF-IDF",
+      "Tabulaire",
       "Time series feature engineering",
       "Types de données et choix de modèle",
       "category_encoders",
@@ -936,6 +958,7 @@
       "Hierarchical forecasting",
       "Intermittent demand",
       "Prophet",
+      "Séries temporelles",
       "Time series feature engineering",
       "darts",
       "neuralforecast",
@@ -949,6 +972,7 @@
     "foundation-model": [
       "Chronos",
       "Modèles de fondation vision",
+      "Séries temporelles",
       "segment-anything"
     ],
     "fourier": [
@@ -958,6 +982,7 @@
       "scipy.signal"
     ],
     "game-theory": [
+      "Apprentissage par renforcement",
       "Counterfactual Regret Minimization",
       "OpenSpiel",
       "Pattern - Moteur de jeu pur + IA séparée",
@@ -982,6 +1007,7 @@
       "PyTorch Geometric"
     ],
     "gpu": [
+      "Apprentissage profond",
       "Calcul distribué",
       "CuPy",
       "DeepSpeed",
@@ -1005,6 +1031,7 @@
       "PyTorch Lightning",
       "Ray",
       "SGLang",
+      "Serving",
       "TGI",
       "TensorFlow",
       "TensorFlow Serving",
@@ -1055,10 +1082,12 @@
     ],
     "hyperparameter-tuning": [
       "Hyperopt",
+      "Machine Learning",
       "Maximal Update Parametrization",
       "Optimisation d'hyperparamètres",
       "Optuna",
-      "Ray Tune"
+      "Ray Tune",
+      "Suivi d'expériences"
     ],
     "hypothesis-testing": [
       "A/B testing",
@@ -1081,13 +1110,15 @@
       "Stream processing"
     ],
     "image-classification": [
-      "Classification d'images"
+      "Classification d'images",
+      "Vision"
     ],
     "image-generation": [
       "GANs",
       "Image generation"
     ],
     "imitation-learning": [
+      "Apprentissage par renforcement",
       "Imitation learning"
     ],
     "in-memory": [
@@ -1115,6 +1146,7 @@
       "Runtimes",
       "SGLang",
       "Seldon Core",
+      "Serving",
       "Speculative decoding",
       "TGI",
       "TensorFlow Serving",
@@ -1137,6 +1169,7 @@
       "Pruning",
       "Quantization",
       "Runtimes",
+      "Serving",
       "Speculative decoding",
       "State Space Models",
       "TensorRT",
@@ -1146,6 +1179,7 @@
       "BM25",
       "Fuzzy matching & similarité de chaînes",
       "Late-interaction retrieval",
+      "NLP",
       "Recherche d'information",
       "TF-IDF",
       "bm25s",
@@ -1192,7 +1226,8 @@
     "kubernetes": [
       "Flyte",
       "KServe",
-      "Seldon Core"
+      "Seldon Core",
+      "Serving"
     ],
     "lakehouse": [
       "Apache Iceberg",
@@ -1291,6 +1326,7 @@
       "Human-in-the-loop",
       "Inference optimization",
       "Instructor",
+      "Interprétabilité",
       "Interprétabilité mécaniste",
       "Jailbreaking and defenses",
       "LLM & IA générative",
@@ -1479,6 +1515,7 @@
       "Stan"
     ],
     "markov-decision-process": [
+      "Apprentissage par renforcement",
       "Markov Decision Process",
       "Reinforcement learning"
     ],
@@ -1544,6 +1581,7 @@
       "missingno"
     ],
     "mixed-precision": [
+      "Apprentissage profond",
       "DeepSpeed",
       "Mixed precision",
       "accelerate"
@@ -1559,7 +1597,9 @@
     ],
     "ml-pipeline": [
       "Flyte",
+      "Machine Learning",
       "Metaflow",
+      "Suivi d'expériences",
       "ZenML"
     ],
     "model-based-rl": [
@@ -1567,6 +1607,7 @@
       "Monte Carlo Tree Search"
     ],
     "model-compression": [
+      "Apprentissage profond",
       "Distillation",
       "Pruning",
       "Quantization"
@@ -1579,8 +1620,10 @@
       "Data leakage",
       "Evidently",
       "Forecasting metrics",
+      "Interprétabilité",
       "LLM benchmarks",
       "LLM eval metrics",
+      "Machine Learning",
       "Métriques vision",
       "Optimisation d'hyperparamètres",
       "Perplexity",
@@ -1600,6 +1643,7 @@
     "model-monitoring": [
       "Data drift",
       "Evidently",
+      "Machine Learning",
       "Monitoring de modèle en production"
     ],
     "model-registry": [
@@ -1608,6 +1652,7 @@
       "MLflow",
       "Model registry & versioning",
       "Neptune",
+      "Suivi d'expériences",
       "Weights & Biases"
     ],
     "model-serving": [
@@ -1620,6 +1665,7 @@
       "Runtimes",
       "SGLang",
       "Seldon Core",
+      "Serving",
       "TGI",
       "TensorFlow Serving",
       "TensorRT",
@@ -1680,6 +1726,7 @@
       "Construction de graphes de connaissances",
       "GLiNER",
       "NER et étiquetage de séquence",
+      "NLP",
       "pytorch-crf",
       "seqeval",
       "spaCy"
@@ -1703,6 +1750,7 @@
       "HuggingFace",
       "LLM eval metrics",
       "NER et étiquetage de séquence",
+      "NLP",
       "NLTK",
       "Perplexity",
       "RAGatouille",
@@ -1761,6 +1809,7 @@
       "OpenCV",
       "Suivi d'objets",
       "Ultralytics YOLO",
+      "Vision",
       "albumentations",
       "supervision"
     ],
@@ -1778,6 +1827,7 @@
       "OpenCV",
       "Suivi d'objets",
       "Ultralytics YOLO",
+      "Vision",
       "supervision"
     ],
     "observability": [
@@ -1798,6 +1848,7 @@
       "pdf-inspector"
     ],
     "offline-rl": [
+      "Apprentissage par renforcement",
       "Offline RL"
     ],
     "olap": [
@@ -1929,6 +1980,7 @@
     ],
     "policy-gradient": [
       "Actor-Critic methods",
+      "Apprentissage par renforcement",
       "PPO",
       "Policy gradient"
     ],
@@ -1987,6 +2039,7 @@
       "Pruning"
     ],
     "quantization": [
+      "Apprentissage profond",
       "Fine-tuning",
       "LM Studio",
       "ONNX Runtime",
@@ -2112,6 +2165,7 @@
       "Acme",
       "Actor-Critic methods",
       "AlphaZero and self-play",
+      "Apprentissage par renforcement",
       "Bellman equations",
       "Exploration vs exploitation",
       "Fine-tuning",
@@ -2185,6 +2239,7 @@
       "Quarto",
       "Rule - Packaging démo",
       "Rule - Structure de projet",
+      "Suivi d'expériences",
       "jupytext",
       "papermill"
     ],
@@ -2281,6 +2336,7 @@
       "Segment Anything (SAM)",
       "Segmentation",
       "Ultralytics YOLO",
+      "Vision",
       "albumentations",
       "segment-anything"
     ],
@@ -2296,6 +2352,7 @@
     ],
     "self-play": [
       "AlphaZero and self-play",
+      "Apprentissage par renforcement",
       "Counterfactual Regret Minimization",
       "Pattern - Moteur de jeu pur + IA séparée"
     ],
@@ -2319,6 +2376,7 @@
     ],
     "sequence-labeling": [
       "NER et étiquetage de séquence",
+      "NLP",
       "pytorch-crf",
       "seqeval",
       "spaCy"
@@ -2405,6 +2463,7 @@
     ],
     "string-matching": [
       "Fuzzy matching & similarité de chaînes",
+      "NLP",
       "Pattern - Pipeline scraping → matching → optimisation"
     ],
     "structured-output": [
@@ -2442,6 +2501,7 @@
       "Imitation learning",
       "LIME",
       "LightGBM",
+      "Machine Learning",
       "NER et étiquetage de séquence",
       "Naive Bayes",
       "Perceptron et MLP",
@@ -2457,6 +2517,7 @@
       "SHAP",
       "SVM",
       "Scikit-Learn",
+      "Tabulaire",
       "Types de données et choix de modèle",
       "Validation croisée",
       "XGBoost",
@@ -2506,6 +2567,7 @@
     ],
     "text-classification": [
       "Classification de texte",
+      "NLP",
       "NLTK",
       "SetFit"
     ],
@@ -2534,6 +2596,7 @@
       "Prophet",
       "STUMPY",
       "Stationarity",
+      "Séries temporelles",
       "Time series anomaly detection",
       "Time series feature engineering",
       "TimescaleDB",
@@ -2548,6 +2611,7 @@
     ],
     "tokenization": [
       "Constrained decoding",
+      "NLP",
       "NLTK",
       "Tokenization",
       "sentencepiece",
@@ -2600,10 +2664,12 @@
     ],
     "transfer-learning": [
       "Transfer learning vision",
+      "Vision",
       "timm",
       "torchvision"
     ],
     "transformers": [
+      "Apprentissage profond",
       "Architectures hybrides LLM",
       "Attention Residuals",
       "Attention linéaire",
@@ -2613,6 +2679,7 @@
       "Foundation models pour séries temporelles",
       "GLiNER",
       "HuggingFace",
+      "Interprétabilité",
       "Mixture of Experts",
       "Multi-Token Prediction",
       "Multi-head Latent Attention",
@@ -2634,6 +2701,7 @@
       "Isolation Forest",
       "LightGBM",
       "Random Forest",
+      "Tabulaire",
       "XGBoost"
     ],
     "type-hints": [
@@ -2664,6 +2732,7 @@
       "Isolation Forest",
       "K-Means",
       "Local Outlier Factor",
+      "Machine Learning",
       "Manifold learning",
       "NMF",
       "One-Class SVM",
@@ -2683,6 +2752,7 @@
     ],
     "value-function": [
       "Actor-Critic methods",
+      "Apprentissage par renforcement",
       "Bellman equations",
       "Offline RL",
       "Q-learning and DQN",
@@ -2736,6 +2806,7 @@
       "Vision Language Models"
     ],
     "vit": [
+      "Vision",
       "Vision Transformers (ViT)",
       "timm"
     ],
@@ -6044,2129 +6115,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Services/Acme.md",
-      "nom": "Acme",
-      "alias": [
-        "acme",
-        "dm-acme",
-        "deepmind acme"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.",
-      "tags": [
-        "reinforcement-learning"
-      ],
-      "alternatives": [
-        "[[Stable-Baselines3]]",
-        "[[TF-Agents]]",
-        "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Aim.md",
-      "nom": "Aim",
-      "alias": [
-        "aim",
-        "aimstack",
-        "AimHub"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.",
-      "tags": [
-        "experiment-tracking"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]",
-        "[[Neptune]]",
-        "[[Comet]]",
-        "[[ClearML]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/BentoML.md",
-      "nom": "BentoML",
-      "alias": [
-        "bentoml",
-        "bento"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).",
-      "tags": [
-        "model-serving",
-        "inference"
-      ],
-      "alternatives": [
-        "[[NVIDIA Triton]]",
-        "[[KServe]]",
-        "[[Seldon Core]]",
-        "[[TorchServe]]",
-        "[[TensorFlow Serving]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Captum.md",
-      "nom": "Captum",
-      "alias": [
-        "captum",
-        "Captum.ai"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.",
-      "tags": [
-        "explainability",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[SHAP]]",
-        "[[interpreto]]",
-        "[[nnsight]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/CatBoost.md",
-      "nom": "CatBoost",
-      "alias": [
-        "catboost",
-        "Categorical Boosting"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.",
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "boosting"
-      ],
-      "alternatives": [
-        "[[XGBoost]]",
-        "[[LightGBM]]",
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Chronos.md",
-      "nom": "Chronos",
-      "alias": [
-        "Chronos-T5",
-        "Chronos-Bolt",
-        "Chronos-2",
-        "chronos-forecasting"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "modele",
-      "domaines": null,
-      "pitch": "Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).",
-      "tags": [
-        "forecasting",
-        "timeseries",
-        "foundation-model",
-        "transformers",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[darts]]",
-        "[[Prophet]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/ClearML.md",
-      "nom": "ClearML",
-      "alias": [
-        "clearml",
-        "Trains",
-        "Allegro Trains"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry",
-        "orchestration"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]",
-        "[[Neptune]]",
-        "[[Comet]]",
-        "[[Aim]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Comet.md",
-      "nom": "Comet",
-      "alias": [
-        "Comet ML",
-        "comet_ml",
-        "comet.com"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]",
-        "[[Neptune]]",
-        "[[ClearML]]",
-        "[[Aim]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/DeepSpeed.md",
-      "nom": "DeepSpeed",
-      "alias": [
-        "deepspeed",
-        "ds",
-        "ZeRO",
-        "DeepSpeed-Inference"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque Microsoft d'optimisation de l'entraînement (et de l'inférence) à grande échelle — ZeRO shardle les états entre GPU pour entraîner des modèles à des dizaines/centaines de milliards de paramètres, avec offload CPU/NVMe, 3D-parallelism et précision mixte.",
-      "tags": [
-        "distributed-training",
-        "memory-optimization",
-        "deep-learning",
-        "gpu",
-        "mixed-precision"
-      ],
-      "alternatives": [
-        "[[accelerate]]",
-        "[[PyTorch Lightning]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Detectron2.md",
-      "nom": "Detectron2",
-      "alias": [
-        "detectron2",
-        "detectron",
-        "Mask R-CNN",
-        "FAIR detection"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.",
-      "tags": [
-        "object-detection",
-        "segmentation",
-        "computer-vision",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Ultralytics YOLO]]",
-        "[[segment-anything]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Evidently.md",
-      "nom": "Evidently",
-      "alias": [
-        "evidently",
-        "evidently ai",
-        "evidentlyai"
-      ],
-      "role": "brique",
-      "categorie": "ml/monitoring",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.",
-      "tags": [
-        "model-monitoring",
-        "data-drift",
-        "concept-drift",
-        "model-evaluation"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Feast.md",
-      "nom": "Feast",
-      "alias": [
-        "feast"
-      ],
-      "role": "brique",
-      "categorie": "ml/feature-store",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…).",
-      "tags": [
-        "feature-store"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Featuretools.md",
-      "nom": "Featuretools",
-      "alias": [
-        "featuretools",
-        "Deep Feature Synthesis",
-        "DFS"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables.",
-      "tags": [
-        "feature-engineering"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Flyte.md",
-      "nom": "Flyte",
-      "alias": [
-        "flyte",
-        "flytekit"
-      ],
-      "role": "brique",
-      "categorie": "ml/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.",
-      "tags": [
-        "orchestration",
-        "ml-pipeline",
-        "kubernetes"
-      ],
-      "alternatives": [
-        "[[ZenML]]",
-        "[[Metaflow]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/GLiNER.md",
-      "nom": "GLiNER",
-      "alias": [
-        "gliner",
-        "generalist ner"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "modele",
-      "domaines": null,
-      "pitch": "Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.",
-      "tags": [
-        "ner",
-        "nlp",
-        "transformers"
-      ],
-      "alternatives": [
-        "[[spaCy]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Gymnasium.md",
-      "nom": "Gymnasium",
-      "alias": [
-        "gymnasium",
-        "gym",
-        "openai gym",
-        "farama gymnasium"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.",
-      "tags": [
-        "reinforcement-learning"
-      ],
-      "alternatives": [
-        "[[OpenSpiel]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/HuggingFace.md",
-      "nom": "HuggingFace",
-      "alias": [
-        "hugging face",
-        "hf",
-        "huggingface",
-        "transformers",
-        "🤗"
-      ],
-      "role": "brique",
-      "categorie": "ml/hub",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.",
-      "tags": [
-        "transformers",
-        "model-hub",
-        "fine-tuning",
-        "nlp",
-        "deep-learning",
-        "embeddings"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Hyperopt.md",
-      "nom": "Hyperopt",
-      "alias": [
-        "hyperopt",
-        "TPE",
-        "tree-structured Parzen estimator"
-      ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.",
-      "tags": [
-        "hyperparameter-tuning",
-        "bayesian",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Optuna]]",
-        "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/JAX.md",
-      "nom": "JAX",
-      "alias": [
-        "jax",
-        "google-jax",
-        "jax-ml"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.",
-      "tags": [
-        "deep-learning",
-        "gpu",
-        "autograd",
-        "array"
-      ],
-      "alternatives": [
-        "[[PyTorch]]",
-        "[[TensorFlow]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/KServe.md",
-      "nom": "KServe",
-      "alias": [
-        "kserve",
-        "kfserving"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "kubernetes"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[NVIDIA Triton]]",
-        "[[Seldon Core]]",
-        "[[TorchServe]]",
-        "[[TensorFlow Serving]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Keras.md",
-      "nom": "Keras",
-      "alias": [
-        "keras",
-        "keras 3",
-        "keras3",
-        "tf.keras"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "API de deep learning de haut niveau, multi-backend (Keras 3) — le même code de modèle s'exécute sur JAX, TensorFlow ou PyTorch ; construire, entraîner et exporter un réseau vite, sans s'enfermer dans un framework.",
-      "tags": [
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[PyTorch Lightning]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Kornia.md",
-      "nom": "Kornia",
-      "alias": [
-        "kornia",
-        "kornia.augmentation"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.",
-      "tags": [
-        "computer-vision",
-        "data-augmentation",
-        "deep-learning",
-        "gpu",
-        "autograd"
-      ],
-      "alternatives": [
-        "[[albumentations]]",
-        "[[torchvision]]",
-        "[[OpenCV]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LIME.md",
-      "nom": "LIME",
-      "alias": [
-        "lime",
-        "Local Interpretable Model-agnostic Explanations"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.",
-      "tags": [
-        "explainability",
-        "supervised"
-      ],
-      "alternatives": [
-        "[[SHAP]]",
-        "[[interpreto]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/LightGBM.md",
-      "nom": "LightGBM",
-      "alias": [
-        "lightgbm",
-        "lgbm",
-        "Light Gradient Boosting Machine"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.",
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "boosting",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[XGBoost]]",
-        "[[CatBoost]]",
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/MLflow.md",
-      "nom": "MLflow",
-      "alias": [
-        "mlflow"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry"
-      ],
-      "alternatives": [
-        "[[Weights & Biases]]",
-        "[[Neptune]]",
-        "[[Comet]]",
-        "[[ClearML]]",
-        "[[Aim]]",
-        "[[TensorBoard]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Metaflow.md",
-      "nom": "Metaflow",
-      "alias": [
-        "metaflow"
-      ],
-      "role": "brique",
-      "categorie": "ml/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.",
-      "tags": [
-        "orchestration",
-        "ml-pipeline"
-      ],
-      "alternatives": [
-        "[[ZenML]]",
-        "[[Flyte]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/NLTK.md",
-      "nom": "NLTK",
-      "alias": [
-        "Natural Language Toolkit",
-        "nltk"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.",
-      "tags": [
-        "nlp",
-        "tokenization",
-        "text-classification"
-      ],
-      "alternatives": [
-        "[[spaCy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/NVIDIA Triton.md",
-      "nom": "NVIDIA Triton",
-      "alias": [
-        "triton",
-        "triton-inference-server",
-        "dynamo-triton"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[KServe]]",
-        "[[Seldon Core]]",
-        "[[TorchServe]]",
-        "[[TensorFlow Serving]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Neptune.md",
-      "nom": "Neptune",
-      "alias": [
-        "neptune.ai",
-        "neptune-client",
-        "Neptune Scale"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]",
-        "[[Comet]]",
-        "[[ClearML]]",
-        "[[Aim]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/ONNX Runtime.md",
-      "nom": "ONNX Runtime",
-      "alias": [
-        "onnxruntime",
-        "ort",
-        "ONNX RT"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.",
-      "tags": [
-        "inference",
-        "model-serving",
-        "inference-optimization",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[TensorRT]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OpenCV.md",
-      "nom": "OpenCV",
-      "alias": [
-        "opencv",
-        "cv2",
-        "opencv-python",
-        "Open Source Computer Vision Library"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.",
-      "tags": [
-        "computer-vision",
-        "object-detection",
-        "object-tracking"
-      ],
-      "alternatives": [
-        "[[Kornia]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OpenSpiel.md",
-      "nom": "OpenSpiel",
-      "alias": [
-        "openspiel",
-        "open_spiel",
-        "open spiel",
-        "deepmind openspiel"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python.",
-      "tags": [
-        "reinforcement-learning",
-        "game-theory"
-      ],
-      "alternatives": [
-        "[[Gymnasium]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Optuna.md",
-      "nom": "Optuna",
-      "alias": [
-        "optuna",
-        "TPESampler"
-      ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
-      "tags": [
-        "hyperparameter-tuning",
-        "bayesian",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]",
-        "[[Hyperopt]]",
-        "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PaCMAP.md",
-      "nom": "PaCMAP",
-      "alias": [
-        "pacmap",
-        "Pairwise Controlled Manifold Approximation"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.",
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[umap-learn]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Prophet.md",
-      "nom": "Prophet",
-      "alias": [
-        "fbprophet",
-        "fb-prophet"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.",
-      "tags": [
-        "forecasting",
-        "timeseries"
-      ],
-      "alternatives": [
-        "[[statsforecast]]",
-        "[[neuralforecast]]",
-        "[[darts]]",
-        "[[Chronos]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyOD.md",
-      "nom": "PyOD",
-      "alias": [
-        "Python Outlier Detection",
-        "pyod"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.",
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[STUMPY]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyTorch Geometric.md",
-      "nom": "PyTorch Geometric",
-      "alias": [
-        "PyG",
-        "pyg",
-        "torch-geometric",
-        "torch_geometric"
-      ],
-      "role": "brique",
-      "categorie": "ml/graphe",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de référence de deep learning sur graphes pour PyTorch — couches de message passing (GCN, GAT, GraphSAGE…), mini-batching par voisinage et datasets de graphes prêts à l'emploi pour construire et entraîner des GNN.",
-      "tags": [
-        "gnn",
-        "deep-learning",
-        "gpu",
-        "representation-learning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyTorch Lightning.md",
-      "nom": "PyTorch Lightning",
-      "alias": [
-        "pytorch-lightning",
-        "lightning",
-        "pl",
-        "lightning ai",
-        "fabric"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.",
-      "tags": [
-        "deep-learning",
-        "gpu",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Keras]]",
-        "[[accelerate]]",
-        "[[DeepSpeed]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyTorch.md",
-      "nom": "PyTorch",
-      "alias": [
-        "torch",
-        "pytorch",
-        "libtorch"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.",
-      "tags": [
-        "deep-learning",
-        "gpu",
-        "autograd",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[TensorFlow]]",
-        "[[JAX]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/RLax.md",
-      "nom": "RLax",
-      "alias": [
-        "rlax",
-        "rl-ax",
-        "deepmind rlax"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.",
-      "tags": [
-        "reinforcement-learning"
-      ],
-      "alternatives": [
-        "[[Stable-Baselines3]]",
-        "[[Acme]]",
-        "[[TF-Agents]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ray Serve.md",
-      "nom": "Ray Serve",
-      "alias": [
-        "ray serve",
-        "ray.serve",
-        "rayserve"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[NVIDIA Triton]]",
-        "[[KServe]]",
-        "[[Seldon Core]]",
-        "[[TorchServe]]",
-        "[[TensorFlow Serving]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ray Tune.md",
-      "nom": "Ray Tune",
-      "alias": [
-        "ray tune",
-        "ray.tune",
-        "raytune"
-      ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.",
-      "tags": [
-        "hyperparameter-tuning",
-        "distributed",
-        "bayesian"
-      ],
-      "alternatives": [
-        "[[Optuna]]",
-        "[[Hyperopt]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/River.md",
-      "nom": "River",
-      "alias": [
-        "riverml",
-        "river-ml",
-        "online-ml"
-      ],
-      "role": "brique",
-      "categorie": "ml/socle",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow.",
-      "tags": [
-        "streaming",
-        "concept-drift"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/SAELens.md",
-      "nom": "SAELens",
-      "alias": [
-        "sae_lens",
-        "SAE Lens",
-        "HookedSAETransformer"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.",
-      "tags": [
-        "explainability",
-        "llm"
-      ],
-      "alternatives": [
-        "[[TransformerLens]]",
-        "[[interpreto]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/SHAP.md",
-      "nom": "SHAP",
-      "alias": [
-        "shap",
-        "SHapley Additive exPlanations",
-        "TreeSHAP",
-        "KernelSHAP"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.",
-      "tags": [
-        "explainability",
-        "supervised"
-      ],
-      "alternatives": [
-        "[[LIME]]",
-        "[[interpreto]]",
-        "[[Captum]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/STUMPY.md",
-      "nom": "STUMPY",
-      "alias": [
-        "stumpy",
-        "matrix profile python"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.",
-      "tags": [
-        "anomaly-detection",
-        "timeseries"
-      ],
-      "alternatives": [
-        "[[PyOD]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Scikit-Learn.md",
-      "nom": "Scikit-Learn",
-      "alias": [
-        "sklearn",
-        "scikit-learn"
-      ],
-      "role": "brique",
-      "categorie": "ml/socle",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.",
-      "tags": [
-        "supervised",
-        "unsupervised",
-        "dimensionality-reduction",
-        "model-evaluation"
-      ],
-      "alternatives": [
-        "[[XGBoost]]",
-        "[[LightGBM]]",
-        "[[CatBoost]]",
-        "[[Featuretools]]",
-        "[[category_encoders]]",
-        "[[Optuna]]",
-        "[[hdbscan]]",
-        "[[umap-learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Seldon Core.md",
-      "nom": "Seldon Core",
-      "alias": [
-        "seldon",
-        "seldon-core"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "kubernetes"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[NVIDIA Triton]]",
-        "[[KServe]]",
-        "[[TorchServe]]",
-        "[[TensorFlow Serving]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/SetFit.md",
-      "nom": "SetFit",
-      "alias": [
-        "setfit",
-        "few-shot text classification"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM.",
-      "tags": [
-        "text-classification",
-        "nlp",
-        "fine-tuning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Stable-Baselines3.md",
-      "nom": "Stable-Baselines3",
-      "alias": [
-        "SB3",
-        "stable-baselines3",
-        "stable baselines 3",
-        "sb3"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentations fiables et testées d'algorithmes de RL en PyTorch (PPO, A2C, DQN, SAC, TD3, DDPG) — API homogène sur environnements Gymnasium ; la boîte à outils par défaut pour entraîner un agent sans réimplémenter.",
-      "tags": [
-        "reinforcement-learning",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[Acme]]",
-        "[[TF-Agents]]",
-        "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TF-Agents.md",
-      "nom": "TF-Agents",
-      "alias": [
-        "tf-agents",
-        "tf agents",
-        "tensorflow agents"
-      ],
-      "role": "brique",
-      "categorie": "ml/rl",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.",
-      "tags": [
-        "reinforcement-learning"
-      ],
-      "alternatives": [
-        "[[Stable-Baselines3]]",
-        "[[Acme]]",
-        "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TensorBoard.md",
-      "nom": "TensorBoard",
-      "alias": [
-        "tensorboard",
-        "tb"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.",
-      "tags": [
-        "experiment-tracking",
-        "deep-learning",
-        "dataviz"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TensorFlow Serving.md",
-      "nom": "TensorFlow Serving",
-      "alias": [
-        "tf-serving",
-        "tensorflow-serving",
-        "tfserving"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[NVIDIA Triton]]",
-        "[[KServe]]",
-        "[[Seldon Core]]",
-        "[[TorchServe]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TensorFlow.md",
-      "nom": "TensorFlow",
-      "alias": [
-        "tensorflow",
-        "tf",
-        "tf.keras"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.",
-      "tags": [
-        "deep-learning",
-        "gpu",
-        "autograd",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[PyTorch]]",
-        "[[JAX]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TensorRT.md",
-      "nom": "TensorRT",
-      "alias": [
-        "tensorrt",
-        "trt",
-        "TensorRT-LLM",
-        "NVIDIA TensorRT"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.",
-      "tags": [
-        "inference",
-        "inference-optimization",
-        "model-serving",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[ONNX Runtime]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TorchServe.md",
-      "nom": "TorchServe",
-      "alias": [
-        "torchserve",
-        "torch-serve"
-      ],
-      "role": "brique",
-      "categorie": "ml/serving",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.",
-      "tags": [
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[BentoML]]",
-        "[[NVIDIA Triton]]",
-        "[[KServe]]",
-        "[[Seldon Core]]",
-        "[[TensorFlow Serving]]",
-        "[[Ray Serve]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/TransformerLens.md",
-      "nom": "TransformerLens",
-      "alias": [
-        "transformer_lens",
-        "HookedTransformer",
-        "TransformerBridge"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.",
-      "tags": [
-        "explainability",
-        "llm"
-      ],
-      "alternatives": [
-        "[[nnsight]]",
-        "[[SAELens]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ultralytics YOLO.md",
-      "nom": "Ultralytics YOLO",
-      "alias": [
-        "YOLO",
-        "ultralytics",
-        "YOLOv8",
-        "YOLO11",
-        "YOLO26"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "modele",
-      "domaines": null,
-      "pitch": "Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.",
-      "tags": [
-        "object-detection",
-        "segmentation",
-        "pose-estimation",
-        "object-tracking",
-        "computer-vision",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Detectron2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Weights & Biases.md",
-      "nom": "Weights & Biases",
-      "alias": [
-        "wandb",
-        "W&B"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Neptune]]",
-        "[[Comet]]",
-        "[[ClearML]]",
-        "[[Aim]]",
-        "[[TensorBoard]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/XGBoost.md",
-      "nom": "XGBoost",
-      "alias": [
-        "xgboost",
-        "eXtreme Gradient Boosting"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.",
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "boosting",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[LightGBM]]",
-        "[[CatBoost]]",
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/ZenML.md",
-      "nom": "ZenML",
-      "alias": [
-        "zenml"
-      ],
-      "role": "brique",
-      "categorie": "ml/orchestration",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.",
-      "tags": [
-        "orchestration",
-        "ml-pipeline"
-      ],
-      "alternatives": [
-        "[[Metaflow]]",
-        "[[Flyte]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/accelerate.md",
-      "nom": "accelerate",
-      "alias": [
-        "hf accelerate",
-        "huggingface accelerate",
-        "🤗 accelerate"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.",
-      "tags": [
-        "distributed-training",
-        "mixed-precision",
-        "gpu",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[PyTorch Lightning]]",
-        "[[DeepSpeed]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/albumentations.md",
-      "nom": "albumentations",
-      "alias": [
-        "albu",
-        "albumentations-team"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.",
-      "tags": [
-        "computer-vision",
-        "data-augmentation",
-        "object-detection",
-        "segmentation",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[torchvision]]",
-        "[[Kornia]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/category_encoders.md",
-      "nom": "category_encoders",
-      "alias": [
-        "category-encoders",
-        "categorical-encoding",
-        "WOEEncoder"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.",
-      "tags": [
-        "feature-engineering"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/darts.md",
-      "nom": "darts",
-      "alias": [
-        "u8darts",
-        "unit8-darts"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.",
-      "tags": [
-        "forecasting",
-        "timeseries",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[Prophet]]",
-        "[[statsforecast]]",
-        "[[neuralforecast]]",
-        "[[pmdarima]]",
-        "[[Chronos]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/datasets.md",
-      "nom": "datasets",
-      "alias": [
-        "hf datasets",
-        "huggingface datasets",
-        "🤗 datasets"
-      ],
-      "role": "brique",
-      "categorie": "ml/hub",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub.",
-      "tags": [
-        "out-of-core",
-        "streaming",
-        "nlp",
-        "deep-learning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/evaluate.md",
-      "nom": "evaluate",
-      "alias": [
-        "hf evaluate",
-        "huggingface evaluate",
-        "🤗 evaluate"
-      ],
-      "role": "brique",
-      "categorie": "ml/eval",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre.",
-      "tags": [
-        "model-evaluation",
-        "nlp",
-        "benchmark"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/hdbscan.md",
-      "nom": "hdbscan",
-      "alias": [
-        "HDBSCAN library",
-        "scikit-learn-contrib hdbscan"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).",
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/imbalanced-learn.md",
-      "nom": "imbalanced-learn",
-      "alias": [
-        "imblearn",
-        "imbalanced learn",
-        "imb-learn"
-      ],
-      "role": "brique",
-      "categorie": "ml/tabulaire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement.",
-      "tags": [
-        "class-imbalance",
-        "classification",
-        "supervised"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/interpreto.md",
-      "nom": "interpreto",
-      "alias": [
-        "Interpreto",
-        "FOR-sight interpreto"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.",
-      "tags": [
-        "explainability",
-        "llm",
-        "nlp"
-      ],
-      "alternatives": [
-        "[[SHAP]]",
-        "[[LIME]]",
-        "[[Captum]]",
-        "[[SAELens]]"
-      ],
-      "complements": [],
-      "maturite": "experimental"
-    },
-    {
-      "path": "Dev/Services/neuralforecast.md",
-      "nom": "neuralforecast",
-      "alias": [
-        "nixtla-neuralforecast"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.",
-      "tags": [
-        "forecasting",
-        "timeseries",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[statsforecast]]",
-        "[[darts]]",
-        "[[Prophet]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/nnsight.md",
-      "nom": "nnsight",
-      "alias": [
-        "NNsight",
-        "nnsight.net",
-        "NDIF"
-      ],
-      "role": "brique",
-      "categorie": "ml/interpretabilite",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).",
-      "tags": [
-        "explainability",
-        "llm"
-      ],
-      "alternatives": [
-        "[[TransformerLens]]",
-        "[[Captum]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/pmdarima.md",
-      "nom": "pmdarima",
-      "alias": [
-        "pyramid-arima",
-        "auto-arima",
-        "pmd"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.",
-      "tags": [
-        "forecasting",
-        "timeseries"
-      ],
-      "alternatives": [
-        "[[statsforecast]]",
-        "[[darts]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/pykan.md",
-      "nom": "pykan",
-      "alias": [
-        "KAN python",
-        "kindxiaoming pykan"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.",
-      "tags": [
-        "deep-learning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "experimental"
-    },
-    {
-      "path": "Dev/Services/pytorch-crf.md",
-      "nom": "pytorch-crf",
-      "alias": [
-        "torchcrf",
-        "pytorch crf",
-        "conditional random field pytorch"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.",
-      "tags": [
-        "sequence-labeling",
-        "ner",
-        "deep-learning"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/segment-anything.md",
-      "nom": "segment-anything",
-      "alias": [
-        "SAM",
-        "Segment Anything Model",
-        "sam2",
-        "sam3"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "modele",
-      "domaines": null,
-      "pitch": "Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).",
-      "tags": [
-        "segmentation",
-        "foundation-model",
-        "computer-vision",
-        "transformers",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Detectron2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/sentence-transformers.md",
-      "nom": "sentence-transformers",
-      "alias": [
-        "sbert",
-        "sentence transformers",
-        "sentence-bert"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.",
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "retrieval",
-        "reranking",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/sentencepiece.md",
-      "nom": "sentencepiece",
-      "alias": [
-        "sentence-piece",
-        "spm",
-        "google sentencepiece"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.",
-      "tags": [
-        "tokenization",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/seqeval.md",
-      "nom": "seqeval",
-      "alias": [
-        "seq eval"
-      ],
-      "role": "brique",
-      "categorie": "ml/eval",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger.",
-      "tags": [
-        "ner",
-        "sequence-labeling",
-        "model-evaluation",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/spaCy.md",
-      "nom": "spaCy",
-      "alias": [
-        "spacy",
-        "explosion spacy"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.",
-      "tags": [
-        "nlp",
-        "ner",
-        "sequence-labeling",
-        "tokenization"
-      ],
-      "alternatives": [
-        "[[GLiNER]]",
-        "[[NLTK]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/statsforecast.md",
-      "nom": "statsforecast",
-      "alias": [
-        "nixtla-statsforecast"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).",
-      "tags": [
-        "forecasting",
-        "timeseries",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Prophet]]",
-        "[[neuralforecast]]",
-        "[[darts]]",
-        "[[pmdarima]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/supervision.md",
-      "nom": "supervision",
-      "alias": [
-        "roboflow supervision",
-        "sv"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application.",
-      "tags": [
-        "object-detection",
-        "object-tracking",
-        "computer-vision"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/timm.md",
-      "nom": "timm",
-      "alias": [
-        "pytorch-image-models",
-        "PyTorch Image Models",
-        "torch image models"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.",
-      "tags": [
-        "computer-vision",
-        "cnn",
-        "vit",
-        "transfer-learning",
-        "fine-tuning",
-        "deep-learning",
-        "model-hub"
-      ],
-      "alternatives": [
-        "[[torchvision]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/torchvision.md",
-      "nom": "torchvision",
-      "alias": [
-        "torch vision",
-        "tv",
-        "torchvision.transforms"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.",
-      "tags": [
-        "computer-vision",
-        "cnn",
-        "transfer-learning",
-        "data-augmentation",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[timm]]",
-        "[[albumentations]]",
-        "[[Kornia]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/umap-learn.md",
-      "nom": "umap-learn",
-      "alias": [
-        "UMAP",
-        "Uniform Manifold Approximation and Projection"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.",
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]",
-        "[[PaCMAP]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "DevOps/DevOps.md",
       "nom": "DevOps",
       "alias": [
@@ -10620,6 +8568,2408 @@
         "[[DeepEval]]",
         "[[Ragas]]",
         "[[TruLens]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Acme.md",
+      "nom": "Acme",
+      "alias": [
+        "acme",
+        "dm-acme",
+        "deepmind acme"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.",
+      "tags": [
+        "reinforcement-learning"
+      ],
+      "alternatives": [
+        "[[Stable-Baselines3]]",
+        "[[TF-Agents]]",
+        "[[RLax]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Apprentissage par renforcement.md",
+      "nom": "Apprentissage par renforcement",
+      "alias": [
+        "RL"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.",
+      "tags": [
+        "reinforcement-learning",
+        "markov-decision-process",
+        "policy-gradient",
+        "value-function",
+        "exploration-exploitation",
+        "offline-rl",
+        "imitation-learning",
+        "game-theory",
+        "self-play"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Gymnasium.md",
+      "nom": "Gymnasium",
+      "alias": [
+        "gymnasium",
+        "gym",
+        "openai gym",
+        "farama gymnasium"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.",
+      "tags": [
+        "reinforcement-learning"
+      ],
+      "alternatives": [
+        "[[OpenSpiel]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/OpenSpiel.md",
+      "nom": "OpenSpiel",
+      "alias": [
+        "openspiel",
+        "open_spiel",
+        "open spiel",
+        "deepmind openspiel"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python.",
+      "tags": [
+        "reinforcement-learning",
+        "game-theory"
+      ],
+      "alternatives": [
+        "[[Gymnasium]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/RLax.md",
+      "nom": "RLax",
+      "alias": [
+        "rlax",
+        "rl-ax",
+        "deepmind rlax"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.",
+      "tags": [
+        "reinforcement-learning"
+      ],
+      "alternatives": [
+        "[[Stable-Baselines3]]",
+        "[[Acme]]",
+        "[[TF-Agents]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Stable-Baselines3.md",
+      "nom": "Stable-Baselines3",
+      "alias": [
+        "SB3",
+        "stable-baselines3",
+        "stable baselines 3",
+        "sb3"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentations fiables et testées d'algorithmes de RL en PyTorch (PPO, A2C, DQN, SAC, TD3, DDPG) — API homogène sur environnements Gymnasium ; la boîte à outils par défaut pour entraîner un agent sans réimplémenter.",
+      "tags": [
+        "reinforcement-learning",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[Acme]]",
+        "[[TF-Agents]]",
+        "[[RLax]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/TF-Agents.md",
+      "nom": "TF-Agents",
+      "alias": [
+        "tf-agents",
+        "tf agents",
+        "tensorflow agents"
+      ],
+      "role": "brique",
+      "categorie": "ml/rl",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.",
+      "tags": [
+        "reinforcement-learning"
+      ],
+      "alternatives": [
+        "[[Stable-Baselines3]]",
+        "[[Acme]]",
+        "[[RLax]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Apprentissage profond.md",
+      "nom": "Apprentissage profond",
+      "alias": [
+        "deep learning",
+        "réseaux de neurones"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.",
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "autograd",
+        "transformers",
+        "attention",
+        "distributed-training",
+        "mixed-precision",
+        "quantization",
+        "model-compression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/DeepSpeed.md",
+      "nom": "DeepSpeed",
+      "alias": [
+        "deepspeed",
+        "ds",
+        "ZeRO",
+        "DeepSpeed-Inference"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque Microsoft d'optimisation de l'entraînement (et de l'inférence) à grande échelle — ZeRO shardle les états entre GPU pour entraîner des modèles à des dizaines/centaines de milliards de paramètres, avec offload CPU/NVMe, 3D-parallelism et précision mixte.",
+      "tags": [
+        "distributed-training",
+        "memory-optimization",
+        "deep-learning",
+        "gpu",
+        "mixed-precision"
+      ],
+      "alternatives": [
+        "[[accelerate]]",
+        "[[PyTorch Lightning]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/JAX.md",
+      "nom": "JAX",
+      "alias": [
+        "jax",
+        "google-jax",
+        "jax-ml"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.",
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "autograd",
+        "array"
+      ],
+      "alternatives": [
+        "[[PyTorch]]",
+        "[[TensorFlow]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Keras.md",
+      "nom": "Keras",
+      "alias": [
+        "keras",
+        "keras 3",
+        "keras3",
+        "tf.keras"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "API de deep learning de haut niveau, multi-backend (Keras 3) — le même code de modèle s'exécute sur JAX, TensorFlow ou PyTorch ; construire, entraîner et exporter un réseau vite, sans s'enfermer dans un framework.",
+      "tags": [
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[PyTorch Lightning]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/PyTorch Lightning.md",
+      "nom": "PyTorch Lightning",
+      "alias": [
+        "pytorch-lightning",
+        "lightning",
+        "pl",
+        "lightning ai",
+        "fabric"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.",
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Keras]]",
+        "[[accelerate]]",
+        "[[DeepSpeed]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/PyTorch.md",
+      "nom": "PyTorch",
+      "alias": [
+        "torch",
+        "pytorch",
+        "libtorch"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.",
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "autograd",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[TensorFlow]]",
+        "[[JAX]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/TensorFlow.md",
+      "nom": "TensorFlow",
+      "alias": [
+        "tensorflow",
+        "tf",
+        "tf.keras"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.",
+      "tags": [
+        "deep-learning",
+        "gpu",
+        "autograd",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[PyTorch]]",
+        "[[JAX]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/accelerate.md",
+      "nom": "accelerate",
+      "alias": [
+        "hf accelerate",
+        "huggingface accelerate",
+        "🤗 accelerate"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.",
+      "tags": [
+        "distributed-training",
+        "mixed-precision",
+        "gpu",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[PyTorch Lightning]]",
+        "[[DeepSpeed]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/pykan.md",
+      "nom": "pykan",
+      "alias": [
+        "KAN python",
+        "kindxiaoming pykan"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.",
+      "tags": [
+        "deep-learning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/Evidently.md",
+      "nom": "Evidently",
+      "alias": [
+        "evidently",
+        "evidently ai",
+        "evidentlyai"
+      ],
+      "role": "brique",
+      "categorie": "ml/monitoring",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.",
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "concept-drift",
+        "model-evaluation"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Feast.md",
+      "nom": "Feast",
+      "alias": [
+        "feast"
+      ],
+      "role": "brique",
+      "categorie": "ml/feature-store",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…).",
+      "tags": [
+        "feature-store"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Flyte.md",
+      "nom": "Flyte",
+      "alias": [
+        "flyte",
+        "flytekit"
+      ],
+      "role": "brique",
+      "categorie": "ml/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.",
+      "tags": [
+        "orchestration",
+        "ml-pipeline",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[ZenML]]",
+        "[[Metaflow]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/HuggingFace.md",
+      "nom": "HuggingFace",
+      "alias": [
+        "hugging face",
+        "hf",
+        "huggingface",
+        "transformers",
+        "🤗"
+      ],
+      "role": "brique",
+      "categorie": "ml/hub",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.",
+      "tags": [
+        "transformers",
+        "model-hub",
+        "fine-tuning",
+        "nlp",
+        "deep-learning",
+        "embeddings"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Hyperopt.md",
+      "nom": "Hyperopt",
+      "alias": [
+        "hyperopt",
+        "TPE",
+        "tree-structured Parzen estimator"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Optuna]]",
+        "[[Ray Tune]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Captum.md",
+      "nom": "Captum",
+      "alias": [
+        "captum",
+        "Captum.ai"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.",
+      "tags": [
+        "explainability",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[SHAP]]",
+        "[[interpreto]]",
+        "[[nnsight]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Interprétabilité.md",
+      "nom": "Interprétabilité",
+      "alias": [
+        "explicabilité",
+        "XAI"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": "Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.",
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "transformers",
+        "llm",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/LIME.md",
+      "nom": "LIME",
+      "alias": [
+        "lime",
+        "Local Interpretable Model-agnostic Explanations"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.",
+      "tags": [
+        "explainability",
+        "supervised"
+      ],
+      "alternatives": [
+        "[[SHAP]]",
+        "[[interpreto]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/SAELens.md",
+      "nom": "SAELens",
+      "alias": [
+        "sae_lens",
+        "SAE Lens",
+        "HookedSAETransformer"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[TransformerLens]]",
+        "[[interpreto]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/SHAP.md",
+      "nom": "SHAP",
+      "alias": [
+        "shap",
+        "SHapley Additive exPlanations",
+        "TreeSHAP",
+        "KernelSHAP"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.",
+      "tags": [
+        "explainability",
+        "supervised"
+      ],
+      "alternatives": [
+        "[[LIME]]",
+        "[[interpreto]]",
+        "[[Captum]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/TransformerLens.md",
+      "nom": "TransformerLens",
+      "alias": [
+        "transformer_lens",
+        "HookedTransformer",
+        "TransformerBridge"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[nnsight]]",
+        "[[SAELens]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/interpreto.md",
+      "nom": "interpreto",
+      "alias": [
+        "Interpreto",
+        "FOR-sight interpreto"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.",
+      "tags": [
+        "explainability",
+        "llm",
+        "nlp"
+      ],
+      "alternatives": [
+        "[[SHAP]]",
+        "[[LIME]]",
+        "[[Captum]]",
+        "[[SAELens]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/nnsight.md",
+      "nom": "nnsight",
+      "alias": [
+        "NNsight",
+        "nnsight.net",
+        "NDIF"
+      ],
+      "role": "brique",
+      "categorie": "ml/interpretabilite",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).",
+      "tags": [
+        "explainability",
+        "llm"
+      ],
+      "alternatives": [
+        "[[TransformerLens]]",
+        "[[Captum]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/Machine Learning.md",
+      "nom": "Machine Learning",
+      "alias": [
+        "ML",
+        "apprentissage automatique"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": "Apprendre une fonction à partir de données — la cadrer, l'entraîner, mesurer ce qu'elle vaut, puis la tenir en production.",
+      "tags": [
+        "supervised",
+        "unsupervised",
+        "model-evaluation",
+        "feature-engineering",
+        "hyperparameter-tuning",
+        "ml-pipeline",
+        "model-monitoring",
+        "explainability",
+        "ensemble",
+        "clustering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Metaflow.md",
+      "nom": "Metaflow",
+      "alias": [
+        "metaflow"
+      ],
+      "role": "brique",
+      "categorie": "ml/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.",
+      "tags": [
+        "orchestration",
+        "ml-pipeline"
+      ],
+      "alternatives": [
+        "[[ZenML]]",
+        "[[Flyte]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/GLiNER.md",
+      "nom": "GLiNER",
+      "alias": [
+        "gliner",
+        "generalist ner"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "modele",
+      "domaines": null,
+      "pitch": "Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.",
+      "tags": [
+        "ner",
+        "nlp",
+        "transformers"
+      ],
+      "alternatives": [
+        "[[spaCy]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/NLP/NLP.md",
+      "nom": "NLP",
+      "alias": [
+        "traitement automatique du langage",
+        "TAL"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.",
+      "tags": [
+        "nlp",
+        "ner",
+        "sequence-labeling",
+        "text-classification",
+        "information-retrieval",
+        "tokenization",
+        "string-matching"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/NLP/NLTK.md",
+      "nom": "NLTK",
+      "alias": [
+        "Natural Language Toolkit",
+        "nltk"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.",
+      "tags": [
+        "nlp",
+        "tokenization",
+        "text-classification"
+      ],
+      "alternatives": [
+        "[[spaCy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/SetFit.md",
+      "nom": "SetFit",
+      "alias": [
+        "setfit",
+        "few-shot text classification"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM.",
+      "tags": [
+        "text-classification",
+        "nlp",
+        "fine-tuning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/pytorch-crf.md",
+      "nom": "pytorch-crf",
+      "alias": [
+        "torchcrf",
+        "pytorch crf",
+        "conditional random field pytorch"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.",
+      "tags": [
+        "sequence-labeling",
+        "ner",
+        "deep-learning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/sentencepiece.md",
+      "nom": "sentencepiece",
+      "alias": [
+        "sentence-piece",
+        "spm",
+        "google sentencepiece"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.",
+      "tags": [
+        "tokenization",
+        "nlp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/spaCy.md",
+      "nom": "spaCy",
+      "alias": [
+        "spacy",
+        "explosion spacy"
+      ],
+      "role": "brique",
+      "categorie": "ml/nlp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.",
+      "tags": [
+        "nlp",
+        "ner",
+        "sequence-labeling",
+        "tokenization"
+      ],
+      "alternatives": [
+        "[[GLiNER]]",
+        "[[NLTK]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Optuna.md",
+      "nom": "Optuna",
+      "alias": [
+        "optuna",
+        "TPESampler"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]",
+        "[[Hyperopt]]",
+        "[[Ray Tune]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/PaCMAP.md",
+      "nom": "PaCMAP",
+      "alias": [
+        "pacmap",
+        "Pairwise Controlled Manifold Approximation"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.",
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[umap-learn]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/PyOD.md",
+      "nom": "PyOD",
+      "alias": [
+        "Python Outlier Detection",
+        "pyod"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.",
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[STUMPY]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/PyTorch Geometric.md",
+      "nom": "PyTorch Geometric",
+      "alias": [
+        "PyG",
+        "pyg",
+        "torch-geometric",
+        "torch_geometric"
+      ],
+      "role": "brique",
+      "categorie": "ml/graphe",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de référence de deep learning sur graphes pour PyTorch — couches de message passing (GCN, GAT, GraphSAGE…), mini-batching par voisinage et datasets de graphes prêts à l'emploi pour construire et entraîner des GNN.",
+      "tags": [
+        "gnn",
+        "deep-learning",
+        "gpu",
+        "representation-learning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Ray Tune.md",
+      "nom": "Ray Tune",
+      "alias": [
+        "ray tune",
+        "ray.tune",
+        "raytune"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.",
+      "tags": [
+        "hyperparameter-tuning",
+        "distributed",
+        "bayesian"
+      ],
+      "alternatives": [
+        "[[Optuna]]",
+        "[[Hyperopt]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/River.md",
+      "nom": "River",
+      "alias": [
+        "riverml",
+        "river-ml",
+        "online-ml"
+      ],
+      "role": "brique",
+      "categorie": "ml/socle",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow.",
+      "tags": [
+        "streaming",
+        "concept-drift"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Scikit-Learn.md",
+      "nom": "Scikit-Learn",
+      "alias": [
+        "sklearn",
+        "scikit-learn"
+      ],
+      "role": "brique",
+      "categorie": "ml/socle",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.",
+      "tags": [
+        "supervised",
+        "unsupervised",
+        "dimensionality-reduction",
+        "model-evaluation"
+      ],
+      "alternatives": [
+        "[[XGBoost]]",
+        "[[LightGBM]]",
+        "[[CatBoost]]",
+        "[[Featuretools]]",
+        "[[category_encoders]]",
+        "[[Optuna]]",
+        "[[hdbscan]]",
+        "[[umap-learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/BentoML.md",
+      "nom": "BentoML",
+      "alias": [
+        "bentoml",
+        "bento"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).",
+      "tags": [
+        "model-serving",
+        "inference"
+      ],
+      "alternatives": [
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/KServe.md",
+      "nom": "KServe",
+      "alias": [
+        "kserve",
+        "kfserving"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/NVIDIA Triton.md",
+      "nom": "NVIDIA Triton",
+      "alias": [
+        "triton",
+        "triton-inference-server",
+        "dynamo-triton"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/ONNX Runtime.md",
+      "nom": "ONNX Runtime",
+      "alias": [
+        "onnxruntime",
+        "ort",
+        "ONNX RT"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.",
+      "tags": [
+        "inference",
+        "model-serving",
+        "inference-optimization",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[TensorRT]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/Ray Serve.md",
+      "nom": "Ray Serve",
+      "alias": [
+        "ray serve",
+        "ray.serve",
+        "rayserve"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/Seldon Core.md",
+      "nom": "Seldon Core",
+      "alias": [
+        "seldon",
+        "seldon-core"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/Serving.md",
+      "nom": "Serving",
+      "alias": [
+        "serving de modèles",
+        "inférence"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": "Exposer un modèle déjà entraîné derrière une API — et tenir la latence, le débit et les versions.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "deployment-strategy",
+        "kubernetes",
+        "gpu",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Serving/TensorFlow Serving.md",
+      "nom": "TensorFlow Serving",
+      "alias": [
+        "tf-serving",
+        "tensorflow-serving",
+        "tfserving"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/TensorRT.md",
+      "nom": "TensorRT",
+      "alias": [
+        "tensorrt",
+        "trt",
+        "TensorRT-LLM",
+        "NVIDIA TensorRT"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.",
+      "tags": [
+        "inference",
+        "inference-optimization",
+        "model-serving",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[ONNX Runtime]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/TorchServe.md",
+      "nom": "TorchServe",
+      "alias": [
+        "torchserve",
+        "torch-serve"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.",
+      "tags": [
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Aim.md",
+      "nom": "Aim",
+      "alias": [
+        "aim",
+        "aimstack",
+        "AimHub"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.",
+      "tags": [
+        "experiment-tracking"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/ClearML.md",
+      "nom": "ClearML",
+      "alias": [
+        "clearml",
+        "Trains",
+        "Allegro Trains"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry",
+        "orchestration"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[Aim]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Comet.md",
+      "nom": "Comet",
+      "alias": [
+        "Comet ML",
+        "comet_ml",
+        "comet.com"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[ClearML]]",
+        "[[Aim]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/MLflow.md",
+      "nom": "MLflow",
+      "alias": [
+        "mlflow"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "alternatives": [
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]",
+        "[[TensorBoard]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Neptune.md",
+      "nom": "Neptune",
+      "alias": [
+        "neptune.ai",
+        "neptune-client",
+        "Neptune Scale"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Suivi d'expériences.md",
+      "nom": "Suivi d'expériences",
+      "alias": [
+        "experiment tracking",
+        "tracking ML"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": "Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry",
+        "reproducibility",
+        "hyperparameter-tuning",
+        "ml-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/TensorBoard.md",
+      "nom": "TensorBoard",
+      "alias": [
+        "tensorboard",
+        "tb"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.",
+      "tags": [
+        "experiment-tracking",
+        "deep-learning",
+        "dataviz"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Weights & Biases]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Weights & Biases.md",
+      "nom": "Weights & Biases",
+      "alias": [
+        "wandb",
+        "W&B"
+      ],
+      "role": "brique",
+      "categorie": "ml/tracking",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.",
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "alternatives": [
+        "[[MLflow]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]",
+        "[[TensorBoard]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/Chronos.md",
+      "nom": "Chronos",
+      "alias": [
+        "Chronos-T5",
+        "Chronos-Bolt",
+        "Chronos-2",
+        "chronos-forecasting"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "modele",
+      "domaines": null,
+      "pitch": "Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).",
+      "tags": [
+        "forecasting",
+        "timeseries",
+        "foundation-model",
+        "transformers",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[darts]]",
+        "[[Prophet]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/Prophet.md",
+      "nom": "Prophet",
+      "alias": [
+        "fbprophet",
+        "fb-prophet"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.",
+      "tags": [
+        "forecasting",
+        "timeseries"
+      ],
+      "alternatives": [
+        "[[statsforecast]]",
+        "[[neuralforecast]]",
+        "[[darts]]",
+        "[[Chronos]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/STUMPY.md",
+      "nom": "STUMPY",
+      "alias": [
+        "stumpy",
+        "matrix profile python"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.",
+      "tags": [
+        "anomaly-detection",
+        "timeseries"
+      ],
+      "alternatives": [
+        "[[PyOD]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/Séries temporelles.md",
+      "nom": "Séries temporelles",
+      "alias": [
+        "forecasting",
+        "prévision"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.",
+      "tags": [
+        "timeseries",
+        "forecasting",
+        "anomaly-detection",
+        "foundation-model"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/darts.md",
+      "nom": "darts",
+      "alias": [
+        "u8darts",
+        "unit8-darts"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.",
+      "tags": [
+        "forecasting",
+        "timeseries",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[Prophet]]",
+        "[[statsforecast]]",
+        "[[neuralforecast]]",
+        "[[pmdarima]]",
+        "[[Chronos]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/neuralforecast.md",
+      "nom": "neuralforecast",
+      "alias": [
+        "nixtla-neuralforecast"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.",
+      "tags": [
+        "forecasting",
+        "timeseries",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[statsforecast]]",
+        "[[darts]]",
+        "[[Prophet]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/pmdarima.md",
+      "nom": "pmdarima",
+      "alias": [
+        "pyramid-arima",
+        "auto-arima",
+        "pmd"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.",
+      "tags": [
+        "forecasting",
+        "timeseries"
+      ],
+      "alternatives": [
+        "[[statsforecast]]",
+        "[[darts]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/statsforecast.md",
+      "nom": "statsforecast",
+      "alias": [
+        "nixtla-statsforecast"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).",
+      "tags": [
+        "forecasting",
+        "timeseries",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Prophet]]",
+        "[[neuralforecast]]",
+        "[[darts]]",
+        "[[pmdarima]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/CatBoost.md",
+      "nom": "CatBoost",
+      "alias": [
+        "catboost",
+        "Categorical Boosting"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.",
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "boosting"
+      ],
+      "alternatives": [
+        "[[XGBoost]]",
+        "[[LightGBM]]",
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Featuretools.md",
+      "nom": "Featuretools",
+      "alias": [
+        "featuretools",
+        "Deep Feature Synthesis",
+        "DFS"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables.",
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/LightGBM.md",
+      "nom": "LightGBM",
+      "alias": [
+        "lightgbm",
+        "lgbm",
+        "Light Gradient Boosting Machine"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.",
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "boosting",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[XGBoost]]",
+        "[[CatBoost]]",
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Tabulaire.md",
+      "nom": "Tabulaire",
+      "alias": [
+        "données tabulaires"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.",
+      "tags": [
+        "tree-based",
+        "boosting",
+        "ensemble",
+        "feature-engineering",
+        "class-imbalance",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/XGBoost.md",
+      "nom": "XGBoost",
+      "alias": [
+        "xgboost",
+        "eXtreme Gradient Boosting"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.",
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "boosting",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[LightGBM]]",
+        "[[CatBoost]]",
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/category_encoders.md",
+      "nom": "category_encoders",
+      "alias": [
+        "category-encoders",
+        "categorical-encoding",
+        "WOEEncoder"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.",
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/imbalanced-learn.md",
+      "nom": "imbalanced-learn",
+      "alias": [
+        "imblearn",
+        "imbalanced learn",
+        "imb-learn"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement.",
+      "tags": [
+        "class-imbalance",
+        "classification",
+        "supervised"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Detectron2.md",
+      "nom": "Detectron2",
+      "alias": [
+        "detectron2",
+        "detectron",
+        "Mask R-CNN",
+        "FAIR detection"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.",
+      "tags": [
+        "object-detection",
+        "segmentation",
+        "computer-vision",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Ultralytics YOLO]]",
+        "[[segment-anything]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Kornia.md",
+      "nom": "Kornia",
+      "alias": [
+        "kornia",
+        "kornia.augmentation"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.",
+      "tags": [
+        "computer-vision",
+        "data-augmentation",
+        "deep-learning",
+        "gpu",
+        "autograd"
+      ],
+      "alternatives": [
+        "[[albumentations]]",
+        "[[torchvision]]",
+        "[[OpenCV]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/OpenCV.md",
+      "nom": "OpenCV",
+      "alias": [
+        "opencv",
+        "cv2",
+        "opencv-python",
+        "Open Source Computer Vision Library"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.",
+      "tags": [
+        "computer-vision",
+        "object-detection",
+        "object-tracking"
+      ],
+      "alternatives": [
+        "[[Kornia]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Ultralytics YOLO.md",
+      "nom": "Ultralytics YOLO",
+      "alias": [
+        "YOLO",
+        "ultralytics",
+        "YOLOv8",
+        "YOLO11",
+        "YOLO26"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "modele",
+      "domaines": null,
+      "pitch": "Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.",
+      "tags": [
+        "object-detection",
+        "segmentation",
+        "pose-estimation",
+        "object-tracking",
+        "computer-vision",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Detectron2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Vision.md",
+      "nom": "Vision",
+      "alias": [
+        "CV"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.",
+      "tags": [
+        "computer-vision",
+        "cnn",
+        "vit",
+        "object-detection",
+        "segmentation",
+        "image-classification",
+        "data-augmentation",
+        "object-tracking",
+        "transfer-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/albumentations.md",
+      "nom": "albumentations",
+      "alias": [
+        "albu",
+        "albumentations-team"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.",
+      "tags": [
+        "computer-vision",
+        "data-augmentation",
+        "object-detection",
+        "segmentation",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[torchvision]]",
+        "[[Kornia]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/segment-anything.md",
+      "nom": "segment-anything",
+      "alias": [
+        "SAM",
+        "Segment Anything Model",
+        "sam2",
+        "sam3"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "modele",
+      "domaines": null,
+      "pitch": "Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).",
+      "tags": [
+        "segmentation",
+        "foundation-model",
+        "computer-vision",
+        "transformers",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Detectron2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/supervision.md",
+      "nom": "supervision",
+      "alias": [
+        "roboflow supervision",
+        "sv"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application.",
+      "tags": [
+        "object-detection",
+        "object-tracking",
+        "computer-vision"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/timm.md",
+      "nom": "timm",
+      "alias": [
+        "pytorch-image-models",
+        "PyTorch Image Models",
+        "torch image models"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.",
+      "tags": [
+        "computer-vision",
+        "cnn",
+        "vit",
+        "transfer-learning",
+        "fine-tuning",
+        "deep-learning",
+        "model-hub"
+      ],
+      "alternatives": [
+        "[[torchvision]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/torchvision.md",
+      "nom": "torchvision",
+      "alias": [
+        "torch vision",
+        "tv",
+        "torchvision.transforms"
+      ],
+      "role": "brique",
+      "categorie": "ml/vision",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.",
+      "tags": [
+        "computer-vision",
+        "cnn",
+        "transfer-learning",
+        "data-augmentation",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[timm]]",
+        "[[albumentations]]",
+        "[[Kornia]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/ZenML.md",
+      "nom": "ZenML",
+      "alias": [
+        "zenml"
+      ],
+      "role": "brique",
+      "categorie": "ml/orchestration",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.",
+      "tags": [
+        "orchestration",
+        "ml-pipeline"
+      ],
+      "alternatives": [
+        "[[Metaflow]]",
+        "[[Flyte]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/datasets.md",
+      "nom": "datasets",
+      "alias": [
+        "hf datasets",
+        "huggingface datasets",
+        "🤗 datasets"
+      ],
+      "role": "brique",
+      "categorie": "ml/hub",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub.",
+      "tags": [
+        "out-of-core",
+        "streaming",
+        "nlp",
+        "deep-learning"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/evaluate.md",
+      "nom": "evaluate",
+      "alias": [
+        "hf evaluate",
+        "huggingface evaluate",
+        "🤗 evaluate"
+      ],
+      "role": "brique",
+      "categorie": "ml/eval",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre.",
+      "tags": [
+        "model-evaluation",
+        "nlp",
+        "benchmark"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/hdbscan.md",
+      "nom": "hdbscan",
+      "alias": [
+        "HDBSCAN library",
+        "scikit-learn-contrib hdbscan"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).",
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/sentence-transformers.md",
+      "nom": "sentence-transformers",
+      "alias": [
+        "sbert",
+        "sentence transformers",
+        "sentence-bert"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.",
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "reranking",
+        "nlp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/seqeval.md",
+      "nom": "seqeval",
+      "alias": [
+        "seq eval"
+      ],
+      "role": "brique",
+      "categorie": "ml/eval",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger.",
+      "tags": [
+        "ner",
+        "sequence-labeling",
+        "model-evaluation",
+        "nlp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/umap-learn.md",
+      "nom": "umap-learn",
+      "alias": [
+        "UMAP",
+        "Uniform Manifold Approximation and Projection"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.",
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]",
+        "[[PaCMAP]]"
       ],
       "complements": [],
       "maturite": "production"

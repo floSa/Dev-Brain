@@ -278,8 +278,21 @@ def main() -> int:
         key, label, scope, intro = wiki_group(p.get("categorie") or "")
         sub_groups.setdefault(key, []).append(p)
         wiki_meta[key] = (label, scope, intro)
+    # Un sous-hub MOC/Concepts dont le LIBELLÉ est désormais porté par une page
+    # `role: hub` de l'arbre a été absorbé par ce hub (`git mv`), comme une MOC de
+    # domaine l'est par le hub de son dossier — cf. remontées 6 et 15 de
+    # AI/migration/lot-3-arborescence.md. Le recréer remettrait DEUX fichiers du même
+    # nom dans le vault, et un lien nu n'y résout plus de façon déterministe. Ses
+    # notions restent atteignables (R7) par les citations en clair du hub, jusqu'à ce
+    # que le lot 4 les descende dans son dossier.
+    portes_par_un_hub = {h.stem for h in hubs()}
     for key, members in sorted(sub_groups.items()):
         label, scope, intro = wiki_meta[key]
+        if label in portes_par_un_hub:
+            skipped.append(f"MOC/Concepts/{label}.md non recréé — absorbé par la page "
+                           f"`role: hub` du même nom ({len(members)} notion(s) "
+                           f"`{scope}` citées par ce hub jusqu'au lot 4)")
+            continue
         bullets = [bullet(p) for p in sorted(members, key=lambda e: e["nom"].lower())]
         upsert(MOC_CONCEPT / f"{label}.md", label, intro, bullets, scope)
         written.append(("Concepts", label, len(members)))

@@ -11,6 +11,7 @@ tags: [meta]
 
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
+- [[Machine Learning]] — 85 briques, 9 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]]
 - [[LLM & IA générative]] — 74 briques, 6 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]]
 - [[Bases de données]] — 47 briques, 4 sous-domaines
 - [[Statistiques & inférence]] — 10 briques
@@ -31,9 +32,8 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Documents]] — 2 briques
 - [[DevOps]] — 2 briques
 
-## Hubs (MOC) — domaine pas encore migré
+## Hubs (MOC) — pas encore absorbés par l'arbre
 
-- [[Machine Learning]] — le dernier domaine encore sous `Dev/` et `Wiki/`
 - [[Data Engineering]]
 - [[AI Engineering]]
 - [[Patterns]] — architectures type
@@ -50,11 +50,12 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-`Dev/` et `Wiki/` ne gardent plus que « Machine Learning », dernier domaine
-pas encore déplacé.
+Les 20 domaines sont descendus dans l'arbre ; il ne reste dans les deux anciennes
+galaxies que ce qu'aucun domaine n'accueille encore — les notions `concept/*`, qui
+descendront au lot 4, plus les patterns, les règles et un comparatif transverse.
 
-- **Dev** — briques techniques → `Dev/`
-- **Wiki** — notions → `Wiki/`
+- **Dev** — patterns, règles et [[Comparatif - Frontends web légers]] → `Dev/`
+- **Wiki** — les notions en attente du lot 4 → `Wiki/Concepts/`
 
 ## Skills
 
