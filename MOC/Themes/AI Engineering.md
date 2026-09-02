@@ -10,7 +10,7 @@ indexe: ai-eng
 <!-- AUTO:START -->
 Domaine **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[LLM (notions)]] — 57 notion(s)
+- [[LLM (notions)]] — 56 notion(s)
 - [[Deep learning]] — 28 notion(s)
 - [[Apprentissage par renforcement]] — 10 notion(s)
 - [[IA & sécurité]] — 4 notion(s)

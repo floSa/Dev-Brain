@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 674 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 680 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -663,7 +663,6 @@
 - **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
 - **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
 - **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
-- **Text-to-SQL** — domaines : ai-eng · alias : text to sql, nl2sql, natural language to sql, texte vers SQL, requête en langage naturel
 - **Tokenization** — domaines : ai-eng · alias : tokenisation, découpage en tokens, BPE, byte-pair encoding, subword tokenization
 - **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
 - **tool-use** — domaines : ai-eng · alias : function calling, appel d'outils, tool calling, appel de fonctions
@@ -876,6 +875,9 @@
 
 ### (sans catégorie)
 - **Administration** — Clients graphiques pour explorer, requêter et administrer un serveur de base de données.
+- **Agents** — Les bibliothèques avec lesquelles on écrit un agent — une boucle qui planifie, appelle des outils et reprend là où elle en était.
+- **Agents de code** — Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.
+- **Assistants** — Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
@@ -885,7 +887,9 @@
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
+- **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
+- **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
@@ -895,12 +899,14 @@
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
+- **Runtimes** — Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
 - **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.
 - **Signal & audio** — Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.
 - **Statistiques & inférence** — Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
+- **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.

@@ -10,6 +10,7 @@
     "DevOps",
     "Documents",
     "Interfaces & apps data",
+    "LLM & IA générative",
     "Mathématiques",
     "Médias",
     "Observabilité",
@@ -23,7 +24,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 674,
+  "count": 680,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -33,11 +34,15 @@
       "OpenDataLoader PDF"
     ],
     "agent-memory": [
+      "Agents",
+      "Assistants",
       "OpenViking",
       "ai-memory"
     ],
     "agent-skill": [
+      "Agents de code",
       "Archify",
+      "Assistants",
       "BMAD",
       "i-have-adhd"
     ],
@@ -47,8 +52,11 @@
       "Agent memory",
       "Agent patterns",
       "Agent skills",
+      "Agents",
+      "Agents de code",
       "Agno",
       "Archify",
+      "Assistants",
       "AutoGen",
       "BMAD",
       "Cline",
@@ -63,6 +71,7 @@
       "Haystack",
       "Hermes Agent",
       "Human-in-the-loop",
+      "LLM & IA générative",
       "LM Studio Bionic",
       "LangChain",
       "LangChain SQL agent",
@@ -114,6 +123,7 @@
       "promptfoo"
     ],
     "alignment": [
+      "Fine-tuning",
       "GRPO",
       "RL for LLMs",
       "RLHF and DPO",
@@ -306,6 +316,7 @@
       "torchvision"
     ],
     "code-assistant": [
+      "Agents de code",
       "Aider",
       "Archify",
       "BMAD",
@@ -322,6 +333,7 @@
       "t3code"
     ],
     "code-generation": [
+      "Agents de code",
       "Aider",
       "BMAD",
       "Cline",
@@ -898,6 +910,7 @@
       "Axolotl",
       "DB-GPT",
       "Distillation",
+      "Fine-tuning",
       "HuggingFace",
       "LLaMA-Factory",
       "LoRA et QLoRA",
@@ -1099,6 +1112,7 @@
       "Ollama",
       "OpenRouter",
       "Ray Serve",
+      "Runtimes",
       "SGLang",
       "Seldon Core",
       "Speculative decoding",
@@ -1122,6 +1136,7 @@
       "ONNX Runtime",
       "Pruning",
       "Quantization",
+      "Runtimes",
       "Speculative decoding",
       "State Space Models",
       "TensorRT",
@@ -1244,6 +1259,7 @@
       "Agent memory",
       "Agent patterns",
       "Agent skills",
+      "Agents",
       "Agno",
       "Aider",
       "AutoGen",
@@ -1277,6 +1293,7 @@
       "Instructor",
       "Interprétabilité mécaniste",
       "Jailbreaking and defenses",
+      "LLM & IA générative",
       "LLM benchmarks",
       "LLM caching",
       "LLM eval metrics",
@@ -1372,6 +1389,7 @@
       "Agent evaluation",
       "Code and math benchmarks",
       "DeepEval",
+      "LLM & IA générative",
       "LLM benchmarks",
       "LLM eval metrics",
       "LLM-as-judge",
@@ -1386,22 +1404,26 @@
     ],
     "llm-gateway": [
       "Helicone",
+      "LLM & IA générative",
       "LiteLLM",
       "OmniRoute",
       "OpenRouter"
     ],
     "llm-observability": [
       "Helicone",
+      "LLM & IA générative",
       "LLM observability",
       "LangSmith",
       "Langfuse",
       "Phoenix Arize"
     ],
     "local-llm": [
+      "Assistants",
       "LM Studio",
       "LM Studio Bionic",
       "Ollama",
       "Pattern - Agent sur LLM auto-hébergé",
+      "Runtimes",
       "Small Language Models",
       "Superwhisper",
       "Vanna",
@@ -1473,10 +1495,13 @@
     ],
     "mcp": [
       "Activepieces",
+      "Agents de code",
+      "Assistants",
       "Cline",
       "Graphify",
       "Headroom",
       "Hermes Agent",
+      "LLM & IA générative",
       "LM Studio Bionic",
       "OpenClaw",
       "OpenViking",
@@ -1592,6 +1617,7 @@
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ray Serve",
+      "Runtimes",
       "SGLang",
       "Seldon Core",
       "TGI",
@@ -1609,6 +1635,7 @@
       "Stan"
     ],
     "multi-agent": [
+      "Agents",
       "Agno",
       "AutoGen",
       "BMAD",
@@ -1960,10 +1987,12 @@
       "Pruning"
     ],
     "quantization": [
+      "Fine-tuning",
       "LM Studio",
       "ONNX Runtime",
       "Ollama",
       "Quantization",
+      "Runtimes",
       "TensorRT",
       "TensorRT-LLM",
       "Unsloth",
@@ -1990,6 +2019,7 @@
       "GraphRAG",
       "Haystack",
       "Hybrid retrieval",
+      "LLM & IA générative",
       "LangChain",
       "Langflow",
       "Late-interaction retrieval",
@@ -2084,6 +2114,7 @@
       "AlphaZero and self-play",
       "Bellman equations",
       "Exploration vs exploitation",
+      "Fine-tuning",
       "GRPO",
       "Gymnasium",
       "Imitation learning",
@@ -2380,6 +2411,7 @@
       "Constrained decoding",
       "Guidance",
       "Instructor",
+      "LLM & IA générative",
       "Outlines",
       "PydanticAI",
       "Structured outputs",
@@ -2439,6 +2471,7 @@
     "synthetic-data": [
       "Distillation",
       "Faker",
+      "Fine-tuning",
       "Mimesis",
       "SDV",
       "Synthetic data generation"
@@ -2523,6 +2556,7 @@
     "tool-use": [
       "Agent patterns",
       "Agent skills",
+      "Agents",
       "Agno",
       "AutoGen",
       "CrewAI",
@@ -5814,401 +5848,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Aider.md",
-      "nom": "Aider",
-      "alias": [
-        "aider"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.",
-      "tags": [
-        "code-assistant",
-        "code-generation",
-        "llm",
-        "version-control"
-      ],
-      "alternatives": [
-        "[[Continue]]",
-        "[[Cline]]",
-        "[[freebuff]]",
-        "[[t3code]]",
-        "[[pi]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/BMAD.md",
-      "nom": "BMAD",
-      "alias": [
-        "BMAD-METHOD",
-        "bmad-method",
-        "Breakthrough Method for Agile AI-Driven Development"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.",
-      "tags": [
-        "agent-skill",
-        "code-assistant",
-        "agents",
-        "multi-agent",
-        "code-generation"
-      ],
-      "alternatives": [
-        "[[Spec Kit]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Cline.md",
-      "nom": "Cline",
-      "alias": [
-        "cline"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.",
-      "tags": [
-        "code-assistant",
-        "code-generation",
-        "llm",
-        "agents",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[Continue]]",
-        "[[Aider]]",
-        "[[freebuff]]",
-        "[[t3code]]",
-        "[[pi]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Continue.md",
-      "nom": "Continue",
-      "alias": [
-        "continue",
-        "continue.dev",
-        "continuedev"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).",
-      "tags": [
-        "code-assistant",
-        "code-generation",
-        "llm",
-        "agents"
-      ],
-      "alternatives": [
-        "[[Aider]]",
-        "[[Cline]]",
-        "[[freebuff]]",
-        "[[t3code]]",
-        "[[pi]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Graphify.md",
-      "nom": "Graphify",
-      "alias": [
-        "graphify",
-        "graphifyy"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.",
-      "tags": [
-        "code-assistant",
-        "knowledge-graph",
-        "mcp",
-        "context-engineering"
-      ],
-      "alternatives": [
-        "[[ai-memory]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Maka.md",
-      "nom": "Maka",
-      "alias": [
-        "apache-maka",
-        "maka"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "application",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.",
-      "tags": [
-        "audit-log",
-        "agents",
-        "tool-use",
-        "ai-security",
-        "code-assistant"
-      ],
-      "alternatives": [
-        "[[OpenHands]]",
-        "[[t3code]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Spec Kit.md",
-      "nom": "Spec Kit",
-      "alias": [
-        "spec-kit",
-        "specify",
-        "specify-cli",
-        "spec-driven development",
-        "SDD"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).",
-      "tags": [
-        "code-assistant",
-        "code-generation",
-        "agents",
-        "cli"
-      ],
-      "alternatives": [
-        "[[BMAD]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/ai-memory.md",
-      "nom": "ai-memory",
-      "alias": [
-        "akitaonrails/ai-memory"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "plateforme",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.",
-      "tags": [
-        "agent-memory",
-        "mcp",
-        "context-engineering",
-        "code-assistant",
-        "retrieval"
-      ],
-      "alternatives": [
-        "[[Graphify]]",
-        "[[OpenViking]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/freebuff.md",
-      "nom": "freebuff",
-      "alias": [
-        "Freebuff",
-        "Codebuff"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.",
-      "tags": [
-        "code-assistant",
-        "code-generation",
-        "agents",
-        "multi-agent",
-        "cli"
-      ],
-      "alternatives": [
-        "[[Aider]]",
-        "[[Cline]]",
-        "[[Continue]]",
-        "[[pi]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/i-have-adhd.md",
-      "nom": "i-have-adhd",
-      "alias": [
-        "ayghri/i-have-adhd",
-        "adhd-mode"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.",
-      "tags": [
-        "agent-skill",
-        "prompting",
-        "code-assistant",
-        "agents"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/llmfit.md",
-      "nom": "llmfit",
-      "alias": [
-        "llm-fit",
-        "alexsjones/llmfit"
-      ],
-      "role": "brique",
-      "categorie": "llm/outillage",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.",
-      "tags": [
-        "local-llm",
-        "hardware-sizing",
-        "quantization",
-        "benchmark",
-        "terminal-ui"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/pi.md",
-      "nom": "pi",
-      "alias": [
-        "pi-coding-agent",
-        "earendil-works/pi",
-        "pi-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.",
-      "tags": [
-        "code-assistant",
-        "agents",
-        "local-llm",
-        "terminal-ui",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[Aider]]",
-        "[[Cline]]",
-        "[[Continue]]",
-        "[[freebuff]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/swarm-forge.md",
-      "nom": "swarm-forge",
-      "alias": [
-        "unclebob/swarm-forge",
-        "swarm"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "cli",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.",
-      "tags": [
-        "multi-agent",
-        "agents",
-        "code-assistant",
-        "cli",
-        "version-control"
-      ],
-      "alternatives": [
-        "[[CrewAI]]",
-        "[[AutoGen]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/t3code.md",
-      "nom": "t3code",
-      "alias": [
-        "t3",
-        "T3 Code",
-        "t3.codes"
-      ],
-      "role": "brique",
-      "categorie": "llm/agent-de-code",
-      "famille": "application",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.",
-      "tags": [
-        "code-assistant",
-        "agents",
-        "code-generation"
-      ],
-      "alternatives": [
-        "[[Cline]]",
-        "[[Aider]]",
-        "[[Continue]]",
-        "[[Maka]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Patterns/Pattern - Agent sur LLM auto-hébergé.md",
       "nom": "Pattern - Agent sur LLM auto-hébergé",
       "alias": null,
@@ -6429,36 +6068,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Agno.md",
-      "nom": "Agno",
-      "alias": [
-        "agno",
-        "phidata",
-        "phi-data"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "multi-agent"
-      ],
-      "alternatives": [
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[OpenAI Agents SDK]]",
-        "[[smolagents]]",
-        "[[Letta]]",
-        "[[PraisonAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Aim.md",
       "nom": "Aim",
       "alias": [
@@ -6480,64 +6089,6 @@
         "[[Neptune]]",
         "[[Comet]]",
         "[[ClearML]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/AutoGen.md",
-      "nom": "AutoGen",
-      "alias": [
-        "autogen",
-        "microsoft-autogen"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "multi-agent"
-      ],
-      "alternatives": [
-        "[[CrewAI]]",
-        "[[OpenAI Agents SDK]]",
-        "[[Agno]]",
-        "[[smolagents]]",
-        "[[Letta]]",
-        "[[swarm-forge]]",
-        "[[PraisonAI]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Dev/Services/Axolotl.md",
-      "nom": "Axolotl",
-      "alias": [
-        "axolotl",
-        "axolotl-ai-cloud",
-        "axolotl.ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/finetuning",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.",
-      "tags": [
-        "fine-tuning",
-        "declarative-config",
-        "distributed-training",
-        "llm"
-      ],
-      "alternatives": [
-        "[[TRL]]",
-        "[[Unsloth]]",
-        "[[LLaMA-Factory]]",
-        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6703,116 +6254,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/CrewAI.md",
-      "nom": "CrewAI",
-      "alias": [
-        "crewai",
-        "crew-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "multi-agent"
-      ],
-      "alternatives": [
-        "[[AutoGen]]",
-        "[[OpenAI Agents SDK]]",
-        "[[Agno]]",
-        "[[smolagents]]",
-        "[[Letta]]",
-        "[[swarm-forge]]",
-        "[[PraisonAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/DB-GPT.md",
-      "nom": "DB-GPT",
-      "alias": [
-        "dbgpt",
-        "db gpt",
-        "db-gpt",
-        "eosphoros db-gpt"
-      ],
-      "role": "brique",
-      "categorie": "llm/text-to-sql",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.",
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "multi-agent",
-        "rag",
-        "fine-tuning"
-      ],
-      "alternatives": [
-        "[[Vanna]]",
-        "[[WrenAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/DSPy.md",
-      "nom": "DSPy",
-      "alias": [
-        "dspy",
-        "stanfordnlp-dspy",
-        "Demonstrate-Search-Predict"
-      ],
-      "role": "brique",
-      "categorie": "llm/socle",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.",
-      "tags": [
-        "llm",
-        "prompt-optimization",
-        "nlp"
-      ],
-      "alternatives": [
-        "[[LangChain]]",
-        "[[LlamaIndex]]",
-        "[[Haystack]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/DeepEval.md",
-      "nom": "DeepEval",
-      "alias": [
-        "deepeval",
-        "confident-ai-deepeval"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "llm-as-judge",
-        "testing"
-      ],
-      "alternatives": [
-        "[[Ragas]]",
-        "[[TruLens]]",
-        "[[promptfoo]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/DeepSpeed.md",
       "nom": "DeepSpeed",
       "alias": [
@@ -6864,32 +6305,6 @@
       "alternatives": [
         "[[Ultralytics YOLO]]",
         "[[segment-anything]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Dify.md",
-      "nom": "Dify",
-      "alias": [
-        "dify",
-        "dify.ai",
-        "langgenius-dify"
-      ],
-      "role": "brique",
-      "categorie": "llm/low-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.",
-      "tags": [
-        "llm",
-        "low-code",
-        "agents",
-        "rag"
-      ],
-      "alternatives": [
-        "[[Langflow]]",
-        "[[Flowise]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6958,31 +6373,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Flowise.md",
-      "nom": "Flowise",
-      "alias": [
-        "flowise",
-        "flowiseai"
-      ],
-      "role": "brique",
-      "categorie": "llm/low-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.",
-      "tags": [
-        "llm",
-        "low-code",
-        "agents",
-        "rag"
-      ],
-      "alternatives": [
-        "[[Langflow]]",
-        "[[Dify]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Flyte.md",
       "nom": "Flyte",
       "alias": [
@@ -7030,29 +6420,6 @@
       "maturite": "beta"
     },
     {
-      "path": "Dev/Services/Guidance.md",
-      "nom": "Guidance",
-      "alias": [
-        "guidance",
-        "guidance-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.",
-      "tags": [
-        "structured-output",
-        "decoding",
-        "llm"
-      ],
-      "alternatives": [
-        "[[Outlines]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Gymnasium.md",
       "nom": "Gymnasium",
       "alias": [
@@ -7071,109 +6438,6 @@
       ],
       "alternatives": [
         "[[OpenSpiel]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Haystack.md",
-      "nom": "Haystack",
-      "alias": [
-        "haystack",
-        "deepset-haystack",
-        "farm-haystack"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.",
-      "tags": [
-        "llm",
-        "rag",
-        "semantic-search",
-        "hybrid-search",
-        "agents"
-      ],
-      "alternatives": [
-        "[[LangChain]]",
-        "[[LlamaIndex]]",
-        "[[DSPy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Headroom.md",
-      "nom": "Headroom",
-      "alias": [
-        "headroom",
-        "headroom-ai",
-        "headroomlabs"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.",
-      "tags": [
-        "llm",
-        "context-engineering",
-        "token-optimization",
-        "caching",
-        "mcp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Helicone.md",
-      "nom": "Helicone",
-      "alias": [
-        "helicone"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "llm-gateway",
-        "tracing"
-      ],
-      "alternatives": [
-        "[[Langfuse]]",
-        "[[LangSmith]]",
-        "[[Phoenix Arize]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Hermes Agent.md",
-      "nom": "Hermes Agent",
-      "alias": [
-        "hermes-agent",
-        "nous-hermes-agent"
-      ],
-      "role": "brique",
-      "categorie": "llm/assistant",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[OpenClaw]]",
-        "[[LM Studio Bionic]]",
-        "[[OpenViking]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7226,30 +6490,6 @@
       "alternatives": [
         "[[Optuna]]",
         "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Instructor.md",
-      "nom": "Instructor",
-      "alias": [
-        "instructor",
-        "567-labs-instructor"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.",
-      "tags": [
-        "llm",
-        "structured-output",
-        "data-validation",
-        "type-hints"
-      ],
-      "alternatives": [
-        "[[PydanticAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7383,277 +6623,6 @@
       "maturite": "deprecated"
     },
     {
-      "path": "Dev/Services/LLaMA-Factory.md",
-      "nom": "LLaMA-Factory",
-      "alias": [
-        "llama-factory",
-        "llamafactory",
-        "LLaMA Factory",
-        "hiyouga/LLaMA-Factory",
-        "LLaMA Board"
-      ],
-      "role": "brique",
-      "categorie": "llm/finetuning",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.",
-      "tags": [
-        "fine-tuning",
-        "declarative-config",
-        "low-code",
-        "distributed-training",
-        "llm"
-      ],
-      "alternatives": [
-        "[[TRL]]",
-        "[[Unsloth]]",
-        "[[Axolotl]]",
-        "[[Tunix]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LM Studio Bionic.md",
-      "nom": "LM Studio Bionic",
-      "alias": [
-        "Bionic",
-        "lm studio bionic",
-        "LM Studio Secure Cloud",
-        "LM Link"
-      ],
-      "role": "brique",
-      "categorie": "llm/assistant",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.",
-      "tags": [
-        "llm",
-        "agents",
-        "local-llm",
-        "mcp",
-        "code-generation"
-      ],
-      "alternatives": [
-        "[[OpenClaw]]",
-        "[[Hermes Agent]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LM Studio.md",
-      "nom": "LM Studio",
-      "alias": [
-        "lmstudio",
-        "lms",
-        "llmster"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "inference",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LangChain SQL agent.md",
-      "nom": "LangChain SQL agent",
-      "alias": [
-        "langchain sql",
-        "langchain text-to-sql",
-        "create_sql_agent",
-        "SQLDatabaseToolkit",
-        "langgraph sql agent"
-      ],
-      "role": "brique",
-      "categorie": "llm/text-to-sql",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle.",
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[LlamaIndex NLSQLTableQueryEngine]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LangChain.md",
-      "nom": "LangChain",
-      "alias": [
-        "langchain",
-        "langchain-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/socle",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.",
-      "tags": [
-        "llm",
-        "rag",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[LlamaIndex]]",
-        "[[Haystack]]",
-        "[[DSPy]]",
-        "[[Semantic Kernel]]",
-        "[[PydanticAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LangGraph.md",
-      "nom": "LangGraph",
-      "alias": [
-        "langgraph",
-        "langchain-ai-langgraph"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LangSmith.md",
-      "nom": "LangSmith",
-      "alias": [
-        "langsmith"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "tracing",
-        "llm-eval"
-      ],
-      "alternatives": [
-        "[[Langfuse]]",
-        "[[Phoenix Arize]]",
-        "[[Helicone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Langflow.md",
-      "nom": "Langflow",
-      "alias": [
-        "langflow",
-        "langflow-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/low-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.",
-      "tags": [
-        "llm",
-        "low-code",
-        "agents",
-        "rag"
-      ],
-      "alternatives": [
-        "[[Dify]]",
-        "[[Flowise]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Langfuse.md",
-      "nom": "Langfuse",
-      "alias": [
-        "langfuse"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "tracing",
-        "llm-eval"
-      ],
-      "alternatives": [
-        "[[LangSmith]]",
-        "[[Phoenix Arize]]",
-        "[[Helicone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Letta.md",
-      "nom": "Letta",
-      "alias": [
-        "letta",
-        "memgpt",
-        "mem-gpt"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[Agno]]",
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[OpenAI Agents SDK]]",
-        "[[smolagents]]",
-        "[[OpenViking]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/LightGBM.md",
       "nom": "LightGBM",
       "alias": [
@@ -7677,86 +6646,6 @@
         "[[XGBoost]]",
         "[[CatBoost]]",
         "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LiteLLM.md",
-      "nom": "LiteLLM",
-      "alias": [
-        "litellm",
-        "BerriAI-litellm"
-      ],
-      "role": "brique",
-      "categorie": "llm/passerelle",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.",
-      "tags": [
-        "llm",
-        "llm-gateway",
-        "inference"
-      ],
-      "alternatives": [
-        "[[OpenRouter]]",
-        "[[OmniRoute]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LlamaIndex NLSQLTableQueryEngine.md",
-      "nom": "LlamaIndex NLSQLTableQueryEngine",
-      "alias": [
-        "nlsqltablequeryengine",
-        "llamaindex text-to-sql",
-        "llamaindex sql",
-        "SQLTableRetrieverQueryEngine",
-        "llamaindex nl2sql"
-      ],
-      "role": "brique",
-      "categorie": "llm/text-to-sql",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.",
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "rag",
-        "retrieval"
-      ],
-      "alternatives": [
-        "[[LangChain SQL agent]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/LlamaIndex.md",
-      "nom": "LlamaIndex",
-      "alias": [
-        "llamaindex",
-        "llama-index",
-        "llama_index",
-        "run-llama",
-        "GPT Index"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.",
-      "tags": [
-        "llm",
-        "rag",
-        "embeddings",
-        "agents"
-      ],
-      "alternatives": [
-        "[[LangChain]]",
-        "[[Haystack]]",
-        "[[DSPy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7915,92 +6804,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Ollama.md",
-      "nom": "Ollama",
-      "alias": [
-        "ollama"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "inference",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]",
-        "[[needle]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OmniRoute.md",
-      "nom": "OmniRoute",
-      "alias": [
-        "omniroute"
-      ],
-      "role": "brique",
-      "categorie": "llm/passerelle",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.",
-      "tags": [
-        "llm",
-        "llm-gateway",
-        "routing",
-        "reliability",
-        "context-engineering"
-      ],
-      "alternatives": [
-        "[[LiteLLM]]",
-        "[[OpenRouter]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/OpenAI Agents SDK.md",
-      "nom": "OpenAI Agents SDK",
-      "alias": [
-        "openai-agents-sdk",
-        "openai-agents",
-        "agents-sdk",
-        "swarm"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "multi-agent"
-      ],
-      "alternatives": [
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[Agno]]",
-        "[[smolagents]]",
-        "[[Letta]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/OpenCV.md",
       "nom": "OpenCV",
       "alias": [
@@ -8021,107 +6824,6 @@
       ],
       "alternatives": [
         "[[Kornia]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OpenClaw.md",
-      "nom": "OpenClaw",
-      "alias": [
-        "openclaw",
-        "clawdbot",
-        "moltbot",
-        "warelay"
-      ],
-      "role": "brique",
-      "categorie": "llm/assistant",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[Hermes Agent]]",
-        "[[LM Studio Bionic]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OpenHands.md",
-      "nom": "OpenHands",
-      "alias": [
-        "openhands",
-        "opendevin",
-        "open-devin"
-      ],
-      "role": "brique",
-      "categorie": "llm/assistant",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "code-generation"
-      ],
-      "alternatives": [
-        "[[Maka]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/OpenMAIC.md",
-      "nom": "OpenMAIC",
-      "alias": [
-        "openmaic",
-        "maic",
-        "open-multi-agent-interactive-classroom"
-      ],
-      "role": "brique",
-      "categorie": "llm/assistant",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.",
-      "tags": [
-        "llm",
-        "agents",
-        "multi-agent",
-        "education",
-        "self-hosted"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/OpenRouter.md",
-      "nom": "OpenRouter",
-      "alias": [
-        "openrouter",
-        "openrouter.ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/passerelle",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.",
-      "tags": [
-        "llm",
-        "llm-gateway",
-        "routing",
-        "inference"
-      ],
-      "alternatives": [
-        "[[LiteLLM]]",
-        "[[OmniRoute]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8151,34 +6853,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/OpenViking.md",
-      "nom": "OpenViking",
-      "alias": [
-        "openviking",
-        "viking"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.",
-      "tags": [
-        "agent-memory",
-        "rag",
-        "context-engineering",
-        "agents",
-        "retrieval",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[Letta]]",
-        "[[Hermes Agent]]",
-        "[[ai-memory]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "Dev/Services/Optuna.md",
       "nom": "Optuna",
       "alias": [
@@ -8199,29 +6873,6 @@
         "[[Scikit-Learn]]",
         "[[Hyperopt]]",
         "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Outlines.md",
-      "nom": "Outlines",
-      "alias": [
-        "outlines",
-        "dottxt-outlines"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.",
-      "tags": [
-        "structured-output",
-        "decoding",
-        "llm"
-      ],
-      "alternatives": [
-        "[[Guidance]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8248,64 +6899,6 @@
       ],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Phoenix Arize.md",
-      "nom": "Phoenix Arize",
-      "alias": [
-        "phoenix",
-        "Arize Phoenix",
-        "arize-phoenix",
-        "arize-ai-phoenix"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "llm-eval",
-        "tracing"
-      ],
-      "alternatives": [
-        "[[Langfuse]]",
-        "[[LangSmith]]",
-        "[[Helicone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PraisonAI.md",
-      "nom": "PraisonAI",
-      "alias": [
-        "praisonai",
-        "praison-ai",
-        "praisonaiagents"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).",
-      "tags": [
-        "llm",
-        "agents",
-        "multi-agent",
-        "tool-use",
-        "low-code",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[Agno]]",
-        "[[smolagents]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/Prophet.md",
@@ -8433,53 +7026,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/PydanticAI.md",
-      "nom": "PydanticAI",
-      "alias": [
-        "pydantic-ai",
-        "pydanticai"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "structured-output",
-        "type-hints"
-      ],
-      "alternatives": [
-        "[[Instructor]]",
-        "[[LangChain]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/RAGatouille.md",
-      "nom": "RAGatouille",
-      "alias": [
-        "ragatouille"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).",
-      "tags": [
-        "retrieval",
-        "reranking",
-        "rag",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "Dev/Services/RLax.md",
       "nom": "RLax",
       "alias": [
@@ -8499,32 +7045,6 @@
         "[[Stable-Baselines3]]",
         "[[Acme]]",
         "[[TF-Agents]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ragas.md",
-      "nom": "Ragas",
-      "alias": [
-        "ragas",
-        "explodinggradients-ragas"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "rag-eval",
-        "rag"
-      ],
-      "alternatives": [
-        "[[DeepEval]]",
-        "[[TruLens]]",
-        "[[promptfoo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8624,35 +7144,6 @@
       "alternatives": [
         "[[TransformerLens]]",
         "[[interpreto]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/SGLang.md",
-      "nom": "SGLang",
-      "alias": [
-        "sglang"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.",
-      "tags": [
-        "llm",
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8765,29 +7256,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Semantic Kernel.md",
-      "nom": "Semantic Kernel",
-      "alias": [
-        "semantic-kernel",
-        "SK"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[LangChain]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/SetFit.md",
       "nom": "SetFit",
       "alias": [
@@ -8854,68 +7322,6 @@
         "[[Stable-Baselines3]]",
         "[[Acme]]",
         "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TGI.md",
-      "nom": "TGI",
-      "alias": [
-        "tgi",
-        "text-generation-inference"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.",
-      "tags": [
-        "llm",
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/TRL.md",
-      "nom": "TRL",
-      "alias": [
-        "trl",
-        "transformer reinforcement learning",
-        "transformers reinforcement learning",
-        "SFTTrainer",
-        "DPOTrainer",
-        "GRPOTrainer"
-      ],
-      "role": "brique",
-      "categorie": "llm/finetuning",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque de post-training de Hugging Face — trainers prêts à l'emploi (SFT, reward modeling, DPO, GRPO, PPO) au-dessus de Transformers ; la brique de référence pour fine-tuner et aligner un LLM par code.",
-      "tags": [
-        "fine-tuning",
-        "alignment",
-        "reinforcement-learning",
-        "transformers",
-        "llm"
-      ],
-      "alternatives": [
-        "[[Unsloth]]",
-        "[[Axolotl]]",
-        "[[LLaMA-Factory]]",
-        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9000,38 +7406,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/TensorRT-LLM.md",
-      "nom": "TensorRT-LLM",
-      "alias": [
-        "TRT-LLM",
-        "trt-llm",
-        "tensorrt-llm"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.",
-      "tags": [
-        "llm",
-        "model-serving",
-        "inference",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[SGLang]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/TensorRT.md",
       "nom": "TensorRT",
       "alias": [
@@ -9111,61 +7485,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/TruLens.md",
-      "nom": "TruLens",
-      "alias": [
-        "trulens",
-        "truera-trulens",
-        "trulens-eval"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "tracing",
-        "llm-as-judge"
-      ],
-      "alternatives": [
-        "[[Ragas]]",
-        "[[DeepEval]]",
-        "[[promptfoo]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Tunix.md",
-      "nom": "Tunix",
-      "alias": [
-        "tunix",
-        "google tunix",
-        "google-tunix",
-        "tune-in-jax"
-      ],
-      "role": "brique",
-      "categorie": "llm/finetuning",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.",
-      "tags": [
-        "llm",
-        "reinforcement-learning",
-        "fine-tuning"
-      ],
-      "alternatives": [
-        "[[TRL]]",
-        "[[Unsloth]]",
-        "[[Axolotl]]",
-        "[[LLaMA-Factory]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "Dev/Services/Ultralytics YOLO.md",
       "nom": "Ultralytics YOLO",
       "alias": [
@@ -9196,62 +7515,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Unsloth.md",
-      "nom": "Unsloth",
-      "alias": [
-        "unsloth",
-        "unslothai",
-        "unsloth.ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/finetuning",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Fine-tuning de LLM ~2× plus rapide avec 70-80 % de VRAM en moins via des kernels Triton sur mesure — LoRA/QLoRA et GRPO sur un seul GPU grand public, sans perte de précision.",
-      "tags": [
-        "fine-tuning",
-        "memory-optimization",
-        "quantization",
-        "gpu",
-        "llm"
-      ],
-      "alternatives": [
-        "[[TRL]]",
-        "[[Axolotl]]",
-        "[[LLaMA-Factory]]",
-        "[[Tunix]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Vanna.md",
-      "nom": "Vanna",
-      "alias": [
-        "vanna",
-        "vanna.ai",
-        "vanna-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/text-to-sql",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.",
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "rag",
-        "agents",
-        "local-llm"
-      ],
-      "alternatives": [
-        "[[WrenAI]]",
-        "[[DB-GPT]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
       "path": "Dev/Services/Weights & Biases.md",
       "nom": "Weights & Biases",
       "alias": [
@@ -9274,33 +7537,6 @@
         "[[ClearML]]",
         "[[Aim]]",
         "[[TensorBoard]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/WrenAI.md",
-      "nom": "WrenAI",
-      "alias": [
-        "wrenai",
-        "wren-ai",
-        "wren ai",
-        "wren"
-      ],
-      "role": "brique",
-      "categorie": "llm/text-to-sql",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.",
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "agents",
-        "dashboard"
-      ],
-      "alternatives": [
-        "[[Vanna]]",
-        "[[DB-GPT]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9501,26 +7737,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/fastmcp.md",
-      "nom": "fastmcp",
-      "alias": [
-        "FastMCP"
-      ],
-      "role": "brique",
-      "categorie": "llm/mcp",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma.",
-      "tags": [
-        "mcp",
-        "tool-use",
-        "agents"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/hdbscan.md",
       "nom": "hdbscan",
       "alias": [
@@ -9591,88 +7807,6 @@
       "maturite": "experimental"
     },
     {
-      "path": "Dev/Services/llama.cpp.md",
-      "nom": "llama.cpp",
-      "alias": [
-        "llamacpp",
-        "llama-cpp",
-        "ggml"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "inference",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]",
-        "[[needle]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/mcpjam.md",
-      "nom": "mcpjam",
-      "alias": [
-        "MCPJam",
-        "MCPJam Inspector",
-        "mcpjam inspector"
-      ],
-      "role": "brique",
-      "categorie": "llm/mcp",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "« Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.",
-      "tags": [
-        "mcp",
-        "testing",
-        "tool-use"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/needle.md",
-      "nom": "needle",
-      "alias": [
-        "cactus-needle",
-        "needle2",
-        "Cactus Needle"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "modele",
-      "domaines": null,
-      "pitch": "Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.",
-      "tags": [
-        "local-llm",
-        "small-language-model",
-        "quantization",
-        "tool-use",
-        "structured-output"
-      ],
-      "alternatives": [
-        "[[llama.cpp]]",
-        "[[Ollama]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "Dev/Services/neuralforecast.md",
       "nom": "neuralforecast",
       "alias": [
@@ -9741,32 +7875,6 @@
       "alternatives": [
         "[[statsforecast]]",
         "[[darts]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/promptfoo.md",
-      "nom": "promptfoo",
-      "alias": [
-        "promptfoo",
-        "promptfoo.dev"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "testing",
-        "ai-security"
-      ],
-      "alternatives": [
-        "[[DeepEval]]",
-        "[[Ragas]]",
-        "[[TruLens]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9907,35 +8015,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/smolagents.md",
-      "nom": "smolagents",
-      "alias": [
-        "smolagents",
-        "smol-agents"
-      ],
-      "role": "brique",
-      "categorie": "llm/agents",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[OpenAI Agents SDK]]",
-        "[[CrewAI]]",
-        "[[Agno]]",
-        "[[AutoGen]]",
-        "[[Letta]]",
-        "[[PraisonAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/spaCy.md",
       "nom": "spaCy",
       "alias": [
@@ -10003,38 +8082,6 @@
         "computer-vision"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/text-generation-webui.md",
-      "nom": "text-generation-webui",
-      "alias": [
-        "oobabooga",
-        "textgen",
-        "text-gen-webui"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "application",
-      "domaines": null,
-      "pitch": "UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "inference",
-        "gpu",
-        "quantization"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[vLLM]]",
-        "[[TGI]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -10115,35 +8162,6 @@
       "alternatives": [
         "[[Scikit-Learn]]",
         "[[PaCMAP]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/vLLM.md",
-      "nom": "vLLM",
-      "alias": [
-        "vllm"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.",
-      "tags": [
-        "llm",
-        "model-serving",
-        "inference",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[text-generation-webui]]",
-        "[[TGI]]",
-        "[[SGLang]]",
-        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10401,6 +8419,2207 @@
         "[[Dash]]",
         "[[Shiny for Python]]",
         "[[Gradio]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Agents de code.md",
+      "nom": "Agents de code",
+      "alias": [
+        "assistants de code",
+        "agents de codage"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "agents",
+        "agent-skill",
+        "mcp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Aider.md",
+      "nom": "Aider",
+      "alias": [
+        "aider"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Continue]]",
+        "[[Cline]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/BMAD.md",
+      "nom": "BMAD",
+      "alias": [
+        "BMAD-METHOD",
+        "bmad-method",
+        "Breakthrough Method for Agile AI-Driven Development"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.",
+      "tags": [
+        "agent-skill",
+        "code-assistant",
+        "agents",
+        "multi-agent",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Spec Kit]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Cline.md",
+      "nom": "Cline",
+      "alias": [
+        "cline"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Continue]]",
+        "[[Aider]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Continue.md",
+      "nom": "Continue",
+      "alias": [
+        "continue",
+        "continue.dev",
+        "continuedev"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Graphify.md",
+      "nom": "Graphify",
+      "alias": [
+        "graphify",
+        "graphifyy"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.",
+      "tags": [
+        "code-assistant",
+        "knowledge-graph",
+        "mcp",
+        "context-engineering"
+      ],
+      "alternatives": [
+        "[[ai-memory]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Maka.md",
+      "nom": "Maka",
+      "alias": [
+        "apache-maka",
+        "maka"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "application",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.",
+      "tags": [
+        "audit-log",
+        "agents",
+        "tool-use",
+        "ai-security",
+        "code-assistant"
+      ],
+      "alternatives": [
+        "[[OpenHands]]",
+        "[[t3code]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Spec Kit.md",
+      "nom": "Spec Kit",
+      "alias": [
+        "spec-kit",
+        "specify",
+        "specify-cli",
+        "spec-driven development",
+        "SDD"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "agents",
+        "cli"
+      ],
+      "alternatives": [
+        "[[BMAD]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/ai-memory.md",
+      "nom": "ai-memory",
+      "alias": [
+        "akitaonrails/ai-memory"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "plateforme",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.",
+      "tags": [
+        "agent-memory",
+        "mcp",
+        "context-engineering",
+        "code-assistant",
+        "retrieval"
+      ],
+      "alternatives": [
+        "[[Graphify]]",
+        "[[OpenViking]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/freebuff.md",
+      "nom": "freebuff",
+      "alias": [
+        "Freebuff",
+        "Codebuff"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "agents",
+        "multi-agent",
+        "cli"
+      ],
+      "alternatives": [
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/i-have-adhd.md",
+      "nom": "i-have-adhd",
+      "alias": [
+        "ayghri/i-have-adhd",
+        "adhd-mode"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.",
+      "tags": [
+        "agent-skill",
+        "prompting",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/pi.md",
+      "nom": "pi",
+      "alias": [
+        "pi-coding-agent",
+        "earendil-works/pi",
+        "pi-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "local-llm",
+        "terminal-ui",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]",
+        "[[freebuff]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/swarm-forge.md",
+      "nom": "swarm-forge",
+      "alias": [
+        "unclebob/swarm-forge",
+        "swarm"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.",
+      "tags": [
+        "multi-agent",
+        "agents",
+        "code-assistant",
+        "cli",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[CrewAI]]",
+        "[[AutoGen]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/t3code.md",
+      "nom": "t3code",
+      "alias": [
+        "t3",
+        "T3 Code",
+        "t3.codes"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "application",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Cline]]",
+        "[[Aider]]",
+        "[[Continue]]",
+        "[[Maka]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents/Agents.md",
+      "nom": "Agents",
+      "alias": [
+        "frameworks d'agents",
+        "agents LLM"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Les bibliothèques avec lesquelles on écrit un agent — une boucle qui planifie, appelle des outils et reprend là où elle en était.",
+      "tags": [
+        "agents",
+        "multi-agent",
+        "tool-use",
+        "agent-memory",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents/Agno.md",
+      "nom": "Agno",
+      "alias": [
+        "agno",
+        "phidata",
+        "phi-data"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "multi-agent"
+      ],
+      "alternatives": [
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[PraisonAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/AutoGen.md",
+      "nom": "AutoGen",
+      "alias": [
+        "autogen",
+        "microsoft-autogen"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "multi-agent"
+      ],
+      "alternatives": [
+        "[[CrewAI]]",
+        "[[OpenAI Agents SDK]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[swarm-forge]]",
+        "[[PraisonAI]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "LLM & IA générative/Agents/CrewAI.md",
+      "nom": "CrewAI",
+      "alias": [
+        "crewai",
+        "crew-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "multi-agent"
+      ],
+      "alternatives": [
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[swarm-forge]]",
+        "[[PraisonAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/LangGraph.md",
+      "nom": "LangGraph",
+      "alias": [
+        "langgraph",
+        "langchain-ai-langgraph"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/OpenAI Agents SDK.md",
+      "nom": "OpenAI Agents SDK",
+      "alias": [
+        "openai-agents-sdk",
+        "openai-agents",
+        "agents-sdk",
+        "swarm"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "multi-agent"
+      ],
+      "alternatives": [
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/PraisonAI.md",
+      "nom": "PraisonAI",
+      "alias": [
+        "praisonai",
+        "praison-ai",
+        "praisonaiagents"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).",
+      "tags": [
+        "llm",
+        "agents",
+        "multi-agent",
+        "tool-use",
+        "low-code",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[Agno]]",
+        "[[smolagents]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/PydanticAI.md",
+      "nom": "PydanticAI",
+      "alias": [
+        "pydantic-ai",
+        "pydanticai"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "structured-output",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[Instructor]]",
+        "[[LangChain]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Semantic Kernel.md",
+      "nom": "Semantic Kernel",
+      "alias": [
+        "semantic-kernel",
+        "SK"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[LangChain]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/smolagents.md",
+      "nom": "smolagents",
+      "alias": [
+        "smolagents",
+        "smol-agents"
+      ],
+      "role": "brique",
+      "categorie": "llm/agents",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[OpenAI Agents SDK]]",
+        "[[CrewAI]]",
+        "[[Agno]]",
+        "[[AutoGen]]",
+        "[[Letta]]",
+        "[[PraisonAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/Assistants.md",
+      "nom": "Assistants",
+      "alias": [
+        "assistants IA",
+        "agents applicatifs"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.",
+      "tags": [
+        "agents",
+        "agent-memory",
+        "local-llm",
+        "mcp",
+        "agent-skill"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Assistants/Hermes Agent.md",
+      "nom": "Hermes Agent",
+      "alias": [
+        "hermes-agent",
+        "nous-hermes-agent"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[OpenClaw]]",
+        "[[LM Studio Bionic]]",
+        "[[OpenViking]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/LM Studio Bionic.md",
+      "nom": "LM Studio Bionic",
+      "alias": [
+        "Bionic",
+        "lm studio bionic",
+        "LM Studio Secure Cloud",
+        "LM Link"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.",
+      "tags": [
+        "llm",
+        "agents",
+        "local-llm",
+        "mcp",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[OpenClaw]]",
+        "[[Hermes Agent]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/OpenClaw.md",
+      "nom": "OpenClaw",
+      "alias": [
+        "openclaw",
+        "clawdbot",
+        "moltbot",
+        "warelay"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Hermes Agent]]",
+        "[[LM Studio Bionic]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/OpenHands.md",
+      "nom": "OpenHands",
+      "alias": [
+        "openhands",
+        "opendevin",
+        "open-devin"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use",
+        "code-generation"
+      ],
+      "alternatives": [
+        "[[Maka]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/OpenMAIC.md",
+      "nom": "OpenMAIC",
+      "alias": [
+        "openmaic",
+        "maic",
+        "open-multi-agent-interactive-classroom"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.",
+      "tags": [
+        "llm",
+        "agents",
+        "multi-agent",
+        "education",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/DSPy.md",
+      "nom": "DSPy",
+      "alias": [
+        "dspy",
+        "stanfordnlp-dspy",
+        "Demonstrate-Search-Predict"
+      ],
+      "role": "brique",
+      "categorie": "llm/socle",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.",
+      "tags": [
+        "llm",
+        "prompt-optimization",
+        "nlp"
+      ],
+      "alternatives": [
+        "[[LangChain]]",
+        "[[LlamaIndex]]",
+        "[[Haystack]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/DeepEval.md",
+      "nom": "DeepEval",
+      "alias": [
+        "deepeval",
+        "confident-ai-deepeval"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "llm-as-judge",
+        "testing"
+      ],
+      "alternatives": [
+        "[[Ragas]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Dify.md",
+      "nom": "Dify",
+      "alias": [
+        "dify",
+        "dify.ai",
+        "langgenius-dify"
+      ],
+      "role": "brique",
+      "categorie": "llm/low-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.",
+      "tags": [
+        "llm",
+        "low-code",
+        "agents",
+        "rag"
+      ],
+      "alternatives": [
+        "[[Langflow]]",
+        "[[Flowise]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Axolotl.md",
+      "nom": "Axolotl",
+      "alias": [
+        "axolotl",
+        "axolotl-ai-cloud",
+        "axolotl.ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/finetuning",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.",
+      "tags": [
+        "fine-tuning",
+        "declarative-config",
+        "distributed-training",
+        "llm"
+      ],
+      "alternatives": [
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Fine-tuning.md",
+      "nom": "Fine-tuning",
+      "alias": [
+        "post-training",
+        "ajustement de modèle"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": "Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.",
+      "tags": [
+        "fine-tuning",
+        "alignment",
+        "reinforcement-learning",
+        "quantization",
+        "synthetic-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/LLaMA-Factory.md",
+      "nom": "LLaMA-Factory",
+      "alias": [
+        "llama-factory",
+        "llamafactory",
+        "LLaMA Factory",
+        "hiyouga/LLaMA-Factory",
+        "LLaMA Board"
+      ],
+      "role": "brique",
+      "categorie": "llm/finetuning",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.",
+      "tags": [
+        "fine-tuning",
+        "declarative-config",
+        "low-code",
+        "distributed-training",
+        "llm"
+      ],
+      "alternatives": [
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[Tunix]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/TRL.md",
+      "nom": "TRL",
+      "alias": [
+        "trl",
+        "transformer reinforcement learning",
+        "transformers reinforcement learning",
+        "SFTTrainer",
+        "DPOTrainer",
+        "GRPOTrainer"
+      ],
+      "role": "brique",
+      "categorie": "llm/finetuning",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de post-training de Hugging Face — trainers prêts à l'emploi (SFT, reward modeling, DPO, GRPO, PPO) au-dessus de Transformers ; la brique de référence pour fine-tuner et aligner un LLM par code.",
+      "tags": [
+        "fine-tuning",
+        "alignment",
+        "reinforcement-learning",
+        "transformers",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Tunix.md",
+      "nom": "Tunix",
+      "alias": [
+        "tunix",
+        "google tunix",
+        "google-tunix",
+        "tune-in-jax"
+      ],
+      "role": "brique",
+      "categorie": "llm/finetuning",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.",
+      "tags": [
+        "llm",
+        "reinforcement-learning",
+        "fine-tuning"
+      ],
+      "alternatives": [
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Unsloth.md",
+      "nom": "Unsloth",
+      "alias": [
+        "unsloth",
+        "unslothai",
+        "unsloth.ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/finetuning",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Fine-tuning de LLM ~2× plus rapide avec 70-80 % de VRAM en moins via des kernels Triton sur mesure — LoRA/QLoRA et GRPO sur un seul GPU grand public, sans perte de précision.",
+      "tags": [
+        "fine-tuning",
+        "memory-optimization",
+        "quantization",
+        "gpu",
+        "llm"
+      ],
+      "alternatives": [
+        "[[TRL]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Flowise.md",
+      "nom": "Flowise",
+      "alias": [
+        "flowise",
+        "flowiseai"
+      ],
+      "role": "brique",
+      "categorie": "llm/low-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.",
+      "tags": [
+        "llm",
+        "low-code",
+        "agents",
+        "rag"
+      ],
+      "alternatives": [
+        "[[Langflow]]",
+        "[[Dify]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Guidance.md",
+      "nom": "Guidance",
+      "alias": [
+        "guidance",
+        "guidance-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.",
+      "tags": [
+        "structured-output",
+        "decoding",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Outlines]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Haystack.md",
+      "nom": "Haystack",
+      "alias": [
+        "haystack",
+        "deepset-haystack",
+        "farm-haystack"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.",
+      "tags": [
+        "llm",
+        "rag",
+        "semantic-search",
+        "hybrid-search",
+        "agents"
+      ],
+      "alternatives": [
+        "[[LangChain]]",
+        "[[LlamaIndex]]",
+        "[[DSPy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Headroom.md",
+      "nom": "Headroom",
+      "alias": [
+        "headroom",
+        "headroom-ai",
+        "headroomlabs"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.",
+      "tags": [
+        "llm",
+        "context-engineering",
+        "token-optimization",
+        "caching",
+        "mcp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Helicone.md",
+      "nom": "Helicone",
+      "alias": [
+        "helicone"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "llm-gateway",
+        "tracing"
+      ],
+      "alternatives": [
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Instructor.md",
+      "nom": "Instructor",
+      "alias": [
+        "instructor",
+        "567-labs-instructor"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.",
+      "tags": [
+        "llm",
+        "structured-output",
+        "data-validation",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[PydanticAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/LLM & IA générative.md",
+      "nom": "LLM & IA générative",
+      "alias": [
+        "genai",
+        "ia générative",
+        "applications LLM"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.",
+      "tags": [
+        "llm",
+        "rag",
+        "agents",
+        "llm-eval",
+        "llm-observability",
+        "mcp",
+        "structured-output",
+        "llm-gateway"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/LangChain.md",
+      "nom": "LangChain",
+      "alias": [
+        "langchain",
+        "langchain-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/socle",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.",
+      "tags": [
+        "llm",
+        "rag",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[LlamaIndex]]",
+        "[[Haystack]]",
+        "[[DSPy]]",
+        "[[Semantic Kernel]]",
+        "[[PydanticAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/LangSmith.md",
+      "nom": "LangSmith",
+      "alias": [
+        "langsmith"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "tracing",
+        "llm-eval"
+      ],
+      "alternatives": [
+        "[[Langfuse]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Langflow.md",
+      "nom": "Langflow",
+      "alias": [
+        "langflow",
+        "langflow-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/low-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.",
+      "tags": [
+        "llm",
+        "low-code",
+        "agents",
+        "rag"
+      ],
+      "alternatives": [
+        "[[Dify]]",
+        "[[Flowise]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Langfuse.md",
+      "nom": "Langfuse",
+      "alias": [
+        "langfuse"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "tracing",
+        "llm-eval"
+      ],
+      "alternatives": [
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Letta.md",
+      "nom": "Letta",
+      "alias": [
+        "letta",
+        "memgpt",
+        "mem-gpt"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[Agno]]",
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[smolagents]]",
+        "[[OpenViking]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/LiteLLM.md",
+      "nom": "LiteLLM",
+      "alias": [
+        "litellm",
+        "BerriAI-litellm"
+      ],
+      "role": "brique",
+      "categorie": "llm/passerelle",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "inference"
+      ],
+      "alternatives": [
+        "[[OpenRouter]]",
+        "[[OmniRoute]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/LlamaIndex.md",
+      "nom": "LlamaIndex",
+      "alias": [
+        "llamaindex",
+        "llama-index",
+        "llama_index",
+        "run-llama",
+        "GPT Index"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.",
+      "tags": [
+        "llm",
+        "rag",
+        "embeddings",
+        "agents"
+      ],
+      "alternatives": [
+        "[[LangChain]]",
+        "[[Haystack]]",
+        "[[DSPy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/OmniRoute.md",
+      "nom": "OmniRoute",
+      "alias": [
+        "omniroute"
+      ],
+      "role": "brique",
+      "categorie": "llm/passerelle",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "routing",
+        "reliability",
+        "context-engineering"
+      ],
+      "alternatives": [
+        "[[LiteLLM]]",
+        "[[OpenRouter]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/OpenRouter.md",
+      "nom": "OpenRouter",
+      "alias": [
+        "openrouter",
+        "openrouter.ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/passerelle",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "routing",
+        "inference"
+      ],
+      "alternatives": [
+        "[[LiteLLM]]",
+        "[[OmniRoute]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/OpenViking.md",
+      "nom": "OpenViking",
+      "alias": [
+        "openviking",
+        "viking"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.",
+      "tags": [
+        "agent-memory",
+        "rag",
+        "context-engineering",
+        "agents",
+        "retrieval",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Letta]]",
+        "[[Hermes Agent]]",
+        "[[ai-memory]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Outlines.md",
+      "nom": "Outlines",
+      "alias": [
+        "outlines",
+        "dottxt-outlines"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.",
+      "tags": [
+        "structured-output",
+        "decoding",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Guidance]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Phoenix Arize.md",
+      "nom": "Phoenix Arize",
+      "alias": [
+        "phoenix",
+        "Arize Phoenix",
+        "arize-phoenix",
+        "arize-ai-phoenix"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "llm-eval",
+        "tracing"
+      ],
+      "alternatives": [
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Helicone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/RAGatouille.md",
+      "nom": "RAGatouille",
+      "alias": [
+        "ragatouille"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).",
+      "tags": [
+        "retrieval",
+        "reranking",
+        "rag",
+        "nlp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Ragas.md",
+      "nom": "Ragas",
+      "alias": [
+        "ragas",
+        "explodinggradients-ragas"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "rag-eval",
+        "rag"
+      ],
+      "alternatives": [
+        "[[DeepEval]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/LM Studio.md",
+      "nom": "LM Studio",
+      "alias": [
+        "lmstudio",
+        "lms",
+        "llmster"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "inference",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Ollama.md",
+      "nom": "Ollama",
+      "alias": [
+        "ollama"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "inference",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]",
+        "[[needle]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Runtimes.md",
+      "nom": "Runtimes",
+      "alias": [
+        "runtimes LLM",
+        "serving LLM",
+        "inférence locale"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.",
+      "tags": [
+        "local-llm",
+        "inference",
+        "inference-optimization",
+        "quantization",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/SGLang.md",
+      "nom": "SGLang",
+      "alias": [
+        "sglang"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.",
+      "tags": [
+        "llm",
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[TensorRT-LLM]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/TGI.md",
+      "nom": "TGI",
+      "alias": [
+        "tgi",
+        "text-generation-inference"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.",
+      "tags": [
+        "llm",
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/TensorRT-LLM.md",
+      "nom": "TensorRT-LLM",
+      "alias": [
+        "TRT-LLM",
+        "trt-llm",
+        "tensorrt-llm"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.",
+      "tags": [
+        "llm",
+        "model-serving",
+        "inference",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/llama.cpp.md",
+      "nom": "llama.cpp",
+      "alias": [
+        "llamacpp",
+        "llama-cpp",
+        "ggml"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "inference",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]",
+        "[[needle]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/needle.md",
+      "nom": "needle",
+      "alias": [
+        "cactus-needle",
+        "needle2",
+        "Cactus Needle"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "modele",
+      "domaines": null,
+      "pitch": "Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.",
+      "tags": [
+        "local-llm",
+        "small-language-model",
+        "quantization",
+        "tool-use",
+        "structured-output"
+      ],
+      "alternatives": [
+        "[[llama.cpp]]",
+        "[[Ollama]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/text-generation-webui.md",
+      "nom": "text-generation-webui",
+      "alias": [
+        "oobabooga",
+        "textgen",
+        "text-gen-webui"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "inference",
+        "gpu",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/vLLM.md",
+      "nom": "vLLM",
+      "alias": [
+        "vllm"
+      ],
+      "role": "brique",
+      "categorie": "llm/runtime",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.",
+      "tags": [
+        "llm",
+        "model-serving",
+        "inference",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/DB-GPT.md",
+      "nom": "DB-GPT",
+      "alias": [
+        "dbgpt",
+        "db gpt",
+        "db-gpt",
+        "eosphoros db-gpt"
+      ],
+      "role": "brique",
+      "categorie": "llm/text-to-sql",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "multi-agent",
+        "rag",
+        "fine-tuning"
+      ],
+      "alternatives": [
+        "[[Vanna]]",
+        "[[WrenAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/LangChain SQL agent.md",
+      "nom": "LangChain SQL agent",
+      "alias": [
+        "langchain sql",
+        "langchain text-to-sql",
+        "create_sql_agent",
+        "SQLDatabaseToolkit",
+        "langgraph sql agent"
+      ],
+      "role": "brique",
+      "categorie": "llm/text-to-sql",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[LlamaIndex NLSQLTableQueryEngine]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/LlamaIndex NLSQLTableQueryEngine.md",
+      "nom": "LlamaIndex NLSQLTableQueryEngine",
+      "alias": [
+        "nlsqltablequeryengine",
+        "llamaindex text-to-sql",
+        "llamaindex sql",
+        "SQLTableRetrieverQueryEngine",
+        "llamaindex nl2sql"
+      ],
+      "role": "brique",
+      "categorie": "llm/text-to-sql",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "rag",
+        "retrieval"
+      ],
+      "alternatives": [
+        "[[LangChain SQL agent]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/Text-to-SQL.md",
+      "nom": "Text-to-SQL",
+      "alias": [
+        "text to sql",
+        "nl2sql",
+        "natural language to sql",
+        "texte vers SQL",
+        "requête en langage naturel"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "rag",
+        "agents",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/Vanna.md",
+      "nom": "Vanna",
+      "alias": [
+        "vanna",
+        "vanna.ai",
+        "vanna-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/text-to-sql",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "rag",
+        "agents",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[WrenAI]]",
+        "[[DB-GPT]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "LLM & IA générative/Text-to-SQL/WrenAI.md",
+      "nom": "WrenAI",
+      "alias": [
+        "wrenai",
+        "wren-ai",
+        "wren ai",
+        "wren"
+      ],
+      "role": "brique",
+      "categorie": "llm/text-to-sql",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.",
+      "tags": [
+        "text-to-sql",
+        "llm",
+        "agents",
+        "dashboard"
+      ],
+      "alternatives": [
+        "[[Vanna]]",
+        "[[DB-GPT]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/TruLens.md",
+      "nom": "TruLens",
+      "alias": [
+        "trulens",
+        "truera-trulens",
+        "trulens-eval"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "tracing",
+        "llm-as-judge"
+      ],
+      "alternatives": [
+        "[[Ragas]]",
+        "[[DeepEval]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/fastmcp.md",
+      "nom": "fastmcp",
+      "alias": [
+        "FastMCP"
+      ],
+      "role": "brique",
+      "categorie": "llm/mcp",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma.",
+      "tags": [
+        "mcp",
+        "tool-use",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/llmfit.md",
+      "nom": "llmfit",
+      "alias": [
+        "llm-fit",
+        "alexsjones/llmfit"
+      ],
+      "role": "brique",
+      "categorie": "llm/outillage",
+      "famille": "cli",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.",
+      "tags": [
+        "local-llm",
+        "hardware-sizing",
+        "quantization",
+        "benchmark",
+        "terminal-ui"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/mcpjam.md",
+      "nom": "mcpjam",
+      "alias": [
+        "MCPJam",
+        "MCPJam Inspector",
+        "mcpjam inspector"
+      ],
+      "role": "brique",
+      "categorie": "llm/mcp",
+      "famille": "application",
+      "domaines": null,
+      "pitch": "« Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.",
+      "tags": [
+        "mcp",
+        "testing",
+        "tool-use"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/promptfoo.md",
+      "nom": "promptfoo",
+      "alias": [
+        "promptfoo",
+        "promptfoo.dev"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "testing",
+        "ai-security"
+      ],
+      "alternatives": [
+        "[[DeepEval]]",
+        "[[Ragas]]",
+        "[[TruLens]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -19238,34 +19457,6 @@
       "tags": [
         "non-parametric",
         "hypothesis-testing"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Text-to-SQL.md",
-      "nom": "Text-to-SQL",
-      "alias": [
-        "text to sql",
-        "nl2sql",
-        "natural language to sql",
-        "texte vers SQL",
-        "requête en langage naturel"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "text-to-sql",
-        "llm",
-        "rag",
-        "agents",
-        "benchmark"
       ],
       "alternatives": null,
       "complements": null,

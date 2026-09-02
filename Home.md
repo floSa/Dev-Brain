@@ -11,6 +11,7 @@ tags: [meta]
 
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
+- [[LLM & IA générative]] — 74 briques, 6 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]]
 - [[Bases de données]] — 47 briques, 4 sous-domaines
 - [[Statistiques & inférence]] — 10 briques
 - [[Data & pipelines]] — 46 briques, 5 sous-domaines
@@ -30,8 +31,9 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Documents]] — 2 briques
 - [[DevOps]] — 2 briques
 
-## Hubs (MOC) — domaines pas encore migrés
+## Hubs (MOC) — domaine pas encore migré
 
+- [[Machine Learning]] — le dernier domaine encore sous `Dev/` et `Wiki/`
 - [[Data Engineering]]
 - [[AI Engineering]]
 - [[Patterns]] — architectures type
@@ -48,8 +50,8 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-`Dev/` et `Wiki/` ne gardent que « Machine Learning » et « LLM & IA générative »,
-les 2 domaines pas encore déplacés.
+`Dev/` et `Wiki/` ne gardent plus que « Machine Learning », dernier domaine
+pas encore déplacé.
 
 - **Dev** — briques techniques → `Dev/`
 - **Wiki** — notions → `Wiki/`

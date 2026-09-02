@@ -1,13 +1,15 @@
 ---
-role: notion
+role: hub
 nom: Text-to-SQL
 alias: [text to sql, nl2sql, natural language to sql, texte vers SQL, requête en langage naturel]
-categorie: concept/llm
+pitch: Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 domaines: [ai-eng]
 tags: [text-to-sql, llm, rag, agents, benchmark]
 ---
 
 # Text-to-SQL
+
+> Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 
 ## Aperçu
 
@@ -57,3 +59,15 @@ tags: [text-to-sql, llm, rag, agents, benchmark]
 - Benchmarks : Spider (Yale, 2018) et BIRD (2023) — EX comme métrique de référence.
 - CHASE-SQL (Google, 2024) et Agentar-Scale-SQL (2025) — génération multi-candidat + sélection, tête du classement BIRD.
 - Sujets liés : [[RAG]], [[Agent patterns]], [[LLM benchmarks]].
+
+<!-- AUTO:START -->
+### Briques
+- [[DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
+- [[LangChain SQL agent]] — Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle.
+- [[LlamaIndex NLSQLTableQueryEngine]] — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.
+- [[Vanna]] — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
+- [[WrenAI]] — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.
+
+### Comparatifs
+- [[Comparatif - Frameworks text-to-SQL]]
+<!-- AUTO:END -->

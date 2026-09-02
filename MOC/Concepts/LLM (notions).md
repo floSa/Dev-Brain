@@ -63,7 +63,6 @@ Notions de la famille `concept/llm`.
 - [[Speculative decoding]] — domaines : ai-eng
 - [[Structured outputs]] — domaines : ai-eng
 - [[Synthetic data generation]] — domaines : ml-eng, ai-eng
-- [[Text-to-SQL]] — domaines : ai-eng
 - [[Tokenization]] — domaines : ai-eng
 - [[Tool use patterns]] — domaines : ai-eng
 - [[tool-use]] — domaines : ai-eng
