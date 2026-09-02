@@ -106,8 +106,17 @@ SecondBrain/
 │   └── SQLAlchemy.md  Prisma.md  …      (17 pages au niveau du domaine)
 ├── Machine Learning/    241 pages, 9 sous-dossiers
 ├── LLM & IA générative/ 131 pages, 6 sous-dossiers
-└── … 17 domaines
+├── … 17 domaines
+│
+├── Métiers/             5 hubs transverses, indexés par `domaines:`
+├── Patterns/            1 hub + 5 pages, indexés par `role: pattern`
+└── Rules/               1 hub + 5 pages, indexés par `role: rule`
 ```
+
+Les trois derniers dossiers ne sont pas des domaines : rien ne s'y dérive d'une
+`categorie:`, et c'est pourquoi ils sont à la racine plutôt que dans l'arbre. Ils sont
+la seule exception à la règle 4, et elle est fermée — `check_arbo.py` compte leurs pages
+à part (`arbo.ROLES_SANS_CATEGORIE`).
 
 > Cet arbre décrit l'état visé **après le lot 4**, pas après le lot 3 :
 > `Bases de données vectorielles.md` est une notion qui porte encore `concept/data`, et le
@@ -116,12 +125,21 @@ SecondBrain/
 
 ### Ce que l'arbre remplace
 
-`MOC/` disparaît en entier — 39 pages. Ses trois étages sont absorbés :
+`MOC/` disparaît — 39 pages — mais **pas d'un seul coup**. Ses trois étages, plus les
+deux dossiers `Dev/` que `categorie:` ne rangeait pas :
 
-- `MOC/Categories/*` → les pages `hub` de domaine ;
-- `MOC/Concepts/*` → les mêmes pages hub, puisque notions et briques cohabitent désormais ;
-- `MOC/Themes/*` → conservés à la racine sous forme de 5 pages `hub` transverses, seul
-  endroit où le champ `domaines:` sert encore.
+- `MOC/Categories/*` → les pages `hub` de domaine, par `git mv` — **fait au lot 3** ;
+- `MOC/Types/*` (Patterns, Rules) → les hubs de deux dossiers racine, « Patterns/ » et
+  « Rules/ », que les 5 patterns et les 5 règles rejoignent : c'est `role:` qui les
+  groupe, aucune `categorie:` ne les range — **fait au lot 3** ;
+- `MOC/Themes/*` → descendus à la racine dans « **Métiers/** », 5 pages `role: hub`
+  transverses, seul endroit où le champ `domaines:` sert encore — **fait au lot 3**.
+  Le dossier ne s'appelle pas « Domaines » : le mot désigne déjà les 20 dossiers de
+  l'arbre. La collision de vocabulaire entre le champ et l'arbre reste à trancher
+  (lot 8, cf. remontée 21 de `lot-3-arborescence.md`) ;
+- `MOC/Concepts/*` → les mêmes pages hub, puisque notions et briques cohabitent désormais
+  — mais **seulement au lot 4** : ces 10 pages sont aujourd'hui la seule porte d'entrée
+  (R7) de 30 des 297 notions, et elles meurent avec `Wiki/Concepts/`, pas avant.
 
 La suppression des suffixes `(notions)` de `CONCEPT_LABEL` est un effet de bord attendu : ils
 n'existaient que pour éviter la collision de nom entre un hub et une notion homonyme. En v3 la
@@ -444,7 +462,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 0 | Masquer `liens.md` du graphe ; masquer le panneau de propriétés | oui, réglages |
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
-| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **les 20 domaines faits au 2026-09-04** ; reste la disparition de `MOC/`, des 5 patterns, des 5 règles et d'un comparatif transverse, dans la conversation de clôture | oui, `git mv` |
+| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **CLOS le 2026-09-05** : 20 domaines, puis « Métiers/ », « Patterns/ », « Rules/ » et le dernier comparatif transverse. `Dev/` n'existe plus ; `Wiki/Concepts/` et `MOC/Concepts/` restent, pour le lot 4 | oui, `git mv` |
 | 4 | Les 205 notions à recatégoriser, par lots — `ml` (67) et `llm` (57) d'abord | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
@@ -457,17 +475,25 @@ chaque étape.
 
 ## 14. Questions ouvertes
 
-1. **Les 5 `MOC/Themes`** (data-sci, data-eng, mlops, ml-eng, ai-eng) sont le seul consommateur
-   de `domaines:`. Les garder comme hubs transverses à la racine, ou supprimer le champ ?
+1. ~~**Les 5 `MOC/Themes`**~~ — **tranché le 2026-09-05 : gardés.** `domaines:` est
+   renseigné sur 374 pages, et c'est le seul axe transverse à un arbre rangé par domaine
+   technique : il porte les 5 axes métier de floSa. Les 5 pages sont descendues à la
+   racine dans « **Métiers/** », `role: hub`, corps au gabarit §9 ; `build_mocs.py` les
+   régénère depuis `domaines:` à leur nouveau chemin, périmètre inchangé. Deux dettes
+   ouvertes, toutes deux pour le **lot 8** : la collision de vocabulaire entre le champ
+   `domaines:` et le mot « domaine » de l'arbre (remontée 21), et le fait que le champ
+   n'est pas requis sur `role: brique` — 306 des 337 briques ne le portent pas
+   (remontée 22).
 2. **Les 18 notions sans domaine évident** : arbitrage page par page, listés dans
    l'arborescence, et c'est le lot 4. Les **9 comparatifs sans filtre `categorie`**
    sont réglés à 8 sur 9 — attendre n'était pas neutre pour eux, leur filtre croisant un
    chemin `Dev/Services/` avec un tag ou une liste de noms, donc leur vue **se vidait en
    silence** quand leurs membres descendaient, sans que le script de migration les voie.
    La substitution est partout la même, `role == "brique"`, et le relevé des membres des
-   47 `.base` avant / après chaque domaine montre qu'elle est fidèle. **Il en reste un**,
-   « Frontends web légers », qui enjambe deux domaines : il n'attend plus une migration
-   mais un arbitrage. Cf. remontées 7, 14, 16 et 19 de `lot-3-arborescence.md`.
+   47 `.base` avant / après chaque domaine montre qu'elle est fidèle. Le dernier,
+   « Frontends web légers », a été **rangé dans « Interfaces & apps data/ »** le
+   2026-09-05 : trois de ses cinq membres y vivent, FastAPI et HTMX n'y figurent que
+   comme l'option à la main. Cf. remontées 7, 14, 16 et 19 de `lot-3-arborescence.md`.
 3. **`Projects/`** reste hors de l'arbre des domaines. À confirmer.
 4. ~~**Le seuil de promotion à 5 pages**~~ — **tranché le 2026-09-04.** Le seuil reste à 5
    (à 4 il donnerait 34 sous-dossiers, à 8 il en donnerait 12), mais il est **plafonné** :

@@ -28,7 +28,8 @@ Arbre complet, page par page : [[AI/design/v3-arborescence|v3-arborescence]].
 
 - Déplacement de 682 fichiers par `git mv`.
 - Création des dossiers et des pages `hub`.
-- Suppression de `MOC/` (39 pages), absorbé par les hubs.
+- Suppression de `MOC/Categories/` et `MOC/Types/`, absorbés par les hubs.
+  `MOC/Concepts/` survit au lot 3 : cf. remontée 23.
 - `build_mocs.py`, qui cesse de générer `MOC/` et génère les zones `AUTO` des hubs.
 
 **Hors périmètre** : le corps des fiches, la recatégorisation des notions, les comparatifs.
@@ -105,33 +106,36 @@ le vault**, à la casse près. Voir la première remontée.
 
 ## Critères d'acceptation
 
-État au 2026-09-04, les **20 domaines** migrés.
+État au 2026-09-05, le lot **clos**.
 
-- [~] `Dev/`, `Wiki/` et `MOC/` n'existent plus — *les 20 domaines sont descendus ;
-      il reste sous `Dev/` et `Wiki/` ce qui ne relève d'aucun domaine : 297 notions
-      `concept/*` (lot 4), 5 patterns, 5 règles et `Comparatif - Frontends web
-      légers.base`. `MOC/Categories/` est vide ; `MOC/Concepts`, `MOC/Themes` et
-      `MOC/Types` gardent 10, 5 et 2 pages, à traiter dans la conversation de clôture
-      du lot — cf. remontées 10 et 18, et `brain-v3.md` §4 pour le sort des Themes.*
+- [x] `Dev/` et `MOC/Categories`/`MOC/Types` n'existent plus — *les 337 briques et les 47
+      comparatifs sont dans l'arbre, les 5 patterns et les 5 règles dans « Patterns/ » et
+      « Rules/ », les 5 hubs transverses dans « Métiers/ ». **`Wiki/Concepts/` (297
+      notions) et `MOC/Concepts/` (10 pages) restent, et c'est le lot 4 qui les
+      descendra** : 30 de ces notions ne sont atteignables (R7) que par une
+      `MOC/Concepts/`. Cf. remontées 21 à 23.*
 - [x] Le chemin de chaque page concorde avec son `categorie:` — vérifié en dur par
-      `AI/scripts/check_arbo.py`, vert sur les 337 briques migrées dans 20 domaines.
-- [x] Chaque dossier porte une page `role: hub` à son nom — 46 hubs, contrôlé par
+      `AI/scripts/check_arbo.py`, vert sur les 337 briques migrées dans 20 domaines. Les
+      `role: pattern` et `role: rule` sont comptés à part : ils n'ont pas de `categorie:`
+      par construction (`arbo.ROLES_SANS_CATEGORIE`).
+- [x] Chaque dossier porte une page `role: hub` à son nom — 53 hubs, contrôlé par
       `check_arbo.py` à tous les niveaux du chemin, pas seulement la feuille.
 - [x] Aucun wikilink cassé — `check_brain.py` vert (0 violation dure),
-      `build_links.py` : 0 lien non résolu sur 690 pages. Et aucun doublon de nom de
+      `build_links.py` : 0 lien non résolu sur 697 pages. Et aucun doublon de nom de
       fichier dans le vault, à la casse près — la contrepartie du lien nu.
-- [x] `build_mocs.py` remplit les zones `AUTO` des 46 hubs — et ne crée plus la MOC
-      d'un domaine migré, les boucles `MOC/` filtrant sur `Dev/` et `Wiki/`. Il ne
-      recrée pas non plus une page `MOC/Concepts/` dont le libellé est désormais porté
-      par un hub (remontée 18).
+- [x] `build_mocs.py` remplit les zones `AUTO` des hubs de l'arbre, régénère les 5 hubs
+      de « Métiers/ » depuis `domaines:` et les 10 `MOC/Concepts/` depuis `Wiki/`. Ses
+      deux boucles `Dev/` — `MOC/Categories/` par catégorie de tête, `MOC/Types/` par
+      rôle — ont été **retirées** : `pattern` et `rule` entrent dans `ROLE_SECTION`, donc
+      le hub de leur dossier les liste sans rattrapage.
 - [x] Aucun fichier perdu — 796 fichiers `.md`/`.base` avant le lot, 818 après :
       −3 fusions documentées (`MOC/Categories/Bases de données.md`, puis les deux
       sous-hubs `Stockage objet` et `No-code` défaits par le plafond du seuil),
-      +25 hubs de sous-domaine. Les 19 autres MOC de domaine ne disparaissent pas,
-      elles **deviennent** les hubs de domaine par `git mv` — et il en va de même des
-      deux notions chapeau homonymes absorbées (« Bases de données », « Text-to-SQL »)
-      et des deux MOC de sous-domaine homonymes (« Apprentissage par renforcement »,
-      « Séries temporelles »), qui *deviennent* leur hub sans qu'un fichier disparaisse.
+      +25 hubs de sous-domaine. Les 19 autres MOC de domaine, les 2 `MOC/Types`, les deux
+      notions chapeau homonymes (« Bases de données », « Text-to-SQL ») et les deux MOC de
+      sous-domaine homonymes (« Apprentissage par renforcement », « Séries temporelles »)
+      ne disparaissent pas : elles **deviennent** un hub par `git mv`. Un seul `.gitkeep`
+      a été supprimé, avec le dossier vide `Dev/Rules/` — ce n'est pas une page.
 
 ## Interdictions
 
@@ -629,45 +633,131 @@ fausse quand le découpage Dev est plus fin que le découpage wiki — ce qui es
 ici, `concept/dl` couvrant à lui seul trois sous-dossiers. À vérifier avant de lancer le
 lot 4, domaine par domaine, plutôt qu'à découvrir dedans.
 
-## Prompt à coller dans une conversation neuve — la clôture du lot
+## Remontées — la clôture du lot, 2026-09-05
 
-Les 20 domaines sont descendus. Ce qui reste est ce qu'aucun domaine n'accueille,
-et il ferme le lot 3.
+Ce qu'aucun domaine n'accueillait : les 5 `MOC/Themes`, les 2 `MOC/Types` avec les 5
+patterns et les 5 règles, et le dernier comparatif transverse. Quatre arbitrages de floSa,
+un commit chacun. **`Dev/` n'existe plus.** Le vault porte 697 pages actives et 53 hubs
+(20 de domaine, 26 de sous-domaine, 5 de métier, 2 de rôle) ; les 47 comparatifs sont
+tous dans le dossier de leurs membres.
 
-```
-Lis AI/design/brain-v3.md, AI/design/v3-arborescence.md puis
-AI/migration/lot-3-arborescence.md — dont les CINQ séries de Remontées, en
-particulier la 10 (une MOC vidée sans être régénérée), la 18 (une MOC de
-sous-domaine homonyme devient le sous-hub, et build_mocs cesse de la recréer)
-et la 19 (le comparatif transverse qui n'a plus de domaine à attendre).
+Le relevé de la remontée 19 a été refait, sur les 47 `.base`, avant puis après le
+déplacement du dernier d'entre eux : **aucun écart, aucune clause non évaluable**.
 
-Les 20 domaines sont migrés. Il reste à faire disparaître Dev/, Wiki/ et MOC/,
-et rien d'autre :
+### 21. « Domaine » désigne deux choses dans le vault — à trancher au lot 8
 
-  - MOC/Concepts/ — 10 pages, une par famille concept/* restante. Elles sont la
-    seule porte d'entrée (R7) de la plupart des 297 notions qui attendent le
-    lot 4 : ne pas les supprimer avant d'avoir vérifié, notion par notion,
-    qu'un hub la cite. La remontée 10 en signale une déjà vidée sans être
-    régénérée, la 18 deux déjà absorbées.
-  - MOC/Themes/ — 5 pages. brain-v3 §4 les conserve « à la racine sous forme de
-    5 pages hub transverses, seul endroit où le champ domaines: sert encore ».
-    C'est un arbitrage à confirmer avec floSa avant de déplacer quoi que ce
-    soit (question 1 de brain-v3 §14).
-  - MOC/Types/ — 2 pages (Patterns, Rules), portes d'entrée des 5 patterns et
-    des 5 règles restés dans Dev/. Leur dossier d'accueil est à poser : role:
-    les groupe déjà, aucune categorie: ne les range.
-  - Dev/Patterns/Comparatif - Frontends web légers.base — le dernier comparatif
-    sans domaine, à cheval sur « Web & API » et « Interfaces & apps data ».
-  - Wiki/Concepts/ — 297 notions : elles NE bougent PAS ici, c'est le lot 4.
-    Le dossier survit donc à la fin du lot 3, et il faut le dire plutôt que de
-    laisser CLAUDE.md mentir.
+Les 5 hubs transverses sont **gardés** (arbitrage de floSa, question 1 de `brain-v3.md`
+§14) : `domaines:` est renseigné sur des centaines de pages, et c'est le seul axe qui
+traverse un arbre rangé par domaine **technique**. Le supprimer perdrait une vue que rien
+d'autre ne donne, pour économiser un dossier généré.
 
-Puis mettre à jour CLAUDE.md : la section « Structure du vault » décrit encore
-Dev/ et Wiki/ comme les deux galaxies, et le mode wiki comme un périmètre
-Wiki/. Les frontières fermes, les conventions de nommage et les skills sont à
-relire à la lumière de l'arbre unique.
+Leur dossier s'appelle « Métiers/ » et **pas « Domaines/ »**, et la raison est le problème
+lui-même : le mot *domaine* désigne déjà les 20 dossiers de l'arbre. Un dossier
+`Domaines/` à côté de `Machine Learning/` aurait fait croire qu'il les contient.
 
-Régénérer build_index / build_mocs / build_links, vérifier avec check_brain.py
-ET check_arbo.py. Aucun rm sur une page : uniquement git mv. Clôture avec le
-skill cloturer-brain.
-```
+Le mot porte donc deux sens dans le vault, et le champ porte le mauvais :
+
+| Ce que le vault appelle | Ce que c'est | Où c'est écrit |
+|---|---|---|
+| **domaine** (arbre) | `ml`, `database`, `llm`… — 20 dossiers, le sujet technique | `categorie:`, `arbo.DOM_LABEL` |
+| **`domaines:`** (champ) | `data-sci`, `ml-eng`, `ai-eng`… — 5 axes de métier | `Documentation/general/themes.md` |
+
+`build_mocs.py` écrivait littéralement « Domaine **Data Engineering** » dans la zone AUTO
+des 5 pages ; c'est devenu « Axe métier ». Ce n'est qu'un pansement de surface : le nom du
+champ, lui, n'a pas changé. **Renommer `domaines:` en `metiers:`** est le geste qui lèverait
+l'ambiguïté pour de bon — 374 pages, `themes.md`, `check_brain`, `build_index`,
+`build_mocs`, `enrichir-brain`. C'est un durcissement de vocabulaire : **lot 8**, pas ici.
+
+### 22. Le champ que l'arbitrage 1 protège est renseigné une page sur deux — et jamais sur une ex-`Dev/Services`
+
+Mesure du 2026-09-05, sur les 697 pages actives :
+
+| Population | Avec `domaines:` | Sans |
+|---|---|---|
+| Notions (`Wiki/Concepts/`) | 297 | 0 |
+| Pages descendues dans l'arbre | 77 | 306 |
+
+Les 77 sont les anciennes `Dev/Outils/`, dont le gabarit portait `domaines:` ; les 306 sont
+les anciennes `Dev/Services/`, dont le gabarit ne le portait pas. Le champ n'est requis par
+`check_brain` que sur `role: notion`.
+
+Conséquence immédiate : la boucle qui remplit les 5 hubs n'a **pas** été élargie aux
+briques, et son périmètre reste ce qu'il était en v2 — les pages sous `Wiki/`. Élargir
+aurait produit une vue qui affiche 42 briques `ai-eng` sur 337 et laisse croire que les
+295 autres ne relèvent d'aucun métier, ce qui est faux : elles n'ont simplement pas été
+interrogées. Une vue partielle qui se présente comme complète est pire que pas de vue.
+
+Deux conséquences pour la suite, et aucune n'est traitable au lot 3 :
+
+- **Le lot 4 doit rebâtir cette boucle.** Elle lit `Wiki/` et liste les libellés de
+  `MOC/Concepts/` ; les deux meurent le même jour. C'est écrit en commentaire dans
+  `build_mocs.py`, au-dessus de la boucle.
+- **`infra-ops` est un sixième axe latent.** `THEME_LABEL` le connaît (« Infrastructure &
+  Ops »), 8 pages de l'arbre le portent — et aucune page `Métiers/` n'existe pour lui,
+  puisque aucune notion ne le porte. Il apparaîtra tout seul le jour où le périmètre
+  s'élargira. Le prévoir plutôt que le découvrir.
+
+Le geste de fond — **rendre `domaines:` obligatoire sur `role: brique`** — est un
+durcissement de règle, donc le lot 8, avec la remontée 21.
+
+### 23. `MOC/` ne meurt pas au lot 3, et il faut le dire plutôt que l'écrire faux
+
+Le périmètre du lot annonçait « Suppression de `MOC/` (39 pages) ». C'est vrai de deux de
+ses trois étages : `MOC/Categories/` est vide depuis la migration des 20 domaines,
+`MOC/Types/` l'est depuis cette session. **`MOC/Concepts/` reste**, avec ses 10 pages.
+
+Ce n'est pas un reste de confort. Mesure du 2026-09-05, sur les 297 notions :
+
+| Atteignable (R7) par | Notions |
+|---|---|
+| un hub de l'arbre ou `Home.md` | 267 |
+| **`MOC/Concepts/` seulement** | **30** |
+| rien | 0 |
+
+Supprimer `MOC/Concepts/` aujourd'hui casserait donc R7 sur 30 notions — pour l'essentiel
+des `concept/stats` et `concept/math` (« Test t et ANOVA », « Théorème central limite »,
+« Bootstrap », « MFA », « PGA », « Inégalités de concentration »…), plus quelques
+`concept/data` (« Change Data Capture (CDC) », « Versionnage de données »,
+« Notebooks-as-code »). Ce sont les notions que les hubs de « Statistiques & inférence » et
+de « Mathématiques » n'ont pas citées en clair quand ils ont été écrits — la remontée 13
+les faisait citer par dizaines, pas exhaustivement.
+
+`MOC/Concepts/` meurt donc **au lot 4**, avec `Wiki/Concepts/`, et pas avant. Les deux
+dossiers survivent à la clôture du lot 3, et `CLAUDE.md` le dit désormais explicitement :
+un `CLAUDE.md` qui décrit un état non atteint est pire qu'un `CLAUDE.md` périmé.
+
+Une de ces 10 pages est déjà morte sans le dire : `MOC/Concepts/Gestion des connaissances.md`
+n'indexe plus qu'`Obsidian`, qui a quitté `Wiki/` (remontée 10), et n'est donc plus
+régénérée. Elle n'a **pas** été supprimée — l'arbitrage porte sur le dossier, et le lot
+n'autorise aucun `rm` sur une page. Elle part avec les neuf autres au lot 4.
+
+### 24. Après `CLAUDE.md`, cinq documents de gouvernance décrivent encore `Dev/`
+
+`CLAUDE.md` est réécrit sur l'arbre. Ce n'est pas le seul document qui route un agent, et
+les autres n'ont pas été touchés — leur réécriture est un lot en soi :
+
+| Document | Ce qu'il dit encore | Lot |
+|---|---|---|
+| `.claude/skills/enrichir-brain/SKILL.md` | `grep … Dev/ Wiki/ MOC/`, `Dev/Patterns/*.base`, hub `MOC/Categories/<tête>` | 7 |
+| `.claude/skills/planifier-projet/SKILL.md` | « règles issues de `Dev/Rules/` » | 7 |
+| `CLAUDE-build.md` | `Dev/Patterns/`, `Dev/Rules/` comme dossiers d'accueil | 7 |
+| `CLAUDE-project.md` | cherche les patterns et les règles sous `Dev/` | 7 |
+| `CONTRIBUTING.md`, `INSTALL.md` | tableau des dossiers, requêtes de graphe en `galaxie:` | 7 |
+
+Le cas d'`enrichir-brain` est le plus coûteux et le plus utile : c'est lui qui gagne le
+plus à l'arbre (`brain-v3.md` §12), son étape « identifier les pages connexes » devenant
+`ls` du dossier d'accueil. Tant qu'il n'est pas réécrit, `CLAUDE.md` nomme la dette au lieu
+de la laisser découvrir.
+
+`Documentation/perso/obsidian-graph.md` fait exception et a été mis à jour ici : c'est le
+document v3 des couleurs du graphe, et ses requêtes `path:MOC/Themes/` ne désignaient plus
+rien. `INSTALL.md` porte encore les requêtes v2 (`["galaxie":"dev"]`) — le corriger à
+moitié aurait été pire que le laisser cohérent avec lui-même.
+
+## Le lot 3 est clos
+
+Les six critères d'acceptation sont verts. Ce qui reste ouvert est nommé et daté : le
+**lot 4** pour les 297 notions, `MOC/Concepts/` et la boucle des 5 hubs métier ; le
+**lot 5** pour les 47 `.base` ; le **lot 7** pour les skills et les documents de
+gouvernance ; le **lot 8** pour le vocabulaire `domaines:` / « domaine » et pour rendre
+`domaines:` obligatoire sur les briques.

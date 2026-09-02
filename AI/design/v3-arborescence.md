@@ -29,23 +29,37 @@ tags: [meta, design, v3, migration]
 | `Dev/Services/` + `Dev/Outils/` | 336 | `role: brique` |
 | `Wiki/Concepts/` | 299 | `role: notion` |
 | `Dev/Patterns/*.base` | 47 | `role: comparatif` (page `.md` + vue embarquée) |
-| `Dev/Patterns/Pattern - *.md` | 5 | `role: pattern` |
-| `Dev/Rules/` | 5 | `role: rule` |
-| `MOC/` | 39 | **supprimé** — absorbé par les pages hub |
+| `Dev/Patterns/Pattern - *.md` | 5 | `role: pattern` — dans « Patterns/ » |
+| `Dev/Rules/` | 5 | `role: rule` — dans « Rules/ » |
+| `MOC/Categories` + `MOC/Types` | 22 | **absorbés** par les pages hub, par `git mv` |
+| `MOC/Themes` | 5 | **déplacés** vers « Métiers/ », `role: hub` |
+| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4** — porte d'entrée R7 de 30 notions |
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
 
-> **État au 2026-09-04.** Lot 3 : **les 20 domaines sont migrés** — le pilote
-> « Bases de données », les 14 plus petits, les trois moyens (« Statistiques &
-> inférence », « Data & pipelines », « Mathématiques »), « LLM & IA générative »,
-> puis « Machine Learning », soit 337 briques et 38 comparatifs descendus dans
-> l'arbre. `Dev/Services/` et `Dev/Outils/` n'existent plus.
+> **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
+> 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
+> « LLM & IA générative », puis « Machine Learning »), et la clôture du 2026-09-05 a
+> rangé ce qu'aucun domaine n'accueillait, par quatre arbitrages de floSa :
 >
-> **Ce qui reste sous `Dev/` et `Wiki/`** ne relève d'aucun domaine et clôt le lot
-> ailleurs : les 297 notions `concept/*` (lot 4), les 5 patterns, les 5 règles et
-> `Comparatif - Frontends web légers.base`, qui enjambe deux domaines.
+> - les 5 `MOC/Themes/` **descendent à la racine dans « Métiers/ »**, `role: hub`, corps
+>   au gabarit §9 — gardées parce que `domaines:` est le seul axe transverse à un arbre
+>   rangé par domaine technique. Pas « Domaines/ » : le mot est déjà pris par l'arbre
+>   (remontée 21) ;
+> - les 2 `MOC/Types/` deviennent les hubs de **« Patterns/ »** et **« Rules/ »**, que
+>   les 5 patterns et les 5 règles rejoignent — c'est `role:` qui les groupe ;
+> - `Comparatif - Frontends web légers.base` va dans **« Interfaces & apps data/ »** ;
+> - **`MOC/Concepts/` ne bouge pas et n'est pas supprimée** : 30 des 297 notions ne sont
+>   atteignables (R7) que par elle. Elle meurt au lot 4, avec `Wiki/Concepts/`.
 >
-> Le vault porte 690 pages actives et **46 hubs** (20 de domaine, 26 de sous-domaine).
+> `Dev/` n'existe plus. Le vault porte **697 pages actives** et **53 hubs** (20 de
+> domaine, 26 de sous-domaine, 5 de métier, 2 de rôle) ; 818 fichiers `.md`/`.base`
+> avant comme après la clôture. Les 47 comparatifs sont dans le dossier de leurs membres,
+> et le relevé de leurs membres avant / après ne montre aucun écart.
+>
+> **Ce qui reste sous `Wiki/`** ne relève pas du lot 3 : les 297 notions `concept/*`,
+> que le lot 4 recatégorisera et descendra.
+>
 > `MOC/Categories/` est vide : ses 20 pages ont été déplacées par `git mv` vers le hub
 > de leur dossier — une MOC de domaine ne disparaît pas, elle *devient* le hub (cf.
 > remontée 6 de `lot-3-arborescence.md`). Seule `MOC/Categories/Bases de données.md` a
@@ -135,7 +149,16 @@ SecondBrain/
 │   └── (2 pages au niveau du domaine)
 ├── DevOps/   (2 pages)
 │   └── (2 pages au niveau du domaine)
+│
+├── Métiers/   (5 hubs transverses, générés depuis `domaines:`)
+│   └── Data Science · Data Engineering · MLOps · ML Engineering · AI Engineering
+├── Patterns/   (1 hub + 5 pages `role: pattern`)
+└── Rules/      (1 hub + 5 pages `role: rule`)
 ```
+
+Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categorie:` :
+« Métiers/ » est indexé par le champ `domaines:`, « Patterns/ » et « Rules/ » par
+`role:`. `check_arbo.py` les compte à part (`arbo.ROLES_SANS_CATEGORIE`).
 
 ## Détail par domaine
 
@@ -1187,8 +1210,8 @@ SecondBrain/
 - [ ] `[n]` Versionnage de données — actuellement `concept/data`
 - [ ] `[n]` Web scraping — actuellement `concept/data`
 
-9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main. **8 sur 9
-sont traités** ; il ne reste que « Frontends web légers », qui enjambe deux domaines.
+9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main. **Les 9 sont
+traités** depuis la clôture du 2026-09-05.
 
 Ce n'était pas une attente neutre : ces 9 croisaient un chemin `Dev/Services/` avec un tag
 ou une liste de noms, donc **leur vue se vidait en silence** dès que leurs membres
@@ -1200,8 +1223,11 @@ avec l'arbre. Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
       `file.hasTag("cli")` remplacé par `categorie == "devtools/cli"` (2 membres)
 - [x] `[c]` Comparatif - Traitement du signal — **rangé** dans « Signal & audio/ » ;
       clause de chemin remplacée par `role == "brique"` (3 membres)
-- [~] `[c]` Comparatif - Frontends web légers — **réparé** (`role == "brique"`, 5 membres)
-      mais NON rangé : il enjambe « Web & API » et « Interfaces & apps data »
+- [x] `[c]` Comparatif - Frontends web légers — **réparé** (`role == "brique"`, 5 membres)
+      puis **rangé** dans « Interfaces & apps data/ » le 2026-09-05, par arbitrage de
+      floSa : trois de ses cinq membres y vivent (Streamlit, Gradio, Dash), FastAPI et
+      HTMX n'y figurent que comme l'option à la main. C'est un comparatif d'interfaces
+      pour applications data, pas un comparatif de web
 - [x] `[c]` Comparatif - Boosting — **rangé** dans « Machine Learning/Tabulaire/ » (3 membres) ;
       clause de chemin remplacée par `role == "brique"`
 - [x] `[c]` Comparatif - Détection & segmentation — **rangé** dans « Machine Learning/Vision/ » (6 membres) ;
