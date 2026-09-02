@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 656 pages actives.
+> 661 pages actives.
 
 ## Par page
 
@@ -18,7 +18,7 @@
 ### Activepieces  ·  brique
 - tags : `low-code`, `orchestration`, `agents`, `mcp`
 - liens sortants : [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[mcp-protocol]], [[n8n]]
-- liens entrants : [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens entrants : [[No-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### ADBC  ·  brique
 - tags : `db-driver`, `columnar`
@@ -103,7 +103,7 @@
 ### AWS S3  ·  brique
 - tags : `object-storage`
 - liens sortants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Metaflow]], [[MinIO]], [[SeaweedFS]]
+- liens entrants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Metaflow]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet]]
 
 ### Axolotl  ·  brique
 - tags : `fine-tuning`, `declarative-config`, `distributed-training`, `llm`
@@ -163,7 +163,7 @@
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens entrants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
@@ -198,7 +198,7 @@
 ### Cloudflare R2  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet]]
 
 ### cloudscraper  ·  brique
 - tags : `web-scraping`
@@ -393,7 +393,7 @@
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
 - liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[Pydantic]], [[Uvicorn]]
-- liens entrants : [[Flask]], [[HTMX]], [[Jinja2]], [[LM Studio]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[txtai]], [[vLLM]]
+- liens entrants : [[Flask]], [[HTMX]], [[Jinja2]], [[LM Studio]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]], [[vLLM]]
 
 ### fastmcp  ·  brique
 - tags : `mcp`, `tool-use`, `agents`
@@ -423,7 +423,7 @@
 ### Flask  ·  brique
 - tags : `web-framework`
 - liens sortants : [[FastAPI]]
-- liens entrants : [[FastAPI]], [[HTMX]], [[Jinja2]]
+- liens entrants : [[FastAPI]], [[HTMX]], [[Jinja2]], [[Web & API]]
 
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
@@ -458,7 +458,7 @@
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet]]
 
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
@@ -473,7 +473,7 @@
 ### Gradio  ·  brique
 - tags : `ml-demo`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Shiny for Python]], [[Streamlit]]
-- liens entrants : [[Dash]], [[HuggingFace]], [[Shiny for Python]], [[Streamlit]], [[text-generation-webui]]
+- liens entrants : [[Dash]], [[HuggingFace]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
@@ -493,7 +493,7 @@
 ### gumloop  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
 - liens sortants : [[Activepieces]], [[Agent patterns]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[n8n]]
-- liens entrants : [[Activepieces]], [[Windmill]], [[Zapier]], [[n8n]]
+- liens entrants : [[Activepieces]], [[No-code]], [[Windmill]], [[Zapier]], [[n8n]]
 
 ### Gymnasium  ·  brique
 - tags : `reinforcement-learning`
@@ -538,7 +538,7 @@
 ### HTMX  ·  brique
 - tags : `hypermedia`
 - liens sortants : [[Comparatif - Frontends web légers]], [[FastAPI]], [[Flask]], [[Jinja2]]
-- liens entrants : [[Jinja2]]
+- liens entrants : [[Jinja2]], [[Web & API]]
 
 ### HuggingFace  ·  brique
 - tags : `transformers`, `model-hub`, `fine-tuning`, `nlp`, `deep-learning`, `embeddings`
@@ -588,7 +588,7 @@
 ### Jinja2  ·  brique
 - tags : `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[HTMX]]
-- liens entrants : [[HTMX]]
+- liens entrants : [[HTMX]], [[Web & API]]
 
 ### jupysql  ·  brique
 - tags : `notebook`, `dataframe`
@@ -813,7 +813,7 @@
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Pattern - Stack démo ML locale multi-services]], [[SeaweedFS]], [[croc]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Pattern - Stack démo ML locale multi-services]], [[SeaweedFS]], [[Stockage]], [[Stockage objet]], [[croc]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
@@ -858,7 +858,7 @@
 ### n8n  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
 - liens sortants : [[Activepieces]], [[Airflow]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Windmill]], [[Zapier]], [[gumloop]]
-- liens entrants : [[Activepieces]], [[Windmill]], [[Zapier]], [[gumloop]]
+- liens entrants : [[Activepieces]], [[Automatisation no-code]], [[No-code]], [[Windmill]], [[Zapier]], [[gumloop]]
 
 ### Nebula Graph  ·  brique
 - tags : `graph-db`, `distributed`
@@ -1133,7 +1133,7 @@
 ### public-apis  ·  brique
 - tags : —
 - liens sortants : [[Bruno]], [[Comparatif - Clients d'API]], [[Postman]]
-- liens entrants : [[osint4all]]
+- liens entrants : [[Web & API]], [[osint4all]]
 
 ### PuLP  ·  brique
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
@@ -1143,7 +1143,7 @@
 ### Pydantic  ·  brique
 - tags : `data-validation`, `type-hints`
 - liens sortants : [[Pydantic Settings]]
-- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]]
+- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]], [[Web & API]]
 
 ### Pydantic Settings  ·  brique
 - tags : `config`, `data-validation`
@@ -1333,7 +1333,7 @@
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Stockage]], [[Stockage objet]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -1463,7 +1463,7 @@
 ### Streamlit  ·  brique
 - tags : `data-app`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[plotly]]
-- liens entrants : [[Dash]], [[Gradio]], [[Grafana]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]]
+- liens entrants : [[Dash]], [[Gradio]], [[Grafana]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
 
 ### STUMPY  ·  brique
 - tags : `anomaly-detection`, `timeseries`
@@ -1623,7 +1623,7 @@
 ### Uvicorn  ·  brique
 - tags : `web-framework`
 - liens sortants : [[FastAPI]]
-- liens entrants : [[FastAPI]], [[Pattern - Stack démo ML locale multi-services]]
+- liens entrants : [[FastAPI]], [[Pattern - Stack démo ML locale multi-services]], [[Web & API]]
 
 ### Vanna  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `local-llm`
@@ -1658,7 +1658,7 @@
 ### Windmill  ·  brique
 - tags : `low-code`, `orchestration`
 - liens sortants : [[Activepieces]], [[Airflow]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Temporal]], [[Zapier]], [[gumloop]], [[n8n]]
-- liens entrants : [[Activepieces]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens entrants : [[Activepieces]], [[No-code]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### WrenAI  ·  brique
 - tags : `text-to-sql`, `llm`, `agents`, `dashboard`
@@ -1683,7 +1683,7 @@
 ### Zapier  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
 - liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[gumloop]], [[n8n]]
-- liens entrants : [[Activepieces]], [[Windmill]], [[gumloop]], [[n8n]]
+- liens entrants : [[Activepieces]], [[No-code]], [[Windmill]], [[gumloop]], [[n8n]]
 
 ### ZenML  ·  brique
 - tags : `orchestration`, `ml-pipeline`
@@ -1694,6 +1694,11 @@
 - tags : —
 - liens sortants : [[Alembic]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[DataGrip]], [[Flyway]], [[HeidiSQL]], [[Liquibase]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 - liens entrants : [[Bases de données]]
+
+### Automatisation no-code  ·  hub
+- tags : `low-code`, `orchestration`, `self-hosted`
+- liens sortants : [[No-code]], [[n8n]]
+- liens entrants : —
 
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
@@ -1714,6 +1719,11 @@
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Design & diagrammes]]
+
+### No-code  ·  hub
+- tags : `low-code`, `orchestration`, `self-hosted`
+- liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens entrants : [[Automatisation no-code]]
 
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
@@ -1740,10 +1750,25 @@
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 - liens entrants : —
 
+### Stockage  ·  hub
+- tags : `object-storage`, `s3-compatible`, `self-hosted`
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage objet]]
+- liens entrants : —
+
+### Stockage objet  ·  hub
+- tags : `object-storage`, `s3-compatible`, `self-hosted`
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens entrants : [[Stockage]]
+
 ### Vectoriel  ·  hub
 - tags : —
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 - liens entrants : [[Bases de données]], [[Recherche]]
+
+### Web & API  ·  hub
+- tags : `web-framework`, `api-client`, `hypermedia`, `templating`
+- liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
+- liens entrants : —
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
@@ -3296,7 +3321,7 @@
 - `alignment` : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Time series anomaly detection
-- `api-client` : Bruno, Outils de développement, Postman  — pas de page concept dédiée
+- `api-client` : Bruno, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : CuPy, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme, Signal & audio
@@ -3402,7 +3427,7 @@
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
 - `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
-- `hypermedia` : HTMX  — pas de page concept dédiée
+- `hypermedia` : HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Hyperopt, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : ELT vs ETL & idempotence, Stream processing
@@ -3438,7 +3463,7 @@
 - `local-llm` : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
 - `logging` : Loki  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
-- `low-code` : Activepieces, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
+- `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector  — pas de page concept dédiée
 - `markov` : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan  — pas de page concept dédiée
@@ -3481,7 +3506,7 @@
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, albumentations, supervision
-- `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS  — pas de page concept dédiée
+- `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage, Stockage objet  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, supervision
 - `observability` : Beszel, Grafana, Loki  — pas de page concept dédiée
 - `ocr` : LlamaParse, Marker, OCR, Stirling PDF, Unstructured, docTR, pdf-inspector
@@ -3489,7 +3514,7 @@
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Wasserstein distance
 - `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
-- `orchestration` : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
+- `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, No-code, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Web-Check, osint4all  — pas de page concept dédiée
 - `out-of-core` : Calcul distribué, Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
@@ -3542,7 +3567,7 @@
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
-- `s3-compatible` : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS  — pas de page concept dédiée
+- `s3-compatible` : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS, Stockage, Stockage objet  — pas de page concept dédiée
 - `safety` : AI security, Guardrails, Jailbreaking and defenses  — pas de page concept dédiée
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Scaling laws, Small Language Models
 - `scheduler` : Airflow  — pas de page concept dédiée
@@ -3550,7 +3575,7 @@
 - `search` : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton  — pas de page concept dédiée
 - `segmentation` : Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, albumentations, segment-anything
-- `self-hosted` : Beszel, OpenMAIC, Stirling PDF, Web-Check, croc  — pas de page concept dédiée
+- `self-hosted` : Automatisation no-code, Beszel, No-code, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai  — pas de page concept dédiée
@@ -3574,7 +3599,7 @@
 - `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, lifelines
 - `synthetic-data` : Distillation, Faker, Mimesis, SDV, Synthetic data generation
 - `table-extraction` : Docling, OpenDataLoader PDF, pdfplumber  — pas de page concept dédiée
-- `templating` : Jinja2  — pas de page concept dédiée
+- `templating` : Jinja2, Web & API  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
 - `terminal-ui` : Rich, llmfit, pi  — pas de page concept dédiée
 - `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
@@ -3602,7 +3627,7 @@
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision Transformers (ViT), timm
 - `wavelet` : Ondelettes, PyWavelets, Signal & audio  — pas de page concept dédiée
-- `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn  — pas de page concept dédiée
+- `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
 - `web-scraping` : Crawlee, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
@@ -3616,7 +3641,7 @@
 - `accessibility` (porté par : OpenDataLoader PDF)
 - `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Archify, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
-- `api-client` (porté par : Bruno, Outils de développement, Postman)
+- `api-client` (porté par : Bruno, Outils de développement, Postman, Web & API)
 - `array` (porté par : CuPy, JAX, numpy, xarray)
 - `attention` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
@@ -3678,7 +3703,7 @@
 - `gpu` (porté par : Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
-- `hypermedia` (porté par : HTMX)
+- `hypermedia` (porté par : HTMX, Web & API)
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance)
@@ -3700,7 +3725,7 @@
 - `llm-gateway` (porté par : Helicone, LiteLLM, OmniRoute, OpenRouter)
 - `local-llm` (porté par : LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Loki)
-- `low-code` (porté par : Activepieces, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n)
+- `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector)
 - `markov` (porté par : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan)
@@ -3725,11 +3750,11 @@
 - `nosql` (porté par : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
-- `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS)
+- `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage, Stockage objet)
 - `observability` (porté par : Beszel, Grafana, Loki)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
-- `orchestration` (porté par : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
+- `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, No-code, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Dask, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
@@ -3758,13 +3783,13 @@
 - `reproducibility` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
-- `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS)
+- `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS, Stockage, Stockage objet)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton)
-- `self-hosted` (porté par : Beszel, OpenMAIC, Stirling PDF, Web-Check, croc)
+- `self-hosted` (porté par : Automatisation no-code, Beszel, No-code, OpenMAIC, Stirling PDF, Stockage, Stockage objet, Web-Check, croc)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
@@ -3780,7 +3805,7 @@
 - `structured-output` (porté par : Constrained decoding, Guidance, Instructor, Outlines, PydanticAI, Structured outputs, needle, tool-use)
 - `supervised` (porté par : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
 - `table-extraction` (porté par : Docling, OpenDataLoader PDF, pdfplumber)
-- `templating` (porté par : Jinja2)
+- `templating` (porté par : Jinja2, Web & API)
 - `temporal-difference` (porté par : Q-learning and DQN)
 - `terminal-ui` (porté par : Rich, llmfit, pi)
 - `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
@@ -3797,6 +3822,6 @@
 - `video-editing` (porté par : OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio)
-- `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn)
+- `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)

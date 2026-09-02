@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # les 3 sous-domaines `automation/*` ont fusionne en `automation/no-code` :
     # le filtre par prefixe n'a plus d'objet.
     - categorie == "automation/no-code"

@@ -16,6 +16,9 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Signal & audio]] — 3 briques
 - [[Design & diagrammes]] — 7 briques, 1 sous-domaine
 - [[Calcul distribué]] — 7 briques
+- [[Web & API]] — 6 briques
+- [[Stockage]] — 6 briques, 1 sous-domaine
+- [[Automatisation no-code]] — 5 briques, 1 sous-domaine
 
 ## Hubs (MOC) — domaines pas encore migrés
 

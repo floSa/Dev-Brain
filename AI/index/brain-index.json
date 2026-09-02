@@ -1,16 +1,19 @@
 {
   "generated_by": "AI/scripts/build_index.py",
   "scanned": [
+    "Automatisation no-code",
     "Bases de données",
     "Calcul distribué",
     "Design & diagrammes",
     "Dev",
     "Outils de développement",
     "Signal & audio",
+    "Stockage",
+    "Web & API",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 656,
+  "count": 661,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -131,7 +134,8 @@
     "api-client": [
       "Bruno",
       "Outils de développement",
-      "Postman"
+      "Postman",
+      "Web & API"
     ],
     "array": [
       "CuPy",
@@ -1000,7 +1004,8 @@
       "Weaviate"
     ],
     "hypermedia": [
-      "HTMX"
+      "HTMX",
+      "Web & API"
     ],
     "hyperparameter-tuning": [
       "Hyperopt",
@@ -1374,12 +1379,14 @@
     ],
     "low-code": [
       "Activepieces",
+      "Automatisation no-code",
       "Dify",
       "Flowise",
       "LLaMA-Factory",
       "Langflow",
       "Mage",
       "Maxun",
+      "No-code",
       "PraisonAI",
       "Windmill",
       "Zapier",
@@ -1690,7 +1697,9 @@
       "Garage",
       "MinIO",
       "Pattern - Stack démo ML locale multi-services",
-      "SeaweedFS"
+      "SeaweedFS",
+      "Stockage",
+      "Stockage objet"
     ],
     "object-tracking": [
       "OpenCV",
@@ -1744,12 +1753,14 @@
     "orchestration": [
       "Activepieces",
       "Airflow",
+      "Automatisation no-code",
       "ClearML",
       "Dagster",
       "Flyte",
       "Kestra",
       "Mage",
       "Metaflow",
+      "No-code",
       "Prefect",
       "Temporal",
       "Windmill",
@@ -2142,7 +2153,9 @@
       "Cloudflare R2",
       "Garage",
       "MinIO",
-      "SeaweedFS"
+      "SeaweedFS",
+      "Stockage",
+      "Stockage objet"
     ],
     "safety": [
       "AI security",
@@ -2187,9 +2200,13 @@
       "segment-anything"
     ],
     "self-hosted": [
+      "Automatisation no-code",
       "Beszel",
+      "No-code",
       "OpenMAIC",
       "Stirling PDF",
+      "Stockage",
+      "Stockage objet",
       "Web-Check",
       "croc"
     ],
@@ -2375,7 +2392,8 @@
       "pdfplumber"
     ],
     "templating": [
-      "Jinja2"
+      "Jinja2",
+      "Web & API"
     ],
     "temporal-difference": [
       "Q-learning and DQN"
@@ -2641,7 +2659,8 @@
       "Server-Sent Events & streaming LLM",
       "Shiny for Python",
       "Streamlit",
-      "Uvicorn"
+      "Uvicorn",
+      "Web & API"
     ],
     "web-scraping": [
       "Crawlee",
@@ -2667,6 +2686,184 @@
     ]
   },
   "pages": [
+    {
+      "path": "Automatisation no-code/Automatisation no-code.md",
+      "nom": "Automatisation no-code",
+      "alias": [
+        "low-code",
+        "automatisation",
+        "ipaas"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Automatisation no-code/No-code/Activepieces.md",
+      "nom": "Activepieces",
+      "alias": [
+        "activepieces"
+      ],
+      "role": "brique",
+      "categorie": "automation/no-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "agents",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[n8n]]",
+        "[[Windmill]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Automatisation no-code/No-code/No-code.md",
+      "nom": "No-code",
+      "alias": [
+        "workflow automation",
+        "flux a connecteurs"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Plateformes de flux à connecteurs — les cinq briques du domaine, du SaaS pur à l'auto-hébergé qui accepte du code.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Automatisation no-code/No-code/Windmill.md",
+      "nom": "Windmill",
+      "alias": [
+        "windmill",
+        "windmill.dev",
+        "windmill-labs"
+      ],
+      "role": "brique",
+      "categorie": "automation/no-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.",
+      "tags": [
+        "low-code",
+        "orchestration"
+      ],
+      "alternatives": [
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Automatisation no-code/No-code/Zapier.md",
+      "nom": "Zapier",
+      "alias": [
+        "zapier"
+      ],
+      "role": "brique",
+      "categorie": "automation/no-code",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "agents"
+      ],
+      "alternatives": [
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[gumloop]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Automatisation no-code/No-code/gumloop.md",
+      "nom": "gumloop",
+      "alias": [
+        "Gumloop",
+        "gumloop.com"
+      ],
+      "role": "brique",
+      "categorie": "automation/no-code",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "agents"
+      ],
+      "alternatives": [
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[Zapier]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Automatisation no-code/No-code/n8n.md",
+      "nom": "n8n",
+      "alias": [
+        "n8n.io",
+        "n8n-io"
+      ],
+      "role": "brique",
+      "categorie": "automation/no-code",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.",
+      "tags": [
+        "low-code",
+        "orchestration",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
     {
       "path": "Bases de données/ADBC.md",
       "nom": "ADBC",
@@ -4860,26 +5057,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/public-apis.md",
-      "nom": "public-apis",
-      "alias": [
-        "public-apis/public-apis",
-        "awesome public apis"
-      ],
-      "role": "brique",
-      "categorie": "web/api",
-      "famille": "annuaire",
-      "domaines": [
-        "ai-eng",
-        "data-eng"
-      ],
-      "pitch": "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.",
-      "tags": [],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/swarm-forge.md",
       "nom": "swarm-forge",
       "alias": [
@@ -5133,32 +5310,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Services/AWS S3.md",
-      "nom": "AWS S3",
-      "alias": [
-        "s3",
-        "amazon s3",
-        "aws-s3"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.",
-      "tags": [
-        "object-storage"
-      ],
-      "alternatives": [
-        "[[MinIO]]",
-        "[[Ceph]]",
-        "[[SeaweedFS]]",
-        "[[Garage]]",
-        "[[Cloudflare R2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Acme.md",
       "nom": "Acme",
       "alias": [
@@ -5178,32 +5329,6 @@
         "[[Stable-Baselines3]]",
         "[[TF-Agents]]",
         "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Activepieces.md",
-      "nom": "Activepieces",
-      "alias": [
-        "activepieces"
-      ],
-      "role": "brique",
-      "categorie": "automation/no-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.",
-      "tags": [
-        "low-code",
-        "orchestration",
-        "agents",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[n8n]]",
-        "[[Windmill]]",
-        "[[Zapier]]",
-        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5536,34 +5661,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Ceph.md",
-      "nom": "Ceph",
-      "alias": [
-        "ceph",
-        "rados",
-        "radosgw",
-        "rgw"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.",
-      "tags": [
-        "object-storage",
-        "s3-compatible"
-      ],
-      "alternatives": [
-        "[[MinIO]]",
-        "[[SeaweedFS]]",
-        "[[Garage]]",
-        "[[AWS S3]]",
-        "[[Cloudflare R2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Chronos.md",
       "nom": "Chronos",
       "alias": [
@@ -5615,32 +5712,6 @@
         "[[Neptune]]",
         "[[Comet]]",
         "[[Aim]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Cloudflare R2.md",
-      "nom": "Cloudflare R2",
-      "alias": [
-        "r2",
-        "cloudflare-r2"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.",
-      "tags": [
-        "object-storage",
-        "s3-compatible"
-      ],
-      "alternatives": [
-        "[[AWS S3]]",
-        "[[MinIO]]",
-        "[[Ceph]]",
-        "[[SeaweedFS]]",
-        "[[Garage]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6052,27 +6123,6 @@
       "maturite": "deprecated"
     },
     {
-      "path": "Dev/Services/FastAPI.md",
-      "nom": "FastAPI",
-      "alias": [
-        "fastapi"
-      ],
-      "role": "brique",
-      "categorie": "web/backend",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.",
-      "tags": [
-        "web-framework",
-        "type-hints"
-      ],
-      "alternatives": [
-        "[[Flask]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Feast.md",
       "nom": "Feast",
       "alias": [
@@ -6129,26 +6179,6 @@
       ],
       "alternatives": [
         "[[Maxun]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Flask.md",
-      "nom": "Flask",
-      "alias": [
-        "flask"
-      ],
-      "role": "brique",
-      "categorie": "web/backend",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.",
-      "tags": [
-        "web-framework"
-      ],
-      "alternatives": [
-        "[[FastAPI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6244,31 +6274,6 @@
       ],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/Garage.md",
-      "nom": "Garage",
-      "alias": [
-        "garage"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.",
-      "tags": [
-        "object-storage",
-        "s3-compatible"
-      ],
-      "alternatives": [
-        "[[MinIO]]",
-        "[[SeaweedFS]]",
-        "[[Ceph]]",
-        "[[AWS S3]]",
-        "[[Cloudflare R2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/GitHub Actions.md",
@@ -6377,24 +6382,6 @@
       "alternatives": [
         "[[OpenSpiel]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/HTMX.md",
-      "nom": "HTMX",
-      "alias": [
-        "htmx"
-      ],
-      "role": "brique",
-      "categorie": "web/frontend",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd.",
-      "tags": [
-        "hypermedia"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -6600,25 +6587,6 @@
         "[[PyTorch]]",
         "[[TensorFlow]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Jinja2.md",
-      "nom": "Jinja2",
-      "alias": [
-        "jinja",
-        "jinja2"
-      ],
-      "role": "brique",
-      "categorie": "web/frontend",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask.",
-      "tags": [
-        "templating"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -7321,31 +7289,6 @@
       ],
       "alternatives": [
         "[[Faker]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/MinIO.md",
-      "nom": "MinIO",
-      "alias": [
-        "minio"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.",
-      "tags": [
-        "object-storage",
-        "s3-compatible"
-      ],
-      "alternatives": [
-        "[[Ceph]]",
-        "[[SeaweedFS]]",
-        "[[Garage]]",
-        "[[AWS S3]]",
-        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8607,33 +8550,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/SeaweedFS.md",
-      "nom": "SeaweedFS",
-      "alias": [
-        "seaweedfs",
-        "seaweed",
-        "weed"
-      ],
-      "role": "brique",
-      "categorie": "storage/objet",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.",
-      "tags": [
-        "object-storage",
-        "s3-compatible"
-      ],
-      "alternatives": [
-        "[[MinIO]]",
-        "[[Ceph]]",
-        "[[Garage]]",
-        "[[AWS S3]]",
-        "[[Cloudflare R2]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Seldon Core.md",
       "nom": "Seldon Core",
       "alias": [
@@ -9271,24 +9187,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Uvicorn.md",
-      "nom": "Uvicorn",
-      "alias": [
-        "uvicorn"
-      ],
-      "role": "brique",
-      "categorie": "web/backend",
-      "famille": "cli",
-      "domaines": null,
-      "pitch": "Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI.",
-      "tags": [
-        "web-framework"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Vanna.md",
       "nom": "Vanna",
       "alias": [
@@ -9365,32 +9263,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Windmill.md",
-      "nom": "Windmill",
-      "alias": [
-        "windmill",
-        "windmill.dev",
-        "windmill-labs"
-      ],
-      "role": "brique",
-      "categorie": "automation/no-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.",
-      "tags": [
-        "low-code",
-        "orchestration"
-      ],
-      "alternatives": [
-        "[[n8n]]",
-        "[[Activepieces]]",
-        "[[Zapier]]",
-        "[[gumloop]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/WrenAI.md",
       "nom": "WrenAI",
       "alias": [
@@ -9440,31 +9312,6 @@
         "[[LightGBM]]",
         "[[CatBoost]]",
         "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Zapier.md",
-      "nom": "Zapier",
-      "alias": [
-        "zapier"
-      ],
-      "role": "brique",
-      "categorie": "automation/no-code",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.",
-      "tags": [
-        "low-code",
-        "orchestration",
-        "agents"
-      ],
-      "alternatives": [
-        "[[n8n]]",
-        "[[Activepieces]]",
-        "[[Windmill]]",
-        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9791,32 +9638,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/gumloop.md",
-      "nom": "gumloop",
-      "alias": [
-        "Gumloop",
-        "gumloop.com"
-      ],
-      "role": "brique",
-      "categorie": "automation/no-code",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.",
-      "tags": [
-        "low-code",
-        "orchestration",
-        "agents"
-      ],
-      "alternatives": [
-        "[[n8n]]",
-        "[[Activepieces]]",
-        "[[Windmill]]",
-        "[[Zapier]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/hdbscan.md",
       "nom": "hdbscan",
       "alias": [
@@ -10018,32 +9839,6 @@
       "alternatives": [
         "[[ydata-profiling]]",
         "[[sweetviz]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/n8n.md",
-      "nom": "n8n",
-      "alias": [
-        "n8n.io",
-        "n8n-io"
-      ],
-      "role": "brique",
-      "categorie": "automation/no-code",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.",
-      "tags": [
-        "low-code",
-        "orchestration",
-        "agents"
-      ],
-      "alternatives": [
-        "[[Activepieces]]",
-        "[[Windmill]]",
-        "[[Zapier]]",
-        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11424,6 +11219,357 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/AWS S3.md",
+      "nom": "AWS S3",
+      "alias": [
+        "s3",
+        "amazon s3",
+        "aws-s3"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.",
+      "tags": [
+        "object-storage"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[Cloudflare R2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/Ceph.md",
+      "nom": "Ceph",
+      "alias": [
+        "ceph",
+        "rados",
+        "radosgw",
+        "rgw"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/Cloudflare R2.md",
+      "nom": "Cloudflare R2",
+      "alias": [
+        "r2",
+        "cloudflare-r2"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[AWS S3]]",
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/Garage.md",
+      "nom": "Garage",
+      "alias": [
+        "garage"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[SeaweedFS]]",
+        "[[Ceph]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/MinIO.md",
+      "nom": "MinIO",
+      "alias": [
+        "minio"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/SeaweedFS.md",
+      "nom": "SeaweedFS",
+      "alias": [
+        "seaweedfs",
+        "seaweed",
+        "weed"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet/Stockage objet.md",
+      "nom": "Stockage objet",
+      "alias": [
+        "stockage objet",
+        "object storage",
+        "s3"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Servir des objets par une API S3 — la brique de base des lakehouses, des registres de modèles et des sauvegardes.",
+      "tags": [
+        "object-storage",
+        "s3-compatible",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Stockage/Stockage.md",
+      "nom": "Stockage",
+      "alias": [
+        "stockage",
+        "storage"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.",
+      "tags": [
+        "object-storage",
+        "s3-compatible",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Web & API/FastAPI.md",
+      "nom": "FastAPI",
+      "alias": [
+        "fastapi"
+      ],
+      "role": "brique",
+      "categorie": "web/backend",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.",
+      "tags": [
+        "web-framework",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[Flask]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Flask.md",
+      "nom": "Flask",
+      "alias": [
+        "flask"
+      ],
+      "role": "brique",
+      "categorie": "web/backend",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.",
+      "tags": [
+        "web-framework"
+      ],
+      "alternatives": [
+        "[[FastAPI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/HTMX.md",
+      "nom": "HTMX",
+      "alias": [
+        "htmx"
+      ],
+      "role": "brique",
+      "categorie": "web/frontend",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd.",
+      "tags": [
+        "hypermedia"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Jinja2.md",
+      "nom": "Jinja2",
+      "alias": [
+        "jinja",
+        "jinja2"
+      ],
+      "role": "brique",
+      "categorie": "web/frontend",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask.",
+      "tags": [
+        "templating"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Uvicorn.md",
+      "nom": "Uvicorn",
+      "alias": [
+        "uvicorn"
+      ],
+      "role": "brique",
+      "categorie": "web/backend",
+      "famille": "cli",
+      "domaines": null,
+      "pitch": "Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI.",
+      "tags": [
+        "web-framework"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Web & API.md",
+      "nom": "Web & API",
+      "alias": [
+        "web",
+        "api",
+        "http"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "mlops",
+        "ai-eng"
+      ],
+      "pitch": "Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.",
+      "tags": [
+        "web-framework",
+        "api-client",
+        "hypermedia",
+        "templating"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Web & API/public-apis.md",
+      "nom": "public-apis",
+      "alias": [
+        "public-apis/public-apis",
+        "awesome public apis"
+      ],
+      "role": "brique",
+      "categorie": "web/api",
+      "famille": "annuaire",
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": "Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.",
+      "tags": [],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
     },
     {
       "path": "Wiki/Concepts/A priori conjugués.md",
