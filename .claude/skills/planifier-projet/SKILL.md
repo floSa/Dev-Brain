@@ -12,7 +12,7 @@ description: |
 
 # Skill — planifier-projet
 
-Skill de **cadrage** projet. Implémente le workflow W2 de `AI/design/brain-v2.md` (§2, §7.2, §8). Interroge surtout la galaxie Dev (+ quelques Concepts Wiki) et produit un cahier des charges sourcé. N'écrit aucune fiche dans le brain.
+Skill de **cadrage** projet. Implémente le workflow W2 de `AI/design/brain-v2.md` (§2, §7.2, §8). Interroge surtout les `role: brique` (+ quelques `role: notion`) et produit un cahier des charges sourcé. N'écrit aucune fiche dans le brain.
 
 ## Quand l'utiliser
 
@@ -27,8 +27,8 @@ Mode build ou projet. Lit `AI/index/brain-index.json`, `Dev/` (Services, Pattern
 
 ## Appuis
 
-- `AI/index/brain-index.json` — pour filtrer les candidats **sans lire 160 fichiers** (pitch, tags, categorie, galaxie, **status**, **maturite**). Les deux derniers sont des critères éliminatoires : ils sont dans l'index depuis le correctif L3-1, ne plus supposer qu'il faut ouvrir la fiche pour les connaître.
-- `AI/scripts/query_index.py` — la requête bornée sur cet index ; renvoie `status` et `maturite` par défaut, et sait filtrer dessus (`--status`, `--maturite`).
+- `AI/index/brain-index.json` — pour filtrer les candidats **sans lire 160 fichiers** (pitch, tags, categorie, famille, **role**, **maturite**, alternatives, complements). `maturite` est le critère éliminatoire : il est dans l'index, ne plus supposer qu'il faut ouvrir la fiche pour le connaître.
+- `AI/scripts/query_index.py` — la requête bornée sur cet index ; renvoie `maturite` par défaut, et sait filtrer dessus (`--maturite`), ainsi que sur `--role` et `--famille`.
 - `Documentation/perso/archetypes.md` — les 7 archétypes.
 - `Documentation/general/questions-projet.md` — checklist de cadrage (branchée par archétype).
 - `Documentation/perso/conventions.md` — stacks par défaut de floSa.
@@ -44,48 +44,49 @@ Mode build ou projet. Lit `AI/index/brain-index.json`, `Dev/` (Services, Pattern
 4. **Ne poser que les questions pertinentes** de la checklist (cadrage, exécution, données, IA/LLM, légal, qualité). Utiliser des **questions à choix** pour que l'utilisateur tranche vite.
 5. **Pour chaque brique nécessaire** (BDD, framework, LLM, orchestration…) :
    - requêter `AI/index/brain-index.json` (filtrer par `categorie`, `tags`, contraintes) ;
-   - **appliquer la règle de filtrage `status` / `maturite`** ci-dessous **avant** de retenir
+   - **appliquer la règle de filtrage `maturite`** ci-dessous **avant** de retenir
      la moindre candidate ;
    - proposer **2-3 candidats**, chacun affiché avec son **pitch d'une ligne** (champ `pitch:` de l'index) ;
    - laisser l'utilisateur trancher.
 6. **Produire le plan / cahier des charges**, sourcé : chaque choix renvoie à sa fiche (`[[Dev/Services/...]]`, `[[Pattern - ...]]`, `[[Rules/...]]`) et porte la raison du choix + les alternatives écartées. Inclure les risques connus depuis la section `## Pièges` des fiches retenues.
 
-## Règle de filtrage — `status` et `maturite`
+## Règle de filtrage — `maturite`
 
-Les deux champs sont dans `brain-index.json`. Il n'y a donc **aucune excuse** à proposer une
-brique morte : la lire est un `p.get("status")`, pas une ouverture de fiche.
+Le champ est dans `brain-index.json`. Il n'y a donc **aucune excuse** à proposer une brique
+morte : la lire est un `p.get("maturite")`, pas une ouverture de fiche.
+
+`maturite:` porte **seul** cette information depuis le lot 2 de la migration v3. `status:` a
+été supprimé — il était redondant (272 fiches sur 336 étaient `actif` + `production`), et sa
+valeur `en-eval` disait l'état d'évaluation de floSa, pas la maturité du produit.
 
 | État de la candidate | Décision |
 |---|---|
-| `status: abandonne` | **jamais proposée.** Écartée d'office, avant même le décompte des 2-3 candidats. |
-| `status: en-eval` | proposable, **état annoncé en clair** dans la proposition. |
-| `maturite: deprecated` | proposable, **état annoncé en clair** dans la proposition. |
+| `maturite: deprecated` | **jamais proposée d'office.** Écartée avant même le décompte des 2-3 candidats ; proposable seulement si rien d'autre ne couvre le besoin, et alors **état annoncé en clair**. |
 | `maturite: experimental` / `beta` | proposable, mention de la maturité si la brique est structurante. |
-| `status: null` (pattern, rule, concept) | pas de filtre — le champ ne s'applique pas à ces types. |
+| `maturite: null` (notion, pattern, rule) | pas de filtre — le champ ne s'applique pas à ces rôles. |
 
 Trois conséquences opérationnelles :
 
-1. **Écarter n'est pas taire.** Une brique `abandonne` retirée de la liste se mentionne dans la
-   ligne `**Écartés**` du plan, avec sa raison réelle (« abandonnée »), pas un motif inventé.
-2. **`remplace_par:` prime.** Dès qu'une candidate est écartée, lire le frontmatter de sa fiche —
-   c'est une lecture bornée, il y a moins de dix fiches concernées dans tout le brain :
+1. **Écarter n'est pas taire.** Une brique `deprecated` retirée de la liste se mentionne dans la
+   ligne `**Écartés**` du plan, avec sa raison réelle (« dépréciée »), pas un motif inventé.
+2. **`alternatives:` porte la succession.** Dès qu'une candidate est écartée, ce sont les cibles
+   de son `alternatives:` qu'il faut proposer à la place. Le champ est **dans l'index**, donc
+   sans lecture supplémentaire :
    ```bash
-   sed -n '/^remplace_par:/p;/^alternatives:/p' "Dev/Services/<Écartée>.md"
+   uv run AI/scripts/query_index.py --name "<Écartée>" --fields nom,maturite,alternatives
    ```
-   Si `remplace_par:` est **non vide**, ce sont **ces** briques qu'il faut proposer à la place.
-   Elles ne sont pas un candidat parmi d'autres : c'est la succession que la fiche déclare
-   elle-même. Si `remplace_par:` est vide, se rabattre sur le champ `alternatives:` (présent
-   dans l'index, donc sans lecture supplémentaire).
+   `remplace_par:` a été supprimé au lot 2 : il était vide sur 293 des 297 fiches, et les 4 qui
+   le portaient avaient déjà leurs cibles dans `alternatives:`. Ne plus le chercher.
 3. **Ne jamais adoucir un état.** « Un peu ancien », « en cours de stabilisation » pour une brique
    `deprecated` est un mensonge par euphémisme. Le mot du frontmatter, ou rien.
 
 Vérification d'un doute, en une commande :
 
 ```bash
-uv run AI/scripts/query_index.py --categorie <cat> --galaxie dev
+uv run AI/scripts/query_index.py --categorie <cat> --role brique
 ```
 
-La sortie porte `status` et `maturite` pour chaque correspondance.
+La sortie porte `role`, `famille` et `maturite` pour chaque correspondance.
 
 ## Format de sortie
 
@@ -96,7 +97,7 @@ La sortie porte `status` et `maturite` pour chaque correspondance.
 ## Stack proposé
 ### <Brique> : <Choix retenu>
 **Pourquoi** : <2 lignes, depuis le pitch + la fiche>
-**État** : <à renseigner si `status: en-eval` ou `maturite: deprecated`/`experimental`/`beta` ; sinon omettre>
+**État** : <à renseigner si `maturite: deprecated`/`experimental`/`beta` ; sinon omettre>
 **Écartés** : <Candidat B> (raison), <Candidat C> (raison — « abandonnée, remplacée par <X> » le cas échéant)
 **Source** : [[Dev/Services/<Choix>]]
 
@@ -116,10 +117,10 @@ La sortie porte `status` et `maturite` pour chaque correspondance.
 - Poser toutes les questions de la checklist quel que soit l'archétype.
 - Oublier l'axe on-prem / air-gapped alors qu'il élimine des options.
 - Recopier un pitch divergent : toujours réutiliser celui de l'index.
-- Proposer une brique `status: abandonne` — l'index porte le champ, l'ignorer est une faute.
+- Proposer une brique `maturite: deprecated` sans le dire — l'index porte le champ, l'ignorer est une faute.
 - Proposer une brique `en-eval` ou `deprecated` **sans annoncer son état** : le candidat est
   légitime, le silence sur son état ne l'est pas.
-- Écarter une fiche qui porte un `remplace_par:` sans proposer son remplaçant.
+- Écarter une fiche sans regarder son `alternatives:`, qui nomme ses successeurs.
 
 ## Voir aussi
 

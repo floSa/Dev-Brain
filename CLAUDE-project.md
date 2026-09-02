@@ -93,7 +93,7 @@ Liste les écarts must. Liste les écarts should avec mon jugement requis.
 ## Ce que tu NE fais PAS
 
 - Ne modifie pas les fiches `Dev/Services/` ou `Dev/Outils/`. Elles sont **factuelles et durables** ; tu ne les touches qu'en mode BUILD.
-- N'écris rien dans `Dev/` — aucun pilier de la galaxie Dev n'est ouvert au mode projet.
+- N'écris rien dans `Dev/` — aucun pilier du brain n'est ouvert au mode projet.
 - Ne crée pas de nouvelles règles dans le brain (ça se fait en mode BUILD du brain).
 - Ne supprime rien dans le brain.
 - Ne dupliques pas le brain dans le projet (pas de `cp -r` du DevBrain).

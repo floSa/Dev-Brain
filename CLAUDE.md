@@ -78,7 +78,7 @@ Périmètre **strictement limité à `Wiki/`**. Tu n'as pas le droit de toucher 
 
 Workflow type :
 1. L'utilisateur dit "ajoute le concept X" / "documente la notion Y" → invoque le skill `enrichir-brain` (il gère aussi bien `Dev/` que `Wiki/Concepts/` en un seul geste, pas besoin de bascule de mode stricte pour ce cas précis).
-2. Frontmatter complet obligatoire (`galaxie: wiki`, `type: concept`, `categorie: concept/<sous-domaine>` — cf. taxonomie), gabarit `Templates/Concept-Wiki.md`.
+2. Frontmatter complet obligatoire (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie), gabarit `Templates/Concept-Wiki.md`.
 3. Tu peux créer un sous-dossier dans `Wiki/` si une nouvelle catégorie émerge — préviens avant de le faire.
 
 Voir `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble du pilier wiki.
@@ -86,7 +86,7 @@ Voir `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble du pili
 ## Structure du vault (rappel)
 
 ```
-Dev/                        ← galaxie agent-readable (factuel, dense)
+Dev/                        ← briques agent-readable (factuel, dense)
 ├── Services/                (briques à déployer : frameworks, BDD, libs…)
 ├── Outils/                  (outils techniques utilisés : clients GUI, CLI…)
 ├── Patterns/                (Comparatif - <thème>.base + Pattern - <nom>.md)
@@ -149,10 +149,23 @@ Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée a
 **Deux axes de rangement, pas un.** Une fiche Dev porte `categorie:` (le **domaine** — de
 quoi ça parle, 94 valeurs en 20 préfixes) *et* `famille:` (la **nature** — ce que c'est, 9
 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
-`specification`, `modele`, `annuaire`). `type:` ne porte plus la nature, il ne décrit que le
-dossier. Ne jamais choisir ces deux valeurs à l'intuition : `Documentation/general/taxonomie.md`
-porte un arbre de décision déterministe, questions fermées en ordre strict. Les deux champs
-sont des règles dures du validateur et sont indexés.
+`specification`, `modele`, `annuaire`). Ne jamais choisir ces deux valeurs à l'intuition :
+`Documentation/general/taxonomie.md` porte un arbre de décision déterministe, questions
+fermées en ordre strict. Les deux champs sont des règles dures du validateur et sont indexés.
+
+**Un troisième champ, `role:`**, porte ce que la page **est** : `brique`, `notion`,
+`pattern`, `rule` — et bientôt `hub` (lot 3) et `comparatif` (lot 5). Il a remplacé
+`galaxie:` et `type:` au lot 2 de la migration v3 (cf. `AI/design/brain-v3.md` §3) : le
+premier ne servait qu'à la couleur du graphe, le second ne décrivait que le dossier d'accueil.
+`famille:` reste la nature **technique** d'une brique (est-ce un paquet ou une plateforme ?) ;
+`role:` est la nature **éditoriale** de la page (est-ce une brique ou une notion ?). Les deux
+ne se recouvrent pas.
+
+`hosted:` et `scaling:` n'existent que si `famille:` vaut `plateforme`, `saas` ou
+`application` — une bibliothèque ne s'héberge pas. `hosted:` est une **liste**
+(`[self]`, `[managed]`, `[self, managed]`), jamais un scalaire. `complements:` est le
+symétrique d'`alternatives:` : ce qui s'utilise **avec** la brique, quand `alternatives:`
+dit ce qui s'utilise **à sa place**.
 
 **Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 

@@ -13,17 +13,22 @@ Tu es en mode **BUILD** : on enrichit le brain. Toute modification est lecture/�
 
 > ⚠️ **Wiki/ est hors-périmètre du mode build**, sauf pour `Wiki/Concepts/` que le skill `enrichir-brain` alimente en même temps que `Dev/` (il ne fait pas de bascule de mode). Ne touche pas à `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` en mode build — ils appartiennent au mode wiki (cf. CLAUDE.md, section *Mode wiki*), et sont vides tant que le contenu v1 n'a pas été remigré.
 
-## Modèle de galaxies (champ frontmatter `galaxie:`)
+## Modèle de rôles (champ frontmatter `role:`)
 
-Toute fiche du brain a un champ `galaxie:` dans son frontmatter (sauf les `SKILL.md`, qui suivent le frontmatter Anthropic strict — pas de champ `galaxie:`) :
+Toute page de `Dev/` et `Wiki/` porte un champ `role:` — la **nature** de la page. Il a remplacé `galaxie:` et `type:` au lot 2 de la migration v3 : `galaxie:` ne servait qu'à la couleur du graphe, et `type:` ne décrivait que le dossier d'accueil (57 fiches de nature identique étaient réparties 34 `outil` / 23 `service`, sans discriminant). Les `SKILL.md` suivent le frontmatter Anthropic strict — pas de champ `role:`.
 
-| Galaxie | Dossiers | Mode d'écriture |
-|---|---|---|
-| **`dev`** | `Dev/Services/`, `Dev/Outils/`, `Dev/Patterns/`, `Dev/Rules/` | mode build |
-| **`wiki`** | `Wiki/Concepts/`, `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` | mode wiki (+ `Concepts/` via `enrichir-brain`) |
-| **`meta`** | docs racine (README, CHANGELOG, INSTALL, CLAUDE*, CONTRIBUTING, Home, Inbox) + `Documentation/`, `AI/design/`, `AI/scripts/` | tout mode |
+| `role:` | Ce que c'est | Dossiers aujourd'hui | Mode d'écriture |
+|---|---|---|---|
+| **`brique`** | ce qu'on déploie ou importe : service, outil, librairie | `Dev/Services/`, `Dev/Outils/`, `Wiki/Outils/` | mode build |
+| **`notion`** | ce qu'il faut comprendre : définitions, maths, mécanismes | `Wiki/Concepts/` | mode wiki (+ via `enrichir-brain`) |
+| **`pattern`** | une architecture éprouvée | `Dev/Patterns/Pattern - *.md` | mode build |
+| **`rule`** | une règle transverse | `Dev/Rules/` | mode build |
+| **`hub`** | la page d'un dossier, l'aiguillage | aucune encore — arrive au **lot 3** | généré |
+| **`comparatif`** | ce qui départage plusieurs briques | aucune encore — arrive au **lot 5** | mode build |
 
-Le champ permet requêtes `.base` croisées et code couleur du graphe (cf. `Documentation/perso/obsidian-graph.md`).
+Les pages de gouvernance (docs racine, `Documentation/`, `AI/`) n'ont pas de `role:` : elles ne sont pas des pages du brain, et le validateur ne les contrôle pas.
+
+Le champ permet requêtes `.base` croisées et code couleur du graphe (cf. `Documentation/perso/obsidian-graph.md`). **La colonne « Dossiers » est provisoire** : le lot 3 range par domaine, et c'est alors le dossier qui portera le domaine pendant que `role:` portera la nature (cf. `AI/design/brain-v3.md` §2).
 
 ## Workflow général
 
@@ -44,20 +49,21 @@ Toute nouvelle fiche Service va dans `Dev/Services/<Nom>.md` avec le frontmatter
 
 ```yaml
 ---
-galaxie: dev
-type: service
+role: brique
 nom: <Name>
 alias: []
 pitch: "<une ligne, réutilisée dans les Alternatives des autres pages et par planifier-projet>"
 categorie: <domaine>/<sous-domaine>   # cf. Documentation/general/taxonomie.md
+famille: <nature>                     # 9 valeurs fermées, arbre F1→F9 de taxonomie.md
 licence_type: open-source | source-available | proprietary | open-core
-hosted: self | managed | both
 maturite: production | beta | experimental | deprecated
 langage: <langage d'implémentation>
-scaling: single-node | distributed | serverless
-alternatives: ["[[Dev/Services/X|X]]", ...]
-remplace_par: []
-status: actif | en-eval | abandonne
+# hosted et scaling : SEULEMENT si famille ∈ {plateforme, saas, application}.
+# Une bibliothèque ne s'héberge pas — le validateur refuse le champ (R16).
+# hosted: [self, managed]             # liste, jamais un scalaire
+# scaling: single-node | distributed | serverless
+alternatives: ["[[Dev/Services/X|X]]", ...]   # ce qui s'utilise À LA PLACE
+complements: []                               # ce qui s'utilise AVEC
 tags: [...]                            # pioche dans Documentation/general/tags.md, jamais inventé
 url_docs:
 url_repo:
@@ -65,25 +71,28 @@ url_repo:
 ```
 
 > **Champs volontairement absents** (v1 → v2) : `score`, `mes_projets`, `sous_categories`, `licence` (SPDX), `clients_officiels`, `plateforme`, `remplace`, `url_officiel`, `created`/`modified`. Décision actée dans `AI/design/brain-v2.md` §5.1/§11 : ces champs n'étaient jamais fiables (jamais remplis, ou mentaient). Ne les recrée pas sur une nouvelle fiche.
+>
+> **Champs supprimés au lot 2 de la v3** : `galaxie`, `type` (→ `role`), `status` (redondant avec `maturite` : 272 fiches sur 336 étaient `actif` + `production`), `remplace_par` (vide sur 293 des 297 fiches ; les 4 restantes portaient déjà leurs cibles dans `alternatives:`). Ne les recrée pas non plus.
 
 ### Frontmatter Outil (`Dev/Outils/`)
 
-Outils techniques **utilisés** (clients GUI, CLI, utilitaires) — par opposition aux Services **déployés**. Même galaxie `dev`.
+Outils techniques **utilisés** (clients GUI, CLI, utilitaires) — par opposition aux Services **déployés**. **Même `role: brique`** : l'audit v2 a démontré que la distinction service/outil ne reposait sur aucun discriminant, et le lot 2 a fondu les deux gabarits. Ce qui reste ici est un jeu de champs plus court, pas un autre rôle ; le lot 6 fusionnera les deux gabarits pour de bon.
 
 ```yaml
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: <Name>
 alias: []
 pitch: "<une ligne>"
 categorie: <domaine>/<sous-domaine>   # ex: database/admin, devtools/client-api, llm/agent-de-code
+famille: <nature>                     # cf. taxonomie.md, arbre F1→F9
 domaines: [<data-eng, ai-eng, ...>]
 licence_type: open-source | open-core | proprietary
 os: "Windows, macOS, Linux"
 langage: <langage>
-status: actif | en-eval | abandonne
+maturite: production | beta | experimental | deprecated
 alternatives: ["[[Dev/Outils/X|X]]", ...]
+complements: []
 tags: [...]
 url_docs:
 url_repo:
@@ -101,11 +110,13 @@ Voir **`Documentation/general/taxonomie.md`** — c'est la source de vérité, n
 
 Catégorie qui ne correspond à rien de listé → **demander avant d'inventer**.
 
-### Valeurs autorisées pour `status`
+### Valeurs autorisées pour `maturite`
 
 | Périmètre | Valeurs |
 |---|---|
-| Services / Outils Dev | `actif`, `en-eval`, `abandonne` |
+| `role: brique` | `production`, `beta`, `experimental`, `deprecated` |
+
+`maturite:` porte **seul** le fait qu'une brique est morte depuis la suppression de `status:`. `deprecated` est éliminatoire : `planifier-projet` ne propose pas une brique qui le porte, et `verifier_fraicheur.py` signale toute brique `deprecated` sans `alternatives:`.
 
 ### Corps de la fiche Service/Outil
 
@@ -169,8 +180,7 @@ Path : `Dev/Patterns/Comparatif - <thème>.base`.
 
 ```yaml
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: <quand l'appliquer>
 services_cles: ["[[Dev/Services/A|A]]", "[[Dev/Services/B|B]]"]
 tags: [pattern, ...]
@@ -185,8 +195,7 @@ Une règle = un fichier `Dev/Rules/Rule - <nom>.md`.
 
 ```yaml
 ---
-galaxie: dev
-type: rule
+role: rule
 domaine: <git | docs | tests | code-style | security | logging | dependencies | ...>
 applicable: global | type-cli | type-web | stack-python-fastapi
 strictness: must | should | nice-to-have
@@ -202,8 +211,7 @@ Corps : Principe (1 phrase) → MUST → SHOULD → NICE-TO-HAVE → Exemples (b
 
 ```yaml
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: <Nom>
 alias: []
 categorie: concept/<sous-domaine>
@@ -250,7 +258,7 @@ docs(postgres): ajoute le piege de saturation du pool de connexions
 - Mettre `production` si la doc dit "beta".
 - Créer la fiche dans une catégorie improvisée — toujours vérifier `Documentation/general/taxonomie.md`, demander sinon.
 - Inventer un tag hors `Documentation/general/tags.md` sans le proposer d'abord.
-- Modifier une fiche `status: abandonne` sans demander.
+- Modifier une fiche `maturite: deprecated` sans demander.
 - Réécrire une fiche entière au lieu de patcher la section concernée.
 - Modifier un champ d'une fiche existante sans dérouler la *table des effets de bord* de `enrichir-brain` (workflow général, point 5) — un `pitch:` réécrit sans repropager laisse un pitch périmé chez chaque citeur.
 - Écrire un retour d'expérience sans date dans `## Pièges`, ou le dupliquer sur les deux briques d'un incident inter-briques.
