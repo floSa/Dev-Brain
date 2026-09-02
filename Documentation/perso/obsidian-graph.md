@@ -19,7 +19,7 @@ moins bien (il ne distinguait ni un hub d'une notion, ni un comparatif d'une bri
 
 | Élément | `role:` | Requête | Couleur |
 |---------|---------|---------|---------|
-| **Domaines** transverses (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | — | `path:MOC/Themes/` | 🟡 or |
+| **Métiers** transverses (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | `hub` | `path:Métiers/` | 🟡 or |
 | **Hubs** — la page d'un dossier, l'aiguillage | `hub` | `["role":"hub"]` + `path:MOC/` | 🟠 orange |
 | **Briques** — ce qu'on déploie ou importe | `brique` | `["role":"brique"]` | 🔵 bleu |
 | **Notions** — ce qu'il faut comprendre | `notion` | `["role":"notion"]` | 🟢 vert |
@@ -29,8 +29,8 @@ moins bien (il ne distinguait ni un hub d'une notion, ni un comparatif d'une bri
 Le bleu et le vert sont **exactement** ceux des anciennes galaxies `dev` et `wiki` : ce sont
 les mêmes pages, elles ne changent que de nom de champ.
 
-L'ordre des règles compte : `path:MOC/Themes/` passe **avant** `path:MOC/`, sinon les cinq
-domaines transverses prendraient l'orange des hubs.
+L'ordre des règles compte : `path:Métiers/` passe **avant** la règle `hub`, sinon les cinq
+axes métier prendraient l'orange des hubs — ce sont eux aussi des `role: hub`.
 
 Deux rôles n'ont encore aucune page : `hub` naît au lot 3 (avec l'arborescence), `comparatif`
 au lot 5 (quand les `.base` deviennent des pages). Leurs règles sont posées d'avance — elles
@@ -41,7 +41,7 @@ Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 
 ```json
 "colorGroups": [
-  { "query": "path:MOC/Themes/",           "color": { "a": 1, "rgb": 16766011 } },
+  { "query": "path:Métiers/",              "color": { "a": 1, "rgb": 16766011 } },
   { "query": "[\"role\":\"hub\"] OR path:MOC/", "color": { "a": 1, "rgb": 16749099 } },
   { "query": "[\"role\":\"brique\"]",        "color": { "a": 1, "rgb": 4271325 } },
   { "query": "[\"role\":\"notion\"]",        "color": { "a": 1, "rgb": 8042496 } },
@@ -71,9 +71,9 @@ Deux règles de l'ancien bloc ont été **retirées**, et non transposées :
 ## 2. Hiérarchie de navigation (MOC)
 
 Les pages hub sont générées par `AI/scripts/build_mocs.py` sur 3 étages :
-- **`MOC/Themes/`** — un par domaine (`data-sci`…). Pointe vers les **sous-hubs**, pas vers les ~100 feuilles.
+- **`Métiers/`** — un par axe métier (`data-sci`…). Pointe vers les **sous-hubs**, pas vers les ~100 feuilles.
 - **`MOC/Concepts/`** — un par sous-domaine de concept (`Statistiques`, `Maths du ML`, `Deep learning`, `NLP (notions)`, `Traitement du signal (notions)`…). Liste ses feuilles.
-- **`MOC/Categories/`** — un par famille Dev (`Bases de données`, `Machine Learning`…).
+- **les hubs de l'arbre** — un par dossier de domaine et de sous-domaine (`Bases de données`, `Machine Learning`…), zone `AUTO` remplie depuis le contenu du dossier. Ils ont remplacé `MOC/Categories/`, vide depuis le lot 3.
 
 Résultat : `Data Science` → `Statistiques` / `Maths du ML` / … → feuilles. On descend par étages au lieu de noyer l'écran.
 

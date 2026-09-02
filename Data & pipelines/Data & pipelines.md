@@ -1,7 +1,7 @@
 ---
 role: hub
 nom: Data & pipelines
-alias: [data engineering, pipelines de données]
+alias: [pipelines de données]
 pitch: Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
 domaines: [data-eng, data-sci]
 tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]

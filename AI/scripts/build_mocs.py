@@ -9,7 +9,7 @@ explicites (→ arêtes visibles dans le graphe Obsidian) :
   - MOC/Categories/<Label>.md : hub Dev par catégorie de tête (database → « Bases de données »)
   - MOC/Types/<Label>.md      : hub Dev par `role:` pour les rôles sans `categorie:` (pattern, rule)
   - MOC/Concepts/<Label>.md   : sous-hub Wiki par famille de catégorie (concept/stats → « Statistiques »)
-  - MOC/Themes/<Label>.md     : MOC Wiki par domaine (data-eng → « Data Engineering »)
+  - Métiers/<Label>.md        : hub transverse par `domaines:` (data-eng → « Data Engineering »)
 
 Le partage Dev / Wiki se lit sur le CHEMIN et non sur un champ : `galaxie:` a disparu au
 lot 2, et l'arborescence ne bouge qu'au lot 3. Ce script est de toute façon appelé à être
@@ -38,9 +38,15 @@ from pathlib import Path
 
 VAULT = Path(__file__).resolve().parents[2]
 INDEX = VAULT / "AI" / "index" / "brain-index.json"
+MOC = VAULT / "MOC"
 MOC_CAT = VAULT / "MOC" / "Categories"
 MOC_TYPE = VAULT / "MOC" / "Types"
-MOC_THEME = VAULT / "MOC" / "Themes"
+# Les 5 hubs transverses de `domaines:` sont descendus à la racine au lot 3 (arbitrage
+# de floSa) : ils sont le seul axe qui traverse un arbre rangé par domaine TECHNIQUE.
+# Le dossier ne s'appelle pas « Domaines » — le mot désigne déjà les 20 dossiers de
+# l'arbre, l'homonymie serait un piège. Cf. AI/migration/lot-3-arborescence.md,
+# remontée 21 (collision de vocabulaire, à trancher au lot 8).
+METIERS = VAULT / "Métiers"
 MOC_CONCEPT = VAULT / "MOC" / "Concepts"
 
 # Libellé français d'un préfixe de tête de `categorie:`. UN LIBELLÉ PAR PRÉFIXE :
@@ -72,6 +78,11 @@ ROLE_INTRO = {
     "pattern": "Architectures type — combinaisons de briques `Dev/` déjà éprouvées.",
     "rule": "Règles transverses, applicables quelle que soit la stack du projet.",
 }
+
+# Un hub de `Métiers/` est rempli par la boucle `domaines:` ci-dessous, PAS par
+# `zone_hub()` : son périmètre est un champ, pas un dossier. Le lister dans les deux
+# ferait écraser la vue transverse par le contenu du dossier (cinq hubs, rien d'autre).
+HUBS_TRANSVERSES = {"Métiers"}
 
 THEME_LABEL = {
     "data-sci": "Data Science", "data-eng": "Data Engineering", "mlops": "MLOps",
@@ -146,9 +157,16 @@ def upsert(path: Path, title: str, intro: str, bullets: list[str],
             txt = AUTO_RE.sub(lambda m: auto, txt)  # remplace SEULEMENT la zone auto
         path.write_text(txt, encoding="utf-8")
     else:
-        fm = (f"---\nrole: hub\nnom: {title}\n"
-              f"indexe: {scope}\n---\n\n")
-        path.write_text(fm + f"# {title}\n\n{auto}\n\n## Notes\n\n", encoding="utf-8")
+        # `indexe:` n'appartient pas au gabarit `role: hub` (check_brain, HUB_ALLOWED) :
+        # une page recréée hors de `MOC/` avec ce champ serait refusée par le validateur.
+        # Il ne survit que sous `MOC/`, dossier que check_brain ne balaye pas et qui meurt
+        # au lot 4 avec Wiki/Concepts/. Ailleurs, le hub porte le `pitch:` qu'il exige.
+        sous_moc = MOC in path.parents
+        cle = f"indexe: {scope}" if sous_moc else f"pitch: {intro}"
+        fm = f"---\nrole: hub\nnom: {title}\n{cle}\n---\n\n"
+        corps = f"# {title}\n\n{auto}\n"
+        path.write_text(fm + corps + ("\n## Notes\n\n" if sous_moc else ""),
+                        encoding="utf-8")
 
 
 # ---------------------------------------------------------------- pages hub (v3)
@@ -297,8 +315,11 @@ def main() -> int:
         upsert(MOC_CONCEPT / f"{label}.md", label, intro, bullets, scope)
         written.append(("Concepts", label, len(members)))
 
-    # MOC Wiki par domaine → pointe vers les SOUS-HUBS (pas les feuilles).
-    # Étage de navigation : domaine → sous-domaine → (graphe local) → feuille.
+    # Hubs transverses `Métiers/` — les 5 axes métier du champ `domaines:`, pointant
+    # vers les SOUS-HUBS et non vers les feuilles. Seule vue qui traverse l'arbre des
+    # domaines TECHNIQUES ; c'est ce qui justifie de la garder (arbitrage du lot 3).
+    # Périmètre inchangé depuis la v2 — les pages `Wiki/` — et donc provisoire : il
+    # meurt avec `Wiki/Concepts/` au lot 4, qui devra le rebâtir sur l'arbre.
     theme_subs: dict[str, dict[str, int]] = {}
     for p in pages:
         if not p["path"].startswith("Wiki/"):
@@ -313,15 +334,20 @@ def main() -> int:
         for key, n in sorted(subs.items(), key=lambda e: (-e[1], e[0])):
             slab = wiki_meta[key][0]
             bullets.append(f"- [[{slab}]] — {n} notion(s)")
-        upsert(MOC_THEME / f"{label}.md", label,
-               f"Domaine **{label}** (`{dom}`) — explorer par sous-domaine, puis descendre via le graphe local.",
+        upsert(METIERS / f"{label}.md", label,
+               f"Axe métier **{label}** (`{dom}`) — explorer par sous-domaine, puis "
+               "descendre via le graphe local.",
                bullets, dom)
-        written.append(("Themes", label, len(subs)))
+        written.append(("Métiers", label, len(subs)))
 
     # Zones AUTO des pages hub (v3) — elles remplacent `MOC/` domaine par domaine.
     # Les pages deja descendues dans l'arbre sortent d'elles-memes des boucles MOC
-    # ci-dessus, qui filtrent sur `Dev/` et `Wiki/`.
+    # ci-dessus, qui filtrent sur `Dev/` et `Wiki/`. Les hubs transverses de
+    # `Métiers/` sont exclus : leur périmètre est un CHAMP, pas un dossier — la
+    # boucle ci-dessus les a déjà remplis.
     for hub in hubs():
+        if hub.relative_to(VAULT).parts[0] in HUBS_TRANSVERSES:
+            continue
         lignes = zone_hub(hub, pages)
         txt = hub.read_text(encoding="utf-8")
         if not AUTO_RE.search(txt):

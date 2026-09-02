@@ -14,6 +14,7 @@
     "Machine Learning",
     "Mathématiques",
     "Médias",
+    "Métiers",
     "Observabilité",
     "Outils de développement",
     "Réseau",
@@ -25,7 +26,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 690,
+  "count": 695,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -4519,7 +4520,6 @@
       "path": "Data & pipelines/Data & pipelines.md",
       "nom": "Data & pipelines",
       "alias": [
-        "data engineering",
         "pipelines de données"
       ],
       "role": "hub",
@@ -11129,6 +11129,76 @@
       ],
       "alternatives": [],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Métiers/AI Engineering.md",
+      "nom": "AI Engineering",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Construire une application autour d'un modèle de langage — contexte, outils, garde-fous, évaluation.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Métiers/Data Engineering.md",
+      "nom": "Data Engineering",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Amener la donnée d'où elle naît jusqu'où elle sert, de façon répétable, traçable et vérifiable.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Métiers/Data Science.md",
+      "nom": "Data Science",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Comprendre un jeu de données et en tirer un modèle qui répond à une question — explorer, tester, mesurer, expliquer.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Métiers/ML Engineering.md",
+      "nom": "ML Engineering",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Métiers/MLOps.md",
+      "nom": "MLOps",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Mettre un modèle en production et savoir, ensuite, s'il marche encore.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
       "maturite": null
     },
     {

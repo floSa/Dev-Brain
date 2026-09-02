@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 690 pages actives.
+> 695 pages actives.
 
 ## Par page
 
@@ -1698,22 +1698,27 @@
 ### Agents  ·  hub
 - tags : `agents`, `multi-agent`, `tool-use`, `agent-memory`, `llm`
 - liens sortants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agents de code]], [[Agno]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[Harnais d'agent]], [[LangGraph]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[PydanticAI]], [[Semantic Kernel]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
-- liens entrants : [[Agents de code]], [[Apprentissage par renforcement]], [[Assistants]], [[LLM & IA générative]]
+- liens entrants : [[AI Engineering]], [[Agents de code]], [[Apprentissage par renforcement]], [[Assistants]], [[LLM & IA générative]]
 
 ### Agents de code  ·  hub
 - tags : `code-assistant`, `code-generation`, `agents`, `agent-skill`, `mcp`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Aider]], [[BMAD]], [[Cline]], [[Code and math benchmarks]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Graphify]], [[Harnais d'agent]], [[Maka]], [[Sandboxing de code généré]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 - liens entrants : [[Agents]], [[Assistants]], [[LLM & IA générative]]
 
+### AI Engineering  ·  hub
+- tags : —
+- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Données (notions)]], [[Fine-tuning]], [[IA & sécurité]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[NLP (notions)]], [[Observabilité]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]]
+- liens entrants : —
+
 ### Apprentissage par renforcement  ·  hub
 - tags : `reinforcement-learning`, `markov-decision-process`, `policy-gradient`, `value-function`, `exploration-exploitation`, `offline-rl`, `imitation-learning`, `game-theory`, `self-play`
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[Agents]], [[AlphaZero and self-play]], [[Bellman equations]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Fine-tuning]], [[Gymnasium]], [[Imitation learning]], [[Markov Decision Process]], [[Model-based RL]], [[Monte Carlo Tree Search]], [[Offline RL]], [[OpenSpiel]], [[PPO]], [[Policy gradient]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Stable-Baselines3]], [[TF-Agents]], [[Théorie des jeux]], [[Value functions]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[ML Engineering]], [[Machine Learning]]
 
 ### Apprentissage profond  ·  hub
 - tags : `deep-learning`, `gpu`, `autograd`, `transformers`, `attention`, `distributed-training`, `mixed-precision`, `quantization`, `model-compression`
 - liens sortants : [[Adam optimizer]], [[Apprentissage par renforcement]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[Attribution par gradient]], [[Autoencodeurs]], [[CNN]], [[Calculs adaptatifs]], [[Classification audio par spectrogramme]], [[DeepSpeed]], [[Diffusion models]], [[Distillation]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[GANs]], [[Gradient checkpointing]], [[Graph Neural Networks]], [[HuggingFace]], [[Image generation]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[JAX]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[LLM & IA générative]], [[Maximal Update Parametrization]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[NLP]], [[Positional encoding]], [[Probing]], [[Pruning]], [[PyTorch]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[Quantization]], [[Self-attention]], [[Serving]], [[Sparse autoencoders]], [[Speech models]], [[State Space Models]], [[Superposition]], [[TensorFlow]], [[Transformer architectures]], [[Video generation]], [[Vision]], [[accelerate]], [[pykan]], [[timm]]
-- liens entrants : [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Vision]]
+- liens entrants : [[ML Engineering]], [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Vision]]
 
 ### Assistants  ·  hub
 - tags : `agents`, `agent-memory`, `local-llm`, `mcp`, `agent-skill`
@@ -1728,22 +1733,32 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
 
 ### Calcul distribué  ·  hub
 - tags : `distributed`, `gpu`, `parallel`, `out-of-core`, `distributed-training`
 - liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
-- liens entrants : —
+- liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Faker]], [[Flink]], [[Mimesis]], [[Orchestration]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Tabulaire]]
+- liens entrants : [[Data Engineering]], [[Data Science]], [[Tabulaire]]
+
+### Data Engineering  ·  hub
+- tags : —
+- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[Données (notions)]], [[MLOps]], [[Machine learning (notions)]], [[NLP (notions)]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]]
+- liens entrants : [[MLOps]]
+
+### Data Science  ·  hub
+- tags : —
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[NLP (notions)]], [[Statistiques]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Traitement du signal (notions)]], [[Visualisation]]
+- liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
 - tags : `dataframe`, `array`, `lazy-evaluation`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
-- liens entrants : [[Data & pipelines]], [[Tabulaire]]
+- liens entrants : [[Data & pipelines]], [[Data Science]], [[Tabulaire]]
 
 ### Design & diagrammes  ·  hub
 - tags : `design-tool`, `diagram`, `whiteboard`
@@ -1753,7 +1768,7 @@
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
 - liens sortants : [[Docker]], [[GitHub Actions]], [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[Outils de développement]]
+- liens entrants : [[MLOps]], [[Outils de développement]]
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
@@ -1768,12 +1783,12 @@
 ### Fine-tuning  ·  hub
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `quantization`, `synthetic-data`
 - liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[Prompt engineering]], [[RAG]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Synthetic data generation]], [[TRL]], [[Tunix]], [[Unsloth]]
-- liens entrants : [[Apprentissage par renforcement]], [[LLM & IA générative]]
+- liens entrants : [[AI Engineering]], [[Apprentissage par renforcement]], [[LLM & IA générative]]
 
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Web & API]]
-- liens entrants : [[Visualisation]], [[Web & API]]
+- liens entrants : [[AI Engineering]], [[Data Science]], [[Visualisation]], [[Web & API]]
 
 ### Interprétabilité  ·  hub
 - tags : `explainability`, `deep-learning`, `transformers`, `llm`, `model-evaluation`
@@ -1783,17 +1798,27 @@
 ### LLM & IA générative  ·  hub
 - tags : `llm`, `rag`, `agents`, `llm-eval`, `llm-observability`, `mcp`, `structured-output`, `llm-gateway`
 - liens sortants : [[AI security]], [[Advanced RAG]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Assistants]], [[Chain-of-Thought]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Évaluation LLM]], [[Construction de graphes de connaissances]], [[Context engineering]], [[DSPy]], [[Decoding strategies]], [[DeepEval]], [[Dify]], [[Fine-tuning]], [[Flowise]], [[GraphRAG]], [[Guardrails]], [[Guidance]], [[Haystack]], [[Headroom]], [[Helicone]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[LLM caching]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[LangSmith]], [[Langflow]], [[Langfuse]], [[Late-interaction retrieval]], [[Letta]], [[LiteLLM]], [[LlamaIndex]], [[Machine Learning]], [[OmniRoute]], [[OpenRouter]], [[OpenViking]], [[Outlines]], [[Perplexity]], [[Phoenix Arize]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Ragas]], [[Reasoning models]], [[Reliability patterns]], [[Reranking]], [[Routing and cascading]], [[Runtimes]], [[SFT]], [[Scaling laws]], [[Small Language Models]], [[Structured outputs]], [[Synthetic data generation]], [[Sécurité]], [[Text-to-SQL]], [[Tokenization]], [[TruLens]], [[fastmcp]], [[llmfit]], [[mcp-protocol]], [[mcpjam]], [[prompt-caching]], [[promptfoo]], [[tool-use]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Vision]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Vision]]
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
 - liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[LLM & IA générative]], [[Mathématiques]], [[Statistiques & inférence]]
+- liens entrants : [[AI Engineering]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Statistiques & inférence]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `linear-programming`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Cross-entropy]], [[Eigendecomposition]], [[Generalization bounds]], [[Gradient descent]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Matrix decompositions]], [[Matrix products]], [[Mutual information]], [[Newton & quasi-Newton]], [[No Free Lunch theorem]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PAC learning]], [[PCA]], [[Programmation linéaire en nombres entiers (MIP)]], [[Projections]], [[PuLP]], [[Rademacher complexity]], [[Réduction de dimension]], [[SVD]], [[Shannon entropy]], [[Statistiques & inférence]], [[VC dimension]], [[Vector norms]], [[Wasserstein distance]], [[scipy.stats]]
-- liens entrants : —
+- liens entrants : [[ML Engineering]]
+
+### ML Engineering  ·  hub
+- tags : —
+- liens sortants : [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM (notions)]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Séries temporelles]], [[Traitement du signal (notions)]]
+- liens entrants : [[Data Science]], [[MLOps]]
+
+### MLOps  ·  hub
+- tags : —
+- liens sortants : [[Data Engineering]], [[Deep learning]], [[DevOps]], [[Données (notions)]], [[LLM (notions)]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
+- liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
@@ -1813,22 +1838,22 @@
 ### Observabilité  ·  hub
 - tags : `observability`, `logging`, `metrics`, `dashboard`, `self-hosted`
 - liens sortants : [[Beszel]], [[Grafana]], [[Loki]]
-- liens entrants : —
+- liens entrants : [[AI Engineering]], [[MLOps]]
 
 ### Orchestration  ·  hub
 - tags : `orchestration`, `data-pipeline`, `durable-execution`, `idempotence`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Data & pipelines]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]]
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[DevOps]]
+- liens entrants : [[Data Engineering]], [[DevOps]], [[ML Engineering]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Data & pipelines]], [[Vision]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Vision]]
 
 ### Recherche  ·  hub
 - tags : —
@@ -1838,12 +1863,12 @@
 ### Relationnel  ·  hub
 - tags : —
 - liens sortants : [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Bases de données]]
+- liens entrants : [[Bases de données]], [[Data Engineering]]
 
 ### Runtimes  ·  hub
 - tags : `local-llm`, `inference`, `inference-optimization`, `quantization`, `model-serving`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Multi-Token Prediction]], [[Ollama]], [[OpenRouter]], [[SGLang]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[LLM & IA générative]], [[Serving]]
+- liens entrants : [[AI Engineering]], [[LLM & IA générative]], [[Serving]]
 
 ### Réseau  ·  hub
 - tags : `networking`, `traffic-analysis`, `file-transfer`
@@ -1853,12 +1878,12 @@
 ### Scraping  ·  hub
 - tags : `web-scraping`, `data-pipeline`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
-- liens entrants : [[Data & pipelines]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]]
 
 ### Serving  ·  hub
 - tags : `model-serving`, `inference`, `deployment-strategy`, `kubernetes`, `gpu`, `inference-optimization`
 - liens sortants : [[Apprentissage profond]], [[BentoML]], [[Comparatif - Serving de modèles]], [[Data drift]], [[Distillation]], [[Déploiement de modèles]], [[Evidently]], [[Feast]], [[Feature store — concept]], [[KServe]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Pruning]], [[Quantization]], [[Ray Serve]], [[Runtimes]], [[Seldon Core]], [[Suivi d'expériences]], [[Séries temporelles]], [[Tabulaire]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[Suivi d'expériences]], [[Séries temporelles]], [[Vision]]
+- liens entrants : [[Apprentissage profond]], [[MLOps]], [[Machine Learning]], [[Suivi d'expériences]], [[Séries temporelles]], [[Vision]]
 
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
@@ -1868,42 +1893,42 @@
 ### Statistiques & inférence  ·  hub
 - tags : `statistical-inference`, `bayesian`, `causal-inference`, `factor-analysis`
 - liens sortants : [[Analyse de survie]], [[ArviZ]], [[CA]], [[CausalImpact]], [[Comparatif - Outils stats]], [[FAMD]], [[Fanalysis]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[PCA]], [[Prince]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Stan]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Interprétabilité]], [[Mathématiques]]
+- liens entrants : [[Data Science]], [[Interprétabilité]], [[Mathématiques]]
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
 - liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[Réseau]]
+- liens entrants : [[Data Engineering]], [[Réseau]]
 
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Evidently]], [[LLM & IA générative]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]], [[Serving]], [[TensorBoard]], [[Weights & Biases]]
-- liens entrants : [[Machine Learning]], [[Serving]], [[Séries temporelles]]
+- liens entrants : [[MLOps]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
 
 ### Sécurité  ·  hub
 - tags : `authentication`, `recon`, `osint`, `cryptography`
 - liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[Prompt injection]], [[PyJWT]], [[Web-Check]], [[osint4all]]
-- liens entrants : [[LLM & IA générative]]
+- liens entrants : [[AI Engineering]], [[LLM & IA générative]]
 
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
 - liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[Machine Learning]], [[Serving]]
+- liens entrants : [[Data Science]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[Serving]]
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
 - liens sortants : [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]]
-- liens entrants : [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
+- liens entrants : [[Data Science]], [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
 
 ### Text-to-SQL  ·  hub
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `benchmark`
 - liens sortants : [[Agent patterns]], [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[LLM benchmarks]], [[LangChain]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[RAG]], [[Vanna]], [[WrenAI]]
-- liens entrants : [[DB-GPT]], [[LLM & IA générative]], [[LangChain]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
+- liens entrants : [[AI Engineering]], [[DB-GPT]], [[LLM & IA générative]], [[LangChain]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
 
 ### Vectoriel  ·  hub
 - tags : —
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[NLP]], [[Recherche]]
+- liens entrants : [[AI Engineering]], [[Bases de données]], [[Data Engineering]], [[NLP]], [[Recherche]]
 
 ### Vision  ·  hub
 - tags : `computer-vision`, `cnn`, `vit`, `object-detection`, `segmentation`, `image-classification`, `data-augmentation`, `object-tracking`, `transfer-learning`
@@ -1913,12 +1938,12 @@
 ### Visualisation  ·  hub
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `statistical-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[Dash]], [[Interfaces & apps data]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
-- liens entrants : [[Data & pipelines]]
+- liens entrants : [[Data & pipelines]], [[Data Science]]
 
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
-- liens entrants : [[Interfaces & apps data]]
+- liens entrants : [[Interfaces & apps data]], [[MLOps]]
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`

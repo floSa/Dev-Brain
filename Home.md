@@ -32,10 +32,14 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Documents]] — 2 briques
 - [[DevOps]] — 2 briques
 
+## Métiers — les 5 axes transverses
+
+Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`.
+
+- [[Data Science]] · [[Data Engineering]] · [[MLOps]] · [[ML Engineering]] · [[AI Engineering]]
+
 ## Hubs (MOC) — pas encore absorbés par l'arbre
 
-- [[Data Engineering]]
-- [[AI Engineering]]
 - [[Patterns]] — architectures type
 - [[Rules]] — règles transverses
 
