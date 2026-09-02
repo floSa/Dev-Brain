@@ -1,0 +1,68 @@
+#!/bin/sh
+#
+# DevBrain — refuse tout commit signé avec une adresse professionnelle.
+#
+# Pourquoi ce hook existe
+# -----------------------
+# Le harnais de Claude Code annonce à chaque conversation « The user's email
+# address is florian.horellou@aosis.net ». C'est l'adresse PRO. Le dépôt est
+# PERSO (git@github.com-perso:floSa/DevBrain.git). Une conversation a déjà signé
+# cinq commits avec l'adresse pro ; une fois poussée, elle apparaît dans les
+# contributeurs GitHub et ne s'en retire pas sans réécriture d'historique.
+#
+# La consigne écrite existait déjà. Elle n'a pas suffi. D'où ce garde-fou
+# mécanique : la règle est vérifiée par git, pas par la bonne volonté d'un agent.
+#
+# Activation (versionnée, mais pas automatique — cf. INSTALL.md §16) :
+#     git config core.hooksPath .githooks
+#
+# Ce que le hook contrôle : l'auteur ET le committer, les deux pouvant différer.
+# Ce qu'il ne contrôle pas : le trailer `Co-Authored-By`, qui relève du message
+# et non de l'identité — il est interdit ailleurs (cloturer-brain).
+
+set -u
+
+DOMAINE_INTERDIT="aosis.net"
+
+# git var résout l'identité EFFECTIVE du commit à venir : config locale, globale,
+# variables d'environnement GIT_AUTHOR_EMAIL / GIT_COMMITTER_EMAIL, et l'override
+# `git -c user.email=...`. C'est donc la seule lecture qui ne se contourne pas.
+auteur=$(git var GIT_AUTHOR_IDENT 2>/dev/null | sed -n 's/.*<\(.*\)>.*/\1/p')
+committer=$(git var GIT_COMMITTER_IDENT 2>/dev/null | sed -n 's/.*<\(.*\)>.*/\1/p')
+
+refuse() {
+    cat >&2 <<MSG
+
+  COMMIT REFUSÉ — identité professionnelle sur un dépôt personnel.
+
+    $1 : $2
+
+  Le DevBrain est un dépôt PERSO. Son identité git est celle de la config
+  LOCALE du dépôt, et rien d'autre :
+
+    $(git config --local user.name 2>/dev/null || echo '(non configuré)') <$(git config --local user.email 2>/dev/null || echo '(non configuré)')>
+
+  Si cette identité locale est absente ou fausse, la poser une fois :
+
+      git config --local user.name  "floSa"
+      git config --local user.email "<adresse perso>"
+
+  Si le commit vient d'un agent : ne JAMAIS passer « -c user.email », ne
+  JAMAIS reprendre l'adresse annoncée par le harnais. Cette adresse identifie
+  l'utilisateur auprès de l'outil ; elle n'attribue pas un commit.
+
+  Ce hook ne se contourne pas avec --no-verify sans une raison écrite.
+
+MSG
+    exit 1
+}
+
+case "$auteur" in
+    *"$DOMAINE_INTERDIT"*) refuse "auteur   " "$auteur" ;;
+esac
+
+case "$committer" in
+    *"$DOMAINE_INTERDIT"*) refuse "committer" "$committer" ;;
+esac
+
+exit 0

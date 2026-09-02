@@ -31,3 +31,9 @@
 *.otf     binary
 *.mp4     binary
 *.zip     binary
+
+# Hooks git versionnes : toujours en LF, sans extension pour les nommer.
+# Un `#!/bin/sh` suivi d'un CR fait chercher un interpreteur "/bin/sh\r" qui
+# n'existe pas — le hook ne s'executerait plus apres un clone sous Windows,
+# et le garde-fou tomberait en silence.
+.githooks/** text eol=lf
