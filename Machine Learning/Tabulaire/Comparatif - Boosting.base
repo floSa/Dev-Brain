@@ -1,10 +1,12 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - file.hasTag("forecasting")
+    # `Dev/Services/` devient faux au lot 3 ; `role` dit ce que le chemin disait :
+    # un comparatif compare des briques, pas les notions qui portent le meme tag.
+    - role == "brique"
+    - file.hasTag("boosting")
 views:
   - type: table
-    name: Libs de forecasting
+    name: Libs de boosting
     order:
       - file.name
       - pitch
@@ -18,14 +20,14 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Modèles neuronaux
+    name: Distribués
     filters:
       and:
-        - file.hasTag("deep-learning")
+        - scaling == "distributed"
     order:
       - file.name
       - pitch
-      - scaling
+      - langage
       - alternatives
     sort:
       - property: file.name

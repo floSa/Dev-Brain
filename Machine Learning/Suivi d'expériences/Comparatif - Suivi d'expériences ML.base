@@ -1,32 +1,31 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - file.hasTag("boosting")
+    - categorie == "ml/tracking"
 views:
   - type: table
-    name: Libs de boosting
+    name: Suivi d'expériences
     order:
       - file.name
       - pitch
-      - langage
       - licence_type
-      - maturite
+      - hosted
       - scaling
+      - langage
+      - maturite
       - tags
-      - alternatives
     sort:
       - property: file.name
         direction: asc
   - type: table
-    name: Distribués
+    name: Open-source auto-hébergeable
     filters:
       and:
-        - scaling == "distributed"
+        - licence_type == "open-source"
     order:
       - file.name
       - pitch
-      - langage
-      - alternatives
+      - hosted
+      - scaling
     sort:
       - property: file.name
         direction: asc

@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `ml/rl` existe desormais comme domaine : le detour par le tag
     # `reinforcement-learning` (C3 — un tag employe faute de categorie) n'a plus
     # d'objet. Les fiches de fine-tuning par RL (TRL, Tunix) restent en

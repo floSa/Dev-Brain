@@ -1,6 +1,8 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
+    # `Dev/Services/` devient faux au lot 3 ; `role` dit ce que le chemin disait :
+    # un comparatif compare des briques, pas les notions qui portent le meme tag.
+    - role == "brique"
     - or:
         - file.hasTag("object-detection")
         - file.hasTag("segmentation")

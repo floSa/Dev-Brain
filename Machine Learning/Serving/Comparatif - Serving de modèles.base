@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "ml/tracking"
+    - categorie == "ml/serving"
 views:
   - type: table
-    name: Suivi d'expériences
+    name: Serving de modèles
     order:
       - file.name
       - pitch
@@ -18,10 +17,11 @@ views:
       - property: file.name
         direction: asc
   - type: table
-    name: Open-source auto-hébergeable
+    name: Open-source maintenu
     filters:
       and:
         - licence_type == "open-source"
+        - maturite != "deprecated"
     order:
       - file.name
       - pitch

@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     - categorie == "ml/hyperopt"
 views:
   - type: table

@@ -1,33 +1,32 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "ml/serving"
+    - categorie == "ml/orchestration"
 views:
   - type: table
-    name: Serving de modèles
+    name: Orchestrateurs ML
     order:
       - file.name
       - pitch
+      - langage
       - licence_type
+      - maturite
       - hosted
       - scaling
-      - langage
-      - maturite
       - tags
+      - alternatives
     sort:
       - property: file.name
         direction: asc
   - type: table
-    name: Open-source maintenu
+    name: Kubernetes-natif
     filters:
       and:
-        - licence_type == "open-source"
-        - maturite != "deprecated"
+        - tags.contains("kubernetes")
     order:
       - file.name
       - pitch
+      - langage
       - hosted
-      - scaling
     sort:
       - property: file.name
         direction: asc

@@ -94,6 +94,16 @@ SUB_LABEL = {
     "llm/finetuning": "Fine-tuning",
     "llm/text-to-sql": "Text-to-SQL",
     "llm/assistant": "Assistants",
+    # Machine Learning — « ### Machine Learning · 241 pages »
+    "ml/apprentissage-profond": "Apprentissage profond",
+    "ml/rl": "Apprentissage par renforcement",
+    "ml/series-temporelles": "Séries temporelles",
+    "ml/nlp": "NLP",
+    "ml/serving": "Serving",
+    "ml/vision": "Vision",
+    "ml/tracking": "Suivi d'expériences",
+    "ml/interpretabilite": "Interprétabilité",
+    "ml/tabulaire": "Tabulaire",
 }
 
 # Dossiers de la racine qui ne portent pas de pages du brain.
