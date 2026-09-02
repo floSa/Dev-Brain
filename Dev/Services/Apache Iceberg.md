@@ -19,7 +19,7 @@ url_repo: https://github.com/apache/iceberg
 
 ## Pourquoi
 
-Apache Iceberg est un **format de table ouvert** (pas un format de fichier) : il ajoute une **sémantique de table** au-dessus de fichiers de données posés sur stockage objet. Les données vivent en **[[Dev/Services/Parquet|Parquet]]** (ou ORC / [[Dev/Services/Avro|Avro]]) ; une arborescence de métadonnées (snapshots, listes de manifests en Avro) décrit l'état de la table. On obtient des **transactions ACID** par isolation de snapshots, le **time travel**, l'**évolution de schéma**, le **partitionnement caché** et l'**évolution de partitionnement**. Indépendant du moteur : lu et écrit par Spark, Trino, [[Dev/Services/Flink|Flink]], Dremio, DuckDB, Snowflake, Databricks. Né chez Netflix, projet Apache de premier rang ; Databricks a racheté Tabular (fondé par les créateurs d'Iceberg) en 2024.
+Apache Iceberg est un **format de table ouvert** (pas un format de fichier) : il ajoute une **sémantique de table** au-dessus de fichiers de données posés sur stockage objet. Les données vivent en **[[Parquet]]** (ou ORC / [[Avro]]) ; une arborescence de métadonnées (snapshots, listes de manifests en Avro) décrit l'état de la table. On obtient des **transactions ACID** par isolation de snapshots, le **time travel**, l'**évolution de schéma**, le **partitionnement caché** et l'**évolution de partitionnement**. Indépendant du moteur : lu et écrit par Spark, Trino, [[Flink]], Dremio, DuckDB, Snowflake, Databricks. Né chez Netflix, projet Apache de premier rang ; Databricks a racheté Tabular (fondé par les créateurs d'Iceberg) en 2024.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ Apache Iceberg est un **format de table ouvert** (pas un format de fichier) : il
 
 ## Quand NE PAS l'utiliser
 
-- Un simple fichier sans besoin de sémantique de table → [[Dev/Services/Parquet|Parquet]] seul.
+- Un simple fichier sans besoin de sémantique de table → [[Parquet]] seul.
 - Upserts / CDC intensifs sur clés primaires en flux → Apache Hudi peut mieux convenir.
 - Maison 100 % Databricks/Spark déjà sur Delta Lake → Delta Lake.
-- Transactionnel ligne à ligne (OLTP) → base relationnelle ([[Dev/Services/Postgres|Postgres]]).
+- Transactionnel ligne à ligne (OLTP) → base relationnelle ([[Postgres]]).
 
 ## Déploiement & coût
 
@@ -55,7 +55,7 @@ Apache Iceberg est un **format de table ouvert** (pas un format de fichier) : il
 
 ## Liens
 
-- [[Dev/Services/Parquet|Parquet]] — format des fichiers de données sous-jacents.
-- [[Dev/Services/Avro|Avro]] — format des fichiers de métadonnées (manifests).
-- [[Dev/Services/Flink|Flink]] — moteur de flux capable d'écrire des tables Iceberg.
+- [[Parquet]] — format des fichiers de données sous-jacents.
+- [[Avro]] — format des fichiers de métadonnées (manifests).
+- [[Flink]] — moteur de flux capable d'écrire des tables Iceberg.
 - Doc : https://iceberg.apache.org/docs/latest/

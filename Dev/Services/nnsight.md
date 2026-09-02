@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[Dev/Services/TransformerLens|TransformerLens]]", "[[Dev/Services/Captum|Captum]]"]
+alternatives: ["[[TransformerLens]]", "[[Captum]]"]
 complements: []
 tags: [explainability, llm]
 url_docs: https://www.nnsight.net
@@ -31,12 +31,12 @@ Sa vraie singularité est ailleurs : **l'exécution distante** via l'infrastruct
 - **Modèle trop gros pour la machine locale** : c'est le cas d'usage qui la distingue. Interventions envoyées à NDIF, résultats rapatriés.
 - Extraire des activations pour entraîner un [[Probing|probe]] ou un [[Sparse autoencoders|SAE]].
 - Travailler sur un modèle HuggingFace **quelconque**, sans dépendre d'un portage : elle enveloppe le modèle tel quel.
-- Dépendance directe d'[[Dev/Services/interpreto|interpreto]], qui s'en sert pour son extraction d'activations.
+- Dépendance directe d'[[interpreto]], qui s'en sert pour son extraction d'activations.
 
 ## Quand NE PAS l'utiliser
 
-- **Simple attribution** sur un modèle local : [[Dev/Services/Captum|Captum]] est plus direct, avec les méthodes déjà écrites.
-- **Analyse de circuits sur GPT-2 ou modèles jouets** : [[Dev/Services/TransformerLens|TransformerLens]] expose des poids réécrits en notation canonique (têtes séparées, `W_Q`/`W_K`…), bien plus commode pour disséquer. nnsight, lui, garde le modèle HuggingFace tel quel.
+- **Simple attribution** sur un modèle local : [[Captum]] est plus direct, avec les méthodes déjà écrites.
+- **Analyse de circuits sur GPT-2 ou modèles jouets** : [[TransformerLens]] expose des poids réécrits en notation canonique (têtes séparées, `W_Q`/`W_K`…), bien plus commode pour disséquer. nnsight, lui, garde le modèle HuggingFace tel quel.
 - **Production** : c'est un outil de recherche. Pas de garantie de stabilité d'API.
 - **Explication destinée à un métier** : hors sujet, ce n'est pas une bibliothèque d'explicabilité mais d'instrumentation.
 
@@ -57,14 +57,14 @@ Sa vraie singularité est ailleurs : **l'exécution distante** via l'infrastruct
 
 ## Alternatives
 
-- [[Dev/Services/TransformerLens|TransformerLens]] — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
-- [[Dev/Services/Captum|Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
+- [[TransformerLens]] — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
+- [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
 
 ## Liens
 
 - [[Interprétabilité mécaniste]] — le concept parent : patching, ablation, steering.
 - [[Probing]] — l'extraction d'activations qu'elle sert.
 - [[Sparse autoencoders]] — les activations à collecter pour entraîner un SAE.
-- [[Dev/Services/interpreto|interpreto]] — s'appuie dessus pour son extraction d'activations.
-- [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/HuggingFace|HuggingFace]] — le socle requis.
+- [[interpreto]] — s'appuie dessus pour son extraction d'activations.
+- [[PyTorch]] / [[HuggingFace]] — le socle requis.
 - [[Transformer architectures]] — l'objet instrumenté.

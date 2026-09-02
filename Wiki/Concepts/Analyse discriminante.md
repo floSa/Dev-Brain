@@ -60,7 +60,7 @@ tags: [supervised, classification, bayesian, linear-model]
 - **Le `shrinkage` sauve LDA** quand $n$ est petit ou les variables corrélées : $\Sigma$ estimée est alors mal conditionnée et son inversion instable. `shrinkage='auto'` devrait être un réflexe.
 - **Standardiser n'est pas requis** mathématiquement (le $\Sigma^{-1}$ absorbe les échelles), mais reste conseillé pour la stabilité numérique ([[Mise à l'échelle]]).
 - **Sensible aux variables non gaussiennes et aux outliers** : les moyennes et covariances sont des estimateurs peu robustes. Si les distributions sont franchement asymétriques, transformer ou passer à un modèle sans hypothèse ([[Gradient Boosting (GBDT)]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.discriminant_analysis]] — `LinearDiscriminantAnalysis` (aussi utilisable en `transform` pour la projection), `QuadraticDiscriminantAnalysis`.
+- Outils : [[Scikit-Learn|sklearn.discriminant_analysis]] — `LinearDiscriminantAnalysis` (aussi utilisable en `transform` pour la projection), `QuadraticDiscriminantAnalysis`.
 
 ## Approches voisines & alternatives
 

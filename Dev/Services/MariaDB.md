@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C/C++
 scaling: single-node
-alternatives: ["[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
+alternatives: ["[[MySQL]]", "[[Postgres]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
 complements: []
 tags: [relational]
 url_docs: https://mariadb.com/kb/en/documentation/
@@ -32,9 +32,9 @@ Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec
 
 ## Quand NE PAS l'utiliser
 
-- Compatibilité stricte avec les dernières fonctions MySQL d'Oracle → [[Dev/Services/MySQL|MySQL]].
-- Types riches et extensions avancées → [[Dev/Services/Postgres|Postgres]].
-- Scale horizontal distribué multi-région natif → [[Dev/Services/CockroachDB|CockroachDB]].
+- Compatibilité stricte avec les dernières fonctions MySQL d'Oracle → [[MySQL]].
+- Types riches et extensions avancées → [[Postgres]].
+- Scale horizontal distribué multi-région natif → [[CockroachDB]].
 
 ## Déploiement & coût
 
@@ -50,14 +50,14 @@ Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec
 
 ## Alternatives
 
-- [[Dev/Services/MySQL|MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
-- [[Dev/Services/Postgres|Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
-- [[Dev/Services/SQLite|SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
-- [[Dev/Services/CockroachDB|CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
-- [[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
+- [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
+- [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
+- [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
+- [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
+- [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
 - Doc : https://mariadb.com/kb/en/documentation/

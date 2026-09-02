@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: deprecated
 langage: Python
-alternatives: ["[[Dev/Services/WrenAI|WrenAI]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
+alternatives: ["[[WrenAI]]", "[[DB-GPT]]"]
 complements: []
 tags: [text-to-sql, llm, rag, agents, local-llm]
 url_docs: https://vanna.ai/docs/
@@ -29,9 +29,9 @@ Vanna génère du SQL à partir de questions en langage naturel par **RAG** (Ret
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'un produit clé en main avec UI, gouvernance et couche sémantique métier → [[Dev/Services/WrenAI|WrenAI]].
-- Exigence d'un **OSS activement maintenu** : le dépôt est archivé depuis mars 2026 (cf. Pièges) → [[Dev/Services/WrenAI|WrenAI]] ou [[Dev/Services/DB-GPT|DB-GPT]].
-- Requêtes analytiques très complexes nécessitant une décomposition multi-agent → [[Dev/Services/DB-GPT|DB-GPT]].
+- Besoin d'un produit clé en main avec UI, gouvernance et couche sémantique métier → [[WrenAI]].
+- Exigence d'un **OSS activement maintenu** : le dépôt est archivé depuis mars 2026 (cf. Pièges) → [[WrenAI]] ou [[DB-GPT]].
+- Requêtes analytiques très complexes nécessitant une décomposition multi-agent → [[DB-GPT]].
 
 ## Déploiement & coût
 
@@ -47,11 +47,11 @@ Vanna génère du SQL à partir de questions en langage naturel par **RAG** (Ret
 
 ## Alternatives
 
-- [[Dev/Services/WrenAI|WrenAI]] — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.
-- [[Dev/Services/DB-GPT|DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
+- [[WrenAI]] — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.
+- [[DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
 
 ## Liens
 
 - [[Text-to-SQL]] — concept parent : traduire une question en langage naturel en SQL exécutable.
-- [[Dev/Patterns/Comparatif - Frameworks text-to-SQL|Comparatif - Frameworks text-to-SQL]]
+- [[Comparatif - Frameworks text-to-SQL]]
 - Repo : https://github.com/vanna-ai/vanna · Docs : https://vanna.ai/docs/

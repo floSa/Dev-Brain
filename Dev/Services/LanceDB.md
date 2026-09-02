@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: ["[[Dev/Services/Chroma|Chroma]]"]
+alternatives: ["[[Chroma]]"]
 complements: []
 tags: [vector-db, embedded, multimodal, columnar]
 url_docs: https://lancedb.com/documentation/
@@ -30,9 +30,9 @@ Base vectorielle **embarquée** (in-process, comme SQLite) bâtie sur **Lance**,
 
 ## Quand NE PAS l'utiliser
 
-- Très gros volumes, haute concurrence, exploitation distribuée → [[Dev/Services/Milvus|Milvus]] ou [[Dev/Services/Qdrant|Qdrant]] (serveurs dédiés).
-- Du Postgres déjà en place et besoin modeste → [[Dev/Services/pgvector|pgvector]] ; zéro infra 100 % managé → [[Dev/Services/Pinecone|Pinecone]].
-- Simple prototype RAG textuel sans dimension multimodale → [[Dev/Services/Chroma|Chroma]] suffit ; juste un index ANN brut → [[Dev/Services/Faiss|Faiss]].
+- Très gros volumes, haute concurrence, exploitation distribuée → [[Milvus]] ou [[Qdrant]] (serveurs dédiés).
+- Du Postgres déjà en place et besoin modeste → [[pgvector]] ; zéro infra 100 % managé → [[Pinecone]].
+- Simple prototype RAG textuel sans dimension multimodale → [[Chroma]] suffit ; juste un index ANN brut → [[Faiss]].
 
 ## Déploiement & coût
 
@@ -49,7 +49,7 @@ Base vectorielle **embarquée** (in-process, comme SQLite) bâtie sur **Lance**,
 
 ## Alternatives
 
-- [[Dev/Services/Chroma|Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+- [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
 ## Liens
 

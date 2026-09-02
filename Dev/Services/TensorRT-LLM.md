@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++/Python
-alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]"]
+alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[SGLang]]"]
 complements: []
 tags: [llm, model-serving, inference, gpu, quantization]
 url_docs: https://nvidia.github.io/TensorRT-LLM/
@@ -19,7 +19,7 @@ url_repo: https://github.com/NVIDIA/TensorRT-LLM
 
 ## Pourquoi
 
-Bibliothèque d'inférence LLM de **NVIDIA**, taillée pour extraire le maximum de débit et de latence des **GPU NVIDIA**. Le modèle est compilé en un moteur **TensorRT** optimisé (fusion d'opérations, kernels CUDA dédiés, précision réduite), piloté par des runtimes **Python et C++**. Une **API Python de haut niveau** (architecture PyTorch-native) sert à définir et charger les modèles. Supporte l'in-flight batching, le paged KV cache, la **quantization** (FP8, INT4 AWQ/GPTQ, FP4 sur Blackwell), le speculative decoding et le **parallélisme tensoriel / pipeline / expert** sur plusieurs GPU et nœuds. C'est le moteur derrière le backend TensorRT-LLM de [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] et des microservices NIM.
+Bibliothèque d'inférence LLM de **NVIDIA**, taillée pour extraire le maximum de débit et de latence des **GPU NVIDIA**. Le modèle est compilé en un moteur **TensorRT** optimisé (fusion d'opérations, kernels CUDA dédiés, précision réduite), piloté par des runtimes **Python et C++**. Une **API Python de haut niveau** (architecture PyTorch-native) sert à définir et charger les modèles. Supporte l'in-flight batching, le paged KV cache, la **quantization** (FP8, INT4 AWQ/GPTQ, FP4 sur Blackwell), le speculative decoding et le **parallélisme tensoriel / pipeline / expert** sur plusieurs GPU et nœuds. C'est le moteur derrière le backend TensorRT-LLM de [[NVIDIA Triton]] et des microservices NIM.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Bibliothèque d'inférence LLM de **NVIDIA**, taillée pour extraire le maximum 
 
 ## Quand NE PAS l'utiliser
 
-- Poste de dev / prototypage local → [[Dev/Services/Ollama|Ollama]], [[Dev/Services/LM Studio|LM Studio]] ou [[Dev/Services/llama.cpp|llama.cpp]].
-- GPU non-NVIDIA ou besoin de portabilité matérielle → [[Dev/Services/vLLM|vLLM]] (support plus large).
-- Haut débit sans la complexité de compilation → [[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]] ou [[Dev/Services/TGI|TGI]].
+- Poste de dev / prototypage local → [[Ollama]], [[LM Studio]] ou [[llama.cpp]].
+- GPU non-NVIDIA ou besoin de portabilité matérielle → [[vLLM]] (support plus large).
+- Haut débit sans la complexité de compilation → [[vLLM]], [[SGLang]] ou [[TGI]].
 - Itération rapide : l'étape de build du moteur (par modèle, par GPU, par config) alourdit le cycle.
 
 ## Déploiement & coût
@@ -50,17 +50,17 @@ Bibliothèque d'inférence LLM de **NVIDIA**, taillée pour extraire le maximum 
 
 ## Alternatives
 
-- [[Dev/Services/Ollama|Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
-- [[Dev/Services/llama.cpp|llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
-- [[Dev/Services/LM Studio|LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
-- [[Dev/Services/text-generation-webui|text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
-- [[Dev/Services/vLLM|vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
-- [[Dev/Services/TGI|TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
-- [[Dev/Services/SGLang|SGLang]] — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
+- [[Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
+- [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
+- [[LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
+- [[text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
+- [[vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
+- [[TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
+- [[SGLang]] — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
 
 ## Liens
 
-- Backend d'inférence de [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] (déploiement production NVIDIA).
-- Modèles servis depuis [[Dev/Services/HuggingFace|HuggingFace]] (conversion en moteur TensorRT).
+- Backend d'inférence de [[NVIDIA Triton]] (déploiement production NVIDIA).
+- Modèles servis depuis [[HuggingFace]] (conversion en moteur TensorRT).
 - [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
 - Doc : https://nvidia.github.io/TensorRT-LLM/

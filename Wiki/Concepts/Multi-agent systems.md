@@ -37,7 +37,7 @@ tags: [multi-agent, agents, llm]
 
 - Commencer **mono-agent** ; passer multi-agents seulement quand un goulot (rôles incompatibles, contexte trop large pour un seul) le justifie.
 - Préférer une topologie **superviseur** (étoile) au tout-à-tous : moins de canaux, flux contrôlable, arrêt explicite.
-- Outillage : [[Dev/Services/CrewAI|CrewAI]] (équipes de rôles, Crews/Flows), [[Dev/Services/AutoGen|AutoGen]] (agents conversationnels, GroupChat — en maintenance, cf. sa fiche), [[Dev/Services/LangGraph|LangGraph]] (graphe multi-agents à état explicite).
+- Outillage : [[CrewAI]] (équipes de rôles, Crews/Flows), [[AutoGen]] (agents conversationnels, GroupChat — en maintenance, cf. sa fiche), [[LangGraph]] (graphe multi-agents à état explicite).
 - Pièges : explosion des coûts/latence ; boucles de conversation sans fin ; erreurs qui se propagent d'un agent à l'autre sans contrôle.
 
 ## Approches voisines & alternatives
@@ -51,8 +51,8 @@ tags: [multi-agent, agents, llm]
 - [[a2a-protocol]] — le protocole de coordination quand les agents sont **opaques** et relèvent d'organisations distinctes.
 - [[Reliability patterns]] — contenir la propagation d'erreurs d'un agent à l'autre.
 - Alternative : **un agent unique avec plusieurs outils** — souvent suffisant, toujours moins cher ; ne passer au multi-agents qu'avec une raison mesurée.
-- Mises en œuvre fichées : [[Dev/Outils/swarm-forge|swarm-forge]] (un agent par git worktree, handoffs sur tmux), [[Dev/Outils/freebuff|freebuff]] (agents spécialisés derrière une seule CLI), [[Dev/Services/PraisonAI|PraisonAI]] (agents, tâches et processus déclarés en YAML).
-- Application clé en main : [[Dev/Services/OpenMAIC|OpenMAIC]] — classe virtuelle où professeur et camarades sont des agents distincts ; un cas où le multi-agents sert la mise en scène autant que la tâche.
+- Mises en œuvre fichées : [[swarm-forge]] (un agent par git worktree, handoffs sur tmux), [[freebuff]] (agents spécialisés derrière une seule CLI), [[PraisonAI]] (agents, tâches et processus déclarés en YAML).
+- Application clé en main : [[OpenMAIC]] — classe virtuelle où professeur et camarades sont des agents distincts ; un cas où le multi-agents sert la mise en scène autant que la tâche.
 
 ## Pour aller plus loin
 

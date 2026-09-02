@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Scala / JVM
 scaling: distributed
-alternatives: ["[[Dev/Services/Dask|Dask]]", "[[Dev/Services/Ray|Ray]]"]
+alternatives: ["[[Dask]]", "[[Ray]]"]
 complements: []
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
@@ -26,15 +26,15 @@ url_repo: https://github.com/apache/spark
 ## Quand l'utiliser
 
 - Traitement **ELT / batch** de très gros volumes (To+) sur un cluster, en SQL ou DataFrame.
-- Écosystème **big data / lakehouse** établi (Hadoop, Hive, [[Dev/Services/Apache Iceberg|Iceberg]], Delta) et plateformes managées (Databricks, EMR, Dataproc).
+- Écosystème **big data / lakehouse** établi (Hadoop, Hive, [[Apache Iceberg|Iceberg]], Delta) et plateformes managées (Databricks, EMR, Dataproc).
 - **Streaming structuré** unifié avec le batch (même API).
 - Équipes déjà sur la **JVM** ou ayant besoin de la maturité opérationnelle de Spark.
 
 ## Quand NE PAS l'utiliser
 
-- Rester **100 % Python** sans cluster JVM, en gardant l'API numpy/pandas → [[Dev/Services/Dask|Dask]].
-- Paralléliser du **code Python arbitraire** / charges ML hétérogènes → [[Dev/Services/Ray|Ray]].
-- Données qui tiennent sur une machine → [[Dev/Services/Polars|Polars]] / [[Dev/Services/DuckDB|DuckDB]] (souvent plus rapides, sans cluster).
+- Rester **100 % Python** sans cluster JVM, en gardant l'API numpy/pandas → [[Dask]].
+- Paralléliser du **code Python arbitraire** / charges ML hétérogènes → [[Ray]].
+- Données qui tiennent sur une machine → [[Polars]] / [[DuckDB]] (souvent plus rapides, sans cluster).
 - Faible latence interactive : le coût de démarrage et l'overhead JVM pèsent sur les petits jobs.
 
 ## Déploiement & coût
@@ -53,12 +53,12 @@ url_repo: https://github.com/apache/spark
 
 ## Alternatives
 
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
-- [[Dev/Services/Ray|Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 
 ## Liens
 
 - [[Comparatif - Calcul distribué]] — comparatif de la catégorie
-- Formats / tables lus : [[Dev/Services/Parquet|Parquet]], [[Dev/Services/Apache Iceberg|Apache Iceberg]].
-- Alternative single-node analytique : [[Dev/Services/DuckDB|DuckDB]].
+- Formats / tables lus : [[Parquet]], [[Apache Iceberg]].
+- Alternative single-node analytique : [[DuckDB]].
 - Doc : https://spark.apache.org/docs/latest/

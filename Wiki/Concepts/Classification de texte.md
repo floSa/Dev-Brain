@@ -19,7 +19,7 @@ tags: [nlp, text-classification, classification, supervised, class-imbalance]
 ### Trois paliers
 - **Baseline** : [[TF-IDF]] + classifieur linéaire ([[Régression logistique]], SVM). Rapide, robuste, interprétable.
 - **Embeddings** : encoder le texte ([[embeddings]] de phrases), puis classifier ; ou fine-tuner un encodeur transformeur (BERT). Capte le sens.
-- **LLM** : zero / few-shot par prompt, ou fine-tuning léger ([[Dev/Services/SetFit|SetFit]] pour le few-shot frugal). Souple, fort en faibles données.
+- **LLM** : zero / few-shot par prompt, ou fine-tuning léger ([[SetFit]] pour le few-shot frugal). Souple, fort en faibles données.
 
 ### Mono- vs multi-label
 - Une classe exclusive (softmax) vs plusieurs simultanées (sigmoïdes indépendantes + seuil).
@@ -40,7 +40,7 @@ tags: [nlp, text-classification, classification, supervised, class-imbalance]
 - Commencer par le baseline TF-IDF + [[Régression logistique|régression logistique]] : souvent 90 % du résultat pour 10 % de l'effort, et un étalon pour juger les approches lourdes.
 - Monter en gamme seulement si le baseline plafonne : embeddings / BERT, puis LLM.
 - Soigner la **stratification** du split et éviter le [[Data leakage]] (fit du vectorizer sur le train seul).
-- Few-shot frugal : [[Dev/Services/SetFit|SetFit]] (fine-tuning contrastif de [[Dev/Services/sentence-transformers|sentence-transformers]]) bat souvent le prompt LLM à coût bien moindre.
+- Few-shot frugal : [[SetFit]] (fine-tuning contrastif de [[sentence-transformers]]) bat souvent le prompt LLM à coût bien moindre.
 
 ## Approches voisines & alternatives
 

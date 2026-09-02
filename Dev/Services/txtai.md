@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/Marqo|Marqo]]", "[[Dev/Services/Elasticsearch|Elasticsearch]]"]
+alternatives: ["[[Vespa]]", "[[Marqo]]", "[[Elasticsearch]]"]
 complements: []
 tags: [search, semantic-search, embeddings, rag, vector-db]
 url_docs: https://neuml.github.io/txtai/
@@ -19,7 +19,7 @@ url_repo: https://github.com/neuml/txtai
 
 ## Pourquoi
 
-**Base d'embeddings tout-en-un** en Python (Apache-2.0, NeuML). Un même index combine **recherche vectorielle** (sémantique), **filtres SQL** sur métadonnées et **graphe** de connaissances ; par-dessus, txtai orchestre des **pipelines et workflows LLM** (RAG, agents, extraction, traduction…). Bâti sur [[Dev/Services/HuggingFace|Transformers]], [[Dev/Services/sentence-transformers|sentence-transformers]] et [[Dev/Services/FastAPI|FastAPI]]. S'utilise **embarqué** (import Python, du notebook au script) ou exposé en **service API** (FastAPI, conteneur), avec des bindings JavaScript / Java / Rust / Go.
+**Base d'embeddings tout-en-un** en Python (Apache-2.0, NeuML). Un même index combine **recherche vectorielle** (sémantique), **filtres SQL** sur métadonnées et **graphe** de connaissances ; par-dessus, txtai orchestre des **pipelines et workflows LLM** (RAG, agents, extraction, traduction…). Bâti sur [[HuggingFace|Transformers]], [[sentence-transformers]] et [[FastAPI]]. S'utilise **embarqué** (import Python, du notebook au script) ou exposé en **service API** (FastAPI, conteneur), avec des bindings JavaScript / Java / Rust / Go.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ url_repo: https://github.com/neuml/txtai
 
 ## Quand NE PAS l'utiliser
 
-- Très grande échelle distribuée, milliards de documents, ranking ML en serving → [[Dev/Services/Vespa|Vespa]] ou [[Dev/Services/Elasticsearch|Elasticsearch]].
+- Très grande échelle distribuée, milliards de documents, ranking ML en serving → [[Vespa]] ou [[Elasticsearch]].
 - Stack non-Python où l'on veut le moteur comme service indépendant et costaud (les bindings restent secondaires).
-- Base vectorielle managée clé en main → [[Dev/Services/Pinecone|Pinecone]] ; ou base dédiée à fort filtrage → [[Dev/Services/Qdrant|Qdrant]].
+- Base vectorielle managée clé en main → [[Pinecone]] ; ou base dédiée à fort filtrage → [[Qdrant]].
 
 ## Déploiement & coût
 
@@ -48,15 +48,15 @@ url_repo: https://github.com/neuml/txtai
 
 ## Alternatives
 
-- [[Dev/Services/Vespa|Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
-- [[Dev/Services/Marqo|Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
+- [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
+- [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
+- [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
 ## Liens
 
 - [[Recherche d'information]] — le cadre (lexical / dense / hybride) que txtai met en œuvre.
 - [[Bases de données vectorielles]] · [[embeddings]] — ce qu'il stocke et recherche.
 - [[RAG]] — usage phare (workflows et pipelines intégrés).
-- [[Dev/Services/sentence-transformers|sentence-transformers]] — socle d'embeddings sous-jacent.
+- [[sentence-transformers]] — socle d'embeddings sous-jacent.
 - [[Comparatif - Moteurs de recherche]] — comparatif de la catégorie.
 - Doc : https://neuml.github.io/txtai/

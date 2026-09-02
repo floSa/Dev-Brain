@@ -39,8 +39,8 @@ tags: [model-monitoring, data-drift, concept-drift]
 
 - Logger entrées, scores et version de modèle (du [[Model registry & versioning|registre]]) pour relier une dégradation à une version précise.
 - Surveiller features **et** sorties : le drift des scores est mesurable immédiatement, sans attendre les labels.
-- Tracer drift et performance dans le suivi d'expériences ([[Dev/Services/MLflow|MLflow]]).
-- Outillage spécialisé : [[Dev/Services/Evidently|Evidently]] (en fiche), NannyML, WhyLabs, Arize.
+- Tracer drift et performance dans le suivi d'expériences ([[MLflow]]).
+- Outillage spécialisé : [[Evidently]] (en fiche), NannyML, WhyLabs, Arize.
 
 ## Approches voisines & alternatives
 
@@ -48,8 +48,8 @@ tags: [model-monitoring, data-drift, concept-drift]
 - [[Déploiement de modèles]] — le monitoring fournit les métriques qui valident un canary / shadow.
 - [[Model registry & versioning]] — rattache chaque métrique de prod à une version traçable.
 - [[Calibration]] — la fiabilité des probabilités prédites se dégrade typiquement avec la dérive.
-- [[Dev/Services/Evidently|Evidently]] — framework qui outille les quatre couches (données, drift, performance) avec rapports, tests et dashboards.
-- [[Dev/Services/MLflow|MLflow]] — où journaliser drift et performance par version.
+- [[Evidently]] — framework qui outille les quatre couches (données, drift, performance) avec rapports, tests et dashboards.
+- [[MLflow]] — où journaliser drift et performance par version.
 
 ## Pour aller plus loin
 

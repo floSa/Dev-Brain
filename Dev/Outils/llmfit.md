@@ -24,7 +24,7 @@ Répond à une question précédant tout déploiement local : **quel modèle cet
 
 Le résultat n'est pas un oui/non mais un classement sur **quatre axes** : tenue en mémoire, vitesse estimée, qualité, longueur de contexte soutenable. Un modèle peut tenir en mémoire et rester inutilisable en vitesse ; les quatre axes séparés rendent ce compromis lisible au lieu de le masquer derrière un score unique.
 
-`tooling/llm` est ici la bonne famille, et non `llm/local` : llmfit **outille la décision**, il ne sert aucun modèle. Les runtimes qui exécutent l'inférence — [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/LM Studio|LM Studio]], MLX, Docker Model Runner — sont détectés comme environnements cibles, pas remplacés.
+`tooling/llm` est ici la bonne famille, et non `llm/local` : llmfit **outille la décision**, il ne sert aucun modèle. Les runtimes qui exécutent l'inférence — [[Ollama]], [[llama.cpp]], [[LM Studio]], MLX, Docker Model Runner — sont détectés comme environnements cibles, pas remplacés.
 
 Il gère les configurations **multi-GPU**, les architectures **Mixture-of-Experts** (dont les paramètres actifs ne correspondent pas à l'empreinte totale), le choix du format de quantization (GGUF, AWQ, GPTQ, EXL2), et une surcharge manuelle de la mémoire prise en compte pour simuler une autre machine. Une commande `llmfit bench --share` alimente un jeu de mesures communautaires. Licence **MIT**.
 
@@ -37,7 +37,7 @@ Il gère les configurations **multi-GPU**, les architectures **Mixture-of-Expert
 
 ## Quand NE PAS l'utiliser
 
-- Servir le modèle : c'est le rôle des runtimes → [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/vLLM|vLLM]] (cf. [[Comparatif - Exécution & serving LLM]]).
+- Servir le modèle : c'est le rôle des runtimes → [[Ollama]], [[llama.cpp]], [[vLLM]] (cf. [[Comparatif - Exécution & serving LLM]]).
 - Mesurer la **qualité** d'un modèle sur une tâche métier : l'axe qualité est une note de catalogue, pas une évaluation → [[Comparatif - Évaluation LLM]].
 - Dimensionner un **entraînement** ou un fine-tuning : l'outil raisonne inférence.
 - Modèles absents du catalogue, notamment des poids privés ou très récents.
@@ -63,7 +63,7 @@ Aucun outil équivalent n'est référencé dans le brain à ce jour : la catégo
 
 ## Liens
 
-- Runtimes cibles : [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/LM Studio|LM Studio]].
+- Runtimes cibles : [[Ollama]], [[llama.cpp]], [[LM Studio]].
 - [[Comparatif - Exécution & serving LLM]] — comparatif des runtimes qui, eux, servent le modèle
 - [[Quantization]] — concept : le levier principal de la tenue en mémoire
 - [[Small Language Models]] — concept : la classe de modèles que ce cadrage rend accessible

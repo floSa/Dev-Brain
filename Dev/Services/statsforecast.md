@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Prophet|Prophet]]", "[[Dev/Services/neuralforecast|neuralforecast]]", "[[Dev/Services/darts|darts]]", "[[Dev/Services/pmdarima|pmdarima]]"]
+alternatives: ["[[Prophet]]", "[[neuralforecast]]", "[[darts]]", "[[pmdarima]]"]
 complements: []
 tags: [forecasting, timeseries, distributed]
 url_docs: https://nixtlaverse.nixtla.io/statsforecast/
@@ -30,15 +30,15 @@ statsforecast (Nixtla) offre les implémentations **les plus rapides** des modè
 
 ## Quand NE PAS l'utiliser
 
-- Modèles neuronaux / dépendances non linéaires complexes → [[Dev/Services/neuralforecast|neuralforecast]], [[Dev/Services/darts|darts]].
-- Une seule série saisonnière à expliquer simplement (effets calendaires) → [[Dev/Services/Prophet|Prophet]].
-- Ingénierie de features ML poussée et covariables très riches sous une même API → [[Dev/Services/darts|darts]].
+- Modèles neuronaux / dépendances non linéaires complexes → [[neuralforecast]], [[darts]].
+- Une seule série saisonnière à expliquer simplement (effets calendaires) → [[Prophet]].
+- Ingénierie de features ML poussée et covariables très riches sous une même API → [[darts]].
 
 ## Déploiement & coût
 
 - Open-source (Apache-2.0), gratuit ; `uv add statsforecast`. Rien à héberger.
 - Accélération **Numba** (premier appel : compilation ~5 s, puis < 0,2 s). Distribué nativement via Spark / Dask / Ray.
-- Écosystème Nixtla (interopère avec [[Dev/Services/neuralforecast|neuralforecast]] et utilsforecast).
+- Écosystème Nixtla (interopère avec [[neuralforecast]] et utilsforecast).
 
 ## Pièges
 
@@ -48,15 +48,15 @@ statsforecast (Nixtla) offre les implémentations **les plus rapides** des modè
 
 ## Alternatives
 
-- [[Dev/Services/Prophet|Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
-- [[Dev/Services/neuralforecast|neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
-- [[Dev/Services/darts|darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
-- [[Dev/Services/pmdarima|pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
+- [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
+- [[neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
+- [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
+- [[pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 
 ## Liens
 
 - [[ARIMA SARIMA]] — AutoARIMA est l'un de ses modèles phares.
 - [[Exponential smoothing]] — AutoETS implémente le cadre ETS.
 - [[Forecasting framing]] — cadrer horizon, covariables et évaluation en amont.
-- [[Dev/Services/neuralforecast|neuralforecast]] — pendant neuronal du même écosystème Nixtla.
+- [[neuralforecast]] — pendant neuronal du même écosystème Nixtla.
 - Doc : https://nixtlaverse.nixtla.io/statsforecast/

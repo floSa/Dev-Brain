@@ -46,7 +46,7 @@ Un bac à sable jetable est le plus sûr : chaque exécution repart d'un état p
 - **Ne jamais exécuter du code généré dans le processus de l'agent** (`exec`, `eval`) ni sur la machine hôte : c'est le défaut le plus fréquent et le plus coûteux.
 - Choisir selon le risque : conteneur pour du code interne de confiance, microVM ou gVisor dès que l'entrée est publique ou multi-tenant.
 - Poser d'emblée les **plafonds** — délai maximum, mémoire, réseau en liste blanche — plutôt que d'attendre l'incident.
-- Backends courants côté agents : local, Docker, SSH, puis les plateformes managées [[Dev/Services/E2B|E2B]] (Firecracker), [[Dev/Services/Modal|Modal]] (gVisor, GPU disponible), [[Dev/Services/Daytona|Daytona]]. [[Dev/Services/Hermes Agent|Hermes Agent]] les expose comme backends interchangeables.
+- Backends courants côté agents : local, Docker, SSH, puis les plateformes managées [[E2B]] (Firecracker), [[Modal]] (gVisor, GPU disponible), [[Daytona]]. [[Hermes Agent]] les expose comme backends interchangeables.
 - Piège : croire qu'un bac à sable rend l'agent sûr. Il **contient les dégâts de l'exécution**, il n'empêche ni l'action erronée sur les outils légitimes, ni l'exfiltration par un canal autorisé.
 
 ## Approches voisines & alternatives

@@ -43,7 +43,7 @@ tags: [model-evaluation, calibration, classification]
 - Protocole : mesurer (diagramme + ECE) → recalibrer (Platt / isotonique) sur un jeu réservé → revérifier.
 - La [[Régression logistique]] est souvent bien calibrée d'emblée (elle optimise directement la log-vraisemblance) ; ce n'est pas le cas des marges de SVM ni des scores bruts de boosting.
 - Les métriques de probabilité de [[Classification metrics]] (log-loss, Brier) pénalisent déjà en partie une mauvaise calibration.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn — CalibratedClassifierCV, calibration_curve, brier_score_loss]].
+- Outils : [[Scikit-Learn|sklearn — CalibratedClassifierCV, calibration_curve, brier_score_loss]].
 
 ## Approches voisines & alternatives
 

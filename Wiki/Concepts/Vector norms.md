@@ -41,7 +41,7 @@ tags: [linear-algebra, vector-norm, regularization]
 - Standardiser les variables avant toute méthode à base de distance (k-NN, k-means) : sinon une variable à grande échelle domine la norme.
 - Régularisation : L2 par défaut (lisse, stable) ; L1 quand on veut un modèle parcimonieux / sélectionner.
 - **Gradient clipping** par la norme L2 pour stabiliser l'entraînement de réseaux profonds.
-- Outils : `numpy.linalg.norm` (paramètre `ord`), `torch.linalg.norm`, [[Dev/Services/numpy|numpy]], [[Dev/Services/PyTorch|torch]].
+- Outils : `numpy.linalg.norm` (paramètre `ord`), `torch.linalg.norm`, [[numpy]], [[PyTorch|torch]].
 
 ## Approches voisines & alternatives
 

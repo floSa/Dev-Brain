@@ -19,7 +19,7 @@ url_repo: https://github.com/huggingface/setfit
 
 ## Pourquoi
 
-Méthode de **classification de texte few-shot sans prompt**, signée Hugging Face. En deux temps : fine-tuning **contrastif** d'un [[Dev/Services/sentence-transformers|sentence-transformer]] sur les paires d'exemples, puis entraînement d'une **tête de classification** sur les embeddings obtenus. Résultat : des scores compétitifs avec **quelques dizaines d'exemples par classe**, sans LLM ni prompt à régler, pour un modèle petit et rapide à servir.
+Méthode de **classification de texte few-shot sans prompt**, signée Hugging Face. En deux temps : fine-tuning **contrastif** d'un [[sentence-transformers|sentence-transformer]] sur les paires d'exemples, puis entraînement d'une **tête de classification** sur les embeddings obtenus. Résultat : des scores compétitifs avec **quelques dizaines d'exemples par classe**, sans LLM ni prompt à régler, pour un modèle petit et rapide à servir.
 
 ## Quand l'utiliser
 
@@ -29,14 +29,14 @@ Méthode de **classification de texte few-shot sans prompt**, signée Hugging Fa
 
 ## Quand NE PAS l'utiliser
 
-- **Beaucoup** de données annotées → un fine-tuning classique d'encodeur ([[Dev/Services/HuggingFace|HuggingFace]]) peut faire mieux.
-- Baseline ultra-simple suffisant → TF-IDF + linéaire ([[Dev/Services/Scikit-Learn|Scikit-Learn]]).
+- **Beaucoup** de données annotées → un fine-tuning classique d'encodeur ([[HuggingFace]]) peut faire mieux.
+- Baseline ultra-simple suffisant → TF-IDF + linéaire ([[Scikit-Learn]]).
 - Tâches génératives ou de raisonnement → un LLM.
 
 ## Déploiement & coût
 
 - Bibliothèque open-source (Apache-2.0), gratuite ; `uv add setfit`.
-- **Single-node** ; s'appuie sur [[Dev/Services/sentence-transformers|sentence-transformers]] / [[Dev/Services/HuggingFace|HuggingFace]]. GPU utile mais non requis.
+- **Single-node** ; s'appuie sur [[sentence-transformers]] / [[HuggingFace]]. GPU utile mais non requis.
 - Modèle final petit → inférence rapide et peu coûteuse.
 
 ## Pièges
@@ -52,8 +52,8 @@ Pas de substitut direct dans le brain. Les voies concurrentes pour la classifica
 ## Liens
 
 - [[Classification de texte]] — son cas d'usage (few-shot).
-- [[Dev/Services/sentence-transformers|sentence-transformers]] — le socle qu'il fine-tune.
-- [[Dev/Services/HuggingFace|HuggingFace]] — exécution et alternative full-fine-tune.
+- [[sentence-transformers]] — le socle qu'il fine-tune.
+- [[HuggingFace]] — exécution et alternative full-fine-tune.
 - [[Traitement du langage naturel]] — page chapeau.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Doc : https://huggingface.co/docs/setfit

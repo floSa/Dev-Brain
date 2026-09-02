@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]]"]
+alternatives: ["[[LlamaIndex NLSQLTableQueryEngine]]"]
 complements: []
 tags: [text-to-sql, llm, agents, tool-use]
 url_docs: https://docs.langchain.com/oss/python/integrations/tools/sql_database
@@ -19,7 +19,7 @@ url_repo: https://github.com/langchain-ai/langchain
 
 ## Pourquoi
 
-Sous-composant text-to-SQL de [[Dev/Services/LangChain|LangChain]] — pas un produit dédié, un **assemblage** de briques du framework. On combine un wrapper `SQLDatabase` (via SQLAlchemy), un `SQLDatabaseToolkit` (outils : lister les tables, lire le schéma, exécuter, vérifier une requête) et un agent. L'agent **boucle** : inspecter le schéma → écrire le SQL → l'exécuter → se corriger sur erreur → re-générer. La voie historique `create_sql_agent` cède la place à un agent construit en **LangGraph** (graphe explicite, traçable). Une variante sans agent, `create_sql_query_chain`, génère juste le SQL en un passage.
+Sous-composant text-to-SQL de [[LangChain]] — pas un produit dédié, un **assemblage** de briques du framework. On combine un wrapper `SQLDatabase` (via SQLAlchemy), un `SQLDatabaseToolkit` (outils : lister les tables, lire le schéma, exécuter, vérifier une requête) et un agent. L'agent **boucle** : inspecter le schéma → écrire le SQL → l'exécuter → se corriger sur erreur → re-générer. La voie historique `create_sql_agent` cède la place à un agent construit en **LangGraph** (graphe explicite, traçable). Une variante sans agent, `create_sql_query_chain`, génère juste le SQL en un passage.
 
 ## Quand l'utiliser
 
@@ -29,8 +29,8 @@ Sous-composant text-to-SQL de [[Dev/Services/LangChain|LangChain]] — pas un pr
 
 ## Quand NE PAS l'utiliser
 
-- Recherche d'un produit dédié avec entraînement RAG et UI fournis → [[Dev/Services/Vanna|Vanna]] ou [[Dev/Services/WrenAI|WrenAI]].
-- Stack déjà en LlamaIndex → son [[Dev/Services/LlamaIndex NLSQLTableQueryEngine|NLSQLTableQueryEngine]], plus direct.
+- Recherche d'un produit dédié avec entraînement RAG et UI fournis → [[Vanna]] ou [[WrenAI]].
+- Stack déjà en LlamaIndex → son [[LlamaIndex NLSQLTableQueryEngine|NLSQLTableQueryEngine]], plus direct.
 - Refus de câbler soi-même la récupération d'exemples / le contexte de schéma.
 
 ## Déploiement & coût
@@ -46,11 +46,11 @@ Sous-composant text-to-SQL de [[Dev/Services/LangChain|LangChain]] — pas un pr
 
 ## Alternatives
 
-- [[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]] — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.
+- [[LlamaIndex NLSQLTableQueryEngine]] — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.
 
 ## Liens
 
-- [[Dev/Services/LangChain|LangChain]] — framework parent dont ce module fait partie.
+- [[LangChain]] — framework parent dont ce module fait partie.
 - [[Text-to-SQL]] — concept : traduire une question en langage naturel en SQL exécutable.
-- [[Dev/Patterns/Comparatif - Frameworks text-to-SQL|Comparatif - Frameworks text-to-SQL]]
+- [[Comparatif - Frameworks text-to-SQL]]
 - Docs : https://docs.langchain.com/oss/python/integrations/tools/sql_database

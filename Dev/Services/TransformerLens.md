@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/nnsight|nnsight]]", "[[Dev/Services/SAELens|SAELens]]"]
+alternatives: ["[[nnsight]]", "[[SAELens]]"]
 complements: []
 tags: [explainability, llm]
 url_docs: https://transformerlensorg.github.io/TransformerLens/
@@ -35,9 +35,9 @@ C'est ce qui rend le raisonnement en circuits praticable : on peut enfin poser �
 
 ## Quand NE PAS l'utiliser
 
-- **Modèle trop gros pour la machine** : elle charge tout localement. Pour intervenir sur un très gros modèle sans l'infrastructure, [[Dev/Services/nnsight|nnsight]] et son exécution distante.
-- **Simple attribution** : hors sujet. [[Dev/Services/Captum|Captum]] ou [[Dev/Services/interpreto|interpreto]].
-- **Entraîner ou analyser des SAE** : depuis la v2, cette partie a été **sortie** de TransformerLens et déplacée vers [[Dev/Services/SAELens|SAELens]] (`HookedSAETransformer`). Ne pas la chercher ici.
+- **Modèle trop gros pour la machine** : elle charge tout localement. Pour intervenir sur un très gros modèle sans l'infrastructure, [[nnsight]] et son exécution distante.
+- **Simple attribution** : hors sujet. [[Captum]] ou [[interpreto]].
+- **Entraîner ou analyser des SAE** : depuis la v2, cette partie a été **sortie** de TransformerLens et déplacée vers [[SAELens]] (`HookedSAETransformer`). Ne pas la chercher ici.
 - **Production** : outil de recherche, coûteux en mémoire (elle conserve les activations).
 - **Architecture exotique non portée** : le portage vers la notation canonique est fait modèle par modèle.
 
@@ -50,15 +50,15 @@ C'est ce qui rend le raisonnement en circuits praticable : on peut enfin poser �
 ## Pièges
 
 - **La v3 a changé l'interface** : `TransformerBridge` est désormais le point d'entrée, `HookedTransformer` est déprécié tout en restant disponible. Beaucoup de tutoriels et notebooks en ligne visent encore l'ancienne API. Épingler la version.
-- **Les SAE ne sont plus ici** : `HookedSAETransformer` a migré vers [[Dev/Services/SAELens|SAELens]] à la v2. Source de confusion fréquente dans la documentation ancienne.
+- **Les SAE ne sont plus ici** : `HookedSAETransformer` a migré vers [[SAELens]] à la v2. Source de confusion fréquente dans la documentation ancienne.
 - **Mémoire** : `run_with_cache` garde tout. Sur un modèle moyen et un batch un peu large, la saturation arrive vite. Ne mettre en cache que les hooks nécessaires.
 - **Les poids sont retraités**, pas ceux de HuggingFace tels quels. C'est l'intérêt (notation canonique) et le risque : les valeurs numériques peuvent différer légèrement. La v3 préserve mieux les poids bruts.
 - **Le piège méthodologique n'est pas dans l'outil** : l'ablation à zéro sort le modèle de sa distribution et fabrique des artefacts. Préférer l'ablation à la moyenne ([[Interprétabilité mécaniste]]).
 
 ## Alternatives
 
-- [[Dev/Services/nnsight|nnsight]] — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
-- [[Dev/Services/SAELens|SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
+- [[nnsight]] — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
+- [[SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 
 ## Liens
 
@@ -66,4 +66,4 @@ C'est ce qui rend le raisonnement en circuits praticable : on peut enfin poser �
 - [[Superposition]] — l'obstacle que l'analyse par composant rencontre.
 - [[Sparse autoencoders]] — le démêlage, désormais confié à SAELens.
 - [[Transformer architectures]] / [[Self-attention]] — l'objet d'étude, et la structure que la notation canonique rend lisible.
-- [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/HuggingFace|HuggingFace]] — le socle requis.
+- [[PyTorch]] / [[HuggingFace]] — le socle requis.

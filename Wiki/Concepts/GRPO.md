@@ -41,7 +41,7 @@ tags: [reinforcement-learning, reasoning, alignment, llm]
 - Exige un **signal de récompense** par réponse : récompense **vérifiable** (maths/code) de préférence, sinon un [[Reward modeling|RM]].
 - Régler la **taille de groupe** $G$ (souvent 8–64) et le budget d'échantillonnage — c'est le poste de coût principal.
 - Idéal pour entraîner le **raisonnement** ; combinable avec [[PEFT]]/LoRA pour le coût.
-- Outils : `TRL` (GRPOTrainer), `verl`, `OpenRLHF` ; échantillonnage via [[Dev/Services/vLLM|vLLM]].
+- Outils : `TRL` (GRPOTrainer), `verl`, `OpenRLHF` ; échantillonnage via [[vLLM]].
 
 ## Approches voisines & alternatives
 

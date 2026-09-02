@@ -34,7 +34,7 @@ tags: [foundation-model, vision-language, self-supervised, representation-learni
 
 ## En pratique
 
-- **CLIP / SigLIP** : recherche multimodale, classification zero-shot, filtrage de datasets, et surtout **encodeur visuel des VLM**. Outillage : OpenCLIP, [[Dev/Services/HuggingFace|HuggingFace]].
+- **CLIP / SigLIP** : recherche multimodale, classification zero-shot, filtrage de datasets, et surtout **encodeur visuel des VLM**. Outillage : OpenCLIP, [[HuggingFace]].
 - **DINOv2/v3** : features denses prêtes à l'emploi (segmentation, profondeur, *retrieval* visuel) **sans annotation** — idéal quand les étiquettes manquent.
 - Piège : un backbone gelé n'est pas magique sur un domaine très éloigné (imagerie médicale, satellite) — un fine-tuning ciblé reste parfois nécessaire.
 

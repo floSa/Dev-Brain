@@ -38,7 +38,7 @@ tags: [attention, transformers, deep-learning]
 ## En pratique
 
 - L'attention seule est **permutation-invariante** : sans [[Positional encoding|encodage de position]], elle ne sait pas l'ordre des tokens. Les deux vont toujours ensemble.
-- Ne jamais réimplémenter le noyau naïf : les frameworks ([[Dev/Services/PyTorch|PyTorch]] `scaled_dot_product_attention`, [[Dev/Services/HuggingFace|HuggingFace]]) appellent un noyau fusionné type [[Flash Attention and efficient attention|FlashAttention]].
+- Ne jamais réimplémenter le noyau naïf : les frameworks ([[PyTorch]] `scaled_dot_product_attention`, [[HuggingFace]]) appellent un noyau fusionné type [[Flash Attention and efficient attention|FlashAttention]].
 - Le KV-cache de l'[[Inference optimization|inférence]] mémorise précisément les Key/Value des tokens passés pour ne pas les recalculer à chaque pas.
 
 ## Approches voisines & alternatives

@@ -41,8 +41,8 @@ tags: [supervised, tree-based, classification, regression]
 - Forte variance : un petit changement de données peut redessiner l'arbre. C'est ce que corrigent les ensembles ([[Random Forest]], [[Gradient Boosting (GBDT)|Gradient Boosting]]).
 - Pas besoin de standardiser ni d'encoder en one-hot (les seuils sont invariants par transformation monotone).
 - L'importance des variables (réduction d'impureté cumulée) est biaisée vers les variables à forte cardinalité — la lire avec prudence.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.tree.DecisionTreeClassifier / DecisionTreeRegressor]].
-- Implémentations d'ensembles d'arbres en pratique : [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/CatBoost|CatBoost]] (boosting), au-dessus de cette même brique.
+- Outils : [[Scikit-Learn|sklearn.tree.DecisionTreeClassifier / DecisionTreeRegressor]].
+- Implémentations d'ensembles d'arbres en pratique : [[XGBoost]], [[LightGBM]], [[CatBoost]] (boosting), au-dessus de cette même brique.
 
 ## Approches voisines & alternatives
 

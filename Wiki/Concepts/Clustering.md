@@ -44,7 +44,7 @@ tags: [clustering, unsupervised]
 - Aucune méthode n'est universelle : forme des clusters, présence de bruit, volume et dimension dictent le choix.
 - En grande dimension, les distances se concentrent (*curse of dimensionality*) — réduire d'abord ([[Réduction de dimension]], [[PCA]]) stabilise le clustering.
 - Le résultat n'a pas de « vérité » : valider par la silhouette, la stabilité (re-runs, ré-échantillons) et surtout l'interprétabilité métier des groupes.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster]] (KMeans, DBSCAN, AgglomerativeClustering, HDBSCAN), `sklearn.mixture` (GaussianMixture), `scipy.cluster.hierarchy`.
+- Outils : [[Scikit-Learn|sklearn.cluster]] (KMeans, DBSCAN, AgglomerativeClustering, HDBSCAN), `sklearn.mixture` (GaussianMixture), `scipy.cluster.hierarchy`.
 
 ## Approches voisines & alternatives
 

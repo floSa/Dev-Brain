@@ -52,5 +52,5 @@ Bibliothèque de **rendu riche dans le terminal**. Un objet `Console` écrit du 
 
 ## Liens
 
-- Utilisé par [[Dev/Services/Typer|Typer]] pour l'aide et les erreurs enrichies.
+- Utilisé par [[Typer]] pour l'aide et les erreurs enrichies.
 - Doc : https://rich.readthedocs.io/

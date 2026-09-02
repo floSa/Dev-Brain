@@ -31,7 +31,7 @@ Parseur **HTML5 ultra-rapide** : binding Python (Cython) vers les moteurs C **Le
 
 - Petit volume, lisibilité avant tout → BeautifulSoup, plus permissif et documenté (hors brain).
 - Besoin de **XPath** riche ou de XSLT → lxml (hors brain).
-- Récupérer les pages (HTTP, anti-bot, JS) : selectolax ne fait que parser — voir [[Dev/Services/curl_cffi|curl_cffi]] ou [[Dev/Services/Playwright|Playwright]] en amont.
+- Récupérer les pages (HTTP, anti-bot, JS) : selectolax ne fait que parser — voir [[curl_cffi]] ou [[Playwright]] en amont.
 
 ## Déploiement & coût
 
@@ -52,6 +52,6 @@ Parseur **HTML5 ultra-rapide** : binding Python (Cython) vers les moteurs C **Le
 ## Liens
 
 - [[Web scraping]] — l'étape parsing du pipeline.
-- [[Dev/Services/curl_cffi|curl_cffi]] · [[Dev/Services/Playwright|Playwright]] — récupèrent les pages que selectolax parse.
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[curl_cffi]] · [[Playwright]] — récupèrent les pages que selectolax parse.
+- [[Comparatif - Scraping]]
 - Doc : https://selectolax.readthedocs.io/

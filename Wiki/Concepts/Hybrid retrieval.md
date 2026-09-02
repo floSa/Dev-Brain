@@ -35,7 +35,7 @@ tags: [retrieval, hybrid-search, semantic-search, search, rag]
 
 ## En pratique
 
-- Beaucoup de moteurs le font nativement : [[Dev/Services/Elasticsearch|Elasticsearch]] / OpenSearch (BM25 + kNN), [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Qdrant|Qdrant]] ; côté framework, [[Dev/Services/Haystack|Haystack]] expose des retrievers hybrides.
+- Beaucoup de moteurs le font nativement : [[Elasticsearch]] / OpenSearch (BM25 + kNN), [[Weaviate]], [[Qdrant]] ; côté framework, [[Haystack]] expose des retrievers hybrides.
 - Récupérer large en hybride, puis resserrer avec [[Reranking]] : combinaison gagnante.
 - Régler la pondération sur **son** corpus ; choisir RRF si l'on ne veut pas calibrer.
 - Piège : croire que le dense suffit — sur entités exactes et requêtes courtes, BM25 reste imbattable.

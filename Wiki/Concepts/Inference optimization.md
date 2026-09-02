@@ -28,8 +28,8 @@ tags: [inference-optimization, inference, llm, gpu]
 - **Static batching** : attendre un lot complet → latence et gaspillage. **Continuous batching** (in-flight) : les requêtes entrent et sortent du lot à chaque pas, ce qui sature le GPU sous charge variable. Gain de débit majeur.
 
 ### Gestion mémoire du cache
-- **PagedAttention** ([[Dev/Services/vLLM|vLLM]]) gère le KV-cache par pages, comme la mémoire virtuelle d'un OS → fin de la fragmentation.
-- **Prefix caching / RadixAttention** ([[Dev/Services/SGLang|SGLang]]) réutilise le cache des préfixes partagés (system prompt, few-shot) entre requêtes.
+- **PagedAttention** ([[vLLM]]) gère le KV-cache par pages, comme la mémoire virtuelle d'un OS → fin de la fragmentation.
+- **Prefix caching / RadixAttention** ([[SGLang]]) réutilise le cache des préfixes partagés (system prompt, few-shot) entre requêtes.
 
 ### Réduire le calcul lui-même
 - **Quantization** des poids et du cache (FP8, INT8/4) ; **Flash Attention** (attention fusionnée, économe en mémoire) ; **décodage spéculatif** pour produire plusieurs tokens par passe.
@@ -41,7 +41,7 @@ tags: [inference-optimization, inference, llm, gpu]
 
 ## En pratique
 
-- Ne pas réimplémenter : utiliser un runtime qui intègre déjà ces optimisations — [[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]], [[Dev/Services/TGI|TGI]].
+- Ne pas réimplémenter : utiliser un runtime qui intègre déjà ces optimisations — [[vLLM]], [[SGLang]], [[TGI]].
 - Mesurer les **deux** métriques : *time-to-first-token* (dominé par le prefill) et débit / *inter-token latency* (dominé par le decode).
 - Activer le **prefix caching** quand un long system prompt est partagé entre requêtes (gros gain à peu de frais).
 - Surveiller la VRAM : le KV-cache, pas les poids, est souvent ce qui plafonne la concurrence atteignable.
@@ -57,7 +57,7 @@ tags: [inference-optimization, inference, llm, gpu]
 - [[Multi-head Latent Attention]] — compresse le KV-cache par projection latente de rang faible, là où MQA/GQA le compressent en partageant les têtes.
 - [[Architectures hybrides LLM]] — attaque le même goulot à l'**architecture** : la majorité des couches ne portent plus de cache croissant.
 - [[Calculs adaptatifs]] — moduler la profondeur traversée selon la difficulté ; prometteur mais peu déployé (variance de latence).
-- Runtimes qui implémentent tout ceci : [[Dev/Services/vLLM|vLLM]] (PagedAttention), [[Dev/Services/SGLang|SGLang]] (RadixAttention), [[Dev/Services/TGI|TGI]] (continuous batching), [[Dev/Services/TensorRT-LLM|TensorRT-LLM]].
+- Runtimes qui implémentent tout ceci : [[vLLM]] (PagedAttention), [[SGLang]] (RadixAttention), [[TGI]] (continuous batching), [[TensorRT-LLM]].
 
 ## Pour aller plus loin
 

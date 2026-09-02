@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: open-core
 os: "Windows, macOS, Linux"
 langage: Java
-alternatives: ["[[Dev/Outils/DataGrip|DataGrip]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]", "[[Dev/Outils/pgAdmin|pgAdmin]]", "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]", "[[Dev/Outils/MongoDB Compass|MongoDB Compass]]", "[[Dev/Outils/Redis Insight|Redis Insight]]"]
+alternatives: ["[[DataGrip]]", "[[HeidiSQL]]", "[[pgAdmin]]", "[[MySQL Workbench]]", "[[MongoDB Compass]]", "[[Redis Insight]]"]
 complements: []
 tags: [db-client, relational, nosql]
 url_docs: https://dbeaver.com/docs/dbeaver/
@@ -30,9 +30,9 @@ Client de base de données **universel** : un même outil pour la majorité des 
 
 ## Quand NE PAS l'utiliser
 
-- Complétion SQL et refactoring de niveau IDE → [[Dev/Outils/DataGrip|DataGrip]].
-- Un seul moteur, console officielle pleinement intégrée → [[Dev/Outils/pgAdmin|pgAdmin]] (Postgres), [[Dev/Outils/MySQL Workbench|MySQL Workbench]] (MySQL).
-- Très léger et rapide sous Windows uniquement → [[Dev/Outils/HeidiSQL|HeidiSQL]].
+- Complétion SQL et refactoring de niveau IDE → [[DataGrip]].
+- Un seul moteur, console officielle pleinement intégrée → [[pgAdmin]] (Postgres), [[MySQL Workbench]] (MySQL).
+- Très léger et rapide sous Windows uniquement → [[HeidiSQL]].
 
 ## Bases & plateformes
 
@@ -46,15 +46,15 @@ Client de base de données **universel** : un même outil pour la majorité des 
 
 ## Alternatives
 
-- [[Dev/Outils/DataGrip|DataGrip]] — IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
-- [[Dev/Outils/HeidiSQL|HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
-- [[Dev/Outils/pgAdmin|pgAdmin]] — Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.
-- [[Dev/Outils/MySQL Workbench|MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
-- [[Dev/Outils/MongoDB Compass|MongoDB Compass]] — Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.
-- [[Dev/Outils/Redis Insight|Redis Insight]] — Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).
+- [[DataGrip]] — IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
+- [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
+- [[pgAdmin]] — Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.
+- [[MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
+- [[MongoDB Compass]] — Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.
+- [[Redis Insight]] — Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://dbeaver.com/docs/dbeaver/

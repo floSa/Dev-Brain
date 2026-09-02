@@ -62,7 +62,7 @@ tags: [regression, supervised, linear-model, non-parametric]
 - **Ne pas confondre robustesse et exactitude** : la médiane est robuste, mais si la vraie question métier est un total attendu (chiffre d'affaires cumulé), c'est la **moyenne** qu'il faut — la médiane ne s'additionne pas.
 - Coût : $k$ quantiles = $k$ modèles à entraîner. Et la programmation linéaire passe moins bien à l'échelle que les moindres carrés.
 - Évaluer avec la **perte pinball elle-même** (`mean_pinball_loss`), pas avec le RMSE — qui mesurerait une moyenne qu'on n'a jamais cherché à prédire ([[Regression metrics]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.linear_model.QuantileRegressor]] et `mean_pinball_loss` ; [[Dev/Services/LightGBM|LightGBM]] (`objective='quantile'`) ; [[Dev/Services/statsmodels|statsmodels]] (`QuantReg`, avec l'inférence et les tests).
+- Outils : [[Scikit-Learn|sklearn.linear_model.QuantileRegressor]] et `mean_pinball_loss` ; [[LightGBM]] (`objective='quantile'`) ; [[statsmodels]] (`QuantReg`, avec l'inférence et les tests).
 
 ## Approches voisines & alternatives
 

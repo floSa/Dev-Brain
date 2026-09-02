@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows (Linux/macOS via Wine)"
 langage: Delphi
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/DataGrip|DataGrip]]", "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]"]
+alternatives: ["[[DBeaver]]", "[[DataGrip]]", "[[MySQL Workbench]]"]
 complements: []
 tags: [db-client, relational]
 url_docs: https://www.heidisql.com/help.php
@@ -30,9 +30,9 @@ Client SQL **léger et rapide** pour Windows, gratuit sous GPL. Historiquement o
 
 ## Quand NE PAS l'utiliser
 
-- Couverture de moteurs très large (Oracle, NoSQL…) → [[Dev/Outils/DBeaver|DBeaver]].
-- Complétion et refactoring SQL de niveau IDE → [[Dev/Outils/DataGrip|DataGrip]].
-- Modélisation et administration MySQL avancées → [[Dev/Outils/MySQL Workbench|MySQL Workbench]].
+- Couverture de moteurs très large (Oracle, NoSQL…) → [[DBeaver]].
+- Complétion et refactoring SQL de niveau IDE → [[DataGrip]].
+- Modélisation et administration MySQL avancées → [[MySQL Workbench]].
 
 ## Bases & plateformes
 
@@ -46,12 +46,12 @@ Client SQL **léger et rapide** pour Windows, gratuit sous GPL. Historiquement o
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
-- [[Dev/Outils/DataGrip|DataGrip]] — IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
-- [[Dev/Outils/MySQL Workbench|MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[DataGrip]] — IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
+- [[MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://www.heidisql.com/help.php

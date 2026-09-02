@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/DeepEval|DeepEval]]", "[[Dev/Services/TruLens|TruLens]]", "[[Dev/Services/promptfoo|promptfoo]]"]
+alternatives: ["[[DeepEval]]", "[[TruLens]]", "[[promptfoo]]"]
 complements: []
 tags: [llm, llm-eval, rag-eval, rag]
 url_docs: https://docs.ragas.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/explodinggradients/ragas
 
 ## Pourquoi
 
-Framework Python d'**évaluation** de systèmes RAG et, plus largement, d'applications LLM (Apache-2.0, projet explodinggradients). Sa marque de fabrique : des **métriques sans référence** (reference-free) calculées par **LLM-as-judge** — *faithfulness* (la réponse est-elle fidèle au contexte récupéré ?), *context precision/recall* (le retrieval a-t-il ramené le bon contexte ?), *answer relevancy* — qui permettent de noter un pipeline sans jeu de réponses « vérité terrain » écrit à la main. Il génère aussi des **jeux de tests synthétiques** (questions + contextes) depuis les documents, et s'intègre aux frameworks d'app ([[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]]). C'est la référence open-source de l'éval RAG (papier EACL 2024).
+Framework Python d'**évaluation** de systèmes RAG et, plus largement, d'applications LLM (Apache-2.0, projet explodinggradients). Sa marque de fabrique : des **métriques sans référence** (reference-free) calculées par **LLM-as-judge** — *faithfulness* (la réponse est-elle fidèle au contexte récupéré ?), *context precision/recall* (le retrieval a-t-il ramené le bon contexte ?), *answer relevancy* — qui permettent de noter un pipeline sans jeu de réponses « vérité terrain » écrit à la main. Il génère aussi des **jeux de tests synthétiques** (questions + contextes) depuis les documents, et s'intègre aux frameworks d'app ([[LangChain]], [[LlamaIndex]]). C'est la référence open-source de l'éval RAG (papier EACL 2024).
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Framework Python d'**évaluation** de systèmes RAG et, plus largement, d'applic
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'un **harnais de tests** large (assertions pytest, métriques agents/sécurité, CI) → [[Dev/Services/DeepEval|DeepEval]].
-- Besoin de **tracer et noter en continu** une app instrumentée, au-delà du RAG → [[Dev/Services/TruLens|TruLens]].
-- Besoin d'**observabilité de production** (dashboards, traces, coûts) et pas seulement de scores offline → [[Dev/Services/Langfuse|Langfuse]], [[Dev/Services/Phoenix Arize|Phoenix Arize]].
+- Besoin d'un **harnais de tests** large (assertions pytest, métriques agents/sécurité, CI) → [[DeepEval]].
+- Besoin de **tracer et noter en continu** une app instrumentée, au-delà du RAG → [[TruLens]].
+- Besoin d'**observabilité de production** (dashboards, traces, coûts) et pas seulement de scores offline → [[Langfuse]], [[Phoenix Arize]].
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Framework Python d'**évaluation** de systèmes RAG et, plus largement, d'applic
 
 ## Alternatives
 
-- [[Dev/Services/DeepEval|DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
-- [[Dev/Services/TruLens|TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
-- [[Dev/Services/promptfoo|promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
+- [[DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
+- [[TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
+- [[promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 
 ## Liens
 
-- Peut alimenter les plateformes [[Dev/Services/Langfuse|Langfuse]] / [[Dev/Services/Phoenix Arize|Phoenix Arize]] (scores Ragas rattachés aux traces).
-- Évalue des pipelines bâtis avec [[Dev/Services/LangChain|LangChain]] / [[Dev/Services/LlamaIndex|LlamaIndex]].
+- Peut alimenter les plateformes [[Langfuse]] / [[Phoenix Arize]] (scores Ragas rattachés aux traces).
+- Évalue des pipelines bâtis avec [[LangChain]] / [[LlamaIndex]].
 - Concepts : [[RAG eval]], [[LLM eval metrics]], [[LLM-as-judge]] (métriques reference-free).
 - [[Comparatif - Évaluation LLM]] — comparatif de la catégorie
 - Doc : https://docs.ragas.io/

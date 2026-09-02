@@ -42,9 +42,9 @@ tags: [attention, inference-optimization, gpu, transformers]
 
 ## En pratique
 
-- FlashAttention est **activé par défaut** dans [[Dev/Services/PyTorch|PyTorch]] (`scaled_dot_product_attention`) et les runtimes de serving — surtout ne pas réécrire le noyau d'attention soi-même.
+- FlashAttention est **activé par défaut** dans [[PyTorch]] (`scaled_dot_product_attention`) et les runtimes de serving — surtout ne pas réécrire le noyau d'attention soi-même.
 - GQA se choisit à l'**architecture** du modèle ; pour un modèle existant, c'est déjà fixé. La fenêtre glissante demande de vérifier l'impact sur les dépendances longue portée de la tâche.
-- Ces techniques sont au cœur des runtimes : [[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]], [[Dev/Services/TGI|TGI]] — cf. [[Inference optimization]].
+- Ces techniques sont au cœur des runtimes : [[vLLM]], [[SGLang]], [[TGI]] — cf. [[Inference optimization]].
 
 ## Approches voisines & alternatives
 

@@ -38,7 +38,7 @@ tags: [learning-theory, generalization-bound]
 - Les bornes classiques (VC) sont **vacuous** pour les réseaux profonds (capacité immense, pourtant bonne généralisation) → recherche active : bornes PAC-Bayes, à marge, fondées sur les normes.
 - En pratique on **mesure** le gap au lieu de le borner : écart train/test via [[Validation croisée]], courbes d'apprentissage.
 - Valeur opérationnelle : justifie la [[Régularisation]] et l'[[Optimisation d'hyperparamètres]] (choisir la capacité qui minimise la borne empirique = le creux de la courbe en U).
-- Outils : courbes d'apprentissage via [[Dev/Services/Scikit-Learn|sklearn.model_selection.learning_curve]].
+- Outils : courbes d'apprentissage via [[Scikit-Learn|sklearn.model_selection.learning_curve]].
 
 ## Approches voisines & alternatives
 

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/pandas|pandas]]", "[[Dev/Services/Polars|Polars]]", "[[Dev/Services/numpy|numpy]]", "[[Dev/Services/Modin|Modin]]", "[[Dev/Services/Spark|Spark]]", "[[Dev/Services/Ray|Ray]]"]
+alternatives: ["[[pandas]]", "[[Polars]]", "[[numpy]]", "[[Modin]]", "[[Spark]]", "[[Ray]]"]
 complements: []
 tags: [distributed, parallel, out-of-core, lazy-evaluation]
 url_docs: https://docs.dask.org/
@@ -19,7 +19,7 @@ url_repo: https://github.com/dask/dask
 
 ## Pourquoi
 
-Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages : des **collections** qui imitent les API connues — `dask.array` (≈ [[Dev/Services/numpy|numpy]]), `dask.dataframe` (≈ [[Dev/Services/pandas|pandas]]), `dask.bag` — et un **planificateur de tâches**. Les opérations sont **paresseuses** : elles construisent un graphe de tâches, optimisé puis exécuté (`.compute()`) en parallèle, sur les cœurs d'une machine ou sur un **cluster** via `dask.distributed`. Permet de traiter des données **plus grosses que la RAM** (par morceaux) et de scaler des bibliothèques familières sans tout réécrire.
+Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages : des **collections** qui imitent les API connues — `dask.array` (≈ [[numpy]]), `dask.dataframe` (≈ [[pandas]]), `dask.bag` — et un **planificateur de tâches**. Les opérations sont **paresseuses** : elles construisent un graphe de tâches, optimisé puis exécuté (`.compute()`) en parallèle, sur les cœurs d'une machine ou sur un **cluster** via `dask.distributed`. Permet de traiter des données **plus grosses que la RAM** (par morceaux) et de scaler des bibliothèques familières sans tout réécrire.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages
 
 ## Quand NE PAS l'utiliser
 
-- Données qui tiennent en mémoire sur un nœud → [[Dev/Services/pandas|pandas]] ou [[Dev/Services/Polars|Polars]] (plus simples, souvent plus rapides à cette échelle).
-- Besoin de vitesse single-node sans cluster → [[Dev/Services/Polars|Polars]] (multi-thread + streaming).
-- Garder l'API pandas sans gérer un graphe / cluster → [[Dev/Services/Modin|Modin]] (drop-in, peut d'ailleurs tourner sur Dask).
-- Calcul array N-dim qui tient en RAM → [[Dev/Services/numpy|numpy]] seul.
+- Données qui tiennent en mémoire sur un nœud → [[pandas]] ou [[Polars]] (plus simples, souvent plus rapides à cette échelle).
+- Besoin de vitesse single-node sans cluster → [[Polars]] (multi-thread + streaming).
+- Garder l'API pandas sans gérer un graphe / cluster → [[Modin]] (drop-in, peut d'ailleurs tourner sur Dask).
+- Calcul array N-dim qui tient en RAM → [[numpy]] seul.
 
 ## Déploiement & coût
 
@@ -50,17 +50,17 @@ Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages
 
 ## Alternatives
 
-- [[Dev/Services/pandas|pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
-- [[Dev/Services/Polars|Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
-- [[Dev/Services/numpy|numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
-- [[Dev/Services/Modin|Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
-- [[Dev/Services/Spark|Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
-- [[Dev/Services/Ray|Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
+- [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
+- [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
+- [[numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
+- [[Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
+- [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
+- [[Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 
 ## Liens
 
-- APIs scalées : [[Dev/Services/pandas|pandas]] (`dask.dataframe`) et [[Dev/Services/numpy|numpy]] (`dask.array`).
-- Peut servir de moteur d'exécution à [[Dev/Services/Modin|Modin]].
-- Autres moteurs de calcul distribué : [[Dev/Services/Spark|Spark]] (big data JVM), [[Dev/Services/Ray|Ray]] (Python ML).
+- APIs scalées : [[pandas]] (`dask.dataframe`) et [[numpy]] (`dask.array`).
+- Peut servir de moteur d'exécution à [[Modin]].
+- Autres moteurs de calcul distribué : [[Spark]] (big data JVM), [[Ray]] (Python ML).
 - [[Comparatif - Calcul distribué]] — comparatif de la catégorie
 - Doc : https://docs.dask.org/

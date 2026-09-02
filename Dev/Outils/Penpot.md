@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web (self-host Docker)"
 langage: Clojure, JavaScript
-alternatives: ["[[Dev/Outils/Figma|Figma]]"]
+alternatives: ["[[Figma]]"]
 complements: []
 tags: [design-tool]
 url_docs: https://help.penpot.app/
@@ -30,9 +30,9 @@ Plateforme open-source de **design d'interface et de prototypage** collaboratif 
 
 ## Quand NE PAS l'utiliser
 
-- Équipe déjà outillée Figma sans contrainte de souveraineté : l'écosystème et la maturité de [[Dev/Outils/Figma|Figma]] restent devant.
-- Schéma technique plutôt qu'interface → [[Dev/Outils/draw.io|draw.io]] / [[Dev/Outils/Mermaid|Mermaid]].
-- Croquis conceptuel rapide → [[Dev/Outils/Excalidraw|Excalidraw]].
+- Équipe déjà outillée Figma sans contrainte de souveraineté : l'écosystème et la maturité de [[Figma]] restent devant.
+- Schéma technique plutôt qu'interface → [[draw.io]] / [[Mermaid]].
+- Croquis conceptuel rapide → [[Excalidraw]].
 
 ## Bases & plateformes
 
@@ -48,9 +48,9 @@ Plateforme open-source de **design d'interface et de prototypage** collaboratif 
 
 ## Alternatives
 
-- [[Dev/Outils/Figma|Figma]] — Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.
+- [[Figma]] — Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Design & prototypage|Comparatif - Design & prototypage]]
+- [[Comparatif - Design & prototypage]]
 - Docs : https://help.penpot.app/ · Repo : https://github.com/penpot/penpot

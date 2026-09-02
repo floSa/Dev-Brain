@@ -30,9 +30,9 @@ Tokeniseur **sous-mot** de Google, conçu pour être **indépendant de la langue
 
 ## Quand NE PAS l'utiliser
 
-- On consomme déjà un modèle [[Dev/Services/HuggingFace|HuggingFace]] : passer par `AutoTokenizer` (qui charge SentencePiece ou le tokeniseur Rust `tokenizers` à sa place) plutôt que d'appeler SentencePiece directement.
+- On consomme déjà un modèle [[HuggingFace]] : passer par `AutoTokenizer` (qui charge SentencePiece ou le tokeniseur Rust `tokenizers` à sa place) plutôt que d'appeler SentencePiece directement.
 - Compter les tokens d'une API propriétaire (OpenAI…) → utiliser **tiktoken**, pas SentencePiece.
-- Tokenisation linguistique (lemmes, POS, phrases) plutôt que sous-mots pour un modèle → [[Dev/Services/spaCy|spaCy]], [[Dev/Services/NLTK|NLTK]].
+- Tokenisation linguistique (lemmes, POS, phrases) plutôt que sous-mots pour un modèle → [[spaCy]], [[NLTK]].
 
 ## Déploiement & coût
 
@@ -54,6 +54,6 @@ Pas de fiche concurrente directe dans le brain. Substituts usuels hors brain : `
 ## Liens
 
 - [[Tokenization]] — le concept (BPE, WordPiece, Unigram, byte-level) que SentencePiece implémente.
-- [[Dev/Services/HuggingFace|HuggingFace]] — `AutoTokenizer` charge un modèle SentencePiece de façon transparente.
-- [[Dev/Services/spaCy|spaCy]] · [[Dev/Services/NLTK|NLTK]] — tokenisation linguistique (autre besoin).
+- [[HuggingFace]] — `AutoTokenizer` charge un modèle SentencePiece de façon transparente.
+- [[spaCy]] · [[NLTK]] — tokenisation linguistique (autre besoin).
 - Doc : https://github.com/google/sentencepiece/blob/master/README.md

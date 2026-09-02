@@ -36,7 +36,7 @@ Un skill n'ajoute donc pas de capacité brute : il ajoute du **jugement** sur de
 
 ### Skills auto-créés
 
-Certains agents écrivent leurs propres skills après avoir résolu une tâche complexe, puis les raffinent à la réutilisation — c'est le principe de la boucle d'apprentissage de [[Dev/Services/Hermes Agent|Hermes Agent]]. L'agent transforme une réussite ponctuelle en procédure rejouable.
+Certains agents écrivent leurs propres skills après avoir résolu une tâche complexe, puis les raffinent à la réutilisation — c'est le principe de la boucle d'apprentissage de [[Hermes Agent]]. L'agent transforme une réussite ponctuelle en procédure rejouable.
 
 Le gain est réel, le risque aussi : un skill erroné se **rejoue indéfiniment** et se propage aux tâches suivantes. Une procédure auto-générée mérite la même relecture qu'un commit.
 
@@ -46,7 +46,7 @@ Le gain est réel, le risque aussi : un skill erroné se **rejoue indéfiniment*
 - **Un skill = une procédure.** Un skill fourre-tout ne se déclenche jamais au bon moment.
 - Sortir le volumineux du corps principal (`references/`, `templates/`, scripts) et n'y laisser que la marche à suivre — même logique de budget de contexte que le chargement conditionnel.
 - **Versionner les skills comme du code** : ce sont des instructions exécutées par une machine, avec les mêmes effets de bord.
-- Pièges : skills tiers non audités (vecteur d'exfiltration documenté sur [[Dev/Services/OpenClaw|OpenClaw]]) ; descriptions qui se recouvrent et rendent le déclenchement aléatoire ; procédures figées qui survivent au changement d'API qu'elles décrivent.
+- Pièges : skills tiers non audités (vecteur d'exfiltration documenté sur [[OpenClaw]]) ; descriptions qui se recouvrent et rendent le déclenchement aléatoire ; procédures figées qui survivent au changement d'API qu'elles décrivent.
 
 ## Approches voisines & alternatives
 
@@ -56,10 +56,10 @@ Le gain est réel, le risque aussi : un skill erroné se **rejoue indéfiniment*
 - [[Context engineering]] — le chargement conditionnel est une technique de gestion du budget de contexte.
 - [[Agent patterns]] — les patrons d'organisation de la boucle, dans laquelle les skills s'insèrent.
 - Alternative : **tout mettre dans le prompt système** — simple et prévisible, mais le contexte sature dès que les procédures se multiplient.
-- Skills fichés : [[Dev/Outils/Archify|Archify]] (génération de diagrammes), [[Dev/Outils/i-have-adhd|i-have-adhd]] (discipline de sortie), [[Dev/Outils/BMAD|BMAD]] (jeu d'agents et de workflows pour le cycle de développement).
+- Skills fichés : [[Archify]] (génération de diagrammes), [[i-have-adhd]] (discipline de sortie), [[BMAD]] (jeu d'agents et de workflows pour le cycle de développement).
 
 ## Pour aller plus loin
 
 - Anthropic (2025) — *Agent Skills* : format `SKILL.md` (frontmatter `name` + `description`, chargement progressif).
-- Implémentations : [[Dev/Services/OpenClaw|OpenClaw]] (skills communautaires, en cours de remplacement par MCP), [[Dev/Services/Hermes Agent|Hermes Agent]] (skills auto-créés et raffinés).
+- Implémentations : [[OpenClaw]] (skills communautaires, en cours de remplacement par MCP), [[Hermes Agent]] (skills auto-créés et raffinés).
 - Liés : [[Agent evaluation]] — mesurer si un skill se déclenche et améliore réellement le résultat.

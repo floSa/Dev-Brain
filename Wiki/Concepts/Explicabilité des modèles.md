@@ -17,7 +17,7 @@ tags: [explainability, supervised]
 ## Concepts clés
 
 ### Local vs global
-- **Local** : expliquer **une** prédiction (pourquoi ce client est refusé). [[Dev/Services/SHAP|SHAP]], [[Dev/Services/LIME|LIME]].
+- **Local** : expliquer **une** prédiction (pourquoi ce client est refusé). [[SHAP]], [[LIME]].
 - **Global** : importance moyenne des variables sur tout le jeu. Permutation importance, MDI, agrégation des valeurs SHAP.
 
 ### Importance par permutation
@@ -32,10 +32,10 @@ tags: [explainability, supervised]
 - Vise **toutes les variables pertinentes** (et non le sous-ensemble minimal) : c'est le pont entre importance et [[Sélection de variables]].
 
 ### Attribution additive — Shapley
-- Idée de théorie des jeux : répartir « équitablement » la prédiction entre les variables. [[Dev/Services/SHAP|SHAP]] en donne une version **cohérente** (les contributions somment à la prédiction).
+- Idée de théorie des jeux : répartir « équitablement » la prédiction entre les variables. [[SHAP]] en donne une version **cohérente** (les contributions somment à la prédiction).
 
 ### Surrogate local
-- [[Dev/Services/LIME|LIME]] approxime localement la boîte noire par un **modèle simple** (linéaire) ajusté sur des perturbations autour du point.
+- [[LIME]] approxime localement la boîte noire par un **modèle simple** (linéaire) ajusté sur des perturbations autour du point.
 
 ## Les maths, simplement
 
@@ -44,8 +44,8 @@ tags: [explainability, supervised]
 
 ## En pratique
 
-- Modèles à arbres ([[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]]) → **TreeSHAP** exact et rapide ([[Dev/Services/SHAP|SHAP]]) plutôt que MDI biaisée.
-- Boîte noire quelconque, explication d'un cas → [[Dev/Services/LIME|LIME]] ou KernelSHAP (plus lent).
+- Modèles à arbres ([[XGBoost]], [[LightGBM]]) → **TreeSHAP** exact et rapide ([[SHAP]]) plutôt que MDI biaisée.
+- Boîte noire quelconque, explication d'un cas → [[LIME]] ou KernelSHAP (plus lent).
 - Importance **globale** robuste → permutation importance sur le jeu de validation (jamais le train).
 - **Sélectionner** des variables à partir de ces importances (permutation, MDI, **Boruta**) → cf. [[Sélection de variables]].
 - **Expliquer n'est pas expliquer causalement** : SHAP/LIME décrivent le modèle, pas le monde. La causalité relève d'un autre cadre (cf. [[Diff-in-Diff]]).
@@ -53,12 +53,12 @@ tags: [explainability, supervised]
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/SHAP|SHAP]], [[Dev/Services/LIME|LIME]] — les deux bibliothèques post-hoc de référence.
-- [[Dev/Services/interpreto|interpreto]] — le versant modèles de langage : attributions **et** méthodes à base de concepts (probes, dictionnaires appris), avec des métriques pour évaluer les explications elles-mêmes.
+- [[SHAP]], [[LIME]] — les deux bibliothèques post-hoc de référence.
+- [[interpreto]] — le versant modèles de langage : attributions **et** méthodes à base de concepts (probes, dictionnaires appris), avec des métriques pour évaluer les explications elles-mêmes.
 - [[Attribution par gradient]] — le versant réseaux de la même question : exploiter la dérivabilité (Integrated Gradients, SmoothGrad) plutôt que perturber des milliers de fois.
 - [[Probing]] — ce que le modèle **encode** dans ses couches, plutôt que ce qui a pesé sur une prédiction.
 - [[Interprétabilité mécaniste]] — l'ambition supérieure : rétro-concevoir le **mécanisme** appris, et l'établir causalement par intervention. Cette page-ci décrit un comportement ; celle-là cherche un algorithme.
-- [[Dev/Services/Captum|Captum]] — la référence PyTorch pour les attributions par gradient.
+- [[Captum]] — la référence PyTorch pour les attributions par gradient.
 - [[Sélection de variables]] — les scores d'importance (permutation, MDI, **Boruta**) servent directement de critère de sélection.
 - [[Ingénierie des caractéristiques]] — l'importance de variables guide la **sélection** de features.
 - [[GAM]], [[GLM]] — modèles interprétables par construction, sans explication post-hoc.

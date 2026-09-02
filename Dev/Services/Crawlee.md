@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[Dev/Services/Scrapy|Scrapy]]", "[[Dev/Services/Scrapling|Scrapling]]", "[[Dev/Services/Playwright|Playwright]]"]
+alternatives: ["[[Scrapy]]", "[[Scrapling]]", "[[Playwright]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://crawlee.dev/
@@ -19,7 +19,7 @@ url_repo: https://github.com/apify/crawlee
 
 ## Pourquoi
 
-Framework de crawling d'**Apify**, à **API unifiée** entre crawlers HTTP (Cheerio, BeautifulSoup, Parsel) et crawlers **navigateur** ([[Dev/Services/Playwright|Playwright]], Puppeteer) : on change de moteur sans réécrire la logique. Batteries incluses pour le scraping fiable : **rotation de proxys**, **anti-fingerprint** de navigateur, **autoscaling** selon les ressources, file d'URLs **persistante** (reprise après crash), retries et stockage de datasets. Historiquement Node.js/TypeScript ; le port **Python** (`crawlee-python`) est stable depuis la v1.0 (septembre 2025). Positionné explicitement pour l'extraction de données destinée aux LLM / RAG.
+Framework de crawling d'**Apify**, à **API unifiée** entre crawlers HTTP (Cheerio, BeautifulSoup, Parsel) et crawlers **navigateur** ([[Playwright]], Puppeteer) : on change de moteur sans réécrire la logique. Batteries incluses pour le scraping fiable : **rotation de proxys**, **anti-fingerprint** de navigateur, **autoscaling** selon les ressources, file d'URLs **persistante** (reprise après crash), retries et stockage de datasets. Historiquement Node.js/TypeScript ; le port **Python** (`crawlee-python`) est stable depuis la v1.0 (septembre 2025). Positionné explicitement pour l'extraction de données destinée aux LLM / RAG.
 
 ## Quand l'utiliser
 
@@ -29,9 +29,9 @@ Framework de crawling d'**Apify**, à **API unifiée** entre crawlers HTTP (Chee
 
 ## Quand NE PAS l'utiliser
 
-- Stack **Python** historique et matûre de préférence → [[Dev/Services/Scrapy|Scrapy]].
-- Simple pilotage d'un navigateur pour quelques pages JS → [[Dev/Services/Playwright|Playwright]] seul suffit.
-- Résilience des sélecteurs aux changements de page → [[Dev/Services/Scrapling|Scrapling]].
+- Stack **Python** historique et matûre de préférence → [[Scrapy]].
+- Simple pilotage d'un navigateur pour quelques pages JS → [[Playwright]] seul suffit.
+- Résilience des sélecteurs aux changements de page → [[Scrapling]].
 
 ## Déploiement & coût
 
@@ -47,12 +47,12 @@ Framework de crawling d'**Apify**, à **API unifiée** entre crawlers HTTP (Chee
 
 ## Alternatives
 
-- [[Dev/Services/Scrapy|Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
-- [[Dev/Services/Scrapling|Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
-- [[Dev/Services/Playwright|Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
+- [[Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
+- [[Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
+- [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
 ## Liens
 
 - [[Web scraping]] — le concept (HTTP vs navigateur, anti-bot).
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[Comparatif - Scraping]]
 - Doc : https://crawlee.dev/

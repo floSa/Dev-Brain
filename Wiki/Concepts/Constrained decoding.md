@@ -12,7 +12,7 @@ tags: [decoding, structured-output, tokenization]
 ## Aperçu
 
 - Forcer un LLM à ne produire **que** des sorties valides vis-à-vis d'une **grammaire formelle** (JSON Schema, regex, grammaire hors-contexte) en **masquant, à chaque pas de décodage, les tokens qui la violeraient** → validité **garantie par construction**, sans parsing fragile.
-- C'est le mécanisme **le plus fort** des trois pour obtenir des [[Structured outputs|sorties structurées]] — à distinguer du *prompt + validation + retry* ([[Dev/Services/Instructor|Instructor]]) et du *JSON mode* natif des fournisseurs.
+- C'est le mécanisme **le plus fort** des trois pour obtenir des [[Structured outputs|sorties structurées]] — à distinguer du *prompt + validation + retry* ([[Instructor]]) et du *JSON mode* natif des fournisseurs.
 
 ## Concepts clés
 
@@ -20,7 +20,7 @@ tags: [decoding, structured-output, tokenization]
 - À chaque pas, on **intersecte** le vocabulaire avec l'ensemble des tokens autorisés par l'**état courant** de la grammaire ; les tokens interdits reçoivent une probabilité nulle, le reste est **renormalisé**, puis on échantillonne comme d'habitude (cf. [[Decoding strategies]]).
 
 ### Compiler la contrainte en automate
-- **JSON Schema / regex → automate fini (FSM)** : approche [[Dev/Services/Outlines|Outlines]] (schéma → regex → FSM), index précompilé puis **mis en cache** — à l'exécution, le masque par état est une simple lecture.
+- **JSON Schema / regex → automate fini (FSM)** : approche [[Outlines]] (schéma → regex → FSM), index précompilé puis **mis en cache** — à l'exécution, le masque par état est une simple lecture.
 - **Grammaire hors-contexte (CFG) → automate à pile** (*pushdown*) : nécessaire pour les structures **imbriquées / équilibrées** (parenthésage, JSON arbitraire).
 
 ### Tokenisation vs grammaire
@@ -37,17 +37,17 @@ tags: [decoding, structured-output, tokenization]
 
 ## En pratique
 
-- **Garantir la forme ≠ garantir le sens** : un JSON valide peut être absurde — valider la sémantique en aval ([[Dev/Services/Pydantic|Pydantic]]).
+- **Garantir la forme ≠ garantir le sens** : un JSON valide peut être absurde — valider la sémantique en aval ([[Pydantic]]).
 - Contraindre **biaise la distribution** (on masque des tokens que le modèle « voulait » émettre) : un schéma trop serré **dégrade la qualité** du contenu — descriptions de champs claires, ne pas sur-contraindre.
-- Préférer le décodage contraint au *parsing + retry* **quand on contrôle le modèle** ([[Dev/Services/Outlines|Outlines]], [[Dev/Services/Guidance|Guidance]]) ; sur **API fermée**, se rabattre sur le JSON mode ou [[Dev/Services/Instructor|Instructor]].
+- Préférer le décodage contraint au *parsing + retry* **quand on contrôle le modèle** ([[Outlines]], [[Guidance]]) ; sur **API fermée**, se rabattre sur le JSON mode ou [[Instructor]].
 - La **compilation** de l'automate (schéma → FSM) est coûteuse une fois : **réutiliser / cacher** l'index entre requêtes de même schéma.
 
 ## Approches voisines & alternatives
 
 - [[Structured outputs]] — le **patron applicatif** ; le décodage contraint en est la réalisation la plus garantie.
 - [[Decoding strategies]] — la **famille mère** ; ici on restreint l'espace de tokens à chaque pas plutôt que de seulement le réchauffer/échantillonner.
-- [[Dev/Services/Outlines|Outlines]] et [[Dev/Services/Guidance|Guidance]] — bibliothèques de référence. XGrammar, llguidance, LM Format Enforcer et les grammaires GBNF de llama.cpp jouent le même rôle *(pages à créer)*.
-- [[Dev/Services/Instructor|Instructor]] — alternative **non contrainte** : prompt + validation + re-tentative, côté client, tout fournisseur — plus souple, mais **sans garantie** par construction.
+- [[Outlines]] et [[Guidance]] — bibliothèques de référence. XGrammar, llguidance, LM Format Enforcer et les grammaires GBNF de llama.cpp jouent le même rôle *(pages à créer)*.
+- [[Instructor]] — alternative **non contrainte** : prompt + validation + re-tentative, côté client, tout fournisseur — plus souple, mais **sans garantie** par construction.
 
 ## Pour aller plus loin
 

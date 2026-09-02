@@ -8,7 +8,7 @@ famille: extension
 licence_type: open-source
 maturite: production
 langage: C
-alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
+alternatives: ["[[Weaviate]]", "[[Qdrant]]", "[[Milvus]]", "[[Pinecone]]"]
 complements: []
 tags: [vector-db, rag, postgres]
 url_docs: https://github.com/pgvector/pgvector#readme
@@ -30,8 +30,8 @@ Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité
 
 ## Quand NE PAS l'utiliser
 
-- Très grande échelle ou très haut débit → [[Dev/Services/Qdrant|Qdrant]].
-- Recherche hybride avancée clé en main → [[Dev/Services/Weaviate|Weaviate]].
+- Très grande échelle ou très haut débit → [[Qdrant]].
+- Recherche hybride avancée clé en main → [[Weaviate]].
 - Aucun Postgres dans le projet : en installer un juste pour ça est rarement gagnant.
 
 ## Déploiement & coût
@@ -48,10 +48,10 @@ Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité
 
 ## Alternatives
 
-- [[Dev/Services/Weaviate|Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
-- [[Dev/Services/Qdrant|Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
-- [[Dev/Services/Milvus|Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
-- [[Dev/Services/Pinecone|Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+- [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
+- [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
+- [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
+- [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
 ## Liens
 

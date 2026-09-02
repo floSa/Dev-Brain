@@ -55,7 +55,7 @@ tags: [supervised, classification, regression]
 - Régler `C` et `gamma` **conjointement**, en grille logarithmique (`C` et `gamma` ∈ $\{10^{-3} … 10^{3}\}$), par [[Validation croisée|validation croisée]] ([[Optimisation d'hyperparamètres]]).
 - **Pas de probabilités natives.** `probability=True` lance en interne une calibration de Platt par CV — coûteuse et parfois médiocre. Si les probabilités comptent, préférer une [[Régression logistique]], ou calibrer explicitement ([[Calibration]]).
 - Multiclasse par décomposition seulement (*one-vs-rest* / *one-vs-one*) : ce n'est pas natif, et le coût grimpe avec le nombre de classes.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.svm]] — `SVC` (noyau), `LinearSVC` (linéaire, passe à l'échelle), `SVR`. Toujours dans un `Pipeline` avec `StandardScaler`.
+- Outils : [[Scikit-Learn|sklearn.svm]] — `SVC` (noyau), `LinearSVC` (linéaire, passe à l'échelle), `SVR`. Toujours dans un `Pipeline` avec `StandardScaler`.
 
 ## Approches voisines & alternatives
 

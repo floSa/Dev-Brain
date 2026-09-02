@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
+alternatives: ["[[Unstructured]]", "[[LlamaParse]]", "[[Marker]]", "[[pdf-inspector]]", "[[OpenDataLoader PDF]]"]
 complements: []
 tags: [document-parsing, rag, table-extraction, layout-analysis]
 url_docs: https://docling-project.github.io/docling/
@@ -30,9 +30,9 @@ Docling est une bibliothèque **open-source (MIT)** de l'équipe *AI for Knowled
 
 ## Quand NE PAS l'utiliser
 
-- Juste le texte brut d'un PDF simple, sans modèles → [[Dev/Services/PyMuPDF|PyMuPDF]] / [[Dev/Services/pdfplumber|pdfplumber]].
-- Qualité maximale sur PDF très complexes sans gérer GPU/infra → [[Dev/Services/LlamaParse|LlamaParse]].
-- Parc multi-format très large avec connecteurs d'ingestion clés en main → [[Dev/Services/Unstructured|Unstructured]].
+- Juste le texte brut d'un PDF simple, sans modèles → [[PyMuPDF]] / [[pdfplumber]].
+- Qualité maximale sur PDF très complexes sans gérer GPU/infra → [[LlamaParse]].
+- Parc multi-format très large avec connecteurs d'ingestion clés en main → [[Unstructured]].
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Docling est une bibliothèque **open-source (MIT)** de l'équipe *AI for Knowled
 
 ## Alternatives
 
-- [[Dev/Services/Unstructured|Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
-- [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
-- [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
-- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
-- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
+- [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
+- [[LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
+- [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 
 - [[Comparatif - Parsing de documents]] — comparatif de la catégorie.
-- Étage bas niveau complémentaire : [[Dev/Services/PyMuPDF|PyMuPDF]] / [[Dev/Services/pdfplumber|pdfplumber]] pour l'extraction brute.
+- Étage bas niveau complémentaire : [[PyMuPDF]] / [[pdfplumber]] pour l'extraction brute.
 - Doc : https://docling-project.github.io/docling/

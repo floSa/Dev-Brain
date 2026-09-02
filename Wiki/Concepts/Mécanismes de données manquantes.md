@@ -46,7 +46,7 @@ tags: [missing-data, feature-engineering]
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/missingno|missingno]] — l'outil Python pour visualiser la structure des manquants (matrice, heatmap, dendrogramme de nullité) et poser le mécanisme.
+- [[missingno]] — l'outil Python pour visualiser la structure des manquants (matrice, heatmap, dendrogramme de nullité) et poser le mécanisme.
 - [[Imputation des valeurs manquantes]] — les méthodes concrètes (médiane, KNN, MICE) dont la validité dépend du mécanisme.
 - [[Ingénierie des caractéristiques]] — l'étape englobante du prétraitement.
 - [[Data leakage]] — imputer sur tout le jeu plutôt que sur le train seul est une fuite classique.

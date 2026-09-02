@@ -34,7 +34,7 @@ tags: [fine-tuning, llm]
 
 - **Défaut raisonnable** pour tout fine-tuning de LLM : [[LoRA et QLoRA|LoRA]] (ou QLoRA si la mémoire est serrée). Le full fine-tuning n'est justifié que si la qualité plafonne. Leviers de réglage ($r$, $\alpha$, couches ciblées) sur la page dédiée.
 - Garder un **adaptateur par tâche / client** et les charger à la volée sur le même modèle de base — économie de stockage et de déploiement.
-- Outils : la lib **`peft`** de [[Dev/Services/HuggingFace|HuggingFace]] (+ `bitsandbytes` pour la 4-bit), sur [[Dev/Services/PyTorch|PyTorch]] ; pilotée par [[Dev/Services/TRL|TRL]], [[Dev/Services/Axolotl|Axolotl]] et [[Dev/Services/LLaMA-Factory|LLaMA-Factory]], et accélérée par [[Dev/Services/Unsloth|Unsloth]].
+- Outils : la lib **`peft`** de [[HuggingFace]] (+ `bitsandbytes` pour la 4-bit), sur [[PyTorch]] ; pilotée par [[TRL]], [[Axolotl]] et [[LLaMA-Factory]], et accélérée par [[Unsloth]].
 - PEFT est le **comment** ; [[SFT]] et [[RLHF and DPO]] sont le **quoi** qu'on entraîne avec.
 
 ## Approches voisines & alternatives
@@ -44,7 +44,7 @@ tags: [fine-tuning, llm]
 - [[RL for LLMs]] — le RL de post-training (RLHF, GRPO) tourne aussi en LoRA pour rester accessible.
 - [[LoRA et QLoRA]] — la méthode PEFT la plus citée : adaptation de rang faible, avec ou sans base quantifiée 4 bits.
 - [[Quantization]] — la 4-bit qui rend QLoRA possible ; sert aussi à l'inférence légère.
-- [[Dev/Services/HuggingFace|HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.
+- [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.
 
 ## Pour aller plus loin
 

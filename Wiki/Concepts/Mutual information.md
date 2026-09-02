@@ -34,7 +34,7 @@ tags: [information-theory, mutual-information]
 
 ## En pratique
 
-- **Sélection de variables** : classer les features par MI avec la cible capte les liens non linéaires que le filtre par corrélation rate — `mutual_info_classif` / `mutual_info_regression` ([[Dev/Services/Scikit-Learn|sklearn.feature_selection]]). Cf. [[Sélection de variables]].
+- **Sélection de variables** : classer les features par MI avec la cible capte les liens non linéaires que le filtre par corrélation rate — `mutual_info_classif` / `mutual_info_regression` ([[Scikit-Learn|sklearn.feature_selection]]). Cf. [[Sélection de variables]].
 - **Estimation délicate en continu** : sensible au binning et à la dimension ; préférer les estimateurs k-NN (Kraskov) ou neuronaux (MINE) plutôt qu'un histogramme naïf.
 - Apprentissage de représentations : objectifs contrastifs (InfoNCE) maximisent une borne inférieure de la MI entre vues (cf. [[embeddings]]).
 - Sert aussi en analyse de clustering (information mutuelle ajustée, AMI) pour comparer deux partitions.

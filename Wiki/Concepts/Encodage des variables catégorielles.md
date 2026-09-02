@@ -41,7 +41,7 @@ tags: [feature-engineering]
 - Arbres : tolèrent l'ordinal brut, pas besoin de One-Hot systématique.
 - Toujours `fit` l'encodeur sur le train (modalités, moyennes cibles), `transform` le test ; prévoir les modalités inconnues.
 - Encoder dans le `ColumnTransformer`, aux côtés des transformations numériques (cf. [[Ingénierie des caractéristiques]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.preprocessing]] (`OneHotEncoder`, `OrdinalEncoder`, `TargetEncoder`), [[Dev/Services/category_encoders|category_encoders]] (WoE, James-Stein, hashing…).
+- Outils : [[Scikit-Learn|sklearn.preprocessing]] (`OneHotEncoder`, `OrdinalEncoder`, `TargetEncoder`), [[category_encoders]] (WoE, James-Stein, hashing…).
 
 ## Approches voisines & alternatives
 

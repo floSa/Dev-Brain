@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: distributed
-alternatives: ["[[Dev/Services/n8n|n8n]]", "[[Dev/Services/Activepieces|Activepieces]]", "[[Dev/Services/Zapier|Zapier]]", "[[Dev/Services/gumloop|gumloop]]"]
+alternatives: ["[[n8n]]", "[[Activepieces]]", "[[Zapier]]", "[[gumloop]]"]
 complements: []
 tags: [low-code, orchestration]
 url_docs: https://www.windmill.dev/docs/intro
@@ -31,8 +31,8 @@ url_repo: https://github.com/windmill-labs/windmill
 
 ## Quand NE PAS l'utiliser
 
-- Public **non-développeur** voulant du pur no-code visuel → [[Dev/Services/n8n|n8n]] / [[Dev/Services/Zapier|Zapier]].
-- Catalogue d'intégrations SaaS clé en main → [[Dev/Services/Activepieces|Activepieces]] / [[Dev/Services/Zapier|Zapier]].
+- Public **non-développeur** voulant du pur no-code visuel → [[n8n]] / [[Zapier]].
+- Catalogue d'intégrations SaaS clé en main → [[Activepieces]] / [[Zapier]].
 - Contrainte **AGPL** bloquante pour un produit propriétaire qui ré-exposerait Windmill → licence Enterprise nécessaire.
 
 ## Déploiement & coût
@@ -49,13 +49,13 @@ url_repo: https://github.com/windmill-labs/windmill
 
 ## Alternatives
 
-- [[Dev/Services/n8n|n8n]] — Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.
-- [[Dev/Services/Activepieces|Activepieces]] — Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.
-- [[Dev/Services/Zapier|Zapier]] — Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
-- [[Dev/Services/gumloop|gumloop]] — Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.
+- [[n8n]] — Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.
+- [[Activepieces]] — Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.
+- [[Zapier]] — Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
+- [[gumloop]] — Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.
 
 ## Liens
 
 - [[Comparatif - Automatisation no-code]] — comparatif de la catégorie
-- Frontière avec l'orchestration **data** ([[Dev/Services/Airflow|Airflow]], [[Dev/Services/Dagster|Dagster]], [[Dev/Services/Prefect|Prefect]]) et l'exécution durable ([[Dev/Services/Temporal|Temporal]]) : Windmill chevauche les deux mondes (scripts → workflows + UIs).
+- Frontière avec l'orchestration **data** ([[Airflow]], [[Dagster]], [[Prefect]]) et l'exécution durable ([[Temporal]]) : Windmill chevauche les deux mondes (scripts → workflows + UIs).
 - Doc : https://www.windmill.dev/docs/intro

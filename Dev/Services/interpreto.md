@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: experimental
 langage: Python
-alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/LIME|LIME]]", "[[Dev/Services/Captum|Captum]]", "[[Dev/Services/SAELens|SAELens]]"]
+alternatives: ["[[SHAP]]", "[[LIME]]", "[[Captum]]", "[[SAELens]]"]
 complements: []
 tags: [explainability, llm, nlp]
 url_docs: https://for-sight-ai.github.io/interpreto/
@@ -35,7 +35,7 @@ Projet des équipes FOR et DEEL de l'**IRT Saint-Exupéry** (Toulouse), soutenu 
 
 ## Quand NE PAS l'utiliser
 
-- **Modèles tabulaires** (arbres, boosting, linéaires) : hors périmètre. Utiliser [[Dev/Services/SHAP|SHAP]] — dont le TreeSHAP exact est imbattable sur les ensembles d'arbres — ou [[Dev/Services/LIME|LIME]].
+- **Modèles tabulaires** (arbres, boosting, linéaires) : hors périmètre. Utiliser [[SHAP]] — dont le TreeSHAP exact est imbattable sur les ensembles d'arbres — ou [[LIME]].
 - **Vision** : la bibliothèque cible les modèles de langage, pas les modèles d'image.
 - **Besoin de stabilité d'API** : le projet est déclaré *Development Status :: 3 - Alpha* en version 0.5.0. Les signatures bougent encore.
 - **Modèle non HuggingFace** : l'intégration passe par `transformers` et `nnsight`.
@@ -57,10 +57,10 @@ Projet des équipes FOR et DEEL de l'**IRT Saint-Exupéry** (Toulouse), soutenu 
 
 ## Alternatives
 
-- [[Dev/Services/SHAP|SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
-- [[Dev/Services/LIME|LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
-- [[Dev/Services/Captum|Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
-- [[Dev/Services/SAELens|SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
+- [[SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
+- [[LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
+- [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
+- [[SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 
 ## Liens
 
@@ -70,11 +70,11 @@ Projet des équipes FOR et DEEL de l'**IRT Saint-Exupéry** (Toulouse), soutenu 
 - [[Sparse autoencoders]] — ses dictionnaires appris (Vanilla, TopK, JumpReLU, BatchTopK).
 - [[NMF]] / [[ICA]] — ses autres méthodes de dictionnaire, linéaires : les baselines honnêtes avant de sortir un SAE.
 - [[Interprétabilité mécaniste]] — le domaine dont relèvent ses méthodes à base de concepts.
-- [[Dev/Services/nnsight|nnsight]] — sa dépendance directe pour l'extraction d'activations.
-- [[Dev/Patterns/Comparatif - Explicabilité|Comparatif - Explicabilité]] — le tableau de la famille.
+- [[nnsight]] — sa dépendance directe pour l'extraction d'activations.
+- [[Comparatif - Explicabilité]] — le tableau de la famille.
 - [[Traitement du langage naturel]] — le domaine visé.
 - [[Transformer architectures]] / [[Self-attention]] — les modèles que la bibliothèque instrumente.
 - [[Classification de texte]] — la tâche la plus courante à expliquer.
-- [[Dev/Services/HuggingFace|HuggingFace]] — l'écosystème de modèles requis.
-- [[Dev/Services/PyTorch|PyTorch]] — le backend d'exécution.
+- [[HuggingFace]] — l'écosystème de modèles requis.
+- [[PyTorch]] — le backend d'exécution.
 - Papier : [arXiv 2512.09730](https://arxiv.org/abs/2512.09730) — *Interpreto: An Explainability Library for Transformers*.

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Dev/Services/ZenML|ZenML]]", "[[Dev/Services/Metaflow|Metaflow]]"]
+alternatives: ["[[ZenML]]", "[[Metaflow]]"]
 complements: []
 tags: [orchestration, ml-pipeline, kubernetes]
 url_docs: https://docs.flyte.org/
@@ -32,9 +32,9 @@ Flyte est un orchestrateur de workflows ML et data **Kubernetes-natif**, conçu 
 
 ## Quand NE PAS l'utiliser
 
-- Pas de Kubernetes ni d'équipe infra pour l'opérer → [[Dev/Services/Metaflow|Metaflow]] (AWS) ou [[Dev/Services/ZenML|ZenML]] (abstraction).
-- Simple portabilité local→cloud sans gérer un cluster → [[Dev/Services/ZenML|ZenML]].
-- Orchestration ELT généraliste orientée assets/connecteurs → [[Dev/Services/Dagster|Dagster]] / [[Dev/Services/Airflow|Airflow]].
+- Pas de Kubernetes ni d'équipe infra pour l'opérer → [[Metaflow]] (AWS) ou [[ZenML]] (abstraction).
+- Simple portabilité local→cloud sans gérer un cluster → [[ZenML]].
+- Orchestration ELT généraliste orientée assets/connecteurs → [[Dagster]] / [[Airflow]].
 
 ## Déploiement & coût
 
@@ -50,11 +50,11 @@ Flyte est un orchestrateur de workflows ML et data **Kubernetes-natif**, conçu 
 
 ## Alternatives
 
-- [[Dev/Services/ZenML|ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
-- [[Dev/Services/Metaflow|Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
+- [[ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
+- [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
 
 ## Liens
 
 - [[Comparatif - Orchestrateurs ML]] — comparatif de la catégorie
-- S'appuie sur : Kubernetes, [[Dev/Services/Docker|Docker]].
+- S'appuie sur : Kubernetes, [[Docker]].
 - Doc : https://docs.flyte.org/ · Édition entreprise : Union.ai

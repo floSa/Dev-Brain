@@ -37,7 +37,7 @@ tags: [ocr, computer-vision, deep-learning]
 
 ## En pratique
 
-- Document propre, hors ligne : **Tesseract** ou [[Dev/Services/docTR|docTR]]. Texte de scène / multilingue : **PaddleOCR**, **EasyOCR**. Manuscrit ou difficile : **TrOCR** / un VLM.
+- Document propre, hors ligne : **Tesseract** ou [[docTR]]. Texte de scène / multilingue : **PaddleOCR**, **EasyOCR**. Manuscrit ou difficile : **TrOCR** / un VLM.
 - Pipeline RAG sur PDF scannés : OCR → texte → indexation (voir [[Recherche d'information]]).
 - Pièges : qualité d'image (résolution, contraste) ; ordre de lecture en multi-colonnes ; jeux de caractères et langues non latines.
 
@@ -47,9 +47,9 @@ tags: [ocr, computer-vision, deep-learning]
 - [[Vision Language Models]] — lecture de texte de bout en bout, alternative moderne au pipeline en deux étages.
 - [[Recherche d'information]] / [[Traitement du langage naturel]] — ce qui consomme le texte une fois extrait.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
-- Routage en amont : [[Dev/Services/pdf-inspector|pdf-inspector]] — décide page par page si l'OCR est nécessaire, pour ne pas l'appliquer à tout un corpus.
-- Parsing sans OCR quand le texte est déjà présent : [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — extraction déterministe du texte natif, l'OCR n'intervenant qu'en mode hybride.
-- OCR appliqué à un document sortant : [[Dev/Services/Stirling PDF|Stirling PDF]] — rend un PDF scanné cherchable, côté manipulation de fichier plutôt que côté pipeline de données.
+- Routage en amont : [[pdf-inspector]] — décide page par page si l'OCR est nécessaire, pour ne pas l'appliquer à tout un corpus.
+- Parsing sans OCR quand le texte est déjà présent : [[OpenDataLoader PDF]] — extraction déterministe du texte natif, l'OCR n'intervenant qu'en mode hybride.
+- OCR appliqué à un document sortant : [[Stirling PDF]] — rend un PDF scanné cherchable, côté manipulation de fichier plutôt que côté pipeline de données.
 
 ## Pour aller plus loin
 

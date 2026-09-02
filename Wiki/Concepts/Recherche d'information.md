@@ -38,7 +38,7 @@ tags: [nlp, information-retrieval, retrieval, hybrid-search, ranking, semantic-s
 
 ## En pratique
 
-- Pile typique : moteur lexical ([[Dev/Services/Elasticsearch|Elasticsearch]] / OpenSearch, BM25) + index vectoriel (dense), fusion RRF, puis reranker cross-encoder. Beaucoup de moteurs intègrent désormais les deux.
+- Pile typique : moteur lexical ([[Elasticsearch]] / OpenSearch, BM25) + index vectoriel (dense), fusion RRF, puis reranker cross-encoder. Beaucoup de moteurs intègrent désormais les deux.
 - Démarrer simple : BM25 seul est un baseline étonnamment fort ; ajouter le dense puis l'hybride si le rappel plafonne.
 - En contexte LLM, c'est l'étage `retrieval` du [[RAG]] ; soigner aussi la [[Query transformations|transformation de requête]] en amont.
 - Toujours mesurer sur **son** corpus avec des [[Ranking metrics]] — ne pas se fier au ressenti.

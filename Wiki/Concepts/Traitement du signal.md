@@ -43,7 +43,7 @@ tags: [signal-processing]
 
 ## En pratique
 
-- Pile Python : `numpy.fft` (FFT), [[Dev/Services/scipy.signal|scipy.signal]] (filtres, spectres, fenêtres), [[Dev/Services/PyWavelets|PyWavelets]] (ondelettes), [[Dev/Services/librosa|librosa]] (audio, mel / MFCC).
+- Pile Python : `numpy.fft` (FFT), [[scipy.signal]] (filtres, spectres, fenêtres), [[PyWavelets]] (ondelettes), [[librosa]] (audio, mel / MFCC).
 - Pipeline type : **nettoyer** (détrend, filtrage passe-bas) → **analyser** (spectre, spectrogramme) → **extraire des features** → modèle ML.
 - Piège récurrent : oublier l'anti-aliasing avant un sous-échantillonnage, ou la fuite spectrale faute de fenêtrage avant FFT.
 
@@ -59,4 +59,4 @@ tags: [signal-processing]
 
 - Oppenheim & Schafer — *Discrete-Time Signal Processing*.
 - Steven W. Smith — *The Scientist and Engineer's Guide to Digital Signal Processing* (dspguide.com, libre).
-- [[Dev/Patterns/Comparatif - Traitement du signal|Comparatif — Traitement du signal]] — les libs Python du domaine en un tableau.
+- [[Comparatif - Traitement du signal|Comparatif — Traitement du signal]] — les libs Python du domaine en un tableau.

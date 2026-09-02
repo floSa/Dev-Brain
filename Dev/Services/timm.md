@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/torchvision|torchvision]]"]
+alternatives: ["[[torchvision]]"]
 complements: []
 tags: [computer-vision, cnn, vit, transfer-learning, fine-tuning, deep-learning, model-hub]
 url_docs: https://huggingface.co/docs/timm/
@@ -19,7 +19,7 @@ url_repo: https://github.com/huggingface/pytorch-image-models
 
 ## Pourquoi
 
-**PyTorch Image Models** : la plus vaste collection de backbones vision pour [[Dev/Services/PyTorch|PyTorch]] (1000+ architectures et variantes — ResNet/ResNeXt, EfficientNet, RegNet, ConvNeXt, MobileNet, [[Vision Transformers (ViT)|ViT]], Swin, MaxViT…), avec leurs **poids pré-entraînés**, des optimiseurs, schedulers, augmentations et des scripts d'entraînement/éval de référence. Une API unique — `timm.create_model(name, pretrained=True, num_classes=...)` — sert n'importe quel modèle, avec extraction de features (`features_only`) pour brancher un détecteur ou un segmenteur. C'est l'outil de référence pour le [[Transfer learning vision|transfert d'apprentissage]].
+**PyTorch Image Models** : la plus vaste collection de backbones vision pour [[PyTorch]] (1000+ architectures et variantes — ResNet/ResNeXt, EfficientNet, RegNet, ConvNeXt, MobileNet, [[Vision Transformers (ViT)|ViT]], Swin, MaxViT…), avec leurs **poids pré-entraînés**, des optimiseurs, schedulers, augmentations et des scripts d'entraînement/éval de référence. Une API unique — `timm.create_model(name, pretrained=True, num_classes=...)` — sert n'importe quel modèle, avec extraction de features (`features_only`) pour brancher un détecteur ou un segmenteur. C'est l'outil de référence pour le [[Transfer learning vision|transfert d'apprentissage]].
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ url_repo: https://github.com/huggingface/pytorch-image-models
 
 ## Quand NE PAS l'utiliser
 
-- Besoin limité aux modèles classiques + datasets + tâches clés en main → [[Dev/Services/torchvision|torchvision]] (officiel, moins de dépendances).
-- Modèles **multimodaux** ou hors vision pure (CLIP, détecteurs end-to-end packagés) → [[Dev/Services/HuggingFace|HuggingFace]] `transformers`.
-- Augmentation seule, sans modèles → [[Dev/Services/albumentations|albumentations]] / [[Dev/Services/Kornia|Kornia]].
+- Besoin limité aux modèles classiques + datasets + tâches clés en main → [[torchvision]] (officiel, moins de dépendances).
+- Modèles **multimodaux** ou hors vision pure (CLIP, détecteurs end-to-end packagés) → [[HuggingFace]] `transformers`.
+- Augmentation seule, sans modèles → [[albumentations]] / [[Kornia]].
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ url_repo: https://github.com/huggingface/pytorch-image-models
 
 ## Alternatives
 
-- [[Dev/Services/torchvision|torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
+- [[torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
 
 ## Liens
 
-- [[Dev/Services/PyTorch|PyTorch]] — le framework sous-jacent ; [[Dev/Services/HuggingFace|HuggingFace]] — Hub qui héberge les poids et organisation mainteneuse.
+- [[PyTorch]] — le framework sous-jacent ; [[HuggingFace]] — Hub qui héberge les poids et organisation mainteneuse.
 - [[Transfer learning vision]] — l'usage cœur (backbones pré-entraînés).
 - [[Architectures CNN]] / [[CNN]] / [[Vision Transformers (ViT)|ViT]] — les familles d'ossatures fournies.
 - [[Classification d'images]] — la tâche directe ; [[Vision par ordinateur]] — le cadre.

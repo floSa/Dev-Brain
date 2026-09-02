@@ -51,7 +51,7 @@ tags: [supervised, classification, regression]
 - Sur données **tabulaires**, le boosting d'arbres reste l'état de l'art ; les réseaux de neurones n'y gagnent que rarement. Sur texte / image / son, c'est l'inverse.
 - Les hyperparamètres se règlent **sur la validation, jamais sur le test** — sinon le test devient un second jeu d'entraînement ([[Validation croisée|CV imbriquée]] si on doit à la fois régler et estimer).
 - Étiqueter coûte cher : c'est souvent le vrai budget du projet, pas le calcul. Quand les étiquettes manquent, regarder du côté du [[Transfer learning vision|transfer learning]] ou de l'[[Apprentissage non supervisé]].
-- Outils : [[Dev/Services/Scikit-Learn|scikit-learn]] (API `fit`/`predict` uniforme), [[Dev/Services/XGBoost|XGBoost]] / [[Dev/Services/LightGBM|LightGBM]] sur tabulaire, [[Dev/Services/PyTorch|PyTorch]] sur non structuré.
+- Outils : [[Scikit-Learn|scikit-learn]] (API `fit`/`predict` uniforme), [[XGBoost]] / [[LightGBM]] sur tabulaire, [[PyTorch]] sur non structuré.
 
 ## Approches voisines & alternatives
 

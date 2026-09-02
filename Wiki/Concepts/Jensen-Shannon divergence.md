@@ -37,7 +37,7 @@ tags: [information-theory, kl-divergence]
 - **GAN originels** : le discriminateur optimal rend la perte du générateur équivalente à $2\,JSD - \log 4$. Quand les supports ne se recouvrent pas, la JSD sature à $\log 2$ → gradient nul, d'où le passage à la [[Wasserstein distance]] (WGAN).
 - **Comparaison de distributions** : similarité de documents (distributions de mots), de clusters, de signatures — la métrique $\sqrt{JSD}$ se branche dans un k-NN ou un clustering.
 - Détection de dérive symétrique, là où l'on ne veut pas privilégier un sens (vs la KL dirigée).
-- Outils : `scipy.spatial.distance.jensenshannon` ([[Dev/Services/scipy.stats|SciPy]]) renvoie directement $\sqrt{JSD}$.
+- Outils : `scipy.spatial.distance.jensenshannon` ([[scipy.stats|SciPy]]) renvoie directement $\sqrt{JSD}$.
 
 ## Approches voisines & alternatives
 

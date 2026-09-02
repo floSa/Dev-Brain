@@ -42,7 +42,7 @@ tags: [forecasting, timeseries, model-evaluation]
 - Multi-séries / portefeuille hétérogène → **MASE ou RMSSE** par défaut (comparables, robustes aux zéros). MAPE/WAPE pour communiquer un % métier, jamais sur des séries à zéros.
 - Toute métrique se lit sur un **backtest** à origine glissante ([[Walk-forward CV]]), jamais en in-sample.
 - Toujours rapporter face à une **baseline naïve** : une RMSE brute ne dit rien sans point de comparaison.
-- Outils : [[Dev/Services/statsforecast|statsforecast — utilsforecast.losses (mase, rmsse, mape…)]], [[Dev/Services/darts|darts.metrics]].
+- Outils : [[statsforecast|statsforecast — utilsforecast.losses (mase, rmsse, mape…)]], [[darts|darts.metrics]].
 
 ## Approches voisines & alternatives
 

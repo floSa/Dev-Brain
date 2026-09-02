@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Prisma|Prisma]]", "[[Dev/Services/SQLModel|SQLModel]]"]
+alternatives: ["[[Prisma]]", "[[SQLModel]]"]
 complements: []
 tags: [orm, relational, type-hints]
 url_docs: https://docs.sqlalchemy.org/
@@ -29,8 +29,8 @@ Toolkit d'accès aux bases relationnelles le plus établi en Python, organisé e
 
 ## Quand NE PAS l'utiliser
 
-- Stack TypeScript / Node → [[Dev/Services/Prisma|Prisma]].
-- Seulement des migrations sans couche d'accès → outils dédiés [[Dev/Services/Flyway|Flyway]] / [[Dev/Services/Liquibase|Liquibase]].
+- Stack TypeScript / Node → [[Prisma]].
+- Seulement des migrations sans couche d'accès → outils dédiés [[Flyway]] / [[Liquibase]].
 - Micro-script avec une poignée de requêtes → driver brut (psycopg, sqlite3) suffisant.
 
 ## Déploiement & coût
@@ -42,16 +42,16 @@ Toolkit d'accès aux bases relationnelles le plus établi en Python, organisé e
 
 - Requêtes **N+1** par chargement paresseux non maîtrisé (`lazy` / `eager`, `selectinload`).
 - Saut d'API important entre 1.x et 2.0 (style `select()`, sessions) — vérifier la version visée.
-- La migration de schéma n'est **pas** incluse : c'est le rôle d'[[Dev/Services/Alembic|Alembic]].
+- La migration de schéma n'est **pas** incluse : c'est le rôle d'[[Alembic]].
 
 ## Alternatives
 
-- [[Dev/Services/Prisma|Prisma]] — ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
-- [[Dev/Services/SQLModel|SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
+- [[Prisma]] — ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
+- [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
 ## Liens
 
 - [[ORM]] — le concept (Wiki)
-- [[Dev/Services/Alembic|Alembic]] — migrations de schéma pour SQLAlchemy
+- [[Alembic]] — migrations de schéma pour SQLAlchemy
 - [[Comparatif - ORM]] — comparatif des ORM
 - Doc : https://docs.sqlalchemy.org/

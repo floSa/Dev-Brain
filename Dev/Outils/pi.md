@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, Android (Termux)"
 langage: TypeScript
-alternatives: ["[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/freebuff|freebuff]]"]
+alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[freebuff]]"]
 complements: []
 tags: [code-assistant, agents, local-llm, terminal-ui, tool-use]
 url_docs: https://github.com/earendil-works/pi/tree/main/packages/coding-agent
@@ -22,7 +22,7 @@ url_repo: https://github.com/earendil-works/pi
 
 Suite d'outils d'agent en TypeScript, MIT, livrée en cinq paquets npm : `pi-ai` (API LLM unifiée multi-fournisseurs), `pi-agent-core` (runtime, appel d'outils, gestion d'état), `pi-tui` (interface terminal à rendu différentiel), `pi-telemetry` (contrats de télémétrie neutres) et `@earendil-works/pi-coding-agent`, le CLI `pi` qui assemble le tout en assistant de codage.
 
-La particularité par rapport aux autres CLI de codage : le **LLM auto-hébergé est un citoyen de première classe**, pas une option cachée. Le serveur routeur [[Dev/Services/llama.cpp|llama.cpp]] est supporté explicitement (`/login llama.cpp`, gestion des téléchargements et des modèles chargés via `/llama`, sélection via `/model`), et tout endpoint OpenAI-compatible ou Anthropic-compatible se déclare dans `~/.pi/agent/models.json`.
+La particularité par rapport aux autres CLI de codage : le **LLM auto-hébergé est un citoyen de première classe**, pas une option cachée. Le serveur routeur [[llama.cpp]] est supporté explicitement (`/login llama.cpp`, gestion des téléchargements et des modèles chargés via `/llama`, sélection via `/model`), et tout endpoint OpenAI-compatible ou Anthropic-compatible se déclare dans `~/.pi/agent/models.json`.
 
 Aucun modèle économique : pas d'offre payante, pas de revente de tokens.
 
@@ -31,12 +31,12 @@ Aucun modèle économique : pas d'offre payante, pas de revente de tokens.
 - Faire tourner un agent de codage entièrement sur un LLM auto-hébergé, sans passer par un fournisseur cloud.
 - Réutiliser la boucle d'agent ou l'API LLM unifiée comme bibliothèque dans un projet, plutôt que d'écrire la sienne.
 - Travailler en terminal ou sous tmux, y compris depuis Termux sur Android.
-- Basculer entre abonnement (Claude Pro/Max, ChatGPT Plus/Pro, GitHub Copilot) et clés API (Anthropic, OpenAI, Azure OpenAI, Gemini, Bedrock, Mistral, Groq, DeepSeek, xAI, [[Dev/Services/OpenRouter|OpenRouter]]…) sans changer d'outil.
+- Basculer entre abonnement (Claude Pro/Max, ChatGPT Plus/Pro, GitHub Copilot) et clés API (Anthropic, OpenAI, Azure OpenAI, Gemini, Bedrock, Mistral, Groq, DeepSeek, xAI, [[OpenRouter]]…) sans changer d'outil.
 
 ## Quand NE PAS l'utiliser
 
-- Exécuter du code non fiable sans isolation : pi **n'a aucun système de permissions** (voir Pièges). Prévoir un conteneur, ou choisir un outil qui valide les actions pas à pas → [[Dev/Outils/Cline|Cline]].
-- Travailler dans l'éditeur plutôt qu'en terminal → [[Dev/Outils/Continue|Continue]].
+- Exécuter du code non fiable sans isolation : pi **n'a aucun système de permissions** (voir Pièges). Prévoir un conteneur, ou choisir un outil qui valide les actions pas à pas → [[Cline]].
+- Travailler dans l'éditeur plutôt qu'en terminal → [[Continue]].
 - Vouloir une gouvernance de projet claire : éditeur peu identifié, pas de page projet ni de modèle de gouvernance publié.
 
 ## Installation & plateformes
@@ -55,10 +55,10 @@ Aucun modèle économique : pas d'offre payante, pas de revente de tokens.
 
 ## Alternatives
 
-- [[Dev/Outils/Aider|Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
-- [[Dev/Outils/Cline|Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
-- [[Dev/Outils/Continue|Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
-- [[Dev/Outils/freebuff|freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
+- [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
+- [[Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
+- [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
+- [[freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 
 ## Liens
 

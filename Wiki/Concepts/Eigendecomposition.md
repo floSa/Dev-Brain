@@ -42,7 +42,7 @@ tags: [linear-algebra, matrix-decomposition, eigenvalue]
 - Réservé aux matrices **carrées** ; pour le reste ou pour la robustesse numérique, passer par la [[SVD]].
 - Sur une covariance symétrique, `numpy.linalg.eigh` (variante symétrique) est plus rapide et stable que `eig`.
 - Trier les $\lambda$ par ordre décroissant pour lire l'importance des axes (PCA, spectral clustering).
-- Outils : `numpy.linalg.eig` / `eigh`, `scipy.linalg.eig`, [[Dev/Services/numpy|numpy]], [[Dev/Services/Scikit-Learn|sklearn]] (PCA, SpectralClustering).
+- Outils : `numpy.linalg.eig` / `eigh`, `scipy.linalg.eig`, [[numpy]], [[Scikit-Learn|sklearn]] (PCA, SpectralClustering).
 
 ## Approches voisines & alternatives
 

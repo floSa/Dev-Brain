@@ -39,7 +39,7 @@ tags: [regression, linear-model, supervised]
 - Standardiser pour comparer les coefficients ; encoder les catégorielles (one-hot).
 - Colinéarité → coefficients ininterprétables : regrouper, retirer, ou régulariser.
 - Relation non linéaire → termes polynomiaux, ou passer au [[GAM]].
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.linear_model.LinearRegression]], `statsmodels.OLS` (inférence, p-values).
+- Outils : [[Scikit-Learn|sklearn.linear_model.LinearRegression]], `statsmodels.OLS` (inférence, p-values).
 
 ## Approches voisines & alternatives
 

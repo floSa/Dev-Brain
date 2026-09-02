@@ -41,8 +41,8 @@ tags: [classification, supervised, class-imbalance]
 ## En pratique
 
 - Ordre conseillé : d'abord la **bonne métrique** et le **seuil**, ensuite `class_weight`, et seulement si besoin le rééchantillonnage.
-- [[Dev/Services/imbalanced-learn|imbalanced-learn]] (API compatible scikit-learn) pour SMOTE et l'undersampling ; placer le sampler **dans un `Pipeline`** pour qu'il reste cantonné au pli.
-- Les arbres boostés ([[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]]) gèrent bien le déséquilibre via `scale_pos_weight`.
+- [[imbalanced-learn]] (API compatible scikit-learn) pour SMOTE et l'undersampling ; placer le sampler **dans un `Pipeline`** pour qu'il reste cantonné au pli.
+- Les arbres boostés ([[XGBoost]], [[LightGBM]]) gèrent bien le déséquilibre via `scale_pos_weight`.
 - Piège récurrent : optimiser l'accuracy, ou rééchantillonner avant la [[Validation croisée]] (fuite).
 
 ## Approches voisines & alternatives

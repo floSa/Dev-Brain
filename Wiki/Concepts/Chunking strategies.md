@@ -38,7 +38,7 @@ tags: [rag, chunking, retrieval]
 
 - Démarrer **récursif**, ~256-512 tokens, overlap ~15 %, puis mesurer le rappel et ajuster.
 - Caler la taille de chunk sur le **modèle d'embedding** (fenêtre utile) et sur le coût de génération (tokens injectés).
-- Parser proprement avant de découper : [[Dev/Services/Docling|Docling]], [[Dev/Services/Unstructured|Unstructured]], [[Dev/Services/LlamaParse|LlamaParse]] gèrent tableaux et mise en page.
+- Parser proprement avant de découper : [[Docling]], [[Unstructured]], [[LlamaParse]] gèrent tableaux et mise en page.
 - Conserver des **métadonnées** par chunk (source, titre, page) pour filtrer et citer.
 - Pièges : chunk à cheval sur deux sujets ; tableau ou code coupé en plein milieu ; structure d'un PDF ignorée.
 
@@ -52,4 +52,4 @@ tags: [rag, chunking, retrieval]
 ## Pour aller plus loin
 
 - Günther et al. (2024) — *Late Chunking* (Jina AI).
-- Doc des text splitters de [[Dev/Services/LangChain|LangChain]] et des node parsers de [[Dev/Services/LlamaIndex|LlamaIndex]].
+- Doc des text splitters de [[LangChain]] et des node parsers de [[LlamaIndex]].

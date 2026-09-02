@@ -68,7 +68,7 @@ PCA est ici le cas pivot (tout quantitatif, un seul bloc), au même niveau que F
 - Réfléchir au **type de variables** avant de choisir la méthode (erreur classique : PCA sur des codes catégoriels).
 - Standardiser quand les unités diffèrent (sinon une variable à grande échelle domine).
 - Choisir $k$ via le coude de l'éboulis (scree plot) ou un seuil d'inertie cumulée.
-- Outils : `scikit-learn` (PCA), `prince` (Python : PCA, CA, MCA, FAMD, MFA, GPA), `FactoMineR` (R, la référence), `geomstats` (PGA), [[Dev/Services/umap-learn|umap-learn]] (UMAP, non linéaire).
+- Outils : `scikit-learn` (PCA), `prince` (Python : PCA, CA, MCA, FAMD, MFA, GPA), `FactoMineR` (R, la référence), `geomstats` (PGA), [[umap-learn]] (UMAP, non linéaire).
 
 ## Approches voisines & alternatives
 

@@ -48,10 +48,10 @@ tags: [causal-inference, hypothesis-testing]
 - [[A-B testing]] — l'étalon-or causal par randomisation ; DiD prend le relais quand randomiser est impossible.
 - [[Tests d'hypothèse]] — l'effet DiD se teste via le coefficient d'interaction de la régression.
 - Méthodes de contrôle synthétique, régression sur discontinuité, variables instrumentales — autres designs d'inférence causale observationnelle, selon la source d'identification disponible.
-- [[Dev/Services/CausalImpact|CausalImpact]] — séries temporelles structurelles bayésiennes : prédit le contrefactuel à partir de séries de contrôle, sans groupe témoin observé à proprement parler.
+- [[CausalImpact]] — séries temporelles structurelles bayésiennes : prédit le contrefactuel à partir de séries de contrôle, sans groupe témoin observé à proprement parler.
 
 ## Pour aller plus loin
 
 - Réf : Card & Krueger (1994, salaire minimum) ; Angrist & Pischke — *Mostly Harmless Econometrics*.
 - Avancées : Callaway & Sant'Anna (2021), Goodman-Bacon (2021) sur les biais du TWFE.
-- Outils : [[Dev/Services/statsmodels|statsmodels]] / `linearmodels` (PanelOLS), `pyfixest` (effets fixes + clustering) ; [[Dev/Services/CausalImpact|CausalImpact]] pour l'approche série temporelle bayésienne.
+- Outils : [[statsmodels]] / `linearmodels` (PanelOLS), `pyfixest` (effets fixes + clustering) ; [[CausalImpact]] pour l'approche série temporelle bayésienne.

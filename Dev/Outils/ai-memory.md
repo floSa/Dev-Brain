@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Linux, macOS, Windows (WSL2)"
 langage: Rust
-alternatives: ["[[Dev/Outils/Graphify|Graphify]]", "[[Dev/Services/OpenViking|OpenViking]]"]
+alternatives: ["[[Graphify]]", "[[OpenViking]]"]
 complements: []
 tags: [agent-memory, mcp, context-engineering, code-assistant, retrieval]
 url_docs: https://github.com/akitaonrails/ai-memory
@@ -35,7 +35,7 @@ Stockage SQLite avec FTS5, un seul writer sérialisé. Recherche par plein texte
 ## Quand NE PAS l'utiliser
 
 - Windows natif : le support est expérimental, WSL2 est la voie recommandée.
-- Besoin de mémoire pour un agent applicatif que l'on construit, pas pour une CLI de code → [[Dev/Services/Letta|Letta]] ou [[Dev/Services/OpenViking|OpenViking]].
+- Besoin de mémoire pour un agent applicatif que l'on construit, pas pour une CLI de code → [[Letta]] ou [[OpenViking]].
 - Contexte multi-utilisateur ou multi-instance : un seul serveur par répertoire de données, et l'authentification demande une configuration soignée.
 - Besoin d'un débit d'écriture élevé : l'auteur mesure un plafond de l'ordre de 700 écritures par seconde.
 
@@ -54,8 +54,8 @@ Stockage SQLite avec FTS5, un seul writer sérialisé. Recherche par plein texte
 
 ## Alternatives
 
-- [[Dev/Outils/Graphify|Graphify]] — Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.
-- [[Dev/Services/OpenViking|OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
+- [[Graphify]] — Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.
+- [[OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ## Liens
 

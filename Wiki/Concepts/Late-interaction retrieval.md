@@ -35,7 +35,7 @@ tags: [retrieval, reranking, embeddings, semantic-search, information-retrieval,
 
 ## En pratique
 
-- **Implémentations** : [[Dev/Services/RAGatouille|RAGatouille]] (wrapper simple au-dessus de colbert-ai), colbert-ai (référence Stanford), et des moteurs à support natif des multi-vecteurs comme [[Dev/Services/Vespa|Vespa]] ; [[Dev/Services/Qdrant|Qdrant]] et [[Dev/Services/Weaviate|Weaviate]] ont ajouté le multi-vecteur.
+- **Implémentations** : [[RAGatouille]] (wrapper simple au-dessus de colbert-ai), colbert-ai (référence Stanford), et des moteurs à support natif des multi-vecteurs comme [[Vespa]] ; [[Qdrant]] et [[Weaviate]] ont ajouté le multi-vecteur.
 - **Deux usages** : retriever de premier étage (avec PLAID) **ou** reclasseur du top-k ([[Reranking]]).
 - **Force** : meilleure **généralisation hors domaine** que le dense mono-vecteur, et bonne efficacité en données pour le fine-tuning.
 - **Coût** : index plus volumineux et calcul de score plus lourd que le dense ; arbitrer selon le volume et la latence visée.
@@ -46,7 +46,7 @@ tags: [retrieval, reranking, embeddings, semantic-search, information-retrieval,
 - [[Reranking]] — la late-interaction peut tenir l'étage de précision, en alternative au cross-encoder.
 - [[embeddings]] — le dense mono-vecteur que la late-interaction raffine en multi-vecteur.
 - [[Hybrid retrieval]] — autre manière de dépasser le dense seul (fusion dense + lexical) ; SPLADE (sparse appris) en est un cousin.
-- [[Dev/Services/RAGatouille|RAGatouille]] · [[Dev/Services/Vespa|Vespa]] — les implémentations côté Dev.
+- [[RAGatouille]] · [[Vespa]] — les implémentations côté Dev.
 
 ## Pour aller plus loin
 

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/TransformerLens|TransformerLens]]", "[[Dev/Services/interpreto|interpreto]]"]
+alternatives: ["[[TransformerLens]]", "[[interpreto]]"]
 complements: []
 tags: [explainability, llm]
 url_docs: https://decoderesearch.github.io/SAELens/
@@ -25,7 +25,7 @@ Il couvre les trois temps du sujet : **entraîner** un SAE (les variantes TopK, 
 
 C'est le catalogue qui fait sa valeur pratique : entraîner un SAE coûte des millions d'activations et un entraînement complet. Pouvoir en charger un déjà entraîné sur un modèle connu change la nature du travail — on passe de semaines à quelques lignes.
 
-Historiquement, cette fonction vivait dans [[Dev/Services/TransformerLens|TransformerLens]] ; elle en a été **extraite à la v2** et vit ici désormais.
+Historiquement, cette fonction vivait dans [[TransformerLens]] ; elle en a été **extraite à la v2** et vit ici désormais.
 
 ## Quand l'utiliser
 
@@ -36,10 +36,10 @@ Historiquement, cette fonction vivait dans [[Dev/Services/TransformerLens|Transf
 
 ## Quand NE PAS l'utiliser
 
-- **Analyse de circuits sans SAE** : ce n'est pas son objet. [[Dev/Services/TransformerLens|TransformerLens]].
+- **Analyse de circuits sans SAE** : ce n'est pas son objet. [[TransformerLens]].
 - **Modèles autres que des LLM** : le domaine et l'outillage sont centrés sur le texte.
-- **Attribution ou explication à un métier** : hors sujet. [[Dev/Services/Captum|Captum]], [[Dev/Services/SHAP|SHAP]] ou [[Dev/Services/interpreto|interpreto]].
-- **Besoin d'un pipeline concept complet, méthodes de dictionnaire comparées** (NMF, ICA, probes) : c'est le terrain d'[[Dev/Services/interpreto|interpreto]], qui traite les SAE comme une option parmi d'autres. SAELens, lui, ne fait que des SAE — mais les fait à fond.
+- **Attribution ou explication à un métier** : hors sujet. [[Captum]], [[SHAP]] ou [[interpreto]].
+- **Besoin d'un pipeline concept complet, méthodes de dictionnaire comparées** (NMF, ICA, probes) : c'est le terrain d'[[interpreto]], qui traite les SAE comme une option parmi d'autres. SAELens, lui, ne fait que des SAE — mais les fait à fond.
 - **Production** : outil de recherche, coûteux.
 
 ## Déploiement & coût
@@ -60,8 +60,8 @@ Historiquement, cette fonction vivait dans [[Dev/Services/TransformerLens|Transf
 
 ## Alternatives
 
-- [[Dev/Services/TransformerLens|TransformerLens]] — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
-- [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
+- [[TransformerLens]] — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
+- [[interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
 
 ## Liens
 
@@ -69,5 +69,5 @@ Historiquement, cette fonction vivait dans [[Dev/Services/TransformerLens|Transf
 - [[Superposition]] — le phénomène qui justifie l'existence des SAE.
 - [[Interprétabilité mécaniste]] — le chapeau du domaine.
 - [[Autoencodeurs]] — l'architecture d'origine, à contrainte inversée.
-- [[Dev/Services/TransformerLens|TransformerLens]] — l'intégration étroite (`HookedSAETransformer`), d'où la fonction a migré.
-- [[Dev/Services/PyTorch|PyTorch]] — le socle requis.
+- [[TransformerLens]] — l'intégration étroite (`HookedSAETransformer`), d'où la fonction a migré.
+- [[PyTorch]] — le socle requis.

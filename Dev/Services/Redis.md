@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C
 scaling: single-node
-alternatives: ["[[Dev/Services/MongoDB|MongoDB]]", "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"]
+alternatives: ["[[MongoDB]]", "[[Apache Cassandra]]"]
 complements: []
 tags: [nosql, key-value, in-memory]
 url_docs: https://redis.io/docs/
@@ -32,9 +32,9 @@ Store **clé-valeur en mémoire** : les données vivent en RAM, d'où des latenc
 
 ## Quand NE PAS l'utiliser
 
-- Source de vérité durable au-delà de ce qui tient en RAM → base sur disque ([[Dev/Services/Postgres|Postgres]], [[Dev/Services/MongoDB|MongoDB]]).
-- Requêtes ad hoc riches sur les données → [[Dev/Services/MongoDB|MongoDB]].
-- Très gros volumes répartis sur de nombreux nœuds en écriture → [[Dev/Services/Apache Cassandra|Apache Cassandra]].
+- Source de vérité durable au-delà de ce qui tient en RAM → base sur disque ([[Postgres]], [[MongoDB]]).
+- Requêtes ad hoc riches sur les données → [[MongoDB]].
+- Très gros volumes répartis sur de nombreux nœuds en écriture → [[Apache Cassandra]].
 
 ## Déploiement & coût
 
@@ -51,11 +51,11 @@ Store **clé-valeur en mémoire** : les données vivent en RAM, d'où des latenc
 
 ## Alternatives
 
-- [[Dev/Services/MongoDB|MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
-- [[Dev/Services/Apache Cassandra|Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
+- [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
+- [[Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases NoSQL]] — comparatif des moteurs NoSQL
 - Doc : https://redis.io/docs/

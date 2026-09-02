@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/KServe|KServe]]", "[[Dev/Services/Seldon Core|Seldon Core]]", "[[Dev/Services/TorchServe|TorchServe]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
+alternatives: ["[[BentoML]]", "[[NVIDIA Triton]]", "[[KServe]]", "[[Seldon Core]]", "[[TorchServe]]", "[[Ray Serve]]"]
 complements: []
 tags: [model-serving, inference, gpu]
 url_docs: https://www.tensorflow.org/tfx/guide/serving
@@ -21,7 +21,7 @@ url_repo: https://github.com/tensorflow/serving
 
 ## Pourquoi
 
-Serveur d'inférence dédié aux modèles **[[Dev/Services/TensorFlow|TensorFlow]]/Keras** au format `SavedModel`. Cœur **C++** haute performance, conçu pour la production : **API REST (JSON) et gRPC (Protobuf)**, **versionnage** de modèles (chargement/déchargement à chaud, politiques de version), **batching** de requêtes, et chargement de nouveaux modèles sans redémarrer. Brique de déploiement historique de l'écosystème TF, intégrée aux pipelines **TFX**. Mono-framework par nature, mais très éprouvée et toujours activement maintenue.
+Serveur d'inférence dédié aux modèles **[[TensorFlow]]/Keras** au format `SavedModel`. Cœur **C++** haute performance, conçu pour la production : **API REST (JSON) et gRPC (Protobuf)**, **versionnage** de modèles (chargement/déchargement à chaud, politiques de version), **batching** de requêtes, et chargement de nouveaux modèles sans redémarrer. Brique de déploiement historique de l'écosystème TF, intégrée aux pipelines **TFX**. Mono-framework par nature, mais très éprouvée et toujours activement maintenue.
 
 ## Quand l'utiliser
 
@@ -32,9 +32,9 @@ Serveur d'inférence dédié aux modèles **[[Dev/Services/TensorFlow|TensorFlow
 
 ## Quand NE PAS l'utiliser
 
-- Modèles **non-TensorFlow** (PyTorch, ONNX, scikit-learn…) → [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] ou [[Dev/Services/BentoML|BentoML]].
-- Logique métier riche autour de l'inférence en Python → [[Dev/Services/BentoML|BentoML]].
-- Orchestration Kubernetes déclarative avec scale-to-zero → [[Dev/Services/KServe|KServe]].
+- Modèles **non-TensorFlow** (PyTorch, ONNX, scikit-learn…) → [[NVIDIA Triton]] ou [[BentoML]].
+- Logique métier riche autour de l'inférence en Python → [[BentoML]].
+- Orchestration Kubernetes déclarative avec scale-to-zero → [[KServe]].
 
 ## Déploiement & coût
 
@@ -50,15 +50,15 @@ Serveur d'inférence dédié aux modèles **[[Dev/Services/TensorFlow|TensorFlow
 
 ## Alternatives
 
-- [[Dev/Services/BentoML|BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
-- [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
-- [[Dev/Services/KServe|KServe]] — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
-- [[Dev/Services/Seldon Core|Seldon Core]] — Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
-- [[Dev/Services/TorchServe|TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
-- [[Dev/Services/Ray Serve|Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
+- [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
+- [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
+- [[KServe]] — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
+- [[Seldon Core]] — Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
+- [[TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
+- [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
 ## Liens
 
-- Sert les modèles de [[Dev/Services/TensorFlow|TensorFlow]] (équivalent TF de [[Dev/Services/TorchServe|TorchServe]]).
+- Sert les modèles de [[TensorFlow]] (équivalent TF de [[TorchServe]]).
 - [[Comparatif - Serving de modèles]] — comparatif de la catégorie
 - Doc : https://www.tensorflow.org/tfx/guide/serving

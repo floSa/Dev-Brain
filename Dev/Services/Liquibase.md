@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-core
 maturite: production
 langage: Java
-alternatives: ["[[Dev/Services/Flyway|Flyway]]", "[[Dev/Services/Alembic|Alembic]]"]
+alternatives: ["[[Flyway]]", "[[Alembic]]"]
 complements: []
 tags: [migration, relational]
 url_docs: https://docs.liquibase.com/
@@ -29,8 +29,8 @@ Gère l'évolution d'un schéma de base comme du code versionné. Les changement
 
 ## Quand NE PAS l'utiliser
 
-- Préférence pour des migrations **SQL-first** minimalistes → [[Dev/Services/Flyway|Flyway]].
-- Migrations générées et couplées à un ORM TypeScript → [[Dev/Services/Prisma|Prisma]].
+- Préférence pour des migrations **SQL-first** minimalistes → [[Flyway]].
+- Migrations générées et couplées à un ORM TypeScript → [[Prisma]].
 
 ## Déploiement & coût
 
@@ -44,8 +44,8 @@ Gère l'évolution d'un schéma de base comme du code versionné. Les changement
 
 ## Alternatives
 
-- [[Dev/Services/Flyway|Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
-- [[Dev/Services/Alembic|Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
+- [[Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
+- [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
 
 ## Liens
 

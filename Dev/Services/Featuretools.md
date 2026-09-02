@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
+alternatives: ["[[Scikit-Learn]]"]
 complements: []
 tags: [feature-engineering]
 url_docs: https://featuretools.alteryx.com/
@@ -30,8 +30,8 @@ Automatise la création de variables (*feature engineering*) sur des données **
 
 ## Quand NE PAS l'utiliser
 
-- Une seule table plate sans relations → la FE manuelle de [[Dev/Services/Scikit-Learn|Scikit-Learn]] (`ColumnTransformer`) suffit.
-- Encodage catégoriel fin (Target, WoE) → [[Dev/Services/category_encoders|category_encoders]].
+- Une seule table plate sans relations → la FE manuelle de [[Scikit-Learn]] (`ColumnTransformer`) suffit.
+- Encodage catégoriel fin (Target, WoE) → [[category_encoders]].
 - Très gros volumes hors mémoire → backends Dask/Spark (support partiel) ou calcul d'agrégats en SQL/Spark en amont.
 
 ## Déploiement & coût
@@ -48,10 +48,10 @@ Automatise la création de variables (*feature engineering*) sur des données **
 
 ## Alternatives
 
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
 ## Liens
 
 - Concept implémenté : [[Ingénierie des caractéristiques]]
-- Étape aval : [[Sélection de variables]] · encodage fin : [[Dev/Services/category_encoders|category_encoders]]
+- Étape aval : [[Sélection de variables]] · encodage fin : [[category_encoders]]
 - Doc : https://featuretools.alteryx.com/

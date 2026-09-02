@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/scipy.signal|scipy.signal]]"]
+alternatives: ["[[scipy.signal]]"]
 complements: []
 tags: [signal-processing, spectrogram, feature-engineering]
 url_docs: https://librosa.org/doc/
@@ -30,9 +30,9 @@ Bibliothèque de référence pour l'**analyse audio et musicale** en Python. Cha
 
 ## Quand NE PAS l'utiliser
 
-- **DSP générique** non audio (filtres, capteurs) → [[Dev/Services/scipy.signal|scipy.signal]].
-- Analyse par **ondelettes** → [[Dev/Services/PyWavelets|PyWavelets]].
-- **Reconnaissance vocale** (ASR) ou TTS de bout en bout → modèles dédiés ([[Dev/Services/HuggingFace|HuggingFace]] : Whisper, wav2vec2).
+- **DSP générique** non audio (filtres, capteurs) → [[scipy.signal]].
+- Analyse par **ondelettes** → [[PyWavelets]].
+- **Reconnaissance vocale** (ASR) ou TTS de bout en bout → modèles dédiés ([[HuggingFace]] : Whisper, wav2vec2).
 - Traitement audio **temps réel / faible latence** → librosa vise l'analyse hors ligne (NumPy, CPU).
 
 ## Déploiement & coût
@@ -50,12 +50,12 @@ Bibliothèque de référence pour l'**analyse audio et musicale** en Python. Cha
 
 ## Alternatives
 
-- [[Dev/Services/scipy.signal|scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
+- [[scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
 
 ## Liens
 
 - [[STFT et spectrogramme]] — mel-spectrogramme et MFCC, son terrain principal.
 - [[Traitement du signal]] — page chapeau.
-- [[Dev/Services/scipy.signal|scipy.signal]] — DSP bas niveau sous-jacent.
-- [[Dev/Patterns/Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
+- [[scipy.signal]] — DSP bas niveau sous-jacent.
+- [[Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
 - Doc : https://librosa.org/doc/

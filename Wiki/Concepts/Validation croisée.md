@@ -42,7 +42,7 @@ tags: [model-evaluation, resampling, supervised]
 - **Fuite de données** : toute transformation apprise (imputation, [[Mise à l'échelle|mise à l'échelle]], encodage) doit être ajustée *dans* chaque pli, pas avant. → mettre le `Pipeline` complet dans la CV.
 - Le rééchantillonnage avec remise du [[Bootstrap]] est le cousin de la CV pour estimer la distribution d'une métrique ; la CV, elle, partitionne sans remise.
 - Reproductibilité : fixer la graine (`random_state`) pour comparer des modèles sur les mêmes plis.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.model_selection — cross_val_score, KFold, StratifiedKFold, TimeSeriesSplit]].
+- Outils : [[Scikit-Learn|sklearn.model_selection — cross_val_score, KFold, StratifiedKFold, TimeSeriesSplit]].
 
 ## Approches voisines & alternatives
 

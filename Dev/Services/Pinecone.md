@@ -10,7 +10,7 @@ hosted: [managed]
 maturite: production
 langage: Rust
 scaling: serverless
-alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]"]
+alternatives: ["[[Weaviate]]", "[[Qdrant]]", "[[pgvector]]", "[[Milvus]]"]
 complements: []
 tags: [vector-db, semantic-search, rag]
 url_docs: https://docs.pinecone.io
@@ -32,10 +32,10 @@ Base vectorielle entièrement managée, pionnière du secteur. Architecture serv
 
 ## Quand NE PAS l'utiliser
 
-- Self-host, souveraineté ou refus de dépendre d'un SaaS → [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]] ou [[Dev/Services/Milvus|Milvus]].
+- Self-host, souveraineté ou refus de dépendre d'un SaaS → [[Qdrant]], [[Weaviate]] ou [[Milvus]].
 - Open-source exigé / contrôle bas niveau de l'index → mêmes alternatives.
-- Du Postgres déjà en place et volume modéré → [[Dev/Services/pgvector|pgvector]].
-- POC jetable de quelques milliers de vecteurs → un index [[Dev/Services/Faiss|Faiss]] en mémoire suffit.
+- Du Postgres déjà en place et volume modéré → [[pgvector]].
+- POC jetable de quelques milliers de vecteurs → un index [[Faiss]] en mémoire suffit.
 
 ## Déploiement & coût
 
@@ -51,10 +51,10 @@ Base vectorielle entièrement managée, pionnière du secteur. Architecture serv
 
 ## Alternatives
 
-- [[Dev/Services/Weaviate|Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
-- [[Dev/Services/Qdrant|Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
-- [[Dev/Services/pgvector|pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
-- [[Dev/Services/Milvus|Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
+- [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
+- [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
+- [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
+- [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 
 ## Liens
 

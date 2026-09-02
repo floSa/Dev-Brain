@@ -37,7 +37,7 @@ tags: [agents, llm, retrieval]
 
 - Le court terme suffit pour des tâches courtes ; n'ajouter du long terme que si l'agent doit se souvenir entre sessions ou dépasse la fenêtre.
 - **Résumer** plutôt que tronquer brutalement quand l'historique compte ; garder les ancres (objectif, décisions clés) en clair.
-- Outillage : [[Dev/Services/Letta|Letta]] (ex-MemGPT) fait de la mémoire persistante hiérarchique sa **primitive centrale** ; [[Dev/Services/Hermes Agent|Hermes Agent]] la couple à une boucle d'apprentissage (skills auto-créés = mémoire procédurale) ; [[Dev/Services/LangGraph|LangGraph]] persiste l'état entre les pas (checkpointers) ; les frameworks RAG ([[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/LangChain|LangChain]]) fournissent stockage et récupération de mémoire.
+- Outillage : [[Letta]] (ex-MemGPT) fait de la mémoire persistante hiérarchique sa **primitive centrale** ; [[Hermes Agent]] la couple à une boucle d'apprentissage (skills auto-créés = mémoire procédurale) ; [[LangGraph]] persiste l'état entre les pas (checkpointers) ; les frameworks RAG ([[LlamaIndex]], [[LangChain]]) fournissent stockage et récupération de mémoire.
 - Pièges : mémoire qui enfle sans tri (bruit, coût) ; souvenirs périmés jamais invalidés ; fuite de données entre utilisateurs si la mémoire n'est pas cloisonnée.
 
 ## Approches voisines & alternatives
@@ -49,7 +49,7 @@ tags: [agents, llm, retrieval]
 - [[Agent patterns]] — la mémoire conditionne les patrons (réflexion, plan-execute).
 - [[mcp-protocol]] — les *resources* MCP sont un canal d'alimentation de la mémoire long terme.
 - Alternative : **tout garder dans le contexte** (fenêtres longues) — simple, mais coûteux et plafonné ; la récupération reste préférable au-delà d'un certain volume.
-- Implémentations fichées : [[Dev/Services/OpenViking|OpenViking]] (contexte exposé en système de fichiers parcourable), [[Dev/Outils/ai-memory|ai-memory]] (mémoire partagée entre CLI de code).
+- Implémentations fichées : [[OpenViking]] (contexte exposé en système de fichiers parcourable), [[ai-memory]] (mémoire partagée entre CLI de code).
 
 ## Pour aller plus loin
 

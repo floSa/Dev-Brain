@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/SHAP|SHAP]]", "[[Dev/Services/interpreto|interpreto]]", "[[Dev/Services/nnsight|nnsight]]"]
+alternatives: ["[[SHAP]]", "[[interpreto]]", "[[nnsight]]"]
 complements: []
 tags: [explainability, deep-learning]
 url_docs: https://captum.ai/
@@ -28,16 +28,16 @@ C'est la référence de fait dès qu'on travaille en PyTorch et qu'on veut autre
 ## Quand l'utiliser
 
 - Modèle **PyTorch**, quel qu'il soit (vision, texte, tabulaire, multimodal) — c'est son terrain naturel.
-- Besoin d'[[Attribution par gradient|attributions par gradient]] : une rétropropagation plutôt que des milliers de passes de perturbation. Nettement plus rapide que [[Dev/Services/SHAP|SHAP]] sur un réseau.
+- Besoin d'[[Attribution par gradient|attributions par gradient]] : une rétropropagation plutôt que des milliers de passes de perturbation. Nettement plus rapide que [[SHAP]] sur un réseau.
 - Attribuer à autre chose que l'entrée : à une couche interne, à un neurone, ou aux **données d'entraînement** (TracIn).
 - Comparer plusieurs méthodes d'attribution sans réécrire le code d'accroche à chaque fois.
 - Évaluer la fidélité des attributions (`captum.metrics` : infidelity, sensitivity).
 
 ## Quand NE PAS l'utiliser
 
-- **Modèle non PyTorch** : conçue autour de `torch.autograd`. Pour un ensemble d'arbres ou du scikit-learn, utiliser [[Dev/Services/SHAP|SHAP]] (dont le TreeSHAP exact est imbattable) ou [[Dev/Services/LIME|LIME]].
-- **Interprétabilité mécaniste** : Captum attribue, elle ne rétro-conçoit pas de circuits. Pour ça, [[Dev/Services/TransformerLens|TransformerLens]] ou [[Dev/Services/nnsight|nnsight]].
-- **Méthodes à base de concepts sur modèles de langage** : le pipeline concept de bout en bout est le terrain d'[[Dev/Services/interpreto|interpreto]]. Captum a bien TCAV, mais pas la chaîne complète.
+- **Modèle non PyTorch** : conçue autour de `torch.autograd`. Pour un ensemble d'arbres ou du scikit-learn, utiliser [[SHAP]] (dont le TreeSHAP exact est imbattable) ou [[LIME]].
+- **Interprétabilité mécaniste** : Captum attribue, elle ne rétro-conçoit pas de circuits. Pour ça, [[TransformerLens]] ou [[nnsight]].
+- **Méthodes à base de concepts sur modèles de langage** : le pipeline concept de bout en bout est le terrain d'[[interpreto]]. Captum a bien TCAV, mais pas la chaîne complète.
 - **Explication destinée à un métier** : elle produit des tenseurs, pas des rapports. La couche de restitution est à écrire.
 
 ## Déploiement & coût
@@ -57,15 +57,15 @@ C'est la référence de fait dès qu'on travaille en PyTorch et qu'on veut autre
 
 ## Alternatives
 
-- [[Dev/Services/SHAP|SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
-- [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
-- [[Dev/Services/nnsight|nnsight]] — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
+- [[SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
+- [[interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
+- [[nnsight]] — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
 
 ## Liens
 
 - [[Attribution par gradient]] — le concept parent : Saliency, IG, SmoothGrad, et pourquoi la saturation impose IG.
 - [[Explicabilité des modèles]] — le chapeau de la famille.
-- [[Dev/Patterns/Comparatif - Explicabilité|Comparatif - Explicabilité]] — le tableau de la famille.
-- [[Dev/Services/PyTorch|PyTorch]] — le socle requis.
+- [[Comparatif - Explicabilité]] — le tableau de la famille.
+- [[PyTorch]] — le socle requis.
 - [[CNN]] — le terrain d'origine de GradCAM.
 - [[Interprétabilité mécaniste]] — l'étage au-dessus, hors périmètre de Captum.

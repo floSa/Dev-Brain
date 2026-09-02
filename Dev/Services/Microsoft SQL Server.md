@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: single-node
-alternatives: ["[[Dev/Services/Postgres|Postgres]]", "[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]"]
+alternatives: ["[[Postgres]]", "[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]"]
 complements: []
 tags: [relational]
 url_docs: https://learn.microsoft.com/en-us/sql/sql-server/
@@ -32,9 +32,9 @@ SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosys
 
 ## Quand NE PAS l'utiliser
 
-- Préférence open-source, sans coût de licence → [[Dev/Services/Postgres|Postgres]] ou [[Dev/Services/MariaDB|MariaDB]].
-- Application embarquée locale → [[Dev/Services/SQLite|SQLite]].
-- Scale horizontal distribué multi-région natif → [[Dev/Services/CockroachDB|CockroachDB]].
+- Préférence open-source, sans coût de licence → [[Postgres]] ou [[MariaDB]].
+- Application embarquée locale → [[SQLite]].
+- Scale horizontal distribué multi-région natif → [[CockroachDB]].
 
 ## Déploiement & coût
 
@@ -50,14 +50,14 @@ SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosys
 
 ## Alternatives
 
-- [[Dev/Services/Postgres|Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
-- [[Dev/Services/MySQL|MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
-- [[Dev/Services/MariaDB|MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
-- [[Dev/Services/SQLite|SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
-- [[Dev/Services/CockroachDB|CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
+- [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
+- [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
+- [[MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
+- [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
+- [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
 - Doc : https://learn.microsoft.com/en-us/sql/sql-server/

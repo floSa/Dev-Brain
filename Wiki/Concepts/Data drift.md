@@ -42,8 +42,8 @@ tags: [data-drift, concept-drift, model-monitoring]
 - Fixer une **fenêtre de référence** et la comparer à des fenêtres glissantes ; surveiller les **features** (input drift) **et** les **prédictions/scores** (output drift).
 - Suivre la **performance réelle** dès que les labels arrivent — souvent **retardés** : sans labels, le drift des inputs/scores sert de proxy d'alerte précoce.
 - Réagir, ne pas sur-réagir : alerte → investigation → ré-entraînement ciblé ou rollback. Un drift saisonnier connu n'est pas un incident.
-- Tracer les métriques de drift et de perf dans le suivi d'expériences ([[Dev/Services/MLflow|MLflow]]) pour relier dérive observée et version de modèle.
-- Outillage spécialisé : [[Dev/Services/Evidently|Evidently]] (en fiche), NannyML, WhyLabs.
+- Tracer les métriques de drift et de perf dans le suivi d'expériences ([[MLflow]]) pour relier dérive observée et version de modèle.
+- Outillage spécialisé : [[Evidently]] (en fiche), NannyML, WhyLabs.
 
 ## Approches voisines & alternatives
 
@@ -51,9 +51,9 @@ tags: [data-drift, concept-drift, model-monitoring]
 - [[KL divergence]], [[Jensen-Shannon divergence]], [[Wasserstein distance]] — mesures quantifiant l'écart entre référence et courant.
 - [[Monitoring de modèle en production]] — le cadre opérationnel qui surveille le drift parmi d'autres signaux (perf, données, infra).
 - [[Calibration]] — la fiabilité des probabilités prédites se dégrade typiquement avec le drift.
-- [[Dev/Services/MLflow|MLflow]] — tracking / registre où journaliser drift et performance pour le monitoring.
-- [[Dev/Services/Evidently|Evidently]] — outillage de détection de drift et de monitoring (PSI, KS, 20+ méthodes, rapports et dashboards).
-- [[Dev/Services/River|River]] — apprentissage en ligne qui s'adapte à la dérive en continu (détecteurs ADWIN / Page-Hinkley intégrés), plutôt que de la détecter pour ré-entraîner en batch.
+- [[MLflow]] — tracking / registre où journaliser drift et performance pour le monitoring.
+- [[Evidently]] — outillage de détection de drift et de monitoring (PSI, KS, 20+ méthodes, rapports et dashboards).
+- [[River]] — apprentissage en ligne qui s'adapte à la dérive en continu (détecteurs ADWIN / Page-Hinkley intégrés), plutôt que de la détecter pour ré-entraîner en batch.
 
 ## Pour aller plus loin
 

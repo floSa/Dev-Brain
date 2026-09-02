@@ -59,7 +59,7 @@ tags: [explainability, deep-learning, representation-learning]
 - **Ne pas conclure à la causalité.** Ce que la sonde trouve est présent, pas forcément utilisé. C'est là que [[Superposition|superposition]] et [[Sparse autoencoders|SAE]] prennent le relais : le probing cherche une direction **connue d'avance**, les SAE **découvrent** les directions inconnues. Les deux sont complémentaires, pas concurrents.
 - **Attention à la fuite** : les activations sont de très grande dimension et $n$ est souvent petit. Régulariser la sonde et valider proprement ([[Validation croisée]], [[Data leakage]]).
 - Usage industriel réel : détecter en temps réel qu'un LLM encode un état problématique (toxicité, hallucination) en lisant une direction connue de ses activations — bien moins coûteux qu'un modèle de garde ([[Guardrails]]).
-- Outils : [[Dev/Services/interpreto|interpreto]] (sondes linéaires et par centroïdes, avec l'outillage de concepts autour), [[Dev/Services/nnsight|nnsight]] / [[Dev/Services/TransformerLens|TransformerLens]] pour capter les activations, [[Dev/Services/Scikit-Learn|sklearn]] pour la sonde elle-même.
+- Outils : [[interpreto]] (sondes linéaires et par centroïdes, avec l'outillage de concepts autour), [[nnsight]] / [[TransformerLens]] pour capter les activations, [[Scikit-Learn|sklearn]] pour la sonde elle-même.
 
 ## Approches voisines & alternatives
 

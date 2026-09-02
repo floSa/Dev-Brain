@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/ScaNN|ScaNN]]", "[[Dev/Services/Chroma|Chroma]]"]
+alternatives: ["[[hnswlib]]", "[[Annoy]]", "[[ScaNN]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://faiss.ai
@@ -30,10 +30,10 @@ Bibliothèque C++ (bindings Python) de Meta FAIR pour la recherche de similarit�
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de persistance, filtrage métadonnées, CRUD, API ou multi-tenant → un serveur : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Milvus|Milvus]].
-- Du Postgres déjà en place → [[Dev/Services/pgvector|pgvector]].
-- Zéro infra à gérer → [[Dev/Services/Pinecone|Pinecone]].
-- Prototype RAG clé en main (collections + métadonnées sans code) → [[Dev/Services/Chroma|Chroma]].
+- Besoin de persistance, filtrage métadonnées, CRUD, API ou multi-tenant → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
+- Du Postgres déjà en place → [[pgvector]].
+- Zéro infra à gérer → [[Pinecone]].
+- Prototype RAG clé en main (collections + métadonnées sans code) → [[Chroma]].
 
 ## Déploiement & coût
 
@@ -50,10 +50,10 @@ Bibliothèque C++ (bindings Python) de Meta FAIR pour la recherche de similarit�
 
 ## Alternatives
 
-- [[Dev/Services/hnswlib|hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
-- [[Dev/Services/Annoy|Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
-- [[Dev/Services/ScaNN|ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
-- [[Dev/Services/Chroma|Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+- [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
+- [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
+- [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+- [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
 ## Liens
 

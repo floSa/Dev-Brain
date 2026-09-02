@@ -56,7 +56,7 @@ tags: [supervised, tree-based, ensemble, classification, regression]
 - **Attention à l'importance des variables** : comme pour tous les modèles à arbres, l'importance par impureté est biaisée vers les variables à forte cardinalité. Utiliser l'importance par permutation ([[Explicabilité des modèles]]).
 - **Pas de standardisation nécessaire**, comme tout modèle à arbres ([[Types de données et choix de modèle]]).
 - Les seuils aléatoires en font aussi une brique d'extraction de représentations (*random embeddings*, `RandomTreesEmbedding`).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble]] — `ExtraTreesClassifier`, `ExtraTreesRegressor`, `RandomTreesEmbedding`.
+- Outils : [[Scikit-Learn|sklearn.ensemble]] — `ExtraTreesClassifier`, `ExtraTreesRegressor`, `RandomTreesEmbedding`.
 
 ## Approches voisines & alternatives
 

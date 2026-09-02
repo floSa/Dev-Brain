@@ -52,13 +52,13 @@ tags: [vector-db, embeddings, semantic-search, rag]
 - Pipeline RAG : découper (chunking) → encoder → indexer → requêter top-$k$ → fournir au LLM.
 - Index par défaut : HNSW (bon compromis rappel/latence) ; IVF si très gros volume.
 - Pièges fréquents : métrique incohérente avec le modèle ; dimensions qui font exploser la RAM ; filtrage mal placé qui ruine le rappel ; oubli de la mise à jour / suppression des vecteurs.
-- Pas toujours nécessaire : pour quelques milliers de vecteurs, un index [[Dev/Services/Faiss|Faiss]] en mémoire (ou du NumPy) suffit ; pour un besoin purement lexical, un moteur full-text suffit.
+- Pas toujours nécessaire : pour quelques milliers de vecteurs, un index [[Faiss]] en mémoire (ou du NumPy) suffit ; pour un besoin purement lexical, un moteur full-text suffit.
 
 ## Approches voisines & alternatives
 
-- Serveurs (persistance, filtrage, API, scaling) : [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/pgvector|pgvector]], [[Dev/Services/Milvus|Milvus]], [[Dev/Services/Pinecone|Pinecone]].
-- Bibliothèques ANN embarquées (index in-process, sans serveur) : [[Dev/Services/Faiss|Faiss]], [[Dev/Services/hnswlib|hnswlib]], [[Dev/Services/Annoy|Annoy]], [[Dev/Services/ScaNN|ScaNN]] ; bases légères embarquées (entre les deux) : [[Dev/Services/Chroma|Chroma]], [[Dev/Services/LanceDB|LanceDB]] (multimodale, format colonnaire Lance).
-- Moteurs recherche+vectoriel (full-text + ANN dans un même moteur) : [[Dev/Services/Vespa|Vespa]], [[Dev/Services/Elasticsearch|Elasticsearch]], [[Dev/Services/txtai|txtai]], [[Dev/Services/Marqo|Marqo]] — cf. [[Recherche d'information]].
+- Serveurs (persistance, filtrage, API, scaling) : [[Weaviate]], [[Qdrant]], [[pgvector]], [[Milvus]], [[Pinecone]].
+- Bibliothèques ANN embarquées (index in-process, sans serveur) : [[Faiss]], [[hnswlib]], [[Annoy]], [[ScaNN]] ; bases légères embarquées (entre les deux) : [[Chroma]], [[LanceDB]] (multimodale, format colonnaire Lance).
+- Moteurs recherche+vectoriel (full-text + ANN dans un même moteur) : [[Vespa]], [[Elasticsearch]], [[txtai]], [[Marqo]] — cf. [[Recherche d'information]].
 - [[Index ANN — internes]] — comment ces index fonctionnent (HNSW, IVF, PQ) et se règlent.
 - [[embeddings]] — ce que ces bases stockent et recherchent.
 - Vector norms — la base mathématique des distances employées ici (réservoir v1).

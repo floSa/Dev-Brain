@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: ["[[Dev/Services/pip|pip]]"]
+alternatives: ["[[pip]]"]
 complements: []
 tags: [package-manager]
 url_docs: https://docs.astral.sh/uv/
@@ -19,7 +19,7 @@ url_repo: https://github.com/astral-sh/uv
 
 ## Pourquoi
 
-Gestionnaire de paquets et de projets Python **écrit en Rust** par Astral (les auteurs de [[Dev/Services/Ruff|Ruff]]). Résolution et installation de dépendances **10–100× plus rapides** que pip, grâce à un résolveur natif et un cache global partagé entre projets. Outil unique qui absorbe le rôle de **pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine** : gestion de projet (`pyproject.toml` + `uv.lock`), environnements virtuels, installation d'outils CLI isolés, et installation des versions de Python elles-mêmes.
+Gestionnaire de paquets et de projets Python **écrit en Rust** par Astral (les auteurs de [[Ruff]]). Résolution et installation de dépendances **10–100× plus rapides** que pip, grâce à un résolveur natif et un cache global partagé entre projets. Outil unique qui absorbe le rôle de **pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine** : gestion de projet (`pyproject.toml` + `uv.lock`), environnements virtuels, installation d'outils CLI isolés, et installation des versions de Python elles-mêmes.
 
 ## Quand l'utiliser
 
@@ -30,7 +30,7 @@ Gestionnaire de paquets et de projets Python **écrit en Rust** par Astral (les 
 
 ## Quand NE PAS l'utiliser
 
-- Environnement verrouillé sur l'outillage historique, sans marge de changement → [[Dev/Services/pip|pip]].
+- Environnement verrouillé sur l'outillage historique, sans marge de changement → [[pip]].
 - Besoin de fonctions binaires propres à conda pour l'écosystème scientifique non-wheel.
 
 ## Déploiement & coût
@@ -46,10 +46,10 @@ Gestionnaire de paquets et de projets Python **écrit en Rust** par Astral (les 
 
 ## Alternatives
 
-- [[Dev/Services/pip|pip]] — Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
+- [[pip]] — Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
 
 ## Liens
 
 - [[Comparatif - Gestionnaires de paquets Python]] — uv vs pip.
-- Même éditeur (Astral) : [[Dev/Services/Ruff|Ruff]].
+- Même éditeur (Astral) : [[Ruff]].
 - Doc : https://docs.astral.sh/uv/

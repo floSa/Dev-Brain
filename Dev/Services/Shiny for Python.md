@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Gradio|Gradio]]"]
+alternatives: ["[[Streamlit]]", "[[Dash]]", "[[Gradio]]"]
 complements: []
 tags: [data-app, dashboard, web-framework]
 url_docs: https://shiny.posit.co/py/
@@ -29,9 +29,9 @@ Port Python de **Shiny**, le framework d'apps réactives de **Posit** (ex-RStudi
 
 ## Quand NE PAS l'utiliser
 
-- Prototype ultra-rapide depuis un script, sans réfléchir à la réactivité → [[Dev/Services/Streamlit|Streamlit]].
-- Écosystème graphes Plotly et tooling dashboard Plotly → [[Dev/Services/Dash|Dash]].
-- Simple démo entrée→sortie d'un modèle ML → [[Dev/Services/Gradio|Gradio]].
+- Prototype ultra-rapide depuis un script, sans réfléchir à la réactivité → [[Streamlit]].
+- Écosystème graphes Plotly et tooling dashboard Plotly → [[Dash]].
+- Simple démo entrée→sortie d'un modèle ML → [[Gradio]].
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ Port Python de **Shiny**, le framework d'apps réactives de **Posit** (ex-RStudi
 
 ## Alternatives
 
-- [[Dev/Services/Streamlit|Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
-- [[Dev/Services/Dash|Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
-- [[Dev/Services/Gradio|Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
+- [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
+- [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
+- [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Apps data & démos ML]] — Shiny vs Streamlit / Dash / Gradio.
+- [[Comparatif - Apps data & démos ML]] — Shiny vs Streamlit / Dash / Gradio.
 - Doc : https://shiny.posit.co/py/

@@ -40,7 +40,7 @@ tags: [forecasting, timeseries]
 
 - **Classer le portefeuille** (ADI/CV²) avant de choisir : Croston/SBA pour l'intermittent, TSB si risque d'obsolescence.
 - Les décisions de stock se prennent sur des **quantiles** (niveau de service), pas sur la moyenne — cadrer l'objectif en amont ([[Forecasting framing]]).
-- Outils : [[Dev/Services/statsforecast|statsforecast — CrostonClassic, CrostonSBA, TSB, ADIDA, IMAPA]].
+- Outils : [[statsforecast|statsforecast — CrostonClassic, CrostonSBA, TSB, ADIDA, IMAPA]].
 
 ## Approches voisines & alternatives
 

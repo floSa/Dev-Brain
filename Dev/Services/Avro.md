@@ -8,7 +8,7 @@ famille: specification
 licence_type: open-source
 maturite: production
 langage: Java
-alternatives: ["[[Dev/Services/Parquet|Parquet]]"]
+alternatives: ["[[Parquet]]"]
 complements: []
 tags: [file-format, serialization, schema-evolution]
 url_docs: https://avro.apache.org/docs/
@@ -30,9 +30,9 @@ Apache Avro est un système de **sérialisation orienté ligne** : chaque enregi
 
 ## Quand NE PAS l'utiliser
 
-- Scans analytiques de quelques colonnes sur de gros volumes → [[Dev/Services/Parquet|Parquet]] (orienté colonnes).
+- Scans analytiques de quelques colonnes sur de gros volumes → [[Parquet]] (orienté colonnes).
 - Analytique en mémoire / interop colonnaire → Apache Arrow.
-- Stockage de tables de data lake avec sémantique transactionnelle → [[Dev/Services/Apache Iceberg|Apache Iceberg]].
+- Stockage de tables de data lake avec sémantique transactionnelle → [[Apache Iceberg]].
 
 ## Déploiement & coût
 
@@ -49,10 +49,10 @@ Apache Avro est un système de **sérialisation orienté ligne** : chaque enregi
 
 ## Alternatives
 
-- [[Dev/Services/Parquet|Parquet]] — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
+- [[Parquet]] — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
 ## Liens
 
-- [[Dev/Services/Apache Iceberg|Apache Iceberg]] — utilise Avro pour ses fichiers de métadonnées (manifests).
+- [[Apache Iceberg]] — utilise Avro pour ses fichiers de métadonnées (manifests).
 - Schéma de flux : Confluent Schema Registry (gouvernance des schémas Kafka).
 - Doc : https://avro.apache.org/docs/

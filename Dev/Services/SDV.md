@@ -19,7 +19,7 @@ url_repo: https://github.com/sdv-dev/SDV
 
 ## Pourquoi
 
-SDV (Synthetic Data Vault, projet DataCebo, né au Data to AI Lab du MIT en 2016) **apprend les patterns d'un vrai jeu tabulaire** et en émet une copie **synthétique** statistiquement proche, sans exposer les enregistrements d'origine. Contrairement à [[Dev/Services/Faker|Faker]] / [[Dev/Services/Mimesis|Mimesis]] (valeurs tirées par règles), SDV **modélise la distribution jointe** : corrélations, marginales, contraintes. Il offre plusieurs synthétiseurs, du statistique (**GaussianCopula**) au profond (**CTGAN**, **TVAE**, CopulaGAN), pilotés par des **métadonnées** décrivant le schéma. Couvre la **table unique**, le **multi-tables relationnel** (HMA) et le **séquentiel** (PAR), avec des rapports de **qualité** et de diagnostic.
+SDV (Synthetic Data Vault, projet DataCebo, né au Data to AI Lab du MIT en 2016) **apprend les patterns d'un vrai jeu tabulaire** et en émet une copie **synthétique** statistiquement proche, sans exposer les enregistrements d'origine. Contrairement à [[Faker]] / [[Mimesis]] (valeurs tirées par règles), SDV **modélise la distribution jointe** : corrélations, marginales, contraintes. Il offre plusieurs synthétiseurs, du statistique (**GaussianCopula**) au profond (**CTGAN**, **TVAE**, CopulaGAN), pilotés par des **métadonnées** décrivant le schéma. Couvre la **table unique**, le **multi-tables relationnel** (HMA) et le **séquentiel** (PAR), avec des rapports de **qualité** et de diagnostic.
 
 ## Quand l'utiliser
 
@@ -30,8 +30,8 @@ SDV (Synthetic Data Vault, projet DataCebo, né au Data to AI Lab du MIT en 2016
 
 ## Quand NE PAS l'utiliser
 
-- Simples **fixtures / fakes** sans souci de distribution → [[Dev/Services/Faker|Faker]], [[Dev/Services/Mimesis|Mimesis]] (plus simples, plus rapides).
-- Seulement **rééquilibrer une classe minoritaire** → [[Dev/Services/imbalanced-learn|imbalanced-learn]] (SMOTE), plus léger.
+- Simples **fixtures / fakes** sans souci de distribution → [[Faker]], [[Mimesis]] (plus simples, plus rapides).
+- Seulement **rééquilibrer une classe minoritaire** → [[imbalanced-learn]] (SMOTE), plus léger.
 - Usage **commercial de type service de données synthétiques** : la licence BSL l'interdit (voir ci-dessous).
 
 ## Déploiement & coût
@@ -49,11 +49,11 @@ SDV (Synthetic Data Vault, projet DataCebo, né au Data to AI Lab du MIT en 2016
 
 ## Alternatives
 
-Pas d'équivalent direct dans le brain. Briques voisines mais de **nature différente** : [[Dev/Services/Faker|Faker]] et [[Dev/Services/Mimesis|Mimesis]] génèrent des fakes par règles (pas de distribution apprise) ; [[Dev/Services/imbalanced-learn|imbalanced-learn]] (SMOTE) synthétise des exemples minoritaires par interpolation, sans modèle génératif global.
+Pas d'équivalent direct dans le brain. Briques voisines mais de **nature différente** : [[Faker]] et [[Mimesis]] génèrent des fakes par règles (pas de distribution apprise) ; [[imbalanced-learn]] (SMOTE) synthétise des exemples minoritaires par interpolation, sans modèle génératif global.
 
 ## Liens
 
 - [[Synthetic data generation]] — le concept parent : ici, synthèse tabulaire par modèles appris (vs génération par LLM).
-- [[Dev/Services/Faker|Faker]] / [[Dev/Services/Mimesis|Mimesis]] — génération par règles, le pendant simple.
-- [[Dev/Services/imbalanced-learn|imbalanced-learn]] — synthèse ciblée de classe minoritaire (SMOTE).
+- [[Faker]] / [[Mimesis]] — génération par règles, le pendant simple.
+- [[imbalanced-learn]] — synthèse ciblée de classe minoritaire (SMOTE).
 - Doc : https://docs.sdv.dev/sdv

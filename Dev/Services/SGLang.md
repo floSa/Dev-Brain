@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/llama.cpp|llama.cpp]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"]
+alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[TensorRT-LLM]]"]
 complements: []
 tags: [llm, model-serving, inference, gpu]
 url_docs: https://docs.sglang.io/
@@ -32,9 +32,9 @@ Moteur de serving LLM (et modèles multimodaux) qui co-conçoit le **runtime bac
 
 ## Quand NE PAS l'utiliser
 
-- Prototypage local / pas de GPU → [[Dev/Services/Ollama|Ollama]] ou [[Dev/Services/llama.cpp|llama.cpp]].
-- Intégration et endpoints managés **Hugging Face** → [[Dev/Services/TGI|TGI]].
-- Besoin du moteur de throughput le plus éprouvé et documenté, sans préfixes partagés → [[Dev/Services/vLLM|vLLM]].
+- Prototypage local / pas de GPU → [[Ollama]] ou [[llama.cpp]].
+- Intégration et endpoints managés **Hugging Face** → [[TGI]].
+- Besoin du moteur de throughput le plus éprouvé et documenté, sans préfixes partagés → [[vLLM]].
 
 ## Déploiement & coût
 
@@ -50,17 +50,17 @@ Moteur de serving LLM (et modèles multimodaux) qui co-conçoit le **runtime bac
 
 ## Alternatives
 
-- [[Dev/Services/Ollama|Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
-- [[Dev/Services/llama.cpp|llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
-- [[Dev/Services/vLLM|vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
-- [[Dev/Services/TGI|TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
-- [[Dev/Services/LM Studio|LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
-- [[Dev/Services/text-generation-webui|text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
-- [[Dev/Services/TensorRT-LLM|TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
+- [[Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
+- [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
+- [[vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
+- [[TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
+- [[LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
+- [[text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
+- [[TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
 
 ## Liens
 
-- Modèles servis depuis [[Dev/Services/HuggingFace|HuggingFace]] ; intégré à l'écosystème [[Dev/Services/PyTorch|PyTorch]].
+- Modèles servis depuis [[HuggingFace]] ; intégré à l'écosystème [[PyTorch]].
 - Concepts mis en œuvre : [[Inference optimization]] (RadixAttention, prefix caching), [[Speculative decoding]] (EAGLE) ; sert [[Reasoning models]].
 - [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
 - Doc : https://docs.sglang.io/

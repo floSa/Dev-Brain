@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/scipy.stats|scipy.stats]]", "[[Dev/Services/pingouin|pingouin]]"]
+alternatives: ["[[scipy.stats]]", "[[pingouin]]"]
 complements: []
 tags: [statistical-inference, hypothesis-testing, parametric-test, p-value]
 url_docs: https://www.statsmodels.org/stable/
@@ -23,16 +23,16 @@ Bibliothèque de **modélisation statistique** qui apporte à Python l'esprit de
 
 ## Quand l'utiliser
 
-- [[Wiki/Concepts/Régression linéaire|Régression linéaire]] (OLS), logistique et Poisson avec inférence complète (IC, tests sur les coefficients), via l'API formules `statsmodels.formula.api` (`smf`) inspirée de R (`y ~ x1 + x2`, sur patsy).
-- Modèles linéaires généralisés [[Wiki/Concepts/GLM|GLM]] (familles binomiale, Poisson, Gamma…) et modèles additifs généralisés [[Wiki/Concepts/GAM|GAM]] via `GLMGam` (splines pénalisées).
+- [[Régression linéaire]] (OLS), logistique et Poisson avec inférence complète (IC, tests sur les coefficients), via l'API formules `statsmodels.formula.api` (`smf`) inspirée de R (`y ~ x1 + x2`, sur patsy).
+- Modèles linéaires généralisés [[GLM]] (familles binomiale, Poisson, Gamma…) et modèles additifs généralisés [[GAM]] via `GLMGam` (splines pénalisées).
 - Séries temporelles : ARIMA, SARIMAX, lissage exponentiel, décomposition, tests de stationnarité (ADF, KPSS).
 - ANOVA et ANCOVA structurées, tests de spécification et d'adéquation d'un modèle.
 
 ## Quand NE PAS l'utiliser
 
-- Un simple test ponctuel ou une distribution → [[Dev/Services/scipy.stats|scipy.stats]] (plus direct, déjà installé).
-- Sortie lisible avec tailles d'effet et post-hoc sans construire de modèle → [[Dev/Services/pingouin|pingouin]].
-- Prédiction pure / ML supervisé à grande échelle → [[Dev/Services/Scikit-Learn|scikit-learn]].
+- Un simple test ponctuel ou une distribution → [[scipy.stats]] (plus direct, déjà installé).
+- Sortie lisible avec tailles d'effet et post-hoc sans construire de modèle → [[pingouin]].
+- Prédiction pure / ML supervisé à grande échelle → [[Scikit-Learn|scikit-learn]].
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ Bibliothèque de **modélisation statistique** qui apporte à Python l'esprit de
 
 ## Alternatives
 
-- [[Dev/Services/scipy.stats|scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
-- [[Dev/Services/pingouin|pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
+- [[scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
+- [[pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Régression linéaire|Régression linéaire]], [[Wiki/Concepts/GLM|GLM]], [[Wiki/Concepts/GAM|GAM]], [[Wiki/Concepts/Test t et ANOVA|Test t et ANOVA]], [[Wiki/Concepts/Tests d'hypothèse|Tests d'hypothèse]]
+- Concepts implémentés : [[Régression linéaire]], [[GLM]], [[GAM]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://www.statsmodels.org/stable/

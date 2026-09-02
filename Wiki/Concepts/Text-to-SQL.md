@@ -21,12 +21,12 @@ tags: [text-to-sql, llm, rag, agents, benchmark]
 - Gros schéma → ne rentre pas dans le prompt : on **récupère d'abord les tables pertinentes** (retrieval de schéma) avant de générer.
 
 ### Deux écoles pour fournir le contexte
-- **Retrieval / RAG** : récupérer schéma et exemples similaires puis les injecter dans le prompt ([[Dev/Services/Vanna|Vanna]]). Rapide à mettre en place, s'améliore en ajoutant des exemples.
-- **Couche sémantique** : décrire le modèle métier (entités, relations, métriques) au-dessus du schéma physique pour que le LLM raisonne en concepts métier ([[Dev/Services/WrenAI|WrenAI]] et son MDL). Plus long à poser, plus robuste sur les définitions métier partagées.
+- **Retrieval / RAG** : récupérer schéma et exemples similaires puis les injecter dans le prompt ([[Vanna]]). Rapide à mettre en place, s'améliore en ajoutant des exemples.
+- **Couche sémantique** : décrire le modèle métier (entités, relations, métriques) au-dessus du schéma physique pour que le LLM raisonne en concepts métier ([[WrenAI]] et son MDL). Plus long à poser, plus robuste sur les définitions métier partagées.
 
 ### Génération simple vs agent
-- **Chaîne simple** : question → SQL en un seul passage (le NLSQLTableQueryEngine de [[Dev/Services/LlamaIndex|LlamaIndex]], `create_sql_query_chain` de [[Dev/Services/LangChain|LangChain]]). Suffit sur schémas simples.
-- **Agent** : boucle inspecter le schéma → écrire → exécuter → corriger sur erreur → re-générer. Plus robuste sur schémas complexes (SQL agent de LangChain/LangGraph, multi-agent de [[Dev/Services/DB-GPT|DB-GPT]]).
+- **Chaîne simple** : question → SQL en un seul passage (le NLSQLTableQueryEngine de [[LlamaIndex]], `create_sql_query_chain` de [[LangChain]]). Suffit sur schémas simples.
+- **Agent** : boucle inspecter le schéma → écrire → exécuter → corriger sur erreur → re-générer. Plus robuste sur schémas complexes (SQL agent de LangChain/LangGraph, multi-agent de [[DB-GPT]]).
 
 ### Multi-candidat + sélection (l'état de l'art)
 - Les meilleurs systèmes génèrent **plusieurs** SQL candidats sous des angles différents, puis un sélecteur départage (CHASE-SQL, Agentar-Scale-SQL). Le SQL d'un seul passage plafonne ; c'est le vote entre candidats qui fait gagner les derniers points.
@@ -46,8 +46,8 @@ tags: [text-to-sql, llm, rag, agents, benchmark]
 
 ## Approches voisines & alternatives
 
-- **Frameworks dédiés** : [[Dev/Services/Vanna|Vanna]] (RAG, OSS archivé mais forkable), [[Dev/Services/WrenAI|WrenAI]] (couche sémantique / GenBI), [[Dev/Services/DB-GPT|DB-GPT]] (multi-agent). Panorama : [[Dev/Patterns/Comparatif - Frameworks text-to-SQL|Comparatif - Frameworks text-to-SQL]].
-- **Modules de frameworks généralistes** : [[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]] (+ variante SQLTableRetrieverQueryEngine) et [[Dev/Services/LangChain SQL agent|LangChain SQL agent]] — briques text-to-SQL internes à [[Dev/Services/LlamaIndex|LlamaIndex]] / [[Dev/Services/LangChain|LangChain]], à privilégier quand le framework est déjà en place (des modules, pas des produits dédiés).
+- **Frameworks dédiés** : [[Vanna]] (RAG, OSS archivé mais forkable), [[WrenAI]] (couche sémantique / GenBI), [[DB-GPT]] (multi-agent). Panorama : [[Comparatif - Frameworks text-to-SQL]].
+- **Modules de frameworks généralistes** : [[LlamaIndex NLSQLTableQueryEngine]] (+ variante SQLTableRetrieverQueryEngine) et [[LangChain SQL agent]] — briques text-to-SQL internes à [[LlamaIndex]] / [[LangChain]], à privilégier quand le framework est déjà en place (des modules, pas des produits dédiés).
 - **Modèles spécialisés** à héberger : SQLCoder (Defog), Arctic-Text2SQL-R1 (Snowflake), Qwen2.5-Coder — le moteur de génération, pas l'orchestration.
 - **RAG** : le text-to-SQL par retrieval est un cas particulier de [[RAG]] (on récupère du schéma et des exemples au lieu de passages de texte).
 - **Managé** (hors on-prem) : Snowflake Cortex Analyst, Databricks Genie — couplés à leur plateforme.

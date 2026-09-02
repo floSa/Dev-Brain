@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: deprecated
 langage: Python
-alternatives: ["[[Dev/Services/Prince|Prince]]"]
+alternatives: ["[[Prince]]"]
 complements: []
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 url_docs: 
@@ -28,9 +28,9 @@ Module d'**analyse factorielle descriptive** (PCA, CA, MCA) centré sur les **ai
 
 ## Quand NE PAS l'utiliser
 
-- Famille complète (FAMD, MFA, GPA), maintenance active et API sklearn moderne → [[Dev/Services/Prince|Prince]] (recommandé par défaut).
-- Projet **à l'arrêt en amont** : aucun commit depuis le 4 juin 2018, resté en v0.0.1 — le code fonctionne, mais rien n'évoluera. Pour tout usage durable, [[Dev/Services/Prince|Prince]].
-- Données mixtes ou groupes de variables → [[Dev/Services/Prince|Prince]].
+- Famille complète (FAMD, MFA, GPA), maintenance active et API sklearn moderne → [[Prince]] (recommandé par défaut).
+- Projet **à l'arrêt en amont** : aucun commit depuis le 4 juin 2018, resté en v0.0.1 — le code fonctionne, mais rien n'évoluera. Pour tout usage durable, [[Prince]].
+- Données mixtes ou groupes de variables → [[Prince]].
 
 ## Déploiement & coût
 
@@ -46,11 +46,11 @@ Module d'**analyse factorielle descriptive** (PCA, CA, MCA) centré sur les **ai
 
 ## Alternatives
 
-- [[Dev/Services/Prince|Prince]] — Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.
+- [[Prince]] — Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/PCA|PCA]], [[Wiki/Concepts/MCA|MCA]], [[Wiki/Concepts/CA|CA]]
+- Concepts implémentés : [[PCA]], [[MCA]], [[CA]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- [[Dev/Patterns/Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
+- [[Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
 - Doc : https://github.com/OlivierGarciaDev/fanalysis

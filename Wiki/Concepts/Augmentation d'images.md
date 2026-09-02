@@ -38,7 +38,7 @@ tags: [data-augmentation, regularization, computer-vision, deep-learning]
 - Baseline solide : flips + random crop + RandAugment ; ajouter Mixup/CutMix pour pousser la précision sur gros entraînement.
 - Ne pas casser la sémantique du label, et **désactiver** les augmentations fortes en validation/test.
 - Utile aussi contre le déséquilibre ([[Imbalanced classification]]) en sur-générant les classes rares ; perte [[Cross-entropy|entropie croisée]] (souple, compatible Mixup).
-- Outils : `transforms.v2` de [[Dev/Services/torchvision|torchvision]], [[Dev/Services/albumentations|albumentations]] (rapide, gère boîtes/masques), [[Dev/Services/Kornia|Kornia]] (différentiable, sur GPU).
+- Outils : `transforms.v2` de [[torchvision]], [[albumentations]] (rapide, gère boîtes/masques), [[Kornia]] (différentiable, sur GPU).
 
 ## Approches voisines & alternatives
 

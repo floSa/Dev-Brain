@@ -41,7 +41,7 @@ tags: [fine-tuning, llm]
 - Avant de fine-tuner, épuiser le moins cher : [[Prompt engineering]] puis [[RAG]]. SFT quand le **comportement / format** doit être appris durablement, pas juste de la connaissance.
 - Faire du SFT en **[[PEFT]]/LoRA** par défaut : 10–100× moins de mémoire, résultats proches du full fine-tuning.
 - Soigner la **donnée** (qualité > quantité) et le **chat template** exact du modèle de base.
-- Outils : [[Dev/Services/TRL|TRL]] (SFTTrainer) et l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] ; sans coder, [[Dev/Services/Axolotl|Axolotl]] / [[Dev/Services/LLaMA-Factory|LLaMA-Factory]] (config) ou [[Dev/Services/Unsloth|Unsloth]] (1 GPU, rapide). Entraînement sur [[Dev/Services/PyTorch|PyTorch]].
+- Outils : [[TRL]] (SFTTrainer) et l'écosystème [[HuggingFace]] ; sans coder, [[Axolotl]] / [[LLaMA-Factory]] (config) ou [[Unsloth]] (1 GPU, rapide). Entraînement sur [[PyTorch]].
 - SFT seul imite des démonstrations ; pour optimiser selon des **préférences** (ce qui est *mieux*), enchaîner avec [[RLHF and DPO]].
 
 ## Approches voisines & alternatives

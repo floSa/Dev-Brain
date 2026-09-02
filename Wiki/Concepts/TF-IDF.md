@@ -35,8 +35,8 @@ tags: [nlp, information-retrieval, feature-engineering]
 
 ## En pratique
 
-- `TfidfVectorizer` de [[Dev/Services/Scikit-Learn|scikit-learn]] : `fit_transform` sur le corpus, sortie sparse directement consommable par une [[Régression logistique]] ou un SVM linéaire.
-- Régler `ngram_range`, `min_df` / `max_df`, `sublinear_tf` ; lemmatiser ([[Dev/Services/spaCy|spaCy]]) pour le français.
+- `TfidfVectorizer` de [[Scikit-Learn|scikit-learn]] : `fit_transform` sur le corpus, sortie sparse directement consommable par une [[Régression logistique]] ou un SVM linéaire.
+- Régler `ngram_range`, `min_df` / `max_df`, `sublinear_tf` ; lemmatiser ([[spaCy]]) pour le français.
 - Baseline imbattable en rapport qualité/coût sur corpus petits/moyens et vocabulaire spécialisé, avant de sortir l'artillerie neuronale.
 - Piège : fitter le vectorizer sur train + test → [[Data leakage]]. Fitter sur le train seul, transformer le test.
 

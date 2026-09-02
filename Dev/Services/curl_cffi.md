@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/cloudscraper|cloudscraper]]", "[[Dev/Services/Playwright|Playwright]]"]
+alternatives: ["[[cloudscraper]]", "[[Playwright]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://curl-cffi.readthedocs.io/
@@ -29,8 +29,8 @@ Client HTTP Python qui **imite l'empreinte d'un vrai navigateur** au niveau **TL
 
 ## Quand NE PAS l'utiliser
 
-- Page **rendue en JavaScript** : curl_cffi ne rend rien → [[Dev/Services/Playwright|Playwright]].
-- Défi **JS spécifique Cloudflare** (IUAM) à résoudre explicitement → [[Dev/Services/cloudscraper|cloudscraper]] (même si l'empreinte TLS suffit souvent).
+- Page **rendue en JavaScript** : curl_cffi ne rend rien → [[Playwright]].
+- Défi **JS spécifique Cloudflare** (IUAM) à résoudre explicitement → [[cloudscraper]] (même si l'empreinte TLS suffit souvent).
 - Aucun anti-bot sur fingerprint → `httpx` / `requests` standard suffisent (hors brain).
 
 ## Déploiement & coût
@@ -46,12 +46,12 @@ Client HTTP Python qui **imite l'empreinte d'un vrai navigateur** au niveau **TL
 
 ## Alternatives
 
-- [[Dev/Services/cloudscraper|cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
-- [[Dev/Services/Playwright|Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
+- [[cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
+- [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
 ## Liens
 
 - [[Web scraping]] — section anti-bot / fingerprinting.
-- [[Dev/Services/selectolax|selectolax]] — parser le HTML récupéré.
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[selectolax]] — parser le HTML récupéré.
+- [[Comparatif - Scraping]]
 - Doc : https://curl-cffi.readthedocs.io/

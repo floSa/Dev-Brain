@@ -36,7 +36,7 @@ Les gains annoncés sont **auto-déclarés par le projet** : de l'ordre de 15 à
 
 ## Quand NE PAS l'utiliser
 
-- Problème de **routage** ou d'abstraction multi-fournisseurs, pas de volume : c'est le rôle d'une passerelle comme [[Dev/Services/LiteLLM|LiteLLM]].
+- Problème de **routage** ou d'abstraction multi-fournisseurs, pas de volume : c'est le rôle d'une passerelle comme [[LiteLLM]].
 - Besoin de **mesurer** ce qui est envoyé plutôt que de le réduire → outils d'observabilité LLM (cf. [[Comparatif - Observabilité LLM]]).
 - Contexte déjà court et maîtrisé : une brique de plus dans le chemin critique pour un gain marginal.
 - Contraintes de latence dures : la compression ajoute une étape avant chaque appel.
@@ -46,7 +46,7 @@ Les gains annoncés sont **auto-déclarés par le projet** : de l'ordre de 15 à
 - Open-source (Apache-2.0), gratuit ; s'exécute **en local**, aucune donnée sortante ajoutée par la brique elle-même.
 - `pip install "headroom-ai[all]"`, `uv tool install`, `npm install headroom-ai`, ou image `ghcr.io/headroomlabs-ai/headroom`.
 - Mode proxy = un processus à superviser sur le poste ou le serveur applicatif (single-node).
-- Intégration [[Dev/Services/LiteLLM|LiteLLM]] par callback : `litellm.callbacks = [HeadroomCallback()]`.
+- Intégration [[LiteLLM]] par callback : `litellm.callbacks = [HeadroomCallback()]`.
 - Le cache des originaux occupe du disque et contient le contexte brut — à traiter comme une donnée sensible.
 
 ## Pièges
@@ -63,7 +63,7 @@ Aucune brique équivalente n'est référencée dans le brain à ce jour : la cat
 
 ## Liens
 
-- S'intègre à [[Dev/Services/LiteLLM|LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
+- S'intègre à [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
 - [[Context engineering]] — concept : composition et budget du contexte
 - [[Harnais d'agent]] — concept : ce qui entoure le modèle dans une boucle d'agent
 - [[Agent memory]] — concept : persistance du contexte entre sessions

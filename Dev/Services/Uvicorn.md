@@ -19,11 +19,11 @@ url_repo: https://github.com/Kludex/uvicorn
 
 ## Pourquoi
 
-Serveur **ASGI** pour Python : il exécute les applications web asynchrones ([[Dev/Services/FastAPI|FastAPI]], Starlette, Django ASGI…) en parlant HTTP/1.1 et WebSockets. Implémentation rapide grâce à `uvloop` (event loop) et `httptools` (parsing HTTP), tous deux optionnels. Brique d'exécution standard de l'écosystème async Python. Maintenu par Marcelo Trylesinski (Kludex) — le projet a quitté l'organisation `encode` pour `Kludex/uvicorn`, docs sur `uvicorn.dev`.
+Serveur **ASGI** pour Python : il exécute les applications web asynchrones ([[FastAPI]], Starlette, Django ASGI…) en parlant HTTP/1.1 et WebSockets. Implémentation rapide grâce à `uvloop` (event loop) et `httptools` (parsing HTTP), tous deux optionnels. Brique d'exécution standard de l'écosystème async Python. Maintenu par Marcelo Trylesinski (Kludex) — le projet a quitté l'organisation `encode` pour `Kludex/uvicorn`, docs sur `uvicorn.dev`.
 
 ## Quand l'utiliser
 
-- Servir une app ASGI ([[Dev/Services/FastAPI|FastAPI]], Starlette) en dev (`--reload`) comme en prod.
+- Servir une app ASGI ([[FastAPI]], Starlette) en dev (`--reload`) comme en prod.
 - Besoin d'un serveur léger et rapide pour des charges I/O-bound asynchrones.
 - En prod, souvent supervisé par Gunicorn (workers) ou en conteneur derrière un reverse proxy.
 
@@ -49,5 +49,5 @@ Serveur **ASGI** pour Python : il exécute les applications web asynchrones ([[D
 
 ## Liens
 
-- [[Dev/Services/FastAPI|FastAPI]] — framework ASGI typiquement servi par Uvicorn
+- [[FastAPI]] — framework ASGI typiquement servi par Uvicorn
 - Doc : https://uvicorn.dev

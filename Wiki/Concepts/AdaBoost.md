@@ -56,7 +56,7 @@ tags: [supervised, ensemble, boosting, tree-based, classification]
 - **Fragile aux étiquettes bruitées** — c'est sa faiblesse structurelle, pas un défaut de réglage. Un jeu avec des erreurs d'étiquetage le fait sur-apprendre sur ces erreurs précisément. Si les étiquettes sont douteuses, prendre un [[Random Forest]] (insensible) ou un gradient boosting à perte robuste.
 - **Pas besoin de standardiser** : ses apprenants sont des arbres ([[Types de données et choix de modèle]]).
 - Il surapprend **plus lentement** qu'on ne s'y attend — une curiosité empirique restée longtemps inexpliquée, dont la marge de classification donne une lecture partielle.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble.AdaBoostClassifier / AdaBoostRegressor]].
+- Outils : [[Scikit-Learn|sklearn.ensemble.AdaBoostClassifier / AdaBoostRegressor]].
 
 ## Approches voisines & alternatives
 

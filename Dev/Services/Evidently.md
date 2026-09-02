@@ -31,8 +31,8 @@ Framework Python open-source pour **évaluer et surveiller** les systèmes ML et
 ## Quand NE PAS l'utiliser
 
 - Besoin d'**observabilité d'infrastructure** (latence, CPU, logs applicatifs) → stack Prometheus/Grafana ; Evidently surveille le modèle, pas le système.
-- Adaptation **en continu** à la dérive plutôt que détection batch → [[Dev/Services/River|River]] (apprentissage en ligne, détecteurs ADWIN/Page-Hinkley).
-- Journaliser paramètres/métriques d'entraînement et versionner les modèles → [[Dev/Services/MLflow|MLflow]] (tracking/registry), complémentaire d'Evidently.
+- Adaptation **en continu** à la dérive plutôt que détection batch → [[River]] (apprentissage en ligne, détecteurs ADWIN/Page-Hinkley).
+- Journaliser paramètres/métriques d'entraînement et versionner les modèles → [[MLflow]] (tracking/registry), complémentaire d'Evidently.
 
 ## Déploiement & coût
 
@@ -56,6 +56,6 @@ Framework Python open-source pour **évaluer et surveiller** les systèmes ML et
 
 - [[Data drift]] — dérive de données/concept qu'Evidently détecte et quantifie.
 - [[Monitoring de modèle en production]] — cadre opérationnel qu'il outille.
-- [[Dev/Services/MLflow|MLflow]] — tracking/registry où journaliser drift et performance ; complémentaire.
-- [[Dev/Services/River|River]] — approche en ligne, adaptation continue plutôt que détection batch.
+- [[MLflow]] — tracking/registry où journaliser drift et performance ; complémentaire.
+- [[River]] — approche en ligne, adaptation continue plutôt que détection batch.
 - Doc : https://docs.evidentlyai.com/

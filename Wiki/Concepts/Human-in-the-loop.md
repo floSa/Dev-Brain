@@ -38,7 +38,7 @@ tags: [human-in-the-loop, agents, reliability, llm]
 
 ## En pratique
 
-- [[Dev/Services/LangGraph|LangGraph]] expose le HITL nativement : `interrupt` sur un nœud + état persistant (checkpointer) pour suspendre/reprendre ; [[Dev/Services/CrewAI|CrewAI]] et [[Dev/Services/PydanticAI|PydanticAI]] prévoient des points de validation et la durabilité d'exécution.
+- [[LangGraph]] expose le HITL nativement : `interrupt` sur un nœud + état persistant (checkpointer) pour suspendre/reprendre ; [[CrewAI]] et [[PydanticAI]] prévoient des points de validation et la durabilité d'exécution.
 - Rendre les outils sensibles **idempotents** et journaliser la décision humaine (qui a approuvé quoi) — cf. [[LLM observability]].
 - Combiner avec les [[Guardrails|garde-fous]] : un garde-fou peut **router vers une revue humaine** plutôt que bloquer sèchement.
 - Définir une **politique d'escalade** explicite par type d'action plutôt que de demander validation partout — sinon l'humain sature et approuve sans lire (validation-tampon).

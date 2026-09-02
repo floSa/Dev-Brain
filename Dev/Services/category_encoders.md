@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
+alternatives: ["[[Scikit-Learn]]"]
 complements: []
 tags: [feature-engineering]
 url_docs: https://contrib.scikit-learn.org/category_encoders/
@@ -29,8 +29,8 @@ Collection de **transformers d'encodage catégoriel** suivant l'API scikit-learn
 
 ## Quand NE PAS l'utiliser
 
-- Faible cardinalité, encodage simple → `OneHotEncoder` / `TargetEncoder` de [[Dev/Services/Scikit-Learn|Scikit-Learn]] suffisent (sklearn ≥ 1.3 gère le repli anti-fuite du target encoding).
-- Modèle gérant nativement les catégorielles → [[Dev/Services/CatBoost|CatBoost]] (pas besoin d'encoder en amont).
+- Faible cardinalité, encodage simple → `OneHotEncoder` / `TargetEncoder` de [[Scikit-Learn]] suffisent (sklearn ≥ 1.3 gère le repli anti-fuite du target encoding).
+- Modèle gérant nativement les catégorielles → [[CatBoost]] (pas besoin d'encoder en amont).
 
 ## Déploiement & coût
 
@@ -46,7 +46,7 @@ Collection de **transformers d'encodage catégoriel** suivant l'API scikit-learn
 
 ## Alternatives
 
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
 ## Liens
 

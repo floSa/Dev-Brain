@@ -39,7 +39,7 @@ tags: [clustering, unsupervised]
 - Échoue sur clusters allongés, de densités ou tailles très différentes, ou non convexes — la distance au centre ne capture que des blobs ronds.
 - Sensible aux **outliers** (ils tirent les centres) ; pas de notion de bruit, tout point est classé.
 - `MiniBatchKMeans` pour les gros volumes (mises à jour sur mini-lots, plus rapide, légèrement moins précis).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster.KMeans / MiniBatchKMeans]].
+- Outils : [[Scikit-Learn|sklearn.cluster.KMeans / MiniBatchKMeans]].
 
 ## Approches voisines & alternatives
 

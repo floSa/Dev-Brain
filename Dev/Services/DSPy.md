@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/LlamaIndex|LlamaIndex]]", "[[Dev/Services/Haystack|Haystack]]"]
+alternatives: ["[[LangChain]]", "[[LlamaIndex]]", "[[Haystack]]"]
 complements: []
 tags: [llm, prompt-optimization, nlp]
 url_docs: https://dspy.ai/
@@ -30,16 +30,16 @@ Framework du **Stanford NLP** (Omar Khattab) pour **programmer plutôt que promp
 
 ## Quand NE PAS l'utiliser
 
-- App orientée **intégrations et agents prêts à l'emploi** → [[Dev/Services/LangChain|LangChain]].
-- **RAG centré données** clé en main → [[Dev/Services/LlamaIndex|LlamaIndex]].
-- Pipeline de production à **composants explicites** → [[Dev/Services/Haystack|Haystack]].
+- App orientée **intégrations et agents prêts à l'emploi** → [[LangChain]].
+- **RAG centré données** clé en main → [[LlamaIndex]].
+- Pipeline de production à **composants explicites** → [[Haystack]].
 - Pas de **jeu d'exemples ni de métrique** : sans signal à optimiser, DSPy perd son intérêt principal.
 
 ## Déploiement & coût
 
 - Open-source (MIT), gratuit ; bibliothèque importée, aucune infra dédiée.
 - Coût notable à la **compilation** : l'optimisation lance de nombreux appels LLM pour explorer prompts/démonstrations — budgéter cette phase (distincte de l'inférence en production).
-- S'appuie sur [[Dev/Services/LiteLLM|LiteLLM]] en interne pour appeler les fournisseurs.
+- S'appuie sur [[LiteLLM]] en interne pour appeler les fournisseurs.
 
 ## Pièges
 
@@ -50,13 +50,13 @@ Framework du **Stanford NLP** (Omar Khattab) pour **programmer plutôt que promp
 
 ## Alternatives
 
-- [[Dev/Services/LangChain|LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
-- [[Dev/Services/LlamaIndex|LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
-- [[Dev/Services/Haystack|Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
+- [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
+- [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
+- [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 
 ## Liens
 
-- S'appuie sur [[Dev/Services/LiteLLM|LiteLLM]] pour l'accès multi-fournisseurs ; modèles depuis [[Dev/Services/HuggingFace|HuggingFace]].
-- Vector stores pour les modules RAG : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Chroma|Chroma]].
+- S'appuie sur [[LiteLLM]] pour l'accès multi-fournisseurs ; modèles depuis [[HuggingFace]].
+- Vector stores pour les modules RAG : [[Qdrant]], [[Chroma]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://dspy.ai/

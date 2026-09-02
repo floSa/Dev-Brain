@@ -95,13 +95,42 @@ def parse(texte: str) -> tuple[dict | None, str]:
 
 
 def fiches() -> list[tuple[str, dict, str]]:
-    """Les fiches Dev/ de `role: brique`, triées par chemin (annexe C §1)."""
+    """Les pages `role: brique` du vault, triées par chemin (annexe C §1).
+
+    Balayait `Dev/` avant le lot 3 ; balaye la racine depuis, puisque les briques
+    descendent dans l'arbre des domaines. `.git/` et `.claude/` sont écartés — un
+    worktree est une copie complète du vault, le balayer doublerait tout.
+    """
     out = []
-    for p in sorted((VAULT / "Dev").rglob("*.md"), key=lambda q: q.as_posix()):
+    for p in sorted(VAULT.rglob("*.md"), key=lambda q: q.as_posix()):
+        parts = p.relative_to(VAULT).parts
+        if not parts or parts[0] in {".git", ".claude"}:
+            continue
         fm, corps = parse(p.read_text(encoding="utf-8"))
         if fm and fm.get("role") == "brique":
             out.append((p.relative_to(VAULT).as_posix(), fm, corps))
     return out
+
+
+# Wikilinks du corps. Depuis le lot 3, les liens du vault sont NUS : le test
+# historique `"[[Dev/" not in ligne` ne repérait plus une seule citation de brique.
+# On résout donc par nom de fichier, comme Obsidian — cf. AI/migration/lot-3-arborescence.md.
+LIEN_RE = re.compile(r"\[\[([^\]|#]+)")
+_BRIQUES: set[str] | None = None
+
+
+def briques() -> set[str]:
+    """Noms de fichier (minuscules) des pages `role: brique`. Calculé une fois."""
+    global _BRIQUES
+    if _BRIQUES is None:
+        _BRIQUES = {c.rsplit("/", 1)[-1][:-3].lower() for c, _, _ in fiches()}
+    return _BRIQUES
+
+
+def cite_une_brique(ligne: str) -> bool:
+    """La ligne cite-t-elle une AUTRE fiche brique ? (nu ou qualifié, indifféremment)"""
+    return any(c.strip().split("/")[-1].lower() in briques()
+               for c in LIEN_RE.findall(ligne))
 
 
 def lignes_sujet(corps: str):
@@ -110,7 +139,7 @@ def lignes_sujet(corps: str):
     for ligne in corps.splitlines():
         if ligne.startswith("## "):
             section = ligne.strip()
-        elif section in SECTIONS and "[[Dev/" not in ligne:
+        elif section in SECTIONS and not cite_une_brique(ligne):
             yield ligne.strip()
 
 
@@ -118,7 +147,7 @@ def majeure_affirmee(nom: str, corps: str) -> tuple[bool, int | None]:
     """(la fiche affirme-t-elle une version courante ?, majeure affirmée)."""
     trouve = False
     for ligne in corps.splitlines():
-        if "[[Dev/" in ligne or not VERSION_COURANTE.search(ligne):
+        if cite_une_brique(ligne) or not VERSION_COURANTE.search(ligne):
             continue
         trouve = True
         s = PYTHON_RE.sub(" ", SPDX_RE.sub(" ", ligne))

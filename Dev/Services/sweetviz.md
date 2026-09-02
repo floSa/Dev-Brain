@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/ydata-profiling|ydata-profiling]]", "[[Dev/Services/missingno|missingno]]"]
+alternatives: ["[[ydata-profiling]]", "[[missingno]]"]
 complements: []
 tags: [eda, statistical-viz, dataframe]
 url_docs: https://pypi.org/project/sweetviz/
@@ -30,8 +30,8 @@ Bibliothèque d'[[EDA automatisée & profiling|EDA automatisée]] orientée **vi
 
 ## Quand NE PAS l'utiliser
 
-- Rapport de **profiling exhaustif** (toutes les statistiques, alertes qualité, support Spark) → [[Dev/Services/ydata-profiling|ydata-profiling]].
-- Diagnostic ciblé des seules **valeurs manquantes** → [[Dev/Services/missingno|missingno]].
+- Rapport de **profiling exhaustif** (toutes les statistiques, alertes qualité, support Spark) → [[ydata-profiling]].
+- Diagnostic ciblé des seules **valeurs manquantes** → [[missingno]].
 - Très haute dimension (centaines de colonnes) : le rapport devient lourd ; désactiver l'analyse par paires (`pairwise_analysis="off"`).
 
 ## Déploiement & coût
@@ -48,11 +48,11 @@ Bibliothèque d'[[EDA automatisée & profiling|EDA automatisée]] orientée **vi
 
 ## Alternatives
 
-- [[Dev/Services/ydata-profiling|ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
-- [[Dev/Services/missingno|missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
+- [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
+- [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 
 ## Liens
 
 - Concept : [[EDA automatisée & profiling]] — la notion que cet outil incarne.
-- [[Dev/Patterns/Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
+- [[Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
 - Doc : https://github.com/fbdesignpro/sweetviz

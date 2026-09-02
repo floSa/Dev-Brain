@@ -64,7 +64,7 @@ tags: [explainability, deep-learning]
 - **Gradient ≠ perturbation.** Le gradient dit ce qui *ferait bouger* le modèle localement ; SHAP/LIME disent ce qui se passe *si on retire* la feature. Deux questions différentes — les désaccords entre les deux ne sont pas des bugs.
 - **Attribution ≠ causalité, et attribution ≠ correction.** Une carte de saillance montre où le modèle regarde, pas s'il a raison. Des travaux ont montré que certaines cartes restent inchangées quand on randomise les poids du modèle — un test de cohérence à faire ([[Explicabilité des modèles]]).
 - **Sur du texte**, les attributions par token sont trompeuses quand la tokenisation découpe les mots : agréger au niveau du mot avant de montrer quoi que ce soit ([[Tokenization]]).
-- Outils : [[Dev/Services/Captum|Captum]] (la référence PyTorch, toute la famille), [[Dev/Services/interpreto|interpreto]] (côté modèles de langage, gradient **et** perturbation sous une API commune, avec les métriques d'insertion/suppression).
+- Outils : [[Captum]] (la référence PyTorch, toute la famille), [[interpreto]] (côté modèles de langage, gradient **et** perturbation sous une API commune, avec les métriques d'insertion/suppression).
 
 ## Approches voisines & alternatives
 

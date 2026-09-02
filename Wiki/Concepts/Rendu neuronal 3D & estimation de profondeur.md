@@ -36,7 +36,7 @@ tags: [neural-rendering, depth-estimation, computer-vision, deep-learning]
 ## En pratique
 
 - **3DGS** pour la capture temps réel d'objets / scènes (Luma, Polycam, nerfstudio + gsplat) ; **NeRF** reste surtout en recherche et sur les cas où l'on privilégie la qualité hors-ligne.
-- **Depth Anything** pour de la profondeur **prête à l'emploi** (robotique, AR, conditionnement *depth* de [[Diffusion models|ControlNet]]) ; intégré à [[Dev/Services/HuggingFace|HuggingFace]] (Transformers).
+- **Depth Anything** pour de la profondeur **prête à l'emploi** (robotique, AR, conditionnement *depth* de [[Diffusion models|ControlNet]]) ; intégré à [[HuggingFace]] (Transformers).
 - Pièges : qualité des poses caméra (SfM), reflets / transparences mal gérés, profondeur **relative** à recaler si l'on veut des mètres.
 
 ## Approches voisines & alternatives

@@ -37,7 +37,7 @@ tags: [image-classification, computer-vision, cnn, deep-learning]
 
 - Rarement de zéro : [[Transfer learning vision|transfert]] depuis ImageNet + [[Augmentation d'images|augmentation]] ; c'est le levier « petites données ».
 - Évaluer avec top-1/top-5 et les [[Classification metrics|métriques de classification]] (F1 macro en déséquilibre) ; vérifier la [[Calibration]] des probabilités.
-- Implémentation : torchvision / timm sur [[Dev/Services/PyTorch|PyTorch]], modèles pré-entraînés [[Dev/Services/HuggingFace|HuggingFace]].
+- Implémentation : torchvision / timm sur [[PyTorch]], modèles pré-entraînés [[HuggingFace]].
 
 ## Approches voisines & alternatives
 

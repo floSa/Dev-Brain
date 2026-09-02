@@ -10,63 +10,63 @@ indexe: concept/llm
 <!-- AUTO:START -->
 Notions de la famille `concept/llm`.
 
-- [[Wiki/Concepts/a2a-protocol|a2a-protocol]] — domaines : ai-eng
-- [[Wiki/Concepts/Advanced RAG|Advanced RAG]] — domaines : ai-eng
-- [[Wiki/Concepts/Agent evaluation|Agent evaluation]] — domaines : ai-eng
-- [[Wiki/Concepts/Agent memory|Agent memory]] — domaines : ai-eng
-- [[Wiki/Concepts/Agent patterns|Agent patterns]] — domaines : ai-eng
-- [[Wiki/Concepts/Agent skills|Agent skills]] — domaines : ai-eng
-- [[Wiki/Concepts/agent-loops|agent-loops]] — domaines : ai-eng
-- [[Wiki/Concepts/Chain-of-Thought|Chain-of-Thought]] — domaines : ai-eng
-- [[Wiki/Concepts/Chunking strategies|Chunking strategies]] — domaines : ai-eng
-- [[Wiki/Concepts/Code and math benchmarks|Code and math benchmarks]] — domaines : ai-eng, ml-eng
-- [[Wiki/Concepts/Constrained decoding|Constrained decoding]] — domaines : ai-eng
-- [[Wiki/Concepts/Construction de graphes de connaissances|Construction de graphes de connaissances]] — domaines : ai-eng
-- [[Wiki/Concepts/Context engineering|Context engineering]] — domaines : ai-eng
-- [[Wiki/Concepts/Decoding strategies|Decoding strategies]] — domaines : ai-eng
-- [[Wiki/Concepts/GraphRAG|GraphRAG]] — domaines : ai-eng
-- [[Wiki/Concepts/GRPO|GRPO]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/Harnais d'agent|Harnais d'agent]] — domaines : ai-eng
-- [[Wiki/Concepts/Human-in-the-loop|Human-in-the-loop]] — domaines : ai-eng
-- [[Wiki/Concepts/Hybrid retrieval|Hybrid retrieval]] — domaines : ai-eng
-- [[Wiki/Concepts/Inference optimization|Inference optimization]] — domaines : ai-eng, mlops
-- [[Wiki/Concepts/Late-interaction retrieval|Late-interaction retrieval]] — domaines : ai-eng
-- [[Wiki/Concepts/LLM benchmarks|LLM benchmarks]] — domaines : ai-eng, ml-eng
-- [[Wiki/Concepts/LLM caching|LLM caching]] — domaines : ai-eng
-- [[Wiki/Concepts/LLM eval metrics|LLM eval metrics]] — domaines : ai-eng
-- [[Wiki/Concepts/LLM observability|LLM observability]] — domaines : ai-eng, mlops
-- [[Wiki/Concepts/LLM-as-judge|LLM-as-judge]] — domaines : ai-eng
-- [[Wiki/Concepts/LoRA et QLoRA|LoRA et QLoRA]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/mcp-protocol|mcp-protocol]] — domaines : ai-eng
-- [[Wiki/Concepts/Multi-agent systems|Multi-agent systems]] — domaines : ai-eng
-- [[Wiki/Concepts/Multi-Token Prediction|Multi-Token Prediction]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/PEFT|PEFT]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/Perplexity|Perplexity]] — domaines : ai-eng
-- [[Wiki/Concepts/Prompt engineering|Prompt engineering]] — domaines : ai-eng
-- [[Wiki/Concepts/prompt-caching|prompt-caching]] — domaines : ai-eng
-- [[Wiki/Concepts/Query transformations|Query transformations]] — domaines : ai-eng
-- [[Wiki/Concepts/RAG|RAG]] — domaines : ai-eng
-- [[Wiki/Concepts/RAG benchmarks|RAG benchmarks]] — domaines : ai-eng
-- [[Wiki/Concepts/RAG eval|RAG eval]] — domaines : ai-eng
-- [[Wiki/Concepts/Reasoning models|Reasoning models]] — domaines : ai-eng
-- [[Wiki/Concepts/Reliability patterns|Reliability patterns]] — domaines : ai-eng
-- [[Wiki/Concepts/Reranking|Reranking]] — domaines : ai-eng
-- [[Wiki/Concepts/Reward modeling|Reward modeling]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/RL for LLMs|RL for LLMs]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/RLHF and DPO|RLHF and DPO]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/Routing and cascading|Routing and cascading]] — domaines : ai-eng
-- [[Wiki/Concepts/Sandboxing de code généré|Sandboxing de code généré]] — domaines : ai-eng
-- [[Wiki/Concepts/Scaling laws|Scaling laws]] — domaines : ai-eng, ml-eng
-- [[Wiki/Concepts/Server-Sent Events & streaming LLM|Server-Sent Events & streaming LLM]] — domaines : ai-eng
-- [[Wiki/Concepts/SFT|SFT]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/Small Language Models|Small Language Models]] — domaines : ai-eng
-- [[Wiki/Concepts/Speculative decoding|Speculative decoding]] — domaines : ai-eng
-- [[Wiki/Concepts/Structured outputs|Structured outputs]] — domaines : ai-eng
-- [[Wiki/Concepts/Synthetic data generation|Synthetic data generation]] — domaines : ml-eng, ai-eng
-- [[Wiki/Concepts/Text-to-SQL|Text-to-SQL]] — domaines : ai-eng
-- [[Wiki/Concepts/Tokenization|Tokenization]] — domaines : ai-eng
-- [[Wiki/Concepts/Tool use patterns|Tool use patterns]] — domaines : ai-eng
-- [[Wiki/Concepts/tool-use|tool-use]] — domaines : ai-eng
+- [[a2a-protocol]] — domaines : ai-eng
+- [[Advanced RAG]] — domaines : ai-eng
+- [[Agent evaluation]] — domaines : ai-eng
+- [[Agent memory]] — domaines : ai-eng
+- [[Agent patterns]] — domaines : ai-eng
+- [[Agent skills]] — domaines : ai-eng
+- [[agent-loops]] — domaines : ai-eng
+- [[Chain-of-Thought]] — domaines : ai-eng
+- [[Chunking strategies]] — domaines : ai-eng
+- [[Code and math benchmarks]] — domaines : ai-eng, ml-eng
+- [[Constrained decoding]] — domaines : ai-eng
+- [[Construction de graphes de connaissances]] — domaines : ai-eng
+- [[Context engineering]] — domaines : ai-eng
+- [[Decoding strategies]] — domaines : ai-eng
+- [[GraphRAG]] — domaines : ai-eng
+- [[GRPO]] — domaines : ml-eng, ai-eng
+- [[Harnais d'agent]] — domaines : ai-eng
+- [[Human-in-the-loop]] — domaines : ai-eng
+- [[Hybrid retrieval]] — domaines : ai-eng
+- [[Inference optimization]] — domaines : ai-eng, mlops
+- [[Late-interaction retrieval]] — domaines : ai-eng
+- [[LLM benchmarks]] — domaines : ai-eng, ml-eng
+- [[LLM caching]] — domaines : ai-eng
+- [[LLM eval metrics]] — domaines : ai-eng
+- [[LLM observability]] — domaines : ai-eng, mlops
+- [[LLM-as-judge]] — domaines : ai-eng
+- [[LoRA et QLoRA]] — domaines : ml-eng, ai-eng
+- [[mcp-protocol]] — domaines : ai-eng
+- [[Multi-agent systems]] — domaines : ai-eng
+- [[Multi-Token Prediction]] — domaines : ml-eng, ai-eng
+- [[PEFT]] — domaines : ml-eng, ai-eng
+- [[Perplexity]] — domaines : ai-eng
+- [[Prompt engineering]] — domaines : ai-eng
+- [[prompt-caching]] — domaines : ai-eng
+- [[Query transformations]] — domaines : ai-eng
+- [[RAG]] — domaines : ai-eng
+- [[RAG benchmarks]] — domaines : ai-eng
+- [[RAG eval]] — domaines : ai-eng
+- [[Reasoning models]] — domaines : ai-eng
+- [[Reliability patterns]] — domaines : ai-eng
+- [[Reranking]] — domaines : ai-eng
+- [[Reward modeling]] — domaines : ml-eng, ai-eng
+- [[RL for LLMs]] — domaines : ml-eng, ai-eng
+- [[RLHF and DPO]] — domaines : ml-eng, ai-eng
+- [[Routing and cascading]] — domaines : ai-eng
+- [[Sandboxing de code généré]] — domaines : ai-eng
+- [[Scaling laws]] — domaines : ai-eng, ml-eng
+- [[Server-Sent Events & streaming LLM]] — domaines : ai-eng
+- [[SFT]] — domaines : ml-eng, ai-eng
+- [[Small Language Models]] — domaines : ai-eng
+- [[Speculative decoding]] — domaines : ai-eng
+- [[Structured outputs]] — domaines : ai-eng
+- [[Synthetic data generation]] — domaines : ml-eng, ai-eng
+- [[Text-to-SQL]] — domaines : ai-eng
+- [[Tokenization]] — domaines : ai-eng
+- [[Tool use patterns]] — domaines : ai-eng
+- [[tool-use]] — domaines : ai-eng
 <!-- AUTO:END -->
 
 ## Notes

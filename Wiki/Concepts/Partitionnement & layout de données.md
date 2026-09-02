@@ -28,13 +28,13 @@ tags: [partitioning, file-format, lakehouse, olap]
 
 ### Partition pruning & data skipping
 - **Pruning** : sauter des partitions entières grâce au chemin (niveau répertoire).
-- **Data skipping** : à l'intérieur d'un fichier, sauter des blocs grâce aux **statistiques min/max** par row group ([[Dev/Services/Parquet|Parquet]]) — un prédicat hors bornes ne lit pas le bloc.
+- **Data skipping** : à l'intérieur d'un fichier, sauter des blocs grâce aux **statistiques min/max** par row group ([[Parquet]]) — un prédicat hors bornes ne lit pas le bloc.
 - Les deux supposent que la donnée est **triée/regroupée** sur les colonnes filtrées (sinon les min/max se recouvrent et ne filtrent rien). D'où le tri à l'écriture (Z-order / clustering).
 
 ### Taille de fichiers & small files problem
 - Cible usuelle : **128 Mo – 1 Go** par fichier. En dessous, le surcoût domine (ouverture, métadonnées, planification, listing du store objet).
 - Le **small files problem** vient surtout des sinks de [[Stream processing|streaming]] et des écritures fréquentes : des milliers de micro-fichiers ruinent les scans.
-- Remède : **compaction** périodique (réécrire les petits fichiers en gros), gérée nativement par les formats de table ([[Dev/Services/Apache Iceberg|Apache Iceberg]] : `rewrite_data_files`, expiration des snapshots).
+- Remède : **compaction** périodique (réécrire les petits fichiers en gros), gérée nativement par les formats de table ([[Apache Iceberg]] : `rewrite_data_files`, expiration des snapshots).
 
 ## Les maths, simplement
 
@@ -45,15 +45,15 @@ tags: [partitioning, file-format, lakehouse, olap]
 ## En pratique
 
 - Partitionner sur la (les) colonne(s) des **filtres les plus fréquents**, souvent la date d'événement ; rester à 1–2 niveaux pour ne pas fragmenter.
-- Préférer le **partitionnement caché** d'[[Dev/Services/Apache Iceberg|Apache Iceberg]] (la clé dérive d'une colonne, ex. `day(ts)`) : on requête sur la colonne brute, le moteur prune sans clause spéciale, et le schéma de partition peut évoluer sans réécrire l'historique.
+- Préférer le **partitionnement caché** d'[[Apache Iceberg]] (la clé dérive d'une colonne, ex. `day(ts)`) : on requête sur la colonne brute, le moteur prune sans clause spéciale, et le schéma de partition peut évoluer sans réécrire l'historique.
 - Surveiller et **compacter** : taille moyenne de fichiers et nombre de fichiers par partition sont les métriques santé d'une table.
 - Pièges : sur-partitionnement (1 fichier par partition = small files), clé de partition de très forte cardinalité, filtrer sur une colonne **non** partitionnée (aucun pruning), oublier la compaction d'un sink streaming.
 - Lien d'idempotence : aligner l'**unité d'écriture sur la partition** rend rerun et backfill sûrs (réécrire une partition entière). Cf. [[ELT vs ETL & idempotence]].
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/Parquet|Parquet]] — le format de fichier qui porte les statistiques rendant le data skipping possible.
-- [[Dev/Services/Apache Iceberg|Apache Iceberg]] — couche de table : partitionnement caché, évolution de partitionnement, compaction.
+- [[Parquet]] — le format de fichier qui porte les statistiques rendant le data skipping possible.
+- [[Apache Iceberg]] — couche de table : partitionnement caché, évolution de partitionnement, compaction.
 - [[Architecture médaillon]] — chaque couche se partitionne selon ses propres requêtes.
 - [[ELT vs ETL & idempotence]] — la partition comme unité de rejeu.
 - [[Stream processing]] — source classique du small files problem, à compacter en aval.

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: distributed
-alternatives: ["[[Dev/Services/Langfuse|Langfuse]]", "[[Dev/Services/LangSmith|LangSmith]]", "[[Dev/Services/Phoenix Arize|Phoenix Arize]]"]
+alternatives: ["[[Langfuse]]", "[[LangSmith]]", "[[Phoenix Arize]]"]
 complements: []
 tags: [llm, llm-observability, llm-gateway, tracing]
 url_docs: https://docs.helicone.ai/
@@ -32,9 +32,9 @@ Plateforme d'**observabilité LLM** open-source (**Apache-2.0**, éditeur YC W23
 
 ## Quand NE PAS l'utiliser
 
-- **Nouveau projet à horizon long** → éviter : projet en maintenance, sans roadmap, migration encouragée. Préférer [[Dev/Services/Langfuse|Langfuse]] (OSS actif) ou [[Dev/Services/Phoenix Arize|Phoenix Arize]].
-- Besoin fort d'**évals, datasets et gestion de prompts** intégrés → [[Dev/Services/Langfuse|Langfuse]], [[Dev/Services/LangSmith|LangSmith]].
-- Refus de mettre un **proxy sur le chemin critique** des appels LLM (latence, point unique de défaillance) → traçage par SDK/OpenTelemetry ([[Dev/Services/Phoenix Arize|Phoenix Arize]]).
+- **Nouveau projet à horizon long** → éviter : projet en maintenance, sans roadmap, migration encouragée. Préférer [[Langfuse]] (OSS actif) ou [[Phoenix Arize]].
+- Besoin fort d'**évals, datasets et gestion de prompts** intégrés → [[Langfuse]], [[LangSmith]].
+- Refus de mettre un **proxy sur le chemin critique** des appels LLM (latence, point unique de défaillance) → traçage par SDK/OpenTelemetry ([[Phoenix Arize]]).
 
 ## Déploiement & coût
 
@@ -50,13 +50,13 @@ Plateforme d'**observabilité LLM** open-source (**Apache-2.0**, éditeur YC W23
 
 ## Alternatives
 
-- [[Dev/Services/Langfuse|Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
-- [[Dev/Services/LangSmith|LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
-- [[Dev/Services/Phoenix Arize|Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
+- [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
+- [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
+- [[Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 
 ## Liens
 
-- Recoupe aussi la catégorie passerelle : [[Dev/Services/LiteLLM|LiteLLM]] (proxy multi-fournisseurs).
+- Recoupe aussi la catégorie passerelle : [[LiteLLM]] (proxy multi-fournisseurs).
 - Concepts : [[LLM observability]].
 - [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
 - Doc : https://docs.helicone.ai/

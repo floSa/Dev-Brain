@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/PyOD|PyOD]]"]
+alternatives: ["[[PyOD]]"]
 complements: []
 tags: [anomaly-detection, timeseries]
 url_docs: https://stumpy.readthedocs.io/
@@ -29,9 +29,9 @@ Calcule efficacement le **matrix profile** d'une série temporelle : pour chaque
 
 ## Quand NE PAS l'utiliser
 
-- Outliers **tabulaires multivariés** (pas de structure de forme) → [[Dev/Services/PyOD|PyOD]].
+- Outliers **tabulaires multivariés** (pas de structure de forme) → [[PyOD]].
 - Simple seuillage **univarié** sur un flux → [[Détection d'outliers univariée]] (`numpy`/`scipy`).
-- **Prévision** de valeurs futures → [[Dev/Services/Prophet|Prophet]], [[ARIMA SARIMA]] ; STUMPY décrit, ne prédit pas.
+- **Prévision** de valeurs futures → [[Prophet]], [[ARIMA SARIMA]] ; STUMPY décrit, ne prédit pas.
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Calcule efficacement le **matrix profile** d'une série temporelle : pour chaque
 
 ## Alternatives
 
-- [[Dev/Services/PyOD|PyOD]] — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
+- [[PyOD]] — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 
 Côté matrix profile spécifiquement, `matrixprofile` (matrix-profile-foundation) est l'autre implémentation Python, moins active.
 
 ## Liens
 
 - [[Time series anomaly detection|Détection d'anomalies temporelles]] — le cadre qu'il outille (discords, motifs).
-- [[Dev/Services/PyOD|PyOD]] — l'équivalent côté outliers tabulaires multivariés.
+- [[PyOD]] — l'équivalent côté outliers tabulaires multivariés.
 - [[ARIMA SARIMA]] · [[Exponential smoothing]] — modèles du « normal » dont on peut analyser les résidus.
-- [[Dev/Patterns/Comparatif - Détection d'anomalies|Comparatif — Détection d'anomalies]]
+- [[Comparatif - Détection d'anomalies|Comparatif — Détection d'anomalies]]
 - Doc : https://stumpy.readthedocs.io/

@@ -29,8 +29,8 @@ Bibliothèque dédiée à l'**analyse exploratoire des modèles bayésiens**, **
 
 ## Quand NE PAS l'utiliser
 
-- Construire et échantillonner le modèle : ArviZ ne fait pas d'inférence → [[Dev/Services/PyMC|PyMC]] ou [[Dev/Services/Stan|Stan]] en amont.
-- Diagnostics fréquentistes / tables de régression classiques → [[Dev/Services/statsmodels|statsmodels]].
+- Construire et échantillonner le modèle : ArviZ ne fait pas d'inférence → [[PyMC]] ou [[Stan]] en amont.
+- Diagnostics fréquentistes / tables de régression classiques → [[statsmodels]].
 
 ## Déploiement & coût
 
@@ -46,11 +46,11 @@ Bibliothèque dédiée à l'**analyse exploratoire des modèles bayésiens**, **
 
 ## Alternatives
 
-- Pas d'alternative directe dans le brain : ArviZ est **complémentaire** des moteurs d'inférence, pas un concurrent. Il se branche en aval de [[Dev/Services/PyMC|PyMC]] et [[Dev/Services/Stan|Stan]].
+- Pas d'alternative directe dans le brain : ArviZ est **complémentaire** des moteurs d'inférence, pas un concurrent. Il se branche en aval de [[PyMC]] et [[Stan]].
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/MCMC|MCMC]], [[Wiki/Concepts/Inférence bayésienne|Inférence bayésienne]]
-- Moteurs en amont : [[Dev/Services/PyMC|PyMC]], [[Dev/Services/Stan|Stan]]
+- Concepts implémentés : [[MCMC]], [[Inférence bayésienne]]
+- Moteurs en amont : [[PyMC]], [[Stan]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://python.arviz.org

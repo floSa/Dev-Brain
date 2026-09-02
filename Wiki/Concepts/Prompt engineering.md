@@ -31,7 +31,7 @@ tags: [prompting, llm]
 - **Sensibilité** : la sortie dépend de la formulation, de l'ordre des exemples, voire de la ponctuation. D'où l'itération empirique.
 
 ### Prompting manuel vs optimisation
-- À la main, on itère au jugé. Quand le besoin se systématise, on passe à l'**optimisation automatique** ([[Dev/Services/DSPy|DSPy]]) qui compile des prompts à partir d'exemples et d'une métrique.
+- À la main, on itère au jugé. Quand le besoin se systématise, on passe à l'**optimisation automatique** ([[DSPy]]) qui compile des prompts à partir d'exemples et d'une métrique.
 
 ## Les maths, simplement
 
@@ -40,7 +40,7 @@ tags: [prompting, llm]
 ## En pratique
 
 - Commencer **simple et explicite**, puis ajouter des exemples seulement si nécessaire.
-- **Mesurer** : un petit jeu de cas de test vaut mieux que l'impression « ça a l'air mieux » ([[Dev/Services/DSPy|DSPy]], eval).
+- **Mesurer** : un petit jeu de cas de test vaut mieux que l'impression « ça a l'air mieux » ([[DSPy]], eval).
 - Contraindre la sortie ([[Structured outputs]]) plutôt que parser du texte libre fragile.
 - Distinguer trois leviers, du moins au plus coûteux : **prompting** → récupération de contexte ([[RAG]]) → entraînement ([[SFT]]). Essayer dans cet ordre.
 - Ne pas confondre avec le [[Context engineering]] : le prompting travaille la **formulation**, l'ingénierie de contexte le **quoi** et le **combien** dans la fenêtre.
@@ -51,7 +51,7 @@ tags: [prompting, llm]
 - [[Context engineering]] — gère ce qui entre dans la fenêtre ; complémentaire de la formulation.
 - [[Structured outputs]] — contraindre le format de sortie, prolongement naturel du prompt.
 - [[SFT]] — quand le prompting plafonne, entraîner le modèle sur des exemples ; plus coûteux, plus durable.
-- [[Dev/Services/DSPy|DSPy]] — Programmation et optimisation de prompts — déclare des signatures et compile les prompts (ou un fine-tune) à partir d'exemples et d'une métrique, plutôt que de bricoler des chaînes de caractères.
+- [[DSPy]] — Programmation et optimisation de prompts — déclare des signatures et compile les prompts (ou un fine-tune) à partir d'exemples et d'une métrique, plutôt que de bricoler des chaînes de caractères.
 
 ## Pour aller plus loin
 

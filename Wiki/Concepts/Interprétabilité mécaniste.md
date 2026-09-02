@@ -60,7 +60,7 @@ Sauter l'étape 4 est l'erreur la plus courante : on conclut à un mécanisme su
 - **Coûteux en temps humain** : identifier un circuit se compte en semaines d'analyse. Il n'y a pas de bouton.
 - **Le doute est de rigueur.** Beaucoup de résultats sont fragiles : circuits qui ne se retrouvent pas d'un modèle à l'autre, SAE dont les features paraissent interprétables même entraînés sur du bruit. Le domaine est jeune et se corrige vite ; se méfier des conclusions définitives.
 - **La retombée pratique existe déjà** : le *steering* par vecteur d'activation est un moyen de contrôle bien plus léger qu'un fine-tuning ou qu'un modèle de garde, et il commence à sortir des labos ([[Guardrails]], [[AI security]]).
-- Outils : [[Dev/Services/TransformerLens|TransformerLens]] (la référence pour l'analyse de circuits), [[Dev/Services/nnsight|nnsight]] (intervention sur modèles distants ou volumineux), [[Dev/Services/SAELens|SAELens]] (SAE), [[Dev/Services/interpreto|interpreto]] (le pipeline concept de bout en bout).
+- Outils : [[TransformerLens]] (la référence pour l'analyse de circuits), [[nnsight]] (intervention sur modèles distants ou volumineux), [[SAELens]] (SAE), [[interpreto]] (le pipeline concept de bout en bout).
 
 ## Approches voisines & alternatives
 

@@ -30,7 +30,7 @@ tags: [timeseries, forecasting, transformers, deep-learning]
 ### Panorama des modèles
 - **TimeGPT** (Nixtla, 2023) — premier modèle de fondation commercial, accès par API.
 - **Lag-Llama** (2024) — decoder-only open, prévision probabiliste.
-- [[Dev/Services/Chronos|Chronos]] (Amazon) — tokenisation de valeurs sur T5 ; *Chronos-Bolt* plus rapide ; **Chronos-2** (2025) abandonne la tokenisation discrète pour un encoder-only à *group attention*, multivarié natif (~120 M params).
+- [[Chronos]] (Amazon) — tokenisation de valeurs sur T5 ; *Chronos-Bolt* plus rapide ; **Chronos-2** (2025) abandonne la tokenisation discrète pour un encoder-only à *group attention*, multivarié natif (~120 M params).
 - **Moirai** (Salesforce) — any-variate ; **Moirai 2.0** (août 2025) passe en decoder-only, ~30× moins de paramètres pour de meilleurs scores.
 - **TimesFM** (Google) — decoder-only *patched* ; **TimesFM 2.5** (sept. 2025) reprend la tête de GIFT-Eval avec ~200 M params.
 - **MOMENT** (CMU), **Tiny Time Mixers / TTM** (IBM, minuscules pour l'edge).
@@ -52,7 +52,7 @@ tags: [timeseries, forecasting, transformers, deep-learning]
 - **Quand** : baseline immédiate sans pipeline par série, démarrage à froid, parc de séries hétérogènes, besoin d'intervalles probabilistes sans calibration manuelle.
 - **Quand éviter** : une seule série longue et stationnaire où [[ARIMA SARIMA]] / [[Exponential smoothing]] suffisent à moindre coût ; contraintes fortes de latence / budget GPU ; domaine très spécifique où un modèle dédié fine-tuné l'emporte.
 - **Évaluer sur SES données** en [[Walk-forward CV]] avec les bonnes [[Forecasting metrics]] — ne pas se fier au seul leaderboard (risque de fuite de pré-entraînement).
-- **Accès** : poids ouverts de Chronos, Moirai, TimesFM, MOMENT via [[Dev/Services/HuggingFace|HuggingFace]] ; architectures récentes voisines (NHITS, PatchTST, TFT) dans [[Dev/Services/neuralforecast|neuralforecast]] ; backtesting et intégration via [[Dev/Services/darts|darts]] ; TimeGPT par l'API Nixtla. Distillation / quantization pour alléger l'inférence.
+- **Accès** : poids ouverts de Chronos, Moirai, TimesFM, MOMENT via [[HuggingFace]] ; architectures récentes voisines (NHITS, PatchTST, TFT) dans [[neuralforecast]] ; backtesting et intégration via [[darts]] ; TimeGPT par l'API Nixtla. Distillation / quantization pour alléger l'inférence.
 
 ## Approches voisines & alternatives
 

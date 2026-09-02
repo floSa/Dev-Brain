@@ -20,7 +20,7 @@ tags: [streaming, llm, web-framework]
 - Une seule requête HTTP reste ouverte ; le serveur émet des **événements** texte `data: …\n\n`. Reconnexion automatique, champs `event:` / `id:` optionnels. Plus léger qu'un WebSocket quand le flux ne va que dans un sens.
 
 ### Côté serveur : générateur asynchrone
-- L'endpoint renvoie un **générateur** qui `yield` chaque chunk au fil de la génération. En Python/ASGI : `sse-starlette` (`EventSourceResponse`) au-dessus de [[Dev/Services/FastAPI|FastAPI]] / Starlette ; les SDK LLM exposent un mode `stream=True` dont on itère les deltas.
+- L'endpoint renvoie un **générateur** qui `yield` chaque chunk au fil de la génération. En Python/ASGI : `sse-starlette` (`EventSourceResponse`) au-dessus de [[FastAPI]] / Starlette ; les SDK LLM exposent un mode `stream=True` dont on itère les deltas.
 
 ### Format des chunks
 - Chaque événement transporte un **delta** de texte (token ou sous-token, cf. [[Tokenization]]). Convention OpenAI : objets JSON `chat.completion.chunk`, flux clôturé par `data: [DONE]`. Le client reconstitue la réponse par concaténation.

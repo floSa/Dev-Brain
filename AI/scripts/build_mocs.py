@@ -100,8 +100,15 @@ AUTO_RE = re.compile(r"<!-- AUTO:START -->.*?<!-- AUTO:END -->", re.S)
 
 
 def link(p: dict) -> str:
-    path = p["path"][:-3] if p["path"].endswith(".md") else p["path"]
-    return f"[[{path}|{p['nom']}]]"
+    """Lien NU vers la page — le vault n'a plus de lien qualifié depuis le lot 3.
+
+    Un lien qualifié porte le chemin ; il casse au premier `git mv`. Le lot 3 en
+    déplace 682, les lots 4 à 6 encore. Obsidian résout par nom de fichier, et le
+    vault n'a plus de collision de nom (la dernière, `hdbscan` / `HDBSCAN`, est
+    tombée avec le renommage de la notion). Cf. AI/migration/lot-3-arborescence.md.
+    """
+    stem = Path(p["path"]).stem
+    return f"[[{stem}]]" if stem == p["nom"] else f"[[{stem}|{p['nom']}]]"
 
 
 def bullet(p: dict) -> str:
@@ -233,7 +240,7 @@ def main() -> int:
         bullets = []
         for key, n in sorted(subs.items(), key=lambda e: (-e[1], e[0])):
             slab = wiki_meta[key][0]
-            bullets.append(f"- [[MOC/Concepts/{slab}|{slab}]] — {n} notion(s)")
+            bullets.append(f"- [[{slab}]] — {n} notion(s)")
         upsert(MOC_THEME / f"{label}.md", label,
                f"Domaine **{label}** (`{dom}`) — explorer par sous-domaine, puis descendre via le graphe local.",
                bullets, dom)

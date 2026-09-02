@@ -53,7 +53,7 @@ Claude Video (MIT, Python) est un skill `/watch` développé par `bradautomates`
 ## Alternatives
 
 - Pas d'équivalent direct fiché dans le brain. Des forks « second brain » (ex. `taoufik123-collab/claude-watch`) ajoutent directement rapport structuré + intégration Obsidian ; Claude Video, lui, ne fournit que la brique bas niveau (frames + transcript + chemin), à exploiter ensuite librement.
-- Voisin fonctionnel (autre skill d'agent, but différent) : [[Dev/Outils/Graphify|Graphify]] — indexation de dépôt en knowledge graph.
+- Voisin fonctionnel (autre skill d'agent, but différent) : [[Graphify]] — indexation de dépôt en knowledge graph.
 
 ## Liens
 

@@ -42,7 +42,7 @@ tags: [rag, llm, retrieval]
 
 - Adopter par étapes, en mesurant à chaque ajout : hybride → reranking → query transform. Inutile d'empiler si le RAG naïf suffit.
 - Chaque étage coûte en **latence et tokens** : arbitrer gain de qualité contre budget.
-- Outillage : [[Dev/Services/LlamaIndex|LlamaIndex]] et [[Dev/Services/Haystack|Haystack]] exposent ces briques (rerankers, routers, query engines) ; [[Dev/Services/LangChain|LangChain]] aussi.
+- Outillage : [[LlamaIndex]] et [[Haystack]] exposent ces briques (rerankers, routers, query engines) ; [[LangChain]] aussi.
 - Piège : complexifier avant d'avoir une mesure ; un pipeline avancé mal évalué masque ses propres régressions.
 
 ## Approches voisines & alternatives
@@ -51,7 +51,7 @@ tags: [rag, llm, retrieval]
 - [[GraphRAG]] — le patron qui remplace l'index de chunks plats par un graphe de connaissances (questions multi-hop / globales).
 - [[Hybrid retrieval]], [[Reranking]], [[Chunking strategies]] — les briques mobilisées ici.
 - [[embeddings]] — toujours la représentation de base.
-- Frameworks : [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]], [[Dev/Services/LangChain|LangChain]].
+- Frameworks : [[LlamaIndex]], [[Haystack]], [[LangChain]].
 
 ## Pour aller plus loin
 

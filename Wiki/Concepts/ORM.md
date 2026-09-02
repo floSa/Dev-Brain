@@ -21,7 +21,7 @@ tags: [orm, relational]
 - Beaucoup d'ORM suivent les changements en mémoire et les persistent en lot (unit of work / sessions).
 
 ### Data Mapper vs Active Record
-- Data Mapper : l'entité ignore la persistance, un mapper séparé fait le pont (ex. [[Dev/Services/Prisma|Prisma]], [[Dev/Services/SQLAlchemy|SQLAlchemy]] core).
+- Data Mapper : l'entité ignore la persistance, un mapper séparé fait le pont (ex. [[Prisma]], [[SQLAlchemy]] core).
 - Active Record : l'objet porte lui-même ses méthodes de persistance (`user.save()`).
 
 ### Schéma & migrations
@@ -35,11 +35,11 @@ tags: [orm, relational]
 
 ## Approches voisines & alternatives
 
-- Implémentation Dev : [[Dev/Services/Prisma|Prisma]] (ORM TypeScript).
-- Écosystème Python : [[Dev/Services/SQLAlchemy|SQLAlchemy]] (Data Mapper de référence).
-- Couche Pydantic + SQLAlchemy : [[Dev/Services/SQLModel|SQLModel]] (un seul modèle typé pour validation et persistance, orienté FastAPI).
+- Implémentation Dev : [[Prisma]] (ORM TypeScript).
+- Écosystème Python : [[SQLAlchemy]] (Data Mapper de référence).
+- Couche Pydantic + SQLAlchemy : [[SQLModel]] (un seul modèle typé pour validation et persistance, orienté FastAPI).
 - Plus bas niveau : query builders et SQL brut (contrôle maximal, moins d'abstraction).
-- Concept parent : [[Wiki/Concepts/Bases de données|Bases de données]].
+- Concept parent : [[Bases de données]].
 
 ## Pour aller plus loin
 

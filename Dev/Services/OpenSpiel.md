@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Gymnasium|Gymnasium]]"]
+alternatives: ["[[Gymnasium]]"]
 complements: []
 tags: [reinforcement-learning, game-theory]
 url_docs: https://openspiel.readthedocs.io/
@@ -30,7 +30,7 @@ Le terrain de jeu de la **théorie des jeux algorithmique** (Google DeepMind) : 
 
 ## Quand NE PAS l'utiliser
 
-- RL **mono-agent** classique (contrôle, robotique) → [[Dev/Services/Gymnasium|Gymnasium]] + [[Dev/Services/Stable-Baselines3|Stable-Baselines3]].
+- RL **mono-agent** classique (contrôle, robotique) → [[Gymnasium]] + [[Stable-Baselines3]].
 - Multi-agents généraliste **hors jeux formels** (essaims, simulation) → PettingZoo (hors brain), API multi-agents de la Farama Foundation.
 - Développer un **jeu** à destination de joueurs : OpenSpiel est un outil de recherche, pas un moteur de jeu.
 
@@ -49,7 +49,7 @@ Le terrain de jeu de la **théorie des jeux algorithmique** (Google DeepMind) : 
 
 ## Alternatives
 
-- [[Dev/Services/Gymnasium|Gymnasium]] — Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.
+- [[Gymnasium]] — Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.
 
 Nuance : Gymnasium pour le mono-agent standard, OpenSpiel dès que le problème est un **jeu** (adversaires, équilibres, information imparfaite). En dehors du brain : PettingZoo (multi-agents général), pgx (jeux vectorisés en JAX).
 
@@ -60,6 +60,6 @@ Nuance : Gymnasium pour le mono-agent standard, OpenSpiel dès que le problème 
 - [[Monte Carlo Tree Search]] — la recherche arborescente en information parfaite.
 - [[AlphaZero and self-play]] — implémentation pédagogique incluse.
 - [[Reinforcement learning]] — le socle mono-agent que ces jeux généralisent.
-- [[Dev/Services/Gymnasium|Gymnasium]] — l'API standard côté mono-agent.
+- [[Gymnasium]] — l'API standard côté mono-agent.
 - [[Comparatif - Reinforcement learning]] — vue d'ensemble des libs RL.
 - Doc : https://openspiel.readthedocs.io/

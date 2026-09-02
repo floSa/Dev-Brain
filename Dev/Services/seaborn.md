@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/matplotlib|matplotlib]]"]
+alternatives: ["[[matplotlib]]"]
 complements: []
 tags: [dataviz, statistical-viz, static-viz]
 url_docs: https://seaborn.pydata.org/
@@ -19,7 +19,7 @@ url_repo: https://github.com/mwaskom/seaborn
 
 ## Pourquoi
 
-Surcouche **haut niveau** de [[Dev/Services/matplotlib|matplotlib]] orientée **statistiques**. Prend un `DataFrame` [[Dev/Services/pandas|pandas]] et produit des figures soignées en un appel : distributions (`histplot`, `kdeplot`), relations (`scatterplot`, `lmplot`), catégories (`boxplot`, `violinplot`), matrices (`heatmap`). Gère pour soi l'agrégation, les intervalles de confiance, le mapping couleur/facette. Depuis 0.12, l'interface **objects** (`seaborn.objects`, importée `so`) offre une grammaire des graphiques par couches. Le résultat reste une figure matplotlib, donc personnalisable à la main.
+Surcouche **haut niveau** de [[matplotlib]] orientée **statistiques**. Prend un `DataFrame` [[pandas]] et produit des figures soignées en un appel : distributions (`histplot`, `kdeplot`), relations (`scatterplot`, `lmplot`), catégories (`boxplot`, `violinplot`), matrices (`heatmap`). Gère pour soi l'agrégation, les intervalles de confiance, le mapping couleur/facette. Depuis 0.12, l'interface **objects** (`seaborn.objects`, importée `so`) offre une grammaire des graphiques par couches. Le résultat reste une figure matplotlib, donc personnalisable à la main.
 
 ## Quand l'utiliser
 
@@ -30,8 +30,8 @@ Surcouche **haut niveau** de [[Dev/Services/matplotlib|matplotlib]] orientée **
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de contrôle fin / figure composée sur mesure → [[Dev/Services/matplotlib|matplotlib]] directement.
-- Interactivité web (zoom, survol, dashboards) → [[Dev/Services/plotly|plotly]], [[Dev/Services/bokeh|bokeh]] ou [[Dev/Services/altair|altair]].
+- Besoin de contrôle fin / figure composée sur mesure → [[matplotlib]] directement.
+- Interactivité web (zoom, survol, dashboards) → [[plotly]], [[bokeh]] ou [[altair]].
 - Très gros volumes à tracer point par point → échantillonner ou agréger en amont.
 
 ## Déploiement & coût
@@ -49,10 +49,10 @@ Surcouche **haut niveau** de [[Dev/Services/matplotlib|matplotlib]] orientée **
 
 ## Alternatives
 
-- [[Dev/Services/matplotlib|matplotlib]] — Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.
+- [[matplotlib]] — Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.
 
 ## Liens
 
-- Bâtie sur [[Dev/Services/matplotlib|matplotlib]] ; consomme des DataFrames [[Dev/Services/pandas|pandas]].
-- [[Dev/Patterns/Comparatif - Visualisation]] — seaborn vs matplotlib / plotly / altair / bokeh.
+- Bâtie sur [[matplotlib]] ; consomme des DataFrames [[pandas]].
+- [[Comparatif - Visualisation]] — seaborn vs matplotlib / plotly / altair / bokeh.
 - Doc : https://seaborn.pydata.org/

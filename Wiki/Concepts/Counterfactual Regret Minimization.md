@@ -45,7 +45,7 @@ tags: [game-theory, regret-minimization, self-play]
 - Exige une structure de jeu explicite (arbre d'information sets) ; les variantes Monte-Carlo et deep repoussent la limite de taille.
 - Différence avec le RL classique : CFR vise un **équilibre** contre un adversaire qui s'adapte, pas la maximisation d'une récompense contre un environnement fixe (cf. [[Reinforcement learning]]).
 - Pièges : converge en stratégie **moyenne** (oublier de moyenner = pas d'équilibre) ; au-delà de deux joueurs ou en somme non nulle, plus de garantie de Nash.
-- Côté outils : [[Dev/Services/OpenSpiel|OpenSpiel]] implémente CFR, CFR+, MCCFR et le calcul d'exploitabilité sur 70+ jeux.
+- Côté outils : [[OpenSpiel]] implémente CFR, CFR+, MCCFR et le calcul d'exploitabilité sur 70+ jeux.
 
 ## Approches voisines & alternatives
 

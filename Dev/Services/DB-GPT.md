@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Vanna|Vanna]]", "[[Dev/Services/WrenAI|WrenAI]]"]
+alternatives: ["[[Vanna]]", "[[WrenAI]]"]
 complements: []
 tags: [text-to-sql, llm, multi-agent, rag, fine-tuning]
 url_docs: http://docs.dbgpt.cn
@@ -31,8 +31,8 @@ DB-GPT est un framework open-source (MIT) pour bâtir des **agents data IA-natif
 
 ## Quand NE PAS l'utiliser
 
-- Besoin simple et rapide : la courbe d'apprentissage (AWEL + framework d'agents + pipeline) est raide → [[Dev/Services/Vanna|Vanna]].
-- Équipe métier voulant une UI de BI gouvernée clé en main → [[Dev/Services/WrenAI|WrenAI]].
+- Besoin simple et rapide : la courbe d'apprentissage (AWEL + framework d'agents + pipeline) est raide → [[Vanna]].
+- Équipe métier voulant une UI de BI gouvernée clé en main → [[WrenAI]].
 - Petite équipe sans temps d'appropriation de l'écosystème DB-GPT.
 
 ## Déploiement & coût
@@ -49,11 +49,11 @@ DB-GPT est un framework open-source (MIT) pour bâtir des **agents data IA-natif
 
 ## Alternatives
 
-- [[Dev/Services/Vanna|Vanna]] — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
-- [[Dev/Services/WrenAI|WrenAI]] — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.
+- [[Vanna]] — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
+- [[WrenAI]] — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques, contrôle d'accès), produit tableaux de bord et graphiques, self-host Docker ou offre hébergée, 20+ sources.
 
 ## Liens
 
 - [[Text-to-SQL]] — concept parent : traduire une question en langage naturel en SQL exécutable.
-- [[Dev/Patterns/Comparatif - Frameworks text-to-SQL|Comparatif - Frameworks text-to-SQL]]
+- [[Comparatif - Frameworks text-to-SQL]]
 - Repo : https://github.com/eosphoros-ai/DB-GPT · Docs : http://docs.dbgpt.cn

@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, iOS, Android"
 langage: TypeScript
-alternatives: ["[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/Maka|Maka]]"]
+alternatives: ["[[Cline]]", "[[Aider]]", "[[Continue]]", "[[Maka]]"]
 complements: []
 tags: [code-assistant, agents, code-generation]
 url_docs: https://github.com/pingdotgg/t3code/tree/main/docs
@@ -32,7 +32,7 @@ Sur la taxonomie du brain, la catégorie retenue est `llm/agent-de-code` faute d
 
 ## Quand NE PAS l'utiliser
 
-- Vouloir un agent qui édite le code lui-même → [[Dev/Outils/Cline|Cline]], [[Dev/Outils/Aider|Aider]], [[Dev/Outils/Continue|Continue]].
+- Vouloir un agent qui édite le code lui-même → [[Cline]], [[Aider]], [[Continue]].
 - Vouloir brancher un LLM auto-hébergé : t3code ne parle à aucun modèle. La seule voie est **indirecte**, via une CLI qui le fait à sa place — OpenCode dans la liste supportée.
 - Environnement qui exige de la stabilité : le projet s'annonce lui-même comme très précoce.
 
@@ -55,10 +55,10 @@ Sur la taxonomie du brain, la catégorie retenue est `llm/agent-de-code` faute d
 
 Aucune des pages ci-dessous n'est un équivalent : t3code se place **au-dessus** de ces outils, pas à côté d'eux.
 
-- [[Dev/Outils/Cline|Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
-- [[Dev/Outils/Aider|Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
-- [[Dev/Outils/Continue|Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
-- [[Dev/Outils/Maka|Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
+- [[Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
+- [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
+- [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
+- [[Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 
 ## Liens
 

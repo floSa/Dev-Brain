@@ -19,7 +19,7 @@ url_repo: https://github.com/KindXiaoming/pykan
 
 ## Pourquoi
 
-Implémentation **officielle de référence** des [[Kolmogorov-Arnold Networks]] (KAN), par les auteurs du papier, bâtie sur [[Dev/Services/PyTorch|PyTorch]]. Au lieu des poids linéaires + activations fixes du MLP, un KAN place des **fonctions univariées apprenables** (B-splines) sur les arêtes. pykan expose toute la mécanique de l'article : raffinement de grille (grid extension), régularisation et **élagage**, fixation de symboles et **extraction d'une formule symbolique** lisible — d'où son usage en ML scientifique (régression de fonctions, EDP). C'est une base de recherche, pas un framework de production.
+Implémentation **officielle de référence** des [[Kolmogorov-Arnold Networks]] (KAN), par les auteurs du papier, bâtie sur [[PyTorch]]. Au lieu des poids linéaires + activations fixes du MLP, un KAN place des **fonctions univariées apprenables** (B-splines) sur les arêtes. pykan expose toute la mécanique de l'article : raffinement de grille (grid extension), régularisation et **élagage**, fixation de symboles et **extraction d'une formule symbolique** lisible — d'où son usage en ML scientifique (régression de fonctions, EDP). C'est une base de recherche, pas un framework de production.
 
 ## Quand l'utiliser
 
@@ -31,7 +31,7 @@ Implémentation **officielle de référence** des [[Kolmogorov-Arnold Networks]]
 
 - Tâches de **perception à grande échelle** (vision, langage) → MLP et transformeurs ([[Transformer architectures]]) restent devant, plus rapides et mieux outillés.
 - Besoin de **débit / production** : l'auteur lui-même privilégie la clarté scientifique à l'efficacité et renvoie vers des variantes plus rapides (efficient-kan, FastKAN, non référencées ici).
-- Pipeline ML standard tabulaire → [[Dev/Services/Scikit-Learn|Scikit-Learn]] / gradient boosting, matures et éprouvés.
+- Pipeline ML standard tabulaire → [[Scikit-Learn]] / gradient boosting, matures et éprouvés.
 
 ## Déploiement & coût
 
@@ -52,6 +52,6 @@ Pas de substitut direct référencé dans le brain. Pour la performance, des ré
 ## Liens
 
 - [[Kolmogorov-Arnold Networks]] — le concept dont pykan est l'implémentation de référence.
-- [[Dev/Services/PyTorch|PyTorch]] — le socle sur lequel pykan est bâti.
+- [[PyTorch]] — le socle sur lequel pykan est bâti.
 - [[Transformer architectures]] — la brique de deep learning concurrente sur les grosses tâches.
 - Doc : https://kindxiaoming.github.io/pykan/ · Repo : https://github.com/KindXiaoming/pykan

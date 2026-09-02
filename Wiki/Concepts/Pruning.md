@@ -44,7 +44,7 @@ tags: [pruning, model-compression, deep-learning, inference-optimization]
 - [[Distillation]] — compression prof → élève : entraîner un petit modèle plutôt que dégrader le grand ; complémentaire.
 - [[Small Language Models]] — le pruning est l'une de leurs recettes d'efficience.
 - [[Inference optimization]] — le pruning s'inscrit dans l'arsenal d'accélération de l'inférence.
-- [[Dev/Services/PyTorch|PyTorch]] — `torch.nn.utils.prune` (élagage par magnitude, structuré/non structuré).
+- [[PyTorch]] — `torch.nn.utils.prune` (élagage par magnitude, structuré/non structuré).
 
 ## Pour aller plus loin
 

@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/darts|darts]]", "[[Dev/Services/Prophet|Prophet]]"]
+alternatives: ["[[darts]]", "[[Prophet]]"]
 complements: []
 tags: [forecasting, timeseries, foundation-model, transformers, deep-learning]
 url_docs: https://github.com/amazon-science/chronos-forecasting
@@ -30,16 +30,16 @@ Chronos (Amazon) est un **modèle de fondation pour séries temporelles** : pré
 
 ## Quand NE PAS l'utiliser
 
-- Une seule série longue et stationnaire où un modèle statistique bien réglé suffit pour bien moins cher → [[Dev/Services/statsforecast|statsforecast]], [[ARIMA SARIMA]].
-- Beaucoup de séries à prévoir vite sur CPU, sans GPU → [[Dev/Services/statsforecast|statsforecast]].
-- Catalogue de réseaux neuronaux à entraîner / fine-tuner soi-même → [[Dev/Services/neuralforecast|neuralforecast]].
+- Une seule série longue et stationnaire où un modèle statistique bien réglé suffit pour bien moins cher → [[statsforecast]], [[ARIMA SARIMA]].
+- Beaucoup de séries à prévoir vite sur CPU, sans GPU → [[statsforecast]].
+- Catalogue de réseaux neuronaux à entraîner / fine-tuner soi-même → [[neuralforecast]].
 - Contraintes fortes de latence / budget GPU, ou domaine très spécifique où un modèle dédié fine-tuné l'emporte.
 
 ## Déploiement & coût
 
-- Poids ouverts (Apache-2.0), gratuits, accessibles via [[Dev/Services/HuggingFace|HuggingFace]] ; `pip install chronos-forecasting`. Rien de managé : self-host.
+- Poids ouverts (Apache-2.0), gratuits, accessibles via [[HuggingFace]] ; `pip install chronos-forecasting`. Rien de managé : self-host.
 - Inférence sur **GPU conseillée** (modèles 100 M+ params) ; mono-machine. Chronos-Bolt allège pour le CPU / l'edge.
-- Intégrable comme modèle dans [[Dev/Services/darts|darts]] et dans AutoGluon-TimeSeries.
+- Intégrable comme modèle dans [[darts]] et dans AutoGluon-TimeSeries.
 
 ## Pièges
 
@@ -49,13 +49,13 @@ Chronos (Amazon) est un **modèle de fondation pour séries temporelles** : pré
 
 ## Alternatives
 
-- [[Dev/Services/darts|darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
-- [[Dev/Services/Prophet|Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
+- [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
+- [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
 
 ## Liens
 
 - [[Foundation models pour séries temporelles]] — le concept dont Chronos est l'un des modèles phares (tokenisation, panorama, évaluation).
 - [[Forecasting framing]] — cadrer le problème (horizon, fuite, covariables) reste indispensable même en zero-shot.
 - [[Walk-forward CV]] — l'évaluation honnête sur ses propres données, face au battage des leaderboards.
-- Voisins statistiques/neuronaux : [[Dev/Services/statsforecast|statsforecast]], [[Dev/Services/neuralforecast|neuralforecast]].
+- Voisins statistiques/neuronaux : [[statsforecast]], [[neuralforecast]].
 - Doc / poids : https://github.com/amazon-science/chronos-forecasting

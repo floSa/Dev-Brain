@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/statsmodels|statsmodels]]", "[[Dev/Services/pingouin|pingouin]]"]
+alternatives: ["[[statsmodels]]", "[[pingouin]]"]
 complements: []
 tags: [hypothesis-testing, p-value, confidence-interval, parametric-test, non-parametric]
 url_docs: https://docs.scipy.org/doc/scipy/reference/stats.html
@@ -26,13 +26,13 @@ Sous-module statistique de **SciPy**, présent dans presque tout environnement P
 - Calculer rapidement une p-value ou une statistique de test sans dépendance supplémentaire (SciPy est presque toujours déjà installé).
 - Manipuler des lois de probabilité : `pdf`, `cdf`, `ppf`, tirage, fit de paramètres.
 - Bootstrap, tests de permutation, Monte-Carlo via `scipy.stats.bootstrap` / `permutation_test` / `monte_carlo_test`.
-- Classification ascendante hiérarchique via le sous-module voisin `scipy.cluster.hierarchy` (`linkage`, `dendrogram`, `fcluster`) → [[Wiki/Concepts/Classification hiérarchique (CAH)|CAH]].
+- Classification ascendante hiérarchique via le sous-module voisin `scipy.cluster.hierarchy` (`linkage`, `dendrogram`, `fcluster`) → [[Classification hiérarchique (CAH)|CAH]].
 
 ## Quand NE PAS l'utiliser
 
-- Modèles statistiques complets (régression OLS/GLM, séries temporelles, tables de résultats annotées) → [[Dev/Services/statsmodels|statsmodels]].
-- API lisible orientée sortie « prête à publier » avec tailles d'effet et tests post-hoc → [[Dev/Services/pingouin|pingouin]].
-- Analyse factorielle / réduction de dimension → [[Dev/Services/Prince|Prince]].
+- Modèles statistiques complets (régression OLS/GLM, séries temporelles, tables de résultats annotées) → [[statsmodels]].
+- API lisible orientée sortie « prête à publier » avec tailles d'effet et tests post-hoc → [[pingouin]].
+- Analyse factorielle / réduction de dimension → [[Prince]].
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ Sous-module statistique de **SciPy**, présent dans presque tout environnement P
 
 ## Alternatives
 
-- [[Dev/Services/statsmodels|statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
-- [[Dev/Services/pingouin|pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
+- [[statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
+- [[pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Tests d'hypothèse|Tests d'hypothèse]], [[Wiki/Concepts/Intervalles de confiance|Intervalles de confiance]], [[Wiki/Concepts/Test t et ANOVA|Test t et ANOVA]], [[Wiki/Concepts/Test du khi-deux|Test du khi-deux]], [[Wiki/Concepts/Tests non paramétriques|Tests non paramétriques]], [[Wiki/Concepts/Classification hiérarchique (CAH)|CAH]] (via `scipy.cluster.hierarchy`)
+- Concepts implémentés : [[Tests d'hypothèse]], [[Intervalles de confiance]], [[Test t et ANOVA]], [[Test du khi-deux]], [[Tests non paramétriques]], [[Classification hiérarchique (CAH)|CAH]] (via `scipy.cluster.hierarchy`)
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://docs.scipy.org/doc/scipy/reference/stats.html

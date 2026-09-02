@@ -19,19 +19,19 @@ url_repo: https://github.com/psycopg/psycopg2
 
 ## Pourquoi
 
-Le **driver PostgreSQL** le plus répandu pour Python. Il implémente la spécification **DB-API 2.0** et est écrit majoritairement en **C** comme wrapper de **libpq** — d'où son efficacité et sa sûreté. Thread-safe, il offre curseurs côté client et serveur, communication asynchrone et notifications, support de `COPY TO/FROM`. C'est la couche bas niveau sous de nombreux ORM (dont [[Dev/Services/SQLAlchemy|SQLAlchemy]], qui l'utilise comme dialecte Postgres par défaut). **Ce n'est pas un ORM** : aucun mapping objet, on écrit le SQL. Toujours largement utilisé et maintenu, mais **figé en fonctionnalités** : les nouveautés vont à **psycopg 3** (paquet `psycopg`).
+Le **driver PostgreSQL** le plus répandu pour Python. Il implémente la spécification **DB-API 2.0** et est écrit majoritairement en **C** comme wrapper de **libpq** — d'où son efficacité et sa sûreté. Thread-safe, il offre curseurs côté client et serveur, communication asynchrone et notifications, support de `COPY TO/FROM`. C'est la couche bas niveau sous de nombreux ORM (dont [[SQLAlchemy]], qui l'utilise comme dialecte Postgres par défaut). **Ce n'est pas un ORM** : aucun mapping objet, on écrit le SQL. Toujours largement utilisé et maintenu, mais **figé en fonctionnalités** : les nouveautés vont à **psycopg 3** (paquet `psycopg`).
 
 ## Quand l'utiliser
 
-- Accès **SQL direct** à [[Dev/Services/Postgres|Postgres]] sans couche ORM (scripts, micro-services, contrôle fin et performance).
-- **Driver sous-jacent** d'un ORM/toolkit ([[Dev/Services/SQLAlchemy|SQLAlchemy]]) ou d'un framework existant.
+- Accès **SQL direct** à [[Postgres]] sans couche ORM (scripts, micro-services, contrôle fin et performance).
+- **Driver sous-jacent** d'un ORM/toolkit ([[SQLAlchemy]]) ou d'un framework existant.
 - Codebase **déjà sur psycopg2**, sans besoin d'async.
 
 ## Quand NE PAS l'utiliser
 
 - **Nouveau projet** → préférer **psycopg 3** (`psycopg`) : async natif, meilleure gestion des types, pipeline mode.
 - Besoin d'**async hautes performances** → psycopg 3 ou **asyncpg**.
-- Vouloir un **mapping objet** et des **migrations** → [[Dev/Services/SQLAlchemy|SQLAlchemy]] + [[Dev/Services/Alembic|Alembic]].
+- Vouloir un **mapping objet** et des **migrations** → [[SQLAlchemy]] + [[Alembic]].
 
 ## Déploiement & coût
 
@@ -46,10 +46,10 @@ Le **driver PostgreSQL** le plus répandu pour Python. Il implémente la spécif
 
 ## Alternatives
 
-- _Successeur direct **psycopg 3** (`psycopg`) et alternative async **asyncpg** — pas encore fichés dans le brain._ [[Dev/Services/SQLAlchemy|SQLAlchemy]] n'est pas une alternative : il s'appuie sur psycopg2, il ne le remplace pas.
+- _Successeur direct **psycopg 3** (`psycopg`) et alternative async **asyncpg** — pas encore fichés dans le brain._ [[SQLAlchemy]] n'est pas une alternative : il s'appuie sur psycopg2, il ne le remplace pas.
 
 ## Liens
 
-- [[Dev/Services/Postgres|Postgres]] — la base pilotée.
-- [[Dev/Services/SQLAlchemy|SQLAlchemy]] — ORM/toolkit qui utilise psycopg2 comme driver Postgres.
+- [[Postgres]] — la base pilotée.
+- [[SQLAlchemy]] — ORM/toolkit qui utilise psycopg2 comme driver Postgres.
 - Doc : https://www.psycopg.org/docs/

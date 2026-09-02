@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: single-node
-alternatives: ["[[Dev/Services/Langflow|Langflow]]", "[[Dev/Services/Dify|Dify]]"]
+alternatives: ["[[Langflow]]", "[[Dify]]"]
 complements: []
 tags: [llm, low-code, agents, rag]
 url_docs: https://docs.flowiseai.com/
@@ -21,7 +21,7 @@ url_repo: https://github.com/FlowiseAI/Flowise
 
 ## Pourquoi
 
-Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on glisse-dépose des **nœuds** (modèles, vector stores, outils, mémoire) sur un **canvas** pour assembler une app, exposée ensuite en **API** ou en widget de chat. Écrit en **TypeScript/Node.js** et **bâti sur LangChain.js** (l'équivalent JS de [[Dev/Services/LangChain|LangChain]]), c'est le pendant côté écosystème **JavaScript** des builders Python. Cœur **Apache-2.0** ; une **édition Enterprise** commerciale ajoute SSO, RBAC et fonctions d'équipe.
+Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on glisse-dépose des **nœuds** (modèles, vector stores, outils, mémoire) sur un **canvas** pour assembler une app, exposée ensuite en **API** ou en widget de chat. Écrit en **TypeScript/Node.js** et **bâti sur LangChain.js** (l'équivalent JS de [[LangChain]]), c'est le pendant côté écosystème **JavaScript** des builders Python. Cœur **Apache-2.0** ; une **édition Enterprise** commerciale ajoute SSO, RBAC et fonctions d'équipe.
 
 ## Quand l'utiliser
 
@@ -31,9 +31,9 @@ Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on g
 
 ## Quand NE PAS l'utiliser
 
-- Stack **Python** où l'on veut exporter le flux en code → [[Dev/Services/Langflow|Langflow]].
-- Besoin d'une **plateforme** complète (gestion modèles, observabilité, datasets) → [[Dev/Services/Dify|Dify]].
-- Orchestration **stateful complexe** versionnée en code → [[Dev/Services/LangGraph|LangGraph]].
+- Stack **Python** où l'on veut exporter le flux en code → [[Langflow]].
+- Besoin d'une **plateforme** complète (gestion modèles, observabilité, datasets) → [[Dify]].
+- Orchestration **stateful complexe** versionnée en code → [[LangGraph]].
 
 ## Déploiement & coût
 
@@ -49,14 +49,14 @@ Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on g
 
 ## Alternatives
 
-- [[Dev/Services/Langflow|Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
-- [[Dev/Services/Dify|Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
+- [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
+- [[Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
 
 ## Liens
 
-- Même famille de **builders visuels** que [[Dev/Services/Langflow|Langflow]] et [[Dev/Services/Dify|Dify]] ; côté **JS**, contrairement aux deux (Python).
-- Bâti sur **LangChain.js** (cf. [[Dev/Services/LangChain|LangChain]]).
-- Peut consommer de multiples fournisseurs, dont via [[Dev/Services/OpenRouter|OpenRouter]] / [[Dev/Services/LiteLLM|LiteLLM]].
+- Même famille de **builders visuels** que [[Langflow]] et [[Dify]] ; côté **JS**, contrairement aux deux (Python).
+- Bâti sur **LangChain.js** (cf. [[LangChain]]).
+- Peut consommer de multiples fournisseurs, dont via [[OpenRouter]] / [[LiteLLM]].
 - Concepts : [[Agent patterns]], [[Advanced RAG]], [[Context engineering]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.flowiseai.com/

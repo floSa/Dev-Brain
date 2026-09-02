@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/XGBoost|XGBoost]]", "[[Dev/Services/CatBoost|CatBoost]]", "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
+alternatives: ["[[XGBoost]]", "[[CatBoost]]", "[[Scikit-Learn]]"]
 complements: []
 tags: [supervised, tree-based, ensemble, boosting, distributed]
 url_docs: https://lightgbm.readthedocs.io/
@@ -30,9 +30,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] créée par Microsoft (maint
 
 ## Quand NE PAS l'utiliser
 
-- Petits jeux de données → le leaf-wise surapprend vite ; [[Dev/Services/XGBoost|XGBoost]] (level-wise) est plus prudent.
-- Variables catégorielles nombreuses et à fort cardinal → [[Dev/Services/CatBoost|CatBoost]] (encodage ordonné anti-fuite).
-- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Dev/Services/Scikit-Learn|Scikit-Learn]] (inspiré de LightGBM).
+- Petits jeux de données → le leaf-wise surapprend vite ; [[XGBoost]] (level-wise) est plus prudent.
+- Variables catégorielles nombreuses et à fort cardinal → [[CatBoost]] (encodage ordonné anti-fuite).
+- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Scikit-Learn]] (inspiré de LightGBM).
 
 ## Déploiement & coût
 
@@ -48,9 +48,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] créée par Microsoft (maint
 
 ## Alternatives
 
-- [[Dev/Services/XGBoost|XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
-- [[Dev/Services/CatBoost|CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
+- [[CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
 ## Liens
 

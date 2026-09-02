@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/LightGBM|LightGBM]]", "[[Dev/Services/CatBoost|CatBoost]]", "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
+alternatives: ["[[LightGBM]]", "[[CatBoost]]", "[[Scikit-Learn]]"]
 complements: []
 tags: [supervised, tree-based, ensemble, boosting, distributed]
 url_docs: https://xgboost.readthedocs.io/
@@ -30,9 +30,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] devenue la référence. Appo
 
 ## Quand NE PAS l'utiliser
 
-- Vitesse d'entraînement prioritaire sur très gros volumes → [[Dev/Services/LightGBM|LightGBM]] (leaf-wise plus rapide).
-- Beaucoup de variables **catégorielles** à fort cardinal → [[Dev/Services/CatBoost|CatBoost]] (encodage natif).
-- Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Dev/Services/Scikit-Learn|Scikit-Learn]] suffit.
+- Vitesse d'entraînement prioritaire sur très gros volumes → [[LightGBM]] (leaf-wise plus rapide).
+- Beaucoup de variables **catégorielles** à fort cardinal → [[CatBoost]] (encodage natif).
+- Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Scikit-Learn]] suffit.
 - Données non tabulaires (images, texte, séquences) → réseaux de neurones.
 
 ## Déploiement & coût
@@ -49,9 +49,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] devenue la référence. Appo
 
 ## Alternatives
 
-- [[Dev/Services/LightGBM|LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
-- [[Dev/Services/CatBoost|CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
+- [[CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
 ## Liens
 

@@ -10,7 +10,7 @@ hosted: [self]
 maturite: beta
 langage: TypeScript
 scaling: single-node
-alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]", "[[Dev/Services/OpenRouter|OpenRouter]]"]
+alternatives: ["[[LiteLLM]]", "[[OpenRouter]]"]
 complements: []
 tags: [llm, llm-gateway, routing, reliability, context-engineering]
 url_docs: https://github.com/diegosouzapw/OmniRoute/wiki
@@ -21,7 +21,7 @@ url_repo: https://github.com/diegosouzapw/OmniRoute
 
 ## Pourquoi
 
-**Passerelle LLM auto-hébergée**, écrite en **TypeScript** (Next.js), sous licence **MIT**. Même rôle que [[Dev/Services/LiteLLM|LiteLLM]] : une API unique devant un parc de fournisseurs. Deux différences de conception. D'abord le **routage par combos** : une liste ordonnée de couples (fournisseur, modèle), avec fallback au niveau du compte puis du modèle, et un moteur de sélection automatique qui score sur neuf facteurs (coût, latence p95, taux de succès, marge de quota, proximité de lockout, état du circuit breaker, échecs récents, disponibilité du modèle, affinité de tags). Le **fallback conscient des quotas** est le cœur du projet. Ensuite la **compression de requêtes**, appliquée avant la traduction vers le fournisseur : règles lexicales (« Caveman » : packs de langue, suppression d'articles et de mots vides), filtres de sortie d'outils (« RTK » : troncature avec récupération du brut), pipelines empilables par combo, et moteurs de type LLMLingua-2. **Ce n'est pas du cache** ([[LLM caching]] réutilise un calcul identique) : c'est une **réécriture destructive du prompt**, donc du [[Context engineering]] avec perte assumée.
+**Passerelle LLM auto-hébergée**, écrite en **TypeScript** (Next.js), sous licence **MIT**. Même rôle que [[LiteLLM]] : une API unique devant un parc de fournisseurs. Deux différences de conception. D'abord le **routage par combos** : une liste ordonnée de couples (fournisseur, modèle), avec fallback au niveau du compte puis du modèle, et un moteur de sélection automatique qui score sur neuf facteurs (coût, latence p95, taux de succès, marge de quota, proximité de lockout, état du circuit breaker, échecs récents, disponibilité du modèle, affinité de tags). Le **fallback conscient des quotas** est le cœur du projet. Ensuite la **compression de requêtes**, appliquée avant la traduction vers le fournisseur : règles lexicales (« Caveman » : packs de langue, suppression d'articles et de mots vides), filtres de sortie d'outils (« RTK » : troncature avec récupération du brut), pipelines empilables par combo, et moteurs de type LLMLingua-2. **Ce n'est pas du cache** ([[LLM caching]] réutilise un calcul identique) : c'est une **réécriture destructive du prompt**, donc du [[Context engineering]] avec perte assumée.
 
 ## Quand l'utiliser
 
@@ -33,8 +33,8 @@ url_repo: https://github.com/diegosouzapw/OmniRoute
 ## Quand NE PAS l'utiliser
 
 - **En contexte professionnel** : le wiki documente des fournisseurs de type « cookie web » (ChatGPT Web, Gemini Web) et « OAuth / abonnement » (Claude Code, GitHub Copilot) détournés vers une API, avec une promesse d'« IA gratuite illimitée ». C'est structurellement contraire aux CGU de ces fournisseurs — le risque contractuel est réel et rédhibitoire.
-- Passerelle **d'équipe** à opérer (clés virtuelles, redondance, état partagé) → [[Dev/Services/LiteLLM|LiteLLM]], dont le proxy se réplique.
-- Ne rien héberger du tout → [[Dev/Services/OpenRouter|OpenRouter]].
+- Passerelle **d'équipe** à opérer (clés virtuelles, redondance, état partagé) → [[LiteLLM]], dont le proxy se réplique.
+- Ne rien héberger du tout → [[OpenRouter]].
 - **Servir** un modèle : OmniRoute ne fait aucune inférence, il route.
 - Prompts où la **fidélité littérale** compte (juridique, code, extraction) : la compression par règles altère le texte.
 
@@ -56,12 +56,12 @@ url_repo: https://github.com/diegosouzapw/OmniRoute
 
 ## Alternatives
 
-- [[Dev/Services/LiteLLM|LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
-- [[Dev/Services/OpenRouter|OpenRouter]] — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
+- [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
+- [[OpenRouter]] — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 
 ## Liens
 
-- Voisin sans être une alternative : [[Dev/Services/Helicone|Helicone]] (observabilité LLM en mode proxy, avec cache et rate-limiting — l'angle est la mesure, pas le routage).
+- Voisin sans être une alternative : [[Helicone]] (observabilité LLM en mode proxy, avec cache et rate-limiting — l'angle est la mesure, pas le routage).
 - Concepts : [[Routing and cascading]], [[Reliability patterns]] (circuit breaker, fallback), [[Context engineering]] (compression de prompt), [[LLM caching]] (en contraste : réutilisation, pas réécriture).
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Wiki : https://github.com/diegosouzapw/OmniRoute/wiki

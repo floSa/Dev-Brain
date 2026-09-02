@@ -9,7 +9,7 @@ domaines: [data-eng, ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: JavaScript (Electron)
-alternatives: ["[[Dev/Outils/Postman|Postman]]"]
+alternatives: ["[[Postman]]"]
 complements: []
 tags: [api-client, version-control]
 url_docs: https://docs.usebruno.com/
@@ -30,8 +30,8 @@ Client d'API léger et open-source (MIT), pensé git-native : les collections so
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de l'écosystème complet (mocks, monitoring, doc publiée, catalogue, collaboration cloud clés en main) → [[Dev/Outils/Postman|Postman]].
-- Équipe déjà investie dans les espaces de travail partagés Postman → [[Dev/Outils/Postman|Postman]].
+- Besoin de l'écosystème complet (mocks, monitoring, doc publiée, catalogue, collaboration cloud clés en main) → [[Postman]].
+- Équipe déjà investie dans les espaces de travail partagés Postman → [[Postman]].
 
 ## Bases & plateformes
 
@@ -45,7 +45,7 @@ Client d'API léger et open-source (MIT), pensé git-native : les collections so
 
 ## Alternatives
 
-- [[Dev/Outils/Postman|Postman]] — Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
+- [[Postman]] — Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
 
 ## Liens
 

@@ -56,7 +56,7 @@ La valeur est dans le prompt, pas dans le logiciel : il n'y a pas de code à ex�
 ## Alternatives
 
 - Aucune page équivalente dans le brain à ce jour : la section est faible par construction, il n'existe pas d'autre skill de discipline de sortie fiché.
-- Voisins par la forme (autres skills installés dans un agent), pas par la fonction : [[Dev/Outils/Graphify|Graphify]], [[Dev/Outils/Spec Kit|Spec Kit]], [[Dev/Outils/Archify|Archify]].
+- Voisins par la forme (autres skills installés dans un agent), pas par la fonction : [[Graphify]], [[Spec Kit]], [[Archify]].
 
 ## Liens
 

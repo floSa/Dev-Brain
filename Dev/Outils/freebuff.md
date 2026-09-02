@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-core
 os: "Windows, macOS, Linux"
 langage: TypeScript
-alternatives: ["[[Dev/Outils/Aider|Aider]]", "[[Dev/Outils/Cline|Cline]]", "[[Dev/Outils/Continue|Continue]]", "[[Dev/Outils/pi|pi]]"]
+alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[pi]]"]
 complements: []
 tags: [code-assistant, code-generation, agents, multi-agent, cli]
 url_docs: https://freebuff.com
@@ -35,9 +35,9 @@ Le code du dépôt est sous **Apache 2.0**, mais le service qui l'alimente est h
 ## Quand NE PAS l'utiliser
 
 - Code client, code interne, contexte on-prem : les prompts partent chez un tiers qui déclare les exploiter (voir Pièges).
-- **LLM auto-hébergé : non.** Pas de BYOK ni d'endpoint local pour le catalogue Freebuff → [[Dev/Outils/pi|pi]] ou [[Dev/Outils/Continue|Continue]]. Seule ouverture, verbatim du README : le desktop peut faire tourner des agents Claude Code et Codex installés localement avec le compte fournisseur de l'utilisateur ; ces modèles connectés sont séparés du catalogue inclus.
+- **LLM auto-hébergé : non.** Pas de BYOK ni d'endpoint local pour le catalogue Freebuff → [[pi]] ou [[Continue]]. Seule ouverture, verbatim du README : le desktop peut faire tourner des agents Claude Code et Codex installés localement avec le compte fournisseur de l'utilisateur ; ces modèles connectés sont séparés du catalogue inclus.
 - Besoin de volume soutenu : les sessions journalières sont plafonnées.
-- Vouloir maîtriser son modèle et sa facture → [[Dev/Outils/Aider|Aider]].
+- Vouloir maîtriser son modèle et sa facture → [[Aider]].
 
 ## Installation & plateformes
 
@@ -53,15 +53,15 @@ Le « gratuit » a une contrepartie, et c'est le point central de la fiche.
 - Sessions journalières plafonnées : trois sessions d'une heure par jour, jusqu'à sept « gagnables » en mode limité.
 - L'éditeur annonce analyser les prompts et messages, **y compris le contenu collé**, pour personnaliser la publicité.
 - L'éditeur se réserve l'usage des soumissions pour développer, entraîner, tester, évaluer et améliorer des modèles.
-- Face à [[Dev/Outils/Aider|Aider]] (clé API à soi, aucune télémétrie modèle), c'est le différenciateur négatif : le code envoyé n'est pas confidentiel.
+- Face à [[Aider]] (clé API à soi, aucune télémétrie modèle), c'est le différenciateur négatif : le code envoyé n'est pas confidentiel.
 - Catalogue de modèles imposé et mouvant : pas de garantie de stabilité d'une version à l'autre.
 
 ## Alternatives
 
-- [[Dev/Outils/Aider|Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
-- [[Dev/Outils/Cline|Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
-- [[Dev/Outils/Continue|Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
-- [[Dev/Outils/pi|pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
+- [[Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
+- [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
+- [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 
 ## Liens
 

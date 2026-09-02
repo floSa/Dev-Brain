@@ -10,7 +10,7 @@ hosted: [self]
 maturite: beta
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Letta|Letta]]", "[[Dev/Services/Hermes Agent|Hermes Agent]]", "[[Dev/Outils/ai-memory|ai-memory]]"]
+alternatives: ["[[Letta]]", "[[Hermes Agent]]", "[[ai-memory]]"]
 complements: []
 tags: [agent-memory, rag, context-engineering, agents, retrieval, mcp]
 url_docs: https://docs.openviking.ai/
@@ -37,8 +37,8 @@ Langage principal Python, avec des composants Rust (`crates/ov_cli`, sous Apache
 
 ## Quand NE PAS l'utiliser
 
-- **Produit fermé ou service réseau propriétaire** : le cœur est en AGPL-3.0. Le copyleft s'étend à l'usage en service — contrainte rédhibitoire pour un éditeur logiciel. Préférer [[Dev/Services/Letta|Letta]] (Apache-2.0).
-- Besoin d'une base vectorielle brute, sans couche de mémoire par-dessus → [[Dev/Services/Qdrant|Qdrant]] ou [[Dev/Services/pgvector|pgvector]].
+- **Produit fermé ou service réseau propriétaire** : le cœur est en AGPL-3.0. Le copyleft s'étend à l'usage en service — contrainte rédhibitoire pour un éditeur logiciel. Préférer [[Letta]] (Apache-2.0).
+- Besoin d'une base vectorielle brute, sans couche de mémoire par-dessus → [[Qdrant]] ou [[pgvector]].
 - Recherche d'une API stable : la version 0.3.x annonce elle-même des formats en mouvement.
 - Pas d'offre managée : tout est à exploiter soi-même.
 
@@ -47,7 +47,7 @@ Langage principal Python, avec des composants Rust (`crates/ov_cli`, sous Apache
 - `pip install openviking`, puis `openviking-server init` et `openviking-server doctor`. Python 3.10+.
 - Image Docker officielle, CLI standalone. Linux, macOS (ARM et Intel), Windows x64. Application desktop compagnon en beta.
 - `hosted: self` : aucune offre managée documentée dans le dépôt, malgré l'éditeur.
-- Mono-nœud. Coût réel = l'infrastructure plus les appels au fournisseur LLM et embeddings choisi (ou un [[Dev/Services/Ollama|Ollama]] local).
+- Mono-nœud. Coût réel = l'infrastructure plus les appels au fournisseur LLM et embeddings choisi (ou un [[Ollama]] local).
 
 ## Pièges
 
@@ -58,9 +58,9 @@ Langage principal Python, avec des composants Rust (`crates/ov_cli`, sous Apache
 
 ## Alternatives
 
-- [[Dev/Services/Letta|Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
-- [[Dev/Services/Hermes Agent|Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
-- [[Dev/Outils/ai-memory|ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
+- [[Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- [[Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
+- [[ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
 
 ## Liens
 

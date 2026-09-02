@@ -12,7 +12,7 @@ tags: [clustering, unsupervised]
 ## Aperçu
 
 - L'algorithme s'appelle **HDBSCAN** ; la page porte le nom du concept, la bibliothèque
-  qui l'implémente s'appelle [[Dev/Services/hdbscan|hdbscan]].
+  qui l'implémente s'appelle [[hdbscan]].
 - Extension **hiérarchique** de [[DBSCAN]] : au lieu d'un rayon `eps` global, explore tous les seuils de densité et en extrait les clusters les plus **stables**.
 - Gère les clusters de **densités différentes** (le talon d'Achille de DBSCAN) et ne demande qu'un paramètre intuitif : la taille minimale d'un cluster.
 
@@ -40,8 +40,8 @@ tags: [clustering, unsupervised]
 - À préférer à [[DBSCAN]] dès que les clusters n'ont pas tous la même densité, ou quand régler `eps` est pénible.
 - `min_cluster_size` est plus facile à fixer qu'un `eps` : c'est une taille de groupe, pas une échelle de distance.
 - Plus coûteux que DBSCAN, mais fournit en bonus une hiérarchie, des scores d'appartenance et un score d'outlier (GLOSH).
-- Très utilisé en aval d'une réduction de dimension non linéaire (ex. [[Dev/Services/umap-learn|UMAP]] → HDBSCAN) pour le clustering exploratoire.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster.HDBSCAN]] (depuis la 1.3) ; lib autonome [[Dev/Services/hdbscan|hdbscan]] (scikit-learn-contrib). Attention : `min_samples` décalé de 1 entre les deux implémentations.
+- Très utilisé en aval d'une réduction de dimension non linéaire (ex. [[umap-learn|UMAP]] → HDBSCAN) pour le clustering exploratoire.
+- Outils : [[Scikit-Learn|sklearn.cluster.HDBSCAN]] (depuis la 1.3) ; lib autonome [[hdbscan]] (scikit-learn-contrib). Attention : `min_samples` décalé de 1 entre les deux implémentations.
 
 ## Approches voisines & alternatives
 

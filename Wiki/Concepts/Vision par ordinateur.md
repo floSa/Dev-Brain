@@ -12,7 +12,7 @@ tags: [computer-vision, cnn, deep-learning]
 ## Aperçu
 
 - Discipline qui fait **extraire du sens d'images et de vidéos** par un modèle : étiqueter, localiser, segmenter, décrire, générer.
-- Depuis 2012 (AlexNet sur ImageNet), le champ est dominé par le [[MOC/Concepts/Deep learning|deep learning]] : les features sont **apprises de bout en bout**, plus dessinées à la main (SIFT, HOG).
+- Depuis 2012 (AlexNet sur ImageNet), le champ est dominé par le [[Deep learning|deep learning]] : les features sont **apprises de bout en bout**, plus dessinées à la main (SIFT, HOG).
 
 ## Concepts clés
 
@@ -38,7 +38,7 @@ tags: [computer-vision, cnn, deep-learning]
 
 ## En pratique
 
-- Pile de référence : [[Dev/Services/PyTorch|PyTorch]] (+ [[Dev/Services/torchvision|torchvision]]) ou [[Dev/Services/Keras|Keras]] ; backbones pré-entraînés via [[Dev/Services/timm|timm]] ; vision classique et prétraitement avec [[Dev/Services/OpenCV|OpenCV]].
+- Pile de référence : [[PyTorch]] (+ [[torchvision]]) ou [[Keras]] ; backbones pré-entraînés via [[timm]] ; vision classique et prétraitement avec [[OpenCV]].
 - Évaluer avec les bonnes métriques : [[Classification metrics|accuracy top-k]] en classification, [[Métriques vision|mAP en détection, IoU/Dice en segmentation]] ; perte d'entraînement = [[Cross-entropy|entropie croisée]].
 - Cible contrainte (mobile, edge) : architecture légère + [[Quantization|quantization]] / [[Distillation|distillation]].
 
@@ -49,7 +49,7 @@ tags: [computer-vision, cnn, deep-learning]
 - [[CNN]] / [[Architectures CNN]] — l'ossature convolutive et ses familles concrètes.
 - [[Vision Transformers (ViT)]] / [[Modèles de fondation vision]] / [[Apprentissage auto-supervisé en vision]] — l'ossature attentionnelle, les grands backbones pré-entraînés (CLIP, DINOv2) et leur entraînement sans étiquettes.
 - [[Transfer learning vision]] / [[Augmentation d'images]] — comment entraîner avec peu de données.
-- [[MOC/Concepts/Deep learning|Deep learning]] — la famille mère (optimisation, attention, génératif).
+- [[Deep learning]] — la famille mère (optimisation, attention, génératif).
 - [[Vision Language Models]] — relier image et texte (VLM).
 - [[Image generation]] / [[Diffusion models]] / [[GANs]] — le versant génératif de la vision.
 - [[Rendu neuronal 3D & estimation de profondeur]] — le versant 3D : reconstruction de scènes et profondeur.

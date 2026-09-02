@@ -41,7 +41,7 @@ tags: [reinforcement-learning, policy-gradient, value-function]
 - Bon compromis général : variance plus basse que le gradient de politique pur, applicable au **continu** (contrairement à [[Q-learning and DQN]]).
 - Off-policy (SAC/TD3) → meilleure efficacité en données pour la robotique ; on-policy (A2C/PPO) → plus stable et simple à régler.
 - Pièges : **deux** réseaux à équilibrer (un critique en retard fausse l'avantage) ; sensibilité aux pas d'apprentissage relatifs acteur/critique ; surestimation du critique $Q$ (TD3 corrige par double critique).
-- Côté outils : SAC, TD3 et DDPG prêts dans [[Dev/Services/TF-Agents|TF-Agents]] ; D4PG et MPO dans [[Dev/Services/Acme|Acme]] ; pertes acteur/critique en briques JAX dans [[Dev/Services/RLax|RLax]].
+- Côté outils : SAC, TD3 et DDPG prêts dans [[TF-Agents]] ; D4PG et MPO dans [[Acme]] ; pertes acteur/critique en briques JAX dans [[RLax]].
 
 ## Approches voisines & alternatives
 

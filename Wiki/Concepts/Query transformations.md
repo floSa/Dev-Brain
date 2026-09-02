@@ -43,7 +43,7 @@ tags: [query-transformation, rag, retrieval, llm]
 
 - Gains réels surtout sur requêtes **courtes / ambiguës** ou **multi-hop** ; sur des questions déjà bien formulées, la transformation n'apporte rien et ajoute du coût.
 - Toujours mesurer : une transformation mal calibrée **dégrade** le retrieval. C'est typiquement ce que tranche le [[RAG eval]].
-- Outillage : [[Dev/Services/LlamaIndex|LlamaIndex]] (query engines, sub-question / multi-step) et [[Dev/Services/LangChain|LangChain]] (MultiQueryRetriever) exposent ces briques.
+- Outillage : [[LlamaIndex]] (query engines, sub-question / multi-step) et [[LangChain]] (MultiQueryRetriever) exposent ces briques.
 - Arbitrer comme tout l'[[Advanced RAG]] : n'empiler que si la mesure montre un gain net.
 
 ## Approches voisines & alternatives

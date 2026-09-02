@@ -8,7 +8,7 @@ famille: specification
 licence_type: open-source
 maturite: production
 langage: C / Go / Java
-alternatives: ["[[Dev/Services/connectorx|connectorx]]"]
+alternatives: ["[[connectorx]]"]
 complements: []
 tags: [db-driver, columnar]
 url_docs: https://arrow.apache.org/adbc/
@@ -23,16 +23,16 @@ url_repo: https://github.com/apache/arrow-adbc
 
 ## Quand l'utiliser
 
-- Accès à une base depuis un pipeline **colonnaire** (Arrow, [[Dev/Services/Polars|Polars]], [[Dev/Services/DuckDB|DuckDB]]) sans payer la conversion ligne→colonne.
+- Accès à une base depuis un pipeline **colonnaire** (Arrow, [[Polars]], [[DuckDB]]) sans payer la conversion ligne→colonne.
 - Lire **et écrire** (ingestion en masse) avec une API unique, vendor-independent.
 - Remplacer ODBC/JDBC quand la charge est analytique/OLAP et que la destination est Arrow.
 - Standardiser l'accès à plusieurs bases derrière une seule interface Arrow-native.
 
 ## Quand NE PAS l'utiliser
 
-- Lecture seule la plus rapide possible vers un DataFrame, sans besoin d'écriture → [[Dev/Services/connectorx|connectorx]] (plus simple, taillé pour ça).
-- Application transactionnelle Postgres classique, ligne-à-ligne → driver DB-API [[Dev/Services/psycopg2|psycopg2]].
-- Mapping objet, migrations, modèle de domaine → [[Dev/Services/SQLAlchemy|SQLAlchemy]].
+- Lecture seule la plus rapide possible vers un DataFrame, sans besoin d'écriture → [[connectorx]] (plus simple, taillé pour ça).
+- Application transactionnelle Postgres classique, ligne-à-ligne → driver DB-API [[psycopg2]].
+- Mapping objet, migrations, modèle de domaine → [[SQLAlchemy]].
 - Base sans driver ADBC disponible : l'écosystème de drivers est plus jeune qu'ODBC/JDBC.
 
 ## Déploiement & coût
@@ -50,10 +50,10 @@ url_repo: https://github.com/apache/arrow-adbc
 
 ## Alternatives
 
-- [[Dev/Services/connectorx|connectorx]] — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
+- [[connectorx]] — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
 
 ## Liens
 
-- [[Dev/Services/Polars|Polars]] — `read_database(engine="adbc")` s'appuie dessus.
-- [[Dev/Services/psycopg2|psycopg2]] — le driver DB-API row-based, à l'opposé du modèle colonnaire d'ADBC.
+- [[Polars]] — `read_database(engine="adbc")` s'appuie dessus.
+- [[psycopg2]] — le driver DB-API row-based, à l'opposé du modèle colonnaire d'ADBC.
 - Doc : https://arrow.apache.org/adbc/

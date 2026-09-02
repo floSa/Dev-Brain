@@ -46,7 +46,7 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 - Sensibles au **nombre de voisins** (`n_neighbors`) et au bruit ; standardiser, et réduire d'abord par [[PCA]] sur gros volumes (coûteux).
 - Kernel PCA pour des **features non linéaires** en pipeline (projette de nouveaux points) ; Isomap / LLE moins naturellement transposables.
 - Pour seulement **visualiser** → [[t-SNE and UMAP]].
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.manifold]] (`Isomap`, `LocallyLinearEmbedding`, `SpectralEmbedding`) et `sklearn.decomposition.KernelPCA`.
+- Outils : [[Scikit-Learn|sklearn.manifold]] (`Isomap`, `LocallyLinearEmbedding`, `SpectralEmbedding`) et `sklearn.decomposition.KernelPCA`.
 
 ## Approches voisines & alternatives
 

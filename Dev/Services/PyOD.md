@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/STUMPY|STUMPY]]"]
+alternatives: ["[[STUMPY]]"]
 complements: []
 tags: [anomaly-detection, unsupervised]
 url_docs: https://pyod.readthedocs.io/
@@ -30,8 +30,8 @@ Bibliothèque de référence (depuis 2017) pour la **détection d'outliers** sur
 ## Quand NE PAS l'utiliser
 
 - Seuils **univariés** simples (Z-score, IQR, MAD) → `numpy`/`scipy.stats` suffisent, cf. [[Détection d'outliers univariée]].
-- Anomalies de **forme dans une série temporelle** → [[Dev/Services/STUMPY|STUMPY]] (matrix profile).
-- Un seul détecteur natif (IsolationForest, LOF) en one-shot → [[Dev/Services/Scikit-Learn|scikit-learn]] suffit, sans dépendance supplémentaire.
+- Anomalies de **forme dans une série temporelle** → [[STUMPY]] (matrix profile).
+- Un seul détecteur natif (IsolationForest, LOF) en one-shot → [[Scikit-Learn|scikit-learn]] suffit, sans dépendance supplémentaire.
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Bibliothèque de référence (depuis 2017) pour la **détection d'outliers** sur
 
 ## Alternatives
 
-Pas de substitut unifié équivalent dans le brain. À la marge : [[Dev/Services/Scikit-Learn|scikit-learn]] pour un détecteur natif isolé, et [[Dev/Services/STUMPY|STUMPY]] pour le cas séries temporelles.
+Pas de substitut unifié équivalent dans le brain. À la marge : [[Scikit-Learn|scikit-learn]] pour un détecteur natif isolé, et [[STUMPY]] pour le cas séries temporelles.
 
-- [[Dev/Services/STUMPY|STUMPY]] — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
+- [[STUMPY]] — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
 ## Liens
 
 - [[Détection d'outliers multivariée]] — le cadre qu'il outille (LOF, IForest, ECOD, COPOD).
 - [[Détection d'outliers univariée]] — pour les cas mono-variable, plus légers.
-- [[Dev/Services/STUMPY|STUMPY]] — l'équivalent côté séries temporelles.
-- [[Dev/Patterns/Comparatif - Détection d'anomalies|Comparatif — Détection d'anomalies]]
+- [[STUMPY]] — l'équivalent côté séries temporelles.
+- [[Comparatif - Détection d'anomalies|Comparatif — Détection d'anomalies]]
 - Doc : https://pyod.readthedocs.io/

@@ -44,7 +44,7 @@ tags: [alignment, reinforcement-learning, llm]
 - Soigner la **donnée de préférence** : accord inter-annotateurs, diversité des prompts, paires nettes. C'est le facteur dominant.
 - Surveiller l'**over-optimization** : suivre la **divergence KL** et la **longueur** des réponses ; au-delà d'un point, plus de récompense RM = moins de qualité réelle.
 - Si la tâche est **vérifiable** (maths, code), préférer une **récompense calculée** (RLVR) à un RM appris.
-- Outils : `TRL` (RewardTrainer) sur l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] / [[Dev/Services/PyTorch|PyTorch]].
+- Outils : `TRL` (RewardTrainer) sur l'écosystème [[HuggingFace]] / [[PyTorch]].
 
 ## Approches voisines & alternatives
 

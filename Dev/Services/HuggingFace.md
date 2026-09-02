@@ -28,19 +28,19 @@ HuggingFace n'est pas un framework de calcul mais une **couche au-dessus** d'eux
 - **Partir d'un modèle pré-entraîné** plutôt que d'entraîner de zéro : NLP, vision, audio, multimodal.
 - **Fine-tuning** sur ses données : `Trainer` + `PEFT` (LoRA/QLoRA) pour ajuster à moindre coût.
 - **Datasets** : charger/streamer des jeux publics ou privés via `datasets`, sans réécrire de loaders.
-- **Partager / déployer** : publier un modèle sur le Hub, démos via Spaces ([[Dev/Services/Gradio|Gradio]]), servir via TGI / endpoints.
+- **Partager / déployer** : publier un modèle sur le Hub, démos via Spaces ([[Gradio]]), servir via TGI / endpoints.
 
 ## Quand NE PAS l'utiliser
 
-- Définir et entraîner une architecture **sur mesure** de zéro : travailler directement avec [[Dev/Services/PyTorch|PyTorch]] (ou [[Dev/Services/JAX|JAX]]).
-- Problème **tabulaire** : pas de transformeur, viser [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Définir et entraîner une architecture **sur mesure** de zéro : travailler directement avec [[PyTorch]] (ou [[JAX]]).
+- Problème **tabulaire** : pas de transformeur, viser [[XGBoost]], [[LightGBM]], [[Scikit-Learn]].
 - Contrainte stricte de licence/données : vérifier la licence de chaque modèle/dataset du Hub (variables, pas toutes commerciales).
 
 ## Déploiement & coût
 
 - Bibliothèques open-source (Apache-2.0), gratuites ; `uv add transformers datasets accelerate`.
 - Le **Hub** est une plateforme managée (huggingface.co) : usage public gratuit, offres payantes (stockage privé, Inference Endpoints, GPU pour Spaces).
-- **PyTorch-first (2026)** : `transformers` s'est recentré sur [[Dev/Services/PyTorch|PyTorch]] ; le support natif [[Dev/Services/TensorFlow|TensorFlow]] et [[Dev/Services/JAX|JAX]] (Flax) est déprécié/retiré dans les versions récentes.
+- **PyTorch-first (2026)** : `transformers` s'est recentré sur [[PyTorch]] ; le support natif [[TensorFlow]] et [[JAX]] (Flax) est déprécié/retiré dans les versions récentes.
 - Entraînement distribué via `accelerate` (multi-GPU, multi-nœuds).
 
 ## Pièges
@@ -56,8 +56,8 @@ Pas de concurrent direct référencé dans le brain : HuggingFace est une **couc
 
 ## Liens
 
-- [[Dev/Services/PyTorch|PyTorch]] — backend principal de transformers/diffusers/PEFT.
-- [[Dev/Services/TensorFlow|TensorFlow]] · [[Dev/Services/JAX|JAX]] — backends historiques, désormais minoritaires.
-- Bibliothèques sœurs : [[Dev/Services/datasets|datasets]] (chargement de données), [[Dev/Services/accelerate|accelerate]] (entraînement distribué), [[Dev/Services/evaluate|evaluate]] (métriques).
-- [[Dev/Services/Gradio|Gradio]] — démos interactives, technologie des Spaces.
+- [[PyTorch]] — backend principal de transformers/diffusers/PEFT.
+- [[TensorFlow]] · [[JAX]] — backends historiques, désormais minoritaires.
+- Bibliothèques sœurs : [[datasets]] (chargement de données), [[accelerate]] (entraînement distribué), [[evaluate]] (métriques).
+- [[Gradio]] — démos interactives, technologie des Spaces.
 - Doc : https://huggingface.co/docs

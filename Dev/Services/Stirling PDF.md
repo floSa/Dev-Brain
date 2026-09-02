@@ -25,7 +25,7 @@ Remplace le triptyque « site de conversion gratuit + Acrobat + bricolage bureau
 
 L'argument central est la **non-circulation des documents**. Le traitement a lieu sur l'instance : le fichier reste sur la machine ou en mémoire du serveur le temps de l'opération. C'est la raison d'être en contexte on-prem, où un contrat, un dossier RH ou un plan client ne doit pas transiter par un service tiers.
 
-Frontière avec la famille `data/parsing` : Stirling PDF produit un **document destiné à un humain** — un PDF fusionné, signé, allégé, lisible. Il ne produit pas de donnée structurée pour une machine : ni JSON à bounding boxes, ni ordre de lecture exploitable en aval d'un pipeline RAG. Ce besoin relève de [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] et de ses voisins.
+Frontière avec la famille `data/parsing` : Stirling PDF produit un **document destiné à un humain** — un PDF fusionné, signé, allégé, lisible. Il ne produit pas de donnée structurée pour une machine : ni JSON à bounding boxes, ni ordre de lecture exploitable en aval d'un pipeline RAG. Ce besoin relève de [[OpenDataLoader PDF]] et de ses voisins.
 
 Modèle **open-core** assumé : le dépôt est sous MIT, sauf les répertoires `app/proprietary/`, `app/saas/`, `engine/` et plusieurs dossiers du frontend, chacun régi par sa propre licence. Projet très actif (v2.14.3 en août 2026, commits quotidiens, environ 91 000 étoiles GitHub).
 
@@ -38,8 +38,8 @@ Modèle **open-core** assumé : le dépôt est sous MIT, sauf les répertoires `
 
 ## Quand NE PAS l'utiliser
 
-- Extraire de la donnée structurée d'un PDF pour du RAG ou du ML → [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]], [[Dev/Services/Docling|Docling]], [[Dev/Services/Unstructured|Unstructured]].
-- Manipuler des PDF depuis du code, sans serveur intermédiaire → [[Dev/Services/PyMuPDF|PyMuPDF]].
+- Extraire de la donnée structurée d'un PDF pour du RAG ou du ML → [[OpenDataLoader PDF]], [[Docling]], [[Unstructured]].
+- Manipuler des PDF depuis du code, sans serveur intermédiaire → [[PyMuPDF]].
 - Retoucher le contenu rédactionnel d'un document comme dans un traitement de texte : l'outil agit sur la structure du PDF, pas sur la rédaction.
 - Besoin immédiat de SSO, d'audit, de base de données externe ou de déploiement air-gapped supporté : ces briques sont dans les modules payants.
 
@@ -61,11 +61,11 @@ Modèle **open-core** assumé : le dépôt est sous MIT, sauf les répertoires `
 
 ## Alternatives
 
-Aucune autre page de la catégorie `tooling/document` dans le brain à ce jour. Les substituts fonctionnels sont soit des services en ligne (exclus par l'hypothèse de non-circulation des documents), soit des bibliothèques appelées depuis du code comme [[Dev/Services/PyMuPDF|PyMuPDF]] — sans interface pour un utilisateur non technique.
+Aucune autre page de la catégorie `tooling/document` dans le brain à ce jour. Les substituts fonctionnels sont soit des services en ligne (exclus par l'hypothèse de non-circulation des documents), soit des bibliothèques appelées depuis du code comme [[PyMuPDF]] — sans interface pour un utilisateur non technique.
 
 ## Liens
 
-- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — l'autre face du PDF : extraction structurée pour une machine, catégorie `data/parsing`.
+- [[OpenDataLoader PDF]] — l'autre face du PDF : extraction structurée pour une machine, catégorie `data/parsing`.
 - [[Comparatif - Parsing de documents]] — comparatif de la famille parsing, à ne pas confondre avec cet outil.
 - [[OCR]] — concept : reconnaissance optique de caractères.
 - Docs : https://docs.stirlingpdf.com/ · Repo : https://github.com/Stirling-Tools/Stirling-PDF

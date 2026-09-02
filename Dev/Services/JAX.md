@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/PyTorch|PyTorch]]", "[[Dev/Services/TensorFlow|TensorFlow]]"]
+alternatives: ["[[PyTorch]]", "[[TensorFlow]]"]
 complements: []
 tags: [deep-learning, gpu, autograd, array]
 url_docs: https://docs.jax.dev/
@@ -19,7 +19,7 @@ url_repo: https://github.com/jax-ml/jax
 
 ## Pourquoi
 
-JAX expose une API quasi identique à [[Dev/Services/numpy|numpy]], mais rend les programmes **composables et accélérables** par un jeu de transformations de fonctions : `grad` (différentiation automatique, forward/reverse, ordres supérieurs), `jit` (compilation XLA en noyaux fusionnés), `vmap` (vectorisation/batching automatique), `pmap` / `shard_map` (parallélisme multi-appareils). Le tout vise GPU et **TPU** via XLA. Approche **fonctionnelle** (fonctions pures, tableaux immuables) qui se prête à la composition et au scaling — d'où son adoption pour l'entraînement de gros modèles en recherche.
+JAX expose une API quasi identique à [[numpy]], mais rend les programmes **composables et accélérables** par un jeu de transformations de fonctions : `grad` (différentiation automatique, forward/reverse, ordres supérieurs), `jit` (compilation XLA en noyaux fusionnés), `vmap` (vectorisation/batching automatique), `pmap` / `shard_map` (parallélisme multi-appareils). Le tout vise GPU et **TPU** via XLA. Approche **fonctionnelle** (fonctions pures, tableaux immuables) qui se prête à la composition et au scaling — d'où son adoption pour l'entraînement de gros modèles en recherche.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ JAX expose une API quasi identique à [[Dev/Services/numpy|numpy]], mais rend le
 
 ## Quand NE PAS l'utiliser
 
-- Écosystème prêt à l'emploi, modèles pré-entraînés, prototypage impératif → [[Dev/Services/PyTorch|PyTorch]].
-- Déploiement industriel mobile / edge / serving clés en main → [[Dev/Services/TensorFlow|TensorFlow]].
+- Écosystème prêt à l'emploi, modèles pré-entraînés, prototypage impératif → [[PyTorch]].
+- Déploiement industriel mobile / edge / serving clés en main → [[TensorFlow]].
 - Besoin d'effets de bord / état mutable / boucles Python dynamiques : le style fonctionnel et `jit` y sont contraignants.
-- Données tabulaires classiques → [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Données tabulaires classiques → [[Scikit-Learn]].
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ JAX expose une API quasi identique à [[Dev/Services/numpy|numpy]], mais rend le
 
 ## Alternatives
 
-- [[Dev/Services/PyTorch|PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
-- [[Dev/Services/TensorFlow|TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
+- [[PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
+- [[TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 
 ## Liens
 
-- [[Dev/Services/numpy|numpy]] — API de référence dont JAX reprend la sémantique (sur accélérateurs, immuable).
-- [[Dev/Services/HuggingFace|HuggingFace]] — hub de modèles ; backend JAX/Flax historiquement supporté (désormais minoritaire face à PyTorch).
-- [[Dev/Services/Keras|Keras]] — API de haut niveau multi-backend : Keras 3 tourne sur backend JAX (TPU, perf).
+- [[numpy]] — API de référence dont JAX reprend la sémantique (sur accélérateurs, immuable).
+- [[HuggingFace]] — hub de modèles ; backend JAX/Flax historiquement supporté (désormais minoritaire face à PyTorch).
+- [[Keras]] — API de haut niveau multi-backend : Keras 3 tourne sur backend JAX (TPU, perf).
 - Doc : https://docs.jax.dev/

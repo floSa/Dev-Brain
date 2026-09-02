@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Dev/Services/BentoML|BentoML]]", "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]", "[[Dev/Services/Seldon Core|Seldon Core]]", "[[Dev/Services/TorchServe|TorchServe]]", "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]", "[[Dev/Services/Ray Serve|Ray Serve]]"]
+alternatives: ["[[BentoML]]", "[[NVIDIA Triton]]", "[[Seldon Core]]", "[[TorchServe]]", "[[TensorFlow Serving]]", "[[Ray Serve]]"]
 complements: []
 tags: [model-serving, inference, kubernetes]
 url_docs: https://kserve.github.io/website/
@@ -32,9 +32,9 @@ Couche d'inférence **native Kubernetes** : on décrit le déploiement d'un mod�
 
 ## Quand NE PAS l'utiliser
 
-- Pas de cluster Kubernetes / besoin d'un serveur simple en local → [[Dev/Services/BentoML|BentoML]].
-- Performance GPU brute d'un runtime unique → [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] (souvent utilisé *dans* KServe).
-- Un seul modèle TensorFlow à exposer → [[Dev/Services/TensorFlow Serving|TensorFlow Serving]].
+- Pas de cluster Kubernetes / besoin d'un serveur simple en local → [[BentoML]].
+- Performance GPU brute d'un runtime unique → [[NVIDIA Triton]] (souvent utilisé *dans* KServe).
+- Un seul modèle TensorFlow à exposer → [[TensorFlow Serving]].
 
 ## Déploiement & coût
 
@@ -50,16 +50,16 @@ Couche d'inférence **native Kubernetes** : on décrit le déploiement d'un mod�
 
 ## Alternatives
 
-- [[Dev/Services/BentoML|BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
-- [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
-- [[Dev/Services/Seldon Core|Seldon Core]] — Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
-- [[Dev/Services/TorchServe|TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
-- [[Dev/Services/TensorFlow Serving|TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
-- [[Dev/Services/Ray Serve|Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
+- [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
+- [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
+- [[Seldon Core]] — Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
+- [[TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
+- [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
+- [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
 ## Liens
 
-- Runtime d'inférence fréquent : [[Dev/Services/NVIDIA Triton|NVIDIA Triton]].
-- Tourne sur Kubernetes ([[Dev/Services/Docker|Docker]] pour les images de modèles).
+- Runtime d'inférence fréquent : [[NVIDIA Triton]].
+- Tourne sur Kubernetes ([[Docker]] pour les images de modèles).
 - [[Comparatif - Serving de modèles]] — comparatif de la catégorie
 - Doc : https://kserve.github.io/website/

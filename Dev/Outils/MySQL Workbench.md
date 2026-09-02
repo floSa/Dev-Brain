@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: C++
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]"]
+alternatives: ["[[DBeaver]]", "[[HeidiSQL]]"]
 complements: []
 tags: [db-client, relational]
 url_docs: https://dev.mysql.com/doc/workbench/en/
@@ -30,8 +30,8 @@ L'outil graphique **officiel** de MySQL, édité par Oracle, sous GPLv2. Trois p
 
 ## Quand NE PAS l'utiliser
 
-- Travailler sur plusieurs SGBD → [[Dev/Outils/DBeaver|DBeaver]].
-- Client Windows ultra-léger pour des tâches rapides → [[Dev/Outils/HeidiSQL|HeidiSQL]].
+- Travailler sur plusieurs SGBD → [[DBeaver]].
+- Client Windows ultra-léger pour des tâches rapides → [[HeidiSQL]].
 
 ## Bases & plateformes
 
@@ -45,12 +45,12 @@ L'outil graphique **officiel** de MySQL, édité par Oracle, sous GPLv2. Trois p
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
-- [[Dev/Outils/HeidiSQL|HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
-- [[Dev/Services/MySQL|MySQL]] — le moteur administré
+- [[Bases de données]] — le concept (Wiki)
+- [[MySQL]] — le moteur administré
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://dev.mysql.com/doc/workbench/en/

@@ -10,7 +10,7 @@ hosted: [managed]
 maturite: production
 langage: "Python, JavaScript, Go"
 scaling: serverless
-alternatives: ["[[Dev/Services/E2B|E2B]]", "[[Dev/Services/Daytona|Daytona]]"]
+alternatives: ["[[E2B]]", "[[Daytona]]"]
 complements: []
 tags: [agents, gpu, llm, container]
 url_docs: https://modal.com/docs
@@ -35,8 +35,8 @@ Produit **propriétaire**, sans self-host.
 
 ## Quand NE PAS l'utiliser
 
-- Exigence de **self-host** ou de souveraineté sur l'infrastructure → [[Dev/Services/E2B|E2B]], auto-hébergeable.
-- Besoin de l'isolation la plus stricte : gVisor réduit la surface mais reste en deçà d'une **microVM à kernel dédié** → [[Dev/Services/E2B|E2B]] (Firecracker).
+- Exigence de **self-host** ou de souveraineté sur l'infrastructure → [[E2B]], auto-hébergeable.
+- Besoin de l'isolation la plus stricte : gVisor réduit la surface mais reste en deçà d'une **microVM à kernel dédié** → [[E2B]] (Firecracker).
 - Charge **soutenue et prévisible** : le serverless facturé à la seconde devient plus cher qu'une capacité réservée.
 
 ## Déploiement & coût
@@ -54,12 +54,12 @@ Produit **propriétaire**, sans self-host.
 
 ## Alternatives
 
-- [[Dev/Services/E2B|E2B]] — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
-- [[Dev/Services/Daytona|Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
+- [[E2B]] — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
+- [[Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
 
 ## Liens
 
 - Implémente le concept [[Sandboxing de code généré]] — isolation par gVisor.
-- Backend d'exécution proposé par [[Dev/Services/Hermes Agent|Hermes Agent]], aux côtés de Docker, SSH, Singularity et Daytona.
-- Sur l'axe calcul, voisin de [[Dev/Services/Ray|Ray]] (distribué, open-source, self-host) — approche opposée : managé et serverless plutôt que cluster à opérer.
+- Backend d'exécution proposé par [[Hermes Agent]], aux côtés de Docker, SSH, Singularity et Daytona.
+- Sur l'axe calcul, voisin de [[Ray]] (distribué, open-source, self-host) — approche opposée : managé et serverless plutôt que cluster à opérer.
 - Doc : https://modal.com/docs

@@ -40,7 +40,7 @@ tags: [agents, llm, tool-use]
 
 - Démarrer simple : un **ReAct** avec 2-3 outils couvre beaucoup de cas. N'ajouter planification ou réflexion que si une mesure le justifie.
 - Borner les itérations et prévoir une **sortie d'échec** — sans garde-fou, la boucle s'emballe (cf. [[agent-loops]]).
-- Implémentation : [[Dev/Services/LangGraph|LangGraph]] pour le contrôle fin (graphe d'états, cycles, reprise) ; [[Dev/Services/CrewAI|CrewAI]] pour l'abstraction rôles/équipe ; [[Dev/Services/LangChain|LangChain]] et [[Dev/Services/PydanticAI|PydanticAI]] pour des agents simples à typés.
+- Implémentation : [[LangGraph]] pour le contrôle fin (graphe d'états, cycles, reprise) ; [[CrewAI]] pour l'abstraction rôles/équipe ; [[LangChain]] et [[PydanticAI]] pour des agents simples à typés.
 - Piège : empiler les patrons (plan + réflexion + multi-agents) avant d'avoir évalué — la complexité masque les régressions.
 
 ## Approches voisines & alternatives

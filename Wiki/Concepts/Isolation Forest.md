@@ -49,7 +49,7 @@ tags: [anomaly-detection, unsupervised, tree-based, ensemble]
 - **Faiblesse : les anomalies locales.** Un point aberrant *à l'intérieur* d'un cluster dense — normal globalement, anormal dans son contexte — lui échappe. C'est précisément le terrain du LOF (*Local Outlier Factor*).
 - **Ne gère ni les NaN ni les données catégorielles brutes** (contrairement à [[Gradient Boosting (GBDT)|LightGBM]]) : imputer et encoder en amont.
 - Attention aux variables non pertinentes : les coupes étant tirées au hasard, du bruit dilue le signal. Sélectionner en amont aide ([[Sélection de variables]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble.IsolationForest]] ; [[Dev/Services/PyOD|PyOD]] pour comparer une dizaine de détecteurs sous une API commune ; [[Dev/Services/River|River]] en flux.
+- Outils : [[Scikit-Learn|sklearn.ensemble.IsolationForest]] ; [[PyOD]] pour comparer une dizaine de détecteurs sous une API commune ; [[River]] en flux.
 
 ## Approches voisines & alternatives
 

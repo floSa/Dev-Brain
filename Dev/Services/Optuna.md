@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]", "[[Dev/Services/Hyperopt|Hyperopt]]", "[[Dev/Services/Ray Tune|Ray Tune]]"]
+alternatives: ["[[Scikit-Learn]]", "[[Hyperopt]]", "[[Ray Tune]]"]
 complements: []
 tags: [hyperparameter-tuning, bayesian, distributed]
 url_docs: https://optuna.readthedocs.io/
@@ -27,12 +27,12 @@ Framework d'**optimisation d'hyperparamètres** au design *define-by-run* : l'es
 - Espace de recherche **conditionnel** ou irrégulier, mal exprimé par un produit cartésien.
 - Besoin d'**élaguer** tôt les essais ratés (deep learning, GBDT avec early stopping).
 - Campagne **distribuée** sur plusieurs workers/nœuds partageant un storage.
-- Intégrations prêtes : scikit-learn, [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/PyTorch|PyTorch]].
+- Intégrations prêtes : scikit-learn, [[XGBoost]], [[LightGBM]], [[PyTorch]].
 
 ## Quand NE PAS l'utiliser
 
-- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Dev/Services/Scikit-Learn|Scikit-Learn]] suffisent.
-- Orchestration distribuée lourde sur cluster (schedulers ASHA/PBT) → [[Dev/Services/Ray Tune|Ray Tune]] (qui sait d'ailleurs piloter Optuna comme moteur de recherche).
+- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]] suffisent.
+- Orchestration distribuée lourde sur cluster (schedulers ASHA/PBT) → [[Ray Tune]] (qui sait d'ailleurs piloter Optuna comme moteur de recherche).
 
 ## Déploiement & coût
 
@@ -48,9 +48,9 @@ Framework d'**optimisation d'hyperparamètres** au design *define-by-run* : l'es
 
 ## Alternatives
 
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
-- [[Dev/Services/Hyperopt|Hyperopt]] — Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
-- [[Dev/Services/Ray Tune|Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[Hyperopt]] — Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
+- [[Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
 
 ## Liens
 

@@ -23,10 +23,10 @@ tags: [reliability, llm, agents]
 - Borner chaque appel par un **timeout** ; couper un fournisseur défaillant par un **circuit breaker** pour ne pas propager la panne ni épuiser le budget.
 
 ### Fallback & dégradation gracieuse
-- Bascule **modèle** ou **fournisseur** quand le primaire échoue ou sature ([[Dev/Services/LiteLLM|LiteLLM]] : routage + fallback). Préférer une réponse dégradée (modèle plus petit, réponse partielle, message honnête) à un plantage.
+- Bascule **modèle** ou **fournisseur** quand le primaire échoue ou sature ([[LiteLLM]] : routage + fallback). Préférer une réponse dégradée (modèle plus petit, réponse partielle, message honnête) à un plantage.
 
 ### Validation & repair
-- Valider la sortie contre un schéma et, si invalide, **réinjecter l'erreur** pour correction (boucle de réparation bornée) — cf. [[Structured outputs]], [[Dev/Services/Instructor|Instructor]].
+- Valider la sortie contre un schéma et, si invalide, **réinjecter l'erreur** pour correction (boucle de réparation bornée) — cf. [[Structured outputs]], [[Instructor]].
 
 ### Garde-fous des effets de bord
 - Outils à effet de bord (écriture, paiement, mail) : **idempotence**, permissions, et [[Human-in-the-loop|human-in-the-loop]] sur les actions à fort enjeu. Borner les itérations d'agent pour éviter l'emballement (cf. [[agent-loops]]).
@@ -40,7 +40,7 @@ tags: [reliability, llm, agents]
 
 - Hiérarchiser : **timeout + retry/backoff** d'abord (gain maximal pour un coût minimal), puis fallback, puis circuit breaker.
 - Rendre les **outils idempotents** ou ajouter une clé d'idempotence : un retry ne doit pas payer deux fois.
-- **Observer pour fiabiliser** : taux d'erreur, latence p95, coût par requête — [[LLM observability]], [[Dev/Services/Langfuse|Langfuse]].
+- **Observer pour fiabiliser** : taux d'erreur, latence p95, coût par requête — [[LLM observability]], [[Langfuse]].
 - Définir une **dégradation gracieuse** explicite par cas d'usage, plutôt que de laisser remonter une exception brute à l'utilisateur.
 - Piège : retries agressifs sans backoff → amplification d'une panne fournisseur (effet tempête).
 

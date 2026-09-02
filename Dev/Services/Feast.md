@@ -32,14 +32,14 @@ Feast (Feature Store) est le **feature store open-source** de référence. Il r�
 
 ## Quand NE PAS l'utiliser
 
-- Pas d'inférence temps réel ni de réutilisation de features → un simple pipeline de feature engineering ([[Dev/Services/Featuretools|Featuretools]], requêtes SQL) suffit.
+- Pas d'inférence temps réel ni de réutilisation de features → un simple pipeline de feature engineering ([[Featuretools]], requêtes SQL) suffit.
 - Besoin d'une plateforme managée clé en main avec transformations à la volée → Tecton (commercial, hors périmètre OSS).
 - Volume et équipe modestes : l'infra online+offline ajoute une complexité opérationnelle non amortie.
 
 ## Déploiement & coût
 
 - Open-source (Apache-2.0), `uv add feast`. **Self-host** : pas de service managé Feast officiel.
-- S'appuie sur l'infra existante : online store ([[Dev/Services/Redis|Redis]], DynamoDB…), offline store (BigQuery, Snowflake, [[Dev/Services/Postgres|Postgres]], Parquet/S3).
+- S'appuie sur l'infra existante : online store ([[Redis]], DynamoDB…), offline store (BigQuery, Snowflake, [[Postgres]], Parquet/S3).
 - Le registry (métadonnées) et un planificateur de matérialisation sont à opérer.
 
 ## Pièges
@@ -51,11 +51,11 @@ Feast (Feature Store) est le **feature store open-source** de référence. Il r�
 ## Alternatives
 
 <!-- seul service de la catégorie ml/feature-store dans le brain pour l'instant -->
-- Aucune alternative en catégorie `ml/feature-store` à ce jour. Approche voisine, en amont : [[Dev/Services/Featuretools|Featuretools]] (génération automatique de features).
+- Aucune alternative en catégorie `ml/feature-store` à ce jour. Approche voisine, en amont : [[Featuretools]] (génération automatique de features).
 
 ## Liens
 
 - Concept implémenté : [[Feature store — concept]] (online/offline, point-in-time correctness, train/serve skew).
-- Alimente l'inférence servie par : [[Dev/Services/BentoML|BentoML]], [[Dev/Services/KServe|KServe]].
-- Stores : [[Dev/Services/Redis|Redis]] (online), [[Dev/Services/Postgres|Postgres]] (offline/registry).
+- Alimente l'inférence servie par : [[BentoML]], [[KServe]].
+- Stores : [[Redis]] (online), [[Postgres]] (offline/registry).
 - Doc : https://docs.feast.dev/

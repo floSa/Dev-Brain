@@ -54,4 +54,4 @@ tags: [reinforcement-learning, policy-gradient]
 - Schulman et al. (2015) — *Trust Region Policy Optimization* (TRPO, l'ancêtre à contrainte KL).
 - Ouyang et al. (2022) — *InstructGPT* (PPO pour le RLHF).
 - OpenAI — *Spinning Up in Deep RL* (implémentation pédagogique de PPO).
-- Implémentation de référence : [[Dev/Services/Stable-Baselines3|Stable-Baselines3]] (`PPO`) sur environnements [[Dev/Services/Gymnasium|Gymnasium]]. Aussi dans [[Dev/Services/TF-Agents|TF-Agents]] (`PPOAgent`) ; le surrogate clippé est fourni en brique JAX par [[Dev/Services/RLax|RLax]].
+- Implémentation de référence : [[Stable-Baselines3]] (`PPO`) sur environnements [[Gymnasium]]. Aussi dans [[TF-Agents]] (`PPOAgent`) ; le surrogate clippé est fourni en brique JAX par [[RLax]].

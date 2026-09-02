@@ -61,7 +61,7 @@ tags: [supervised, regression, bayesian, non-parametric]
 - **Monter `n_restarts_optimizer`** (5 à 10) : la vraisemblance marginale a des optima locaux, et le défaut à 0 laisse le modèle sur son point de départ. Piège classique.
 - **Se dégrade en grande dimension** : au-delà de ~20 variables, les distances se concentrent et le noyau perd son pouvoir discriminant — même mal que [[k-NN]].
 - **Ne pas confondre avec [[Gaussian Mixture Models (GMM)]]** : le nom se ressemble, tout le reste diffère. GP = régression supervisée sur des fonctions ; GMM = clustering non supervisé par mélange de lois.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.gaussian_process]] (`GaussianProcessRegressor`, `GaussianProcessClassifier`, catalogue de noyaux composables) ; [[Dev/Services/Optuna|Optuna]] et [[Dev/Services/Hyperopt|Hyperopt]] l'emploient sous le capot pour l'optimisation bayésienne ; [[Dev/Services/PyMC|PyMC]] et [[Dev/Services/Stan|Stan]] pour une modélisation bayésienne complète.
+- Outils : [[Scikit-Learn|sklearn.gaussian_process]] (`GaussianProcessRegressor`, `GaussianProcessClassifier`, catalogue de noyaux composables) ; [[Optuna]] et [[Hyperopt]] l'emploient sous le capot pour l'optimisation bayésienne ; [[PyMC]] et [[Stan]] pour une modélisation bayésienne complète.
 
 ## Approches voisines & alternatives
 

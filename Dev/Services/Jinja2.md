@@ -19,11 +19,11 @@ url_repo: https://github.com/pallets/jinja
 
 ## Pourquoi
 
-Moteur de templates Python de référence : des gabarits texte (typiquement HTML) mêlent du balisage statique et des emplacements `{{ ... }}` / `{% ... %}` remplis à partir de données. Apporte l'**héritage de templates** (`extends` / `block`), les inclusions, macros, filtres, et un **échappement automatique** du HTML (protection XSS). Syntaxe d'expressions proche de Python. Développé par l'organisation Pallets ; c'est le moteur de templates de [[Dev/Services/Flask|Flask]], et il sert au-delà du web (génération de config, e-mails, fichiers, Ansible).
+Moteur de templates Python de référence : des gabarits texte (typiquement HTML) mêlent du balisage statique et des emplacements `{{ ... }}` / `{% ... %}` remplis à partir de données. Apporte l'**héritage de templates** (`extends` / `block`), les inclusions, macros, filtres, et un **échappement automatique** du HTML (protection XSS). Syntaxe d'expressions proche de Python. Développé par l'organisation Pallets ; c'est le moteur de templates de [[Flask]], et il sert au-delà du web (génération de config, e-mails, fichiers, Ansible).
 
 ## Quand l'utiliser
 
-- Rendu HTML côté serveur d'une app [[Dev/Services/Flask|Flask]] / [[Dev/Services/FastAPI|FastAPI]] (pages complètes ou fragments pour [[Dev/Services/HTMX|HTMX]]).
+- Rendu HTML côté serveur d'une app [[Flask]] / [[FastAPI]] (pages complètes ou fragments pour [[HTMX]]).
 - Génération de tout fichier texte paramétré : fichiers de configuration, e-mails, manifestes, code.
 - Besoin d'héritage de gabarits et d'échappement automatique sans logique applicative dans les templates.
 
@@ -49,7 +49,7 @@ Moteur de templates Python de référence : des gabarits texte (typiquement HTML
 
 ## Liens
 
-- [[Dev/Services/Flask|Flask]] — embarque Jinja2 comme moteur de templates par défaut
-- [[Dev/Services/FastAPI|FastAPI]] — rendu HTML optionnel via Jinja2Templates
-- [[Dev/Services/HTMX|HTMX]] — consomme les fragments HTML rendus par Jinja2 (paire usuelle)
+- [[Flask]] — embarque Jinja2 comme moteur de templates par défaut
+- [[FastAPI]] — rendu HTML optionnel via Jinja2Templates
+- [[HTMX]] — consomme les fragments HTML rendus par Jinja2 (paire usuelle)
 - Doc : https://jinja.palletsprojects.com/

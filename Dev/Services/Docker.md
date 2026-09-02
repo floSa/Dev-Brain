@@ -55,5 +55,5 @@ Outil de **conteneurisation** de référence. Une application et ses dépendance
 
 ## Liens
 
-- [[Dev/Services/GitHub Actions|GitHub Actions]] — CI qui construit et publie des images Docker
+- [[GitHub Actions]] — CI qui construit et publie des images Docker
 - Doc : https://docs.docker.com/

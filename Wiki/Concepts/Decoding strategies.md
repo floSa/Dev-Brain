@@ -48,7 +48,7 @@ tags: [decoding, llm, nlp]
 - [[Tokenization]] — le décodage choisit des tokens dans le vocabulaire issu de la tokenisation.
 - [[Perplexity]] — mesure la qualité de la distribution prédite ; le décodage, lui, exploite cette distribution.
 - [[Structured outputs]] — applique un décodage **contraint** par un schéma.
-- [[Constrained decoding]] — le mécanisme détaillé (compilation en automate, masquage, *token healing*) et ses bibliothèques ([[Dev/Services/Outlines|Outlines]], [[Dev/Services/Guidance|Guidance]]).
+- [[Constrained decoding]] — le mécanisme détaillé (compilation en automate, masquage, *token healing*) et ses bibliothèques ([[Outlines]], [[Guidance]]).
 - [[Server-Sent Events & streaming LLM]] — le décodage token par token **alimente** le flux streamé au client.
 - [[Speculative decoding]] — accélère la génération sans changer la distribution cible.
 - [[Multi-Token Prediction]] — têtes auxiliaires qui prédisent plusieurs positions d'avance ; change le rythme de validation, pas le choix du token.

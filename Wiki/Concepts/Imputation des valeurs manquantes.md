@@ -44,7 +44,7 @@ tags: [feature-engineering, missing-data]
 - Médiane > moyenne en présence d'outliers ; garder l'`add_indicator` quand le manque est informatif.
 - KNN / MICE plus fidèles mais plus coûteux et sensibles ; mesurer l'impact réel sur le score aval avant de complexifier.
 - Les arbres boostés (XGBoost, LightGBM) gèrent nativement les `NaN` — l'imputation devient parfois superflue.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.impute]] (`SimpleImputer`, `KNNImputer`, `IterativeImputer`).
+- Outils : [[Scikit-Learn|sklearn.impute]] (`SimpleImputer`, `KNNImputer`, `IterativeImputer`).
 
 ## Approches voisines & alternatives
 

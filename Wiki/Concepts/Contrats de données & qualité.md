@@ -38,7 +38,7 @@ tags: [data-contract, data-quality, data-validation, schema-evolution]
 ## En pratique
 
 - Placer les contrôles **aux frontières** : à l'ingestion (le brut est-il valide ?) et à la sortie des transformations critiques (le produit est-il livrable ?).
-- Câbler la validation dans l'orchestration : une expectation/un test échoué fait échouer la tâche [[Dev/Services/Airflow|Airflow]] ou matérialise un *asset check* [[Dev/Services/Dagster|Dagster]] — l'aval ne se déclenche pas sur de la donnée fausse.
+- Câbler la validation dans l'orchestration : une expectation/un test échoué fait échouer la tâche [[Airflow]] ou matérialise un *asset check* [[Dagster]] — l'aval ne se déclenche pas sur de la donnée fausse.
 - Choisir l'outil selon l'ancrage : **Pandera** quand la donnée vit en DataFrame dans du code Python ; **Great Expectations** pour des suites partagées et documentées ; **dbt tests** quand la transformation est déjà en SQL.
 - Distinguer qualité **des données** (ce contrat) et qualité **du modèle** : la dérive de distribution relève aussi de [[Data drift]].
 - Pièges : valider seulement le schéma en oubliant fraîcheur et volumétrie ; tout mettre en *gate* et bloquer la prod sur un faux positif ; des seuils figés qui ne suivent pas la saisonnalité.
@@ -50,7 +50,7 @@ tags: [data-contract, data-quality, data-validation, schema-evolution]
 - [[Change Data Capture (CDC)]] — appliquer un contrat sur un flux de changements.
 - [[Data drift]] — versant monitoring statistique de la qualité.
 - [[EDA automatisée & profiling]] — profiler un jeu de données pour *dériver* les attentes.
-- Orchestrateurs où s'exécutent les contrôles : [[Dev/Services/Airflow|Airflow]], [[Dev/Services/Dagster|Dagster]].
+- Orchestrateurs où s'exécutent les contrôles : [[Airflow]], [[Dagster]].
 
 ## Pour aller plus loin
 

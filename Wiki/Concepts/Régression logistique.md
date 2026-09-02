@@ -39,7 +39,7 @@ tags: [classification, linear-model, supervised, maximum-likelihood]
 - Calibrer le seuil de décision selon le coût des erreurs (pas forcément $0{,}5$).
 - Classes déséquilibrées : poids de classe, rééchantillonnage, métriques adaptées (AUC, F1).
 - Régulariser ([[Régularisation]]) — scikit-learn applique une pénalité L2 par défaut.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.linear_model.LogisticRegression]], `statsmodels.Logit` (inférence).
+- Outils : [[Scikit-Learn|sklearn.linear_model.LogisticRegression]], `statsmodels.Logit` (inférence).
 
 ## Approches voisines & alternatives
 

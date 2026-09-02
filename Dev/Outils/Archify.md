@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: 
 langage: JavaScript
-alternatives: ["[[Dev/Outils/Mermaid|Mermaid]]", "[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Excalidraw|Excalidraw]]", "[[Dev/Outils/FossFLOW|FossFLOW]]"]
+alternatives: ["[[Mermaid]]", "[[draw.io]]", "[[Excalidraw]]", "[[FossFLOW]]"]
 complements: []
 tags: [agent-skill, diagram, diagram-as-code, code-assistant, agents]
 url_docs: https://tt-a1i.github.io/archify/
@@ -22,7 +22,7 @@ url_repo: https://github.com/tt-a1i/archify
 
 Archify (MIT, JavaScript/Node) est un **skill packagé pour agents de code**, pas une librairie de rendu que l'on appelle soi-même. L'agent ne dessine pas : il remplit une **IR JSON typée**, que la chaîne Archify compile de façon **déterministe** en une page HTML autonome, validée contre un schéma. Cinq types de diagrammes couverts : architecture, workflow, séquence, data-flow, lifecycle. En sortie, la page HTML plus des exports SVG, PNG et WebM, une share card 1200×630, et une vue « Architecture Delta » qui met en regard Before / Delta / After. Validation de schéma, règles de layout et traçage de routes encadrent le rendu — le but est de rendre reproductible ce qu'un agent produirait sinon en texte libre.
 
-Le projet se positionne explicitement comme alternative à [[Dev/Outils/Mermaid|Mermaid]] pour ce périmètre. Il est jeune (créé en avril 2026) et publie vite ; sa popularité sur GitHub est très en avance sur son âge, ce qui ne dit rien de sa stabilité.
+Le projet se positionne explicitement comme alternative à [[Mermaid]] pour ce périmètre. Il est jeune (créé en avril 2026) et publie vite ; sa popularité sur GitHub est très en avance sur son âge, ce qui ne dit rien de sa stabilité.
 
 ## Quand l'utiliser
 
@@ -32,8 +32,8 @@ Le projet se positionne explicitement comme alternative à [[Dev/Outils/Mermaid|
 
 ## Quand NE PAS l'utiliser
 
-- Diagramme rendu **nativement** dans GitHub, GitLab ou Obsidian sans build → [[Dev/Outils/Mermaid|Mermaid]].
-- Édition WYSIWYG à la souris : hors périmètre revendiqué → [[Dev/Outils/draw.io|draw.io]], [[Dev/Outils/Excalidraw|Excalidraw]].
+- Diagramme rendu **nativement** dans GitHub, GitLab ou Obsidian sans build → [[Mermaid]].
+- Édition WYSIWYG à la souris : hors périmètre revendiqué → [[draw.io]], [[Excalidraw]].
 - Conversion d'un corpus Mermaid existant : le parsing Mermaid automatique n'est pas fourni.
 - Partage hébergé façon service en ligne : Archify produit des fichiers, pas des URLs.
 - Sans agent de code dans la boucle : l'outil suppose un agent qui remplit l'IR.
@@ -58,12 +58,12 @@ Le projet se positionne explicitement comme alternative à [[Dev/Outils/Mermaid|
 
 ## Alternatives
 
-- [[Dev/Outils/Mermaid|Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
-- [[Dev/Outils/draw.io|draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
-- [[Dev/Outils/Excalidraw|Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
-- [[Dev/Outils/FossFLOW|FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
+- [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
+- [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
+- [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
+- [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 
-Voisin de forme mais pas de fonction : [[Dev/Outils/Graphify|Graphify]], autre skill d'agent, qui indexe un dépôt au lieu de produire un schéma.
+Voisin de forme mais pas de fonction : [[Graphify]], autre skill d'agent, qui indexe un dépôt au lieu de produire un schéma.
 
 ## Liens
 

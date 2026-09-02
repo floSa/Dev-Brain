@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/bm25s|bm25s]]"]
+alternatives: ["[[bm25s]]"]
 complements: []
 tags: [information-retrieval, ranking, search]
 url_docs: https://github.com/dorianbrown/rank_bm25
@@ -29,9 +29,9 @@ Implémentation **Python pure** des variantes de [[BM25]] (Okapi BM25, BM25L, BM
 
 ## Quand NE PAS l'utiliser
 
-- **Passage à l'échelle** (gros corpus, latence, persistance, mises à jour) → un vrai moteur : [[Dev/Services/Elasticsearch|Elasticsearch]] / OpenSearch.
-- Besoin de **vitesse** → [[Dev/Services/bm25s|bm25s]] (scores pré-calculés, matrices creuses) est nettement plus rapide.
-- Recherche **sémantique** (synonymes, paraphrases) → [[Dev/Services/sentence-transformers|sentence-transformers]] + index vectoriel.
+- **Passage à l'échelle** (gros corpus, latence, persistance, mises à jour) → un vrai moteur : [[Elasticsearch]] / OpenSearch.
+- Besoin de **vitesse** → [[bm25s]] (scores pré-calculés, matrices creuses) est nettement plus rapide.
+- Recherche **sémantique** (synonymes, paraphrases) → [[sentence-transformers]] + index vectoriel.
 
 ## Déploiement & coût
 
@@ -47,14 +47,14 @@ Implémentation **Python pure** des variantes de [[BM25]] (Okapi BM25, BM25L, BM
 
 ## Alternatives
 
-- [[Dev/Services/bm25s|bm25s]] — Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
+- [[bm25s]] — Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
 
-À l'échelle, lui préférer un moteur lexical ([[Dev/Services/Elasticsearch|Elasticsearch]], cf. *Liens*).
+À l'échelle, lui préférer un moteur lexical ([[Elasticsearch]], cf. *Liens*).
 
 ## Liens
 
 - [[BM25]] — l'algorithme qu'il implémente.
 - [[Recherche d'information]] · [[Hybrid retrieval]] — ses usages.
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — BM25 indexé et distribué, pour la production.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[Elasticsearch]] — BM25 indexé et distribué, pour la production.
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Repo : https://github.com/dorianbrown/rank_bm25

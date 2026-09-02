@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/OpenSpiel|OpenSpiel]]"]
+alternatives: ["[[OpenSpiel]]"]
 complements: []
 tags: [reinforcement-learning]
 url_docs: https://gymnasium.farama.org/
@@ -29,8 +29,8 @@ url_repo: https://github.com/Farama-Foundation/Gymnasium
 
 ## Quand NE PAS l'utiliser
 
-- RL **multi-agents** → PettingZoo (même fondation), pas Gymnasium (mono-agent) ; jeux formels et information imparfaite → [[Dev/Services/OpenSpiel|OpenSpiel]].
-- Besoin des **algorithmes** d'apprentissage : Gymnasium ne fournit que les environnements → [[Dev/Services/Stable-Baselines3|Stable-Baselines3]] pour entraîner.
+- RL **multi-agents** → PettingZoo (même fondation), pas Gymnasium (mono-agent) ; jeux formels et information imparfaite → [[OpenSpiel]].
+- Besoin des **algorithmes** d'apprentissage : Gymnasium ne fournit que les environnements → [[Stable-Baselines3]] pour entraîner.
 - Code historique figé sur l'ancien `gym` : valider la migration (`terminated` / `truncated`) avant de basculer.
 
 ## Déploiement & coût
@@ -47,13 +47,13 @@ url_repo: https://github.com/Farama-Foundation/Gymnasium
 
 ## Alternatives
 
-- [[Dev/Services/OpenSpiel|OpenSpiel]] — Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python.
+- [[OpenSpiel]] — Collection DeepMind d'environnements et d'algorithmes pour les jeux — 70+ jeux (information parfaite/imparfaite, coopératifs, multi-agents) et les algos de référence (CFR, MCTS, fictitious play, exploitabilité) ; cœur C++ avec bindings Python.
 
 Nuance : Gymnasium pour le mono-agent standard, OpenSpiel dès que le problème est un jeu multi-joueurs ou à information imparfaite. En dehors du brain : PettingZoo (multi-agents, même fondation), dm_env / dm_control (DeepMind).
 
 ## Liens
 
-- [[Dev/Services/Stable-Baselines3|Stable-Baselines3]] — les algorithmes RL qui consomment les environnements Gymnasium.
+- [[Stable-Baselines3]] — les algorithmes RL qui consomment les environnements Gymnasium.
 - [[Comparatif - Reinforcement learning]] — vue d'ensemble des libs RL.
 - [[Reinforcement learning]] — le cadre agent-environnement que cette API matérialise.
 - [[Markov Decision Process]] — `step` / `reset` et les `spaces` traduisent directement états, actions et transitions d'un MDP.

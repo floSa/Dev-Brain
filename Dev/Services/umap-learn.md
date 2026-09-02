@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Scikit-Learn|Scikit-Learn]]", "[[Dev/Services/PaCMAP|PaCMAP]]"]
+alternatives: ["[[Scikit-Learn]]", "[[PaCMAP]]"]
 complements: []
 tags: [dimensionality-reduction, manifold, unsupervised]
 url_docs: https://umap-learn.readthedocs.io/
@@ -24,14 +24,14 @@ Implémentation de référence d'**UMAP** (Uniform Manifold Approximation and Pr
 ## Quand l'utiliser
 
 - Visualiser en 2-3D des données à haute dimension (embeddings, single-cell, images) en gardant des amas lisibles.
-- Réduire la dimension **avant un clustering** (pipeline [[Dev/Services/hdbscan|UMAP → HDBSCAN]]).
+- Réduire la dimension **avant un clustering** (pipeline [[hdbscan|UMAP → HDBSCAN]]).
 - Projeter de nouveaux points après apprentissage (`transform`) — ce que t-SNE ne fait pas nativement.
 - Réduction **supervisée** (UMAP guidé par les labels) pour mieux séparer des classes.
 
 ## Quand NE PAS l'utiliser
 
-- Réduction **linéaire** interprétable (axes = combinaisons de variables, variance expliquée) → [[Wiki/Concepts/PCA|PCA]] via [[Dev/Services/Scikit-Learn|Scikit-Learn]].
-- t-SNE ou autres manifolds suffisent sans nouvelle dépendance → `sklearn.manifold` de [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Réduction **linéaire** interprétable (axes = combinaisons de variables, variance expliquée) → [[PCA]] via [[Scikit-Learn]].
+- t-SNE ou autres manifolds suffisent sans nouvelle dépendance → `sklearn.manifold` de [[Scikit-Learn]].
 - Conserver des distances exactes ou une inertie chiffrée → méthodes factorielles ([[Réduction de dimension]]).
 
 ## Déploiement & coût
@@ -49,12 +49,12 @@ Implémentation de référence d'**UMAP** (Uniform Manifold Approximation and Pr
 
 ## Alternatives
 
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
-- [[Dev/Services/PaCMAP|PaCMAP]] — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[PaCMAP]] — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Réduction de dimension]] — PCA / t-SNE / UMAP / PaCMAP.
+- [[Comparatif - Réduction de dimension]] — PCA / t-SNE / UMAP / PaCMAP.
 - Concept : [[t-SNE and UMAP]] — la notion (réduction non linéaire pour la viz) ; page chapeau [[Réduction de dimension]] (famille manifold).
-- Pipeline fréquent : umap-learn (réduction) → [[Dev/Services/hdbscan|hdbscan]] (clustering).
+- Pipeline fréquent : umap-learn (réduction) → [[hdbscan]] (clustering).
 - Doc : https://umap-learn.readthedocs.io/

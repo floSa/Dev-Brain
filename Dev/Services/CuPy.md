@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / C++ / CUDA
-alternatives: ["[[Dev/Services/numpy|numpy]]"]
+alternatives: ["[[numpy]]"]
 complements: []
 tags: [gpu, array]
 url_docs: https://docs.cupy.dev/
@@ -19,26 +19,26 @@ url_repo: https://github.com/cupy/cupy
 
 ## Pourquoi
 
-Bibliothèque de **tableaux sur GPU** dont l'API est un **drop-in de [[Dev/Services/numpy|numpy]]** (et d'une grande partie de SciPy) : `import cupy as cp` à la place de `numpy` exécute les mêmes opérations sur GPU NVIDIA (**CUDA**) ou AMD (**ROCm**), via les bibliothèques natives (cuBLAS, cuFFT, cuSOLVER, cuRAND, cuDNN, NCCL). Maintenue par Preferred Networks. Permet d'accélérer du calcul numérique vectorisé **sans réécrire le code**, et de descendre au CUDA custom (`RawKernel`, fusion de noyaux) quand il faut. CuPy v14 aligne la sémantique sur NumPy 2 et ajoute bfloat16.
+Bibliothèque de **tableaux sur GPU** dont l'API est un **drop-in de [[numpy]]** (et d'une grande partie de SciPy) : `import cupy as cp` à la place de `numpy` exécute les mêmes opérations sur GPU NVIDIA (**CUDA**) ou AMD (**ROCm**), via les bibliothèques natives (cuBLAS, cuFFT, cuSOLVER, cuRAND, cuDNN, NCCL). Maintenue par Preferred Networks. Permet d'accélérer du calcul numérique vectorisé **sans réécrire le code**, et de descendre au CUDA custom (`RawKernel`, fusion de noyaux) quand il faut. CuPy v14 aligne la sémantique sur NumPy 2 et ajoute bfloat16.
 
 ## Quand l'utiliser
 
 - Accélérer un code **numpy/SciPy existant** sur GPU avec un changement d'import minimal.
 - Calcul **vectorisé massif** (algèbre linéaire, FFT, simulations) où le GPU bat largement le CPU.
-- Pont avec le deep learning : échange zéro-copie avec [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/JAX|JAX]] via le protocole `__cuda_array_interface__` / DLPack.
+- Pont avec le deep learning : échange zéro-copie avec [[PyTorch]] / [[JAX]] via le protocole `__cuda_array_interface__` / DLPack.
 - Écrire des **noyaux CUDA** depuis Python sans quitter l'écosystème numpy.
 
 ## Quand NE PAS l'utiliser
 
-- Pas de GPU disponible → [[Dev/Services/numpy|numpy]] (CPU) reste la référence.
-- Besoin de **différentiation automatique** ou d'un graphe d'entraînement → [[Dev/Services/JAX|JAX]] / [[Dev/Services/PyTorch|PyTorch]].
-- Données **plus grandes que la VRAM** ou calcul **multi-nœuds** → [[Dev/Services/Dask|Dask]] (qui peut piloter des chunks CuPy) plutôt que CuPy seul.
+- Pas de GPU disponible → [[numpy]] (CPU) reste la référence.
+- Besoin de **différentiation automatique** ou d'un graphe d'entraînement → [[JAX]] / [[PyTorch]].
+- Données **plus grandes que la VRAM** ou calcul **multi-nœuds** → [[Dask]] (qui peut piloter des chunks CuPy) plutôt que CuPy seul.
 - Code non vectorisé (boucles Python) : le transfert CPU↔GPU annule le gain.
 
 ## Déploiement & coût
 
 - Bibliothèque open-source (MIT), `uv add cupy-cuda12x` (wheels par version CUDA) ou build ROCm.
-- **Single-node** ; exploite plusieurs GPU d'une machine, mais le multi-nœuds passe par une couche externe ([[Dev/Services/Dask|Dask]], MPI).
+- **Single-node** ; exploite plusieurs GPU d'une machine, mais le multi-nœuds passe par une couche externe ([[Dask]], MPI).
 - Coût = le matériel GPU ; la bibliothèque est gratuite.
 - Dépend d'un **driver / toolkit CUDA (ou ROCm)** compatible installé sur l'hôte.
 
@@ -51,12 +51,12 @@ Bibliothèque de **tableaux sur GPU** dont l'API est un **drop-in de [[Dev/Servi
 
 ## Alternatives
 
-- [[Dev/Services/numpy|numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
+- [[numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
 
 ## Liens
 
 - [[Comparatif - Calcul distribué]] — comparatif de la catégorie
-- Équivalent CPU dont il copie l'API : [[Dev/Services/numpy|numpy]].
-- Multi-nœuds / hors VRAM : [[Dev/Services/Dask|Dask]] peut orchestrer des chunks CuPy.
-- GPU avec autodiff : [[Dev/Services/JAX|JAX]], [[Dev/Services/PyTorch|PyTorch]].
+- Équivalent CPU dont il copie l'API : [[numpy]].
+- Multi-nœuds / hors VRAM : [[Dask]] peut orchestrer des chunks CuPy.
+- GPU avec autodiff : [[JAX]], [[PyTorch]].
 - Doc : https://docs.cupy.dev/

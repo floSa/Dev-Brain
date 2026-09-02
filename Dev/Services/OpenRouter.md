@@ -10,7 +10,7 @@ hosted: [managed]
 maturite: production
 langage: 
 scaling: serverless
-alternatives: ["[[Dev/Services/LiteLLM|LiteLLM]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
+alternatives: ["[[LiteLLM]]", "[[OmniRoute]]"]
 complements: []
 tags: [llm, llm-gateway, routing, inference]
 url_docs: https://openrouter.ai/docs
@@ -21,7 +21,7 @@ url_repo:
 
 ## Pourquoi
 
-**Passerelle LLM managée** : un **service hébergé** (SaaS propriétaire) qui expose une **seule API OpenAI-compatible** vers **300+ modèles** de **60+ fournisseurs** (OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, xAI…). Une **clé**, une **facture**, un **base URL** — et OpenRouter gère le routage vers le bon fournisseur, avec **fallbacks** automatiques si un provider est indisponible. Modèle économique : **crédits prépayés**, tarifs fournisseurs en **pass-through** (pas de marge sur le token) plus **~5,5 % de frais** de plateforme sur les crédits ; un palier gratuit donne accès à des modèles à coût nul (rate-limités). C'est l'équivalent **managé** de [[Dev/Services/LiteLLM|LiteLLM]] : pas de proxy à opérer soi-même.
+**Passerelle LLM managée** : un **service hébergé** (SaaS propriétaire) qui expose une **seule API OpenAI-compatible** vers **300+ modèles** de **60+ fournisseurs** (OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, xAI…). Une **clé**, une **facture**, un **base URL** — et OpenRouter gère le routage vers le bon fournisseur, avec **fallbacks** automatiques si un provider est indisponible. Modèle économique : **crédits prépayés**, tarifs fournisseurs en **pass-through** (pas de marge sur le token) plus **~5,5 % de frais** de plateforme sur les crédits ; un palier gratuit donne accès à des modèles à coût nul (rate-limités). C'est l'équivalent **managé** de [[LiteLLM]] : pas de proxy à opérer soi-même.
 
 ## Quand l'utiliser
 
@@ -32,10 +32,10 @@ url_repo:
 
 ## Quand NE PAS l'utiliser
 
-- Exigence de **self-host / souveraineté** (données qui ne doivent pas transiter par un tiers) → [[Dev/Services/LiteLLM|LiteLLM]] en proxy auto-hébergé.
-- Besoin de **contrôle fin** (clés virtuelles internes, garde-fous maison, logs chez soi) → [[Dev/Services/LiteLLM|LiteLLM]].
-- **Composer** chaînes/RAG/agents : OpenRouter n'orchestre pas → frameworks d'apps ([[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]]) qui l'appellent dessous.
-- **Servir** un modèle (inférence GPU) → [[Dev/Services/vLLM|vLLM]], [[Dev/Services/TGI|TGI]].
+- Exigence de **self-host / souveraineté** (données qui ne doivent pas transiter par un tiers) → [[LiteLLM]] en proxy auto-hébergé.
+- Besoin de **contrôle fin** (clés virtuelles internes, garde-fous maison, logs chez soi) → [[LiteLLM]].
+- **Composer** chaînes/RAG/agents : OpenRouter n'orchestre pas → frameworks d'apps ([[LangChain]], [[LlamaIndex]]) qui l'appellent dessous.
+- **Servir** un modèle (inférence GPU) → [[vLLM]], [[TGI]].
 
 ## Déploiement & coût
 
@@ -52,13 +52,13 @@ url_repo:
 
 ## Alternatives
 
-- [[Dev/Services/LiteLLM|LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
-- [[Dev/Services/OmniRoute|OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
+- [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
+- [[OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
 ## Liens
 
-- Équivalent **managé** de la passerelle auto-hébergée [[Dev/Services/LiteLLM|LiteLLM]] (même rôle : abstraction multi-fournisseurs au format OpenAI).
-- Appelé **en dessous** des frameworks d'apps : [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], et des builders [[Dev/Services/Langflow|Langflow]] / [[Dev/Services/Flowise|Flowise]] / [[Dev/Services/Dify|Dify]].
+- Équivalent **managé** de la passerelle auto-hébergée [[LiteLLM]] (même rôle : abstraction multi-fournisseurs au format OpenAI).
+- Appelé **en dessous** des frameworks d'apps : [[LangChain]], [[LlamaIndex]], et des builders [[Langflow]] / [[Flowise]] / [[Dify]].
 - Concepts : [[Routing and cascading]], [[Reliability patterns]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://openrouter.ai/docs

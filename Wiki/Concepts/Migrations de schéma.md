@@ -25,8 +25,8 @@ tags: [migration, relational]
 - Rollback : chaque migration porte son inverse (`down`) — pratique mais impossible pour les changements destructifs (données perdues).
 
 ### Déclaratif vs impératif
-- Impératif / SQL-first : on écrit explicitement le DDL de chaque étape ([[Dev/Services/Flyway|Flyway]]).
-- Déclaratif : on décrit l'état cible (changelog abstrait [[Dev/Services/Liquibase|Liquibase]], ou schéma d'ORM) et l'outil génère le diff.
+- Impératif / SQL-first : on écrit explicitement le DDL de chaque étape ([[Flyway]]).
+- Déclaratif : on décrit l'état cible (changelog abstrait [[Liquibase]], ou schéma d'ORM) et l'outil génère le diff.
 
 ## En pratique
 
@@ -37,9 +37,9 @@ tags: [migration, relational]
 
 ## Approches voisines & alternatives
 
-- Outils dédiés (Dev) : [[Dev/Services/Liquibase|Liquibase]] (changelog multi-SGBD), [[Dev/Services/Flyway|Flyway]] (SQL-first).
-- Migrations intégrées à un ORM : [[Dev/Services/Prisma|Prisma]] (Prisma Migrate), ou côté Python [[Dev/Services/Alembic|Alembic]] (couplé à [[Dev/Services/SQLAlchemy|SQLAlchemy]]).
-- Concept parent : [[Wiki/Concepts/Bases de données|Bases de données]].
+- Outils dédiés (Dev) : [[Liquibase]] (changelog multi-SGBD), [[Flyway]] (SQL-first).
+- Migrations intégrées à un ORM : [[Prisma]] (Prisma Migrate), ou côté Python [[Alembic]] (couplé à [[SQLAlchemy]]).
+- Concept parent : [[Bases de données]].
 
 ## Pour aller plus loin
 

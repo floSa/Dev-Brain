@@ -38,7 +38,7 @@ tags: [cnn, computer-vision, deep-learning]
 
 - Choisir selon la contrainte : précision max → ResNet / ConvNeXt ; latence / mobile → MobileNet / EfficientNet-lite.
 - Partir des poids pré-entraînés (ImageNet) via [[Transfer learning vision|transfert]] ; alléger ensuite par [[Quantization|quantization]] ou [[Distillation|distillation]] pour l'[[Inference optimization|inférence]].
-- Disponibles clés en main : [[Dev/Services/torchvision|torchvision]] ([[Dev/Services/PyTorch|PyTorch]]), [[Dev/Services/Keras|Keras]] Applications, et surtout [[Dev/Services/timm|timm]] (le catalogue le plus large).
+- Disponibles clés en main : [[torchvision]] ([[PyTorch]]), [[Keras]] Applications, et surtout [[timm]] (le catalogue le plus large).
 
 ## Approches voisines & alternatives
 

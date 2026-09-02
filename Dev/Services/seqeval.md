@@ -25,12 +25,12 @@ Bibliothèque dédiée au calcul des métriques d'[[NER et étiquetage de séque
 
 - Évaluer un modèle de **NER** ou de chunking en **F1 au niveau entité** (le standard des papiers CoNLL).
 - Obtenir un **rapport par type d'entité** (`classification_report`) — précision/rappel/F1 par classe.
-- Brique d'évaluation dans une boucle d'entraînement de token classification ([[Dev/Services/HuggingFace|HuggingFace]] `Trainer`).
+- Brique d'évaluation dans une boucle d'entraînement de token classification ([[HuggingFace]] `Trainer`).
 
 ## Quand NE PAS l'utiliser
 
-- Métriques au **niveau token** ou tâches de classification non séquentielles → `sklearn.metrics` ([[Dev/Services/Scikit-Learn|Scikit-Learn]]) suffit.
-- Jeu de métriques **génériques et versionnées** (BLEU, ROUGE, accuracy) → [[Dev/Services/evaluate|evaluate]], qui d'ailleurs **embarque seqeval** pour sa métrique `seqeval`.
+- Métriques au **niveau token** ou tâches de classification non séquentielles → `sklearn.metrics` ([[Scikit-Learn]]) suffit.
+- Jeu de métriques **génériques et versionnées** (BLEU, ROUGE, accuracy) → [[evaluate]], qui d'ailleurs **embarque seqeval** pour sa métrique `seqeval`.
 
 ## Déploiement & coût
 
@@ -46,12 +46,12 @@ Bibliothèque dédiée au calcul des métriques d'[[NER et étiquetage de séque
 
 ## Alternatives
 
-Pas de substitut direct dans le brain : c'est la bibliothèque de référence pour les métriques d'étiquetage de séquence. Pour des métriques génériques, voir [[Dev/Services/evaluate|evaluate]] (qui l'enveloppe) ; pour le niveau token, `sklearn.metrics`.
+Pas de substitut direct dans le brain : c'est la bibliothèque de référence pour les métriques d'étiquetage de séquence. Pour des métriques génériques, voir [[evaluate]] (qui l'enveloppe) ; pour le niveau token, `sklearn.metrics`.
 
 ## Liens
 
 - [[NER et étiquetage de séquence]] — le concept dont seqeval calcule les métriques.
-- [[Dev/Services/evaluate|evaluate]] — l'enveloppe HuggingFace qui charge seqeval comme métrique.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — `sklearn.metrics` pour le niveau token / la classification classique.
+- [[evaluate]] — l'enveloppe HuggingFace qui charge seqeval comme métrique.
+- [[Scikit-Learn]] — `sklearn.metrics` pour le niveau token / la classification classique.
 - [[Classification metrics]] — les concepts derrière precision / recall / F1.
 - Repo : https://github.com/chakki-works/seqeval

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / C++
-alternatives: ["[[Dev/Services/Dask|Dask]]", "[[Dev/Services/Spark|Spark]]"]
+alternatives: ["[[Dask]]", "[[Spark]]"]
 complements: []
 tags: [distributed, parallel, gpu]
 url_docs: https://docs.ray.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/ray-project/ray
 
 ## Pourquoi
 
-Framework de **calcul distribué pour Python**, issu du RISELab de Berkeley et porté par Anyscale (entré à la PyTorch Foundation en 2025). Deux étages : un **cœur** (Ray Core) qui distribue du code Python arbitraire via deux primitives — les **tâches** (`@ray.remote` sur des fonctions) et les **acteurs** (classes à état) — sur les cœurs d'une machine ou un cluster, avec un object store partagé en mémoire ; et un **ensemble de bibliothèques ML** bâties dessus — [[Dev/Services/Ray Tune|Ray Tune]] (HPO), [[Dev/Services/Ray Serve|Ray Serve]] (serving), Ray Train (entraînement distribué), Ray Data (traitement), RLlib (RL). Le même code passe du portable au cluster sans réécriture.
+Framework de **calcul distribué pour Python**, issu du RISELab de Berkeley et porté par Anyscale (entré à la PyTorch Foundation en 2025). Deux étages : un **cœur** (Ray Core) qui distribue du code Python arbitraire via deux primitives — les **tâches** (`@ray.remote` sur des fonctions) et les **acteurs** (classes à état) — sur les cœurs d'une machine ou un cluster, avec un object store partagé en mémoire ; et un **ensemble de bibliothèques ML** bâties dessus — [[Ray Tune]] (HPO), [[Ray Serve]] (serving), Ray Train (entraînement distribué), Ray Data (traitement), RLlib (RL). Le même code passe du portable au cluster sans réécriture.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Framework de **calcul distribué pour Python**, issu du RISELab de Berkeley et p
 
 ## Quand NE PAS l'utiliser
 
-- Mise à l'échelle d'API **numpy/pandas** familières → [[Dev/Services/Dask|Dask]] (collections drop-in, plus simple pour ce cas).
-- Traitement **big data** SQL / DataFrame sur écosystème JVM → [[Dev/Services/Spark|Spark]].
-- Données qui tiennent sur une machine → [[Dev/Services/Polars|Polars]] / [[Dev/Services/pandas|pandas]] ; pas de cluster à gérer.
+- Mise à l'échelle d'API **numpy/pandas** familières → [[Dask]] (collections drop-in, plus simple pour ce cas).
+- Traitement **big data** SQL / DataFrame sur écosystème JVM → [[Spark]].
+- Données qui tiennent sur une machine → [[Polars]] / [[pandas]] ; pas de cluster à gérer.
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ Framework de **calcul distribué pour Python**, issu du RISELab de Berkeley et p
 
 ## Alternatives
 
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
-- [[Dev/Services/Spark|Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 
 ## Liens
 
-- Famille Ray : [[Dev/Services/Ray Tune|Ray Tune]] (HPO), [[Dev/Services/Ray Serve|Ray Serve]] (serving) — bibliothèques bâties sur ce cœur.
+- Famille Ray : [[Ray Tune]] (HPO), [[Ray Serve]] (serving) — bibliothèques bâties sur ce cœur.
 - [[Comparatif - Calcul distribué]] — comparatif de la catégorie
-- Peut servir de backend d'exécution à [[Dev/Services/Modin|Modin]].
+- Peut servir de backend d'exécution à [[Modin]].
 - Doc : https://docs.ray.io/

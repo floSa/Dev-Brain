@@ -12,7 +12,7 @@ tags: [ann, vector-db, embeddings]
 ## Aperçu
 
 - Comment les index de recherche vectorielle trouvent les plus proches voisins **sans** comparer la requête à tous les vecteurs : ils échangent un peu de **rappel** contre beaucoup de **vitesse** et de **mémoire**.
-- Trois familles, souvent combinées : **HNSW** (graphe), **IVF** (partitionnement), **PQ** (compression). C'est ce qui tourne sous [[Dev/Services/Faiss|Faiss]], [[Dev/Services/hnswlib|hnswlib]], [[Dev/Services/ScaNN|ScaNN]] et les [[Bases de données vectorielles|bases vectorielles]].
+- Trois familles, souvent combinées : **HNSW** (graphe), **IVF** (partitionnement), **PQ** (compression). C'est ce qui tourne sous [[Faiss]], [[hnswlib]], [[ScaNN]] et les [[Bases de données vectorielles|bases vectorielles]].
 
 ## Concepts clés
 
@@ -32,7 +32,7 @@ tags: [ann, vector-db, embeddings]
 - Découpe chaque vecteur en *m* sous-vecteurs ; chaque sous-vecteur est remplacé par l'**id du centroïde** le plus proche d'un petit codebook appris.
 - Un vecteur devient *m* codes d'un octet → compression massive de la RAM ; les distances s'approximent via des tables précalculées.
 - Coût : c'est une approximation **avec perte** → rappel dégradé, souvent rattrapé par un *re-ranking* exact sur les meilleurs candidats.
-- Variante : **OPQ** (rotation apprise avant PQ) ; la **quantification anisotrope** de [[Dev/Services/ScaNN|ScaNN]] préserve les composantes qui comptent pour le produit scalaire.
+- Variante : **OPQ** (rotation apprise avant PQ) ; la **quantification anisotrope** de [[ScaNN]] préserve les composantes qui comptent pour le produit scalaire.
 
 ### Combinaisons
 - En pratique on **empile** : `IVF+PQ` (partitionner *puis* compresser) pour des milliards de vecteurs en RAM contrainte ; `HNSW` posé sur les centroïdes IVF pour accélérer le choix des cellules.
@@ -51,14 +51,14 @@ tags: [ann, vector-db, embeddings]
 - IVF et PQ exigent un `train()` sur un échantillon **représentatif** ; un échantillon biaisé dégrade durablement le rappel.
 - Mesurer le rappel sur un jeu de requêtes réel avant de figer les hyperparamètres : `ef` / `nprobe` trop bas font chuter le rappel **silencieusement** (aucune erreur, juste de mauvais voisins).
 - Avec compression, ajouter un **re-ranking exact** sur les top candidats pour récupérer le rappel perdu par PQ.
-- Pour quelques milliers de vecteurs, un index plat (exact) [[Dev/Services/Faiss|Faiss]] ou même du NumPy suffit : pas besoin d'ANN. L'ANN se justifie au-delà de ~$10^5$–$10^6$ vecteurs.
+- Pour quelques milliers de vecteurs, un index plat (exact) [[Faiss]] ou même du NumPy suffit : pas besoin d'ANN. L'ANN se justifie au-delà de ~$10^5$–$10^6$ vecteurs.
 
 ## Approches voisines & alternatives
 
 - [[Bases de données vectorielles]] — le concept englobant ; ces index sont son moteur de recherche.
-- [[Dev/Services/Faiss|Faiss]] — la boîte à outils de référence (HNSW, IVF, PQ, OPQ, GPU).
-- [[Dev/Services/hnswlib|hnswlib]] — HNSW « nu », minimal et incrémental.
-- [[Dev/Services/ScaNN|ScaNN]] — quantification anisotrope, état de l'art sur le produit scalaire.
+- [[Faiss]] — la boîte à outils de référence (HNSW, IVF, PQ, OPQ, GPU).
+- [[hnswlib]] — HNSW « nu », minimal et incrémental.
+- [[ScaNN]] — quantification anisotrope, état de l'art sur le produit scalaire.
 - [[embeddings]] — les vecteurs que ces index organisent et recherchent.
 - Alternative : k-NN **exact** (force brute / `IndexFlat`) — rappel parfait, viable seulement à petit volume.
 

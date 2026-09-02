@@ -41,7 +41,7 @@ tags: [feature-engineering]
 - Filtrage en premier tri rapide (haute dimension) ; wrapper si le budget calcul le permet ; intégré comme défaut pragmatique.
 - Faire la sélection **dans la validation croisée** (sur le train de chaque pli) — sinon fuite et score optimiste (cf. [[Ingénierie des caractéristiques]]).
 - Variables corrélées : le filtrage univarié les garde toutes ; préférer L1 / embedded pour dédupliquer.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.feature_selection]] (`SelectKBest`, `RFE`, `RFECV`, `SelectFromModel`, `VarianceThreshold`).
+- Outils : [[Scikit-Learn|sklearn.feature_selection]] (`SelectKBest`, `RFE`, `RFECV`, `SelectFromModel`, `VarianceThreshold`).
 
 ## Approches voisines & alternatives
 

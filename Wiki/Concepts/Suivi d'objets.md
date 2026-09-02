@@ -36,7 +36,7 @@ tags: [object-tracking, object-detection, computer-vision, deep-learning]
 
 ## En pratique
 
-- Défaut pragmatique : **ByteTrack** (excellent rapport simplicité/qualité), **DeepSORT** si beaucoup d'occlusions et qu'on dispose d'un bon modèle de ré-id. Implémentation prête à l'emploi (ByteTrack, annotation, comptage par zones) : [[Dev/Services/supervision|supervision]].
+- Défaut pragmatique : **ByteTrack** (excellent rapport simplicité/qualité), **DeepSORT** si beaucoup d'occlusions et qu'on dispose d'un bon modèle de ré-id. Implémentation prête à l'emploi (ByteTrack, annotation, comptage par zones) : [[supervision]].
 - Métriques MOT : **MOTA** (agrège FP, FN, ID switches), **IDF1** (préservation de l'identité), **HOTA** (équilibre détection et association — la métrique moderne de référence).
 - Variantes *joint detection & embedding* (JDE, FairMOT) et transformeurs (TrackFormer, MOTR) fusionnent détection et association en un seul réseau.
 

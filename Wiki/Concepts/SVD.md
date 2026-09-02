@@ -42,7 +42,7 @@ tags: [linear-algebra, matrix-decomposition, eigenvalue, dimensionality-reductio
 - Toujours préférer la SVD à l'inversion ou à l'eigendecomposition de $A^\top A$ quand la stabilité compte.
 - SVD tronquée / randomisée pour les grandes matrices creuses (`scipy.sparse.linalg.svds`, `sklearn.decomposition.TruncatedSVD` — LSA en NLP).
 - Coûteuse sur très grandes matrices denses : envisager une version randomisée.
-- Outils : `numpy.linalg.svd`, `scipy.linalg.svd`, [[Dev/Services/Scikit-Learn|sklearn]] (`TruncatedSVD`, `PCA`), [[Dev/Services/numpy|numpy]].
+- Outils : `numpy.linalg.svd`, `scipy.linalg.svd`, [[Scikit-Learn|sklearn]] (`TruncatedSVD`, `PCA`), [[numpy]].
 
 ## Approches voisines & alternatives
 

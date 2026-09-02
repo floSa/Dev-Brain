@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: C/C++
 scaling: single-node
-alternatives: ["[[Dev/Services/Ollama|Ollama]]", "[[Dev/Services/LM Studio|LM Studio]]", "[[Dev/Services/text-generation-webui|text-generation-webui]]", "[[Dev/Services/vLLM|vLLM]]", "[[Dev/Services/TGI|TGI]]", "[[Dev/Services/SGLang|SGLang]]", "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]", "[[Dev/Services/needle|needle]]"]
+alternatives: ["[[Ollama]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[SGLang]]", "[[TensorRT-LLM]]", "[[needle]]"]
 complements: []
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://github.com/ggml-org/llama.cpp/tree/master/docs
@@ -21,19 +21,19 @@ url_repo: https://github.com/ggml-org/llama.cpp
 
 ## Pourquoi
 
-Moteur d'inférence LLM écrit en **C/C++** au-dessus de la bibliothèque de tenseurs **ggml**, conçu pour tourner partout avec un minimum de dépendances. C'est la référence de l'inférence **sur CPU et GPU grand public** : il introduit le format **GGUF** (poids + métadonnées dans un seul fichier) et une **quantization agressive** (K-quants, importance matrix, de 2 à 8 bits) qui fait tenir des modèles de plusieurs milliards de paramètres dans la RAM/VRAM d'une machine ordinaire. Backends multiples (CUDA, Metal, Vulkan, ROCm, CPU AVX). Livre des binaires (`llama-cli`, `llama-server` avec API OpenAI-compatible) et sert de socle bas niveau à [[Dev/Services/Ollama|Ollama]], [[Dev/Services/LM Studio|LM Studio]] et la plupart des outils locaux.
+Moteur d'inférence LLM écrit en **C/C++** au-dessus de la bibliothèque de tenseurs **ggml**, conçu pour tourner partout avec un minimum de dépendances. C'est la référence de l'inférence **sur CPU et GPU grand public** : il introduit le format **GGUF** (poids + métadonnées dans un seul fichier) et une **quantization agressive** (K-quants, importance matrix, de 2 à 8 bits) qui fait tenir des modèles de plusieurs milliards de paramètres dans la RAM/VRAM d'une machine ordinaire. Backends multiples (CUDA, Metal, Vulkan, ROCm, CPU AVX). Livre des binaires (`llama-cli`, `llama-server` avec API OpenAI-compatible) et sert de socle bas niveau à [[Ollama]], [[LM Studio]] et la plupart des outils locaux.
 
 ## Quand l'utiliser
 
 - Faire tourner un LLM sur **CPU**, Apple Silicon ou GPU grand public, voire des cibles embarquées.
 - Maîtriser finement la **quantization** (format GGUF, niveau de bits, imatrix) pour le compromis qualité/mémoire.
 - Embarquer l'inférence dans un binaire **portable et sans dépendances lourdes** (pas de runtime Python).
-- Comprendre / contrôler ce que des wrappers comme [[Dev/Services/Ollama|Ollama]] font en coulisses.
+- Comprendre / contrôler ce que des wrappers comme [[Ollama]] font en coulisses.
 
 ## Quand NE PAS l'utiliser
 
-- Simplicité « une commande » et registre de modèles → [[Dev/Services/Ollama|Ollama]] (qui l'enveloppe).
-- Débit GPU maximal pour **beaucoup de requêtes concurrentes** en production → [[Dev/Services/vLLM|vLLM]], [[Dev/Services/TGI|TGI]] ou [[Dev/Services/SGLang|SGLang]].
+- Simplicité « une commande » et registre de modèles → [[Ollama]] (qui l'enveloppe).
+- Débit GPU maximal pour **beaucoup de requêtes concurrentes** en production → [[vLLM]], [[TGI]] ou [[SGLang]].
 - Serving distribué multi-GPU / multi-nœuds : llama.cpp vise une machine.
 
 ## Déploiement & coût
@@ -50,19 +50,19 @@ Moteur d'inférence LLM écrit en **C/C++** au-dessus de la bibliothèque de ten
 
 ## Alternatives
 
-- [[Dev/Services/Ollama|Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
-- [[Dev/Services/vLLM|vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
-- [[Dev/Services/TGI|TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
-- [[Dev/Services/SGLang|SGLang]] — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
-- [[Dev/Services/LM Studio|LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
-- [[Dev/Services/text-generation-webui|text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
-- [[Dev/Services/TensorRT-LLM|TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
-- [[Dev/Services/needle|needle]] — Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.
+- [[Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
+- [[vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
+- [[TGI]] — Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
+- [[SGLang]] — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
+- [[LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
+- [[text-generation-webui]] — UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
+- [[TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
+- [[needle]] — Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.
 
 ## Liens
 
-- Socle d'inférence de [[Dev/Services/Ollama|Ollama]] (et d'autres runtimes locaux).
-- Modèles convertis au format GGUF depuis [[Dev/Services/HuggingFace|HuggingFace]].
+- Socle d'inférence de [[Ollama]] (et d'autres runtimes locaux).
+- Modèles convertis au format GGUF depuis [[HuggingFace]].
 - [[Quantization]] agressive des poids (GGUF, K-quants, imatrix) — cœur du projet.
 - [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
 - Doc : https://github.com/ggml-org/llama.cpp/tree/master/docs

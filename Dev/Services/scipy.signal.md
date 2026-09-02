@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C / Fortran / Python
-alternatives: ["[[Dev/Services/PyWavelets|PyWavelets]]", "[[Dev/Services/librosa|librosa]]"]
+alternatives: ["[[PyWavelets]]", "[[librosa]]"]
 complements: []
 tags: [signal-processing, digital-filter, fourier, spectrogram]
 url_docs: https://docs.scipy.org/doc/scipy/reference/signal.html
@@ -19,7 +19,7 @@ url_repo: https://github.com/scipy/scipy
 
 ## Pourquoi
 
-Sous-module de **SciPy** dédié au traitement du signal numérique, bâti sur les `ndarray` de [[Dev/Services/numpy|numpy]]. Couvre la **conception et l'application de filtres** (FIR/IIR — Butterworth, Chebyshev, elliptique ; `filtfilt` à phase nulle), l'**analyse spectrale** (`periodogram`, `welch`, `stft`, `spectrogram`), la **convolution / corrélation**, la **détection de pics**, le **ré-échantillonnage** et les **fenêtres d'apodisation**. La boîte à outils DSP de référence en Python scientifique, sans dépendance lourde.
+Sous-module de **SciPy** dédié au traitement du signal numérique, bâti sur les `ndarray` de [[numpy]]. Couvre la **conception et l'application de filtres** (FIR/IIR — Butterworth, Chebyshev, elliptique ; `filtfilt` à phase nulle), l'**analyse spectrale** (`periodogram`, `welch`, `stft`, `spectrogram`), la **convolution / corrélation**, la **détection de pics**, le **ré-échantillonnage** et les **fenêtres d'apodisation**. La boîte à outils DSP de référence en Python scientifique, sans dépendance lourde.
 
 ## Quand l'utiliser
 
@@ -30,8 +30,8 @@ Sous-module de **SciPy** dédié au traitement du signal numérique, bâti sur l
 
 ## Quand NE PAS l'utiliser
 
-- Analyse **temps-échelle par ondelettes** → [[Dev/Services/PyWavelets|PyWavelets]] (SciPy a retiré ses fonctions d'ondelettes).
-- Pipeline **audio / musique** de haut niveau (mel, MFCC, tempo, chargement de fichiers) → [[Dev/Services/librosa|librosa]].
+- Analyse **temps-échelle par ondelettes** → [[PyWavelets]] (SciPy a retiré ses fonctions d'ondelettes).
+- Pipeline **audio / musique** de haut niveau (mel, MFCC, tempo, chargement de fichiers) → [[librosa]].
 - Simple **FFT** sans traitement → `numpy.fft` / `scipy.fft` suffit.
 
 ## Déploiement & coût
@@ -45,12 +45,12 @@ Sous-module de **SciPy** dédié au traitement du signal numérique, bâti sur l
 - **Normaliser la coupure par la fréquence de Nyquist** ($f_s/2$) — erreur classique de `butter`.
 - Préférer le format **SOS** (`sosfilt`) au format `(b, a)` pour la stabilité numérique des filtres d'ordre élevé.
 - `filtfilt` double l'ordre effectif et exige des bords assez longs (gestion des transitoires).
-- Ondelettes : `scipy.signal.cwt` / `ricker` sont **dépréciés / retirés** → passer à [[Dev/Services/PyWavelets|PyWavelets]].
+- Ondelettes : `scipy.signal.cwt` / `ricker` sont **dépréciés / retirés** → passer à [[PyWavelets]].
 
 ## Alternatives
 
-- [[Dev/Services/PyWavelets|PyWavelets]] — Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.
-- [[Dev/Services/librosa|librosa]] — Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.
+- [[PyWavelets]] — Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.
+- [[librosa]] — Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.
 
 ## Liens
 
@@ -58,6 +58,6 @@ Sous-module de **SciPy** dédié au traitement du signal numérique, bâti sur l
 - [[Transformée de Fourier]] — `periodogram` / `welch` pour l'estimation spectrale.
 - [[STFT et spectrogramme]] — `stft` / `spectrogram`.
 - [[Traitement du signal]] — page chapeau.
-- [[Dev/Services/numpy|numpy]] — socle `ndarray` sur lequel il opère.
-- [[Dev/Patterns/Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
+- [[numpy]] — socle `ndarray` sur lequel il opère.
+- [[Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
 - Doc : https://docs.scipy.org/doc/scipy/reference/signal.html

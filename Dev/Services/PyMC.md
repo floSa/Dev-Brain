@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Stan|Stan]]"]
+alternatives: ["[[Stan]]"]
 complements: []
 tags: [bayesian, probabilistic-programming, monte-carlo, markov, prior]
 url_docs: https://www.pymc.io
@@ -29,14 +29,14 @@ Framework de **programmation probabiliste** en Python pur. On décrit un modèle
 
 ## Quand NE PAS l'utiliser
 
-- Performance maximale sur gros modèles / grandes données, ou réutilisation d'un modèle hors Python → [[Dev/Services/Stan|Stan]].
-- Simple test d'hypothèse ou GLM fréquentiste → [[Dev/Services/statsmodels|statsmodels]], [[Dev/Services/scipy.stats|scipy.stats]].
-- Inspection / diagnostics des chaînes : PyMC les délègue à [[Dev/Services/ArviZ|ArviZ]] (renvoie un `InferenceData`).
+- Performance maximale sur gros modèles / grandes données, ou réutilisation d'un modèle hors Python → [[Stan]].
+- Simple test d'hypothèse ou GLM fréquentiste → [[statsmodels]], [[scipy.stats]].
+- Inspection / diagnostics des chaînes : PyMC les délègue à [[ArviZ]] (renvoie un `InferenceData`).
 
 ## Déploiement & coût
 
 - Bibliothèque Python (`uv add pymc`), s'appuie sur PyTensor + NumPy.
-- Single-node ; échantillonnage multi-chaînes parallélisé sur les cœurs CPU (GPU possible via backends [[Dev/Services/JAX|JAX]]/Numba).
+- Single-node ; échantillonnage multi-chaînes parallélisé sur les cœurs CPU (GPU possible via backends [[JAX]]/Numba).
 - Apache-2.0, gratuit ; sous l'ombrelle NumFOCUS.
 
 ## Pièges
@@ -47,11 +47,11 @@ Framework de **programmation probabiliste** en Python pur. On décrit un modèle
 
 ## Alternatives
 
-- [[Dev/Services/Stan|Stan]] — Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.
+- [[Stan]] — Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Inférence bayésienne|Inférence bayésienne]], [[Wiki/Concepts/MCMC|MCMC]], [[Wiki/Concepts/Estimation MAP|Estimation MAP]], [[Wiki/Concepts/Chaînes de Markov|Chaînes de Markov]]
-- Diagnostics & viz a posteriori : [[Dev/Services/ArviZ|ArviZ]]
+- Concepts implémentés : [[Inférence bayésienne]], [[MCMC]], [[Estimation MAP]], [[Chaînes de Markov]]
+- Diagnostics & viz a posteriori : [[ArviZ]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://www.pymc.io

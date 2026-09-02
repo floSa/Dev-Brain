@@ -40,7 +40,7 @@ tags: [model-evaluation, supervised]
 - Diagnostiquer avec des **courbes d'apprentissage** (erreur train/test vs taille du jeu) : écart qui persiste = variance ; plateau haut des deux = biais.
 - La [[Validation croisée]] estime l'erreur de test qui matérialise ce compromis.
 - L'[[Optimisation d'hyperparamètres]] revient à chercher le point bas de la courbe en U (force de régularisation, profondeur, nombre d'estimateurs).
-- Outils : courbes via [[Dev/Services/Scikit-Learn|sklearn.model_selection.learning_curve / validation_curve]].
+- Outils : courbes via [[Scikit-Learn|sklearn.model_selection.learning_curve / validation_curve]].
 
 ## Approches voisines & alternatives
 

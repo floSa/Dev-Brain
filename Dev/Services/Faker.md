@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Mimesis|Mimesis]]"]
+alternatives: ["[[Mimesis]]"]
 complements: []
 tags: [synthetic-data, testing]
 url_docs: https://faker.readthedocs.io/
@@ -30,9 +30,9 @@ Faker (importé `faker`, paquet PyPI `Faker`, par joke2k / Daniele Faraglia) gé
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de **vitesse** sur de très gros volumes → [[Dev/Services/Mimesis|Mimesis]] (entièrement typé, nettement plus rapide).
-- Reproduire la **distribution statistique** d'un vrai jeu tabulaire (corrélations, lois marginales) → [[Dev/Services/SDV|SDV]] (synthèse par modèles).
-- Rééquilibrer une classe minoritaire par interpolation → [[Dev/Services/imbalanced-learn|imbalanced-learn]] (SMOTE).
+- Besoin de **vitesse** sur de très gros volumes → [[Mimesis]] (entièrement typé, nettement plus rapide).
+- Reproduire la **distribution statistique** d'un vrai jeu tabulaire (corrélations, lois marginales) → [[SDV]] (synthèse par modèles).
+- Rééquilibrer une classe minoritaire par interpolation → [[imbalanced-learn]] (SMOTE).
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ Faker (importé `faker`, paquet PyPI `Faker`, par joke2k / Daniele Faraglia) gé
 
 ## Alternatives
 
-- [[Dev/Services/Mimesis|Mimesis]] — Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
-- [[Dev/Services/SDV|SDV]] — voisin : autre nature, apprend la distribution d'un vrai jeu tabulaire au lieu de tirer des valeurs par règles.
+- [[Mimesis]] — Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
+- [[SDV]] — voisin : autre nature, apprend la distribution d'un vrai jeu tabulaire au lieu de tirer des valeurs par règles.
 
 ## Liens
 
 - [[Synthetic data generation]] — le concept parent : générer de la donnée quand le réel manque (ici par règles, pas par modèle).
-- [[Dev/Services/Mimesis|Mimesis]] — l'alternative directe, plus rapide.
+- [[Mimesis]] — l'alternative directe, plus rapide.
 - Doc : https://faker.readthedocs.io/

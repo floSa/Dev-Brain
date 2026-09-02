@@ -21,17 +21,17 @@ url_repo: https://github.com/grafana/loki
 
 ## Pourquoi
 
-Système d'**agrégation de logs** open-source de Grafana Labs (**AGPLv3**, écrit en **Go**), « comme Prometheus, mais pour les logs ». Son parti pris : **n'indexer que des labels** (un jeu d'étiquettes par flux de logs), pas le contenu — ce qui réduit fortement le coût de stockage face à un moteur plein-texte. Les logs sont compressés en **chunks** et déposés sur un **object store** (S3, GCS, ou le filesystem en dev). Multi-tenant, **horizontalement scalable** (architecture microservices : distributor, ingester, querier, query-frontend), requêté en **LogQL** (proche de PromQL) et exploré dans [[Dev/Services/Grafana|Grafana]].
+Système d'**agrégation de logs** open-source de Grafana Labs (**AGPLv3**, écrit en **Go**), « comme Prometheus, mais pour les logs ». Son parti pris : **n'indexer que des labels** (un jeu d'étiquettes par flux de logs), pas le contenu — ce qui réduit fortement le coût de stockage face à un moteur plein-texte. Les logs sont compressés en **chunks** et déposés sur un **object store** (S3, GCS, ou le filesystem en dev). Multi-tenant, **horizontalement scalable** (architecture microservices : distributor, ingester, querier, query-frontend), requêté en **LogQL** (proche de PromQL) et exploré dans [[Grafana]].
 
 ## Quand l'utiliser
 
 - Agréger des logs **à coût maîtrisé** grâce à l'indexation par labels + object store.
 - Stack déjà sur **Grafana / Prometheus** : intégration naturelle, LogQL familier.
-- Corréler logs et métriques dans un même tableau de bord [[Dev/Services/Grafana|Grafana]].
+- Corréler logs et métriques dans un même tableau de bord [[Grafana]].
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de **recherche plein-texte** riche ou d'analytics sur le contenu des logs → [[Dev/Services/Elasticsearch|Elasticsearch]] (qui indexe le contenu).
+- Besoin de **recherche plein-texte** riche ou d'analytics sur le contenu des logs → [[Elasticsearch]] (qui indexe le contenu).
 - Logs **non structurés en labels** exploitables : sans labels pertinents, l'avantage de Loki s'effondre et les requêtes deviennent de simples scans.
 
 ## Déploiement & coût
@@ -48,10 +48,10 @@ Système d'**agrégation de logs** open-source de Grafana Labs (**AGPLv3**, écr
 
 ## Alternatives
 
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — voisin : approche concurrente par **indexation du contenu** (recherche plein-texte puissante, mais plus coûteuse) ; relève de `database/search`, pas de cette catégorie.
+- [[Elasticsearch]] — voisin : approche concurrente par **indexation du contenu** (recherche plein-texte puissante, mais plus coûteuse) ; relève de `database/search`, pas de cette catégorie.
 
 ## Liens
 
-- [[Dev/Services/Grafana|Grafana]] — visualisation et exploration des logs Loki (LogQL), même éditeur.
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — alternative par indexation plein-texte.
+- [[Grafana]] — visualisation et exploration des logs Loki (LogQL), même éditeur.
+- [[Elasticsearch]] — alternative par indexation plein-texte.
 - Doc : https://grafana.com/docs/loki/latest/

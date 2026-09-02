@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/scipy.stats|scipy.stats]]", "[[Dev/Services/statsmodels|statsmodels]]"]
+alternatives: ["[[scipy.stats]]", "[[statsmodels]]"]
 complements: []
 tags: [hypothesis-testing, effect-size, statistical-power, non-parametric, parametric-test]
 url_docs: https://pingouin-stats.org/
@@ -29,8 +29,8 @@ Bibliothèque de tests statistiques pensée pour la **lisibilité** : chaque tes
 
 ## Quand NE PAS l'utiliser
 
-- Catalogue exhaustif de lois et de tests, ou dépendance minimale → [[Dev/Services/scipy.stats|scipy.stats]].
-- Modèles de régression / séries temporelles avec diagnostics complets → [[Dev/Services/statsmodels|statsmodels]].
+- Catalogue exhaustif de lois et de tests, ou dépendance minimale → [[scipy.stats]].
+- Modèles de régression / séries temporelles avec diagnostics complets → [[statsmodels]].
 - Contrainte de licence permissive : pingouin est en **GPL-3.0** (copyleft) — à vérifier avant intégration dans un produit fermé.
 
 ## Déploiement & coût
@@ -47,11 +47,11 @@ Bibliothèque de tests statistiques pensée pour la **lisibilité** : chaque tes
 
 ## Alternatives
 
-- [[Dev/Services/scipy.stats|scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
-- [[Dev/Services/statsmodels|statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
+- [[scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
+- [[statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Test t et ANOVA|Test t et ANOVA]], [[Wiki/Concepts/Tests non paramétriques|Tests non paramétriques]], [[Wiki/Concepts/Analyse de puissance|Analyse de puissance]]
+- Concepts implémentés : [[Test t et ANOVA]], [[Tests non paramétriques]], [[Analyse de puissance]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://pingouin-stats.org/

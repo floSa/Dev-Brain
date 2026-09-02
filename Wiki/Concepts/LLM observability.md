@@ -38,7 +38,7 @@ tags: [llm-observability, tracing, llm]
 ## En pratique
 
 - Instrumenter **dès le premier prototype** : rétro-ajouter le tracing est pénible.
-- Choisir une plateforme : [[Dev/Services/Langfuse|Langfuse]] (open-source, OTel), [[Dev/Services/LangSmith|LangSmith]] (écosystème LangChain), [[Dev/Services/Phoenix Arize|Phoenix Arize]] (OTel / OpenInference), [[Dev/Services/Helicone|Helicone]] (proxy / gateway, une ligne).
+- Choisir une plateforme : [[Langfuse]] (open-source, OTel), [[LangSmith]] (écosystème LangChain), [[Phoenix Arize]] (OTel / OpenInference), [[Helicone]] (proxy / gateway, une ligne).
 - Surveiller les **coûts par feature** et les **dérives de qualité**, pas seulement l'uptime.
 - Boucler : les cas qui ratent en prod alimentent le jeu d'[[LLM eval metrics|éval offline]] (le « data flywheel »).
 

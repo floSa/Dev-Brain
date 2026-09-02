@@ -21,7 +21,7 @@ url_repo: https://github.com/osint4all/osint4all.github.io
 
 ## Pourquoi
 
-**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un outil exécutable. C'est un **annuaire de liens** — un unique `README.md` de quelque 3 000 lignes, servi en page GitHub Pages via Jekyll. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre, et cela ne se lit pas comme une brique choisissable. Son `categorie: security/osint` porte le **sujet listé**, pas sa nature. L'autre annuaire du vault suit la même règle — [[Dev/Outils/public-apis|public-apis]].
+**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un outil exécutable. C'est un **annuaire de liens** — un unique `README.md` de quelque 3 000 lignes, servi en page GitHub Pages via Jekyll. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre, et cela ne se lit pas comme une brique choisissable. Son `categorie: security/osint` porte le **sujet listé**, pas sa nature. L'autre annuaire du vault suit la même règle — [[public-apis]].
 
 Cela posé, ce que c'est : le portage GitHub d'une page `start.me` (celle nommée « osint4all » dans la description du dépôt), sous licence CC0-1.0 — domaine public. De l'ordre de **78 rubriques** et **1 400 liens** : contacts jetables, générateurs d'identité, bacs à sable, récupération de hash, services de confidentialité et communication sécurisée, renseignement sur les menaces, résolution d'identité, recherche par personne / pseudonyme / courriel / téléphone, plateforme par plateforme pour les réseaux sociaux, moteurs et *dorking*, images et médias, plaques et véhicules, suivi aérien et maritime, WHOIS et DNS, malware, IoT, radio, immobilier, jeux de données, guides.
 
@@ -59,6 +59,6 @@ Aucune. Un annuaire de liens n'a pas d'équivalent fiché dans le brain, et les 
 
 ## Liens
 
-- [[Dev/Outils/public-apis|public-apis]] — l'autre annuaire du vault, même problème de rangement, même avertissement
-- [[Dev/Services/Web-Check|Web-Check]] — un outil de reconnaissance réel, à opposer à cette page : l'un s'exécute, l'autre se lit
+- [[public-apis]] — l'autre annuaire du vault, même problème de rangement, même avertissement
+- [[Web-Check]] — un outil de reconnaissance réel, à opposer à cette page : l'un s'exécute, l'autre se lit
 - Repo : https://github.com/osint4all/osint4all.github.io

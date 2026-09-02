@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/Haystack|Haystack]]", "[[Dev/Services/DSPy|DSPy]]"]
+alternatives: ["[[LangChain]]", "[[Haystack]]", "[[DSPy]]"]
 complements: []
 tags: [llm, rag, embeddings, agents]
 url_docs: https://developers.llamaindex.ai/python/framework/
@@ -30,14 +30,14 @@ Framework **orienté données** pour connecter des LLM à des sources privées. 
 
 ## Quand NE PAS l'utiliser
 
-- App généraliste où l'orchestration d'**agents et d'outils** prime sur la donnée → [[Dev/Services/LangChain|LangChain]].
-- Pipelines de production à **flux explicite et composable** (entreprise) → [[Dev/Services/Haystack|Haystack]].
-- Recherche d'une **optimisation automatique** des prompts/modules → [[Dev/Services/DSPy|DSPy]].
+- App généraliste où l'orchestration d'**agents et d'outils** prime sur la donnée → [[LangChain]].
+- Pipelines de production à **flux explicite et composable** (entreprise) → [[Haystack]].
+- Recherche d'une **optimisation automatique** des prompts/modules → [[DSPy]].
 
 ## Déploiement & coût
 
 - Open-source (MIT), gratuit ; bibliothèque importée dans l'app, pas d'infra dédiée.
-- Offre **managée payante** de l'éditeur : **LlamaCloud** (parsing via [[Dev/Services/LlamaParse|LlamaParse]], index hébergés) — optionnelle, distincte du framework OSS.
+- Offre **managée payante** de l'éditeur : **LlamaCloud** (parsing via [[LlamaParse]], index hébergés) — optionnelle, distincte du framework OSS.
 - Coût dominé par les appels LLM et l'**embedding** des documents (indexation initiale + requêtes).
 
 ## Pièges
@@ -48,16 +48,16 @@ Framework **orienté données** pour connecter des LLM à des sources privées. 
 
 ## Alternatives
 
-- [[Dev/Services/LangChain|LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
-- [[Dev/Services/Haystack|Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
-- [[Dev/Services/DSPy|DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
+- [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
+- [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
+- [[DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
 ## Liens
 
 - Concept : [[RAG]] — et ses techniques [[Chunking strategies]], [[Hybrid retrieval]], [[Reranking]], [[Advanced RAG]].
-- Vector stores pour l'index : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Chroma|Chroma]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/pgvector|pgvector]].
-- Parsing de documents en amont : [[Dev/Services/LlamaParse|LlamaParse]], [[Dev/Services/Docling|Docling]], [[Dev/Services/Unstructured|Unstructured]].
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs) ; modèles depuis [[Dev/Services/HuggingFace|HuggingFace]].
-- Module text-to-SQL : [[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]] — cf. concept [[Text-to-SQL]].
+- Vector stores pour l'index : [[Qdrant]], [[Chroma]], [[Weaviate]], [[pgvector]].
+- Parsing de documents en amont : [[LlamaParse]], [[Docling]], [[Unstructured]].
+- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs) ; modèles depuis [[HuggingFace]].
+- Module text-to-SQL : [[LlamaIndex NLSQLTableQueryEngine]] — cf. concept [[Text-to-SQL]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://developers.llamaindex.ai/python/framework/

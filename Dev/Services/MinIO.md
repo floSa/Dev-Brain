@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Dev/Services/Ceph|Ceph]]", "[[Dev/Services/SeaweedFS|SeaweedFS]]", "[[Dev/Services/Garage|Garage]]", "[[Dev/Services/AWS S3|AWS S3]]", "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"]
+alternatives: ["[[Ceph]]", "[[SeaweedFS]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
 complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://min.io/docs/minio/linux/index.html
@@ -32,7 +32,7 @@ Serveur de stockage objet **S3-compatible**, écrit en **Go**, pensé pour être
 
 ## Quand NE PAS l'utiliser
 
-- Aucune envie d'opérer l'infra (disques, nœuds, mises à jour) → [[Dev/Services/AWS S3|AWS S3]] ou [[Dev/Services/Cloudflare R2|Cloudflare R2]] (managés).
+- Aucune envie d'opérer l'infra (disques, nœuds, mises à jour) → [[AWS S3]] ou [[Cloudflare R2]] (managés).
 - Besoin de la console web d'administration : depuis 2025, elle est retirée de la Community Edition (réservée à l'offre commerciale AIStor).
 - Pas d'équipe pour gérer la conformité AGPLv3 et le build depuis les sources (voir Pièges).
 
@@ -51,14 +51,14 @@ Serveur de stockage objet **S3-compatible**, écrit en **Go**, pensé pour être
 
 ## Alternatives
 
-- [[Dev/Services/Ceph|Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
-- [[Dev/Services/SeaweedFS|SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
-- [[Dev/Services/Garage|Garage]] — Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
-- [[Dev/Services/AWS S3|AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
-- [[Dev/Services/Cloudflare R2|Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
+- [[Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
+- [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
+- [[Garage]] — Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
+- [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
+- [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
 ## Liens
 
-- [[Dev/Services/AWS S3|AWS S3]] — la référence S3 que MinIO réimplémente en auto-hébergé
-- [[Dev/Services/Cloudflare R2|Cloudflare R2]] — autre alternative S3-compatible, managée
+- [[AWS S3]] — la référence S3 que MinIO réimplémente en auto-hébergé
+- [[Cloudflare R2]] — autre alternative S3-compatible, managée
 - Doc : https://min.io/docs/minio/linux/index.html

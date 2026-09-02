@@ -52,7 +52,7 @@ tags: [classification, supervised]
 - Ne pas rééquilibrer par réflexe. Ajuster le seuil ou les poids de classe suffit souvent, et déforme moins que le sur-échantillonnage ([[Imbalanced classification]]).
 - Stratifier les découpages : sans `stratify`, un fold peut ne contenir aucun positif ([[Validation croisée]]).
 - Si les probabilités servent à décider (tarification, tri, seuil métier), **calibrer** — un [[Random Forest]] ou un [[SVM]] sortent des scores mal calibrés par nature ([[Calibration]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn]] (`LogisticRegression`, `RandomForestClassifier`, `SVC`, `classification_report`), [[Dev/Services/XGBoost|XGBoost]] / [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/imbalanced-learn|imbalanced-learn]] pour le déséquilibre.
+- Outils : [[Scikit-Learn|sklearn]] (`LogisticRegression`, `RandomForestClassifier`, `SVC`, `classification_report`), [[XGBoost]] / [[LightGBM]], [[imbalanced-learn]] pour le déséquilibre.
 
 ## Approches voisines & alternatives
 

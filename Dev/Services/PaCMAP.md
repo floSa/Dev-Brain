@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[Dev/Services/umap-learn|umap-learn]]"]
+alternatives: ["[[umap-learn]]"]
 complements: []
 tags: [dimensionality-reduction, manifold, unsupervised]
 url_docs: https://github.com/YingfanWang/PaCMAP
@@ -30,8 +30,8 @@ Méthode de [[Réduction de dimension]] **non linéaire** (PaCMAP — *Pairwise 
 
 ## Quand NE PAS l'utiliser
 
-- Choix par défaut éprouvé, gros écosystème et nombreuses intégrations → [[Dev/Services/umap-learn|umap-learn]].
-- Réduction **linéaire** interprétable (axes, variance expliquée) → [[PCA]] via [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Choix par défaut éprouvé, gros écosystème et nombreuses intégrations → [[umap-learn]].
+- Réduction **linéaire** interprétable (axes, variance expliquée) → [[PCA]] via [[Scikit-Learn]].
 - Référence visuelle purement locale bien documentée → t-SNE (`sklearn.manifold`).
 
 ## Déploiement & coût
@@ -48,11 +48,11 @@ Méthode de [[Réduction de dimension]] **non linéaire** (PaCMAP — *Pairwise 
 
 ## Alternatives
 
-- [[Dev/Services/umap-learn|umap-learn]] — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
+- [[umap-learn]] — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Réduction de dimension]] — PCA / t-SNE / UMAP / PaCMAP.
+- [[Comparatif - Réduction de dimension]] — PCA / t-SNE / UMAP / PaCMAP.
 - Concept : [[t-SNE and UMAP]] — la branche non linéaire pour la viz ; page chapeau [[Réduction de dimension]] (famille manifold).
-- [[Dev/Services/umap-learn|umap-learn]] — la référence dont PaCMAP est l'alternative orientée structure globale.
+- [[umap-learn]] — la référence dont PaCMAP est l'alternative orientée structure globale.
 - Doc : https://github.com/YingfanWang/PaCMAP

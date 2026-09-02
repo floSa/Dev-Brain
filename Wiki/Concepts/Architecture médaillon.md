@@ -37,7 +37,7 @@ tags: [data-modeling, data-pipeline, lakehouse, data-quality]
 
 ## En pratique
 
-- Cadre par défaut sur un lakehouse ([[Dev/Services/Apache Iceberg|Apache Iceberg]] / Delta Lake) où chaque couche est un jeu de tables transactionnelles posées sur [[Dev/Services/Parquet|Parquet]].
+- Cadre par défaut sur un lakehouse ([[Apache Iceberg]] / Delta Lake) où chaque couche est un jeu de tables transactionnelles posées sur [[Parquet]].
 - Garder Bronze **immuable et exhaustif** : sa valeur est de pouvoir tout re-dériver après un bug de transformation. Ne jamais y appliquer de règle métier.
 - Poser les portes de qualité au passage Bronze → Silver : une charge non conforme est rejetée là, pas propagée en Gold. Cf. [[Contrats de données & qualité]].
 - Partitionner chaque couche selon ses requêtes ([[Partitionnement & layout de données]]) ; soigner la taille de fichiers, surtout en Bronze alimenté par du flux.
@@ -56,5 +56,5 @@ tags: [data-modeling, data-pipeline, lakehouse, data-quality]
 ## Pour aller plus loin
 
 - Implémentations de référence : Databricks (origine du terme « medallion »), équivalents sur Iceberg + dbt.
-- Format de table sous-jacent : [[Dev/Services/Apache Iceberg|Apache Iceberg]] (ACID, time travel) — service Dev.
+- Format de table sous-jacent : [[Apache Iceberg]] (ACID, time travel) — service Dev.
 - Outil de transformation entre couches : dbt (modèles SQL versionnés) — non encore fiché.

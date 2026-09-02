@@ -43,7 +43,7 @@ tags: [model-evaluation, regression, supervised]
 - R² pour communiquer (sans dimension), jamais seul : l'accompagner d'une erreur dans l'unité métier.
 - Toujours sur données de test / plis de [[Validation croisée]] ; un R² d'entraînement élevé peut cacher un surapprentissage ([[Compromis biais-variance]]).
 - Inspecter les **résidus** (graphe résidus vs prédits) au-delà du scalaire agrégé : hétéroscédasticité, structure résiduelle, points influents.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — mean_squared_error, mean_absolute_error, r2_score]].
+- Outils : [[Scikit-Learn|sklearn.metrics — mean_squared_error, mean_absolute_error, r2_score]].
 
 ## Approches voisines & alternatives
 

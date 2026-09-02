@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/curl_cffi|curl_cffi]]", "[[Dev/Services/Playwright|Playwright]]"]
+alternatives: ["[[curl_cffi]]", "[[Playwright]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://github.com/VeNoMouS/cloudscraper
@@ -28,7 +28,7 @@ Module Python qui **contourne la page anti-bot de Cloudflare** (mode « I'm Unde
 
 ## Quand NE PAS l'utiliser
 
-- Défenses **modernes** (Turnstile, *managed challenge*, filtrage sur l'empreinte TLS) : l'approche par défis JS est souvent dépassée → [[Dev/Services/curl_cffi|curl_cffi]] (empreinte TLS) ou un vrai navigateur [[Dev/Services/Playwright|Playwright]].
+- Défenses **modernes** (Turnstile, *managed challenge*, filtrage sur l'empreinte TLS) : l'approche par défis JS est souvent dépassée → [[curl_cffi]] (empreinte TLS) ou un vrai navigateur [[Playwright]].
 - Blocage **non-Cloudflare** → cloudscraper ne vise que les défenses Cloudflare.
 - Gros volume où la latence de résolution des défis JS pèse → repenser l'approche.
 
@@ -45,11 +45,11 @@ Module Python qui **contourne la page anti-bot de Cloudflare** (mode « I'm Unde
 
 ## Alternatives
 
-- [[Dev/Services/curl_cffi|curl_cffi]] — Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
-- [[Dev/Services/Playwright|Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
+- [[curl_cffi]] — Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
+- [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
 ## Liens
 
 - [[Web scraping]] — section anti-bot.
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[Comparatif - Scraping]]
 - Doc : https://github.com/VeNoMouS/cloudscraper

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/Metaflow|Metaflow]]", "[[Dev/Services/Flyte|Flyte]]"]
+alternatives: ["[[Metaflow]]", "[[Flyte]]"]
 complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.zenml.io/
@@ -32,9 +32,9 @@ ZenML est un framework MLOps Python qui sépare la **logique du pipeline** de l'
 
 ## Quand NE PAS l'utiliser
 
-- Stack déjà tout-AWS, scaling natif voulu sans couche d'abstraction → [[Dev/Services/Metaflow|Metaflow]].
-- Orchestration Kubernetes-native à grande échelle, typage fort et isolation des ressources → [[Dev/Services/Flyte|Flyte]].
-- Simple ordonnancement de DAGs data sans dimension ML → [[Dev/Services/Airflow|Airflow]] / [[Dev/Services/Dagster|Dagster]].
+- Stack déjà tout-AWS, scaling natif voulu sans couche d'abstraction → [[Metaflow]].
+- Orchestration Kubernetes-native à grande échelle, typage fort et isolation des ressources → [[Flyte]].
+- Simple ordonnancement de DAGs data sans dimension ML → [[Airflow]] / [[Dagster]].
 
 ## Déploiement & coût
 
@@ -50,11 +50,11 @@ ZenML est un framework MLOps Python qui sépare la **logique du pipeline** de l'
 
 ## Alternatives
 
-- [[Dev/Services/Metaflow|Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
-- [[Dev/Services/Flyte|Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
+- [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
+- [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
 
 ## Liens
 
 - [[Comparatif - Orchestrateurs ML]] — comparatif de la catégorie
-- Orchestre des outils existants : [[Dev/Services/MLflow|MLflow]], [[Dev/Services/BentoML|BentoML]], [[Dev/Services/KServe|KServe]].
+- Orchestre des outils existants : [[MLflow]], [[BentoML]], [[KServe]].
 - Doc : https://docs.zenml.io/

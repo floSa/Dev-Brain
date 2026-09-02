@@ -37,7 +37,7 @@ Ce qui existe aujourd'hui : un éditeur de montage dans le navigateur, sous lice
 - VFX, étalonnage, audio avancé, multipiste complexe : hors cible, le jeu d'outils est minimal par choix.
 - Chaîne de production qui dépend d'une fonctionnalité de la feuille de route : rien de ce qui est annoncé n'est livré.
 - Rendu automatisé aujourd'hui : pour du batch scriptable, `ffmpeg` reste la réponse.
-- Génération de vidéo par modèle : sujet différent, cf. [[Wiki/Concepts/Video generation|Video generation]].
+- Génération de vidéo par modèle : sujet différent, cf. [[Video generation]].
 
 ## Installation & plateformes
 
@@ -61,9 +61,9 @@ Ce qui existe aujourd'hui : un éditeur de montage dans le navigateur, sous lice
 
 ## Liens
 
-- [[Dev/Outils/SmartTube|SmartTube]] — l'autre page `tooling/video` du brain ; nature différente (lecture, pas montage), même inconfort de rangement
-- [[Dev/Outils/Claude Video|Claude Video]] — le cas inverse et déjà fonctionnel : une vidéo donnée en entrée à un agent
-- [[Wiki/Concepts/mcp-protocol|mcp-protocol]] — le protocole que le serveur MCP annoncé exposerait
-- [[Wiki/Concepts/Video generation|Video generation]] — synthèse de vidéo par modèle : sujet distinct du montage
+- [[SmartTube]] — l'autre page `tooling/video` du brain ; nature différente (lecture, pas montage), même inconfort de rangement
+- [[Claude Video]] — le cas inverse et déjà fonctionnel : une vidéo donnée en entrée à un agent
+- [[mcp-protocol]] — le protocole que le serveur MCP annoncé exposerait
+- [[Video generation]] — synthèse de vidéo par modèle : sujet distinct du montage
 - Repo : https://github.com/OpenCut-app/OpenCut
 - Site : https://opencut.app

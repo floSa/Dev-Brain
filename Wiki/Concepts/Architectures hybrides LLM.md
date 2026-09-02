@@ -50,7 +50,7 @@ tags: [attention, state-space-model, transformers, inference-optimization]
 
 - Pour choisir un modèle : un hybride est le bon défaut dès que le **contexte dépasse ~32k** et que la charge est du décodage long (agents, résumé de gros documents, sessions longues). En dessous, un dense ou un MoE classique reste plus simple et aussi rapide.
 - **Vérifier le rappel avant de bâtir un RAG dessus** : l'hybride est conçu pour préserver le rappel, mais avec un budget réduit. Tester needle-in-a-haystack et rappel multi-hop **sur son propre corpus**, pas se fier au score annoncé.
-- Côté serving, le support n'est pas uniforme : [[Dev/Services/vLLM|vLLM]] et [[Dev/Services/SGLang|SGLang]] gèrent les principales familles hybrides, mais chaque nouvelle variante de couche linéaire demande son noyau. Vérifier la version du runtime avant de promettre un débit.
+- Côté serving, le support n'est pas uniforme : [[vLLM]] et [[SGLang]] gèrent les principales familles hybrides, mais chaque nouvelle variante de couche linéaire demande son noyau. Vérifier la version du runtime avant de promettre un débit.
 - Le mélange complique la **gestion du cache** : deux types d'état à conserver (KV-cache classique + état récurrent). Le *prefix caching* et la reprise de session ne se comportent pas comme sur un Transformer pur.
 
 ## Approches voisines & alternatives

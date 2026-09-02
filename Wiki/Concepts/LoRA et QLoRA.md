@@ -37,7 +37,7 @@ tags: [fine-tuning, llm]
 - **Leviers** : le rang `r` (8–64 typiquement), `alpha` (souvent $2r$), `target_modules` (commencer par les projections d'attention, étendre aux MLP si la qualité manque), `dropout` sur l'adaptateur.
 - **Rang trop bas = sous-capacité** : le modèle n'apprend pas la tâche ; monter `r` avant de conclure que LoRA ne suffit pas.
 - **Quand préférer le full fine-tuning** : qualité qui plafonne malgré un rang élevé, changement de domaine profond, budget GPU non contraint. Sinon LoRA (ou QLoRA si la mémoire est serrée) est le défaut raisonnable.
-- Outils : la lib **`peft`** de [[Dev/Services/HuggingFace|HuggingFace]] (+ `bitsandbytes` pour la 4-bit), exploitée par [[Dev/Services/Unsloth|Unsloth]], [[Dev/Services/Axolotl|Axolotl]], [[Dev/Services/LLaMA-Factory|LLaMA-Factory]] et [[Dev/Services/TRL|TRL]].
+- Outils : la lib **`peft`** de [[HuggingFace]] (+ `bitsandbytes` pour la 4-bit), exploitée par [[Unsloth]], [[Axolotl]], [[LLaMA-Factory]] et [[TRL]].
 
 ## Approches voisines & alternatives
 

@@ -38,7 +38,7 @@ tags: [segmentation, computer-vision, transformers, deep-learning]
 
 - Usage type : **annotation assistée** (pré-segmenter pour accélérer le labelling), masques zero-shot, brique d'un pipeline plus large.
 - Pas toujours le bon choix : pour une classe fixe et une latence serrée, un [[Segmentation|U-Net / DeepLab]] dédié reste plus léger et plus précis sur son domaine.
-- Écosystème : code et poids officiels [[Dev/Services/segment-anything|segment-anything]] ; poids et démos [[Dev/Services/HuggingFace|HuggingFace]] / [[Dev/Services/PyTorch|PyTorch]] ; variantes rapides (MobileSAM, FastSAM).
+- Écosystème : code et poids officiels [[segment-anything]] ; poids et démos [[HuggingFace]] / [[PyTorch]] ; variantes rapides (MobileSAM, FastSAM).
 
 ## Approches voisines & alternatives
 

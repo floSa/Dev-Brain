@@ -57,7 +57,7 @@ tags: [mixture-of-experts, transformers, deep-learning, scaling-laws]
 ## En pratique
 
 - Un MoE brille quand le **budget mémoire** suit mais le **budget calcul** (entraînement/inférence) est contraint — sinon un modèle dense équivalent est plus simple à servir.
-- À l'inférence, le routage rend le **batching** moins prévisible (tokens d'un même lot vers des experts différents) : compter sur un runtime qui gère ([[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]]), avec expert parallelism si le modèle ne tient pas sur un GPU.
+- À l'inférence, le routage rend le **batching** moins prévisible (tokens d'un même lot vers des experts différents) : compter sur un runtime qui gère ([[vLLM]], [[SGLang]]), avec expert parallelism si le modèle ne tient pas sur un GPU.
 - Lire une fiche de modèle : deux chiffres suffisent (**total / actif**). Le total dicte la VRAM et donc la facture d'hébergement ; l'actif dicte la vitesse. Un « 1000 Md » à 32 Md actifs n'est pas un petit modèle, c'est un gros modèle rapide.
 - Les [[Small Language Models|petits modèles]] denses restent souvent préférables sur l'edge : un MoE économise du calcul, pas de la mémoire.
 - Le [[Quantization|quantization]] est le complément naturel : il attaque précisément le poste que le MoE ne réduit pas.

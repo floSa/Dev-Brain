@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/Airflow|Airflow]]", "[[Dev/Services/Prefect|Prefect]]", "[[Dev/Services/Mage|Mage]]", "[[Dev/Services/Kestra|Kestra]]", "[[Dev/Services/Temporal|Temporal]]"]
+alternatives: ["[[Airflow]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
 complements: []
 tags: [orchestration, data-pipeline]
 url_docs: https://docs.dagster.io/
@@ -32,10 +32,10 @@ Dagster est un orchestrateur **orienté assets**. Plutôt que d'ordonnancer des 
 
 ## Quand NE PAS l'utiliser
 
-- Existant massif en DAGs de tâches ou besoin du plus large catalogue de connecteurs → [[Dev/Services/Airflow|Airflow]].
-- Approche purement impérative par fonctions Python → [[Dev/Services/Prefect|Prefect]].
-- Déclaratif YAML, indépendant du langage → [[Dev/Services/Kestra|Kestra]].
-- ELT visuel low-code → [[Dev/Services/Mage|Mage]].
+- Existant massif en DAGs de tâches ou besoin du plus large catalogue de connecteurs → [[Airflow]].
+- Approche purement impérative par fonctions Python → [[Prefect]].
+- Déclaratif YAML, indépendant du langage → [[Kestra]].
+- ELT visuel low-code → [[Mage]].
 
 ## Déploiement & coût
 
@@ -50,11 +50,11 @@ Dagster est un orchestrateur **orienté assets**. Plutôt que d'ordonnancer des 
 
 ## Alternatives
 
-- [[Dev/Services/Airflow|Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
-- [[Dev/Services/Prefect|Prefect]] — Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.
-- [[Dev/Services/Mage|Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
-- [[Dev/Services/Kestra|Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
-- [[Dev/Services/Temporal|Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
+- [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
+- [[Prefect]] — Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.
+- [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
+- [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
+- [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
 
 ## Liens
 

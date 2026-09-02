@@ -19,7 +19,7 @@ url_repo: https://github.com/roboflow/supervision
 
 ## Pourquoi
 
-Bibliothèque **model-agnostic** de Roboflow qui fournit l'**outillage autour** des modèles de vision, pas les modèles eux-mêmes. Pivot : une API **`Detections`** unifiée avec des connecteurs pour les sorties de [[Dev/Services/Ultralytics YOLO|Ultralytics]], [[Dev/Services/Detectron2|Detectron2]], [[Dev/Services/segment-anything|SAM]], [[Dev/Services/HuggingFace|Transformers]], Roboflow Inference… Au-dessus : **annotateurs** (boîtes, masques, labels, traces), **suivi** ([[Suivi d'objets|ByteTrack]]), **zones** (polygones, lignes) pour le comptage et le franchissement, conversion de **datasets** (COCO/YOLO/Pascal VOC) et métriques (mAP, matrice de confusion). C'est la **colle** entre un détecteur et une application livrable.
+Bibliothèque **model-agnostic** de Roboflow qui fournit l'**outillage autour** des modèles de vision, pas les modèles eux-mêmes. Pivot : une API **`Detections`** unifiée avec des connecteurs pour les sorties de [[Ultralytics YOLO|Ultralytics]], [[Detectron2]], [[segment-anything|SAM]], [[HuggingFace|Transformers]], Roboflow Inference… Au-dessus : **annotateurs** (boîtes, masques, labels, traces), **suivi** ([[Suivi d'objets|ByteTrack]]), **zones** (polygones, lignes) pour le comptage et le franchissement, conversion de **datasets** (COCO/YOLO/Pascal VOC) et métriques (mAP, matrice de confusion). C'est la **colle** entre un détecteur et une application livrable.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Bibliothèque **model-agnostic** de Roboflow qui fournit l'**outillage autour** 
 
 ## Quand NE PAS l'utiliser
 
-- Besoin du **modèle** de détection/segmentation lui-même → [[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]], [[Dev/Services/Detectron2|Detectron2]], [[Dev/Services/segment-anything|segment-anything]].
-- Vision **classique** bas niveau (filtres, calibration, features) → [[Dev/Services/OpenCV|OpenCV]].
-- Augmentation d'images pour l'entraînement → [[Dev/Services/albumentations|albumentations]].
+- Besoin du **modèle** de détection/segmentation lui-même → [[Ultralytics YOLO]], [[Detectron2]], [[segment-anything]].
+- Vision **classique** bas niveau (filtres, calibration, features) → [[OpenCV]].
+- Augmentation d'images pour l'entraînement → [[albumentations]].
 
 ## Déploiement & coût
 
@@ -49,7 +49,7 @@ Bibliothèque **model-agnostic** de Roboflow qui fournit l'**outillage autour** 
 ## Liens
 
 - [[Détection d'objets]] / [[Segmentation]] / [[Suivi d'objets]] — les tâches dont supervision exploite les sorties.
-- [[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]] / [[Dev/Services/Detectron2|Detectron2]] / [[Dev/Services/segment-anything|segment-anything]] — les modèles en amont.
-- [[Dev/Services/OpenCV|OpenCV]] — la couche bas niveau sur laquelle supervision s'appuie pour le rendu.
+- [[Ultralytics YOLO]] / [[Detectron2]] / [[segment-anything]] — les modèles en amont.
+- [[OpenCV]] — la couche bas niveau sur laquelle supervision s'appuie pour le rendu.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
 - Doc : https://supervision.roboflow.com/

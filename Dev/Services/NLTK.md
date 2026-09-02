@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/spaCy|spaCy]]"]
+alternatives: ["[[spaCy]]"]
 complements: []
 tags: [nlp, tokenization, text-classification]
 url_docs: https://www.nltk.org/
@@ -30,8 +30,8 @@ La bibliothèque historique de **NLP classique** en Python (depuis 2001), pensé
 
 ## Quand NE PAS l'utiliser
 
-- NLP **industriel** rapide et multilingue (pipelines pré-entraînés, [[NER et étiquetage de séquence|NER]], dépendances) → [[Dev/Services/spaCy|spaCy]].
-- État de l'art par transformeurs (fine-tuning, embeddings contextuels) → [[Dev/Services/HuggingFace|HuggingFace]].
+- NLP **industriel** rapide et multilingue (pipelines pré-entraînés, [[NER et étiquetage de séquence|NER]], dépendances) → [[spaCy]].
+- État de l'art par transformeurs (fine-tuning, embeddings contextuels) → [[HuggingFace]].
 - Pipeline de production sous contrainte de latence : l'API objet par objet de NLTK n'est pas optimisée pour le débit.
 
 ## Déploiement & coût
@@ -48,12 +48,12 @@ La bibliothèque historique de **NLP classique** en Python (depuis 2001), pensé
 
 ## Alternatives
 
-- [[Dev/Services/spaCy|spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
+- [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
 
 ## Liens
 
 - [[Traitement du langage naturel]] — page chapeau ; NLTK en est la référence classique/pédagogique.
 - [[Tokenization]] · [[Classification de texte]] — tâches couvertes.
-- [[Dev/Services/spaCy|spaCy]] — la suite industrielle quand on passe du cours à la production.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[spaCy]] — la suite industrielle quand on passe du cours à la production.
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Doc : https://www.nltk.org/

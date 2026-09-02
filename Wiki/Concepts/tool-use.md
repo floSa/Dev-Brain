@@ -39,9 +39,9 @@ tags: [tool-use, structured-output, llm]
 ## En pratique
 
 - Déclarer **peu d'outils, aux frontières nettes**, avec des paramètres stricts (types, enums) plutôt qu'une description floue.
-- **Valider les arguments** avant exécution et borner les retries ; réinjecter l'erreur pour auto-correction — [[Dev/Services/Instructor|Instructor]], [[Dev/Services/PydanticAI|PydanticAI]] pour le typage + validation.
+- **Valider les arguments** avant exécution et borner les retries ; réinjecter l'erreur pour auto-correction — [[Instructor]], [[PydanticAI]] pour le typage + validation.
 - Standardiser l'exposition des outils via [[mcp-protocol]] plutôt que recâbler chaque intégration à la main.
-- Outillage de la boucle : [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LangGraph|LangGraph]] ; passerelle multi-fournisseurs au format unifié : [[Dev/Services/LiteLLM|LiteLLM]].
+- Outillage de la boucle : [[LangChain]], [[LangGraph]] ; passerelle multi-fournisseurs au format unifié : [[LiteLLM]].
 - Piège : un outil à **effet de bord** (écriture, paiement) sans garde-fou transforme une hallucination en action réelle — cf. [[Reliability patterns]] et [[Tool use patterns]].
 
 ## Approches voisines & alternatives

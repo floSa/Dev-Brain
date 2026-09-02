@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
+alternatives: ["[[Docling]]", "[[LlamaParse]]", "[[Marker]]", "[[OpenDataLoader PDF]]"]
 complements: []
 tags: [document-parsing, rag, ocr]
 url_docs: https://docs.unstructured.io/
@@ -30,9 +30,9 @@ Unstructured est une boîte à outils **ETL open-source (Apache-2.0)** pour tran
 
 ## Quand NE PAS l'utiliser
 
-- Un seul PDF et juste le texte brut, le plus vite possible → [[Dev/Services/PyMuPDF|PyMuPDF]] / [[Dev/Services/pdfplumber|pdfplumber]].
-- Conversion fidèle d'un PDF complexe en Markdown (mise en page, formules) → [[Dev/Services/Marker|Marker]] / [[Dev/Services/Docling|Docling]].
-- Refus de gérer l'infra (modèles, OCR, binaires) → service managé [[Dev/Services/LlamaParse|LlamaParse]].
+- Un seul PDF et juste le texte brut, le plus vite possible → [[PyMuPDF]] / [[pdfplumber]].
+- Conversion fidèle d'un PDF complexe en Markdown (mise en page, formules) → [[Marker]] / [[Docling]].
+- Refus de gérer l'infra (modèles, OCR, binaires) → service managé [[LlamaParse]].
 
 ## Déploiement & coût
 
@@ -49,13 +49,13 @@ Unstructured est une boîte à outils **ETL open-source (Apache-2.0)** pour tran
 
 ## Alternatives
 
-- [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
-- [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
-- [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
-- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
+- [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
+- [[LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
+- [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 
 - [[Comparatif - Parsing de documents]] — comparatif de la catégorie.
-- Étage bas niveau complémentaire : [[Dev/Services/PyMuPDF|PyMuPDF]] / [[Dev/Services/pdfplumber|pdfplumber]] pour l'extraction brute.
+- Étage bas niveau complémentaire : [[PyMuPDF]] / [[pdfplumber]] pour l'extraction brute.
 - Doc : https://docs.unstructured.io/

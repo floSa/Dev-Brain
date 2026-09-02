@@ -8,7 +8,7 @@ famille: paquet
 licence_type: source-available
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/LlamaParse|LlamaParse]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
+alternatives: ["[[Unstructured]]", "[[Docling]]", "[[LlamaParse]]", "[[pdf-inspector]]", "[[OpenDataLoader PDF]]"]
 complements: []
 tags: [document-parsing, pdf, ocr, markdown-conversion, rag]
 url_docs: https://github.com/datalab-to/marker
@@ -30,9 +30,9 @@ Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormai
 
 ## Quand NE PAS l'utiliser
 
-- Usage commercial au-dessus du seuil de 2 M$ sans payer la licence → [[Dev/Services/Docling|Docling]] (MIT) / [[Dev/Services/Unstructured|Unstructured]] (Apache-2.0).
-- Pas de GPU disponible → outils CPU ([[Dev/Services/pdfplumber|pdfplumber]], [[Dev/Services/Docling|Docling]]) ou service managé [[Dev/Services/LlamaParse|LlamaParse]].
-- Simple extraction de texte brut, sans modèles → [[Dev/Services/PyMuPDF|PyMuPDF]].
+- Usage commercial au-dessus du seuil de 2 M$ sans payer la licence → [[Docling]] (MIT) / [[Unstructured]] (Apache-2.0).
+- Pas de GPU disponible → outils CPU ([[pdfplumber]], [[Docling]]) ou service managé [[LlamaParse]].
+- Simple extraction de texte brut, sans modèles → [[PyMuPDF]].
 
 ## Déploiement & coût
 
@@ -49,11 +49,11 @@ Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormai
 
 ## Alternatives
 
-- [[Dev/Services/Unstructured|Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
-- [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
-- [[Dev/Services/LlamaParse|LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
-- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
-- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
+- [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
+- [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
+- [[LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
+- [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 

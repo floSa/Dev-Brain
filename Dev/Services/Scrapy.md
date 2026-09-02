@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Crawlee|Crawlee]]", "[[Dev/Services/Scrapling|Scrapling]]"]
+alternatives: ["[[Crawlee]]", "[[Scrapling]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://docs.scrapy.org/
@@ -29,9 +29,9 @@ Framework Python complet et **mature** (plus de 15 ans, maintenu par Zyte) pour 
 
 ## Quand NE PAS l'utiliser
 
-- Pages **rendues en JavaScript** : Scrapy ne rend pas le JS seul → coupler à [[Dev/Services/Playwright|Playwright]] (scrapy-playwright) ou choisir [[Dev/Services/Crawlee|Crawlee]].
+- Pages **rendues en JavaScript** : Scrapy ne rend pas le JS seul → coupler à [[Playwright]] (scrapy-playwright) ou choisir [[Crawlee]].
 - Petit besoin ponctuel (une poignée de pages) : le framework est surdimensionné — un client HTTP + parseur suffit.
-- Sélecteurs qui doivent survivre aux changements de structure → [[Dev/Services/Scrapling|Scrapling]].
+- Sélecteurs qui doivent survivre aux changements de structure → [[Scrapling]].
 
 ## Déploiement & coût
 
@@ -47,12 +47,12 @@ Framework Python complet et **mature** (plus de 15 ans, maintenu par Zyte) pour 
 
 ## Alternatives
 
-- [[Dev/Services/Crawlee|Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
-- [[Dev/Services/Scrapling|Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
+- [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
+- [[Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 
 ## Liens
 
 - [[Web scraping]] — le concept (crawl à l'échelle, throttling, politesse).
-- [[Dev/Services/selectolax|selectolax]] — parseur HTML rapide utilisable dans les callbacks.
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[selectolax]] — parseur HTML rapide utilisable dans les callbacks.
+- [[Comparatif - Scraping]]
 - Doc : https://docs.scrapy.org/

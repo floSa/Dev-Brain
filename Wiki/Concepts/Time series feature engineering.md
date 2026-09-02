@@ -39,7 +39,7 @@ tags: [forecasting, timeseries, feature-engineering]
 ## En pratique
 
 - Pièges de fuite : fenêtres fermées au passé, scaler/encodage **ajustés sur le train seulement**, pas de feature au temps $t+h$ indisponible à la prévision.
-- Modèle **global** (un seul modèle sur toutes les séries via ces features) pour passer à l'échelle — [[Dev/Services/neuralforecast|neuralforecast]] côté réseaux. `tsfresh` extrait des centaines de features automatiquement (à filtrer).
+- Modèle **global** (un seul modèle sur toutes les séries via ces features) pour passer à l'échelle — [[neuralforecast]] côté réseaux. `tsfresh` extrait des centaines de features automatiquement (à filtrer).
 - Valider en [[Walk-forward CV]] : une feature qui « améliore » en in-sample peut fuiter.
 
 ## Approches voisines & alternatives

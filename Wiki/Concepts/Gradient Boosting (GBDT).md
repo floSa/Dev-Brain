@@ -59,7 +59,7 @@ Ils se rangent en trois groupes. Confondre les groupes est la cause la plus fré
 | `reg_lambda` (L2) / `reg_alpha` (L1) | Pénalité sur les valeurs de feuilles | ↑ = prédictions plus prudentes ([[Régularisation]]) |
 | `early_stopping_rounds` | Arrête si la validation ne progresse plus | **Le plus rentable de tous.** À activer par défaut |
 
-**Le même paramètre change de nom selon la bibliothèque** — la source d'erreur la plus banale. Correspondance entre [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]] et [[Dev/Services/CatBoost|CatBoost]] :
+**Le même paramètre change de nom selon la bibliothèque** — la source d'erreur la plus banale. Correspondance entre [[XGBoost]], [[LightGBM]] et [[CatBoost]] :
 
 | Rôle | XGBoost | LightGBM | CatBoost |
 |---|---|---|---|
@@ -80,8 +80,8 @@ Ils se rangent en trois groupes. Confondre les groupes est la cause la plus fré
 - **L'ordre de réglage qui marche** : activer l'early stopping et fixer `learning_rate` bas → régler la complexité de l'arbre (`max_depth` / `num_leaves`) → ajouter du sous-échantillonnage (`subsample`, `colsample_bytree`) → finir par les pénalités. Chercher les quatre groupes d'un coup en grille est un gâchis de calcul ([[Optimisation d'hyperparamètres]]).
 - **`max_depth` ne se règle pas comme en [[Random Forest]]** : ici les arbres doivent rester *faibles* (3 à 8), là-bas on les laisse profonds. Reprendre les réflexes de l'un chez l'autre donne un modèle médiocre.
 - Séquentiel → moins parallélisable que Random Forest ; sensible au surapprentissage si trop d'arbres sans shrinkage.
-- Les implémentations modernes — [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/CatBoost|CatBoost]] — ajoutent gestion native des NA, binning d'histogrammes, régularisation et parallélisme : ce sont elles que l'on utilise en pratique.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble.HistGradientBoostingClassifier / HistGradientBoostingRegressor]] (variante histogramme rapide, intégrée à sklearn).
+- Les implémentations modernes — [[XGBoost]], [[LightGBM]], [[CatBoost]] — ajoutent gestion native des NA, binning d'histogrammes, régularisation et parallélisme : ce sont elles que l'on utilise en pratique.
+- Outils : [[Scikit-Learn|sklearn.ensemble.HistGradientBoostingClassifier / HistGradientBoostingRegressor]] (variante histogramme rapide, intégrée à sklearn).
 
 ## Approches voisines & alternatives
 

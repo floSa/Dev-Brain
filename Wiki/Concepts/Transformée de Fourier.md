@@ -37,7 +37,7 @@ tags: [signal-processing, fourier]
 
 ## En pratique
 
-- `numpy.fft` / `scipy.fft` pour la FFT ; [[Dev/Services/scipy.signal|scipy.signal]] pour l'estimation spectrale (`periodogram`, `welch`). `rfft` pour un signal réel (deux fois moins de calcul, spectre non redondant).
+- `numpy.fft` / `scipy.fft` pour la FFT ; [[scipy.signal]] pour l'estimation spectrale (`periodogram`, `welch`). `rfft` pour un signal réel (deux fois moins de calcul, spectre non redondant).
 - **Fenêtrer avant la FFT** : sans fenêtre, la troncature du signal crée de la **fuite spectrale** (l'énergie d'une raie bave sur les voisines) — cf. fenêtrage dans [[Filtrage numérique]].
 - Résolution fréquentielle $\Delta f = f_s/N$ : pour distinguer deux raies proches, allonger la durée observée.
 

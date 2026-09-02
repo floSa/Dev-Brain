@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]", "[[Dev/Services/Gradio|Gradio]]"]
+alternatives: ["[[Streamlit]]", "[[Shiny for Python]]", "[[Gradio]]"]
 complements: []
 tags: [data-app, dashboard, web-framework]
 url_docs: https://dash.plotly.com
@@ -25,13 +25,13 @@ Framework de **dashboards et apps analytiques** édité par **Plotly**. On décl
 
 - Dashboard analytique riche : pages multiples, filtres croisés, interactions fines entre composants.
 - App data destinée à durer, avec une vraie séparation layout / logique (callbacks).
-- Visualisation interactive poussée (on est dans l'écosystème [[Dev/Services/plotly|plotly]]).
+- Visualisation interactive poussée (on est dans l'écosystème [[plotly]]).
 
 ## Quand NE PAS l'utiliser
 
-- Prototype rapide / script analytique à exposer vite → [[Dev/Services/Streamlit|Streamlit]] (moins de code).
-- Préférence pour un modèle réactif fin sans écrire de callbacks explicites → [[Dev/Services/Shiny for Python|Shiny for Python]].
-- Simple démo entrée→sortie d'un modèle ML → [[Dev/Services/Gradio|Gradio]].
+- Prototype rapide / script analytique à exposer vite → [[Streamlit]] (moins de code).
+- Préférence pour un modèle réactif fin sans écrire de callbacks explicites → [[Shiny for Python]].
+- Simple démo entrée→sortie d'un modèle ML → [[Gradio]].
 
 ## Déploiement & coût
 
@@ -47,13 +47,13 @@ Framework de **dashboards et apps analytiques** édité par **Plotly**. On décl
 
 ## Alternatives
 
-- [[Dev/Services/Streamlit|Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
-- [[Dev/Services/Shiny for Python|Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
-- [[Dev/Services/Gradio|Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
+- [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
+- [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
+- [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Apps data & démos ML]] — Dash vs Streamlit / Shiny / Gradio.
-- [[Dev/Patterns/Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Gradio.
-- [[Dev/Services/plotly|plotly]] — moteur de rendu des graphes Dash (même éditeur).
+- [[Comparatif - Apps data & démos ML]] — Dash vs Streamlit / Shiny / Gradio.
+- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Gradio.
+- [[plotly]] — moteur de rendu des graphes Dash (même éditeur).
 - Doc : https://dash.plotly.com

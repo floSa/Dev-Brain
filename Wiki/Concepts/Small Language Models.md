@@ -37,7 +37,7 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 
 ## En pratique
 
-- Exécuter en local : [[Dev/Services/Ollama|Ollama]] (le plus simple), [[Dev/Services/llama.cpp|llama.cpp]] (CPU / GPU grand public, GGUF), [[Dev/Services/vLLM|vLLM]] (serving à débit si plusieurs requêtes).
+- Exécuter en local : [[Ollama]] (le plus simple), [[llama.cpp]] (CPU / GPU grand public, GGUF), [[vLLM]] (serving à débit si plusieurs requêtes).
 - Spécialiser par **fine-tuning léger** ([[PEFT]]) plutôt que d'attendre la polyvalence d'un grand modèle.
 - Construire un **petit jeu d'éval** sur la tâche cible : un SLM bien choisi peut égaler un grand modèle sur un périmètre étroit, pas en général.
 - Combiner avec un routage : SLM par défaut, escalade vers un grand modèle sur les cas durs (*routing and cascading*, à créer).
@@ -49,9 +49,9 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 - [[Distillation]] — fabrique un petit modèle à partir d'un grand.
 - [[Quantization]] — réduit encore l'empreinte pour l'edge.
 - [[Reasoning models]] — pari inverse : dépenser plus à l'inférence plutôt que viser le compact.
-- Runtimes locaux : [[Dev/Services/Ollama|Ollama]], [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/LM Studio|LM Studio]].
-- Modèle spécialisé pour l'edge : [[Dev/Services/needle|needle]] — 45 M paramètres en 2 bits, dédié à l'appel d'outils et à l'extraction structurée.
-- Choix du modèle selon la machine : [[Dev/Outils/llmfit|llmfit]] — classe les modèles par tenue en mémoire, vitesse estimée, qualité et contexte, sur le matériel réellement disponible.
+- Runtimes locaux : [[Ollama]], [[llama.cpp]], [[LM Studio]].
+- Modèle spécialisé pour l'edge : [[needle]] — 45 M paramètres en 2 bits, dédié à l'appel d'outils et à l'extraction structurée.
+- Choix du modèle selon la machine : [[llmfit]] — classe les modèles par tenue en mémoire, vitesse estimée, qualité et contexte, sur le matériel réellement disponible.
 
 ## Pour aller plus loin
 

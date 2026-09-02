@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
+alternatives: ["[[Qdrant]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
 complements: []
 tags: [vector-db, rag, hybrid-search]
 url_docs: https://weaviate.io/developers/weaviate
@@ -32,9 +32,9 @@ Base vectorielle open-source en Go, pensée pour la production. Modules de vecto
 
 ## Quand NE PAS l'utiliser
 
-- Tout contrôler côté application (embedding maison, schéma minimal) → [[Dev/Services/Qdrant|Qdrant]].
-- Du Postgres déjà en place et volume modéré → [[Dev/Services/pgvector|pgvector]].
-- POC jetable de quelques milliers de vecteurs → un index [[Dev/Services/Faiss|Faiss]] en mémoire suffit.
+- Tout contrôler côté application (embedding maison, schéma minimal) → [[Qdrant]].
+- Du Postgres déjà en place et volume modéré → [[pgvector]].
+- POC jetable de quelques milliers de vecteurs → un index [[Faiss]] en mémoire suffit.
 
 ## Déploiement & coût
 
@@ -49,10 +49,10 @@ Base vectorielle open-source en Go, pensée pour la production. Modules de vecto
 
 ## Alternatives
 
-- [[Dev/Services/Qdrant|Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
-- [[Dev/Services/pgvector|pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
-- [[Dev/Services/Milvus|Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
-- [[Dev/Services/Pinecone|Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+- [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
+- [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
+- [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
+- [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
 ## Liens
 

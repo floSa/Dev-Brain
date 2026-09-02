@@ -52,7 +52,7 @@ tags: [attention, inference-optimization, transformers, gpu]
 
 - Choix d'**architecture**, pas de déploiement : on ne convertit pas un modèle GQA en MLA sans réentraînement (des travaux de transplantation existent — ACL 2025 — mais restent de la recherche).
 - Ce qui compte à l'usage : un modèle MLA tiendra **plus de requêtes concurrentes à contexte égal**, ou un contexte plus long à mémoire égale. C'est directement le coût par utilisateur.
-- Le support runtime est bon mais pas universel : [[Dev/Services/vLLM|vLLM]] et [[Dev/Services/SGLang|SGLang]] implémentent MLA avec les optimisations d'absorption ; une implémentation naïve (décompresser puis attention classique) annule tout le bénéfice mémoire.
+- Le support runtime est bon mais pas universel : [[vLLM]] et [[SGLang]] implémentent MLA avec les optimisations d'absorption ; une implémentation naïve (décompresser puis attention classique) annule tout le bénéfice mémoire.
 - Piège de lecture des benchmarks : MLA améliore le **débit agrégé** et la concurrence, pas nécessairement la latence d'un utilisateur seul sur une machine vide.
 
 ## Approches voisines & alternatives

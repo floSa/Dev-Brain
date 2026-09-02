@@ -43,7 +43,7 @@ tags: [regression, classification, multi-output, supervised]
 - Cibles corrélées → chaînes ou modèle natif ; comparer au baseline indépendant avant de complexifier.
 - Évaluer **par cible** puis agréger (macro / micro), cf. [[Regression metrics]] et [[Classification metrics]].
 - Multi-étiquette à classes rares → cf. [[Imbalanced classification]] (étiquettes déséquilibrées).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.multioutput]] (`MultiOutputRegressor`, `MultiOutputClassifier`, `RegressorChain`, `ClassifierChain`).
+- Outils : [[Scikit-Learn|sklearn.multioutput]] (`MultiOutputRegressor`, `MultiOutputClassifier`, `RegressorChain`, `ClassifierChain`).
 
 ## Approches voisines & alternatives
 

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
-alternatives: ["[[Dev/Services/MongoDB|MongoDB]]", "[[Dev/Services/Redis|Redis]]"]
+alternatives: ["[[MongoDB]]", "[[Redis]]"]
 complements: []
 tags: [nosql, wide-column, distributed]
 url_docs: https://cassandra.apache.org/doc/
@@ -32,9 +32,9 @@ Base NoSQL **wide-column** distribuée, conçue pour le volume et la disponibili
 
 ## Quand NE PAS l'utiliser
 
-- Requêtes ad hoc, jointures, agrégations imprévues → [[Dev/Services/Postgres|Postgres]] ou [[Dev/Services/MongoDB|MongoDB]].
-- Petit volume mono-nœud : la complexité opérationnelle ne se justifie pas → [[Dev/Services/Postgres|Postgres]].
-- Cache ou structures en mémoire → [[Dev/Services/Redis|Redis]].
+- Requêtes ad hoc, jointures, agrégations imprévues → [[Postgres]] ou [[MongoDB]].
+- Petit volume mono-nœud : la complexité opérationnelle ne se justifie pas → [[Postgres]].
+- Cache ou structures en mémoire → [[Redis]].
 
 ## Déploiement & coût
 
@@ -51,11 +51,11 @@ Base NoSQL **wide-column** distribuée, conçue pour le volume et la disponibili
 
 ## Alternatives
 
-- [[Dev/Services/MongoDB|MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
-- [[Dev/Services/Redis|Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
+- [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
+- [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases NoSQL]] — comparatif des moteurs NoSQL
 - Doc : https://cassandra.apache.org/doc/

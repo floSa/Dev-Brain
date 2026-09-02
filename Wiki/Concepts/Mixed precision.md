@@ -44,7 +44,7 @@ tags: [mixed-precision, deep-learning, gpu, memory-optimization]
 - [[Gradient checkpointing]] — autre levier mémoire, cumulable.
 - [[Maximal Update Parametrization]] — l'interaction entre paramétrisation et basse précision motive la variante *u-µP* (unit-scaled µP).
 - [[Entraînement distribué]] — la précision mixte y est quasi systématique (FSDP/ZeRO en bf16).
-- [[Dev/Services/PyTorch|PyTorch]] — `torch.amp` (autocast + GradScaler) en standard.
+- [[PyTorch]] — `torch.amp` (autocast + GradScaler) en standard.
 
 ## Pour aller plus loin
 

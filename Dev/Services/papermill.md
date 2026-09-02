@@ -30,10 +30,10 @@ Exécute un notebook Jupyter de **manière non interactive et paramétrée**. On
 
 ## Quand NE PAS l'utiliser
 
-- Versionner le notebook source proprement → [[Dev/Services/jupytext|jupytext]] (papermill exécute, ne nettoie pas le diff).
-- Produire un document mis en page (HTML/PDF) plutôt qu'un `.ipynb` exécuté → [[Dev/Services/Quarto|Quarto]].
+- Versionner le notebook source proprement → [[jupytext]] (papermill exécute, ne nettoie pas le diff).
+- Produire un document mis en page (HTML/PDF) plutôt qu'un `.ipynb` exécuté → [[Quarto]].
 - Logique destinée à la production durable : extraire le cœur en module `.py` importé et testé, plutôt que d'exécuter un notebook.
-- Notebook réactif interactif → [[Dev/Services/Marimo|Marimo]].
+- Notebook réactif interactif → [[Marimo]].
 
 ## Déploiement & coût
 
@@ -46,15 +46,15 @@ Exécute un notebook Jupyter de **manière non interactive et paramétrée**. On
 - Le notebook doit être **idempotent** et exécutable dans l'ordre : un état caché le fait échouer en headless (c'est un effet de bord souhaitable — ça révèle le problème).
 - La cellule `parameters` doit être taguée correctement, sinon l'injection est silencieusement ignorée.
 - Le notebook de sortie embarque les sorties : ne pas le commiter en git brut (cf. [[Notebooks-as-code]]).
-- Kernel/env manquant ou divergent = échec d'exécution : épingler l'environnement ([[Dev/Services/uv|uv]]).
+- Kernel/env manquant ou divergent = échec d'exécution : épingler l'environnement ([[uv]]).
 
 ## Alternatives
 
-- _Alternative classique non fichée : `jupyter nbconvert --execute` (exécution sans la couche de paramétrage). [[Dev/Services/Quarto|Quarto]] exécute aussi un notebook, mais pour le publier, pas pour produire un `.ipynb` paramétré._
+- _Alternative classique non fichée : `jupyter nbconvert --execute` (exécution sans la couche de paramétrage). [[Quarto]] exécute aussi un notebook, mais pour le publier, pas pour produire un `.ipynb` paramétré._
 
 ## Liens
 
 - [[Notebooks-as-code]] — papermill assure l'exécution non interactive et rejouable du concept.
-- [[Dev/Services/jupytext|jupytext]] — versionner le source ; papermill exécute. Souvent combinés.
-- [[Dev/Services/uv|uv]] — environnement épinglé garantissant une exécution reproductible.
+- [[jupytext]] — versionner le source ; papermill exécute. Souvent combinés.
+- [[uv]] — environnement épinglé garantissant une exécution reproductible.
 - Doc : https://papermill.readthedocs.io/

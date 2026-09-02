@@ -19,20 +19,20 @@ url_repo: https://github.com/ploomber/jupysql
 
 ## Pourquoi
 
-Exécute du **SQL directement dans un notebook** Jupyter via des *magics* : `%sql SELECT ...` en ligne, `%%sql` en cellule, `%sqlplot` pour tracer. Maintenu par **Ploomber**, c'est un **fork activement développé d'ipython-sql** (drop-in dans 99 % des cas) qui ajoute le tracé de gros volumes sans saturer la RAM, la composition de requêtes en **CTE** sur plusieurs cellules, et la paramétrisation. Compatible avec les grandes bases (PostgreSQL, MySQL, SQL Server), les entrepôts (Snowflake, BigQuery, Redshift) et les moteurs embarqués ([[Dev/Services/DuckDB|DuckDB]], SQLite) via SQLAlchemy. Les résultats se convertissent en DataFrame [[Dev/Services/pandas|pandas]] ou [[Dev/Services/Polars|Polars]].
+Exécute du **SQL directement dans un notebook** Jupyter via des *magics* : `%sql SELECT ...` en ligne, `%%sql` en cellule, `%sqlplot` pour tracer. Maintenu par **Ploomber**, c'est un **fork activement développé d'ipython-sql** (drop-in dans 99 % des cas) qui ajoute le tracé de gros volumes sans saturer la RAM, la composition de requêtes en **CTE** sur plusieurs cellules, et la paramétrisation. Compatible avec les grandes bases (PostgreSQL, MySQL, SQL Server), les entrepôts (Snowflake, BigQuery, Redshift) et les moteurs embarqués ([[DuckDB]], SQLite) via SQLAlchemy. Les résultats se convertissent en DataFrame [[pandas]] ou [[Polars]].
 
 ## Quand l'utiliser
 
 - Explorer une base en SQL **dans le notebook**, sans coller du SQL dans des chaînes Python.
-- Coupler SQL et [[Dev/Services/DuckDB|DuckDB]] pour analyser des fichiers/Parquet locaux interactivement.
+- Coupler SQL et [[DuckDB]] pour analyser des fichiers/Parquet locaux interactivement.
 - Composer des requêtes longues en **CTE multi-cellules**, plus lisibles qu'un gros bloc.
 - Tracer directement de gros résultats (`%sqlplot`) sans tout rapatrier en mémoire.
 
 ## Quand NE PAS l'utiliser
 
-- Hors notebook (script, app, pipeline) → un client SQLAlchemy ou un driver direct ([[Dev/Services/psycopg2|psycopg2]]).
+- Hors notebook (script, app, pipeline) → un client SQLAlchemy ou un driver direct ([[psycopg2]]).
 - Transformations versionnées et testées en production → un outil de transformation dédié, pas des cellules.
-- Manipulation purement Python sur DataFrame → [[Dev/Services/pandas|pandas]] / [[Dev/Services/Polars|Polars]] directement.
+- Manipulation purement Python sur DataFrame → [[pandas]] / [[Polars]] directement.
 - Besoin d'écriture transactionnelle structurée : jupysql vise l'exploration interactive, pas l'applicatif.
 
 ## Déploiement & coût
@@ -54,6 +54,6 @@ Exécute du **SQL directement dans un notebook** Jupyter via des *magics* : `%sq
 
 ## Liens
 
-- [[Dev/Services/DuckDB|DuckDB]] — compagnon fréquent : SQL analytique local dans le notebook.
-- Sortie : [[Dev/Services/pandas|pandas]] / [[Dev/Services/Polars|Polars]] — conversion des résultats en DataFrame.
+- [[DuckDB]] — compagnon fréquent : SQL analytique local dans le notebook.
+- Sortie : [[pandas]] / [[Polars]] — conversion des résultats en DataFrame.
 - Doc : https://jupysql.readthedocs.io/

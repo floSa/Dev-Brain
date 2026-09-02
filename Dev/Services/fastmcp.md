@@ -51,6 +51,6 @@ Framework Python de référence pour exposer des outils, ressources et prompts v
 ## Liens
 
 - Implémente le [[mcp-protocol]] (serveur + client) côté Python.
-- Se teste / se débogue avec [[Dev/Services/mcpjam|mcpjam]] (inspecteur MCP).
-- Consommé par des frameworks d'agents comme [[Dev/Services/PydanticAI|PydanticAI]] et [[Dev/Services/LangGraph|LangGraph]].
+- Se teste / se débogue avec [[mcpjam]] (inspecteur MCP).
+- Consommé par des frameworks d'agents comme [[PydanticAI]] et [[LangGraph]].
 - Doc : https://gofastmcp.com

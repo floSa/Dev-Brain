@@ -42,7 +42,7 @@ tags: [linear-algebra, projection]
 - Régression linéaire = projection des $y$ sur l'espace des features ; les valeurs ajustées $\hat{y} = Hy$ utilisent la *hat matrix* $H = P$ (cf. [[Régression linéaire]]).
 - Pour projeter de façon stable, utiliser une base orthonormée (QR) plutôt que $(A^\top A)^{-1}$.
 - Réduire la dimension = projeter sur un sous-espace bien choisi (axes principaux).
-- Outils : `numpy.linalg.lstsq` (moindres carrés sans inverser), `numpy.linalg.qr`, [[Dev/Services/numpy|numpy]].
+- Outils : `numpy.linalg.lstsq` (moindres carrés sans inverser), `numpy.linalg.qr`, [[numpy]].
 
 ## Approches voisines & alternatives
 

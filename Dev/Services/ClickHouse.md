@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Dev/Services/DuckDB|DuckDB]]"]
+alternatives: ["[[DuckDB]]"]
 complements: []
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
@@ -32,8 +32,8 @@ SGBD **orienté colonnes** conçu pour l'OLAP. Les données sont stockées et tr
 
 ## Quand NE PAS l'utiliser
 
-- OLTP transactionnel, beaucoup de petites écritures et mises à jour ponctuelles → [[Dev/Services/Postgres|Postgres]].
-- Analytique locale / embarquée sur un seul poste, sans cluster → [[Dev/Services/DuckDB|DuckDB]].
+- OLTP transactionnel, beaucoup de petites écritures et mises à jour ponctuelles → [[Postgres]].
+- Analytique locale / embarquée sur un seul poste, sans cluster → [[DuckDB]].
 - Mises à jour et suppressions fréquentes ligne à ligne (modèle pensé pour l'append).
 
 ## Déploiement & coût
@@ -50,10 +50,10 @@ SGBD **orienté colonnes** conçu pour l'OLAP. Les données sont stockées et tr
 
 ## Alternatives
 
-- [[Dev/Services/DuckDB|DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
+- [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases colonnes]] — comparatif des moteurs colonne / OLAP
 - Doc : https://clickhouse.com/docs

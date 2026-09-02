@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C / Python
-alternatives: ["[[Dev/Services/pdfplumber|pdfplumber]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
+alternatives: ["[[pdfplumber]]", "[[pdf-inspector]]"]
 complements: []
 tags: [pdf, document-parsing]
 url_docs: https://pymupdf.readthedocs.io/
@@ -29,9 +29,9 @@ PyMuPDF (importé `pymupdf`, alias historique `fitz`) est le **binding Python de
 
 ## Quand NE PAS l'utiliser
 
-- Extraction de **tableaux** complexes avec réglage fin et débogage visuel → [[Dev/Services/pdfplumber|pdfplumber]].
-- Conversion **structurée en Markdown** pour le RAG → [[Dev/Services/Docling|Docling]] / [[Dev/Services/Marker|Marker]].
-- Contrainte AGPL incompatible avec un produit propriétaire sans budget licence → [[Dev/Services/pdfplumber|pdfplumber]] (MIT).
+- Extraction de **tableaux** complexes avec réglage fin et débogage visuel → [[pdfplumber]].
+- Conversion **structurée en Markdown** pour le RAG → [[Docling]] / [[Marker]].
+- Contrainte AGPL incompatible avec un produit propriétaire sans budget licence → [[pdfplumber]] (MIT).
 
 ## Déploiement & coût
 
@@ -47,11 +47,11 @@ PyMuPDF (importé `pymupdf`, alias historique `fitz`) est le **binding Python de
 
 ## Alternatives
 
-- [[Dev/Services/pdfplumber|pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
-- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
+- [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 
 - [[Comparatif - Parsing de documents]] — comparatif de la catégorie.
-- Étage RAG complémentaire : [[Dev/Services/Docling|Docling]] / [[Dev/Services/Marker|Marker]] pour la conversion structurée.
+- Étage RAG complémentaire : [[Docling]] / [[Marker]] pour la conversion structurée.
 - Doc : https://pymupdf.readthedocs.io/

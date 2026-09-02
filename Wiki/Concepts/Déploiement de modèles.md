@@ -41,7 +41,7 @@ tags: [deployment-strategy, model-serving, inference]
 
 ## En pratique
 
-- Promouvoir depuis le [[Model registry & versioning|registre]] la version validée, puis la déployer derrière un serveur d'inférence ([[Dev/Services/BentoML|BentoML]], [[Dev/Services/KServe|KServe]]).
+- Promouvoir depuis le [[Model registry & versioning|registre]] la version validée, puis la déployer derrière un serveur d'inférence ([[BentoML]], [[KServe]]).
 - Brancher le [[Monitoring de modèle en production|monitoring]] **avant** d'ouvrir le trafic : un canary sans métriques observées est un déploiement aveugle.
 - Choisir selon le risque : shadow pour valider sans risque, canary pour ouvrir progressivement, blue-green pour une bascule simple et réversible.
 - Pièges : labels retardés (la vraie qualité n'est pas mesurable tout de suite → s'appuyer sur des proxies), trafic canary non représentatif, rollback jamais testé.
@@ -52,7 +52,7 @@ tags: [deployment-strategy, model-serving, inference]
 - [[Model registry & versioning]] — source des versions promues ; le déploiement consomme ce qui y est validé.
 - [[A-B testing]] — cadre statistique de comparaison des cohortes (canary, champion-challenger).
 - [[Data drift]] — raison fréquente de redéployer (ré-entraînement déclenché par la dérive).
-- [[Dev/Services/MLflow|MLflow]] — format de modèle + déploiement multi-cibles depuis le registre.
+- [[MLflow]] — format de modèle + déploiement multi-cibles depuis le registre.
 
 ## Pour aller plus loin
 

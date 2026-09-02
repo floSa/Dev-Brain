@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Dev/Services/Neo4j|Neo4j]]"]
+alternatives: ["[[Neo4j]]"]
 complements: []
 tags: [graph-db, distributed]
 url_docs: https://docs.nebula-graph.io/
@@ -32,9 +32,9 @@ Base de graphes **distribuée nativement**, conçue pour les graphes qui ne tien
 
 ## Quand NE PAS l'utiliser
 
-- Graphe tenant sur un nœud, écosystème et maturité d'outillage prioritaires → [[Dev/Services/Neo4j|Neo4j]].
-- Données peu connectées, modèle tabulaire et transactions classiques → [[Dev/Services/Postgres|Postgres]].
-- Petit projet ou prototype : la complexité opérationnelle du cluster ne se justifie pas → [[Dev/Services/Neo4j|Neo4j]].
+- Graphe tenant sur un nœud, écosystème et maturité d'outillage prioritaires → [[Neo4j]].
+- Données peu connectées, modèle tabulaire et transactions classiques → [[Postgres]].
+- Petit projet ou prototype : la complexité opérationnelle du cluster ne se justifie pas → [[Neo4j]].
 
 ## Déploiement & coût
 
@@ -51,11 +51,11 @@ Base de graphes **distribuée nativement**, conçue pour les graphes qui ne tien
 
 ## Alternatives
 
-- [[Dev/Services/Neo4j|Neo4j]] — SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.
+- [[Neo4j]] — SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases graphes]] — comparatif des moteurs de graphe
-- [[Wiki/Concepts/Graph Neural Networks|Graph Neural Networks]] — ML sur graphes, branché sur les données stockées ici
+- [[Graph Neural Networks]] — ML sur graphes, branché sur les données stockées ici
 - Doc : https://docs.nebula-graph.io/

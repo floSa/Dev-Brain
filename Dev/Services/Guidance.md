@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Outlines|Outlines]]"]
+alternatives: ["[[Outlines]]"]
 complements: []
 tags: [structured-output, decoding, llm]
 url_docs: https://github.com/guidance-ai/guidance
@@ -19,7 +19,7 @@ url_repo: https://github.com/guidance-ai/guidance
 
 ## Pourquoi
 
-**Langage de contrôle** pour piloter un LLM plus finement que le prompting/chaining classique. Deux idées combinées : **contraindre la génération** (regex, grammaires **CFG**, JSON Schema via [[Dev/Services/Pydantic|Pydantic]]) par [[Constrained decoding|décodage contraint]], et **entrelacer contrôle et génération** dans un même programme Python — conditionnels, boucles, appels d'outils s'intercalent entre les segments générés. Apporte le **token healing** (réparation des frontières de tokens entre texte fixe et texte généré, cf. [[Tokenization]]) et le *fast-forward* des tokens imposés par la structure (gain de vitesse et de coût). Créé à **Microsoft Research**, désormais maintenu par l'org **guidance-ai**. Fonctions **stateless et composables**. Backends : transformers, [[Dev/Services/llama.cpp|llama.cpp]], [[Dev/Services/vLLM|vLLM]], OpenAI, Azure. Licence **MIT**.
+**Langage de contrôle** pour piloter un LLM plus finement que le prompting/chaining classique. Deux idées combinées : **contraindre la génération** (regex, grammaires **CFG**, JSON Schema via [[Pydantic]]) par [[Constrained decoding|décodage contraint]], et **entrelacer contrôle et génération** dans un même programme Python — conditionnels, boucles, appels d'outils s'intercalent entre les segments générés. Apporte le **token healing** (réparation des frontières de tokens entre texte fixe et texte généré, cf. [[Tokenization]]) et le *fast-forward* des tokens imposés par la structure (gain de vitesse et de coût). Créé à **Microsoft Research**, désormais maintenu par l'org **guidance-ai**. Fonctions **stateless et composables**. Backends : transformers, [[llama.cpp]], [[vLLM]], OpenAI, Azure. Licence **MIT**.
 
 ## Quand l'utiliser
 
@@ -29,13 +29,13 @@ url_repo: https://github.com/guidance-ai/guidance
 
 ## Quand NE PAS l'utiliser
 
-- Besoin simple « un objet conforme à ce schéma » sans flot de contrôle → [[Dev/Services/Outlines|Outlines]] (plus focalisé) ou le JSON mode natif.
-- Extraction multi-fournisseurs côté API fermée, sans modèle local → [[Dev/Services/Instructor|Instructor]] (prompt + validation + retry).
+- Besoin simple « un objet conforme à ce schéma » sans flot de contrôle → [[Outlines]] (plus focalisé) ou le JSON mode natif.
+- Extraction multi-fournisseurs côté API fermée, sans modèle local → [[Instructor]] (prompt + validation + retry).
 - Équipe rétive à un **DSL** : la courbe d'apprentissage du langage Guidance est réelle.
 
 ## Déploiement & coût
 
-- `pip` / `uv add guidance`, MIT, gratuit. Tourne avec le backend choisi ; contrainte réelle (masquage de tokens) surtout avec un modèle **local** ([[Dev/Services/llama.cpp|llama.cpp]], transformers, **GPU** utile). Single-node.
+- `pip` / `uv add guidance`, MIT, gratuit. Tourne avec le backend choisi ; contrainte réelle (masquage de tokens) surtout avec un modèle **local** ([[llama.cpp]], transformers, **GPU** utile). Single-node.
 - Les backends API (OpenAI/Azure) ne donnent pas toujours accès aux logits : une partie des garanties de contrainte y est dégradée.
 
 ## Pièges
@@ -46,11 +46,11 @@ url_repo: https://github.com/guidance-ai/guidance
 
 ## Alternatives
 
-- [[Dev/Services/Outlines|Outlines]] — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas. — même famille (décodage contraint) mais orientée **schéma → sortie** : on déclare un JSON Schema, une regex ou une grammaire, sans tisser de flot de contrôle dans la génération ; embarqué nativement par les moteurs de serving.
+- [[Outlines]] — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas. — même famille (décodage contraint) mais orientée **schéma → sortie** : on déclare un JSON Schema, une regex ou une grammaire, sans tisser de flot de contrôle dans la génération ; embarqué nativement par les moteurs de serving.
 
 ## Liens
 
 - Met en œuvre le concept [[Constrained decoding]] (masquage par grammaire + *token healing*).
 - Produit des [[Structured outputs|sorties structurées]] tout en gérant l'entrelacement contrôle/génération (cf. [[Decoding strategies]]).
-- À opposer à [[Dev/Services/Instructor|Instructor]] (prompt + retry, tout fournisseur) ; complémentaire des frameworks d'agents comme [[Dev/Services/PydanticAI|PydanticAI]].
+- À opposer à [[Instructor]] (prompt + retry, tout fournisseur) ; complémentaire des frameworks d'agents comme [[PydanticAI]].
 - Doc : https://github.com/guidance-ai/guidance

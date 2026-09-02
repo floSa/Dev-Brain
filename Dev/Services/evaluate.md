@@ -19,7 +19,7 @@ url_repo: https://github.com/huggingface/evaluate
 
 ## Pourquoi
 
-Bibliothèque de l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] qui standardise le **calcul de métriques d'évaluation**. Au lieu de réimplémenter accuracy, F1, BLEU, ROUGE, METEOR ou exact-match, on charge la métrique depuis le Hub (`evaluate.load("accuracy")`) et on l'alimente (`add_batch` / `compute`). Trois familles d'objets : **metrics** (qualité du modèle vs références), **comparisons** (deux modèles entre eux) et **measurements** (propriétés d'un dataset). Chaque métrique est versionnée sur le Hub avec sa carte et ses dépendances, ce qui rend les scores **reproductibles et comparables** entre projets. S'intègre directement au `Trainer` de `transformers`.
+Bibliothèque de l'écosystème [[HuggingFace]] qui standardise le **calcul de métriques d'évaluation**. Au lieu de réimplémenter accuracy, F1, BLEU, ROUGE, METEOR ou exact-match, on charge la métrique depuis le Hub (`evaluate.load("accuracy")`) et on l'alimente (`add_batch` / `compute`). Trois familles d'objets : **metrics** (qualité du modèle vs références), **comparisons** (deux modèles entre eux) et **measurements** (propriétés d'un dataset). Chaque métrique est versionnée sur le Hub avec sa carte et ses dépendances, ce qui rend les scores **reproductibles et comparables** entre projets. S'intègre directement au `Trainer` de `transformers`.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Bibliothèque de l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] qui sta
 
 ## Quand NE PAS l'utiliser
 
-- **Évaluation de systèmes LLM / RAG / agents** (faithfulness, juge LLM) → [[Dev/Services/Ragas|Ragas]], [[Dev/Services/DeepEval|DeepEval]], ou la bibliothèque **LightEval** que HuggingFace recommande désormais pour les LLM.
-- Métriques ML classiques déjà couvertes par [[Dev/Services/Scikit-Learn|Scikit-Learn]] dans un pipeline sklearn : `sklearn.metrics` évite une dépendance de plus.
-- Tracking / dashboards de runs → [[Dev/Services/MLflow|MLflow]], [[Dev/Services/Weights & Biases|Weights & Biases]] (evaluate calcule, ne journalise pas).
+- **Évaluation de systèmes LLM / RAG / agents** (faithfulness, juge LLM) → [[Ragas]], [[DeepEval]], ou la bibliothèque **LightEval** que HuggingFace recommande désormais pour les LLM.
+- Métriques ML classiques déjà couvertes par [[Scikit-Learn]] dans un pipeline sklearn : `sklearn.metrics` évite une dépendance de plus.
+- Tracking / dashboards de runs → [[MLflow]], [[Weights & Biases]] (evaluate calcule, ne journalise pas).
 
 ## Déploiement & coût
 
@@ -53,10 +53,10 @@ Pas de substitut direct dans le brain pour ce créneau (jeu de métriques ML ré
 
 ## Liens
 
-- [[Dev/Services/HuggingFace|HuggingFace]] — bibliothèque sœur ; `compute_metrics` du `Trainer`.
-- [[Dev/Services/datasets|datasets]] — même mécanisme de chargement depuis le Hub ; fournit les références d'évaluation.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — `sklearn.metrics` pour le ML tabulaire.
-- [[Dev/Services/seqeval|seqeval]] — métriques d'étiquetage de séquence (NER) au niveau entité ; chargé par evaluate sous la métrique `seqeval`.
-- [[Dev/Services/Ragas|Ragas]] · [[Dev/Services/DeepEval|DeepEval]] — évaluation spécifique des systèmes LLM/RAG.
+- [[HuggingFace]] — bibliothèque sœur ; `compute_metrics` du `Trainer`.
+- [[datasets]] — même mécanisme de chargement depuis le Hub ; fournit les références d'évaluation.
+- [[Scikit-Learn]] — `sklearn.metrics` pour le ML tabulaire.
+- [[seqeval]] — métriques d'étiquetage de séquence (NER) au niveau entité ; chargé par evaluate sous la métrique `seqeval`.
+- [[Ragas]] · [[DeepEval]] — évaluation spécifique des systèmes LLM/RAG.
 - [[Classification metrics]] · [[Ranking metrics]] — les concepts derrière les métriques calculées.
 - Doc : https://huggingface.co/docs/evaluate

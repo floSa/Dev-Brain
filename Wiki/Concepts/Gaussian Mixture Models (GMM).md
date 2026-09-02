@@ -40,7 +40,7 @@ tags: [clustering, unsupervised, maximum-likelihood]
 - Plus flexible que K-Means (clusters allongés, corrélés, recouvrants) mais plus de paramètres → besoin de plus de données, risque de surajustement avec `full` en grande dimension.
 - Sensible à l'initialisation et aux composantes dégénérées (covariance qui s'effondre sur un point) — régulariser (`reg_covar`).
 - La variante bayésienne (`BayesianGaussianMixture`) peut élaguer les composantes inutiles et estimer un $K$ effectif.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.mixture.GaussianMixture / BayesianGaussianMixture]].
+- Outils : [[Scikit-Learn|sklearn.mixture.GaussianMixture / BayesianGaussianMixture]].
 
 ## Approches voisines & alternatives
 

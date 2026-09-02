@@ -39,7 +39,7 @@ tags: [cnn, computer-vision, deep-learning]
 
 - Entraînement par rétropropagation + [[Gradient descent|descente de gradient]] (SGD+momentum ou [[Adam optimizer|Adam]]), perte [[Cross-entropy|entropie croisée]].
 - Quasi jamais de zéro : on réutilise un backbone via [[Transfer learning vision|transfert]] et on densifie le jeu par [[Augmentation d'images|augmentation]].
-- Implémentation : [[Dev/Services/PyTorch|PyTorch]] (`nn.Conv2d`) ou [[Dev/Services/Keras|Keras]] ; backbones convolutifs prêts à l'emploi via [[Dev/Services/torchvision|torchvision]] / [[Dev/Services/timm|timm]].
+- Implémentation : [[PyTorch]] (`nn.Conv2d`) ou [[Keras]] ; backbones convolutifs prêts à l'emploi via [[torchvision]] / [[timm]].
 
 ## Approches voisines & alternatives
 

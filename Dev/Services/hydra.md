@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/python-dotenv|python-dotenv]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
+alternatives: ["[[dynaconf]]", "[[python-dotenv]]", "[[Pydantic Settings]]"]
 complements: []
 tags: [config]
 url_docs: https://hydra.cc/docs/intro/
@@ -29,9 +29,9 @@ Framework de configuration pour applications complexes, créé en 2019 par **Omr
 
 ## Quand NE PAS l'utiliser
 
-- Simple service web ayant besoin d'une config typée et validée → [[Dev/Services/Pydantic Settings|Pydantic Settings]].
-- Multi-environnements applicatifs (default/dev/prod) avec secrets et formats variés → [[Dev/Services/dynaconf|dynaconf]].
-- Charger quelques variables depuis un `.env` → [[Dev/Services/python-dotenv|python-dotenv]].
+- Simple service web ayant besoin d'une config typée et validée → [[Pydantic Settings]].
+- Multi-environnements applicatifs (default/dev/prod) avec secrets et formats variés → [[dynaconf]].
+- Charger quelques variables depuis un `.env` → [[python-dotenv]].
 
 ## Déploiement & coût
 
@@ -46,9 +46,9 @@ Framework de configuration pour applications complexes, créé en 2019 par **Omr
 
 ## Alternatives
 
-- [[Dev/Services/dynaconf|dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
-- [[Dev/Services/python-dotenv|python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
-- [[Dev/Services/Pydantic Settings|Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
+- [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
+- [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+- [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
 ## Liens
 

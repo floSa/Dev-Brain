@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Fanalysis|Fanalysis]]"]
+alternatives: ["[[Fanalysis]]"]
 complements: []
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 url_docs: https://maxhalford.github.io/prince/
@@ -29,9 +29,9 @@ Bibliothèque d'**analyse factorielle multivariée** (tradition Benzécri / Fact
 
 ## Quand NE PAS l'utiliser
 
-- Aides à l'interprétation textuelles « façon FactoMineR » sur PCA/CA/MCA seules → [[Dev/Services/Fanalysis|Fanalysis]].
-- PCA quantitative pure dans un pipeline ML déjà sklearn → [[Dev/Services/Scikit-Learn|sklearn.decomposition.PCA]].
-- Tests d'hypothèse / modèles statistiques → [[Dev/Services/scipy.stats|scipy.stats]], [[Dev/Services/statsmodels|statsmodels]].
+- Aides à l'interprétation textuelles « façon FactoMineR » sur PCA/CA/MCA seules → [[Fanalysis]].
+- PCA quantitative pure dans un pipeline ML déjà sklearn → [[Scikit-Learn|sklearn.decomposition.PCA]].
+- Tests d'hypothèse / modèles statistiques → [[scipy.stats]], [[statsmodels]].
 
 ## Déploiement & coût
 
@@ -47,11 +47,11 @@ Bibliothèque d'**analyse factorielle multivariée** (tradition Benzécri / Fact
 
 ## Alternatives
 
-- [[Dev/Services/Fanalysis|Fanalysis]] — Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
+- [[Fanalysis]] — Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/PCA|PCA]], [[Wiki/Concepts/MCA|MCA]], [[Wiki/Concepts/CA|CA]], [[Wiki/Concepts/FAMD|FAMD]], [[Wiki/Concepts/MFA|MFA]]
+- Concepts implémentés : [[PCA]], [[MCA]], [[CA]], [[FAMD]], [[MFA]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- [[Dev/Patterns/Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
+- [[Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
 - Doc : https://maxhalford.github.io/prince/

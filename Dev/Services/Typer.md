@@ -31,7 +31,7 @@ Bibliothèque pour construire des **interfaces en ligne de commande** à partir 
 
 - Contrôle très fin du parsing ou cas tordus non couverts par l'abstraction → Click directement.
 - Dépendance zéro / script jetable → `argparse` de la stdlib.
-- Besoin d'une API web, pas d'une CLI → [[Dev/Services/FastAPI|FastAPI]].
+- Besoin d'une API web, pas d'une CLI → [[FastAPI]].
 
 ## Déploiement & coût
 
@@ -41,7 +41,7 @@ Bibliothèque pour construire des **interfaces en ligne de commande** à partir 
 ## Pièges
 
 - Couche au-dessus de Click : pour les besoins avancés, il faut parfois redescendre à l'API Click sous-jacente.
-- Le rendu enrichi de l'aide et des erreurs (couleurs, mise en forme) repose sur [[Dev/Services/Rich|rich]] : l'installer pour en profiter.
+- Le rendu enrichi de l'aide et des erreurs (couleurs, mise en forme) repose sur [[Rich|rich]] : l'installer pour en profiter.
 - Commande unique (`typer.run(fn)`) vs application multi-commandes (`app = typer.Typer()` + `@app.command()`) : deux usages distincts, à ne pas mélanger.
 
 ## Alternatives
@@ -52,6 +52,6 @@ Bibliothèque pour construire des **interfaces en ligne de commande** à partir 
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Frameworks CLI]] — Typer vs Click / argparse.
-- Bâti sur Click ; même auteur que [[Dev/Services/FastAPI|FastAPI]] ; rendu terminal via [[Dev/Services/Rich|rich]].
+- [[Comparatif - Frameworks CLI]] — Typer vs Click / argparse.
+- Bâti sur Click ; même auteur que [[FastAPI]] ; rendu terminal via [[Rich|rich]].
 - Doc : https://typer.tiangolo.com/

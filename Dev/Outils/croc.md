@@ -36,7 +36,7 @@ L'intérêt en contexte on-prem : deux machines sur deux réseaux qui ne se voie
 ## Quand NE PAS l'utiliser
 
 - Synchronisation récurrente ou différentielle de dossiers : ce n'est pas un synchroniseur → `rsync`, Syncthing.
-- Copie vers un stockage objet ou entre fournisseurs : `rclone`, ou un client S3 vers [[Dev/Services/MinIO|MinIO]].
+- Copie vers un stockage objet ou entre fournisseurs : `rclone`, ou un client S3 vers [[MinIO]].
 - Transfert automatisé dans un pipeline : le modèle repose sur une phrase de passe échangée hors bande, mal adapté à l'ordonnancement.
 - Contexte où le relais public est inacceptable sans configuration explicite : il faut alors imposer son propre relais, pas se contenter des valeurs par défaut.
 - Archivage ou distribution à plusieurs destinataires : le modèle est point à point.
@@ -62,7 +62,7 @@ Champ vide, faute de fiche réciproque : `croc` est la première entrée en `net
 
 ## Liens
 
-- [[Dev/Services/MinIO|MinIO]] — quand le besoin devient un dépôt d'artefacts durable plutôt qu'un transfert ponctuel
-- [[Dev/Outils/Sniffnet|Sniffnet]] — pour vérifier vers quel relais un transfert part réellement
+- [[MinIO]] — quand le besoin devient un dépôt d'artefacts durable plutôt qu'un transfert ponctuel
+- [[Sniffnet]] — pour vérifier vers quel relais un transfert part réellement
 - Site : https://getcroc.com
 - Repo : https://github.com/schollz/croc

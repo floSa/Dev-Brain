@@ -31,8 +31,8 @@ Bibliothèque d'**analyse de survie** (time-to-event) en Python pur, au-dessus d
 ## Quand NE PAS l'utiliser
 
 - Survie « machine learning » (Random Survival Forests, gradient boosting de survie) → scikit-survival (hors brain).
-- Modélisation statistique générale (GLM, séries temporelles, tests) sans volet survie → [[Dev/Services/statsmodels|statsmodels]].
-- Survie bayésienne sur mesure → programmation probabiliste ([[Dev/Services/PyMC|PyMC]], [[Dev/Services/Stan|Stan]]).
+- Modélisation statistique générale (GLM, séries temporelles, tests) sans volet survie → [[statsmodels]].
+- Survie bayésienne sur mesure → programmation probabiliste ([[PyMC]], [[Stan]]).
 
 ## Déploiement & coût
 
@@ -53,6 +53,6 @@ Bibliothèque d'**analyse de survie** (time-to-event) en Python pur, au-dessus d
 
 ## Liens
 
-- [[Wiki/Concepts/Analyse de survie|Analyse de survie]] — le concept (Wiki)
-- Statistiques connexes : [[Dev/Services/statsmodels|statsmodels]], [[Dev/Services/scipy.stats|scipy.stats]].
+- [[Analyse de survie]] — le concept (Wiki)
+- Statistiques connexes : [[statsmodels]], [[scipy.stats]].
 - Doc : https://lifelines.readthedocs.io/

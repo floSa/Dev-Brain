@@ -23,8 +23,8 @@ Petite bibliothèque JavaScript (sans dépendance) qui étend le HTML : des attr
 
 ## Quand l'utiliser
 
-- App rendue côté serveur ([[Dev/Services/FastAPI|FastAPI]], [[Dev/Services/Flask|Flask]], Django) à qui l'on veut ajouter de l'interactivité sans pipeline JS.
-- Équipe back-end qui préfère renvoyer de l'HTML (via [[Dev/Services/Jinja2|Jinja2]]) plutôt que maintenir un front JSON + framework JS séparé.
+- App rendue côté serveur ([[FastAPI]], [[Flask]], Django) à qui l'on veut ajouter de l'interactivité sans pipeline JS.
+- Équipe back-end qui préfère renvoyer de l'HTML (via [[Jinja2]]) plutôt que maintenir un front JSON + framework JS séparé.
 - CRUD, dashboards internes, formulaires dynamiques où l'état vit côté serveur.
 
 ## Quand NE PAS l'utiliser
@@ -49,7 +49,7 @@ Petite bibliothèque JavaScript (sans dépendance) qui étend le HTML : des attr
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
-- [[Dev/Services/Jinja2|Jinja2]] — rend les fragments HTML que HTMX vient injecter (paire usuelle)
-- [[Dev/Services/FastAPI|FastAPI]] / [[Dev/Services/Flask|Flask]] — serveurs HTML côté back
+- [[Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
+- [[Jinja2]] — rend les fragments HTML que HTMX vient injecter (paire usuelle)
+- [[FastAPI]] / [[Flask]] — serveurs HTML côté back
 - Doc : https://htmx.org/

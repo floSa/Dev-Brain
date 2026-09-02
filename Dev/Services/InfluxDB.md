@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: single-node
-alternatives: ["[[Dev/Services/TimescaleDB|TimescaleDB]]"]
+alternatives: ["[[TimescaleDB]]"]
 complements: []
 tags: [timeseries]
 url_docs: https://docs.influxdata.com/
@@ -32,9 +32,9 @@ SGBD spécialisé **séries temporelles** : données horodatées (métriques, é
 
 ## Quand NE PAS l'utiliser
 
-- Données relationnelles, jointures et transactions ACID → [[Dev/Services/Postgres|Postgres]].
-- Besoin de SQL standard et de l'écosystème Postgres tout en faisant du temporel → [[Dev/Services/TimescaleDB|TimescaleDB]].
-- Analytique colonne haute cardinalité non strictement temporelle → [[Dev/Services/ClickHouse|ClickHouse]].
+- Données relationnelles, jointures et transactions ACID → [[Postgres]].
+- Besoin de SQL standard et de l'écosystème Postgres tout en faisant du temporel → [[TimescaleDB]].
+- Analytique colonne haute cardinalité non strictement temporelle → [[ClickHouse]].
 
 ## Déploiement & coût
 
@@ -50,10 +50,10 @@ SGBD spécialisé **séries temporelles** : données horodatées (métriques, é
 
 ## Alternatives
 
-- [[Dev/Services/TimescaleDB|TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
+- [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases temporelles]] — comparatif des moteurs temporels
 - Doc : https://docs.influxdata.com/

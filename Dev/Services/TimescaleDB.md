@@ -8,7 +8,7 @@ famille: extension
 licence_type: open-source
 maturite: production
 langage: C
-alternatives: ["[[Dev/Services/InfluxDB|InfluxDB]]"]
+alternatives: ["[[InfluxDB]]"]
 complements: []
 tags: [timeseries, postgres]
 url_docs: https://www.tigerdata.com/docs
@@ -19,7 +19,7 @@ url_repo: https://github.com/timescale/timescaledb
 
 ## Pourquoi
 
-Extension Postgres — comme [[Dev/Services/pgvector|pgvector]] — qui ajoute le **temporel** à une base relationnelle. Une table devient une **hypertable** partitionnée par le temps de façon transparente : ingestion soutenue, compression colonne, rétention et agrégats continus, tout en gardant SQL, jointures et transactions ACID. Cœur open-source Apache 2.0 ; fonctions avancées sous licence Timescale (TSL), libres en self-host. Éditée par Tiger Data (ex-Timescale).
+Extension Postgres — comme [[pgvector]] — qui ajoute le **temporel** à une base relationnelle. Une table devient une **hypertable** partitionnée par le temps de façon transparente : ingestion soutenue, compression colonne, rétention et agrégats continus, tout en gardant SQL, jointures et transactions ACID. Cœur open-source Apache 2.0 ; fonctions avancées sous licence Timescale (TSL), libres en self-host. Éditée par Tiger Data (ex-Timescale).
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Extension Postgres — comme [[Dev/Services/pgvector|pgvector]] — qui ajoute l
 
 ## Quand NE PAS l'utiliser
 
-- Aucun Postgres et pas d'envie d'en gérer un → [[Dev/Services/InfluxDB|InfluxDB]] (serveur temporel autonome).
-- Analytique colonne massive non temporelle → [[Dev/Services/ClickHouse|ClickHouse]].
-- Très haut débit d'écriture pure flux sans besoin relationnel → évaluer [[Dev/Services/InfluxDB|InfluxDB]].
+- Aucun Postgres et pas d'envie d'en gérer un → [[InfluxDB]] (serveur temporel autonome).
+- Analytique colonne massive non temporelle → [[ClickHouse]].
+- Très haut débit d'écriture pure flux sans besoin relationnel → évaluer [[InfluxDB]].
 
 ## Déploiement & coût
 
@@ -48,10 +48,10 @@ Extension Postgres — comme [[Dev/Services/pgvector|pgvector]] — qui ajoute l
 
 ## Alternatives
 
-- [[Dev/Services/InfluxDB|InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
+- [[InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases temporelles]] — comparatif des moteurs temporels
 - Doc : https://www.tigerdata.com/docs

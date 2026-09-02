@@ -52,4 +52,4 @@ tags: [tokenization, llm, nlp]
 
 - Sennrich et al. (2016) — *Neural Machine Translation of Rare Words with Subword Units* (BPE).
 - Kudo (2018) — *Subword Regularization* / SentencePiece (modèle Unigram).
-- Outils : [[Dev/Services/sentencepiece|sentencepiece]] (BPE / Unigram, indépendant de la langue), `tiktoken`, `tokenizers` (HuggingFace).
+- Outils : [[sentencepiece]] (BPE / Unigram, indépendant de la langue), `tiktoken`, `tokenizers` (HuggingFace).

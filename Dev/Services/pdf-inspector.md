@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Rust
-alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]", "[[Dev/Services/pdfplumber|pdfplumber]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/Marker|Marker]]", "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"]
+alternatives: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Docling]]", "[[Marker]]", "[[OpenDataLoader PDF]]"]
 complements: []
 tags: [pdf, document-parsing, ocr, markdown-conversion, layout-analysis]
 url_docs: https://firecrawl.github.io/pdf-inspector/
@@ -35,9 +35,9 @@ L'extraction restitue le texte avec sa position (police, coordonnées) et le con
 
 ## Quand NE PAS l'utiliser
 
-- Compréhension fine de la mise en page et des tableaux complexes : ce n'est pas son métier → [[Dev/Services/Docling|Docling]], [[Dev/Services/Marker|Marker]].
-- Manipulation du PDF (rendu, annotations, découpe, modèle objet) → [[Dev/Services/PyMuPDF|PyMuPDF]].
-- Débogage visuel de l'extraction, objet par objet → [[Dev/Services/pdfplumber|pdfplumber]].
+- Compréhension fine de la mise en page et des tableaux complexes : ce n'est pas son métier → [[Docling]], [[Marker]].
+- Manipulation du PDF (rendu, annotations, découpe, modèle objet) → [[PyMuPDF]].
+- Débogage visuel de l'extraction, objet par objet → [[pdfplumber]].
 - Besoin d'OCR clé en main : il faut fournir soi-même PDFium et ONNX Runtime, ce qui frotte sous Windows et WSL.
 
 ## Déploiement & coût
@@ -48,18 +48,18 @@ L'extraction restitue le texte avec sa position (police, coordonnées) et le con
 
 ## Pièges
 
-- **Benchmarks auto-déclarés** : sur le corpus opendataloader-bench (200 PDF, juillet 2026), le projet annonce un score global de 0,875, un reading order de 0,915, des tables à 0,814 et 0,470 s pour le corpus, devant liteparse, [[Dev/Services/OpenDataLoader PDF|opendataloader]], pymupdf4llm et markitdown. Chiffres du projet, non reproduits ici.
+- **Benchmarks auto-déclarés** : sur le corpus opendataloader-bench (200 PDF, juillet 2026), le projet annonce un score global de 0,875, un reading order de 0,915, des tables à 0,814 et 0,470 s pour le corpus, devant liteparse, [[OpenDataLoader PDF|opendataloader]], pymupdf4llm et markitdown. Chiffres du projet, non reproduits ici.
 - Les tables sont extraites par heuristique : fiables sur les grilles nettes, à vérifier sur les mises en page libres.
 - L'API bouge encore (projet de sept mois, backlog d'issues nourri) : verrouiller la version.
 - Fraîcheur des paquets PyPI et npm par rapport au crate non vérifiée — se fier au crate en cas de doute.
 
 ## Alternatives
 
-- [[Dev/Services/PyMuPDF|PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
-- [[Dev/Services/pdfplumber|pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
-- [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
-- [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
-- [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
+- [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
+- [[pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
+- [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
+- [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
 ## Liens
 
@@ -67,5 +67,5 @@ L'extraction restitue le texte avec sa position (police, coordonnées) et le con
 - [[OCR]] — concept : reconnaissance optique de caractères
 - [[Chunking strategies]] — concept : découpage de documents en aval
 - [[RAG]] — concept : génération augmentée par récupération
-- [[Dev/Services/Firecrawl|Firecrawl]] — même éditeur, côté scraping web
+- [[Firecrawl]] — même éditeur, côté scraping web
 - Docs : https://firecrawl.github.io/pdf-inspector/ · Repo : https://github.com/firecrawl/pdf-inspector

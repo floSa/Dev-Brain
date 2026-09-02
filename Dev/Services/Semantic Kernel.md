@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: "C#, Python, Java"
-alternatives: ["[[Dev/Services/LangChain|LangChain]]"]
+alternatives: ["[[LangChain]]"]
 complements: []
 tags: [llm, agents, tool-use]
 url_docs: https://learn.microsoft.com/semantic-kernel/
@@ -21,7 +21,7 @@ url_repo: https://github.com/microsoft/semantic-kernel
 
 SDK d'orchestration LLM de **Microsoft**, pensé pour intégrer l'IA dans des applications **d'entreprise** existantes plutôt que pour prototyper en notebook. Son modèle : un *kernel* central auquel on greffe des **plugins** (fonctions natives ou prompts) que le LLM appelle par **function calling**, plus des **planificateurs** qui décomposent un objectif en étapes. Particularité notable : la **parité multi-langage** — mêmes concepts en **C#/.NET**, **Python** et **Java**, ce qui en fait le choix naturel d'un écosystème .NET/JVM. Licence **MIT**.
 
-⚠️ **Statut 2026** : Microsoft a annoncé que *« Semantic Kernel is now Microsoft Agent Framework »*. **Microsoft Agent Framework (MAF)** — qui fusionne Semantic Kernel et [[Dev/Services/AutoGen|AutoGen]] — est positionné comme le **successeur prêt pour la production** (v1.0, APIs stables, support long terme). Semantic Kernel reste activement maintenu, mais tout **nouveau projet** devrait évaluer MAF en premier.
+⚠️ **Statut 2026** : Microsoft a annoncé que *« Semantic Kernel is now Microsoft Agent Framework »*. **Microsoft Agent Framework (MAF)** — qui fusionne Semantic Kernel et [[AutoGen]] — est positionné comme le **successeur prêt pour la production** (v1.0, APIs stables, support long terme). Semantic Kernel reste activement maintenu, mais tout **nouveau projet** devrait évaluer MAF en premier.
 
 ## Quand l'utiliser
 
@@ -32,8 +32,8 @@ SDK d'orchestration LLM de **Microsoft**, pensé pour intégrer l'IA dans des ap
 ## Quand NE PAS l'utiliser
 
 - **Nouveau** projet agentique sans contrainte d'historique : partir directement sur **Microsoft Agent Framework**, le successeur.
-- Écosystème **Python pur** avec un large besoin d'intégrations tierces → [[Dev/Services/LangChain|LangChain]].
-- Orchestration multi-agents avec contrôle explicite du flux → [[Dev/Services/AutoGen|AutoGen]] / [[Dev/Services/CrewAI|CrewAI]] / [[Dev/Services/LangGraph|LangGraph]].
+- Écosystème **Python pur** avec un large besoin d'intégrations tierces → [[LangChain]].
+- Orchestration multi-agents avec contrôle explicite du flux → [[AutoGen]] / [[CrewAI]] / [[LangGraph]].
 
 ## Déploiement & coût
 
@@ -49,11 +49,11 @@ SDK d'orchestration LLM de **Microsoft**, pensé pour intégrer l'IA dans des ap
 
 ## Alternatives
 
-- [[Dev/Services/LangChain|LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
+- [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 
 ## Liens
 
-- **Successeur** : Microsoft Agent Framework (MAF) — fusion de Semantic Kernel et [[Dev/Services/AutoGen|AutoGen]] ; nouveau socle Microsoft pour agents et workflows multi-agents.
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
+- **Successeur** : Microsoft Agent Framework (MAF) — fusion de Semantic Kernel et [[AutoGen]] ; nouveau socle Microsoft pour agents et workflows multi-agents.
+- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://learn.microsoft.com/semantic-kernel/

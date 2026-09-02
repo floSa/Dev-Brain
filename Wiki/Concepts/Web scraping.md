@@ -18,7 +18,7 @@ tags: [web-scraping, data-pipeline]
 
 ### HTTP statique vs rendu navigateur
 - Beaucoup de pages se récupèrent par simple requête HTTP puis parsing du HTML (sélecteurs CSS / XPath). Rapide et léger.
-- Les pages rendues côté client (JavaScript, SPA) exigent un **navigateur headless** ([[Dev/Services/Playwright|Playwright]], Selenium) qui exécute le JS avant extraction. Plus lourd, plus fragile.
+- Les pages rendues côté client (JavaScript, SPA) exigent un **navigateur headless** ([[Playwright]], Selenium) qui exécute le JS avant extraction. Plus lourd, plus fragile.
 
 ### Authentification de session
 - Accéder à du contenu derrière login : rejouer un formulaire, puis **réutiliser les cookies / tokens** de session sur les requêtes suivantes. Gérer l'expiration et le rafraîchissement.
@@ -26,7 +26,7 @@ tags: [web-scraping, data-pipeline]
 ### Anti-bot
 - Défenses courantes : limites de fréquence, CAPTCHA, empreinte de navigateur (*fingerprinting*), challenges JS, blocage d'IP. Les contourner relève du jeu du chat et de la souris et soulève des questions légales et éthiques.
 - Posture sobre : `User-Agent` honnête, respect de `robots.txt`, pas de surcharge — préférer une API ou un accord quand il en existe un.
-- Côté outils (dans le cadre légal ci-dessus) : [[Dev/Services/curl_cffi|curl_cffi]] imite l'empreinte TLS/JA3 d'un navigateur, [[Dev/Services/cloudscraper|cloudscraper]] résout les défis JavaScript de Cloudflare, [[Dev/Services/Playwright|Playwright]] exécute un navigateur complet.
+- Côté outils (dans le cadre légal ci-dessus) : [[curl_cffi]] imite l'empreinte TLS/JA3 d'un navigateur, [[cloudscraper]] résout les défis JavaScript de Cloudflare, [[Playwright]] exécute un navigateur complet.
 
 ### Throttling et politesse
 - Espacer les requêtes (délais, jitter), limiter la concurrence, respecter `Crawl-delay`, mettre en cache pour ne pas re-télécharger. Protège le site cible **et** la stabilité du scraper.
@@ -37,8 +37,8 @@ tags: [web-scraping, data-pipeline]
 ## En pratique
 
 - Vérifier d'abord s'il existe une **API** ou un export : presque toujours préférable au scraping.
-- Pile typique : `httpx` / `requests` (ou [[Dev/Services/curl_cffi|curl_cffi]] si l'empreinte est filtrée) + `BeautifulSoup` / [[Dev/Services/selectolax|selectolax]] pour le statique ; [[Dev/Services/Scrapy|Scrapy]] ou [[Dev/Services/Crawlee|Crawlee]] pour le crawl à l'échelle (pipelines, throttling intégré) ; [[Dev/Services/Playwright|Playwright]] pour le rendu JS ; [[Dev/Services/Scrapling|Scrapling]] quand les sélecteurs doivent survivre aux changements de page.
-- Raccourcis « prêts à l'emploi » : [[Dev/Services/Firecrawl|Firecrawl]] (API site → Markdown pour LLM/RAG) et [[Dev/Services/Maxun|Maxun]] (plateforme no-code, robots enregistrés au navigateur) quand on veut éviter d'écrire et maintenir un scraper.
+- Pile typique : `httpx` / `requests` (ou [[curl_cffi]] si l'empreinte est filtrée) + `BeautifulSoup` / [[selectolax]] pour le statique ; [[Scrapy]] ou [[Crawlee]] pour le crawl à l'échelle (pipelines, throttling intégré) ; [[Playwright]] pour le rendu JS ; [[Scrapling]] quand les sélecteurs doivent survivre aux changements de page.
+- Raccourcis « prêts à l'emploi » : [[Firecrawl]] (API site → Markdown pour LLM/RAG) et [[Maxun]] (plateforme no-code, robots enregistrés au navigateur) quand on veut éviter d'écrire et maintenir un scraper.
 - Valider et typer la sortie (schéma le cas échéant), puis stocker dans une [[Bases de données|base]] ou un fichier ; profiler ce qui arrive avec une [[EDA automatisée & profiling|EDA]].
 - Cadre légal et éthique : conditions d'utilisation, droit des bases de données, données personnelles (RGPD). Le « techniquement possible » n'est pas le « permis ».
 - Pièges : sélecteurs fragiles, IP bannies faute de throttling, doublons traités trop tard (voir [[Fuzzy matching & similarité de chaînes]]).
@@ -51,6 +51,6 @@ tags: [web-scraping, data-pipeline]
 
 ## Pour aller plus loin
 
-- [[Dev/Services/Scrapy|Scrapy]] — architecture, AutoThrottle, pipelines d'items.
-- [[Dev/Services/Playwright|Playwright]] — automatisation de navigateur headless.
-- [[Dev/Patterns/Comparatif - Scraping]] — les outils de scraping du brain, comparés.
+- [[Scrapy]] — architecture, AutoThrottle, pipelines d'items.
+- [[Playwright]] — automatisation de navigateur headless.
+- [[Comparatif - Scraping]] — les outils de scraping du brain, comparés.

@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: source-available
 os: "Windows, macOS, Linux, web (Docker)"
 langage: TypeScript/Electron
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+alternatives: ["[[DBeaver]]"]
 complements: []
 tags: [db-client, key-value, in-memory]
 url_docs: https://redis.io/docs/latest/develop/tools/insight/
@@ -30,7 +30,7 @@ Le client graphique **officiel** de Redis. Navigation dans l'espace de clés (pa
 
 ## Quand NE PAS l'utiliser
 
-- Mêler Redis et d'autres SGBD dans un seul outil → [[Dev/Outils/DBeaver|DBeaver]] (support Redis).
+- Mêler Redis et d'autres SGBD dans un seul outil → [[DBeaver]] (support Redis).
 - Scripting reproductible → `redis-cli`.
 
 ## Bases & plateformes
@@ -45,11 +45,11 @@ Le client graphique **officiel** de Redis. Navigation dans l'espace de clés (pa
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
-- [[Dev/Services/Redis|Redis]] — le moteur exploré
+- [[Bases de données]] — le concept (Wiki)
+- [[Redis]] — le moteur exploré
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://redis.io/docs/latest/develop/tools/insight/

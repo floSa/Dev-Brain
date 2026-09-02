@@ -44,7 +44,7 @@ tags: [speech, deep-learning, multimodal]
 - [[Transformer architectures]] — colonne vertébrale de l'ASR (Whisper) comme de la TTS par tokens.
 - [[Tokenization]] — la tokenisation **audio** (codec neuronal) est l'analogue parole de la tokenisation texte.
 - [[Vision Language Models]] — autre extension multimodale du même socle ; certains modèles « omni » couvrent texte + image + audio.
-- Application locale fichée : [[Dev/Outils/Superwhisper|Superwhisper]] — dictée système sur whisper.cpp et WhisperKit/Parakeet.
+- Application locale fichée : [[Superwhisper]] — dictée système sur whisper.cpp et WhisperKit/Parakeet.
 
 ## Pour aller plus loin
 

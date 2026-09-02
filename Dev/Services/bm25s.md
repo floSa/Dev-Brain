@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/rank-bm25|rank-bm25]]"]
+alternatives: ["[[rank-bm25]]"]
 complements: []
 tags: [information-retrieval, ranking, search]
 url_docs: https://bm25s.github.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/xhluca/bm25s
 
 ## Pourquoi
 
-Implémentation de [[BM25]] qui **pré-calcule tous les scores à l'indexation** et les stocke dans des **matrices creuses SciPy**. Au moment de la requête, scorer le corpus revient à une multiplication creuse : on gagne **des ordres de grandeur** sur les implémentations Python pures comme [[Dev/Services/rank-bm25|rank-bm25]], tout en restant une simple bibliothèque (pas de serveur). Variantes Okapi BM25, BM25L, BM25+, ATIRE, Lucene. Tokeniseur intégré (stop-words, stemming Snowball optionnel).
+Implémentation de [[BM25]] qui **pré-calcule tous les scores à l'indexation** et les stocke dans des **matrices creuses SciPy**. Au moment de la requête, scorer le corpus revient à une multiplication creuse : on gagne **des ordres de grandeur** sur les implémentations Python pures comme [[rank-bm25]], tout en restant une simple bibliothèque (pas de serveur). Variantes Okapi BM25, BM25L, BM25+, ATIRE, Lucene. Tokeniseur intégré (stop-words, stemming Snowball optionnel).
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Implémentation de [[BM25]] qui **pré-calcule tous les scores à l'indexation**
 
 ## Quand NE PAS l'utiliser
 
-- **Passage à l'échelle distribuée**, persistance transactionnelle, mises à jour incrémentales → un vrai moteur : [[Dev/Services/Elasticsearch|Elasticsearch]] / OpenSearch.
-- Prototype jetable sans enjeu de vitesse → [[Dev/Services/rank-bm25|rank-bm25]] suffit et a une API encore plus minimale.
-- Recherche **sémantique** (synonymes, paraphrases) → [[Dev/Services/sentence-transformers|sentence-transformers]] + index vectoriel.
+- **Passage à l'échelle distribuée**, persistance transactionnelle, mises à jour incrémentales → un vrai moteur : [[Elasticsearch]] / OpenSearch.
+- Prototype jetable sans enjeu de vitesse → [[rank-bm25]] suffit et a une API encore plus minimale.
+- Recherche **sémantique** (synonymes, paraphrases) → [[sentence-transformers]] + index vectoriel.
 
 ## Déploiement & coût
 
@@ -48,13 +48,13 @@ Implémentation de [[BM25]] qui **pré-calcule tous les scores à l'indexation**
 
 ## Alternatives
 
-- [[Dev/Services/rank-bm25|rank-bm25]] — Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
+- [[rank-bm25]] — Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 
 ## Liens
 
 - [[BM25]] — l'algorithme qu'il implémente.
 - [[Recherche d'information]] · [[Hybrid retrieval]] — ses usages.
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — BM25 indexé et distribué, pour la production.
+- [[Elasticsearch]] — BM25 indexé et distribué, pour la production.
 - [[Ranking metrics]] — pour mesurer la qualité du classement produit.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Doc : https://bm25s.github.io/ · Repo : https://github.com/xhluca/bm25s

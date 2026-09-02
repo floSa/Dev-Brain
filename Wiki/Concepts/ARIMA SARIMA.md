@@ -37,7 +37,7 @@ tags: [forecasting, timeseries]
 
 - Préférer **AutoARIMA** au réglage manuel : il explore $(p,d,q)(P,D,Q)$ par critère d'information et tests de racine unitaire.
 - Modèle **linéaire** : il ne capte pas les non-linéarités ; [[Exponential smoothing|ETS]] le concurrence souvent à armes égales sur séries simples.
-- Outils : [[Dev/Services/pmdarima|pmdarima]] (AutoARIMA pur Python, wrap statsmodels), [[Dev/Services/statsforecast|statsforecast]] (AutoARIMA compilé Numba, à grande échelle), [[Dev/Services/darts|darts]] (mêmes modèles sous une API unifiée).
+- Outils : [[pmdarima]] (AutoARIMA pur Python, wrap statsmodels), [[statsforecast]] (AutoARIMA compilé Numba, à grande échelle), [[darts]] (mêmes modèles sous une API unifiée).
 
 ## Approches voisines & alternatives
 

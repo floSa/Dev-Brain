@@ -17,7 +17,7 @@ tags: [audio-classification, spectrogram, cnn]
 ## Concepts clés
 
 ### Du son à l'image
-- Le signal 1D est découpé en fenêtres et passé en [[STFT et spectrogramme|STFT]] → **mel-spectrogramme** (log-mel le plus souvent). On obtient une matrice temps × fréquence : une « image » à un canal. [[Dev/Services/librosa|librosa]] (`melspectrogram`) est l'outil de référence.
+- Le signal 1D est découpé en fenêtres et passé en [[STFT et spectrogramme|STFT]] → **mel-spectrogramme** (log-mel le plus souvent). On obtient une matrice temps × fréquence : une « image » à un canal. [[librosa]] (`melspectrogram`) est l'outil de référence.
 
 ### Pourquoi un CNN
 - Sur un spectrogramme, les motifs (harmoniques, transitoires, formants) sont **locaux et invariants par translation** en temps — exactement les biais inductifs du [[CNN]]. Un backbone vision ([[Architectures CNN]]) s'applique presque tel quel, l'entrée passant de 3 canaux RGB à 1 canal log-mel.

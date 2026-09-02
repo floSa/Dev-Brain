@@ -37,7 +37,7 @@ tags: [timeseries, stochastic-process]
 
 - Croiser **ADF + KPSS** : un seul test induit en erreur (un ADF non significatif ne prouve pas la stationnarité). Les deux d'accord → conclusion solide.
 - Ne pas **sur-différencier** : différencier au-delà du nécessaire injecte de l'autocorrélation négative artificielle et gonfle la variance.
-- Outils : [[Dev/Services/statsforecast|statsforecast]] et [[Dev/Services/darts|darts]] choisissent $d$/$D$ automatiquement via AutoARIMA ; `statsmodels` fournit `adfuller` et `kpss`.
+- Outils : [[statsforecast]] et [[darts]] choisissent $d$/$D$ automatiquement via AutoARIMA ; `statsmodels` fournit `adfuller` et `kpss`.
 
 ## Approches voisines & alternatives
 

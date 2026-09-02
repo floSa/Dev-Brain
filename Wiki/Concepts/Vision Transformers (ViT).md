@@ -38,7 +38,7 @@ tags: [vit, transformers, computer-vision, deep-learning]
 
 ## En pratique
 
-- Ne pas entraîner de zéro : partir d'un ViT pré-entraîné (timm, [[Dev/Services/HuggingFace|HuggingFace]]) et faire du [[Transfer learning vision|transfert]] ; le ViT est plus gourmand en données que le CNN à budget égal.
+- Ne pas entraîner de zéro : partir d'un ViT pré-entraîné (timm, [[HuggingFace]]) et faire du [[Transfer learning vision|transfert]] ; le ViT est plus gourmand en données que le CNN à budget égal.
 - Choix CNN vs ViT : peu de données / contrainte edge → CNN ; gros volume, backbone pré-entraîné fort, tâches multimodales → ViT.
 - Sert de backbone bien au-delà de la classification : détection (DETR), segmentation, [[Rendu neuronal 3D & estimation de profondeur|profondeur (DPT)]], encodeurs de VLM.
 

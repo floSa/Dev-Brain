@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Flyway|Flyway]]", "[[Dev/Services/Liquibase|Liquibase]]"]
+alternatives: ["[[Flyway]]", "[[Liquibase]]"]
 complements: []
 tags: [migration, relational]
 url_docs: https://alembic.sqlalchemy.org/
@@ -19,7 +19,7 @@ url_repo: https://github.com/sqlalchemy/alembic
 
 ## Pourquoi
 
-Outil de **migrations de schéma** pour [[Dev/Services/SQLAlchemy|SQLAlchemy]], écrit par le même auteur (Mike Bayer). Chaque changement est un script Python versionné, relié au précédent (révisions chaînées) et tracé en base. L'**autogénération** compare les modèles SQLAlchemy au schéma réel et produit un script de diff à relire. Gère les `ALTER`, les branches/merges de révisions et l'exécution offline (SQL généré sans connexion).
+Outil de **migrations de schéma** pour [[SQLAlchemy]], écrit par le même auteur (Mike Bayer). Chaque changement est un script Python versionné, relié au précédent (révisions chaînées) et tracé en base. L'**autogénération** compare les modèles SQLAlchemy au schéma réel et produit un script de diff à relire. Gère les `ALTER`, les branches/merges de révisions et l'exécution offline (SQL généré sans connexion).
 
 ## Quand l'utiliser
 
@@ -29,8 +29,8 @@ Outil de **migrations de schéma** pour [[Dev/Services/SQLAlchemy|SQLAlchemy]], 
 
 ## Quand NE PAS l'utiliser
 
-- Projet sans SQLAlchemy, ou migrations SQL-first / multi-SGBD → [[Dev/Services/Flyway|Flyway]] ou [[Dev/Services/Liquibase|Liquibase]].
-- Migrations couplées à un ORM TypeScript → [[Dev/Services/Prisma|Prisma]].
+- Projet sans SQLAlchemy, ou migrations SQL-first / multi-SGBD → [[Flyway]] ou [[Liquibase]].
+- Migrations couplées à un ORM TypeScript → [[Prisma]].
 
 ## Déploiement & coût
 
@@ -44,12 +44,12 @@ Outil de **migrations de schéma** pour [[Dev/Services/SQLAlchemy|SQLAlchemy]], 
 
 ## Alternatives
 
-- [[Dev/Services/Flyway|Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
-- [[Dev/Services/Liquibase|Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
+- [[Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
+- [[Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
 
 ## Liens
 
 - [[Migrations de schéma]] — le concept (Wiki)
-- [[Dev/Services/SQLAlchemy|SQLAlchemy]] — l'ORM dont Alembic dérive les migrations
+- [[SQLAlchemy]] — l'ORM dont Alembic dérive les migrations
 - [[Comparatif - Migrations de schéma]] — comparatif des outils de migration
 - Doc : https://alembic.sqlalchemy.org/

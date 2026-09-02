@@ -40,7 +40,7 @@ tags: [model-evaluation, clustering, unsupervised]
 - Avec étiquettes de référence : préférer ARI ou AMI (corrigés du hasard) à un Rand brut ou à une exactitude — insensibles à la permutation des labels.
 - La silhouette favorise les clusters convexes/sphériques : trompeuse pour [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]] (densité, formes arbitraires) → utiliser plutôt DBCV.
 - Évaluer dans l'espace où le clustering a un sens (après [[Réduction de dimension]] si la grande dimension écrase les distances).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — silhouette_score, davies_bouldin_score, calinski_harabasz_score, adjusted_rand_score, adjusted_mutual_info_score]].
+- Outils : [[Scikit-Learn|sklearn.metrics — silhouette_score, davies_bouldin_score, calinski_harabasz_score, adjusted_rand_score, adjusted_mutual_info_score]].
 
 ## Approches voisines & alternatives
 

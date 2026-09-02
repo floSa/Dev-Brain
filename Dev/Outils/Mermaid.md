@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web, CLI"
 langage: JavaScript
-alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
+alternatives: ["[[draw.io]]", "[[Archify]]"]
 complements: []
 tags: [diagram, diagram-as-code]
 url_docs: https://mermaid.js.org/
@@ -30,8 +30,8 @@ url_repo: https://github.com/mermaid-js/mermaid
 
 ## Quand NE PAS l'utiliser
 
-- Placement pixel-perfect ou mise en page très contrôlée → [[Dev/Outils/draw.io|draw.io]] (GUI).
-- Schéma libre / croquis de réunion → [[Dev/Outils/Excalidraw|Excalidraw]].
+- Placement pixel-perfect ou mise en page très contrôlée → [[draw.io]] (GUI).
+- Schéma libre / croquis de réunion → [[Excalidraw]].
 - Diagramme dense où l'auto-layout devient illisible : Mermaid place les nœuds automatiquement, on subit la mise en page.
 
 ## Bases & plateformes
@@ -47,10 +47,10 @@ url_repo: https://github.com/mermaid-js/mermaid
 
 ## Alternatives
 
-- [[Dev/Outils/draw.io|draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
-- [[Dev/Outils/Archify|Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
+- [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
+- [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Diagrammes|Comparatif - Diagrammes]]
+- [[Comparatif - Diagrammes]]
 - Docs : https://mermaid.js.org/ · Repo : https://github.com/mermaid-js/mermaid

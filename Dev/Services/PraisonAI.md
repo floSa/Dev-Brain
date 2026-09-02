@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: "Python, JavaScript"
-alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/Agno|Agno]]", "[[Dev/Services/smolagents|smolagents]]"]
+alternatives: ["[[CrewAI]]", "[[AutoGen]]", "[[Agno]]", "[[smolagents]]"]
 complements: []
 tags: [llm, agents, multi-agent, tool-use, low-code, mcp]
 url_docs: https://praison.ai/docs
@@ -23,7 +23,7 @@ Framework d'agents dont le parti pris est **l'entrée low-code** : un `agents.ya
 
 Deuxième trait distinctif : la **couche d'auto-réflexion**. Un agent peut relire sa propre sortie et la reprendre avant de la rendre, sans qu'un second agent critique soit câblé à la main. Le framework livre aussi mémoire et RAG intégrés, une centaine d'outils prêts à l'emploi, et des **clients MCP** sur quatre transports (stdio, HTTP, SSE, WebSocket) pour consommer des serveurs d'outils externes.
 
-Contrairement à une idée répandue dans les comparatifs, PraisonAI **n'enrobe ni [[Dev/Services/CrewAI|CrewAI]] ni [[Dev/Services/AutoGen|AutoGen]]** : c'est une implémentation autonome. Il rejoint donc la famille des frameworks multi-agents Python, avec le YAML comme différenciateur face à leurs API impératives. Licence **MIT**, développement soutenu.
+Contrairement à une idée répandue dans les comparatifs, PraisonAI **n'enrobe ni [[CrewAI]] ni [[AutoGen]]** : c'est une implémentation autonome. Il rejoint donc la famille des frameworks multi-agents Python, avec le YAML comme différenciateur face à leurs API impératives. Licence **MIT**, développement soutenu.
 
 ## Quand l'utiliser
 
@@ -34,11 +34,11 @@ Contrairement à une idée répandue dans les comparatifs, PraisonAI **n'enrobe 
 
 ## Quand NE PAS l'utiliser
 
-- Contrôle bas niveau du graphe d'état (cycles explicites, checkpoints, reprise) → [[Dev/Services/LangGraph|LangGraph]].
-- Bibliothèque **minimale et lisible de bout en bout**, à auditer intégralement → [[Dev/Services/smolagents|smolagents]].
-- Performance d'instanciation et runtime de production gouverné → [[Dev/Services/Agno|Agno]].
-- Simple appel LLM ou extraction structurée, sans agents → [[Dev/Services/Instructor|Instructor]] / [[Dev/Services/PydanticAI|PydanticAI]].
-- Préférence pour un **canvas visuel** plutôt qu'un fichier YAML → [[Dev/Services/Langflow|Langflow]] / [[Dev/Services/Dify|Dify]].
+- Contrôle bas niveau du graphe d'état (cycles explicites, checkpoints, reprise) → [[LangGraph]].
+- Bibliothèque **minimale et lisible de bout en bout**, à auditer intégralement → [[smolagents]].
+- Performance d'instanciation et runtime de production gouverné → [[Agno]].
+- Simple appel LLM ou extraction structurée, sans agents → [[Instructor]] / [[PydanticAI]].
+- Préférence pour un **canvas visuel** plutôt qu'un fichier YAML → [[Langflow]] / [[Dify]].
 
 ## Déploiement & coût
 
@@ -58,15 +58,15 @@ Contrairement à une idée répandue dans les comparatifs, PraisonAI **n'enrobe 
 
 ## Alternatives
 
-- [[Dev/Services/CrewAI|CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
-- [[Dev/Services/AutoGen|AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
-- [[Dev/Services/Agno|Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
-- [[Dev/Services/smolagents|smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
+- [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
+- [[smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
 
 ## Liens
 
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/Agno|Agno]], [[Dev/Services/smolagents|smolagents]], et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
+- Même famille de **frameworks d'agents** que [[CrewAI]], [[AutoGen]], [[Agno]], [[smolagents]], et la couche d'orchestration [[LangGraph]].
+- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]], [[mcp-protocol]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://praison.ai/docs

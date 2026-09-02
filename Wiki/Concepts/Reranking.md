@@ -24,7 +24,7 @@ tags: [retrieval, reranking, ranking, rag]
 - Récupérer large (top-50/100) au 1er étage, reclasser puis garder le top-3/5 au reranker. Le LLM ne voit que l'élite.
 
 ### Variantes
-- **Cross-encoders ouverts** : BGE-reranker, mxbai-rerank (via [[Dev/Services/HuggingFace|HuggingFace]]).
+- **Cross-encoders ouverts** : BGE-reranker, mxbai-rerank (via [[HuggingFace]]).
 - **API managées** : Cohere Rerank, Jina Reranker.
 - **LLM-as-reranker** : demander au LLM de scorer / ordonner les passages (souple, cher).
 
@@ -37,7 +37,7 @@ tags: [retrieval, reranking, ranking, rag]
 
 - Souvent le **meilleur rapport gain/effort** après le retrieval hybride : un reranker sur un top-k correct relève nettement la précision finale.
 - Choisir la profondeur : reranker trop de candidats = latence ; trop peu = on perd le bénéfice du large rappel amont.
-- Intégré nativement dans [[Dev/Services/Haystack|Haystack]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/LangChain|LangChain]] (rankers, node postprocessors, compressors).
+- Intégré nativement dans [[Haystack]], [[LlamaIndex]], [[LangChain]] (rankers, node postprocessors, compressors).
 - Piège : reranker un top-k déjà mauvais ne crée pas l'information manquante — soigner d'abord [[Hybrid retrieval]] et [[Chunking strategies]].
 
 ## Approches voisines & alternatives

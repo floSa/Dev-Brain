@@ -43,7 +43,7 @@ tags: [monte-carlo, markov, bayesian]
 
 ## En pratique
 
-- Outils : [[Dev/Services/PyMC|PyMC]], [[Dev/Services/Stan|Stan]] (`cmdstanpy`), NumPyro / Pyro ; spécifier le modèle, lancer plusieurs chaînes, vérifier $\hat{R}$ et l'ESS avec [[Dev/Services/ArviZ|ArviZ]].
+- Outils : [[PyMC]], [[Stan]] (`cmdstanpy`), NumPyro / Pyro ; spécifier le modèle, lancer plusieurs chaînes, vérifier $\hat{R}$ et l'ESS avec [[ArviZ]].
 - Coûteux et corrélé : surveiller le mélange ; reparamétrer (centré vs non centré) si la chaîne traîne.
 - Alternatives : [[A priori conjugués]] (a posteriori exact, sans simulation) ; inférence variationnelle (approchée mais rapide, passe à l'échelle).
 

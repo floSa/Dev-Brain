@@ -40,7 +40,7 @@ tags: [forecasting, timeseries]
 
 - Piège n°1 : la **fuite temporelle** (entraîner sur le futur, standardiser sur tout l'historique, utiliser une covariable indisponible à la prévision). Tout pré-traitement s'ajuste *dans* la fenêtre d'entraînement.
 - Choisir la métrique selon l'usage (échelle, zéros, asymétrie sur/sous-stock) avant de comparer les modèles.
-- Outils : [[Dev/Services/darts|darts]] (backtesting et `historical_forecasts` intégrés), [[Dev/Services/statsforecast|statsforecast]] (cross-validation temporelle à grande échelle), [[Dev/Services/Prophet|Prophet]] (baseline interprétable), [[Dev/Services/pmdarima|pmdarima]] (AutoARIMA sur une série, interface scikit-learn). Protocole d'éval : [[Validation croisée]] (TimeSeriesSplit).
+- Outils : [[darts]] (backtesting et `historical_forecasts` intégrés), [[statsforecast]] (cross-validation temporelle à grande échelle), [[Prophet]] (baseline interprétable), [[pmdarima]] (AutoARIMA sur une série, interface scikit-learn). Protocole d'éval : [[Validation croisée]] (TimeSeriesSplit).
 
 ## Approches voisines & alternatives
 

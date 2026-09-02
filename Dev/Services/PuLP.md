@@ -40,7 +40,7 @@ Modeleur Python pour la **programmation linéaire (LP)** et **en nombres entiers
 
 ## Pièges
 
-- CBC est correct mais loin des solveurs commerciaux sur les gros MIP : si le branch & bound traîne, c'est presque toujours la **formulation** (big-M lâche) avant le choix du solveur — voir [[Wiki/Concepts/Programmation linéaire en nombres entiers (MIP)|MIP]].
+- CBC est correct mais loin des solveurs commerciaux sur les gros MIP : si le branch & bound traîne, c'est presque toujours la **formulation** (big-M lâche) avant le choix du solveur — voir [[Programmation linéaire en nombres entiers (MIP)|MIP]].
 - `value()` renvoie `None` tant que le modèle n'a pas été résolu ou s'il est infaisable : toujours vérifier `LpStatus[prob.status]`.
 - Les noms de variables avec espaces ou caractères spéciaux cassent l'export LP : garder des noms simples.
 
@@ -52,6 +52,6 @@ Modeleur Python pour la **programmation linéaire (LP)** et **en nombres entiers
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Solveurs d'optimisation]] — modeleurs & solveurs LP/MIP/non linéaire.
-- Concept sous-jacent : [[Wiki/Concepts/Programmation linéaire en nombres entiers (MIP)|programmation linéaire en nombres entiers (MIP)]].
+- [[Comparatif - Solveurs d'optimisation]] — modeleurs & solveurs LP/MIP/non linéaire.
+- Concept sous-jacent : [[Programmation linéaire en nombres entiers (MIP)|programmation linéaire en nombres entiers (MIP)]].
 - Doc : https://coin-or.github.io/pulp/

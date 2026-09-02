@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: "TypeScript, Swift"
 scaling: single-node
-alternatives: ["[[Dev/Services/Hermes Agent|Hermes Agent]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"]
+alternatives: ["[[Hermes Agent]]", "[[LM Studio Bionic]]"]
 complements: []
 tags: [llm, agents, tool-use, mcp]
 url_docs: https://docs.openclaw.ai/
@@ -33,8 +33,8 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 
 ## Quand NE PAS l'utiliser
 
-- Construire un agent **dans sa propre application** : c'est un produit fini, pas une bibliothèque → [[Dev/Services/Agno|Agno]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/LangGraph|LangGraph]].
-- Agent de **développement** qui écrit du code et exécute des commandes sur un dépôt → [[Dev/Services/OpenHands|OpenHands]].
+- Construire un agent **dans sa propre application** : c'est un produit fini, pas une bibliothèque → [[Agno]], [[OpenAI Agents SDK]], [[LangGraph]].
+- Agent de **développement** qui écrit du code et exécute des commandes sur un dépôt → [[OpenHands]].
 - Contexte où l'agent manipulerait des **données sensibles ou réglementées** : la surface d'attaque documentée (cf. *Pièges*) rend l'exercice difficile à défendre.
 
 ## Déploiement & coût
@@ -53,13 +53,13 @@ Le projet est né **Warelay** en novembre 2025 (Peter Steinberger), renommé **M
 
 ## Alternatives
 
-- [[Dev/Services/Hermes Agent|Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
-- [[Dev/Services/LM Studio Bionic|LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
+- [[Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
+- [[LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
 
 ## Liens
 
-- Même famille d'**agents prêts à l'emploi** que [[Dev/Services/Hermes Agent|Hermes Agent]] (assistant généraliste) et [[Dev/Services/OpenHands|OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Dev/Services/Agno|Agno]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]]).
-- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
+- Même famille d'**agents prêts à l'emploi** que [[Hermes Agent]] (assistant généraliste) et [[OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Agno]], [[CrewAI]], [[smolagents]]).
+- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[fastmcp]] pour en écrire.
 - C'est un **harnais** au sens de [[Harnais d'agent]] : le modèle reste interchangeable derrière.
 - [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local ; attention à l'endpoint natif d'Ollama.
 - Concepts : [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].

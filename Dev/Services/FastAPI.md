@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Flask|Flask]]"]
+alternatives: ["[[Flask]]"]
 complements: []
 tags: [web-framework, type-hints]
 url_docs: https://fastapi.tiangolo.com
@@ -19,7 +19,7 @@ url_repo: https://github.com/fastapi/fastapi
 
 ## Pourquoi
 
-Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (couche ASGI / routage) et [[Dev/Services/Pydantic|Pydantic]] (validation), il déduit des annotations de type la validation des entrées/sorties, la sérialisation et la **documentation OpenAPI** (Swagger UI / ReDoc). DX forte : autocomplétion, erreurs détectées tôt, peu de code répétitif. Créé par Sebastián Ramírez (tiangolo), très actif (0.13x en 2026).
+Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (couche ASGI / routage) et [[Pydantic]] (validation), il déduit des annotations de type la validation des entrées/sorties, la sérialisation et la **documentation OpenAPI** (Swagger UI / ReDoc). DX forte : autocomplétion, erreurs détectées tôt, peu de code répétitif. Créé par Sebastián Ramírez (tiangolo), très actif (0.13x en 2026).
 
 ## Quand l'utiliser
 
@@ -34,7 +34,7 @@ Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (co
 
 ## Déploiement & coût
 
-- Bibliothèque open-source (MIT), gratuite. S'exécute derrière un serveur ASGI ([[Dev/Services/Uvicorn|Uvicorn]]), souvent supervisé par Gunicorn (workers) ou en conteneur.
+- Bibliothèque open-source (MIT), gratuite. S'exécute derrière un serveur ASGI ([[Uvicorn]]), souvent supervisé par Gunicorn (workers) ou en conteneur.
 - Sans état : montée en charge horizontale (plusieurs instances derrière un load balancer) ou serverless ; scaling par processus → single-node.
 
 ## Pièges
@@ -44,11 +44,11 @@ Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (co
 
 ## Alternatives
 
-- [[Dev/Services/Flask|Flask]] — Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
+- [[Flask]] — Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
-- [[Dev/Services/Uvicorn|Uvicorn]] — serveur ASGI qui exécute l'application
-- [[Dev/Services/Pydantic|Pydantic]] — validation des données dont FastAPI dépend
+- [[Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
+- [[Uvicorn]] — serveur ASGI qui exécute l'application
+- [[Pydantic]] — validation des données dont FastAPI dépend
 - Doc : https://fastapi.tiangolo.com

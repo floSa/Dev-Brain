@@ -32,7 +32,7 @@ Apache Flink est un moteur de **traitement de flux avec état**, distribué. Vra
 
 ## Quand NE PAS l'utiliser
 
-- DAGs batch planifiés et leur lignage → [[Dev/Services/Airflow|Airflow]] / [[Dev/Services/Dagster|Dagster]] (orchestrateurs, pas moteurs de flux).
+- DAGs batch planifiés et leur lignage → [[Airflow]] / [[Dagster]] (orchestrateurs, pas moteurs de flux).
 - Transformations légères couplées à Kafka uniquement → Kafka Streams (plus simple à opérer).
 - Analytique batch sur fichiers → Spark / DuckDB.
 - Petite échelle sans besoin temps réel → Flink est surdimensionné.
@@ -57,6 +57,6 @@ Apache Flink est un moteur de **traitement de flux avec état**, distribué. Vra
 ## Liens
 
 - [[Stream processing]] — le concept (Wiki) : event-time, windowing, watermarks, exactly-once.
-- [[Dev/Services/Apache Iceberg|Apache Iceberg]] — cible d'écriture fréquente pour des tables de lakehouse.
+- [[Apache Iceberg]] — cible d'écriture fréquente pour des tables de lakehouse.
 - Source / sink de flux courant : Apache Kafka.
 - Doc : https://nightlies.apache.org/flink/flink-docs-stable/

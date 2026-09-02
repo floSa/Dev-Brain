@@ -10,7 +10,7 @@ hosted: [managed]
 maturite: production
 langage: "TypeScript, Go"
 scaling: serverless
-alternatives: ["[[Dev/Services/E2B|E2B]]", "[[Dev/Services/Modal|Modal]]"]
+alternatives: ["[[E2B]]", "[[Modal]]"]
 complements: []
 tags: [agents, llm, container, ai-security]
 url_docs: https://www.daytona.io/docs
@@ -35,8 +35,8 @@ Le produit a pivoté : issu d'un outil d'environnements de développement, il s'
 
 ## Quand NE PAS l'utiliser
 
-- Exigence d'**auto-hébergement** ou d'audit du code d'isolation → [[Dev/Services/E2B|E2B]] (Apache-2.0, self-host documenté).
-- Besoin de **GPU dans le bac à sable** → [[Dev/Services/Modal|Modal]].
+- Exigence d'**auto-hébergement** ou d'audit du code d'isolation → [[E2B]] (Apache-2.0, self-host documenté).
+- Besoin de **GPU dans le bac à sable** → [[Modal]].
 - Volonté de bâtir sur le dépôt public : il n'est **plus maintenu**, s'y appuyer revient à reprendre un fork sans correctifs de sécurité — sur une brique de sécurité.
 
 ## Déploiement & coût
@@ -53,12 +53,12 @@ Le produit a pivoté : issu d'un outil d'environnements de développement, il s'
 
 ## Alternatives
 
-- [[Dev/Services/E2B|E2B]] — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
-- [[Dev/Services/Modal|Modal]] — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
+- [[E2B]] — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
+- [[Modal]] — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
 
 ## Liens
 
 - Implémente le concept [[Sandboxing de code généré]] — kernel dédié et snapshots d'état.
-- Backend d'exécution proposé par [[Dev/Services/Hermes Agent|Hermes Agent]], aux côtés de Docker, SSH, Singularity et Modal.
+- Backend d'exécution proposé par [[Hermes Agent]], aux côtés de Docker, SSH, Singularity et Modal.
 - Sécurité : [[AI security]], [[Prompt injection]].
 - Doc : https://www.daytona.io/docs

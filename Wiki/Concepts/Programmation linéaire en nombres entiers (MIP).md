@@ -36,7 +36,7 @@ tags: [optimization, linear-programming, combinatorial-optimization]
 ## En pratique
 
 - Sert à modéliser tournées de véhicules, planification, allocation de ressources, sac à dos, affectation — voir [[Optimisation combinatoire]].
-- Solveurs : Gurobi, CPLEX (commerciaux, très rapides), HiGHS, CBC, SCIP (open source). Modélisation Python : [[Dev/Services/PuLP|PuLP]] (CBC par défaut), `Pyomo`, `OR-Tools`, `cvxpy`.
+- Solveurs : Gurobi, CPLEX (commerciaux, très rapides), HiGHS, CBC, SCIP (open source). Modélisation Python : [[PuLP]] (CBC par défaut), `Pyomo`, `OR-Tools`, `cvxpy`.
 - Piège : une formulation « big-M » mal calibrée donne une relaxation lâche → arbre qui explose. Soigner la formulation prime sur le choix du solveur.
 
 ## Approches voisines & alternatives

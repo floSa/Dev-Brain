@@ -50,7 +50,7 @@ tags: [quantization, model-compression, deep-learning, inference-optimization]
 
 - Le **4 bits** est le point d'équilibre qualité/mémoire pour le LLM local ; en dessous (Q2/Q3), la qualité chute nettement — surveiller la « falaise ».
 - Se combine avec le fine-tuning : **[[LoRA et QLoRA|QLoRA]]** entraîne des adaptateurs LoRA au-dessus d'un modèle gelé en 4 bits (NF4).
-- Runtimes qui l'exploitent : [[Dev/Services/vLLM|vLLM]] (AWQ, GPTQ, FP8) pour le débit GPU, [[Dev/Services/llama.cpp|llama.cpp]] (GGUF, K-quants, imatrix) pour CPU et GPU grand public.
+- Runtimes qui l'exploitent : [[vLLM]] (AWQ, GPTQ, FP8) pour le débit GPU, [[llama.cpp]] (GGUF, K-quants, imatrix) pour CPU et GPU grand public.
 - Complémentaire de la [[Distillation]] : distiller réduit la **taille**, quantizer réduit la **précision** — souvent enchaînés.
 
 ## Approches voisines & alternatives
@@ -64,8 +64,8 @@ tags: [quantization, model-compression, deep-learning, inference-optimization]
 - [[Mixed precision]] — la quantization d'**entraînement** en est le prolongement direct : mêmes questions d'échelle et de maîtres en haute précision, à 4 bits au lieu de 16.
 - [[Multi-head Latent Attention]] — levier orthogonal sur le KV-cache : MLA réduit le **nombre** de valeurs à stocker, la quantization le **nombre de bits** par valeur.
 - [[Mixture of Experts]] — un MoE économise du calcul mais pas de la VRAM ; la quantization est le complément qui attaque le poste restant.
-- [[Dev/Services/vLLM|vLLM]] — serving GPU haut débit avec quantization AWQ/GPTQ/FP8.
-- [[Dev/Services/llama.cpp|llama.cpp]] — quantization agressive GGUF/K-quants pour l'inférence locale.
+- [[vLLM]] — serving GPU haut débit avec quantization AWQ/GPTQ/FP8.
+- [[llama.cpp]] — quantization agressive GGUF/K-quants pour l'inférence locale.
 
 ## Pour aller plus loin
 

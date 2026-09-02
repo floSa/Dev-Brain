@@ -10,7 +10,7 @@ hosted: [managed]
 maturite: production
 langage: Python
 scaling: serverless
-alternatives: ["[[Dev/Services/Unstructured|Unstructured]]", "[[Dev/Services/Docling|Docling]]", "[[Dev/Services/Marker|Marker]]"]
+alternatives: ["[[Unstructured]]", "[[Docling]]", "[[Marker]]"]
 complements: []
 tags: [document-parsing, rag, ocr]
 url_docs: https://docs.cloud.llamaindex.ai/
@@ -32,9 +32,9 @@ LlamaParse est le service de parsing de documents de **LlamaCloud** (LlamaIndex)
 
 ## Quand NE PAS l'utiliser
 
-- Documents **confidentiels** interdits de cloud tiers → [[Dev/Services/Docling|Docling]] / [[Dev/Services/Unstructured|Unstructured]] en local.
-- Gros volumes où le coût crédits explose → self-host [[Dev/Services/Marker|Marker]] / [[Dev/Services/Docling|Docling]].
-- Simple extraction de texte d'un PDF basique → [[Dev/Services/PyMuPDF|PyMuPDF]] / [[Dev/Services/pdfplumber|pdfplumber]].
+- Documents **confidentiels** interdits de cloud tiers → [[Docling]] / [[Unstructured]] en local.
+- Gros volumes où le coût crédits explose → self-host [[Marker]] / [[Docling]].
+- Simple extraction de texte d'un PDF basique → [[PyMuPDF]] / [[pdfplumber]].
 
 ## Déploiement & coût
 
@@ -50,9 +50,9 @@ LlamaParse est le service de parsing de documents de **LlamaCloud** (LlamaIndex)
 
 ## Alternatives
 
-- [[Dev/Services/Unstructured|Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
-- [[Dev/Services/Docling|Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
-- [[Dev/Services/Marker|Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
+- [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
+- [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 
 ## Liens
 

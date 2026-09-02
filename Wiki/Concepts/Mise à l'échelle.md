@@ -40,7 +40,7 @@ tags: [feature-engineering]
 - **Inutile** : arbres et ensembles d'arbres (invariants à toute transformation monotone par variable).
 - `fit` sur le train uniquement (sinon fuite, cf. [[Ingénierie des caractéristiques]]), `transform` le test avec les mêmes paramètres.
 - Outliers marqués → RobustScaler ; bornes nécessaires → MinMax ; sinon Standard.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.preprocessing]] (`StandardScaler`, `MinMaxScaler`, `RobustScaler`).
+- Outils : [[Scikit-Learn|sklearn.preprocessing]] (`StandardScaler`, `MinMaxScaler`, `RobustScaler`).
 
 ## Approches voisines & alternatives
 

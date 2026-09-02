@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Detectron2|Detectron2]]"]
+alternatives: ["[[Detectron2]]"]
 complements: []
 tags: [object-detection, segmentation, pose-estimation, object-tracking, computer-vision, deep-learning, gpu]
 url_docs: https://docs.ultralytics.com/
@@ -30,9 +30,9 @@ Implémentation et maintenance de la famille **YOLO** (You Only Look Once) — d
 
 ## Quand NE PAS l'utiliser
 
-- Architecture de détection **modulaire et customisable** (têtes, RPN, panoptique) pour la recherche → [[Dev/Services/Detectron2|Detectron2]].
-- Briques de détection/segmentation **dans** l'écosystème PyTorch officiel sans contrainte de licence → [[Dev/Services/torchvision|torchvision]] (Faster/Mask R-CNN, RetinaNet).
-- Segmentation **promptable zero-shot** sans entraîner de classes → [[Dev/Services/segment-anything|segment-anything]].
+- Architecture de détection **modulaire et customisable** (têtes, RPN, panoptique) pour la recherche → [[Detectron2]].
+- Briques de détection/segmentation **dans** l'écosystème PyTorch officiel sans contrainte de licence → [[torchvision]] (Faster/Mask R-CNN, RetinaNet).
+- Segmentation **promptable zero-shot** sans entraîner de classes → [[segment-anything]].
 - Projet **commercial fermé** réticent à l'AGPL-3.0 → prévoir la licence Enterprise (voir ci-dessous) ou une alternative permissive.
 
 ## Déploiement & coût
@@ -50,12 +50,12 @@ Implémentation et maintenance de la famille **YOLO** (You Only Look Once) — d
 
 ## Alternatives
 
-- [[Dev/Services/Detectron2|Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
+- [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
 
 ## Liens
 
 - [[Détection d'objets]] — la tâche cœur (un étage, anchors, NMS, mAP).
 - [[Segmentation]] / [[Estimation de pose]] / [[Suivi d'objets]] — les autres tâches couvertes par la même API.
-- [[Dev/Services/supervision|supervision]] — outillage model-agnostic pour annoter et suivre les sorties YOLO.
-- [[Dev/Services/PyTorch|PyTorch]] — le framework sous-jacent.
+- [[supervision]] — outillage model-agnostic pour annoter et suivre les sorties YOLO.
+- [[PyTorch]] — le framework sous-jacent.
 - Doc : https://docs.ultralytics.com/ · Licence : https://www.ultralytics.com/license

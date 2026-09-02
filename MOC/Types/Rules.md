@@ -10,11 +10,11 @@ indexe: type/rule
 <!-- AUTO:START -->
 Règles transverses, applicables quelle que soit la stack du projet.
 
-- [[Dev/Rules/Rule - Config typée|Rule - Config typée]]
-- [[Dev/Rules/Rule - Packaging démo|Rule - Packaging démo]]
-- [[Dev/Rules/Rule - Qualité stricte|Rule - Qualité stricte]]
-- [[Dev/Rules/Rule - Structure de projet|Rule - Structure de projet]]
-- [[Dev/Rules/Rule - Toolchain Python|Rule - Toolchain Python]]
+- [[Rule - Config typée]]
+- [[Rule - Packaging démo]]
+- [[Rule - Qualité stricte]]
+- [[Rule - Structure de projet]]
+- [[Rule - Toolchain Python]]
 <!-- AUTO:END -->
 
 ## Notes

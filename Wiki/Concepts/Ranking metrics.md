@@ -41,7 +41,7 @@ tags: [model-evaluation, ranking]
 - Cas central de l'évaluation d'un retriever RAG et des systèmes de recommandation.
 - L'AUC de [[ROC-AUC & courbe PR]] est elle-même une métrique de rang (probabilité qu'un positif soit mieux classé qu'un négatif).
 - Découper par requête / utilisateur en [[Validation croisée]] pour éviter qu'une même requête fuite entre train et test.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — ndcg_score, label_ranking_average_precision_score]], `pytrec_eval`, `ranx`.
+- Outils : [[Scikit-Learn|sklearn.metrics — ndcg_score, label_ranking_average_precision_score]], `pytrec_eval`, `ranx`.
 
 ## Approches voisines & alternatives
 

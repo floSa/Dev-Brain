@@ -58,8 +58,8 @@ tags: [dimensionality-reduction, factor-analysis, unsupervised]
 - **Terrain naturel : les signaux.** EEG/MEG (retirer les artefacts oculaires est *l'*application canonique), audio, capteurs. Partout où l'hypothèse « mélange linéaire de sources » a un sens physique.
 - **Vérifier la non-gaussianité des sources supposées** avant de se lancer. Si elles sont gaussiennes, la méthode ne peut pas fonctionner — ce n'est pas un problème de réglage.
 - **Sensible aux outliers**, surtout avec `fun='cube'` (moment d'ordre 4). Nettoyer en amont ([[Détection d'outliers univariée]]).
-- **Usage en interprétabilité** : [[Dev/Services/interpreto|interpreto]] propose l'ICA comme méthode de dictionnaire sur les activations, à côté des [[Sparse autoencoders|SAE]] et de la [[NMF]]. Linéaire, instantanée, sans entraînement — la baseline honnête avant de sortir un SAE.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.decomposition.FastICA]] ; [[Dev/Services/scipy.signal|scipy.signal]] pour le prétraitement.
+- **Usage en interprétabilité** : [[interpreto]] propose l'ICA comme méthode de dictionnaire sur les activations, à côté des [[Sparse autoencoders|SAE]] et de la [[NMF]]. Linéaire, instantanée, sans entraînement — la baseline honnête avant de sortir un SAE.
+- Outils : [[Scikit-Learn|sklearn.decomposition.FastICA]] ; [[scipy.signal]] pour le prétraitement.
 
 ## Approches voisines & alternatives
 

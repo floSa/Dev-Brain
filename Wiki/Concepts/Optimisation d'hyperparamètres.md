@@ -43,7 +43,7 @@ tags: [hyperparameter-tuning, model-evaluation, bayesian]
 - Commencer en random search large pour cerner la zone utile, puis affiner (bayésien ou grille resserrée).
 - Couper tôt les essais sans promesse (successive halving, Hyperband) pour économiser le budget.
 - Régler revient à viser le point bas du [[Compromis biais-variance]] (curseur de complexité / régularisation).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.model_selection — GridSearchCV, RandomizedSearchCV, HalvingGridSearchCV]] ; [[Dev/Services/Optuna|Optuna]] pour le bayésien et le pruning ; [[Dev/Services/Hyperopt|Hyperopt]] (TPE historique) ; [[Dev/Services/Ray Tune|Ray Tune]] pour l'orchestration distribuée (schedulers ASHA/PBT).
+- Outils : [[Scikit-Learn|sklearn.model_selection — GridSearchCV, RandomizedSearchCV, HalvingGridSearchCV]] ; [[Optuna]] pour le bayésien et le pruning ; [[Hyperopt]] (TPE historique) ; [[Ray Tune]] pour l'orchestration distribuée (schedulers ASHA/PBT).
 
 ## Approches voisines & alternatives
 

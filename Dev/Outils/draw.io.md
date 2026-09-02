@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web, Windows, macOS, Linux"
 langage: JavaScript
-alternatives: ["[[Dev/Outils/Excalidraw|Excalidraw]]", "[[Dev/Outils/Mermaid|Mermaid]]", "[[Dev/Outils/FossFLOW|FossFLOW]]", "[[Dev/Outils/Archify|Archify]]"]
+alternatives: ["[[Excalidraw]]", "[[Mermaid]]", "[[FossFLOW]]", "[[Archify]]"]
 complements: []
 tags: [diagram]
 url_docs: https://www.drawio.com/docs/
@@ -30,9 +30,9 @@ url_repo: https://github.com/jgraph/drawio
 
 ## Quand NE PAS l'utiliser
 
-- Diagramme à **versionner dans le repo** et régénérer automatiquement → [[Dev/Outils/Mermaid|Mermaid]] (texte).
-- Croquis rapide, réunion, brainstorming → [[Dev/Outils/Excalidraw|Excalidraw]].
-- Rendu isométrique 3D d'infrastructure → [[Dev/Outils/FossFLOW|FossFLOW]].
+- Diagramme à **versionner dans le repo** et régénérer automatiquement → [[Mermaid]] (texte).
+- Croquis rapide, réunion, brainstorming → [[Excalidraw]].
+- Rendu isométrique 3D d'infrastructure → [[FossFLOW]].
 
 ## Bases & plateformes
 
@@ -48,12 +48,12 @@ url_repo: https://github.com/jgraph/drawio
 
 ## Alternatives
 
-- [[Dev/Outils/Excalidraw|Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
-- [[Dev/Outils/Mermaid|Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
-- [[Dev/Outils/FossFLOW|FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
-- [[Dev/Outils/Archify|Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
+- [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
+- [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
+- [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
+- [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Diagrammes|Comparatif - Diagrammes]]
+- [[Comparatif - Diagrammes]]
 - Docs : https://www.drawio.com/docs/ · Repo : https://github.com/jgraph/drawio

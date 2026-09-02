@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Ragas|Ragas]]", "[[Dev/Services/DeepEval|DeepEval]]", "[[Dev/Services/promptfoo|promptfoo]]"]
+alternatives: ["[[Ragas]]", "[[DeepEval]]", "[[promptfoo]]"]
 complements: []
 tags: [llm, llm-eval, tracing, llm-as-judge]
 url_docs: https://www.trulens.org/
@@ -30,9 +30,9 @@ Bibliothèque Python d'**évaluation et de traçage** d'apps LLM et d'agents (MI
 
 ## Quand NE PAS l'utiliser
 
-- Éval **RAG offline** rapide sans instrumenter le code → [[Dev/Services/Ragas|Ragas]].
-- Harnais de **tests en CI** avec large catalogue de métriques et assertions → [[Dev/Services/DeepEval|DeepEval]].
-- **Observabilité de production** multi-équipes (dashboards hébergés, gestion de prompts, coûts) → [[Dev/Services/Langfuse|Langfuse]], [[Dev/Services/LangSmith|LangSmith]], [[Dev/Services/Phoenix Arize|Phoenix Arize]].
+- Éval **RAG offline** rapide sans instrumenter le code → [[Ragas]].
+- Harnais de **tests en CI** avec large catalogue de métriques et assertions → [[DeepEval]].
+- **Observabilité de production** multi-équipes (dashboards hébergés, gestion de prompts, coûts) → [[Langfuse]], [[LangSmith]], [[Phoenix Arize]].
 
 ## Déploiement & coût
 
@@ -42,21 +42,21 @@ Bibliothèque Python d'**évaluation et de traçage** d'apps LLM et d'agents (MI
 
 ## Pièges
 
-- Frontière floue **éval ↔ observabilité** : TruLens trace, mais n'est pas une plateforme de monitoring multi-équipes hébergée — pour ça, voir [[Dev/Services/Langfuse|Langfuse]].
+- Frontière floue **éval ↔ observabilité** : TruLens trace, mais n'est pas une plateforme de monitoring multi-équipes hébergée — pour ça, voir [[Langfuse]].
 - Feedback functions LLM-as-judge **bruitées** : fixer le modèle, agréger.
 - L'instrumentation ajoute une **surcharge** : échantillonner en charge.
 
 ## Alternatives
 
-- [[Dev/Services/Ragas|Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
-- [[Dev/Services/DeepEval|DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
-- [[Dev/Services/promptfoo|promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
+- [[Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
+- [[DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
+- [[promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 
 ## Liens
 
 - Socle de **Snowflake AI Observability** (Cortex).
-- Instrumente des apps [[Dev/Services/LangChain|LangChain]] / [[Dev/Services/LlamaIndex|LlamaIndex]].
-- Complémentaire des plateformes [[Dev/Services/Langfuse|Langfuse]] / [[Dev/Services/Phoenix Arize|Phoenix Arize]] (observabilité hébergée).
+- Instrumente des apps [[LangChain]] / [[LlamaIndex]].
+- Complémentaire des plateformes [[Langfuse]] / [[Phoenix Arize]] (observabilité hébergée).
 - Concepts : [[LLM eval metrics]], [[LLM-as-judge]] (feedback functions), [[RAG eval]].
 - [[Comparatif - Évaluation LLM]] — comparatif de la catégorie
 - Doc : https://www.trulens.org/

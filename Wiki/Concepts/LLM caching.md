@@ -17,7 +17,7 @@ tags: [caching, llm, semantic-search, in-memory]
 ## Concepts clés
 
 ### Exact-match
-- Clé = hash du prompt. Simple et sûr, mais ne fait mouche que sur un prompt **identique**. Store rapide en mémoire ([[Dev/Services/Redis|Redis]]).
+- Clé = hash du prompt. Simple et sûr, mais ne fait mouche que sur un prompt **identique**. Store rapide en mémoire ([[Redis]]).
 
 ### Cache sémantique
 - Encoder la requête en [[embeddings|embedding]], chercher la plus proche déjà vue ([[Hybrid retrieval|recherche]] de similarité), servir sa réponse si la similarité dépasse un **seuil**.
@@ -42,7 +42,7 @@ tags: [caching, llm, semantic-search, in-memory]
 
 ## En pratique
 
-- Outillage : **GPTCache** (lib dédiée), [[Dev/Services/Redis|Redis]] (exact, ou vectoriel pour le sémantique), souvent branché en passerelle ([[Dev/Services/LiteLLM|LiteLLM]] gère le caching).
+- Outillage : **GPTCache** (lib dédiée), [[Redis]] (exact, ou vectoriel pour le sémantique), souvent branché en passerelle ([[LiteLLM]] gère le caching).
 - Toujours **mesurer les faux positifs** du cache sémantique sur un échantillon avant de l'activer en prod.
 - Couplage [[Routing and cascading|cascade]] : le cache est l'**étage 0**, consulté avant tout modèle — le hit le moins cher possible.
 
@@ -51,8 +51,8 @@ tags: [caching, llm, semantic-search, in-memory]
 - [[prompt-caching]] — cache du **calcul du préfixe** côté serveur, complémentaire (niveau en dessous).
 - [[embeddings]] — la clé du cache sémantique.
 - [[Routing and cascading]] — le cache court-circuite la cascade sur les requêtes connues.
-- [[Dev/Services/Redis|Redis]] — store de référence (exact ou vectoriel).
-- [[Dev/Services/LiteLLM|LiteLLM]] — caching intégré au niveau passerelle.
+- [[Redis]] — store de référence (exact ou vectoriel).
+- [[LiteLLM]] — caching intégré au niveau passerelle.
 
 ## Pour aller plus loin
 

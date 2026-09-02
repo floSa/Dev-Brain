@@ -46,7 +46,7 @@ tags: [agents, llm, tool-use]
 
 - Toujours fixer $T_{\max}$ + un budget de coût ; logguer chaque tour (pensée, outil, observation) pour le débogage — cf. [[LLM observability]].
 - Gérer explicitement les **échecs d'outil** : retry borné, message d'erreur réinjecté, sortie d'échec propre.
-- [[Dev/Services/LangGraph|LangGraph]] expose la boucle comme un graphe à état persistant et reprise ; [[Dev/Services/LangChain|LangChain]] et [[Dev/Services/PydanticAI|PydanticAI]] fournissent une boucle ReAct prête à l'emploi.
+- [[LangGraph]] expose la boucle comme un graphe à état persistant et reprise ; [[LangChain]] et [[PydanticAI]] fournissent une boucle ReAct prête à l'emploi.
 - Piège : juger « tâche accomplie » par le seul LLM — sans critère externe, il s'arrête trop tôt ou jamais.
 
 ## Approches voisines & alternatives

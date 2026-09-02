@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: beta
 langage: TypeScript
 scaling: single-node
-alternatives: ["[[Dev/Services/Firecrawl|Firecrawl]]"]
+alternatives: ["[[Firecrawl]]"]
 complements: []
 tags: [web-scraping, low-code]
 url_docs: https://docs.maxun.dev/
@@ -31,8 +31,8 @@ Plateforme **no-code** open source d'extraction web. Au lieu d'écrire du code, 
 
 ## Quand NE PAS l'utiliser
 
-- Contrôle programmatique fin et intégration dans un pipeline code → [[Dev/Services/Scrapy|Scrapy]], [[Dev/Services/Crawlee|Crawlee]].
-- Ingestion de contenu en **Markdown pour LLM/RAG** via API → [[Dev/Services/Firecrawl|Firecrawl]].
+- Contrôle programmatique fin et intégration dans un pipeline code → [[Scrapy]], [[Crawlee]].
+- Ingestion de contenu en **Markdown pour LLM/RAG** via API → [[Firecrawl]].
 - Sites très défendus ou logique d'extraction complexe : le no-code atteint vite ses limites.
 
 ## Déploiement & coût
@@ -49,10 +49,10 @@ Plateforme **no-code** open source d'extraction web. Au lieu d'écrire du code, 
 
 ## Alternatives
 
-- [[Dev/Services/Firecrawl|Firecrawl]] — API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.
+- [[Firecrawl]] — API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.
 
 ## Liens
 
 - [[Web scraping]] — le concept (extraction, robustesse, cadre légal).
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[Comparatif - Scraping]]
 - Doc : https://docs.maxun.dev/

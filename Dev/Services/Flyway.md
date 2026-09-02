@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-core
 maturite: production
 langage: Java
-alternatives: ["[[Dev/Services/Liquibase|Liquibase]]", "[[Dev/Services/Alembic|Alembic]]"]
+alternatives: ["[[Liquibase]]", "[[Alembic]]"]
 complements: []
 tags: [migration, relational]
 url_docs: https://documentation.red-gate.com/flyway
@@ -29,8 +29,8 @@ Outil de migration **SQL-first** : les changements sont des fichiers SQL numéro
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'un format abstrait portable multi-SGBD ou de rollbacks structurés → [[Dev/Services/Liquibase|Liquibase]].
-- Migrations dérivées d'un schéma d'ORM TypeScript → [[Dev/Services/Prisma|Prisma]].
+- Besoin d'un format abstrait portable multi-SGBD ou de rollbacks structurés → [[Liquibase]].
+- Migrations dérivées d'un schéma d'ORM TypeScript → [[Prisma]].
 
 ## Déploiement & coût
 
@@ -44,8 +44,8 @@ Outil de migration **SQL-first** : les changements sont des fichiers SQL numéro
 
 ## Alternatives
 
-- [[Dev/Services/Liquibase|Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
-- [[Dev/Services/Alembic|Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
+- [[Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
+- [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
 
 ## Liens
 

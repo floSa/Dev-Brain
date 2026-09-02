@@ -35,7 +35,7 @@ tags: [signal-processing, wavelet]
 
 ## En pratique
 
-- [[Dev/Services/PyWavelets|PyWavelets]] (`pywt`) : `wavedec` / `waverec` (DWT), `cwt` (scalogramme).
+- [[PyWavelets]] (`pywt`) : `wavedec` / `waverec` (DWT), `cwt` (scalogramme).
 - Terrain de prédilection : signaux **non stationnaires**, transitoires, ruptures — vibrations machine, ECG, défauts — là où la FFT moyenne tout et masque l'instant de l'événement.
 - Débruitage, compression (JPEG 2000 repose sur les ondelettes), détection de singularités.
 

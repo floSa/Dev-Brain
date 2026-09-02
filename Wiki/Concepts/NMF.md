@@ -58,8 +58,8 @@ tags: [dimensionality-reduction, factor-analysis, unsupervised]
 - **`init='nndsvd'` plutôt que `random`** : déterministe et reproductible. Sinon, fixer `random_state` — la non-unicité fait croire à un bug.
 - **`n_components` n'a pas de bonne réponse.** Il n'y a pas de coude d'inertie ni de variance expliquée. Trancher par l'interprétabilité des parties obtenues, ce qui est un jugement, pas un calcul.
 - **Terrain naturel** : topic modeling sur du [[TF-IDF]] (une baseline honnête, souvent suffisante), décomposition de spectrogrammes ([[STFT et spectrogramme]]), imagerie, systèmes de recommandation (la factorisation de matrices y est reine, [[Systèmes de recommandation]]).
-- **Usage en interprétabilité** : [[Dev/Services/interpreto|interpreto]] la propose comme méthode de dictionnaire sur les activations, à côté des [[Sparse autoencoders|SAE]] et de l'[[ICA]]. Elle y est particulièrement légitime — les activations post-ReLU sont **positives par construction**, et NMF est instantanée là où un SAE demande un entraînement complet. La baseline à battre avant de sortir l'artillerie.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.decomposition.NMF]] (et `MiniBatchNMF` à grande échelle).
+- **Usage en interprétabilité** : [[interpreto]] la propose comme méthode de dictionnaire sur les activations, à côté des [[Sparse autoencoders|SAE]] et de l'[[ICA]]. Elle y est particulièrement légitime — les activations post-ReLU sont **positives par construction**, et NMF est instantanée là où un SAE demande un entraînement complet. La baseline à battre avant de sortir l'artillerie.
+- Outils : [[Scikit-Learn|sklearn.decomposition.NMF]] (et `MiniBatchNMF` à grande échelle).
 
 ## Approches voisines & alternatives
 

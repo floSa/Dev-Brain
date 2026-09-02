@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/numpy|numpy]]"]
+alternatives: ["[[numpy]]"]
 complements: []
 tags: [array, out-of-core]
 url_docs: https://docs.xarray.dev/
@@ -19,20 +19,20 @@ url_repo: https://github.com/pydata/xarray
 
 ## Pourquoi
 
-Apporte les **étiquettes** aux tableaux N-dimensionnels. Là où un `ndarray` [[Dev/Services/numpy|numpy]] s'indexe par position (`a[3, :, 0]`), xarray nomme les **dimensions**, attache des **coordonnées** et des **attributs** : on écrit `da.sel(time="2024-01", lat=48.5)`. Deux structures : `DataArray` (un tableau étiqueté) et `Dataset` (plusieurs variables partageant des axes). C'est, pour les données **multidimensionnelles**, ce que [[Dev/Services/pandas|pandas]] est aux tables 2D — d'ailleurs largement inspiré de lui. Lecture/écriture native NetCDF et Zarr ; standard de fait en sciences du climat, océan, géospatial et imagerie. Apache 2.0, projet NumFOCUS.
+Apporte les **étiquettes** aux tableaux N-dimensionnels. Là où un `ndarray` [[numpy]] s'indexe par position (`a[3, :, 0]`), xarray nomme les **dimensions**, attache des **coordonnées** et des **attributs** : on écrit `da.sel(time="2024-01", lat=48.5)`. Deux structures : `DataArray` (un tableau étiqueté) et `Dataset` (plusieurs variables partageant des axes). C'est, pour les données **multidimensionnelles**, ce que [[pandas]] est aux tables 2D — d'ailleurs largement inspiré de lui. Lecture/écriture native NetCDF et Zarr ; standard de fait en sciences du climat, océan, géospatial et imagerie. Apache 2.0, projet NumFOCUS.
 
 ## Quand l'utiliser
 
 - Données **N-D avec axes nommés** : grilles spatio-temporelles, raster multi-bandes, sorties de simulation.
 - Sélection et alignement par étiquette plutôt que par position (`.sel`, `.resample`, `groupby` sur coordonnées).
 - Lire/écrire NetCDF, Zarr, GRIB ; manipuler des cubes climat/géo sans réinventer l'indexation.
-- Passer à l'**out-of-core** : `chunks=...` délègue le calcul à [[Dev/Services/Dask|Dask]] sur des données plus grosses que la RAM.
+- Passer à l'**out-of-core** : `chunks=...` délègue le calcul à [[Dask]] sur des données plus grosses que la RAM.
 
 ## Quand NE PAS l'utiliser
 
-- Calcul numérique pur sans besoin d'étiquettes → [[Dev/Services/numpy|numpy]] directement (moins de surcouche).
-- Données **tabulaires 2D** hétérogènes → [[Dev/Services/pandas|pandas]] ou [[Dev/Services/Polars|Polars]].
-- Pipeline orienté performance pure sur colonnes → [[Dev/Services/Polars|Polars]] ; xarray privilégie l'expressivité scientifique.
+- Calcul numérique pur sans besoin d'étiquettes → [[numpy]] directement (moins de surcouche).
+- Données **tabulaires 2D** hétérogènes → [[pandas]] ou [[Polars]].
+- Pipeline orienté performance pure sur colonnes → [[Polars]] ; xarray privilégie l'expressivité scientifique.
 - Petits tableaux où la machinerie de coordonnées ajoute plus de friction que de valeur.
 
 ## Déploiement & coût
@@ -50,12 +50,12 @@ Apporte les **étiquettes** aux tableaux N-dimensionnels. Là où un `ndarray` [
 
 ## Alternatives
 
-- [[Dev/Services/numpy|numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
+- [[numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
 
 ## Liens
 
-- Socle numérique : [[Dev/Services/numpy|numpy]] — xarray étiquette ses `ndarray`.
-- À l'échelle / hors RAM : [[Dev/Services/Dask|Dask]] — backend de calcul paresseux via les chunks.
-- Parent tabulaire : [[Dev/Services/pandas|pandas]] — même philosophie d'étiquetage, en 2D.
-- [[Dev/Patterns/Comparatif - Manipulation de données]] — xarray vs numpy / pandas.
+- Socle numérique : [[numpy]] — xarray étiquette ses `ndarray`.
+- À l'échelle / hors RAM : [[Dask]] — backend de calcul paresseux via les chunks.
+- Parent tabulaire : [[pandas]] — même philosophie d'étiquetage, en 2D.
+- [[Comparatif - Manipulation de données]] — xarray vs numpy / pandas.
 - Doc : https://docs.xarray.dev/

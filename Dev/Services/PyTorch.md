@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++/Python
-alternatives: ["[[Dev/Services/TensorFlow|TensorFlow]]", "[[Dev/Services/JAX|JAX]]"]
+alternatives: ["[[TensorFlow]]", "[[JAX]]"]
 complements: []
 tags: [deep-learning, gpu, autograd, distributed]
 url_docs: https://docs.pytorch.org/
@@ -23,16 +23,16 @@ Framework de **deep learning** bâti sur un type `Tensor` (un tableau N-dimensio
 
 ## Quand l'utiliser
 
-- **Recherche et prototypage** de réseaux de neurones : la majorité des papiers avec code et des modèles du Hub [[Dev/Services/HuggingFace|HuggingFace]] sont en PyTorch.
+- **Recherche et prototypage** de réseaux de neurones : la majorité des papiers avec code et des modèles du Hub [[HuggingFace]] sont en PyTorch.
 - **Entraînement GPU / multi-GPU / multi-nœuds** : `DistributedDataParallel`, FSDP pour le sharding mémoire des gros modèles.
-- **Vision, audio, séquences, LLM** : écosystème riche (torchvision, torchaudio) et passerelle directe vers les modèles pré-entraînés de [[Dev/Services/HuggingFace|HuggingFace]].
+- **Vision, audio, séquences, LLM** : écosystème riche (torchvision, torchaudio) et passerelle directe vers les modèles pré-entraînés de [[HuggingFace]].
 - **Du prototype à la prod** : `torch.compile` pour la vitesse, ExecuTorch / TorchScript pour l'export, serving via TorchServe ou des runtimes tiers (vLLM, TGI).
 
 ## Quand NE PAS l'utiliser
 
-- Déploiement industriel mobile / edge / navigateur clés en main → [[Dev/Services/TensorFlow|TensorFlow]] (Lite, JS, Serving).
-- Recherche centrée transformations fonctionnelles et compilation XLA (TPU) → [[Dev/Services/JAX|JAX]].
-- Données **tabulaires** structurées : un réseau de neurones est rarement le bon choix → [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Déploiement industriel mobile / edge / navigateur clés en main → [[TensorFlow]] (Lite, JS, Serving).
+- Recherche centrée transformations fonctionnelles et compilation XLA (TPU) → [[JAX]].
+- Données **tabulaires** structurées : un réseau de neurones est rarement le bon choix → [[XGBoost]], [[LightGBM]], [[Scikit-Learn]].
 
 ## Déploiement & coût
 
@@ -49,17 +49,17 @@ Framework de **deep learning** bâti sur un type `Tensor` (un tableau N-dimensio
 
 ## Alternatives
 
-- [[Dev/Services/TensorFlow|TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
-- [[Dev/Services/JAX|JAX]] — Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.
+- [[TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
+- [[JAX]] — Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.
 
 ## Liens
 
-- [[Dev/Services/HuggingFace|HuggingFace]] — hub de modèles et bibliothèques au-dessus de PyTorch (backend principal de transformers, diffusers, PEFT).
-- [[Dev/Services/Optuna|Optuna]] — optimisation d'hyperparamètres avec intégration PyTorch (pruning).
-- [[Dev/Services/TorchServe|TorchServe]] — serveur de modèles PyTorch dédié (désormais non maintenu) ; pour servir en prod, voir aussi [[Dev/Services/NVIDIA Triton|NVIDIA Triton]] et [[Dev/Services/BentoML|BentoML]].
-- [[Dev/Services/PyTorch Lightning|PyTorch Lightning]] — surcouche qui organise le code d'entraînement PyTorch (Trainer, multi-GPU, mixed precision).
-- [[Dev/Services/accelerate|accelerate]] — distribue une boucle PyTorch existante (multi-GPU, FSDP, DeepSpeed, précision mixte) sans la réécrire.
-- [[Dev/Services/Keras|Keras]] — API de haut niveau multi-backend : Keras 3 tourne aussi sur backend PyTorch.
+- [[HuggingFace]] — hub de modèles et bibliothèques au-dessus de PyTorch (backend principal de transformers, diffusers, PEFT).
+- [[Optuna]] — optimisation d'hyperparamètres avec intégration PyTorch (pruning).
+- [[TorchServe]] — serveur de modèles PyTorch dédié (désormais non maintenu) ; pour servir en prod, voir aussi [[NVIDIA Triton]] et [[BentoML]].
+- [[PyTorch Lightning]] — surcouche qui organise le code d'entraînement PyTorch (Trainer, multi-GPU, mixed precision).
+- [[accelerate]] — distribue une boucle PyTorch existante (multi-GPU, FSDP, DeepSpeed, précision mixte) sans la réécrire.
+- [[Keras]] — API de haut niveau multi-backend : Keras 3 tourne aussi sur backend PyTorch.
 - [[Entraînement distribué]] — DDP et FSDP natifs (`torch.distributed`) pour passer l'entraînement à l'échelle.
 - [[Mixed precision]] — `torch.amp` (autocast + GradScaler) pour l'entraînement fp16/bf16.
 - [[Gradient checkpointing]] — `torch.utils.checkpoint` pour échanger calcul contre mémoire d'activations.

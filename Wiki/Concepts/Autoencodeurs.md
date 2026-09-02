@@ -59,7 +59,7 @@ tags: [deep-learning, unsupervised, representation-learning, dimensionality-redu
 - **Les VAE génèrent flou.** La perte quadratique moyenne les reconstructions plausibles ; c'est structurel, pas un défaut de réglage. Pour de la génération d'images, les [[Diffusion models|modèles de diffusion]] ont gagné — mais le VAE survit **à l'intérieur** d'eux, comme compresseur vers l'espace latent (Stable Diffusion).
 - **Le pré-entraînement par autoencodeur est passé de mode** : c'était l'usage historique (2006-2012), supplanté par les objectifs contrastifs et le masquage ([[Apprentissage auto-supervisé en vision]], [[embeddings]]).
 - **Sa renaissance vient de l'interprétabilité** : les [[Sparse autoencoders|SAE]] appliqués aux activations de LLM sont aujourd'hui le principal usage de recherche — un retournement complet, puisqu'ils décompressent au lieu de compresser.
-- Outils : [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/Keras|Keras]] (une trentaine de lignes suffisent) ; [[Dev/Services/PyOD|PyOD]] pour la variante détection d'anomalies clés en main.
+- Outils : [[PyTorch]] / [[Keras]] (une trentaine de lignes suffisent) ; [[PyOD]] pour la variante détection d'anomalies clés en main.
 
 ## Approches voisines & alternatives
 

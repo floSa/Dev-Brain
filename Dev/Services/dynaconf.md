@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/hydra|hydra]]", "[[Dev/Services/python-dotenv|python-dotenv]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
+alternatives: ["[[hydra]]", "[[python-dotenv]]", "[[Pydantic Settings]]"]
 complements: []
 tags: [config]
 url_docs: https://www.dynaconf.com/
@@ -30,9 +30,9 @@ Bibliothèque de **gestion de configuration** pour Python. Sa marque : lire les 
 
 ## Quand NE PAS l'utiliser
 
-- Validation typée stricte de la config (modèles, coercition) → [[Dev/Services/Pydantic Settings|Pydantic Settings]].
-- Composition hiérarchique d'expériences ML avec overrides CLI et sweeps → [[Dev/Services/hydra|hydra]].
-- Simple chargement d'un `.env` sans couches ni formats multiples → [[Dev/Services/python-dotenv|python-dotenv]].
+- Validation typée stricte de la config (modèles, coercition) → [[Pydantic Settings]].
+- Composition hiérarchique d'expériences ML avec overrides CLI et sweeps → [[hydra]].
+- Simple chargement d'un `.env` sans couches ni formats multiples → [[python-dotenv]].
 
 ## Déploiement & coût
 
@@ -47,9 +47,9 @@ Bibliothèque de **gestion de configuration** pour Python. Sa marque : lire les 
 
 ## Alternatives
 
-- [[Dev/Services/hydra|hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
-- [[Dev/Services/python-dotenv|python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
-- [[Dev/Services/Pydantic Settings|Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
+- [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
+- [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+- [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
 ## Liens
 

@@ -29,7 +29,7 @@ minim réunit sous une API Python unifiée des clients pour sept plateformes mus
 
 ## Quand NE PAS l'utiliser
 
-- Scraping web généraliste (HTML, anti-bot) → [[Dev/Services/Scrapy|Scrapy]], [[Dev/Services/Firecrawl|Firecrawl]].
+- Scraping web généraliste (HTML, anti-bot) → [[Scrapy]], [[Firecrawl]].
 - Usage en production ou à l'échelle : v1 en maintenance, API privées instables, et contraintes de licence / CGU des plateformes.
 
 ## Déploiement & coût

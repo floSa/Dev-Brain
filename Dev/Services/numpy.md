@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C / Python
-alternatives: ["[[Dev/Services/xarray|xarray]]", "[[Dev/Services/Dask|Dask]]", "[[Dev/Services/CuPy|CuPy]]"]
+alternatives: ["[[xarray]]", "[[Dask]]", "[[CuPy]]"]
 complements: []
 tags: [array, in-memory]
 url_docs: https://numpy.org/doc/stable/
@@ -19,7 +19,7 @@ url_repo: https://github.com/numpy/numpy
 
 ## Pourquoi
 
-Paquet **fondamental du calcul scientifique** en Python. Son cœur est le `ndarray` : un **tableau N-dimensionnel homogène** stocké de façon contiguë en mémoire, sur lequel les opérations sont **vectorisées en C** (pas de boucle Python). Apporte le *broadcasting*, l'indexation avancée, l'algèbre linéaire (`linalg`), les transformées de Fourier, le tirage aléatoire et un système de `dtype`. C'est la **brique sur laquelle tout repose** : [[Dev/Services/pandas|pandas]], scikit-learn, SciPy, matplotlib et la plupart des libs scientifiques manipulent des `ndarray`.
+Paquet **fondamental du calcul scientifique** en Python. Son cœur est le `ndarray` : un **tableau N-dimensionnel homogène** stocké de façon contiguë en mémoire, sur lequel les opérations sont **vectorisées en C** (pas de boucle Python). Apporte le *broadcasting*, l'indexation avancée, l'algèbre linéaire (`linalg`), les transformées de Fourier, le tirage aléatoire et un système de `dtype`. C'est la **brique sur laquelle tout repose** : [[pandas]], scikit-learn, SciPy, matplotlib et la plupart des libs scientifiques manipulent des `ndarray`.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Paquet **fondamental du calcul scientifique** en Python. Son cœur est le `ndarr
 
 ## Quand NE PAS l'utiliser
 
-- Données **tabulaires hétérogènes** avec étiquettes de colonnes et index → [[Dev/Services/pandas|pandas]] ou [[Dev/Services/Polars|Polars]].
-- Tableaux **plus grands que la RAM** ou calcul distribué → [[Dev/Services/Dask|Dask]] (`dask.array`, même API).
-- Accélération **GPU** d'un code numpy existant → [[Dev/Services/CuPy|CuPy]] ; différentiation automatique → [[Dev/Services/JAX|JAX]] / [[Dev/Services/PyTorch|PyTorch]].
+- Données **tabulaires hétérogènes** avec étiquettes de colonnes et index → [[pandas]] ou [[Polars]].
+- Tableaux **plus grands que la RAM** ou calcul distribué → [[Dask]] (`dask.array`, même API).
+- Accélération **GPU** d'un code numpy existant → [[CuPy]] ; différentiation automatique → [[JAX]] / [[PyTorch]].
 
 ## Déploiement & coût
 
@@ -49,13 +49,13 @@ Paquet **fondamental du calcul scientifique** en Python. Son cœur est le `ndarr
 
 ## Alternatives
 
-- [[Dev/Services/xarray|xarray]] — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
-- [[Dev/Services/CuPy|CuPy]] — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
+- [[xarray]] — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[CuPy]] — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
 
 ## Liens
 
-- Briques bâties dessus : [[Dev/Services/pandas|pandas]] (colonnes en `ndarray`), scikit-learn, SciPy.
-- À l'échelle / hors RAM : [[Dev/Services/Dask|Dask]] réimplémente l'API numpy en `dask.array`.
-- GPU / autodiff : [[Dev/Services/CuPy|CuPy]] (drop-in GPU), [[Dev/Services/JAX|JAX]], [[Dev/Services/PyTorch|PyTorch]].
+- Briques bâties dessus : [[pandas]] (colonnes en `ndarray`), scikit-learn, SciPy.
+- À l'échelle / hors RAM : [[Dask]] réimplémente l'API numpy en `dask.array`.
+- GPU / autodiff : [[CuPy]] (drop-in GPU), [[JAX]], [[PyTorch]].
 - Doc : https://numpy.org/doc/stable/

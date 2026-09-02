@@ -38,8 +38,8 @@ tags: [data-pipeline, idempotence]
 ## En pratique
 
 - Par défaut viser l'ELT quand la cible a du compute scalable : on garde le brut, on transforme en code versionné, on rejoue sans réingérer.
-- Rendre chaque tâche idempotente avant de se soucier d'orchestration : un [[Dev/Services/Airflow|Airflow]] ou un [[Dev/Services/Dagster|Dagster]] qui relance une étape non idempotente ne fait qu'amplifier le dégât.
-- [[Dev/Services/Dagster|Dagster]] (assets partitionnés) matérialise nativement le couple partition ↔ unité de rejeu ; sur [[Dev/Services/Airflow|Airflow]], la même discipline passe par des tâches idempotentes et l'`execution_date`.
+- Rendre chaque tâche idempotente avant de se soucier d'orchestration : un [[Airflow]] ou un [[Dagster]] qui relance une étape non idempotente ne fait qu'amplifier le dégât.
+- [[Dagster]] (assets partitionnés) matérialise nativement le couple partition ↔ unité de rejeu ; sur [[Airflow]], la même discipline passe par des tâches idempotentes et l'`execution_date`.
 - Pièges : `INSERT` non borné qui duplique au rerun, transformation dépendante de l'horloge courante (non déterministe), backfill qui écrase une partition encore en cours d'écriture.
 - Adosser des contrôles : voir [[Contrats de données & qualité]] pour bloquer une charge non conforme avant qu'elle ne se propage.
 
@@ -49,7 +49,7 @@ tags: [data-pipeline, idempotence]
 - [[Contrats de données & qualité]] — portes de qualité posées sur les étapes du pipeline.
 - [[Versionnage de données]] — snapshots qui rendent un rerun/backfill reproductible.
 - [[Migrations de schéma]] — même exigence d'idempotence, côté structure de base.
-- Orchestrateurs : [[Dev/Services/Airflow|Airflow]], [[Dev/Services/Dagster|Dagster]] (cf. [[Comparatif - Orchestrateurs data]]).
+- Orchestrateurs : [[Airflow]], [[Dagster]] (cf. [[Comparatif - Orchestrateurs data]]).
 
 ## Pour aller plus loin
 

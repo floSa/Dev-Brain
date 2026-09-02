@@ -37,7 +37,7 @@ tags: [timeseries, stochastic-process]
 
 - ACF/PACF restent le diagnostic visuel de référence pour proposer $(p, q)$ avant ajustement, puis Ljung-Box sur les résidus pour confirmer qu'il ne reste plus de structure exploitable.
 - Une autocorrélation forte des résidus = modèle sous-spécifié ; une ACF qui ne décroît pas = différencier d'abord.
-- Outils : `statsmodels` (`plot_acf`, `plot_pacf`, `acorr_ljungbox`) ; [[Dev/Services/statsforecast|statsforecast]] et [[Dev/Services/darts|darts]] s'appuient dessus en interne pour AutoARIMA.
+- Outils : `statsmodels` (`plot_acf`, `plot_pacf`, `acorr_ljungbox`) ; [[statsforecast]] et [[darts]] s'appuient dessus en interne pour AutoARIMA.
 
 ## Approches voisines & alternatives
 

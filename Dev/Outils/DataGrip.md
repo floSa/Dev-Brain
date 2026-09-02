@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: proprietary
 os: "Windows, macOS, Linux"
 langage: Java/Kotlin
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]", "[[Dev/Outils/HeidiSQL|HeidiSQL]]"]
+alternatives: ["[[DBeaver]]", "[[HeidiSQL]]"]
 complements: []
 tags: [db-client, relational, nosql]
 url_docs: https://www.jetbrains.com/help/datagrip/
@@ -30,8 +30,8 @@ L'IDE base de données de JetBrains. Apporte au SQL ce que les IDE apportent au 
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'un outil 100 % libre et gratuit en contexte commercial → [[Dev/Outils/DBeaver|DBeaver]].
-- Poste léger, démarrage instantané sous Windows → [[Dev/Outils/HeidiSQL|HeidiSQL]].
+- Besoin d'un outil 100 % libre et gratuit en contexte commercial → [[DBeaver]].
+- Poste léger, démarrage instantané sous Windows → [[HeidiSQL]].
 
 ## Bases & plateformes
 
@@ -45,11 +45,11 @@ L'IDE base de données de JetBrains. Apporte au SQL ce que les IDE apportent au 
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
-- [[Dev/Outils/HeidiSQL|HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://www.jetbrains.com/help/datagrip/

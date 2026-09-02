@@ -24,15 +24,15 @@ Maintient une **paire** notebook ↔ fichier texte : un `.ipynb` reste l'artefac
 ## Quand l'utiliser
 
 - Versionner des notebooks dans git avec des **diffs propres** et des revues de PR exploitables.
-- Garder Jupyter comme environnement d'édition tout en éditant le `.py` dans un IDE ([[Dev/Services/Ruff|Ruff]], complétion, refactor).
-- Linter et tester le pendant `.py` ([[Dev/Services/pytest|pytest]]) comme un module ordinaire.
+- Garder Jupyter comme environnement d'édition tout en éditant le `.py` dans un IDE ([[Ruff]], complétion, refactor).
+- Linter et tester le pendant `.py` ([[pytest]]) comme un module ordinaire.
 - Convertir en masse entre formats (`jupytext --to`) ou imposer un pairing via `jupytext.toml`.
 
 ## Quand NE PAS l'utiliser
 
-- Repartir d'un environnement neuf sans état caché par construction → [[Dev/Services/Marimo|Marimo]] (notebook réactif en `.py` pur, sans pairing).
-- Seulement exécuter/paramétrer un notebook headless en CI → [[Dev/Services/papermill|papermill]].
-- Publier le notebook en HTML/PDF mis en page → [[Dev/Services/Quarto|Quarto]].
+- Repartir d'un environnement neuf sans état caché par construction → [[Marimo]] (notebook réactif en `.py` pur, sans pairing).
+- Seulement exécuter/paramétrer un notebook headless en CI → [[papermill]].
+- Publier le notebook en HTML/PDF mis en page → [[Quarto]].
 - Notebook jetable, non versionné : le pairing n'apporte rien.
 
 ## Déploiement & coût
@@ -50,11 +50,11 @@ Maintient une **paire** notebook ↔ fichier texte : un `.ipynb` reste l'artefac
 
 ## Alternatives
 
-- [[Dev/Services/Marimo|Marimo]] — Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.
+- [[Marimo]] — Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.
 
 ## Liens
 
 - [[Notebooks-as-code]] — le concept que jupytext implémente concrètement.
-- [[Dev/Services/papermill|papermill]] — exécution non interactive du notebook en CI, complémentaire au pairing.
-- [[Dev/Services/Ruff|Ruff]] / [[Dev/Services/pytest|pytest]] — appliqués au pendant `.py`.
+- [[papermill]] — exécution non interactive du notebook en CI, complémentaire au pairing.
+- [[Ruff]] / [[pytest]] — appliqués au pendant `.py`.
 - Doc : https://jupytext.readthedocs.io/

@@ -55,5 +55,5 @@ Plateforme de **CI/CD intégrée à GitHub**. Des **workflows** décrits en YAML
 
 ## Liens
 
-- [[Dev/Services/Docker|Docker]] — images construites et publiées depuis les workflows CI
+- [[Docker]] — images construites et publiées depuis les workflows CI
 - Doc : https://docs.github.com/actions

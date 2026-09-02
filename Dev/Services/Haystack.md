@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/LangChain|LangChain]]", "[[Dev/Services/LlamaIndex|LlamaIndex]]", "[[Dev/Services/DSPy|DSPy]]"]
+alternatives: ["[[LangChain]]", "[[LlamaIndex]]", "[[DSPy]]"]
 complements: []
 tags: [llm, rag, semantic-search, hybrid-search, agents]
 url_docs: https://docs.haystack.deepset.ai/
@@ -30,9 +30,9 @@ Framework d'orchestration LLM de **deepset**, orienté **production**. Son modè
 
 ## Quand NE PAS l'utiliser
 
-- Prototypage rapide tirant parti du **plus gros catalogue d'intégrations** → [[Dev/Services/LangChain|LangChain]].
-- App **centrée données** où l'indexation multi-format prime → [[Dev/Services/LlamaIndex|LlamaIndex]].
-- Besoin d'**optimiser automatiquement** les prompts → [[Dev/Services/DSPy|DSPy]].
+- Prototypage rapide tirant parti du **plus gros catalogue d'intégrations** → [[LangChain]].
+- App **centrée données** où l'indexation multi-format prime → [[LlamaIndex]].
+- Besoin d'**optimiser automatiquement** les prompts → [[DSPy]].
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Framework d'orchestration LLM de **deepset**, orienté **production**. Son modè
 
 ## Alternatives
 
-- [[Dev/Services/LangChain|LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
-- [[Dev/Services/LlamaIndex|LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
-- [[Dev/Services/DSPy|DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
+- [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
+- [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
+- [[DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
 ## Liens
 
 - Concept : [[RAG]] — et ses techniques [[Chunking strategies]], [[Hybrid retrieval]], [[Reranking]], [[Advanced RAG]].
-- Bases de recherche / vectorielles : [[Dev/Services/Elasticsearch|Elasticsearch]], [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/pgvector|pgvector]].
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] ; modèles et embedders depuis [[Dev/Services/HuggingFace|HuggingFace]].
+- Bases de recherche / vectorielles : [[Elasticsearch]], [[Qdrant]], [[Weaviate]], [[pgvector]].
+- Peut router ses appels via [[LiteLLM]] ; modèles et embedders depuis [[HuggingFace]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.haystack.deepset.ai/

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Dev/Services/Redis|Redis]]", "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"]
+alternatives: ["[[Redis]]", "[[Apache Cassandra]]"]
 complements: []
 tags: [nosql, document-db]
 url_docs: https://www.mongodb.com/docs/
@@ -32,9 +32,9 @@ Base NoSQL orientée **documents** : chaque enregistrement est un document BSON 
 
 ## Quand NE PAS l'utiliser
 
-- Fortes garanties relationnelles, jointures complexes, intégrité référentielle → [[Dev/Services/Postgres|Postgres]] (dont le `JSONB` couvre déjà le semi-structuré modéré).
-- Cache ou structures en mémoire à très faible latence → [[Dev/Services/Redis|Redis]].
-- Écritures massives en colonnes larges multi-datacenter → [[Dev/Services/Apache Cassandra|Apache Cassandra]].
+- Fortes garanties relationnelles, jointures complexes, intégrité référentielle → [[Postgres]] (dont le `JSONB` couvre déjà le semi-structuré modéré).
+- Cache ou structures en mémoire à très faible latence → [[Redis]].
+- Écritures massives en colonnes larges multi-datacenter → [[Apache Cassandra]].
 
 ## Déploiement & coût
 
@@ -51,11 +51,11 @@ Base NoSQL orientée **documents** : chaque enregistrement est un document BSON 
 
 ## Alternatives
 
-- [[Dev/Services/Redis|Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
-- [[Dev/Services/Apache Cassandra|Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
+- [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
+- [[Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases NoSQL]] — comparatif des moteurs NoSQL
 - Doc : https://www.mongodb.com/docs/

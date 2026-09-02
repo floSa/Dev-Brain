@@ -38,7 +38,7 @@ tags: [transfer-learning, fine-tuning, computer-vision, deep-learning]
 
 - Défaut raisonnable : extraction de features d'abord (baseline rapide), puis fine-tuning si le budget data le permet.
 - Coupler systématiquement avec l'[[Augmentation d'images|augmentation]] pour limiter le surapprentissage sur petit jeu.
-- Backbones via [[Architectures CNN|architectures CNN]] (ou [[Vision Transformers (ViT)|ViT]]) pré-entraînés, voire des [[Modèles de fondation vision|modèles de fondation]] (CLIP, DINOv2) gelés ; backbones pré-entraînés via [[Dev/Services/timm|timm]] / [[Dev/Services/torchvision|torchvision]], écosystème [[Dev/Services/HuggingFace|HuggingFace]] / [[Dev/Services/PyTorch|PyTorch]].
+- Backbones via [[Architectures CNN|architectures CNN]] (ou [[Vision Transformers (ViT)|ViT]]) pré-entraînés, voire des [[Modèles de fondation vision|modèles de fondation]] (CLIP, DINOv2) gelés ; backbones pré-entraînés via [[timm]] / [[torchvision]], écosystème [[HuggingFace]] / [[PyTorch]].
 
 ## Approches voisines & alternatives
 

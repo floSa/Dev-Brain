@@ -41,7 +41,7 @@ tags: [eda, feature-engineering, missing-data]
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/ydata-profiling|ydata-profiling]], [[Dev/Services/sweetviz|sweetviz]], [[Dev/Services/missingno|missingno]] — les outils Python qui incarnent cette étape (rapport exhaustif, EDA orientée cible, diagnostic des manquants).
+- [[ydata-profiling]], [[sweetviz]], [[missingno]] — les outils Python qui incarnent cette étape (rapport exhaustif, EDA orientée cible, diagnostic des manquants).
 - [[Ingénierie des caractéristiques]] — l'étape que l'EDA prépare et oriente.
 - [[Mécanismes de données manquantes]], [[Imputation des valeurs manquantes]] — diagnostic puis traitement des trous repérés.
 - [[Détection d'outliers univariée]], [[Détection d'outliers multivariée]] — approfondir les valeurs aberrantes signalées.

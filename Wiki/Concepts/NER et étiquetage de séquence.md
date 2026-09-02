@@ -38,9 +38,9 @@ tags: [nlp, ner, sequence-labeling, supervised]
 
 ## En pratique
 
-- [[Dev/Services/spaCy|spaCy]] pour un NER prêt à l'emploi et rapide ; [[Dev/Services/HuggingFace|HuggingFace]] `token-classification` (BERT / CamemBERT) pour le fine-tuning ; [[Dev/Services/pytorch-crf|pytorch-crf]] pour la couche CRF ; [[Dev/Services/GLiNER|GLiNER]] pour le zero-shot.
+- [[spaCy]] pour un NER prêt à l'emploi et rapide ; [[HuggingFace]] `token-classification` (BERT / CamemBERT) pour le fine-tuning ; [[pytorch-crf]] pour la couche CRF ; [[GLiNER]] pour le zero-shot.
 - Annoter en IOB / BILOU avec un outil dédié (Label Studio, Prodigy) ; la cohérence des spans est le nerf de la guerre.
-- Évaluer en **F1 au niveau entité** (span exact) avec [[Dev/Services/seqeval|seqeval]], pas au niveau token : une entité partiellement correcte compte comme fausse.
+- Évaluer en **F1 au niveau entité** (span exact) avec [[seqeval]], pas au niveau token : une entité partiellement correcte compte comme fausse.
 - Piège : aligner les labels sur les **sous-tokens** du tokenizer (un mot peut être découpé en plusieurs) — cf. [[Tokenization]].
 
 ## Approches voisines & alternatives

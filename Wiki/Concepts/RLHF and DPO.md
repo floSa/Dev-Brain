@@ -43,7 +43,7 @@ tags: [alignment, fine-tuning, llm]
 - **Ordre** : [[SFT]] d'abord (le modèle doit déjà répondre), alignement préférences ensuite.
 - **Commencer par DPO** : moins de calcul, plus stable, suffisant dans la plupart des cas. Passer à PPO si l'on a un reward model solide ou des signaux non-préférences.
 - Faire l'alignement en **[[PEFT]]/LoRA** pour le rendre abordable.
-- Outils : [[Dev/Services/TRL|TRL]] (DPOTrainer, RewardTrainer, GRPOTrainer, PPOTrainer) ; sans coder via [[Dev/Services/Axolotl|Axolotl]] / [[Dev/Services/LLaMA-Factory|LLaMA-Factory]], ou [[Dev/Services/Unsloth|Unsloth]] pour le GRPO économe en VRAM. Côté JAX/TPU : [[Dev/Services/Tunix|Tunix]] (DPO, ORPO, GRPO).
+- Outils : [[TRL]] (DPOTrainer, RewardTrainer, GRPOTrainer, PPOTrainer) ; sans coder via [[Axolotl]] / [[LLaMA-Factory]], ou [[Unsloth]] pour le GRPO économe en VRAM. Côté JAX/TPU : [[Tunix]] (DPO, ORPO, GRPO).
 - Surveiller la **divergence KL** et la **longueur** des réponses (signes de reward hacking) ; garder un jeu de préférences propre et diversifié.
 - Liens RL plus larges : [[RL for LLMs]], [[GRPO]] — variantes récentes pour le raisonnement.
 

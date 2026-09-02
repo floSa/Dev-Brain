@@ -44,7 +44,7 @@ tags: [planning, monte-carlo, model-based-rl]
 - Couplé à des réseaux profonds dans [[AlphaZero and self-play|AlphaZero]] : un réseau remplace les rollouts aléatoires (évaluation de position) et biaise la sélection (probabilités a priori des coups) — le saut qui a battu les pros au Go.
 - Réémerge en AI engineering pour la **recherche au moment du test** des LLM (tree-of-thought, recherche guidée par un vérificateur) — cf. [[RL for LLMs]], [[Chain-of-Thought]].
 - Pièges : coût des simulations (un rollout = une partie entière), facteur de branchement élevé, et information imparfaite mal gérée par le MCTS vanille (cf. [[Théorie des jeux]], [[Counterfactual Regret Minimization|CFR]]).
-- Côté outils : [[Dev/Services/OpenSpiel|OpenSpiel]] fournit MCTS/UCT (et une implémentation pédagogique d'AlphaZero) sur ses 70+ jeux.
+- Côté outils : [[OpenSpiel]] fournit MCTS/UCT (et une implémentation pédagogique d'AlphaZero) sur ses 70+ jeux.
 
 ## Approches voisines & alternatives
 

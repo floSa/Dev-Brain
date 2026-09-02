@@ -37,7 +37,7 @@ tags: [forecasting, timeseries]
 
 - **AutoETS** sélectionne automatiquement la forme (E,T,S) par AIC : laisser faire plutôt que choisir à la main.
 - Ne requiert **pas** la [[Stationarity|stationnarité]] (modélise tendance et saison directement), contrairement à [[ARIMA SARIMA|ARIMA]] — atout sur séries à tendance/saison marquées.
-- Outils : [[Dev/Services/statsforecast|statsforecast]] (AutoETS rapide à grande échelle), [[Dev/Services/darts|darts]] (modèles ETS sous API unifiée).
+- Outils : [[statsforecast]] (AutoETS rapide à grande échelle), [[darts]] (modèles ETS sous API unifiée).
 
 ## Approches voisines & alternatives
 

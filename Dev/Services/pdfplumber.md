@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/PyMuPDF|PyMuPDF]]", "[[Dev/Services/pdf-inspector|pdf-inspector]]"]
+alternatives: ["[[PyMuPDF]]", "[[pdf-inspector]]"]
 complements: []
 tags: [pdf, table-extraction, document-parsing]
 url_docs: https://github.com/jsvine/pdfplumber
@@ -30,9 +30,9 @@ pdfplumber (Jeremy Singer-Vine, **MIT**) est bâti sur **pdfminer.six** et expos
 
 ## Quand NE PAS l'utiliser
 
-- **Vitesse brute** sur gros volumes → [[Dev/Services/PyMuPDF|PyMuPDF]] (nettement plus rapide).
-- PDF **scannés** (images) : pas d'OCR intégré → [[Dev/Services/Marker|Marker]] / [[Dev/Services/Unstructured|Unstructured]].
-- Conversion **structurée en Markdown** pour le RAG → [[Dev/Services/Docling|Docling]] / [[Dev/Services/Marker|Marker]].
+- **Vitesse brute** sur gros volumes → [[PyMuPDF]] (nettement plus rapide).
+- PDF **scannés** (images) : pas d'OCR intégré → [[Marker]] / [[Unstructured]].
+- Conversion **structurée en Markdown** pour le RAG → [[Docling]] / [[Marker]].
 
 ## Déploiement & coût
 
@@ -47,12 +47,12 @@ pdfplumber (Jeremy Singer-Vine, **MIT**) est bâti sur **pdfminer.six** et expos
 
 ## Alternatives
 
-- [[Dev/Services/PyMuPDF|PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
-- [[Dev/Services/pdf-inspector|pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
+- [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
 ## Liens
 
 - [[Comparatif - Parsing de documents]] — comparatif de la catégorie.
-- Étage RAG complémentaire : [[Dev/Services/Docling|Docling]] / [[Dev/Services/Unstructured|Unstructured]] pour le pipeline d'ingestion.
+- Étage RAG complémentaire : [[Docling]] / [[Unstructured]] pour le pipeline d'ingestion.
 - Fondation : pdfminer.six (parsing PDF bas niveau, MIT).
 - Doc : https://github.com/jsvine/pdfplumber

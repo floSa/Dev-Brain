@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web (PWA)"
 langage: TypeScript
-alternatives: ["[[Dev/Outils/draw.io|draw.io]]", "[[Dev/Outils/Archify|Archify]]"]
+alternatives: ["[[draw.io]]", "[[Archify]]"]
 complements: []
 tags: [diagram, isometric]
 url_docs: https://github.com/stan-smith/FossFLOW
@@ -30,9 +30,9 @@ Application web open-source pour créer des **diagrammes isométriques 3D** d'in
 
 ## Quand NE PAS l'utiliser
 
-- Diagramme 2D classique (flowchart, UML, séquence) → [[Dev/Outils/draw.io|draw.io]].
-- Diagramme à versionner comme du code → [[Dev/Outils/Mermaid|Mermaid]].
-- Croquis jetable de réunion → [[Dev/Outils/Excalidraw|Excalidraw]].
+- Diagramme 2D classique (flowchart, UML, séquence) → [[draw.io]].
+- Diagramme à versionner comme du code → [[Mermaid]].
+- Croquis jetable de réunion → [[Excalidraw]].
 
 ## Bases & plateformes
 
@@ -48,10 +48,10 @@ Application web open-source pour créer des **diagrammes isométriques 3D** d'in
 
 ## Alternatives
 
-- [[Dev/Outils/draw.io|draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
-- [[Dev/Outils/Archify|Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
+- [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
+- [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Diagrammes|Comparatif - Diagrammes]]
+- [[Comparatif - Diagrammes]]
 - Repo & doc : https://github.com/stan-smith/FossFLOW

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Acme|Acme]]", "[[Dev/Services/TF-Agents|TF-Agents]]", "[[Dev/Services/RLax|RLax]]"]
+alternatives: ["[[Acme]]", "[[TF-Agents]]", "[[RLax]]"]
 complements: []
 tags: [reinforcement-learning, deep-learning]
 url_docs: https://stable-baselines3.readthedocs.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/DLR-RM/stable-baselines3
 
 ## Pourquoi
 
-Collection d'**implémentations de référence** d'algorithmes de [[Reinforcement learning|RL]] en [[Dev/Services/PyTorch|PyTorch]], pensées pour être **fiables et reproductibles** : code testé, couvert et documenté, avec des hyperparamètres réglés par algorithme (le « zoo »). On instancie un algorithme (`PPO`, `DQN`…), on lui passe un environnement [[Dev/Services/Gymnasium|Gymnasium]], puis `learn()` / `predict()` font le reste — une API volontairement proche de scikit-learn. Successeur PyTorch de Stable Baselines (lui-même fork d'OpenAI Baselines).
+Collection d'**implémentations de référence** d'algorithmes de [[Reinforcement learning|RL]] en [[PyTorch]], pensées pour être **fiables et reproductibles** : code testé, couvert et documenté, avec des hyperparamètres réglés par algorithme (le « zoo »). On instancie un algorithme (`PPO`, `DQN`…), on lui passe un environnement [[Gymnasium]], puis `learn()` / `predict()` font le reste — une API volontairement proche de scikit-learn. Successeur PyTorch de Stable Baselines (lui-même fork d'OpenAI Baselines).
 
 ## Quand l'utiliser
 
@@ -30,7 +30,7 @@ Collection d'**implémentations de référence** d'algorithmes de [[Reinforcemen
 ## Quand NE PAS l'utiliser
 
 - RL **distribué** à grande échelle (milliers d'acteurs) → RLlib (Ray) ou des frameworks orientés throughput (hors brain).
-- Recherche sur un algorithme **nouveau** / très custom → implémentation minimale type CleanRL, ou from scratch sur [[Dev/Services/PyTorch|PyTorch]].
+- Recherche sur un algorithme **nouveau** / très custom → implémentation minimale type CleanRL, ou from scratch sur [[PyTorch]].
 - Post-training **RL des LLM** (RLHF / GRPO) → outils dédiés (TRL…), pas SB3.
 
 ## Déploiement & coût
@@ -48,17 +48,17 @@ Collection d'**implémentations de référence** d'algorithmes de [[Reinforcemen
 
 ## Alternatives
 
-- [[Dev/Services/Acme|Acme]] — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
-- [[Dev/Services/TF-Agents|TF-Agents]] — Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.
-- [[Dev/Services/RLax|RLax]] — Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.
+- [[Acme]] — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
+- [[TF-Agents]] — Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.
+- [[RLax]] — Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.
 
 Nuance : SB3 est le **clé en main** maintenu ; les trois autres sont des choix de niche (contrainte TF, recherche JAX) à la maintenance plus fragile. En dehors du brain : RLlib (RL distribué, Ray), CleanRL (implémentations mono-fichier pour la recherche), Tianshou.
 
 ## Liens
 
-- [[Dev/Services/Gymnasium|Gymnasium]] — l'API d'environnements sur laquelle SB3 entraîne ses agents.
+- [[Gymnasium]] — l'API d'environnements sur laquelle SB3 entraîne ses agents.
 - [[Comparatif - Reinforcement learning]] — vue d'ensemble des libs RL.
-- [[Dev/Services/PyTorch|PyTorch]] — le framework de calcul sous-jacent.
+- [[PyTorch]] — le framework de calcul sous-jacent.
 - [[Reinforcement learning]] — le cadre théorique (agent, politique, récompense).
 - [[PPO]] — l'algorithme on-policy phare de SB3.
 - [[Q-learning and DQN]] — la famille basée valeur (`DQN`, `QR-DQN`).

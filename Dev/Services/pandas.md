@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / Cython
-alternatives: ["[[Dev/Services/Polars|Polars]]", "[[Dev/Services/Modin|Modin]]", "[[Dev/Services/Dask|Dask]]"]
+alternatives: ["[[Polars]]", "[[Modin]]", "[[Dask]]"]
 complements: []
 tags: [dataframe, in-memory]
 url_docs: https://pandas.pydata.org/docs/
@@ -19,7 +19,7 @@ url_repo: https://github.com/pandas-dev/pandas
 
 ## Pourquoi
 
-Bibliothèque de **manipulation de données tabulaires** en Python, bâtie sur [[Dev/Services/numpy|numpy]]. Deux structures : `Series` (colonne indexée) et `DataFrame` (table de colonnes hétérogènes). Sa force est un **index** de premier ordre (alignement automatique, time series) et une grammaire complète — filtres booléens, `groupby`/`agg`, `merge`/`join`, `pivot`, fenêtres glissantes, I/O multi-format (CSV, Parquet, SQL, Excel). C'est le **pivot de l'écosystème data Python** : presque toute lib (scikit-learn, statsmodels, viz) parle DataFrame.
+Bibliothèque de **manipulation de données tabulaires** en Python, bâtie sur [[numpy]]. Deux structures : `Series` (colonne indexée) et `DataFrame` (table de colonnes hétérogènes). Sa force est un **index** de premier ordre (alignement automatique, time series) et une grammaire complète — filtres booléens, `groupby`/`agg`, `merge`/`join`, `pivot`, fenêtres glissantes, I/O multi-format (CSV, Parquet, SQL, Excel). C'est le **pivot de l'écosystème data Python** : presque toute lib (scikit-learn, statsmodels, viz) parle DataFrame.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ Bibliothèque de **manipulation de données tabulaires** en Python, bâtie sur [
 
 ## Quand NE PAS l'utiliser
 
-- Volumes lourds ou besoin de vitesse / parallélisme → [[Dev/Services/Polars|Polars]] (Rust, lazy, multi-thread).
-- Garder l'API pandas mais saturer tous les cœurs sans réécrire → [[Dev/Services/Modin|Modin]].
-- Données plus grosses que la RAM ou calcul sur cluster → [[Dev/Services/Dask|Dask]] (`dask.dataframe`).
-- Calcul purement numérique sur tableaux N-dim sans étiquettes → [[Dev/Services/numpy|numpy]] directement.
+- Volumes lourds ou besoin de vitesse / parallélisme → [[Polars]] (Rust, lazy, multi-thread).
+- Garder l'API pandas mais saturer tous les cœurs sans réécrire → [[Modin]].
+- Données plus grosses que la RAM ou calcul sur cluster → [[Dask]] (`dask.dataframe`).
+- Calcul purement numérique sur tableaux N-dim sans étiquettes → [[numpy]] directement.
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ Bibliothèque de **manipulation de données tabulaires** en Python, bâtie sur [
 
 ## Alternatives
 
-- [[Dev/Services/Polars|Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
-- [[Dev/Services/Modin|Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
+- [[Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 
 ## Liens
 
-- Socle numérique : [[Dev/Services/numpy|numpy]] — pandas stocke ses colonnes dans des `ndarray`.
-- [[Dev/Patterns/Comparatif - Manipulation de données]] — pandas vs Polars / numpy / Modin.
+- Socle numérique : [[numpy]] — pandas stocke ses colonnes dans des `ndarray`.
+- [[Comparatif - Manipulation de données]] — pandas vs Polars / numpy / Modin.
 - Doc : https://pandas.pydata.org/docs/

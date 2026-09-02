@@ -58,7 +58,7 @@ tags: [supervised, deep-learning, classification, regression]
 - Toujours activer l'**early stopping** : le réseau surapprend vite, et c'est la régularisation la moins chère.
 - **Non déterministe** : l'initialisation aléatoire fait varier le résultat d'un run à l'autre. Fixer les graines et vérifier la stabilité sur plusieurs runs avant de conclure à une amélioration.
 - **Boîte noire** : aucune lecture directe des poids. Si la décision doit s'expliquer, passer par [[Explicabilité des modèles]] (SHAP) — ou choisir un [[GAM]] et s'épargner le problème.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.neural_network.MLPClassifier]] pour un essai rapide ; [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/Keras|Keras]] dès que le sujet est sérieux.
+- Outils : [[Scikit-Learn|sklearn.neural_network.MLPClassifier]] pour un essai rapide ; [[PyTorch]] / [[Keras]] dès que le sujet est sérieux.
 
 ## Approches voisines & alternatives
 

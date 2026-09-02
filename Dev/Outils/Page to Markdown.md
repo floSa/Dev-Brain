@@ -37,8 +37,8 @@ Utile comme complément d'un pipeline d'ingestion : ce que le scraping programma
 
 ## Quand NE PAS l'utiliser
 
-- Extraction à l'échelle, planifiée ou automatisée sur des milliers d'URL → [[Dev/Services/Firecrawl|Firecrawl]], [[Dev/Services/Maxun|Maxun]].
-- Conversion de PDF ou de documents bureautiques : hors périmètre, c'est une extension de navigateur → [[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]], [[Dev/Services/Docling|Docling]].
+- Extraction à l'échelle, planifiée ou automatisée sur des milliers d'URL → [[Firecrawl]], [[Maxun]].
+- Conversion de PDF ou de documents bureautiques : hors périmètre, c'est une extension de navigateur → [[OpenDataLoader PDF]], [[Docling]].
 - Exigence de code auditable ou d'auto-hébergement : l'extension est propriétaire et sans dépôt public.
 - Navigateur autre que Chrome : seul Chrome est annoncé.
 
@@ -63,7 +63,7 @@ Aucune autre page de la catégorie `tooling/capture` dans le brain à ce jour. L
 
 ## Liens
 
-- [[Dev/Services/Firecrawl|Firecrawl]] — équivalent programmatique et à l'échelle, côté scraping web.
+- [[Firecrawl]] — équivalent programmatique et à l'échelle, côté scraping web.
 - [[Comparatif - Scraping]] — comparatif de la famille scraping.
 - [[Comparatif - Parsing de documents]] — comparatif de la famille parsing, pour les documents plutôt que les pages web.
 - Site : https://starterbuild.com/page-to-markdown/

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Prophet|Prophet]]", "[[Dev/Services/statsforecast|statsforecast]]", "[[Dev/Services/neuralforecast|neuralforecast]]", "[[Dev/Services/pmdarima|pmdarima]]", "[[Dev/Services/Chronos|Chronos]]"]
+alternatives: ["[[Prophet]]", "[[statsforecast]]", "[[neuralforecast]]", "[[pmdarima]]", "[[Chronos]]"]
 complements: []
 tags: [forecasting, timeseries, deep-learning]
 url_docs: https://unit8co.github.io/darts/
@@ -30,9 +30,9 @@ darts (Unit8) unifie la prévision de séries temporelles derrière une **API un
 
 ## Quand NE PAS l'utiliser
 
-- Prévision de très nombreuses séries en un temps minimal → [[Dev/Services/statsforecast|statsforecast]].
-- Catalogue de réseaux neuronaux le plus large et le plus récent → [[Dev/Services/neuralforecast|neuralforecast]].
-- Une seule série saisonnière simple à prévoir vite, interprétable → [[Dev/Services/Prophet|Prophet]].
+- Prévision de très nombreuses séries en un temps minimal → [[statsforecast]].
+- Catalogue de réseaux neuronaux le plus large et le plus récent → [[neuralforecast]].
+- Une seule série saisonnière simple à prévoir vite, interprétable → [[Prophet]].
 
 ## Déploiement & coût
 
@@ -47,15 +47,15 @@ darts (Unit8) unifie la prévision de séries temporelles derrière une **API un
 
 ## Alternatives
 
-- [[Dev/Services/Prophet|Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
-- [[Dev/Services/statsforecast|statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
-- [[Dev/Services/neuralforecast|neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
-- [[Dev/Services/pmdarima|pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
-- [[Dev/Services/Chronos|Chronos]] — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params). Approche voisine (zero-shot deep learning) plutôt que concurrent direct ; darts peut l'intégrer comme modèle.
+- [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
+- [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
+- [[neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
+- [[pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
+- [[Chronos]] — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params). Approche voisine (zero-shot deep learning) plutôt que concurrent direct ; darts peut l'intégrer comme modèle.
 
 ## Liens
 
 - [[Forecasting framing]] — son backtesting intégré matérialise le cadrage (horizon, covariables, origine glissante).
-- [[Dev/Services/PyTorch|PyTorch]] — backend (Lightning) des modèles neuronaux de darts.
-- Intègre comme modèles [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/CatBoost|CatBoost]] et [[Dev/Services/Prophet|Prophet]].
+- [[PyTorch]] — backend (Lightning) des modèles neuronaux de darts.
+- Intègre comme modèles [[LightGBM]], [[XGBoost]], [[CatBoost]] et [[Prophet]].
 - Doc : https://unit8co.github.io/darts/

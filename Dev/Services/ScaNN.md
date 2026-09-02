@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/Chroma|Chroma]]"]
+alternatives: ["[[Faiss]]", "[[hnswlib]]", "[[Annoy]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://github.com/google-research/google-research/blob/master/scann/README.md
@@ -29,10 +29,10 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 
 ## Quand NE PAS l'utiliser
 
-- Plateforme non x86 / sans AVX, ou besoin GPU large → [[Dev/Services/Faiss|Faiss]].
-- Intégration ultra-simple et incrémentale → [[Dev/Services/hnswlib|hnswlib]].
-- Besoin de persistance, filtrage, CRUD, API ou scaling → un serveur : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Milvus|Milvus]].
-- Du Postgres déjà en place → [[Dev/Services/pgvector|pgvector]] ; prototype RAG clé en main → [[Dev/Services/Chroma|Chroma]].
+- Plateforme non x86 / sans AVX, ou besoin GPU large → [[Faiss]].
+- Intégration ultra-simple et incrémentale → [[hnswlib]].
+- Besoin de persistance, filtrage, CRUD, API ou scaling → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
+- Du Postgres déjà en place → [[pgvector]] ; prototype RAG clé en main → [[Chroma]].
 
 ## Déploiement & coût
 
@@ -48,10 +48,10 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 
 ## Alternatives
 
-- [[Dev/Services/Faiss|Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
-- [[Dev/Services/hnswlib|hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
-- [[Dev/Services/Annoy|Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
-- [[Dev/Services/Chroma|Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+- [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
+- [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
+- [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
+- [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
 ## Liens
 

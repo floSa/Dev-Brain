@@ -25,7 +25,7 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 
 ### UMAP
 - Fondé sur la topologie des variétés : un graphe de voisinage flou optimisé en basse dimension.
-- `n_neighbors` (équilibre local ↔ global), `min_dist` (compacité). Plus **rapide**, préserve mieux la **structure globale**, sait projeter de nouveaux points. Implémentation : [[Dev/Services/umap-learn|umap-learn]].
+- `n_neighbors` (équilibre local ↔ global), `min_dist` (compacité). Plus **rapide**, préserve mieux la **structure globale**, sait projeter de nouveaux points. Implémentation : [[umap-learn]].
 
 ### Lire une projection
 - Les **tailles d'amas** et les **distances entre amas** ne sont **pas** quantitativement fiables.
@@ -49,8 +49,8 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 - [[Réduction de dimension]] — la page chapeau ; t-SNE et UMAP en sont la branche non linéaire.
 - [[Manifold learning]] — le sous-chapeau manifold (Isomap, LLE, Kernel PCA) ; t-SNE/UMAP en sont les membres orientés visualisation.
 - [[PCA]] — l'alternative linéaire, interprétable et à variance chiffrée ; souvent un pré-traitement de t-SNE.
-- [[Dev/Services/umap-learn|umap-learn]] — l'implémentation de référence d'UMAP.
-- [[Dev/Services/PaCMAP|PaCMAP]] — variante récente qui préserve mieux la structure globale (paires mid-near), alternative à t-SNE et UMAP.
+- [[umap-learn]] — l'implémentation de référence d'UMAP.
+- [[PaCMAP]] — variante récente qui préserve mieux la structure globale (paires mid-near), alternative à t-SNE et UMAP.
 - [[embeddings]] — la donnée que l'on projette le plus souvent.
 - [[Clustering hiérarchique par densité|HDBSCAN]] — clustering fréquent en aval de la projection.
 

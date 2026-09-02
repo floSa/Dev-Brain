@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/torchvision|torchvision]]", "[[Dev/Services/Kornia|Kornia]]"]
+alternatives: ["[[torchvision]]", "[[Kornia]]"]
 complements: []
 tags: [computer-vision, data-augmentation, object-detection, segmentation, deep-learning]
 url_docs: https://albumentations.ai/docs/
@@ -19,7 +19,7 @@ url_repo: https://github.com/albumentations-team/albumentations
 
 ## Pourquoi
 
-Bibliothèque d'**[[Augmentation d'images|augmentation]]** la plus rapide et la plus riche de l'écosystème Python : 70+ transformations géométriques et photométriques, déclarées comme un pipeline (`A.Compose([...])`) avec probabilités par opération. Sa force distinctive : elle propage **cohéremment** la transformation aux **cibles** — boîtes englobantes, masques de segmentation et keypoints — ce qui en fait le défaut pour la [[Détection d'objets|détection]] et la [[Segmentation|segmentation]], pas seulement la classification. Bâtie sur [[Dev/Services/OpenCV|OpenCV]] et NumPy, elle est sensiblement plus rapide que l'ancienne API torchvision sur CPU.
+Bibliothèque d'**[[Augmentation d'images|augmentation]]** la plus rapide et la plus riche de l'écosystème Python : 70+ transformations géométriques et photométriques, déclarées comme un pipeline (`A.Compose([...])`) avec probabilités par opération. Sa force distinctive : elle propage **cohéremment** la transformation aux **cibles** — boîtes englobantes, masques de segmentation et keypoints — ce qui en fait le défaut pour la [[Détection d'objets|détection]] et la [[Segmentation|segmentation]], pas seulement la classification. Bâtie sur [[OpenCV]] et NumPy, elle est sensiblement plus rapide que l'ancienne API torchvision sur CPU.
 
 ## Quand l'utiliser
 
@@ -29,8 +29,8 @@ Bibliothèque d'**[[Augmentation d'images|augmentation]]** la plus rapide et la 
 
 ## Quand NE PAS l'utiliser
 
-- Rester dans l'écosystème officiel sans dépendance en plus → `transforms.v2` de [[Dev/Services/torchvision|torchvision]].
-- Augmentation **sur GPU** et **différentiable** (dans le graphe d'autograd) → [[Dev/Services/Kornia|Kornia]].
+- Rester dans l'écosystème officiel sans dépendance en plus → `transforms.v2` de [[torchvision]].
+- Augmentation **sur GPU** et **différentiable** (dans le graphe d'autograd) → [[Kornia]].
 - Augmentation hors image (texte, audio, tabulaire) → outils dédiés.
 
 ## Déploiement & coût
@@ -46,13 +46,13 @@ Bibliothèque d'**[[Augmentation d'images|augmentation]]** la plus rapide et la 
 
 ## Alternatives
 
-- [[Dev/Services/torchvision|torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
-- [[Dev/Services/Kornia|Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
+- [[torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
+- [[Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
 ## Liens
 
 - [[Augmentation d'images]] — le concept dont albumentations est l'outil de référence.
-- [[Dev/Services/OpenCV|OpenCV]] — le moteur d'image sous-jacent.
+- [[OpenCV]] — le moteur d'image sous-jacent.
 - [[Détection d'objets]] / [[Segmentation]] — les tâches où la propagation aux cibles compte.
-- [[Dev/Services/PyTorch|PyTorch]] — intégration `Dataset`/`DataLoader`.
+- [[PyTorch]] — intégration `Dataset`/`DataLoader`.
 - Doc : https://albumentations.ai/docs/

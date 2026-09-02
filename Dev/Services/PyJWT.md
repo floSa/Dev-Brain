@@ -51,5 +51,5 @@ Pas de substitut direct référencé dans le brain. Pour des **flux OAuth2/OIDC 
 
 ## Liens
 
-- [[Dev/Services/FastAPI|FastAPI]] — consomme PyJWT dans son pattern OAuth2 password bearer.
+- [[FastAPI]] — consomme PyJWT dans son pattern OAuth2 password bearer.
 - Doc : https://pyjwt.readthedocs.io/ · Repo : https://github.com/jpadilla/pyjwt

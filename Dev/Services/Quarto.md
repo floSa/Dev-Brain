@@ -30,9 +30,9 @@ Système de **publication scientifique et technique** : à partir de Markdown en
 
 ## Quand NE PAS l'utiliser
 
-- Versionner proprement le notebook source en git (objectif code, pas publication) → [[Dev/Services/jupytext|jupytext]].
-- Paramétrer et exécuter en masse des notebooks pour produire des artefacts `.ipynb`, sans rendu documentaire → [[Dev/Services/papermill|papermill]].
-- Environnement notebook réactif au quotidien → [[Dev/Services/Marimo|Marimo]].
+- Versionner proprement le notebook source en git (objectif code, pas publication) → [[jupytext]].
+- Paramétrer et exécuter en masse des notebooks pour produire des artefacts `.ipynb`, sans rendu documentaire → [[papermill]].
+- Environnement notebook réactif au quotidien → [[Marimo]].
 - Application interactive (widgets serveur, état) : Quarto produit du document, pas une web-app dynamique.
 
 ## Déploiement & coût
@@ -43,7 +43,7 @@ Système de **publication scientifique et technique** : à partir de Markdown en
 
 ## Pièges
 
-- Le rendu **réexécute le code** : un environnement non épinglé ([[Dev/Services/uv|uv]], lockfile) casse la reproductibilité du document.
+- Le rendu **réexécute le code** : un environnement non épinglé ([[uv]], lockfile) casse la reproductibilité du document.
 - Chaîne PDF/LaTeX lourde et source d'erreurs cryptiques : préférer le HTML quand le PDF n'est pas requis.
 - Outil externe (binaire), pas un module Python : à provisionner explicitement en CI / image Docker.
 - `.qmd` ≠ notebook : c'est du Markdown source ; l'aller-retour avec `.ipynb` se fait via les formats Quarto, pas automatiquement.
@@ -55,6 +55,6 @@ Système de **publication scientifique et technique** : à partir de Markdown en
 ## Liens
 
 - [[Notebooks-as-code]] — le rendu reproductible suppose un notebook exécutable de bout en bout.
-- [[Dev/Services/papermill|papermill]] — exécution paramétrée en amont d'un rendu Quarto dans un pipeline.
-- [[Dev/Services/uv|uv]] — environnement épinglé qui rend le `quarto render` reproductible.
+- [[papermill]] — exécution paramétrée en amont d'un rendu Quarto dans un pipeline.
+- [[uv]] — environnement épinglé qui rend le `quarto render` reproductible.
 - Doc : https://quarto.org/

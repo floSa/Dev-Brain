@@ -39,10 +39,10 @@ tags: [tool-use, agents, llm]
 ## En pratique
 
 - **Peu d'outils, bien décrits**, aux frontières nettes ; un schéma de paramètres strict (types, énumérations) vaut mieux qu'une description floue.
-- Valider les arguments avant exécution — [[Dev/Services/Instructor|Instructor]] / [[Dev/Services/PydanticAI|PydanticAI]] pour des sorties typées et validées.
+- Valider les arguments avant exécution — [[Instructor]] / [[PydanticAI]] pour des sorties typées et validées.
 - Isoler les outils dangereux (bac à sable, permissions) ; tout effet de bord passe par un garde-fou.
 - Le **MCP** standardise l'exposition d'outils à un agent (protocole client-serveur) — cf. [[mcp-protocol]].
-- Outillage : [[Dev/Services/LangGraph|LangGraph]], [[Dev/Services/LangChain|LangChain]], [[Dev/Services/CrewAI|CrewAI]] gèrent la déclaration et la boucle d'appel d'outils.
+- Outillage : [[LangGraph]], [[LangChain]], [[CrewAI]] gèrent la déclaration et la boucle d'appel d'outils.
 
 ## Approches voisines & alternatives
 

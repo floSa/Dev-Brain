@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/Dagster|Dagster]]", "[[Dev/Services/Prefect|Prefect]]", "[[Dev/Services/Mage|Mage]]", "[[Dev/Services/Kestra|Kestra]]", "[[Dev/Services/Temporal|Temporal]]"]
+alternatives: ["[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
 complements: []
 tags: [orchestration, data-pipeline, scheduler]
 url_docs: https://airflow.apache.org/docs/
@@ -32,15 +32,15 @@ Apache Airflow est l'ordonnanceur de workflows de référence en data engineerin
 
 ## Quand NE PAS l'utiliser
 
-- Pipelines pensés autour des **données produites** plutôt que des tâches → [[Dev/Services/Dagster|Dagster]] (assets, lignage, tests).
-- Workflows très dynamiques et pythoniques sans DAG statique → [[Dev/Services/Prefect|Prefect]].
-- Équipe non-Python ou besoin déclaratif YAML → [[Dev/Services/Kestra|Kestra]].
-- ELT léger et visuel, prototypage rapide → [[Dev/Services/Mage|Mage]].
+- Pipelines pensés autour des **données produites** plutôt que des tâches → [[Dagster]] (assets, lignage, tests).
+- Workflows très dynamiques et pythoniques sans DAG statique → [[Prefect]].
+- Équipe non-Python ou besoin déclaratif YAML → [[Kestra]].
+- ELT léger et visuel, prototypage rapide → [[Mage]].
 - Streaming temps réel — Airflow est un orchestrateur batch, pas un moteur de flux.
 
 ## Déploiement & coût
 
-- Open-source (Apache-2.0), gratuit, auto-hébergé : scheduler + webserver + workers + une base de métadonnées ([[Dev/Services/Postgres|Postgres]]). Distribution via CeleryExecutor ou KubernetesExecutor.
+- Open-source (Apache-2.0), gratuit, auto-hébergé : scheduler + webserver + workers + une base de métadonnées ([[Postgres]]). Distribution via CeleryExecutor ou KubernetesExecutor.
 - Offres managées : Amazon MWAA, Google Cloud Composer, Astronomer (Astro).
 - Lourd à opérer soi-même (plusieurs composants + broker) — c'est le prix de sa flexibilité.
 
@@ -53,11 +53,11 @@ Apache Airflow est l'ordonnanceur de workflows de référence en data engineerin
 
 ## Alternatives
 
-- [[Dev/Services/Dagster|Dagster]] — Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.
-- [[Dev/Services/Prefect|Prefect]] — Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.
-- [[Dev/Services/Mage|Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
-- [[Dev/Services/Kestra|Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
-- [[Dev/Services/Temporal|Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
+- [[Dagster]] — Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.
+- [[Prefect]] — Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.
+- [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
+- [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
+- [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
 
 ## Liens
 

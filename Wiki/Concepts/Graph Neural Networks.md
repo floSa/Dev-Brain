@@ -43,7 +43,7 @@ tags: [gnn, deep-learning, representation-learning]
 
 ## En pratique
 
-- Données : un graphe stocké dans une base de graphes ([[Dev/Services/Neo4j|Neo4j]], [[Dev/Services/Nebula Graph|Nebula Graph]]) ou des tenseurs adjacence / edge-index. Frameworks : [[Dev/Services/PyTorch Geometric|PyTorch Geometric]] (PyG), Deep Graph Library (DGL).
+- Données : un graphe stocké dans une base de graphes ([[Neo4j]], [[Nebula Graph]]) ou des tenseurs adjacence / edge-index. Frameworks : [[PyTorch Geometric]] (PyG), Deep Graph Library (DGL).
 - **Over-smoothing** : empiler trop de couches rend tous les nœuds identiques (les représentations convergent) → rester peu profond, ou résidus / normalisation.
 - **Scalabilité** : sur gros graphes, échantillonner le voisinage (GraphSAGE) ou partitionner ; le full-batch ne tient pas en mémoire.
 - Quand un GNN n'apporte rien : si la structure du graphe n'est pas informative, des features tabulaires + un [[Gradient Boosting (GBDT)|GBDT]] font souvent aussi bien, pour moins cher.
@@ -53,8 +53,8 @@ tags: [gnn, deep-learning, representation-learning]
 - [[CNN]] — convolution sur grille régulière ; le GNN en est la généralisation aux domaines irréguliers.
 - [[Self-attention]] / [[Transformer architectures]] — un Transformer est un GNN sur graphe complet ; GAT importe l'attention dans le voisinage local.
 - [[embeddings]] — les GNN produisent des embeddings de nœuds qui prolongent les méthodes type node2vec, en supervisé et inductif.
-- [[Dev/Services/PyTorch Geometric|PyTorch Geometric]] — bibliothèque de référence pour écrire et entraîner des GNN sur PyTorch (message passing, GCN/GAT/GraphSAGE).
-- [[Dev/Services/Neo4j|Neo4j]], [[Dev/Services/Nebula Graph|Nebula Graph]] — stockage des graphes en entrée ; complémentaires (la base sert la donnée, le GNN apprend dessus).
+- [[PyTorch Geometric]] — bibliothèque de référence pour écrire et entraîner des GNN sur PyTorch (message passing, GCN/GAT/GraphSAGE).
+- [[Neo4j]], [[Nebula Graph]] — stockage des graphes en entrée ; complémentaires (la base sert la donnée, le GNN apprend dessus).
 - [[GraphRAG]] — exploite la structure de graphe pour le retrieval ; voie symbolique là où le GNN est une voie apprise.
 
 ## Pour aller plus loin
@@ -62,4 +62,4 @@ tags: [gnn, deep-learning, representation-learning]
 - Kipf & Welling (2017, GCN) ; Veličković et al. (2018, GAT) ; Hamilton et al. (2017, GraphSAGE) ; Gilmer et al. (2017, MPNN).
 - Bronstein et al. — *Geometric Deep Learning* (cadre unificateur grilles / graphes / groupes).
 - Frameworks : PyTorch Geometric (PyG), Deep Graph Library (DGL).
-- Connexions brain : [[CNN]], [[Self-attention]], [[Dev/Services/Neo4j|Neo4j]], [[Dev/Services/Nebula Graph|Nebula Graph]], [[GraphRAG]].
+- Connexions brain : [[CNN]], [[Self-attention]], [[Neo4j]], [[Nebula Graph]], [[GraphRAG]].

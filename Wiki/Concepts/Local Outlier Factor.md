@@ -60,7 +60,7 @@ tags: [anomaly-detection, unsupervised]
 - **Le bon réflexe : LOF et Isolation Forest sont complémentaires, pas concurrents.** Les faire tourner tous les deux et regarder les désaccords est souvent plus instructif que de choisir. Ce qu'ils flaggent tous les deux est robuste ; ce que seul LOF flagge est contextuel.
 - **Le score n'étant pas borné**, ne pas s'accrocher à un seuil : trier par score et faire trancher un expert sur le haut du classement.
 - Ne gère ni les NaN ni les catégorielles brutes : imputer et encoder en amont.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.neighbors.LocalOutlierFactor]] ; [[Dev/Services/PyOD|PyOD]] pour comparer une dizaine de détecteurs sous une API commune.
+- Outils : [[Scikit-Learn|sklearn.neighbors.LocalOutlierFactor]] ; [[PyOD]] pour comparer une dizaine de détecteurs sous une API commune.
 
 ## Approches voisines & alternatives
 

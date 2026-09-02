@@ -19,7 +19,7 @@ url_repo: https://github.com/mindee/doctr
 
 ## Pourquoi
 
-Bibliothèque d'**[[OCR]]** (Document Text Recognition) de Mindee, intégrée à l'écosystème [[Dev/Services/PyTorch|PyTorch]] (backend TensorFlow aussi disponible). Implémente le pipeline OCR **en deux étages** prêt à l'emploi : **détection de texte** (DBNet, LinkNet — localiser les mots) puis **reconnaissance** (CRNN, SAR, ViTSTR — lire les caractères), le tout avec **modèles pré-entraînés**. Une fonction (`ocr_predictor`) enchaîne les deux et restitue le texte **avec sa position** et la structure (pages, blocs, lignes, mots). C'est l'OCR open-source clé en main pour numériser des documents, sans assembler soi-même détection et reconnaissance.
+Bibliothèque d'**[[OCR]]** (Document Text Recognition) de Mindee, intégrée à l'écosystème [[PyTorch]] (backend TensorFlow aussi disponible). Implémente le pipeline OCR **en deux étages** prêt à l'emploi : **détection de texte** (DBNet, LinkNet — localiser les mots) puis **reconnaissance** (CRNN, SAR, ViTSTR — lire les caractères), le tout avec **modèles pré-entraînés**. Une fonction (`ocr_predictor`) enchaîne les deux et restitue le texte **avec sa position** et la structure (pages, blocs, lignes, mots). C'est l'OCR open-source clé en main pour numériser des documents, sans assembler soi-même détection et reconnaissance.
 
 ## Quand l'utiliser
 
@@ -52,5 +52,5 @@ Bibliothèque d'**[[OCR]]** (Document Text Recognition) de Mindee, intégrée à
 - [[OCR]] — le concept : deux étages (détection puis reconnaissance), CTC vs attention, CER/WER, panorama des moteurs.
 - [[Détection d'objets]] / [[Segmentation]] — l'étage de détection de texte en est une variante spécialisée.
 - [[Vision Language Models]] — l'alternative lecture-compréhension de bout en bout.
-- [[Dev/Services/PyTorch|PyTorch]] — l'écosystème d'intégration.
+- [[PyTorch]] — l'écosystème d'intégration.
 - Doc : https://mindee.github.io/doctr/

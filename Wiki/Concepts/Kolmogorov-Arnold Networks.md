@@ -35,13 +35,13 @@ tags: [deep-learning]
 
 ## En pratique
 
-- Implémentation de référence [[Dev/Services/pykan|pykan]] (sur [[Dev/Services/PyTorch|PyTorch]]) ; variantes plus rapides (efficient-kan, FastKAN) qui remplacent les B-splines par des bases moins coûteuses.
+- Implémentation de référence [[pykan]] (sur [[PyTorch]]) ; variantes plus rapides (efficient-kan, FastKAN) qui remplacent les B-splines par des bases moins coûteuses.
 - Points forts observés : **régression de fonctions**, problèmes de physique / EDP, tâches où l'interprétabilité prime.
 - Limites : **entraînement plus lent** que le MLP, écosystème immature, gains peu nets sur les grosses tâches de perception (vision, langage) où MLP et transformeur restent devant. Architecture **récente** et mouvante — à manier comme une piste de recherche, pas comme un défaut de production.
 
 ## Approches voisines & alternatives
 
-- [[MOC/Concepts/Deep learning|Deep learning]] — la famille d'architectures dont le KAN est une variante ; le MLP qu'il vise à concurrencer en est la brique de base.
+- [[Deep learning]] — la famille d'architectures dont le KAN est une variante ; le MLP qu'il vise à concurrencer en est la brique de base.
 - [[Self-attention]] — autre brique structurante du deep learning moderne, orthogonale au KAN (des KAN-Transformers combinent les deux).
 
 ## Pour aller plus loin

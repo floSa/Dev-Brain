@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++ / Python
-alternatives: ["[[Dev/Services/PyMC|PyMC]]"]
+alternatives: ["[[PyMC]]"]
 complements: []
 tags: [bayesian, probabilistic-programming, monte-carlo, markov]
 url_docs: https://mc-stan.org
@@ -29,9 +29,9 @@ Plateforme de référence pour l'inférence bayésienne. On écrit le modèle da
 
 ## Quand NE PAS l'utiliser
 
-- Prototypage rapide tout en Python, modèle évoluant souvent → [[Dev/Services/PyMC|PyMC]] (pas de compilation, syntaxe Python).
-- Statistique fréquentiste classique (GLM, séries temporelles, tests) → [[Dev/Services/statsmodels|statsmodels]].
-- Exploration des résultats : déléguée à [[Dev/Services/ArviZ|ArviZ]] (CmdStanPy expose un `InferenceData`).
+- Prototypage rapide tout en Python, modèle évoluant souvent → [[PyMC]] (pas de compilation, syntaxe Python).
+- Statistique fréquentiste classique (GLM, séries temporelles, tests) → [[statsmodels]].
+- Exploration des résultats : déléguée à [[ArviZ]] (CmdStanPy expose un `InferenceData`).
 
 ## Déploiement & coût
 
@@ -47,11 +47,11 @@ Plateforme de référence pour l'inférence bayésienne. On écrit le modèle da
 
 ## Alternatives
 
-- [[Dev/Services/PyMC|PyMC]] — Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).
+- [[PyMC]] — Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Inférence bayésienne|Inférence bayésienne]], [[Wiki/Concepts/MCMC|MCMC]]
-- Diagnostics & viz a posteriori : [[Dev/Services/ArviZ|ArviZ]]
+- Concepts implémentés : [[Inférence bayésienne]], [[MCMC]]
+- Diagnostics & viz a posteriori : [[ArviZ]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://mc-stan.org/cmdstanpy

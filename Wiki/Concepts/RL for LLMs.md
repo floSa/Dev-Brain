@@ -45,7 +45,7 @@ tags: [reinforcement-learning, alignment, fine-tuning, llm]
 - **Commencer simple** : DPO (offline, stable) pour l'alignement de préférences ; passer à PPO/[[GRPO]] si l'on a un bon signal (RM solide ou récompense vérifiable).
 - **Raisonnement** : GRPO + récompenses vérifiables (maths, code) est la recette des modèles de raisonnement récents.
 - Faire le RL en **[[PEFT]]/LoRA** pour le rendre abordable sur peu de GPU.
-- Outils : `TRL`, `verl`, `OpenRLHF` sur [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/HuggingFace|HuggingFace]] ; échantillonnage rapide via [[Dev/Services/vLLM|vLLM]]. Côté JAX/TPU : [[Dev/Services/Tunix|Tunix]] (GRPO, PPO, RL agentique).
+- Outils : `TRL`, `verl`, `OpenRLHF` sur [[PyTorch]] / [[HuggingFace]] ; échantillonnage rapide via [[vLLM]]. Côté JAX/TPU : [[Tunix]] (GRPO, PPO, RL agentique).
 
 ## Approches voisines & alternatives
 

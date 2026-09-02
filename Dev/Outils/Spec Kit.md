@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
-alternatives: ["[[Dev/Outils/BMAD|BMAD]]"]
+alternatives: ["[[BMAD]]"]
 complements: []
 tags: [code-assistant, code-generation, agents, cli]
 url_docs: https://github.com/github/spec-kit
@@ -30,7 +30,7 @@ Spec Kit (MIT, GitHub) outille le **spec-driven development** : au lieu d'écrir
 
 ## Quand NE PAS l'utiliser
 
-- Complétion inline ou chat intégré à l'IDE → [[Dev/Outils/Continue|Continue]].
+- Complétion inline ou chat intégré à l'IDE → [[Continue]].
 - Petite édition ponctuelle : le workflow SDD (6-7 étapes) est surdimensionné.
 
 ## Bases & plateformes
@@ -48,8 +48,8 @@ Spec Kit (MIT, GitHub) outille le **spec-driven development** : au lieu d'écrir
 
 ## Alternatives
 
-- Pas de substitut direct dans le brain : c'est un **cadre méthodologique** (spec-driven), pas un assistant de code. Les agents qu'il pilote sont fichés à part : [[Dev/Outils/Aider|Aider]], [[Dev/Outils/Cline|Cline]], [[Dev/Outils/Continue|Continue]].
-- [[Dev/Outils/BMAD|BMAD]] — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
+- Pas de substitut direct dans le brain : c'est un **cadre méthodologique** (spec-driven), pas un assistant de code. Les agents qu'il pilote sont fichés à part : [[Aider]], [[Cline]], [[Continue]].
+- [[BMAD]] — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
 
 ## Liens
 

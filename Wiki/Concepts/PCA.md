@@ -42,7 +42,7 @@ tags: [dimensionality-reduction, factor-analysis, unsupervised]
 - Standardiser dès que les variables n'ont pas la même unité.
 - Sensible aux valeurs extrêmes (la variance) → inspecter / robustifier.
 - Axes = combinaisons → interprétation parfois floue ; s'aider des contributions et du cos².
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.decomposition.PCA]], [[Dev/Services/Prince|prince.PCA]], `FactoMineR::PCA`.
+- Outils : [[Scikit-Learn|sklearn.decomposition.PCA]], [[Prince|prince.PCA]], `FactoMineR::PCA`.
 
 ## Approches voisines & alternatives
 

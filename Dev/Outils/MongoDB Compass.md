@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: source-available
 os: "Windows, macOS, Linux"
 langage: TypeScript/Electron
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+alternatives: ["[[DBeaver]]"]
 complements: []
 tags: [db-client, document-db, nosql]
 url_docs: https://www.mongodb.com/docs/compass/
@@ -30,7 +30,7 @@ Le client graphique **officiel** de MongoDB. Pensé pour le modèle document : n
 
 ## Quand NE PAS l'utiliser
 
-- Mêler MongoDB et des bases relationnelles dans un seul outil → [[Dev/Outils/DBeaver|DBeaver]] (Mongo en édition payante).
+- Mêler MongoDB et des bases relationnelles dans un seul outil → [[DBeaver]] (Mongo en édition payante).
 - Préférer le shell `mongosh` pour le scripting reproductible.
 
 ## Bases & plateformes
@@ -45,11 +45,11 @@ Le client graphique **officiel** de MongoDB. Pensé pour le modèle document : n
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
-- [[Dev/Services/MongoDB|MongoDB]] — le moteur exploré
+- [[Bases de données]] — le concept (Wiki)
+- [[MongoDB]] — le moteur exploré
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://www.mongodb.com/docs/compass/

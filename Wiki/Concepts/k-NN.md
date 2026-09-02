@@ -52,7 +52,7 @@ tags: [supervised, classification, regression]
 - **Sensible au déséquilibre** : si une classe est rare, les voisins d'un point rare sont majoritairement de la classe fréquente et il est systématiquement mal classé ([[Imbalanced classification]]).
 - **N'extrapole pas et ne gère pas les NaN.** Sa vraie force aujourd'hui n'est plus la classification tabulaire mais la **recherche par similarité** sur [[embeddings]] — c'est le même calcul, passé à l'échelle ([[Bases de données vectorielles]]).
 - Variante utile : `KNNImputer`, qui impute une valeur manquante par la moyenne de ses voisins ([[Imputation des valeurs manquantes]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.neighbors]] (`KNeighborsClassifier`, `KNeighborsRegressor`, `KNNImputer`) ; à l'échelle : [[Dev/Services/Faiss|Faiss]], [[Dev/Services/hnswlib|hnswlib]], [[Dev/Services/Annoy|Annoy]].
+- Outils : [[Scikit-Learn|sklearn.neighbors]] (`KNeighborsClassifier`, `KNeighborsRegressor`, `KNNImputer`) ; à l'échelle : [[Faiss]], [[hnswlib]], [[Annoy]].
 
 ## Approches voisines & alternatives
 

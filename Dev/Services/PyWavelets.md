@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C / Cython / Python
-alternatives: ["[[Dev/Services/scipy.signal|scipy.signal]]"]
+alternatives: ["[[scipy.signal]]"]
 complements: []
 tags: [signal-processing, wavelet]
 url_docs: https://pywavelets.readthedocs.io/
@@ -30,9 +30,9 @@ Bibliothèque dédiée aux **transformées en ondelettes** en Python (`import py
 
 ## Quand NE PAS l'utiliser
 
-- Analyse purement **fréquentielle** (signal stationnaire) → `numpy.fft` ou [[Dev/Services/scipy.signal|scipy.signal]].
-- **Filtrage** classique passe-bande / conception FIR-IIR → [[Dev/Services/scipy.signal|scipy.signal]].
-- Pipeline **audio** prêt à l'emploi (mel, MFCC) → [[Dev/Services/librosa|librosa]].
+- Analyse purement **fréquentielle** (signal stationnaire) → `numpy.fft` ou [[scipy.signal]].
+- **Filtrage** classique passe-bande / conception FIR-IIR → [[scipy.signal]].
+- Pipeline **audio** prêt à l'emploi (mel, MFCC) → [[librosa]].
 
 ## Déploiement & coût
 
@@ -49,12 +49,12 @@ Bibliothèque dédiée aux **transformées en ondelettes** en Python (`import py
 
 ## Alternatives
 
-- [[Dev/Services/scipy.signal|scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
+- [[scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
 
 ## Liens
 
 - [[Ondelettes]] — la notion (DWT/CWT, multirésolution, seuillage).
 - [[Traitement du signal]] — page chapeau.
-- [[Dev/Services/scipy.signal|scipy.signal]] — complément filtrage / analyse spectrale.
-- [[Dev/Patterns/Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
+- [[scipy.signal]] — complément filtrage / analyse spectrale.
+- [[Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
 - Doc : https://pywavelets.readthedocs.io/

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / TypeScript
-alternatives: ["[[Dev/Services/plotly|plotly]]", "[[Dev/Services/altair|altair]]"]
+alternatives: ["[[plotly]]", "[[altair]]"]
 complements: []
 tags: [dataviz, interactive-viz]
 url_docs: https://docs.bokeh.org/
@@ -30,10 +30,10 @@ Bibliothèque de visualisation **interactive** pour le navigateur. Côté Python
 
 ## Quand NE PAS l'utiliser
 
-- Graphes statistiques rapides en une ligne → [[Dev/Services/seaborn|seaborn]].
-- Sortie statique pour print/PDF → [[Dev/Services/matplotlib|matplotlib]].
-- API plus immédiate pour l'interactif courant → [[Dev/Services/plotly|plotly]] (Plotly Express).
-- Spécification déclarative concise → [[Dev/Services/altair|altair]].
+- Graphes statistiques rapides en une ligne → [[seaborn]].
+- Sortie statique pour print/PDF → [[matplotlib]].
+- API plus immédiate pour l'interactif courant → [[plotly]] (Plotly Express).
+- Spécification déclarative concise → [[altair]].
 
 ## Déploiement & coût
 
@@ -50,11 +50,11 @@ Bibliothèque de visualisation **interactive** pour le navigateur. Côté Python
 
 ## Alternatives
 
-- [[Dev/Services/plotly|plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
-- [[Dev/Services/altair|altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
+- [[plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
+- [[altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
 ## Liens
 
-- Alternatives interactives : [[Dev/Services/plotly|plotly]], [[Dev/Services/altair|altair]].
-- [[Dev/Patterns/Comparatif - Visualisation]] — bokeh vs matplotlib / seaborn / plotly / altair.
+- Alternatives interactives : [[plotly]], [[altair]].
+- [[Comparatif - Visualisation]] — bokeh vs matplotlib / seaborn / plotly / altair.
 - Doc : https://docs.bokeh.org/

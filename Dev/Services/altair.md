@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/plotly|plotly]]", "[[Dev/Services/bokeh|bokeh]]"]
+alternatives: ["[[plotly]]", "[[bokeh]]"]
 complements: []
 tags: [dataviz, declarative-viz, interactive-viz]
 url_docs: https://altair-viz.github.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/vega/altair
 
 ## Pourquoi
 
-Bibliothèque de visualisation **déclarative** : au lieu de tracer pas à pas, on **décrit** le graphe — quelle colonne va sur quel encodage (`x`, `y`, `color`, `size`), quelle marque (`mark_bar`, `mark_line`, `mark_point`). Altair produit une spécification **Vega-Lite** (JSON) rendue de façon **interactive** dans le navigateur. La grammaire des graphiques rend le code concis et composable : superposition, facettes, sélections liées s'expriment par opérateurs. Entrée naturelle : un `DataFrame` [[Dev/Services/pandas|pandas]].
+Bibliothèque de visualisation **déclarative** : au lieu de tracer pas à pas, on **décrit** le graphe — quelle colonne va sur quel encodage (`x`, `y`, `color`, `size`), quelle marque (`mark_bar`, `mark_line`, `mark_point`). Altair produit une spécification **Vega-Lite** (JSON) rendue de façon **interactive** dans le navigateur. La grammaire des graphiques rend le code concis et composable : superposition, facettes, sélections liées s'expriment par opérateurs. Entrée naturelle : un `DataFrame` [[pandas]].
 
 ## Quand l'utiliser
 
@@ -31,9 +31,9 @@ Bibliothèque de visualisation **déclarative** : au lieu de tracer pas à pas, 
 ## Quand NE PAS l'utiliser
 
 - Très gros jeux : limite par défaut à 5000 lignes (`MaxRowsError`) — agréger ou activer un data server.
-- Contrôle bas niveau de chaque pixel → [[Dev/Services/matplotlib|matplotlib]].
-- Dashboards serveur / streaming gros volumes → [[Dev/Services/bokeh|bokeh]].
-- Riche galerie de types prêts (3D, cartes avancées) → [[Dev/Services/plotly|plotly]].
+- Contrôle bas niveau de chaque pixel → [[matplotlib]].
+- Dashboards serveur / streaming gros volumes → [[bokeh]].
+- Riche galerie de types prêts (3D, cartes avancées) → [[plotly]].
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ Bibliothèque de visualisation **déclarative** : au lieu de tracer pas à pas, 
 
 ## Alternatives
 
-- [[Dev/Services/plotly|plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
-- [[Dev/Services/bokeh|bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
+- [[plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
+- [[bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
 
 ## Liens
 
-- Alternatives interactives : [[Dev/Services/plotly|plotly]], [[Dev/Services/bokeh|bokeh]].
-- Repose sur la spécification Vega-Lite ; consomme des DataFrames [[Dev/Services/pandas|pandas]].
-- [[Dev/Patterns/Comparatif - Visualisation]] — altair vs matplotlib / seaborn / plotly / bokeh.
+- Alternatives interactives : [[plotly]], [[bokeh]].
+- Repose sur la spécification Vega-Lite ; consomme des DataFrames [[pandas]].
+- [[Comparatif - Visualisation]] — altair vs matplotlib / seaborn / plotly / bokeh.
 - Doc : https://altair-viz.github.io/

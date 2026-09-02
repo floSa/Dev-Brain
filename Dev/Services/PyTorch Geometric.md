@@ -19,7 +19,7 @@ url_repo: https://github.com/pyg-team/pytorch_geometric
 
 ## Pourquoi
 
-Bibliothèque de référence pour le **deep learning sur graphes** au-dessus de [[Dev/Services/PyTorch|PyTorch]]. Elle fournit la brique fondamentale des [[Graph Neural Networks]] — le **passage de messages** (`MessagePassing`) — et des dizaines de couches prêtes à l'emploi (GCN, GAT, GraphSAGE, GIN…), un format de données graphe (`Data`, `HeteroData`) basé sur des tenseurs `edge_index`, des **loaders** qui échantillonnent le voisinage pour faire tenir de gros graphes en mémoire (NeighborLoader), et un catalogue de datasets et de benchmarks. Opérations creuses et `scatter`/`gather` optimisés GPU : on écrit un GNN en quelques couches, on l'entraîne comme n'importe quel modèle PyTorch.
+Bibliothèque de référence pour le **deep learning sur graphes** au-dessus de [[PyTorch]]. Elle fournit la brique fondamentale des [[Graph Neural Networks]] — le **passage de messages** (`MessagePassing`) — et des dizaines de couches prêtes à l'emploi (GCN, GAT, GraphSAGE, GIN…), un format de données graphe (`Data`, `HeteroData`) basé sur des tenseurs `edge_index`, des **loaders** qui échantillonnent le voisinage pour faire tenir de gros graphes en mémoire (NeighborLoader), et un catalogue de datasets et de benchmarks. Opérations creuses et `scatter`/`gather` optimisés GPU : on écrit un GNN en quelques couches, on l'entraîne comme n'importe quel modèle PyTorch.
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Bibliothèque de référence pour le **deep learning sur graphes** au-dessus de 
 
 ## Quand NE PAS l'utiliser
 
-- La **structure du graphe n'apporte rien** : des features tabulaires + un [[Dev/Services/XGBoost|GBDT]] font souvent aussi bien, pour moins cher (cf. [[Graph Neural Networks]]).
-- Données en grille ou séquence régulière → [[Dev/Services/torchvision|CNN]] / Transformers, pas un GNN.
-- Préférence pour l'écosystème DGL (multi-backend historique) ou besoin d'un moteur de graphes en base → [[Dev/Services/Neo4j|Neo4j]] (stockage, pas apprentissage).
+- La **structure du graphe n'apporte rien** : des features tabulaires + un [[XGBoost|GBDT]] font souvent aussi bien, pour moins cher (cf. [[Graph Neural Networks]]).
+- Données en grille ou séquence régulière → [[torchvision|CNN]] / Transformers, pas un GNN.
+- Préférence pour l'écosystème DGL (multi-backend historique) ou besoin d'un moteur de graphes en base → [[Neo4j]] (stockage, pas apprentissage).
 
 ## Déploiement & coût
 
@@ -54,6 +54,6 @@ Bibliothèque de référence pour le **deep learning sur graphes** au-dessus de 
 ## Liens
 
 - [[Graph Neural Networks]] — le concept (message passing, GCN/GAT/GraphSAGE) que PyG implémente.
-- [[Dev/Services/PyTorch|PyTorch]] — framework sous-jacent.
-- [[Dev/Services/Neo4j|Neo4j]] — source possible des graphes en entrée (stockage vs apprentissage).
+- [[PyTorch]] — framework sous-jacent.
+- [[Neo4j]] — source possible des graphes en entrée (stockage vs apprentissage).
 - Doc : https://pytorch-geometric.readthedocs.io/

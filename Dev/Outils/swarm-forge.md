@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: 
 os: "Linux, macOS, Windows (WSL)"
 langage: Clojure
-alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]"]
+alternatives: ["[[CrewAI]]", "[[AutoGen]]"]
 complements: []
 tags: [multi-agent, agents, code-assistant, cli, version-control]
 url_docs: https://github.com/unclebob/swarm-forge
@@ -37,7 +37,7 @@ Ensuite la **communication asynchrone par handoff** : un démon `handoffd.bb` ro
 ## Quand NE PAS l'utiliser
 
 - **En contexte professionnel : le dépôt ne déclare aucune licence.** Un dépôt public sans fichier LICENSE n'accorde aucun droit d'usage, de modification ni de redistribution. Tant que ce n'est pas corrigé, l'outil est à réserver à l'exploration personnelle.
-- Pour construire une application multi-agents : ce n'est pas un framework, on n'écrit rien avec — on orchestre des CLI tierces → [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]].
+- Pour construire une application multi-agents : ce n'est pas un framework, on n'écrit rien avec — on orchestre des CLI tierces → [[CrewAI]], [[AutoGen]].
 - Sans tmux, ou si l'on tient à une interface graphique confortable.
 - En attendant une garantie de stabilité : ni versioning, ni release, ni documentation au-delà du README.
 
@@ -57,8 +57,8 @@ Ensuite la **communication asynchrone par handoff** : un démon `handoffd.bb` ro
 
 ## Alternatives
 
-- [[Dev/Services/CrewAI|CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
-- [[Dev/Services/AutoGen|AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 
 ## Liens
 

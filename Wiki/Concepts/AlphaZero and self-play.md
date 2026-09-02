@@ -45,7 +45,7 @@ tags: [self-play, planning, deep-learning, reinforcement-learning]
 - Très **coûteux en calcul** : des millions de parties, du MCTS à chaque coup.
 - L'idée essaime hors des jeux : auto-amélioration des LLM, génération de données par débats agent-contre-agent — cf. [[RL for LLMs]], [[GRPO]].
 - En information imparfaite (poker), le self-play naïf ne converge pas vers l'équilibre → préférer [[Counterfactual Regret Minimization|CFR]].
-- Côté outils : [[Dev/Services/OpenSpiel|OpenSpiel]] inclut une implémentation pédagogique d'AlphaZero (self-play + MCTS) sur ses jeux à information parfaite.
+- Côté outils : [[OpenSpiel]] inclut une implémentation pédagogique d'AlphaZero (self-play + MCTS) sur ses jeux à information parfaite.
 
 ## Approches voisines & alternatives
 

@@ -43,7 +43,7 @@ tags: [feature-engineering]
 - Adapter au modèle : les arbres ignorent l'échelle et encaissent l'ordinal ; les modèles linéaires, à distance ou à gradient exigent mise à l'échelle et encodage soigné.
 - Toujours `fit_transform` sur le train, `transform` sur le test — jamais l'inverse.
 - Garder la traçabilité des transformations (mêmes colonnes, même ordre) entre entraînement et service.
-- Outils : [[Dev/Services/Scikit-Learn|scikit-learn]] (`sklearn.pipeline`, `ColumnTransformer`, `sklearn.preprocessing`, `sklearn.impute`, `sklearn.feature_selection`) ; [[Dev/Services/Featuretools|Featuretools]] pour la FE automatisée sur données relationnelles/temporelles.
+- Outils : [[Scikit-Learn|scikit-learn]] (`sklearn.pipeline`, `ColumnTransformer`, `sklearn.preprocessing`, `sklearn.impute`, `sklearn.feature_selection`) ; [[Featuretools]] pour la FE automatisée sur données relationnelles/temporelles.
 
 ## Approches voisines & alternatives
 

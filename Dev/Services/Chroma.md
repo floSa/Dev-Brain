@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: ["[[Dev/Services/LanceDB|LanceDB]]", "[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Annoy|Annoy]]", "[[Dev/Services/ScaNN|ScaNN]]"]
+alternatives: ["[[LanceDB]]", "[[Faiss]]", "[[hnswlib]]", "[[Annoy]]", "[[ScaNN]]"]
 complements: []
 tags: [vector-db, rag, embedded]
 url_docs: https://docs.trychroma.com
@@ -30,9 +30,9 @@ Base vectorielle « batteries incluses » pensée pour le RAG. Contrairement aux
 
 ## Quand NE PAS l'utiliser
 
-- Gros volumes / haute concurrence / production exigeante → un serveur dédié : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Milvus|Milvus]].
-- Du Postgres déjà en place → [[Dev/Services/pgvector|pgvector]] ; zéro infra managé → [[Dev/Services/Pinecone|Pinecone]].
-- Besoin seulement d'un index ANN brut dans un pipeline → [[Dev/Services/Faiss|Faiss]] ou [[Dev/Services/hnswlib|hnswlib]].
+- Gros volumes / haute concurrence / production exigeante → un serveur dédié : [[Qdrant]], [[Weaviate]], [[Milvus]].
+- Du Postgres déjà en place → [[pgvector]] ; zéro infra managé → [[Pinecone]].
+- Besoin seulement d'un index ANN brut dans un pipeline → [[Faiss]] ou [[hnswlib]].
 
 ## Déploiement & coût
 
@@ -49,11 +49,11 @@ Base vectorielle « batteries incluses » pensée pour le RAG. Contrairement aux
 
 ## Alternatives
 
-- [[Dev/Services/LanceDB|LanceDB]] — Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.
-- [[Dev/Services/Faiss|Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
-- [[Dev/Services/hnswlib|hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
-- [[Dev/Services/Annoy|Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
-- [[Dev/Services/ScaNN|ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+- [[LanceDB]] — Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.
+- [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
+- [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
+- [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
+- [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 
 ## Liens
 

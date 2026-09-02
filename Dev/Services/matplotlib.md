@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / C++
-alternatives: ["[[Dev/Services/seaborn|seaborn]]"]
+alternatives: ["[[seaborn]]"]
 complements: []
 tags: [dataviz, static-viz]
 url_docs: https://matplotlib.org/stable/
@@ -19,7 +19,7 @@ url_repo: https://github.com/matplotlib/matplotlib
 
 ## Pourquoi
 
-Bibliothèque **fondatrice** de la visualisation Python. Deux interfaces : `pyplot` (style MATLAB, *stateful*, rapide à écrire) et l'API **orientée objet** (`Figure`/`Axes`, contrôle fin et reproductible). Rendu **statique** par défaut vers PNG/SVG/PDF via des backends (Agg en C++), plus des backends interactifs (Qt, Tk, notebook). Sa raison d'être : un contrôle **total** sur chaque élément du graphique. Quasi tout l'écosystème viz s'appuie dessus — [[Dev/Services/seaborn|seaborn]], le `.plot` de pandas, le rendu statique de nombreuses libs.
+Bibliothèque **fondatrice** de la visualisation Python. Deux interfaces : `pyplot` (style MATLAB, *stateful*, rapide à écrire) et l'API **orientée objet** (`Figure`/`Axes`, contrôle fin et reproductible). Rendu **statique** par défaut vers PNG/SVG/PDF via des backends (Agg en C++), plus des backends interactifs (Qt, Tk, notebook). Sa raison d'être : un contrôle **total** sur chaque élément du graphique. Quasi tout l'écosystème viz s'appuie dessus — [[seaborn]], le `.plot` de pandas, le rendu statique de nombreuses libs.
 
 ## Quand l'utiliser
 
@@ -30,8 +30,8 @@ Bibliothèque **fondatrice** de la visualisation Python. Deux interfaces : `pypl
 
 ## Quand NE PAS l'utiliser
 
-- Graphiques statistiques courants vite faits → [[Dev/Services/seaborn|seaborn]] (mêmes figures en une ligne).
-- Interactivité web (zoom, survol, dashboards) → [[Dev/Services/plotly|plotly]], [[Dev/Services/bokeh|bokeh]] ou [[Dev/Services/altair|altair]].
+- Graphiques statistiques courants vite faits → [[seaborn]] (mêmes figures en une ligne).
+- Interactivité web (zoom, survol, dashboards) → [[plotly]], [[bokeh]] ou [[altair]].
 - API verbeuse pour de l'exploratoire rapide → une surcouche haut niveau fait gagner du temps.
 
 ## Déploiement & coût
@@ -49,11 +49,11 @@ Bibliothèque **fondatrice** de la visualisation Python. Deux interfaces : `pypl
 
 ## Alternatives
 
-- [[Dev/Services/seaborn|seaborn]] — Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.
+- [[seaborn]] — Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.
 
 ## Liens
 
-- Surcouche statistique : [[Dev/Services/seaborn|seaborn]] — l'appelle sous le capot.
-- Consommé par [[Dev/Services/pandas|pandas]] (`DataFrame.plot`).
-- [[Dev/Patterns/Comparatif - Visualisation]] — matplotlib vs seaborn / plotly / altair / bokeh.
+- Surcouche statistique : [[seaborn]] — l'appelle sous le capot.
+- Consommé par [[pandas]] (`DataFrame.plot`).
+- [[Comparatif - Visualisation]] — matplotlib vs seaborn / plotly / altair / bokeh.
 - Doc : https://matplotlib.org/stable/

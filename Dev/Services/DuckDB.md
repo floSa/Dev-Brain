@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/ClickHouse|ClickHouse]]"]
+alternatives: ["[[ClickHouse]]"]
 complements: []
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
@@ -30,8 +30,8 @@ Base analytique **in-process** (embarquée), le « SQLite de l'OLAP ». Pas de s
 
 ## Quand NE PAS l'utiliser
 
-- Service analytique multi-utilisateur, distribué, sur gros cluster → [[Dev/Services/ClickHouse|ClickHouse]].
-- OLTP et écritures concurrentes transactionnelles → [[Dev/Services/Postgres|Postgres]].
+- Service analytique multi-utilisateur, distribué, sur gros cluster → [[ClickHouse]].
+- OLTP et écritures concurrentes transactionnelles → [[Postgres]].
 - Volumes dépassant une machine ou besoin de haute disponibilité.
 
 ## Déploiement & coût
@@ -48,10 +48,10 @@ Base analytique **in-process** (embarquée), le « SQLite de l'OLAP ». Pas de s
 
 ## Alternatives
 
-- [[Dev/Services/ClickHouse|ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
+- [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases colonnes]] — comparatif des moteurs colonne / OLAP
 - Doc : https://duckdb.org/docs/

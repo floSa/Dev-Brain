@@ -36,7 +36,7 @@ En contexte on-prem, c'est l'outil de première intention pour caractériser le 
 ## Quand NE PAS l'utiliser
 
 - Dissection protocolaire fine, reconstruction de session, filtres BPF complexes : c'est le domaine de Wireshark / `tshark`.
-- Supervision continue et centralisée d'un parc : Sniffnet est une application locale, sans agent ni base de données historisée → voir [[Dev/Services/Beszel|Beszel]] pour la supervision d'hôtes.
+- Supervision continue et centralisée d'un parc : Sniffnet est une application locale, sans agent ni base de données historisée → voir [[Beszel]] pour la supervision d'hôtes.
 - Serveur sans affichage : l'interface est graphique, il n'y a pas de mode terminal. Sur une machine distante en SSH seul, l'outil ne s'utilise pas.
 - Analyse de contenu chiffré : les métadonnées de flux sont visibles, pas les charges utiles TLS.
 
@@ -63,8 +63,8 @@ Aucune fiche du brain ne couvre le même terrain aujourd'hui — Sniffnet est la
 
 ## Liens
 
-- [[Dev/Services/Beszel|Beszel]] — supervision des hôtes et conteneurs, complémentaire : Beszel dit *comment va la machine*, Sniffnet dit *ce qui circule*
-- [[Dev/Services/Web-Check|Web-Check]] — l'angle inverse : ce qu'un service expose vu de l'extérieur
-- [[Dev/Services/Docker|Docker]] — pour observer le trafic d'un conteneur, capturer sur l'interface bridge de l'hôte
+- [[Beszel]] — supervision des hôtes et conteneurs, complémentaire : Beszel dit *comment va la machine*, Sniffnet dit *ce qui circule*
+- [[Web-Check]] — l'angle inverse : ce qu'un service expose vu de l'extérieur
+- [[Docker]] — pour observer le trafic d'un conteneur, capturer sur l'interface bridge de l'hôte
 - Site : https://sniffnet.app
 - Repo : https://github.com/GyulyVGC/sniffnet

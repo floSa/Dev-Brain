@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]"]
+alternatives: ["[[MLflow]]", "[[Weights & Biases]]"]
 complements: []
 tags: [experiment-tracking, deep-learning, dataviz]
 url_docs: https://www.tensorflow.org/tensorboard
@@ -21,20 +21,20 @@ url_repo: https://github.com/tensorflow/tensorboard
 
 ## Pourquoi
 
-Boîte à outils de **visualisation d'entraînement**, issue de [[Dev/Services/TensorFlow|TensorFlow]] mais devenue framework-agnostique. Le code écrit des **event files** dans un répertoire de logs ; le serveur web `tensorboard --logdir` les lit et affiche des dashboards : courbes de **scalaires** (loss, métriques), **histogrammes** de poids/gradients, **graphe** du modèle, **images/audio**, projecteur d'**embeddings** (PCA/t-SNE) et profilage. C'est l'outil local par défaut pour *voir ce que fait un entraînement* sans envoyer de données à un service tiers. Côté [[Dev/Services/PyTorch|PyTorch]], `torch.utils.tensorboard.SummaryWriter` écrit ces logs nativement ; la plupart des trackers (MLflow, W&B) savent aussi importer ou afficher des logs TensorBoard.
+Boîte à outils de **visualisation d'entraînement**, issue de [[TensorFlow]] mais devenue framework-agnostique. Le code écrit des **event files** dans un répertoire de logs ; le serveur web `tensorboard --logdir` les lit et affiche des dashboards : courbes de **scalaires** (loss, métriques), **histogrammes** de poids/gradients, **graphe** du modèle, **images/audio**, projecteur d'**embeddings** (PCA/t-SNE) et profilage. C'est l'outil local par défaut pour *voir ce que fait un entraînement* sans envoyer de données à un service tiers. Côté [[PyTorch]], `torch.utils.tensorboard.SummaryWriter` écrit ces logs nativement ; la plupart des trackers (MLflow, W&B) savent aussi importer ou afficher des logs TensorBoard.
 
 ## Quand l'utiliser
 
 - **Visualisation rapide et locale** d'un entraînement (scalaires, histogrammes) sans compte ni SaaS.
-- Projet [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/TensorFlow|TensorFlow]] / `transformers` : `SummaryWriter` ou le callback intégré suffit.
+- Projet [[PyTorch]] / [[TensorFlow]] / `transformers` : `SummaryWriter` ou le callback intégré suffit.
 - Inspecter le **graphe** d'un modèle, des **images** générées ou un **projecteur d'embeddings**.
 - Profiler l'utilisation GPU/étapes via le plugin Profiler.
 
 ## Quand NE PAS l'utiliser
 
-- **Comparer des centaines de runs**, collaborer en équipe, gérer un **registre de modèles** → [[Dev/Services/MLflow|MLflow]] ou [[Dev/Services/Weights & Biases|Weights & Biases]] (TensorBoard reste centré visualisation, pas gestion d'expériences).
-- Recherche d'hyperparamètres orchestrée (sweeps) → [[Dev/Services/Weights & Biases|Weights & Biases]], [[Dev/Services/Optuna|Optuna]].
-- Suivi ultra-léger de très nombreux runs en self-host → [[Dev/Services/Aim|Aim]].
+- **Comparer des centaines de runs**, collaborer en équipe, gérer un **registre de modèles** → [[MLflow]] ou [[Weights & Biases]] (TensorBoard reste centré visualisation, pas gestion d'expériences).
+- Recherche d'hyperparamètres orchestrée (sweeps) → [[Weights & Biases]], [[Optuna]].
+- Suivi ultra-léger de très nombreux runs en self-host → [[Aim]].
 
 ## Déploiement & coût
 
@@ -52,15 +52,15 @@ Boîte à outils de **visualisation d'entraînement**, issue de [[Dev/Services/T
 
 ## Alternatives
 
-- [[Dev/Services/MLflow|MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
-- [[Dev/Services/Weights & Biases|Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
+- [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
+- [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
 
 Nuance : TensorBoard **visualise** un entraînement (local, gratuit, sans gestion de runs) ; MLflow et W&B sont des **plateformes de tracking** (comparaison de runs, registre, collaboration) qui peuvent d'ailleurs intégrer ses logs.
 
 ## Liens
 
-- [[Dev/Services/PyTorch|PyTorch]] — `torch.utils.tensorboard.SummaryWriter` écrit les logs nativement.
-- [[Dev/Services/TensorFlow|TensorFlow]] — projet d'origine ; callback Keras intégré.
-- [[Dev/Services/HuggingFace|HuggingFace]] — le `Trainer` logge vers TensorBoard via `report_to`.
-- [[Dev/Services/MLflow|MLflow]] · [[Dev/Services/Weights & Biases|Weights & Biases]] · [[Dev/Services/Aim|Aim]] — trackers qui en prennent le relais à l'échelle.
+- [[PyTorch]] — `torch.utils.tensorboard.SummaryWriter` écrit les logs nativement.
+- [[TensorFlow]] — projet d'origine ; callback Keras intégré.
+- [[HuggingFace]] — le `Trainer` logge vers TensorBoard via `report_to`.
+- [[MLflow]] · [[Weights & Biases]] · [[Aim]] — trackers qui en prennent le relais à l'échelle.
 - Doc : https://www.tensorflow.org/tensorboard

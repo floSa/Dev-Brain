@@ -49,7 +49,7 @@ tags: [explainability, deep-learning, llm]
 - **La conséquence méthodologique est ferme** : ne pas chercher à interpréter des neurones isolés. Chercher des **directions** dans l'espace d'activations ([[Sparse autoencoders]], [[Probing]]).
 - **Elle explique pourquoi les modèles surdimensionnés sont plus lisibles** : plus de dimensions = moins de pression à entasser = moins de superposition. Un vrai argument, à mettre en face du coût.
 - Elle éclaire aussi la **distillation** et le **pruning** : si l'information est entassée dans des directions presque orthogonales, on comprend qu'un modèle puisse être élagué sans s'effondrer — la redondance apparente n'en est pas ([[Pruning]], [[Distillation]]).
-- Pas d'outil dédié : la superposition est le **cadre théorique**, l'outillage est côté [[Sparse autoencoders|SAE]] ([[Dev/Services/SAELens|SAELens]], [[Dev/Services/interpreto|interpreto]]).
+- Pas d'outil dédié : la superposition est le **cadre théorique**, l'outillage est côté [[Sparse autoencoders|SAE]] ([[SAELens]], [[interpreto]]).
 
 ## Approches voisines & alternatives
 

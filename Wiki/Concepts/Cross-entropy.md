@@ -33,7 +33,7 @@ tags: [information-theory, cross-entropy, classification]
 
 ## En pratique
 
-- Perte par défaut en classification : `torch.nn.CrossEntropyLoss` ([[Dev/Services/PyTorch|PyTorch]], applique softmax + NLL en interne), `log_loss` côté [[Dev/Services/Scikit-Learn|sklearn.metrics]].
+- Perte par défaut en classification : `torch.nn.CrossEntropyLoss` ([[PyTorch]], applique softmax + NLL en interne), `log_loss` côté [[Scikit-Learn|sklearn.metrics]].
 - Comme métrique d'évaluation, c'est le **log-loss** des [[Classification metrics]] : il note les probabilités, pas seulement la décision → exige un modèle bien calibré (cf. [[Calibration]]).
 - **Label smoothing** : adoucir les cibles one-hot ($1\to 0.9$) régularise et améliore la calibration des réseaux profonds.
 - Sur classes déséquilibrées, pondérer les termes par classe (focal loss, poids) pour ne pas écraser les classes rares (cf. [[Imbalanced classification]]).

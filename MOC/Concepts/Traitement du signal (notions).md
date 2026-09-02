@@ -10,11 +10,11 @@ indexe: concept/signal
 <!-- AUTO:START -->
 Notions de la famille `concept/signal`.
 
-- [[Wiki/Concepts/Filtrage numérique|Filtrage numérique]] — domaines : data-sci, ml-eng
-- [[Wiki/Concepts/Ondelettes|Ondelettes]] — domaines : data-sci, ml-eng
-- [[Wiki/Concepts/STFT et spectrogramme|STFT et spectrogramme]] — domaines : data-sci, ml-eng
-- [[Wiki/Concepts/Traitement du signal|Traitement du signal]] — domaines : data-sci, ml-eng
-- [[Wiki/Concepts/Transformée de Fourier|Transformée de Fourier]] — domaines : data-sci, ml-eng
+- [[Filtrage numérique]] — domaines : data-sci, ml-eng
+- [[Ondelettes]] — domaines : data-sci, ml-eng
+- [[STFT et spectrogramme]] — domaines : data-sci, ml-eng
+- [[Traitement du signal]] — domaines : data-sci, ml-eng
+- [[Transformée de Fourier]] — domaines : data-sci, ml-eng
 <!-- AUTO:END -->
 
 ## Notes

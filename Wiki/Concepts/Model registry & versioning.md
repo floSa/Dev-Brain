@@ -33,7 +33,7 @@ tags: [model-registry, experiment-tracking]
 
 ## En pratique
 
-- Le registre est alimenté par le **suivi d'expériences** : on enregistre le meilleur run, on le promeut. [[Dev/Services/MLflow|MLflow]] couple les deux (Tracking + Model Registry).
+- Le registre est alimenté par le **suivi d'expériences** : on enregistre le meilleur run, on le promeut. [[MLflow]] couple les deux (Tracking + Model Registry).
 - Promouvoir = changer le stade / l'alias, **pas** recopier des fichiers : les consommateurs (serving) chargent « la version `Production` » par référence stable.
 - Versionner aussi les **données** et le code, sinon le lignage est troué (un modèle n'est reproductible que si ses entrées le sont).
 - Brancher le déploiement sur le registre : le [[Déploiement de modèles|rollout]] consomme la version promue, le [[Monitoring de modèle en production|monitoring]] reporte sur cette version.
@@ -43,7 +43,7 @@ tags: [model-registry, experiment-tracking]
 - [[Déploiement de modèles]] — consomme la version promue par le registre.
 - [[Monitoring de modèle en production]] — rattache les métriques de prod à une version précise du registre.
 - [[Data drift]] — un drift mesuré déclenche un nouveau run → une nouvelle version enregistrée.
-- [[Dev/Services/MLflow|MLflow]] — implémentation de référence (tracking + registre couplés).
+- [[MLflow]] — implémentation de référence (tracking + registre couplés).
 
 ## Pour aller plus loin
 

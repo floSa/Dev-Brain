@@ -41,7 +41,7 @@ tags: [ensemble, supervised]
 - Souvent **le meilleur** sur données tabulaires (compétitions). Coût : entraînement et inférence plus lourds, interprétabilité réduite.
 - Diversifier réellement (algorithmes ou jeux de variables différents) : empiler cinq variantes du même modèle n'apporte presque rien.
 - Stacking : utiliser des prédictions **out-of-fold** pour entraîner le méta-modèle, sinon [[Data leakage]].
-- Outils : [[Dev/Services/Scikit-Learn|VotingClassifier / StackingClassifier]] ; [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/CatBoost|CatBoost]] côté boosting.
+- Outils : [[Scikit-Learn|VotingClassifier / StackingClassifier]] ; [[XGBoost]], [[LightGBM]], [[CatBoost]] côté boosting.
 
 ## Approches voisines & alternatives
 

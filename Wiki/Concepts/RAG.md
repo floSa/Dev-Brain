@@ -39,7 +39,7 @@ tags: [rag, llm, retrieval, embeddings, semantic-search]
 
 ## En pratique
 
-- Stack minimal : parseur de documents → [[Chunking strategies|chunking]] → [[embeddings]] → [[Bases de données vectorielles]] → LLM. Monté en quelques lignes avec [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/LangChain|LangChain]] ou [[Dev/Services/Haystack|Haystack]].
+- Stack minimal : parseur de documents → [[Chunking strategies|chunking]] → [[embeddings]] → [[Bases de données vectorielles]] → LLM. Monté en quelques lignes avec [[LlamaIndex]], [[LangChain]] ou [[Haystack]].
 - Leviers de qualité, par ordre de rentabilité : qualité du chunking, [[Hybrid retrieval|retrieval hybride]], [[Reranking|reranking]] du top-k, puis prompt.
 - Mesurer, pas deviner : faithfulness, context precision/recall (cf. [[RAG eval]]).
 - Pièges : chunks trop gros (bruit) ou trop petits (contexte cassé) ; embeddings inadaptés à la langue/domaine ; métadonnées oubliées (pas de filtrage par source/date) ; cas « rien trouvé » non géré.
@@ -53,7 +53,7 @@ tags: [rag, llm, retrieval, embeddings, semantic-search]
 - [[embeddings]] — la représentation qui rend la recherche sémantique possible.
 - [[Bases de données vectorielles]] — la mémoire interrogeable du système.
 - [[Context engineering]] — le RAG est un levier d'ingénierie de contexte : il décide quoi injecter dans la fenêtre.
-- Frameworks : [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]], [[Dev/Services/LangChain|LangChain]].
+- Frameworks : [[LlamaIndex]], [[Haystack]], [[LangChain]].
 - Alternative au RAG : le [[SFT|fine-tuning]] (apprendre la connaissance dans les poids) — coûteux et statique ; le RAG reste préférable pour des données qui changent.
 
 ## Pour aller plus loin

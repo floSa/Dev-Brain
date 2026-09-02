@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Ragas|Ragas]]", "[[Dev/Services/TruLens|TruLens]]", "[[Dev/Services/promptfoo|promptfoo]]"]
+alternatives: ["[[Ragas]]", "[[TruLens]]", "[[promptfoo]]"]
 complements: []
 tags: [llm, llm-eval, llm-as-judge, testing]
 url_docs: https://deepeval.com/
@@ -30,9 +30,9 @@ Framework Python d'**évaluation et de test** de LLM (Apache-2.0, éditeur Confi
 
 ## Quand NE PAS l'utiliser
 
-- Périmètre **strictement RAG** avec métriques reference-free reconnues → [[Dev/Services/Ragas|Ragas]] est plus direct.
-- Besoin de **tracer/noter une app instrumentée** au fil de l'exécution → [[Dev/Services/TruLens|TruLens]].
-- Recherche d'une **plateforme d'observabilité** complète (et pas un framework de test) → [[Dev/Services/Langfuse|Langfuse]], [[Dev/Services/Phoenix Arize|Phoenix Arize]].
+- Périmètre **strictement RAG** avec métriques reference-free reconnues → [[Ragas]] est plus direct.
+- Besoin de **tracer/noter une app instrumentée** au fil de l'exécution → [[TruLens]].
+- Recherche d'une **plateforme d'observabilité** complète (et pas un framework de test) → [[Langfuse]], [[Phoenix Arize]].
 
 ## Déploiement & coût
 
@@ -48,14 +48,14 @@ Framework Python d'**évaluation et de test** de LLM (Apache-2.0, éditeur Confi
 
 ## Alternatives
 
-- [[Dev/Services/Ragas|Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
-- [[Dev/Services/TruLens|TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
-- [[Dev/Services/promptfoo|promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
+- [[Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
+- [[TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
+- [[promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 
 ## Liens
 
-- Scores exportables vers des plateformes d'observabilité comme [[Dev/Services/Langfuse|Langfuse]] / [[Dev/Services/Phoenix Arize|Phoenix Arize]].
-- Évalue des apps bâties avec [[Dev/Services/LangChain|LangChain]] / [[Dev/Services/LlamaIndex|LlamaIndex]].
+- Scores exportables vers des plateformes d'observabilité comme [[Langfuse]] / [[Phoenix Arize]].
+- Évalue des apps bâties avec [[LangChain]] / [[LlamaIndex]].
 - Concepts : [[LLM eval metrics]], [[LLM-as-judge]] (G-Eval), [[RAG eval]].
 - [[Comparatif - Évaluation LLM]] — comparatif de la catégorie
 - Doc : https://deepeval.com/

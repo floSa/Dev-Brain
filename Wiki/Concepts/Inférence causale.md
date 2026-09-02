@@ -52,7 +52,7 @@ tags: [causal-inference, statistical-inference]
 
 - [[A-B testing]] — randomisation : identification causale sans hypothèse d'absence de confondeur non observé.
 - [[Diff-in-Diff]] — quasi-expérience exploitant la variation avant/après croisée aux groupes.
-- [[Dev/Services/CausalImpact|CausalImpact]] — contrefactuel prédit par séries temporelles structurelles bayésiennes.
+- [[CausalImpact]] — contrefactuel prédit par séries temporelles structurelles bayésiennes.
 - [[CUPED]] — réduction de variance dans les essais randomisés (efficacité de l'estimation, pas identification).
 - Variables instrumentales, régression sur discontinuité, contrôle synthétique — autres stratégies d'identification, selon la source de variation exogène disponible.
 
@@ -60,5 +60,5 @@ tags: [causal-inference, statistical-inference]
 
 - Pearl — *Causality* (2009) ; Pearl & Mackenzie — *The Book of Why*.
 - Hernán & Robins — *Causal Inference: What If* (référence appliquée, libre en ligne).
-- Outils Python : `DoWhy` (DAG → identification → estimation), `EconML` (effets hétérogènes), [[Dev/Services/statsmodels|statsmodels]] pour les régressions sous-jacentes.
-- Connexions brain : [[Diff-in-Diff]], [[CUPED]], [[Dev/Services/CausalImpact|CausalImpact]], [[A-B testing]].
+- Outils Python : `DoWhy` (DAG → identification → estimation), `EconML` (effets hétérogènes), [[statsmodels]] pour les régressions sous-jacentes.
+- Connexions brain : [[Diff-in-Diff]], [[CUPED]], [[CausalImpact]], [[A-B testing]].

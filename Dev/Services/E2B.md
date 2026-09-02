@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: "TypeScript, Python, Go"
 scaling: serverless
-alternatives: ["[[Dev/Services/Modal|Modal]]", "[[Dev/Services/Daytona|Daytona]]"]
+alternatives: ["[[Modal]]", "[[Daytona]]"]
 complements: []
 tags: [agents, llm, container, ai-security]
 url_docs: https://e2b.dev/docs
@@ -33,9 +33,9 @@ L'usage passe par un SDK (Python, TypeScript) qui pilote le cycle de vie : crée
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de **GPU dans le bac à sable** (exécution de modèles, entraînement) → [[Dev/Services/Modal|Modal]].
-- Le besoin réel est de **packager et déployer une application de confiance**, pas d'isoler du code hostile → conteneur classique, [[Dev/Services/Docker|Docker]].
-- Charge de calcul **distribuée** sur un cluster plutôt que multitude de petites exécutions isolées → [[Dev/Services/Ray|Ray]].
+- Besoin de **GPU dans le bac à sable** (exécution de modèles, entraînement) → [[Modal]].
+- Le besoin réel est de **packager et déployer une application de confiance**, pas d'isoler du code hostile → conteneur classique, [[Docker]].
+- Charge de calcul **distribuée** sur un cluster plutôt que multitude de petites exécutions isolées → [[Ray]].
 
 ## Déploiement & coût
 
@@ -52,12 +52,12 @@ L'usage passe par un SDK (Python, TypeScript) qui pilote le cycle de vie : crée
 
 ## Alternatives
 
-- [[Dev/Services/Modal|Modal]] — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
-- [[Dev/Services/Daytona|Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
+- [[Modal]] — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
+- [[Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
 
 ## Liens
 
 - Implémente le concept [[Sandboxing de code généré]] — isolation par microVM Firecracker.
-- Backend d'exécution possible pour les agents auto-hébergés ([[Dev/Services/Hermes Agent|Hermes Agent]], [[Dev/Services/OpenHands|OpenHands]]).
+- Backend d'exécution possible pour les agents auto-hébergés ([[Hermes Agent]], [[OpenHands]]).
 - Sécurité : [[Prompt injection]], [[AI security]].
 - Doc : https://e2b.dev/docs

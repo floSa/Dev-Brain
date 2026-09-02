@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]", "[[Dev/Services/Gradio|Gradio]]"]
+alternatives: ["[[Dash]]", "[[Shiny for Python]]", "[[Gradio]]"]
 complements: []
 tags: [data-app, web-framework]
 url_docs: https://docs.streamlit.io
@@ -29,9 +29,9 @@ Framework d'**apps data en Python pur** : on écrit un script linéaire, chaque 
 
 ## Quand NE PAS l'utiliser
 
-- Dashboard analytique multi-pages à composants finement liés → [[Dev/Services/Dash|Dash]].
-- Besoin de recalcul réactif ciblé (sans re-run global) sur app lourde → [[Dev/Services/Shiny for Python|Shiny for Python]].
-- Démo d'un modèle ML centrée entrée→sortie, hébergée sur HF → [[Dev/Services/Gradio|Gradio]].
+- Dashboard analytique multi-pages à composants finement liés → [[Dash]].
+- Besoin de recalcul réactif ciblé (sans re-run global) sur app lourde → [[Shiny for Python]].
+- Démo d'un modèle ML centrée entrée→sortie, hébergée sur HF → [[Gradio]].
 
 ## Déploiement & coût
 
@@ -48,13 +48,13 @@ Framework d'**apps data en Python pur** : on écrit un script linéaire, chaque 
 
 ## Alternatives
 
-- [[Dev/Services/Dash|Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
-- [[Dev/Services/Shiny for Python|Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
-- [[Dev/Services/Gradio|Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
+- [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
+- [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
+- [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Apps data & démos ML]] — Streamlit vs Dash / Shiny / Gradio.
-- [[Dev/Patterns/Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Gradio, Dash.
-- Affiche les figures [[Dev/Services/plotly|plotly]], matplotlib, altair, etc.
+- [[Comparatif - Apps data & démos ML]] — Streamlit vs Dash / Shiny / Gradio.
+- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Gradio, Dash.
+- Affiche les figures [[plotly]], matplotlib, altair, etc.
 - Doc : https://docs.streamlit.io

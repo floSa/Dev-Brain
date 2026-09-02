@@ -57,4 +57,4 @@ tags: [reinforcement-learning, value-function, temporal-difference, deep-learnin
 - Mnih et al. (2015) — *Human-level control through deep reinforcement learning* (DQN, Nature).
 - van Hasselt et al. (2016) — *Deep RL with Double Q-learning* ; Hessel et al. (2018) — *Rainbow*.
 - Sutton & Barto — *Reinforcement Learning*, ch. 6 (TD learning, Q-learning).
-- Implémentation de référence : [[Dev/Services/Stable-Baselines3|Stable-Baselines3]] (`DQN`, `QR-DQN`) sur environnements [[Dev/Services/Gymnasium|Gymnasium]]. Aussi dans [[Dev/Services/TF-Agents|TF-Agents]] (`DqnAgent`, C51) et [[Dev/Services/Acme|Acme]] (R2D2) ; pertes TD et distributionnelles en briques JAX dans [[Dev/Services/RLax|RLax]].
+- Implémentation de référence : [[Stable-Baselines3]] (`DQN`, `QR-DQN`) sur environnements [[Gymnasium]]. Aussi dans [[TF-Agents]] (`DqnAgent`, C51) et [[Acme]] (R2D2) ; pertes TD et distributionnelles en briques JAX dans [[RLax]].

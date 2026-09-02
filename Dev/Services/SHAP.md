@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/LIME|LIME]]", "[[Dev/Services/interpreto|interpreto]]", "[[Dev/Services/Captum|Captum]]"]
+alternatives: ["[[LIME]]", "[[interpreto]]", "[[Captum]]"]
 complements: []
 tags: [explainability, supervised]
 url_docs: https://shap.readthedocs.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/shap/shap
 
 ## Pourquoi
 
-Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de Shapley** (théorie des jeux) : chaque variable reçoit une contribution **additive** à la prédiction, locale mais agrégeable en vue globale. Sa force pratique : **TreeSHAP**, exact et rapide sur les ensembles d'arbres ([[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/CatBoost|CatBoost]]) ; plus KernelSHAP (model-agnostic), DeepSHAP, et des visualisations soignées (beeswarm, waterfall, dependence).
+Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de Shapley** (théorie des jeux) : chaque variable reçoit une contribution **additive** à la prédiction, locale mais agrégeable en vue globale. Sa force pratique : **TreeSHAP**, exact et rapide sur les ensembles d'arbres ([[XGBoost]], [[LightGBM]], [[CatBoost]]) ; plus KernelSHAP (model-agnostic), DeepSHAP, et des visualisations soignées (beeswarm, waterfall, dependence).
 
 ## Quand l'utiliser
 
@@ -30,7 +30,7 @@ Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de 
 ## Quand NE PAS l'utiliser
 
 - Simple **classement global** approximatif → permutation importance (scikit-learn) suffit, plus léger.
-- Boîte noire lourde où **KernelSHAP est trop lent** → [[Dev/Services/LIME|LIME]] ou un surrogate.
+- Boîte noire lourde où **KernelSHAP est trop lent** → [[LIME]] ou un surrogate.
 - Modèle **interprétable par nature** ([[GLM]], [[GAM]], arbre court) → pas besoin de post-hoc.
 
 ## Déploiement & coût
@@ -48,14 +48,14 @@ Standard de fait de l'[[Explicabilité des modèles]]. Calcule des **valeurs de 
 
 ## Alternatives
 
-- [[Dev/Services/LIME|LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
-- [[Dev/Services/interpreto|interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
-- [[Dev/Services/Captum|Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
+- [[LIME]] — Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
+- [[interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
+- [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
 
 ## Liens
 
 - [[Explicabilité des modèles]] — le cadre qu'il outille (Shapley, local↔global).
-- [[Dev/Services/LIME|LIME]] — l'autre approche post-hoc, par surrogate local.
-- [[Dev/Services/XGBoost|XGBoost]] · [[Dev/Services/LightGBM|LightGBM]] · [[Dev/Services/CatBoost|CatBoost]] — TreeSHAP exact y est natif.
-- [[Dev/Patterns/Comparatif - Explicabilité|Comparatif — Explicabilité]]
+- [[LIME]] — l'autre approche post-hoc, par surrogate local.
+- [[XGBoost]] · [[LightGBM]] · [[CatBoost]] — TreeSHAP exact y est natif.
+- [[Comparatif - Explicabilité|Comparatif — Explicabilité]]
 - Doc : https://shap.readthedocs.io/

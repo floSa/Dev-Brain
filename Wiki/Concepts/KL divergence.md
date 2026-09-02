@@ -38,7 +38,7 @@ tags: [information-theory, kl-divergence]
 - **Inférence bayésienne / variationnelle** : l'ELBO maximisé en VI est exactement la log-évidence moins $D_{KL}$ entre l'approximation et l'a posteriori vrai (cf. [[Inférence bayésienne]]).
 - **Régularisation d'alignement** : RLHF/PPO pénalisent la KL entre la politique entraînée et le modèle de référence pour éviter la dérive (cf. [[RLHF and DPO]]).
 - **Détection de dérive** (data drift) : KL entre la distribution d'entraînement et celle de production ; surveiller sa montée.
-- Outils : `scipy.stats.entropy(p, q)` ([[Dev/Services/scipy.stats|scipy.stats]]) calcule la KL ; `torch.nn.functional.kl_div` côté [[Dev/Services/PyTorch|PyTorch]].
+- Outils : `scipy.stats.entropy(p, q)` ([[scipy.stats]]) calcule la KL ; `torch.nn.functional.kl_div` côté [[PyTorch]].
 
 ## Approches voisines & alternatives
 

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python / JavaScript
-alternatives: ["[[Dev/Services/bokeh|bokeh]]", "[[Dev/Services/altair|altair]]"]
+alternatives: ["[[bokeh]]", "[[altair]]"]
 complements: []
 tags: [dataviz, interactive-viz]
 url_docs: https://plotly.com/python/
@@ -30,9 +30,9 @@ Bibliothèque de visualisation **interactive** : les graphiques sont rendus dans
 
 ## Quand NE PAS l'utiliser
 
-- Sortie statique pour PDF/print → [[Dev/Services/matplotlib|matplotlib]] / [[Dev/Services/seaborn|seaborn]] (l'export image plotly demande Kaleido).
-- Approche déclarative concise type grammaire des graphiques → [[Dev/Services/altair|altair]].
-- Streaming serveur / très gros volumes côté serveur → [[Dev/Services/bokeh|bokeh]] et son serveur.
+- Sortie statique pour PDF/print → [[matplotlib]] / [[seaborn]] (l'export image plotly demande Kaleido).
+- Approche déclarative concise type grammaire des graphiques → [[altair]].
+- Streaming serveur / très gros volumes côté serveur → [[bokeh]] et son serveur.
 
 ## Déploiement & coût
 
@@ -49,12 +49,12 @@ Bibliothèque de visualisation **interactive** : les graphiques sont rendus dans
 
 ## Alternatives
 
-- [[Dev/Services/bokeh|bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
-- [[Dev/Services/altair|altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
+- [[bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
+- [[altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
 ## Liens
 
-- Alternatives interactives : [[Dev/Services/bokeh|bokeh]], [[Dev/Services/altair|altair]].
+- Alternatives interactives : [[bokeh]], [[altair]].
 - Socle des apps Dash (même éditeur) ; figures affichables dans Streamlit.
-- [[Dev/Patterns/Comparatif - Visualisation]] — plotly vs matplotlib / seaborn / altair / bokeh.
+- [[Comparatif - Visualisation]] — plotly vs matplotlib / seaborn / altair / bokeh.
 - Doc : https://plotly.com/python/

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
-alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Marqo|Marqo]]"]
+alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]"]
 complements: []
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
@@ -32,9 +32,9 @@ Moteur de **recherche et d'analytique distribué** bâti sur Apache Lucene. Inde
 
 ## Quand NE PAS l'utiliser
 
-- Source de vérité transactionnelle ACID → [[Dev/Services/Postgres|Postgres]] (Elasticsearch n'est pas une base primaire).
-- Analytique SQL pure sur gros volumes colonnes → [[Dev/Services/ClickHouse|ClickHouse]].
-- Besoin de recherche simple : l'index plein texte de [[Dev/Services/Postgres|Postgres]] suffit souvent.
+- Source de vérité transactionnelle ACID → [[Postgres]] (Elasticsearch n'est pas une base primaire).
+- Analytique SQL pure sur gros volumes colonnes → [[ClickHouse]].
+- Besoin de recherche simple : l'index plein texte de [[Postgres]] suffit souvent.
 
 ## Déploiement & coût
 
@@ -50,13 +50,13 @@ Moteur de **recherche et d'analytique distribué** bâti sur Apache Lucene. Inde
 
 ## Alternatives
 
-- [[Dev/Services/Vespa|Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
-- [[Dev/Services/txtai|txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
-- [[Dev/Services/Marqo|Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
+- [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
+- [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
+- [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Recherche d'information]] — recherche lexicale (BM25) et, désormais, dense (kNN) et [[Hybrid retrieval|hybride]].
 - [[Comparatif - Moteurs de recherche]] — comparatif de la catégorie.
 - Doc : https://www.elastic.co/guide/index.html

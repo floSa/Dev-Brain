@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/ydata-profiling|ydata-profiling]]", "[[Dev/Services/sweetviz|sweetviz]]"]
+alternatives: ["[[ydata-profiling]]", "[[sweetviz]]"]
 complements: []
 tags: [missing-data, eda, static-viz]
 url_docs: https://github.com/ResidentMario/missingno
@@ -30,8 +30,8 @@ Petite boîte à outils dédiée à **un seul problème** : visualiser les valeu
 
 ## Quand NE PAS l'utiliser
 
-- Profiling **complet** (distributions, corrélations, alertes qualité) → [[Dev/Services/ydata-profiling|ydata-profiling]].
-- Analyse orientée **cible** ou comparaison de jeux → [[Dev/Services/sweetviz|sweetviz]].
+- Profiling **complet** (distributions, corrélations, alertes qualité) → [[ydata-profiling]].
+- Analyse orientée **cible** ou comparaison de jeux → [[sweetviz]].
 - Très grand nombre de lignes/colonnes : la matrice échantillonne et devient illisible — filtrer ou agréger en amont.
 
 ## Déploiement & coût
@@ -48,11 +48,11 @@ Petite boîte à outils dédiée à **un seul problème** : visualiser les valeu
 
 ## Alternatives
 
-- [[Dev/Services/ydata-profiling|ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
-- [[Dev/Services/sweetviz|sweetviz]] — EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
+- [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
+- [[sweetviz]] — EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
 
 ## Liens
 
 - Concept : [[Mécanismes de données manquantes]] — le diagnostic que cet outil visualise ; suivi de [[Imputation des valeurs manquantes]].
-- [[Dev/Patterns/Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
+- [[Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
 - Doc : https://github.com/ResidentMario/missingno

@@ -40,7 +40,7 @@ tags: [clustering, unsupervised]
 - Le dendrogramme aide à choisir le nombre de clusters : couper au plus grand saut d'inertie. Résultat déterministe — pas de relance comme K-Means.
 - Coûteux en mémoire/temps : au-delà de quelques dizaines de milliers de points, échantillonner ou passer à K-Means / DBSCAN.
 - Combinée à une réduction de dimension en amont, c'est le cœur de [[HCPC]] (CAH sur composantes principales, puis consolidation k-means).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster.AgglomerativeClustering]] ; `scipy.cluster.hierarchy` (`linkage`, `dendrogram`, `fcluster`) pour tracer et couper.
+- Outils : [[Scikit-Learn|sklearn.cluster.AgglomerativeClustering]] ; `scipy.cluster.hierarchy` (`linkage`, `dendrogram`, `fcluster`) pour tracer et couper.
 
 ## Approches voisines & alternatives
 

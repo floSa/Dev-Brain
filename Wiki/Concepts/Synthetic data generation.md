@@ -55,9 +55,9 @@ tags: [synthetic-data, fine-tuning, llm]
 
 ### Outils — données tabulaires & factices (hors LLM)
 
-- [[Dev/Services/SDV|SDV]] — synthèse **tabulaire par modèles** (GaussianCopula, CTGAN, TVAE) : apprend la distribution d'un vrai jeu et l'émule (table unique, relationnel, séquentiel).
-- [[Dev/Services/Faker|Faker]] — génération de **données factices par règles** (providers, locales) pour tests, fixtures, démos.
-- [[Dev/Services/Mimesis|Mimesis]] — même usage que Faker, **plus rapide** et entièrement typé.
+- [[SDV]] — synthèse **tabulaire par modèles** (GaussianCopula, CTGAN, TVAE) : apprend la distribution d'un vrai jeu et l'émule (table unique, relationnel, séquentiel).
+- [[Faker]] — génération de **données factices par règles** (providers, locales) pour tests, fixtures, démos.
+- [[Mimesis]] — même usage que Faker, **plus rapide** et entièrement typé.
 
 ## Pour aller plus loin
 

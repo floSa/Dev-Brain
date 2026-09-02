@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "macOS (Apple Silicon), Windows (preview)"
 langage: TypeScript
-alternatives: ["[[Dev/Services/OpenHands|OpenHands]]", "[[Dev/Outils/t3code|t3code]]"]
+alternatives: ["[[OpenHands]]", "[[t3code]]"]
 complements: []
 tags: [audit-log, agents, tool-use, ai-security, code-assistant]
 url_docs: https://incubator.apache.org/projects/maka.html
@@ -36,8 +36,8 @@ Projet en **incubation à l'Apache Software Foundation**. Apache-2.0, écrit en 
 
 - **Sous Linux : impossible aujourd'hui.** Linux n'est pas encore supporté, la cible principale est macOS Apple Silicon, Windows n'existe qu'en preview non signée, et les Mac Intel ne sont pas supportés. C'est le point bloquant pour un poste WSL2 ou Linux.
 - En production : **aucune release Apache officielle n'a encore été publiée**, et le projet annonce lui-même des formats de données et des commandes CLI susceptibles de changer.
-- Pour isoler du code non fiable : Maka n'est pas un fournisseur de bacs à sable jetables — la frontière de sandbox n'y est qu'un mécanisme interne. Pour cet usage → [[Dev/Services/E2B|E2B]] ou [[Dev/Services/Daytona|Daytona]].
-- Pour éditer du code au fil de l'eau dans l'éditeur → [[Dev/Outils/Cline|Cline]], [[Dev/Outils/Continue|Continue]].
+- Pour isoler du code non fiable : Maka n'est pas un fournisseur de bacs à sable jetables — la frontière de sandbox n'y est qu'un mécanisme interne. Pour cet usage → [[E2B]] ou [[Daytona]].
+- Pour éditer du code au fil de l'eau dans l'éditeur → [[Cline]], [[Continue]].
 
 ## Installation & plateformes
 
@@ -54,8 +54,8 @@ Projet en **incubation à l'Apache Software Foundation**. Apache-2.0, écrit en 
 
 ## Alternatives
 
-- [[Dev/Services/OpenHands|OpenHands]] — Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.
-- [[Dev/Outils/t3code|t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
+- [[OpenHands]] — Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.
+- [[t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 
 ## Liens
 

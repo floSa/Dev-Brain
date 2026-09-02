@@ -38,7 +38,7 @@ tags: [supervised, ensemble, bagging]
 
 - Trivialement parallélisable (modèles indépendants). Peu de réglage : nombre d'estimateurs, taille du rééchantillon.
 - Utiliser des apprenants **profonds / instables** : plus leur variance est forte, plus le bagging aide.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble.BaggingClassifier / BaggingRegressor]], et son cas vedette [[Dev/Services/Scikit-Learn|RandomForest]].
+- Outils : [[Scikit-Learn|sklearn.ensemble.BaggingClassifier / BaggingRegressor]], et son cas vedette [[Scikit-Learn|RandomForest]].
 
 ## Approches voisines & alternatives
 

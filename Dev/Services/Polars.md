@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: ["[[Dev/Services/pandas|pandas]]", "[[Dev/Services/Modin|Modin]]", "[[Dev/Services/Dask|Dask]]"]
+alternatives: ["[[pandas]]", "[[Modin]]", "[[Dask]]"]
 complements: []
 tags: [dataframe, columnar, lazy-evaluation, out-of-core]
 url_docs: https://docs.pola.rs/
@@ -30,10 +30,10 @@ DataFrames **écrits en Rust** sur le format colonnaire **Apache Arrow**. Deux m
 
 ## Quand NE PAS l'utiliser
 
-- Code et écosystème déjà 100 % pandas → migration coûteuse ; [[Dev/Services/Modin|Modin]] garde l'API pandas telle quelle.
-- Besoin de l'index riche / séries temporelles façon pandas → [[Dev/Services/pandas|pandas]] (Polars n'a pas d'index).
-- Calcul **distribué sur cluster** multi-nœuds → [[Dev/Services/Dask|Dask]] (Polars reste single-node).
-- Tableaux numériques N-dim purs → [[Dev/Services/numpy|numpy]].
+- Code et écosystème déjà 100 % pandas → migration coûteuse ; [[Modin]] garde l'API pandas telle quelle.
+- Besoin de l'index riche / séries temporelles façon pandas → [[pandas]] (Polars n'a pas d'index).
+- Calcul **distribué sur cluster** multi-nœuds → [[Dask]] (Polars reste single-node).
+- Tableaux numériques N-dim purs → [[numpy]].
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ DataFrames **écrits en Rust** sur le format colonnaire **Apache Arrow**. Deux m
 
 ## Alternatives
 
-- [[Dev/Services/pandas|pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
-- [[Dev/Services/Modin|Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
+- [[Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 
 ## Liens
 
-- Format mémoire : Apache Arrow (colonnaire) — interop avec PyArrow et le backend Arrow de [[Dev/Services/pandas|pandas]].
-- [[Dev/Patterns/Comparatif - Manipulation de données]] — Polars vs pandas / numpy / Modin.
+- Format mémoire : Apache Arrow (colonnaire) — interop avec PyArrow et le backend Arrow de [[pandas]].
+- [[Comparatif - Manipulation de données]] — Polars vs pandas / numpy / Modin.
 - Doc : https://docs.pola.rs/

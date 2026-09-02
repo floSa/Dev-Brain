@@ -45,7 +45,7 @@ tags: [llm-eval, model-evaluation, llm, nlp]
 
 - Choisir selon la tâche : sortie fermée → exact match ; sortie vérifiable → exécution (pass@k) ; texte libre → [[LLM-as-judge]] + quelques jugements humains pour calibrer.
 - Ne jamais se fier à une seule métrique : croiser objectif (exécution), sémantique (BERTScore) et juge.
-- Figer un **jeu d'éval versionné** et le rejouer à chaque changement (prompt, modèle, RAG) → détecte les régressions. Outiller : [[Dev/Services/DeepEval|DeepEval]] (assertions en CI), [[Dev/Services/Ragas|Ragas]], [[Dev/Services/TruLens|TruLens]].
+- Figer un **jeu d'éval versionné** et le rejouer à chaque changement (prompt, modèle, RAG) → détecte les régressions. Outiller : [[DeepEval]] (assertions en CI), [[Ragas]], [[TruLens]].
 - BLEU/ROUGE : à réserver aux tâches proches de la traduction/résumé ; ailleurs, trompeur.
 
 ## Approches voisines & alternatives

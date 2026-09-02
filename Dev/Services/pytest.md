@@ -50,5 +50,5 @@ Framework de tests **de facto** en Python. Sa marque : on écrit des `assert` Py
 
 ## Liens
 
-- Conteneurs jetables pour tests d'intégration : [[Dev/Services/testcontainers|testcontainers]].
+- Conteneurs jetables pour tests d'intégration : [[testcontainers]].
 - Doc : https://docs.pytest.org/

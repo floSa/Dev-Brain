@@ -30,7 +30,7 @@ Framework de référence pour produire des **embeddings de phrases** (SBERT). Ch
 
 ## Quand NE PAS l'utiliser
 
-- Recherche purement **lexicale** sur mots exacts → [[Dev/Services/rank-bm25|rank-bm25]] ou un moteur ([[Dev/Services/Elasticsearch|Elasticsearch]]).
+- Recherche purement **lexicale** sur mots exacts → [[rank-bm25]] ou un moteur ([[Elasticsearch]]).
 - Génération de texte : c'est de l'encodage, pas un LLM génératif.
 - Embeddings **managés** via API → fournisseurs cloud (OpenAI, Cohere, Voyage).
 
@@ -38,7 +38,7 @@ Framework de référence pour produire des **embeddings de phrases** (SBERT). Ch
 
 - Bibliothèque open-source (Apache-2.0), gratuite ; `uv add sentence-transformers`.
 - **Single-node** ; GPU recommandé pour encoder du volume, CPU possible sur petits jeux.
-- S'appuie sur [[Dev/Services/HuggingFace|HuggingFace]] / [[Dev/Services/PyTorch|PyTorch]] ; modèles tirés du Hub.
+- S'appuie sur [[HuggingFace]] / [[PyTorch]] ; modèles tirés du Hub.
 
 ## Pièges
 
@@ -54,7 +54,7 @@ Pas de substitut direct dans le brain : c'est la voie open-source de référence
 
 - [[embeddings]] — ce qu'il produit.
 - [[Recherche d'information]] · [[Reranking]] · [[RAG]] — ses usages.
-- [[Dev/Services/HuggingFace|HuggingFace]] — socle modèles / Hub.
-- [[Dev/Services/SetFit|SetFit]] — few-shot classification bâti dessus.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[HuggingFace]] — socle modèles / Hub.
+- [[SetFit]] — few-shot classification bâti dessus.
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Doc : https://www.sbert.net

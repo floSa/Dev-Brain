@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C
 scaling: single-node
-alternatives: ["[[Dev/Services/MySQL|MySQL]]", "[[Dev/Services/MariaDB|MariaDB]]", "[[Dev/Services/SQLite|SQLite]]", "[[Dev/Services/CockroachDB|CockroachDB]]", "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"]
+alternatives: ["[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
 complements: []
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
@@ -27,14 +27,14 @@ SGBD relationnel-objet conforme SQL, réputé pour sa robustesse et son **extens
 
 - Base applicative transactionnelle (OLTP) généraliste.
 - Besoin de types riches, de `JSONB`, de requêtes complexes ou de contraintes d'intégrité fortes.
-- Tirer parti des extensions : géospatial (PostGIS), vectoriel ([[Dev/Services/pgvector|pgvector]]), séries (TimescaleDB).
+- Tirer parti des extensions : géospatial (PostGIS), vectoriel ([[pgvector]]), séries (TimescaleDB).
 - Cohérence transactionnelle stricte sur un nœud, avec réplicas en lecture.
 
 ## Quand NE PAS l'utiliser
 
-- Base embarquée dans l'application, sans serveur → [[Dev/Services/SQLite|SQLite]].
-- Scale horizontal des écritures, multi-région natif → [[Dev/Services/CockroachDB|CockroachDB]].
-- Stack 100 % Microsoft / .NET imposée → [[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]].
+- Base embarquée dans l'application, sans serveur → [[SQLite]].
+- Scale horizontal des écritures, multi-région natif → [[CockroachDB]].
+- Stack 100 % Microsoft / .NET imposée → [[Microsoft SQL Server]].
 
 ## Déploiement & coût
 
@@ -50,14 +50,14 @@ SGBD relationnel-objet conforme SQL, réputé pour sa robustesse et son **extens
 
 ## Alternatives
 
-- [[Dev/Services/MySQL|MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
-- [[Dev/Services/MariaDB|MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
-- [[Dev/Services/SQLite|SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
-- [[Dev/Services/CockroachDB|CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
-- [[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
+- [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
+- [[MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
+- [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
+- [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
+- [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases relationnelles]] — comparatif des moteurs
 - Doc : https://www.postgresql.org/docs/

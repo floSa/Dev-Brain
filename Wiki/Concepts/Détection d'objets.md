@@ -41,7 +41,7 @@ tags: [object-detection, computer-vision, deep-learning]
 
 - Choix usuel : **YOLO** (famille très utilisée, temps réel, bon défaut), **Faster R-CNN** (priorité précision), **DETR** (pipeline simple, sans NMS).
 - Backbone pré-entraîné + [[Transfer learning vision|fine-tuning]] sur boîtes annotées ; [[Augmentation d'images|augmentation]] adaptée (transformer aussi les boîtes).
-- Frameworks : [[Dev/Services/torchvision|torchvision]], [[Dev/Services/Ultralytics YOLO|Ultralytics]] (YOLO), [[Dev/Services/Detectron2|Detectron2]], [[Dev/Services/HuggingFace|HuggingFace]] (DETR) ; outillage des sorties via [[Dev/Services/supervision|supervision]].
+- Frameworks : [[torchvision]], [[Ultralytics YOLO|Ultralytics]] (YOLO), [[Detectron2]], [[HuggingFace]] (DETR) ; outillage des sorties via [[supervision]].
 
 ## Approches voisines & alternatives
 

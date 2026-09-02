@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Neptune|Neptune]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]", "[[Dev/Services/TensorBoard|TensorBoard]]"]
+alternatives: ["[[MLflow]]", "[[Neptune]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
 complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.wandb.ai/
@@ -32,8 +32,8 @@ Plateforme commerciale de suivi d'expériences devenue un standard de fait en re
 
 ## Quand NE PAS l'utiliser
 
-- Tout doit rester **open-source et gratuit** en self-host → [[Dev/Services/MLflow|MLflow]] ou [[Dev/Services/Aim|Aim]].
-- MLOps tout-en-un (orchestration, données) → [[Dev/Services/ClearML|ClearML]].
+- Tout doit rester **open-source et gratuit** en self-host → [[MLflow]] ou [[Aim]].
+- MLOps tout-en-un (orchestration, données) → [[ClearML]].
 - Budget contraint à grande échelle : la facturation à l'usage peut grimper.
 
 ## Déploiement & coût
@@ -50,14 +50,14 @@ Plateforme commerciale de suivi d'expériences devenue un standard de fait en re
 
 ## Alternatives
 
-- [[Dev/Services/MLflow|MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
-- [[Dev/Services/Neptune|Neptune]] — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
-- [[Dev/Services/Comet|Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
-- [[Dev/Services/ClearML|ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
-- [[Dev/Services/Aim|Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
-- [[Dev/Services/TensorBoard|TensorBoard]] — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
+- [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
+- [[Neptune]] — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- [[Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
+- [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
+- [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
+- [[TensorBoard]] — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
 
 ## Liens
 
-- S'intègre avec : [[Dev/Services/PyTorch|PyTorch]], [[Dev/Services/TensorFlow|TensorFlow]], [[Dev/Services/HuggingFace|HuggingFace]], [[Dev/Services/Optuna|Optuna]].
+- S'intègre avec : [[PyTorch]], [[TensorFlow]], [[HuggingFace]], [[Optuna]].
 - Doc : https://docs.wandb.ai/

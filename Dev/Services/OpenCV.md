@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/Kornia|Kornia]]"]
+alternatives: ["[[Kornia]]"]
 complements: []
 tags: [computer-vision, object-detection, object-tracking]
 url_docs: https://docs.opencv.org/
@@ -19,7 +19,7 @@ url_repo: https://github.com/opencv/opencv
 
 ## Pourquoi
 
-Bibliothèque historique et la plus complète de **vision par ordinateur classique** : lecture/écriture et transformation d'images et de vidéos, espaces colorimétriques, filtrage, morphologie, contours, détection de features (ORB, SIFT), appariement, **géométrie** (homographies, calibration de caméra, stéréo, pose), flux optique et trackers. Cœur **C++** très optimisé (SIMD, CUDA en option) exposé en Python via `cv2`, Java et JavaScript. Inclut aussi un module `dnn` qui exécute des réseaux exportés (ONNX, Caffe). C'est la brique de prétraitement et de CV géométrique sous des couches plus haut niveau (y compris l'I/O d'[[Dev/Services/albumentations|albumentations]]).
+Bibliothèque historique et la plus complète de **vision par ordinateur classique** : lecture/écriture et transformation d'images et de vidéos, espaces colorimétriques, filtrage, morphologie, contours, détection de features (ORB, SIFT), appariement, **géométrie** (homographies, calibration de caméra, stéréo, pose), flux optique et trackers. Cœur **C++** très optimisé (SIMD, CUDA en option) exposé en Python via `cv2`, Java et JavaScript. Inclut aussi un module `dnn` qui exécute des réseaux exportés (ONNX, Caffe). C'est la brique de prétraitement et de CV géométrique sous des couches plus haut niveau (y compris l'I/O d'[[albumentations]]).
 
 ## Quand l'utiliser
 
@@ -30,9 +30,9 @@ Bibliothèque historique et la plus complète de **vision par ordinateur classiq
 
 ## Quand NE PAS l'utiliser
 
-- Entraîner ou fine-tuner un réseau de vision → [[Dev/Services/PyTorch|PyTorch]] + [[Dev/Services/torchvision|torchvision]] / [[Dev/Services/timm|timm]].
-- Opérations de vision **différentiables** (dans une boucle d'autograd, sur GPU) → [[Dev/Services/Kornia|Kornia]].
-- Pipeline d'**[[Augmentation d'images|augmentation]]** pour l'entraînement → [[Dev/Services/albumentations|albumentations]] (qui s'appuie justement sur OpenCV).
+- Entraîner ou fine-tuner un réseau de vision → [[PyTorch]] + [[torchvision]] / [[timm]].
+- Opérations de vision **différentiables** (dans une boucle d'autograd, sur GPU) → [[Kornia]].
+- Pipeline d'**[[Augmentation d'images|augmentation]]** pour l'entraînement → [[albumentations]] (qui s'appuie justement sur OpenCV).
 
 ## Déploiement & coût
 
@@ -48,11 +48,11 @@ Bibliothèque historique et la plus complète de **vision par ordinateur classiq
 
 ## Alternatives
 
-- [[Dev/Services/Kornia|Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
+- [[Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
 ## Liens
 
 - [[Vision par ordinateur]] — le cadre ; OpenCV en est la boîte à outils classique.
-- [[Dev/Services/albumentations|albumentations]] — bâtit son augmentation au-dessus d'OpenCV.
+- [[albumentations]] — bâtit son augmentation au-dessus d'OpenCV.
 - [[Suivi d'objets]] — trackers classiques (KCF, CSRT) fournis.
 - Doc : https://docs.opencv.org/

@@ -41,7 +41,7 @@ tags: [model-evaluation, classification, supervised]
 - Modèle non calibré → le **classement** (donc l'AUC) peut être bon même si les probabilités sont fausses ; recalibrer (Platt, isotonique) si on a besoin de vraies probabilités → [[Calibration]].
 - Toujours rapporter la métrique **agrégée sur les plis** de [[Validation croisée]], pas sur un unique split.
 - La [[Régression logistique]] produit directement les probabilités qui alimentent ces courbes ; tout modèle exposant un `predict_proba` ou un score le permet.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — roc_auc_score, average_precision_score, RocCurveDisplay, PrecisionRecallDisplay]].
+- Outils : [[Scikit-Learn|sklearn.metrics — roc_auc_score, average_precision_score, RocCurveDisplay, PrecisionRecallDisplay]].
 
 ## Approches voisines & alternatives
 

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Agno|Agno]]", "[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/OpenViking|OpenViking]]"]
+alternatives: ["[[Agno]]", "[[CrewAI]]", "[[AutoGen]]", "[[OpenAI Agents SDK]]", "[[smolagents]]", "[[OpenViking]]"]
 complements: []
 tags: [llm, agents, tool-use]
 url_docs: https://docs.letta.com/
@@ -31,9 +31,9 @@ Framework d'**agents stateful** issu du projet de recherche **MemGPT** (Berkeley
 
 ## Quand NE PAS l'utiliser
 
-- Tâche **courte et sans état** (un appel, une extraction) : la machinerie de mémoire est superflue → [[Dev/Services/smolagents|smolagents]] / [[Dev/Services/Instructor|Instructor]].
-- Besoin de **contrôle bas niveau du graphe** d'exécution (cycles, branchements explicites) → [[Dev/Services/LangGraph|LangGraph]].
-- Orchestration **multi-agents en rôles** comme primitive centrale → [[Dev/Services/CrewAI|CrewAI]] / [[Dev/Services/Agno|Agno]].
+- Tâche **courte et sans état** (un appel, une extraction) : la machinerie de mémoire est superflue → [[smolagents]] / [[Instructor]].
+- Besoin de **contrôle bas niveau du graphe** d'exécution (cycles, branchements explicites) → [[LangGraph]].
+- Orchestration **multi-agents en rôles** comme primitive centrale → [[CrewAI]] / [[Agno]].
 
 ## Déploiement & coût
 
@@ -49,17 +49,17 @@ Framework d'**agents stateful** issu du projet de recherche **MemGPT** (Berkeley
 
 ## Alternatives
 
-- [[Dev/Services/Agno|Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
-- [[Dev/Services/CrewAI|CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
-- [[Dev/Services/AutoGen|AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
-- [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
-- [[Dev/Services/smolagents|smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
-- [[Dev/Services/OpenViking|OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
+- [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
+- [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
+- [[smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
+- [[OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ## Liens
 
 - Implémente directement le concept [[Agent memory]] — mémoire hiérarchique façon OS, héritée de **MemGPT** (Packer et al., 2023).
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/Agno|Agno]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/AutoGen|AutoGen]], et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
+- Même famille de **frameworks d'agents** que [[CrewAI]], [[Agno]], [[OpenAI Agents SDK]], [[smolagents]], [[AutoGen]], et la couche d'orchestration [[LangGraph]].
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Multi-agent systems]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.letta.com/

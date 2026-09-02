@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/statsforecast|statsforecast]]", "[[Dev/Services/darts|darts]]"]
+alternatives: ["[[statsforecast]]", "[[darts]]"]
 complements: []
 tags: [forecasting, timeseries]
 url_docs: https://alkaline-ml.com/pmdarima/
@@ -30,9 +30,9 @@ pmdarima (ex-pyramid-arima) apporte à Python l'équivalent de la fonction **aut
 
 ## Quand NE PAS l'utiliser
 
-- **Beaucoup** de séries à ajuster vite → [[Dev/Services/statsforecast|statsforecast]] (AutoARIMA compilé Numba, des ordres de grandeur plus rapide).
-- Comparer plusieurs familles (stats / ML / DL) sous une API unique → [[Dev/Services/darts|darts]].
-- Non-linéarités fortes, parc de séries, covariables riches → modèles globaux ML/DL ([[Dev/Services/neuralforecast|neuralforecast]]).
+- **Beaucoup** de séries à ajuster vite → [[statsforecast]] (AutoARIMA compilé Numba, des ordres de grandeur plus rapide).
+- Comparer plusieurs familles (stats / ML / DL) sous une API unique → [[darts]].
+- Non-linéarités fortes, parc de séries, covariables riches → modèles globaux ML/DL ([[neuralforecast]]).
 
 ## Déploiement & coût
 
@@ -48,13 +48,13 @@ pmdarima (ex-pyramid-arima) apporte à Python l'équivalent de la fonction **aut
 
 ## Alternatives
 
-- [[Dev/Services/statsforecast|statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
-- [[Dev/Services/darts|darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
+- [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
+- [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
 
 ## Liens
 
 - [[ARIMA SARIMA]] — le modèle sous-jacent ; pmdarima en automatise la sélection (AutoARIMA).
 - [[Forecasting framing]] — cadrer horizon, exogènes et évaluation avant d'ajuster.
-- [[Dev/Services/statsforecast|statsforecast]] — l'AutoARIMA moderne à grande échelle (même rôle, bien plus rapide).
-- [[Dev/Services/darts|darts]] — API unifiée qui propose aussi AutoARIMA.
+- [[statsforecast]] — l'AutoARIMA moderne à grande échelle (même rôle, bien plus rapide).
+- [[darts]] — API unifiée qui propose aussi AutoARIMA.
 - Doc : https://alkaline-ml.com/pmdarima/

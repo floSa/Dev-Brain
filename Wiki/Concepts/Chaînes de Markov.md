@@ -46,7 +46,7 @@ tags: [stochastic-process, markov, probability]
 
 ## Approches voisines & alternatives
 
-- [[MCMC]] — construit une chaîne dont la stationnaire est la distribution cible à échantillonner ; moteurs : [[Dev/Services/PyMC|PyMC]], [[Dev/Services/Stan|Stan]].
+- [[MCMC]] — construit une chaîne dont la stationnaire est la distribution cible à échantillonner ; moteurs : [[PyMC]], [[Stan]].
 - [[Processus de Poisson]] — chaîne de Markov à temps continu, à sauts (comptage).
 - [[Mouvement brownien]] — processus de Markov à temps et espace continus (diffusion).
 - [[Markov Decision Process]] — chaîne de Markov enrichie d'actions et de récompenses ; le cadre formel du reinforcement learning.

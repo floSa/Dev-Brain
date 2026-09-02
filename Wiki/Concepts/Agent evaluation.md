@@ -40,8 +40,8 @@ tags: [agents, llm-eval, llm]
 ## En pratique
 
 - Se construire un **jeu de tâches** représentatif, avec critère de succès explicite, *avant* d'optimiser quoi que ce soit ; sans lui, toute amélioration est une impression.
-- Logger les **traces complètes** (pensées, appels, observations) — l'éval d'agent sans traçage est aveugle : [[Dev/Services/Langfuse|Langfuse]], [[Dev/Services/LangSmith|LangSmith]], [[Dev/Services/Phoenix Arize|Phoenix Arize]].
-- Frameworks d'assertion : [[Dev/Services/DeepEval|DeepEval]] (métriques agents en CI), [[Dev/Services/Ragas|Ragas]] (volet tool-use/agent), [[Dev/Services/TruLens|TruLens]] (feedback functions sur traces).
+- Logger les **traces complètes** (pensées, appels, observations) — l'éval d'agent sans traçage est aveugle : [[Langfuse]], [[LangSmith]], [[Phoenix Arize]].
+- Frameworks d'assertion : [[DeepEval]] (métriques agents en CI), [[Ragas]] (volet tool-use/agent), [[TruLens]] (feedback functions sur traces).
 - Rejouer chaque cas **plusieurs fois** : le non-déterminisme fait varier le résultat ; une seule passe ne prouve rien.
 - Piège : optimiser le résultat final en laissant filer coût et latence — fixer un budget d'étapes dans la métrique.
 

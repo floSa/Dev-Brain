@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: deprecated
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/MLflow|MLflow]]", "[[Dev/Services/Weights & Biases|Weights & Biases]]", "[[Dev/Services/Comet|Comet]]", "[[Dev/Services/ClearML|ClearML]]", "[[Dev/Services/Aim|Aim]]"]
+alternatives: ["[[MLflow]]", "[[Weights & Biases]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]"]
 complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.neptune.ai/
@@ -30,7 +30,7 @@ Plateforme SaaS de suivi d'expériences réputée pour rester **fluide sur les e
 
 ## Quand NE PAS l'utiliser
 
-- Tout nouveau projet → [[Dev/Services/MLflow|MLflow]] (open-source) ou [[Dev/Services/Weights & Biases|Weights & Biases]] (SaaS) à la place.
+- Tout nouveau projet → [[MLflow]] (open-source) ou [[Weights & Biases]] (SaaS) à la place.
 - Besoin de pérennité : produit en fin de vie, absorbé par OpenAI.
 
 ## Déploiement & coût
@@ -47,11 +47,11 @@ Plateforme SaaS de suivi d'expériences réputée pour rester **fluide sur les e
 
 ## Alternatives
 
-- [[Dev/Services/MLflow|MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
-- [[Dev/Services/Weights & Biases|Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
-- [[Dev/Services/Comet|Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
-- [[Dev/Services/ClearML|ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
-- [[Dev/Services/Aim|Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
+- [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
+- [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
+- [[Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
+- [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
+- [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 
 ## Liens
 

@@ -30,7 +30,7 @@ tags: [timeseries, anomaly-detection]
 
 ### Matrix profile
 - Pour chaque sous-séquence de longueur $m$, distance euclidienne **z-normalisée** à sa plus proche voisine ailleurs dans la série. Une sous-séquence sans voisine proche est un **discord** = anomalie de **forme** ; la plus répétée est un **motif**.
-- **Sans hypothèse de modèle, quasi sans paramètre** (sauf $m$) ; le même calcul livre motifs, discords, segmentation et chaînes. Implémenté à l'échelle par [[Dev/Services/STUMPY|STUMPY]] (Numba/Dask/GPU).
+- **Sans hypothèse de modèle, quasi sans paramètre** (sauf $m$) ; le même calcul livre motifs, discords, segmentation et chaînes. Implémenté à l'échelle par [[STUMPY]] (Numba/Dask/GPU).
 
 ### Évaluation & seuils
 - Anomalies = **classe rare** : précision/rappel sur événements (souvent *range-based*), mêmes pièges que la [[Imbalanced classification]]. Labels rares ou absents → seuils calibrés sur un historique « propre ».
@@ -45,7 +45,7 @@ tags: [timeseries, anomaly-detection]
 - Distinguer détection **en ligne** (streaming, contrainte de latence, pas de futur) et **batch** (rétrospective, tout l'historique disponible).
 - Retirer saisonnalité et dérive avant de juger l'écart, sinon avalanche de faux positifs ([[Stationarity]], [[Autocorrelation]]).
 - Cousin du monitoring de production : la dérive de distribution (*data drift*) d'un modèle se surveille avec les mêmes outils.
-- Outils : isolation forest via [[Dev/Services/Scikit-Learn|sklearn.ensemble.IsolationForest]] ; [[Dev/Services/STUMPY|STUMPY]] pour le matrix profile (discords, motifs). Détecteurs multivariés génériques → [[Détection d'outliers multivariée]].
+- Outils : isolation forest via [[Scikit-Learn|sklearn.ensemble.IsolationForest]] ; [[STUMPY]] pour le matrix profile (discords, motifs). Détecteurs multivariés génériques → [[Détection d'outliers multivariée]].
 - Fenêtre $m$ du matrix profile **déterminante** : trop courte → bruit, trop longue → anomalie noyée ; la caler sur la période physique du phénomène.
 - Cas **statique** (point aberrant relativement à une distribution, pas à une dynamique) → [[Détection d'outliers univariée]] sur les résidus, [[Détection d'outliers multivariée]] en tabulaire.
 
@@ -63,6 +63,6 @@ tags: [timeseries, anomaly-detection]
 ## Pour aller plus loin
 
 - Hochenbaum, Vallis & Kejariwal — Twitter AnomalyDetection (S-H-ESD).
-- Yeh et al. (2016) — *Matrix Profile I* ; implémentation [[Dev/Services/STUMPY|STUMPY]].
+- Yeh et al. (2016) — *Matrix Profile I* ; implémentation [[STUMPY]].
 - Blázquez-García et al. (2021) — *A Review on Outlier/Anomaly Detection in Time Series Data*.
 - Numenta Anomaly Benchmark (NAB) — protocole d'évaluation en streaming.

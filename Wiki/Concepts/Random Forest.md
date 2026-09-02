@@ -54,7 +54,7 @@ tags: [supervised, tree-based, ensemble, bagging]
 - Parallélisable trivialement (arbres indépendants). Inférence plus lourde qu'un arbre seul.
 - Moins performant que le [[Gradient Boosting (GBDT)|Gradient Boosting]] sur cible difficile, mais plus simple à régler et plus robuste au surapprentissage.
 - Perd la lisibilité de l'arbre unique : on retombe sur l'importance des variables (impureté ou permutation) pour interpréter.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.ensemble.RandomForestClassifier / RandomForestRegressor]].
+- Outils : [[Scikit-Learn|sklearn.ensemble.RandomForestClassifier / RandomForestRegressor]].
 
 ## Approches voisines & alternatives
 

@@ -25,14 +25,14 @@ Banc d'essai pour le [[mcp-protocol|Model Context Protocol]] : on y branche un s
 
 ## Quand l'utiliser
 
-- **Développer / déboguer un serveur MCP** (p. ex. bâti avec [[Dev/Services/fastmcp|fastmcp]]) : voir les schémas annoncés, appeler un outil, lire la réponse JSON-RPC.
+- **Développer / déboguer un serveur MCP** (p. ex. bâti avec [[fastmcp]]) : voir les schémas annoncés, appeler un outil, lire la réponse JSON-RPC.
 - Reproduire le comportement d'un **agent** : tester l'enchaînement d'appels d'outils dans le playground LLM avant de câbler l'app.
 - Vérifier les **transports** (stdio, HTTP/S) et le flux **OAuth** d'un serveur distant.
 - Intégrer des **évals** d'outils MCP en CI via le CLI.
 
 ## Quand NE PAS l'utiliser
 
-- Tests automatisés du code du serveur lui-même → framework de tests classique ([[Dev/Services/pytest|pytest]] côté Python) ; mcpjam est un **inspecteur interactif**, pas un test runner unitaire.
+- Tests automatisés du code du serveur lui-même → framework de tests classique ([[pytest]] côté Python) ; mcpjam est un **inspecteur interactif**, pas un test runner unitaire.
 - Besoin de rester sur l'outil de référence strict → **MCP Inspector officiel** (`@modelcontextprotocol/inspector`).
 
 ## Déploiement & coût
@@ -52,6 +52,6 @@ Banc d'essai pour le [[mcp-protocol|Model Context Protocol]] : on y branche un s
 
 ## Liens
 
-- Inspecte / débogue des serveurs [[mcp-protocol]], notamment ceux bâtis avec [[Dev/Services/fastmcp|fastmcp]].
-- Pour les tests unitaires du serveur côté Python : [[Dev/Services/pytest|pytest]].
+- Inspecte / débogue des serveurs [[mcp-protocol]], notamment ceux bâtis avec [[fastmcp]].
+- Pour les tests unitaires du serveur côté Python : [[pytest]].
 - Doc : https://www.mcpjam.com

@@ -28,7 +28,7 @@ tags: [routing, llm, rag]
 - Réduit le coût **moyen** : la plupart des requêtes se règlent à l'étage bon marché.
 
 ### Au niveau infra
-- Une passerelle comme [[Dev/Services/LiteLLM|LiteLLM]] fait du routage / fallback entre fournisseurs (coût, charge, panne) — du routing d'infrastructure, complémentaire du routing sémantique applicatif.
+- Une passerelle comme [[LiteLLM]] fait du routage / fallback entre fournisseurs (coût, charge, panne) — du routing d'infrastructure, complémentaire du routing sémantique applicatif.
 
 ## Les maths, simplement
 
@@ -50,8 +50,8 @@ tags: [routing, llm, rag]
 - [[LLM caching]] — l'étage 0, avant tout modèle.
 - [[Calculs adaptatifs]] — la même idée d'« allouer le calcul selon la difficulté », mais **dans** le modèle (couches traversées) au lieu d'**entre** modèles. La cascade est la version qui fonctionne aujourd'hui en production.
 - [[RAG eval]] — pour valider que le routeur dirige bien et que la cascade ne dégrade pas.
-- [[Dev/Services/LiteLLM|LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
-- Passerelles qui l'implémentent : [[Dev/Services/OmniRoute|OmniRoute]] (bascule sur quota épuisé), [[Dev/Services/LiteLLM|LiteLLM]], [[Dev/Services/OpenRouter|OpenRouter]].
+- [[LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
+- Passerelles qui l'implémentent : [[OmniRoute]] (bascule sur quota épuisé), [[LiteLLM]], [[OpenRouter]].
 
 ## Pour aller plus loin
 

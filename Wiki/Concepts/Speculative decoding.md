@@ -47,7 +47,7 @@ tags: [inference-optimization, decoding, llm, inference]
 
 - Gain maximal sur les sorties **prévisibles** (code, texte structuré) où le brouillon vise juste ; faible sur du texte très entropique.
 - Le brouillon doit être **bien plus rapide** que la cible et **aligné** avec elle (même famille / tokenizer).
-- Activable nativement dans les runtimes : [[Dev/Services/vLLM|vLLM]], [[Dev/Services/SGLang|SGLang]], [[Dev/Services/TGI|TGI]] et [[Dev/Services/TensorRT-LLM|TensorRT-LLM]] supportent draft model et/ou EAGLE/Medusa.
+- Activable nativement dans les runtimes : [[vLLM]], [[SGLang]], [[TGI]] et [[TensorRT-LLM]] supportent draft model et/ou EAGLE/Medusa.
 - N'améliore **pas** le *time-to-first-token* (prefill) : c'est une optimisation du **decode**.
 - **Lire les annonces de gain avec méfiance** : « 2× plus rapide » ne veut rien dire sans préciser (a) par utilisateur ou en débit agrégé, (b) à quelle charge, (c) contre quelle baseline. Un gain par utilisateur mesuré sur une machine vide s'évapore souvent à concurrence réelle — c'est précisément le problème que DSpark attaque en pilotant la profondeur de vérification sur la charge.
 

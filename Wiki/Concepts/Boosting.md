@@ -37,7 +37,7 @@ tags: [supervised, ensemble, boosting]
 ## En pratique
 
 - Souvent le meilleur sur **données tabulaires**, mais plus délicat à régler que le bagging (le trio `learning_rate` / `n_estimators` / `max_depth` se règle ensemble).
-- Implémentations dominantes : [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]], [[Dev/Services/CatBoost|CatBoost]] ; côté sklearn : [[Dev/Services/Scikit-Learn|HistGradientBoosting / AdaBoost]].
+- Implémentations dominantes : [[XGBoost]], [[LightGBM]], [[CatBoost]] ; côté sklearn : [[Scikit-Learn|HistGradientBoosting / AdaBoost]].
 
 ## Approches voisines & alternatives
 

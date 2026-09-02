@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/hydra|hydra]]", "[[Dev/Services/python-dotenv|python-dotenv]]"]
+alternatives: ["[[dynaconf]]", "[[hydra]]", "[[python-dotenv]]"]
 complements: []
 tags: [config, data-validation]
 url_docs: https://docs.pydantic.dev/latest/concepts/pydantic_settings/
@@ -19,7 +19,7 @@ url_repo: https://github.com/pydantic/pydantic-settings
 
 ## Pourquoi
 
-Extension de [[Dev/Services/Pydantic|Pydantic]] dédiée à la **configuration d'application**. Une classe `BaseSettings` mappe automatiquement ses champs sur les **variables d'environnement**, les fichiers **`.env`**, les **secrets** (fichiers montés) et d'autres sources, le tout **validé et typé** par Pydantic. C'était `pydantic.BaseSettings` en v1 ; depuis Pydantic **v2**, c'est un paquet séparé (`pydantic-settings`). Source de configuration unique, hiérarchisée (précédence des sources) et fail-fast au démarrage si une valeur manque ou est mal typée.
+Extension de [[Pydantic]] dédiée à la **configuration d'application**. Une classe `BaseSettings` mappe automatiquement ses champs sur les **variables d'environnement**, les fichiers **`.env`**, les **secrets** (fichiers montés) et d'autres sources, le tout **validé et typé** par Pydantic. C'était `pydantic.BaseSettings` en v1 ; depuis Pydantic **v2**, c'est un paquet séparé (`pydantic-settings`). Source de configuration unique, hiérarchisée (précédence des sources) et fail-fast au démarrage si une valeur manque ou est mal typée.
 
 ## Quand l'utiliser
 
@@ -29,9 +29,9 @@ Extension de [[Dev/Services/Pydantic|Pydantic]] dédiée à la **configuration d
 
 ## Quand NE PAS l'utiliser
 
-- Configuration hiérarchique complexe d'expériences ML (compositions, overrides CLI) → [[Dev/Services/hydra|hydra]].
-- Multi-environnements avec couches et formats variés (TOML/YAML/Vault) → [[Dev/Services/dynaconf|dynaconf]].
-- Simple chargement d'un `.env` sans modèle → [[Dev/Services/python-dotenv|python-dotenv]].
+- Configuration hiérarchique complexe d'expériences ML (compositions, overrides CLI) → [[hydra]].
+- Multi-environnements avec couches et formats variés (TOML/YAML/Vault) → [[dynaconf]].
+- Simple chargement d'un `.env` sans modèle → [[python-dotenv]].
 
 ## Déploiement & coût
 
@@ -46,13 +46,13 @@ Extension de [[Dev/Services/Pydantic|Pydantic]] dédiée à la **configuration d
 
 ## Alternatives
 
-- [[Dev/Services/dynaconf|dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
-- [[Dev/Services/hydra|hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
-- [[Dev/Services/python-dotenv|python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+- [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
+- [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
+- [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 
 Pydantic Settings se distingue par la **validation typée** Pydantic appliquée aux variables d'environnement et aux `.env`.
 
 ## Liens
 
-- Socle de validation : [[Dev/Services/Pydantic|Pydantic]].
+- Socle de validation : [[Pydantic]].
 - Doc : https://docs.pydantic.dev/latest/concepts/pydantic_settings/

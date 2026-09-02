@@ -39,7 +39,7 @@ tags: [information-theory, entropy]
 - **Arbres de décision** : le gain d'information (réduction d'entropie) sert de critère de découpe — c'est l'alternative à l'indice de Gini dans [[Arbres de décision]] et [[Random Forest]].
 - **Quantité d'information** d'une variable catégorielle, mesure de diversité (indice de Shannon en écologie), critère de sélection de features (cf. [[Sélection de variables]]).
 - Une entropie élevée signale une distribution plate (peu prédictible) ; surveiller sa chute pour détecter une concentration ou un effondrement de diversité.
-- Outils : `scipy.stats.entropy` ([[Dev/Services/scipy.stats|scipy.stats]]) calcule $H$ (et la KL si on passe une seconde distribution).
+- Outils : `scipy.stats.entropy` ([[scipy.stats]]) calcule $H$ (et la KL si on passe une seconde distribution).
 
 ## Approches voisines & alternatives
 

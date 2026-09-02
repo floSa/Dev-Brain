@@ -20,7 +20,7 @@ url_repo: https://github.com/public-apis/public-apis
 
 ## Pourquoi
 
-**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un client d'API. C'est un annuaire de liens — un unique `README.md`. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre. Ne pas le lire comme une brique choisissable. Son `categorie: tooling/api` porte le **sujet listé** (des API), pas sa nature — d'où le voisinage de [[Dev/Outils/Postman|Postman]] et [[Dev/Outils/Bruno|Bruno]], qui sont des clients d'API sur le même domaine et d'une autre famille.
+**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un client d'API. C'est un annuaire de liens — un unique `README.md`. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre. Ne pas le lire comme une brique choisissable. Son `categorie: tooling/api` porte le **sujet listé** (des API), pas sa nature — d'où le voisinage de [[Postman]] et [[Bruno]], qui sont des clients d'API sur le même domaine et d'une autre famille.
 
 Cela dit, c'est l'annuaire de référence : de l'ordre de **1 700 entrées** réparties en **52 catégories** (météo, finance, jeux vidéo, musique, transports, données ouvertes…), avec pour chacune l'authentification requise, le support HTTPS et le CORS. Maintenu depuis 2016 sous licence MIT.
 
@@ -36,7 +36,7 @@ Utilité concrète : trouver une source de données réelle pour un prototype, u
 
 - Choisir une API pour de la production : rien ne garantit la disponibilité, les quotas ni la pérennité des entrées listées.
 - Compter sur la fraîcheur : à cette échelle, la liste contient forcément des liens morts, et le backlog de contributions non triées est de l'ordre de 1 800 issues et autant de pull requests.
-- Chercher un outil pour appeler ces APIs : ce n'en est pas un → [[Dev/Outils/Bruno|Bruno]], [[Dev/Outils/Postman|Postman]].
+- Chercher un outil pour appeler ces APIs : ce n'en est pas un → [[Bruno]], [[Postman]].
 
 ## Installation & plateformes
 
@@ -56,6 +56,6 @@ Aucune installation : une page GitHub, lisible en ligne ou clonée. Pas de langa
 
 ## Liens
 
-- [[Dev/Outils/Bruno|Bruno]] — avec quoi appeler ce qu'on y trouve, en local et versionné
-- [[Dev/Outils/Postman|Postman]] — l'équivalent cloud et collaboratif
+- [[Bruno]] — avec quoi appeler ce qu'on y trouve, en local et versionné
+- [[Postman]] — l'équivalent cloud et collaboratif
 - Repo : https://github.com/public-apis/public-apis

@@ -43,7 +43,7 @@ tags: [forecasting, timeseries]
 
 - La cohérence n'est pas qu'esthétique : la planification l'exige (un budget régional = somme des budgets magasins).
 - Réconcilier avec MinT(shrink) bat généralement bottom-up et top-down purs ; commencer par bottom-up comme baseline.
-- Outils : `HierarchicalForecast` (Nixtla) pour la réconciliation, posée sur des modèles de base [[Dev/Services/statsforecast|statsforecast]] par nœud.
+- Outils : `HierarchicalForecast` (Nixtla) pour la réconciliation, posée sur des modèles de base [[statsforecast]] par nœud.
 
 ## Approches voisines & alternatives
 

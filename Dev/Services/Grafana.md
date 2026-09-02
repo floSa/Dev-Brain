@@ -21,7 +21,7 @@ url_repo: https://github.com/grafana/grafana
 
 ## Pourquoi
 
-Plateforme de **dashboards et d'observabilité** open-source éditée par Grafana Labs, sous **AGPL-3.0-only** (relicenciée depuis Apache 2.0 en 2021). Backend en **Go**, front en React/TypeScript. Sa force est d'être **composable** : elle ne stocke pas les données mais se connecte à 150+ **sources** (Prometheus, [[Dev/Services/Loki|Loki]], [[Dev/Services/InfluxDB|InfluxDB]], [[Dev/Services/Elasticsearch|Elasticsearch]], [[Dev/Services/Postgres|Postgres]]…) pour visualiser **métriques, logs et traces** au même endroit, avec exploration ad hoc et **alerting** intégré.
+Plateforme de **dashboards et d'observabilité** open-source éditée par Grafana Labs, sous **AGPL-3.0-only** (relicenciée depuis Apache 2.0 en 2021). Backend en **Go**, front en React/TypeScript. Sa force est d'être **composable** : elle ne stocke pas les données mais se connecte à 150+ **sources** (Prometheus, [[Loki]], [[InfluxDB]], [[Elasticsearch]], [[Postgres]]…) pour visualiser **métriques, logs et traces** au même endroit, avec exploration ad hoc et **alerting** intégré.
 
 ## Quand l'utiliser
 
@@ -31,8 +31,8 @@ Plateforme de **dashboards et d'observabilité** open-source éditée par Grafan
 
 ## Quand NE PAS l'utiliser
 
-- Pour **stocker** les métriques : Grafana ne stocke rien — il faut une base derrière (Prometheus/Mimir, [[Dev/Services/InfluxDB|InfluxDB]]).
-- Pour une simple **app data interactive** en Python (formulaires, ML demo) → [[Dev/Services/Streamlit|Streamlit]], [[Dev/Services/Dash|Dash]] : autre usage que la supervision.
+- Pour **stocker** les métriques : Grafana ne stocke rien — il faut une base derrière (Prometheus/Mimir, [[InfluxDB]]).
+- Pour une simple **app data interactive** en Python (formulaires, ML demo) → [[Streamlit]], [[Dash]] : autre usage que la supervision.
 
 ## Déploiement & coût
 
@@ -48,10 +48,10 @@ Plateforme de **dashboards et d'observabilité** open-source éditée par Grafan
 
 ## Alternatives
 
-- _Pas encore d'alternative équivalente fichée dans le brain (catégorie naissante)._ Grafana se couple à [[Dev/Services/Loki|Loki]] (logs) et aux sources de métriques, plutôt qu'il ne les remplace.
+- _Pas encore d'alternative équivalente fichée dans le brain (catégorie naissante)._ Grafana se couple à [[Loki]] (logs) et aux sources de métriques, plutôt qu'il ne les remplace.
 
 ## Liens
 
-- [[Dev/Services/Loki|Loki]] — agrégation de logs du même éditeur, source naturelle visualisée dans Grafana.
-- Sources fréquentes : Prometheus, [[Dev/Services/InfluxDB|InfluxDB]], [[Dev/Services/Elasticsearch|Elasticsearch]], [[Dev/Services/Postgres|Postgres]].
+- [[Loki]] — agrégation de logs du même éditeur, source naturelle visualisée dans Grafana.
+- Sources fréquentes : Prometheus, [[InfluxDB]], [[Elasticsearch]], [[Postgres]].
 - Doc : https://grafana.com/docs/grafana/latest/

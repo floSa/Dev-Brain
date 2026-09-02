@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Optuna|Optuna]]", "[[Dev/Services/Ray Tune|Ray Tune]]"]
+alternatives: ["[[Optuna]]", "[[Ray Tune]]"]
 complements: []
 tags: [hyperparameter-tuning, bayesian, distributed]
 url_docs: http://hyperopt.github.io/hyperopt/
@@ -29,15 +29,15 @@ Bibliothèque **historique** d'optimisation d'hyperparamètres en Python, qui a 
 
 ## Quand NE PAS l'utiliser
 
-- Nouveau projet : préférer [[Dev/Services/Optuna|Optuna]] (API define-by-run, pruning, dashboard, maintenance active) — successeur de facto.
-- HPO **distribué à grande échelle** avec schedulers avancés → [[Dev/Services/Ray Tune|Ray Tune]].
-- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Nouveau projet : préférer [[Optuna]] (API define-by-run, pruning, dashboard, maintenance active) — successeur de facto.
+- HPO **distribué à grande échelle** avec schedulers avancés → [[Ray Tune]].
+- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]].
 - Besoin de support actif / corrections récentes : le projet est quasi en sommeil.
 
 ## Déploiement & coût
 
 - Bibliothèque open-source (BSD), `uv add hyperopt` ; rien à héberger pour l'usage local.
-- Single-node par défaut ; **distribué** via un backend MongoDB (`MongoTrials`) ou via [[Dev/Services/Spark|Spark]] (`SparkTrials`).
+- Single-node par défaut ; **distribué** via un backend MongoDB (`MongoTrials`) ou via [[Spark]] (`SparkTrials`).
 - Coût = l'infra de parallélisation éventuelle ; la bibliothèque est gratuite.
 
 ## Pièges
@@ -45,16 +45,16 @@ Bibliothèque **historique** d'optimisation d'hyperparamètres en Python, qui a 
 - **Peu maintenu** : pas de release depuis ~2021, friction d'installation avec les versions récentes de Python/NumPy.
 - `hp.choice` renvoie un **index**, pas la valeur : erreur classique au moment de relire le meilleur essai (`space_eval` pour récupérer la config réelle).
 - Le backend **MongoDB** pour le distribué est lourd à opérer ; `SparkTrials` est souvent préférable.
-- Pas de pruning intra-essai comme [[Dev/Services/Optuna|Optuna]] : l'arrêt précoce n'est pas natif.
+- Pas de pruning intra-essai comme [[Optuna]] : l'arrêt précoce n'est pas natif.
 
 ## Alternatives
 
-- [[Dev/Services/Optuna|Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
-- [[Dev/Services/Ray Tune|Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
+- [[Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
+- [[Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
 
 ## Liens
 
 - Concept implémenté : [[Optimisation d'hyperparamètres]]
 - [[Comparatif - Optimisation d'hyperparamètres]] — comparatif de la catégorie
-- Peut être orchestré en distribué par [[Dev/Services/Ray Tune|Ray Tune]] ou [[Dev/Services/Spark|Spark]].
+- Peut être orchestré en distribué par [[Ray Tune]] ou [[Spark]].
 - Doc : http://hyperopt.github.io/hyperopt/

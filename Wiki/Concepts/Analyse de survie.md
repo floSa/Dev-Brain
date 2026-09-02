@@ -54,7 +54,7 @@ tags: [survival-analysis, regression, non-parametric]
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/lifelines|lifelines]] — l'implémentation Python de référence (Kaplan-Meier, Cox, AFT) avec gestion de la censure.
+- [[lifelines]] — l'implémentation Python de référence (Kaplan-Meier, Cox, AFT) avec gestion de la censure.
 - [[GLM]] / [[Régression logistique]] — modélisent l'occurrence d'un événement mais ignorent le *temps* et la censure.
 - [[Régression linéaire]] — inadaptée telle quelle : ne gère ni la censure ni des durées strictement positives et asymétriques.
 - Modèles paramétriques AFT (Weibull, log-normal) — alternative à Cox quand on veut une forme explicite du risque de base.
@@ -62,5 +62,5 @@ tags: [survival-analysis, regression, non-parametric]
 ## Pour aller plus loin
 
 - Klein & Moeschberger — *Survival Analysis* ; Kleinbaum & Klein — *Survival Analysis: A Self-Learning Text*.
-- Outils : [[Dev/Services/lifelines|lifelines]] (Python pur), scikit-survival (survie ML), package `survival` (R, référence historique).
+- Outils : [[lifelines]] (Python pur), scikit-survival (survie ML), package `survival` (R, référence historique).
 - Domaines d'usage : médecine (durée de vie), industrie (fiabilité), product analytics (rétention, churn).

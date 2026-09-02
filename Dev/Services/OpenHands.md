@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
-alternatives: ["[[Dev/Outils/Maka|Maka]]"]
+alternatives: ["[[Maka]]"]
 complements: []
 tags: [llm, agents, tool-use, code-generation]
 url_docs: https://docs.all-hands.dev/
@@ -31,8 +31,8 @@ Plateforme d'**agent de développement autonome** (ex-**OpenDevin**, portée par
 
 ## Quand NE PAS l'utiliser
 
-- **Construire son propre agent** sur mesure (logique métier, multi-agents) → frameworks comme [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]].
-- Tâches exigeant un **contrôle fin** du flux d'état et du human-in-the-loop programmable → [[Dev/Services/LangGraph|LangGraph]].
+- **Construire son propre agent** sur mesure (logique métier, multi-agents) → frameworks comme [[OpenAI Agents SDK]], [[CrewAI]], [[smolagents]].
+- Tâches exigeant un **contrôle fin** du flux d'état et du human-in-the-loop programmable → [[LangGraph]].
 - Contexte sensible sans **isolation** : l'agent exécute des commandes arbitraires — sandboxer et restreindre les accès.
 
 ## Déploiement & coût
@@ -50,12 +50,12 @@ Plateforme d'**agent de développement autonome** (ex-**OpenDevin**, portée par
 ## Alternatives
 
 <!-- OpenHands est un agent de dev autonome (produit), pas un framework pour bâtir des agents : pas d'alternative directe dans le brain. -->
-- Pour **construire** un agent sur mesure plutôt que d'en utiliser un clé en main, voir les frameworks d'agents : [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]].
-- [[Dev/Outils/Maka|Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
+- Pour **construire** un agent sur mesure plutôt que d'en utiliser un clé en main, voir les frameworks d'agents : [[OpenAI Agents SDK]], [[CrewAI]], [[smolagents]].
+- [[Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 
 ## Liens
 
-- Catégorie **agent de code autonome** — distinct des frameworks d'agents généralistes ([[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/Agno|Agno]]) qui servent à *bâtir* des agents.
+- Catégorie **agent de code autonome** — distinct des frameworks d'agents généralistes ([[AutoGen]], [[CrewAI]], [[Agno]]) qui servent à *bâtir* des agents.
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.all-hands.dev/

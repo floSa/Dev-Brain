@@ -53,7 +53,7 @@ tags: [regression, supervised]
 - Cible très asymétrique (prix, revenus, durées) : passer en `log(y)` linéarise souvent la relation et stabilise la variance — sans oublier que la moyenne des logs n'est pas le log de la moyenne au moment de repasser en unités.
 - Une prédiction ponctuelle sans **incertitude** est peu exploitable : régression quantile, ou intervalles par [[Bootstrap|bootstrap]].
 - Si la cible est indexée par le temps, ce n'est plus de la régression i.i.d. : ordre et fuite temporelle changent tout ([[Forecasting framing]], [[Walk-forward CV]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn]] (`LinearRegression`, `Ridge`, `RandomForestRegressor`), [[Dev/Services/statsmodels|statsmodels]] (inférence, tests, diagnostics), [[Dev/Services/XGBoost|XGBoost]] / [[Dev/Services/LightGBM|LightGBM]].
+- Outils : [[Scikit-Learn|sklearn]] (`LinearRegression`, `Ridge`, `RandomForestRegressor`), [[statsmodels]] (inférence, tests, diagnostics), [[XGBoost]] / [[LightGBM]].
 
 ## Approches voisines & alternatives
 

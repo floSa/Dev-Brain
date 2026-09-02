@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenRouter|OpenRouter]]", "[[Dev/Services/OmniRoute|OmniRoute]]"]
+alternatives: ["[[OpenRouter]]", "[[OmniRoute]]"]
 complements: []
 tags: [llm, llm-gateway, inference]
 url_docs: https://docs.litellm.ai/
@@ -21,20 +21,20 @@ url_repo: https://github.com/BerriAI/litellm
 
 ## Pourquoi
 
-**Passerelle** (gateway) LLM unifiée de **BerriAI**, à ne pas confondre avec un framework d'application : son rôle est l'**abstraction du fournisseur**. Elle expose un seul format — celui de l'API **OpenAI** — pour appeler **100+ fournisseurs** (OpenAI, Anthropic, Google, Bedrock, Azure, Cohere, ainsi que des moteurs locaux comme [[Dev/Services/vLLM|vLLM]] ou [[Dev/Services/Ollama|Ollama]]). Deux formes : un **SDK Python** (un appel `completion()` pour tous), et un **proxy serveur** (AI Gateway) centralisé qui ajoute **clés virtuelles**, **suivi des coûts**, **load-balancing / fallbacks**, **garde-fous** et journalisation pour une équipe. Écrit en **Python**, cœur sous licence **MIT** (le dossier `enterprise/` relève d'une licence commerciale séparée). C'est la **brique de plomberie** que les frameworks d'apps LLM appellent dessous.
+**Passerelle** (gateway) LLM unifiée de **BerriAI**, à ne pas confondre avec un framework d'application : son rôle est l'**abstraction du fournisseur**. Elle expose un seul format — celui de l'API **OpenAI** — pour appeler **100+ fournisseurs** (OpenAI, Anthropic, Google, Bedrock, Azure, Cohere, ainsi que des moteurs locaux comme [[vLLM]] ou [[Ollama]]). Deux formes : un **SDK Python** (un appel `completion()` pour tous), et un **proxy serveur** (AI Gateway) centralisé qui ajoute **clés virtuelles**, **suivi des coûts**, **load-balancing / fallbacks**, **garde-fous** et journalisation pour une équipe. Écrit en **Python**, cœur sous licence **MIT** (le dossier `enterprise/` relève d'une licence commerciale séparée). C'est la **brique de plomberie** que les frameworks d'apps LLM appellent dessous.
 
 ## Quand l'utiliser
 
 - **Découpler** le code applicatif du fournisseur : changer OpenAI ↔ Anthropic ↔ local sans réécrire les appels.
 - **Centraliser** l'accès LLM d'une équipe derrière un proxy : quotas, clés virtuelles, **suivi des coûts**, journalisation.
 - **Fiabilité** : fallbacks automatiques, retries et load-balancing entre modèles/déploiements.
-- Donner un endpoint **OpenAI-compatible** unique devant un parc hétérogène (cloud + [[Dev/Services/vLLM|vLLM]]/[[Dev/Services/Ollama|Ollama]] locaux).
+- Donner un endpoint **OpenAI-compatible** unique devant un parc hétérogène (cloud + [[vLLM]]/[[Ollama]] locaux).
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de **composer des chaînes, du RAG ou des agents** : LiteLLM ne fait pas l'orchestration → [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]] (qui peuvent l'utiliser dessous).
+- Besoin de **composer des chaînes, du RAG ou des agents** : LiteLLM ne fait pas l'orchestration → [[LangChain]], [[LlamaIndex]], [[Haystack]] (qui peuvent l'utiliser dessous).
 - Un seul fournisseur, sans besoin de routage ni de centralisation : le SDK natif du fournisseur suffit.
-- **Servir** un modèle (inférence GPU) : ce n'est pas un moteur de serving → [[Dev/Services/vLLM|vLLM]], [[Dev/Services/TGI|TGI]].
+- **Servir** un modèle (inférence GPU) : ce n'est pas un moteur de serving → [[vLLM]], [[TGI]].
 
 ## Déploiement & coût
 
@@ -51,17 +51,17 @@ url_repo: https://github.com/BerriAI/litellm
 
 ## Alternatives
 
-- [[Dev/Services/OpenRouter|OpenRouter]] — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
+- [[OpenRouter]] — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 
 <!-- Autre passerelle, mais managée : OpenRouter. Côté frameworks d'apps, pas d'alternative directe — ils s'appuient plutôt sur LiteLLM. -->
-- Les frameworks d'applications ([[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]], [[Dev/Services/DSPy|DSPy]]) offrent leur propre abstraction de modèles, mais résolvent l'orchestration, pas la passerelle multi-fournisseurs centralisée.
-- [[Dev/Services/OmniRoute|OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
+- Les frameworks d'applications ([[LangChain]], [[LlamaIndex]], [[Haystack]], [[DSPy]]) offrent leur propre abstraction de modèles, mais résolvent l'orchestration, pas la passerelle multi-fournisseurs centralisée.
+- [[OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
 ## Liens
 
-- Équivalent **managé** (SaaS) de la même fonction : [[Dev/Services/OpenRouter|OpenRouter]].
-- Utilisé **en dessous** des frameworks d'apps : [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]], [[Dev/Services/DSPy|DSPy]] (qui appelle LiteLLM en interne).
-- Route aussi vers les moteurs locaux à endpoint OpenAI : [[Dev/Services/vLLM|vLLM]], [[Dev/Services/Ollama|Ollama]], [[Dev/Services/TGI|TGI]].
+- Équivalent **managé** (SaaS) de la même fonction : [[OpenRouter]].
+- Utilisé **en dessous** des frameworks d'apps : [[LangChain]], [[LlamaIndex]], [[Haystack]], [[DSPy]] (qui appelle LiteLLM en interne).
+- Route aussi vers les moteurs locaux à endpoint OpenAI : [[vLLM]], [[Ollama]], [[TGI]].
 - Expose des [[Guardrails|garde-fous]] (modération, PII) au niveau du proxy, avant/après l'appel.
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.litellm.ai/

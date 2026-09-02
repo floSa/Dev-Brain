@@ -50,5 +50,5 @@ Bibliothèque qui fournit une API conviviale pour **lancer des conteneurs Docker
 
 ## Liens
 
-- Voisin direct : [[Dev/Services/pytest|pytest]] — les conteneurs jetables s'exposent en fixtures pytest pour les tests d'intégration.
+- Voisin direct : [[pytest]] — les conteneurs jetables s'exposent en fixtures pytest pour les tests d'intégration.
 - Doc : https://testcontainers.com/

@@ -38,7 +38,7 @@ tags: [clustering, unsupervised]
 - **Échoue quand la densité varie** fortement d'un cluster à l'autre : un seul `eps` global ne peut convenir à tous → c'est précisément ce que corrige [[Clustering hiérarchique par densité|HDBSCAN]].
 - Souffre de la grande dimension (les distances se concentrent) — réduire d'abord.
 - Robuste aux outliers (capturés comme bruit), quasi déterministe (pas de relance aléatoire).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster.DBSCAN]].
+- Outils : [[Scikit-Learn|sklearn.cluster.DBSCAN]].
 
 ## Approches voisines & alternatives
 

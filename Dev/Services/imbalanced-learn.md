@@ -19,7 +19,7 @@ url_repo: https://github.com/scikit-learn-contrib/imbalanced-learn
 
 ## Pourquoi
 
-imbalanced-learn (importé `imblearn`) étend [[Dev/Services/Scikit-Learn|Scikit-Learn]] pour la classification à **classes déséquilibrées**. Il fournit les techniques de rééchantillonnage — sur-échantillonnage synthétique (SMOTE et variantes), sous-échantillonnage, méthodes combinées — et des estimateurs d'ensemble rééquilibrés, exposés via la même API transformer/estimator. Son `Pipeline` dédié garantit que le rééchantillonnage ne s'applique qu'au **pli d'entraînement**, ce qui évite la fuite de données. Projet scikit-learn-contrib.
+imbalanced-learn (importé `imblearn`) étend [[Scikit-Learn]] pour la classification à **classes déséquilibrées**. Il fournit les techniques de rééchantillonnage — sur-échantillonnage synthétique (SMOTE et variantes), sous-échantillonnage, méthodes combinées — et des estimateurs d'ensemble rééquilibrés, exposés via la même API transformer/estimator. Son `Pipeline` dédié garantit que le rééchantillonnage ne s'applique qu'au **pli d'entraînement**, ce qui évite la fuite de données. Projet scikit-learn-contrib.
 
 ## Quand l'utiliser
 
@@ -32,7 +32,7 @@ imbalanced-learn (importé `imblearn`) étend [[Dev/Services/Scikit-Learn|Scikit
 ## Quand NE PAS l'utiliser
 
 - Avant d'avoir réglé la **métrique** (PR-AUC), le **seuil** et `class_weight` — le rééchantillonnage vient en dernier (cf. [[Imbalanced classification]]).
-- Arbres boostés qui gèrent le déséquilibre nativement via `scale_pos_weight` → [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]].
+- Arbres boostés qui gèrent le déséquilibre nativement via `scale_pos_weight` → [[XGBoost]], [[LightGBM]].
 - Données non tabulaires (images, texte brut) où l'augmentation se fait dans le pipeline d'entraînement, pas par interpolation SMOTE sur features.
 
 ## Déploiement & coût
@@ -49,12 +49,12 @@ imbalanced-learn (importé `imblearn`) étend [[Dev/Services/Scikit-Learn|Scikit
 
 ## Alternatives
 
-Pas d'équivalent direct dans le brain — imbalanced-learn **complète** [[Dev/Services/Scikit-Learn|Scikit-Learn]] plutôt qu'il ne le remplace. Approches concurrentes au rééchantillonnage : `class_weight='balanced'` (scikit-learn), `scale_pos_weight` des arbres boostés ([[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/LightGBM|LightGBM]]), et l'ajustement de seuil.
+Pas d'équivalent direct dans le brain — imbalanced-learn **complète** [[Scikit-Learn]] plutôt qu'il ne le remplace. Approches concurrentes au rééchantillonnage : `class_weight='balanced'` (scikit-learn), `scale_pos_weight` des arbres boostés ([[XGBoost]], [[LightGBM]]), et l'ajustement de seuil.
 
 ## Liens
 
 - [[Imbalanced classification]] — le concept : métrique, seuil, pondération, rééchantillonnage.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — la base dont imbalanced-learn reprend et étend l'API (transformers, Pipeline).
+- [[Scikit-Learn]] — la base dont imbalanced-learn reprend et étend l'API (transformers, Pipeline).
 - [[Data leakage]] — rééchantillonner hors du pli d'entraînement en est une cause classique.
 - [[Calibration]] — recalibrer les probabilités après rééchantillonnage.
 - Doc : https://imbalanced-learn.org/

@@ -38,7 +38,7 @@ tags: [reinforcement-learning, policy-gradient]
 - Préférer quand l'espace d'actions est **continu / haute dimension** (robotique, contrôle) ou quand une **politique stochastique** est souhaitable (exploration, jeux à information imparfaite).
 - Réduire la variance est le nerf de la guerre : baseline/critique, **GAE** (generalized advantage estimation), normalisation des avantages.
 - Pièges : pas d'apprentissage trop grand → effondrement de la politique ; sensibilité aux récompenses non normalisées ; gaspillage de données si on n'introduit pas de réutilisation contrôlée (cf. [[PPO]]).
-- Côté outils : pertes REINFORCE et surrogate clippé en briques JAX dans [[Dev/Services/RLax|RLax]] ; agents complets dans [[Dev/Services/TF-Agents|TF-Agents]] (`ReinforceAgent`) et [[Dev/Services/Acme|Acme]] (IMPALA, MPO).
+- Côté outils : pertes REINFORCE et surrogate clippé en briques JAX dans [[RLax]] ; agents complets dans [[TF-Agents]] (`ReinforceAgent`) et [[Acme]] (IMPALA, MPO).
 
 ## Approches voisines & alternatives
 

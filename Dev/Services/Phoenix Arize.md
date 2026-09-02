@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Langfuse|Langfuse]]", "[[Dev/Services/LangSmith|LangSmith]]", "[[Dev/Services/Helicone|Helicone]]"]
+alternatives: ["[[Langfuse]]", "[[LangSmith]]", "[[Helicone]]"]
 complements: []
 tags: [llm, llm-observability, llm-eval, tracing]
 url_docs: https://arize.com/docs/phoenix
@@ -21,7 +21,7 @@ url_repo: https://github.com/Arize-ai/phoenix
 
 ## Pourquoi
 
-Plateforme open-source d'**observabilité et d'évaluation** LLM/agents éditée par **Arize AI**, sous **Elastic License 2.0** (source-available : usage interne large, mais interdiction d'en faire un service managé concurrent). Son traçage est bâti sur **OpenTelemetry / OpenInference** : elle ingère des spans depuis [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/DSPy|DSPy]], CrewAI, les SDK OpenAI/Anthropic/Bedrock… Elle ajoute des **évals par LLM** (réponse et retrieval), des **datasets** versionnés et des **expérimentations**. C'est la version OSS, auto-hébergeable, de la plateforme entreprise **Arize AX**.
+Plateforme open-source d'**observabilité et d'évaluation** LLM/agents éditée par **Arize AI**, sous **Elastic License 2.0** (source-available : usage interne large, mais interdiction d'en faire un service managé concurrent). Son traçage est bâti sur **OpenTelemetry / OpenInference** : elle ingère des spans depuis [[LangChain]], [[LlamaIndex]], [[DSPy]], CrewAI, les SDK OpenAI/Anthropic/Bedrock… Elle ajoute des **évals par LLM** (réponse et retrieval), des **datasets** versionnés et des **expérimentations**. C'est la version OSS, auto-hébergeable, de la plateforme entreprise **Arize AX**.
 
 ## Quand l'utiliser
 
@@ -32,9 +32,9 @@ Plateforme open-source d'**observabilité et d'évaluation** LLM/agents éditée
 
 ## Quand NE PAS l'utiliser
 
-- Exigence d'**OSI open source** strict (procurement) : ELv2 est *source-available*, pas OSI → [[Dev/Services/Langfuse|Langfuse]] (cœur MIT) convient mieux.
-- App **100 % LangChain** cherchant le produit le plus intégré et managé → [[Dev/Services/LangSmith|LangSmith]].
-- Besoin uniquement d'**éval offline** en bibliothèque/CI → [[Dev/Services/Ragas|Ragas]], [[Dev/Services/DeepEval|DeepEval]].
+- Exigence d'**OSI open source** strict (procurement) : ELv2 est *source-available*, pas OSI → [[Langfuse]] (cœur MIT) convient mieux.
+- App **100 % LangChain** cherchant le produit le plus intégré et managé → [[LangSmith]].
+- Besoin uniquement d'**éval offline** en bibliothèque/CI → [[Ragas]], [[DeepEval]].
 
 ## Déploiement & coût
 
@@ -50,14 +50,14 @@ Plateforme open-source d'**observabilité et d'évaluation** LLM/agents éditée
 
 ## Alternatives
 
-- [[Dev/Services/Langfuse|Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
-- [[Dev/Services/LangSmith|LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
-- [[Dev/Services/Helicone|Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
+- [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
+- [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
+- [[Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
 ## Liens
 
-- Traçage **OpenTelemetry/OpenInference** depuis [[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/DSPy|DSPy]].
-- Peut exécuter des évals de type [[Dev/Services/Ragas|Ragas]] sur les traces ; complément de [[Dev/Services/TruLens|TruLens]].
+- Traçage **OpenTelemetry/OpenInference** depuis [[LangChain]], [[LlamaIndex]], [[DSPy]].
+- Peut exécuter des évals de type [[Ragas]] sur les traces ; complément de [[TruLens]].
 - Concepts : [[LLM observability]], [[LLM-as-judge]] (évals par LLM).
 - [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
 - Doc : https://arize.com/docs/phoenix

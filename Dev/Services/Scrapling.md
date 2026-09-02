@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[Dev/Services/Scrapy|Scrapy]]", "[[Dev/Services/Crawlee|Crawlee]]", "[[Dev/Services/Playwright|Playwright]]"]
+alternatives: ["[[Scrapy]]", "[[Crawlee]]", "[[Playwright]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://scrapling.readthedocs.io/
@@ -29,9 +29,9 @@ Framework de scraping Python qui vise deux plaies du métier : la **fragilité d
 
 ## Quand NE PAS l'utiliser
 
-- Production critique exigeant un socle **éprouvé de longue date** → [[Dev/Services/Scrapy|Scrapy]] (Scrapling est plus jeune).
-- Écosystème **Node.js / TypeScript** → [[Dev/Services/Crawlee|Crawlee]].
-- Interactions navigateur riches et tests E2E → [[Dev/Services/Playwright|Playwright]].
+- Production critique exigeant un socle **éprouvé de longue date** → [[Scrapy]] (Scrapling est plus jeune).
+- Écosystème **Node.js / TypeScript** → [[Crawlee]].
+- Interactions navigateur riches et tests E2E → [[Playwright]].
 
 ## Déploiement & coût
 
@@ -47,12 +47,12 @@ Framework de scraping Python qui vise deux plaies du métier : la **fragilité d
 
 ## Alternatives
 
-- [[Dev/Services/Scrapy|Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
-- [[Dev/Services/Crawlee|Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
-- [[Dev/Services/Playwright|Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
+- [[Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
+- [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
+- [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
 ## Liens
 
 - [[Web scraping]] — le concept (anti-bot, robustesse des sélecteurs).
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[Comparatif - Scraping]]
 - Doc : https://scrapling.readthedocs.io/

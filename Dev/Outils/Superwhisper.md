@@ -37,7 +37,7 @@ Note de rangement : la taxonomie décrit `tooling/media` comme l'ingestion de m�
 - **Poste Linux ou travail dans WSL** : il n'existe pas de version Linux. Et sous Windows, l'éditeur documente lui-même cinq manques — pas de FileSync, dossier applicatif non personnalisable (forcé sur `%LOCALAPPDATA%\com.superwhisper.app`), pas de « hold shift to auto-send », pas de simulation de frappes, intégrations agentiques (Claude Code, Codex, OpenCode, Pi) encore « en développement ».
 - Sur du matériel non Apple Silicon si l'on vise les gros modèles : l'éditeur oriente les Mac Intel anciens et les PC Windows vers un modèle de taille moyenne, et pousse les Mac Intel vers le cloud.
 - Exigence de logiciel libre : c'est propriétaire et closed-source.
-- Donner à un agent la capacité de regarder une vidéo — usage différent → [[Dev/Outils/Claude Video|Claude Video]].
+- Donner à un agent la capacité de regarder une vidéo — usage différent → [[Claude Video]].
 
 ## Installation & plateformes
 
@@ -77,7 +77,7 @@ Les colonnes vitesse et précision sont des notes de 1 à 10 **auto-déclarées 
 ## Alternatives
 
 - Aucune page du brain n'est une vraie alternative : les concurrents (MacWhisper, Wispr Flow, VoiceInk…) ne sont pas fichés.
-- Voisin fonctionnel, usage différent : [[Dev/Outils/Claude Video|Claude Video]] — Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.
+- Voisin fonctionnel, usage différent : [[Claude Video]] — Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.
 
 ## Liens
 

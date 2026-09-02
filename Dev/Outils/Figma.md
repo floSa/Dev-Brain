@@ -9,7 +9,7 @@ domaines: []
 licence_type: proprietary
 os: "Web, Windows, macOS"
 langage: 
-alternatives: ["[[Dev/Outils/Penpot|Penpot]]"]
+alternatives: ["[[Penpot]]"]
 complements: []
 tags: [design-tool]
 url_docs: https://help.figma.com/
@@ -30,9 +30,9 @@ Plateforme de **design d'interface (UI/UX) et de prototypage** collaborative, de
 
 ## Quand NE PAS l'utiliser
 
-- Exigence **open-source / self-host / souveraineté des données** → [[Dev/Outils/Penpot|Penpot]].
-- Schéma technique (archi, réseau, UML) plutôt qu'interface → [[Dev/Outils/draw.io|draw.io]] / [[Dev/Outils/Mermaid|Mermaid]].
-- Croquis conceptuel rapide → [[Dev/Outils/Excalidraw|Excalidraw]].
+- Exigence **open-source / self-host / souveraineté des données** → [[Penpot]].
+- Schéma technique (archi, réseau, UML) plutôt qu'interface → [[draw.io]] / [[Mermaid]].
+- Croquis conceptuel rapide → [[Excalidraw]].
 
 ## Bases & plateformes
 
@@ -48,9 +48,9 @@ Plateforme de **design d'interface (UI/UX) et de prototypage** collaborative, de
 
 ## Alternatives
 
-- [[Dev/Outils/Penpot|Penpot]] — Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.
+- [[Penpot]] — Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Design & prototypage|Comparatif - Design & prototypage]]
+- [[Comparatif - Design & prototypage]]
 - Docs : https://help.figma.com/

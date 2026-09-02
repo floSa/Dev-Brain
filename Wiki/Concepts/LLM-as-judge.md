@@ -42,7 +42,7 @@ tags: [llm-as-judge, llm-eval, llm]
 - **Préférer le pairwise** au scoring absolu quand c'est possible (plus stable).
 - **Neutraliser les biais** : permuter les positions, borner la longueur, fixer un modèle juge précis (versionné) pour la comparabilité dans le temps.
 - Coût et latence non négligeables : un juge fort par requête peut coûter plus que la génération évaluée.
-- Outiller : [[Dev/Services/DeepEval|DeepEval]] (G-Eval), [[Dev/Services/Ragas|Ragas]] (métriques reference-free), [[Dev/Services/TruLens|TruLens]] (feedback functions), [[Dev/Services/Langfuse|Langfuse]] (évals en ligne).
+- Outiller : [[DeepEval]] (G-Eval), [[Ragas]] (métriques reference-free), [[TruLens]] (feedback functions), [[Langfuse]] (évals en ligne).
 
 ## Approches voisines & alternatives
 

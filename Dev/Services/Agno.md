@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/CrewAI|CrewAI]]", "[[Dev/Services/AutoGen|AutoGen]]", "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]", "[[Dev/Services/smolagents|smolagents]]", "[[Dev/Services/Letta|Letta]]", "[[Dev/Services/PraisonAI|PraisonAI]]"]
+alternatives: ["[[CrewAI]]", "[[AutoGen]]", "[[OpenAI Agents SDK]]", "[[smolagents]]", "[[Letta]]", "[[PraisonAI]]"]
 complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://docs.agno.com/
@@ -29,9 +29,9 @@ Framework d'agents Python **haute performance**, anciennement **phidata** (rebra
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'orchestration **stateful bas niveau** (graphe cyclique explicite, checkpoints) → [[Dev/Services/LangGraph|LangGraph]].
-- Agent **minimaliste jetable** ou raisonnement en code → [[Dev/Services/smolagents|smolagents]] / [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]].
-- Simple **appel LLM** ou extraction structurée → [[Dev/Services/Instructor|Instructor]] / [[Dev/Services/PydanticAI|PydanticAI]].
+- Besoin d'orchestration **stateful bas niveau** (graphe cyclique explicite, checkpoints) → [[LangGraph]].
+- Agent **minimaliste jetable** ou raisonnement en code → [[smolagents]] / [[OpenAI Agents SDK]].
+- Simple **appel LLM** ou extraction structurée → [[Instructor]] / [[PydanticAI]].
 
 ## Déploiement & coût
 
@@ -47,18 +47,18 @@ Framework d'agents Python **haute performance**, anciennement **phidata** (rebra
 
 ## Alternatives
 
-- [[Dev/Services/CrewAI|CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
-- [[Dev/Services/AutoGen|AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
-- [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
-- [[Dev/Services/smolagents|smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
-- [[Dev/Services/Letta|Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
-- [[Dev/Services/PraisonAI|PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
+- [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
+- [[smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
+- [[Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- [[PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
 ## Liens
 
 - **Ex-phidata** : même projet, renommé en janvier 2025.
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/smolagents|smolagents]], [[Dev/Services/Letta|Letta]], [[Dev/Services/PraisonAI|PraisonAI]] et la couche d'orchestration [[Dev/Services/LangGraph|LangGraph]].
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
+- Même famille de **frameworks d'agents** que [[CrewAI]], [[AutoGen]], [[OpenAI Agents SDK]], [[smolagents]], [[Letta]], [[PraisonAI]] et la couche d'orchestration [[LangGraph]].
+- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.agno.com/

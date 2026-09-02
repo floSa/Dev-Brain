@@ -30,8 +30,8 @@ River fait de l'**apprentissage en ligne** (online / incrémental) en Python : l
 
 ## Quand NE PAS l'utiliser
 
-- Dataset **statique** qui tient en mémoire → [[Dev/Services/Scikit-Learn|Scikit-Learn]] (batch : plus de modèles, plus rapide hors ligne).
-- Deep learning sur GPU → [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/Keras|Keras]].
+- Dataset **statique** qui tient en mémoire → [[Scikit-Learn]] (batch : plus de modèles, plus rapide hors ligne).
+- Deep learning sur GPU → [[PyTorch]] / [[Keras]].
 - Entraînement **distribué** multi-nœuds sur flux → Spark Structured Streaming + MLlib (hors brain).
 
 ## Déploiement & coût
@@ -48,10 +48,10 @@ River fait de l'**apprentissage en ligne** (online / incrémental) en Python : l
 
 ## Alternatives
 
-Pas d'équivalent direct dans le brain. [[Dev/Services/Scikit-Learn|Scikit-Learn]] est le pendant **batch** (quelques estimateurs offrent `partial_fit` pour de l'incrémental limité). Hors brain : Vowpal Wabbit (online learning haute performance), Spark Streaming MLlib (flux distribué).
+Pas d'équivalent direct dans le brain. [[Scikit-Learn]] est le pendant **batch** (quelques estimateurs offrent `partial_fit` pour de l'incrémental limité). Hors brain : Vowpal Wabbit (online learning haute performance), Spark Streaming MLlib (flux distribué).
 
 ## Liens
 
 - [[Data drift]] — River y répond par apprentissage incrémental et détecteurs de dérive intégrés.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — le pendant batch ; River en reprend les conventions d'API, côté flux.
+- [[Scikit-Learn]] — le pendant batch ; River en reprend les conventions d'API, côté flux.
 - Doc : https://riverml.xyz/

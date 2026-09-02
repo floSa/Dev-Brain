@@ -55,11 +55,11 @@ Méthodes documentées : Downloader by AFTVnews sur le téléviseur, transfert d
 
 ## Alternatives
 
-- Aucune. Le brain ne contient aucun autre client de lecture vidéo, et [[Dev/Outils/OpenCut|OpenCut]] (montage) n'en est pas un substitut.
+- Aucune. Le brain ne contient aucun autre client de lecture vidéo, et [[OpenCut]] (montage) n'en est pas un substitut.
 
 ## Liens
 
-- [[Dev/Outils/OpenCut|OpenCut]] — l'autre page `tooling/video` du brain ; montage, pas lecture, et le même avertissement de rangement
-- [[Wiki/Concepts/Video generation|Video generation]] — synthèse de vidéo par modèle : sans rapport, cité seulement pour écarter la confusion de vocabulaire
+- [[OpenCut]] — l'autre page `tooling/video` du brain ; montage, pas lecture, et le même avertissement de rangement
+- [[Video generation]] — synthèse de vidéo par modèle : sans rapport, cité seulement pour écarter la confusion de vocabulaire
 - Repo : https://github.com/yuliskov/SmartTube
 - Site : https://smarttubeapp.github.io

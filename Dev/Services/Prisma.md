@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[Dev/Services/SQLAlchemy|SQLAlchemy]]", "[[Dev/Services/SQLModel|SQLModel]]"]
+alternatives: ["[[SQLAlchemy]]", "[[SQLModel]]"]
 complements: []
 tags: [orm, relational]
 url_docs: https://www.prisma.io/docs
@@ -29,7 +29,7 @@ ORM de l'écosystème Node/TypeScript. Un fichier `schema.prisma` déclaratif d�
 
 ## Quand NE PAS l'utiliser
 
-- Stack Python ([[Dev/Services/FastAPI|FastAPI]], data/ML) → privilégier un ORM Python ([[Dev/Services/SQLAlchemy|SQLAlchemy]]) ou un outil de migration dédié comme [[Dev/Services/Liquibase|Liquibase]] / [[Dev/Services/Flyway|Flyway]].
+- Stack Python ([[FastAPI]], data/ML) → privilégier un ORM Python ([[SQLAlchemy]]) ou un outil de migration dédié comme [[Liquibase]] / [[Flyway]].
 - Besoin de SQL très fin / fonctionnalités spécifiques d'un moteur que l'ORM masque.
 
 ## Déploiement & coût
@@ -44,8 +44,8 @@ ORM de l'écosystème Node/TypeScript. Un fichier `schema.prisma` déclaratif d�
 
 ## Alternatives
 
-- [[Dev/Services/SQLAlchemy|SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
-- [[Dev/Services/SQLModel|SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
+- [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
+- [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
 ## Liens
 

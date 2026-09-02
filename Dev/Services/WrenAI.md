@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python, Rust
 scaling: single-node
-alternatives: ["[[Dev/Services/Vanna|Vanna]]", "[[Dev/Services/DB-GPT|DB-GPT]]"]
+alternatives: ["[[Vanna]]", "[[DB-GPT]]"]
 complements: []
 tags: [text-to-sql, llm, agents, dashboard]
 url_docs: https://docs.getwren.ai
@@ -31,9 +31,9 @@ WrenAI est une plateforme **GenBI** (Generative Business Intelligence — BI gé
 
 ## Quand NE PAS l'utiliser
 
-- Simple brique à embarquer dans une app Python → [[Dev/Services/Vanna|Vanna]].
-- Refus de la surcharge d'une couche sémantique à modéliser (le MDL est à écrire et maintenir) → [[Dev/Services/Vanna|Vanna]].
-- Besoin de fine-tuning de modèles Text2SQL ou de workflows agents très custom → [[Dev/Services/DB-GPT|DB-GPT]].
+- Simple brique à embarquer dans une app Python → [[Vanna]].
+- Refus de la surcharge d'une couche sémantique à modéliser (le MDL est à écrire et maintenir) → [[Vanna]].
+- Besoin de fine-tuning de modèles Text2SQL ou de workflows agents très custom → [[DB-GPT]].
 
 ## Déploiement & coût
 
@@ -49,11 +49,11 @@ WrenAI est une plateforme **GenBI** (Generative Business Intelligence — BI gé
 
 ## Alternatives
 
-- [[Dev/Services/Vanna|Vanna]] — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
-- [[Dev/Services/DB-GPT|DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
+- [[Vanna]] — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
+- [[DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
 
 ## Liens
 
 - [[Text-to-SQL]] — concept parent : traduire une question en langage naturel en SQL exécutable.
-- [[Dev/Patterns/Comparatif - Frameworks text-to-SQL|Comparatif - Frameworks text-to-SQL]]
+- [[Comparatif - Frameworks text-to-SQL]]
 - Repo : https://github.com/Canner/WrenAI · Docs : https://docs.getwren.ai

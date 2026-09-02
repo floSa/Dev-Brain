@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/dynaconf|dynaconf]]", "[[Dev/Services/hydra|hydra]]", "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"]
+alternatives: ["[[dynaconf]]", "[[hydra]]", "[[Pydantic Settings]]"]
 complements: []
 tags: [config]
 url_docs: https://github.com/theskumar/python-dotenv#readme
@@ -29,9 +29,9 @@ Bibliothèque minimale qui **lit un fichier `.env`** (paires `CLÉ=valeur`) et l
 
 ## Quand NE PAS l'utiliser
 
-- Validation et typage des valeurs chargées → [[Dev/Services/Pydantic Settings|Pydantic Settings]].
-- Couches multi-environnements, formats multiples et secrets externes → [[Dev/Services/dynaconf|dynaconf]].
-- Composition hiérarchique d'expériences avec overrides CLI → [[Dev/Services/hydra|hydra]].
+- Validation et typage des valeurs chargées → [[Pydantic Settings]].
+- Couches multi-environnements, formats multiples et secrets externes → [[dynaconf]].
+- Composition hiérarchique d'expériences avec overrides CLI → [[hydra]].
 
 ## Déploiement & coût
 
@@ -46,9 +46,9 @@ Bibliothèque minimale qui **lit un fichier `.env`** (paires `CLÉ=valeur`) et l
 
 ## Alternatives
 
-- [[Dev/Services/dynaconf|dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
-- [[Dev/Services/hydra|hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
-- [[Dev/Services/Pydantic Settings|Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
+- [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
+- [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
+- [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
 ## Liens
 

@@ -2655,11 +2655,11 @@
         "version-control"
       ],
       "alternatives": [
-        "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/Cline|Cline]]",
-        "[[Dev/Outils/freebuff|freebuff]]",
-        "[[Dev/Outils/t3code|t3code]]",
-        "[[Dev/Outils/pi|pi]]"
+        "[[Continue]]",
+        "[[Cline]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
       ],
       "complements": [],
       "maturite": null
@@ -2685,10 +2685,10 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Outils/Mermaid|Mermaid]]",
-        "[[Dev/Outils/draw.io|draw.io]]",
-        "[[Dev/Outils/Excalidraw|Excalidraw]]",
-        "[[Dev/Outils/FossFLOW|FossFLOW]]"
+        "[[Mermaid]]",
+        "[[draw.io]]",
+        "[[Excalidraw]]",
+        "[[FossFLOW]]"
       ],
       "complements": [],
       "maturite": null
@@ -2716,7 +2716,7 @@
         "code-generation"
       ],
       "alternatives": [
-        "[[Dev/Outils/Spec Kit|Spec Kit]]"
+        "[[Spec Kit]]"
       ],
       "complements": [],
       "maturite": null
@@ -2741,7 +2741,7 @@
         "version-control"
       ],
       "alternatives": [
-        "[[Dev/Outils/Postman|Postman]]"
+        "[[Postman]]"
       ],
       "complements": [],
       "maturite": null
@@ -2790,11 +2790,11 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/freebuff|freebuff]]",
-        "[[Dev/Outils/t3code|t3code]]",
-        "[[Dev/Outils/pi|pi]]"
+        "[[Continue]]",
+        "[[Aider]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
       ],
       "complements": [],
       "maturite": null
@@ -2821,11 +2821,11 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/Cline|Cline]]",
-        "[[Dev/Outils/freebuff|freebuff]]",
-        "[[Dev/Outils/t3code|t3code]]",
-        "[[Dev/Outils/pi|pi]]"
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[freebuff]]",
+        "[[t3code]]",
+        "[[pi]]"
       ],
       "complements": [],
       "maturite": null
@@ -2849,12 +2849,12 @@
         "nosql"
       ],
       "alternatives": [
-        "[[Dev/Outils/DataGrip|DataGrip]]",
-        "[[Dev/Outils/HeidiSQL|HeidiSQL]]",
-        "[[Dev/Outils/pgAdmin|pgAdmin]]",
-        "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]",
-        "[[Dev/Outils/MongoDB Compass|MongoDB Compass]]",
-        "[[Dev/Outils/Redis Insight|Redis Insight]]"
+        "[[DataGrip]]",
+        "[[HeidiSQL]]",
+        "[[pgAdmin]]",
+        "[[MySQL Workbench]]",
+        "[[MongoDB Compass]]",
+        "[[Redis Insight]]"
       ],
       "complements": [],
       "maturite": null
@@ -2878,8 +2878,8 @@
         "nosql"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]",
-        "[[Dev/Outils/HeidiSQL|HeidiSQL]]"
+        "[[DBeaver]]",
+        "[[HeidiSQL]]"
       ],
       "complements": [],
       "maturite": null
@@ -2900,8 +2900,8 @@
         "whiteboard"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]",
-        "[[Dev/Outils/Archify|Archify]]"
+        "[[draw.io]]",
+        "[[Archify]]"
       ],
       "complements": [],
       "maturite": null
@@ -2921,7 +2921,7 @@
         "design-tool"
       ],
       "alternatives": [
-        "[[Dev/Outils/Penpot|Penpot]]"
+        "[[Penpot]]"
       ],
       "complements": [],
       "maturite": null
@@ -2943,8 +2943,8 @@
         "isometric"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]",
-        "[[Dev/Outils/Archify|Archify]]"
+        "[[draw.io]]",
+        "[[Archify]]"
       ],
       "complements": [],
       "maturite": null
@@ -2970,7 +2970,7 @@
         "context-engineering"
       ],
       "alternatives": [
-        "[[Dev/Outils/ai-memory|ai-memory]]"
+        "[[ai-memory]]"
       ],
       "complements": [],
       "maturite": null
@@ -2993,9 +2993,9 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]",
-        "[[Dev/Outils/DataGrip|DataGrip]]",
-        "[[Dev/Outils/MySQL Workbench|MySQL Workbench]]"
+        "[[DBeaver]]",
+        "[[DataGrip]]",
+        "[[MySQL Workbench]]"
       ],
       "complements": [],
       "maturite": null
@@ -3022,8 +3022,8 @@
         "code-assistant"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenHands|OpenHands]]",
-        "[[Dev/Outils/t3code|t3code]]"
+        "[[OpenHands]]",
+        "[[t3code]]"
       ],
       "complements": [],
       "maturite": null
@@ -3046,8 +3046,8 @@
         "diagram-as-code"
       ],
       "alternatives": [
-        "[[Dev/Outils/draw.io|draw.io]]",
-        "[[Dev/Outils/Archify|Archify]]"
+        "[[draw.io]]",
+        "[[Archify]]"
       ],
       "complements": [],
       "maturite": null
@@ -3072,7 +3072,7 @@
         "nosql"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]"
+        "[[DBeaver]]"
       ],
       "complements": [],
       "maturite": null
@@ -3096,8 +3096,8 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]",
-        "[[Dev/Outils/HeidiSQL|HeidiSQL]]"
+        "[[DBeaver]]",
+        "[[HeidiSQL]]"
       ],
       "complements": [],
       "maturite": null
@@ -3161,7 +3161,7 @@
         "design-tool"
       ],
       "alternatives": [
-        "[[Dev/Outils/Figma|Figma]]"
+        "[[Figma]]"
       ],
       "complements": [],
       "maturite": null
@@ -3184,7 +3184,7 @@
         "api-client"
       ],
       "alternatives": [
-        "[[Dev/Outils/Bruno|Bruno]]"
+        "[[Bruno]]"
       ],
       "complements": [],
       "maturite": null
@@ -3209,7 +3209,7 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]"
+        "[[DBeaver]]"
       ],
       "complements": [],
       "maturite": null
@@ -3281,7 +3281,7 @@
         "cli"
       ],
       "alternatives": [
-        "[[Dev/Outils/BMAD|BMAD]]"
+        "[[BMAD]]"
       ],
       "complements": [],
       "maturite": null
@@ -3329,8 +3329,8 @@
         "retrieval"
       ],
       "alternatives": [
-        "[[Dev/Outils/Graphify|Graphify]]",
-        "[[Dev/Services/OpenViking|OpenViking]]"
+        "[[Graphify]]",
+        "[[OpenViking]]"
       ],
       "complements": [],
       "maturite": null
@@ -3377,10 +3377,10 @@
         "diagram"
       ],
       "alternatives": [
-        "[[Dev/Outils/Excalidraw|Excalidraw]]",
-        "[[Dev/Outils/Mermaid|Mermaid]]",
-        "[[Dev/Outils/FossFLOW|FossFLOW]]",
-        "[[Dev/Outils/Archify|Archify]]"
+        "[[Excalidraw]]",
+        "[[Mermaid]]",
+        "[[FossFLOW]]",
+        "[[Archify]]"
       ],
       "complements": [],
       "maturite": null
@@ -3407,10 +3407,10 @@
         "cli"
       ],
       "alternatives": [
-        "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/Cline|Cline]]",
-        "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/pi|pi]]"
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]",
+        "[[pi]]"
       ],
       "complements": [],
       "maturite": null
@@ -3505,7 +3505,7 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Outils/DBeaver|DBeaver]]"
+        "[[DBeaver]]"
       ],
       "complements": [],
       "maturite": null
@@ -3533,10 +3533,10 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/Cline|Cline]]",
-        "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/freebuff|freebuff]]"
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]",
+        "[[freebuff]]"
       ],
       "complements": [],
       "maturite": null
@@ -3583,8 +3583,8 @@
         "version-control"
       ],
       "alternatives": [
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/AutoGen|AutoGen]]"
+        "[[CrewAI]]",
+        "[[AutoGen]]"
       ],
       "complements": [],
       "maturite": null
@@ -3610,10 +3610,10 @@
         "code-generation"
       ],
       "alternatives": [
-        "[[Dev/Outils/Cline|Cline]]",
-        "[[Dev/Outils/Aider|Aider]]",
-        "[[Dev/Outils/Continue|Continue]]",
-        "[[Dev/Outils/Maka|Maka]]"
+        "[[Cline]]",
+        "[[Aider]]",
+        "[[Continue]]",
+        "[[Maka]]"
       ],
       "complements": [],
       "maturite": null
@@ -3831,7 +3831,7 @@
         "columnar"
       ],
       "alternatives": [
-        "[[Dev/Services/connectorx|connectorx]]"
+        "[[connectorx]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3853,11 +3853,11 @@
         "object-storage"
       ],
       "alternatives": [
-        "[[Dev/Services/MinIO|MinIO]]",
-        "[[Dev/Services/Ceph|Ceph]]",
-        "[[Dev/Services/SeaweedFS|SeaweedFS]]",
-        "[[Dev/Services/Garage|Garage]]",
-        "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3879,9 +3879,9 @@
         "reinforcement-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
-        "[[Dev/Services/TF-Agents|TF-Agents]]",
-        "[[Dev/Services/RLax|RLax]]"
+        "[[Stable-Baselines3]]",
+        "[[TF-Agents]]",
+        "[[RLax]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3904,10 +3904,10 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/n8n|n8n]]",
-        "[[Dev/Services/Windmill|Windmill]]",
-        "[[Dev/Services/Zapier|Zapier]]",
-        "[[Dev/Services/gumloop|gumloop]]"
+        "[[n8n]]",
+        "[[Windmill]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3932,12 +3932,12 @@
         "multi-agent"
       ],
       "alternatives": [
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Services/PraisonAI|PraisonAI]]"
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[PraisonAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3959,11 +3959,11 @@
         "experiment-tracking"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]",
-        "[[Dev/Services/Neptune|Neptune]]",
-        "[[Dev/Services/Comet|Comet]]",
-        "[[Dev/Services/ClearML|ClearML]]"
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3986,11 +3986,11 @@
         "scheduler"
       ],
       "alternatives": [
-        "[[Dev/Services/Dagster|Dagster]]",
-        "[[Dev/Services/Prefect|Prefect]]",
-        "[[Dev/Services/Mage|Mage]]",
-        "[[Dev/Services/Kestra|Kestra]]",
-        "[[Dev/Services/Temporal|Temporal]]"
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4011,8 +4011,8 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/Flyway|Flyway]]",
-        "[[Dev/Services/Liquibase|Liquibase]]"
+        "[[Flyway]]",
+        "[[Liquibase]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4035,10 +4035,10 @@
         "embedded"
       ],
       "alternatives": [
-        "[[Dev/Services/hnswlib|hnswlib]]",
-        "[[Dev/Services/Faiss|Faiss]]",
-        "[[Dev/Services/ScaNN|ScaNN]]",
-        "[[Dev/Services/Chroma|Chroma]]"
+        "[[hnswlib]]",
+        "[[Faiss]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4061,8 +4061,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/MongoDB|MongoDB]]",
-        "[[Dev/Services/Redis|Redis]]"
+        "[[MongoDB]]",
+        "[[Redis]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4127,13 +4127,13 @@
         "multi-agent"
       ],
       "alternatives": [
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Outils/swarm-forge|swarm-forge]]",
-        "[[Dev/Services/PraisonAI|PraisonAI]]"
+        "[[CrewAI]]",
+        "[[OpenAI Agents SDK]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[swarm-forge]]",
+        "[[PraisonAI]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -4156,7 +4156,7 @@
         "schema-evolution"
       ],
       "alternatives": [
-        "[[Dev/Services/Parquet|Parquet]]"
+        "[[Parquet]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4181,10 +4181,10 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/TRL|TRL]]",
-        "[[Dev/Services/Unsloth|Unsloth]]",
-        "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
-        "[[Dev/Services/Tunix|Tunix]]"
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4206,12 +4206,12 @@
         "inference"
       ],
       "alternatives": [
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4256,9 +4256,9 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/SHAP|SHAP]]",
-        "[[Dev/Services/interpreto|interpreto]]",
-        "[[Dev/Services/nnsight|nnsight]]"
+        "[[SHAP]]",
+        "[[interpreto]]",
+        "[[nnsight]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4282,9 +4282,9 @@
         "boosting"
       ],
       "alternatives": [
-        "[[Dev/Services/XGBoost|XGBoost]]",
-        "[[Dev/Services/LightGBM|LightGBM]]",
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[XGBoost]]",
+        "[[LightGBM]]",
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4330,11 +4330,11 @@
         "s3-compatible"
       ],
       "alternatives": [
-        "[[Dev/Services/MinIO|MinIO]]",
-        "[[Dev/Services/SeaweedFS|SeaweedFS]]",
-        "[[Dev/Services/Garage|Garage]]",
-        "[[Dev/Services/AWS S3|AWS S3]]",
-        "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+        "[[MinIO]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4357,11 +4357,11 @@
         "embedded"
       ],
       "alternatives": [
-        "[[Dev/Services/LanceDB|LanceDB]]",
-        "[[Dev/Services/Faiss|Faiss]]",
-        "[[Dev/Services/hnswlib|hnswlib]]",
-        "[[Dev/Services/Annoy|Annoy]]",
-        "[[Dev/Services/ScaNN|ScaNN]]"
+        "[[LanceDB]]",
+        "[[Faiss]]",
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[ScaNN]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4388,8 +4388,8 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/darts|darts]]",
-        "[[Dev/Services/Prophet|Prophet]]"
+        "[[darts]]",
+        "[[Prophet]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4413,11 +4413,11 @@
         "orchestration"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]",
-        "[[Dev/Services/Neptune|Neptune]]",
-        "[[Dev/Services/Comet|Comet]]",
-        "[[Dev/Services/Aim|Aim]]"
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[Aim]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4439,7 +4439,7 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/DuckDB|DuckDB]]"
+        "[[DuckDB]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4461,11 +4461,11 @@
         "s3-compatible"
       ],
       "alternatives": [
-        "[[Dev/Services/AWS S3|AWS S3]]",
-        "[[Dev/Services/MinIO|MinIO]]",
-        "[[Dev/Services/Ceph|Ceph]]",
-        "[[Dev/Services/SeaweedFS|SeaweedFS]]",
-        "[[Dev/Services/Garage|Garage]]"
+        "[[AWS S3]]",
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4488,11 +4488,11 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Postgres|Postgres]]",
-        "[[Dev/Services/MySQL|MySQL]]",
-        "[[Dev/Services/MariaDB|MariaDB]]",
-        "[[Dev/Services/SQLite|SQLite]]",
-        "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4515,11 +4515,11 @@
         "model-registry"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]",
-        "[[Dev/Services/Neptune|Neptune]]",
-        "[[Dev/Services/ClearML|ClearML]]",
-        "[[Dev/Services/Aim|Aim]]"
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[ClearML]]",
+        "[[Aim]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4540,9 +4540,9 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/Scrapy|Scrapy]]",
-        "[[Dev/Services/Scrapling|Scrapling]]",
-        "[[Dev/Services/Playwright|Playwright]]"
+        "[[Scrapy]]",
+        "[[Scrapling]]",
+        "[[Playwright]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4566,13 +4566,13 @@
         "multi-agent"
       ],
       "alternatives": [
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Outils/swarm-forge|swarm-forge]]",
-        "[[Dev/Services/PraisonAI|PraisonAI]]"
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]",
+        "[[swarm-forge]]",
+        "[[PraisonAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4593,7 +4593,7 @@
         "array"
       ],
       "alternatives": [
-        "[[Dev/Services/numpy|numpy]]"
+        "[[numpy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4620,8 +4620,8 @@
         "fine-tuning"
       ],
       "alternatives": [
-        "[[Dev/Services/Vanna|Vanna]]",
-        "[[Dev/Services/WrenAI|WrenAI]]"
+        "[[Vanna]]",
+        "[[WrenAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4645,9 +4645,9 @@
         "nlp"
       ],
       "alternatives": [
-        "[[Dev/Services/LangChain|LangChain]]",
-        "[[Dev/Services/LlamaIndex|LlamaIndex]]",
-        "[[Dev/Services/Haystack|Haystack]]"
+        "[[LangChain]]",
+        "[[LlamaIndex]]",
+        "[[Haystack]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4668,11 +4668,11 @@
         "data-pipeline"
       ],
       "alternatives": [
-        "[[Dev/Services/Airflow|Airflow]]",
-        "[[Dev/Services/Prefect|Prefect]]",
-        "[[Dev/Services/Mage|Mage]]",
-        "[[Dev/Services/Kestra|Kestra]]",
-        "[[Dev/Services/Temporal|Temporal]]"
+        "[[Airflow]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4695,9 +4695,9 @@
         "web-framework"
       ],
       "alternatives": [
-        "[[Dev/Services/Streamlit|Streamlit]]",
-        "[[Dev/Services/Shiny for Python|Shiny for Python]]",
-        "[[Dev/Services/Gradio|Gradio]]"
+        "[[Streamlit]]",
+        "[[Shiny for Python]]",
+        "[[Gradio]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4721,12 +4721,12 @@
         "lazy-evaluation"
       ],
       "alternatives": [
-        "[[Dev/Services/pandas|pandas]]",
-        "[[Dev/Services/Polars|Polars]]",
-        "[[Dev/Services/numpy|numpy]]",
-        "[[Dev/Services/Modin|Modin]]",
-        "[[Dev/Services/Spark|Spark]]",
-        "[[Dev/Services/Ray|Ray]]"
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[numpy]]",
+        "[[Modin]]",
+        "[[Spark]]",
+        "[[Ray]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4751,8 +4751,8 @@
         "ai-security"
       ],
       "alternatives": [
-        "[[Dev/Services/E2B|E2B]]",
-        "[[Dev/Services/Modal|Modal]]"
+        "[[E2B]]",
+        "[[Modal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4776,9 +4776,9 @@
         "testing"
       ],
       "alternatives": [
-        "[[Dev/Services/Ragas|Ragas]]",
-        "[[Dev/Services/TruLens|TruLens]]",
-        "[[Dev/Services/promptfoo|promptfoo]]"
+        "[[Ragas]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4805,8 +4805,8 @@
         "mixed-precision"
       ],
       "alternatives": [
-        "[[Dev/Services/accelerate|accelerate]]",
-        "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"
+        "[[accelerate]]",
+        "[[PyTorch Lightning]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4833,8 +4833,8 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]]",
-        "[[Dev/Services/segment-anything|segment-anything]]"
+        "[[Ultralytics YOLO]]",
+        "[[segment-anything]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4859,8 +4859,8 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/Langflow|Langflow]]",
-        "[[Dev/Services/Flowise|Flowise]]"
+        "[[Langflow]]",
+        "[[Flowise]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4902,11 +4902,11 @@
         "layout-analysis"
       ],
       "alternatives": [
-        "[[Dev/Services/Unstructured|Unstructured]]",
-        "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/Marker|Marker]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]",
-        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
+        "[[Unstructured]]",
+        "[[LlamaParse]]",
+        "[[Marker]]",
+        "[[pdf-inspector]]",
+        "[[OpenDataLoader PDF]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4928,7 +4928,7 @@
         "embedded"
       ],
       "alternatives": [
-        "[[Dev/Services/ClickHouse|ClickHouse]]"
+        "[[ClickHouse]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4954,8 +4954,8 @@
         "ai-security"
       ],
       "alternatives": [
-        "[[Dev/Services/Modal|Modal]]",
-        "[[Dev/Services/Daytona|Daytona]]"
+        "[[Modal]]",
+        "[[Daytona]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4978,9 +4978,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Vespa|Vespa]]",
-        "[[Dev/Services/txtai|txtai]]",
-        "[[Dev/Services/Marqo|Marqo]]"
+        "[[Vespa]]",
+        "[[txtai]]",
+        "[[Marqo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5028,10 +5028,10 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/hnswlib|hnswlib]]",
-        "[[Dev/Services/Annoy|Annoy]]",
-        "[[Dev/Services/ScaNN|ScaNN]]",
-        "[[Dev/Services/Chroma|Chroma]]"
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5054,7 +5054,7 @@
         "testing"
       ],
       "alternatives": [
-        "[[Dev/Services/Mimesis|Mimesis]]"
+        "[[Mimesis]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5076,7 +5076,7 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/Prince|Prince]]"
+        "[[Prince]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -5097,7 +5097,7 @@
         "type-hints"
       ],
       "alternatives": [
-        "[[Dev/Services/Flask|Flask]]"
+        "[[Flask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5137,7 +5137,7 @@
         "feature-engineering"
       ],
       "alternatives": [
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5158,7 +5158,7 @@
         "markdown-conversion"
       ],
       "alternatives": [
-        "[[Dev/Services/Maxun|Maxun]]"
+        "[[Maxun]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5178,7 +5178,7 @@
         "web-framework"
       ],
       "alternatives": [
-        "[[Dev/Services/FastAPI|FastAPI]]"
+        "[[FastAPI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5222,8 +5222,8 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/Langflow|Langflow]]",
-        "[[Dev/Services/Dify|Dify]]"
+        "[[Langflow]]",
+        "[[Dify]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5246,8 +5246,8 @@
         "kubernetes"
       ],
       "alternatives": [
-        "[[Dev/Services/ZenML|ZenML]]",
-        "[[Dev/Services/Metaflow|Metaflow]]"
+        "[[ZenML]]",
+        "[[Metaflow]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5268,8 +5268,8 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/Liquibase|Liquibase]]",
-        "[[Dev/Services/Alembic|Alembic]]"
+        "[[Liquibase]]",
+        "[[Alembic]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5292,7 +5292,7 @@
         "transformers"
       ],
       "alternatives": [
-        "[[Dev/Services/spaCy|spaCy]]"
+        "[[spaCy]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -5313,11 +5313,11 @@
         "s3-compatible"
       ],
       "alternatives": [
-        "[[Dev/Services/MinIO|MinIO]]",
-        "[[Dev/Services/SeaweedFS|SeaweedFS]]",
-        "[[Dev/Services/Ceph|Ceph]]",
-        "[[Dev/Services/AWS S3|AWS S3]]",
-        "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+        "[[MinIO]]",
+        "[[SeaweedFS]]",
+        "[[Ceph]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5358,9 +5358,9 @@
         "web-framework"
       ],
       "alternatives": [
-        "[[Dev/Services/Streamlit|Streamlit]]",
-        "[[Dev/Services/Dash|Dash]]",
-        "[[Dev/Services/Shiny for Python|Shiny for Python]]"
+        "[[Streamlit]]",
+        "[[Dash]]",
+        "[[Shiny for Python]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5404,7 +5404,7 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/Outlines|Outlines]]"
+        "[[Outlines]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5427,7 +5427,7 @@
         "reinforcement-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenSpiel|OpenSpiel]]"
+        "[[OpenSpiel]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5471,9 +5471,9 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Services/LangChain|LangChain]]",
-        "[[Dev/Services/LlamaIndex|LlamaIndex]]",
-        "[[Dev/Services/DSPy|DSPy]]"
+        "[[LangChain]]",
+        "[[LlamaIndex]]",
+        "[[DSPy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5520,9 +5520,9 @@
         "tracing"
       ],
       "alternatives": [
-        "[[Dev/Services/Langfuse|Langfuse]]",
-        "[[Dev/Services/LangSmith|LangSmith]]",
-        "[[Dev/Services/Phoenix Arize|Phoenix Arize]]"
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5546,9 +5546,9 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenClaw|OpenClaw]]",
-        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]",
-        "[[Dev/Services/OpenViking|OpenViking]]"
+        "[[OpenClaw]]",
+        "[[LM Studio Bionic]]",
+        "[[OpenViking]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5599,8 +5599,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Optuna|Optuna]]",
-        "[[Dev/Services/Ray Tune|Ray Tune]]"
+        "[[Optuna]]",
+        "[[Ray Tune]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5621,7 +5621,7 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[Dev/Services/TimescaleDB|TimescaleDB]]"
+        "[[TimescaleDB]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5645,7 +5645,7 @@
         "type-hints"
       ],
       "alternatives": [
-        "[[Dev/Services/PydanticAI|PydanticAI]]"
+        "[[PydanticAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5670,8 +5670,8 @@
         "array"
       ],
       "alternatives": [
-        "[[Dev/Services/PyTorch|PyTorch]]",
-        "[[Dev/Services/TensorFlow|TensorFlow]]"
+        "[[PyTorch]]",
+        "[[TensorFlow]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5713,12 +5713,12 @@
         "kubernetes"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5742,7 +5742,7 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"
+        "[[PyTorch Lightning]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5764,11 +5764,11 @@
         "declarative-config"
       ],
       "alternatives": [
-        "[[Dev/Services/Airflow|Airflow]]",
-        "[[Dev/Services/Dagster|Dagster]]",
-        "[[Dev/Services/Prefect|Prefect]]",
-        "[[Dev/Services/Mage|Mage]]",
-        "[[Dev/Services/Temporal|Temporal]]"
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5793,9 +5793,9 @@
         "autograd"
       ],
       "alternatives": [
-        "[[Dev/Services/albumentations|albumentations]]",
-        "[[Dev/Services/torchvision|torchvision]]",
-        "[[Dev/Services/OpenCV|OpenCV]]"
+        "[[albumentations]]",
+        "[[torchvision]]",
+        "[[OpenCV]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5817,8 +5817,8 @@
         "supervised"
       ],
       "alternatives": [
-        "[[Dev/Services/SHAP|SHAP]]",
-        "[[Dev/Services/interpreto|interpreto]]"
+        "[[SHAP]]",
+        "[[interpreto]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -5846,10 +5846,10 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/TRL|TRL]]",
-        "[[Dev/Services/Unsloth|Unsloth]]",
-        "[[Dev/Services/Axolotl|Axolotl]]",
-        "[[Dev/Services/Tunix|Tunix]]"
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5876,8 +5876,8 @@
         "code-generation"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenClaw|OpenClaw]]",
-        "[[Dev/Services/Hermes Agent|Hermes Agent]]"
+        "[[OpenClaw]]",
+        "[[Hermes Agent]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5903,13 +5903,13 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5933,7 +5933,7 @@
         "columnar"
       ],
       "alternatives": [
-        "[[Dev/Services/Chroma|Chroma]]"
+        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5960,7 +5960,7 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Dev/Services/LlamaIndex NLSQLTableQueryEngine|LlamaIndex NLSQLTableQueryEngine]]"
+        "[[LlamaIndex NLSQLTableQueryEngine]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5984,11 +5984,11 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Dev/Services/LlamaIndex|LlamaIndex]]",
-        "[[Dev/Services/Haystack|Haystack]]",
-        "[[Dev/Services/DSPy|DSPy]]",
-        "[[Dev/Services/Semantic Kernel|Semantic Kernel]]",
-        "[[Dev/Services/PydanticAI|PydanticAI]]"
+        "[[LlamaIndex]]",
+        "[[Haystack]]",
+        "[[DSPy]]",
+        "[[Semantic Kernel]]",
+        "[[PydanticAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6032,9 +6032,9 @@
         "llm-eval"
       ],
       "alternatives": [
-        "[[Dev/Services/Langfuse|Langfuse]]",
-        "[[Dev/Services/Phoenix Arize|Phoenix Arize]]",
-        "[[Dev/Services/Helicone|Helicone]]"
+        "[[Langfuse]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6058,8 +6058,8 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/Dify|Dify]]",
-        "[[Dev/Services/Flowise|Flowise]]"
+        "[[Dify]]",
+        "[[Flowise]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6082,9 +6082,9 @@
         "llm-eval"
       ],
       "alternatives": [
-        "[[Dev/Services/LangSmith|LangSmith]]",
-        "[[Dev/Services/Phoenix Arize|Phoenix Arize]]",
-        "[[Dev/Services/Helicone|Helicone]]"
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6108,12 +6108,12 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/OpenViking|OpenViking]]"
+        "[[Agno]]",
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[smolagents]]",
+        "[[OpenViking]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6139,9 +6139,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/XGBoost|XGBoost]]",
-        "[[Dev/Services/CatBoost|CatBoost]]",
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[XGBoost]]",
+        "[[CatBoost]]",
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6162,8 +6162,8 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/Flyway|Flyway]]",
-        "[[Dev/Services/Alembic|Alembic]]"
+        "[[Flyway]]",
+        "[[Alembic]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6186,8 +6186,8 @@
         "inference"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenRouter|OpenRouter]]",
-        "[[Dev/Services/OmniRoute|OmniRoute]]"
+        "[[OpenRouter]]",
+        "[[OmniRoute]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6214,7 +6214,7 @@
         "retrieval"
       ],
       "alternatives": [
-        "[[Dev/Services/LangChain SQL agent|LangChain SQL agent]]"
+        "[[LangChain SQL agent]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6241,9 +6241,9 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Services/LangChain|LangChain]]",
-        "[[Dev/Services/Haystack|Haystack]]",
-        "[[Dev/Services/DSPy|DSPy]]"
+        "[[LangChain]]",
+        "[[Haystack]]",
+        "[[DSPy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6267,9 +6267,9 @@
         "ocr"
       ],
       "alternatives": [
-        "[[Dev/Services/Unstructured|Unstructured]]",
-        "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/Marker|Marker]]"
+        "[[Unstructured]]",
+        "[[Docling]]",
+        "[[Marker]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6311,12 +6311,12 @@
         "model-registry"
       ],
       "alternatives": [
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]",
-        "[[Dev/Services/Neptune|Neptune]]",
-        "[[Dev/Services/Comet|Comet]]",
-        "[[Dev/Services/ClearML|ClearML]]",
-        "[[Dev/Services/Aim|Aim]]",
-        "[[Dev/Services/TensorBoard|TensorBoard]]"
+        "[[Weights & Biases]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]",
+        "[[TensorBoard]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6340,11 +6340,11 @@
         "low-code"
       ],
       "alternatives": [
-        "[[Dev/Services/Airflow|Airflow]]",
-        "[[Dev/Services/Dagster|Dagster]]",
-        "[[Dev/Services/Prefect|Prefect]]",
-        "[[Dev/Services/Kestra|Kestra]]",
-        "[[Dev/Services/Temporal|Temporal]]"
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6364,11 +6364,11 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/MySQL|MySQL]]",
-        "[[Dev/Services/Postgres|Postgres]]",
-        "[[Dev/Services/SQLite|SQLite]]",
-        "[[Dev/Services/CockroachDB|CockroachDB]]",
-        "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+        "[[MySQL]]",
+        "[[Postgres]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6416,11 +6416,11 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/Unstructured|Unstructured]]",
-        "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]",
-        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
+        "[[Unstructured]]",
+        "[[Docling]]",
+        "[[LlamaParse]]",
+        "[[pdf-inspector]]",
+        "[[OpenDataLoader PDF]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6444,9 +6444,9 @@
         "multimodal"
       ],
       "alternatives": [
-        "[[Dev/Services/Vespa|Vespa]]",
-        "[[Dev/Services/txtai|txtai]]",
-        "[[Dev/Services/Elasticsearch|Elasticsearch]]"
+        "[[Vespa]]",
+        "[[txtai]]",
+        "[[Elasticsearch]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -6467,7 +6467,7 @@
         "low-code"
       ],
       "alternatives": [
-        "[[Dev/Services/Firecrawl|Firecrawl]]"
+        "[[Firecrawl]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -6488,8 +6488,8 @@
         "ml-pipeline"
       ],
       "alternatives": [
-        "[[Dev/Services/ZenML|ZenML]]",
-        "[[Dev/Services/Flyte|Flyte]]"
+        "[[ZenML]]",
+        "[[Flyte]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6512,11 +6512,11 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/Postgres|Postgres]]",
-        "[[Dev/Services/MySQL|MySQL]]",
-        "[[Dev/Services/MariaDB|MariaDB]]",
-        "[[Dev/Services/SQLite|SQLite]]",
-        "[[Dev/Services/CockroachDB|CockroachDB]]"
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6538,10 +6538,10 @@
         "ann"
       ],
       "alternatives": [
-        "[[Dev/Services/Weaviate|Weaviate]]",
-        "[[Dev/Services/Qdrant|Qdrant]]",
-        "[[Dev/Services/pgvector|pgvector]]",
-        "[[Dev/Services/Pinecone|Pinecone]]"
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Pinecone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6563,7 +6563,7 @@
         "testing"
       ],
       "alternatives": [
-        "[[Dev/Services/Faker|Faker]]"
+        "[[Faker]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6584,11 +6584,11 @@
         "s3-compatible"
       ],
       "alternatives": [
-        "[[Dev/Services/Ceph|Ceph]]",
-        "[[Dev/Services/SeaweedFS|SeaweedFS]]",
-        "[[Dev/Services/Garage|Garage]]",
-        "[[Dev/Services/AWS S3|AWS S3]]",
-        "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6614,8 +6614,8 @@
         "container"
       ],
       "alternatives": [
-        "[[Dev/Services/E2B|E2B]]",
-        "[[Dev/Services/Daytona|Daytona]]"
+        "[[E2B]]",
+        "[[Daytona]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6637,9 +6637,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/pandas|pandas]]",
-        "[[Dev/Services/Polars|Polars]]",
-        "[[Dev/Services/Dask|Dask]]"
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[Dask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6661,8 +6661,8 @@
         "document-db"
       ],
       "alternatives": [
-        "[[Dev/Services/Redis|Redis]]",
-        "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"
+        "[[Redis]]",
+        "[[Apache Cassandra]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6682,11 +6682,11 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/Postgres|Postgres]]",
-        "[[Dev/Services/MariaDB|MariaDB]]",
-        "[[Dev/Services/SQLite|SQLite]]",
-        "[[Dev/Services/CockroachDB|CockroachDB]]",
-        "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+        "[[Postgres]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6709,7 +6709,7 @@
         "text-classification"
       ],
       "alternatives": [
-        "[[Dev/Services/spaCy|spaCy]]"
+        "[[spaCy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6733,12 +6733,12 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[BentoML]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6761,7 +6761,7 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Neo4j|Neo4j]]"
+        "[[Neo4j]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6783,7 +6783,7 @@
         "graph-db"
       ],
       "alternatives": [
-        "[[Dev/Services/Nebula Graph|Nebula Graph]]"
+        "[[Nebula Graph]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6806,11 +6806,11 @@
         "model-registry"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]",
-        "[[Dev/Services/Comet|Comet]]",
-        "[[Dev/Services/ClearML|ClearML]]",
-        "[[Dev/Services/Aim|Aim]]"
+        "[[MLflow]]",
+        "[[Weights & Biases]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -6836,7 +6836,7 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/TensorRT|TensorRT]]"
+        "[[TensorRT]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6860,14 +6860,14 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
-        "[[Dev/Services/needle|needle]]"
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]",
+        "[[needle]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6891,8 +6891,8 @@
         "context-engineering"
       ],
       "alternatives": [
-        "[[Dev/Services/LiteLLM|LiteLLM]]",
-        "[[Dev/Services/OpenRouter|OpenRouter]]"
+        "[[LiteLLM]]",
+        "[[OpenRouter]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -6918,11 +6918,11 @@
         "multi-agent"
       ],
       "alternatives": [
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/smolagents|smolagents]]",
-        "[[Dev/Services/Letta|Letta]]"
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[Agno]]",
+        "[[smolagents]]",
+        "[[Letta]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6947,7 +6947,7 @@
         "object-tracking"
       ],
       "alternatives": [
-        "[[Dev/Services/Kornia|Kornia]]"
+        "[[Kornia]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6973,8 +6973,8 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/Hermes Agent|Hermes Agent]]",
-        "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]"
+        "[[Hermes Agent]]",
+        "[[LM Studio Bionic]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7002,10 +7002,10 @@
         "accessibility"
       ],
       "alternatives": [
-        "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/Unstructured|Unstructured]]",
-        "[[Dev/Services/Marker|Marker]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+        "[[Docling]]",
+        "[[Unstructured]]",
+        "[[Marker]]",
+        "[[pdf-inspector]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7030,7 +7030,7 @@
         "code-generation"
       ],
       "alternatives": [
-        "[[Dev/Outils/Maka|Maka]]"
+        "[[Maka]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7078,8 +7078,8 @@
         "inference"
       ],
       "alternatives": [
-        "[[Dev/Services/LiteLLM|LiteLLM]]",
-        "[[Dev/Services/OmniRoute|OmniRoute]]"
+        "[[LiteLLM]]",
+        "[[OmniRoute]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7103,7 +7103,7 @@
         "game-theory"
       ],
       "alternatives": [
-        "[[Dev/Services/Gymnasium|Gymnasium]]"
+        "[[Gymnasium]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7129,9 +7129,9 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Services/Hermes Agent|Hermes Agent]]",
-        "[[Dev/Outils/ai-memory|ai-memory]]"
+        "[[Letta]]",
+        "[[Hermes Agent]]",
+        "[[ai-memory]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -7154,9 +7154,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]",
-        "[[Dev/Services/Hyperopt|Hyperopt]]",
-        "[[Dev/Services/Ray Tune|Ray Tune]]"
+        "[[Scikit-Learn]]",
+        "[[Hyperopt]]",
+        "[[Ray Tune]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7179,7 +7179,7 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/Guidance|Guidance]]"
+        "[[Guidance]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7202,7 +7202,7 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/umap-learn|umap-learn]]"
+        "[[umap-learn]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -7225,7 +7225,7 @@
         "olap"
       ],
       "alternatives": [
-        "[[Dev/Services/Avro|Avro]]"
+        "[[Avro]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7251,9 +7251,9 @@
         "tracing"
       ],
       "alternatives": [
-        "[[Dev/Services/Langfuse|Langfuse]]",
-        "[[Dev/Services/LangSmith|LangSmith]]",
-        "[[Dev/Services/Helicone|Helicone]]"
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Helicone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7275,10 +7275,10 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/Weaviate|Weaviate]]",
-        "[[Dev/Services/Qdrant|Qdrant]]",
-        "[[Dev/Services/pgvector|pgvector]]",
-        "[[Dev/Services/Milvus|Milvus]]"
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Milvus]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7299,10 +7299,10 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/curl_cffi|curl_cffi]]",
-        "[[Dev/Services/cloudscraper|cloudscraper]]",
-        "[[Dev/Services/Crawlee|Crawlee]]",
-        "[[Dev/Services/Scrapling|Scrapling]]"
+        "[[curl_cffi]]",
+        "[[cloudscraper]]",
+        "[[Crawlee]]",
+        "[[Scrapling]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7326,9 +7326,9 @@
         "out-of-core"
       ],
       "alternatives": [
-        "[[Dev/Services/pandas|pandas]]",
-        "[[Dev/Services/Modin|Modin]]",
-        "[[Dev/Services/Dask|Dask]]"
+        "[[pandas]]",
+        "[[Modin]]",
+        "[[Dask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7351,11 +7351,11 @@
         "postgres"
       ],
       "alternatives": [
-        "[[Dev/Services/MySQL|MySQL]]",
-        "[[Dev/Services/MariaDB|MariaDB]]",
-        "[[Dev/Services/SQLite|SQLite]]",
-        "[[Dev/Services/CockroachDB|CockroachDB]]",
-        "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[SQLite]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7382,10 +7382,10 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/smolagents|smolagents]]"
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[Agno]]",
+        "[[smolagents]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7406,11 +7406,11 @@
         "data-pipeline"
       ],
       "alternatives": [
-        "[[Dev/Services/Airflow|Airflow]]",
-        "[[Dev/Services/Dagster|Dagster]]",
-        "[[Dev/Services/Mage|Mage]]",
-        "[[Dev/Services/Kestra|Kestra]]",
-        "[[Dev/Services/Temporal|Temporal]]"
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Mage]]",
+        "[[Kestra]]",
+        "[[Temporal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7432,7 +7432,7 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/Fanalysis|Fanalysis]]"
+        "[[Fanalysis]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7454,8 +7454,8 @@
         "relational"
       ],
       "alternatives": [
-        "[[Dev/Services/SQLAlchemy|SQLAlchemy]]",
-        "[[Dev/Services/SQLModel|SQLModel]]"
+        "[[SQLAlchemy]]",
+        "[[SQLModel]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7477,10 +7477,10 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[Dev/Services/statsforecast|statsforecast]]",
-        "[[Dev/Services/neuralforecast|neuralforecast]]",
-        "[[Dev/Services/darts|darts]]",
-        "[[Dev/Services/Chronos|Chronos]]"
+        "[[statsforecast]]",
+        "[[neuralforecast]]",
+        "[[darts]]",
+        "[[Chronos]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7545,7 +7545,7 @@
         "prior"
       ],
       "alternatives": [
-        "[[Dev/Services/Stan|Stan]]"
+        "[[Stan]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7568,8 +7568,8 @@
         "document-parsing"
       ],
       "alternatives": [
-        "[[Dev/Services/pdfplumber|pdfplumber]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+        "[[pdfplumber]]",
+        "[[pdf-inspector]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7591,7 +7591,7 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/STUMPY|STUMPY]]"
+        "[[STUMPY]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7641,9 +7641,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Keras|Keras]]",
-        "[[Dev/Services/accelerate|accelerate]]",
-        "[[Dev/Services/DeepSpeed|DeepSpeed]]"
+        "[[Keras]]",
+        "[[accelerate]]",
+        "[[DeepSpeed]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7668,8 +7668,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/TensorFlow|TensorFlow]]",
-        "[[Dev/Services/JAX|JAX]]"
+        "[[TensorFlow]]",
+        "[[JAX]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7692,7 +7692,7 @@
         "wavelet"
       ],
       "alternatives": [
-        "[[Dev/Services/scipy.signal|scipy.signal]]"
+        "[[scipy.signal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7715,9 +7715,9 @@
         "data-validation"
       ],
       "alternatives": [
-        "[[Dev/Services/dynaconf|dynaconf]]",
-        "[[Dev/Services/hydra|hydra]]",
-        "[[Dev/Services/python-dotenv|python-dotenv]]"
+        "[[dynaconf]]",
+        "[[hydra]]",
+        "[[python-dotenv]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7761,8 +7761,8 @@
         "type-hints"
       ],
       "alternatives": [
-        "[[Dev/Services/Instructor|Instructor]]",
-        "[[Dev/Services/LangChain|LangChain]]"
+        "[[Instructor]]",
+        "[[LangChain]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7784,10 +7784,10 @@
         "ann"
       ],
       "alternatives": [
-        "[[Dev/Services/Weaviate|Weaviate]]",
-        "[[Dev/Services/pgvector|pgvector]]",
-        "[[Dev/Services/Milvus|Milvus]]",
-        "[[Dev/Services/Pinecone|Pinecone]]"
+        "[[Weaviate]]",
+        "[[pgvector]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7849,9 +7849,9 @@
         "reinforcement-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
-        "[[Dev/Services/Acme|Acme]]",
-        "[[Dev/Services/TF-Agents|TF-Agents]]"
+        "[[Stable-Baselines3]]",
+        "[[Acme]]",
+        "[[TF-Agents]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7875,9 +7875,9 @@
         "rag"
       ],
       "alternatives": [
-        "[[Dev/Services/DeepEval|DeepEval]]",
-        "[[Dev/Services/TruLens|TruLens]]",
-        "[[Dev/Services/promptfoo|promptfoo]]"
+        "[[DeepEval]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7901,12 +7901,12 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]"
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7930,8 +7930,8 @@
         "bayesian"
       ],
       "alternatives": [
-        "[[Dev/Services/Optuna|Optuna]]",
-        "[[Dev/Services/Hyperopt|Hyperopt]]"
+        "[[Optuna]]",
+        "[[Hyperopt]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7955,8 +7955,8 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Dask|Dask]]",
-        "[[Dev/Services/Spark|Spark]]"
+        "[[Dask]]",
+        "[[Spark]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7978,8 +7978,8 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/MongoDB|MongoDB]]",
-        "[[Dev/Services/Apache Cassandra|Apache Cassandra]]"
+        "[[MongoDB]]",
+        "[[Apache Cassandra]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8060,8 +8060,8 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/TransformerLens|TransformerLens]]",
-        "[[Dev/Services/interpreto|interpreto]]"
+        "[[TransformerLens]]",
+        "[[interpreto]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8106,13 +8106,13 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8136,9 +8136,9 @@
         "supervised"
       ],
       "alternatives": [
-        "[[Dev/Services/LIME|LIME]]",
-        "[[Dev/Services/interpreto|interpreto]]",
-        "[[Dev/Services/Captum|Captum]]"
+        "[[LIME]]",
+        "[[interpreto]]",
+        "[[Captum]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8160,8 +8160,8 @@
         "type-hints"
       ],
       "alternatives": [
-        "[[Dev/Services/Prisma|Prisma]]",
-        "[[Dev/Services/SQLModel|SQLModel]]"
+        "[[Prisma]]",
+        "[[SQLModel]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8184,8 +8184,8 @@
         "data-validation"
       ],
       "alternatives": [
-        "[[Dev/Services/SQLAlchemy|SQLAlchemy]]",
-        "[[Dev/Services/Prisma|Prisma]]"
+        "[[SQLAlchemy]]",
+        "[[Prisma]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -8207,11 +8207,11 @@
         "embedded"
       ],
       "alternatives": [
-        "[[Dev/Services/Postgres|Postgres]]",
-        "[[Dev/Services/MySQL|MySQL]]",
-        "[[Dev/Services/MariaDB|MariaDB]]",
-        "[[Dev/Services/CockroachDB|CockroachDB]]",
-        "[[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]]"
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[CockroachDB]]",
+        "[[Microsoft SQL Server]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8233,7 +8233,7 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[Dev/Services/PyOD|PyOD]]"
+        "[[PyOD]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8257,10 +8257,10 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/Faiss|Faiss]]",
-        "[[Dev/Services/hnswlib|hnswlib]]",
-        "[[Dev/Services/Annoy|Annoy]]",
-        "[[Dev/Services/Chroma|Chroma]]"
+        "[[Faiss]]",
+        "[[hnswlib]]",
+        "[[Annoy]]",
+        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8284,14 +8284,14 @@
         "model-evaluation"
       ],
       "alternatives": [
-        "[[Dev/Services/XGBoost|XGBoost]]",
-        "[[Dev/Services/LightGBM|LightGBM]]",
-        "[[Dev/Services/CatBoost|CatBoost]]",
-        "[[Dev/Services/Featuretools|Featuretools]]",
-        "[[Dev/Services/category_encoders|category_encoders]]",
-        "[[Dev/Services/Optuna|Optuna]]",
-        "[[Dev/Services/hdbscan|hdbscan]]",
-        "[[Dev/Services/umap-learn|umap-learn]]"
+        "[[XGBoost]]",
+        "[[LightGBM]]",
+        "[[CatBoost]]",
+        "[[Featuretools]]",
+        "[[category_encoders]]",
+        "[[Optuna]]",
+        "[[hdbscan]]",
+        "[[umap-learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8311,9 +8311,9 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/Scrapy|Scrapy]]",
-        "[[Dev/Services/Crawlee|Crawlee]]",
-        "[[Dev/Services/Playwright|Playwright]]"
+        "[[Scrapy]]",
+        "[[Crawlee]]",
+        "[[Playwright]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -8333,8 +8333,8 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/Crawlee|Crawlee]]",
-        "[[Dev/Services/Scrapling|Scrapling]]"
+        "[[Crawlee]]",
+        "[[Scrapling]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8357,11 +8357,11 @@
         "s3-compatible"
       ],
       "alternatives": [
-        "[[Dev/Services/MinIO|MinIO]]",
-        "[[Dev/Services/Ceph|Ceph]]",
-        "[[Dev/Services/Garage|Garage]]",
-        "[[Dev/Services/AWS S3|AWS S3]]",
-        "[[Dev/Services/Cloudflare R2|Cloudflare R2]]"
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[Garage]]",
+        "[[AWS S3]]",
+        "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8384,12 +8384,12 @@
         "kubernetes"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[TorchServe]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8412,7 +8412,7 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Dev/Services/LangChain|LangChain]]"
+        "[[LangChain]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8457,9 +8457,9 @@
         "web-framework"
       ],
       "alternatives": [
-        "[[Dev/Services/Streamlit|Streamlit]]",
-        "[[Dev/Services/Dash|Dash]]",
-        "[[Dev/Services/Gradio|Gradio]]"
+        "[[Streamlit]]",
+        "[[Dash]]",
+        "[[Gradio]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8485,8 +8485,8 @@
         "out-of-core"
       ],
       "alternatives": [
-        "[[Dev/Services/Dask|Dask]]",
-        "[[Dev/Services/Ray|Ray]]"
+        "[[Dask]]",
+        "[[Ray]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8510,9 +8510,9 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/Acme|Acme]]",
-        "[[Dev/Services/TF-Agents|TF-Agents]]",
-        "[[Dev/Services/RLax|RLax]]"
+        "[[Acme]]",
+        "[[TF-Agents]]",
+        "[[RLax]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8537,7 +8537,7 @@
         "markov"
       ],
       "alternatives": [
-        "[[Dev/Services/PyMC|PyMC]]"
+        "[[PyMC]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8580,9 +8580,9 @@
         "web-framework"
       ],
       "alternatives": [
-        "[[Dev/Services/Dash|Dash]]",
-        "[[Dev/Services/Shiny for Python|Shiny for Python]]",
-        "[[Dev/Services/Gradio|Gradio]]"
+        "[[Dash]]",
+        "[[Shiny for Python]]",
+        "[[Gradio]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8604,9 +8604,9 @@
         "reinforcement-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/Stable-Baselines3|Stable-Baselines3]]",
-        "[[Dev/Services/Acme|Acme]]",
-        "[[Dev/Services/RLax|RLax]]"
+        "[[Stable-Baselines3]]",
+        "[[Acme]]",
+        "[[RLax]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8630,13 +8630,13 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8665,10 +8665,10 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/Unsloth|Unsloth]]",
-        "[[Dev/Services/Axolotl|Axolotl]]",
-        "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
-        "[[Dev/Services/Tunix|Tunix]]"
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8691,11 +8691,11 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Airflow|Airflow]]",
-        "[[Dev/Services/Dagster|Dagster]]",
-        "[[Dev/Services/Prefect|Prefect]]",
-        "[[Dev/Services/Mage|Mage]]",
-        "[[Dev/Services/Kestra|Kestra]]"
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Mage]]",
+        "[[Kestra]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8718,8 +8718,8 @@
         "dataviz"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Weights & Biases|Weights & Biases]]"
+        "[[MLflow]]",
+        "[[Weights & Biases]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8743,12 +8743,12 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TorchServe|TorchServe]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TorchServe]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8773,8 +8773,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/PyTorch|PyTorch]]",
-        "[[Dev/Services/JAX|JAX]]"
+        "[[PyTorch]]",
+        "[[JAX]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8800,13 +8800,13 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8833,7 +8833,7 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/ONNX Runtime|ONNX Runtime]]"
+        "[[ONNX Runtime]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8855,7 +8855,7 @@
         "postgres"
       ],
       "alternatives": [
-        "[[Dev/Services/InfluxDB|InfluxDB]]"
+        "[[InfluxDB]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8878,12 +8878,12 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/BentoML|BentoML]]",
-        "[[Dev/Services/NVIDIA Triton|NVIDIA Triton]]",
-        "[[Dev/Services/KServe|KServe]]",
-        "[[Dev/Services/Seldon Core|Seldon Core]]",
-        "[[Dev/Services/TensorFlow Serving|TensorFlow Serving]]",
-        "[[Dev/Services/Ray Serve|Ray Serve]]"
+        "[[BentoML]]",
+        "[[NVIDIA Triton]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[TensorFlow Serving]]",
+        "[[Ray Serve]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -8906,8 +8906,8 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/nnsight|nnsight]]",
-        "[[Dev/Services/SAELens|SAELens]]"
+        "[[nnsight]]",
+        "[[SAELens]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8932,9 +8932,9 @@
         "llm-as-judge"
       ],
       "alternatives": [
-        "[[Dev/Services/Ragas|Ragas]]",
-        "[[Dev/Services/DeepEval|DeepEval]]",
-        "[[Dev/Services/promptfoo|promptfoo]]"
+        "[[Ragas]]",
+        "[[DeepEval]]",
+        "[[promptfoo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8959,10 +8959,10 @@
         "fine-tuning"
       ],
       "alternatives": [
-        "[[Dev/Services/TRL|TRL]]",
-        "[[Dev/Services/Unsloth|Unsloth]]",
-        "[[Dev/Services/Axolotl|Axolotl]]",
-        "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]"
+        "[[TRL]]",
+        "[[Unsloth]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -9011,7 +9011,7 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Detectron2|Detectron2]]"
+        "[[Detectron2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9037,10 +9037,10 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/TRL|TRL]]",
-        "[[Dev/Services/Axolotl|Axolotl]]",
-        "[[Dev/Services/LLaMA-Factory|LLaMA-Factory]]",
-        "[[Dev/Services/Tunix|Tunix]]"
+        "[[TRL]]",
+        "[[Axolotl]]",
+        "[[LLaMA-Factory]]",
+        "[[Tunix]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9063,10 +9063,10 @@
         "ocr"
       ],
       "alternatives": [
-        "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/LlamaParse|LlamaParse]]",
-        "[[Dev/Services/Marker|Marker]]",
-        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
+        "[[Docling]]",
+        "[[LlamaParse]]",
+        "[[Marker]]",
+        "[[OpenDataLoader PDF]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9110,8 +9110,8 @@
         "local-llm"
       ],
       "alternatives": [
-        "[[Dev/Services/WrenAI|WrenAI]]",
-        "[[Dev/Services/DB-GPT|DB-GPT]]"
+        "[[WrenAI]]",
+        "[[DB-GPT]]"
       ],
       "complements": [],
       "maturite": "deprecated"
@@ -9137,9 +9137,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Elasticsearch|Elasticsearch]]",
-        "[[Dev/Services/txtai|txtai]]",
-        "[[Dev/Services/Marqo|Marqo]]"
+        "[[Elasticsearch]]",
+        "[[txtai]]",
+        "[[Marqo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9161,10 +9161,10 @@
         "hybrid-search"
       ],
       "alternatives": [
-        "[[Dev/Services/Qdrant|Qdrant]]",
-        "[[Dev/Services/pgvector|pgvector]]",
-        "[[Dev/Services/Milvus|Milvus]]",
-        "[[Dev/Services/Pinecone|Pinecone]]"
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9208,12 +9208,12 @@
         "model-registry"
       ],
       "alternatives": [
-        "[[Dev/Services/MLflow|MLflow]]",
-        "[[Dev/Services/Neptune|Neptune]]",
-        "[[Dev/Services/Comet|Comet]]",
-        "[[Dev/Services/ClearML|ClearML]]",
-        "[[Dev/Services/Aim|Aim]]",
-        "[[Dev/Services/TensorBoard|TensorBoard]]"
+        "[[MLflow]]",
+        "[[Neptune]]",
+        "[[Comet]]",
+        "[[ClearML]]",
+        "[[Aim]]",
+        "[[TensorBoard]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9236,10 +9236,10 @@
         "orchestration"
       ],
       "alternatives": [
-        "[[Dev/Services/n8n|n8n]]",
-        "[[Dev/Services/Activepieces|Activepieces]]",
-        "[[Dev/Services/Zapier|Zapier]]",
-        "[[Dev/Services/gumloop|gumloop]]"
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9265,8 +9265,8 @@
         "dashboard"
       ],
       "alternatives": [
-        "[[Dev/Services/Vanna|Vanna]]",
-        "[[Dev/Services/DB-GPT|DB-GPT]]"
+        "[[Vanna]]",
+        "[[DB-GPT]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9291,9 +9291,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/LightGBM|LightGBM]]",
-        "[[Dev/Services/CatBoost|CatBoost]]",
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[LightGBM]]",
+        "[[CatBoost]]",
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9315,10 +9315,10 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Services/n8n|n8n]]",
-        "[[Dev/Services/Activepieces|Activepieces]]",
-        "[[Dev/Services/Windmill|Windmill]]",
-        "[[Dev/Services/gumloop|gumloop]]"
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9339,8 +9339,8 @@
         "ml-pipeline"
       ],
       "alternatives": [
-        "[[Dev/Services/Metaflow|Metaflow]]",
-        "[[Dev/Services/Flyte|Flyte]]"
+        "[[Metaflow]]",
+        "[[Flyte]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9365,8 +9365,8 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]",
-        "[[Dev/Services/DeepSpeed|DeepSpeed]]"
+        "[[PyTorch Lightning]]",
+        "[[DeepSpeed]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9391,8 +9391,8 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/torchvision|torchvision]]",
-        "[[Dev/Services/Kornia|Kornia]]"
+        "[[torchvision]]",
+        "[[Kornia]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9415,8 +9415,8 @@
         "interactive-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/plotly|plotly]]",
-        "[[Dev/Services/bokeh|bokeh]]"
+        "[[plotly]]",
+        "[[bokeh]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9439,7 +9439,7 @@
         "search"
       ],
       "alternatives": [
-        "[[Dev/Services/rank-bm25|rank-bm25]]"
+        "[[rank-bm25]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9458,8 +9458,8 @@
         "interactive-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/plotly|plotly]]",
-        "[[Dev/Services/altair|altair]]"
+        "[[plotly]]",
+        "[[altair]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9481,7 +9481,7 @@
         "feature-engineering"
       ],
       "alternatives": [
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9501,8 +9501,8 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/curl_cffi|curl_cffi]]",
-        "[[Dev/Services/Playwright|Playwright]]"
+        "[[curl_cffi]]",
+        "[[Playwright]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9524,7 +9524,7 @@
         "columnar"
       ],
       "alternatives": [
-        "[[Dev/Services/ADBC|ADBC]]"
+        "[[ADBC]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9544,8 +9544,8 @@
         "web-scraping"
       ],
       "alternatives": [
-        "[[Dev/Services/cloudscraper|cloudscraper]]",
-        "[[Dev/Services/Playwright|Playwright]]"
+        "[[cloudscraper]]",
+        "[[Playwright]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9568,11 +9568,11 @@
         "deep-learning"
       ],
       "alternatives": [
-        "[[Dev/Services/Prophet|Prophet]]",
-        "[[Dev/Services/statsforecast|statsforecast]]",
-        "[[Dev/Services/neuralforecast|neuralforecast]]",
-        "[[Dev/Services/pmdarima|pmdarima]]",
-        "[[Dev/Services/Chronos|Chronos]]"
+        "[[Prophet]]",
+        "[[statsforecast]]",
+        "[[neuralforecast]]",
+        "[[pmdarima]]",
+        "[[Chronos]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9640,9 +9640,9 @@
         "config"
       ],
       "alternatives": [
-        "[[Dev/Services/hydra|hydra]]",
-        "[[Dev/Services/python-dotenv|python-dotenv]]",
-        "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
+        "[[hydra]]",
+        "[[python-dotenv]]",
+        "[[Pydantic Settings]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9707,10 +9707,10 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Services/n8n|n8n]]",
-        "[[Dev/Services/Activepieces|Activepieces]]",
-        "[[Dev/Services/Windmill|Windmill]]",
-        "[[Dev/Services/Zapier|Zapier]]"
+        "[[n8n]]",
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[Zapier]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9732,7 +9732,7 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"
+        "[[Scikit-Learn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9756,10 +9756,10 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/Faiss|Faiss]]",
-        "[[Dev/Services/Annoy|Annoy]]",
-        "[[Dev/Services/ScaNN|ScaNN]]",
-        "[[Dev/Services/Chroma|Chroma]]"
+        "[[Faiss]]",
+        "[[Annoy]]",
+        "[[ScaNN]]",
+        "[[Chroma]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9780,9 +9780,9 @@
         "config"
       ],
       "alternatives": [
-        "[[Dev/Services/dynaconf|dynaconf]]",
-        "[[Dev/Services/python-dotenv|python-dotenv]]",
-        "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
+        "[[dynaconf]]",
+        "[[python-dotenv]]",
+        "[[Pydantic Settings]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9827,10 +9827,10 @@
         "nlp"
       ],
       "alternatives": [
-        "[[Dev/Services/SHAP|SHAP]]",
-        "[[Dev/Services/LIME|LIME]]",
-        "[[Dev/Services/Captum|Captum]]",
-        "[[Dev/Services/SAELens|SAELens]]"
+        "[[SHAP]]",
+        "[[LIME]]",
+        "[[Captum]]",
+        "[[SAELens]]"
       ],
       "complements": [],
       "maturite": "experimental"
@@ -9896,7 +9896,7 @@
         "feature-engineering"
       ],
       "alternatives": [
-        "[[Dev/Services/scipy.signal|scipy.signal]]"
+        "[[scipy.signal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9939,14 +9939,14 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]",
-        "[[Dev/Services/needle|needle]]"
+        "[[Ollama]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]",
+        "[[needle]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9969,7 +9969,7 @@
         "static-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/seaborn|seaborn]]"
+        "[[seaborn]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10031,8 +10031,8 @@
         "static-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/ydata-profiling|ydata-profiling]]",
-        "[[Dev/Services/sweetviz|sweetviz]]"
+        "[[ydata-profiling]]",
+        "[[sweetviz]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10055,10 +10055,10 @@
         "agents"
       ],
       "alternatives": [
-        "[[Dev/Services/Activepieces|Activepieces]]",
-        "[[Dev/Services/Windmill|Windmill]]",
-        "[[Dev/Services/Zapier|Zapier]]",
-        "[[Dev/Services/gumloop|gumloop]]"
+        "[[Activepieces]]",
+        "[[Windmill]]",
+        "[[Zapier]]",
+        "[[gumloop]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10084,8 +10084,8 @@
         "structured-output"
       ],
       "alternatives": [
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/Ollama|Ollama]]"
+        "[[llama.cpp]]",
+        "[[Ollama]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -10108,9 +10108,9 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/statsforecast|statsforecast]]",
-        "[[Dev/Services/darts|darts]]",
-        "[[Dev/Services/Prophet|Prophet]]"
+        "[[statsforecast]]",
+        "[[darts]]",
+        "[[Prophet]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10133,8 +10133,8 @@
         "llm"
       ],
       "alternatives": [
-        "[[Dev/Services/TransformerLens|TransformerLens]]",
-        "[[Dev/Services/Captum|Captum]]"
+        "[[TransformerLens]]",
+        "[[Captum]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -10156,9 +10156,9 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/xarray|xarray]]",
-        "[[Dev/Services/Dask|Dask]]",
-        "[[Dev/Services/CuPy|CuPy]]"
+        "[[xarray]]",
+        "[[Dask]]",
+        "[[CuPy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10179,9 +10179,9 @@
         "in-memory"
       ],
       "alternatives": [
-        "[[Dev/Services/Polars|Polars]]",
-        "[[Dev/Services/Modin|Modin]]",
-        "[[Dev/Services/Dask|Dask]]"
+        "[[Polars]]",
+        "[[Modin]]",
+        "[[Dask]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10226,11 +10226,11 @@
         "layout-analysis"
       ],
       "alternatives": [
-        "[[Dev/Services/PyMuPDF|PyMuPDF]]",
-        "[[Dev/Services/pdfplumber|pdfplumber]]",
-        "[[Dev/Services/Docling|Docling]]",
-        "[[Dev/Services/Marker|Marker]]",
-        "[[Dev/Services/OpenDataLoader PDF|OpenDataLoader PDF]]"
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]",
+        "[[Docling]]",
+        "[[Marker]]",
+        "[[OpenDataLoader PDF]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -10253,8 +10253,8 @@
         "document-parsing"
       ],
       "alternatives": [
-        "[[Dev/Services/PyMuPDF|PyMuPDF]]",
-        "[[Dev/Services/pdf-inspector|pdf-inspector]]"
+        "[[PyMuPDF]]",
+        "[[pdf-inspector]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10277,10 +10277,10 @@
         "postgres"
       ],
       "alternatives": [
-        "[[Dev/Services/Weaviate|Weaviate]]",
-        "[[Dev/Services/Qdrant|Qdrant]]",
-        "[[Dev/Services/Milvus|Milvus]]",
-        "[[Dev/Services/Pinecone|Pinecone]]"
+        "[[Weaviate]]",
+        "[[Qdrant]]",
+        "[[Milvus]]",
+        "[[Pinecone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10302,8 +10302,8 @@
         "parametric-test"
       ],
       "alternatives": [
-        "[[Dev/Services/scipy.stats|scipy.stats]]",
-        "[[Dev/Services/statsmodels|statsmodels]]"
+        "[[scipy.stats]]",
+        "[[statsmodels]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10321,7 +10321,7 @@
         "package-manager"
       ],
       "alternatives": [
-        "[[Dev/Services/uv|uv]]"
+        "[[uv]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10344,8 +10344,8 @@
         "interactive-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/bokeh|bokeh]]",
-        "[[Dev/Services/altair|altair]]"
+        "[[bokeh]]",
+        "[[altair]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10368,8 +10368,8 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[Dev/Services/statsforecast|statsforecast]]",
-        "[[Dev/Services/darts|darts]]"
+        "[[statsforecast]]",
+        "[[darts]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10393,9 +10393,9 @@
         "ai-security"
       ],
       "alternatives": [
-        "[[Dev/Services/DeepEval|DeepEval]]",
-        "[[Dev/Services/Ragas|Ragas]]",
-        "[[Dev/Services/TruLens|TruLens]]"
+        "[[DeepEval]]",
+        "[[Ragas]]",
+        "[[TruLens]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10474,9 +10474,9 @@
         "config"
       ],
       "alternatives": [
-        "[[Dev/Services/dynaconf|dynaconf]]",
-        "[[Dev/Services/hydra|hydra]]",
-        "[[Dev/Services/Pydantic Settings|Pydantic Settings]]"
+        "[[dynaconf]]",
+        "[[hydra]]",
+        "[[Pydantic Settings]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10522,7 +10522,7 @@
         "search"
       ],
       "alternatives": [
-        "[[Dev/Services/bm25s|bm25s]]"
+        "[[bm25s]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10547,8 +10547,8 @@
         "spectrogram"
       ],
       "alternatives": [
-        "[[Dev/Services/PyWavelets|PyWavelets]]",
-        "[[Dev/Services/librosa|librosa]]"
+        "[[PyWavelets]]",
+        "[[librosa]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10572,8 +10572,8 @@
         "non-parametric"
       ],
       "alternatives": [
-        "[[Dev/Services/statsmodels|statsmodels]]",
-        "[[Dev/Services/pingouin|pingouin]]"
+        "[[statsmodels]]",
+        "[[pingouin]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10595,7 +10595,7 @@
         "static-viz"
       ],
       "alternatives": [
-        "[[Dev/Services/matplotlib|matplotlib]]"
+        "[[matplotlib]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10623,7 +10623,7 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Detectron2|Detectron2]]"
+        "[[Detectron2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10732,12 +10732,12 @@
         "mcp"
       ],
       "alternatives": [
-        "[[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]]",
-        "[[Dev/Services/CrewAI|CrewAI]]",
-        "[[Dev/Services/Agno|Agno]]",
-        "[[Dev/Services/AutoGen|AutoGen]]",
-        "[[Dev/Services/Letta|Letta]]",
-        "[[Dev/Services/PraisonAI|PraisonAI]]"
+        "[[OpenAI Agents SDK]]",
+        "[[CrewAI]]",
+        "[[Agno]]",
+        "[[AutoGen]]",
+        "[[Letta]]",
+        "[[PraisonAI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10761,8 +10761,8 @@
         "tokenization"
       ],
       "alternatives": [
-        "[[Dev/Services/GLiNER|GLiNER]]",
-        "[[Dev/Services/NLTK|NLTK]]"
+        "[[GLiNER]]",
+        "[[NLTK]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10784,10 +10784,10 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Dev/Services/Prophet|Prophet]]",
-        "[[Dev/Services/neuralforecast|neuralforecast]]",
-        "[[Dev/Services/darts|darts]]",
-        "[[Dev/Services/pmdarima|pmdarima]]"
+        "[[Prophet]]",
+        "[[neuralforecast]]",
+        "[[darts]]",
+        "[[pmdarima]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10808,8 +10808,8 @@
         "p-value"
       ],
       "alternatives": [
-        "[[Dev/Services/scipy.stats|scipy.stats]]",
-        "[[Dev/Services/pingouin|pingouin]]"
+        "[[scipy.stats]]",
+        "[[pingouin]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10852,8 +10852,8 @@
         "dataframe"
       ],
       "alternatives": [
-        "[[Dev/Services/ydata-profiling|ydata-profiling]]",
-        "[[Dev/Services/missingno|missingno]]"
+        "[[ydata-profiling]]",
+        "[[missingno]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10899,13 +10899,13 @@
         "quantization"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/vLLM|vLLM]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[vLLM]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10933,7 +10933,7 @@
         "model-hub"
       ],
       "alternatives": [
-        "[[Dev/Services/torchvision|torchvision]]"
+        "[[torchvision]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10960,9 +10960,9 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/timm|timm]]",
-        "[[Dev/Services/albumentations|albumentations]]",
-        "[[Dev/Services/Kornia|Kornia]]"
+        "[[timm]]",
+        "[[albumentations]]",
+        "[[Kornia]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10987,9 +10987,9 @@
         "vector-db"
       ],
       "alternatives": [
-        "[[Dev/Services/Vespa|Vespa]]",
-        "[[Dev/Services/Marqo|Marqo]]",
-        "[[Dev/Services/Elasticsearch|Elasticsearch]]"
+        "[[Vespa]]",
+        "[[Marqo]]",
+        "[[Elasticsearch]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11012,8 +11012,8 @@
         "unsupervised"
       ],
       "alternatives": [
-        "[[Dev/Services/Scikit-Learn|Scikit-Learn]]",
-        "[[Dev/Services/PaCMAP|PaCMAP]]"
+        "[[Scikit-Learn]]",
+        "[[PaCMAP]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11031,7 +11031,7 @@
         "package-manager"
       ],
       "alternatives": [
-        "[[Dev/Services/pip|pip]]"
+        "[[pip]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11054,13 +11054,13 @@
         "gpu"
       ],
       "alternatives": [
-        "[[Dev/Services/Ollama|Ollama]]",
-        "[[Dev/Services/llama.cpp|llama.cpp]]",
-        "[[Dev/Services/LM Studio|LM Studio]]",
-        "[[Dev/Services/text-generation-webui|text-generation-webui]]",
-        "[[Dev/Services/TGI|TGI]]",
-        "[[Dev/Services/SGLang|SGLang]]",
-        "[[Dev/Services/TensorRT-LLM|TensorRT-LLM]]"
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[text-generation-webui]]",
+        "[[TGI]]",
+        "[[SGLang]]",
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11082,7 +11082,7 @@
         "out-of-core"
       ],
       "alternatives": [
-        "[[Dev/Services/numpy|numpy]]"
+        "[[numpy]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11105,8 +11105,8 @@
         "dataframe"
       ],
       "alternatives": [
-        "[[Dev/Services/sweetviz|sweetviz]]",
-        "[[Dev/Services/missingno|missingno]]"
+        "[[sweetviz]]",
+        "[[missingno]]"
       ],
       "complements": [],
       "maturite": "production"

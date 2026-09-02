@@ -49,7 +49,7 @@ tags: [unsupervised, clustering]
 - **[[t-SNE and UMAP]] servent à voir, pas à conclure.** Les distances inter-clusters et les tailles de groupes y sont des artefacts. Ne jamais clusteriser sur des coordonnées t-SNE.
 - Ne pas chercher « le bon nombre de clusters » comme s'il existait. Il dépend de la granularité utile au métier, pas d'un optimum mathématique.
 - Le non supervisé est souvent une **étape**, pas une finalité : segmenter pour ensuite modéliser, réduire pour ensuite classer, détecter pour ensuite étiqueter — et l'étiquetage ainsi amorcé fait basculer en [[Apprentissage supervisé]].
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster / sklearn.decomposition]], [[Dev/Services/umap-learn|umap-learn]], [[Dev/Services/hdbscan|hdbscan]], [[Dev/Services/PyOD|PyOD]] (anomalies), [[Dev/Services/Prince|Prince]] (analyses factorielles).
+- Outils : [[Scikit-Learn|sklearn.cluster / sklearn.decomposition]], [[umap-learn]], [[hdbscan]], [[PyOD]] (anomalies), [[Prince]] (analyses factorielles).
 
 ## Approches voisines & alternatives
 

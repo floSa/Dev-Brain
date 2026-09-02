@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/sweetviz|sweetviz]]", "[[Dev/Services/missingno|missingno]]"]
+alternatives: ["[[sweetviz]]", "[[missingno]]"]
 complements: []
 tags: [eda, data-quality, dataframe]
 url_docs: https://docs.profiling.ydata.ai/
@@ -30,8 +30,8 @@ Outil de référence de l'[[EDA automatisée & profiling|EDA automatisée]] : `P
 
 ## Quand NE PAS l'utiliser
 
-- Rapport centré sur une **cible** ou comparaison train/test plus lisible → [[Dev/Services/sweetviz|sweetviz]].
-- Diagnostic ciblé des seules **valeurs manquantes** (matrice, dendrogramme de nullité) → [[Dev/Services/missingno|missingno]].
+- Rapport centré sur une **cible** ou comparaison train/test plus lisible → [[sweetviz]].
+- Diagnostic ciblé des seules **valeurs manquantes** (matrice, dendrogramme de nullité) → [[missingno]].
 - Très gros jeu en pandas : les corrélations et interactions en $O(p^2)$ rendent le rapport interminable — échantillonner ou désactiver ces calculs (mode `minimal`).
 
 ## Déploiement & coût
@@ -48,11 +48,11 @@ Outil de référence de l'[[EDA automatisée & profiling|EDA automatisée]] : `P
 
 ## Alternatives
 
-- [[Dev/Services/sweetviz|sweetviz]] — EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
-- [[Dev/Services/missingno|missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
+- [[sweetviz]] — EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
+- [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 
 ## Liens
 
 - Concept : [[EDA automatisée & profiling]] — la notion que cet outil incarne.
-- [[Dev/Patterns/Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
+- [[Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
 - Doc : https://docs.profiling.ydata.ai/

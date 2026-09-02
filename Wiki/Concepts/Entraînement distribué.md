@@ -22,7 +22,7 @@ tags: [distributed-training, deep-learning, gpu, memory-optimization]
 
 ### ZeRO & FSDP — sharding des états
 - **ZeRO** (DeepSpeed) supprime la redondance du data parallel en **shardant** les états d'entraînement entre GPU : étape 1 = états de l'optimiseur, 2 = + gradients, 3 = + paramètres. On reconstruit à la volée par communication.
-- **FSDP** (*Fully Sharded Data Parallel*) est l'implémentation native [[Dev/Services/PyTorch|PyTorch]], équivalente à ZeRO-3 : chaque GPU ne détient qu'un **shard** des poids et les rassemble (all-gather) juste avant de calculer la couche.
+- **FSDP** (*Fully Sharded Data Parallel*) est l'implémentation native [[PyTorch]], équivalente à ZeRO-3 : chaque GPU ne détient qu'un **shard** des poids et les rassemble (all-gather) juste avant de calculer la couche.
 
 ### Communication collective
 - Le coût n'est plus le calcul mais l'**échange** : `all-reduce`, `all-gather`, `reduce-scatter` sur NCCL. La bande passante d'interconnexion (NVLink, InfiniBand) devient le facteur limitant à grande échelle.
@@ -37,14 +37,14 @@ tags: [distributed-training, deep-learning, gpu, memory-optimization]
 - Réflexe par défaut : **DDP** tant que le modèle tient sur un GPU — c'est le plus simple et le plus rapide. Passer à **FSDP / ZeRO** seulement quand la VRAM sature.
 - Se combine avec les autres leviers mémoire : [[Mixed precision]] (poids/activations en bf16) et [[Gradient checkpointing]] (activations recalculées) sont quasi systématiques à grande échelle.
 - Pièges : un **batch effectif** qui explose avec le nombre de GPU (ajuster le learning rate) ; des GPU sous-alimentés si le pipeline de données ne suit pas ; un sharding trop agressif dont la communication annule le gain.
-- Surcouches qui masquent la plomberie : [[Dev/Services/PyTorch Lightning|PyTorch Lightning]], [[Dev/Services/accelerate|accelerate]], [[Dev/Services/DeepSpeed|DeepSpeed]].
+- Surcouches qui masquent la plomberie : [[PyTorch Lightning]], [[accelerate]], [[DeepSpeed]].
 
 ## Approches voisines & alternatives
 
 - [[Mixed precision]] — levier mémoire/débit complémentaire, presque toujours activé avec le distribué.
 - [[Gradient checkpointing]] — échange du calcul contre de la mémoire d'activations, combiné à FSDP/ZeRO sur les gros modèles.
-- [[Dev/Services/PyTorch|PyTorch]] — DDP et FSDP natifs (`torch.distributed`, `torch.distributed.fsdp`).
-- [[Dev/Services/DeepSpeed|DeepSpeed]] — implémentation de référence de ZeRO (sharding des états, offload CPU/NVMe, 3D-parallelism).
+- [[PyTorch]] — DDP et FSDP natifs (`torch.distributed`, `torch.distributed.fsdp`).
+- [[DeepSpeed]] — implémentation de référence de ZeRO (sharding des états, offload CPU/NVMe, 3D-parallelism).
 
 ## Pour aller plus loin
 

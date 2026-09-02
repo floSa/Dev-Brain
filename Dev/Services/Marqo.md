@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: deprecated
 langage: Python/Java
 scaling: single-node
-alternatives: ["[[Dev/Services/Vespa|Vespa]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Elasticsearch|Elasticsearch]]"]
+alternatives: ["[[Vespa]]", "[[txtai]]", "[[Elasticsearch]]"]
 complements: []
 tags: [search, vector-db, semantic-search, multimodal]
 url_docs: https://github.com/marqo-ai/marqo
@@ -32,9 +32,9 @@ Moteur de **recherche vectorielle end-to-end** (Apache-2.0) : contrairement à u
 ## Quand NE PAS l'utiliser
 
 - **Tout nouveau projet open-source** : moteur non maintenu, pas de correctifs de sécurité.
-- Recherche + vectoriel maintenue à grande échelle → [[Dev/Services/Vespa|Vespa]] ou [[Dev/Services/Elasticsearch|Elasticsearch]].
-- Recherche sémantique Python embarquée → [[Dev/Services/txtai|txtai]].
-- Embedding maîtrisé côté application + base vectorielle dédiée → [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]].
+- Recherche + vectoriel maintenue à grande échelle → [[Vespa]] ou [[Elasticsearch]].
+- Recherche sémantique Python embarquée → [[txtai]].
+- Embedding maîtrisé côté application + base vectorielle dédiée → [[Qdrant]], [[Weaviate]].
 
 ## Déploiement & coût
 
@@ -50,9 +50,9 @@ Moteur de **recherche vectorielle end-to-end** (Apache-2.0) : contrairement à u
 
 ## Alternatives
 
-- [[Dev/Services/Vespa|Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
-- [[Dev/Services/txtai|txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
+- [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
+- [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
+- [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
 ## Liens
 

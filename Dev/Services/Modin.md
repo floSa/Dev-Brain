@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/pandas|pandas]]", "[[Dev/Services/Polars|Polars]]", "[[Dev/Services/Dask|Dask]]"]
+alternatives: ["[[pandas]]", "[[Polars]]", "[[Dask]]"]
 complements: []
 tags: [dataframe, parallel, distributed]
 url_docs: https://modin.readthedocs.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/modin-project/modin
 
 ## Pourquoi
 
-**Remplaçant transparent de [[Dev/Services/pandas|pandas]]** : on change une ligne d'import (`import modin.pandas as pd`) et le code pandas existant tourne **en parallèle sur tous les cœurs** au lieu d'un seul thread. Modin vise une couverture quasi complète de l'API pandas et délègue l'exécution à un moteur de calcul interchangeable : **Ray**, **Dask** ou **unidist/MPI**. La promesse : un *speedup* immédiat sur une machine, puis un passage au **cluster** sans réécrire la logique.
+**Remplaçant transparent de [[pandas]]** : on change une ligne d'import (`import modin.pandas as pd`) et le code pandas existant tourne **en parallèle sur tous les cœurs** au lieu d'un seul thread. Modin vise une couverture quasi complète de l'API pandas et délègue l'exécution à un moteur de calcul interchangeable : **Ray**, **Dask** ou **unidist/MPI**. La promesse : un *speedup* immédiat sur une machine, puis un passage au **cluster** sans réécrire la logique.
 
 ## Quand l'utiliser
 
@@ -29,9 +29,9 @@ url_repo: https://github.com/modin-project/modin
 
 ## Quand NE PAS l'utiliser
 
-- Projet neuf sans dette pandas, où la performance prime → [[Dev/Services/Polars|Polars]] (plus rapide nativement).
-- Petits jeux de données : la surcharge du moteur parallèle peut être plus lente que [[Dev/Services/pandas|pandas]] seul.
-- Pipeline déjà orchestré en graphes de tâches, calcul array/dataframe distribué de bout en bout → [[Dev/Services/Dask|Dask]] directement.
+- Projet neuf sans dette pandas, où la performance prime → [[Polars]] (plus rapide nativement).
+- Petits jeux de données : la surcharge du moteur parallèle peut être plus lente que [[pandas]] seul.
+- Pipeline déjà orchestré en graphes de tâches, calcul array/dataframe distribué de bout en bout → [[Dask]] directement.
 - Couverture d'une API pandas exotique : Modin retombe sur pandas pour le non-implémenté (sans gain).
 
 ## Déploiement & coût
@@ -49,13 +49,13 @@ url_repo: https://github.com/modin-project/modin
 
 ## Alternatives
 
-- [[Dev/Services/pandas|pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
-- [[Dev/Services/Polars|Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
-- [[Dev/Services/Dask|Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
+- [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
+- [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 
 ## Liens
 
-- API cible : [[Dev/Services/pandas|pandas]] — Modin en est un drop-in replacement.
-- Moteur d'exécution possible : [[Dev/Services/Dask|Dask]] (aussi Ray, unidist/MPI — hors brain pour Ray).
-- [[Dev/Patterns/Comparatif - Manipulation de données]] — Modin vs pandas / Polars / numpy.
+- API cible : [[pandas]] — Modin en est un drop-in replacement.
+- Moteur d'exécution possible : [[Dask]] (aussi Ray, unidist/MPI — hors brain pour Ray).
+- [[Comparatif - Manipulation de données]] — Modin vs pandas / Polars / numpy.
 - Doc : https://modin.readthedocs.io/

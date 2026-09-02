@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/FastAPI|FastAPI]]"]
+alternatives: ["[[FastAPI]]"]
 complements: []
 tags: [web-framework]
 url_docs: https://flask.palletsprojects.com
@@ -30,7 +30,7 @@ Micro-framework web Python **synchrone (WSGI)**. « Micro » ne veut pas dire li
 
 ## Quand NE PAS l'utiliser
 
-- API JSON typée, fort I/O async (BDD async, appels LLM) avec doc OpenAPI automatique → [[Dev/Services/FastAPI|FastAPI]].
+- API JSON typée, fort I/O async (BDD async, appels LLM) avec doc OpenAPI automatique → [[FastAPI]].
 - Besoin d'un framework « batteries incluses » (ORM, admin, auth intégrés) → Django.
 - Charge fortement concurrente I/O-bound où l'async natif change la donne → pile ASGI.
 
@@ -47,9 +47,9 @@ Micro-framework web Python **synchrone (WSGI)**. « Micro » ne veut pas dire li
 
 ## Alternatives
 
-- [[Dev/Services/FastAPI|FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
+- [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
 
 ## Liens
 
-- [[Dev/Services/FastAPI|FastAPI]] — l'alternative async/API-first la plus directe
+- [[FastAPI]] — l'alternative async/API-first la plus directe
 - Doc : https://flask.palletsprojects.com

@@ -19,28 +19,28 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 ### Relationnel (SQL)
 - Données en tables à schéma fixe, reliées par clés ; langage SQL ; transactions **ACID**.
-- Le défaut solide pour la majorité des applications. Implémentations Dev : [[Dev/Services/Postgres|Postgres]], [[Dev/Services/MySQL|MySQL]], [[Dev/Services/MariaDB|MariaDB]], [[Dev/Services/SQLite|SQLite]], [[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]], et le distribué [[Dev/Services/CockroachDB|CockroachDB]].
+- Le défaut solide pour la majorité des applications. Implémentations Dev : [[Postgres]], [[MySQL]], [[MariaDB]], [[SQLite]], [[Microsoft SQL Server]], et le distribué [[CockroachDB]].
 
 ### NoSQL
-- Document (JSON, [[Dev/Services/MongoDB|MongoDB]]), clé-valeur (cache, [[Dev/Services/Redis|Redis]]), wide-column ([[Dev/Services/Apache Cassandra|Apache Cassandra]]).
+- Document (JSON, [[MongoDB]]), clé-valeur (cache, [[Redis]]), wide-column ([[Apache Cassandra]]).
 - Schéma souple et scale horizontal, au prix d'une cohérence souvent relâchée (`BASE` plutôt qu'ACID).
 
 ### Colonne / OLAP
-- Stockage orienté colonnes, optimisé pour l'agrégation analytique sur de gros volumes. Implémentations Dev : [[Dev/Services/ClickHouse|ClickHouse]] (distribué) et [[Dev/Services/DuckDB|DuckDB]] (embarqué) ; managé type BigQuery.
+- Stockage orienté colonnes, optimisé pour l'agrégation analytique sur de gros volumes. Implémentations Dev : [[ClickHouse]] (distribué) et [[DuckDB]] (embarqué) ; managé type BigQuery.
 - À l'opposé du relationnel ligne-à-ligne pensé pour l'OLTP.
 
 ### Graphe
 - Nœuds et arêtes typées ; idéal pour les données fortement connectées et le parcours de relations profondes que SQL exprime mal.
-- Implémentations Dev : [[Dev/Services/Neo4j|Neo4j]] (natif, mono-instance) et le distribué [[Dev/Services/Nebula Graph|Nebula Graph]].
+- Implémentations Dev : [[Neo4j]] (natif, mono-instance) et le distribué [[Nebula Graph]].
 
 ### Vectoriel
 - Stocke des embeddings et retrouve les plus proches par recherche ANN. Détail : [[Bases de données vectorielles]].
 
 ### Temporel
-- Séries temporelles et métriques, optimisé pour l'écriture séquentielle et les fenêtres temporelles. Implémentations Dev : [[Dev/Services/TimescaleDB|TimescaleDB]] (extension Postgres) et [[Dev/Services/InfluxDB|InfluxDB]] (serveur autonome, métriques + IoT).
+- Séries temporelles et métriques, optimisé pour l'écriture séquentielle et les fenêtres temporelles. Implémentations Dev : [[TimescaleDB]] (extension Postgres) et [[InfluxDB]] (serveur autonome, métriques + IoT).
 
 ### Recherche / full-text
-- Indexation de documents pour la recherche plein texte (pertinence, agrégations, logs), souvent en complément d'une base primaire plutôt qu'à sa place. Implémentation Dev : [[Dev/Services/Elasticsearch|Elasticsearch]].
+- Indexation de documents pour la recherche plein texte (pertinence, agrégations, logs), souvent en complément d'une base primaire plutôt qu'à sa place. Implémentation Dev : [[Elasticsearch]].
 
 ## Les maths, simplement
 
@@ -50,26 +50,26 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 ## En pratique
 
-- Démarrer relationnel par défaut ([[Dev/Services/Postgres|Postgres]]) ; ne changer de famille que sur un besoin avéré (échelle, modèle, charge).
+- Démarrer relationnel par défaut ([[Postgres]]) ; ne changer de famille que sur un besoin avéré (échelle, modèle, charge).
 - OLTP (beaucoup de petites transactions) → relationnel ; OLAP (grosses agrégations) → colonne ; relations profondes → graphe ; recherche sémantique → vectoriel.
 - Un même projet combine souvent plusieurs familles (polyglot persistence) : relationnel + cache clé-valeur + vectoriel.
 - Pièges : choisir NoSQL « pour scaler » sans en avoir besoin ; ignorer le coût de cohérence du distribué ; sous-estimer l'outillage et l'écosystème dans le choix.
 
 ## Approches voisines & alternatives
 
-- Implémentations relationnelles (Dev) : [[Dev/Services/Postgres|Postgres]], [[Dev/Services/MySQL|MySQL]], [[Dev/Services/MariaDB|MariaDB]], [[Dev/Services/SQLite|SQLite]], [[Dev/Services/CockroachDB|CockroachDB]], [[Dev/Services/Microsoft SQL Server|Microsoft SQL Server]].
-- Implémentations NoSQL (Dev) : [[Dev/Services/MongoDB|MongoDB]] (document), [[Dev/Services/Redis|Redis]] (clé-valeur), [[Dev/Services/Apache Cassandra|Apache Cassandra]] (wide-column).
-- Implémentations graphe (Dev) : [[Dev/Services/Neo4j|Neo4j]], [[Dev/Services/Nebula Graph|Nebula Graph]] (distribué).
-- Implémentations colonne / OLAP (Dev) : [[Dev/Services/ClickHouse|ClickHouse]] (distribué), [[Dev/Services/DuckDB|DuckDB]] (embarqué).
-- Implémentations temporelles (Dev) : [[Dev/Services/TimescaleDB|TimescaleDB]] (extension Postgres), [[Dev/Services/InfluxDB|InfluxDB]] (serveur autonome).
-- Implémentation recherche / full-text (Dev) : [[Dev/Services/Elasticsearch|Elasticsearch]].
+- Implémentations relationnelles (Dev) : [[Postgres]], [[MySQL]], [[MariaDB]], [[SQLite]], [[CockroachDB]], [[Microsoft SQL Server]].
+- Implémentations NoSQL (Dev) : [[MongoDB]] (document), [[Redis]] (clé-valeur), [[Apache Cassandra]] (wide-column).
+- Implémentations graphe (Dev) : [[Neo4j]], [[Nebula Graph]] (distribué).
+- Implémentations colonne / OLAP (Dev) : [[ClickHouse]] (distribué), [[DuckDB]] (embarqué).
+- Implémentations temporelles (Dev) : [[TimescaleDB]] (extension Postgres), [[InfluxDB]] (serveur autonome).
+- Implémentation recherche / full-text (Dev) : [[Elasticsearch]].
 - Sous-famille spécialisée détaillée : [[Bases de données vectorielles]].
 
 ### Outillage
 
-- Clients GUI / administration (Wiki) : [[Dev/Outils/DBeaver|DBeaver]] (universel), [[Dev/Outils/DataGrip|DataGrip]] (IDE), [[Dev/Outils/HeidiSQL|HeidiSQL]] (Windows léger), [[Dev/Outils/pgAdmin|pgAdmin]] (Postgres), [[Dev/Outils/MySQL Workbench|MySQL Workbench]] (MySQL), [[Dev/Outils/MongoDB Compass|MongoDB Compass]] (Mongo), [[Dev/Outils/Redis Insight|Redis Insight]] (Redis).
-- Évolution du schéma : [[Migrations de schéma]] — outils [[Dev/Services/Liquibase|Liquibase]], [[Dev/Services/Flyway|Flyway]].
-- Accès aux données typé : [[ORM]] — implémentation [[Dev/Services/Prisma|Prisma]].
+- Clients GUI / administration (Wiki) : [[DBeaver]] (universel), [[DataGrip]] (IDE), [[HeidiSQL]] (Windows léger), [[pgAdmin]] (Postgres), [[MySQL Workbench]] (MySQL), [[MongoDB Compass]] (Mongo), [[Redis Insight]] (Redis).
+- Évolution du schéma : [[Migrations de schéma]] — outils [[Liquibase]], [[Flyway]].
+- Accès aux données typé : [[ORM]] — implémentation [[Prisma]].
 
 ## Pour aller plus loin
 

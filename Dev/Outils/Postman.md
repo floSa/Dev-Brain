@@ -9,7 +9,7 @@ domaines: [data-eng, ai-eng]
 licence_type: proprietary
 os: "Windows, macOS, Linux, Web"
 langage: JavaScript (Electron)
-alternatives: ["[[Dev/Outils/Bruno|Bruno]]"]
+alternatives: ["[[Bruno]]"]
 complements: []
 tags: [api-client]
 url_docs: https://learning.postman.com/docs/
@@ -30,8 +30,8 @@ Plateforme complète de développement d'API : composer et envoyer des requêtes
 
 ## Quand NE PAS l'utiliser
 
-- Collections versionnables dans git, 100 % local, sans compte ni cloud → [[Dev/Outils/Bruno|Bruno]].
-- Refus du modèle propriétaire / freemium à quotas : depuis mars 2026 le plan gratuit est limité à **un seul utilisateur**, toute équipe ≥ 2 doit passer au payant → [[Dev/Outils/Bruno|Bruno]].
+- Collections versionnables dans git, 100 % local, sans compte ni cloud → [[Bruno]].
+- Refus du modèle propriétaire / freemium à quotas : depuis mars 2026 le plan gratuit est limité à **un seul utilisateur**, toute équipe ≥ 2 doit passer au payant → [[Bruno]].
 
 ## Bases & plateformes
 
@@ -46,7 +46,7 @@ Plateforme complète de développement d'API : composer et envoyer des requêtes
 
 ## Alternatives
 
-- [[Dev/Outils/Bruno|Bruno]] — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
+- [[Bruno]] — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 
 ## Liens
 

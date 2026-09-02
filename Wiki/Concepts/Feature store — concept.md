@@ -31,7 +31,7 @@ tags: [feature-store, feature-engineering]
 - **Registry** : catalogue partagé des définitions → réutilisation entre modèles et équipes.
 
 ### Ce qu'un feature store n'est pas
-- Pas un moteur de calcul : il **stocke et sert**, la transformation reste à des pipelines en amont (cf. [[Dev/Services/Feast|Feast]]).
+- Pas un moteur de calcul : il **stocke et sert**, la transformation reste à des pipelines en amont (cf. [[Feast]]).
 
 ## En pratique
 
@@ -41,7 +41,7 @@ tags: [feature-store, feature-engineering]
 
 ## Approches voisines & alternatives
 
-- [[Dev/Services/Feast|Feast]] — feature store open-source de référence (couche au-dessus de Redis / BigQuery / Snowflake…).
+- [[Feast]] — feature store open-source de référence (couche au-dessus de Redis / BigQuery / Snowflake…).
 - [[Data leakage]] — ce que le point-in-time correctness empêche (fuite temporelle).
 - [[Monitoring de modèle en production]] — surveille le drift des features servies par le store.
 - [[Encodage des variables catégorielles]] — transformation en amont dont le store sert le résultat.

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Streamlit|Streamlit]]", "[[Dev/Services/Dash|Dash]]", "[[Dev/Services/Shiny for Python|Shiny for Python]]"]
+alternatives: ["[[Streamlit]]", "[[Dash]]", "[[Shiny for Python]]"]
 complements: []
 tags: [ml-demo, web-framework]
 url_docs: https://gradio.app/docs
@@ -29,9 +29,9 @@ Framework de **démos de modèles ML** édité par **Hugging Face** (acquisition
 
 ## Quand NE PAS l'utiliser
 
-- App data généraliste / dashboard analytique, au-delà de la démo modèle → [[Dev/Services/Streamlit|Streamlit]] ou [[Dev/Services/Dash|Dash]].
-- Dashboard multi-pages à interdépendances fines → [[Dev/Services/Dash|Dash]] / [[Dev/Services/Shiny for Python|Shiny for Python]].
-- Besoin d'un modèle réactif fin pour une app complexe → [[Dev/Services/Shiny for Python|Shiny for Python]].
+- App data généraliste / dashboard analytique, au-delà de la démo modèle → [[Streamlit]] ou [[Dash]].
+- Dashboard multi-pages à interdépendances fines → [[Dash]] / [[Shiny for Python]].
+- Besoin d'un modèle réactif fin pour une app complexe → [[Shiny for Python]].
 
 ## Déploiement & coût
 
@@ -48,13 +48,13 @@ Framework de **démos de modèles ML** édité par **Hugging Face** (acquisition
 
 ## Alternatives
 
-- [[Dev/Services/Streamlit|Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
-- [[Dev/Services/Dash|Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
-- [[Dev/Services/Shiny for Python|Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
+- [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
+- [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
+- [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 
 ## Liens
 
-- [[Dev/Patterns/Comparatif - Apps data & démos ML]] — Gradio vs Streamlit / Dash / Shiny.
-- [[Dev/Patterns/Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Dash.
+- [[Comparatif - Apps data & démos ML]] — Gradio vs Streamlit / Dash / Shiny.
+- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Dash.
 - SDK de référence pour Hugging Face Spaces.
 - Doc : https://gradio.app/docs

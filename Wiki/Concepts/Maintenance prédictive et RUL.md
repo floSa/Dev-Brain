@@ -45,7 +45,7 @@ tags: [timeseries, survival-analysis, regression]
 - **Jeux de référence** : NASA **C-MAPSS** (turboréacteurs simulés, défi PHM08), roulements **FEMTO/PRONOSTIA**, batteries lithium (PCoE). Le RUL y est dérivé de runs jusqu'à la panne.
 - **Métriques** : RMSE *et* score asymétrique ; toujours regarder la distribution des erreurs tardives.
 - **Pièges** : fuite temporelle (cf. [[Forecasting framing]]) ; choix de l'étiquette RUL (plateau-linéaire vs linéaire pur) qui change tout ; normalisation par **régime de fonctionnement** (un capteur n'a pas le même niveau à pleine charge) ; gestion des trajectoires censurées ; capteurs manquants ou bruités (cf. [[Imputation des valeurs manquantes]]).
-- **Outils** : [[Dev/Services/lifelines|lifelines]] pour le cadre survie/censure (Kaplan-Meier, Cox) ; [[Dev/Services/STUMPY|STUMPY]] pour repérer des signatures de dégradation (matrix profile) ; [[Dev/Services/darts|darts]] pour les modèles séquentiels et le backtesting ; gradient boosting / sklearn pour la régression sur features.
+- **Outils** : [[lifelines]] pour le cadre survie/censure (Kaplan-Meier, Cox) ; [[STUMPY]] pour repérer des signatures de dégradation (matrix profile) ; [[darts]] pour les modèles séquentiels et le backtesting ; gradient boosting / sklearn pour la régression sur features.
 - **Validation** : en temporel strict, par [[Walk-forward CV]] — jamais entraîner sur des cycles postérieurs au test.
 
 ## Approches voisines & alternatives

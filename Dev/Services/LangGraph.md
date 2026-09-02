@@ -19,7 +19,7 @@ url_repo: https://github.com/langchain-ai/langgraph
 
 ## Pourquoi
 
-Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe [[Dev/Services/LangChain|LangChain]] mais **utilisable seule**. Elle modélise un agent comme un **graphe** de nœuds (étapes) et d'arêtes (transitions, y compris **cycliques** et conditionnelles), avec un **état partagé** persisté entre les pas. Ce modèle bas niveau apporte ce qui manque à une simple chaîne : **reprise après interruption** (checkpoints), **human-in-the-loop**, **mémoire** durable, exécution **streaming** et observabilité des transitions. Inspirée de Pregel/Beam (calcul sur graphes) et de l'API de NetworkX. Se situe **au-dessus de** LangChain dans le stack : LangChain fournit les briques (modèles, outils), LangGraph orchestre leur enchaînement stateful. Écrit en **Python** (portage JS), cœur sous licence **MIT**.
+Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe [[LangChain]] mais **utilisable seule**. Elle modélise un agent comme un **graphe** de nœuds (étapes) et d'arêtes (transitions, y compris **cycliques** et conditionnelles), avec un **état partagé** persisté entre les pas. Ce modèle bas niveau apporte ce qui manque à une simple chaîne : **reprise après interruption** (checkpoints), **human-in-the-loop**, **mémoire** durable, exécution **streaming** et observabilité des transitions. Inspirée de Pregel/Beam (calcul sur graphes) et de l'API de NetworkX. Se situe **au-dessus de** LangChain dans le stack : LangChain fournit les briques (modèles, outils), LangGraph orchestre leur enchaînement stateful. Écrit en **Python** (portage JS), cœur sous licence **MIT**.
 
 ## Quand l'utiliser
 
@@ -30,8 +30,8 @@ Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe 
 
 ## Quand NE PAS l'utiliser
 
-- Chaîne **linéaire simple** ou appel LLM one-shot : la surcouche graphe est inutile → [[Dev/Services/LangChain|LangChain]] (chaînes/LCEL) suffit.
-- App **centrée RAG/données** sans logique d'agent complexe → [[Dev/Services/LlamaIndex|LlamaIndex]] ou [[Dev/Services/Haystack|Haystack]].
+- Chaîne **linéaire simple** ou appel LLM one-shot : la surcouche graphe est inutile → [[LangChain]] (chaînes/LCEL) suffit.
+- App **centrée RAG/données** sans logique d'agent complexe → [[LlamaIndex]] ou [[Haystack]].
 
 ## Déploiement & coût
 
@@ -48,13 +48,13 @@ Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe 
 ## Alternatives
 
 <!-- LangGraph est une couche d'orchestration complémentaire (cf. Liens), pas un substitut direct des frameworks généralistes. -->
-- Pour un besoin d'agent plus léger, les frameworks généralistes ([[Dev/Services/LangChain|LangChain]], [[Dev/Services/LlamaIndex|LlamaIndex]], [[Dev/Services/Haystack|Haystack]]) intègrent leur propre couche d'agents.
+- Pour un besoin d'agent plus léger, les frameworks généralistes ([[LangChain]], [[LlamaIndex]], [[Haystack]]) intègrent leur propre couche d'agents.
 
 ## Liens
 
-- **Au-dessus de** [[Dev/Services/LangChain|LangChain]] : même équipe (LangChain Inc.), orchestre ses briques de façon stateful ; utilisable néanmoins sans LangChain.
-- Même famille de **frameworks d'agents** que [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/AutoGen|AutoGen]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/Agno|Agno]], [[Dev/Services/smolagents|smolagents]] et [[Dev/Services/Letta|Letta]] — mais LangGraph se place en couche d'orchestration bas niveau, **complémentaire** plutôt que substitut.
-- Peut router ses appels via [[Dev/Services/LiteLLM|LiteLLM]] (abstraction multi-fournisseurs).
+- **Au-dessus de** [[LangChain]] : même équipe (LangChain Inc.), orchestre ses briques de façon stateful ; utilisable néanmoins sans LangChain.
+- Même famille de **frameworks d'agents** que [[CrewAI]], [[AutoGen]], [[OpenAI Agents SDK]], [[Agno]], [[smolagents]] et [[Letta]] — mais LangGraph se place en couche d'orchestration bas niveau, **complémentaire** plutôt que substitut.
+- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Multi-agent systems]], [[Tool use patterns]], [[Agent memory]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.langchain.com/oss/python/langgraph/overview

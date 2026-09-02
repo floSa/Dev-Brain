@@ -49,5 +49,5 @@ Bibliothèque de **validation de données** pilotée par les **annotations de ty
 
 ## Liens
 
-- Configuration typée bâtie sur Pydantic : [[Dev/Services/Pydantic Settings|Pydantic Settings]].
+- Configuration typée bâtie sur Pydantic : [[Pydantic Settings]].
 - Doc : https://pydantic.dev/docs/validation/

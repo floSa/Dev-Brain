@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Java/C++
 scaling: distributed
-alternatives: ["[[Dev/Services/Elasticsearch|Elasticsearch]]", "[[Dev/Services/txtai|txtai]]", "[[Dev/Services/Marqo|Marqo]]"]
+alternatives: ["[[Elasticsearch]]", "[[txtai]]", "[[Marqo]]"]
 complements: []
 tags: [search, vector-db, hybrid-search, ranking, distributed]
 url_docs: https://docs.vespa.ai/
@@ -32,8 +32,8 @@ Moteur de **recherche et de serving IA** open-source (Apache-2.0), issu de Yahoo
 
 ## Quand NE PAS l'utiliser
 
-- Petit corpus, besoin simple → la complexité opérationnelle est disproportionnée ; [[Dev/Services/Elasticsearch|Elasticsearch]] ou une base vectorielle dédiée ([[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]]) suffisent.
-- Prototype Python embarqué → [[Dev/Services/txtai|txtai]] ou un index [[Dev/Services/Faiss|Faiss]] en mémoire.
+- Petit corpus, besoin simple → la complexité opérationnelle est disproportionnée ; [[Elasticsearch]] ou une base vectorielle dédiée ([[Qdrant]], [[Weaviate]]) suffisent.
+- Prototype Python embarqué → [[txtai]] ou un index [[Faiss]] en mémoire.
 - Équipe sans appétence pour l'ops : la courbe d'apprentissage (schéma, ranking profiles, déploiement) est raide.
 
 ## Déploiement & coût
@@ -50,9 +50,9 @@ Moteur de **recherche et de serving IA** open-source (Apache-2.0), issu de Yahoo
 
 ## Alternatives
 
-- [[Dev/Services/Elasticsearch|Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
-- [[Dev/Services/txtai|txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
-- [[Dev/Services/Marqo|Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
+- [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
+- [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
+- [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
 
 ## Liens
 

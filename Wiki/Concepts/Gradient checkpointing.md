@@ -41,7 +41,7 @@ tags: [memory-optimization, deep-learning, gpu]
 
 - [[Entraînement distribué]] — sharding mémoire (FSDP/ZeRO) ; complémentaire, agit sur les états plutôt que sur les activations.
 - [[Mixed precision]] — réduit la taille des activations ; cumulable.
-- [[Dev/Services/PyTorch|PyTorch]] — `torch.utils.checkpoint` natif.
+- [[PyTorch]] — `torch.utils.checkpoint` natif.
 
 ## Pour aller plus loin
 

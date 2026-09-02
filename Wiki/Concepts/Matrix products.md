@@ -45,7 +45,7 @@ tags: [linear-algebra]
 - Vectoriser : un produit matriciel via BLAS bat toujours une boucle Python explicite. `A @ B`, `numpy.matmul`, `torch.matmul`.
 - En deep learning, les produits sont *batchés* (tenseurs 3D+) ; surveiller l'ordre des dimensions et le broadcasting.
 - Parenthéser malin : pour $A x$ avec $A = UV$ (rang faible), calculer $U(Vx)$ et non $(UV)x$ économise des ordres de grandeur.
-- Outils : [[Dev/Services/numpy|numpy]] (`@`, `numpy.linalg`), [[Dev/Services/PyTorch|torch]] (`torch.matmul`, `einsum`).
+- Outils : [[numpy]] (`@`, `numpy.linalg`), [[PyTorch|torch]] (`torch.matmul`, `einsum`).
 
 ## Approches voisines & alternatives
 

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/PyTorch Lightning|PyTorch Lightning]]"]
+alternatives: ["[[PyTorch Lightning]]"]
 complements: []
 tags: [deep-learning, gpu]
 url_docs: https://keras.io/
@@ -19,7 +19,7 @@ url_repo: https://github.com/keras-team/keras
 
 ## Pourquoi
 
-API de **deep learning de haut niveau** centrée sur la productivité : on décrit un réseau couche par couche (`Sequential`, API fonctionnelle, sous-classement de `Model`) et `fit` / `evaluate` / `predict` prennent en charge la boucle d'entraînement. Depuis **Keras 3** (réécriture complète), c'est un framework **multi-backend** : le même code s'exécute au choix sur [[Dev/Services/JAX|JAX]], [[Dev/Services/TensorFlow|TensorFlow]] ou [[Dev/Services/PyTorch|PyTorch]] (OpenVINO en inférence seule), via une couche d'ops portable (`keras.ops`, qui réimplémente l'API NumPy). On choisit le backend par variable d'environnement, sans toucher au modèle.
+API de **deep learning de haut niveau** centrée sur la productivité : on décrit un réseau couche par couche (`Sequential`, API fonctionnelle, sous-classement de `Model`) et `fit` / `evaluate` / `predict` prennent en charge la boucle d'entraînement. Depuis **Keras 3** (réécriture complète), c'est un framework **multi-backend** : le même code s'exécute au choix sur [[JAX]], [[TensorFlow]] ou [[PyTorch]] (OpenVINO en inférence seule), via une couche d'ops portable (`keras.ops`, qui réimplémente l'API NumPy). On choisit le backend par variable d'environnement, sans toucher au modèle.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ API de **deep learning de haut niveau** centrée sur la productivité : on décr
 
 ## Quand NE PAS l'utiliser
 
-- Contrôle fin de la boucle d'entraînement ou opérations exotiques → coder directement en [[Dev/Services/PyTorch|PyTorch]] (define-by-run) ou [[Dev/Services/JAX|JAX]].
-- Écosystème de modèles pré-entraînés de recherche → [[Dev/Services/HuggingFace|HuggingFace]] (majoritairement PyTorch).
-- Rester dans PyTorch tout en factorisant l'ingénierie d'entraînement → [[Dev/Services/PyTorch Lightning|PyTorch Lightning]] (mono-backend).
-- Données **tabulaires** → un réseau est rarement le bon choix : [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Contrôle fin de la boucle d'entraînement ou opérations exotiques → coder directement en [[PyTorch]] (define-by-run) ou [[JAX]].
+- Écosystème de modèles pré-entraînés de recherche → [[HuggingFace]] (majoritairement PyTorch).
+- Rester dans PyTorch tout en factorisant l'ingénierie d'entraînement → [[PyTorch Lightning]] (mono-backend).
+- Données **tabulaires** → un réseau est rarement le bon choix : [[XGBoost]], [[Scikit-Learn]].
 
 ## Déploiement & coût
 
@@ -49,13 +49,13 @@ API de **deep learning de haut niveau** centrée sur la productivité : on décr
 
 ## Alternatives
 
-- [[Dev/Services/PyTorch Lightning|PyTorch Lightning]] — Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.
+- [[PyTorch Lightning]] — Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.
 
 Nuance : Keras est une API **multi-backend** complète (définition + entraînement) ; Lightning organise du code **PyTorch** que l'on écrit toujours soi-même.
 
 ## Liens
 
-- [[Dev/Services/TensorFlow|TensorFlow]] — backend historique ; Keras en est l'API de haut niveau intégrée.
-- [[Dev/Services/JAX|JAX]] — backend visé pour la perf et le TPU.
-- [[Dev/Services/PyTorch|PyTorch]] — backend également supporté par Keras 3.
+- [[TensorFlow]] — backend historique ; Keras en est l'API de haut niveau intégrée.
+- [[JAX]] — backend visé pour la perf et le TPU.
+- [[PyTorch]] — backend également supporté par Keras 3.
 - Doc : https://keras.io/

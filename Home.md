@@ -9,18 +9,18 @@ tags: [meta]
 
 ## Hubs (MOC)
 
-- [[MOC/Categories/Bases de données|Bases de données]]
-- [[MOC/Themes/Data Engineering|Data Engineering]]
-- [[MOC/Themes/AI Engineering|AI Engineering]]
-- [[MOC/Types/Patterns|Patterns]] — architectures type
-- [[MOC/Types/Rules|Rules]] — règles transverses
+- [[Bases de données]]
+- [[Data Engineering]]
+- [[AI Engineering]]
+- [[Patterns]] — architectures type
+- [[Rules]] — règles transverses
 
 ## Pilotage
 
-- [[AI/index/brain-index|Index lisible]] — toutes les pages par galaxie / domaine
-- [[AI/index/liens|Carte des liens]] — tags & liens par page, + sujets à créer
+- [[brain-index|Index lisible]] — toutes les pages par galaxie / domaine
+- [[liens|Carte des liens]] — tags & liens par page, + sujets à créer
 - Gouvernance : `Documentation/general/` (tags, taxonomie, themes)
-- Réservoir v1 : [[Documentation/perso/reservoir-v1|Inventaire v1]] (+ `Archive-v1.zip`)
+- Réservoir v1 : [[reservoir-v1|Inventaire v1]] (+ `Archive-v1.zip`)
 
 ## Galaxies
 

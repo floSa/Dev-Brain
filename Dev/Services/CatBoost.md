@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/XGBoost|XGBoost]]", "[[Dev/Services/LightGBM|LightGBM]]", "[[Dev/Services/Scikit-Learn|Scikit-Learn]]"]
+alternatives: ["[[XGBoost]]", "[[LightGBM]]", "[[Scikit-Learn]]"]
 complements: []
 tags: [supervised, tree-based, ensemble, boosting]
 url_docs: https://catboost.ai/docs/
@@ -30,9 +30,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] par Yandex. Deux partis pris
 
 ## Quand NE PAS l'utiliser
 
-- Données purement numériques où la vitesse d'entraînement prime → [[Dev/Services/LightGBM|LightGBM]].
-- Écosystème distribué Spark / Dask / Ray déjà en place → [[Dev/Services/XGBoost|XGBoost]] (intégrations plus matures).
-- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Données purement numériques où la vitesse d'entraînement prime → [[LightGBM]].
+- Écosystème distribué Spark / Dask / Ray déjà en place → [[XGBoost]] (intégrations plus matures).
+- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Scikit-Learn]].
 
 ## Déploiement & coût
 
@@ -48,9 +48,9 @@ Implémentation C++ du [[Gradient Boosting (GBDT)]] par Yandex. Deux partis pris
 
 ## Alternatives
 
-- [[Dev/Services/XGBoost|XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
-- [[Dev/Services/LightGBM|LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
-- [[Dev/Services/Scikit-Learn|Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
+- [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
+- [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
 ## Liens
 

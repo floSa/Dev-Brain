@@ -40,8 +40,8 @@ tags: [knowledge-graph, relation-extraction, ner, llm]
 
 ## En pratique
 
-- Outillage entités : [[Dev/Services/spaCy|spaCy]] (NER industriel rapide), [[Dev/Services/GLiNER|GLiNER]] (NER zero-shot sur types décrits en langage naturel). Pour l'extraction LLM de triplets : [[Dev/Services/LlamaIndex|LlamaIndex]] (*KnowledgeGraphIndex* / *property graph*) et [[Dev/Services/LangChain|LangChain]] (*LLMGraphTransformer*).
-- Stockage : ranger les triplets dans une base de graphes — [[Dev/Services/Neo4j|Neo4j]] (Cypher, contraintes d'unicité pour la déduplication).
+- Outillage entités : [[spaCy]] (NER industriel rapide), [[GLiNER]] (NER zero-shot sur types décrits en langage naturel). Pour l'extraction LLM de triplets : [[LlamaIndex]] (*KnowledgeGraphIndex* / *property graph*) et [[LangChain]] (*LLMGraphTransformer*).
+- Stockage : ranger les triplets dans une base de graphes — [[Neo4j]] (Cypher, contraintes d'unicité pour la déduplication).
 - Verrou qualité : la **résolution d'entités**. Sans elle, le graphe se fragmente en doublons et les parcours multi-hop cassent.
 - Contraindre l'extraction LLM par un **schéma** (liste fermée de types de relations) réduit le bruit et facilite l'interrogation aval.
 - Pièges : ontologie trop fine (ingérable) ou trop floue (inutile) ; relations hallucinées non vérifiées ; reconstruire tout le graphe à chaque mise à jour des données (coûteux) au lieu d'un peuplement incrémental.
@@ -51,7 +51,7 @@ tags: [knowledge-graph, relation-extraction, ner, llm]
 - [[GraphRAG]] — le consommateur direct : interroge le graphe construit ici.
 - [[NER et étiquetage de séquence]] — l'étape d'extraction d'entités, en amont des relations.
 - [[Structured outputs]] — le mécanisme qui contraint la sortie LLM en triplets valides.
-- [[Dev/Services/Neo4j|Neo4j]] — où vit le graphe produit.
+- [[Neo4j]] — où vit le graphe produit.
 - [[embeddings]] — la résolution d'entités s'appuie souvent sur la similarité d'embeddings pour repérer les doublons.
 - Alternative : ne pas construire de graphe et rester en [[RAG]] vectoriel — préférable si les questions ne sont pas relationnelles et que le coût de construction ne se justifie pas.
 

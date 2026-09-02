@@ -41,7 +41,7 @@ tags: [signal-processing, digital-filter]
 
 ## En pratique
 
-- [[Dev/Services/scipy.signal|scipy.signal]] : `butter` + `sosfilt` (format *second-order sections*, stable) ou `filtfilt` (phase nulle) ; `firwin` (FIR) ; `get_window` (fenêtres).
+- [[scipy.signal]] : `butter` + `sosfilt` (format *second-order sections*, stable) ou `filtfilt` (phase nulle) ; `firwin` (FIR) ; `get_window` (fenêtres).
 - **Normaliser la coupure par la fréquence de Nyquist** ($f_s/2$) — erreur classique.
 - **Toujours filtrer passe-bas avant de sous-échantillonner** (anti-aliasing), sinon repliement irréversible.
 

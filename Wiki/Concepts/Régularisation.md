@@ -41,7 +41,7 @@ tags: [regularization, linear-model, supervised]
 - Régler $\lambda$ par validation croisée (`RidgeCV`, `LassoCV`).
 - Lasso instable si variables très corrélées → préférer ElasticNet.
 - S'applique aussi à la [[Régression logistique]] et aux [[GLM]] (déviance pénalisée).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.linear_model.Ridge / Lasso / ElasticNet]].
+- Outils : [[Scikit-Learn|sklearn.linear_model.Ridge / Lasso / ElasticNet]].
 
 ## Approches voisines & alternatives
 

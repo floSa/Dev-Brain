@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: single-node
-alternatives: ["[[Dev/Services/Nebula Graph|Nebula Graph]]"]
+alternatives: ["[[Nebula Graph]]"]
 complements: []
 tags: [graph-db]
 url_docs: https://neo4j.com/docs/
@@ -32,8 +32,8 @@ Base de graphes **native** : les données sont des nœuds reliés par des arête
 
 ## Quand NE PAS l'utiliser
 
-- Données tabulaires peu reliées, transactions classiques → [[Dev/Services/Postgres|Postgres]].
-- Graphe dépassant un seul nœud, besoin de partitionnement horizontal massif → [[Dev/Services/Nebula Graph|Nebula Graph]].
+- Données tabulaires peu reliées, transactions classiques → [[Postgres]].
+- Graphe dépassant un seul nœud, besoin de partitionnement horizontal massif → [[Nebula Graph]].
 - Agrégations analytiques sur de gros volumes → une base colonne/OLAP.
 
 ## Déploiement & coût
@@ -51,13 +51,13 @@ Base de graphes **native** : les données sont des nœuds reliés par des arête
 
 ## Alternatives
 
-- [[Dev/Services/Nebula Graph|Nebula Graph]] — Base de graphes distribuée pour jeux de données massifs.
+- [[Nebula Graph]] — Base de graphes distribuée pour jeux de données massifs.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
+- [[Bases de données]] — le concept (Wiki)
 - [[Comparatif - Bases graphes]] — comparatif des moteurs de graphe
-- [[Wiki/Concepts/GraphRAG|GraphRAG]] — retrieval RAG sur graphe de connaissances, souvent stocké ici
-- [[Wiki/Concepts/Construction de graphes de connaissances|Construction de graphes de connaissances]] — peupler le graphe par extraction d'entités/relations
-- [[Wiki/Concepts/Graph Neural Networks|Graph Neural Networks]] — ML sur graphes, branché sur les données stockées ici
+- [[GraphRAG]] — retrieval RAG sur graphe de connaissances, souvent stocké ici
+- [[Construction de graphes de connaissances]] — peupler le graphe par extraction d'entités/relations
+- [[Graph Neural Networks]] — ML sur graphes, branché sur les données stockées ici
 - Doc : https://neo4j.com/docs/

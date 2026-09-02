@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/Detectron2|Detectron2]]"]
+alternatives: ["[[Detectron2]]"]
 complements: []
 tags: [segmentation, foundation-model, computer-vision, transformers, deep-learning, gpu]
 url_docs: https://segment-anything.com/
@@ -25,13 +25,13 @@ Dépôt officiel de Meta AI pour le **Segment Anything Model (SAM)** — code d'
 
 - **Annotation assistée** : pré-segmenter pour accélérer le labelling de masques.
 - Masques **zero-shot** sur des objets quelconques sans dataset d'entraînement par classe.
-- Brique d'un pipeline plus large : détecteur ([[Dev/Services/Ultralytics YOLO|YOLO]]) qui propose des boîtes → SAM qui en tire les masques.
+- Brique d'un pipeline plus large : détecteur ([[Ultralytics YOLO|YOLO]]) qui propose des boîtes → SAM qui en tire les masques.
 - Segmentation **interactive** pilotée par l'utilisateur (clics, boîtes).
 
 ## Quand NE PAS l'utiliser
 
-- **Classes fixes**, latence serrée, précision sur un domaine donné → un U-Net / DeepLab / Mask R-CNN dédié via [[Dev/Services/Detectron2|Detectron2]] ou [[Dev/Services/torchvision|torchvision]].
-- Besoin de **détecter et nommer** des objets (boîtes + classes) → [[Dev/Services/Ultralytics YOLO|Ultralytics YOLO]] ou [[Détection d'objets|un détecteur]].
+- **Classes fixes**, latence serrée, précision sur un domaine donné → un U-Net / DeepLab / Mask R-CNN dédié via [[Detectron2]] ou [[torchvision]].
+- Besoin de **détecter et nommer** des objets (boîtes + classes) → [[Ultralytics YOLO]] ou [[Détection d'objets|un détecteur]].
 - Contraintes mobiles/temps réel sur l'encodeur lourd → variantes allégées (MobileSAM, FastSAM) plutôt que SAM original.
 
 ## Déploiement & coût
@@ -49,13 +49,13 @@ Dépôt officiel de Meta AI pour le **Segment Anything Model (SAM)** — code d'
 
 ## Alternatives
 
-- [[Dev/Services/Detectron2|Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
+- [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
 
 ## Liens
 
 - [[Segment Anything (SAM)]] — le concept : segmentation promptable, architecture, lignée SAM/SAM 2/SAM 3.
 - [[Segmentation]] — la tâche générale ; SAM en est l'approche fondation / promptable.
 - [[Modèles de fondation vision]] — la famille à laquelle SAM appartient.
-- [[Dev/Services/supervision|supervision]] — connecteur pour exploiter les masques SAM.
-- [[Dev/Services/PyTorch|PyTorch]] / [[Dev/Services/HuggingFace|HuggingFace]] — exécution et poids/démos.
+- [[supervision]] — connecteur pour exploiter les masques SAM.
+- [[PyTorch]] / [[HuggingFace]] — exécution et poids/démos.
 - Repos : `segment-anything` · `sam2` · `sam3` (Meta AI / facebookresearch).

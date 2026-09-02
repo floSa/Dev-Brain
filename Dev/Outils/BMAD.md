@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: JavaScript
-alternatives: ["[[Dev/Outils/Spec Kit|Spec Kit]]"]
+alternatives: ["[[Spec Kit]]"]
 complements: []
 tags: [agent-skill, code-assistant, agents, multi-agent, code-generation]
 url_docs: https://docs.bmad-method.org/
@@ -37,7 +37,7 @@ Dépôt canonique : `bmad-code-org/BMAD-METHOD`. Les nombreux dépôts homonymes
 ## Quand NE PAS l'utiliser
 
 - Petite tâche ou correctif : le cérémonial coûte plus cher que le travail.
-- BMAD ne **remplace pas** l'agent qui code — il le pilote. L'exécution reste chez [[Dev/Outils/Aider|Aider]], [[Dev/Outils/Cline|Cline]] ou [[Dev/Outils/Continue|Continue]].
+- BMAD ne **remplace pas** l'agent qui code — il le pilote. L'exécution reste chez [[Aider]], [[Cline]] ou [[Continue]].
 - Outil de codage autre que Claude Code ou Cursor : la documentation officielle ne cite explicitement que ces deux-là.
 - Chaîne d'outils qu'on veut garder mince : depuis la v6.11, les skills rendus exigent `uv` et Python 3.11+ **en plus** de Node ≥ 20.12.
 
@@ -56,7 +56,7 @@ Dépôt canonique : `bmad-code-org/BMAD-METHOD`. Les nombreux dépôts homonymes
 
 ## Alternatives
 
-- [[Dev/Outils/Spec Kit|Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- [[Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
 
 ## Liens
 

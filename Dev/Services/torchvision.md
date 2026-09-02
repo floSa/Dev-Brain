@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python/C++
-alternatives: ["[[Dev/Services/timm|timm]]", "[[Dev/Services/albumentations|albumentations]]", "[[Dev/Services/Kornia|Kornia]]"]
+alternatives: ["[[timm]]", "[[albumentations]]", "[[Kornia]]"]
 complements: []
 tags: [computer-vision, cnn, transfer-learning, data-augmentation, deep-learning, gpu]
 url_docs: https://docs.pytorch.org/vision/
@@ -19,7 +19,7 @@ url_repo: https://github.com/pytorch/vision
 
 ## Pourquoi
 
-Paquet vision **officiel** de l'écosystème [[Dev/Services/PyTorch|PyTorch]], maintenu par la même équipe. Trois briques : **datasets** (téléchargement et préparation de jeux publics), **models** (architectures et poids pré-entraînés — ResNet, EfficientNet, ConvNeXt, ViT, Faster R-CNN, Mask R-CNN…) et **transforms** (prétraitement et augmentation). La génération `transforms.v2` opère sur des tenseurs (GPU possible), gère boîtes et masques, et remplace l'ancienne API `transforms`. C'est l'outillage par défaut pour le [[Transfer learning vision|transfert d'apprentissage]] et le chargement d'images en PyTorch.
+Paquet vision **officiel** de l'écosystème [[PyTorch]], maintenu par la même équipe. Trois briques : **datasets** (téléchargement et préparation de jeux publics), **models** (architectures et poids pré-entraînés — ResNet, EfficientNet, ConvNeXt, ViT, Faster R-CNN, Mask R-CNN…) et **transforms** (prétraitement et augmentation). La génération `transforms.v2` opère sur des tenseurs (GPU possible), gère boîtes et masques, et remplace l'ancienne API `transforms`. C'est l'outillage par défaut pour le [[Transfer learning vision|transfert d'apprentissage]] et le chargement d'images en PyTorch.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ Paquet vision **officiel** de l'écosystème [[Dev/Services/PyTorch|PyTorch]], m
 
 ## Quand NE PAS l'utiliser
 
-- Catalogue de backbones beaucoup plus large et poids SOTA → [[Dev/Services/timm|timm]].
-- Augmentation CPU plus rapide et plus riche (détection/segmentation) → [[Dev/Services/albumentations|albumentations]].
-- Augmentations **différentiables** sur GPU dans le graphe d'autograd → [[Dev/Services/Kornia|Kornia]].
-- Vision **classique** hors deep learning (calibration, features, vidéo) → [[Dev/Services/OpenCV|OpenCV]].
+- Catalogue de backbones beaucoup plus large et poids SOTA → [[timm]].
+- Augmentation CPU plus rapide et plus riche (détection/segmentation) → [[albumentations]].
+- Augmentations **différentiables** sur GPU dans le graphe d'autograd → [[Kornia]].
+- Vision **classique** hors deep learning (calibration, features, vidéo) → [[OpenCV]].
 
 ## Déploiement & coût
 
@@ -49,13 +49,13 @@ Paquet vision **officiel** de l'écosystème [[Dev/Services/PyTorch|PyTorch]], m
 
 ## Alternatives
 
-- [[Dev/Services/timm|timm]] — La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
-- [[Dev/Services/albumentations|albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
-- [[Dev/Services/Kornia|Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
+- [[timm]] — La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
+- [[albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
+- [[Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
 ## Liens
 
-- [[Dev/Services/PyTorch|PyTorch]] — le framework dont torchvision est l'extension vision officielle.
+- [[PyTorch]] — le framework dont torchvision est l'extension vision officielle.
 - [[Vision par ordinateur]] — le cadre et les tâches servies.
 - [[CNN]] / [[Architectures CNN]] — les backbones convolutifs exposés par `models`.
 - [[Transfer learning vision]] / [[Augmentation d'images]] — les deux usages cœur.

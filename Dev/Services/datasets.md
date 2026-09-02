@@ -19,25 +19,25 @@ url_repo: https://github.com/huggingface/datasets
 
 ## Pourquoi
 
-Bibliothèque de l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] pour **charger, traiter et partager** des jeux de données ML. Le cœur est un backend **Apache Arrow** : les données sont stockées sur disque dans un cache colonnaire **memory-mappé**, ce qui donne des lectures *zero-copy* sans saturer la RAM, même sur des jeux de plusieurs centaines de Go. `load_dataset("nom")` récupère un dataset du Hub (texte, image, audio, multimodal) en une ligne ; les transformations (`map`, `filter`, `cast`) sont vectorisées et mises en cache automatiquement. Le mode **streaming** (`streaming=True`) itère sans rien télécharger entièrement — indispensable pour les corpus de pré-entraînement.
+Bibliothèque de l'écosystème [[HuggingFace]] pour **charger, traiter et partager** des jeux de données ML. Le cœur est un backend **Apache Arrow** : les données sont stockées sur disque dans un cache colonnaire **memory-mappé**, ce qui donne des lectures *zero-copy* sans saturer la RAM, même sur des jeux de plusieurs centaines de Go. `load_dataset("nom")` récupère un dataset du Hub (texte, image, audio, multimodal) en une ligne ; les transformations (`map`, `filter`, `cast`) sont vectorisées et mises en cache automatiquement. Le mode **streaming** (`streaming=True`) itère sans rien télécharger entièrement — indispensable pour les corpus de pré-entraînement.
 
 ## Quand l'utiliser
 
 - **Charger un jeu public** du Hub sans réécrire de loader : NLP, vision, audio.
 - **Traiter plus grand que la RAM** : Arrow memory-mappé + `map` batché ; streaming pour l'out-of-core pur.
-- **Alimenter un entraînement** [[Dev/Services/PyTorch|PyTorch]] / `transformers` : `.with_format("torch")`, intégration directe avec le `Trainer`.
+- **Alimenter un entraînement** [[PyTorch]] / `transformers` : `.with_format("torch")`, intégration directe avec le `Trainer`.
 - **Publier / versionner** un dataset privé ou public sur le Hub (Git/LFS).
 
 ## Quand NE PAS l'utiliser
 
-- Manipulation tabulaire analytique générale (jointures, group-by complexes) → [[Dev/Services/Polars|Polars]] ou [[Dev/Services/pandas|pandas]] (datasets n'est pas un moteur de requête).
+- Manipulation tabulaire analytique générale (jointures, group-by complexes) → [[Polars]] ou [[pandas]] (datasets n'est pas un moteur de requête).
 - Données qui tiennent en mémoire et restent dans un DataFrame métier : un Arrow/HF dataset ajoute une couche inutile.
-- Pipeline ELT / orchestration de données → [[Dev/Services/Dagster|Dagster]], [[Dev/Services/Airflow|Airflow]].
+- Pipeline ELT / orchestration de données → [[Dagster]], [[Airflow]].
 
 ## Déploiement & coût
 
 - Bibliothèque open-source (Apache-2.0), gratuite ; `uv add datasets`. Rien à héberger.
-- S'appuie sur **PyArrow** ; conversions sans copie vers [[Dev/Services/pandas|pandas]], [[Dev/Services/Polars|Polars]], NumPy, PyTorch.
+- S'appuie sur **PyArrow** ; conversions sans copie vers [[pandas]], [[Polars]], NumPy, PyTorch.
 - Le **Hub** (huggingface.co) héberge les datasets : accès public gratuit, stockage privé et gros volumes sur offres payantes.
 - Cache local (`~/.cache/huggingface/datasets`) memory-mappé : prévoir l'espace disque.
 
@@ -50,12 +50,12 @@ Bibliothèque de l'écosystème [[Dev/Services/HuggingFace|HuggingFace]] pour **
 
 ## Alternatives
 
-Pas de substitut direct dans le brain : `datasets` couple un format (Arrow memory-mappé) à un hub de partage, créneau qu'aucune autre fiche n'occupe. Pour la seule manipulation tabulaire, voir [[Dev/Services/Polars|Polars]] / [[Dev/Services/pandas|pandas]] (cités en *Liens*).
+Pas de substitut direct dans le brain : `datasets` couple un format (Arrow memory-mappé) à un hub de partage, créneau qu'aucune autre fiche n'occupe. Pour la seule manipulation tabulaire, voir [[Polars]] / [[pandas]] (cités en *Liens*).
 
 ## Liens
 
-- [[Dev/Services/HuggingFace|HuggingFace]] — bibliothèque sœur de `transformers` / `accelerate` dans la même stack.
-- [[Dev/Services/accelerate|accelerate]] · [[Dev/Services/evaluate|evaluate]] — compléments entraînement et métriques de l'écosystème HF.
-- [[Dev/Services/PyTorch|PyTorch]] — `.with_format("torch")` pour alimenter un `DataLoader`.
-- [[Dev/Services/Polars|Polars]] · [[Dev/Services/pandas|pandas]] — conversions Arrow sans copie.
+- [[HuggingFace]] — bibliothèque sœur de `transformers` / `accelerate` dans la même stack.
+- [[accelerate]] · [[evaluate]] — compléments entraînement et métriques de l'écosystème HF.
+- [[PyTorch]] — `.with_format("torch")` pour alimenter un `DataLoader`.
+- [[Polars]] · [[pandas]] — conversions Arrow sans copie.
 - Doc : https://huggingface.co/docs/datasets

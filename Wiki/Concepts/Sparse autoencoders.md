@@ -60,7 +60,7 @@ tags: [explainability, deep-learning, llm, unsupervised]
 - **Un SAE par couche et par point d'accroche.** Les features de la couche 5 n'ont rien à voir avec celles de la couche 20. Le flux résiduel est le point d'accroche le plus courant.
 - **Le doute méthodologique est réel** : rien ne garantit que les directions trouvées soient les « vraies » features du modèle plutôt qu'un artefact du SAE. Des travaux récents montrent que des SAE entraînés sur du bruit produisent des features d'apparence tout aussi interprétable. Prudence sur les conclusions.
 - **Préférer TopK au L1 vanilla** en première approche : `k` se règle directement, et l'absence de shrinkage rend l'évaluation plus honnête.
-- Outils : [[Dev/Services/SAELens|SAELens]] (l'écosystème dédié : entraînement, SAE pré-entraînés, analyse), [[Dev/Services/interpreto|interpreto]] (SAE parmi d'autres méthodes de dictionnaire, avec les métriques), [[Dev/Services/nnsight|nnsight]] / [[Dev/Services/TransformerLens|TransformerLens]] pour extraire les activations.
+- Outils : [[SAELens]] (l'écosystème dédié : entraînement, SAE pré-entraînés, analyse), [[interpreto]] (SAE parmi d'autres méthodes de dictionnaire, avec les métriques), [[nnsight]] / [[TransformerLens]] pour extraire les activations.
 
 ## Approches voisines & alternatives
 

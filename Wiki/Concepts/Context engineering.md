@@ -50,7 +50,7 @@ tags: [context-engineering, llm, agents]
 - [[Tokenization]] — la fenêtre se compte en tokens, unité de tout le budget.
 - [[Prompt engineering]] — travaille la formulation ; complémentaire de la gestion du contexte.
 - [[prompt-caching]], [[Reliability patterns]] — leviers complémentaires.
-- Mise en œuvre fichée : [[Dev/Services/Headroom|Headroom]] — comprime sorties d'outils, logs et chunks avant l'appel, en gardant l'original récupérable à la demande ; la compression comme alternative à la sélection.
+- Mise en œuvre fichée : [[Headroom]] — comprime sorties d'outils, logs et chunks avant l'appel, en gardant l'original récupérable à la demande ; la compression comme alternative à la sélection.
 
 ## Pour aller plus loin
 

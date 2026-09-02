@@ -37,7 +37,7 @@ tags: [transformers, deep-learning, attention, nlp]
 ## En pratique
 
 - Le choix d'architecture découle de la tâche : génération → **decoder-only** ; embeddings / classification → **encoder-only** ; seq-to-seq strict → encoder-decoder.
-- Ne pas partir de zéro : [[Dev/Services/HuggingFace|HuggingFace]] sur [[Dev/Services/PyTorch|PyTorch]] fournit les implémentations de référence ; l'[[PEFT|adaptation paramétriquement efficace]] permet de spécialiser un modèle pré-entraîné.
+- Ne pas partir de zéro : [[HuggingFace]] sur [[PyTorch]] fournit les implémentations de référence ; l'[[PEFT|adaptation paramétriquement efficace]] permet de spécialiser un modèle pré-entraîné.
 - La taille utile se raisonne avec les [[Scaling laws|lois d'échelle]] (compute / données / paramètres) ; les [[Small Language Models|petits modèles]] visent le même socle en plus compact.
 
 ## Approches voisines & alternatives

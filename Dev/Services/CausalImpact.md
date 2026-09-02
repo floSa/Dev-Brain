@@ -29,7 +29,7 @@ Estime l'**effet causal d'une intervention** (lancement, campagne, changement de
 
 ## Quand NE PAS l'utiliser
 
-- Données en panel avec groupe traité et groupe témoin observés : le cadre classique [[Wiki/Concepts/Diff-in-Diff|Diff-in-Diff]] est plus simple et plus transparent.
+- Données en panel avec groupe traité et groupe témoin observés : le cadre classique [[Diff-in-Diff]] est plus simple et plus transparent.
 - Pas de bon contrôle non contaminé → le contrefactuel n'est pas crédible, aucun outil ne sauve un design faible.
 - Effet diffus sans date d'intervention nette → relève d'une modélisation causale dédiée.
 
@@ -47,10 +47,10 @@ Estime l'**effet causal d'une intervention** (lancement, campagne, changement de
 
 ## Alternatives
 
-- Pas d'alternative outillée dans le brain. Approche concurrente côté méthode : [[Wiki/Concepts/Diff-in-Diff|Diff-in-Diff]] (design à groupe témoin), couvert côté libs par [[Dev/Services/statsmodels|statsmodels]].
+- Pas d'alternative outillée dans le brain. Approche concurrente côté méthode : [[Diff-in-Diff]] (design à groupe témoin), couvert côté libs par [[statsmodels]].
 
 ## Liens
 
-- Concepts implémentés : [[Wiki/Concepts/Inférence causale|Inférence causale]], [[Wiki/Concepts/Diff-in-Diff|Diff-in-Diff]], [[Wiki/Concepts/Inférence bayésienne|Inférence bayésienne]]
+- Concepts implémentés : [[Inférence causale]], [[Diff-in-Diff]], [[Inférence bayésienne]]
 - [[Comparatif - Outils stats]] — comparatif des libs statistiques
 - Doc : https://google.github.io/CausalImpact/CausalImpact.html

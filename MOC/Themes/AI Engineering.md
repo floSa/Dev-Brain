@@ -10,14 +10,14 @@ indexe: ai-eng
 <!-- AUTO:START -->
 Domaine **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[MOC/Concepts/LLM (notions)|LLM (notions)]] — 57 notion(s)
-- [[MOC/Concepts/Deep learning|Deep learning]] — 28 notion(s)
-- [[MOC/Concepts/Apprentissage par renforcement|Apprentissage par renforcement]] — 10 notion(s)
-- [[MOC/Concepts/IA & sécurité|IA & sécurité]] — 4 notion(s)
-- [[MOC/Concepts/NLP (notions)|NLP (notions)]] — 4 notion(s)
-- [[MOC/Concepts/Données (notions)|Données (notions)]] — 3 notion(s)
-- [[MOC/Concepts/Maths du ML|Maths du ML]] — 3 notion(s)
-- [[MOC/Concepts/Machine learning (notions)|Machine learning (notions)]] — 1 notion(s)
+- [[LLM (notions)]] — 57 notion(s)
+- [[Deep learning]] — 28 notion(s)
+- [[Apprentissage par renforcement]] — 10 notion(s)
+- [[IA & sécurité]] — 4 notion(s)
+- [[NLP (notions)]] — 4 notion(s)
+- [[Données (notions)]] — 3 notion(s)
+- [[Maths du ML]] — 3 notion(s)
+- [[Machine learning (notions)]] — 1 notion(s)
 <!-- AUTO:END -->
 
 ## Notes

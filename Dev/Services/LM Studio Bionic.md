@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: 
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/Hermes Agent|Hermes Agent]]"]
+alternatives: ["[[OpenClaw]]", "[[Hermes Agent]]"]
 complements: []
 tags: [llm, agents, local-llm, mcp, code-generation]
 url_docs: https://lmstudio.ai/docs/bionic
@@ -21,7 +21,7 @@ url_repo:
 
 ## Pourquoi
 
-Agent de bureau publié par LM Studio le **16 juillet 2026**, présenté comme « l'agent IA fait pour les modèles ouverts ». C'est une **application distincte** de [[Dev/Services/LM Studio|LM Studio]], et non un mode de celle-ci : LM Studio reste l'outil de configuration fine du runtime, Bionic est la couche agentique posée dessus.
+Agent de bureau publié par LM Studio le **16 juillet 2026**, présenté comme « l'agent IA fait pour les modèles ouverts ». C'est une **application distincte** de [[LM Studio]], et non un mode de celle-ci : LM Studio reste l'outil de configuration fine du runtime, Bionic est la couche agentique posée dessus.
 
 Le travail s'organise en **projets**, de deux types : *Work* (recherche, rédaction, analyse, documents, PDF, tableurs, présentations) et *Code* (dépôt local, avec accès fichiers, recherche, Git et shell, diffs en ligne et points de restauration automatiques). S'y ajoutent une **transcription vocale hors ligne** via Voxtral, la recherche web, et l'installation de **serveurs [[mcp-protocol|MCP]]** pour étendre l'outillage au-delà du système de fichiers.
 
@@ -36,10 +36,10 @@ L'inférence est **locale par défaut**, via le runtime LM Studio ; trois origin
 
 ## Quand NE PAS l'utiliser
 
-- Vouloir un agent **résident et joignable en permanence** depuis une messagerie : Bionic est une application de bureau, sans WhatsApp ni Telegram → [[Dev/Services/OpenClaw|OpenClaw]].
-- Vouloir un agent qui **capitalise entre les sessions** (mémoire persistante, skills auto-créés) sur un serveur → [[Dev/Services/Hermes Agent|Hermes Agent]].
-- Exigence d'**open-source** ou d'auditabilité de l'agent : l'application est fermée → [[Dev/Services/OpenHands|OpenHands]].
-- Intégrer l'agent **dans sa propre application** : c'est un produit fini → [[Dev/Services/Agno|Agno]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]].
+- Vouloir un agent **résident et joignable en permanence** depuis une messagerie : Bionic est une application de bureau, sans WhatsApp ni Telegram → [[OpenClaw]].
+- Vouloir un agent qui **capitalise entre les sessions** (mémoire persistante, skills auto-créés) sur un serveur → [[Hermes Agent]].
+- Exigence d'**open-source** ou d'auditabilité de l'agent : l'application est fermée → [[OpenHands]].
+- Intégrer l'agent **dans sa propre application** : c'est un produit fini → [[Agno]], [[OpenAI Agents SDK]].
 
 ## Déploiement & coût
 
@@ -55,21 +55,21 @@ L'inférence est **locale par défaut**, via le runtime LM Studio ; trois origin
 ## Pièges
 
 - **Produit très jeune** : moins d'un mois d'existence à l'été 2026, tarification cloud encore mouvante — ne pas bâtir un flux de travail critique dessus sans réversibilité.
-- **Propriétaire et fermé** : pas d'audit possible de la couche agent, dépendance à l'éditeur — le même reproche qu'à [[Dev/Services/LM Studio|LM Studio]], sur un composant qui a cette fois accès au shell et aux fichiers.
+- **Propriétaire et fermé** : pas d'audit possible de la couche agent, dépendance à l'éditeur — le même reproche qu'à [[LM Studio]], sur un composant qui a cette fois accès au shell et aux fichiers.
 - La bascule vers le cloud est **le point à surveiller** : la rétention zéro est une promesse contractuelle, pas une garantie technique. Pour un secret industriel, le seul mode défendable est le tout-local.
 - Un projet *Code* donne à l'agent **fichiers, Git et shell** sur un dépôt réel. Les points de restauration limitent la casse, ils ne la préviennent pas — cf. [[Sandboxing de code généré]].
 - Serveurs MCP tiers à traiter comme du **code non fiable** : ils élargissent la surface d'attaque de l'agent. Cf. [[Prompt injection]].
 
 ## Alternatives
 
-- [[Dev/Services/OpenClaw|OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
-- [[Dev/Services/Hermes Agent|Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
+- [[OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
+- [[Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
 
 ## Liens
 
-- Couche agentique posée sur le runtime de [[Dev/Services/LM Studio|LM Studio]] — même éditeur, applications distinctes.
-- Même famille d'**agents prêts à l'emploi** que [[Dev/Services/OpenClaw|OpenClaw]], [[Dev/Services/Hermes Agent|Hermes Agent]] et [[Dev/Services/OpenHands|OpenHands]] — mais seul à être une application de bureau fermée, les trois autres étant auto-hébergés et open-source.
-- Consomme des serveurs [[mcp-protocol|MCP]] — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire.
+- Couche agentique posée sur le runtime de [[LM Studio]] — même éditeur, applications distinctes.
+- Même famille d'**agents prêts à l'emploi** que [[OpenClaw]], [[Hermes Agent]] et [[OpenHands]] — mais seul à être une application de bureau fermée, les trois autres étant auto-hébergés et open-source.
+- Consomme des serveurs [[mcp-protocol|MCP]] — cf. [[fastmcp]] pour en écrire.
 - C'est un **harnais** au sens de [[Harnais d'agent]] — le seul fermé du brain, et le seul à ne pas accepter d'endpoint arbitraire.
 - [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet et ses pièges.
 - Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Small Language Models]].

@@ -42,10 +42,10 @@ L'échange s'organise ensuite autour d'une **tâche** au cycle de vie explicite 
 
 ## En pratique
 
-- Pertinent quand les agents relèvent d'**équipes ou d'organisations distinctes**. À l'intérieur d'un même système, un framework multi-agents ([[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/LangGraph|LangGraph]]) reste plus simple et plus contrôlable.
+- Pertinent quand les agents relèvent d'**équipes ou d'organisations distinctes**. À l'intérieur d'un même système, un framework multi-agents ([[CrewAI]], [[LangGraph]]) reste plus simple et plus contrôlable.
 - Traiter tout agent distant comme une **source non fiable** : ses réponses entrent dans le contexte local et portent le même risque qu'une entrée utilisateur — cf. [[Prompt injection]].
 - L'agrégation de plusieurs agents opaques rend le débogage pénible : tracer bout en bout dès le départ, cf. [[LLM observability]].
-- Adoption réelle mais jeune : [[Dev/Services/Hermes Agent|Hermes Agent]] implémente A2A v1.0 depuis août 2026.
+- Adoption réelle mais jeune : [[Hermes Agent]] implémente A2A v1.0 depuis août 2026.
 - Piège : déléguer à un pair sans **budget ni délai maximum**. Une tâche distante qui n'aboutit pas bloque la boucle appelante.
 
 ## Approches voisines & alternatives

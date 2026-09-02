@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: single-node
-alternatives: ["[[Dev/Services/Langflow|Langflow]]", "[[Dev/Services/Flowise|Flowise]]"]
+alternatives: ["[[Langflow]]", "[[Flowise]]"]
 complements: []
 tags: [llm, low-code, agents, rag]
 url_docs: https://docs.dify.ai/
@@ -31,9 +31,9 @@ url_repo: https://github.com/langgenius/dify
 
 ## Quand NE PAS l'utiliser
 
-- Besoin d'un simple **canvas de flux** exportable en code → [[Dev/Services/Langflow|Langflow]] (MIT) / [[Dev/Services/Flowise|Flowise]].
+- Besoin d'un simple **canvas de flux** exportable en code → [[Langflow]] (MIT) / [[Flowise]].
 - Projet où la **licence restrictive** (pas de multi-tenant, logo imposé) pose problème → préférer une option MIT/Apache pure.
-- Orchestration **fine en code** versionnée → [[Dev/Services/LangGraph|LangGraph]] / [[Dev/Services/LangChain|LangChain]].
+- Orchestration **fine en code** versionnée → [[LangGraph]] / [[LangChain]].
 
 ## Déploiement & coût
 
@@ -49,13 +49,13 @@ url_repo: https://github.com/langgenius/dify
 
 ## Alternatives
 
-- [[Dev/Services/Langflow|Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
-- [[Dev/Services/Flowise|Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
+- [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
+- [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 
 ## Liens
 
-- Même famille de **builders LLM low-code** que [[Dev/Services/Langflow|Langflow]] et [[Dev/Services/Flowise|Flowise]], en plus *plateforme* (LLMOps).
-- Gère nativement de multiples fournisseurs ; peut aussi router via [[Dev/Services/LiteLLM|LiteLLM]] / [[Dev/Services/OpenRouter|OpenRouter]].
+- Même famille de **builders LLM low-code** que [[Langflow]] et [[Flowise]], en plus *plateforme* (LLMOps).
+- Gère nativement de multiples fournisseurs ; peut aussi router via [[LiteLLM]] / [[OpenRouter]].
 - Concepts : [[Agent patterns]], [[Advanced RAG]], [[Context engineering]].
 - [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
 - Doc : https://docs.dify.ai/

@@ -49,7 +49,7 @@ Mode build (pages Dev/) ou mode wiki (pages Wiki/). Ne jamais toucher au réserv
   2. cible absente du frontmatter `alternatives:` → mention de voisinage, ligne libre mais **préfixée de `voisin :`** ;
   3. jamais de prose à la place du pitch d'une cible listée en `alternatives:` — soit la prose devient le suffixe (clause 1), soit la cible sort du frontmatter (clause 2).
   Le pitch se **copie** depuis la cible, il ne se retape jamais.
-- **Liens qualifiés en cas de collision** : si un nom existe aussi dans le réservoir v1 (ex. `Services/VectorDB/Qdrant.md`), lier en `[[Dev/Services/Qdrant|Qdrant]]` pour viser le v2 sans ambiguïté. Sinon, lien nu.
+- **Liens nus, toujours** : `[[Qdrant]]`, jamais `[[Dev/Services/Qdrant|Qdrant]]`. Le pipe ne sert qu'à changer le texte affiché (`[[Qdrant|la base vectorielle]]`), jamais à porter un chemin — un chemin casse au premier `git mv`, et la v3 en fait 682. Contrepartie : **le nom de fichier d'une page nouvelle doit être unique dans le vault**, à la casse près (le système de fichiers de floSa est insensible à la casse). Vérifier avant de créer.
 - **Catégorie ou tag manquant → demander**, jamais inventer. L'ajout se fait d'abord dans `Documentation/general/`.
 - **Faits vérifiés sur le web, d'office (sans demander la permission)** : avant d'écrire une fiche, vérifier en ligne (WebSearch / WebFetch) les champs factuels — `licence_type`, `langage`, `maturite`, `hosted`, `scaling`, `url_docs` / `url_repo`, statut actuel (actif / déprécié / racheté). Ne jamais demander l'autorisation de vérifier : le faire directement. Info introuvable ou ambiguë → laisser le champ vide, ne pas inventer.
 

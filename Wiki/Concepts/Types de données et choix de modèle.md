@@ -126,7 +126,7 @@ flowchart TD
 - **Le type de données élimine plus d'options que la performance n'en départage.** Beaucoup de NaN et du catégoriel à forte cardinalité → CatBoost/LightGBM. $d \gg n$ (génomique, spectres) → linéaire pénalisé ou [[SVM]]. Besoin d'expliquer chaque décision → [[GAM]] ou arbre court, quel qu'en soit le coût en performance.
 - **Toute préparation apprise s'apprend sur le train seul.** Moyenne de standardisation, catégories d'encodage, valeurs d'imputation : les calculer sur l'ensemble des données est une fuite silencieuse qui gonfle le score et s'effondre en production ([[Data leakage]]). Utiliser un `Pipeline`.
 - **Ne pas choisir un modèle sur un seul découpage.** L'écart entre deux modèles est souvent inférieur à la variance entre folds ([[Validation croisée]]).
-- Outils : [[Dev/Services/Scikit-Learn|sklearn]] (`Pipeline`, `ColumnTransformer` — le bon réflexe pour appliquer un traitement par type de colonne), [[Dev/Services/category_encoders|category_encoders]], [[Dev/Services/ydata-profiling|ydata-profiling]] pour typer les variables avant de décider ([[EDA automatisée & profiling]]).
+- Outils : [[Scikit-Learn|sklearn]] (`Pipeline`, `ColumnTransformer` — le bon réflexe pour appliquer un traitement par type de colonne), [[category_encoders]], [[ydata-profiling]] pour typer les variables avant de décider ([[EDA automatisée & profiling]]).
 
 ## Approches voisines & alternatives
 

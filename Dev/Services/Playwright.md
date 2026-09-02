@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/curl_cffi|curl_cffi]]", "[[Dev/Services/cloudscraper|cloudscraper]]", "[[Dev/Services/Crawlee|Crawlee]]", "[[Dev/Services/Scrapling|Scrapling]]"]
+alternatives: ["[[curl_cffi]]", "[[cloudscraper]]", "[[Crawlee]]", "[[Scrapling]]"]
 complements: []
 tags: [web-scraping]
 url_docs: https://playwright.dev/python/
@@ -30,8 +30,8 @@ Pilote un **vrai navigateur** (Chromium, Firefox, WebKit) en mode headless via u
 
 ## Quand NE PAS l'utiliser
 
-- Pages **statiques** récupérables par simple HTTP → un client léger ([[Dev/Services/curl_cffi|curl_cffi]]) + un parseur ([[Dev/Services/selectolax|selectolax]]) est bien plus rapide.
-- Blocage uniquement sur l'**empreinte TLS/HTTP** sans besoin de JS → [[Dev/Services/curl_cffi|curl_cffi]] suffit.
+- Pages **statiques** récupérables par simple HTTP → un client léger ([[curl_cffi]]) + un parseur ([[selectolax]]) est bien plus rapide.
+- Blocage uniquement sur l'**empreinte TLS/HTTP** sans besoin de JS → [[curl_cffi]] suffit.
 - Très **gros volumes** : un navigateur par page coûte cher en CPU/RAM — préférer l'HTTP quand c'est possible.
 
 ## Déploiement & coût
@@ -48,14 +48,14 @@ Pilote un **vrai navigateur** (Chromium, Firefox, WebKit) en mode headless via u
 
 ## Alternatives
 
-- [[Dev/Services/curl_cffi|curl_cffi]] — Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
-- [[Dev/Services/cloudscraper|cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
-- [[Dev/Services/Crawlee|Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
-- [[Dev/Services/Scrapling|Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
+- [[curl_cffi]] — Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
+- [[cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
+- [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
+- [[Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 
 ## Liens
 
 - [[Web scraping]] — rendu navigateur vs HTTP statique : son cas d'usage central.
-- [[Dev/Services/selectolax|selectolax]] — parser le HTML une fois la page rendue récupérée.
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[selectolax]] — parser le HTML une fois la page rendue récupérée.
+- [[Comparatif - Scraping]]
 - Doc : https://playwright.dev/python/

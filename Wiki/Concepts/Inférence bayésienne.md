@@ -40,7 +40,7 @@ tags: [bayesian, statistical-inference, prior]
 
 ## En pratique
 
-- Calcul de l'a posteriori : forme fermée si a priori conjugué (cf. [[A priori conjugués]]) ; sinon échantillonnage MCMC ([[Dev/Services/PyMC|PyMC]], [[Dev/Services/Stan|Stan]], NumPyro) ou inférence variationnelle.
+- Calcul de l'a posteriori : forme fermée si a priori conjugué (cf. [[A priori conjugués]]) ; sinon échantillonnage MCMC ([[PyMC]], [[Stan]], NumPyro) ou inférence variationnelle.
 - A priori informatif (encode une connaissance) ou faiblement informatif (laisse parler les données) → toujours documenter le choix et tester sa sensibilité.
 - Résumés de l'a posteriori : moyenne ou médiane, mode ([[Estimation MAP|MAP]]), intervalle de crédibilité (HDI).
 - Atout produit : énonce « proba que B batte A = 92 % », plus lisible qu'une p-value pour décider (cf. [[A-B testing]] bayésien).
@@ -58,5 +58,5 @@ tags: [bayesian, statistical-inference, prior]
 ## Pour aller plus loin
 
 - Réf : Gelman et al. — *Bayesian Data Analysis* ; McElreath — *Statistical Rethinking*.
-- Outils : [[Dev/Services/PyMC|PyMC]], NumPyro, [[Dev/Services/Stan|Stan]] (`cmdstanpy`) ; diagnostics a posteriori avec [[Dev/Services/ArviZ|ArviZ]] ; [[Dev/Services/scipy.stats|scipy.stats]] pour les cas conjugués ; [[Dev/Services/CausalImpact|CausalImpact]] pour l'effet causal d'une intervention.
+- Outils : [[PyMC]], NumPyro, [[Stan]] (`cmdstanpy`) ; diagnostics a posteriori avec [[ArviZ]] ; [[scipy.stats]] pour les cas conjugués ; [[CausalImpact]] pour l'effet causal d'une intervention.
 - Tag-ombrelle `statistical-inference` : sujet « Inférence statistique » à créer un jour comme parent commun (cf. [[Tests d'hypothèse]]).

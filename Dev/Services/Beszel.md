@@ -36,8 +36,8 @@ Pour un profil solo qui auto-héberge chez un client, c'est le compromis honnêt
 
 ## Quand NE PAS l'utiliser
 
-- Métriques applicatives et instrumentation métier : Beszel collecte des métriques **d'hôte**, il n'ingère pas de métriques arbitraires ni de format Prometheus → pile Prometheus + [[Dev/Services/Grafana|Grafana]].
-- Agrégation de logs : hors périmètre → [[Dev/Services/Loki|Loki]].
+- Métriques applicatives et instrumentation métier : Beszel collecte des métriques **d'hôte**, il n'ingère pas de métriques arbitraires ni de format Prometheus → pile Prometheus + [[Grafana]].
+- Agrégation de logs : hors périmètre → [[Loki]].
 - Traces distribuées, requêtes analytiques sur les séries, tableaux de bord composables : hors périmètre.
 - Surveillance de dérive de modèle ML : problème différent, voir la catégorie `ml/monitoring`.
 - Parc de plusieurs centaines d'hôtes : le hub est mono-nœud, ce n'est pas une plateforme distribuée.
@@ -59,12 +59,12 @@ Coût logiciel nul. Empreinte annoncée comme inférieure aux solutions de réf�
 
 ## Alternatives
 
-Le champ reste vide faute de fiche réciproque dans la catégorie. Le comparable de référence est la pile Prometheus + [[Dev/Services/Grafana|Grafana]], plus puissante et plus coûteuse à exploiter ; hors brain, Netdata (temps réel très fin, plus verbeux), Zabbix (parc d'entreprise) et Glances (poste unique, terminal).
+Le champ reste vide faute de fiche réciproque dans la catégorie. Le comparable de référence est la pile Prometheus + [[Grafana]], plus puissante et plus coûteuse à exploiter ; hors brain, Netdata (temps réel très fin, plus verbeux), Zabbix (parc d'entreprise) et Glances (poste unique, terminal).
 
 ## Liens
 
-- [[Dev/Services/Docker|Docker]] — le hub et les agents se déploient en conteneurs, et les statistiques par conteneur sont l'apport principal
-- [[Dev/Services/Grafana|Grafana]] — l'échelon au-dessus, quand les métriques applicatives entrent en jeu
-- [[Dev/Outils/Sniffnet|Sniffnet]] — complément côté trafic : Beszel dit comment va la machine, Sniffnet ce qui circule
+- [[Docker]] — le hub et les agents se déploient en conteneurs, et les statistiques par conteneur sont l'apport principal
+- [[Grafana]] — l'échelon au-dessus, quand les métriques applicatives entrent en jeu
+- [[Sniffnet]] — complément côté trafic : Beszel dit comment va la machine, Sniffnet ce qui circule
 - Docs : https://beszel.dev
 - Repo : https://github.com/henrygd/beszel

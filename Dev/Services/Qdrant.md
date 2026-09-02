@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: distributed
-alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Milvus|Milvus]]", "[[Dev/Services/Pinecone|Pinecone]]"]
+alternatives: ["[[Weaviate]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
 complements: []
 tags: [vector-db, rag, ann]
 url_docs: https://qdrant.tech/documentation/
@@ -32,9 +32,9 @@ Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** p
 
 ## Quand NE PAS l'utiliser
 
-- Déléguer l'embedding et le schéma à la base → [[Dev/Services/Weaviate|Weaviate]].
-- Du Postgres déjà en place et besoin modeste → [[Dev/Services/pgvector|pgvector]].
-- POC en RAM dans un script → un index [[Dev/Services/Faiss|Faiss]] direct suffit.
+- Déléguer l'embedding et le schéma à la base → [[Weaviate]].
+- Du Postgres déjà en place et besoin modeste → [[pgvector]].
+- POC en RAM dans un script → un index [[Faiss]] direct suffit.
 
 ## Déploiement & coût
 
@@ -50,10 +50,10 @@ Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** p
 
 ## Alternatives
 
-- [[Dev/Services/Weaviate|Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
-- [[Dev/Services/pgvector|pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
-- [[Dev/Services/Milvus|Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
-- [[Dev/Services/Pinecone|Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+- [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
+- [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
+- [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
+- [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
 ## Liens
 

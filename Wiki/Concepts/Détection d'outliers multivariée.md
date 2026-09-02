@@ -30,7 +30,7 @@ tags: [anomaly-detection, unsupervised]
 
 ### Sans paramètre — ECOD / COPOD
 - **ECOD** : fonctions de répartition empiriques par dimension, agrégées en probabilité de queue. **COPOD** : modélise la dépendance par **copule** empirique.
-- **Zéro hyperparamètre**, déterministes, rapides — d'excellents baselines (auteurs de [[Dev/Services/PyOD|PyOD]]).
+- **Zéro hyperparamètre**, déterministes, rapides — d'excellents baselines (auteurs de [[PyOD]]).
 
 ## Les maths, simplement
 
@@ -40,7 +40,7 @@ tags: [anomaly-detection, unsupervised]
 
 ## En pratique
 
-- [[Dev/Services/PyOD|PyOD]] unifie tous ces détecteurs (et 50+ autres) sous une API scikit-learn : comparer plusieurs méthodes vaut mieux qu'en parier une.
+- [[PyOD]] unifie tous ces détecteurs (et 50+ autres) sous une API scikit-learn : comparer plusieurs méthodes vaut mieux qu'en parier une.
 - LOF, IsolationForest et EllipticEnvelope sont aussi **natifs dans scikit-learn**.
 - Régler la **contamination** (proportion d'outliers attendue) fixe le seuil de décision ; à défaut, raisonner sur les **scores** continus.
 - **Standardiser** les variables ([[Mise à l'échelle]]) avant les méthodes à distance/densité (Mahalanobis le fait implicitement, pas LOF).

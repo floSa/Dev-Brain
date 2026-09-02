@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Dev/Services/uv|uv]]"]
+alternatives: ["[[uv]]"]
 complements: []
 tags: [package-manager]
 url_docs: https://pip.pypa.io/
@@ -29,8 +29,8 @@ Installeur de paquets **de référence** de Python, maintenu par la **PyPA** (Py
 
 ## Quand NE PAS l'utiliser
 
-- Projet géré de bout en bout (résolution rapide, lockfile, venv, versions de Python) → [[Dev/Services/uv|uv]].
-- Besoin de vitesse en CI sur de grosses arborescences de dépendances → [[Dev/Services/uv|uv]].
+- Projet géré de bout en bout (résolution rapide, lockfile, venv, versions de Python) → [[uv]].
+- Besoin de vitesse en CI sur de grosses arborescences de dépendances → [[uv]].
 
 ## Déploiement & coût
 
@@ -45,7 +45,7 @@ Installeur de paquets **de référence** de Python, maintenu par la **PyPA** (Py
 
 ## Alternatives
 
-- [[Dev/Services/uv|uv]] — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
+- [[uv]] — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
 ## Liens
 

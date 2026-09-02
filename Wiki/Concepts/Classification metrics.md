@@ -50,7 +50,7 @@ tags: [model-evaluation, classification, supervised]
 - Sur une classe positive rare, une VPP correcte exige une **spécificité** quasi parfaite : le grand nombre de négatifs domine les FP. Rapporter sensibilité/spécificité sans la prévalence ne dit rien de la fiabilité réelle d'une prédiction.
 - Rapporter la métrique **agrégée sur les plis** de [[Validation croisée]], jamais sur un unique split.
 - Les métriques de probabilité (log-loss, Brier) supposent un modèle bien calibré → vérifier la [[Calibration]].
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — classification_report, f1_score, log_loss, matthews_corrcoef, confusion_matrix]].
+- Outils : [[Scikit-Learn|sklearn.metrics — classification_report, f1_score, log_loss, matthews_corrcoef, confusion_matrix]].
 
 ## Approches voisines & alternatives
 

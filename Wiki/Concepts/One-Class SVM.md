@@ -58,7 +58,7 @@ tags: [anomaly-detection, unsupervised]
 - **En détection d'outliers sur données polluées** (le cas courant), il est le moins recommandable des trois. [[Isolation Forest]] fait aussi bien sans réglage et en temps linéaire.
 - Le régler est pénible en pratique : sans étiquettes, aucune [[Validation croisée|CV]] n'est possible pour choisir `nu` et `gamma`. On procède par balayage et jugement d'expert sur le haut du classement.
 - Ne gère ni les NaN ni les catégorielles brutes : imputer et encoder en amont.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.svm.OneClassSVM]] ; `sklearn.linear_model.SGDOneClassSVM` à grande échelle ; [[Dev/Services/PyOD|PyOD]] pour comparer les détecteurs sous une API commune.
+- Outils : [[Scikit-Learn|sklearn.svm.OneClassSVM]] ; `sklearn.linear_model.SGDOneClassSVM` à grande échelle ; [[PyOD]] pour comparer les détecteurs sous une API commune.
 
 ## Approches voisines & alternatives
 

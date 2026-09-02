@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: "Python, TypeScript"
 scaling: single-node
-alternatives: ["[[Dev/Services/OpenClaw|OpenClaw]]", "[[Dev/Services/LM Studio Bionic|LM Studio Bionic]]", "[[Dev/Services/OpenViking|OpenViking]]"]
+alternatives: ["[[OpenClaw]]", "[[LM Studio Bionic]]", "[[OpenViking]]"]
 complements: []
 tags: [llm, agents, tool-use, mcp]
 url_docs: https://hermes-agent.nousresearch.com/docs/
@@ -33,9 +33,9 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 
 ## Quand NE PAS l'utiliser
 
-- Construire un agent **dans sa propre application** : c'est un agent fini, pas une bibliothèque → [[Dev/Services/Agno|Agno]], [[Dev/Services/OpenAI Agents SDK|OpenAI Agents SDK]], [[Dev/Services/LangGraph|LangGraph]].
-- Vouloir la **mémoire comme primitive exposée par API**, réutilisable dans un produit tiers → [[Dev/Services/Letta|Letta]].
-- Tâche **ponctuelle et sans état** : la boucle d'apprentissage n'a rien à capitaliser → [[Dev/Services/smolagents|smolagents]].
+- Construire un agent **dans sa propre application** : c'est un agent fini, pas une bibliothèque → [[Agno]], [[OpenAI Agents SDK]], [[LangGraph]].
+- Vouloir la **mémoire comme primitive exposée par API**, réutilisable dans un produit tiers → [[Letta]].
+- Tâche **ponctuelle et sans état** : la boucle d'apprentissage n'a rien à capitaliser → [[smolagents]].
 
 ## Déploiement & coût
 
@@ -52,16 +52,16 @@ Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**
 
 ## Alternatives
 
-- [[Dev/Services/OpenClaw|OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
-- [[Dev/Services/LM Studio Bionic|LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
-- [[Dev/Services/OpenViking|OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
+- [[OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
+- [[LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
+- [[OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ## Liens
 
-- Même famille d'**agents prêts à l'emploi** que [[Dev/Services/OpenClaw|OpenClaw]] (assistant généraliste sur messageries) et [[Dev/Services/OpenHands|OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Dev/Services/Agno|Agno]], [[Dev/Services/CrewAI|CrewAI]], [[Dev/Services/smolagents|smolagents]]).
-- Partage avec [[Dev/Services/Letta|Letta]] l'idée de **mémoire persistante comme primitive** ; Letta l'expose en API pour d'autres produits, Hermes la garde interne à son propre agent.
-- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[Dev/Services/fastmcp|fastmcp]] pour en écrire — et implémente [[a2a-protocol|A2A]] v1.0 depuis la v0.20.0 pour dialoguer avec des agents tiers.
-- Backends d'exécution : local et Docker, puis les bacs à sable managés [[Dev/Services/Modal|Modal]] et [[Dev/Services/Daytona|Daytona]] — cf. [[Sandboxing de code généré]].
+- Même famille d'**agents prêts à l'emploi** que [[OpenClaw]] (assistant généraliste sur messageries) et [[OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Agno]], [[CrewAI]], [[smolagents]]).
+- Partage avec [[Letta]] l'idée de **mémoire persistante comme primitive** ; Letta l'expose en API pour d'autres produits, Hermes la garde interne à son propre agent.
+- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[fastmcp]] pour en écrire — et implémente [[a2a-protocol|A2A]] v1.0 depuis la v0.20.0 pour dialoguer avec des agents tiers.
+- Backends d'exécution : local et Docker, puis les bacs à sable managés [[Modal]] et [[Daytona]] — cf. [[Sandboxing de code généré]].
 - C'est un **harnais** au sens de [[Harnais d'agent]] : compatible avec tout endpoint OpenAI-compatible.
 - [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local ; exige 64 k de contexte minimum.
 - Concepts : [[Agent memory]], [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]].

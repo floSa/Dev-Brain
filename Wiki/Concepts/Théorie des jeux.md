@@ -41,7 +41,7 @@ tags: [game-theory, optimization]
 - En IA : **multi-agent RL**, mécanismes d'enchères, robustesse adversariale, sécurité (jeux attaquant/défenseur), et les [[GANs]] (générateur vs discriminateur, un jeu à somme nulle).
 - Le **self-play** exploite la structure somme nulle pour générer un curriculum convergent ([[AlphaZero and self-play]]) ; en information imparfaite, il faut passer par la minimisation du regret ([[Counterfactual Regret Minimization]]).
 - Pièges : l'équilibre de Nash devient **intraitable** à calculer hors somme nulle ou au-delà de deux joueurs ; un équilibre n'est pas un optimum social ; l'hypothèse de rationalité parfaite est forte.
-- Côté outils : [[Dev/Services/OpenSpiel|OpenSpiel]] — 70+ jeux et les algorithmes d'équilibre (CFR, fictitious play, best response / exploitabilité).
+- Côté outils : [[OpenSpiel]] — 70+ jeux et les algorithmes d'équilibre (CFR, fictitious play, best response / exploitabilité).
 
 ## Approches voisines & alternatives
 

@@ -35,7 +35,7 @@ tags: [guardrails, safety, llm]
 ## En pratique
 
 - **Empiler** entrée + sortie : aucun garde-fou seul ne suffit (défense en profondeur).
-- Côté frameworks : la **validation de sortie structurée** est le garde-fou le plus courant — [[Dev/Services/Instructor|Instructor]] (objets Pydantic validés + retry), [[Dev/Services/PydanticAI|PydanticAI]]. Au niveau passerelle, [[Dev/Services/LiteLLM|LiteLLM]] expose des **guardrails** (modération, PII) avant/après l'appel.
+- Côté frameworks : la **validation de sortie structurée** est le garde-fou le plus courant — [[Instructor]] (objets Pydantic validés + retry), [[PydanticAI]]. Au niveau passerelle, [[LiteLLM]] expose des **guardrails** (modération, PII) avant/après l'appel.
 - Garder les guardrails **déterministes et rapides** quand c'est possible (regex/schéma) ; réserver classifieurs et LLM-judge aux cas sémantiques (coût + latence).
 - **Mesurer** taux de blocage et faux positifs en prod ([[LLM observability]]) — un garde-fou non observé dérive.
 - Piège : tout miser sur les guardrails en oubliant le **moindre privilège** des outils ([[AI security]]) — un garde-fou contourné ne doit pas donner les clés.

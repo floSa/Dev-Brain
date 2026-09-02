@@ -26,19 +26,19 @@ Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de r
 - Tester rapidement **ColBERT / late-interaction** comme retriever ou reranker, sans manipuler colbert-ai à la main.
 - Corpus **spécialisé / out-of-domain** où le dense mono-vecteur généralise mal.
 - **Fine-tuner** un modèle ColBERT sur son domaine (peu de données annotées) avec le minage de négatifs intégré.
-- Brancher la late-interaction dans [[Dev/Services/LangChain|LangChain]] / [[Dev/Services/LlamaIndex|LlamaIndex]] (intégrations fournies).
+- Brancher la late-interaction dans [[LangChain]] / [[LlamaIndex]] (intégrations fournies).
 
 ## Quand NE PAS l'utiliser
 
-- Reranking simple sur un top-k → un **cross-encoder** via [[Dev/Services/sentence-transformers|sentence-transformers]] (BGE-reranker…) est plus léger ([[Reranking]]).
-- Retrieval dense mono-vecteur classique → [[Dev/Services/sentence-transformers|sentence-transformers]] + une [[Bases de données vectorielles|base vectorielle]].
-- Mise à l'échelle de la late-interaction en production exigeante → moteur à support natif des multi-vecteurs ([[Dev/Services/Vespa|Vespa]]).
+- Reranking simple sur un top-k → un **cross-encoder** via [[sentence-transformers]] (BGE-reranker…) est plus léger ([[Reranking]]).
+- Retrieval dense mono-vecteur classique → [[sentence-transformers]] + une [[Bases de données vectorielles|base vectorielle]].
+- Mise à l'échelle de la late-interaction en production exigeante → moteur à support natif des multi-vecteurs ([[Vespa]]).
 - Besoin de garanties de maintenance à jour → vérifier l'activité du dépôt avant de s'engager.
 
 ## Déploiement & coût
 
 - `uv add ragatouille` ; Apache-2.0, gratuit. **Single-node**, **GPU** recommandé (encodage + index).
-- S'appuie sur **colbert-ai**, [[Dev/Services/PyTorch|PyTorch]], faiss-cpu et [[Dev/Services/sentence-transformers|sentence-transformers]] — dépendances lourdes.
+- S'appuie sur **colbert-ai**, [[PyTorch]], faiss-cpu et [[sentence-transformers]] — dépendances lourdes.
 - Coût caché : l'index multi-vecteur (un vecteur par token) est **plus volumineux** qu'un index mono-vecteur ; PLAID le compresse.
 
 ## Pièges
@@ -49,13 +49,13 @@ Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de r
 
 ## Alternatives
 
-Pas de substitut direct dans le brain pour la late-interaction « clé en main » : RAGatouille est le wrapper de référence au-dessus de **colbert-ai** (la lib Stanford, plus bas niveau). Pour le **reranking** classique par cross-encoder, voir [[Dev/Services/sentence-transformers|sentence-transformers]] (catégorie `ml/framework`) ; pour exécuter la late-interaction **à l'échelle**, [[Dev/Services/Vespa|Vespa]] la supporte nativement.
+Pas de substitut direct dans le brain pour la late-interaction « clé en main » : RAGatouille est le wrapper de référence au-dessus de **colbert-ai** (la lib Stanford, plus bas niveau). Pour le **reranking** classique par cross-encoder, voir [[sentence-transformers]] (catégorie `ml/framework`) ; pour exécuter la late-interaction **à l'échelle**, [[Vespa]] la supporte nativement.
 
 ## Liens
 
 - Met en œuvre le concept [[Late-interaction retrieval]] (ColBERT, MaxSim, index PLAID).
 - [[Reranking]] · [[Recherche d'information]] — ses rôles dans le pipeline (retriever ou reclasseur).
 - [[RAG]] — contexte d'usage.
-- [[Dev/Services/sentence-transformers|sentence-transformers]] — l'alternative mono-vecteur / cross-encoder.
-- [[Dev/Services/Vespa|Vespa]] — la late-interaction à l'échelle, en serving.
+- [[sentence-transformers]] — l'alternative mono-vecteur / cross-encoder.
+- [[Vespa]] — la late-interaction à l'échelle, en serving.
 - Doc : https://github.com/AnswerDotAI/RAGatouille

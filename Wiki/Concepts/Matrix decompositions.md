@@ -42,7 +42,7 @@ tags: [linear-algebra, matrix-decomposition]
 
 - Résoudre $Ax=b$ plusieurs fois avec le même $A$ : factoriser une fois (`scipy.linalg.lu_factor`), réutiliser.
 - SPD connue (covariance) → Cholesky ; jamais `inv(A)` puis produit.
-- Outils : `numpy.linalg` (`solve`, `qr`, `cholesky`, `eig`, `svd`), `scipy.linalg` (versions LAPACK plus complètes), [[Dev/Services/numpy|numpy]].
+- Outils : `numpy.linalg` (`solve`, `qr`, `cholesky`, `eig`, `svd`), `scipy.linalg` (versions LAPACK plus complètes), [[numpy]].
 
 ## Approches voisines & alternatives
 

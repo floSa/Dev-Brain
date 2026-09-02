@@ -38,7 +38,7 @@ L'utilité pratique pour qui auto-héberge : après avoir mis un service derriè
 
 - Test d'intrusion ou balayage de vulnérabilités : ce n'est pas un scanner, il ne cherche aucune faille applicative.
 - Audit TLS de référence à valeur d'attestation : Qualys SSL Labs reste la mesure citée dans les rapports.
-- Supervision continue de disponibilité : l'outil rend un instantané, il n'historise rien ni n'alerte → [[Dev/Services/Beszel|Beszel]] pour l'état des machines.
+- Supervision continue de disponibilité : l'outil rend un instantané, il n'historise rien ni n'alerte → [[Beszel]] pour l'état des machines.
 - Analyse de code, de dépendances ou de conteneurs : périmètre entièrement différent.
 - Cible n'appartenant pas au demandeur, sans autorisation : le balayage de ports et le traceroute engagent une responsabilité, même sur des données publiques.
 
@@ -63,8 +63,8 @@ Champ vide, faute de fiche réciproque : première entrée en `security/recon`. 
 
 ## Liens
 
-- [[Dev/Outils/osint4all|osint4all]] — l'annuaire de liens où trouver les outils spécialisés que Web-Check ne remplace pas
-- [[Dev/Outils/Sniffnet|Sniffnet]] — l'angle inverse : le trafic vu depuis l'intérieur de la machine
-- [[Dev/Services/Docker|Docker]] — voie d'auto-hébergement recommandée, la seule qui active toutes les sondes
+- [[osint4all]] — l'annuaire de liens où trouver les outils spécialisés que Web-Check ne remplace pas
+- [[Sniffnet]] — l'angle inverse : le trafic vu depuis l'intérieur de la machine
+- [[Docker]] — voie d'auto-hébergement recommandée, la seule qui active toutes les sondes
 - Démo publique : https://web-check.xyz
 - Repo : https://github.com/Lissy93/web-check

@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[Dev/Services/spaCy|spaCy]]"]
+alternatives: ["[[spaCy]]"]
 complements: []
 tags: [ner, nlp, transformers]
 url_docs: https://github.com/urchade/GLiNER
@@ -29,8 +29,8 @@ Modèle de **NER zero-shot** : au lieu d'une liste figée de types appris, on lu
 
 ## Quand NE PAS l'utiliser
 
-- Types d'entités **stables et volumineux** avec données dispo → un pipeline entraîné ([[Dev/Services/spaCy|spaCy]], [[Dev/Services/HuggingFace|HuggingFace]]) sera plus précis et plus rapide.
-- Pipeline linguistique complet (POS, dépendances, lemmes) → [[Dev/Services/spaCy|spaCy]].
+- Types d'entités **stables et volumineux** avec données dispo → un pipeline entraîné ([[spaCy]], [[HuggingFace]]) sera plus précis et plus rapide.
+- Pipeline linguistique complet (POS, dépendances, lemmes) → [[spaCy]].
 - Extraction relationnelle complexe / raisonnement → un LLM.
 
 ## Déploiement & coût
@@ -47,12 +47,12 @@ Modèle de **NER zero-shot** : au lieu d'une liste figée de types appris, on lu
 
 ## Alternatives
 
-- [[Dev/Services/spaCy|spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
+- [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
 
 ## Liens
 
 - [[NER et étiquetage de séquence]] — son terrain (la voie zero-shot).
 - [[Traitement du langage naturel]] — page chapeau.
-- [[Dev/Services/HuggingFace|HuggingFace]] — modèles et exécution.
-- [[Dev/Patterns/Comparatif - NLP|Comparatif — NLP]]
+- [[HuggingFace]] — modèles et exécution.
+- [[Comparatif - NLP|Comparatif — NLP]]
 - Repo : https://github.com/urchade/GLiNER

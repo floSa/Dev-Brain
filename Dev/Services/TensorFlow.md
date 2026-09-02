@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++/Python
-alternatives: ["[[Dev/Services/PyTorch|PyTorch]]", "[[Dev/Services/JAX|JAX]]"]
+alternatives: ["[[PyTorch]]", "[[JAX]]"]
 complements: []
 tags: [deep-learning, gpu, autograd, distributed]
 url_docs: https://www.tensorflow.org/
@@ -19,7 +19,7 @@ url_repo: https://github.com/tensorflow/tensorflow
 
 ## Pourquoi
 
-Framework de **deep learning** de Google, pensé dès l'origine pour le **passage en production** : graphe de calcul optimisable, déploiement multi-cibles (serveurs, mobile, navigateur, microcontrôleurs), accélération native **TPU**. L'API de haut niveau est **Keras**, qui depuis Keras 3 est **multi-backend** (TensorFlow, mais aussi [[Dev/Services/JAX|JAX]] et [[Dev/Services/PyTorch|PyTorch]]). TF reste très présent en industrie et sur l'embarqué, même si son mindshare en recherche a reculé face à PyTorch.
+Framework de **deep learning** de Google, pensé dès l'origine pour le **passage en production** : graphe de calcul optimisable, déploiement multi-cibles (serveurs, mobile, navigateur, microcontrôleurs), accélération native **TPU**. L'API de haut niveau est **Keras**, qui depuis Keras 3 est **multi-backend** (TensorFlow, mais aussi [[JAX]] et [[PyTorch]]). TF reste très présent en industrie et sur l'embarqué, même si son mindshare en recherche a reculé face à PyTorch.
 
 ## Quand l'utiliser
 
@@ -30,10 +30,10 @@ Framework de **deep learning** de Google, pensé dès l'origine pour le **passag
 
 ## Quand NE PAS l'utiliser
 
-- Recherche et prototypage rapides, suivre l'état de l'art → [[Dev/Services/PyTorch|PyTorch]] (écosystème et publications dominants).
-- Transformations fonctionnelles et compilation XLA pures → [[Dev/Services/JAX|JAX]].
-- Juste l'API Keras sans s'attacher à TF → Keras 3 tourne aussi sur backend [[Dev/Services/PyTorch|PyTorch]] ou [[Dev/Services/JAX|JAX]].
-- Données **tabulaires** → [[Dev/Services/XGBoost|XGBoost]], [[Dev/Services/Scikit-Learn|Scikit-Learn]].
+- Recherche et prototypage rapides, suivre l'état de l'art → [[PyTorch]] (écosystème et publications dominants).
+- Transformations fonctionnelles et compilation XLA pures → [[JAX]].
+- Juste l'API Keras sans s'attacher à TF → Keras 3 tourne aussi sur backend [[PyTorch]] ou [[JAX]].
+- Données **tabulaires** → [[XGBoost]], [[Scikit-Learn]].
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ Framework de **deep learning** de Google, pensé dès l'origine pour le **passag
 
 ## Alternatives
 
-- [[Dev/Services/PyTorch|PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
-- [[Dev/Services/JAX|JAX]] — Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.
+- [[PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
+- [[JAX]] — Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.
 
 ## Liens
 
-- [[Dev/Services/HuggingFace|HuggingFace]] — hub de modèles ; le support natif TensorFlow y est désormais minoritaire (transformers est passé PyTorch-first).
-- [[Dev/Services/TensorFlow Serving|TensorFlow Serving]] — serveur d'inférence dédié aux modèles TensorFlow/Keras (`SavedModel`).
-- [[Dev/Services/Keras|Keras]] — son API de haut niveau (Keras 3, multi-backend) ; backend TensorFlow par défaut.
+- [[HuggingFace]] — hub de modèles ; le support natif TensorFlow y est désormais minoritaire (transformers est passé PyTorch-first).
+- [[TensorFlow Serving]] — serveur d'inférence dédié aux modèles TensorFlow/Keras (`SavedModel`).
+- [[Keras]] — son API de haut niveau (Keras 3, multi-backend) ; backend TensorFlow par défaut.
 - Doc : https://www.tensorflow.org/ · Keras : https://keras.io/

@@ -40,7 +40,7 @@ tags: [timeseries, model-evaluation, resampling]
 
 - **Coûteux** : un réentraînement par origine. Compromis fréquent → réentraîner moins souvent qu'on ne prédit (refit périodique, prédiction à chaque pas).
 - Fixer le **gap = horizon** quand les features chevauchent la frontière train/test, sinon fuite.
-- Outils : [[Dev/Services/statsforecast|statsforecast — cross_validation]], [[Dev/Services/darts|darts — historical_forecasts / backtest]], [[Dev/Services/Scikit-Learn|sklearn — TimeSeriesSplit]].
+- Outils : [[statsforecast|statsforecast — cross_validation]], [[darts|darts — historical_forecasts / backtest]], [[Scikit-Learn|sklearn — TimeSeriesSplit]].
 
 ## Approches voisines & alternatives
 

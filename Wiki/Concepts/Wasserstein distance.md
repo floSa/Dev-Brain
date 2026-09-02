@@ -37,7 +37,7 @@ tags: [information-theory, optimal-transport]
 - **WGAN** : remplacer la [[Jensen-Shannon divergence|JS]] saturante par $W_1$ donne un gradient exploitable même quand générées et réelles ne se recouvrent pas → entraînement plus stable.
 - **Métrique d'évaluation générative** : le FID (Fréchet Inception Distance) est une $W_2$ entre gaussiennes d'activations.
 - **Détection de dérive** continue et lisse (la distance bouge proportionnellement au décalage), contrairement à la KL qui sature ou diverge.
-- Coût de calcul élevé en grande dimension → approximations : **Sinkhorn** (transport régularisé par l'entropie), sliced-Wasserstein. Outils : `scipy.stats.wasserstein_distance` ([[Dev/Services/scipy.stats|SciPy]], cas 1D), POT (Python Optimal Transport).
+- Coût de calcul élevé en grande dimension → approximations : **Sinkhorn** (transport régularisé par l'entropie), sliced-Wasserstein. Outils : `scipy.stats.wasserstein_distance` ([[scipy.stats|SciPy]], cas 1D), POT (Python Optimal Transport).
 
 ## Approches voisines & alternatives
 

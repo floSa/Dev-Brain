@@ -36,7 +36,7 @@ tags: [cdc, streaming, data-pipeline]
 
 - Préférer le **log-based** (Debezium) quand on a la main sur la base source et qu'on vise faible latence + capture des suppressions ; le **query-based** comme repli simple quand l'accès au log est impossible.
 - CDC alimente le *Load* d'un pipeline incrémental : la couche de transformation reste de l'[[ELT vs ETL & idempotence|ELT]] côté cible.
-- Souvent posé sur un bus de streaming (Kafka) entre la source et la cible ; l'orchestration ([[Dev/Services/Airflow|Airflow]], [[Dev/Services/Dagster|Dagster]]) pilote les snapshots, le monitoring et les transformations aval plutôt que le flux lui-même.
+- Souvent posé sur un bus de streaming (Kafka) entre la source et la cible ; l'orchestration ([[Airflow]], [[Dagster]]) pilote les snapshots, le monitoring et les transformations aval plutôt que le flux lui-même.
 - Poser un [[Contrats de données & qualité|contrat]] sur le flux : un changement de schéma à la source ne doit pas casser silencieusement l'aval.
 - Pièges : WAL non purgé qui sature le disque source, `DELETE` perdus en query-based, drift de schéma à la source, retraitement non idempotent à la cible.
 
@@ -46,7 +46,7 @@ tags: [cdc, streaming, data-pipeline]
 - [[Contrats de données & qualité]] — garde-fou de schéma sur le flux capturé.
 - [[Versionnage de données]] — figer des états cohérents en aval d'un flux continu.
 - Alternative naïve : rechargement complet (*full load*) périodique — simple mais lourd et sans historique des changements.
-- Orchestrateurs : [[Dev/Services/Airflow|Airflow]], [[Dev/Services/Dagster|Dagster]].
+- Orchestrateurs : [[Airflow]], [[Dagster]].
 
 ## Pour aller plus loin
 

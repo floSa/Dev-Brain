@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Dev/Services/Weaviate|Weaviate]]", "[[Dev/Services/Qdrant|Qdrant]]", "[[Dev/Services/pgvector|pgvector]]", "[[Dev/Services/Pinecone|Pinecone]]"]
+alternatives: ["[[Weaviate]]", "[[Qdrant]]", "[[pgvector]]", "[[Pinecone]]"]
 complements: []
 tags: [vector-db, rag, ann]
 url_docs: https://milvus.io/docs
@@ -32,9 +32,9 @@ Base vectorielle distribuée, conçue pour les très gros volumes (milliards de 
 
 ## Quand NE PAS l'utiliser
 
-- Volume modéré ou self-host simple → [[Dev/Services/Qdrant|Qdrant]] (un binaire, bien plus léger).
-- Déléguer l'embedding et le schéma à la base → [[Dev/Services/Weaviate|Weaviate]].
-- Du Postgres déjà en place → [[Dev/Services/pgvector|pgvector]].
+- Volume modéré ou self-host simple → [[Qdrant]] (un binaire, bien plus léger).
+- Déléguer l'embedding et le schéma à la base → [[Weaviate]].
+- Du Postgres déjà en place → [[pgvector]].
 
 ## Déploiement & coût
 
@@ -50,10 +50,10 @@ Base vectorielle distribuée, conçue pour les très gros volumes (milliards de 
 
 ## Alternatives
 
-- [[Dev/Services/Weaviate|Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
-- [[Dev/Services/Qdrant|Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
-- [[Dev/Services/pgvector|pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
-- [[Dev/Services/Pinecone|Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+- [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
+- [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
+- [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
+- [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
 ## Liens
 

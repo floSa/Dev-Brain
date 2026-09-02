@@ -39,7 +39,7 @@ tags: [rag, knowledge-graph, graph-db, retrieval, llm]
 
 - Quand le sortir : corpus riche en **entités et relations** (rapports, dossiers, normes, bases métier), questions multi-hop ou de synthèse globale. Pour du Q&A factuel passage-par-passage, le [[RAG]] vectoriel suffit et coûte moins cher.
 - Coût : la phase de construction (extraction LLM sur tout le corpus + résumés de communautés) est **lourde et à refaire** quand les données changent — à arbitrer contre le gain.
-- Stockage : un graphe se range dans une base de graphes comme [[Dev/Services/Neo4j|Neo4j]] (Cypher, algos de graphe GDS) ; [[Dev/Services/LlamaIndex|LlamaIndex]] et [[Dev/Services/LangChain|LangChain]] exposent des *property graph index* / *graph retrievers*.
+- Stockage : un graphe se range dans une base de graphes comme [[Neo4j]] (Cypher, algos de graphe GDS) ; [[LlamaIndex]] et [[LangChain]] exposent des *property graph index* / *graph retrievers*.
 - Mesurer comme tout RAG : faithfulness, context precision/recall (cf. [[RAG eval]]) — un graphe mal construit dégrade silencieusement le retrieval.
 - Piège : croire que le graphe dispense d'évaluer ; et sur-investir dans la construction avant d'avoir prouvé qu'un RAG vectoriel ne suffisait pas.
 
@@ -49,7 +49,7 @@ tags: [rag, knowledge-graph, graph-db, retrieval, llm]
 - [[RAG]] — le socle vectoriel ; GraphRAG s'y ajoute quand la structure relationnelle compte.
 - [[Construction de graphes de connaissances]] — la brique amont qui produit le graphe interrogé ici.
 - [[Hybrid retrieval]] — combiner dense + structurel relève de la même logique d'hybridation.
-- [[Bases de données vectorielles]] / [[Dev/Services/Neo4j|Neo4j]] — les deux mémoires interrogeables (vecteurs vs graphe), souvent associées.
+- [[Bases de données vectorielles]] / [[Neo4j]] — les deux mémoires interrogeables (vecteurs vs graphe), souvent associées.
 - Alternative : rester en [[RAG]] vectoriel + [[Reranking|reranking]] — plus simple et moins cher quand les questions ne sont pas relationnelles.
 
 ## Pour aller plus loin

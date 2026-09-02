@@ -51,4 +51,4 @@ tags: [bayesian, point-estimation, prior]
 ## Pour aller plus loin
 
 - Lien régularisation : ridge ⇔ a priori gaussien, lasso ⇔ a priori de Laplace — un même calcul, deux lectures.
-- Outils : `scikit-learn` (régressions pénalisées = MAP implicite), [[Dev/Services/PyMC|PyMC]] (`find_MAP`).
+- Outils : `scikit-learn` (régressions pénalisées = MAP implicite), [[PyMC]] (`find_MAP`).

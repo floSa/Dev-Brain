@@ -23,7 +23,7 @@ url_repo: https://github.com/THU-MAIC/OpenMAIC
 
 « Open Multi-Agent Interactive Classroom », issu de l'équipe **THU-MAIC** de l'université **Tsinghua**. Prend en entrée un sujet ou un document et produit une **classe complète** : suites de slides avec narration, quiz interactifs, simulations HTML, séquences de projet. Des **agents enseignant et camarades** animent la séance — ils parlent en synthèse vocale, débattent, écrivent formules et schémas au tableau blanc.
 
-Cette fiche porte la catégorie `llm/app` — et c'est le point à retenir. `llm/framework` désigne les briques et SDK **avec lesquels on construit** un système d'agents ; `llm/app` désigne une **application prête à déployer et à utiliser telle quelle**. OpenMAIC n'est pas un framework d'agents : c'est un produit qui en **consomme** un, [[Dev/Services/LangGraph|LangGraph]], pour orchestrer sa classe. On l'installe et on s'en sert ; on n'assemble rien.
+Cette fiche porte la catégorie `llm/app` — et c'est le point à retenir. `llm/framework` désigne les briques et SDK **avec lesquels on construit** un système d'agents ; `llm/app` désigne une **application prête à déployer et à utiliser telle quelle**. OpenMAIC n'est pas un framework d'agents : c'est un produit qui en **consomme** un, [[LangGraph]], pour orchestrer sa classe. On l'installe et on s'en sert ; on n'assemble rien.
 
 Conséquence pratique : la comparaison pertinente n'est pas « OpenMAIC ou CrewAI » mais « OpenMAIC ou construire soi-même cette application ». Le coût d'entrée est celui d'un déploiement, pas celui d'un développement.
 
@@ -38,7 +38,7 @@ Stack Next.js / React / TypeScript, agnostique du fournisseur de modèle (OpenAI
 
 ## Quand NE PAS l'utiliser
 
-- Construire une **application d'agents** propre : c'est un framework qu'il faut, pas ce produit → [[Dev/Services/LangGraph|LangGraph]], [[Dev/Services/PraisonAI|PraisonAI]], [[Dev/Services/CrewAI|CrewAI]].
+- Construire une **application d'agents** propre : c'est un framework qu'il faut, pas ce produit → [[LangGraph]], [[PraisonAI]], [[CrewAI]].
 - Besoin d'un simple générateur de présentations : la classe multi-agents est un surcoût inutile.
 - Plateforme d'apprentissage avec suivi des apprenants, inscriptions, notation : ce n'est pas un LMS.
 - Contexte où le contenu généré doit être **certifié exact** sans relecture humaine (cf. Pièges).
@@ -65,8 +65,8 @@ Aucune application équivalente n'est référencée dans le brain à ce jour : l
 
 ## Liens
 
-- Orchestre ses agents via [[Dev/Services/LangGraph|LangGraph]] — Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.
-- Intégration messagerie annoncée avec [[Dev/Services/OpenClaw|OpenClaw]] (Feishu, Slack, Telegram, Discord).
+- Orchestre ses agents via [[LangGraph]] — Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.
+- Intégration messagerie annoncée avec [[OpenClaw]] (Feishu, Slack, Telegram, Discord).
 - [[Multi-agent systems]] — concept : plusieurs agents en interaction, le cœur du dispositif
 - [[Agent patterns]] — concept : les schémas d'agents mobilisés
 - Repo : https://github.com/THU-MAIC/OpenMAIC

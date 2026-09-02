@@ -35,7 +35,7 @@ tags: [signal-processing, spectrogram, fourier]
 
 ## En pratique
 
-- [[Dev/Services/scipy.signal|scipy.signal]] (`stft`, `spectrogram`) ; [[Dev/Services/librosa|librosa]] (`melspectrogram`, `mfcc`) pour l'audio.
+- [[scipy.signal]] (`stft`, `spectrogram`) ; [[librosa]] (`melspectrogram`, `mfcc`) pour l'audio.
 - Réglages clés : `n_fft` (résolution fréquentielle), `hop_length` (résolution temporelle), choix de fenêtre.
 - Beaucoup de modèles audio (CNN, transformers) prennent le **mel-spectrogramme** en entrée plutôt que la forme d'onde brute.
 

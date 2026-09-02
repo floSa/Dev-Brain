@@ -54,7 +54,7 @@ tags: [supervised, classification, bayesian]
 - **À l'aise quand $d \gg n$** : c'est le cas du texte, où le vocabulaire dépasse le nombre de documents. Là où [[k-NN]] s'effondre, lui tient.
 - **Variables corrélées = son point faible.** Dupliquer une variable revient à compter son témoignage deux fois, et le modèle devient d'autant plus sûr de lui qu'il a tort. Retirer les redondances évidentes ([[Sélection de variables]]).
 - GaussianNB sur des variables franchement non gaussiennes est à éviter — transformer d'abord, ou prendre un [[Gradient Boosting (GBDT)|GBDT]] qui ne suppose rien.
-- Outils : [[Dev/Services/Scikit-Learn|sklearn.naive_bayes]] (`MultinomialNB`, `BernoulliNB`, `GaussianNB`, `ComplementNB`), en `Pipeline` avec `TfidfVectorizer`.
+- Outils : [[Scikit-Learn|sklearn.naive_bayes]] (`MultinomialNB`, `BernoulliNB`, `GaussianNB`, `ComplementNB`), en `Pipeline` avec `TfidfVectorizer`.
 
 ## Approches voisines & alternatives
 

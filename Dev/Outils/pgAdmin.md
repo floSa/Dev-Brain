@@ -9,7 +9,7 @@ domaines: [data-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, web (Docker)"
 langage: Python
-alternatives: ["[[Dev/Outils/DBeaver|DBeaver]]"]
+alternatives: ["[[DBeaver]]"]
 complements: []
 tags: [db-client, postgres, relational]
 url_docs: https://www.pgadmin.org/docs/
@@ -30,7 +30,7 @@ L'outil d'administration **officiel** de PostgreSQL. Application web (servie en 
 
 ## Quand NE PAS l'utiliser
 
-- Travailler sur plusieurs SGBD différents → [[Dev/Outils/DBeaver|DBeaver]].
+- Travailler sur plusieurs SGBD différents → [[DBeaver]].
 - Préférer un client de bureau natif plutôt qu'une UI web.
 
 ## Bases & plateformes
@@ -45,11 +45,11 @@ L'outil d'administration **officiel** de PostgreSQL. Application web (servie en 
 
 ## Alternatives
 
-- [[Dev/Outils/DBeaver|DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+- [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
 ## Liens
 
-- [[Wiki/Concepts/Bases de données|Bases de données]] — le concept (Wiki)
-- [[Dev/Services/Postgres|Postgres]] — le moteur administré
+- [[Bases de données]] — le concept (Wiki)
+- [[Postgres]] — le moteur administré
 - [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
 - Doc : https://www.pgadmin.org/docs/

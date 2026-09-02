@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Dev/Services/hnswlib|hnswlib]]", "[[Dev/Services/Faiss|Faiss]]", "[[Dev/Services/ScaNN|ScaNN]]", "[[Dev/Services/Chroma|Chroma]]"]
+alternatives: ["[[hnswlib]]", "[[Faiss]]", "[[ScaNN]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded]
 url_docs: https://pypi.org/project/annoy/
@@ -29,10 +29,10 @@ url_repo: https://github.com/spotify/annoy
 
 ## Quand NE PAS l'utiliser
 
-- Nouveau projet cherchant le meilleur débit/rappel → [[Dev/Services/hnswlib|hnswlib]] (base de Voyager) ou [[Dev/Services/ScaNN|ScaNN]].
+- Nouveau projet cherchant le meilleur débit/rappel → [[hnswlib]] (base de Voyager) ou [[ScaNN]].
 - Index **mutable** (ajouts/suppressions fréquents) : Annoy fige l'index après `build()`.
-- Besoin de persistance riche, filtrage, CRUD, API → un serveur : [[Dev/Services/Qdrant|Qdrant]], [[Dev/Services/Weaviate|Weaviate]], [[Dev/Services/Milvus|Milvus]].
-- Prototype RAG clé en main → [[Dev/Services/Chroma|Chroma]].
+- Besoin de persistance riche, filtrage, CRUD, API → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
+- Prototype RAG clé en main → [[Chroma]].
 
 ## Déploiement & coût
 
@@ -48,10 +48,10 @@ url_repo: https://github.com/spotify/annoy
 
 ## Alternatives
 
-- [[Dev/Services/hnswlib|hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
-- [[Dev/Services/Faiss|Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
-- [[Dev/Services/ScaNN|ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
-- [[Dev/Services/Chroma|Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+- [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
+- [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
+- [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+- [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
 ## Liens
 

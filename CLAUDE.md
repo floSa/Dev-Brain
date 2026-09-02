@@ -169,9 +169,21 @@ dit ce qui s'utilise **à sa place**.
 
 **Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 
-**Convention wikilinks** (qualifiés par chemin pour éviter les collisions v1/v2) :
-- `[[Dev/Services/Postgres|Postgres]]` → fiche Service
-- Pas d'ambiguïté possible.
+**Convention wikilinks** — **nus**, jamais qualifiés par chemin :
+- `[[Postgres]]` → la fiche, quel que soit son dossier.
+- `[[Postgres|la base]]` → le pipe ne sert qu'à changer le **texte affiché**, jamais à
+  porter un chemin.
+
+La convention qualifiée d'avant le lot 3 visait des collisions de nom entre v1 et v2 qui
+n'existent plus : le réservoir v1 est hors du vault, et la dernière collision interne —
+`Dev/Services/hdbscan.md` contre `Wiki/Concepts/HDBSCAN.md`, que le système de fichiers
+Windows ne distingue même pas — est tombée avec le renommage de la notion en
+`Clustering hiérarchique par densité`. Obsidian résout un lien nu par nom de fichier.
+
+La raison de tenir le nu : un lien qualifié porte un chemin, donc casse au déplacement.
+La v3 déplace 682 fichiers au lot 3, puis encore aux lots 4 à 6. Avec des liens nus,
+un `git mv` ne touche aucun lien. **Avant de créer une page, vérifier que son nom de
+fichier est unique dans le vault** — c'est la seule contrainte que le nu impose.
 
 ## Protocole de session
 

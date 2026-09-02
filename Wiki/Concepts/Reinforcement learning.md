@@ -43,8 +43,8 @@ tags: [reinforcement-learning, markov-decision-process]
 - Coûteux et instable : besoin de beaucoup d'interactions (sample inefficiency), récompense difficile à concevoir, entraînement sensible aux hyperparamètres.
 - En AI engineering, le RL post-entraîne les LLM : cf. [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[GRPO]].
 - Le [[Multi-armed bandits|bandit manchot]] est le cas dégénéré sans état (une seule décision répétée) — bon point d'entrée pour comprendre l'arbitrage exploration/exploitation.
-- Côté outils : [[Dev/Services/Stable-Baselines3|Stable-Baselines3]] fournit des algorithmes prêts à l'emploi (PyTorch) sur des environnements [[Dev/Services/Gymnasium|Gymnasium]] (API standard agent-environnement) — le stack par défaut pour entraîner un agent sans repartir de zéro.
-- Pour la recherche : [[Dev/Services/Acme|Acme]] (agents distribués DeepMind) et [[Dev/Services/RLax|RLax]] (briques de perte en pur JAX) ; [[Dev/Services/TF-Agents|TF-Agents]] côté TensorFlow ; [[Dev/Services/OpenSpiel|OpenSpiel]] pour les jeux multi-agents.
+- Côté outils : [[Stable-Baselines3]] fournit des algorithmes prêts à l'emploi (PyTorch) sur des environnements [[Gymnasium]] (API standard agent-environnement) — le stack par défaut pour entraîner un agent sans repartir de zéro.
+- Pour la recherche : [[Acme]] (agents distribués DeepMind) et [[RLax]] (briques de perte en pur JAX) ; [[TF-Agents]] côté TensorFlow ; [[OpenSpiel]] pour les jeux multi-agents.
 
 ## Approches voisines & alternatives
 

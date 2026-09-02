@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: TypeScript
 scaling: distributed
-alternatives: ["[[Dev/Services/Maxun|Maxun]]"]
+alternatives: ["[[Maxun]]"]
 complements: []
 tags: [web-scraping, markdown-conversion]
 url_docs: https://docs.firecrawl.dev/
@@ -31,9 +31,9 @@ Service qui **transforme des pages web en Markdown ou JSON structuré directemen
 
 ## Quand NE PAS l'utiliser
 
-- Contrôle fin du crawl (pipelines, middlewares, règles par domaine) → [[Dev/Services/Scrapy|Scrapy]] ou [[Dev/Services/Crawlee|Crawlee]].
-- Interactions complexes sur la page (clics, scroll, formulaires) → [[Dev/Services/Playwright|Playwright]].
-- Interface **visuelle sans code** pour non-développeurs → [[Dev/Services/Maxun|Maxun]].
+- Contrôle fin du crawl (pipelines, middlewares, règles par domaine) → [[Scrapy]] ou [[Crawlee]].
+- Interactions complexes sur la page (clics, scroll, formulaires) → [[Playwright]].
+- Interface **visuelle sans code** pour non-développeurs → [[Maxun]].
 
 ## Déploiement & coût
 
@@ -49,10 +49,10 @@ Service qui **transforme des pages web en Markdown ou JSON structuré directemen
 
 ## Alternatives
 
-- [[Dev/Services/Maxun|Maxun]] — Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.
+- [[Maxun]] — Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.
 
 ## Liens
 
 - [[Web scraping]] — le concept (rendu, anti-bot, ingestion).
-- [[Dev/Patterns/Comparatif - Scraping]]
+- [[Comparatif - Scraping]]
 - Doc : https://docs.firecrawl.dev/

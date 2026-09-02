@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Dev/Services/ZenML|ZenML]]", "[[Dev/Services/Flyte|Flyte]]"]
+alternatives: ["[[ZenML]]", "[[Flyte]]"]
 complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.metaflow.org/
@@ -32,9 +32,9 @@ Metaflow est un framework ML créé et open-sourcé par **Netflix** (2019), pens
 
 ## Quand NE PAS l'utiliser
 
-- Besoin de neutralité d'infrastructure / multi-orchestrateur derrière une abstraction → [[Dev/Services/ZenML|ZenML]].
-- Orchestration Kubernetes-native avec typage fort des données et cache d'exécution → [[Dev/Services/Flyte|Flyte]].
-- Orchestration data généraliste (ELT, connecteurs, assets) plutôt que ML → [[Dev/Services/Dagster|Dagster]] / [[Dev/Services/Airflow|Airflow]].
+- Besoin de neutralité d'infrastructure / multi-orchestrateur derrière une abstraction → [[ZenML]].
+- Orchestration Kubernetes-native avec typage fort des données et cache d'exécution → [[Flyte]].
+- Orchestration data généraliste (ELT, connecteurs, assets) plutôt que ML → [[Dagster]] / [[Airflow]].
 
 ## Déploiement & coût
 
@@ -50,12 +50,12 @@ Metaflow est un framework ML créé et open-sourcé par **Netflix** (2019), pens
 
 ## Alternatives
 
-- [[Dev/Services/ZenML|ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
-- [[Dev/Services/Flyte|Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
+- [[ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
+- [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
 
 ## Liens
 
 - [[Comparatif - Orchestrateurs ML]] — comparatif de la catégorie
-- S'appuie sur : [[Dev/Services/AWS S3|AWS S3]] (datastore), [[Dev/Services/Docker|Docker]] / Kubernetes.
-- S'intègre avec : [[Dev/Services/MLflow|MLflow]].
+- S'appuie sur : [[AWS S3]] (datastore), [[Docker]] / Kubernetes.
+- S'intègre avec : [[MLflow]].
 - Doc : https://docs.metaflow.org/
