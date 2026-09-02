@@ -38,10 +38,10 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 - [[Data Science]] · [[Data Engineering]] · [[MLOps]] · [[ML Engineering]] · [[AI Engineering]]
 
-## Hubs (MOC) — pas encore absorbés par l'arbre
+## Rangés par `role:` — aucune `categorie:` ne les range
 
-- [[Patterns]] — architectures type
-- [[Rules]] — règles transverses
+- [[Patterns]] — 5 architectures type, chacune enjambant plusieurs domaines
+- [[Rules]] — 5 règles transverses, applicables quelle que soit la stack
 
 ## Pilotage
 

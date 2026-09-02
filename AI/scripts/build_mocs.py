@@ -6,25 +6,19 @@
 
 Pages de navigation qui relient les membres d'une famille par des [[liens]]
 explicites (→ arêtes visibles dans le graphe Obsidian) :
-  - MOC/Categories/<Label>.md : hub Dev par catégorie de tête (database → « Bases de données »)
-  - MOC/Types/<Label>.md      : hub Dev par `role:` pour les rôles sans `categorie:` (pattern, rule)
+  - la zone AUTO de chaque page `role: hub` de l'arbre — son périmètre est son DOSSIER
   - MOC/Concepts/<Label>.md   : sous-hub Wiki par famille de catégorie (concept/stats → « Statistiques »)
   - Métiers/<Label>.md        : hub transverse par `domaines:` (data-eng → « Data Engineering »)
 
-Le partage Dev / Wiki se lit sur le CHEMIN et non sur un champ : `galaxie:` a disparu au
-lot 2, et l'arborescence ne bouge qu'au lot 3. Ce script est de toute façon appelé à être
-réécrit à ce moment-là — il ne générera plus `MOC/` mais les zones AUTO des pages hub
-(cf. AI/design/brain-v3.md §11). Redécouper la navigation sur `role:` dès maintenant
-déplacerait des pages d'un hub à l'autre pour rien, deux fois de suite.
+Le lot 3 a vidé `Dev/` : les 337 briques sont descendues dans l'arbre des domaines, les
+5 patterns et les 5 règles dans « Patterns/ » et « Rules/ ». Les deux boucles qui
+généraient `MOC/Categories/` et `MOC/Types/` ont donc été retirées — le hub d'un dossier
+liste ce que ce dossier contient, quel que soit le `role:` de ses pages, et c'est tout
+l'intérêt de l'arborescence (brain-v3 §10). Il ne reste de `MOC/` que `MOC/Concepts/`,
+seule porte d'entrée des 297 notions qui attendent le lot 4 : elle meurt avec elles.
 
 Les liens sont régénérés entre les balises AUTO ; la zone « ## Notes » est
 préservée à chaque régénération (place pour tes ajouts manuels).
-
-Le script rend compte de ce qu'il écarte (R13, audit axe 2, annexe B) : une ligne
-`[SKIP]` donne le nombre de pages Dev sans `categorie:` sorties des hubs
-MOC/Categories, combien sont rattrapées par MOC/Types, et la liste nominative de
-celles qui restent hors de TOUT hub. Ce reste est le seul chiffre inquiétant : une
-page hors MOC est invisible à la navigation, et `check_brain` la refuse (R7).
 
 Usage : uv run AI/scripts/build_mocs.py   (après build_index.py)
 Cross-OS, chemins relatifs, sortie déterministe.
@@ -39,8 +33,6 @@ from pathlib import Path
 VAULT = Path(__file__).resolve().parents[2]
 INDEX = VAULT / "AI" / "index" / "brain-index.json"
 MOC = VAULT / "MOC"
-MOC_CAT = VAULT / "MOC" / "Categories"
-MOC_TYPE = VAULT / "MOC" / "Types"
 # Les 5 hubs transverses de `domaines:` sont descendus à la racine au lot 3 (arbitrage
 # de floSa) : ils sont le seul axe qui traverse un arbre rangé par domaine TECHNIQUE.
 # Le dossier ne s'appelle pas « Domaines » — le mot désigne déjà les 20 dossiers de
@@ -48,36 +40,6 @@ MOC_TYPE = VAULT / "MOC" / "Types"
 # remontée 21 (collision de vocabulaire, à trancher au lot 8).
 METIERS = VAULT / "Métiers"
 MOC_CONCEPT = VAULT / "MOC" / "Concepts"
-
-# Libellé français d'un préfixe de tête de `categorie:`. UN LIBELLÉ PAR PRÉFIXE :
-# un préfixe absent de cette table sort en anglais capitalisé (« Devtools »), défaut
-# déjà corrigé une fois pour `network` et `security`. Les 20 préfixes du vocabulaire
-# en vigueur sont listés dans Documentation/general/taxonomie.md.
-CAT_LABEL = {
-    "ml": "Machine Learning", "llm": "LLM & IA générative",
-    "database": "Bases de données", "data": "Data & pipelines",
-    "devtools": "Outils de développement", "stats": "Statistiques & inférence",
-    "compute": "Calcul distribué", "design": "Design & diagrammes",
-    "storage": "Stockage", "web": "Web & API",
-    "automation": "Automatisation no-code", "media": "Médias",
-    "ui": "Interfaces & apps data", "observability": "Observabilité",
-    "security": "Sécurité", "signal": "Signal & audio",
-    "network": "Réseau", "devops": "DevOps",
-    "docs": "Documents", "math": "Mathématiques",
-}
-# Hubs Dev groupés sur `role:` et NON sur `categorie:` : les rôles pattern et rule
-# n'ont pas de `categorie:` (la taxonomie ne les couvre pas), une catégorie vide est falsy,
-# ils sortaient donc de toutes les MOC. `role:` est présent et fiable sur 100 % des pages.
-# On n'invente PAS de catégorie pour ces rôles : ce serait de la taxonomie, pas de la navigation.
-# Le rôle déjà couvert par MOC/Categories (brique) n'est pas repris ici.
-ROLE_LABEL = {
-    "pattern": "Patterns",
-    "rule": "Rules",
-}
-ROLE_INTRO = {
-    "pattern": "Architectures type — combinaisons de briques `Dev/` déjà éprouvées.",
-    "rule": "Règles transverses, applicables quelle que soit la stack du projet.",
-}
 
 # Un hub de `Métiers/` est rempli par la boucle `domaines:` ci-dessous, PAS par
 # `zone_hub()` : son périmètre est un champ, pas un dossier. Le lister dans les deux
@@ -174,7 +136,14 @@ def upsert(path: Path, title: str, intro: str, bullets: list[str],
 RE_ROLE_HUB = re.compile(r"^role: hub\s*$", re.M)
 NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
              "Projects", "docs", "MOC"}
-ROLE_SECTION = [("notion", "Notions"), ("brique", "Briques")]
+# Sections de la zone AUTO d'un hub, dans l'ordre, une par `role:` groupable. `pattern`
+# et `rule` s'y sont ajoutés à la clôture du lot 3 : leurs pages n'ont pas de `categorie:`
+# (la taxonomie ne les couvre pas), elles sortaient donc de tout groupement par catégorie
+# et il avait fallu `MOC/Types/` pour les rattraper. Un hub groupe par DOSSIER, pas par
+# catégorie : « Patterns/ » et « Rules/ » les listent sans rattrapage, et `MOC/Types/`
+# n'a plus lieu d'être — ses deux pages SONT devenues ces deux hubs, par `git mv`.
+ROLE_SECTION = [("notion", "Notions"), ("brique", "Briques"),
+                ("pattern", "Patterns"), ("rule", "Rules")]
 
 
 def dossiers_de_pages() -> list[Path]:
@@ -235,56 +204,13 @@ def main() -> int:
     written: list[tuple[str, str, int]] = []
     skipped: list[str] = []
 
-    # Hubs Dev : par catégorie de tête (database/vecteur → database → « Bases de données »)
-    cat_groups: dict[str, list[dict]] = {}
-    sans_categorie: list[dict] = []
-    for p in pages:
-        if not p["path"].startswith("Dev/"):
-            continue
-        head = (p.get("categorie") or "").split("/")[0]
-        if head:
-            cat_groups.setdefault(head, []).append(p)
-        else:
-            sans_categorie.append(p)  # R13 : compté, plus jamais écarté en silence
-    for head, members in sorted(cat_groups.items()):
-        label = CAT_LABEL.get(head, head.capitalize())
-        bullets = [bullet(p) for p in sorted(members, key=lambda e: e["nom"].lower())]
-        upsert(MOC_CAT / f"{label}.md", label,
-               f"Briques techniques de la catégorie `{head}/*`.",
-               bullets, f"{head}/*")
-        written.append(("Categories", label, len(members)))
-
-    # Hubs Dev : par `type:`, pour les types que `categorie:` ne peut pas grouper.
-    role_groups: dict[str, list[dict]] = {}
-    for p in pages:
-        role = p.get("role")
-        if role in ROLE_LABEL:
-            role_groups.setdefault(role, []).append(p)
-    for role, members in sorted(role_groups.items()):
-        label = ROLE_LABEL[role]
-        bullets = [bullet(p) for p in sorted(members, key=lambda e: e["nom"].lower())]
-        upsert(MOC_TYPE / f"{label}.md", label, ROLE_INTRO[role],
-               bullets, f"role/{role}")
-        written.append(("Types", label, len(members)))
-
-    # R13 (audit axe 2, annexe B) : le groupement par `categorie:` écarte des pages Dev,
-    # et le faisait sans le dire. On imprime combien, et surtout combien restent hors de
-    # tout hub après le rattrapage par `type:` — c'est ce reste qui est un vrai trou.
-    if sans_categorie:
-        rattrapees = [p for p in sans_categorie if p.get("role") in ROLE_LABEL]
-        orphelines = [p for p in sans_categorie if p.get("role") not in ROLE_LABEL]
-        par_role: dict[str, int] = {}
-        for p in orphelines:
-            par_role[str(p.get("role"))] = par_role.get(str(p.get("role")), 0) + 1
-        skipped.append(
-            f"{len(sans_categorie)} page(s) Dev sans `categorie:` hors des hubs "
-            f"MOC/Categories — dont {len(rattrapees)} rattrapée(s) par MOC/Types "
-            f"({', '.join(f'{t}' for t in sorted(ROLE_LABEL))})")
-        if orphelines:
-            detail = ", ".join(f"{t} x{n}" for t, n in sorted(par_role.items()))
-            skipped.append(f"{len(orphelines)} page(s) Dev hors de TOUT hub ({detail}) :")
-            for p in sorted(orphelines, key=lambda e: e["path"]):
-                skipped.append(f"    {p['path']}")
+    # Les deux boucles `Dev/` — `MOC/Categories/` par `categorie:` de tête, `MOC/Types/`
+    # par `role:` — ont été RETIRÉES à la clôture du lot 3 : plus aucune page ne vit sous
+    # `Dev/`. Les 337 briques sont descendues dans l'arbre, où le hub de leur dossier les
+    # liste ; les 5 patterns et les 5 règles sont dans « Patterns/ » et « Rules/ », dont
+    # les hubs sont issus de `MOC/Types/` par `git mv`. Le rattrapage R13 (audit axe 2,
+    # annexe B) disparaît avec elles : une page sans `categorie:` n'est plus écartée d'un
+    # groupement par catégorie, elle est listée par le hub de son dossier comme les autres.
 
     # Sous-hubs Wiki : un MOC par famille de catégorie — étage intermédiaire.
     # Liste les feuilles ; c'est ce nœud (Statistiques, Maths du ML…) qui devient le gros hub concret.

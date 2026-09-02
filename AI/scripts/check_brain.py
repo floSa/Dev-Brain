@@ -103,8 +103,10 @@ BRIQUE_ALLOWED = {"role", "nom", "alias", "pitch", "categorie", "famille", "doma
                   "licence_type", "langage", "os", "hosted", "scaling", "maturite",
                   "alternatives", "complements", "tags", "url_docs", "url_repo"}
 NOTION_ALLOWED = {"role", "nom", "alias", "categorie", "domaines", "tags"}
-# `role: pattern` / `role: rule` — gabarits sans `nom:` ni `categorie:` (la
-# taxonomie ne les couvre pas ; leur porte d'entrée est MOC/Types/, cf. build_mocs).
+# `role: pattern` / `role: rule` — gabarits sans `nom:` ni `categorie:` (la taxonomie
+# ne les couvre pas, et c'est délibéré : un pattern enjambe plusieurs domaines, une règle
+# est transverse). Leur porte d'entrée est le hub de leur dossier — « Patterns/ » et
+# « Rules/ », nés à la clôture du lot 3 de `MOC/Types/` par `git mv`.
 PATTERN_ALLOWED = {"role", "tags", "contexte", "services_cles", "projets_appliques"}
 RULE_ALLOWED = {"role", "tags", "domaine", "applicable", "strictness"}
 # `role: hub` — la page d'un dossier, née au lot 3 avec l'arborescence (spec v3 §9).

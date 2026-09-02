@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 695 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 697 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -907,8 +907,10 @@
 - **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
+- **Patterns** — Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
+- **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
 - **Runtimes** — Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
 - **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 695 pages actives.
+> 697 pages actives.
 
 ## Par page
 
@@ -1855,6 +1855,11 @@
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
 - liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Vision]]
 
+### Patterns  ·  hub
+- tags : —
+- liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
+- liens entrants : —
+
 ### Recherche  ·  hub
 - tags : —
 - liens sortants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Vectoriel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
@@ -1864,6 +1869,11 @@
 - tags : —
 - liens sortants : [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
 - liens entrants : [[Bases de données]], [[Data Engineering]]
+
+### Rules  ·  hub
+- tags : —
+- liens sortants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
+- liens entrants : [[Patterns]]
 
 ### Runtimes  ·  hub
 - tags : `local-llm`, `inference`, `inference-optimization`, `quantization`, `model-serving`
@@ -3433,52 +3443,52 @@
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[OpenRouter]], [[SGLang]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]]
+- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[Patterns]]
 
 ### Pattern - Moteur de jeu pur + IA séparée  ·  pattern
 - tags : `pattern`, `reinforcement-learning`, `self-play`, `game-theory`, `planning`
 - liens sortants : [[AlphaZero and self-play]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Markov Decision Process]], [[Monte Carlo Tree Search]], [[PyTorch]], [[Reinforcement learning]], [[Stable-Baselines3]], [[Théorie des jeux]]
-- liens entrants : —
+- liens entrants : [[Patterns]]
 
 ### Pattern - Pipeline scraping → matching → optimisation  ·  pattern
 - tags : `pattern`, `web-scraping`, `string-matching`, `combinatorial-optimization`, `linear-programming`, `data-pipeline`
 - liens sortants : [[BM25]], [[Comparatif - Scraping]], [[Comparatif - Solveurs d'optimisation]], [[Dagster]], [[Fuzzy matching & similarité de chaînes]], [[Optimisation combinatoire]], [[Playwright]], [[Prefect]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Pydantic]], [[Web scraping]], [[bm25s]], [[cloudscraper]], [[curl_cffi]], [[rank-bm25]], [[selectolax]], [[sentence-transformers]]
-- liens entrants : —
+- liens entrants : [[Patterns]]
 
 ### Pattern - RAG structuré graphe + human-in-the-loop  ·  pattern
 - tags : `pattern`, `rag`, `knowledge-graph`, `graph-db`, `human-in-the-loop`, `agents`
 - liens sortants : [[Advanced RAG]], [[Comparatif - Bases graphes]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[GraphRAG]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[LangChain]], [[LangGraph]], [[NER et étiquetage de séquence]], [[Neo4j]], [[Qdrant]], [[RAG]], [[sentence-transformers]]
-- liens entrants : —
+- liens entrants : [[Patterns]]
 
 ### Pattern - Stack démo ML locale multi-services  ·  pattern
 - tags : `pattern`, `ml-demo`, `data-app`, `container`, `object-storage`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Bases NoSQL]], [[Comparatif - Frontends web légers]], [[Docker]], [[FastAPI]], [[MinIO]], [[MongoDB]], [[Postgres]], [[Streamlit]], [[Uvicorn]], [[testcontainers]]
-- liens entrants : [[Rule - Packaging démo]]
+- liens entrants : [[Patterns]], [[Rule - Packaging démo]]
 
 ### Rule - Config typée  ·  rule
 - tags : `rule`, `config`, `data-validation`, `type-hints`
 - liens sortants : [[Pydantic]], [[Pydantic Settings]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]]
-- liens entrants : [[Rule - Qualité stricte]], [[Rule - Structure de projet]]
+- liens entrants : [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rules]]
 
 ### Rule - Packaging démo  ·  rule
 - tags : `rule`, `container`, `ci-cd`, `reproducibility`
 - liens sortants : [[Docker]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
-- liens entrants : [[Rule - Structure de projet]]
+- liens entrants : [[Rule - Structure de projet]], [[Rules]]
 
 ### Rule - Qualité stricte  ·  rule
 - tags : `rule`, `linter`, `type-hints`, `testing`, `ci-cd`
 - liens sortants : [[GitHub Actions]], [[Ruff]], [[Rule - Config typée]], [[Rule - Toolchain Python]], [[pytest]]
-- liens entrants : [[Rule - Config typée]], [[Rule - Toolchain Python]]
+- liens entrants : [[Rule - Config typée]], [[Rule - Toolchain Python]], [[Rules]]
 
 ### Rule - Structure de projet  ·  rule
 - tags : `rule`, `reproducibility`
 - liens sortants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Toolchain Python]]
-- liens entrants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Toolchain Python]]
+- liens entrants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Toolchain Python]], [[Rules]]
 
 ### Rule - Toolchain Python  ·  rule
 - tags : `rule`, `package-manager`, `linter`, `formatter`
 - liens sortants : [[Ruff]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[uv]]
-- liens entrants : [[Rule - Packaging démo]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]]
+- liens entrants : [[Rule - Packaging démo]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rules]]
 
 ## Tags → pages
 

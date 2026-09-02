@@ -106,6 +106,13 @@ SUB_LABEL = {
     "ml/tabulaire": "Tabulaire",
 }
 
+# Rôles qui n'ont PAS de `categorie:` et que la dérivation ci-dessous ne concerne donc
+# pas : la taxonomie ne les couvre pas, et c'est délibéré — un pattern enjambe plusieurs
+# domaines par construction, une règle est transverse par définition. C'est `role:` qui
+# les groupe, dans « Patterns/ » et « Rules/ » à la racine (clôture du lot 3, arbitrage
+# de floSa) ; leur chemin ne se dérive pas, il se lit sur le rôle.
+ROLES_SANS_CATEGORIE = {"pattern", "rule"}
+
 # Dossiers de la racine qui ne portent pas de pages du brain.
 NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
              "Projects", "docs", "MOC"}

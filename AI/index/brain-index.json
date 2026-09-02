@@ -17,6 +17,8 @@
     "Métiers",
     "Observabilité",
     "Outils de développement",
+    "Patterns",
+    "Rules",
     "Réseau",
     "Signal & audio",
     "Statistiques & inférence",
@@ -26,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 695,
+  "count": 697,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -5919,202 +5921,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Patterns/Pattern - Agent sur LLM auto-hébergé.md",
-      "nom": "Pattern - Agent sur LLM auto-hébergé",
-      "alias": null,
-      "role": "pattern",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "pattern",
-        "agents",
-        "llm",
-        "local-llm",
-        "tool-use"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Patterns/Pattern - Moteur de jeu pur + IA séparée.md",
-      "nom": "Pattern - Moteur de jeu pur + IA séparée",
-      "alias": null,
-      "role": "pattern",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "pattern",
-        "reinforcement-learning",
-        "self-play",
-        "game-theory",
-        "planning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Patterns/Pattern - Pipeline scraping → matching → optimisation.md",
-      "nom": "Pattern - Pipeline scraping → matching → optimisation",
-      "alias": null,
-      "role": "pattern",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "pattern",
-        "web-scraping",
-        "string-matching",
-        "combinatorial-optimization",
-        "linear-programming",
-        "data-pipeline"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Patterns/Pattern - RAG structuré graphe + human-in-the-loop.md",
-      "nom": "Pattern - RAG structuré graphe + human-in-the-loop",
-      "alias": null,
-      "role": "pattern",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "pattern",
-        "rag",
-        "knowledge-graph",
-        "graph-db",
-        "human-in-the-loop",
-        "agents"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Patterns/Pattern - Stack démo ML locale multi-services.md",
-      "nom": "Pattern - Stack démo ML locale multi-services",
-      "alias": null,
-      "role": "pattern",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "pattern",
-        "ml-demo",
-        "data-app",
-        "container",
-        "object-storage"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Rules/Rule - Config typée.md",
-      "nom": "Rule - Config typée",
-      "alias": null,
-      "role": "rule",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rule",
-        "config",
-        "data-validation",
-        "type-hints"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Rules/Rule - Packaging démo.md",
-      "nom": "Rule - Packaging démo",
-      "alias": null,
-      "role": "rule",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rule",
-        "container",
-        "ci-cd",
-        "reproducibility"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Rules/Rule - Qualité stricte.md",
-      "nom": "Rule - Qualité stricte",
-      "alias": null,
-      "role": "rule",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rule",
-        "linter",
-        "type-hints",
-        "testing",
-        "ci-cd"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Rules/Rule - Structure de projet.md",
-      "nom": "Rule - Structure de projet",
-      "alias": null,
-      "role": "rule",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rule",
-        "reproducibility"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Dev/Rules/Rule - Toolchain Python.md",
-      "nom": "Rule - Toolchain Python",
-      "alias": null,
-      "role": "rule",
-      "categorie": null,
-      "famille": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "rule",
-        "package-manager",
-        "linter",
-        "formatter"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "DevOps/DevOps.md",
       "nom": "DevOps",
       "alias": [
@@ -11761,6 +11567,230 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Patterns/Pattern - Agent sur LLM auto-hébergé.md",
+      "nom": "Pattern - Agent sur LLM auto-hébergé",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "agents",
+        "llm",
+        "local-llm",
+        "tool-use"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Moteur de jeu pur + IA séparée.md",
+      "nom": "Pattern - Moteur de jeu pur + IA séparée",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "reinforcement-learning",
+        "self-play",
+        "game-theory",
+        "planning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Pipeline scraping → matching → optimisation.md",
+      "nom": "Pattern - Pipeline scraping → matching → optimisation",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "web-scraping",
+        "string-matching",
+        "combinatorial-optimization",
+        "linear-programming",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - RAG structuré graphe + human-in-the-loop.md",
+      "nom": "Pattern - RAG structuré graphe + human-in-the-loop",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "rag",
+        "knowledge-graph",
+        "graph-db",
+        "human-in-the-loop",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Stack démo ML locale multi-services.md",
+      "nom": "Pattern - Stack démo ML locale multi-services",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "ml-demo",
+        "data-app",
+        "container",
+        "object-storage"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Patterns.md",
+      "nom": "Patterns",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Config typée.md",
+      "nom": "Rule - Config typée",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "config",
+        "data-validation",
+        "type-hints"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Packaging démo.md",
+      "nom": "Rule - Packaging démo",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "container",
+        "ci-cd",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Qualité stricte.md",
+      "nom": "Rule - Qualité stricte",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "linter",
+        "type-hints",
+        "testing",
+        "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Structure de projet.md",
+      "nom": "Rule - Structure de projet",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Toolchain Python.md",
+      "nom": "Rule - Toolchain Python",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "package-manager",
+        "linter",
+        "formatter"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rules.md",
+      "nom": "Rules",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": null,
+      "pitch": "Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Réseau/Réseau.md",

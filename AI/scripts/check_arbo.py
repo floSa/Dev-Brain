@@ -15,9 +15,12 @@ Contrôle trois choses, et rien d'autre :
      sous-domaine en dessous n'en a pas. Le seuil décide, pas l'humeur.
   3. **Hub par dossier** — tout dossier de l'arbre porte une page `role: hub` à son nom.
 
-Sort en code 1 si un écart est trouvé. Les pages encore sous `Dev/` et `Wiki/` sont
-comptées à part : elles n'ont pas de chemin à respecter tant que leur domaine n'est
-pas passé au lot 3.
+Sort en code 1 si un écart est trouvé. Deux populations sont comptées à part, parce
+qu'elles n'ont pas de chemin à dériver :
+
+  - les pages encore sous `Dev/` et `Wiki/`, tant que leur domaine n'est pas passé ;
+  - les `role: pattern` et `role: rule` (`arbo.ROLES_SANS_CATEGORIE`), qui n'ont pas
+    de `categorie:` par construction et vivent dans « Patterns/ » et « Rules/ ».
 
 Usage : uv run AI/scripts/check_arbo.py
 """
@@ -61,6 +64,7 @@ def dossiers_de_pages() -> list[Path]:
 def main() -> int:
     migrees: list[tuple[Path, str]] = []   # pages descendues dans l'arbre
     legacy = 0                             # pages encore sous Dev/ ou Wiki/
+    hors_arbre = 0                         # pages rangées par `role:`, pas par domaine
     hubs: set[str] = set()
 
     for racine in dossiers_de_pages():
@@ -74,6 +78,9 @@ def main() -> int:
                 continue
             if racine.name in arbo.LEGACY:
                 legacy += 1
+                continue
+            if fm.get("role") in arbo.ROLES_SANS_CATEGORIE:
+                hors_arbre += 1
                 continue
             migrees.append((rel, str(fm.get("categorie") or "")))
 
@@ -111,7 +118,8 @@ def main() -> int:
         rel.parts[0] for rel, _ in migrees)
     print(f"check_arbo : {len(migrees)} page(s) migrée(s) dans "
           f"{len(par_dom)} domaine(s) — {legacy} page(s) encore sous "
-          f"{sorted(arbo.LEGACY)}")
+          f"{sorted(arbo.LEGACY)}, {hors_arbre} rangée(s) par `role:` "
+          f"({', '.join(sorted(arbo.ROLES_SANS_CATEGORIE))})")
     for dom, n in sorted(par_dom.items()):
         print(f"  {dom}/ — {n} page(s)")
     if ecarts:
