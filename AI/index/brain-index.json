@@ -6,10 +6,13 @@
     "Calcul distribué",
     "Design & diagrammes",
     "Dev",
+    "DevOps",
+    "Documents",
     "Interfaces & apps data",
     "Médias",
     "Observabilité",
     "Outils de développement",
+    "Réseau",
     "Signal & audio",
     "Stockage",
     "Sécurité",
@@ -17,7 +20,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 665,
+  "count": 668,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -234,6 +237,7 @@
       "Chunking strategies"
     ],
     "ci-cd": [
+      "DevOps",
       "GitHub Actions",
       "Rule - Packaging démo",
       "Rule - Qualité stricte"
@@ -397,6 +401,7 @@
     "container": [
       "Beszel",
       "Daytona",
+      "DevOps",
       "Docker",
       "E2B",
       "Modal",
@@ -624,6 +629,7 @@
       "torchvision"
     ],
     "deployment-strategy": [
+      "DevOps",
       "Déploiement de modèles"
     ],
     "depth-estimation": [
@@ -868,6 +874,7 @@
       "Partitionnement & layout de données"
     ],
     "file-transfer": [
+      "Réseau",
       "croc"
     ],
     "fine-tuning": [
@@ -1412,6 +1419,7 @@
       "umap-learn"
     ],
     "markdown-conversion": [
+      "Documents",
       "Firecrawl",
       "Marker",
       "OpenDataLoader PDF",
@@ -1627,6 +1635,7 @@
       "spaCy"
     ],
     "networking": [
+      "Réseau",
       "Sniffnet",
       "Web-Check",
       "croc"
@@ -1729,6 +1738,7 @@
       "Observabilité"
     ],
     "ocr": [
+      "Documents",
       "LlamaParse",
       "Marker",
       "OCR",
@@ -1844,6 +1854,7 @@
       "Pattern - Stack démo ML locale multi-services"
     ],
     "pdf": [
+      "Documents",
       "Marker",
       "OpenDataLoader PDF",
       "PyMuPDF",
@@ -2524,6 +2535,7 @@
       "TruLens"
     ],
     "traffic-analysis": [
+      "Réseau",
       "Sniffnet"
     ],
     "transfer-learning": [
@@ -2685,6 +2697,7 @@
     ],
     "web-scraping": [
       "Crawlee",
+      "Documents",
       "Firecrawl",
       "Maxun",
       "Pattern - Pipeline scraping → matching → optimisation",
@@ -4734,52 +4747,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Page to Markdown.md",
-      "nom": "Page to Markdown",
-      "alias": [
-        "page-to-markdown",
-        "page to markdown by starterbuild"
-      ],
-      "role": "brique",
-      "categorie": "docs/capture",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.",
-      "tags": [
-        "browser-extension",
-        "markdown-conversion",
-        "note-taking",
-        "privacy"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Sniffnet.md",
-      "nom": "Sniffnet",
-      "alias": [
-        "sniffnet",
-        "gyulyvgc/sniffnet"
-      ],
-      "role": "brique",
-      "categorie": "network/analyse",
-      "famille": "application",
-      "domaines": [
-        "infra-ops"
-      ],
-      "pitch": "Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.",
-      "tags": [
-        "networking",
-        "traffic-analysis"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Spec Kit.md",
       "nom": "Spec Kit",
       "alias": [
@@ -4832,31 +4799,6 @@
         "[[Graphify]]",
         "[[OpenViking]]"
       ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/croc.md",
-      "nom": "croc",
-      "alias": [
-        "croc",
-        "schollz/croc"
-      ],
-      "role": "brique",
-      "categorie": "network/transfert",
-      "famille": "cli",
-      "domaines": [
-        "infra-ops"
-      ],
-      "pitch": "Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.",
-      "tags": [
-        "file-transfer",
-        "networking",
-        "cryptography",
-        "cli",
-        "self-hosted"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": null
     },
@@ -5875,24 +5817,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Docker.md",
-      "nom": "Docker",
-      "alias": [
-        "docker"
-      ],
-      "role": "brique",
-      "categorie": "devops/conteneur",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.",
-      "tags": [
-        "container"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Docling.md",
       "nom": "Docling",
       "alias": [
@@ -6140,26 +6064,6 @@
       ],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Dev/Services/GitHub Actions.md",
-      "nom": "GitHub Actions",
-      "alias": [
-        "github actions",
-        "gha",
-        "github-actions"
-      ],
-      "role": "brique",
-      "categorie": "devops/ci",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.",
-      "tags": [
-        "ci-cd"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Dev/Services/Guidance.md",
@@ -8454,28 +8358,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Stirling PDF.md",
-      "nom": "Stirling PDF",
-      "alias": [
-        "stirling-pdf",
-        "stirling",
-        "s-pdf"
-      ],
-      "role": "brique",
-      "categorie": "docs/pdf",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.",
-      "tags": [
-        "pdf",
-        "ocr",
-        "self-hosted"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/TF-Agents.md",
       "nom": "TF-Agents",
       "alias": [
@@ -10362,6 +10244,139 @@
       "maturite": "production"
     },
     {
+      "path": "DevOps/DevOps.md",
+      "nom": "DevOps",
+      "alias": [
+        "devops",
+        "ci",
+        "cd"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.",
+      "tags": [
+        "container",
+        "ci-cd",
+        "deployment-strategy"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "DevOps/Docker.md",
+      "nom": "Docker",
+      "alias": [
+        "docker"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.",
+      "tags": [
+        "container"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/GitHub Actions.md",
+      "nom": "GitHub Actions",
+      "alias": [
+        "github actions",
+        "gha",
+        "github-actions"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.",
+      "tags": [
+        "ci-cd"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Documents/Documents.md",
+      "nom": "Documents",
+      "alias": [
+        "documents",
+        "pdf"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.",
+      "tags": [
+        "pdf",
+        "markdown-conversion",
+        "ocr",
+        "web-scraping"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Documents/Page to Markdown.md",
+      "nom": "Page to Markdown",
+      "alias": [
+        "page-to-markdown",
+        "page to markdown by starterbuild"
+      ],
+      "role": "brique",
+      "categorie": "docs/capture",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.",
+      "tags": [
+        "browser-extension",
+        "markdown-conversion",
+        "note-taking",
+        "privacy"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Documents/Stirling PDF.md",
+      "nom": "Stirling PDF",
+      "alias": [
+        "stirling-pdf",
+        "stirling",
+        "s-pdf"
+      ],
+      "role": "brique",
+      "categorie": "docs/pdf",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.",
+      "tags": [
+        "pdf",
+        "ocr",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Interfaces & apps data/Dash.md",
       "nom": "Dash",
       "alias": [
@@ -11157,6 +11172,76 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Réseau/Réseau.md",
+      "nom": "Réseau",
+      "alias": [
+        "reseau",
+        "network"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.",
+      "tags": [
+        "networking",
+        "traffic-analysis",
+        "file-transfer"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Réseau/Sniffnet.md",
+      "nom": "Sniffnet",
+      "alias": [
+        "sniffnet",
+        "gyulyvgc/sniffnet"
+      ],
+      "role": "brique",
+      "categorie": "network/analyse",
+      "famille": "application",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.",
+      "tags": [
+        "networking",
+        "traffic-analysis"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Réseau/croc.md",
+      "nom": "croc",
+      "alias": [
+        "croc",
+        "schollz/croc"
+      ],
+      "role": "brique",
+      "categorie": "network/transfert",
+      "famille": "cli",
+      "domaines": [
+        "infra-ops"
+      ],
+      "pitch": "Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.",
+      "tags": [
+        "file-transfer",
+        "networking",
+        "cryptography",
+        "cli",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
     },
     {
       "path": "Signal & audio/PyWavelets.md",

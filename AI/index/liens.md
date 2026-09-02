@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 665 pages actives.
+> 668 pages actives.
 
 ## Par page
 
@@ -238,7 +238,7 @@
 ### croc  ·  brique
 - tags : `file-transfer`, `networking`, `cryptography`, `cli`, `self-hosted`
 - liens sortants : [[MinIO]], [[Sniffnet]]
-- liens entrants : —
+- liens entrants : [[Réseau]]
 
 ### CuPy  ·  brique
 - tags : `gpu`, `array`
@@ -318,7 +318,7 @@
 ### Docker  ·  brique
 - tags : `container`
 - liens sortants : [[GitHub Actions]]
-- liens entrants : [[Beszel]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
+- liens entrants : [[Beszel]], [[DevOps]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -463,7 +463,7 @@
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
 - liens sortants : [[Docker]]
-- liens entrants : [[Docker]], [[Rule - Qualité stricte]]
+- liens entrants : [[DevOps]], [[Docker]], [[Rule - Qualité stricte]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -998,7 +998,7 @@
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Comparatif - Scraping]], [[Docling]], [[Firecrawl]], [[Maxun]], [[OpenDataLoader PDF]]
-- liens entrants : —
+- liens entrants : [[Documents]]
 
 ### pandas  ·  brique
 - tags : `dataframe`, `in-memory`
@@ -1403,7 +1403,7 @@
 ### Sniffnet  ·  brique
 - tags : `networking`, `traffic-analysis`
 - liens sortants : [[Beszel]], [[Docker]], [[Web-Check]]
-- liens entrants : [[Beszel]], [[Web-Check]], [[croc]]
+- liens entrants : [[Beszel]], [[Réseau]], [[Web-Check]], [[croc]]
 
 ### spaCy  ·  brique
 - tags : `nlp`, `ner`, `sequence-labeling`, `tokenization`
@@ -1458,7 +1458,7 @@
 ### Stirling PDF  ·  brique
 - tags : `pdf`, `ocr`, `self-hosted`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]]
-- liens entrants : [[OCR]], [[OpenDataLoader PDF]]
+- liens entrants : [[Documents]], [[OCR]], [[OpenDataLoader PDF]]
 
 ### Streamlit  ·  brique
 - tags : `data-app`, `web-framework`
@@ -1528,7 +1528,7 @@
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
 - liens sortants : [[pytest]]
-- liens entrants : [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[pytest]]
+- liens entrants : [[DevOps]], [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[pytest]]
 
 ### text-generation-webui  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
@@ -1648,7 +1648,7 @@
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
 - liens sortants : [[Beszel]], [[Docker]], [[Sniffnet]], [[osint4all]]
-- liens entrants : [[Sniffnet]], [[Sécurité]], [[osint4all]]
+- liens entrants : [[Réseau]], [[Sniffnet]], [[Sécurité]], [[osint4all]]
 
 ### Weights & Biases  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1715,10 +1715,20 @@
 - liens sortants : [[Comparatif - Design & prototypage]], [[Diagrammes]], [[Figma]], [[Mermaid]], [[Penpot]]
 - liens entrants : —
 
+### DevOps  ·  hub
+- tags : `container`, `ci-cd`, `deployment-strategy`
+- liens sortants : [[Docker]], [[GitHub Actions]], [[Outils de développement]], [[testcontainers]]
+- liens entrants : [[Outils de développement]]
+
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Design & diagrammes]]
+
+### Documents  ·  hub
+- tags : `pdf`, `markdown-conversion`, `ocr`, `web-scraping`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Page to Markdown]], [[Stirling PDF]], [[Web scraping]]
+- liens entrants : —
 
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
@@ -1748,7 +1758,7 @@
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : —
+- liens entrants : [[DevOps]]
 
 ### Recherche  ·  hub
 - tags : —
@@ -1760,6 +1770,11 @@
 - liens sortants : [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
 - liens entrants : [[Bases de données]]
 
+### Réseau  ·  hub
+- tags : `networking`, `traffic-analysis`, `file-transfer`
+- liens sortants : [[Sniffnet]], [[Stockage]], [[Web-Check]], [[croc]]
+- liens entrants : —
+
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
@@ -1768,7 +1783,7 @@
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage objet]]
-- liens entrants : —
+- liens entrants : [[Réseau]]
 
 ### Stockage objet  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
@@ -3278,7 +3293,7 @@
 ### Web scraping  ·  notion
 - tags : `web-scraping`, `data-pipeline`
 - liens sortants : [[Bases de données]], [[Comparatif - Scraping]], [[Crawlee]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Crawlee]], [[Documents]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
 
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
@@ -3358,7 +3373,7 @@
 - `causal-inference` : CausalImpact, Diff-in-Diff, Inférence causale
 - `cdc` : Change Data Capture (CDC)
 - `chunking` : Chunking strategies
-- `ci-cd` : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
+- `ci-cd` : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Types de données et choix de modèle, imbalanced-learn, k-NN
 - `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
@@ -3374,7 +3389,7 @@
 - `confidence-interval` : Bootstrap, Intervalles de confiance, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
-- `container` : Beszel, Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Claude Video, Context engineering, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation sous contrainte
@@ -3399,7 +3414,7 @@
 - `declarative-viz` : altair  — pas de page concept dédiée
 - `decoding` : Constrained decoding, Decoding strategies, Guidance, Multi-Token Prediction, Outlines, Speculative decoding  — pas de page concept dédiée
 - `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
-- `deployment-strategy` : Déploiement de modèles  — pas de page concept dédiée
+- `deployment-strategy` : DevOps, Déploiement de modèles  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
 - `design-tool` : Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
 - `diagram` : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
@@ -3429,7 +3444,7 @@
 - `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Ingénierie des caractéristiques, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
 - `feature-store` : Feast, Feature store — concept
 - `file-format` : Avro, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
-- `file-transfer` : croc  — pas de page concept dédiée
+- `file-transfer` : Réseau, croc  — pas de page concept dédiée
 - `fine-tuning` : Axolotl, DB-GPT, Distillation, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
 - `forecasting` : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Ruff, Rule - Toolchain Python  — pas de page concept dédiée
@@ -3485,7 +3500,7 @@
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
-- `markdown-conversion` : Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector  — pas de page concept dédiée
+- `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector  — pas de page concept dédiée
 - `markov` : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
@@ -3517,7 +3532,7 @@
 - `multivariate` : MANOVA et tests multivariés  — pas de page concept dédiée
 - `mutual-information` : Mutual information
 - `ner` : Construction de graphes de connaissances, GLiNER, NER et étiquetage de séquence, pytorch-crf, seqeval, spaCy
-- `networking` : Sniffnet, Web-Check, croc  — pas de page concept dédiée
+- `networking` : Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
 - `neural-rendering` : Rendu neuronal 3D & estimation de profondeur  — pas de page concept dédiée
 - `nlp` : BM25, Classification de texte, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem
@@ -3529,7 +3544,7 @@
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage, Stockage objet  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, supervision
 - `observability` : Beszel, Grafana, Loki, Observabilité  — pas de page concept dédiée
-- `ocr` : LlamaParse, Marker, OCR, Stirling PDF, Unstructured, docTR, pdf-inspector
+- `ocr` : Documents, LlamaParse, Marker, OCR, Stirling PDF, Unstructured, docTR, pdf-inspector
 - `offline-rl` : Offline RL
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Wasserstein distance
@@ -3545,7 +3560,7 @@
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `pdf` : Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber  — pas de page concept dédiée
+- `pdf` : Documents, Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
 - `point-estimation` : Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
@@ -3630,7 +3645,7 @@
 - `tokenization` : Constrained decoding, NLTK, Tokenization, sentencepiece, spaCy
 - `tool-use` : Agent patterns, Agent skills, Agno, AutoGen, CrewAI, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, Maka, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PraisonAI, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, needle, pi, smolagents, tool-use
 - `tracing` : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens  — pas de page concept dédiée
-- `traffic-analysis` : Sniffnet  — pas de page concept dédiée
+- `traffic-analysis` : Réseau, Sniffnet  — pas de page concept dédiée
 - `transfer-learning` : Transfer learning vision, timm, torchvision
 - `transformers` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost  — pas de page concept dédiée
@@ -3648,7 +3663,7 @@
 - `vit` : Vision Transformers (ViT), timm
 - `wavelet` : Ondelettes, PyWavelets, Signal & audio  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
-- `web-scraping` : Crawlee, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
+- `web-scraping` : Crawlee, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
 
@@ -3671,7 +3686,7 @@
 - `benchmark` (porté par : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, prompt-caching)
-- `ci-cd` (porté par : GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
+- `ci-cd` (porté par : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
 - `cli` (porté par : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
@@ -3679,7 +3694,7 @@
 - `concentration` (porté par : Inégalités de concentration)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Daytona, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
+- `container` (porté par : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
@@ -3695,7 +3710,7 @@
 - `declarative-viz` (porté par : altair)
 - `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Multi-Token Prediction, Outlines, Speculative decoding)
 - `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
-- `deployment-strategy` (porté par : Déploiement de modèles)
+- `deployment-strategy` (porté par : DevOps, Déploiement de modèles)
 - `design-tool` (porté par : Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
 - `diagram-as-code` (porté par : Archify, Diagrammes, Mermaid)
@@ -3713,7 +3728,7 @@
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
 - `factor-analysis` (porté par : CA, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension)
 - `file-format` (porté par : Avro, Parquet, Partitionnement & layout de données)
-- `file-transfer` (porté par : croc)
+- `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, DB-GPT, Distillation, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Ruff, Rule - Toolchain Python)
@@ -3747,7 +3762,7 @@
 - `logging` (porté par : Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, No-code, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
-- `markdown-conversion` (porté par : Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector)
+- `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, pdf-inspector)
 - `markov` (porté par : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan)
 - `matrix-decomposition` (porté par : Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
@@ -3765,7 +3780,7 @@
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)
 - `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models)
 - `multivariate` (porté par : MANOVA et tests multivariés)
-- `networking` (porté par : Sniffnet, Web-Check, croc)
+- `networking` (porté par : Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
 - `nosql` (porté par : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
@@ -3782,7 +3797,7 @@
 - `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
-- `pdf` (porté par : Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
+- `pdf` (porté par : Documents, Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
@@ -3832,7 +3847,7 @@
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Helicone, LLM observability, LangSmith, Langfuse, Phoenix Arize, TruLens)
-- `traffic-analysis` (porté par : Sniffnet)
+- `traffic-analysis` (porté par : Réseau, Sniffnet)
 - `transformers` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost)
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)

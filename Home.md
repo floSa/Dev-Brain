@@ -23,6 +23,9 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Interfaces & apps data]] — 4 briques
 - [[Sécurité]] — 3 briques
 - [[Observabilité]] — 3 briques
+- [[Réseau]] — 2 briques
+- [[Documents]] — 2 briques
+- [[DevOps]] — 2 briques
 
 ## Hubs (MOC) — domaines pas encore migrés
 
