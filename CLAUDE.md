@@ -3,17 +3,24 @@ galaxie: meta
 nom: CLAUDE
 type: meta-doc
 created: 2026-05-20
-modified: 2026-07-07
+modified: 2026-09-05
 tags: [meta]
 ---
 
 # CLAUDE.md — DevBrain (routeur)
 
-Tu es dans le DevBrain (v2, cf. `AI/design/brain-v2.md`). Ce vault sert **trois usages** :
+Tu es dans le DevBrain (v3, cf. `AI/design/brain-v3.md` ; ce que la v2 a établi et qui
+reste vrai : `AI/design/brain-v2.md`). Ce vault sert **trois usages** :
 
-1. **Build** — enrichir le brain agent-readable — quatre piliers Dev : `Dev/Services`, `Dev/Outils`, `Dev/Patterns`, `Dev/Rules`.
+1. **Build** — enrichir le brain agent-readable : les briques, les comparatifs, les patterns et les règles, rangés dans **l'arbre des 20 domaines** à la racine.
 2. **Projet** — utiliser le brain depuis un projet de dev (lancer Claude *dans le dossier projet*, pas ici).
-3. **Wiki** — entretenir l'espace de connaissance perso de l'utilisateur (`Wiki/Concepts`, à terme `Outils`/`Workflows`/`Roadmaps`). C'est sa mémoire à lui, à toi de ne pas la salir.
+3. **Wiki** — entretenir l'espace de connaissance perso de l'utilisateur : les pages `role: notion`. C'est sa mémoire à lui, à toi de ne pas la salir.
+
+> **Un seul arbre depuis le lot 3 de la v3.** `Dev/` n'existe plus : les 337 briques,
+> les 47 comparatifs, les 5 patterns et les 5 règles sont descendus dans l'arbre.
+> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore** — 297 notions et leurs 10 MOC
+> d'entrée — et c'est le **lot 4** qui les descendra, pas le lot 3. Tout ce qui suit
+> décrit cet état-là, pas la cible finale.
 
 ## Identité utilisateur
 
@@ -44,7 +51,7 @@ Demande : "Mode build (enrichir le brain), mode projet (travailler sur un projet
 Selon la réponse :
 - **build** → lis `@CLAUDE-build.md` et applique son contexte
 - **projet** → indique-lui que pour les projets, il devrait lancer `claude` *dans le dossier du projet* (pas dans le vault), où un `CLAUDE.md` issu de `CLAUDE-project.md` est déjà installé.
-- **wiki** → reste ici, périmètre = `Wiki/` uniquement. Voir section *Mode wiki* ci-dessous.
+- **wiki** → reste ici, périmètre = les pages `role: notion` (aujourd'hui toutes sous `Wiki/Concepts/`). Voir section *Mode wiki* ci-dessous.
 
 Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
 
@@ -57,96 +64,121 @@ Si l'utilisateur dit explicitement "mode <X>", applique sans demander.
 
 ## Ce que tu peux faire ici par défaut
 
-- Lire/explorer la structure du vault (`Dev/`, `Wiki/`, `MOC/`, `Documentation/`)
+- Lire/explorer la structure du vault (l'arbre des domaines, `Métiers/`, `Patterns/`, `Rules/`, `Wiki/Concepts/`, `MOC/Concepts/`, `Documentation/`)
 - Répondre à des questions générales sur le contenu
 - Suggérer des fiches manquantes
 - Auditer la cohérence (frontmatter, taxonomie — cf. `Documentation/general/taxonomie.md`)
 
 ## Ce que tu NE fais PAS sans confirmation explicite
 
-- Modifier des fiches `Dev/Services/*` existantes (y compris leur section `## Pièges`) — en mode projet, aucune écriture dans `Dev/`
-- **Modifier ou créer des fichiers dans `Wiki/` sauf en mode wiki explicite ou demande explicite** (le wiki est l'espace perso de l'utilisateur — pas le tien)
-- Supprimer quoi que ce soit
-- Committer ou pousser sans avoir clôturé : toute écriture dans `Dev/` ou `Wiki/` se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateur vert, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
+- Modifier une page `role: brique` existante (y compris sa section `## Pièges`) — en mode projet, **aucune écriture dans l'arbre des domaines**
+- **Modifier ou créer une page `role: notion` sauf en mode wiki explicite ou demande explicite** (le wiki est l'espace perso de l'utilisateur — pas le tien)
+- Supprimer quoi que ce soit — et pendant la migration v3, **aucun `rm` sur une page** : un déplacement se fait par `git mv`, qui conserve l'historique
+- Committer ou pousser sans avoir clôturé : toute écriture dans une page du brain se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateur vert, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
 - Créer des fiches dans une `categorie` non listée dans `Documentation/general/taxonomie.md`
 
 ## Mode wiki
 
-Périmètre **strictement limité à `Wiki/`**. Tu n'as pas le droit de toucher à `Dev/`, `MOC/`, `Documentation/` en mode wiki.
+Périmètre **strictement limité aux pages `role: notion`**. Depuis la v3, le périmètre se
+lit sur le **rôle** et non sur un dossier : c'est le rôle qui survivra au lot 4, le
+dossier non. Tu n'as pas le droit de toucher aux `role: brique`, `pattern`, `rule`, `hub`,
+ni à `Documentation/`, en mode wiki.
 
-État actuel : seul `Wiki/Concepts/` est peuplé (261 fiches). `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds vides — le contenu v1 correspondant n'a pas encore été remigré (voir `Documentation/perso/reservoir-v1.md`). N'invente pas de contenu pour les combler ; demande avant de commencer une migration.
+État actuel : les **297** notions sont toutes sous `Wiki/Concepts/`, et le **lot 4** les
+descendra dans l'arbre des domaines, avec les 10 `MOC/Concepts/` qui sont aujourd'hui leur
+porte d'entrée. Jusque-là, ces deux dossiers restent en place et sont le lieu normal d'une
+notion. `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** —
+le contenu v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`)
+et, la v3 n'ayant plus de galaxie `Wiki/`, il n'est pas acquis qu'ils soient reconduits.
+N'invente pas de contenu pour les combler ; demande avant de commencer une migration.
 
 Workflow type :
-1. L'utilisateur dit "ajoute le concept X" / "documente la notion Y" → invoque le skill `enrichir-brain` (il gère aussi bien `Dev/` que `Wiki/Concepts/` en un seul geste, pas besoin de bascule de mode stricte pour ce cas précis).
+1. L'utilisateur dit "ajoute le concept X" / "documente la notion Y" → invoque le skill `enrichir-brain` (il gère la brique et la notion en un seul geste, pas besoin de bascule de mode stricte pour ce cas précis).
 2. Frontmatter complet obligatoire (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie), gabarit `Templates/Concept-Wiki.md`.
-3. Tu peux créer un sous-dossier dans `Wiki/` si une nouvelle catégorie émerge — préviens avant de le faire.
+3. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérivera de sa `categorie:` au lot 4, comme pour une brique. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
 
-Voir `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble du pilier wiki.
+Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble du pilier wiki.
 
 ## Structure du vault (rappel)
 
+**Un dossier par domaine, à la racine.** Le domaine se dérive de `categorie:` — personne
+ne choisit un dossier (`AI/scripts/arbo.py` porte la dérivation, `check_arbo.py` la
+vérifie). Un sous-dossier apparaît dès qu'un sous-domaine atteint 5 pages, sauf s'il ne
+laisserait aucune page au niveau du domaine. Tout dossier porte une page à son nom,
+`role: hub`, dont la zone `<!-- AUTO -->` est générée depuis le contenu du dossier.
+
 ```
-Dev/                        ← briques agent-readable (factuel, dense)
-├── Services/                (briques à déployer : frameworks, BDD, libs…)
-├── Outils/                  (outils techniques utilisés : clients GUI, CLI…)
-├── Patterns/                (Comparatif - <thème>.base + Pattern - <nom>.md)
-└── Rules/                   (règles transverses : Rule - <nom>.md)
+<20 dossiers de domaine>/    ← l'arbre : Bases de données/, Machine Learning/,
+│                              LLM & IA générative/, Data & pipelines/, Stockage/…
+├── <Domaine>.md              (role: hub — l'aiguillage du dossier)
+├── <Sous-domaine>/           (promu à 5 pages : Vectoriel/, Apprentissage profond/…)
+│   ├── <Sous-domaine>.md     (role: hub)
+│   └── <Brique>.md           (role: brique) + Comparatif - <thème>.base
+└── <Brique>.md               (role: brique) + Comparatif - <thème>.base
 
-Wiki/                       ← ESPACE PERSO DE L'UTILISATEUR (notions, skills perso)
-├── Concepts/                (notions à comprendre — seul dossier peuplé aujourd'hui)
-├── Outils/                  (vide — catalogue skills/extensions perso, pas encore remigré)
-├── Workflows/                (vide — procédures pas-à-pas, pas encore remigré)
-└── Roadmaps/                 (vide — cartes de compétences, pas encore remigré)
+Métiers/                     ← 5 hubs transverses, générés depuis `domaines:`
+                               (Data Science, Data Engineering, MLOps, ML Engineering,
+                               AI Engineering) — seul axe qui traverse l'arbre technique
 
-MOC/                        ← hubs de navigation générés (build_mocs.py)
-├── Themes/                  (5 domaines : data-sci, data-eng, mlops, ml-eng, ai-eng)
-├── Categories/               (familles Dev)
-└── Concepts/                 (sous-domaines Wiki)
+Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role: pattern)
+Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
+                               groupés par `role:` — aucune `categorie:` ne les range
+
+Wiki/Concepts/               ← 297 notions (role: notion) — EN ATTENTE DU LOT 4
+MOC/Concepts/                ← 10 MOC générées, leur seule porte d'entrée (R7)
+                               les deux meurent ensemble au lot 4, PAS avant
+Wiki/Outils|Workflows|Roadmaps/  ← scaffolds vides, non remigrés (cf. reservoir-v1.md)
 
 Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventions perso)
 ├── general/                  (réutilisable : tags.md, taxonomie.md, themes.md, questions-projet.md)
 └── perso/                    (conventions.md, archetypes.md, machines.md, obsidian-graph.md, reservoir-v1.md)
 
-Templates/                   ← gabarits (Service-Dev, Concept-Wiki, Pattern, Rule)
+Templates/                   ← gabarits (Service-Dev, Outil-Dev, Concept-Wiki, Pattern, Rule)
 Projects/                    ← log des projets en cours (scaffold, vide pour l'instant)
+Home.md                      ← porte d'entrée du vault : l'arbre, les métiers, le reste
 
 AI/                          ← TON espace agent
-├── design/brain-v2.md        (spec de référence du vault)
+├── design/brain-v3.md        (spec de référence ; brain-v2.md pour ce qui reste vrai)
+├── design/v3-arborescence.md (l'arbre page par page, annoté au fil des lots)
+├── migration/                (un fichier par lot, avec ses Remontées)
 ├── index/                    (brain-index.json/.md, liens.md — générés, ne pas éditer à la main)
 ├── sessions/                 (résumés auto par hook Stop)
 ├── scripts/                  (scripts Python/uv + PowerShell d'index et d'hygiène)
 └── backlog.md / backlog-enrichissement-brain.md
 
 .claude/skills/               ← skills custom réels
-├── enrichir-brain/            (capture Dev/ + Wiki/Concepts/ — mode build+wiki)
+├── enrichir-brain/            (capture brique + notion — mode build+wiki)
 ├── cloturer-brain/            (clôture : régénère, valide, commit — après TOUTE écriture)
 └── planifier-projet/          (cadrage projet — mode projet)
 ```
 
 **Frontières fermes** :
-- `Dev/` → modifiable seulement en mode build (selon `CLAUDE-build.md`).
-- `Wiki/` → modifiable seulement en mode wiki ou sur demande explicite.
-- `MOC/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_mocs.py` / `build_index.py`).
+- **L'arbre des domaines**, `Patterns/`, `Rules/` → modifiables seulement en mode build (selon `CLAUDE-build.md`).
+- **Les pages `role: notion`** (aujourd'hui `Wiki/Concepts/`) → modifiables seulement en mode wiki ou sur demande explicite.
+- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `MOC/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
 - `AI/` (hors index/) → ton espace, tu peux y écrire librement.
 - `Documentation/` → modifiable en mode build ou wiki selon le sous-dossier concerné, toujours avec prudence (c'est la gouvernance du brain).
 - `Inbox.md` → modifiable en tout mode (écriture par l'utilisateur seulement)
 
 ## Conventions de nommage
 
+Le chemin n'est plus à choisir : il se **dérive** de `categorie:`, et `<Dossier>` ci-dessous
+désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est promu).
+
 | Type | Format |
 |------|--------|
-| Service Dev | `Dev/Services/<Nom>.md` |
-| Outil Dev | `Dev/Outils/<Nom>.md` |
-| Pattern | `Dev/Patterns/Pattern - <nom>.md` |
-| Comparatif | `Dev/Patterns/Comparatif - <thème>.base` |
-| Règle | `Dev/Rules/Rule - <nom>.md` |
-| Concept Wiki | `Wiki/Concepts/<Nom>.md` |
+| Brique (`role: brique`) | `<Dossier>/<Nom>.md` |
+| Hub (`role: hub`) | `<Dossier>/<Dossier>.md` — la page porte le nom de son dossier |
+| Comparatif | `<Dossier>/Comparatif - <thème>.base` — dans le dossier de ses membres |
+| Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
+| Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
+| Notion (`role: notion`) | `Wiki/Concepts/<Nom>.md` — **jusqu'au lot 4**, qui la descendra dans `<Dossier>/` |
 | **Entrée d'expérience datée** (dans `## Pièges` de la fiche concernée) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté |
 | **Incident né entre deux briques** | s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne ; la fiche de l'autre brique **ne le mentionne pas** (une entrée dupliquée serait une seconde chose à synchroniser) |
 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
 
-**Deux axes de rangement, pas un.** Une fiche Dev porte `categorie:` (le **domaine** — de
+**Deux axes de rangement, pas un.** Une brique porte `categorie:` (le **domaine** — de
 quoi ça parle, 94 valeurs en 20 préfixes) *et* `famille:` (la **nature** — ce que c'est, 9
 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
 `specification`, `modele`, `annuaire`). Ne jamais choisir ces deux valeurs à l'intuition :
@@ -154,12 +186,18 @@ valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extens
 fermées en ordre strict. Les deux champs sont des règles dures du validateur et sont indexés.
 
 **Un troisième champ, `role:`**, porte ce que la page **est** : `brique`, `notion`,
-`pattern`, `rule` — et bientôt `hub` (lot 3) et `comparatif` (lot 5). Il a remplacé
+`pattern`, `rule`, `hub` — et bientôt `comparatif` (lot 5). Il a remplacé
 `galaxie:` et `type:` au lot 2 de la migration v3 (cf. `AI/design/brain-v3.md` §3) : le
 premier ne servait qu'à la couleur du graphe, le second ne décrivait que le dossier d'accueil.
 `famille:` reste la nature **technique** d'une brique (est-ce un paquet ou une plateforme ?) ;
 `role:` est la nature **éditoriale** de la page (est-ce une brique ou une notion ?). Les deux
 ne se recouvrent pas.
+
+Un `role: hub` ne porte **pas** de `categorie:` : un hub ne se range pas, il *est* le
+rangement — son domaine est son chemin. `role: pattern` et `role: rule` n'en portent pas
+non plus, et c'est délibéré : un pattern enjambe plusieurs domaines par construction, une
+règle est transverse par définition. C'est `role:` qui les groupe, dans `Patterns/` et
+`Rules/`.
 
 `hosted:` et `scaling:` n'existent que si `famille:` vaut `plateforme`, `saas` ou
 `application` — une bibliothèque ne s'héberge pas. `hosted:` est une **liste**
@@ -167,7 +205,12 @@ ne se recouvrent pas.
 symétrique d'`alternatives:` : ce qui s'utilise **avec** la brique, quand `alternatives:`
 dit ce qui s'utilise **à sa place**.
 
-**Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, hubs MOC, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
+**Le voisinage d'une page est `ls` de son dossier.** C'est ce que l'arbre achète
+(`brain-v3.md` §10) : insérer une brique met à jour le hub du dossier et ses hubs parents
+(générés), puis le comparatif, la notion et les briques pairs **du dossier** — plus rien à
+deviner à partir des tags.
+
+**Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, zones AUTO des hubs, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 
 **Convention wikilinks** — **nus**, jamais qualifiés par chemin :
 - `[[Postgres]]` → la fiche, quel que soit son dossier.
@@ -176,14 +219,15 @@ dit ce qui s'utilise **à sa place**.
 
 La convention qualifiée d'avant le lot 3 visait des collisions de nom entre v1 et v2 qui
 n'existent plus : le réservoir v1 est hors du vault, et la dernière collision interne —
-`Dev/Services/hdbscan.md` contre `Wiki/Concepts/HDBSCAN.md`, que le système de fichiers
-Windows ne distingue même pas — est tombée avec le renommage de la notion en
+la brique `hdbscan` contre la notion `HDBSCAN`, que le système de fichiers Windows ne
+distingue même pas — est tombée avec le renommage de la notion en
 `Clustering hiérarchique par densité`. Obsidian résout un lien nu par nom de fichier.
 
 La raison de tenir le nu : un lien qualifié porte un chemin, donc casse au déplacement.
-La v3 déplace 682 fichiers au lot 3, puis encore aux lots 4 à 6. Avec des liens nus,
-un `git mv` ne touche aucun lien. **Avant de créer une page, vérifier que son nom de
-fichier est unique dans le vault** — c'est la seule contrainte que le nu impose.
+Le lot 3 a déplacé 682 fichiers sans toucher un seul lien ; les lots 4 à 6 en déplaceront
+encore. **Avant de créer une page, vérifier que son nom de fichier est unique dans le
+vault, à la casse près** — c'est la seule contrainte que le nu impose, et elle vaut aussi
+pour le nom de chaque hub à créer.
 
 ## Protocole de session
 
@@ -220,7 +264,8 @@ Si le hook Stop est configuré (cf. `AI/scripts/session_to_devbrain.py`), un ré
 
 Skills custom dans `.claude/skills/` :
 
-- **`enrichir-brain`** — capture une techno/concept dans `Dev/` **et** `Wiki/Concepts/` : crée la page demandée + ses pages connexes (alternatives, comparatif), câble les liens bidirectionnels, régénère l'index. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage).
+- **`enrichir-brain`** — capture une techno/concept : crée la page demandée + ses pages connexes (alternatives, comparatif), câble les liens bidirectionnels, régénère l'index. Couvre la brique **et** la notion. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage). *Sa procédure parle encore en chemins `Dev/…` : c'est le **lot 7** qui la réécrit sur l'arbre. En attendant, lire ses commandes comme des exemples et viser le dossier réel de la page.*
+- **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_links`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite.**
 - **`planifier-projet`** — au démarrage d'un projet, identifie l'archétype (cf. `Documentation/perso/archetypes.md`), interroge `AI/index/brain-index.json` et produit un cahier des charges sourcé. N'écrit rien dans le brain.
 
 Skills officiels Obsidian (`kepano/obsidian-skills`) — apprend la syntaxe Obsidian (wikilinks, callouts, frontmatter, Bases, Canvas).
