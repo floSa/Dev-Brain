@@ -14,13 +14,14 @@
     "Outils de développement",
     "Réseau",
     "Signal & audio",
+    "Statistiques & inférence",
     "Stockage",
     "Sécurité",
     "Web & API",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 666,
+  "count": 667,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -196,7 +197,8 @@
       "Optuna",
       "PyMC",
       "Ray Tune",
-      "Stan"
+      "Stan",
+      "Statistiques & inférence"
     ],
     "benchmark": [
       "Code and math benchmarks",
@@ -228,7 +230,8 @@
     "causal-inference": [
       "CausalImpact",
       "Diff-in-Diff",
-      "Inférence causale"
+      "Inférence causale",
+      "Statistiques & inférence"
     ],
     "cdc": [
       "Change Data Capture (CDC)"
@@ -845,7 +848,8 @@
       "NMF",
       "PCA",
       "Prince",
-      "Réduction de dimension"
+      "Réduction de dimension",
+      "Statistiques & inférence"
     ],
     "feature-engineering": [
       "EDA automatisée & profiling",
@@ -2313,6 +2317,7 @@
       "Inférence causale",
       "Intervalles de confiance",
       "Maximum de vraisemblance",
+      "Statistiques & inférence",
       "Tests d'hypothèse",
       "statsmodels"
     ],
@@ -5266,26 +5271,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/ArviZ.md",
-      "nom": "ArviZ",
-      "alias": [
-        "arviz",
-        "az"
-      ],
-      "role": "brique",
-      "categorie": "stats/bayesien",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.",
-      "tags": [
-        "bayesian",
-        "monte-carlo"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/AutoGen.md",
       "nom": "AutoGen",
       "alias": [
@@ -5440,28 +5425,6 @@
         "[[LightGBM]]",
         "[[Scikit-Learn]]"
       ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/CausalImpact.md",
-      "nom": "CausalImpact",
-      "alias": [
-        "tfcausalimpact",
-        "tfp-causalimpact",
-        "pycausalimpact"
-      ],
-      "role": "brique",
-      "categorie": "stats/causal",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.",
-      "tags": [
-        "causal-inference",
-        "bayesian",
-        "timeseries"
-      ],
-      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -5861,28 +5824,6 @@
       ],
       "complements": [],
       "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Fanalysis.md",
-      "nom": "Fanalysis",
-      "alias": [
-        "fanalysis"
-      ],
-      "role": "brique",
-      "categorie": "stats/exploratoire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.",
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Prince]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
     },
     {
       "path": "Dev/Services/Feast.md",
@@ -7622,28 +7563,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Prince.md",
-      "nom": "Prince",
-      "alias": [
-        "prince"
-      ],
-      "role": "brique",
-      "categorie": "stats/exploratoire",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.",
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Fanalysis]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Prophet.md",
       "nom": "Prophet",
       "alias": [
@@ -7685,31 +7604,6 @@
         "combinatorial-optimization"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/PyMC.md",
-      "nom": "PyMC",
-      "alias": [
-        "pymc3",
-        "pymc-devs"
-      ],
-      "role": "brique",
-      "categorie": "stats/bayesien",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).",
-      "tags": [
-        "bayesian",
-        "probabilistic-programming",
-        "monte-carlo",
-        "markov",
-        "prior"
-      ],
-      "alternatives": [
-        "[[Stan]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -8300,31 +8194,6 @@
         "[[Acme]]",
         "[[TF-Agents]]",
         "[[RLax]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Stan.md",
-      "nom": "Stan",
-      "alias": [
-        "CmdStanPy",
-        "cmdstanpy",
-        "Stan language"
-      ],
-      "role": "brique",
-      "categorie": "stats/bayesien",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.",
-      "tags": [
-        "bayesian",
-        "probabilistic-programming",
-        "monte-carlo",
-        "markov"
-      ],
-      "alternatives": [
-        "[[PyMC]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9272,23 +9141,6 @@
       "maturite": "experimental"
     },
     {
-      "path": "Dev/Services/lifelines.md",
-      "nom": "lifelines",
-      "alias": [],
-      "role": "brique",
-      "categorie": "stats/inference",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Analyse de survie en Python pur — estimateurs non paramétriques (Kaplan-Meier, Nelson-Aalen) et modèles de régression (Cox à risques proportionnels, AFT) pour modéliser le temps jusqu'à un événement avec données censurées.",
-      "tags": [
-        "survival-analysis",
-        "regression"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/llama.cpp.md",
       "nom": "llama.cpp",
       "alias": [
@@ -9585,29 +9437,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/pingouin.md",
-      "nom": "pingouin",
-      "alias": [],
-      "role": "brique",
-      "categorie": "stats/inference",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.",
-      "tags": [
-        "hypothesis-testing",
-        "effect-size",
-        "statistical-power",
-        "non-parametric",
-        "parametric-test"
-      ],
-      "alternatives": [
-        "[[scipy.stats]]",
-        "[[statsmodels]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/plotly.md",
       "nom": "plotly",
       "alias": [
@@ -9719,31 +9548,6 @@
         "deep-learning"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/scipy.stats.md",
-      "nom": "scipy.stats",
-      "alias": [
-        "SciPy stats"
-      ],
-      "role": "brique",
-      "categorie": "stats/inference",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.",
-      "tags": [
-        "hypothesis-testing",
-        "p-value",
-        "confidence-interval",
-        "parametric-test",
-        "non-parametric"
-      ],
-      "alternatives": [
-        "[[statsmodels]]",
-        "[[pingouin]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -9957,28 +9761,6 @@
         "[[neuralforecast]]",
         "[[darts]]",
         "[[pmdarima]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/statsmodels.md",
-      "nom": "statsmodels",
-      "alias": [],
-      "role": "brique",
-      "categorie": "stats/inference",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.",
-      "tags": [
-        "statistical-inference",
-        "hypothesis-testing",
-        "parametric-test",
-        "p-value"
-      ],
-      "alternatives": [
-        "[[scipy.stats]]",
-        "[[pingouin]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11311,6 +11093,253 @@
       "alternatives": [
         "[[PyWavelets]]",
         "[[librosa]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/ArviZ.md",
+      "nom": "ArviZ",
+      "alias": [
+        "arviz",
+        "az"
+      ],
+      "role": "brique",
+      "categorie": "stats/bayesien",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.",
+      "tags": [
+        "bayesian",
+        "monte-carlo"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/CausalImpact.md",
+      "nom": "CausalImpact",
+      "alias": [
+        "tfcausalimpact",
+        "tfp-causalimpact",
+        "pycausalimpact"
+      ],
+      "role": "brique",
+      "categorie": "stats/causal",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.",
+      "tags": [
+        "causal-inference",
+        "bayesian",
+        "timeseries"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/Fanalysis.md",
+      "nom": "Fanalysis",
+      "alias": [
+        "fanalysis"
+      ],
+      "role": "brique",
+      "categorie": "stats/exploratoire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.",
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Prince]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Statistiques & inférence/Prince.md",
+      "nom": "Prince",
+      "alias": [
+        "prince"
+      ],
+      "role": "brique",
+      "categorie": "stats/exploratoire",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.",
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Fanalysis]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/PyMC.md",
+      "nom": "PyMC",
+      "alias": [
+        "pymc3",
+        "pymc-devs"
+      ],
+      "role": "brique",
+      "categorie": "stats/bayesien",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).",
+      "tags": [
+        "bayesian",
+        "probabilistic-programming",
+        "monte-carlo",
+        "markov",
+        "prior"
+      ],
+      "alternatives": [
+        "[[Stan]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/Stan.md",
+      "nom": "Stan",
+      "alias": [
+        "CmdStanPy",
+        "cmdstanpy",
+        "Stan language"
+      ],
+      "role": "brique",
+      "categorie": "stats/bayesien",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.",
+      "tags": [
+        "bayesian",
+        "probabilistic-programming",
+        "monte-carlo",
+        "markov"
+      ],
+      "alternatives": [
+        "[[PyMC]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/Statistiques & inférence.md",
+      "nom": "Statistiques & inférence",
+      "alias": [
+        "stats",
+        "inférence statistique"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.",
+      "tags": [
+        "statistical-inference",
+        "bayesian",
+        "causal-inference",
+        "factor-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/lifelines.md",
+      "nom": "lifelines",
+      "alias": [],
+      "role": "brique",
+      "categorie": "stats/inference",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Analyse de survie en Python pur — estimateurs non paramétriques (Kaplan-Meier, Nelson-Aalen) et modèles de régression (Cox à risques proportionnels, AFT) pour modéliser le temps jusqu'à un événement avec données censurées.",
+      "tags": [
+        "survival-analysis",
+        "regression"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/pingouin.md",
+      "nom": "pingouin",
+      "alias": [],
+      "role": "brique",
+      "categorie": "stats/inference",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.",
+      "tags": [
+        "hypothesis-testing",
+        "effect-size",
+        "statistical-power",
+        "non-parametric",
+        "parametric-test"
+      ],
+      "alternatives": [
+        "[[scipy.stats]]",
+        "[[statsmodels]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/scipy.stats.md",
+      "nom": "scipy.stats",
+      "alias": [
+        "SciPy stats"
+      ],
+      "role": "brique",
+      "categorie": "stats/inference",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.",
+      "tags": [
+        "hypothesis-testing",
+        "p-value",
+        "confidence-interval",
+        "parametric-test",
+        "non-parametric"
+      ],
+      "alternatives": [
+        "[[statsmodels]]",
+        "[[pingouin]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/statsmodels.md",
+      "nom": "statsmodels",
+      "alias": [],
+      "role": "brique",
+      "categorie": "stats/inference",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.",
+      "tags": [
+        "statistical-inference",
+        "hypothesis-testing",
+        "parametric-test",
+        "p-value"
+      ],
+      "alternatives": [
+        "[[scipy.stats]]",
+        "[[pingouin]]"
       ],
       "complements": [],
       "maturite": "production"

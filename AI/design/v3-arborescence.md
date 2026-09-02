@@ -85,7 +85,7 @@ SecondBrain/
 │   ├── Recherche/   (6)
 │   ├── Relationnel/   (6)
 │   └── (17 pages au niveau du domaine)
-├── Statistiques & inférence/   (47 pages)
+├── Statistiques & inférence/   (47 pages — 10 au lot 3, les 37 notions au lot 4)
 │   └── (10 pages au niveau du domaine)
 ├── Data & pipelines/   (46 pages)
 │   ├── Scraping/   (10)
@@ -672,9 +672,15 @@ SecondBrain/
 - `[c]` Comparatif - Moteurs de recherche — filtre `database/recherche`
 - `[c]` Comparatif - ORM — filtre `database/orm`
 
-### Statistiques & inférence  ·  47 pages
+### Statistiques & inférence  ·  47 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/` par `git mv`, corps réécrit
+  au gabarit §9
+- [x] sous-dossiers créés — **aucun**. Les 4 sous-domaines `stats/*` plafonnent à 4 pages
+  (`stats/inference`), sous le seuil de 5 : les 10 briques restent au niveau du domaine
+- [ ] notions recatégorisées — **lot 4** : les 37 notions ci-dessous portent `concept/stats`
+  et sont encore sous `Wiki/Concepts/`. Le hub les cite en clair dans son corps
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 10 pages
 
