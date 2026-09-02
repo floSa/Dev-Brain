@@ -23,7 +23,7 @@ tags: [clustering, unsupervised]
 ### Quatre grandes familles
 - **Partition** : découpe en $K$ groupes en optimisant un critère global → [[K-Means]]. Rapide, mais $K$ fixé d'avance et clusters convexes.
 - **Hiérarchique** : construit un arbre de fusions/divisions, coupé a posteriori → [[Classification hiérarchique (CAH)]]. Pas de $K$ imposé, lecture par dendrogramme.
-- **Densité** : un cluster = une zone dense séparée par du vide → [[DBSCAN]], [[HDBSCAN]]. Formes arbitraires, détection du bruit, $K$ découvert.
+- **Densité** : un cluster = une zone dense séparée par du vide → [[DBSCAN]], [[Clustering hiérarchique par densité|HDBSCAN]]. Formes arbitraires, détection du bruit, $K$ découvert.
 - **Probabiliste / modèle** : les données sont un mélange de lois → [[Gaussian Mixture Models (GMM)]]. Affectation souple (probabilités), clusters ellipsoïdaux.
 
 ### Affectation dure vs souple
@@ -53,7 +53,7 @@ tags: [clustering, unsupervised]
 - [[K-Means]] — partition en $K$ groupes minimisant l'inertie intra-classe ; rapide, baseline.
 - [[Classification hiérarchique (CAH)]] — hiérarchie de fusions visualisée par dendrogramme ; pas de $K$ imposé.
 - [[DBSCAN]] — clustering par densité ; formes arbitraires et détection du bruit.
-- [[HDBSCAN]] — extension hiérarchique de DBSCAN, sans seuil de densité global.
+- [[Clustering hiérarchique par densité|HDBSCAN]] — extension hiérarchique de DBSCAN, sans seuil de densité global.
 - [[Gaussian Mixture Models (GMM)]] — mélange probabiliste de gaussiennes ; affectation souple.
 - [[Mise à l'échelle]] — préalable obligé des méthodes à distance (sinon la variable de plus grande amplitude domine).
 - [[Réduction de dimension]] — souvent en amont, pour débruiter avant de classer (cf. [[HCPC]]).

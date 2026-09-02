@@ -19,7 +19,7 @@ url_repo: https://github.com/scikit-learn-contrib/hdbscan
 
 ## Pourquoi
 
-Implémentation de référence de l'algorithme [[Wiki/Concepts/HDBSCAN|HDBSCAN]] (scikit-learn-contrib), maintenue par les auteurs de la méthode. Clustering par **densité hiérarchique** : explore tous les seuils de densité et extrait les clusters les plus stables, là où DBSCAN fixe un seul `eps`. Découvre le nombre de clusters, gère des densités hétérogènes, étiquette le bruit, et n'expose qu'un paramètre vraiment interprétable — `min_cluster_size`. Fournit en bonus l'arbre condensé, des probabilités d'appartenance et un score d'outlier (GLOSH). API compatible scikit-learn (`fit` / `labels_`).
+Implémentation de référence de l'algorithme [[Clustering hiérarchique par densité|HDBSCAN]] (scikit-learn-contrib), maintenue par les auteurs de la méthode. Clustering par **densité hiérarchique** : explore tous les seuils de densité et extrait les clusters les plus stables, là où DBSCAN fixe un seul `eps`. Découvre le nombre de clusters, gère des densités hétérogènes, étiquette le bruit, et n'expose qu'un paramètre vraiment interprétable — `min_cluster_size`. Fournit en bonus l'arbre condensé, des probabilités d'appartenance et un score d'outlier (GLOSH). API compatible scikit-learn (`fit` / `labels_`).
 
 ## Quand l'utiliser
 
@@ -53,6 +53,6 @@ Implémentation de référence de l'algorithme [[Wiki/Concepts/HDBSCAN|HDBSCAN]]
 
 ## Liens
 
-- Concept implémenté : [[Wiki/Concepts/HDBSCAN|HDBSCAN]] — dans le cadre [[Clustering]], extension de [[DBSCAN]].
+- Concept implémenté : [[Clustering hiérarchique par densité|HDBSCAN]] — dans le cadre [[Clustering]], extension de [[DBSCAN]].
 - Pipeline fréquent : [[Dev/Services/umap-learn|umap-learn]] (réduction) → hdbscan (clustering).
 - Doc : https://hdbscan.readthedocs.io/

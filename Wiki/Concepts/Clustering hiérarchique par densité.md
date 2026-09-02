@@ -1,16 +1,18 @@
 ---
 role: notion
-nom: HDBSCAN
+nom: Clustering hiérarchique par densité
 alias: [Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering]
 categorie: concept/ml
 domaines: [data-sci]
 tags: [clustering, unsupervised]
 ---
 
-# HDBSCAN
+# Clustering hiérarchique par densité
 
 ## Aperçu
 
+- L'algorithme s'appelle **HDBSCAN** ; la page porte le nom du concept, la bibliothèque
+  qui l'implémente s'appelle [[Dev/Services/hdbscan|hdbscan]].
 - Extension **hiérarchique** de [[DBSCAN]] : au lieu d'un rayon `eps` global, explore tous les seuils de densité et en extrait les clusters les plus **stables**.
 - Gère les clusters de **densités différentes** (le talon d'Achille de DBSCAN) et ne demande qu'un paramètre intuitif : la taille minimale d'un cluster.
 

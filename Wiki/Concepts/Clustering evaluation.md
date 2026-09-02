@@ -38,14 +38,14 @@ tags: [model-evaluation, clustering, unsupervised]
 
 - Sans étiquettes : indices internes + stabilité + **interprétabilité métier** des groupes, qui reste le juge final.
 - Avec étiquettes de référence : préférer ARI ou AMI (corrigés du hasard) à un Rand brut ou à une exactitude — insensibles à la permutation des labels.
-- La silhouette favorise les clusters convexes/sphériques : trompeuse pour [[DBSCAN]] / [[HDBSCAN]] (densité, formes arbitraires) → utiliser plutôt DBCV.
+- La silhouette favorise les clusters convexes/sphériques : trompeuse pour [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]] (densité, formes arbitraires) → utiliser plutôt DBCV.
 - Évaluer dans l'espace où le clustering a un sens (après [[Réduction de dimension]] si la grande dimension écrase les distances).
 - Outils : [[Dev/Services/Scikit-Learn|sklearn.metrics — silhouette_score, davies_bouldin_score, calinski_harabasz_score, adjusted_rand_score, adjusted_mutual_info_score]].
 
 ## Approches voisines & alternatives
 
 - [[Clustering]] — la page chapeau ; celle-ci en est le volet évaluation.
-- [[K-Means]], [[Classification hiérarchique (CAH)]], [[DBSCAN]], [[HDBSCAN]], [[Gaussian Mixture Models (GMM)]] — méthodes dont on mesure ici la qualité.
+- [[K-Means]], [[Classification hiérarchique (CAH)]], [[DBSCAN]], [[Clustering hiérarchique par densité|HDBSCAN]], [[Gaussian Mixture Models (GMM)]] — méthodes dont on mesure ici la qualité.
 - [[Validation croisée]] — la stabilité par ré-échantillonnage en est l'analogue non supervisé.
 
 ## Pour aller plus loin

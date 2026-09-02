@@ -261,10 +261,10 @@
       "Classification hiérarchique (CAH)",
       "Clustering",
       "Clustering evaluation",
+      "Clustering hiérarchique par densité",
       "DBSCAN",
       "Gaussian Mixture Models (GMM)",
       "HCPC",
-      "HDBSCAN",
       "K-Means",
       "hdbscan",
       "k-médoïds (PAM)"
@@ -2515,13 +2515,13 @@
       "Classification hiérarchique (CAH)",
       "Clustering",
       "Clustering evaluation",
+      "Clustering hiérarchique par densité",
       "DBSCAN",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Fanalysis",
       "Gaussian Mixture Models (GMM)",
       "HCPC",
-      "HDBSCAN",
       "ICA",
       "Isolation Forest",
       "K-Means",
@@ -12544,6 +12544,28 @@
       "maturite": null
     },
     {
+      "path": "Wiki/Concepts/Clustering hiérarchique par densité.md",
+      "nom": "Clustering hiérarchique par densité",
+      "alias": [
+        "Hierarchical DBSCAN",
+        "Hierarchical Density-Based Spatial Clustering"
+      ],
+      "role": "notion",
+      "categorie": "concept/ml",
+      "famille": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Wiki/Concepts/Clustering.md",
       "nom": "Clustering",
       "alias": [
@@ -14106,28 +14128,6 @@
       "tags": [
         "clustering",
         "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/HDBSCAN.md",
-      "nom": "HDBSCAN",
-      "alias": [
-        "Hierarchical DBSCAN",
-        "Hierarchical Density-Based Spatial Clustering"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
         "unsupervised"
       ],
       "alternatives": null,

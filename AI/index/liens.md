@@ -507,8 +507,8 @@
 
 ### hdbscan  ·  brique
 - tags : `clustering`, `unsupervised`
-- liens sortants : [[Clustering]], [[DBSCAN]], [[HDBSCAN]], [[K-Means]], [[Scikit-Learn]], [[umap-learn]]
-- liens entrants : —
+- liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[K-Means]], [[Scikit-Learn]], [[umap-learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Scikit-Learn]], [[umap-learn]]
 
 ### Headroom  ·  brique
 - tags : `llm`, `context-engineering`, `token-optimization`, `caching`, `mcp`
@@ -1297,8 +1297,8 @@
 
 ### Scikit-Learn  ·  brique
 - tags : `supervised`, `unsupervised`, `dimensionality-reduction`, `model-evaluation`
-- liens sortants : [[CatBoost]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Encodage des variables catégorielles]], [[Fanalysis]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[HDBSCAN]], [[JAX]], [[K-Means]], [[LightGBM]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Prince]], [[PyTorch]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Réduction de dimension]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Sélection de variables]], [[TensorFlow]], [[Validation croisée]], [[XGBoost]], [[category_encoders]], [[scipy.stats]], [[statsmodels]], [[umap-learn]]
-- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HDBSCAN]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[PaCMAP]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Serve]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVD]], [[SVM]], [[SetFit]], [[Sélection de variables]], [[TF-IDF]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
+- liens sortants : [[CatBoost]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Encodage des variables catégorielles]], [[Fanalysis]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[JAX]], [[K-Means]], [[LightGBM]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Prince]], [[PyTorch]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Réduction de dimension]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Sélection de variables]], [[TensorFlow]], [[Validation croisée]], [[XGBoost]], [[category_encoders]], [[hdbscan]], [[scipy.stats]], [[statsmodels]], [[umap-learn]]
+- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[PaCMAP]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Serve]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVD]], [[SVM]], [[SetFit]], [[Sélection de variables]], [[TF-IDF]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
 
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
@@ -1602,8 +1602,8 @@
 
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
-- liens sortants : [[Comparatif - Réduction de dimension]], [[HDBSCAN]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Apprentissage non supervisé]], [[HDBSCAN]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
+- liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
+- liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
 
 ### Unsloth  ·  brique
 - tags : `fine-tuning`, `memory-optimization`, `quantization`, `gpu`, `llm`
@@ -1782,7 +1782,7 @@
 
 ### Apprentissage non supervisé  ·  notion
 - tags : `unsupervised`, `clustering`
-- liens sortants : [[Apprentissage supervisé]], [[CA]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Eigendecomposition]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[HDBSCAN]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[Prince]], [[PyOD]], [[Reinforcement learning]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[embeddings]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens sortants : [[Apprentissage supervisé]], [[CA]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Eigendecomposition]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[Prince]], [[PyOD]], [[Reinforcement learning]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[embeddings]], [[hdbscan]], [[t-SNE and UMAP]], [[umap-learn]]
 - liens entrants : [[Apprentissage supervisé]], [[Autoencodeurs]], [[Clustering]], [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]], [[Réduction de dimension]], [[Types de données et choix de modèle]]
 
 ### Apprentissage supervisé  ·  notion
@@ -1937,8 +1937,8 @@
 
 ### Classification hiérarchique (CAH)  ·  notion
 - tags : `clustering`, `unsupervised`
-- liens sortants : [[Clustering]], [[DBSCAN]], [[HCPC]], [[HDBSCAN]], [[K-Means]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[HDBSCAN]], [[K-Means]], [[Scikit-Learn]], [[scipy.stats]]
+- liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[HCPC]], [[K-Means]], [[Scikit-Learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Scikit-Learn]], [[scipy.stats]]
 
 ### Classification metrics  ·  notion
 - tags : `model-evaluation`, `classification`, `supervised`
@@ -1947,13 +1947,18 @@
 
 ### Clustering  ·  notion
 - tags : `clustering`, `unsupervised`
-- liens sortants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[HDBSCAN]], [[K-Means]], [[Mise à l'échelle]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering evaluation]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[HDBSCAN]], [[K-Means]], [[Mise à l'échelle]], [[NMF]], [[Scikit-Learn]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]]
+- liens sortants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Mise à l'échelle]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Mise à l'échelle]], [[NMF]], [[Scikit-Learn]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]]
 
 ### Clustering evaluation  ·  notion
 - tags : `model-evaluation`, `clustering`, `unsupervised`
-- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HDBSCAN]], [[K-Means]], [[Réduction de dimension]], [[Scikit-Learn]], [[Validation croisée]]
+- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[K-Means]], [[Réduction de dimension]], [[Scikit-Learn]], [[Validation croisée]]
 - liens entrants : [[Apprentissage non supervisé]], [[Validation croisée]], [[k-médoïds (PAM)]]
+
+### Clustering hiérarchique par densité  ·  notion
+- tags : `clustering`, `unsupervised`
+- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[Scikit-Learn]], [[hdbscan]], [[umap-learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
 
 ### CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -2027,8 +2032,8 @@
 
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
-- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[HDBSCAN]], [[K-Means]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[HDBSCAN]], [[K-Means]], [[Local Outlier Factor]], [[Scikit-Learn]], [[Time series anomaly detection]], [[hdbscan]]
+- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[K-Means]], [[Scikit-Learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Local Outlier Factor]], [[Scikit-Learn]], [[Time series anomaly detection]], [[hdbscan]]
 
 ### Decoding strategies  ·  notion
 - tags : `decoding`, `llm`, `nlp`
@@ -2254,11 +2259,6 @@
 - tags : `clustering`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[K-Means]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
 - liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[FAMD]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
-
-### HDBSCAN  ·  notion
-- tags : `clustering`, `unsupervised`
-- liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[HDBSCAN]], [[Scikit-Learn]], [[umap-learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[HDBSCAN]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Hierarchical forecasting  ·  notion
 - tags : `forecasting`, `timeseries`
@@ -3027,7 +3027,7 @@
 
 ### t-SNE and UMAP  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
-- liens sortants : [[HDBSCAN]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
+- liens sortants : [[Clustering hiérarchique par densité]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
 - liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
 
 ### Test du khi-deux  ·  notion
@@ -3267,7 +3267,7 @@
 - `class-imbalance` : Classification de texte, Imbalanced classification, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Types de données et choix de modèle, imbalanced-learn, k-NN
 - `cli` : Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
-- `clustering` : Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, K-Means, hdbscan, k-médoïds (PAM)
+- `clustering` : Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
@@ -3540,7 +3540,7 @@
 - `transformers` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost  — pas de page concept dédiée
 - `type-hints` : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer  — pas de page concept dédiée
-- `unsupervised` : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `unsupervised` : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `value-function` : Actor-Critic methods, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
 - `vc-dimension` : VC dimension
@@ -3741,7 +3741,7 @@
 - `transformers` (porté par : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, XGBoost)
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
-- `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, HDBSCAN, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
+- `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Vector norms)
 - `version-control` (porté par : Aider, Bruno, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : OpenCut)

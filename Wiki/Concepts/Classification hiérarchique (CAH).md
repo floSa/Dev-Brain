@@ -47,7 +47,7 @@ tags: [clustering, unsupervised]
 - [[Clustering]] — le cadre général et les autres familles.
 - [[K-Means]] — plus rapide et scalable, mais $K$ imposé et pas de hiérarchie.
 - [[HCPC]] — CAH appliquée aux composantes d'une analyse factorielle, avec description automatique des classes.
-- [[DBSCAN]] / [[HDBSCAN]] — clusters par densité ; HDBSCAN produit aussi une hiérarchie, mais fondée sur la densité plutôt que sur un linkage géométrique.
+- [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]] — clusters par densité ; HDBSCAN produit aussi une hiérarchie, mais fondée sur la densité plutôt que sur un linkage géométrique.
 
 ## Pour aller plus loin
 

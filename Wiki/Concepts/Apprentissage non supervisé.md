@@ -22,7 +22,7 @@ tags: [unsupervised, clustering]
 - Corollaire : un résultat non supervisé se **présente et se discute**, il ne se « valide » pas seul.
 
 ### Regrouper
-- Partitionner les observations en groupes homogènes : [[K-Means]], [[DBSCAN]], [[HDBSCAN]], [[Classification hiérarchique (CAH)]], [[Gaussian Mixture Models (GMM)]]. Vue d'ensemble et critères de choix : [[Clustering]].
+- Partitionner les observations en groupes homogènes : [[K-Means]], [[DBSCAN]], [[Clustering hiérarchique par densité|HDBSCAN]], [[Classification hiérarchique (CAH)]], [[Gaussian Mixture Models (GMM)]]. Vue d'ensemble et critères de choix : [[Clustering]].
 
 ### Représenter et compresser
 - Projeter dans un espace de plus faible dimension en préservant l'essentiel : [[PCA]] (linéaire), [[t-SNE and UMAP]] (voisinage local, **visualisation seulement**), [[Manifold learning]], [[SVD]].

@@ -35,7 +35,7 @@ tags: [clustering, unsupervised]
 ## En pratique
 
 - Le couple (`eps`, `min_samples`) est **le** point dur : `eps` trop petit → tout devient du bruit ; trop grand → les clusters fusionnent. Le graphe des distances au $k$-ième voisin (k-distance plot) aide à régler `eps`.
-- **Échoue quand la densité varie** fortement d'un cluster à l'autre : un seul `eps` global ne peut convenir à tous → c'est précisément ce que corrige [[HDBSCAN]].
+- **Échoue quand la densité varie** fortement d'un cluster à l'autre : un seul `eps` global ne peut convenir à tous → c'est précisément ce que corrige [[Clustering hiérarchique par densité|HDBSCAN]].
 - Souffre de la grande dimension (les distances se concentrent) — réduire d'abord.
 - Robuste aux outliers (capturés comme bruit), quasi déterministe (pas de relance aléatoire).
 - Outils : [[Dev/Services/Scikit-Learn|sklearn.cluster.DBSCAN]].
@@ -43,7 +43,7 @@ tags: [clustering, unsupervised]
 ## Approches voisines & alternatives
 
 - [[Clustering]] — le cadre général et les autres familles.
-- [[HDBSCAN]] — extension hiérarchique : fait varier `eps` et gère les densités hétérogènes, au prix d'un peu plus de calcul.
+- [[Clustering hiérarchique par densité|HDBSCAN]] — extension hiérarchique : fait varier `eps` et gère les densités hétérogènes, au prix d'un peu plus de calcul.
 - [[K-Means]] — plus rapide et scalable, mais clusters convexes, $K$ imposé et aucun bruit isolé.
 - [[Classification hiérarchique (CAH)]] — autre approche sans $K$ imposé, mais géométrique (linkage) plutôt que par densité.
 

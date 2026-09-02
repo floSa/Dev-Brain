@@ -41,7 +41,7 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 
 - Réduire d'abord par [[PCA]] (ex. 50 dimensions) avant t-SNE : plus rapide et moins bruité.
 - UMAP par défaut quand on veut de la vitesse, la structure globale, ou projeter de nouveaux points ; t-SNE reste une référence visuelle.
-- Excellents **avant un clustering** par densité ([[HDBSCAN]]) ou pour inspecter des [[embeddings]] ; mauvais choix si l'on veut des axes interprétables ou des distances chiffrées → [[PCA]] et méthodes factorielles.
+- Excellents **avant un clustering** par densité ([[Clustering hiérarchique par densité|HDBSCAN]]) ou pour inspecter des [[embeddings]] ; mauvais choix si l'on veut des axes interprétables ou des distances chiffrées → [[PCA]] et méthodes factorielles.
 - Stochastiques : fixer `random_state` ; standardiser les entrées.
 
 ## Approches voisines & alternatives
@@ -52,7 +52,7 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 - [[Dev/Services/umap-learn|umap-learn]] — l'implémentation de référence d'UMAP.
 - [[Dev/Services/PaCMAP|PaCMAP]] — variante récente qui préserve mieux la structure globale (paires mid-near), alternative à t-SNE et UMAP.
 - [[embeddings]] — la donnée que l'on projette le plus souvent.
-- [[HDBSCAN]] — clustering fréquent en aval de la projection.
+- [[Clustering hiérarchique par densité|HDBSCAN]] — clustering fréquent en aval de la projection.
 
 ## Pour aller plus loin
 

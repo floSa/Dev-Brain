@@ -24,7 +24,7 @@ Bibliothèque de **machine learning généraliste** sur données tabulaires en m
 ## Quand l'utiliser
 
 - **Supervisé** : module `linear_model` ([[Régression linéaire]], [[Régression logistique]], variantes à [[Régularisation]] Ridge/Lasso/ElasticNet), SVM, arbres, module `ensemble` ([[Random Forest]], [[Gradient Boosting (GBDT)]], bagging, voting/stacking), k-NN.
-- **Non supervisé** : module `cluster` — [[Clustering]] ([[K-Means|k-means]], [[DBSCAN]] / [[Wiki/Concepts/HDBSCAN|HDBSCAN]], [[Classification hiérarchique (CAH)|agglomératif]], [[Gaussian Mixture Models (GMM)|mélanges gaussiens]]) et **décomposition** — module `sklearn.decomposition` : [[Wiki/Concepts/PCA|PCA]], `KernelPCA` (non-linéaire), `FastICA` (sources indépendantes), `NMF` (facteurs positifs). Famille élargie : [[Réduction de dimension]].
+- **Non supervisé** : module `cluster` — [[Clustering]] ([[K-Means|k-means]], [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]], [[Classification hiérarchique (CAH)|agglomératif]], [[Gaussian Mixture Models (GMM)|mélanges gaussiens]]) et **décomposition** — module `sklearn.decomposition` : [[Wiki/Concepts/PCA|PCA]], `KernelPCA` (non-linéaire), `FastICA` (sources indépendantes), `NMF` (facteurs positifs). Famille élargie : [[Réduction de dimension]].
 - **Preprocessing & pipelines** : module `preprocessing` — [[Mise à l'échelle|scaling]], [[Encodage des variables catégorielles|encodage]], imputation — composé via `ColumnTransformer` / `Pipeline` (un seul `fit` train → `transform` test, anti-fuite) ; tri des variables par `feature_selection` → [[Sélection de variables]].
 - **Model selection & métriques** : module `model_selection` — [[Validation croisée]] et recherche d'hyperparamètres (`GridSearchCV`, `RandomizedSearchCV` → [[Optimisation d'hyperparamètres]]) ; module `metrics` riche (accuracy, F1, RMSE, silhouette… et [[ROC-AUC & courbe PR]]).
 
@@ -73,7 +73,7 @@ Pour le deep learning / l'entraînement GPU : [[Dev/Services/PyTorch|PyTorch]], 
 - Concepts implémentés, par module :
     - `linear_model` : [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
     - `ensemble` : [[Random Forest]], [[Gradient Boosting (GBDT)]]
-    - `cluster` : [[Clustering]] — [[K-Means]], [[Classification hiérarchique (CAH)|CAH]], [[DBSCAN]] / [[Wiki/Concepts/HDBSCAN|HDBSCAN]], [[Gaussian Mixture Models (GMM)|GMM]]
+    - `cluster` : [[Clustering]] — [[K-Means]], [[Classification hiérarchique (CAH)|CAH]], [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]], [[Gaussian Mixture Models (GMM)|GMM]]
     - `decomposition` : [[Wiki/Concepts/PCA|PCA]], [[Réduction de dimension]]
     - `preprocessing` : [[Mise à l'échelle]], [[Encodage des variables catégorielles]]
     - `feature_selection` : [[Sélection de variables]]

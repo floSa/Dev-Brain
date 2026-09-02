@@ -23,6 +23,7 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/Classification metrics|Classification metrics]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Clustering|Clustering]] — domaines : data-sci
 - [[Wiki/Concepts/Clustering evaluation|Clustering evaluation]] — domaines : data-sci
+- [[Wiki/Concepts/Clustering hiérarchique par densité|Clustering hiérarchique par densité]] — domaines : data-sci
 - [[Wiki/Concepts/Compromis biais-variance|Compromis biais-variance]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Data drift|Data drift]] — domaines : mlops, data-sci
 - [[Wiki/Concepts/Data leakage|Data leakage]] — domaines : data-sci, ml-eng
@@ -42,7 +43,6 @@ Notions de la famille `concept/ml`.
 - [[Wiki/Concepts/Gaussian Process|Gaussian Process]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/GLM|GLM]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Gradient Boosting (GBDT)|Gradient Boosting (GBDT)]] — domaines : data-sci, ml-eng
-- [[Wiki/Concepts/HDBSCAN|HDBSCAN]] — domaines : data-sci
 - [[Wiki/Concepts/ICA|ICA]] — domaines : data-sci
 - [[Wiki/Concepts/Imbalanced classification|Imbalanced classification]] — domaines : data-sci, ml-eng
 - [[Wiki/Concepts/Imputation des valeurs manquantes|Imputation des valeurs manquantes]] — domaines : data-sci
