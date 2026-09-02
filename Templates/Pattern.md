@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: pattern
+role: pattern
 contexte: 
 created: <% tp.date.now("YYYY-MM-DD") %>
 modified: <% tp.date.now("YYYY-MM-DD") %>

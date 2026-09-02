@@ -1,0 +1,246 @@
+/* ========================================================================
+   DevBrain — Code couleurs par ROLE
+   ========================================================================
+   Six roles, six couleurs (cf. AI/design/brain-v3.md §3) :
+   - HUB        (orange     #FF922B) : la page d'un dossier, l'aiguillage
+   - NOTION     (vert sauge #10B981) : ce qu'il faut comprendre
+   - BRIQUE     (bleu acier #3B82F6) : ce qu'on deploie ou importe
+   - COMPARATIF (rouge      #EF4444) : ce qui departage plusieurs briques
+   - PATTERN    (gris       #94A3B8) : une architecture eprouvee
+   - RULE       (gris       #94A3B8) : une regle transverse
+
+   Le bleu et le vert sont ceux des anciennes galaxies dev et wiki : `brique` et
+   `notion` heritent exactement de la couleur que floSa leur connait. Ce sont les
+   memes pages, elles ne changent que de nom de champ.
+
+   Ce fichier s'appelait galaxies.css et ciblait `galaxie:`, champ supprime au lot 2.
+
+   Ce qui reste hors des roles, colore par CHEMIN et non par champ :
+   - META (slate-gray #94A3B8) : docs racine, Documentation/, AI/
+   Les skills n'ont plus de regle : ils vivent sous .claude/skills/, et Obsidian
+   n'indexe aucun dossier commencant par un point — un selecteur sur ce chemin ne
+   pourrait jamais s'appliquer.
+   Les MOC gardent l'orange des hubs — ce sont les hubs d'aujourd'hui, et le lot 3
+   les remplace par de vraies pages `role: hub`.
+
+   Activation : Reglages -> Apparence -> Extraits CSS -> activer "roles"
+   ======================================================================== */
+
+/* Variables ajustables au besoin */
+.theme-light, .theme-dark {
+  --role-hub:        #FF922B;   /* orange */
+  --role-notion:     #10B981;   /* vert sauge  (ex-galaxie wiki) */
+  --role-brique:     #3B82F6;   /* bleu acier  (ex-galaxie dev)  */
+  --role-comparatif: #EF4444;   /* rouge */
+  --role-neutre:     #94A3B8;   /* slate-gray : pattern, rule, meta */
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   1. SIDEBAR — file explorer (par CHEMIN : un dossier n'a pas de frontmatter)
+   ───────────────────────────────────────────────────────────────────── */
+
+/* BRIQUES : Dev/ et ses sous-dossiers */
+.nav-folder-title[data-path="Dev"],
+.nav-folder-title[data-path^="Dev/"] {
+  --role-color: var(--role-brique);
+}
+
+/* NOTIONS : Wiki/ et ses sous-dossiers */
+.nav-folder-title[data-path="Wiki"],
+.nav-folder-title[data-path^="Wiki/"] {
+  --role-color: var(--role-notion);
+}
+
+/* HUBS : MOC/ */
+.nav-folder-title[data-path="MOC"],
+.nav-folder-title[data-path^="MOC/"] {
+  --role-color: var(--role-hub);
+}
+
+
+/* META : gouvernance et espace agent */
+.nav-folder-title[data-path="Documentation"],
+.nav-folder-title[data-path^="Documentation/"],
+.nav-folder-title[data-path^="AI/"] {
+  --role-color: var(--role-neutre);
+}
+
+/* Application aux dossiers : liseré + gras du titre */
+.nav-folder-title[data-path^="Dev"],
+.nav-folder-title[data-path^="Wiki"],
+.nav-folder-title[data-path^="MOC"],
+.nav-folder-title[data-path^="Documentation"],
+.nav-folder-title[data-path^="AI/"] {
+  border-left: 3px solid var(--role-color);
+  padding-left: 4px;
+}
+
+.nav-folder-title[data-path^="Dev"] .nav-folder-title-content {
+  color: var(--role-brique);
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="Wiki"] .nav-folder-title-content {
+  color: var(--role-notion);
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path^="MOC"] .nav-folder-title-content {
+  color: var(--role-hub);
+  font-weight: 600;
+}
+
+
+.nav-folder-title[data-path^="Documentation"] .nav-folder-title-content,
+.nav-folder-title[data-path^="AI/"] .nav-folder-title-content {
+  color: var(--role-neutre);
+  font-weight: 600;
+}
+
+/* Fichiers : petite barre verticale coloree */
+.nav-file-title[data-path^="Dev/"] {
+  border-left: 2px solid var(--role-brique);
+  padding-left: 6px;
+}
+
+.nav-file-title[data-path^="Wiki/"] {
+  border-left: 2px solid var(--role-notion);
+  padding-left: 6px;
+}
+
+.nav-file-title[data-path^="MOC/"] {
+  border-left: 2px solid var(--role-hub);
+  padding-left: 6px;
+}
+
+
+.nav-file-title[data-path="CHANGELOG.md"],
+.nav-file-title[data-path="CLAUDE.md"],
+.nav-file-title[data-path="CLAUDE-build.md"],
+.nav-file-title[data-path="CLAUDE-project.md"],
+.nav-file-title[data-path="CONTRIBUTING.md"],
+.nav-file-title[data-path="Home.md"],
+.nav-file-title[data-path="INSTALL.md"],
+.nav-file-title[data-path="Inbox.md"],
+.nav-file-title[data-path="README.md"],
+.nav-file-title[data-path^="Documentation/"],
+.nav-file-title[data-path^="AI/"] {
+  border-left: 2px solid var(--role-neutre);
+  padding-left: 6px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   2. ONGLETS (tabs) — coloration de l'onglet actif
+   ───────────────────────────────────────────────────────────────────── */
+
+.workspace-tab-header[data-path^="Dev/"]  { border-top: 2px solid var(--role-brique); }
+.workspace-tab-header[data-path^="Wiki/"] { border-top: 2px solid var(--role-notion); }
+.workspace-tab-header[data-path^="MOC/"]  { border-top: 2px solid var(--role-hub); }
+
+.workspace-tab-header[data-path="CHANGELOG.md"],
+.workspace-tab-header[data-path="CLAUDE.md"],
+.workspace-tab-header[data-path="CLAUDE-build.md"],
+.workspace-tab-header[data-path="CLAUDE-project.md"],
+.workspace-tab-header[data-path="CONTRIBUTING.md"],
+.workspace-tab-header[data-path="Home.md"],
+.workspace-tab-header[data-path="INSTALL.md"],
+.workspace-tab-header[data-path="Inbox.md"],
+.workspace-tab-header[data-path="README.md"],
+.workspace-tab-header[data-path^="Documentation/"],
+.workspace-tab-header[data-path^="AI/"] {
+  border-top: 2px solid var(--role-neutre);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   3. NOTE OUVERTE — bord gauche colore selon le frontmatter role:
+   ─────────────────────────────────────────────────────────────────────
+   Ces regles lisent le PANNEAU de proprietes, masque depuis le lot 0
+   (`propertiesInDocument: "hidden"` dans app.json). Elles ne s'appliquent donc
+   plus tant que le panneau reste masque : conservees pour qui le reactive, et
+   parce que le §4 (badge) redevient utile des qu'on l'ouvre.
+   ───────────────────────────────────────────────────────────────────── */
+
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="brique"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="brique"]) {
+  border-left: 4px solid var(--role-brique);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="notion"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="notion"]) {
+  border-left: 4px solid var(--role-notion);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="hub"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="hub"]) {
+  border-left: 4px solid var(--role-hub);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="comparatif"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="comparatif"]) {
+  border-left: 4px solid var(--role-comparatif);
+}
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="pattern"]),
+.markdown-preview-view:has(.metadata-property[data-property-key="role"]
+                            .metadata-property-value[data-text="rule"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="pattern"]),
+.markdown-source-view:has(.metadata-property[data-property-key="role"]
+                           .metadata-property-value[data-text="rule"]) {
+  border-left: 4px solid var(--role-neutre);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   4. PROPRIETE role: dans le frontmatter — badge colore
+   ───────────────────────────────────────────────────────────────────── */
+
+.metadata-property[data-property-key="role"] .metadata-property-value {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="brique"] {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: var(--role-brique);
+}
+
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="notion"] {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--role-notion);
+}
+
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="hub"] {
+  background-color: rgba(255, 146, 43, 0.15);
+  color: var(--role-hub);
+}
+
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="comparatif"] {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--role-comparatif);
+}
+
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="pattern"],
+.metadata-property[data-property-key="role"]
+  .metadata-property-value[data-text="rule"] {
+  background-color: rgba(148, 163, 184, 0.15);
+  color: var(--role-neutre);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   5. GRAPH VIEW — couleurs des noeuds par role
+   ─────────────────────────────────────────────────────────────────────
+   Pas faisable en CSS pur : cle `colorGroups` de .obsidian/graph.json, qui est
+   GITIGNORE et donc local a chaque machine. Le bloc a coller est tenu a jour
+   dans Documentation/perso/obsidian-graph.md §1 — c'est la source versionnee.
+   ───────────────────────────────────────────────────────────────────── */

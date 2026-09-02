@@ -1,19 +1,19 @@
 ---
-galaxie: dev
-type: service
+role: brique
 nom: <% tp.file.title %>
 alias: []
 pitch: ""
 categorie: 
 famille: 
 licence_type: open-source
-hosted: both
 maturite: production
 langage: 
-scaling: single-node
+# hosted et scaling : SEULEMENT si famille est plateforme, saas ou application.
+# Une bibliotheque ne s'heberge pas — le validateur refuse le champ (R16).
+# hosted: [self, managed]
+# scaling: single-node
 alternatives: []
-remplace_par: []
-status: actif
+complements: []
 tags: []
 url_docs: 
 url_repo: 

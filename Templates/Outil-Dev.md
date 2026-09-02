@@ -1,6 +1,5 @@
 ---
-galaxie: dev
-type: outil
+role: brique
 nom: <% tp.file.title %>
 alias: []
 pitch: ""
@@ -10,8 +9,9 @@ domaines: []
 licence_type: open-source
 os: ""
 langage: 
-status: actif
+maturite: production
 alternatives: []
+complements: []
 tags: []
 url_docs: 
 url_repo: 

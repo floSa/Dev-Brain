@@ -13,32 +13,60 @@ But : naviguer du général au précis (domaine → sous-domaine → fiche), et 
 
 ## 1. Code couleur du graphe
 
-Quatre niveaux, repérables d'un coup d'œil :
+Depuis le lot 2 de la migration v3, la couleur se lit sur `role:` — le champ qui porte la
+**nature** de la page. `galaxie:` a été supprimé : il ne servait qu'à ça, et il le faisait
+moins bien (il ne distinguait ni un hub d'une notion, ni un comparatif d'une brique).
 
-| Élément | Requête | Couleur |
-|---------|---------|---------|
-| **Domaines** (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | `path:MOC/Themes/` | 🟡 or |
-| **Hubs** catégories + sous-hubs concepts (Bases de données, Statistiques, Maths du ML…) | `path:MOC/Categories/` et `path:MOC/Concepts/` | 🟠 orange |
-| **Dev** (services, outils techniques) | `["galaxie":"dev"]` | 🔵 bleu |
-| **Wiki** (notions / feuilles) | `["galaxie":"wiki"]` | 🟢 vert |
+| Élément | `role:` | Requête | Couleur |
+|---------|---------|---------|---------|
+| **Domaines** transverses (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | — | `path:MOC/Themes/` | 🟡 or |
+| **Hubs** — la page d'un dossier, l'aiguillage | `hub` | `["role":"hub"]` + `path:MOC/` | 🟠 orange |
+| **Briques** — ce qu'on déploie ou importe | `brique` | `["role":"brique"]` | 🔵 bleu |
+| **Notions** — ce qu'il faut comprendre | `notion` | `["role":"notion"]` | 🟢 vert |
+| **Comparatifs** — ce qui départage plusieurs briques | `comparatif` | `["role":"comparatif"]` | 🔴 rouge |
+| **Patterns** et **Rules** | `pattern`, `rule` | `["role":"pattern"] OR ["role":"rule"]` | ⚪ gris |
 
-L'ordre des règles compte : `MOC/Themes` et `MOC/Categories/Concepts` sont **avant** la règle `galaxie:wiki` (les MOC sont techniquement `galaxie: wiki`, donc la règle de chemin doit primer pour les colorer en or/orange).
+Le bleu et le vert sont **exactement** ceux des anciennes galaxies `dev` et `wiki` : ce sont
+les mêmes pages, elles ne changent que de nom de champ.
+
+L'ordre des règles compte : `path:MOC/Themes/` passe **avant** `path:MOC/`, sinon les cinq
+domaines transverses prendraient l'orange des hubs.
+
+Deux rôles n'ont encore aucune page : `hub` naît au lot 3 (avec l'arborescence), `comparatif`
+au lot 5 (quand les `.base` deviennent des pages). Leurs règles sont posées d'avance — elles
+ne colorent rien pour l'instant, et coloreront le jour même sans qu'on y retouche. En
+attendant, `path:MOC/` tient le rôle de hub.
 
 Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 
 ```json
 "colorGroups": [
-  { "query": "path:MOC/Themes/",     "color": { "a": 1, "rgb": 16766011 } },
-  { "query": "path:MOC/Categories/", "color": { "a": 1, "rgb": 16749099 } },
-  { "query": "path:MOC/Concepts/",   "color": { "a": 1, "rgb": 16749099 } },
-  { "query": "path:AI/skills/",      "color": { "a": 1, "rgb": 14701138 } },
-  { "query": "[\"galaxie\":\"dev\"]",  "color": { "a": 1, "rgb": 4271325 } },
-  { "query": "[\"galaxie\":\"wiki\"]", "color": { "a": 1, "rgb": 8042496 } },
-  { "query": "[\"galaxie\":\"meta\"]", "color": { "a": 1, "rgb": 16102400 } }
+  { "query": "path:MOC/Themes/",           "color": { "a": 1, "rgb": 16766011 } },
+  { "query": "[\"role\":\"hub\"] OR path:MOC/", "color": { "a": 1, "rgb": 16749099 } },
+  { "query": "[\"role\":\"brique\"]",        "color": { "a": 1, "rgb": 4271325 } },
+  { "query": "[\"role\":\"notion\"]",        "color": { "a": 1, "rgb": 8042496 } },
+  { "query": "[\"role\":\"comparatif\"]",    "color": { "a": 1, "rgb": 15680580 } },
+  { "query": "[\"role\":\"pattern\"] OR [\"role\":\"rule\"]", "color": { "a": 1, "rgb": 9741240 } }
 ]
 ```
 
-> ⚠️ `.obsidian/graph.json` est **gitignoré** → cette config est **locale par machine**, pas versionnée. À réappliquer sur chaque poste.
+Vérification des entiers : `16766011` = `#FFD43B` (or) · `16749099` = `#FF922B` (orange) ·
+`4271325` = `#412CDD` (indigo, ex-`galaxie: dev`) · `8042496` = `#7AB800` (vert olive,
+ex-`galaxie: wiki`) · `15680580` = `#EF4444` (rouge) · `9741240` = `#94A3B8` (gris).
+
+Deux règles de l'ancien bloc ont été **retirées**, et non transposées :
+
+- `path:AI/skills/` — ce dossier n'existe plus, les skills vivent sous `.claude/skills/`.
+  Or Obsidian **n'indexe aucun dossier commençant par un point** : la règle ne pouvait pas
+  fonctionner sous son nouveau chemin. Son entier valait de surcroît `14701138` = `#E05252`,
+  un rouge — il serait entré en collision frontale avec celui des comparatifs.
+- `["galaxie":"meta"]` — le champ n'existe plus. Les pages de gouvernance (`Documentation/`,
+  `AI/`) sont déjà hors du graphe par `userIgnoreFilters` (cf. lot 0).
+
+> ⚠️ `.obsidian/graph.json` est **gitignoré** → cette config est **locale par machine**, pas
+> versionnée. Ce tableau est donc la **seule** source de vérité des couleurs du graphe : à
+> réappliquer à la main sur chaque poste. L'extrait CSS `.obsidian/snippets/roles.css`, lui,
+> est versionné — il colore l'explorateur, les onglets et le badge de propriété, pas le graphe.
 
 ## 2. Hiérarchie de navigation (MOC)
 

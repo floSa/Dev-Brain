@@ -1,6 +1,5 @@
 ---
-galaxie: wiki
-type: concept
+role: notion
 nom: <% tp.file.title %>
 alias: []
 categorie: concept/
