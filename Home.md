@@ -48,7 +48,8 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-`Dev/` et `Wiki/` ne gardent que les 19 domaines pas encore déplacés.
+`Dev/` et `Wiki/` ne gardent que « Machine Learning » et « LLM & IA générative »,
+les 2 domaines pas encore déplacés.
 
 - **Dev** — briques techniques → `Dev/`
 - **Wiki** — notions → `Wiki/`

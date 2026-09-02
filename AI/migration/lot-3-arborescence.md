@@ -37,8 +37,9 @@ Arbre complet, page par page : [[AI/design/v3-arborescence|v3-arborescence]].
 
 1. Un dossier par domaine, nommé avec son libellé français (table `DOM_LABEL` de la spec,
    reprise de `CAT_LABEL` de `build_mocs.py`).
-2. Un sous-dossier dès qu'un sous-domaine atteint **5 pages**. En-dessous, les pages restent au
-   niveau du domaine.
+2. Un sous-dossier dès qu'un sous-domaine atteint **5 pages** — sauf s'il ne laisse aucune
+   page au niveau du domaine, auquel cas il ne se promeut pas (plafond tranché le
+   2026-09-04, cf. remontée 8). En-dessous du seuil, les pages restent au niveau du domaine.
 3. Le chemin se **dérive** de `categorie:`. Personne ne choisit un dossier.
 4. Tout dossier porte une page à son nom, `role: hub`.
 
@@ -53,13 +54,18 @@ Ensuite, par taille croissante de difficulté : `Data & pipelines`, `Outils de d
 les 15 petits domaines, puis `LLM` et `Machine Learning` en dernier — ce sont eux qui portent
 les notions non catégorisées, et le lot 4 devra repasser derrière.
 
-**Fait au 2026-09-04 — 15 domaines sur 20.** Le pilote, puis les 14 plus petits en une
+**Fait au 2026-09-04 — 18 domaines sur 20.** Le pilote, puis les 14 plus petits en une
 session : `Outils de développement` (20 pages), `Signal & audio` (3), `Design & diagrammes`
 (7), `Calcul distribué` (7), `Web & API` (6), `Stockage` (6), `Automatisation no-code` (5),
 `Médias` (4), `Interfaces & apps data` (4), `Sécurité` (3), `Observabilité` (3), `Réseau`
-(2), `Documents` (2), `DevOps` (2). Restent `Machine Learning`, `LLM & IA générative`,
-`Data & pipelines`, `Statistiques & inférence` et `Mathématiques` — les 5 gros, et les
-seuls à porter des notions à recatégoriser au lot 4.
+(2), `Documents` (2), `DevOps` (2). Puis les trois moyens dans une troisième session :
+`Statistiques & inférence` (10 briques sur 47 pages), `Data & pipelines` (46) et
+`Mathématiques` (1 sur 27) — précédés du **plafonnement du seuil de promotion** et de sa
+rétroaction sur `Stockage` et `Automatisation no-code` (remontée 8).
+
+Restent `Machine Learning` (241) et `LLM & IA générative` (131), traités chacun dans sa
+propre conversation. Ce sont eux qui portent l'essentiel des notions à recatégoriser au
+lot 4, et les 6 comparatifs sans filtre `categorie` encore cassés.
 
 ### Pour chaque domaine
 
@@ -93,24 +99,25 @@ le vault**, à la casse près. Voir la première remontée.
 
 ## Critères d'acceptation
 
-État au 2026-09-04, après le pilote et les 14 plus petits domaines (**15 sur 20**).
+État au 2026-09-04, après le pilote, les 14 plus petits et les trois moyens
+(**18 sur 20**).
 
-- [ ] `Dev/`, `Wiki/` et `MOC/` n'existent plus — *5 domaines restants (Machine
-      Learning, LLM & IA générative, Data & pipelines, Statistiques & inférence,
-      Mathématiques) ; 524 pages encore sous `Dev/` et `Wiki/`.*
+- [ ] `Dev/`, `Wiki/` et `MOC/` n'existent plus — *2 domaines restants (Machine
+      Learning, LLM & IA générative) ; 467 pages encore sous `Dev/` et `Wiki/`.*
 - [x] Le chemin de chaque page concorde avec son `categorie:` — vérifié en dur par
-      `AI/scripts/check_arbo.py`, vert sur les 121 pages migrées dans 15 domaines.
-- [x] Chaque dossier porte une page `role: hub` à son nom — 23 hubs, contrôlé par
+      `AI/scripts/check_arbo.py`, vert sur les 178 pages migrées dans 18 domaines.
+- [x] Chaque dossier porte une page `role: hub` à son nom — 29 hubs, contrôlé par
       `check_arbo.py` à tous les niveaux du chemin, pas seulement la feuille.
 - [x] Aucun wikilink cassé — `check_brain.py` vert (0 violation dure),
-      `build_links.py` : 0 lien non résolu sur 668 pages.
-- [x] `build_mocs.py` remplit les zones `AUTO` des 23 hubs — et ne crée plus la MOC
+      `build_links.py` : 0 lien non résolu sur 674 pages.
+- [x] `build_mocs.py` remplit les zones `AUTO` des 29 hubs — et ne crée plus la MOC
       d'un domaine migré, les boucles `MOC/` filtrant sur `Dev/` et `Wiki/`.
-      `MOC/Categories/` ne garde que les 5 domaines restants.
-- [x] Aucun fichier perdu — 796 fichiers `.md`/`.base` avant le lot, 803 après :
-      −1 fusion documentée (`MOC/Categories/Bases de données.md`), +8 hubs de
-      sous-domaine. Les 14 autres MOC de domaine ne disparaissent pas, elles
-      **deviennent** les hubs de domaine par `git mv`.
+      `MOC/Categories/` ne garde que « Machine Learning » et « LLM & IA générative ».
+- [x] Aucun fichier perdu — 796 fichiers `.md`/`.base` avant le lot, 806 après :
+      −3 fusions documentées (`MOC/Categories/Bases de données.md`, puis les deux
+      sous-hubs `Stockage objet` et `No-code` défaits par le plafond du seuil),
+      +13 hubs de sous-domaine. Les 17 autres MOC de domaine ne disparaissent pas,
+      elles **deviennent** les hubs de domaine par `git mv`.
 
 ## Interdictions
 
@@ -271,6 +278,11 @@ Détection d'anomalies, Forecasting, NLP, Réduction de dimension) portent tous 
 de « Machine Learning ». Leur clause de chemin cassera au moment où ce domaine descendra.
 À traiter dans cette conversation-là, pas avant.
 
+Réserve mesurée depuis : « Réduction de dimension » a commencé à casser **avant**, avec
+« Statistiques & inférence », qui lui a pris 2 de ses 5 membres. Un comparatif transverse
+casse avec le premier de ses domaines qui descend, pas avec celui de la majorité de ses
+membres. Cf. remontée 14.
+
 ### 8. Le seuil de promotion peut capturer 100 % d'un domaine — **plafonné le 2026-09-04**
 
 « Stockage » a 6 pages, toutes en `storage/objet`. « Automatisation no-code » en a 5,
@@ -355,8 +367,10 @@ sont apparus, tous du même genre, et aucun n'est une contradiction à trancher 
   l'état visé **après** le lot 4. C'est le seul domaine des 14 concerné.
 - **`Wiki/Outils/Obsidian.md` n'est dans aucun tableau** — cf. remontée 9.
 - **Les libellés de sous-dossier manquants** ont été lus dans le document et ajoutés à
-  `SUB_LABEL` : `Notebooks`, `Diagrammes`, `Stockage objet`, `No-code`. Le garde-fou a
-  fonctionné comme prévu — le script s'arrête plutôt que d'inventer un nom.
+  `SUB_LABEL` : `Notebooks`, `Diagrammes`, `Stockage objet`, `No-code` — puis, à la
+  session suivante, `Scraping`, `Parsing`, `Orchestration`, `DataFrames`, `Visualisation`
+  pour « Data & pipelines ». Le garde-fou a fonctionné chaque fois comme prévu — le
+  script s'arrête plutôt que d'inventer un nom.
 
 ### 12. Le vocabulaire des tags est une règle DURE, y compris sur un hub
 
@@ -373,22 +387,75 @@ d'aiguillage que le même jeton désigne se disputent la résolution d'un lien n
 `tags.md`, et ne pas donner au hub de domaine un alias qui est le nom d'un de ses
 sous-hubs.
 
-## Prompt à coller dans une conversation neuve — les 5 domaines restants
+## Remontées — les trois domaines moyens, 2026-09-04
 
-Restent « Machine Learning » (241), « LLM & IA générative » (131), « Data & pipelines »
-(46), « Statistiques & inférence » (47) et « Mathématiques » (27). Ce sont eux qui portent
-les 205 notions non catégorisées, et le lot 4 devra repasser derrière — d'où l'ordre :
-les deux moyens d'abord, `Machine Learning` et `LLM` en dernier.
+57 briques et 8 comparatifs, de « Data & pipelines » (46 pages) à « Mathématiques »
+(1 page migrée sur 27). La méthode a tenu sans retouche autre que les 5 libellés de
+`SUB_LABEL` — le garde-fou du script s'est arrêté sur `data/orchestration`, comme prévu
+par la remontée 11.
+
+### 13. Un domaine peut être fait presque entièrement de notions
+
+C'est la nouveauté de ces trois domaines, et elle change ce que le hub doit porter.
+« Mathématiques » descend **1 brique sur 27 pages**, « Statistiques & inférence » 10 sur
+47 : le reste est fait de notions `concept/math` et `concept/stats`, qui attendent le
+lot 4 sous `Wiki/Concepts/`. Le dossier d'un tel domaine paraît donc vide, alors que le
+domaine est l'un des plus fournis du brain.
+
+Le corps du hub est le seul endroit qui puisse compenser cet écart, et il le fait sans
+rien préempter du lot 4 : il **cite les notions en clair**, par des liens nus. Un lien nu
+résout par nom de fichier, donc il continuera de résoudre quand la notion descendra —
+c'est exactement la propriété pour laquelle le nu a été tranché. Les hubs de
+« Mathématiques » et de « Statistiques & inférence » citent ainsi 26 et 15 notions.
+
+Conséquence pratique : sur ces domaines, écrire le hub demande de connaître le domaine,
+pas seulement de lire la liste générée par `build_mocs.py`. Le budget d'écriture n'est
+pas proportionnel au nombre de pages déplacées. À prévoir pour « Machine Learning » et
+« LLM », dont les hubs auront à cartographier 9 et 6 sous-domaines.
+
+### 14. Un comparatif sans filtre `categorie` peut perdre des membres pour un domaine qui n'est pas le sien
+
+La remontée 7 avait établi que les 6 comparatifs sans `categorie:` portent des membres
+de « Machine Learning », et qu'ils seraient traités avec ce domaine. Mesure de cette
+session : l'un d'eux ne casse **pas** avec Machine Learning, il casse avec
+« Statistiques & inférence ».
+
+`Comparatif - Réduction de dimension.base` filtre
+`file.path.startsWith("Dev/Services/")` **et** `file.hasTag("dimensionality-reduction")`.
+Ses 5 membres étaient [[Fanalysis]] et [[Prince]] (`stats/exploratoire`), [[PaCMAP]] et
+[[umap-learn]] (`ml/non-supervise`), [[Scikit-Learn]] (`ml/socle`). La descente de
+« Statistiques & inférence » lui en a fait perdre **deux** : il est passé de 5 à 3.
+
+Il n'a pas été touché — la consigne le réservait à la conversation Machine Learning — et
+rien ne le signale : `R8b` ne se déclenche qu'en dessous de 2 membres. Le fait est donc
+consigné ici. Sa substitution est celle de la remontée 7, `role == "brique"`, et elle
+**restaurera les 5 membres d'un coup**, y compris les deux pages `stats/*` : le filtre de
+chemin les incluait, et c'est bien un comparatif de méthodes de réduction de dimension
+quelle que soit la catégorie de la brique qui les implémente.
+
+La leçon générale : « ce comparatif casse avec le domaine de la majorité de ses membres »
+est faux. Un comparatif transverse casse avec **le premier** de ses domaines qui descend.
+Le croisement à faire avant de migrer un domaine est donc : *quels tags portent mes pages,
+et quel `.base` filtre sur ces tags ?* — deux commandes, et c'est ce qui a permis de
+mesurer celui-ci plutôt que de le découvrir plus tard.
+
+## Prompt à coller dans une conversation neuve — les 2 domaines restants
+
+Restent « Machine Learning » (241 pages) et « LLM & IA générative » (131). Ce sont eux
+qui portent l'essentiel des 205 notions non catégorisées, et le lot 4 devra repasser
+derrière. **Un domaine par conversation** : leur hub a 9 et 6 sous-domaines à
+cartographier, et la remontée 13 montre que le budget d'écriture ne suit pas le nombre de
+pages déplacées.
 
 La passe de dénudage des liens est faite une fois pour toutes : ne pas la rejouer.
 
 ```
 Lis AI/design/brain-v3.md, AI/design/v3-arborescence.md puis
-AI/migration/lot-3-arborescence.md — dont les DEUX séries de Remontées.
+AI/migration/lot-3-arborescence.md — dont les TROIS séries de Remontées.
 
 Applique le lot 3 pour le domaine « <DOMAINE> » uniquement, et arrête-toi là.
 
-Méthode, rodée sur 15 domaines :
+Méthode, rodée sur 18 domaines :
   uv run AI/migration/scripts/migrate_lot3_arbo.py <prefixe> --dry-run
   puis sans --dry-run. Si le script s'arrête sur un sous-domaine sans libellé,
   le lire dans v3-arborescence.md et l'ajouter à SUB_LABEL de AI/scripts/arbo.py.
@@ -398,12 +465,19 @@ Puis, dans cet ordre :
     frontmatter en `role: hub` et réécrire son corps au gabarit §9 (remontée 6) ;
   - créer les hubs des sous-dossiers promus, en lisant `Documentation/general/tags.md`
     pour les `tags:` — c'est une règle dure (remontée 12) ;
+  - citer les notions du domaine en clair dans le corps du hub, en liens nus : elles
+    ne descendent qu'au lot 4 et le dossier paraîtrait vide sans elles (remontée 13) ;
   - citer les nouveaux hubs dans `Home.md`, sinon R7 les déclare inatteignables ;
-  - retirer le filtre `file.path.startsWith("Dev/...")` des .base déplacés, ET
-    des comparatifs SANS filtre `categorie` dont ce domaine emporte les membres
-    (remontée 7 — le script ne les voit pas et leur vue se vide en silence) ;
+  - retirer le filtre `file.path.startsWith("Dev/...")` des .base déplacés, ET des
+    comparatifs SANS filtre `categorie` dont ce domaine emporte les membres — les
+    trouver en croisant les tags des pages du domaine avec les `file.hasTag(...)`
+    des .base de `Dev/Patterns/` (remontées 7 et 14 : le script ne les voit pas et
+    leur vue se vide en silence). La substitution par défaut est `role == "brique"` ;
   - régénérer build_index / build_mocs / build_links, vérifier avec check_brain.py
     ET check_arbo.py.
+
+Le seuil de promotion est plafonné : un sous-domaine ne se promeut pas s'il ne
+laisse aucune page au niveau du domaine (remontée 8). `arbo.py` l'applique seul.
 
 Aucun rm : uniquement git mv. Clôture avec le skill cloturer-brain.
 ```
