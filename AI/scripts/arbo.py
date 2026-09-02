@@ -87,6 +87,13 @@ SUB_LABEL = {
     "storage/objet": "Stockage objet",
     # Automatisation no-code — « ### Automatisation no-code · 5 pages »
     "automation/no-code": "No-code",
+    # LLM & IA générative — « ### LLM & IA générative · 131 pages »
+    "llm/agent-de-code": "Agents de code",
+    "llm/runtime": "Runtimes",
+    "llm/agents": "Agents",
+    "llm/finetuning": "Fine-tuning",
+    "llm/text-to-sql": "Text-to-SQL",
+    "llm/assistant": "Assistants",
 }
 
 # Dossiers de la racine qui ne portent pas de pages du brain.

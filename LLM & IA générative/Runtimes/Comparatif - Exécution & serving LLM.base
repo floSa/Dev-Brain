@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     - categorie == "llm/runtime"
 views:
   - type: table

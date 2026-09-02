@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Outils/")
     - categorie == "llm/agent-de-code"
 views:
   - type: table

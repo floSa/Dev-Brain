@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - categorie == "llm/observabilite"
+    - categorie == "llm/eval"
 views:
   - type: table
-    name: Observabilité LLM
+    name: Évaluation LLM
     order:
       - file.name
       - pitch

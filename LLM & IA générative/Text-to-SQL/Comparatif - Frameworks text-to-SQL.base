@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `llm/text-to-sql` existe desormais comme domaine, et absorbe les deux
     # ex-`llm/framework-module` : le detour par le tag n'a plus d'objet.
     # Memes 5 membres.

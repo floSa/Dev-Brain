@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `llm/framework` (33 pages) a eclate en 13 domaines. Ce comparatif garde son
     # sujet : les briques qu'on IMPORTE pour construire une application LLM.
     # En sortent, et ont leur propre domaine : les passerelles (`llm/passerelle`),
