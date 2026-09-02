@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     - categorie == "math/optimisation"
 views:
   - type: table

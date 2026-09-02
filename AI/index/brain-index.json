@@ -10,6 +10,7 @@
     "DevOps",
     "Documents",
     "Interfaces & apps data",
+    "Mathématiques",
     "Médias",
     "Observabilité",
     "Outils de développement",
@@ -22,7 +23,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 673,
+  "count": 674,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1139,6 +1140,7 @@
       "Cross-entropy",
       "Jensen-Shannon divergence",
       "KL divergence",
+      "Mathématiques",
       "Mutual information",
       "Shannon entropy",
       "Wasserstein distance"
@@ -1207,6 +1209,7 @@
     ],
     "linear-algebra": [
       "Eigendecomposition",
+      "Mathématiques",
       "Matrix decompositions",
       "Matrix products",
       "Projections",
@@ -1223,6 +1226,7 @@
       "Régularisation"
     ],
     "linear-programming": [
+      "Mathématiques",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP"
@@ -1786,6 +1790,7 @@
       "Gradient descent",
       "Learning rate schedules",
       "Loss landscape and saddle points",
+      "Mathématiques",
       "Maximal Update Parametrization",
       "Newton & quasi-Newton",
       "Optimal transport",
@@ -8328,26 +8333,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/PuLP.md",
-      "nom": "PuLP",
-      "alias": [
-        "pulp"
-      ],
-      "role": "brique",
-      "categorie": "math/optimisation",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…).",
-      "tags": [
-        "optimization",
-        "linear-programming",
-        "combinatorial-optimization"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/PyOD.md",
       "nom": "PyOD",
       "alias": [
@@ -10417,6 +10402,51 @@
         "[[Shiny for Python]]",
         "[[Gradio]]"
       ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Mathématiques.md",
+      "nom": "Mathématiques",
+      "alias": [
+        "maths",
+        "mathématiques appliquées"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.",
+      "tags": [
+        "linear-algebra",
+        "optimization",
+        "information-theory",
+        "linear-programming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/PuLP.md",
+      "nom": "PuLP",
+      "alias": [
+        "pulp"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…).",
+      "tags": [
+        "optimization",
+        "linear-programming",
+        "combinatorial-optimization"
+      ],
+      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },

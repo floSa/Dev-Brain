@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 673 pages actives.
+> 674 pages actives.
 
 ## Par page
 
@@ -1138,7 +1138,7 @@
 ### PuLP  ·  brique
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
-- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens entrants : [[Mathématiques]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
 
 ### Pydantic  ·  brique
 - tags : `data-validation`, `type-hints`
@@ -1308,7 +1308,7 @@
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Intervalles de confiance]], [[Prince]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[statsmodels]]
-- liens entrants : [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Prince]], [[PyMC]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Wasserstein distance]], [[lifelines]], [[pingouin]], [[statsmodels]]
+- liens entrants : [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Prince]], [[PyMC]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Wasserstein distance]], [[lifelines]], [[pingouin]], [[statsmodels]]
 
 ### Scrapling  ·  brique
 - tags : `web-scraping`
@@ -1745,6 +1745,11 @@
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Web & API]]
 - liens entrants : [[Visualisation]], [[Web & API]]
 
+### Mathématiques  ·  hub
+- tags : `linear-algebra`, `optimization`, `information-theory`, `linear-programming`
+- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Cross-entropy]], [[Eigendecomposition]], [[Generalization bounds]], [[Gradient descent]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Matrix decompositions]], [[Matrix products]], [[Mutual information]], [[Newton & quasi-Newton]], [[No Free Lunch theorem]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PAC learning]], [[PCA]], [[Programmation linéaire en nombres entiers (MIP)]], [[Projections]], [[PuLP]], [[Rademacher complexity]], [[Réduction de dimension]], [[SVD]], [[Shannon entropy]], [[Statistiques & inférence]], [[VC dimension]], [[Vector norms]], [[Wasserstein distance]], [[scipy.stats]]
+- liens entrants : —
+
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
 - liens sortants : [[Claude Video]], [[OpenCut]], [[SmartTube]], [[Superwhisper]]
@@ -1803,7 +1808,7 @@
 ### Statistiques & inférence  ·  hub
 - tags : `statistical-inference`, `bayesian`, `causal-inference`, `factor-analysis`
 - liens sortants : [[Analyse de survie]], [[ArviZ]], [[CA]], [[CausalImpact]], [[Comparatif - Outils stats]], [[FAMD]], [[Fanalysis]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[PCA]], [[Prince]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Stan]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : —
+- liens entrants : [[Mathématiques]]
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
@@ -2133,7 +2138,7 @@
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
 - liens sortants : [[Eigendecomposition]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
-- liens entrants : [[Adam optimizer]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens entrants : [[Adam optimizer]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Mathématiques]], [[Newton & quasi-Newton]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
 
 ### Correction des tests multiples  ·  notion
 - tags : `hypothesis-testing`, `multiple-testing`, `p-value`
@@ -2148,7 +2153,7 @@
 ### Cross-entropy  ·  notion
 - tags : `information-theory`, `cross-entropy`, `classification`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Imbalanced classification]], [[KL divergence]], [[Maximum de vraisemblance]], [[Perplexity]], [[PyTorch]], [[Scikit-Learn]], [[Shannon entropy]]
-- liens entrants : [[AlphaZero and self-play]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[CNN]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Classification de texte]], [[Classification metrics]], [[Distillation]], [[KL divergence]], [[Metric learning & ré-identification]], [[Multi-Token Prediction]], [[NER et étiquetage de séquence]], [[Perplexity]], [[Segment Anything (SAM)]], [[Segmentation]], [[Shannon entropy]], [[Speech models]], [[Vision par ordinateur]]
+- liens entrants : [[AlphaZero and self-play]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[CNN]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Classification de texte]], [[Classification metrics]], [[Distillation]], [[KL divergence]], [[Mathématiques]], [[Metric learning & ré-identification]], [[Multi-Token Prediction]], [[NER et étiquetage de séquence]], [[Perplexity]], [[Segment Anything (SAM)]], [[Segmentation]], [[Shannon entropy]], [[Speech models]], [[Vision par ordinateur]]
 
 ### CUPED  ·  notion
 - tags : `experimentation`, `variance-reduction`, `ab-testing`
@@ -2218,7 +2223,7 @@
 ### Eigendecomposition  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`
 - liens sortants : [[Chaînes de Markov]], [[Matrix decompositions]], [[Matrix products]], [[PCA]], [[SVD]], [[Scikit-Learn]], [[numpy]]
-- liens entrants : [[Apprentissage non supervisé]], [[Convexity]], [[Loss landscape and saddle points]], [[Matrix decompositions]], [[Matrix products]], [[PCA]], [[SVD]]
+- liens entrants : [[Apprentissage non supervisé]], [[Convexity]], [[Loss landscape and saddle points]], [[Mathématiques]], [[Matrix decompositions]], [[Matrix products]], [[PCA]], [[SVD]]
 
 ### ELT vs ETL & idempotence  ·  notion
 - tags : `data-pipeline`, `idempotence`
@@ -2338,7 +2343,7 @@
 ### Generalization bounds  ·  notion
 - tags : `learning-theory`, `generalization-bound`
 - liens sortants : [[Compromis biais-variance]], [[Inégalités de concentration]], [[Optimisation d'hyperparamètres]], [[PAC learning]], [[Rademacher complexity]], [[Régularisation]], [[Scikit-Learn]], [[VC dimension]], [[Validation croisée]]
-- liens entrants : [[Compromis biais-variance]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]], [[VC dimension]]
+- liens entrants : [[Compromis biais-variance]], [[Mathématiques]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]], [[VC dimension]]
 
 ### GLM  ·  notion
 - tags : `regression`, `linear-model`, `supervised`, `maximum-likelihood`
@@ -2363,7 +2368,7 @@
 ### Gradient descent  ·  notion
 - tags : `optimization`, `gradient-descent`
 - liens sortants : [[Adam optimizer]], [[Convexity]], [[Gradient Boosting (GBDT)]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Vector norms]]
-- liens entrants : [[Adam optimizer]], [[Attribution par gradient]], [[CNN]], [[Classification audio par spectrogramme]], [[Convexity]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
+- liens entrants : [[Adam optimizer]], [[Attribution par gradient]], [[CNN]], [[Classification audio par spectrogramme]], [[Convexity]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Mathématiques]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
 
 ### Graph Neural Networks  ·  notion
 - tags : `gnn`, `deep-learning`, `representation-learning`
@@ -2493,7 +2498,7 @@
 ### Jensen-Shannon divergence  ·  notion
 - tags : `information-theory`, `kl-divergence`
 - liens sortants : [[KL divergence]], [[Mutual information]], [[Shannon entropy]], [[Wasserstein distance]], [[scipy.stats]]
-- liens entrants : [[Data drift]], [[GANs]], [[KL divergence]], [[Mutual information]], [[Wasserstein distance]]
+- liens entrants : [[Data drift]], [[GANs]], [[KL divergence]], [[Mathématiques]], [[Mutual information]], [[Wasserstein distance]]
 
 ### K-Means  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -2513,7 +2518,7 @@
 ### KL divergence  ·  notion
 - tags : `information-theory`, `kl-divergence`
 - liens sortants : [[Cross-entropy]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Mutual information]], [[PyTorch]], [[RLHF and DPO]], [[Shannon entropy]], [[Wasserstein distance]], [[scipy.stats]]
-- liens entrants : [[Autoencodeurs]], [[Cross-entropy]], [[Data drift]], [[Diffusion models]], [[Distillation]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Mutual information]], [[Optimal transport]], [[Shannon entropy]], [[Wasserstein distance]]
+- liens entrants : [[Autoencodeurs]], [[Cross-entropy]], [[Data drift]], [[Diffusion models]], [[Distillation]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Mathématiques]], [[Mutual information]], [[Optimal transport]], [[Shannon entropy]], [[Wasserstein distance]]
 
 ### Kolmogorov-Arnold Networks  ·  notion
 - tags : `deep-learning`
@@ -2528,7 +2533,7 @@
 ### Learning rate schedules  ·  notion
 - tags : `optimization`, `learning-rate`
 - liens sortants : [[Convexity]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Optimisation d'hyperparamètres]], [[Validation croisée]]
-- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Maximal Update Parametrization]], [[Perceptron et MLP]], [[Transfer learning vision]]
+- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Mathématiques]], [[Maximal Update Parametrization]], [[Perceptron et MLP]], [[Transfer learning vision]]
 
 ### LLM benchmarks  ·  notion
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
@@ -2573,7 +2578,7 @@
 ### Loss landscape and saddle points  ·  notion
 - tags : `optimization`, `loss-landscape`
 - liens sortants : [[Compromis biais-variance]], [[Convexity]], [[Eigendecomposition]], [[Gradient descent]], [[Learning rate schedules]], [[Newton & quasi-Newton]]
-- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]]
+- liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Mathématiques]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]]
 
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
@@ -2598,12 +2603,12 @@
 ### Matrix decompositions  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`
 - liens sortants : [[Eigendecomposition]], [[ICA]], [[Matrix products]], [[NMF]], [[Projections]], [[SVD]], [[numpy]]
-- liens entrants : [[Eigendecomposition]], [[ICA]], [[Matrix products]], [[NMF]], [[Projections]], [[SVD]], [[Systèmes de recommandation]]
+- liens entrants : [[Eigendecomposition]], [[ICA]], [[Mathématiques]], [[Matrix products]], [[NMF]], [[Projections]], [[SVD]], [[Systèmes de recommandation]]
 
 ### Matrix products  ·  notion
 - tags : `linear-algebra`
 - liens sortants : [[Eigendecomposition]], [[Matrix decompositions]], [[Projections]], [[PyTorch]], [[Vector norms]], [[embeddings]], [[numpy]]
-- liens entrants : [[Eigendecomposition]], [[Matrix decompositions]], [[Projections]], [[Vector norms]]
+- liens entrants : [[Eigendecomposition]], [[Mathématiques]], [[Matrix decompositions]], [[Projections]], [[Vector norms]]
 
 ### Maximal Update Parametrization  ·  notion
 - tags : `learning-rate`, `scaling-laws`, `hyperparameter-tuning`, `optimization`, `deep-learning`
@@ -2713,7 +2718,7 @@
 ### Mutual information  ·  notion
 - tags : `information-theory`, `mutual-information`
 - liens sortants : [[Jensen-Shannon divergence]], [[KL divergence]], [[Scikit-Learn]], [[Shannon entropy]], [[Sélection de variables]], [[embeddings]]
-- liens entrants : [[ICA]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Shannon entropy]]
+- liens entrants : [[ICA]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Shannon entropy]]
 
 ### Mécanismes de données manquantes  ·  notion
 - tags : `missing-data`, `feature-engineering`
@@ -2738,7 +2743,7 @@
 ### Newton & quasi-Newton  ·  notion
 - tags : `optimization`, `second-order`
 - liens sortants : [[Convexity]], [[GLM]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Maximum de vraisemblance]], [[Régression logistique]]
-- liens entrants : [[Adam optimizer]], [[Convexity]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Régression logistique]]
+- liens entrants : [[Adam optimizer]], [[Convexity]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Mathématiques]], [[Régression logistique]]
 
 ### NMF  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -2748,7 +2753,7 @@
 ### No Free Lunch theorem  ·  notion
 - tags : `learning-theory`, `no-free-lunch`
 - liens sortants : [[Compromis biais-variance]], [[Generalization bounds]], [[PAC learning]], [[VC dimension]]
-- liens entrants : [[PAC learning]], [[Types de données et choix de modèle]], [[VC dimension]]
+- liens entrants : [[Mathématiques]], [[PAC learning]], [[Types de données et choix de modèle]], [[VC dimension]]
 
 ### Notebooks-as-code  ·  notion
 - tags : `notebook`, `reproducibility`, `version-control`
@@ -2778,12 +2783,12 @@
 ### Optimal transport  ·  notion
 - tags : `optimization`, `optimal-transport`
 - liens sortants : [[Convexity]], [[KL divergence]], [[Programmation linéaire en nombres entiers (MIP)]], [[Wasserstein distance]]
-- liens entrants : [[Programmation linéaire en nombres entiers (MIP)]], [[Wasserstein distance]]
+- liens entrants : [[Mathématiques]], [[Programmation linéaire en nombres entiers (MIP)]], [[Wasserstein distance]]
 
 ### Optimisation combinatoire  ·  notion
 - tags : `optimization`, `combinatorial-optimization`, `dynamic-programming`
 - liens sortants : [[Convexity]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
-- liens entrants : [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens entrants : [[Mathématiques]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
 
 ### Optimisation d'hyperparamètres  ·  notion
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
@@ -2793,7 +2798,7 @@
 ### Optimisation sous contrainte  ·  notion
 - tags : `optimization`, `constrained-optimization`, `convexity`
 - liens sortants : [[Convexity]], [[Gradient descent]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régularisation]]
-- liens entrants : [[Convexity]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régularisation]]
+- liens entrants : [[Convexity]], [[Mathématiques]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régularisation]]
 
 ### ORM  ·  notion
 - tags : `orm`, `relational`
@@ -2803,7 +2808,7 @@
 ### PAC learning  ·  notion
 - tags : `learning-theory`, `pac-learning`
 - liens sortants : [[Compromis biais-variance]], [[Generalization bounds]], [[Inégalités de concentration]], [[No Free Lunch theorem]], [[Rademacher complexity]], [[VC dimension]], [[Validation croisée]]
-- liens entrants : [[Generalization bounds]], [[No Free Lunch theorem]], [[Rademacher complexity]], [[VC dimension]]
+- liens entrants : [[Generalization bounds]], [[Mathématiques]], [[No Free Lunch theorem]], [[Rademacher complexity]], [[VC dimension]]
 
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
@@ -2813,7 +2818,7 @@
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Autoencodeurs]], [[CA]], [[Eigendecomposition]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[NMF]], [[PGA]], [[Prince]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### PEFT  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -2863,12 +2868,12 @@
 ### Programmation linéaire en nombres entiers (MIP)  ·  notion
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
 - liens sortants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PuLP]]
-- liens entrants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]], [[Régression quantile]]
+- liens entrants : [[Convexity]], [[Mathématiques]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]], [[Régression quantile]]
 
 ### Projections  ·  notion
 - tags : `linear-algebra`, `projection`
 - liens sortants : [[Matrix decompositions]], [[Matrix products]], [[PCA]], [[Réduction de dimension]], [[Régression linéaire]], [[SVD]], [[Vector norms]], [[numpy]]
-- liens entrants : [[Matrix decompositions]], [[Matrix products]], [[Vector norms]]
+- liens entrants : [[Mathématiques]], [[Matrix decompositions]], [[Matrix products]], [[Vector norms]]
 
 ### Prompt engineering  ·  notion
 - tags : `prompting`, `llm`
@@ -2908,7 +2913,7 @@
 ### Rademacher complexity  ·  notion
 - tags : `learning-theory`, `rademacher-complexity`
 - liens sortants : [[Compromis biais-variance]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Inégalités de concentration]], [[PAC learning]], [[Régularisation]], [[VC dimension]]
-- liens entrants : [[Apprentissage supervisé]], [[Generalization bounds]], [[PAC learning]], [[VC dimension]]
+- liens entrants : [[Apprentissage supervisé]], [[Generalization bounds]], [[Mathématiques]], [[PAC learning]], [[VC dimension]]
 
 ### RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`, `embeddings`, `semantic-search`
@@ -3003,7 +3008,7 @@
 ### Réduction de dimension  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Clustering evaluation]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[MANOVA et tests multivariés]], [[MCA]], [[MFA]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Projections]], [[SVD]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Superposition]], [[Systèmes de recommandation]], [[Sélection de variables]], [[embeddings]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Clustering evaluation]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[MANOVA et tests multivariés]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Projections]], [[SVD]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Superposition]], [[Systèmes de recommandation]], [[Sélection de variables]], [[embeddings]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Régression  ·  notion
 - tags : `regression`, `supervised`
@@ -3078,7 +3083,7 @@
 ### Shannon entropy  ·  notion
 - tags : `information-theory`, `entropy`
 - liens sortants : [[Arbres de décision]], [[Cross-entropy]], [[KL divergence]], [[Mutual information]], [[Perplexity]], [[Random Forest]], [[Sélection de variables]], [[scipy.stats]]
-- liens entrants : [[Cross-entropy]], [[ICA]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mutual information]], [[Perplexity]], [[Wasserstein distance]]
+- liens entrants : [[Cross-entropy]], [[ICA]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Mutual information]], [[Perplexity]], [[Wasserstein distance]]
 
 ### Small Language Models  ·  notion
 - tags : `small-language-model`, `scaling-laws`, `llm`, `local-llm`
@@ -3138,7 +3143,7 @@
 ### SVD  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`, `dimensionality-reduction`
 - liens sortants : [[Eigendecomposition]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[numpy]]
-- liens entrants : [[Apprentissage non supervisé]], [[Eigendecomposition]], [[Matrix decompositions]], [[Multi-head Latent Attention]], [[NMF]], [[PCA]], [[Projections]], [[Systèmes de recommandation]], [[Vector norms]]
+- liens entrants : [[Apprentissage non supervisé]], [[Eigendecomposition]], [[Mathématiques]], [[Matrix decompositions]], [[Multi-head Latent Attention]], [[NMF]], [[PCA]], [[Projections]], [[Systèmes de recommandation]], [[Vector norms]]
 
 ### SVM  ·  notion
 - tags : `supervised`, `classification`, `regression`
@@ -3273,12 +3278,12 @@
 ### VC dimension  ·  notion
 - tags : `learning-theory`, `vc-dimension`
 - liens sortants : [[Compromis biais-variance]], [[Generalization bounds]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]], [[Régularisation]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Generalization bounds]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]]
+- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Generalization bounds]], [[Mathématiques]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]]
 
 ### Vector norms  ·  notion
 - tags : `linear-algebra`, `vector-norm`, `regularization`
 - liens sortants : [[Matrix products]], [[Projections]], [[PyTorch]], [[Régularisation]], [[SVD]], [[embeddings]], [[numpy]]
-- liens entrants : [[Gradient descent]], [[Matrix products]], [[Projections]]
+- liens entrants : [[Gradient descent]], [[Mathématiques]], [[Matrix products]], [[Projections]]
 
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
@@ -3313,7 +3318,7 @@
 ### Wasserstein distance  ·  notion
 - tags : `information-theory`, `optimal-transport`
 - liens sortants : [[Jensen-Shannon divergence]], [[KL divergence]], [[Optimal transport]], [[Shannon entropy]], [[scipy.stats]]
-- liens entrants : [[Data drift]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Optimal transport]]
+- liens entrants : [[Data drift]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Optimal transport]]
 
 ### Web scraping  ·  notion
 - tags : `web-scraping`, `data-pipeline`
@@ -3498,7 +3503,7 @@
 - `inference` : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, Recherche d'information, TF-IDF, bm25s, rank-bm25
-- `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
+- `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
 - `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses
@@ -3511,9 +3516,9 @@
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension  — pas de page concept dédiée
-- `linear-algebra` : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
+- `linear-algebra` : Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation  — pas de page concept dédiée
-- `linear-programming` : Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
+- `linear-programming` : Mathématiques, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
 - `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : DeepEval, LLM-as-judge, TruLens
@@ -3573,7 +3578,7 @@
 - `offline-rl` : Offline RL
 - `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Wasserstein distance
-- `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
+- `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
@@ -3766,7 +3771,7 @@
 - `hypermedia` (porté par : HTMX, Web & API)
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
-- `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance)
+- `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Wasserstein distance)
 - `interactive-viz` (porté par : Interfaces & apps data, Visualisation, altair, bokeh, plotly)
 - `isometric` (porté par : Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
@@ -3777,7 +3782,7 @@
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization)
 - `learning-theory` (porté par : Generalization bounds, No Free Lunch theorem, PAC learning, Rademacher complexity, VC dimension)
-- `linear-algebra` (porté par : Eigendecomposition, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
+- `linear-algebra` (porté par : Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation)
 - `linter` (porté par : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
 - `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agno, Aider, AutoGen, Axolotl, Chain-of-Thought, Cline, Code and math benchmarks, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, DeepEval, Dify, E2B, Flowise, GRPO, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité mécaniste, Jailbreaking and defenses, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
@@ -3813,7 +3818,7 @@
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage)
 - `observability` (porté par : Beszel, Grafana, Loki, Observabilité)
 - `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
-- `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
+- `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray)

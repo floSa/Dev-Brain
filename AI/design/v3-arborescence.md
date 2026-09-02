@@ -94,7 +94,7 @@ SecondBrain/
 │   ├── DataFrames/   (5)
 │   ├── Visualisation/   (5)
 │   └── (11 pages au niveau du domaine)
-├── Mathématiques/   (27 pages)
+├── Mathématiques/   (27 pages — 1 au lot 3, les 26 notions au lot 4)
 │   └── (1 pages au niveau du domaine)
 ├── Outils de développement/   (19 pages)
 │   ├── Notebooks/   (5)
@@ -825,9 +825,15 @@ SecondBrain/
 - `[c]` Comparatif - Scraping — filtre `data/scraping`
 - `[c]` Comparatif - Visualisation — filtre `data/viz`
 
-### Mathématiques  ·  27 pages
+### Mathématiques  ·  27 pages  ·  **migré le 2026-09-04**
 
-- [ ] hub écrit · [ ] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/` par `git mv`, corps réécrit
+  au gabarit §9. Il porte la carte des quatre familles du domaine et cite les 26 notions
+  en clair : c'est aujourd'hui la seule page du dossier
+- [x] sous-dossiers créés — **aucun**. `math/optimisation` ne compte qu'une page
+- [ ] notions recatégorisées — **lot 4** : les 26 notions ci-dessous portent
+  `concept/math` et sont encore sous `Wiki/Concepts/`
+- [ ] fiches au nouveau gabarit — lot 6
 
 **Au niveau du domaine** — 1 pages
 
