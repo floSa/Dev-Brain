@@ -1,0 +1,21 @@
+filters:
+  and:
+    # `hasTag("cli")` ne tenait que par le filtre de dossier : le tag est porte
+    # aussi par croc (transfert de fichiers) et trois agents de code. La categorie
+    # devtools/cli dit ce que ce comparatif compare, et ne bouge pas avec l'arbre.
+    - categorie == "devtools/cli"
+views:
+  - type: table
+    name: Frameworks CLI
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

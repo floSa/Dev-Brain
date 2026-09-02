@@ -50,5 +50,6 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 
 ### Comparatifs
 - [[Comparatif - Clients d'API]]
+- [[Comparatif - Frameworks CLI]]
 - [[Comparatif - Gestionnaires de paquets Python]]
 <!-- AUTO:END -->

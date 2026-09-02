@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
     # `compute/distributed` a eclate : le distribue multi-noeuds et le calcul GPU.
     # Les deux sont reunis ici, c'est le perimetre historique du comparatif.
     - or:

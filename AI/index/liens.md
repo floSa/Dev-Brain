@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 652 pages actives.
+> 656 pages actives.
 
 ## Par page
 
@@ -83,7 +83,7 @@
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
 - liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Excalidraw]], [[FossFLOW]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Agent skills]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
+- liens entrants : [[Agent skills]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
@@ -243,7 +243,7 @@
 ### CuPy  ·  brique
 - tags : `gpu`, `array`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[JAX]], [[PyTorch]], [[numpy]]
-- liens entrants : [[numpy]]
+- liens entrants : [[Calcul distribué]], [[numpy]]
 
 ### curl_cffi  ·  brique
 - tags : `web-scraping`
@@ -268,7 +268,7 @@
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Modin]], [[Polars]], [[Ray]], [[Spark]], [[numpy]], [[pandas]]
-- liens entrants : [[CuPy]], [[Modin]], [[Polars]], [[Prefect]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[Calcul distribué]], [[CuPy]], [[Modin]], [[Polars]], [[Prefect]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
 
 ### DataGrip  ·  brique
 - tags : `db-client`, `relational`, `nosql`
@@ -283,7 +283,7 @@
 ### Daytona  ·  brique
 - tags : `agents`, `llm`, `container`, `ai-security`
 - liens sortants : [[AI security]], [[E2B]], [[Hermes Agent]], [[Modal]], [[Prompt injection]], [[Sandboxing de code généré]]
-- liens entrants : [[E2B]], [[Hermes Agent]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
+- liens entrants : [[Calcul distribué]], [[E2B]], [[Hermes Agent]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
 
 ### DB-GPT  ·  brique
 - tags : `text-to-sql`, `llm`, `multi-agent`, `rag`, `fine-tuning`
@@ -333,7 +333,7 @@
 ### draw.io  ·  brique
 - tags : `diagram`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]]
-- liens entrants : [[Archify]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]]
+- liens entrants : [[Archify]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]]
 
 ### DSPy  ·  brique
 - tags : `llm`, `prompt-optimization`, `nlp`
@@ -343,7 +343,7 @@
 ### DuckDB  ·  brique
 - tags : `columnar`, `olap`, `embedded`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Postgres]]
-- liens entrants : [[ADBC]], [[Bases de données]], [[ClickHouse]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
+- liens entrants : [[ADBC]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
 
 ### dynaconf  ·  brique
 - tags : `config`
@@ -353,7 +353,7 @@
 ### E2B  ·  brique
 - tags : `agents`, `llm`, `container`, `ai-security`
 - liens sortants : [[AI security]], [[Daytona]], [[Docker]], [[Hermes Agent]], [[Modal]], [[OpenHands]], [[Prompt injection]], [[Ray]], [[Sandboxing de code généré]]
-- liens entrants : [[Daytona]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
+- liens entrants : [[Calcul distribué]], [[Daytona]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
@@ -373,7 +373,7 @@
 ### Excalidraw  ·  brique
 - tags : `diagram`, `whiteboard`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]], [[draw.io]]
+- liens entrants : [[Archify]], [[Diagrammes]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]], [[draw.io]]
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -413,7 +413,7 @@
 ### Figma  ·  brique
 - tags : `design-tool`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Mermaid]], [[Penpot]], [[draw.io]]
-- liens entrants : [[Penpot]]
+- liens entrants : [[Design & diagrammes]], [[Penpot]]
 
 ### Firecrawl  ·  brique
 - tags : `web-scraping`, `markdown-conversion`
@@ -448,7 +448,7 @@
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[draw.io]]
+- liens entrants : [[Archify]], [[Diagrammes]], [[draw.io]]
 
 ### freebuff  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `multi-agent`, `cli`
@@ -663,7 +663,7 @@
 ### librosa  ·  brique
 - tags : `signal-processing`, `spectrogram`, `feature-engineering`
 - liens sortants : [[Comparatif - Traitement du signal]], [[HuggingFace]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[scipy.signal]]
 
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
@@ -783,7 +783,7 @@
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[draw.io]]
-- liens entrants : [[Archify]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Penpot]], [[draw.io]]
+- liens entrants : [[Archify]], [[Design & diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Penpot]], [[draw.io]]
 
 ### Metaflow  ·  brique
 - tags : `orchestration`, `ml-pipeline`
@@ -828,7 +828,7 @@
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
 - liens sortants : [[Daytona]], [[E2B]], [[Hermes Agent]], [[Ray]], [[Sandboxing de code généré]]
-- liens entrants : [[Daytona]], [[E2B]], [[Hermes Agent]], [[Sandboxing de code généré]]
+- liens entrants : [[Calcul distribué]], [[Daytona]], [[E2B]], [[Hermes Agent]], [[Sandboxing de code généré]]
 
 ### Modin  ·  brique
 - tags : `dataframe`, `parallel`, `distributed`
@@ -1028,7 +1028,7 @@
 ### Penpot  ·  brique
 - tags : `design-tool`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Figma]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Figma]]
+- liens entrants : [[Design & diagrammes]], [[Figma]]
 
 ### pgAdmin  ·  brique
 - tags : `db-client`, `postgres`, `relational`
@@ -1083,7 +1083,7 @@
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Modin]], [[numpy]], [[pandas]]
-- liens entrants : [[ADBC]], [[Dask]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[ADBC]], [[Calcul distribué]], [[Dask]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[numpy]], [[pandas]], [[xarray]]
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
@@ -1213,7 +1213,7 @@
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Ondelettes]], [[Signal & audio]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
@@ -1243,7 +1243,7 @@
 ### Ray  ·  brique
 - tags : `distributed`, `parallel`, `gpu`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[Modin]], [[Polars]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[pandas]]
-- liens entrants : [[Dask]], [[E2B]], [[Modal]], [[Ray Serve]], [[Ray Tune]], [[Spark]]
+- liens entrants : [[Calcul distribué]], [[Dask]], [[E2B]], [[Modal]], [[Ray Serve]], [[Ray Tune]], [[Spark]]
 
 ### Ray Serve  ·  brique
 - tags : `model-serving`, `inference`, `distributed`
@@ -1303,7 +1303,7 @@
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[numpy]]
-- liens entrants : [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
+- liens entrants : [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
@@ -1413,7 +1413,7 @@
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
 - liens sortants : [[Apache Iceberg]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
-- liens entrants : [[Dask]], [[Hyperopt]], [[Ray]]
+- liens entrants : [[Calcul distribué]], [[Dask]], [[Hyperopt]], [[Ray]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
@@ -1700,6 +1700,21 @@
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
 - liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
 
+### Calcul distribué  ·  hub
+- tags : `distributed`, `gpu`, `parallel`, `out-of-core`, `distributed-training`
+- liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
+- liens entrants : —
+
+### Design & diagrammes  ·  hub
+- tags : `design-tool`, `diagram`, `whiteboard`
+- liens sortants : [[Comparatif - Design & prototypage]], [[Diagrammes]], [[Figma]], [[Mermaid]], [[Penpot]]
+- liens entrants : —
+
+### Diagrammes  ·  hub
+- tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
+- liens entrants : [[Design & diagrammes]]
+
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[DuckDB]], [[Marimo]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
@@ -1707,7 +1722,7 @@
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
-- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 - liens entrants : —
 
 ### Recherche  ·  hub
@@ -1719,6 +1734,11 @@
 - tags : —
 - liens sortants : [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
 - liens entrants : [[Bases de données]]
+
+### Signal & audio  ·  hub
+- tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
+- liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : —
 
 ### Vectoriel  ·  hub
 - tags : —
@@ -2183,7 +2203,7 @@
 ### Filtrage numérique  ·  notion
 - tags : `signal-processing`, `digital-filter`
 - liens sortants : [[Ondelettes]], [[STFT et spectrogramme]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
+- liens entrants : [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
 
 ### Flash Attention and efficient attention  ·  notion
 - tags : `attention`, `inference-optimization`, `gpu`, `transformers`
@@ -2663,7 +2683,7 @@
 ### Ondelettes  ·  notion
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Time series anomaly detection]], [[Traitement du signal]], [[Transformée de Fourier]]
-- liens entrants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]]
+- liens entrants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]]
 
 ### One-Class SVM  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -3008,7 +3028,7 @@
 ### STFT et spectrogramme  ·  notion
 - tags : `signal-processing`, `spectrogram`, `fourier`
 - liens sortants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[Ondelettes]], [[Stationarity]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
@@ -3133,7 +3153,7 @@
 ### Traitement du signal  ·  notion
 - tags : `signal-processing`
 - liens sortants : [[Autocorrelation]], [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Stationarity]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 
 ### Transfer learning vision  ·  notion
 - tags : `transfer-learning`, `fine-tuning`, `computer-vision`, `deep-learning`
@@ -3148,7 +3168,7 @@
 ### Transformée de Fourier  ·  notion
 - tags : `signal-processing`, `fourier`
 - liens sortants : [[Autocorrelation]], [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[scipy.signal]]
 
 ### Types de données et choix de modèle  ·  notion
 - tags : `supervised`, `unsupervised`, `classification`, `regression`, `feature-engineering`
@@ -3279,7 +3299,7 @@
 - `api-client` : Bruno, Outils de développement, Postman  — pas de page concept dédiée
 - `array` : CuPy, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
-- `audio-classification` : Classification audio par spectrogramme
+- `audio-classification` : Classification audio par spectrogramme, Signal & audio
 - `audit-log` : Maka  — pas de page concept dédiée
 - `authentication` : PyJWT  — pas de page concept dédiée
 - `autograd` : JAX, Kornia, PyTorch, TensorFlow  — pas de page concept dédiée
@@ -3336,14 +3356,14 @@
 - `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
 - `deployment-strategy` : Déploiement de modèles  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
-- `design-tool` : Figma, Penpot  — pas de page concept dédiée
-- `diagram` : Archify, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
-- `diagram-as-code` : Archify, Mermaid  — pas de page concept dédiée
+- `design-tool` : Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
+- `diagram` : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
+- `diagram-as-code` : Archify, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, scipy.signal
 - `dimensionality-reduction` : Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
-- `distributed` : Apache Cassandra, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
-- `distributed-training` : Axolotl, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
+- `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
+- `distributed-training` : Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Docling, LlamaParse, Marker, OpenDataLoader PDF, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
 - `durable-execution` : Temporal  — pas de page concept dédiée
@@ -3369,13 +3389,13 @@
 - `forecasting` : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Chronos, Modèles de fondation vision, segment-anything  — pas de page concept dédiée
-- `fourier` : STFT et spectrogramme, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
+- `fourier` : STFT et spectrogramme, Signal & audio, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
 - `game-theory` : Counterfactual Regret Minimization, OpenSpiel, Pattern - Moteur de jeu pur + IA séparée, Théorie des jeux
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent
 - `graph-db` : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails
@@ -3395,7 +3415,7 @@
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : altair, bokeh, plotly  — pas de page concept dédiée
-- `isometric` : FossFLOW  — pas de page concept dédiée
+- `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence
@@ -3472,11 +3492,11 @@
 - `orchestration` : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Web-Check, osint4all  — pas de page concept dédiée
-- `out-of-core` : Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
+- `out-of-core` : Calcul distribué, Dask, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning
 - `package-manager` : Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
-- `parallel` : Dask, Modin, Ray  — pas de page concept dédiée
+- `parallel` : Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
@@ -3537,9 +3557,9 @@
 - `sequence-labeling` : NER et étiquetage de séquence, pytorch-crf, seqeval, spaCy
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : Avro  — pas de page concept dédiée
-- `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
+- `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `small-language-model` : Distillation, Small Language Models, needle
-- `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, librosa, scipy.signal  — pas de page concept dédiée
+- `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : matplotlib, missingno, seaborn  — pas de page concept dédiée
@@ -3581,10 +3601,10 @@
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision Transformers (ViT), timm
-- `wavelet` : Ondelettes, PyWavelets  — pas de page concept dédiée
+- `wavelet` : Ondelettes, PyWavelets, Signal & audio  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn  — pas de page concept dédiée
 - `web-scraping` : Crawlee, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
-- `whiteboard` : Excalidraw  — pas de page concept dédiée
+- `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
 
 ## À créer (gaps)
@@ -3631,10 +3651,10 @@
 - `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Multi-Token Prediction, Outlines, Speculative decoding)
 - `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
 - `deployment-strategy` (porté par : Déploiement de modèles)
-- `design-tool` (porté par : Figma, Penpot)
-- `diagram` (porté par : Archify, Excalidraw, FossFLOW, Mermaid, draw.io)
-- `diagram-as-code` (porté par : Archify, Mermaid)
-- `distributed` (porté par : Apache Cassandra, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
+- `design-tool` (porté par : Design & diagrammes, Figma, Penpot)
+- `diagram` (porté par : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
+- `diagram-as-code` (porté par : Archify, Diagrammes, Mermaid)
+- `distributed` (porté par : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Docling, LlamaParse, Marker, OpenDataLoader PDF, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
 - `durable-execution` (porté par : Temporal)
@@ -3653,9 +3673,9 @@
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, segment-anything)
-- `fourier` (porté par : STFT et spectrogramme, Transformée de Fourier, scipy.signal)
+- `fourier` (porté par : STFT et spectrogramme, Signal & audio, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `gpu` (porté par : CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : HTMX)
@@ -3663,7 +3683,7 @@
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, SGLang, Seldon Core, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mutual information, Shannon entropy, Wasserstein distance)
 - `interactive-viz` (porté par : altair, bokeh, plotly)
-- `isometric` (porté par : FossFLOW)
+- `isometric` (porté par : Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop)
 - `kubernetes` (porté par : Flyte, KServe, Seldon Core)
@@ -3711,10 +3731,10 @@
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Web-Check, osint4all)
-- `out-of-core` (porté par : Dask, Polars, Spark, datasets, xarray)
+- `out-of-core` (porté par : Calcul distribué, Dask, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
-- `parallel` (porté par : Dask, Modin, Ray)
+- `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Marker, OpenDataLoader PDF, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
@@ -3749,7 +3769,7 @@
 - `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
-- `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, librosa, scipy.signal)
+- `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : matplotlib, missingno, seaborn)
@@ -3776,7 +3796,7 @@
 - `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
-- `wavelet` (porté par : Ondelettes, PyWavelets)
+- `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio)
 - `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn)
-- `whiteboard` (porté par : Excalidraw)
+- `whiteboard` (porté par : Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)

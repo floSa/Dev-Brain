@@ -1,6 +1,7 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
+    # `Dev/Services/` devient faux au lot 3 ; la liste de noms selectionne seule.
+    - role == "brique"
     - or:
         - file.name == "FastAPI"
         - file.name == "HTMX"

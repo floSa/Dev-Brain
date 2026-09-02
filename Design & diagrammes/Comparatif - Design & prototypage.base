@@ -1,19 +1,16 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Services/")
-    - file.hasTag("cli")
+    - categorie == "design/ui"
 views:
   - type: table
-    name: Frameworks CLI
+    name: Design & prototypage
     order:
       - file.name
       - pitch
-      - langage
       - licence_type
-      - maturite
-      - scaling
+      - os
+      - langage
       - tags
-      - alternatives
     sort:
       - property: file.name
         direction: asc

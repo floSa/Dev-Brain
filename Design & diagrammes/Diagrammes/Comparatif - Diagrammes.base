@@ -1,6 +1,5 @@
 filters:
   and:
-    - file.path.startsWith("Dev/Outils/")
     - categorie == "design/diagramme"
 views:
   - type: table

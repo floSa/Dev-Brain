@@ -2,12 +2,15 @@
   "generated_by": "AI/scripts/build_index.py",
   "scanned": [
     "Bases de données",
+    "Calcul distribué",
+    "Design & diagrammes",
     "Dev",
     "Outils de développement",
+    "Signal & audio",
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 652,
+  "count": 656,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -147,7 +150,8 @@
       "Transformer architectures"
     ],
     "audio-classification": [
-      "Classification audio par spectrogramme"
+      "Classification audio par spectrogramme",
+      "Signal & audio"
     ],
     "audit-log": [
       "Maka"
@@ -613,11 +617,14 @@
       "Rendu neuronal 3D & estimation de profondeur"
     ],
     "design-tool": [
+      "Design & diagrammes",
       "Figma",
       "Penpot"
     ],
     "diagram": [
       "Archify",
+      "Design & diagrammes",
+      "Diagrammes",
       "Excalidraw",
       "FossFLOW",
       "Mermaid",
@@ -625,6 +632,7 @@
     ],
     "diagram-as-code": [
       "Archify",
+      "Diagrammes",
       "Mermaid"
     ],
     "diffusion": [
@@ -659,6 +667,7 @@
     ],
     "distributed": [
       "Apache Cassandra",
+      "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
       "Dask",
@@ -684,6 +693,7 @@
     ],
     "distributed-training": [
       "Axolotl",
+      "Calcul distribué",
       "DeepSpeed",
       "Entraînement distribué",
       "LLaMA-Factory",
@@ -893,6 +903,7 @@
     ],
     "fourier": [
       "STFT et spectrogramme",
+      "Signal & audio",
       "Transformée de Fourier",
       "scipy.signal"
     ],
@@ -921,6 +932,7 @@
       "PyTorch Geometric"
     ],
     "gpu": [
+      "Calcul distribué",
       "CuPy",
       "DeepSpeed",
       "Detectron2",
@@ -1099,6 +1111,7 @@
       "plotly"
     ],
     "isometric": [
+      "Diagrammes",
       "FossFLOW"
     ],
     "jailbreak": [
@@ -1756,6 +1769,7 @@
       "osint4all"
     ],
     "out-of-core": [
+      "Calcul distribué",
       "Dask",
       "Polars",
       "Spark",
@@ -1779,6 +1793,7 @@
       "uv"
     ],
     "parallel": [
+      "Calcul distribué",
       "Dask",
       "Modin",
       "Ray"
@@ -2218,6 +2233,7 @@
       "Ondelettes",
       "PyWavelets",
       "STFT et spectrogramme",
+      "Signal & audio",
       "Traitement du signal",
       "Transformée de Fourier",
       "librosa",
@@ -2231,6 +2247,7 @@
     "spectrogram": [
       "Classification audio par spectrogramme",
       "STFT et spectrogramme",
+      "Signal & audio",
       "librosa",
       "scipy.signal"
     ],
@@ -2613,7 +2630,8 @@
     ],
     "wavelet": [
       "Ondelettes",
-      "PyWavelets"
+      "PyWavelets",
+      "Signal & audio"
     ],
     "web-framework": [
       "Dash",
@@ -2640,6 +2658,8 @@
       "selectolax"
     ],
     "whiteboard": [
+      "Design & diagrammes",
+      "Diagrammes",
       "Excalidraw"
     ],
     "wide-column": [
@@ -3900,6 +3920,430 @@
       "maturite": "production"
     },
     {
+      "path": "Calcul distribué/Calcul distribué.md",
+      "nom": "Calcul distribué",
+      "alias": [
+        "calcul distribue",
+        "distributed computing",
+        "cluster"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": "Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.",
+      "tags": [
+        "distributed",
+        "gpu",
+        "parallel",
+        "out-of-core",
+        "distributed-training"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Calcul distribué/CuPy.md",
+      "nom": "CuPy",
+      "alias": [
+        "cupy"
+      ],
+      "role": "brique",
+      "categorie": "compute/gpu",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.",
+      "tags": [
+        "gpu",
+        "array"
+      ],
+      "alternatives": [
+        "[[numpy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/Dask.md",
+      "nom": "Dask",
+      "alias": [
+        "dask",
+        "dask.distributed"
+      ],
+      "role": "brique",
+      "categorie": "compute/distribue",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.",
+      "tags": [
+        "distributed",
+        "parallel",
+        "out-of-core",
+        "lazy-evaluation"
+      ],
+      "alternatives": [
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[numpy]]",
+        "[[Modin]]",
+        "[[Spark]]",
+        "[[Ray]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/Daytona.md",
+      "nom": "Daytona",
+      "alias": [
+        "daytona",
+        "daytonaio",
+        "Daytona Sandboxes"
+      ],
+      "role": "brique",
+      "categorie": "compute/a-la-demande",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu.",
+      "tags": [
+        "agents",
+        "llm",
+        "container",
+        "ai-security"
+      ],
+      "alternatives": [
+        "[[E2B]]",
+        "[[Modal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/E2B.md",
+      "nom": "E2B",
+      "alias": [
+        "e2b",
+        "e2b-dev",
+        "E2B Sandbox",
+        "Code Interpreter SDK"
+      ],
+      "role": "brique",
+      "categorie": "compute/a-la-demande",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.",
+      "tags": [
+        "agents",
+        "llm",
+        "container",
+        "ai-security"
+      ],
+      "alternatives": [
+        "[[Modal]]",
+        "[[Daytona]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/Modal.md",
+      "nom": "Modal",
+      "alias": [
+        "modal",
+        "modal.com",
+        "Modal Labs",
+        "Modal Sandboxes"
+      ],
+      "role": "brique",
+      "categorie": "compute/a-la-demande",
+      "famille": "saas",
+      "domaines": null,
+      "pitch": "Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.",
+      "tags": [
+        "agents",
+        "gpu",
+        "llm",
+        "container"
+      ],
+      "alternatives": [
+        "[[E2B]]",
+        "[[Daytona]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/Ray.md",
+      "nom": "Ray",
+      "alias": [
+        "ray",
+        "ray-project",
+        "ray core"
+      ],
+      "role": "brique",
+      "categorie": "compute/distribue",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).",
+      "tags": [
+        "distributed",
+        "parallel",
+        "gpu"
+      ],
+      "alternatives": [
+        "[[Dask]]",
+        "[[Spark]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Calcul distribué/Spark.md",
+      "nom": "Spark",
+      "alias": [
+        "Apache Spark",
+        "spark",
+        "PySpark",
+        "pyspark"
+      ],
+      "role": "brique",
+      "categorie": "compute/distribue",
+      "famille": "plateforme",
+      "domaines": null,
+      "pitch": "Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.",
+      "tags": [
+        "distributed",
+        "dataframe",
+        "streaming",
+        "out-of-core"
+      ],
+      "alternatives": [
+        "[[Dask]]",
+        "[[Ray]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Design & diagrammes/Design & diagrammes.md",
+      "nom": "Design & diagrammes",
+      "alias": [
+        "design",
+        "diagramme",
+        "schema"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Dessiner — une interface qu'on prototype, ou un système qu'on explique.",
+      "tags": [
+        "design-tool",
+        "diagram",
+        "whiteboard"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/Archify.md",
+      "nom": "Archify",
+      "alias": [
+        "archify"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "extension",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.",
+      "tags": [
+        "agent-skill",
+        "diagram",
+        "diagram-as-code",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Mermaid]]",
+        "[[draw.io]]",
+        "[[Excalidraw]]",
+        "[[FossFLOW]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/Diagrammes.md",
+      "nom": "Diagrammes",
+      "alias": [
+        "diagramme",
+        "schema",
+        "diagram-as-code"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.",
+      "tags": [
+        "diagram",
+        "diagram-as-code",
+        "whiteboard",
+        "isometric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/Excalidraw.md",
+      "nom": "Excalidraw",
+      "alias": [
+        "excalidraw"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.",
+      "tags": [
+        "diagram",
+        "whiteboard"
+      ],
+      "alternatives": [
+        "[[draw.io]]",
+        "[[Archify]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/FossFLOW.md",
+      "nom": "FossFLOW",
+      "alias": [
+        "fossflow",
+        "isoflow"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.",
+      "tags": [
+        "diagram",
+        "isometric"
+      ],
+      "alternatives": [
+        "[[draw.io]]",
+        "[[Archify]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/Mermaid.md",
+      "nom": "Mermaid",
+      "alias": [
+        "mermaid",
+        "mermaid.js",
+        "mermaidjs"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "extension",
+      "domaines": [],
+      "pitch": "Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.",
+      "tags": [
+        "diagram",
+        "diagram-as-code"
+      ],
+      "alternatives": [
+        "[[draw.io]]",
+        "[[Archify]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/draw.io.md",
+      "nom": "draw.io",
+      "alias": [
+        "diagrams.net",
+        "drawio",
+        "draw io"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.",
+      "tags": [
+        "diagram"
+      ],
+      "alternatives": [
+        "[[Excalidraw]]",
+        "[[Mermaid]]",
+        "[[FossFLOW]]",
+        "[[Archify]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Figma.md",
+      "nom": "Figma",
+      "alias": [
+        "figma"
+      ],
+      "role": "brique",
+      "categorie": "design/ui",
+      "famille": "saas",
+      "domaines": [],
+      "pitch": "Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.",
+      "tags": [
+        "design-tool"
+      ],
+      "alternatives": [
+        "[[Penpot]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Penpot.md",
+      "nom": "Penpot",
+      "alias": [
+        "penpot"
+      ],
+      "role": "brique",
+      "categorie": "design/ui",
+      "famille": "application",
+      "domaines": [],
+      "pitch": "Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.",
+      "tags": [
+        "design-tool"
+      ],
+      "alternatives": [
+        "[[Figma]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
       "path": "Dev/Outils/Aider.md",
       "nom": "Aider",
       "alias": [
@@ -3924,35 +4368,6 @@
         "[[freebuff]]",
         "[[t3code]]",
         "[[pi]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Archify.md",
-      "nom": "Archify",
-      "alias": [
-        "archify"
-      ],
-      "role": "brique",
-      "categorie": "design/diagramme",
-      "famille": "extension",
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": "Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.",
-      "tags": [
-        "agent-skill",
-        "diagram",
-        "diagram-as-code",
-        "code-assistant",
-        "agents"
-      ],
-      "alternatives": [
-        "[[Mermaid]]",
-        "[[draw.io]]",
-        "[[Excalidraw]]",
-        "[[FossFLOW]]"
       ],
       "complements": [],
       "maturite": null
@@ -4070,71 +4485,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Excalidraw.md",
-      "nom": "Excalidraw",
-      "alias": [
-        "excalidraw"
-      ],
-      "role": "brique",
-      "categorie": "design/diagramme",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.",
-      "tags": [
-        "diagram",
-        "whiteboard"
-      ],
-      "alternatives": [
-        "[[draw.io]]",
-        "[[Archify]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Figma.md",
-      "nom": "Figma",
-      "alias": [
-        "figma"
-      ],
-      "role": "brique",
-      "categorie": "design/ui",
-      "famille": "saas",
-      "domaines": [],
-      "pitch": "Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.",
-      "tags": [
-        "design-tool"
-      ],
-      "alternatives": [
-        "[[Penpot]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/FossFLOW.md",
-      "nom": "FossFLOW",
-      "alias": [
-        "fossflow",
-        "isoflow"
-      ],
-      "role": "brique",
-      "categorie": "design/diagramme",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.",
-      "tags": [
-        "diagram",
-        "isometric"
-      ],
-      "alternatives": [
-        "[[draw.io]]",
-        "[[Archify]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/Graphify.md",
       "nom": "Graphify",
       "alias": [
@@ -4189,30 +4539,6 @@
       "maturite": null
     },
     {
-      "path": "Dev/Outils/Mermaid.md",
-      "nom": "Mermaid",
-      "alias": [
-        "mermaid",
-        "mermaid.js",
-        "mermaidjs"
-      ],
-      "role": "brique",
-      "categorie": "design/diagramme",
-      "famille": "extension",
-      "domaines": [],
-      "pitch": "Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.",
-      "tags": [
-        "diagram",
-        "diagram-as-code"
-      ],
-      "alternatives": [
-        "[[draw.io]]",
-        "[[Archify]]"
-      ],
-      "complements": [],
-      "maturite": null
-    },
-    {
       "path": "Dev/Outils/OpenCut.md",
       "nom": "OpenCut",
       "alias": [
@@ -4253,26 +4579,6 @@
         "privacy"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/Penpot.md",
-      "nom": "Penpot",
-      "alias": [
-        "penpot"
-      ],
-      "role": "brique",
-      "categorie": "design/ui",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.",
-      "tags": [
-        "design-tool"
-      ],
-      "alternatives": [
-        "[[Figma]]"
-      ],
       "complements": [],
       "maturite": null
     },
@@ -4419,31 +4725,6 @@
         "self-hosted"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Dev/Outils/draw.io.md",
-      "nom": "draw.io",
-      "alias": [
-        "diagrams.net",
-        "drawio",
-        "draw io"
-      ],
-      "role": "brique",
-      "categorie": "design/diagramme",
-      "famille": "application",
-      "domaines": [],
-      "pitch": "Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.",
-      "tags": [
-        "diagram"
-      ],
-      "alternatives": [
-        "[[Excalidraw]]",
-        "[[Mermaid]]",
-        "[[FossFLOW]]",
-        "[[Archify]]"
-      ],
       "complements": [],
       "maturite": null
     },
@@ -5445,27 +5726,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/CuPy.md",
-      "nom": "CuPy",
-      "alias": [
-        "cupy"
-      ],
-      "role": "brique",
-      "categorie": "compute/gpu",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.",
-      "tags": [
-        "gpu",
-        "array"
-      ],
-      "alternatives": [
-        "[[numpy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/DB-GPT.md",
       "nom": "DB-GPT",
       "alias": [
@@ -5565,61 +5825,6 @@
         "[[Streamlit]]",
         "[[Shiny for Python]]",
         "[[Gradio]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Dask.md",
-      "nom": "Dask",
-      "alias": [
-        "dask",
-        "dask.distributed"
-      ],
-      "role": "brique",
-      "categorie": "compute/distribue",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.",
-      "tags": [
-        "distributed",
-        "parallel",
-        "out-of-core",
-        "lazy-evaluation"
-      ],
-      "alternatives": [
-        "[[pandas]]",
-        "[[Polars]]",
-        "[[numpy]]",
-        "[[Modin]]",
-        "[[Spark]]",
-        "[[Ray]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Daytona.md",
-      "nom": "Daytona",
-      "alias": [
-        "daytona",
-        "daytonaio",
-        "Daytona Sandboxes"
-      ],
-      "role": "brique",
-      "categorie": "compute/a-la-demande",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu.",
-      "tags": [
-        "agents",
-        "llm",
-        "container",
-        "ai-security"
-      ],
-      "alternatives": [
-        "[[E2B]]",
-        "[[Modal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -5774,33 +5979,6 @@
         "[[Marker]]",
         "[[pdf-inspector]]",
         "[[OpenDataLoader PDF]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/E2B.md",
-      "nom": "E2B",
-      "alias": [
-        "e2b",
-        "e2b-dev",
-        "E2B Sandbox",
-        "Code Interpreter SDK"
-      ],
-      "role": "brique",
-      "categorie": "compute/a-la-demande",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.",
-      "tags": [
-        "agents",
-        "llm",
-        "container",
-        "ai-security"
-      ],
-      "alternatives": [
-        "[[Modal]]",
-        "[[Daytona]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7173,33 +7351,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/Modal.md",
-      "nom": "Modal",
-      "alias": [
-        "modal",
-        "modal.com",
-        "Modal Labs",
-        "Modal Sandboxes"
-      ],
-      "role": "brique",
-      "categorie": "compute/a-la-demande",
-      "famille": "saas",
-      "domaines": null,
-      "pitch": "Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.",
-      "tags": [
-        "agents",
-        "gpu",
-        "llm",
-        "container"
-      ],
-      "alternatives": [
-        "[[E2B]]",
-        "[[Daytona]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/Modin.md",
       "nom": "Modin",
       "alias": [
@@ -8087,29 +8238,6 @@
       "maturite": "production"
     },
     {
-      "path": "Dev/Services/PyWavelets.md",
-      "nom": "PyWavelets",
-      "alias": [
-        "pywt",
-        "pywavelets",
-        "wavelet transform"
-      ],
-      "role": "brique",
-      "categorie": "signal/traitement",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.",
-      "tags": [
-        "signal-processing",
-        "wavelet"
-      ],
-      "alternatives": [
-        "[[scipy.signal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/PydanticAI.md",
       "nom": "PydanticAI",
       "alias": [
@@ -8256,31 +8384,6 @@
       "alternatives": [
         "[[Optuna]]",
         "[[Hyperopt]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Ray.md",
-      "nom": "Ray",
-      "alias": [
-        "ray",
-        "ray-project",
-        "ray core"
-      ],
-      "role": "brique",
-      "categorie": "compute/distribue",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).",
-      "tags": [
-        "distributed",
-        "parallel",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Dask]]",
-        "[[Spark]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8624,33 +8727,6 @@
         "[[Streamlit]]",
         "[[Dash]]",
         "[[Gradio]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/Spark.md",
-      "nom": "Spark",
-      "alias": [
-        "Apache Spark",
-        "spark",
-        "PySpark",
-        "pyspark"
-      ],
-      "role": "brique",
-      "categorie": "compute/distribue",
-      "famille": "plateforme",
-      "domaines": null,
-      "pitch": "Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.",
-      "tags": [
-        "distributed",
-        "dataframe",
-        "streaming",
-        "out-of-core"
-      ],
-      "alternatives": [
-        "[[Dask]]",
-        "[[Ray]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9811,30 +9887,6 @@
       "maturite": "experimental"
     },
     {
-      "path": "Dev/Services/librosa.md",
-      "nom": "librosa",
-      "alias": [
-        "librosa audio",
-        "audio features",
-        "MIR"
-      ],
-      "role": "brique",
-      "categorie": "signal/audio",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.",
-      "tags": [
-        "signal-processing",
-        "spectrogram",
-        "feature-engineering"
-      ],
-      "alternatives": [
-        "[[scipy.signal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Dev/Services/lifelines.md",
       "nom": "lifelines",
       "alias": [],
@@ -10308,32 +10360,6 @@
         "deep-learning"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Dev/Services/scipy.signal.md",
-      "nom": "scipy.signal",
-      "alias": [
-        "scipy",
-        "scipy signal",
-        "scipy.fft"
-      ],
-      "role": "brique",
-      "categorie": "signal/traitement",
-      "famille": "paquet",
-      "domaines": null,
-      "pitch": "Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.",
-      "tags": [
-        "signal-processing",
-        "digital-filter",
-        "fourier",
-        "spectrogram"
-      ],
-      "alternatives": [
-        "[[PyWavelets]]",
-        "[[librosa]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -11295,6 +11321,106 @@
       ],
       "alternatives": [
         "[[pip]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Signal & audio/PyWavelets.md",
+      "nom": "PyWavelets",
+      "alias": [
+        "pywt",
+        "pywavelets",
+        "wavelet transform"
+      ],
+      "role": "brique",
+      "categorie": "signal/traitement",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.",
+      "tags": [
+        "signal-processing",
+        "wavelet"
+      ],
+      "alternatives": [
+        "[[scipy.signal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Signal & audio/Signal & audio.md",
+      "nom": "Signal & audio",
+      "alias": [
+        "signal",
+        "audio",
+        "dsp"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.",
+      "tags": [
+        "signal-processing",
+        "wavelet",
+        "spectrogram",
+        "fourier",
+        "audio-classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/librosa.md",
+      "nom": "librosa",
+      "alias": [
+        "librosa audio",
+        "audio features",
+        "MIR"
+      ],
+      "role": "brique",
+      "categorie": "signal/audio",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.",
+      "tags": [
+        "signal-processing",
+        "spectrogram",
+        "feature-engineering"
+      ],
+      "alternatives": [
+        "[[scipy.signal]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Signal & audio/scipy.signal.md",
+      "nom": "scipy.signal",
+      "alias": [
+        "scipy",
+        "scipy signal",
+        "scipy.fft"
+      ],
+      "role": "brique",
+      "categorie": "signal/traitement",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.",
+      "tags": [
+        "signal-processing",
+        "digital-filter",
+        "fourier",
+        "spectrogram"
+      ],
+      "alternatives": [
+        "[[PyWavelets]]",
+        "[[librosa]]"
       ],
       "complements": [],
       "maturite": "production"
