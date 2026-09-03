@@ -60,6 +60,10 @@ tags: [unsupervised, clustering, dimensionality-reduction, anomaly-detection, ma
 - [[PaCMAP]] — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
 - [[PyOD]] — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 - [[umap-learn]] — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
+
+### Comparatifs
+- [[Comparatif - Détection d'anomalies]]
+- [[Comparatif - Réduction de dimension]]
 <!-- AUTO:END -->
 
 ## Notes

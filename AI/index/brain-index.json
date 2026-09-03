@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 727,
+  "count": 736,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -149,6 +149,7 @@
       "hnswlib"
     ],
     "anomaly-detection": [
+      "Comparatif - Détection d'anomalies",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Isolation Forest",
@@ -238,6 +239,7 @@
       "AdaBoost",
       "Boosting",
       "CatBoost",
+      "Comparatif - Boosting",
       "Gradient Boosting (GBDT)",
       "LightGBM",
       "Tabulaire",
@@ -733,6 +735,7 @@
       "Analyse factorielle",
       "Autoencodeurs",
       "CA",
+      "Comparatif - Réduction de dimension",
       "FAMD",
       "Fanalysis",
       "GPA",
@@ -862,6 +865,7 @@
       "Bagging",
       "Boosting",
       "CatBoost",
+      "Comparatif - Boosting",
       "Ensembling",
       "Extra Trees",
       "Gradient Boosting (GBDT)",
@@ -896,6 +900,7 @@
     "explainability": [
       "Attribution par gradient",
       "Captum",
+      "Comparatif - Explicabilité",
       "Explicabilité des modèles",
       "Interprétabilité",
       "Interprétabilité mécaniste",
@@ -917,6 +922,7 @@
     "factor-analysis": [
       "Analyse factorielle",
       "CA",
+      "Comparatif - Réduction de dimension",
       "FAMD",
       "Fanalysis",
       "GPA",
@@ -1121,6 +1127,7 @@
       "Web & API"
     ],
     "hyperparameter-tuning": [
+      "Comparatif - Optimisation d'hyperparamètres",
       "Hyperopt",
       "Machine Learning",
       "Maximal Update Parametrization",
@@ -1174,6 +1181,7 @@
     ],
     "inference": [
       "BentoML",
+      "Comparatif - Serving de modèles",
       "Déploiement de modèles",
       "Inference optimization",
       "KServe",
@@ -1218,6 +1226,7 @@
     ],
     "information-retrieval": [
       "BM25",
+      "Comparatif - NLP",
       "Fuzzy matching & similarité de chaînes",
       "Late-interaction retrieval",
       "NLP",
@@ -1270,6 +1279,7 @@
       "RAG & retrieval"
     ],
     "kubernetes": [
+      "Comparatif - Serving de modèles",
       "Flyte",
       "KServe",
       "Seldon Core",
@@ -1549,6 +1559,7 @@
     ],
     "manifold": [
       "Analyse factorielle",
+      "Comparatif - Réduction de dimension",
       "Manifold learning",
       "Non supervisé",
       "PGA",
@@ -1659,6 +1670,7 @@
       "Pattern - Stack démo ML locale multi-services"
     ],
     "ml-pipeline": [
+      "Comparatif - Orchestrateurs ML",
       "Flyte",
       "Machine Learning",
       "Metaflow",
@@ -1680,6 +1692,7 @@
       "Calibration",
       "Classification metrics",
       "Clustering evaluation",
+      "Comparatif - Explicabilité",
       "Compromis biais-variance",
       "Data leakage",
       "Evidently",
@@ -1723,6 +1736,7 @@
     ],
     "model-serving": [
       "BentoML",
+      "Comparatif - Serving de modèles",
       "Déploiement de modèles",
       "KServe",
       "NVIDIA Triton",
@@ -1792,6 +1806,7 @@
       "Théorie de l'information"
     ],
     "ner": [
+      "Comparatif - NLP",
       "Construction de graphes de connaissances",
       "GLiNER",
       "NER et étiquetage de séquence",
@@ -1812,6 +1827,7 @@
     "nlp": [
       "BM25",
       "Classification de texte",
+      "Comparatif - NLP",
       "DSPy",
       "Decoding strategies",
       "Fuzzy matching & similarité de chaînes",
@@ -1959,6 +1975,7 @@
       "Airflow",
       "Automatisation no-code",
       "ClearML",
+      "Comparatif - Orchestrateurs ML",
       "Dagster",
       "Flyte",
       "Kestra",
@@ -2262,6 +2279,7 @@
       "AlphaZero and self-play",
       "Apprentissage par renforcement",
       "Bellman equations",
+      "Comparatif - Reinforcement learning",
       "Exploration vs exploitation",
       "Fine-tuning",
       "GRPO",
@@ -2329,6 +2347,7 @@
       "embeddings"
     ],
     "reproducibility": [
+      "Comparatif - Orchestrateurs ML",
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
@@ -2457,6 +2476,7 @@
     "self-play": [
       "AlphaZero and self-play",
       "Apprentissage par renforcement",
+      "Comparatif - Reinforcement learning",
       "Counterfactual Regret Minimization",
       "Pattern - Moteur de jeu pur + IA séparée"
     ],
@@ -2480,6 +2500,7 @@
       "txtai"
     ],
     "sequence-labeling": [
+      "Comparatif - NLP",
       "NER et étiquetage de séquence",
       "NLP",
       "pytorch-crf",
@@ -2680,6 +2701,7 @@
     ],
     "text-classification": [
       "Classification de texte",
+      "Comparatif - NLP",
       "NLP",
       "NLTK",
       "SetFit"
@@ -2791,6 +2813,7 @@
       "Attention linéaire",
       "Calculs adaptatifs",
       "Chronos",
+      "Comparatif - Explicabilité",
       "Flash Attention and efficient attention",
       "Foundation models pour séries temporelles",
       "GLiNER",
@@ -2812,6 +2835,7 @@
       "AdaBoost",
       "Arbres de décision",
       "CatBoost",
+      "Comparatif - Boosting",
       "Extra Trees",
       "Gradient Boosting (GBDT)",
       "Isolation Forest",
@@ -2839,6 +2863,7 @@
       "Clustering",
       "Clustering evaluation",
       "Clustering hiérarchique par densité",
+      "Comparatif - Détection d'anomalies",
       "DBSCAN",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
@@ -11127,6 +11152,24 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage par renforcement/Comparatif - Reinforcement learning.md",
+      "nom": "Comparatif - Reinforcement learning",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "self-play"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage par renforcement/Counterfactual Regret Minimization.md",
       "nom": "Counterfactual Regret Minimization",
       "alias": [
@@ -12824,6 +12867,42 @@
       "maturite": "experimental"
     },
     {
+      "path": "Machine Learning/Comparatif - Optimisation d'hyperparamètres.md",
+      "nom": "Comparatif - Optimisation d'hyperparamètres",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/hyperopt",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "hyperparameter-tuning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Comparatif - Orchestrateurs ML.md",
+      "nom": "Comparatif - Orchestrateurs ML",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/orchestration",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "orchestration",
+        "ml-pipeline",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Data drift.md",
       "nom": "Data drift",
       "alias": [
@@ -13056,6 +13135,25 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Comparatif - Explicabilité.md",
+      "nom": "Comparatif - Explicabilité",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "transformers",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Interprétabilité/Explicabilité des modèles.md",
@@ -13528,6 +13626,27 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/NLP/Comparatif - NLP.md",
+      "nom": "Comparatif - NLP",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "information-retrieval",
+        "ner",
+        "sequence-labeling",
+        "text-classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/NLP/Fuzzy matching & similarité de chaînes.md",
       "nom": "Fuzzy matching & similarité de chaînes",
       "alias": [
@@ -13972,6 +14091,43 @@
       "tags": [
         "clustering",
         "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Comparatif - Détection d'anomalies.md",
+      "nom": "Comparatif - Détection d'anomalies",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Comparatif - Réduction de dimension.md",
+      "nom": "Comparatif - Réduction de dimension",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "factor-analysis"
       ],
       "alternatives": null,
       "complements": null,
@@ -14581,6 +14737,25 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/Comparatif - Serving de modèles.md",
+      "nom": "Comparatif - Serving de modèles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/serving",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "model-serving",
+        "inference",
+        "kubernetes"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Serving/Déploiement de modèles.md",
@@ -16420,6 +16595,25 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Comparatif - Boosting.md",
+      "nom": "Comparatif - Boosting",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "boosting",
+        "tree-based",
+        "ensemble"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Tabulaire/Encodage des variables catégorielles.md",
