@@ -1,5 +1,9 @@
 filters:
   and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
     # `llm/framework` (33 pages) a eclate en 13 domaines. Ce comparatif garde son
     # sujet : les briques qu'on IMPORTE pour construire une application LLM.
     # En sortent, et ont leur propre domaine : les passerelles (`llm/passerelle`),

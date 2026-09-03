@@ -1,5 +1,9 @@
 filters:
   and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
     # `ml/rl` existe desormais comme domaine : le detour par le tag
     # `reinforcement-learning` (C3 — un tag employe faute de categorie) n'a plus
     # d'objet. Les fiches de fine-tuning par RL (TRL, Tunix) restent en

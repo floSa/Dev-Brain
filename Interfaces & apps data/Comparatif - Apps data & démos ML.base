@@ -1,5 +1,9 @@
 filters:
   and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
     # `ui/ml-demo` a fusionne dans `ui/data-app` (Gradio) : une seule valeur suffit.
     - categorie == "ui/data-app"
 views:

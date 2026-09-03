@@ -1,5 +1,9 @@
 filters:
   and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
     - categorie == "database/series-temporelles"
 views:
   - type: table

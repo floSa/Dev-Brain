@@ -1,5 +1,9 @@
 filters:
   and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
     # `hasTag("cli")` ne tenait que par le filtre de dossier : le tag est porte
     # aussi par croc (transfert de fichiers) et trois agents de code. La categorie
     # devtools/cli dit ce que ce comparatif compare, et ne bouge pas avec l'arbre.
