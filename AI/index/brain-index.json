@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 749,
+  "count": 751,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -712,12 +712,14 @@
       "Rendu neuronal 3D & estimation de profondeur"
     ],
     "design-tool": [
+      "Comparatif - Design & prototypage",
       "Design & diagrammes",
       "Figma",
       "Penpot"
     ],
     "diagram": [
       "Archify",
+      "Comparatif - Diagrammes",
       "Design & diagrammes",
       "Diagrammes",
       "Excalidraw",
@@ -727,6 +729,7 @@
     ],
     "diagram-as-code": [
       "Archify",
+      "Comparatif - Diagrammes",
       "Diagrammes",
       "Mermaid"
     ],
@@ -1266,6 +1269,7 @@
       "plotly"
     ],
     "isometric": [
+      "Comparatif - Diagrammes",
       "Diagrammes",
       "FossFLOW"
     ],
@@ -3026,6 +3030,7 @@
       "selectolax"
     ],
     "whiteboard": [
+      "Comparatif - Diagrammes",
       "Design & diagrammes",
       "Diagrammes",
       "Excalidraw"
@@ -6535,6 +6540,23 @@
       "maturite": "production"
     },
     {
+      "path": "Design & diagrammes/Comparatif - Design & prototypage.md",
+      "nom": "Comparatif - Design & prototypage",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "design/ui",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "design-tool"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Design & diagrammes/Design & diagrammes.md",
       "nom": "Design & diagrammes",
       "alias": [
@@ -6588,6 +6610,26 @@
         "[[FossFLOW]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/Comparatif - Diagrammes.md",
+      "nom": "Comparatif - Diagrammes",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "design/diagramme",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "diagram",
+        "diagram-as-code",
+        "whiteboard",
+        "isometric"
+      ],
+      "alternatives": null,
+      "complements": null,
       "maturite": null
     },
     {

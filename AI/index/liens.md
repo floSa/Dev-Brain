@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 749 pages actives.
+> 751 pages actives.
 
 ## Par page
 
@@ -83,7 +83,7 @@
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
 - liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Excalidraw]], [[FossFLOW]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Agent skills]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
+- liens entrants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
@@ -333,7 +333,7 @@
 ### draw.io  ·  brique
 - tags : `diagram`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]]
-- liens entrants : [[Archify]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]]
 
 ### DSPy  ·  brique
 - tags : `llm`, `prompt-optimization`, `nlp`
@@ -373,7 +373,7 @@
 ### Excalidraw  ·  brique
 - tags : `diagram`, `whiteboard`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Diagrammes]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]], [[draw.io]]
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -413,7 +413,7 @@
 ### Figma  ·  brique
 - tags : `design-tool`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Mermaid]], [[Penpot]], [[draw.io]]
-- liens entrants : [[Design & diagrammes]], [[Penpot]]
+- liens entrants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Penpot]]
 
 ### Firecrawl  ·  brique
 - tags : `web-scraping`, `markdown-conversion`
@@ -448,7 +448,7 @@
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Diagrammes]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
 
 ### freebuff  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `multi-agent`, `cli`
@@ -783,7 +783,7 @@
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[draw.io]]
-- liens entrants : [[Archify]], [[Design & diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Penpot]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Penpot]], [[draw.io]]
 
 ### Metaflow  ·  brique
 - tags : `orchestration`, `ml-pipeline`
@@ -1028,7 +1028,7 @@
 ### Penpot  ·  brique
 - tags : `design-tool`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Figma]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Design & diagrammes]], [[Figma]]
+- liens entrants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Figma]]
 
 ### pgAdmin  ·  brique
 - tags : `db-client`, `postgres`, `relational`
@@ -1739,6 +1739,16 @@
 - tags : `db-client`
 - liens sortants : [[Comparatif - Clients de bases de données.base]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 - liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+
+### Comparatif - Design & prototypage  ·  comparatif
+- tags : `design-tool`
+- liens sortants : [[Comparatif - Design & prototypage.base]], [[Figma]], [[Penpot]]
+- liens entrants : [[Design & diagrammes]], [[Figma]], [[Penpot]]
+
+### Comparatif - Diagrammes  ·  comparatif
+- tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes.base]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
+- liens entrants : [[Archify]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 
 ### Comparatif - Détection & segmentation  ·  comparatif
 - tags : `object-detection`, `segmentation`, `computer-vision`
@@ -3821,9 +3831,9 @@
 - `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
 - `deployment-strategy` : DevOps, Déploiement de modèles, Serving  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
-- `design-tool` : Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
-- `diagram` : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
-- `diagram-as-code` : Archify, Diagrammes, Mermaid  — pas de page concept dédiée
+- `design-tool` : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
+- `diagram` : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
+- `diagram-as-code` : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
@@ -3880,7 +3890,7 @@
 - `information-retrieval` : BM25, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
-- `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
+- `isometric` : Comparatif - Diagrammes, Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
@@ -4069,7 +4079,7 @@
 - `wavelet` : Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
 - `web-scraping` : Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
-- `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
+- `whiteboard` : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
 
 ## À créer (gaps)
@@ -4116,9 +4126,9 @@
 - `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Modèles de langage, Multi-Token Prediction, Outlines, Sortie typée, Speculative decoding)
 - `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
 - `deployment-strategy` (porté par : DevOps, Déploiement de modèles, Serving)
-- `design-tool` (porté par : Design & diagrammes, Figma, Penpot)
-- `diagram` (porté par : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
-- `diagram-as-code` (porté par : Archify, Diagrammes, Mermaid)
+- `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
+- `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
+- `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
 - `distributed` (porté par : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
@@ -4148,7 +4158,7 @@
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
 - `interactive-viz` (porté par : Interfaces & apps data, Visualisation, altair, bokeh, plotly)
-- `isometric` (porté par : Diagrammes, FossFLOW)
+- `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Comparatif - Serving de modèles, Flyte, KServe, Seldon Core, Serving)
@@ -4264,5 +4274,5 @@
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
-- `whiteboard` (porté par : Design & diagrammes, Diagrammes, Excalidraw)
+- `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)
