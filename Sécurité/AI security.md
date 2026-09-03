@@ -2,7 +2,7 @@
 role: notion
 nom: AI security
 alias: [sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM]
-categorie: concept/ai
+categorie: security/ia
 domaines: [ai-eng]
 tags: [ai-security, safety, llm]
 ---

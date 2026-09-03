@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 100 valeurs, cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 101 valeurs, cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -143,7 +143,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (100 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (101 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -173,7 +173,7 @@ storage/{objet}
 web/{backend, frontend, api}
 ui/{data-app}
 network/{analyse, transfert}
-security/{recon, auth}
+security/{recon, auth, ia}
 devops/{ci, conteneur}
 observability/{supervision}
 automation/{no-code}
@@ -333,7 +333,16 @@ valeurs disparues et ne sont pas reconduites.
 - `security/recon` — reconnaissance d'une cible **depuis l'extérieur**, sans accès privilégié
   (DNS, TLS, en-têtes, technologies détectées), et **renseignement en sources ouvertes** :
   l'ancienne distinction `recon` / `osint` ne portait aucune conséquence, les deux valeurs sont
-  fusionnées. Distinct du tag `ai-security` (surface d'attaque des systèmes LLM).
+  fusionnées. Distinct de `security/ia`, qui porte la surface d'attaque des systèmes IA.
+- `security/ia` — **ouvert au lot 4.** Surface d'attaque des systèmes qui embarquent un
+  modèle, et défenses : injection de prompt directe et indirecte, contournement de
+  l'alignement, garde-fous d'entrée et de sortie, agence excessive des outils. Rangé sous
+  `security/` et non sous `llm/` bien que D1 semble l'appeler, par arbitrage de floSa du
+  2026-09-05 : ces pages portaient `concept/ai` et non `concept/llm` — la famille large
+  était déjà un choix — et **la sécurité est une pratique qui traverse les modèles**, pas
+  un sous-sujet de l'IA générative. Distinct de `security/recon` (inspecter une cible du
+  dehors) et de `llm/observabilite` (mesurer ce qui est envoyé au modèle, sans jugement de
+  sécurité).
 - `observability/supervision` — surveiller du logiciel **déployé** : métriques, journaux, état
   des machines et des conteneurs, tableaux de bord, alertes. L'ancien découpage
   `log` / `metric` / `trace` / `infra` n'a jamais dépassé une page par valeur ; il est fusionné.
@@ -376,7 +385,7 @@ sont descendus dans l'arbre.
 | `media` | Médias | vidéo, audio, image pour un humain |
 | `ui` | Interfaces & apps data | interfaces data et démos de modèle |
 | `observability` | Observabilité | surveiller du logiciel déployé |
-| `security` | Sécurité | sécurité et renseignement |
+| `security` | Sécurité | sécurité et renseignement, y compris la surface d'attaque des systèmes IA |
 | `signal` | Signal & audio | traitement du signal, audio |
 | `network` | Réseau | ce qui circule entre machines |
 | `devops` | DevOps | déployer du logiciel en production |
@@ -386,7 +395,7 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{data, ai, ml, dl, rl, ts, nlp, devops, llm}
+concept/{data, ml, dl, rl, ts, nlp, devops, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -405,6 +414,7 @@ silencieuse, puisque `check_brain` l'accepterait encore.
 - `stats` — retiré le 2026-09-05, 37 notions descendues dans « Statistiques & inférence/ ».
 - `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
 - `signal` — retiré le 2026-09-05, 5 notions descendues dans « Signal & audio/ ».
+- `ai` — retiré le 2026-09-05, 4 notions descendues dans « Sécurité/ ».
 
 `data` **reste dans le bloc** après le lot du 2026-09-05, et c'est une exception motivée :
 8 de ses 13 notions sont descendues dans « Data & pipelines/ », les 5 autres appellent un

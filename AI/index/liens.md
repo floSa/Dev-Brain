@@ -1707,7 +1707,7 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Données (notions)]], [[Fine-tuning]], [[IA & sécurité]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[NLP (notions)]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Données (notions)]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[NLP (notions)]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
 
 ### Algèbre linéaire  ·  hub
@@ -1818,7 +1818,7 @@
 ### LLM & IA générative  ·  hub
 - tags : `llm`, `rag`, `agents`, `llm-eval`, `llm-observability`, `mcp`, `structured-output`, `llm-gateway`
 - liens sortants : [[AI security]], [[Advanced RAG]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Assistants]], [[Chain-of-Thought]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Évaluation LLM]], [[Construction de graphes de connaissances]], [[Context engineering]], [[DSPy]], [[Decoding strategies]], [[DeepEval]], [[Dify]], [[Fine-tuning]], [[Flowise]], [[GraphRAG]], [[Guardrails]], [[Guidance]], [[Haystack]], [[Headroom]], [[Helicone]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[LLM caching]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[LangSmith]], [[Langflow]], [[Langfuse]], [[Late-interaction retrieval]], [[Letta]], [[LiteLLM]], [[LlamaIndex]], [[Machine Learning]], [[OmniRoute]], [[OpenRouter]], [[OpenViking]], [[Outlines]], [[Perplexity]], [[Phoenix Arize]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Ragas]], [[Reasoning models]], [[Reliability patterns]], [[Reranking]], [[Routing and cascading]], [[Runtimes]], [[SFT]], [[Scaling laws]], [[Small Language Models]], [[Structured outputs]], [[Synthetic data generation]], [[Sécurité]], [[Text-to-SQL]], [[Tokenization]], [[TruLens]], [[fastmcp]], [[llmfit]], [[mcp-protocol]], [[mcpjam]], [[prompt-caching]], [[promptfoo]], [[tool-use]]
-- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Vision]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]]
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
@@ -1946,8 +1946,8 @@
 - liens entrants : [[MLOps]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
 
 ### Sécurité  ·  hub
-- tags : `authentication`, `recon`, `osint`, `cryptography`
-- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[Prompt injection]], [[PyJWT]], [[Web-Check]], [[osint4all]]
+- tags : `authentication`, `recon`, `osint`, `cryptography`, `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
+- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[Prompt injection]], [[PyJWT]], [[Reliability patterns]], [[Web-Check]], [[osint4all]]
 - liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]]
 
 ### Séries temporelles  ·  hub
@@ -3133,7 +3133,7 @@
 ### Reliability patterns  ·  notion
 - tags : `reliability`, `llm`, `agents`
 - liens sortants : [[Agent evaluation]], [[Context engineering]], [[Human-in-the-loop]], [[Instructor]], [[LLM observability]], [[Langfuse]], [[LiteLLM]], [[Structured outputs]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[AI security]], [[Agent evaluation]], [[Agent patterns]], [[Context engineering]], [[Guardrails]], [[Human-in-the-loop]], [[LLM & IA générative]], [[Multi-agent systems]], [[OmniRoute]], [[OpenRouter]], [[Prompt injection]], [[Server-Sent Events & streaming LLM]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
+- liens entrants : [[AI security]], [[Agent evaluation]], [[Agent patterns]], [[Context engineering]], [[Guardrails]], [[Human-in-the-loop]], [[LLM & IA générative]], [[Multi-agent systems]], [[OmniRoute]], [[OpenRouter]], [[Prompt injection]], [[Server-Sent Events & streaming LLM]], [[Sécurité]], [[Tool use patterns]], [[mcp-protocol]], [[tool-use]]
 
 ### Rendu neuronal 3D & estimation de profondeur  ·  notion
 - tags : `neural-rendering`, `depth-estimation`, `computer-vision`, `deep-learning`
@@ -3547,7 +3547,7 @@
 - `agent-memory` : Agents, Assistants, OpenViking, ai-memory
 - `agent-skill` : Agents de code, Archify, Assistants, BMAD, i-have-adhd
 - `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Assistants, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
-- `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, promptfoo
+- `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, Sécurité, promptfoo
 - `alignment` : Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
@@ -3653,7 +3653,7 @@
 - `gpu` : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
 - `graph-db` : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
-- `guardrails` : Guardrails
+- `guardrails` : Guardrails, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
 - `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
@@ -3671,7 +3671,7 @@
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
 - `isometric` : Diagrammes, FossFLOW  — pas de page concept dédiée
-- `jailbreak` : Jailbreaking and defenses
+- `jailbreak` : Jailbreaking and defenses, Sécurité
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
@@ -3768,7 +3768,7 @@
 - `probabilistic-programming` : Bayésien, PyMC, Stan  — pas de page concept dédiée
 - `probability` : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite  — pas de page concept dédiée
 - `projection` : Algèbre linéaire, Analyse factorielle, Projections
-- `prompt-injection` : Prompt injection
+- `prompt-injection` : Prompt injection, Sécurité
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
 - `prompting` : Chain-of-Thought, Prompt engineering, i-have-adhd  — pas de page concept dédiée
 - `pruning` : Pruning

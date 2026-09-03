@@ -2,7 +2,7 @@
 role: notion
 nom: Jailbreaking and defenses
 alias: [jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN]
-categorie: concept/ai
+categorie: security/ia
 domaines: [ai-eng]
 tags: [jailbreak, safety, llm]
 ---

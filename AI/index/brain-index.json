@@ -124,6 +124,7 @@
       "Maka",
       "Prompt injection",
       "Sandboxing de code généré",
+      "Sécurité",
       "promptfoo"
     ],
     "alignment": [
@@ -1080,7 +1081,8 @@
       "Pattern - RAG structuré graphe + human-in-the-loop"
     ],
     "guardrails": [
-      "Guardrails"
+      "Guardrails",
+      "Sécurité"
     ],
     "hardware-sizing": [
       "llmfit"
@@ -1228,7 +1230,8 @@
       "FossFLOW"
     ],
     "jailbreak": [
-      "Jailbreaking and defenses"
+      "Jailbreaking and defenses",
+      "Sécurité"
     ],
     "key-value": [
       "Redis",
@@ -2074,7 +2077,8 @@
       "Projections"
     ],
     "prompt-injection": [
-      "Prompt injection"
+      "Prompt injection",
+      "Sécurité"
     ],
     "prompt-optimization": [
       "DSPy"
@@ -15155,6 +15159,114 @@
       "maturite": null
     },
     {
+      "path": "Sécurité/AI security.md",
+      "nom": "AI security",
+      "alias": [
+        "sécurité IA",
+        "sécurité LLM",
+        "LLM security",
+        "AI security",
+        "OWASP LLM Top 10",
+        "sécurité des apps LLM"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ai-security",
+        "safety",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Guardrails.md",
+      "nom": "Guardrails",
+      "alias": [
+        "garde-fous",
+        "guardrails",
+        "garde-fous LLM",
+        "garde-fous d'entrée/sortie"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "guardrails",
+        "safety",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Jailbreaking and defenses.md",
+      "nom": "Jailbreaking and defenses",
+      "alias": [
+        "jailbreak",
+        "jailbreaking",
+        "contournement de l'alignement",
+        "jailbreaking and defenses",
+        "DAN"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "jailbreak",
+        "safety",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Prompt injection.md",
+      "nom": "Prompt injection",
+      "alias": [
+        "injection de prompt",
+        "prompt injection",
+        "indirect prompt injection",
+        "injection indirecte",
+        "LLM01"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "prompt-injection",
+        "ai-security",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Sécurité/PyJWT.md",
       "nom": "PyJWT",
       "alias": [
@@ -15191,12 +15303,16 @@
         "ai-eng",
         "infra-ops"
       ],
-      "pitch": "Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.",
+      "pitch": "Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.",
       "tags": [
         "authentication",
         "recon",
         "osint",
-        "cryptography"
+        "cryptography",
+        "ai-security",
+        "prompt-injection",
+        "jailbreak",
+        "guardrails"
       ],
       "alternatives": null,
       "complements": null,
@@ -15395,34 +15511,6 @@
       "tags": [],
       "alternatives": [],
       "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/AI security.md",
-      "nom": "AI security",
-      "alias": [
-        "sécurité IA",
-        "sécurité LLM",
-        "LLM security",
-        "AI security",
-        "OWASP LLM Top 10",
-        "sécurité des apps LLM"
-      ],
-      "role": "notion",
-      "categorie": "concept/ai",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "ai-security",
-        "safety",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
       "maturite": null
     },
     {
@@ -17831,32 +17919,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Guardrails.md",
-      "nom": "Guardrails",
-      "alias": [
-        "garde-fous",
-        "guardrails",
-        "garde-fous LLM",
-        "garde-fous d'entrée/sortie"
-      ],
-      "role": "notion",
-      "categorie": "concept/ai",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "guardrails",
-        "safety",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Harnais d'agent.md",
       "nom": "Harnais d'agent",
       "alias": [
@@ -18279,33 +18341,6 @@
         "unsupervised",
         "tree-based",
         "ensemble"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Jailbreaking and defenses.md",
-      "nom": "Jailbreaking and defenses",
-      "alias": [
-        "jailbreak",
-        "jailbreaking",
-        "contournement de l'alignement",
-        "jailbreaking and defenses",
-        "DAN"
-      ],
-      "role": "notion",
-      "categorie": "concept/ai",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "jailbreak",
-        "safety",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -19623,33 +19658,6 @@
       "pitch": null,
       "tags": [
         "prompting",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Prompt injection.md",
-      "nom": "Prompt injection",
-      "alias": [
-        "injection de prompt",
-        "prompt injection",
-        "indirect prompt injection",
-        "injection indirecte",
-        "LLM01"
-      ],
-      "role": "notion",
-      "categorie": "concept/ai",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "prompt-injection",
-        "ai-security",
         "llm"
       ],
       "alternatives": null,

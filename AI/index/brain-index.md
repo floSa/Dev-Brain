@@ -534,12 +534,6 @@
 
 ## Notions — ce qu'il faut comprendre
 
-### concept/ai
-- **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM
-- **Guardrails** — domaines : ai-eng · alias : garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie
-- **Jailbreaking and defenses** — domaines : ai-eng · alias : jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN
-- **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
-
 ### concept/data
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
 - **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
@@ -823,6 +817,12 @@
 - **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
 - **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
 
+### security/ia
+- **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM
+- **Guardrails** — domaines : ai-eng · alias : garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie
+- **Jailbreaking and defenses** — domaines : ai-eng · alias : jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN
+- **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
+
 ### signal/traitement
 - **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
 - **Ondelettes** — domaines : data-sci, ml-eng · alias : wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme
@@ -951,7 +951,7 @@
 - **Statistiques & inférence** — Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Suivi d'expériences** — Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.
-- **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
+- **Sécurité** — Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
 - **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
 - **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.

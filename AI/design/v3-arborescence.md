@@ -467,10 +467,14 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - [x] sous-dossiers créés — `Agents de code/` (13), `Runtimes/` (9), `Agents/` (9),
   `Fine-tuning/` (5), `Text-to-SQL/` (5), `Assistants/` (5) ; 28 briques au niveau du
   domaine, plus 3 des 7 comparatifs
-- [ ] notions recatégorisées — lot 4 : les 56 notions `concept/llm` ci-dessous, plus les
-  4 notions de sécurité des LLM en `concept/ai` (cf. « Sécurité »). Les hubs les citent
-  toutes en liens nus pour que l'arbre ne paraisse pas fait de briques seules
-  (remontée 13) ; seule `Text-to-SQL` est descendue, parce qu'elle est devenue un hub
+- [ ] notions recatégorisées — lot 4 : les 56 notions `concept/llm` ci-dessous. Les
+  4 notions de sécurité qui portaient `concept/ai` **ne viendront pas ici** : elles sont
+  descendues dans « Sécurité/ » le 2026-09-05, contre l'ordre de l'arbre de décision et
+  par arbitrage explicite de floSa (motif dans la section « Sécurité »). Le corps du hub,
+  qui les revendiquait nommément, a été réécrit dans le même commit. Les hubs citent
+  toutes les notions restantes en liens nus pour que l'arbre ne paraisse pas fait de
+  briques seules (remontée 13) ; seule `Text-to-SQL` est descendue, parce qu'elle est
+  devenue un hub
 - [ ] fiches au nouveau gabarit — lot 6
 
 **Agents de code/** — `llm/agent-de-code` — 13 pages
@@ -1143,20 +1147,35 @@ c'est la frontière de domaine.
 
 - `[c]` Comparatif - Apps data & démos ML — filtre `ui/data-app`
 
-### Sécurité  ·  3 pages  ·  **migré le 2026-09-04**
+### Sécurité  ·  7 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
-- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
-- [x] sous-dossiers créés — aucun (`security/recon` 2, `security/auth` 1)
-- [ ] notions recatégorisées — lot 4 : les 4 notions de sécurité des LLM (Prompt
-  injection, Jailbreaking and defenses, Guardrails, AI security) portent `concept/ai` et
-  sont dans la liste « Hors arbre » ; le hub le dit explicitement
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/` ; corps **réécrit au lot 4** :
+  le domaine porte désormais trois activités et non deux, et la phrase qui annonçait que
+  les notions de sécurité IA « ne sont pas descendues ici » est remplacée
+- [x] sous-dossiers créés — aucun (`security/ia` 4, `security/recon` 2, `security/auth` 1)
+- [x] notions recatégorisées — **lot 4, 2026-09-05**, valeur nouvelle `security/ia` :
+  les 4 sont ici, plus aucune page ne porte `concept/ai`, et la valeur est retirée du
+  vocabulaire
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Au niveau du domaine** — 3 pages
+**Au niveau du domaine** — 7 pages
 
-- `[b]` PyJWT — paquet, Python
-- `[b]` Web-Check — application, TypeScript
-- `[b]` osint4all — annuaire
+- `security/ia` — **valeur nouvelle**, 4 pages, sous le seuil :
+  `[n]` AI security · `[n]` Guardrails · `[n]` Jailbreaking and defenses ·
+  `[n]` Prompt injection
+- `security/recon` — 2 : `[b]` Web-Check — application, TypeScript · `[b]` osint4all — annuaire
+- `security/auth` — 1 : `[b]` PyJWT — paquet, Python
+
+> **La décision que le lot 4 devait trancher, et elle va contre l'arbre.** L'arbre de
+> décision du domaine met D1 (« a besoin d'un LLM ») avant D9 (« porte sur la sécurité »),
+> et les quatre pages ne parlent que d'applications LLM : elles auraient dû aller en
+> `llm/*`. Les deux hubs concernés se répondaient d'ailleurs dans ce sens — celui de
+> « LLM & IA générative » les revendiquait nommément, celui de « Sécurité » écrivait
+> qu'elles n'étaient pas descendues là. Arbitrage de floSa : elles portent `concept/ai` et
+> non `concept/llm` — la famille large était déjà un choix — et **la sécurité est une
+> pratique qui traverse les modèles**, pas un sous-sujet de l'IA générative. Ce n'est pas
+> un effet de seuil : 3 → 7 pages ne promeut aucun sous-dossier. Les deux phrases de hub
+> sont réécrites dans le même commit.
 
 ### Observabilité  ·  3 pages  ·  **migré le 2026-09-04**
 
@@ -1209,11 +1228,13 @@ c'est la frontière de domaine.
 
 ## Hors arbre — à arbitrer un par un
 
-18 notions dont le domaine lui-même reste à déterminer. **8 rangées au lot 4** ;
-5 remontées (leur domaine d'accueil était hors du périmètre du lot) ; les 4 de
-sécurité IA sont traitées dans la section « Sécurité ».
+18 notions dont le domaine lui-même reste à déterminer. **12 rangées au lot 4** — les 8
+de `concept/data` propres à « Data & pipelines », et les 4 de sécurité IA que floSa a
+tranchées en `security/ia` (motif dans la section « Sécurité »). **5 remontées** : leur
+domaine d'accueil était hors du périmètre du lot, elles restent sous `Wiki/Concepts/` et
+`concept/data` reste dans le vocabulaire pour elles. Reste 1 case, déjà résolue au lot 3.
 
-- [ ] `[n]` AI security — actuellement `concept/ai`
+- [x] `[n]` AI security — **rangée** `security/ia`, lot 4
 - [x] `[n]` Architecture médaillon — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` Bases de données — **résolue** : fusionnée dans le hub
   `Bases de données/Bases de données.md` (`role: hub`) au lot 3, avec
@@ -1222,14 +1243,14 @@ sécurité IA sont traitées dans la section « Sécurité ».
 - [x] `[n]` Change Data Capture (CDC) — **rangée** `data/ingestion`, lot 4
 - [x] `[n]` Contrats de données & qualité — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` ELT vs ETL & idempotence — **rangée** `data/fiabilite`, lot 4
-- [ ] `[n]` Guardrails — actuellement `concept/ai`
+- [x] `[n]` Guardrails — **rangée** `security/ia`, lot 4
 - [ ] `[n]` Index ANN — internes — `concept/data` · **appelle `database/vecteur`**, remontée au lot 4 (→ 14, `Vectoriel/` existe)
-- [ ] `[n]` Jailbreaking and defenses — actuellement `concept/ai`
+- [x] `[n]` Jailbreaking and defenses — **rangée** `security/ia`, lot 4
 - [ ] `[n]` Migrations de schéma — `concept/data` · **appelle `database/migration`**, remontée au lot 4 (3 → 4, sous le seuil)
 - [ ] `[n]` Notebooks-as-code — `concept/data` · **appelle `devtools/notebook`**, remontée au lot 4 (5 → 6, `Notebooks/` existe)
 - [ ] `[n]` ORM — `concept/data` · **appelle `database/orm`**, remontée au lot 4 (3 → 4, sous le seuil)
 - [x] `[n]` Partitionnement & layout de données — **rangée** `data/format`, lot 4
-- [ ] `[n]` Prompt injection — actuellement `concept/ai`
+- [x] `[n]` Prompt injection — **rangée** `security/ia`, lot 4
 - [x] `[n]` Stream processing — **rangée** `data/streaming`, lot 4
 - [x] `[n]` Versionnage de données — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` Web scraping — **rangée** `data/scraping`, lot 4
