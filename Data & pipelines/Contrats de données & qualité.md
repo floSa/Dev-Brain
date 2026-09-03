@@ -2,7 +2,7 @@
 role: notion
 nom: Contrats de données & qualité
 alias: [data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données]
-categorie: concept/data
+categorie: data/fiabilite
 domaines: [data-eng]
 tags: [data-contract, data-quality, data-validation, schema-evolution]
 ---

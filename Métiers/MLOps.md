@@ -25,8 +25,9 @@ pitch: Mettre un modèle en production et savoir, ensuite, s'il marche encore.
 Axe métier **MLOps** (`mlops`) — explorer par sous-domaine, puis descendre via le graphe local.
 
 - [[Machine learning (notions)]] — 5 page(s)
-- [[Données (notions)]] — 2 page(s)
 - [[Deep learning]] — 2 page(s)
 - [[LLM (notions)]] — 2 page(s)
 - [[Séries temporelles]] — 2 page(s)
+- [[Data & pipelines]] — 1 page(s)
+- [[Données (notions)]] — 1 page(s)
 <!-- AUTO:END -->

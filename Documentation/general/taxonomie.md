@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 99 valeurs, cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 100 valeurs, cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -143,7 +143,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (99 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (100 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -163,7 +163,7 @@ llm/{socle, agents, agent-de-code, assistant, rag, memoire, sortie-structuree,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz}
+      synthetique, eda, viz, fiabilite}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -256,7 +256,16 @@ valeurs disparues et ne sont pas reconduites.
   rotation, signature) par D-R2.
 - `data/orchestration` — orchestration de pipelines de **données** en code (DAG, dépendances,
   backfills) : Airflow, Dagster, Prefect. Distinct de `automation/no-code`, qui connecte des
-  **applications** par déclencheurs et actions dans un éditeur visuel de nœuds.
+  **applications** par déclencheurs et actions dans un éditeur visuel de nœuds. Et distinct de
+  `data/fiabilite`, qui décrit ce qu'un pipeline doit garantir là où l'orchestrateur l'exécute.
+- `data/fiabilite` — **ouvert au lot 4.** Ce qui rend une donnée digne de confiance, quel que
+  soit l'outil qui la déplace : l'ordre d'assemblage et la rejouabilité (ETL/ELT, idempotence,
+  backfill sans doublon), le découpage en couches de raffinage (bronze / silver / gold), les
+  contrats passés au consommateur et leur vérification continue, le versionnage des jeux qui
+  rend un résultat reproductible. Distinct de `data/orchestration` (l'outil qui **exécute** le
+  pipeline — Airflow ne dit pas si le sink est idempotent), de `devtools/validation` (valider
+  des objets dans du code Python, pas des jeux de données livrés) et de `data/format` (le
+  rangement physique sur disque, qui décide de la vitesse de lecture et non de la confiance).
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
@@ -397,7 +406,13 @@ silencieuse, puisque `check_brain` l'accepterait encore.
 - `stats` — retiré le 2026-09-05, 37 notions descendues dans « Statistiques & inférence/ ».
 - `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
 
-Les dix valeurs restantes suivront, une par lot de domaine.
+`data` **reste dans le bloc** après le lot du 2026-09-05, et c'est une exception motivée :
+8 de ses 13 notions sont descendues dans « Data & pipelines/ », les 5 autres appellent un
+domaine que ce lot ne traitait pas — [[Bases de données]] pour `ORM`, `Migrations de schéma`,
+`Bases de données vectorielles` et `Index ANN — internes`, [[Outils de développement]] pour
+`Notebooks-as-code`. Retirer la valeur les rendrait invalides sans les avoir rangées.
+
+Les valeurs restantes suivront, une par lot de domaine.
 
 ## Skills perso (`categorie: skill/<sous-domaine>`)
 

@@ -2,7 +2,7 @@
 role: notion
 nom: Architecture médaillon
 alias: [medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture]
-categorie: concept/data
+categorie: data/fiabilite
 domaines: [data-eng]
 tags: [data-modeling, data-pipeline, lakehouse, data-quality]
 ---

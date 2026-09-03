@@ -2,7 +2,7 @@
 role: notion
 nom: ELT vs ETL & idempotence
 alias: [ELT, ETL, idempotence, rejouabilité, backfill, rerun]
-categorie: concept/data
+categorie: data/fiabilite
 domaines: [data-eng]
 tags: [data-pipeline, idempotence]
 ---

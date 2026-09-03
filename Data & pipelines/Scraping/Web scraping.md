@@ -2,7 +2,7 @@
 role: notion
 nom: Web scraping
 alias: [scraping, web scraping, crawling, extraction de données web, headless browsing]
-categorie: concept/data
+categorie: data/scraping
 domaines: [data-eng]
 tags: [web-scraping, data-pipeline]
 ---

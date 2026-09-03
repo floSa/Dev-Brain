@@ -4616,6 +4616,35 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Architecture médaillon.md",
+      "nom": "Architecture médaillon",
+      "alias": [
+        "medallion",
+        "médaillon",
+        "architecture médaillon",
+        "bronze silver gold",
+        "bronze/silver/gold",
+        "multi-hop architecture"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-modeling",
+        "data-pipeline",
+        "lakehouse",
+        "data-quality"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Avro.md",
       "nom": "Avro",
       "alias": [
@@ -4638,6 +4667,62 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Change Data Capture (CDC).md",
+      "nom": "Change Data Capture (CDC)",
+      "alias": [
+        "CDC",
+        "change data capture",
+        "capture de changements",
+        "log-based replication"
+      ],
+      "role": "notion",
+      "categorie": "data/ingestion",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "cdc",
+        "streaming",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Contrats de données & qualité.md",
+      "nom": "Contrats de données & qualité",
+      "alias": [
+        "data contract",
+        "contrat de données",
+        "data quality",
+        "qualité des données",
+        "freshness",
+        "fraîcheur",
+        "validation de données"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-contract",
+        "data-quality",
+        "data-validation",
+        "schema-evolution"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Data & pipelines.md",
@@ -4814,6 +4899,33 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/ELT vs ETL & idempotence.md",
+      "nom": "ELT vs ETL & idempotence",
+      "alias": [
+        "ELT",
+        "ETL",
+        "idempotence",
+        "rejouabilité",
+        "backfill",
+        "rerun"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-pipeline",
+        "idempotence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Faker.md",
@@ -5375,6 +5487,37 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Partitionnement & layout de données.md",
+      "nom": "Partitionnement & layout de données",
+      "alias": [
+        "partitionnement",
+        "partitioning",
+        "data layout",
+        "layout de données",
+        "bucketing",
+        "partition pruning",
+        "taille de fichiers",
+        "small files problem"
+      ],
+      "role": "notion",
+      "categorie": "data/format",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "partitioning",
+        "file-format",
+        "lakehouse",
+        "olap"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/SDV.md",
       "nom": "SDV",
       "alias": [
@@ -5556,6 +5699,32 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Scraping/Web scraping.md",
+      "nom": "Web scraping",
+      "alias": [
+        "scraping",
+        "web scraping",
+        "crawling",
+        "extraction de données web",
+        "headless browsing"
+      ],
+      "role": "notion",
+      "categorie": "data/scraping",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "web-scraping",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Scraping/cloudscraper.md",
       "nom": "cloudscraper",
       "alias": [
@@ -5637,6 +5806,62 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Stream processing.md",
+      "nom": "Stream processing",
+      "alias": [
+        "stream processing",
+        "traitement de flux",
+        "windowing",
+        "fenêtrage",
+        "watermarks",
+        "exactly-once",
+        "event-time"
+      ],
+      "role": "notion",
+      "categorie": "data/streaming",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "streaming",
+        "data-pipeline",
+        "idempotence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Versionnage de données.md",
+      "nom": "Versionnage de données",
+      "alias": [
+        "data versioning",
+        "versionnage de données",
+        "DVC",
+        "lakeFS",
+        "time travel",
+        "data lineage"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-versioning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Visualisation/Visualisation.md",
@@ -15444,35 +15669,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Architecture médaillon.md",
-      "nom": "Architecture médaillon",
-      "alias": [
-        "medallion",
-        "médaillon",
-        "architecture médaillon",
-        "bronze silver gold",
-        "bronze/silver/gold",
-        "multi-hop architecture"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-modeling",
-        "data-pipeline",
-        "lakehouse",
-        "data-quality"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Architectures CNN.md",
       "nom": "Architectures CNN",
       "alias": [
@@ -15973,32 +16169,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Change Data Capture (CDC).md",
-      "nom": "Change Data Capture (CDC)",
-      "alias": [
-        "CDC",
-        "change data capture",
-        "capture de changements",
-        "log-based replication"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "cdc",
-        "streaming",
-        "data-pipeline"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Chunking strategies.md",
       "nom": "Chunking strategies",
       "alias": [
@@ -16434,36 +16604,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Contrats de données & qualité.md",
-      "nom": "Contrats de données & qualité",
-      "alias": [
-        "data contract",
-        "contrat de données",
-        "data quality",
-        "qualité des données",
-        "freshness",
-        "fraîcheur",
-        "validation de données"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-contract",
-        "data-quality",
-        "data-validation",
-        "schema-evolution"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Counterfactual Regret Minimization.md",
       "nom": "Counterfactual Regret Minimization",
       "alias": [
@@ -16803,33 +16943,6 @@
         "eda",
         "feature-engineering",
         "missing-data"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/ELT vs ETL & idempotence.md",
-      "nom": "ELT vs ETL & idempotence",
-      "alias": [
-        "ELT",
-        "ETL",
-        "idempotence",
-        "rejouabilité",
-        "backfill",
-        "rerun"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-pipeline",
-        "idempotence"
       ],
       "alternatives": null,
       "complements": null,
@@ -19234,37 +19347,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Partitionnement & layout de données.md",
-      "nom": "Partitionnement & layout de données",
-      "alias": [
-        "partitionnement",
-        "partitioning",
-        "data layout",
-        "layout de données",
-        "bucketing",
-        "partition pruning",
-        "taille de fichiers",
-        "small files problem"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "partitioning",
-        "file-format",
-        "lakehouse",
-        "olap"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Perceptron et MLP.md",
       "nom": "Perceptron et MLP",
       "alias": [
@@ -20752,35 +20834,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Stream processing.md",
-      "nom": "Stream processing",
-      "alias": [
-        "stream processing",
-        "traitement de flux",
-        "windowing",
-        "fenêtrage",
-        "watermarks",
-        "exactly-once",
-        "event-time"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "streaming",
-        "data-pipeline",
-        "idempotence"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Structured outputs.md",
       "nom": "Structured outputs",
       "alias": [
@@ -21347,33 +21400,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Versionnage de données.md",
-      "nom": "Versionnage de données",
-      "alias": [
-        "data versioning",
-        "versionnage de données",
-        "DVC",
-        "lakeFS",
-        "time travel",
-        "data lineage"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-versioning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Video generation.md",
       "nom": "Video generation",
       "alias": [
@@ -21514,32 +21540,6 @@
         "timeseries",
         "model-evaluation",
         "resampling"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Web scraping.md",
-      "nom": "Web scraping",
-      "alias": [
-        "scraping",
-        "web scraping",
-        "crawling",
-        "extraction de données web",
-        "headless browsing"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "web-scraping",
-        "data-pipeline"
       ],
       "alternatives": null,
       "complements": null,

@@ -2,7 +2,7 @@
 role: notion
 nom: Partitionnement & layout de données
 alias: [partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem]
-categorie: concept/data
+categorie: data/format
 domaines: [data-eng]
 tags: [partitioning, file-format, lakehouse, olap]
 ---

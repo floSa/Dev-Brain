@@ -32,6 +32,9 @@ tags: [web-scraping, data-pipeline]
 - Des métadonnées musicales, déjà exposées par des API → [[minim]], et non du scraping.
 
 <!-- AUTO:START -->
+### Notions
+- [[Web scraping]] — domaines : data-eng
+
 ### Briques
 - [[cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
 - [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.

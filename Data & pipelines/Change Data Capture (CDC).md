@@ -2,7 +2,7 @@
 role: notion
 nom: Change Data Capture (CDC)
 alias: [CDC, change data capture, capture de changements, log-based replication]
-categorie: concept/data
+categorie: data/ingestion
 domaines: [data-eng]
 tags: [cdc, streaming, data-pipeline]
 ---

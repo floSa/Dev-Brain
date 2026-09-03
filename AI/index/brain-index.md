@@ -541,19 +541,11 @@
 - **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
 
 ### concept/data
-- **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
-- **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
-- **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
-- **ELT vs ETL & idempotence** — domaines : data-eng · alias : ELT, ETL, idempotence, rejouabilité, backfill, rerun
 - **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
 - **Migrations de schéma** — domaines : data-eng · alias : migration, migrations, schema migration, db migration
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 - **ORM** — domaines : data-eng · alias : orm, object-relational mapping, mapping objet-relationnel
-- **Partitionnement & layout de données** — domaines : data-eng · alias : partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem
-- **Stream processing** — domaines : data-eng · alias : stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time
-- **Versionnage de données** — domaines : data-eng, mlops · alias : data versioning, versionnage de données, DVC, lakeFS, time travel, data lineage
-- **Web scraping** — domaines : data-eng · alias : scraping, web scraping, crawling, extraction de données web, headless browsing
 
 ### concept/dl
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
@@ -785,6 +777,24 @@
 - **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
 - **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
 - **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
+
+### data/fiabilite
+- **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
+- **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
+- **ELT vs ETL & idempotence** — domaines : data-eng · alias : ELT, ETL, idempotence, rejouabilité, backfill, rerun
+- **Versionnage de données** — domaines : data-eng, mlops · alias : data versioning, versionnage de données, DVC, lakeFS, time travel, data lineage
+
+### data/format
+- **Partitionnement & layout de données** — domaines : data-eng · alias : partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem
+
+### data/ingestion
+- **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
+
+### data/scraping
+- **Web scraping** — domaines : data-eng · alias : scraping, web scraping, crawling, extraction de données web, headless browsing
+
+### data/streaming
+- **Stream processing** — domaines : data-eng · alias : stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time
 
 ### math/algebre-lineaire
 - **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD

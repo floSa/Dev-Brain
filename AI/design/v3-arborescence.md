@@ -772,17 +772,21 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[c]` Comparatif - Outils stats — filtre `stats/`, donc le domaine entier : il reste au
   niveau du domaine et sa vue est inchangée par la promotion des quatre sous-dossiers
 
-### Data & pipelines  ·  46 pages  ·  **migré le 2026-09-04**
+### Data & pipelines  ·  54 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
 - [x] hub écrit — hub de domaine (issu de `MOC/Categories/` par `git mv`, corps réécrit
   au gabarit §9) et les 5 sous-hubs `Scraping`, `Parsing`, `Orchestration`, `DataFrames`,
   `Visualisation`
-- [x] sous-dossiers créés — les 5 ci-dessus (35 pages) plus 11 pages au niveau du
-  domaine et 6 comparatifs. `data/eda` (3), `data/format` (3), `data/synthetique` (3),
-  `data/streaming` (1) et `data/ingestion` (1) restent sous le seuil
-- [x] notions recatégorisées — sans objet au lot 3 : les 13 notions `concept/data`
-  relèvent du lot 4, et aucune n'est propre à ce domaine (elles couvrent aussi
-  « Bases de données »)
+- [x] sous-dossiers créés — les 5 ci-dessus, **inchangés au lot 4** : `Scraping/` gagne
+  une page et reste le seul touché. `data/eda` (3), `data/format` (4),
+  `data/synthetique` (3), `data/streaming` (2), `data/ingestion` (2) et la nouvelle
+  `data/fiabilite` (4) restent sous le seuil
+- [~] notions recatégorisées — **lot 4, 2026-09-05 : 8 sur 13.** Le constat du lot 3
+  (« aucune n'est propre à ce domaine ») s'est vérifié : **5 appellent un autre
+  domaine** et n'ont PAS été déplacées, par consigne de floSa — une notion qui appelle
+  un sous-domaine hors du périmètre du lot se remonte, elle ne se déplace pas. Elles
+  restent sous `Wiki/Concepts/`, et `concept/data` reste donc dans le vocabulaire de
+  `taxonomie.md`, seule valeur `concept/*` survivante d'un domaine traité
 - [ ] fiches au nouveau gabarit — lot 6
 
 **Scraping/** — `data/scraping` — 10 pages
@@ -835,19 +839,32 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` plotly — paquet, Python / JavaScript
 - `[b]` seaborn — paquet, Python
 
-**Au niveau du domaine** — 11 pages
+**Scraping/** gagne `[n]` Web scraping — 11 pages
 
-- `[b]` Apache Iceberg — specification, Java
-- `[b]` Avro — specification, Java
-- `[b]` Faker — paquet, Python
-- `[b]` Flink — plateforme, Java
-- `[b]` Mimesis — paquet, Python
-- `[b]` Parquet — specification, Java
-- `[b]` SDV — paquet, Python
-- `[b]` connectorx — paquet, Rust
-- `[b]` missingno — paquet, Python
-- `[b]` sweetviz — paquet, Python
-- `[b]` ydata-profiling — paquet, Python
+**Au niveau du domaine** — 18 pages
+
+- `data/fiabilite` — **valeur nouvelle**, 4 pages, sous le seuil. Ce qu'un pipeline doit
+  garantir quel que soit l'outil qui l'exécute, là où `data/orchestration` porte l'outil
+  qui l'exécute : `[n]` Architecture médaillon · `[n]` Contrats de données & qualité ·
+  `[n]` ELT vs ETL & idempotence · `[n]` Versionnage de données
+- `data/format` — 4 pages : `[b]` Apache Iceberg · `[b]` Avro · `[b]` Parquet ·
+  `[n]` Partitionnement & layout de données
+- `data/synthetique` — 3 : `[b]` Faker · `[b]` Mimesis · `[b]` SDV
+- `data/eda` — 3 : `[b]` missingno · `[b]` sweetviz · `[b]` ydata-profiling
+- `data/streaming` — 2 : `[b]` Flink · `[n]` Stream processing
+- `data/ingestion` — 2 : `[b]` connectorx · `[n]` Change Data Capture (CDC)
+
+**Remontées — 5 notions `concept/data` NON déplacées**
+
+Effet de seuil mesuré pour chacune **avant** de décider (remontée 3 du pilote) : il est
+nul, aucune ne forcerait de restructuration. Ce n'est donc pas le seuil qui les retient,
+c'est la frontière de domaine.
+
+- `[n]` ORM → `database/orm` (3 → 4, sous le seuil)
+- `[n]` Migrations de schéma → `database/migration` (3 → 4, sous le seuil)
+- `[n]` Bases de données vectorielles → `database/vecteur` (12 → 13, `Vectoriel/` existe)
+- `[n]` Index ANN — internes → `database/vecteur` (→ 14, `Vectoriel/` existe)
+- `[n]` Notebooks-as-code → `devtools/notebook` (5 → 6, `Notebooks/` existe)
 
 **Comparatifs** — 6
 
@@ -1186,28 +1203,30 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 
 ## Hors arbre — à arbitrer un par un
 
-18 notions dont le domaine lui-même reste à déterminer.
+18 notions dont le domaine lui-même reste à déterminer. **8 rangées au lot 4** ;
+5 remontées (leur domaine d'accueil était hors du périmètre du lot) ; les 4 de
+sécurité IA sont traitées dans la section « Sécurité ».
 
 - [ ] `[n]` AI security — actuellement `concept/ai`
-- [ ] `[n]` Architecture médaillon — actuellement `concept/data`
+- [x] `[n]` Architecture médaillon — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` Bases de données — **résolue** : fusionnée dans le hub
   `Bases de données/Bases de données.md` (`role: hub`) au lot 3, avec
   `MOC/Categories/Bases de données.md`. Ne relève plus du lot 4.
-- [ ] `[n]` Bases de données vectorielles — actuellement `concept/data`
-- [ ] `[n]` Change Data Capture (CDC) — actuellement `concept/data`
-- [ ] `[n]` Contrats de données & qualité — actuellement `concept/data`
-- [ ] `[n]` ELT vs ETL & idempotence — actuellement `concept/data`
+- [ ] `[n]` Bases de données vectorielles — `concept/data` · **appelle `database/vecteur`**, remontée au lot 4 (12 → 13, `Vectoriel/` existe)
+- [x] `[n]` Change Data Capture (CDC) — **rangée** `data/ingestion`, lot 4
+- [x] `[n]` Contrats de données & qualité — **rangée** `data/fiabilite`, lot 4
+- [x] `[n]` ELT vs ETL & idempotence — **rangée** `data/fiabilite`, lot 4
 - [ ] `[n]` Guardrails — actuellement `concept/ai`
-- [ ] `[n]` Index ANN — internes — actuellement `concept/data`
+- [ ] `[n]` Index ANN — internes — `concept/data` · **appelle `database/vecteur`**, remontée au lot 4 (→ 14, `Vectoriel/` existe)
 - [ ] `[n]` Jailbreaking and defenses — actuellement `concept/ai`
-- [ ] `[n]` Migrations de schéma — actuellement `concept/data`
-- [ ] `[n]` Notebooks-as-code — actuellement `concept/data`
-- [ ] `[n]` ORM — actuellement `concept/data`
-- [ ] `[n]` Partitionnement & layout de données — actuellement `concept/data`
+- [ ] `[n]` Migrations de schéma — `concept/data` · **appelle `database/migration`**, remontée au lot 4 (3 → 4, sous le seuil)
+- [ ] `[n]` Notebooks-as-code — `concept/data` · **appelle `devtools/notebook`**, remontée au lot 4 (5 → 6, `Notebooks/` existe)
+- [ ] `[n]` ORM — `concept/data` · **appelle `database/orm`**, remontée au lot 4 (3 → 4, sous le seuil)
+- [x] `[n]` Partitionnement & layout de données — **rangée** `data/format`, lot 4
 - [ ] `[n]` Prompt injection — actuellement `concept/ai`
-- [ ] `[n]` Stream processing — actuellement `concept/data`
-- [ ] `[n]` Versionnage de données — actuellement `concept/data`
-- [ ] `[n]` Web scraping — actuellement `concept/data`
+- [x] `[n]` Stream processing — **rangée** `data/streaming`, lot 4
+- [x] `[n]` Versionnage de données — **rangée** `data/fiabilite`, lot 4
+- [x] `[n]` Web scraping — **rangée** `data/scraping`, lot 4
 
 9 comparatifs ne filtrent pas sur `categorie` — domaine à poser à la main. **Les 9 sont
 traités** depuis la clôture du 2026-09-05.

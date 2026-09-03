@@ -1743,7 +1743,7 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
@@ -1757,8 +1757,8 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
-- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Faker]], [[Flink]], [[Mimesis]], [[Orchestration]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Data Engineering]], [[Data Science]], [[Tabulaire]]
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Faker]], [[Flink]], [[Index ANN — internes]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Data Engineering]], [[Data Science]], [[MLOps]], [[Tabulaire]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -1837,7 +1837,7 @@
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data Engineering]], [[Deep learning]], [[DevOps]], [[Données (notions)]], [[LLM (notions)]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[Données (notions)]], [[LLM (notions)]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Médias  ·  hub
@@ -1873,7 +1873,7 @@
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Data Engineering]], [[DevOps]], [[ML Engineering]]
+- liens entrants : [[AI Engineering]], [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[ML Engineering]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -2163,7 +2163,7 @@
 ### Bases de données vectorielles  ·  notion
 - tags : `vector-db`, `embeddings`, `semantic-search`, `rag`
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
-- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
+- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -2208,7 +2208,7 @@
 ### Change Data Capture (CDC)  ·  notion
 - tags : `cdc`, `streaming`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
-- liens entrants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Stream processing]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Stream processing]], [[Versionnage de données]]
 
 ### Chaînes de Markov  ·  notion
 - tags : `stochastic-process`, `markov`, `probability`
@@ -2608,7 +2608,7 @@
 ### Index ANN — internes  ·  notion
 - tags : `ann`, `vector-db`, `embeddings`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[embeddings]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Faiss]], [[ScaNN]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[ScaNN]], [[hnswlib]], [[k-NN]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -2813,7 +2813,7 @@
 ### Migrations de schéma  ·  notion
 - tags : `migration`, `relational`
 - liens sortants : [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[SQLAlchemy]]
-- liens entrants : [[Alembic]], [[Bases de données]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[Versionnage de données]]
+- liens entrants : [[Alembic]], [[Bases de données]], [[Contrats de données & qualité]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[Versionnage de données]]
 
 ### Mise à l'échelle  ·  notion
 - tags : `feature-engineering`
@@ -2923,7 +2923,7 @@
 ### Notebooks-as-code  ·  notion
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[papermill]], [[pytest]], [[uv]]
-- liens entrants : [[Marimo]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[missingno]], [[papermill]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Data & pipelines]], [[Marimo]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[missingno]], [[papermill]], [[sweetviz]], [[ydata-profiling]]
 
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
@@ -2968,7 +2968,7 @@
 ### ORM  ·  notion
 - tags : `orm`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - ORM]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
-- liens entrants : [[Bases de données]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
+- liens entrants : [[Bases de données]], [[Data & pipelines]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
 
 ### PAC learning  ·  notion
 - tags : `learning-theory`, `pac-learning`
@@ -3448,7 +3448,7 @@
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
 - liens sortants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Notebooks-as-code]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Notebooks-as-code]]
 
 ### Video generation  ·  notion
 - tags : `generative-model`, `video-generation`, `diffusion`, `multimodal`
