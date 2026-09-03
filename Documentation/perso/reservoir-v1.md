@@ -30,38 +30,46 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 
 ---
 
-# PARTIE A — Services & outils (galaxie `Dev`)
+# PARTIE A — Services & outils (`role: brique`)
+
+> Les valeurs de `categorie:` de cette partie ont été **francisées** au fil des lots v2/v3 :
+> `database/relational` est devenu `database/relationnel`, le préfixe `tooling/*` a été
+> éclaté sur `database/`, `data/`, `stats/` et `devtools/`, et `ml/framework` /
+> `llm/framework` ont été remplacés par des sous-domaines qui disent le métier de la brique.
+> Les valeurs ci-dessous sont celles que portent réellement les pages listées, relevées dans
+> `AI/index/brain-index.json` le 2026-09-05 — pas celles de la v1.
 
 ## Bases de données → `database/*`
 
-**Relationnelles** — `database/relational`
+**Relationnelles** — `database/relationnel`
 - ✅ **Postgres** — relationnel de référence, extensible (JSONB, pgvector).
 - ✅ **MariaDB** — fork communautaire de MySQL.
 - ✅ **CockroachDB** — relationnel distribué compatible Postgres.
 
 
-**Document / clé-valeur / wide-column** — `database/document`, `keyvalue`, `wide-column`
+**Document / clé-valeur** — `database/document`, `database/cle-valeur`
+(`wide-column` a fusionné dans `database/cle-valeur` : Cassandra y est rangée.)
 - ✅ **MongoDB** — base documents JSON.
 - ✅ **Redis** — clé-valeur en mémoire, cache et structures.
 - ✅ **Apache Cassandra** — wide-column distribué, écriture massive.
 
-**Graphes** — `database/graph`
+**Graphes** — `database/graphe`
 - ✅ **Neo4j** — base de graphes de référence (Cypher).
 - ✅ **Nebula Graph** — base de graphes distribuée.
 
-**Colonnes / analytique** — `database/columnar`
+**Colonnes / analytique** — `database/analytique`
 - ✅ **DuckDB** — OLAP embarqué, le « SQLite analytique ».
 - ✅ **ClickHouse** — colonnaire analytique très rapide.
 
-**Séries temporelles** — `database/timeseries`
+**Séries temporelles** — `database/series-temporelles`
 - ✅ **InfluxDB** — base de séries temporelles native.
 - ✅ **TimescaleDB** — extension séries temporelles de Postgres.
 
-**Recherche** — `database/search`
+**Recherche** — `database/recherche`
 - ✅ **Elasticsearch** — moteur de recherche / indexation texte.
 
 
-**Vectorielles** — `database/vector`
+**Vectorielles** — `database/vecteur`
 - ✅ **pgvector** — extension vectorielle de Postgres.
 - ✅ **Qdrant** — base vectorielle open-source (Rust).
 - ✅ **Weaviate** — base vectorielle avec schéma et modules.
@@ -84,7 +92,8 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Temporal** — moteur de workflows durables.
 
 
-**Streaming / lakehouse / formats** — `data/streaming`, `lakehouse`, `format`
+**Streaming / formats** — `data/streaming`, `data/format`
+(`lakehouse` n'a jamais été une valeur : Iceberg est rangé en `data/format`.)
 - ✅ **Flink** — traitement de flux temps réel.
 - ✅ **Apache Iceberg** — format de table lakehouse transactionnel.
 - ✅ **Parquet** — format colonnaire sur disque.
@@ -100,7 +109,9 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 
 ## Machine Learning & MLOps → `ml/*`, `compute/*`
 
-**Frameworks de modélisation** — `ml/framework`
+**Frameworks de modélisation** — `ml/socle`, `ml/tabulaire`, `ml/apprentissage-profond`,
+`ml/hub`, `ml/series-temporelles`, `ml/non-supervise`, `stats/inference`
+(`ml/framework` disait la forme du paquet, pas son métier : le bloc s'est éclaté.)
 - ✅ **Scikit-Learn** — ML classique de référence.
 - ✅ **XGBoost** — gradient boosting optimisé.
 - ✅ **LightGBM** — boosting rapide gros volumes.
@@ -115,7 +126,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **neuralforecast** — forecasting par réseaux de neurones.
 - ✅ **statsforecast** — forecasting statistique rapide.
 - ✅ **Prophet** — forecasting additif grand public (Meta).
-- ✅ **lifelines** — analyse de survie. ⚠️ ou `tooling/stats`.
+- ✅ **lifelines** — analyse de survie. Rangée en `stats/inference`.
 - ✅ **hdbscan** — implémentation HDBSCAN. ⚠️ lib du concept HDBSCAN.
 - ✅ **umap-learn** — réduction de dimension UMAP. ⚠️ lib.
 
@@ -147,14 +158,14 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Flyte** — pipelines ML/data sur K8s.
 - ✅ **Feast** — feature store open-source.
 
-**Calcul distribué** — `compute/distributed`
+**Calcul distribué** — `compute/distribue`, `compute/gpu`
 - ✅ **Ray** — calcul distribué Python générique.
 - ✅ **Dask** — parallélisme Python (pandas/numpy à l'échelle).
 - ✅ **Spark** — moteur big data distribué.
-- ✅ **CuPy** — numpy sur GPU. ⚠️ ou `tooling/data`.
+- ✅ **CuPy** — numpy sur GPU. Rangée en `compute/gpu`.
 
 
-**Exécution locale / serving** — `llm/local`
+**Exécution locale / serving** — `llm/runtime`
 - ✅ **Ollama** — exécution locale de LLM simplifiée.
 - ✅ **llama.cpp** — inférence LLM CPU/GPU en C++.
 - ✅ **vLLM** — serving LLM haut débit (PagedAttention).
@@ -164,7 +175,9 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **LM Studio** — interface bureau pour LLM locaux.
 - ✅ **text-generation-webui** — UI web pour LLM locaux.
 
-**Frameworks d'applications LLM** — `llm/framework`
+**Frameworks d'applications LLM** — `llm/socle`, `llm/rag`, `llm/agents`,
+`llm/sortie-structuree`, `llm/passerelle`
+(même éclatement que `ml/framework` : le sous-domaine dit ce que la brique fait.)
 - ✅ **LangChain** — framework d'apps LLM (chaînes, outils).
 - ✅ **LlamaIndex** — framework RAG / indexation.
 - ✅ **LangGraph** — graphes d'agents stateful.
@@ -182,7 +195,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **DeepEval** — tests unitaires pour LLM.
 - ✅ **TruLens** — évaluation et traçage d'apps LLM.
 
-**Observabilité LLM** — `llm/observability`
+**Observabilité LLM** — `llm/observabilite`
 - ✅ **Langfuse** — traçage et analytics LLM open-source.
 - ✅ **LangSmith** — observabilité (écosystème LangChain).
 - ✅ **Phoenix Arize** — observabilité et eval LLM/ML.
@@ -190,26 +203,27 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 
 ## Backend, UI, DevOps, stockage, observabilité
 
-**Frameworks backend** — `framework/backend`
+**Frameworks backend** — `web/backend`
 - ✅ **FastAPI** — framework API Python async.
 - ✅ **Uvicorn** — serveur ASGI (sert FastAPI).
 
-**ORM** — `framework/orm`
+**ORM** — `database/orm`, `database/driver`
 - ✅ **Prisma** — ORM TypeScript typé.
 - ✅ **SQLAlchemy** — ORM/toolkit SQL Python de référence.
 - ✅ **psycopg2** — ORM/toolkit SQL Python Postgres
 
-**Applications data / démos** — `ui/data-app`, `ui/ml-demo`
+**Applications data / démos** — `ui/data-app`
+(`ui/ml-demo` n'existe plus : Gradio est rangé en `ui/data-app` comme les autres.)
 - ✅ **Streamlit** — apps data en Python pur.
 - ✅ **Dash** — apps analytiques (Plotly).
 - ✅ **Shiny for Python** — apps réactives (Posit).
 - ✅ **Gradio** — démos de modèles ML en quelques lignes.
 
-**DevOps** — `devops/container`, `devops/ci`
+**DevOps** — `devops/conteneur`, `devops/ci`
 - ✅ **Docker** — conteneurisation, packaging reproductible.
 - ✅ **GitHub Actions** — CI/CD intégrée à GitHub.
 
-**Stockage objet** — `storage`
+**Stockage objet** — `storage/objet`
 - ✅ **MinIO** — stockage objet S3-compatible auto-hébergé.
 - ✅ **AWS S3** — stockage objet de référence.
 - ✅ **Cloudflare R2** — stockage objet sans frais de sortie.
@@ -217,31 +231,34 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Garage** — stockage objet S3-compatible auto-hébergé.
 - ✅ **SeaweedFS** — stockage objet S3-compatible auto-hébergé.
 
-**Observabilité** — `observability/metric`, `observability/log`
+**Observabilité** — `observability/supervision`
 - ✅ **Grafana** — dashboards de métriques.
 - ✅ **Loki** — agrégation de logs (Grafana).
 
-## Outillage Python → `tooling/*`
+## Outillage Python → `database/migration`, `data/*`, `stats/*`, `devtools/*`
 
-**Migrations** — `tooling/migration`
+> Le préfixe `tooling/*` n'existe plus. Il rangeait par « c'est un outil Python »,
+> ce qui n'est pas un domaine ; ses pages se rangent par leur sujet.
+
+**Migrations** — `database/migration`
 - ✅ **Flyway** — migrations SQL versionnées (JVM).
 - ✅ **Liquibase** — migrations multi-format.
 - ✅ **Alembic** — migrations de schéma (SQLAlchemy).
 
-**Manipulation de données** — `tooling/data`
+**Manipulation de données** — `data/tableau`
 - ✅ **pandas** — dataframes Python de référence.
 - ✅ **Polars** — dataframes rapides (Rust, lazy).
 - ✅ **numpy** — calcul tableau N-dimensionnel.
 - ✅ **Modin** — pandas parallélisé.
 
-**Visualisation** — `tooling/viz`
+**Visualisation** — `data/viz`
 - ✅ **matplotlib** — base de la viz Python.
 - ✅ **seaborn** — viz statistique sur matplotlib.
 - ✅ **plotly** — viz interactive.
 - ✅ **altair** — viz déclarative (Vega-Lite).
 - ✅ **bokeh** — viz interactive web.
 
-**Statistiques** — `tooling/stats`
+**Statistiques** — `stats/inference`, `stats/exploratoire`, `stats/bayesien`, `stats/causal`
 - ✅ **scipy.stats** — lois et tests statistiques.
 - ✅ **statsmodels** — modélisation statistique (R-like).
 - ✅ **pingouin** — tests statistiques simples et lisibles.
@@ -252,7 +269,8 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **ArviZ** — diagnostic et viz de modèles bayésiens.
 - ✅ **CausalImpact** — impact causal par séries temporelles.
 
-**Config / packaging / tests** — `tooling/package`, `tooling/test`, `tooling/lint`
+**Config / packaging / tests** — `devtools/paquet`, `devtools/config`,
+`devtools/validation`, `devtools/qualite`, `devtools/test`
 - ✅ **uv** — gestionnaire de paquets/venv Python ultra-rapide.
 - ✅ **pip** — installeur de paquets historique.
 - ✅ **Pydantic** — validation de données typée.
