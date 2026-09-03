@@ -129,6 +129,21 @@ SUB_LABEL = {
     "ml/tracking": "Suivi d'expériences",
     "ml/interpretabilite": "Interprétabilité",
     "ml/tabulaire": "Tabulaire",
+    # Les trois suivants naissent au lot 4, avec la DERNIÈRE famille de notions
+    # (`concept/ml`, 67). Ce sont les seules promotions que ce lot paie : la
+    # remontée 35 en annonçait six, et `ml/hyperopt` (4), `ml/monitoring` (3),
+    # `ml/feature-store` (2) et `ml/embeddings` (2) ne franchissent rien.
+    # Les trois libellés s'écartent tous du nom de leur catégorie, et deux y sont
+    # forcés par les ensembles de la remontée 26 :
+    #  - « Évaluation » est le nom de fichier du hub `LLM & IA générative/Évaluation/`
+    #    (ensemble nº 3) — un lien nu ne résoudrait plus de façon déterministe ;
+    #  - « Non supervisé » plutôt qu'« Apprentissage non supervisé », qui est le nom
+    #    d'une NOTION VIVANT DANS LE DOSSIER (ensemble nº 4) ;
+    #  - « Socle » reprend le mot du corps du hub de domaine, qui appelle cette
+    #    population « le socle généraliste » depuis le lot 3.
+    "ml/socle": "Socle",
+    "ml/eval": "Évaluation de modèles",
+    "ml/non-supervise": "Non supervisé",
     # Statistiques & inférence — « ### Statistiques & inférence · 47 pages », lot 4.
     # Les libellés ne recopient pas le nom de la catégorie, et deux fois exprès :
     # « Inférence » est déjà un alias du hub « Serving » (même rôle → avertissement R5)

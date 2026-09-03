@@ -2,7 +2,7 @@
 role: notion
 nom: Régression logistique
 alias: [Logistic regression, Régression logit]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [classification, linear-model, supervised, maximum-likelihood]
 ---

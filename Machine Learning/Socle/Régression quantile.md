@@ -2,7 +2,7 @@
 role: notion
 nom: Régression quantile
 alias: [Quantile regression, QuantileRegressor, Perte pinball, Pinball loss, Régression médiane, Intervalles de prédiction]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [regression, supervised, linear-model, non-parametric]
 ---

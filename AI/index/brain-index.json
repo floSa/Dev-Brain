@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 714,
+  "count": 715,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -296,6 +296,7 @@
       "Régression et classification multi-sorties",
       "Régression logistique",
       "SVM",
+      "Socle",
       "Types de données et choix de modèle",
       "imbalanced-learn",
       "k-NN"
@@ -1313,7 +1314,8 @@
       "Régression linéaire",
       "Régression logistique",
       "Régression quantile",
-      "Régularisation"
+      "Régularisation",
+      "Socle"
     ],
     "linear-programming": [
       "Mathématiques",
@@ -1649,6 +1651,7 @@
       "Flyte",
       "Machine Learning",
       "Metaflow",
+      "Socle",
       "Suivi d'expériences",
       "ZenML"
     ],
@@ -2223,6 +2226,7 @@
       "Régression linéaire",
       "Régression quantile",
       "SVM",
+      "Socle",
       "Types de données et choix de modèle",
       "k-NN",
       "lifelines"
@@ -2604,6 +2608,7 @@
       "SHAP",
       "SVM",
       "Scikit-Learn",
+      "Socle",
       "Tabulaire",
       "Types de données et choix de modèle",
       "Validation croisée",
@@ -13630,60 +13635,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/River.md",
-      "nom": "River",
-      "alias": [
-        "riverml",
-        "river-ml",
-        "online-ml"
-      ],
-      "role": "brique",
-      "categorie": "ml/socle",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow.",
-      "tags": [
-        "streaming",
-        "concept-drift"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Scikit-Learn.md",
-      "nom": "Scikit-Learn",
-      "alias": [
-        "sklearn",
-        "scikit-learn"
-      ],
-      "role": "brique",
-      "categorie": "ml/socle",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.",
-      "tags": [
-        "supervised",
-        "unsupervised",
-        "dimensionality-reduction",
-        "model-evaluation"
-      ],
-      "alternatives": [
-        "[[XGBoost]]",
-        "[[LightGBM]]",
-        "[[CatBoost]]",
-        "[[Featuretools]]",
-        "[[category_encoders]]",
-        "[[Optuna]]",
-        "[[hdbscan]]",
-        "[[umap-learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Serving/BentoML.md",
       "nom": "BentoML",
       "alias": [
@@ -13970,6 +13921,603 @@
       ],
       "complements": [],
       "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Socle/Analyse discriminante.md",
+      "nom": "Analyse discriminante",
+      "alias": [
+        "LDA",
+        "QDA",
+        "Linear Discriminant Analysis",
+        "Quadratic Discriminant Analysis",
+        "Analyse discriminante linéaire",
+        "Analyse factorielle discriminante",
+        "AFD",
+        "LinearDiscriminantAnalysis"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "bayesian",
+        "linear-model"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Apprentissage supervisé.md",
+      "nom": "Apprentissage supervisé",
+      "alias": [
+        "Supervised learning",
+        "Apprentissage supervise",
+        "Modélisation supervisée"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Classification.md",
+      "nom": "Classification",
+      "alias": [
+        "Classification supervisée",
+        "Classifieur",
+        "Classifier",
+        "Classement"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "classification",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/GAM.md",
+      "nom": "GAM",
+      "alias": [
+        "Modèles additifs généralisés",
+        "Generalized Additive Model",
+        "Modèle additif généralisé"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "linear-model",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/GLM.md",
+      "nom": "GLM",
+      "alias": [
+        "Modèles linéaires généralisés",
+        "Generalized Linear Model",
+        "Modèle linéaire généralisé"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "linear-model",
+        "supervised",
+        "maximum-likelihood"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Gaussian Process.md",
+      "nom": "Gaussian Process",
+      "alias": [
+        "GP",
+        "Processus gaussien",
+        "Régression par processus gaussien",
+        "GaussianProcessRegressor",
+        "Krigeage",
+        "Kriging"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "regression",
+        "bayesian",
+        "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Naive Bayes.md",
+      "nom": "Naive Bayes",
+      "alias": [
+        "Bayésien naïf",
+        "Classifieur bayésien naïf",
+        "GaussianNB",
+        "MultinomialNB",
+        "BernoulliNB",
+        "ComplementNB"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "bayesian"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Perceptron et MLP.md",
+      "nom": "Perceptron et MLP",
+      "alias": [
+        "Perceptron",
+        "MLP",
+        "Multi-Layer Perceptron",
+        "Perceptron multicouche",
+        "Réseau de neurones",
+        "Feedforward network",
+        "MLPClassifier"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "deep-learning",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/River.md",
+      "nom": "River",
+      "alias": [
+        "riverml",
+        "river-ml",
+        "online-ml"
+      ],
+      "role": "brique",
+      "categorie": "ml/socle",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learn_one/predict_one) couvrant classification, régression, clustering, détection d'anomalies et de dérive ; issu de la fusion creme + scikit-multiflow.",
+      "tags": [
+        "streaming",
+        "concept-drift"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Socle/Régression et classification multi-sorties.md",
+      "nom": "Régression et classification multi-sorties",
+      "alias": [
+        "multi-output",
+        "multioutput",
+        "multi-sorties",
+        "multi-target",
+        "multi-label",
+        "MultiOutputRegressor",
+        "MultiOutputClassifier",
+        "RegressorChain",
+        "ClassifierChain"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "classification",
+        "multi-output",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Régression linéaire.md",
+      "nom": "Régression linéaire",
+      "alias": [
+        "Linear regression",
+        "OLS",
+        "Moindres carrés ordinaires"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "linear-model",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Régression logistique.md",
+      "nom": "Régression logistique",
+      "alias": [
+        "Logistic regression",
+        "Régression logit"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "classification",
+        "linear-model",
+        "supervised",
+        "maximum-likelihood"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Régression quantile.md",
+      "nom": "Régression quantile",
+      "alias": [
+        "Quantile regression",
+        "QuantileRegressor",
+        "Perte pinball",
+        "Pinball loss",
+        "Régression médiane",
+        "Intervalles de prédiction"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "supervised",
+        "linear-model",
+        "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Régression.md",
+      "nom": "Régression",
+      "alias": [
+        "Regression",
+        "Régression supervisée",
+        "Modélisation de cible continue"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regression",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Régularisation.md",
+      "nom": "Régularisation",
+      "alias": [
+        "Ridge",
+        "Lasso",
+        "ElasticNet",
+        "Pénalisation L1/L2",
+        "Regularization"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "regularization",
+        "linear-model",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/SVM.md",
+      "nom": "SVM",
+      "alias": [
+        "Support Vector Machine",
+        "Machine à vecteurs de support",
+        "Séparateur à vaste marge",
+        "SVC",
+        "SVR",
+        "Astuce du noyau",
+        "Kernel trick"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Scikit-Learn.md",
+      "nom": "Scikit-Learn",
+      "alias": [
+        "sklearn",
+        "scikit-learn"
+      ],
+      "role": "brique",
+      "categorie": "ml/socle",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.",
+      "tags": [
+        "supervised",
+        "unsupervised",
+        "dimensionality-reduction",
+        "model-evaluation"
+      ],
+      "alternatives": [
+        "[[XGBoost]]",
+        "[[LightGBM]]",
+        "[[CatBoost]]",
+        "[[Featuretools]]",
+        "[[category_encoders]]",
+        "[[Optuna]]",
+        "[[hdbscan]]",
+        "[[umap-learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Socle/Socle.md",
+      "nom": "Socle",
+      "alias": [
+        "Socle ML",
+        "Socle généraliste"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Cadrer le problème avant de choisir l'algorithme, puis la boîte classique qui le résout — celle qui ne suppose rien de la nature des données.",
+      "tags": [
+        "supervised",
+        "classification",
+        "regression",
+        "linear-model",
+        "ml-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Systèmes de recommandation.md",
+      "nom": "Systèmes de recommandation",
+      "alias": [
+        "recommender systems",
+        "recsys",
+        "filtrage collaboratif",
+        "collaborative filtering",
+        "factorisation matricielle",
+        "matrix factorization",
+        "two-tower"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "recommender-systems",
+        "ranking",
+        "embeddings",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Types de données et choix de modèle.md",
+      "nom": "Types de données et choix de modèle",
+      "alias": [
+        "Choix de modèle",
+        "Model selection",
+        "Quel modèle choisir",
+        "Aiguillage modèle",
+        "Cheat sheet modèles",
+        "Types de variables"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "unsupervised",
+        "classification",
+        "regression",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/k-NN.md",
+      "nom": "k-NN",
+      "alias": [
+        "KNN",
+        "k plus proches voisins",
+        "k-Nearest Neighbors",
+        "Plus proches voisins",
+        "KNeighborsClassifier",
+        "Apprentissage paresseux",
+        "Lazy learning"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Suivi d'expériences/Aim.md",
@@ -20183,38 +20731,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Analyse discriminante.md",
-      "nom": "Analyse discriminante",
-      "alias": [
-        "LDA",
-        "QDA",
-        "Linear Discriminant Analysis",
-        "Quadratic Discriminant Analysis",
-        "Analyse discriminante linéaire",
-        "Analyse factorielle discriminante",
-        "AFD",
-        "LinearDiscriminantAnalysis"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "classification",
-        "bayesian",
-        "linear-model"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Apprentissage non supervisé.md",
       "nom": "Apprentissage non supervisé",
       "alias": [
@@ -20233,32 +20749,6 @@
       "tags": [
         "unsupervised",
         "clustering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Apprentissage supervisé.md",
-      "nom": "Apprentissage supervisé",
-      "alias": [
-        "Supervised learning",
-        "Apprentissage supervise",
-        "Modélisation supervisée"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "classification",
-        "regression"
       ],
       "alternatives": null,
       "complements": null,
@@ -20435,32 +20925,6 @@
       "pitch": null,
       "tags": [
         "model-evaluation",
-        "classification",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification.md",
-      "nom": "Classification",
-      "alias": [
-        "Classification supervisée",
-        "Classifieur",
-        "Classifier",
-        "Classement"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
         "classification",
         "supervised"
       ],
@@ -20910,59 +21374,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/GAM.md",
-      "nom": "GAM",
-      "alias": [
-        "Modèles additifs généralisés",
-        "Generalized Additive Model",
-        "Modèle additif généralisé"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "linear-model",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/GLM.md",
-      "nom": "GLM",
-      "alias": [
-        "Modèles linéaires généralisés",
-        "Generalized Linear Model",
-        "Modèle linéaire généralisé"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "linear-model",
-        "supervised",
-        "maximum-likelihood"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Gaussian Mixture Models (GMM).md",
       "nom": "Gaussian Mixture Models (GMM)",
       "alias": [
@@ -20984,36 +21395,6 @@
         "clustering",
         "unsupervised",
         "maximum-likelihood"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Gaussian Process.md",
-      "nom": "Gaussian Process",
-      "alias": [
-        "GP",
-        "Processus gaussien",
-        "Régression par processus gaussien",
-        "GaussianProcessRegressor",
-        "Krigeage",
-        "Kriging"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "regression",
-        "bayesian",
-        "non-parametric"
       ],
       "alternatives": null,
       "complements": null,
@@ -21371,35 +21752,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Naive Bayes.md",
-      "nom": "Naive Bayes",
-      "alias": [
-        "Bayésien naïf",
-        "Classifieur bayésien naïf",
-        "GaussianNB",
-        "MultinomialNB",
-        "BernoulliNB",
-        "ComplementNB"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "classification",
-        "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/One-Class SVM.md",
       "nom": "One-Class SVM",
       "alias": [
@@ -21450,37 +21802,6 @@
         "hyperparameter-tuning",
         "model-evaluation",
         "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Perceptron et MLP.md",
-      "nom": "Perceptron et MLP",
-      "alias": [
-        "Perceptron",
-        "MLP",
-        "Multi-Layer Perceptron",
-        "Perceptron multicouche",
-        "Réseau de neurones",
-        "Feedforward network",
-        "MLPClassifier"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "deep-learning",
-        "classification",
-        "regression"
       ],
       "alternatives": null,
       "complements": null,
@@ -21613,234 +21934,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Régression et classification multi-sorties.md",
-      "nom": "Régression et classification multi-sorties",
-      "alias": [
-        "multi-output",
-        "multioutput",
-        "multi-sorties",
-        "multi-target",
-        "multi-label",
-        "MultiOutputRegressor",
-        "MultiOutputClassifier",
-        "RegressorChain",
-        "ClassifierChain"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "classification",
-        "multi-output",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Régression linéaire.md",
-      "nom": "Régression linéaire",
-      "alias": [
-        "Linear regression",
-        "OLS",
-        "Moindres carrés ordinaires"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "linear-model",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Régression logistique.md",
-      "nom": "Régression logistique",
-      "alias": [
-        "Logistic regression",
-        "Régression logit"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "classification",
-        "linear-model",
-        "supervised",
-        "maximum-likelihood"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Régression quantile.md",
-      "nom": "Régression quantile",
-      "alias": [
-        "Quantile regression",
-        "QuantileRegressor",
-        "Perte pinball",
-        "Pinball loss",
-        "Régression médiane",
-        "Intervalles de prédiction"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "supervised",
-        "linear-model",
-        "non-parametric"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Régression.md",
-      "nom": "Régression",
-      "alias": [
-        "Regression",
-        "Régression supervisée",
-        "Modélisation de cible continue"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regression",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Régularisation.md",
-      "nom": "Régularisation",
-      "alias": [
-        "Ridge",
-        "Lasso",
-        "ElasticNet",
-        "Pénalisation L1/L2",
-        "Regularization"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "regularization",
-        "linear-model",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/SVM.md",
-      "nom": "SVM",
-      "alias": [
-        "Support Vector Machine",
-        "Machine à vecteurs de support",
-        "Séparateur à vaste marge",
-        "SVC",
-        "SVR",
-        "Astuce du noyau",
-        "Kernel trick"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "classification",
-        "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Systèmes de recommandation.md",
-      "nom": "Systèmes de recommandation",
-      "alias": [
-        "recommender systems",
-        "recsys",
-        "filtrage collaboratif",
-        "collaborative filtering",
-        "factorisation matricielle",
-        "matrix factorization",
-        "two-tower"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "recommender-systems",
-        "ranking",
-        "embeddings",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Sélection de variables.md",
       "nom": "Sélection de variables",
       "alias": [
@@ -21860,37 +21953,6 @@
       ],
       "pitch": null,
       "tags": [
-        "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Types de données et choix de modèle.md",
-      "nom": "Types de données et choix de modèle",
-      "alias": [
-        "Choix de modèle",
-        "Model selection",
-        "Quel modèle choisir",
-        "Aiguillage modèle",
-        "Cheat sheet modèles",
-        "Types de variables"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "unsupervised",
-        "classification",
-        "regression",
         "feature-engineering"
       ],
       "alternatives": null,
@@ -21947,36 +22009,6 @@
         "embeddings",
         "semantic-search",
         "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/k-NN.md",
-      "nom": "k-NN",
-      "alias": [
-        "KNN",
-        "k plus proches voisins",
-        "k-Nearest Neighbors",
-        "Plus proches voisins",
-        "KNeighborsClassifier",
-        "Apprentissage paresseux",
-        "Lazy learning"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "classification",
-        "regression"
       ],
       "alternatives": null,
       "complements": null,

@@ -2,7 +2,7 @@
 role: notion
 nom: GLM
 alias: [Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [regression, linear-model, supervised, maximum-likelihood]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Apprentissage supervisé
 alias: [Supervised learning, Apprentissage supervise, Modélisation supervisée]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, classification, regression]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Régression et classification multi-sorties
 alias: [multi-output, multioutput, multi-sorties, multi-target, multi-label, MultiOutputRegressor, MultiOutputClassifier, RegressorChain, ClassifierChain]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci]
 tags: [regression, classification, multi-output, supervised]
 ---

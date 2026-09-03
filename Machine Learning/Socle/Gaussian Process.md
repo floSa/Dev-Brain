@@ -2,7 +2,7 @@
 role: notion
 nom: Gaussian Process
 alias: [GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, regression, bayesian, non-parametric]
 ---

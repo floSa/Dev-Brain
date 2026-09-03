@@ -2,7 +2,7 @@
 role: notion
 nom: Perceptron et MLP
 alias: [Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, deep-learning, classification, regression]
 ---

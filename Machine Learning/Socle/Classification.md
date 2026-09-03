@@ -2,7 +2,7 @@
 role: notion
 nom: Classification
 alias: [Classification supervisée, Classifieur, Classifier, Classement]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [classification, supervised]
 ---

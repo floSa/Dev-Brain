@@ -2,7 +2,7 @@
 role: notion
 nom: Naive Bayes
 alias: [Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, classification, bayesian]
 ---

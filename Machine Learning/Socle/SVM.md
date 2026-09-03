@@ -2,7 +2,7 @@
 role: notion
 nom: SVM
 alias: [Support Vector Machine, Machine à vecteurs de support, Séparateur à vaste marge, SVC, SVR, Astuce du noyau, Kernel trick]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, classification, regression]
 ---

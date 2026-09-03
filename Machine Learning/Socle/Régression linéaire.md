@@ -2,7 +2,7 @@
 role: notion
 nom: Régression linéaire
 alias: [Linear regression, OLS, Moindres carrés ordinaires]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [regression, linear-model, supervised]
 ---

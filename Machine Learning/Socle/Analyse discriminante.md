@@ -2,7 +2,7 @@
 role: notion
 nom: Analyse discriminante
 alias: [LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [supervised, classification, bayesian, linear-model]
 ---

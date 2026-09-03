@@ -2,7 +2,7 @@
 role: notion
 nom: Régularisation
 alias: [Ridge, Lasso, ElasticNet, Pénalisation L1/L2, Regularization]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [regularization, linear-model, supervised]
 ---

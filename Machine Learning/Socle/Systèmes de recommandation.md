@@ -2,7 +2,7 @@
 role: notion
 nom: Systèmes de recommandation
 alias: [recommender systems, recsys, filtrage collaboratif, collaborative filtering, factorisation matricielle, matrix factorization, two-tower]
-categorie: concept/ml
+categorie: ml/socle
 domaines: [data-sci, ml-eng]
 tags: [recommender-systems, ranking, embeddings, retrieval]
 ---
