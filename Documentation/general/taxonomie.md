@@ -395,7 +395,7 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl, rl, ts, nlp, devops, llm}
+concept/{ml, dl, rl, ts, nlp, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -422,6 +422,16 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   2026-09-05 — « la valeur reste tant que ces 5 ne sont pas rangées » — est levée : elles
   le sont. Le passage s'est fait **par domaine d'accueil** et non par famille d'origine,
   comme la remontée 15 le suggérait pour les résidus.
+- `devops` — retiré le 2026-09-05, et il n'a **jamais** porté de page : l'audit du
+  2026-09-02 le listait déjà parmi les 26 valeurs « déclarées mais jamais utilisées ».
+  La règle ci-dessus le vise autant qu'une valeur vidée par un lot — une valeur sans page
+  autorise une rechute silencieuse, qu'elle ait été vidée ou qu'elle soit née vide.
+  L'hypothèse « emplacement réservé » venait de `Documentation/perso/reservoir-v1.md`, qui
+  envoie « MLOps & monitoring » vers `concept/ml` **ou** `concept/devops` ; elle ne tient
+  pas, parce que le réservoir v1 est hors du vault et que le jour où l'une de ses pages
+  reviendra, elle se rangera par son **domaine** comme tout le reste — `ml/monitoring` pour
+  la dérive de modèle, `devops/*` pour le déploiement — et non sur un vocabulaire de
+  galaxie qui n'existe plus.
 
 Les valeurs restantes suivront, une par lot de domaine.
 

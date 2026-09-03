@@ -574,10 +574,8 @@ quatre dernières : elles mourront avec leur famille, pas avant.
 
 ### 19. Ce qui reste ouvert
 
-- **`concept/devops` est dans le vocabulaire et n'a aucune page**, et c'était déjà vrai
-  avant ce lot. Par la règle que floSa vient d'écrire (« une valeur est retirée dès que plus
-  aucune page ne la porte »), elle devrait sortir. Non fait ici : rien ne dit si c'est un
-  résidu ou un emplacement réservé. **À trancher.**
+- ~~**`concept/devops` est dans le vocabulaire et n'a aucune page.**~~ — **tranché le
+  2026-09-05 : retiré.** C'est un résidu, pas un emplacement réservé. Cf. la remontée 23.
 - ~~**Les 5 notions `concept/data` remontées** attendent une décision.~~ — **tranché et
   fait le 2026-09-05 : elles descendent.** Cf. la remontée 20 ci-dessous.
 - ~~**`MOC/Concepts/Données (notions)`** ne peut pas mourir tant que ces 5 vivent.~~ —
@@ -644,3 +642,26 @@ n'a donc rien trouvé ici. Il est écrit pour **le lot 5**, où les 47 `.base` d
 pages `role: comparatif` portant une `categorie:` : à ce moment-là, chaque page de
 comparatif entrera dans le champ des filtres des autres, et le mécanisme de la remontée 11
 se rejouera à l'identique.
+
+### 23. Une valeur née vide se retire comme une valeur vidée
+
+`concept/devops` n'a jamais porté une page. La règle écrite par floSa au pilote — « une
+valeur est retirée du bloc dès que plus aucune page ne la porte » — a été lue jusqu'ici
+comme une règle de **fin de lot** : on vide, puis on retire. Elle ne dit pas ça. Son motif
+est qu'une valeur sans page autorise une rechute silencieuse, `check_brain` l'acceptant
+encore — et ce motif vaut exactement pareil pour une valeur qui n'a jamais servi.
+
+La retenue avait une raison honnête : « rien ne dit si c'est un résidu ou un emplacement
+réservé ». Deux mesures la lèvent, et aucune ne demande d'intuition. L'audit du 2026-09-02
+listait déjà `concept/devops` parmi **26 valeurs déclarées et jamais utilisées** — ce n'est
+pas un cas particulier, c'est un membre d'une population connue. Et la seule trace d'une
+réservation est une ligne de `Documentation/perso/reservoir-v1.md` qui hésite entre
+`concept/ml` et `concept/devops` pour « MLOps & monitoring » : le réservoir v1 est hors du
+vault, et une page qui en reviendrait se rangerait par son **domaine** (`ml/monitoring`,
+`devops/*`), pas sur le vocabulaire d'une galaxie supprimée au lot 3.
+
+**Ce qu'il reste à faire un jour, et qui n'est pas de ce lot** : les 25 autres valeurs de
+cette liste ne sont pas des `concept/*` et vivent dans le bloc ```domaine. Elles relèvent du
+même raisonnement, mais pas de la même mesure — une valeur de brique sans page peut être un
+domaine légitimement vide en attente d'une capture, là où `concept/*` est un vocabulaire en
+cours de suppression. À poser au lot 8, pas ici.
