@@ -281,6 +281,22 @@ Corrigé par `--amend -F`, et la règle est écrite là où elle sert : `cloture
 (procédure, étape 4, et anti-patterns) et `CONTRIBUTING.md`. **Un message de commit se passe
 par `-F <fichier>`.**
 
+### 9. Le message de la règle R15 cite un numéro d'étape qui n'existe plus
+
+`check_brain.py` sort, 137 fois, `« le couple Dev<->Wiki de l'étape 6 du skill n'est pas
+câblé »` (ligne 470, plus le commentaire ligne 452). Deux choses y sont périmées depuis ce
+lot : « Dev<->Wiki » nomme deux galaxies fusionnées au lot 3, et « l'étape 6 » désigne une
+étape de la procédure v2 — le câblage brique↔notion est désormais la ligne **P4**, traitée à
+l'**étape 7**.
+
+La règle elle-même est juste et son signal reste bon : c'est la formulation qui envoie le
+lecteur chercher une étape 6 qui parle de tags. Rien n'a été corrigé — c'est un script, et
+les scripts sont hors du périmètre du lot 7, comme pour la remontée 2. Deux chaînes à
+reformuler, à joindre au même passage que `langage:` dans l'index.
+
+Sans correctif, le coût est faible mais réel : quelqu'un qui lit un `[WARN] R15` ouvre le
+skill et ne trouve pas ce que le message annonce.
+
 ## Le lot 7 est clos
 
 Les cinq critères d'acceptation sont traités, un avec une réserve nommée :
@@ -291,7 +307,7 @@ Les cinq critères d'acceptation sont traités, un avec une réserve nommée :
 - [x] Le vocabulaire des rôles est dans `taxonomie.md`, section *Axe `role:`*.
 - [x] Test réel fait, mesuré, et retiré (remontée 5).
 
-Reste ouvert et daté : `langage:` dans l'index (remontée 2) · `Prendre si / Écarter si`, qui
+Reste ouvert et daté : `langage:` dans l'index et les deux chaînes périmées de R15 (remontées 2 et 9) · `Prendre si / Écarter si`, qui
 arrive avec le **lot 6** (remontée 3) · `build_bandeau.py`, à écrire avant que
 `cloturer-brain` puisse l'appeler (remontée 4) · la formulation littérale du critère de purge,
 qui tombera au **lot 4** (remontée 6).
