@@ -8725,6 +8725,36 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/Vision Language Models.md",
+      "nom": "Vision Language Models",
+      "alias": [
+        "VLM",
+        "vision-language models",
+        "modèles vision-langage",
+        "multimodal LLM",
+        "MLLM",
+        "image-text"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "vision-language",
+        "multimodal",
+        "transformers",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Observabilité des LLM/Helicone.md",
       "nom": "Helicone",
       "alias": [
@@ -21890,36 +21920,6 @@
         "video-generation",
         "diffusion",
         "multimodal"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Vision Language Models.md",
-      "nom": "Vision Language Models",
-      "alias": [
-        "VLM",
-        "vision-language models",
-        "modèles vision-langage",
-        "multimodal LLM",
-        "MLLM",
-        "image-text"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "vision-language",
-        "multimodal",
-        "transformers",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,

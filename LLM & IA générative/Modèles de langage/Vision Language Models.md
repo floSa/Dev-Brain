@@ -2,7 +2,7 @@
 role: notion
 nom: Vision Language Models
 alias: [VLM, vision-language models, modèles vision-langage, multimodal LLM, MLLM, image-text]
-categorie: concept/dl
+categorie: llm/modele
 domaines: [ml-eng, ai-eng]
 tags: [vision-language, multimodal, transformers, llm]
 ---

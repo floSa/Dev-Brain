@@ -564,7 +564,6 @@
 - **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, Mamba-2, Mamba-3, S4, S5, selective state space, linear-time sequence model, MIMO, discrétisation trapézoïdale
 - **Transformer architectures** — domaines : ml-eng, ai-eng · alias : Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only
 - **Video generation** — domaines : ml-eng, ai-eng · alias : text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video
-- **Vision Language Models** — domaines : ml-eng, ai-eng · alias : VLM, vision-language models, modèles vision-langage, multimodal LLM, MLLM, image-text
 
 ### concept/ml
 - **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
@@ -706,6 +705,7 @@
 - **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
 - **Small Language Models** — domaines : ai-eng · alias : SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM
 - **Tokenization** — domaines : ai-eng · alias : tokenisation, découpage en tokens, BPE, byte-pair encoding, subword tokenization
+- **Vision Language Models** — domaines : ml-eng, ai-eng · alias : VLM, vision-language models, modèles vision-langage, multimodal LLM, MLLM, image-text
 
 ### llm/observabilite
 - **LLM observability** — domaines : ai-eng, mlops · alias : observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens

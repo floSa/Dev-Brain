@@ -39,7 +39,6 @@ Notions de la famille `concept/dl`.
 - [[State Space Models]] — domaines : ml-eng, ai-eng
 - [[Transformer architectures]] — domaines : ml-eng, ai-eng
 - [[Video generation]] — domaines : ml-eng, ai-eng
-- [[Vision Language Models]] — domaines : ml-eng, ai-eng
 <!-- AUTO:END -->
 
 ## Notes

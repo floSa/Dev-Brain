@@ -1842,8 +1842,8 @@
 
 ### Modèles de langage  ·  hub
 - tags : `tokenization`, `decoding`, `scaling-laws`, `small-language-model`, `reasoning`
-- liens sortants : [[Decoding strategies]], [[Fine-tuning]], [[LLM benchmarks]], [[Perplexity]], [[Reasoning models]], [[Runtimes]], [[Scaling laws]], [[Small Language Models]], [[Tokenization]], [[llmfit]], [[Évaluation]]
-- liens entrants : [[LLM & IA générative]]
+- liens sortants : [[Decoding strategies]], [[Fine-tuning]], [[LLM benchmarks]], [[Perplexity]], [[Reasoning models]], [[Runtimes]], [[Scaling laws]], [[Small Language Models]], [[Tokenization]], [[Vision]], [[Vision Language Models]], [[llmfit]], [[Évaluation]]
+- liens entrants : [[LLM & IA générative]], [[Vision]]
 
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
@@ -2022,8 +2022,8 @@
 
 ### Vision  ·  hub
 - tags : `computer-vision`, `cnn`, `vit`, `object-detection`, `segmentation`, `image-classification`, `data-augmentation`, `object-tracking`, `transfer-learning`
-- liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Classification d'images]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Documents]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[LLM & IA générative]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Parsing]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Serving]], [[Suivi d'objets]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[supervision]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]]
+- liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Classification d'images]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Documents]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[LLM & IA générative]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Modèles de langage]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Parsing]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Serving]], [[Suivi d'objets]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[supervision]], [[timm]], [[torchvision]]
+- liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[Modèles de langage]]
 
 ### Visualisation  ·  hub
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `statistical-viz`
@@ -3498,7 +3498,7 @@
 ### Vision Language Models  ·  notion
 - tags : `vision-language`, `multimodal`, `transformers`, `llm`
 - liens sortants : [[Architectures CNN]], [[CNN]], [[Image generation]], [[Modèles de fondation vision]], [[PEFT]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Image generation]], [[Modèles de fondation vision]], [[OCR]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]]
+- liens entrants : [[Image generation]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]]
 
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`

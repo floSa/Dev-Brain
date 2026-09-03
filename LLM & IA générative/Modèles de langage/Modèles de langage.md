@@ -17,6 +17,7 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning]
 - **À modèle et prompt constants, le décodage seul change la sortie** — du plat et déterministe au varié et incohérent. [[Decoding strategies]] est le réglage le moins cher du domaine, et le plus souvent oublié.
 - La qualité **intrinsèque** se mesure par la [[Perplexity]] : utile pour comparer deux modèles sur un corpus, inutile pour juger une application. L'éval d'un produit est extrinsèque et vit dans [[Évaluation]].
 - **Les lois d'échelle décident de l'économie du domaine.** [[Scaling laws]] dit ce que paramètres, données et compute achètent, et permet de prédire un grand entraînement depuis de petits. Les deux classes de modèles nées de ce compromis tirent dans des directions opposées : [[Small Language Models]] sur-entraîne petit pour tenir en local et à bas coût, [[Reasoning models]] dépense au contraire davantage **au moment de répondre**.
+- **Un modèle de fondation ne se limite pas au texte, et c'est le même objet qu'on décrit.** [[Vision Language Models]] branche un encodeur visuel sur un LLM par un projecteur : l'image devient des tokens, et tout ce que dit ce dossier — tokenisation, décodage, lois d'échelle — continue de s'appliquer. Ce qu'on fait ensuite des pixels eux-mêmes (détecter, segmenter, suivre) est de l'autre côté, dans [[Vision]].
 - Choisir un modèle est donc un arbitrage à trois branches — taille, coût d'inférence, difficulté de la tâche — et non un classement. [[llmfit]] répond à la version matérielle de la question, [[LLM benchmarks]] à sa version qualité.
 
 ## Choisir
@@ -37,4 +38,5 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning]
 - [[Scaling laws]] — domaines : ai-eng, ml-eng
 - [[Small Language Models]] — domaines : ai-eng
 - [[Tokenization]] — domaines : ai-eng
+- [[Vision Language Models]] — domaines : ml-eng, ai-eng
 <!-- AUTO:END -->
