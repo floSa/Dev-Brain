@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Faiss]]", "[[hnswlib]]", "[[Annoy]]", "[[Chroma]]", "[[USearch]]"]
+alternatives: ["[[Faiss]]", "[[hnswlib]]", "[[Annoy]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://github.com/google-research/google-research/blob/master/scann/README.md
@@ -52,7 +52,6 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 - [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
-- [[USearch]] — Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.
 
 ## Liens
 

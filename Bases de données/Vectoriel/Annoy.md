@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[hnswlib]]", "[[Faiss]]", "[[ScaNN]]", "[[Chroma]]", "[[USearch]]"]
+alternatives: ["[[hnswlib]]", "[[Faiss]]", "[[ScaNN]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded]
 url_docs: https://pypi.org/project/annoy/
@@ -52,7 +52,6 @@ url_repo: https://github.com/spotify/annoy
 - [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
-- [[USearch]] — Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.
 
 ## Liens
 

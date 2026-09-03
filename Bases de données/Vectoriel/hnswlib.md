@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[Faiss]]", "[[Annoy]]", "[[ScaNN]]", "[[Chroma]]", "[[USearch]]"]
+alternatives: ["[[Faiss]]", "[[Annoy]]", "[[ScaNN]]", "[[Chroma]]"]
 complements: []
 tags: [vector-db, ann, embedded, in-memory]
 url_docs: https://pypi.org/project/hnswlib/
@@ -54,7 +54,6 @@ Implémentation header-only en C++ (bindings Python, R) de l'algorithme **HNSW**
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
-- [[USearch]] — Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.
 
 ## Liens
 

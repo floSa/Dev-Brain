@@ -57,7 +57,7 @@ tags: [vector-db, embeddings, semantic-search, rag]
 ## Approches voisines & alternatives
 
 - Serveurs (persistance, filtrage, API, scaling) : [[Weaviate]], [[Qdrant]], [[pgvector]], [[Milvus]], [[Pinecone]].
-- Bibliothèques ANN embarquées (index in-process, sans serveur) : [[Faiss]], [[hnswlib]], [[Annoy]], [[ScaNN]], [[USearch]] ; bases légères embarquées (entre les deux) : [[Chroma]], [[LanceDB]] (multimodale, format colonnaire Lance).
+- Bibliothèques ANN embarquées (index in-process, sans serveur) : [[Faiss]], [[hnswlib]], [[Annoy]], [[ScaNN]] ; bases légères embarquées (entre les deux) : [[Chroma]], [[LanceDB]] (multimodale, format colonnaire Lance).
 - Moteurs recherche+vectoriel (full-text + ANN dans un même moteur) : [[Vespa]], [[Elasticsearch]], [[txtai]], [[Marqo]] — cf. [[Recherche d'information]].
 - [[Index ANN — internes]] — comment ces index fonctionnent (HNSW, IVF, PQ) et se règlent.
 - [[embeddings]] — ce que ces bases stockent et recherchent.

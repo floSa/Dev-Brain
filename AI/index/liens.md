@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 698 pages actives.
+> 697 pages actives.
 
 ## Par page
 
@@ -67,8 +67,8 @@
 
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
-- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Weaviate]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[ScaNN]], [[USearch]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]]
+- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
 
 ### Apache Cassandra  ·  brique
 - tags : `nosql`, `wide-column`, `distributed`
@@ -377,8 +377,8 @@
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Index ANN — internes]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[k-NN]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Index ANN — internes]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[k-NN]]
 
 ### Faker  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -532,8 +532,8 @@
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[USearch]], [[Vectoriel]], [[k-NN]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
 
 ### HTMX  ·  brique
 - tags : `hypermedia`
@@ -798,7 +798,7 @@
 ### Milvus  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Pinecone]], [[Qdrant]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 
 ### Mimesis  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -1218,7 +1218,7 @@
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[DSPy]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[LanceDB]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[ScaNN]], [[USearch]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[pgvector]], [[txtai]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[DSPy]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[LanceDB]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[pgvector]], [[txtai]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1292,8 +1292,8 @@
 
 ### ScaNN  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[USearch]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[USearch]], [[Vectoriel]], [[hnswlib]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[Vectoriel]], [[hnswlib]]
 
 ### Scikit-Learn  ·  brique
 - tags : `supervised`, `unsupervised`, `dimensionality-reduction`, `model-evaluation`
@@ -1614,11 +1614,6 @@
 - tags : `document-parsing`, `rag`, `ocr`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[pdfplumber]]
 - liens entrants : [[Chunking strategies]], [[Docling]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[pdfplumber]]
-
-### USearch  ·  brique
-- tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[hnswlib]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]]
 
 ### uv  ·  brique
 - tags : `package-manager`
@@ -1942,7 +1937,7 @@
 
 ### Vectoriel  ·  hub
 - tags : —
-- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[USearch]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 - liens entrants : [[AI Engineering]], [[Bases de données]], [[Data Engineering]], [[NLP]], [[Recherche]]
 
 ### Vision  ·  hub
@@ -2122,8 +2117,8 @@
 
 ### Bases de données vectorielles  ·  notion
 - tags : `vector-db`, `embeddings`, `semantic-search`, `rag`
-- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[USearch]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
-- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[USearch]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
+- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
+- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -3504,7 +3499,7 @@
 - `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Assistants, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
 - `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, promptfoo
 - `alignment` : Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
-- `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, USearch, hnswlib
+- `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
 - `api-client` : Bruno, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
@@ -3582,7 +3577,7 @@
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Eigendecomposition, SVD  — pas de page concept dédiée
-- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, USearch, hnswlib  — pas de page concept dédiée
+- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
 - `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Systèmes de recommandation, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy
@@ -3619,7 +3614,7 @@
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
-- `in-memory` : Faiss, LLM caching, Redis, Redis Insight, ScaNN, USearch, hnswlib, numpy, pandas  — pas de page concept dédiée
+- `in-memory` : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
 - `inference` : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
@@ -3804,7 +3799,7 @@
 - `value-function` : Actor-Critic methods, Apprentissage par renforcement, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
 - `vc-dimension` : VC dimension
-- `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, USearch, Vespa, Weaviate, hnswlib, pgvector, txtai
+- `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Vector norms  — pas de page concept dédiée
 - `version-control` : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
@@ -3872,7 +3867,7 @@
 - `education` (porté par : OpenMAIC)
 - `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, pingouin)
 - `eigenvalue` (porté par : Eigendecomposition, SVD)
-- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, USearch, hnswlib)
+- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
@@ -3889,7 +3884,7 @@
 - `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : HTMX, Web & API)
-- `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, USearch, hnswlib, numpy, pandas)
+- `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Wasserstein distance)
 - `interactive-viz` (porté par : Interfaces & apps data, Visualisation, altair, bokeh, plotly)
