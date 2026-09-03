@@ -679,11 +679,15 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `llm/socle` — 2 : `[b]` DSPy — paquet, Python · `[b]` LangChain — paquet, Python
 - `llm/outillage` — 1 : `[b]` llmfit — cli, Rust
 
-**Comparatifs** — 7, dont **1 seul reste au niveau du domaine**
+**Comparatifs** — 7, **tous dans un sous-dossier depuis le lot 5**
 
 - `[c]` Comparatif - Frameworks LLM — filtre `llm/agents, llm/rag, llm/socle,
   llm/sortie-structuree` : ses membres enjambent quatre sous-domaines dont un non promu,
-  il **reste** au niveau du domaine (remontée 16 — la règle porte sur les membres)
+  et le lot 3 l'avait laissé **au niveau du domaine** par un choix libre — un `.base` ne
+  portait pas de `categorie:`, donc rien ne contraignait son chemin. Le lot 5 supprime ce
+  choix : la page porte `llm/agents` (majorité stricte, 9 membres sur 17), et le `.base`
+  l'a suivie dans `Agents/`. Même mécanisme qu'aux deux comparatifs de « Machine
+  Learning » du §12 de `lot-5-comparatifs.md`
 - `[c]` Comparatif - Assistants de code IA — dans `Agents de code/`
 - `[c]` Comparatif - Exécution & serving LLM — dans `Runtimes/`
 - `[c]` Comparatif - Fine-tuning LLM — dans `Fine-tuning/`

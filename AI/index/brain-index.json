@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 742,
+  "count": 749,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -65,6 +65,9 @@
       "AutoGen",
       "BMAD",
       "Cline",
+      "Comparatif - Assistants de code IA",
+      "Comparatif - Frameworks LLM",
+      "Comparatif - Frameworks text-to-SQL",
       "Context engineering",
       "Continue",
       "CrewAI",
@@ -130,6 +133,7 @@
       "promptfoo"
     ],
     "alignment": [
+      "Comparatif - Fine-tuning LLM",
       "Fine-tuning",
       "GRPO",
       "RL for LLMs",
@@ -349,6 +353,7 @@
       "Archify",
       "BMAD",
       "Cline",
+      "Comparatif - Assistants de code IA",
       "Continue",
       "Graphify",
       "Maka",
@@ -366,6 +371,7 @@
       "BMAD",
       "Cline",
       "Code and math benchmarks",
+      "Comparatif - Assistants de code IA",
       "Continue",
       "LM Studio Bionic",
       "OpenHands",
@@ -974,6 +980,7 @@
     ],
     "fine-tuning": [
       "Axolotl",
+      "Comparatif - Fine-tuning LLM",
       "DB-GPT",
       "Distillation",
       "Fine-tuning",
@@ -1186,6 +1193,7 @@
     ],
     "inference": [
       "BentoML",
+      "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
       "Inference optimization",
@@ -1369,6 +1377,7 @@
       "Chain-of-Thought",
       "Cline",
       "Code and math benchmarks",
+      "Comparatif - Fine-tuning LLM",
       "Construction de graphes de connaissances",
       "Context engineering",
       "Continue",
@@ -1484,6 +1493,7 @@
       "vLLM"
     ],
     "llm-as-judge": [
+      "Comparatif - Évaluation LLM",
       "DeepEval",
       "LLM-as-judge",
       "TruLens",
@@ -1492,6 +1502,7 @@
     "llm-eval": [
       "Agent evaluation",
       "Code and math benchmarks",
+      "Comparatif - Évaluation LLM",
       "DeepEval",
       "LLM & IA générative",
       "LLM benchmarks",
@@ -1516,6 +1527,7 @@
       "Passerelles"
     ],
     "llm-observability": [
+      "Comparatif - Observabilité LLM",
       "Helicone",
       "LLM & IA générative",
       "LLM observability",
@@ -1526,6 +1538,7 @@
     ],
     "local-llm": [
       "Assistants",
+      "Comparatif - Exécution & serving LLM",
       "LM Studio",
       "LM Studio Bionic",
       "Ollama",
@@ -1742,6 +1755,7 @@
     ],
     "model-serving": [
       "BentoML",
+      "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
       "KServe",
@@ -1773,6 +1787,7 @@
       "Agno",
       "AutoGen",
       "BMAD",
+      "Comparatif - Frameworks LLM",
       "CrewAI",
       "DB-GPT",
       "Multi-agent systems",
@@ -2153,6 +2168,7 @@
     ],
     "quantization": [
       "Apprentissage profond",
+      "Comparatif - Exécution & serving LLM",
       "Fine-tuning",
       "LM Studio",
       "ONNX Runtime",
@@ -2179,6 +2195,8 @@
       "Bases de données vectorielles",
       "Chroma",
       "Chunking strategies",
+      "Comparatif - Frameworks LLM",
+      "Comparatif - Frameworks text-to-SQL",
       "DB-GPT",
       "Dify",
       "Docling",
@@ -2217,6 +2235,7 @@
       "txtai"
     ],
     "rag-eval": [
+      "Comparatif - Évaluation LLM",
       "RAG benchmarks",
       "RAG eval",
       "Ragas",
@@ -2608,6 +2627,7 @@
       "Pattern - Pipeline scraping → matching → optimisation"
     ],
     "structured-output": [
+      "Comparatif - Frameworks LLM",
       "Constrained decoding",
       "Guidance",
       "Instructor",
@@ -2718,6 +2738,7 @@
       "SetFit"
     ],
     "text-to-sql": [
+      "Comparatif - Frameworks text-to-SQL",
       "DB-GPT",
       "LangChain SQL agent",
       "LlamaIndex NLSQLTableQueryEngine",
@@ -2800,6 +2821,7 @@
       "tool-use"
     ],
     "tracing": [
+      "Comparatif - Observabilité LLM",
       "Helicone",
       "LLM observability",
       "LangSmith",
@@ -7145,6 +7167,25 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/Comparatif - Assistants de code IA.md",
+      "nom": "Comparatif - Assistants de code IA",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/agent-de-code",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "code-assistant",
+        "agents",
+        "code-generation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Continue.md",
       "nom": "Continue",
       "alias": [
@@ -7578,6 +7619,26 @@
       ],
       "complements": [],
       "maturite": "deprecated"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Comparatif - Frameworks LLM.md",
+      "nom": "Comparatif - Frameworks LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "agents",
+        "rag",
+        "structured-output",
+        "multi-agent"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Agents/CrewAI.md",
@@ -8254,6 +8315,25 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Comparatif - Fine-tuning LLM.md",
+      "nom": "Comparatif - Fine-tuning LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "fine-tuning",
+        "llm",
+        "alignment"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Fine-tuning/Fine-tuning.md",
@@ -9020,6 +9100,24 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md",
+      "nom": "Comparatif - Observabilité LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/observabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "llm-observability",
+        "tracing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Observabilité des LLM/Helicone.md",
       "nom": "Helicone",
       "alias": [
@@ -9754,6 +9852,26 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Runtimes/Comparatif - Exécution & serving LLM.md",
+      "nom": "Comparatif - Exécution & serving LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "local-llm",
+        "model-serving",
+        "inference",
+        "quantization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Runtimes/Inference optimization.md",
       "nom": "Inference optimization",
       "alias": [
@@ -10365,6 +10483,25 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Text-to-SQL/Comparatif - Frameworks text-to-SQL.md",
+      "nom": "Comparatif - Frameworks text-to-SQL",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/text-to-sql",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "text-to-sql",
+        "rag",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Text-to-SQL/DB-GPT.md",
       "nom": "DB-GPT",
       "alias": [
@@ -10718,6 +10855,25 @@
         "reasoning",
         "llm-eval",
         "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Comparatif - Évaluation LLM.md",
+      "nom": "Comparatif - Évaluation LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "llm-eval",
+        "rag-eval",
+        "llm-as-judge"
       ],
       "alternatives": null,
       "complements": null,

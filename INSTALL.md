@@ -581,7 +581,7 @@ Le script `session_to_devbrain.py` est déjà dans le repo. Adapte le chemin Pyt
 
 ### a) Obsidian — Bases fonctionnent
 
-Ouvre `LLM & IA générative/Comparatif - Frameworks LLM.base`. Tu dois voir un tableau des frameworks LLM (LangChain, LangGraph, LlamaIndex, DSPy, LiteLLM…) qui se remplit tout seul depuis le frontmatter :
+Ouvre `LLM & IA générative/Agents/Comparatif - Frameworks LLM.base`. Tu dois voir un tableau des frameworks LLM (LangChain, LangGraph, LlamaIndex, DSPy, LiteLLM…) qui se remplit tout seul depuis le frontmatter :
 
 ![Comparatif LLM frameworks](docs/install/img/21-comparatif-llm-frameworks.png)
 
