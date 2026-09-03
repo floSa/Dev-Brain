@@ -1385,17 +1385,33 @@ parce qu'il ne cherche à déplacer un `.base` que si son texte cite une catégo
 
 ### 47. Ce que ce lot n'a PAS fait
 
-- **Le balayage `concept/*` en prose (remontée 32) n'est pas fait**, sur consigne : commit
-  isolé, conversation suivante. Ce lot alimente son inventaire de plusieurs entrées, dont
-  `AI/audit/rapports/axe-5-navigation.md` et les documents de migration eux-mêmes, qui citent
-  tous des valeurs désormais hors vocabulaire — mais ce sont des archives, elles décrivent un
-  état passé et rien ne les rend fausses.
-- **`CLAUDE.md` n'est pas réécrit** sur la disparition de `Wiki/Concepts/` et de `MOC/`, ni
-  `AI/scripts/arbo.py` sur `LEGACY = {"Wiki"}` : même consigne, même conversation. `Wiki/`
-  contient encore trois scaffolds vides (`Outils/`, `Workflows/`, `Roadmaps/`), dont
-  `reservoir-v1.md` dit qu'ils ne sont pas acquis.
-- **Le défaut de la remontée 44 n'est pas corrigé** : `parse_fm()` continue de sauter en
-  silence une page au frontmatter illisible. C'est un sujet de validateur, pas de lot 4.
+- ~~**Le balayage `concept/*` en prose (remontée 32) n'est pas fait**~~ — **fait le
+  2026-09-05**, en commit isolé, dans la conversation de clôture. 162 occurrences relevées
+  dans 27 fichiers, triées en deux tas : ce qui décrit le **présent** ou instruit l'avenir a
+  été corrigé (10 fichiers, dont le gabarit `Concept-Wiki`, d'où la valeur morte pouvait
+  RENTRER dans le vault, et les deux backlogs `reservoir-*`, qui la PROPOSAIENT encore comme
+  destination) ; ce qui enregistre un **passé** a été laissé — les documents de migration,
+  les rapports d'audit, les sessions, le CHANGELOG, et la section notions de `taxonomie.md`,
+  devenue un journal de retrait qui DOIT nommer ce qui est mort. L'intuition de cette
+  remontée était bonne sur le fond et incomplète sur le périmètre : le résidu le plus
+  dangereux n'était pas dans les corps de notions (2 pages), il était dans le gabarit.
+- ~~**`CLAUDE.md` n'est pas réécrit**~~ — **fait le 2026-09-05.** Les trois scaffolds vides
+  ont été supprimés (décision de floSa : ce qui reviendra du réservoir v1 se rangera par son
+  domaine, il n'y a pas de dossier à réserver), `Wiki/` n'existe plus, `arbo.LEGACY` est
+  l'ensemble vide — plus aucune page n'échappe au contrôle chemin ↔ catégorie. Les trois
+  `CLAUDE*.md` décrivent l'arbre seul, et disent explicitement ce que la disparition du
+  dossier change : **la frontière `role: notion` ne se lit plus sur aucun chemin**, elle est
+  portée par le champ et par lui seul. Un défaut trouvé en tirant le fil et corrigé au
+  passage : le hook `Stop` scrutait `("Dev", "Wiki")` et **ne lançait donc plus `check_brain`
+  depuis le lot 3**, en silence.
+- ~~**Le défaut de la remontée 44 n'est pas corrigé**~~ — **corrigé le 2026-09-05**, dans la
+  conversation de clôture du lot et non au lot 8. Les deux validateurs portent désormais
+  **R17, *frontmatter lisible*** : une page qui ne parse pas est une violation dure, avec le
+  motif exact — le symptôme observé ici décrivait la conséquence (« ce dossier n'a pas de
+  hub »), pas la cause. Mesure faite **avant** de durcir, comme le veut le principe du
+  lot 8 : zéro page dans ce cas dans le périmètre des deux validateurs, donc rien à réparer.
+  Sonde vérifiée dans les deux sens, sur un hub **et** sur une notion — le cas dont cette
+  remontée disait que « rien ne l'aurait vu ».
 - Six puces du hub de domaine décrivent désormais ce que quatre sous-hubs disent mieux, et de
   plus près. Elles restent vraies et servent de carte d'ensemble, mais la question « un hub de
   domaine doit-il redire ses sous-hubs ? » se posera au lot 6, quand les fiches passeront au

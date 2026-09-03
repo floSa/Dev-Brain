@@ -28,8 +28,8 @@ Règles DURES (bloquent) :
   - famille ∈ énumération fermée de Documentation/general/taxonomie.md (bloc
     ```famille) sur le gabarit brique                                         [R14]
   - tags ⊆ vocabulaire contrôlé (Documentation/general/tags.md)
-  - categorie ∈ taxonomie : bloc ```domaine (94 domaines Dev) + fences nus
-    (`concept/*` et `skill/*`, côté Wiki)
+  - categorie ∈ taxonomie : bloc ```domaine + fences nus. Le vocabulaire de galaxie
+    `concept/*` est sorti le 2026-09-05 ; une notion prend un domaine, comme une brique
   - domaines ⊆ vocabulaire de Documentation/general/themes.md                 [R4]
   - alternatives réciproques (si A cite B, B cite A)
   - cible d'alternative absente de l'index → échec explicite, plus de silence  [R12]
@@ -39,6 +39,9 @@ Règles DURES (bloquent) :
   - aucun lien [[...]] mort, dans le corps ET dans le frontmatter              [R2]
   - `nom:` identique au nom du fichier, sauf caractère illégal en nom de fichier [R9]
   - toute page atteignable depuis un MOC                                       [R7]
+  - frontmatter LISIBLE : une page qui ne parse pas est une erreur, jamais une
+    absence. Elle était sautée en silence — hors du total, hors de toutes les
+    autres règles, liens non résolus (remontée 44 du lot 4)                    [R17]
 Règles SOUPLES (avertissent) :
   - page trop longue → suggérer une sous-note
   - collisions d'alias : doublon interne, ou alias qui est le `nom:` d'une autre
@@ -162,17 +165,32 @@ def hors_vault(p, racine) -> bool:
     return bool(parts) and parts[0] in {".git", ".claude"}
 
 
-def parse(text: str) -> tuple[dict | None, str]:
+def parse(text: str) -> tuple[dict | None, str, str | None]:
+    """(frontmatter, corps, motif d'illisibilité). `fm` et `motif` s'excluent.
+
+    **Le motif est retourné, jamais avalé** — correctif de la remontée 44 du lot 4.
+    Cette fonction renvoyait `None` dans les quatre cas ci-dessous sans les
+    distinguer, et `main()` sautait la page : elle sortait du total annoncé, aucune
+    de ses seize règles n'était évaluée, ses wikilinks n'étaient pas résolus. Un
+    `pitch:` non quoté contenant « : » suffisait à l'y faire entrer, et sur une
+    brique ou une notion **rien** ne l'aurait signalé — le vault restait vert.
+    Une page qui ne parse pas est une erreur, jamais une absence.
+    """
     if not text.startswith("---"):
-        return None, text
+        return None, text, "aucun frontmatter (le fichier ne commence pas par `---`)"
     parts = text.split("---", 2)
     if len(parts) < 3:
-        return None, text
+        return None, text, "frontmatter non refermé (pas de second `---`)"
     try:
         fm = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return None, parts[2]
-    return (fm if isinstance(fm, dict) else None), parts[2]
+    except yaml.YAMLError as e:
+        detail = str(e).splitlines()[0].strip()
+        return None, parts[2], (f"YAML invalide — {detail}. Cause la plus fréquente : "
+                                f"une valeur non quotée contenant « : » (`pitch:`, `nom:`)")
+    if not isinstance(fm, dict):
+        return None, parts[2], (f"frontmatter lu comme {type(fm).__name__}, pas comme "
+                                f"un dictionnaire de champs")
+    return fm, parts[2], None
 
 
 def rel(p: Path) -> str:
@@ -482,13 +500,17 @@ def main() -> int:
     moc_q, moc_n = moc_targets()
 
     active: list[tuple[str, dict, str]] = []  # (path, frontmatter, body)
+    illisibles: list[str] = []                # R17 — pages qui ne parsent pas
     for d in scan_dirs():
         base = VAULT / d
         if not base.exists():
             continue
         for md in sorted(base.rglob("*.md")):
-            fm, body = parse(md.read_text(encoding="utf-8"))
-            if fm is None or not is_active_v2(d, fm):
+            fm, body, motif = parse(md.read_text(encoding="utf-8"))
+            if fm is None:
+                illisibles.append(f"R17 — {rel(md)}: frontmatter illisible — {motif}")
+                continue
+            if not is_active_v2(d, fm):
                 continue
             active.append((rel(md), fm, body))
 
@@ -496,7 +518,7 @@ def main() -> int:
     pitches = {fm.get("nom"): (fm.get("pitch") or "")
                for _, fm, _ in active if fm.get("nom")}
     cited_bases: set[str] = set()
-    hard: list[str] = []
+    hard: list[str] = list(illisibles)
     warn: list[str] = []
 
     for path, fm, body in active:
@@ -630,7 +652,8 @@ def main() -> int:
     warn += check_alias(active)
     warn += check_bases(active, cited_bases)
 
-    print(f"check_brain : {len(active)} pages actives contrôlées")
+    suffixe = f" ({len(illisibles)} illisible(s), cf. R17)" if illisibles else ""
+    print(f"check_brain : {len(active)} pages actives contrôlées{suffixe}")
     for w in warn:
         print(f"  [WARN] {w}")
     if hard:

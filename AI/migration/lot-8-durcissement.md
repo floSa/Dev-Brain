@@ -39,6 +39,15 @@ Spec complète : [[AI/design/brain-v3|brain-v3]] §10.
 La règle 4 reste un **avertissement pour toujours** : une brique peut légitimement n'avoir
 aucune alternative. La signaler aide, l'interdire mentirait.
 
+> **Une onzième règle est déjà dure, et n'attend pas ce lot** — R17, *frontmatter lisible*,
+> posée le 2026-09-05 en clôture du lot 4 (remontée 44). Elle ne relevait pas du principe
+> ci-dessus : ce n'était pas une règle en avertissement à durcir, c'était **l'absence de
+> règle**. Une page dont le frontmatter ne parsait pas était silencieusement sautée par
+> `check_brain` **et** par `check_arbo` — hors du total, hors de toutes les autres règles,
+> liens non résolus, chemin non confronté à sa catégorie. Un `pitch:` non quoté contenant
+> « : » suffisait. Le durcir n'a rien coûté : la mesure avant durcissement donnait **zéro
+> page** dans ce cas, aucune réparation n'a été nécessaire.
+
 ## Procédure
 
 1. Lancer `check_brain.py` et relever le nombre de violations de chaque règle encore souple.
