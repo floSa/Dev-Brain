@@ -36,9 +36,9 @@ tags: [meta, design, v3, migration]
 | `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — **6 supprimées au 2026-09-05**, sur mesure R7 ; restent `Deep learning`, `LLM (notions)`, `Machine learning (notions)`, `NLP (notions)` |
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
-**85 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
-`math` (26), `data` (13, en deux passages), `signal` (5) et `ai` (4). **212 restent** sous
-`Wiki/Concepts/`.
+**141 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
+`math` (26), `data` (13, en deux passages), `signal` (5), `ai` (4) et `llm` (56).
+**156 restent** sous `Wiki/Concepts/` — `dl` (52), `ml` (67), `rl` (17), `ts` (13), `nlp` (7).
 
 > **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
 > 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
@@ -95,14 +95,20 @@ SecondBrain/
 │   ├── Interprétabilité/   (7)
 │   ├── Tabulaire/   (6)
 │   └── (20 pages au niveau du domaine)
-├── LLM & IA générative/   (131 pages)
+├── LLM & IA générative/   (129 pages — 74 au lot 3, 55 notions au lot 4)
+│   ├── Agents/   (18)
+│   ├── Runtimes/   (14)
 │   ├── Agents de code/   (13)
-│   ├── Runtimes/   (9)
-│   ├── Agents/   (9)
-│   ├── Fine-tuning/   (5)
-│   ├── Text-to-SQL/   (5)
+│   ├── Fine-tuning/   (13)
+│   ├── RAG & retrieval/   (12)
+│   ├── Évaluation/   (11)
+│   ├── Modèles de langage/   (6)
 │   ├── Assistants/   (5)
-│   └── (28 pages au niveau du domaine)
+│   ├── Observabilité des LLM/   (5)
+│   ├── Passerelles/   (5)
+│   ├── Sortie typée/   (5)
+│   ├── Text-to-SQL/   (5)
+│   └── (17 pages au niveau du domaine)
 ├── Bases de données/   (51 pages — 47 au lot 3, 4 notions au lot 4)
 │   ├── Vectoriel/   (13)
 │   ├── Administration/   (7)
@@ -146,7 +152,8 @@ SecondBrain/
 │   └── (4 pages au niveau du domaine)
 ├── Interfaces & apps data/   (4 pages)
 │   └── (4 pages au niveau du domaine)
-├── Sécurité/   (3 pages)
+├── Sécurité/   (8 pages — 3 au lot 3, 4 notions puis 1 au lot 4)
+│   ├── Systèmes IA/   (5)
 │   └── (3 pages au niveau du domaine)
 ├── Observabilité/   (3 pages)
 │   └── (3 pages au niveau du domaine)
@@ -461,23 +468,54 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - [ ] `[n]` k-médoïds (PAM)
 - [ ] `[n]` t-SNE and UMAP
 
-### LLM & IA générative  ·  131 pages  ·  **migré le 2026-09-04**
+### LLM & IA générative  ·  129 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
-- [x] hub écrit — hub de domaine issu de `MOC/Categories/`, corps réécrit au gabarit §9 ;
-  les 6 sous-hubs sont écrits, celui de `Text-to-SQL/` portant le corps de la notion
-  chapeau absorbée (à passer au §9 au lot 6, comme celui de « Bases de données »)
-- [x] sous-dossiers créés — `Agents de code/` (13), `Runtimes/` (9), `Agents/` (9),
-  `Fine-tuning/` (5), `Text-to-SQL/` (5), `Assistants/` (5) ; 28 briques au niveau du
-  domaine, plus 3 des 7 comparatifs
-- [ ] notions recatégorisées — lot 4 : les 56 notions `concept/llm` ci-dessous. Les
-  4 notions de sécurité qui portaient `concept/ai` **ne viendront pas ici** : elles sont
-  descendues dans « Sécurité/ » le 2026-09-05, contre l'ordre de l'arbre de décision et
-  par arbitrage explicite de floSa (motif dans la section « Sécurité »). Le corps du hub,
-  qui les revendiquait nommément, a été réécrit dans le même commit. Les hubs citent
-  toutes les notions restantes en liens nus pour que l'arbre ne paraisse pas fait de
-  briques seules (remontée 13) ; seule `Text-to-SQL` est descendue, parce qu'elle est
-  devenue un hub
+- [x] hub écrit — hub de domaine issu de `MOC/Categories/`, corps réécrit au gabarit §9
+  au lot 3, puis **réécrit au lot 4** : sa première puce annonçait « six sous-dossiers »
+  et énumérait au niveau du domaine le RAG, l'éval, l'observabilité, la sortie structurée
+  et la passerelle, qui ont désormais le leur. Les 6 sous-hubs neufs sont écrits ; celui
+  de `Text-to-SQL/` porte toujours le corps de la notion chapeau absorbée (à passer au
+  §9 au lot 6, comme celui de « Bases de données »)
+- [x] sous-dossiers créés — 6 au lot 3 (`Agents de code/`, `Runtimes/`, `Agents/`,
+  `Fine-tuning/`, `Text-to-SQL/`, `Assistants/`), **6 de plus au lot 4** :
+  `RAG & retrieval/` (12), `Évaluation/` (11), `Modèles de langage/` (6),
+  `Observabilité des LLM/` (5), `Passerelles/` (5), `Sortie typée/` (5). 17 pages au
+  niveau du domaine, plus 1 des 7 comparatifs
+- [x] notions recatégorisées — **lot 4, 2026-09-05** : 55 des 56 notions `concept/llm`
+  descendent ici, la 56e (`Sandboxing de code généré`) va dans « Sécurité/ ».
+  **Trois valeurs ouvertes** — `llm/modele`, `llm/prompt`, `llm/protocole` — et **une
+  retirée**, `llm/mcp`, que `llm/protocole` remplace. `concept/llm` sort du vocabulaire
+  et `MOC/Concepts/LLM (notions)` est supprimée sur mesure R7
 - [ ] fiches au nouveau gabarit — lot 6
+
+**Agents/** — `llm/agents` — 18 pages
+
+- `[n]` Agent patterns · `[n]` Agent skills · `[n]` agent-loops · `[n]` Harnais d'agent ·
+  `[n]` Human-in-the-loop · `[n]` Multi-agent systems · `[n]` Reliability patterns ·
+  `[n]` Tool use patterns · `[n]` tool-use
+- `[b]` Agno — paquet, Python
+- `[b]` AutoGen — paquet, "Python, .NET"
+- `[b]` CrewAI — paquet, Python
+- `[b]` LangGraph — paquet, Python
+- `[b]` OpenAI Agents SDK — paquet, "Python, TypeScript"
+- `[b]` PraisonAI — paquet, "Python, JavaScript"
+- `[b]` PydanticAI — paquet, Python
+- `[b]` Semantic Kernel — paquet, "C#, Python, Java"
+- `[b]` smolagents — paquet, Python
+
+**Runtimes/** — `llm/runtime` — 14 pages
+
+- `[n]` Inference optimization · `[n]` Multi-Token Prediction · `[n]` prompt-caching ·
+  `[n]` Server-Sent Events & streaming LLM · `[n]` Speculative decoding
+- `[b]` LM Studio — application
+- `[b]` Ollama — plateforme, Go
+- `[b]` SGLang — plateforme, Python
+- `[b]` TGI — plateforme, Rust/Python
+- `[b]` TensorRT-LLM — paquet, C++/Python
+- `[b]` llama.cpp — plateforme, C/C++
+- `[b]` needle — modele, Python
+- `[b]` text-generation-webui — application, Python
+- `[b]` vLLM — plateforme, Python
 
 **Agents de code/** — `llm/agent-de-code` — 13 pages
 
@@ -495,45 +533,49 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` swarm-forge — cli, Clojure
 - `[b]` t3code — application, TypeScript
 
-**Runtimes/** — `llm/runtime` — 9 pages
+**Fine-tuning/** — `llm/finetuning` — 13 pages
 
-- `[b]` LM Studio — application
-- `[b]` Ollama — plateforme, Go
-- `[b]` SGLang — plateforme, Python
-- `[b]` TGI — plateforme, Rust/Python
-- `[b]` TensorRT-LLM — paquet, C++/Python
-- `[b]` llama.cpp — plateforme, C/C++
-- `[b]` needle — modele, Python
-- `[b]` text-generation-webui — application, Python
-- `[b]` vLLM — plateforme, Python
-
-**Agents/** — `llm/agents` — 9 pages
-
-- `[b]` Agno — paquet, Python
-- `[b]` AutoGen — paquet, "Python, .NET"
-- `[b]` CrewAI — paquet, Python
-- `[b]` LangGraph — paquet, Python
-- `[b]` OpenAI Agents SDK — paquet, "Python, TypeScript"
-- `[b]` PraisonAI — paquet, "Python, JavaScript"
-- `[b]` PydanticAI — paquet, Python
-- `[b]` Semantic Kernel — paquet, "C#, Python, Java"
-- `[b]` smolagents — paquet, Python
-
-**Fine-tuning/** — `llm/finetuning` — 5 pages
-
+- `[n]` GRPO · `[n]` LoRA et QLoRA · `[n]` PEFT · `[n]` RL for LLMs ·
+  `[n]` RLHF and DPO · `[n]` Reward modeling · `[n]` SFT ·
+  `[n]` Synthetic data generation
 - `[b]` Axolotl — cli, Python
 - `[b]` LLaMA-Factory — cli, Python
 - `[b]` TRL — paquet, Python
 - `[b]` Tunix — paquet, Python
 - `[b]` Unsloth — paquet, Python
 
-**Text-to-SQL/** — `llm/text-to-sql` — 5 pages
+**RAG & retrieval/** — `llm/rag` — 12 pages — **dossier neuf au lot 4**
 
-- `[b]` DB-GPT — plateforme, Python
-- `[b]` LangChain SQL agent — paquet, Python
-- `[b]` LlamaIndex NLSQLTableQueryEngine — paquet, Python
-- `[b]` Vanna — paquet, Python
-- `[b]` WrenAI — plateforme, Python, Rust
+> Le libellé n'est pas « RAG » : c'est le nom de fichier d'une **notion qui vit dans le
+> dossier**, exactement le cas de `signal/traitement` (remontée 17). Un lien nu ne
+> résoudrait plus de façon déterministe.
+
+- `[n]` Advanced RAG · `[n]` Chunking strategies ·
+  `[n]` Construction de graphes de connaissances · `[n]` GraphRAG ·
+  `[n]` Hybrid retrieval · `[n]` Late-interaction retrieval ·
+  `[n]` Query transformations · `[n]` RAG · `[n]` Reranking
+- `[b]` Haystack — paquet, Python
+- `[b]` LlamaIndex — paquet, Python
+- `[b]` RAGatouille — paquet, Python
+
+**Évaluation/** — `llm/eval` — 11 pages — **dossier neuf au lot 4**
+
+- `[n]` Agent evaluation · `[n]` Code and math benchmarks · `[n]` LLM benchmarks ·
+  `[n]` LLM eval metrics · `[n]` LLM-as-judge · `[n]` RAG benchmarks · `[n]` RAG eval
+- `[b]` DeepEval — paquet, Python
+- `[b]` Ragas — paquet, Python
+- `[b]` TruLens — paquet, Python
+- `[b]` promptfoo — cli, TypeScript
+- `[c]` Comparatif - Évaluation LLM — descendu avec ses 4 membres
+
+**Modèles de langage/** — `llm/modele` — 6 pages — **valeur et dossier neufs au lot 4**
+
+> Le seul sous-dossier du domaine qui ne porte **aucune brique** : il décrit l'objet, pas
+> ce qu'on en fait. La valeur a été ouverte parce que le vocabulaire `llm/*` était
+> entièrement applicatif — c'est la situation de la remontée 1, rejouée.
+
+- `[n]` Decoding strategies · `[n]` Perplexity · `[n]` Reasoning models ·
+  `[n]` Scaling laws · `[n]` Small Language Models · `[n]` Tokenization
 
 **Assistants/** — `llm/assistant` — 5 pages
 
@@ -543,105 +585,136 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` OpenHands — plateforme, "Python, TypeScript"
 - `[b]` OpenMAIC — application, TypeScript
 
-**Au niveau du domaine** — 28 pages
+**Observabilité des LLM/** — `llm/observabilite` — 5 pages — **dossier neuf au lot 4**
 
-- `[b]` DSPy — paquet, Python
-- `[b]` DeepEval — paquet, Python
-- `[b]` Dify — plateforme, Python
-- `[b]` Flowise — plateforme, TypeScript
-- `[b]` Guidance — paquet, Python
-- `[b]` Haystack — paquet, Python
-- `[b]` Headroom — paquet, "Python, TypeScript, Rust"
+> Le libellé n'est ni « Observabilité » (le hub du **domaine** homonyme) ni
+> « Observabilité LLM » (un `alias:` de la notion qui vit dans le dossier). Les deux
+> ensembles de la remontée 8 mordaient en même temps.
+
+- `[n]` LLM observability
 - `[b]` Helicone — plateforme, TypeScript
-- `[b]` Instructor — paquet, Python
-- `[b]` LangChain — paquet, Python
 - `[b]` LangSmith — plateforme
-- `[b]` Langflow — plateforme, Python
 - `[b]` Langfuse — plateforme, TypeScript
-- `[b]` Letta — plateforme, Python
+- `[b]` Phoenix Arize — plateforme, Python
+- `[c]` Comparatif - Observabilité LLM — descendu avec ses 4 membres
+
+**Passerelles/** — `llm/passerelle` — 5 pages — **dossier neuf au lot 4**
+
+- `[n]` LLM caching · `[n]` Routing and cascading
 - `[b]` LiteLLM — plateforme, Python
-- `[b]` LlamaIndex — paquet, Python
 - `[b]` OmniRoute — plateforme, TypeScript
 - `[b]` OpenRouter — saas
-- `[b]` OpenViking — plateforme, Python
+
+**Sortie typée/** — `llm/sortie-structuree` — 5 pages — **dossier neuf au lot 4**
+
+> Ni « Sortie structurée », ni « Sorties structurées », ni « Génération contrainte », ni
+> « Décodage contraint » : les quatre sont des `alias:` de `Structured outputs` ou de
+> `Constrained decoding`, qui vivent dans le dossier.
+
+- `[n]` Constrained decoding · `[n]` Structured outputs
+- `[b]` Guidance — paquet, Python
+- `[b]` Instructor — paquet, Python
 - `[b]` Outlines — paquet, Python
-- `[b]` Phoenix Arize — plateforme, Python
-- `[b]` RAGatouille — paquet, Python
-- `[b]` Ragas — paquet, Python
-- `[b]` TruLens — paquet, Python
-- `[b]` fastmcp — paquet, Python
-- `[b]` llmfit — cli, Rust
-- `[b]` mcpjam — application, TypeScript
-- `[b]` promptfoo — cli, TypeScript
 
-**Comparatifs** — 7
+**Text-to-SQL/** — `llm/text-to-sql` — 5 pages
 
-- `[c]` Comparatif - Assistants de code IA — filtre `llm/agent-de-code`
-- `[c]` Comparatif - Exécution & serving LLM — filtre `llm/runtime`
-- `[c]` Comparatif - Fine-tuning LLM — filtre `llm/finetuning`
-- `[c]` Comparatif - Frameworks LLM — filtre `llm/agents, llm/rag, llm/socle, llm/sortie-structuree`
-- `[c]` Comparatif - Frameworks text-to-SQL — filtre `llm/text-to-sql`
-- `[c]` Comparatif - Observabilité LLM — filtre `llm/observabilite`
-- `[c]` Comparatif - Évaluation LLM — filtre `llm/eval`
+- `[b]` DB-GPT — plateforme, Python
+- `[b]` LangChain SQL agent — paquet, Python
+- `[b]` LlamaIndex NLSQLTableQueryEngine — paquet, Python
+- `[b]` Vanna — paquet, Python
+- `[b]` WrenAI — plateforme, Python, Rust
 
-**À arbitrer — 56 notions sans sous-domaine** (57 au relevé initial ; `Text-to-SQL` en est sortie, devenue le hub de son sous-dossier)
+**Au niveau du domaine** — 17 pages
 
-- [ ] `[n]` Advanced RAG
-- [ ] `[n]` Agent evaluation
-- [ ] `[n]` Agent memory
-- [ ] `[n]` Agent patterns
-- [ ] `[n]` Agent skills
-- [ ] `[n]` Chain-of-Thought
-- [ ] `[n]` Chunking strategies
-- [ ] `[n]` Code and math benchmarks
-- [ ] `[n]` Constrained decoding
-- [ ] `[n]` Construction de graphes de connaissances
-- [ ] `[n]` Context engineering
-- [ ] `[n]` Decoding strategies
-- [ ] `[n]` GRPO
-- [ ] `[n]` GraphRAG
-- [ ] `[n]` Harnais d'agent
-- [ ] `[n]` Human-in-the-loop
-- [ ] `[n]` Hybrid retrieval
-- [ ] `[n]` Inference optimization
-- [ ] `[n]` LLM benchmarks
-- [ ] `[n]` LLM caching
-- [ ] `[n]` LLM eval metrics
-- [ ] `[n]` LLM observability
-- [ ] `[n]` LLM-as-judge
-- [ ] `[n]` Late-interaction retrieval
-- [ ] `[n]` LoRA et QLoRA
-- [ ] `[n]` Multi-Token Prediction
-- [ ] `[n]` Multi-agent systems
-- [ ] `[n]` PEFT
-- [ ] `[n]` Perplexity
-- [ ] `[n]` Prompt engineering
-- [ ] `[n]` Query transformations
-- [ ] `[n]` RAG
-- [ ] `[n]` RAG benchmarks
-- [ ] `[n]` RAG eval
-- [ ] `[n]` RL for LLMs
-- [ ] `[n]` RLHF and DPO
-- [ ] `[n]` Reasoning models
-- [ ] `[n]` Reliability patterns
-- [ ] `[n]` Reranking
-- [ ] `[n]` Reward modeling
-- [ ] `[n]` Routing and cascading
-- [ ] `[n]` SFT
-- [ ] `[n]` Sandboxing de code généré
-- [ ] `[n]` Scaling laws
-- [ ] `[n]` Server-Sent Events & streaming LLM
-- [ ] `[n]` Small Language Models
-- [ ] `[n]` Speculative decoding
-- [ ] `[n]` Structured outputs
-- [ ] `[n]` Synthetic data generation
-- [ ] `[n]` Tokenization
-- [ ] `[n]` Tool use patterns
-- [ ] `[n]` a2a-protocol
-- [ ] `[n]` agent-loops
-- [ ] `[n]` mcp-protocol
-- [ ] `[n]` prompt-caching
-- [ ] `[n]` tool-use
+- `llm/prompt` — **valeur neuve**, 3 pages, sous le seuil :
+  `[n]` Chain-of-Thought · `[n]` Context engineering · `[n]` Prompt engineering
+- `llm/protocole` — **valeur neuve**, remplace `llm/mcp`, 4 pages, sous le seuil :
+  `[n]` a2a-protocol · `[n]` mcp-protocol · `[b]` fastmcp — paquet, Python ·
+  `[b]` mcpjam — application, TypeScript
+- `llm/memoire` — 4 : `[n]` Agent memory · `[b]` Headroom — paquet ·
+  `[b]` Letta — plateforme, Python · `[b]` OpenViking — plateforme, Python
+- `llm/low-code` — 3 : `[b]` Dify · `[b]` Flowise · `[b]` Langflow
+- `llm/socle` — 2 : `[b]` DSPy — paquet, Python · `[b]` LangChain — paquet, Python
+- `llm/outillage` — 1 : `[b]` llmfit — cli, Rust
+
+**Comparatifs** — 7, dont **1 seul reste au niveau du domaine**
+
+- `[c]` Comparatif - Frameworks LLM — filtre `llm/agents, llm/rag, llm/socle,
+  llm/sortie-structuree` : ses membres enjambent quatre sous-domaines dont un non promu,
+  il **reste** au niveau du domaine (remontée 16 — la règle porte sur les membres)
+- `[c]` Comparatif - Assistants de code IA — dans `Agents de code/`
+- `[c]` Comparatif - Exécution & serving LLM — dans `Runtimes/`
+- `[c]` Comparatif - Fine-tuning LLM — dans `Fine-tuning/`
+- `[c]` Comparatif - Frameworks text-to-SQL — dans `Text-to-SQL/`
+- `[c]` Comparatif - Observabilité LLM — **descendu au lot 4** dans `Observabilité des LLM/`
+- `[c]` Comparatif - Évaluation LLM — **descendu au lot 4** dans `Évaluation/`
+
+**Les 56 notions `concept/llm`, et où elles sont allées**
+
+Le corps du hub en citait **35 sur 56** nommément, et ses paragraphes sont des familles :
+c'est lui qui a rangé la majorité (étape 0, remontées 1 et 12). Les 21 autres sont
+dérivées page par page, principalement sur leur section `## Approches voisines`.
+
+- [x] `[n]` Advanced RAG → `llm/rag`
+- [x] `[n]` Agent evaluation → `llm/eval`
+- [x] `[n]` Agent memory → `llm/memoire`
+- [x] `[n]` Agent patterns → `llm/agents`
+- [x] `[n]` Agent skills → `llm/agents`
+- [x] `[n]` Chain-of-Thought → `llm/prompt`
+- [x] `[n]` Chunking strategies → `llm/rag`
+- [x] `[n]` Code and math benchmarks → `llm/eval`
+- [x] `[n]` Constrained decoding → `llm/sortie-structuree`
+- [x] `[n]` Construction de graphes de connaissances → `llm/rag`
+- [x] `[n]` Context engineering → `llm/prompt`
+- [x] `[n]` Decoding strategies → `llm/modele`
+- [x] `[n]` GRPO → `llm/finetuning`
+- [x] `[n]` GraphRAG → `llm/rag`
+- [x] `[n]` Harnais d'agent → `llm/agents`
+- [x] `[n]` Human-in-the-loop → `llm/agents`
+- [x] `[n]` Hybrid retrieval → `llm/rag`
+- [x] `[n]` Inference optimization → `llm/runtime`
+- [x] `[n]` LLM benchmarks → `llm/eval`
+- [x] `[n]` LLM caching → `llm/passerelle`
+- [x] `[n]` LLM eval metrics → `llm/eval`
+- [x] `[n]` LLM observability → `llm/observabilite`
+- [x] `[n]` LLM-as-judge → `llm/eval`
+- [x] `[n]` Late-interaction retrieval → `llm/rag`
+- [x] `[n]` LoRA et QLoRA → `llm/finetuning`
+- [x] `[n]` Multi-Token Prediction → `llm/runtime`
+- [x] `[n]` Multi-agent systems → `llm/agents`
+- [x] `[n]` PEFT → `llm/finetuning`
+- [x] `[n]` Perplexity → `llm/modele` — et **non** `llm/eval` : la page se dit
+      INTRINSÈQUE et range l'éval applicative parmi ses « alternatives »
+- [x] `[n]` Prompt engineering → `llm/prompt`
+- [x] `[n]` Query transformations → `llm/rag`
+- [x] `[n]` RAG → `llm/rag`
+- [x] `[n]` RAG benchmarks → `llm/eval`
+- [x] `[n]` RAG eval → `llm/eval`
+- [x] `[n]` RL for LLMs → `llm/finetuning`
+- [x] `[n]` RLHF and DPO → `llm/finetuning`
+- [x] `[n]` Reasoning models → `llm/modele`
+- [x] `[n]` Reliability patterns → `llm/agents`
+- [x] `[n]` Reranking → `llm/rag`
+- [x] `[n]` Reward modeling → `llm/finetuning`
+- [x] `[n]` Routing and cascading → `llm/passerelle` — et **non** `llm/rag`, où le hub
+      la citait : la page nomme les trois briques du sous-domaine et écrit
+      « passerelles qui l'implémentent »
+- [x] `[n]` SFT → `llm/finetuning`
+- [x] `[n]` Sandboxing de code généré → **`security/ia`**, hors du domaine
+- [x] `[n]` Scaling laws → `llm/modele`
+- [x] `[n]` Server-Sent Events & streaming LLM → `llm/runtime` — et **non** `web/api` :
+      ses voisines sont Decoding strategies, Tokenization et Inference optimization
+- [x] `[n]` Small Language Models → `llm/modele`
+- [x] `[n]` Speculative decoding → `llm/runtime`
+- [x] `[n]` Structured outputs → `llm/sortie-structuree`
+- [x] `[n]` Synthetic data generation → `llm/finetuning`
+- [x] `[n]` Tokenization → `llm/modele`
+- [x] `[n]` Tool use patterns → `llm/agents`
+- [x] `[n]` a2a-protocol → `llm/protocole`
+- [x] `[n]` agent-loops → `llm/agents`
+- [x] `[n]` mcp-protocol → `llm/protocole`
+- [x] `[n]` prompt-caching → `llm/runtime`
+- [x] `[n]` tool-use → `llm/agents`
 
 ### Bases de données  ·  51 pages  ·  **migré le 2026-09-04, 4 notions rangées le 2026-09-05**
 
@@ -1162,22 +1235,33 @@ c'est la frontière de domaine.
 
 - `[c]` Comparatif - Apps data & démos ML — filtre `ui/data-app`
 
-### Sécurité  ·  7 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
+### Sécurité  ·  8 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05 (deux fois)**
 
 - [x] hub écrit — hub de domaine, issu de `MOC/Categories/` ; corps **réécrit au lot 4** :
   le domaine porte désormais trois activités et non deux, et la phrase qui annonçait que
   les notions de sécurité IA « ne sont pas descendues ici » est remplacée
-- [x] sous-dossiers créés — aucun (`security/ia` 4, `security/recon` 2, `security/auth` 1)
-- [x] notions recatégorisées — **lot 4, 2026-09-05**, valeur nouvelle `security/ia` :
-  les 4 sont ici, plus aucune page ne porte `concept/ai`, et la valeur est retirée du
-  vocabulaire
+- [x] sous-dossiers créés — `Systèmes IA/` (5), au **second** passage du 2026-09-05 :
+  la 5e page de `security/ia` arrive du domaine « LLM & IA générative » et fait franchir
+  le seuil. Le libellé n'est pas « Sécurité des systèmes IA », qui redoublerait le nom du
+  domaine parent — même défaut qu'« Inférence » sous « Statistiques & inférence »
+  (remontée 8). Restent au niveau du domaine `security/recon` (2) et `security/auth` (1)
+- [x] notions recatégorisées — **lot 4, en deux temps.** 2026-09-05, valeur nouvelle
+  `security/ia` : les 4 notions `concept/ai` descendent, `concept/ai` est retirée du
+  vocabulaire. Puis, dans le lot `concept/llm`, `Sandboxing de code généré` les rejoint —
+  ses voisines déclarées sont [[Prompt injection]], [[AI security]], [[Guardrails]] et
+  [[Human-in-the-loop]], soit quatre des cinq déjà tranchées
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Au niveau du domaine** — 7 pages
+**Systèmes IA/** — `security/ia` — 5 pages
 
-- `security/ia` — **valeur nouvelle**, 4 pages, sous le seuil :
-  `[n]` AI security · `[n]` Guardrails · `[n]` Jailbreaking and defenses ·
-  `[n]` Prompt injection
+- `[n]` AI security — la page chapeau
+- `[n]` Guardrails
+- `[n]` Jailbreaking and defenses
+- `[n]` Prompt injection
+- `[n]` Sandboxing de code généré — arrivée du lot `concept/llm`, c'est elle qui promeut
+
+**Au niveau du domaine** — 3 pages
+
 - `security/recon` — 2 : `[b]` Web-Check — application, TypeScript · `[b]` osint4all — annuaire
 - `security/auth` — 1 : `[b]` PyJWT — paquet, Python
 
@@ -1191,6 +1275,16 @@ c'est la frontière de domaine.
 > pratique qui traverse les modèles**, pas un sous-sujet de l'IA générative. Ce n'est pas
 > un effet de seuil : 3 → 7 pages ne promeut aucun sous-dossier. Les deux phrases de hub
 > sont réécrites dans le même commit.
+>
+> **Le lot `concept/llm` a rejoué le cas, et la réponse a été la même.**
+> `Sandboxing de code généré` porte `concept/llm` et non `concept/ai`, donc l'argument de
+> la famille large ne s'appliquait pas ; c'est le contenu qui a tranché — la page ouvre
+> sur « le code généré est non fiable par construction… parce que son entrée peut l'être
+> ([[Prompt injection]]) », et ses voisines déclarées sont quatre des cinq pages du
+> dossier. Cette fois **il y a un effet de seuil** : 4 → 5, donc `Systèmes IA/` naît.
+> Arbitrage explicite de floSa : ce n'est pas un argument. « Le seuil ne se négocie jamais
+> page par page, ni pour l'atteindre ni pour l'éviter ; la catégorie se décide sur le
+> contenu, le dossier suit tout seul. »
 
 ### Observabilité  ·  3 pages  ·  **migré le 2026-09-04**
 

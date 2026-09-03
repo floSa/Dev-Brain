@@ -13,18 +13,23 @@ mécanique** de toute la migration.
 
 Prérequis : lot 3 fait pour le domaine concerné.
 
-> **État au 2026-09-05 — cinq familles sur douze sont faites.** Le pilote
-> « Statistiques & inférence » (37 notions) a été suivi d'une seconde conversation qui a
-> traité **mathématiques (26), data (8 sur 13), signal (5) et sécurité IA (4)** — **80
-> notions rangées** au total, 5 sous-dossiers créés, 5 valeurs de catégorie ouvertes,
-> 4 valeurs `concept/*` retirées du vocabulaire, 5 MOC supprimées. Il reste **217 notions**
-> sous `Wiki/Concepts/` et **5 MOC** vivantes.
+> **État au 2026-09-05 — sept familles sur douze sont faites.** Le pilote
+> « Statistiques & inférence » (37 notions), puis une deuxième conversation —
+> **mathématiques (26), data (8 sur 13), signal (5), sécurité IA (4)** —, puis une
+> troisième qui a fermé `data` (les **5 remontées**) et traité **`llm` (56)**. Soit
+> **141 notions rangées**, 12 sous-dossiers créés, 10 valeurs de catégorie ouvertes,
+> 7 valeurs retirées du vocabulaire (6 `concept/*` et `llm/mcp`), 7 MOC supprimées.
+> Il reste **156 notions** sous `Wiki/Concepts/` — `dl` (52), `ml` (67), `rl` (17),
+> `ts` (13), `nlp` (7) — et **3 MOC** vivantes.
 >
 > Les *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée. Les
 > dix premières viennent du pilote — lire les nº 1, 3 et 5 avant d'attaquer un domaine. Les
-> suivantes (11 à 17) viennent de la seconde conversation ; la **nº 11 est la plus
-> importante du lot** : elle décrit un défaut que le pilote avait introduit sans le voir, et
-> qui se serait répété à chaque domaine.
+> suivantes (11 à 19) viennent de la deuxième conversation ; la **nº 11 est la plus
+> importante du lot**. La nº 20 à 22 viennent de la fermeture de `data`, la nº 23 du
+> retrait de `concept/devops`, et les **nº 24 à 28 du domaine `llm`** — dont la nº 24, qui
+> dit ce que l'étape 0 ne sait PAS faire, la nº 25, où le seuil ne doit pas non plus
+> RETENIR un rangement, et la nº 26, sur les quatre ensembles à croiser pour nommer un
+> dossier.
 
 ## Contexte
 
@@ -90,8 +95,15 @@ une fois que le vocabulaire final est connu.
       domaine (cf. remontée 13).
 - [x] **les 5 notions `concept/data` remontées — fait le 2026-09-05** (cf. `data`
       ci-dessus, second passage)
-- [ ] `llm` (56) · [ ] `dl` (52) · [ ] `ml` (67) · [ ] `rl` (17) · [ ] `ts` (13) ·
-      [ ] `nlp` (7)
+- [x] **`llm` (56) — fait le 2026-09-05.** Trois valeurs ouvertes (`llm/modele`,
+      `llm/prompt`, `llm/protocole`) et une **retirée**, `llm/mcp`, que la troisième
+      remplace — premier cas du lot où une valeur de brique est recatégorisée.
+      **Six sous-dossiers créés** dans le domaine, un septième dans « Sécurité » :
+      55 notions descendent ici, la 56e (`Sandboxing de code généré`) va en
+      `security/ia` et l'y fait franchir le seuil. L'étape 0 a rangé 35 notions
+      sur 56 ; les 21 autres l'ont été par leur section `## Approches voisines`
+      (remontée 24)
+- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `rl` (17) · [ ] `ts` (13) · [ ] `nlp` (7)
 
 ### Pour chaque notion
 
@@ -665,3 +677,157 @@ cette liste ne sont pas des `concept/*` et vivent dans le bloc ```domaine. Elles
 même raisonnement, mais pas de la même mesure — une valeur de brique sans page peut être un
 domaine légitimement vide en attente d'une capture, là où `concept/*` est un vocabulaire en
 cours de suppression. À poser au lot 8, pas ici.
+
+---
+
+## Remontées — domaine « LLM & IA générative », 2026-09-05
+
+56 notions rangées (55 ici, 1 en « Sécurité »), **7 sous-dossiers créés** — le plus gros
+lot de la migration après le lot 3 —, 3 valeurs ouvertes, 1 valeur de brique retirée,
+21 briques déplacées par ricochet, 2 comparatifs descendus, 1 MOC supprimée. Aucune
+violation dure à aucun moment. Jeu d'avertissements **identique ligne à ligne**, 149 avant
+et après, et les 47 comparatifs ont exactement les mêmes membres qu'avant.
+
+### 24. Ce que l'étape 0 ne sait PAS faire, et ce qui prend le relais
+
+L'étape 0 a tenu sa promesse : le corps du hub cite **35 des 56 notions** nommément, et ses
+paragraphes ne sont pas des listes mais des **familles** — le RAG et ses cinq étages dans
+l'ordre du pipeline, l'éval opposée à l'observabilité, les deux façons de sortir autre chose
+que du texte. Ces 35 se rangent en lisant, comme sur « Mathématiques » (remontée 12).
+
+Les 21 restantes montrent la limite, et elle est instructive : **un hub parle de ce qu'on
+construit, pas de ce qu'on comprend.** `Tokenization`, `Perplexity`, `Scaling laws`,
+`Reasoning models` sont citées par le hub, mais dans un paragraphe qui explique un
+*symptôme* (« un LLM ne voit que des tokens ») — il ne dit nulle part qu'elles forment une
+famille. `GRPO`, `Reward modeling`, `Multi-Token Prediction`, `a2a-protocol`,
+`Agent skills` ne sont pas citées du tout.
+
+Ce qui a pris le relais n'est ni le tag ni l'`## Aperçu`, c'est la section
+**`## Approches voisines`**. Elle nomme les pages que la notion se reconnaît comme
+parentes, et c'est un signal bien plus fort qu'un tag parce qu'il a été écrit **en pensant
+à ces pages-là**. Quatre arbitrages en sont sortis, tous contre l'intuition de départ :
+
+- `Routing and cascading` : le hub la range dans le paragraphe RAG. Ses voisines déclarées
+  sont [[LiteLLM]], [[OmniRoute]] et [[OpenRouter]] — les **trois** briques de
+  `llm/passerelle` — sous la mention « passerelles qui l'implémentent ». Elle va là.
+- `Perplexity` : candidate évidente pour `llm/eval`. Ses voisines sont
+  [[Tokenization]], [[Decoding strategies]], [[Cross-entropy]], [[Shannon entropy]], et la
+  page écrit que l'éval applicative est « une **alternative** » à ce qu'elle décrit. C'est
+  une propriété du modèle, pas une mesure de produit.
+- `Server-Sent Events & streaming LLM` : le titre appelle `web/api`. Ses voisines sont
+  [[Decoding strategies]], [[Tokenization]] et [[Inference optimization]] — « continuous
+  batching et KV-cache alimentent plusieurs flux SSE en parallèle **côté serveur** ». Le
+  transport HTTP est le sujet apparent, le débit du serveur est le vrai.
+- `Sandboxing de code généré` : voir la remontée 25.
+
+**Geste à ajouter à l'étape 0** : compter les notions que le corps du hub cite nommément,
+puis, pour chaque notion restante, lire sa section `## Approches voisines` **avant** son
+`## Aperçu`. Sur `ml` (67) et `dl` (52), c'est la seule des trois lectures qui passe à
+l'échelle.
+
+### 25. Le cas `security/ia` rejoué — et cette fois le seuil mordait
+
+La remontée 13 demandait : « à rejouer sur les 56 notions `llm` : combien d'entre elles
+sont la théorie d'une pratique plus large qui a son propre domaine ? » Réponse mesurée :
+**une seule**, `Sandboxing de code généré`.
+
+Elle est plus difficile que les quatre de septembre, parce que l'argument qui les avait
+tranchées ne s'applique pas : elle porte `concept/llm` et non `concept/ai`, donc « la
+famille large était déjà un choix » tombe. C'est le contenu qui a tranché — la page ouvre
+sur « le code généré est **non fiable par construction**… parce que son entrée peut l'être
+([[Prompt injection]]) », et quatre de ses cinq voisines déclarées sont les pages déjà
+rangées en `security/ia`.
+
+Deux options concurrentes existaient, chacune sourcée sur une page du vault, et c'est ce
+qui rendait l'arbitrage réel : `llm/agents`, parce que [[Harnais d'agent]] énumère « la
+boucle, les outils, le contexte, le parsing, la reprise, la persistance, **le bac à
+sable** » ; `compute/a-la-demande`, parce que `taxonomie.md` décrit littéralement cette
+valeur comme « bacs à sable d'exécution de code non fiable (typiquement généré par un
+LLM) ». Aucune des deux ne déclenchait d'effet de seuil ; `security/ia` en déclenchait un.
+
+**Arbitrage de floSa, et il vaut comme règle** : « le seuil ne se négocie jamais page par
+page, ni pour l'atteindre ni pour l'éviter. La catégorie se décide sur le contenu, le
+dossier suit tout seul. » C'est la remontée 4 lue dans l'autre sens — le pilote avait
+établi qu'un seuil ne doit pas *motiver* une catégorie, ce lot établit qu'il ne doit pas
+non plus la *retenir*.
+
+Distinction explicitement posée avec le cas `Manifold learning` (remontée 3), où floSa
+avait au contraire refusé le déplacement : là, la population du domaine cible n'était pas
+arbitrée et le contenu de la page contredisait le rangement proposé. Ici les 4 pages
+d'accueil sont tranchées depuis le matin et la 5e est sans ambiguïté. **Ce n'est donc pas
+le franchissement de frontière qui bloque, c'est l'incertitude sur ce qu'on trouve de
+l'autre côté.**
+
+### 26. Nommer un dossier : les quatre ensembles ont mordu tous les quatre, d'un coup
+
+Les remontées 8 et 17 avaient établi qu'un libellé de hub se vérifie contre quatre
+ensembles. Sur ce lot, chacun a servi au moins une fois — c'est le premier lot où le
+problème est systématique plutôt qu'anecdotique.
+
+| Libellé naturel | Ce qui l'interdit | Retenu |
+|---|---|---|
+| « RAG » | **une page du dossier** : `RAG.md` (ensemble nº 4, remontée 17) | RAG & retrieval |
+| « Observabilité » | **le hub d'un domaine** de l'arbre (ensemble nº 3) | Observabilité des LLM |
+| « Observabilité LLM » | un `alias:` de `LLM observability`, **qui vit dans le dossier** | idem |
+| « Sortie structurée » / « Sorties structurées » | `alias:` de `Structured outputs`, qui vit dedans | Sortie typée |
+| « Génération contrainte » / « Décodage contraint » | `alias:` de `Constrained decoding`, qui vit dedans | idem |
+| « Sécurité des systèmes IA » | **redouble le nom du domaine parent** (remontée 8) | Systèmes IA |
+
+Deux enseignements qui n'étaient pas encore écrits. D'abord, **la collision d'alias avec
+une page du dossier ne déclenche aucun avertissement** : R5 ne compare que des pages de
+**même rôle**, et un hub contre une notion n'en est pas. La règle qui la rend indésirable
+n'est donc pas dans le validateur, elle est dans Obsidian — un fichier nommé `X` capture
+`[[X]]` et rend inatteignable l'alias `X` d'une autre page. À vérifier à la main, à chaque
+libellé.
+
+Ensuite, le libellé retenu **n'a pas à être le nom de la catégorie**, et c'est même
+l'inverse qui devient la norme : quatre libellés sur six s'en écartent ici. Ce qu'on nomme
+est la **population du dossier**, pas la valeur du champ.
+
+### 27. Une valeur de brique retirée — le premier cas du lot 4
+
+`llm/mcp` nommait **un protocole**. `a2a-protocol` est un second protocole, ouvert, du même
+étage — et il n'existait aucun endroit honnête où le mettre : `llm/mcp` aurait menti,
+`llm/agents` l'aurait rangé avec des bibliothèques d'orchestration alors que c'est une
+spécification.
+
+Arbitrage de floSa : ouvrir `llm/protocole` et **y verser MCP aussi**, ce qui recatégorise
+deux briques ([[fastmcp]], [[mcpjam]]) et retire `llm/mcp` du bloc. C'est la première fois
+du lot 4 qu'on touche à une valeur portée par des **briques** — jusqu'ici le lot n'ouvrait
+que du vocabulaire neuf pour des notions sans domicile.
+
+Ce que ça coûte, mesuré : deux lignes `categorie:` réécrites, aucun déplacement de fichier
+(les deux valeurs restent sous le seuil), un commentaire à corriger dans
+`Comparatif - Frameworks LLM.base`, qui citait `llm/mcp` dans sa liste des valeurs sorties
+de l'ancien `llm/framework`. Rien d'autre — et le relevé des membres des 47 `.base` ne
+bouge pas.
+
+Ce que ça apprend : **une valeur de catégorie qui nomme un produit vieillit mal.** `mcp` a
+tenu tant qu'il n'existait qu'un protocole ; il a cassé au second. À rejouer sur les
+valeurs restantes du vocabulaire qui nomment une technologie plutôt qu'une fonction —
+`data/tableau` et `ml/hub` sont les deux candidates visibles, à poser au lot 8.
+
+### 28. Un domaine à douze sous-dossiers, et ce que ça dit du seuil
+
+« LLM & IA générative » passe de 6 à **12 sous-dossiers** pour 129 pages, soit 17 pages au
+niveau du domaine. Le seuil n'a été forcé nulle part : six sous-domaines l'ont franchi
+parce qu'ils ont reçu leurs notions, dont trois qui l'ont franchi **de justesse** —
+`observabilite` 4→5, `sortie-structuree` 3→5, `passerelle` 3→5.
+
+C'est le premier domaine où la question « douze dossiers, est-ce encore de la navigation ? »
+se pose honnêtement. Deux faits la referment, et il vaut mieux les avoir écrits avant
+`ml` (67 notions, 9 sous-dossiers déjà) :
+
+1. **Les douze se lisent en trois groupes**, et le corps du hub les présente ainsi
+   désormais — le modèle (3 dossiers), ce qu'on construit avec (7), ce qui dit si ça
+   marche (2). Un dossier de plus dans un groupe nommé ne coûte pas la même chose qu'un
+   dossier de plus dans une liste de douze.
+2. **Le plafond du seuil n'a jamais été proche** : le plus gros sous-dossier fait 18 pages
+   sur 129, et 17 pages restent au niveau du domaine. Le cas que le plafond vise — un fils
+   qui redouble son parent — ne s'est pas présenté.
+
+Ce qui, en revanche, **mérite d'être surveillé au lot 6** : `Modèles de langage/` est le
+seul sous-dossier du domaine sans aucune brique. Six notions, zéro chose à installer. Ce
+n'est pas une anomalie — c'est ce qui arrive quand un domaine a de la théorie propre — mais
+c'est un profil nouveau dans l'arbre, et le gabarit de hub §9 (« Choisir » entre des
+briques) n'y répond qu'à moitié.

@@ -94,6 +94,31 @@ SUB_LABEL = {
     "llm/finetuning": "Fine-tuning",
     "llm/text-to-sql": "Text-to-SQL",
     "llm/assistant": "Assistants",
+    # Les six suivants naissent au lot 4 : les 56 notions `concept/llm` font franchir
+    # le seuil à quatre sous-domaines qui n'avaient que des briques, et deux valeurs
+    # nouvelles arrivent déjà au-dessus. Quatre libellés s'écartent de leur catégorie,
+    # et chaque fois pour une raison mesurée (cf. remontées 8 et 17) :
+    #  - « RAG » est le nom de fichier d'une NOTION QUI VIT DANS LE DOSSIER — le cas
+    #    exact de `signal/traitement` au lot 4, un lien nu ne résoudrait plus de façon
+    #    déterministe ; le libellé nomme donc la population, retrieval compris ;
+    #  - « Observabilité » est le hub du DOMAINE homonyme, et « Observabilité LLM » est
+    #    un `alias:` de la notion qui vit dans le dossier — les deux sont pris ;
+    #  - « Sortie structurée » et « Sorties structurées » sont des `alias:` de
+    #    `Structured outputs`, « Génération contrainte » et « Décodage contraint » des
+    #    `alias:` de `Constrained decoding` — les quatre vivent dans le dossier ;
+    #  - « Passerelles » au pluriel : le singulier lirait comme la notion, pas le dossier.
+    "llm/rag": "RAG & retrieval",
+    "llm/eval": "Évaluation",
+    "llm/observabilite": "Observabilité des LLM",
+    "llm/sortie-structuree": "Sortie typée",
+    "llm/passerelle": "Passerelles",
+    "llm/modele": "Modèles de langage",
+    # Sécurité — la 5e page de `security/ia` arrive du lot 4 (`Sandboxing de code
+    # généré`) et fait franchir le seuil. Le libellé n'est PAS « Sécurité des systèmes
+    # IA » : il redoublerait le nom du domaine parent, défaut déjà écarté pour
+    # « Inférence » sous « Statistiques & inférence » (remontée 8). Arbitrage de floSa
+    # du 2026-09-05 : « Systèmes IA ».
+    "security/ia": "Systèmes IA",
     # Machine Learning — « ### Machine Learning · 241 pages »
     "ml/apprentissage-profond": "Apprentissage profond",
     "ml/rl": "Apprentissage par renforcement",

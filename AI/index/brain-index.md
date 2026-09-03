@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 707 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 714 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -271,10 +271,6 @@
 - **Flowise** — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 - **Langflow** — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
 
-### llm/mcp
-- **fastmcp** — La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma.
-- **mcpjam** — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
-
 ### llm/memoire
 - **Headroom** — Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
 - **Letta** — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
@@ -293,6 +289,10 @@
 - **LiteLLM** — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
 - **OmniRoute** — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 - **OpenRouter** — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
+
+### llm/protocole
+- **fastmcp** — La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma.
+- **mcpjam** — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
 
 ### llm/rag
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
@@ -588,64 +588,6 @@
 - **Vision par ordinateur** — domaines : data-sci, ml-eng · alias : computer vision, CV, vision
 - **Vision Transformers (ViT)** — domaines : ml-eng, ai-eng · alias : ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision
 
-### concept/llm
-- **a2a-protocol** — domaines : ai-eng · alias : A2A, Agent2Agent, Agent-to-Agent, protocole A2A, agent card
-- **Advanced RAG** — domaines : ai-eng · alias : RAG avancé, advanced retrieval-augmented generation, modular RAG
-- **Agent evaluation** — domaines : ai-eng · alias : évaluation d'agents, agent evaluation, agent eval
-- **Agent memory** — domaines : ai-eng · alias : mémoire d'agent, agent memory, mémoire LLM
-- **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
-- **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
-- **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
-- **Chain-of-Thought** — domaines : ai-eng · alias : CoT, chaîne de pensée, raisonnement pas à pas, self-consistency, zero-shot CoT
-- **Chunking strategies** — domaines : ai-eng · alias : chunking, découpage de documents, stratégies de découpage, text splitting
-- **Code and math benchmarks** — domaines : ai-eng, ml-eng · alias : benchmarks code, benchmarks maths, HumanEval, MBPP, SWE-bench, GSM8K, MATH, AIME, pass@k, éval par exécution
-- **Constrained decoding** — domaines : ai-eng · alias : génération contrainte, décodage contraint, structured generation, grammar-constrained decoding
-- **Construction de graphes de connaissances** — domaines : ai-eng · alias : knowledge graph construction, KG construction, extraction d'entités et de relations, knowledge graph building, peuplement de graphe de connaissances
-- **Context engineering** — domaines : ai-eng · alias : ingénierie de contexte, gestion du contexte, context window management
-- **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
-- **GraphRAG** — domaines : ai-eng · alias : graph RAG, knowledge graph RAG, RAG sur graphe, RAG augmenté par graphe de connaissances
-- **GRPO** — domaines : ml-eng, ai-eng · alias : Group Relative Policy Optimization, optimisation de politique par groupes, optimisation de politique relative par groupe
-- **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
-- **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
-- **Hybrid retrieval** — domaines : ai-eng · alias : recherche hybride, hybrid search, retrieval hybride, dense + sparse
-- **Inference optimization** — domaines : ai-eng, mlops · alias : optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM
-- **Late-interaction retrieval** — domaines : ai-eng · alias : colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim
-- **LLM benchmarks** — domaines : ai-eng, ml-eng · alias : bancs d'essai LLM, benchmarks LLM, leaderboard, MMLU, GPQA, BBH, IFEval, MT-Bench, Chatbot Arena, LMArena, HELM
-- **LLM caching** — domaines : ai-eng · alias : response caching, cache de réponses LLM, semantic cache, cache sémantique, exact-match cache, GPTCache
-- **LLM eval metrics** — domaines : ai-eng · alias : métriques d'évaluation LLM, évaluation LLM, LLM evaluation, exact match, BLEU, ROUGE, BERTScore, pass@k, G-Eval, offline eval
-- **LLM observability** — domaines : ai-eng, mlops · alias : observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens
-- **LLM-as-judge** — domaines : ai-eng · alias : LLM as a judge, LLM juge, LLM évaluateur, G-Eval, pairwise comparison, reference-free evaluation, MT-Bench
-- **LoRA et QLoRA** — domaines : ml-eng, ai-eng · alias : LoRA, Low-Rank Adaptation, QLoRA, quantized LoRA, adapters LoRA, low-rank adapters
-- **mcp-protocol** — domaines : ai-eng · alias : MCP, Model Context Protocol, protocole MCP, MCP Apps, MCP Tasks, MRTR, spec 2026-07-28, Agentic AI Foundation
-- **Multi-agent systems** — domaines : ai-eng · alias : systèmes multi-agents, multi-agent systems, MAS
-- **Multi-Token Prediction** — domaines : ml-eng, ai-eng · alias : MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding
-- **PEFT** — domaines : ml-eng, ai-eng · alias : parameter-efficient fine-tuning, fine-tuning paramétriquement efficace, adapters
-- **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
-- **Prompt engineering** — domaines : ai-eng · alias : conception de prompts, prompt design, few-shot prompting, in-context learning
-- **prompt-caching** — domaines : ai-eng · alias : prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching
-- **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
-- **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
-- **RAG benchmarks** — domaines : ai-eng · alias : benchmarks RAG, bancs d'essai RAG, RGB, CRAG, RAGBench, TRACe, RAGTruth, FRAMES, TREC RAG, robustesse RAG, noise robustness, negative rejection
-- **RAG eval** — domaines : ai-eng · alias : RAG evaluation, évaluation RAG, évaluation des pipelines RAG, faithfulness, groundedness, context precision, context recall, answer relevancy
-- **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
-- **Reliability patterns** — domaines : ai-eng · alias : patrons de fiabilité, reliability patterns, fiabilité des apps LLM
-- **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
-- **Reward modeling** — domaines : ml-eng, ai-eng · alias : reward model, modèle de récompense, RM, preference model, modèle de préférence, RLAIF
-- **RL for LLMs** — domaines : ml-eng, ai-eng · alias : RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR
-- **RLHF and DPO** — domaines : ml-eng, ai-eng · alias : RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization
-- **Routing and cascading** — domaines : ai-eng · alias : routing, query routing, semantic routing, model routing, model cascading, cascade de modèles, routage et cascade
-- **Sandboxing de code généré** — domaines : ai-eng · alias : sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM
-- **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
-- **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
-- **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
-- **Small Language Models** — domaines : ai-eng · alias : SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM
-- **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
-- **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
-- **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
-- **Tokenization** — domaines : ai-eng · alias : tokenisation, découpage en tokens, BPE, byte-pair encoding, subword tokenization
-- **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
-- **tool-use** — domaines : ai-eng · alias : function calling, appel d'outils, tool calling, appel de fonctions
-
 ### concept/ml
 - **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
@@ -789,6 +731,85 @@
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 
+### llm/agents
+- **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
+- **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
+- **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
+- **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
+- **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
+- **Multi-agent systems** — domaines : ai-eng · alias : systèmes multi-agents, multi-agent systems, MAS
+- **Reliability patterns** — domaines : ai-eng · alias : patrons de fiabilité, reliability patterns, fiabilité des apps LLM
+- **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
+- **tool-use** — domaines : ai-eng · alias : function calling, appel d'outils, tool calling, appel de fonctions
+
+### llm/eval
+- **Agent evaluation** — domaines : ai-eng · alias : évaluation d'agents, agent evaluation, agent eval
+- **Code and math benchmarks** — domaines : ai-eng, ml-eng · alias : benchmarks code, benchmarks maths, HumanEval, MBPP, SWE-bench, GSM8K, MATH, AIME, pass@k, éval par exécution
+- **LLM benchmarks** — domaines : ai-eng, ml-eng · alias : bancs d'essai LLM, benchmarks LLM, leaderboard, MMLU, GPQA, BBH, IFEval, MT-Bench, Chatbot Arena, LMArena, HELM
+- **LLM eval metrics** — domaines : ai-eng · alias : métriques d'évaluation LLM, évaluation LLM, LLM evaluation, exact match, BLEU, ROUGE, BERTScore, pass@k, G-Eval, offline eval
+- **LLM-as-judge** — domaines : ai-eng · alias : LLM as a judge, LLM juge, LLM évaluateur, G-Eval, pairwise comparison, reference-free evaluation, MT-Bench
+- **RAG benchmarks** — domaines : ai-eng · alias : benchmarks RAG, bancs d'essai RAG, RGB, CRAG, RAGBench, TRACe, RAGTruth, FRAMES, TREC RAG, robustesse RAG, noise robustness, negative rejection
+- **RAG eval** — domaines : ai-eng · alias : RAG evaluation, évaluation RAG, évaluation des pipelines RAG, faithfulness, groundedness, context precision, context recall, answer relevancy
+
+### llm/finetuning
+- **GRPO** — domaines : ml-eng, ai-eng · alias : Group Relative Policy Optimization, optimisation de politique par groupes, optimisation de politique relative par groupe
+- **LoRA et QLoRA** — domaines : ml-eng, ai-eng · alias : LoRA, Low-Rank Adaptation, QLoRA, quantized LoRA, adapters LoRA, low-rank adapters
+- **PEFT** — domaines : ml-eng, ai-eng · alias : parameter-efficient fine-tuning, fine-tuning paramétriquement efficace, adapters
+- **Reward modeling** — domaines : ml-eng, ai-eng · alias : reward model, modèle de récompense, RM, preference model, modèle de préférence, RLAIF
+- **RL for LLMs** — domaines : ml-eng, ai-eng · alias : RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR
+- **RLHF and DPO** — domaines : ml-eng, ai-eng · alias : RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization
+- **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
+- **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
+
+### llm/memoire
+- **Agent memory** — domaines : ai-eng · alias : mémoire d'agent, agent memory, mémoire LLM
+
+### llm/modele
+- **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
+- **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
+- **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
+- **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
+- **Small Language Models** — domaines : ai-eng · alias : SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM
+- **Tokenization** — domaines : ai-eng · alias : tokenisation, découpage en tokens, BPE, byte-pair encoding, subword tokenization
+
+### llm/observabilite
+- **LLM observability** — domaines : ai-eng, mlops · alias : observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens
+
+### llm/passerelle
+- **LLM caching** — domaines : ai-eng · alias : response caching, cache de réponses LLM, semantic cache, cache sémantique, exact-match cache, GPTCache
+- **Routing and cascading** — domaines : ai-eng · alias : routing, query routing, semantic routing, model routing, model cascading, cascade de modèles, routage et cascade
+
+### llm/prompt
+- **Chain-of-Thought** — domaines : ai-eng · alias : CoT, chaîne de pensée, raisonnement pas à pas, self-consistency, zero-shot CoT
+- **Context engineering** — domaines : ai-eng · alias : ingénierie de contexte, gestion du contexte, context window management
+- **Prompt engineering** — domaines : ai-eng · alias : conception de prompts, prompt design, few-shot prompting, in-context learning
+
+### llm/protocole
+- **a2a-protocol** — domaines : ai-eng · alias : A2A, Agent2Agent, Agent-to-Agent, protocole A2A, agent card
+- **mcp-protocol** — domaines : ai-eng · alias : MCP, Model Context Protocol, protocole MCP, MCP Apps, MCP Tasks, MRTR, spec 2026-07-28, Agentic AI Foundation
+
+### llm/rag
+- **Advanced RAG** — domaines : ai-eng · alias : RAG avancé, advanced retrieval-augmented generation, modular RAG
+- **Chunking strategies** — domaines : ai-eng · alias : chunking, découpage de documents, stratégies de découpage, text splitting
+- **Construction de graphes de connaissances** — domaines : ai-eng · alias : knowledge graph construction, KG construction, extraction d'entités et de relations, knowledge graph building, peuplement de graphe de connaissances
+- **GraphRAG** — domaines : ai-eng · alias : graph RAG, knowledge graph RAG, RAG sur graphe, RAG augmenté par graphe de connaissances
+- **Hybrid retrieval** — domaines : ai-eng · alias : recherche hybride, hybrid search, retrieval hybride, dense + sparse
+- **Late-interaction retrieval** — domaines : ai-eng · alias : colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim
+- **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
+- **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
+- **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
+
+### llm/runtime
+- **Inference optimization** — domaines : ai-eng, mlops · alias : optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM
+- **Multi-Token Prediction** — domaines : ml-eng, ai-eng · alias : MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding
+- **prompt-caching** — domaines : ai-eng · alias : prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching
+- **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
+- **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
+
+### llm/sortie-structuree
+- **Constrained decoding** — domaines : ai-eng · alias : génération contrainte, décodage contraint, structured generation, grammar-constrained decoding
+- **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
+
 ### math/algebre-lineaire
 - **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD
 - **Matrix decompositions** — domaines : data-sci, ml-eng · alias : factorisation matricielle, décompositions matricielles, matrix factorization
@@ -828,6 +849,7 @@
 - **Guardrails** — domaines : ai-eng · alias : garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie
 - **Jailbreaking and defenses** — domaines : ai-eng · alias : jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN
 - **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
+- **Sandboxing de code généré** — domaines : ai-eng · alias : sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM
 
 ### signal/traitement
 - **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
@@ -936,16 +958,20 @@
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
 - **ML Engineering** — Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.
 - **MLOps** — Mettre un modèle en production et savoir, ensuite, s'il marche encore.
+- **Modèles de langage** — Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
+- **Observabilité des LLM** — Voir ce qu'une application LLM fait en production — traces, coût, latence, qualité sur le trafic réel.
 - **Optimisation** — Minimiser une fonction — le mécanisme qui fait apprendre un modèle, les garanties qu'on a ou non, et la branche discrète qu'on délègue à un solveur.
 - **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
+- **Passerelles** — Une seule API devant plusieurs fournisseurs — router, replier, plafonner, et ne pas rappeler ce qu'on a déjà demandé.
 - **Patterns** — Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.
 - **Probabilités** — Ce qui rend l'inférence possible — les théorèmes qui disent qu'un échantillon converge, et les processus qui modélisent le hasard dans le temps.
+- **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
@@ -954,9 +980,11 @@
 - **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.
 - **Serving** — Exposer un modèle déjà entraîné derrière une API — et tenir la latence, le débit et les versions.
 - **Signal & audio** — Analyser un signal échantillonné — le décomposer en fréquences, le filtrer, en tirer des descripteurs.
+- **Sortie typée** — Obtenir du modèle un objet conforme à un schéma plutôt que du texte à parser.
 - **Statistiques & inférence** — Généraliser d'un échantillon à une population, et mesurer ce que cette généralisation vaut — tests, estimation, inférence causale.
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Suivi d'expériences** — Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.
+- **Systèmes IA** — La surface d'attaque d'un système qui embarque un modèle, et les défenses qui tiennent.
 - **Sécurité** — Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
 - **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
@@ -969,3 +997,4 @@
 - **Vision** — Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.
+- **Évaluation** — Mesurer ce que vaut une application LLM sur un jeu de tests — avant la production, et de façon rejouable.

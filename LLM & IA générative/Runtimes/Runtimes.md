@@ -37,6 +37,13 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - Appeler des modèles hébergés par d'autres plutôt que les héberger → [[LiteLLM]] ou [[OpenRouter]], et non ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[Inference optimization]] — domaines : ai-eng, mlops
+- [[Multi-Token Prediction]] — domaines : ml-eng, ai-eng
+- [[prompt-caching]] — domaines : ai-eng
+- [[Server-Sent Events & streaming LLM]] — domaines : ai-eng
+- [[Speculative decoding]] — domaines : ai-eng
+
 ### Briques
 - [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
 - [[LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.

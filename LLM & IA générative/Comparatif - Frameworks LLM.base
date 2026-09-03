@@ -9,7 +9,7 @@ filters:
     # En sortent, et ont leur propre domaine : les passerelles (`llm/passerelle`),
     # les runtimes (`llm/runtime`), le low-code (`llm/low-code`), les applications
     # pretes a deployer (`llm/assistant`), la memoire (`llm/memoire`), le
-    # text-to-SQL (`llm/text-to-sql`) et MCP (`llm/mcp`).
+    # text-to-SQL (`llm/text-to-sql`) et les protocoles (`llm/protocole`, ex-`llm/mcp`).
     - or:
         - categorie == "llm/socle"
         - categorie == "llm/agents"

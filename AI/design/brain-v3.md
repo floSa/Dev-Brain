@@ -139,7 +139,7 @@ deux dossiers `Dev/` que `categorie:` ne rangeait pas :
   (lot 8, cf. remontée 21 de `lot-3-arborescence.md`) ;
 - `MOC/Concepts/*` → les mêmes pages hub, puisque notions et briques cohabitent désormais
   — mais **seulement au lot 4**, une par une. Ces 10 pages étaient la seule porte d'entrée
-  (R7) de 30 des 297 notions. **5 sont supprimées au 2026-09-05** : une MOC meurt quand il
+  (R7) de 30 des 297 notions. **7 sont supprimées au 2026-09-05** : une MOC meurt quand il
   est **mesuré** que zéro page ne dépend plus d'elle seule pour sa R7 **et** que
   `build_mocs.py` ne la régénère plus, jamais sur l'intuition. C'est la seule exception à
   « aucun `rm` sur une page » pendant la migration.
@@ -466,7 +466,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
 | 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **CLOS le 2026-09-05** : 20 domaines, puis « Métiers/ », « Patterns/ », « Rules/ » et le dernier comparatif transverse. `Dev/` n'existe plus ; `Wiki/Concepts/` et `MOC/Concepts/` restent, pour le lot 4 | oui, `git mv` |
-| 4 | Les notions à recatégoriser, par lots. **En cours** — 80 rangées au 2026-09-05 (`stats` 37, `math` 26, `data` 8/13, `signal` 5, `ai` 4) ; restent 217 sous `Wiki/Concepts/` et 5 `MOC/Concepts/`. `math` et `stats` sont passés en premier, pas `ml`/`llm` : ce sont eux qui exigeaient d'ouvrir du vocabulaire | oui |
+| 4 | Les notions à recatégoriser, par lots. **En cours** — 141 rangées au 2026-09-05 (`stats` 37, `math` 26, `data` 13, `signal` 5, `ai` 4, `llm` 56) ; restent 156 sous `Wiki/Concepts/` (`ml` 67, `dl` 52, `rl` 17, `ts` 13, `nlp` 7) et 3 `MOC/Concepts/`. `math` et `stats` sont passés en premier, pas `ml`/`llm` : ce sont eux qui exigeaient d'ouvrir du vocabulaire, et l'ordre s'est vérifié — `llm` a quand même dû en ouvrir trois | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
 | 7 | Durcissement des règles du validateur restées en avertissement | oui |

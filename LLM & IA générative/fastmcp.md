@@ -3,7 +3,7 @@ role: brique
 nom: fastmcp
 alias: [FastMCP]
 pitch: "La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma."
-categorie: llm/mcp
+categorie: llm/protocole
 famille: paquet
 licence_type: open-source
 maturite: production

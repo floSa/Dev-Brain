@@ -3,7 +3,7 @@ role: brique
 nom: mcpjam
 alias: [MCPJam, MCPJam Inspector, mcpjam inspector]
 pitch: "« Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM."
-categorie: llm/mcp
+categorie: llm/protocole
 famille: application
 licence_type: open-source
 hosted: [self, managed]

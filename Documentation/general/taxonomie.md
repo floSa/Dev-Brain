@@ -157,9 +157,9 @@ le sous-domaine se lit dans le bloc, à l'intérieur de la branche retenue.
 ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl,
     non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
     orchestration, tracking, serving, monitoring, feature-store, hub}
-llm/{socle, agents, agent-de-code, assistant, rag, memoire, sortie-structuree,
-     text-to-sql, low-code, mcp, passerelle, runtime, finetuning, eval,
-     observabilite, outillage}
+llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
+     sortie-structuree, text-to-sql, low-code, protocole, passerelle, runtime,
+     finetuning, eval, observabilite, outillage}
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
@@ -322,6 +322,29 @@ valeurs disparues et ne sont pas reconduites.
 - `ml/eval` — bibliothèques de **métriques** et de validation de modèles ML (accuracy, F1, BLEU,
   ROUGE). Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring
   par juge) et du concept transverse porté par le tag `model-evaluation`.
+- `llm/modele` — **ouvert au lot 4.** Ce qu'**est** un modèle de langage, avant toute
+  application : ce qu'il ingère ([[Tokenization]]), comment il choisit ce qu'il produit
+  ([[Decoding strategies]]), ce qui se mesure sur lui sans tâche applicative
+  ([[Perplexity]]), ce que sa taille achète ([[Scaling laws]]) et les deux classes de
+  modèles que ce compromis a fait naître — les compacts ([[Small Language Models]]) et
+  ceux qui dépensent à l'inférence ([[Reasoning models]]). Distinct de `llm/runtime`, qui
+  le **sert** (le mécanisme est ici, la machine qui le fait tourner est là-bas), de
+  `llm/finetuning`, qui l'**ajuste**, et de `llm/eval`, qui mesure une **application** :
+  la perplexité juge un modèle sur un corpus, pas un produit sur sa tâche.
+- `llm/prompt` — **ouvert au lot 4.** Ce qu'on met dans la fenêtre de contexte et comment
+  on le formule : l'artisanat de l'instruction ([[Prompt engineering]]), la gestion du
+  budget de tokens ([[Context engineering]]), et le fait de demander au modèle d'expliciter
+  ses étapes ([[Chain-of-Thought]]). Distinct de `llm/socle` (les frameworks qui assemblent
+  tout ça — DSPy optimise des prompts, il n'en écrit pas la théorie), de `llm/memoire` (ce
+  qui survit à la session) et de `llm/rag` (ce qui va chercher le contenu à injecter).
+- `llm/protocole` — **ouvert au lot 4**, en remplacement de `llm/mcp`. Les protocoles par
+  lesquels un modèle ou un agent parle au dehors : vers des outils et des données
+  ([[mcp-protocol]], et l'outillage qui l'implémente — [[fastmcp]], [[mcpjam]]), vers
+  d'autres agents construits séparément ([[a2a-protocol]]). `llm/mcp` nommait **un**
+  protocole et ne pouvait pas accueillir le second sans mentir ; la valeur est retirée du
+  bloc et ses deux briques sont recatégorisées. Distinct de `llm/agents` (les
+  bibliothèques qui orchestrent une boucle) : ici on décrit un format d'échange, pas du
+  code qui tourne.
 - `llm/memoire` — mémoire et **contexte** persistants d'un agent : compression du contexte
   envoyé au modèle, élagage, réinjection à la demande, base de faits qui survit à la session.
   Distinct de `llm/observabilite` (mesurer ce qui est envoyé) et de `database/vecteur` (l'index
@@ -395,7 +418,7 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl, rl, ts, nlp, llm}
+concept/{ml, dl, rl, ts, nlp}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -432,6 +455,10 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   reviendra, elle se rangera par son **domaine** comme tout le reste — `ml/monitoring` pour
   la dérive de modèle, `devops/*` pour le déploiement — et non sur un vocabulaire de
   galaxie qui n'existe plus.
+- `llm` — retiré le 2026-09-05, 55 notions descendues dans « LLM & IA générative/ » et
+  1 dans « Sécurité/ » (`Sandboxing de code généré`). Trois valeurs ouvertes
+  (`llm/modele`, `llm/prompt`, `llm/protocole`), une retirée (`llm/mcp`, remplacée),
+  six sous-dossiers créés dans le domaine et un dans « Sécurité ».
 
 Les valeurs restantes suivront, une par lot de domaine.
 

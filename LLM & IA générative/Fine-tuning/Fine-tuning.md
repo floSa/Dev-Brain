@@ -34,6 +34,16 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - Changer seulement le comportement, sans entraînement → [[Prompt engineering]] d'abord.
 
 <!-- AUTO:START -->
+### Notions
+- [[GRPO]] — domaines : ml-eng, ai-eng
+- [[LoRA et QLoRA]] — domaines : ml-eng, ai-eng
+- [[PEFT]] — domaines : ml-eng, ai-eng
+- [[Reward modeling]] — domaines : ml-eng, ai-eng
+- [[RL for LLMs]] — domaines : ml-eng, ai-eng
+- [[RLHF and DPO]] — domaines : ml-eng, ai-eng
+- [[SFT]] — domaines : ml-eng, ai-eng
+- [[Synthetic data generation]] — domaines : ml-eng, ai-eng
+
 ### Briques
 - [[Axolotl]] — Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.
 - [[LLaMA-Factory]] — Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.

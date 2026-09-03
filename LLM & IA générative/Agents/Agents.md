@@ -37,6 +37,17 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - Une application conversationnelle à déployer telle quelle → [[Assistants]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Agent patterns]] — domaines : ai-eng
+- [[Agent skills]] — domaines : ai-eng
+- [[agent-loops]] — domaines : ai-eng
+- [[Harnais d'agent]] — domaines : ai-eng
+- [[Human-in-the-loop]] — domaines : ai-eng
+- [[Multi-agent systems]] — domaines : ai-eng
+- [[Reliability patterns]] — domaines : ai-eng
+- [[Tool use patterns]] — domaines : ai-eng
+- [[tool-use]] — domaines : ai-eng
+
 ### Briques
 - [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
 - [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).

@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 707,
+  "count": 714,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -124,6 +124,7 @@
       "Maka",
       "Prompt injection",
       "Sandboxing de code généré",
+      "Systèmes IA",
       "Sécurité",
       "promptfoo"
     ],
@@ -228,7 +229,8 @@
       "RAG benchmarks",
       "Text-to-SQL",
       "evaluate",
-      "llmfit"
+      "llmfit",
+      "Évaluation"
     ],
     "boosting": [
       "AdaBoost",
@@ -245,6 +247,7 @@
     "caching": [
       "Headroom",
       "LLM caching",
+      "Passerelles",
       "prompt-caching"
     ],
     "calibration": [
@@ -260,7 +263,8 @@
       "Change Data Capture (CDC)"
     ],
     "chunking": [
-      "Chunking strategies"
+      "Chunking strategies",
+      "RAG & retrieval"
     ],
     "ci-cd": [
       "DevOps",
@@ -544,6 +548,7 @@
       "Pydantic Settings",
       "Rule - Config typée",
       "SQLModel",
+      "Sortie typée",
       "Structured outputs"
     ],
     "data-versioning": [
@@ -597,8 +602,10 @@
       "Constrained decoding",
       "Decoding strategies",
       "Guidance",
+      "Modèles de langage",
       "Multi-Token Prediction",
       "Outlines",
+      "Sortie typée",
       "Speculative decoding"
     ],
     "deep-learning": [
@@ -1082,6 +1089,7 @@
     ],
     "guardrails": [
       "Guardrails",
+      "Systèmes IA",
       "Sécurité"
     ],
     "hardware-sizing": [
@@ -1231,6 +1239,7 @@
     ],
     "jailbreak": [
       "Jailbreaking and defenses",
+      "Systèmes IA",
       "Sécurité"
     ],
     "key-value": [
@@ -1247,7 +1256,8 @@
       "GraphRAG",
       "Graphify",
       "Obsidian",
-      "Pattern - RAG structuré graphe + human-in-the-loop"
+      "Pattern - RAG structuré graphe + human-in-the-loop",
+      "RAG & retrieval"
     ],
     "kubernetes": [
       "Flyte",
@@ -1450,7 +1460,8 @@
     "llm-as-judge": [
       "DeepEval",
       "LLM-as-judge",
-      "TruLens"
+      "TruLens",
+      "Évaluation"
     ],
     "llm-eval": [
       "Agent evaluation",
@@ -1467,14 +1478,16 @@
       "RAG eval",
       "Ragas",
       "TruLens",
-      "promptfoo"
+      "promptfoo",
+      "Évaluation"
     ],
     "llm-gateway": [
       "Helicone",
       "LLM & IA générative",
       "LiteLLM",
       "OmniRoute",
-      "OpenRouter"
+      "OpenRouter",
+      "Passerelles"
     ],
     "llm-observability": [
       "Helicone",
@@ -1482,6 +1495,7 @@
       "LLM observability",
       "LangSmith",
       "Langfuse",
+      "Observabilité des LLM",
       "Phoenix Arize"
     ],
     "local-llm": [
@@ -1670,7 +1684,8 @@
       "Validation croisée",
       "Walk-forward CV",
       "evaluate",
-      "seqeval"
+      "seqeval",
+      "Évaluation"
     ],
     "model-hub": [
       "HuggingFace",
@@ -1875,7 +1890,8 @@
       "Beszel",
       "Grafana",
       "Loki",
-      "Observabilité"
+      "Observabilité",
+      "Observabilité des LLM"
     ],
     "ocr": [
       "Documents",
@@ -2078,6 +2094,7 @@
     ],
     "prompt-injection": [
       "Prompt injection",
+      "Systèmes IA",
       "Sécurité"
     ],
     "prompt-optimization": [
@@ -2142,6 +2159,7 @@
       "Qdrant",
       "Query transformations",
       "RAG",
+      "RAG & retrieval",
       "RAG benchmarks",
       "RAG eval",
       "RAGatouille",
@@ -2158,7 +2176,8 @@
     "rag-eval": [
       "RAG benchmarks",
       "RAG eval",
-      "Ragas"
+      "Ragas",
+      "Évaluation"
     ],
     "ranking": [
       "BM25",
@@ -2178,6 +2197,7 @@
       "Chain-of-Thought",
       "Code and math benchmarks",
       "GRPO",
+      "Modèles de langage",
       "Reasoning models"
     ],
     "recommender-systems": [
@@ -2299,6 +2319,7 @@
     ],
     "reranking": [
       "Late-interaction retrieval",
+      "RAG & retrieval",
       "RAGatouille",
       "Reranking",
       "sentence-transformers"
@@ -2320,6 +2341,7 @@
       "OpenViking",
       "Query transformations",
       "RAG",
+      "RAG & retrieval",
       "RAG benchmarks",
       "RAG eval",
       "RAGatouille",
@@ -2335,6 +2357,7 @@
     "routing": [
       "OmniRoute",
       "OpenRouter",
+      "Passerelles",
       "Routing and cascading"
     ],
     "rule": [
@@ -2360,6 +2383,7 @@
     "scaling-laws": [
       "Maximal Update Parametrization",
       "Mixture of Experts",
+      "Modèles de langage",
       "Scaling laws",
       "Small Language Models"
     ],
@@ -2425,6 +2449,7 @@
       "Marqo",
       "Pinecone",
       "RAG",
+      "RAG & retrieval",
       "Recherche d'information",
       "embeddings",
       "sentence-transformers",
@@ -2457,6 +2482,7 @@
     ],
     "small-language-model": [
       "Distillation",
+      "Modèles de langage",
       "Small Language Models",
       "needle"
     ],
@@ -2533,6 +2559,7 @@
       "LLM & IA générative",
       "Outlines",
       "PydanticAI",
+      "Sortie typée",
       "Structured outputs",
       "needle",
       "tool-use"
@@ -2672,6 +2699,7 @@
     ],
     "tokenization": [
       "Constrained decoding",
+      "Modèles de langage",
       "NLP",
       "NLTK",
       "Tokenization",
@@ -2716,6 +2744,7 @@
       "LLM observability",
       "LangSmith",
       "Langfuse",
+      "Observabilité des LLM",
       "Phoenix Arize",
       "TruLens"
     ],
@@ -6710,6 +6739,31 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Agent memory.md",
+      "nom": "Agent memory",
+      "alias": [
+        "mémoire d'agent",
+        "agent memory",
+        "mémoire LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/memoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Agents de code.md",
       "nom": "Agents de code",
       "alias": [
@@ -7119,6 +7173,60 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents/Agent patterns.md",
+      "nom": "Agent patterns",
+      "alias": [
+        "patrons d'agents",
+        "agent design patterns",
+        "agentic patterns"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents/Agent skills.md",
+      "nom": "Agent skills",
+      "alias": [
+        "skill",
+        "skills",
+        "agent skill",
+        "mémoire procédurale",
+        "procedural memory",
+        "SKILL.md"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents/Agents.md",
       "nom": "Agents",
       "alias": [
@@ -7238,6 +7346,63 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Agents/Harnais d'agent.md",
+      "nom": "Harnais d'agent",
+      "alias": [
+        "harnais",
+        "harness",
+        "agent harness",
+        "scaffolding",
+        "échafaudage",
+        "agent scaffold"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents/Human-in-the-loop.md",
+      "nom": "Human-in-the-loop",
+      "alias": [
+        "HITL",
+        "human in the loop",
+        "supervision humaine",
+        "validation humaine",
+        "intervention humaine"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "human-in-the-loop",
+        "agents",
+        "reliability",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents/LangGraph.md",
       "nom": "LangGraph",
       "alias": [
@@ -7258,6 +7423,31 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Multi-agent systems.md",
+      "nom": "Multi-agent systems",
+      "alias": [
+        "systèmes multi-agents",
+        "multi-agent systems",
+        "MAS"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "multi-agent",
+        "agents",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Agents/OpenAI Agents SDK.md",
@@ -7349,6 +7539,31 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Agents/Reliability patterns.md",
+      "nom": "Reliability patterns",
+      "alias": [
+        "patrons de fiabilité",
+        "reliability patterns",
+        "fiabilité des apps LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reliability",
+        "llm",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents/Semantic Kernel.md",
       "nom": "Semantic Kernel",
       "alias": [
@@ -7371,6 +7586,57 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Tool use patterns.md",
+      "nom": "Tool use patterns",
+      "alias": [
+        "patrons d'appel d'outils",
+        "tool use patterns",
+        "function calling patterns"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "tool-use",
+        "agents",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents/agent-loops.md",
+      "nom": "agent-loops",
+      "alias": [
+        "agent loop",
+        "boucle d'agent",
+        "boucle perception-action",
+        "agentic loop"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "tool-use"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Agents/smolagents.md",
@@ -7401,6 +7667,32 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/tool-use.md",
+      "nom": "tool-use",
+      "alias": [
+        "function calling",
+        "appel d'outils",
+        "tool calling",
+        "appel de fonctions"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "tool-use",
+        "structured-output",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Assistants/Assistants.md",
@@ -7564,6 +7856,58 @@
       "maturite": "beta"
     },
     {
+      "path": "LLM & IA générative/Chain-of-Thought.md",
+      "nom": "Chain-of-Thought",
+      "alias": [
+        "CoT",
+        "chaîne de pensée",
+        "raisonnement pas à pas",
+        "self-consistency",
+        "zero-shot CoT"
+      ],
+      "role": "notion",
+      "categorie": "llm/prompt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "prompting",
+        "reasoning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Context engineering.md",
+      "nom": "Context engineering",
+      "alias": [
+        "ingénierie de contexte",
+        "gestion du contexte",
+        "context window management"
+      ],
+      "role": "notion",
+      "categorie": "llm/prompt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "context-engineering",
+        "llm",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/DSPy.md",
       "nom": "DSPy",
       "alias": [
@@ -7586,33 +7930,6 @@
         "[[LangChain]]",
         "[[LlamaIndex]]",
         "[[Haystack]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/DeepEval.md",
-      "nom": "DeepEval",
-      "alias": [
-        "deepeval",
-        "confident-ai-deepeval"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "llm-as-judge",
-        "testing"
-      ],
-      "alternatives": [
-        "[[Ragas]]",
-        "[[TruLens]]",
-        "[[promptfoo]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -7701,6 +8018,33 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Fine-tuning/GRPO.md",
+      "nom": "GRPO",
+      "alias": [
+        "Group Relative Policy Optimization",
+        "optimisation de politique par groupes",
+        "optimisation de politique relative par groupe"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "reasoning",
+        "alignment",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Fine-tuning/LLaMA-Factory.md",
       "nom": "LLaMA-Factory",
       "alias": [
@@ -7731,6 +8075,201 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/LoRA et QLoRA.md",
+      "nom": "LoRA et QLoRA",
+      "alias": [
+        "LoRA",
+        "Low-Rank Adaptation",
+        "QLoRA",
+        "quantized LoRA",
+        "adapters LoRA",
+        "low-rank adapters"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/PEFT.md",
+      "nom": "PEFT",
+      "alias": [
+        "parameter-efficient fine-tuning",
+        "fine-tuning paramétriquement efficace",
+        "adapters"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/RL for LLMs.md",
+      "nom": "RL for LLMs",
+      "alias": [
+        "RL for language models",
+        "reinforcement learning for LLMs",
+        "RL appliqué aux LLM",
+        "RL post-training",
+        "post-training RL",
+        "RLVR"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "alignment",
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/RLHF and DPO.md",
+      "nom": "RLHF and DPO",
+      "alias": [
+        "RLHF",
+        "DPO",
+        "alignement par préférences",
+        "preference tuning",
+        "direct preference optimization"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "alignment",
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Reward modeling.md",
+      "nom": "Reward modeling",
+      "alias": [
+        "reward model",
+        "modèle de récompense",
+        "RM",
+        "preference model",
+        "modèle de préférence",
+        "RLAIF"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "alignment",
+        "reinforcement-learning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/SFT.md",
+      "nom": "SFT",
+      "alias": [
+        "supervised fine-tuning",
+        "fine-tuning supervisé",
+        "instruction tuning",
+        "instruction fine-tuning"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Synthetic data generation.md",
+      "nom": "Synthetic data generation",
+      "alias": [
+        "synthetic data",
+        "génération de données synthétiques",
+        "données synthétiques",
+        "self-instruct",
+        "evol-instruct",
+        "distillation de données"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "synthetic-data",
+        "fine-tuning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Fine-tuning/TRL.md",
@@ -7851,59 +8390,6 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/Guidance.md",
-      "nom": "Guidance",
-      "alias": [
-        "guidance",
-        "guidance-ai"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.",
-      "tags": [
-        "structured-output",
-        "decoding",
-        "llm"
-      ],
-      "alternatives": [
-        "[[Outlines]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Haystack.md",
-      "nom": "Haystack",
-      "alias": [
-        "haystack",
-        "deepset-haystack",
-        "farm-haystack"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.",
-      "tags": [
-        "llm",
-        "rag",
-        "semantic-search",
-        "hybrid-search",
-        "agents"
-      ],
-      "alternatives": [
-        "[[LangChain]]",
-        "[[LlamaIndex]]",
-        "[[DSPy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "LLM & IA générative/Headroom.md",
       "nom": "Headroom",
       "alias": [
@@ -7927,57 +8413,6 @@
       "alternatives": [],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "LLM & IA générative/Helicone.md",
-      "nom": "Helicone",
-      "alias": [
-        "helicone"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "langage": "TypeScript",
-      "domaines": null,
-      "pitch": "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "llm-gateway",
-        "tracing"
-      ],
-      "alternatives": [
-        "[[Langfuse]]",
-        "[[LangSmith]]",
-        "[[Phoenix Arize]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Instructor.md",
-      "nom": "Instructor",
-      "alias": [
-        "instructor",
-        "567-labs-instructor"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.",
-      "tags": [
-        "llm",
-        "structured-output",
-        "data-validation",
-        "type-hints"
-      ],
-      "alternatives": [
-        "[[PydanticAI]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/LLM & IA générative.md",
@@ -8039,32 +8474,6 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/LangSmith.md",
-      "nom": "LangSmith",
-      "alias": [
-        "langsmith"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "tracing",
-        "llm-eval"
-      ],
-      "alternatives": [
-        "[[Langfuse]]",
-        "[[Phoenix Arize]]",
-        "[[Helicone]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "LLM & IA générative/Langflow.md",
       "nom": "Langflow",
       "alias": [
@@ -8086,32 +8495,6 @@
       "alternatives": [
         "[[Dify]]",
         "[[Flowise]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Langfuse.md",
-      "nom": "Langfuse",
-      "alias": [
-        "langfuse"
-      ],
-      "role": "brique",
-      "categorie": "llm/observabilite",
-      "famille": "plateforme",
-      "langage": "TypeScript",
-      "domaines": null,
-      "pitch": "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.",
-      "tags": [
-        "llm",
-        "llm-observability",
-        "tracing",
-        "llm-eval"
-      ],
-      "alternatives": [
-        "[[LangSmith]]",
-        "[[Phoenix Arize]]",
-        "[[Helicone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8147,108 +8530,356 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/LiteLLM.md",
-      "nom": "LiteLLM",
+      "path": "LLM & IA générative/Modèles de langage/Decoding strategies.md",
+      "nom": "Decoding strategies",
       "alias": [
-        "litellm",
-        "BerriAI-litellm"
+        "stratégies de décodage",
+        "décodage",
+        "sampling",
+        "greedy",
+        "top-k",
+        "top-p",
+        "nucleus sampling",
+        "beam search",
+        "température"
       ],
-      "role": "brique",
-      "categorie": "llm/passerelle",
-      "famille": "plateforme",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.",
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
       "tags": [
+        "decoding",
         "llm",
-        "llm-gateway",
-        "inference"
+        "nlp"
       ],
-      "alternatives": [
-        "[[OpenRouter]]",
-        "[[OmniRoute]]"
-      ],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "LLM & IA générative/LlamaIndex.md",
-      "nom": "LlamaIndex",
-      "alias": [
-        "llamaindex",
-        "llama-index",
-        "llama_index",
-        "run-llama",
-        "GPT Index"
+      "path": "LLM & IA générative/Modèles de langage/Modèles de langage.md",
+      "nom": "Modèles de langage",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
       ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.",
+      "pitch": "Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.",
       "tags": [
-        "llm",
-        "rag",
-        "embeddings",
-        "agents"
+        "tokenization",
+        "decoding",
+        "scaling-laws",
+        "small-language-model",
+        "reasoning"
       ],
-      "alternatives": [
-        "[[LangChain]]",
-        "[[Haystack]]",
-        "[[DSPy]]"
-      ],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "LLM & IA générative/OmniRoute.md",
-      "nom": "OmniRoute",
+      "path": "LLM & IA générative/Modèles de langage/Perplexity.md",
+      "nom": "Perplexity",
       "alias": [
-        "omniroute"
+        "perplexité",
+        "PPL"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "perplexity",
+        "llm",
+        "model-evaluation",
+        "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Reasoning models.md",
+      "nom": "Reasoning models",
+      "alias": [
+        "modèles de raisonnement",
+        "reasoning model",
+        "large reasoning model",
+        "LRM",
+        "test-time compute",
+        "inference-time scaling",
+        "long chain-of-thought",
+        "thinking models"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reasoning",
+        "llm",
+        "alignment"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Scaling laws.md",
+      "nom": "Scaling laws",
+      "alias": [
+        "lois d'échelle",
+        "loi d'échelle",
+        "scaling law",
+        "Chinchilla",
+        "Kaplan",
+        "compute-optimal"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "scaling-laws",
+        "llm",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Small Language Models.md",
+      "nom": "Small Language Models",
+      "alias": [
+        "SLM",
+        "petits modèles de langage",
+        "small language model",
+        "modèles compacts",
+        "edge LLM",
+        "on-device LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "small-language-model",
+        "scaling-laws",
+        "llm",
+        "local-llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Tokenization.md",
+      "nom": "Tokenization",
+      "alias": [
+        "tokenisation",
+        "découpage en tokens",
+        "BPE",
+        "byte-pair encoding",
+        "subword tokenization"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "tokenization",
+        "llm",
+        "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/Helicone.md",
+      "nom": "Helicone",
+      "alias": [
+        "helicone"
       ],
       "role": "brique",
-      "categorie": "llm/passerelle",
+      "categorie": "llm/observabilite",
       "famille": "plateforme",
       "langage": "TypeScript",
       "domaines": null,
-      "pitch": "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.",
+      "pitch": "Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.",
       "tags": [
         "llm",
+        "llm-observability",
         "llm-gateway",
-        "routing",
-        "reliability",
-        "context-engineering"
+        "tracing"
       ],
       "alternatives": [
-        "[[LiteLLM]]",
-        "[[OpenRouter]]"
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]"
       ],
       "complements": [],
-      "maturite": "beta"
+      "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/OpenRouter.md",
-      "nom": "OpenRouter",
+      "path": "LLM & IA générative/Observabilité des LLM/LLM observability.md",
+      "nom": "LLM observability",
       "alias": [
-        "openrouter",
-        "openrouter.ai"
+        "observabilité LLM",
+        "observabilité des apps LLM",
+        "tracing LLM",
+        "online eval",
+        "monitoring LLM",
+        "traces",
+        "spans",
+        "coûts tokens"
+      ],
+      "role": "notion",
+      "categorie": "llm/observabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm-observability",
+        "tracing",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/LangSmith.md",
+      "nom": "LangSmith",
+      "alias": [
+        "langsmith"
       ],
       "role": "brique",
-      "categorie": "llm/passerelle",
-      "famille": "saas",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
       "langage": null,
       "domaines": null,
-      "pitch": "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.",
+      "pitch": "Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.",
       "tags": [
         "llm",
-        "llm-gateway",
-        "routing",
-        "inference"
+        "llm-observability",
+        "tracing",
+        "llm-eval"
       ],
       "alternatives": [
-        "[[LiteLLM]]",
-        "[[OmniRoute]]"
+        "[[Langfuse]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/Langfuse.md",
+      "nom": "Langfuse",
+      "alias": [
+        "langfuse"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "tracing",
+        "llm-eval"
+      ],
+      "alternatives": [
+        "[[LangSmith]]",
+        "[[Phoenix Arize]]",
+        "[[Helicone]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/Observabilité des LLM.md",
+      "nom": "Observabilité des LLM",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Voir ce qu'une application LLM fait en production — traces, coût, latence, qualité sur le trafic réel.",
+      "tags": [
+        "llm-observability",
+        "tracing",
+        "observability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/Phoenix Arize.md",
+      "nom": "Phoenix Arize",
+      "alias": [
+        "phoenix",
+        "Arize Phoenix",
+        "arize-phoenix",
+        "arize-ai-phoenix"
+      ],
+      "role": "brique",
+      "categorie": "llm/observabilite",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.",
+      "tags": [
+        "llm",
+        "llm-observability",
+        "llm-eval",
+        "tracing"
+      ],
+      "alternatives": [
+        "[[Langfuse]]",
+        "[[LangSmith]]",
+        "[[Helicone]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8283,60 +8914,503 @@
       "maturite": "beta"
     },
     {
-      "path": "LLM & IA générative/Outlines.md",
-      "nom": "Outlines",
+      "path": "LLM & IA générative/Passerelles/LLM caching.md",
+      "nom": "LLM caching",
       "alias": [
-        "outlines",
-        "dottxt-outlines"
+        "response caching",
+        "cache de réponses LLM",
+        "semantic cache",
+        "cache sémantique",
+        "exact-match cache",
+        "GPTCache"
       ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.",
+      "role": "notion",
+      "categorie": "llm/passerelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
       "tags": [
-        "structured-output",
-        "decoding",
-        "llm"
+        "caching",
+        "llm",
+        "semantic-search",
+        "in-memory"
       ],
-      "alternatives": [
-        "[[Guidance]]"
-      ],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "LLM & IA générative/Phoenix Arize.md",
-      "nom": "Phoenix Arize",
+      "path": "LLM & IA générative/Passerelles/LiteLLM.md",
+      "nom": "LiteLLM",
       "alias": [
-        "phoenix",
-        "Arize Phoenix",
-        "arize-phoenix",
-        "arize-ai-phoenix"
+        "litellm",
+        "BerriAI-litellm"
       ],
       "role": "brique",
-      "categorie": "llm/observabilite",
+      "categorie": "llm/passerelle",
       "famille": "plateforme",
       "langage": "Python",
       "domaines": null,
-      "pitch": "Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.",
+      "pitch": "Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.",
       "tags": [
         "llm",
-        "llm-observability",
-        "llm-eval",
-        "tracing"
+        "llm-gateway",
+        "inference"
       ],
       "alternatives": [
-        "[[Langfuse]]",
-        "[[LangSmith]]",
-        "[[Helicone]]"
+        "[[OpenRouter]]",
+        "[[OmniRoute]]"
       ],
       "complements": [],
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/RAGatouille.md",
+      "path": "LLM & IA générative/Passerelles/OmniRoute.md",
+      "nom": "OmniRoute",
+      "alias": [
+        "omniroute"
+      ],
+      "role": "brique",
+      "categorie": "llm/passerelle",
+      "famille": "plateforme",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "routing",
+        "reliability",
+        "context-engineering"
+      ],
+      "alternatives": [
+        "[[LiteLLM]]",
+        "[[OpenRouter]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Passerelles/OpenRouter.md",
+      "nom": "OpenRouter",
+      "alias": [
+        "openrouter",
+        "openrouter.ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/passerelle",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.",
+      "tags": [
+        "llm",
+        "llm-gateway",
+        "routing",
+        "inference"
+      ],
+      "alternatives": [
+        "[[LiteLLM]]",
+        "[[OmniRoute]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Passerelles/Passerelles.md",
+      "nom": "Passerelles",
+      "alias": [
+        "passerelle LLM",
+        "routage LLM"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Une seule API devant plusieurs fournisseurs — router, replier, plafonner, et ne pas rappeler ce qu'on a déjà demandé.",
+      "tags": [
+        "llm-gateway",
+        "routing",
+        "caching"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Passerelles/Routing and cascading.md",
+      "nom": "Routing and cascading",
+      "alias": [
+        "routing",
+        "query routing",
+        "semantic routing",
+        "model routing",
+        "model cascading",
+        "cascade de modèles",
+        "routage et cascade"
+      ],
+      "role": "notion",
+      "categorie": "llm/passerelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "routing",
+        "llm",
+        "rag"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Prompt engineering.md",
+      "nom": "Prompt engineering",
+      "alias": [
+        "conception de prompts",
+        "prompt design",
+        "few-shot prompting",
+        "in-context learning"
+      ],
+      "role": "notion",
+      "categorie": "llm/prompt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "prompting",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Advanced RAG.md",
+      "nom": "Advanced RAG",
+      "alias": [
+        "RAG avancé",
+        "advanced retrieval-augmented generation",
+        "modular RAG"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "llm",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Chunking strategies.md",
+      "nom": "Chunking strategies",
+      "alias": [
+        "chunking",
+        "découpage de documents",
+        "stratégies de découpage",
+        "text splitting"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "chunking",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Construction de graphes de connaissances.md",
+      "nom": "Construction de graphes de connaissances",
+      "alias": [
+        "knowledge graph construction",
+        "KG construction",
+        "extraction d'entités et de relations",
+        "knowledge graph building",
+        "peuplement de graphe de connaissances"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "knowledge-graph",
+        "relation-extraction",
+        "ner",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/GraphRAG.md",
+      "nom": "GraphRAG",
+      "alias": [
+        "graph RAG",
+        "knowledge graph RAG",
+        "RAG sur graphe",
+        "RAG augmenté par graphe de connaissances"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "graph-db",
+        "retrieval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Haystack.md",
+      "nom": "Haystack",
+      "alias": [
+        "haystack",
+        "deepset-haystack",
+        "farm-haystack"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.",
+      "tags": [
+        "llm",
+        "rag",
+        "semantic-search",
+        "hybrid-search",
+        "agents"
+      ],
+      "alternatives": [
+        "[[LangChain]]",
+        "[[LlamaIndex]]",
+        "[[DSPy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Hybrid retrieval.md",
+      "nom": "Hybrid retrieval",
+      "alias": [
+        "recherche hybride",
+        "hybrid search",
+        "retrieval hybride",
+        "dense + sparse"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "retrieval",
+        "hybrid-search",
+        "semantic-search",
+        "search",
+        "rag"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Late-interaction retrieval.md",
+      "nom": "Late-interaction retrieval",
+      "alias": [
+        "colbert",
+        "colbertv2",
+        "late interaction",
+        "interaction tardive",
+        "recherche multi-vecteur",
+        "plaid",
+        "maxsim"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "retrieval",
+        "reranking",
+        "embeddings",
+        "semantic-search",
+        "information-retrieval",
+        "rag"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/LlamaIndex.md",
+      "nom": "LlamaIndex",
+      "alias": [
+        "llamaindex",
+        "llama-index",
+        "llama_index",
+        "run-llama",
+        "GPT Index"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.",
+      "tags": [
+        "llm",
+        "rag",
+        "embeddings",
+        "agents"
+      ],
+      "alternatives": [
+        "[[LangChain]]",
+        "[[Haystack]]",
+        "[[DSPy]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Query transformations.md",
+      "nom": "Query transformations",
+      "alias": [
+        "query transformation",
+        "réécriture de requête",
+        "query rewriting",
+        "query expansion",
+        "query decomposition",
+        "multi-query",
+        "HyDE",
+        "step-back prompting"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "query-transformation",
+        "rag",
+        "retrieval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAG & retrieval.md",
+      "nom": "RAG & retrieval",
+      "alias": [
+        "retrieval augmented generation",
+        "récupération augmentée"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": "Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.",
+      "tags": [
+        "rag",
+        "retrieval",
+        "chunking",
+        "reranking",
+        "semantic-search",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAG.md",
+      "nom": "RAG",
+      "alias": [
+        "Retrieval-Augmented Generation",
+        "génération augmentée par récupération",
+        "retrieval augmented generation"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "llm",
+        "retrieval",
+        "embeddings",
+        "semantic-search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAGatouille.md",
       "nom": "RAGatouille",
       "alias": [
         "ragatouille"
@@ -8358,31 +9432,63 @@
       "maturite": "beta"
     },
     {
-      "path": "LLM & IA générative/Ragas.md",
-      "nom": "Ragas",
+      "path": "LLM & IA générative/RAG & retrieval/Reranking.md",
+      "nom": "Reranking",
       "alias": [
-        "ragas",
-        "explodinggradients-ragas"
+        "reranking",
+        "reclassement",
+        "re-ranking",
+        "rerank"
       ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.",
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
       "tags": [
-        "llm",
-        "llm-eval",
-        "rag-eval",
+        "retrieval",
+        "reranking",
+        "ranking",
         "rag"
       ],
-      "alternatives": [
-        "[[DeepEval]]",
-        "[[TruLens]]",
-        "[[promptfoo]]"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Inference optimization.md",
+      "nom": "Inference optimization",
+      "alias": [
+        "optimisation de l'inférence",
+        "KV-cache",
+        "cache KV",
+        "continuous batching",
+        "batching dynamique",
+        "PagedAttention",
+        "débit LLM",
+        "latence LLM"
       ],
-      "complements": [],
-      "maturite": "production"
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "llm",
+        "gpu"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/LM Studio.md",
@@ -8416,6 +9522,36 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Multi-Token Prediction.md",
+      "nom": "Multi-Token Prediction",
+      "alias": [
+        "MTP",
+        "prédiction multi-tokens",
+        "MTP heads",
+        "têtes MTP",
+        "MTP-1",
+        "self-speculative decoding"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "decoding",
+        "transformers",
+        "inference-optimization",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/Ollama.md",
@@ -8506,6 +9642,69 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Server-Sent Events & streaming LLM.md",
+      "nom": "Server-Sent Events & streaming LLM",
+      "alias": [
+        "SSE",
+        "server-sent events",
+        "streaming LLM",
+        "streaming de tokens",
+        "sse-starlette",
+        "text/event-stream",
+        "EventSource"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "streaming",
+        "llm",
+        "web-framework"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Speculative decoding.md",
+      "nom": "Speculative decoding",
+      "alias": [
+        "décodage spéculatif",
+        "speculative sampling",
+        "échantillonnage spéculatif",
+        "draft model",
+        "modèle brouillon",
+        "EAGLE",
+        "Medusa",
+        "DSpark",
+        "DeepSpec",
+        "semi-autoregressive",
+        "ordonnanceur de confiance"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "decoding",
+        "llm",
+        "inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/TGI.md",
@@ -8634,6 +9833,34 @@
       "maturite": "beta"
     },
     {
+      "path": "LLM & IA générative/Runtimes/prompt-caching.md",
+      "nom": "prompt-caching",
+      "alias": [
+        "prompt caching",
+        "cache de préfixes de prompt",
+        "prefix caching",
+        "cache de prompt",
+        "context caching"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "caching",
+        "inference-optimization",
+        "llm",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Runtimes/text-generation-webui.md",
       "nom": "text-generation-webui",
       "alias": [
@@ -8695,6 +9922,152 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Constrained decoding.md",
+      "nom": "Constrained decoding",
+      "alias": [
+        "génération contrainte",
+        "décodage contraint",
+        "structured generation",
+        "grammar-constrained decoding"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "decoding",
+        "structured-output",
+        "tokenization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Guidance.md",
+      "nom": "Guidance",
+      "alias": [
+        "guidance",
+        "guidance-ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.",
+      "tags": [
+        "structured-output",
+        "decoding",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Outlines]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Instructor.md",
+      "nom": "Instructor",
+      "alias": [
+        "instructor",
+        "567-labs-instructor"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.",
+      "tags": [
+        "llm",
+        "structured-output",
+        "data-validation",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[PydanticAI]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Outlines.md",
+      "nom": "Outlines",
+      "alias": [
+        "outlines",
+        "dottxt-outlines"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.",
+      "tags": [
+        "structured-output",
+        "decoding",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Guidance]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Sortie typée.md",
+      "nom": "Sortie typée",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Obtenir du modèle un objet conforme à un schéma plutôt que du texte à parser.",
+      "tags": [
+        "structured-output",
+        "decoding",
+        "data-validation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Structured outputs.md",
+      "nom": "Structured outputs",
+      "alias": [
+        "sorties structurées",
+        "sortie structurée",
+        "JSON mode"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "structured-output",
+        "llm",
+        "tool-use",
+        "data-validation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Text-to-SQL/DB-GPT.md",
@@ -8867,32 +10240,32 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/TruLens.md",
-      "nom": "TruLens",
+      "path": "LLM & IA générative/a2a-protocol.md",
+      "nom": "a2a-protocol",
       "alias": [
-        "trulens",
-        "truera-trulens",
-        "trulens-eval"
+        "A2A",
+        "Agent2Agent",
+        "Agent-to-Agent",
+        "protocole A2A",
+        "agent card"
       ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.",
+      "role": "notion",
+      "categorie": "llm/protocole",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
       "tags": [
+        "agents",
+        "multi-agent",
         "llm",
-        "llm-eval",
-        "tracing",
-        "llm-as-judge"
+        "tool-use"
       ],
-      "alternatives": [
-        "[[Ragas]]",
-        "[[DeepEval]]",
-        "[[promptfoo]]"
-      ],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/fastmcp.md",
@@ -8901,7 +10274,7 @@
         "FastMCP"
       ],
       "role": "brique",
-      "categorie": "llm/mcp",
+      "categorie": "llm/protocole",
       "famille": "paquet",
       "langage": "Python",
       "domaines": null,
@@ -8942,6 +10315,37 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/mcp-protocol.md",
+      "nom": "mcp-protocol",
+      "alias": [
+        "MCP",
+        "Model Context Protocol",
+        "protocole MCP",
+        "MCP Apps",
+        "MCP Tasks",
+        "MRTR",
+        "spec 2026-07-28",
+        "Agentic AI Foundation"
+      ],
+      "role": "notion",
+      "categorie": "llm/protocole",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "mcp",
+        "tool-use",
+        "llm",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/mcpjam.md",
       "nom": "mcpjam",
       "alias": [
@@ -8950,7 +10354,7 @@
         "mcpjam inspector"
       ],
       "role": "brique",
-      "categorie": "llm/mcp",
+      "categorie": "llm/protocole",
       "famille": "application",
       "langage": "TypeScript",
       "domaines": null,
@@ -8965,7 +10369,313 @@
       "maturite": "beta"
     },
     {
-      "path": "LLM & IA générative/promptfoo.md",
+      "path": "LLM & IA générative/Évaluation/Agent evaluation.md",
+      "nom": "Agent evaluation",
+      "alias": [
+        "évaluation d'agents",
+        "agent evaluation",
+        "agent eval"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm-eval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Code and math benchmarks.md",
+      "nom": "Code and math benchmarks",
+      "alias": [
+        "benchmarks code",
+        "benchmarks maths",
+        "HumanEval",
+        "MBPP",
+        "SWE-bench",
+        "GSM8K",
+        "MATH",
+        "AIME",
+        "pass@k",
+        "éval par exécution"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "benchmark",
+        "code-generation",
+        "reasoning",
+        "llm-eval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/DeepEval.md",
+      "nom": "DeepEval",
+      "alias": [
+        "deepeval",
+        "confident-ai-deepeval"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "llm-as-judge",
+        "testing"
+      ],
+      "alternatives": [
+        "[[Ragas]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/LLM benchmarks.md",
+      "nom": "LLM benchmarks",
+      "alias": [
+        "bancs d'essai LLM",
+        "benchmarks LLM",
+        "leaderboard",
+        "MMLU",
+        "GPQA",
+        "BBH",
+        "IFEval",
+        "MT-Bench",
+        "Chatbot Arena",
+        "LMArena",
+        "HELM"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "benchmark",
+        "llm-eval",
+        "model-evaluation",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/LLM eval metrics.md",
+      "nom": "LLM eval metrics",
+      "alias": [
+        "métriques d'évaluation LLM",
+        "évaluation LLM",
+        "LLM evaluation",
+        "exact match",
+        "BLEU",
+        "ROUGE",
+        "BERTScore",
+        "pass@k",
+        "G-Eval",
+        "offline eval"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm-eval",
+        "model-evaluation",
+        "llm",
+        "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/LLM-as-judge.md",
+      "nom": "LLM-as-judge",
+      "alias": [
+        "LLM as a judge",
+        "LLM juge",
+        "LLM évaluateur",
+        "G-Eval",
+        "pairwise comparison",
+        "reference-free evaluation",
+        "MT-Bench"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm-as-judge",
+        "llm-eval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/RAG benchmarks.md",
+      "nom": "RAG benchmarks",
+      "alias": [
+        "benchmarks RAG",
+        "bancs d'essai RAG",
+        "RGB",
+        "CRAG",
+        "RAGBench",
+        "TRACe",
+        "RAGTruth",
+        "FRAMES",
+        "TREC RAG",
+        "robustesse RAG",
+        "noise robustness",
+        "negative rejection"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "benchmark",
+        "rag-eval",
+        "rag",
+        "retrieval",
+        "llm-eval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/RAG eval.md",
+      "nom": "RAG eval",
+      "alias": [
+        "RAG evaluation",
+        "évaluation RAG",
+        "évaluation des pipelines RAG",
+        "faithfulness",
+        "groundedness",
+        "context precision",
+        "context recall",
+        "answer relevancy"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag-eval",
+        "llm-eval",
+        "rag",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Ragas.md",
+      "nom": "Ragas",
+      "alias": [
+        "ragas",
+        "explodinggradients-ragas"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "rag-eval",
+        "rag"
+      ],
+      "alternatives": [
+        "[[DeepEval]]",
+        "[[TruLens]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/TruLens.md",
+      "nom": "TruLens",
+      "alias": [
+        "trulens",
+        "truera-trulens",
+        "trulens-eval"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "tracing",
+        "llm-as-judge"
+      ],
+      "alternatives": [
+        "[[Ragas]]",
+        "[[DeepEval]]",
+        "[[promptfoo]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/promptfoo.md",
       "nom": "promptfoo",
       "alias": [
         "promptfoo",
@@ -8990,6 +10700,33 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Évaluation.md",
+      "nom": "Évaluation",
+      "alias": [
+        "éval LLM",
+        "évaluation LLM"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Mesurer ce que vaut une application LLM sur un jeu de tests — avant la production, et de façon rejouable.",
+      "tags": [
+        "llm-eval",
+        "benchmark",
+        "rag-eval",
+        "llm-as-judge",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage par renforcement/Acme.md",
@@ -15295,7 +17032,28 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/AI security.md",
+      "path": "Sécurité/PyJWT.md",
+      "nom": "PyJWT",
+      "alias": [
+        "pyjwt",
+        "jwt python"
+      ],
+      "role": "brique",
+      "categorie": "security/auth",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.",
+      "tags": [
+        "authentication",
+        "cryptography"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Systèmes IA/AI security.md",
       "nom": "AI security",
       "alias": [
         "sécurité IA",
@@ -15323,7 +17081,7 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/Guardrails.md",
+      "path": "Sécurité/Systèmes IA/Guardrails.md",
       "nom": "Guardrails",
       "alias": [
         "garde-fous",
@@ -15349,7 +17107,7 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/Jailbreaking and defenses.md",
+      "path": "Sécurité/Systèmes IA/Jailbreaking and defenses.md",
       "nom": "Jailbreaking and defenses",
       "alias": [
         "jailbreak",
@@ -15376,7 +17134,7 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/Prompt injection.md",
+      "path": "Sécurité/Systèmes IA/Prompt injection.md",
       "nom": "Prompt injection",
       "alias": [
         "injection de prompt",
@@ -15403,25 +17161,58 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/PyJWT.md",
-      "nom": "PyJWT",
+      "path": "Sécurité/Systèmes IA/Sandboxing de code généré.md",
+      "nom": "Sandboxing de code généré",
       "alias": [
-        "pyjwt",
-        "jwt python"
+        "sandboxing",
+        "sandbox",
+        "bac à sable",
+        "code execution sandbox",
+        "exécution isolée",
+        "microVM"
       ],
-      "role": "brique",
-      "categorie": "security/auth",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.",
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
       "tags": [
-        "authentication",
-        "cryptography"
+        "agents",
+        "llm",
+        "ai-security",
+        "container"
       ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Systèmes IA.md",
+      "nom": "Systèmes IA",
+      "alias": [
+        "sécurité des systèmes IA"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": "La surface d'attaque d'un système qui embarque un modèle, et les défenses qui tiennent.",
+      "tags": [
+        "ai-security",
+        "prompt-injection",
+        "jailbreak",
+        "guardrails"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Sécurité/Sécurité.md",
@@ -15758,135 +17549,6 @@
         "gradient-descent",
         "deep-learning",
         "learning-rate"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Advanced RAG.md",
-      "nom": "Advanced RAG",
-      "alias": [
-        "RAG avancé",
-        "advanced retrieval-augmented generation",
-        "modular RAG"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "rag",
-        "llm",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Agent evaluation.md",
-      "nom": "Agent evaluation",
-      "alias": [
-        "évaluation d'agents",
-        "agent evaluation",
-        "agent eval"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm-eval",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Agent memory.md",
-      "nom": "Agent memory",
-      "alias": [
-        "mémoire d'agent",
-        "agent memory",
-        "mémoire LLM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Agent patterns.md",
-      "nom": "Agent patterns",
-      "alias": [
-        "patrons d'agents",
-        "agent design patterns",
-        "agentic patterns"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "tool-use"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Agent skills.md",
-      "nom": "Agent skills",
-      "alias": [
-        "skill",
-        "skills",
-        "agent skill",
-        "mémoire procédurale",
-        "procedural memory",
-        "SKILL.md"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "tool-use",
-        "context-engineering"
       ],
       "alternatives": null,
       "complements": null,
@@ -16512,59 +18174,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Chain-of-Thought.md",
-      "nom": "Chain-of-Thought",
-      "alias": [
-        "CoT",
-        "chaîne de pensée",
-        "raisonnement pas à pas",
-        "self-consistency",
-        "zero-shot CoT"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "prompting",
-        "reasoning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Chunking strategies.md",
-      "nom": "Chunking strategies",
-      "alias": [
-        "chunking",
-        "découpage de documents",
-        "stratégies de découpage",
-        "text splitting"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "rag",
-        "chunking",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Classification audio par spectrogramme.md",
       "nom": "Classification audio par spectrogramme",
       "alias": [
@@ -16832,41 +18441,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Code and math benchmarks.md",
-      "nom": "Code and math benchmarks",
-      "alias": [
-        "benchmarks code",
-        "benchmarks maths",
-        "HumanEval",
-        "MBPP",
-        "SWE-bench",
-        "GSM8K",
-        "MATH",
-        "AIME",
-        "pass@k",
-        "éval par exécution"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "benchmark",
-        "code-generation",
-        "reasoning",
-        "llm-eval",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Compromis biais-variance.md",
       "nom": "Compromis biais-variance",
       "alias": [
@@ -16889,85 +18463,6 @@
       "tags": [
         "model-evaluation",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Constrained decoding.md",
-      "nom": "Constrained decoding",
-      "alias": [
-        "génération contrainte",
-        "décodage contraint",
-        "structured generation",
-        "grammar-constrained decoding"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "decoding",
-        "structured-output",
-        "tokenization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Construction de graphes de connaissances.md",
-      "nom": "Construction de graphes de connaissances",
-      "alias": [
-        "knowledge graph construction",
-        "KG construction",
-        "extraction d'entités et de relations",
-        "knowledge graph building",
-        "peuplement de graphe de connaissances"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "knowledge-graph",
-        "relation-extraction",
-        "ner",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Context engineering.md",
-      "nom": "Context engineering",
-      "alias": [
-        "ingénierie de contexte",
-        "gestion du contexte",
-        "context window management"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "context-engineering",
-        "llm",
-        "agents"
       ],
       "alternatives": null,
       "complements": null,
@@ -17074,37 +18569,6 @@
         "model-evaluation",
         "supervised",
         "data-leakage"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Decoding strategies.md",
-      "nom": "Decoding strategies",
-      "alias": [
-        "stratégies de décodage",
-        "décodage",
-        "sampling",
-        "greedy",
-        "top-k",
-        "top-p",
-        "nucleus sampling",
-        "beam search",
-        "température"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "decoding",
-        "llm",
-        "nlp"
       ],
       "alternatives": null,
       "complements": null,
@@ -17827,33 +19291,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/GRPO.md",
-      "nom": "GRPO",
-      "alias": [
-        "Group Relative Policy Optimization",
-        "optimisation de politique par groupes",
-        "optimisation de politique relative par groupe"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "reasoning",
-        "alignment",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Gaussian Mixture Models (GMM).md",
       "nom": "Gaussian Mixture Models (GMM)",
       "alias": [
@@ -18000,63 +19437,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/GraphRAG.md",
-      "nom": "GraphRAG",
-      "alias": [
-        "graph RAG",
-        "knowledge graph RAG",
-        "RAG sur graphe",
-        "RAG augmenté par graphe de connaissances"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "rag",
-        "knowledge-graph",
-        "graph-db",
-        "retrieval",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Harnais d'agent.md",
-      "nom": "Harnais d'agent",
-      "alias": [
-        "harnais",
-        "harness",
-        "agent harness",
-        "scaffolding",
-        "échafaudage",
-        "agent scaffold"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "tool-use",
-        "context-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Hierarchical forecasting.md",
       "nom": "Hierarchical forecasting",
       "alias": [
@@ -18079,62 +19459,6 @@
       "tags": [
         "forecasting",
         "timeseries"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Human-in-the-loop.md",
-      "nom": "Human-in-the-loop",
-      "alias": [
-        "HITL",
-        "human in the loop",
-        "supervision humaine",
-        "validation humaine",
-        "intervention humaine"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "human-in-the-loop",
-        "agents",
-        "reliability",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Hybrid retrieval.md",
-      "nom": "Hybrid retrieval",
-      "alias": [
-        "recherche hybride",
-        "hybrid search",
-        "retrieval hybride",
-        "dense + sparse"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "retrieval",
-        "hybrid-search",
-        "semantic-search",
-        "search",
-        "rag"
       ],
       "alternatives": null,
       "complements": null,
@@ -18278,38 +19602,6 @@
       "tags": [
         "feature-engineering",
         "missing-data"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Inference optimization.md",
-      "nom": "Inference optimization",
-      "alias": [
-        "optimisation de l'inférence",
-        "KV-cache",
-        "cache KV",
-        "continuous batching",
-        "batching dynamique",
-        "PagedAttention",
-        "débit LLM",
-        "latence LLM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "inference-optimization",
-        "inference",
-        "llm",
-        "gpu"
       ],
       "alternatives": null,
       "complements": null,
@@ -18469,223 +19761,6 @@
       "pitch": null,
       "tags": [
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LLM benchmarks.md",
-      "nom": "LLM benchmarks",
-      "alias": [
-        "bancs d'essai LLM",
-        "benchmarks LLM",
-        "leaderboard",
-        "MMLU",
-        "GPQA",
-        "BBH",
-        "IFEval",
-        "MT-Bench",
-        "Chatbot Arena",
-        "LMArena",
-        "HELM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "benchmark",
-        "llm-eval",
-        "model-evaluation",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LLM caching.md",
-      "nom": "LLM caching",
-      "alias": [
-        "response caching",
-        "cache de réponses LLM",
-        "semantic cache",
-        "cache sémantique",
-        "exact-match cache",
-        "GPTCache"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "caching",
-        "llm",
-        "semantic-search",
-        "in-memory"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LLM eval metrics.md",
-      "nom": "LLM eval metrics",
-      "alias": [
-        "métriques d'évaluation LLM",
-        "évaluation LLM",
-        "LLM evaluation",
-        "exact match",
-        "BLEU",
-        "ROUGE",
-        "BERTScore",
-        "pass@k",
-        "G-Eval",
-        "offline eval"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "llm-eval",
-        "model-evaluation",
-        "llm",
-        "nlp"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LLM observability.md",
-      "nom": "LLM observability",
-      "alias": [
-        "observabilité LLM",
-        "observabilité des apps LLM",
-        "tracing LLM",
-        "online eval",
-        "monitoring LLM",
-        "traces",
-        "spans",
-        "coûts tokens"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "llm-observability",
-        "tracing",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LLM-as-judge.md",
-      "nom": "LLM-as-judge",
-      "alias": [
-        "LLM as a judge",
-        "LLM juge",
-        "LLM évaluateur",
-        "G-Eval",
-        "pairwise comparison",
-        "reference-free evaluation",
-        "MT-Bench"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "llm-as-judge",
-        "llm-eval",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Late-interaction retrieval.md",
-      "nom": "Late-interaction retrieval",
-      "alias": [
-        "colbert",
-        "colbertv2",
-        "late interaction",
-        "interaction tardive",
-        "recherche multi-vecteur",
-        "plaid",
-        "maxsim"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "retrieval",
-        "reranking",
-        "embeddings",
-        "semantic-search",
-        "information-retrieval",
-        "rag"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/LoRA et QLoRA.md",
-      "nom": "LoRA et QLoRA",
-      "alias": [
-        "LoRA",
-        "Low-Rank Adaptation",
-        "QLoRA",
-        "quantized LoRA",
-        "adapters LoRA",
-        "low-rank adapters"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "fine-tuning",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -19090,61 +20165,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Multi-Token Prediction.md",
-      "nom": "Multi-Token Prediction",
-      "alias": [
-        "MTP",
-        "prédiction multi-tokens",
-        "MTP heads",
-        "têtes MTP",
-        "MTP-1",
-        "self-speculative decoding"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "decoding",
-        "transformers",
-        "inference-optimization",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Multi-agent systems.md",
-      "nom": "Multi-agent systems",
-      "alias": [
-        "systèmes multi-agents",
-        "multi-agent systems",
-        "MAS"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "multi-agent",
-        "agents",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Multi-head Latent Attention.md",
       "nom": "Multi-head Latent Attention",
       "alias": [
@@ -19446,31 +20466,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/PEFT.md",
-      "nom": "PEFT",
-      "alias": [
-        "parameter-efficient fine-tuning",
-        "fine-tuning paramétriquement efficace",
-        "adapters"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "fine-tuning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/PPO.md",
       "nom": "PPO",
       "alias": [
@@ -19522,31 +20517,6 @@
         "deep-learning",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Perplexity.md",
-      "nom": "Perplexity",
-      "alias": [
-        "perplexité",
-        "PPL"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "perplexity",
-        "llm",
-        "model-evaluation",
-        "nlp"
       ],
       "alternatives": null,
       "complements": null,
@@ -19634,31 +20604,6 @@
         "explainability",
         "deep-learning",
         "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Prompt engineering.md",
-      "nom": "Prompt engineering",
-      "alias": [
-        "conception de prompts",
-        "prompt design",
-        "few-shot prompting",
-        "in-context learning"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "prompting",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -19770,189 +20715,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Query transformations.md",
-      "nom": "Query transformations",
-      "alias": [
-        "query transformation",
-        "réécriture de requête",
-        "query rewriting",
-        "query expansion",
-        "query decomposition",
-        "multi-query",
-        "HyDE",
-        "step-back prompting"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "query-transformation",
-        "rag",
-        "retrieval",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/RAG benchmarks.md",
-      "nom": "RAG benchmarks",
-      "alias": [
-        "benchmarks RAG",
-        "bancs d'essai RAG",
-        "RGB",
-        "CRAG",
-        "RAGBench",
-        "TRACe",
-        "RAGTruth",
-        "FRAMES",
-        "TREC RAG",
-        "robustesse RAG",
-        "noise robustness",
-        "negative rejection"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "benchmark",
-        "rag-eval",
-        "rag",
-        "retrieval",
-        "llm-eval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/RAG eval.md",
-      "nom": "RAG eval",
-      "alias": [
-        "RAG evaluation",
-        "évaluation RAG",
-        "évaluation des pipelines RAG",
-        "faithfulness",
-        "groundedness",
-        "context precision",
-        "context recall",
-        "answer relevancy"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "rag-eval",
-        "llm-eval",
-        "rag",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/RAG.md",
-      "nom": "RAG",
-      "alias": [
-        "Retrieval-Augmented Generation",
-        "génération augmentée par récupération",
-        "retrieval augmented generation"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "rag",
-        "llm",
-        "retrieval",
-        "embeddings",
-        "semantic-search"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/RL for LLMs.md",
-      "nom": "RL for LLMs",
-      "alias": [
-        "RL for language models",
-        "reinforcement learning for LLMs",
-        "RL appliqué aux LLM",
-        "RL post-training",
-        "post-training RL",
-        "RLVR"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "alignment",
-        "fine-tuning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/RLHF and DPO.md",
-      "nom": "RLHF and DPO",
-      "alias": [
-        "RLHF",
-        "DPO",
-        "alignement par préférences",
-        "preference tuning",
-        "direct preference optimization"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "alignment",
-        "fine-tuning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/ROC-AUC & courbe PR.md",
       "nom": "ROC-AUC / courbe PR",
       "alias": [
@@ -20039,36 +20801,6 @@
       "tags": [
         "model-evaluation",
         "ranking"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Reasoning models.md",
-      "nom": "Reasoning models",
-      "alias": [
-        "modèles de raisonnement",
-        "reasoning model",
-        "large reasoning model",
-        "LRM",
-        "test-time compute",
-        "inference-time scaling",
-        "long chain-of-thought",
-        "thinking models"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reasoning",
-        "llm",
-        "alignment"
       ],
       "alternatives": null,
       "complements": null,
@@ -20165,31 +20897,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Reliability patterns.md",
-      "nom": "Reliability patterns",
-      "alias": [
-        "patrons de fiabilité",
-        "reliability patterns",
-        "fiabilité des apps LLM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reliability",
-        "llm",
-        "agents"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Rendu neuronal 3D & estimation de profondeur.md",
       "nom": "Rendu neuronal 3D & estimation de profondeur",
       "alias": [
@@ -20226,62 +20933,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Reranking.md",
-      "nom": "Reranking",
-      "alias": [
-        "reranking",
-        "reclassement",
-        "re-ranking",
-        "rerank"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "retrieval",
-        "reranking",
-        "ranking",
-        "rag"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Reward modeling.md",
-      "nom": "Reward modeling",
-      "alias": [
-        "reward model",
-        "modèle de récompense",
-        "RM",
-        "preference model",
-        "modèle de préférence",
-        "RLAIF"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "alignment",
-        "reinforcement-learning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Reward shaping and hacking.md",
       "nom": "Reward shaping and hacking",
       "alias": [
@@ -20306,35 +20957,6 @@
         "reinforcement-learning",
         "reward-shaping",
         "alignment"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Routing and cascading.md",
-      "nom": "Routing and cascading",
-      "alias": [
-        "routing",
-        "query routing",
-        "semantic routing",
-        "model routing",
-        "model cascading",
-        "cascade de modèles",
-        "routage et cascade"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "routing",
-        "llm",
-        "rag"
       ],
       "alternatives": null,
       "complements": null,
@@ -20508,32 +21130,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/SFT.md",
-      "nom": "SFT",
-      "alias": [
-        "supervised fine-tuning",
-        "fine-tuning supervisé",
-        "instruction tuning",
-        "instruction fine-tuning"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "fine-tuning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/SVM.md",
       "nom": "SVM",
       "alias": [
@@ -20558,64 +21154,6 @@
         "supervised",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Sandboxing de code généré.md",
-      "nom": "Sandboxing de code généré",
-      "alias": [
-        "sandboxing",
-        "sandbox",
-        "bac à sable",
-        "code execution sandbox",
-        "exécution isolée",
-        "microVM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "ai-security",
-        "container"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Scaling laws.md",
-      "nom": "Scaling laws",
-      "alias": [
-        "lois d'échelle",
-        "loi d'échelle",
-        "scaling law",
-        "Chinchilla",
-        "Kaplan",
-        "compute-optimal"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "scaling-laws",
-        "llm",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -20713,64 +21251,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Server-Sent Events & streaming LLM.md",
-      "nom": "Server-Sent Events & streaming LLM",
-      "alias": [
-        "SSE",
-        "server-sent events",
-        "streaming LLM",
-        "streaming de tokens",
-        "sse-starlette",
-        "text/event-stream",
-        "EventSource"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "streaming",
-        "llm",
-        "web-framework"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Small Language Models.md",
-      "nom": "Small Language Models",
-      "alias": [
-        "SLM",
-        "petits modèles de langage",
-        "small language model",
-        "modèles compacts",
-        "edge LLM",
-        "on-device LLM"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "small-language-model",
-        "scaling-laws",
-        "llm",
-        "local-llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Sparse autoencoders.md",
       "nom": "Sparse autoencoders",
       "alias": [
@@ -20797,40 +21277,6 @@
         "deep-learning",
         "llm",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Speculative decoding.md",
-      "nom": "Speculative decoding",
-      "alias": [
-        "décodage spéculatif",
-        "speculative sampling",
-        "échantillonnage spéculatif",
-        "draft model",
-        "modèle brouillon",
-        "EAGLE",
-        "Medusa",
-        "DSpark",
-        "DeepSpec",
-        "semi-autoregressive",
-        "ordonnanceur de confiance"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "inference-optimization",
-        "decoding",
-        "llm",
-        "inference"
       ],
       "alternatives": null,
       "complements": null,
@@ -20928,32 +21374,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Structured outputs.md",
-      "nom": "Structured outputs",
-      "alias": [
-        "sorties structurées",
-        "sortie structurée",
-        "JSON mode"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "structured-output",
-        "llm",
-        "tool-use",
-        "data-validation"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Suivi d'objets.md",
       "nom": "Suivi d'objets",
       "alias": [
@@ -21011,35 +21431,6 @@
       "tags": [
         "explainability",
         "deep-learning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Synthetic data generation.md",
-      "nom": "Synthetic data generation",
-      "alias": [
-        "synthetic data",
-        "génération de données synthétiques",
-        "données synthétiques",
-        "self-instruct",
-        "evol-instruct",
-        "distillation de données"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "synthetic-data",
-        "fine-tuning",
         "llm"
       ],
       "alternatives": null,
@@ -21210,58 +21601,6 @@
         "forecasting",
         "timeseries",
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Tokenization.md",
-      "nom": "Tokenization",
-      "alias": [
-        "tokenisation",
-        "découpage en tokens",
-        "BPE",
-        "byte-pair encoding",
-        "subword tokenization"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "tokenization",
-        "llm",
-        "nlp"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Tool use patterns.md",
-      "nom": "Tool use patterns",
-      "alias": [
-        "patrons d'appel d'outils",
-        "tool use patterns",
-        "function calling patterns"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "tool-use",
-        "agents",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -21587,60 +21926,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/a2a-protocol.md",
-      "nom": "a2a-protocol",
-      "alias": [
-        "A2A",
-        "Agent2Agent",
-        "Agent-to-Agent",
-        "protocole A2A",
-        "agent card"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "multi-agent",
-        "llm",
-        "tool-use"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/agent-loops.md",
-      "nom": "agent-loops",
-      "alias": [
-        "agent loop",
-        "boucle d'agent",
-        "boucle perception-action",
-        "agentic loop"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "tool-use"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/embeddings.md",
       "nom": "embeddings",
       "alias": [
@@ -21724,65 +22009,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/mcp-protocol.md",
-      "nom": "mcp-protocol",
-      "alias": [
-        "MCP",
-        "Model Context Protocol",
-        "protocole MCP",
-        "MCP Apps",
-        "MCP Tasks",
-        "MRTR",
-        "spec 2026-07-28",
-        "Agentic AI Foundation"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "mcp",
-        "tool-use",
-        "llm",
-        "agents"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/prompt-caching.md",
-      "nom": "prompt-caching",
-      "alias": [
-        "prompt caching",
-        "cache de préfixes de prompt",
-        "prefix caching",
-        "cache de prompt",
-        "context caching"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "caching",
-        "inference-optimization",
-        "llm",
-        "context-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/t-SNE and UMAP.md",
       "nom": "t-SNE and UMAP",
       "alias": [
@@ -21802,32 +22028,6 @@
         "dimensionality-reduction",
         "manifold",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/tool-use.md",
-      "nom": "tool-use",
-      "alias": [
-        "function calling",
-        "appel d'outils",
-        "tool calling",
-        "appel de fonctions"
-      ],
-      "role": "notion",
-      "categorie": "concept/llm",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "tool-use",
-        "structured-output",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,
