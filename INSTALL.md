@@ -1,9 +1,8 @@
 ---
-galaxie: meta
 nom: INSTALL
-type: meta-doc
+role: gouvernance
 created: 2026-05-20
-modified: 2026-07-07
+modified: 2026-09-05
 tags: [meta]
 ---
 
@@ -21,6 +20,7 @@ Ce guide t'accompagne pas à pas pour installer DevBrain et le connecter à Clau
 1. [Aperçu — à quoi ça ressemble une fois installé](#1-aperçu--à-quoi-ça-ressemble-une-fois-installé)
 2. [Pré-requis](#2-pré-requis)
 3. [Cloner le dépôt](#3-cloner-le-dépôt)
+   - 3.5. [Activer les hooks git — **obligatoire**](#35-activer-les-hooks-git--obligatoire)
 4. [Ouvrir DevBrain comme coffre Obsidian](#4-ouvrir-devbrain-comme-coffre-obsidian)
 5. [Activer les modules complémentaires](#5-activer-les-modules-complémentaires)
 6. [Installer les 4 plugins requis](#6-installer-les-4-plugins-requis)
@@ -33,6 +33,7 @@ Ce guide t'accompagne pas à pas pour installer DevBrain et le connecter à Clau
 9. [Cacher `AI/` avec File Hider](#9-cacher-ai-avec-file-hider)
 10. [Connecter Claude Code via MCP](#10-connecter-claude-code-via-mcp)
 11. [Installer les Skills Obsidian (kepano)](#11-installer-les-skills-obsidian-kepano)
+   - 11.5. [Activer le code couleurs des rôles](#115-activer-le-code-couleurs-des-rôles)
 12. [Personnaliser les fichiers `CLAUDE.md`](#12-personnaliser-les-fichiers-claudemd)
 13. [(Optionnel) Hook Stop pour la mémoire de session](#13-optionnel-hook-stop-pour-la-mémoire-de-session)
 14. [Vérifier que tout marche](#14-vérifier-que-tout-marche)
@@ -46,13 +47,22 @@ Une fois DevBrain installé, ton coffre Obsidian aura cette structure :
 
 ![Vue d'ensemble du vault DevBrain](docs/install/img/24-vault-overview.png)
 
-À gauche : l'arborescence du vault. À droite : un *Comparatif* `.base` qui se remplit tout seul en lisant le frontmatter de toutes les fiches Services correspondantes (ici, les frameworks LLM open-source).
+À gauche : l'arborescence du vault — **un dossier par domaine**, à la racine. À droite : un
+*Comparatif* `.base` qui se remplit tout seul en lisant le frontmatter des fiches de sa
+catégorie (ici, les frameworks LLM open-source).
 
-Chaque fiche Service utilise un frontmatter dense, lisible par Claude comme par toi en mode lecture :
+Chaque fiche de brique (`role: brique`) utilise un frontmatter dense, lisible par Claude comme
+par toi en mode lecture :
 
-![Frontmatter d'une fiche Service](docs/install/img/19-postgres-fiche-properties.png)
+![Frontmatter d'une fiche de brique](docs/install/img/19-postgres-fiche-properties.png)
 
-C'est la combinaison **frontmatter + Bases** qui permet à Claude (et à toi) de poser des questions comme "liste mes vector DBs open-source score≥4" sans rien indexer.
+C'est la combinaison **frontmatter + Bases** qui permet à Claude (et à toi) de poser des
+questions comme « liste mes bases vectorielles open-source encore en production » sans rien
+indexer.
+
+> Les captures de ce guide datent de la v2, où les fiches vivaient sous `Dev/Services/`. Le
+> lot 3 de la v3 les a descendues dans l'arbre des 20 domaines : les images montrent encore
+> les anciens chemins, le texte donne les vrais.
 
 ---
 
@@ -81,6 +91,69 @@ cd ~/DevBrain
 ```
 
 Sur Windows tu peux remplacer `~/DevBrain` par `%USERPROFILE%\Documents\Projets\DevBrain` ou n'importe quel emplacement persistant (évite `Desktop` ou `Downloads`).
+
+---
+
+## 3.5. Activer les hooks git — **obligatoire**
+
+À faire **une fois par clone**, juste après le `git clone`, et avant le premier commit.
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Vérifier que c'est pris :
+
+```bash
+git config core.hooksPath        # doit répondre : .githooks
+```
+
+### À quoi ça sert
+
+DevBrain est un dépôt **personnel**. Claude Code annonce à chaque conversation l'adresse
+e-mail qui identifie l'utilisateur auprès de l'outil — et cette adresse peut être une adresse
+**professionnelle**. Une conversation a déjà signé cinq commits du vault avec l'adresse pro.
+Une fois poussés, ces commits font entrer l'adresse dans les **contributeurs GitHub** du dépôt,
+d'où elle ne se retire pas sans réécriture d'historique.
+
+La consigne écrite existait déjà dans `CLAUDE.md`. Elle n'a pas suffi. Deux hooks, versionnés
+dans `.githooks/`, la tiennent désormais mécaniquement :
+
+| Hook | Ce qu'il fait |
+|---|---|
+| `pre-commit` | refuse un commit dont l'**auteur** ou le **committer** contient `aosis.net`. Lit l'identité effective (`git var`), donc couvre aussi `-c user.email=…`, `--author=…` et `GIT_AUTHOR_EMAIL=…` |
+| `pre-push` | refuse de **pousser** un commit fautif, quelle que soit son origine : `--no-verify`, un `rebase` qui rejoue une identité, un commit importé d'un autre clone ou d'un worktree où les hooks n'étaient pas actifs |
+
+**Git ne lit `.githooks/` qu'après la commande ci-dessus.** Sans elle, les hooks sont bien dans
+le dépôt mais ne s'exécutent pas — et c'est pire qu'aucun garde-fou, parce qu'on le croit actif.
+Un **worktree** frais hérite de la config du dépôt principal, mais un **clone** neuf, non :
+refaire la commande.
+
+### Poser l'identité du dépôt
+
+Les hooks vérifient ; ils ne configurent rien. L'identité, elle, se pose une fois :
+
+```bash
+git config --local user.name  "floSa"
+git config --local user.email "<ton adresse perso>"
+```
+
+`--local` est important : la config **du dépôt** prime sur la config globale de la machine,
+qui peut très bien porter une adresse pro pour d'autres projets.
+
+### Si un hook refuse
+
+Ce n'est pas un incident à contourner, c'est la règle qui fonctionne. Le message dit quelle
+identité a été refusée et laquelle est attendue. **Ne pas utiliser `--no-verify`** : corriger
+l'identité, puis recommencer.
+
+```bash
+git commit --amend --reset-author --no-edit   # ré-attribue le dernier commit
+```
+
+Pour plusieurs commits déjà faits, en parler à floSa avant de réécrire quoi que ce soit — une
+réécriture d'historique ne se décide pas seule (cf.
+`.claude/skills/cloturer-brain/SKILL.md`, *Politique git du vault*).
 
 ---
 
@@ -138,7 +211,7 @@ Tu vas installer ces 4 plugins. Pour chacun : tape son nom dans la barre de rech
 |---|--------|------------------|---------------------|
 | 1 | **Local REST API & MCP Server** | Adam Coddington (`coddingtonbear`) | Expose le vault via HTTPS sécurisé. Sans lui, **Claude Code ne peut rien lire ni écrire** dans ton brain. |
 | 2 | **Templater** | SilentVoid13 | Remplit automatiquement les nouvelles fiches (Service, Concept, Pattern) avec le bon frontmatter, la date du jour, l'arborescence cible. |
-| 3 | **Dataview** | blacksmithgu | Permet d'écrire des requêtes type SQL sur le frontmatter (`LIST FROM "Dev/Services" WHERE score=5`). Sert de fallback si tu n'utilises pas encore les `.base`. |
+| 3 | **Dataview** | blacksmithgu | Permet d'écrire des requêtes type SQL sur le frontmatter (`LIST FROM "Bases de données" WHERE maturite = "production"`). Sert de fallback si tu n'utilises pas encore les `.base`. |
 | 4 | **File Hider** | Oliver Akins (`eldritch-oliver`) | Cache `AI/` (mémoire et hooks de l'agent) et autres dossiers techniques de la sidebar, pour que ta vue reste propre. |
 
 ### 6.1. Local REST API & MCP Server — le pont avec Claude
@@ -185,15 +258,17 @@ Reviens à la liste *(flèche ← en haut à gauche, ou clique sur la barre de r
 
 ````markdown
 ```dataview
-LIST FROM "Dev/Services"
-WHERE categorie = "database/relational" AND licence_type = "open-source" AND score >= 4
-SORT score DESC
+LIST FROM "Bases de données"
+WHERE categorie = "database/relationnel" AND licence_type = "open-source"
+SORT file.name ASC
 ```
 ````
 
-…te renvoie la liste de toutes les bases relationnelles open-source que tu as notées 4 ou plus.
+…te renvoie la liste de toutes les bases relationnelles open-source du brain. Le champ `score`
+de la v1 n'existe plus : il n'était jamais fiable. Les critères qui trient réellement sont
+`maturite`, `licence_type` et `famille`.
 
-Depuis Obsidian 1.10, le format `.base` natif fait pareil (et c'est ce que DevBrain utilise par défaut dans `Dev/Patterns/Comparatif - *.base`). Mais Dataview reste utile pour :
+Depuis Obsidian 1.10, le format `.base` natif fait pareil (et c'est ce que DevBrain utilise par défaut dans les `Comparatif - *.base`, rangés **dans le dossier de leurs membres**). Mais Dataview reste utile pour :
 - les **requêtes ad-hoc inline** dans une fiche (le format `.base` est un fichier séparé)
 - la **rétrocompatibilité** si tu ouvres le vault avec une version d'Obsidian < 1.10
 - les **scripts Claude** qui génèrent du markdown dynamique : Dataview est plus simple à écrire pour l'IA que `.base`
@@ -346,35 +421,49 @@ Les **skills custom DevBrain** (`enrichir-brain`, `planifier-projet`) sont déj�
 
 ---
 
-## 11.5. Activer le code couleurs galaxies (optionnel mais recommandé)
+## 11.5. Activer le code couleurs des rôles
 
-Le brain est structuré en 3 **galaxies** portées par le champ `galaxie:` du frontmatter, plus un regroupement visuel par chemin pour les skills (qui n'ont pas ce champ) :
+Depuis le lot 2 de la migration v3, la couleur se lit sur **`role:`** — le champ qui porte la
+**nature** d'une page. `galaxie:` a été supprimé : il ne servait qu'à ça, et il le faisait
+moins bien (il ne distinguait ni un hub d'une notion, ni un comparatif d'une brique).
 
-- 🔵 **DEV** (`#3B82F6` bleu acier) — outils & pratiques : `Dev/` (Services, Patterns, Outils, Rules)
-- 🟢 **WIKI** (`#10B981` vert sauge) — pensée & savoir : `Wiki/Concepts/` (peuplé), `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` (vides, pas encore remigrés)
-- ⚪ **META** (`#94A3B8` slate-gray) — docs du brain lui-même : `CHANGELOG.md`, `README.md`, `INSTALL.md`, `Home.md`, `Inbox.md`, `CLAUDE*.md`, `CONTRIBUTING.md`, + `Documentation/`, `AI/design/`, `AI/scripts/`
-- 🟣 **SKILLS** (`#8B5CF6` violet, regroupement par chemin) — `.claude/skills/` : les `SKILL.md` portent le frontmatter Anthropic strict, sans champ `galaxie:`
+| Élément | `role:` | Couleur |
+|---|---|---|
+| **Métiers** transverses (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | `hub` | 🟡 or |
+| **Hubs** — la page d'un dossier, l'aiguillage | `hub` | 🟠 orange |
+| **Briques** — ce qu'on déploie ou importe | `brique` | 🔵 bleu |
+| **Notions** — ce qu'il faut comprendre | `notion` | 🟢 vert |
+| **Comparatifs** — ce qui départage plusieurs briques | `comparatif` | 🔴 rouge |
+| **Patterns** et **Règles** | `pattern`, `rule` | ⚪ gris |
 
-Deux choses à activer côté Obsidian : le **snippet CSS** (couleurs dans la sidebar, les onglets, les notes) et le **graph view avec groupes** (couleurs dans le graphe).
+Le bleu et le vert sont **exactement** ceux des anciennes galaxies `dev` et `wiki` : ce sont
+les mêmes pages, elles ne changent que de nom de champ.
+
+Deux choses à activer côté Obsidian : le **snippet CSS** (couleurs dans la sidebar, les
+onglets, les notes) et le **graph view avec groupes** (couleurs dans le graphe).
 
 ### A. Activer le snippet CSS
 
-Le fichier `.obsidian/snippets/galaxies.css` est versionné dans le repo. Pour l'activer :
+Le fichier `.obsidian/snippets/roles.css` est versionné dans le repo. Pour l'activer :
 
 1. **Settings** → **Apparence** *(Appearance)*
 2. Scrolle tout en bas jusqu'à la section **Extraits CSS** *(CSS snippets)*
-3. Cherche **galaxies** dans la liste
+3. Cherche **roles** dans la liste
 4. Clique sur le toggle à droite — il devient violet/actif
 
-![Snippet galaxies activé dans Apparence → Extraits CSS](docs/install/img/27-snippet-galaxies-active.png)
+![Extrait CSS activé dans Apparence → Extraits CSS](docs/install/img/27-snippet-galaxies-active.png)
 
-Le toggle **galaxies** passe au violet et l'effet est immédiat dans la sidebar (ici `Wiki` en vert, fichiers avec leur barre de galaxie colorée).
+Le toggle passe au violet et l'effet est immédiat dans la sidebar.
 
 Effets visuels immédiats (recharge le vault si besoin, `Ctrl+R`) :
 - **Sidebar** : dossiers et fichiers ont une barre verticale colorée + titres de dossiers en gras coloré
-- **Onglets** : un fin trait coloré au-dessus de l'onglet selon la galaxie de la note ouverte
-- **Note ouverte** : bord gauche coloré selon le champ `galaxie:` du frontmatter
-- **Property** `galaxie:` dans le panneau Properties : rendue en pastille colorée
+- **Onglets** : un fin trait coloré au-dessus de l'onglet selon le rôle de la note ouverte
+- **Note ouverte** : bord gauche coloré selon le champ `role:` du frontmatter
+- **Property** `role:` dans le panneau Properties : rendue en pastille colorée
+
+> La capture ci-dessus date de la v2, quand l'extrait s'appelait `galaxies.css` et que la
+> sidebar montrait `Wiki/` en vert. Le mécanisme est identique ; seuls le nom du fichier et le
+> champ lu ont changé.
 
 ### B. Activer le module Graph et configurer les groupes
 
@@ -391,31 +480,36 @@ Une fois le module activé, configurer les groupes :
 1. Clique sur l'icône **Affichage du graphique** dans la sidebar gauche pour ouvrir le graphe
 2. Dans le panneau du graphe, clique sur l'icône **engrenage** (en haut à droite, dans le panneau du graphe lui-même)
 3. Va dans l'onglet **Groupes** *(Groups)*
-4. Clique 7 fois sur **Nouveau groupe** *(New group)* et configure chacun **dans cet ordre** :
+4. Clique 6 fois sur **Nouveau groupe** *(New group)* et configure chacun **dans cet ordre** :
 
 | # | Requête (à coller telle quelle) | Couleur (hex — RGB) |
 |---|---|---|
-| 1 | `path:MOC/Themes/` | 🟡 or `#FFD43B` — 255/212/59 |
-| 2 | `path:MOC/Categories/` | 🟠 orange `#FF922B` — 255/146/43 |
-| 3 | `path:MOC/Concepts/` | 🟠 orange `#FF922B` — 255/146/43 |
-| 4 | `path:.claude/skills/` | 🔴 `#E05252` — 224/82/82 |
-| 5 | `["galaxie":"dev"]` | 🔵 bleu `#412DDD` — 65/44/221 |
-| 6 | `["galaxie":"wiki"]` | 🟢 vert `#7AB800` — 122/184/0 |
-| 7 | `["galaxie":"meta"]` | 🟠 ambre `#F5B400` — 245/180/0 |
+| 1 | `path:Métiers/` | 🟡 or `#FFD43B` — 255/212/59 |
+| 2 | `["role":"hub"] OR path:MOC/` | 🟠 orange `#FF922B` — 255/146/43 |
+| 3 | `["role":"brique"]` | 🔵 indigo `#412CDD` — 65/44/221 |
+| 4 | `["role":"notion"]` | 🟢 vert olive `#7AB800` — 122/184/0 |
+| 5 | `["role":"comparatif"]` | 🔴 rouge `#EF4444` — 239/68/68 |
+| 6 | `["role":"pattern"] OR ["role":"rule"]` | ⚪ gris `#94A3B8` — 148/163/184 |
 
 Pour la couleur : à droite de la requête, clique sur le petit carré de couleur → un sélecteur s'ouvre. Dans Obsidian 1.12.7, le plus simple est de saisir les trois champs **R / G / B** en bas du sélecteur (valeurs ci-dessus), puis `Entrée`.
 
-> ⚠️ **L'ordre des règles compte.** Les pages `MOC/` ont techniquement `galaxie: wiki` dans leur frontmatter ; pour les colorer en or/orange, leurs règles `path:MOC/...` doivent être **avant** la règle `["galaxie":"wiki"]` (Obsidian applique la première règle qui matche).
+> ⚠️ **L'ordre des règles compte.** `path:Métiers/` doit passer **avant** la règle `hub`, sinon les cinq axes métier prendraient l'orange des hubs — ce sont eux aussi des `role: hub`. Obsidian applique la première règle qui matche.
 
-> 💡 **Pourquoi `["galaxie":"X"]` pour DEV/WIKI mais `path:` pour MOC et SKILLS ?** La syntaxe `["champ":"valeur"]` cible le frontmatter (`galaxie: dev | wiki | meta`, présent sur toutes les fiches). Les hubs `MOC/` (3 niveaux : Themes → Concepts/Categories → feuilles) et les `SKILL.md` de `.claude/skills/` se ciblent par **chemin** : les MOC pour primer sur leur galaxie, les skills car leur frontmatter Anthropic strict n'a pas le champ `galaxie:`.
+> 💡 **Pourquoi une règle mixte en 2 ?** `MOC/Concepts/` porte les 10 MOC de notions, seule porte d'entrée de 30 d'entre elles ; ce ne sont pas encore des `role: hub`, et elles vivent jusqu'au **lot 4**. La règle `["role":"hub"] OR path:MOC/` couvre les deux le temps de la migration, sans qu'il faille y retoucher le jour où `MOC/` disparaît.
 
-Une fois les 7 groupes saisis, le panneau **Groupes** ressemble à ça, et le graphe se colorie en direct :
+> 💡 **Deux règles ne colorent encore rien** : `comparatif` naît au **lot 5**, quand les `.base` deviendront des pages. La règle est posée d'avance — elle coloriera le jour même, sans intervention.
 
-![Panneau Groupes du graphe avec les 7 groupes configurés](docs/install/img/25-graph-groupes-config.png)
+> ℹ️ Deux règles de l'ancien bloc v2 ont été **retirées** et non transposées. `path:AI/skills/` : ce dossier n'existe plus, les skills vivent sous `.claude/skills/`, et Obsidian **n'indexe aucun dossier commençant par un point** — la règle ne pouvait pas fonctionner sous son nouveau chemin. `["galaxie":"meta"]` : le champ n'existe plus, et les pages de gouvernance (`Documentation/`, `AI/`) sont déjà hors du graphe par `userIgnoreFilters`.
 
-Le graphe affiche alors tes notes coloriées par niveau (domaines en or, hubs en orange, Dev en bleu, Wiki en vert) :
+Une fois les 6 groupes saisis, le panneau **Groupes** ressemble à ça, et le graphe se colorie en direct :
 
-![Graphe DevBrain colorié par galaxie](docs/install/img/26-graph-colore.png)
+![Panneau Groupes du graphe](docs/install/img/25-graph-groupes-config.png)
+
+Le graphe affiche alors tes notes coloriées par nature (métiers en or, hubs en orange, briques en bleu, notions en vert) :
+
+![Graphe DevBrain colorié par rôle](docs/install/img/26-graph-colore.png)
+
+> Ces deux captures datent de la v2 (7 groupes, requêtes en `galaxie:`). Le résultat visuel est le même ; les requêtes du tableau ci-dessus font foi.
 
 Si tu ne vois pas l'effet, refais "Reload app" (`Ctrl+R`).
 
@@ -423,7 +517,7 @@ Si tu ne vois pas l'effet, refais "Reload app" (`Ctrl+R`).
 
 ### C. Exclure les Roadmaps du graphe (optionnel)
 
-`Wiki/Roadmaps/` est prévu pour des documents de référence à fort volume de wikilinks fantômes (héritage v1 : `Roadmap.md` ~1500 items, `Roadmap-AI.md`), pas encore remigrés en v2. Le jour où ils le seront, exclus-les du graphe pour éviter le nuage gris déconnecté :
+`Wiki/Roadmaps/` est un scaffold **vide** : il était prévu pour des documents de référence à fort volume de wikilinks fantômes (héritage v1 : `Roadmap.md` ~1500 items, `Roadmap-AI.md`), jamais remigrés — et la v3 n'ayant plus de galaxie `Wiki/`, leur reconduction n'est pas acquise. Si un jour ils reviennent, exclus-les du graphe pour éviter le nuage gris déconnecté :
 
 1. Toujours dans les **Settings** du panneau graphe → onglet **Filtres** *(Filters)*
 2. Dans le champ **Recherche** *(Search)*, coller :
@@ -442,8 +536,8 @@ Si tu ne vois pas l'effet, refais "Reload app" (`Ctrl+R`).
 
 Avant ta première vraie session, édite ces 3 fichiers pour remplacer les placeholders (`<ton_nom>`, `<tes_domaines>`, etc.) :
 
-- `CLAUDE.md` — routeur (mode build vs projet)
-- `CLAUDE-build.md` — contexte d'enrichissement du brain
+- `CLAUDE.md` — routeur (mode brain vs mode projet). Il porte aussi la **règle d'identité git** (cf. §3.5) : la lire avant d'y toucher.
+- `CLAUDE-build.md` — contexte du mode brain (conventions de fiches, gabarits par rôle)
 - `CLAUDE-project.md` — **template** à copier dans tes futurs projets (pas à modifier en place)
 
 Exemple minimal dans `CLAUDE.md` :
@@ -487,7 +581,7 @@ Le script `session_to_devbrain.py` est déjà dans le repo. Adapte le chemin Pyt
 
 ### a) Obsidian — Bases fonctionnent
 
-Ouvre `Dev/Patterns/Comparatif - Frameworks LLM.base`. Tu dois voir un tableau des frameworks LLM (LangChain, LangGraph, LlamaIndex, DSPy, LiteLLM…) qui se remplit tout seul depuis le frontmatter :
+Ouvre `LLM & IA générative/Comparatif - Frameworks LLM.base`. Tu dois voir un tableau des frameworks LLM (LangChain, LangGraph, LlamaIndex, DSPy, LiteLLM…) qui se remplit tout seul depuis le frontmatter :
 
 ![Comparatif LLM frameworks](docs/install/img/21-comparatif-llm-frameworks.png)
 
@@ -539,7 +633,32 @@ Vérifie Node 18+ : `node --version`. Les anciennes versions de `npm` ne gèrent
 
 ### Le `.base` apparaît comme du texte brut au lieu d'une table
 
-Ta version d'Obsidian est trop ancienne. Bases est natif à partir d'Obsidian **1.10** (octobre 2025). Mets à jour Obsidian, ou utilise Dataview comme fallback (les comparatifs `.md` sont fournis aussi dans `Dev/Patterns/`).
+Ta version d'Obsidian est trop ancienne. Bases est natif à partir d'Obsidian **1.10** (octobre 2025). Mets à jour Obsidian, ou utilise Dataview comme fallback (cf. §6.3).
+
+### Un commit est refusé : « identité professionnelle sur un dépôt personnel »
+
+C'est le hook `pre-commit` (§3.5), et il fait son travail. Le message nomme l'adresse refusée et
+celle attendue. Pose l'identité locale du dépôt puis recommence — **pas de `--no-verify`** :
+
+```bash
+git config --local user.email "<ton adresse perso>"
+git commit --amend --reset-author --no-edit
+```
+
+### Les hooks ne se déclenchent jamais
+
+`git config core.hooksPath` ne répond rien : la commande de §3.5 n'a pas été passée sur ce
+clone. Les hooks sont dans le dépôt, mais git ne regarde pas `.githooks/` par défaut.
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Sous Windows, vérifie aussi que `.githooks/pre-commit` est bien en **LF** et non en CRLF : un
+`#!/bin/sh` suivi d'un CR fait chercher un interpréteur `/bin/sh
+` qui n'existe pas.
+`.gitattributes` épingle `.githooks/** text eol=lf` pour l'éviter ; si le fichier a été édité
+hors de git, `git checkout -- .githooks/` le remet d'aplomb.
 
 ### Templater n'insère pas les templates
 
@@ -558,4 +677,6 @@ Vérifie que **Hidden File Visibility** est sur OFF dans les options File Hider.
 
 ---
 
-Tu es prêt. Pour la suite, consulte le [README](README.md) (concept, workflow, conventions) ou plonge directement dans `CLAUDE-build.md` si tu veux commencer à enrichir le brain.
+Tu es prêt. Pour la suite, consulte le [README](README.md) (concept, workflow, conventions), le
+[CONTRIBUTING](CONTRIBUTING.md) (anatomie du repo, règles de modification), ou plonge directement
+dans `CLAUDE-build.md` si tu veux commencer à enrichir le brain.

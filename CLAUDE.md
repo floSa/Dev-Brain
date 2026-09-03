@@ -114,7 +114,7 @@ commit de ce dépôt.
 Un **garde-fou mécanique** double la consigne, parce que la consigne seule n'a pas suffi :
 `.githooks/pre-commit` refuse tout commit dont l'auteur ou le committer porte `aosis.net`,
 et `.githooks/pre-push` refuse d'en pousser un. Ils sont versionnés et activés par
-`git config core.hooksPath .githooks` (cf. `INSTALL.md` §16). Un hook qui refuse n'est pas
+`git config core.hooksPath .githooks` (cf. `INSTALL.md` §3.5). Un hook qui refuse n'est pas
 un incident à contourner : c'est la règle qui fonctionne. `--no-verify` ne s'utilise pas ici.
 
 ## Les pages `role: notion` — la mémoire perso de floSa

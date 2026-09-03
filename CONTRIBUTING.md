@@ -37,7 +37,7 @@ et `MOC/Types/` n'existent plus depuis le lot 3.
 | `Templates/` | brain | Gabarits Templater | éditeur direct |
 | `AI/` | agent | Espace de l'agent : design, migration, index généré, sessions, scripts, backlog | agent uniquement |
 | `.claude/` | tous | Config Claude Code + skills custom (`enrichir-brain`, `cloturer-brain`, `planifier-projet`) | éditeur, voir `.claude/README.md` |
-| `.githooks/` | tous | Hooks git versionnés — le garde-fou d'identité (cf. *Commits*) | éditeur, activation dans `INSTALL.md` §16 |
+| `.githooks/` | tous | Hooks git versionnés — le garde-fou d'identité (cf. *Commits*) | éditeur, activation dans `INSTALL.md` §3.5 |
 | `docs/install/` | tous | Captures et ressources pour `INSTALL.md` | éditeur direct |
 
 ## Règles de modification
@@ -139,7 +139,7 @@ de floSa, elle n'attribue **jamais** un commit d'ici. Jamais de `-c user.email`,
 git config core.hooksPath .githooks
 ```
 
-Détails et dépannage : `INSTALL.md` §16. Politique git complète :
+Détails et dépannage : `INSTALL.md` §3.5. Politique git complète :
 `.claude/skills/cloturer-brain/SKILL.md`, **seul endroit où elle est écrite**.
 
 ### Messages
@@ -196,7 +196,7 @@ dégradé mais fonctionnel.
 Voir [`INSTALL.md`](INSTALL.md) — guide pas à pas avec captures.
 
 Au premier clone :
-1. `git config core.hooksPath .githooks` — active le garde-fou d'identité (§16)
+1. `git config core.hooksPath .githooks` — active le garde-fou d'identité (§3.5)
 2. Copier `.claude/settings.example.json` → `.claude/settings.json` (lis avant)
 3. Copier `.claude/settings.local.example.json` → `.claude/settings.local.json`
 4. Personnaliser `CLAUDE.md` (identité utilisateur)

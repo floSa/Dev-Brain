@@ -63,7 +63,7 @@ de floSa.** Elle l'identifie auprès de l'outil ; elle n'attribue **jamais** un 
 **Garde-fou mécanique**, parce que la consigne écrite n'a pas suffi : `.githooks/pre-commit`
 refuse tout commit dont l'auteur ou le committer porte `aosis.net`, et `.githooks/pre-push`
 refuse d'en pousser un. Activation : `git config core.hooksPath .githooks` (cf. `INSTALL.md`
-§16) — **à vérifier sur un clone neuf ou un worktree frais**, sinon les hooks sont là mais
+§3.5) — **à vérifier sur un clone neuf ou un worktree frais**, sinon les hooks sont là mais
 git ne les lit pas :
 
 ```bash

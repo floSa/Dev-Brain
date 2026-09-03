@@ -1,15 +1,14 @@
 ---
-galaxie: meta
 nom: taxonomie
-type: gouvernance
+role: gouvernance
 created: 2026-06-04
-modified: 2026-09-03
+modified: 2026-09-05
 tags: [meta, gouvernance, taxonomie]
 ---
 
 # Taxonomie — deux axes de rangement
 
-Une page de `Dev/` est rangée sur **deux axes indépendants**, tous deux à vocabulaire fermé :
+Une page du brain est rangée sur **deux axes indépendants**, tous deux à vocabulaire fermé :
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
@@ -28,12 +27,38 @@ sur les 336 fiches Dev, 57 relevaient des familles `application`, `cli` ou `exte
 symétriquement, 11 des 13 `saas` étaient `type: service`). Les deux gabarits ont donc fusionné
 en `role: brique`.
 
-**`role:` n'est pas un troisième axe de rangement**, c'est la nature **éditoriale** de la page :
-`brique` (ce qu'on déploie ou importe), `notion` (ce qu'il faut comprendre), `pattern`, `rule` —
-et bientôt `hub` (lot 3) et `comparatif` (lot 5). Il choisit le **gabarit** que le validateur
-applique. `famille:` reste la nature **technique** d'une brique : est-ce un paquet ou une
-plateforme ? Pour savoir ce qu'**est** une brique, lire `famille:` — jamais `role:`, qui dit
-seulement que c'en est une.
+**`role:` n'est pas un troisième axe de rangement**, c'est la nature **éditoriale** de la page.
+Il choisit le **gabarit** que le validateur applique. `famille:` reste la nature **technique**
+d'une brique : est-ce un paquet ou une plateforme ? Pour savoir ce qu'**est** une brique, lire
+`famille:` — jamais `role:`, qui dit seulement que c'en est une.
+
+## Axe `role:` — la nature éditoriale de la page (6 valeurs)
+
+Énumération fermée, lue par `check_brain.py` : un `role:` inconnu ou absent est refusé, il n'y
+a plus de page sans gabarit [R3].
+
+| `role:` | Ce que la page est | Porte `categorie:` ? | Où elle vit |
+|---|---|---|---|
+| `brique` | ce qu'on **déploie ou importe** : service, outil, librairie | **oui** — c'est elle qui décide du dossier | `<Dossier>/<Nom>.md` |
+| `notion` | ce qu'il faut **comprendre** : définitions, maths, mécanismes | **oui** — `concept/<sous-domaine>` | `Wiki/Concepts/` jusqu'au **lot 4** |
+| `pattern` | une **architecture éprouvée** | **non** | `Patterns/Pattern - <nom>.md` |
+| `rule` | une **règle transverse** | **non** | `Rules/Rule - <nom>.md` |
+| `hub` | la **page d'un dossier**, l'aiguillage | **non** | `<Dossier>/<Dossier>.md` + les 5 de `Métiers/` |
+| `comparatif` | ce qui **départage** plusieurs briques | à définir | aucune page — naît au **lot 5**, les comparatifs sont des `.base` |
+
+Trois rôles n'ont **pas** de `categorie:`, et c'est délibéré, pas un oubli :
+
+- un **hub** ne se range pas, il *est* le rangement — son domaine est son chemin ;
+- un **pattern** enjambe plusieurs domaines par construction ;
+- une **règle** est transverse par définition.
+
+C'est `role:` qui les groupe, dans `Patterns/` et `Rules/`. Le champ est indexé et filtrable :
+`uv run AI/scripts/query_index.py --role hub`.
+
+> `role:` a remplacé `galaxie:` et `type:` au lot 2. Le premier ne servait qu'à la couleur du
+> graphe ; le second ne décrivait que le dossier d'accueil. Les pages de gouvernance
+> (`Documentation/`, `AI/`, docs de la racine) ne sont pas des pages du brain : le validateur
+> ne les contrôle pas, et leur `role:` ne vient pas de cette liste.
 
 ## Axe `famille:` — la nature de la brique (9 valeurs fermées)
 
@@ -270,13 +295,18 @@ valeurs disparues et ne sont pas reconduites.
   Distinct de `media/video` (montage, production, lecture — le média est la finalité) et de
   `signal/*` (traitement du signal comme objet d'étude).
 
-### Les 20 préfixes de tête et leur hub
+### Les 20 préfixes de tête et leur dossier
 
-Un préfixe = un hub `MOC/Categories/<libellé>`, généré par `AI/scripts/build_mocs.py` (table
-`CAT_LABEL`). Un préfixe sans libellé sort en anglais capitalisé : **ajouter le libellé en même
-temps que le préfixe**.
+Un préfixe = un **dossier de domaine** à la racine, portant une page hub à son nom. Le libellé
+vient de la table `CAT_LABEL` de `AI/scripts/build_mocs.py`, dont `DOM_LABEL` de
+`AI/scripts/arbo.py` est la copie conforme — c'est cette table qui **dérive le chemin** d'une
+page depuis sa `categorie:`. Un préfixe sans libellé sort en anglais capitalisé : **ajouter le
+libellé dans les deux tables en même temps que le préfixe**, sinon la dérivation échoue.
 
-| Préfixe | Hub `MOC/Categories/` | Portée |
+`MOC/Categories/` portait ces hubs jusqu'au lot 3 ; le dossier est vide depuis, et les hubs
+sont descendus dans l'arbre.
+
+| Préfixe | Dossier de domaine | Portée |
 |---------|----------------------|--------|
 | `ml` | Machine Learning | entraîner, servir, suivre, expliquer un modèle |
 | `llm` | LLM & IA générative | tout ce qui a besoin d'un LLM pour fonctionner |
@@ -299,7 +329,7 @@ temps que le préfixe**.
 | `docs` | Documents | produire un document pour un humain |
 | `math` | Mathématiques | optimisation mathématique, recherche opérationnelle |
 
-## Concepts Wiki (`Wiki/Concepts/`) — `categorie: concept/<sous-domaine>`
+## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
 concept/{data, ai, ml, dl, rl, ts, nlp, signal, stats, math, devops, llm}
@@ -313,7 +343,7 @@ concept/{data, ai, ml, dl, rl, ts, nlp, signal, stats, math, devops, llm}
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
 
-## Skills Wiki (`Wiki/Outils/`) — `categorie: skill/<sous-domaine>`
+## Skills perso (`categorie: skill/<sous-domaine>`)
 
 > Réservé aux **skills / extensions** liés à la pratique perso (Claude Code, Obsidian, MCP). Les **outils techniques** (clients GUI, CLI, BDD, frameworks) ne sont PAS ici — ils vivent dans `Dev/` (cf. *Outils Dev* ci-dessus). Section vide en v2 tant qu'aucun skill n'est documenté.
 
