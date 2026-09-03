@@ -21,17 +21,16 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > c'est une **frontière sur le rôle** : une page `role: notion` est la mémoire perso de
 > floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
-> **Un seul arbre depuis le lot 3 de la v3.** `Dev/` n'existe plus : les 337 briques,
-> les 47 comparatifs, les 5 patterns et les 5 règles sont descendus dans l'arbre.
-> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore**, mais rétrécissent vite : au
-> 2026-09-05, le lot 4 a traité **onze familles sur douze** — statistiques (37),
-> mathématiques (26), data (13), signal (5), sécurité IA (4), LLM (56), RL (17),
-> séries temporelles (13), NLP (7) et deep learning (52). Il reste **67 notions** sous
-> `Wiki/Concepts/`, toutes `concept/ml`, et **1 MOC**. Une MOC se **supprime** désormais, et c'est la seule
-> exception à « aucun `rm` sur une page » : quand il est **mesuré** que plus aucune notion
-> ne dépend d'elle seule pour sa R7, et jamais sur l'intuition — la mesure va dans le
-> message de commit (`AI/migration/scripts/mesure_r7.py`). Tout ce qui suit décrit cet
-> état-là, pas la cible finale.
+> **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
+> à la clôture du lot 4, le 2026-09-05. Les 337 briques, les **297 notions**, les 47
+> comparatifs, les 5 patterns et les 5 règles vivent dans l'arbre des 20 domaines — une
+> notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
+> dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
+> `role:` groupe et qu'aucune `categorie:` ne range. Ce qui suit décrit l'état réel.
+>
+> Ce qui reste ouvert est du **format**, pas du rangement : les comparatifs `.base`
+> deviennent des pages au lot 5, les fiches passent au nouveau gabarit au lot 6, les
+> règles restées en avertissement durcissent au lot 8.
 
 ## Identité utilisateur
 
@@ -78,7 +77,7 @@ wiki", il annonce simplement qu'il vient travailler ses notions : applique la fr
 
 ## Ce que tu peux faire ici par défaut
 
-- Lire/explorer la structure du vault (l'arbre des domaines, `Métiers/`, `Patterns/`, `Rules/`, `Wiki/Concepts/`, `MOC/Concepts/`, `Documentation/`)
+- Lire/explorer la structure du vault (l'arbre des domaines, `Métiers/`, `Patterns/`, `Rules/`, `Documentation/`)
 - Répondre à des questions générales sur le contenu
 - Suggérer des fiches manquantes
 - Auditer la cohérence (frontmatter, taxonomie — cf. `Documentation/general/taxonomie.md`)
@@ -125,52 +124,54 @@ un incident à contourner : c'est la règle qui fonctionne. `--no-verify` ne s'u
 
 ## Les pages `role: notion` — la mémoire perso de floSa
 
-Ce n'est plus un mode, c'est une **frontière sur le rôle** — et le rôle est ce qui survit au
-lot 4, le dossier non. Une `role: notion` est ce que floSa a compris et écrit pour lui-même.
-On y ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
+Ce n'est plus un mode, et **ce n'est plus un dossier non plus** : depuis la clôture du lot 4,
+aucun chemin ne dit qu'une page est une notion. Elle est rangée par son domaine, à côté des
+briques qui l'implémentent, et `ls` d'un dossier ne les distingue pas. **La frontière est
+portée par le champ `role:`, et par lui seul** — c'est la seule chose à lire avant d'écrire
+dans une page. Une `role: notion` est ce que floSa a compris et écrit pour lui-même. On y
+ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
+
+> Conséquence pratique : avant toute modification d'une page de l'arbre, **lire son
+> frontmatter**. Une page voisine d'une brique, dans le même dossier, sous le même hub, peut
+> être une notion — la règle change, l'emplacement ne le dit pas.
 
 - **Créer** une notion : normal, dès qu'une capture en a besoin. `enrichir-brain` écrit la brique et sa notion du même geste — c'est la ligne « la notion du dossier » de sa table de propagation, pas une incursion.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : il ne reste **qu'une famille** au lot 4. **230** notions vivent désormais
-dans l'arbre, rangées par leur domaine comme les briques — « Machine Learning/ » (88),
-« LLM & IA générative/ » (56), « Statistiques & inférence/ » (37), « Mathématiques/ » (26),
-« Data & pipelines/ » (8), « Bases de données/ » (4), « Sécurité/ » (5),
-« Signal & audio/ » (5), « Outils de développement/ » (1) ; les **67** autres sont encore
-sous `Wiki/Concepts/`, toutes `concept/ml`, avec la dernière `MOC/Concepts/` qui reste leur
-porte d'entrée. `Wiki/Concepts/` est donc le lieu normal d'une notion **pas
-encore migrée**, et lui seul — une notion dont le domaine est passé se range comme une
-brique. C'est la seule exception à « le dossier porte le domaine », elle est datée, et elle
-se referme lot à lot.
+État actuel : les **297** notions sont rangées, réparties comme les briques par leur domaine —
+« Machine Learning/ » (155), « LLM & IA générative/ » (56), « Statistiques & inférence/ » (36),
+« Mathématiques/ » (26), « Data & pipelines/ » (9), « Sécurité/ » (5), « Signal & audio/ » (5),
+« Bases de données/ » (4), « Outils de développement/ » (1). Il n'y a plus de lieu d'attente,
+plus de vocabulaire de galaxie, et plus d'exception à « le dossier porte le domaine ».
 
-> Une nuance de méthode à connaître : cinq notions `concept/data` ont d'abord été
-> **remontées** plutôt que déplacées, parce qu'elles appelaient « Bases de données » ou
-> « Outils de développement », hors du périmètre du lot qui rangeait leur famille. Elles
-> sont descendues le 2026-09-05, dans un second passage pris **par domaine d'accueil**.
-> La règle qui les avait retenues tient toujours : une notion qui appelle un sous-domaine
-> hors périmètre se remonte, elle ne se déplace pas — mais le résidu se ferme par un
-> passage dédié, pas en laissant la valeur `concept/*` traîner.
-
-`Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** — le contenu
-v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`) et, la v3
-n'ayant plus de galaxie, il n'est pas acquis qu'ils soient reconduits. N'invente pas de
-contenu pour les combler ; demande avant de commencer une migration.
+> Une nuance de méthode qui vaut d'être gardée : cinq notions ont d'abord été **remontées**
+> plutôt que déplacées, parce qu'elles appelaient un domaine hors du périmètre du lot qui
+> rangeait leur famille. Elles sont descendues dans un second passage, pris **par domaine
+> d'accueil**. La règle tient toujours : une page qui appelle un sous-domaine hors périmètre
+> se remonte, elle ne se déplace pas — mais le résidu se ferme par un passage dédié, pas en
+> laissant une valeur morte traîner dans le vocabulaire.
 
 Écrire une notion :
-1. Gabarit `Templates/Concept-Wiki.md`, frontmatter complet (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie).
-2. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérive de sa `categorie:`, comme pour une brique — le lot 4 l'a établi sur « Statistiques & inférence », et `AI/scripts/arbo.py` le calcule. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+1. Gabarit `Templates/Concept-Wiki.md`, frontmatter complet (`role: notion`, `categorie:` prise dans le vocabulaire des domaines — le **même** que pour une brique, cf. taxonomie).
+2. **Aucun dossier à choisir** : le rangement d'une notion se dérive de sa `categorie:`, comme pour une brique (`AI/scripts/arbo.py` le calcule, `check_arbo.py` le vérifie). Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
 3. La notion se câble à ses briques dans les deux sens — c'est la règle de propagation, pas une politesse.
 
 Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble des notions.
 
 ## Structure du vault (rappel)
 
-**Un dossier par domaine, à la racine.** Le domaine se dérive de `categorie:` — personne
-ne choisit un dossier (`AI/scripts/arbo.py` porte la dérivation, `check_arbo.py` la
-vérifie). Un sous-dossier apparaît dès qu'un sous-domaine atteint 5 pages, sauf s'il ne
-laisserait aucune page au niveau du domaine. Tout dossier porte une page à son nom,
-`role: hub`, dont la zone `<!-- AUTO -->` est générée depuis le contenu du dossier.
+**Un dossier par domaine, à la racine, et c'est tout.** Le domaine se dérive de
+`categorie:` — personne ne choisit un dossier (`AI/scripts/arbo.py` porte la dérivation,
+`check_arbo.py` la vérifie, et depuis le 2026-09-05 **aucune page n'échappe à ce
+contrôle** : `arbo.LEGACY` est vide). Un sous-dossier apparaît dès qu'un sous-domaine
+atteint 5 pages, sauf s'il ne laisserait aucune page au niveau du domaine. Tout dossier
+porte une page à son nom, `role: hub`, dont la zone `<!-- AUTO -->` est générée depuis le
+contenu du dossier.
+
+**Briques et notions cohabitent dans le même dossier.** C'est le point d'arrivée de la v3 :
+le dossier porte le **domaine**, `role:` porte ce que la page **est**. Rien dans un chemin
+ne dit plus si on lit une brique ou une notion.
 
 ```
 <20 dossiers de domaine>/    ← l'arbre : Bases de données/, Machine Learning/,
@@ -178,8 +179,10 @@ laisserait aucune page au niveau du domaine. Tout dossier porte une page à son 
 ├── <Domaine>.md              (role: hub — l'aiguillage du dossier)
 ├── <Sous-domaine>/           (promu à 5 pages : Vectoriel/, Apprentissage profond/…)
 │   ├── <Sous-domaine>.md     (role: hub)
-│   └── <Brique>.md           (role: brique) + Comparatif - <thème>.base
-└── <Brique>.md               (role: brique) + Comparatif - <thème>.base
+│   ├── <Brique>.md           (role: brique)   <Notion>.md   (role: notion)
+│   └── Comparatif - <thème>.base
+├── <Brique>.md               (role: brique)   <Notion>.md   (role: notion)
+└── Comparatif - <thème>.base
 
 Métiers/                     ← 6 hubs transverses, générés depuis `domaines:`
                                (Data Science, Data Engineering, MLOps, ML Engineering,
@@ -190,19 +193,13 @@ Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role:
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
-Wiki/Concepts/               ← 67 notions (role: notion) — EN ATTENTE DU LOT 4
-                               toutes `concept/ml`, dernière famille non rangée
-MOC/Concepts/                ← 1 MOC générée, porte d'entrée (R7) de ce qui reste
-                               elle meurt avec sa famille, au dernier lot
-                               une MOC ne se supprime QUE sur mesure R7 (cf. plus haut)
-                               et après avoir compté les liens qui la VISENT (remontée 37)
-Wiki/Outils|Workflows|Roadmaps/  ← scaffolds vides, non remigrés (cf. reservoir-v1.md)
-
 Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventions perso)
 ├── general/                  (réutilisable : tags.md, taxonomie.md, themes.md, questions-projet.md)
 └── perso/                    (conventions.md, archetypes.md, machines.md, obsidian-graph.md, reservoir-v1.md)
 
 Templates/                   ← gabarits (Service-Dev, Outil-Dev, Concept-Wiki, Pattern, Rule)
+                               NB : `Dev` et `Wiki` dans ces noms sont un reliquat v2 —
+                               les dossiers correspondants n'existent plus
 Projects/                    ← log des projets en cours (scaffold, vide pour l'instant)
 Home.md                      ← porte d'entrée du vault : l'arbre, les métiers, le reste
 
@@ -221,10 +218,10 @@ AI/                          ← TON espace agent
 └── planifier-projet/          (cadrage projet — mode projet)
 ```
 
-**Frontières fermes** :
+**Frontières fermes** — la première se lit sur un **chemin**, la seconde sur un **champ** :
 - **L'arbre des domaines**, `Patterns/`, `Rules/` → modifiables en mode brain seulement (selon `CLAUDE-build.md`). Depuis un projet, **aucune écriture**.
-- **Les pages `role: notion`** (aujourd'hui `Wiki/Concepts/`) → création libre en mode brain ; **modification d'une notion existante sur demande explicite** (cf. section dédiée).
-- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `MOC/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
+- **Les pages `role: notion`** → création libre en mode brain ; **modification d'une notion existante sur demande explicite** (cf. section dédiée). **Aucun dossier ne les rassemble** : elles sont dispersées dans l'arbre, mêlées aux briques. Cette frontière ne se déduit donc jamais d'un chemin — elle se lit dans le frontmatter, page par page, avant d'écrire.
+- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
 - `AI/` (hors index/) → ton espace, tu peux y écrire librement.
 - `Documentation/` → modifiable en mode brain, toujours avec prudence (c'est la gouvernance du brain).
 - `Inbox.md` → modifiable dans les deux modes (écriture par l'utilisateur seulement)
@@ -241,7 +238,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 | Comparatif | `<Dossier>/Comparatif - <thème>.base` — dans le dossier de ses membres |
 | Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
 | Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
-| Notion (`role: notion`) | `<Dossier>/<Nom>.md` — comme une brique. Les non encore migrées sont sous `Wiki/Concepts/` |
+| Notion (`role: notion`) | `<Dossier>/<Nom>.md` — **exactement** comme une brique : même dossier, même dérivation. Seul `role:` les distingue |
 | **Entrée d'expérience datée** (dans `## Pièges` de la fiche concernée) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté |
 | **Incident né entre deux briques** | s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne ; la fiche de l'autre brique **ne le mentionne pas** (une entrée dupliquée serait une seconde chose à synchroniser) |
 

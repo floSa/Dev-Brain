@@ -9,8 +9,8 @@ tags: [meta, mode-brain]
 # CLAUDE-build.md — Mode brain du DevBrain
 
 Tu es en mode **BRAIN** : on enrichit le brain. Lecture/écriture légitime sur **l'arbre des
-20 domaines** à la racine, `Métiers/`, `Patterns/`, `Rules/`, `Wiki/Concepts/`, `Templates/`,
-`Documentation/` et `AI/`. Suis ces conventions strictement.
+20 domaines** à la racine, `Métiers/`, `Patterns/`, `Rules/`, `Templates/`, `Documentation/`
+et `AI/`. Suis ces conventions strictement.
 
 Spec de référence : `AI/design/brain-v3.md` (ce que la v2 a établi et qui reste vrai :
 `AI/design/brain-v2.md`).
@@ -21,7 +21,7 @@ Spec de référence : `AI/design/brain-v3.md` (ce que la v2 a établi et qui res
 > est la mémoire perso de floSa : la **créer** dans une capture est normal, la **réécrire**
 > demande son accord (cf. `CLAUDE.md`).
 
-> **Les zones `<!-- AUTO -->` des hubs, `Métiers/`, `MOC/Concepts/` et `AI/index/` sont
+> **Les zones `<!-- AUTO -->` des hubs, `Métiers/` et `AI/index/` sont
 > générées.** Ne pas les éditer à la main : `cloturer-brain` les régénère et écraserait la
 > modification. Le **corps** d'un hub, hors zone AUTO, s'écrit à la main — et ne se répare
 > donc pas tout seul.
@@ -53,10 +53,10 @@ Anthropic strict — pas de champ `role:`.
 | `role:` | Ce que c'est | Où | Mode d'écriture |
 |---|---|---|---|
 | **`brique`** | ce qu'on déploie ou importe : service, outil, librairie | `<Dossier>/<Nom>.md`, dérivé de `categorie:` | à la main |
-| **`notion`** | ce qu'il faut comprendre : définitions, maths, mécanismes | `Wiki/Concepts/` — **jusqu'au lot 4**, qui les descendra dans l'arbre | à la main, création libre / modification sur accord |
+| **`notion`** | ce qu'il faut comprendre : définitions, maths, mécanismes | `<Dossier>/<Nom>.md`, dérivé de `categorie:` — **le même dossier qu'une brique** | à la main, création libre / modification sur accord |
 | **`pattern`** | une architecture éprouvée | `Patterns/Pattern - <nom>.md` | à la main |
 | **`rule`** | une règle transverse | `Rules/Rule - <nom>.md` | à la main |
-| **`hub`** | la page d'un dossier, l'aiguillage | `<Dossier>/<Dossier>.md` + les 5 de `Métiers/` | corps à la main, **zone AUTO générée** |
+| **`hub`** | la page d'un dossier, l'aiguillage | `<Dossier>/<Dossier>.md` + les 6 de `Métiers/` | corps à la main, **zone AUTO générée** |
 | **`comparatif`** | ce qui départage plusieurs briques | aucune page encore — arrive au **lot 5**, les comparatifs sont des `.base` | — |
 
 `role: hub`, `pattern` et `rule` ne portent **pas** de `categorie:`, et c'est délibéré : un hub
@@ -132,7 +132,7 @@ ici de mémoire.
 
 - Toute brique, quelle que soit sa nature : `<domaine>/<sous-domaine>`, **un seul vocabulaire de 94 valeurs**, 20 préfixes de tête (`ml`, `llm`, `database`, `data`, `devtools`, `stats`, `compute`, `design`, `storage`, `web`, `automation`, `media`, `ui`, `observability`, `security`, `signal`, `network`, `devops`, `docs`, `math`). Il n'y a **pas** de préfixe `tooling/` : un outil prend le domaine de son **sujet** (DBeaver → `database/admin`, uv → `devtools/paquet`, Aider → `llm/agent-de-code`).
 - Le domaine se **dérive** de l'arbre D1→D14, il ne se choisit pas. Le dossier se dérive du domaine.
-- `role: notion` → `concept/<sous-domaine>` (`data`, `ai`, `ml`, `dl`, `rl`, `ts`, `nlp`, `signal`, `stats`, `math`, `devops`, `llm`).
+- `role: notion` → **le même vocabulaire de domaine qu'une brique**, sans exception. Les douze valeurs `concept/*` de la galaxie wiki sont sorties du vocabulaire le 2026-09-05, à la clôture du lot 4 : `taxonomie.md` en garde le journal, pas la liste. Une notion se range donc comme une brique, et souvent dans son dossier.
 
 Catégorie qui ne correspond à rien de listé → **demander avant d'inventer**. Une nouvelle
 famille se pose dans `taxonomie.md`, pas dans l'arborescence.
@@ -287,7 +287,7 @@ nombre de pages.
 role: notion
 nom: <Nom>
 alias: []
-categorie: concept/<sous-domaine>
+categorie: <domaine>/<sous-domaine>
 domaines: [<data-sci, data-eng, mlops, ml-eng, ai-eng>]
 tags: [...]
 ---
@@ -300,8 +300,10 @@ Corps (ton impersonnel, technique vulgarisé — cf. `AI/design/brain-v3.md` §7
 `Templates/Concept-Wiki.md`) : Aperçu → Concepts clés → Les maths, simplement (si pertinent) →
 En pratique → Approches voisines & alternatives → Pour aller plus loin.
 
-Emplacement : `Wiki/Concepts/<Nom>.md` **jusqu'au lot 4**, qui descendra les 297 notions dans
-l'arbre selon leur `categorie:`. Ne pas créer de sous-dossier dans `Wiki/` en attendant.
+Emplacement : `<Dossier>/<Nom>.md`, où `<Dossier>` se **dérive** de `categorie:` comme pour
+une brique — le plus souvent le dossier où vivent déjà les briques du sujet. Aucun dossier à
+choisir, aucun sous-dossier à créer : `AI/scripts/arbo.py` calcule le chemin, `check_arbo.py`
+le vérifie.
 
 ## Workflow d'ajout depuis l'Inbox
 

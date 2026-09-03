@@ -29,7 +29,9 @@ Si le MCP n'est pas dispo : **alerte explicitement l'utilisateur**, ne fais pas 
 ## Comment le brain est rangé (v3)
 
 Une seule chose à retenir : **un dossier par domaine, à la racine**. Il n'y a plus de galaxie
-`Dev/` ni de dossier `Services/`.
+`Dev/` ni `Wiki/`, plus de dossier `Services/` ni `Concepts/`. Une **notion** (ce qu'il faut
+comprendre) et une **brique** (ce qu'on déploie) du même sujet vivent dans le même dossier ;
+c'est le champ `role:` de leur frontmatter qui les distingue, pas leur chemin.
 
 ```
 <20 dossiers de domaine>/     Bases de données/, Machine Learning/, LLM & IA générative/,
@@ -37,14 +39,17 @@ Une seule chose à retenir : **un dossier par domaine, à la racine**. Il n'y a 
 ├── <Domaine>.md              la page hub du dossier — l'aiguillage, à lire en premier
 ├── <Sous-domaine>/           quand un sous-domaine atteint 5 pages (Vectoriel/, …)
 │   ├── <Sous-domaine>.md     hub, lui aussi
-│   └── <Brique>.md           la fiche d'une techno  +  Comparatif - <thème>.base
-└── <Brique>.md               idem, au niveau du domaine
+│   ├── <Brique>.md           la fiche d'une techno (role: brique)
+│   ├── <Notion>.md           la notion du sujet    (role: notion)
+│   └── Comparatif - <thème>.base
+├── <Brique>.md               idem, au niveau du domaine
+└── <Notion>.md               idem
 
-Métiers/                      5 hubs transverses : Data Science, Data Engineering,
-                              MLOps, ML Engineering, AI Engineering
+Métiers/                      6 hubs transverses : Data Science, Data Engineering,
+                              MLOps, ML Engineering, AI Engineering,
+                              Infrastructure & Ops
 Patterns/Pattern - <nom>.md   architectures éprouvées
 Rules/Rule - <nom>.md         règles transverses
-Wiki/Concepts/<Nom>.md        les notions (définitions, maths, mécanismes)
 Home.md                       la porte d'entrée du vault
 ```
 
@@ -134,7 +139,7 @@ Liste les écarts must. Liste les écarts should avec mon jugement requis.
 
 ## Ce que tu NE fais PAS
 
-- **N'écris rien dans le brain depuis un projet.** Ni dans l'arbre des 20 domaines, ni dans `Métiers/`, `Patterns/`, `Rules/`, `Wiki/Concepts/`. Ces pages sont factuelles et durables ; elles se modifient en mode brain, dans le vault, où la règle de propagation s'applique.
+- **N'écris rien dans le brain depuis un projet.** Ni dans l'arbre des 20 domaines, ni dans `Métiers/`, `Patterns/`, `Rules/`. Ces pages sont factuelles et durables ; elles se modifient en mode brain, dans le vault, où la règle de propagation s'applique.
 - Ne crée pas de nouvelles règles ni de nouveaux patterns dans le brain (ça se fait en mode brain).
 - Ne supprime rien dans le brain.
 - Ne duplique pas le brain dans le projet (pas de `cp -r` du DevBrain).
