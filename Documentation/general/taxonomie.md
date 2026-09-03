@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 94 valeurs, cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 96 valeurs, cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -40,7 +40,7 @@ a plus de page sans gabarit [R3].
 | `role:` | Ce que la page est | Porte `categorie:` ? | Où elle vit |
 |---|---|---|---|
 | `brique` | ce qu'on **déploie ou importe** : service, outil, librairie | **oui** — c'est elle qui décide du dossier | `<Dossier>/<Nom>.md` |
-| `notion` | ce qu'il faut **comprendre** : définitions, maths, mécanismes | **oui** — `concept/<sous-domaine>` | `Wiki/Concepts/` jusqu'au **lot 4** |
+| `notion` | ce qu'il faut **comprendre** : définitions, maths, mécanismes | **oui** — son **domaine**, comme une brique | `<Dossier>/<Nom>.md` — les non encore migrées sont sous `Wiki/Concepts/` |
 | `pattern` | une **architecture éprouvée** | **non** | `Patterns/Pattern - <nom>.md` |
 | `rule` | une **règle transverse** | **non** | `Rules/Rule - <nom>.md` |
 | `hub` | la **page d'un dossier**, l'aiguillage | **non** | `<Dossier>/<Dossier>.md` + les 5 de `Métiers/` |
@@ -143,7 +143,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (94 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (96 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -165,7 +165,7 @@ database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
       synthetique, eda, viz}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
-stats/{inference, bayesien, exploratoire, causal}
+stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
 math/{optimisation}
 compute/{distribue, gpu, a-la-demande}
@@ -265,6 +265,26 @@ valeurs disparues et ne sont pas reconduites.
 - `math/optimisation` — recherche opérationnelle et programmation mathématique : modélisation et
   résolution (LP, MIP, optimisation convexe), modeleurs Python et bindings de solveurs. Distinct
   de `ml/hyperopt` (chercher des hyperparamètres) et de `stats/*` (modélisation statistique).
+- `stats/probabilite` — **ouvert au lot 4.** Théorie des probabilités et processus aléatoires :
+  théorèmes de convergence (loi des grands nombres, théorème central limite, inégalités de
+  concentration) et processus (chaînes de Markov, Poisson, mouvement brownien). Distinct de
+  `stats/inference`, qui *applique* ces résultats à un échantillon pour estimer un paramètre :
+  le TCL justifie un intervalle de confiance, il n'en calcule pas. Rangé sous `stats/` et non
+  sous `math/` parce que ces pages se justifient toutes par l'inférence — et parce que les
+  quatre piliers de « Mathématiques » sont l'algèbre linéaire, l'optimisation, la théorie de
+  l'information et la théorie de l'apprentissage, pas la probabilité.
+- `stats/experimentation` — **ouvert au lot 4.** Concevoir une expérience contrôlée et décider
+  quand l'arrêter : randomisation, réduction de variance, arrêt séquentiel, allocation
+  dynamique. Distinct de `stats/inference`, qui teste une hypothèse sur un échantillon **déjà
+  collecté** : ici la question porte sur le protocole de collecte, pas sur le calcul. Le
+  dimensionnement d'un test (« analyse de puissance ») reste en `stats/inference` — c'est une
+  propriété du test, employée aussi bien hors expérimentation.
+- `stats/exploratoire` — analyse factorielle et descriptive multivariée, tradition « analyse de
+  données » (Benzécri, Escofier, Pagès) : PCA, CA, MCA, FAMD, MFA, GPA, PGA, HCPC. Le but est
+  d'**interpréter des axes**, pas d'alimenter un modèle en aval. Distinct de `ml/non-supervise`
+  (t-SNE/UMAP, ICA, NMF, autoencodeurs), qui vise une représentation utile à une tâche. La
+  frontière est réelle mais fine : les deux familles partagent le tag `dimensionality-reduction`.
+  Distinct aussi de `data/eda` (profiling automatique d'un jeu de données).
 - `ml/eval` — bibliothèques de **métriques** et de validation de modèles ML (accuracy, F1, BLEU,
   ROUGE). Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring
   par juge) et du concept transverse porté par le tag `model-evaluation`.
@@ -313,7 +333,7 @@ sont descendus dans l'arbre.
 | `database` | Bases de données | stocker et interroger de façon persistante |
 | `data` | Data & pipelines | déplacer et transformer de la donnée pour une machine |
 | `devtools` | Outils de développement | fabriquer du logiciel : écrire, tester, configurer, packager |
-| `stats` | Statistiques & inférence | inférence, bayésien, exploratoire, causal |
+| `stats` | Statistiques & inférence | inférence, bayésien, exploratoire, causal, probabilité, expérimentation |
 | `compute` | Calcul distribué | capacité de calcul : distribué, GPU, à la demande |
 | `design` | Design & diagrammes | dessin pour un humain : schémas, interfaces |
 | `storage` | Stockage | stockage brut d'objets |
@@ -332,7 +352,7 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{data, ai, ml, dl, rl, ts, nlp, signal, stats, math, devops, llm}
+concept/{data, ai, ml, dl, rl, ts, nlp, signal, math, devops, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -342,6 +362,13 @@ concept/{data, ai, ml, dl, rl, ts, nlp, signal, stats, math, devops, llm}
 - `signal` — traitement du signal (Fourier, ondelettes, spectrogrammes)
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
+
+**Ce vocabulaire est en train de disparaître.** Le lot 4 recatégorise les notions sur le même
+vocabulaire que les briques — une notion se range par son **domaine**, comme tout le reste, et
+`concept/<sous-domaine>` était le vocabulaire d'une galaxie qui n'existe plus. `stats` a été
+**retiré du bloc le 2026-09-05** : ses 37 notions sont descendues dans « Statistiques &
+inférence/ », il ne reste plus une seule page pour le porter, et l'y laisser aurait autorisé
+une rechute silencieuse. Les onze autres valeurs suivront, une par lot de domaine.
 
 ## Skills perso (`categorie: skill/<sous-domaine>`)
 

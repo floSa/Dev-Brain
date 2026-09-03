@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 697,
+  "count": 702,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -206,6 +206,7 @@
       "A priori conjugués",
       "Analyse discriminante",
       "ArviZ",
+      "Bayésien",
       "CausalImpact",
       "Estimation MAP",
       "Gaussian Process",
@@ -303,6 +304,7 @@
       "swarm-forge"
     ],
     "clustering": [
+      "Analyse factorielle",
       "Apprentissage non supervisé",
       "Classification hiérarchique (CAH)",
       "Clustering",
@@ -404,7 +406,8 @@
       "torchvision"
     ],
     "concentration": [
-      "Inégalités de concentration"
+      "Inégalités de concentration",
+      "Probabilités"
     ],
     "concept-drift": [
       "Data drift",
@@ -415,6 +418,7 @@
     "confidence-interval": [
       "Bootstrap",
       "Intervalles de confiance",
+      "Tests & estimation",
       "scipy.stats"
     ],
     "config": [
@@ -454,6 +458,7 @@
     ],
     "convergence": [
       "Loi des grands nombres",
+      "Probabilités",
       "Théorème central limite"
     ],
     "convexity": [
@@ -705,6 +710,7 @@
       "scipy.signal"
     ],
     "dimensionality-reduction": [
+      "Analyse factorielle",
       "Autoencodeurs",
       "CA",
       "FAMD",
@@ -800,6 +806,7 @@
       "Analyse de puissance",
       "MANOVA et tests multivariés",
       "Test t et ANOVA",
+      "Tests & estimation",
       "pingouin"
     ],
     "eigenvalue": [
@@ -885,6 +892,7 @@
       "Exploration vs exploitation"
     ],
     "factor-analysis": [
+      "Analyse factorielle",
       "CA",
       "FAMD",
       "Fanalysis",
@@ -1101,6 +1109,7 @@
       "Sequential testing",
       "Test du khi-deux",
       "Test t et ANOVA",
+      "Tests & estimation",
       "Tests d'hypothèse",
       "Tests non paramétriques",
       "pingouin",
@@ -1495,6 +1504,7 @@
       "n8n"
     ],
     "manifold": [
+      "Analyse factorielle",
       "Manifold learning",
       "PGA",
       "PaCMAP",
@@ -1511,9 +1521,11 @@
       "pdf-inspector"
     ],
     "markov": [
+      "Bayésien",
       "Chaînes de Markov",
       "MCMC",
       "Markov Decision Process",
+      "Probabilités",
       "PyMC",
       "Stan"
     ],
@@ -1531,7 +1543,8 @@
       "GLM",
       "Gaussian Mixture Models (GMM)",
       "Maximum de vraisemblance",
-      "Régression logistique"
+      "Régression logistique",
+      "Tests & estimation"
     ],
     "mcp": [
       "Activepieces",
@@ -1678,8 +1691,10 @@
     ],
     "monte-carlo": [
       "ArviZ",
+      "Bayésien",
       "MCMC",
       "Monte Carlo Tree Search",
+      "Probabilités",
       "PyMC",
       "Stan"
     ],
@@ -1779,6 +1794,7 @@
       "Bootstrap",
       "Gaussian Process",
       "Régression quantile",
+      "Tests & estimation",
       "Tests non paramétriques",
       "pingouin",
       "scipy.stats"
@@ -1923,6 +1939,7 @@
     "p-value": [
       "Correction des tests multiples",
       "Test du khi-deux",
+      "Tests & estimation",
       "Tests d'hypothèse",
       "scipy.stats",
       "statsmodels"
@@ -1945,6 +1962,7 @@
     "parametric-test": [
       "MANOVA et tests multivariés",
       "Test t et ANOVA",
+      "Tests & estimation",
       "pingouin",
       "scipy.stats",
       "statsmodels"
@@ -1978,6 +1996,7 @@
       "Pattern - Moteur de jeu pur + IA séparée"
     ],
     "point-estimation": [
+      "Bayésien",
       "Estimation MAP",
       "Maximum de vraisemblance"
     ],
@@ -2003,6 +2022,7 @@
     ],
     "prior": [
       "A priori conjugués",
+      "Bayésien",
       "Estimation MAP",
       "Inférence bayésienne",
       "PyMC"
@@ -2013,6 +2033,7 @@
       "SmartTube"
     ],
     "probabilistic-programming": [
+      "Bayésien",
       "PyMC",
       "Stan"
     ],
@@ -2021,10 +2042,12 @@
       "Inégalités de concentration",
       "Loi des grands nombres",
       "Mouvement brownien",
+      "Probabilités",
       "Processus de Poisson",
       "Théorème central limite"
     ],
     "projection": [
+      "Analyse factorielle",
       "Projections"
     ],
     "prompt-injection": [
@@ -2254,6 +2277,7 @@
     ],
     "resampling": [
       "Bootstrap",
+      "Tests & estimation",
       "Validation croisée",
       "Walk-forward CV"
     ],
@@ -2436,6 +2460,7 @@
       "Intervalles de confiance",
       "Maximum de vraisemblance",
       "Statistiques & inférence",
+      "Tests & estimation",
       "Tests d'hypothèse",
       "statsmodels"
     ],
@@ -2452,6 +2477,7 @@
       "Autocorrelation",
       "Chaînes de Markov",
       "Mouvement brownien",
+      "Probabilités",
       "Processus de Poisson",
       "Stationarity"
     ],
@@ -2530,6 +2556,7 @@
     "survival-analysis": [
       "Analyse de survie",
       "Maintenance prédictive et RUL",
+      "Tests & estimation",
       "lifelines"
     ],
     "synthetic-data": [
@@ -2719,6 +2746,7 @@
       "Typer"
     ],
     "unsupervised": [
+      "Analyse factorielle",
       "Apprentissage non supervisé",
       "Autoencodeurs",
       "Classification hiérarchique (CAH)",
@@ -11304,6 +11332,21 @@
       "maturite": null
     },
     {
+      "path": "Métiers/Infrastructure & Ops.md",
+      "nom": "Infrastructure & Ops",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": "Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Métiers/ML Engineering.md",
       "nom": "ML Engineering",
       "alias": null,
@@ -12334,51 +12377,111 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/ArviZ.md",
-      "nom": "ArviZ",
+      "path": "Statistiques & inférence/A-B testing.md",
+      "nom": "A/B testing",
       "alias": [
-        "arviz",
-        "az"
+        "AB testing",
+        "test A/B",
+        "split testing",
+        "online controlled experiment",
+        "OCE",
+        "randomized experiment"
       ],
-      "role": "brique",
-      "categorie": "stats/bayesien",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.",
+      "role": "notion",
+      "categorie": "stats/experimentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
       "tags": [
-        "bayesian",
-        "monte-carlo"
+        "experimentation",
+        "ab-testing",
+        "hypothesis-testing"
       ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "Statistiques & inférence/CausalImpact.md",
-      "nom": "CausalImpact",
+      "path": "Statistiques & inférence/Analyse factorielle/Analyse factorielle.md",
+      "nom": "Analyse factorielle",
       "alias": [
-        "tfcausalimpact",
-        "tfp-causalimpact",
-        "pycausalimpact"
+        "analyse de données",
+        "analyse multivariée descriptive"
       ],
-      "role": "brique",
-      "categorie": "stats/causal",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.",
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Résumer un grand tableau par quelques axes qu'on puisse interpréter — l'école française de l'analyse de données, et ses variantes selon le type de variables.",
       "tags": [
-        "causal-inference",
-        "bayesian",
-        "timeseries"
+        "factor-analysis",
+        "dimensionality-reduction",
+        "unsupervised",
+        "manifold",
+        "clustering",
+        "projection"
       ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "Statistiques & inférence/Fanalysis.md",
+      "path": "Statistiques & inférence/Analyse factorielle/CA.md",
+      "nom": "CA",
+      "alias": [
+        "AFC",
+        "Analyse des correspondances",
+        "Analyse factorielle des correspondances",
+        "Correspondence Analysis"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/FAMD.md",
+      "nom": "FAMD",
+      "alias": [
+        "AFDM",
+        "Analyse factorielle de données mixtes",
+        "Factor Analysis of Mixed Data"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/Fanalysis.md",
       "nom": "Fanalysis",
       "alias": [
         "fanalysis"
@@ -12401,7 +12504,182 @@
       "maturite": "deprecated"
     },
     {
-      "path": "Statistiques & inférence/Prince.md",
+      "path": "Statistiques & inférence/Analyse factorielle/GPA.md",
+      "nom": "GPA",
+      "alias": [
+        "Generalized Procrustes Analysis",
+        "Analyse procustéenne généralisée",
+        "Procruste généralisé"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "factor-analysis",
+        "dimensionality-reduction"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/HCPC.md",
+      "nom": "HCPC",
+      "alias": [
+        "Classification hiérarchique sur composantes principales",
+        "Hierarchical Clustering on Principal Components"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/MCA.md",
+      "nom": "MCA",
+      "alias": [
+        "ACM",
+        "Analyse des correspondances multiples",
+        "Multiple Correspondence Analysis"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/MFA.md",
+      "nom": "MFA",
+      "alias": [
+        "AFM",
+        "Analyse factorielle multiple",
+        "Multiple Factor Analysis"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/Manifold learning.md",
+      "nom": "Manifold learning",
+      "alias": [
+        "manifold learning",
+        "apprentissage de variété",
+        "Isomap",
+        "LLE",
+        "Locally Linear Embedding",
+        "Kernel PCA",
+        "Laplacian Eigenmaps",
+        "spectral embedding"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/PCA.md",
+      "nom": "PCA",
+      "alias": [
+        "ACP",
+        "Analyse en composantes principales",
+        "Principal Component Analysis"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/PGA.md",
+      "nom": "PGA",
+      "alias": [
+        "Principal Geodesic Analysis",
+        "Analyse géodésique principale"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Analyse factorielle/Prince.md",
       "nom": "Prince",
       "alias": [
         "prince"
@@ -12424,7 +12702,184 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/PyMC.md",
+      "path": "Statistiques & inférence/Analyse factorielle/Réduction de dimension.md",
+      "nom": "Réduction de dimension",
+      "alias": [
+        "dimensionality reduction",
+        "réduction de dimensionnalité"
+      ],
+      "role": "notion",
+      "categorie": "stats/exploratoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/A priori conjugués.md",
+      "nom": "A priori conjugués",
+      "alias": [
+        "conjugate priors",
+        "conjugate prior",
+        "lois a priori conjuguées",
+        "prior conjugué",
+        "conjugaison"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "bayesian",
+        "prior"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/ArviZ.md",
+      "nom": "ArviZ",
+      "alias": [
+        "arviz",
+        "az"
+      ],
+      "role": "brique",
+      "categorie": "stats/bayesien",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.",
+      "tags": [
+        "bayesian",
+        "monte-carlo"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/Bayésien.md",
+      "nom": "Bayésien",
+      "alias": [
+        "statistique bayésienne",
+        "inférence bayésienne (dossier)"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Traiter le paramètre comme une variable aléatoire — une distribution en sortie plutôt qu'un point, au prix d'un a priori assumé et d'un échantillonnage à faire converger.",
+      "tags": [
+        "bayesian",
+        "prior",
+        "probabilistic-programming",
+        "monte-carlo",
+        "markov",
+        "point-estimation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/Estimation MAP.md",
+      "nom": "Estimation MAP",
+      "alias": [
+        "MAP",
+        "maximum a posteriori",
+        "maximum a posteriori estimation",
+        "estimation maximum a posteriori"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "bayesian",
+        "point-estimation",
+        "prior"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/Inférence bayésienne.md",
+      "nom": "Inférence bayésienne",
+      "alias": [
+        "Bayesian inference",
+        "inference bayesienne",
+        "Bayes",
+        "statistique bayésienne"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "bayesian",
+        "statistical-inference",
+        "prior"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/MCMC.md",
+      "nom": "MCMC",
+      "alias": [
+        "Markov chain Monte Carlo",
+        "Monte-Carlo par chaînes de Markov",
+        "Metropolis-Hastings",
+        "NUTS",
+        "Gibbs"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "monte-carlo",
+        "markov",
+        "bayesian"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/PyMC.md",
       "nom": "PyMC",
       "alias": [
         "pymc3",
@@ -12450,7 +12905,7 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/Stan.md",
+      "path": "Statistiques & inférence/Bayésien/Stan.md",
       "nom": "Stan",
       "alias": [
         "CmdStanPy",
@@ -12474,6 +12929,336 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/CUPED.md",
+      "nom": "CUPED",
+      "alias": [
+        "Controlled-experiment Using Pre-Experiment Data",
+        "variance reduction",
+        "regression adjustment"
+      ],
+      "role": "notion",
+      "categorie": "stats/experimentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "experimentation",
+        "variance-reduction",
+        "ab-testing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/CausalImpact.md",
+      "nom": "CausalImpact",
+      "alias": [
+        "tfcausalimpact",
+        "tfp-causalimpact",
+        "pycausalimpact"
+      ],
+      "role": "brique",
+      "categorie": "stats/causal",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.",
+      "tags": [
+        "causal-inference",
+        "bayesian",
+        "timeseries"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Statistiques & inférence/Diff-in-Diff.md",
+      "nom": "Diff-in-Diff",
+      "alias": [
+        "DiD",
+        "difference-in-differences",
+        "différence des différences",
+        "doubles différences"
+      ],
+      "role": "notion",
+      "categorie": "stats/causal",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "causal-inference",
+        "hypothesis-testing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Inférence causale.md",
+      "nom": "Inférence causale",
+      "alias": [
+        "causal inference",
+        "inférence causale",
+        "causalité",
+        "DAG",
+        "confounding",
+        "confondeur",
+        "backdoor",
+        "propensity score",
+        "score de propension"
+      ],
+      "role": "notion",
+      "categorie": "stats/causal",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "causal-inference",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Multi-armed bandits.md",
+      "nom": "Multi-armed bandits",
+      "alias": [
+        "MAB",
+        "bandit manchot",
+        "bandits",
+        "Epsilon-Greedy",
+        "Thompson Sampling",
+        "exploration-exploitation"
+      ],
+      "role": "notion",
+      "categorie": "stats/experimentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "experimentation",
+        "multi-armed-bandit"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Chaînes de Markov.md",
+      "nom": "Chaînes de Markov",
+      "alias": [
+        "Markov chains",
+        "propriété de Markov",
+        "Markov property"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "stochastic-process",
+        "markov",
+        "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Inégalités de concentration.md",
+      "nom": "Inégalités de concentration",
+      "alias": [
+        "Concentration inequalities",
+        "Hoeffding",
+        "Chebyshev",
+        "inégalité de Markov"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "probability",
+        "concentration"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Loi des grands nombres.md",
+      "nom": "Loi des grands nombres",
+      "alias": [
+        "Law of large numbers",
+        "LGN",
+        "LLN"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "probability",
+        "convergence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Mouvement brownien.md",
+      "nom": "Mouvement brownien",
+      "alias": [
+        "Brownian motion",
+        "processus de Wiener",
+        "Wiener process"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "stochastic-process",
+        "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Probabilités.md",
+      "nom": "Probabilités",
+      "alias": [
+        "théorie des probabilités",
+        "processus stochastiques"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Ce qui rend l'inférence possible — les théorèmes qui disent qu'un échantillon converge, et les processus qui modélisent le hasard dans le temps.",
+      "tags": [
+        "probability",
+        "convergence",
+        "concentration",
+        "stochastic-process",
+        "markov",
+        "monte-carlo"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Processus de Poisson.md",
+      "nom": "Processus de Poisson",
+      "alias": [
+        "Poisson process",
+        "processus ponctuel de Poisson"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "stochastic-process",
+        "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Théorème central limite.md",
+      "nom": "Théorème central limite",
+      "alias": [
+        "Central limit theorem",
+        "CLT",
+        "TCL"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "probability",
+        "convergence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Sequential testing.md",
+      "nom": "Sequential testing",
+      "alias": [
+        "test séquentiel",
+        "analyse séquentielle",
+        "peeking",
+        "always-valid inference",
+        "SPRT",
+        "alpha spending"
+      ],
+      "role": "notion",
+      "categorie": "stats/experimentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "experimentation",
+        "sequential-analysis",
+        "hypothesis-testing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Statistiques & inférence/Statistiques & inférence.md",
@@ -12501,7 +13286,326 @@
       "maturite": null
     },
     {
-      "path": "Statistiques & inférence/lifelines.md",
+      "path": "Statistiques & inférence/Tests & estimation/Analyse de puissance.md",
+      "nom": "Analyse de puissance",
+      "alias": [
+        "power analysis",
+        "statistical power",
+        "taille d'échantillon"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-power",
+        "hypothesis-testing",
+        "effect-size"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Analyse de survie.md",
+      "nom": "Analyse de survie",
+      "alias": [
+        "survival analysis",
+        "time-to-event",
+        "analyse de survie",
+        "Kaplan-Meier",
+        "Cox",
+        "risques proportionnels",
+        "hazard",
+        "censure"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "survival-analysis",
+        "regression",
+        "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Bootstrap.md",
+      "nom": "Bootstrap",
+      "alias": [
+        "resampling",
+        "rééchantillonnage"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "resampling",
+        "confidence-interval",
+        "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Correction des tests multiples.md",
+      "nom": "Correction des tests multiples",
+      "alias": [
+        "multiple testing",
+        "multiple comparisons",
+        "Bonferroni",
+        "FDR"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "hypothesis-testing",
+        "multiple-testing",
+        "p-value"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Intervalles de confiance.md",
+      "nom": "Intervalles de confiance",
+      "alias": [
+        "confidence interval",
+        "confidence intervals",
+        "IC"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-inference",
+        "confidence-interval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/MANOVA et tests multivariés.md",
+      "nom": "MANOVA et tests multivariés",
+      "alias": [
+        "MANOVA",
+        "tests multivariés",
+        "multivariate analysis of variance",
+        "Hotelling",
+        "Hotelling T2",
+        "Wilks lambda",
+        "trace de Pillai"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "hypothesis-testing",
+        "parametric-test",
+        "multivariate",
+        "effect-size"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Maximum de vraisemblance.md",
+      "nom": "Maximum de vraisemblance",
+      "alias": [
+        "MLE",
+        "maximum likelihood estimation",
+        "maximum likelihood",
+        "vraisemblance maximale"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "maximum-likelihood",
+        "point-estimation",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Test du khi-deux.md",
+      "nom": "Test du khi-deux",
+      "alias": [
+        "chi-squared",
+        "chi-square",
+        "khi2",
+        "test d'indépendance"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "hypothesis-testing",
+        "p-value"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Test t et ANOVA.md",
+      "nom": "Test t et ANOVA",
+      "alias": [
+        "t-test",
+        "ANOVA",
+        "test de Student",
+        "comparaison de moyennes"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "hypothesis-testing",
+        "parametric-test",
+        "effect-size"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Tests & estimation.md",
+      "nom": "Tests & estimation",
+      "alias": [
+        "inférence fréquentiste",
+        "tests statistiques"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.",
+      "tags": [
+        "statistical-inference",
+        "hypothesis-testing",
+        "confidence-interval",
+        "p-value",
+        "non-parametric",
+        "parametric-test",
+        "effect-size",
+        "maximum-likelihood",
+        "resampling",
+        "survival-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Tests d'hypothèse.md",
+      "nom": "Tests d'hypothèse",
+      "alias": [
+        "hypothesis testing",
+        "test statistique",
+        "H0",
+        "significativité"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-inference",
+        "hypothesis-testing",
+        "p-value"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Tests non paramétriques.md",
+      "nom": "Tests non paramétriques",
+      "alias": [
+        "non-parametric",
+        "non-parametric tests",
+        "Wilcoxon",
+        "Mann-Whitney",
+        "Kruskal-Wallis"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "non-parametric",
+        "hypothesis-testing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/lifelines.md",
       "nom": "lifelines",
       "alias": [],
       "role": "brique",
@@ -12519,7 +13623,7 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/pingouin.md",
+      "path": "Statistiques & inférence/Tests & estimation/pingouin.md",
       "nom": "pingouin",
       "alias": [],
       "role": "brique",
@@ -12543,7 +13647,7 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/scipy.stats.md",
+      "path": "Statistiques & inférence/Tests & estimation/scipy.stats.md",
       "nom": "scipy.stats",
       "alias": [
         "SciPy stats"
@@ -12569,7 +13673,7 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/statsmodels.md",
+      "path": "Statistiques & inférence/Tests & estimation/statsmodels.md",
       "nom": "statsmodels",
       "alias": [],
       "role": "brique",
@@ -13027,60 +14131,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/A priori conjugués.md",
-      "nom": "A priori conjugués",
-      "alias": [
-        "conjugate priors",
-        "conjugate prior",
-        "lois a priori conjuguées",
-        "prior conjugué",
-        "conjugaison"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "bayesian",
-        "prior"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/A-B testing.md",
-      "nom": "A/B testing",
-      "alias": [
-        "AB testing",
-        "test A/B",
-        "split testing",
-        "online controlled experiment",
-        "OCE",
-        "randomized experiment"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "experimentation",
-        "ab-testing",
-        "hypothesis-testing"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/AI security.md",
       "nom": "AI security",
       "alias": [
@@ -13376,61 +14426,6 @@
         "planning",
         "deep-learning",
         "reinforcement-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Analyse de puissance.md",
-      "nom": "Analyse de puissance",
-      "alias": [
-        "power analysis",
-        "statistical power",
-        "taille d'échantillon"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "statistical-power",
-        "hypothesis-testing",
-        "effect-size"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Analyse de survie.md",
-      "nom": "Analyse de survie",
-      "alias": [
-        "survival analysis",
-        "time-to-event",
-        "analyse de survie",
-        "Kaplan-Meier",
-        "Cox",
-        "risques proportionnels",
-        "hazard",
-        "censure"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "survival-analysis",
-        "regression",
-        "non-parametric"
       ],
       "alternatives": null,
       "complements": null,
@@ -13985,55 +14980,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Bootstrap.md",
-      "nom": "Bootstrap",
-      "alias": [
-        "resampling",
-        "rééchantillonnage"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "resampling",
-        "confidence-interval",
-        "non-parametric"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/CA.md",
-      "nom": "CA",
-      "alias": [
-        "AFC",
-        "Analyse des correspondances",
-        "Analyse factorielle des correspondances",
-        "Correspondence Analysis"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/CNN.md",
       "nom": "CNN",
       "alias": [
@@ -14057,31 +15003,6 @@
         "cnn",
         "computer-vision",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/CUPED.md",
-      "nom": "CUPED",
-      "alias": [
-        "Controlled-experiment Using Pre-Experiment Data",
-        "variance reduction",
-        "regression adjustment"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "experimentation",
-        "variance-reduction",
-        "ab-testing"
       ],
       "alternatives": null,
       "complements": null,
@@ -14203,31 +15124,6 @@
         "cdc",
         "streaming",
         "data-pipeline"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Chaînes de Markov.md",
-      "nom": "Chaînes de Markov",
-      "alias": [
-        "Markov chains",
-        "propriété de Markov",
-        "Markov property"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "stochastic-process",
-        "markov",
-        "probability"
       ],
       "alternatives": null,
       "complements": null,
@@ -14726,32 +15622,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Correction des tests multiples.md",
-      "nom": "Correction des tests multiples",
-      "alias": [
-        "multiple testing",
-        "multiple comparisons",
-        "Bonferroni",
-        "FDR"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "hypothesis-testing",
-        "multiple-testing",
-        "p-value"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Counterfactual Regret Minimization.md",
       "nom": "Counterfactual Regret Minimization",
       "alias": [
@@ -14914,31 +15784,6 @@
         "decoding",
         "llm",
         "nlp"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Diff-in-Diff.md",
-      "nom": "Diff-in-Diff",
-      "alias": [
-        "DiD",
-        "difference-in-differences",
-        "différence des différences",
-        "doubles différences"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "causal-inference",
-        "hypothesis-testing"
       ],
       "alternatives": null,
       "complements": null,
@@ -15297,32 +16142,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Estimation MAP.md",
-      "nom": "Estimation MAP",
-      "alias": [
-        "MAP",
-        "maximum a posteriori",
-        "maximum a posteriori estimation",
-        "estimation maximum a posteriori"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "bayesian",
-        "point-estimation",
-        "prior"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Estimation de pose.md",
       "nom": "Estimation de pose",
       "alias": [
@@ -15467,30 +16286,6 @@
         "ensemble",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/FAMD.md",
-      "nom": "FAMD",
-      "alias": [
-        "AFDM",
-        "Analyse factorielle de données mixtes",
-        "Factor Analysis of Mixed Data"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis"
       ],
       "alternatives": null,
       "complements": null,
@@ -15797,30 +16592,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/GPA.md",
-      "nom": "GPA",
-      "alias": [
-        "Generalized Procrustes Analysis",
-        "Analyse procustéenne généralisée",
-        "Procruste généralisé"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "factor-analysis",
-        "dimensionality-reduction"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/GRPO.md",
       "nom": "GRPO",
       "alias": [
@@ -16097,30 +16868,6 @@
         "guardrails",
         "safety",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/HCPC.md",
-      "nom": "HCPC",
-      "alias": [
-        "Classification hiérarchique sur composantes principales",
-        "Hierarchical Clustering on Principal Components"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "factor-analysis",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -16446,62 +17193,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Inférence bayésienne.md",
-      "nom": "Inférence bayésienne",
-      "alias": [
-        "Bayesian inference",
-        "inference bayesienne",
-        "Bayes",
-        "statistique bayésienne"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "bayesian",
-        "statistical-inference",
-        "prior"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Inférence causale.md",
-      "nom": "Inférence causale",
-      "alias": [
-        "causal inference",
-        "inférence causale",
-        "causalité",
-        "DAG",
-        "confounding",
-        "confondeur",
-        "backdoor",
-        "propensity score",
-        "score de propension"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "causal-inference",
-        "statistical-inference"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Ingénierie des caractéristiques.md",
       "nom": "Ingénierie des caractéristiques",
       "alias": [
@@ -16578,55 +17269,6 @@
         "explainability",
         "deep-learning",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Intervalles de confiance.md",
-      "nom": "Intervalles de confiance",
-      "alias": [
-        "confidence interval",
-        "confidence intervals",
-        "IC"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "statistical-inference",
-        "confidence-interval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Inégalités de concentration.md",
-      "nom": "Inégalités de concentration",
-      "alias": [
-        "Concentration inequalities",
-        "Hoeffding",
-        "Chebyshev",
-        "inégalité de Markov"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "probability",
-        "concentration"
       ],
       "alternatives": null,
       "complements": null,
@@ -17063,30 +17705,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Loi des grands nombres.md",
-      "nom": "Loi des grands nombres",
-      "alias": [
-        "Law of large numbers",
-        "LGN",
-        "LLN"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "probability",
-        "convergence"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Loss landscape and saddle points.md",
       "nom": "Loss landscape and saddle points",
       "alias": [
@@ -17109,111 +17727,6 @@
       "tags": [
         "optimization",
         "loss-landscape"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/MANOVA et tests multivariés.md",
-      "nom": "MANOVA et tests multivariés",
-      "alias": [
-        "MANOVA",
-        "tests multivariés",
-        "multivariate analysis of variance",
-        "Hotelling",
-        "Hotelling T2",
-        "Wilks lambda",
-        "trace de Pillai"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "hypothesis-testing",
-        "parametric-test",
-        "multivariate",
-        "effect-size"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/MCA.md",
-      "nom": "MCA",
-      "alias": [
-        "ACM",
-        "Analyse des correspondances multiples",
-        "Multiple Correspondence Analysis"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/MCMC.md",
-      "nom": "MCMC",
-      "alias": [
-        "Markov chain Monte Carlo",
-        "Monte-Carlo par chaînes de Markov",
-        "Metropolis-Hastings",
-        "NUTS",
-        "Gibbs"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "monte-carlo",
-        "markov",
-        "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/MFA.md",
-      "nom": "MFA",
-      "alias": [
-        "AFM",
-        "Analyse factorielle multiple",
-        "Multiple Factor Analysis"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis"
       ],
       "alternatives": null,
       "complements": null,
@@ -17245,36 +17758,6 @@
         "timeseries",
         "survival-analysis",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Manifold learning.md",
-      "nom": "Manifold learning",
-      "alias": [
-        "manifold learning",
-        "apprentissage de variété",
-        "Isomap",
-        "LLE",
-        "Locally Linear Embedding",
-        "Kernel PCA",
-        "Laplacian Eigenmaps",
-        "spectral embedding"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -17385,32 +17868,6 @@
         "hyperparameter-tuning",
         "optimization",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Maximum de vraisemblance.md",
-      "nom": "Maximum de vraisemblance",
-      "alias": [
-        "MLE",
-        "maximum likelihood estimation",
-        "maximum likelihood",
-        "vraisemblance maximale"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "maximum-likelihood",
-        "point-estimation",
-        "statistical-inference"
       ],
       "alternatives": null,
       "complements": null,
@@ -17723,30 +18180,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Mouvement brownien.md",
-      "nom": "Mouvement brownien",
-      "alias": [
-        "Brownian motion",
-        "processus de Wiener",
-        "Wiener process"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "stochastic-process",
-        "probability"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Multi-Token Prediction.md",
       "nom": "Multi-Token Prediction",
       "alias": [
@@ -17796,33 +18229,6 @@
         "multi-agent",
         "agents",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Multi-armed bandits.md",
-      "nom": "Multi-armed bandits",
-      "alias": [
-        "MAB",
-        "bandit manchot",
-        "bandits",
-        "Epsilon-Greedy",
-        "Thompson Sampling",
-        "exploration-exploitation"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "experimentation",
-        "multi-armed-bandit"
       ],
       "alternatives": null,
       "complements": null,
@@ -18412,31 +18818,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/PCA.md",
-      "nom": "PCA",
-      "alias": [
-        "ACP",
-        "Analyse en composantes principales",
-        "Principal Component Analysis"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/PEFT.md",
       "nom": "PEFT",
       "alias": [
@@ -18456,30 +18837,6 @@
       "tags": [
         "fine-tuning",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/PGA.md",
-      "nom": "PGA",
-      "alias": [
-        "Principal Geodesic Analysis",
-        "Analyse géodésique principale"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -18680,29 +19037,6 @@
         "explainability",
         "deep-learning",
         "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Processus de Poisson.md",
-      "nom": "Processus de Poisson",
-      "alias": [
-        "Poisson process",
-        "processus ponctuel de Poisson"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "stochastic-process",
-        "probability"
       ],
       "alternatives": null,
       "complements": null,
@@ -19521,30 +19855,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Réduction de dimension.md",
-      "nom": "Réduction de dimension",
-      "alias": [
-        "dimensionality reduction",
-        "réduction de dimensionnalité"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Régression et classification multi-sorties.md",
       "nom": "Régression et classification multi-sorties",
       "alias": [
@@ -19967,34 +20277,6 @@
         "attention",
         "transformers",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Sequential testing.md",
-      "nom": "Sequential testing",
-      "alias": [
-        "test séquentiel",
-        "analyse séquentielle",
-        "peeking",
-        "always-valid inference",
-        "SPRT",
-        "alpha spending"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "experimentation",
-        "sequential-analysis",
-        "hypothesis-testing"
       ],
       "alternatives": null,
       "complements": null,
@@ -20474,109 +20756,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Test du khi-deux.md",
-      "nom": "Test du khi-deux",
-      "alias": [
-        "chi-squared",
-        "chi-square",
-        "khi2",
-        "test d'indépendance"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "hypothesis-testing",
-        "p-value"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Test t et ANOVA.md",
-      "nom": "Test t et ANOVA",
-      "alias": [
-        "t-test",
-        "ANOVA",
-        "test de Student",
-        "comparaison de moyennes"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "hypothesis-testing",
-        "parametric-test",
-        "effect-size"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Tests d'hypothèse.md",
-      "nom": "Tests d'hypothèse",
-      "alias": [
-        "hypothesis testing",
-        "test statistique",
-        "H0",
-        "significativité"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "statistical-inference",
-        "hypothesis-testing",
-        "p-value"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Tests non paramétriques.md",
-      "nom": "Tests non paramétriques",
-      "alias": [
-        "non-parametric",
-        "non-parametric tests",
-        "Wilcoxon",
-        "Mann-Whitney",
-        "Kruskal-Wallis"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "non-parametric",
-        "hypothesis-testing"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Théorie des jeux.md",
       "nom": "Théorie des jeux",
       "alias": [
@@ -20601,30 +20780,6 @@
       "tags": [
         "game-theory",
         "optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Théorème central limite.md",
-      "nom": "Théorème central limite",
-      "alias": [
-        "Central limit theorem",
-        "CLT",
-        "TCL"
-      ],
-      "role": "notion",
-      "categorie": "concept/stats",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "probability",
-        "convergence"
       ],
       "alternatives": null,
       "complements": null,

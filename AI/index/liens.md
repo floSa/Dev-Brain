@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 697 pages actives.
+> 702 pages actives.
 
 ## Par page
 
@@ -88,7 +88,7 @@
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
 - liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[statsmodels]]
-- liens entrants : [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+- liens entrants : [[Bayésien]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -158,7 +158,7 @@
 ### CausalImpact  ·  brique
 - tags : `causal-inference`, `bayesian`, `timeseries`
 - liens sortants : [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[statsmodels]]
-- liens entrants : [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Statistiques & inférence]]
+- liens entrants : [[Bayésien]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Statistiques & inférence]]
 
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -388,7 +388,7 @@
 ### Fanalysis  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[CA]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[MCA]], [[PCA]], [[Prince]]
-- liens entrants : [[Prince]], [[Scikit-Learn]], [[Statistiques & inférence]]
+- liens entrants : [[Analyse factorielle]], [[Prince]], [[Scikit-Learn]], [[Statistiques & inférence]]
 
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
@@ -668,7 +668,7 @@
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
 - liens sortants : [[Analyse de survie]], [[PyMC]], [[Stan]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Analyse de survie]], [[Maintenance prédictive et RUL]], [[Statistiques & inférence]]
+- liens entrants : [[Analyse de survie]], [[Maintenance prédictive et RUL]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### LightGBM  ·  brique
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`, `distributed`
@@ -993,7 +993,7 @@
 ### PaCMAP  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Machine Learning]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1058,7 +1058,7 @@
 ### pingouin  ·  brique
 - tags : `hypothesis-testing`, `effect-size`, `statistical-power`, `non-parametric`, `parametric-test`
 - liens sortants : [[Analyse de puissance]], [[Comparatif - Outils stats]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Statistiques & inférence]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[Statistiques & inférence]], [[Tests & estimation]], [[scipy.stats]], [[statsmodels]]
 
 ### pip  ·  brique
 - tags : `package-manager`
@@ -1108,7 +1108,7 @@
 ### Prince  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[CA]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[FAMD]], [[Fanalysis]], [[MCA]], [[MFA]], [[PCA]], [[Scikit-Learn]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Apprentissage non supervisé]], [[Fanalysis]], [[PCA]], [[Scikit-Learn]], [[Statistiques & inférence]], [[scipy.stats]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Fanalysis]], [[PCA]], [[Scikit-Learn]], [[Statistiques & inférence]], [[scipy.stats]]
 
 ### Prisma  ·  brique
 - tags : `orm`, `relational`
@@ -1168,7 +1168,7 @@
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
 - liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Stan]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[Chaînes de Markov]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Stan]], [[Statistiques & inférence]], [[lifelines]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Stan]], [[Statistiques & inférence]], [[lifelines]]
 
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
@@ -1298,7 +1298,7 @@
 ### Scikit-Learn  ·  brique
 - tags : `supervised`, `unsupervised`, `dimensionality-reduction`, `model-evaluation`
 - liens sortants : [[CatBoost]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Encodage des variables catégorielles]], [[Fanalysis]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[JAX]], [[K-Means]], [[LightGBM]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Prince]], [[PyTorch]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Réduction de dimension]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Sélection de variables]], [[TensorFlow]], [[Validation croisée]], [[XGBoost]], [[category_encoders]], [[hdbscan]], [[scipy.stats]], [[statsmodels]], [[umap-learn]]
-- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Machine Learning]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[PaCMAP]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Serve]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVD]], [[SVM]], [[SetFit]], [[Statistiques & inférence]], [[Sélection de variables]], [[TF-IDF]], [[Tabulaire]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
+- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Machine Learning]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[PaCMAP]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Serve]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVD]], [[SVM]], [[SetFit]], [[Statistiques & inférence]], [[Sélection de variables]], [[TF-IDF]], [[Tabulaire]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
 
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
@@ -1308,7 +1308,7 @@
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Intervalles de confiance]], [[Prince]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[statsmodels]]
-- liens entrants : [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Prince]], [[PyMC]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Wasserstein distance]], [[lifelines]], [[pingouin]], [[statsmodels]]
+- liens entrants : [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Prince]], [[Probabilités]], [[PyMC]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests & estimation]], [[Wasserstein distance]], [[lifelines]], [[pingouin]], [[statsmodels]]
 
 ### Scrapling  ·  brique
 - tags : `web-scraping`
@@ -1443,7 +1443,7 @@
 ### Stan  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`
 - liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[Chaînes de Markov]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Statistiques & inférence]], [[lifelines]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Statistiques & inférence]], [[lifelines]]
 
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
@@ -1453,7 +1453,7 @@
 ### statsmodels  ·  brique
 - tags : `statistical-inference`, `hypothesis-testing`, `parametric-test`, `p-value`
 - liens sortants : [[Comparatif - Outils stats]], [[GAM]], [[GLM]], [[Régression linéaire]], [[Scikit-Learn]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
-- liens entrants : [[ArviZ]], [[CausalImpact]], [[Diff-in-Diff]], [[Inférence causale]], [[Prince]], [[PyMC]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Stan]], [[Statistiques & inférence]], [[lifelines]], [[pingouin]], [[scipy.stats]]
+- liens entrants : [[ArviZ]], [[CausalImpact]], [[Diff-in-Diff]], [[Inférence causale]], [[Prince]], [[PyMC]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Stan]], [[Statistiques & inférence]], [[Tests & estimation]], [[lifelines]], [[pingouin]], [[scipy.stats]]
 
 ### Stirling PDF  ·  brique
 - tags : `pdf`, `ocr`, `self-hosted`
@@ -1603,7 +1603,7 @@
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
-- liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
 
 ### Unsloth  ·  brique
 - tags : `fine-tuning`, `memory-optimization`, `quantization`, `gpu`, `llm`
@@ -1707,8 +1707,13 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Données (notions)]], [[Fine-tuning]], [[IA & sécurité]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[NLP (notions)]], [[Observabilité]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]]
+- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Données (notions)]], [[Fine-tuning]], [[IA & sécurité]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[Médias]], [[NLP (notions)]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
+
+### Analyse factorielle  ·  hub
+- tags : `factor-analysis`, `dimensionality-reduction`, `unsupervised`, `manifold`, `clustering`, `projection`
+- liens sortants : [[CA]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Machine Learning]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Prince]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Statistiques & inférence]]
 
 ### Apprentissage par renforcement  ·  hub
 - tags : `reinforcement-learning`, `markov-decision-process`, `policy-gradient`, `value-function`, `exploration-exploitation`, `offline-rl`, `imitation-learning`, `game-theory`, `self-play`
@@ -1735,6 +1740,11 @@
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
 - liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
 
+### Bayésien  ·  hub
+- tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
+- liens sortants : [[A priori conjugués]], [[ArviZ]], [[CausalImpact]], [[Chaînes de Markov]], [[Estimation MAP]], [[Inférence bayésienne]], [[Inférence causale]], [[MCMC]], [[Maximum de vraisemblance]], [[PyMC]], [[Stan]], [[Tests & estimation]]
+- liens entrants : [[Probabilités]], [[Statistiques & inférence]], [[Tests & estimation]]
+
 ### Calcul distribué  ·  hub
 - tags : `distributed`, `gpu`, `parallel`, `out-of-core`, `distributed-training`
 - liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
@@ -1747,12 +1757,12 @@
 
 ### Data Engineering  ·  hub
 - tags : —
-- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[Données (notions)]], [[MLOps]], [[Machine learning (notions)]], [[NLP (notions)]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]]
+- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[Données (notions)]], [[MLOps]], [[Machine learning (notions)]], [[NLP (notions)]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]], [[Web & API]]
 - liens entrants : [[MLOps]]
 
 ### Data Science  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[NLP (notions)]], [[Statistiques]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Traitement du signal (notions)]], [[Visualisation]]
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Maths du ML]], [[NLP (notions)]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Traitement du signal (notions)]], [[Visualisation]]
 - liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
@@ -1763,7 +1773,7 @@
 ### Design & diagrammes  ·  hub
 - tags : `design-tool`, `diagram`, `whiteboard`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Diagrammes]], [[Figma]], [[Mermaid]], [[Penpot]]
-- liens entrants : —
+- liens entrants : [[AI Engineering]]
 
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
@@ -1778,12 +1788,17 @@
 ### Documents  ·  hub
 - tags : `pdf`, `markdown-conversion`, `ocr`, `web-scraping`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Page to Markdown]], [[Stirling PDF]], [[Web scraping]]
-- liens entrants : [[Vision]]
+- liens entrants : [[AI Engineering]], [[Vision]]
 
 ### Fine-tuning  ·  hub
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `quantization`, `synthetic-data`
 - liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[Prompt engineering]], [[RAG]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Synthetic data generation]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[AI Engineering]], [[Apprentissage par renforcement]], [[LLM & IA générative]]
+
+### Infrastructure & Ops  ·  hub
+- tags : —
+- liens sortants : [[Réseau]], [[Sécurité]]
+- liens entrants : —
 
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
@@ -1803,12 +1818,12 @@
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
 - liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[AI Engineering]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Statistiques & inférence]]
+- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Statistiques & inférence]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `linear-programming`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Cross-entropy]], [[Eigendecomposition]], [[Generalization bounds]], [[Gradient descent]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Matrix decompositions]], [[Matrix products]], [[Mutual information]], [[Newton & quasi-Newton]], [[No Free Lunch theorem]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PAC learning]], [[PCA]], [[Programmation linéaire en nombres entiers (MIP)]], [[Projections]], [[PuLP]], [[Rademacher complexity]], [[Réduction de dimension]], [[SVD]], [[Shannon entropy]], [[Statistiques & inférence]], [[VC dimension]], [[Vector norms]], [[Wasserstein distance]], [[scipy.stats]]
-- liens entrants : [[ML Engineering]]
+- liens entrants : [[ML Engineering]], [[Probabilités]]
 
 ### ML Engineering  ·  hub
 - tags : —
@@ -1823,7 +1838,7 @@
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
 - liens sortants : [[Claude Video]], [[OpenCut]], [[SmartTube]], [[Superwhisper]]
-- liens entrants : —
+- liens entrants : [[AI Engineering]]
 
 ### NLP  ·  hub
 - tags : `nlp`, `ner`, `sequence-labeling`, `text-classification`, `information-retrieval`, `tokenization`, `string-matching`
@@ -1848,7 +1863,7 @@
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[Data Engineering]], [[DevOps]], [[ML Engineering]]
+- liens entrants : [[AI Engineering]], [[Data Engineering]], [[DevOps]], [[ML Engineering]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -1859,6 +1874,11 @@
 - tags : —
 - liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
 - liens entrants : —
+
+### Probabilités  ·  hub
+- tags : `probability`, `convergence`, `concentration`, `stochastic-process`, `markov`, `monte-carlo`
+- liens sortants : [[Bayésien]], [[Chaînes de Markov]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[MCMC]], [[Mathématiques]], [[Mouvement brownien]], [[Processus de Poisson]], [[Tests & estimation]], [[Théorème central limite]], [[scipy.stats]]
+- liens entrants : [[Statistiques & inférence]]
 
 ### Recherche  ·  hub
 - tags : —
@@ -1883,7 +1903,7 @@
 ### Réseau  ·  hub
 - tags : `networking`, `traffic-analysis`, `file-transfer`
 - liens sortants : [[Sniffnet]], [[Stockage]], [[Web-Check]], [[croc]]
-- liens entrants : —
+- liens entrants : [[Infrastructure & Ops]]
 
 ### Scraping  ·  hub
 - tags : `web-scraping`, `data-pipeline`
@@ -1902,7 +1922,7 @@
 
 ### Statistiques & inférence  ·  hub
 - tags : `statistical-inference`, `bayesian`, `causal-inference`, `factor-analysis`
-- liens sortants : [[Analyse de survie]], [[ArviZ]], [[CA]], [[CausalImpact]], [[Comparatif - Outils stats]], [[FAMD]], [[Fanalysis]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[PCA]], [[Prince]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Stan]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Analyse factorielle]], [[ArviZ]], [[Bayésien]], [[CA]], [[CUPED]], [[CausalImpact]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[FAMD]], [[Fanalysis]], [[ICA]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[Multi-armed bandits]], [[NMF]], [[PCA]], [[Prince]], [[Probabilités]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Sequential testing]], [[Stan]], [[Tests & estimation]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]], [[t-SNE and UMAP]]
 - liens entrants : [[Data Science]], [[Interprétabilité]], [[Mathématiques]]
 
 ### Stockage  ·  hub
@@ -1918,7 +1938,7 @@
 ### Sécurité  ·  hub
 - tags : `authentication`, `recon`, `osint`, `cryptography`
 - liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[Prompt injection]], [[PyJWT]], [[Web-Check]], [[osint4all]]
-- liens entrants : [[AI Engineering]], [[LLM & IA générative]]
+- liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]]
 
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
@@ -1929,6 +1949,11 @@
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
 - liens sortants : [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]]
 - liens entrants : [[Data Science]], [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
+
+### Tests & estimation  ·  hub
+- tags : `statistical-inference`, `hypothesis-testing`, `confidence-interval`, `p-value`, `non-parametric`, `parametric-test`, `effect-size`, `maximum-likelihood`, `resampling`, `survival-analysis`
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Bayésien]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Multi-armed bandits]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[Bayésien]], [[Probabilités]], [[Statistiques & inférence]]
 
 ### Text-to-SQL  ·  hub
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `benchmark`
@@ -1953,17 +1978,17 @@
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
-- liens entrants : [[Interfaces & apps data]], [[MLOps]]
+- liens entrants : [[AI Engineering]], [[Data Engineering]], [[Interfaces & apps data]], [[MLOps]]
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
 - liens sortants : [[A/B testing]], [[Estimation MAP]], [[Inférence bayésienne]], [[MCMC]], [[Multi-armed bandits]]
-- liens entrants : [[Estimation MAP]], [[Inférence bayésienne]], [[MCMC]]
+- liens entrants : [[Bayésien]], [[Estimation MAP]], [[Inférence bayésienne]], [[MCMC]]
 
 ### A/B testing  ·  notion
 - tags : `experimentation`, `ab-testing`, `hypothesis-testing`
 - liens sortants : [[Analyse de puissance]], [[CUPED]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Intervalles de confiance]], [[Multi-armed bandits]], [[Sequential testing]], [[Tests d'hypothèse]]
-- liens entrants : [[A priori conjugués]], [[Analyse de puissance]], [[CUPED]], [[Diff-in-Diff]], [[Déploiement de modèles]], [[Exploration vs exploitation]], [[Inférence bayésienne]], [[Inférence causale]], [[Multi-armed bandits]], [[Sequential testing]], [[Systèmes de recommandation]], [[Tests d'hypothèse]]
+- liens entrants : [[A priori conjugués]], [[Analyse de puissance]], [[CUPED]], [[Diff-in-Diff]], [[Déploiement de modèles]], [[Exploration vs exploitation]], [[Inférence bayésienne]], [[Inférence causale]], [[Multi-armed bandits]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Tests d'hypothèse]]
 
 ### a2a-protocol  ·  notion
 - tags : `agents`, `multi-agent`, `llm`, `tool-use`
@@ -2028,12 +2053,12 @@
 ### Analyse de puissance  ·  notion
 - tags : `statistical-power`, `hypothesis-testing`, `effect-size`
 - liens sortants : [[A/B testing]], [[Bootstrap]], [[Correction des tests multiples]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Sequential testing]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]]
 
 ### Analyse de survie  ·  notion
 - tags : `survival-analysis`, `regression`, `non-parametric`
 - liens sortants : [[GLM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[lifelines]]
-- liens entrants : [[Régression]], [[Statistiques & inférence]], [[Types de données et choix de modèle]], [[lifelines]]
+- liens entrants : [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Types de données et choix de modèle]], [[lifelines]]
 
 ### Analyse discriminante  ·  notion
 - tags : `supervised`, `classification`, `bayesian`, `linear-model`
@@ -2138,12 +2163,12 @@
 ### Bootstrap  ·  notion
 - tags : `resampling`, `confidence-interval`, `non-parametric`
 - liens sortants : [[Analyse de puissance]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
-- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Régression]], [[Régression quantile]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
+- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Régression]], [[Régression quantile]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
 
 ### CA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
 - liens sortants : [[MCA]], [[PCA]], [[Réduction de dimension]], [[Test du khi-deux]]
-- liens entrants : [[Apprentissage non supervisé]], [[Fanalysis]], [[MCA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Fanalysis]], [[MCA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
 
 ### Calculs adaptatifs  ·  notion
 - tags : `inference-optimization`, `reasoning`, `transformers`, `mixture-of-experts`, `deep-learning`
@@ -2168,7 +2193,7 @@
 ### Chaînes de Markov  ·  notion
 - tags : `stochastic-process`, `markov`, `probability`
 - liens sortants : [[MCMC]], [[Markov Decision Process]], [[Mouvement brownien]], [[Processus de Poisson]], [[PyMC]], [[Stan]]
-- liens entrants : [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Mouvement brownien]], [[Processus de Poisson]], [[PyMC]]
+- liens entrants : [[Bayésien]], [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Mouvement brownien]], [[Probabilités]], [[Processus de Poisson]], [[PyMC]]
 
 ### Chunking strategies  ·  notion
 - tags : `rag`, `chunking`, `retrieval`
@@ -2263,7 +2288,7 @@
 ### Correction des tests multiples  ·  notion
 - tags : `hypothesis-testing`, `multiple-testing`, `p-value`
 - liens sortants : [[Analyse de puissance]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[MANOVA et tests multivariés]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
+- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[MANOVA et tests multivariés]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]]
 
 ### Counterfactual Regret Minimization  ·  notion
 - tags : `game-theory`, `regret-minimization`, `self-play`
@@ -2278,7 +2303,7 @@
 ### CUPED  ·  notion
 - tags : `experimentation`, `variance-reduction`, `ab-testing`
 - liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Inférence causale]], [[Intervalles de confiance]]
-- liens entrants : [[A/B testing]], [[Inférence causale]]
+- liens entrants : [[A/B testing]], [[Inférence causale]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
@@ -2303,7 +2328,7 @@
 ### Diff-in-Diff  ·  notion
 - tags : `causal-inference`, `hypothesis-testing`
 - liens sortants : [[A/B testing]], [[CausalImpact]], [[Inférence causale]], [[Tests d'hypothèse]], [[statsmodels]]
-- liens entrants : [[A/B testing]], [[CausalImpact]], [[Explicabilité des modèles]], [[Inférence causale]]
+- liens entrants : [[A/B testing]], [[CausalImpact]], [[Explicabilité des modèles]], [[Inférence causale]], [[Statistiques & inférence]]
 
 ### Diffusion models  ·  notion
 - tags : `generative-model`, `diffusion`, `deep-learning`
@@ -2378,7 +2403,7 @@
 ### Estimation MAP  ·  notion
 - tags : `bayesian`, `point-estimation`, `prior`
 - liens sortants : [[A priori conjugués]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[PyMC]], [[Régularisation]]
-- liens entrants : [[A priori conjugués]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Régularisation]]
+- liens entrants : [[A priori conjugués]], [[Bayésien]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Régularisation]]
 
 ### Explicabilité des modèles  ·  notion
 - tags : `explainability`, `supervised`
@@ -2403,7 +2428,7 @@
 ### FAMD  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
 - liens sortants : [[HCPC]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[Apprentissage non supervisé]], [[HCPC]], [[MCA]], [[MFA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[HCPC]], [[MCA]], [[MFA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
 
 ### Feature store — concept  ·  notion
 - tags : `feature-store`, `feature-engineering`
@@ -2473,7 +2498,7 @@
 ### GPA  ·  notion
 - tags : `factor-analysis`, `dimensionality-reduction`
 - liens sortants : [[MFA]], [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[MFA]], [[PCA]], [[Réduction de dimension]]
+- liens entrants : [[Analyse factorielle]], [[MFA]], [[PCA]], [[Réduction de dimension]]
 
 ### Gradient Boosting (GBDT)  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`
@@ -2518,7 +2543,7 @@
 ### HCPC  ·  notion
 - tags : `clustering`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[K-Means]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[FAMD]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[FAMD]], [[MCA]], [[MFA]], [[PCA]], [[Réduction de dimension]]
 
 ### Hierarchical forecasting  ·  notion
 - tags : `forecasting`, `timeseries`
@@ -2538,7 +2563,7 @@
 ### ICA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Détection d'outliers univariée]], [[Matrix decompositions]], [[Mutual information]], [[NMF]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[Shannon entropy]], [[Sparse autoencoders]], [[Théorème central limite]], [[Traitement du signal]], [[interpreto]], [[scipy.signal]]
-- liens entrants : [[Machine Learning]], [[Matrix decompositions]], [[NMF]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[interpreto]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Matrix decompositions]], [[NMF]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
 
 ### Image generation  ·  notion
 - tags : `generative-model`, `image-generation`, `diffusion`, `multimodal`
@@ -2573,12 +2598,12 @@
 ### Inférence bayésienne  ·  notion
 - tags : `bayesian`, `statistical-inference`, `prior`
 - liens sortants : [[A priori conjugués]], [[A/B testing]], [[ArviZ]], [[CausalImpact]], [[Estimation MAP]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[PyMC]], [[Stan]], [[Tests d'hypothèse]], [[scipy.stats]]
-- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[CausalImpact]], [[Classification metrics]], [[Estimation MAP]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
+- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[Bayésien]], [[CausalImpact]], [[Classification metrics]], [[Estimation MAP]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
 
 ### Inférence causale  ·  notion
 - tags : `causal-inference`, `statistical-inference`
 - liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[statsmodels]]
-- liens entrants : [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Statistiques & inférence]]
+- liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Statistiques & inférence]]
 
 ### Ingénierie des caractéristiques  ·  notion
 - tags : `feature-engineering`
@@ -2598,12 +2623,12 @@
 ### Intervalles de confiance  ·  notion
 - tags : `statistical-inference`, `confidence-interval`
 - liens sortants : [[Analyse de puissance]], [[Bootstrap]], [[Inférence bayésienne]], [[Tests d'hypothèse]], [[Théorème central limite]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Inférence bayésienne]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Théorème central limite]], [[scipy.stats]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Inférence bayésienne]], [[Probabilités]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Théorème central limite]], [[scipy.stats]]
 
 ### Inégalités de concentration  ·  notion
 - tags : `probability`, `concentration`
 - liens sortants : [[Analyse de puissance]], [[Chaînes de Markov]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[Théorème central limite]]
-- liens entrants : [[Exploration vs exploitation]], [[Generalization bounds]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[PAC learning]], [[Rademacher complexity]], [[Théorème central limite]]
+- liens entrants : [[Exploration vs exploitation]], [[Generalization bounds]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[PAC learning]], [[Probabilités]], [[Rademacher complexity]], [[Théorème central limite]]
 
 ### Isolation Forest  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `tree-based`, `ensemble`
@@ -2688,7 +2713,7 @@
 ### Loi des grands nombres  ·  notion
 - tags : `probability`, `convergence`
 - liens sortants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Théorème central limite]]
-- liens entrants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Théorème central limite]]
+- liens entrants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Probabilités]], [[Théorème central limite]]
 
 ### LoRA et QLoRA  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -2708,12 +2733,12 @@
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[PCA]], [[PGA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Réduction de dimension]], [[t-SNE and UMAP]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Réduction de dimension]], [[t-SNE and UMAP]]
 
 ### MANOVA et tests multivariés  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `multivariate`, `effect-size`
 - liens sortants : [[Analyse discriminante]], [[Correction des tests multiples]], [[Réduction de dimension]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[Analyse discriminante]], [[Test t et ANOVA]]
+- liens entrants : [[Analyse discriminante]], [[Test t et ANOVA]], [[Tests & estimation]]
 
 ### Markov Decision Process  ·  notion
 - tags : `reinforcement-learning`, `markov-decision-process`, `markov`
@@ -2738,17 +2763,17 @@
 ### Maximum de vraisemblance  ·  notion
 - tags : `maximum-likelihood`, `point-estimation`, `statistical-inference`
 - liens sortants : [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Régression linéaire]], [[Régression logistique]], [[Tests d'hypothèse]]
-- liens entrants : [[Analyse de survie]], [[Cross-entropy]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]]
+- liens entrants : [[Analyse de survie]], [[Bayésien]], [[Cross-entropy]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Tests & estimation]]
 
 ### MCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
 - liens sortants : [[CA]], [[FAMD]], [[HCPC]], [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[Apprentissage non supervisé]], [[CA]], [[FAMD]], [[Fanalysis]], [[HCPC]], [[MFA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[CA]], [[FAMD]], [[Fanalysis]], [[HCPC]], [[MFA]], [[PCA]], [[Prince]], [[Réduction de dimension]], [[Statistiques & inférence]]
 
 ### MCMC  ·  notion
 - tags : `monte-carlo`, `markov`, `bayesian`
 - liens sortants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[PyMC]], [[Stan]]
-- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Probabilités]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### mcp-protocol  ·  notion
 - tags : `mcp`, `tool-use`, `llm`, `agents`
@@ -2763,7 +2788,7 @@
 ### MFA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
 - liens sortants : [[FAMD]], [[GPA]], [[HCPC]], [[MCA]], [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[Apprentissage non supervisé]], [[FAMD]], [[GPA]], [[HCPC]], [[PCA]], [[Prince]], [[Réduction de dimension]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[FAMD]], [[GPA]], [[HCPC]], [[PCA]], [[Prince]], [[Réduction de dimension]]
 
 ### Migrations de schéma  ·  notion
 - tags : `migration`, `relational`
@@ -2813,7 +2838,7 @@
 ### Mouvement brownien  ·  notion
 - tags : `stochastic-process`, `probability`
 - liens sortants : [[Chaînes de Markov]], [[Processus de Poisson]], [[Théorème central limite]]
-- liens entrants : [[Chaînes de Markov]], [[Gaussian Process]], [[Processus de Poisson]], [[Théorème central limite]]
+- liens entrants : [[Chaînes de Markov]], [[Gaussian Process]], [[Probabilités]], [[Processus de Poisson]], [[Théorème central limite]]
 
 ### Multi-agent systems  ·  notion
 - tags : `multi-agent`, `agents`, `llm`
@@ -2823,7 +2848,7 @@
 ### Multi-armed bandits  ·  notion
 - tags : `experimentation`, `multi-armed-bandit`
 - liens sortants : [[A/B testing]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Reinforcement learning]], [[Sequential testing]]
-- liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Sequential testing]], [[Systèmes de recommandation]], [[Théorie des jeux]]
+- liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Théorie des jeux]]
 
 ### Multi-head Latent Attention  ·  notion
 - tags : `attention`, `inference-optimization`, `transformers`, `gpu`
@@ -2868,7 +2893,7 @@
 ### NMF  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Clustering]], [[ICA]], [[K-Means]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Régularisation]], [[STFT et spectrogramme]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Systèmes de recommandation]], [[TF-IDF]], [[interpreto]]
-- liens entrants : [[ICA]], [[Machine Learning]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[interpreto]]
+- liens entrants : [[Analyse factorielle]], [[ICA]], [[Machine Learning]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
 
 ### No Free Lunch theorem  ·  notion
 - tags : `learning-theory`, `no-free-lunch`
@@ -2938,7 +2963,7 @@
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Autoencodeurs]], [[CA]], [[Eigendecomposition]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[NMF]], [[PGA]], [[Prince]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### PEFT  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -2958,7 +2983,7 @@
 ### PGA  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[PCA]], [[Réduction de dimension]]
-- liens entrants : [[Manifold learning]], [[PCA]], [[Réduction de dimension]]
+- liens entrants : [[Analyse factorielle]], [[Manifold learning]], [[PCA]], [[Réduction de dimension]]
 
 ### Policy gradient  ·  notion
 - tags : `reinforcement-learning`, `policy-gradient`
@@ -2983,7 +3008,7 @@
 ### Processus de Poisson  ·  notion
 - tags : `stochastic-process`, `probability`
 - liens sortants : [[Chaînes de Markov]], [[Mouvement brownien]]
-- liens entrants : [[Chaînes de Markov]], [[Mouvement brownien]]
+- liens entrants : [[Chaînes de Markov]], [[Mouvement brownien]], [[Probabilités]]
 
 ### Programmation linéaire en nombres entiers (MIP)  ·  notion
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
@@ -3128,7 +3153,7 @@
 ### Réduction de dimension  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Clustering evaluation]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[MANOVA et tests multivariés]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Projections]], [[SVD]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Superposition]], [[Systèmes de recommandation]], [[Sélection de variables]], [[embeddings]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Clustering evaluation]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[MANOVA et tests multivariés]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Projections]], [[SVD]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Superposition]], [[Systèmes de recommandation]], [[Sélection de variables]], [[embeddings]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Régression  ·  notion
 - tags : `regression`, `supervised`
@@ -3188,7 +3213,7 @@
 ### Sequential testing  ·  notion
 - tags : `experimentation`, `sequential-analysis`, `hypothesis-testing`
 - liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Correction des tests multiples]], [[Multi-armed bandits]]
-- liens entrants : [[A/B testing]], [[Correction des tests multiples]], [[Multi-armed bandits]]
+- liens entrants : [[A/B testing]], [[Correction des tests multiples]], [[Multi-armed bandits]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### Server-Sent Events & streaming LLM  ·  notion
 - tags : `streaming`, `llm`, `web-framework`
@@ -3288,27 +3313,27 @@
 ### t-SNE and UMAP  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Clustering hiérarchique par densité]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
 
 ### Test du khi-deux  ·  notion
 - tags : `hypothesis-testing`, `p-value`
 - liens sortants : [[Analyse de puissance]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]]
-- liens entrants : [[Analyse de puissance]], [[CA]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[scipy.stats]]
+- liens entrants : [[Analyse de puissance]], [[CA]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[scipy.stats]]
 
 ### Test t et ANOVA  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `effect-size`
 - liens sortants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests d'hypothèse]], [[Tests non paramétriques]]
-- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 
 ### Tests d'hypothèse  ·  notion
 - tags : `statistical-inference`, `hypothesis-testing`, `p-value`
 - liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[Théorème central limite]]
-- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[Théorème central limite]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests non paramétriques]], [[Théorème central limite]], [[scipy.stats]], [[statsmodels]]
 
 ### Tests non paramétriques  ·  notion
 - tags : `non-parametric`, `hypothesis-testing`
 - liens sortants : [[Bootstrap]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[Bootstrap]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
+- liens entrants : [[Bootstrap]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
 
 ### TF-IDF  ·  notion
 - tags : `nlp`, `information-retrieval`, `feature-engineering`
@@ -3323,7 +3348,7 @@
 ### Théorème central limite  ·  notion
 - tags : `probability`, `convergence`
 - liens sortants : [[Bootstrap]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Tests d'hypothèse]]
-- liens entrants : [[Bootstrap]], [[ICA]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Tests d'hypothèse]]
+- liens entrants : [[Bootstrap]], [[ICA]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Probabilités]], [[Tests d'hypothèse]]
 
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
@@ -3509,7 +3534,7 @@
 - `authentication` : PyJWT, Sécurité  — pas de page concept dédiée
 - `autograd` : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
-- `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence  — pas de page concept dédiée
+- `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence  — pas de page concept dédiée
 - `benchmark` : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
@@ -3522,21 +3547,21 @@
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Types de données et choix de modèle, imbalanced-learn, k-NN
 - `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
-- `clustering` : Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, hdbscan, k-médoïds (PAM)
+- `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Detectron2, Détection d'objets, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
-- `concentration` : Inégalités de concentration  — pas de page concept dédiée
+- `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, River  — pas de page concept dédiée
-- `confidence-interval` : Bootstrap, Intervalles de confiance, scipy.stats
+- `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
 - `container` : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Claude Video, Context engineering, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, ai-memory, prompt-caching
-- `convergence` : Loi des grands nombres, Théorème central limite  — pas de page concept dédiée
+- `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy
 - `cryptography` : PyJWT, Sécurité, croc  — pas de page concept dédiée
@@ -3566,7 +3591,7 @@
 - `diagram-as-code` : Archify, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, scipy.signal
-- `dimensionality-reduction` : Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
+- `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
 - `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
@@ -3575,7 +3600,7 @@
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
 - `education` : OpenMAIC  — pas de page concept dédiée
-- `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, pingouin  — pas de page concept dédiée
+- `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Eigendecomposition, SVD  — pas de page concept dédiée
 - `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
 - `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Systèmes de recommandation, embeddings, sentence-transformers, txtai
@@ -3585,7 +3610,7 @@
 - `experimentation` : A/B testing, CUPED, Multi-armed bandits, Sequential testing  — pas de page concept dédiée
 - `explainability` : Attribution par gradient, Captum, Explicabilité des modèles, Interprétabilité, Interprétabilité mécaniste, LIME, Machine Learning, Probing, SAELens, SHAP, Sparse autoencoders, Superposition, TransformerLens, interpreto, nnsight
 - `exploration-exploitation` : Apprentissage par renforcement, Exploration vs exploitation
-- `factor-analysis` : CA, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence  — pas de page concept dédiée
+- `factor-analysis` : Analyse factorielle, CA, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence  — pas de page concept dédiée
 - `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Ingénierie des caractéristiques, Machine Learning, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Tabulaire, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
 - `feature-store` : Feast, Feature store — concept
 - `file-format` : Avro, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
@@ -3609,7 +3634,7 @@
 - `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
 - `hypermedia` : HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Hyperopt, Machine Learning, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune, Suivi d'expériences
-- `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
+- `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : ELT vs ETL & idempotence, Orchestration, Stream processing
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
@@ -3644,12 +3669,12 @@
 - `logging` : Loki, Observabilité  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
-- `manifold` : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `manifold` : Analyse factorielle, Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector  — pas de page concept dédiée
-- `markov` : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan  — pas de page concept dédiée
+- `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Apprentissage par renforcement, Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
-- `maximum-likelihood` : GLM, Gaussian Mixture Models (GMM), Maximum de vraisemblance, Régression logistique
+- `maximum-likelihood` : GLM, Gaussian Mixture Models (GMM), Maximum de vraisemblance, Régression logistique, Tests & estimation
 - `mcp` : Activepieces, Agents de code, Assistants, Cline, Graphify, Headroom, Hermes Agent, LLM & IA générative, LM Studio Bionic, OpenClaw, OpenViking, PraisonAI, ai-memory, fastmcp, mcp-protocol, mcpjam, smolagents
 - `media-player` : Médias, SmartTube  — pas de page concept dédiée
 - `memory-optimization` : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth  — pas de page concept dédiée
@@ -3668,7 +3693,7 @@
 - `model-monitoring` : Data drift, Evidently, Machine Learning, Monitoring de modèle en production
 - `model-registry` : ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
 - `model-serving` : BentoML, Déploiement de modèles, KServe, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, vLLM  — pas de page concept dédiée
-- `monte-carlo` : ArviZ, MCMC, Monte Carlo Tree Search, PyMC, Stan  — pas de page concept dédiée
+- `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `multi-agent` : Agents, Agno, AutoGen, BMAD, CrewAI, DB-GPT, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, a2a-protocol, freebuff, swarm-forge  — pas de page concept dédiée
 - `multi-armed-bandit` : Exploration vs exploitation, Multi-armed bandits  — pas de page concept dédiée
 - `multi-output` : Régression et classification multi-sorties
@@ -3681,7 +3706,7 @@
 - `neural-rendering` : Rendu neuronal 3D & estimation de profondeur  — pas de page concept dédiée
 - `nlp` : BM25, Classification de texte, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLP, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem
-- `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Régression quantile, Tests non paramétriques, pingouin, scipy.stats
+- `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Régression quantile, Tests & estimation, Tests non paramétriques, pingouin, scipy.stats
 - `nosql` : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
@@ -3698,26 +3723,26 @@
 - `orm` : ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
 - `out-of-core` : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
-- `p-value` : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
+- `p-value` : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning
 - `package-manager` : Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
 - `parallel` : Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
-- `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
+- `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `pdf` : Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
-- `point-estimation` : Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
+- `point-estimation` : Bayésien, Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
 - `policy-gradient` : Actor-Critic methods, Apprentissage par renforcement, PPO, Policy gradient
 - `pose-estimation` : Estimation de pose, Ultralytics YOLO
 - `positional-encoding` : Positional encoding
 - `postgres` : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
-- `prior` : A priori conjugués, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
+- `prior` : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : OpenCut, Page to Markdown, SmartTube  — pas de page concept dédiée
-- `probabilistic-programming` : PyMC, Stan  — pas de page concept dédiée
-- `probability` : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Processus de Poisson, Théorème central limite  — pas de page concept dédiée
-- `projection` : Projections
+- `probabilistic-programming` : Bayésien, PyMC, Stan  — pas de page concept dédiée
+- `probability` : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite  — pas de page concept dédiée
+- `projection` : Analyse factorielle, Projections
 - `prompt-injection` : Prompt injection
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
 - `prompting` : Chain-of-Thought, Prompt engineering, i-have-adhd  — pas de page concept dédiée
@@ -3742,7 +3767,7 @@
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
 - `reranking` : Late-interaction retrieval, RAGatouille, Reranking, sentence-transformers
-- `resampling` : Bootstrap, Validation croisée, Walk-forward CV
+- `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV
 - `retrieval` : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers  — pas de page concept dédiée
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Routing and cascading
@@ -3768,15 +3793,15 @@
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
-- `statistical-inference` : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
+- `statistical-inference` : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
 - `statistical-power` : Analyse de puissance, pingouin
 - `statistical-viz` : Visualisation, seaborn, sweetviz  — pas de page concept dédiée
-- `stochastic-process` : Autocorrelation, Chaînes de Markov, Mouvement brownien, Processus de Poisson, Stationarity  — pas de page concept dédiée
+- `stochastic-process` : Autocorrelation, Chaînes de Markov, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity  — pas de page concept dédiée
 - `streaming` : Change Data Capture (CDC), Flink, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
 - `string-matching` : Fuzzy matching & similarité de chaînes, NLP, Pattern - Pipeline scraping → matching → optimisation
 - `structured-output` : Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Structured outputs, needle, tool-use  — pas de page concept dédiée
 - `supervised` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN  — pas de page concept dédiée
-- `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, lifelines
+- `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, Tests & estimation, lifelines
 - `synthetic-data` : Distillation, Faker, Fine-tuning, Mimesis, SDV, Synthetic data generation
 - `table-extraction` : Docling, OpenDataLoader PDF, pdfplumber  — pas de page concept dédiée
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
@@ -3795,7 +3820,7 @@
 - `transformers` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `type-hints` : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer  — pas de page concept dédiée
-- `unsupervised` : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `unsupervised` : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `value-function` : Actor-Critic methods, Apprentissage par renforcement, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
 - `vc-dimension` : VC dimension
@@ -3827,7 +3852,7 @@
 - `audit-log` (porté par : Maka)
 - `authentication` (porté par : PyJWT, Sécurité)
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow)
-- `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence)
+- `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence)
 - `benchmark` (porté par : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, prompt-caching)
@@ -3836,11 +3861,11 @@
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
 - `columnar` (porté par : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx)
-- `concentration` (porté par : Inégalités de concentration)
+- `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
-- `convergence` (porté par : Loi des grands nombres, Théorème central limite)
+- `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
 - `data-app` (porté par : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
@@ -3865,13 +3890,13 @@
 - `durable-execution` (porté par : Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
-- `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, pingouin)
+- `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin)
 - `eigenvalue` (porté par : Eigendecomposition, SVD)
 - `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
-- `factor-analysis` (porté par : CA, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence)
+- `factor-analysis` (porté par : Analyse factorielle, CA, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence)
 - `file-format` (porté par : Avro, Parquet, Partitionnement & layout de données)
 - `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
@@ -3906,9 +3931,9 @@
 - `local-llm` (porté par : Assistants, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n)
-- `manifold` (porté par : Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
+- `manifold` (porté par : Analyse factorielle, Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector)
-- `markov` (porté par : Chaînes de Markov, MCMC, Markov Decision Process, PyMC, Stan)
+- `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
@@ -3920,7 +3945,7 @@
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval)
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : BentoML, Déploiement de modèles, KServe, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, vLLM)
-- `monte-carlo` (porté par : ArviZ, MCMC, Monte Carlo Tree Search, PyMC, Stan)
+- `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
 - `multi-agent` (porté par : Agents, Agno, AutoGen, BMAD, CrewAI, DB-GPT, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, a2a-protocol, freebuff, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)
 - `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models)
@@ -3937,19 +3962,19 @@
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray)
-- `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests d'hypothèse, scipy.stats, statsmodels)
+- `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
-- `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, pingouin, scipy.stats, statsmodels)
+- `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
-- `point-estimation` (porté par : Estimation MAP, Maximum de vraisemblance)
+- `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
-- `prior` (porté par : A priori conjugués, Estimation MAP, Inférence bayésienne, PyMC)
+- `prior` (porté par : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC)
 - `privacy` (porté par : OpenCut, Page to Markdown, SmartTube)
-- `probabilistic-programming` (porté par : PyMC, Stan)
-- `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Processus de Poisson, Théorème central limite)
+- `probabilistic-programming` (porté par : Bayésien, PyMC, Stan)
+- `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
 - `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25)
@@ -3978,9 +4003,9 @@
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : Visualisation, matplotlib, missingno, seaborn)
-- `statistical-inference` (porté par : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests d'hypothèse, statsmodels)
+- `statistical-inference` (porté par : Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels)
 - `statistical-viz` (porté par : Visualisation, seaborn, sweetviz)
-- `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Mouvement brownien, Processus de Poisson, Stationarity)
+- `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
 - `streaming` (porté par : Change Data Capture (CDC), Flink, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Structured outputs, needle, tool-use)
 - `supervised` (porté par : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
@@ -3997,7 +4022,7 @@
 - `transformers` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost)
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
-- `unsupervised` (porté par : Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
+- `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Vector norms)
 - `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)

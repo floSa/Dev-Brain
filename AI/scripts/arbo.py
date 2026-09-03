@@ -104,6 +104,20 @@ SUB_LABEL = {
     "ml/tracking": "Suivi d'expériences",
     "ml/interpretabilite": "Interprétabilité",
     "ml/tabulaire": "Tabulaire",
+    # Statistiques & inférence — « ### Statistiques & inférence · 47 pages », lot 4.
+    # Les libellés ne recopient pas le nom de la catégorie, et deux fois exprès :
+    # « Inférence » est déjà un alias du hub « Serving » (même rôle → avertissement R5)
+    # et redoublerait le nom du domaine parent ; « Analyse factorielle » nomme la
+    # population réelle du sous-domaine (Prince, Fanalysis, PCA/CA/MCA/FAMD/MFA/GPA)
+    # là où « Exploratoire » se confondrait avec `data/eda`.
+    "stats/inference": "Tests & estimation",
+    "stats/exploratoire": "Analyse factorielle",
+    "stats/bayesien": "Bayésien",
+    "stats/probabilite": "Probabilités",
+    # `stats/experimentation` et `stats/causal` restent SOUS le seuil (4 et 3 pages) :
+    # pas de dossier, donc pas de libellé. Le jour où l'un franchit 5, `promotions()`
+    # lève un KeyError qui dit d'aller le lire dans v3-arborescence.md — c'est le
+    # comportement voulu, pas un oubli.
 }
 
 # Rôles qui n'ont PAS de `categorie:` et que la dérivation ci-dessous ne concerne donc

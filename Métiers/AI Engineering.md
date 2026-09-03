@@ -25,12 +25,18 @@ pitch: Construire une application autour d'un modèle de langage — contexte, o
 <!-- AUTO:START -->
 Axe métier **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[LLM (notions)]] — 56 notion(s)
-- [[Deep learning]] — 28 notion(s)
-- [[Apprentissage par renforcement]] — 10 notion(s)
-- [[IA & sécurité]] — 4 notion(s)
-- [[NLP (notions)]] — 4 notion(s)
-- [[Maths du ML]] — 3 notion(s)
-- [[Données (notions)]] — 2 notion(s)
-- [[Machine learning (notions)]] — 1 notion(s)
+- [[LLM (notions)]] — 56 page(s)
+- [[Deep learning]] — 28 page(s)
+- [[LLM & IA générative]] — 14 page(s)
+- [[Apprentissage par renforcement]] — 10 page(s)
+- [[IA & sécurité]] — 4 page(s)
+- [[NLP (notions)]] — 4 page(s)
+- [[Maths du ML]] — 3 page(s)
+- [[Médias]] — 2 page(s)
+- [[Outils de développement]] — 2 page(s)
+- [[Données (notions)]] — 2 page(s)
+- [[Design & diagrammes]] — 1 page(s)
+- [[Documents]] — 1 page(s)
+- [[Web & API]] — 1 page(s)
+- [[Machine learning (notions)]] — 1 page(s)
 <!-- AUTO:END -->

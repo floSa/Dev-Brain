@@ -24,12 +24,12 @@ pitch: Comprendre un jeu de données et en tirer un modèle qui répond à une q
 <!-- AUTO:START -->
 Axe métier **Data Science** (`data-sci`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[Machine learning (notions)]] — 63 notion(s)
-- [[Statistiques]] — 37 notion(s)
-- [[Maths du ML]] — 24 notion(s)
-- [[Deep learning]] — 23 notion(s)
-- [[Séries temporelles]] — 13 notion(s)
-- [[NLP (notions)]] — 7 notion(s)
-- [[Traitement du signal (notions)]] — 5 notion(s)
-- [[Données (notions)]] — 1 notion(s)
+- [[Machine learning (notions)]] — 63 page(s)
+- [[Statistiques & inférence]] — 37 page(s)
+- [[Maths du ML]] — 24 page(s)
+- [[Deep learning]] — 23 page(s)
+- [[Séries temporelles]] — 13 page(s)
+- [[NLP (notions)]] — 7 page(s)
+- [[Traitement du signal (notions)]] — 5 page(s)
+- [[Données (notions)]] — 1 page(s)
 <!-- AUTO:END -->

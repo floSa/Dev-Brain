@@ -32,11 +32,16 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Documents]] — 2 briques
 - [[DevOps]] — 2 briques
 
-## Métiers — les 5 axes transverses
+## Métiers — les 6 axes transverses
 
 Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`.
 
-- [[Data Science]] · [[Data Engineering]] · [[MLOps]] · [[ML Engineering]] · [[AI Engineering]]
+- [[Data Science]] · [[Data Engineering]] · [[MLOps]] · [[ML Engineering]] · [[AI Engineering]] · [[Infrastructure & Ops]]
+
+> `Infrastructure & Ops` est apparu au lot 4, le 2026-09-05, sans qu'on le décide : `themes.md`
+> le déclare depuis le 2026-09-02, mais `build_mocs.py` ne comptait que les pages `Wiki/`, où
+> aucune notion ne le portait. Le lot a étendu ce périmètre à l'arbre, et les 3 briques qui le
+> portent — [[Sniffnet]], [[croc]], [[osint4all]] — ont matérialisé la page.
 
 ## Rangés par `role:` — aucune `categorie:` ne les range
 

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 697 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 702 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -799,45 +799,6 @@
 - **Traitement du signal** — domaines : data-sci, ml-eng · alias : TdS, signal processing, DSP, traitement numérique du signal
 - **Transformée de Fourier** — domaines : data-sci, ml-eng · alias : FFT, DFT, transformée de Fourier discrète, transformée de Fourier rapide, analyse spectrale, domaine fréquentiel
 
-### concept/stats
-- **A priori conjugués** — domaines : data-sci · alias : conjugate priors, conjugate prior, lois a priori conjuguées, prior conjugué, conjugaison
-- **A/B testing** — domaines : data-sci · alias : AB testing, test A/B, split testing, online controlled experiment, OCE, randomized experiment
-- **Analyse de puissance** — domaines : data-sci · alias : power analysis, statistical power, taille d'échantillon
-- **Analyse de survie** — domaines : data-sci · alias : survival analysis, time-to-event, analyse de survie, Kaplan-Meier, Cox, risques proportionnels, hazard, censure
-- **Bootstrap** — domaines : data-sci · alias : resampling, rééchantillonnage
-- **CA** — domaines : data-sci · alias : AFC, Analyse des correspondances, Analyse factorielle des correspondances, Correspondence Analysis
-- **Chaînes de Markov** — domaines : data-sci · alias : Markov chains, propriété de Markov, Markov property
-- **Correction des tests multiples** — domaines : data-sci · alias : multiple testing, multiple comparisons, Bonferroni, FDR
-- **CUPED** — domaines : data-sci · alias : Controlled-experiment Using Pre-Experiment Data, variance reduction, regression adjustment
-- **Diff-in-Diff** — domaines : data-sci · alias : DiD, difference-in-differences, différence des différences, doubles différences
-- **Estimation MAP** — domaines : data-sci · alias : MAP, maximum a posteriori, maximum a posteriori estimation, estimation maximum a posteriori
-- **FAMD** — domaines : data-sci · alias : AFDM, Analyse factorielle de données mixtes, Factor Analysis of Mixed Data
-- **GPA** — domaines : data-sci · alias : Generalized Procrustes Analysis, Analyse procustéenne généralisée, Procruste généralisé
-- **HCPC** — domaines : data-sci · alias : Classification hiérarchique sur composantes principales, Hierarchical Clustering on Principal Components
-- **Inférence bayésienne** — domaines : data-sci · alias : Bayesian inference, inference bayesienne, Bayes, statistique bayésienne
-- **Inférence causale** — domaines : data-sci · alias : causal inference, inférence causale, causalité, DAG, confounding, confondeur, backdoor, propensity score, score de propension
-- **Intervalles de confiance** — domaines : data-sci · alias : confidence interval, confidence intervals, IC
-- **Inégalités de concentration** — domaines : data-sci · alias : Concentration inequalities, Hoeffding, Chebyshev, inégalité de Markov
-- **Loi des grands nombres** — domaines : data-sci · alias : Law of large numbers, LGN, LLN
-- **Manifold learning** — domaines : data-sci · alias : manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding
-- **MANOVA et tests multivariés** — domaines : data-sci · alias : MANOVA, tests multivariés, multivariate analysis of variance, Hotelling, Hotelling T2, Wilks lambda, trace de Pillai
-- **Maximum de vraisemblance** — domaines : data-sci · alias : MLE, maximum likelihood estimation, maximum likelihood, vraisemblance maximale
-- **MCA** — domaines : data-sci · alias : ACM, Analyse des correspondances multiples, Multiple Correspondence Analysis
-- **MCMC** — domaines : data-sci · alias : Markov chain Monte Carlo, Monte-Carlo par chaînes de Markov, Metropolis-Hastings, NUTS, Gibbs
-- **MFA** — domaines : data-sci · alias : AFM, Analyse factorielle multiple, Multiple Factor Analysis
-- **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
-- **Multi-armed bandits** — domaines : data-sci · alias : MAB, bandit manchot, bandits, Epsilon-Greedy, Thompson Sampling, exploration-exploitation
-- **PCA** — domaines : data-sci · alias : ACP, Analyse en composantes principales, Principal Component Analysis
-- **PGA** — domaines : data-sci · alias : Principal Geodesic Analysis, Analyse géodésique principale
-- **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
-- **Réduction de dimension** — domaines : data-sci · alias : dimensionality reduction, réduction de dimensionnalité
-- **Sequential testing** — domaines : data-sci · alias : test séquentiel, analyse séquentielle, peeking, always-valid inference, SPRT, alpha spending
-- **Test du khi-deux** — domaines : data-sci · alias : chi-squared, chi-square, khi2, test d'indépendance
-- **Test t et ANOVA** — domaines : data-sci · alias : t-test, ANOVA, test de Student, comparaison de moyennes
-- **Tests d'hypothèse** — domaines : data-sci · alias : hypothesis testing, test statistique, H0, significativité
-- **Tests non paramétriques** — domaines : data-sci · alias : non-parametric, non-parametric tests, Wilcoxon, Mann-Whitney, Kruskal-Wallis
-- **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
-
 ### concept/ts
 - **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
 - **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
@@ -852,6 +813,55 @@
 - **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
 - **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
 - **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
+
+### stats/bayesien
+- **A priori conjugués** — domaines : data-sci · alias : conjugate priors, conjugate prior, lois a priori conjuguées, prior conjugué, conjugaison
+- **Estimation MAP** — domaines : data-sci · alias : MAP, maximum a posteriori, maximum a posteriori estimation, estimation maximum a posteriori
+- **Inférence bayésienne** — domaines : data-sci · alias : Bayesian inference, inference bayesienne, Bayes, statistique bayésienne
+- **MCMC** — domaines : data-sci · alias : Markov chain Monte Carlo, Monte-Carlo par chaînes de Markov, Metropolis-Hastings, NUTS, Gibbs
+
+### stats/causal
+- **Diff-in-Diff** — domaines : data-sci · alias : DiD, difference-in-differences, différence des différences, doubles différences
+- **Inférence causale** — domaines : data-sci · alias : causal inference, inférence causale, causalité, DAG, confounding, confondeur, backdoor, propensity score, score de propension
+
+### stats/experimentation
+- **A/B testing** — domaines : data-sci · alias : AB testing, test A/B, split testing, online controlled experiment, OCE, randomized experiment
+- **CUPED** — domaines : data-sci · alias : Controlled-experiment Using Pre-Experiment Data, variance reduction, regression adjustment
+- **Multi-armed bandits** — domaines : data-sci · alias : MAB, bandit manchot, bandits, Epsilon-Greedy, Thompson Sampling, exploration-exploitation
+- **Sequential testing** — domaines : data-sci · alias : test séquentiel, analyse séquentielle, peeking, always-valid inference, SPRT, alpha spending
+
+### stats/exploratoire
+- **CA** — domaines : data-sci · alias : AFC, Analyse des correspondances, Analyse factorielle des correspondances, Correspondence Analysis
+- **FAMD** — domaines : data-sci · alias : AFDM, Analyse factorielle de données mixtes, Factor Analysis of Mixed Data
+- **GPA** — domaines : data-sci · alias : Generalized Procrustes Analysis, Analyse procustéenne généralisée, Procruste généralisé
+- **HCPC** — domaines : data-sci · alias : Classification hiérarchique sur composantes principales, Hierarchical Clustering on Principal Components
+- **Manifold learning** — domaines : data-sci · alias : manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding
+- **MCA** — domaines : data-sci · alias : ACM, Analyse des correspondances multiples, Multiple Correspondence Analysis
+- **MFA** — domaines : data-sci · alias : AFM, Analyse factorielle multiple, Multiple Factor Analysis
+- **PCA** — domaines : data-sci · alias : ACP, Analyse en composantes principales, Principal Component Analysis
+- **PGA** — domaines : data-sci · alias : Principal Geodesic Analysis, Analyse géodésique principale
+- **Réduction de dimension** — domaines : data-sci · alias : dimensionality reduction, réduction de dimensionnalité
+
+### stats/inference
+- **Analyse de puissance** — domaines : data-sci · alias : power analysis, statistical power, taille d'échantillon
+- **Analyse de survie** — domaines : data-sci · alias : survival analysis, time-to-event, analyse de survie, Kaplan-Meier, Cox, risques proportionnels, hazard, censure
+- **Bootstrap** — domaines : data-sci · alias : resampling, rééchantillonnage
+- **Correction des tests multiples** — domaines : data-sci · alias : multiple testing, multiple comparisons, Bonferroni, FDR
+- **Intervalles de confiance** — domaines : data-sci · alias : confidence interval, confidence intervals, IC
+- **MANOVA et tests multivariés** — domaines : data-sci · alias : MANOVA, tests multivariés, multivariate analysis of variance, Hotelling, Hotelling T2, Wilks lambda, trace de Pillai
+- **Maximum de vraisemblance** — domaines : data-sci · alias : MLE, maximum likelihood estimation, maximum likelihood, vraisemblance maximale
+- **Test du khi-deux** — domaines : data-sci · alias : chi-squared, chi-square, khi2, test d'indépendance
+- **Test t et ANOVA** — domaines : data-sci · alias : t-test, ANOVA, test de Student, comparaison de moyennes
+- **Tests d'hypothèse** — domaines : data-sci · alias : hypothesis testing, test statistique, H0, significativité
+- **Tests non paramétriques** — domaines : data-sci · alias : non-parametric, non-parametric tests, Wilcoxon, Mann-Whitney, Kruskal-Wallis
+
+### stats/probabilite
+- **Chaînes de Markov** — domaines : data-sci · alias : Markov chains, propriété de Markov, Markov property
+- **Inégalités de concentration** — domaines : data-sci · alias : Concentration inequalities, Hoeffding, Chebyshev, inégalité de Markov
+- **Loi des grands nombres** — domaines : data-sci · alias : Law of large numbers, LGN, LLN
+- **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
+- **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
+- **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
 
 ## Patterns — architectures éprouvées
 
@@ -878,11 +888,13 @@
 - **Agents** — Les bibliothèques avec lesquelles on écrit un agent — une boucle qui planifie, appelle des outils et reprend là où elle en était.
 - **Agents de code** — Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.
 - **AI Engineering** — Construire une application autour d'un modèle de langage — contexte, outils, garde-fous, évaluation.
+- **Analyse factorielle** — Résumer un grand tableau par quelques axes qu'on puisse interpréter — l'école française de l'analyse de données, et ses variantes selon le type de variables.
 - **Apprentissage par renforcement** — Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.
 - **Apprentissage profond** — Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.
 - **Assistants** — Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
+- **Bayésien** — Traiter le paramètre comme une variable aléatoire — une distribution en sortie plutôt qu'un point, au prix d'un a priori assumé et d'un échantillonnage à faire converger.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
 - **Data & pipelines** — Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
 - **Data Engineering** — Amener la donnée d'où elle naît jusqu'où elle sert, de façon répétable, traçable et vérifiable.
@@ -893,6 +905,7 @@
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
+- **Infrastructure & Ops** — Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
 - **Interprétabilité** — Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
@@ -908,6 +921,7 @@
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
 - **Patterns** — Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.
+- **Probabilités** — Ce qui rend l'inférence possible — les théorèmes qui disent qu'un échantillon converge, et les processus qui modélisent le hasard dans le temps.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
@@ -922,6 +936,7 @@
 - **Sécurité** — Prouver qui appelle, et voir ce qu'un système expose de lui-même vu de l'extérieur.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
 - **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
+- **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.
 - **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
 - **Vision** — Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.

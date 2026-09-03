@@ -23,9 +23,11 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 
 > **Un seul arbre depuis le lot 3 de la v3.** `Dev/` n'existe plus : les 337 briques,
 > les 47 comparatifs, les 5 patterns et les 5 règles sont descendus dans l'arbre.
-> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore** — 297 notions et leurs 10 MOC
-> d'entrée — et c'est le **lot 4** qui les descendra, pas le lot 3. Tout ce qui suit
-> décrit cet état-là, pas la cible finale.
+> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore**, mais rétrécissent : le lot 4
+> a commencé le 2026-09-05 par « Statistiques & inférence », dont les **37 notions**
+> sont descendues dans l'arbre. Il reste **260 notions** sous `Wiki/Concepts/` et
+> **10 MOC** — dont `MOC/Concepts/Statistiques.md`, qui n'indexe plus rien et ne se
+> régénère plus. Tout ce qui suit décrit cet état-là, pas la cible finale.
 
 ## Identité utilisateur
 
@@ -127,10 +129,12 @@ On y ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : les **297** notions sont toutes sous `Wiki/Concepts/`, et le **lot 4** les
-descendra dans l'arbre des domaines, avec les 10 `MOC/Concepts/` qui sont aujourd'hui leur
-porte d'entrée. Jusque-là, ces deux dossiers restent en place et sont le lieu normal d'une
-notion. C'est la seule exception à « le dossier porte le domaine », et elle est datée.
+État actuel : le **lot 4 a commencé**. Les **37** notions de statistiques vivent désormais
+dans « Statistiques & inférence/ », rangées par leur domaine comme les briques ; les **260**
+autres sont encore sous `Wiki/Concepts/`, avec les 10 `MOC/Concepts/` qui restent leur porte
+d'entrée. `Wiki/Concepts/` est donc le lieu normal d'une notion **pas encore migrée**, et
+lui seul — une notion dont le domaine est passé se range comme une brique. C'est la seule
+exception à « le dossier porte le domaine », elle est datée, et elle se referme lot à lot.
 
 `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** — le contenu
 v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`) et, la v3
@@ -139,7 +143,7 @@ contenu pour les combler ; demande avant de commencer une migration.
 
 Écrire une notion :
 1. Gabarit `Templates/Concept-Wiki.md`, frontmatter complet (`role: notion`, `categorie: concept/<sous-domaine>` — cf. taxonomie).
-2. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérivera de sa `categorie:` au lot 4, comme pour une brique. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+2. **Ne crée pas de sous-dossier dans `Wiki/`** : le rangement d'une notion se dérive de sa `categorie:`, comme pour une brique — le lot 4 l'a établi sur « Statistiques & inférence », et `AI/scripts/arbo.py` le calcule. Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
 3. La notion se câble à ses briques dans les deux sens — c'est la règle de propagation, pas une politesse.
 
 Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble des notions.
@@ -161,17 +165,18 @@ laisserait aucune page au niveau du domaine. Tout dossier porte une page à son 
 │   └── <Brique>.md           (role: brique) + Comparatif - <thème>.base
 └── <Brique>.md               (role: brique) + Comparatif - <thème>.base
 
-Métiers/                     ← 5 hubs transverses, générés depuis `domaines:`
+Métiers/                     ← 6 hubs transverses, générés depuis `domaines:`
                                (Data Science, Data Engineering, MLOps, ML Engineering,
-                               AI Engineering) — seul axe qui traverse l'arbre technique
+                               AI Engineering, Infrastructure & Ops) — seul axe qui
+                               traverse l'arbre technique
 
 Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role: pattern)
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
-Wiki/Concepts/               ← 297 notions (role: notion) — EN ATTENTE DU LOT 4
-MOC/Concepts/                ← 10 MOC générées, leur seule porte d'entrée (R7)
-                               les deux meurent ensemble au lot 4, PAS avant
+Wiki/Concepts/               ← 260 notions (role: notion) — EN ATTENTE DU LOT 4
+MOC/Concepts/                ← 10 MOC générées, porte d'entrée (R7) de ce qui reste
+                               les deux meurent ensemble au lot 4, domaine par domaine
 Wiki/Outils|Workflows|Roadmaps/  ← scaffolds vides, non remigrés (cf. reservoir-v1.md)
 
 Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventions perso)
@@ -217,7 +222,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 | Comparatif | `<Dossier>/Comparatif - <thème>.base` — dans le dossier de ses membres |
 | Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
 | Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
-| Notion (`role: notion`) | `Wiki/Concepts/<Nom>.md` — **jusqu'au lot 4**, qui la descendra dans `<Dossier>/` |
+| Notion (`role: notion`) | `<Dossier>/<Nom>.md` — comme une brique. Les non encore migrées sont sous `Wiki/Concepts/` |
 | **Entrée d'expérience datée** (dans `## Pièges` de la fiche concernée) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté |
 | **Incident né entre deux briques** | s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne ; la fiche de l'autre brique **ne le mentionne pas** (une entrée dupliquée serait une seconde chose à synchroniser) |
 

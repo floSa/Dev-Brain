@@ -24,12 +24,12 @@ pitch: Faire tenir un entraînement à l'échelle — données, mémoire, temps 
 <!-- AUTO:START -->
 Axe métier **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[Deep learning]] — 48 notion(s)
-- [[Machine learning (notions)]] — 43 notion(s)
-- [[Maths du ML]] — 26 notion(s)
-- [[Apprentissage par renforcement]] — 17 notion(s)
-- [[LLM (notions)]] — 12 notion(s)
-- [[Séries temporelles]] — 9 notion(s)
-- [[Traitement du signal (notions)]] — 5 notion(s)
-- [[NLP (notions)]] — 3 notion(s)
+- [[Deep learning]] — 48 page(s)
+- [[Machine learning (notions)]] — 43 page(s)
+- [[Maths du ML]] — 26 page(s)
+- [[Apprentissage par renforcement]] — 17 page(s)
+- [[LLM (notions)]] — 12 page(s)
+- [[Séries temporelles]] — 9 page(s)
+- [[Traitement du signal (notions)]] — 5 page(s)
+- [[NLP (notions)]] — 3 page(s)
 <!-- AUTO:END -->

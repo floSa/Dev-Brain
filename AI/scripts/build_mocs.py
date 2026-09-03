@@ -244,13 +244,30 @@ def main() -> int:
     # Hubs transverses `Métiers/` — les 5 axes métier du champ `domaines:`, pointant
     # vers les SOUS-HUBS et non vers les feuilles. Seule vue qui traverse l'arbre des
     # domaines TECHNIQUES ; c'est ce qui justifie de la garder (arbitrage du lot 3).
-    # Périmètre inchangé depuis la v2 — les pages `Wiki/` — et donc provisoire : il
-    # meurt avec `Wiki/Concepts/` au lot 4, qui devra le rebâtir sur l'arbre.
+    #
+    # Le périmètre était resté celui de la v2 — les seules pages `Wiki/` — et le lot 4
+    # devait le rebâtir sur l'arbre. Fait ici, parce que ne PAS le faire érode ces
+    # 5 pages à chaque lot de domaine, en silence : descendre les 37 notions
+    # `concept/stats` a fait disparaître la ligne « Statistiques — 37 notion(s) » de
+    # « Métiers/Data Science.md », sans qu'aucune règle du validateur s'en aperçoive
+    # (R7 tient toujours, les notions étant citées par le hub de leur dossier).
+    #
+    # La règle est donc : une page groupe par SON HUB. Sous `Wiki/`, c'est encore le
+    # sous-hub `MOC/Concepts/` ; dans l'arbre, c'est le dossier de domaine. Les hubs
+    # eux-mêmes sont exclus — ils portent `domaines:` et se compteraient eux-mêmes.
+    # Mesure au 2026-09-05 : 260 pages `Wiki/` et 68 pages de l'arbre portent
+    # `domaines:`, dont les 37 notions de statistiques et 31 briques.
     theme_subs: dict[str, dict[str, int]] = {}
+    theme_labels: dict[str, str] = {}
     for p in pages:
-        if not p["path"].startswith("Wiki/"):
+        if p.get("role") == "hub":
             continue
-        key = wiki_group(p.get("categorie") or "")[0]
+        if p["path"].startswith("Wiki/"):
+            key = wiki_group(p.get("categorie") or "")[0]
+            theme_labels[key] = wiki_meta[key][0]
+        else:
+            key = "arbre:" + p["path"].split("/")[0]
+            theme_labels[key] = p["path"].split("/")[0]
         for dom in p.get("domaines") or []:
             theme_subs.setdefault(dom, {})
             theme_subs[dom][key] = theme_subs[dom].get(key, 0) + 1
@@ -258,8 +275,9 @@ def main() -> int:
         label = THEME_LABEL.get(dom, dom)
         bullets = []
         for key, n in sorted(subs.items(), key=lambda e: (-e[1], e[0])):
-            slab = wiki_meta[key][0]
-            bullets.append(f"- [[{slab}]] — {n} notion(s)")
+            # « page(s) » et non « notion(s) » : un groupe de l'arbre mêle notions et
+            # briques, le compte ne peut plus annoncer un seul rôle.
+            bullets.append(f"- [[{theme_labels[key]}]] — {n} page(s)")
         upsert(METIERS / f"{label}.md", label,
                f"Axe métier **{label}** (`{dom}`) — explorer par sous-domaine, puis "
                "descendre via le graphe local.",
