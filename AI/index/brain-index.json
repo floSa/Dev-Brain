@@ -13981,6 +13981,126 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Vision/Apprentissage auto-supervisé en vision.md",
+      "nom": "Apprentissage auto-supervisé en vision",
+      "alias": [
+        "self-supervised learning",
+        "SSL",
+        "auto-supervisé",
+        "SimCLR",
+        "MoCo",
+        "BYOL",
+        "DINO",
+        "MAE",
+        "masked autoencoder",
+        "apprentissage contrastif"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "self-supervised",
+        "representation-learning",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Architectures CNN.md",
+      "nom": "Architectures CNN",
+      "alias": [
+        "ResNet",
+        "MobileNet",
+        "EfficientNet",
+        "ConvNeXt",
+        "backbone vision",
+        "CNN architectures"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "cnn",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Augmentation d'images.md",
+      "nom": "Augmentation d'images",
+      "alias": [
+        "data augmentation",
+        "augmentation de données",
+        "Mixup",
+        "CutMix",
+        "RandAugment"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-augmentation",
+        "regularization",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Classification d'images.md",
+      "nom": "Classification d'images",
+      "alias": [
+        "image classification",
+        "classification d'image",
+        "top-1",
+        "top-5",
+        "ImageNet"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "image-classification",
+        "computer-vision",
+        "cnn",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Vision/Detectron2.md",
       "nom": "Detectron2",
       "alias": [
@@ -14008,6 +14128,73 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Détection d'objets.md",
+      "nom": "Détection d'objets",
+      "alias": [
+        "object detection",
+        "détection d'objet",
+        "bounding box",
+        "boîtes englobantes",
+        "anchors",
+        "NMS",
+        "YOLO",
+        "Faster R-CNN",
+        "RetinaNet",
+        "DETR"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "object-detection",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Estimation de pose.md",
+      "nom": "Estimation de pose",
+      "alias": [
+        "pose estimation",
+        "keypoints",
+        "points-clés",
+        "pose humaine",
+        "OpenPose",
+        "HRNet",
+        "ViTPose",
+        "MediaPipe",
+        "OKS",
+        "PCK",
+        "heatmap"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "pose-estimation",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Vision/Kornia.md",
@@ -14038,6 +14225,149 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Vision/Metric learning & ré-identification.md",
+      "nom": "Metric learning & ré-identification",
+      "alias": [
+        "metric learning",
+        "apprentissage de métrique",
+        "ré-identification",
+        "re-identification",
+        "re-id",
+        "person re-id",
+        "reconnaissance faciale",
+        "face recognition",
+        "triplet loss",
+        "contrastive loss",
+        "ArcFace",
+        "CosFace",
+        "Siamese",
+        "CMC",
+        "Rank-1"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "metric-learning",
+        "re-identification",
+        "representation-learning",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Modèles de fondation vision.md",
+      "nom": "Modèles de fondation vision",
+      "alias": [
+        "foundation models vision",
+        "vision foundation models",
+        "CLIP",
+        "DINOv2",
+        "DINOv3",
+        "SigLIP",
+        "OpenCLIP",
+        "modèles de fondation visuels"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "foundation-model",
+        "vision-language",
+        "self-supervised",
+        "representation-learning",
+        "computer-vision"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Métriques vision.md",
+      "nom": "Métriques vision",
+      "alias": [
+        "métriques de vision",
+        "vision metrics",
+        "mAP",
+        "mean average precision",
+        "IoU",
+        "intersection over union",
+        "Dice",
+        "mIoU",
+        "AP"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "object-detection",
+        "segmentation",
+        "computer-vision"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/OCR.md",
+      "nom": "OCR",
+      "alias": [
+        "reconnaissance optique de caractères",
+        "reconnaissance de texte",
+        "text recognition",
+        "text detection",
+        "scene text",
+        "Tesseract",
+        "PaddleOCR",
+        "EasyOCR",
+        "docTR",
+        "CRNN",
+        "CTC",
+        "TrOCR",
+        "CER",
+        "WER"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Vision/OpenCV.md",
       "nom": "OpenCV",
       "alias": [
@@ -14062,6 +14392,169 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Rendu neuronal 3D & estimation de profondeur.md",
+      "nom": "Rendu neuronal 3D & estimation de profondeur",
+      "alias": [
+        "NeRF",
+        "neural radiance fields",
+        "3D Gaussian Splatting",
+        "3DGS",
+        "gaussian splatting",
+        "rendu neuronal",
+        "novel view synthesis",
+        "estimation de profondeur",
+        "depth estimation",
+        "MiDaS",
+        "DPT",
+        "Depth Anything"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "neural-rendering",
+        "depth-estimation",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Segment Anything (SAM).md",
+      "nom": "Segment Anything (SAM)",
+      "alias": [
+        "SAM",
+        "Segment Anything Model",
+        "segmentation promptable",
+        "promptable segmentation",
+        "SAM 2",
+        "SAM 3",
+        "SA-1B"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "segmentation",
+        "computer-vision",
+        "transformers",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Segmentation.md",
+      "nom": "Segmentation",
+      "alias": [
+        "segmentation d'image",
+        "image segmentation",
+        "segmentation sémantique",
+        "segmentation d'instance",
+        "segmentation panoptique",
+        "U-Net",
+        "Mask R-CNN",
+        "DeepLab"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "segmentation",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Suivi d'objets.md",
+      "nom": "Suivi d'objets",
+      "alias": [
+        "object tracking",
+        "MOT",
+        "multi-object tracking",
+        "suivi multi-cibles",
+        "tracking-by-detection",
+        "SORT",
+        "DeepSORT",
+        "ByteTrack",
+        "Kalman",
+        "MOTA",
+        "IDF1",
+        "HOTA"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "object-tracking",
+        "object-detection",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Transfer learning vision.md",
+      "nom": "Transfer learning vision",
+      "alias": [
+        "transfer learning",
+        "transfert d'apprentissage",
+        "fine-tuning vision",
+        "feature extraction",
+        "backbone gelé"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "transfer-learning",
+        "fine-tuning",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Vision/Ultralytics YOLO.md",
@@ -14093,6 +14586,62 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Vision/Vision Transformers (ViT).md",
+      "nom": "Vision Transformers (ViT)",
+      "alias": [
+        "ViT",
+        "Vision Transformer",
+        "vision transformers",
+        "DeiT",
+        "Swin Transformer",
+        "transformeur de vision"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "vit",
+        "transformers",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Vision par ordinateur.md",
+      "nom": "Vision par ordinateur",
+      "alias": [
+        "computer vision",
+        "CV",
+        "vision"
+      ],
+      "role": "notion",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "computer-vision",
+        "cnn",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Vision/Vision.md",
@@ -18733,40 +19282,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Apprentissage auto-supervisé en vision.md",
-      "nom": "Apprentissage auto-supervisé en vision",
-      "alias": [
-        "self-supervised learning",
-        "SSL",
-        "auto-supervisé",
-        "SimCLR",
-        "MoCo",
-        "BYOL",
-        "DINO",
-        "MAE",
-        "masked autoencoder",
-        "apprentissage contrastif"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "self-supervised",
-        "representation-learning",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Apprentissage non supervisé.md",
       "nom": "Apprentissage non supervisé",
       "alias": [
@@ -18838,34 +19353,6 @@
         "tree-based",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Architectures CNN.md",
-      "nom": "Architectures CNN",
-      "alias": [
-        "ResNet",
-        "MobileNet",
-        "EfficientNet",
-        "ConvNeXt",
-        "backbone vision",
-        "CNN architectures"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "cnn",
-        "computer-vision",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -18964,35 +19451,6 @@
         "state-space-model",
         "transformers",
         "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Augmentation d'images.md",
-      "nom": "Augmentation d'images",
-      "alias": [
-        "data augmentation",
-        "augmentation de données",
-        "Mixup",
-        "CutMix",
-        "RandAugment"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-augmentation",
-        "regularization",
-        "computer-vision",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -19202,35 +19660,6 @@
         "audio-classification",
         "spectrogram",
         "cnn"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification d'images.md",
-      "nom": "Classification d'images",
-      "alias": [
-        "image classification",
-        "classification d'image",
-        "top-1",
-        "top-5",
-        "ImageNet"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "image-classification",
-        "computer-vision",
-        "cnn",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -19609,39 +20038,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Détection d'objets.md",
-      "nom": "Détection d'objets",
-      "alias": [
-        "object detection",
-        "détection d'objet",
-        "bounding box",
-        "boîtes englobantes",
-        "anchors",
-        "NMS",
-        "YOLO",
-        "Faster R-CNN",
-        "RetinaNet",
-        "DETR"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "object-detection",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Détection d'outliers multivariée.md",
       "nom": "Détection d'outliers multivariée",
       "alias": [
@@ -19809,40 +20205,6 @@
         "deep-learning",
         "gpu",
         "memory-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Estimation de pose.md",
-      "nom": "Estimation de pose",
-      "alias": [
-        "pose estimation",
-        "keypoints",
-        "points-clés",
-        "pose humaine",
-        "OpenPose",
-        "HRNet",
-        "ViTPose",
-        "MediaPipe",
-        "OKS",
-        "PCK",
-        "heatmap"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "pose-estimation",
-        "computer-vision",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -20480,46 +20842,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Metric learning & ré-identification.md",
-      "nom": "Metric learning & ré-identification",
-      "alias": [
-        "metric learning",
-        "apprentissage de métrique",
-        "ré-identification",
-        "re-identification",
-        "re-id",
-        "person re-id",
-        "reconnaissance faciale",
-        "face recognition",
-        "triplet loss",
-        "contrastive loss",
-        "ArcFace",
-        "CosFace",
-        "Siamese",
-        "CMC",
-        "Rank-1"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "metric-learning",
-        "re-identification",
-        "representation-learning",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Mise à l'échelle.md",
       "nom": "Mise à l'échelle",
       "alias": [
@@ -20645,39 +20967,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Modèles de fondation vision.md",
-      "nom": "Modèles de fondation vision",
-      "alias": [
-        "foundation models vision",
-        "vision foundation models",
-        "CLIP",
-        "DINOv2",
-        "DINOv3",
-        "SigLIP",
-        "OpenCLIP",
-        "modèles de fondation visuels"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "foundation-model",
-        "vision-language",
-        "self-supervised",
-        "representation-learning",
-        "computer-vision"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Monitoring de modèle en production.md",
       "nom": "Monitoring de modèle en production",
       "alias": [
@@ -20764,39 +21053,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Métriques vision.md",
-      "nom": "Métriques vision",
-      "alias": [
-        "métriques de vision",
-        "vision metrics",
-        "mAP",
-        "mean average precision",
-        "IoU",
-        "intersection over union",
-        "Dice",
-        "mIoU",
-        "AP"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "object-detection",
-        "segmentation",
-        "computer-vision"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/NMF.md",
       "nom": "NMF",
       "alias": [
@@ -20848,43 +21104,6 @@
         "supervised",
         "classification",
         "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/OCR.md",
-      "nom": "OCR",
-      "alias": [
-        "reconnaissance optique de caractères",
-        "reconnaissance de texte",
-        "text recognition",
-        "text detection",
-        "scene text",
-        "Tesseract",
-        "PaddleOCR",
-        "EasyOCR",
-        "docTR",
-        "CRNN",
-        "CTC",
-        "TrOCR",
-        "CER",
-        "WER"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "ocr",
-        "computer-vision",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -21209,42 +21428,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Rendu neuronal 3D & estimation de profondeur.md",
-      "nom": "Rendu neuronal 3D & estimation de profondeur",
-      "alias": [
-        "NeRF",
-        "neural radiance fields",
-        "3D Gaussian Splatting",
-        "3DGS",
-        "gaussian splatting",
-        "rendu neuronal",
-        "novel view synthesis",
-        "estimation de profondeur",
-        "depth estimation",
-        "MiDaS",
-        "DPT",
-        "Depth Anything"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "neural-rendering",
-        "depth-estimation",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Régression et classification multi-sorties.md",
       "nom": "Régression et classification multi-sorties",
       "alias": [
@@ -21442,68 +21625,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Segment Anything (SAM).md",
-      "nom": "Segment Anything (SAM)",
-      "alias": [
-        "SAM",
-        "Segment Anything Model",
-        "segmentation promptable",
-        "promptable segmentation",
-        "SAM 2",
-        "SAM 3",
-        "SA-1B"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "segmentation",
-        "computer-vision",
-        "transformers",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Segmentation.md",
-      "nom": "Segmentation",
-      "alias": [
-        "segmentation d'image",
-        "image segmentation",
-        "segmentation sémantique",
-        "segmentation d'instance",
-        "segmentation panoptique",
-        "U-Net",
-        "Mask R-CNN",
-        "DeepLab"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "segmentation",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Self-attention.md",
       "nom": "Self-attention",
       "alias": [
@@ -21599,42 +21720,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Suivi d'objets.md",
-      "nom": "Suivi d'objets",
-      "alias": [
-        "object tracking",
-        "MOT",
-        "multi-object tracking",
-        "suivi multi-cibles",
-        "tracking-by-detection",
-        "SORT",
-        "DeepSORT",
-        "ByteTrack",
-        "Kalman",
-        "MOTA",
-        "IDF1",
-        "HOTA"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "object-tracking",
-        "object-detection",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Systèmes de recommandation.md",
       "nom": "Systèmes de recommandation",
       "alias": [
@@ -21686,35 +21771,6 @@
       "pitch": null,
       "tags": [
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Transfer learning vision.md",
-      "nom": "Transfer learning vision",
-      "alias": [
-        "transfer learning",
-        "transfert d'apprentissage",
-        "fine-tuning vision",
-        "feature extraction",
-        "backbone gelé"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "transfer-learning",
-        "fine-tuning",
-        "computer-vision",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -21864,62 +21920,6 @@
         "multimodal",
         "transformers",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Vision Transformers (ViT).md",
-      "nom": "Vision Transformers (ViT)",
-      "alias": [
-        "ViT",
-        "Vision Transformer",
-        "vision transformers",
-        "DeiT",
-        "Swin Transformer",
-        "transformeur de vision"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "vit",
-        "transformers",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Vision par ordinateur.md",
-      "nom": "Vision par ordinateur",
-      "alias": [
-        "computer vision",
-        "CV",
-        "vision"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "computer-vision",
-        "cnn",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,

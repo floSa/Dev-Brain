@@ -2,7 +2,7 @@
 role: notion
 nom: Architectures CNN
 alias: [ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [ml-eng]
 tags: [cnn, computer-vision, deep-learning]
 ---

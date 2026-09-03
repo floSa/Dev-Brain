@@ -2,7 +2,7 @@
 role: notion
 nom: Estimation de pose
 alias: [pose estimation, keypoints, points-clés, pose humaine, OpenPose, HRNet, ViTPose, MediaPipe, OKS, PCK, heatmap]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [pose-estimation, computer-vision, deep-learning]
 ---

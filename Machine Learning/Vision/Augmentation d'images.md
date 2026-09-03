@@ -2,7 +2,7 @@
 role: notion
 nom: Augmentation d'images
 alias: [data augmentation, augmentation de données, Mixup, CutMix, RandAugment]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [data-augmentation, regularization, computer-vision, deep-learning]
 ---

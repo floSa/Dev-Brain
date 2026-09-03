@@ -2,7 +2,7 @@
 role: notion
 nom: OCR
 alias: [reconnaissance optique de caractères, reconnaissance de texte, text recognition, text detection, scene text, Tesseract, PaddleOCR, EasyOCR, docTR, CRNN, CTC, TrOCR, CER, WER]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [ocr, computer-vision, deep-learning]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Modèles de fondation vision
 alias: [foundation models vision, vision foundation models, CLIP, DINOv2, DINOv3, SigLIP, OpenCLIP, modèles de fondation visuels]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [ml-eng, ai-eng]
 tags: [foundation-model, vision-language, self-supervised, representation-learning, computer-vision]
 ---

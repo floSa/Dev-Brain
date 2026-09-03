@@ -2,7 +2,7 @@
 role: notion
 nom: Segment Anything (SAM)
 alias: [SAM, Segment Anything Model, segmentation promptable, promptable segmentation, SAM 2, SAM 3, SA-1B]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [ml-eng, ai-eng]
 tags: [segmentation, computer-vision, transformers, deep-learning]
 ---

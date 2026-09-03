@@ -2,7 +2,7 @@
 role: notion
 nom: Segmentation
 alias: [segmentation d'image, image segmentation, segmentation sémantique, segmentation d'instance, segmentation panoptique, U-Net, Mask R-CNN, DeepLab]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [segmentation, computer-vision, deep-learning]
 ---

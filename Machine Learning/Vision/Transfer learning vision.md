@@ -2,7 +2,7 @@
 role: notion
 nom: Transfer learning vision
 alias: [transfer learning, transfert d'apprentissage, fine-tuning vision, feature extraction, backbone gelé]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [transfer-learning, fine-tuning, computer-vision, deep-learning]
 ---

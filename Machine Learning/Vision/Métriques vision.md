@@ -2,7 +2,7 @@
 role: notion
 nom: Métriques vision
 alias: [métriques de vision, vision metrics, mAP, mean average precision, IoU, intersection over union, Dice, mIoU, AP]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, object-detection, segmentation, computer-vision]
 ---

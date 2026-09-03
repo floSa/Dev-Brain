@@ -24,9 +24,9 @@ pitch: Faire tenir un entraînement à l'échelle — données, mémoire, temps 
 <!-- AUTO:START -->
 Axe métier **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[Deep learning]] — 47 page(s)
+- [[Machine Learning]] — 47 page(s)
 - [[Machine learning (notions)]] — 43 page(s)
-- [[Machine Learning]] — 30 page(s)
+- [[Deep learning]] — 30 page(s)
 - [[Mathématiques]] — 26 page(s)
 - [[LLM & IA générative]] — 12 page(s)
 - [[Signal & audio]] — 5 page(s)

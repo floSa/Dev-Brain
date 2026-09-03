@@ -2,7 +2,7 @@
 role: notion
 nom: Classification d'images
 alias: [image classification, classification d'image, top-1, top-5, ImageNet]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [image-classification, computer-vision, cnn, deep-learning]
 ---

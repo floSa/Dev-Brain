@@ -2,7 +2,7 @@
 role: notion
 nom: Metric learning & ré-identification
 alias: [metric learning, apprentissage de métrique, ré-identification, re-identification, re-id, person re-id, reconnaissance faciale, face recognition, triplet loss, contrastive loss, ArcFace, CosFace, Siamese, CMC, Rank-1]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [metric-learning, re-identification, representation-learning, computer-vision, deep-learning]
 ---

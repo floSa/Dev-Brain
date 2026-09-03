@@ -2,7 +2,7 @@
 role: notion
 nom: Vision Transformers (ViT)
 alias: [ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [ml-eng, ai-eng]
 tags: [vit, transformers, computer-vision, deep-learning]
 ---

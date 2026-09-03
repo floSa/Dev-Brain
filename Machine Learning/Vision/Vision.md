@@ -36,6 +36,25 @@ tags: [computer-vision, cnn, vit, object-detection, segmentation, image-classifi
 - Entraîner le réseau lui-même → [[Apprentissage profond]] ; l'exposer ensuite en API → [[Serving]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Apprentissage auto-supervisé en vision]] — domaines : data-sci, ml-eng
+- [[Architectures CNN]] — domaines : ml-eng
+- [[Augmentation d'images]] — domaines : data-sci, ml-eng
+- [[Classification d'images]] — domaines : data-sci, ml-eng
+- [[Détection d'objets]] — domaines : data-sci, ml-eng
+- [[Estimation de pose]] — domaines : data-sci, ml-eng
+- [[Metric learning & ré-identification]] — domaines : data-sci, ml-eng
+- [[Modèles de fondation vision]] — domaines : ml-eng, ai-eng
+- [[Métriques vision]] — domaines : data-sci, ml-eng
+- [[OCR]] — domaines : data-sci, ml-eng
+- [[Rendu neuronal 3D & estimation de profondeur]] — domaines : data-sci, ml-eng
+- [[Segment Anything (SAM)]] — domaines : ml-eng, ai-eng
+- [[Segmentation]] — domaines : data-sci, ml-eng
+- [[Suivi d'objets]] — domaines : data-sci, ml-eng
+- [[Transfer learning vision]] — domaines : data-sci, ml-eng
+- [[Vision par ordinateur]] — domaines : data-sci, ml-eng
+- [[Vision Transformers (ViT)]] — domaines : ml-eng, ai-eng
+
 ### Briques
 - [[albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
 - [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.

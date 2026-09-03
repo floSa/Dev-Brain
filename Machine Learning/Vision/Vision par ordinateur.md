@@ -2,7 +2,7 @@
 role: notion
 nom: Vision par ordinateur
 alias: [computer vision, CV, vision]
-categorie: concept/dl
+categorie: ml/vision
 domaines: [data-sci, ml-eng]
 tags: [computer-vision, cnn, deep-learning]
 ---
