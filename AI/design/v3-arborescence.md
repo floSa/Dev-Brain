@@ -3,7 +3,7 @@ galaxie: meta
 nom: v3-arborescence
 type: design-doc
 created: 2026-09-04
-modified: 2026-09-04
+modified: 2026-09-05
 status: en-construction
 tags: [meta, design, v3, migration]
 ---
@@ -33,9 +33,10 @@ tags: [meta, design, v3, migration]
 | `Dev/Rules/` | 5 | `role: rule` — dans « Rules/ » |
 | `MOC/Categories` + `MOC/Types` | 22 | **absorbés** par les pages hub, par `git mv` |
 | `MOC/Themes` | 5 | **déplacés** vers « Métiers/ », `role: hub` |
-| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4** — porte d'entrée R7 de 30 notions |
+| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — `Statistiques.md` n'indexe plus rien depuis le 2026-09-05 |
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
+**37 faites au 2026-09-05** (« Statistiques & inférence », domaine pilote du lot 4).
 
 > **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
 > 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
@@ -106,8 +107,12 @@ SecondBrain/
 │   ├── Recherche/   (6)
 │   ├── Relationnel/   (6)
 │   └── (17 pages au niveau du domaine)
-├── Statistiques & inférence/   (47 pages — 10 au lot 3, les 37 notions au lot 4)
-│   └── (10 pages au niveau du domaine)
+├── Statistiques & inférence/   (47 pages — **lot 4 fait le 2026-09-05**)
+│   ├── Tests & estimation/   (15)
+│   ├── Analyse factorielle/   (12)
+│   ├── Bayésien/   (7)
+│   ├── Probabilités/   (6)
+│   └── (7 pages au niveau du domaine)
 ├── Data & pipelines/   (46 pages)
 │   ├── Scraping/   (10)
 │   ├── Parsing/   (9)
@@ -716,72 +721,56 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[c]` Comparatif - Moteurs de recherche — filtre `database/recherche`
 - `[c]` Comparatif - ORM — filtre `database/orm`
 
-### Statistiques & inférence  ·  47 pages  ·  **migré le 2026-09-04**
+### Statistiques & inférence  ·  47 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
 - [x] hub écrit — hub de domaine, issu de `MOC/Categories/` par `git mv`, corps réécrit
-  au gabarit §9
-- [x] sous-dossiers créés — **aucun**. Les 4 sous-domaines `stats/*` plafonnent à 4 pages
-  (`stats/inference`), sous le seuil de 5 : les 10 briques restent au niveau du domaine
-- [ ] notions recatégorisées — **lot 4** : les 37 notions ci-dessous portent `concept/stats`
-  et sont encore sous `Wiki/Concepts/`. Le hub les cite en clair dans son corps
+  au gabarit §9, puis complété au lot 4 : il dit désormais ce que chacun des quatre
+  sous-dossiers range, et ce qui reste au niveau du domaine
+- [x] sous-dossiers créés — **quatre, au lot 4**. Au lot 3 il n'y en avait aucun : les
+  4 sous-domaines `stats/*` plafonnaient à 4 pages, sous le seuil. Les 37 notions les
+  ont fait franchir le seuil, et 9 des 10 briques ont suivi la promotion de leur
+  sous-domaine — c'est la conséquence normale de la règle 2, pas un effet de bord
+- [x] notions recatégorisées — **lot 4, 2026-09-05** : les 37 sont dans l'arbre, plus
+  aucune ne porte `concept/stats`, et la valeur est retirée du vocabulaire
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Au niveau du domaine** — 10 pages
+**Tests & estimation/** — `stats/inference` — 15 pages
 
-- `[b]` ArviZ — paquet, Python
-- `[b]` CausalImpact — paquet, Python
-- `[b]` Fanalysis — paquet, Python
-- `[b]` Prince — paquet, Python
-- `[b]` PyMC — paquet, Python
-- `[b]` Stan — paquet, C++ / Python
-- `[b]` lifelines — paquet, Python
-- `[b]` pingouin — paquet, Python
-- `[b]` scipy.stats — paquet, Python
-- `[b]` statsmodels — paquet, Python
+- `[n]` Analyse de puissance · `[n]` Analyse de survie · `[n]` Bootstrap
+- `[n]` Correction des tests multiples · `[n]` Intervalles de confiance
+- `[n]` MANOVA et tests multivariés · `[n]` Maximum de vraisemblance
+- `[n]` Test du khi-deux · `[n]` Test t et ANOVA · `[n]` Tests d'hypothèse
+- `[n]` Tests non paramétriques
+- `[b]` lifelines · `[b]` pingouin · `[b]` scipy.stats · `[b]` statsmodels
+
+**Analyse factorielle/** — `stats/exploratoire` — 12 pages
+
+- `[n]` CA · `[n]` FAMD · `[n]` GPA · `[n]` HCPC · `[n]` MCA · `[n]` MFA
+- `[n]` Manifold learning · `[n]` PCA · `[n]` PGA · `[n]` Réduction de dimension
+- `[b]` Fanalysis · `[b]` Prince
+
+**Bayésien/** — `stats/bayesien` — 7 pages
+
+- `[n]` A priori conjugués · `[n]` Estimation MAP · `[n]` Inférence bayésienne · `[n]` MCMC
+- `[b]` ArviZ · `[b]` PyMC · `[b]` Stan
+
+**Probabilités/** — `stats/probabilite` — 6 pages — **valeur nouvelle**
+
+- `[n]` Chaînes de Markov · `[n]` Inégalités de concentration
+- `[n]` Loi des grands nombres · `[n]` Mouvement brownien
+- `[n]` Processus de Poisson · `[n]` Théorème central limite
+
+**Au niveau du domaine** — 7 pages
+
+- `stats/experimentation` — **valeur nouvelle**, 4 pages, sous le seuil :
+  `[n]` A-B testing · `[n]` CUPED · `[n]` Multi-armed bandits · `[n]` Sequential testing
+- `stats/causal` — 3 pages, sous le seuil :
+  `[n]` Diff-in-Diff · `[n]` Inférence causale · `[b]` CausalImpact
 
 **Comparatifs** — 1
 
-- `[c]` Comparatif - Outils stats — filtre `stats/`
-
-**À arbitrer — 37 notions sans sous-domaine**
-
-- [ ] `[n]` A priori conjugués
-- [ ] `[n]` A-B testing
-- [ ] `[n]` Analyse de puissance
-- [ ] `[n]` Analyse de survie
-- [ ] `[n]` Bootstrap
-- [ ] `[n]` CA
-- [ ] `[n]` CUPED
-- [ ] `[n]` Chaînes de Markov
-- [ ] `[n]` Correction des tests multiples
-- [ ] `[n]` Diff-in-Diff
-- [ ] `[n]` Estimation MAP
-- [ ] `[n]` FAMD
-- [ ] `[n]` GPA
-- [ ] `[n]` HCPC
-- [ ] `[n]` Inférence bayésienne
-- [ ] `[n]` Inférence causale
-- [ ] `[n]` Intervalles de confiance
-- [ ] `[n]` Inégalités de concentration
-- [ ] `[n]` Loi des grands nombres
-- [ ] `[n]` MANOVA et tests multivariés
-- [ ] `[n]` MCA
-- [ ] `[n]` MCMC
-- [ ] `[n]` MFA
-- [ ] `[n]` Manifold learning
-- [ ] `[n]` Maximum de vraisemblance
-- [ ] `[n]` Mouvement brownien
-- [ ] `[n]` Multi-armed bandits
-- [ ] `[n]` PCA
-- [ ] `[n]` PGA
-- [ ] `[n]` Processus de Poisson
-- [ ] `[n]` Réduction de dimension
-- [ ] `[n]` Sequential testing
-- [ ] `[n]` Test du khi-deux
-- [ ] `[n]` Test t et ANOVA
-- [ ] `[n]` Tests d'hypothèse
-- [ ] `[n]` Tests non paramétriques
-- [ ] `[n]` Théorème central limite
+- `[c]` Comparatif - Outils stats — filtre `stats/`, donc le domaine entier : il reste au
+  niveau du domaine et sa vue est inchangée par la promotion des quatre sous-dossiers
 
 ### Data & pipelines  ·  46 pages  ·  **migré le 2026-09-04**
 
