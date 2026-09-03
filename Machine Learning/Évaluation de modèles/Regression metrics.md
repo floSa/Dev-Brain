@@ -2,7 +2,7 @@
 role: notion
 nom: Regression metrics
 alias: [Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, regression, supervised]
 ---

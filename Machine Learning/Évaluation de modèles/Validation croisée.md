@@ -2,7 +2,7 @@
 role: notion
 nom: Validation croisée
 alias: [Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, resampling, supervised]
 ---

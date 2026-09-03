@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 715,
+  "count": 716,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -251,7 +251,8 @@
       "prompt-caching"
     ],
     "calibration": [
-      "Calibration"
+      "Calibration",
+      "Évaluation de modèles"
     ],
     "causal-inference": [
       "CausalImpact",
@@ -299,7 +300,8 @@
       "Socle",
       "Types de données et choix de modèle",
       "imbalanced-learn",
-      "k-NN"
+      "k-NN",
+      "Évaluation de modèles"
     ],
     "cli": [
       "Outils de développement",
@@ -1688,7 +1690,8 @@
       "Walk-forward CV",
       "evaluate",
       "seqeval",
-      "Évaluation"
+      "Évaluation",
+      "Évaluation de modèles"
     ],
     "model-hub": [
       "HuggingFace",
@@ -2190,7 +2193,8 @@
       "Systèmes de recommandation",
       "Vespa",
       "bm25s",
-      "rank-bm25"
+      "rank-bm25",
+      "Évaluation de modèles"
     ],
     "re-identification": [
       "Metric learning & ré-identification"
@@ -2229,7 +2233,8 @@
       "Socle",
       "Types de données et choix de modèle",
       "k-NN",
-      "lifelines"
+      "lifelines",
+      "Évaluation de modèles"
     ],
     "regret-minimization": [
       "Counterfactual Regret Minimization"
@@ -2332,7 +2337,8 @@
       "Bootstrap",
       "Tests & estimation",
       "Validation croisée",
-      "Walk-forward CV"
+      "Walk-forward CV",
+      "Évaluation de modèles"
     ],
     "retrieval": [
       "Advanced RAG",
@@ -16771,29 +16777,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/evaluate.md",
-      "nom": "evaluate",
-      "alias": [
-        "hf evaluate",
-        "huggingface evaluate",
-        "🤗 evaluate"
-      ],
-      "role": "brique",
-      "categorie": "ml/eval",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre.",
-      "tags": [
-        "model-evaluation",
-        "nlp",
-        "benchmark"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/hdbscan.md",
       "nom": "hdbscan",
       "alias": [
@@ -16842,28 +16825,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/seqeval.md",
-      "nom": "seqeval",
-      "alias": [
-        "seq eval"
-      ],
-      "role": "brique",
-      "categorie": "ml/eval",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger.",
-      "tags": [
-        "ner",
-        "sequence-labeling",
-        "model-evaluation",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/umap-learn.md",
       "nom": "umap-learn",
       "alias": [
@@ -16887,6 +16848,334 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Calibration.md",
+      "nom": "Calibration",
+      "alias": [
+        "Calibration des probabilités",
+        "fiabilité",
+        "diagramme de fiabilité",
+        "reliability diagram",
+        "Platt scaling",
+        "régression isotonique",
+        "temperature scaling",
+        "ECE",
+        "Expected Calibration Error"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "calibration",
+        "classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Classification metrics.md",
+      "nom": "Classification metrics",
+      "alias": [
+        "Métriques de classification",
+        "exactitude",
+        "accuracy",
+        "précision",
+        "rappel",
+        "F1",
+        "F1-score",
+        "log-loss",
+        "matrice de confusion",
+        "sensibilité",
+        "spécificité",
+        "taux de vrais négatifs",
+        "VPP",
+        "VPN",
+        "valeur prédictive positive",
+        "valeur prédictive négative",
+        "prévalence",
+        "rapport de vraisemblance",
+        "MCC",
+        "Brier"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "classification",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Compromis biais-variance.md",
+      "nom": "Compromis biais-variance",
+      "alias": [
+        "Bias-variance tradeoff",
+        "Biais-variance",
+        "Sous-apprentissage",
+        "Surapprentissage",
+        "Underfitting",
+        "Overfitting"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Data leakage.md",
+      "nom": "Data leakage",
+      "alias": [
+        "fuite de données",
+        "fuite d'information",
+        "target leakage"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "supervised",
+        "data-leakage"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/ROC-AUC & courbe PR.md",
+      "nom": "ROC-AUC / courbe PR",
+      "alias": [
+        "ROC",
+        "AUC",
+        "courbe ROC",
+        "courbe PR",
+        "precision-recall",
+        "AUC-ROC",
+        "AUC-PR",
+        "ROC-AUC"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "classification",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Ranking metrics.md",
+      "nom": "Ranking metrics",
+      "alias": [
+        "Métriques de ranking",
+        "métriques d'ordonnancement",
+        "NDCG",
+        "DCG",
+        "MAP",
+        "MRR",
+        "Precision@k",
+        "Recall@k",
+        "Hit Rate",
+        "learning-to-rank",
+        "métriques de recherche d'information"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "ranking"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Regression metrics.md",
+      "nom": "Regression metrics",
+      "alias": [
+        "Métriques de régression",
+        "MSE",
+        "RMSE",
+        "MAE",
+        "R2",
+        "R²",
+        "R² ajusté",
+        "coefficient de détermination",
+        "erreur quadratique moyenne",
+        "Huber",
+        "régression quantile"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "regression",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Validation croisée.md",
+      "nom": "Validation croisée",
+      "alias": [
+        "Cross-validation",
+        "K-Fold",
+        "Validation croisée stratifiée",
+        "TimeSeriesSplit",
+        "CV"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "resampling",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/evaluate.md",
+      "nom": "evaluate",
+      "alias": [
+        "hf evaluate",
+        "huggingface evaluate",
+        "🤗 evaluate"
+      ],
+      "role": "brique",
+      "categorie": "ml/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre.",
+      "tags": [
+        "model-evaluation",
+        "nlp",
+        "benchmark"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/seqeval.md",
+      "nom": "seqeval",
+      "alias": [
+        "seq eval"
+      ],
+      "role": "brique",
+      "categorie": "ml/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger.",
+      "tags": [
+        "ner",
+        "sequence-labeling",
+        "model-evaluation",
+        "nlp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Évaluation de modèles.md",
+      "nom": "Évaluation de modèles",
+      "alias": [
+        "évaluation ML",
+        "mesure de performance"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Obtenir un chiffre honnête, puis choisir celui qui décrit vraiment le coût des erreurs — le protocole avant la métrique.",
+      "tags": [
+        "model-evaluation",
+        "classification",
+        "regression",
+        "ranking",
+        "calibration",
+        "resampling"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Mathématiques/Algèbre linéaire/Algèbre linéaire.md",
@@ -21128,38 +21417,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Calibration.md",
-      "nom": "Calibration",
-      "alias": [
-        "Calibration des probabilités",
-        "fiabilité",
-        "diagramme de fiabilité",
-        "reliability diagram",
-        "Platt scaling",
-        "régression isotonique",
-        "temperature scaling",
-        "ECE",
-        "Expected Calibration Error"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "calibration",
-        "classification"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Classification hiérarchique (CAH).md",
       "nom": "Classification hiérarchique (CAH)",
       "alias": [
@@ -21181,49 +21438,6 @@
       "tags": [
         "clustering",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification metrics.md",
-      "nom": "Classification metrics",
-      "alias": [
-        "Métriques de classification",
-        "exactitude",
-        "accuracy",
-        "précision",
-        "rappel",
-        "F1",
-        "F1-score",
-        "log-loss",
-        "matrice de confusion",
-        "sensibilité",
-        "spécificité",
-        "taux de vrais négatifs",
-        "VPP",
-        "VPN",
-        "valeur prédictive positive",
-        "valeur prédictive négative",
-        "prévalence",
-        "rapport de vraisemblance",
-        "MCC",
-        "Brier"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "classification",
-        "supervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -21312,34 +21526,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Compromis biais-variance.md",
-      "nom": "Compromis biais-variance",
-      "alias": [
-        "Bias-variance tradeoff",
-        "Biais-variance",
-        "Sous-apprentissage",
-        "Surapprentissage",
-        "Underfitting",
-        "Overfitting"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/DBSCAN.md",
       "nom": "DBSCAN",
       "alias": [
@@ -21384,32 +21570,6 @@
         "data-drift",
         "concept-drift",
         "model-monitoring"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Data leakage.md",
-      "nom": "Data leakage",
-      "alias": [
-        "fuite de données",
-        "fuite d'information",
-        "target leakage"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "supervised",
-        "data-leakage"
       ],
       "alternatives": null,
       "complements": null,
@@ -21856,132 +22016,6 @@
         "hyperparameter-tuning",
         "model-evaluation",
         "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/ROC-AUC & courbe PR.md",
-      "nom": "ROC-AUC / courbe PR",
-      "alias": [
-        "ROC",
-        "AUC",
-        "courbe ROC",
-        "courbe PR",
-        "precision-recall",
-        "AUC-ROC",
-        "AUC-PR",
-        "ROC-AUC"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "classification",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Ranking metrics.md",
-      "nom": "Ranking metrics",
-      "alias": [
-        "Métriques de ranking",
-        "métriques d'ordonnancement",
-        "NDCG",
-        "DCG",
-        "MAP",
-        "MRR",
-        "Precision@k",
-        "Recall@k",
-        "Hit Rate",
-        "learning-to-rank",
-        "métriques de recherche d'information"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "ranking"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Regression metrics.md",
-      "nom": "Regression metrics",
-      "alias": [
-        "Métriques de régression",
-        "MSE",
-        "RMSE",
-        "MAE",
-        "R2",
-        "R²",
-        "R² ajusté",
-        "coefficient de détermination",
-        "erreur quadratique moyenne",
-        "Huber",
-        "régression quantile"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "regression",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Validation croisée.md",
-      "nom": "Validation croisée",
-      "alias": [
-        "Cross-validation",
-        "K-Fold",
-        "Validation croisée stratifiée",
-        "TimeSeriesSplit",
-        "CV"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "resampling",
-        "supervised"
       ],
       "alternatives": null,
       "complements": null,

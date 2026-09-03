@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 715 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 716 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -536,15 +536,11 @@
 
 ### concept/ml
 - **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
-- **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
 - **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
-- **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier
 - **Clustering** — domaines : data-sci · alias : Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement
 - **Clustering evaluation** — domaines : data-sci · alias : Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV
 - **Clustering hiérarchique par densité** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
-- **Compromis biais-variance** — domaines : data-sci, ml-eng · alias : Bias-variance tradeoff, Biais-variance, Sous-apprentissage, Surapprentissage, Underfitting, Overfitting
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
-- **Data leakage** — domaines : data-sci, ml-eng · alias : fuite de données, fuite d'information, target leakage
 - **DBSCAN** — domaines : data-sci · alias : Density-Based Spatial Clustering, Density-Based Spatial Clustering of Applications with Noise
 - **Déploiement de modèles** — domaines : mlops · alias : model deployment, déploiement de modèle, canary, blue-green, shadow deployment, progressive delivery, déploiement progressif, rollout
 - **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
@@ -564,11 +560,7 @@
 - **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
-- **Ranking metrics** — domaines : data-sci, ml-eng · alias : Métriques de ranking, métriques d'ordonnancement, NDCG, DCG, MAP, MRR, Precision@k, Recall@k, Hit Rate, learning-to-rank, métriques de recherche d'information
-- **Regression metrics** — domaines : data-sci, ml-eng · alias : Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile
-- **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
-- **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
 ### data/fiabilite
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
@@ -745,6 +737,16 @@
 - **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, Mamba-2, Mamba-3, S4, S5, selective state space, linear-time sequence model, MIMO, discrétisation trapézoïdale
 - **Transformer architectures** — domaines : ml-eng, ai-eng · alias : Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only
 - **Video generation** — domaines : ml-eng, ai-eng · alias : text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video
+
+### ml/eval
+- **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
+- **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier
+- **Compromis biais-variance** — domaines : data-sci, ml-eng · alias : Bias-variance tradeoff, Biais-variance, Sous-apprentissage, Surapprentissage, Underfitting, Overfitting
+- **Data leakage** — domaines : data-sci, ml-eng · alias : fuite de données, fuite d'information, target leakage
+- **Ranking metrics** — domaines : data-sci, ml-eng · alias : Métriques de ranking, métriques d'ordonnancement, NDCG, DCG, MAP, MRR, Precision@k, Recall@k, Hit Rate, learning-to-rank, métriques de recherche d'information
+- **Regression metrics** — domaines : data-sci, ml-eng · alias : Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile
+- **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
+- **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
 ### ml/interpretabilite
 - **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods
@@ -1007,3 +1009,4 @@
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.
 - **Web & API** — Exposer un service par HTTP et rendre des pages — le socle par lequel un modèle ou un pipeline devient utilisable.
 - **Évaluation** — Mesurer ce que vaut une application LLM sur un jeu de tests — avant la production, et de façon rejouable.
+- **Évaluation de modèles** — Obtenir un chiffre honnête, puis choisir celui qui décrit vraiment le coût des erreurs — le protocole avant la métrique.

@@ -2,7 +2,7 @@
 role: notion
 nom: Ranking metrics
 alias: [Métriques de ranking, métriques d'ordonnancement, NDCG, DCG, MAP, MRR, Precision@k, Recall@k, Hit Rate, learning-to-rank, métriques de recherche d'information]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, ranking]
 ---

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 715 pages actives.
+> 716 pages actives.
 
 ## Par page
 
@@ -363,7 +363,7 @@
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
 - liens sortants : [[Classification metrics]], [[DeepEval]], [[HuggingFace]], [[MLflow]], [[Ragas]], [[Ranking metrics]], [[Scikit-Learn]], [[Weights & Biases]], [[datasets]], [[seqeval]]
-- liens entrants : [[HuggingFace]], [[Machine Learning]], [[datasets]], [[seqeval]]
+- liens entrants : [[HuggingFace]], [[Machine Learning]], [[datasets]], [[seqeval]], [[Évaluation de modèles]]
 
 ### Evidently  ·  brique
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
@@ -1368,7 +1368,7 @@
 ### seqeval  ·  brique
 - tags : `ner`, `sequence-labeling`, `model-evaluation`, `nlp`
 - liens sortants : [[Classification metrics]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[Scikit-Learn]], [[evaluate]]
-- liens entrants : [[Machine Learning]], [[NER et étiquetage de séquence]], [[NLP]], [[evaluate]]
+- liens entrants : [[Machine Learning]], [[NER et étiquetage de séquence]], [[NLP]], [[evaluate]], [[Évaluation de modèles]]
 
 ### SetFit  ·  brique
 - tags : `text-classification`, `nlp`, `fine-tuning`
@@ -1818,11 +1818,11 @@
 ### LLM & IA générative  ·  hub
 - tags : `llm`, `rag`, `agents`, `llm-eval`, `llm-observability`, `mcp`, `structured-output`, `llm-gateway`
 - liens sortants : [[AI security]], [[Advanced RAG]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Assistants]], [[Chain-of-Thought]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[Context engineering]], [[DSPy]], [[Decoding strategies]], [[Dify]], [[Fine-tuning]], [[Flowise]], [[GraphRAG]], [[Guardrails]], [[Guidance]], [[Headroom]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[LLM caching]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[Langflow]], [[Late-interaction retrieval]], [[Letta]], [[LiteLLM]], [[Machine Learning]], [[Modèles de langage]], [[Observabilité des LLM]], [[OpenViking]], [[Outlines]], [[Passerelles]], [[Perplexity]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[Reasoning models]], [[Reliability patterns]], [[Reranking]], [[Routing and cascading]], [[Runtimes]], [[SFT]], [[Sandboxing de code généré]], [[Scaling laws]], [[Small Language Models]], [[Sortie typée]], [[Structured outputs]], [[Synthetic data generation]], [[Systèmes IA]], [[Sécurité]], [[Text-to-SQL]], [[Tokenization]], [[a2a-protocol]], [[fastmcp]], [[llmfit]], [[mcp-protocol]], [[mcpjam]], [[prompt-caching]], [[tool-use]], [[Évaluation]]
-- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]], [[Évaluation de modèles]]
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
 - liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Engineering]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Observabilité des LLM]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
@@ -1952,7 +1952,7 @@
 
 ### Socle  ·  hub
 - tags : `supervised`, `classification`, `regression`, `linear-model`, `ml-pipeline`
-- liens sortants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]]
+- liens sortants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]], [[Évaluation de modèles]]
 - liens entrants : [[Machine Learning]], [[Tabulaire]]
 
 ### Sortie typée  ·  hub
@@ -1973,7 +1973,7 @@
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Evidently]], [[LLM & IA générative]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]], [[Serving]], [[TensorBoard]], [[Weights & Biases]]
-- liens entrants : [[MLOps]], [[Machine Learning]], [[Serving]], [[Séries temporelles]]
+- liens entrants : [[MLOps]], [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Évaluation de modèles]]
 
 ### Systèmes IA  ·  hub
 - tags : `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
@@ -1992,8 +1992,8 @@
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
-- liens sortants : [[AdaBoost]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Mécanismes de données manquantes]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Socle]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]]
-- liens entrants : [[Data Science]], [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Socle]], [[Séries temporelles]]
+- liens sortants : [[AdaBoost]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Mécanismes de données manquantes]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Socle]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]], [[Évaluation de modèles]]
+- liens entrants : [[Data Science]], [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Socle]], [[Séries temporelles]], [[Évaluation de modèles]]
 
 ### Tests & estimation  ·  hub
 - tags : `statistical-inference`, `hypothesis-testing`, `confidence-interval`, `p-value`, `non-parametric`, `parametric-test`, `effect-size`, `maximum-likelihood`, `resampling`, `survival-analysis`
@@ -2008,7 +2008,7 @@
 ### Théorie de l'apprentissage  ·  hub
 - tags : `learning-theory`, `pac-learning`, `vc-dimension`, `rademacher-complexity`, `generalization-bound`, `no-free-lunch`
 - liens sortants : [[Classification metrics]], [[Compromis biais-variance]], [[Generalization bounds]], [[Machine Learning]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]], [[VC dimension]], [[Validation croisée]]
-- liens entrants : [[Mathématiques]]
+- liens entrants : [[Mathématiques]], [[Évaluation de modèles]]
 
 ### Théorie de l'information  ·  hub
 - tags : `information-theory`, `entropy`, `cross-entropy`, `kl-divergence`, `mutual-information`, `optimal-transport`
@@ -2043,7 +2043,12 @@
 ### Évaluation  ·  hub
 - tags : `llm-eval`, `benchmark`, `rag-eval`, `llm-as-judge`, `model-evaluation`
 - liens sortants : [[Agent evaluation]], [[Code and math benchmarks]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Machine Learning]], [[Observabilité des LLM]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reasoning models]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[LLM & IA générative]], [[Modèles de langage]], [[Observabilité des LLM]], [[RAG & retrieval]]
+- liens entrants : [[LLM & IA générative]], [[Modèles de langage]], [[Observabilité des LLM]], [[RAG & retrieval]], [[Évaluation de modèles]]
+
+### Évaluation de modèles  ·  hub
+- tags : `model-evaluation`, `classification`, `regression`, `ranking`, `calibration`, `resampling`
+- liens sortants : [[Calibration]], [[Classification metrics]], [[Compromis biais-variance]], [[Data leakage]], [[Imbalanced classification]], [[LLM & IA générative]], [[Optimisation d'hyperparamètres]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Suivi d'expériences]], [[Tabulaire]], [[Théorie de l'apprentissage]], [[Validation croisée]], [[Walk-forward CV]], [[evaluate]], [[seqeval]], [[Évaluation]]
+- liens entrants : [[Machine Learning]], [[Socle]], [[Tabulaire]]
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
@@ -2243,7 +2248,7 @@
 ### Calibration  ·  notion
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Imbalanced classification]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[ROC-AUC / courbe PR]], [[SVM]], [[Tabulaire]], [[imbalanced-learn]]
+- liens entrants : [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Imbalanced classification]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[ROC-AUC / courbe PR]], [[SVM]], [[Tabulaire]], [[imbalanced-learn]], [[Évaluation de modèles]]
 
 ### Chain-of-Thought  ·  notion
 - tags : `prompting`, `reasoning`, `llm`
@@ -2293,7 +2298,7 @@
 ### Classification metrics  ·  notion
 - tags : `model-evaluation`, `classification`, `supervised`
 - liens sortants : [[Calibration]], [[Classification]], [[Cross-entropy]], [[Inférence bayésienne]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Calibration]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Imbalanced classification]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Régression et classification multi-sorties]], [[Théorie de l'apprentissage]], [[Validation croisée]], [[Vision par ordinateur]], [[evaluate]], [[seqeval]]
+- liens entrants : [[Calibration]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Imbalanced classification]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Régression et classification multi-sorties]], [[Théorie de l'apprentissage]], [[Validation croisée]], [[Vision par ordinateur]], [[evaluate]], [[seqeval]], [[Évaluation de modèles]]
 
 ### Clustering  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -2323,7 +2328,7 @@
 ### Compromis biais-variance  ·  notion
 - tags : `model-evaluation`, `supervised`
 - liens sortants : [[Apprentissage supervisé]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Ingénierie des caractéristiques]], [[Optimisation d'hyperparamètres]], [[Random Forest]], [[Régularisation]], [[Scikit-Learn]], [[VC dimension]], [[Validation croisée]], [[k-NN]]
-- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[Ensembling]], [[Extra Trees]], [[Generalization bounds]], [[Loss landscape and saddle points]], [[Machine Learning]], [[No Free Lunch theorem]], [[Optimisation d'hyperparamètres]], [[PAC learning]], [[Rademacher complexity]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Validation croisée]], [[k-NN]]
+- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage supervisé]], [[Augmentation d'images]], [[Ensembling]], [[Extra Trees]], [[Generalization bounds]], [[Loss landscape and saddle points]], [[Machine Learning]], [[No Free Lunch theorem]], [[Optimisation d'hyperparamètres]], [[PAC learning]], [[Rademacher complexity]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Validation croisée]], [[k-NN]], [[Évaluation de modèles]]
 
 ### Constrained decoding  ·  notion
 - tags : `decoding`, `structured-output`, `tokenization`
@@ -2378,7 +2383,7 @@
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
 - liens sortants : [[Encodage des variables catégorielles]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[imbalanced-learn]], [[ydata-profiling]]
+- liens entrants : [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[imbalanced-learn]], [[ydata-profiling]], [[Évaluation de modèles]]
 
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -2638,7 +2643,7 @@
 ### Imbalanced classification  ·  notion
 - tags : `classification`, `supervised`, `class-imbalance`
 - liens sortants : [[Calibration]], [[Classification]], [[Classification metrics]], [[Data leakage]], [[Isolation Forest]], [[LightGBM]], [[ROC-AUC / courbe PR]], [[Validation croisée]], [[XGBoost]], [[imbalanced-learn]], [[k-NN]]
-- liens entrants : [[Augmentation d'images]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Data leakage]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Machine Learning]], [[Random Forest]], [[Régression et classification multi-sorties]], [[SetFit]], [[Tabulaire]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[imbalanced-learn]], [[k-NN]]
+- liens entrants : [[Augmentation d'images]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Data leakage]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Machine Learning]], [[Random Forest]], [[Régression et classification multi-sorties]], [[SetFit]], [[Tabulaire]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[imbalanced-learn]], [[k-NN]], [[Évaluation de modèles]]
 
 ### Imitation learning  ·  notion
 - tags : `reinforcement-learning`, `imitation-learning`, `supervised`
@@ -3003,7 +3008,7 @@
 ### Optimisation d'hyperparamètres  ·  notion
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
 - liens sortants : [[Compromis biais-variance]], [[Gaussian Process]], [[Hyperopt]], [[Maximal Update Parametrization]], [[Optuna]], [[Ray Tune]], [[Régularisation]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Learning rate schedules]], [[Machine Learning]], [[Maximal Update Parametrization]], [[Optimisation]], [[Optuna]], [[Ray Tune]], [[SVM]], [[Scikit-Learn]], [[Suivi d'expériences]], [[Types de données et choix de modèle]], [[Validation croisée]]
+- liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Learning rate schedules]], [[Machine Learning]], [[Maximal Update Parametrization]], [[Optimisation]], [[Optuna]], [[Ray Tune]], [[SVM]], [[Scikit-Learn]], [[Suivi d'expériences]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Optimisation sous contrainte  ·  notion
 - tags : `optimization`, `constrained-optimization`, `convexity`
@@ -3148,7 +3153,7 @@
 ### Ranking metrics  ·  notion
 - tags : `model-evaluation`, `ranking`
 - liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[BM25]], [[Classification metrics]], [[Machine Learning]], [[ROC-AUC / courbe PR]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[Systèmes de recommandation]], [[bm25s]], [[evaluate]]
+- liens entrants : [[BM25]], [[Classification metrics]], [[Machine Learning]], [[ROC-AUC / courbe PR]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[Systèmes de recommandation]], [[bm25s]], [[evaluate]], [[Évaluation de modèles]]
 
 ### Reasoning models  ·  notion
 - tags : `reasoning`, `llm`, `alignment`
@@ -3163,7 +3168,7 @@
 ### Regression metrics  ·  notion
 - tags : `model-evaluation`, `regression`, `supervised`
 - liens sortants : [[Compromis biais-variance]], [[Forecasting metrics]], [[GLM]], [[Régression]], [[Régression linéaire]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Forecasting metrics]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression quantile]], [[Validation croisée]]
+- liens entrants : [[Forecasting metrics]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression quantile]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Reinforcement learning  ·  notion
 - tags : `reinforcement-learning`, `markov-decision-process`
@@ -3208,7 +3213,7 @@
 ### ROC-AUC / courbe PR  ·  notion
 - tags : `model-evaluation`, `classification`, `supervised`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Ranking metrics]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Calibration]], [[Classification]], [[Classification metrics]], [[Imbalanced classification]], [[Machine Learning]], [[Ranking metrics]], [[Scikit-Learn]], [[Validation croisée]]
+- liens entrants : [[Calibration]], [[Classification]], [[Classification metrics]], [[Imbalanced classification]], [[Machine Learning]], [[Ranking metrics]], [[Scikit-Learn]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Routing and cascading  ·  notion
 - tags : `routing`, `llm`, `rag`
@@ -3473,7 +3478,7 @@
 ### Validation croisée  ·  notion
 - tags : `model-evaluation`, `resampling`, `supervised`
 - liens sortants : [[Apprentissage supervisé]], [[Bootstrap]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[ROC-AUC / courbe PR]], [[Regression metrics]], [[Scikit-Learn]], [[Walk-forward CV]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]]
+- liens entrants : [[Analyse discriminante]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]], [[Évaluation de modèles]]
 
 ### Value functions  ·  notion
 - tags : `reinforcement-learning`, `value-function`
@@ -3518,7 +3523,7 @@
 ### Walk-forward CV  ·  notion
 - tags : `timeseries`, `model-evaluation`, `resampling`
 - liens sortants : [[Data leakage]], [[Forecasting framing]], [[Forecasting metrics]], [[Scikit-Learn]], [[Validation croisée]], [[darts]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Régression]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]]
+- liens entrants : [[Chronos]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Régression]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Wasserstein distance  ·  notion
 - tags : `information-theory`, `optimal-transport`
@@ -3604,13 +3609,13 @@
 - `boosting` : AdaBoost, Boosting, CatBoost, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
 - `caching` : Headroom, LLM caching, Passerelles, prompt-caching  — pas de page concept dédiée
-- `calibration` : Calibration
+- `calibration` : Calibration, Évaluation de modèles
 - `causal-inference` : CausalImpact, Diff-in-Diff, Inférence causale, Statistiques & inférence
 - `cdc` : Change Data Capture (CDC)
 - `chunking` : Chunking strategies, RAG & retrieval
 - `ci-cd` : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
-- `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN
+- `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
 - `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
 - `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
@@ -3753,7 +3758,7 @@
 - `ml-pipeline` : Flyte, Machine Learning, Metaflow, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantization  — pas de page concept dédiée
-- `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation  — pas de page concept dédiée
+- `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles  — pas de page concept dédiée
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Data drift, Evidently, Machine Learning, Monitoring de modèle en production
 - `model-registry` : ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
@@ -3817,12 +3822,12 @@
 - `rademacher-complexity` : Rademacher complexity, Théorie de l'apprentissage
 - `rag` : Advanced RAG, Bases de données vectorielles, Chroma, Chunking strategies, DB-GPT, Dify, Docling, Flowise, GraphRAG, Haystack, Hybrid retrieval, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, pgvector, txtai
 - `rag-eval` : RAG benchmarks, RAG eval, Ragas, Évaluation
-- `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25  — pas de page concept dédiée
+- `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
 - `re-identification` : Metric learning & ré-identification
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Modèles de langage, Reasoning models  — pas de page concept dédiée
 - `recommender-systems` : Systèmes de recommandation
 - `recon` : Sécurité, Web-Check  — pas de page concept dédiée
-- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines
+- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
 - `regularization` : Augmentation d'images, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
@@ -3832,7 +3837,7 @@
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
 - `reranking` : Late-interaction retrieval, RAG & retrieval, RAGatouille, Reranking, sentence-transformers
-- `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV
+- `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers  — pas de page concept dédiée
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
@@ -4007,7 +4012,7 @@
 - `ml-demo` (porté par : Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
 - `ml-pipeline` (porté par : Flyte, Machine Learning, Metaflow, Socle, Suivi d'expériences, ZenML)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
-- `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation)
+- `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles)
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : BentoML, Déploiement de modèles, KServe, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, vLLM)
 - `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
@@ -4042,7 +4047,7 @@
 - `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
-- `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25)
+- `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles)
 - `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Modèles de langage, Reasoning models)
 - `recon` (porté par : Sécurité, Web-Check)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)

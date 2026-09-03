@@ -2,7 +2,7 @@
 role: notion
 nom: Calibration
 alias: [Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, calibration, classification]
 ---

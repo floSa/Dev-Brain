@@ -2,7 +2,7 @@
 role: notion
 nom: Compromis biais-variance
 alias: [Bias-variance tradeoff, Biais-variance, Sous-apprentissage, Surapprentissage, Underfitting, Overfitting]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, supervised]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Data leakage
 alias: [fuite de données, fuite d'information, target leakage]
-categorie: concept/ml
+categorie: ml/eval
 domaines: [data-sci, ml-eng]
 tags: [model-evaluation, supervised, data-leakage]
 ---
