@@ -2,7 +2,7 @@
 role: notion
 nom: STFT et spectrogramme
 alias: [STFT, spectrogramme, short-time Fourier transform, mel-spectrogramme, MFCC, mel spectrogram]
-categorie: concept/signal
+categorie: signal/traitement
 domaines: [data-sci, ml-eng]
 tags: [signal-processing, spectrogram, fourier]
 ---

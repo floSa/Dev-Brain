@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 706 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 707 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -756,13 +756,6 @@
 - **Théorie des jeux** — domaines : ml-eng, ai-eng · alias : game theory, théorie des jeux, équilibre de Nash, Nash equilibrium, jeu à somme nulle, zero-sum, information imparfaite, minimax
 - **Value functions** — domaines : ml-eng · alias : fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action
 
-### concept/signal
-- **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
-- **Ondelettes** — domaines : data-sci, ml-eng · alias : wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme
-- **STFT et spectrogramme** — domaines : data-sci, ml-eng · alias : STFT, spectrogramme, short-time Fourier transform, mel-spectrogramme, MFCC, mel spectrogram
-- **Traitement du signal** — domaines : data-sci, ml-eng · alias : TdS, signal processing, DSP, traitement numérique du signal
-- **Transformée de Fourier** — domaines : data-sci, ml-eng · alias : FFT, DFT, transformée de Fourier discrète, transformée de Fourier rapide, analyse spectrale, domaine fréquentiel
-
 ### concept/ts
 - **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
 - **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
@@ -829,6 +822,13 @@
 - **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
 - **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
 - **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
+
+### signal/traitement
+- **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
+- **Ondelettes** — domaines : data-sci, ml-eng · alias : wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme
+- **STFT et spectrogramme** — domaines : data-sci, ml-eng · alias : STFT, spectrogramme, short-time Fourier transform, mel-spectrogramme, MFCC, mel spectrogram
+- **Traitement du signal** — domaines : data-sci, ml-eng · alias : TdS, signal processing, DSP, traitement numérique du signal
+- **Transformée de Fourier** — domaines : data-sci, ml-eng · alias : FFT, DFT, transformée de Fourier discrète, transformée de Fourier rapide, analyse spectrale, domaine fréquentiel
 
 ### stats/bayesien
 - **A priori conjugués** — domaines : data-sci · alias : conjugate priors, conjugate prior, lois a priori conjuguées, prior conjugué, conjugaison
@@ -958,6 +958,7 @@
 - **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 - **Théorie de l'apprentissage** — Pourquoi la généralisation est possible et de quoi elle dépend — les bornes qui relient erreur d'entraînement, capacité du modèle et taille d'échantillon.
 - **Théorie de l'information** — Mesurer l'incertitude d'une loi et l'écart entre deux lois — d'où viennent la perte de la classification et la plupart des critères de comparaison de distributions.
+- **Traitement** — Décomposer un signal échantillonné en fréquences et le filtrer — les transformées, ce qu'elles coûtent, et les deux boîtes à outils qui les implémentent.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
 - **Vision** — Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.

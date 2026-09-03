@@ -386,14 +386,13 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{data, ai, ml, dl, rl, ts, nlp, signal, devops, llm}
+concept/{data, ai, ml, dl, rl, ts, nlp, devops, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
 - `rl` — reinforcement learning
 - `ts` — séries temporelles & forecasting
 - `nlp` — traitement du langage naturel (TF-IDF, NER, recherche d'information)
-- `signal` — traitement du signal (Fourier, ondelettes, spectrogrammes)
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
 
@@ -405,6 +404,7 @@ silencieuse, puisque `check_brain` l'accepterait encore.
 
 - `stats` — retiré le 2026-09-05, 37 notions descendues dans « Statistiques & inférence/ ».
 - `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
+- `signal` — retiré le 2026-09-05, 5 notions descendues dans « Signal & audio/ ».
 
 `data` **reste dans le bloc** après le lot du 2026-09-05, et c'est une exception motivée :
 8 de ses 13 notions sont descendues dans « Data & pipelines/ », les 5 autres appellent un

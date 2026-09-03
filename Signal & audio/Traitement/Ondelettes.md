@@ -2,7 +2,7 @@
 role: notion
 nom: Ondelettes
 alias: [wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme]
-categorie: concept/signal
+categorie: signal/traitement
 domaines: [data-sci, ml-eng]
 tags: [signal-processing, wavelet]
 ---

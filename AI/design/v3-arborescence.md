@@ -972,32 +972,38 @@ c'est la frontière de domaine.
 - `[c]` Comparatif - Clients d'API — filtre `devtools/client-api`
 - `[c]` Comparatif - Gestionnaires de paquets Python — filtre `devtools/paquet`
 
-### Signal & audio  ·  8 pages  ·  **migré le 2026-09-04**
+### Signal & audio  ·  8 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
-- [x] hub écrit — hub de domaine, issu de `MOC/Categories/`
-- [x] sous-dossiers créés — **aucun** : seules 3 pages sont descendues, pas 8. Les 5
-  notions listées ci-dessous portent `concept/signal` et non `signal/traitement` ; leur
-  recatégorisation est le lot 4, et le seuil de 5 n'est donc pas atteint par les 2 briques
-  `signal/traitement` restantes. Le sous-dossier `Traitement/` décrit l'état visé APRÈS
-  le lot 4 — même écart que `Bases de données vectorielles`
+- [x] hub écrit — hub de domaine, issu de `MOC/Categories/` ; corps complété au lot 4 :
+  il aiguille vers le sous-hub et dit pourquoi `signal/audio` n'a pas de dossier
+- [x] sous-dossiers créés — **`Traitement/` au lot 4**. C'est le seul domaine du lot dont
+  l'arbre d'arrivée était **déjà écrit ici** depuis le lot 3, avec ses 7 pages : les 2
+  briques `signal/traitement` étaient sous le seuil tant que les 5 notions portaient
+  `concept/signal`. Rien n'a été arbitré, le seuil a fait le travail
+- [x] notions recatégorisées — **lot 4, 2026-09-05** : les 5 sont dans l'arbre, plus
+  aucune ne porte `concept/signal`, et la valeur est retirée du vocabulaire. Aucune des
+  5 ne parle d'audio : elles vont toutes en `signal/traitement`
 - [x] comparatif rattaché — `Comparatif - Traitement du signal`, dont le filtre de chemin
-  cassait au déplacement (cf. remontée 7 du lot 3)
-- [ ] notions recatégorisées — lot 4, les 5 notions de ce tableau
+  cassait au déplacement (cf. remontée 7 du lot 3). Il **reste au niveau du domaine** :
+  ses 3 membres enjambent les deux sous-domaines, `scipy.signal` et `PyWavelets` en
+  `signal/traitement`, `librosa` en `signal/audio`
 - [ ] fiches au nouveau gabarit — lot 6
 
 **Traitement/** — `signal/traitement` — 7 pages
 
-- `[n]` Filtrage numérique
-- `[n]` Ondelettes
+- `[n]` Filtrage numérique · `[n]` Ondelettes · `[n]` STFT et spectrogramme
+- `[n]` Traitement du signal · `[n]` Transformée de Fourier
 - `[b]` PyWavelets — paquet, C / Cython / Python
-- `[n]` STFT et spectrogramme
-- `[n]` Traitement du signal
-- `[n]` Transformée de Fourier
 - `[b]` scipy.signal — paquet, C / Fortran / Python
 
-**Au niveau du domaine** — 1 pages
+> Le libellé du dossier est « **Traitement** » et non « Traitement du signal », qui est
+> le `nom:` d'une notion **vivant dans ce dossier** — deux fichiers du même nom, et un
+> lien nu ne résout plus de façon déterministe. Même raison qu'au pilote pour
+> « Tests & estimation » et « Analyse factorielle » (remontée 8).
 
-- `[b]` librosa — paquet, Python
+**Au niveau du domaine** — 1 page
+
+- `[b]` librosa — paquet, Python (`signal/audio`, seul de son sous-domaine)
 
 ### Design & diagrammes  ·  7 pages  ·  **migré le 2026-09-04**
 

@@ -2,7 +2,7 @@
 role: notion
 nom: Traitement du signal
 alias: [TdS, signal processing, DSP, traitement numérique du signal]
-categorie: concept/signal
+categorie: signal/traitement
 domaines: [data-sci, ml-eng]
 tags: [signal-processing]
 ---

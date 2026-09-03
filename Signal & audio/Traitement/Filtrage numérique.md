@@ -2,7 +2,7 @@
 role: notion
 nom: Filtrage numérique
 alias: [filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter]
-categorie: concept/signal
+categorie: signal/traitement
 domaines: [data-sci, ml-eng]
 tags: [signal-processing, digital-filter]
 ---

@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 706,
+  "count": 707,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -710,6 +710,7 @@
     ],
     "digital-filter": [
       "Filtrage numérique",
+      "Traitement",
       "scipy.signal"
     ],
     "dimensionality-reduction": [
@@ -994,6 +995,7 @@
     "fourier": [
       "STFT et spectrogramme",
       "Signal & audio",
+      "Traitement",
       "Transformée de Fourier",
       "scipy.signal"
     ],
@@ -2443,6 +2445,7 @@
       "PyWavelets",
       "STFT et spectrogramme",
       "Signal & audio",
+      "Traitement",
       "Traitement du signal",
       "Transformée de Fourier",
       "librosa",
@@ -2457,6 +2460,7 @@
       "Classification audio par spectrogramme",
       "STFT et spectrogramme",
       "Signal & audio",
+      "Traitement",
       "librosa",
       "scipy.signal"
     ],
@@ -2869,7 +2873,8 @@
     "wavelet": [
       "Ondelettes",
       "PyWavelets",
-      "Signal & audio"
+      "Signal & audio",
+      "Traitement"
     ],
     "web-framework": [
       "Dash",
@@ -13367,30 +13372,6 @@
       "maturite": null
     },
     {
-      "path": "Signal & audio/PyWavelets.md",
-      "nom": "PyWavelets",
-      "alias": [
-        "pywt",
-        "pywavelets",
-        "wavelet transform"
-      ],
-      "role": "brique",
-      "categorie": "signal/traitement",
-      "famille": "paquet",
-      "langage": "C / Cython / Python",
-      "domaines": null,
-      "pitch": "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.",
-      "tags": [
-        "signal-processing",
-        "wavelet"
-      ],
-      "alternatives": [
-        "[[scipy.signal]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Signal & audio/Signal & audio.md",
       "nom": "Signal & audio",
       "alias": [
@@ -13419,23 +13400,80 @@
       "maturite": null
     },
     {
-      "path": "Signal & audio/librosa.md",
-      "nom": "librosa",
+      "path": "Signal & audio/Traitement/Filtrage numérique.md",
+      "nom": "Filtrage numérique",
       "alias": [
-        "librosa audio",
-        "audio features",
-        "MIR"
+        "filtre numérique",
+        "Butterworth",
+        "fenêtrage",
+        "apodisation",
+        "FIR",
+        "IIR",
+        "transformée de Hilbert",
+        "digital filter"
       ],
-      "role": "brique",
-      "categorie": "signal/audio",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.",
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
       "tags": [
         "signal-processing",
-        "spectrogram",
-        "feature-engineering"
+        "digital-filter"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Ondelettes.md",
+      "nom": "Ondelettes",
+      "alias": [
+        "wavelets",
+        "DWT",
+        "CWT",
+        "transformée en ondelettes",
+        "multirésolution",
+        "scalogramme"
+      ],
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "signal-processing",
+        "wavelet"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/PyWavelets.md",
+      "nom": "PyWavelets",
+      "alias": [
+        "pywt",
+        "pywavelets",
+        "wavelet transform"
+      ],
+      "role": "brique",
+      "categorie": "signal/traitement",
+      "famille": "paquet",
+      "langage": "C / Cython / Python",
+      "domaines": null,
+      "pitch": "Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.",
+      "tags": [
+        "signal-processing",
+        "wavelet"
       ],
       "alternatives": [
         "[[scipy.signal]]"
@@ -13444,7 +13482,117 @@
       "maturite": "production"
     },
     {
-      "path": "Signal & audio/scipy.signal.md",
+      "path": "Signal & audio/Traitement/STFT et spectrogramme.md",
+      "nom": "STFT et spectrogramme",
+      "alias": [
+        "STFT",
+        "spectrogramme",
+        "short-time Fourier transform",
+        "mel-spectrogramme",
+        "MFCC",
+        "mel spectrogram"
+      ],
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "signal-processing",
+        "spectrogram",
+        "fourier"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Traitement du signal.md",
+      "nom": "Traitement du signal",
+      "alias": [
+        "TdS",
+        "signal processing",
+        "DSP",
+        "traitement numérique du signal"
+      ],
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "signal-processing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Traitement.md",
+      "nom": "Traitement",
+      "alias": [
+        "traitement numérique du signal",
+        "DSP",
+        "transformées"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Décomposer un signal échantillonné en fréquences et le filtrer — les transformées, ce qu'elles coûtent, et les deux boîtes à outils qui les implémentent.",
+      "tags": [
+        "signal-processing",
+        "fourier",
+        "spectrogram",
+        "wavelet",
+        "digital-filter"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Transformée de Fourier.md",
+      "nom": "Transformée de Fourier",
+      "alias": [
+        "FFT",
+        "DFT",
+        "transformée de Fourier discrète",
+        "transformée de Fourier rapide",
+        "analyse spectrale",
+        "domaine fréquentiel"
+      ],
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "signal-processing",
+        "fourier"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/scipy.signal.md",
       "nom": "scipy.signal",
       "alias": [
         "scipy",
@@ -13466,6 +13614,31 @@
       "alternatives": [
         "[[PyWavelets]]",
         "[[librosa]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Signal & audio/librosa.md",
+      "nom": "librosa",
+      "alias": [
+        "librosa audio",
+        "audio features",
+        "MIR"
+      ],
+      "role": "brique",
+      "categorie": "signal/audio",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.",
+      "tags": [
+        "signal-processing",
+        "spectrogram",
+        "feature-engineering"
+      ],
+      "alternatives": [
+        "[[scipy.signal]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -17215,36 +17388,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Filtrage numérique.md",
-      "nom": "Filtrage numérique",
-      "alias": [
-        "filtre numérique",
-        "Butterworth",
-        "fenêtrage",
-        "apodisation",
-        "FIR",
-        "IIR",
-        "transformée de Hilbert",
-        "digital filter"
-      ],
-      "role": "notion",
-      "categorie": "concept/signal",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "signal-processing",
-        "digital-filter"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Flash Attention and efficient attention.md",
       "nom": "Flash Attention and efficient attention",
       "alias": [
@@ -19212,34 +19355,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Ondelettes.md",
-      "nom": "Ondelettes",
-      "alias": [
-        "wavelets",
-        "DWT",
-        "CWT",
-        "transformée en ondelettes",
-        "multirésolution",
-        "scalogramme"
-      ],
-      "role": "notion",
-      "categorie": "concept/signal",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "signal-processing",
-        "wavelet"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/One-Class SVM.md",
       "nom": "One-Class SVM",
       "alias": [
@@ -20411,35 +20526,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/STFT et spectrogramme.md",
-      "nom": "STFT et spectrogramme",
-      "alias": [
-        "STFT",
-        "spectrogramme",
-        "short-time Fourier transform",
-        "mel-spectrogramme",
-        "MFCC",
-        "mel spectrogram"
-      ],
-      "role": "notion",
-      "categorie": "concept/signal",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "signal-processing",
-        "spectrogram",
-        "fourier"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/SVM.md",
       "nom": "SVM",
       "alias": [
@@ -21201,31 +21287,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Traitement du signal.md",
-      "nom": "Traitement du signal",
-      "alias": [
-        "TdS",
-        "signal processing",
-        "DSP",
-        "traitement numérique du signal"
-      ],
-      "role": "notion",
-      "categorie": "concept/signal",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "signal-processing"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Transfer learning vision.md",
       "nom": "Transfer learning vision",
       "alias": [
@@ -21279,34 +21340,6 @@
         "deep-learning",
         "attention",
         "nlp"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Transformée de Fourier.md",
-      "nom": "Transformée de Fourier",
-      "alias": [
-        "FFT",
-        "DFT",
-        "transformée de Fourier discrète",
-        "transformée de Fourier rapide",
-        "analyse spectrale",
-        "domaine fréquentiel"
-      ],
-      "role": "notion",
-      "categorie": "concept/signal",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "signal-processing",
-        "fourier"
       ],
       "alternatives": null,
       "complements": null,

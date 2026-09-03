@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 706 pages actives.
+> 707 pages actives.
 
 ## Par page
 
@@ -663,7 +663,7 @@
 ### librosa  ·  brique
 - tags : `signal-processing`, `spectrogram`, `feature-engineering`
 - liens sortants : [[Comparatif - Traitement du signal]], [[HuggingFace]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
@@ -1213,7 +1213,7 @@
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[Signal & audio]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
@@ -1303,7 +1303,7 @@
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[numpy]]
-- liens entrants : [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
+- liens entrants : [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
@@ -1767,7 +1767,7 @@
 
 ### Data Science  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Traitement du signal (notions)]], [[Visualisation]]
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Signal & audio]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Visualisation]]
 - liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
@@ -1823,7 +1823,7 @@
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
 - liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]]
+- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -1832,7 +1832,7 @@
 
 ### ML Engineering  ·  hub
 - tags : —
-- liens sortants : [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM (notions)]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Séries temporelles]], [[Traitement du signal (notions)]]
+- liens sortants : [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM (notions)]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]], [[Séries temporelles]]
 - liens entrants : [[Data Science]], [[MLOps]]
 
 ### MLOps  ·  hub
@@ -1927,8 +1927,8 @@
 
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
-- liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : —
+- liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Data Science]], [[ML Engineering]]
 
 ### Statistiques & inférence  ·  hub
 - tags : `statistical-inference`, `bayesian`, `causal-inference`, `factor-analysis`
@@ -1953,7 +1953,7 @@
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
 - liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[Data Science]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[Serving]]
+- liens entrants : [[Data Science]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[Serving]], [[Traitement]]
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
@@ -1979,6 +1979,11 @@
 - tags : `information-theory`, `entropy`, `cross-entropy`, `kl-divergence`, `mutual-information`, `optimal-transport`
 - liens sortants : [[Cross-entropy]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Maximum de vraisemblance]], [[Mutual information]], [[Optimal transport]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests d'hypothèse]], [[Wasserstein distance]]
 - liens entrants : [[Mathématiques]]
+
+### Traitement  ·  hub
+- tags : `signal-processing`, `fourier`, `spectrogram`, `wavelet`, `digital-filter`
+- liens sortants : [[Filtrage numérique]], [[Machine Learning]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Signal & audio]]
 
 ### Vectoriel  ·  hub
 - tags : —
@@ -2458,7 +2463,7 @@
 ### Filtrage numérique  ·  notion
 - tags : `signal-processing`, `digital-filter`
 - liens sortants : [[Ondelettes]], [[STFT et spectrogramme]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
+- liens entrants : [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
 
 ### Flash Attention and efficient attention  ·  notion
 - tags : `attention`, `inference-optimization`, `gpu`, `transformers`
@@ -2938,7 +2943,7 @@
 ### Ondelettes  ·  notion
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Time series anomaly detection]], [[Traitement du signal]], [[Transformée de Fourier]]
-- liens entrants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]]
+- liens entrants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]]
 
 ### One-Class SVM  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -3283,7 +3288,7 @@
 ### STFT et spectrogramme  ·  notion
 - tags : `signal-processing`, `spectrogram`, `fourier`
 - liens sortants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[Ondelettes]], [[Stationarity]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
@@ -3403,7 +3408,7 @@
 ### Traitement du signal  ·  notion
 - tags : `signal-processing`
 - liens sortants : [[Autocorrelation]], [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Stationarity]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 
 ### Transfer learning vision  ·  notion
 - tags : `transfer-learning`, `fine-tuning`, `computer-vision`, `deep-learning`
@@ -3418,7 +3423,7 @@
 ### Transformée de Fourier  ·  notion
 - tags : `signal-processing`, `fourier`
 - liens sortants : [[Autocorrelation]], [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### Types de données et choix de modèle  ·  notion
 - tags : `supervised`, `unsupervised`, `classification`, `regression`, `feature-engineering`
@@ -3610,7 +3615,7 @@
 - `diagram` : Archify, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io  — pas de page concept dédiée
 - `diagram-as-code` : Archify, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
-- `digital-filter` : Filtrage numérique, scipy.signal
+- `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
 - `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
@@ -3639,7 +3644,7 @@
 - `forecasting` : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
-- `fourier` : STFT et spectrogramme, Signal & audio, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
+- `fourier` : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
 - `game-theory` : Apprentissage par renforcement, Counterfactual Regret Minimization, OpenSpiel, Pattern - Moteur de jeu pur + IA séparée, Théorie des jeux
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
@@ -3807,9 +3812,9 @@
 - `sequence-labeling` : NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : Avro  — pas de page concept dédiée
-- `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
+- `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `small-language-model` : Distillation, Small Language Models, needle
-- `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal  — pas de page concept dédiée
+- `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
@@ -3851,7 +3856,7 @@
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
-- `wavelet` : Ondelettes, PyWavelets, Signal & audio  — pas de page concept dédiée
+- `wavelet` : Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
 - `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
 - `web-scraping` : Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
@@ -3923,7 +3928,7 @@
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
-- `fourier` (porté par : STFT et spectrogramme, Signal & audio, Transformée de Fourier, scipy.signal)
+- `fourier` (porté par : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
@@ -4019,7 +4024,7 @@
 - `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
-- `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, librosa, scipy.signal)
+- `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : Visualisation, matplotlib, missingno, seaborn)
@@ -4047,7 +4052,7 @@
 - `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
-- `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio)
+- `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)

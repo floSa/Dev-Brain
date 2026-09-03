@@ -127,6 +127,13 @@ SUB_LABEL = {
     # seul, à côté de « Machine Learning/Apprentissage profond/ », se lirait comme
     # apprentissage automatique.
     "math/theorie-apprentissage": "Théorie de l'apprentissage",
+    # Signal & audio — « ### Signal & audio · 8 pages », lot 4. Le sous-dossier est
+    # décrit dans v3-arborescence.md depuis le lot 3 comme « l'état visé APRÈS le
+    # lot 4 » : les 2 briques `signal/traitement` étaient sous le seuil, les 5 notions
+    # le font franchir. Le libellé est « Traitement » et non « Traitement du signal »
+    # parce que ce dernier est le `nom:` d'une notion QUI VIT DANS LE DOSSIER — un
+    # lien nu ne résoudrait plus de façon déterministe (cf. remontée 8).
+    "signal/traitement": "Traitement",
     # `stats/experimentation` et `stats/causal` restent SOUS le seuil (4 et 3 pages) :
     # pas de dossier, donc pas de libellé. Le jour où l'un franchit 5, `promotions()`
     # lève un KeyError qui dit d'aller le lire dans v3-arborescence.md — c'est le

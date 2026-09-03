@@ -30,6 +30,6 @@ Axe métier **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis de
 - [[Apprentissage par renforcement]] — 17 page(s)
 - [[LLM (notions)]] — 12 page(s)
 - [[Séries temporelles]] — 9 page(s)
-- [[Traitement du signal (notions)]] — 5 page(s)
+- [[Signal & audio]] — 5 page(s)
 - [[NLP (notions)]] — 3 page(s)
 <!-- AUTO:END -->

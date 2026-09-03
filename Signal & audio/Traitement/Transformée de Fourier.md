@@ -2,7 +2,7 @@
 role: notion
 nom: Transformée de Fourier
 alias: [FFT, DFT, transformée de Fourier discrète, transformée de Fourier rapide, analyse spectrale, domaine fréquentiel]
-categorie: concept/signal
+categorie: signal/traitement
 domaines: [data-sci, ml-eng]
 tags: [signal-processing, fourier]
 ---
