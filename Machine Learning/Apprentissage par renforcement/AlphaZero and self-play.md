@@ -2,7 +2,7 @@
 role: notion
 nom: AlphaZero and self-play
 alias: [AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [self-play, planning, deep-learning, reinforcement-learning]
 ---

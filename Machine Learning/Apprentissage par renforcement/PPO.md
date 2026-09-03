@@ -2,7 +2,7 @@
 role: notion
 nom: PPO
 alias: [PPO, Proximal Policy Optimization, optimisation proximale de politique, clipped surrogate]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [reinforcement-learning, policy-gradient]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Counterfactual Regret Minimization
 alias: [CFR, counterfactual regret minimization, minimisation du regret contrefactuel, CFR+, regret matching, Deep CFR, MCCFR]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [game-theory, regret-minimization, self-play]
 ---

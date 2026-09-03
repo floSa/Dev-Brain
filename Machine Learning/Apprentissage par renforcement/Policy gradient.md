@@ -2,7 +2,7 @@
 role: notion
 nom: Policy gradient
 alias: [policy gradient, gradient de politique, méthodes basées politique, policy-based methods, REINFORCE, policy optimization]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [reinforcement-learning, policy-gradient]
 ---

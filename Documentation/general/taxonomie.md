@@ -418,11 +418,10 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl, rl, ts, nlp}
+concept/{ml, dl, ts, nlp}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
-- `rl` — reinforcement learning
 - `ts` — séries temporelles & forecasting
 - `nlp` — traitement du langage naturel (TF-IDF, NER, recherche d'information)
 
@@ -459,6 +458,12 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   1 dans « Sécurité/ » (`Sandboxing de code généré`). Trois valeurs ouvertes
   (`llm/modele`, `llm/prompt`, `llm/protocole`), une retirée (`llm/mcp`, remplacée),
   six sous-dossiers créés dans le domaine et un dans « Sécurité ».
+
+- `rl` — retiré le 2026-09-05, 17 notions descendues dans
+  « Machine Learning/Apprentissage par renforcement/ ». **Aucune valeur ouverte, aucun
+  sous-dossier créé, aucun libellé à trancher** — première famille du lot 4 dans ce cas :
+  `ml/rl` existait depuis la v2, son dossier depuis le lot 3. Le sous-domaine passe de 6 à
+  23 pages sans changer l'ensemble des promotions du vault (42 avant, 42 après).
 
 Les valeurs restantes suivront, une par lot de domaine.
 

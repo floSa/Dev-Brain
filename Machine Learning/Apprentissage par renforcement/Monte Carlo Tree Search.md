@@ -2,7 +2,7 @@
 role: notion
 nom: Monte Carlo Tree Search
 alias: [MCTS, Monte Carlo Tree Search, recherche arborescente Monte-Carlo, UCT, UCB applied to trees]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [planning, monte-carlo, model-based-rl]
 ---

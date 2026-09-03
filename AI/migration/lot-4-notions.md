@@ -103,7 +103,10 @@ une fois que le vocabulaire final est connu.
       `security/ia` et l'y fait franchir le seuil. L'étape 0 a rangé 35 notions
       sur 56 ; les 21 autres l'ont été par leur section `## Approches voisines`
       (remontée 24)
-- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `rl` (17) · [ ] `ts` (13) · [ ] `nlp` (7)
+- [x] **`rl` (17) — fait le 2026-09-05.** Zéro valeur ouverte, zéro sous-dossier
+      créé, zéro libellé à trancher — la première famille du lot dans ce cas.
+      L'étape 0 a rangé **17 sur 17** : le sous-hub les cite toutes nommément.
+- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `ts` (13) · [ ] `nlp` (7)
 
 ### Pour chaque notion
 

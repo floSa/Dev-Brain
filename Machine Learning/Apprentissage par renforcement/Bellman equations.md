@@ -2,7 +2,7 @@
 role: notion
 nom: Bellman equations
 alias: [équations de Bellman, équation de Bellman, Bellman equation, Bellman optimality, optimalité de Bellman, Bellman backup]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng]
 tags: [reinforcement-learning, dynamic-programming, value-function]
 ---

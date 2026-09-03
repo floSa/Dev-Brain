@@ -2,7 +2,7 @@
 role: notion
 nom: Markov Decision Process
 alias: [MDP, processus de décision markovien, processus décisionnel de Markov, Markov decision process]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng]
 tags: [reinforcement-learning, markov-decision-process, markov]
 ---

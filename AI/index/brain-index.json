@@ -10754,6 +10754,64 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Apprentissage par renforcement/Actor-Critic methods.md",
+      "nom": "Actor-Critic methods",
+      "alias": [
+        "actor-critic",
+        "acteur-critique",
+        "méthodes acteur-critique",
+        "A2C",
+        "A3C",
+        "advantage actor-critic"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "policy-gradient",
+        "value-function"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/AlphaZero and self-play.md",
+      "nom": "AlphaZero and self-play",
+      "alias": [
+        "AlphaZero",
+        "self-play",
+        "jeu contre soi-même",
+        "AlphaGo Zero",
+        "MuZero",
+        "apprentissage par self-play"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "self-play",
+        "planning",
+        "deep-learning",
+        "reinforcement-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage par renforcement/Apprentissage par renforcement.md",
       "nom": "Apprentissage par renforcement",
       "alias": [
@@ -10784,6 +10842,92 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage par renforcement/Bellman equations.md",
+      "nom": "Bellman equations",
+      "alias": [
+        "équations de Bellman",
+        "équation de Bellman",
+        "Bellman equation",
+        "Bellman optimality",
+        "optimalité de Bellman",
+        "Bellman backup"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "dynamic-programming",
+        "value-function"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Counterfactual Regret Minimization.md",
+      "nom": "Counterfactual Regret Minimization",
+      "alias": [
+        "CFR",
+        "counterfactual regret minimization",
+        "minimisation du regret contrefactuel",
+        "CFR+",
+        "regret matching",
+        "Deep CFR",
+        "MCCFR"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "game-theory",
+        "regret-minimization",
+        "self-play"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Exploration vs exploitation.md",
+      "nom": "Exploration vs exploitation",
+      "alias": [
+        "exploration vs exploitation",
+        "exploration-exploitation",
+        "dilemme exploration-exploitation",
+        "exploration/exploitation",
+        "explore-exploit"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "exploration-exploitation",
+        "reinforcement-learning",
+        "multi-armed-bandit"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage par renforcement/Gymnasium.md",
       "nom": "Gymnasium",
       "alias": [
@@ -10806,6 +10950,147 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Imitation learning.md",
+      "nom": "Imitation learning",
+      "alias": [
+        "imitation learning",
+        "apprentissage par imitation",
+        "behavioral cloning",
+        "BC",
+        "learning from demonstration",
+        "inverse RL",
+        "IRL",
+        "GAIL"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "imitation-learning",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Markov Decision Process.md",
+      "nom": "Markov Decision Process",
+      "alias": [
+        "MDP",
+        "processus de décision markovien",
+        "processus décisionnel de Markov",
+        "Markov decision process"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "markov-decision-process",
+        "markov"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Model-based RL.md",
+      "nom": "Model-based RL",
+      "alias": [
+        "model-based RL",
+        "RL basé modèle",
+        "model-based reinforcement learning",
+        "RL avec modèle",
+        "world models",
+        "planification"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "model-based-rl",
+        "dynamic-programming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Monte Carlo Tree Search.md",
+      "nom": "Monte Carlo Tree Search",
+      "alias": [
+        "MCTS",
+        "Monte Carlo Tree Search",
+        "recherche arborescente Monte-Carlo",
+        "UCT",
+        "UCB applied to trees"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "planning",
+        "monte-carlo",
+        "model-based-rl"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Offline RL.md",
+      "nom": "Offline RL",
+      "alias": [
+        "offline RL",
+        "RL hors ligne",
+        "batch RL",
+        "offline reinforcement learning",
+        "RL hors interaction",
+        "batch reinforcement learning"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "offline-rl",
+        "value-function"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage par renforcement/OpenSpiel.md",
@@ -10833,6 +11118,89 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Apprentissage par renforcement/PPO.md",
+      "nom": "PPO",
+      "alias": [
+        "PPO",
+        "Proximal Policy Optimization",
+        "optimisation proximale de politique",
+        "clipped surrogate"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "policy-gradient"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Policy gradient.md",
+      "nom": "Policy gradient",
+      "alias": [
+        "policy gradient",
+        "gradient de politique",
+        "méthodes basées politique",
+        "policy-based methods",
+        "REINFORCE",
+        "policy optimization"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "policy-gradient"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Q-learning and DQN.md",
+      "nom": "Q-learning and DQN",
+      "alias": [
+        "Q-learning",
+        "DQN",
+        "Deep Q-Network",
+        "deep Q-learning",
+        "Q-apprentissage",
+        "apprentissage par Q"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "value-function",
+        "temporal-difference",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage par renforcement/RLax.md",
       "nom": "RLax",
       "alias": [
@@ -10856,6 +11224,62 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Reinforcement learning.md",
+      "nom": "Reinforcement learning",
+      "alias": [
+        "RL",
+        "apprentissage par renforcement",
+        "reinforcement learning",
+        "agent-environnement"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "markov-decision-process"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Reward shaping and hacking.md",
+      "nom": "Reward shaping and hacking",
+      "alias": [
+        "reward shaping",
+        "reward hacking",
+        "façonnage de récompense",
+        "détournement de récompense",
+        "specification gaming",
+        "reward design",
+        "potential-based shaping"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "reward-shaping",
+        "alignment"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage par renforcement/Stable-Baselines3.md",
@@ -10908,6 +11332,64 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Théorie des jeux.md",
+      "nom": "Théorie des jeux",
+      "alias": [
+        "game theory",
+        "théorie des jeux",
+        "équilibre de Nash",
+        "Nash equilibrium",
+        "jeu à somme nulle",
+        "zero-sum",
+        "information imparfaite",
+        "minimax"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "game-theory",
+        "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage par renforcement/Value functions.md",
+      "nom": "Value functions",
+      "alias": [
+        "fonctions de valeur",
+        "fonction de valeur",
+        "value function",
+        "V-function",
+        "Q-function",
+        "fonction Q",
+        "fonction de valeur d'état-action"
+      ],
+      "role": "notion",
+      "categorie": "ml/rl",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "value-function"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage profond/Apprentissage profond.md",
@@ -17468,34 +17950,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Actor-Critic methods.md",
-      "nom": "Actor-Critic methods",
-      "alias": [
-        "actor-critic",
-        "acteur-critique",
-        "méthodes acteur-critique",
-        "A2C",
-        "A3C",
-        "advantage actor-critic"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "policy-gradient",
-        "value-function"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/AdaBoost.md",
       "nom": "AdaBoost",
       "alias": [
@@ -17549,36 +18003,6 @@
         "gradient-descent",
         "deep-learning",
         "learning-rate"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/AlphaZero and self-play.md",
-      "nom": "AlphaZero and self-play",
-      "alias": [
-        "AlphaZero",
-        "self-play",
-        "jeu contre soi-même",
-        "AlphaGo Zero",
-        "MuZero",
-        "apprentissage par self-play"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "self-play",
-        "planning",
-        "deep-learning",
-        "reinforcement-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -18025,34 +18449,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Bellman equations.md",
-      "nom": "Bellman equations",
-      "alias": [
-        "équations de Bellman",
-        "équation de Bellman",
-        "Bellman equation",
-        "Bellman optimality",
-        "optimalité de Bellman",
-        "Bellman backup"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "dynamic-programming",
-        "value-function"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Boosting.md",
       "nom": "Boosting",
       "alias": [
@@ -18463,36 +18859,6 @@
       "tags": [
         "model-evaluation",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Counterfactual Regret Minimization.md",
-      "nom": "Counterfactual Regret Minimization",
-      "alias": [
-        "CFR",
-        "counterfactual regret minimization",
-        "minimisation du regret contrefactuel",
-        "CFR+",
-        "regret matching",
-        "Deep CFR",
-        "MCCFR"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "game-theory",
-        "regret-minimization",
-        "self-play"
       ],
       "alternatives": null,
       "complements": null,
@@ -18929,34 +19295,6 @@
       "tags": [
         "explainability",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Exploration vs exploitation.md",
-      "nom": "Exploration vs exploitation",
-      "alias": [
-        "exploration vs exploitation",
-        "exploration-exploitation",
-        "dilemme exploration-exploitation",
-        "exploration/exploitation",
-        "explore-exploit"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "exploration-exploitation",
-        "reinforcement-learning",
-        "multi-armed-bandit"
       ],
       "alternatives": null,
       "complements": null,
@@ -19551,37 +19889,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Imitation learning.md",
-      "nom": "Imitation learning",
-      "alias": [
-        "imitation learning",
-        "apprentissage par imitation",
-        "behavioral cloning",
-        "BC",
-        "learning from demonstration",
-        "inverse RL",
-        "IRL",
-        "GAIL"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "imitation-learning",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Imputation des valeurs manquantes.md",
       "nom": "Imputation des valeurs manquantes",
       "alias": [
@@ -19824,32 +20131,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Markov Decision Process.md",
-      "nom": "Markov Decision Process",
-      "alias": [
-        "MDP",
-        "processus de décision markovien",
-        "processus décisionnel de Markov",
-        "Markov decision process"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "markov-decision-process",
-        "markov"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Maximal Update Parametrization.md",
       "nom": "Maximal Update Parametrization",
       "alias": [
@@ -20049,34 +20330,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Model-based RL.md",
-      "nom": "Model-based RL",
-      "alias": [
-        "model-based RL",
-        "RL basé modèle",
-        "model-based reinforcement learning",
-        "RL avec modèle",
-        "world models",
-        "planification"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "model-based-rl",
-        "dynamic-programming"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Modèles de fondation vision.md",
       "nom": "Modèles de fondation vision",
       "alias": [
@@ -20131,34 +20384,6 @@
         "model-monitoring",
         "data-drift",
         "concept-drift"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Monte Carlo Tree Search.md",
-      "nom": "Monte Carlo Tree Search",
-      "alias": [
-        "MCTS",
-        "Monte Carlo Tree Search",
-        "recherche arborescente Monte-Carlo",
-        "UCT",
-        "UCB applied to trees"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "planning",
-        "monte-carlo",
-        "model-based-rl"
       ],
       "alternatives": null,
       "complements": null,
@@ -20382,34 +20607,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Offline RL.md",
-      "nom": "Offline RL",
-      "alias": [
-        "offline RL",
-        "RL hors ligne",
-        "batch RL",
-        "offline reinforcement learning",
-        "RL hors interaction",
-        "batch reinforcement learning"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "offline-rl",
-        "value-function"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/One-Class SVM.md",
       "nom": "One-Class SVM",
       "alias": [
@@ -20466,32 +20663,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/PPO.md",
-      "nom": "PPO",
-      "alias": [
-        "PPO",
-        "Proximal Policy Optimization",
-        "optimisation proximale de politique",
-        "clipped surrogate"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "policy-gradient"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Perceptron et MLP.md",
       "nom": "Perceptron et MLP",
       "alias": [
@@ -20517,34 +20688,6 @@
         "deep-learning",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Policy gradient.md",
-      "nom": "Policy gradient",
-      "alias": [
-        "policy gradient",
-        "gradient de politique",
-        "méthodes basées politique",
-        "policy-based methods",
-        "REINFORCE",
-        "policy optimization"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "policy-gradient"
       ],
       "alternatives": null,
       "complements": null,
@@ -20639,35 +20782,6 @@
         "model-compression",
         "deep-learning",
         "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Q-learning and DQN.md",
-      "nom": "Q-learning and DQN",
-      "alias": [
-        "Q-learning",
-        "DQN",
-        "Deep Q-Network",
-        "deep Q-learning",
-        "Q-apprentissage",
-        "apprentissage par Q"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "value-function",
-        "temporal-difference",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -20871,32 +20985,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Reinforcement learning.md",
-      "nom": "Reinforcement learning",
-      "alias": [
-        "RL",
-        "apprentissage par renforcement",
-        "reinforcement learning",
-        "agent-environnement"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "markov-decision-process"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Rendu neuronal 3D & estimation de profondeur.md",
       "nom": "Rendu neuronal 3D & estimation de profondeur",
       "alias": [
@@ -20927,36 +21015,6 @@
         "depth-estimation",
         "computer-vision",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Reward shaping and hacking.md",
-      "nom": "Reward shaping and hacking",
-      "alias": [
-        "reward shaping",
-        "reward hacking",
-        "façonnage de récompense",
-        "détournement de récompense",
-        "specification gaming",
-        "reward design",
-        "potential-based shaping"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "reward-shaping",
-        "alignment"
       ],
       "alternatives": null,
       "complements": null,
@@ -21521,36 +21579,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Théorie des jeux.md",
-      "nom": "Théorie des jeux",
-      "alias": [
-        "game theory",
-        "théorie des jeux",
-        "équilibre de Nash",
-        "Nash equilibrium",
-        "jeu à somme nulle",
-        "zero-sum",
-        "information imparfaite",
-        "minimax"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "game-theory",
-        "optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Time series anomaly detection.md",
       "nom": "Time series anomaly detection",
       "alias": [
@@ -21746,34 +21774,6 @@
         "model-evaluation",
         "resampling",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Value functions.md",
-      "nom": "Value functions",
-      "alias": [
-        "fonctions de valeur",
-        "fonction de valeur",
-        "value function",
-        "V-function",
-        "Q-function",
-        "fonction Q",
-        "fonction de valeur d'état-action"
-      ],
-      "role": "notion",
-      "categorie": "concept/rl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "reinforcement-learning",
-        "value-function"
       ],
       "alternatives": null,
       "complements": null,

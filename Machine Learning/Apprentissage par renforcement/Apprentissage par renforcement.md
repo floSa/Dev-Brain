@@ -33,6 +33,25 @@ tags: [reinforcement-learning, markov-decision-process, policy-gradient, value-f
 - Aligner un modèle de langage par RL → [[Fine-tuning]], pas ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[Actor-Critic methods]] — domaines : ml-eng
+- [[AlphaZero and self-play]] — domaines : ml-eng, ai-eng
+- [[Bellman equations]] — domaines : ml-eng
+- [[Counterfactual Regret Minimization]] — domaines : ml-eng, ai-eng
+- [[Exploration vs exploitation]] — domaines : ml-eng, ai-eng
+- [[Imitation learning]] — domaines : ml-eng, ai-eng
+- [[Markov Decision Process]] — domaines : ml-eng
+- [[Model-based RL]] — domaines : ml-eng
+- [[Monte Carlo Tree Search]] — domaines : ml-eng, ai-eng
+- [[Offline RL]] — domaines : ml-eng
+- [[Policy gradient]] — domaines : ml-eng, ai-eng
+- [[PPO]] — domaines : ml-eng, ai-eng
+- [[Q-learning and DQN]] — domaines : ml-eng
+- [[Reinforcement learning]] — domaines : ml-eng, ai-eng
+- [[Reward shaping and hacking]] — domaines : ml-eng, ai-eng
+- [[Théorie des jeux]] — domaines : ml-eng, ai-eng
+- [[Value functions]] — domaines : ml-eng
+
 ### Briques
 - [[Acme]] — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
 - [[Gymnasium]] — Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.

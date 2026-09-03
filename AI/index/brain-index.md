@@ -666,25 +666,6 @@
 - **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
 - **Traitement du langage naturel** — domaines : data-sci, ml-eng, ai-eng · alias : NLP, natural language processing, TALN, TAL, traitement automatique du langage
 
-### concept/rl
-- **Actor-Critic methods** — domaines : ml-eng · alias : actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic
-- **AlphaZero and self-play** — domaines : ml-eng, ai-eng · alias : AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play
-- **Bellman equations** — domaines : ml-eng · alias : équations de Bellman, équation de Bellman, Bellman equation, Bellman optimality, optimalité de Bellman, Bellman backup
-- **Counterfactual Regret Minimization** — domaines : ml-eng, ai-eng · alias : CFR, counterfactual regret minimization, minimisation du regret contrefactuel, CFR+, regret matching, Deep CFR, MCCFR
-- **Exploration vs exploitation** — domaines : ml-eng, ai-eng · alias : exploration vs exploitation, exploration-exploitation, dilemme exploration-exploitation, exploration/exploitation, explore-exploit
-- **Imitation learning** — domaines : ml-eng, ai-eng · alias : imitation learning, apprentissage par imitation, behavioral cloning, BC, learning from demonstration, inverse RL, IRL, GAIL
-- **Markov Decision Process** — domaines : ml-eng · alias : MDP, processus de décision markovien, processus décisionnel de Markov, Markov decision process
-- **Model-based RL** — domaines : ml-eng · alias : model-based RL, RL basé modèle, model-based reinforcement learning, RL avec modèle, world models, planification
-- **Monte Carlo Tree Search** — domaines : ml-eng, ai-eng · alias : MCTS, Monte Carlo Tree Search, recherche arborescente Monte-Carlo, UCT, UCB applied to trees
-- **Offline RL** — domaines : ml-eng · alias : offline RL, RL hors ligne, batch RL, offline reinforcement learning, RL hors interaction, batch reinforcement learning
-- **Policy gradient** — domaines : ml-eng, ai-eng · alias : policy gradient, gradient de politique, méthodes basées politique, policy-based methods, REINFORCE, policy optimization
-- **PPO** — domaines : ml-eng, ai-eng · alias : PPO, Proximal Policy Optimization, optimisation proximale de politique, clipped surrogate
-- **Q-learning and DQN** — domaines : ml-eng · alias : Q-learning, DQN, Deep Q-Network, deep Q-learning, Q-apprentissage, apprentissage par Q
-- **Reinforcement learning** — domaines : ml-eng, ai-eng · alias : RL, apprentissage par renforcement, reinforcement learning, agent-environnement
-- **Reward shaping and hacking** — domaines : ml-eng, ai-eng · alias : reward shaping, reward hacking, façonnage de récompense, détournement de récompense, specification gaming, reward design, potential-based shaping
-- **Théorie des jeux** — domaines : ml-eng, ai-eng · alias : game theory, théorie des jeux, équilibre de Nash, Nash equilibrium, jeu à somme nulle, zero-sum, information imparfaite, minimax
-- **Value functions** — domaines : ml-eng · alias : fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action
-
 ### concept/ts
 - **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
 - **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
@@ -843,6 +824,25 @@
 - **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
 - **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
 - **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
+
+### ml/rl
+- **Actor-Critic methods** — domaines : ml-eng · alias : actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic
+- **AlphaZero and self-play** — domaines : ml-eng, ai-eng · alias : AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play
+- **Bellman equations** — domaines : ml-eng · alias : équations de Bellman, équation de Bellman, Bellman equation, Bellman optimality, optimalité de Bellman, Bellman backup
+- **Counterfactual Regret Minimization** — domaines : ml-eng, ai-eng · alias : CFR, counterfactual regret minimization, minimisation du regret contrefactuel, CFR+, regret matching, Deep CFR, MCCFR
+- **Exploration vs exploitation** — domaines : ml-eng, ai-eng · alias : exploration vs exploitation, exploration-exploitation, dilemme exploration-exploitation, exploration/exploitation, explore-exploit
+- **Imitation learning** — domaines : ml-eng, ai-eng · alias : imitation learning, apprentissage par imitation, behavioral cloning, BC, learning from demonstration, inverse RL, IRL, GAIL
+- **Markov Decision Process** — domaines : ml-eng · alias : MDP, processus de décision markovien, processus décisionnel de Markov, Markov decision process
+- **Model-based RL** — domaines : ml-eng · alias : model-based RL, RL basé modèle, model-based reinforcement learning, RL avec modèle, world models, planification
+- **Monte Carlo Tree Search** — domaines : ml-eng, ai-eng · alias : MCTS, Monte Carlo Tree Search, recherche arborescente Monte-Carlo, UCT, UCB applied to trees
+- **Offline RL** — domaines : ml-eng · alias : offline RL, RL hors ligne, batch RL, offline reinforcement learning, RL hors interaction, batch reinforcement learning
+- **Policy gradient** — domaines : ml-eng, ai-eng · alias : policy gradient, gradient de politique, méthodes basées politique, policy-based methods, REINFORCE, policy optimization
+- **PPO** — domaines : ml-eng, ai-eng · alias : PPO, Proximal Policy Optimization, optimisation proximale de politique, clipped surrogate
+- **Q-learning and DQN** — domaines : ml-eng · alias : Q-learning, DQN, Deep Q-Network, deep Q-learning, Q-apprentissage, apprentissage par Q
+- **Reinforcement learning** — domaines : ml-eng, ai-eng · alias : RL, apprentissage par renforcement, reinforcement learning, agent-environnement
+- **Reward shaping and hacking** — domaines : ml-eng, ai-eng · alias : reward shaping, reward hacking, façonnage de récompense, détournement de récompense, specification gaming, reward design, potential-based shaping
+- **Théorie des jeux** — domaines : ml-eng, ai-eng · alias : game theory, théorie des jeux, équilibre de Nash, Nash equilibrium, jeu à somme nulle, zero-sum, information imparfaite, minimax
+- **Value functions** — domaines : ml-eng · alias : fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action
 
 ### security/ia
 - **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM

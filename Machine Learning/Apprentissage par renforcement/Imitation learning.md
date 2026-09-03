@@ -2,7 +2,7 @@
 role: notion
 nom: Imitation learning
 alias: [imitation learning, apprentissage par imitation, behavioral cloning, BC, learning from demonstration, inverse RL, IRL, GAIL]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [reinforcement-learning, imitation-learning, supervised]
 ---

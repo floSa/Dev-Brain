@@ -2,7 +2,7 @@
 role: notion
 nom: Reinforcement learning
 alias: [RL, apprentissage par renforcement, reinforcement learning, agent-environnement]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [reinforcement-learning, markov-decision-process]
 ---

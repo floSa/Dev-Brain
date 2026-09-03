@@ -2,7 +2,7 @@
 role: notion
 nom: Reward shaping and hacking
 alias: [reward shaping, reward hacking, façonnage de récompense, détournement de récompense, specification gaming, reward design, potential-based shaping]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng, ai-eng]
 tags: [reinforcement-learning, reward-shaping, alignment]
 ---

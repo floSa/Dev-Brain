@@ -2,7 +2,7 @@
 role: notion
 nom: Value functions
 alias: [fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng]
 tags: [reinforcement-learning, value-function]
 ---

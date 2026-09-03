@@ -2,7 +2,7 @@
 role: notion
 nom: Actor-Critic methods
 alias: [actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic]
-categorie: concept/rl
+categorie: ml/rl
 domaines: [ml-eng]
 tags: [reinforcement-learning, policy-gradient, value-function]
 ---
