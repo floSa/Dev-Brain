@@ -19,7 +19,7 @@ tags: [reinforcement-learning, alignment, fine-tuning, llm]
 ### Le cadre RL adapté au LLM
 - Génération vue comme un **MDP** : à chaque pas, l'état est le préfixe, l'action est le token suivant, la politique $\pi_\theta$ est le LLM. La récompense arrive surtout **en fin de séquence** (signal rare).
 - On maximise la récompense **tout en restant proche** du modèle de référence (SFT) via une pénalité **KL** — sinon la politique dérive et oublie ses capacités générales.
-- Bases RL générales : [[Reinforcement learning]], [[Policy gradient]], [[PPO]] (cluster `concept/rl`).
+- Bases RL générales : [[Reinforcement learning]], [[Policy gradient]], [[PPO]] (dossier « Apprentissage par renforcement »).
 
 ### Deux sources de récompense
 - **Préférences humaines** → [[Reward modeling]] entraîné sur comparaisons (RLHF). Pour l'utilité, le ton, l'innocuité.

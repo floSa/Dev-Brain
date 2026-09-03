@@ -118,10 +118,12 @@ Les trois derniers dossiers ne sont pas des domaines : rien ne s'y dérive d'une
 la seule exception à la règle 4, et elle est fermée — `check_arbo.py` compte leurs pages
 à part (`arbo.ROLES_SANS_CATEGORIE`).
 
-> Cet arbre décrit l'état visé **après le lot 4**, pas après le lot 3 :
-> `Bases de données vectorielles.md` est une notion qui porte encore `concept/data`, et le
-> lot 3 ne recatégorise rien. Même écart pour le sous-dossier `Traitement/` de
-> « Signal & audio ». Cf. les *Remontées* de `AI/migration/lot-3-arborescence.md`.
+> Cet arbre décrivait l'état visé **après le lot 4**, pas après le lot 3 : au lot 3,
+> `Bases de données vectorielles.md` était une notion rangée par la galaxie wiki et non
+> par son domaine, et le lot 3 ne recatégorisait rien. Même écart pour le sous-dossier
+> `Traitement/` de « Signal & audio ». **Le lot 4 a clos les deux le 2026-09-05** : la
+> notion vit dans `Bases de données/Vectoriel/`, et l'arbre ci-dessus est l'état réel.
+> Cf. les *Remontées* de `AI/migration/lot-3-arborescence.md`.
 
 ### Ce que l'arbre remplace
 

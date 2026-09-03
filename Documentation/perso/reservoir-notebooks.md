@@ -10,9 +10,9 @@ Déjà couvert en v2 (donc **exclu** d'ici) : DuckDB, bases vectorielles, Doclin
 
 ---
 
-## 1. Traitement du signal ⚠️ `concept/signal` (nouveau sous-domaine)
+## 1. Traitement du signal → « Signal & audio » (`signal/traitement`)
 *source : TdS_Introduction_Traitement_Signal*
-**Concepts (Wiki) :**
+**Notions :**
 - ⬜ Transformée de Fourier (DFT / FFT)
 - ⬜ Ondelettes (DWT / CWT)
 - ⬜ STFT & spectrogramme (dont mel / MFCC)
@@ -23,16 +23,16 @@ Déjà couvert en v2 (donc **exclu** d'ici) : DuckDB, bases vectorielles, Doclin
 - ⬜ PyWavelets → `tooling/data`
 - ⬜ librosa → `ml/framework` (audio)
 
-## 2. NLP ⚠️ `concept/nlp` (nouveau sous-domaine)
+## 2. NLP → « Machine Learning » (`ml/nlp`)
 *sources : NLP_Classification_Supervisee, NLP_Classification_Smote, NLP_NER, NLP_NER_BiLSTM_CRF, NLP_Recherche_d_informations*
-**Concepts (Wiki) :**
+**Notions :**
 - ⬜ TF-IDF
 - ⬜ BM25
 - ⬜ Recherche d'information (dense / lexicale / hybride RRF, re-ranking)
 - ⬜ NER & étiquetage de séquence (IOB/BILOU, CRF, Viterbi)
 - ⬜ Classification de texte supervisée (baseline → embeddings → LLM)
 
-**Libs (Dev, `ml/framework`) :**
+**Briques (`ml/framework`) :**
 - ⬜ spaCy
 - ⬜ sentence-transformers
 - ⬜ GLiNER (NER zero-shot)
@@ -40,27 +40,27 @@ Déjà couvert en v2 (donc **exclu** d'ici) : DuckDB, bases vectorielles, Doclin
 - ⬜ pytorch-crf
 - ⬜ SetFit
 
-## 3. Détection d'outliers & anomalies → `concept/ml`
+## 3. Détection d'outliers & anomalies → « Machine Learning »
 *sources : Detection_Outliers, TS_Maintenance_Predictive*
-**Concepts (Wiki) :**
+**Notions :**
 - ⬜ Détection d'outliers — univarié (Z-score, IQR, MAD)
 - ⬜ Détection d'outliers — multivarié (LOF, Isolation Forest, Elliptic Envelope, ECOD/COPOD)
 - ⬜ Détection d'anomalies en séries temporelles (matrix profile)
 
-**Libs (Dev, `ml/framework`) :**
+**Briques (`ml/framework`) :**
 - ⬜ PyOD
 - ⬜ STUMPY
 
-## 4. Explicabilité / interprétabilité → `concept/ml`
+## 4. Explicabilité / interprétabilité → « Machine Learning » (`ml/interpretabilite`)
 *source : ML_Explication_Feature_Importance_Selection (+ SHAP dans DL_TensorFlow, ML_Bagging_Boosting)*
-**Concept (Wiki) :**
+**Notion :**
 - ⬜ Explicabilité des modèles (SHAP, LIME, permutation importance, MDI, drop-column, Boruta)
 
-**Libs (Dev, `ml/framework`) :**
+**Briques (`ml/framework`) :**
 - ⬜ SHAP
 - ⬜ LIME
 
-## 5. Frameworks & libs ML manquants → `ml/framework` (+ `concept/dl`)
+## 5. Frameworks & libs ML manquants → `ml/framework` (+ `ml/apprentissage-profond`)
 *sources : DL_Keras, DL_KAN, ML_Apprentissage_par_Renforcement, ML_Optimisation_de_Modeles, TS_ARIMA*
 - ⬜ Keras (Keras 3, multi-backend) → `ml/framework`
 - ⬜ PyTorch Lightning → `ml/framework`
@@ -70,18 +70,18 @@ Déjà couvert en v2 (donc **exclu** d'ici) : DuckDB, bases vectorielles, Doclin
 - ⬜ Boruta → `ml/framework` (sélection de variables)
 - ⬜ River → `ml/framework` (ML en ligne / streaming)
 - ⬜ pmdarima → `ml/framework` (AutoARIMA)
-- ⬜ **KAN — Kolmogorov-Arnold Networks** → concept Wiki `concept/dl`
+- ⬜ **KAN — Kolmogorov-Arnold Networks** → notion, `ml/apprentissage-profond`
 
 ## 6. Compléments — sous-domaines existants
-**`concept/ml`** *(sources : ML_Regression_Classification_Multiple, Test_donnees_manquante_modeles)*
+**`ml/socle`** *(sources : ML_Regression_Classification_Multiple, Test_donnees_manquante_modeles)*
 - ⬜ Régression / classification multi-sorties (MultiOutput, RegressorChain)
 - ⬜ Mécanismes de données manquantes (MCAR / MAR / MNAR) + imputation avancée (KNNImputer, IterativeImputer/MICE) — complète *Imputation des valeurs manquantes*
 
-**`concept/stats`** *(source : EDA_Analyse_Multivarie)*
+**`stats/exploratoire`** *(source : EDA_Analyse_Multivarie)*
 - ⬜ MANOVA / tests multivariés
 - ⬜ Manifold learning (Isomap, LLE, Kernel PCA) — complète *Réduction de dimension*
 
-**`concept/ts`** *(sources : TS_Maintenance_Predictive, TS_Time_Series_Overview)*
+**`ml/series-temporelles`** *(sources : TS_Maintenance_Predictive, TS_Time_Series_Overview)*
 - ⬜ Maintenance prédictive / RUL (remaining useful life)
 - ⬜ Foundation models pour séries temporelles (panorama)
 
@@ -91,8 +91,8 @@ Déjà couvert en v2 (donc **exclu** d'ici) : DuckDB, bases vectorielles, Doclin
 ---
 
 ## Récap
-- **~35 nouvelles pages**, dont **2 sous-domaines à créer** : `concept/signal`, `concept/nlp`.
-- Décisions à trancher avant de lancer les rounds :
-  1. Créer `concept/signal` et `concept/nlp` (sinon rabattre : signal → `concept/math` ? NLP → `concept/llm` ?).
-  2. Élaguer d'éventuels clusters non voulus.
+- **~35 nouvelles pages**. Les deux sous-domaines qui étaient « à créer » existent depuis :
+  `signal/traitement` et `ml/nlp` portent chacun un dossier de l'arbre. La question de les
+  rabattre sur les mathématiques ou sur le LLM est donc close.
+- Décision à trancher avant de lancer les rounds : élaguer d'éventuels clusters non voulus.
 - Ensuite : mêmes prompts / même boucle que pour le réservoir v1 (plan → GO → drainer → check_brain → commit/push/merge).

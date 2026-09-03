@@ -267,11 +267,15 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 
 ---
 
-# PARTIE B — Concepts (galaxie `Wiki/Concepts`)
+# PARTIE B — Notions (`role: notion`)
 
-> Re-découpés par thème pour sortir du fourre-tout. Sous-domaine `concept/<x>` proposé en tête de chaque bloc.
+> Re-découpés par thème pour sortir du fourre-tout. Le **domaine d'accueil** est indiqué en
+> tête de chaque bloc : c'est le dossier de l'arbre où la page se rangera, et sa `categorie:`
+> se dérive du vocabulaire de `Documentation/general/taxonomie.md` comme pour une brique.
+> Les sous-domaines de galaxie `concept/*` qui figuraient ici sont sortis du vocabulaire
+> le 2026-09-05, avec la clôture du lot 4.
 
-## Statistiques → `concept/stats`
+## Statistiques → « Statistiques & inférence »
 
 **Inférence & tests**
 - ✅ **Tests d'hypothèse** — cadre H0/H1, décision et significativité.
@@ -304,8 +308,8 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **MCMC** — échantillonnage par chaînes de Markov.
 - ✅ **Processus de Poisson** — événements rares dans le temps.
 - ✅ **Mouvement brownien** — processus continu aléatoire.
-- ✅ **Autocorrelation** — corrélation d'une série avec elle-même décalée. ⚠️ ou `concept/ts`.
-- ✅ **Stationarity** — propriétés invariantes dans le temps. ⚠️ ou `concept/ts`.
+- ✅ **Autocorrelation** — corrélation d'une série avec elle-même décalée. ⚠️ ou séries temporelles.
+- ✅ **Stationarity** — propriétés invariantes dans le temps. ⚠️ ou séries temporelles.
 
 **Analyse factorielle & réduction de dimension**
 - ✅ **PCA** — analyse en composantes principales.
@@ -318,7 +322,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **HCPC** — classification sur composantes principales.
 - ✅ **Réduction de dimension** — page chapeau.
 
-## Machine learning classique → `concept/ml`
+## Machine learning classique → « Machine Learning »
 
 **Modèles linéaires & régression**
 - ✅ **Régression linéaire** — relation linéaire cible continue.
@@ -367,10 +371,10 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 **Embeddings & dim. reduction**
 - ✅ **embeddings** — représentations vectorielles denses.
 
-## MLOps & monitoring → `concept/ml` (ou `concept/devops`)
+## MLOps & monitoring → « Machine Learning » (`ml/monitoring`) ou « DevOps »
 - ✅ **Data drift** — dérive de distribution en production. ⚠️ sous-domaine MLOps à valider.
 
-## Mathématiques pour le ML → `concept/math`
+## Mathématiques pour le ML → « Mathématiques »
 
 **Algèbre linéaire**
 - ✅ **Matrix products** — produits matriciels, sens géométrique.
@@ -385,7 +389,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Gradient descent** — descente de gradient.
 - ✅ **Newton & quasi-Newton** — méthodes du second ordre.
 - ✅ **Loss landscape and saddle points** — géométrie de la perte.
-- ✅ **Learning rate schedules** — planification du pas. ⚠️ ou `concept/dl`.
+- ✅ **Learning rate schedules** — planification du pas. ⚠️ ou apprentissage profond.
 
 **Théorie de l'information**
 - ✅ **Shannon entropy** — entropie, mesure d'incertitude.
@@ -402,7 +406,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Generalization bounds** — bornes de généralisation.
 - ✅ **No Free Lunch theorem** — pas de modèle universel.
 
-## Deep learning → `concept/dl`
+## Deep learning → « Machine Learning » (`ml/apprentissage-profond`)
 - ✅ **Transformer architectures** — architecture transformeur.
 - ✅ **Self-attention** — mécanisme d'attention.
 - ✅ **Positional encoding** — encodage de position.
@@ -418,7 +422,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Speech models** — modèles de parole (ASR/TTS).
 - ✅ **Vision Language Models** — modèles vision-langage.
 
-## LLM & IA générative → `concept/llm`
+## LLM & IA générative → « LLM & IA générative »
 
 **Fonctionnement & inférence**
 - ✅ **Tokenization** — découpage en tokens.
@@ -474,13 +478,13 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Code and math benchmarks** — benchmarks code/maths.
 - ✅ **LLM observability** — observabilité en production.
 
-## Sécurité IA → `concept/ai` (ou `concept/llm`)
+## Sécurité IA → « Sécurité » (`security/ia`)
 - ✅ **AI security** — panorama des risques IA.
 - ✅ **Prompt injection** — injection de prompt.
 - ✅ **Jailbreaking and defenses** — contournements et défenses.
 - ✅ **Guardrails** — garde-fous d'entrée/sortie.
 
-## Reinforcement learning → `concept/rl`
+## Reinforcement learning → « Machine Learning » (`ml/rl`)
 - ✅ **Reinforcement learning** — cadre général.
 - ✅ **Markov Decision Process** — MDP.
 - ✅ **Bellman equations** — équations de Bellman.
@@ -495,7 +499,7 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 - ✅ **Imitation learning** — apprentissage par imitation.
 - ✅ **Reward shaping and hacking** — façonnage et détournement de récompense.
 
-## Séries temporelles & forecasting → `concept/ts`
+## Séries temporelles & forecasting → « Machine Learning » (`ml/series-temporelles`)
 - ✅ **ARIMA SARIMA** — modèles autorégressifs.
 - ✅ **Exponential smoothing** — lissage exponentiel.
 - ✅ **Forecasting framing** — cadrage d'un problème de prévision.

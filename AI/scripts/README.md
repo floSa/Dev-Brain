@@ -102,12 +102,12 @@ Suggère le top-N candidats à wikilinker pour une fiche, par scoring metadata (
 
 ```powershell
 # Pour une fiche existante
-powershell -File AI/scripts/discover-links.ps1 -Path "Wiki/Concepts/RAG.md"
+powershell -File AI/scripts/discover-links.ps1 -Path "LLM & IA générative/RAG & retrieval/RAG.md"
 
 # Pour une fiche pas encore créée
 powershell -File AI/scripts/discover-links.ps1 `
     -Title "Adam optimizer" `
-    -Categorie "concept/optimization" `
+    -Categorie "ml/apprentissage-profond" `
     -Domaines "ml-eng,ai-eng" `
     -SousCategories "optimizer,gradient-descent"
 ```

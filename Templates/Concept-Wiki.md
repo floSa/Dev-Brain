@@ -2,7 +2,7 @@
 role: notion
 nom: <% tp.file.title %>
 alias: []
-categorie: concept/
+categorie: <domaine>/<sous-domaine>
 domaines: []
 tags: []
 ---

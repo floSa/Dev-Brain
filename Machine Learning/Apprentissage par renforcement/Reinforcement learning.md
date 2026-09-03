@@ -58,5 +58,5 @@ tags: [reinforcement-learning, markov-decision-process]
 
 - Sutton & Barto — *Reinforcement Learning: An Introduction* (2e éd.) — la référence.
 - David Silver — *RL Course* (UCL/DeepMind) ; OpenAI *Spinning Up in Deep RL*.
-- Suites du cluster (`concept/rl`) : [[Q-learning and DQN]], [[Policy gradient]], [[PPO]], [[Actor-Critic methods]], [[Model-based RL]], [[Offline RL]], [[Imitation learning]], [[Reward shaping and hacking]].
+- Suites du dossier « Apprentissage par renforcement » : [[Q-learning and DQN]], [[Policy gradient]], [[PPO]], [[Actor-Critic methods]], [[Model-based RL]], [[Offline RL]], [[Imitation learning]], [[Reward shaping and hacking]].
 - Jeux & planification : [[Monte Carlo Tree Search]], [[AlphaZero and self-play]], [[Counterfactual Regret Minimization]], [[Théorie des jeux]].

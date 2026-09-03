@@ -101,19 +101,12 @@ Ce que `ls` rend, ligne par ligne : le hub du dossier (`<Dossier>.md`), le ou le
 (P3), et les autres `.md` — les pairs (P5). Il n'y a rien d'autre à chercher, et c'est tout
 l'intérêt de l'arbre : **plus rien à déduire des tags.**
 
-### L'exception notion — datée, et la seule
+### L'exception notion — levée le 2026-09-05
 
-P4 est la seule ligne que `ls` ne rend pas encore. Les **297 notions** vivent toujours sous
-`Wiki/Concepts/`, et c'est le **lot 4** qui les descendra dans l'arbre. Jusque-là, la notion
-du sujet se trouve par l'index, pas par le dossier :
-
-```bash
-uv run AI/scripts/query_index.py --role notion --categorie "concept/<sous-domaine>" --fields nom,path
-```
-
-Le hub du dossier la nomme souvent déjà, et la section `## Liens` d'un pair aussi — les lire
-est le chemin le plus court. Après le lot 4, cette ligne rentrera dans le `ls` comme les
-autres, et ce paragraphe disparaîtra.
+P4 était la seule ligne que `ls` ne rendait pas : les 297 notions vivaient sous
+`Wiki/Concepts/`, hors de l'arbre, et il fallait les chercher par l'index. **Le lot 4 les a
+toutes descendues** — une notion se range désormais par son domaine, comme une brique, et le
+`ls` du dossier la rend au même titre que ses pairs. Il n'y a plus d'exception.
 
 ---
 
@@ -195,7 +188,7 @@ ne l'est pas : proposer, et attendre.
    P1 hub du dossier      : Bases de données/Vectoriel/Vectoriel.md
    P2 hubs parents        : Bases de données/Bases de données.md
    P3 comparatif          : Bases de données/Vectoriel/Comparatif - Bases vectorielles.base
-   P4 notion              : Wiki/Concepts/Bases de données vectorielles.md
+   P4 notion              : Bases de données/Vectoriel/Bases de données vectorielles.md
    P5 briques pairs       : Annoy, Chroma, Faiss, LanceDB, Milvus, Pinecone, Qdrant,
                             ScaNN, Weaviate, hnswlib, pgvector  (11)
    P6 pitchs à réinjecter : chez les pairs retenus en alternatives — à l'étape 7

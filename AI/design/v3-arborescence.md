@@ -914,12 +914,13 @@ et aucune brique n'a bougé.
   une page et reste le seul touché. `data/eda` (3), `data/format` (4),
   `data/synthetique` (3), `data/streaming` (2), `data/ingestion` (2) et la nouvelle
   `data/fiabilite` (4) restent sous le seuil
-- [~] notions recatégorisées — **lot 4, 2026-09-05 : 8 sur 13.** Le constat du lot 3
-  (« aucune n'est propre à ce domaine ») s'est vérifié : **5 appellent un autre
-  domaine** et n'ont PAS été déplacées, par consigne de floSa — une notion qui appelle
-  un sous-domaine hors du périmètre du lot se remonte, elle ne se déplace pas. Elles
-  restent sous `Wiki/Concepts/`, et `concept/data` reste donc dans le vocabulaire de
-  `taxonomie.md`, seule valeur `concept/*` survivante d'un domaine traité
+- [x] notions recatégorisées — **lot 4, 2026-09-05 : 13 sur 13, en deux passages.** Le
+  constat du lot 3 (« aucune n'est propre à ce domaine ») s'est vérifié : **5 appelaient
+  un autre domaine** et n'ont pas été déplacées au premier passage, par consigne de
+  floSa — une notion qui appelle un sous-domaine hors du périmètre du lot se remonte,
+  elle ne se déplace pas. Le second passage, pris **par domaine d'accueil**, les a
+  rangées le même jour : 4 dans « Bases de données/ », 1 dans « Outils de
+  développement/ ». La valeur de notion du domaine est sortie du vocabulaire avec elles
 - [ ] fiches au nouveau gabarit — lot 6
 
 **Scraping/** — `data/scraping` — 10 pages

@@ -36,7 +36,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 - Découvrir un jeu de données inconnu → [[ydata-profiling]] ; comparer deux jeux → [[sweetviz]] ; comprendre la structure des trous → [[missingno]].
 - Répliquer une base source sans la recharger entière → [[Change Data Capture (CDC)]].
 - Rendre un pipeline rejouable, contractuel, reproductible → [[ELT vs ETL & idempotence]], [[Contrats de données & qualité]], [[Versionnage de données]].
-- Cinq notions **ne sont pas ici**, et c'est délibéré : [[ORM]], [[Migrations de schéma]], [[Bases de données vectorielles]] et [[Index ANN — internes]] sont descendues dans [[Bases de données]], [[Notebooks-as-code]] dans [[Outils de développement]]. Elles portaient `concept/data` parce que la galaxie wiki n'avait pas de valeur plus fine ; leur sujet est le moteur ou l'outil, pas le pipeline.
+- Cinq notions **ne sont pas ici**, et c'est délibéré : [[ORM]], [[Migrations de schéma]], [[Bases de données vectorielles]] et [[Index ANN — internes]] sont descendues dans [[Bases de données]], [[Notebooks-as-code]] dans [[Outils de développement]]. Elles portaient toutes la même catégorie de notion, parce que la galaxie wiki n'avait pas de valeur plus fine ; leur sujet est le moteur ou l'outil, pas le pipeline.
 
 <!-- AUTO:START -->
 ### Sous-domaines
