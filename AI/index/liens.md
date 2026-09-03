@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 716 pages actives.
+> 717 pages actives.
 
 ## Par page
 
@@ -508,7 +508,7 @@
 ### hdbscan  ·  brique
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[K-Means]], [[Scikit-Learn]], [[umap-learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[Scikit-Learn]], [[umap-learn]]
+- liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[Non supervisé]], [[Scikit-Learn]], [[umap-learn]]
 
 ### Headroom  ·  brique
 - tags : `llm`, `context-engineering`, `token-optimization`, `caching`, `mcp`
@@ -993,7 +993,7 @@
 ### PaCMAP  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Non supervisé]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1178,7 +1178,7 @@
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[STUMPY]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[One-Class SVM]], [[STUMPY]]
+- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[STUMPY]]
 
 ### pytest  ·  brique
 - tags : `testing`
@@ -1603,7 +1603,7 @@
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[Non supervisé]], [[PaCMAP]], [[Réduction de dimension]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
 
 ### Unsloth  ·  brique
 - tags : `fine-tuning`, `memory-optimization`, `quantization`, `gpu`, `llm`
@@ -1717,8 +1717,8 @@
 
 ### Analyse factorielle  ·  hub
 - tags : `factor-analysis`, `dimensionality-reduction`, `unsupervised`, `manifold`, `clustering`, `projection`
-- liens sortants : [[CA]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Machine Learning]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[PaCMAP]], [[Prince]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Algèbre linéaire]], [[Mathématiques]], [[Statistiques & inférence]]
+- liens sortants : [[CA]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Machine Learning]], [[Manifold learning]], [[NMF]], [[Non supervisé]], [[PCA]], [[PGA]], [[PaCMAP]], [[Prince]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Algèbre linéaire]], [[Mathématiques]], [[Non supervisé]], [[Statistiques & inférence]]
 
 ### Apprentissage par renforcement  ·  hub
 - tags : `reinforcement-learning`, `markov-decision-process`, `policy-gradient`, `value-function`, `exploration-exploitation`, `offline-rl`, `imitation-learning`, `game-theory`, `self-play`
@@ -1822,7 +1822,7 @@
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
+- liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
 - liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Engineering]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Observabilité des LLM]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
@@ -1854,6 +1854,11 @@
 - tags : `nlp`, `ner`, `sequence-labeling`, `text-classification`, `information-retrieval`, `tokenization`, `string-matching`
 - liens sortants : [[BM25]], [[Classification de texte]], [[Comparatif - NLP]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[LLM & IA générative]], [[NER et étiquetage de séquence]], [[NLTK]], [[Recherche]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[Traitement du langage naturel]], [[Vectoriel]], [[embeddings]], [[pytorch-crf]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]]
 - liens entrants : [[Apprentissage profond]], [[Machine Learning]]
+
+### Non supervisé  ·  hub
+- tags : `unsupervised`, `clustering`, `dimensionality-reduction`, `anomaly-detection`, `manifold`
+- liens sortants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Gaussian Mixture Models (GMM)]], [[ICA]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[Manifold learning]], [[NMF]], [[One-Class SVM]], [[PaCMAP]], [[PyOD]], [[Socle]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Socle]]
 
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
@@ -1952,8 +1957,8 @@
 
 ### Socle  ·  hub
 - tags : `supervised`, `classification`, `regression`, `linear-model`, `ml-pipeline`
-- liens sortants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]], [[Évaluation de modèles]]
-- liens entrants : [[Machine Learning]], [[Tabulaire]]
+- liens sortants : [[Analyse discriminante]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Non supervisé]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]], [[Évaluation de modèles]]
+- liens entrants : [[Machine Learning]], [[Non supervisé]], [[Tabulaire]]
 
 ### Sortie typée  ·  hub
 - tags : `structured-output`, `decoding`, `data-validation`
@@ -2143,7 +2148,7 @@
 ### Apprentissage non supervisé  ·  notion
 - tags : `unsupervised`, `clustering`
 - liens sortants : [[Apprentissage supervisé]], [[CA]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Eigendecomposition]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[Prince]], [[PyOD]], [[Reinforcement learning]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[embeddings]], [[hdbscan]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Apprentissage supervisé]], [[Autoencodeurs]], [[Clustering]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[One-Class SVM]], [[Réduction de dimension]], [[Socle]], [[Types de données et choix de modèle]]
+- liens entrants : [[Apprentissage supervisé]], [[Autoencodeurs]], [[Clustering]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Réduction de dimension]], [[Types de données et choix de modèle]]
 
 ### Apprentissage supervisé  ·  notion
 - tags : `supervised`, `classification`, `regression`
@@ -2293,7 +2298,7 @@
 ### Classification hiérarchique (CAH)  ·  notion
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[HCPC]], [[K-Means]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Machine Learning]], [[Scikit-Learn]], [[scipy.stats]]
+- liens entrants : [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Machine Learning]], [[Non supervisé]], [[Scikit-Learn]], [[scipy.stats]]
 
 ### Classification metrics  ·  notion
 - tags : `model-evaluation`, `classification`, `supervised`
@@ -2303,17 +2308,17 @@
 ### Clustering  ·  notion
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Mise à l'échelle]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Machine Learning]], [[Mise à l'échelle]], [[NMF]], [[Scikit-Learn]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Machine Learning]], [[Mise à l'échelle]], [[NMF]], [[Non supervisé]], [[Scikit-Learn]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]]
 
 ### Clustering evaluation  ·  notion
 - tags : `model-evaluation`, `clustering`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[K-Means]], [[Réduction de dimension]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Apprentissage non supervisé]], [[Machine Learning]], [[Validation croisée]], [[k-médoïds (PAM)]]
+- liens entrants : [[Apprentissage non supervisé]], [[Machine Learning]], [[Non supervisé]], [[Validation croisée]], [[k-médoïds (PAM)]]
 
 ### Clustering hiérarchique par densité  ·  notion
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[Scikit-Learn]], [[hdbscan]], [[umap-learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Machine Learning]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Machine Learning]], [[Non supervisé]], [[Scikit-Learn]], [[hdbscan]], [[t-SNE and UMAP]]
 
 ### CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -2388,7 +2393,7 @@
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[K-Means]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Local Outlier Factor]], [[Machine Learning]], [[Scikit-Learn]], [[Time series anomaly detection]], [[hdbscan]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Détection d'outliers multivariée]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[K-Means]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[Scikit-Learn]], [[Time series anomaly detection]], [[hdbscan]]
 
 ### Decoding strategies  ·  notion
 - tags : `decoding`, `llm`, `nlp`
@@ -2423,12 +2428,12 @@
 ### Détection d'outliers multivariée  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Clustering]], [[DBSCAN]], [[Data drift]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Mise à l'échelle]], [[PyOD]], [[Time series anomaly detection]]
-- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[One-Class SVM]], [[PyOD]], [[Time series anomaly detection]]
+- liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Non supervisé]], [[One-Class SVM]], [[PyOD]], [[Time series anomaly detection]]
 
 ### Détection d'outliers univariée  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Détection d'outliers multivariée]], [[Imbalanced classification]], [[Mise à l'échelle]], [[Time series anomaly detection]]
-- liens entrants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[EDA automatisée & profiling]], [[ICA]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[One-Class SVM]], [[PyOD]], [[Régression quantile]], [[STUMPY]], [[Time series anomaly detection]]
+- liens entrants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[EDA automatisée & profiling]], [[ICA]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[PyOD]], [[Régression quantile]], [[STUMPY]], [[Time series anomaly detection]]
 
 ### EDA automatisée & profiling  ·  notion
 - tags : `eda`, `feature-engineering`, `missing-data`
@@ -2448,7 +2453,7 @@
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
 - liens sortants : [[Bases de données vectorielles]], [[Clustering]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Réduction de dimension]], [[TF-IDF]], [[t-SNE and UMAP]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Non supervisé]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
 
 ### Encodage des variables catégorielles  ·  notion
 - tags : `feature-engineering`
@@ -2548,7 +2553,7 @@
 ### Gaussian Mixture Models (GMM)  ·  notion
 - tags : `clustering`, `unsupervised`, `maximum-likelihood`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[K-Means]], [[Scikit-Learn]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[Gaussian Process]], [[HCPC]], [[Isolation Forest]], [[K-Means]], [[Machine Learning]], [[One-Class SVM]], [[Scikit-Learn]]
+- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Clustering]], [[Clustering evaluation]], [[Gaussian Process]], [[HCPC]], [[Isolation Forest]], [[K-Means]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Scikit-Learn]]
 
 ### Gaussian Process  ·  notion
 - tags : `supervised`, `regression`, `bayesian`, `non-parametric`
@@ -2633,7 +2638,7 @@
 ### ICA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Détection d'outliers univariée]], [[Matrix decompositions]], [[Mutual information]], [[NMF]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[Shannon entropy]], [[Sparse autoencoders]], [[Théorème central limite]], [[Traitement du signal]], [[interpreto]], [[scipy.signal]]
-- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Matrix decompositions]], [[NMF]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Matrix decompositions]], [[NMF]], [[Non supervisé]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
 
 ### Image generation  ·  notion
 - tags : `generative-model`, `image-generation`, `diffusion`, `multimodal`
@@ -2703,7 +2708,7 @@
 ### Isolation Forest  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `tree-based`, `ensemble`
 - liens sortants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Extra Trees]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Mise à l'échelle]], [[One-Class SVM]], [[PyOD]], [[Random Forest]], [[River]], [[Scikit-Learn]], [[Sélection de variables]], [[Time series anomaly detection]], [[Types de données et choix de modèle]], [[k-NN]]
-- liens entrants : [[Apprentissage non supervisé]], [[Arbres de décision]], [[Détection d'outliers multivariée]], [[Extra Trees]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Machine Learning]], [[One-Class SVM]], [[Random Forest]]
+- liens entrants : [[Apprentissage non supervisé]], [[Arbres de décision]], [[Détection d'outliers multivariée]], [[Extra Trees]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Random Forest]]
 
 ### Jailbreaking and defenses  ·  notion
 - tags : `jailbreak`, `safety`, `llm`
@@ -2718,12 +2723,12 @@
 ### K-Means  ·  notion
 - tags : `clustering`, `unsupervised`
 - liens sortants : [[Classification hiérarchique (CAH)]], [[Clustering]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[Scikit-Learn]], [[k-médoïds (PAM)]]
-- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[Machine Learning]], [[Mise à l'échelle]], [[NMF]], [[Scikit-Learn]], [[hdbscan]], [[k-médoïds (PAM)]]
+- liens entrants : [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[DBSCAN]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[Machine Learning]], [[Mise à l'échelle]], [[NMF]], [[Non supervisé]], [[Scikit-Learn]], [[hdbscan]], [[k-médoïds (PAM)]]
 
 ### k-médoïds (PAM)  ·  notion
 - tags : `unsupervised`, `clustering`
 - liens sortants : [[Clustering]], [[Clustering evaluation]], [[K-Means]]
-- liens entrants : [[K-Means]], [[Machine Learning]], [[k-NN]]
+- liens entrants : [[K-Means]], [[Machine Learning]], [[Non supervisé]], [[k-NN]]
 
 ### k-NN  ·  notion
 - tags : `supervised`, `classification`, `regression`
@@ -2778,7 +2783,7 @@
 ### Local Outlier Factor  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[PyOD]], [[Scikit-Learn]], [[embeddings]], [[k-NN]]
-- liens entrants : [[Apprentissage non supervisé]], [[Isolation Forest]], [[Machine Learning]], [[One-Class SVM]]
+- liens entrants : [[Apprentissage non supervisé]], [[Isolation Forest]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]]
 
 ### Loi des grands nombres  ·  notion
 - tags : `probability`, `convergence`
@@ -2803,7 +2808,7 @@
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[PCA]], [[PGA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Réduction de dimension]], [[t-SNE and UMAP]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Non supervisé]], [[Réduction de dimension]], [[t-SNE and UMAP]]
 
 ### MANOVA et tests multivariés  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `multivariate`, `effect-size`
@@ -2963,7 +2968,7 @@
 ### NMF  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Clustering]], [[ICA]], [[K-Means]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Régularisation]], [[STFT et spectrogramme]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Systèmes de recommandation]], [[TF-IDF]], [[interpreto]]
-- liens entrants : [[Analyse factorielle]], [[ICA]], [[Machine Learning]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
+- liens entrants : [[Analyse factorielle]], [[ICA]], [[Machine Learning]], [[Matrix decompositions]], [[Non supervisé]], [[PCA]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[interpreto]]
 
 ### No Free Lunch theorem  ·  notion
 - tags : `learning-theory`, `no-free-lunch`
@@ -2993,7 +2998,7 @@
 ### One-Class SVM  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Gaussian Mixture Models (GMM)]], [[Isolation Forest]], [[Local Outlier Factor]], [[Mise à l'échelle]], [[PyOD]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
-- liens entrants : [[Apprentissage non supervisé]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]]
+- liens entrants : [[Apprentissage non supervisé]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]]
 
 ### Optimal transport  ·  notion
 - tags : `optimization`, `optimal-transport`
@@ -3383,7 +3388,7 @@
 ### t-SNE and UMAP  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Clustering hiérarchique par densité]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[Non supervisé]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
 
 ### Test du khi-deux  ·  notion
 - tags : `hypothesis-testing`, `p-value`
@@ -3595,7 +3600,7 @@
 - `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, Systèmes IA, Sécurité, promptfoo
 - `alignment` : Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
-- `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
+- `anomaly-detection` : Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
 - `api-client` : Bruno, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
@@ -3617,7 +3622,7 @@
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
 - `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
-- `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, hdbscan, k-médoïds (PAM)
+- `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, Non supervisé, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
@@ -3661,7 +3666,7 @@
 - `diagram-as-code` : Archify, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
-- `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
+- `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
 - `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
@@ -3739,7 +3744,7 @@
 - `logging` : Loki, Observabilité  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
-- `manifold` : Analyse factorielle, Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `manifold` : Analyse factorielle, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector  — pas de page concept dédiée
 - `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Apprentissage par renforcement, Markov Decision Process, Reinforcement learning
@@ -3890,7 +3895,7 @@
 - `transformers` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `type-hints` : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer  — pas de page concept dédiée
-- `unsupervised` : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `unsupervised` : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `value-function` : Actor-Critic methods, Apprentissage par renforcement, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
 - `vc-dimension` : Théorie de l'apprentissage, VC dimension
@@ -4001,7 +4006,7 @@
 - `local-llm` (porté par : Assistants, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Automatisation no-code, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, PraisonAI, Windmill, Zapier, gumloop, n8n)
-- `manifold` (porté par : Analyse factorielle, Manifold learning, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
+- `manifold` (porté par : Analyse factorielle, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector)
 - `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD)
@@ -4092,7 +4097,7 @@
 - `transformers` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost)
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
-- `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
+- `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)

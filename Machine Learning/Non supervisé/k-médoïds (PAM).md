@@ -2,7 +2,7 @@
 role: notion
 nom: k-médoïds (PAM)
 alias: [k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [unsupervised, clustering]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: t-SNE and UMAP
 alias: [t-SNE, UMAP, visualisation haute dimension]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [dimensionality-reduction, manifold, unsupervised]
 ---

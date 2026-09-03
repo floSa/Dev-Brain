@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 716 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 717 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -535,32 +535,15 @@
 ## Notions — ce qu'il faut comprendre
 
 ### concept/ml
-- **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
-- **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
-- **Clustering** — domaines : data-sci · alias : Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement
-- **Clustering evaluation** — domaines : data-sci · alias : Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV
-- **Clustering hiérarchique par densité** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
-- **DBSCAN** — domaines : data-sci · alias : Density-Based Spatial Clustering, Density-Based Spatial Clustering of Applications with Noise
 - **Déploiement de modèles** — domaines : mlops · alias : model deployment, déploiement de modèle, canary, blue-green, shadow deployment, progressive delivery, déploiement progressif, rollout
-- **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
-- **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
 - **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
 - **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
-- **Gaussian Mixture Models (GMM)** — domaines : data-sci · alias : GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens
-- **ICA** — domaines : data-sci · alias : Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation
-- **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
-- **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
-- **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
-- **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
 - **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
-- **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
-- **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
-- **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
 
 ### data/fiabilite
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
@@ -764,6 +747,26 @@
 - **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
 - **Traitement du langage naturel** — domaines : data-sci, ml-eng, ai-eng · alias : NLP, natural language processing, TALN, TAL, traitement automatique du langage
 
+### ml/non-supervise
+- **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
+- **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
+- **Clustering** — domaines : data-sci · alias : Partitionnement, Partitionnement non supervisé, Cluster analysis, Analyse de clusters, Regroupement
+- **Clustering evaluation** — domaines : data-sci · alias : Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV
+- **Clustering hiérarchique par densité** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
+- **DBSCAN** — domaines : data-sci · alias : Density-Based Spatial Clustering, Density-Based Spatial Clustering of Applications with Noise
+- **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
+- **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
+- **Gaussian Mixture Models (GMM)** — domaines : data-sci · alias : GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens
+- **ICA** — domaines : data-sci · alias : Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation
+- **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
+- **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
+- **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
+- **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
+- **Manifold learning** — domaines : data-sci · alias : manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding
+- **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
+- **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
+- **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
+
 ### ml/rl
 - **Actor-Critic methods** — domaines : ml-eng · alias : actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic
 - **AlphaZero and self-play** — domaines : ml-eng, ai-eng · alias : AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play
@@ -889,7 +892,6 @@
 - **FAMD** — domaines : data-sci · alias : AFDM, Analyse factorielle de données mixtes, Factor Analysis of Mixed Data
 - **GPA** — domaines : data-sci · alias : Generalized Procrustes Analysis, Analyse procustéenne généralisée, Procruste généralisé
 - **HCPC** — domaines : data-sci · alias : Classification hiérarchique sur composantes principales, Hierarchical Clustering on Principal Components
-- **Manifold learning** — domaines : data-sci · alias : manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding
 - **MCA** — domaines : data-sci · alias : ACM, Analyse des correspondances multiples, Multiple Correspondence Analysis
 - **MFA** — domaines : data-sci · alias : AFM, Analyse factorielle multiple, Multiple Factor Analysis
 - **PCA** — domaines : data-sci · alias : ACP, Analyse en composantes principales, Principal Component Analysis
@@ -971,6 +973,7 @@
 - **Modèles de langage** — Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
+- **Non supervisé** — Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
 - **Observabilité des LLM** — Voir ce qu'une application LLM fait en production — traces, coût, latence, qualité sur le trafic réel.

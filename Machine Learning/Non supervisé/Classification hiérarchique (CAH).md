@@ -2,7 +2,7 @@
 role: notion
 nom: Classification hiérarchique (CAH)
 alias: [CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [clustering, unsupervised]
 ---

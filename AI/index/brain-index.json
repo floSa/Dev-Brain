@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 716,
+  "count": 717,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -152,6 +152,7 @@
       "Détection d'outliers univariée",
       "Isolation Forest",
       "Local Outlier Factor",
+      "Non supervisé",
       "One-Class SVM",
       "PyOD",
       "STUMPY",
@@ -323,6 +324,7 @@
       "HCPC",
       "K-Means",
       "Machine Learning",
+      "Non supervisé",
       "hdbscan",
       "k-médoïds (PAM)"
     ],
@@ -736,6 +738,7 @@
       "MFA",
       "Manifold learning",
       "NMF",
+      "Non supervisé",
       "PCA",
       "PGA",
       "PaCMAP",
@@ -1543,6 +1546,7 @@
     "manifold": [
       "Analyse factorielle",
       "Manifold learning",
+      "Non supervisé",
       "PGA",
       "PaCMAP",
       "t-SNE and UMAP",
@@ -2837,6 +2841,7 @@
       "Machine Learning",
       "Manifold learning",
       "NMF",
+      "Non supervisé",
       "One-Class SVM",
       "PCA",
       "PGA",
@@ -13517,33 +13522,465 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Optuna.md",
-      "nom": "Optuna",
+      "path": "Machine Learning/Non supervisé/Apprentissage non supervisé.md",
+      "nom": "Apprentissage non supervisé",
       "alias": [
-        "optuna",
-        "TPESampler"
+        "Unsupervised learning",
+        "Apprentissage non supervise",
+        "Méthodes non supervisées"
       ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
       "tags": [
-        "hyperparameter-tuning",
-        "bayesian",
-        "distributed"
+        "unsupervised",
+        "clustering"
       ],
-      "alternatives": [
-        "[[Scikit-Learn]]",
-        "[[Hyperopt]]",
-        "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
-      "path": "Machine Learning/PaCMAP.md",
+      "path": "Machine Learning/Non supervisé/Classification hiérarchique (CAH).md",
+      "nom": "Classification hiérarchique (CAH)",
+      "alias": [
+        "CAH",
+        "Classification ascendante hiérarchique",
+        "Hierarchical clustering",
+        "HAC",
+        "Agglomerative clustering",
+        "Dendrogramme"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Clustering evaluation.md",
+      "nom": "Clustering evaluation",
+      "alias": [
+        "Évaluation du clustering",
+        "évaluation de clustering",
+        "silhouette",
+        "indice de silhouette",
+        "ARI",
+        "Adjusted Rand Index",
+        "NMI",
+        "AMI",
+        "Davies-Bouldin",
+        "Calinski-Harabasz",
+        "DBCV"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Clustering hiérarchique par densité.md",
+      "nom": "Clustering hiérarchique par densité",
+      "alias": [
+        "Hierarchical DBSCAN",
+        "Hierarchical Density-Based Spatial Clustering"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Clustering.md",
+      "nom": "Clustering",
+      "alias": [
+        "Partitionnement",
+        "Partitionnement non supervisé",
+        "Cluster analysis",
+        "Analyse de clusters",
+        "Regroupement"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/DBSCAN.md",
+      "nom": "DBSCAN",
+      "alias": [
+        "Density-Based Spatial Clustering",
+        "Density-Based Spatial Clustering of Applications with Noise"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Détection d'outliers multivariée.md",
+      "nom": "Détection d'outliers multivariée",
+      "alias": [
+        "outliers multivarié",
+        "LOF",
+        "Isolation Forest",
+        "Elliptic Envelope",
+        "ECOD",
+        "COPOD",
+        "Mahalanobis"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Détection d'outliers univariée.md",
+      "nom": "Détection d'outliers univariée",
+      "alias": [
+        "outliers univarié",
+        "Z-score",
+        "IQR",
+        "MAD",
+        "règle de Tukey",
+        "modified Z-score"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Gaussian Mixture Models (GMM).md",
+      "nom": "Gaussian Mixture Models (GMM)",
+      "alias": [
+        "GMM",
+        "Mélange de gaussiennes",
+        "Modèle de mélange gaussien",
+        "Mixture models",
+        "Mélanges gaussiens"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised",
+        "maximum-likelihood"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/ICA.md",
+      "nom": "ICA",
+      "alias": [
+        "Independent Component Analysis",
+        "Analyse en composantes indépendantes",
+        "ACI",
+        "FastICA",
+        "Séparation aveugle de sources",
+        "Blind source separation"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Isolation Forest.md",
+      "nom": "Isolation Forest",
+      "alias": [
+        "iForest",
+        "Forêt d'isolement",
+        "IsolationForest"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised",
+        "tree-based",
+        "ensemble"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/K-Means.md",
+      "nom": "K-Means",
+      "alias": [
+        "K-means",
+        "kmeans",
+        "K-moyennes",
+        "Lloyd",
+        "k-means++"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Local Outlier Factor.md",
+      "nom": "Local Outlier Factor",
+      "alias": [
+        "LOF",
+        "Facteur d'aberration locale",
+        "LocalOutlierFactor",
+        "Densité locale"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Manifold learning.md",
+      "nom": "Manifold learning",
+      "alias": [
+        "manifold learning",
+        "apprentissage de variété",
+        "Isomap",
+        "LLE",
+        "Locally Linear Embedding",
+        "Kernel PCA",
+        "Laplacian Eigenmaps",
+        "spectral embedding"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/NMF.md",
+      "nom": "NMF",
+      "alias": [
+        "Non-negative Matrix Factorization",
+        "Factorisation en matrices non négatives",
+        "Factorisation non négative",
+        "NNMF",
+        "Semi-NMF",
+        "Convex NMF"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "factor-analysis",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/Non supervisé.md",
+      "nom": "Non supervisé",
+      "alias": [
+        "unsupervised"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.",
+      "tags": [
+        "unsupervised",
+        "clustering",
+        "dimensionality-reduction",
+        "anomaly-detection",
+        "manifold"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/One-Class SVM.md",
+      "nom": "One-Class SVM",
+      "alias": [
+        "OCSVM",
+        "SVM à une classe",
+        "OneClassSVM",
+        "SGDOneClassSVM",
+        "Novelty detection"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/PaCMAP.md",
       "nom": "PaCMAP",
       "alias": [
         "pacmap",
@@ -13567,7 +14004,7 @@
       "maturite": "beta"
     },
     {
-      "path": "Machine Learning/PyOD.md",
+      "path": "Machine Learning/Non supervisé/PyOD.md",
       "nom": "PyOD",
       "alias": [
         "Python Outlier Detection",
@@ -13585,6 +14022,131 @@
       ],
       "alternatives": [
         "[[STUMPY]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Non supervisé/hdbscan.md",
+      "nom": "hdbscan",
+      "alias": [
+        "HDBSCAN library",
+        "scikit-learn-contrib hdbscan"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).",
+      "tags": [
+        "clustering",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Non supervisé/k-médoïds (PAM).md",
+      "nom": "k-médoïds (PAM)",
+      "alias": [
+        "k-medoids",
+        "PAM",
+        "Partitioning Around Medoids",
+        "k-médoïdes",
+        "CLARA"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "unsupervised",
+        "clustering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/t-SNE and UMAP.md",
+      "nom": "t-SNE and UMAP",
+      "alias": [
+        "t-SNE",
+        "UMAP",
+        "visualisation haute dimension"
+      ],
+      "role": "notion",
+      "categorie": "ml/non-supervise",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Non supervisé/umap-learn.md",
+      "nom": "umap-learn",
+      "alias": [
+        "UMAP",
+        "Uniform Manifold Approximation and Projection"
+      ],
+      "role": "brique",
+      "categorie": "ml/non-supervise",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.",
+      "tags": [
+        "dimensionality-reduction",
+        "manifold",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]",
+        "[[PaCMAP]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Optuna.md",
+      "nom": "Optuna",
+      "alias": [
+        "optuna",
+        "TPESampler"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]",
+        "[[Hyperopt]]",
+        "[[Ray Tune]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -16777,29 +17339,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/hdbscan.md",
-      "nom": "hdbscan",
-      "alias": [
-        "HDBSCAN library",
-        "scikit-learn-contrib hdbscan"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).",
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/sentence-transformers.md",
       "nom": "sentence-transformers",
       "alias": [
@@ -16821,31 +17360,6 @@
         "nlp"
       ],
       "alternatives": [],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/umap-learn.md",
-      "nom": "umap-learn",
-      "alias": [
-        "UMAP",
-        "Uniform Manifold Approximation and Projection"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.",
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]",
-        "[[PaCMAP]]"
-      ],
       "complements": [],
       "maturite": "production"
     },
@@ -19696,36 +20210,6 @@
       "maturite": null
     },
     {
-      "path": "Statistiques & inférence/Analyse factorielle/Manifold learning.md",
-      "nom": "Manifold learning",
-      "alias": [
-        "manifold learning",
-        "apprentissage de variété",
-        "Isomap",
-        "LLE",
-        "Locally Linear Embedding",
-        "Kernel PCA",
-        "Laplacian Eigenmaps",
-        "spectral embedding"
-      ],
-      "role": "notion",
-      "categorie": "stats/exploratoire",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Statistiques & inférence/Analyse factorielle/PCA.md",
       "nom": "PCA",
       "alias": [
@@ -21393,162 +21877,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Apprentissage non supervisé.md",
-      "nom": "Apprentissage non supervisé",
-      "alias": [
-        "Unsupervised learning",
-        "Apprentissage non supervise",
-        "Méthodes non supervisées"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "unsupervised",
-        "clustering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification hiérarchique (CAH).md",
-      "nom": "Classification hiérarchique (CAH)",
-      "alias": [
-        "CAH",
-        "Classification ascendante hiérarchique",
-        "Hierarchical clustering",
-        "HAC",
-        "Agglomerative clustering",
-        "Dendrogramme"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Clustering evaluation.md",
-      "nom": "Clustering evaluation",
-      "alias": [
-        "Évaluation du clustering",
-        "évaluation de clustering",
-        "silhouette",
-        "indice de silhouette",
-        "ARI",
-        "Adjusted Rand Index",
-        "NMI",
-        "AMI",
-        "Davies-Bouldin",
-        "Calinski-Harabasz",
-        "DBCV"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-evaluation",
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Clustering hiérarchique par densité.md",
-      "nom": "Clustering hiérarchique par densité",
-      "alias": [
-        "Hierarchical DBSCAN",
-        "Hierarchical Density-Based Spatial Clustering"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Clustering.md",
-      "nom": "Clustering",
-      "alias": [
-        "Partitionnement",
-        "Partitionnement non supervisé",
-        "Cluster analysis",
-        "Analyse de clusters",
-        "Regroupement"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/DBSCAN.md",
-      "nom": "DBSCAN",
-      "alias": [
-        "Density-Based Spatial Clustering",
-        "Density-Based Spatial Clustering of Applications with Noise"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Data drift.md",
       "nom": "Data drift",
       "alias": [
@@ -21600,63 +21928,6 @@
         "deployment-strategy",
         "model-serving",
         "inference"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Détection d'outliers multivariée.md",
-      "nom": "Détection d'outliers multivariée",
-      "alias": [
-        "outliers multivarié",
-        "LOF",
-        "Isolation Forest",
-        "Elliptic Envelope",
-        "ECOD",
-        "COPOD",
-        "Mahalanobis"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Détection d'outliers univariée.md",
-      "nom": "Détection d'outliers univariée",
-      "alias": [
-        "outliers univarié",
-        "Z-score",
-        "IQR",
-        "MAD",
-        "règle de Tukey",
-        "modified Z-score"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -21749,140 +22020,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Gaussian Mixture Models (GMM).md",
-      "nom": "Gaussian Mixture Models (GMM)",
-      "alias": [
-        "GMM",
-        "Mélange de gaussiennes",
-        "Modèle de mélange gaussien",
-        "Mixture models",
-        "Mélanges gaussiens"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised",
-        "maximum-likelihood"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/ICA.md",
-      "nom": "ICA",
-      "alias": [
-        "Independent Component Analysis",
-        "Analyse en composantes indépendantes",
-        "ACI",
-        "FastICA",
-        "Séparation aveugle de sources",
-        "Blind source separation"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Isolation Forest.md",
-      "nom": "Isolation Forest",
-      "alias": [
-        "iForest",
-        "Forêt d'isolement",
-        "IsolationForest"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised",
-        "tree-based",
-        "ensemble"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/K-Means.md",
-      "nom": "K-Means",
-      "alias": [
-        "K-means",
-        "kmeans",
-        "K-moyennes",
-        "Lloyd",
-        "k-means++"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Local Outlier Factor.md",
-      "nom": "Local Outlier Factor",
-      "alias": [
-        "LOF",
-        "Facteur d'aberration locale",
-        "LocalOutlierFactor",
-        "Densité locale"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Model registry & versioning.md",
       "nom": "Model registry & versioning",
       "alias": [
@@ -21932,61 +22069,6 @@
         "model-monitoring",
         "data-drift",
         "concept-drift"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/NMF.md",
-      "nom": "NMF",
-      "alias": [
-        "Non-negative Matrix Factorization",
-        "Factorisation en matrices non négatives",
-        "Factorisation non négative",
-        "NNMF",
-        "Semi-NMF",
-        "Convex NMF"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "factor-analysis",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/One-Class SVM.md",
-      "nom": "One-Class SVM",
-      "alias": [
-        "OCSVM",
-        "SVM à une classe",
-        "OneClassSVM",
-        "SGDOneClassSVM",
-        "Novelty detection"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -22043,57 +22125,6 @@
         "embeddings",
         "semantic-search",
         "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/k-médoïds (PAM).md",
-      "nom": "k-médoïds (PAM)",
-      "alias": [
-        "k-medoids",
-        "PAM",
-        "Partitioning Around Medoids",
-        "k-médoïdes",
-        "CLARA"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "unsupervised",
-        "clustering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/t-SNE and UMAP.md",
-      "nom": "t-SNE and UMAP",
-      "alias": [
-        "t-SNE",
-        "UMAP",
-        "visualisation haute dimension"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "dimensionality-reduction",
-        "manifold",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,

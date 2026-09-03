@@ -2,7 +2,7 @@
 role: notion
 nom: Clustering hiérarchique par densité
 alias: [Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [clustering, unsupervised]
 ---

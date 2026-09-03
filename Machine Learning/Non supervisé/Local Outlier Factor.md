@@ -2,7 +2,7 @@
 role: notion
 nom: Local Outlier Factor
 alias: [LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci, ml-eng]
 tags: [anomaly-detection, unsupervised]
 ---

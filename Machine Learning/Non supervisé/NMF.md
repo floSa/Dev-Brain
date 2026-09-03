@@ -2,7 +2,7 @@
 role: notion
 nom: NMF
 alias: [Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 ---

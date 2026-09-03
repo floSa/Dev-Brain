@@ -2,7 +2,7 @@
 role: notion
 nom: K-Means
 alias: [K-means, kmeans, K-moyennes, Lloyd, k-means++]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [clustering, unsupervised]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Manifold learning
 alias: [manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding]
-categorie: stats/exploratoire
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [dimensionality-reduction, manifold, unsupervised]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: ICA
 alias: [Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [dimensionality-reduction, factor-analysis, unsupervised]
 ---

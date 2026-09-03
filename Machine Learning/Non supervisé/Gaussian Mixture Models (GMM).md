@@ -2,7 +2,7 @@
 role: notion
 nom: Gaussian Mixture Models (GMM)
 alias: [GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens]
-categorie: concept/ml
+categorie: ml/non-supervise
 domaines: [data-sci]
 tags: [clustering, unsupervised, maximum-likelihood]
 ---
