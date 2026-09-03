@@ -59,9 +59,11 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-`Dev/` n'existe plus. Il reste **`Wiki/Concepts/`** — 297 notions `concept/*` que
-le lot 4 descendra dans l'arbre, et `MOC/Concepts/` avec elles : ces 10 pages sont
-aujourd'hui leur seule porte d'entrée, elles meurent le même jour.
+`Dev/` n'existe plus. Il reste **`Wiki/Concepts/`** — **217** notions `concept/*` que
+le lot 4 descendra dans l'arbre, et **5** `MOC/Concepts/` avec elles : ces pages sont
+aujourd'hui leur seule porte d'entrée, et chacune meurt le jour où il est **mesuré** que
+plus aucune notion ne dépend d'elle seule. Familles déjà rangées au 2026-09-05 :
+statistiques, mathématiques, signal, sécurité IA, et 8 des 13 notions de data.
 
 ## Skills
 

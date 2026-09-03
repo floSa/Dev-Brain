@@ -23,11 +23,14 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 
 > **Un seul arbre depuis le lot 3 de la v3.** `Dev/` n'existe plus : les 337 briques,
 > les 47 comparatifs, les 5 patterns et les 5 règles sont descendus dans l'arbre.
-> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore**, mais rétrécissent : le lot 4
-> a commencé le 2026-09-05 par « Statistiques & inférence », dont les **37 notions**
-> sont descendues dans l'arbre. Il reste **260 notions** sous `Wiki/Concepts/` et
-> **10 MOC** — dont `MOC/Concepts/Statistiques.md`, qui n'indexe plus rien et ne se
-> régénère plus. Tout ce qui suit décrit cet état-là, pas la cible finale.
+> **`Wiki/Concepts/` et `MOC/Concepts/` existent encore**, mais rétrécissent vite : au
+> 2026-09-05, le lot 4 a traité **cinq familles** — statistiques (37), mathématiques (26),
+> data (8 sur 13), signal (5), sécurité IA (4). Il reste **217 notions** sous
+> `Wiki/Concepts/` et **5 MOC**. Une MOC se **supprime** désormais, et c'est la seule
+> exception à « aucun `rm` sur une page » : quand il est **mesuré** que plus aucune notion
+> ne dépend d'elle seule pour sa R7, et jamais sur l'intuition — la mesure va dans le
+> message de commit (`AI/migration/scripts/mesure_r7.py`). Tout ce qui suit décrit cet
+> état-là, pas la cible finale.
 
 ## Identité utilisateur
 
@@ -129,12 +132,20 @@ On y ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : le **lot 4 a commencé**. Les **37** notions de statistiques vivent désormais
-dans « Statistiques & inférence/ », rangées par leur domaine comme les briques ; les **260**
-autres sont encore sous `Wiki/Concepts/`, avec les 10 `MOC/Concepts/` qui restent leur porte
-d'entrée. `Wiki/Concepts/` est donc le lieu normal d'une notion **pas encore migrée**, et
-lui seul — une notion dont le domaine est passé se range comme une brique. C'est la seule
-exception à « le dossier porte le domaine », elle est datée, et elle se referme lot à lot.
+État actuel : le **lot 4 est bien avancé**. **80** notions vivent désormais dans l'arbre,
+rangées par leur domaine comme les briques — « Statistiques & inférence/ » (37),
+« Mathématiques/ » (26), « Data & pipelines/ » (8), « Signal & audio/ » (5), « Sécurité/ »
+(4) ; les **217** autres sont encore sous `Wiki/Concepts/`, avec les 5 `MOC/Concepts/` qui
+restent leur porte d'entrée. `Wiki/Concepts/` est donc le lieu normal d'une notion **pas
+encore migrée**, et lui seul — une notion dont le domaine est passé se range comme une
+brique. C'est la seule exception à « le dossier porte le domaine », elle est datée, et elle
+se referme lot à lot.
+
+> Une nuance à connaître : **5 notions `concept/data` sont restées sous `Wiki/Concepts/`
+> alors que leur domaine a été traité**, parce qu'elles appellent « Bases de données » ou
+> « Outils de développement », hors du périmètre du lot qui a rangé « Data & pipelines ».
+> `concept/data` est donc la seule valeur `concept/*` encore vivante d'une famille traitée.
+> Les cinq sont nommées dans le corps du hub « Data & pipelines ».
 
 `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont des scaffolds **vides** — le contenu
 v1 correspondant n'a pas été remigré (voir `Documentation/perso/reservoir-v1.md`) et, la v3
@@ -174,9 +185,10 @@ Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role:
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
-Wiki/Concepts/               ← 260 notions (role: notion) — EN ATTENTE DU LOT 4
-MOC/Concepts/                ← 10 MOC générées, porte d'entrée (R7) de ce qui reste
+Wiki/Concepts/               ← 217 notions (role: notion) — EN ATTENTE DU LOT 4
+MOC/Concepts/                ← 5 MOC générées, porte d'entrée (R7) de ce qui reste
                                les deux meurent ensemble au lot 4, domaine par domaine
+                               une MOC ne se supprime QUE sur mesure R7 (cf. plus haut)
 Wiki/Outils|Workflows|Roadmaps/  ← scaffolds vides, non remigrés (cf. reservoir-v1.md)
 
 Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventions perso)

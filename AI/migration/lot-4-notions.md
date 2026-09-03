@@ -13,12 +13,18 @@ mécanique** de toute la migration.
 
 Prérequis : lot 3 fait pour le domaine concerné.
 
-> **État au 2026-09-05 — le domaine pilote est fait.** « Statistiques & inférence » a été
-> traité en premier : **37 notions rangées**, 4 sous-dossiers créés, 2 valeurs de catégorie
-> ouvertes (`stats/probabilite`, `stats/experimentation`), `concept/stats` retiré du
-> vocabulaire. Il reste **260 notions** sous `Wiki/Concepts/` et 9 MOC vivantes. Les dix
-> *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée — les lire
-> avant d'attaquer un autre domaine, en particulier les nº 1, 3 et 5.
+> **État au 2026-09-05 — cinq familles sur douze sont faites.** Le pilote
+> « Statistiques & inférence » (37 notions) a été suivi d'une seconde conversation qui a
+> traité **mathématiques (26), data (8 sur 13), signal (5) et sécurité IA (4)** — **80
+> notions rangées** au total, 5 sous-dossiers créés, 5 valeurs de catégorie ouvertes,
+> 4 valeurs `concept/*` retirées du vocabulaire, 5 MOC supprimées. Il reste **217 notions**
+> sous `Wiki/Concepts/` et **5 MOC** vivantes.
+>
+> Les *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée. Les
+> dix premières viennent du pilote — lire les nº 1, 3 et 5 avant d'attaquer un domaine. Les
+> suivantes (11 à 17) viennent de la seconde conversation ; la **nº 11 est la plus
+> importante du lot** : elle décrit un défaut que le pilote avait introduit sans le voir, et
+> qui se serait répété à chaque domaine.
 
 ## Contexte
 
@@ -63,9 +69,24 @@ une fois que le vocabulaire final est connu.
 - [x] **`stats` (37) — fait le 2026-09-05.** L'ordre s'est vérifié : deux valeurs nouvelles
       ont été nécessaires, et il a fallu écrire leur frontière contre `math/*` avant de
       savoir où rangeaient six notions. Le faire après `ml` aurait obligé à y revenir.
-- [ ] `math` (26) — le suivant. La frontière `stats/probabilite` ↔ `math/*` est déjà écrite
-      dans `taxonomie.md` : elle contraint ce lot, la relire avant de rouvrir la question.
-- [ ] `llm` (57) · [ ] `ml` (67) · [ ] les 18 sans domaine
+- [x] **`math` (26) — fait le 2026-09-05.** Trois valeurs ouvertes
+      (`math/algebre-lineaire`, `math/information`, `math/theorie-apprentissage`), une
+      élargie (`math/optimisation`), quatre sous-dossiers, zéro page au niveau du domaine.
+      L'ordre s'est vérifié une seconde fois : la frontière `stats/probabilite` ↔ `math/*`
+      écrite au pilote a tenu sans être rouverte. **Le corps du hub a rangé les 26 seul** —
+      ses quatre puces les citaient déjà toutes, une fois chacune.
+- [x] **`data` (13) — fait à 8 sur 13 le 2026-09-05.** Une valeur ouverte
+      (`data/fiabilite`), aucun sous-dossier créé. **5 notions remontées** et non
+      déplacées : elles appellent `database/*` ou `devtools/notebook`, hors du périmètre
+      du lot. `concept/data` reste donc dans le vocabulaire — seule valeur `concept/*`
+      survivante d'une famille traitée.
+- [x] **`signal` (5) — fait le 2026-09-05.** Aucune valeur ouverte ; `Traitement/` naît,
+      exactement comme `v3-arborescence.md` le décrivait depuis le lot 3.
+- [x] **`ai` (4) — fait le 2026-09-05.** Une valeur ouverte, `security/ia`, et c'est
+      l'arbitrage le plus discutable du lot : il va **contre** l'arbre de décision du
+      domaine (cf. remontée 13).
+- [ ] `llm` (56) · [ ] `dl` (52) · [ ] `ml` (67) · [ ] `rl` (17) · [ ] `ts` (13) ·
+      [ ] `nlp` (7) · [ ] les 5 notions `concept/data` remontées
 
 ### Pour chaque notion
 
@@ -88,24 +109,33 @@ une fois que le vocabulaire final est connu.
 5. Après les `git mv` : régénérer, puis **comparer les artefacts avant / après**. Les
    validateurs ne voient pas ce qui a été perdu, seulement ce qui est faux (remontée 5).
 
-### Les 18 sans domaine
+### Les 18 sans domaine — **12 traitées le 2026-09-05, 5 remontées**
 
-La plupart sont en fait évidentes une fois posée la question « de quoi ça parle » :
-`ORM` → `database/orm`, `Migrations de schéma` → `database/migration`,
-`Web scraping` → `data/scraping`, `Notebooks-as-code` → `devtools/notebook`,
-`Index ANN — internes` → `database/vecteur`. Les proposer groupées, en une seule question.
+La prévision « la plupart sont évidentes une fois posée la question de quoi ça parle » s'est
+vérifiée, et c'est justement ce qui a rendu 5 d'entre elles intraitables dans leur lot :
+elles étaient évidentes, mais **pour un autre domaine**. `ORM` → `database/orm`,
+`Migrations de schéma` → `database/migration`, `Bases de données vectorielles` et
+`Index ANN — internes` → `database/vecteur`, `Notebooks-as-code` → `devtools/notebook`.
+Consigne de floSa appliquée : une notion qui appelle un sous-domaine hors du périmètre du
+lot **se remonte, elle ne se déplace pas**. Effet de seuil mesuré pour les cinq avant de
+décider — il est nul, aucune ne forcerait de restructuration.
 
-Les notions de sécurité IA (`Prompt injection`, `Jailbreaking and defenses`, `Guardrails`)
-n'ont pas de domaine dans le vocabulaire actuel : c'est une **vraie** décision, à remonter.
+`Web scraping` → `data/scraping` est la seule des cinq « évidentes » qui restait dans son
+domaine ; elle est descendue.
+
+Les notions de sécurité IA n'avaient effectivement pas de domaine : tranchées en
+`security/ia` par floSa, contre l'arbre de décision. Cf. remontée 13.
 
 ## Critères d'acceptation
 
 Ils se vérifient **par domaine**, pas seulement à la fin — c'est ce qui permet de clore un
 domaine à la fois. Entre parenthèses, l'état du pilote `stats`.
 
-- [ ] Aucune notion ne reste sur une `categorie: concept/*`. *(stats : fait, et la valeur
-      `concept/stats` est retirée du bloc de `taxonomie.md` — laisser une valeur sans page
-      autorise une rechute silencieuse)*
+- [ ] Aucune notion ne reste sur une `categorie: concept/*`. *(stats, math, signal, ai :
+      fait, et les quatre valeurs sont retirées du bloc de `taxonomie.md` — laisser une
+      valeur sans page autorise une rechute silencieuse. **`data` est l'exception** : 5 de
+      ses 13 notions sont remontées, la valeur reste, et l'exception est écrite à côté
+      d'elle dans `taxonomie.md`)*
 - [ ] Toute valeur nouvelle de `categorie:` est écrite dans `taxonomie.md` avec sa frontière,
       et son libellé de dossier est ajouté à `DOM_LABEL` ou `SUB_LABEL`. *(stats : fait pour
       `stats/probabilite` et `stats/experimentation` ; ce dernier reste sous le seuil, donc
@@ -119,6 +149,13 @@ domaine à la fois. Entre parenthèses, l'état du pilote `stats`.
 - [ ] Les artefacts générés sont comparés **avant / après** le déplacement, et pas seulement
       revalidés — cf. remontée 5, où `Métiers/` avait perdu une ligne sans qu'aucune règle
       s'en aperçoive.
+- [ ] **Le jeu d'avertissements est comparé ligne à ligne, pas seulement son compte.** Une
+      BAISSE du compteur est un signal, pas un progrès : c'est ainsi que la remontée 11 a
+      été trouvée. *(les quatre domaines du 2026-09-05 : diff vide à chaque commit, sauf le
+      chemin d'un `.base` déplacé)*
+- [ ] Une `MOC/Concepts/` ne se supprime qu'après **mesure** que zéro notion ne dépend
+      d'elle seule pour sa R7, et que `build_mocs.py` ne la régénère plus. La mesure va dans
+      le message de commit. C'est la seule exception à « aucun `rm` sur une page ».
 
 ## Interdictions
 
@@ -252,9 +289,13 @@ moniteur de trafic réseau »). Simplement, **aucune notion `Wiki/` ne le portai
 n'avait jamais pu naître : le périmètre v2 masquait un axe que la gouvernance déclarait déjà.
 Trois briques le portent — `Sniffnet`, `croc`, `osint4all`.
 
-Il est câblé dans `Home.md`, qui annonce désormais 6 axes, et `CLAUDE.md` suit. **À trancher :
-garder 6 axes, ou retirer `infra-ops` de `themes.md`.** Revenir en arrière coûte une ligne dans
-`build_mocs.py` et une suppression de page.
+Il est câblé dans `Home.md`, qui annonce désormais 6 axes, et `CLAUDE.md` suit.
+~~**À trancher : garder 6 axes, ou retirer `infra-ops` de `themes.md`.**~~ — **tranché le
+2026-09-05 : les 6 axes sont confirmés, `infra-ops` compris.** Motif de floSa : il est
+déclaré dans `themes.md` depuis le 2026-09-02, c'est une décision prise et non un accident ;
+3 briques le portent ; et pour une spécialité on-prem c'est l'axe le plus concret des six.
+Les 5 « domaines de prédilection » de `CLAUDE.md` décrivent l'identité de floSa, pas la
+taxonomie du vault — les deux listes n'ont pas à coïncider.
 
 Leçon plus large : **un générateur dont le périmètre est plus étroit que la gouvernance ne
 signale pas l'écart, il le cache.** Ici l'écart a tenu trois jours ; sur un champ moins visible
@@ -277,8 +318,12 @@ aucun `rm` sur une page, et une suppression se demande — c'est le traitement d
 boucle `MOC/Concepts` ne voit que les pages `Wiki/`, et plus aucune ne porte `concept/stats`) :
 elle est **figée**, avec 37 liens nus qui résolvent encore.
 
-**À décider par floSa, et la réponse vaudra pour les 9 autres** : les supprimer au fil des lots
-dès que la mesure est remplie, ou toutes ensemble à la fin du lot 4.
+~~**À décider par floSa, et la réponse vaudra pour les 9 autres**~~ — **tranché le
+2026-09-05 : au fil des lots, et seulement sur mesure.** Une `MOC/Concepts/` se supprime dès
+que la mesure R7 est remplie **et** que `build_mocs.py` ne la régénère plus ; la mesure va
+dans le message de commit. C'est la seule exception à « aucun `rm` sur une page » de la
+migration v3, et elle est conditionnée à cette mesure, jamais à l'intuition. Cinq sont
+mortes le jour même ; il en reste 5. Cf. remontée 18.
 
 ### 8. Le libellé d'un sous-dossier n'est pas le nom de sa catégorie
 
@@ -320,3 +365,211 @@ dans `build_index.FIELDS`, `query_index.py` porte `--langage` et le renvoie par 
 le champ. Réserve écrite dans le skill : `langage:` est une enum **ouverte**, donc un filtre
 exact ne trouve pas une brique écrite « C++ / Python » quand on demande « Python » — `Stan` est
 dans ce cas.
+
+---
+
+## Remontées — quatre domaines, 2026-09-05
+
+`math` (26), `data` (8 sur 13, 5 remontées), `signal` (5), `ai` (4). Soit **43 notions
+rangées**, 5 sous-dossiers créés, 3 briques déplacées par ricochet, 1 comparatif déplacé,
+5 valeurs de catégorie ouvertes, 4 valeurs `concept/*` retirées, 5 MOC supprimées.
+Aucune violation dure à aucun moment. Le compteur d'avertissements est revenu à **149**,
+son niveau d'avant le lot — après être passé par 148, et c'est cette baisse qui a révélé
+la remontée 11.
+
+### 11. Un comparatif absorbait les notions, et le validateur devenait plus SILENCIEUX
+
+**La remontée la plus importante du lot, et elle date du pilote.**
+
+Jusqu'au lot 3, un `.base` qui filtrait `categorie == "<dom>/<sub>"` ne pouvait sélectionner
+que des **briques** : les notions portaient `concept/*`, un vocabulaire disjoint. Le lot 4
+supprime cette disjonction — une notion se range désormais sur la même `categorie:` que les
+briques de son dossier. Chaque vue de comparatif sans clause de rôle absorbe donc, en
+silence, les notions de son sous-domaine.
+
+Mesure au moment de la découverte : **39 des 47 comparatifs** filtrent une catégorie sans
+clause de rôle, et **2 étaient déjà corrompus, 45 pages absorbées** —
+`Comparatif - Outils stats` (47 membres dont 37 notions, **depuis le pilote du 2026-09-05**,
+sans que rien ne le signale) et `Comparatif - Solveurs d'optimisation` (9 membres dont 8).
+
+Ce que R8 ne peut pas voir, et c'est le cœur : **R8b ne se plaint que d'un comparatif à
+MOINS de deux membres**. Ajouter des membres le rend plus silencieux. Le défaut a donc le
+profil de la remontée 5 — progressif, invisible — plus une propriété pire : il **améliore
+le compteur en dégradant le vault**. Concrètement, `Comparatif - Solveurs d'optimisation`
+n'avait qu'un membre et déclenchait R8b ; en absorbant 8 notions il est passé à 9 membres,
+et l'avertissement a disparu.
+
+Il a été trouvé parce que le compteur est passé de **149 à 148**. Aucun validateur, aucune
+règle, aucun `git diff` ne le disait.
+
+> **Règle qui en sort, et elle complète la remontée 5 :** comparer le **jeu**
+> d'avertissements ligne à ligne, pas son compte. Une baisse est un signal à expliquer
+> avant d'être un progrès à encaisser. Un avertissement qui disparaît sans qu'on l'ait
+> corrigé décrit toujours quelque chose.
+
+Correctif appliqué dans le même lot, en commit isolé : `role == "brique"` ajouté au filtre
+des 39 (`AI/migration/scripts/patch_bases_role.py`, mesure par
+`AI/migration/scripts/mesure_bases_role.py`, qui réutilise l'évaluateur de filtres de
+`check_brain` pour avoir exactement la même sémantique). C'est la substitution que le lot 3
+avait déjà appliquée à 9 comparatifs (remontées 7, 14, 16). Elle est fidèle par
+construction — un ET strict avec un prédicat vrai pour toute brique ne peut retirer aucune
+brique — et vérifiée après : 0 page absorbée contre 45.
+
+**Pour les lots 4 restants** : c'est fait, il n'y a rien à refaire. Mais le mécanisme mérite
+d'être retenu, parce qu'il se rejouera à l'identique **au lot 5**, quand les 47 `.base`
+deviendront des pages `role: comparatif` : une page de comparatif portera une `categorie:`
+et entrera à son tour dans le champ des filtres.
+
+### 12. L'étape 0 ne fait pas qu'aider — sur « Mathématiques », elle a tout fait
+
+Le pilote avait établi que le corps du hub range mieux que les tags. Sur « Mathématiques »,
+c'est plus fort que ça : ses **quatre puces citent les 26 notions nommément, une seule fois
+chacune**. C'est une partition exacte, écrite au lot 3 par quelqu'un qui connaissait le
+domaine. Il n'y avait rien à arbitrer, seulement à lire — et à vérifier page par page que la
+partition tenait, ce qu'elle a fait sur 25 cas sur 26.
+
+Le vingt-sixième est instructif : `Optimal transport` porte le tag `optimization`, et le hub
+le range en théorie de l'information. Le hub a raison — la page ouvre sur « un problème
+d'optimisation linéaire » mais enchaîne sur « fournit une géométrie sur l'espace des
+distributions », et sa valeur optimale **est** la `Wasserstein distance`, qui porte le tag
+`information-theory`. Les séparer aurait mis dans deux dossiers une page et le nombre
+qu'elle calcule.
+
+**Conséquence pratique pour `ml` (67) et `llm` (56)** : lire le corps de leur hub *avant*
+d'ouvrir la moindre notion, et compter combien de notions y sont déjà citées nommément. Sur
+`llm`, le corps du hub en cite déjà plusieurs dizaines. Le travail restant n'est peut-être
+pas « arbitrer 56 notions » mais « vérifier 56 arbitrages déjà écrits », ce qui est un
+travail différent et bien moins cher.
+
+### 13. Le seul arbitrage du lot qui va CONTRE l'arbre de décision — `security/ia`
+
+Les 4 notions `concept/ai` sont un cas que la procédure ne pouvait pas trancher seule, et
+elle le disait déjà (« c'est une **vraie** décision, à remonter »).
+
+Tout pointait vers `llm/*`. L'arbre de décision du domaine met **D1** (« a besoin d'un grand
+modèle de langage ») avant **D9** (« porte sur la sécurité ») ; les quatre pages ne parlent
+que d'applications LLM et pointent vers `Guardrails`, `Structured outputs`, `RAG`,
+`tool-use`, `mcp-protocol` ; et les **deux hubs concernés se répondaient dans ce sens** —
+celui de « LLM & IA générative » les revendiquait nommément, celui de « Sécurité » écrivait
+qu'elles « ne sont pas descendues ici ». C'est le cas de figure le plus solide qu'un
+arbitrage automatique puisse produire.
+
+Arbitrage de floSa : **`security/ia`**, contre tout ça. Deux raisons, toutes deux écrites
+dans `taxonomie.md` à côté de la valeur :
+
+- ces pages portent `concept/ai` et non `concept/llm` — **la famille large a été choisie
+  exprès** quand elles ont été écrites, et l'information était dans le champ depuis le
+  début ;
+- la sécurité est une **pratique qui traverse les modèles**, pas un sous-sujet de l'IA
+  générative.
+
+Ce n'est pas un effet de seuil, et ça a été mesuré avant de décider : 3 → 7 pages ne promeut
+aucun sous-dossier dans « Sécurité ».
+
+**Ce que ça apprend sur l'arbre de décision** : son ordre D1 → D14 encode « ce dont l'objet
+a besoin pour tourner », ce qui est le bon critère pour une **brique** — sans LLM, WrenAI ne
+produit aucun SQL. Pour une **notion**, le critère pertinent est plutôt « de quelle pratique
+ça relève », et les deux divergent ici. À rejouer sur les 56 notions `llm` : combien d'entre
+elles sont, comme celles-ci, la théorie d'une pratique plus large qui a son propre domaine ?
+
+### 14. Un hub qui annonce une page qu'il n'a plus ne se répare pas tout seul
+
+Corollaire opérationnel de la 13, et il vaut pour tous les lots restants. La zone
+`<!-- AUTO -->` d'un hub se régénère ; **son corps non**. Les deux phrases qui plaçaient les
+notions de sécurité IA — l'une dans le hub LLM, l'autre dans le hub Sécurité, chacune
+renvoyant à l'autre — seraient restées fausses indéfiniment après le `git mv`, et
+`check_brain` n'aurait rien vu : R7 tient, les liens résolvent, rien n'est mort.
+
+C'est le symétrique exact de la remontée 2 : là, un hub disait d'une page quelque chose que
+son contenu contredisait ; ici, un hub dit d'une page qu'elle est ailleurs qu'où elle est.
+Dans les deux cas, seule la lecture le voit.
+
+**Geste à faire systématiquement** : après les `git mv` d'un domaine, `grep` le nom de
+chaque page déplacée dans les corps de hub, et relire les phrases qui la citent. Trois hubs
+ont été réécrits à ce titre dans ce lot — « Mathématiques » (réduit : il n'énumère plus les
+26 notions, il aiguille vers les quatre sous-hubs), « Sécurité » et « LLM & IA générative ».
+
+### 15. Une notion peut être évidente **et** intraitable dans son lot
+
+Les 13 notions `concept/data` sont l'illustration nette de la consigne « une notion qui
+appelle un sous-domaine hors du périmètre se remonte ». `v3-arborescence.md` le voyait venir
+dès le lot 3 : « aucune des 13 n'est propre à ce domaine ».
+
+Résultat : 8 rangées, **5 remontées** — `ORM` et `Migrations de schéma` vers `database/orm`
+et `database/migration`, `Bases de données vectorielles` et `Index ANN — internes` vers
+`database/vecteur`, `Notebooks-as-code` vers `devtools/notebook`. Effet de seuil mesuré pour
+les cinq **avant** de décider (remontée 3) : il est **nul**, aucune ne forcerait de
+restructuration. Ce n'est donc pas le seuil qui les retient, c'est la frontière de domaine.
+
+Conséquence à assumer et à écrire : **`concept/data` reste dans le vocabulaire** alors que
+sa famille a été traitée. C'est la première entorse au critère « aucune notion ne reste sur
+une `categorie: concept/*` », elle est motivée — retirer la valeur rendrait ces 5 pages
+invalides sans les avoir rangées — et elle est inscrite à côté de la valeur dans
+`taxonomie.md`.
+
+**Ce que ça dit du découpage en conversations** : découper le lot 4 par famille `concept/*`
+ne coïncide pas avec le découpage par domaine d'accueil. Une conversation qui traiterait
+« Bases de données » comme domaine d'accueil ramasserait ces 4 notions d'un coup. Pour les
+lots restants, envisager un dernier passage **par domaine d'accueil** plutôt que par famille
+d'origine, pour les résidus.
+
+### 16. Deux fois la même règle sur les comparatifs, deux résultats opposés
+
+Un comparatif vit dans le dossier de ses membres. Appliquée aux deux domaines qui ont promu
+un sous-dossier, la règle a donné :
+
+- « Mathématiques » — `Comparatif - Solveurs d'optimisation` filtre
+  `categorie == "math/optimisation"` **exactement** : tous ses membres sont dans le dossier
+  promu, il **descend** avec eux ;
+- « Signal & audio » — `Comparatif - Traitement du signal` filtre `role == "brique"` plus le
+  tag `signal-processing` : ses 3 membres enjambent `signal/traitement` et `signal/audio`,
+  il **reste** au niveau du domaine. Idem pour celui du pilote, qui filtre le préfixe
+  `stats/` entier.
+
+**La règle porte sur les MEMBRES, pas sur le nom du fichier ni sur le sous-domaine qui a été
+promu.** Le relever ici parce que les trois cas sont maintenant des précédents lisibles, et
+que le lot 5 va devoir refaire exactement ce raisonnement pour 47 pages.
+
+### 17. Le libellé d'un dossier se heurte à ses propres pages — `Traitement`
+
+Prolongement de la remontée 8, avec un cas nouveau. `signal/traitement` aurait dû s'appeler
+« Traitement du signal » : c'est le nom du sous-domaine, et il n'entre en collision avec
+aucun autre hub. Sauf que c'est le `nom:` d'une **notion qui vit dans ce dossier** — deux
+fichiers du même nom, et le vault tient les liens nus depuis le lot 3 précisément parce
+qu'ils survivent aux déplacements. Le libellé retenu est « **Traitement** ».
+
+La vérification d'unicité d'un libellé de hub porte donc sur **quatre** ensembles, et le
+quatrième est le nouveau : les noms de fichiers du vault, les `alias:` des pages du même
+rôle (remontée 8), le nom des autres hubs — et **les pages que le dossier va accueillir**,
+qui n'existent pas encore à cet emplacement au moment où l'on choisit le libellé.
+
+### 18. Les MOC meurent sur mesure, et une seule refuse de mourir
+
+La question laissée ouverte par la remontée 7 est tranchée : une `MOC/Concepts/` se supprime
+**dès que la mesure est remplie**, pas toutes ensemble à la fin. La condition est double, et
+les deux moitiés comptent :
+
+1. **mesuré** que zéro page ne dépend d'elle seule pour sa R7 — `mesure_r7.py` énumère les
+   pages d'aiguillage du vault et croise ; la mesure va dans le message de commit ;
+2. `build_mocs.py` ne la **régénère plus**, sans quoi la suppression est cosmétique.
+
+Cinq sont mortes : `Statistiques` et `Gestion des connaissances` (commit dédié, avant les
+domaines), puis `Maths du ML`, `Traitement du signal (notions)` et `IA & sécurité`.
+
+`Données (notions)` **ne peut pas** mourir, et c'est la moitié nº 2 qui bloque : sa mesure
+R7 est pourtant remplie — le corps du hub « Data & pipelines » nomme les 5 notions restées
+sous `Wiki/` —, mais 5 pages portent encore `concept/data`, donc `build_mocs` la réécrit à
+chaque passage. **Une MOC vivante ne se supprime pas, elle se vide.** À retenir pour les
+quatre dernières : elles mourront avec leur famille, pas avant.
+
+### 19. Ce qui reste ouvert
+
+- **`concept/devops` est dans le vocabulaire et n'a aucune page**, et c'était déjà vrai
+  avant ce lot. Par la règle que floSa vient d'écrire (« une valeur est retirée dès que plus
+  aucune page ne la porte »), elle devrait sortir. Non fait ici : rien ne dit si c'est un
+  résidu ou un emplacement réservé. **À trancher.**
+- **Les 5 notions `concept/data` remontées** attendent une décision — les déplacer vers
+  `database/*` et `devtools/notebook`, ou les laisser. Le seuil ne s'y oppose pas.
+- **`MOC/Concepts/Données (notions)`** ne peut pas mourir tant que ces 5 vivent. Les quatre
+  autres (`Deep learning`, `LLM (notions)`, `Machine learning (notions)`, `NLP (notions)`)
+  mourront avec leur famille.

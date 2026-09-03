@@ -6,7 +6,7 @@ Usage : uv run AI/migration/_r7_mesure.py <chemin de MOC à retirer> ...
 import re, sys
 from pathlib import Path
 
-VAULT = Path(__file__).resolve().parents[2]
+VAULT = Path(__file__).resolve().parents[3]
 LINK_RE = re.compile(r"\[\[([^\]|#]+)")
 RE_HUB = re.compile(r"^role: hub\s*$", re.M)
 NON = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
