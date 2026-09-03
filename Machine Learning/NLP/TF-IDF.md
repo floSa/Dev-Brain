@@ -2,7 +2,7 @@
 role: notion
 nom: TF-IDF
 alias: [tf-idf, term frequency-inverse document frequency, pondération tf-idf]
-categorie: concept/nlp
+categorie: ml/nlp
 domaines: [data-sci, ai-eng]
 tags: [nlp, information-retrieval, feature-engineering]
 ---

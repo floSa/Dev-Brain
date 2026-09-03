@@ -2,7 +2,7 @@
 role: notion
 nom: NER et étiquetage de séquence
 alias: [NER, named entity recognition, reconnaissance d'entités nommées, étiquetage de séquence, sequence labeling, token classification, BiLSTM-CRF]
-categorie: concept/nlp
+categorie: ml/nlp
 domaines: [data-sci, ml-eng]
 tags: [nlp, ner, sequence-labeling, supervised]
 ---

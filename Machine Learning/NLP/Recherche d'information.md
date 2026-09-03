@@ -2,7 +2,7 @@
 role: notion
 nom: Recherche d'information
 alias: [information retrieval, IR, recherche documentaire, retrieval lexical dense hybride]
-categorie: concept/nlp
+categorie: ml/nlp
 domaines: [ai-eng, data-sci]
 tags: [nlp, information-retrieval, retrieval, hybrid-search, ranking, semantic-search]
 ---

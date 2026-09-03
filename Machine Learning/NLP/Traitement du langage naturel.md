@@ -2,7 +2,7 @@
 role: notion
 nom: Traitement du langage naturel
 alias: [NLP, natural language processing, TALN, TAL, traitement automatique du langage]
-categorie: concept/nlp
+categorie: ml/nlp
 domaines: [data-sci, ml-eng, ai-eng]
 tags: [nlp]
 ---

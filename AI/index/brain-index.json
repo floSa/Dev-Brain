@@ -12018,6 +12018,95 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/NLP/BM25.md",
+      "nom": "BM25",
+      "alias": [
+        "Okapi BM25",
+        "best matching 25",
+        "bm25"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "information-retrieval",
+        "ranking",
+        "search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/NLP/Classification de texte.md",
+      "nom": "Classification de texte",
+      "alias": [
+        "text classification",
+        "classification de documents",
+        "catégorisation de texte",
+        "analyse de sentiment"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "text-classification",
+        "classification",
+        "supervised",
+        "class-imbalance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/NLP/Fuzzy matching & similarité de chaînes.md",
+      "nom": "Fuzzy matching & similarité de chaînes",
+      "alias": [
+        "fuzzy matching",
+        "similarité de chaînes",
+        "string matching",
+        "approximate string matching",
+        "distance d'édition",
+        "Levenshtein",
+        "Jaro-Winkler",
+        "record linkage",
+        "déduplication"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "string-matching",
+        "nlp",
+        "information-retrieval",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/NLP/GLiNER.md",
       "nom": "GLiNER",
       "alias": [
@@ -12040,6 +12129,37 @@
       ],
       "complements": [],
       "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/NLP/NER et étiquetage de séquence.md",
+      "nom": "NER et étiquetage de séquence",
+      "alias": [
+        "NER",
+        "named entity recognition",
+        "reconnaissance d'entités nommées",
+        "étiquetage de séquence",
+        "sequence labeling",
+        "token classification",
+        "BiLSTM-CRF"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "ner",
+        "sequence-labeling",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/NLP/NLP.md",
@@ -12095,6 +12215,36 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/NLP/Recherche d'information.md",
+      "nom": "Recherche d'information",
+      "alias": [
+        "information retrieval",
+        "IR",
+        "recherche documentaire",
+        "retrieval lexical dense hybride"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "information-retrieval",
+        "retrieval",
+        "hybrid-search",
+        "ranking",
+        "semantic-search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/NLP/SetFit.md",
       "nom": "SetFit",
       "alias": [
@@ -12115,6 +12265,59 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/NLP/TF-IDF.md",
+      "nom": "TF-IDF",
+      "alias": [
+        "tf-idf",
+        "term frequency-inverse document frequency",
+        "pondération tf-idf"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp",
+        "information-retrieval",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/NLP/Traitement du langage naturel.md",
+      "nom": "Traitement du langage naturel",
+      "alias": [
+        "NLP",
+        "natural language processing",
+        "TALN",
+        "TAL",
+        "traitement automatique du langage"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/NLP/pytorch-crf.md",
@@ -18708,33 +18911,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/BM25.md",
-      "nom": "BM25",
-      "alias": [
-        "Okapi BM25",
-        "best matching 25",
-        "bm25"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp",
-        "information-retrieval",
-        "ranking",
-        "search"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Bagging.md",
       "nom": "Bagging",
       "alias": [
@@ -18935,35 +19111,6 @@
         "computer-vision",
         "cnn",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification de texte.md",
-      "nom": "Classification de texte",
-      "alias": [
-        "text classification",
-        "classification de documents",
-        "catégorisation de texte",
-        "analyse de sentiment"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp",
-        "text-classification",
-        "classification",
-        "supervised",
-        "class-imbalance"
       ],
       "alternatives": null,
       "complements": null,
@@ -19702,39 +19849,6 @@
         "inference-optimization",
         "gpu",
         "transformers"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Fuzzy matching & similarité de chaînes.md",
-      "nom": "Fuzzy matching & similarité de chaînes",
-      "alias": [
-        "fuzzy matching",
-        "similarité de chaînes",
-        "string matching",
-        "approximate string matching",
-        "distance d'édition",
-        "Levenshtein",
-        "Jaro-Winkler",
-        "record linkage",
-        "déduplication"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "string-matching",
-        "nlp",
-        "information-retrieval",
-        "feature-engineering"
       ],
       "alternatives": null,
       "complements": null,
@@ -20593,37 +20707,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/NER et étiquetage de séquence.md",
-      "nom": "NER et étiquetage de séquence",
-      "alias": [
-        "NER",
-        "named entity recognition",
-        "reconnaissance d'entités nommées",
-        "étiquetage de séquence",
-        "sequence labeling",
-        "token classification",
-        "BiLSTM-CRF"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp",
-        "ner",
-        "sequence-labeling",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/NMF.md",
       "nom": "NMF",
       "alias": [
@@ -21026,36 +21109,6 @@
       "tags": [
         "model-evaluation",
         "ranking"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Recherche d'information.md",
-      "nom": "Recherche d'information",
-      "alias": [
-        "information retrieval",
-        "IR",
-        "recherche documentaire",
-        "retrieval lexical dense hybride"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp",
-        "information-retrieval",
-        "retrieval",
-        "hybrid-search",
-        "ranking",
-        "semantic-search"
       ],
       "alternatives": null,
       "complements": null,
@@ -21633,59 +21686,6 @@
       "pitch": null,
       "tags": [
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/TF-IDF.md",
-      "nom": "TF-IDF",
-      "alias": [
-        "tf-idf",
-        "term frequency-inverse document frequency",
-        "pondération tf-idf"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp",
-        "information-retrieval",
-        "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Traitement du langage naturel.md",
-      "nom": "Traitement du langage naturel",
-      "alias": [
-        "NLP",
-        "natural language processing",
-        "TALN",
-        "TAL",
-        "traitement automatique du langage"
-      ],
-      "role": "notion",
-      "categorie": "concept/nlp",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "nlp"
       ],
       "alternatives": null,
       "complements": null,

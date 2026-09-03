@@ -657,15 +657,6 @@
 - **Types de données et choix de modèle** — domaines : data-sci, ml-eng · alias : Choix de modèle, Model selection, Quel modèle choisir, Aiguillage modèle, Cheat sheet modèles, Types de variables
 - **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
-### concept/nlp
-- **BM25** — domaines : ai-eng, data-sci · alias : Okapi BM25, best matching 25, bm25
-- **Classification de texte** — domaines : data-sci, ml-eng · alias : text classification, classification de documents, catégorisation de texte, analyse de sentiment
-- **Fuzzy matching & similarité de chaînes** — domaines : data-eng, data-sci · alias : fuzzy matching, similarité de chaînes, string matching, approximate string matching, distance d'édition, Levenshtein, Jaro-Winkler, record linkage, déduplication
-- **NER et étiquetage de séquence** — domaines : data-sci, ml-eng · alias : NER, named entity recognition, reconnaissance d'entités nommées, étiquetage de séquence, sequence labeling, token classification, BiLSTM-CRF
-- **Recherche d'information** — domaines : ai-eng, data-sci · alias : information retrieval, IR, recherche documentaire, retrieval lexical dense hybride
-- **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
-- **Traitement du langage naturel** — domaines : data-sci, ml-eng, ai-eng · alias : NLP, natural language processing, TALN, TAL, traitement automatique du langage
-
 ### data/fiabilite
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
 - **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
@@ -809,6 +800,15 @@
 - **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
 - **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
 - **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
+
+### ml/nlp
+- **BM25** — domaines : ai-eng, data-sci · alias : Okapi BM25, best matching 25, bm25
+- **Classification de texte** — domaines : data-sci, ml-eng · alias : text classification, classification de documents, catégorisation de texte, analyse de sentiment
+- **Fuzzy matching & similarité de chaînes** — domaines : data-eng, data-sci · alias : fuzzy matching, similarité de chaînes, string matching, approximate string matching, distance d'édition, Levenshtein, Jaro-Winkler, record linkage, déduplication
+- **NER et étiquetage de séquence** — domaines : data-sci, ml-eng · alias : NER, named entity recognition, reconnaissance d'entités nommées, étiquetage de séquence, sequence labeling, token classification, BiLSTM-CRF
+- **Recherche d'information** — domaines : ai-eng, data-sci · alias : information retrieval, IR, recherche documentaire, retrieval lexical dense hybride
+- **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
+- **Traitement du langage naturel** — domaines : data-sci, ml-eng, ai-eng · alias : NLP, natural language processing, TALN, TAL, traitement automatique du langage
 
 ### ml/rl
 - **Actor-Critic methods** — domaines : ml-eng · alias : actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic

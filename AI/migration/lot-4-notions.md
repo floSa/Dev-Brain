@@ -13,14 +13,17 @@ mécanique** de toute la migration.
 
 Prérequis : lot 3 fait pour le domaine concerné.
 
-> **État au 2026-09-05 — sept familles sur douze sont faites.** Le pilote
+> **État au 2026-09-05 — dix familles sur douze sont faites.** Le pilote
 > « Statistiques & inférence » (37 notions), puis une deuxième conversation —
 > **mathématiques (26), data (8 sur 13), signal (5), sécurité IA (4)** —, puis une
-> troisième qui a fermé `data` (les **5 remontées**) et traité **`llm` (56)**. Soit
-> **141 notions rangées**, 12 sous-dossiers créés, 10 valeurs de catégorie ouvertes,
-> 7 valeurs retirées du vocabulaire (6 `concept/*` et `llm/mcp`), 7 MOC supprimées.
-> Il reste **156 notions** sous `Wiki/Concepts/` — `dl` (52), `ml` (67), `rl` (17),
-> `ts` (13), `nlp` (7) — et **3 MOC** vivantes.
+> troisième qui a fermé `data` (les **5 remontées**) et traité **`llm` (56)**, puis
+> une quatrième qui a pris les trois plus petites familles restantes — **`rl` (17),
+> `ts` (13), `nlp` (7)**. Soit **178 notions rangées**, 12 sous-dossiers créés,
+> 10 valeurs de catégorie ouvertes, 10 valeurs retirées du vocabulaire (9 `concept/*`
+> et `llm/mcp`), 8 MOC supprimées.
+> Il reste **119 notions** sous `Wiki/Concepts/` — `ml` (67), `dl` (52) — et
+> **2 MOC** vivantes, dont la moitié R7 de la condition de mort est **déjà remplie**
+> (remontée 33).
 >
 > Les *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée. Les
 > dix premières viennent du pilote — lire les nº 1, 3 et 5 avant d'attaquer un domaine. Les
@@ -29,7 +32,10 @@ Prérequis : lot 3 fait pour le domaine concerné.
 > retrait de `concept/devops`, et les **nº 24 à 28 du domaine `llm`** — dont la nº 24, qui
 > dit ce que l'étape 0 ne sait PAS faire, la nº 25, où le seuil ne doit pas non plus
 > RETENIR un rangement, et la nº 26, sur les quatre ensembles à croiser pour nommer un
-> dossier.
+> dossier. Les **nº 29 à 34 viennent de `rl`/`ts`/`nlp`** — la nº 29 dit **pourquoi ces
+> trois familles n'ont rien coûté et pourquoi ça ne se transpose pas** à `dl` et `ml`,
+> et la nº 30 déplace le `grep` de la nº 14 AVANT les `git mv`, où il cesse de réparer
+> pour mesurer.
 
 ## Contexte
 
@@ -108,7 +114,9 @@ une fois que le vocabulaire final est connu.
       L'étape 0 a rangé **17 sur 17** : le sous-hub les cite toutes nommément.
 - [x] **`ts` (13) — fait le 2026-09-05.** Idem : zéro valeur, zéro dossier, 13 sur 13
       rangées par l'étape 0.
-- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `nlp` (7)
+- [x] **`nlp` (7) — fait le 2026-09-05.** Idem, et la seule des trois à tuer une MOC :
+      `MOC/Concepts/NLP (notions)` meurt sur la double mesure de la remontée 18.
+- [ ] `dl` (52) · [ ] `ml` (67)
 
 ### Pour chaque notion
 
@@ -836,3 +844,169 @@ seul sous-dossier du domaine sans aucune brique. Six notions, zéro chose à ins
 n'est pas une anomalie — c'est ce qui arrive quand un domaine a de la théorie propre — mais
 c'est un profil nouveau dans l'arbre, et le gabarit de hub §9 (« Choisir » entre des
 briques) n'y répond qu'à moitié.
+
+---
+
+## Remontées — `rl` (17), `ts` (13) et `nlp` (7), 2026-09-05
+
+37 notions rangées. **Zéro valeur de catégorie ouverte, zéro sous-dossier créé, zéro
+libellé à trancher, zéro brique déplacée par ricochet, zéro comparatif déplacé.** Le
+premier lot de notions dans ce cas, et le moins cher par page de toute la migration.
+Une MOC supprimée. Aucune violation dure. Compteur d'avertissements à **149** avant
+comme après, **jeu identique ligne à ligne** aux trois commits, et les 47 comparatifs
+ont exactement les mêmes membres.
+
+### 29. Une famille ne coûte rien quand son sous-domaine était DÉJÀ un dossier
+
+C'est la seule variable qui explique l'écart de coût entre ces trois familles et les
+sept précédentes, et elle se lit avant d'ouvrir une page.
+
+| Famille | Vocabulaire `<dom>/<sub>` | Dossier au lot 3 | Coût |
+|---|---|---|---|
+| `stats`, `math` | à **créer** (5 valeurs) | non | le plus cher — il fallait écrire les frontières avant de savoir où tombaient les pages |
+| `llm` | partiel (3 valeurs à créer) | 6 dossiers sur 12 | cher — 7 sous-hubs à écrire, 4 libellés à arbitrer |
+| `rl`, `ts`, `nlp` | **existant depuis la v2** | **oui, promu sur les briques seules** | quasi nul — deux gestes par page |
+
+Le mécanisme : un sous-domaine `ml/<x>` qui avait **déjà 5 briques** au lot 3 a son
+dossier, son libellé dans `SUB_LABEL` et son sous-hub écrit à la main par quelqu'un qui
+connaissait le domaine. Les notions de la famille `concept/<x>` homonyme n'ont plus
+qu'à tomber dedans. Il n'y a rien à nommer, rien à promouvoir, et l'effet de seuil est
+nul par construction — on ajoute à un dossier qui existe.
+
+**Ce que ça prédit pour les deux familles restantes**, et il vaut mieux l'avoir écrit
+avant : `dl` (52) et `ml` (67) ne sont dans aucune des trois lignes du tableau.
+`ml/apprentissage-profond` a bien son dossier, mais avec **8 briques** seulement pour
+52 notions candidates — le dossier existe, la question « ces 52 entrent-elles dedans »
+reste entière, et la remontée 20 du lot 3 dit qu'une moitié relève de `ml/vision`.
+`ml` (67) est pire : ses notions visent une douzaine de sous-domaines dont plusieurs
+sont **sous le seuil aujourd'hui** (`ml/non-supervise` 4, `ml/eval` 2, `ml/socle` 2,
+`ml/monitoring` 1, `ml/feature-store` 1, `ml/embeddings` 1) et le franchiront en
+recevant leurs notions. Ces deux familles paieront des promotions, donc des libellés,
+donc des sous-hubs. Le coût de `rl`/`ts`/`nlp` **ne se transpose pas**.
+
+### 30. Croiser les noms contre TOUS les corps de hub — avant les `git mv`, pas après
+
+La remontée 14 demande de `grep` le nom de chaque page déplacée dans les corps de hub
+**après** les `git mv`, pour réparer les phrases devenues fausses. Fait **avant**, le
+même croisement change de nature : il ne répare plus, il **mesure**.
+
+Le geste tient en un script : pour chacune des 37 notions, chercher `[[<nom>]]` dans le
+corps — hors zone `<!-- AUTO -->` — des 53 hubs du vault. Résultat ici :
+
+- **37 lignes sur 37** renvoient exactement **un** hub, et c'est à chaque fois le
+  sous-hub homonyme du dossier d'accueil ;
+- une seule renvoie deux hubs, `Reinforcement learning`, l'autre étant le hub de
+  **domaine** — son parent, ce qui ne la dispute pas ;
+- **zéro contention**, zéro notion muette.
+
+Ce que ça achète : l'étape 0 seule dit « le hub d'accueil la cite ». Le croisement dit
+« **et aucun autre ne la réclame** », ce qui est l'autre moitié de la question, et
+justement celle que la remontée 2 avait dû trancher à la main sur `Réduction de
+dimension` — deux hubs la revendiquaient contre son contenu. Le croisement l'aurait
+signalée en une ligne au lieu d'une lecture.
+
+La lecture des 37 pages a quand même eu lieu, et **doit** avoir lieu : le croisement
+mesure un accord entre hubs, pas un accord entre le hub et la page. Mais elle devient
+une vérification qu'on s'attend à voir passer, et non un arbitrage à mener page par
+page. C'est la différence de posture qui rend `dl` et `ml` abordables.
+
+### 31. `Métiers/` : une puce qui disparaît sans qu'aucune page soit perdue
+
+Premier lot où le regroupement de `build_mocs.py` fait **fusionner** deux puces au lieu
+d'en renommer une, et il faut savoir le lire, parce que la remontée 5 a appris à se
+méfier d'une ligne qui disparaît de `Métiers/`.
+
+Le mécanisme est la règle écrite au lot précédent : une page groupe par **son** hub — le
+sous-hub `MOC/Concepts/` tant qu'elle est sous `Wiki/`, le dossier de **domaine** une
+fois descendue. Tant qu'une seule famille descendait par domaine, le groupe changeait de
+nom. Ici trois familles descendent dans le **même** domaine, et leurs groupes se
+rejoignent :
+
+| Fichier | Avant | Après |
+|---|---|---|
+| `ML Engineering` | `Machine Learning — 17` + `Séries temporelles — 9` | `Machine Learning — 26` |
+| `ML Engineering` | `Machine Learning — 26` + `NLP (notions) — 3` | `Machine Learning — 29` |
+| `Data Science` | `Machine Learning — 13` + `NLP (notions) — 7` | `Machine Learning — 20` |
+| `AI Engineering` | `Machine Learning — 10` + `NLP (notions) — 4` | `Machine Learning — 14` |
+
+Trois fichiers perdent une puce et **aucun ne perd une page** : à chaque ligne, la somme
+des deux groupes d'avant est le compte du groupe d'après. Un contrôle qui compterait les
+puces lirait exactement le défaut de la remontée 5 ; c'est **l'addition** qui dit le
+contraire.
+
+> **Règle à ajouter à la remontée 5 :** sur `Métiers/`, comparer la **somme** des
+> compteurs, pas le nombre de puces. Le nombre de puces a vocation à baisser à chaque
+> lot — c'est même le signe que l'arbre remplace les galaxies — et il tombera à une
+> seule ligne « Machine Learning » quand `dl` et `ml` seront descendues.
+
+### 32. Le résidu que ce lot ne PEUT pas nettoyer — `concept/*` dans le corps des notions
+
+Deux pages nomment `concept/rl` dans leur **corps**, comme nom de cluster :
+
+- `Machine Learning/Apprentissage par renforcement/Reinforcement learning.md` —
+  « Suites du cluster (`concept/rl`) : … » ;
+- `LLM & IA générative/Fine-tuning/RL for LLMs.md` — « Bases RL générales : … (cluster
+  `concept/rl`) », page descendue au lot **précédent**, dont le résidu n'a pas été vu.
+
+La valeur est maintenant hors du vocabulaire : ces deux phrases citent un vocabulaire
+supprimé. Et **rien ne les signale** — `check_brain` ne lit pas la prose, les wikilinks
+de la ligne résolvent tous, R7 tient.
+
+Ce lot ne les corrige pas, et c'est délibéré : ses *Interdictions* disent « ne pas
+réécrire le corps d'une notion, ce lot range, il n'édite pas », et la frontière
+`role: notion` de `CLAUDE.md` réserve la modification d'une notion existante à une
+demande explicite de floSa. Les corriger de ma propre initiative serait deux fois hors
+règle.
+
+**À trancher par floSa, et la réponse vaut pour `dl` et `ml`** : un balayage
+`grep -rn '`concept/' ` sur les corps de pages descendues, une fois le lot 4 clos, en
+commit isolé — ou bien on laisse, en assumant que ces mentions décrivent un état
+historique. Le volume est faible aujourd'hui (2 pages) mais il croît d'un lot à l'autre
+sans que personne le voie.
+
+### 33. La condition de mort d'une MOC est asymétrique — et sa moitié R7 est déjà remplie
+
+`MOC/Concepts/NLP (notions)` est morte ici, sur la double mesure de la remontée 18. Mais
+les deux moitiés ne se sont pas comportées pareil, et c'est nouveau :
+
+| Moitié | `Statistiques` (pilote) | `NLP (notions)` (ici) |
+|---|---|---|
+| R7 — pages dépendant d'elle seule | **26 avant**, 0 après le `git mv` | **0 avant**, 0 après |
+| `build_mocs.py` ne la régénère plus | après le `git mv` | après le `git mv` |
+
+La moitié R7 était donc remplie **avant** que quoi que ce soit bouge, parce que le
+sous-hub `NLP` cite ses 7 notions nommément depuis le lot 3, alors qu'elles vivaient
+encore sous `Wiki/`. Ce n'est pas elle qui retenait la MOC : c'est la moitié nº 2, la
+régénération — exactement le cas de `Données (notions)` (remontée 18), mais pour une
+raison inverse : là, des pages portaient encore la valeur ; ici, plus aucune page ne
+dépendait de la MOC depuis longtemps.
+
+**Mesure faite pour les deux MOC restantes, et elle vaut d'être connue avant d'attaquer
+`dl` et `ml`** : `MOC/Concepts/Deep learning` et `MOC/Concepts/Machine learning
+(notions)` portent **déjà 0 page seules**, aujourd'hui, avant tout déplacement. Leur
+moitié R7 est acquise. Les deux conversations à venir peuvent donc supprimer leur MOC
+**dans le commit de leur famille**, sans surprise possible : la seule chose qui les
+retient est que `build_mocs.py` les réécrit tant qu'une page porte leur valeur, et cela
+tombe mécaniquement au dernier `git mv`. La mesure reste à refaire au moment du commit —
+la remontée 20 interdit de faire confiance à une mesure d'hier — mais on sait déjà
+qu'elle ne réservera pas de blocage.
+
+### 34. Une MOC supprimée laisse une trace dans la GOUVERNANCE, que personne ne relit
+
+Corollaire des sept suppressions précédentes, trouvé ici par accident.
+`Documentation/perso/obsidian-graph.md` décrivait l'étage `MOC/Concepts/` en citant cinq
+exemples : `Statistiques`, `Maths du ML`, `Deep learning`, `NLP (notions)`,
+`Traitement du signal (notions)`. **Trois des cinq n'existaient plus** — supprimées aux
+lots précédents —, et une quatrième meurt dans ce commit.
+
+Rien ne pouvait le signaler, et c'est le point : ces noms sont du **texte entre
+backticks**, pas des wikilinks. `build_links` ne voit rien à résoudre, R7 ne s'applique
+pas, `check_brain` ne lit pas la prose de `Documentation/`. Le fichier a donc décrit une
+arborescence fausse pendant toute la durée du lot 4, dans la page même qui explique
+comment naviguer le vault.
+
+**Geste à ajouter à celui des remontées 14 et 21** : après avoir supprimé une page — MOC
+comprise —, `grep` son nom dans `Documentation/` **en plus** des corps de hub, et sans
+se limiter à la syntaxe wikilink. Corrigé ici pour les deux phrases concernées : l'étage
+est décrit comme « en voie d'extinction » avec le compte des survivants, et l'exemple de
+navigation ne cite plus que des pages vivantes.

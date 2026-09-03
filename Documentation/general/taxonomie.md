@@ -418,11 +418,10 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl, nlp}
+concept/{ml, dl}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
-- `nlp` — traitement du langage naturel (TF-IDF, NER, recherche d'information)
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
 
@@ -468,6 +467,11 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   « Machine Learning/Séries temporelles/ ». Comme `rl` : aucune valeur ouverte, aucun
   sous-dossier créé. Le sous-domaine passe de 7 à 20 pages, promotions du vault
   inchangées (42 avant, 42 après).
+
+- `nlp` — retiré le 2026-09-05, 7 notions descendues dans « Machine Learning/NLP/ ».
+  Aucune valeur ouverte, aucun sous-dossier créé ; le sous-domaine passe de 6 à 13 pages.
+  `MOC/Concepts/NLP (notions)` est morte avec la famille, sur la double mesure de la
+  remontée 18 (0 page perdant sa seule porte R7, et `build_mocs.py` ne la régénère plus).
 
 Les valeurs restantes suivront, une par lot de domaine.
 

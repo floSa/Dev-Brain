@@ -34,6 +34,15 @@ tags: [nlp, ner, sequence-labeling, text-classification, information-retrieval, 
 - Générer, résumer, dialoguer, ou extraire par prompt → [[LLM & IA générative]], pas ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[BM25]] — domaines : ai-eng, data-sci
+- [[Classification de texte]] — domaines : data-sci, ml-eng
+- [[Fuzzy matching & similarité de chaînes]] — domaines : data-eng, data-sci
+- [[NER et étiquetage de séquence]] — domaines : data-sci, ml-eng
+- [[Recherche d'information]] — domaines : ai-eng, data-sci
+- [[TF-IDF]] — domaines : data-sci, ai-eng
+- [[Traitement du langage naturel]] — domaines : data-sci, ml-eng, ai-eng
+
 ### Briques
 - [[GLiNER]] — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 - [[NLTK]] — Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.

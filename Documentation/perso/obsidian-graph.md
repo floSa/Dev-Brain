@@ -72,10 +72,10 @@ Deux règles de l'ancien bloc ont été **retirées**, et non transposées :
 
 Les pages hub sont générées par `AI/scripts/build_mocs.py` sur 3 étages :
 - **`Métiers/`** — un par axe métier (`data-sci`…). Pointe vers les **sous-hubs**, pas vers les ~100 feuilles.
-- **`MOC/Concepts/`** — un par sous-domaine de concept (`Statistiques`, `Maths du ML`, `Deep learning`, `NLP (notions)`, `Traitement du signal (notions)`…). Liste ses feuilles.
+- **`MOC/Concepts/`** — un par sous-domaine de concept encore sous `Wiki/`. **Étage en voie d'extinction** : le lot 4 le vide famille par famille, et il n'en reste que **2** au 2026-09-05, `Deep learning` et `Machine learning (notions)`. Liste ses feuilles.
 - **les hubs de l'arbre** — un par dossier de domaine et de sous-domaine (`Bases de données`, `Machine Learning`…), zone `AUTO` remplie depuis le contenu du dossier. Ils ont remplacé `MOC/Categories/`, vide depuis le lot 3.
 
-Résultat : `Data Science` → `Statistiques` / `Maths du ML` / … → feuilles. On descend par étages au lieu de noyer l'écran.
+Résultat : `Data Science` → `Machine Learning` / `Statistiques & inférence` / … → feuilles. On descend par étages au lieu de noyer l'écran. Les deux premiers étages pointaient vers `MOC/Concepts/` tant que les notions vivaient sous `Wiki/` ; ils pointent vers les hubs de l'arbre à mesure que le lot 4 les descend.
 
 ## 3. Se balader en profondeur (graphe local)
 
