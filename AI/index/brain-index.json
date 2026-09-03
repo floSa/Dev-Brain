@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 736,
+  "count": 739,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -163,6 +163,7 @@
     ],
     "api-client": [
       "Bruno",
+      "Comparatif - Clients d'API",
       "Outils de développement",
       "Postman",
       "Web & API"
@@ -308,6 +309,7 @@
       "Évaluation de modèles"
     ],
     "cli": [
+      "Comparatif - Frameworks CLI",
       "Outils de développement",
       "Spec Kit",
       "Typer",
@@ -2024,6 +2026,7 @@
       "Théorie de l'apprentissage"
     ],
     "package-manager": [
+      "Comparatif - Gestionnaires de paquets Python",
       "Outils de développement",
       "Rule - Toolchain Python",
       "pip",
@@ -2347,6 +2350,7 @@
       "embeddings"
     ],
     "reproducibility": [
+      "Comparatif - Gestionnaires de paquets Python",
       "Comparatif - Orchestrateurs ML",
       "Marimo",
       "Notebooks",
@@ -2684,6 +2688,7 @@
       "Q-learning and DQN"
     ],
     "terminal-ui": [
+      "Comparatif - Frameworks CLI",
       "Rich",
       "llmfit",
       "pi"
@@ -2935,6 +2940,7 @@
     "version-control": [
       "Aider",
       "Bruno",
+      "Comparatif - Clients d'API",
       "Notebooks",
       "Notebooks-as-code",
       "jupytext",
@@ -19540,6 +19546,60 @@
         "[[Postman]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Comparatif - Clients d'API.md",
+      "nom": "Comparatif - Clients d'API",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/client-api",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "api-client",
+        "version-control"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Comparatif - Frameworks CLI.md",
+      "nom": "Comparatif - Frameworks CLI",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/cli",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "cli",
+        "terminal-ui"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Comparatif - Gestionnaires de paquets Python.md",
+      "nom": "Comparatif - Gestionnaires de paquets Python",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/paquet",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "package-manager",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
       "maturite": null
     },
     {

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 736 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 739 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -962,6 +962,15 @@
 
 ### database/vecteur
 - **Comparatif - Bases vectorielles** — —
+
+### devtools/cli
+- **Comparatif - Frameworks CLI** — —
+
+### devtools/client-api
+- **Comparatif - Clients d'API** — —
+
+### devtools/paquet
+- **Comparatif - Gestionnaires de paquets Python** — —
 
 ### ml/hyperopt
 - **Comparatif - Optimisation d'hyperparamètres** — —

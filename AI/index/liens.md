@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 736 pages actives.
+> 739 pages actives.
 
 ## Par page
 
@@ -138,7 +138,7 @@
 ### Bruno  ·  brique
 - tags : `api-client`, `version-control`
 - liens sortants : [[Comparatif - Clients d'API]], [[Postman]]
-- liens entrants : [[Outils de développement]], [[Postman]], [[public-apis]]
+- liens entrants : [[Comparatif - Clients d'API]], [[Outils de développement]], [[Postman]], [[public-apis]]
 
 ### Captum  ·  brique
 - tags : `explainability`, `deep-learning`
@@ -1063,7 +1063,7 @@
 ### pip  ·  brique
 - tags : `package-manager`
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[uv]]
-- liens entrants : [[Outils de développement]], [[uv]]
+- liens entrants : [[Comparatif - Gestionnaires de paquets Python]], [[Outils de développement]], [[uv]]
 
 ### Playwright  ·  brique
 - tags : `web-scraping`
@@ -1093,7 +1093,7 @@
 ### Postman  ·  brique
 - tags : `api-client`
 - liens sortants : [[Bruno]], [[Comparatif - Clients d'API]]
-- liens entrants : [[Bruno]], [[Outils de développement]], [[public-apis]]
+- liens entrants : [[Bruno]], [[Comparatif - Clients d'API]], [[Outils de développement]], [[public-apis]]
 
 ### PraisonAI  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `low-code`, `mcp`
@@ -1268,7 +1268,7 @@
 ### Rich  ·  brique
 - tags : `terminal-ui`
 - liens sortants : [[Typer]]
-- liens entrants : [[Outils de développement]], [[Typer]]
+- liens entrants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Typer]]
 
 ### River  ·  brique
 - tags : `streaming`, `concept-drift`
@@ -1593,7 +1593,7 @@
 ### Typer  ·  brique
 - tags : `cli`, `type-hints`
 - liens sortants : [[Comparatif - Frameworks CLI]], [[FastAPI]], [[Rich]]
-- liens entrants : [[Outils de développement]], [[Rich]]
+- liens entrants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Rich]]
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
@@ -1618,7 +1618,7 @@
 ### uv  ·  brique
 - tags : `package-manager`
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Ruff]], [[pip]]
-- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[papermill]], [[pip]]
+- liens entrants : [[Comparatif - Gestionnaires de paquets Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[papermill]], [[pip]]
 
 ### Uvicorn  ·  brique
 - tags : `web-framework`
@@ -1725,6 +1725,11 @@
 - liens sortants : [[CatBoost]], [[Comparatif - Boosting.base]], [[LightGBM]], [[XGBoost]]
 - liens entrants : [[CatBoost]], [[LightGBM]], [[Tabulaire]], [[XGBoost]]
 
+### Comparatif - Clients d'API  ·  comparatif
+- tags : `api-client`, `version-control`
+- liens sortants : [[Bruno]], [[Comparatif - Clients d'API.base]], [[Postman]]
+- liens entrants : [[Bruno]], [[Outils de développement]], [[Postman]], [[public-apis]]
+
 ### Comparatif - Clients de bases de données  ·  comparatif
 - tags : `db-client`
 - liens sortants : [[Comparatif - Clients de bases de données.base]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
@@ -1739,6 +1744,16 @@
 - tags : `explainability`, `transformers`, `model-evaluation`
 - liens sortants : [[Captum]], [[Comparatif - Explicabilité.base]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
 - liens entrants : [[Captum]], [[Interprétabilité]], [[LIME]], [[SHAP]], [[interpreto]]
+
+### Comparatif - Frameworks CLI  ·  comparatif
+- tags : `cli`, `terminal-ui`
+- liens sortants : [[Comparatif - Frameworks CLI.base]], [[Rich]], [[Typer]]
+- liens entrants : [[Outils de développement]], [[Typer]]
+
+### Comparatif - Gestionnaires de paquets Python  ·  comparatif
+- tags : `package-manager`, `reproducibility`
+- liens sortants : [[Comparatif - Gestionnaires de paquets Python.base]], [[pip]], [[uv]]
+- liens entrants : [[Outils de développement]], [[pip]], [[uv]]
 
 ### Comparatif - Migrations de schéma  ·  comparatif
 - tags : `migration`
@@ -3696,7 +3711,7 @@
 - `alignment` : Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
 - `anomaly-detection` : Comparatif - Détection d'anomalies, Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
-- `api-client` : Bruno, Outils de développement, Postman, Web & API  — pas de page concept dédiée
+- `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme, Signal & audio
@@ -3716,7 +3731,7 @@
 - `ci-cd` : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
-- `cli` : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
+- `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
 - `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, Non supervisé, hdbscan, k-médoïds (PAM)
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
@@ -3895,7 +3910,7 @@
 - `out-of-core` : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning, Théorie de l'apprentissage
-- `package-manager` : Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
+- `package-manager` : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
 - `parallel` : Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
@@ -3935,7 +3950,7 @@
 - `relational` : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
-- `reproducibility` : Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
+- `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
 - `reranking` : Late-interaction retrieval, RAG & retrieval, RAGatouille, Reranking, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers  — pas de page concept dédiée
@@ -3976,7 +3991,7 @@
 - `table-extraction` : Docling, OpenDataLoader PDF, pdfplumber  — pas de page concept dédiée
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
-- `terminal-ui` : Rich, llmfit, pi  — pas de page concept dédiée
+- `terminal-ui` : Comparatif - Frameworks CLI, Rich, llmfit, pi  — pas de page concept dédiée
 - `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
@@ -3996,7 +4011,7 @@
 - `vc-dimension` : Théorie de l'apprentissage, VC dimension
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Comparatif - Bases vectorielles, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Algèbre linéaire, Vector norms  — pas de page concept dédiée
-- `version-control` : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
+- `version-control` : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
@@ -4016,7 +4031,7 @@
 - `accessibility` (porté par : OpenDataLoader PDF)
 - `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Assistants, AutoGen, BMAD, Cline, Context engineering, Continue, CrewAI, Daytona, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, pi, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
-- `api-client` (porté par : Bruno, Outils de développement, Postman, Web & API)
+- `api-client` (porté par : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API)
 - `array` (porté par : CuPy, DataFrames, JAX, numpy, xarray)
 - `attention` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
@@ -4027,7 +4042,7 @@
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
 - `ci-cd` (porté par : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
-- `cli` (porté par : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
+- `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
 - `columnar` (porté par : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, DuckDB, LanceDB, Parquet, Polars, connectorx)
@@ -4133,7 +4148,7 @@
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels)
-- `package-manager` (porté par : Outils de développement, Rule - Toolchain Python, pip, uv)
+- `package-manager` (porté par : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
@@ -4155,7 +4170,7 @@
 - `relational` (porté par : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
-- `reproducibility` (porté par : Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
+- `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS, Stockage)
@@ -4182,7 +4197,7 @@
 - `table-extraction` (porté par : Docling, OpenDataLoader PDF, pdfplumber)
 - `templating` (porté par : Jinja2, Web & API)
 - `temporal-difference` (porté par : Q-learning and DQN)
-- `terminal-ui` (porté par : Rich, llmfit, pi)
+- `terminal-ui` (porté par : Comparatif - Frameworks CLI, Rich, llmfit, pi)
 - `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
@@ -4194,7 +4209,7 @@
 - `type-hints` (porté par : FastAPI, Instructor, Pydantic, PydanticAI, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typer)
 - `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
-- `version-control` (porté par : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
+- `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio, Traitement)
