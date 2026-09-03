@@ -666,6 +666,11 @@ la dérivation donne. Aucun ne relève du §12. Aucun ne déclenche R8b ni R8c.
 
 ## 16. Les 25 comparatifs restants, par domaine
 
+> **Périmé depuis la troisième session (2026-09-05)** : douze de ces 25 sont faits,
+> il en reste **13**. La liste à jour est au §22. Ce tableau est conservé pour la
+> trace, pas pour être lu comme l'état courant — c'est le défaut de la remontée 9,
+> et il se signale ici plutôt que d'attendre qu'on le découvre.
+
 | Domaine | Reste | Comparatifs |
 |---|---|---|
 | LLM & IA générative | 7 | Assistants de code IA · Frameworks LLM · Fine-tuning LLM · Observabilité LLM · Exécution & serving LLM · Frameworks text-to-SQL · Évaluation LLM |
@@ -821,3 +826,340 @@ l'outil unique qui gère aussi lock, venv et versions de Python*
 |---|---|
 | pip — volontairement minimal, donc présent partout ; ni lockfile ni isolation | `pip.md` P + PG |
 | uv — absorbe sept outils, `uv.lock` et les versions de Python ; lock propre à uv | `uv.md` P + PG |
+
+---
+
+# Remontées — troisième session, 2026-09-05
+
+Périmètre : « Machine Learning » (les 3 derniers), « LLM & IA générative » (7 sur 7)
+et « Design & diagrammes » (2 sur 2). **12 pages, 83 puces, 57 fiches lues.** Avec
+les deux sessions précédentes, **34 des 47** comparatifs sont des pages ; 13 restent,
+listés au §22.
+
+## 17. Les trois « orphelins » sont convertis, et la mesure du §15 a tenu
+
+floSa a tranché sur la mesure : les convertir comme les autres, sans clause
+particulière. Rien ne s'est passé — et c'est le résultat. Les trois `.base` étaient
+déjà dans le dossier que la dérivation donne, leurs membres sont unanimes, aucun
+`git mv`, aucun `R8b` ni `R8c` touché. Le domaine « Machine Learning » est clos,
+12 sur 12.
+
+Ce que ça confirme rétrospectivement : le décompte « trois non cités » du 2026-09-04
+n'a jamais décrit qu'un état de la v2. Les lots 3 et 4 l'ont invalidé en écrivant le
+corps des hubs, et rien dans le vault ne l'a signalé — le chiffre est resté dans
+`Contexte`, en tête du fichier de lot, à l'endroit exact où une session neuve le lit
+en premier. Comme le « 6 comparatifs » de la remontée 1. C'est la troisième
+occurrence du même mécanisme en trois sessions, et elle mérite d'être nommée pour ce
+qu'elle est : **un chiffre mesuré ne porte pas sa date de péremption, donc personne
+ne la voit passer.**
+
+> **Conséquence appliquée ici** : le §16 porte maintenant une note qui dit qu'il est
+> périmé et où lire la suite. Ça coûte quatre lignes et ça supprime le piège pour la
+> session suivante.
+
+## 18. Le §12 s'est rejoué, et cette fois la règle a suffi — c'est le repli qui n'existait pas
+
+`Comparatif - Frameworks LLM` enjambe quatre sous-domaines : `llm/agents` 9,
+`llm/rag` 3, `llm/sortie-structuree` 3, `llm/socle` 2. Aucune égalité — **majorité
+stricte, 9 sur 17**, et même majorité absolue. La règle de la remontée 5 tranche
+seule, sans passer par les définitions de `taxonomie.md`.
+
+L'intérêt du cas n'est pas là. Il est que le lot 3 avait explicitement décidé
+**l'inverse**, et l'avait écrit dans `v3-arborescence.md` : « ses membres enjambent
+quatre sous-domaines dont un non promu, il **reste** au niveau du domaine ». Cette
+décision était valide au lot 3 et l'est restée jusqu'à ce commit, pour la raison que
+le §12 donne déjà : **un `.base` ne porte pas de `categorie:`, donc rien ne
+contraignait son chemin.** Le lot 5 supprime ce choix libre. La phrase a été corrigée
+avec son motif, pas effacée.
+
+Une tentation à écarter, parce qu'elle s'est présentée : `llm/socle` est une valeur
+**non promue** dont la définition — « LangChain, DSPy — on assemble » — dit assez
+bien le sujet du comparatif, et l'aurait laissé au niveau du domaine. Ç'aurait été le
+repli du §12. Mais le §12 réserve ce repli au cas d'**égalité qui subsiste**, et il
+n'y en a pas ici. Choisir `llm/socle` contre une majorité de 9 aurait été un choix
+libre réintroduit sous couvert de règle.
+
+> **À ajouter à la remontée 5** : la majorité, quand elle existe, ne se renégocie pas
+> au motif que la valeur minoritaire « dit mieux le sujet ». Le précédent est
+> `Bases NoSQL` — `database/cle-valeur` pour un comparatif qui contient MongoDB.
+> Écrire la catégorie de la majorité est exactement ce que la règle demande, y compris
+> quand elle n'est vraie que de la majorité.
+
+## 19. Le §14 mord hors des hubs, et le seul détecteur est le nom du fichier
+
+Le `git mv` du §18 n'a cassé aucun lien — nus, ils résolvent depuis n'importe où,
+quatrième remboursement de la convention. Les zones AUTO des deux hubs se sont
+régénérées seules, les deux validateurs sont restés verts, les 149 avertissements
+identiques.
+
+Et deux phrases sont devenues fausses, dont une **hors de l'arbre des domaines** :
+
+- `AI/design/v3-arborescence.md` — la décision du lot 3 citée au §18.
+- `INSTALL.md` §14a — « Ouvre `LLM & IA générative/Comparatif - Frameworks LLM.base` »,
+  l'instruction qui sert à vérifier qu'Obsidian rend bien les Bases sur un poste neuf.
+  **Ce n'est pas un wikilink, c'est un chemin dans une phrase.** Aucun validateur ne le
+  regarde : `check_brain` ne lit pas `INSTALL.md`, et un chemin entre accents graves
+  n'est pas un lien à résoudre.
+
+Le §14 disait « chercher le nom du fichier déplacé dans tous les `.md` du vault ».
+Cette session précise le périmètre : **tous les `.md` du dépôt**, pas du vault —
+`INSTALL.md`, `AI/design/`, `AI/migration/` compris. Et le motif de recherche est le
+**nom du fichier**, jamais le lien : c'est précisément parce que le lien nu résiste
+que seul le nom trouve les phrases qui, elles, ne résistent pas.
+
+## 20. `## Quand NE PAS l'utiliser` sert 15 fois sur 83, et ce n'est pas la substituabilité qui décide
+
+Répartition des sources sur les 83 puces, à comparer aux deux sessions précédentes :
+
+| Section de la fiche | Pilote (45) | 2ᵉ session (60) | Cette session (83) |
+|---|---|---|---|
+| `## Pourquoi` | 45 — 100 % | 60 — 100 % | 83 — **100 %** |
+| `## Pièges` | 38 — 84 % | 51 — 85 % | 78 — **94 %** |
+| `## Quand NE PAS l'utiliser` | 1 — 2 % | 12 — 20 % | 15 — **18 %** |
+
+`## Pourquoi` fournit tout, pour la troisième fois. `## Pièges` monte à 94 %, et
+l'écart s'explique par le §21 : ce lot-ci compare beaucoup de briques dont le critère
+décisif est un fait de licence ou de cycle de vie, et ces faits vivent dans `Pièges`.
+La troisième ligne se stabilise autour de 20 %, ce qui confirme que le 1 sur 45 du
+pilote était l'exception et non la règle.
+
+Mais la raison avancée au §10 ne tient pas telle quelle. Le §10 opposait membres
+**substituables** (QNP = table d'aiguillage, inutilisable) et membres
+**complémentaires** (QNP = table de comparaison, utile). J'ai relu les 15 puces :
+**aucune** n'est une redirection « besoin → concurrent ». Les 15 énoncent une **borne
+dure de la brique elle-même** — une plateforme non supportée (Maka sous Linux,
+ai-memory sous Windows natif), une licence (Phoenix en ELv2 face à une exigence OSI,
+swarm-forge sans licence du tout), un périmètre revendiqué (needle qui ne fait pas de
+chat, Aim qui ne fait pas de registre, smolagents dont l'exécuteur n'est pas une
+frontière de sécurité), une condition d'emploi (DSPy sans métrique, Outlines derrière
+une API fermée sans logits), ou un aveu (Penpot, dont la fiche écrit que la maturité
+de Figma reste devant).
+
+Et ces 15 puces se répartissent **des deux côtés** de la dichotomie du §10 : Penpot et
+Figma sont des substituts purs, Maka et needle sont des voisins d'étage.
+
+> **Correction à porter au §10, et instruction pour le lot 6** : ce qui rend une puce
+> de `QNP` utilisable n'est pas la nature du voisinage, c'est sa **forme**. Une puce
+> qui énonce une limite de la brique **courante** départage ; une puce qui redirige
+> vers un concurrent ne départage rien, quel que soit le type de comparatif. Le
+> tableau `Prendre si / Écarter si` du nouveau gabarit hérite donc du défaut par la
+> règle dure nº 5 elle-même — « toute cellule `Écarter si` contient un wikilink »
+> impose la redirection, donc pousse vers la forme qui ne départage pas. **La règle
+> nº 5 est à relire au lot 8** : ce qu'elle devrait exiger, c'est que la cellule
+> énonce la limite *et* nomme l'alternative, pas qu'elle se réduise à l'alternative.
+
+## 21. Onze critères décisifs sur 83 ne sont pas techniques — et c'est ce que le tableau ne peut pas dire
+
+Fait mesuré sur les 57 fiches lues, et il n'apparaît pas à cette densité dans les
+sessions précédentes. Pour **onze** briques — une puce sur sept — ce qui les départage
+est d'abord un fait de licence ou de cycle de vie :
+
+| Brique | Le fait qui départage | Où il se lit |
+|---|---|---|
+| Neptune | racheté par OpenAI, service arrêté le 5 mars 2026 | P + PG |
+| Helicone | racheté par Mintlify le 3 mars 2026, maintenance mode | P + PG |
+| Vanna | dépôt OSS archivé le 29 mars 2026 | P + PG |
+| AutoGen | en maintenance depuis fin 2025, trois projets coexistent | P + PG |
+| Semantic Kernel | remplacé par Microsoft Agent Framework | P + PG |
+| RAGatouille | 0.0.9.post2 en mai 2025, aucun commit depuis | P + PG |
+| swarm-forge | **aucune licence déclarée** — aucun droit d'usage | QNP + PG |
+| Ultralytics YOLO | AGPL-3.0, oblige à ouvrir le code appelant | PG |
+| text-generation-webui | AGPL-3.0, copyleft fort | P + PG |
+| Phoenix Arize | ELv2 *source-available*, pas OSI | P + QNP + PG |
+| LangGraph | lib MIT, `langgraph-api` / Platform non | PG |
+
+Deux enseignements.
+
+D'abord, **c'est exactement ce qu'un comparatif doit porter et qu'un tableau `.base`
+ne peut pas** : la vue affiche `licence_type: open-source` pour text-generation-webui
+comme pour Excalidraw, et `maturite: production` pour Neptune comme pour MLflow. La
+colonne dit vrai et ne dit rien. La puce, elle, dit qu'on ne démarre pas un projet sur
+Neptune. C'est la première justification **mesurée** du lot 5 depuis son ouverture —
+la page n'apporte pas seulement des liens sortants et une couleur, elle porte le
+critère que le tableau efface.
+
+Ensuite, **ces faits périment**. Onze puces datées dans un vault qui n'a aucun
+mécanisme de fraîcheur, c'est onze dettes à échéance inconnue. Le brain porte déjà
+`AI/scripts/verifier_fraicheur.py` ; il n'est pas branché sur les pages de comparatif,
+et il devrait l'être — sujet pour le lot 8, pas pour ici.
+
+## 22. Les 13 comparatifs restants, par domaine
+
+| Domaine | Reste | Comparatifs |
+|---|---|---|
+| Data & pipelines | 6 | Outils EDA - profiling · Manipulation de données · Orchestrateurs data · Parsing de documents · Scraping · Visualisation |
+| Interfaces & apps data | 2 | Apps data & démos ML · Frontends web légers |
+| Automatisation no-code | 1 | Automatisation no-code |
+| Calcul distribué | 1 | Calcul distribué |
+| Mathématiques | 1 | Solveurs d'optimisation — **1 seul membre**, `[WARN] R8b` |
+| Signal & audio | 1 | Traitement du signal |
+| Statistiques & inférence | 1 | Outils stats |
+
+Les deux points de vigilance du §16 sont intacts et n'ont pas été touchés, sur
+consigne :
+
+- `Solveurs d'optimisation` a **un membre** (PuLP). Le convertir ne réglera pas `R8b`,
+  il le rendra silencieux.
+- `Frontends web légers` filtre par **liste de 5 noms codée en dur** (`[WARN] R8d`),
+  seul des 47 dans ce cas.
+
+Cinq de ces sept domaines n'ont qu'un ou deux comparatifs : la contrainte « un domaine
+ne se coupe pas en deux », qui a dicté l'ordre des trois sessions, ne contraint plus
+rien. La dernière session peut tout prendre.
+
+## Annexe — le relevé des sources, puce par puce (83)
+
+`P` = `## Pourquoi`, `QNP` = `## Quand NE PAS l'utiliser`, `PG` = `## Pièges`.
+
+**Comparatif - Détection & segmentation** — *l'étage de la chaîne vision, puis temps
+réel, modularité ou segmentation sans classes*
+
+| Puce | Source |
+|---|---|
+| Ultralytics YOLO — un étage temps réel, une API pour quatre tâches, export edge ; AGPL-3.0 | `Ultralytics YOLO.md` P + PG (« intégrer YOLO dans un service distribué peut obliger à ouvrir tout le code appelant ») |
+| Detectron2 — implémentations de référence, architecture modulaire, précision plutôt que latence ; installation fragile, Windows limité | `Detectron2.md` P + PG |
+| segment-anything — promptable zero-shot ; **ne classe pas**, encodeur ViT lourd | `segment-anything.md` P + PG (« SAM ne classe pas les masques ») |
+| supervision — model-agnostic, `Detections` + ByteTrack + zones ; **ne fait pas d'inférence** | `supervision.md` P + PG |
+| albumentations — propage la transformation aux boîtes/masques/keypoints ; CPU et NumPy HWC, hors autograd | `albumentations.md` P + QNP (« augmentation sur GPU et différentiable → Kornia ») + PG |
+| OpenCV — vision classique et géométrie, cœur C++ ; ni batch ni GPU ni autograd, **BGR** | `OpenCV.md` P + PG |
+
+**Comparatif - Forecasting** — *un modèle par série, un modèle global, ou aucun*
+
+| Puce | Source |
+|---|---|
+| statsforecast — AutoARIMA/AutoETS compilés Numba, Spark/Dask/Ray ; format long strict, premier appel = compilation | `statsforecast.md` P + PG |
+| pmdarima — `auto.arima` en enveloppant statsmodels ; un ajustement par série, non vectorisé | `pmdarima.md` P + PG (« lenteur dès que les séries se multiplient ») |
+| Prophet — additif interprétable (ruptures, Fourier, fériés) ; un modèle = une série, demande intermittente exclue | `Prophet.md` P + PG + QNP |
+| darts — API unique de l'ARIMA aux réseaux ; tout via `TimeSeries`, past/future covariates | `darts.md` P + PG |
+| neuralforecast — 30+ architectures récentes, `Auto*` via Ray/Optuna ; perd sur petits jeux | `neuralforecast.md` P + PG |
+| Chronos — modèle de fondation zero-shot, Chronos-2 multivarié ; ne bat pas toujours un modèle dédié, fuite de pré-entraînement | `Chronos.md` P + PG |
+
+**Comparatif - Suivi d'expériences ML** — *où partent les données, et jusqu'où va
+l'outil au-delà des courbes*
+
+| Puce | Source |
+|---|---|
+| MLflow — registre de modèles ouvert, Linux Foundation ; **aucune authentification** par défaut, `mlruns/` qui grossit | `MLflow.md` P + PG |
+| Aim — léger, self-host, UI sur des centaines de milliers de runs ; pas de registre ni RBAC, runs sur le disque du serveur | `Aim.md` P + QNP + PG |
+| ClearML — données, pipelines, **agents et queues**, capture sans modifier le code ; ES+Mongo+Redis à opérer, autocapture bavarde | `ClearML.md` P + PG |
+| Weights & Biases — Sweeps intégrés, Reports ; cloud par défaut, mode *online* bloquant, coût au volume | `Weights & Biases.md` P + PG |
+| Comet — tracking **et** observabilité LLM via Opik ; cœur propriétaire, Opik seul open-source | `Comet.md` P + PG |
+| TensorBoard — visualiseur d'*event files* : graphe, histogrammes, projecteur, profilage ; comparaison limitée, pas d'auth | `TensorBoard.md` P + QNP + PG |
+| Neptune — racheté par OpenAI (déc. 2025), service hébergé arrêté le 5 mars 2026 | `Neptune.md` P + PG |
+
+**Comparatif - Observabilité LLM** — *proxy ou SDK OpenTelemetry, et la licence qui
+décide du self-host*
+
+| Puce | Source |
+|---|---|
+| Langfuse — cœur **MIT**, quatre piliers unifiés ; open-core `ee/`, self-host ClickHouse+Postgres+Redis | `Langfuse.md` P + PG |
+| Phoenix Arize — natif **OpenTelemetry/OpenInference**, un conteneur ; **ELv2 ≠ OSI** | `Phoenix Arize.md` P + QNP + PG |
+| LangSmith — propriétaire, intégration LangChain/LangGraph la plus serrée ; self-host réservé à l'entreprise | `LangSmith.md` P + PG |
+| Helicone — **mode proxy**, une ligne, cache et rate-limiting ; chemin critique, maintenance mode depuis Mintlify (3 mars 2026) | `Helicone.md` P + PG |
+
+**Comparatif - Évaluation LLM** — *la sortie ou les étapes internes, en CI, en YAML ou
+en instrumentant*
+
+| Puce | Source |
+|---|---|
+| Ragas — retrieval et génération mesurés séparément, métriques sans référence, jeux de tests synthétiques ; API 0.x remaniée | `Ragas.md` P + PG |
+| DeepEval — « pytest des LLM », 50+ métriques (RAG, agents, sécurité), G-Eval | `DeepEval.md` P |
+| promptfoo — YAML déclaratif, matrice de comparaison, **red-teaming** 50+ types ; racheté par OpenAI (mars 2026) | `promptfoo.md` P |
+| TruLens — évalue **en instrumentant**, feedback functions par étape, socle Snowflake ; n'est pas une plateforme de monitoring | `TruLens.md` P + PG |
+
+**Comparatif - Fine-tuning LLM** — *écrire la boucle ou la déclarer, et le matériel
+visé*
+
+| Puce | Source |
+|---|---|
+| TRL — un trainer par méthode, le niveau code, base des outils config-driven ; API en évolution rapide | `TRL.md` P + PG |
+| Axolotl — un seul YAML versionnable, DeepSpeed/FSDP à la config ; surface de config vaste, échec sans erreur claire | `Axolotl.md` P + PG |
+| LLaMA-Factory — 100+ familles **dont des VLM**, interface web LLaMA Board ; largeur ≠ profondeur | `LLaMA-Factory.md` P + PG |
+| Unsloth — kernels Triton, ~2× et 70-80 % de VRAM en moins, un GPU grand public ; multi-GPU bridé en OSS | `Unsloth.md` P + QNP + PG |
+| Tunix — pendant **JAX/TPU** de TRL, RL agentique, rollouts vLLM/SGLang-JAX ; avantage TPU seulement, 0.1.x | `Tunix.md` P + QNP + PG |
+
+**Comparatif - Frameworks text-to-SQL** — *schéma physique ou couche sémantique,
+brique ou UI d'équipe*
+
+| Puce | Source |
+|---|---|
+| WrenAI — **MDL**, couche sémantique versionnée avec RLAC/CLAC ; investissement à écrire et maintenir | `WrenAI.md` P + PG |
+| Vanna — entraîné sur DDL + doc + paires, agnostique base et LLM, **Ollama** local ; dépôt archivé le 29 mars 2026 | `Vanna.md` P + PG |
+| DB-GPT — multi-agent, langage AWEL, **fine-tuning Text2SQL** ; coût conceptuel élevé | `DB-GPT.md` P + PG |
+| LangChain SQL agent — assemblage `SQLDatabase` + toolkit + boucle de correction ; à maintenir, pas de couche sémantique | `LangChain SQL agent.md` P + PG |
+| LlamaIndex NLSQLTableQueryEngine — query engine qui synthétise la réponse, `SQLTableRetrieverQueryEngine` pour les gros schémas | `LlamaIndex NLSQLTableQueryEngine.md` P |
+
+**Comparatif - Exécution & serving LLM** — *le poste ou la charge, puis le matériel et
+la forme livrée*
+
+| Puce | Source |
+|---|---|
+| llama.cpp — ggml, **GGUF**, quantization agressive, dépendances minimales ; backends GPU à compiler | `llama.cpp.md` P + PG |
+| Ollama — une commande, registre, Modelfiles, API OpenAI-compatible ; Q4 par défaut, bascule RAM silencieuse | `Ollama.md` P + PG |
+| LM Studio — GUI, backend **MLX** sur Apple Silicon ; **application propriétaire** | `LM Studio.md` P + PG |
+| text-generation-webui — **backends commutables sans redémarrage** (GGUF/GPTQ/EXL2) ; **AGPL-3.0**, choix du loader | `text-generation-webui.md` P + PG |
+| vLLM — **PagedAttention**, continuous batching ; préallocation VRAM surprenante | `vLLM.md` P + PG |
+| SGLang — **RadixAttention**, préfixes partagés réutilisés ; gain proportionnel au partage | `SGLang.md` P + PG |
+| TGI — routeur **Rust**, moteur des Inference Endpoints ; épisode de licence **HFOIL** mi-2023 → début 2024 | `TGI.md` P + PG |
+| TensorRT-LLM — moteur **compilé**, FP8/FP4 Blackwell ; un build par modèle/GPU/précision, verrou NVIDIA | `TensorRT-LLM.md` P + PG |
+| needle — **modèle** de 45 M dans 14 Mo, JSON garanti par grammaire, 256 tokens glissants | `needle.md` P + QNP (« conversation, rédaction, raisonnement : hors périmètre ») |
+
+**Comparatif - Assistants de code IA** — *écrire, dire quoi écrire, superviser, ou
+fournir le contexte*
+
+| Puce | Source |
+|---|---|
+| Aider — terminal, **commit git atomique** par édition, repo map ; tout passe par git, coût de la repo map | `Aider.md` P + PG |
+| Cline — boucle **Plan/Act**, **MCP de première classe** ; surface d'exécution élargie par les serveurs tiers | `Cline.md` P + PG |
+| Continue — seul à faire de l'**autocomplétion inline**, BYOM ; plugin JetBrains en maintenance communautaire | `Continue.md` P + PG |
+| pi — **llama.cpp citoyen de première classe** ; **aucun système de permissions** | `pi.md` P + PG |
+| freebuff — ni clé API ni paiement, financé par la publicité ; prompts et contenu collé analysés, sessions plafonnées | `freebuff.md` P + PG |
+| Spec Kit — **spec-driven development**, constitution de principes ; garbage-in, l'effort se déplace en amont | `Spec Kit.md` P + PG |
+| BMAD — rôles agiles nommés, **stories** en chat neuf ; v4 et v6 incompatibles | `BMAD.md` P + PG |
+| i-have-adhd — dix règles de sortie, rien à exécuter ; effet **nul sur la justesse** | `i-have-adhd.md` P + PG |
+| t3code — **plan de contrôle**, ne parle à aucun LLM ; qualité et coût = ceux de la CLI sous-jacente | `t3code.md` P + PG |
+| swarm-forge — tmux, un **git worktree** par agent, handoffs à porte d'audit ; **aucune licence déclarée** | `swarm-forge.md` P + QNP + PG |
+| Maka — journal **append-only** rejouable, permissions tracées ; **Linux non supporté**, aucune release ASF | `Maka.md` P + QNP + PG |
+| Graphify — knowledge graph du dépôt (Tree-sitter, Leiden, god nodes) ; artefact à régénérer | `Graphify.md` P + PG |
+| ai-memory — wiki markdown **versionné par git**, relais d'une CLI à l'autre ; Windows natif expérimental | `ai-memory.md` P + QNP |
+
+**Comparatif - Frameworks LLM** — *la couche qu'on importe : assembler, orchestrer,
+récupérer, contraindre*
+
+| Puce | Source |
+|---|---|
+| LangChain — interfaces standardisées, catalogue d'intégrations ; abstractions qui masquent les prompts réels | `LangChain.md` P + PG |
+| DSPy — signatures typées, **optimiseur qui compile les prompts** ; sans métrique il perd son intérêt, coût en tokens | `DSPy.md` P + QNP + PG |
+| LangGraph — **graphe cyclique à état persisté**, checkpoints, human-in-the-loop ; lib MIT, Platform non | `LangGraph.md` P + PG |
+| CrewAI — **équipe de rôles**, Crews et Flows, indépendant de LangChain ; abstraction trompeuse de simplicité | `CrewAI.md` P + PG |
+| AutoGen — **GroupChat** conversationnel ; en maintenance depuis fin 2025, AutoGen / AG2 / Agent Framework | `AutoGen.md` P + PG |
+| Semantic Kernel — **parité C#/Python/Java** ; remplacé par Microsoft Agent Framework, planners refondus | `Semantic Kernel.md` P + PG |
+| OpenAI Agents SDK — minimalité, **handoffs**, tracing intégré ; tracing par défaut chez OpenAI, robustesse à câbler | `OpenAI Agents SDK.md` P + PG |
+| PydanticAI — sortie **Pydantic validée**, injection de dépendances typée ; sans type-checker en CI l'argument tombe | `PydanticAI.md` P + PG |
+| smolagents — **CodeAgent** (actions en Python), ~1000 lignes ; `LocalPythonExecutor` **n'isole pas** | `smolagents.md` P + QNP + PG |
+| Agno — mémoire/connaissance/raisonnement natifs, **AgentOS** self-host ; « le plus rapide » = instanciation | `Agno.md` P + PG |
+| PraisonAI — `agents.yaml` low-code, **auto-réflexion** ; double au moins le nombre d'appels | `PraisonAI.md` P + PG |
+| LlamaIndex — part du **pipeline de connaissance**, index variés ; défauts chunk/top-k décisifs, index avancés coûteux | `LlamaIndex.md` P + PG |
+| Haystack — **pipeline explicite** de composants, hybride dense+BM25, Apache-2.0 ; rupture 1.x → 2.x | `Haystack.md` P + PG |
+| RAGatouille — **late-interaction ColBERT**, index PLAID, minage de négatifs ; aucun commit depuis mai 2025 | `RAGatouille.md` P + PG |
+| Instructor — emballe le client, `response_model`, **retry sur validation** ; retries qui gonflent facture et latence | `Instructor.md` P + PG |
+| Outlines — **masquage des tokens invalides**, conforme par construction ; inutilisable sans logits, biaise la distribution | `Outlines.md` P + QNP + PG |
+| Guidance — **entrelace contrôle et génération**, token healing, fast-forward ; DSL à apprendre, support selon backend | `Guidance.md` P + PG |
+
+**Comparatif - Design & prototypage** — *où vivent les fichiers*
+
+| Puce | Source |
+|---|---|
+| Figma — composants et variables, prototypes, **dev mode** ; cloud propriétaire **sans self-host**, coût par éditeur, format fermé | `Figma.md` P + PG |
+| Penpot — **MPL-2.0 self-hostable**, standards web SVG/CSS ; maturité et plugins en retrait, infra à opérer | `Penpot.md` P + QNP + PG |
+
+**Comparatif - Diagrammes** — *texte versionné, fichier posé à la main, ou artefact
+d'agent*
+
+| Puce | Source |
+|---|---|
+| Mermaid — **diagram-as-code**, rendu natif GitHub/GitLab/Obsidian ; **auto-layout subi** | `Mermaid.md` P + PG |
+| draw.io — GUI, placement à la main, plus large catalogue de formes ; **XML illisible en diff** | `draw.io.md` P + PG |
+| Excalidraw — style **croquis à main levée** comme signal ; peu de formes structurées, rame sur les grands tableaux | `Excalidraw.md` P + PG |
+| FossFLOW — seul **isométrique 3D**, PWA hors ligne, icônes cloud ; périmètre étroit, stockage navigateur | `FossFLOW.md` P + PG |
+| Archify — **skill d'agent**, IR JSON typée compilée de façon déterministe ; quatre absences documentées | `Archify.md` P + PG |
