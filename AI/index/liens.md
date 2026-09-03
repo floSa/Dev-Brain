@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 717 pages actives.
+> 727 pages actives.
 
 ## Par page
 
@@ -58,7 +58,7 @@
 ### Alembic  ·  brique
 - tags : `migration`, `relational`
 - liens sortants : [[Comparatif - Migrations de schéma]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[SQLAlchemy]], [[SQLModel]], [[psycopg2]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[SQLAlchemy]], [[SQLModel]], [[psycopg2]]
 
 ### altair  ·  brique
 - tags : `dataviz`, `declarative-viz`, `interactive-viz`
@@ -68,12 +68,12 @@
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
 - liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
 
 ### Apache Cassandra  ·  brique
 - tags : `nosql`, `wide-column`, `distributed`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB]], [[Postgres]], [[Redis]]
-- liens entrants : [[Bases de données]], [[MongoDB]], [[Redis]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB]], [[Redis]]
 
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`
@@ -123,7 +123,7 @@
 ### bm25s  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
 - liens sortants : [[BM25]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[Ranking metrics]], [[Recherche d'information]], [[rank-bm25]], [[sentence-transformers]]
-- liens entrants : [[BM25]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[rank-bm25]]
+- liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[rank-bm25]]
 
 ### BMAD  ·  brique
 - tags : `agent-skill`, `code-assistant`, `agents`, `multi-agent`, `code-generation`
@@ -168,7 +168,7 @@
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
 - liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[DSPy]], [[Faiss]], [[LanceDB]], [[LangChain]], [[LlamaIndex]], [[ScaNN]], [[Vectoriel]], [[hnswlib]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[LanceDB]], [[LangChain]], [[LlamaIndex]], [[ScaNN]], [[Vectoriel]], [[hnswlib]]
 
 ### Chronos  ·  brique
 - tags : `forecasting`, `timeseries`, `foundation-model`, `transformers`, `deep-learning`
@@ -188,7 +188,7 @@
 ### ClickHouse  ·  brique
 - tags : `columnar`, `olap`, `distributed`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases colonnes]], [[DuckDB]], [[Postgres]]
-- liens entrants : [[Bases de données]], [[DuckDB]], [[Elasticsearch]], [[InfluxDB]], [[Relationnel]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases colonnes]], [[DuckDB]], [[Elasticsearch]], [[InfluxDB]], [[Relationnel]], [[TimescaleDB]]
 
 ### Cline  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`, `mcp`
@@ -208,7 +208,7 @@
 ### CockroachDB  ·  brique
 - tags : `relational`, `distributed`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Bases de données]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### Comet  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -273,7 +273,7 @@
 ### DataGrip  ·  brique
 - tags : `db-client`, `relational`, `nosql`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[HeidiSQL]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
 
 ### datasets  ·  brique
 - tags : `out-of-core`, `streaming`, `nlp`, `deep-learning`
@@ -293,7 +293,7 @@
 ### DBeaver  ·  brique
 - tags : `db-client`, `relational`, `nosql`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
@@ -343,7 +343,7 @@
 ### DuckDB  ·  brique
 - tags : `columnar`, `olap`, `embedded`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Postgres]]
-- liens entrants : [[ADBC]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
+- liens entrants : [[ADBC]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
 
 ### dynaconf  ·  brique
 - tags : `config`
@@ -358,7 +358,7 @@
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[Hybrid retrieval]], [[Marqo]], [[Postgres]], [[Recherche d'information]], [[Vespa]], [[txtai]]
-- liens entrants : [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Grafana]], [[Haystack]], [[Hybrid retrieval]], [[Loki]], [[Marqo]], [[Recherche]], [[Recherche d'information]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Grafana]], [[Haystack]], [[Hybrid retrieval]], [[Loki]], [[Marqo]], [[Recherche]], [[Recherche d'information]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
 
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
@@ -378,7 +378,7 @@
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
 - liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Index ANN — internes]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[k-NN]]
 
 ### Faker  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -443,7 +443,7 @@
 ### Flyway  ·  brique
 - tags : `migration`, `relational`
 - liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]]
-- liens entrants : [[Administration]], [[Alembic]], [[Bases de données]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
+- liens entrants : [[Administration]], [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
 
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
@@ -518,7 +518,7 @@
 ### HeidiSQL  ·  brique
 - tags : `db-client`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[DataGrip]], [[MySQL Workbench]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[DataGrip]], [[MySQL Workbench]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[DataGrip]], [[MySQL Workbench]]
 
 ### Helicone  ·  brique
 - tags : `llm`, `llm-observability`, `llm-gateway`, `tracing`
@@ -533,7 +533,7 @@
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
 - liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
 
 ### HTMX  ·  brique
 - tags : `hypermedia`
@@ -568,7 +568,7 @@
 ### InfluxDB  ·  brique
 - tags : `timeseries`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[Postgres]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[Grafana]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Grafana]], [[TimescaleDB]]
 
 ### Instructor  ·  brique
 - tags : `llm`, `structured-output`, `data-validation`, `type-hints`
@@ -623,7 +623,7 @@
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
 - liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Vectoriel]]
+- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Vectoriel]]
 
 ### LangChain  ·  brique
 - tags : `llm`, `rag`, `agents`, `tool-use`
@@ -683,7 +683,7 @@
 ### Liquibase  ·  brique
 - tags : `migration`, `relational`
 - liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma]], [[Flyway]], [[Migrations de schéma]], [[Prisma]]
-- liens entrants : [[Administration]], [[Alembic]], [[Bases de données]], [[Flyway]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
+- liens entrants : [[Administration]], [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Flyway]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
 
 ### LiteLLM  ·  brique
 - tags : `llm`, `llm-gateway`, `inference`
@@ -748,7 +748,7 @@
 ### MariaDB  ·  brique
 - tags : `relational`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Bases de données]], [[CockroachDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### Marimo  ·  brique
 - tags : `notebook`, `reproducibility`, `data-app`
@@ -763,7 +763,7 @@
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Qdrant]], [[Recherche d'information]], [[Vespa]], [[Weaviate]], [[txtai]]
-- liens entrants : [[Bases de données vectorielles]], [[Elasticsearch]], [[Recherche]], [[Vespa]], [[txtai]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Recherche]], [[Vespa]], [[txtai]]
 
 ### matplotlib  ·  brique
 - tags : `dataviz`, `static-viz`
@@ -793,12 +793,12 @@
 ### Microsoft SQL Server  ·  brique
 - tags : `relational`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[MySQL]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Bases de données]], [[CockroachDB]], [[MariaDB]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### Milvus  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Pinecone]], [[Qdrant]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 
 ### Mimesis  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -838,22 +838,22 @@
 ### MongoDB  ·  brique
 - tags : `nosql`, `document-db`
 - liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[Postgres]], [[Redis]]
-- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[MongoDB Compass]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
+- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB Compass]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
 
 ### MongoDB Compass  ·  brique
 - tags : `db-client`, `document-db`, `nosql`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[MongoDB]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
 
 ### MySQL  ·  brique
 - tags : `relational`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Bases de données]], [[CockroachDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### MySQL Workbench  ·  brique
 - tags : `db-client`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]], [[MySQL]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[HeidiSQL]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
 
 ### n8n  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
@@ -863,7 +863,7 @@
 ### Nebula Graph  ·  brique
 - tags : `graph-db`, `distributed`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases graphes]], [[Graph Neural Networks]], [[Neo4j]], [[Postgres]]
-- liens entrants : [[Bases de données]], [[Graph Neural Networks]], [[Neo4j]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases graphes]], [[Graph Neural Networks]], [[Neo4j]]
 
 ### needle  ·  brique
 - tags : `local-llm`, `small-language-model`, `quantization`, `tool-use`, `structured-output`
@@ -873,7 +873,7 @@
 ### Neo4j  ·  brique
 - tags : `graph-db`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Nebula Graph]], [[Postgres]]
-- liens entrants : [[Bases de données]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]]
 
 ### Neptune  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1033,12 +1033,12 @@
 ### pgAdmin  ·  brique
 - tags : `db-client`, `postgres`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Postgres]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
 
 ### pgvector  ·  brique
 - tags : `vector-db`, `rag`, `postgres`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Weaviate]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Haystack]], [[LanceDB]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[ScaNN]], [[TimescaleDB]], [[Vectoriel]], [[Weaviate]], [[hnswlib]]
+- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Haystack]], [[LanceDB]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[ScaNN]], [[TimescaleDB]], [[Vectoriel]], [[Weaviate]], [[hnswlib]]
 
 ### Phoenix Arize  ·  brique
 - tags : `llm`, `llm-observability`, `llm-eval`, `tracing`
@@ -1053,7 +1053,7 @@
 ### Pinecone  ·  brique
 - tags : `vector-db`, `semantic-search`, `rag`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Qdrant]], [[Vectoriel]], [[Weaviate]], [[pgvector]], [[txtai]]
+- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Qdrant]], [[Vectoriel]], [[Weaviate]], [[pgvector]], [[txtai]]
 
 ### pingouin  ·  brique
 - tags : `hypothesis-testing`, `effect-size`, `statistical-power`, `non-parametric`, `parametric-test`
@@ -1088,7 +1088,7 @@
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLite]], [[pgvector]]
-- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Grafana]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[pgAdmin]], [[psycopg2]]
+- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Grafana]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[pgAdmin]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1113,7 +1113,7 @@
 ### Prisma  ·  brique
 - tags : `orm`, `relational`
 - liens sortants : [[Comparatif - ORM]], [[FastAPI]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[ORM]], [[SQLAlchemy]], [[SQLModel]]
-- liens entrants : [[Alembic]], [[Bases de données]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[ORM]], [[SQLAlchemy]], [[SQLModel]]
+- liens entrants : [[Alembic]], [[Bases de données]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[ORM]], [[SQLAlchemy]], [[SQLModel]]
 
 ### promptfoo  ·  brique
 - tags : `llm`, `llm-eval`, `testing`, `ai-security`
@@ -1218,7 +1218,7 @@
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[DSPy]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[LanceDB]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[pgvector]], [[txtai]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[LanceDB]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[pgvector]], [[txtai]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1238,7 +1238,7 @@
 ### rank-bm25  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
 - liens sortants : [[BM25]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[RAG]], [[Recherche d'information]], [[bm25s]], [[sentence-transformers]]
-- liens entrants : [[BM25]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[Traitement du langage naturel]], [[bm25s]], [[sentence-transformers]]
+- liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[Traitement du langage naturel]], [[bm25s]], [[sentence-transformers]]
 
 ### Ray  ·  brique
 - tags : `distributed`, `parallel`, `gpu`
@@ -1258,12 +1258,12 @@
 ### Redis  ·  brique
 - tags : `nosql`, `key-value`, `in-memory`
 - liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB]], [[Postgres]]
-- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Feast]], [[LLM caching]], [[MongoDB]], [[Redis Insight]]
+- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[Feast]], [[LLM caching]], [[MongoDB]], [[Redis Insight]]
 
 ### Redis Insight  ·  brique
 - tags : `db-client`, `key-value`, `in-memory`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Redis]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
 
 ### Rich  ·  brique
 - tags : `terminal-ui`
@@ -1293,7 +1293,7 @@
 ### ScaNN  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
 - liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[Vectoriel]], [[hnswlib]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Vectoriel]], [[hnswlib]]
 
 ### Scikit-Learn  ·  brique
 - tags : `supervised`, `unsupervised`, `dimensionality-reduction`, `model-evaluation`
@@ -1423,17 +1423,17 @@
 ### SQLAlchemy  ·  brique
 - tags : `orm`, `relational`, `type-hints`
 - liens sortants : [[Alembic]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[SQLModel]]
-- liens entrants : [[ADBC]], [[Alembic]], [[Bases de données]], [[Migrations de schéma]], [[ORM]], [[Prisma]], [[SQLModel]], [[connectorx]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Migrations de schéma]], [[ORM]], [[Prisma]], [[SQLModel]], [[connectorx]], [[psycopg2]]
 
 ### SQLite  ·  brique
 - tags : `relational`, `embedded`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]]
-- liens entrants : [[Bases de données]], [[CockroachDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]]
 
 ### SQLModel  ·  brique
 - tags : `orm`, `relational`, `type-hints`, `data-validation`
 - liens sortants : [[Alembic]], [[Comparatif - ORM]], [[FastAPI]], [[ORM]], [[Prisma]], [[Pydantic]], [[SQLAlchemy]]
-- liens entrants : [[Bases de données]], [[ORM]], [[Prisma]], [[SQLAlchemy]]
+- liens entrants : [[Bases de données]], [[Comparatif - ORM]], [[ORM]], [[Prisma]], [[SQLAlchemy]]
 
 ### Stable-Baselines3  ·  brique
 - tags : `reinforcement-learning`, `deep-learning`
@@ -1548,7 +1548,7 @@
 ### TimescaleDB  ·  brique
 - tags : `timeseries`, `postgres`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[InfluxDB]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[InfluxDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[InfluxDB]]
 
 ### timm  ·  brique
 - tags : `computer-vision`, `cnn`, `vit`, `transfer-learning`, `fine-tuning`, `deep-learning`, `model-hub`
@@ -1588,7 +1588,7 @@
 ### txtai  ·  brique
 - tags : `search`, `semantic-search`, `embeddings`, `rag`, `vector-db`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[FastAPI]], [[HuggingFace]], [[Marqo]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Vespa]], [[embeddings]], [[sentence-transformers]]
-- liens entrants : [[Bases de données vectorielles]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]]
 
 ### Typer  ·  brique
 - tags : `cli`, `type-hints`
@@ -1633,7 +1633,7 @@
 ### Vespa  ·  brique
 - tags : `search`, `vector-db`, `hybrid-search`, `ranking`, `distributed`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Faiss]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Marqo]], [[Qdrant]], [[Recherche d'information]], [[Reranking]], [[Weaviate]], [[txtai]]
-- liens entrants : [[Bases de données vectorielles]], [[Elasticsearch]], [[Late-interaction retrieval]], [[Marqo]], [[RAGatouille]], [[Recherche]], [[txtai]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Late-interaction retrieval]], [[Marqo]], [[RAGatouille]], [[Recherche]], [[txtai]]
 
 ### vLLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
@@ -1643,7 +1643,7 @@
 ### Weaviate  ·  brique
 - tags : `vector-db`, `rag`, `hybrid-search`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[hnswlib]], [[pgvector]]
 
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
@@ -1689,6 +1689,56 @@
 - tags : `orchestration`, `ml-pipeline`
 - liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[MLflow]], [[Metaflow]]
 - liens entrants : [[Flyte]], [[Machine Learning]], [[Metaflow]]
+
+### Comparatif - Bases colonnes  ·  comparatif
+- tags : `columnar`, `olap`
+- liens sortants : [[ClickHouse]], [[Comparatif - Bases colonnes.base]], [[DuckDB]]
+- liens entrants : [[Bases de données]], [[ClickHouse]], [[DuckDB]]
+
+### Comparatif - Bases graphes  ·  comparatif
+- tags : `graph-db`
+- liens sortants : [[Comparatif - Bases graphes.base]], [[Nebula Graph]], [[Neo4j]]
+- liens entrants : [[Bases de données]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
+
+### Comparatif - Bases NoSQL  ·  comparatif
+- tags : `nosql`
+- liens sortants : [[Apache Cassandra]], [[Comparatif - Bases NoSQL.base]], [[MongoDB]], [[Redis]]
+- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[MongoDB]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
+
+### Comparatif - Bases relationnelles  ·  comparatif
+- tags : `relational`
+- liens sortants : [[CockroachDB]], [[Comparatif - Bases relationnelles.base]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]], [[pgvector]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+
+### Comparatif - Bases temporelles  ·  comparatif
+- tags : `timeseries`
+- liens sortants : [[Comparatif - Bases temporelles.base]], [[InfluxDB]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[InfluxDB]], [[TimescaleDB]]
+
+### Comparatif - Bases vectorielles  ·  comparatif
+- tags : `vector-db`
+- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles.base]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+
+### Comparatif - Clients de bases de données  ·  comparatif
+- tags : `db-client`
+- liens sortants : [[Comparatif - Clients de bases de données.base]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+
+### Comparatif - Migrations de schéma  ·  comparatif
+- tags : `migration`
+- liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma.base]], [[Flyway]], [[Liquibase]], [[SQLAlchemy]]
+- liens entrants : [[Alembic]], [[Bases de données]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]]
+
+### Comparatif - Moteurs de recherche  ·  comparatif
+- tags : `search`
+- liens sortants : [[Comparatif - Moteurs de recherche.base]], [[Elasticsearch]], [[Marqo]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[txtai]]
+
+### Comparatif - ORM  ·  comparatif
+- tags : `orm`
+- liens sortants : [[Alembic]], [[Comparatif - ORM.base]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
+- liens entrants : [[Bases de données]], [[ORM]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
 
 ### Administration  ·  hub
 - tags : —
@@ -3626,7 +3676,7 @@
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
-- `columnar` : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx  — pas de page concept dédiée
+- `columnar` : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, DuckDB, LanceDB, Parquet, Polars, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Optimisation, Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Detectron2, Détection d'objets, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
@@ -3653,7 +3703,7 @@
 - `data-versioning` : Versionnage de données
 - `dataframe` : Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling  — pas de page concept dédiée
 - `dataviz` : Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
-- `db-client` : DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin  — pas de page concept dédiée
+- `db-client` : Comparatif - Clients de bases de données, DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin  — pas de page concept dédiée
 - `db-driver` : ADBC, psycopg2  — pas de page concept dédiée
 - `declarative-config` : Axolotl, Kestra, LLaMA-Factory  — pas de page concept dédiée
 - `declarative-viz` : altair  — pas de page concept dédiée
@@ -3702,7 +3752,7 @@
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
-- `graph-db` : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
+- `graph-db` : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
@@ -3755,7 +3805,7 @@
 - `memory-optimization` : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth  — pas de page concept dédiée
 - `metric-learning` : Metric learning & ré-identification
 - `metrics` : Beszel, Grafana, Observabilité  — pas de page concept dédiée
-- `migration` : Alembic, Flyway, Liquibase, Migrations de schéma
+- `migration` : Alembic, Comparatif - Migrations de schéma, Flyway, Liquibase, Migrations de schéma
 - `missing-data` : EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno  — pas de page concept dédiée
 - `mixed-precision` : Apprentissage profond, DeepSpeed, Mixed precision, accelerate
 - `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
@@ -3782,7 +3832,7 @@
 - `nlp` : BM25, Classification de texte, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLP, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem, Théorie de l'apprentissage
 - `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Régression quantile, Tests & estimation, Tests non paramétriques, pingouin, scipy.stats
-- `nosql` : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
+- `nosql` : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
@@ -3791,11 +3841,11 @@
 - `observability` : Beszel, Grafana, Loki, Observabilité, Observabilité des LLM  — pas de page concept dédiée
 - `ocr` : Documents, LlamaParse, Marker, OCR, Parsing, Stirling PDF, Unstructured, docTR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
-- `olap` : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
+- `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, DuckDB, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
 - `optimization` : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
-- `orm` : ORM, Prisma, SQLAlchemy, SQLModel
+- `orm` : Comparatif - ORM, ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
 - `out-of-core` : Calcul distribué, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
@@ -3837,7 +3887,7 @@
 - `regularization` : Augmentation d'images, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
 - `relation-extraction` : Construction de graphes de connaissances  — pas de page concept dédiée
-- `relational` : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
+- `relational` : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
@@ -3852,7 +3902,7 @@
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow  — pas de page concept dédiée
 - `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité  — pas de page concept dédiée
-- `search` : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
+- `search` : BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
 - `self-hosted` : Automatisation no-code, Beszel, Observabilité, OpenMAIC, Stirling PDF, Stockage, Web-Check, croc  — pas de page concept dédiée
@@ -3885,7 +3935,7 @@
 - `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, NLP, NLTK, SetFit
 - `text-to-sql` : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
-- `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
+- `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `token-optimization` : Headroom  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, Modèles de langage, NLP, NLTK, Tokenization, sentencepiece, spaCy
 - `tool-use` : Agent patterns, Agent skills, Agents, Agno, AutoGen, CrewAI, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, Maka, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PraisonAI, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, needle, pi, smolagents, tool-use
@@ -3899,7 +3949,7 @@
 - `value-function` : Actor-Critic methods, Apprentissage par renforcement, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
 - `vc-dimension` : Théorie de l'apprentissage, VC dimension
-- `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
+- `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Comparatif - Bases vectorielles, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Algèbre linéaire, Vector norms  — pas de page concept dédiée
 - `version-control` : Aider, Bruno, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
@@ -3935,7 +3985,7 @@
 - `cli` (porté par : Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
-- `columnar` (porté par : ADBC, Bases de données, ClickHouse, DuckDB, LanceDB, Parquet, Polars, connectorx)
+- `columnar` (porté par : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, DuckDB, LanceDB, Parquet, Polars, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
@@ -3949,7 +3999,7 @@
 - `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Sortie typée, Structured outputs)
 - `dataframe` (porté par : Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling)
 - `dataviz` (porté par : Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn)
-- `db-client` (porté par : DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin)
+- `db-client` (porté par : Comparatif - Clients de bases de données, DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin)
 - `db-driver` (porté par : ADBC, psycopg2)
 - `declarative-config` (porté par : Axolotl, Kestra, LLaMA-Factory)
 - `declarative-viz` (porté par : altair)
@@ -3981,7 +4031,7 @@
 - `fourier` (porté par : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
-- `graph-db` (porté par : Bases de données, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
+- `graph-db` (porté par : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : HTMX, Web & API)
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
@@ -4027,12 +4077,12 @@
 - `multivariate` (porté par : MANOVA et tests multivariés)
 - `networking` (porté par : Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
-- `nosql` (porté par : Apache Cassandra, Bases de données, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
+- `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage)
 - `observability` (porté par : Beszel, Grafana, Loki, Observabilité, Observabilité des LLM)
-- `olap` (porté par : Apache Iceberg, ClickHouse, DuckDB, Parquet, Partitionnement & layout de données)
+- `olap` (porté par : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, DuckDB, Parquet, Partitionnement & layout de données)
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
@@ -4057,7 +4107,7 @@
 - `recon` (porté par : Sécurité, Web-Check)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
-- `relational` (porté par : Alembic, Bases de données, CockroachDB, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
+- `relational` (porté par : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
@@ -4067,7 +4117,7 @@
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
-- `search` (porté par : BM25, Bases de données, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai)
+- `search` (porté par : BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `self-hosted` (porté par : Automatisation no-code, Beszel, Observabilité, OpenMAIC, Stirling PDF, Stockage, Web-Check, croc)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
@@ -4090,7 +4140,7 @@
 - `terminal-ui` (porté par : Rich, llmfit, pi)
 - `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
-- `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
+- `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Helicone, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize, TruLens)
 - `traffic-analysis` (porté par : Réseau, Sniffnet)

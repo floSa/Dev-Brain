@@ -7,6 +7,7 @@
     "Calcul distribué",
     "Data & pipelines",
     "Design & diagrammes",
+    "Dev",
     "DevOps",
     "Documents",
     "Interfaces & apps data",
@@ -24,10 +25,11 @@
     "Statistiques & inférence",
     "Stockage",
     "Sécurité",
-    "Web & API"
+    "Web & API",
+    "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 717,
+  "count": 727,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -371,6 +373,7 @@
       "ADBC",
       "Bases de données",
       "ClickHouse",
+      "Comparatif - Bases colonnes",
       "DuckDB",
       "LanceDB",
       "Parquet",
@@ -582,6 +585,7 @@
       "seaborn"
     ],
     "db-client": [
+      "Comparatif - Clients de bases de données",
       "DBeaver",
       "DataGrip",
       "HeidiSQL",
@@ -1087,6 +1091,7 @@
     ],
     "graph-db": [
       "Bases de données",
+      "Comparatif - Bases graphes",
       "GraphRAG",
       "Nebula Graph",
       "Neo4j",
@@ -1627,6 +1632,7 @@
     ],
     "migration": [
       "Alembic",
+      "Comparatif - Migrations de schéma",
       "Flyway",
       "Liquibase",
       "Migrations de schéma"
@@ -1848,6 +1854,7 @@
     "nosql": [
       "Apache Cassandra",
       "Bases de données",
+      "Comparatif - Bases NoSQL",
       "DBeaver",
       "DataGrip",
       "MongoDB",
@@ -1920,6 +1927,7 @@
     "olap": [
       "Apache Iceberg",
       "ClickHouse",
+      "Comparatif - Bases colonnes",
       "DuckDB",
       "Parquet",
       "Partitionnement & layout de données"
@@ -1966,6 +1974,7 @@
       "n8n"
     ],
     "orm": [
+      "Comparatif - ORM",
       "ORM",
       "Prisma",
       "SQLAlchemy",
@@ -2284,6 +2293,7 @@
       "Alembic",
       "Bases de données",
       "CockroachDB",
+      "Comparatif - Bases relationnelles",
       "DBeaver",
       "DataGrip",
       "Flyway",
@@ -2411,6 +2421,7 @@
     "search": [
       "BM25",
       "Bases de données",
+      "Comparatif - Moteurs de recherche",
       "Elasticsearch",
       "Hybrid retrieval",
       "Marqo",
@@ -2687,6 +2698,7 @@
       "Bases de données",
       "CausalImpact",
       "Chronos",
+      "Comparatif - Bases temporelles",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
@@ -2876,6 +2888,7 @@
       "Bases de données",
       "Bases de données vectorielles",
       "Chroma",
+      "Comparatif - Bases vectorielles",
       "Faiss",
       "Index ANN — internes",
       "LanceDB",
@@ -3160,6 +3173,23 @@
       ],
       "pitch": "Clients graphiques pour explorer, requêter et administrer un serveur de base de données.",
       "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Administration/Comparatif - Clients de bases de données.md",
+      "nom": "Comparatif - Clients de bases de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/admin",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "db-client"
+      ],
       "alternatives": null,
       "complements": null,
       "maturite": null
@@ -3455,6 +3485,109 @@
       "maturite": "production"
     },
     {
+      "path": "Bases de données/Comparatif - Bases NoSQL.md",
+      "nom": "Comparatif - Bases NoSQL",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/cle-valeur",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "nosql"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Comparatif - Bases colonnes.md",
+      "nom": "Comparatif - Bases colonnes",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/analytique",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "columnar",
+        "olap"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Comparatif - Bases graphes.md",
+      "nom": "Comparatif - Bases graphes",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/graphe",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "graph-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Comparatif - Bases temporelles.md",
+      "nom": "Comparatif - Bases temporelles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/series-temporelles",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Comparatif - Migrations de schéma.md",
+      "nom": "Comparatif - Migrations de schéma",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/migration",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "migration"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Comparatif - ORM.md",
+      "nom": "Comparatif - ORM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/orm",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "orm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/DuckDB.md",
       "nom": "DuckDB",
       "alias": [
@@ -3690,6 +3823,23 @@
       "maturite": "production"
     },
     {
+      "path": "Bases de données/Recherche/Comparatif - Moteurs de recherche.md",
+      "nom": "Comparatif - Moteurs de recherche",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/recherche",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/Recherche/Elasticsearch.md",
       "nom": "Elasticsearch",
       "alias": [
@@ -3917,6 +4067,23 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Relationnel/Comparatif - Bases relationnelles.md",
+      "nom": "Comparatif - Bases relationnelles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/relationnel",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "relational"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Bases de données/Relationnel/MariaDB.md",
@@ -4222,6 +4389,23 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Comparatif - Bases vectorielles.md",
+      "nom": "Comparatif - Bases vectorielles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/vecteur",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "vector-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Bases de données/Vectoriel/Faiss.md",

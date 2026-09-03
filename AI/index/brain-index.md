@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 717 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 727 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -930,6 +930,38 @@
 - **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
 - **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
 - **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
+
+## Comparatifs — ce qui départage plusieurs briques
+
+### database/admin
+- **Comparatif - Clients de bases de données** — —
+
+### database/analytique
+- **Comparatif - Bases colonnes** — —
+
+### database/cle-valeur
+- **Comparatif - Bases NoSQL** — —
+
+### database/graphe
+- **Comparatif - Bases graphes** — —
+
+### database/migration
+- **Comparatif - Migrations de schéma** — —
+
+### database/orm
+- **Comparatif - ORM** — —
+
+### database/recherche
+- **Comparatif - Moteurs de recherche** — —
+
+### database/relationnel
+- **Comparatif - Bases relationnelles** — —
+
+### database/series-temporelles
+- **Comparatif - Bases temporelles** — —
+
+### database/vecteur
+- **Comparatif - Bases vectorielles** — —
 
 ## Patterns — architectures éprouvées
 
