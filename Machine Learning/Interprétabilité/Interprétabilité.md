@@ -32,6 +32,13 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 - Surveiller la dérive plutôt qu'expliquer une prédiction → [[Evidently]], au niveau du domaine.
 
 <!-- AUTO:START -->
+### Notions
+- [[Attribution par gradient]] — domaines : data-sci, ml-eng
+- [[Interprétabilité mécaniste]] — domaines : ai-eng, data-sci
+- [[Probing]] — domaines : data-sci, ai-eng
+- [[Sparse autoencoders]] — domaines : data-sci, ai-eng
+- [[Superposition]] — domaines : data-sci, ai-eng
+
 ### Briques
 - [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
 - [[interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.

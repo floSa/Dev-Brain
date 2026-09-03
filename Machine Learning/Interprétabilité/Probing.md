@@ -2,7 +2,7 @@
 role: notion
 nom: Probing
 alias: [Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier]
-categorie: concept/dl
+categorie: ml/interpretabilite
 domaines: [data-sci, ai-eng]
 tags: [explainability, deep-learning, representation-learning]
 ---

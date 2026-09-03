@@ -2,7 +2,7 @@
 role: notion
 nom: Interprétabilité mécaniste
 alias: [Mechanistic interpretability, Mech interp, Interpretabilite mecaniste, Circuits, Transformer circuits, Activation patching, Causal tracing]
-categorie: concept/dl
+categorie: ml/interpretabilite
 domaines: [ai-eng, data-sci]
 tags: [explainability, deep-learning, llm]
 ---

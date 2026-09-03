@@ -11756,6 +11756,38 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Interprétabilité/Attribution par gradient.md",
+      "nom": "Attribution par gradient",
+      "alias": [
+        "Saliency",
+        "Saliency map",
+        "Carte de saillance",
+        "Integrated Gradients",
+        "IntegratedGradients",
+        "SmoothGrad",
+        "InputxGradient",
+        "Grad-CAM",
+        "GradientShap",
+        "Attribution methods"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Interprétabilité/Captum.md",
       "nom": "Captum",
       "alias": [
@@ -11779,6 +11811,36 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Interprétabilité mécaniste.md",
+      "nom": "Interprétabilité mécaniste",
+      "alias": [
+        "Mechanistic interpretability",
+        "Mech interp",
+        "Interpretabilite mecaniste",
+        "Circuits",
+        "Transformer circuits",
+        "Activation patching",
+        "Causal tracing"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Interprétabilité/Interprétabilité.md",
@@ -11833,6 +11895,36 @@
       "maturite": "deprecated"
     },
     {
+      "path": "Machine Learning/Interprétabilité/Probing.md",
+      "nom": "Probing",
+      "alias": [
+        "Probe",
+        "Probes",
+        "Sonde linéaire",
+        "Linear probe",
+        "Sondage",
+        "Diagnostic classifier",
+        "Probing classifier"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "representation-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Interprétabilité/SAELens.md",
       "nom": "SAELens",
       "alias": [
@@ -11883,6 +11975,66 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Sparse autoencoders.md",
+      "nom": "Sparse autoencoders",
+      "alias": [
+        "SAE",
+        "Sparse autoencoder",
+        "Autoencodeur parcimonieux",
+        "Autoencodeur creux",
+        "TopK SAE",
+        "JumpReLU SAE",
+        "BatchTopK",
+        "Dictionary learning"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Superposition.md",
+      "nom": "Superposition",
+      "alias": [
+        "Superposition hypothesis",
+        "Hypothèse de superposition",
+        "Polysémanticité",
+        "Polysemanticity",
+        "Neurones polysémantiques"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "deep-learning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Interprétabilité/TransformerLens.md",
@@ -18818,38 +18970,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Attribution par gradient.md",
-      "nom": "Attribution par gradient",
-      "alias": [
-        "Saliency",
-        "Saliency map",
-        "Carte de saillance",
-        "Integrated Gradients",
-        "IntegratedGradients",
-        "SmoothGrad",
-        "InputxGradient",
-        "Grad-CAM",
-        "GradientShap",
-        "Attribution methods"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Augmentation d'images.md",
       "nom": "Augmentation d'images",
       "alias": [
@@ -20223,36 +20343,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Interprétabilité mécaniste.md",
-      "nom": "Interprétabilité mécaniste",
-      "alias": [
-        "Mechanistic interpretability",
-        "Mech interp",
-        "Interpretabilite mecaniste",
-        "Circuits",
-        "Transformer circuits",
-        "Activation patching",
-        "Causal tracing"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "deep-learning",
-        "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Isolation Forest.md",
       "nom": "Isolation Forest",
       "alias": [
@@ -20917,36 +21007,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Probing.md",
-      "nom": "Probing",
-      "alias": [
-        "Probe",
-        "Probes",
-        "Sonde linéaire",
-        "Linear probe",
-        "Sondage",
-        "Diagnostic classifier",
-        "Probing classifier"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "deep-learning",
-        "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Pruning.md",
       "nom": "Pruning",
       "alias": [
@@ -21473,38 +21533,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Sparse autoencoders.md",
-      "nom": "Sparse autoencoders",
-      "alias": [
-        "SAE",
-        "Sparse autoencoder",
-        "Autoencodeur parcimonieux",
-        "Autoencodeur creux",
-        "TopK SAE",
-        "JumpReLU SAE",
-        "BatchTopK",
-        "Dictionary learning"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "deep-learning",
-        "llm",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Speech models.md",
       "nom": "Speech models",
       "alias": [
@@ -21601,34 +21629,6 @@
         "object-detection",
         "computer-vision",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Superposition.md",
-      "nom": "Superposition",
-      "alias": [
-        "Superposition hypothesis",
-        "Hypothèse de superposition",
-        "Polysémanticité",
-        "Polysemanticity",
-        "Neurones polysémantiques"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "deep-learning",
-        "llm"
       ],
       "alternatives": null,
       "complements": null,

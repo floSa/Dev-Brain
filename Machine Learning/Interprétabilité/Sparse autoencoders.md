@@ -2,7 +2,7 @@
 role: notion
 nom: Sparse autoencoders
 alias: [SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning]
-categorie: concept/dl
+categorie: ml/interpretabilite
 domaines: [data-sci, ai-eng]
 tags: [explainability, deep-learning, llm, unsupervised]
 ---

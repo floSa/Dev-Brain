@@ -2,7 +2,7 @@
 role: notion
 nom: Superposition
 alias: [Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques]
-categorie: concept/dl
+categorie: ml/interpretabilite
 domaines: [data-sci, ai-eng]
 tags: [explainability, deep-learning, llm]
 ---
