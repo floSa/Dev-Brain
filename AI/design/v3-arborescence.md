@@ -33,12 +33,13 @@ tags: [meta, design, v3, migration]
 | `Dev/Rules/` | 5 | `role: rule` — dans « Rules/ » |
 | `MOC/Categories` + `MOC/Types` | 22 | **absorbés** par les pages hub, par `git mv` |
 | `MOC/Themes` | 5 | **déplacés** vers « Métiers/ », `role: hub` |
-| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — **8 supprimées au 2026-09-05**, sur mesure R7 ; restent `Deep learning` et `Machine learning (notions)` |
+| `MOC/Concepts` | 10 | **les 10 supprimées au 2026-09-05**, chacune sur double mesure R7 ; `MOC/` ne porte plus aucune page |
 
-**Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
-**178 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
-`math` (26), `data` (13, en deux passages), `signal` (5), `ai` (4), `llm` (56), `rl` (17),
-`ts` (13) et `nlp` (7). **119 restent** sous `Wiki/Concepts/` — `dl` (52), `ml` (67).
+**Notions à recatégoriser : 205** — c'était le seul poste de travail non mécanique, et il est
+**CLOS le 2026-09-05**. Les douze familles sont passées : les 37 du domaine pilote
+« Statistiques & inférence », puis `math` (26), `data` (13, en deux passages), `signal` (5),
+`ai` (4), `llm` (56), `rl` (17), `ts` (13), `nlp` (7), `dl` (52) et `ml` (67). **297 notions
+rangées**, `Wiki/Concepts/` est vide et `concept/*` est sorti du vocabulaire.
 
 > **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
 > 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
@@ -176,37 +177,137 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 
 ## Détail par domaine
 
-### Machine Learning  ·  241 pages  ·  **migré le 2026-09-04**
+### Machine Learning  ·  240 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
-- [x] hub écrit · [x] sous-dossiers créés · [~] notions recatégorisées (`dl`, `rl`, `ts`, `nlp` faites ; restent les 67 `concept/ml`) · [ ] fiches au nouveau gabarit
+- [x] hub écrit · [x] sous-dossiers créés · [x] notions recatégorisées — **les douze familles sont passées** · [ ] fiches au nouveau gabarit
 
-> 85 briques et 12 comparatifs descendus, 9 sous-dossiers promus, 10 hubs écrits.
-> **Lot 4 en cours ici** : les 37 notions `concept/rl` (17), `concept/ts` (13) et
-> `concept/nlp` (7) sont descendues le 2026-09-05 dans « Apprentissage par
-> renforcement/ », « Séries temporelles/ » et « NLP/ », puis les **52 `concept/dl`**
-> le même jour. **Aucune valeur ouverte, aucun sous-dossier créé, aucun libellé à
-> trancher** pour aucune des quatre familles : les dossiers d'accueil existaient tous
-> depuis le lot 3, et l'ensemble des promotions du domaine n'a pas bougé — 9 avant,
-> 9 après.
-> **`concept/dl` ne s'est PAS projeté sur `ml/apprentissage-profond`**, et c'est le
-> seul enseignement de structure du lot : la remontée 20 du lot 3 l'annonçait, la
-> répartition mesurée est 29 en « Apprentissage profond/ », **17 en « Vision/ »**,
-> 5 en « Interprétabilité/ » et 1 hors du domaine, en `llm/modele`
-> (`Vision Language Models`). La liste ci-dessous est celle du terrain, pas celle de
-> la projection.
-> Restent les 67 notions `concept/ml`, sous `Wiki/Concepts/`, réservées à une
-> conversation dédiée ; les hubs les citent toutes en clair en attendant.
+> 85 briques et 12 comparatifs descendus au lot 3, 9 sous-dossiers promus, 10 hubs écrits.
+> **Le lot 4 est CLOS ici**, et ce domaine a reçu 185 des 297 notions du vault : `rl` (17),
+> `ts` (13), `nlp` (7), `dl` (52) le 2026-09-05, puis les **67 `concept/ml`** le même jour,
+> dont 66 restent ici. Le domaine passe de 122 pages au lot 3 à **240**, et de 9 à
+> **12 sous-dossiers**.
+>
+> **Les trois promotions du lot sont ici, et elles n'étaient qu'à moitié prévues.** La
+> remontée 35 annonçait six sous-domaines sous le seuil qui le franchiraient
+> (`non-supervise`, `eval`, `socle`, `monitoring`, `feature-store`, `embeddings`) : quatre
+> sur six ne l'ont jamais approché — `ml/hyperopt` finit à 4, `ml/monitoring` à 3,
+> `ml/feature-store` et `ml/embeddings` à 2 — et les trois qui promeuvent sont
+> `ml/socle` (2 -> 20), `ml/non-supervise` (4 -> 22) et `ml/eval` (2 -> 10). **Aucune valeur
+> de catégorie n'a été ouverte** : les 67 tombent toutes dans le vocabulaire existant, mais
+> trois valeurs ont été **élargies**, parce qu'elles étaient écrites pour des briques du
+> temps où les notions portaient `concept/*`.
+>
+> Trois libellés arbitrés contre les quatre ensembles de la remontée 26, et deux y étaient
+> contraints : « Évaluation » est le nom de fichier du hub `LLM & IA générative/Évaluation/`,
+> « Apprentissage non supervisé » celui d'une notion qui vit dans le dossier. D'où
+> « Évaluation de modèles », « Non supervisé » et « Socle ».
+>
+> **Une page est arrivée d'un autre domaine** : `Manifold learning`, qui vivait en
+> `stats/exploratoire` depuis le pilote — l'arbitrage de la remontée 3, reporté deux fois
+> parce que la population de ML n'était pas tranchée. Effet de seuil mesuré nul dans les deux
+> sens, et c'est le contenu qui décide : sa page vise des « coordonnées exploitables en aval »
+> et non l'interprétation d'axes.
+>
+> `MOC/Concepts/Machine learning (notions)` est morte avec la famille — dernière des dix — et
+> `MOC/` ne porte plus aucune page. Contrairement à `Deep learning` (remontée 37), **aucun
+> lien nu ne la visait** : le suffixe `(notions)` l'a protégée, comme la nº 37 le pronostiquait.
 
-**Apprentissage profond/** — `ml/apprentissage-profond` — 37 pages · **29 notions descendues le 2026-09-05** — les 4 socles génératifs et les 2 pages audio y sont restés, `Architectures CNN` en est parti pour « Vision/ »
+**Socle/** — `ml/socle` — 20 pages · **NOUVEAU au lot 4** — 18 notions descendues, `Scikit-Learn` et `River` avec elles. La valeur passe de 2 à 20 et le sous-domaine franchit le seuil : le libellé reprend le mot du hub de domaine, « le socle généraliste »
 
+- `[n]` Analyse discriminante
+- `[n]` Apprentissage supervisé
+- `[n]` Classification
+- `[n]` GAM
+- `[n]` Gaussian Process
+- `[n]` GLM
+- `[n]` k-NN
+- `[n]` Naive Bayes
+- `[n]` Perceptron et MLP
+- `[b]` River — paquet, Python
+- `[n]` Régression
+- `[n]` Régression et classification multi-sorties
+- `[n]` Régression linéaire
+- `[n]` Régression logistique
+- `[n]` Régression quantile
+- `[n]` Régularisation
+- `[b]` Scikit-Learn — paquet, Python
+- `[n]` SVM
+- `[n]` Systèmes de recommandation
+- `[n]` Types de données et choix de modèle
+
+**Tabulaire/** — `ml/tabulaire` — 21 pages · **15 notions descendues le 2026-09-05** — les arbres et leurs ensembles, plus la préparation des variables. Le dossier passe de 6 à 21 pages, hub réécrit (son critère était écrit pour des briques)
+
+- `[n]` AdaBoost
+- `[n]` Arbres de décision
+- `[n]` Bagging
+- `[n]` Boosting
+- `[b]` CatBoost — paquet, C++
+- `[b]` category_encoders — paquet, Python
+- `[n]` Encodage des variables catégorielles
+- `[n]` Ensembling
+- `[n]` Extra Trees
+- `[b]` Featuretools — paquet, Python
+- `[n]` Gradient Boosting (GBDT)
+- `[n]` Imbalanced classification
+- `[b]` imbalanced-learn — paquet, Python
+- `[n]` Imputation des valeurs manquantes
+- `[n]` Ingénierie des caractéristiques
+- `[b]` LightGBM — paquet, C++
+- `[n]` Mise à l'échelle
+- `[n]` Mécanismes de données manquantes
+- `[n]` Random Forest
+- `[n]` Sélection de variables
+- `[b]` XGBoost — paquet, C++
+
+**Non supervisé/** — `ml/non-supervise` — 22 pages · **NOUVEAU au lot 4** — 17 notions descendues plus `Manifold learning`, venue de `stats/exploratoire` ; `hdbscan`, `PyOD`, `umap-learn` et `PaCMAP` avec elles. La valeur passe de 4 à 22
+
+- `[n]` Apprentissage non supervisé
+- `[n]` Classification hiérarchique (CAH)
+- `[n]` Clustering
+- `[n]` Clustering evaluation
+- `[n]` Clustering hiérarchique par densité
+- `[n]` DBSCAN
+- `[n]` Détection d'outliers multivariée
+- `[n]` Détection d'outliers univariée
+- `[n]` Gaussian Mixture Models (GMM)
+- `[b]` hdbscan — paquet, Python
+- `[n]` ICA
+- `[n]` Isolation Forest
+- `[n]` K-Means
+- `[n]` k-médoïds (PAM)
+- `[n]` Local Outlier Factor
+- `[n]` Manifold learning
+- `[n]` NMF
+- `[n]` One-Class SVM
+- `[b]` PaCMAP — paquet, Python
+- `[b]` PyOD — paquet, Python
+- `[n]` t-SNE and UMAP
+- `[b]` umap-learn — paquet, Python
+
+**Évaluation de modèles/** — `ml/eval` — 10 pages · **NOUVEAU au lot 4** — 8 notions descendues, `evaluate` et `seqeval` avec elles. La valeur passe de 2 à 10 et est **élargie** : elle ne portait que les bibliothèques de métriques
+
+- `[n]` Calibration
+- `[n]` Classification metrics
+- `[n]` Compromis biais-variance
+- `[n]` Data leakage
+- `[b]` evaluate — paquet, Python
+- `[n]` Ranking metrics
+- `[n]` Regression metrics
+- `[n]` ROC-AUC & courbe PR
+- `[b]` seqeval — paquet, Python
+- `[n]` Validation croisée
+
+**Apprentissage profond/** — `ml/apprentissage-profond` — 37 pages · 29 notions descendues le 2026-09-05
+
+- `[b]` accelerate — paquet, Python
 - `[n]` Adam optimizer
 - `[n]` Architectures hybrides LLM
-- `[n]` Attention Residuals
 - `[n]` Attention linéaire
+- `[n]` Attention Residuals
 - `[n]` Autoencodeurs
-- `[n]` CNN
 - `[n]` Calculs adaptatifs
 - `[n]` Classification audio par spectrogramme
+- `[n]` CNN
 - `[b]` DeepSpeed — paquet, Python
 - `[n]` Diffusion models
 - `[n]` Distillation
@@ -225,6 +326,7 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[n]` Multi-head Latent Attention
 - `[n]` Positional encoding
 - `[n]` Pruning
+- `[b]` pykan — paquet, Python
 - `[b]` PyTorch — paquet, C++/Python
 - `[b]` PyTorch Lightning — paquet, Python
 - `[n]` Quantization
@@ -234,88 +336,10 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` TensorFlow — paquet, C++/Python
 - `[n]` Transformer architectures
 - `[n]` Video generation
-- `[b]` accelerate — paquet, Python
-- `[b]` pykan — paquet, Python
 
-**Apprentissage par renforcement/** — `ml/rl` — 23 pages · **notions descendues le 2026-09-05**
+**Vision/** — `ml/vision` — 26 pages · 17 notions descendues le 2026-09-05 — le plus gros sous-dossier du vault
 
-- `[b]` Acme — paquet, Python
-- `[n]` Actor-Critic methods
-- `[n]` AlphaZero and self-play
-- `[n]` Bellman equations
-- `[n]` Counterfactual Regret Minimization
-- `[n]` Exploration vs exploitation
-- `[b]` Gymnasium — paquet, Python
-- `[n]` Imitation learning
-- `[n]` Markov Decision Process
-- `[n]` Model-based RL
-- `[n]` Monte Carlo Tree Search
-- `[n]` Offline RL
-- `[b]` OpenSpiel — paquet, Python
-- `[n]` PPO
-- `[n]` Policy gradient
-- `[n]` Q-learning and DQN
-- `[b]` RLax — paquet, Python
-- `[n]` Reinforcement learning
-- `[n]` Reward shaping and hacking
-- `[b]` Stable-Baselines3 — paquet, Python
-- `[b]` TF-Agents — paquet, Python
-- `[n]` Théorie des jeux
-- `[n]` Value functions
-
-**Séries temporelles/** — `ml/series-temporelles` — 20 pages · **notions descendues le 2026-09-05**
-
-- `[n]` ARIMA SARIMA
-- `[n]` Autocorrelation
-- `[b]` Chronos — modele, Python
-- `[n]` Exponential smoothing
-- `[n]` Forecasting framing
-- `[n]` Forecasting metrics
-- `[n]` Foundation models pour séries temporelles
-- `[n]` Hierarchical forecasting
-- `[n]` Intermittent demand
-- `[n]` Maintenance prédictive et RUL
-- `[b]` Prophet — paquet, Python/R
-- `[b]` STUMPY — paquet, Python
-- `[n]` Stationarity
-- `[n]` Time series anomaly detection
-- `[n]` Time series feature engineering
-- `[n]` Walk-forward CV
-- `[b]` darts — paquet, Python
-- `[b]` neuralforecast — paquet, Python
-- `[b]` pmdarima — paquet, Python
-- `[b]` statsforecast — paquet, Python
-
-**NLP/** — `ml/nlp` — 13 pages · **notions descendues le 2026-09-05**
-
-- `[n]` BM25
-- `[n]` Classification de texte
-- `[n]` Fuzzy matching & similarité de chaînes
-- `[b]` GLiNER — modele, Python
-- `[n]` NER et étiquetage de séquence
-- `[b]` NLTK — paquet, Python
-- `[n]` Recherche d'information
-- `[b]` SetFit — paquet, Python
-- `[n]` TF-IDF
-- `[n]` Traitement du langage naturel
-- `[b]` pytorch-crf — paquet, Python
-- `[b]` sentencepiece — paquet, C++/Python
-- `[b]` spaCy — paquet, Python
-
-**Serving/** — `ml/serving` — 9 pages
-
-- `[b]` BentoML — plateforme, Python
-- `[b]` KServe — plateforme, Go
-- `[b]` NVIDIA Triton — plateforme, C++
-- `[b]` ONNX Runtime — paquet, C++
-- `[b]` Ray Serve — plateforme, Python
-- `[b]` Seldon Core — plateforme, Go
-- `[b]` TensorFlow Serving — plateforme, C++
-- `[b]` TensorRT — paquet, C++
-- `[b]` TorchServe — plateforme, Java/Python
-
-**Vision/** — `ml/vision` — 26 pages · **17 notions descendues le 2026-09-05** — le dossier passe de 9 à 26 pages et devient le plus gros sous-dossier du vault
-
+- `[b]` albumentations — paquet, Python
 - `[n]` Apprentissage auto-supervisé en vision
 - `[n]` Architectures CNN
 - `[n]` Augmentation d'images
@@ -331,153 +355,156 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` OpenCV — paquet, C++
 - `[n]` Rendu neuronal 3D & estimation de profondeur
 - `[n]` Segment Anything (SAM)
+- `[b]` segment-anything — modele, Python
 - `[n]` Segmentation
 - `[n]` Suivi d'objets
-- `[n]` Transfer learning vision
-- `[b]` Ultralytics YOLO — modele, Python
-- `[n]` Vision Transformers (ViT)
-- `[n]` Vision par ordinateur
-- `[b]` albumentations — paquet, Python
-- `[b]` segment-anything — modele, Python
 - `[b]` supervision — paquet, Python
 - `[b]` timm — paquet, Python
 - `[b]` torchvision — paquet, Python/C++
+- `[n]` Transfer learning vision
+- `[b]` Ultralytics YOLO — modele, Python
+- `[n]` Vision par ordinateur
+- `[n]` Vision Transformers (ViT)
 
-**Suivi d'expériences/** — `ml/tracking` — 7 pages
+**Apprentissage par renforcement/** — `ml/rl` — 23 pages · notions descendues le 2026-09-05
 
-- `[b]` Aim — plateforme, Python
-- `[b]` ClearML — plateforme, Python
-- `[b]` Comet — plateforme, Python
-- `[b]` MLflow — plateforme, Python
-- `[b]` Neptune — plateforme, Python
-- `[b]` TensorBoard — application, Python
-- `[b]` Weights & Biases — plateforme, Python
+- `[b]` Acme — paquet, Python
+- `[n]` Actor-Critic methods
+- `[n]` AlphaZero and self-play
+- `[n]` Bellman equations
+- `[n]` Counterfactual Regret Minimization
+- `[n]` Exploration vs exploitation
+- `[b]` Gymnasium — paquet, Python
+- `[n]` Imitation learning
+- `[n]` Markov Decision Process
+- `[n]` Model-based RL
+- `[n]` Monte Carlo Tree Search
+- `[n]` Offline RL
+- `[b]` OpenSpiel — paquet, Python
+- `[n]` Policy gradient
+- `[n]` PPO
+- `[n]` Q-learning and DQN
+- `[n]` Reinforcement learning
+- `[n]` Reward shaping and hacking
+- `[b]` RLax — paquet, Python
+- `[b]` Stable-Baselines3 — paquet, Python
+- `[b]` TF-Agents — paquet, Python
+- `[n]` Théorie des jeux
+- `[n]` Value functions
 
-**Interprétabilité/** — `ml/interpretabilite` — 12 pages · **5 notions descendues le 2026-09-05**
+**Séries temporelles/** — `ml/series-temporelles` — 20 pages · notions descendues le 2026-09-05
+
+- `[n]` ARIMA SARIMA
+- `[n]` Autocorrelation
+- `[b]` Chronos — modele, Python
+- `[b]` darts — paquet, Python
+- `[n]` Exponential smoothing
+- `[n]` Forecasting framing
+- `[n]` Forecasting metrics
+- `[n]` Foundation models pour séries temporelles
+- `[n]` Hierarchical forecasting
+- `[n]` Intermittent demand
+- `[n]` Maintenance prédictive et RUL
+- `[b]` neuralforecast — paquet, Python
+- `[b]` pmdarima — paquet, Python
+- `[b]` Prophet — paquet, Python/R
+- `[n]` Stationarity
+- `[b]` statsforecast — paquet, Python
+- `[b]` STUMPY — paquet, Python
+- `[n]` Time series anomaly detection
+- `[n]` Time series feature engineering
+- `[n]` Walk-forward CV
+
+**NLP/** — `ml/nlp` — 13 pages · notions descendues le 2026-09-05
+
+- `[n]` BM25
+- `[n]` Classification de texte
+- `[n]` Fuzzy matching & similarité de chaînes
+- `[b]` GLiNER — modele, Python
+- `[n]` NER et étiquetage de séquence
+- `[b]` NLTK — paquet, Python
+- `[b]` pytorch-crf — paquet, Python
+- `[n]` Recherche d'information
+- `[b]` sentencepiece — paquet, C++/Python
+- `[b]` SetFit — paquet, Python
+- `[b]` spaCy — paquet, Python
+- `[n]` TF-IDF
+- `[n]` Traitement du langage naturel
+
+**Interprétabilité/** — `ml/interpretabilite` — 13 pages · 5 notions descendues, plus `Explicabilité des modèles` le 2026-09-05
 
 - `[n]` Attribution par gradient
 - `[b]` Captum — paquet, Python
+- `[n]` Explicabilité des modèles
+- `[b]` interpreto — paquet, Python
 - `[n]` Interprétabilité mécaniste
 - `[b]` LIME — paquet, Python
+- `[b]` nnsight — paquet, Python
 - `[n]` Probing
 - `[b]` SAELens — paquet, Python
 - `[b]` SHAP — paquet, Python
 - `[n]` Sparse autoencoders
 - `[n]` Superposition
 - `[b]` TransformerLens — paquet, Python
-- `[b]` interpreto — paquet, Python
-- `[b]` nnsight — paquet, Python
 
-**Tabulaire/** — `ml/tabulaire` — 6 pages
+**Serving/** — `ml/serving` — 10 pages · **1 notion descendue le 2026-09-05** (`Déploiement de modèles`)
 
-- `[b]` CatBoost — paquet, C++
-- `[b]` Featuretools — paquet, Python
-- `[b]` LightGBM — paquet, C++
-- `[b]` XGBoost — paquet, C++
-- `[b]` category_encoders — paquet, Python
-- `[b]` imbalanced-learn — paquet, Python
+- `[b]` BentoML — plateforme, Python
+- `[n]` Déploiement de modèles
+- `[b]` KServe — plateforme, Go
+- `[b]` NVIDIA Triton — plateforme, C++
+- `[b]` ONNX Runtime — paquet, C++
+- `[b]` Ray Serve — plateforme, Python
+- `[b]` Seldon Core — plateforme, Go
+- `[b]` TensorFlow Serving — plateforme, C++
+- `[b]` TensorRT — paquet, C++
+- `[b]` TorchServe — plateforme, Java/Python
 
-**Au niveau du domaine** — 20 pages
+**Suivi d'expériences/** — `ml/tracking` — 8 pages · **1 notion descendue le 2026-09-05** (`Model registry & versioning`)
 
-- `[b]` Evidently — paquet, Python
-- `[b]` Feast — plateforme, Python
-- `[b]` Flyte — plateforme, Go
-- `[b]` HuggingFace — saas, Python
-- `[b]` Hyperopt — paquet, Python
-- `[b]` Metaflow — plateforme, Python
-- `[b]` Optuna — paquet, Python
-- `[b]` PaCMAP — paquet, Python
-- `[b]` PyOD — paquet, Python
-- `[b]` PyTorch Geometric — paquet, Python
-- `[b]` Ray Tune — paquet, Python
-- `[b]` River — paquet, Python
-- `[b]` Scikit-Learn — paquet, Python
-- `[b]` ZenML — plateforme, Python
-- `[b]` datasets — paquet, Python
-- `[b]` evaluate — paquet, Python
-- `[b]` hdbscan — paquet, Python
-- `[b]` sentence-transformers — paquet, Python
-- `[b]` seqeval — paquet, Python
-- `[b]` umap-learn — paquet, Python
+- `[b]` Aim — plateforme, Python
+- `[b]` ClearML — plateforme, Python
+- `[b]` Comet — plateforme, Python
+- `[b]` MLflow — plateforme, Python
+- `[n]` Model registry & versioning
+- `[b]` Neptune — plateforme, Python
+- `[b]` TensorBoard — application, Python
+- `[b]` Weights & Biases — plateforme, Python
 
-**Comparatifs** — 6
+**Au niveau du domaine** — 17 pages, sur 7 valeurs restées sous le seuil : `ml/embeddings`, `ml/feature-store`, `ml/graphe`, `ml/hub`, `ml/hyperopt`, `ml/monitoring`, `ml/orchestration`
 
-- `[c]` Comparatif - Explicabilité — filtre `ml/interpretabilite`
-- `[c]` Comparatif - Optimisation d'hyperparamètres — filtre `ml/hyperopt`
-- `[c]` Comparatif - Orchestrateurs ML — filtre `ml/orchestration`
-- `[c]` Comparatif - Reinforcement learning — filtre `ml/rl`
-- `[c]` Comparatif - Serving de modèles — filtre `ml/serving`
-- `[c]` Comparatif - Suivi d'expériences ML — filtre `ml/tracking`
+- `[n]` Data drift — `ml/monitoring`
+- `[b]` datasets — paquet, Python — `ml/hub`
+- `[n]` embeddings — `ml/embeddings`
+- `[b]` Evidently — paquet, Python — `ml/monitoring`
+- `[b]` Feast — plateforme, Python — `ml/feature-store`
+- `[n]` Feature store — concept — `ml/feature-store`
+- `[b]` Flyte — plateforme, Go — `ml/orchestration`
+- `[b]` HuggingFace — saas, Python — `ml/hub`
+- `[b]` Hyperopt — paquet, Python — `ml/hyperopt`
+- `[b]` Metaflow — plateforme, Python — `ml/orchestration`
+- `[n]` Monitoring de modèle en production — `ml/monitoring`
+- `[n]` Optimisation d'hyperparamètres — `ml/hyperopt`
+- `[b]` Optuna — paquet, Python — `ml/hyperopt`
+- `[b]` PyTorch Geometric — paquet, Python — `ml/graphe`
+- `[b]` Ray Tune — paquet, Python — `ml/hyperopt`
+- `[b]` sentence-transformers — paquet, Python — `ml/embeddings`
+- `[b]` ZenML — plateforme, Python — `ml/orchestration`
 
-**À arbitrer — 67 notions sans sous-domaine**
+**Comparatifs** — 12, chacun dans le dossier de ses membres (remontée 16). Les quatre restés au niveau du domaine filtrent un TAG et non une catégorie, et leurs membres enjambent plusieurs dossiers — `Comparatif - Réduction de dimension` en compte deux dans « Statistiques & inférence »
 
-- [ ] `[n]` AdaBoost
-- [ ] `[n]` Analyse discriminante
-- [ ] `[n]` Apprentissage non supervisé
-- [ ] `[n]` Apprentissage supervisé
-- [ ] `[n]` Arbres de décision
-- [ ] `[n]` Bagging
-- [ ] `[n]` Boosting
-- [ ] `[n]` Calibration
-- [ ] `[n]` Classification
-- [ ] `[n]` Classification hiérarchique (CAH)
-- [ ] `[n]` Classification metrics
-- [ ] `[n]` Clustering
-- [ ] `[n]` Clustering evaluation
-- [ ] `[n]` Compromis biais-variance
-- [ ] `[n]` DBSCAN
-- [ ] `[n]` Data drift
-- [ ] `[n]` Data leakage
-- [ ] `[n]` Déploiement de modèles
-- [ ] `[n]` Détection d'outliers multivariée
-- [ ] `[n]` Détection d'outliers univariée
-- [ ] `[n]` EDA automatisée & profiling
-- [ ] `[n]` Encodage des variables catégorielles
-- [ ] `[n]` Ensembling
-- [ ] `[n]` Explicabilité des modèles
-- [ ] `[n]` Extra Trees
-- [ ] `[n]` Feature store — concept
-- [ ] `[n]` GAM
-- [ ] `[n]` GLM
-- [ ] `[n]` Gaussian Mixture Models (GMM)
-- [ ] `[n]` Gaussian Process
-- [ ] `[n]` Gradient Boosting (GBDT)
-- [ ] `[n]` HDBSCAN
-- [ ] `[n]` ICA
-- [ ] `[n]` Imbalanced classification
-- [ ] `[n]` Imputation des valeurs manquantes
-- [ ] `[n]` Ingénierie des caractéristiques
-- [ ] `[n]` Isolation Forest
-- [ ] `[n]` K-Means
-- [ ] `[n]` Local Outlier Factor
-- [ ] `[n]` Mise à l'échelle
-- [ ] `[n]` Model registry & versioning
-- [ ] `[n]` Monitoring de modèle en production
-- [ ] `[n]` Mécanismes de données manquantes
-- [ ] `[n]` NMF
-- [ ] `[n]` Naive Bayes
-- [ ] `[n]` One-Class SVM
-- [ ] `[n]` Optimisation d'hyperparamètres
-- [ ] `[n]` Perceptron et MLP
-- [ ] `[n]` ROC-AUC & courbe PR
-- [ ] `[n]` Random Forest
-- [ ] `[n]` Ranking metrics
-- [ ] `[n]` Regression metrics
-- [ ] `[n]` Régression
-- [ ] `[n]` Régression et classification multi-sorties
-- [ ] `[n]` Régression linéaire
-- [ ] `[n]` Régression logistique
-- [ ] `[n]` Régression quantile
-- [ ] `[n]` Régularisation
-- [ ] `[n]` SVM
-- [ ] `[n]` Systèmes de recommandation
-- [ ] `[n]` Sélection de variables
-- [ ] `[n]` Types de données et choix de modèle
-- [ ] `[n]` Validation croisée
-- [ ] `[n]` embeddings
-- [ ] `[n]` k-NN
-- [ ] `[n]` k-médoïds (PAM)
-- [ ] `[n]` t-SNE and UMAP
+- `[c]` Comparatif - Détection d'anomalies — au niveau du domaine
+- `[c]` Comparatif - Optimisation d'hyperparamètres — au niveau du domaine
+- `[c]` Comparatif - Orchestrateurs ML — au niveau du domaine
+- `[c]` Comparatif - Réduction de dimension — au niveau du domaine
+- `[c]` Comparatif - Reinforcement learning — dans « Apprentissage par renforcement/ »
+- `[c]` Comparatif - Explicabilité — dans « Interprétabilité/ »
+- `[c]` Comparatif - NLP — dans « NLP/ »
+- `[c]` Comparatif - Serving de modèles — dans « Serving/ »
+- `[c]` Comparatif - Suivi d'expériences ML — dans « Suivi d'expériences/ »
+- `[c]` Comparatif - Forecasting — dans « Séries temporelles/ »
+- `[c]` Comparatif - Boosting — dans « Tabulaire/ »
+- `[c]` Comparatif - Détection & segmentation — dans « Vision/ »
 
 ### LLM & IA générative  ·  129 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
@@ -824,7 +851,7 @@ dérivées page par page, principalement sur leur section `## Approches voisines
 - `[c]` Comparatif - Moteurs de recherche — filtre `database/recherche`
 - `[c]` Comparatif - ORM — filtre `database/orm`
 
-### Statistiques & inférence  ·  47 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
+### Statistiques & inférence  ·  46 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
 - [x] hub écrit — hub de domaine, issu de `MOC/Categories/` par `git mv`, corps réécrit
   au gabarit §9, puis complété au lot 4 : il dit désormais ce que chacun des quatre
@@ -846,10 +873,13 @@ dérivées page par page, principalement sur leur section `## Approches voisines
 - `[n]` Tests non paramétriques
 - `[b]` lifelines · `[b]` pingouin · `[b]` scipy.stats · `[b]` statsmodels
 
-**Analyse factorielle/** — `stats/exploratoire` — 12 pages
+**Analyse factorielle/** — `stats/exploratoire` — 11 pages · **`Manifold learning` en est partie
+le 2026-09-05** vers « Machine Learning/Non supervisé/ » — l'arbitrage laissé ouvert par le
+pilote (remontée 3), tranché quand la population de ML l'a été. Le dossier reste promu (11 > 5)
+et aucune brique n'a bougé.
 
 - `[n]` CA · `[n]` FAMD · `[n]` GPA · `[n]` HCPC · `[n]` MCA · `[n]` MFA
-- `[n]` Manifold learning · `[n]` PCA · `[n]` PGA · `[n]` Réduction de dimension
+- `[n]` PCA · `[n]` PGA · `[n]` Réduction de dimension
 - `[b]` Fanalysis · `[b]` Prince
 
 **Bayésien/** — `stats/bayesien` — 7 pages

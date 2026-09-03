@@ -314,14 +314,49 @@ valeurs disparues et ne sont pas reconduites.
   dimensionnement d'un test (« analyse de puissance ») reste en `stats/inference` — c'est une
   propriété du test, employée aussi bien hors expérimentation.
 - `stats/exploratoire` — analyse factorielle et descriptive multivariée, tradition « analyse de
-  données » (Benzécri, Escofier, Pagès) : PCA, CA, MCA, FAMD, MFA, GPA, PGA, HCPC. Le but est
+  données » (Benzécri, Escofier, Pagès) : PCA, CA, MCA, FAMD, MFA, GPA, PGA, HCPC.
+  `Manifold learning` en est **partie au lot 4**, vers `ml/non-supervise` : sa page vise des
+  « coordonnées exploitables en aval », pas l'interprétation d'axes, et `PGA` reste ici parce
+  que sa variété est **connue d'avance** là où le manifold learning l'**apprend**. Le but est
   d'**interpréter des axes**, pas d'alimenter un modèle en aval. Distinct de `ml/non-supervise`
   (t-SNE/UMAP, ICA, NMF, autoencodeurs), qui vise une représentation utile à une tâche. La
   frontière est réelle mais fine : les deux familles partagent le tag `dimensionality-reduction`.
   Distinct aussi de `data/eda` (profiling automatique d'un jeu de données).
-- `ml/eval` — bibliothèques de **métriques** et de validation de modèles ML (accuracy, F1, BLEU,
-  ROUGE). Distinct de `llm/eval` (évaluation de systèmes LLM/RAG/agents — faithfulness, scoring
-  par juge) et du concept transverse porté par le tag `model-evaluation`.
+- `ml/eval` — **élargi au lot 4.** Mesurer ce que vaut un modèle : le **protocole** qui rend
+  le chiffre honnête (validation croisée, fuite de données, compromis biais-variance) et les
+  **métriques** qui disent ce qu'il décrit (classification, régression, ranking, courbes ROC
+  et PR, calibration), bibliothèques comprises (accuracy, F1, BLEU, ROUGE). La valeur ne
+  portait que les bibliothèques, et excluait explicitement « le concept transverse porté par
+  le tag `model-evaluation` » : cette exclusion datait de la disjonction brique/notion que le
+  lot 4 supprime, elle est levée. Distinct de `llm/eval` (évaluation d'une **application**
+  LLM/RAG/agent — faithfulness, scoring par juge : on juge une réponse, on ne compte pas des
+  vrais positifs), et de `math/theorie-apprentissage`, qui **borne** la généralisation a
+  priori là où ces pages la **mesurent** sur un modèle donné.
+- `ml/socle` — **élargi au lot 4.** Ce qui ne suppose **rien de la nature des données** :
+  les régimes d'apprentissage, le cadrage d'un problème (quelle cible, quelle granularité,
+  quelles données au moment de la prédiction), les formes de problème (classification,
+  régression, multi-sorties, recommandation) et la boîte classique qui les résout —
+  linéaires, GLM, GAM, quantile, régularisation, Naive Bayes, k-NN, discriminante, SVM,
+  processus gaussiens, perceptron et MLP. La valeur ne portait que les **bibliothèques**
+  généralistes (scikit-learn, River) ; elle porte désormais aussi les modèles et le cadrage,
+  au même titre. Distinct de `ml/tabulaire` (spécialisé données en **colonnes**) : c'est la
+  même frontière qu'avant, lue sur des concepts plutôt que sur des paquets — un arbre de
+  décision et l'encodage d'une catégorielle supposent des colonnes, une régression logistique
+  non. Distinct de `ml/apprentissage-profond`, qui range le **réseau** comme objet ;
+  `Perceptron et MLP` est ici parce que c'est la porte d'entrée classique, pas une
+  architecture qu'on entraîne à l'échelle.
+- `ml/non-supervise` — **élargi au lot 4.** L'apprentissage **sans cible**, et ses trois
+  usages ensemble : regrouper (clustering, partition, densité, hiérarchie, mélanges, et
+  l'évaluation d'un partitionnement), représenter (réduction de dimension du ML — t-SNE/UMAP,
+  manifold learning, ICA, NMF), repérer l'anormal (outliers univariés et multivariés,
+  isolement, densité locale, enveloppe). La valeur n'était décrite qu'en creux, par la
+  frontière de `stats/exploratoire`, et n'y était nommée que par ses méthodes de réduction ;
+  ses quatre briques couvraient déjà les trois familles (hdbscan, PyOD, umap-learn, PaCMAP).
+  Un seul dossier plutôt que trois valeurs, pour cette raison : les séparer aurait
+  recatégorisé des briques sans rien gagner en navigation. Ce qui définit la valeur n'est pas
+  une technique, c'est l'absence de cible — donc l'absence de preuve du même type. Distinct
+  de `stats/exploratoire` (interpréter des axes) ; la frontière est écrite là-bas et n'a pas
+  bougé, seul son tracé est désormais net : les cinq pages qu'elle nommait du côté ML y sont.
 - `llm/modele` — **ouvert au lot 4.** Ce qu'**est** un modèle de langage, avant toute
   application : ce qu'il ingère ([[Tokenization]]), comment il choisit ce qu'il produit
   ([[Decoding strategies]]), ce qui se mesure sur lui sans tâche applicative
@@ -415,19 +450,18 @@ sont descendus dans l'arbre.
 | `docs` | Documents | produire un document pour un humain |
 | `math` | Mathématiques | les quatre socles : algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage |
 
-## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
+## Notions (`role: notion`) — `concept/*`, vocabulaire CLOS le 2026-09-05
 
-```
-concept/{ml}
-```
+**Il n'y a plus de bloc de code ici, et c'est le point d'arrivée du lot 4.** Une notion se
+range désormais par son **domaine**, sur exactement le même vocabulaire que les briques : le
+bloc `domaine` de la section précédente est le seul qui existe. Le fence `concept/{…}` a été
+retiré le jour où sa dernière valeur s'est vidée, et la règle qui l'a fait retirer valait pour
+chacune des onze : **une valeur est retirée dès que plus aucune page ne la porte**, parce que
+la laisser — même vide — autoriserait une rechute silencieuse, `check_brain` acceptant encore
+tout ce que ce document énumère.
 
-> Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
-
-**Ce vocabulaire est en train de disparaître.** Le lot 4 recatégorise les notions sur le même
-vocabulaire que les briques — une notion se range par son **domaine**, comme tout le reste, et
-`concept/<sous-domaine>` était le vocabulaire d'une galaxie qui n'existe plus. Une valeur est
-**retirée du bloc** dès que plus aucune page ne la porte : l'y laisser autoriserait une rechute
-silencieuse, puisque `check_brain` l'accepterait encore.
+La liste ci-dessous est donc un **journal**, plus un vocabulaire : elle dit quand chaque valeur
+est morte et où sont parties ses pages.
 
 - `stats` — retiré le 2026-09-05, 37 notions descendues dans « Statistiques & inférence/ ».
 - `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
@@ -477,6 +511,18 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   est morte avec la famille, sur la double mesure de la remontée 18, et sa suppression a
   cassé trois wikilinks qui la visaient — réparés vers le hub homonyme, sans changer un
   caractère du texte affiché.
+
+- `ml` — **retiré le 2026-09-05, et c'est la dernière : le vocabulaire `concept/*` n'existe
+  plus.** 67 notions, dont 66 restent dans « Machine Learning/ » et une part en
+  « Data & pipelines/ » (`EDA automatisée & profiling` -> `data/eda`). **Aucune valeur
+  ouverte** — les 67 tombent toutes dans le vocabulaire existant — mais **trois valeurs
+  élargies** (`ml/socle`, `ml/eval`, `ml/non-supervise`, cf. leurs frontières ci-dessus) et
+  **trois sous-dossiers promus** : « Socle » (2 -> 20), « Évaluation de modèles » (2 -> 10),
+  « Non supervisé » (4 -> 22). Le domaine passe de 173 à 240 pages et de 9 à 12
+  sous-dossiers, en gardant 17 pages à son niveau. Une page a changé de domaine dans
+  l'autre sens : `Manifold learning` quitte `stats/exploratoire` pour `ml/non-supervise`,
+  arbitrage laissé ouvert par le pilote et tranché ici. `MOC/Concepts/Machine learning
+  (notions)` est morte avec la famille, et `MOC/Concepts/` avec elle.
 
 - `nlp` — retiré le 2026-09-05, 7 notions descendues dans « Machine Learning/NLP/ ».
   Aucune valeur ouverte, aucun sous-dossier créé ; le sous-domaine passe de 6 à 13 pages.

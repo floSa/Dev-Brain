@@ -6,22 +6,23 @@ created: 2026-09-04
 tags: [meta, migration, v3]
 ---
 
-# Lot 4 — Recatégorisation des 205 notions
+# Lot 4 — Recatégorisation des 205 notions  ·  **CLOS le 2026-09-05**
 
 Effort : **deux à trois sessions**, par lots de domaine. C'est le **seul poste de travail non
 mécanique** de toute la migration.
 
 Prérequis : lot 3 fait pour le domaine concerné.
 
-> **État au 2026-09-05 — onze familles sur douze sont faites.** Le pilote
+> **État au 2026-09-05 — LOT CLOS, les douze familles sont faites.** Le pilote
 > « Statistiques & inférence » (37 notions), puis une deuxième conversation —
 > **mathématiques (26), data (8 sur 13), signal (5), sécurité IA (4)** —, puis une
 > troisième qui a fermé `data` (les **5 remontées**) et traité **`llm` (56)**, puis
 > une quatrième qui a pris les trois plus petites familles restantes — **`rl` (17),
-> `ts` (13), `nlp` (7)** —, puis une cinquième pour **`dl` (52)**. Soit **230 notions
-> rangées**, 12 sous-dossiers créés, 10 valeurs de catégorie ouvertes, 11 valeurs
-> retirées du vocabulaire (10 `concept/*` et `llm/mcp`), 9 MOC supprimées.
-> Il reste **67 notions** sous `Wiki/Concepts/`, toutes `concept/ml`, et **1 MOC**.
+> `ts` (13), `nlp` (7)** —, puis une cinquième pour **`dl` (52)**, puis une sixième
+> pour **`ml` (67)**, la dernière. Soit **297 notions rangées**, 15 sous-dossiers
+> créés, 10 valeurs de catégorie ouvertes, 14 valeurs retirées du vocabulaire
+> (11 `concept/*` — le bloc entier — et `llm/mcp`), 3 valeurs élargies, **10 MOC
+> supprimées**. `Wiki/Concepts/` est **vide** et `MOC/` ne porte plus aucune page.
 >
 > Les *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée. Les
 > dix premières viennent du pilote — lire les nº 1, 3 et 5 avant d'attaquer un domaine. Les
@@ -33,9 +34,13 @@ Prérequis : lot 3 fait pour le domaine concerné.
 > dossier. Les **nº 29 à 34 viennent de `rl`/`ts`/`nlp`** — la nº 29 dit **pourquoi ces
 > trois familles n'ont rien coûté et pourquoi ça ne se transpose pas** à `dl` et `ml`,
 > et la nº 30 déplace le `grep` de la nº 14 AVANT les `git mv`, où il cesse de réparer
-> pour mesurer. Les **nº 35 à 40 viennent de `dl`** — dont la nº 35, qui dit **pourquoi
-> la prédiction de coût de la nº 29 était fausse**, et la nº 37, le seul défaut que la
-> double mesure de mort d'une MOC ne voit pas.
+> pour mesurer. Les **nº 35 à 40 viennent de `dl`** — dont la nº 35, qui dit pourquoi
+> la prédiction de coût de la nº 29 était fausse, et la nº 37, le seul défaut que la
+> double mesure de mort d'une MOC ne voit pas. Les **nº 41 à 47 viennent de `ml`**, la
+> dernière famille — dont la **nº 44, la plus grave du lot entier** : une page au
+> frontmatter illisible est **silencieusement sautée par les DEUX validateurs**, et rien
+> ne l'aurait vue si elle n'avait pas été un hub. La nº 42 corrige la nº 35 comme la
+> nº 35 corrigeait la nº 29, et la nº 45 dit ce qui rouvre vraiment un arbitrage reporté.
 
 ## Contexte
 
@@ -123,7 +128,18 @@ une fois que le vocabulaire final est connu.
       **Aucune valeur ouverte, aucun sous-dossier créé, aucun libellé à trancher**, contre
       la prédiction de la remontée 29 (cf. remontée 35). `MOC/Concepts/Deep learning` est
       morte, et sa mort a cassé trois wikilinks (remontée 37).
-- [ ] `ml` (67)
+- [x] **`ml` (67) — fait le 2026-09-05, et le lot est CLOS.** La seule famille du lot
+      à payer plusieurs promotions : **trois sous-dossiers naissent** — « Socle »
+      (`ml/socle` 2 -> 20), « Non supervisé » (`ml/non-supervise` 4 -> 22) et
+      « Évaluation de modèles » (`ml/eval` 2 -> 10) — avec trois libellés à arbitrer et
+      trois sous-hubs à écrire. **Aucune valeur ouverte** : les 67 tombent dans le
+      vocabulaire existant, mais trois valeurs sont **élargies**, écrites qu'elles
+      étaient pour des briques. 66 restent dans « Machine Learning », 1 part en
+      `data/eda`, et une page **arrive** de `stats/exploratoire` — `Manifold learning`,
+      l'arbitrage reporté deux fois (remontées 3 et 45). Le croisement de la remontée 30
+      a donné un résultat inédit : **les 67 revendiquées par le hub de domaine**, ce qui
+      l'a rendu à moitié muet (remontée 41). `MOC/Concepts/Machine learning (notions)`
+      est morte, dixième et dernière, sans aucun lien nu à repointer.
 
 ### Pour chaque notion
 
@@ -1189,3 +1205,198 @@ chemins.
 - **La gouvernance a été corrigée, elle** (remontée 34) :
   `Documentation/perso/obsidian-graph.md` annonçait deux MOC survivantes et en nommait
   une qui meurt ici. Il n'en annonce plus qu'une.
+
+---
+
+## Remontées — `ml` (67), la dernière famille, 2026-09-05
+
+67 notions rangées, dont 66 dans « Machine Learning » et 1 en `data/eda`, plus une
+**arrivée** d'un autre domaine (`Manifold learning`). **Zéro valeur de catégorie ouverte,
+trois valeurs élargies, trois sous-dossiers créés, trois libellés arbitrés, trois sous-hubs
+écrits, huit pages déplacées par ricochet, zéro comparatif déplacé.** La dixième et dernière
+MOC supprimée, et `MOC/` ne porte plus aucune page. Aucune violation dure à aucun des huit
+commits ; compteur d'avertissements à **149** au début comme à la fin, **jeu identique ligne
+à ligne** à chaque commit — les seules différences sont des chemins de fichiers déplacés — et
+les 47 comparatifs ont exactement les mêmes membres qu'au début de la session.
+
+### 41. Quand le croisement de la remontée 30 renvoie UN SEUL hub pour tout le monde
+
+Le croisement a donné ici un résultat qu'aucun lot précédent n'avait produit : **0 notion
+muette, et les 67 revendiquées par le hub de DOMAINE**, dont les dix puces les partitionnent
+exactement — 2 + 5 + 8 + 12 + 9 + 7 + 8 + 4 + 5 + 7 = 67, sans recouvrement. C'est le cas
+« Mathématiques » de la remontée 12, à trois fois l'échelle.
+
+Sauf que la conclusion n'est pas la même, et c'est ce qu'il faut retenir. Sur
+« Mathématiques », les quatre puces du hub **étaient** les quatre valeurs de catégorie : lire
+le hub rangeait les 26. Ici les dix puces sont des **familles de sujet**, et elles ne
+coïncident avec aucun découpage du vocabulaire — deux puces tombent dans `ml/tabulaire`, trois
+dans `ml/non-supervise`, une se scinde entre `ml/socle` et `ml/non-supervise`, une autre se
+disperse sur cinq valeurs différentes. Le hub a fait **la moitié** du travail : il a groupé,
+il n'a pas rangé.
+
+Et une nuance affaiblissait le croisement ici, qu'il vaut mieux avoir écrite avant de le
+relancer ailleurs : `v3-arborescence.md` notait au lot précédent que « les hubs les citent
+toutes en clair en attendant ». La revendication par le hub de domaine était donc **voulue**,
+et ne prouvait aucune destination. Ce qui informait réellement, c'était l'autre moitié du
+résultat — **les 28 contentions avec un SOUS-hub**, et surtout les 39 notions qu'aucun
+sous-hub ne réclamait.
+
+> **Geste à ajouter** : quand le croisement renvoie le hub de domaine pour tout le monde, le
+> retirer du décompte et relire le résultat sans lui. Ce qui reste dit deux choses utiles —
+> un sous-hub qui revendique désigne un dossier, et une **absence** de revendication désigne
+> le niveau du domaine. Les cinq notions restées au niveau du domaine ici ont été trouvées
+> exactement comme ça.
+
+### 42. La remontée 35 avait raison sur le principe et faux sur la liste
+
+Elle annonçait que `ml` paierait des promotions, contrairement aux cinq familles
+précédentes. Vrai : trois sous-dossiers naissent, et c'est le seul lot de notions du lot 4
+dans ce cas avec `llm`.
+
+Elle nommait six sous-domaines candidats, et **quatre des six n'ont jamais approché le
+seuil** :
+
+| Candidat de la nº 35 | Pages avant | Mesuré après | Promu ? |
+|---|---|---|---|
+| `ml/non-supervise` | 4 | **22** | oui |
+| `ml/eval` | 2 | **10** | oui |
+| `ml/socle` | 2 | **20** | oui |
+| `ml/monitoring` | 1 | 3 | **non** |
+| `ml/feature-store` | 1 | 2 | **non** |
+| `ml/embeddings` | 1 | 2 | **non** |
+
+La nº 35 comptait ce que chaque valeur **a**, jamais ce qu'elle **recevra**. Un sous-domaine
+à 1 page peut aussi bien finir à 22 qu'à 2 ; sa taille actuelle ne prédit rien. Ce qui manquait
+est exactement ce que la remontée 36 dit du croisement — il donne la **taille de chaque cible
+réelle** — mais encore faut-il l'en extraire, ce qu'aucun des deux lots n'avait fait.
+
+> **Règle** : pour prévoir le coût d'une famille, compter les notions **par cible**, pas les
+> pages par valeur. La première mesure se lit avant d'ouvrir une page, en croisant les noms
+> contre les corps de hub ; la seconde ne mesure que le passé.
+
+Un troisième écart, plus intéressant : la prédiction ne se trompait pas seulement de chiffres,
+elle se trompait de sujet. Le gros des 67 n'était dans aucune des valeurs qu'elle listait
+comme minuscules : il était dans le **socle**, une valeur qu'elle mentionnait à égalité avec
+les cinq autres et qui a reçu 18 notions à elle seule.
+
+### 43. Un libellé peut être interdit par un dossier d'un AUTRE domaine
+
+La remontée 26 énumérait quatre ensembles à croiser pour nommer un dossier. Le troisième
+disait « le hub d'un domaine de l'arbre ». Ce lot en donne une variante que la formulation ne
+couvrait pas : « Évaluation » est interdit non pas parce qu'un **domaine** s'appelle comme ça,
+mais parce qu'un **sous-dossier d'un autre domaine** porte déjà ce hub —
+`LLM & IA générative/Évaluation/Évaluation.md`, créé au lot `llm` de la veille.
+
+Le mécanisme est celui d'Obsidian, pas celui du validateur : un lien nu `[[Évaluation]]` se
+résout par nom de fichier, et deux fichiers du même nom rendent la résolution indéterminée.
+R5 ne l'aurait pas signalé — elle avertit sur les **alias** qui collisionnent avec un `nom:`,
+pas sur deux noms de fichiers homonymes, dont l'un n'existe d'ailleurs pas encore au moment où
+on choisit le libellé.
+
+> **Reformulation de l'ensemble nº 3** : le libellé ne doit collider avec **aucune page
+> `role: hub` du vault**, quel que soit son étage et son domaine — pas seulement avec les 20
+> hubs de domaine. La liste s'allonge à chaque lot, et elle s'obtient en une commande.
+
+L'ensemble nº 4 a mordu aussi, pour la deuxième fois du lot 4 après `signal/traitement` :
+« Apprentissage non supervisé » est le nom d'une notion qui **vit dans le dossier**. D'où
+« Non supervisé ». Trois libellés, deux contraints — c'est le taux le plus élevé du lot.
+
+### 44. Un `pitch:` qui contient « : » rend une page invisible aux DEUX validateurs
+
+Le hub « Non supervisé » a d'abord été écrit avec un pitch se terminant par « … et le prix à
+payer : plus rien ne dit qu'on a raison ». Le deux-points suivi d'une espace, dans une valeur
+YAML non quotée, **casse le parsing du frontmatter entier**.
+
+Ce qui se passe alors est pire que l'erreur : `check_brain` et `check_arbo` construisent tous
+les deux leur vue du vault avec un `parse_fm()` qui renvoie `None` sur un frontmatter
+illisible, et une page qui renvoie `None` est **silencieusement sautée**. La page n'existe
+plus pour eux. Elle ne compte pas dans le total, elle n'est pas validée, ses liens ne sont pas
+vérifiés, sa `categorie:` n'est pas confrontée à son chemin.
+
+Ici, un seul contrôle l'a rattrapé, et par ricochet : `check_arbo` a signalé que
+« Machine Learning/Non supervisé/ » n'avait **aucune page `role: hub` à son nom** — ce qui
+était faux, la page était là. Le message décrivait la conséquence, pas la cause, et il a fallu
+parser le frontmatter à la main pour voir le vrai défaut.
+
+**Sur une notion ou une brique, rien ne l'aurait vu.** Une page peut donc entrer dans le vault,
+laisser les deux validateurs au vert et n'être vérifiée par aucun, pour un caractère de
+ponctuation dans un champ de texte libre.
+
+> **À ouvrir comme sujet** (pas corrigé ici, hors périmètre du lot) : `parse_fm()` devrait
+> **compter** les pages dont le frontmatter est illisible et l'annoncer, plutôt que de les
+> ignorer. Un `[FAIL] frontmatter illisible` serait la bonne réponse ; un compteur en pied de
+> sortie serait déjà mieux que rien. En attendant, la règle pratique est de **quoter tout
+> `pitch:` qui contient un deux-points**, et de relire le compte de pages annoncé par
+> `build_links` après avoir ajouté une page — il doit monter de 1.
+
+### 45. Ce qui débloque un arbitrage reporté n'est pas un argument neuf
+
+`Manifold learning` traînait depuis le pilote. La remontée 3 l'avait laissée en
+`stats/exploratoire` avec un motif explicite : la ranger en `ml/non-supervise` aurait fait
+passer ce sous-domaine de 4 à 5, donc promu un dossier « dans un domaine dont les 67 notions
+ne sont pas arbitrées ». La remontée 25 avait ensuite reformulé le principe — « ce n'est pas
+le franchissement de frontière qui bloque, c'est l'incertitude sur ce qu'on trouve de l'autre
+côté ».
+
+Rien de neuf n'a été découvert sur la page. Ses arguments de fond étaient tous lisibles en
+septembre : ses trois sœurs partent avec elle, ses tags sont identiques à ceux de
+`t-SNE and UMAP`, sa page écrit « coordonnées exploitables en aval (features, pipeline) » —
+le critère ML de la frontière, mot pour mot — et ne parle jamais d'interpréter des axes ; son
+outillage est `sklearn.manifold` et non Prince. **Ce qui a changé est uniquement l'état de
+l'autre côté**, et il a rendu la mesure de seuil vide de sens dans les deux directions :
+
+- au départ, `stats/exploratoire` 12 -> 11, toujours promu, aucune brique déplacée ;
+- à l'arrivée, `ml/non-supervise` promeut de toute façon — 21 sans elle, 22 avec.
+
+Les 45 promotions du vault sont **identiques** dans les deux cas. L'objection de la remontée 3
+n'a pas été réfutée : elle a cessé d'exister.
+
+> **Ce que ça dit d'un report** : un arbitrage reporté pour cause d'incertitude ne se rouvre
+> pas en cherchant de meilleurs arguments, il se rouvre en **refaisant la mesure** qui l'avait
+> bloqué. Si elle est devenue vide, le contenu décide seul — et le contenu, lui, n'avait pas
+> bougé. Corollaire pour la suite : un report de ce type doit nommer **la mesure** qui le
+> lèvera, pas la question qui l'a causé. La remontée 3 le faisait, et c'est pour ça qu'elle
+> était rejouable deux lots plus tard sans rien relire.
+
+Une objection réelle subsistait, et il faut dire pourquoi elle n'a pas emporté : 3 des 4
+voisines déclarées de la page (`Réduction de dimension`, `PCA`, `PGA`) restent en
+`stats/exploratoire`, et le hub « Analyse factorielle » nommait le côté ML **sans elle**, en
+la sachant présente. C'est la remontée 38 appliquée en sens inverse — chercher **quel** couple
+casserait le plus. `Réduction de dimension` est le chapeau des DEUX familles, et son lien
+traverse déjà la frontière pour `t-SNE and UMAP` ; le couple qui cassait vraiment était
+`Manifold learning` ↔ `t-SNE and UMAP`, tags identiques et section de contraste dédiée.
+
+### 46. Un comparatif qui filtre un TAG ne suit pas une promotion
+
+La remontée 16 dit qu'un comparatif vit dans le dossier de ses membres. Ce lot montre le cas
+où la règle ne s'applique pas : `Comparatif - Réduction de dimension` et
+`Comparatif - Détection d'anomalies` filtrent `file.hasTag(...)` et non `categorie == ...`.
+Leurs membres ne partagent donc aucune catégorie, et ne peuvent pas partager de dossier —
+après ce lot, le premier compte cinq membres répartis sur **trois** dossiers, dont deux dans
+« Statistiques & inférence ».
+
+Ils restent au niveau du domaine, et c'est le bon endroit : le niveau du domaine est
+précisément ce qui **traverse** les sous-dossiers. Le script de migration l'a trouvé seul,
+parce qu'il ne cherche à déplacer un `.base` que si son texte cite une catégorie promue.
+
+> **Précision à porter à la remontée 16** : « le dossier de ses membres » suppose que les
+> membres en aient un commun. Un comparatif à filtre par tag n'en a pas nécessairement, et sa
+> place est alors au niveau du domaine — pas dans le dossier du membre majoritaire.
+
+### 47. Ce que ce lot n'a PAS fait
+
+- **Le balayage `concept/*` en prose (remontée 32) n'est pas fait**, sur consigne : commit
+  isolé, conversation suivante. Ce lot alimente son inventaire de plusieurs entrées, dont
+  `AI/audit/rapports/axe-5-navigation.md` et les documents de migration eux-mêmes, qui citent
+  tous des valeurs désormais hors vocabulaire — mais ce sont des archives, elles décrivent un
+  état passé et rien ne les rend fausses.
+- **`CLAUDE.md` n'est pas réécrit** sur la disparition de `Wiki/Concepts/` et de `MOC/`, ni
+  `AI/scripts/arbo.py` sur `LEGACY = {"Wiki"}` : même consigne, même conversation. `Wiki/`
+  contient encore trois scaffolds vides (`Outils/`, `Workflows/`, `Roadmaps/`), dont
+  `reservoir-v1.md` dit qu'ils ne sont pas acquis.
+- **Le défaut de la remontée 44 n'est pas corrigé** : `parse_fm()` continue de sauter en
+  silence une page au frontmatter illisible. C'est un sujet de validateur, pas de lot 4.
+- Six puces du hub de domaine décrivent désormais ce que quatre sous-hubs disent mieux, et de
+  plus près. Elles restent vraies et servent de carte d'ensemble, mais la question « un hub de
+  domaine doit-il redire ses sous-hubs ? » se posera au lot 6, quand les fiches passeront au
+  nouveau gabarit.
