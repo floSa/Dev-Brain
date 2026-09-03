@@ -536,12 +536,9 @@
 
 ### concept/ml
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
-- **Déploiement de modèles** — domaines : mlops · alias : model deployment, déploiement de modèle, canary, blue-green, shadow deployment, progressive delivery, déploiement progressif, rollout
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
 - **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
-- **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
-- **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
 
@@ -733,6 +730,7 @@
 
 ### ml/interpretabilite
 - **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods
+- **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
 - **Interprétabilité mécaniste** — domaines : ai-eng, data-sci · alias : Mechanistic interpretability, Mech interp, Interpretabilite mecaniste, Circuits, Transformer circuits, Activation patching, Causal tracing
 - **Probing** — domaines : data-sci, ai-eng · alias : Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier
 - **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
@@ -801,6 +799,9 @@
 - **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
 - **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
 
+### ml/serving
+- **Déploiement de modèles** — domaines : mlops · alias : model deployment, déploiement de modèle, canary, blue-green, shadow deployment, progressive delivery, déploiement progressif, rollout
+
 ### ml/socle
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
 - **Apprentissage supervisé** — domaines : data-sci, ml-eng · alias : Supervised learning, Apprentissage supervise, Modélisation supervisée
@@ -837,6 +838,9 @@
 - **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
 - **Random Forest** — domaines : data-sci, ml-eng · alias : RF, Forêts aléatoires, Random forests, Forêt aléatoire
 - **Sélection de variables** — domaines : data-sci, ml-eng · alias : Feature selection, Sélection de caractéristiques, Sélection d'attributs, RFE, SelectKBest
+
+### ml/tracking
+- **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 
 ### ml/vision
 - **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif

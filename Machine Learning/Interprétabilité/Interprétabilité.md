@@ -34,6 +34,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 <!-- AUTO:START -->
 ### Notions
 - [[Attribution par gradient]] — domaines : data-sci, ml-eng
+- [[Explicabilité des modèles]] — domaines : data-sci, ml-eng
 - [[Interprétabilité mécaniste]] — domaines : ai-eng, data-sci
 - [[Probing]] — domaines : data-sci, ai-eng
 - [[Sparse autoencoders]] — domaines : data-sci, ai-eng

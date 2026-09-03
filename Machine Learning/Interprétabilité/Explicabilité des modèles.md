@@ -2,7 +2,7 @@
 role: notion
 nom: Explicabilité des modèles
 alias: [explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance]
-categorie: concept/ml
+categorie: ml/interpretabilite
 domaines: [data-sci, ml-eng]
 tags: [explainability, supervised]
 ---

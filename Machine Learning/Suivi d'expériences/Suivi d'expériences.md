@@ -32,6 +32,9 @@ tags: [experiment-tracking, model-registry, reproducibility, hyperparameter-tuni
 - [[Neptune]] n'est plus un choix pour du neuf : racheté par OpenAI, service hébergé arrêté en mars 2026. Cf. [[Comparatif - Suivi d'expériences ML]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Model registry & versioning]] — domaines : mlops
+
 ### Briques
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 - [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.

@@ -12792,6 +12792,36 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Interprétabilité/Explicabilité des modèles.md",
+      "nom": "Explicabilité des modèles",
+      "alias": [
+        "explicabilité",
+        "interprétabilité",
+        "explainability",
+        "interpretability",
+        "feature importance",
+        "SHAP",
+        "LIME",
+        "permutation importance"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Interprétabilité/Interprétabilité mécaniste.md",
       "nom": "Interprétabilité mécaniste",
       "alias": [
@@ -14231,6 +14261,36 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Serving/Déploiement de modèles.md",
+      "nom": "Déploiement de modèles",
+      "alias": [
+        "model deployment",
+        "déploiement de modèle",
+        "canary",
+        "blue-green",
+        "shadow deployment",
+        "progressive delivery",
+        "déploiement progressif",
+        "rollout"
+      ],
+      "role": "notion",
+      "categorie": "ml/serving",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "deployment-strategy",
+        "model-serving",
+        "inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Serving/KServe.md",
       "nom": "KServe",
       "alias": [
@@ -15197,6 +15257,34 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Suivi d'expériences/Model registry & versioning.md",
+      "nom": "Model registry & versioning",
+      "alias": [
+        "model registry",
+        "registre de modèles",
+        "model versioning",
+        "versioning de modèles",
+        "lignage de modèle",
+        "model lineage",
+        "champion-challenger"
+      ],
+      "role": "notion",
+      "categorie": "ml/tracking",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-registry",
+        "experiment-tracking"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Suivi d'expériences/Neptune.md",
@@ -21904,36 +21992,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Déploiement de modèles.md",
-      "nom": "Déploiement de modèles",
-      "alias": [
-        "model deployment",
-        "déploiement de modèle",
-        "canary",
-        "blue-green",
-        "shadow deployment",
-        "progressive delivery",
-        "déploiement progressif",
-        "rollout"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "deployment-strategy",
-        "model-serving",
-        "inference"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/EDA automatisée & profiling.md",
       "nom": "EDA automatisée & profiling",
       "alias": [
@@ -21962,36 +22020,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Explicabilité des modèles.md",
-      "nom": "Explicabilité des modèles",
-      "alias": [
-        "explicabilité",
-        "interprétabilité",
-        "explainability",
-        "interpretability",
-        "feature importance",
-        "SHAP",
-        "LIME",
-        "permutation importance"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "explainability",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Feature store — concept.md",
       "nom": "Feature store — concept",
       "alias": [
@@ -22014,34 +22042,6 @@
       "tags": [
         "feature-store",
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Model registry & versioning.md",
-      "nom": "Model registry & versioning",
-      "alias": [
-        "model registry",
-        "registre de modèles",
-        "model versioning",
-        "versioning de modèles",
-        "lignage de modèle",
-        "model lineage",
-        "champion-challenger"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-registry",
-        "experiment-tracking"
       ],
       "alternatives": null,
       "complements": null,

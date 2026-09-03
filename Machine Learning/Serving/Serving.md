@@ -35,6 +35,9 @@ tags: [model-serving, inference, deployment-strategy, kubernetes, gpu, inference
 - Servir un LLM génératif → [[Runtimes]], pas ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[Déploiement de modèles]] — domaines : mlops
+
 ### Briques
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[KServe]] — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
