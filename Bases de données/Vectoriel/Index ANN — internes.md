@@ -2,7 +2,7 @@
 role: notion
 nom: Index ANN — internes
 alias: [ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN]
-categorie: concept/data
+categorie: database/vecteur
 domaines: [data-eng, ai-eng]
 tags: [ann, vector-db, embeddings]
 ---

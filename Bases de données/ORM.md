@@ -2,7 +2,7 @@
 role: notion
 nom: ORM
 alias: [orm, object-relational mapping, mapping objet-relationnel]
-categorie: concept/data
+categorie: database/orm
 domaines: [data-eng]
 tags: [orm, relational]
 ---

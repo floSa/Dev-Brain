@@ -2,7 +2,7 @@
 role: notion
 nom: Bases de données vectorielles
 alias: [vector db, vector store, base vectorielle]
-categorie: concept/data
+categorie: database/vecteur
 domaines: [data-eng, ai-eng]
 tags: [vector-db, embeddings, semantic-search, rag]
 ---

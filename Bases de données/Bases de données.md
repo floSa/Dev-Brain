@@ -89,6 +89,10 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 ### Sous-domaines
 - [[Administration]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
 
+### Notions
+- [[Migrations de schéma]] — domaines : data-eng
+- [[ORM]] — domaines : data-eng
+
 ### Briques
 - [[ADBC]] — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.
 - [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.

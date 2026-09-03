@@ -33,10 +33,12 @@ tags: [meta, design, v3, migration]
 | `Dev/Rules/` | 5 | `role: rule` — dans « Rules/ » |
 | `MOC/Categories` + `MOC/Types` | 22 | **absorbés** par les pages hub, par `git mv` |
 | `MOC/Themes` | 5 | **déplacés** vers « Métiers/ », `role: hub` |
-| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — `Statistiques.md` n'indexe plus rien depuis le 2026-09-05 |
+| `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — **6 supprimées au 2026-09-05**, sur mesure R7 ; restent `Deep learning`, `LLM (notions)`, `Machine learning (notions)`, `NLP (notions)` |
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
-**37 faites au 2026-09-05** (« Statistiques & inférence », domaine pilote du lot 4).
+**85 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
+`math` (26), `data` (13, en deux passages), `signal` (5) et `ai` (4). **212 restent** sous
+`Wiki/Concepts/`.
 
 > **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
 > 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
@@ -101,12 +103,12 @@ SecondBrain/
 │   ├── Text-to-SQL/   (5)
 │   ├── Assistants/   (5)
 │   └── (28 pages au niveau du domaine)
-├── Bases de données/   (47 pages)
-│   ├── Vectoriel/   (11)
+├── Bases de données/   (51 pages — 47 au lot 3, 4 notions au lot 4)
+│   ├── Vectoriel/   (13)
 │   ├── Administration/   (7)
 │   ├── Recherche/   (6)
 │   ├── Relationnel/   (6)
-│   └── (17 pages au niveau du domaine)
+│   └── (19 pages au niveau du domaine)
 ├── Statistiques & inférence/   (47 pages — **lot 4 fait le 2026-09-05**)
 │   ├── Tests & estimation/   (15)
 │   ├── Analyse factorielle/   (12)
@@ -122,9 +124,9 @@ SecondBrain/
 │   └── (11 pages au niveau du domaine)
 ├── Mathématiques/   (27 pages — 1 au lot 3, les 26 notions au lot 4)
 │   └── (1 pages au niveau du domaine)
-├── Outils de développement/   (19 pages)
-│   ├── Notebooks/   (5)
-│   └── (14 pages au niveau du domaine)
+├── Outils de développement/   (21 pages — 20 au lot 3, 1 notion au lot 4)
+│   ├── Notebooks/   (6)
+│   └── (15 pages au niveau du domaine)
 ├── Signal & audio/   (8 pages — APRÈS lot 4 ; 3 pages et aucun sous-dossier au lot 3,
 │   │                    les 5 notions portant encore `concept/signal`)
 │   ├── Traitement/   (7)
@@ -641,17 +643,24 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - [ ] `[n]` prompt-caching
 - [ ] `[n]` tool-use
 
-### Bases de données  ·  47 pages  ·  **migré le 2026-09-04**
+### Bases de données  ·  51 pages  ·  **migré le 2026-09-04, 4 notions rangées le 2026-09-05**
 
 - [x] hub écrit — les 4 sous-hubs sont écrits ; le hub de domaine porte le corps de la
   notion fusionnée, à passer au gabarit §9 au lot 6
-- [x] sous-dossiers créés — `Vectoriel/` (11), `Administration/` (7), `Recherche/` (6),
-  `Relationnel/` (6) ; 17 pages au niveau du domaine, plus les 10 comparatifs
-- [ ] notions recatégorisées — lot 4 ; l'arbre ne porte que des briques aujourd'hui
+- [x] sous-dossiers créés — `Vectoriel/` (13), `Administration/` (7), `Recherche/` (6),
+  `Relationnel/` (6) ; 19 pages au niveau du domaine, plus les 10 comparatifs
+- [x] notions recatégorisées — lot 4, 2026-09-05 : les **4 notions remontées** par la
+  conversation `concept/data` sont descendues ici, aucune valeur ouverte, aucun
+  sous-dossier promu ni défait (`orm` 3→4 et `migration` 3→4 restent sous le seuil,
+  `vecteur` 11→13 avait déjà son dossier). Le domaine n'avait porté que des briques
+  jusque-là. Le corps du sous-hub `Vectoriel` a été complété : il n'énumérait que des
+  briques, il nomme désormais les deux notions et dit à quel étage chacune se lit
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Vectoriel/** — `database/vecteur` — 11 pages
+**Vectoriel/** — `database/vecteur` — 13 pages
 
+- `[n]` Bases de données vectorielles — notion chapeau des moteurs du dossier
+- `[n]` Index ANN — internes — HNSW, IVF, PQ : ce qui tourne sous les moteurs
 - `[b]` Annoy — paquet, C++
 - `[b]` Chroma — paquet, Rust
 - `[b]` Faiss — paquet, C++
@@ -692,8 +701,10 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` Postgres — plateforme, C
 - `[b]` SQLite — paquet, C
 
-**Au niveau du domaine** — 17 pages
+**Au niveau du domaine** — 19 pages
 
+- `[n]` Migrations de schéma — `database/migration`, 4 pages, sous le seuil
+- `[n]` ORM — `database/orm`, 4 pages, sous le seuil
 - `[b]` ADBC — specification, C / Go / Java
 - `[b]` Alembic — paquet, Python
 - `[b]` Apache Cassandra — plateforme, Java
@@ -936,18 +947,22 @@ c'est la frontière de domaine.
 
 **Au niveau du domaine** — 0 page
 
-### Outils de développement  ·  19 pages  ·  **migré le 2026-09-04**
+### Outils de développement  ·  21 pages  ·  **migré le 2026-09-04, 1 notion rangée le 2026-09-05**
 
 - [x] hub écrit — hub de domaine (issu de `MOC/Categories/`) et sous-hub `Notebooks`
-- [x] sous-dossiers créés — `Notebooks/` (5) ; 15 pages au niveau du domaine, plus 3
+- [x] sous-dossiers créés — `Notebooks/` (6) ; 15 pages au niveau du domaine, plus 3
   comparatifs (`Clients d'API`, `Gestionnaires de paquets Python`, `Frameworks CLI`)
 - [x] **20 pages, pas 19** — `Wiki/Outils/Obsidian.md` (`skill/knowledge`) est rattachée
   ici par arbitrage de floSa ; ce tableau ne la comptait pas
-- [ ] notions recatégorisées — sans objet, le domaine ne porte aucune notion
+- [x] notions recatégorisées — lot 4, 2026-09-05 : « sans objet » était faux. Une notion
+  remontée par la conversation `concept/data`, `Notebooks-as-code`, est descendue dans
+  `Notebooks/` (5→6, le dossier existait déjà). Le corps du sous-hub la nomme désormais :
+  il décrivait sa matière — pairing, sorties hors du dépôt — sans jamais la citer
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Notebooks/** — `devtools/notebook` — 5 pages
+**Notebooks/** — `devtools/notebook` — 6 pages
 
+- `[n]` Notebooks-as-code — la discipline dont les 5 briques sont l'outillage
 - `[b]` Marimo — application, Python
 - `[b]` Quarto — cli, TypeScript
 - `[b]` jupysql — extension, Python
@@ -1228,27 +1243,30 @@ c'est la frontière de domaine.
 
 ## Hors arbre — à arbitrer un par un
 
-18 notions dont le domaine lui-même reste à déterminer. **12 rangées au lot 4** — les 8
-de `concept/data` propres à « Data & pipelines », et les 4 de sécurité IA que floSa a
-tranchées en `security/ia` (motif dans la section « Sécurité »). **5 remontées** : leur
-domaine d'accueil était hors du périmètre du lot, elles restent sous `Wiki/Concepts/` et
-`concept/data` reste dans le vocabulaire pour elles. Reste 1 case, déjà résolue au lot 3.
+18 notions dont le domaine lui-même reste à déterminer. **Les 18 sont traitées au lot 4**,
+en deux passages. Le premier, par famille d'origine, en a rangé 12 — les 8 de `concept/data`
+propres à « Data & pipelines », et les 4 de sécurité IA que floSa a tranchées en
+`security/ia` (motif dans la section « Sécurité ») — et en a **remonté 5**, dont le domaine
+d'accueil était hors de son périmètre. Le second, le 2026-09-05, a pris ces 5 **par domaine
+d'accueil** comme la remontée 15 le suggérait : « Bases de données » pour quatre d'entre
+elles, « Outils de développement » pour la cinquième. La dix-huitième était déjà résolue au
+lot 3. `concept/data` est sorti du vocabulaire dans le même commit.
 
 - [x] `[n]` AI security — **rangée** `security/ia`, lot 4
 - [x] `[n]` Architecture médaillon — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` Bases de données — **résolue** : fusionnée dans le hub
   `Bases de données/Bases de données.md` (`role: hub`) au lot 3, avec
   `MOC/Categories/Bases de données.md`. Ne relève plus du lot 4.
-- [ ] `[n]` Bases de données vectorielles — `concept/data` · **appelle `database/vecteur`**, remontée au lot 4 (12 → 13, `Vectoriel/` existe)
+- [x] `[n]` Bases de données vectorielles — **rangée** `database/vecteur`, lot 4, second passage (11 → 13 avec `Index ANN`, `Vectoriel/` existait)
 - [x] `[n]` Change Data Capture (CDC) — **rangée** `data/ingestion`, lot 4
 - [x] `[n]` Contrats de données & qualité — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` ELT vs ETL & idempotence — **rangée** `data/fiabilite`, lot 4
 - [x] `[n]` Guardrails — **rangée** `security/ia`, lot 4
-- [ ] `[n]` Index ANN — internes — `concept/data` · **appelle `database/vecteur`**, remontée au lot 4 (→ 14, `Vectoriel/` existe)
+- [x] `[n]` Index ANN — internes — **rangée** `database/vecteur`, lot 4, second passage
 - [x] `[n]` Jailbreaking and defenses — **rangée** `security/ia`, lot 4
-- [ ] `[n]` Migrations de schéma — `concept/data` · **appelle `database/migration`**, remontée au lot 4 (3 → 4, sous le seuil)
-- [ ] `[n]` Notebooks-as-code — `concept/data` · **appelle `devtools/notebook`**, remontée au lot 4 (5 → 6, `Notebooks/` existe)
-- [ ] `[n]` ORM — `concept/data` · **appelle `database/orm`**, remontée au lot 4 (3 → 4, sous le seuil)
+- [x] `[n]` Migrations de schéma — **rangée** `database/migration`, lot 4, second passage (3 → 4, sous le seuil, pas de dossier)
+- [x] `[n]` Notebooks-as-code — **rangée** `devtools/notebook`, lot 4, second passage (5 → 6, `Notebooks/` existait)
+- [x] `[n]` ORM — **rangée** `database/orm`, lot 4, second passage (3 → 4, sous le seuil, pas de dossier)
 - [x] `[n]` Partitionnement & layout de données — **rangée** `data/format`, lot 4
 - [x] `[n]` Prompt injection — **rangée** `security/ia`, lot 4
 - [x] `[n]` Stream processing — **rangée** `data/streaming`, lot 4

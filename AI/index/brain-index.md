@@ -534,13 +534,6 @@
 
 ## Notions — ce qu'il faut comprendre
 
-### concept/data
-- **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
-- **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
-- **Migrations de schéma** — domaines : data-eng · alias : migration, migrations, schema migration, db migration
-- **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
-- **ORM** — domaines : data-eng · alias : orm, object-relational mapping, mapping objet-relationnel
-
 ### concept/dl
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
 - **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif
@@ -782,6 +775,19 @@
 
 ### data/streaming
 - **Stream processing** — domaines : data-eng · alias : stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time
+
+### database/migration
+- **Migrations de schéma** — domaines : data-eng · alias : migration, migrations, schema migration, db migration
+
+### database/orm
+- **ORM** — domaines : data-eng · alias : orm, object-relational mapping, mapping objet-relationnel
+
+### database/vecteur
+- **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
+- **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
+
+### devtools/notebook
+- **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 
 ### math/algebre-lineaire
 - **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD

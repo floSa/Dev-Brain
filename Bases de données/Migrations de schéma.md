@@ -2,7 +2,7 @@
 role: notion
 nom: Migrations de schéma
 alias: [migration, migrations, schema migration, db migration]
-categorie: concept/data
+categorie: database/migration
 domaines: [data-eng]
 tags: [migration, relational]
 ---

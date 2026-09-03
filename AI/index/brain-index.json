@@ -3502,6 +3502,31 @@
       "maturite": "production"
     },
     {
+      "path": "Bases de données/Migrations de schéma.md",
+      "nom": "Migrations de schéma",
+      "alias": [
+        "migration",
+        "migrations",
+        "schema migration",
+        "db migration"
+      ],
+      "role": "notion",
+      "categorie": "database/migration",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "migration",
+        "relational"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/MongoDB.md",
       "nom": "MongoDB",
       "alias": [
@@ -3571,6 +3596,30 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Bases de données/ORM.md",
+      "nom": "ORM",
+      "alias": [
+        "orm",
+        "object-relational mapping",
+        "mapping objet-relationnel"
+      ],
+      "role": "notion",
+      "categorie": "database/orm",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "orm",
+        "relational"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Bases de données/Prisma.md",
@@ -4076,6 +4125,33 @@
       "maturite": "production"
     },
     {
+      "path": "Bases de données/Vectoriel/Bases de données vectorielles.md",
+      "nom": "Bases de données vectorielles",
+      "alias": [
+        "vector db",
+        "vector store",
+        "base vectorielle"
+      ],
+      "role": "notion",
+      "categorie": "database/vecteur",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "vector-db",
+        "embeddings",
+        "semantic-search",
+        "rag"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/Vectoriel/Chroma.md",
       "nom": "Chroma",
       "alias": [
@@ -4131,6 +4207,37 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/Index ANN — internes.md",
+      "nom": "Index ANN — internes",
+      "alias": [
+        "ANN",
+        "index ANN",
+        "HNSW",
+        "IVF",
+        "PQ",
+        "product quantization",
+        "approximate nearest neighbor",
+        "recherche ANN"
+      ],
+      "role": "notion",
+      "categorie": "database/vecteur",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ann",
+        "vector-db",
+        "embeddings"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Bases de données/Vectoriel/LanceDB.md",
@@ -12625,6 +12732,35 @@
       "maturite": "production"
     },
     {
+      "path": "Outils de développement/Notebooks/Notebooks-as-code.md",
+      "nom": "Notebooks-as-code",
+      "alias": [
+        "notebooks as code",
+        "jupytext",
+        "pairing de notebooks",
+        "notebook pairing",
+        "notebooks reproductibles",
+        "nbstripout"
+      ],
+      "role": "notion",
+      "categorie": "devtools/notebook",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "notebook",
+        "reproducibility",
+        "version-control"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Outils de développement/Notebooks/Notebooks.md",
       "nom": "Notebooks",
       "alias": [
@@ -16227,33 +16363,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Bases de données vectorielles.md",
-      "nom": "Bases de données vectorielles",
-      "alias": [
-        "vector db",
-        "vector store",
-        "base vectorielle"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "vector-db",
-        "embeddings",
-        "semantic-search",
-        "rag"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Bellman equations.md",
       "nom": "Bellman equations",
       "alias": [
@@ -18175,37 +18284,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Index ANN — internes.md",
-      "nom": "Index ANN — internes",
-      "alias": [
-        "ANN",
-        "index ANN",
-        "HNSW",
-        "IVF",
-        "PQ",
-        "product quantization",
-        "approximate nearest neighbor",
-        "recherche ANN"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "ann",
-        "vector-db",
-        "embeddings"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Inference optimization.md",
       "nom": "Inference optimization",
       "alias": [
@@ -18771,31 +18849,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Migrations de schéma.md",
-      "nom": "Migrations de schéma",
-      "alias": [
-        "migration",
-        "migrations",
-        "schema migration",
-        "db migration"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "migration",
-        "relational"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Mise à l'échelle.md",
       "nom": "Mise à l'échelle",
       "alias": [
@@ -19272,35 +19325,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Notebooks-as-code.md",
-      "nom": "Notebooks-as-code",
-      "alias": [
-        "notebooks as code",
-        "jupytext",
-        "pairing de notebooks",
-        "notebook pairing",
-        "notebooks reproductibles",
-        "nbstripout"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "notebook",
-        "reproducibility",
-        "version-control"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/OCR.md",
       "nom": "OCR",
       "alias": [
@@ -19332,30 +19356,6 @@
         "ocr",
         "computer-vision",
         "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/ORM.md",
-      "nom": "ORM",
-      "alias": [
-        "orm",
-        "object-relational mapping",
-        "mapping objet-relationnel"
-      ],
-      "role": "notion",
-      "categorie": "concept/data",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "orm",
-        "relational"
       ],
       "alternatives": null,
       "complements": null,

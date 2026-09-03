@@ -1707,7 +1707,7 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Données (notions)]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[NLP (notions)]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Agents]], [[Apprentissage par renforcement]], [[Bases de données]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[LLM (notions)]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[NLP (notions)]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
 
 ### Algèbre linéaire  ·  hub
@@ -1743,7 +1743,7 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+- liens entrants : [[AI Engineering]], [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
@@ -1762,12 +1762,12 @@
 
 ### Data Engineering  ·  hub
 - tags : —
-- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[Données (notions)]], [[MLOps]], [[Machine learning (notions)]], [[NLP (notions)]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[MLOps]], [[Machine learning (notions)]], [[NLP (notions)]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]], [[Web & API]]
 - liens entrants : [[MLOps]]
 
 ### Data Science  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Données (notions)]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Signal & audio]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Visualisation]]
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Visualisation]]
 - liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
@@ -1837,7 +1837,7 @@
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[Données (notions)]], [[LLM (notions)]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[LLM (notions)]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Médias  ·  hub
@@ -1852,7 +1852,7 @@
 
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
-- liens sortants : [[DuckDB]], [[Marimo]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
+- liens sortants : [[DuckDB]], [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
 - liens entrants : [[Outils de développement]]
 
 ### Observabilité  ·  hub
@@ -1873,7 +1873,7 @@
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[ML Engineering]]
+- liens entrants : [[AI Engineering]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[ML Engineering]], [[MLOps]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -1987,7 +1987,7 @@
 
 ### Vectoriel  ·  hub
 - tags : —
-- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 - liens entrants : [[AI Engineering]], [[Bases de données]], [[Data Engineering]], [[NLP]], [[Recherche]]
 
 ### Vision  ·  hub
@@ -2168,7 +2168,7 @@
 ### Bases de données vectorielles  ·  notion
 - tags : `vector-db`, `embeddings`, `semantic-search`, `rag`
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
-- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
+- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -2613,7 +2613,7 @@
 ### Index ANN — internes  ·  notion
 - tags : `ann`, `vector-db`, `embeddings`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[embeddings]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[ScaNN]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -2928,7 +2928,7 @@
 ### Notebooks-as-code  ·  notion
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[papermill]], [[pytest]], [[uv]]
-- liens entrants : [[Data & pipelines]], [[Marimo]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[missingno]], [[papermill]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Data & pipelines]], [[Marimo]], [[Notebooks]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[missingno]], [[papermill]], [[sweetviz]], [[ydata-profiling]]
 
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`

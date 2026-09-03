@@ -395,7 +395,7 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{data, ml, dl, rl, ts, nlp, devops, llm}
+concept/{ml, dl, rl, ts, nlp, devops, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -415,12 +415,13 @@ silencieuse, puisque `check_brain` l'accepterait encore.
 - `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
 - `signal` — retiré le 2026-09-05, 5 notions descendues dans « Signal & audio/ ».
 - `ai` — retiré le 2026-09-05, 4 notions descendues dans « Sécurité/ ».
-
-`data` **reste dans le bloc** après le lot du 2026-09-05, et c'est une exception motivée :
-8 de ses 13 notions sont descendues dans « Data & pipelines/ », les 5 autres appellent un
-domaine que ce lot ne traitait pas — [[Bases de données]] pour `ORM`, `Migrations de schéma`,
-`Bases de données vectorielles` et `Index ANN — internes`, [[Outils de développement]] pour
-`Notebooks-as-code`. Retirer la valeur les rendrait invalides sans les avoir rangées.
+- `data` — retiré le 2026-09-05, en deux temps : 8 notions descendues dans
+  « Data & pipelines/ », puis les 5 dernières dans « Bases de données/ » (`ORM`,
+  `Migrations de schéma`, `Bases de données vectorielles`, `Index ANN — internes`) et
+  « Outils de développement/ » (`Notebooks-as-code`). L'exception écrite ici le
+  2026-09-05 — « la valeur reste tant que ces 5 ne sont pas rangées » — est levée : elles
+  le sont. Le passage s'est fait **par domaine d'accueil** et non par famille d'origine,
+  comme la remontée 15 le suggérait pour les résidus.
 
 Les valeurs restantes suivront, une par lot de domaine.
 

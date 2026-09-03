@@ -2,7 +2,7 @@
 role: notion
 nom: Notebooks-as-code
 alias: [notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout]
-categorie: concept/data
+categorie: devtools/notebook
 domaines: [data-sci, mlops]
 tags: [notebook, reproducibility, version-control]
 ---

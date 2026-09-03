@@ -75,18 +75,23 @@ une fois que le vocabulaire final est connu.
       L'ordre s'est vérifié une seconde fois : la frontière `stats/probabilite` ↔ `math/*`
       écrite au pilote a tenu sans être rouverte. **Le corps du hub a rangé les 26 seul** —
       ses quatre puces les citaient déjà toutes, une fois chacune.
-- [x] **`data` (13) — fait à 8 sur 13 le 2026-09-05.** Une valeur ouverte
-      (`data/fiabilite`), aucun sous-dossier créé. **5 notions remontées** et non
-      déplacées : elles appellent `database/*` ou `devtools/notebook`, hors du périmètre
-      du lot. `concept/data` reste donc dans le vocabulaire — seule valeur `concept/*`
-      survivante d'une famille traitée.
+- [x] **`data` (13) — CLOS le 2026-09-05, en deux passages.** Premier passage, par
+      famille d'origine : 8 rangées, une valeur ouverte (`data/fiabilite`), aucun
+      sous-dossier créé, **5 remontées** parce qu'elles appellent `database/*` ou
+      `devtools/notebook`, hors du périmètre de ce lot-là. Second passage, **par domaine
+      d'accueil** comme la remontée 15 le suggérait : les 5 sont descendues dans
+      « Bases de données/ » (4) et « Outils de développement/ » (1), aucune valeur
+      ouverte, aucun sous-dossier promu ni défait. `concept/data` est **sorti du
+      vocabulaire**, et `MOC/Concepts/Données (notions)` est morte avec lui.
 - [x] **`signal` (5) — fait le 2026-09-05.** Aucune valeur ouverte ; `Traitement/` naît,
       exactement comme `v3-arborescence.md` le décrivait depuis le lot 3.
 - [x] **`ai` (4) — fait le 2026-09-05.** Une valeur ouverte, `security/ia`, et c'est
       l'arbitrage le plus discutable du lot : il va **contre** l'arbre de décision du
       domaine (cf. remontée 13).
+- [x] **les 5 notions `concept/data` remontées — fait le 2026-09-05** (cf. `data`
+      ci-dessus, second passage)
 - [ ] `llm` (56) · [ ] `dl` (52) · [ ] `ml` (67) · [ ] `rl` (17) · [ ] `ts` (13) ·
-      [ ] `nlp` (7) · [ ] les 5 notions `concept/data` remontées
+      [ ] `nlp` (7)
 
 ### Pour chaque notion
 
@@ -109,7 +114,7 @@ une fois que le vocabulaire final est connu.
 5. Après les `git mv` : régénérer, puis **comparer les artefacts avant / après**. Les
    validateurs ne voient pas ce qui a été perdu, seulement ce qui est faux (remontée 5).
 
-### Les 18 sans domaine — **12 traitées le 2026-09-05, 5 remontées**
+### Les 18 sans domaine — **les 18 traitées le 2026-09-05**
 
 La prévision « la plupart sont évidentes une fois posée la question de quoi ça parle » s'est
 vérifiée, et c'est justement ce qui a rendu 5 d'entre elles intraitables dans leur lot :
@@ -118,7 +123,12 @@ elles étaient évidentes, mais **pour un autre domaine**. `ORM` → `database/o
 `Index ANN — internes` → `database/vecteur`, `Notebooks-as-code` → `devtools/notebook`.
 Consigne de floSa appliquée : une notion qui appelle un sous-domaine hors du périmètre du
 lot **se remonte, elle ne se déplace pas**. Effet de seuil mesuré pour les cinq avant de
-décider — il est nul, aucune ne forcerait de restructuration.
+décider — il est nul, aucune ne forcerait de restructuration. **Les cinq sont descendues
+le 2026-09-05**, dans un second passage pris par domaine d'accueil, la mesure de seuil
+refaite sur la population réelle des deux domaines et non reprise du lot précédent : les
+ensembles de sous-domaines promus sont identiques avant et après, pour l'un comme pour
+l'autre. Le script s'arrête de lui-même si ce n'est pas le cas
+(`AI/migration/scripts/migrate_lot4_residus.py`).
 
 `Web scraping` → `data/scraping` est la seule des cinq « évidentes » qui restait dans son
 domaine ; elle est descendue.
@@ -568,8 +578,69 @@ quatre dernières : elles mourront avec leur famille, pas avant.
   avant ce lot. Par la règle que floSa vient d'écrire (« une valeur est retirée dès que plus
   aucune page ne la porte »), elle devrait sortir. Non fait ici : rien ne dit si c'est un
   résidu ou un emplacement réservé. **À trancher.**
-- **Les 5 notions `concept/data` remontées** attendent une décision — les déplacer vers
-  `database/*` et `devtools/notebook`, ou les laisser. Le seuil ne s'y oppose pas.
-- **`MOC/Concepts/Données (notions)`** ne peut pas mourir tant que ces 5 vivent. Les quatre
-  autres (`Deep learning`, `LLM (notions)`, `Machine learning (notions)`, `NLP (notions)`)
-  mourront avec leur famille.
+- ~~**Les 5 notions `concept/data` remontées** attendent une décision.~~ — **tranché et
+  fait le 2026-09-05 : elles descendent.** Cf. la remontée 20 ci-dessous.
+- ~~**`MOC/Concepts/Données (notions)`** ne peut pas mourir tant que ces 5 vivent.~~ —
+  **morte le 2026-09-05**, une fois les 5 descendues : `build_mocs.py` ne la régénère plus
+  (elle a disparu de sa liste, ce n'est pas une réécriture à l'identique) et la mesure R7
+  donne 0 page perdue. Les quatre autres (`Deep learning`, `LLM (notions)`,
+  `Machine learning (notions)`, `NLP (notions)`) mourront avec leur famille.
+
+---
+
+## Remontées — les résidus `concept/data`, 2026-09-05
+
+Les **5 notions remontées** par la conversation précédente sont descendues, `concept/data`
+est sorti du vocabulaire et `MOC/Concepts/Données (notions)` est morte. Zéro valeur
+ouverte, zéro sous-dossier promu ou défait, zéro brique déplacée par ricochet. Le compteur
+d'avertissements n'a pas bougé — 149 avant, 149 après — et le **jeu** est identique ligne
+à ligne.
+
+### 20. Le passage par domaine d'accueil coûte presque rien, et c'est l'intérêt
+
+La remontée 15 suggérait « un dernier passage **par domaine d'accueil** plutôt que par
+famille d'origine, pour les résidus ». Le passage a coûté un script de 40 lignes utiles et
+trois phrases de hub. La raison est mécanique : les cinq notions avaient déjà été lues,
+leur cible déjà écrite, et leur effet de seuil déjà mesuré — il ne restait que l'exécution.
+
+**Ce qui a quand même été refait, et devait l'être** : la mesure de seuil, sur la
+population **réelle** des deux domaines d'accueil et non sur le chiffre noté la veille. La
+remontée 3 dit de mesurer avant de décider ; elle ne dit pas de faire confiance à une
+mesure d'hier, prise avant quatre commits qui ont déplacé des pages. Le script recalcule
+`arbo.promotions()` avant et après pour chaque domaine, compare les deux ensembles et
+**s'arrête** s'ils diffèrent — le seuil n'est pas négociable page par page, donc une
+promotion inattendue rouvre l'arbitrage au lieu d'être encaissée.
+
+### 21. Trois hubs ne disaient rien de pages que leur dossier allait accueillir
+
+Application directe de la remontée 14, dans les deux sens.
+
+- « Data & pipelines » portait une puce disant *« Cinq notions ne sont pas ici et portent
+  encore `concept/data` […] leur déplacement est à arbitrer »*. Elle est devenue fausse en
+  une commande. Réécrite : elles ne sont toujours pas ici, mais parce qu'elles sont
+  **rangées** ailleurs, et la puce dit maintenant pourquoi leur sujet n'est pas le pipeline.
+- « Vectoriel » et « Notebooks » posaient le problème **symétrique** : leur corps n'a jamais
+  cité les notions, puisqu'elles n'étaient pas là. Après le `git mv`, deux hubs qui
+  énuméraient soigneusement leurs briques restaient muets sur la notion chapeau de leur
+  propre dossier — la zone `<!-- AUTO -->` l'aurait listée, le corps non. Le cas est plus
+  discret que celui d'une phrase fausse, et rien ne le signale : `grep` ne trouve **rien**,
+  et c'est justement le symptôme.
+
+**Geste à ajouter à celui de la remontée 14** : après les `git mv`, `grep` le nom de chaque
+page déplacée dans les corps de hub — et, quand le `grep` ne renvoie **pas** le hub du
+dossier d'accueil, se demander si son corps devrait la nommer. Les deux moitiés du geste
+sont nécessaires ; la seconde n'a pas de sortie à lire, seulement une absence à remarquer.
+
+### 22. Un relevé des membres des `.base`, écrit une fois, réutilisable au lot 5
+
+La remontée 11 demande de comparer le **jeu** et non le compte, et `mesure_bases_role.py`
+ne signale qu'un intrus — il ne dit rien d'un membre **perdu**. `mesure_membres_bases.py`
+comble le trou : il énumère, pour chacun des 47 comparatifs, ses membres un par ligne, dans
+un format stable et diffable. Il ne juge rien ; il donne la matière du `diff`.
+
+Sur ce lot le diff est vide, et c'est attendu — les 39 filtres portent `role == "brique"`
+depuis le correctif du 2026-09-05, donc une notion ne peut plus être absorbée. Le script
+n'a donc rien trouvé ici. Il est écrit pour **le lot 5**, où les 47 `.base` deviendront des
+pages `role: comparatif` portant une `categorie:` : à ce moment-là, chaque page de
+comparatif entrera dans le champ des filtres des autres, et le mécanisme de la remontée 11
+se rejouera à l'identique.

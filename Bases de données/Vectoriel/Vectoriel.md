@@ -14,6 +14,7 @@ domaines: [data-eng, ai-eng]
 - Une base vectorielle indexe des **embeddings** et répond « les $k$ plus proches » au lieu de « les lignes qui valent X ». La recherche est **approchée** : on échange un peu de rappel contre des ordres de grandeur de vitesse.
 - Deux natures de briques cohabitent ici, et on les confond souvent. Une **bibliothèque d'index** ([[Faiss]], [[hnswlib]], [[Annoy]], [[ScaNN]]) fournit l'algorithme et rien d'autre : ni persistance, ni filtrage, ni API. Une **base** ([[Qdrant]], [[Milvus]], [[Weaviate]], [[Chroma]], [[LanceDB]], [[Pinecone]]) ajoute le stockage, les métadonnées et le service.
 - Le **filtrage par métadonnées** est le vrai discriminant en production : filtrer *pendant* la recherche ou *après* ne donne pas les mêmes résultats à $k$ fixé.
+- Deux notions tiennent la théorie du dossier, à deux étages. [[Bases de données vectorielles]] décrit ce qu'un moteur fait — embeddings, ANN, filtrage, métadonnées ; [[Index ANN — internes]] décrit ce qui tourne dessous — HNSW, IVF, PQ et leurs réglages. Lire la première pour choisir une brique, la seconde pour régler celle qu'on a choisie.
 
 ## Choisir
 
@@ -24,6 +25,10 @@ domaines: [data-eng, ai-eng]
 - Besoin de l'index seul, à embarquer dans une application → [[Faiss]] ou [[hnswlib]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Bases de données vectorielles]] — domaines : data-eng, ai-eng
+- [[Index ANN — internes]] — domaines : data-eng, ai-eng
+
 ### Briques
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.

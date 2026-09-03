@@ -29,5 +29,5 @@ Axe métier **MLOps** (`mlops`) — explorer par sous-domaine, puis descendre vi
 - [[LLM (notions)]] — 2 page(s)
 - [[Séries temporelles]] — 2 page(s)
 - [[Data & pipelines]] — 1 page(s)
-- [[Données (notions)]] — 1 page(s)
+- [[Outils de développement]] — 1 page(s)
 <!-- AUTO:END -->

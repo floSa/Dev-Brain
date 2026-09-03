@@ -24,9 +24,8 @@ pitch: Amener la donnée d'où elle naît jusqu'où elle sert, de façon répét
 <!-- AUTO:START -->
 Axe métier **Data Engineering** (`data-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
+- [[Bases de données]] — 11 page(s)
 - [[Data & pipelines]] — 8 page(s)
-- [[Bases de données]] — 7 page(s)
-- [[Données (notions)]] — 4 page(s)
 - [[Outils de développement]] — 2 page(s)
 - [[Machine learning (notions)]] — 2 page(s)
 - [[Web & API]] — 1 page(s)
