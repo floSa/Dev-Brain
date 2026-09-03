@@ -147,8 +147,9 @@ ROLE_LABEL = {
     "notion": "Notions — ce qu'il faut comprendre",
     "pattern": "Patterns — architectures éprouvées",
     "rule": "Rules — règles transverses",
+    "comparatif": "Comparatifs — ce qui départage plusieurs briques",
 }
-ROLE_ORDER = ["brique", "notion", "pattern", "rule"]
+ROLE_ORDER = ["brique", "notion", "comparatif", "pattern", "rule"]
 
 
 def descriptor(p: dict) -> str:

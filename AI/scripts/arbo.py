@@ -187,6 +187,17 @@ SUB_LABEL = {
 # de floSa) ; leur chemin ne se dérive pas, il se lit sur le rôle.
 ROLES_SANS_CATEGORIE = {"pattern", "rule"}
 
+# Rôles qui portent bien une `categorie:` — donc un chemin à vérifier — mais qui ne
+# PÈSENT PAS sur le seuil de promotion. Un seul, né au lot 5 : `comparatif`.
+#
+# C'est la reconduction exacte de la règle déjà écrite en tête de SEUIL pour les vues
+# `.base` : « un comparatif n'est pas un membre du comparatif ». Le lot 5 ne fait que
+# donner un `.md` à ce qui était un `.base` ; laisser cette page compter ferait
+# franchir le seuil à un sous-domaine par le seul fait qu'on a converti un fichier,
+# et l'arbre changerait de forme sans qu'aucune brique ni aucune notion soit arrivée.
+# Sa concordance chemin ↔ catégorie, elle, reste vérifiée comme pour toute page.
+ROLES_HORS_SEUIL = {"comparatif"}
+
 # Dossiers de la racine qui ne portent pas de pages du brain.
 NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
              "Projects", "docs", "MOC"}

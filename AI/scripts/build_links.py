@@ -108,11 +108,16 @@ def main() -> int:
         byname[p["stem"].lower()] = p
 
     # cibles résolvables : toutes les pages .md + vues .base du vault (hors .git)
+    # Deux clés par fichier, comme `check_brain.resolvable_names` : le stem pour la
+    # convention nue, le nom complet pour l'embed d'une vue `.base` par une page de
+    # comparatif (lot 5). Sans la seconde, ces liens comptaient comme NON RÉSOLUS,
+    # et la clôture exige 0.
     resolvable = set()
     for ext in ("*.md", "*.base"):
         for f in VAULT.rglob(ext):
             if not hors_vault(f, VAULT):
                 resolvable.add(f.stem.lower())
+                resolvable.add(f.name.lower())
 
     backlinks = {p["nom"]: set() for p in pages}
     unresolved = []

@@ -12,7 +12,9 @@ Contrôle trois choses, et rien d'autre :
      `categorie:` désigne (dérivation de AI/scripts/arbo.py). Le cas contraire est
      signalé avec le déplacement à faire.
   2. **Seuil de promotion** — un sous-domaine à 5 pages ou plus a son dossier ; un
-     sous-domaine en dessous n'en a pas. Le seuil décide, pas l'humeur.
+     sous-domaine en dessous n'en a pas. Le seuil décide, pas l'humeur. Les pages
+     `arbo.ROLES_HORS_SEUIL` (les `role: comparatif` du lot 5) sont vérifiées comme
+     les autres mais ne comptent pas : un comparatif n'est pas un membre du comparatif.
   3. **Hub par dossier** — tout dossier de l'arbre porte une page `role: hub` à son nom.
   4. **Frontmatter lisible** — une page dont le frontmatter ne parse pas est une ERREUR,
      jamais une absence (remontée 44 du lot 4). Elle était silencieusement sautée : ni
@@ -105,19 +107,21 @@ def main() -> int:
             if fm.get("role") in arbo.ROLES_SANS_CATEGORIE:
                 hors_arbre += 1
                 continue
-            migrees.append((rel, str(fm.get("categorie") or "")))
+            migrees.append((rel, str(fm.get("categorie") or ""),
+                            str(fm.get("role") or "")))
 
     ecarts: list[str] = list(illisibles)
 
     # (2) seuil de promotion — calculé sur la population réelle des pages migrées
     try:
-        promus = arbo.promotions([cat for _, cat in migrees])
+        promus = arbo.promotions([cat for _, cat, role in migrees
+                                  if role not in arbo.ROLES_HORS_SEUIL])
     except KeyError as e:
         print(f"[FAIL] {e}")
         return 1
 
     # (1) concordance chemin / catégorie
-    for rel, cat in migrees:
+    for rel, cat, _role in migrees:
         attendu = arbo.dossier_attendu(cat, promus)
         if attendu is None:
             ecarts.append(f"{rel.as_posix()} : `categorie: {cat or '(vide)'}` hors "
@@ -128,7 +132,7 @@ def main() -> int:
                           f"`{attendu}/` — git mv à faire")
 
     # (3) un hub par dossier de l'arbre
-    dossiers = {rel.parent.as_posix() for rel, _ in migrees}
+    dossiers = {rel.parent.as_posix() for rel, _, _ in migrees}
     for d in sorted(dossiers):
         # tout niveau du chemin doit porter son hub, pas seulement la feuille
         parts = d.split("/")
@@ -138,7 +142,7 @@ def main() -> int:
                 ecarts.append(f"{niveau}/ : aucune page `role: hub` à son nom")
 
     par_dom: dict[str, int] = collections.Counter(
-        rel.parts[0] for rel, _ in migrees)
+        rel.parts[0] for rel, _, _ in migrees)
     reste = (f"{legacy} page(s) encore sous {sorted(arbo.LEGACY)}, "
              if arbo.LEGACY else "")
     print(f"check_arbo : {len(migrees)} page(s) migrée(s) dans "

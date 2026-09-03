@@ -96,6 +96,7 @@ REQUIRED = {
     "pattern": ["role", "contexte", "services_cles"],
     "rule": ["role", "domaine", "applicable", "strictness"],
     "hub": ["role", "nom", "pitch"],
+    "comparatif": ["role", "nom", "categorie"],
 }
 # Champs EXACTS autorisés par gabarit (spec v3 §5) — tout champ hors liste = non conforme.
 # `role: brique` fusionne les anciens gabarits `service` et `outil` : l'audit v2 avait
@@ -117,10 +118,18 @@ RULE_ALLOWED = {"role", "tags", "domaine", "applicable", "strictness"}
 # son chemin. Le hub de domaine hérite du frontmatter de la notion chapeau qu'il
 # absorbe (`alias`, `domaines`, `tags`), d'où ces trois champs facultatifs.
 HUB_ALLOWED = {"role", "nom", "alias", "pitch", "domaines", "tags"}
-# `role: comparatif` naît au lot 5, quand les `.base` deviennent des pages. Le
-# déclarer avant qu'il existe inventerait un gabarit.
+# `role: comparatif` — né au lot 5 (spec v3 §8), quand les `.base` deviennent des
+# pages. Un `.base` est un fichier YAML de requête : ni frontmatter, ni corps, donc
+# ni couleur dans le graphe ni lien sortant — 44 comparatifs sur 47 étaient cités,
+# aucun ne citait. La page porte le rôle, la couleur et les liens ; le `.base` reste
+# à côté comme moteur de tableau, embarqué par un lien d'embed avec extension.
+# Quatre champs, ceux du gabarit de `AI/migration/lot-5-comparatifs.md`, et pas un de
+# plus : un comparatif ne se déploie pas (ni `famille:`, ni `licence_type:`) et son
+# `pitch:` est la ligne « On tranche sur : … » du corps, qui n'a pas à être indexée.
+COMPARATIF_ALLOWED = {"role", "nom", "categorie", "tags"}
 ALLOWED = {"brique": BRIQUE_ALLOWED, "notion": NOTION_ALLOWED,
-           "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED, "hub": HUB_ALLOWED}
+           "pattern": PATTERN_ALLOWED, "rule": RULE_ALLOWED, "hub": HUB_ALLOWED,
+           "comparatif": COMPARATIF_ALLOWED}
 # Valeurs autorisées (listes fermées) pour les champs de brique à enum.
 # `hosted` est une LISTE depuis la v3 : `both` ne disait rien qu'une énumération ne
 # dise mieux, et une brique peut être self-hébergeable ET managée sans que ce soit
@@ -263,13 +272,22 @@ def load_categories() -> set[str]:
 
 
 def resolvable_names() -> set[str]:
-    """Tous les noms de fichiers (md + base) du vault, minuscules, pour résoudre [[liens]]."""
+    """Noms de fichiers (md + base) du vault, minuscules, pour résoudre [[liens]].
+
+    Deux clés par fichier : le stem (`[[Postgres]]`, la convention nue du vault) ET
+    le nom complet avec extension. La seconde naît au lot 5 : une page de comparatif
+    embarque sa vue par un lien portant `.base`, seule syntaxe qui vise un fichier
+    non-`.md`, et le stem seul faisait déclarer ce lien MORT. Porter les deux clés
+    garde le test exact — un lien vers `Foo.base` ne résout que si `Foo.base` existe,
+    jamais par repli sur un `Foo.md` de même stem.
+    """
     names: set[str] = set()
     for ext in ("*.md", "*.base"):
         for p in VAULT.rglob(ext):
             if hors_vault(p, VAULT):
                 continue
             names.add(p.stem.lower())
+            names.add(p.name.lower())
     return names
 
 
@@ -629,7 +647,11 @@ def main() -> int:
         for tgt in LINK_RE.findall(body):
             if not link_target_ok(tgt, names):
                 hard.append(f"{path}: lien mort [[{tgt}]]")
-            cited_bases.add(tgt.strip().split("/")[-1].lower())
+            cible = tgt.strip().split("/")[-1].lower()
+            cited_bases.add(cible)
+            # R8c compare des stems : un embed portant `.base` cite bien ce comparatif.
+            if cible.endswith(".base"):
+                cited_bases.add(cible[:-5])
         for key, tgt in fm_links(fm):
             if not link_target_ok(tgt, names):
                 hard.append(f"R2 — {path}: `{key}:` lien mort [[{tgt}]]")
