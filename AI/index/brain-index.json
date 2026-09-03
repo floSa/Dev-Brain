@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 739,
+  "count": 742,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -397,6 +397,7 @@
       "Augmentation d'images",
       "CNN",
       "Classification d'images",
+      "Comparatif - Détection & segmentation",
       "Detectron2",
       "Détection d'objets",
       "Estimation de pose",
@@ -886,6 +887,7 @@
       "Aim",
       "ClearML",
       "Comet",
+      "Comparatif - Suivi d'expériences ML",
       "MLflow",
       "Model registry & versioning",
       "Neptune",
@@ -993,6 +995,7 @@
     "forecasting": [
       "ARIMA SARIMA",
       "Chronos",
+      "Comparatif - Forecasting",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
@@ -1730,6 +1733,7 @@
     "model-registry": [
       "ClearML",
       "Comet",
+      "Comparatif - Suivi d'expériences ML",
       "MLflow",
       "Model registry & versioning",
       "Neptune",
@@ -1893,6 +1897,7 @@
       "papermill"
     ],
     "object-detection": [
+      "Comparatif - Détection & segmentation",
       "Detectron2",
       "Détection d'objets",
       "Métriques vision",
@@ -2458,6 +2463,7 @@
       "Optimisation"
     ],
     "segmentation": [
+      "Comparatif - Détection & segmentation",
       "Detectron2",
       "Métriques vision",
       "Segment Anything (SAM)",
@@ -2726,6 +2732,7 @@
       "CausalImpact",
       "Chronos",
       "Comparatif - Bases temporelles",
+      "Comparatif - Forecasting",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
@@ -15735,6 +15742,24 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Suivi d'expériences/Comparatif - Suivi d'expériences ML.md",
+      "nom": "Comparatif - Suivi d'expériences ML",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/tracking",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "experiment-tracking",
+        "model-registry"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Suivi d'expériences/MLflow.md",
       "nom": "MLflow",
       "alias": [
@@ -15978,6 +16003,24 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/Comparatif - Forecasting.md",
+      "nom": "Comparatif - Forecasting",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/series-temporelles",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "forecasting",
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Séries temporelles/Exponential smoothing.md",
@@ -17186,6 +17229,25 @@
         "computer-vision",
         "cnn",
         "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Vision/Comparatif - Détection & segmentation.md",
+      "nom": "Comparatif - Détection & segmentation",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/vision",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "object-detection",
+        "segmentation",
+        "computer-vision"
       ],
       "alternatives": null,
       "complements": null,

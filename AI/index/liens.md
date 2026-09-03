@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 739 pages actives.
+> 742 pages actives.
 
 ## Par page
 
@@ -43,7 +43,7 @@
 ### Aim  ·  brique
 - tags : `experiment-tracking`
 - liens sortants : [[ClearML]], [[Comet]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[PyTorch]], [[Weights & Biases]]
-- liens entrants : [[ClearML]], [[Comet]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
+- liens entrants : [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
 
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
@@ -53,7 +53,7 @@
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Segmentation]], [[torchvision]]
-- liens entrants : [[Augmentation d'images]], [[Kornia]], [[OpenCV]], [[Vision]], [[supervision]], [[timm]], [[torchvision]]
+- liens entrants : [[Augmentation d'images]], [[Comparatif - Détection & segmentation]], [[Kornia]], [[OpenCV]], [[Vision]], [[supervision]], [[timm]], [[torchvision]]
 
 ### Alembic  ·  brique
 - tags : `migration`, `relational`
@@ -173,7 +173,7 @@
 ### Chronos  ·  brique
 - tags : `forecasting`, `timeseries`, `foundation-model`, `transformers`, `deep-learning`
 - liens sortants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[HuggingFace]], [[Prophet]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[statsforecast]]
-- liens entrants : [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[darts]]
+- liens entrants : [[Comparatif - Forecasting]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[darts]]
 
 ### Claude Video  ·  brique
 - tags : `multimodal`, `speech`, `context-engineering`
@@ -183,7 +183,7 @@
 ### ClearML  ·  brique
 - tags : `experiment-tracking`, `model-registry`, `orchestration`
 - liens sortants : [[Aim]], [[Comet]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[Weights & Biases]]
-- liens entrants : [[Aim]], [[Comet]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
+- liens entrants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### ClickHouse  ·  brique
 - tags : `columnar`, `olap`, `distributed`
@@ -213,7 +213,7 @@
 ### Comet  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[MLflow]], [[Neptune]], [[Weights & Biases]]
-- liens entrants : [[Aim]], [[ClearML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### connectorx  ·  brique
 - tags : `dataframe`, `columnar`
@@ -258,7 +258,7 @@
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
 - liens sortants : [[CatBoost]], [[Chronos]], [[Forecasting framing]], [[LightGBM]], [[Prophet]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
@@ -308,7 +308,7 @@
 ### Detectron2  ·  brique
 - tags : `object-detection`, `segmentation`, `computer-vision`, `deep-learning`, `gpu`
 - liens sortants : [[Détection d'objets]], [[HuggingFace]], [[PyTorch]], [[Segmentation]], [[Ultralytics YOLO]], [[segment-anything]], [[supervision]], [[torchvision]]
-- liens entrants : [[Détection d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]], [[supervision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]], [[supervision]]
 
 ### Dify  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
@@ -823,7 +823,7 @@
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Déploiement de modèles]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
 
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
@@ -878,12 +878,12 @@
 ### Neptune  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Weights & Biases]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### neuralforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`, `gpu`
 - liens sortants : [[Prophet]], [[PyTorch]], [[darts]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[Time series feature engineering]], [[darts]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[Time series feature engineering]], [[darts]], [[pmdarima]], [[statsforecast]]
 
 ### NLTK  ·  brique
 - tags : `nlp`, `tokenization`, `text-classification`
@@ -943,7 +943,7 @@
 ### OpenCV  ·  brique
 - tags : `computer-vision`, `object-detection`, `object-tracking`
 - liens sortants : [[Augmentation d'images]], [[Kornia]], [[PyTorch]], [[Suivi d'objets]], [[Vision par ordinateur]], [[albumentations]], [[timm]], [[torchvision]]
-- liens entrants : [[Kornia]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[supervision]], [[torchvision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Kornia]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[supervision]], [[torchvision]]
 
 ### OpenDataLoader PDF  ·  brique
 - tags : `pdf`, `document-parsing`, `layout-analysis`, `table-extraction`, `markdown-conversion`, `rag`, `accessibility`
@@ -1078,7 +1078,7 @@
 ### pmdarima  ·  brique
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Séries temporelles]], [[darts]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Séries temporelles]], [[darts]], [[statsforecast]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -1123,7 +1123,7 @@
 ### Prophet  ·  brique
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Chronos]], [[Forecasting framing]], [[darts]], [[neuralforecast]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Forecasting framing]], [[STUMPY]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[statsforecast]]
+- liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[STUMPY]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[statsforecast]]
 
 ### psycopg2  ·  brique
 - tags : `postgres`, `relational`, `db-driver`
@@ -1338,7 +1338,7 @@
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
 - liens sortants : [[Detectron2]], [[Détection d'objets]], [[HuggingFace]], [[Modèles de fondation vision]], [[PyTorch]], [[Segment Anything (SAM)]], [[Segmentation]], [[Ultralytics YOLO]], [[supervision]], [[torchvision]]
-- liens entrants : [[Detectron2]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[supervision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[supervision]]
 
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
@@ -1448,7 +1448,7 @@
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
 - liens sortants : [[ARIMA SARIMA]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]]
 
 ### statsmodels  ·  brique
 - tags : `statistical-inference`, `hypothesis-testing`, `parametric-test`, `p-value`
@@ -1473,7 +1473,7 @@
 ### supervision  ·  brique
 - tags : `object-detection`, `object-tracking`, `computer-vision`
 - liens sortants : [[Detectron2]], [[Détection d'objets]], [[HuggingFace]], [[OpenCV]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]]
-- liens entrants : [[Detectron2]], [[Détection d'objets]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
 
 ### Superwhisper  ·  brique
 - tags : `speech`, `multimodal`, `local-llm`
@@ -1503,7 +1503,7 @@
 ### TensorBoard  ·  brique
 - tags : `experiment-tracking`, `deep-learning`, `dataviz`
 - liens sortants : [[Aim]], [[HuggingFace]], [[MLflow]], [[Optuna]], [[PyTorch]], [[TensorFlow]], [[Weights & Biases]]
-- liens entrants : [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
+- liens entrants : [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### TensorFlow  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
@@ -1598,7 +1598,7 @@
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
 - liens sortants : [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[segment-anything]], [[supervision]], [[torchvision]]
-- liens entrants : [[Detectron2]], [[Détection d'objets]], [[Vision]], [[segment-anything]], [[supervision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Vision]], [[segment-anything]], [[supervision]]
 
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -1653,7 +1653,7 @@
 ### Weights & Biases  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[TensorBoard]], [[TensorFlow]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[evaluate]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[evaluate]]
 
 ### Windmill  ·  brique
 - tags : `low-code`, `orchestration`
@@ -1735,6 +1735,11 @@
 - liens sortants : [[Comparatif - Clients de bases de données.base]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 - liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 
+### Comparatif - Détection & segmentation  ·  comparatif
+- tags : `object-detection`, `segmentation`, `computer-vision`
+- liens sortants : [[Comparatif - Détection & segmentation.base]], [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[albumentations]], [[segment-anything]], [[supervision]]
+- liens entrants : [[Vision]]
+
 ### Comparatif - Détection d'anomalies  ·  comparatif
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Comparatif - Détection d'anomalies.base]], [[PyOD]], [[STUMPY]]
@@ -1744,6 +1749,11 @@
 - tags : `explainability`, `transformers`, `model-evaluation`
 - liens sortants : [[Captum]], [[Comparatif - Explicabilité.base]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
 - liens entrants : [[Captum]], [[Interprétabilité]], [[LIME]], [[SHAP]], [[interpreto]]
+
+### Comparatif - Forecasting  ·  comparatif
+- tags : `forecasting`, `timeseries`
+- liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[Séries temporelles]]
 
 ### Comparatif - Frameworks CLI  ·  comparatif
 - tags : `cli`, `terminal-ui`
@@ -1799,6 +1809,11 @@
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles.base]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+
+### Comparatif - Suivi d'expériences ML  ·  comparatif
+- tags : `experiment-tracking`, `model-registry`
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
+- liens entrants : [[Suivi d'expériences]]
 
 ### Administration  ·  hub
 - tags : —
@@ -3738,7 +3753,7 @@
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, DuckDB, LanceDB, Parquet, Polars, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Optimisation, Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
-- `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Detectron2, Détection d'objets, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
+- `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, River  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
@@ -3791,7 +3806,7 @@
 - `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Systèmes de recommandation, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy, Théorie de l'information
-- `experiment-tracking` : Aim, ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases  — pas de page concept dédiée
+- `experiment-tracking` : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases  — pas de page concept dédiée
 - `experimentation` : A/B testing, CUPED, Multi-armed bandits, Sequential testing  — pas de page concept dédiée
 - `explainability` : Attribution par gradient, Captum, Comparatif - Explicabilité, Explicabilité des modèles, Interprétabilité, Interprétabilité mécaniste, LIME, Machine Learning, Probing, SAELens, SHAP, Sparse autoencoders, Superposition, TransformerLens, interpreto, nnsight
 - `exploration-exploitation` : Apprentissage par renforcement, Exploration vs exploitation
@@ -3801,7 +3816,7 @@
 - `file-format` : Avro, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `file-transfer` : Réseau, croc  — pas de page concept dédiée
 - `fine-tuning` : Axolotl, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
-- `forecasting` : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
+- `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
 - `fourier` : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
@@ -3876,7 +3891,7 @@
 - `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles  — pas de page concept dédiée
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Data drift, Evidently, Machine Learning, Monitoring de modèle en production
-- `model-registry` : ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
+- `model-registry` : ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
 - `model-serving` : BentoML, Comparatif - Serving de modèles, Déploiement de modèles, KServe, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, vLLM  — pas de page concept dédiée
 - `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `multi-agent` : Agents, Agno, AutoGen, BMAD, CrewAI, DB-GPT, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, a2a-protocol, freebuff, swarm-forge  — pas de page concept dédiée
@@ -3895,7 +3910,7 @@
 - `nosql` : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
-- `object-detection` : Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
+- `object-detection` : Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Beszel, Grafana, Loki, Observabilité, Observabilité des LLM  — pas de page concept dédiée
@@ -3964,7 +3979,7 @@
 - `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité  — pas de page concept dédiée
 - `search` : BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
-- `segmentation` : Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
+- `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
 - `self-hosted` : Automatisation no-code, Beszel, Observabilité, OpenMAIC, Stirling PDF, Stockage, Web-Check, croc  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
@@ -3995,7 +4010,7 @@
 - `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
-- `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
+- `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `token-optimization` : Headroom  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, Modèles de langage, NLP, NLTK, Tokenization, sentencepiece, spaCy
 - `tool-use` : Agent patterns, Agent skills, Agents, Agno, AutoGen, CrewAI, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, Maka, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PraisonAI, PydanticAI, Semantic Kernel, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, needle, pi, smolagents, tool-use
@@ -4079,13 +4094,13 @@
 - `eigenvalue` (porté par : Algèbre linéaire, Eigendecomposition, SVD)
 - `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
-- `experiment-tracking` (porté par : Aim, ClearML, Comet, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
+- `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
 - `factor-analysis` (porté par : Analyse factorielle, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence)
 - `file-format` (porté par : Avro, Parquet, Partitionnement & layout de données)
 - `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
-- `forecasting` (porté par : ARIMA SARIMA, Chronos, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
+- `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
@@ -4200,7 +4215,7 @@
 - `terminal-ui` (porté par : Comparatif - Frameworks CLI, Rich, llmfit, pi)
 - `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
-- `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
+- `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Helicone, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize, TruLens)
 - `traffic-analysis` (porté par : Réseau, Sniffnet)
