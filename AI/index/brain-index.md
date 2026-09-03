@@ -534,7 +534,7 @@
 
 ## Notions — ce qu'il faut comprendre
 
-### concept/ml
+### data/eda
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
 
 ### data/fiabilite

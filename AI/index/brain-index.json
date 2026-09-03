@@ -5062,6 +5062,34 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/EDA automatisée & profiling.md",
+      "nom": "EDA automatisée & profiling",
+      "alias": [
+        "EDA",
+        "analyse exploratoire",
+        "exploratory data analysis",
+        "data profiling",
+        "profiling de données"
+      ],
+      "role": "notion",
+      "categorie": "data/eda",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "eda",
+        "feature-engineering",
+        "missing-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/ELT vs ETL & idempotence.md",
       "nom": "ELT vs ETL & idempotence",
       "alias": [
@@ -22100,34 +22128,6 @@
       "tags": [],
       "alternatives": [],
       "complements": [],
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/EDA automatisée & profiling.md",
-      "nom": "EDA automatisée & profiling",
-      "alias": [
-        "EDA",
-        "analyse exploratoire",
-        "exploratory data analysis",
-        "data profiling",
-        "profiling de données"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "eda",
-        "feature-engineering",
-        "missing-data"
-      ],
-      "alternatives": null,
-      "complements": null,
       "maturite": null
     }
   ]

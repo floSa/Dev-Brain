@@ -46,6 +46,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 - [[Architecture médaillon]] — domaines : data-eng
 - [[Change Data Capture (CDC)]] — domaines : data-eng
 - [[Contrats de données & qualité]] — domaines : data-eng
+- [[EDA automatisée & profiling]] — domaines : data-sci, data-eng
 - [[ELT vs ETL & idempotence]] — domaines : data-eng
 - [[Partitionnement & layout de données]] — domaines : data-eng
 - [[Stream processing]] — domaines : data-eng

@@ -2,7 +2,7 @@
 role: notion
 nom: EDA automatisée & profiling
 alias: [EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données]
-categorie: concept/ml
+categorie: data/eda
 domaines: [data-sci, data-eng]
 tags: [eda, feature-engineering, missing-data]
 ---
