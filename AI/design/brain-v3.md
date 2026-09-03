@@ -320,18 +320,26 @@ devient donc une page `.md` qui **embarque** la vue :
 ```
 
 Le `.base` reste, comme moteur de tableau, rangé à côté. La page porte le `role:`, la couleur,
-les liens sortants et donc les backlinks. Neuf comparatifs ne filtrent pas sur `categorie:` :
-leur dossier d'accueil est à poser à la main (listés dans l'arborescence).
+les liens sortants et donc les backlinks. ~~Neuf comparatifs ne filtrent pas sur `categorie:` :
+leur dossier d'accueil est à poser à la main~~ — **les neuf sont rangés depuis la clôture du
+lot 3**, cf. la fin de `v3-arborescence.md`. Leur dossier n'est plus à poser : la page porte
+une `categorie:`, et `check_arbo` en dérive le chemin comme pour toute autre page. C'est ce
+qui rend la règle de majorité de `taxonomie.md` nécessaire, et le repli « au niveau du
+domaine » parfois impraticable (lot 5, remontée 12).
 
 **Syntaxe vérifiée** le 2026-09-04 : `![[X.base]]` embarque bien une vue dans une page.
 
-**Variante à tester, 30 secondes dans Obsidian** : la requête peut aussi s'écrire directement
-en bloc de code dans la page, ce qui supprimerait les 47 fichiers `.base` et ne laisserait
-qu'un fichier par comparatif. L'identifiant exact du bloc n'a pas pu être confirmé en ligne.
-Limitation connue : un bloc de code ne peut pas être ré-embarqué depuis une autre page — sans
-conséquence ici, les hubs **lient** les comparatifs, ils ne les embarquent pas. Si le test
-passe, la variante est strictement meilleure : un fichier au lieu de deux, et rien à
-synchroniser entre les deux.
+~~**Variante à tester, 30 secondes dans Obsidian**~~ — **close le 2026-09-05, à deux
+fichiers. Ne pas rouvrir.** La variante consistait à écrire la requête en bloc de code dans
+la page, ce qui aurait supprimé les 47 `.base`. Le test annoncé au lot 0 n'a jamais été
+exécuté, et l'identifiant exact du bloc n'a pas pu être confirmé en ligne : c'est la version
+sûre — deux fichiers, la page embarquant la vue par `![[X.base]]` — qui a été retenue et
+appliquée. Motif et trace du raisonnement : `AI/migration/lot-5-comparatifs.md`, *Décision
+préalable*.
+
+> Ce paragraphe restait rédigé au futur alors que la décision était prise : c'est le défaut
+> décrit à la remontée 9 du lot 5 — une prose qui survit à ce qui l'invalide, et que rien ne
+> signale. Il est corrigé ici parce que ce document est le premier que lit une session neuve.
 
 ---
 
