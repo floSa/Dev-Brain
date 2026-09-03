@@ -2,7 +2,7 @@
 role: notion
 nom: AdaBoost
 alias: [Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, ensemble, boosting, tree-based, classification]
 ---

@@ -1953,7 +1953,7 @@
 ### Socle  ·  hub
 - tags : `supervised`, `classification`, `regression`, `linear-model`, `ml-pipeline`
 - liens sortants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]]
-- liens entrants : [[Machine Learning]]
+- liens entrants : [[Machine Learning]], [[Tabulaire]]
 
 ### Sortie typée  ·  hub
 - tags : `structured-output`, `decoding`, `data-validation`
@@ -1992,7 +1992,7 @@
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
-- liens sortants : [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]]
+- liens sortants : [[AdaBoost]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Comparatif - Boosting]], [[Data & pipelines]], [[Data leakage]], [[DataFrames]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[LightGBM]], [[Mise à l'échelle]], [[Mécanismes de données manquantes]], [[Random Forest]], [[SHAP]], [[Scikit-Learn]], [[Socle]], [[Sélection de variables]], [[XGBoost]], [[category_encoders]], [[imbalanced-learn]]
 - liens entrants : [[Data Science]], [[Interprétabilité]], [[Machine Learning]], [[Serving]], [[Socle]], [[Séries temporelles]]
 
 ### Tests & estimation  ·  hub
@@ -2068,7 +2068,7 @@
 ### AdaBoost  ·  notion
 - tags : `supervised`, `ensemble`, `boosting`, `tree-based`, `classification`
 - liens sortants : [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Compromis biais-variance]], [[Ensembling]], [[Gradient Boosting (GBDT)]], [[Random Forest]], [[Scikit-Learn]], [[Types de données et choix de modèle]]
-- liens entrants : [[Boosting]], [[Classification]], [[Ensembling]], [[Gradient Boosting (GBDT)]], [[Machine Learning]]
+- liens entrants : [[Boosting]], [[Classification]], [[Ensembling]], [[Gradient Boosting (GBDT)]], [[Machine Learning]], [[Tabulaire]]
 
 ### Adam optimizer  ·  notion
 - tags : `optimization`, `gradient-descent`, `deep-learning`, `learning-rate`
@@ -2488,7 +2488,7 @@
 ### Extra Trees  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `classification`, `regression`
 - liens sortants : [[Arbres de décision]], [[Bagging]], [[Compromis biais-variance]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[Isolation Forest]], [[Random Forest]], [[Scikit-Learn]], [[Types de données et choix de modèle]]
-- liens entrants : [[Bagging]], [[Classification]], [[Ensembling]], [[Isolation Forest]], [[Machine Learning]]
+- liens entrants : [[Bagging]], [[Classification]], [[Ensembling]], [[Isolation Forest]], [[Machine Learning]], [[Tabulaire]]
 
 ### FAMD  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -2648,7 +2648,7 @@
 ### Imputation des valeurs manquantes  ·  notion
 - tags : `feature-engineering`, `missing-data`
 - liens sortants : [[Encodage des variables catégorielles]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Mécanismes de données manquantes]], [[Scikit-Learn]]
-- liens entrants : [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ingénierie des caractéristiques]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Mécanismes de données manquantes]], [[Types de données et choix de modèle]], [[k-NN]], [[missingno]]
+- liens entrants : [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ingénierie des caractéristiques]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Mécanismes de données manquantes]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]], [[missingno]]
 
 ### Index ANN — internes  ·  notion
 - tags : `ann`, `vector-db`, `embeddings`
@@ -2933,7 +2933,7 @@
 ### Mécanismes de données manquantes  ·  notion
 - tags : `missing-data`, `feature-engineering`
 - liens sortants : [[Data leakage]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[missingno]]
-- liens entrants : [[EDA automatisée & profiling]], [[Imputation des valeurs manquantes]], [[Machine Learning]], [[missingno]]
+- liens entrants : [[EDA automatisée & profiling]], [[Imputation des valeurs manquantes]], [[Machine Learning]], [[Tabulaire]], [[missingno]]
 
 ### Métriques vision  ·  notion
 - tags : `model-evaluation`, `object-detection`, `segmentation`, `computer-vision`

@@ -2,7 +2,7 @@
 role: notion
 nom: Mécanismes de données manquantes
 alias: [MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci]
 tags: [missing-data, feature-engineering]
 ---

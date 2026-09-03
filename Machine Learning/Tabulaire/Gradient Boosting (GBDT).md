@@ -2,7 +2,7 @@
 role: notion
 nom: Gradient Boosting (GBDT)
 alias: [GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, tree-based, ensemble, boosting]
 ---

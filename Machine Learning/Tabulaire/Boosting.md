@@ -2,7 +2,7 @@
 role: notion
 nom: Boosting
 alias: [Boostage]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, ensemble, boosting]
 ---

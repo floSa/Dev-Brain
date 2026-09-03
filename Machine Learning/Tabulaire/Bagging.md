@@ -2,7 +2,7 @@
 role: notion
 nom: Bagging
 alias: [Bootstrap aggregating, Ensachage]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, ensemble, bagging]
 ---

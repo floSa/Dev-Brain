@@ -535,11 +535,7 @@
 ## Notions — ce qu'il faut comprendre
 
 ### concept/ml
-- **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
 - **Apprentissage non supervisé** — domaines : data-sci · alias : Unsupervised learning, Apprentissage non supervise, Méthodes non supervisées
-- **Arbres de décision** — domaines : data-sci, ml-eng · alias : Decision tree, Arbre de décision, CART
-- **Bagging** — domaines : data-sci, ml-eng · alias : Bootstrap aggregating, Ensachage
-- **Boosting** — domaines : data-sci, ml-eng · alias : Boostage
 - **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
 - **Classification hiérarchique (CAH)** — domaines : data-sci · alias : CAH, Classification ascendante hiérarchique, Hierarchical clustering, HAC, Agglomerative clustering, Dendrogramme
 - **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier
@@ -555,33 +551,22 @@
 - **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
 - **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
-- **Encodage des variables catégorielles** — domaines : data-sci · alias : Encodage catégoriel, Categorical encoding, One-Hot encoding, Target encoding, Weight of Evidence, WoE
-- **Ensembling** — domaines : data-sci, ml-eng · alias : méthodes d'ensemble, ensemble learning, ensemble de modèles, agrégation de modèles
 - **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
-- **Extra Trees** — domaines : data-sci, ml-eng · alias : ExtraTrees, Extremely Randomized Trees, Arbres extrêmement aléatoires, ExtraTreesClassifier, Extra-Trees
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
 - **Gaussian Mixture Models (GMM)** — domaines : data-sci · alias : GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens
-- **Gradient Boosting (GBDT)** — domaines : data-sci, ml-eng · alias : GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM
 - **ICA** — domaines : data-sci · alias : Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation
-- **Imbalanced classification** — domaines : data-sci, ml-eng · alias : classes déséquilibrées, déséquilibre de classes, class imbalance
-- **Imputation des valeurs manquantes** — domaines : data-sci · alias : Imputation, Missing value imputation, Gestion des valeurs manquantes, MICE, KNN imputer
-- **Ingénierie des caractéristiques** — domaines : data-sci, ml-eng · alias : Feature engineering, Ingénierie des variables, Feature preprocessing
 - **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
 - **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
 - **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
 - **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
-- **Mise à l'échelle** — domaines : data-sci · alias : Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler
 - **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
-- **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
 - **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
-- **Random Forest** — domaines : data-sci, ml-eng · alias : RF, Forêts aléatoires, Random forests, Forêt aléatoire
 - **Ranking metrics** — domaines : data-sci, ml-eng · alias : Métriques de ranking, métriques d'ordonnancement, NDCG, DCG, MAP, MRR, Precision@k, Recall@k, Hit Rate, learning-to-rank, métriques de recherche d'information
 - **Regression metrics** — domaines : data-sci, ml-eng · alias : Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile
 - **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
-- **Sélection de variables** — domaines : data-sci, ml-eng · alias : Feature selection, Sélection de caractéristiques, Sélection d'attributs, RFE, SelectKBest
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
 - **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
@@ -831,6 +816,23 @@
 - **Systèmes de recommandation** — domaines : data-sci, ml-eng · alias : recommender systems, recsys, filtrage collaboratif, collaborative filtering, factorisation matricielle, matrix factorization, two-tower
 - **Types de données et choix de modèle** — domaines : data-sci, ml-eng · alias : Choix de modèle, Model selection, Quel modèle choisir, Aiguillage modèle, Cheat sheet modèles, Types de variables
 
+### ml/tabulaire
+- **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
+- **Arbres de décision** — domaines : data-sci, ml-eng · alias : Decision tree, Arbre de décision, CART
+- **Bagging** — domaines : data-sci, ml-eng · alias : Bootstrap aggregating, Ensachage
+- **Boosting** — domaines : data-sci, ml-eng · alias : Boostage
+- **Encodage des variables catégorielles** — domaines : data-sci · alias : Encodage catégoriel, Categorical encoding, One-Hot encoding, Target encoding, Weight of Evidence, WoE
+- **Ensembling** — domaines : data-sci, ml-eng · alias : méthodes d'ensemble, ensemble learning, ensemble de modèles, agrégation de modèles
+- **Extra Trees** — domaines : data-sci, ml-eng · alias : ExtraTrees, Extremely Randomized Trees, Arbres extrêmement aléatoires, ExtraTreesClassifier, Extra-Trees
+- **Gradient Boosting (GBDT)** — domaines : data-sci, ml-eng · alias : GBDT, Gradient boosting, Gradient boosted trees, Boosting de gradient, GBM
+- **Imbalanced classification** — domaines : data-sci, ml-eng · alias : classes déséquilibrées, déséquilibre de classes, class imbalance
+- **Imputation des valeurs manquantes** — domaines : data-sci · alias : Imputation, Missing value imputation, Gestion des valeurs manquantes, MICE, KNN imputer
+- **Ingénierie des caractéristiques** — domaines : data-sci, ml-eng · alias : Feature engineering, Ingénierie des variables, Feature preprocessing
+- **Mise à l'échelle** — domaines : data-sci · alias : Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler
+- **Mécanismes de données manquantes** — domaines : data-sci · alias : MCAR, MAR, MNAR, missingness, mécanisme du manque, données manquantes, missing data mechanism, Rubin
+- **Random Forest** — domaines : data-sci, ml-eng · alias : RF, Forêts aléatoires, Random forests, Forêt aléatoire
+- **Sélection de variables** — domaines : data-sci, ml-eng · alias : Feature selection, Sélection de caractéristiques, Sélection d'attributs, RFE, SelectKBest
+
 ### ml/vision
 - **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif
 - **Architectures CNN** — domaines : ml-eng · alias : ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures
@@ -994,7 +996,7 @@
 - **Systèmes IA** — La surface d'attaque d'un système qui embarque un modèle, et les défenses qui tiennent.
 - **Sécurité** — Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
-- **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
+- **Tabulaire** — Des lignes, des colonnes, une cible — les arbres et leurs ensembles, et le travail sur les variables qui décide de leur score.
 - **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.
 - **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
 - **Théorie de l'apprentissage** — Pourquoi la généralisation est possible et de quoi elle dépend — les bornes qui relient erreur d'entraînement, capacité du modèle et taille d'échantillon.

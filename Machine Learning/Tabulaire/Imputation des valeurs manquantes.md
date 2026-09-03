@@ -2,7 +2,7 @@
 role: notion
 nom: Imputation des valeurs manquantes
 alias: [Imputation, Missing value imputation, Gestion des valeurs manquantes, MICE, KNN imputer]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci]
 tags: [feature-engineering, missing-data]
 ---

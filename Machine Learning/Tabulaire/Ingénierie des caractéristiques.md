@@ -2,7 +2,7 @@
 role: notion
 nom: Ingénierie des caractéristiques
 alias: [Feature engineering, Ingénierie des variables, Feature preprocessing]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [feature-engineering]
 ---

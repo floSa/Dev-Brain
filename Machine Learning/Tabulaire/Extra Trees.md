@@ -2,7 +2,7 @@
 role: notion
 nom: Extra Trees
 alias: [ExtraTrees, Extremely Randomized Trees, Arbres extrêmement aléatoires, ExtraTreesClassifier, Extra-Trees]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, tree-based, ensemble, classification, regression]
 ---

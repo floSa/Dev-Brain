@@ -2,7 +2,7 @@
 role: notion
 nom: Mise à l'échelle
 alias: [Normalisation, Standardisation, Feature scaling, Scaling, StandardScaler, MinMaxScaler, RobustScaler]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci]
 tags: [feature-engineering]
 ---

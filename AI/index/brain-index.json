@@ -15312,6 +15312,111 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Tabulaire/AdaBoost.md",
+      "nom": "AdaBoost",
+      "alias": [
+        "Adaptive Boosting",
+        "Boosting adaptatif",
+        "AdaBoostClassifier",
+        "SAMME"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "ensemble",
+        "boosting",
+        "tree-based",
+        "classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Arbres de décision.md",
+      "nom": "Arbres de décision",
+      "alias": [
+        "Decision tree",
+        "Arbre de décision",
+        "CART"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "tree-based",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Bagging.md",
+      "nom": "Bagging",
+      "alias": [
+        "Bootstrap aggregating",
+        "Ensachage"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "ensemble",
+        "bagging"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Boosting.md",
+      "nom": "Boosting",
+      "alias": [
+        "Boostage"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "ensemble",
+        "boosting"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Tabulaire/CatBoost.md",
       "nom": "CatBoost",
       "alias": [
@@ -15339,6 +15444,88 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Tabulaire/Encodage des variables catégorielles.md",
+      "nom": "Encodage des variables catégorielles",
+      "alias": [
+        "Encodage catégoriel",
+        "Categorical encoding",
+        "One-Hot encoding",
+        "Target encoding",
+        "Weight of Evidence",
+        "WoE"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Ensembling.md",
+      "nom": "Ensembling",
+      "alias": [
+        "méthodes d'ensemble",
+        "ensemble learning",
+        "ensemble de modèles",
+        "agrégation de modèles"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ensemble",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Extra Trees.md",
+      "nom": "Extra Trees",
+      "alias": [
+        "ExtraTrees",
+        "Extremely Randomized Trees",
+        "Arbres extrêmement aléatoires",
+        "ExtraTreesClassifier",
+        "Extra-Trees"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "classification",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Tabulaire/Featuretools.md",
       "nom": "Featuretools",
       "alias": [
@@ -15360,6 +15547,111 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Gradient Boosting (GBDT).md",
+      "nom": "Gradient Boosting (GBDT)",
+      "alias": [
+        "GBDT",
+        "Gradient boosting",
+        "Gradient boosted trees",
+        "Boosting de gradient",
+        "GBM"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "boosting"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Imbalanced classification.md",
+      "nom": "Imbalanced classification",
+      "alias": [
+        "classes déséquilibrées",
+        "déséquilibre de classes",
+        "class imbalance"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "classification",
+        "supervised",
+        "class-imbalance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Imputation des valeurs manquantes.md",
+      "nom": "Imputation des valeurs manquantes",
+      "alias": [
+        "Imputation",
+        "Missing value imputation",
+        "Gestion des valeurs manquantes",
+        "MICE",
+        "KNN imputer"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-engineering",
+        "missing-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Ingénierie des caractéristiques.md",
+      "nom": "Ingénierie des caractéristiques",
+      "alias": [
+        "Feature engineering",
+        "Ingénierie des variables",
+        "Feature preprocessing"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Tabulaire/LightGBM.md",
@@ -15391,6 +15683,116 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Tabulaire/Mise à l'échelle.md",
+      "nom": "Mise à l'échelle",
+      "alias": [
+        "Normalisation",
+        "Standardisation",
+        "Feature scaling",
+        "Scaling",
+        "StandardScaler",
+        "MinMaxScaler",
+        "RobustScaler"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Mécanismes de données manquantes.md",
+      "nom": "Mécanismes de données manquantes",
+      "alias": [
+        "MCAR",
+        "MAR",
+        "MNAR",
+        "missingness",
+        "mécanisme du manque",
+        "données manquantes",
+        "missing data mechanism",
+        "Rubin"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "missing-data",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Random Forest.md",
+      "nom": "Random Forest",
+      "alias": [
+        "RF",
+        "Forêts aléatoires",
+        "Random forests",
+        "Forêt aléatoire"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "tree-based",
+        "ensemble",
+        "bagging"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Tabulaire/Sélection de variables.md",
+      "nom": "Sélection de variables",
+      "alias": [
+        "Feature selection",
+        "Sélection de caractéristiques",
+        "Sélection d'attributs",
+        "RFE",
+        "SelectKBest"
+      ],
+      "role": "notion",
+      "categorie": "ml/tabulaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Tabulaire/Tabulaire.md",
       "nom": "Tabulaire",
       "alias": [
@@ -15404,7 +15806,7 @@
         "data-sci",
         "ml-eng"
       ],
-      "pitch": "Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.",
+      "pitch": "Des lignes, des colonnes, une cible — les arbres et leurs ensembles, et le travail sur les variables qui décide de leur score.",
       "tags": [
         "tree-based",
         "boosting",
@@ -20702,35 +21104,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/AdaBoost.md",
-      "nom": "AdaBoost",
-      "alias": [
-        "Adaptive Boosting",
-        "Boosting adaptatif",
-        "AdaBoostClassifier",
-        "SAMME"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "ensemble",
-        "boosting",
-        "tree-based",
-        "classification"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Apprentissage non supervisé.md",
       "nom": "Apprentissage non supervisé",
       "alias": [
@@ -20749,82 +21122,6 @@
       "tags": [
         "unsupervised",
         "clustering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Arbres de décision.md",
-      "nom": "Arbres de décision",
-      "alias": [
-        "Decision tree",
-        "Arbre de décision",
-        "CART"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "tree-based",
-        "classification",
-        "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Bagging.md",
-      "nom": "Bagging",
-      "alias": [
-        "Bootstrap aggregating",
-        "Ensachage"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "ensemble",
-        "bagging"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Boosting.md",
-      "nom": "Boosting",
-      "alias": [
-        "Boostage"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "ensemble",
-        "boosting"
       ],
       "alternatives": null,
       "complements": null,
@@ -21234,58 +21531,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Encodage des variables catégorielles.md",
-      "nom": "Encodage des variables catégorielles",
-      "alias": [
-        "Encodage catégoriel",
-        "Categorical encoding",
-        "One-Hot encoding",
-        "Target encoding",
-        "Weight of Evidence",
-        "WoE"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Ensembling.md",
-      "nom": "Ensembling",
-      "alias": [
-        "méthodes d'ensemble",
-        "ensemble learning",
-        "ensemble de modèles",
-        "agrégation de modèles"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "ensemble",
-        "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Explicabilité des modèles.md",
       "nom": "Explicabilité des modèles",
       "alias": [
@@ -21310,36 +21555,6 @@
       "tags": [
         "explainability",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Extra Trees.md",
-      "nom": "Extra Trees",
-      "alias": [
-        "ExtraTrees",
-        "Extremely Randomized Trees",
-        "Arbres extrêmement aléatoires",
-        "ExtraTreesClassifier",
-        "Extra-Trees"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "classification",
-        "regression"
       ],
       "alternatives": null,
       "complements": null,
@@ -21401,35 +21616,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Gradient Boosting (GBDT).md",
-      "nom": "Gradient Boosting (GBDT)",
-      "alias": [
-        "GBDT",
-        "Gradient boosting",
-        "Gradient boosted trees",
-        "Boosting de gradient",
-        "GBM"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "boosting"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/ICA.md",
       "nom": "ICA",
       "alias": [
@@ -21452,82 +21638,6 @@
         "dimensionality-reduction",
         "factor-analysis",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Imbalanced classification.md",
-      "nom": "Imbalanced classification",
-      "alias": [
-        "classes déséquilibrées",
-        "déséquilibre de classes",
-        "class imbalance"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "classification",
-        "supervised",
-        "class-imbalance"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Imputation des valeurs manquantes.md",
-      "nom": "Imputation des valeurs manquantes",
-      "alias": [
-        "Imputation",
-        "Missing value imputation",
-        "Gestion des valeurs manquantes",
-        "MICE",
-        "KNN imputer"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-engineering",
-        "missing-data"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Ingénierie des caractéristiques.md",
-      "nom": "Ingénierie des caractéristiques",
-      "alias": [
-        "Feature engineering",
-        "Ingénierie des variables",
-        "Feature preprocessing"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-engineering"
       ],
       "alternatives": null,
       "complements": null,
@@ -21613,33 +21723,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Mise à l'échelle.md",
-      "nom": "Mise à l'échelle",
-      "alias": [
-        "Normalisation",
-        "Standardisation",
-        "Feature scaling",
-        "Scaling",
-        "StandardScaler",
-        "MinMaxScaler",
-        "RobustScaler"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Model registry & versioning.md",
       "nom": "Model registry & versioning",
       "alias": [
@@ -21689,35 +21772,6 @@
         "model-monitoring",
         "data-drift",
         "concept-drift"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Mécanismes de données manquantes.md",
-      "nom": "Mécanismes de données manquantes",
-      "alias": [
-        "MCAR",
-        "MAR",
-        "MNAR",
-        "missingness",
-        "mécanisme du manque",
-        "données manquantes",
-        "missing data mechanism",
-        "Rubin"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "missing-data",
-        "feature-engineering"
       ],
       "alternatives": null,
       "complements": null,
@@ -21839,34 +21893,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Random Forest.md",
-      "nom": "Random Forest",
-      "alias": [
-        "RF",
-        "Forêts aléatoires",
-        "Random forests",
-        "Forêt aléatoire"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "supervised",
-        "tree-based",
-        "ensemble",
-        "bagging"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Ranking metrics.md",
       "nom": "Ranking metrics",
       "alias": [
@@ -21928,32 +21954,6 @@
         "model-evaluation",
         "regression",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Sélection de variables.md",
-      "nom": "Sélection de variables",
-      "alias": [
-        "Feature selection",
-        "Sélection de caractéristiques",
-        "Sélection d'attributs",
-        "RFE",
-        "SelectKBest"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-engineering"
       ],
       "alternatives": null,
       "complements": null,

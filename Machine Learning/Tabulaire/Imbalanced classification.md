@@ -2,7 +2,7 @@
 role: notion
 nom: Imbalanced classification
 alias: [classes déséquilibrées, déséquilibre de classes, class imbalance]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [classification, supervised, class-imbalance]
 ---

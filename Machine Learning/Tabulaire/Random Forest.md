@@ -2,7 +2,7 @@
 role: notion
 nom: Random Forest
 alias: [RF, Forêts aléatoires, Random forests, Forêt aléatoire]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, tree-based, ensemble, bagging]
 ---

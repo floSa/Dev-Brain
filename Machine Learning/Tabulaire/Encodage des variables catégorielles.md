@@ -2,7 +2,7 @@
 role: notion
 nom: Encodage des variables catégorielles
 alias: [Encodage catégoriel, Categorical encoding, One-Hot encoding, Target encoding, Weight of Evidence, WoE]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci]
 tags: [feature-engineering]
 ---

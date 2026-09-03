@@ -2,7 +2,7 @@
 role: notion
 nom: Arbres de décision
 alias: [Decision tree, Arbre de décision, CART]
-categorie: concept/ml
+categorie: ml/tabulaire
 domaines: [data-sci, ml-eng]
 tags: [supervised, tree-based, classification, regression]
 ---
