@@ -44,7 +44,7 @@ a plus de page sans gabarit [R3].
 | `pattern` | une **architecture éprouvée** | **non** | `Patterns/Pattern - <nom>.md` |
 | `rule` | une **règle transverse** | **non** | `Rules/Rule - <nom>.md` |
 | `hub` | la **page d'un dossier**, l'aiguillage | **non** | `<Dossier>/<Dossier>.md` + les 5 de `Métiers/` |
-| `comparatif` | ce qui **départage** plusieurs briques | à définir | aucune page — naît au **lot 5**, les comparatifs sont des `.base` |
+| `comparatif` | ce qui **départage** plusieurs briques | **oui** — celle qui **rassemble le plus de ses membres** | `<Dossier>/Comparatif - <thème>.md`, à côté du `.base` qu'il embarque |
 
 Trois rôles n'ont **pas** de `categorie:`, et c'est délibéré, pas un oubli :
 
@@ -54,6 +54,33 @@ Trois rôles n'ont **pas** de `categorie:`, et c'est délibéré, pas un oubli :
 
 C'est `role:` qui les groupe, dans `Patterns/` et `Rules/`. Le champ est indexé et filtrable :
 `uv run AI/scripts/query_index.py --role hub`.
+
+### `role: comparatif` — quatre champs, et une règle de majorité
+
+Né au **lot 5**, le 2026-09-05, quand les `.base` sont devenus des pages. Le `.base` reste
+à côté comme moteur de tableau ; la page l'embarque par `![[<même nom>.base]]` et porte, elle,
+le rôle, la couleur du graphe et les liens sortants. Champs autorisés, et pas un de plus
+(`check_brain.COMPARATIF_ALLOWED`) :
+
+| Champ | Requis | Valeur |
+|---|---|---|
+| `role` | oui | `comparatif` |
+| `nom` | oui | `Comparatif - <thème>`, identique au nom de fichier |
+| `categorie` | oui | une valeur du vocabulaire ci-dessous, comme une brique |
+| `tags` | non | pioché dans `tags.md`, comme partout |
+
+Ni `famille:` ni `licence_type:` : un comparatif ne se déploie pas. Pas de `pitch:` non plus —
+la ligne « On tranche sur : … » du corps le remplace, et elle n'a pas à être indexée.
+
+**Sa `categorie:` est celle qui rassemble le plus de ses membres.** C'est la seule règle
+d'arbitrage du rôle, et elle est nécessaire parce qu'un comparatif enjambe volontiers deux
+valeurs — `Comparatif - Bases NoSQL` réunit MongoDB (`database/document`), Redis et Cassandra
+(`database/cle-valeur`), et il n'existe pas de valeur « NoSQL » : le vocabulaire range par
+modèle de données, pas par famille marketing. Deux garde-fous rendent cet arbitrage sans
+conséquence : une page `comparatif` ne pèse **jamais** sur le seuil de promotion d'un
+sous-domaine (`arbo.ROLES_HORS_SEUIL` — un comparatif n'est pas un membre du comparatif), et
+si les deux valeurs candidates mènent à des dossiers différents dont l'un est promu et l'autre
+non, la place est **au niveau du domaine**.
 
 > `role:` a remplacé `galaxie:` et `type:` au lot 2. Le premier ne servait qu'à la couleur du
 > graphe ; le second ne décrivait que le dossier d'accueil. Les pages de gouvernance

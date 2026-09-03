@@ -20,7 +20,7 @@ moins bien (il ne distinguait ni un hub d'une notion, ni un comparatif d'une bri
 | Élément | `role:` | Requête | Couleur |
 |---------|---------|---------|---------|
 | **Métiers** transverses (Data Science, ML Eng, AI Eng, MLOps, Data Eng) | `hub` | `path:Métiers/` | 🟡 or |
-| **Hubs** — la page d'un dossier, l'aiguillage | `hub` | `["role":"hub"]` + `path:MOC/` | 🟠 orange |
+| **Hubs** — la page d'un dossier, l'aiguillage | `hub` | `["role":"hub"]` | 🟠 orange |
 | **Briques** — ce qu'on déploie ou importe | `brique` | `["role":"brique"]` | 🔵 bleu |
 | **Notions** — ce qu'il faut comprendre | `notion` | `["role":"notion"]` | 🟢 vert |
 | **Comparatifs** — ce qui départage plusieurs briques | `comparatif` | `["role":"comparatif"]` | 🔴 rouge |
@@ -32,17 +32,25 @@ les mêmes pages, elles ne changent que de nom de champ.
 L'ordre des règles compte : `path:Métiers/` passe **avant** la règle `hub`, sinon les cinq
 axes métier prendraient l'orange des hubs — ce sont eux aussi des `role: hub`.
 
-Deux rôles n'ont encore aucune page : `hub` naît au lot 3 (avec l'arborescence), `comparatif`
-au lot 5 (quand les `.base` deviennent des pages). Leurs règles sont posées d'avance — elles
-ne colorent rien pour l'instant, et coloreront le jour même sans qu'on y retouche. En
-attendant, `path:MOC/` tient le rôle de hub.
+**Les six règles colorent, il n'y en a plus une seule en attente.** `hub` est né au lot 3
+avec l'arborescence ; `comparatif` est né au **lot 5**, le 2026-09-05, quand les `.base` sont
+devenus des pages — la règle posée d'avance a coloré le jour même, sans qu'on y retouche.
+La béquille `path:MOC/` de la règle `hub` est **retirée** : `MOC/` n'existe plus depuis la
+clôture du lot 4, et un `path:` qui ne désigne rien fait grossir la requête sans rien y
+ajouter.
+
+Ce que le rouge des comparatifs rend visible, et qui n'était pas visible avant : un `.base`
+n'a **ni frontmatter ni corps**, donc ni couleur ni lien sortant. Les 47 comparatifs étaient
+47 nœuds gris en cul-de-sac — 44 cités, aucun ne citant. Une page de comparatif cite ses
+membres : le nœud rouge est **relié** au bleu de chaque brique qu'il départage, dans les deux
+sens.
 
 Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 
 ```json
 "colorGroups": [
   { "query": "path:Métiers/",              "color": { "a": 1, "rgb": 16766011 } },
-  { "query": "[\"role\":\"hub\"] OR path:MOC/", "color": { "a": 1, "rgb": 16749099 } },
+  { "query": "[\"role\":\"hub\"]",             "color": { "a": 1, "rgb": 16749099 } },
   { "query": "[\"role\":\"brique\"]",        "color": { "a": 1, "rgb": 4271325 } },
   { "query": "[\"role\":\"notion\"]",        "color": { "a": 1, "rgb": 8042496 } },
   { "query": "[\"role\":\"comparatif\"]",    "color": { "a": 1, "rgb": 15680580 } },
@@ -62,6 +70,15 @@ Deux règles de l'ancien bloc ont été **retirées**, et non transposées :
   un rouge — il serait entré en collision frontale avec celui des comparatifs.
 - `["galaxie":"meta"]` — le champ n'existe plus. Les pages de gouvernance (`Documentation/`,
   `AI/`) sont déjà hors du graphe par `userIgnoreFilters` (cf. lot 0).
+
+Une troisième l'a été au **lot 5** : `path:MOC/`, greffée sur la règle `hub` tant que les
+MOC générées tenaient ce rôle. Le dossier est mort à la clôture du lot 4.
+
+> **Un `.base` ne se colore pas, et ce n'est pas un oubli.** Les 47 fichiers `.base` restent
+> à côté de leur page comme moteur de tableau. Aucune requête `colorGroups` ne peut les
+> atteindre : un `.base` n'a pas de frontmatter, donc pas de `role:`. Ils apparaissent au
+> graphe dans la couleur par défaut, tenus par l'unique arête de l'embed `![[X.base]]` de
+> leur page. C'est le comportement voulu — la page est le nœud qui compte.
 
 > ⚠️ `.obsidian/graph.json` est **gitignoré** → cette config est **locale par machine**, pas
 > versionnée. Ce tableau est donc la **seule** source de vérité des couleurs du graphe : à

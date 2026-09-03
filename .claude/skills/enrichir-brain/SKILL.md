@@ -41,13 +41,13 @@ Qdrant dans `Bases de données/Vectoriel/` détermine, sans rien deviner :
 |---|---|---|---|
 | **P1** | Le hub du dossier — `Vectoriel/Vectoriel.md` | c'est le dossier d'accueil | **généré** (zone AUTO) + corps à relire |
 | **P2** | Les hubs parents — `Bases de données/Bases de données.md` | remontée de chemin | **généré** (zone AUTO) + corps à relire |
-| **P3** | Le comparatif du dossier — le `.base` du dossier | `ls <dossier>/*.base` | vue : **automatique** (filtre par `categorie`) ; « ce qui départage » : **à écrire** |
+| **P3** | Le comparatif du dossier — la **page** `role: comparatif`, et le `.base` qu'elle embarque | `ls "<dossier>"/'Comparatif - '*` — les deux fichiers portent le même nom | vue : **automatique** (le `.base` filtre par `categorie`) ; puce de « Ce qui départage » dans la **page** : **à écrire** |
 | **P4** | La notion du sujet | le `role: notion` du sujet (cf. *L'exception notion*) | **à écrire**, dans les deux sens |
 | **P5** | Les briques pairs — les autres `role: brique` du dossier | `ls <dossier>/*.md` | **à écrire**, réciprocité obligatoire |
 | **P6** | Les pitchs réinjectés chez les pairs | `alternatives:` / `complements:` des pairs | **à écrire**, pitch copié jamais retapé — vérifié par `[V1]` |
 
 **Aucune de ces six lignes ne se saute en silence.** Une ligne sans objet se déclare sans
-objet (« pas de `.base` dans ce dossier »), elle ne se tait pas. C'est ce que contrôle
+objet (« pas de comparatif dans ce dossier »), elle ne se tait pas. C'est ce que contrôle
 l'étape 8 de la procédure ciblée.
 
 ### Trouver le dossier d'accueil — dérivation, pas décision
@@ -97,9 +97,10 @@ ls -1 "$D"                              # P3, P4, P5 : le rayon, en clair
 dirname "$D"                            # P2 : le parent ; remonter jusqu'à la racine
 ```
 
-Ce que `ls` rend, ligne par ligne : le hub du dossier (`<Dossier>.md`), le ou les `.base`
-(P3), et les autres `.md` — les pairs (P5). Il n'y a rien d'autre à chercher, et c'est tout
-l'intérêt de l'arbre : **plus rien à déduire des tags.**
+Ce que `ls` rend, ligne par ligne : le hub du dossier (`<Dossier>.md`), le ou les
+comparatifs — **deux fichiers de même nom**, `Comparatif - <thème>.md` et son `.base`
+(P3) —, et les autres `.md` : les pairs (P5). Il n'y a rien d'autre à chercher, et c'est
+tout l'intérêt de l'arbre : **plus rien à déduire des tags.**
 
 ### L'exception notion — levée le 2026-09-05
 
@@ -187,7 +188,8 @@ ne l'est pas : proposer, et attendre.
    ```
    P1 hub du dossier      : Bases de données/Vectoriel/Vectoriel.md
    P2 hubs parents        : Bases de données/Bases de données.md
-   P3 comparatif          : Bases de données/Vectoriel/Comparatif - Bases vectorielles.base
+   P3 comparatif          : Bases de données/Vectoriel/Comparatif - Bases vectorielles.md
+                            (+ son `.base`, embarqué par la page)
    P4 notion              : Bases de données/Vectoriel/Bases de données vectorielles.md
    P5 briques pairs       : Annoy, Chroma, Faiss, LanceDB, Milvus, Pinecone, Qdrant,
                             ScaNN, Weaviate, hnswlib, pgvector  (11)
@@ -219,11 +221,28 @@ ne l'est pas : proposer, et attendre.
      > sans objet, ne pas la taire, et regarder quand même le **corps** du hub parent, qui peut
      > décrire le sous-domaine en une phrase à rafraîchir. Si la brique atterrit **directement
      > dans le dossier de domaine**, P1 et P2 désignent la même page.
-   - **P3 — le comparatif.** Si le `.base` filtre par `categorie` (le cas normal), la nouvelle
-     brique **entre toute seule** dans la vue : rien à faire, le vérifier suffit. S'il filtre
-     par liste de noms codée en dur ou par chemin, **elle n'entrera jamais** : le signaler
-     (`check_brain` le sort en `[WARN] R8d`). Pas de `.base` dans le dossier et ≥ 2 briques de
-     la catégorie → en proposer un (`check_brain` le réclame déjà en `[WARN] R8a`).
+   - **P3 — le comparatif.** Depuis le lot 5 il est en **deux fichiers de même nom** : la
+     page `role: comparatif`, qui porte le corps et les liens, et le `.base` qu'elle embarque,
+     qui ne porte que la requête. Les deux se traitent, et pas de la même façon.
+
+     - **Le `.base` — automatique.** S'il filtre par `categorie` (le cas normal), la nouvelle
+       brique **entre toute seule** dans la vue : rien à faire, le vérifier suffit. S'il filtre
+       par liste de noms codée en dur ou par chemin, **elle n'entrera jamais** : le signaler
+       (`check_brain` le sort en `[WARN] R8d`). Ne jamais ajouter un nom à la main dans un
+       filtre par catégorie.
+     - **La page — à écrire.** Une brique entrée dans la vue sans puce dans `## Ce qui
+       départage` est une ligne du tableau que rien n'explique. Ajouter **une** puce
+       `- [[<Brique>]] — <ce qui la distingue des autres membres>` : pas son pitch, qui est
+       déjà dans la colonne du tableau, et **rien qui ne se lise pas dans sa fiche** (au lot 5,
+       les 45 puces du pilote sortent toutes de `## Pourquoi`, et 38 sur 45 de `## Pièges`).
+       Relire aussi la ligne « On tranche sur : … » : une brique qui ouvre un critère neuf
+       peut la périmer.
+     - **Le lien, lui, ne se touche pas.** Une fiche qui cite `[[Comparatif - <thème>]]` en
+       lien **nu** vise la page, jamais le `.base` — la page a le même stem. Repointer vers
+       `[[<thème>.base]]` serait une régression (lot 5, remontée 2).
+
+     Aucun comparatif dans le dossier et ≥ 2 briques de la catégorie → en proposer un, page
+     **et** `.base` (`check_brain` le réclame déjà en `[WARN] R8a`).
    - **P4 — la notion.** La brique cite sa notion dans `## Liens` ; la notion cite la brique
      dans `## Approches voisines`. Les **deux** sens, sinon `check_brain` sort `[WARN] R15`.
      Notion absente → la créer (c'est une capture, pas une incursion). Notion existante à
@@ -356,7 +375,7 @@ propagation : c'est elle qui borne le travail.
 | `categorie:` | **change de rayon** | **[D]** valeur présente dans `taxonomie.md` · **[D]** le chemin doit suivre : la page **déménage**, par `git mv` (jamais un copier-supprimer : l'historique se perd) · **[!]** entrée/sortie des comparatifs `.base` filtrés par catégorie · **[G]** hub quitté et hub d'accueil · **[M]** jeu d'alternatives pertinentes : les pairs de la **nouvelle** catégorie, et le retrait chez ceux de l'ancienne | `uv run /tmp/ou.py "<ancienne>"` puis `"<nouvelle>"` — les deux dossiers, donc les deux rayons ; `grep -rl 'categorie == "<ancienne>"' --include="*.base" .` | `uv run AI/scripts/check_arbo.py` (concordance chemin ↔ catégorie, **dure**) ; `check_brain.py` valide l'appartenance à la taxonomie — les valeurs légales viennent des blocs de code de `taxonomie.md`, pas de ses puces de prose : ne pas se fier à un `grep` ; le comparatif quitté garde **≥ 2 membres** (0 ou 1 = comparatif à vider ou refiltrer, `[WARN] R8b`) |
 | `famille:` | — | **[D]** valeur ∈ énumération fermée du bloc de code `famille` de `taxonomie.md` (R14) · **[D]** conditionne `hosted:` et `scaling:` (R16) : les retirer si la famille cesse d'être `plateforme` / `saas` / `application` · **[D]** champ indexé, un consommateur machine filtre dessus | `uv run AI/scripts/query_index.py --famille <valeur> --fields nom,path` | `check_brain.py` ; la famille doit être **dérivée** de l'arbre F1→F9 (première réponse positive gagne), pas choisie — si deux branches conviennent, une règle de départage R1-R6 tranche ; si aucune ne tranche, laisser vide et demander |
 | `tags:` | — | **[D]** tags présents dans `tags.md` · **[!]** entrée/sortie des comparatifs `.base` filtrés par tag · **[G]** index des tags de `liens.md` | `grep -rl '"<tag>"' --include="*.base" .` | `grep -c "<tag>" Documentation/general/tags.md` → ≥ 1 ; `check_brain.py` |
-| `role:` | P1→P6 | **[D]** enum fermée (`brique`, `notion`, `pattern`, `rule`, `hub` ; `comparatif` arrive au lot 5) · **[D]** il choisit le **gabarit** que le validateur applique : changer `role:` change la liste des champs autorisés · **[D]** `pattern` et `rule` n'ont **pas** de `categorie:` et vivent dans `Patterns/` et `Rules/` — changer de rôle peut donc déménager la page · **[G]** index, hubs, liens, couleur du graphe | `uv run AI/scripts/query_index.py --role brique --categorie <cat>` | les deux validateurs — un champ hors gabarit sort en dur (R3) |
+| `role:` | P1→P6 | **[D]** enum fermée, **six** valeurs (`brique`, `notion`, `comparatif`, `pattern`, `rule`, `hub`) · **[D]** il choisit le **gabarit** que le validateur applique : changer `role:` change la liste des champs autorisés · **[D]** `pattern` et `rule` n'ont **pas** de `categorie:` et vivent dans `Patterns/` et `Rules/` — changer de rôle peut donc déménager la page · **[G]** index, hubs, liens, couleur du graphe | `uv run AI/scripts/query_index.py --role brique --categorie <cat>` | les deux validateurs — un champ hors gabarit sort en dur (R3) |
 | `maturite:` | P3 | **[D]** enum fermée · **[!]** plusieurs `.base` filtrent `maturite != "deprecated"` ou `== "production"` — une page qui bascule sort de la vue sans bruit · **[D]** **indexé**, et c'est le SEUL critère éliminatoire depuis la suppression de `status:` : `planifier-projet` n'ouvre pas la fiche · **[M]** si `deprecated` : renseigner `alternatives:` (c'est lui qui dit quoi proposer à la place) **et** nommer le successeur dans le corps, pour le lecteur humain | `grep -rl 'maturite' --include="*.base" .` | `sed -n '/^maturite:/p;/^alternatives:/p' "<chemin>"` → une brique `deprecated` nomme ses successeurs ; `uv run AI/scripts/verifier_fraicheur.py` signale le contraire |
 | `complements:` | P5 | **[D]** réciprocité, comme `alternatives:` : si A cite B, B cite A · **[M]** la section `## Alternatives` ne le couvre PAS — le lot 6 ouvrira une section `### Compléments` · **[G]** index | `grep -rn "complements:" --include="*.md" . \| grep -v "^\./\.git/"` | `check_brain.py` |
 | `alias:` | — | **[!]** résolution des liens `[[alias]]` · **[!]** détection d'existence à l'étape 1 de la procédure ciblée · **[!]** unicité — 52 collisions connues dans le vault | `uv run AI/scripts/query_index.py --name "<alias>" --fields nom,path` | la même commande, après `build_index`, renvoie `"count": 1` |
