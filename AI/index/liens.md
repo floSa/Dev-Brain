@@ -1968,7 +1968,7 @@
 ### Non supervisé  ·  hub
 - tags : `unsupervised`, `clustering`, `dimensionality-reduction`, `anomaly-detection`, `manifold`
 - liens sortants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Gaussian Mixture Models (GMM)]], [[ICA]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[Manifold learning]], [[NMF]], [[One-Class SVM]], [[PaCMAP]], [[PyOD]], [[Socle]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Socle]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Socle]], [[Séries temporelles]]
 
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
@@ -2102,7 +2102,7 @@
 
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
-- liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Non supervisé]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 - liens entrants : [[Machine Learning]], [[Serving]], [[Traitement]]
 
 ### Tabulaire  ·  hub

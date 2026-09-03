@@ -28,7 +28,7 @@ tags: [unsupervised, clustering, dimensionality-reduction, anomaly-detection, ma
 - Une appartenance graduée plutôt qu'un vote net → [[Gaussian Mixture Models (GMM)]].
 - Décider du nombre de groupes après coup, en regardant → [[Classification hiérarchique (CAH)]].
 - Vérifier qu'une partition vaut quelque chose → [[Clustering evaluation]].
-- Voir un nuage en deux dimensions → [[umap-learn]] ou [[PaCMAP]], et [[t-SNE and UMAP]] pour lire la projection sans se tromper. Cf. [[Comparatif - Réduction de dimension]], au niveau du domaine.
+- Voir un nuage en deux dimensions → [[umap-learn]] ou [[PaCMAP]], et [[t-SNE and UMAP]] pour lire la projection sans se tromper. Cf. [[Comparatif - Réduction de dimension]], ici depuis le lot 5.
 - Des coordonnées à réutiliser dans un pipeline, pas seulement à regarder → [[Manifold learning]], Kernel PCA en particulier.
 - Des signaux mélangés à séparer → [[ICA]] ; des parties additives interprétables sur données positives → [[NMF]].
 - Des anomalies sur du tabulaire, sans parier une méthode → [[PyOD]]. Cf. [[Comparatif - Détection d'anomalies]].

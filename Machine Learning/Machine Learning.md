@@ -41,7 +41,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - Orchestrer un pipeline d'entraînement reproductible → [[ZenML]] pour rester agnostique de l'infra, [[Metaflow]] pour un chemin balisé du notebook à la production, [[Flyte]] si Kubernetes est déjà le socle. Cf. [[Comparatif - Orchestrateurs ML]].
 - Surveiller un modèle en production → [[Evidently]] ; servir les mêmes features à l'entraînement et à l'inférence → [[Feast]].
 - Apprendre en flux, sur une donnée qui n'entre pas en mémoire → [[River]].
-- Visualiser un nuage en deux dimensions → [[umap-learn]] ou [[PaCMAP]], dans [[Non supervisé]] ; regrouper sans fixer le nombre de groupes → [[hdbscan]]. Cf. [[Comparatif - Réduction de dimension]], qui reste ici parce que ses membres enjambent trois dossiers.
+- Visualiser un nuage en deux dimensions → [[umap-learn]] ou [[PaCMAP]], dans [[Non supervisé]] ; regrouper sans fixer le nombre de groupes → [[hdbscan]]. Cf. [[Comparatif - Réduction de dimension]], descendu dans [[Non supervisé]] au lot 5 : ses membres enjambent trois dossiers, et c'est la `categorie:` de sa page qui décide désormais du sien.
 - Détecter des anomalies sur du tabulaire → [[PyOD]], dans [[Non supervisé]] ; sur une série temporelle → [[STUMPY]]. Cf. [[Comparatif - Détection d'anomalies]].
 - Un graphe en entrée → [[PyTorch Geometric]].
 - Représenter des phrases par des vecteurs → [[sentence-transformers]] ; charger un jeu de données public → [[datasets]] ; calculer une métrique standard → [[evaluate]], ou [[seqeval]] pour l'étiquetage de séquence.
