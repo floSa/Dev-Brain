@@ -26,8 +26,8 @@ Axe métier **Data Engineering** (`data-eng`) — explorer par sous-domaine, pui
 
 - [[Bases de données]] — 11 page(s)
 - [[Data & pipelines]] — 8 page(s)
+- [[Machine Learning]] — 2 page(s)
 - [[Outils de développement]] — 2 page(s)
-- [[Machine learning (notions)]] — 2 page(s)
-- [[Machine Learning]] — 1 page(s)
 - [[Web & API]] — 1 page(s)
+- [[Machine learning (notions)]] — 1 page(s)
 <!-- AUTO:END -->

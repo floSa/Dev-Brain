@@ -2,7 +2,7 @@
 role: notion
 nom: Data drift
 alias: [dérive de données, distribution shift, drift, dérive de distribution]
-categorie: concept/ml
+categorie: ml/monitoring
 domaines: [mlops, data-sci]
 tags: [data-drift, concept-drift, model-monitoring]
 ---

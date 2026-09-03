@@ -1707,7 +1707,7 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Bases de données]], [[Data Science]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Agents]], [[Bases de données]], [[Data Science]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
 
 ### Algèbre linéaire  ·  hub
@@ -1832,12 +1832,12 @@
 
 ### ML Engineering  ·  hub
 - tags : —
-- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]]
+- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]]
 - liens entrants : [[Data Science]], [[MLOps]]
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Modèles de langage  ·  hub

@@ -535,12 +535,7 @@
 ## Notions — ce qu'il faut comprendre
 
 ### concept/ml
-- **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
-- **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
-- **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
-- **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
-- **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
 
 ### data/fiabilite
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
@@ -718,6 +713,9 @@
 - **Transformer architectures** — domaines : ml-eng, ai-eng · alias : Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only
 - **Video generation** — domaines : ml-eng, ai-eng · alias : text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video
 
+### ml/embeddings
+- **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
+
 ### ml/eval
 - **Calibration** — domaines : data-sci, ml-eng · alias : Calibration des probabilités, fiabilité, diagramme de fiabilité, reliability diagram, Platt scaling, régression isotonique, temperature scaling, ECE, Expected Calibration Error
 - **Classification metrics** — domaines : data-sci, ml-eng · alias : Métriques de classification, exactitude, accuracy, précision, rappel, F1, F1-score, log-loss, matrice de confusion, sensibilité, spécificité, taux de vrais négatifs, VPP, VPN, valeur prédictive positive, valeur prédictive négative, prévalence, rapport de vraisemblance, MCC, Brier
@@ -728,6 +726,12 @@
 - **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
 - **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
 
+### ml/feature-store
+- **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
+
+### ml/hyperopt
+- **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
+
 ### ml/interpretabilite
 - **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods
 - **Explicabilité des modèles** — domaines : data-sci, ml-eng · alias : explicabilité, interprétabilité, explainability, interpretability, feature importance, SHAP, LIME, permutation importance
@@ -735,6 +739,10 @@
 - **Probing** — domaines : data-sci, ai-eng · alias : Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier
 - **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
+
+### ml/monitoring
+- **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
+- **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
 
 ### ml/nlp
 - **BM25** — domaines : ai-eng, data-sci · alias : Okapi BM25, best matching 25, bm25

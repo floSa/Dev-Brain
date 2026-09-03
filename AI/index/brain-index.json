@@ -12613,6 +12613,33 @@
       "maturite": "experimental"
     },
     {
+      "path": "Machine Learning/Data drift.md",
+      "nom": "Data drift",
+      "alias": [
+        "dérive de données",
+        "distribution shift",
+        "drift",
+        "dérive de distribution"
+      ],
+      "role": "notion",
+      "categorie": "ml/monitoring",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-drift",
+        "concept-drift",
+        "model-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Evidently.md",
       "nom": "Evidently",
       "alias": [
@@ -12654,6 +12681,34 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Feature store — concept.md",
+      "nom": "Feature store — concept",
+      "alias": [
+        "feature store",
+        "magasin de features",
+        "online store",
+        "offline store",
+        "point-in-time correctness",
+        "train/serve skew"
+      ],
+      "role": "notion",
+      "categorie": "ml/feature-store",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "feature-store",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Flyte.md",
@@ -13177,6 +13232,33 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèle en production.md",
+      "nom": "Monitoring de modèle en production",
+      "alias": [
+        "model monitoring",
+        "monitoring ML",
+        "surveillance de modèle",
+        "observabilité ML",
+        "ML monitoring"
+      ],
+      "role": "notion",
+      "categorie": "ml/monitoring",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "concept-drift"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/NLP/BM25.md",
@@ -14154,6 +14236,35 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Optimisation d'hyperparamètres.md",
+      "nom": "Optimisation d'hyperparamètres",
+      "alias": [
+        "Hyperparameter tuning",
+        "GridSearch",
+        "RandomSearch",
+        "Optimisation bayésienne",
+        "HPO",
+        "Réglage des hyperparamètres"
+      ],
+      "role": "notion",
+      "categorie": "ml/hyperopt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "hyperparameter-tuning",
+        "model-evaluation",
+        "bayesian"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Optuna.md",
@@ -17425,6 +17536,33 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/embeddings.md",
+      "nom": "embeddings",
+      "alias": [
+        "représentations vectorielles",
+        "plongements",
+        "embedding",
+        "vector embeddings"
+      ],
+      "role": "notion",
+      "categorie": "ml/embeddings",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "representation-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/sentence-transformers.md",
@@ -21965,33 +22103,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Data drift.md",
-      "nom": "Data drift",
-      "alias": [
-        "dérive de données",
-        "distribution shift",
-        "drift",
-        "dérive de distribution"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-drift",
-        "concept-drift",
-        "model-monitoring"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/EDA automatisée & profiling.md",
       "nom": "EDA automatisée & profiling",
       "alias": [
@@ -22014,117 +22125,6 @@
         "eda",
         "feature-engineering",
         "missing-data"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Feature store — concept.md",
-      "nom": "Feature store — concept",
-      "alias": [
-        "feature store",
-        "magasin de features",
-        "online store",
-        "offline store",
-        "point-in-time correctness",
-        "train/serve skew"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops",
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "feature-store",
-        "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Monitoring de modèle en production.md",
-      "nom": "Monitoring de modèle en production",
-      "alias": [
-        "model monitoring",
-        "monitoring ML",
-        "surveillance de modèle",
-        "observabilité ML",
-        "ML monitoring"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-monitoring",
-        "data-drift",
-        "concept-drift"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Optimisation d'hyperparamètres.md",
-      "nom": "Optimisation d'hyperparamètres",
-      "alias": [
-        "Hyperparameter tuning",
-        "GridSearch",
-        "RandomSearch",
-        "Optimisation bayésienne",
-        "HPO",
-        "Réglage des hyperparamètres"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "hyperparameter-tuning",
-        "model-evaluation",
-        "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/embeddings.md",
-      "nom": "embeddings",
-      "alias": [
-        "représentations vectorielles",
-        "plongements",
-        "embedding",
-        "vector embeddings"
-      ],
-      "role": "notion",
-      "categorie": "concept/ml",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "representation-learning"
       ],
       "alternatives": null,
       "complements": null,

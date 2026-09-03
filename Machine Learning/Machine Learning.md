@@ -52,6 +52,13 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 ### Sous-domaines
 - [[Apprentissage par renforcement]] · [[Apprentissage profond]] · [[Interprétabilité]] · [[NLP]] · [[Non supervisé]] · [[Serving]] · [[Socle]] · [[Suivi d'expériences]] · [[Séries temporelles]] · [[Tabulaire]] · [[Vision]] · [[Évaluation de modèles]]
 
+### Notions
+- [[Data drift]] — domaines : mlops, data-sci
+- [[embeddings]] — domaines : data-sci, ai-eng
+- [[Feature store — concept]] — domaines : mlops, data-eng
+- [[Monitoring de modèle en production]] — domaines : mlops
+- [[Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
+
 ### Briques
 - [[datasets]] — Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub.
 - [[Evidently]] — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.

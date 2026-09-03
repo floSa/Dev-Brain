@@ -2,7 +2,7 @@
 role: notion
 nom: embeddings
 alias: [représentations vectorielles, plongements, embedding, vector embeddings]
-categorie: concept/ml
+categorie: ml/embeddings
 domaines: [data-sci, ai-eng]
 tags: [embeddings, semantic-search, representation-learning]
 ---
