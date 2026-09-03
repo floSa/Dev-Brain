@@ -62,7 +62,10 @@ OUT_MD = VAULT / "AI" / "index" / "brain-index.md"
 # application…), `categorie` restant le domaine — cf. Documentation/general/taxonomie.md.
 # `complements` est le symétrique d'`alternatives` ouvert au lot 2 : ce qui s'utilise AVEC
 # la brique, quand `alternatives` dit ce qui s'utilise À SA PLACE.
-FIELDS = ["nom", "alias", "role", "categorie", "famille", "domaines",
+# `langage` est indexé depuis le lot 4 : sans lui, `planifier-projet` ne pouvait pas
+# répondre à « un paquet Python pour ce besoin » en une requête — il devait ouvrir le
+# frontmatter des candidates une à une (remontée 2 de AI/migration/lot-7-skills.md).
+FIELDS = ["nom", "alias", "role", "categorie", "famille", "langage", "domaines",
           "pitch", "tags", "alternatives", "complements", "maturite"]
 
 # Champs hérités v1 : leur présence dans une page Wiki = réservoir → hors index actif.

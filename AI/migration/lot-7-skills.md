@@ -160,6 +160,11 @@ poussés, et le push est le moment où le dommage devient réel.
 
 ### 2. `langage:` n'est pas indexé — le critère d'acceptation n'est atteint qu'à moitié
 
+> **Réglé le 2026-09-05, au lot 4, dans un commit isolé** — c'est l'option « commit isolé »
+> ci-dessous qui a été retenue. `langage` est dans `build_index.FIELDS`, `query_index.py`
+> porte `--langage` et le renvoie par défaut, et `planifier-projet` a été réécrit sur le
+> filtre plutôt que sur la lecture de fiche. Ce qui suit décrit l'état d'avant.
+
 Le lot demandait que `planifier-projet` **filtre** sur `famille:` **et** `langage:`.
 
 - `famille:` : fait. Le champ est indexé, `query_index.py --famille` existe, le skill l'utilise comme critère.

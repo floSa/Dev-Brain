@@ -106,7 +106,7 @@ Python** ». La nature et le langage d'une brique décident souvent plus vite qu
 |---|---|---|
 | le **pitch** | champ `pitch:` | index — **jamais retapé**, toujours copié |
 | la **nature** (`famille:`) | 9 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`, `specification`, `modele`, `annuaire` | index (`--famille` filtre, et le champ est renvoyé par défaut) |
-| le **langage** (`langage:`) | langage d'implémentation | **pas dans l'index** — se lit dans le frontmatter de la fiche (cf. ci-dessous) |
+| le **langage** (`langage:`) | langage d'implémentation | index (`--langage` filtre, et le champ est renvoyé par défaut) |
 | l'**état** (`maturite:`) | enum fermée | index, renvoyé par défaut |
 
 **`famille:` filtre.** Un besoin exprimé comme une nature se requête comme une nature — c'est
@@ -119,19 +119,19 @@ uv run AI/scripts/query_index.py --categorie data/synthetique --famille paquet
 uv run AI/scripts/query_index.py --categorie llm/orchestration --famille plateforme
 ```
 
-**`langage:` ne filtre pas encore** : le champ existe sur les fiches mais **n'est pas indexé**
-(`brain-index.json` porte `alias, alternatives, categorie, complements, domaines, famille,
-maturite, nom, path, pitch, role, tags` — et pas `langage`). Le lire est donc une lecture de
-fichier, bornée aux 2-3 candidates **déjà retenues** — jamais un balayage :
+**`langage:` filtre aussi**, depuis le lot 4 : le champ est dans `brain-index.json` et
+`query_index.py --langage` le compare sans tenir compte de la casse. Un besoin exprimé
+« une lib **Python** pour… » se croise donc en une requête, au lieu d'ouvrir les fiches :
 
 ```bash
-# après avoir réduit à 2-3 candidates par l'index, sur leurs `path`
-sed -n '/^langage:/p' "Data & pipelines/Faker.md" "Data & pipelines/Mimesis.md"
+# nature × langage, en une passe
+uv run AI/scripts/query_index.py --categorie data/synthetique --famille paquet --langage Python
 ```
 
-> C'est une limite de l'outillage, pas une consigne de confort : indexer `langage:` le
-> rendrait filtrable comme `famille:`. Remonté au lot 7, à trancher — les scripts étaient
-> hors de son périmètre.
+> `langage:` est une enum **ouverte** — pas de liste fermée à valider comme `famille:`. Les
+> valeurs sont celles écrites sur les fiches (« Python », « Rust », « C++ / Python »…), donc
+> un filtre exact ne trouve pas une brique bi-langage écrite « C++ / Python » quand on
+> demande « Python ». Sur un doute, filtrer d'abord sur `--categorie` et lire la colonne.
 
 ---
 

@@ -17,6 +17,7 @@ Exemples :
     uv run AI/scripts/query_index.py --categorie llm/agents \
         --maturite deprecated                                       # briques à écarter
     uv run AI/scripts/query_index.py --famille plateforme --tag rag # nature × sujet
+    uv run AI/scripts/query_index.py --categorie data/synthetique         --langage Python                                            # nature × langage
 
 Lit seulement l'index (pas de re-scan du vault). Cross-OS, chemins relatifs.
 """
@@ -40,6 +41,10 @@ def main() -> int:
                     choices=["paquet", "plateforme", "application", "cli", "saas",
                              "extension", "specification", "modele", "annuaire"],
                     help="filtre sur la NATURE (famille:) — cf. taxonomie.md")
+    ap.add_argument("--langage",
+                    help="filtre sur le LANGAGE d'implémentation (langage:) — enum "
+                         "ouverte, comparaison insensible à la casse. Indexé depuis le "
+                         "lot 4 : avant, planifier-projet devait ouvrir chaque fiche")
     ap.add_argument("--tag")
     ap.add_argument("--role", choices=["brique", "notion", "pattern", "rule"],
                     help="filtre sur la NATURE de la page — cf. AI/design/brain-v3.md §3")
@@ -51,9 +56,9 @@ def main() -> int:
     ap.add_argument("--tag-of", metavar="NOM", help="liste les tags d'une page")
     ap.add_argument(
         "--fields",
-        default="nom,categorie,famille,role,pitch,maturite,tags,"
+        default="nom,categorie,famille,langage,role,pitch,maturite,tags,"
                 "alternatives,complements,path",
-        help="champs renvoyés (csv) — famille/maturite inclus par défaut : "
+        help="champs renvoyés (csv) — famille/langage/maturite inclus par défaut : "
              "ce sont des critères éliminatoires, les masquer ferait filtrer à l'aveugle",
     )
     args = ap.parse_args()
@@ -81,6 +86,8 @@ def main() -> int:
         if args.categorie and p.get("categorie") != args.categorie:
             return False
         if args.famille and p.get("famille") != args.famille:
+            return False
+        if args.langage and str(p.get("langage") or "").lower() != args.langage.lower():
             return False
         if args.tag and args.tag not in (p.get("tags") or []):
             return False
