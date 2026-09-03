@@ -39,11 +39,11 @@ propre travail.
 | 0 | Réglages Obsidian — graphe et propriétés | `lot-0-reglages.md` | oui | **fait le 2026-09-04** |
 | 1 | Spec et arborescence | — | — | **fait le 2026-09-04** |
 | 2 | `role:` remplace `galaxie:`/`type:` ; nettoyage du frontmatter | `lot-2-role.md` | oui | **fait le 2026-09-04** — 646 pages, validateur vert, 0 lien non résolu. Écarts au brief et pertes assumées : cf. *Remontées* |
-| 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | — |
-| 4 | Recatégorisation des 205 notions | `lot-4-notions.md` | après lot 3 | — |
+| 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | **fait le 2026-09-05** — 20 domaines, 682 fichiers déplacés, `Dev/` n'existe plus |
+| 4 | Recatégorisation des 205 notions | `lot-4-notions.md` | après lot 3 | **fait le 2026-09-05** — 297 notions rangées, 10 MOC supprimées sur mesure, `Wiki/` et `MOC/` n'existent plus |
 | 5 | Comparatifs `.base` → pages `.md` | `lot-5-comparatifs.md` | après lot 3 | — |
 | 6 | Conversion des fiches au nouveau gabarit | `lot-6-gabarit.md` | après lot 2 | — |
-| 7 | Skills et règle de propagation | `lot-7-skills.md` | après lots 2 et 3 | — |
+| 7 | Skills et règle de propagation | `lot-7-skills.md` | après lots 2 et 3 | **fait** — `enrichir-brain` et `cloturer-brain` scindés, mode wiki dissous |
 | 8 | Durcissement des règles du validateur | `lot-8-durcissement.md` | en dernier | — |
 
 **Une conversation à la fois, jamais deux en parallèle.** Les fichiers sources de 4, 5 et 6 sont

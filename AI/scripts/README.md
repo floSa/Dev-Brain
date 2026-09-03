@@ -123,7 +123,7 @@ Inverse de `discover-links` : pour chaque fiche du vault, trouve les candidats *
 powershell -File AI/scripts/audit-links.ps1
 
 # Une seule fiche
-powershell -File AI/scripts/audit-links.ps1 -Path "Wiki/Concepts/RAG.md"
+powershell -File AI/scripts/audit-links.ps1 -Path "LLM & IA générative/RAG & retrieval/RAG.md"
 
 # Une galaxie
 powershell -File AI/scripts/audit-links.ps1 -Galaxie wiki

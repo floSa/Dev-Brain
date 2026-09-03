@@ -30,20 +30,19 @@ Pré-requis : Obsidian, Git, Node.js ≥ 18, Python ≥ 3.10, [`uv`](https://doc
 
 | | |
 |---|---|
-| **L'alimenter** | "ajoute Qdrant au brain", "documente le concept RAG" → le skill `enrichir-brain` crée/complète la fiche dans `Dev/` (technique) ou `Wiki/Concepts/` (notion), câble les liens, régénère l'index. |
+| **L'alimenter** | "ajoute Qdrant au brain", "documente le concept RAG" → le skill `enrichir-brain` crée/complète la page dans le dossier que sa `categorie:` donne — brique et notion du même sujet y vivent côte à côte —, câble les liens, régénère l'index. |
 | **L'utiliser depuis un projet** | Depuis un *autre* projet, lancer `claude` avec `CLAUDE-project.md` en template → le skill `planifier-projet` interroge le brain et propose un stack sourcé (2-3 candidats par brique, avec pitch). |
-| **Logger un retour d'expérience** | "log un bug : timeout sur Postgres" → pas de skill dédié aujourd'hui, Claude écrit à la main dans la section `## Pièges` de `Dev/Services/<service>.md`. |
+| **Logger un retour d'expérience** | "log un bug : timeout sur Postgres" → pas de skill dédié aujourd'hui, Claude écrit à la main dans la section `## Pièges` de la brique concernée. |
 
 ## Ce que contient le brain
 
 | | |
 |---|---|
-| **Dev/** (agent-readable) | quatre piliers : Services, Outils, Patterns/Comparatifs, Règles |
-| **Wiki/** (perso) | Concepts (notions DS/ML/AI eng) — `Outils/`, `Workflows/`, `Roadmaps/` pas encore repeuplés |
-| **MOC/** | hubs de navigation générés automatiquement |
+| **L'arbre** | 20 dossiers de domaine à la racine — 337 briques, 297 notions, 47 comparatifs, et une page hub par dossier |
+| **Hors de l'arbre** | `Métiers/` (6 hubs transverses, générés depuis `domaines:`), `Patterns/` et `Rules/`, groupés par `role:` — aucune `categorie:` ne les range |
 | **Skills** | `enrichir-brain` (capture), `cloturer-brain` (clôture + politique git), `planifier-projet` (cadrage) |
-| **Rangement** | deux axes : `categorie:` le domaine (94 valeurs), `famille:` la nature (9 valeurs fermées) — arbre de décision dans `Documentation/general/taxonomie.md` |
-| **Garde-fous** | `check_brain.py`, 16 règles dont 10 dures ; lancé à chaque fin de session par un hook `Stop` |
+| **Rangement** | trois axes : `role:` ce que la page **est**, `categorie:` son **domaine** (qui donne son dossier), `famille:` la **nature technique** d'une brique — arbres de décision dans `Documentation/general/taxonomie.md` |
+| **Garde-fous** | `check_brain.py` (le contenu) et `check_arbo.py` (le rangement), tous deux à passer au vert avant tout commit |
 
 ## Structure
 
@@ -52,17 +51,16 @@ DevBrain/
 ├── CLAUDE.md, CLAUDE-build.md, CLAUDE-project.md   ← contexte Claude Code (routeur + modes)
 ├── INSTALL.md / CONTRIBUTING.md / CHANGELOG.md      ← docs méta
 │
-├── Dev/                          ← galaxie agent-readable (factuel, dense)
-│   ├── Services/                 (briques à déployer : frameworks, BDD, libs…)
-│   ├── Outils/                   (outils utilisés : clients GUI, CLI…)
-│   ├── Patterns/                 (Comparatif - <thème>.base + Pattern - <nom>.md)
-│   └── Rules/                    (règles transverses : Rule - <nom>.md)
+├── <20 dossiers de domaine>/     ← l'arbre : Bases de données/, Machine Learning/,
+│   │                               LLM & IA générative/, Data & pipelines/, Stockage/…
+│   ├── <Domaine>.md              (role: hub — zone <!-- AUTO --> générée)
+│   ├── <Sous-domaine>/           (promu à 5 pages, avec son propre hub)
+│   ├── <Brique>.md               (role: brique)  <Notion>.md  (role: notion)
+│   └── Comparatif - <thème>.base
 │
-├── Wiki/                         ← galaxie perso (humain, narratif)
-│   ├── Concepts/                 (notions DS/ML/AI eng — peuplé)
-│   └── Outils/ Workflows/ Roadmaps/   (vides, pas encore remigrés depuis v1)
-│
-├── MOC/                          ← hubs de navigation générés (Themes/Categories/Concepts/Types)
+├── Métiers/                      ← 6 hubs transverses, générés depuis `domaines:`
+├── Patterns/                     ← Pattern - <nom>.md   (role: pattern)
+├── Rules/                        ← Rule - <nom>.md      (role: rule)
 ├── Documentation/                ← gouvernance (tags, taxonomie, conventions perso)
 ├── Templates/                    ← gabarits Templater
 ├── Projects/                     ← log des projets en cours (scaffold, vide)
@@ -72,8 +70,8 @@ DevBrain/
 
 ## Conventions clés
 
-- **Wikilinks qualifiés par chemin** : `[[Dev/Services/Postgres|Postgres]]` (fiche Service).
-- **Frontmatter dense sur chaque fiche Service** (`pitch`, `categorie`, `famille`, `licence_type`, `hosted`, `maturite`, `alternatives`, `status`, `tags`...) — sert d'index plat pour Claude, sans avoir à charger le contenu.
+- **Wikilinks nus, jamais qualifiés par chemin** : `[[Postgres]]`. Un lien qualifié casse au déplacement — le lot 3 a déplacé 682 fichiers sans en toucher un seul. Le pipe ne sert qu'à changer le texte affiché (`[[Postgres|la base]]`).
+- **Frontmatter dense sur chaque brique** (`role`, `pitch`, `categorie`, `famille`, `licence_type`, `maturite`, `alternatives`, `complements`, `tags`…) — sert d'index plat pour Claude, sans avoir à charger le contenu.
 - **Trois niveaux de règle** : `must` (bloquant), `should` (par défaut, écarts signalés), `nice-to-have` (si possible).
 
 ## Contribution

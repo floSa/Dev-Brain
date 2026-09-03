@@ -10,7 +10,7 @@
 > `uv run AI/scripts/sync_reservoir.py` (source de vérité = `brain-index.json`). Le script
 > recoche tout et affiche le prochain lot suggéré.
 
-Rappel du rangement v2 : **technique → `Dev/`** (services à déployer dans `Dev/Services/`, outils techniques dans `Dev/Outils/`) ; **notions → `Wiki/Concepts/`** ; **skills perso → `Wiki/Outils/`**.
+Rappel du rangement **v3** : il n'y a plus ni `Dev/` ni `Wiki/`, et donc plus de dossier à choisir. Une page se range par sa `categorie:`, qui donne son dossier dans l'arbre des 20 domaines (`AI/scripts/arbo.py`) ; ce qu'elle **est** — brique, notion, pattern, règle — est porté par `role:`, pas par son chemin. Les skills perso portent `skill/*`, rattaché à « Outils de développement » (arbitrage du 2026-09-04).
 
 ## Boucle de migration (1 conversation = 1 lot)
 
@@ -512,44 +512,44 @@ Sur les sections marquées ⚠️ (catégorie non tranchée), valider la catégo
 
 ---
 
-# PARTIE C — Skills perso & workflows (galaxie `Wiki`)
+# PARTIE C — Skills perso & workflows
 
-## Outils en ligne de commande → `Dev/Outils` (`tooling/package`)
-- ✅ **uv** — gestionnaire de paquets/venv Python. ⚠️ technique → **Dev**, pas Wiki.
+## Outils en ligne de commande → « Outils de développement » (`devtools/*`)
+- ✅ **uv** — gestionnaire de paquets/venv Python. C'est une **brique**, pas un skill perso.
 
-## Skills Claude Code → `Wiki/Outils` (`skill/*`)
+## Skills Claude Code → « Outils de développement » (`skill/*`)
 - ⬜ anthropic-{consolidate-memory, docx, pdf, pptx, setup-cowork, skill-creator, xlsx}
 - ⬜ claude-{api, fewer-permission-prompts, init, keybindings-help, loop, review, schedule, security-review, simplify, update-config}
 
-## Serveurs MCP → `Wiki/Outils` (`skill/knowledge` ou à valider)
+## Serveurs MCP → « Outils de développement » (`skill/knowledge` ou à valider)
 - ⬜ mcp-{filesystem, github, obsidian, postgres}
 - ⬜ mcp-obsidian — reference outils
 
-## Extensions Obsidian → `Wiki/Outils`
+## Extensions Obsidian → « Outils de développement » (`skill/knowledge`)
 - ⬜ kepano-defuddle — extraction d'article propre.
 - ⬜ kepano-obsidian-skills — skills Obsidian officiels.
 
-## Workflows → `Wiki/Workflows`
+## Workflows → domaine à dériver de leur sujet (le dossier `Wiki/Workflows/` n'existe plus)
 - ⬜ Bootstrap projet AI eng
 - ⬜ Debug pipeline data
 - ⬜ Evaluer un modele forecast
 - ⬜ Evaluer un systeme LLM
 
 ## Index & guides v1 (référence, non migrables tels quels)
-- _guide, _installer-un-skill, Roadmap, Roadmap-AI — repensés en v2 (MOC, Documentation).
+- _guide, _installer-un-skill, Roadmap, Roadmap-AI — repensés en v2 puis en v3 (les hubs de l'arbre, `Documentation/`). Le dossier `Wiki/Roadmaps/` n'existe plus.
 
 ---
 
 # PARTIE D — Patterns & Rules v1 (référence)
 
-## Patterns → `Dev/Patterns`
+## Patterns → « Patterns/ » (`role: pattern`)
 - ⬜ Pattern - Agent ReAct · Pattern - API REST FastAPI minimale · Pattern - CLI Python distribuable · Pattern - Forecasting production · Pattern - LLM Eval setup · Pattern - Pipeline ELT moderne · Pattern - RAG basique · Pattern - SaaS multi-tenant
 - ⬜ Comparatif - Bases vectorielles *(refait en `.base` v2)* · Comparatif - LLM eval et observability · Comparatif - ML orchestration · Comparatif - Orchestrateurs data
 
-## Rules → `Dev/Rules`
+## Rules → « Rules/ » (`role: rule`)
 - **Global** : ⬜ Code-style · Documentation · Git · README · Security · Tests
 - **Types** : ⬜ CLI · Data-pipeline · Library · ML-pipeline · Web-app
 - **Documentation** : ⬜ Config-Env · Database-{Graph,Relational,Vector} · Document-Processing · LLM-Orchestration · Orchestration-Data · Storage-Object · Project-README · README - Service · Tests · Index
 
-## REX (v1) → section `## Pièges` des fiches Service
-- ⬜ **REX - Postgres** — *(le REX v1 existe dans le réservoir ; le pilier REX est supprimé depuis le 2026-09-02 — audit axe 6, option B. À reporter, si utile, dans la section `## Pièges` de `Dev/Services/Postgres.md`).*
+## REX (v1) → section `## Pièges` de la brique concernée
+- ⬜ **REX - Postgres** — *(le REX v1 existe dans le réservoir ; le pilier REX est supprimé depuis le 2026-09-02 — audit axe 6, option B. À reporter, si utile, dans la section `## Pièges` de `Bases de données/Relationnel/Postgres.md`).*

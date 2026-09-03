@@ -141,10 +141,10 @@ deux dossiers `Dev/` que `categorie:` ne rangeait pas :
   (lot 8, cf. remontée 21 de `lot-3-arborescence.md`) ;
 - `MOC/Concepts/*` → les mêmes pages hub, puisque notions et briques cohabitent désormais
   — mais **seulement au lot 4**, une par une. Ces 10 pages étaient la seule porte d'entrée
-  (R7) de 30 des 297 notions. **7 sont supprimées au 2026-09-05** : une MOC meurt quand il
-  est **mesuré** que zéro page ne dépend plus d'elle seule pour sa R7 **et** que
-  `build_mocs.py` ne la régénère plus, jamais sur l'intuition. C'est la seule exception à
-  « aucun `rm` sur une page » pendant la migration.
+  (R7) de 30 des 297 notions. **Les 10 sont supprimées au 2026-09-05, et `MOC/` avec
+  elles** : une MOC meurt quand il est **mesuré** que zéro page ne dépend plus d'elle
+  seule pour sa R7 **et** que `build_mocs.py` ne la régénère plus, jamais sur l'intuition.
+  C'est la seule exception à « aucun `rm` sur une page » pendant la migration.
 
 La suppression des suffixes `(notions)` de `CONCEPT_LABEL` est un effet de bord attendu : ils
 n'existaient que pour éviter la collision de nom entre un hub et une notion homonyme. En v3 la
@@ -467,11 +467,12 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 0 | Masquer `liens.md` du graphe ; masquer le panneau de propriétés | oui, réglages |
 | 1 | Écrire la spec et l'arborescence, les valider | sans effet sur le vault |
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
-| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **CLOS le 2026-09-05** : 20 domaines, puis « Métiers/ », « Patterns/ », « Rules/ » et le dernier comparatif transverse. `Dev/` n'existe plus ; `Wiki/Concepts/` et `MOC/Concepts/` restent, pour le lot 4 | oui, `git mv` |
-| 4 | Les notions à recatégoriser, par lots. **En cours** — 141 rangées au 2026-09-05 (`stats` 37, `math` 26, `data` 13, `signal` 5, `ai` 4, `llm` 56) ; restent 156 sous `Wiki/Concepts/` (`ml` 67, `dl` 52, `rl` 17, `ts` 13, `nlp` 7) et 3 `MOC/Concepts/`. `math` et `stats` sont passés en premier, pas `ml`/`llm` : ce sont eux qui exigeaient d'ouvrir du vocabulaire, et l'ordre s'est vérifié — `llm` a quand même dû en ouvrir trois | oui |
+| 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **CLOS le 2026-09-05** : 20 domaines, puis « Métiers/ », « Patterns/ », « Rules/ » et le dernier comparatif transverse. `Dev/` n'existe plus | oui, `git mv` |
+| 4 | Les notions à recatégoriser, par lots — **CLOS le 2026-09-05**. Les 297 sont dans l'arbre, les douze familles passées (`stats` 37, `math` 26, `data` 13, `signal` 5, `ai` 4, `llm` 56, `rl` 17, `ts` 13, `nlp` 7, `dl` 52, `ml` 67), les 10 `MOC/Concepts/` supprimées sur mesure, `Wiki/` et `MOC/` n'existent plus. `math` et `stats` sont passés en premier, pas `ml`/`llm` : ce sont eux qui exigeaient d'ouvrir du vocabulaire, et l'ordre s'est vérifié — `llm` a quand même dû en ouvrir trois | oui |
 | 5 | Comparatifs `.base` → pages `.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
-| 7 | Durcissement des règles du validateur restées en avertissement | oui |
+| 7 | Skills et règle de propagation — **fait**, cf. `AI/migration/lot-7-skills.md` | oui |
+| 8 | Durcissement des règles du validateur restées en avertissement | oui |
 
 Rien n'est irréversible : tout passe par git, un lot par commit, le validateur au vert à
 chaque étape.

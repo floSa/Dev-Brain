@@ -38,11 +38,15 @@ tous deux sortent **toujours** en 0.
 
 | Hook | Script | Quand | Effet |
 |---|---|---|---|
-| `Stop` | `AI/scripts/stop_check_brain.py` | Seulement si la session a touché `Dev/` ou `Wiki/` | Lance `uv run AI/scripts/check_brain.py`. Silencieux si vert ; remonte un message si rouge. |
+| `Stop` | `AI/scripts/stop_check_brain.py` | Seulement si la session a touché une **page** du brain | Lance `uv run AI/scripts/check_brain.py`. Silencieux si vert ; remonte un message si rouge. |
 | `Stop` | `AI/scripts/session_to_devbrain.py` | Chaque fin de session | Écrit un résumé dans `AI/sessions/`. Ne fait rien sans `ANTHROPIC_API_KEY`. |
 
-La détection « la session a touché `Dev/` ou `Wiki/` » croise deux signaux : les écritures
-`Write` / `Edit` / `MultiEdit` visées dans le transcript, et `git status` sur ces deux dossiers.
+La détection « la session a touché une page » croise deux signaux : les écritures
+`Write` / `Edit` / `MultiEdit` visées dans le transcript, et `git status`. Le périmètre est
+défini **en négatif** — tout `.md` / `.base` qui n'est pas sous `AI/`, `Documentation/`,
+`Templates/`, `Projects/`, `docs/` ou un dossier de configuration. Il était défini en positif
+sur `Dev/` et `Wiki/` : les deux ayant disparu aux lots 3 et 4, le hook ne lançait plus rien
+du tout, en silence. Corrigé le 2026-09-05.
 
 Les deux scripts résolvent l'emplacement du vault par **racine git du `cwd` du payload →
 `$DEVBRAIN_VAULT` → emplacement du script**. Aucun chemin absolu n'est écrit en dur, ni dans

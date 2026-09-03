@@ -2,7 +2,7 @@
 # requires-python = ">=3.10"
 # dependencies = []
 # ///
-"""stop_check_brain.py — hook Stop : lance check_brain.py si la session a touché Dev/ ou Wiki/.
+"""stop_check_brain.py — hook Stop : lance check_brain.py si la session a touché une page.
 
 Déclaré dans `.claude/settings.json` (clé `hooks.Stop`). Reçoit le payload du hook
 sur stdin (`session_id`, `cwd`, `transcript_path`, …).
@@ -12,11 +12,19 @@ timeout ne doit faire échouer ni bloquer une session — le script sort *toujou
 Quand `check_brain.py` est vert, le hook est silencieux : friction nulle.
 Quand il est rouge, le hook remonte un `systemMessage` et s'arrête là.
 
-Détection « la session a touché Dev/ ou Wiki/ » — union de deux signaux :
+Détection « la session a touché une page » — union de deux signaux :
   1. le transcript de session : un Write / Edit / MultiEdit / NotebookEdit visant
-     une page sous `Dev/` ou `Wiki/` ;
-  2. l'état git : au moins un fichier modifié sous `Dev/` ou `Wiki/` (couvre les
-     écritures faites hors outils d'édition, par script ou par `Bash`).
+     une page du brain ;
+  2. l'état git : au moins un `.md` / `.base` de page modifié dans l'arbre de travail
+     (couvre les écritures faites hors outils d'édition, par script ou par `Bash`).
+
+Le périmètre est défini **en négatif**, et c'est le correctif du 2026-09-05. Il était
+écrit en positif, sur les deux galaxies de la v2 : `Dev/` a disparu à la clôture du
+lot 3, `Wiki/` à celle du lot 4, et le hook ne trouvait donc plus jamais rien à
+vérifier. Il **ne lançait plus check_brain depuis le lot 3**, sans un mot — indiscernable
+d'un vert. Une liste positive de dossiers de pages serait à tenir à jour à chaque
+promotion de domaine ; la liste des dossiers qui n'en portent PAS, elle, ne bouge pas
+(c'est `arbo.NON_PAGES`, recopié ici pour garder le hook sans dépendance).
 
 Résolution du vault (aucun chemin absolu en dur, cf. `Documentation/perso/machines.md`) :
 racine git du `cwd` du payload → `$DEVBRAIN_VAULT` → emplacement du script.
@@ -30,7 +38,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-SCAN_DIRS = ("Dev", "Wiki")
+# Dossiers de la racine qui ne portent aucune page du brain — miroir de `arbo.NON_PAGES`.
+# Tout le reste en porte : les 20 dossiers de domaine, « Métiers/ », « Patterns/ »,
+# « Rules/ », et les pages posées à la racine (`Home.md`).
+NON_PAGES = {".git", ".github", ".githooks", ".claude", ".obsidian",
+             "AI", "Documentation", "Templates", "Projects", "docs"}
+PAGE_SUFFIXES = (".md", ".base")
 EDIT_TOOLS = {"Write", "Edit", "MultiEdit", "NotebookEdit"}
 CHECK_TIMEOUT_S = 300
 GIT_TIMEOUT_S = 30
@@ -75,19 +88,23 @@ def resolve_vault(cwd: Path) -> Path:
 
 
 def in_scope(raw: str, vault: Path) -> bool:
-    """Le chemin `raw` désigne-t-il une page sous Dev/ ou Wiki/ du vault ?"""
-    if not raw:
+    """Le chemin `raw` désigne-t-il une page du brain ?
+
+    Une page est un `.md` / `.base` qui n'est pas sous un dossier de `NON_PAGES`.
+    Un chemin qu'on ne sait pas rapporter au vault est tenu HORS périmètre : le
+    signal git ci-dessous le rattrapera, et le hook rapporte — il ne devine pas.
+    """
+    if not raw or not raw.lower().endswith(PAGE_SUFFIXES):
         return False
     try:
         rel = Path(raw).resolve().relative_to(vault)
     except (ValueError, OSError, RuntimeError):
-        text = raw.replace("\\", "/")
-        return text.startswith(SCAN_DIRS) or any(f"/{d}/" in text for d in SCAN_DIRS)
-    return bool(rel.parts) and rel.parts[0] in SCAN_DIRS
+        return False
+    return bool(rel.parts) and rel.parts[0] not in NON_PAGES
 
 
 def touched_in_transcript(transcript_path: Path, vault: Path) -> bool:
-    """Le transcript contient-il une écriture visant Dev/ ou Wiki/ ?"""
+    """Le transcript contient-il une écriture visant une page du brain ?"""
     try:
         handle = transcript_path.open(encoding="utf-8", errors="replace")
     except OSError:
@@ -119,15 +136,26 @@ def touched_in_transcript(transcript_path: Path, vault: Path) -> bool:
 
 
 def touched_in_git(vault: Path) -> bool:
-    """Un fichier est-il modifié sous Dev/ ou Wiki/ dans l'arbre de travail ?"""
+    """Une page du brain est-elle modifiée dans l'arbre de travail ?"""
     try:
         out = subprocess.run(
-            ["git", "-C", str(vault), "status", "--porcelain", "--", *SCAN_DIRS],
+            ["git", "-C", str(vault), "status", "--porcelain", "-z"],
             capture_output=True, text=True, timeout=GIT_TIMEOUT_S,
+            encoding="utf-8", errors="replace",
         )
     except (OSError, subprocess.SubprocessError):
         return False
-    return out.returncode == 0 and bool(out.stdout.strip())
+    if out.returncode != 0:
+        return False
+    for entree in out.stdout.split("\0"):
+        # `XY <chemin>` ; un renommage émet la cible puis la source en deux entrées
+        # séparées par le NUL — les deux passent par ce test.
+        chemin = entree[3:] if len(entree) > 3 else ""
+        if not chemin.lower().endswith(PAGE_SUFFIXES):
+            continue
+        if chemin.replace("\\", "/").split("/")[0] not in NON_PAGES:
+            return True
+    return False
 
 
 def run_check_brain(vault: Path) -> tuple[int, str]:
@@ -165,7 +193,7 @@ def main() -> None:
         touched = touched_in_git(vault)
 
     if not touched:
-        print("stop_check_brain : aucune écriture dans Dev/ ou Wiki/ — check_brain non lancé.",
+        print("stop_check_brain : aucune écriture dans une page — check_brain non lancé.",
               file=sys.stderr)
         return
 

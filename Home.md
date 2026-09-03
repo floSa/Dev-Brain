@@ -55,16 +55,19 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 - Gouvernance : `Documentation/general/` (tags, taxonomie, themes)
 - Réservoir v1 : [[reservoir-v1|Inventaire v1]] (+ `Archive-v1.zip`)
 
-## Ce qui n'est pas encore dans l'arbre
+## Tout est dans l'arbre
 
 La v3 remplace les deux galaxies par un arbre de domaines : la nature d'une page
 est portée par `role:`, son domaine par son dossier (cf. `AI/design/brain-v3.md`).
-`Dev/` n'existe plus. Il reste **`Wiki/Concepts/`** — **119** notions `concept/*` que
-le lot 4 descendra dans l'arbre, et **2** `MOC/Concepts/` avec elles : ces pages sont
-aujourd'hui leur seule porte d'entrée, et chacune meurt le jour où il est **mesuré** que
-plus aucune notion ne dépend d'elle seule. Familles déjà rangées au 2026-09-05 :
-statistiques, mathématiques, data, signal, sécurité IA, LLM, le renforcement, les séries
-temporelles et le NLP. Restent le machine learning (67) et le deep learning (52).
+**Le lot 4 est clos depuis le 2026-09-05, et il ne reste rien à côté de l'arbre** :
+`Dev/` avait disparu au lot 3, `Wiki/` a suivi — ses 297 notions sont descendues dans
+les 20 domaines, ses trois scaffolds vides (`Outils/`, `Workflows/`, `Roadmaps/`) sont
+supprimés, et `MOC/` ne porte plus aucune page. Une notion se cherche donc exactement
+comme une brique : par le hub de son dossier.
+
+Ce qui reste ouvert est du **format**, pas du rangement : les comparatifs `.base`
+deviennent des pages au lot 5, les fiches passent au nouveau gabarit au lot 6, et les
+règles du validateur restées en avertissement durcissent au lot 8.
 
 ## Skills
 

@@ -15,12 +15,14 @@ Contrôle trois choses, et rien d'autre :
      sous-domaine en dessous n'en a pas. Le seuil décide, pas l'humeur.
   3. **Hub par dossier** — tout dossier de l'arbre porte une page `role: hub` à son nom.
 
-Sort en code 1 si un écart est trouvé. Deux populations sont comptées à part, parce
-qu'elles n'ont pas de chemin à dériver :
+Sort en code 1 si un écart est trouvé. Une population est comptée à part, parce
+qu'elle n'a pas de chemin à dériver : les `role: pattern` et `role: rule`
+(`arbo.ROLES_SANS_CATEGORIE`), qui n'ont pas de `categorie:` par construction et
+vivent dans « Patterns/ » et « Rules/ ».
 
-  - les pages encore sous `Dev/` et `Wiki/`, tant que leur domaine n'est pas passé ;
-  - les `role: pattern` et `role: rule` (`arbo.ROLES_SANS_CATEGORIE`), qui n'ont pas
-    de `categorie:` par construction et vivent dans « Patterns/ » et « Rules/ ».
+Il y en avait deux : les pages restées sous `Dev/` puis `Wiki/` étaient comptées sans
+être vérifiées, le temps que leur domaine passe. `arbo.LEGACY` est vide depuis la
+clôture du lot 4 — plus aucune page du vault n'échappe au contrôle.
 
 Usage : uv run AI/scripts/check_arbo.py
 """
@@ -63,7 +65,7 @@ def dossiers_de_pages() -> list[Path]:
 
 def main() -> int:
     migrees: list[tuple[Path, str]] = []   # pages descendues dans l'arbre
-    legacy = 0                             # pages encore sous Dev/ ou Wiki/
+    legacy = 0                             # pages sous un dossier `arbo.LEGACY`
     hors_arbre = 0                         # pages rangées par `role:`, pas par domaine
     hubs: set[str] = set()
 
@@ -116,9 +118,10 @@ def main() -> int:
 
     par_dom: dict[str, int] = collections.Counter(
         rel.parts[0] for rel, _ in migrees)
+    reste = (f"{legacy} page(s) encore sous {sorted(arbo.LEGACY)}, "
+             if arbo.LEGACY else "")
     print(f"check_arbo : {len(migrees)} page(s) migrée(s) dans "
-          f"{len(par_dom)} domaine(s) — {legacy} page(s) encore sous "
-          f"{sorted(arbo.LEGACY)}, {hors_arbre} rangée(s) par `role:` "
+          f"{len(par_dom)} domaine(s) — {reste}{hors_arbre} rangée(s) par `role:` "
           f"({', '.join(sorted(arbo.ROLES_SANS_CATEGORIE))})")
     for dom, n in sorted(par_dom.items()):
         print(f"  {dom}/ — {n} page(s)")

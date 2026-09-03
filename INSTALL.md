@@ -517,13 +517,13 @@ Si tu ne vois pas l'effet, refais "Reload app" (`Ctrl+R`).
 
 ### C. Exclure les Roadmaps du graphe (optionnel)
 
-`Wiki/Roadmaps/` est un scaffold **vide** : il était prévu pour des documents de référence à fort volume de wikilinks fantômes (héritage v1 : `Roadmap.md` ~1500 items, `Roadmap-AI.md`), jamais remigrés — et la v3 n'ayant plus de galaxie `Wiki/`, leur reconduction n'est pas acquise. Si un jour ils reviennent, exclus-les du graphe pour éviter le nuage gris déconnecté :
+`Wiki/Roadmaps/` était un scaffold vide prévu pour des documents de référence à fort volume de wikilinks fantômes (héritage v1 : `Roadmap.md` ~1500 items, `Roadmap-AI.md`), jamais remigrés. **Il a été supprimé le 2026-09-05** avec le reste de `Wiki/` : la v3 n'a plus de galaxie, et une roadmap qui reviendrait se rangerait par son domaine comme tout le reste. Rien à exclure aujourd'hui, donc — cette section reste pour le jour où un document de ce genre revient et noie le graphe sous un nuage gris déconnecté :
 
 1. Toujours dans les **Settings** du panneau graphe → onglet **Filtres** *(Filters)*
 2. Dans le champ **Recherche** *(Search)*, coller :
 
    ```
-   -path:Wiki/Roadmaps/
+   -path:<le dossier du document>
    ```
 
    Le `-` exclut.

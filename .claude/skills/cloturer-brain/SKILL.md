@@ -25,7 +25,7 @@ d'une procédure ne doit pas être noyée dans la partie qui demande du jugement
 
 - **Après une capture** avec `enrichir-brain`, qui se termine en le nommant.
 - **Après toute écriture manuelle** dans une page du vault — l'arbre des 20 domaines,
-  `Métiers/`, `Patterns/`, `Rules/`, `Wiki/Concepts/` — y compris une modification faite
+  `Métiers/`, `Patterns/`, `Rules/` — y compris une modification faite
   directement dans Obsidian, hors de toute session d'agent. C'est le cas qui n'était couvert
   par rien : le vault pouvait rester des jours avec un index périmé.
 - **Après un correctif** appliqué par un agent, avant d'intégrer son travail.
@@ -88,13 +88,13 @@ Dans cet ordre, l'index d'abord : les deux suivants le consomment.
 
 ```bash
 uv run AI/scripts/build_index.py   # brain-index.json + brain-index.md
-uv run AI/scripts/build_mocs.py    # zones AUTO des hubs de l'arbre + Métiers/ + MOC/Concepts/
+uv run AI/scripts/build_mocs.py    # zones AUTO des hubs de l'arbre + Métiers/
 uv run AI/scripts/build_links.py   # carte des liens (AI/index/liens.md)
 ```
 
-`build_mocs.py` ne remplit pas un dossier `MOC/` : il écrit la zone `<!-- AUTO -->` de chaque
-page `role: hub` de l'arbre, les 5 hubs de `Métiers/` (depuis `domaines:`) et, jusqu'au
-lot 4, les 10 `MOC/Concepts/`. Le **corps** d'un hub, hors zone AUTO, est écrit à la main :
+`build_mocs.py` ne remplit plus de dossier `MOC/` — il n'en existe plus depuis la clôture du
+lot 4. Il écrit la zone `<!-- AUTO -->` de chaque page `role: hub` de l'arbre et les 6 hubs de
+`Métiers/` (depuis `domaines:`). Le **corps** d'un hub, hors zone AUTO, est écrit à la main :
 la régénération ne le touche pas, et ne le répare donc pas non plus.
 
 Fin d'étape vérifiable : `build_links` annonce **0 lien non résolu**. Un lien non résolu à ce

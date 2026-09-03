@@ -23,15 +23,12 @@ et `MOC/Types/` n'existent plus depuis le lot 3.
 
 | Dossier | Mode | Rôle | Ouvrir avec |
 |---|---|---|---|
-| **`<Domaine>/`** ×20 | brain | L'arbre : `Bases de données/`, `Machine Learning/`, `LLM & IA générative/`, `Data & pipelines/`… Contient les briques (`role: brique`), les comparatifs `.base`, et une page hub à son nom | skill `enrichir-brain` |
+| **`<Domaine>/`** ×20 | brain | L'arbre : `Bases de données/`, `Machine Learning/`, `LLM & IA générative/`, `Data & pipelines/`… Contient les briques (`role: brique`), **les notions (`role: notion`)**, les comparatifs `.base`, et une page hub à son nom | skill `enrichir-brain` |
 | `<Domaine>/<Sous-domaine>/` | brain | Promu quand un sous-domaine atteint 5 pages (`Vectoriel/`, `Apprentissage profond/`…), sauf s'il ne laisse aucune page au domaine | idem |
 | `<Domaine>/<Domaine>.md` | **généré + main** | La page hub du dossier (`role: hub`). Corps à la main, zone `<!-- AUTO -->` générée | corps : éditeur · AUTO : `build_mocs.py` |
-| `Métiers/` | **généré** | 5 hubs transverses (Data Science, Data Engineering, MLOps, ML Engineering, AI Engineering), générés depuis `domaines:` | `AI/scripts/build_mocs.py` |
+| `Métiers/` | **généré** | 6 hubs transverses (Data Science, Data Engineering, MLOps, ML Engineering, AI Engineering, Infrastructure & Ops), générés depuis `domaines:` | `AI/scripts/build_mocs.py` |
 | `Patterns/` | brain | `Pattern - <nom>.md` (`role: pattern`) — groupés par rôle, sans `categorie:` | éditeur / `enrichir-brain` |
 | `Rules/` | brain | `Rule - <nom>.md` (`role: rule`) — idem | éditeur direct |
-| `Wiki/Concepts/` | brain | Les 297 notions (`role: notion`). **Descendront dans l'arbre au lot 4** | `enrichir-brain` / Templater `Concept-Wiki` |
-| `MOC/Concepts/` | **généré** | 10 MOC, seule porte d'entrée de 30 notions. Meurent avec `Wiki/Concepts/` au lot 4 | `build_mocs.py`, ne pas éditer à la main |
-| `Wiki/Outils|Workflows|Roadmaps/` | — | Scaffolds **vides** — contenu v1 pas remigré, reconduction non acquise | — |
 | `Documentation/` | brain | Gouvernance : tags, taxonomie, thèmes, conventions perso | éditeur direct |
 | `Projects/` | brain (log) | Suivi des projets actifs — scaffold vide aujourd'hui | éditeur direct |
 | `Templates/` | brain | Gabarits Templater | éditeur direct |
@@ -59,8 +56,8 @@ et `MOC/Types/` n'existent plus depuis le lot 3.
 - Frontmatter obligatoire et **fermé** : `role`, `nom`, `alias`, `categorie`, `domaines`, `tags`. Rien d'autre.
 - **Créer** une notion : normal, dès qu'une capture en a besoin. **Modifier** une notion existante : sur demande explicite de floSa.
 - Wikilinks : ne pas créer de `[[X]]` vers du vide (`check_brain` R2 le refuse en dur).
-- Pas de nouveau sous-dossier dans `Wiki/` : le rangement se dérivera de `categorie:` au lot 4.
-- `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` sont vides : le workflow `discovered → tested → used → abandoned` hérité de la v1 n'a été ni retranché ni reconfirmé — à trancher si/quand ce pilier est remigré (cf. `Documentation/perso/reservoir-v1.md`).
+- **Aucun dossier à choisir** : le rangement se dérive de `categorie:`, comme pour une brique (`AI/scripts/arbo.py` le calcule, `check_arbo.py` le vérifie). Une famille nouvelle se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+- Les scaffolds `Wiki/Outils/`, `Wiki/Workflows/`, `Wiki/Roadmaps/` ont été **supprimés le 2026-09-05**, vides et sans contenu à accueillir : ce qui reviendra un jour du réservoir v1 se rangera par son domaine comme tout le reste. Le workflow `discovered → tested → used → abandoned` hérité de la v1 reste à trancher si ce pilier est remigré (cf. `Documentation/perso/reservoir-v1.md`).
 
 ### `CLAUDE*.md` — modifier avec prudence
 
@@ -93,8 +90,8 @@ mode brain
 > ajoute le concept <nom>
 ```
 
-Même skill. La notion va dans `Wiki/Concepts/<Nom>.md` jusqu'au lot 4, et se câble à ses
-briques **dans les deux sens**.
+Même skill. La notion va dans le dossier que sa `categorie:` donne — le même que ses
+briques — et se câble à elles **dans les deux sens**.
 
 ### Logger un bug rencontré
 

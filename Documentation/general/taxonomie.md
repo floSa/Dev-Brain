@@ -40,7 +40,7 @@ a plus de page sans gabarit [R3].
 | `role:` | Ce que la page est | Porte `categorie:` ? | Où elle vit |
 |---|---|---|---|
 | `brique` | ce qu'on **déploie ou importe** : service, outil, librairie | **oui** — c'est elle qui décide du dossier | `<Dossier>/<Nom>.md` |
-| `notion` | ce qu'il faut **comprendre** : définitions, maths, mécanismes | **oui** — son **domaine**, comme une brique | `<Dossier>/<Nom>.md` — les non encore migrées sont sous `Wiki/Concepts/` |
+| `notion` | ce qu'il faut **comprendre** : définitions, maths, mécanismes | **oui** — son **domaine**, comme une brique | `<Dossier>/<Nom>.md` — toutes migrées depuis le 2026-09-05 |
 | `pattern` | une **architecture éprouvée** | **non** | `Patterns/Pattern - <nom>.md` |
 | `rule` | une **règle transverse** | **non** | `Rules/Rule - <nom>.md` |
 | `hub` | la **page d'un dossier**, l'aiguillage | **non** | `<Dossier>/<Dossier>.md` + les 5 de `Métiers/` |
@@ -529,11 +529,11 @@ est morte et où sont parties ses pages.
   `MOC/Concepts/NLP (notions)` est morte avec la famille, sur la double mesure de la
   remontée 18 (0 page perdant sa seule porte R7, et `build_mocs.py` ne la régénère plus).
 
-Les valeurs restantes suivront, une par lot de domaine.
+Il n'en reste aucune : la liste ci-dessus est close, et le journal complet.
 
 ## Skills perso (`categorie: skill/<sous-domaine>`)
 
-> Réservé aux **skills / extensions** liés à la pratique perso (Claude Code, Obsidian, MCP). Les **outils techniques** (clients GUI, CLI, BDD, frameworks) ne sont PAS ici — ils vivent dans `Dev/` (cf. *Outils Dev* ci-dessus). Section vide en v2 tant qu'aucun skill n'est documenté.
+> Réservé aux **skills / extensions** liés à la pratique perso (Claude Code, Obsidian, MCP). Les **outils techniques** (clients GUI, CLI, BDD, frameworks) ne sont PAS ici — ils portent un domaine de l'arbre (cf. *Outils Dev* ci-dessus). `skill/*` n'est pas un domaine : `arbo.DOM_RATTACHE` le range dans « Outils de développement », arbitrage du 2026-09-04.
 
 ```
 skill/{documents, dev-flow, code-quality, knowledge, data, meta}
