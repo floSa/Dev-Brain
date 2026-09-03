@@ -2,7 +2,7 @@
 role: notion
 nom: GANs
 alias: [GAN, generative adversarial network, génération adversariale, réseau antagoniste génératif, DCGAN, StyleGAN, WGAN, CycleGAN, pix2pix]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [gan, generative-model, image-generation, deep-learning]
 ---

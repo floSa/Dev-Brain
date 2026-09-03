@@ -2,7 +2,7 @@
 role: notion
 nom: Classification audio par spectrogramme
 alias: [classification audio, audio classification, sound classification, reconnaissance de sons, audio CNN, mel-spectrogramme CNN, acoustic scene classification, SpecAugment]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [data-sci, ml-eng]
 tags: [audio-classification, spectrogram, cnn]
 ---

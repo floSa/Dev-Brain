@@ -2,7 +2,7 @@
 role: notion
 nom: Pruning
 alias: [Pruning, élagage, élagage de modèle, sparsity, sparsité, structured pruning, unstructured pruning, élagage structuré, élagage non structuré, magnitude pruning, lottery ticket]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [pruning, model-compression, deep-learning, inference-optimization]
 ---

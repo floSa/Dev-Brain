@@ -2,7 +2,7 @@
 role: notion
 nom: Autoencodeurs
 alias: [Autoencodeur, Autoencoder, Auto-encodeur, AE, VAE, Variational Autoencoder, Autoencodeur variationnel, Denoising autoencoder]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [data-sci, ml-eng]
 tags: [deep-learning, unsupervised, representation-learning, dimensionality-reduction]
 ---

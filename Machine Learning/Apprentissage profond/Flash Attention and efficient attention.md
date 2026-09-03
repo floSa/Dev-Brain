@@ -2,7 +2,7 @@
 role: notion
 nom: Flash Attention and efficient attention
 alias: [Flash Attention, FlashAttention, attention efficace, multi-query attention, MQA, grouped-query attention, GQA, sparse attention, sliding window attention, attention différentielle, Differential Transformer, DIFF Transformer, bruit d'attention]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, mlops, ai-eng]
 tags: [attention, inference-optimization, gpu, transformers]
 ---

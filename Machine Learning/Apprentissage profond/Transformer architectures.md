@@ -2,7 +2,7 @@
 role: notion
 nom: Transformer architectures
 alias: [Transformer, transformeur, architecture transformeur, encoder-decoder, decoder-only, encoder-only]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [transformers, deep-learning, attention, nlp]
 ---

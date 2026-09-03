@@ -418,10 +418,8 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl}
+concept/{ml}
 ```
-
-- `dl` — deep learning (architectures, attention, génératif)
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
 
@@ -467,6 +465,18 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   « Machine Learning/Séries temporelles/ ». Comme `rl` : aucune valeur ouverte, aucun
   sous-dossier créé. Le sous-domaine passe de 7 à 20 pages, promotions du vault
   inchangées (42 avant, 42 après).
+
+- `dl` — retiré le 2026-09-05, 52 notions réparties sur **quatre** valeurs et non une :
+  29 en `ml/apprentissage-profond`, 17 en `ml/vision`, 5 en `ml/interpretabilite` et 1 en
+  `llm/modele` (`Vision Language Models`). C'est la famille dont la projection
+  `concept/<sub>` -> `<dom>/<sub>` était la plus fausse, et la remontée 20 du lot 3
+  l'annonçait : la moitié des `concept/dl` décrit des **tâches de vision**, pas des socles
+  d'entraînement. **Aucune valeur ouverte, aucun sous-dossier créé, aucun libellé à
+  trancher** — les trois dossiers d'accueil existaient depuis le lot 3, et l'ensemble des
+  promotions du domaine est identique avant et après (9 et 9). `MOC/Concepts/Deep learning`
+  est morte avec la famille, sur la double mesure de la remontée 18, et sa suppression a
+  cassé trois wikilinks qui la visaient — réparés vers le hub homonyme, sans changer un
+  caractère du texte affiché.
 
 - `nlp` — retiré le 2026-09-05, 7 notions descendues dans « Machine Learning/NLP/ ».
   Aucune valeur ouverte, aucun sous-dossier créé ; le sous-domaine passe de 6 à 13 pages.

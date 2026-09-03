@@ -2,18 +2,18 @@
 role: hub
 nom: Apprentissage profond
 alias: [deep learning, réseaux de neurones]
-pitch: Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.
+pitch: Comment un réseau de neurones est fait et comment on l'entraîne — architectures, optimisation, mise à l'échelle, compression — et les socles qui le font tourner.
 domaines: [ml-eng, data-sci]
 tags: [deep-learning, gpu, autograd, transformers, attention, distributed-training, mixed-precision, quantization, model-compression]
 ---
 
 # Apprentissage profond
 
-> Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.
+> Comment un réseau de neurones est fait et comment on l'entraîne — architectures, optimisation, mise à l'échelle, compression — et les socles qui le font tourner.
 
 ## Ce qu'il faut comprendre
 
-- **Ce dossier ne range pas « tout ce qui est profond », il range les socles d'entraînement.** Un modèle de vision et un LLM sont profonds tous les deux ; ils ne sont pas ici. Une bibliothèque dont l'entrée est une image est dans [[Vision]], une bibliothèque de texte dans [[NLP]], un modèle de langage génératif dans [[LLM & IA générative]], une bibliothèque qui apprend par interaction dans [[Apprentissage par renforcement]]. Ce qui reste ici est la couche en dessous : celle qui donne des tenseurs, une différentiation automatique, des GPU et une boucle d'entraînement.
+- **Ce dossier ne range pas « tout ce qui est profond », il range le réseau lui-même — sa forme, son entraînement, et les socles qui l'exécutent.** Le critère se lit par ce qui n'est PAS ici : ce qu'on FAIT d'un réseau une fois entraîné est rangé par sa tâche. Des pixels en entrée → [[Vision]] ; du texte hors génération → [[NLP]] ; générer du langage → [[LLM & IA générative]] ; apprendre par interaction → [[Apprentissage par renforcement]] ; ouvrir le réseau pour comprendre son calcul → [[Interprétabilité]] ; l'exposer derrière une API → [[Serving]]. Restent ici les quatre choses qui valent pour tout réseau quelle que soit sa tâche : son architecture, sa recette d'optimisation, ce qui le fait tenir à l'échelle, ce qui le compresse — plus les bibliothèques qui donnent tenseurs, autograd et GPU.
 - **Le vrai choix est le framework, et il se fait une fois pour toutes** — c'est la décision la plus coûteuse à revenir dessus de tout le domaine. Elle porte sur l'écosystème disponible (modèles pré-entraînés, tutoriels, recrutement) bien plus que sur les performances brutes, qui se sont égalisées.
 - **Un réseau, c'est une architecture plus une recette d'optimisation**, et les deux se documentent séparément. Côté architecture : [[Transformer architectures]] domine, construit sur la [[Self-attention]] et un encodage de position ([[Positional encoding]]) ; [[Attention Residuals]] explique ce que le flux résiduel transporte, [[Attention linéaire]] et [[Flash Attention and efficient attention]] attaquent son coût quadratique par deux voies opposées — changer la formule, ou changer l'implémentation sans changer le résultat. [[Multi-head Latent Attention]] compresse le cache, [[Mixture of Experts]] augmente les paramètres sans augmenter le calcul par token, [[State Space Models]] proposent une alternative séquentielle linéaire, [[Kolmogorov-Arnold Networks]] une rupture plus radicale. [[CNN]] reste la référence sur signal régulier et [[Graph Neural Networks]] la généralisation aux graphes ; le catalogue de backbones qu'on en tire, [[Architectures CNN]], est rangé dans [[Vision]] avec [[Vision Transformers (ViT)]], son concurrent direct.
 - **Les familles génératives se confondent facilement, et leurs compromis sont opposés.** [[Autoencodeurs]] compressent et reconstruisent, [[GANs]] opposent deux réseaux et produisent vite mais s'entraînent mal, [[Diffusion models]] débruitent par étapes et ont gagné la partie sur la qualité au prix du temps d'inférence. Leurs applications : [[Image generation]], [[Video generation]], [[Speech models]], et [[Classification audio par spectrogramme]] pour le cas où l'audio redevient une image.
@@ -37,6 +37,37 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - Récupérer un modèle pré-entraîné plutôt que d'en entraîner un → [[HuggingFace]], et [[timm]] pour les backbones vision.
 
 <!-- AUTO:START -->
+### Notions
+- [[Adam optimizer]] — domaines : data-sci, ml-eng
+- [[Architectures hybrides LLM]] — domaines : ml-eng, ai-eng
+- [[Attention linéaire]] — domaines : ml-eng, ai-eng
+- [[Attention Residuals]] — domaines : ml-eng, ai-eng
+- [[Autoencodeurs]] — domaines : data-sci, ml-eng
+- [[Calculs adaptatifs]] — domaines : ml-eng, ai-eng
+- [[Classification audio par spectrogramme]] — domaines : data-sci, ml-eng
+- [[CNN]] — domaines : data-sci, ml-eng
+- [[Diffusion models]] — domaines : ml-eng, ai-eng
+- [[Distillation]] — domaines : ml-eng, ai-eng
+- [[Entraînement distribué]] — domaines : ml-eng, mlops
+- [[Flash Attention and efficient attention]] — domaines : ml-eng, mlops, ai-eng
+- [[GANs]] — domaines : ml-eng, ai-eng
+- [[Gradient checkpointing]] — domaines : ml-eng
+- [[Graph Neural Networks]] — domaines : ml-eng, data-sci
+- [[Image generation]] — domaines : ml-eng, ai-eng
+- [[Kolmogorov-Arnold Networks]] — domaines : ml-eng
+- [[Maximal Update Parametrization]] — domaines : ml-eng, ai-eng
+- [[Mixed precision]] — domaines : ml-eng
+- [[Mixture of Experts]] — domaines : ml-eng, ai-eng
+- [[Multi-head Latent Attention]] — domaines : ml-eng, ai-eng
+- [[Positional encoding]] — domaines : ml-eng, ai-eng
+- [[Pruning]] — domaines : ml-eng, ai-eng
+- [[Quantization]] — domaines : ml-eng, ai-eng
+- [[Self-attention]] — domaines : ml-eng, ai-eng
+- [[Speech models]] — domaines : ml-eng, ai-eng
+- [[State Space Models]] — domaines : ml-eng, ai-eng
+- [[Transformer architectures]] — domaines : ml-eng, ai-eng
+- [[Video generation]] — domaines : ml-eng, ai-eng
+
 ### Briques
 - [[accelerate]] — Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.
 - [[DeepSpeed]] — Bibliothèque Microsoft d'optimisation de l'entraînement (et de l'inférence) à grande échelle — ZeRO shardle les états entre GPU pour entraîner des modèles à des dizaines/centaines de milliards de paramètres, avec offload CPU/NVMe, 3D-parallelism et précision mixte.

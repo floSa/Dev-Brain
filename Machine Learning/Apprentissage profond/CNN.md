@@ -2,7 +2,7 @@
 role: notion
 nom: CNN
 alias: [convnet, réseau convolutif, convolutional neural network, convolution, pooling, champ réceptif]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [data-sci, ml-eng]
 tags: [cnn, computer-vision, deep-learning]
 ---

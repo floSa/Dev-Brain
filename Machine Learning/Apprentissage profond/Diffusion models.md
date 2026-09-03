@@ -2,7 +2,7 @@
 role: notion
 nom: Diffusion models
 alias: [DDPM, denoising diffusion, score-based models, latent diffusion, modèles de diffusion, diffusion]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [generative-model, diffusion, deep-learning]
 ---

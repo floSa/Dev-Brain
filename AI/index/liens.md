@@ -1707,7 +1707,7 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Bases de données]], [[Data Science]], [[Deep learning]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Agents]], [[Bases de données]], [[Data Science]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
 
 ### Algèbre linéaire  ·  hub
@@ -1728,7 +1728,7 @@
 ### Apprentissage profond  ·  hub
 - tags : `deep-learning`, `gpu`, `autograd`, `transformers`, `attention`, `distributed-training`, `mixed-precision`, `quantization`, `model-compression`
 - liens sortants : [[Adam optimizer]], [[Apprentissage par renforcement]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[Attribution par gradient]], [[Autoencodeurs]], [[CNN]], [[Calculs adaptatifs]], [[Classification audio par spectrogramme]], [[DeepSpeed]], [[Diffusion models]], [[Distillation]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[GANs]], [[Gradient checkpointing]], [[Graph Neural Networks]], [[HuggingFace]], [[Image generation]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[JAX]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[LLM & IA générative]], [[Maximal Update Parametrization]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[NLP]], [[Positional encoding]], [[Probing]], [[Pruning]], [[PyTorch]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[Quantization]], [[Self-attention]], [[Serving]], [[Sparse autoencoders]], [[Speech models]], [[State Space Models]], [[Superposition]], [[TensorFlow]], [[Transformer architectures]], [[Video generation]], [[Vision]], [[Vision Transformers (ViT)]], [[accelerate]], [[pykan]], [[timm]]
-- liens entrants : [[ML Engineering]], [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Vision]]
+- liens entrants : [[Kolmogorov-Arnold Networks]], [[ML Engineering]], [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Vision]], [[Vision par ordinateur]]
 
 ### Assistants  ·  hub
 - tags : `agents`, `agent-memory`, `local-llm`, `mcp`, `agent-skill`
@@ -1767,7 +1767,7 @@
 
 ### Data Science  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]], [[Statistiques & inférence]], [[Tabulaire]], [[Visualisation]]
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]], [[Statistiques & inférence]], [[Tabulaire]], [[Visualisation]]
 - liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
@@ -1832,12 +1832,12 @@
 
 ### ML Engineering  ·  hub
 - tags : —
-- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]]
+- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[Outils de développement]], [[Signal & audio]]
 - liens entrants : [[Data Science]], [[MLOps]]
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Modèles de langage  ·  hub
@@ -2727,7 +2727,7 @@
 
 ### Kolmogorov-Arnold Networks  ·  notion
 - tags : `deep-learning`
-- liens sortants : [[Deep learning]], [[PyTorch]], [[Self-attention]], [[pykan]]
+- liens sortants : [[Apprentissage profond]], [[PyTorch]], [[Self-attention]], [[pykan]]
 - liens entrants : [[Apprentissage profond]], [[Perceptron et MLP]], [[pykan]]
 
 ### Late-interaction retrieval  ·  notion
@@ -3502,7 +3502,7 @@
 
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
-- liens sortants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Deep learning]], [[Diffusion models]], [[Distillation]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Keras]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[PyTorch]], [[Quantization]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Self-attention]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[timm]], [[torchvision]]
+- liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Diffusion models]], [[Distillation]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Keras]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[PyTorch]], [[Quantization]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Self-attention]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[timm]], [[torchvision]]
 - liens entrants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Kornia]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[supervision]], [[timm]], [[torchvision]]
 
 ### Vision Transformers (ViT)  ·  notion

@@ -2,7 +2,7 @@
 role: notion
 nom: Attention Residuals
 alias: [AttnRes, Block AttnRes, résiduels par attention, attention sur la profondeur, depth-wise attention, dilution PreNorm]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [attention, transformers, deep-learning]
 ---

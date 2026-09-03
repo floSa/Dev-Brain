@@ -2,7 +2,7 @@
 role: notion
 nom: Architectures hybrides LLM
 alias: [hybrid attention, architecture hybride, hybrid linear attention, ratio 3:1, Kimi Linear, Qwen3-Next, Nemotron-3, Jamba, MiniMax-01, interleaved attention]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [attention, state-space-model, transformers, inference-optimization]
 ---

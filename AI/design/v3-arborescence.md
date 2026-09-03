@@ -178,79 +178,62 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 
 ### Machine Learning  ·  241 pages  ·  **migré le 2026-09-04**
 
-- [x] hub écrit · [x] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
+- [x] hub écrit · [x] sous-dossiers créés · [~] notions recatégorisées (`dl`, `rl`, `ts`, `nlp` faites ; restent les 67 `concept/ml`) · [ ] fiches au nouveau gabarit
 
 > 85 briques et 12 comparatifs descendus, 9 sous-dossiers promus, 10 hubs écrits.
 > **Lot 4 en cours ici** : les 37 notions `concept/rl` (17), `concept/ts` (13) et
 > `concept/nlp` (7) sont descendues le 2026-09-05 dans « Apprentissage par
-> renforcement/ », « Séries temporelles/ » et « NLP/ ». **Aucune valeur ouverte,
-> aucun sous-dossier créé, aucun libellé à trancher** : les trois dossiers existaient
-> depuis le lot 3 et les trois sous-hubs citaient les 37 nommément.
-> Les 119 notions restantes portent `concept/ml` (67) ou `concept/dl` (52) : elles
-> restent sous `Wiki/Concepts/`, et les hubs les citent toutes en clair en attendant.
-> Les deux familles sont réservées à des conversations dédiées — la remontée 20 du
-> lot 3 signale que la moitié des `dl` relèvent en fait de `ml/vision`.
+> renforcement/ », « Séries temporelles/ » et « NLP/ », puis les **52 `concept/dl`**
+> le même jour. **Aucune valeur ouverte, aucun sous-dossier créé, aucun libellé à
+> trancher** pour aucune des quatre familles : les dossiers d'accueil existaient tous
+> depuis le lot 3, et l'ensemble des promotions du domaine n'a pas bougé — 9 avant,
+> 9 après.
+> **`concept/dl` ne s'est PAS projeté sur `ml/apprentissage-profond`**, et c'est le
+> seul enseignement de structure du lot : la remontée 20 du lot 3 l'annonçait, la
+> répartition mesurée est 29 en « Apprentissage profond/ », **17 en « Vision/ »**,
+> 5 en « Interprétabilité/ » et 1 hors du domaine, en `llm/modele`
+> (`Vision Language Models`). La liste ci-dessous est celle du terrain, pas celle de
+> la projection.
+> Restent les 67 notions `concept/ml`, sous `Wiki/Concepts/`, réservées à une
+> conversation dédiée ; les hubs les citent toutes en clair en attendant.
 
-**Apprentissage profond/** — `ml/apprentissage-profond` — 60 pages
+**Apprentissage profond/** — `ml/apprentissage-profond` — 37 pages · **29 notions descendues le 2026-09-05** — les 4 socles génératifs et les 2 pages audio y sont restés, `Architectures CNN` en est parti pour « Vision/ »
 
 - `[n]` Adam optimizer
-- `[n]` Apprentissage auto-supervisé en vision
-- `[n]` Architectures CNN
 - `[n]` Architectures hybrides LLM
 - `[n]` Attention Residuals
 - `[n]` Attention linéaire
-- `[n]` Attribution par gradient
-- `[n]` Augmentation d'images
 - `[n]` Autoencodeurs
 - `[n]` CNN
 - `[n]` Calculs adaptatifs
 - `[n]` Classification audio par spectrogramme
-- `[n]` Classification d'images
 - `[b]` DeepSpeed — paquet, Python
 - `[n]` Diffusion models
 - `[n]` Distillation
-- `[n]` Détection d'objets
 - `[n]` Entraînement distribué
-- `[n]` Estimation de pose
 - `[n]` Flash Attention and efficient attention
 - `[n]` GANs
 - `[n]` Gradient checkpointing
 - `[n]` Graph Neural Networks
 - `[n]` Image generation
-- `[n]` Interprétabilité mécaniste
 - `[b]` JAX — paquet, Python
 - `[b]` Keras — paquet, Python
 - `[n]` Kolmogorov-Arnold Networks
 - `[n]` Maximal Update Parametrization
-- `[n]` Metric learning & ré-identification
 - `[n]` Mixed precision
 - `[n]` Mixture of Experts
-- `[n]` Modèles de fondation vision
 - `[n]` Multi-head Latent Attention
-- `[n]` Métriques vision
-- `[n]` OCR
 - `[n]` Positional encoding
-- `[n]` Probing
 - `[n]` Pruning
 - `[b]` PyTorch — paquet, C++/Python
 - `[b]` PyTorch Lightning — paquet, Python
 - `[n]` Quantization
-- `[n]` Rendu neuronal 3D & estimation de profondeur
-- `[n]` Segment Anything (SAM)
-- `[n]` Segmentation
 - `[n]` Self-attention
-- `[n]` Sparse autoencoders
 - `[n]` Speech models
 - `[n]` State Space Models
-- `[n]` Suivi d'objets
-- `[n]` Superposition
 - `[b]` TensorFlow — paquet, C++/Python
-- `[n]` Transfer learning vision
 - `[n]` Transformer architectures
 - `[n]` Video generation
-- `[n]` Vision Language Models
-- `[n]` Vision Transformers (ViT)
-- `[n]` Vision par ordinateur
 - `[b]` accelerate — paquet, Python
 - `[b]` pykan — paquet, Python
 
@@ -331,12 +314,29 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` TensorRT — paquet, C++
 - `[b]` TorchServe — plateforme, Java/Python
 
-**Vision/** — `ml/vision` — 9 pages
+**Vision/** — `ml/vision` — 26 pages · **17 notions descendues le 2026-09-05** — le dossier passe de 9 à 26 pages et devient le plus gros sous-dossier du vault
 
+- `[n]` Apprentissage auto-supervisé en vision
+- `[n]` Architectures CNN
+- `[n]` Augmentation d'images
+- `[n]` Classification d'images
 - `[b]` Detectron2 — paquet, Python/C++
+- `[n]` Détection d'objets
+- `[n]` Estimation de pose
 - `[b]` Kornia — paquet, Python
+- `[n]` Metric learning & ré-identification
+- `[n]` Modèles de fondation vision
+- `[n]` Métriques vision
+- `[n]` OCR
 - `[b]` OpenCV — paquet, C++
+- `[n]` Rendu neuronal 3D & estimation de profondeur
+- `[n]` Segment Anything (SAM)
+- `[n]` Segmentation
+- `[n]` Suivi d'objets
+- `[n]` Transfer learning vision
 - `[b]` Ultralytics YOLO — modele, Python
+- `[n]` Vision Transformers (ViT)
+- `[n]` Vision par ordinateur
 - `[b]` albumentations — paquet, Python
 - `[b]` segment-anything — modele, Python
 - `[b]` supervision — paquet, Python
@@ -353,12 +353,17 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` TensorBoard — application, Python
 - `[b]` Weights & Biases — plateforme, Python
 
-**Interprétabilité/** — `ml/interpretabilite` — 7 pages
+**Interprétabilité/** — `ml/interpretabilite` — 12 pages · **5 notions descendues le 2026-09-05**
 
+- `[n]` Attribution par gradient
 - `[b]` Captum — paquet, Python
+- `[n]` Interprétabilité mécaniste
 - `[b]` LIME — paquet, Python
+- `[n]` Probing
 - `[b]` SAELens — paquet, Python
 - `[b]` SHAP — paquet, Python
+- `[n]` Sparse autoencoders
+- `[n]` Superposition
 - `[b]` TransformerLens — paquet, Python
 - `[b]` interpreto — paquet, Python
 - `[b]` nnsight — paquet, Python
@@ -574,14 +579,18 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[b]` promptfoo — cli, TypeScript
 - `[c]` Comparatif - Évaluation LLM — descendu avec ses 4 membres
 
-**Modèles de langage/** — `llm/modele` — 6 pages — **valeur et dossier neufs au lot 4**
+**Modèles de langage/** — `llm/modele` — 7 pages — **valeur et dossier neufs au lot 4**
 
 > Le seul sous-dossier du domaine qui ne porte **aucune brique** : il décrit l'objet, pas
 > ce qu'on en fait. La valeur a été ouverte parce que le vocabulaire `llm/*` était
 > entièrement applicatif — c'est la situation de la remontée 1, rejouée.
+> **7e page le 2026-09-05** : `Vision Language Models` arrive de `concept/dl`, seule des
+> 52 à changer de domaine. Elle produit du texte, pas une structure d'image — le critère
+> d'entrée que le hub « Vision » énonce lui-même l'exclut de là-bas.
 
 - `[n]` Decoding strategies · `[n]` Perplexity · `[n]` Reasoning models ·
-  `[n]` Scaling laws · `[n]` Small Language Models · `[n]` Tokenization
+  `[n]` Scaling laws · `[n]` Small Language Models · `[n]` Tokenization ·
+  `[n]` Vision Language Models
 
 **Assistants/** — `llm/assistant` — 5 pages
 

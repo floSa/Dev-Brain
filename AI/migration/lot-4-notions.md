@@ -13,17 +13,15 @@ mécanique** de toute la migration.
 
 Prérequis : lot 3 fait pour le domaine concerné.
 
-> **État au 2026-09-05 — dix familles sur douze sont faites.** Le pilote
+> **État au 2026-09-05 — onze familles sur douze sont faites.** Le pilote
 > « Statistiques & inférence » (37 notions), puis une deuxième conversation —
 > **mathématiques (26), data (8 sur 13), signal (5), sécurité IA (4)** —, puis une
 > troisième qui a fermé `data` (les **5 remontées**) et traité **`llm` (56)**, puis
 > une quatrième qui a pris les trois plus petites familles restantes — **`rl` (17),
-> `ts` (13), `nlp` (7)**. Soit **178 notions rangées**, 12 sous-dossiers créés,
-> 10 valeurs de catégorie ouvertes, 10 valeurs retirées du vocabulaire (9 `concept/*`
-> et `llm/mcp`), 8 MOC supprimées.
-> Il reste **119 notions** sous `Wiki/Concepts/` — `ml` (67), `dl` (52) — et
-> **2 MOC** vivantes, dont la moitié R7 de la condition de mort est **déjà remplie**
-> (remontée 33).
+> `ts` (13), `nlp` (7)** —, puis une cinquième pour **`dl` (52)**. Soit **230 notions
+> rangées**, 12 sous-dossiers créés, 10 valeurs de catégorie ouvertes, 11 valeurs
+> retirées du vocabulaire (10 `concept/*` et `llm/mcp`), 9 MOC supprimées.
+> Il reste **67 notions** sous `Wiki/Concepts/`, toutes `concept/ml`, et **1 MOC**.
 >
 > Les *Remontées* en fin de document sont la méthode telle que le terrain l'a corrigée. Les
 > dix premières viennent du pilote — lire les nº 1, 3 et 5 avant d'attaquer un domaine. Les
@@ -35,7 +33,9 @@ Prérequis : lot 3 fait pour le domaine concerné.
 > dossier. Les **nº 29 à 34 viennent de `rl`/`ts`/`nlp`** — la nº 29 dit **pourquoi ces
 > trois familles n'ont rien coûté et pourquoi ça ne se transpose pas** à `dl` et `ml`,
 > et la nº 30 déplace le `grep` de la nº 14 AVANT les `git mv`, où il cesse de réparer
-> pour mesurer.
+> pour mesurer. Les **nº 35 à 40 viennent de `dl`** — dont la nº 35, qui dit **pourquoi
+> la prédiction de coût de la nº 29 était fausse**, et la nº 37, le seul défaut que la
+> double mesure de mort d'une MOC ne voit pas.
 
 ## Contexte
 
@@ -116,7 +116,14 @@ une fois que le vocabulaire final est connu.
       rangées par l'étape 0.
 - [x] **`nlp` (7) — fait le 2026-09-05.** Idem, et la seule des trois à tuer une MOC :
       `MOC/Concepts/NLP (notions)` meurt sur la double mesure de la remontée 18.
-- [ ] `dl` (52) · [ ] `ml` (67)
+- [x] **`dl` (52) — fait le 2026-09-05.** La famille la plus mal projetée du lot :
+      elle se répartit sur **quatre** valeurs, pas une — 29 en `ml/apprentissage-profond`,
+      17 en `ml/vision`, 5 en `ml/interpretabilite`, 1 en `llm/modele`. La remontée 20 du
+      lot 3 l'annonçait et le croisement de la remontée 30 l'a mesuré avant tout `git mv`.
+      **Aucune valeur ouverte, aucun sous-dossier créé, aucun libellé à trancher**, contre
+      la prédiction de la remontée 29 (cf. remontée 35). `MOC/Concepts/Deep learning` est
+      morte, et sa mort a cassé trois wikilinks (remontée 37).
+- [ ] `ml` (67)
 
 ### Pour chaque notion
 
@@ -1010,3 +1017,175 @@ comprise —, `grep` son nom dans `Documentation/` **en plus** des corps de hub,
 se limiter à la syntaxe wikilink. Corrigé ici pour les deux phrases concernées : l'étage
 est décrit comme « en voie d'extinction » avec le compte des survivants, et l'exemple de
 navigation ne cite plus que des pages vivantes.
+
+---
+
+## Remontées — `dl` (52), 2026-09-05
+
+52 notions rangées, réparties sur **quatre** valeurs de catégorie et deux domaines.
+**Zéro valeur ouverte, zéro sous-dossier créé, zéro libellé à trancher, zéro brique
+déplacée par ricochet, zéro comparatif déplacé.** Une MOC supprimée, et sa suppression
+a produit le seul incident du lot. Aucune violation dure à la clôture ; compteur
+d'avertissements à **149** avant comme après, **jeu identique ligne à ligne** aux
+quatre commits, et les 47 comparatifs ont exactement les mêmes membres.
+
+### 35. La prédiction de coût de la remontée 29 était fausse, et sa règle était juste
+
+La remontée 29 annonçait que `dl` « paierait des promotions, donc des libellés, donc des
+sous-hubs », en s'appuyant sur un chiffre exact : `ml/apprentissage-profond` n'avait que
+**8 briques pour 52 notions candidates**. Le lot n'a rien payé de tout ça. Il vaut mieux
+comprendre pourquoi, parce que la même erreur guette `ml` (67).
+
+La règle de la nº 29 — « une famille ne coûte rien quand son sous-domaine était DÉJÀ un
+dossier » — est exacte. Ce qui était faux, c'est le **singulier** : elle supposait qu'une
+famille `concept/<x>` tombe dans **un** sous-domaine. Vérifié sur `rl`, `ts` et `nlp`, où
+les découpages coïncident. Faux ici :
+
+| Cible | Pages avant | Reçues | Après |
+|---|---|---|---|
+| `ml/apprentissage-profond` | 8 | 29 | 37 |
+| `ml/vision` | 9 | 17 | 26 |
+| `ml/interpretabilite` | 7 | 5 | 12 |
+| `llm/modele` | 6 | 1 | 7 |
+
+Les **quatre** dossiers existaient depuis le lot 3 — trois par leurs briques, le
+quatrième créé la veille par le lot `llm`. La condition de la nº 29 était donc remplie
+quatre fois plutôt qu'une, et le coût est resté nul. L'ensemble des promotions du domaine
+« Machine Learning » est identique avant et après, 9 et 9 ; celui de « LLM & IA
+générative » aussi, 12 et 12.
+
+> **Correction à porter à la remontée 29** : la question à se poser n'est pas « le
+> sous-domaine homonyme est-il déjà un dossier ? » mais « **chacune** des cibles réelles
+> l'est-elle ? ». Les deux formulations coïncident tant qu'une famille vise une seule
+> cible, et divergent dès qu'elle en vise plusieurs. La liste des cibles réelles se lit
+> avant d'ouvrir une page, par le croisement de la remontée 30 — c'est même son principal
+> usage, et il n'avait pas été vu.
+
+Ce que ça prédit pour `ml` (67), et le pronostic est **inverse** de celui-ci : la nº 29
+énumère six sous-domaines candidats **sous le seuil** aujourd'hui (`ml/non-supervise` 4,
+`ml/eval` 2, `ml/socle` 2, `ml/monitoring` 1, `ml/feature-store` 1, `ml/embeddings` 1).
+Là, la condition ne sera remplie nulle part, et les promotions se paieront pour de bon.
+
+### 36. Le croisement de la remontée 30 mesure DEUX choses, pas une
+
+Fait ici sur 52 noms contre les corps de 71 hubs, il a donné : 0 notion muette, 42 sur 52
+revendiquées par un seul hub, **10 en contention**. C'est un résultat très différent de
+celui de `rl`/`ts`/`nlp` (37 sur 37 sans contention), et pourtant le croisement a servi
+davantage, pour une raison qui n'était pas écrite.
+
+Il ne dit pas seulement « aucun autre hub ne la réclame ». Il dit aussi, en creux,
+**quelles sont les cibles réelles de la famille et combien il y en a** — c'est-à-dire
+exactement l'information dont la remontée 35 montre qu'elle manquait. Ici, la ligne
+« 16 notions revendiquées par le seul hub Vision, et aucune par Apprentissage profond »
+rendait l'arbitrage central du lot lisible **avant** d'ouvrir la première page. La lecture
+des 52 pages a suivi, et n'a contredit aucune des 42 lignes non contentieuses.
+
+Les 10 contentions, et ce qui les a tranchées — aucune n'a demandé un arbitrage de fond :
+
+- **5 étaient des renvois, pas des disputes.** Le hub « Apprentissage profond » cite
+  `Interprétabilité mécaniste`, `Sparse autoencoders`, `Superposition`, `Probing` et
+  `Attribution par gradient` dans une phrase qui **délègue** explicitement à
+  [[Interprétabilité]]. Un hub qui dit « ce sujet est traité ailleurs » produit la même
+  ligne de croisement qu'un hub qui revendique — c'est la limite du geste, et elle se lève
+  en lisant la phrase, pas la page.
+- **3 relevaient d'un hub aval.** `Quantization`, `Pruning` et `Distillation` sont citées
+  par « Serving » comme un levier **amont** (« la latence se gagne surtout avant le
+  serveur ») et par « Apprentissage profond » dans une puce qui leur est consacrée.
+- **1 relevait d'un hub d'un autre domaine.** `OCR` est citée par « Parsing » comme la
+  technique dont son outillage a besoin ; « Vision » lui consacre une puce et renvoie
+  l'outillage vers Documents et Parsing. La notion descend en vision, l'outillage ne
+  bouge pas, et aucune phrase n'est devenue fausse.
+- **1 était un vrai doublet**, `Architectures CNN` — cf. remontée 38.
+
+### 37. La double mesure de mort d'une MOC ne voit pas les liens qui la VISENT
+
+`MOC/Concepts/Deep learning` remplissait la double condition de la remontée 18 :
+0 page ne perdait sa seule porte R7 (mesuré avant **et** après le dernier `git mv`, la
+remontée 20 interdisant de croire une mesure d'hier), et `build_mocs.py` ne la régénérait
+plus — elle avait disparu de sa liste, ce n'était pas une réécriture à l'identique.
+Supprimée. Et `check_brain` est aussitôt passé en **violation dure** : trois liens morts.
+
+Le mécanisme, et il est évident une fois vu : la mesure R7 regarde qui **atteint** une
+page ; elle ne regarde jamais qui **cite la MOC elle-même**. Or `Deep learning` est un nom
+que la prose emploie naturellement, et deux notions l'écrivaient en lien nu —
+`Kolmogorov-Arnold Networks` (« la famille d'architectures dont le KAN est une variante »)
+et `Vision par ordinateur`, deux fois. Ces liens résolvaient vers la MOC parce que
+`resolvable_names()` de `check_brain` — comme Obsidian — résout un lien nu par **nom de
+fichier**, et qu'un fichier l'emporte sur un `alias:`.
+
+Les huit MOC mortes avant celle-ci n'ont pas produit ce défaut, et la raison tient au nom :
+`Statistiques`, `Maths du ML`, `NLP (notions)`, `Données (notions)` ne sont pas des
+tournures qu'on écrit au fil d'une phrase. `Deep learning` si.
+
+Réparation, arbitrée par floSa : les trois liens repointent vers le hub `Apprentissage
+profond`, dont `Deep learning` est **déjà** un `alias:`, avec un pipe qui préserve le texte
+affiché — `[[Apprentissage profond|Deep learning]]`. Aucun caractère de la prose ne change ;
+seule la cible change. C'est une réparation mécanique, pas une réécriture, mais elle touche
+deux pages `role: notion`, ce que ni le lot 4 ni `CLAUDE.md` n'autorisent sans demande
+explicite — d'où l'arbitrage.
+
+> **Geste à ajouter à la double mesure de la remontée 18, avant tout `rm` de MOC** :
+> chercher le nom de la MOC en lien nu dans tout le vault (`grep -rn` sur `[[<nom>`,
+> `--include=*.md`). Une ligne trouvée n'interdit pas la suppression ; elle dit combien de
+> liens il faudra reporter, et vers quoi. **À faire avant le lot `ml`** :
+> `MOC/Concepts/Machine learning (notions)` est la dernière, et son nom porte le suffixe
+> `(notions)` — le risque y est faible, mais il se mesure en une commande au lieu de se
+> découvrir sur un validateur rouge.
+
+### 38. Le seul vrai doublet du lot, et pourquoi il se sépare
+
+`CNN` et `Architectures CNN` portent les **mêmes trois tags** (`cnn`, `computer-vision`,
+`deep-learning`), et la seconde s'ouvre sur « catalogue des familles de [[CNN]] éprouvées ».
+Tout invitait à les garder ensemble — c'est même la leçon de la remontée 12, où séparer
+`Optimal transport` de `Wasserstein distance` aurait mis dans deux dossiers « une page et
+le nombre qu'elle calcule ».
+
+Arbitrage de floSa : **elles se séparent**, et le motif n'est pas dans les pages mais dans
+leurs **voisines**. `CNN` a pour voisine `Perceptron et MLP` — c'est un mécanisme, dont
+`Classification audio par spectrogramme` réutilise l'ossature hors de toute image.
+`Architectures CNN` a pour voisines `Vision par ordinateur` et `Transformer architectures`
+« pour les ViT » : c'est un catalogue de backbones, et le hub « Vision » le nomme avec
+`Vision Transformers (ViT)` comme « les deux familles de backbones ». Les garder ensemble
+en « Apprentissage profond » aurait séparé le catalogue CNN de son **concurrent direct**,
+qui est le vrai couple à ne pas casser.
+
+> Ce que ça ajoute à la remontée 12 : deux pages du même sujet ne forment pas forcément le
+> couple qu'il faut préserver. Chercher **quel** couple casserait le plus, plutôt que de
+> supposer que c'est celui que le nom des fichiers suggère.
+
+### 39. Trois hubs décrivaient une population qu'ils n'ont plus — et un la décrivait déjà
+
+La remontée 14 vise le hub qui annonce une page **partie**. Ce lot ajoute le cas
+symétrique, plus discret : le hub dont le **cadrage général** cesse d'être vrai parce que
+son dossier a changé de nature. Aucune règle ne le voit — ni R7, ni les liens, ni les
+chemins.
+
+- « Apprentissage profond » se présentait comme « les socles avec lesquels on entraîne un
+  réseau — tenseurs, autograd, accélérateurs », et sa première puce disait « ce qui reste
+  ici est la couche en dessous ». Vrai de ses 8 briques ; faux de ses 37 pages, dont 29
+  décrivent l'architecture, l'optimisation, la mise à l'échelle et la compression. Pitch et
+  puce réécrits : le dossier range le **réseau lui-même**, et le critère se lit désormais
+  par ce qui n'y est **pas** — ce qu'on fait d'un réseau entraîné est rangé par sa tâche.
+- « Vision » se présentait comme « les bibliothèques dont l'entrée est une image ». Vrai de
+  ses 9 briques ; incomplet de ses 26 pages, dont 17 sont des tâches. Pitch réécrit.
+- Le hub de **domaine** répétait les deux formules dans sa puce d'aiguillage : corrigé en
+  même temps, sans quoi les trois pages se seraient contredites.
+- « Modèles de langage », lui, posait le cas de la remontée 21 — le `grep` ne renvoie
+  **rien**, et c'est le symptôme. Son corps énumérait six notions et serait resté muet sur
+  la septième que la zone AUTO liste pourtant. Une puce ajoutée.
+
+> **Geste à ajouter** : après les `git mv` d'un lot, relire le **pitch** et la première
+> puce de chaque hub d'accueil, pas seulement les phrases qui nomment les pages déplacées.
+> Un hub dont le dossier double ou triple de taille décrit presque sûrement autre chose que
+> ce qu'il contient. Trois hubs sur quatre étaient dans ce cas ici.
+
+### 40. Ce que ce lot n'a PAS fait, et qui reste ouvert
+
+- **Le balayage `concept/*` en prose (remontée 32) n'est pas fait**, sur consigne : il est
+  prévu en commit isolé à la fin du lot 4. Ce lot l'alimente d'une entrée —
+  `Documentation/perso/reservoir-v1.md` porte un titre « Deep learning → `concept/dl` »
+  qui cite une valeur désormais hors vocabulaire. C'est un inventaire d'archive du
+  réservoir v1, il décrit un état passé, et il n'a pas été touché.
+- **La gouvernance a été corrigée, elle** (remontée 34) :
+  `Documentation/perso/obsidian-graph.md` annonçait deux MOC survivantes et en nommait
+  une qui meurt ici. Il n'en annonce plus qu'une.

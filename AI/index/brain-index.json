@@ -11422,6 +11422,36 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage profond/Adam optimizer.md",
+      "nom": "Adam optimizer",
+      "alias": [
+        "Adam",
+        "AdamW",
+        "adaptive moment estimation",
+        "RMSprop",
+        "Adagrad",
+        "optimiseur adaptatif"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "gradient-descent",
+        "deep-learning",
+        "learning-rate"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage profond/Apprentissage profond.md",
       "nom": "Apprentissage profond",
       "alias": [
@@ -11436,7 +11466,7 @@
         "ml-eng",
         "data-sci"
       ],
-      "pitch": "Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.",
+      "pitch": "Comment un réseau de neurones est fait et comment on l'entraîne — architectures, optimisation, mise à l'échelle, compression — et les socles qui le font tourner.",
       "tags": [
         "deep-learning",
         "gpu",
@@ -11447,6 +11477,232 @@
         "mixed-precision",
         "quantization",
         "model-compression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Architectures hybrides LLM.md",
+      "nom": "Architectures hybrides LLM",
+      "alias": [
+        "hybrid attention",
+        "architecture hybride",
+        "hybrid linear attention",
+        "ratio 3:1",
+        "Kimi Linear",
+        "Qwen3-Next",
+        "Nemotron-3",
+        "Jamba",
+        "MiniMax-01",
+        "interleaved attention"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "state-space-model",
+        "transformers",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Attention Residuals.md",
+      "nom": "Attention Residuals",
+      "alias": [
+        "AttnRes",
+        "Block AttnRes",
+        "résiduels par attention",
+        "attention sur la profondeur",
+        "depth-wise attention",
+        "dilution PreNorm"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "transformers",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Attention linéaire.md",
+      "nom": "Attention linéaire",
+      "alias": [
+        "linear attention",
+        "attention sans softmax",
+        "DeltaNet",
+        "Gated DeltaNet",
+        "GDN",
+        "KDA",
+        "règle delta",
+        "delta rule",
+        "mémoire associative",
+        "RWKV",
+        "Transformers are RNNs"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "state-space-model",
+        "transformers",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Autoencodeurs.md",
+      "nom": "Autoencodeurs",
+      "alias": [
+        "Autoencodeur",
+        "Autoencoder",
+        "Auto-encodeur",
+        "AE",
+        "VAE",
+        "Variational Autoencoder",
+        "Autoencodeur variationnel",
+        "Denoising autoencoder"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "deep-learning",
+        "unsupervised",
+        "representation-learning",
+        "dimensionality-reduction"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/CNN.md",
+      "nom": "CNN",
+      "alias": [
+        "convnet",
+        "réseau convolutif",
+        "convolutional neural network",
+        "convolution",
+        "pooling",
+        "champ réceptif"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "cnn",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Calculs adaptatifs.md",
+      "nom": "Calculs adaptatifs",
+      "alias": [
+        "adaptive computation",
+        "calcul adaptatif",
+        "early exit",
+        "sortie anticipée",
+        "Mixture of Depths",
+        "MoD",
+        "looped transformers",
+        "Mixture of Recursions",
+        "MoR",
+        "adaptive depth",
+        "ponder"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "reasoning",
+        "transformers",
+        "mixture-of-experts",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Classification audio par spectrogramme.md",
+      "nom": "Classification audio par spectrogramme",
+      "alias": [
+        "classification audio",
+        "audio classification",
+        "sound classification",
+        "reconnaissance de sons",
+        "audio CNN",
+        "mel-spectrogramme CNN",
+        "acoustic scene classification",
+        "SpecAugment"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "audio-classification",
+        "spectrogram",
+        "cnn"
       ],
       "alternatives": null,
       "complements": null,
@@ -11480,6 +11736,265 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Diffusion models.md",
+      "nom": "Diffusion models",
+      "alias": [
+        "DDPM",
+        "denoising diffusion",
+        "score-based models",
+        "latent diffusion",
+        "modèles de diffusion",
+        "diffusion"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "generative-model",
+        "diffusion",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Distillation.md",
+      "nom": "Distillation",
+      "alias": [
+        "Knowledge distillation",
+        "distillation de connaissances",
+        "teacher-student",
+        "distillation prof-élève",
+        "soft labels",
+        "dark knowledge"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-compression",
+        "deep-learning",
+        "small-language-model",
+        "synthetic-data",
+        "fine-tuning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Entraînement distribué.md",
+      "nom": "Entraînement distribué",
+      "alias": [
+        "Distributed training",
+        "DDP",
+        "DistributedDataParallel",
+        "FSDP",
+        "ZeRO",
+        "data parallelism",
+        "model parallelism",
+        "pipeline parallelism",
+        "tensor parallelism",
+        "sharding",
+        "DeepSpeed",
+        "parallélisme de données"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "distributed-training",
+        "deep-learning",
+        "gpu",
+        "memory-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Flash Attention and efficient attention.md",
+      "nom": "Flash Attention and efficient attention",
+      "alias": [
+        "Flash Attention",
+        "FlashAttention",
+        "attention efficace",
+        "multi-query attention",
+        "MQA",
+        "grouped-query attention",
+        "GQA",
+        "sparse attention",
+        "sliding window attention",
+        "attention différentielle",
+        "Differential Transformer",
+        "DIFF Transformer",
+        "bruit d'attention"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "mlops",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "inference-optimization",
+        "gpu",
+        "transformers"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/GANs.md",
+      "nom": "GANs",
+      "alias": [
+        "GAN",
+        "generative adversarial network",
+        "génération adversariale",
+        "réseau antagoniste génératif",
+        "DCGAN",
+        "StyleGAN",
+        "WGAN",
+        "CycleGAN",
+        "pix2pix"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "gan",
+        "generative-model",
+        "image-generation",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Gradient checkpointing.md",
+      "nom": "Gradient checkpointing",
+      "alias": [
+        "Gradient checkpointing",
+        "activation checkpointing",
+        "recomputation",
+        "rematerialization",
+        "rematérialisation",
+        "recalcul d'activations",
+        "checkpoint"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "memory-optimization",
+        "deep-learning",
+        "gpu"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Graph Neural Networks.md",
+      "nom": "Graph Neural Networks",
+      "alias": [
+        "GNN",
+        "graph neural network",
+        "réseaux de neurones sur graphes",
+        "GCN",
+        "GAT",
+        "GraphSAGE",
+        "message passing",
+        "passage de messages"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "gnn",
+        "deep-learning",
+        "representation-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Image generation.md",
+      "nom": "Image generation",
+      "alias": [
+        "text-to-image",
+        "T2I",
+        "génération d'images",
+        "Stable Diffusion",
+        "DALL-E",
+        "Midjourney",
+        "FLUX",
+        "inpainting"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "generative-model",
+        "image-generation",
+        "diffusion",
+        "multimodal"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage profond/JAX.md",
@@ -11532,6 +12047,228 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Kolmogorov-Arnold Networks.md",
+      "nom": "Kolmogorov-Arnold Networks",
+      "alias": [
+        "KAN",
+        "KANs",
+        "réseaux de Kolmogorov-Arnold",
+        "kolmogorov-arnold network"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Maximal Update Parametrization.md",
+      "nom": "Maximal Update Parametrization",
+      "alias": [
+        "µP",
+        "muP",
+        "mu-P",
+        "µTransfer",
+        "muTransfer",
+        "transfert d'hyperparamètres",
+        "hyperparameter transfer",
+        "Tensor Programs",
+        "u-µP"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-rate",
+        "scaling-laws",
+        "hyperparameter-tuning",
+        "optimization",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Mixed precision.md",
+      "nom": "Mixed precision",
+      "alias": [
+        "Mixed precision",
+        "précision mixte",
+        "AMP",
+        "automatic mixed precision",
+        "fp16",
+        "bf16",
+        "float16",
+        "bfloat16",
+        "loss scaling",
+        "autocast",
+        "half precision",
+        "demi-précision"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "mixed-precision",
+        "deep-learning",
+        "gpu",
+        "memory-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Mixture of Experts.md",
+      "nom": "Mixture of Experts",
+      "alias": [
+        "MoE",
+        "mélange d'experts",
+        "sparse MoE",
+        "Switch Transformer",
+        "experts conditionnels",
+        "top-k routing",
+        "fine-grained experts",
+        "shared experts",
+        "DeepSeekMoE",
+        "ratio de sparsité",
+        "expert parallelism"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "mixture-of-experts",
+        "transformers",
+        "deep-learning",
+        "scaling-laws"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Multi-head Latent Attention.md",
+      "nom": "Multi-head Latent Attention",
+      "alias": [
+        "MLA",
+        "attention latente multi-tête",
+        "latent attention",
+        "compression du KV-cache",
+        "low-rank KV compression",
+        "decoupled RoPE"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "inference-optimization",
+        "transformers",
+        "gpu"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Positional encoding.md",
+      "nom": "Positional encoding",
+      "alias": [
+        "encodage de position",
+        "encodage positionnel",
+        "RoPE",
+        "rotary embeddings",
+        "ALiBi",
+        "sinusoidal positional encoding"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "positional-encoding",
+        "transformers",
+        "attention"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Pruning.md",
+      "nom": "Pruning",
+      "alias": [
+        "Pruning",
+        "élagage",
+        "élagage de modèle",
+        "sparsity",
+        "sparsité",
+        "structured pruning",
+        "unstructured pruning",
+        "élagage structuré",
+        "élagage non structuré",
+        "magnitude pruning",
+        "lottery ticket"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "pruning",
+        "model-compression",
+        "deep-learning",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage profond/PyTorch Lightning.md",
@@ -11590,6 +12327,142 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Apprentissage profond/Quantization.md",
+      "nom": "Quantization",
+      "alias": [
+        "Quantification",
+        "quantisation",
+        "INT8",
+        "INT4",
+        "FP8",
+        "GGUF",
+        "GPTQ",
+        "AWQ",
+        "PTQ",
+        "QAT",
+        "K-quants",
+        "NVFP4",
+        "MXFP4",
+        "FP4",
+        "microscaling",
+        "block scaling",
+        "quantization 4 bits"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "quantization",
+        "model-compression",
+        "deep-learning",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Self-attention.md",
+      "nom": "Self-attention",
+      "alias": [
+        "auto-attention",
+        "scaled dot-product attention",
+        "multi-head attention",
+        "MHA",
+        "attention QKV",
+        "cross-attention"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "attention",
+        "transformers",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Speech models.md",
+      "nom": "Speech models",
+      "alias": [
+        "ASR",
+        "TTS",
+        "speech-to-text",
+        "text-to-speech",
+        "reconnaissance vocale",
+        "synthèse vocale",
+        "Whisper",
+        "modèles de parole",
+        "speech-to-speech"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "speech",
+        "deep-learning",
+        "multimodal"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/State Space Models.md",
+      "nom": "State Space Models",
+      "alias": [
+        "SSM",
+        "modèles à espace d'états",
+        "Mamba",
+        "Mamba-2",
+        "Mamba-3",
+        "S4",
+        "S5",
+        "selective state space",
+        "linear-time sequence model",
+        "MIMO",
+        "discrétisation trapézoïdale"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "state-space-model",
+        "deep-learning",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage profond/TensorFlow.md",
       "nom": "TensorFlow",
       "alias": [
@@ -11615,6 +12488,66 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Transformer architectures.md",
+      "nom": "Transformer architectures",
+      "alias": [
+        "Transformer",
+        "transformeur",
+        "architecture transformeur",
+        "encoder-decoder",
+        "decoder-only",
+        "encoder-only"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "transformers",
+        "deep-learning",
+        "attention",
+        "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Video generation.md",
+      "nom": "Video generation",
+      "alias": [
+        "text-to-video",
+        "T2V",
+        "génération de vidéos",
+        "Sora",
+        "video diffusion",
+        "image-to-video"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "generative-model",
+        "video-generation",
+        "diffusion",
+        "multimodal"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Apprentissage profond/accelerate.md",
@@ -14687,7 +15620,7 @@
         "ml-eng",
         "data-sci"
       ],
-      "pitch": "Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.",
+      "pitch": "Ce qu'on fait d'une image ou d'une vidéo — détecter, segmenter, suivre, estimer une pose, lire du texte — les backbones qui le permettent et les bibliothèques qui l'implémentent.",
       "tags": [
         "computer-vision",
         "cnn",
@@ -19250,36 +20183,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Adam optimizer.md",
-      "nom": "Adam optimizer",
-      "alias": [
-        "Adam",
-        "AdamW",
-        "adaptive moment estimation",
-        "RMSprop",
-        "Adagrad",
-        "optimiseur adaptatif"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "gradient-descent",
-        "deep-learning",
-        "learning-rate"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Analyse discriminante.md",
       "nom": "Analyse discriminante",
       "alias": [
@@ -19389,136 +20292,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Architectures hybrides LLM.md",
-      "nom": "Architectures hybrides LLM",
-      "alias": [
-        "hybrid attention",
-        "architecture hybride",
-        "hybrid linear attention",
-        "ratio 3:1",
-        "Kimi Linear",
-        "Qwen3-Next",
-        "Nemotron-3",
-        "Jamba",
-        "MiniMax-01",
-        "interleaved attention"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "state-space-model",
-        "transformers",
-        "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Attention Residuals.md",
-      "nom": "Attention Residuals",
-      "alias": [
-        "AttnRes",
-        "Block AttnRes",
-        "résiduels par attention",
-        "attention sur la profondeur",
-        "depth-wise attention",
-        "dilution PreNorm"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "transformers",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Attention linéaire.md",
-      "nom": "Attention linéaire",
-      "alias": [
-        "linear attention",
-        "attention sans softmax",
-        "DeltaNet",
-        "Gated DeltaNet",
-        "GDN",
-        "KDA",
-        "règle delta",
-        "delta rule",
-        "mémoire associative",
-        "RWKV",
-        "Transformers are RNNs"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "state-space-model",
-        "transformers",
-        "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Autoencodeurs.md",
-      "nom": "Autoencodeurs",
-      "alias": [
-        "Autoencodeur",
-        "Autoencoder",
-        "Auto-encodeur",
-        "AE",
-        "VAE",
-        "Variational Autoencoder",
-        "Autoencodeur variationnel",
-        "Denoising autoencoder"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "deep-learning",
-        "unsupervised",
-        "representation-learning",
-        "dimensionality-reduction"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Bagging.md",
       "nom": "Bagging",
       "alias": [
@@ -19568,71 +20341,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/CNN.md",
-      "nom": "CNN",
-      "alias": [
-        "convnet",
-        "réseau convolutif",
-        "convolutional neural network",
-        "convolution",
-        "pooling",
-        "champ réceptif"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "cnn",
-        "computer-vision",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Calculs adaptatifs.md",
-      "nom": "Calculs adaptatifs",
-      "alias": [
-        "adaptive computation",
-        "calcul adaptatif",
-        "early exit",
-        "sortie anticipée",
-        "Mixture of Depths",
-        "MoD",
-        "looped transformers",
-        "Mixture of Recursions",
-        "MoR",
-        "adaptive depth",
-        "ponder"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "inference-optimization",
-        "reasoning",
-        "transformers",
-        "mixture-of-experts",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Calibration.md",
       "nom": "Calibration",
       "alias": [
@@ -19659,37 +20367,6 @@
         "model-evaluation",
         "calibration",
         "classification"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Classification audio par spectrogramme.md",
-      "nom": "Classification audio par spectrogramme",
-      "alias": [
-        "classification audio",
-        "audio classification",
-        "sound classification",
-        "reconnaissance de sons",
-        "audio CNN",
-        "mel-spectrogramme CNN",
-        "acoustic scene classification",
-        "SpecAugment"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "audio-classification",
-        "spectrogram",
-        "cnn"
       ],
       "alternatives": null,
       "complements": null,
@@ -19978,66 +20655,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Diffusion models.md",
-      "nom": "Diffusion models",
-      "alias": [
-        "DDPM",
-        "denoising diffusion",
-        "score-based models",
-        "latent diffusion",
-        "modèles de diffusion",
-        "diffusion"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "generative-model",
-        "diffusion",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Distillation.md",
-      "nom": "Distillation",
-      "alias": [
-        "Knowledge distillation",
-        "distillation de connaissances",
-        "teacher-student",
-        "distillation prof-élève",
-        "soft labels",
-        "dark knowledge"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "model-compression",
-        "deep-learning",
-        "small-language-model",
-        "synthetic-data",
-        "fine-tuning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Déploiement de modèles.md",
       "nom": "Déploiement de modèles",
       "alias": [
@@ -20205,42 +20822,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Entraînement distribué.md",
-      "nom": "Entraînement distribué",
-      "alias": [
-        "Distributed training",
-        "DDP",
-        "DistributedDataParallel",
-        "FSDP",
-        "ZeRO",
-        "data parallelism",
-        "model parallelism",
-        "pipeline parallelism",
-        "tensor parallelism",
-        "sharding",
-        "DeepSpeed",
-        "parallélisme de données"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "distributed-training",
-        "deep-learning",
-        "gpu",
-        "memory-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Explicabilité des modèles.md",
       "nom": "Explicabilité des modèles",
       "alias": [
@@ -20329,44 +20910,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Flash Attention and efficient attention.md",
-      "nom": "Flash Attention and efficient attention",
-      "alias": [
-        "Flash Attention",
-        "FlashAttention",
-        "attention efficace",
-        "multi-query attention",
-        "MQA",
-        "grouped-query attention",
-        "GQA",
-        "sparse attention",
-        "sliding window attention",
-        "attention différentielle",
-        "Differential Transformer",
-        "DIFF Transformer",
-        "bruit d'attention"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "mlops",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "inference-optimization",
-        "gpu",
-        "transformers"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/GAM.md",
       "nom": "GAM",
       "alias": [
@@ -20387,39 +20930,6 @@
         "regression",
         "linear-model",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/GANs.md",
-      "nom": "GANs",
-      "alias": [
-        "GAN",
-        "generative adversarial network",
-        "génération adversariale",
-        "réseau antagoniste génératif",
-        "DCGAN",
-        "StyleGAN",
-        "WGAN",
-        "CycleGAN",
-        "pix2pix"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "gan",
-        "generative-model",
-        "image-generation",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -20539,66 +21049,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Gradient checkpointing.md",
-      "nom": "Gradient checkpointing",
-      "alias": [
-        "Gradient checkpointing",
-        "activation checkpointing",
-        "recomputation",
-        "rematerialization",
-        "rematérialisation",
-        "recalcul d'activations",
-        "checkpoint"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "memory-optimization",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Graph Neural Networks.md",
-      "nom": "Graph Neural Networks",
-      "alias": [
-        "GNN",
-        "graph neural network",
-        "réseaux de neurones sur graphes",
-        "GCN",
-        "GAT",
-        "GraphSAGE",
-        "message passing",
-        "passage de messages"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "gnn",
-        "deep-learning",
-        "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/ICA.md",
       "nom": "ICA",
       "alias": [
@@ -20621,38 +21071,6 @@
         "dimensionality-reduction",
         "factor-analysis",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Image generation.md",
-      "nom": "Image generation",
-      "alias": [
-        "text-to-image",
-        "T2I",
-        "génération d'images",
-        "Stable Diffusion",
-        "DALL-E",
-        "Midjourney",
-        "FLUX",
-        "inpainting"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "generative-model",
-        "image-generation",
-        "diffusion",
-        "multimodal"
       ],
       "alternatives": null,
       "complements": null,
@@ -20788,30 +21206,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Kolmogorov-Arnold Networks.md",
-      "nom": "Kolmogorov-Arnold Networks",
-      "alias": [
-        "KAN",
-        "KANs",
-        "réseaux de Kolmogorov-Arnold",
-        "kolmogorov-arnold network"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Local Outlier Factor.md",
       "nom": "Local Outlier Factor",
       "alias": [
@@ -20832,40 +21226,6 @@
       "tags": [
         "anomaly-detection",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Maximal Update Parametrization.md",
-      "nom": "Maximal Update Parametrization",
-      "alias": [
-        "µP",
-        "muP",
-        "mu-P",
-        "µTransfer",
-        "muTransfer",
-        "transfert d'hyperparamètres",
-        "hyperparameter transfer",
-        "Tensor Programs",
-        "u-µP"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-rate",
-        "scaling-laws",
-        "hyperparameter-tuning",
-        "optimization",
-        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -20893,76 +21253,6 @@
       "pitch": null,
       "tags": [
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Mixed precision.md",
-      "nom": "Mixed precision",
-      "alias": [
-        "Mixed precision",
-        "précision mixte",
-        "AMP",
-        "automatic mixed precision",
-        "fp16",
-        "bf16",
-        "float16",
-        "bfloat16",
-        "loss scaling",
-        "autocast",
-        "half precision",
-        "demi-précision"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "mixed-precision",
-        "deep-learning",
-        "gpu",
-        "memory-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Mixture of Experts.md",
-      "nom": "Mixture of Experts",
-      "alias": [
-        "MoE",
-        "mélange d'experts",
-        "sparse MoE",
-        "Switch Transformer",
-        "experts conditionnels",
-        "top-k routing",
-        "fine-grained experts",
-        "shared experts",
-        "DeepSeekMoE",
-        "ratio de sparsité",
-        "expert parallelism"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "mixture-of-experts",
-        "transformers",
-        "deep-learning",
-        "scaling-laws"
       ],
       "alternatives": null,
       "complements": null,
@@ -21018,36 +21308,6 @@
         "model-monitoring",
         "data-drift",
         "concept-drift"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Multi-head Latent Attention.md",
-      "nom": "Multi-head Latent Attention",
-      "alias": [
-        "MLA",
-        "attention latente multi-tête",
-        "latent attention",
-        "compression du KV-cache",
-        "low-rank KV compression",
-        "decoupled RoPE"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "inference-optimization",
-        "transformers",
-        "gpu"
       ],
       "alternatives": null,
       "complements": null,
@@ -21221,111 +21481,6 @@
         "deep-learning",
         "classification",
         "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Positional encoding.md",
-      "nom": "Positional encoding",
-      "alias": [
-        "encodage de position",
-        "encodage positionnel",
-        "RoPE",
-        "rotary embeddings",
-        "ALiBi",
-        "sinusoidal positional encoding"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "positional-encoding",
-        "transformers",
-        "attention"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Pruning.md",
-      "nom": "Pruning",
-      "alias": [
-        "Pruning",
-        "élagage",
-        "élagage de modèle",
-        "sparsity",
-        "sparsité",
-        "structured pruning",
-        "unstructured pruning",
-        "élagage structuré",
-        "élagage non structuré",
-        "magnitude pruning",
-        "lottery ticket"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "pruning",
-        "model-compression",
-        "deep-learning",
-        "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Quantization.md",
-      "nom": "Quantization",
-      "alias": [
-        "Quantification",
-        "quantisation",
-        "INT8",
-        "INT4",
-        "FP8",
-        "GGUF",
-        "GPTQ",
-        "AWQ",
-        "PTQ",
-        "QAT",
-        "K-quants",
-        "NVFP4",
-        "MXFP4",
-        "FP4",
-        "microscaling",
-        "block scaling",
-        "quantization 4 bits"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "quantization",
-        "model-compression",
-        "deep-learning",
-        "inference-optimization"
       ],
       "alternatives": null,
       "complements": null,
@@ -21655,101 +21810,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Self-attention.md",
-      "nom": "Self-attention",
-      "alias": [
-        "auto-attention",
-        "scaled dot-product attention",
-        "multi-head attention",
-        "MHA",
-        "attention QKV",
-        "cross-attention"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "attention",
-        "transformers",
-        "deep-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Speech models.md",
-      "nom": "Speech models",
-      "alias": [
-        "ASR",
-        "TTS",
-        "speech-to-text",
-        "text-to-speech",
-        "reconnaissance vocale",
-        "synthèse vocale",
-        "Whisper",
-        "modèles de parole",
-        "speech-to-speech"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "speech",
-        "deep-learning",
-        "multimodal"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/State Space Models.md",
-      "nom": "State Space Models",
-      "alias": [
-        "SSM",
-        "modèles à espace d'états",
-        "Mamba",
-        "Mamba-2",
-        "Mamba-3",
-        "S4",
-        "S5",
-        "selective state space",
-        "linear-time sequence model",
-        "MIMO",
-        "discrétisation trapézoïdale"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "state-space-model",
-        "deep-learning",
-        "inference-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Systèmes de recommandation.md",
       "nom": "Systèmes de recommandation",
       "alias": [
@@ -21801,36 +21861,6 @@
       "pitch": null,
       "tags": [
         "feature-engineering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Transformer architectures.md",
-      "nom": "Transformer architectures",
-      "alias": [
-        "Transformer",
-        "transformeur",
-        "architecture transformeur",
-        "encoder-decoder",
-        "decoder-only",
-        "encoder-only"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "transformers",
-        "deep-learning",
-        "attention",
-        "nlp"
       ],
       "alternatives": null,
       "complements": null,
@@ -21890,36 +21920,6 @@
         "model-evaluation",
         "resampling",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Video generation.md",
-      "nom": "Video generation",
-      "alias": [
-        "text-to-video",
-        "T2V",
-        "génération de vidéos",
-        "Sora",
-        "video diffusion",
-        "image-to-video"
-      ],
-      "role": "notion",
-      "categorie": "concept/dl",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "generative-model",
-        "video-generation",
-        "diffusion",
-        "multimodal"
       ],
       "alternatives": null,
       "complements": null,

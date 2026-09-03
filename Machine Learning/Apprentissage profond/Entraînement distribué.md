@@ -2,7 +2,7 @@
 role: notion
 nom: Entraînement distribué
 alias: [Distributed training, DDP, DistributedDataParallel, FSDP, ZeRO, data parallelism, model parallelism, pipeline parallelism, tensor parallelism, sharding, DeepSpeed, parallélisme de données]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, mlops]
 tags: [distributed-training, deep-learning, gpu, memory-optimization]
 ---

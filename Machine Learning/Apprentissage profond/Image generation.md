@@ -2,7 +2,7 @@
 role: notion
 nom: Image generation
 alias: [text-to-image, T2I, génération d'images, Stable Diffusion, DALL-E, Midjourney, FLUX, inpainting]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [generative-model, image-generation, diffusion, multimodal]
 ---

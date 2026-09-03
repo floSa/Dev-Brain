@@ -2,7 +2,7 @@
 role: notion
 nom: Speech models
 alias: [ASR, TTS, speech-to-text, text-to-speech, reconnaissance vocale, synthèse vocale, Whisper, modèles de parole, speech-to-speech]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [speech, deep-learning, multimodal]
 ---

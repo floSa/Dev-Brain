@@ -2,7 +2,7 @@
 role: notion
 nom: Graph Neural Networks
 alias: [GNN, graph neural network, réseaux de neurones sur graphes, GCN, GAT, GraphSAGE, message passing, passage de messages]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, data-sci]
 tags: [gnn, deep-learning, representation-learning]
 ---

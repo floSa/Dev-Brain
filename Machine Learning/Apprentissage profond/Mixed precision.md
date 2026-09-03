@@ -2,7 +2,7 @@
 role: notion
 nom: Mixed precision
 alias: [Mixed precision, précision mixte, AMP, automatic mixed precision, fp16, bf16, float16, bfloat16, loss scaling, autocast, half precision, demi-précision]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng]
 tags: [mixed-precision, deep-learning, gpu, memory-optimization]
 ---

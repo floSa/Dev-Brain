@@ -2,7 +2,7 @@
 role: notion
 nom: Multi-head Latent Attention
 alias: [MLA, attention latente multi-tête, latent attention, compression du KV-cache, low-rank KV compression, decoupled RoPE]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [attention, inference-optimization, transformers, gpu]
 ---

@@ -2,14 +2,14 @@
 role: hub
 nom: Vision
 alias: [CV]
-pitch: Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
+pitch: Ce qu'on fait d'une image ou d'une vidéo — détecter, segmenter, suivre, estimer une pose, lire du texte — les backbones qui le permettent et les bibliothèques qui l'implémentent.
 domaines: [ml-eng, data-sci]
 tags: [computer-vision, cnn, vit, object-detection, segmentation, image-classification, data-augmentation, object-tracking, transfer-learning]
 ---
 
 # Vision
 
-> Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
+> Ce qu'on fait d'une image ou d'une vidéo — détecter, segmenter, suivre, estimer une pose, lire du texte — les backbones qui le permettent et les bibliothèques qui l'implémentent.
 
 ## Ce qu'il faut comprendre
 

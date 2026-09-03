@@ -2,7 +2,7 @@
 role: notion
 nom: Distillation
 alias: [Knowledge distillation, distillation de connaissances, teacher-student, distillation prof-élève, soft labels, dark knowledge]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [model-compression, deep-learning, small-language-model, synthetic-data, fine-tuning]
 ---

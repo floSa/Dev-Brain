@@ -2,7 +2,7 @@
 role: notion
 nom: Maximal Update Parametrization
 alias: [µP, muP, mu-P, µTransfer, muTransfer, transfert d'hyperparamètres, hyperparameter transfer, Tensor Programs, u-µP]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [learning-rate, scaling-laws, hyperparameter-tuning, optimization, deep-learning]
 ---

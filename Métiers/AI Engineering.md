@@ -26,8 +26,7 @@ pitch: Construire une application autour d'un modèle de langage — contexte, o
 Axe métier **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
 - [[LLM & IA générative]] — 70 page(s)
-- [[Machine Learning]] — 21 page(s)
-- [[Deep learning]] — 20 page(s)
+- [[Machine Learning]] — 41 page(s)
 - [[Sécurité]] — 5 page(s)
 - [[Mathématiques]] — 3 page(s)
 - [[Bases de données]] — 2 page(s)

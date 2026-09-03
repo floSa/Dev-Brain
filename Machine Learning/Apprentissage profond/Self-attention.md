@@ -2,7 +2,7 @@
 role: notion
 nom: Self-attention
 alias: [auto-attention, scaled dot-product attention, multi-head attention, MHA, attention QKV, cross-attention]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [attention, transformers, deep-learning]
 ---

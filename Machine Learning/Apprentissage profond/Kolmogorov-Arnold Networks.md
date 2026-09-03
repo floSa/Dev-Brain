@@ -2,7 +2,7 @@
 role: notion
 nom: Kolmogorov-Arnold Networks
 alias: [KAN, KANs, réseaux de Kolmogorov-Arnold, kolmogorov-arnold network]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng]
 tags: [deep-learning]
 ---
@@ -41,7 +41,7 @@ tags: [deep-learning]
 
 ## Approches voisines & alternatives
 
-- [[Deep learning]] — la famille d'architectures dont le KAN est une variante ; le MLP qu'il vise à concurrencer en est la brique de base.
+- [[Apprentissage profond|Deep learning]] — la famille d'architectures dont le KAN est une variante ; le MLP qu'il vise à concurrencer en est la brique de base.
 - [[Self-attention]] — autre brique structurante du deep learning moderne, orthogonale au KAN (des KAN-Transformers combinent les deux).
 
 ## Pour aller plus loin

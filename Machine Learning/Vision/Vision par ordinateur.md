@@ -12,7 +12,7 @@ tags: [computer-vision, cnn, deep-learning]
 ## Aperçu
 
 - Discipline qui fait **extraire du sens d'images et de vidéos** par un modèle : étiqueter, localiser, segmenter, décrire, générer.
-- Depuis 2012 (AlexNet sur ImageNet), le champ est dominé par le [[Deep learning|deep learning]] : les features sont **apprises de bout en bout**, plus dessinées à la main (SIFT, HOG).
+- Depuis 2012 (AlexNet sur ImageNet), le champ est dominé par le [[Apprentissage profond|deep learning]] : les features sont **apprises de bout en bout**, plus dessinées à la main (SIFT, HOG).
 
 ## Concepts clés
 
@@ -49,7 +49,7 @@ tags: [computer-vision, cnn, deep-learning]
 - [[CNN]] / [[Architectures CNN]] — l'ossature convolutive et ses familles concrètes.
 - [[Vision Transformers (ViT)]] / [[Modèles de fondation vision]] / [[Apprentissage auto-supervisé en vision]] — l'ossature attentionnelle, les grands backbones pré-entraînés (CLIP, DINOv2) et leur entraînement sans étiquettes.
 - [[Transfer learning vision]] / [[Augmentation d'images]] — comment entraîner avec peu de données.
-- [[Deep learning]] — la famille mère (optimisation, attention, génératif).
+- [[Apprentissage profond|Deep learning]] — la famille mère (optimisation, attention, génératif).
 - [[Vision Language Models]] — relier image et texte (VLM).
 - [[Image generation]] / [[Diffusion models]] / [[GANs]] — le versant génératif de la vision.
 - [[Rendu neuronal 3D & estimation de profondeur]] — le versant 3D : reconstruction de scènes et profondeur.

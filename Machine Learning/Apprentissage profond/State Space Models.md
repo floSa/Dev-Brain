@@ -2,7 +2,7 @@
 role: notion
 nom: State Space Models
 alias: [SSM, modèles à espace d'états, Mamba, Mamba-2, Mamba-3, S4, S5, selective state space, linear-time sequence model, MIMO, discrétisation trapézoïdale]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [state-space-model, deep-learning, inference-optimization]
 ---

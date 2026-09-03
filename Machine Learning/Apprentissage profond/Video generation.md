@@ -2,7 +2,7 @@
 role: notion
 nom: Video generation
 alias: [text-to-video, T2V, génération de vidéos, Sora, video diffusion, image-to-video]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng, ai-eng]
 tags: [generative-model, video-generation, diffusion, multimodal]
 ---

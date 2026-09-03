@@ -2,7 +2,7 @@
 role: notion
 nom: Gradient checkpointing
 alias: [Gradient checkpointing, activation checkpointing, recomputation, rematerialization, rematérialisation, recalcul d'activations, checkpoint]
-categorie: concept/dl
+categorie: ml/apprentissage-profond
 domaines: [ml-eng]
 tags: [memory-optimization, deep-learning, gpu]
 ---
