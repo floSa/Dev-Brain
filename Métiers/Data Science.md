@@ -28,7 +28,7 @@ Axe métier **Data Science** (`data-sci`) — explorer par sous-domaine, puis de
 - [[Statistiques & inférence]] — 37 page(s)
 - [[Mathématiques]] — 24 page(s)
 - [[Deep learning]] — 23 page(s)
-- [[Séries temporelles]] — 13 page(s)
+- [[Machine Learning]] — 13 page(s)
 - [[NLP (notions)]] — 7 page(s)
 - [[Signal & audio]] — 5 page(s)
 - [[Outils de développement]] — 1 page(s)

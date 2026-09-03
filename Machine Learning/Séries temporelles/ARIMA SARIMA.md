@@ -2,7 +2,7 @@
 role: notion
 nom: ARIMA SARIMA
 alias: [ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries]
 ---

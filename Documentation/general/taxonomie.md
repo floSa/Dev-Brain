@@ -418,11 +418,10 @@ sont descendus dans l'arbre.
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{ml, dl, ts, nlp}
+concept/{ml, dl, nlp}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
-- `ts` — séries temporelles & forecasting
 - `nlp` — traitement du langage naturel (TF-IDF, NER, recherche d'information)
 
 > Dérivé du réservoir Wiki v1 + spec brain-v2 (§5.2 : `concept/data`). À valider / étendre.
@@ -464,6 +463,11 @@ silencieuse, puisque `check_brain` l'accepterait encore.
   sous-dossier créé, aucun libellé à trancher** — première famille du lot 4 dans ce cas :
   `ml/rl` existait depuis la v2, son dossier depuis le lot 3. Le sous-domaine passe de 6 à
   23 pages sans changer l'ensemble des promotions du vault (42 avant, 42 après).
+
+- `ts` — retiré le 2026-09-05, 13 notions descendues dans
+  « Machine Learning/Séries temporelles/ ». Comme `rl` : aucune valeur ouverte, aucun
+  sous-dossier créé. Le sous-domaine passe de 7 à 20 pages, promotions du vault
+  inchangées (42 avant, 42 après).
 
 Les valeurs restantes suivront, une par lot de domaine.
 

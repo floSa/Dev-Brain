@@ -2,7 +2,7 @@
 role: notion
 nom: Autocorrelation
 alias: [Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci]
 tags: [timeseries, stochastic-process]
 ---

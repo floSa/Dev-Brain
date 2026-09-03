@@ -2,7 +2,7 @@
 role: notion
 nom: Intermittent demand
 alias: [Demande intermittente, Croston, SBA, TSB, demande sporadique, slow movers]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries]
 ---

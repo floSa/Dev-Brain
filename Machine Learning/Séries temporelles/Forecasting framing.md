@@ -2,7 +2,7 @@
 role: notion
 nom: Forecasting framing
 alias: [Cadrage forecasting, Cadrage d'une prévision, Forecasting problem framing]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries]
 ---

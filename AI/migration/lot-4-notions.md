@@ -106,7 +106,9 @@ une fois que le vocabulaire final est connu.
 - [x] **`rl` (17) — fait le 2026-09-05.** Zéro valeur ouverte, zéro sous-dossier
       créé, zéro libellé à trancher — la première famille du lot dans ce cas.
       L'étape 0 a rangé **17 sur 17** : le sous-hub les cite toutes nommément.
-- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `ts` (13) · [ ] `nlp` (7)
+- [x] **`ts` (13) — fait le 2026-09-05.** Idem : zéro valeur, zéro dossier, 13 sur 13
+      rangées par l'étape 0.
+- [ ] `dl` (52) · [ ] `ml` (67) · [ ] `nlp` (7)
 
 ### Pour chaque notion
 

@@ -2,7 +2,7 @@
 role: notion
 nom: Hierarchical forecasting
 alias: [Prévision hiérarchique, Réconciliation, Hierarchical reconciliation, MinT, bottom-up, top-down]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries]
 ---

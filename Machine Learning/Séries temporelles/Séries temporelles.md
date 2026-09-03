@@ -34,6 +34,21 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - Transformer la série en colonnes puis modéliser → [[Tabulaire]] ; industrialiser le réentraînement → [[Suivi d'expériences]] et [[Serving]].
 
 <!-- AUTO:START -->
+### Notions
+- [[ARIMA SARIMA]] — domaines : data-sci, ml-eng
+- [[Autocorrelation]] — domaines : data-sci
+- [[Exponential smoothing]] — domaines : data-sci, ml-eng
+- [[Forecasting framing]] — domaines : data-sci, ml-eng
+- [[Forecasting metrics]] — domaines : data-sci, ml-eng
+- [[Foundation models pour séries temporelles]] — domaines : data-sci, ml-eng
+- [[Hierarchical forecasting]] — domaines : data-sci, ml-eng
+- [[Intermittent demand]] — domaines : data-sci, ml-eng
+- [[Maintenance prédictive et RUL]] — domaines : data-sci, mlops
+- [[Stationarity]] — domaines : data-sci
+- [[Time series anomaly detection]] — domaines : data-sci, mlops
+- [[Time series feature engineering]] — domaines : data-sci, ml-eng
+- [[Walk-forward CV]] — domaines : data-sci, ml-eng
+
 ### Briques
 - [[Chronos]] — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).
 - [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.

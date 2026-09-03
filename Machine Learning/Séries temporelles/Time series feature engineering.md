@@ -2,7 +2,7 @@
 role: notion
 nom: Time series feature engineering
 alias: [Features temporelles, Lag features, Rolling features, Fourier terms, Time series features]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries, feature-engineering]
 ---

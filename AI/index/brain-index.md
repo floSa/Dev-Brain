@@ -666,21 +666,6 @@
 - **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
 - **Traitement du langage naturel** — domaines : data-sci, ml-eng, ai-eng · alias : NLP, natural language processing, TALN, TAL, traitement automatique du langage
 
-### concept/ts
-- **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
-- **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
-- **Exponential smoothing** — domaines : data-sci, ml-eng · alias : Lissage exponentiel, ETS, Holt-Winters, SES, Holt, AutoETS
-- **Forecasting framing** — domaines : data-sci, ml-eng · alias : Cadrage forecasting, Cadrage d'une prévision, Forecasting problem framing
-- **Forecasting metrics** — domaines : data-sci, ml-eng · alias : Métriques de prévision, MAPE, sMAPE, MASE, WAPE, RMSSE, pinball loss, forecast accuracy
-- **Foundation models pour séries temporelles** — domaines : data-sci, ml-eng · alias : Time series foundation models, TSFM, Modèles de fondation séries temporelles, Foundation models time series, Zero-shot forecasting
-- **Hierarchical forecasting** — domaines : data-sci, ml-eng · alias : Prévision hiérarchique, Réconciliation, Hierarchical reconciliation, MinT, bottom-up, top-down
-- **Intermittent demand** — domaines : data-sci, ml-eng · alias : Demande intermittente, Croston, SBA, TSB, demande sporadique, slow movers
-- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
-- **Stationarity** — domaines : data-sci · alias : Stationnarité, Série stationnaire, Stationnaire, Racine unitaire
-- **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
-- **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
-- **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
-
 ### data/fiabilite
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
 - **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
@@ -843,6 +828,21 @@
 - **Reward shaping and hacking** — domaines : ml-eng, ai-eng · alias : reward shaping, reward hacking, façonnage de récompense, détournement de récompense, specification gaming, reward design, potential-based shaping
 - **Théorie des jeux** — domaines : ml-eng, ai-eng · alias : game theory, théorie des jeux, équilibre de Nash, Nash equilibrium, jeu à somme nulle, zero-sum, information imparfaite, minimax
 - **Value functions** — domaines : ml-eng · alias : fonctions de valeur, fonction de valeur, value function, V-function, Q-function, fonction Q, fonction de valeur d'état-action
+
+### ml/series-temporelles
+- **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
+- **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
+- **Exponential smoothing** — domaines : data-sci, ml-eng · alias : Lissage exponentiel, ETS, Holt-Winters, SES, Holt, AutoETS
+- **Forecasting framing** — domaines : data-sci, ml-eng · alias : Cadrage forecasting, Cadrage d'une prévision, Forecasting problem framing
+- **Forecasting metrics** — domaines : data-sci, ml-eng · alias : Métriques de prévision, MAPE, sMAPE, MASE, WAPE, RMSSE, pinball loss, forecast accuracy
+- **Foundation models pour séries temporelles** — domaines : data-sci, ml-eng · alias : Time series foundation models, TSFM, Modèles de fondation séries temporelles, Foundation models time series, Zero-shot forecasting
+- **Hierarchical forecasting** — domaines : data-sci, ml-eng · alias : Prévision hiérarchique, Réconciliation, Hierarchical reconciliation, MinT, bottom-up, top-down
+- **Intermittent demand** — domaines : data-sci, ml-eng · alias : Demande intermittente, Croston, SBA, TSB, demande sporadique, slow movers
+- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+- **Stationarity** — domaines : data-sci · alias : Stationnarité, Série stationnaire, Stationnaire, Racine unitaire
+- **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
+- **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
+- **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
 
 ### security/ia
 - **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM

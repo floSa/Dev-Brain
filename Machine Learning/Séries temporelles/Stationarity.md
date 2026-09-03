@@ -2,7 +2,7 @@
 role: notion
 nom: Stationarity
 alias: [Stationnarité, Série stationnaire, Stationnaire, Racine unitaire]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci]
 tags: [timeseries, stochastic-process]
 ---

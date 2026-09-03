@@ -1767,7 +1767,7 @@
 
 ### Data Science  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]], [[Statistiques & inférence]], [[Séries temporelles]], [[Tabulaire]], [[Visualisation]]
+- liens sortants : [[Data & pipelines]], [[DataFrames]], [[Deep learning]], [[Interfaces & apps data]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]], [[Statistiques & inférence]], [[Tabulaire]], [[Visualisation]]
 - liens entrants : [[AI Engineering]], [[ML Engineering]]
 
 ### DataFrames  ·  hub
@@ -1832,12 +1832,12 @@
 
 ### ML Engineering  ·  hub
 - tags : —
-- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]], [[Séries temporelles]]
+- liens sortants : [[Apprentissage profond]], [[Calcul distribué]], [[Data Science]], [[Deep learning]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Machine learning (notions)]], [[Mathématiques]], [[NLP (notions)]], [[Outils de développement]], [[Signal & audio]]
 - liens entrants : [[Data Science]], [[MLOps]]
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Séries temporelles]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[Deep learning]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Machine learning (notions)]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Modèles de langage  ·  hub
@@ -1983,7 +1983,7 @@
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
 - liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[Data Science]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[Serving]], [[Traitement]]
+- liens entrants : [[Machine Learning]], [[Serving]], [[Traitement]]
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`

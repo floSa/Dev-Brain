@@ -2,7 +2,7 @@
 role: notion
 nom: Forecasting metrics
 alias: [Métriques de prévision, MAPE, sMAPE, MASE, WAPE, RMSSE, pinball loss, forecast accuracy]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries, model-evaluation]
 ---

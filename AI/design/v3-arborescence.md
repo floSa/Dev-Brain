@@ -36,9 +36,9 @@ tags: [meta, design, v3, migration]
 | `MOC/Concepts` | 10 | **conservés jusqu'au lot 4**, qui les tue domaine par domaine — **6 supprimées au 2026-09-05**, sur mesure R7 ; restent `Deep learning`, `LLM (notions)`, `Machine learning (notions)`, `NLP (notions)` |
 
 **Notions à recatégoriser : 205** — c'est le seul poste de travail non mécanique.
-**158 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
-`math` (26), `data` (13, en deux passages), `signal` (5), `ai` (4), `llm` (56) et `rl` (17).
-**139 restent** sous `Wiki/Concepts/` — `dl` (52), `ml` (67), `ts` (13), `nlp` (7).
+**171 faites au 2026-09-05** : les 37 du domaine pilote « Statistiques & inférence », puis
+`math` (26), `data` (13, en deux passages), `signal` (5), `ai` (4), `llm` (56), `rl` (17)
+et `ts` (13). **126 restent** sous `Wiki/Concepts/` — `dl` (52), `ml` (67), `nlp` (7).
 
 > **État au 2026-09-05 — le lot 3 est CLOS.** Les 20 domaines ont été migrés le
 > 2026-09-04 (le pilote « Bases de données », les 14 plus petits, les trois moyens,
@@ -181,11 +181,12 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - [x] hub écrit · [x] sous-dossiers créés · [ ] notions recatégorisées · [ ] fiches au nouveau gabarit
 
 > 85 briques et 12 comparatifs descendus, 9 sous-dossiers promus, 10 hubs écrits.
-> **Lot 4 en cours ici** : les 17 notions `concept/rl` sont descendues le 2026-09-05
-> dans « Apprentissage par renforcement/ », sans valeur ouverte ni sous-dossier créé —
-> le dossier existait depuis le lot 3 et le sous-hub citait les 17 nommément.
-> Les 139 notions restantes portent encore `concept/ml`, `concept/dl`, `concept/ts`
-> ou `concept/nlp` : elles restent sous `Wiki/Concepts/`, et les hubs les citent
+> **Lot 4 en cours ici** : les 17 notions `concept/rl` et les 13 `concept/ts` sont
+> descendues le 2026-09-05 dans « Apprentissage par renforcement/ » et
+> « Séries temporelles/ », sans valeur ouverte ni sous-dossier créé — les dossiers
+> existaient depuis le lot 3 et les sous-hubs citaient les 30 nommément.
+> Les 126 notions restantes portent encore `concept/ml`, `concept/dl` ou
+> `concept/nlp` : elles restent sous `Wiki/Concepts/`, et les hubs les citent
 > toutes en clair en attendant.
 
 **Apprentissage profond/** — `ml/apprentissage-profond` — 60 pages
@@ -277,7 +278,7 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[n]` Théorie des jeux
 - `[n]` Value functions
 
-**Séries temporelles/** — `ml/series-temporelles` — 20 pages
+**Séries temporelles/** — `ml/series-temporelles` — 20 pages · **notions descendues le 2026-09-05**
 
 - `[n]` ARIMA SARIMA
 - `[n]` Autocorrelation

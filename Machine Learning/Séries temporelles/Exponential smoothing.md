@@ -2,7 +2,7 @@
 role: notion
 nom: Exponential smoothing
 alias: [Lissage exponentiel, ETS, Holt-Winters, SES, Holt, AutoETS]
-categorie: concept/ts
+categorie: ml/series-temporelles
 domaines: [data-sci, ml-eng]
 tags: [forecasting, timeseries]
 ---
