@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 697 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 698 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -160,6 +160,7 @@
 - **Pinecone** — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 - **Qdrant** — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - **ScaNN** — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+- **USearch** — Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.
 - **Weaviate** — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 
 ### design/diagramme

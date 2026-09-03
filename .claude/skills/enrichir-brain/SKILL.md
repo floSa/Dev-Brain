@@ -217,6 +217,15 @@ ne l'est pas : proposer, et attendre.
      comprendre`, `## Choisir`), écrit à la main : une brique qui change la donne du dossier
      doit apparaître dans `## Choisir`, sinon le hub ment par omission. Fin d'étape : soit une
      ligne ajoutée au corps du hub, soit la raison explicite de ne pas en ajouter.
+
+     > **P2 ne bouge pas toujours, et c'est normal.** Si la brique atterrit dans un
+     > **sous-dossier promu**, la zone AUTO du hub de domaine liste les **sous-hubs**, pas les
+     > feuilles : elle ne change pas. Mesuré en insérant `USearch` dans
+     > `Bases de données/Vectoriel/` — `Vectoriel.md` bouge, `Bases de données.md` reste
+     > identique au bit près. C'est le cas type de la « ligne sans objet » : la **déclarer**
+     > sans objet, ne pas la taire, et regarder quand même le **corps** du hub parent, qui peut
+     > décrire le sous-domaine en une phrase à rafraîchir. Si la brique atterrit **directement
+     > dans le dossier de domaine**, P1 et P2 désignent la même page.
    - **P3 — le comparatif.** Si le `.base` filtre par `categorie` (le cas normal), la nouvelle
      brique **entre toute seule** dans la vue : rien à faire, le vérifier suffit. S'il filtre
      par liste de noms codée en dur ou par chemin, **elle n'entrera jamais** : le signaler

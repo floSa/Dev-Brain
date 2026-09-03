@@ -1,6 +1,7 @@
 {
   "generated_by": "AI/scripts/build_index.py",
   "scanned": [
+    ".githooks",
     "Automatisation no-code",
     "Bases de données",
     "Calcul distribué",
@@ -27,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 697,
+  "count": 698,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -142,6 +143,7 @@
       "Milvus",
       "Qdrant",
       "ScaNN",
+      "USearch",
       "hnswlib"
     ],
     "anomaly-detection": [
@@ -813,6 +815,7 @@
       "LanceDB",
       "SQLite",
       "ScaNN",
+      "USearch",
       "hnswlib"
     ],
     "embeddings": [
@@ -1129,6 +1132,7 @@
       "Redis",
       "Redis Insight",
       "ScaNN",
+      "USearch",
       "hnswlib",
       "numpy",
       "pandas"
@@ -2779,6 +2783,7 @@
       "Pinecone",
       "Qdrant",
       "ScaNN",
+      "USearch",
       "Vespa",
       "Weaviate",
       "hnswlib",
@@ -3961,7 +3966,8 @@
         "[[hnswlib]]",
         "[[Faiss]]",
         "[[ScaNN]]",
-        "[[Chroma]]"
+        "[[Chroma]]",
+        "[[USearch]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4016,7 +4022,8 @@
         "[[hnswlib]]",
         "[[Annoy]]",
         "[[ScaNN]]",
-        "[[Chroma]]"
+        "[[Chroma]]",
+        "[[USearch]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4142,7 +4149,35 @@
         "[[Faiss]]",
         "[[hnswlib]]",
         "[[Annoy]]",
-        "[[Chroma]]"
+        "[[Chroma]]",
+        "[[USearch]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Vectoriel/USearch.md",
+      "nom": "USearch",
+      "alias": [
+        "usearch",
+        "unum-usearch"
+      ],
+      "role": "brique",
+      "categorie": "database/vecteur",
+      "famille": "paquet",
+      "domaines": null,
+      "pitch": "Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.",
+      "tags": [
+        "vector-db",
+        "ann",
+        "embedded",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[hnswlib]]",
+        "[[Faiss]]",
+        "[[Annoy]]",
+        "[[ScaNN]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4211,7 +4246,8 @@
         "[[Faiss]]",
         "[[Annoy]]",
         "[[ScaNN]]",
-        "[[Chroma]]"
+        "[[Chroma]]",
+        "[[USearch]]"
       ],
       "complements": [],
       "maturite": "production"

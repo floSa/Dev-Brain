@@ -21,7 +21,7 @@ domaines: [data-eng, ai-eng]
 - Prototype ou notebook → [[Chroma]] ou [[LanceDB]], embarqués, rien à héberger.
 - Production self-hébergée avec filtrage exigeant → [[Qdrant]]. Gros volumes distribués → [[Milvus]]. Recherche hybride dense + BM25 → [[Weaviate]].
 - Zéro infra à gérer, budget disponible → [[Pinecone]], managé et propriétaire.
-- Besoin de l'index seul, à embarquer dans une application → [[Faiss]] ou [[hnswlib]].
+- Besoin de l'index seul, à embarquer dans une application → [[Faiss]] ou [[hnswlib]]. Hors de Python, ou avec une métrique métier non standard → [[USearch]].
 
 <!-- AUTO:START -->
 ### Briques
@@ -35,6 +35,7 @@ domaines: [data-eng, ai-eng]
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+- [[USearch]] — Moteur ANN header-only en C++ à métriques définies par l'utilisateur — 10+ bindings de langage, aucune dépendance obligatoire.
 - [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 
 ### Comparatifs
