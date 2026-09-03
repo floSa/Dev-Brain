@@ -2,7 +2,7 @@
 role: notion
 nom: Jensen-Shannon divergence
 alias: [Divergence de Jensen-Shannon, Jensen-Shannon, JSD, JS divergence, divergence JS]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [information-theory, kl-divergence]
 ---

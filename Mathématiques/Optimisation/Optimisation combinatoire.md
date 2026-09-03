@@ -2,7 +2,7 @@
 role: notion
 nom: Optimisation combinatoire
 alias: [Combinatorial optimization, Sac à dos, Knapsack, Problème d'affectation, Assignment problem, Set cover, Couverture d'ensemble, Voyageur de commerce, TSP]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [data-sci, ml-eng]
 tags: [optimization, combinatorial-optimization, dynamic-programming]
 ---

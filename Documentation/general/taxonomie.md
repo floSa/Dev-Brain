@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 96 valeurs, cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 99 valeurs, cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -143,7 +143,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (96 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (99 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -167,7 +167,7 @@ data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
-math/{optimisation}
+math/{optimisation, algebre-lineaire, information, theorie-apprentissage}
 compute/{distribue, gpu, a-la-demande}
 storage/{objet}
 web/{backend, frontend, api}
@@ -262,9 +262,34 @@ valeurs disparues et ne sont pas reconduites.
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
   déploiement d'applications de **confiance**) et de `compute/distribue` (calcul réparti sur
   plusieurs nœuds).
-- `math/optimisation` — recherche opérationnelle et programmation mathématique : modélisation et
-  résolution (LP, MIP, optimisation convexe), modeleurs Python et bindings de solveurs. Distinct
-  de `ml/hyperopt` (chercher des hyperparamètres) et de `stats/*` (modélisation statistique).
+- `math/optimisation` — **minimiser une fonction** : le mécanisme, ses garanties et ses cas
+  discrets. Descente de gradient et ses réglages, convexité, courbure, paysage de perte, plus
+  la branche discrète (programmation linéaire, MIP, optimisation sous contrainte) et les
+  modeleurs et solveurs qui la résolvent. Distinct de `ml/hyperopt` (chercher des
+  hyperparamètres, pas minimiser une fonction connue), de `ml/*` (les modèles qui *emploient*
+  la descente de gradient — la mécanique est ici, l'architecture est là-bas) et de `stats/*`
+  (modélisation statistique). **Élargi au lot 4** : la valeur ne portait que la recherche
+  opérationnelle tant qu'elle n'avait qu'une brique.
+- `math/algebre-lineaire` — **ouvert au lot 4.** Le langage dans lequel données et modèles sont
+  écrits : normes, produits matriciels, projections, décompositions (SVD, valeurs propres). Ce
+  sont les objets et leurs propriétés, pas les méthodes qui s'en servent. Distinct de
+  `stats/exploratoire`, qui *applique* une décomposition à un tableau de données pour en
+  interpréter les axes : `SVD` est la factorisation $A = U\Sigma V^	op$, `PCA` est la méthode
+  qui l'emploie — les deux pages existent, et elles ne sont pas dans le même dossier.
+- `math/information` — **ouvert au lot 4.** Mesurer l'incertitude d'une loi et l'écart entre
+  deux lois : entropie, entropie croisée, divergences (KL, Jensen-Shannon), information
+  mutuelle, et le transport optimal avec la distance de Wasserstein qui en est la valeur.
+  Rangé ici et non en `math/optimisation` alors que le transport optimal *est* un programme
+  linéaire : ce que ces pages produisent est une **mesure d'écart entre distributions**, et
+  c'est par là qu'on les cherche. Distinct de `stats/inference`, qui teste un écart sur un
+  échantillon plutôt que de le définir.
+- `math/theorie-apprentissage` — **ouvert au lot 4.** Pourquoi la généralisation est possible,
+  et de quoi elle dépend : PAC learning, dimension de VC, complexité de Rademacher, bornes de
+  généralisation, No Free Lunch. La valeur nomme la **théorie** et non « apprentissage » seul,
+  qui à côté de `ml/*` se lirait comme apprentissage automatique. Distinct de `ml/eval`, qui
+  *mesure* l'erreur d'un modèle donné là où ces pages la **bornent** a priori — et ces bornes
+  sont trop lâches pour dimensionner quoi que ce soit, leur intérêt est de dire de quoi la
+  généralisation dépend.
 - `stats/probabilite` — **ouvert au lot 4.** Théorie des probabilités et processus aléatoires :
   théorèmes de convergence (loi des grands nombres, théorème central limite, inégalités de
   concentration) et processus (chaînes de Markov, Poisson, mouvement brownien). Distinct de
@@ -347,12 +372,12 @@ sont descendus dans l'arbre.
 | `network` | Réseau | ce qui circule entre machines |
 | `devops` | DevOps | déployer du logiciel en production |
 | `docs` | Documents | produire un document pour un humain |
-| `math` | Mathématiques | optimisation mathématique, recherche opérationnelle |
+| `math` | Mathématiques | les quatre socles : algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage |
 
 ## Notions (`role: notion`) — `categorie: concept/<sous-domaine>`
 
 ```
-concept/{data, ai, ml, dl, rl, ts, nlp, signal, math, devops, llm}
+concept/{data, ai, ml, dl, rl, ts, nlp, signal, devops, llm}
 ```
 
 - `dl` — deep learning (architectures, attention, génératif)
@@ -365,10 +390,14 @@ concept/{data, ai, ml, dl, rl, ts, nlp, signal, math, devops, llm}
 
 **Ce vocabulaire est en train de disparaître.** Le lot 4 recatégorise les notions sur le même
 vocabulaire que les briques — une notion se range par son **domaine**, comme tout le reste, et
-`concept/<sous-domaine>` était le vocabulaire d'une galaxie qui n'existe plus. `stats` a été
-**retiré du bloc le 2026-09-05** : ses 37 notions sont descendues dans « Statistiques &
-inférence/ », il ne reste plus une seule page pour le porter, et l'y laisser aurait autorisé
-une rechute silencieuse. Les onze autres valeurs suivront, une par lot de domaine.
+`concept/<sous-domaine>` était le vocabulaire d'une galaxie qui n'existe plus. Une valeur est
+**retirée du bloc** dès que plus aucune page ne la porte : l'y laisser autoriserait une rechute
+silencieuse, puisque `check_brain` l'accepterait encore.
+
+- `stats` — retiré le 2026-09-05, 37 notions descendues dans « Statistiques & inférence/ ».
+- `math` — retiré le 2026-09-05, 26 notions descendues dans « Mathématiques/ ».
+
+Les dix valeurs restantes suivront, une par lot de domaine.
 
 ## Skills perso (`categorie: skill/<sous-domaine>`)
 

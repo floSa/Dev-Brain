@@ -2,7 +2,7 @@
 role: notion
 nom: PAC learning
 alias: [Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC]
-categorie: concept/math
+categorie: math/theorie-apprentissage
 domaines: [data-sci, ml-eng]
 tags: [learning-theory, pac-learning]
 ---

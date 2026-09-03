@@ -2,7 +2,7 @@
 role: notion
 nom: Optimal transport
 alias: [Transport optimal, OT, Plan de transport, Monge-Kantorovich, Sinkhorn, Earth mover's distance problem]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [optimization, optimal-transport]
 ---

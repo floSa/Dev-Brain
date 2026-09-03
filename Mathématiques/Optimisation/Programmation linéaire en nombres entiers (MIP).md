@@ -2,7 +2,7 @@
 role: notion
 nom: Programmation linéaire en nombres entiers (MIP)
 alias: [MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [data-sci, ml-eng]
 tags: [optimization, linear-programming, combinatorial-optimization]
 ---

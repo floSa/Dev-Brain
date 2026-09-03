@@ -2,7 +2,7 @@
 role: notion
 nom: Shannon entropy
 alias: [Entropie de Shannon, entropie, information entropy, entropy, entropie de l'information]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [information-theory, entropy]
 ---

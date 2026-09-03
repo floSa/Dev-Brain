@@ -2,7 +2,7 @@
 role: notion
 nom: Learning rate schedules
 alias: [Learning rate schedules, Planification du taux d'apprentissage, LR schedule, Warmup, Cosine decay, Cyclical learning rate]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [ml-eng, ai-eng]
 tags: [optimization, learning-rate]
 ---

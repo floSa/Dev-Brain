@@ -2,7 +2,7 @@
 role: notion
 nom: SVD
 alias: [décomposition en valeurs singulières, singular value decomposition, valeurs singulières]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra, matrix-decomposition, eigenvalue, dimensionality-reduction]
 ---

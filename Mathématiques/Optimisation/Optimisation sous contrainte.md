@@ -2,7 +2,7 @@
 role: notion
 nom: Optimisation sous contrainte
 alias: [Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [data-sci, ml-eng]
 tags: [optimization, constrained-optimization, convexity]
 ---

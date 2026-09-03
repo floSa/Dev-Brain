@@ -858,52 +858,62 @@ Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categor
 - `[c]` Comparatif - Scraping — filtre `data/scraping`
 - `[c]` Comparatif - Visualisation — filtre `data/viz`
 
-### Mathématiques  ·  27 pages  ·  **migré le 2026-09-04**
+### Mathématiques  ·  27 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
 - [x] hub écrit — hub de domaine, issu de `MOC/Categories/` par `git mv`, corps réécrit
-  au gabarit §9. Il porte la carte des quatre familles du domaine et cite les 26 notions
-  en clair : c'est aujourd'hui la seule page du dossier
-- [x] sous-dossiers créés — **aucun**. `math/optimisation` ne compte qu'une page
-- [ ] notions recatégorisées — **lot 4** : les 26 notions ci-dessous portent
-  `concept/math` et sont encore sous `Wiki/Concepts/`
+  au gabarit §9 au lot 3, puis **réduit au lot 4** : il n'énumère plus les 26 notions,
+  il aiguille vers les quatre sous-hubs qui les portent, et il dit ce qui n'est PAS ici
+  (la probabilité, l'analyse factorielle) et pourquoi
+- [x] sous-dossiers créés — **quatre, au lot 4**, et le domaine n'a plus AUCUNE page à
+  son niveau. C'est permis : le plafond du seuil ne bloque que le sous-domaine qui
+  égale le total de son domaine (`arbo.py`), et aucun des quatre n'y arrive. Trois
+  valeurs ont dû être ouvertes ; `math/optimisation` existait et a été **élargie** —
+  elle ne portait que la recherche opérationnelle tant qu'elle n'avait qu'une brique
+- [x] notions recatégorisées — **lot 4, 2026-09-05** : les 26 sont dans l'arbre, plus
+  aucune ne porte `concept/math`, et la valeur est retirée du vocabulaire
+- [x] **le corps du hub a rangé les 26 à lui seul.** Ses quatre puces, écrites au lot 3,
+  citent chaque notion nommément et une seule fois : c'est une partition exacte, et
+  l'étape 0 de la procédure du lot n'a eu qu'à la suivre. Un seul écart tag / hub —
+  `Optimal transport` porte le tag `optimization` et va en `math/information`, avec
+  `Wasserstein distance` dont il est la valeur optimale
 - [ ] fiches au nouveau gabarit — lot 6
 
-**Au niveau du domaine** — 1 pages
+**Optimisation/** — `math/optimisation` — 10 pages — **valeur élargie**
 
+- `[n]` Convexity · `[n]` Gradient descent · `[n]` Learning rate schedules
+- `[n]` Loss landscape and saddle points · `[n]` Newton & quasi-Newton
+- `[n]` Optimisation combinatoire · `[n]` Optimisation sous contrainte
+- `[n]` Programmation linéaire en nombres entiers (MIP)
 - `[b]` PuLP — paquet, Python
+- `[c]` Comparatif - Solveurs d'optimisation — **descendu ici avec ses membres** : son
+  filtre est `categorie == "math/optimisation"` exactement, donc tous ses membres sont
+  dans ce dossier. Celui de « Statistiques & inférence » filtre le préfixe entier et
+  enjambe les quatre sous-dossiers : il est resté au niveau du domaine. La règle porte
+  sur les **membres**, pas sur le nom du fichier
 
-**Comparatifs** — 1
+**Théorie de l'information/** — `math/information` — 7 pages — **valeur nouvelle**
 
-- `[c]` Comparatif - Solveurs d'optimisation — filtre `math/optimisation`
+- `[n]` Cross-entropy · `[n]` Jensen-Shannon divergence · `[n]` KL divergence
+- `[n]` Mutual information · `[n]` Optimal transport · `[n]` Shannon entropy
+- `[n]` Wasserstein distance
 
-**À arbitrer — 26 notions sans sous-domaine**
+**Algèbre linéaire/** — `math/algebre-lineaire` — 6 pages — **valeur nouvelle**
 
-- [ ] `[n]` Convexity
-- [ ] `[n]` Cross-entropy
-- [ ] `[n]` Eigendecomposition
-- [ ] `[n]` Generalization bounds
-- [ ] `[n]` Gradient descent
-- [ ] `[n]` Jensen-Shannon divergence
-- [ ] `[n]` KL divergence
-- [ ] `[n]` Learning rate schedules
-- [ ] `[n]` Loss landscape and saddle points
-- [ ] `[n]` Matrix decompositions
-- [ ] `[n]` Matrix products
-- [ ] `[n]` Mutual information
-- [ ] `[n]` Newton & quasi-Newton
-- [ ] `[n]` No Free Lunch theorem
-- [ ] `[n]` Optimal transport
-- [ ] `[n]` Optimisation combinatoire
-- [ ] `[n]` Optimisation sous contrainte
-- [ ] `[n]` PAC learning
-- [ ] `[n]` Programmation linéaire en nombres entiers (MIP)
-- [ ] `[n]` Projections
-- [ ] `[n]` Rademacher complexity
-- [ ] `[n]` SVD
-- [ ] `[n]` Shannon entropy
-- [ ] `[n]` VC dimension
-- [ ] `[n]` Vector norms
-- [ ] `[n]` Wasserstein distance
+- `[n]` Eigendecomposition · `[n]` Matrix decompositions · `[n]` Matrix products
+- `[n]` Projections · `[n]` SVD · `[n]` Vector norms
+
+**Théorie de l'apprentissage/** — `math/theorie-apprentissage` — 5 pages — **valeur nouvelle**
+
+- `[n]` Generalization bounds · `[n]` No Free Lunch theorem · `[n]` PAC learning
+- `[n]` Rademacher complexity · `[n]` VC dimension
+
+> Exactement 5, donc exactement au seuil : relu deux fois comme la remontée 4 du pilote
+> l'exige. Ce sont les **5 seules pages du vault** taguées `learning-theory`, et aucune
+> des trois autres familles ne peut y verser — le compte est un fait mesuré, pas un
+> arbitrage qui viserait le seuil. La valeur nomme la **théorie** et non
+> « apprentissage » seul, qui à côté de `ml/*` se lirait comme apprentissage automatique.
+
+**Au niveau du domaine** — 0 page
 
 ### Outils de développement  ·  19 pages  ·  **migré le 2026-09-04**
 

@@ -2,7 +2,7 @@
 role: notion
 nom: Vector norms
 alias: [normes vectorielles, normes, Lp norms, norme Lp]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra, vector-norm, regularization]
 ---

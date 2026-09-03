@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 702 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 706 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -667,34 +667,6 @@
 - **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
 - **tool-use** — domaines : ai-eng · alias : function calling, appel d'outils, tool calling, appel de fonctions
 
-### concept/math
-- **Convexity** — domaines : data-sci, ml-eng · alias : Convexité, Convex optimization, Optimisation convexe, fonction convexe, ensemble convexe
-- **Cross-entropy** — domaines : data-sci, ml-eng, ai-eng · alias : Entropie croisée, cross entropy, log-loss, log loss, perte d'entropie croisée, negative log-likelihood, NLL
-- **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD
-- **Generalization bounds** — domaines : data-sci, ml-eng · alias : Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap
-- **Gradient descent** — domaines : data-sci, ml-eng · alias : Descente de gradient, GD, SGD, Stochastic gradient descent, Descente de gradient stochastique, Mini-batch
-- **Jensen-Shannon divergence** — domaines : data-sci, ml-eng · alias : Divergence de Jensen-Shannon, Jensen-Shannon, JSD, JS divergence, divergence JS
-- **KL divergence** — domaines : data-sci, ml-eng · alias : Divergence de Kullback-Leibler, Kullback-Leibler, KL, relative entropy, entropie relative, divergence KL
-- **Learning rate schedules** — domaines : ml-eng, ai-eng · alias : Learning rate schedules, Planification du taux d'apprentissage, LR schedule, Warmup, Cosine decay, Cyclical learning rate
-- **Loss landscape and saddle points** — domaines : ml-eng, ai-eng · alias : Loss landscape, Paysage de perte, Saddle points, Points-selles, Surface de perte, Sharp minima
-- **Matrix decompositions** — domaines : data-sci, ml-eng · alias : factorisation matricielle, décompositions matricielles, matrix factorization
-- **Matrix products** — domaines : data-sci, ml-eng · alias : produit matriciel, multiplication matricielle, matrix multiplication, produit matrice-vecteur
-- **Mutual information** — domaines : data-sci, ml-eng · alias : Information mutuelle, MI, mutual info, information mutuelle ponctuelle, PMI
-- **Newton & quasi-Newton** — domaines : data-sci, ml-eng · alias : Newton, Méthode de Newton, Newton-Raphson, quasi-Newton, BFGS, L-BFGS, IRLS
-- **No Free Lunch theorem** — domaines : data-sci, ml-eng · alias : Théorème No Free Lunch, No Free Lunch, NFL, pas de repas gratuit, théorème du pas de modèle universel
-- **Optimal transport** — domaines : data-sci, ml-eng · alias : Transport optimal, OT, Plan de transport, Monge-Kantorovich, Sinkhorn, Earth mover's distance problem
-- **Optimisation combinatoire** — domaines : data-sci, ml-eng · alias : Combinatorial optimization, Sac à dos, Knapsack, Problème d'affectation, Assignment problem, Set cover, Couverture d'ensemble, Voyageur de commerce, TSP
-- **Optimisation sous contrainte** — domaines : data-sci, ml-eng · alias : Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne
-- **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
-- **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
-- **Projections** — domaines : data-sci, ml-eng · alias : projection orthogonale, projecteur, projection
-- **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
-- **Shannon entropy** — domaines : data-sci, ml-eng · alias : Entropie de Shannon, entropie, information entropy, entropy, entropie de l'information
-- **SVD** — domaines : data-sci, ml-eng · alias : décomposition en valeurs singulières, singular value decomposition, valeurs singulières
-- **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
-- **Vector norms** — domaines : data-sci, ml-eng · alias : normes vectorielles, normes, Lp norms, norme Lp
-- **Wasserstein distance** — domaines : data-sci, ml-eng · alias : Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal
-
 ### concept/ml
 - **AdaBoost** — domaines : data-sci, ml-eng · alias : Adaptive Boosting, Boosting adaptatif, AdaBoostClassifier, SAMME
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
@@ -814,6 +786,40 @@
 - **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
 - **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
 
+### math/algebre-lineaire
+- **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD
+- **Matrix decompositions** — domaines : data-sci, ml-eng · alias : factorisation matricielle, décompositions matricielles, matrix factorization
+- **Matrix products** — domaines : data-sci, ml-eng · alias : produit matriciel, multiplication matricielle, matrix multiplication, produit matrice-vecteur
+- **Projections** — domaines : data-sci, ml-eng · alias : projection orthogonale, projecteur, projection
+- **SVD** — domaines : data-sci, ml-eng · alias : décomposition en valeurs singulières, singular value decomposition, valeurs singulières
+- **Vector norms** — domaines : data-sci, ml-eng · alias : normes vectorielles, normes, Lp norms, norme Lp
+
+### math/information
+- **Cross-entropy** — domaines : data-sci, ml-eng, ai-eng · alias : Entropie croisée, cross entropy, log-loss, log loss, perte d'entropie croisée, negative log-likelihood, NLL
+- **Jensen-Shannon divergence** — domaines : data-sci, ml-eng · alias : Divergence de Jensen-Shannon, Jensen-Shannon, JSD, JS divergence, divergence JS
+- **KL divergence** — domaines : data-sci, ml-eng · alias : Divergence de Kullback-Leibler, Kullback-Leibler, KL, relative entropy, entropie relative, divergence KL
+- **Mutual information** — domaines : data-sci, ml-eng · alias : Information mutuelle, MI, mutual info, information mutuelle ponctuelle, PMI
+- **Optimal transport** — domaines : data-sci, ml-eng · alias : Transport optimal, OT, Plan de transport, Monge-Kantorovich, Sinkhorn, Earth mover's distance problem
+- **Shannon entropy** — domaines : data-sci, ml-eng · alias : Entropie de Shannon, entropie, information entropy, entropy, entropie de l'information
+- **Wasserstein distance** — domaines : data-sci, ml-eng · alias : Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal
+
+### math/optimisation
+- **Convexity** — domaines : data-sci, ml-eng · alias : Convexité, Convex optimization, Optimisation convexe, fonction convexe, ensemble convexe
+- **Gradient descent** — domaines : data-sci, ml-eng · alias : Descente de gradient, GD, SGD, Stochastic gradient descent, Descente de gradient stochastique, Mini-batch
+- **Learning rate schedules** — domaines : ml-eng, ai-eng · alias : Learning rate schedules, Planification du taux d'apprentissage, LR schedule, Warmup, Cosine decay, Cyclical learning rate
+- **Loss landscape and saddle points** — domaines : ml-eng, ai-eng · alias : Loss landscape, Paysage de perte, Saddle points, Points-selles, Surface de perte, Sharp minima
+- **Newton & quasi-Newton** — domaines : data-sci, ml-eng · alias : Newton, Méthode de Newton, Newton-Raphson, quasi-Newton, BFGS, L-BFGS, IRLS
+- **Optimisation combinatoire** — domaines : data-sci, ml-eng · alias : Combinatorial optimization, Sac à dos, Knapsack, Problème d'affectation, Assignment problem, Set cover, Couverture d'ensemble, Voyageur de commerce, TSP
+- **Optimisation sous contrainte** — domaines : data-sci, ml-eng · alias : Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne
+- **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
+
+### math/theorie-apprentissage
+- **Generalization bounds** — domaines : data-sci, ml-eng · alias : Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap
+- **No Free Lunch theorem** — domaines : data-sci, ml-eng · alias : Théorème No Free Lunch, No Free Lunch, NFL, pas de repas gratuit, théorème du pas de modèle universel
+- **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
+- **Rademacher complexity** — domaines : data-sci, ml-eng · alias : Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages
+- **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
+
 ### stats/bayesien
 - **A priori conjugués** — domaines : data-sci · alias : conjugate priors, conjugate prior, lois a priori conjuguées, prior conjugué, conjugaison
 - **Estimation MAP** — domaines : data-sci · alias : MAP, maximum a posteriori, maximum a posteriori estimation, estimation maximum a posteriori
@@ -888,6 +894,7 @@
 - **Agents** — Les bibliothèques avec lesquelles on écrit un agent — une boucle qui planifie, appelle des outils et reprend là où elle en était.
 - **Agents de code** — Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.
 - **AI Engineering** — Construire une application autour d'un modèle de langage — contexte, outils, garde-fous, évaluation.
+- **Algèbre linéaire** — Le langage dans lequel les données et les modèles sont écrits — normes, produits, projections, et les décompositions qui rendent tout le reste calculable.
 - **Analyse factorielle** — Résumer un grand tableau par quelques axes qu'on puisse interpréter — l'école française de l'analyse de données, et ses variantes selon le type de variables.
 - **Apprentissage par renforcement** — Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.
 - **Apprentissage profond** — Les socles avec lesquels on entraîne un réseau de neurones — tenseurs, autograd, accélérateurs, et tout ce qui rend un gros entraînement tenable.
@@ -917,6 +924,7 @@
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
+- **Optimisation** — Minimiser une fonction — le mécanisme qui fait apprendre un modèle, les garanties qu'on a ou non, et la branche discrète qu'on délègue à un solveur.
 - **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
@@ -938,6 +946,8 @@
 - **Tabulaire** — Des lignes, des colonnes, une cible — la famille de problèmes la plus courante en entreprise, et celle où le boosting reste devant.
 - **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.
 - **Text-to-SQL** — Traduire une question en langage naturel en SQL exécutable — le point dur est le SQL sémantiquement juste, pas le SQL valide.
+- **Théorie de l'apprentissage** — Pourquoi la généralisation est possible et de quoi elle dépend — les bornes qui relient erreur d'entraînement, capacité du modèle et taille d'échantillon.
+- **Théorie de l'information** — Mesurer l'incertitude d'une loi et l'écart entre deux lois — d'où viennent la perte de la classification et la plupart des critères de comparaison de distributions.
 - **Vectoriel** — Stocker des embeddings et retrouver les plus proches voisins par recherche approchée (ANN).
 - **Vision** — Les bibliothèques dont l'entrée est une image ou une vidéo — détecter, segmenter, suivre, augmenter, et les backbones qu'on réutilise pour le faire.
 - **Visualisation** — Rendre une donnée regardable — du graphique jetable d'exploration à la figure publiée.

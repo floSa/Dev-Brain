@@ -2,7 +2,7 @@
 role: notion
 nom: KL divergence
 alias: [Divergence de Kullback-Leibler, Kullback-Leibler, KL, relative entropy, entropie relative, divergence KL]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [information-theory, kl-divergence]
 ---

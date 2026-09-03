@@ -2,7 +2,7 @@
 role: notion
 nom: VC dimension
 alias: [Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering]
-categorie: concept/math
+categorie: math/theorie-apprentissage
 domaines: [data-sci, ml-eng]
 tags: [learning-theory, vc-dimension]
 ---

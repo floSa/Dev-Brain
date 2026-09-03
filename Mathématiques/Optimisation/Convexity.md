@@ -2,7 +2,7 @@
 role: notion
 nom: Convexity
 alias: [Convexité, Convex optimization, Optimisation convexe, fonction convexe, ensemble convexe]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [data-sci, ml-eng]
 tags: [optimization, convexity]
 ---

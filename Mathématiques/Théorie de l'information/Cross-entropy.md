@@ -2,7 +2,7 @@
 role: notion
 nom: Cross-entropy
 alias: [Entropie croisée, cross entropy, log-loss, log loss, perte d'entropie croisée, negative log-likelihood, NLL]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng, ai-eng]
 tags: [information-theory, cross-entropy, classification]
 ---

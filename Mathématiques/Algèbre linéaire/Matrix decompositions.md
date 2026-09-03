@@ -2,7 +2,7 @@
 role: notion
 nom: Matrix decompositions
 alias: [factorisation matricielle, décompositions matricielles, matrix factorization]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra, matrix-decomposition]
 ---

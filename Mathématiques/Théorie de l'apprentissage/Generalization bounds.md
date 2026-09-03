@@ -2,7 +2,7 @@
 role: notion
 nom: Generalization bounds
 alias: [Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap]
-categorie: concept/math
+categorie: math/theorie-apprentissage
 domaines: [data-sci, ml-eng]
 tags: [learning-theory, generalization-bound]
 ---

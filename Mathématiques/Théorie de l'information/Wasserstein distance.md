@@ -2,7 +2,7 @@
 role: notion
 nom: Wasserstein distance
 alias: [Distance de Wasserstein, Wasserstein, earth mover's distance, EMD, distance du transport optimal]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [information-theory, optimal-transport]
 ---

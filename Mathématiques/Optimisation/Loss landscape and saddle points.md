@@ -2,7 +2,7 @@
 role: notion
 nom: Loss landscape and saddle points
 alias: [Loss landscape, Paysage de perte, Saddle points, Points-selles, Surface de perte, Sharp minima]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [ml-eng, ai-eng]
 tags: [optimization, loss-landscape]
 ---

@@ -2,7 +2,7 @@
 role: notion
 nom: Eigendecomposition
 alias: [décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra, matrix-decomposition, eigenvalue]
 ---

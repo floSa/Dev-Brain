@@ -28,7 +28,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 702,
+  "count": 706,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -369,6 +369,7 @@
       "connectorx"
     ],
     "combinatorial-optimization": [
+      "Optimisation",
       "Optimisation combinatoire",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Programmation linéaire en nombres entiers (MIP)",
@@ -463,10 +464,12 @@
     ],
     "convexity": [
       "Convexity",
+      "Optimisation",
       "Optimisation sous contrainte"
     ],
     "cross-entropy": [
-      "Cross-entropy"
+      "Cross-entropy",
+      "Théorie de l'information"
     ],
     "cryptography": [
       "PyJWT",
@@ -810,6 +813,7 @@
       "pingouin"
     ],
     "eigenvalue": [
+      "Algèbre linéaire",
       "Eigendecomposition",
       "SVD"
     ],
@@ -851,7 +855,8 @@
       "XGBoost"
     ],
     "entropy": [
-      "Shannon entropy"
+      "Shannon entropy",
+      "Théorie de l'information"
     ],
     "experiment-tracking": [
       "Aim",
@@ -1004,7 +1009,8 @@
       "SDV"
     ],
     "generalization-bound": [
-      "Generalization bounds"
+      "Generalization bounds",
+      "Théorie de l'apprentissage"
     ],
     "generative-model": [
       "Diffusion models",
@@ -1061,7 +1067,8 @@
     ],
     "gradient-descent": [
       "Adam optimizer",
-      "Gradient descent"
+      "Gradient descent",
+      "Optimisation"
     ],
     "graph-db": [
       "Bases de données",
@@ -1204,6 +1211,7 @@
       "Mathématiques",
       "Mutual information",
       "Shannon entropy",
+      "Théorie de l'information",
       "Wasserstein distance"
     ],
     "interactive-viz": [
@@ -1226,7 +1234,8 @@
     ],
     "kl-divergence": [
       "Jensen-Shannon divergence",
-      "KL divergence"
+      "KL divergence",
+      "Théorie de l'information"
     ],
     "knowledge-graph": [
       "Construction de graphes de connaissances",
@@ -1260,16 +1269,20 @@
     "learning-rate": [
       "Adam optimizer",
       "Learning rate schedules",
-      "Maximal Update Parametrization"
+      "Maximal Update Parametrization",
+      "Optimisation"
     ],
     "learning-theory": [
       "Generalization bounds",
+      "Mathématiques",
       "No Free Lunch theorem",
       "PAC learning",
       "Rademacher complexity",
+      "Théorie de l'apprentissage",
       "VC dimension"
     ],
     "linear-algebra": [
+      "Algèbre linéaire",
       "Eigendecomposition",
       "Mathématiques",
       "Matrix decompositions",
@@ -1289,6 +1302,7 @@
     ],
     "linear-programming": [
       "Mathématiques",
+      "Optimisation",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP"
@@ -1535,6 +1549,7 @@
       "Reinforcement learning"
     ],
     "matrix-decomposition": [
+      "Algèbre linéaire",
       "Eigendecomposition",
       "Matrix decompositions",
       "SVD"
@@ -1738,7 +1753,8 @@
       "MANOVA et tests multivariés"
     ],
     "mutual-information": [
-      "Mutual information"
+      "Mutual information",
+      "Théorie de l'information"
     ],
     "ner": [
       "Construction de graphes de connaissances",
@@ -1787,7 +1803,8 @@
       "spaCy"
     ],
     "no-free-lunch": [
-      "No Free Lunch theorem"
+      "No Free Lunch theorem",
+      "Théorie de l'apprentissage"
     ],
     "non-parametric": [
       "Analyse de survie",
@@ -1879,6 +1896,7 @@
     ],
     "optimal-transport": [
       "Optimal transport",
+      "Théorie de l'information",
       "Wasserstein distance"
     ],
     "optimization": [
@@ -1891,6 +1909,7 @@
       "Maximal Update Parametrization",
       "Newton & quasi-Newton",
       "Optimal transport",
+      "Optimisation",
       "Optimisation combinatoire",
       "Optimisation sous contrainte",
       "Programmation linéaire en nombres entiers (MIP)",
@@ -1945,7 +1964,8 @@
       "statsmodels"
     ],
     "pac-learning": [
-      "PAC learning"
+      "PAC learning",
+      "Théorie de l'apprentissage"
     ],
     "package-manager": [
       "Outils de développement",
@@ -2047,6 +2067,7 @@
       "Théorème central limite"
     ],
     "projection": [
+      "Algèbre linéaire",
       "Analyse factorielle",
       "Projections"
     ],
@@ -2084,7 +2105,8 @@
       "Query transformations"
     ],
     "rademacher-complexity": [
-      "Rademacher complexity"
+      "Rademacher complexity",
+      "Théorie de l'apprentissage"
     ],
     "rag": [
       "Advanced RAG",
@@ -2355,7 +2377,8 @@
       "txtai"
     ],
     "second-order": [
-      "Newton & quasi-Newton"
+      "Newton & quasi-Newton",
+      "Optimisation"
     ],
     "segmentation": [
       "Detectron2",
@@ -2793,6 +2816,7 @@
       "CUPED"
     ],
     "vc-dimension": [
+      "Théorie de l'apprentissage",
       "VC dimension"
     ],
     "vector-db": [
@@ -2815,6 +2839,7 @@
       "txtai"
     ],
     "vector-norm": [
+      "Algèbre linéaire",
       "Vector norms"
     ],
     "version-control": [
@@ -11123,6 +11148,192 @@
       "maturite": "production"
     },
     {
+      "path": "Mathématiques/Algèbre linéaire/Algèbre linéaire.md",
+      "nom": "Algèbre linéaire",
+      "alias": [
+        "linear algebra",
+        "calcul matriciel",
+        "décompositions matricielles"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Le langage dans lequel les données et les modèles sont écrits — normes, produits, projections, et les décompositions qui rendent tout le reste calculable.",
+      "tags": [
+        "linear-algebra",
+        "matrix-decomposition",
+        "eigenvalue",
+        "vector-norm",
+        "projection"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/Eigendecomposition.md",
+      "nom": "Eigendecomposition",
+      "alias": [
+        "décomposition spectrale",
+        "diagonalisation",
+        "valeurs propres",
+        "vecteurs propres",
+        "eigenvalue decomposition",
+        "EVD"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra",
+        "matrix-decomposition",
+        "eigenvalue"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/Matrix decompositions.md",
+      "nom": "Matrix decompositions",
+      "alias": [
+        "factorisation matricielle",
+        "décompositions matricielles",
+        "matrix factorization"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra",
+        "matrix-decomposition"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/Matrix products.md",
+      "nom": "Matrix products",
+      "alias": [
+        "produit matriciel",
+        "multiplication matricielle",
+        "matrix multiplication",
+        "produit matrice-vecteur"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/Projections.md",
+      "nom": "Projections",
+      "alias": [
+        "projection orthogonale",
+        "projecteur",
+        "projection"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra",
+        "projection"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/SVD.md",
+      "nom": "SVD",
+      "alias": [
+        "décomposition en valeurs singulières",
+        "singular value decomposition",
+        "valeurs singulières"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra",
+        "matrix-decomposition",
+        "eigenvalue",
+        "dimensionality-reduction"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Algèbre linéaire/Vector norms.md",
+      "nom": "Vector norms",
+      "alias": [
+        "normes vectorielles",
+        "normes",
+        "Lp norms",
+        "norme Lp"
+      ],
+      "role": "notion",
+      "categorie": "math/algebre-lineaire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "linear-algebra",
+        "vector-norm",
+        "regularization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Mathématiques/Mathématiques.md",
       "nom": "Mathématiques",
       "alias": [
@@ -11142,6 +11353,7 @@
         "linear-algebra",
         "optimization",
         "information-theory",
+        "learning-theory",
         "linear-programming"
       ],
       "alternatives": null,
@@ -11149,7 +11361,275 @@
       "maturite": null
     },
     {
-      "path": "Mathématiques/PuLP.md",
+      "path": "Mathématiques/Optimisation/Convexity.md",
+      "nom": "Convexity",
+      "alias": [
+        "Convexité",
+        "Convex optimization",
+        "Optimisation convexe",
+        "fonction convexe",
+        "ensemble convexe"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "convexity"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Gradient descent.md",
+      "nom": "Gradient descent",
+      "alias": [
+        "Descente de gradient",
+        "GD",
+        "SGD",
+        "Stochastic gradient descent",
+        "Descente de gradient stochastique",
+        "Mini-batch"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "gradient-descent"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Learning rate schedules.md",
+      "nom": "Learning rate schedules",
+      "alias": [
+        "Learning rate schedules",
+        "Planification du taux d'apprentissage",
+        "LR schedule",
+        "Warmup",
+        "Cosine decay",
+        "Cyclical learning rate"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "learning-rate"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Loss landscape and saddle points.md",
+      "nom": "Loss landscape and saddle points",
+      "alias": [
+        "Loss landscape",
+        "Paysage de perte",
+        "Saddle points",
+        "Points-selles",
+        "Surface de perte",
+        "Sharp minima"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "loss-landscape"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Newton & quasi-Newton.md",
+      "nom": "Newton & quasi-Newton",
+      "alias": [
+        "Newton",
+        "Méthode de Newton",
+        "Newton-Raphson",
+        "quasi-Newton",
+        "BFGS",
+        "L-BFGS",
+        "IRLS"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "second-order"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Optimisation combinatoire.md",
+      "nom": "Optimisation combinatoire",
+      "alias": [
+        "Combinatorial optimization",
+        "Sac à dos",
+        "Knapsack",
+        "Problème d'affectation",
+        "Assignment problem",
+        "Set cover",
+        "Couverture d'ensemble",
+        "Voyageur de commerce",
+        "TSP"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "combinatorial-optimization",
+        "dynamic-programming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Optimisation sous contrainte.md",
+      "nom": "Optimisation sous contrainte",
+      "alias": [
+        "Constrained optimization",
+        "Lagrangien",
+        "Multiplicateurs de Lagrange",
+        "Lagrange multipliers",
+        "KKT",
+        "Karush-Kuhn-Tucker",
+        "Conditions KKT",
+        "Dualité lagrangienne"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "constrained-optimization",
+        "convexity"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Optimisation.md",
+      "nom": "Optimisation",
+      "alias": [
+        "optimization",
+        "minimisation",
+        "recherche opérationnelle",
+        "programmation mathématique"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Minimiser une fonction — le mécanisme qui fait apprendre un modèle, les garanties qu'on a ou non, et la branche discrète qu'on délègue à un solveur.",
+      "tags": [
+        "optimization",
+        "gradient-descent",
+        "convexity",
+        "second-order",
+        "learning-rate",
+        "linear-programming",
+        "combinatorial-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Programmation linéaire en nombres entiers (MIP).md",
+      "nom": "Programmation linéaire en nombres entiers (MIP)",
+      "alias": [
+        "MIP",
+        "MILP",
+        "Mixed-Integer Programming",
+        "ILP",
+        "Integer programming",
+        "Programmation linéaire",
+        "LP",
+        "Linear programming",
+        "Branch and bound",
+        "Relaxation LP"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "linear-programming",
+        "combinatorial-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/PuLP.md",
       "nom": "PuLP",
       "alias": [
         "pulp"
@@ -11168,6 +11648,395 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/Generalization bounds.md",
+      "nom": "Generalization bounds",
+      "alias": [
+        "Bornes de généralisation",
+        "borne de généralisation",
+        "generalization bound",
+        "erreur de généralisation",
+        "generalization gap"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "generalization-bound"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/No Free Lunch theorem.md",
+      "nom": "No Free Lunch theorem",
+      "alias": [
+        "Théorème No Free Lunch",
+        "No Free Lunch",
+        "NFL",
+        "pas de repas gratuit",
+        "théorème du pas de modèle universel"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "no-free-lunch"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/PAC learning.md",
+      "nom": "PAC learning",
+      "alias": [
+        "Apprentissage PAC",
+        "Probably Approximately Correct",
+        "PAC",
+        "PAC learnability",
+        "apprenabilité PAC"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "pac-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/Rademacher complexity.md",
+      "nom": "Rademacher complexity",
+      "alias": [
+        "Complexité de Rademacher",
+        "Rademacher",
+        "complexité de Rademacher empirique",
+        "Rademacher averages"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "rademacher-complexity"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/Théorie de l'apprentissage.md",
+      "nom": "Théorie de l'apprentissage",
+      "alias": [
+        "learning theory",
+        "statistical learning theory",
+        "théorie statistique de l'apprentissage"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Pourquoi la généralisation est possible et de quoi elle dépend — les bornes qui relient erreur d'entraînement, capacité du modèle et taille d'échantillon.",
+      "tags": [
+        "learning-theory",
+        "pac-learning",
+        "vc-dimension",
+        "rademacher-complexity",
+        "generalization-bound",
+        "no-free-lunch"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/VC dimension.md",
+      "nom": "VC dimension",
+      "alias": [
+        "Dimension VC",
+        "Vapnik-Chervonenkis dimension",
+        "dimension de Vapnik-Chervonenkis",
+        "VC dim",
+        "shattering"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "vc-dimension"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Cross-entropy.md",
+      "nom": "Cross-entropy",
+      "alias": [
+        "Entropie croisée",
+        "cross entropy",
+        "log-loss",
+        "log loss",
+        "perte d'entropie croisée",
+        "negative log-likelihood",
+        "NLL"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "cross-entropy",
+        "classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Jensen-Shannon divergence.md",
+      "nom": "Jensen-Shannon divergence",
+      "alias": [
+        "Divergence de Jensen-Shannon",
+        "Jensen-Shannon",
+        "JSD",
+        "JS divergence",
+        "divergence JS"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "kl-divergence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/KL divergence.md",
+      "nom": "KL divergence",
+      "alias": [
+        "Divergence de Kullback-Leibler",
+        "Kullback-Leibler",
+        "KL",
+        "relative entropy",
+        "entropie relative",
+        "divergence KL"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "kl-divergence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Mutual information.md",
+      "nom": "Mutual information",
+      "alias": [
+        "Information mutuelle",
+        "MI",
+        "mutual info",
+        "information mutuelle ponctuelle",
+        "PMI"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "mutual-information"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Optimal transport.md",
+      "nom": "Optimal transport",
+      "alias": [
+        "Transport optimal",
+        "OT",
+        "Plan de transport",
+        "Monge-Kantorovich",
+        "Sinkhorn",
+        "Earth mover's distance problem"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "optimal-transport"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Shannon entropy.md",
+      "nom": "Shannon entropy",
+      "alias": [
+        "Entropie de Shannon",
+        "entropie",
+        "information entropy",
+        "entropy",
+        "entropie de l'information"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "entropy"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Théorie de l'information.md",
+      "nom": "Théorie de l'information",
+      "alias": [
+        "information theory",
+        "entropie",
+        "divergences",
+        "transport optimal"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Mesurer l'incertitude d'une loi et l'écart entre deux lois — d'où viennent la perte de la classification et la plupart des critères de comparaison de distributions.",
+      "tags": [
+        "information-theory",
+        "entropy",
+        "cross-entropy",
+        "kl-divergence",
+        "mutual-information",
+        "optimal-transport"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Théorie de l'information/Wasserstein distance.md",
+      "nom": "Wasserstein distance",
+      "alias": [
+        "Distance de Wasserstein",
+        "Wasserstein",
+        "earth mover's distance",
+        "EMD",
+        "distance du transport optimal"
+      ],
+      "role": "notion",
+      "categorie": "math/information",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "information-theory",
+        "optimal-transport"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Médias/Claude Video.md",
@@ -15595,33 +16464,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Convexity.md",
-      "nom": "Convexity",
-      "alias": [
-        "Convexité",
-        "Convex optimization",
-        "Optimisation convexe",
-        "fonction convexe",
-        "ensemble convexe"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "convexity"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Counterfactual Regret Minimization.md",
       "nom": "Counterfactual Regret Minimization",
       "alias": [
@@ -15646,37 +16488,6 @@
         "game-theory",
         "regret-minimization",
         "self-play"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Cross-entropy.md",
-      "nom": "Cross-entropy",
-      "alias": [
-        "Entropie croisée",
-        "cross entropy",
-        "log-loss",
-        "log loss",
-        "perte d'entropie croisée",
-        "negative log-likelihood",
-        "NLL"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "cross-entropy",
-        "classification"
       ],
       "alternatives": null,
       "complements": null,
@@ -16019,35 +16830,6 @@
       "tags": [
         "data-pipeline",
         "idempotence"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Eigendecomposition.md",
-      "nom": "Eigendecomposition",
-      "alias": [
-        "décomposition spectrale",
-        "diagonalisation",
-        "valeurs propres",
-        "vecteurs propres",
-        "eigenvalue decomposition",
-        "EVD"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra",
-        "matrix-decomposition",
-        "eigenvalue"
       ],
       "alternatives": null,
       "complements": null,
@@ -16676,33 +17458,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Generalization bounds.md",
-      "nom": "Generalization bounds",
-      "alias": [
-        "Bornes de généralisation",
-        "borne de généralisation",
-        "generalization bound",
-        "erreur de généralisation",
-        "generalization gap"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-theory",
-        "generalization-bound"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Gradient Boosting (GBDT).md",
       "nom": "Gradient Boosting (GBDT)",
       "alias": [
@@ -16755,34 +17510,6 @@
         "memory-optimization",
         "deep-learning",
         "gpu"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Gradient descent.md",
-      "nom": "Gradient descent",
-      "alias": [
-        "Descente de gradient",
-        "GD",
-        "SGD",
-        "Stochastic gradient descent",
-        "Descente de gradient stochastique",
-        "Mini-batch"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "gradient-descent"
       ],
       "alternatives": null,
       "complements": null,
@@ -17329,33 +18056,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Jensen-Shannon divergence.md",
-      "nom": "Jensen-Shannon divergence",
-      "alias": [
-        "Divergence de Jensen-Shannon",
-        "Jensen-Shannon",
-        "JSD",
-        "JS divergence",
-        "divergence JS"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "kl-divergence"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/K-Means.md",
       "nom": "K-Means",
       "alias": [
@@ -17376,34 +18076,6 @@
       "tags": [
         "clustering",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/KL divergence.md",
-      "nom": "KL divergence",
-      "alias": [
-        "Divergence de Kullback-Leibler",
-        "Kullback-Leibler",
-        "KL",
-        "relative entropy",
-        "entropie relative",
-        "divergence KL"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "kl-divergence"
       ],
       "alternatives": null,
       "complements": null,
@@ -17623,34 +18295,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Learning rate schedules.md",
-      "nom": "Learning rate schedules",
-      "alias": [
-        "Learning rate schedules",
-        "Planification du taux d'apprentissage",
-        "LR schedule",
-        "Warmup",
-        "Cosine decay",
-        "Cyclical learning rate"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "learning-rate"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/LoRA et QLoRA.md",
       "nom": "LoRA et QLoRA",
       "alias": [
@@ -17699,34 +18343,6 @@
       "tags": [
         "anomaly-detection",
         "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Loss landscape and saddle points.md",
-      "nom": "Loss landscape and saddle points",
-      "alias": [
-        "Loss landscape",
-        "Paysage de perte",
-        "Saddle points",
-        "Points-selles",
-        "Surface de perte",
-        "Sharp minima"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ml-eng",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "loss-landscape"
       ],
       "alternatives": null,
       "complements": null,
@@ -17784,56 +18400,6 @@
         "reinforcement-learning",
         "markov-decision-process",
         "markov"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Matrix decompositions.md",
-      "nom": "Matrix decompositions",
-      "alias": [
-        "factorisation matricielle",
-        "décompositions matricielles",
-        "matrix factorization"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra",
-        "matrix-decomposition"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Matrix products.md",
-      "nom": "Matrix products",
-      "alias": [
-        "produit matriciel",
-        "multiplication matricielle",
-        "matrix multiplication",
-        "produit matrice-vecteur"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra"
       ],
       "alternatives": null,
       "complements": null,
@@ -18265,33 +18831,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Mutual information.md",
-      "nom": "Mutual information",
-      "alias": [
-        "Information mutuelle",
-        "MI",
-        "mutual info",
-        "information mutuelle ponctuelle",
-        "PMI"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "mutual-information"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Mécanismes de données manquantes.md",
       "nom": "Mécanismes de données manquantes",
       "alias": [
@@ -18436,62 +18975,6 @@
         "supervised",
         "classification",
         "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Newton & quasi-Newton.md",
-      "nom": "Newton & quasi-Newton",
-      "alias": [
-        "Newton",
-        "Méthode de Newton",
-        "Newton-Raphson",
-        "quasi-Newton",
-        "BFGS",
-        "L-BFGS",
-        "IRLS"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "second-order"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/No Free Lunch theorem.md",
-      "nom": "No Free Lunch theorem",
-      "alias": [
-        "Théorème No Free Lunch",
-        "No Free Lunch",
-        "NFL",
-        "pas de repas gratuit",
-        "théorème du pas de modèle universel"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-theory",
-        "no-free-lunch"
       ],
       "alternatives": null,
       "complements": null,
@@ -18671,66 +19154,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/Optimal transport.md",
-      "nom": "Optimal transport",
-      "alias": [
-        "Transport optimal",
-        "OT",
-        "Plan de transport",
-        "Monge-Kantorovich",
-        "Sinkhorn",
-        "Earth mover's distance problem"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "optimal-transport"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Optimisation combinatoire.md",
-      "nom": "Optimisation combinatoire",
-      "alias": [
-        "Combinatorial optimization",
-        "Sac à dos",
-        "Knapsack",
-        "Problème d'affectation",
-        "Assignment problem",
-        "Set cover",
-        "Couverture d'ensemble",
-        "Voyageur de commerce",
-        "TSP"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "combinatorial-optimization",
-        "dynamic-programming"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Optimisation d'hyperparamètres.md",
       "nom": "Optimisation d'hyperparamètres",
       "alias": [
@@ -18754,64 +19177,6 @@
         "hyperparameter-tuning",
         "model-evaluation",
         "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Optimisation sous contrainte.md",
-      "nom": "Optimisation sous contrainte",
-      "alias": [
-        "Constrained optimization",
-        "Lagrangien",
-        "Multiplicateurs de Lagrange",
-        "Lagrange multipliers",
-        "KKT",
-        "Karush-Kuhn-Tucker",
-        "Conditions KKT",
-        "Dualité lagrangienne"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "constrained-optimization",
-        "convexity"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/PAC learning.md",
-      "nom": "PAC learning",
-      "alias": [
-        "Apprentissage PAC",
-        "Probably Approximately Correct",
-        "PAC",
-        "PAC learnability",
-        "apprenabilité PAC"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-theory",
-        "pac-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -19037,64 +19402,6 @@
         "explainability",
         "deep-learning",
         "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Programmation linéaire en nombres entiers (MIP).md",
-      "nom": "Programmation linéaire en nombres entiers (MIP)",
-      "alias": [
-        "MIP",
-        "MILP",
-        "Mixed-Integer Programming",
-        "ILP",
-        "Integer programming",
-        "Programmation linéaire",
-        "LP",
-        "Linear programming",
-        "Branch and bound",
-        "Relaxation LP"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "optimization",
-        "linear-programming",
-        "combinatorial-optimization"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Projections.md",
-      "nom": "Projections",
-      "alias": [
-        "projection orthogonale",
-        "projecteur",
-        "projection"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra",
-        "projection"
       ],
       "alternatives": null,
       "complements": null,
@@ -19466,32 +19773,6 @@
         "model-evaluation",
         "classification",
         "supervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Rademacher complexity.md",
-      "nom": "Rademacher complexity",
-      "alias": [
-        "Complexité de Rademacher",
-        "Rademacher",
-        "complexité de Rademacher empirique",
-        "Rademacher averages"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-theory",
-        "rademacher-complexity"
       ],
       "alternatives": null,
       "complements": null,
@@ -20077,33 +20358,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/SVD.md",
-      "nom": "SVD",
-      "alias": [
-        "décomposition en valeurs singulières",
-        "singular value decomposition",
-        "valeurs singulières"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra",
-        "matrix-decomposition",
-        "eigenvalue",
-        "dimensionality-reduction"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/SVM.md",
       "nom": "SVM",
       "alias": [
@@ -20306,33 +20560,6 @@
         "streaming",
         "llm",
         "web-framework"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Shannon entropy.md",
-      "nom": "Shannon entropy",
-      "alias": [
-        "Entropie de Shannon",
-        "entropie",
-        "information entropy",
-        "entropy",
-        "entropie de l'information"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "entropy"
       ],
       "alternatives": null,
       "complements": null,
@@ -21064,33 +21291,6 @@
       "maturite": null
     },
     {
-      "path": "Wiki/Concepts/VC dimension.md",
-      "nom": "VC dimension",
-      "alias": [
-        "Dimension VC",
-        "Vapnik-Chervonenkis dimension",
-        "dimension de Vapnik-Chervonenkis",
-        "VC dim",
-        "shattering"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "learning-theory",
-        "vc-dimension"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Wiki/Concepts/Validation croisée.md",
       "nom": "Validation croisée",
       "alias": [
@@ -21141,33 +21341,6 @@
       "tags": [
         "reinforcement-learning",
         "value-function"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Vector norms.md",
-      "nom": "Vector norms",
-      "alias": [
-        "normes vectorielles",
-        "normes",
-        "Lp norms",
-        "norme Lp"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "linear-algebra",
-        "vector-norm",
-        "regularization"
       ],
       "alternatives": null,
       "complements": null,
@@ -21341,33 +21514,6 @@
         "timeseries",
         "model-evaluation",
         "resampling"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Wiki/Concepts/Wasserstein distance.md",
-      "nom": "Wasserstein distance",
-      "alias": [
-        "Distance de Wasserstein",
-        "Wasserstein",
-        "earth mover's distance",
-        "EMD",
-        "distance du transport optimal"
-      ],
-      "role": "notion",
-      "categorie": "concept/math",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "information-theory",
-        "optimal-transport"
       ],
       "alternatives": null,
       "complements": null,

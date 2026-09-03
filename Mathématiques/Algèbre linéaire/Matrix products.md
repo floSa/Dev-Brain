@@ -2,7 +2,7 @@
 role: notion
 nom: Matrix products
 alias: [produit matriciel, multiplication matricielle, matrix multiplication, produit matrice-vecteur]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra]
 ---

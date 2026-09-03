@@ -114,6 +114,19 @@ SUB_LABEL = {
     "stats/exploratoire": "Analyse factorielle",
     "stats/bayesien": "Bayésien",
     "stats/probabilite": "Probabilités",
+    # Mathématiques — « ### Mathématiques · 27 pages », lot 4. Les 26 notions du
+    # domaine se rangent sur les QUATRE piliers que le corps du hub nomme depuis le
+    # lot 3 — algèbre linéaire, optimisation, théorie de l'information, théorie de
+    # l'apprentissage — et ses quatre puces les citent toutes les 26, une seule fois
+    # chacune. Les quatre franchissent le seuil et aucun n'égale le total (27) : le
+    # domaine n'a plus de page à son niveau, seulement quatre sous-dossiers.
+    "math/optimisation": "Optimisation",
+    "math/information": "Théorie de l'information",
+    "math/algebre-lineaire": "Algèbre linéaire",
+    # Le libellé garde « Théorie de » que la catégorie porte déjà : « Apprentissage »
+    # seul, à côté de « Machine Learning/Apprentissage profond/ », se lirait comme
+    # apprentissage automatique.
+    "math/theorie-apprentissage": "Théorie de l'apprentissage",
     # `stats/experimentation` et `stats/causal` restent SOUS le seuil (4 et 3 pages) :
     # pas de dossier, donc pas de libellé. Le jour où l'un franchit 5, `promotions()`
     # lève un KeyError qui dit d'aller le lire dans v3-arborescence.md — c'est le

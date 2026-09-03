@@ -2,7 +2,7 @@
 role: notion
 nom: No Free Lunch theorem
 alias: [Théorème No Free Lunch, No Free Lunch, NFL, pas de repas gratuit, théorème du pas de modèle universel]
-categorie: concept/math
+categorie: math/theorie-apprentissage
 domaines: [data-sci, ml-eng]
 tags: [learning-theory, no-free-lunch]
 ---

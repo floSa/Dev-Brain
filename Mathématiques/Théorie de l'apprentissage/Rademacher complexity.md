@@ -2,7 +2,7 @@
 role: notion
 nom: Rademacher complexity
 alias: [Complexité de Rademacher, Rademacher, complexité de Rademacher empirique, Rademacher averages]
-categorie: concept/math
+categorie: math/theorie-apprentissage
 domaines: [data-sci, ml-eng]
 tags: [learning-theory, rademacher-complexity]
 ---

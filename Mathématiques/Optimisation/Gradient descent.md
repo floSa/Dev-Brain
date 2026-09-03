@@ -2,7 +2,7 @@
 role: notion
 nom: Gradient descent
 alias: [Descente de gradient, GD, SGD, Stochastic gradient descent, Descente de gradient stochastique, Mini-batch]
-categorie: concept/math
+categorie: math/optimisation
 domaines: [data-sci, ml-eng]
 tags: [optimization, gradient-descent]
 ---

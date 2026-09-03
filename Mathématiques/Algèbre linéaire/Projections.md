@@ -2,7 +2,7 @@
 role: notion
 nom: Projections
 alias: [projection orthogonale, projecteur, projection]
-categorie: concept/math
+categorie: math/algebre-lineaire
 domaines: [data-sci, ml-eng]
 tags: [linear-algebra, projection]
 ---

@@ -31,7 +31,7 @@ Axe métier **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis de
 - [[Apprentissage par renforcement]] — 10 page(s)
 - [[IA & sécurité]] — 4 page(s)
 - [[NLP (notions)]] — 4 page(s)
-- [[Maths du ML]] — 3 page(s)
+- [[Mathématiques]] — 3 page(s)
 - [[Médias]] — 2 page(s)
 - [[Outils de développement]] — 2 page(s)
 - [[Données (notions)]] — 2 page(s)

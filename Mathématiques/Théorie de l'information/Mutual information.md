@@ -2,7 +2,7 @@
 role: notion
 nom: Mutual information
 alias: [Information mutuelle, MI, mutual info, information mutuelle ponctuelle, PMI]
-categorie: concept/math
+categorie: math/information
 domaines: [data-sci, ml-eng]
 tags: [information-theory, mutual-information]
 ---
