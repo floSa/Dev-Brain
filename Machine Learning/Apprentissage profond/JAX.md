@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[PyTorch]]", "[[TensorFlow]]"]
-complements: []
+complements: ["[[Keras]]"]
 tags: [deep-learning, gpu, autograd, array]
 url_docs: https://docs.jax.dev/
 url_repo: https://github.com/jax-ml/jax
@@ -17,45 +17,55 @@ url_repo: https://github.com/jax-ml/jax
 
 # JAX
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Calcul numérique et différentiation automatique sur accélérateurs — NumPy compilé par XLA via jit/grad/vmap/pmap (GPU/TPU) ; socle des gros entraînements de recherche.
 
-JAX expose une API quasi identique à [[numpy]], mais rend les programmes **composables et accélérables** par un jeu de transformations de fonctions : `grad` (différentiation automatique, forward/reverse, ordres supérieurs), `jit` (compilation XLA en noyaux fusionnés), `vmap` (vectorisation/batching automatique), `pmap` / `shard_map` (parallélisme multi-appareils). Le tout vise GPU et **TPU** via XLA. Approche **fonctionnelle** (fonctions pures, tableaux immuables) qui se prête à la composition et au scaling — d'où son adoption pour l'entraînement de gros modèles en recherche.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Recherche perf-critique** : différentiation d'ordre supérieur, jacobiens/hessiens, méthodes scientifiques (physique, optimisation).
-- **TPU et très grands entraînements** : `pmap`/`shard_map` + `jit` pour le parallélisme de données et de modèle.
-- **Deep learning via l'écosystème** : réseaux avec Flax ou Haiku, optimiseurs avec Optax — JAX est le cœur, les libs ajoutent les couches.
-- **Code numérique vectorisé** qu'on veut compiler sans réécrire en C++.
+Une API quasi identique à celle de [[numpy]], rendue **composable et accélérable** par un jeu de transformations de fonctions : `grad` (différentiation automatique, forward et reverse, ordres supérieurs), `jit` (compilation XLA en noyaux fusionnés), `vmap` (vectorisation automatique), `pmap` et `shard_map` (parallélisme multi-appareils). Le prix de cette composition est un **style fonctionnel imposé** : fonctions pures, tableaux immuables (pas d'assignation en place, mais `x.at[idx].set(...)`), aléa explicite par clés `PRNGKey` à découper plutôt qu'un état global, et tout ce qui passe sous `jit` doit être **traçable** — une valeur Python qui branche le flux de contrôle devient une erreur de trace, à réécrire en `jax.lax.cond` ou en formes statiques. C'est ce qui le rend inconfortable pour du code impératif à effets de bord, et taillé pour le scaling.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Écosystème prêt à l'emploi, modèles pré-entraînés, prototypage impératif → [[PyTorch]].
-- Déploiement industriel mobile / edge / serving clés en main → [[TensorFlow]].
-- Besoin d'effets de bord / état mutable / boucles Python dynamiques : le style fonctionnel et `jit` y sont contraignants.
-- Données tabulaires classiques → [[Scikit-Learn]].
+| Prendre si | Écarter si |
+|---|---|
+| Recherche perf-critique : différentiation d'ordre supérieur, jacobiens et hessiens, méthodes scientifiques | Écosystème prêt à l'emploi, modèles pré-entraînés, prototypage impératif → [[PyTorch]] |
+| TPU et très grands entraînements : `pmap` / `shard_map` combinés à `jit` | Déploiement industriel mobile / edge / serving clés en main → [[TensorFlow]] |
+| Deep learning via l'écosystème : réseaux avec Flax ou Haiku, optimiseurs avec Optax | Effets de bord, état mutable, boucles Python dynamiques : le style fonctionnel et `jit` y sont contraignants |
+| Code numérique vectorisé qu'on veut compiler sans réécrire en C++ | Données tabulaires classiques → [[Scikit-Learn]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add jax` (roues spécifiques CPU/GPU/TPU).
-- Pur Python compilé par **XLA** (OpenXLA) ; CPU, GPU NVIDIA, TPU Google.
-- Développé par Google avec contributions NVIDIA/communauté. Versionné en 0.x : API encore mouvante, l'amont prévient « expect sharp edges » — mais le cœur (grad/jit/vmap) est éprouvé à très grande échelle.
+- Installation — `uv add jax`, avec la roue correspondant à la cible (CPU, GPU, TPU)
+- Point d'entrée — import Python, `import jax.numpy as jnp` puis les transformations `jit` / `grad` / `vmap`
+- Prérequis — rien de lourd en CPU ; GPU NVIDIA ou TPU Google pour le passage à l'échelle
+- Exécution — compilée par **XLA** (OpenXLA) dans le process appelant ; multi-appareils et multi-nœuds par sharding
+- Coût — gratuit, Apache-2.0 ; développé par Google avec des contributions NVIDIA et communautaires
 
-## Pièges
+Versionné en 0.x : l'amont prévient « expect sharp edges », les dépréciations surviennent entre versions mineures et la version s'épingle — mais le cœur `grad` / `jit` / `vmap` est éprouvé à très grande échelle.
 
-- **Tableaux immuables** : pas d'assignation en place, utiliser `x.at[idx].set(...)`.
-- Tout ce qui passe sous `jit` doit être **traçable** : les valeurs Python branchant le flux de contrôle deviennent des erreurs de trace (`jax.lax.cond`, formes statiques).
-- Reproductibilité : l'aléa est **explicite** via des clés `PRNGKey` à découper (`split`), pas d'état global comme NumPy.
-- API 0.x : des dépréciations surviennent entre versions mineures, épingler la version.
+## Écosystème
 
-## Alternatives
+### Alternatives
 
 - [[PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
 - [[TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 
-## Liens
+### Compléments
 
-- [[numpy]] — API de référence dont JAX reprend la sémantique (sur accélérateurs, immuable).
-- [[HuggingFace]] — hub de modèles ; backend JAX/Flax historiquement supporté (désormais minoritaire face à PyTorch).
-- [[Keras]] — API de haut niveau multi-backend : Keras 3 tourne sur backend JAX (TPU, perf).
-- Doc : https://docs.jax.dev/
+- [[Keras]] — API de deep learning de haut niveau, multi-backend (Keras 3) — le même code de modèle s'exécute sur JAX, TensorFlow ou PyTorch ; construire, entraîner et exporter un réseau vite, sans s'enfermer dans un framework. — le backend JAX est celui qu'on choisit pour la perf et le TPU.
+
+## Ressources
+
+- Documentation — https://docs.jax.dev/
+- Dépôt — https://github.com/jax-ml/jax
+
+## Voir aussi
+
+- [[Apprentissage profond]] — le hub du domaine
+- [[numpy]] — l'API de référence dont JAX reprend la sémantique, sur accélérateurs et en immuable
+- [[HuggingFace]] — hub de modèles ; le backend JAX/Flax y est historiquement supporté, désormais minoritaire face à PyTorch

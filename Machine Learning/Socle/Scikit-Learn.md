@@ -17,68 +17,64 @@ url_repo: https://github.com/scikit-learn/scikit-learn
 
 # Scikit-Learn
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-Bibliothèque de **machine learning généraliste** sur données tabulaires en mémoire, au-dessus de NumPy/SciPy. Sa force est une **API uniforme** : tout objet est un estimateur avec `fit` / `predict` (ou `transform`), composable via `Pipeline` et réglable via `GridSearchCV`. Une seule grammaire couvre supervisé, non supervisé, réduction de dimension, préparation des données et évaluation. C'est le socle ML de l'écosystème Python — d'autres libs (dont [[Prince]]) en empruntent l'API.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Supervisé** : module `linear_model` ([[Régression linéaire]], [[Régression logistique]], variantes à [[Régularisation]] Ridge/Lasso/ElasticNet), SVM, arbres, module `ensemble` ([[Random Forest]], [[Gradient Boosting (GBDT)]], bagging, voting/stacking), k-NN.
-- **Non supervisé** : module `cluster` — [[Clustering]] ([[K-Means|k-means]], [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]], [[Classification hiérarchique (CAH)|agglomératif]], [[Gaussian Mixture Models (GMM)|mélanges gaussiens]]) et **décomposition** — module `sklearn.decomposition` : [[PCA]], `KernelPCA` (non-linéaire), `FastICA` (sources indépendantes), `NMF` (facteurs positifs). Famille élargie : [[Réduction de dimension]].
-- **Preprocessing & pipelines** : module `preprocessing` — [[Mise à l'échelle|scaling]], [[Encodage des variables catégorielles|encodage]], imputation — composé via `ColumnTransformer` / `Pipeline` (un seul `fit` train → `transform` test, anti-fuite) ; tri des variables par `feature_selection` → [[Sélection de variables]].
-- **Model selection & métriques** : module `model_selection` — [[Validation croisée]] et recherche d'hyperparamètres (`GridSearchCV`, `RandomizedSearchCV` → [[Optimisation d'hyperparamètres]]) ; module `metrics` riche (accuracy, F1, RMSE, silhouette… et [[ROC-AUC & courbe PR]]).
+Le socle du machine learning sur données tabulaires en mémoire, au-dessus de NumPy et SciPy. Sa force n'est pas un algorithme mais une **grammaire uniforme** : tout objet est un estimateur avec `fit` / `predict` (ou `transform`), composable via `Pipeline` et réglable via `GridSearchCV` — une seule interface couvre supervisé, non supervisé, réduction de dimension, préparation des données et évaluation. D'autres bibliothèques en empruntent l'API plutôt que d'en inventer une. Cette grammaire porte aussi la discipline anti-fuite : `fit` et `fit_transform` sur le train uniquement, `transform` sur le test — le `Pipeline` est ce qui le garantit à l'intérieur d'une validation croisée, où l'oubli est invisible. Deuxième réflexe qu'elle n'impose pas : PCA, modèles à distance et modèles régularisés sont **sensibles à l'échelle**, la standardisation se pose donc dans le pipeline, pas après coup.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Réseaux de neurones / entraînement GPU → [[PyTorch]], [[TensorFlow]], [[JAX]].
-- Gradient boosting state-of-the-art sur gros volumes → [[XGBoost]], [[LightGBM]], [[CatBoost]].
-- Analyse factorielle descriptive façon FactoMineR (CA, MCA, FAMD, contributions, cos²) → [[Prince]], [[Fanalysis]].
-- Inférence statistique avec p-values, IC et diagnostics → [[statsmodels]], [[scipy.stats]].
+| Prendre si | Écarter si |
+|---|---|
+| Supervisé : `linear_model`, SVM, arbres, `ensemble` (forêts, boosting, bagging, voting, stacking), k-NN | Réseaux de neurones ou entraînement GPU → [[PyTorch]], [[TensorFlow]], [[JAX]] |
+| Non supervisé : `cluster` et `decomposition`, du k-means au mélange gaussien, de la PCA à la NMF | Gradient boosting à l'état de l'art sur gros volumes → [[XGBoost]], [[LightGBM]], [[CatBoost]] |
+| Préparation et pipelines : `preprocessing`, `ColumnTransformer`, `feature_selection` — un seul `fit` sur le train | Analyse factorielle descriptive façon FactoMineR (CA, MCA, FAMD, contributions, cos²) → [[Prince]], [[Fanalysis]] |
+| Sélection de modèle et métriques : `model_selection` et un module `metrics` riche | Inférence statistique avec p-values, intervalles de confiance et diagnostics → [[statsmodels]], [[scipy.stats]] |
+| Feature engineering, encodage à forte cardinalité, réglage bayésien, densité et variétés — via les libs spécialisées de son écosystème | Volume qui ne tient plus en mémoire sur une machine : échantillonner, ou passer au flux → [[River]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add scikit-learn`), au-dessus de NumPy/SciPy ; rien à héberger.
-- Single-node, calcul en mémoire (parallélisme CPU via `n_jobs` ; pas de GPU natif, support Array API émergent).
-- BSD-3-Clause, gratuit.
+- Installation — `uv add scikit-learn`, au-dessus de NumPy et SciPy
+- Point d'entrée — import Python : un estimateur, ou un `Pipeline` qui en compose plusieurs
+- Prérequis — aucun ; pas de GPU natif, le support Array API est émergent
+- Exécution — single-node, calcul en mémoire, parallélisme CPU par `n_jobs`
+- Coût — gratuit, BSD-3-Clause ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Fuite de données** : `fit` (et `fit_transform`) sur le train uniquement, `transform` sur le test — passer par un `Pipeline` pour le garantir dans la validation croisée.
-- PCA et modèles à distance/régularisation sont **sensibles à l'échelle** : standardiser avant (dans le pipeline).
-- Tout reste en mémoire single-node : sur de très gros volumes, échantillonner ou changer d'outil.
-
-## Alternatives
-
-Pour le gradient boosting en particulier — sklearn embarque `HistGradientBoosting`, mais les libs dédiées vont plus loin :
+### Alternatives
 
 - [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 - [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
 - [[CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
-
-Pour la préparation des données et le réglage — sklearn couvre l'essentiel, des libs spécialisées vont plus loin :
-
 - [[Featuretools]] — Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables.
 - [[category_encoders]] — Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.
 - [[Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
-
-Pour le clustering par densité et la réduction de dimension non linéaire — sklearn les embarque, mais les libs des auteurs vont plus loin :
-
 - [[hdbscan]] — Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).
 - [[umap-learn]] — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
 
-Pour le deep learning / l'entraînement GPU : [[PyTorch]], [[TensorFlow]], [[JAX]].
+## Ressources
 
-## Liens
+- Documentation — https://scikit-learn.org/stable/
+- Dépôt — https://github.com/scikit-learn/scikit-learn
 
-- Concepts implémentés, par module :
-    - `linear_model` : [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
-    - `ensemble` : [[Random Forest]], [[Gradient Boosting (GBDT)]]
-    - `cluster` : [[Clustering]] — [[K-Means]], [[Classification hiérarchique (CAH)|CAH]], [[DBSCAN]] / [[Clustering hiérarchique par densité|HDBSCAN]], [[Gaussian Mixture Models (GMM)|GMM]]
-    - `decomposition` : [[PCA]], [[Réduction de dimension]]
-    - `preprocessing` : [[Mise à l'échelle]], [[Encodage des variables catégorielles]]
-    - `feature_selection` : [[Sélection de variables]]
-    - `model_selection` : [[Validation croisée]], [[Optimisation d'hyperparamètres]]
-    - `metrics` : [[ROC-AUC & courbe PR]]
-- [[Prince]] — analyse factorielle sur l'API scikit-learn
-- [[Comparatif - Réduction de dimension]] — PCA / t-SNE (sklearn) vs UMAP / PaCMAP.
-- Doc : https://scikit-learn.org/stable/
+## Voir aussi
+
+- [[Socle]] — le hub du domaine
+- `linear_model` — [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
+- `ensemble` — [[Random Forest]], [[Gradient Boosting (GBDT)]]
+- `cluster` — [[Clustering]] : [[K-Means]], [[Classification hiérarchique (CAH)|CAH]], [[DBSCAN]], [[Clustering hiérarchique par densité|HDBSCAN]], [[Gaussian Mixture Models (GMM)|GMM]]
+- `decomposition` — [[PCA]], [[Réduction de dimension]]
+- `preprocessing` — [[Mise à l'échelle]], [[Encodage des variables catégorielles]]
+- `feature_selection` — [[Sélection de variables]]
+- `model_selection` — [[Validation croisée]], [[Optimisation d'hyperparamètres]]
+- `metrics` — [[ROC-AUC & courbe PR]]
+- [[Prince]] — l'analyse factorielle écrite sur l'API scikit-learn
+- [[Comparatif - Réduction de dimension]] — PCA et t-SNE face à UMAP et PaCMAP
