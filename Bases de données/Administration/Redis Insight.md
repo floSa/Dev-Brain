@@ -26,38 +26,42 @@ url_repo: https://github.com/redis/RedisInsight
 | Application TypeScript/Electron | source-available | Windows, macOS, Linux, web (Docker) | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Le client graphique **officiel** de Redis. Navigation dans l'espace de clés (par type : strings, hashes, listes, streams…), workbench pour exécuter des commandes avec coloration et aide, et surtout un support de premier ordre des **modules** Redis (JSON, Search/query, séries temporelles). Outils d'analyse mémoire et de profilage des commandes lentes. Source-available sous SSPLv1, gratuit.
+Le client graphique officiel de Redis : navigation dans l'espace de clés par type — chaînes,
+hashes, listes, streams —, workbench pour exécuter des commandes avec coloration et aide en
+ligne, et surtout un support de premier plan des **modules** (JSON, Search et query, séries
+temporelles). Il embarque aussi de quoi analyser l'usage mémoire et profiler les commandes
+lentes.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Inspecter et éditer le contenu d'une instance Redis sans `redis-cli`.
-- Exploiter les modules (RedisJSON, RediSearch) avec une UI dédiée.
-- Diagnostiquer l'usage mémoire et repérer les commandes lentes.
+| Prendre si | Écarter si |
+|---|---|
+| Inspecter et éditer le contenu d'une instance Redis sans passer par `redis-cli` | Centré Redis : aucun autre moteur |
+| Exploiter les modules RedisJSON ou RediSearch avec une interface dédiée | La licence SSPL n'est pas une licence OSI — à vérifier dès qu'il y a redistribution |
+| Diagnostiquer l'usage mémoire et repérer les commandes lentes | Le scripting reproductible reste le domaine de `redis-cli` |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Mêler Redis et d'autres SGBD dans un seul outil → [[DBeaver]] (support Redis).
-- Scripting reproductible → `redis-cli`.
+- Installation — installeur Windows, macOS ou Linux, ou conteneur Docker pour l'interface web
+- Point d'entrée — navigateur d'espace de clés et workbench de commandes
+- Prérequis — une instance Redis, auto-hébergée ou sur Redis Cloud ; l'application est en Electron
+- Exécution — sur le poste de travail, ou en conteneur servant l'interface web
+- Coût — gratuit ; source-available sous SSPLv1
 
-## Bases & plateformes
+## Écosystème
 
-- Redis (auto-hébergé et Redis Cloud), modules inclus.
-- Windows, macOS, Linux (Electron) ou conteneur Docker (UI web).
-
-## Pièges
-
-- Licence SSPL : pas une licence OSI, à vérifier selon le contexte de redistribution.
-- Centré Redis : aucun autre moteur.
-
-## Alternatives
+### Alternatives
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
+- Documentation — https://redis.io/docs/latest/develop/tools/insight/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
 - [[Redis]] — le moteur exploré
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://redis.io/docs/latest/develop/tools/insight/
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

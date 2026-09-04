@@ -26,38 +26,42 @@ url_repo: https://github.com/pgadmin-org/pgadmin4
 | Application Python | open-source | Windows, macOS, Linux, web (Docker) | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-L'outil d'administration **officiel** de PostgreSQL. Application web (servie en local ou en mode serveur) qui couvre tout le cycle Postgres : navigateur d'objets, éditeur SQL, tableau de bord d'activité du serveur, gestion des rôles, sauvegarde/restauration, suivi des sessions. Sous PostgreSQL License (permissive, type BSD).
+L'outil d'administration officiel de PostgreSQL. C'est une application web — servie en local
+ou en mode serveur multi-utilisateurs — qui couvre tout le cycle : navigateur d'objets,
+éditeur SQL, tableau de bord d'activité du serveur, gestion des rôles, sauvegarde et
+restauration, suivi des sessions. Elle suit les spécificités de Postgres de près : rôles,
+tablespaces, extensions, VACUUM.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Administrer un serveur PostgreSQL et profiter d'un outil aligné sur ses spécificités (rôles, tablespaces, extensions, VACUUM).
-- Tableau de bord d'activité (sessions, verrous, statistiques) intégré.
-- Déploiement web multi-utilisateurs (mode serveur via Docker).
+| Prendre si | Écarter si |
+|---|---|
+| Administrer un serveur PostgreSQL avec un outil aligné sur ses spécificités — rôles, tablespaces, extensions, VACUUM | Interface web parfois moins réactive qu'un client natif sur de gros jeux de résultats |
+| Tableau de bord d'activité intégré : sessions, verrous, statistiques | Centré Postgres : inutile dès qu'il faut toucher un autre moteur |
+| Déploiement web multi-utilisateurs, en mode serveur via Docker | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Travailler sur plusieurs SGBD différents → [[DBeaver]].
-- Préférer un client de bureau natif plutôt qu'une UI web.
+- Installation — paquet de bureau pour Windows, macOS ou Linux, ou conteneur pour le mode serveur
+- Point d'entrée — interface web : navigateur d'objets, éditeur SQL, tableau de bord d'activité
+- Prérequis — un serveur PostgreSQL ou un dérivé compatible ; l'application est en Python
+- Exécution — en local sur le poste, ou en mode serveur multi-utilisateurs via Docker
+- Coût — gratuit, sous PostgreSQL License (permissive, de type BSD)
 
-## Bases & plateformes
+## Écosystème
 
-- PostgreSQL uniquement (et dérivés compatibles).
-- Application Python/web : bureau (Windows, macOS, Linux) ou conteneur serveur.
-
-## Pièges
-
-- UI web parfois moins réactive qu'un client natif sur de gros jeux de résultats.
-- Centré Postgres : inutile dès qu'on doit toucher d'autres moteurs.
-
-## Alternatives
+### Alternatives
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
+- Documentation — https://www.pgadmin.org/docs/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
 - [[Postgres]] — le moteur administré
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://www.pgadmin.org/docs/
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

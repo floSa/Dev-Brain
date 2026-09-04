@@ -29,10 +29,10 @@ url_repo: https://github.com/weaviate/weaviate
 
 ## Définition
 
-Base vectorielle écrite en Go, pensée pour la production. Elle embarque des **modules de
-vectorisation** : la base peut produire elle-même les embeddings, au lieu de les recevoir tout
-faits. La recherche hybride dense + BM25 est native, avec fusion des scores, et la
-multi-tenancy est de première classe — un namespace isolé par client. En contrepartie, le
+Base vectorielle écrite en Go, taillée pour un usage exploité au long cours. Elle embarque des
+**modules de vectorisation** : la base produit elle-même les embeddings, au lieu de les
+recevoir tout faits. La recherche hybride dense + BM25 est native, avec fusion des scores, et
+la multi-tenancy est de première classe — un namespace isolé par client. En contrepartie, le
 modèle est explicite : classes, propriétés et vectorizer se déclarent avant d'écrire.
 
 ## Prendre si / Écarter si

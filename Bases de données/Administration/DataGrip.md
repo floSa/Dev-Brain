@@ -26,38 +26,42 @@ url_repo:
 | Application Java/Kotlin | propriétaire | Windows, macOS, Linux | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-L'IDE base de données de JetBrains. Apporte au SQL ce que les IDE apportent au code : **complétion contextuelle**, analyse statique des requêtes, refactoring (renommer une colonne propage partout), navigation entre objets, contrôle de version des scripts. Multi-moteurs (relationnel + plusieurs NoSQL). Depuis octobre 2025, **gratuit pour usage non commercial** ; licence commerciale payante sinon.
+L'IDE base de données de JetBrains. Il apporte au SQL ce qu'un IDE apporte au code :
+complétion contextuelle, analyse statique des requêtes, refactoring — renommer une colonne
+propage le changement partout —, navigation entre objets et contrôle de version des scripts.
+Il parle au relationnel comme à plusieurs bases NoSQL, et repose sur la plateforme IntelliJ,
+dont il hérite les raccourcis, les plugins et les thèmes.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Écrire beaucoup de SQL et vouloir l'assistance d'un vrai IDE (complétion, refactoring, détection d'erreurs).
-- Déjà investi dans l'écosystème JetBrains (raccourcis, plugins, thèmes communs).
-- Usage non commercial (apprentissage, perso) qui bénéficie du plein produit gratuitement.
+| Prendre si | Écarter si |
+|---|---|
+| Écrire beaucoup de SQL et vouloir l'assistance d'un vrai IDE : complétion, refactoring, détection d'erreurs | Empreinte mémoire d'un IDE complet, plus lourde qu'un client minimaliste |
+| Déjà investi dans l'écosystème JetBrains — raccourcis, plugins et thèmes communs | |
+| Usage non commercial, qui donne accès au plein produit sans payer | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Besoin d'un outil 100 % libre et gratuit en contexte commercial → [[DBeaver]].
-- Poste léger, démarrage instantané sous Windows → [[HeidiSQL]].
+- Installation — installeur pour Windows, macOS ou Linux
+- Point d'entrée — application de bureau : éditeur SQL, navigation entre objets, versionnage des scripts
+- Prérequis — Windows, macOS ou Linux ; plateforme IntelliJ, donc une JVM
+- Exécution — sur le poste de travail, aucun service à héberger
+- Coût — licence commerciale payante ; gratuit pour l'usage non commercial depuis octobre 2025 (versions ≥ 2025.2.4), à renouveler chaque année
 
-## Bases & plateformes
+## Écosystème
 
-- Relationnel (Postgres, MySQL, Oracle, SQL Server…) et plusieurs NoSQL (Mongo, Redis, Cassandra).
-- Windows, macOS, Linux (plateforme IntelliJ, JVM).
-
-## Pièges
-
-- Produit **propriétaire** : la gratuité ne couvre que l'usage non commercial (≥ 2025.2.4), renouvelable annuellement.
-- Empreinte mémoire d'un IDE complet, plus lourde qu'un client minimaliste.
-
-## Alternatives
+### Alternatives
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 - [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://www.jetbrains.com/help/datagrip/
+- Documentation — https://www.jetbrains.com/help/datagrip/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

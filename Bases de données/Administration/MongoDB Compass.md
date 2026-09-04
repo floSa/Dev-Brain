@@ -26,38 +26,42 @@ url_repo: https://github.com/mongodb-js/compass
 | Application TypeScript/Electron | source-available | Windows, macOS, Linux | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Le client graphique **officiel** de MongoDB. Pensé pour le modèle document : navigation dans les collections, construction visuelle de requêtes et de pipelines d'agrégation, **analyse de schéma** (distribution des champs et types sur un échantillon), inspection des index et plans d'exécution. Source-available sous SSPL, et gratuit pour tous depuis 2024.
+Le client graphique officiel de MongoDB, pensé pour le modèle document : navigation dans les
+collections, construction visuelle des requêtes et des pipelines d'agrégation, inspection des
+index et des plans d'exécution. Sa fonction la plus utile est l'**analyse de schéma** — la
+distribution réelle des champs et de leurs types dans une collection, que rien dans un modèle
+sans schéma déclaré ne donne autrement.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Explorer une base MongoDB sans écrire de requêtes shell.
-- Construire et déboguer des pipelines d'agrégation visuellement.
-- Comprendre la forme réelle des documents (schéma implicite, types hétérogènes).
+| Prendre si | Écarter si |
+|---|---|
+| Explorer une base MongoDB sans écrire de requêtes shell | Centré Mongo : aucun autre moteur |
+| Construire et déboguer des pipelines d'agrégation visuellement | Le scripting reproductible reste le domaine de `mongosh` |
+| Comprendre la forme réelle des documents — schéma implicite, types hétérogènes | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Mêler MongoDB et des bases relationnelles dans un seul outil → [[DBeaver]] (Mongo en édition payante).
-- Préférer le shell `mongosh` pour le scripting reproductible.
+- Installation — installeur Windows, macOS ou Linux
+- Point d'entrée — application de bureau : collections, constructeur de requêtes, pipelines d'agrégation
+- Prérequis — un serveur MongoDB, auto-hébergé ou sur Atlas ; l'application est en Electron
+- Exécution — sur le poste de travail, aucun service à héberger
+- Coût — gratuit pour tous depuis 2024 ; source-available sous SSPL
 
-## Bases & plateformes
+## Écosystème
 
-- MongoDB (serveur auto-hébergé et Atlas).
-- Windows, macOS, Linux (application Electron).
-
-## Pièges
-
-- L'analyse de schéma porte sur un **échantillon** : non exhaustive sur de très grosses collections.
-- Centré Mongo : aucun autre moteur.
-
-## Alternatives
+### Alternatives
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
+- Documentation — https://www.mongodb.com/docs/compass/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
 - [[MongoDB]] — le moteur exploré
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://www.mongodb.com/docs/compass/
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

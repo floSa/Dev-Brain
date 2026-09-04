@@ -26,39 +26,43 @@ url_repo: https://github.com/mysql/mysql-workbench
 | Application C++ | open-source | Windows, macOS, Linux | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-L'outil graphique **officiel** de MySQL, édité par Oracle, sous GPLv2. Trois piliers : **conception** (modélisation visuelle de schéma et reverse engineering en diagrammes ER), **développement** (éditeur SQL) et **administration** (configuration du serveur, utilisateurs, sauvegarde, suivi des performances). La référence quand le projet est centré MySQL.
+L'outil graphique officiel de MySQL, édité par Oracle. Il tient sur trois piliers : la
+**conception** — modélisation visuelle du schéma et reverse engineering en diagrammes ER —,
+le **développement** avec son éditeur SQL, et l'**administration** du serveur : configuration,
+utilisateurs, sauvegarde, suivi des performances. C'est une application native en C++, alignée
+sur les versions du serveur qu'elle accompagne.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Projet MySQL : profiter d'un outil aligné sur le serveur et ses fonctions d'admin.
-- Modéliser un schéma visuellement (diagrammes ER) puis générer le DDL.
-- Reverse engineering d'une base existante en diagramme.
+| Prendre si | Écarter si |
+|---|---|
+| Projet MySQL : un outil aligné sur le serveur et ses fonctions d'administration | Centré MySQL : peu pertinent dès qu'un autre moteur entre en jeu |
+| Modéliser un schéma visuellement en diagrammes ER, puis générer le DDL | Réputée lourde, voire instable, sur certaines plateformes selon les versions |
+| Reverse engineering d'une base existante vers un diagramme | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Travailler sur plusieurs SGBD → [[DBeaver]].
-- Client Windows ultra-léger pour des tâches rapides → [[HeidiSQL]].
+- Installation — installeur Windows, macOS ou Linux
+- Point d'entrée — application de bureau : diagrammes ER, éditeur SQL, console d'administration
+- Prérequis — un serveur MySQL — MariaDB dans une certaine mesure ; application C++ native
+- Exécution — sur le poste de travail, aucun service à héberger
+- Coût — gratuit, licence GPLv2
 
-## Bases & plateformes
+## Écosystème
 
-- MySQL (et MariaDB dans une certaine mesure).
-- Windows, macOS, Linux (application C++ native).
-
-## Pièges
-
-- Centré MySQL : peu pertinent pour d'autres moteurs.
-- Application parfois réputée lourde ou instable sur certaines plateformes selon les versions.
-
-## Alternatives
+### Alternatives
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 - [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
+- Documentation — https://dev.mysql.com/doc/workbench/en/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
 - [[MySQL]] — le moteur administré
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://dev.mysql.com/doc/workbench/en/
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier
