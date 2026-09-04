@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[TensorRT]]"]
-complements: []
+complements: ["[[NVIDIA Triton]]"]
 tags: [inference, model-serving, inference-optimization, gpu, quantization]
 url_docs: https://onnxruntime.ai/docs/
 url_repo: https://github.com/microsoft/onnxruntime
@@ -17,46 +17,59 @@ url_repo: https://github.com/microsoft/onnxruntime
 
 # ONNX Runtime
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.
 
-Moteur d'inférence haute performance pour les modèles exportés au format **ONNX** (standard d'échange de réseaux, entre PyTorch, TensorFlow, scikit-learn…). Cœur **C++** avec des bindings Python, C#, Java, JS : on entraîne dans n'importe quel framework, on exporte en ONNX, et le même artefact s'exécute partout. Sa force est l'abstraction des **Execution Providers** : une même API de session route le calcul vers le meilleur backend matériel disponible — CPU, CUDA, **TensorRT**, OpenVINO, DirectML, CoreML, ROCm, NNAPI — sans changer le code applicatif. Applique aussi des optimisations de graphe (fusion d'opérateurs, constant folding) et la **quantization** (INT8/dynamique) pour alléger le modèle.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Découpler l'entraînement du déploiement** : exporter une fois en ONNX, servir sur des cibles hétérogènes (serveur, mobile, edge, navigateur via WASM).
-- **Accélérer l'inférence CPU** ou GPU sans réécrire le modèle (optimisations de graphe, quantization).
-- Cible matérielle variable ou non-NVIDIA : DirectML (Windows), OpenVINO (Intel), CoreML (Apple) via le bon Execution Provider.
-- Embarqué comme **runtime** derrière un serveur de modèles ([[NVIDIA Triton]] l'utilise comme backend).
+Moteur d'inférence pour les modèles exportés au format **ONNX**, le standard d'échange de
+réseaux entre PyTorch, TensorFlow et scikit-learn. Cœur C++ avec bindings Python, C#, Java et
+JS : on entraîne dans le framework qu'on veut, on exporte une fois, et le même artefact
+s'exécute partout. Sa force est l'abstraction des **Execution Providers** — une même API de
+session route le calcul vers le meilleur backend disponible (CPU, CUDA, TensorRT, OpenVINO,
+DirectML, CoreML, ROCm, NNAPI) sans toucher au code applicatif — à quoi s'ajoutent les
+optimisations de graphe (fusion d'opérateurs, constant folding) et la quantization INT8. Ce
+n'est pas un serveur : ni API gérée, ni batching dynamique, ni gestion multi-modèles.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin d'un **serveur** complet (batching dynamique, multi-modèles, API gérée, métriques) → [[NVIDIA Triton]] ou [[BentoML]] ; ONNX Runtime n'est qu'un moteur d'exécution.
-- **Latence GPU NVIDIA absolument minimale** → [[TensorRT]] compile un moteur plus agressif (ONNX Runtime peut d'ailleurs déléguer à TensorRT via son EP).
-- Modèle PyTorch jamais exporté et boucle d'inférence simple : `torch` natif suffit, l'export ONNX ajoute une étape.
+| Prendre si | Écarter si |
+|---|---|
+| Découpler entraînement et déploiement : exporter une fois, servir sur des cibles hétérogènes (serveur, mobile, edge, navigateur via WASM) | L'export ONNX est le point de friction : opérateur non supporté, opset à aligner, formes dynamiques mal capturées — valider l'égalité numérique avant et après |
+| Accélérer l'inférence CPU ou GPU sans réécrire le modèle | Installer le mauvais paquet (`onnxruntime` au lieu d'`onnxruntime-gpu`) fait tourner sur CPU sans le dire |
+| Cible matérielle variable ou non-NVIDIA : DirectML, OpenVINO, CoreML via le bon Execution Provider | Un Execution Provider listé ne garantit pas que tout le modèle y tourne : les opérateurs non couverts retombent sur CPU, et le gain avec |
+| Embarquer un runtime d'inférence derrière un serveur de modèles | Les versions de l'EP TensorRT/CUDA sont à appairer précisément avec le driver |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; `uv add onnxruntime` (CPU) ou `onnxruntime-gpu` (CUDA). Paquets distincts par Execution Provider.
-- Self-host : bibliothèque liée dans l'application, pas de service à exploiter. Empreinte légère, adaptée à l'edge.
-- Coût = le matériel sous-jacent ; aucun service managé propre (Microsoft l'utilise dans Azure ML et Windows ML).
+- Installation — `uv add onnxruntime` (CPU) ou `onnxruntime-gpu` (CUDA) ; un paquet distinct par Execution Provider
+- Point d'entrée — une `InferenceSession` en Python, ou les bindings C#, Java, JS
+- Prérequis — un modèle exporté en ONNX ; pour un EP accéléré, la paire driver/CUDA correspondante
+- Exécution — bibliothèque liée dans l'application, empreinte légère, adaptée à l'edge ; rien à héberger
+- Coût — MIT ; aucun service managé propre, le coût est celui du matériel sous-jacent
 
-## Pièges
+## Écosystème
 
-- L'**export ONNX** est le point de friction : opérateurs non supportés, opset à aligner, formes dynamiques mal capturées → divergence ou échec de conversion. Toujours valider l'égalité numérique avant/après export.
-- Installer le **mauvais paquet** (`onnxruntime` au lieu d'`onnxruntime-gpu`) → exécution silencieusement sur CPU.
-- Un Execution Provider listé ne garantit pas que **tout** le modèle y tourne : les opérateurs non couverts retombent sur CPU (fallback), annulant le gain.
-- Versions de l'EP TensorRT/CUDA à appairer précisément avec le driver et CUDA.
-
-## Alternatives
+### Alternatives
 
 - [[TensorRT]] — SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.
 
-Nuance : ONNX Runtime est **portable et multi-backend** (le même artefact partout) ; TensorRT est **mono-vendeur** (NVIDIA) et pousse l'optimisation GPU plus loin. Les deux se composent : l'Execution Provider TensorRT d'ONNX Runtime délègue les sous-graphes compilables à TensorRT et garde le reste portable.
+### Compléments
 
-## Liens
+- [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo. — le serveur qui l'embarque comme backend d'inférence
 
-- [[TensorRT]], OpenVINO, DirectML — Execution Providers d'accélération.
-- [[NVIDIA Triton]] — serveur qui utilise ONNX Runtime comme backend d'inférence.
-- [[PyTorch]], [[TensorFlow]] — frameworks d'entraînement exportant vers ONNX.
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie.
-- Doc : https://onnxruntime.ai/docs/
+## Ressources
+
+- Documentation — https://onnxruntime.ai/docs/
+- Dépôt — https://github.com/microsoft/onnxruntime
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[PyTorch]], [[TensorFlow]] — les frameworks d'entraînement qui exportent vers ONNX

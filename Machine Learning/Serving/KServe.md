@@ -19,36 +19,44 @@ url_repo: https://github.com/kserve/kserve
 
 # KServe
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
 
-Couche d'inférence **native Kubernetes** : on décrit le déploiement d'un modèle dans une ressource déclarative **`InferenceService`** (CRD), et KServe gère serveur, routes, autoscaling et rollout. Intégration **Knative** pour le serverless — **autoscaling basé sur le trafic et scale-to-zero** (pas de coût quand aucune requête) — et déploiements canary. Multi-framework (scikit-learn, PyTorch, TensorFlow, XGBoost, ONNX, Triton…) et désormais aussi serving génératif (LLM). Né en 2019 comme **KFServing** sous Kubeflow, devenu KServe en 2022, **projet CNCF en incubation** depuis fin 2025 — gouvernance neutre.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Déjà sur **Kubernetes** : modèles déployés et versionnés comme du reste de l'infra (GitOps, CRD).
-- **Charge variable / sporadique** : scale-to-zero pour ne payer le GPU que sous trafic.
-- Stack **multi-framework** voulue standardisée derrière une abstraction commune.
-- Rollouts progressifs (canary), transformers et explainers branchés dans le graphe de service.
+Couche d'inférence native Kubernetes : le déploiement d'un modèle se décrit dans une ressource
+déclarative **`InferenceService`**, et l'opérateur gère serveur, routes, autoscaling et
+rollout. L'intégration **Knative** apporte l'autoscaling au trafic, le **scale-to-zero** — pas
+de coût quand aucune requête n'arrive — et les déploiements canary. Multi-framework
+(scikit-learn, PyTorch, TensorFlow, XGBoost, ONNX, Triton), et désormais serving génératif.
+Né en 2019 comme KFServing sous Kubeflow, renommé KServe en 2022, projet CNCF en incubation
+depuis fin 2025 — gouvernance neutre.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pas de cluster Kubernetes / besoin d'un serveur simple en local → [[BentoML]].
-- Performance GPU brute d'un runtime unique → [[NVIDIA Triton]] (souvent utilisé *dans* KServe).
-- Un seul modèle TensorFlow à exposer → [[TensorFlow Serving]].
+| Prendre si | Écarter si |
+|---|---|
+| Déjà sur Kubernetes : les modèles se déploient et se versionnent comme le reste de l'infra (GitOps, CRD) | Knative et une couche réseau (Istio…) sont à opérer en plus : la courbe d'apprentissage est celle de Kubernetes, pas celle de KServe |
+| Charge variable ou sporadique : le scale-to-zero ne fait payer le GPU que sous trafic | Le scale-from-zero ajoute une latence de démarrage à froid, critique sur un gros modèle GPU |
+| Parc multi-framework à standardiser derrière une abstraction commune | Deux modes de déploiement, Serverless et RawDeployment, aux comportements différents : à choisir tôt |
+| Rollouts progressifs en canary, transformers et explainers branchés dans le graphe de service | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit ; s'installe **sur un cluster Kubernetes** (avec Knative + Istio/gateway selon le mode).
-- Pas d'offre SaaS propre ; managé indirectement via les distributions K8s/ML des cloud providers et de Red Hat.
-- Scaling distribué et serverless par conception (Knative).
+- Installation — manifests ou Helm sur un cluster Kubernetes, avec Knative et une gateway (Istio) en mode Serverless
+- Point d'entrée — la CRD `InferenceService`, déclarée en YAML
+- Prérequis — un cluster Kubernetes déjà opéré ; Knative et sa couche réseau pour le mode Serverless
+- Exécution — sur le cluster, autoscaling au trafic et scale-to-zero par Knative ; managé indirectement par les distributions K8s/ML des cloud providers
+- Coût — Apache-2.0, aucune offre SaaS propre ; le coût est celui du cluster, et il tombe à zéro hors trafic
 
-## Pièges
+## Écosystème
 
-- **Dépendances lourdes** : Knative + une couche réseau (Istio…) à opérer ; la courbe d'apprentissage est K8s, pas juste KServe.
-- Le **scale-from-zero** ajoute une latence de démarrage à froid (cold start), critique pour les gros modèles/GPU.
-- Deux modes de déploiement (Serverless vs RawDeployment) aux comportements différents : choisir tôt.
-
-## Alternatives
+### Alternatives
 
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
@@ -57,9 +65,13 @@ Couche d'inférence **native Kubernetes** : on décrit le déploiement d'un mod�
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+## Ressources
 
-- Runtime d'inférence fréquent : [[NVIDIA Triton]].
-- Tourne sur Kubernetes ([[Docker]] pour les images de modèles).
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc : https://kserve.github.io/website/
+- Documentation — https://kserve.github.io/website/
+- Dépôt — https://github.com/kserve/kserve
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[Docker]] — les images de modèles que le cluster exécute

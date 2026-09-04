@@ -17,46 +17,58 @@ url_repo: https://github.com/pytorch/vision
 
 # torchvision
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
 
-Paquet vision **officiel** de l'écosystème [[PyTorch]], maintenu par la même équipe. Trois briques : **datasets** (téléchargement et préparation de jeux publics), **models** (architectures et poids pré-entraînés — ResNet, EfficientNet, ConvNeXt, ViT, Faster R-CNN, Mask R-CNN…) et **transforms** (prétraitement et augmentation). La génération `transforms.v2` opère sur des tenseurs (GPU possible), gère boîtes et masques, et remplace l'ancienne API `transforms`. C'est l'outillage par défaut pour le [[Transfer learning vision|transfert d'apprentissage]] et le chargement d'images en PyTorch.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python/C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Charger un **backbone pré-entraîné** ImageNet (CNN ou ViT) pour faire du [[Transfer learning vision|transfert]] sans dépendance supplémentaire.
-- Pipelines d'**[[Augmentation d'images|augmentation]]** standard (flip, crop, RandAugment, Mixup/CutMix) via `transforms.v2`.
-- Tâches clés en main : [[Classification d'images|classification]], [[Détection d'objets|détection]] et [[Segmentation|segmentation]] (Faster/Mask R-CNN, RetinaNet, DeepLab).
-- Décodage d'images/vidéos et `datasets` pour prototyper vite.
+Paquet vision **officiel** de l'écosystème PyTorch, maintenu par la même équipe. Trois
+briques : `datasets` (téléchargement et préparation de jeux publics), `models` (architectures
+et poids pré-entraînés — ResNet, EfficientNet, ConvNeXt, ViT, Faster R-CNN, Mask R-CNN,
+RetinaNet, DeepLab) et `transforms` (prétraitement et augmentation). La génération
+`transforms.v2` opère sur des tenseurs, GPU compris, gère nativement boîtes et masques, et
+remplace l'ancienne API `transforms` qui ne les gérait pas. C'est l'outillage par défaut du
+transfert d'apprentissage et du chargement d'images en PyTorch.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Catalogue de backbones beaucoup plus large et poids SOTA → [[timm]].
-- Augmentation CPU plus rapide et plus riche (détection/segmentation) → [[albumentations]].
-- Augmentations **différentiables** sur GPU dans le graphe d'autograd → [[Kornia]].
-- Vision **classique** hors deep learning (calibration, features, vidéo) → [[OpenCV]].
+| Prendre si | Écarter si |
+|---|---|
+| Charger un backbone pré-entraîné ImageNet, CNN ou ViT, pour du transfert sans dépendance supplémentaire | Catalogue de backbones beaucoup plus large et poids SOTA → [[timm]] |
+| Pipelines d'augmentation standard — flip, crop, RandAugment, Mixup/CutMix — via `transforms.v2` | Augmentation CPU plus rapide et plus riche pour la détection et la segmentation → [[albumentations]] |
+| Tâches clés en main : classification, détection et segmentation (Faster/Mask R-CNN, RetinaNet, DeepLab) | Augmentations différentiables sur GPU, dans le graphe d'autograd → [[Kornia]] |
+| Décodage d'images et de vidéos, et `datasets` publics pour prototyper vite | Vision classique hors deep learning — calibration, features, vidéo → [[OpenCV]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (BSD-3-Clause), gratuite ; `uv add torchvision`. Rien à héberger.
-- Versionnée **en lockstep avec PyTorch** (une version de torchvision par version de torch) ; opérations C++/CUDA pour le décodage et certains modèles.
-- S'exécute là où tourne PyTorch (CPU, GPU NVIDIA/ROCm, MPS) ; la mise à l'échelle distribuée est déléguée à PyTorch.
+- Installation — `uv add torchvision`
+- Point d'entrée — les trois modules `datasets`, `models` et `transforms.v2`
+- Prérequis — PyTorch, en version appairée : une version de torchvision par version de torch, sinon l'import casse
+- Exécution — là où tourne PyTorch (CPU, GPU NVIDIA ou ROCm, MPS) ; mise à l'échelle distribuée déléguée à PyTorch
+- Coût — BSD-3-Clause pour la bibliothèque ; certains poids ont leur propre licence, dont SWAG en CC-BY-NC 4.0, non commerciale
 
-## Pièges
+## Écosystème
 
-- **Poids ≠ BSD** : certains poids pré-entraînés ont leur propre licence (ex. SWAG en CC-BY-NC 4.0, non commercial) — vérifier avant usage en prod.
-- Couples de versions stricts torch ↔ torchvision : une mauvaise paire casse l'import.
-- Migrer vers `transforms.v2` : l'ancienne API `transforms` (v1) ne gère pas nativement boîtes/masques.
-
-## Alternatives
+### Alternatives
 
 - [[timm]] — La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
 - [[albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
 - [[Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
-## Liens
+## Ressources
 
-- [[PyTorch]] — le framework dont torchvision est l'extension vision officielle.
-- [[Vision par ordinateur]] — le cadre et les tâches servies.
-- [[CNN]] / [[Architectures CNN]] — les backbones convolutifs exposés par `models`.
-- [[Transfer learning vision]] / [[Augmentation d'images]] — les deux usages cœur.
-- Doc : https://docs.pytorch.org/vision/
+- Documentation — https://docs.pytorch.org/vision/
+- Dépôt — https://github.com/pytorch/vision
+
+## Voir aussi
+
+- [[Vision par ordinateur]] — le cadre et les tâches servies
+- [[Transfer learning vision]], [[Augmentation d'images]] — les deux usages cœur
+- [[Architectures CNN]], [[CNN]] — les backbones convolutifs exposés par `models`
+- [[Vision]] — le hub du dossier ; torchvision n'entre pas dans la vue du comparatif, filtrée sur détection et segmentation
+- [[PyTorch]] — le framework dont torchvision est l'extension vision officielle

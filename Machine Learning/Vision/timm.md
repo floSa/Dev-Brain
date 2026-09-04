@@ -17,43 +17,57 @@ url_repo: https://github.com/huggingface/pytorch-image-models
 
 # timm
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
 
-**PyTorch Image Models** : la plus vaste collection de backbones vision pour [[PyTorch]] (1000+ architectures et variantes — ResNet/ResNeXt, EfficientNet, RegNet, ConvNeXt, MobileNet, [[Vision Transformers (ViT)|ViT]], Swin, MaxViT…), avec leurs **poids pré-entraînés**, des optimiseurs, schedulers, augmentations et des scripts d'entraînement/éval de référence. Une API unique — `timm.create_model(name, pretrained=True, num_classes=...)` — sert n'importe quel modèle, avec extraction de features (`features_only`) pour brancher un détecteur ou un segmenteur. C'est l'outil de référence pour le [[Transfer learning vision|transfert d'apprentissage]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Récupérer un **backbone SOTA pré-entraîné** que torchvision n'a pas encore, en une ligne.
-- **Fine-tuner** ou faire de l'extraction de features (`features_only=True`) pour un pipeline détection/segmentation.
-- Comparer rapidement des dizaines d'architectures à budget donné (benchmarks `results/` du repo).
-- Réutiliser les recettes d'entraînement éprouvées (RandAugment, Mixup/CutMix, EMA…).
+**PyTorch Image Models** : la plus vaste collection de backbones vision pour PyTorch — plus de
+mille architectures et variantes (ResNet, ResNeXt, EfficientNet, RegNet, ConvNeXt, MobileNet,
+ViT, Swin, MaxViT), leurs poids pré-entraînés, plus des optimiseurs, schedulers, augmentations
+et scripts d'entraînement et d'évaluation de référence. Une API unique —
+`timm.create_model(name, pretrained=True, num_classes=...)` — sert n'importe lequel, et
+`features_only=True` en extrait les cartes de features pour brancher un détecteur ou un
+segmenteur. L'espace de noms est touffu : les suffixes (`.a1_in1k`, `.augreg`,
+`.fb_in22k_ft_in1k`) encodent la recette et le pré-entraînement, et se lisent.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin limité aux modèles classiques + datasets + tâches clés en main → [[torchvision]] (officiel, moins de dépendances).
-- Modèles **multimodaux** ou hors vision pure (CLIP, détecteurs end-to-end packagés) → [[HuggingFace]] `transformers`.
-- Augmentation seule, sans modèles → [[albumentations]] / [[Kornia]].
+| Prendre si | Écarter si |
+|---|---|
+| Récupérer en une ligne un backbone pré-entraîné que torchvision n'a pas encore | Les conventions de prétraitement varient par modèle : sans `model.pretrained_cfg` ou `resolve_data_config`, la précision baisse en silence |
+| Fine-tuner, ou extraire des features (`features_only=True`) pour un pipeline détection ou segmentation | Certains poids héritent d'une licence non commerciale du jeu d'origine : à vérifier au cas par cas |
+| Comparer des dizaines d'architectures à budget donné, benchmarks du dépôt à l'appui | Besoin limité aux modèles classiques, aux datasets et aux tâches clés en main → [[torchvision]] |
+| Réutiliser des recettes d'entraînement éprouvées : RandAugment, Mixup/CutMix, EMA | Modèles multimodaux ou hors vision pure — CLIP, détecteurs end-to-end packagés → `transformers` de [[HuggingFace]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add timm`. Rien à héberger.
-- Maintenue sous l'organisation **Hugging Face** (repo `huggingface/pytorch-image-models`, créateur Ross Wightman) ; poids distribués via le **Hub HF**.
-- Pur Python au-dessus de PyTorch ; s'exécute sur CPU/GPU, distribution déléguée à PyTorch.
+- Installation — `uv add timm`
+- Point d'entrée — `timm.create_model(...)`, complété par `resolve_data_config` pour le prétraitement du poids choisi
+- Prérequis — PyTorch ; les poids se téléchargent depuis le Hub Hugging Face
+- Exécution — CPU ou GPU, single-node ; distribution déléguée à PyTorch
+- Coût — Apache-2.0 pour la bibliothèque ; certains poids portent leur propre licence, parfois non commerciale
 
-## Pièges
+## Écosystème
 
-- **Conventions de prétraitement par modèle** : récupérer `model.pretrained_cfg` (ou `resolve_data_config`) pour la bonne normalisation/résolution — sinon perte de précision silencieuse.
-- Espace de noms touffu : suffixes (`.a1_in1k`, `.augreg`, `.fb_in22k_ft_in1k`) encodant recette et pré-entraînement ; lire la fiche du poids.
-- Certains poids héritent de licences non commerciales du jeu d'origine — vérifier au cas par cas.
-
-## Alternatives
+### Alternatives
 
 - [[torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
 
-## Liens
+## Ressources
 
-- [[PyTorch]] — le framework sous-jacent ; [[HuggingFace]] — Hub qui héberge les poids et organisation mainteneuse.
-- [[Transfer learning vision]] — l'usage cœur (backbones pré-entraînés).
-- [[Architectures CNN]] / [[CNN]] / [[Vision Transformers (ViT)|ViT]] — les familles d'ossatures fournies.
-- [[Classification d'images]] — la tâche directe ; [[Vision par ordinateur]] — le cadre.
-- Doc : https://huggingface.co/docs/timm/
+- Documentation — https://huggingface.co/docs/timm/
+- Dépôt — https://github.com/huggingface/pytorch-image-models
+
+## Voir aussi
+
+- [[Transfer learning vision]] — l'usage cœur : partir d'un backbone pré-entraîné
+- [[Architectures CNN]], [[CNN]], [[Vision Transformers (ViT)]] — les familles d'ossatures fournies
+- [[Classification d'images]] — la tâche directe
+- [[Vision]] — le hub du dossier ; timm n'entre pas dans la vue du comparatif, filtrée sur détection et segmentation
+- [[PyTorch]] — le framework sous-jacent ; [[HuggingFace]] — l'organisation mainteneuse et le Hub des poids

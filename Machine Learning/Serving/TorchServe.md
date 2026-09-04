@@ -19,34 +19,42 @@ url_repo: https://github.com/pytorch/serve
 
 # TorchServe
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
 
-Serveur de modèles officiel de l'écosystème [[PyTorch]] (créé avec AWS). Un modèle est empaqueté en archive **`.mar`** avec un **handler** Python (pré/post-traitement) ; le serveur — **frontend Java**, workers Python — expose des endpoints REST et gRPC, avec **batching**, versionnage de modèles, métriques et gestion multi-modèles. **Statut critique** : le projet est **archivé et n'est plus activement maintenu** (dépôt archivé le 7 août 2025) — plus de correctifs, de nouvelles fonctionnalités ni de patchs de sécurité. À ne plus retenir pour un nouveau déploiement.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Java/Python | open-source | self-hébergé · distribué | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Quasi exclusivement en **maintenance d'un existant** déjà bâti sur TorchServe.
-- Pour un nouveau projet PyTorch → préférer une alternative maintenue ci-dessous.
+Serveur de modèles de l'écosystème PyTorch, créé avec AWS. Un modèle est empaqueté en archive
+**`.mar`** avec un **handler** Python de pré/post-traitement ; le serveur — frontend Java,
+workers Python — expose des endpoints REST et gRPC, avec batching, versionnage des modèles,
+métriques et gestion multi-modèles. Le dépôt a été **archivé le 7 août 2025** : plus de
+correctifs, plus de nouvelles fonctionnalités, plus de patchs de sécurité. Il ne se retient
+plus pour un nouveau déploiement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Tout nouveau déploiement** : projet non maintenu, vulnérabilités non corrigées.
-- Serving PyTorch moderne et maintenu → [[BentoML]] (packaging Python) ou [[NVIDIA Triton]] (backend LibTorch, perf GPU).
-- Déploiement Kubernetes standardisé → [[KServe]].
+| Prendre si | Écarter si |
+|---|---|
+| Maintenir un existant déjà bâti sur TorchServe | Tout nouveau déploiement : projet archivé, vulnérabilités non corrigées, risque de conformité en production |
+| | Le couple frontend Java / handler Python impose deux runtimes dans l'image et complique le débogage |
+| | Écrire un `handler` correct — batch, device, sérialisation — est moins trivial qu'il n'y paraît |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit ; self-host (conteneur ou binaire), frontend Java + workers Python.
-- **Plus de releases** : dépôt archivé en lecture seule depuis août 2025.
-- Scaling distribué via réplicas (souvent sous KServe par le passé).
+- Installation — conteneur ou binaire ; plus aucune release depuis l'archivage du dépôt
+- Point d'entrée — une archive `.mar` (modèle plus handler Python), servie en REST et gRPC
+- Prérequis — un modèle PyTorch, un runtime Java pour le frontend et Python pour les workers
+- Exécution — self-hébergé ; réplicas pilotés par l'orchestrateur, souvent KServe par le passé
+- Coût — Apache-2.0, dépôt en lecture seule depuis le 7 août 2025 : aucun coût, et aucun support
 
-## Pièges
+## Écosystème
 
-- **Non maintenu** : pas de correctif de sécurité — risque de conformité en production.
-- Le couple **frontend Java / handler Python** complique le débogage et l'image (deux runtimes).
-- Écrire un `handler` correct (batch, device, sérialisation) est moins trivial qu'il n'y paraît.
-
-## Alternatives
+### Alternatives
 
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
@@ -55,8 +63,13 @@ Serveur de modèles officiel de l'écosystème [[PyTorch]] (créé avec AWS). Un
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+## Ressources
 
-- Servait les modèles de [[PyTorch]] (équivalent PyTorch de [[TensorFlow Serving]]).
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc (archive) : https://docs.pytorch.org/serve/
+- Documentation — https://docs.pytorch.org/serve/
+- Dépôt — https://github.com/pytorch/serve
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[PyTorch]] — le framework dont il servait les modèles

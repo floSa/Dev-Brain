@@ -9,7 +9,7 @@ licence_type: proprietary
 maturite: production
 langage: C++
 alternatives: ["[[ONNX Runtime]]"]
-complements: []
+complements: ["[[NVIDIA Triton]]"]
 tags: [inference, inference-optimization, model-serving, gpu, quantization]
 url_docs: https://docs.nvidia.com/deeplearning/tensorrt/
 url_repo: https://github.com/NVIDIA/TensorRT
@@ -17,46 +17,58 @@ url_repo: https://github.com/NVIDIA/TensorRT
 
 # TensorRT
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.
 
-SDK d'inférence haute performance de NVIDIA, spécialisé pour ses propres GPU. À partir d'un modèle entraîné (souvent via [[ONNX Runtime|ONNX]]), TensorRT le **compile en un « moteur » optimisé** pour une architecture GPU donnée : fusion de couches, sélection automatique des kernels les plus rapides (auto-tuning), calibration et **quantization** (FP16, INT8, FP8, NVFP4), gestion fine de la mémoire. Le gain en latence et en débit est important, au prix d'une étape de build et d'un couplage matériel fort. La déclinaison **TensorRT-LLM** (Apache-2.0) applique ces optimisations aux grands modèles de langage (paged attention, in-flight batching, décodage spéculatif), brique de la stack d'inférence NVIDIA (Triton, Dynamo, NIM).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | propriétaire | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Latence/débit GPU NVIDIA maximaux** en production (vision, LLM) où chaque milliseconde et chaque token/s comptent.
-- Servir des **LLM** efficacement sur GPU NVIDIA → TensorRT-LLM (FP8/NVFP4, batching in-flight).
-- Stack NVIDIA de bout en bout : moteurs TensorRT servis par [[NVIDIA Triton]].
-- Edge NVIDIA (Jetson) où l'optimisation matérielle est décisive.
+SDK d'inférence de NVIDIA, spécialisé pour ses propres GPU. À partir d'un modèle entraîné,
+souvent passé par un export ONNX, il le **compile en un « moteur »** optimisé pour une
+architecture GPU donnée : fusion de couches, sélection automatique des kernels les plus
+rapides, calibration et **quantization** (FP16, INT8, FP8, NVFP4), gestion fine de la mémoire.
+Le gain en latence et en débit est important, au prix d'une étape de build et d'un couplage
+matériel fort. La déclinaison **TensorRT-LLM** applique ces optimisations aux grands modèles de
+langage — paged attention, in-flight batching, décodage spéculatif.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Pas de GPU NVIDIA** ou besoin de portabilité multi-cibles → [[ONNX Runtime]] (CPU, AMD, Intel, Apple, navigateur).
-- On veut un **serveur** clé en main (API, multi-modèles, batching, métriques) → [[NVIDIA Triton]], qui exécute les moteurs TensorRT.
-- Prototype ou faible volume : le **coût de build** et la complexité de conversion ne se rentabilisent pas.
+| Prendre si | Écarter si |
+|---|---|
+| Latence et débit GPU NVIDIA maximaux en production, quand la milliseconde ou le token/s comptent | La conversion ONNX → TensorRT échoue sur les opérateurs non supportés et les formes dynamiques mal gérées, et le débogage est pénible |
+| Servir des LLM sur GPU NVIDIA via TensorRT-LLM (FP8/NVFP4, batching in-flight) | Un moteur compilé est figé sur une architecture GPU et une version de TensorRT : à rebuild pour chaque cible, et à versionner |
+| Stack NVIDIA de bout en bout, moteurs exécutés par un serveur d'inférence | La quantization INT8 exige une calibration soignée : valider la précision, pas seulement la vitesse |
+| Edge NVIDIA (Jetson), où l'optimisation matérielle est décisive | Cœur fermé : aucun patch possible, et une dépendance forte au calendrier NVIDIA |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Cœur propriétaire** (NVIDIA Software License Agreement), gratuit d'usage mais fermé ; composants OSS (parsers, plugins, samples) et **TensorRT-LLM** sous Apache-2.0 sur GitHub.
-- Distribué via le SDK NVIDIA, pip (`tensorrt`) et surtout les conteneurs **NGC** ; lié à une matrice CUDA/driver/GPU précise.
-- Self-host sur GPU NVIDIA (data center, cloud, Jetson) ; pas d'offre SaaS directe. Coût = matériel GPU + ingénierie de conversion.
+- Installation — SDK NVIDIA, `pip install tensorrt`, ou surtout les conteneurs NGC
+- Point d'entrée — un build de moteur depuis un ONNX (`trtexec` ou l'API), puis le runtime C++/Python
+- Prérequis — GPU NVIDIA, et une matrice CUDA/driver/GPU précise
+- Exécution — self-hébergé sur GPU NVIDIA (data center, cloud, Jetson) ; aucune offre SaaS
+- Coût — cœur sous NVIDIA Software License Agreement, gratuit d'usage mais fermé ; parsers, plugins, samples et TensorRT-LLM sous Apache-2.0. Le coût réel est le GPU et l'ingénierie de conversion
 
-## Pièges
+## Écosystème
 
-- La **conversion ONNX → TensorRT** échoue sur les opérateurs non supportés ou les formes dynamiques mal gérées — débogage souvent pénible.
-- Un moteur compilé est **figé sur l'architecture GPU** et la version de TensorRT : non portable, à rebuild pour chaque cible (et à versionner).
-- La **quantization INT8** exige une calibration soignée sous peine de perte de précision silencieuse — valider la qualité, pas seulement la vitesse.
-- Cœur propriétaire : pas de patch possible, dépendance forte à l'écosystème et au calendrier NVIDIA.
-
-## Alternatives
+### Alternatives
 
 - [[ONNX Runtime]] — Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.
 
-Nuance : TensorRT vise la **performance maximale sur GPU NVIDIA**, au prix de la portabilité et d'une compilation figée ; ONNX Runtime privilégie le **« écrire une fois, exécuter partout »**. Ils se composent — ONNX Runtime peut déléguer à TensorRT via son Execution Provider.
+### Compléments
 
-## Liens
+- [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo. — le serveur qui exécute les moteurs compilés
 
-- [[ONNX Runtime]] — chemin d'entrée fréquent (export ONNX → build TensorRT) et alternative portable.
-- [[NVIDIA Triton]] — serveur exécutant les moteurs TensorRT.
-- [[PyTorch]] — `torch-tensorrt` compile directement depuis PyTorch.
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie.
-- Doc : https://docs.nvidia.com/deeplearning/tensorrt/
+## Ressources
+
+- Documentation — https://docs.nvidia.com/deeplearning/tensorrt/
+- Dépôt — https://github.com/NVIDIA/TensorRT
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[PyTorch]] — `torch-tensorrt` compile un moteur directement depuis PyTorch
