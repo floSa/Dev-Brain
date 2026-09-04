@@ -129,3 +129,74 @@ le domaine, pour que la conversation suivante reprenne exactement là.
 N'invente aucun contenu : une cellule sans source dans la fiche d'origine reste vide
 et tu me la signales. Clôture avec le skill cloturer-brain.
 ```
+
+---
+
+## Protocole parallèle — arrêté le 2026-09-06
+
+Le lot 6 est le seul assez long pour justifier du parallélisme, et le seul qui s'y
+prête : il ne déplace rien, ne renomme rien, et le corps des 336 fiches est **disjoint
+par dossier**. Ce qui empêchait le parallélisme aux lots 3, 4 et 5 était la clôture —
+`cloturer-brain` régénère `AI/index/`, commit et pousse sur `main` : deux clôtures
+simultanées se percutent. On la retire des conversations de conversion et on la fait
+une fois, à la fin.
+
+Le harnais donne déjà à chaque conversation son worktree et sa branche. Il n'y a donc
+rien à installer : il y a des **interdits** à tenir.
+
+### Les six règles d'une conversation de conversion
+
+1. **Elle ne touche que les fiches `role: brique` des dossiers qui lui sont assignés.**
+   Rien d'autre dans le vault : pas un hub, pas une notion, pas un comparatif, pas une
+   fiche d'un dossier voisin. Deux conversations ne partagent jamais un dossier.
+2. **Elle ne régénère rien** — ni `build_index`, ni `build_mocs`, ni `build_links` —
+   **et n'appelle jamais `cloturer-brain`.** C'est la conversation d'intégration qui
+   régénère, une fois.
+3. **Elle ne modifie aucun fichier partagé** : ni `lot-6-gabarit.md`, ni `CLAUDE*.md`,
+   ni `taxonomie.md`, ni `brain-v3.md`, ni `v3-arborescence.md`, ni `arbo.py`, ni aucun
+   script — `build_bandeau.py` compris, qu'elle **lance** sans jamais l'éditer, et
+   toujours **borné à ses dossiers**.
+4. **Ses remontées vont dans son propre fichier**, `AI/migration/lot-6/remontees-<slug>.md`,
+   créé par elle. Jamais dans le brief commun. Si elle constate qu'un document partagé
+   doit changer, elle l'écrit là et ne le change pas.
+5. **Elle peut lancer `check_brain.py` et `check_arbo.py`** pour se vérifier, mais le
+   compte d'avertissements de sa branche ne vaut que pour elle : il lui manque le
+   travail des autres. Elle mesure son propre écart avant/après et l'explique ; elle
+   ne cherche pas à retomber sur le compte de `main`.
+6. **Elle commite sur sa branche et la pousse** (`git push -u origin HEAD`). Elle ne
+   fait **jamais** `checkout main`, `merge`, `rebase`, ni `push` vers `main`. Elle
+   termine en donnant son **nom de branche** et ses SHA.
+
+### La conversation d'intégration
+
+Seule, en dernier. Elle intègre les branches une par une dans `main` — les jeux de
+fichiers étant disjoints, aucun conflit n'est attendu ; **un conflit signifie qu'une
+règle a été violée**, il s'examine, il ne se force pas. Puis elle lance
+`build_bandeau.py` sur tout le vault, régénère les trois index, fusionne les fichiers
+de remontées dans `lot-6-gabarit.md`, passe les deux validateurs et clôt avec
+`cloturer-brain`.
+
+### Découpage — un dossier entier par conversation, jamais moins
+
+Le pilote (`build_bandeau.py` + « Bases de données/Vectoriel/ » et « Administration/ »)
+passe **seul**, avant tout parallélisme : il fixe le gabarit et l'outil.
+
+| # | Périmètre | Fiches |
+|---|---|---|
+| 1 | Bases de données : `Recherche/`, `Relationnel/`, niveau domaine | ~29 |
+| 2 | Machine Learning : `Vision/`, `Serving/`, `Non supervisé/` | 22 |
+| 3 | Machine Learning : `Apprentissage profond/`, `Interprétabilité/`, `Socle/`, `Évaluation de modèles/` | 19 |
+| 4 | Machine Learning : `Séries temporelles/`, `Suivi d'expériences/`, `Tabulaire/` | 20 |
+| 5 | Machine Learning : `Apprentissage par renforcement/`, `NLP/`, niveau domaine | ~24 |
+| 6 | LLM : `Agents de code/`, `Agents/` | 22 |
+| 7 | LLM : `Runtimes/`, `Assistants/`, `Fine-tuning/` | 19 |
+| 8 | LLM : `Observabilité des LLM/`, `Passerelles/`, `RAG & retrieval/`, `Sortie typée/`, `Text-to-SQL/`, `Évaluation/` | 22 |
+| 9 | Data & pipelines : `Scraping/`, `Parsing/` | 19 |
+| 10 | Data & pipelines : `Orchestration/`, `DataFrames/`, `Visualisation/`, niveau domaine | ~27 |
+| 11 | Outils de développement (entier) | 20 |
+| 12 | Statistiques & inférence, Design & diagrammes, Calcul distribué | 24 |
+| 13 | Web & API, Stockage, Automatisation no-code, Médias, Interfaces & apps data | 25 |
+| 14 | Sécurité, Signal & audio, Observabilité, Réseau, Documents, DevOps, Mathématiques | 16 |
+
+Ce découpage suit les **dossiers**, pas un compteur : c'est ce qui garantit qu'aucune
+fiche n'appartient à deux conversations. Les comptes sont indicatifs.
