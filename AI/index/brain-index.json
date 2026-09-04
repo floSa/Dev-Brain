@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 751,
+  "count": 757,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -173,6 +173,7 @@
       "Web & API"
     ],
     "array": [
+      "Comparatif - Manipulation de données",
       "CuPy",
       "DataFrames",
       "JAX",
@@ -384,6 +385,7 @@
       "Bases de données",
       "ClickHouse",
       "Comparatif - Bases colonnes",
+      "Comparatif - Manipulation de données",
       "DuckDB",
       "LanceDB",
       "Parquet",
@@ -541,6 +543,7 @@
       "Airflow",
       "Architecture médaillon",
       "Change Data Capture (CDC)",
+      "Comparatif - Orchestrateurs data",
       "Dagster",
       "Data & pipelines",
       "ELT vs ETL & idempotence",
@@ -555,6 +558,7 @@
     ],
     "data-quality": [
       "Architecture médaillon",
+      "Comparatif - Outils EDA - profiling",
       "Contrats de données & qualité",
       "ydata-profiling"
     ],
@@ -573,6 +577,7 @@
       "Versionnage de données"
     ],
     "dataframe": [
+      "Comparatif - Manipulation de données",
       "Data & pipelines",
       "DataFrames",
       "Modin",
@@ -585,6 +590,7 @@
       "ydata-profiling"
     ],
     "dataviz": [
+      "Comparatif - Visualisation",
       "Data & pipelines",
       "Grafana",
       "TensorBoard",
@@ -615,6 +621,7 @@
       "LLaMA-Factory"
     ],
     "declarative-viz": [
+      "Comparatif - Visualisation",
       "altair"
     ],
     "decoding": [
@@ -807,6 +814,8 @@
       "MongoDB Compass"
     ],
     "document-parsing": [
+      "Comparatif - Parsing de documents",
+      "Comparatif - Scraping",
       "Data & pipelines",
       "Docling",
       "LlamaParse",
@@ -821,6 +830,7 @@
       "selectolax"
     ],
     "durable-execution": [
+      "Comparatif - Orchestrateurs data",
       "Orchestration",
       "Temporal"
     ],
@@ -830,6 +840,7 @@
       "Optimisation combinatoire"
     ],
     "eda": [
+      "Comparatif - Outils EDA - profiling",
       "EDA automatisée & profiling",
       "missingno",
       "sweetviz",
@@ -1262,6 +1273,7 @@
       "Wasserstein distance"
     ],
     "interactive-viz": [
+      "Comparatif - Visualisation",
       "Interfaces & apps data",
       "Visualisation",
       "altair",
@@ -1308,6 +1320,7 @@
       "Partitionnement & layout de données"
     ],
     "layout-analysis": [
+      "Comparatif - Parsing de documents",
       "Docling",
       "OpenDataLoader PDF",
       "docTR",
@@ -1567,6 +1580,7 @@
     "low-code": [
       "Activepieces",
       "Automatisation no-code",
+      "Comparatif - Scraping",
       "Dify",
       "Flowise",
       "LLaMA-Factory",
@@ -1671,6 +1685,7 @@
       "Migrations de schéma"
     ],
     "missing-data": [
+      "Comparatif - Outils EDA - profiling",
       "EDA automatisée & profiling",
       "Imputation des valeurs manquantes",
       "Mécanismes de données manquantes",
@@ -1952,6 +1967,7 @@
       "Observabilité des LLM"
     ],
     "ocr": [
+      "Comparatif - Parsing de documents",
       "Documents",
       "LlamaParse",
       "Marker",
@@ -2002,6 +2018,7 @@
       "Automatisation no-code",
       "ClearML",
       "Comparatif - Orchestrateurs ML",
+      "Comparatif - Orchestrateurs data",
       "Dagster",
       "Flyte",
       "Kestra",
@@ -2030,6 +2047,7 @@
     ],
     "out-of-core": [
       "Calcul distribué",
+      "Comparatif - Manipulation de données",
       "Dask",
       "DataFrames",
       "Polars",
@@ -2081,6 +2099,7 @@
       "Pattern - Stack démo ML locale multi-services"
     ],
     "pdf": [
+      "Comparatif - Parsing de documents",
       "Documents",
       "Marker",
       "OpenDataLoader PDF",
@@ -2201,6 +2220,7 @@
       "Chunking strategies",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
+      "Comparatif - Parsing de documents",
       "DB-GPT",
       "Dify",
       "Docling",
@@ -2462,7 +2482,8 @@
       "Small Language Models"
     ],
     "scheduler": [
-      "Airflow"
+      "Airflow",
+      "Comparatif - Orchestrateurs data"
     ],
     "schema-evolution": [
       "Apache Iceberg",
@@ -2584,6 +2605,7 @@
       "State Space Models"
     ],
     "static-viz": [
+      "Comparatif - Visualisation",
       "Visualisation",
       "matplotlib",
       "missingno",
@@ -3013,6 +3035,7 @@
       "Web & API"
     ],
     "web-scraping": [
+      "Comparatif - Scraping",
       "Crawlee",
       "Data & pipelines",
       "Documents",
@@ -5104,6 +5127,25 @@
       "maturite": null
     },
     {
+      "path": "Data & pipelines/Comparatif - Outils EDA - profiling.md",
+      "nom": "Comparatif - Outils EDA - profiling",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/eda",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "eda",
+        "data-quality",
+        "missing-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Contrats de données & qualité.md",
       "nom": "Contrats de données & qualité",
       "alias": [
@@ -5154,6 +5196,26 @@
         "web-scraping",
         "document-parsing",
         "dataviz"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/DataFrames/Comparatif - Manipulation de données.md",
+      "nom": "Comparatif - Manipulation de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/tableau",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "dataframe",
+        "array",
+        "columnar",
+        "out-of-core"
       ],
       "alternatives": null,
       "complements": null,
@@ -5461,6 +5523,26 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Orchestration/Comparatif - Orchestrateurs data.md",
+      "nom": "Comparatif - Orchestrateurs data",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/orchestration",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "orchestration",
+        "data-pipeline",
+        "scheduler",
+        "durable-execution"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Orchestration/Dagster.md",
       "nom": "Dagster",
       "alias": [
@@ -5644,6 +5726,27 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Comparatif - Parsing de documents.md",
+      "nom": "Comparatif - Parsing de documents",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "document-parsing",
+        "pdf",
+        "ocr",
+        "rag",
+        "layout-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Parsing/Docling.md",
@@ -5978,6 +6081,25 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Scraping/Comparatif - Scraping.md",
+      "nom": "Comparatif - Scraping",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/scraping",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "web-scraping",
+        "document-parsing",
+        "low-code"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Scraping/Crawlee.md",
       "nom": "Crawlee",
       "alias": [
@@ -6295,6 +6417,26 @@
       "pitch": null,
       "tags": [
         "data-versioning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Visualisation/Comparatif - Visualisation.md",
+      "nom": "Comparatif - Visualisation",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/viz",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "dataviz",
+        "static-viz",
+        "interactive-viz",
+        "declarative-viz"
       ],
       "alternatives": null,
       "complements": null,

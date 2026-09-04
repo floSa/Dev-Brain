@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 751 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 757 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -932,6 +932,24 @@
 - **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
 
 ## Comparatifs — ce qui départage plusieurs briques
+
+### data/eda
+- **Comparatif - Outils EDA - profiling** — —
+
+### data/orchestration
+- **Comparatif - Orchestrateurs data** — —
+
+### data/parsing
+- **Comparatif - Parsing de documents** — —
+
+### data/scraping
+- **Comparatif - Scraping** — —
+
+### data/tableau
+- **Comparatif - Manipulation de données** — —
+
+### data/viz
+- **Comparatif - Visualisation** — —
 
 ### database/admin
 - **Comparatif - Clients de bases de données** — —
