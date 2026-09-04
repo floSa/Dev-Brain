@@ -17,42 +17,53 @@ url_repo: https://github.com/YingfanWang/PaCMAP
 
 # PaCMAP
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
 
-Méthode de [[Réduction de dimension]] **non linéaire** (PaCMAP — *Pairwise Controlled Manifold Approximation*) conçue pour préserver **à la fois** la structure locale **et** la structure globale, là où [[t-SNE and UMAP|t-SNE et UMAP]] privilégient le voisinage local. Son ressort : trois familles de paires (voisins, **mid-near**, lointaines) dont les poids évoluent au fil de l'optimisation — on capte d'abord la forme d'ensemble, puis on affine le local. Résultat plus robuste au choix d'hyperparamètres et fidèle à la topologie globale (membre récent de la famille manifold, après t-SNE, LargeVis et UMAP).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Visualiser en 2-3D en gardant une **structure globale** crédible (positions relatives des amas, pas seulement des grappes locales).
-- Données à haute dimension où la disposition d'ensemble compte (embeddings, single-cell, trajectoires).
-- Alternative quand t-SNE/UMAP donnent des amas trop éclatés ou trop sensibles aux réglages.
-- Projeter de nouveaux points (`transform`) après apprentissage, comme UMAP.
+Méthode de réduction de dimension non linéaire — *Pairwise Controlled Manifold
+Approximation* — conçue pour préserver **à la fois** la structure locale **et** la structure
+globale, là où t-SNE et UMAP privilégient le voisinage local. Son ressort tient à trois
+familles de paires — voisins, **mid-near**, lointaines — dont les poids évoluent au fil de
+l'optimisation : la forme d'ensemble se capte d'abord, le local s'affine ensuite. Le résultat
+est plus robuste au choix des hyperparamètres et plus fidèle à la topologie globale. C'est le
+membre le plus récent de la famille manifold, après t-SNE, LargeVis et UMAP.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Choix par défaut éprouvé, gros écosystème et nombreuses intégrations → [[umap-learn]].
-- Réduction **linéaire** interprétable (axes, variance expliquée) → [[PCA]] via [[Scikit-Learn]].
-- Référence visuelle purement locale bien documentée → t-SNE (`sklearn.manifold`).
+| Prendre si | Écarter si |
+|---|---|
+| Visualiser en 2-3D en gardant une structure globale crédible : les positions relatives des amas, pas seulement les grappes locales | Comme pour tout manifold, les distances et les tailles d'amas dans la projection ne sont pas quantitativement fiables : ne pas les sur-interpréter |
+| Données à haute dimension où la disposition d'ensemble compte : embeddings, single-cell, trajectoires | Résultat stochastique : fixer la graine, sans quoi deux exécutions ne donnent pas la même figure |
+| Cas où t-SNE ou UMAP donnent des amas trop éclatés, ou trop sensibles aux réglages | Très haute dimension : standardiser et pré-réduire par [[PCA]] avant, sinon la projection se dégrade |
+| Projeter de nouveaux points après apprentissage, via `transform` | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add pacmap`, ou conda-forge). Rien à héberger.
-- Single-node, en mémoire ; recherche de voisins via Annoy, optimisation accélérée par Numba.
-- Apache-2.0, gratuit. API proche de scikit-learn (`fit_transform`).
+- Installation — `uv add pacmap`, ou conda-forge
+- Point d'entrée — une API proche de scikit-learn : `fit_transform`, puis `transform` sur données nouvelles
+- Prérequis — NumPy ; recherche de voisins par Annoy, optimisation accélérée par Numba
+- Exécution — single-node, en mémoire ; rien à héberger
+- Coût — Apache-2.0, gratuit
 
-## Pièges
+## Écosystème
 
-- Moins mature et moins répandu qu'UMAP : écosystème et intégrations plus restreints, API encore < 1.0.
-- Comme tout manifold : **distances et tailles d'amas** dans la projection ne sont pas quantitativement fiables.
-- Stochastique : fixer la graine pour la reproductibilité ; standardiser et, sur très haute dimension, pré-réduire par [[PCA]].
-
-## Alternatives
+### Alternatives
 
 - [[umap-learn]] — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Réduction de dimension]] — PCA / t-SNE / UMAP / PaCMAP.
-- Concept : [[t-SNE and UMAP]] — la branche non linéaire pour la viz ; page chapeau [[Réduction de dimension]] (famille manifold).
-- [[umap-learn]] — la référence dont PaCMAP est l'alternative orientée structure globale.
-- Doc : https://github.com/YingfanWang/PaCMAP
+- Documentation — https://github.com/YingfanWang/PaCMAP
+
+## Voir aussi
+
+- [[Réduction de dimension]] — la notion chapeau ; PaCMAP est de la famille manifold
+- [[t-SNE and UMAP]] — la branche non linéaire pour la visualisation
+- [[Comparatif - Réduction de dimension]] — ce qui départage les méthodes du dossier
