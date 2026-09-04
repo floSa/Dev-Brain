@@ -19,36 +19,43 @@ url_repo: https://github.com/cockroachdb/cockroach
 
 # CockroachDB
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 
-Base **NewSQL** : la sémantique SQL relationnelle et les transactions ACID sérialisables d'un côté, le scale horizontal et la tolérance aux pannes d'un système distribué de l'autre. Réplication par consensus Raft, rééquilibrage automatique des données, survie à la perte de nœuds ou de zones. Parle le **protocole filaire de Postgres** : les pilotes pg fonctionnent tels quels.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | source-available | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Forte croissance ou volumétrie qui dépasse un seul nœud, tout en gardant du SQL transactionnel.
-- Haute disponibilité et résilience multi-zone / multi-région exigées.
-- Résidence des données par région (data domiciling) avec une seule base logique.
-- Élasticité : ajouter des nœuds pour encaisser la charge en écriture.
+Base **NewSQL** : la sémantique SQL relationnelle et des transactions ACID sérialisables d'un
+côté, le scale horizontal et la tolérance aux pannes d'un système distribué de l'autre. Les
+données sont découpées en ranges répliqués par consensus Raft, rééquilibrés automatiquement, et
+le cluster survit à la perte de nœuds ou de zones entières. Elle parle le **protocole filaire
+de Postgres** : les pilotes pg fonctionnent tels quels, ce qui rend la bascule peu coûteuse
+côté application.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin mono-nœud simple, sans complexité distribuée → [[Postgres]].
-- Application embarquée locale → [[SQLite]].
-- Écosystème d'extensions Postgres requis (PostGIS complet, pgvector…) → [[Postgres]].
+| Prendre si | Écarter si |
+|---|---|
+| Volumétrie ou croissance qui dépasse un seul nœud, tout en gardant du SQL transactionnel | La latence des transactions distribuées dépasse celle d'un mono-nœud : la localité des données est à penser |
+| Haute disponibilité et résilience multi-zone ou multi-région exigées | Compatibilité Postgres élevée mais incomplète — certaines extensions et fonctions manquent |
+| Résidence des données par région (data domiciling) avec une seule base logique | Clés primaires et index à concevoir avec soin, sous peine de hotspots de range |
+| Élasticité : ajouter des nœuds pour encaisser la charge en écriture | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (cluster de nœuds, Docker/Kubernetes) ou managé (CockroachDB Cloud, serverless).
-- Scaling horizontal natif : la capacité croît avec le nombre de nœuds.
-- Licence **source-available** (CockroachDB Software License depuis 2024), pas open-source pur ; offre gratuite limitée, payant au-delà.
+- Installation — binaire, image Docker ou opérateur Kubernetes ; managé via CockroachDB Cloud, y compris en serverless
+- Point d'entrée — protocole filaire Postgres sur le port 26257 ; les pilotes pg et le client `cockroach sql`
+- Prérequis — un cluster d'au moins trois nœuds pour que le consensus Raft ait un quorum
+- Exécution — self-hébergé ou managé, distribué : la capacité croît avec le nombre de nœuds, le rééquilibrage est automatique
+- Coût — CockroachDB Software License depuis 2024, source-available et non open-source ; offre gratuite limitée, payant au-delà
 
-## Pièges
+## Écosystème
 
-- La latence des transactions distribuées dépasse celle d'un mono-nœud : penser la localité des données.
-- Compatibilité Postgres élevée mais incomplète (certaines extensions et fonctions absentes).
-- Bien concevoir clés primaires et index pour éviter les hotspots de range.
-
-## Alternatives
+### Alternatives
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
 - [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
@@ -56,8 +63,12 @@ Base **NewSQL** : la sémantique SQL relationnelle et les transactions ACID sér
 - [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 - [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- Doc : https://www.cockroachlabs.com/docs/
+- Documentation — https://www.cockroachlabs.com/docs/
+- Dépôt — https://github.com/cockroachdb/cockroach
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases relationnelles]] — ce qui départage les moteurs du dossier

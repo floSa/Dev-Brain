@@ -19,36 +19,43 @@ url_repo:
 
 # Microsoft SQL Server
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
-SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosystème **.NET / Windows / Azure**, dialecte **T-SQL** riche, et outillage mûr (SSMS, SSIS pour l'ETL, SSAS pour l'OLAP, SSRS pour le reporting). Fonctions haut de gamme : Always On, colonnes chiffrées, columnstore. Produit propriétaire, avec une édition Express gratuite et Linux/conteneurs supportés depuis 2017.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C++ | propriétaire | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Environnement Microsoft établi (.NET, Active Directory, Azure).
-- Besoin de l'outillage BI/ETL intégré (SSIS/SSAS/SSRS) et de T-SQL.
-- Exigences entreprise : support éditeur, sécurité avancée, conformité.
-- Migration ou consolidation sur Azure SQL Database / Managed Instance.
+SGBD relationnel d'entreprise de Microsoft, intégré en profondeur à l'écosystème **.NET /
+Windows / Azure** : authentification Active Directory, pilotes de première classe, continuité
+vers Azure SQL Database et Managed Instance. Son dialecte **T-SQL** est riche, et le produit
+vient avec un outillage mûr qui couvre bien plus que la base — SSMS pour l'administration,
+SSIS pour l'ETL, SSAS pour l'OLAP, SSRS pour le reporting. Côté moteur : Always On, colonnes
+chiffrées, index columnstore. Il tourne sur Linux et en conteneur depuis 2017.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Préférence open-source, sans coût de licence → [[Postgres]] ou [[MariaDB]].
-- Application embarquée locale → [[SQLite]].
-- Scale horizontal distribué multi-région natif → [[CockroachDB]].
+| Prendre si | Écarter si |
+|---|---|
+| Environnement Microsoft établi (.NET, Active Directory, Azure) | Le coût de licence grimpe vite, sur un modèle par cœur : l'édition et les fonctions incluses sont à vérifier avant tout engagement |
+| Besoin de l'outillage BI/ETL intégré (SSIS, SSAS, SSRS) et de T-SQL | Verrouillage T-SQL : le SQL écrit ici n'est pas portable vers un autre moteur sans réécriture |
+| Exigences entreprise : support éditeur, sécurité avancée, conformité | Limites strictes de l'édition Express (taille de base, RAM, CPU) à anticiper dès la conception |
+| Migration ou consolidation sur Azure SQL Database / Managed Instance | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (Windows, Linux, conteneurs) ou managé (Azure SQL Database, Managed Instance).
-- Scaling vertical + réplicas de lecture ; haute dispo via Always On Availability Groups.
-- **Propriétaire** : licences par cœur souvent coûteuses ; édition Express gratuite (limites de taille/CPU) ; Developer gratuite hors production.
+- Installation — installeur Windows, paquet Linux ou conteneur ; managé via Azure SQL Database et Managed Instance
+- Point d'entrée — serveur SQL sur le port 1433, dialecte T-SQL ; SSMS, `sqlcmd`, pilotes ODBC/JDBC
+- Prérequis — une licence adaptée à l'usage visé ; les services BI (SSIS, SSAS, SSRS) s'installent séparément
+- Exécution — self-hébergé ou managé, un nœud plus des réplicas de lecture ; haute disponibilité via Always On Availability Groups
+- Coût — licences par cœur ; édition Express gratuite avec limites de taille et de CPU, Developer gratuite hors production
 
-## Pièges
+## Écosystème
 
-- Coût de licence qui grimpe vite (modèle par cœur) — vérifier l'édition et les fonctionnalités incluses.
-- Verrouillage T-SQL : SQL non portable vers d'autres moteurs sans réécriture.
-- Limites strictes de l'édition Express (taille de base, RAM, CPU) à anticiper.
-
-## Alternatives
+### Alternatives
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
 - [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
@@ -56,8 +63,11 @@ SGBD relationnel d'entreprise de Microsoft. Intégration profonde avec l'écosys
 - [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- Doc : https://learn.microsoft.com/en-us/sql/sql-server/
+- Documentation — https://learn.microsoft.com/en-us/sql/sql-server/
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases relationnelles]] — ce qui départage les moteurs du dossier

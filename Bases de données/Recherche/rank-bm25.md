@@ -17,44 +17,54 @@ url_repo: https://github.com/dorianbrown/rank_bm25
 
 # rank-bm25
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 
-Implémentation **Python pure** des variantes de [[BM25]] (Okapi BM25, BM25L, BM25+). Pas d'index, pas de serveur, pas de dépendance lourde : on passe un corpus tokenisé, on requête, on récupère des scores. L'outil le plus simple pour ajouter une recherche **lexicale** à un prototype ou un pipeline [[RAG]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Étage **lexical / sparse** d'un [[Hybrid retrieval|retrieval hybride]] à petite/moyenne échelle.
-- Prototyper de la [[Recherche d'information]] sans monter un moteur.
-- Baseline BM25 pour jauger un retrieval dense.
+Implémentation **Python pure** des variantes de BM25 : Okapi BM25, BM25L, BM25+. Pas d'index,
+pas de serveur, pas de dépendance lourde — on passe un corpus déjà tokenisé, on requête, on
+récupère des scores. Tout vit en mémoire et se recalcule à chaque session. C'est l'outil le
+plus court pour ajouter une recherche lexicale à un prototype ou à un pipeline de retrieval, et
+son périmètre s'arrête là.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Passage à l'échelle** (gros corpus, latence, persistance, mises à jour) → un vrai moteur : [[Elasticsearch]] / OpenSearch.
-- Besoin de **vitesse** → [[bm25s]] (scores pré-calculés, matrices creuses) est nettement plus rapide.
-- Recherche **sémantique** (synonymes, paraphrases) → [[sentence-transformers]] + index vectoriel.
+| Prendre si | Écarter si |
+|---|---|
+| Étage lexical / sparse d'un retrieval hybride à petite ou moyenne échelle | Dormant : dernière release en 2022, périmètre minimal — aucune évolution à en attendre |
+| Prototyper de la recherche d'information sans monter un moteur | Tout en mémoire, sans index persistant ni mise à jour incrémentale : inadapté aux gros volumes |
+| Baseline BM25 pour jauger un retrieval dense | La tokenisation est entièrement à fournir (découpage, minuscules, stop-words) — rien n'est fait automatiquement |
+| | Passage à l'échelle : gros corpus, latence, persistance, mises à jour → [[Elasticsearch]] |
+| | Recherche sémantique (synonymes, paraphrases) → [[sentence-transformers]] et un index vectoriel |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add rank-bm25`.
-- **Single-node, en mémoire** ; tout le corpus tient en RAM, recalcul à chaque session.
-- Tokenisation **à fournir soi-même** (split, minuscules, stop-words).
+- Installation — `uv add rank-bm25` ; aucune dépendance lourde
+- Point d'entrée — import Python : `BM25Okapi(corpus_tokenise)`, puis `get_scores(requete)`
+- Prérequis — la tokenisation, à écrire soi-même en amont
+- Exécution — mono-nœud, tout en mémoire ; le corpus est rechargé et recalculé à chaque session
+- Coût — gratuit, licence Apache-2.0
 
-## Pièges
+## Écosystème
 
-- **Dormant** : dernière release en 2022, périmètre minimal — ne pas en attendre d'évolutions.
-- Tout **en mémoire**, sans index persistant ni mise à jour incrémentale : inadapté aux gros volumes.
-- Qualité = qualité de la **tokenisation** fournie ; rien n'est fait automatiquement.
-
-## Alternatives
+### Alternatives
 
 - [[bm25s]] — Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
 
-À l'échelle, lui préférer un moteur lexical ([[Elasticsearch]], cf. *Liens*).
+## Ressources
 
-## Liens
+- Dépôt — https://github.com/dorianbrown/rank_bm25 — il tient lieu de documentation
 
-- [[BM25]] — l'algorithme qu'il implémente.
-- [[Recherche d'information]] · [[Hybrid retrieval]] — ses usages.
-- [[Elasticsearch]] — BM25 indexé et distribué, pour la production.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Repo : https://github.com/dorianbrown/rank_bm25
+## Voir aussi
+
+- [[BM25]] — l'algorithme qu'il implémente
+- [[Recherche d'information]] — le cadre général
+- [[Hybrid retrieval]] — l'usage typique, en étage lexical
+- [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier
+- [[Comparatif - NLP|Comparatif — NLP]] — la brique vue depuis le versant NLP

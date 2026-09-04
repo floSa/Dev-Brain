@@ -17,44 +17,57 @@ url_repo: https://github.com/xhluca/bm25s
 
 # bm25s
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
 
-Implémentation de [[BM25]] qui **pré-calcule tous les scores à l'indexation** et les stocke dans des **matrices creuses SciPy**. Au moment de la requête, scorer le corpus revient à une multiplication creuse : on gagne **des ordres de grandeur** sur les implémentations Python pures comme [[rank-bm25]], tout en restant une simple bibliothèque (pas de serveur). Variantes Okapi BM25, BM25L, BM25+, ATIRE, Lucene. Tokeniseur intégré (stop-words, stemming Snowball optionnel).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Étage **lexical / sparse** d'un [[Hybrid retrieval|retrieval hybride]] où la **latence compte**.
-- Corpus de quelques milliers à quelques millions de documents tenant sur une machine, avec besoin de requêtes rapides.
-- Baseline BM25 sérieuse pour jauger un retrieval dense, sans monter un moteur.
-- Index à **persister** (`save` / `load`) et recharger en mémoire-mappée pour démarrage instantané.
+Implémentation de BM25 qui **pré-calcule tous les scores à l'indexation** et les range dans des
+matrices creuses SciPy. À la requête, scorer le corpus se réduit à une multiplication creuse :
+on gagne des ordres de grandeur sur une implémentation Python pure, tout en restant une simple
+bibliothèque — aucun serveur, aucun index distant. Les variantes Okapi BM25, BM25L, BM25+,
+ATIRE et Lucene sont disponibles, et un tokeniseur est fourni (stop-words, stemming Snowball
+optionnel).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Passage à l'échelle distribuée**, persistance transactionnelle, mises à jour incrémentales → un vrai moteur : [[Elasticsearch]] / OpenSearch.
-- Prototype jetable sans enjeu de vitesse → [[rank-bm25]] suffit et a une API encore plus minimale.
-- Recherche **sémantique** (synonymes, paraphrases) → [[sentence-transformers]] + index vectoriel.
+| Prendre si | Écarter si |
+|---|---|
+| Étage lexical / sparse d'un retrieval hybride où la latence compte | Le gros de la dépense est à l'indexation, pas à la requête : sur très gros corpus, c'est elle qu'il faut dimensionner |
+| Corpus de quelques milliers à quelques millions de documents tenant sur une machine | Pas de mise à jour incrémentale fine — ajouter des documents revient en pratique à réindexer |
+| Baseline BM25 sérieuse pour jauger un retrieval dense, sans monter un moteur | La qualité tient à la tokenisation : stop-words et stemming sont à régler pour la langue cible |
+| Index à persister (`save` / `load`) et recharger en mémoire-mappée, pour un démarrage instantané | Passage à l'échelle distribuée, persistance transactionnelle, mises à jour incrémentales → [[Elasticsearch]] |
+| | Recherche sémantique (synonymes, paraphrases) → [[sentence-transformers]] et un index vectoriel |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite ; `uv add bm25s`. Dépend de NumPy / SciPy ; stemming optionnel via `PyStemmer`.
-- **Single-node, en mémoire** ; l'index creux peut être sauvegardé sur disque et rechargé en mémoire-mappée (faible empreinte au chargement).
-- Tokenisation fournie par la lib (configurable) ou à remplacer par la sienne.
+- Installation — `uv add bm25s` ; stemming optionnel via `PyStemmer`
+- Point d'entrée — import Python : indexation du corpus tokenisé, puis `retrieve()` ; tokeniseur fourni ou remplacé par le sien
+- Prérequis — NumPy et SciPy ; le corpus tokenisé tient en mémoire le temps de l'indexation
+- Exécution — mono-nœud, en process ; l'index creux se sauvegarde sur disque et se recharge en mémoire-mappée
+- Coût — gratuit, licence MIT
 
-## Pièges
+## Écosystème
 
-- Le gros de la dépense est à l'**indexation** (pré-calcul des scores) ; la requête est quasi gratuite — dimensionner en conséquence sur très gros corpus.
-- Pas de mise à jour incrémentale fine : ajouter des documents implique en pratique de réindexer.
-- Qualité = qualité de la **tokenisation** ; bien régler stop-words et stemming pour la langue cible.
-
-## Alternatives
+### Alternatives
 
 - [[rank-bm25]] — Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 
-## Liens
+## Ressources
 
-- [[BM25]] — l'algorithme qu'il implémente.
-- [[Recherche d'information]] · [[Hybrid retrieval]] — ses usages.
-- [[Elasticsearch]] — BM25 indexé et distribué, pour la production.
-- [[Ranking metrics]] — pour mesurer la qualité du classement produit.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Doc : https://bm25s.github.io/ · Repo : https://github.com/xhluca/bm25s
+- Documentation — https://bm25s.github.io/
+- Dépôt — https://github.com/xhluca/bm25s
+
+## Voir aussi
+
+- [[BM25]] — l'algorithme qu'il implémente
+- [[Recherche d'information]] — le cadre général
+- [[Hybrid retrieval]] — l'usage typique, en étage lexical
+- [[Ranking metrics]] — pour mesurer la qualité du classement produit
+- [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier
+- [[Comparatif - NLP|Comparatif — NLP]] — la brique vue depuis le versant NLP

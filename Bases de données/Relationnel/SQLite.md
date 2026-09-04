@@ -17,36 +17,42 @@ url_repo: https://github.com/sqlite/sqlite
 
 # SQLite
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 
-Moteur SQL **embarqué** : pas de serveur, pas de processus à administrer — la base entière tient dans un seul fichier, lu et écrit en process par une bibliothèque C. Transactions ACID, très fiable, le moteur de base de données le plus déployé au monde (navigateurs, mobiles, embarqué). Code source dans le domaine public.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Stockage local d'une application (desktop, mobile, CLI, embarqué).
-- Tests, prototypes, fixtures — une base jetable sans infra.
-- Fichier d'échange relationnel autonome, ou cache structuré sur disque.
-- Charge à dominante lecture, un seul écrivain à la fois.
+Moteur SQL **embarqué** : aucun serveur, aucun processus à administrer — la base entière tient
+dans un seul fichier, lu et écrit en process par une bibliothèque C liée à l'application. Les
+transactions sont ACID, le format de fichier est stable et portable d'une machine à l'autre.
+C'est le moteur de base de données le plus déployé au monde : navigateurs, téléphones,
+systèmes embarqués — partout où la donnée reste locale au process qui l'écrit.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Accès concurrent en écriture par plusieurs clients réseau → [[Postgres]] ou [[MySQL]].
-- Forte volumétrie distribuée ou haute disponibilité → [[CockroachDB]].
-- Besoin d'un serveur central partagé entre services.
+| Prendre si | Écarter si |
+|---|---|
+| Stockage local d'une application (desktop, mobile, CLI, embarqué) | Un seul écrivain à la fois, avec verrou sur toute la base : inadapté au write-heavy concurrent |
+| Tests, prototypes, fixtures — une base jetable, sans infra | Typage dynamique (« type affinity ») laxiste : les contraintes sont plus souples qu'attendu |
+| Fichier d'échange relationnel autonome, ou cache structuré sur disque | Aucune gestion d'utilisateurs ni de droits réseau — la sécurité se réduit aux droits du fichier |
+| Charge à dominante lecture | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Pas de déploiement : bibliothèque liée à l'application, base = fichier `.db` sur disque.
-- Concurrence d'écriture sérialisée ; le mode WAL améliore la lecture concurrente.
-- Gratuit, domaine public ; variantes serveur/réseau via projets tiers (Turso/libSQL, rqlite).
+- Installation — rien à installer côté Python, `sqlite3` est dans la bibliothèque standard ; ailleurs, une bibliothèque C à lier
+- Point d'entrée — une base = un fichier `.db` ouvert en process ; SQL standard, CLI `sqlite3`
+- Prérequis — aucun serveur, aucun compte, aucun port : les droits du fichier suffisent
+- Exécution — dans le process appelant ; écritures sérialisées, le mode WAL améliore la lecture concurrente
+- Coût — gratuit, code dans le domaine public ; variantes serveur/réseau par des projets tiers (Turso/libSQL, rqlite)
 
-## Pièges
+## Écosystème
 
-- Un seul écrivain à la fois : verrou sur toute la base, pas adapté au write-heavy concurrent.
-- Typage dynamique (« type affinity ») laxiste — contraintes plus souples qu'attendu.
-- Pas de gestion d'utilisateurs ni de droits réseau : sécurité = droits du fichier.
-
-## Alternatives
+### Alternatives
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
 - [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
@@ -54,8 +60,12 @@ Moteur SQL **embarqué** : pas de serveur, pas de processus à administrer — l
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 - [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- Doc : https://www.sqlite.org/docs.html
+- Documentation — https://www.sqlite.org/docs.html
+- Dépôt — https://github.com/sqlite/sqlite
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases relationnelles]] — ce qui départage les moteurs du dossier

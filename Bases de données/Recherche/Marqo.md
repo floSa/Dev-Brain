@@ -19,44 +19,53 @@ url_repo: https://github.com/marqo-ai/marqo
 
 # Marqo
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
 
-Moteur de **recherche vectorielle end-to-end** (Apache-2.0) : contrairement à une base vectorielle classique, Marqo **génère lui-même les embeddings** (texte *et* image) à l'indexation comme à la requête, via une seule **API HTTP** — pas d'outil de vectorisation tiers à brancher. C'est sa promesse de « tensor search » multimodale clé en main. **Statut critique** : le **projet open-source est déprécié** et **ne reçoit plus de mises à jour** ; Marqo a pivoté vers sa **plateforme commerciale** de recherche et de découverte produit pour l'e-commerce (marqo.ai). À ne plus retenir pour un nouveau déploiement open-source.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python/Java | open-source | self-hébergé ou managé · mono-nœud | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Quasi exclusivement en **maintenance d'un existant** déjà bâti sur Marqo open-source.
-- Évaluation du **produit commercial** Marqo pour un cas d'usage e-commerce (search & discovery) — hors périmètre du moteur OSS décrit ici.
-- Pour un nouveau projet → préférer une alternative maintenue ci-dessous.
+Moteur de recherche vectorielle **end-to-end** : contrairement à une base vectorielle classique,
+Marqo **génère lui-même les embeddings** — texte *et* image — à l'indexation comme à la
+requête, derrière une seule **API HTTP**. Aucun outil de vectorisation tiers à brancher, aucun
+pipeline d'inférence à tenir : c'est sa promesse de « tensor search » multimodale clé en main,
+et c'est aussi ce qui le couple au modèle qu'il embarque. L'éditeur a depuis réorienté son
+effort vers une offre commerciale de recherche et de découverte produit pour l'e-commerce.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Tout nouveau projet open-source** : moteur non maintenu, pas de correctifs de sécurité.
-- Recherche + vectoriel maintenue à grande échelle → [[Vespa]] ou [[Elasticsearch]].
-- Recherche sémantique Python embarquée → [[txtai]].
-- Embedding maîtrisé côté application + base vectorielle dédiée → [[Qdrant]], [[Weaviate]].
+| Prendre si | Écarter si |
+|---|---|
+| Maintenance d'un existant déjà bâti sur Marqo open-source | Tout nouveau projet open-source : le moteur n'est plus maintenu et ne reçoit aucun correctif de sécurité — risque de conformité en production |
+| Évaluation du produit commercial pour un cas d'usage e-commerce (search & discovery) | L'inférence intégrée couple le moteur au choix de modèle et à sa charge GPU : en changer n'est pas anodin |
+| Indexation multimodale texte + image sans pipeline d'embedding à monter | Le pivot e-commerce oriente le produit commercial vers un cas d'usage précis : l'adéquation est à vérifier avant tout engagement |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host OSS : conteneur Docker, exécution en service ; **non maintenu** désormais.
-- Managé : plateforme commerciale Marqo (e-commerce), facturation à l'usage.
-- Coût dominé par l'inférence des embeddings (CPU/GPU) en plus du stockage de l'index.
+- Installation — conteneur Docker en self-host ; la plateforme commerciale est un service de l'éditeur
+- Point d'entrée — une seule API HTTP : indexation et requête, l'embedding compris
+- Prérequis — CPU ou GPU pour l'inférence des embeddings, en plus du stockage de l'index
+- Exécution — self-hébergé ou managé, mono-nœud
+- Coût — gratuit sous Apache-2.0 pour le moteur OSS, plateforme commerciale facturée à l'usage ; la dépense dominante est l'inférence des embeddings
 
-## Pièges
+## Écosystème
 
-- **Déprécié / non maintenu** : pas de patch de sécurité — risque de conformité en production.
-- L'inférence intégrée simplifie l'usage mais **couple** le moteur au choix de modèle et à sa charge GPU.
-- Le pivot e-commerce oriente le produit commercial vers un cas d'usage précis — vérifier l'adéquation.
-
-## Alternatives
+### Alternatives
 
 - [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
 - [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
 - [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
-## Liens
+## Ressources
 
-- [[Recherche d'information]] — le cadre général de la recherche.
-- [[Bases de données vectorielles]] — le versant vectoriel (Marqo y ajoute l'inférence intégrée).
-- [[Comparatif - Moteurs de recherche]] — comparatif de la catégorie.
-- Doc (dépôt) : https://github.com/marqo-ai/marqo
+- Dépôt — https://github.com/marqo-ai/marqo — il tient lieu de documentation
+
+## Voir aussi
+
+- [[Recherche d'information]] — le cadre général de la recherche
+- [[Bases de données vectorielles]] — le versant vectoriel, auquel Marqo ajoute l'inférence intégrée
+- [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier

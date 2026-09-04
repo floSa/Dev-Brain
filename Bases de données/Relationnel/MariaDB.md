@@ -19,36 +19,43 @@ url_repo: https://github.com/MariaDB/server
 
 # MariaDB
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
 
-Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec une **gouvernance communautaire** (MariaDB Foundation) et une licence 100 % open-source (GPL). Largement compatible avec MySQL (protocole, dialecte) tout en ajoutant ses propres moteurs (Aria, ColumnStore) et fonctionnalités. Souvent un remplacement transparent de MySQL.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Besoin MySQL avec garantie open-source et indépendance vis-à-vis d'Oracle.
-- Migration depuis MySQL en conservant les outils et le dialecte familiers.
-- Fonctions propres utiles : moteur colonne (ColumnStore), clustering Galera.
-- Distributions Linux où MariaDB est devenu le paquet `mysql` par défaut.
+Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, piloté depuis par la
+MariaDB Foundation. Il reste largement compatible — même protocole filaire, même dialecte, mêmes
+clients — et ajoute ses propres moteurs de stockage (Aria, le moteur colonne ColumnStore) ainsi
+que le clustering synchrone Galera. Dans la plupart des cas, il remplace MySQL sans que
+l'application s'en aperçoive ; c'est d'ailleurs le paquet `mysql` par défaut de plusieurs
+distributions Linux.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Compatibilité stricte avec les dernières fonctions MySQL d'Oracle → [[MySQL]].
-- Types riches et extensions avancées → [[Postgres]].
-- Scale horizontal distribué multi-région natif → [[CockroachDB]].
+| Prendre si | Écarter si |
+|---|---|
+| Besoin MySQL avec une gouvernance indépendante d'Oracle | Divergence croissante avec MySQL : compatibilité forte, mais plus totale (fonctions, JSON, réplication) |
+| Migration depuis MySQL en conservant outils et dialecte familiers | Un outil qui cible une version MySQL précise oblige à vérifier la parité de version |
+| Fonctions propres utiles : moteur colonne ColumnStore, clustering synchrone Galera | Le moteur de stockage est un choix structurant (InnoDB transactionnel, Aria, ColumnStore) — le défaut ne convient pas partout |
+| Distributions Linux où MariaDB est devenu le paquet `mysql` par défaut | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (Docker, paquet) ou managé (SkySQL, Azure Database for MariaDB, déclinaisons cloud).
-- Scaling vertical + réplicas ; clustering synchrone via Galera.
-- Gratuit (GPL) ; offres entreprise/support via MariaDB plc.
+- Installation — paquet système ou image Docker ; managé (SkySQL, déclinaisons cloud)
+- Point d'entrée — serveur SQL sur le port 3306, protocole et dialecte MySQL ; les clients et pilotes MySQL fonctionnent tels quels
+- Prérequis — un serveur à administrer ; le moteur de stockage se choisit à la création du schéma
+- Exécution — un primaire plus des réplicas ; clustering synchrone multi-maître via Galera
+- Coût — gratuit sous GPL ; offres de support entreprise via MariaDB plc
 
-## Pièges
+## Écosystème
 
-- Divergence croissante avec MySQL : compatibilité forte mais plus totale (fonctions, JSON, réplication).
-- Choisir le bon moteur de stockage selon l'usage (InnoDB transactionnel vs Aria vs ColumnStore).
-- Vérifier la parité de version quand un outil cible une version MySQL précise.
-
-## Alternatives
+### Alternatives
 
 - [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
@@ -56,8 +63,12 @@ Fork de MySQL créé par ses auteurs d'origine après le rachat par Oracle, avec
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 - [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- Doc : https://mariadb.com/kb/en/documentation/
+- Documentation — https://mariadb.com/kb/en/documentation/
+- Dépôt — https://github.com/MariaDB/server
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases relationnelles]] — ce qui départage les moteurs du dossier
