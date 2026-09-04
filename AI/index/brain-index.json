@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 759,
+  "count": 760,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -66,6 +66,7 @@
       "BMAD",
       "Cline",
       "Comparatif - Assistants de code IA",
+      "Comparatif - Automatisation no-code",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
       "Context engineering",
@@ -1584,6 +1585,7 @@
     "low-code": [
       "Activepieces",
       "Automatisation no-code",
+      "Comparatif - Automatisation no-code",
       "Comparatif - Scraping",
       "Dify",
       "Flowise",
@@ -1648,6 +1650,7 @@
       "Agents de code",
       "Assistants",
       "Cline",
+      "Comparatif - Automatisation no-code",
       "Graphify",
       "Headroom",
       "Hermes Agent",
@@ -2022,6 +2025,7 @@
       "Airflow",
       "Automatisation no-code",
       "ClearML",
+      "Comparatif - Automatisation no-code",
       "Comparatif - Orchestrateurs ML",
       "Comparatif - Orchestrateurs data",
       "Dagster",
@@ -3120,6 +3124,26 @@
         "low-code",
         "orchestration",
         "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Automatisation no-code/Comparatif - Automatisation no-code.md",
+      "nom": "Comparatif - Automatisation no-code",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "automation/no-code",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "low-code",
+        "orchestration",
+        "agents",
+        "mcp"
       ],
       "alternatives": null,
       "complements": null,
