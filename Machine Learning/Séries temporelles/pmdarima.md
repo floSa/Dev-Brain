@@ -17,44 +17,56 @@ url_repo: https://github.com/alkaline-ml/pmdarima
 
 # pmdarima
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 
-pmdarima (ex-pyramid-arima) apporte à Python l'équivalent de la fonction **auto.arima de R** : `auto_arima` choisit automatiquement les ordres $(p,d,q)(P,D,Q)$ d'un (S)ARIMA par tests de racine unitaire (différenciation) et minimisation d'un critère d'information. Il **enveloppe statsmodels** (SARIMAX) derrière une interface familière à scikit-learn (`fit` / `predict`, pipelines, transformations), avec variables exogènes et intervalles de prédiction.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Obtenir un **AutoARIMA** sur **une** série (ou quelques-unes) sans régler les ordres à la main.
-- Baseline statistique interprétable, avec diagnostics de résidus et intervalles de confiance.
-- Pipelines `pmdarima` (Box-Cox, termes de Fourier pour la saisonnalité, différenciation) à la scikit-learn.
-- Rester proche de statsmodels tout en automatisant la boucle Box-Jenkins (cf. [[ARIMA SARIMA]]).
+pmdarima (ex-pyramid-arima) porte en Python l'`auto.arima` de R : `auto_arima` choisit les
+ordres $(p,d,q)(P,D,Q)$ d'un SARIMA par tests de racine unitaire pour la différenciation, puis
+minimisation d'un critère d'information sur un espace restreint par la recherche *stepwise* de
+Hyndman-Khandakar. Il enveloppe statsmodels (SARIMAX) derrière une interface familière à
+scikit-learn — `fit` / `predict`, pipelines, Box-Cox, termes de Fourier — avec variables
+exogènes, diagnostics de résidus et intervalles de prédiction. L'ajustement se fait série par
+série, sans vectorisation.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Beaucoup** de séries à ajuster vite → [[statsforecast]] (AutoARIMA compilé Numba, des ordres de grandeur plus rapide).
-- Comparer plusieurs familles (stats / ML / DL) sous une API unique → [[darts]].
-- Non-linéarités fortes, parc de séries, covariables riches → modèles globaux ML/DL ([[neuralforecast]]).
+| Prendre si | Écarter si |
+|---|---|
+| AutoARIMA sur une série, ou quelques-unes, sans régler les ordres à la main | Un ajustement par série, non vectorisé : la lenteur devient rédhibitoire dès que les séries se multiplient |
+| Baseline statistique interprétable, avec diagnostics de résidus et intervalles | `m`, la période saisonnière, est à fournir et conditionne tout : 12 en mensuel annuel, 7 en journalier hebdomadaire |
+| Pipelines à la scikit-learn : Box-Cox, termes de Fourier, différenciation | `stepwise=True` par défaut peut manquer l'optimum global ; la recherche exhaustive, elle, coûte cher |
+| Rester proche de statsmodels tout en automatisant la boucle Box-Jenkins | Hypothèses ARIMA héritées : modèle linéaire, série à stationnariser au préalable → [[Stationarity]] |
+| | Non-linéarités fortes, parc de séries, covariables riches : le terrain des modèles globaux → [[neuralforecast]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; `uv add pmdarima`. Rien à héberger.
-- Cython + statsmodels / NumPy / SciPy ; **single-node** (CPU). La recherche `stepwise` (Hyndman-Khandakar) restreint l'espace exploré pour rester rapide sur une série.
+- Installation — `uv add pmdarima`
+- Point d'entrée — API Python `pmdarima.auto_arima(...)`, et `pmdarima.pipeline.Pipeline` pour enchaîner les transformations
+- Prérequis — statsmodels, NumPy et SciPy ; extension Cython compilée, embarquée dans les roues
+- Exécution — CPU, mono-machine, une série à la fois
+- Coût — gratuit, MIT ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Lenteur** dès que les séries se multiplient : un ajustement par série, non vectorisé — d'où statsforecast à l'échelle.
-- `m` (période saisonnière) est **à fournir** et conditionne tout : `m=12` mensuel annuel, `m=7` journalier hebdomadaire…
-- `stepwise=True` par défaut : plus rapide mais peut manquer l'optimum global (la recherche exhaustive, elle, est coûteuse).
-- Hérite des hypothèses ARIMA : modèle **linéaire**, série à stationnariser (cf. [[Stationarity]]).
-
-## Alternatives
+### Alternatives
 
 - [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
 - [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
 
-## Liens
+## Ressources
 
-- [[ARIMA SARIMA]] — le modèle sous-jacent ; pmdarima en automatise la sélection (AutoARIMA).
-- [[Forecasting framing]] — cadrer horizon, exogènes et évaluation avant d'ajuster.
-- [[statsforecast]] — l'AutoARIMA moderne à grande échelle (même rôle, bien plus rapide).
-- [[darts]] — API unifiée qui propose aussi AutoARIMA.
-- Doc : https://alkaline-ml.com/pmdarima/
+- Documentation — https://alkaline-ml.com/pmdarima/
+- Dépôt — https://github.com/alkaline-ml/pmdarima
+
+## Voir aussi
+
+- [[ARIMA SARIMA]] — la notion : le modèle dont pmdarima automatise la sélection
+- [[Forecasting framing]] — cadrer horizon, exogènes et évaluation avant d'ajuster
+- [[Comparatif - Forecasting]] — ce qui départage les briques du dossier
