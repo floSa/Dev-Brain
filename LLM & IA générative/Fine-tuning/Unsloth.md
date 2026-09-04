@@ -17,50 +17,61 @@ url_repo: https://github.com/unslothai/unsloth
 
 # Unsloth
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Fine-tuning de LLM ~2× plus rapide avec 70-80 % de VRAM en moins via des kernels Triton sur mesure — LoRA/QLoRA et GRPO sur un seul GPU grand public, sans perte de précision.
 
-Unsloth réécrit les passes critiques du fine-tuning en **kernels Triton sur mesure** (attention, autograd, opérations LoRA) pour entraîner un LLM **~2× plus vite avec 70-80 % de VRAM en moins**, sans approximation ni perte de précision. Concrètement : fine-tuner en [[PEFT]] (LoRA/QLoRA, [[Quantization]] 4-bit dynamique) un modèle de plusieurs dizaines de milliards de paramètres sur **un seul GPU grand public** (RTX 4090/5090). L'API reste celle de [[HuggingFace]] et de [[TRL]] : on charge un `FastLanguageModel`, le reste du code de training ne change quasiment pas. Supporte aussi le full fine-tuning, la FP8, le GRPO ([[RLHF and DPO]], [[RL for LLMs]]) et l'export GGUF pour l'inférence locale.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Mémoire / vitesse serrées** : fine-tuner le plus gros modèle possible sur 1 GPU (laptop, Colab, station perso).
-- **LoRA / QLoRA** rapides, ou GRPO économe en VRAM pour le RL de raisonnement.
-- Boucle d'itération courte : prototyper un fine-tune en quelques heures sur du matériel modeste.
-- Exporter en **GGUF / 4-bit** pour servir le modèle en local ensuite.
+Unsloth réécrit les passes critiques du fine-tuning en **kernels Triton sur mesure** —
+attention, autograd, opérations LoRA — pour entraîner **~2× plus vite avec 70 à 80 % de VRAM en
+moins**, sans approximation ni perte de précision. Concrètement, cela met un modèle de
+plusieurs dizaines de milliards de paramètres sur **un seul GPU grand public**. L'API reste
+celle de Hugging Face et de TRL : on charge un `FastLanguageModel`, le reste du code
+d'entraînement ne change quasiment pas. Couvre aussi le full fine-tuning, la FP8, le GRPO, et
+l'export GGUF pour servir le modèle en local ensuite.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Entraînement multi-GPU / multi-nœuds** à grande échelle → [[Axolotl]] ou [[LLaMA-Factory]] (DeepSpeed/FSDP), ou [[TRL]] + `accelerate`. La version open-source vise le **single-GPU**.
-- On veut un pipeline **100 % déclaratif** sans toucher au code Python → [[Axolotl]] / [[LLaMA-Factory]].
-- Architecture non supportée : la couverture est large (500+ modèles) mais pas universelle — vérifier le modèle visé.
+| Prendre si | Écarter si |
+|---|---|
+| Mémoire ou vitesse serrées : faire tenir le plus gros modèle possible sur un GPU — laptop, Colab, station perso | **Multi-GPU bridé** dans la version open-source : ne pas compter dessus pour passer à l'échelle horizontale |
+| LoRA et QLoRA rapides, ou GRPO économe en VRAM pour le RL de raisonnement | Le gain dépend du **modèle et de la config** : les 2× et 80 % annoncés sont des cas favorables, à mesurer sur le sien |
+| Boucle d'itération courte : prototyper un fine-tune en quelques heures sur du matériel modeste | **Couplage CUDA / Triton / torch** sensible : les mises à jour cassent parfois l'installation — épingler les versions |
+| Exporter en GGUF ou 4-bit pour servir le modèle en local ensuite | Il **patche en profondeur** `transformers` et TRL : un décalage de version d'une de ces bibliothèques désactive les optimisations silencieusement |
+| | Architecture non supportée : la couverture est large (500+ modèles) mais pas universelle — vérifier le modèle visé |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source, gratuit ; `uv add unsloth`. Cœur sous Apache-2.0 (l'UI optionnelle Unsloth Studio est en AGPL-3.0).
-- Rien à héberger ; coût = un GPU. Compile des kernels Triton à l'install → dépendance à la version CUDA.
-- Single-node par conception : tout le gain vient de l'optimisation **sur une carte**.
+- Installation — `uv add unsloth` ; les kernels Triton se compilent à l'installation, d'où la dépendance à la version de CUDA
+- Point d'entrée — import Python : `FastLanguageModel`, puis le code d'entraînement Hugging Face / TRL habituel
+- Prérequis — un GPU NVIDIA, et des versions de `transformers`, TRL et torch accordées à celle d'Unsloth
+- Exécution — en bibliothèque, mono-nœud par conception : tout le gain vient de l'optimisation **sur une carte**
+- Coût — gratuit ; cœur sous Apache-2.0, l'interface optionnelle Unsloth Studio étant en AGPL-3.0. La dépense est le GPU
 
-## Pièges
+## Écosystème
 
-- **Couplage CUDA / Triton / torch** sensible : les mises à jour cassent parfois l'install, épingler les versions.
-- Le gain VRAM dépend du **modèle et de la config** : les chiffres annoncés (2×, 80 %) sont des cas favorables, à mesurer.
-- Multi-GPU bridé en OSS : ne pas compter dessus pour passer à l'échelle horizontale.
-- Patche en profondeur transformers/TRL → un décalage de version d'une de ces libs peut désactiver les optimisations silencieusement.
-
-## Alternatives
+### Alternatives
 
 - [[TRL]] — Bibliothèque de post-training de Hugging Face — trainers prêts à l'emploi (SFT, reward modeling, DPO, GRPO, PPO) au-dessus de Transformers ; la brique de référence pour fine-tuner et aligner un LLM par code.
 - [[Axolotl]] — Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.
 - [[LLaMA-Factory]] — Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.
 - [[Tunix]] — Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.
 
-Nuance : Unsloth est une **couche d'accélération** au-dessus de TRL/transformers, pas un cadre de pilotage. On le combine d'ailleurs avec eux ; on le préfère seul quand la contrainte dominante est le GPU unique.
+## Ressources
 
-## Liens
+- Documentation — https://unsloth.ai/docs
+- Dépôt — https://github.com/unslothai/unsloth
 
-- [[PEFT]] — LoRA/QLoRA, le cœur de cible d'Unsloth.
-- [[Quantization]] — 4-bit dynamique qui rend QLoRA possible sur petit GPU.
-- [[SFT]] · [[RLHF and DPO]] · [[GRPO]] · [[RL for LLMs]] — méthodes supportées.
-- [[TRL]] · [[HuggingFace]] — API et trainers qu'Unsloth optimise.
-- [[Comparatif - Fine-tuning LLM]] — vue d'ensemble des outils de fine-tuning.
-- Doc : https://unsloth.ai/docs
+## Voir aussi
+
+- [[Fine-tuning]] — le hub du dossier
+- [[Comparatif - Fine-tuning LLM]] — ce qui départage les outils du dossier
+- [[PEFT]] — LoRA et QLoRA, son cœur de cible
+- [[Quantization]] — le 4-bit dynamique qui rend QLoRA possible sur petit GPU
+- [[SFT]] · [[RLHF and DPO]] · [[GRPO]] · [[RL for LLMs]] — les méthodes supportées
+- [[HuggingFace]] — l'API et les trainers qu'il optimise

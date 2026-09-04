@@ -19,36 +19,44 @@ url_repo: https://github.com/ggml-org/llama.cpp
 
 # llama.cpp
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
 
-Moteur d'inférence LLM écrit en **C/C++** au-dessus de la bibliothèque de tenseurs **ggml**, conçu pour tourner partout avec un minimum de dépendances. C'est la référence de l'inférence **sur CPU et GPU grand public** : il introduit le format **GGUF** (poids + métadonnées dans un seul fichier) et une **quantization agressive** (K-quants, importance matrix, de 2 à 8 bits) qui fait tenir des modèles de plusieurs milliards de paramètres dans la RAM/VRAM d'une machine ordinaire. Backends multiples (CUDA, Metal, Vulkan, ROCm, CPU AVX). Livre des binaires (`llama-cli`, `llama-server` avec API OpenAI-compatible) et sert de socle bas niveau à [[Ollama]], [[LM Studio]] et la plupart des outils locaux.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Faire tourner un LLM sur **CPU**, Apple Silicon ou GPU grand public, voire des cibles embarquées.
-- Maîtriser finement la **quantization** (format GGUF, niveau de bits, imatrix) pour le compromis qualité/mémoire.
-- Embarquer l'inférence dans un binaire **portable et sans dépendances lourdes** (pas de runtime Python).
-- Comprendre / contrôler ce que des wrappers comme [[Ollama]] font en coulisses.
+Moteur d'inférence écrit au-dessus de la bibliothèque de tenseurs **ggml**, conçu pour tourner
+partout avec un minimum de dépendances. Il apporte le format **GGUF** — poids et métadonnées
+dans un seul fichier — et une **quantization agressive** (K-quants, *importance matrix*, de 2 à
+8 bits) qui fait tenir un modèle de plusieurs milliards de paramètres dans la mémoire d'une
+machine ordinaire. Backends CUDA, Metal, Vulkan, ROCm et CPU AVX, choisis **à la compilation**.
+C'est le socle bas niveau qu'Ollama, LM Studio et la plupart des outils locaux
+enveloppent, et il vise **une** machine.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Simplicité « une commande » et registre de modèles → [[Ollama]] (qui l'enveloppe).
-- Débit GPU maximal pour **beaucoup de requêtes concurrentes** en production → [[vLLM]], [[TGI]] ou [[SGLang]].
-- Serving distribué multi-GPU / multi-nœuds : llama.cpp vise une machine.
+| Prendre si | Écarter si |
+|---|---|
+| Faire tourner un LLM sur CPU, Apple Silicon ou GPU grand public, voire sur une cible embarquée | Un binaire compilé sans les flags du backend (CUDA, Metal, Vulkan) n'utilise pas le GPU — et ne le dit pas |
+| Maîtriser finement la quantization : format GGUF, niveau de bits, *importance matrix* | Quantization trop agressive : en Q2/Q3 la qualité se dégrade nettement |
+| Embarquer l'inférence dans un binaire portable, sans runtime Python | Cadence de publication quasi quotidienne : options et formats bougent, GGUF a déjà cassé la compatibilité |
+| Contrôler ou comprendre ce que les runtimes de plus haut niveau font en coulisses | Répartir un modèle sur plusieurs machines : le mode RPC est expérimental, ce n'est pas un serveur de production |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; compilation locale (CMake) ou binaires pré-compilés.
-- Self-host uniquement ; `llama-server` expose une API HTTP (dont un mode OpenAI-compatible).
-- Scaling **single-node** ; mode RPC expérimental pour répartir un modèle sur quelques machines, mais ce n'est pas un serveur de production scalable.
+- Installation — compilation locale par CMake, ou binaires pré-compilés par plateforme
+- Point d'entrée — les binaires `llama-cli` et `llama-server`, ce dernier exposant une API HTTP dont un mode OpenAI-compatible
+- Prérequis — un modèle au format GGUF ; pour le GPU, une compilation avec les flags du backend visé
+- Exécution — une machine, CPU ou GPU ; mode RPC expérimental pour répartir un modèle sur quelques machines
+- Coût — gratuit, licence MIT ; la dépense est celle du matériel
 
-## Pièges
+## Écosystème
 
-- Trouver le **bon niveau de quantization** est un compromis : trop agressif (Q2/Q3) dégrade nettement la qualité.
-- Les **backends GPU** demandent une compilation adaptée (flags CUDA/Metal/Vulkan) — un binaire CPU n'utilise pas le GPU.
-- Projet à **cadence très rapide** (releases quasi quotidiennes) : options et formats évoluent, GGUF a déjà cassé la compat par le passé.
-
-## Alternatives
+### Alternatives
 
 - [[Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
 - [[vLLM]] — Moteur de serving LLM haut débit (PagedAttention, continuous batching) — référence open-source du throughput GPU en production, API OpenAI-compatible et parallélisme tensoriel multi-GPU.
@@ -59,10 +67,14 @@ Moteur d'inférence LLM écrit en **C/C++** au-dessus de la bibliothèque de ten
 - [[TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
 - [[needle]] — Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.
 
-## Liens
+## Ressources
 
-- Socle d'inférence de [[Ollama]] (et d'autres runtimes locaux).
-- Modèles convertis au format GGUF depuis [[HuggingFace]].
-- [[Quantization]] agressive des poids (GGUF, K-quants, imatrix) — cœur du projet.
-- [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
-- Doc : https://github.com/ggml-org/llama.cpp/tree/master/docs
+- Documentation — https://github.com/ggml-org/llama.cpp/tree/master/docs
+- Dépôt — https://github.com/ggml-org/llama.cpp
+
+## Voir aussi
+
+- [[Inference optimization]] — la notion du dossier : ce que le moteur optimise
+- [[Comparatif - Exécution & serving LLM]] — ce qui départage les moteurs du dossier
+- [[Quantization]] — le mécanisme dont GGUF, les K-quants et l'*imatrix* sont la mise en œuvre
+- [[HuggingFace]] — d'où viennent les poids, convertis en GGUF
