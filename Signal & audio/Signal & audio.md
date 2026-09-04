@@ -30,7 +30,4 @@ tags: [signal-processing, wavelet, spectrogram, fourier, audio-classification]
 
 ### Briques
 - [[librosa]] — Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.
-
-### Comparatifs
-- [[Comparatif - Traitement du signal]]
 <!-- AUTO:END -->

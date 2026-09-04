@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 762,
+  "count": 763,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1048,6 +1048,7 @@
       "segment-anything"
     ],
     "fourier": [
+      "Comparatif - Traitement du signal",
       "STFT et spectrogramme",
       "Signal & audio",
       "Traitement",
@@ -2584,6 +2585,7 @@
       "Avro"
     ],
     "signal-processing": [
+      "Comparatif - Traitement du signal",
       "Filtrage numérique",
       "Ondelettes",
       "PyWavelets",
@@ -2603,6 +2605,7 @@
     ],
     "spectrogram": [
       "Classification audio par spectrogramme",
+      "Comparatif - Traitement du signal",
       "STFT et spectrogramme",
       "Signal & audio",
       "Traitement",
@@ -3034,6 +3037,7 @@
       "timm"
     ],
     "wavelet": [
+      "Comparatif - Traitement du signal",
       "Ondelettes",
       "PyWavelets",
       "Signal & audio",
@@ -20946,6 +20950,26 @@
         "spectrogram",
         "fourier",
         "audio-classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Comparatif - Traitement du signal.md",
+      "nom": "Comparatif - Traitement du signal",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "signal-processing",
+        "wavelet",
+        "spectrogram",
+        "fourier"
       ],
       "alternatives": null,
       "complements": null,

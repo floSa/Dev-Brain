@@ -40,4 +40,7 @@ tags: [signal-processing, fourier, spectrogram, wavelet, digital-filter]
 ### Briques
 - [[PyWavelets]] — Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.
 - [[scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
+
+### Comparatifs
+- [[Comparatif - Traitement du signal]]
 <!-- AUTO:END -->

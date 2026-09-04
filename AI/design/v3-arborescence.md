@@ -1126,9 +1126,12 @@ c'est la frontière de domaine.
   aucune ne porte `concept/signal`, et la valeur est retirée du vocabulaire. Aucune des
   5 ne parle d'audio : elles vont toutes en `signal/traitement`
 - [x] comparatif rattaché — `Comparatif - Traitement du signal`, dont le filtre de chemin
-  cassait au déplacement (cf. remontée 7 du lot 3). Il **reste au niveau du domaine** :
-  ses 3 membres enjambent les deux sous-domaines, `scipy.signal` et `PyWavelets` en
-  `signal/traitement`, `librosa` en `signal/audio`
+  cassait au déplacement (cf. remontée 7 du lot 3). Ses 3 membres enjambent les deux
+  sous-domaines, `scipy.signal` et `PyWavelets` en `signal/traitement`, `librosa` en
+  `signal/audio`. ~~Il reste au niveau du domaine~~ — **descendu dans « Traitement/ » au
+  lot 5, le 2026-09-06** : la page porte `signal/traitement`, majorité stricte 2 contre 1,
+  et `check_arbo` en dérive le dossier. Le lot 5 supprime le choix libre que l'absence de
+  `categorie:` sur un `.base` laissait (remontée 12)
 - [ ] fiches au nouveau gabarit — lot 6
 
 **Traitement/** — `signal/traitement` — 7 pages
@@ -1428,8 +1431,10 @@ avec l'arbre. Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
 
 - [x] `[c]` Comparatif - Frameworks CLI — **rangé** dans « Outils de développement/ » ;
       `file.hasTag("cli")` remplacé par `categorie == "devtools/cli"` (2 membres)
-- [x] `[c]` Comparatif - Traitement du signal — **rangé** dans « Signal & audio/ » ;
-      clause de chemin remplacée par `role == "brique"` (3 membres)
+- [x] `[c]` Comparatif - Traitement du signal — **rangé** dans « Signal & audio/ » au
+      lot 3 ; clause de chemin remplacée par `role == "brique"` (3 membres). **Descendu
+      dans « Signal & audio/Traitement/ » au lot 5**, quand la page a porté
+      `signal/traitement`
 - [x] `[c]` Comparatif - Frontends web légers — **réparé** (`role == "brique"`, 5 membres)
       puis **rangé** dans « Interfaces & apps data/ » le 2026-09-05, par arbitrage de
       floSa : trois de ses cinq membres y vivent (Streamlit, Gradio, Dash), FastAPI et

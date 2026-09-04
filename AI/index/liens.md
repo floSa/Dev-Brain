@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 762 pages actives.
+> 763 pages actives.
 
 ## Par page
 
@@ -663,7 +663,7 @@
 ### librosa  ·  brique
 - tags : `signal-processing`, `spectrogram`, `feature-engineering`
 - liens sortants : [[Comparatif - Traitement du signal]], [[HuggingFace]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Comparatif - Traitement du signal]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
@@ -1213,7 +1213,7 @@
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
@@ -1303,7 +1303,7 @@
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[numpy]]
-- liens entrants : [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
+- liens entrants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
@@ -1905,6 +1905,11 @@
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
 - liens entrants : [[Suivi d'expériences]]
 
+### Comparatif - Traitement du signal  ·  comparatif
+- tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`
+- liens sortants : [[Comparatif - Traitement du signal.base]], [[PyWavelets]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[PyWavelets]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+
 ### Comparatif - Visualisation  ·  comparatif
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `declarative-viz`
 - liens sortants : [[Comparatif - Visualisation.base]], [[Dash]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
@@ -2177,7 +2182,7 @@
 
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
-- liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens sortants : [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 - liens entrants : [[Data Science]], [[ML Engineering]]
 
 ### Socle  ·  hub
@@ -2247,7 +2252,7 @@
 
 ### Traitement  ·  hub
 - tags : `signal-processing`, `fourier`, `spectrogram`, `wavelet`, `digital-filter`
-- liens sortants : [[Filtrage numérique]], [[Machine Learning]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Machine Learning]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 - liens entrants : [[Signal & audio]]
 
 ### Vectoriel  ·  hub
@@ -3919,7 +3924,7 @@
 - `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
-- `fourier` : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
+- `fourier` : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
 - `game-theory` : Apprentissage par renforcement, Counterfactual Regret Minimization, OpenSpiel, Pattern - Moteur de jeu pur + IA séparée, Théorie des jeux
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
@@ -4087,9 +4092,9 @@
 - `sequence-labeling` : Comparatif - NLP, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : Avro  — pas de page concept dédiée
-- `signal-processing` : Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
+- `signal-processing` : Comparatif - Traitement du signal, Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
-- `spectrogram` : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
+- `spectrogram` : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
@@ -4131,7 +4136,7 @@
 - `video-generation` : Video generation
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
-- `wavelet` : Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
+- `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
 - `web-framework` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
 - `web-scraping` : Comparatif - Scraping, Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
@@ -4203,7 +4208,7 @@
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
-- `fourier` (porté par : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
+- `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
@@ -4299,7 +4304,7 @@
 - `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, RAG & retrieval, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
-- `spectrogram` (porté par : Classification audio par spectrogramme, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
+- `spectrogram` (porté par : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn)
@@ -4327,7 +4332,7 @@
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
-- `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio, Traitement)
+- `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)
