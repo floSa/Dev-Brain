@@ -27,44 +27,46 @@ url_repo: https://github.com/milvus-io/milvus
 | Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle distribuée, conçue pour les très gros volumes (milliards de vecteurs). Architecture découplée stockage/calcul, choix large d'index (HNSW, IVF, DiskANN), parallélisme massif. Le poids lourd quand l'échelle dépasse ce qu'un nœud unique encaisse.
+Base vectorielle distribuée, conçue pour les très gros volumes — jusqu'au milliard de
+vecteurs. Son architecture découple le stockage du calcul, qui se dimensionnent alors
+séparément, et elle offre un choix large d'index : HNSW, IVF, DiskANN pour tenir sur disque.
+En contrepartie, elle expose des **niveaux de cohérence** qu'il faut comprendre avant de
+choisir, parce qu'ils décident de ce qu'une lecture voit d'une écriture récente.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Très gros volumes (centaines de millions à milliards de vecteurs).
-- Besoin de scaler horizontalement le stockage et le calcul indépendamment.
-- Choix fin de l'index selon le compromis mémoire / rappel / latence (DiskANN pour tenir sur disque).
-- Équipe prête à opérer une infra distribuée (etcd, object storage, message queue).
+| Prendre si | Écarter si |
+|---|---|
+| Très gros volumes, de la centaine de millions au milliard de vecteurs | Stack distribuée lourde — etcd, stockage objet, file de messages : hors de proportion pour un petit volume |
+| Scaler horizontalement le stockage et le calcul indépendamment | Métrique et type d'index figés par collection |
+| Choix fin de l'index selon le compromis mémoire / rappel / latence (DiskANN pour tenir sur disque) | Coût opérationnel réel en cluster : plusieurs composants à exploiter, pas un binaire |
+| Équipe prête à exploiter une infrastructure distribuée | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Volume modéré ou self-host simple → [[Qdrant]] (un binaire, bien plus léger).
-- Déléguer l'embedding et le schéma à la base → [[Weaviate]].
-- Du Postgres déjà en place → [[pgvector]].
+- Installation — mode standalone via Docker pour tester ; mode cluster sur Kubernetes en production
+- Point d'entrée — service interrogé depuis un client ; le type d'index se choisit à la création de la collection
+- Prérequis — en cluster : etcd, un stockage objet et Pulsar ou Kafka
+- Exécution — self-hébergé (standalone ou cluster) ou managé sur Zilliz Cloud ; distribué
+- Coût — gratuit en self-host ; Zilliz Cloud payant ; en cluster, le coût réel est opérationnel
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host : mode standalone (Docker) pour tester, mode cluster (Kubernetes + etcd + object storage + Pulsar/Kafka) en production.
-- Managé : Zilliz Cloud.
-- Coût opérationnel non négligeable en cluster : plusieurs composants à exploiter.
-
-## Pièges
-
-- Stack distribuée lourde : ne pas partir en cluster pour un petit volume.
-- Cohérence éventuelle (consistency levels) à comprendre selon le cas d'usage.
-- Métrique et type d'index figés par collection.
-
-## Alternatives
+### Alternatives
 
 - [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://milvus.io/docs
+- Documentation — https://milvus.io/docs
+- Dépôt — https://github.com/milvus-io/milvus
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

@@ -25,42 +25,44 @@ url_repo: https://github.com/lancedb/lancedb
 | Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle **embarquée** (in-process, comme SQLite) bâtie sur **Lance**, un format de fichier colonnaire pensé pour l'IA : accès aléatoire rapide, stockage de données profondément imbriquées (texte, images, vidéo, embeddings) dans une même table. Cœur en **Rust**, API Python / TypeScript / Rust. Les données vivent dans des fichiers Lance posés sur le **disque local ou un stockage objet** (S3, GCS) — pas de serveur à exploiter. Au-delà du simple index ANN, c'est un **lakehouse multimodal** : on y stocke et requête vecteurs *et* données brutes côte à côte. Open-source (Apache 2.0) ; LanceDB Cloud / Enterprise pour la version managée.
+Base vectorielle **embarquée** — in-process, comme SQLite — bâtie sur **Lance**, un format de
+fichier colonnaire pensé pour l'IA : accès aléatoire rapide, et données profondément imbriquées
+(texte, images, vidéo, embeddings) stockées dans une même table. Le cœur est en Rust, les API
+en Python, TypeScript et Rust. Les données vivent dans des fichiers Lance posés sur un disque
+local ou un stockage objet, sans serveur à exploiter. C'est plus qu'un index : un lakehouse
+multimodal, où vecteurs et données brutes se requêtent côte à côte.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- RAG ou recherche multimodale embarqués, du notebook à un service, sans déployer d'infra.
-- Données lourdes et imbriquées (images, audio, vidéo + embeddings) à stocker et requêter ensemble.
-- Versionnage des tables et stockage sur S3/GCS, séparation stockage/compute « sans serveur ».
-- Feature store / dataset d'entraînement où l'accès aléatoire rapide compte.
+| Prendre si | Écarter si |
+|---|---|
+| RAG ou recherche multimodale embarqués, du notebook au service, sans déployer d'infra | Format Lance jeune et en évolution rapide : épingler la version et prévoir les migrations de format |
+| Données lourdes et imbriquées — images, audio, vidéo et embeddings — à stocker et requêter ensemble | Embarquée : un seul process écrit proprement, il n'y a pas de multi-écrivains concurrents |
+| Versionnage des tables et stockage sur S3 ou GCS, stockage et calcul séparés | Performance suspendue à la latence du stockage objet ; sans cache local, les requêtes répétées la paient |
+| Feature store ou dataset d'entraînement où l'accès aléatoire rapide compte | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Très gros volumes, haute concurrence, exploitation distribuée → [[Milvus]] ou [[Qdrant]] (serveurs dédiés).
-- Du Postgres déjà en place et besoin modeste → [[pgvector]] ; zéro infra 100 % managé → [[Pinecone]].
-- Simple prototype RAG textuel sans dimension multimodale → [[Chroma]] suffit ; juste un index ANN brut → [[Faiss]].
+- Installation — `uv add lancedb`
+- Point d'entrée — API Python, TypeScript ou Rust, en mode embarqué
+- Prérequis — un disque local ou un stockage objet (S3, GCS, Azure)
+- Exécution — dans le process appelant ; single-node côté open-source, l'échelle passant par le stockage objet, calcul séparé du stockage. Index IVF-PQ et HNSW
+- Coût — gratuit en self-host (Apache 2.0) ; LanceDB Cloud (serverless) et LanceDB Enterprise, payants
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host gratuit (Apache 2.0) : `pip install lancedb`, mode embarqué, données en fichiers Lance sur disque ou stockage objet (S3/GCS/Azure).
-- Managé : LanceDB Cloud (serverless) et LanceDB Enterprise, payants.
-- Index ANN : IVF-PQ et HNSW ; single-node côté OSS, l'échelle passe par le stockage objet (compute séparé du stockage).
-
-## Pièges
-
-- Format Lance jeune et en évolution rapide : épingler la version, prévoir les migrations de format.
-- Embarqué : pas de partage concurrent multi-écrivains comme un serveur — un seul process écrit proprement.
-- Performance liée à la latence du stockage objet (S3) ; un cache local change tout sur les requêtes répétées.
-- Métrique de distance et modèle d'embedding à garder cohérents, comme pour tout vector store.
-
-## Alternatives
+### Alternatives
 
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://lancedb.com/documentation/
+- Documentation — https://lancedb.com/documentation/
+- Dépôt — https://github.com/lancedb/lancedb
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

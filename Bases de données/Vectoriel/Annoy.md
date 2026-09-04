@@ -25,44 +25,46 @@ url_repo: https://github.com/spotify/annoy
 | Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-*Approximate Nearest Neighbors Oh Yeah* — bibliothèque C++ (bindings Python) de Spotify, à base de **forêts d'arbres aléatoires**. Particularité : l'index est un fichier **mmap** partageable entre process et chargeable sans tout mettre en RAM. Licence Apache 2.0. A longtemps servi Discover Weekly ; Spotify recommande désormais Voyager (basé sur HNSW) pour les nouveaux usages — Annoy reste maintenu mais figé.
+*Approximate Nearest Neighbors Oh Yeah*, de Spotify : une recherche de plus proches voisins
+fondée sur des **forêts d'arbres aléatoires**. Sa particularité est le format de l'index —
+un fichier **mmap**, partageable entre plusieurs process et chargeable sans tout monter en
+RAM. Le nombre d'arbres arbitre la taille contre la précision : trop peu, et le rappel
+s'effondre. Annoy a longtemps servi Discover Weekly ; Spotify oriente désormais les nouveaux
+usages vers Voyager, fondé sur HNSW.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Index **statique** construit une fois puis chargé en lecture seule par plusieurs process (mmap).
-- Empreinte mémoire serrée : le fichier sur disque évite de tout charger.
-- Besoin simple, dépendances minimales, API très réduite.
+| Prendre si | Écarter si |
+|---|---|
+| Index **statique**, construit une fois puis chargé en lecture seule par plusieurs process | Index figé après `build()` : ajouter un vecteur impose de reconstruire l'index entier |
+| Empreinte mémoire serrée : le fichier mmap évite de tout charger | Rappel en retrait à temps égal face aux implémentations HNSW plus récentes |
+| Besoin simple, dépendances minimales, API très réduite | Projet en maintenance : ce n'est plus un choix par défaut pour du neuf |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Nouveau projet cherchant le meilleur débit/rappel → [[hnswlib]] (base de Voyager) ou [[ScaNN]].
-- Index **mutable** (ajouts/suppressions fréquents) : Annoy fige l'index après `build()`.
-- Besoin de persistance riche, filtrage, CRUD, API → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
-- Prototype RAG clé en main → [[Chroma]].
+- Installation — `uv add annoy`
+- Point d'entrée — import Python, bindings sur la bibliothèque C++
+- Prérequis — CPU uniquement, aucune dépendance lourde
+- Exécution — dans le process appelant, single-node ; persistance native par le fichier mmap
+- Coût — gratuit, licence Apache 2.0
 
-## Déploiement & coût
+## Écosystème
 
-- Gratuit, open-source (Apache 2.0). `pip install annoy`.
-- In-process, single-node, CPU uniquement. Persistance native via le fichier mmap.
-
-## Pièges
-
-- Index **immuable** : il faut le reconstruire entièrement pour ajouter des vecteurs.
-- Précision en retrait par rapport à HNSW/ScaNN à temps égal (état de l'art dépassé).
-- Le nombre d'arbres arbitre taille/précision : trop peu = rappel faible.
-- Projet en maintenance : ne pas en faire un choix par défaut pour du neuf.
-
-## Alternatives
+### Alternatives
 
 - [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
 - [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://pypi.org/project/annoy/
+- Documentation — https://pypi.org/project/annoy/
+- Dépôt — https://github.com/spotify/annoy
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

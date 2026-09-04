@@ -27,44 +27,49 @@ url_repo: https://github.com/qdrant/qdrant
 | Plateforme Rust | open-source | self-hébergé ou managé · distribué | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** puissant (filtres appliqués pendant la recherche, pas après), quantification scalaire/binaire. Le défaut moderne pour un vector store self-hosted sérieux.
+Base vectorielle écrite en Rust, servie derrière une API REST et gRPC. Elle stocke les
+vecteurs avec un *payload* — les métadonnées arbitraires attachées à chaque point — et sait
+appliquer un filtre sur ce payload pendant le parcours de l'index, pas après coup sur le
+résultat. Les réglages HNSW (`m`, `ef_construct`, `ef`) sont exposés et se règlent selon le
+compromis rappel / latence visé ; la quantification scalaire ou binaire réduit la RAM
+consommée par l'index. C'est un service à exploiter : il tourne, il se dimensionne, il se
+sauvegarde.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- RAG / recherche sémantique en production, self-hosted.
-- Filtrage métier critique combiné au vector search (« docs de ce client uniquement, score > 0.8 »).
-- Garder l'embedding et la logique côté application.
-- Hybrid search dense + sparse, avec contrôle fin des paramètres HNSW.
+| Prendre si | Écarter si |
+|---|---|
+| RAG ou recherche sémantique en production, self-hébergée | La métrique de distance est figée à la création de la collection (Cosine, Dot, Euclidean) et le changement est irréversible |
+| Filtrage métier critique combiné à la recherche vectorielle (« docs de ce client, score > 0.8 ») | La quantification binaire fait gagner de la mémoire, mais peut coûter du rappel sur de petits embeddings |
+| Garder la production des embeddings et la logique métier côté application | Aucun module d'embedding : les vecteurs arrivent déjà calculés, c'est à l'application de les produire |
+| Recherche hybride dense + sparse, avec contrôle fin des paramètres HNSW | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Déléguer l'embedding et le schéma à la base → [[Weaviate]].
-- Du Postgres déjà en place et besoin modeste → [[pgvector]].
-- POC en RAM dans un script → un index [[Faiss]] direct suffit.
+- Installation — binaire unique, ou image Docker
+- Point d'entrée — API REST ou gRPC ; gRPC est le plus rapide des deux
+- Prérequis — RAM dimensionnée sur l'index HNSW ; la quantification est le levier pour la réduire
+- Exécution — self-hébergé ou managé (Qdrant Cloud) ; le mode distribué, sharding et réplication compris, est dans l'open-source
+- Coût — gratuit en self-host ; Qdrant Cloud est payant, et le cluster managé l'est aussi
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host : binaire unique ou Docker ; mode distribué (sharding + réplication) en open-source.
-- Managé : Qdrant Cloud ; le mode cluster managé est payant.
-- gRPC plus rapide que REST ; quantification pour réduire la RAM.
-
-## Pièges
-
-- Métrique de distance figée à la création de la collection (Cosine / Dot / Euclidean), irréversible.
-- Paramètres HNSW (`m`, `ef_construct`, `ef`) à régler selon le compromis rappel / latence.
-- Quantification binaire : gain mémoire réel, mais perte de rappel possible sur petits embeddings.
-
-## Alternatives
+### Alternatives
 
 - [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://qdrant.tech/documentation/
+- Documentation — https://qdrant.tech/documentation/
+- Dépôt — https://github.com/qdrant/qdrant
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Index ANN — internes]] — les réglages HNSW que cette base expose
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

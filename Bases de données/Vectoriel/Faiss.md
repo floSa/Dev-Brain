@@ -25,47 +25,49 @@ url_repo: https://github.com/facebookresearch/faiss
 | Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Bibliothèque C++ (bindings Python) de Meta FAIR pour la recherche de similarité et le clustering de vecteurs denses. Pas un serveur : un **index en mémoire** que l'on appelle in-process. Référence du domaine — beaucoup de vector stores l'utilisent en interne. Licence MIT, support GPU (CUDA / ROCm) optionnel.
+Bibliothèque de Meta FAIR pour la recherche de similarité et le clustering de vecteurs
+denses, écrite en C++ et pilotée depuis Python. L'index vit dans la mémoire du process et
+s'appelle in-process : il n'y a pas de serveur, pas de réseau, et rien qui tourne entre deux
+appels. Tout le compromis se joue sur le type d'index choisi — `IndexFlat` est exact mais
+lent, `IVF` est rapide mais exige un `train()` sur un échantillon représentatif avant le
+premier ajout, `PQ` compresse la mémoire au prix du rappel. Ce choix n'est pas un réglage
+fin : mal posé, il rend le rappel ou la latence catastrophiques.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Recherche ANN à fort volume où la latence et le rappel se règlent finement (IVF, PQ, HNSW, OPQ…).
-- Pipeline ML/recherche où l'index vit déjà dans le process Python, sans base externe.
-- Besoin de GPU pour indexer/chercher des dizaines de millions de vecteurs.
-- Brique bas niveau d'un moteur maison (on gère soi-même persistance et métadonnées).
+| Prendre si | Écarter si |
+|---|---|
+| Recherche ANN à fort volume, rappel et latence à régler finement (IVF, PQ, HNSW, OPQ) | Aucune persistance : sérialiser l'index sur disque et le recharger est à la charge de l'application |
+| L'index vit déjà dans le process Python, sans base externe à exploiter | Aucune métadonnée, aucun filtrage : rien pour restreindre une recherche à un sous-ensemble |
+| Indexer et chercher des dizaines de millions de vecteurs sur GPU | Suppressions et mises à jour limitées, et la limite dépend du type d'index retenu |
+| Brique bas niveau d'un moteur maison, dont on gère soi-même persistance et métadonnées | Ni API ni multi-tenant : Faiss s'appelle dans un process, il ne se déploie pas en service |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Besoin de persistance, filtrage métadonnées, CRUD, API ou multi-tenant → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
-- Du Postgres déjà en place → [[pgvector]].
-- Zéro infra à gérer → [[Pinecone]].
-- Prototype RAG clé en main (collections + métadonnées sans code) → [[Chroma]].
+- Installation — `uv add faiss-cpu`, ou `faiss-gpu` pour la variante accélérée
+- Point d'entrée — import Python (`import faiss`), bindings sur la bibliothèque C++
+- Prérequis — CUDA ou ROCm pour la variante GPU ; rien de particulier côté CPU
+- Exécution — dans le process appelant, CPU ou GPU ; pas de serveur, pas de réseau
+- Coût — gratuit, licence MIT, aucune limite d'usage
 
-## Déploiement & coût
+## Écosystème
 
-- Gratuit, open-source (MIT). `pip install faiss-cpu` ou `faiss-gpu`.
-- Tourne dans le process : pas de serveur, pas de réseau. Persistance = sérialiser l'index sur disque soi-même.
-- GPU optionnel pour un gain massif sur gros volumes.
-
-## Pièges
-
-- Choix du type d'index non trivial : `IndexFlat` (exact, lent), `IVF` (rapide, à entraîner), `PQ` (compresse, perd du rappel). Mauvais choix = rappel ou latence catastrophiques.
-- Les index IVF/PQ demandent un `train()` sur un échantillon représentatif avant d'ajouter.
-- Pas de gestion des métadonnées ni de filtrage : à la charge de l'application.
-- Suppressions / mises à jour limitées selon le type d'index.
-
-## Alternatives
+### Alternatives
 
 - [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Index ANN — internes]] — internes des index (HNSW, IVF, PQ) que cette lib implémente.
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://faiss.ai
+- Documentation — https://faiss.ai
+- Dépôt — https://github.com/facebookresearch/faiss
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Index ANN — internes]] — les familles d'index (HNSW, IVF, PQ) que cette bibliothèque implémente
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

@@ -25,45 +25,47 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 | Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-*Scalable Nearest Neighbors* — bibliothèque C++ (API Python, op TensorFlow optionnelle) de Google Research. Sa nouveauté : la **quantification anisotrope**, qui préserve les composantes parallèles des vecteurs (celles qui comptent pour le produit scalaire) et pousse le compromis débit/rappel à l'état de l'art sur du *maximum inner product search*. Open-source (Apache 2.0), optimisée AVX (x86).
+*Scalable Nearest Neighbors*, de Google Research : une bibliothèque C++ avec une API Python et
+une opération TensorFlow optionnelle. Son apport est la **quantification anisotrope**, qui
+préserve les composantes parallèles des vecteurs — celles qui pèsent dans le produit scalaire —
+et pousse le compromis débit/rappel à l'état de l'art sur le *maximum inner product search*.
+Le code est optimisé pour les jeux d'instructions AVX du x86, ce qui explique une bonne part
+de ses résultats.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Recherche par produit scalaire (MIPS) sur gros volumes où le débit/rappel prime.
-- Pipeline Python/TensorFlow recherchant le top de la performance ANN CPU.
-- Cas où un bench montre que la quantification anisotrope bat HNSW/IVF.
+| Prendre si | Écarter si |
+|---|---|
+| Recherche par produit scalaire (MIPS) sur gros volumes, où le débit à rappel donné prime | Plateforme hors x86 ou sans AVX : gains moindres, voire compilation difficile |
+| Pipeline Python ou TensorFlow qui cherche le haut du panier en ANN sur CPU | Construction de l'index plus exigeante à régler — partitionnement et quantification — que HNSW |
+| Un bench montre que la quantification anisotrope bat HNSW ou IVF sur le jeu de données | Écosystème restreint : moins de tutoriels et un support communautaire plus mince |
+| | Vit dans le monorepo google-research : packaging et cadence moins « produit » qu'une bibliothèque dédiée |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Plateforme non x86 / sans AVX, ou besoin GPU large → [[Faiss]].
-- Intégration ultra-simple et incrémentale → [[hnswlib]].
-- Besoin de persistance, filtrage, CRUD, API ou scaling → un serveur : [[Qdrant]], [[Weaviate]], [[Milvus]].
-- Du Postgres déjà en place → [[pgvector]] ; prototype RAG clé en main → [[Chroma]].
+- Installation — `uv add scann` ; `scann[tf]` pour l'intégration TensorFlow, depuis la 1.4.0
+- Point d'entrée — API Python, ou opération TensorFlow optionnelle
+- Prérequis — x86 avec AVX ; CPU uniquement
+- Exécution — dans le process appelant, single-node ; pas de serveur
+- Coût — gratuit, licence Apache 2.0
 
-## Déploiement & coût
+## Écosystème
 
-- Gratuit, open-source (Apache 2.0). `pip install scann` (intégration TensorFlow via `scann[tf]` depuis 1.4.0).
-- In-process, single-node, CPU (optimisé AVX). Pas de serveur.
-
-## Pièges
-
-- Construction de l'index plus exigeante à régler (partitionnement + quantification) que HNSW.
-- Optimisé x86/AVX : gains moindres voire build difficile hors de cet environnement.
-- Écosystème plus restreint que Faiss (moins de tutoriels, support communautaire plus mince).
-- Vit dans le monorepo google-research : packaging et cadence moins « produit » qu'une lib dédiée.
-
-## Alternatives
+### Alternatives
 
 - [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
 - [[hnswlib]] — Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Index ANN — internes]] — internes des index ANN, dont la quantification anisotrope.
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://github.com/google-research/google-research/blob/master/scann/README.md
+- Documentation — https://github.com/google-research/google-research/blob/master/scann/README.md
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Index ANN — internes]] — les internes des index ANN, dont la quantification anisotrope
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

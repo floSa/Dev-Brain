@@ -26,33 +26,34 @@ url_repo: https://github.com/dbeaver/dbeaver
 | Application Java | open-core | Windows, macOS, Linux | — |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Client de base de données **universel** : un même outil pour la majorité des SGBD (Postgres, MySQL/MariaDB, Oracle, SQL Server, SQLite) et, en édition payante, les bases NoSQL (Mongo, Cassandra, Redis). Éditeur SQL avec complétion, navigateur de schéma, éditeur de données en grille, diagrammes ER. L'Edition Community est gratuite sous Apache 2.0.
+Client de base de données universel : un même outil parle à la majorité des SGBD —
+Postgres, MySQL et MariaDB, Oracle, SQL Server, SQLite — et, dans les éditions payantes, aux
+bases NoSQL comme Mongo, Cassandra ou Redis. Il apporte un éditeur SQL à complétion, un
+navigateur de schéma, un éditeur de données en grille et des diagrammes ER. C'est une
+application de bureau bâtie sur Eclipse RCP, pas un service : elle s'installe sur le poste,
+et le seul état qu'elle garde est celui de ses connexions.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Travailler sur plusieurs SGBD différents sans changer d'outil.
-- Besoin d'un client gratuit, multiplateforme, riche (export/import, diagrammes ER, génération de DDL).
-- Exploration ad hoc et requêtage SQL au quotidien.
+| Prendre si | Écarter si |
+|---|---|
+| Travailler sur plusieurs SGBD différents sans changer d'outil | L'application Java devient gourmande en mémoire sur de gros jeux de résultats |
+| Besoin d'un client gratuit et multiplateforme, riche en fonctions (export/import, diagrammes ER, génération de DDL) | |
+| Exploration ad hoc et requêtage SQL au quotidien | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Complétion SQL et refactoring de niveau IDE → [[DataGrip]].
-- Un seul moteur, console officielle pleinement intégrée → [[pgAdmin]] (Postgres), [[MySQL Workbench]] (MySQL).
-- Très léger et rapide sous Windows uniquement → [[HeidiSQL]].
+- Installation — installeur ou archive pour Windows, macOS et Linux
+- Point d'entrée — application de bureau : éditeur SQL, navigateur de schéma, grille de données, diagrammes ER
+- Prérequis — Windows, macOS ou Linux ; c'est une application Java bâtie sur Eclipse RCP
+- Exécution — sur le poste de travail, aucun service à héberger
+- Coût — Community gratuite sous Apache 2.0 ; Enterprise et Ultimate sont commerciales, et seules elles ouvrent le NoSQL et les bases cloud — c'est le modèle open-core
 
-## Bases & plateformes
+## Écosystème
 
-- Community (Apache 2.0) : bases relationnelles. Enterprise/Ultimate (commercial) : NoSQL, BDD cloud — modèle **open-core**.
-- Windows, macOS, Linux (application Java/Eclipse RCP).
-
-## Pièges
-
-- L'application Java peut être gourmande en mémoire sur de gros jeux de résultats.
-- Le support NoSQL (Mongo, Redis…) est réservé aux éditions payantes.
-
-## Alternatives
+### Alternatives
 
 - [[DataGrip]] — IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
 - [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
@@ -61,8 +62,12 @@ Client de base de données **universel** : un même outil pour la majorité des 
 - [[MongoDB Compass]] — Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.
 - [[Redis Insight]] — Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Clients de bases de données]] — comparatif des clients GUI
-- Doc : https://dbeaver.com/docs/dbeaver/
+- Documentation — https://dbeaver.com/docs/dbeaver/
+- Dépôt — https://github.com/dbeaver/dbeaver
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

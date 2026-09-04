@@ -27,45 +27,45 @@ url_repo:
 | SaaS | propriétaire | managé · serverless | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle entièrement managée, pionnière du secteur. Architecture serverless : les vecteurs vivent sur de l'object storage (S3) découplé du calcul, un pool élastique de processeurs sert les requêtes. Moteur propriétaire en Rust. Aucune infra à provisionner ni opérer — on écrit, on requête, le reste est invisible.
+Base vectorielle pionnière du secteur, servie comme un service et rien d'autre. L'architecture
+est serverless : les vecteurs vivent sur du stockage objet, découplé du calcul, et un pool
+élastique de processeurs sert les requêtes. Autour du magasin de vecteurs, l'éditeur fournit
+Pinecone Inference — embeddings et reranking hébergés — et Assistant, un RAG clé en main. On
+écrit, on requête ; tout le reste est invisible, y compris les réglages.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Zéro ops voulu : pas d'instance à dimensionner, pas de cluster à exploiter.
-- Scaling automatique du stockage et du débit sans intervention.
-- Multi-tenant fort : un namespace isolé par client, haute disponibilité sous SLA.
-- Brique managée de bout en bout : Pinecone Inference (embeddings + reranking hébergés), Assistant pour le RAG/agent clé en main.
+| Prendre si | Écarter si |
+|---|---|
+| Zéro ops voulu : ni instance à dimensionner, ni cluster à exploiter | Aucun paramètre d'index exposé : impossible d'arbitrer soi-même rappel contre latence |
+| Scaling automatique du stockage et du débit, sans intervention | Enfermement : pas de dépôt, pas de migration triviale, et la métrique est figée à la création de l'index |
+| Multi-tenant fort : un namespace isolé par client, haute disponibilité sous SLA | Facturation à l'usage : un gros débit de lecture peut surprendre |
+| Chaîne managée de bout en bout — Inference pour les embeddings et le reranking, Assistant pour le RAG | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Self-host, souveraineté ou refus de dépendre d'un SaaS → [[Qdrant]], [[Weaviate]] ou [[Milvus]].
-- Open-source exigé / contrôle bas niveau de l'index → mêmes alternatives.
-- Du Postgres déjà en place et volume modéré → [[pgvector]].
-- POC jetable de quelques milliers de vecteurs → un index [[Faiss]] en mémoire suffit.
+- Installation — rien à installer : le service est provisionné côté éditeur
+- Point d'entrée — le service, appelé depuis un client ; l'index se crée côté éditeur, métrique comprise
+- Prérequis — un des clouds servis : AWS, GCP ou Azure
+- Exécution — 100 % managé ; pas de self-host classique, le BYOC en préversion faisant tourner le data plane dans le cloud du client
+- Coût — à l'usage (stockage, lectures et écritures), aucun nœud payé à vide ; Dedicated Read Nodes pour un débit de lecture prévisible
 
-## Déploiement & coût
+## Écosystème
 
-- 100 % managé : pas de self-host classique (BYOC en preview fait tourner le data plane dans le cloud du client).
-- Serverless multi-cloud (AWS, GCP, Azure) ; facturation à l'usage (stockage + lectures/écritures), pas de nœud à payer à vide.
-- Charges de lecture intensives : Dedicated Read Nodes (DRN) pour des performances prévisibles.
-
-## Pièges
-
-- Lock-in propriétaire : pas de dépôt, pas de migration triviale, métrique figée à la création de l'index.
-- Coût serverless à surveiller sur gros débit de lecture — modèle à l'usage qui peut surprendre.
-- Pas de réglage fin des paramètres d'index (HNSW & co) : la base décide.
-
-## Alternatives
+### Alternatives
 
 - [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://docs.pinecone.io
+- Documentation — https://docs.pinecone.io
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

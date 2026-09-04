@@ -33,7 +33,8 @@ Règles DURES (bloquent) :
   - domaines ⊆ vocabulaire de Documentation/general/themes.md                 [R4]
   - alternatives réciproques (si A cite B, B cite A)
   - cible d'alternative absente de l'index → échec explicite, plus de silence  [R12]
-  - la section `## Alternatives` couvre toutes les cibles du frontmatter       [R11]
+  - la section Alternatives (`##` en v2, `###` sous `## Écosystème` en v3) couvre
+    toutes les cibles du frontmatter                                           [R11]
   - pitch réinjecté : la puce d'une cible listée en `alternatives:` commence par
     le `pitch:` courant de cette cible (normalisation `**` + espaces)          [R1]
   - aucun lien [[...]] mort, dans le corps ET dans le frontmatter              [R2]
@@ -148,7 +149,14 @@ FAMILLES_HEBERGEES = {"plateforme", "saas", "application"}
 SIZE_WARN = {"brique": 90, "notion": 200}
 LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
 RE_ROLE_HUB = re.compile(r"^role: hub\s*$", re.M)
-ALT_SECTION_RE = re.compile(r"\n## Alternatives\n(.*?)(?=\n## |\Z)", re.S)
+# La section des alternatives s'écrit `## Alternatives` en v2 et `### Alternatives`
+# sous `## Écosystème` en v3 (spec §6). Le lot 6 convertit les 337 fiches dossier par
+# dossier, en dix-sept conversations parallèles : les deux formes coexistent dans le
+# vault pendant toute la durée du lot, et le validateur doit rester vert des deux côtés
+# — sans quoi la première conversation qui convertit casse la branche des seize autres.
+# Le niveau de titre est donc élargi, et la borne de fin avec lui : une section `###`
+# s'arrête au `###` suivant (`Compléments`), pas au prochain `##`.
+ALT_SECTION_RE = re.compile(r"\n#{2,3} Alternatives\n(.*?)(?=\n#{2,3} |\Z)", re.S)
 ALT_BULLET_RE = re.compile(r"\s*-\s*\[\[([^\]|]+)(?:\|([^\]]+))?\]\]\s*[—-]\s*(.+)")
 # Caractères interdits dans un nom de fichier (Windows compris) : un `nom:` qui en
 # porte un ne PEUT pas être le nom de son fichier — exemption de R9.
@@ -630,7 +638,7 @@ def main() -> int:
             manquants = sorted(front_alts - en_section)
             if manquants:
                 hard.append(f"R11 — {path}: cible(s) du frontmatter absente(s) de "
-                            f"`## Alternatives` {manquants}")
+                            f"la section Alternatives {manquants}")
             for line in sec.splitlines():
                 m = ALT_BULLET_RE.match(line)
                 if not m:

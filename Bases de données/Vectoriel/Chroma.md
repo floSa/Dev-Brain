@@ -25,37 +25,35 @@ url_repo: https://github.com/chroma-core/chroma
 | Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle « batteries incluses » pensée pour le RAG. Contrairement aux index ANN nus (Faiss, hnswlib…), elle gère **collections, métadonnées, filtrage et persistance** avec une API minimale. S'utilise embarquée (in-process, comme SQLite) ou en mode client/serveur. Cœur réécrit en Rust, API Python/JS en façade. Open-source (Apache 2.0) ; Chroma Cloud offre une version managée serverless.
+Base vectorielle « batteries incluses » pensée pour le RAG. Là où un index ANN nu ne fournit
+que l'algorithme, elle gère **collections, métadonnées, filtrage et persistance** derrière une
+API minimale, avec HNSW comme index sous-jacent. Elle s'utilise embarquée dans le process,
+comme SQLite, ou en client/serveur — la même API dans les deux cas, ce qui permet de passer de
+l'un à l'autre sans réécrire l'appelant. Le cœur est en Rust, les façades en Python et
+JavaScript.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Prototype RAG : indexer des documents avec métadonnées et requêter en quelques lignes.
-- Petit à moyen volume, du notebook à un service modeste, sans déployer d'infra.
-- Besoin de collections + filtrage métadonnées sans gérer soi-même un index brut.
-- Passage progressif du mode embarqué au mode serveur sans changer d'API.
+| Prendre si | Écarter si |
+|---|---|
+| Prototype RAG : indexer des documents avec métadonnées et requêter en quelques lignes | Montée en charge : un très gros corpus ou une forte concurrence la mettent en difficulté |
+| Petit à moyen volume, du notebook à un service modeste, sans déployer d'infra | Le mode embarqué garde tout en local : pas de partage entre instances sans passer au mode serveur |
+| Collections et filtrage par métadonnées sans gérer soi-même un index brut | API en évolution rapide, avec des ruptures déjà survenues entre versions — épingler la version |
+| Passage progressif du mode embarqué au mode serveur sans changer d'API | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Gros volumes / haute concurrence / production exigeante → un serveur dédié : [[Qdrant]], [[Weaviate]], [[Milvus]].
-- Du Postgres déjà en place → [[pgvector]] ; zéro infra managé → [[Pinecone]].
-- Besoin seulement d'un index ANN brut dans un pipeline → [[Faiss]] ou [[hnswlib]].
+- Installation — `uv add chromadb`
+- Point d'entrée — API Python ou JavaScript ; mode embarqué in-process, ou serveur via Docker
+- Prérequis — rien en mode embarqué ; l'index ANN sous-jacent est un HNSW
+- Exécution — embarquée avec persistance sur disque, ou en serveur ; single-node côté open-source
+- Coût — gratuit en self-host (Apache 2.0) ; Chroma Cloud, serverless, payant à l'usage
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host gratuit (Apache 2.0) : `pip install chromadb`, mode embarqué (persistance sur disque) ou serveur via Docker.
-- Managé : Chroma Cloud, serverless, payant à l'usage.
-- Index ANN sous-jacent HNSW ; single-node côté OSS.
-
-## Pièges
-
-- Pensée pour le prototypage : monte mal en charge sur de très gros corpus / forte concurrence.
-- Le mode embarqué garde tout local → pas de partage multi-instances sans passer au mode serveur.
-- API en évolution rapide : des ruptures ont eu lieu entre versions, épingler la version.
-- Cohérence métrique / modèle d'embedding à surveiller comme pour tout vector store.
-
-## Alternatives
+### Alternatives
 
 - [[LanceDB]] — Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.
 - [[Faiss]] — Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
@@ -63,8 +61,12 @@ Base vectorielle « batteries incluses » pensée pour le RAG. Contrairement aux
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://docs.trychroma.com
+- Documentation — https://docs.trychroma.com
+- Dépôt — https://github.com/chroma-core/chroma
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

@@ -25,44 +25,45 @@ url_repo: https://github.com/pgvector/pgvector
 | Extension C | open-source | dans le moteur hôte, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité (`<->`, `<#>`, `<=>`). Le vector search vit dans Postgres : pas de service séparé, pas de double écriture, transactions ACID et jointures SQL gratuites. Le choix pragmatique quand du Postgres est déjà là.
+Extension qui ajoute à Postgres un type `vector` et ses opérateurs de similarité (`<->`,
+`<#>`, `<=>`). La recherche vectorielle vit alors dans la base métier : une seule source de
+vérité, des transactions ACID et des jointures SQL avec les tables existantes. Deux index sont
+disponibles et ne servent pas le même besoin — HNSW donne le meilleur rappel, IVFFlat se
+construit plus vite.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Postgres déjà présent dans le projet.
-- Volume modéré (de l'ordre de quelques dizaines de millions de vecteurs).
-- Filtrage relationnel important (jointures SQL avec les autres tables).
-- Une seule source de vérité ; cohérence transactionnelle entre données métier et embeddings.
+| Prendre si | Écarter si |
+|---|---|
+| Du Postgres est déjà présent dans le projet | Aucun Postgres dans le projet : en installer un pour cela seul est rarement gagnant |
+| Volume modéré, de l'ordre de quelques dizaines de millions de vecteurs | `maintenance_work_mem` à relever pour la création d'index, sinon elle est très lente |
+| Filtrage relationnel important : jointures SQL avec les autres tables | Filtrage combiné à l'ANN : le pre-filter exact est lent sur gros volumes, le post-filter coûte du rappel — les plans de requête sont à vérifier |
+| Une seule source de vérité, cohérence transactionnelle entre données métier et embeddings | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Très grande échelle ou très haut débit → [[Qdrant]].
-- Recherche hybride avancée clé en main → [[Weaviate]].
-- Aucun Postgres dans le projet : en installer un juste pour ça est rarement gagnant.
+- Installation — `CREATE EXTENSION vector` sur une instance Postgres existante
+- Point d'entrée — SQL : le type `vector` et les opérateurs `<->`, `<#>`, `<=>`
+- Prérequis — un Postgres en place, et `maintenance_work_mem` relevé le temps de créer l'index
+- Exécution — dans le moteur Postgres hôte ; disponible sur la plupart des Postgres managés (RDS, Cloud SQL, Supabase)
+- Coût — aucun coût d'infrastructure supplémentaire ; le dimensionnement est celui de Postgres, vertical et réplicas de lecture
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host : extension à activer sur une instance Postgres existante (`CREATE EXTENSION vector`).
-- Managé : disponible sur la plupart des Postgres managés (RDS, Cloud SQL, Supabase…).
-- Pas de coût d'infra supplémentaire ; scaling lié à Postgres (vertical + réplicas lecture).
-
-## Pièges
-
-- Index HNSW (meilleur rappel) vs IVFFlat (construction plus rapide) : choisir selon le besoin.
-- `maintenance_work_mem` à augmenter pour la création d'index, sinon très lent.
-- Filtrage + ANN : pre-filter exact (lent sur gros volumes) vs post-filter (perte de rappel) — vérifier les plans de requête.
-
-## Alternatives
+### Alternatives
 
 - [[Weaviate]] — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://github.com/pgvector/pgvector#readme
+- Documentation — https://github.com/pgvector/pgvector#readme
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

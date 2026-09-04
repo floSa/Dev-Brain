@@ -27,43 +27,45 @@ url_repo: https://github.com/weaviate/weaviate
 | Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Base vectorielle open-source en Go, pensée pour la production. Modules de vectorisation intégrés (la base peut produire elle-même les embeddings), recherche hybride dense+BM25 native, multi-tenancy de première classe.
+Base vectorielle écrite en Go, pensée pour la production. Elle embarque des **modules de
+vectorisation** : la base peut produire elle-même les embeddings, au lieu de les recevoir tout
+faits. La recherche hybride dense + BM25 est native, avec fusion des scores, et la
+multi-tenancy est de première classe — un namespace isolé par client. En contrepartie, le
+modèle est explicite : classes, propriétés et vectorizer se déclarent avant d'écrire.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Multi-tenancy fort : un namespace isolé par client.
-- Déléguer l'embedding à la base via ses modules, plutôt que le gérer côté application.
-- Recherche hybride (sémantique + mots-clés) avec fusion de scores.
-- Besoin d'un managé clé en main (Weaviate Cloud) ou d'un self-host qui scale horizontalement.
+| Prendre si | Écarter si |
+|---|---|
+| Multi-tenancy forte : un namespace isolé par client | Schéma à définir (classes, propriétés, vectorizer), et changer de vectorizer impose une recréation |
+| Déléguer l'embedding à la base via ses modules, plutôt que le gérer côté application | Ruptures entre versions majeures : lire les changelogs avant toute montée de version |
+| Recherche hybride, sémantique et mots-clés, avec fusion de scores | |
+| Managé clé en main, ou self-host qui scale horizontalement | |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Tout contrôler côté application (embedding maison, schéma minimal) → [[Qdrant]].
-- Du Postgres déjà en place et volume modéré → [[pgvector]].
-- POC jetable de quelques milliers de vecteurs → un index [[Faiss]] en mémoire suffit.
+- Installation — Docker, ou Kubernetes pour le mode distribué
+- Point d'entrée — le service ; le schéma se déclare avant la première écriture
+- Prérequis — RAM dimensionnée sur l'index HNSW ; la quantification réduit l'empreinte
+- Exécution — self-hébergé avec sharding et réplication, ou managé sur Weaviate Cloud (serverless ou cluster dédié)
+- Coût — gratuit en self-host, le coût réel étant celui de la RAM ; Weaviate Cloud facturé à l'usage
 
-## Déploiement & coût
+## Écosystème
 
-- Self-host : Docker / Kubernetes ; scaling distribué (sharding + réplication).
-- Managé : Weaviate Cloud (serverless ou cluster dédié), facturation à l'usage.
-- Coût dominé par la RAM de l'index HNSW ; la quantification réduit l'empreinte.
-
-## Pièges
-
-- Schéma à définir (classes, properties, vectorizer) ; changer de vectorizer impose une recréation.
-- Breaking changes entre versions majeures — lire les changelogs avant montée de version.
-
-## Alternatives
+### Alternatives
 
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
-## Liens
+## Ressources
 
-- [[Bases de données vectorielles]] — le concept (Wiki)
-- [[Comparatif - Bases vectorielles]] — comparatif des moteurs
-- Doc : https://weaviate.io/developers/weaviate
+- Documentation — https://weaviate.io/developers/weaviate
+
+## Voir aussi
+
+- [[Bases de données vectorielles]] — la notion du dossier
+- [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier
