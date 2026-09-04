@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[HuggingFace]]", "[[SetFit]]"]
 tags: [embeddings, semantic-search, retrieval, reranking, nlp]
 url_docs: https://www.sbert.net
 url_repo: https://github.com/huggingface/sentence-transformers
@@ -17,44 +17,63 @@ url_repo: https://github.com/huggingface/sentence-transformers
 
 # sentence-transformers
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.
 
-Framework de référence pour produire des **embeddings de phrases** (SBERT). Charge des centaines de modèles pré-entraînés et encode du texte (ou des images) en vecteurs denses comparables au cosinus, en quelques lignes. Fournit aussi les **cross-encoders** pour le [[Reranking|re-ranking]]. Maintenu par Hugging Face.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Produire des [[embeddings]] de phrases/documents pour recherche sémantique, [[RAG]], clustering, déduplication.
-- Étage **dense** d'un pipeline de [[Recherche d'information]].
-- [[Reranking]] avec un cross-encoder (BGE-reranker, mxbai…).
-- Fine-tuner un encodeur sur son domaine (perte contrastive, MultipleNegativesRankingLoss).
+Le framework de référence pour produire des **embeddings de phrases** (SBERT). Il charge des
+centaines de modèles pré-entraînés et encode du texte — ou des images — en vecteurs denses
+comparables au cosinus, en quelques lignes. Il fournit deux familles qui ne se substituent
+pas : les **bi-encoders**, dont les vecteurs se pré-calculent et s'indexent, et les
+**cross-encoders**, qui notent une paire requête-document sans rien pouvoir pré-calculer, et
+ne servent donc que sur le top-k d'un [[Reranking|re-ranking]]. Deux contraintes commandent
+l'usage : normaliser les vecteurs, et indexer puis requêter avec le **même modèle** — deux
+modèles donnent deux espaces incompatibles. Maintenu par Hugging Face.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Recherche purement **lexicale** sur mots exacts → [[rank-bm25]] ou un moteur ([[Elasticsearch]]).
-- Génération de texte : c'est de l'encodage, pas un LLM génératif.
-- Embeddings **managés** via API → fournisseurs cloud (OpenAI, Cohere, Voyage).
+| Prendre si | Écarter si |
+|---|---|
+| Produire des [[embeddings]] de phrases ou de documents : recherche sémantique, [[RAG]], clustering, déduplication | Recherche purement **lexicale** sur mots exacts → [[rank-bm25]], ou un moteur comme [[Elasticsearch]] |
+| Étage **dense** d'un pipeline de [[Recherche d'information]] | Un **cross-encoder ne se pré-calcule pas** : le réserver au top-k, jamais à l'indexation |
+| [[Reranking]] avec un cross-encoder — BGE-reranker, mxbai | Le modèle doit être **adapté à la langue et au domaine** : un multilingue générique dégrade sur un corpus spécialisé |
+| Fine-tuner un encodeur sur son domaine, par perte contrastive (`MultipleNegativesRankingLoss`) | Embeddings **managés** par API : c'est une alternative d'infrastructure hors brain — OpenAI, Cohere, Voyage |
+| | Génération de texte : c'est de l'encodage, pas un LLM génératif |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add sentence-transformers`.
-- **Single-node** ; GPU recommandé pour encoder du volume, CPU possible sur petits jeux.
-- S'appuie sur [[HuggingFace]] / [[PyTorch]] ; modèles tirés du Hub.
+- Installation — `uv add sentence-transformers`
+- Point d'entrée — API Python : `SentenceTransformer(...).encode(...)` pour les bi-encoders, `CrossEncoder` pour le re-ranking
+- Prérequis — un modèle du Hub adapté à la langue et au domaine ; le même de bout en bout, indexation et requête
+- Exécution — single-node ; GPU recommandé pour encoder du volume, CPU possible sur petits jeux
+- Coût — gratuit, Apache-2.0, rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Normaliser** les vecteurs (cosinus) et utiliser le **même modèle** pour indexer et requêter — espaces incompatibles sinon.
-- Choisir un modèle adapté à la **langue** et au domaine (multilingue vs anglais).
-- Cross-encoder ≠ bi-encoder : le premier ne se pré-calcule pas → réservé au top-k ([[Reranking]]).
+### Alternatives
 
-## Alternatives
+- Aucun substitut direct dans le brain : c'est la voie open-source de référence pour les embeddings locaux.
+- Embeddings managés par API — OpenAI, Cohere, Voyage : une alternative d'infrastructure, pas de bibliothèque (pas encore en fiche).
 
-Pas de substitut direct dans le brain : c'est la voie open-source de référence pour les embeddings locaux. Les embeddings **managés** (API OpenAI, Cohere, Voyage) sont une alternative d'infrastructure, hors brain.
+### Compléments
 
-## Liens
+- [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — le socle de modèles et le Hub d'où viennent les encodeurs.
+- [[SetFit]] — Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM — bâti dessus, pour la classification few-shot.
 
-- [[embeddings]] — ce qu'il produit.
-- [[Recherche d'information]] · [[Reranking]] · [[RAG]] — ses usages.
-- [[HuggingFace]] — socle modèles / Hub.
-- [[SetFit]] — few-shot classification bâti dessus.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Doc : https://www.sbert.net
+## Ressources
+
+- Documentation — https://www.sbert.net
+- Dépôt — https://github.com/huggingface/sentence-transformers
+
+## Voir aussi
+
+- [[embeddings]] — la notion : ce qu'il produit
+- [[Recherche d'information]] · [[Reranking]] · [[RAG]] — ses usages
+- [[PyTorch]] — le framework de calcul sous-jacent
+- [[Comparatif - NLP]] — ce qui départage les outils de la chaîne texte

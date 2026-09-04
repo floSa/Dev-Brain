@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[HuggingFace]]"]
 tags: [out-of-core, streaming, nlp, deep-learning]
 url_docs: https://huggingface.co/docs/datasets
 url_repo: https://github.com/huggingface/datasets
@@ -17,45 +17,62 @@ url_repo: https://github.com/huggingface/datasets
 
 # datasets
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub.
 
-Bibliothèque de l'écosystème [[HuggingFace]] pour **charger, traiter et partager** des jeux de données ML. Le cœur est un backend **Apache Arrow** : les données sont stockées sur disque dans un cache colonnaire **memory-mappé**, ce qui donne des lectures *zero-copy* sans saturer la RAM, même sur des jeux de plusieurs centaines de Go. `load_dataset("nom")` récupère un dataset du Hub (texte, image, audio, multimodal) en une ligne ; les transformations (`map`, `filter`, `cast`) sont vectorisées et mises en cache automatiquement. Le mode **streaming** (`streaming=True`) itère sans rien télécharger entièrement — indispensable pour les corpus de pré-entraînement.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Charger un jeu public** du Hub sans réécrire de loader : NLP, vision, audio.
-- **Traiter plus grand que la RAM** : Arrow memory-mappé + `map` batché ; streaming pour l'out-of-core pur.
-- **Alimenter un entraînement** [[PyTorch]] / `transformers` : `.with_format("torch")`, intégration directe avec le `Trainer`.
-- **Publier / versionner** un dataset privé ou public sur le Hub (Git/LFS).
+La bibliothèque de l'écosystème [[HuggingFace]] pour **charger, traiter et partager** des jeux
+de données ML. Son cœur est un backend **Apache Arrow** : les données vivent sur disque dans un
+cache colonnaire **memory-mappé**, d'où des lectures *zero-copy* qui ne saturent pas la RAM,
+même sur plusieurs centaines de Go. `load_dataset("nom")` récupère un jeu du Hub — texte,
+image, audio, multimodal — en une ligne, et les transformations (`map`, `filter`, `cast`) sont
+vectorisées et mises en cache automatiquement. Le mode **streaming** itère sans rien
+télécharger entièrement, au prix de l'accès aléatoire : plus de `len()`, et le `shuffle` se
+fait par buffer. Ce n'est pas un moteur de requête — ni jointures, ni group-by complexes.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Manipulation tabulaire analytique générale (jointures, group-by complexes) → [[Polars]] ou [[pandas]] (datasets n'est pas un moteur de requête).
-- Données qui tiennent en mémoire et restent dans un DataFrame métier : un Arrow/HF dataset ajoute une couche inutile.
-- Pipeline ELT / orchestration de données → [[Dagster]], [[Airflow]].
+| Prendre si | Écarter si |
+|---|---|
+| Charger un jeu public du Hub sans réécrire de loader : NLP, vision, audio | Manipulation tabulaire analytique — jointures, group-by complexes : ce n'est pas un moteur de requête → [[Polars]] ou [[pandas]] |
+| Traiter **plus grand que la RAM** : Arrow memory-mappé et `map` batché, streaming pour l'out-of-core pur | Le **cache** grossit vite et n'est jamais purgé seul : surveiller le disque, épingler une `revision=` pour la reproductibilité |
+| Alimenter un entraînement [[PyTorch]] ou `transformers` : `.with_format("torch")`, intégration directe au `Trainer` | En **streaming**, ni accès aléatoire ni `len()` : l'itération est séquentielle et le `shuffle` approximatif, par buffer |
+| Publier et versionner un dataset privé ou public sur le Hub, en Git/LFS | `trust_remote_code=True` **exécute un script de chargement distant** — à n'activer que pour des sources de confiance |
+| | Données qui tiennent en mémoire et restent dans un DataFrame métier : la couche Arrow est un coût sans contrepartie |
+| | Pipeline ELT ou orchestration de données → [[Dagster]], [[Airflow]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add datasets`. Rien à héberger.
-- S'appuie sur **PyArrow** ; conversions sans copie vers [[pandas]], [[Polars]], NumPy, PyTorch.
-- Le **Hub** (huggingface.co) héberge les datasets : accès public gratuit, stockage privé et gros volumes sur offres payantes.
-- Cache local (`~/.cache/huggingface/datasets`) memory-mappé : prévoir l'espace disque.
+- Installation — `uv add datasets`
+- Point d'entrée — `load_dataset("nom")`, puis `map` / `filter` / `cast` ; passer `batched=True` et régler `num_proc`, un `map` non batché étant lent
+- Prérequis — espace disque pour le cache memory-mappé (`~/.cache/huggingface/datasets`)
+- Exécution — single-node, appuyé sur PyArrow ; conversions sans copie vers [[pandas]], [[Polars]], NumPy, PyTorch
+- Coût — gratuit, Apache-2.0, rien à héberger côté bibliothèque ; le Hub est gratuit en accès public, payant pour le stockage privé et les gros volumes
 
-## Pièges
+## Écosystème
 
-- Le **cache** grossit vite et n'est pas purgé seul ; surveiller le disque, épingler une `revision=` pour la reproductibilité.
-- `trust_remote_code=True` sur certains datasets exécute un script de chargement distant — n'activer que pour des sources de confiance.
-- `map` non batché est lent : passer `batched=True` et ajuster `num_proc` pour paralléliser.
-- En streaming, pas d'accès aléatoire ni de `len()` : l'itération est séquentielle, le `shuffle` se fait par buffer.
+### Alternatives
 
-## Alternatives
+- Aucun substitut direct dans le brain : `datasets` couple un format (Arrow memory-mappé) à un hub de partage, créneau qu'aucune autre fiche n'occupe.
 
-Pas de substitut direct dans le brain : `datasets` couple un format (Arrow memory-mappé) à un hub de partage, créneau qu'aucune autre fiche n'occupe. Pour la seule manipulation tabulaire, voir [[Polars]] / [[pandas]] (cités en *Liens*).
+### Compléments
 
-## Liens
+- [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — la même stack, dont `datasets` est la brique données.
 
-- [[HuggingFace]] — bibliothèque sœur de `transformers` / `accelerate` dans la même stack.
-- [[accelerate]] · [[evaluate]] — compléments entraînement et métriques de l'écosystème HF.
-- [[PyTorch]] — `.with_format("torch")` pour alimenter un `DataLoader`.
-- [[Polars]] · [[pandas]] — conversions Arrow sans copie.
-- Doc : https://huggingface.co/docs/datasets
+## Ressources
+
+- Documentation — https://huggingface.co/docs/datasets
+- Dépôt — https://github.com/huggingface/datasets
+
+## Voir aussi
+
+- [[Machine Learning]] — le hub du domaine
+- [[accelerate]] · [[evaluate]] — les bibliothèques sœurs, entraînement distribué et métriques
+- [[PyTorch]] — `.with_format("torch")` pour alimenter un `DataLoader`
+- [[Polars]] · [[pandas]] — les conversions Arrow sans copie

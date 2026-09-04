@@ -17,43 +17,60 @@ url_repo: https://github.com/google/sentencepiece
 
 # sentencepiece
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.
 
-Tokeniseur **sous-mot** de Google, conçu pour être **indépendant de la langue**. Là où la plupart des tokeniseurs supposent une pré-segmentation par espaces, SentencePiece traite la phrase comme une **suite de caractères Unicode bruts** (l'espace devient un symbole `▁`), ce qui le rend réversible et applicable au CJK ou aux langues sans séparateur de mots. Il implémente deux algorithmes d'apprentissage de vocabulaire : **BPE** et le **modèle Unigram** (sa contribution propre, avec la *subword regularization*). L'entraînement se fait directement sur du texte ; le modèle produit (`.model` + `.vocab`) est ensuite utilisé pour encoder/décoder. C'est le tokeniseur derrière de nombreux modèles (T5, ALBERT, XLNet, Llama, Mistral…).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Entraîner un vocabulaire sous-mot** sur un corpus propre (langue, domaine, code) sans dépendre d'une pré-tokenisation.
-- Modèles **multilingues** ou langues sans espaces (japonais, chinois, thaï).
-- Reproduire le tokeniseur d'un modèle qui le spécifie (T5, Llama…) : charger son `.model`.
-- Besoin d'un encodage **réversible** et déterministe texte ↔ ids.
+Tokeniseur **sous-mot** de Google, conçu pour être indépendant de la langue. Là où la plupart
+des tokeniseurs supposent une pré-segmentation par espaces, SentencePiece traite la phrase
+comme une **suite de caractères Unicode bruts** — l'espace devient le symbole `▁` (U+2581),
+lui-même un token à part entière —, ce qui le rend réversible et applicable au japonais, au
+chinois ou au thaï. Il implémente deux algorithmes d'apprentissage de vocabulaire : **BPE** et
+le **modèle Unigram**, sa contribution propre, seul à offrir la *subword regularization*. Le
+vocabulaire est **figé à l'entraînement** : le modèle produit (`.model` + `.vocab`) sert
+ensuite à encoder et décoder, et c'est le tokeniseur derrière T5, ALBERT, XLNet, Llama ou
+Mistral.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- On consomme déjà un modèle [[HuggingFace]] : passer par `AutoTokenizer` (qui charge SentencePiece ou le tokeniseur Rust `tokenizers` à sa place) plutôt que d'appeler SentencePiece directement.
-- Compter les tokens d'une API propriétaire (OpenAI…) → utiliser **tiktoken**, pas SentencePiece.
-- Tokenisation linguistique (lemmes, POS, phrases) plutôt que sous-mots pour un modèle → [[spaCy]], [[NLTK]].
+| Prendre si | Écarter si |
+|---|---|
+| Entraîner un vocabulaire sous-mot sur un corpus propre — langue, domaine, code — sans dépendre d'une pré-tokenisation | Le vocabulaire est **figé à l'entraînement** : un corpus non représentatif donne beaucoup de `<unk>` ou de la sur-segmentation, et il faut ré-entraîner |
+| Modèles multilingues, ou langues sans séparateur de mots : japonais, chinois, thaï | Un modèle [[HuggingFace]] déjà consommé via `AutoTokenizer` charge SentencePiece de façon transparente — l'appeler en direct duplique la chaîne |
+| Reproduire le tokeniseur d'un modèle qui le spécifie (T5, Llama) en chargeant son `.model` | Compter les tokens d'une API propriétaire (OpenAI) : ce n'est pas le même vocabulaire → tiktoken, hors brain |
+| Besoin d'un encodage **réversible** et déterministe texte ↔ ids |  |
+| | Le symbole d'espace `▁` fait partie des tokens : l'oublier casse le décodage |
+| | Versions du `.model` et de la bibliothèque à tenir cohérentes, sous peine de découpage différent |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add sentencepiece`. Rien à héberger.
-- Cœur **C++** (rapide, ~50k phrases/s, empreinte mémoire faible) avec **bindings Python** (SWIG), plus une CLI et une intégration TensorFlow.
-- Maintenue par Google ; modèle `.model` autonome, embarquable côté inférence sans la chaîne d'entraînement.
+- Installation — `uv add sentencepiece`
+- Point d'entrée — bindings Python (SWIG), CLI d'entraînement, ou bibliothèque C++ ; intégration TensorFlow disponible
+- Prérequis — un corpus d'entraînement représentatif ; le `.model` produit est autonome et embarquable côté inférence, sans la chaîne d'entraînement
+- Exécution — cœur C++ rapide, de l'ordre de 50 k phrases/s, empreinte mémoire faible ; single-node
+- Coût — gratuit, Apache-2.0, rien à héberger ; maintenu par Google
 
-## Pièges
+## Écosystème
 
-- Le vocabulaire est **figé à l'entraînement** : ré-entraîner sur un corpus représentatif, sinon beaucoup de `<unk>` ou de sur-segmentation.
-- BPE vs Unigram : résultats et propriétés différents (Unigram permet la *subword regularization* à l'entraînement, pas BPE).
-- Le symbole d'espace `▁` (U+2581) fait partie des tokens : oublier sa gestion casse le décodage.
-- Versions du `.model` et de la lib doivent être cohérentes pour garantir le même découpage.
+### Alternatives
 
-## Alternatives
+- `tokenizers` — le BPE rapide en Rust de HuggingFace, intégré à la chaîne `transformers` (pas encore en fiche).
+- `tiktoken` — le tokeniseur des modèles OpenAI, pour compter les tokens d'une API propriétaire (pas encore en fiche).
 
-Pas de fiche concurrente directe dans le brain. Substituts usuels hors brain : `tokenizers` (Rust, HuggingFace) pour un BPE rapide intégré, et `tiktoken` côté OpenAI. Le concept sous-jacent est traité dans [[Tokenization]].
+## Ressources
 
-## Liens
+- Documentation — https://github.com/google/sentencepiece/blob/master/README.md
+- Dépôt — https://github.com/google/sentencepiece
 
-- [[Tokenization]] — le concept (BPE, WordPiece, Unigram, byte-level) que SentencePiece implémente.
-- [[HuggingFace]] — `AutoTokenizer` charge un modèle SentencePiece de façon transparente.
-- [[spaCy]] · [[NLTK]] — tokenisation linguistique (autre besoin).
-- Doc : https://github.com/google/sentencepiece/blob/master/README.md
+## Voir aussi
+
+- [[Tokenization]] — la notion : BPE, WordPiece, Unigram, byte-level, que SentencePiece implémente
+- [[HuggingFace]] — son `AutoTokenizer` charge un modèle SentencePiece de façon transparente
+- [[Traitement du langage naturel]] — la notion chapeau du dossier
+- [[Comparatif - NLP]] — ce qui départage les outils du dossier

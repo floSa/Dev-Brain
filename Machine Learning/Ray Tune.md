@@ -17,46 +17,57 @@ url_repo: https://github.com/ray-project/ray
 
 # Ray Tune
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
 
-Bibliothèque d'**optimisation d'hyperparamètres** de l'écosystème [[Ray]], pensée pour le **distribué** : elle lance des dizaines/centaines d'essais (trials) en parallèle sur un cluster et les pilote par des **schedulers** qui arrêtent tôt les essais ratés (ASHA, HyperBand, Median) ou réallouent les ressources en cours de route (Population Based Training). Plutôt que de réimplémenter un algorithme de recherche, elle **enveloppe** les moteurs existants — [[Optuna]], [[Hyperopt]], BayesOpt, Nevergrad — et leur ajoute l'orchestration, la tolérance aux pannes (checkpoints) et l'intégration ML (PyTorch, Lightning, [[XGBoost]], HuggingFace).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Campagne HPO **à grande échelle** sur un cluster CPU/GPU, au-delà de ce qu'une machine encaisse.
-- Besoin de **schedulers avancés** : ASHA / HyperBand pour couper le budget, PBT pour faire évoluer les configs pendant l'entraînement.
-- Déjà sur [[Ray]] : régler dans le **même runtime** que l'entraînement distribué (Ray Train).
-- Garder son moteur préféré ([[Optuna]]…) mais l'**exécuter en distribué** avec tolérance aux pannes.
+La bibliothèque d'**optimisation d'hyperparamètres** de l'écosystème [[Ray]], pensée pour le
+distribué : elle lance des dizaines ou des centaines d'essais en parallèle sur un cluster et
+les pilote par des **schedulers** qui arrêtent tôt les essais ratés (ASHA, HyperBand, Median)
+ou réallouent les ressources en cours de route (Population Based Training). Elle
+**n'implémente aucun algorithme de recherche** : elle enveloppe les moteurs existants —
+[[Optuna]], [[Hyperopt]], BayesOpt, Nevergrad — et leur ajoute l'orchestration, la tolérance
+aux pannes par checkpoints et l'intégration ML (PyTorch, Lightning, XGBoost, HuggingFace). Le
+checkpointing est donc la pièce maîtresse : mal géré, il n'y a ni reprise ni PBT.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- HPO sur une seule machine sans cluster → [[Optuna]] (define-by-run + pruning, plus léger à mettre en place).
-- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]].
-- Pas d'infra Ray ni besoin de distribuer → ne pas porter la complexité d'un cluster pour rien.
+| Prendre si | Écarter si |
+|---|---|
+| Campagne HPO **à grande échelle** sur un cluster CPU/GPU, au-delà de ce qu'une machine encaisse | Indissociable de [[Ray]] : on hérite de sa complexité — cluster, ressources, sérialisation |
+| Schedulers avancés : ASHA et HyperBand pour couper le budget, PBT pour faire évoluer les configs en cours d'entraînement | Le **checkpointing** des trials conditionne la tolérance aux pannes et le PBT : mal géré, la reprise est perdue |
+| Déjà sur [[Ray]] : régler dans le même runtime que l'entraînement distribué (Ray Train) | API Tune **remaniée au fil des versions** Ray : épingler la version, beaucoup de tutoriels anciens ne s'appliquent plus |
+| Garder son moteur préféré — [[Optuna]] — mais l'exécuter en distribué avec tolérance aux pannes | Beaucoup de combinaisons scheduler × algorithme de recherche : trancher avant de se noyer dans les options |
+| | Petit espace, quelques combinaisons : `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), `uv add "ray[tune]"`. S'exécute partout où Ray tourne.
-- **Self-host** : cluster Ray local ou multi-nœuds (Kubernetes via KubeRay, cloud, HPC).
-- **Managé** : Anyscale (payant) — clusters Ray opérés.
-- Coût = l'infra du cluster mobilisée par les trials parallèles ; le réglage des schedulers conditionne l'économie de budget.
+- Installation — `uv add "ray[tune]"`
+- Point d'entrée — API Python : une fonction d'entraînement rapportant sa métrique, un scheduler, un search algorithm enveloppé
+- Prérequis — un cluster [[Ray]] et une stratégie de checkpoint des trials
+- Exécution — self-hébergé : cluster Ray local ou multi-nœuds (Kubernetes via KubeRay, cloud, HPC) ; managé via Anyscale
+- Coût — gratuit, Apache-2.0 ; le coût réel est l'infra mobilisée par les trials parallèles, et le réglage des schedulers commande l'économie de budget
 
-## Pièges
+## Écosystème
 
-- Indissociable de [[Ray]] : on hérite de sa complexité (cluster, ressources, sérialisation).
-- Le **checkpointing** des trials est la clé de la tolérance aux pannes et de PBT : mal géré, on perd la reprise.
-- Beaucoup de combinaisons (scheduler × search algorithm) : choisir avant de se noyer dans les options.
-- API Tune remaniée au fil des versions Ray : épingler la version, beaucoup de tutoriels anciens ne s'appliquent plus.
-
-## Alternatives
+### Alternatives
 
 - [[Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
 - [[Hyperopt]] — Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Optimisation d'hyperparamètres]]
-- Famille Ray : [[Ray]] (cœur distribué), [[Ray Serve]] (serving).
-- [[Comparatif - Optimisation d'hyperparamètres]] — comparatif de la catégorie
-- Enveloppe des moteurs de recherche : [[Optuna]], [[Hyperopt]].
-- Doc : https://docs.ray.io/en/latest/tune/
+- Documentation — https://docs.ray.io/en/latest/tune/
+- Dépôt — https://github.com/ray-project/ray
+
+## Voir aussi
+
+- [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
+- [[Ray]] — le cœur distribué dont il dépend ; [[Ray Serve]] pour le serving de la même famille
+- [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage

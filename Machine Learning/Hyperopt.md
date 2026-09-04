@@ -17,44 +17,58 @@ url_repo: https://github.com/hyperopt/hyperopt
 
 # Hyperopt
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
 
-Bibliothèque **historique** d'optimisation d'hyperparamètres en Python, qui a popularisé l'algorithme **TPE** (*tree-structured Parzen estimator*) : une approche bayésienne qui modélise la densité des bons vs mauvais essais plutôt que la fonction objectif directement. Décrit des **espaces de recherche** déclaratifs, y compris **conditionnels** (`hp.choice`, `hp.uniform`, `hp.loguniform`), et parallélise les essais via un backend **MongoDB** ou **Spark** (`SparkTrials`). Encore très présente (intégrée à Spark/Databricks, Freqtrade…), mais le projet est **peu actif** : dernière release 0.2.7 (~2021), pas de nouvelle version depuis.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Codebase ou tutoriels **déjà bâtis sur Hyperopt** (Spark / Databricks, Freqtrade) : l'API est stable et éprouvée.
-- Besoin de **TPE** sur des espaces de recherche **conditionnels** simples à déclarer.
-- Parallélisation des essais via un cluster **Spark** existant (`SparkTrials`) ou MongoDB.
+La bibliothèque **historique** d'optimisation d'hyperparamètres en Python, celle qui a
+popularisé l'algorithme **TPE** (*tree-structured Parzen estimator*) : une approche bayésienne
+qui modélise la densité des bons essais contre celle des mauvais, plutôt que la fonction
+objectif elle-même. Les espaces de recherche s'y déclarent, y compris **conditionnels**
+(`hp.choice`, `hp.uniform`, `hp.loguniform`), et les essais se parallélisent via un backend
+MongoDB ou Spark (`SparkTrials`). Une particularité coûte cher à l'usage : `hp.choice` renvoie
+un **index**, pas la valeur, et relire le meilleur essai demande `space_eval`. Le projet est
+quasi en sommeil — dernière release 0.2.7 vers 2021 — tout en restant très présent, intégré à
+Spark/Databricks et à Freqtrade.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Nouveau projet : préférer [[Optuna]] (API define-by-run, pruning, dashboard, maintenance active) — successeur de facto.
-- HPO **distribué à grande échelle** avec schedulers avancés → [[Ray Tune]].
-- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]].
-- Besoin de support actif / corrections récentes : le projet est quasi en sommeil.
+| Prendre si | Écarter si |
+|---|---|
+| Codebase ou tutoriels **déjà bâtis sur Hyperopt** — Spark, Databricks, Freqtrade : l'API est stable et éprouvée | **Peu maintenu** : pas de release depuis 2021, friction d'installation avec les Python et NumPy récents → [[Optuna]], successeur de facto |
+| Besoin de **TPE** sur des espaces de recherche conditionnels simples à déclarer | Pas de **pruning intra-essai** : l'arrêt précoce n'est pas natif, tout essai va à son terme → [[Optuna]] |
+| Parallélisation des essais via un cluster **Spark** déjà en place (`SparkTrials`) | `hp.choice` renvoie un **index** et non la valeur : erreur classique à la relecture du meilleur essai, `space_eval` obligatoire |
+| | Le backend **MongoDB** du mode distribué est lourd à opérer — `SparkTrials` est souvent préférable |
+| | Petit espace, quelques combinaisons : `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]] suffisent |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (BSD), `uv add hyperopt` ; rien à héberger pour l'usage local.
-- Single-node par défaut ; **distribué** via un backend MongoDB (`MongoTrials`) ou via [[Spark]] (`SparkTrials`).
-- Coût = l'infra de parallélisation éventuelle ; la bibliothèque est gratuite.
+- Installation — `uv add hyperopt`
+- Point d'entrée — API Python : espace déclaratif (`hp.*`), `fmin` sur la fonction objectif, `space_eval` pour relire le résultat
+- Prérequis — pour le distribué, un MongoDB (`MongoTrials`) ou un cluster [[Spark]] (`SparkTrials`)
+- Exécution — single-node par défaut ; distribué via l'un des deux backends
+- Coût — gratuit, BSD, rien à héberger ; le coût est celui de l'infra de parallélisation éventuelle
 
-## Pièges
+## Écosystème
 
-- **Peu maintenu** : pas de release depuis ~2021, friction d'installation avec les versions récentes de Python/NumPy.
-- `hp.choice` renvoie un **index**, pas la valeur : erreur classique au moment de relire le meilleur essai (`space_eval` pour récupérer la config réelle).
-- Le backend **MongoDB** pour le distribué est lourd à opérer ; `SparkTrials` est souvent préférable.
-- Pas de pruning intra-essai comme [[Optuna]] : l'arrêt précoce n'est pas natif.
-
-## Alternatives
+### Alternatives
 
 - [[Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
 - [[Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Optimisation d'hyperparamètres]]
-- [[Comparatif - Optimisation d'hyperparamètres]] — comparatif de la catégorie
-- Peut être orchestré en distribué par [[Ray Tune]] ou [[Spark]].
-- Doc : http://hyperopt.github.io/hyperopt/
+- Documentation — http://hyperopt.github.io/hyperopt/
+- Dépôt — https://github.com/hyperopt/hyperopt
+
+## Voir aussi
+
+- [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
+- [[Spark]] — le cluster qui porte `SparkTrials`
+- [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage

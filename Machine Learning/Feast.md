@@ -19,43 +19,58 @@ url_repo: https://github.com/feast-dev/feast
 
 # Feast
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…).
 
-Feast (Feature Store) est le **feature store open-source** de référence. Il résout le **train/serve skew** : les mêmes définitions de features alimentent l'**offline store** (données historiques pour l'entraînement et le scoring batch) et l'**online store** (faible latence pour l'inférence temps réel), garantissant la cohérence entre les deux. Feast n'est pas une base de données : c'est une **couche d'abstraction** posée au-dessus de l'infra existante (Redis, DynamoDB, BigQuery, Snowflake, Postgres, S3…), avec génération de jeux d'entraînement *point-in-time correct*, matérialisation planifiée et serveur de features. Apache-2.0 ; créé par Willem Pienaar, Tecton en étant le principal contributeur.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Servir les **mêmes features** à l'entraînement et à l'inférence sans divergence.
-- Inférence temps réel nécessitant des features pré-calculées à faible latence (online store).
-- Réutiliser et partager des définitions de features entre modèles et équipes (registry).
-- Génération de jeux d'entraînement **point-in-time correct** (éviter la fuite temporelle).
+Le **feature store** de référence. Il résout le *train/serve skew* : les mêmes
+définitions de features alimentent l'**offline store** — données historiques pour
+l'entraînement et le scoring batch — et l'**online store** — faible latence pour l'inférence
+temps réel —, garantissant la cohérence entre les deux, avec génération de jeux d'entraînement
+*point-in-time correct*. Feast n'est **pas une base de données**, et ne **calcule pas** les
+features : c'est une couche d'abstraction posée au-dessus de l'infra existante (Redis,
+DynamoDB, BigQuery, Snowflake, Postgres, S3), qui stocke et sert ce que des pipelines amont ont
+transformé. Créé par Willem Pienaar, Tecton en étant le principal contributeur.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pas d'inférence temps réel ni de réutilisation de features → un simple pipeline de feature engineering ([[Featuretools]], requêtes SQL) suffit.
-- Besoin d'une plateforme managée clé en main avec transformations à la volée → Tecton (commercial, hors périmètre OSS).
-- Volume et équipe modestes : l'infra online+offline ajoute une complexité opérationnelle non amortie.
+| Prendre si | Écarter si |
+|---|---|
+| Servir les **mêmes features** à l'entraînement et à l'inférence sans divergence | Feast **ne calcule pas** les features : la transformation reste à la charge de pipelines en amont → [[Featuretools]], ou des requêtes SQL |
+| Inférence temps réel nécessitant des features pré-calculées à faible latence | La **matérialisation online** doit être ordonnancée et surveillée : la fraîcheur des features est à la charge de l'équipe |
+| Réutiliser et partager des définitions de features entre modèles et équipes, via le registry | Volume et équipe modestes : l'infra online + offline ajoute une complexité opérationnelle non amortie |
+| Génération de jeux d'entraînement **point-in-time correct**, pour éviter la fuite temporelle | La cohérence offline/online est **visée**, pas garantie : elle dépend des stores choisis et de leur configuration |
+| | Plateforme managée clé en main avec transformations à la volée : il n'existe pas de service managé Feast officiel → Tecton, commercial et hors périmètre OSS |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), `uv add feast`. **Self-host** : pas de service managé Feast officiel.
-- S'appuie sur l'infra existante : online store ([[Redis]], DynamoDB…), offline store (BigQuery, Snowflake, [[Postgres]], Parquet/S3).
-- Le registry (métadonnées) et un planificateur de matérialisation sont à opérer.
+- Installation — `uv add feast`
+- Point d'entrée — définitions de features en Python, registry de métadonnées, puis serveur de features pour l'online
+- Prérequis — un online store ([[Redis]], DynamoDB) et un offline store (BigQuery, Snowflake, [[Postgres]], Parquet/S3) déjà en place
+- Exécution — self-hébergé, distribué ; le registry et un planificateur de matérialisation sont à opérer
+- Coût — gratuit, Apache-2.0 ; aucun service managé officiel, le coût est celui de l'infra sous-jacente
 
-## Pièges
+## Écosystème
 
-- Feast **ne calcule pas** les features : la transformation reste à la charge de pipelines en amont (il stocke et sert).
-- La matérialisation online doit être ordonnancée et surveillée — la fraîcheur des features est à la charge de l'équipe.
-- La cohérence offline/online est visée mais dépend des stores choisis et de leur configuration.
+### Alternatives
 
-## Alternatives
+- Aucune fiche du brain n'occupe la catégorie `ml/feature-store` à ce jour.
+- Tecton — la plateforme managée par les contributeurs principaux, avec transformations à la volée (pas encore en fiche).
 
-<!-- seul service de la catégorie ml/feature-store dans le brain pour l'instant -->
-- Aucune alternative en catégorie `ml/feature-store` à ce jour. Approche voisine, en amont : [[Featuretools]] (génération automatique de features).
+## Ressources
 
-## Liens
+- Documentation — https://docs.feast.dev/
+- Dépôt — https://github.com/feast-dev/feast
 
-- Concept implémenté : [[Feature store — concept]] (online/offline, point-in-time correctness, train/serve skew).
-- Alimente l'inférence servie par : [[BentoML]], [[KServe]].
-- Stores : [[Redis]] (online), [[Postgres]] (offline/registry).
-- Doc : https://docs.feast.dev/
+## Voir aussi
+
+- [[Feature store — concept]] — la notion qu'il implémente : online/offline, point-in-time correctness, train/serve skew
+- [[Featuretools]] — l'étage amont : générer les features que Feast se contente de stocker et servir
+- [[Redis]] · [[Postgres]] — les stores usuels, online et offline/registry
+- [[BentoML]] · [[KServe]] — l'inférence qu'il alimente en features

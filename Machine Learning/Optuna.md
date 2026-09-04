@@ -17,44 +17,59 @@ url_repo: https://github.com/optuna/optuna
 
 # Optuna
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
 
-Framework d'**optimisation d'hyperparamètres** au design *define-by-run* : l'espace de recherche se déclare dynamiquement dans le code (`trial.suggest_float`, `suggest_int`, `suggest_categorical`), ce qui autorise des espaces conditionnels et des boucles. Le moteur combine **recherche bayésienne** (TPE par défaut, GP, CMA-ES) et **pruning** — l'arrêt précoce des essais non prometteurs (MedianPruner, HyperbandPruner, SuccessiveHalving) — pour économiser le budget. Parallélisation native via un **storage partagé** (RDB) et suivi visuel (`optuna-dashboard`). Maintenu par Preferred Networks.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Réglage coûteux où chaque entraînement est lourd : la recherche bayésienne converge en moins d'essais qu'une grille.
-- Espace de recherche **conditionnel** ou irrégulier, mal exprimé par un produit cartésien.
-- Besoin d'**élaguer** tôt les essais ratés (deep learning, GBDT avec early stopping).
-- Campagne **distribuée** sur plusieurs workers/nœuds partageant un storage.
-- Intégrations prêtes : scikit-learn, [[XGBoost]], [[LightGBM]], [[PyTorch]].
+Framework d'**optimisation d'hyperparamètres** au design *define-by-run* : l'espace de
+recherche se déclare dynamiquement dans le code (`trial.suggest_float`, `suggest_int`,
+`suggest_categorical`), ce qui autorise les espaces conditionnels et les boucles. Le moteur
+combine **recherche bayésienne** — TPE par défaut, GP, CMA-ES — et **pruning**, l'arrêt précoce
+des essais non prometteurs par MedianPruner, HyperbandPruner ou SuccessiveHalving. Le pruning
+suppose une métrique **rapportée par étapes** (`trial.report` puis `should_prune`) : un
+entraînement opaque en un seul bloc n'en bénéficie pas. La parallélisation passe par un
+**storage partagé** (SQLite, PostgreSQL, MySQL) — sans lui, une étude vit en mémoire et meurt
+avec le process. Maintenu par Preferred Networks.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Petit espace, quelques combinaisons → `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]] suffisent.
-- Orchestration distribuée lourde sur cluster (schedulers ASHA/PBT) → [[Ray Tune]] (qui sait d'ailleurs piloter Optuna comme moteur de recherche).
+| Prendre si | Écarter si |
+|---|---|
+| Réglage coûteux où chaque entraînement est lourd : la recherche bayésienne converge en moins d'essais qu'une grille | Sans **storage persistant**, une étude en mémoire est perdue à la fin du process |
+| Espace de recherche **conditionnel** ou irrégulier, mal exprimé par un produit cartésien | Le **pruning** exige une métrique rapportée par étapes : inapplicable à un entraînement opaque en un bloc |
+| Élaguer tôt les essais ratés — deep learning, GBDT avec early stopping | Les plages d'échelle doivent être déclarées en **log** (`log=True`) pour les taux d'apprentissage et la régularisation, sinon l'échantillonnage est inefficace |
+| Campagne distribuée sur plusieurs workers partageant un storage | Petit espace, quelques combinaisons : `GridSearchCV` / `RandomizedSearchCV` de [[Scikit-Learn]] suffisent |
+| Intégrations prêtes : scikit-learn, [[XGBoost]], [[LightGBM]], [[PyTorch]] |  |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python open-source (MIT), `uv add optuna` ; rien à héberger pour l'usage local.
-- Single-node par défaut ; **distribué** en pointant plusieurs workers sur un storage commun (SQLite/PostgreSQL/MySQL).
-- Dashboard optionnel (`optuna-dashboard`) pour le suivi en temps réel.
+- Installation — `uv add optuna` ; `optuna-dashboard` en option pour le suivi en temps réel
+- Point d'entrée — API Python *define-by-run* : une fonction objectif recevant un `trial`, puis `study.optimize`
+- Prérequis — un storage (SQLite, PostgreSQL, MySQL) dès qu'on veut persister ou distribuer
+- Exécution — single-node par défaut ; distribué en pointant plusieurs workers sur un storage commun
+- Coût — gratuit, MIT, rien à héberger
 
-## Pièges
+## Écosystème
 
-- Sans **storage persistant**, une étude (`study`) en mémoire est perdue à la fin du process.
-- Le pruning suppose une métrique **rapportée par étapes** (`trial.report` + `should_prune`) : inapplicable à un entraînement opaque en un bloc.
-- Définir les plages d'échelle en **log** (`log=True`) pour les taux d'apprentissage / régularisation, sinon l'échantillonnage est inefficace.
-
-## Alternatives
+### Alternatives
 
 - [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 - [[Hyperopt]] — Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
 - [[Ray Tune]] — Optimisation d'hyperparamètres distribuée sur Ray : schedulers à arrêt précoce (ASHA, PBT, HyperBand) et intégration des moteurs de recherche (Optuna, Hyperopt) à l'échelle du cluster.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Optimisation d'hyperparamètres]]
-- Score optimisé fourni par : [[Validation croisée]]
-- [[Comparatif - Optimisation d'hyperparamètres]] — comparatif de la catégorie
-- Doc : https://optuna.readthedocs.io/
+- Documentation — https://optuna.readthedocs.io/
+- Dépôt — https://github.com/optuna/optuna
+
+## Voir aussi
+
+- [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
+- [[Validation croisée]] — d'où vient le score qu'il optimise
+- [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage

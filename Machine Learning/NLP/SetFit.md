@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[sentence-transformers]]"]
 tags: [text-classification, nlp, fine-tuning]
 url_docs: https://huggingface.co/docs/setfit
 url_repo: https://github.com/huggingface/setfit
@@ -17,43 +17,55 @@ url_repo: https://github.com/huggingface/setfit
 
 # SetFit
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM.
 
-Méthode de **classification de texte few-shot sans prompt**, signée Hugging Face. En deux temps : fine-tuning **contrastif** d'un [[sentence-transformers|sentence-transformer]] sur les paires d'exemples, puis entraînement d'une **tête de classification** sur les embeddings obtenus. Résultat : des scores compétitifs avec **quelques dizaines d'exemples par classe**, sans LLM ni prompt à régler, pour un modèle petit et rapide à servir.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- [[Classification de texte]] avec **peu de données annotées** (few-shot).
-- Remplacer un prompt LLM zero/few-shot par un modèle **léger, déterministe et bon marché** à servir.
-- Itérer vite : entraînement en minutes sur CPU / GPU modeste.
+Méthode de **classification de texte few-shot sans prompt**, signée Hugging Face. Elle procède
+en deux temps : fine-tuning **contrastif** d'un [[sentence-transformers|sentence-transformer]]
+sur les paires d'exemples, puis entraînement d'une **tête de classification** sur les
+embeddings obtenus. Résultat : des scores compétitifs avec quelques dizaines d'exemples par
+classe, sans LLM ni prompt à régler, et un modèle final petit, déterministe et bon marché à
+servir. Le few-shot n'est pas pour autant sans limite : au-delà d'un certain volume d'annotations,
+un fine-tuning complet reprend l'avantage.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Beaucoup** de données annotées → un fine-tuning classique d'encodeur ([[HuggingFace]]) peut faire mieux.
-- Baseline ultra-simple suffisant → TF-IDF + linéaire ([[Scikit-Learn]]).
-- Tâches génératives ou de raisonnement → un LLM.
+| Prendre si | Écarter si |
+|---|---|
+| [[Classification de texte]] avec peu de données annotées | Beaucoup de données annotées : un fine-tuning classique d'encodeur ([[HuggingFace]]) fait alors mieux |
+| Remplacer un prompt LLM zero/few-shot par un modèle léger, déterministe et bon marché à servir | Baseline ultra-simple suffisante : TF-IDF plus un modèle linéaire ([[Scikit-Learn]]) coûte moins cher |
+| Itérer vite : entraînement en minutes sur CPU ou GPU modeste | Sensible au **choix du sentence-transformer de base** et à la qualité des quelques exemples fournis |
+| | Multi-label ou classes déséquilibrées : la configuration demande un traitement dédié → [[Imbalanced classification]] |
+| | Tâches génératives ou de raisonnement : c'est un classifieur, pas un LLM |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add setfit`.
-- **Single-node** ; s'appuie sur [[sentence-transformers]] / [[HuggingFace]]. GPU utile mais non requis.
-- Modèle final petit → inférence rapide et peu coûteuse.
+- Installation — `uv add setfit`
+- Point d'entrée — API Python : `SetFitTrainer` sur quelques dizaines d'exemples par classe
+- Prérequis — un modèle [[sentence-transformers]] de base, tiré du Hub [[HuggingFace]]
+- Exécution — single-node ; GPU utile mais non requis, le modèle final est petit et rapide en inférence
+- Coût — gratuit, Apache-2.0, rien à héberger
 
-## Pièges
+## Écosystème
 
-- Sensible au **choix du sentence-transformer** de base et à la qualité des quelques exemples.
-- Few-shot ≠ magie : au-delà d'un certain volume, un fine-tuning complet reprend l'avantage.
-- Multi-label et déséquilibre demandent une configuration adaptée → [[Imbalanced classification]].
+### Compléments
 
-## Alternatives
+- [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi — le socle que SetFit fine-tune.
 
-Pas de substitut direct dans le brain. Les voies concurrentes pour la classification de texte (baseline TF-IDF, fine-tuning de transformeur, prompting LLM) sont décrites dans le concept [[Classification de texte]].
+## Ressources
 
-## Liens
+- Documentation — https://huggingface.co/docs/setfit
+- Dépôt — https://github.com/huggingface/setfit
 
-- [[Classification de texte]] — son cas d'usage (few-shot).
-- [[sentence-transformers]] — le socle qu'il fine-tune.
-- [[HuggingFace]] — exécution et alternative full-fine-tune.
-- [[Traitement du langage naturel]] — page chapeau.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Doc : https://huggingface.co/docs/setfit
+## Voir aussi
+
+- [[Classification de texte]] — son cas d'usage, et où sont décrites les voies concurrentes : baseline TF-IDF, fine-tuning de transformeur, prompting LLM
+- [[Traitement du langage naturel]] — la notion chapeau du dossier
+- [[Comparatif - NLP]] — ce qui départage les outils du dossier

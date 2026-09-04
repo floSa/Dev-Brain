@@ -17,50 +17,61 @@ url_repo: https://github.com/tensorflow/agents
 
 # TF-Agents
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.
 
-Bibliothèque RL **officielle** de l'écosystème [[TensorFlow]] : agents prêts à l'emploi (DQN et variantes, C51, DDPG, TD3, SAC, PPO, REINFORCE), **bandits contextuels** (un point fort distinctif), drivers de collecte, replay buffers (dont Reverb) et métriques, le tout sous une API homogène (`TimeStep`, `tf_env`, `Agent`). C'est l'équivalent TensorFlow de [[Stable-Baselines3]] — avec la réserve que l'écosystème TF entier perd du terrain face à PyTorch et JAX, et la lib avec lui.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Stack **TensorFlow imposée** (codebase, infra de serving TF existante) et besoin d'agents RL standards.
-- **Bandits contextuels** en production : la couverture bandits de TF-Agents reste une des plus complètes du genre.
-- Déploiement de la politique entraînée en **SavedModel** vers TF Serving / TFLite.
+Bibliothèque RL **officielle** de l'écosystème [[TensorFlow]] : agents prêts à l'emploi (DQN et
+variantes, C51, DDPG, TD3, SAC, PPO, REINFORCE), **bandits contextuels** — sa couverture la
+plus distinctive —, drivers de collecte, replay buffers dont Reverb, et métriques, le tout sous
+une API homogène (`TimeStep`, `tf_env`, `Agent`). C'est l'équivalent TensorFlow de
+[[Stable-Baselines3]], à ceci près que l'écosystème TF entier perd du terrain face à PyTorch et
+JAX, et la bibliothèque avec lui : dernière release stable 0.19.0 fin 2023, calée sur TF 2.15,
+le développement continuant surtout en nightly à rythme faible. La politique entraînée
+s'exporte en SavedModel vers TF Serving ou TFLite.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Nouveau projet sans contrainte TF** → [[Stable-Baselines3]] : communauté, maintenance et écosystème (PyTorch) nettement plus vivants.
-- Recherche moderne en JAX → [[Acme]] ou [[RLax]].
-- Parier sur le long terme : la maintenance décline (dernière release stable 0.19.0 fin 2023, calée sur TF 2.15) — l'adopter aujourd'hui, c'est hériter de ce déclin.
+| Prendre si | Écarter si |
+|---|---|
+| Stack **TensorFlow imposée** — codebase, infra de serving TF existante — et besoin d'agents RL standards |  |
+| **Bandits contextuels** en production : la couverture de TF-Agents reste une des plus complètes du genre | Parier sur le long terme : dernière release stable fin 2023 sur TF 2.15, les TF récents ne sont couverts par aucune release stable |
+| Déployer la politique entraînée en **SavedModel** vers TF Serving / TFLite | **Couplage de versions strict** TF / tf-agents / dm-reverb : sortir de la matrice de compatibilité casse l'installation, et Reverb est Linux uniquement |
+| | API verbeuse — specs, drivers, conversions `py_env` / `tf_env` — et tutoriels qui vieillissent sans correction systématique |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add tf-agents`. Rien à héberger.
-- Collecte **distribuée** possible (architecture acteur-learner via Reverb) en plus du mode single-node.
-- Maintenance en **déclin** : dernière release stable fin 2023 (TF 2.15), le développement continue surtout en nightly, à un rythme faible. L'écosystème TensorFlow suit la même pente.
+- Installation — `uv add tf-agents` ; respecter la matrice de compatibilité TF / tf-agents / dm-reverb
+- Point d'entrée — API Python : `TimeStep`, `tf_env`, `Agent`, drivers de collecte
+- Prérequis — [[TensorFlow]] à la version appariée ; Linux pour Reverb
+- Exécution — single-node, ou collecte **distribuée** par architecture acteur-learner via Reverb
+- Coût — gratuit, Apache-2.0, rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Couplage de versions strict** TF / tf-agents / dm-reverb : sortir de la matrice de compatibilité casse l'installation ; Reverb est Linux uniquement.
-- Dernière release figée sur **TF 2.15** : les TF récents ne sont pas couverts par une release stable.
-- API verbeuse (specs, drivers, conversions `py_env` / `tf_env`) — courbe d'apprentissage plus raide que SB3 pour le même résultat.
-- Tutoriels et docs qui **vieillissent** sans correction systématique.
-
-## Alternatives
+### Alternatives
 
 - [[Stable-Baselines3]] — Implémentations fiables et testées d'algorithmes de RL en PyTorch (PPO, A2C, DQN, SAC, TD3, DDPG) — API homogène sur environnements Gymnasium ; la boîte à outils par défaut pour entraîner un agent sans réimplémenter.
 - [[Acme]] — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
 - [[RLax]] — Briques mathématiques de RL en pur JAX (DeepMind) — pertes TD, returns, policy gradients, RL distributionnel à composer dans sa propre boucle jit/vmap ; le Lego bas niveau du chercheur, à l'opposé du clé en main de Stable-Baselines3.
 
-Nuance : à périmètre égal (agents prêts à l'emploi), SB3 est le choix par défaut en 2026 ; TF-Agents ne se justifie que par une contrainte TensorFlow ou le besoin de bandits contextuels.
+## Ressources
 
-## Liens
+- Documentation — https://www.tensorflow.org/agents
+- Dépôt — https://github.com/tensorflow/agents
 
-- [[TensorFlow]] — l'écosystème parent (et sa trajectoire).
-- [[Gymnasium]] — environnements utilisables via les suites/wrappers (`suite_gym`).
-- [[Reinforcement learning]] — le cadre général.
-- [[Q-learning and DQN]] — `DqnAgent`, C51 et variantes.
-- [[PPO]] · [[Policy gradient]] — `PPOAgent`, `ReinforceAgent`.
-- [[Actor-Critic methods]] — SAC, TD3, DDPG.
-- [[Comparatif - Reinforcement learning]] — vue d'ensemble des libs RL.
-- Doc : https://www.tensorflow.org/agents
+## Voir aussi
+
+- [[Reinforcement learning]] — la notion du dossier
+- [[TensorFlow]] — l'écosystème parent, et sa trajectoire
+- [[Gymnasium]] — les environnements consommés via les suites et wrappers (`suite_gym`)
+- [[Q-learning and DQN]] — `DqnAgent`, C51 et variantes
+- [[PPO]] · [[Policy gradient]] — `PPOAgent`, `ReinforceAgent`
+- [[Actor-Critic methods]] — SAC, TD3, DDPG
+- [[Comparatif - Reinforcement learning]] — ce qui départage les bibliothèques du dossier

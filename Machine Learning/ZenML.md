@@ -19,42 +19,57 @@ url_repo: https://github.com/zenml-io/zenml
 
 # ZenML
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
 
-ZenML est un framework MLOps Python qui sépare la **logique du pipeline** de l'**infrastructure d'exécution**. On écrit des steps et pipelines décorés en Python pur ; le « stack » (orchestrateur, artifact store, container registry, experiment tracker…) se branche par configuration. Le même pipeline passe ainsi du laptop à Kubernetes, Airflow, SageMaker ou Vertex sans réécriture. ZenML ne remplace pas les outils MLOps existants : il les **orchestre** (MLflow, W&B, BentoML, KServe…) derrière une abstraction unifiée. Cœur Apache-2.0 ; édition managée **ZenML Pro** pour les équipes.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Portabilité : développer en local puis déployer sur plusieurs backends sans changer le code.
-- Fédérer un stack MLOps hétérogène (tracking + orchestration + serving) derrière une API unique.
-- Garder la liberté multi-cloud / multi-orchestrateur, sans verrou propriétaire.
-- Équipe data science cherchant des pipelines reproductibles sans devenir experte Kubernetes.
+Framework MLOps Python qui sépare la **logique du pipeline** de l'**infrastructure
+d'exécution**. On écrit des steps et des pipelines décorés en Python pur ; le « stack » —
+orchestrateur, artifact store, container registry, experiment tracker — se branche par
+configuration, si bien que le même pipeline passe du laptop à Kubernetes, Airflow, SageMaker ou
+Vertex sans réécriture. ZenML **n'exécute rien lui-même** : il orchestre les outils MLOps déjà
+en place (MLflow, W&B, BentoML, KServe) derrière une abstraction unifiée — le backend réel
+reste donc à opérer, et son serveur de métadonnées est un composant de plus à héberger et à
+sauvegarder. Une édition managée, ZenML Pro, s'adresse aux équipes.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack déjà tout-AWS, scaling natif voulu sans couche d'abstraction → [[Metaflow]].
-- Orchestration Kubernetes-native à grande échelle, typage fort et isolation des ressources → [[Flyte]].
-- Simple ordonnancement de DAGs data sans dimension ML → [[Airflow]] / [[Dagster]].
+| Prendre si | Écarter si |
+|---|---|
+| Portabilité : développer en local puis déployer sur plusieurs backends sans changer le code | L'abstraction **ne supprime pas l'infra** : le backend réel (Kubernetes, Airflow) reste à opérer |
+| Fédérer un stack MLOps hétérogène — tracking, orchestration, serving — derrière une API unique | Le **serveur de métadonnées** est un composant à héberger et à sauvegarder |
+| Garder la liberté multi-cloud et multi-orchestrateur, sans verrou propriétaire | Les concepts de stacks — stack, flavor, component — ajoutent une courbe d'apprentissage |
+| Équipe data science cherchant des pipelines reproductibles sans devenir experte Kubernetes |  |
+| | Simple ordonnancement de DAGs data sans dimension ML → [[Airflow]] / [[Dagster]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), `uv add zenml`. Serveur ZenML (métadonnées) auto-hébergé via Docker/Helm sur Kubernetes.
-- Exécution distribuée déléguée au stack choisi (Kubernetes, Airflow, runners cloud).
-- Managé : ZenML Pro (multi-tenant, RBAC, registre de modèles ; payant).
+- Installation — `uv add zenml`
+- Point d'entrée — steps et pipelines décorés en Python ; le stack se déclare par configuration
+- Prérequis — un serveur ZenML pour les métadonnées, auto-hébergé via Docker ou Helm sur Kubernetes
+- Exécution — déléguée au stack choisi : Kubernetes, Airflow, runners cloud
+- Coût — gratuit, Apache-2.0, en self-host ; ZenML Pro (multi-tenant, RBAC, registre de modèles) est payant
 
-## Pièges
+## Écosystème
 
-- ZenML orchestre d'autres outils : il faut quand même opérer le backend réel (K8s, etc.) — l'abstraction ne supprime pas l'infra.
-- Le serveur de métadonnées est un composant à héberger et sauvegarder.
-- Les concepts de stacks (stack, flavor, component) ajoutent une courbe d'apprentissage.
-
-## Alternatives
+### Alternatives
 
 - [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
 - [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Orchestrateurs ML]] — comparatif de la catégorie
-- Orchestre des outils existants : [[MLflow]], [[BentoML]], [[KServe]].
-- Doc : https://docs.zenml.io/
+- Documentation — https://docs.zenml.io/
+- Dépôt — https://github.com/zenml-io/zenml
+
+## Voir aussi
+
+- [[Machine Learning]] — le hub du domaine
+- [[MLflow]] · [[BentoML]] · [[KServe]] — les outils existants qu'il orchestre
+- [[Comparatif - Orchestrateurs ML]] — ce qui départage les orchestrateurs
