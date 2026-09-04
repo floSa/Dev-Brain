@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[Ultralytics YOLO]]", "[[Detectron2]]", "[[segment-anything]]", "[[OpenCV]]"]
 tags: [object-detection, object-tracking, computer-vision]
 url_docs: https://supervision.roboflow.com/
 url_repo: https://github.com/roboflow/supervision
@@ -17,39 +17,58 @@ url_repo: https://github.com/roboflow/supervision
 
 # supervision
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application.
 
-Bibliothèque **model-agnostic** de Roboflow qui fournit l'**outillage autour** des modèles de vision, pas les modèles eux-mêmes. Pivot : une API **`Detections`** unifiée avec des connecteurs pour les sorties de [[Ultralytics YOLO|Ultralytics]], [[Detectron2]], [[segment-anything|SAM]], [[HuggingFace|Transformers]], Roboflow Inference… Au-dessus : **annotateurs** (boîtes, masques, labels, traces), **suivi** ([[Suivi d'objets|ByteTrack]]), **zones** (polygones, lignes) pour le comptage et le franchissement, conversion de **datasets** (COCO/YOLO/Pascal VOC) et métriques (mAP, matrice de confusion). C'est la **colle** entre un détecteur et une application livrable.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Visualiser** proprement des détections / masques / poses sur images et vidéos.
-- **Suivre** et **compter** des objets (zones, lignes de franchissement, [[Suivi d'objets|tracking]]) sans réécrire la plomberie.
-- Rester **indépendant du modèle** : changer de détecteur sans toucher le code aval.
-- Manipuler et **convertir des datasets** entre formats d'annotation, évaluer un modèle (mAP).
+Boîte à outils **model-agnostic** de Roboflow, qui fournit l'outillage **autour** des modèles
+de vision et non les modèles eux-mêmes. Son pivot est une API **`Detections`** unifiée, avec
+des connecteurs pour les sorties d'Ultralytics, Detectron2, SAM, Transformers ou Roboflow
+Inference. Au-dessus viennent les **annotateurs** (boîtes, masques, labels, traces), le
+**suivi** par ByteTrack, les **zones** — polygones et lignes — pour le comptage et le
+franchissement, la conversion de datasets (COCO, YOLO, Pascal VOC) et les métriques (mAP,
+matrice de confusion). Elle ne fait aucune inférence : il lui faut un modèle en amont qui
+produit les détections.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin du **modèle** de détection/segmentation lui-même → [[Ultralytics YOLO]], [[Detectron2]], [[segment-anything]].
-- Vision **classique** bas niveau (filtres, calibration, features) → [[OpenCV]].
-- Augmentation d'images pour l'entraînement → [[albumentations]].
+| Prendre si | Écarter si |
+|---|---|
+| Visualiser proprement des détections, masques ou poses sur images et vidéos | API en évolution rapide, sous la 1.0 : épingler la version et surveiller les changements de signature entre releases |
+| Suivre et compter des objets — zones, lignes de franchissement, tracking — sans réécrire la plomberie | Les connecteurs supposent un format de sortie attendu par modèle ; un format inhabituel demande une conversion manuelle vers `Detections` |
+| Rester indépendant du modèle : changer de détecteur sans toucher au code aval | |
+| Manipuler et convertir des datasets entre formats d'annotation, et évaluer un modèle (mAP) | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python open-source sous **MIT** (permissive), gratuite ; `uv add supervision`. Rien à héberger.
-- N'embarque **aucun modèle ni poids** : se branche sur les sorties d'un modèle exécuté ailleurs ; dépendances légères (NumPy, OpenCV).
-- S'exécute partout où tourne Python ; traitement single-node, temps réel sur flux vidéo selon le détecteur en amont.
+- Installation — `uv add supervision`
+- Point d'entrée — l'objet `Detections`, alimenté par un connecteur depuis la sortie du modèle
+- Prérequis — NumPy et OpenCV ; surtout, un modèle exécuté ailleurs qui produit les détections
+- Exécution — CPU, single-node ; temps réel sur flux vidéo selon le détecteur en amont
+- Coût — MIT, gratuit ; aucun modèle ni poids embarqué, rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Ne fait pas d'inférence** : il faut un modèle qui produit les détections en amont — supervision ne fait que les exploiter.
-- API en évolution rapide (< 1.0) : épingler la version, surveiller les changements de signature entre releases.
-- Les connecteurs supposent un **format de sortie attendu** par modèle ; un format inhabituel demande une conversion manuelle vers `Detections`.
+### Compléments
 
-## Liens
+- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — un des modèles en amont dont il exploite les sorties
+- [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture. — un des modèles en amont dont il exploite les sorties
+- [[segment-anything]] — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte). — le modèle dont il exploite les masques
+- [[OpenCV]] — Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning. — la couche bas niveau sur laquelle il s'appuie pour le rendu
 
-- [[Détection d'objets]] / [[Segmentation]] / [[Suivi d'objets]] — les tâches dont supervision exploite les sorties.
-- [[Ultralytics YOLO]] / [[Detectron2]] / [[segment-anything]] — les modèles en amont.
-- [[OpenCV]] — la couche bas niveau sur laquelle supervision s'appuie pour le rendu.
-- [[Vision par ordinateur]] — le cadre d'ensemble.
-- Doc : https://supervision.roboflow.com/
+## Ressources
+
+- Documentation — https://supervision.roboflow.com/
+- Dépôt — https://github.com/roboflow/supervision
+
+## Voir aussi
+
+- [[Détection d'objets]], [[Segmentation]], [[Suivi d'objets]] — les tâches dont il exploite les sorties
+- [[Vision par ordinateur]] — le cadre d'ensemble
+- [[Comparatif - Détection & segmentation]] — ce qui départage les briques du dossier

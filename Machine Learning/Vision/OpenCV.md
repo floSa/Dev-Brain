@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[Kornia]]"]
-complements: []
+complements: ["[[albumentations]]", "[[supervision]]"]
 tags: [computer-vision, object-detection, object-tracking]
 url_docs: https://docs.opencv.org/
 url_repo: https://github.com/opencv/opencv
@@ -17,42 +17,60 @@ url_repo: https://github.com/opencv/opencv
 
 # OpenCV
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.
 
-Bibliothèque historique et la plus complète de **vision par ordinateur classique** : lecture/écriture et transformation d'images et de vidéos, espaces colorimétriques, filtrage, morphologie, contours, détection de features (ORB, SIFT), appariement, **géométrie** (homographies, calibration de caméra, stéréo, pose), flux optique et trackers. Cœur **C++** très optimisé (SIMD, CUDA en option) exposé en Python via `cv2`, Java et JavaScript. Inclut aussi un module `dnn` qui exécute des réseaux exportés (ONNX, Caffe). C'est la brique de prétraitement et de CV géométrique sous des couches plus haut niveau (y compris l'I/O d'[[albumentations]]).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Prétraitement** et manipulation d'images/vidéos : redimensionnement, conversion, filtrage, ROI.
-- Vision **géométrique** : calibration, homographie, stéréo, estimation de pose, flux optique.
-- Détecteurs et trackers **classiques** (cascades de Haar, KCF/CSRT) quand un réseau est superflu.
-- Capture caméra / pipeline vidéo temps réel côté CPU.
+Bibliothèque historique et la plus complète de vision par ordinateur **classique** : lecture,
+écriture et transformation d'images et de vidéos, espaces colorimétriques, filtrage,
+morphologie, contours, détection de features (ORB, SIFT) et appariement, **géométrie**
+(homographies, calibration de caméra, stéréo, estimation de pose), flux optique et trackers.
+Cœur C++ très optimisé — SIMD, CUDA en option — exposé en Python via `cv2`, ainsi qu'en Java
+et JavaScript. Un module `dnn` exécute aussi des réseaux exportés (ONNX, Caffe). Une
+convention historique à connaître : `cv2.imread` renvoie du **BGR**, pas du RGB, et les canaux
+sont à convertir avant de passer à un modèle entraîné en RGB.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Entraîner ou fine-tuner un réseau de vision → [[PyTorch]] + [[torchvision]] / [[timm]].
-- Opérations de vision **différentiables** (dans une boucle d'autograd, sur GPU) → [[Kornia]].
-- Pipeline d'**[[Augmentation d'images|augmentation]]** pour l'entraînement → [[albumentations]] (qui s'appuie justement sur OpenCV).
+| Prendre si | Écarter si |
+|---|---|
+| Prétraitement et manipulation d'images ou de vidéos : redimensionnement, conversion, filtrage, ROI | Quatre paquets pip mutuellement exclusifs (`opencv-python`, `-contrib-`, `-headless`, `-contrib-headless`) : n'en installer qu'un, et `-headless` sur serveur |
+| Vision géométrique : calibration, homographie, stéréo, estimation de pose, flux optique | L'accélération CUDA n'est pas dans les wheels : elle se compile depuis les sources |
+| Détecteurs et trackers classiques — cascades de Haar, KCF, CSRT — quand un réseau est superflu | |
+| Capture caméra et pipeline vidéo temps réel côté CPU | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source, **Apache-2.0** depuis la 4.5 (OpenCV 5 confirme la bascule ; les versions ≤ 4.4 étaient BSD-3-Clause). Gratuit.
-- Installation Python via les wheels `opencv-python` (et `opencv-contrib-python` pour les modules extra), maintenues séparément du dépôt cœur.
-- Bibliothèque locale (CPU ; accélération CUDA optionnelle à compiler) ; pas d'infra à héberger.
+- Installation — `uv add opencv-python`, ou l'un des trois autres paquets ; un seul des quatre à la fois
+- Point d'entrée — le module Python `cv2` ; bindings Java et JavaScript par ailleurs
+- Prérequis — Python et NumPy ; les images en BGR, à convertir en amont d'un modèle
+- Exécution — bibliothèque locale, CPU ; rien à héberger
+- Coût — Apache-2.0 depuis la 4.5 (les versions ≤ 4.4 étaient BSD-3-Clause), gratuit ; les wheels `opencv-python` sont maintenues séparément du dépôt cœur
 
-## Pièges
+## Écosystème
 
-- **BGR par défaut** (pas RGB) : `cv2.imread` renvoie du BGR — convertir avant de passer à un modèle entraîné en RGB, sinon canaux inversés.
-- Quatre paquets pip mutuellement exclusifs (`opencv-python`, `-contrib-`, `-headless`, `-contrib-headless`) : en installer **un seul**, sinon conflits ; utiliser `-headless` sur serveur (pas de GUI).
-- API impérative bas niveau, pas de batch/GPU/autograd : non adaptée à l'entraînement deep learning.
-
-## Alternatives
+### Alternatives
 
 - [[Kornia]] — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
-## Liens
+### Compléments
 
-- [[Vision par ordinateur]] — le cadre ; OpenCV en est la boîte à outils classique.
-- [[albumentations]] — bâtit son augmentation au-dessus d'OpenCV.
-- [[Suivi d'objets]] — trackers classiques (KCF, CSRT) fournis.
-- Doc : https://docs.opencv.org/
+- [[albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision. — bâtit son augmentation au-dessus d'OpenCV
+- [[supervision]] — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application. — s'appuie sur OpenCV pour le rendu des annotations
+
+## Ressources
+
+- Documentation — https://docs.opencv.org/
+- Dépôt — https://github.com/opencv/opencv
+
+## Voir aussi
+
+- [[Vision par ordinateur]] — le cadre dont OpenCV est la boîte à outils classique
+- [[Suivi d'objets]] — les trackers classiques (KCF, CSRT) qu'il fournit
+- [[Comparatif - Détection & segmentation]] — ce qui départage les briques du dossier

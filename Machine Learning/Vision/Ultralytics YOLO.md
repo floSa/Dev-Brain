@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Detectron2]]"]
-complements: []
+complements: ["[[supervision]]"]
 tags: [object-detection, segmentation, pose-estimation, object-tracking, computer-vision, deep-learning, gpu]
 url_docs: https://docs.ultralytics.com/
 url_repo: https://github.com/ultralytics/ultralytics
@@ -17,45 +17,60 @@ url_repo: https://github.com/ultralytics/ultralytics
 
 # Ultralytics YOLO
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.
 
-Implémentation et maintenance de la famille **YOLO** (You Only Look Once) — des détecteurs **un étage temps réel** — par Ultralytics. Une seule API (`from ultralytics import YOLO`) couvre [[Détection d'objets|détection]], [[Segmentation|segmentation d'instance]], [[Estimation de pose|pose]], classification et [[Suivi d'objets|suivi]] ; entraînement, validation, export (ONNX, TensorRT, CoreML) et inférence tiennent en quelques lignes. Lignée récente : **YOLOv8** → **YOLO11** (sept. 2024) → **YOLO26**, cette dernière supprimant la [[Détection d'objets|NMS]] pour une inférence **end-to-end** optimisée edge. C'est le défaut pragmatique quand on veut un détecteur qui marche vite, sans assembler soi-même backbone, têtes et post-traitement.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Besoin d'un **détecteur temps réel** entraîné sur boîtes custom, prêt en quelques heures.
-- Une seule lib pour détection **+** segmentation **+** pose **+** suivi, sans changer d'API.
-- Déploiement **edge / embarqué** : export TensorRT/ONNX, variantes nano à extra-large.
-- Prototypage rapide et fine-tuning à partir de poids COCO pré-entraînés.
+Implémentation et maintenance de la famille **YOLO** — *You Only Look Once*, des détecteurs
+**un étage temps réel** — par Ultralytics. Une seule API, `from ultralytics import YOLO`,
+couvre détection, segmentation d'instance, pose, classification et suivi ; entraînement,
+validation, export (ONNX, TensorRT, CoreML) et inférence tiennent en quelques lignes. Lignée
+récente : YOLOv8, puis YOLO11 en septembre 2024, puis YOLO26, cette dernière supprimant la NMS
+pour une inférence end-to-end optimisée pour l'edge. C'est le défaut pragmatique quand on veut
+un détecteur qui marche vite, sans assembler soi-même backbone, têtes et post-traitement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Architecture de détection **modulaire et customisable** (têtes, RPN, panoptique) pour la recherche → [[Detectron2]].
-- Briques de détection/segmentation **dans** l'écosystème PyTorch officiel sans contrainte de licence → [[torchvision]] (Faster/Mask R-CNN, RetinaNet).
-- Segmentation **promptable zero-shot** sans entraîner de classes → [[segment-anything]].
-- Projet **commercial fermé** réticent à l'AGPL-3.0 → prévoir la licence Enterprise (voir ci-dessous) ou une alternative permissive.
+| Prendre si | Écarter si |
+|---|---|
+| Un détecteur temps réel entraîné sur boîtes custom, prêt en quelques heures | Projet commercial fermé : l'AGPL-3.0 peut obliger à publier le code appelant d'un service distribué — prévoir la licence Enterprise |
+| Une seule bibliothèque pour détection, segmentation, pose et suivi, sans changer d'API | Les poids COCO couvrent 80 classes génériques : un domaine spécifique exige du fine-tuning sur données annotées |
+| Déploiement edge ou embarqué : export TensorRT/ONNX, variantes nano à extra-large | Numérotation mouvante — v5, v8, 11, 26, plus les forks v7, v9 et v10 hors Ultralytics : épingler la version dans le lockfile |
+| Prototypage rapide et fine-tuning depuis des poids COCO pré-entraînés | L'API clé en main masque les hyperparamètres ; sur cas difficile, descendre dans la config reste nécessaire |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python open-source sous **AGPL-3.0** (copyleft fort) ; `uv add ultralytics`. Rien à héberger.
-- **Licence à double régime** : AGPL-3.0 gratuite (recherche, open source, usage interne), mais redistribuer un produit qui l'intègre impose d'en publier le code source ; pour un usage propriétaire/fermé, Ultralytics vend une **licence Enterprise** payante.
-- S'exécute là où tourne PyTorch (CPU, GPU NVIDIA, MPS) ; mise à l'échelle single-node, export vers runtimes optimisés pour la prod.
+- Installation — `uv add ultralytics`
+- Point d'entrée — la classe `YOLO` en Python, ou la CLI `yolo` ; export vers ONNX, TensorRT et CoreML
+- Prérequis — PyTorch ; des données annotées en boîtes dès que le domaine sort des 80 classes COCO
+- Exécution — là où tourne PyTorch (CPU, GPU NVIDIA, MPS), single-node ; export vers un runtime optimisé pour la production
+- Coût — AGPL-3.0, copyleft fort : gratuite en recherche, en open source et en usage interne, mais redistribuer un produit qui l'intègre impose d'en publier le code source. Licence Enterprise payante pour l'usage propriétaire
 
-## Pièges
+## Écosystème
 
-- **Piège licence AGPL-3.0** : intégrer YOLO dans un service distribué peut obliger à ouvrir tout le code appelant — vérifier avant la prod.
-- Les **poids COCO** sont entraînés sur 80 classes génériques ; un domaine spécifique exige du fine-tuning sur données annotées.
-- Numérotation marketing mouvante (v5, v8, 11, 26, plus les forks YOLOv7/v9/v10 hors Ultralytics) : épingler la version dans le lockfile.
-- L'API « clé en main » masque les hyperparamètres ; sur cas difficiles, descendre dans la config reste nécessaire.
-
-## Alternatives
+### Alternatives
 
 - [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
 
-## Liens
+### Compléments
 
-- [[Détection d'objets]] — la tâche cœur (un étage, anchors, NMS, mAP).
-- [[Segmentation]] / [[Estimation de pose]] / [[Suivi d'objets]] — les autres tâches couvertes par la même API.
-- [[supervision]] — outillage model-agnostic pour annoter et suivre les sorties YOLO.
-- [[PyTorch]] — le framework sous-jacent.
-- Doc : https://docs.ultralytics.com/ · Licence : https://www.ultralytics.com/license
+- [[supervision]] — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application. — l'outillage qui annote et suit ses sorties en aval
+
+## Ressources
+
+- Documentation — https://docs.ultralytics.com/
+- Dépôt — https://github.com/ultralytics/ultralytics
+- Documentation — https://www.ultralytics.com/license — les termes AGPL-3.0 et l'offre Enterprise
+
+## Voir aussi
+
+- [[Détection d'objets]] — la tâche cœur : un étage, anchors, NMS, mAP
+- [[Segmentation]], [[Estimation de pose]], [[Suivi d'objets]] — les autres tâches couvertes par la même API
+- [[Comparatif - Détection & segmentation]] — ce qui départage les briques du dossier
+- [[PyTorch]] — le framework sous-jacent

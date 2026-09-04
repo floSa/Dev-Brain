@@ -17,44 +17,59 @@ url_repo: https://github.com/kornia/kornia
 
 # Kornia
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
-Bibliothèque de **vision par ordinateur différentiable** bâtie sur [[PyTorch]] : elle réimplémente les opérations classiques de [[OpenCV]] (filtres, transformations géométriques, espaces colorimétriques, détection de features, épipolaire) en **opérateurs tensoriels différentiables**. Conséquence : tout s'exécute par **batch sur GPU**, traverse l'**autograd** (gradients qui remontent à travers les transformations) et s'insère directement dans un modèle. Son module `kornia.augmentation` fait de l'[[Augmentation d'images|augmentation]] sur GPU, et les briques géométriques servent la Spatial AI (homographies, profondeur, pose) apprenables de bout en bout.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Faire l'**augmentation sur GPU** (et non CPU) pour décharger le `DataLoader` quand l'I/O est le goulot.
-- Avoir besoin d'opérations CV **dans le graphe** : STN, photometric/geometric loss, transformations apprenables, self-supervised.
-- Vision **géométrique différentiable** : homographie, épipolaire, profondeur, calibration intégrées à l'entraînement.
+Bibliothèque de vision par ordinateur **différentiable** bâtie sur PyTorch. Elle réimplémente
+les opérations classiques d'OpenCV — filtres, transformations géométriques, espaces
+colorimétriques, détection de features, géométrie épipolaire — en **opérateurs tensoriels
+différentiables**. Conséquence : tout s'exécute par batch sur GPU, traverse l'**autograd**,
+les gradients remontant à travers les transformations, et s'insère directement dans un modèle.
+Le module `kornia.augmentation` fait l'augmentation sur GPU, et les briques géométriques
+servent la Spatial AI apprenable de bout en bout. Le prix est l'uniformité du format : tout
+est tenseur BCHW en float normalisé, sans NumPy ni PIL au milieu.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Augmentation **CPU** la plus rapide, avec boîtes/masques → [[albumentations]].
-- Transformations standard sans besoin de différentiabilité → `transforms.v2` de [[torchvision]].
-- Vision classique **hors PyTorch** / temps réel CPU → [[OpenCV]].
+| Prendre si | Écarter si |
+|---|---|
+| Faire l'augmentation sur GPU pour décharger le `DataLoader` quand l'I/O est le goulot | Le gain GPU n'est réel que si l'augmentation est bien le goulot **et** que le batch est assez gros |
+| Opérations de vision **dans le graphe** : STN, perte photométrique ou géométrique, transformations apprenables, auto-supervision | Augmentation CPU la plus rapide, avec boîtes et masques → [[albumentations]] |
+| Vision géométrique différentiable — homographie, épipolaire, profondeur, calibration — intégrée à l'entraînement | Transformations standard sans besoin de différentiabilité → `transforms.v2` de [[torchvision]] |
+| | Vision classique hors PyTorch, ou temps réel CPU → [[OpenCV]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source **Apache-2.0**, gratuit ; `uv add kornia`. Pur Python au-dessus de PyTorch.
-- S'exécute sur CPU/GPU (différentiable, vectorisé par batch) ; mise à l'échelle déléguée à PyTorch, single-node.
-- Aucune infra à héberger.
+- Installation — `uv add kornia`
+- Point d'entrée — des `nn.Module` posés dans le graphe PyTorch, dont le module `kornia.augmentation`
+- Prérequis — PyTorch, et des tenseurs BCHW en float normalisé de bout en bout
+- Exécution — CPU ou GPU, vectorisé par batch ; single-node, mise à l'échelle déléguée à PyTorch
+- Coût — Apache-2.0, gratuit ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- Tout est **tenseur PyTorch** (BCHW, float normalisé) : penser la conversion en amont/aval, pas de NumPy/PIL au milieu.
-- Le gain GPU n'est réel que si l'augmentation est le goulot **et** le batch assez gros ; sinon albumentations sur CPU suffit.
-- Couverture de transformations un peu moindre qu'albumentations sur certains cas détection/segmentation.
-
-## Alternatives
+### Alternatives
 
 - [[albumentations]] — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
 - [[torchvision]] — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
 - [[OpenCV]] — Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.
 
-## Liens
+## Ressources
 
-- [[PyTorch]] — le socle tensoriel et l'autograd dont Kornia hérite.
-- [[Augmentation d'images]] — l'augmentation, ici différentiable et sur GPU.
-- [[Vision par ordinateur]] — le cadre ; [[CNN]] — les modèles dans lesquels Kornia s'insère.
-- [[OpenCV]] — l'équivalent classique, non différentiable.
-- Doc : https://kornia.readthedocs.io/
+- Documentation — https://kornia.readthedocs.io/
+- Dépôt — https://github.com/kornia/kornia
+
+## Voir aussi
+
+- [[Augmentation d'images]] — l'augmentation, ici différentiable et sur GPU
+- [[Vision par ordinateur]] — le cadre
+- [[Vision]] — le hub du dossier ; Kornia n'entre pas dans la vue du comparatif, filtrée sur détection et segmentation
+- [[PyTorch]] — le socle tensoriel et l'autograd dont Kornia hérite
+- [[CNN]] — les modèles dans lesquels Kornia s'insère
