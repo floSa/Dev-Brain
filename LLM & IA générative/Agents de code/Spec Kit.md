@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
 alternatives: ["[[BMAD]]"]
-complements: []
+complements: ["[[Aider]]", "[[Cline]]", "[[Continue]]"]
 tags: [code-assistant, code-generation, agents, cli]
 url_docs: https://github.com/github/spec-kit
 url_repo: https://github.com/github/spec-kit
@@ -18,39 +18,60 @@ url_repo: https://github.com/github/spec-kit
 
 # Spec Kit
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
 
-Spec Kit (MIT, GitHub) outille le **spec-driven development** : au lieu d'écrire du code puis de le documenter, on rédige une **spécification exécutable** qui devient la source de vérité et pilote un agent de codage IA, du cahier des charges jusqu'à l'implémentation. La CLI `specify` scaffolde le projet et installe une série de commandes slash (`/speckit.*`) que l'agent exécute étape par étape. Compatible avec 30+ agents (Copilot, Claude, Cursor, Gemini CLI…).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Cadrer un projet greenfield ou une fonctionnalité avec un cahier des charges explicite **avant** de laisser l'IA coder.
-- Vouloir une trace structurée intention → plan → tâches → implémentation, révisable en équipe.
-- Imposer des garde-fous : une « constitution » de principes que l'agent doit respecter.
+Outillage du **spec-driven development**, maintenu par GitHub : au lieu d'écrire du code puis de
+le documenter, on rédige une **spécification exécutable** qui devient la source de vérité et
+pilote un agent de codage IA, du cahier des charges jusqu'à l'implémentation. La CLI `specify`
+scaffolde le projet et installe une série de commandes slash (`/speckit.*`) que l'agent exécute
+étape par étape, plus une « constitution » de principes qu'il doit respecter. C'est un **cadre
+méthodologique**, pas un assistant de code : il ne remplace pas l'agent qui écrit, il le
+contraint. Compatible avec 30+ agents (Copilot, Claude, Cursor, Gemini CLI…), et très actif —
+~122k stars, releases fréquentes.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Complétion inline ou chat intégré à l'IDE → [[Continue]].
-- Petite édition ponctuelle : le workflow SDD (6-7 étapes) est surdimensionné.
+| Prendre si | Écarter si |
+|---|---|
+| Cadrer un projet greenfield ou une fonctionnalité avec un cahier des charges explicite **avant** de laisser l'IA coder | Petite édition ponctuelle : le workflow SDD, six à sept étapes, est surdimensionné |
+| Vouloir une trace structurée intention → plan → tâches → implémentation, révisable en équipe | Garbage-in : une spec bâclée produit un plan et un code bâclés — l'effort se déplace vers l'amont, il ne disparaît pas |
+| Imposer des garde-fous : une « constitution » de principes que l'agent doit respecter | Projet à figer : jeune et mouvant (nombreuses releases, commandes qui évoluent) — verrouiller une version |
+| | La qualité finale dépend encore de l'agent de codage sous-jacent, que Spec Kit ne remplace pas |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- MIT, écrit en Python (CLI `specify`), requiert Python 3.11+ et git ; multiplateforme (Windows, macOS, Linux).
-- Installation : `uv tool install specify-cli` (ou `pipx`), puis `specify init <projet> --integration <agent>` ; `specify integration list` liste les agents supportés.
-- Workflow SDD : `/speckit.constitution` → `/speckit.specify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement`, plus les optionnelles `clarify`, `analyze`, `checklist`, `taskstoissues`.
-- Maintenu par GitHub, très actif (~122k stars, releases fréquentes).
+- Installation — `uv tool install specify-cli` (ou `pipx`), puis `specify init <projet> --integration <agent>`
+- Point d'entrée — les commandes slash `/speckit.constitution` → `/speckit.specify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement`, plus les optionnelles `clarify`, `analyze`, `checklist`, `taskstoissues`
+- Prérequis — Python 3.11+ et git ; un agent de codage supporté (`specify integration list` en donne la liste)
+- Exécution — sur le poste, en ligne de commande ; Windows, macOS, Linux
+- Coût — gratuit, MIT ; la dépense réelle est celle du LLM de l'agent piloté
 
-## Pièges
+## Écosystème
 
-- Garbage-in : une spec bâclée produit un plan et un code bâclés — l'effort se déplace vers l'amont, il ne disparaît pas.
-- Surcouche méthodologique : la qualité finale dépend encore de l'agent de codage sous-jacent, que Spec Kit ne remplace pas.
-- Jeune et mouvant (nombreuses releases, commandes qui évoluent) : verrouiller une version dans un projet.
+### Alternatives
 
-## Alternatives
-
-- Pas de substitut direct dans le brain : c'est un **cadre méthodologique** (spec-driven), pas un assistant de code. Les agents qu'il pilote sont fichés à part : [[Aider]], [[Cline]], [[Continue]].
 - [[BMAD]] — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
 
-## Liens
+### Compléments
 
-- Repo / doc : https://github.com/github/spec-kit
+- [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur. — l'un des agents que la spec pilote.
+- [[Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe. — idem, côté éditeur.
+- [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API). — idem, avec le modèle de son choix.
+
+## Ressources
+
+- Documentation — https://github.com/github/spec-kit
+- Dépôt — https://github.com/github/spec-kit
+
+## Voir aussi
+
+- [[Agents de code]] — le hub du dossier
+- [[Comparatif - Assistants de code IA]] — ce qui départage les briques du dossier

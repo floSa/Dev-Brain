@@ -17,44 +17,55 @@ url_repo: https://github.com/pydantic/pydantic-ai
 
 # PydanticAI
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
 
-Framework d'**agents** de l'équipe qui édite [[Pydantic]], appliquant la même philosophie aux LLM : le développeur définit des **types**, et le framework garantit que les entrées/sorties s'y conforment. Cœur de l'outil : des agents **model-agnostic** (OpenAI, Anthropic, Gemini, locaux…) dont la **sortie est un objet Pydantic validé**, plus l'**injection de dépendances** typée pour passer du contexte aux outils et aux prompts. La **type-safety** capture les erreurs à l'écriture (mypy/pyright) plutôt qu'à l'exécution. Pensé production : intégration **Logfire** (observabilité), support **MCP**, et **durable execution** pour workflows longs. Licence **MIT**, version 1.x stable.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Construire des **agents en Python** avec une exigence forte de **typage** et de sorties **structurées fiables**.
-- Équipe déjà investie dans [[Pydantic]] : courbe d'apprentissage minimale, mêmes modèles.
-- Besoin d'**observabilité** native (Logfire) et de rester **agnostique du fournisseur**.
+Framework d'**agents** de l'équipe qui édite [[Pydantic]], appliquant la même philosophie aux
+LLM : le développeur définit des **types**, et le framework garantit que les entrées et les
+sorties s'y conforment. Le cœur en découle — des agents **model-agnostic** (OpenAI, Anthropic,
+Gemini, modèles locaux…) dont la **sortie est un objet Pydantic validé**, et une **injection de
+dépendances** typée pour passer du contexte aux outils et aux prompts. La **type-safety** capture
+les erreurs à l'écriture, par mypy ou pyright, plutôt qu'à l'exécution. Pensé pour la production :
+intégration **Logfire** pour l'observabilité, support **MCP**, et **durable execution** pour les
+workflows longs. Version 1.x stable.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin **uniquement** d'extraire un objet structuré d'un appel LLM, sans logique d'agent → [[Instructor]] (plus léger).
-- Très large besoin d'**intégrations** tierces toutes faites (loaders, vector stores, outils) → [[LangChain]].
-- Agents à **graphe d'état complexe** (cycles, checkpoints, human-in-the-loop) → [[LangGraph]].
+| Prendre si | Écarter si |
+|---|---|
+| Construire des agents en Python avec une exigence forte de typage et de sorties structurées fiables | Aucun type-checker en CI : la type-safety n'a de valeur qu'avec mypy ou pyright activé — sinon l'argument central disparaît |
+| Équipe déjà investie dans Pydantic : courbe d'apprentissage minimale, mêmes modèles | Besoin d'intégrations tierces toutes faites : elles sont plus rares ici, et retrievers comme outils sont parfois à câbler soi-même |
+| Besoin d'observabilité native (Logfire) tout en restant agnostique du fournisseur | Projet à figer : jeune et rapide, releases quasi hebdomadaires — épingler la version, l'API bouge encore |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; bibliothèque importée dans l'app (`pip`/`uv`), aucune infra propre.
-- Observabilité via **Pydantic Logfire** (service managé optionnel, payant au-delà du palier gratuit) — le framework reste utilisable sans.
-- Coût réel dominé par les appels aux **LLM** sous-jacents.
+- Installation — bibliothèque `pip` / `uv`, importée dans l'application
+- Point d'entrée — API Python : agent typé, sortie en modèle Pydantic, dépendances injectées ; support MCP pour consommer des outils externes
+- Prérequis — Python, un accès LLM, et un type-checker (mypy ou pyright) en CI pour que le typage serve
+- Exécution — en bibliothèque dans l'application hôte, aucune infra propre ; la durable execution couvre les workflows longs
+- Coût — gratuit, MIT ; Pydantic Logfire est un service managé optionnel, payant au-delà du palier gratuit, et le framework s'utilise sans. La dépense réelle est celle des LLM
 
-## Pièges
+## Écosystème
 
-- Projet **jeune et rapide** (releases quasi hebdomadaires) : épingler la version, l'API bouge encore.
-- La **type-safety** n'a de valeur qu'avec un type-checker activé (mypy/pyright) en CI — sinon on perd l'argument central.
-- Moins d'**intégrations toutes faites** que LangChain : il faut parfois câbler soi-même retrievers et outils.
-
-## Alternatives
+### Alternatives
 
 - [[Instructor]] — Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
 - [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 
-## Liens
+## Ressources
 
-- Bâti sur [[Pydantic]] — réutilise ses modèles et sa validation pour les sorties LLM.
-- Met en œuvre le concept [[Structured outputs]] (le patron des sorties structurées).
-- Couple **sorties structurées** avec [[Instructor]] : PydanticAI est un framework d'agents complet, Instructor une bibliothèque focalisée extraction.
-- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://pydantic.dev/docs/ai/
+- Documentation — https://pydantic.dev/docs/ai/
+- Dépôt — https://github.com/pydantic/pydantic-ai
+
+## Voir aussi
+
+- [[Agents]] — le hub du dossier
+- [[Comparatif - Frameworks LLM]] — ce qui départage les briques du dossier
+- [[Structured outputs]] — le patron des sorties structurées, dont PydanticAI est une mise en œuvre

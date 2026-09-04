@@ -18,51 +18,60 @@ url_repo: https://github.com/ayghri/i-have-adhd
 
 # i-have-adhd
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.
 
-Un fichier `SKILL.md`, distribué comme plugin Claude Code et comme skill multi-agents, qui reformate la sortie d'un agent de code pour un lecteur qui veut aller droit au but — la cible annoncée étant les personnes avec un TDAH, l'usage réel étant plus large.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension Markdown | open-source | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-Le contenu tient en **dix règles** : l'action suivante en premier ; numéroter le travail multi-étapes ; terminer par une action de moins de deux minutes ; supprimer les digressions ; rappeler l'état d'un tour à l'autre ; donner des estimations de temps chiffrées ; rendre les gains visibles ; ton factuel sur les erreurs ; listes plafonnées à cinq items ; zéro préambule, récapitulatif ou formule de politesse. Le mode persiste jusqu'à un « stop adhd mode ».
+## Définition
 
-La valeur est dans le prompt, pas dans le logiciel : il n'y a pas de code à exécuter.
+Un fichier `SKILL.md`, distribué comme plugin Claude Code et comme skill multi-agents, qui
+reformate la sortie d'un agent de code pour un lecteur qui veut aller droit au but — la cible
+annoncée étant les personnes avec un TDAH, l'usage réel étant plus large. Le contenu tient en
+**dix règles** — action suivante en premier, travail multi-étapes numéroté, dernière action de
+moins de deux minutes, digressions supprimées, état rappelé d'un tour à l'autre, estimations de
+temps chiffrées, gains rendus visibles, ton factuel sur les erreurs, listes plafonnées à cinq
+items, zéro préambule ni récapitulatif — et le mode persiste jusqu'à un « stop adhd mode ». La
+valeur est dans le prompt, pas dans le logiciel : rien à exécuter, un effet fort sur la
+verbosité et **nul sur la justesse**, et un contenu très mince au regard de sa popularité — à
+lire en deux minutes et à adapter plutôt qu'à installer aveuglément.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Sessions longues avec un agent bavard, où le préambule et le récapitulatif coûtent plus de lecture que le travail lui-même.
-- Travail à étapes où l'on perd le fil : le rappel d'état à chaque tour est la règle la plus utile de l'ensemble.
-- Vouloir tester une discipline de sortie sans l'écrire soi-même dans son `CLAUDE.md`.
+| Prendre si | Écarter si |
+|---|---|
+| Sessions longues avec un agent bavard, où le préambule et le récapitulatif coûtent plus de lecture que le travail lui-même | Phase d'apprentissage ou d'exploration : la concision imposée tronque les explications qui servent à comprendre, en particulier sur les erreurs et les compromis |
+| Travail à étapes où l'on perd le fil : le rappel d'état à chaque tour est la règle la plus utile de l'ensemble | Revue d'architecture ou décision engageante, où le raisonnement compte autant que la conclusion |
+| Vouloir tester une discipline de sortie sans l'écrire soi-même dans son `CLAUDE.md` | Configuration déjà personnalisée : le skill entre en conflit avec un `~/.claude/CLAUDE.md` chargé et avec les output-styles existants — vérifier ce qui gagne avant de l'activer en permanent |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Phase d'apprentissage ou d'exploration : la concision imposée tronque les explications qui servent à comprendre.
-- Revue d'architecture ou décision engageante, où le raisonnement compte autant que la conclusion.
-- Configuration déjà personnalisée : le skill entre en conflit avec un `~/.claude/CLAUDE.md` chargé et avec les output-styles existants.
+- Installation — Claude Code : `claude plugin marketplace add ayghri/i-have-adhd` puis `claude plugin install i-have-adhd@i-have-adhd`, mode permanent avec `touch ~/.claude/.i-have-adhd-always`. Cursor : `npx skills add ayghri/i-have-adhd -a cursor -y`, plus une règle utilisateur à coller dans Settings → Rules. Codex : `codex plugin marketplace add … --ref main` puis `codex plugin add`, always-on via `~/.codex/AGENTS.md`. Gemini CLI : fichier `.toml` dans `~/.gemini/commands/`, ou `gemini extensions install`. Qwen Code : `qwen extensions install ayghri/i-have-adhd`. Kimi Code CLI : `/plugins` → Custom → URL
+- Point d'entrée — le skill s'active dans la conversation et persiste jusqu'à « stop adhd mode »
+- Prérequis — un agent de code supporté ; rien d'autre (l'API GitHub annonce « Python », c'est trompeur — il n'y a pas de programme)
+- Exécution — dans l'agent hôte, sur le poste ; multiplateforme, c'est du markdown et de la configuration
+- Coût — gratuit, MIT ; aucun coût propre, et un effet à la baisse sur les tokens de sortie
 
-## Installation & plateformes
+## Écosystème
 
-- Claude Code : `claude plugin marketplace add ayghri/i-have-adhd` puis `claude plugin install i-have-adhd@i-have-adhd` ; mode permanent avec `touch ~/.claude/.i-have-adhd-always`.
-- Cursor : `npx skills add ayghri/i-have-adhd -a cursor -y`, plus une règle utilisateur à coller dans Settings → Rules.
-- Codex : `codex plugin marketplace add … --ref main` puis `codex plugin add` ; always-on via `~/.codex/AGENTS.md`.
-- Gemini CLI : fichier `.toml` dans `~/.gemini/commands/`, ou `gemini extensions install`. Qwen Code : `qwen extensions install ayghri/i-have-adhd`. Kimi Code CLI : `/plugins` → Custom → URL.
-- Multiplateforme : c'est du markdown et de la configuration. L'API GitHub annonce « Python », c'est trompeur — il n'y a pas de programme.
-
-## Pièges
-
-- Effet fort sur la verbosité, **nul sur la justesse** : un agent concis n'est pas un agent plus juste.
-- Risque de troncature d'explications utiles, en particulier sur les erreurs et les compromis.
-- Conflit possible avec les instructions globales déjà en place — vérifier ce qui gagne avant de l'activer en permanent.
-- Contenu très mince au regard de sa popularité : c'est un prompt, à lire en deux minutes et à adapter plutôt qu'à installer aveuglément.
-
-## Alternatives
+### Alternatives
 
 - Aucune page équivalente dans le brain à ce jour : la section est faible par construction, il n'existe pas d'autre skill de discipline de sortie fiché.
 - Voisins par la forme (autres skills installés dans un agent), pas par la fonction : [[Graphify]], [[Spec Kit]], [[Archify]].
 
-## Liens
+## Ressources
 
-- [[Comparatif - Assistants de code IA]] — comparatif de la catégorie
-- [[Agent skills]] — concept : compétences packagées d'un agent
-- [[Prompt engineering]] — concept : conception de prompts
-- [[Harnais d'agent]] — concept : la couche qui entoure le modèle et exécute la boucle
-- [[Context engineering]] — concept : composition et budget du contexte
-- Repo : https://github.com/ayghri/i-have-adhd
+- Documentation — https://github.com/ayghri/i-have-adhd
+- Dépôt — https://github.com/ayghri/i-have-adhd
+
+## Voir aussi
+
+- [[Agents de code]] — le hub du dossier
+- [[Comparatif - Assistants de code IA]] — ce qui départage les briques du dossier
+- [[Agent skills]] — compétences packagées d'un agent
+- [[Prompt engineering]] — conception de prompts
+- [[Harnais d'agent]] — la couche qui entoure le modèle et exécute la boucle
+- [[Context engineering]] — composition et budget du contexte
