@@ -11,7 +11,7 @@ maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Postgres]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: []
+complements: ["[[MySQL Workbench]]"]
 tags: [relational]
 url_docs: https://dev.mysql.com/doc/
 url_repo: https://github.com/mysql/mysql-server
@@ -19,36 +19,43 @@ url_repo: https://github.com/mysql/mysql-server
 
 # MySQL
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
 
-SGBD relationnel le plus déployé du web, pilier historique de la stack LAMP. Simple à prendre en main, écosystème et hébergement managé omniprésents, moteur InnoDB transactionnel (ACID) éprouvé. Détenu par Oracle, avec une édition Community open-source (GPL) et une édition Enterprise commerciale.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Application web classique, CMS (WordPress…), besoin relationnel standard.
-- Recherche du plus large écosystème d'hébergement et de tutoriels.
-- Charge lecture intensive avec réplicas ; schéma relationnel simple et stable.
-- Compatibilité avec un existant ou un hébergeur qui impose MySQL.
+Le SGBD relationnel le plus déployé du web, pilier historique de la stack LAMP. Le moteur de
+stockage par défaut, InnoDB, est transactionnel et éprouvé ; le reste du produit privilégie la
+simplicité de mise en route sur la richesse fonctionnelle. Son vrai atout est l'écosystème :
+hébergement managé, outillage et documentation sont disponibles partout, pour toutes les
+versions. Détenu par Oracle, qui en publie une édition Community et une édition Enterprise
+commerciale.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Types riches, extensions, requêtes avancées → [[Postgres]].
-- Volonté d'un fork 100 % open-source, sans Oracle → [[MariaDB]].
-- Scale horizontal des écritures multi-région → [[CockroachDB]].
+| Prendre si | Écarter si |
+|---|---|
+| Application web classique, CMS (WordPress…), besoin relationnel standard | Défauts historiques laxistes : `utf8mb4` et un `sql_mode` strict sont à forcer à la main |
+| Chercher le plus large écosystème d'hébergement, d'outillage et de tutoriels | Divergences fonctionnelles avec MariaDB : la compatibilité n'est pas garantie à 100 % |
+| Charge en lecture intensive avec réplicas, sur un schéma simple et stable | Gouvernance Oracle : certaines fonctionnalités restent réservées à l'édition Enterprise |
+| Un existant ou un hébergeur qui impose MySQL | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (Docker, paquet) ou managé partout (RDS, Cloud SQL, Aurora MySQL…).
-- Scaling vertical + réplicas lecture ; sharding applicatif ou via Vitess pour l'échelle.
-- Édition Community gratuite (GPL) ; Enterprise payante (support, outillage).
+- Installation — paquet système ou image Docker ; managé partout (RDS, Cloud SQL, Aurora MySQL)
+- Point d'entrée — serveur SQL sur le port 3306 ; client `mysql`, pilotes standard
+- Prérequis — un serveur à administrer ; le moteur InnoDB pour tout ce qui doit être transactionnel
+- Exécution — un primaire plus des réplicas de lecture ; sharding applicatif, ou Vitess pour l'échelle
+- Coût — édition Community gratuite sous GPL ; édition Enterprise payante (support, outillage)
 
-## Pièges
+## Écosystème
 
-- Défauts historiques laxistes (modes SQL, encodage) : forcer `utf8mb4` et un `sql_mode` strict.
-- Divergences fonctionnelles avec [[MariaDB]] : compatibilité non garantie à 100 %.
-- Gouvernance Oracle : certaines fonctionnalités réservées à l'édition Enterprise.
-
-## Alternatives
+### Alternatives
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne.
 - [[MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
@@ -56,8 +63,16 @@ SGBD relationnel le plus déployé du web, pilier historique de la stack LAMP. S
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 - [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
 
-## Liens
+### Compléments
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases relationnelles]] — comparatif des moteurs
-- Doc : https://dev.mysql.com/doc/
+- [[MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur. — la modélisation et l'administration graphiques du serveur
+
+## Ressources
+
+- Documentation — https://dev.mysql.com/doc/
+- Dépôt — https://github.com/mysql/mysql-server
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases relationnelles]] — ce qui départage les moteurs du dossier

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C
 alternatives: ["[[Weaviate]]", "[[Qdrant]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: []
+complements: ["[[Postgres]]"]
 tags: [vector-db, rag, postgres]
 url_docs: https://github.com/pgvector/pgvector#readme
 url_repo: https://github.com/pgvector/pgvector
@@ -58,6 +58,10 @@ construit plus vite.
 - [[Qdrant]] — Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+
+### Compléments
+
+- [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — le moteur hôte, dont l'extension étend le type système
 
 ## Ressources
 

@@ -17,46 +17,58 @@ url_repo: https://github.com/neuml/txtai
 
 # txtai
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
 
-**Base d'embeddings tout-en-un** en Python (Apache-2.0, NeuML). Un même index combine **recherche vectorielle** (sémantique), **filtres SQL** sur métadonnées et **graphe** de connaissances ; par-dessus, txtai orchestre des **pipelines et workflows LLM** (RAG, agents, extraction, traduction…). Bâti sur [[HuggingFace|Transformers]], [[sentence-transformers]] et [[FastAPI]]. S'utilise **embarqué** (import Python, du notebook au script) ou exposé en **service API** (FastAPI, conteneur), avec des bindings JavaScript / Java / Rust / Go.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Monter une **recherche sémantique** ou un **[[RAG]]** en Python sans déployer une base vectorielle séparée.
-- Besoin d'un **index unifié** vecteur + SQL + graphe, plutôt que d'assembler plusieurs briques.
-- Du prototype embarqué à une petite/moyenne mise en production exposée en API.
-- Orchestrer des **workflows LLM** (pipelines, agents) au plus près de l'index.
+Base d'embeddings tout-en-un. Un même index combine **recherche vectorielle**, **filtres SQL**
+sur les métadonnées et **graphe** de connaissances ; par-dessus, txtai orchestre des pipelines
+et des workflows LLM — RAG, agents, extraction, traduction. Le socle est
+[[HuggingFace|Transformers]], sentence-transformers et [[FastAPI]]. Il s'utilise **embarqué**,
+du notebook au script, ou exposé en **service API** dans un conteneur, avec des bindings
+JavaScript, Java, Rust et Go.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Très grande échelle distribuée, milliards de documents, ranking ML en serving → [[Vespa]] ou [[Elasticsearch]].
-- Stack non-Python où l'on veut le moteur comme service indépendant et costaud (les bindings restent secondaires).
-- Base vectorielle managée clé en main → [[Pinecone]] ; ou base dédiée à fort filtrage → [[Qdrant]].
+| Prendre si | Écarter si |
+|---|---|
+| Monter une recherche sémantique ou un RAG sans déployer de base vectorielle séparée | Mono-nœud : la montée en charge est verticale, il n'y a pas de moteur distribué — la limite de volume s'anticipe |
+| Un index unifié vecteur + SQL + graphe, plutôt que d'assembler plusieurs briques | Tire un écosystème HuggingFace lourd selon les extras installés (taille d'image, dépendances) |
+| Du prototype embarqué à une mise en production modeste exposée en API | Le modèle d'embedding est à choisir selon la langue et le domaine, et à garder cohérent entre index et requête |
+| Orchestrer des workflows LLM (pipelines, agents) au plus près de l'index | Stack non-Python où le moteur doit être un service indépendant : les bindings restent secondaires |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- `uv add txtai` (extras selon les pipelines voulus) ; Apache-2.0, gratuit.
-- **Single-node** : index en mémoire/disque local ; GPU recommandé pour encoder du volume.
-- Self-host en service via l'API FastAPI intégrée (conteneur) ; pas d'offre managée éditeur.
+- Installation — `uv add txtai`, avec les extras correspondant aux pipelines voulus
+- Point d'entrée — import Python embarqué, ou API FastAPI intégrée exposée en conteneur ; bindings JavaScript, Java, Rust et Go
+- Prérequis — un modèle d'embedding à télécharger ; GPU recommandé pour encoder du volume
+- Exécution — mono-nœud, index en mémoire ou sur disque local ; pas d'offre managée éditeur
+- Coût — gratuit sous Apache-2.0 ; la dépense est le calcul d'embedding et la RAM de l'index
 
-## Pièges
+## Écosystème
 
-- **Single-node** : monte en charge verticalement, pas un moteur distribué — anticiper la limite de volume.
-- Tire un **écosystème HuggingFace** lourd selon les extras installés (taille d'image, dépendances).
-- Choisir un modèle d'embedding adapté à la **langue** et au domaine ; rester cohérent index/requête.
-
-## Alternatives
+### Alternatives
 
 - [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
 - [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
 - [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
-## Liens
+## Ressources
 
-- [[Recherche d'information]] — le cadre (lexical / dense / hybride) que txtai met en œuvre.
-- [[Bases de données vectorielles]] · [[embeddings]] — ce qu'il stocke et recherche.
-- [[RAG]] — usage phare (workflows et pipelines intégrés).
-- [[sentence-transformers]] — socle d'embeddings sous-jacent.
-- [[Comparatif - Moteurs de recherche]] — comparatif de la catégorie.
-- Doc : https://neuml.github.io/txtai/
+- Documentation — https://neuml.github.io/txtai/
+- Dépôt — https://github.com/neuml/txtai
+
+## Voir aussi
+
+- [[Recherche d'information]] — le cadre (lexical / dense / hybride) que txtai met en œuvre
+- [[Bases de données vectorielles]] — ce qu'il stocke et recherche
+- [[embeddings]] — la représentation qu'il indexe
+- [[RAG]] — son usage phare, avec workflows et pipelines intégrés
+- [[sentence-transformers]] — le socle d'embeddings sous-jacent
+- [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier

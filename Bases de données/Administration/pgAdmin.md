@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux, web (Docker)"
 langage: Python
 alternatives: ["[[DBeaver]]"]
-complements: []
+complements: ["[[Postgres]]"]
 tags: [db-client, postgres, relational]
 url_docs: https://www.pgadmin.org/docs/
 url_repo: https://github.com/pgadmin-org/pgadmin4
@@ -56,6 +56,10 @@ tablespaces, extensions, VACUUM.
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
+### Compléments
+
+- [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — le moteur que la console administre
+
 ## Ressources
 
 - Documentation — https://www.pgadmin.org/docs/
@@ -63,5 +67,4 @@ tablespaces, extensions, VACUUM.
 ## Voir aussi
 
 - [[Bases de données]] — le hub du domaine
-- [[Postgres]] — le moteur administré
 - [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier
