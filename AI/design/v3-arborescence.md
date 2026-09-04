@@ -906,8 +906,14 @@ et aucune brique n'a bougé.
 
 **Comparatifs** — 1
 
-- `[c]` Comparatif - Outils stats — filtre `stats/`, donc le domaine entier : il reste au
-  niveau du domaine et sa vue est inchangée par la promotion des quatre sous-dossiers
+- `[c]` Comparatif - Outils stats — filtre `stats/`, donc le domaine entier ; sa vue est
+  inchangée par la promotion des quatre sous-dossiers. ~~Il reste au niveau du domaine~~ —
+  **descendu dans « Tests & estimation/ » au lot 5, le 2026-09-06.** La décision d'ici
+  valait tant que le `.base` était seul : un `.base` ne porte pas de `categorie:`, donc
+  rien ne contraignait son chemin. La page en porte une, et `check_arbo` en dérive le
+  dossier — la majorité de ses 10 membres donne `stats/inference` (4, contre
+  `stats/bayesien` 3, `stats/exploratoire` 2, `stats/causal` 1). Le `.base` suit sa page,
+  pour que le voisinage d'une page reste `ls` de son dossier. Cf. remontées 12 et 18
 
 ### Data & pipelines  ·  54 pages  ·  **migré le 2026-09-04, notions rangées le 2026-09-05**
 
@@ -1444,13 +1450,17 @@ avec l'arbre. Cf. remontées 7, 14 et 16 de `lot-3-arborescence.md`.
       clause de chemin remplacée par `role == "brique"`
 - [x] `[c]` Comparatif - Détection & segmentation — **rangé** dans « Machine Learning/Vision/ » (6 membres) ;
       clause de chemin remplacée par `role == "brique"`
-- [x] `[c]` Comparatif - Détection d'anomalies — **rangé** dans « Machine Learning/ » — ses 2 membres enjambent deux sous-domaines ;
-      clause de chemin remplacée par `role == "brique"`
+- [x] `[c]` Comparatif - Détection d'anomalies — **rangé** dans « Machine Learning/ » au
+      lot 3 — ses 2 membres enjambent deux sous-domaines ; clause de chemin remplacée par
+      `role == "brique"`. **Descendu dans « Machine Learning/Non supervisé/ » au lot 5** :
+      égalité 1-1 tranchée par les définitions de `taxonomie.md` (cf. remontée 12)
 - [x] `[c]` Comparatif - Forecasting — **rangé** dans « Machine Learning/Séries temporelles/ » (6 membres) ;
       clause de chemin remplacée par `role == "brique"`
 - [x] `[c]` Comparatif - NLP — traduit plus tôt (`role == "brique"`, 16 membres),
       **rangé** dans « Machine Learning/NLP/ »
 - [x] `[c]` Comparatif - Réduction de dimension — traduit plus tôt
-      (`role == "brique"`, 5 membres), **rangé** dans « Machine Learning/ » : ses
-      membres se partagent `ml/non-supervise`, `ml/socle` et `stats/exploratoire`
+      (`role == "brique"`, 5 membres), **rangé** dans « Machine Learning/ » au lot 3 :
+      ses membres se partagent `ml/non-supervise`, `ml/socle` et `stats/exploratoire`.
+      **Descendu dans « Machine Learning/Non supervisé/ » au lot 5** : majorité par
+      domaine (`ml/*` 3 contre `stats/*` 2) puis par sous-domaine (cf. remontée 12)
 

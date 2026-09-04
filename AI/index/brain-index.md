@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 763 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 764 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1062,6 +1062,9 @@
 
 ### signal/traitement
 - **Comparatif - Traitement du signal** — —
+
+### stats/inference
+- **Comparatif - Outils stats** — —
 
 ### ui/data-app
 - **Comparatif - Apps data & démos ML** — —

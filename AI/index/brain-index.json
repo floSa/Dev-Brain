@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 763,
+  "count": 764,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -220,6 +220,7 @@
       "ArviZ",
       "Bayésien",
       "CausalImpact",
+      "Comparatif - Outils stats",
       "Estimation MAP",
       "Gaussian Process",
       "Hyperopt",
@@ -267,6 +268,7 @@
     ],
     "causal-inference": [
       "CausalImpact",
+      "Comparatif - Outils stats",
       "Diff-in-Diff",
       "Inférence causale",
       "Statistiques & inférence"
@@ -952,6 +954,7 @@
     "factor-analysis": [
       "Analyse factorielle",
       "CA",
+      "Comparatif - Outils stats",
       "Comparatif - Réduction de dimension",
       "FAMD",
       "Fanalysis",
@@ -1174,6 +1177,7 @@
     "hypothesis-testing": [
       "A/B testing",
       "Analyse de puissance",
+      "Comparatif - Outils stats",
       "Correction des tests multiples",
       "Diff-in-Diff",
       "MANOVA et tests multivariés",
@@ -2631,6 +2635,7 @@
       "seaborn"
     ],
     "statistical-inference": [
+      "Comparatif - Outils stats",
       "Inférence bayésienne",
       "Inférence causale",
       "Intervalles de confiance",
@@ -22172,6 +22177,27 @@
         "resampling",
         "confidence-interval",
         "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Comparatif - Outils stats.md",
+      "nom": "Comparatif - Outils stats",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "hypothesis-testing",
+        "statistical-inference",
+        "bayesian",
+        "factor-analysis",
+        "causal-inference"
       ],
       "alternatives": null,
       "complements": null,

@@ -49,4 +49,7 @@ tags: [statistical-inference, hypothesis-testing, confidence-interval, p-value, 
 - [[pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 - [[scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
 - [[statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
+
+### Comparatifs
+- [[Comparatif - Outils stats]]
 <!-- AUTO:END -->

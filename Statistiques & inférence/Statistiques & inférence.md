@@ -51,7 +51,4 @@ tags: [statistical-inference, bayesian, causal-inference, factor-analysis]
 
 ### Briques
 - [[CausalImpact]] — Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.
-
-### Comparatifs
-- [[Comparatif - Outils stats]]
 <!-- AUTO:END -->
