@@ -17,43 +17,56 @@ url_repo: https://github.com/lightgbm-org/LightGBM
 
 # LightGBM
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
 
-Implémentation C++ du [[Gradient Boosting (GBDT)]] créée par Microsoft (maintenue depuis 2026 sous l'organisation indépendante `lightgbm-org`, mêmes mainteneurs). Optimisée pour la **vitesse** et la **mémoire** : arbres en croissance **leaf-wise** (meilleur découpage d'abord), **binning par histogrammes**, et deux astuces signatures — GOSS (échantillonnage orienté gradient) et EFB (regroupement de variables creuses exclusives). Souvent le plus rapide à entraîner sur gros volumes.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Gros jeux tabulaires où le **temps d'entraînement** et l'empreinte mémoire comptent.
-- Beaucoup de variables, dont creuses (one-hot) — EFB les regroupe.
-- Variables catégorielles modérées : prise en charge native, sans one-hot.
-- Entraînement distribué intégré (apprentissage en réseau) ou sur GPU.
+Implémentation du gradient boosting créée par Microsoft, maintenue depuis 2026 sous
+l'organisation indépendante `lightgbm-org`, avec les mêmes mainteneurs. Elle est réglée pour la
+vitesse et la mémoire : arbres en croissance *leaf-wise* — le meilleur découpage d'abord, où
+qu'il soit —, binning par histogrammes, et deux astuces signatures, GOSS qui échantillonne
+selon le gradient et EFB qui regroupe les variables creuses mutuellement exclusives. C'est
+souvent le plus rapide à entraîner sur gros volumes ; c'est aussi celui qui surapprend le plus
+vite si `num_leaves` n'est pas borné.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Petits jeux de données → le leaf-wise surapprend vite ; [[XGBoost]] (level-wise) est plus prudent.
-- Variables catégorielles nombreuses et à fort cardinal → [[CatBoost]] (encodage ordonné anti-fuite).
-- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Scikit-Learn]] (inspiré de LightGBM).
+| Prendre si | Écarter si |
+|---|---|
+| Gros jeux tabulaires où le temps d'entraînement et l'empreinte mémoire comptent | Petits jeux : la croissance *leaf-wise* y surapprend vite |
+| Beaucoup de variables, dont des creuses issues du one-hot : EFB les regroupe | `num_leaves` est le levier central, distinct de `max_depth` : trop grand pour la profondeur, on surajuste |
+| Variables catégorielles en cardinalité modérée : prise en charge native, sans one-hot | Variables catégorielles à déclarer explicitement (`categorical_feature`), sinon traitées comme numériques |
+| Entraînement distribué intégré, ou sur GPU | `min_data_in_leaf` à soigner en même temps, sous peine de feuilles bâties sur quelques points |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), `uv add lightgbm` ; rien à héberger.
-- Cœur C++ ; CPU multi-thread, GPU, et mode distribué intégré.
-- Bindings Python, R, C#.
+- Installation — `uv add lightgbm`
+- Point d'entrée — API Python `LGBMClassifier` / `LGBMRegressor`, ou `lgb.train` sur un `Dataset` ; bindings R et C#
+- Prérequis — aucun : le cœur C++ est précompilé dans les roues
+- Exécution — CPU multi-thread, GPU, et mode distribué intégré (apprentissage en réseau)
+- Coût — gratuit, MIT ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- Croissance **leaf-wise** = surapprentissage rapide : borner `num_leaves` et `max_depth`, soigner `min_data_in_leaf`.
-- `num_leaves` est le levier central (≠ `max_depth`) — trop grand pour la profondeur, on surajuste.
-- Variables catégorielles : les déclarer explicitement (`categorical_feature`), sinon traitées comme numériques.
-
-## Alternatives
+### Alternatives
 
 - [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 - [[CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
 - [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Gradient Boosting (GBDT)]] — sur la brique de base [[Arbres de décision]]
-- [[Comparatif - Boosting]] — comparatif des libs de boosting
-- Doc : https://lightgbm.readthedocs.io/
+- Documentation — https://lightgbm.readthedocs.io/
+- Dépôt — https://github.com/lightgbm-org/LightGBM
+
+## Voir aussi
+
+- [[Gradient Boosting (GBDT)]] — la notion qu'il implémente
+- [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
+- [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier

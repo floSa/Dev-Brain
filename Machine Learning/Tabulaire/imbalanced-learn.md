@@ -17,44 +17,49 @@ url_repo: https://github.com/scikit-learn-contrib/imbalanced-learn
 
 # imbalanced-learn
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement.
 
-imbalanced-learn (importé `imblearn`) étend [[Scikit-Learn]] pour la classification à **classes déséquilibrées**. Il fournit les techniques de rééchantillonnage — sur-échantillonnage synthétique (SMOTE et variantes), sous-échantillonnage, méthodes combinées — et des estimateurs d'ensemble rééquilibrés, exposés via la même API transformer/estimator. Son `Pipeline` dédié garantit que le rééchantillonnage ne s'applique qu'au **pli d'entraînement**, ce qui évite la fuite de données. Projet scikit-learn-contrib.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Classe d'intérêt **rare** (fraude, panne, churn) où le rééchantillonnage aide, **après** la métrique et la pondération.
-- Synthétiser des exemples minoritaires : **SMOTE**, BorderlineSMOTE, ADASYN, KMeansSMOTE, SMOTENC (features catégorielles).
-- Sous-échantillonner proprement : RandomUnderSampler, NearMiss, Tomek Links, Edited Nearest Neighbours.
-- Méthodes combinées (SMOTEENN, SMOTETomek) ou ensembles rééquilibrés (BalancedRandomForest, BalancedBaggingClassifier, EasyEnsemble, RUSBoost).
-- Intégrer le sampler dans un `imblearn.pipeline.Pipeline` pour qu'il reste cantonné à la validation croisée.
+imbalanced-learn — importé `imblearn` — étend [[Scikit-Learn]] pour la classification à classes
+déséquilibrées. Il fournit le sur-échantillonnage synthétique (SMOTE et ses variantes), le
+sous-échantillonnage, les méthodes combinées et des estimateurs d'ensemble rééquilibrés, tous
+exposés par la même API transformer/estimator. Son `Pipeline` dédié est le point clé : il
+garantit que le rééchantillonnage ne s'applique qu'au pli d'entraînement, jamais au pli de
+validation. Projet scikit-learn-contrib, sans équivalent direct dans le brain — il complète
+scikit-learn plutôt qu'il ne le remplace.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Avant d'avoir réglé la **métrique** (PR-AUC), le **seuil** et `class_weight` — le rééchantillonnage vient en dernier (cf. [[Imbalanced classification]]).
-- Arbres boostés qui gèrent le déséquilibre nativement via `scale_pos_weight` → [[XGBoost]], [[LightGBM]].
-- Données non tabulaires (images, texte brut) où l'augmentation se fait dans le pipeline d'entraînement, pas par interpolation SMOTE sur features.
+| Prendre si | Écarter si |
+|---|---|
+| Classe d'intérêt rare (fraude, panne, churn), une fois la métrique et la pondération réglées | Rééchantillonner avant le split : c'est une fuite caractérisée → [[Data leakage]] |
+| Synthétiser des exemples minoritaires : SMOTE, BorderlineSMOTE, ADASYN, KMeansSMOTE, SMOTENC | Métrique (PR-AUC), seuil et `class_weight` pas encore réglés : le rééchantillonnage vient en dernier |
+| Sous-échantillonner proprement : RandomUnderSampler, NearMiss, Tomek Links, Edited Nearest Neighbours | Arbres boostés qui gèrent le déséquilibre par `scale_pos_weight` → [[XGBoost]], [[LightGBM]] |
+| Méthodes combinées (SMOTEENN, SMOTETomek) ou ensembles rééquilibrés (BalancedRandomForest, EasyEnsemble, RUSBoost) | SMOTE interpole entre plus proches voisins : sensible aux catégorielles (préférer SMOTENC), au bruit et aux outliers |
+| Cantonner le sampler à la validation croisée, via `imblearn.pipeline.Pipeline` | Probabilités biaisées après rééchantillonnage : recalibrer → [[Calibration]] |
+| | Très peu de positifs : SMOTE amplifie le bruit plutôt qu'il ne crée de l'information |
+| | Données non tabulaires (images, texte brut) : l'augmentation se fait dans le pipeline d'entraînement, pas par interpolation sur des features |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; `uv add imbalanced-learn`. Rien à héberger.
-- Dépend de scikit-learn / NumPy / SciPy et suit les versions de scikit-learn. Calcul **single-node** (CPU).
+- Installation — `uv add imbalanced-learn`
+- Point d'entrée — samplers à l'API scikit-learn (`SMOTE`, `RandomUnderSampler`…) posés dans un `imblearn.pipeline.Pipeline`
+- Prérequis — scikit-learn, NumPy et SciPy ; la version suit celle de scikit-learn
+- Exécution — CPU, sur une machine
+- Coût — gratuit, MIT ; rien à héberger
 
-## Pièges
+## Ressources
 
-- **Rééchantillonner avant le split** = [[Data leakage]] : toujours via le `Pipeline` imblearn, jamais sur le dataset entier.
-- SMOTE interpole entre plus proches voisins : sensible aux features catégorielles (préférer SMOTENC) et au bruit / outliers.
-- Après rééchantillonnage les **probabilités sont biaisées** → recalibrer ([[Calibration]]) ou préférer la pondération.
-- Ne crée pas d'information : avec très peu de positifs, SMOTE peut amplifier le bruit et surajuster.
+- Documentation — https://imbalanced-learn.org/
+- Dépôt — https://github.com/scikit-learn-contrib/imbalanced-learn
 
-## Alternatives
+## Voir aussi
 
-Pas d'équivalent direct dans le brain — imbalanced-learn **complète** [[Scikit-Learn]] plutôt qu'il ne le remplace. Approches concurrentes au rééchantillonnage : `class_weight='balanced'` (scikit-learn), `scale_pos_weight` des arbres boostés ([[XGBoost]], [[LightGBM]]), et l'ajustement de seuil.
-
-## Liens
-
-- [[Imbalanced classification]] — le concept : métrique, seuil, pondération, rééchantillonnage.
-- [[Scikit-Learn]] — la base dont imbalanced-learn reprend et étend l'API (transformers, Pipeline).
-- [[Data leakage]] — rééchantillonner hors du pli d'entraînement en est une cause classique.
-- [[Calibration]] — recalibrer les probabilités après rééchantillonnage.
-- Doc : https://imbalanced-learn.org/
+- [[Imbalanced classification]] — la notion du dossier : métrique, seuil, pondération, puis rééchantillonnage

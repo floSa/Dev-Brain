@@ -17,44 +17,56 @@ url_repo: https://github.com/dmlc/xgboost
 
 # XGBoost
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 
-Implémentation C++ du [[Gradient Boosting (GBDT)]] devenue la référence. Apporte au boosting classique une **régularisation explicite** (L1/L2 sur les poids des feuilles), un algorithme par **histogrammes** rapide, la gestion native des valeurs manquantes, et surtout un **passage à l'échelle distribué** (Spark, Dask, Ray, Flink). C'est l'outil qui a popularisé le GBDT en compétition (Kaggle).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Données **tabulaires** structurées, classification ou régression — souvent le meilleur modèle hors deep learning.
-- Besoin de distribuer l'entraînement sur cluster (Spark / Dask / Ray) ou sur GPU.
-- Intégration dans un écosystème large : bindings Python, R, Java, Scala, Julia.
-- Réglage fin recherché : nombreux hyperparamètres, contrôle complet de la régularisation.
+Implémentation de référence du gradient boosting sur arbres. Elle ajoute au boosting classique
+une régularisation explicite — pénalités L1 et L2 sur les poids des feuilles —, un algorithme
+par histogrammes, la gestion native des valeurs manquantes, et un passage à l'échelle
+distribué mature : Spark, Dask, Ray, Flink. Les arbres croissent *level-wise*, niveau par
+niveau : plus prudent que le *leaf-wise*, donc plus lent, mais c'est celui qui surapprend le
+moins sur un petit jeu. Deux API coexistent, l'une compatible scikit-learn (`XGBClassifier`),
+l'autre native (`xgb.train` sur `DMatrix`).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Vitesse d'entraînement prioritaire sur très gros volumes → [[LightGBM]] (leaf-wise plus rapide).
-- Beaucoup de variables **catégorielles** à fort cardinal → [[CatBoost]] (encodage natif).
-- Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Scikit-Learn]] suffit.
-- Données non tabulaires (images, texte, séquences) → réseaux de neurones.
+| Prendre si | Écarter si |
+|---|---|
+| Données tabulaires, classification ou régression : souvent le meilleur modèle hors deep learning | Croissance *level-wise* : sensiblement plus lente que le *leaf-wise* sur de très gros volumes |
+| Distribuer l'entraînement sur cluster (Spark, Dask, Ray, Flink) ou sur GPU | Sans réglage conjoint de `n_estimators`, `learning_rate` et `max_depth`, plus l'early stopping, le surapprentissage vient vite |
+| Écosystème large : bindings Python, R, Java, Scala, Julia | Les deux API — sklearn et native — ne se mélangent pas dans un même code |
+| Réglage fin recherché : contrôle complet de la régularisation | Données non tabulaires — images, texte, séquences → [[Apprentissage profond]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), `uv add xgboost` ; rien à héberger.
-- Cœur C++ ; entraînement CPU multi-thread ou GPU (CUDA).
-- Distribué via Spark, Dask, Ray, Flink pour les volumes qui dépassent une machine.
+- Installation — `uv add xgboost`
+- Point d'entrée — API Python `XGBClassifier` / `XGBRegressor`, ou l'API native `xgb.train` sur `DMatrix` ; bindings R, Java, Scala, Julia
+- Prérequis — aucun : le cœur C++ est précompilé dans les roues
+- Exécution — CPU multi-thread ou GPU (CUDA) sur une machine ; distribué via Spark, Dask, Ray, Flink
+- Coût — gratuit, Apache-2.0 ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- Croissance **level-wise** par défaut : plus robuste mais plus lente que le leaf-wise de LightGBM.
-- Sans réglage conjoint de `n_estimators` / `learning_rate` / `max_depth` (+ early stopping), surapprentissage facile.
-- Deux API distinctes : « sklearn » (`XGBClassifier`) et native (`xgb.train` + `DMatrix`) — ne pas les mélanger.
-
-## Alternatives
+### Alternatives
 
 - [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
 - [[CatBoost]] — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
 - [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Gradient Boosting (GBDT)]] — sur la brique de base [[Arbres de décision]]
-- [[Comparatif - Boosting]] — comparatif des libs de boosting
-- Doc : https://xgboost.readthedocs.io/
+- Documentation — https://xgboost.readthedocs.io/
+- Dépôt — https://github.com/dmlc/xgboost
+
+## Voir aussi
+
+- [[Gradient Boosting (GBDT)]] — la notion qu'il implémente
+- [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
+- [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier
