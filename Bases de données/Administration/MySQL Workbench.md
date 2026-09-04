@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: C++
 alternatives: ["[[DBeaver]]", "[[HeidiSQL]]"]
-complements: []
+complements: ["[[MySQL]]"]
 tags: [db-client, relational]
 url_docs: https://dev.mysql.com/doc/workbench/en/
 url_repo: https://github.com/mysql/mysql-workbench
@@ -57,6 +57,10 @@ sur les versions du serveur qu'elle accompagne.
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 - [[HeidiSQL]] — Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
+### Compléments
+
+- [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web. — le moteur que l'outil administre et modélise
+
 ## Ressources
 
 - Documentation — https://dev.mysql.com/doc/workbench/en/
@@ -64,5 +68,4 @@ sur les versions du serveur qu'elle accompagne.
 ## Voir aussi
 
 - [[Bases de données]] — le hub du domaine
-- [[MySQL]] — le moteur administré
 - [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier
