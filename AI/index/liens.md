@@ -67,7 +67,7 @@
 
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
-- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]]
+- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[hnswlib]]
 - liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
 
 ### Apache Cassandra  ·  brique
@@ -167,7 +167,7 @@
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[ScaNN]], [[hnswlib]]
 - liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[LanceDB]], [[LangChain]], [[LlamaIndex]], [[ScaNN]], [[Vectoriel]], [[hnswlib]]
 
 ### Chronos  ·  brique
@@ -377,8 +377,8 @@
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[k-NN]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[ScaNN]], [[hnswlib]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[hnswlib]], [[k-NN]]
 
 ### Faker  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -532,7 +532,7 @@
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]]
 - liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
 
 ### HTMX  ·  brique
@@ -622,7 +622,7 @@
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
-- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
+- liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]]
 - liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Vectoriel]]
 
 ### LangChain  ·  brique
@@ -798,7 +798,7 @@
 ### Milvus  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Pinecone]], [[Qdrant]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Pinecone]], [[Qdrant]], [[Vectoriel]], [[Weaviate]], [[pgvector]]
 
 ### Mimesis  ·  brique
 - tags : `synthetic-data`, `testing`
@@ -1038,7 +1038,7 @@
 ### pgvector  ·  brique
 - tags : `vector-db`, `rag`, `postgres`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Weaviate]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Haystack]], [[LanceDB]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[ScaNN]], [[TimescaleDB]], [[Vectoriel]], [[Weaviate]], [[hnswlib]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[TimescaleDB]], [[Vectoriel]], [[Weaviate]]
 
 ### Phoenix Arize  ·  brique
 - tags : `llm`, `llm-observability`, `llm-eval`, `tracing`
@@ -1052,8 +1052,8 @@
 
 ### Pinecone  ·  brique
 - tags : `vector-db`, `semantic-search`, `rag`
-- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Qdrant]], [[Vectoriel]], [[Weaviate]], [[pgvector]], [[txtai]]
+- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[pgvector]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Qdrant]], [[Vectoriel]], [[Weaviate]], [[pgvector]], [[txtai]]
 
 ### pingouin  ·  brique
 - tags : `hypothesis-testing`, `effect-size`, `statistical-power`, `non-parametric`, `parametric-test`
@@ -1217,8 +1217,8 @@
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
-- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[LanceDB]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[hnswlib]], [[pgvector]], [[txtai]]
+- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1292,7 +1292,7 @@
 
 ### ScaNN  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Milvus]], [[Qdrant]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[hnswlib]]
 - liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Vectoriel]], [[hnswlib]]
 
 ### Scikit-Learn  ·  brique
@@ -1642,8 +1642,8 @@
 
 ### Weaviate  ·  brique
 - tags : `vector-db`, `rag`, `hybrid-search`
-- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Vespa]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Vectoriel]], [[Vespa]], [[pgvector]]
 
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
@@ -2898,7 +2898,7 @@
 ### Index ANN — internes  ·  notion
 - tags : `ann`, `vector-db`, `embeddings`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[embeddings]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
