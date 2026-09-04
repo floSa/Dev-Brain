@@ -28,9 +28,10 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range. Ce qui suit décrit l'état réel.
 >
-> Ce qui reste ouvert est du **format**, pas du rangement : les comparatifs `.base`
-> deviennent des pages au lot 5, les fiches passent au nouveau gabarit au lot 6, les
-> règles restées en avertissement durcissent au lot 8.
+> Ce qui reste ouvert est du **format**, pas du rangement : les fiches passent au nouveau
+> gabarit au lot 6, les règles restées en avertissement durcissent au lot 8. Les 47
+> comparatifs, eux, **sont des pages depuis la clôture du lot 5, le 2026-09-06** — chacune
+> `role: comparatif`, à côté du `.base` qu'elle embarque.
 
 ## Identité utilisateur
 
@@ -180,9 +181,9 @@ ne dit plus si on lit une brique ou une notion.
 ├── <Sous-domaine>/           (promu à 5 pages : Vectoriel/, Apprentissage profond/…)
 │   ├── <Sous-domaine>.md     (role: hub)
 │   ├── <Brique>.md           (role: brique)   <Notion>.md   (role: notion)
-│   └── Comparatif - <thème>.base
+│   └── Comparatif - <thème>.md   (role: comparatif)  + Comparatif - <thème>.base (la vue)
 ├── <Brique>.md               (role: brique)   <Notion>.md   (role: notion)
-└── Comparatif - <thème>.base
+└── Comparatif - <thème>.md   (role: comparatif)  + Comparatif - <thème>.base (la vue)
 
 Métiers/                     ← 6 hubs transverses, générés depuis `domaines:`
                                (Data Science, Data Engineering, MLOps, ML Engineering,
@@ -235,7 +236,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 |------|--------|
 | Brique (`role: brique`) | `<Dossier>/<Nom>.md` |
 | Hub (`role: hub`) | `<Dossier>/<Dossier>.md` — la page porte le nom de son dossier |
-| Comparatif | `<Dossier>/Comparatif - <thème>.base` — dans le dossier de ses membres |
+| Comparatif (`role: comparatif`) | `<Dossier>/Comparatif - <thème>.md`, **plus** `<Dossier>/Comparatif - <thème>.base` à côté — la page embarque la vue par `![[Comparatif - <thème>.base]]`. Le dossier se dérive de la `categorie:` de la page, celle qui rassemble le plus de ses membres |
 | Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
 | Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
 | Notion (`role: notion`) | `<Dossier>/<Nom>.md` — **exactement** comme une brique : même dossier, même dérivation. Seul `role:` les distingue |
@@ -252,7 +253,8 @@ valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extens
 fermées en ordre strict. Les deux champs sont des règles dures du validateur et sont indexés.
 
 **Un troisième champ, `role:`**, porte ce que la page **est** : `brique`, `notion`,
-`pattern`, `rule`, `hub` — et bientôt `comparatif` (lot 5). Il a remplacé
+`pattern`, `rule`, `hub` et `comparatif` — le dernier né au lot 5, clos le 2026-09-06.
+Il a remplacé
 `galaxie:` et `type:` au lot 2 de la migration v3 (cf. `AI/design/brain-v3.md` §3) : le
 premier ne servait qu'à la couleur du graphe, le second ne décrivait que le dossier d'accueil.
 `famille:` reste la nature **technique** d'une brique (est-ce un paquet ou une plateforme ?) ;
@@ -276,7 +278,7 @@ dit ce qui s'utilise **à sa place**.
 (générés), puis le comparatif, la notion et les briques pairs **du dossier** — plus rien à
 deviner à partir des tags.
 
-**Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, comparatifs `.base`, zones AUTO des hubs, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
+**Mise à jour d'une page existante** : jamais un patch improvisé. Un champ modifié a des consommateurs (lignes `## Alternatives` des citeurs, la vue `.base` **et** la section « Ce qui départage » de la page de comparatif, zones AUTO des hubs, index) → suivre la *Procédure — mode mise à jour* de `.claude/skills/enrichir-brain/SKILL.md`, qui donne pour chaque champ la liste des consommateurs et la commande de vérification.
 
 **Convention wikilinks** — **nus**, jamais qualifiés par chemin :
 - `[[Postgres]]` → la fiche, quel que soit son dossier.

@@ -8,7 +8,14 @@ tags: [meta, migration, v3]
 
 # Lot 5 — Les comparatifs deviennent des pages
 
-Effort : **une session**. 47 fichiers.
+> **CLOS le 2026-09-06.** Les 47 comparatifs sont des pages `role: comparatif`, chacune à
+> côté de son `.base`, dans le dossier que `categorie:` dérive. 258 puces, toutes sourcées
+> dans une fiche. Il a fallu **quatre** sessions, pas une. L'état final est au §28 ; les
+> *Remontées* de la quatrième session commencent au §23.
+
+Effort : **une session** — ~~annoncé~~, **quatre en réalité** : 10 + 12 + 12 + 13. Le poste
+dominant n'est pas l'écriture mais la **lecture** des fiches comparées, et il ne se compresse
+pas (remontée 7). 47 fichiers.
 
 Prérequis : lot 3 fait — chaque comparatif doit savoir dans quel dossier il atterrit.
 
@@ -19,8 +26,11 @@ porter de couleur dans le graphe, ni pointer vers ce qu'il compare. Mesure au 20
 44 comparatifs sur 47 sont cités par une fiche, et **aucun ne cite quoi que ce soit**. Ce sont
 47 culs-de-sac gris, par construction et non par négligence.
 
-Trois ne sont cités par personne : `Détection & segmentation`, `Forecasting`,
-`Suivi d'expériences ML`.
+~~Trois ne sont cités par personne : `Détection & segmentation`, `Forecasting`,
+`Suivi d'expériences ML`.~~ — **mesure du 2026-09-04, fausse depuis les lots 3 et 4.** Les
+trois sont cités, chacun deux fois par le hub de son propre dossier, dont une fois dans le
+corps écrit à la main. Cf. remontée 15. Le chiffre est barré ici plutôt que corrigé
+silencieusement : c'est à cet endroit précis qu'une session neuve le lisait en premier.
 
 ## Périmètre
 
@@ -92,13 +102,22 @@ l'on écrit une comparaison plutôt qu'une description.
 5. Traiter les trois comparatifs orphelins : soit les citer depuis le hub de leur dossier,
    soit les signaler comme inutiles dans les *Remontées*.
 
-## Critères d'acceptation
+## Critères d'acceptation — **les cinq sont remplis au 2026-09-06**
 
-- [ ] 47 pages `role: comparatif`, chacune dans le dossier de son domaine.
-- [ ] Chaque page porte une ligne « On tranche sur : … » et au moins deux puces liées.
-- [ ] Aucun lien entrant ne pointe plus directement vers un `.base`.
-- [ ] Chaque comparatif est cité par le hub de son dossier.
-- [ ] `check_brain.py` au vert.
+- [x] **47 pages `role: comparatif`**, chacune dans le dossier de son domaine. Vérifié
+      mécaniquement : 47 `.base`, 47 `.md`, aucun `.base` sans page ni page sans `.base`, et
+      `check_arbo` vert — donc chemin et `categorie:` concordent sur les 47.
+- [x] **Chaque page porte une ligne « On tranche sur : … »** et au moins deux puces liées —
+      **sauf une**, et elle est documentée : `Comparatif - Solveurs d'optimisation` n'a
+      qu'un membre, donc qu'une puce. Ce n'est pas un manquement de la conversion mais un
+      trou du vault, dit dans la page et ouvert au backlog (remontée 24).
+- [x] **Aucun lien entrant ne pointe vers un `.base`** — rempli sans toucher une fiche, les
+      liens entrants étant nus (remontée 2). Contrôlé une dernière fois : `build_links`
+      annonce 0 lien non résolu sur 764 pages.
+- [x] **Chaque comparatif est cité par le hub de son dossier** — `R8c` n'est émis pour aucun
+      des 47.
+- [x] **`check_brain.py` au vert**, et `check_arbo.py` avec lui — les deux, jamais l'un sans
+      l'autre. 149 avertissements du début à la fin du lot, jeu identique ligne à ligne.
 
 ## Interdictions
 
@@ -985,6 +1004,11 @@ et il devrait l'être — sujet pour le lot 8, pas pour ici.
 
 ## 22. Les 13 comparatifs restants, par domaine
 
+> **Périmé depuis la quatrième session (2026-09-06)** : les 13 sont faits, il n'en reste
+> **aucun**. L'état final est au §26. Ce tableau est conservé pour la trace, comme le §16 —
+> et la note est posée ici pour la même raison qu'au §16 : un chiffre mesuré ne porte pas sa
+> date de péremption (remontée 17).
+
 | Domaine | Reste | Comparatifs |
 |---|---|---|
 | Data & pipelines | 6 | Outils EDA - profiling · Manipulation de données · Orchestrateurs data · Parsing de documents · Scraping · Visualisation |
@@ -1163,3 +1187,379 @@ d'agent*
 | Excalidraw — style **croquis à main levée** comme signal ; peu de formes structurées, rame sur les grands tableaux | `Excalidraw.md` P + PG |
 | FossFLOW — seul **isométrique 3D**, PWA hors ligne, icônes cloud ; périmètre étroit, stockage navigateur | `FossFLOW.md` P + PG |
 | Archify — **skill d'agent**, IR JSON typée compilée de façon déterministe ; quatre absences documentées | `Archify.md` P + PG |
+
+---
+
+# Remontées — quatrième session, 2026-09-06 — **le lot est clos**
+
+Périmètre : les **13 derniers**, sur sept domaines. **13 pages, 70 puces, 67 fiches lues.**
+Les 47 comparatifs sont des pages.
+
+Sept commits, un par domaine : « Data & pipelines » (6), « Interfaces & apps data » (2),
+puis les cinq domaines à un comparatif — « Automatisation no-code », « Calcul distribué »,
+« Mathématiques », « Signal & audio », « Statistiques & inférence ». La contrainte « un
+domaine ne se coupe pas en deux » ne contraignait plus rien, comme le §22 l'annonçait.
+
+## 23. Le lot a coûté quatre sessions et non une — et la remontée 7 l'avait chiffré juste
+
+Le brief annonce « **une session**, 47 fichiers ». Il en a fallu **quatre** : 10 + 12 + 12 + 13.
+
+Ce n'est pas un dérapage, c'est une mesure qui s'est vérifiée. La remontée 7, écrite à la fin
+du pilote, disait : « Budget pour les 41 restants, à la même densité : ~230 fiches à lire.
+C'est le poste dominant et il ne se compresse pas. » Le relevé des quatre sessions :
+
+| Session | Comparatifs | Puces | Fiches lues |
+|---|---|---|---|
+| Pilote — Bases de données | 10 | 45 | 45 |
+| 2ᵉ — Machine Learning, Outils de dév. | 12 | 60 | ~50 |
+| 3ᵉ — ML (fin), LLM, Design | 12 | 83 | 57 |
+| 4ᵉ — les 13 derniers | 13 | 70 | 67 |
+| **Total** | **47** | **258** | **~219** |
+
+219 contre 230 annoncées, à 5 % près, quatre jours après l'estimation. Ce qui n'a **pas** été
+fait est l'accélérateur que la même remontée proposait — « un dump automatique des sections
+`Pourquoi`, `Quand NE PAS l'utiliser` et `Pièges` des membres d'un `.base` […] à écrire comme
+script si les 41 se font en plusieurs sessions ». Elles se sont faites en trois, et le dump
+est resté à la main à chaque fois. Le script aurait coûté dix minutes une fois.
+
+> **À retenir pour le lot 6**, qui est le plus gros du plan (336 fiches à convertir) : quand
+> une remontée chiffre un poste dominant *et* propose l'outil qui l'allège, l'outil se fait à
+> la session suivante ou il ne se fait jamais.
+
+## 24. Cas 1 du §16 — la conversion ne rend PAS `R8b` silencieux, et la prédiction était fausse
+
+Les §16 et §22 annonçaient, deux fois : « `Solveurs d'optimisation` a **un membre** (PuLP).
+Le convertir ne réglera pas `R8b`, il le **rendra silencieux**. » Mesure faite après
+conversion, les deux validateurs relancés :
+
+```
+[WARN] R8b — Mathématiques/Optimisation/Comparatif - Solveurs d'optimisation.base :
+       1 membre(s) (< 2) — comparatif sans comparaison
+```
+
+**L'avertissement est toujours émis**, et le total reste à 149. La prédiction se trompait
+pour une raison structurelle, pas par chance : `check_bases()` itère sur
+`VAULT.rglob("*.base")` et compte les membres du **filtre**. La variante retenue le
+2026-09-05 est à **deux fichiers** — la conversion ne supprime pas le `.base`, elle pose une
+page à côté. R8b n'a donc rien perdu de vue. Et le prédicat `role == "brique"` de tous les
+filtres garantit en prime que la page ne peut pas se compter elle-même comme membre
+(remontée 4).
+
+La prédiction aurait été **exacte avec l'autre variante** — le fichier unique, où le `.base`
+disparaissait. C'est une propriété de la décision du 2026-09-05 que personne n'avait
+nommée : en gardant le `.base`, on garde le contrôle qui porte sur lui.
+
+Reste que le fond du §16 était juste, et il faut le dire pour ce qu'il est. **Le défaut n'est
+pas dans la vue : il est dans le vault.** Le filtre `categorie == "math/optimisation"`
+sélectionne exactement ce que le brain contient, et la fiche `PuLP` nomme **onze** briques en
+clair sans qu'aucune ait de page — `Pyomo`, `CVXPY`, `scipy.optimize`, `CBC`, `GLPK`,
+`HiGHS`, `SCIP`, `Gurobi`, `CPLEX`, `MOSEK`, `XPRESS`. Deux traces écrites plutôt qu'une
+conversion muette : une section de la page qui dit qu'elle ne compare rien et nomme les onze,
+et une entrée de `AI/backlog-enrichissement-brain.md` avec leur `categorie:`, leur `famille:`
+et une priorité à trois pages (Pyomo, CVXPY, HiGHS) qui suffiraient à éteindre `R8b`.
+
+> **Ce que ça dit d'une prédiction dans un document de lot** : elle a la même durée de vie
+> qu'un chiffre mesuré, et personne ne la revérifie non plus. Celle-ci a été recopiée du §16
+> au §22 sans être testée, alors qu'elle coûtait une commande.
+
+## 25. Cas 2 du §16 — aucun tag ne capture les cinq membres, la liste reste, et son motif est écrit
+
+`Comparatif - Frontends web légers` est le seul des 47 dont le filtre est une **liste de noms
+codée en dur** (`[WARN] R8d`). La consigne était de mesurer d'abord s'il existe un tag qui
+capture **exactement** ces cinq membres et rien d'autre. Mesure sur les 337 briques de
+l'index :
+
+| Candidat | Couvre | Fait entrer en plus |
+|---|---|---|
+| **intersection des tags des 5** | — | **VIDE** : `HTMX` ne porte que `hypermedia`, qu'aucun des quatre autres n'a |
+| `web-framework` | 4/5 (rate HTMX) | Flask, Uvicorn, **Shiny for Python** |
+| `data-app` | 2/5 | Marimo, **Shiny for Python** |
+
+Aucun tag ne convient, et le meilleur candidat ferait entrer `Shiny for Python`, qui
+appartient à l'**autre** comparatif du même dossier. La liste est donc conservée : c'est
+l'expression honnête d'une comparaison **composée à la main**, qu'aucune `categorie:` ni
+aucun tag ne capture — trois membres sont `ui/data-app`, un `web/backend`, un `web/frontend`.
+
+Le motif est écrit **deux fois**, et l'endroit compte : en commentaire dans le `.base`, là où
+vit la liste et là où pointe l'avertissement, et en section de la page pour le lecteur qui
+n'ouvrira jamais le YAML.
+
+> **Ce que ça change pour le lot 8**, qui doit durcir les règles souples : `R8d` n'est pas une
+> règle à faire taire ni à durcir. Elle décrit un fait vrai — une brique qui entre dans le
+> thème n'entrera jamais dans la vue — sur le seul cas du vault où ce fait est **voulu**. Une
+> règle souple avec une exception documentée est un meilleur état qu'une règle dure avec une
+> dérogation, ou qu'une règle supprimée.
+
+## 26. `## Pièges` sert 100 % des puces pour la première fois, et `QNP` retombe à 7 %
+
+Répartition des sources sur les 70 puces, à comparer aux trois sessions précédentes :
+
+| Section de la fiche | Pilote (45) | 2ᵉ (60) | 3ᵉ (83) | 4ᵉ (70) |
+|---|---|---|---|---|
+| `## Pourquoi` | 45 — 100 % | 60 — 100 % | 83 — 100 % | 70 — **100 %** |
+| `## Pièges` | 38 — 84 % | 51 — 85 % | 78 — 94 % | 70 — **100 %** |
+| `## Quand NE PAS l'utiliser` | 1 — 2 % | 12 — 20 % | 15 — 18 % | 5 — **7 %** |
+
+Sur l'ensemble des 258 puces du lot : `Pourquoi` **258/258**, `Pièges` **237/258** (92 %),
+`QNP` **33/258** (13 %).
+
+`## Pourquoi` fournit tout, pour la quatrième fois — c'est acquis. `## Pièges` atteint 100 %
+et referme le diagnostic de la spec §6 : cette section, que la v3 **dissout**, est celle qui
+porte la limite décisionnelle sur *chacune* des 70 briques de cette session. L'instruction
+pour le lot 6 écrite à la remontée 6 n'est donc pas une précaution, c'est une condition : la
+ligne de `## Pièges` qui sert de critère dans un comparatif doit se retrouver dans
+`## Définition` ou dans `Écarter si`, jamais disparaître.
+
+`QNP` retombe à 7 %, et la remontée 20 explique pourquoi sans avoir à être corrigée : c'est la
+**forme** de la puce qui décide, pas le voisinage des membres. Les 5 retenues énoncent toutes
+une borne dure de la brique elle-même — `altair` et sa limite de 5000 lignes, `pingouin` en
+GPL-3.0, `Fanalysis` à l'arrêt depuis le 4 juin 2018, `minim` dont la v1 est en maintenance,
+`PuLP` dont le périmètre s'arrête au LP/MIP. Toutes les autres puces de `QNP` lues cette
+session sont des redirections « besoin → concurrent », y compris sur des comparatifs
+d'étages : `Playwright` renvoyant à `curl_cffi`, `Streamlit` renvoyant à `Dash`. Le voisinage
+n'y change rien, la forme si.
+
+**Un cas limite mérite d'être nommé**, parce qu'il n'existe que sur un comparatif à un membre.
+La puce retenue pour `PuLP` est de forme « besoin → concurrent » — « optimisation non linéaire
+→ Pyomo ou CVXPY ». Elle a été comptée quand même, et le motif est que **le concurrent est
+hors du tableau** : là où la remontée 6 reprochait à cette forme de décrire le voisin plutôt
+que la brique, ici elle est la seule façon d'énoncer que le périmètre de PuLP s'arrête au
+LP/MIP. La règle de la remontée 20 tient donc avec une précision : une redirection ne
+départage rien **entre les membres du tableau** ; elle informe quand la cible n'y est pas.
+
+**Onze puces sur 70 reposent d'abord sur un fait de licence ou de cycle de vie** — 16 %,
+contre 13 % à la session précédente (remontée 21) — et le domaine « Automatisation no-code »
+bat tous les autres : **quatre de ses cinq membres** se départagent d'abord là-dessus. `n8n`
+en Sustainable Use License non OSI contre `Activepieces` au cœur réellement MIT est *l'*arbitrage de ce comparatif, et la vue affiche `licence_type` pour les deux sans jamais le
+montrer. S'y ajoutent `Windmill` en AGPLv3, `Zapier` et `gumloop` propriétaires, `PyMuPDF` en
+AGPL ou licence Artifex, `Marker` en double licence avec son seuil à 2 M$, `Firecrawl` au cœur
+AGPL, `LlamaParse` non open-source, `pingouin` en GPL-3.0, `Fanalysis` à l'arrêt.
+
+## 27. Le §14 s'est rejoué une quatrième fois — sur une passe de correction du §14 lui-même
+
+Deux `git mv` cette session : `Comparatif - Traitement du signal` vers
+« Signal & audio/Traitement/ », `Comparatif - Outils stats` vers
+« Statistiques & inférence/Tests & estimation/ ». Les deux par le mécanisme du §12 — un
+`.base` ne porte pas de `categorie:`, la page en porte une, et `check_arbo` en dérive le
+dossier — et les deux à **majorité stricte**, sans passer par `taxonomie.md` : 2 contre 1 pour
+le signal, 4 contre 3 pour les stats.
+
+Comme les trois fois précédentes, aucun lien cassé, zones AUTO régénérées seules, validateurs
+verts, 149 avertissements identiques. Et comme les trois fois précédentes, des phrases
+devenues fausses, trouvées uniquement par recherche du **nom de fichier** dans tous les `.md`
+du dépôt. Cinq cette fois, toutes dans `AI/design/v3-arborescence.md` :
+
+| Phrase | Devenue fausse |
+|---|---|
+| « `Comparatif - Outils stats` […] il **reste au niveau du domaine** » | par ce lot |
+| « `Comparatif - Traitement du signal` […] il **reste au niveau du domaine** » | par ce lot |
+| « `[c]` Comparatif - Traitement du signal — **rangé** dans « Signal & audio/ » » | par ce lot |
+| « `[c]` Comparatif - Détection d'anomalies — **rangé** dans « Machine Learning/ » » | **à la deuxième session** |
+| « `[c]` Comparatif - Réduction de dimension — **rangé** dans « Machine Learning/ » » | **à la deuxième session** |
+
+Les deux dernières sont le point de cette remontée. Elles ont été invalidées par les `git mv`
+de la **deuxième** session — celle qui a écrit la remontée 14, « après tout `git mv`, chercher
+le nom du fichier déplacé dans tous les `.md` du vault ». Cette session-là a bien appliqué sa
+propre instruction sur les **corps de hub**, qu'elle a corrigés dans un commit dédié, et a
+manqué la liste de `v3-arborescence.md` qui nommait les mêmes deux fichiers. La troisième
+session a élargi le périmètre du vault au dépôt (remontée 19) et a corrigé
+`v3-arborescence.md` pour `Frameworks LLM` — sans revoir les entrées voisines de la même
+liste.
+
+> **Ce que ça ajoute aux remontées 14 et 19** : le périmètre de la recherche était bon dès la
+> deuxième session, c'est son **exécution** qui a été partielle, et rien ne l'a signalé — une
+> passe de correction ne se vérifie pas elle-même, exactement comme le reste. Le seul contrôle
+> qui aurait vu les deux est mécanique : `grep` du nom de fichier, puis **lire toutes les
+> occurrences**, y compris celles qui ressemblent à des lignes déjà traitées. C'est aussi un
+> candidat pour le lot 8 : un script qui, pour chaque page du vault, cherche son nom en clair
+> dans les `.md` de gouvernance et signale les phrases contenant un nom de dossier qui n'est
+> pas le sien.
+
+## 28. État final du lot 5
+
+**47 comparatifs, 47 pages, 47 `.base`**, appariés un pour un, chacun dans le dossier que
+`check_arbo` dérive de la `categorie:` de la page. Vérifié mécaniquement : aucun `.base` sans
+page, aucune page sans `.base`.
+
+| Domaine | Comparatifs | Session |
+|---|---|---|
+| Bases de données | 10 | pilote |
+| Machine Learning | 12 | 2ᵉ (9) et 3ᵉ (3) |
+| Outils de développement | 3 | 2ᵉ |
+| LLM & IA générative | 7 | 3ᵉ |
+| Design & diagrammes | 2 | 3ᵉ |
+| Data & pipelines | 6 | 4ᵉ |
+| Interfaces & apps data | 2 | 4ᵉ |
+| Automatisation no-code · Calcul distribué · Mathématiques · Signal & audio · Statistiques & inférence | 5 | 4ᵉ |
+
+**Cinq `git mv` en tout**, tous par le mécanisme du §12 : `Détection d'anomalies` et
+`Réduction de dimension` (2ᵉ session), `Frameworks LLM` (3ᵉ), `Traitement du signal` et
+`Outils stats` (4ᵉ). Chacun a rendu fausse au moins une phrase qu'aucun validateur ne lit.
+
+**Les deux avertissements du §16 sont traités, et tous deux restent émis** — c'est le
+résultat, pas un échec : `R8b` sur `Solveurs d'optimisation` décrit un trou réel du vault,
+ouvert au backlog ; `R8d` sur `Frontends web légers` décrit un choix délibéré, désormais
+motivé par écrit à deux endroits. Le compteur du validateur est à **149 avertissements du
+premier au dernier commit du lot**, jeu identique ligne à ligne, mesuré à chaque commit.
+
+**Ce que le lot laisse aux suivants :**
+
+- **lot 6** — la dépendance créée par la remontée 6 et confirmée au §26 : 237 puces de
+  comparatif citent en clair une ligne de `## Pièges`, section que la spec dissout. Elles
+  doivent réapparaître dans `## Définition` ou dans `Écarter si`.
+- **lot 8** — quatre sujets nommés : relire la règle dure nº 5 (`Écarter si` doit énoncer la
+  limite *et* nommer l'alternative, pas se réduire à l'alternative — remontée 20) ; brancher
+  `AI/scripts/verifier_fraicheur.py` sur les pages de comparatif, qui portent maintenant une
+  trentaine de faits datés de licence et de cycle de vie (remontée 21 et §26) ; corriger le
+  chiffre « 6 comparatifs » de `brain-v3.md` §1 (remontée 1) ; outiller la recherche de
+  phrases invalidées par un déplacement (§27).
+- **enrichissement** — l'entrée « Solveurs d'optimisation » du backlog, onze briques nommées.
+
+## Annexe — le relevé des sources, puce par puce (70)
+
+`P` = `## Pourquoi`, `QNP` = `## Quand NE PAS l'utiliser`, `PG` = `## Pièges`.
+
+**Comparatif - Outils EDA - profiling** — *l'étendue du rapport : tout le jeu, la relation à
+une cible, ou la seule nullité*
+
+| Puce | Source |
+|---|---|
+| ydata-profiling — rapport exhaustif + **alertes**, seul à profiler du Spark ; $O(p^2)$, mode `minimal` | `ydata-profiling.md` P + PG |
+| sweetviz — construit autour d'une **cible** et de `compare` / `compare_intra` ; `pairwise_analysis="off"` en haute dimension | `sweetviz.md` P + PG |
+| missingno — un seul problème, la nullité, quatre vues dessus ; la `matrix` **échantillonne** | `missingno.md` P + PG |
+
+**Comparatif - Manipulation de données** — *la forme de la donnée, puis ce qui borne : la RAM
+ou la dette d'API*
+
+| Puce | Source |
+|---|---|
+| pandas — l'**index** de premier ordre et l'interop ; mono-thread, tout en RAM, vue vs copie | `pandas.md` P + PG |
+| Polars — Rust/Arrow, **lazy** + optimiseur, moteur streaming ; pas d'index, rien avant `.collect()` | `Polars.md` P + PG |
+| Modin — **remplaçant transparent** de pandas ; couverture non totale, repli **silencieux** | `Modin.md` P + PG |
+| numpy — le `ndarray` **homogène** contigu, la brique du dessous ; vues, débordements entiers | `numpy.md` P + PG |
+| xarray — les **étiquettes** sur le N-dim, NetCDF/Zarr, `chunks=` vers Dask ; `NaN` d'alignement | `xarray.md` P + PG |
+
+**Comparatif - Orchestrateurs data** — *ce que le pipeline déclare : une tâche, une donnée
+produite, un YAML, ou un processus qui survit au crash*
+
+| Puce | Source |
+|---|---|
+| Airflow — DAG de tâches + le plus large catalogue d'operators ; `logical_date`, re-parse, XCom | `Airflow.md` P + PG |
+| Dagster — l'**asset** comme unité, lignage déduit, tests de données ; modèle mental à changer | `Dagster.md` P + PG |
+| Prefect — `@flow`/`@task`, **pas de DAG statique** ; donc pas de visualisation a priori | `Prefect.md` P + PG |
+| Kestra — **déclaratif YAML** sur JVM, découplé du langage des tâches ; autre stack, verbosité | `Kestra.md` P + PG |
+| Mage — ELT **low-code par blocs** avec preview ; OSS ralenti depuis Mage Pro | `Mage.md` P + PG |
+| Temporal — **exécution durable**, historique event-sourced ; workflow **déterministe** obligatoire | `Temporal.md` P + PG |
+
+**Comparatif - Parsing de documents** — *l'étage, puis où le calcul se fait et sous quelle
+licence*
+
+| Puce | Source |
+|---|---|
+| pdf-inspector — l'étage de **tri**, 10-50 ms, routage OCR page par page ; tables heuristiques | `pdf-inspector.md` P + PG |
+| PyMuPDF — **référence de vitesse** + modèle objet PDF ; **AGPL-3.0** ou licence Artifex | `PyMuPDF.md` P + PG |
+| pdfplumber — **MIT**, tableaux à stratégies, **débogage visuel** ; pas d'OCR, plus lent | `pdfplumber.md` P + PG |
+| docTR — **OCR** en deux étages, backend au choix ; ordre de lecture non garanti | `docTR.md` P + PG |
+| Docling — multi-format vers `DoclingDocument`, modèles **CPU en local**, MIT ; premier run lourd | `Docling.md` P + PG |
+| Unstructured — **ETL**, éléments typés + connecteurs ; binaires système, `hi_res` lent | `Unstructured.md` P + PG |
+| Marker — pipeline **vision** Surya, débit GPU ; **double licence**, seuil 2 M$ | `Marker.md` P + PG |
+| LlamaParse — le seul **managé**, tiers et crédits ; documents dans le cloud | `LlamaParse.md` P + PG |
+| OpenDataLoader PDF — le seul **déterministe**, bounding boxes, **Tagged PDF** ; tables 0,489 en local, JVM | `OpenDataLoader PDF.md` P + PG |
+
+**Comparatif - Scraping** — *l'étage, puis ce qui bloque : l'empreinte, le JS ou la refonte de
+la page*
+
+| Puce | Source |
+|---|---|
+| Scrapy — crawl **structuré**, Twisted, AutoThrottle ; ne rend pas le JS | `Scrapy.md` P + PG |
+| Crawlee — **API unifiée** HTTP ↔ navigateur, Node/TS ; deux ports non identiques | `Crawlee.md` P + PG |
+| Playwright — le **vrai navigateur**, attentes auto-résolues, session rejouable ; coût, détectable | `Playwright.md` P + PG |
+| curl_cffi — **empreinte TLS/JA3 et HTTP/2** imitée ; l'empreinte vieillit, UA à accorder | `curl_cffi.md` P + PG |
+| cloudscraper — le **JS challenge IUAM** de Cloudflare, drop-in requests ; dépassé par Turnstile | `cloudscraper.md` P + PG |
+| Scrapling — parseur **adaptatif** + fetchers **furtifs** ; bibliothèque récente, API mouvante | `Scrapling.md` P + PG |
+| selectolax — **parsing** seul, Lexbor, un ordre de grandeur ; pas de client HTTP, CSS only | `selectolax.md` P + PG |
+| Firecrawl — Markdown/JSON pour **LLM**, rendu et anti-bot inclus ; **AGPL-3.0**, coût, infra | `Firecrawl.md` P + PG |
+| Maxun — le seul **no-code**, robot enregistré et planifié ; beta, plafonne sur les sites défendus | `Maxun.md` P + PG |
+| minim — sept plateformes musicales, **API privées** reproduites ; **zone grise**, v1 en maintenance | `minim.md` P + QNP + PG |
+
+**Comparatif - Visualisation** — *où le graphe est rendu, et comment on le décrit*
+
+| Puce | Source |
+|---|---|
+| matplotlib — le **socle**, contrôle au pixel, export vectoriel ; deux API, état global, verbeux | `matplotlib.md` P + PG |
+| seaborn — surcouche **statistique** sur DataFrame, facettes, IC ; pas d'interactivité, `set_theme` global | `seaborn.md` P + PG |
+| plotly — interactif **immédiat**, moteur de Dash ; pages lourdes, **Kaleido**, `scattergl` | `plotly.md` P + PG |
+| bokeh — interactif **côté serveur**, gros volumes et streaming ; sessions à apprendre, pas d'export image | `bokeh.md` P + PG |
+| altair — le seul **déclaratif**, spec Vega-Lite réutilisable ; **5000 lignes** par défaut | `altair.md` P + QNP + PG |
+
+**Comparatif - Apps data & démos ML** — *ce qui se recalcule à chaque interaction*
+
+| Puce | Source |
+|---|---|
+| Streamlit — script linéaire, **re-run global** ; `@st.cache_*`, `session_state`, flux vertical | `Streamlit.md` P + PG |
+| Dash — **callbacks explicites**, Flask + React + Plotly.js ; verbeux, `dcc.Store` obligatoire | `Dash.md` P + PG |
+| Shiny for Python — graphe de dépendances **déduit** ; réactivité à apprendre, Shinylive/Pyodide | `Shiny for Python.md` P + PG |
+| Gradio — part d'une **fonction**, file d'attente et streaming, SDK de HF Spaces ; `share=True` temporaire | `Gradio.md` P + PG |
+
+**Comparatif - Frontends web légers** — *jusqu'où on descend : un widget Python, ou une page
+qu'on écrit*
+
+| Puce | Source |
+|---|---|
+| Streamlit — aucun HTML, l'app en quelques heures ; re-run global, mise en page contrainte | `Streamlit.md` P + PG |
+| Gradio — autour d'une fonction, pas d'une page ; c'est une démo, `share=True` temporaire | `Gradio.md` P + PG |
+| Dash — le premier à demander une structure, multi-pages ; verbeux, `dcc.Store` en multi-worker | `Dash.md` P + PG |
+| FastAPI — backend **API** typé, OpenAPI déduite ; **ne rend aucune page**, `def` bloque l'event loop | `FastAPI.md` P + PG |
+| HTMX — attributs qui **échangent un fragment HTML** ; latence par interaction, fragments à servir | `HTMX.md` P + PG |
+
+**Comparatif - Automatisation no-code** — *la licence et l'hébergement d'abord, puis qui écrit
+le workflow*
+
+| Puce | Source |
+|---|---|
+| n8n — 400+ nœuds, code insérable, nœuds IA ; **Sustainable Use License**, non OSI, queue mode | `n8n.md` P + PG |
+| Activepieces — cœur **réellement MIT**, pièces npm, MCP ; open-core, écosystème plus restreint | `Activepieces.md` P + PG |
+| Windmill — le seul **code-first**, moteur Rust distribué ; **AGPLv3** + Enterprise | `Windmill.md` P + PG |
+| Zapier — **8000+ apps**, tout managé ; facturation **à la tâche**, lock-in sans export | `Zapier.md` P + PG |
+| gumloop — **l'IA dans chaque nœud** ; éditeur jeune, coûts LLM, exécutions moins déterministes | `gumloop.md` P + PG |
+
+**Comparatif - Calcul distribué** — *ce qu'on distribue, ou bien on ne distribue rien et on
+descend sur le GPU*
+
+| Puce | Source |
+|---|---|
+| Spark — moteur **JVM** unifié, lakehouse ; overhead JVM, **shuffle**, UDF Python lentes | `Spark.md` P + PG |
+| Dask — **Python pur**, collections numpy/pandas + graphe ; `.compute()`, partitionnement, couverture partielle | `Dask.md` P + PG |
+| Ray — **tâches et acteurs**, donc code Python quelconque + l'écosystème ML ; cloudpickle, ressources, object store | `Ray.md` P + PG |
+| CuPy — **numpy sur GPU**, zéro-copie vers PyTorch/JAX ; transfert CPU↔GPU, wheels CUDA strictes | `CuPy.md` P + PG |
+
+**Comparatif - Solveurs d'optimisation** — *la classe du problème, et le couplage au solveur*
+
+| Puce | Source |
+|---|---|
+| PuLP — un **modeleur** qui délègue, solveurs interchangeables ; périmètre LP/MIP, CBC, `LpStatus` | `PuLP.md` P + QNP + PG |
+
+**Comparatif - Traitement du signal** — *la représentation cherchée : fréquence, temps-échelle,
+ou features audio*
+
+| Puce | Source |
+|---|---|
+| scipy.signal — la boîte **DSP** de référence ; Nyquist, format **SOS**, ondelettes **retirées** | `scipy.signal.md` P + PG |
+| PyWavelets — le **temps-échelle** et le **seuillage** ; ondelette mère, padding, CWT coûteuse | `PyWavelets.md` P + PG |
+| librosa — l'étage **audio** haut niveau ; lent, `sr=22050` rééchantillonne, hors ligne | `librosa.md` P + PG |
+
+**Comparatif - Outils stats** — *l'étage, puis la question : tester, factoriser, dater un
+effet, modéliser une durée*
+
+| Puce | Source |
+|---|---|
+| scipy.stats — le **socle bas niveau**, ~100 lois, bootstrap ; par fonctions, sans diagnostics | `scipy.stats.md` P + PG |
+| statsmodels — l'**objet modèle** et son résumé annoté, formules R ; constante, API double | `statsmodels.md` P + PG |
+| pingouin — p-value + **taille d'effet + IC + puissance** d'un coup ; **GPL-3.0** | `pingouin.md` P + QNP + PG |
+| lifelines — la seule **survie**, Kaplan-Meier, Cox, AFT ; **censure**, risques proportionnels | `lifelines.md` P + PG |
+| PyMC — **programmation probabiliste** en Python pur ; backend mouvant, divergences NUTS | `PyMC.md` P + PG |
+| Stan — **langage dédié compilé**, artefact `.stan` réutilisable ; compilation, toolchain C++ | `Stan.md` P + PG |
+| ArviZ — le seul **indépendant du moteur**, `InferenceData`, LOO/WAIC ; $\hat{R}$ ne suffit pas | `ArviZ.md` P + PG |
+| CausalImpact — l'**effet d'une intervention datée** par contrefactuel BSTS ; écosystème fragmenté | `CausalImpact.md` P + PG |
+| Prince — toute la famille **factorielle** en API sklearn ; API mouvante, Altair, single-node | `Prince.md` P + PG |
+| Fanalysis — les **aides à l'interprétation** FactoMineR ; **à l'arrêt depuis le 4 juin 2018** | `Fanalysis.md` P + QNP + PG |

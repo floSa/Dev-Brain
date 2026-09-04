@@ -303,7 +303,8 @@ Deux ajouts seulement, pour l'uniformité du repérage : le **bandeau** en haut 
 ## 8. Gabarit — `role: comparatif`
 
 Un `.base` ne peut ni pointer vers ce qu'il compare, ni porter de couleur. Chaque comparatif
-devient donc une page `.md` qui **embarque** la vue :
+**est** donc une page `.md` qui **embarque** la vue — **les 47 le sont depuis la clôture du
+lot 5, le 2026-09-06** :
 
 ```markdown
 # Comparatif - Bases vectorielles
@@ -477,7 +478,7 @@ Progressif, un domaine à la fois, le vault restant utilisable entre chaque lot.
 | 2 | `role:` remplace `galaxie:`/`type:` ; suppression de `status` et `remplace_par` ; scripts adaptés | oui, un commit |
 | 3 | Déplacement des fichiers, domaine par domaine, en commençant par **Bases de données** (47 pages, 0 notion à arbitrer) — **CLOS le 2026-09-05** : 20 domaines, puis « Métiers/ », « Patterns/ », « Rules/ » et le dernier comparatif transverse. `Dev/` n'existe plus | oui, `git mv` |
 | 4 | Les notions à recatégoriser, par lots — **CLOS le 2026-09-05**. Les 297 sont dans l'arbre, les douze familles passées (`stats` 37, `math` 26, `data` 13, `signal` 5, `ai` 4, `llm` 56, `rl` 17, `ts` 13, `nlp` 7, `dl` 52, `ml` 67), les 10 `MOC/Concepts/` supprimées sur mesure, `Wiki/` et `MOC/` n'existent plus. `math` et `stats` sont passés en premier, pas `ml`/`llm` : ce sont eux qui exigeaient d'ouvrir du vocabulaire, et l'ordre s'est vérifié — `llm` a quand même dû en ouvrir trois | oui |
-| 5 | Comparatifs `.base` → pages `.md` | oui |
+| 5 | Comparatifs `.base` → pages `.md` — **CLOS le 2026-09-06** : les 47 sont des pages `role: comparatif`, chacune à côté de son `.base`, dans le dossier que `categorie:` dérive. 258 puces, toutes sourcées dans une fiche. Quatre sessions, cf. les 27 *Remontées* de `AI/migration/lot-5-comparatifs.md` | oui |
 | 6 | Conversion des fiches au nouveau gabarit, domaine par domaine | oui |
 | 7 | Skills et règle de propagation — **fait**, cf. `AI/migration/lot-7-skills.md` | oui |
 | 8 | Durcissement des règles du validateur restées en avertissement | oui |

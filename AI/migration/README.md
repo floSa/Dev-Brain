@@ -41,7 +41,7 @@ propre travail.
 | 2 | `role:` remplace `galaxie:`/`type:` ; nettoyage du frontmatter | `lot-2-role.md` | oui | **fait le 2026-09-04** — 646 pages, validateur vert, 0 lien non résolu. Écarts au brief et pertes assumées : cf. *Remontées* |
 | 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | **fait le 2026-09-05** — 20 domaines, 682 fichiers déplacés, `Dev/` n'existe plus |
 | 4 | Recatégorisation des 205 notions | `lot-4-notions.md` | après lot 3 | **fait le 2026-09-05** — 297 notions rangées, 10 MOC supprimées sur mesure, `Wiki/` et `MOC/` n'existent plus |
-| 5 | Comparatifs `.base` → pages `.md` | `lot-5-comparatifs.md` | après lot 3 | — |
+| 5 | Comparatifs `.base` → pages `.md` | `lot-5-comparatifs.md` | après lot 3 | **fait le 2026-09-06** — les 47 sont des pages `role: comparatif`, 258 puces toutes sourcées, les 47 `.base` conservés à côté de leur page. Quatre sessions, 27 *Remontées* |
 | 6 | Conversion des fiches au nouveau gabarit | `lot-6-gabarit.md` | après lot 2 | — |
 | 7 | Skills et règle de propagation | `lot-7-skills.md` | après lots 2 et 3 | **fait** — `enrichir-brain` et `cloturer-brain` scindés, mode wiki dissous |
 | 8 | Durcissement des règles du validateur | `lot-8-durcissement.md` | en dernier | — |
@@ -110,6 +110,7 @@ Ce qu'une conversation découvre hors de son périmètre s'écrit ici, et **seul
 | 2026-09-04 | 2 | **`AI/scripts/audit_mesures.py` plante sur une console Windows cp1252** (`UnicodeEncodeError` sur `→`, ligne 262). Défaut **antérieur** au lot 2 — vérifié sur `HEAD~1`, le script n'a jamais eu le garde `sys.stdout.reconfigure` que porte `sync_reservoir.py`. Contournement : `PYTHONIOENCODING=utf-8`. | Non corrigé — hors périmètre, et sans rapport avec la migration. Deux lignes à ajouter quand quelqu'un repassera dessus. |
 | 2026-09-04 | 2 | **Les 7 scripts PowerShell de `AI/scripts/` lisent `galaxie`** (`audit-vault.ps1`, `report-ghosts.ps1`, `find-connexes.ps1`, `discover-links.ps1`, `audit-links.ps1`, `add-wikilinks.ps1`, `gen-stubs-batch.ps1`). Ils sont déjà périmés bien au-delà de ce champ : ils ciblent des chemins v1 (`Services/`, `Bugs/`) et des champs v1 (`sous_categories`). | Laissés en l'état, décision de floSa. Ils ne tournent plus depuis la v2 ; les réparer pour `role:` serait réparer un outil mort. À supprimer ou à réécrire, comme sujet propre. |
 | 2026-09-04 | 2 | **Le hook Stop mourait à l'installation de ses dépendances** : `uv` pose ses paquets par hardlink depuis son cache, et OneDrive refuse l'opération (`os error 396`). Le résumé de session n'était plus écrit, en silence. | Corrigé hors lot, commit `e068744` : `--link-mode=copy` sur les deux hooks de `.claude/settings.json`. |
+| 2026-09-06 | 5 | **Le vault n'a qu'un seul solveur d'optimisation, et c'est ce que `R8b` signale depuis le début.** `Comparatif - Solveurs d'optimisation` a un membre, `PuLP`, dont la fiche nomme onze briques absentes en clair — Pyomo, CVXPY, `scipy.optimize`, CBC, GLPK, HiGHS, SCIP, Gurobi, CPLEX, MOSEK, XPRESS. La conversion en page ne rend PAS l'avertissement silencieux, contrairement à ce que le brief prédisait deux fois : la variante à deux fichiers garde le `.base`, donc garde le contrôle qui porte sur lui. | Hors périmètre du lot 5, qui convertit et ne crée pas de brique. Entrée ouverte dans `AI/backlog-enrichissement-brain.md` avec les onze, leur `categorie:` et une priorité à trois pages (Pyomo, CVXPY, HiGHS) qui éteindraient `R8b`. La page le dit aussi en clair, pour que le lecteur ne prenne pas une puce unique pour une comparaison. |
 | 2026-09-04 | 2 | **Le vault principal portait 24 fichiers « modifiés » qui ne l'étaient pas** — pur bruit CRLF (contenu identique, `git diff --numstat` vide), et il était resté 2 commits derrière `origin/main`. Il bloquait le fast-forward d'intégration. | Résolu par `git add --renormalize .`, sans rien écraser : `git diff` était vide sur les 24 fichiers, vérifié avant. C'est le défaut décrit dans `Documentation/perso/obsidian-graph.md` §5 ; à refaire tel quel s'il revient. |
 
 ---
@@ -128,7 +129,12 @@ Elles n'empêchent aucun lot de démarrer, mais elles doivent être tranchées a
 2. **Les 18 notions sans domaine évident** — listées en fin d'arborescence. La plupart sont en
    fait faciles (`ORM`, `Migrations de schéma`, `Web scraping`, `Notebooks-as-code`) ; le lot 4
    les propose, floSa tranche.
-3. **Les 9 comparatifs sans filtre `categorie`** — leur dossier d'accueil se pose à la main.
+3. ~~**Les 9 comparatifs sans filtre `categorie`**~~ — **close.** Les 9 ont été rangés à la
+   clôture du lot 3, et le lot 5 a supprimé la question elle-même : une page de comparatif
+   porte une `categorie:`, dont `check_arbo` dérive le dossier. Plus aucun dossier ne se
+   pose à la main. Le dernier des 9, `Comparatif - Frontends web légers`, garde sa liste de
+   cinq noms codée en dur (`R8d`) — mesuré au lot 5 : aucun tag ne capture ces cinq membres
+   et rien d'autre, et le motif est désormais écrit dans le `.base` et dans la page.
 4. **Le seuil de promotion à 5 pages** — 28 sous-dossiers. À 4 il en donnerait 34, à 8 il en
    donnerait 12. Choix de confort, révisable au lot 3 sans rien casser d'autre.
 5. ~~**Variante « comparatif en un seul fichier »**~~ — **close le 2026-09-04** sans test : le lot 5
