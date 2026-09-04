@@ -261,22 +261,39 @@ coupe la ligne du tableau ; l'échapper répare le rendu Obsidian et fait **éch
 sur la vraie expression régulière. Les deux formes cassent, la nue est la seule qui
 passe.
 
-### 2. Où va une puce « besoin -> [[concurrent]] » : ça dépend du comparatif
+### 2. Où va une puce « besoin -> [[concurrent]] » : ça dépend de la CIBLE
 
-Les cinq premiers lots l'ont traitée de trois façons, et chacun avait raison **dans son
-cas**. La règle qui les réconcilie :
+**Corrigé le 2026-09-06.** La première formulation testait l'appartenance de la *fiche*
+à une vue `.base`. Trois lots l'ont trouvée fausse indépendamment (6, 7 et 8) : la
+question utile porte sur la **cible du renvoi**, pas sur la brique qui l'écrit.
 
-- **La brique est membre d'une vue `.base`** → la puce vit dans le comparatif, et la
-  cellule `Écarter si` de la fiche ne porte que des **bornes dures de la brique seule**.
-  C'est le cas du pilote et des lots 1, 2 et 5.
-- **La brique n'est membre d'AUCUNE vue** → la puce **reste** en `Écarter si`, avec son
-  wikilink. L'écarter la supprimerait. C'est le cas des lots 3 et 4 : un dossier peut
-  n'avoir aucun comparatif (`Apprentissage profond/`, 8 briques), et une vue filtrant par
-  tag rate des briques de son propre dossier (Kornia, timm, torchvision, hdbscan,
-  Featuretools, category_encoders, imbalanced-learn).
+La règle :
 
-Vérifier l'appartenance, ne pas la supposer : `AI/scripts/mesure_membres_bases.py` la
-donne. La conversation d'intégration normalise ce qui a divergé.
+- **La brique ET la cible sont membres de la MÊME vue `.base`** → la puce vit dans le
+  comparatif, et la cellule `Écarter si` de la fiche ne porte que des **bornes dures de
+  la brique seule**.
+- **Sinon — dans tous les autres cas** → la puce **reste** en `Écarter si` avec son
+  wikilink. L'écarter la supprimerait, parce qu'aucun comparatif ne peut la porter.
+
+Les trois cas qui tombent dans « sinon », tous rencontrés :
+  1. le dossier n'a aucun comparatif (`Apprentissage profond/`, 8 briques ; `Assistants/`) ;
+  2. la vue filtre par tag et rate des briques de son propre dossier (Kornia, timm,
+     torchvision, hdbscan, Featuretools, category_encoders, imbalanced-learn, Evidently,
+     Feast, PyTorch Geometric) ;
+  3. **la brique est membre mais la cible ne l'est pas** — `datasets -> Polars`,
+     `Flyte -> Dagster`, `E2B -> compute/a-la-demande`, `needle -> Outlines`,
+     `TRL -> PyTorch`. C'est le cas majoritaire, et celui que la première formulation
+     ratait.
+
+Vérifier, ne pas supposer : `AI/migration/scripts/mesure_membres_bases.py` (et non
+`AI/scripts/`). Un sur-comptage possible du script est signalé par le lot 8 : recouper
+sur un cas avant de s'y fier en masse.
+
+**Deux critères d'acceptation du brief cèdent devant cette règle**, et c'est délibéré :
+« un wikilink dans chaque cellule `Écarter si` » et « aucune cible dans deux sections »
+supposent tous deux que la redirection a toujours un comparatif d'accueil. Quand elle
+n'en a pas, la règle 2 l'emporte : on garde l'information plutôt que de satisfaire un
+critère. Les deux critères seront réécrits au lot 8.
 
 ### 3. `complements:` n'est pas « tout ce avec quoi ça s'intègre »
 
