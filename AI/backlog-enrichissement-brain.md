@@ -264,3 +264,49 @@ existantes (`Quantization`, `Distillation`, `Speculative decoding`,
 - **Renommage des 5 fiches en kebab-case** (`mcp-protocol`, `agent-loops`, `tool-use`,
   `prompt-caching`, `embeddings`) vers la casse du reste du vault. Non fait — demande une
   reprise des wikilinks entrants.
+
+---
+
+## Solveurs d'optimisation — le seul comparatif à un membre du vault
+
+> Ouvert le **2026-09-06**, à la conversion du lot 5. Source : `Analyse` — trou
+> repéré dans la cohérence du brain lui-même, pas dans un projet.
+
+`Comparatif - Solveurs d'optimisation` a **un seul membre**, [[PuLP]], et
+`check_brain` le signale depuis longtemps (`[WARN] R8b — 1 membre(s) (< 2) —
+comparatif sans comparaison`). La conversion en page ne règle rien et **ne rend
+pas l'avertissement silencieux** : R8b compte les membres du `.base`, que la page
+n'a pas touché. C'est le bon comportement — l'avertissement décrit un fait vrai,
+et le fait n'est pas dans la vue, il est dans le vault.
+
+**Le défaut est que le brain n'a pas les autres solveurs.** La fiche `PuLP` en
+nomme onze en clair, et aucun n'a de page. Tous relèveraient de
+`categorie: math/optimisation` (dossier « Mathématiques/Optimisation/ »),
+`famille: paquet` pour les modeleurs Python, `famille: application` ou
+`specification` pour les solveurs livrés en binaire.
+
+| Nom | Ce que c'est | Ce que sa fiche apporterait au comparatif |
+|---|---|---|
+| **Pyomo** | Modeleur Python généraliste (LP, MIP, NLP, MINLP), Sandia/COIN-OR | Le concurrent direct de PuLP, et le seul à couvrir le **non linéaire** — la borne que la fiche PuLP nomme sans avoir la page en face |
+| **CVXPY** | Modeleur d'optimisation **convexe** disciplinée (DCP), Stanford | L'autre moitié du non linéaire : quadratique, conique, et la vérification de convexité par construction |
+| **`scipy.optimize`** | Optimisation continue de SciPy — `minimize`, `linprog`, moindres carrés | Le point d'entrée sans contraintes linéaires, déjà installé partout, cité par PuLP comme repli |
+| **CBC** | Solveur MIP COIN-OR, livré avec PuLP | Le défaut de PuLP : sa performance est ce qui décide de changer de solveur |
+| **HiGHS** | Solveur LP/MIP open source moderne, MIT | Le remplaçant crédible de CBC côté OSS — c'est aussi le solveur par défaut de `scipy.linprog` |
+| **GLPK** | Solveur LP/MIP GNU, GPL | L'historique ; sa licence GPL est un critère de départage |
+| **SCIP** | Solveur MIP/MINLP académique (ZIB), Apache-2.0 depuis la v9 | Le plus rapide des non commerciaux sur MIP, et le seul OSS à faire du MINLP |
+| **Gurobi** | Solveur commercial, licence par cœur | La référence de performance, et le nom qui rend l'arbitrage coût/temps réel |
+| **CPLEX** | Solveur commercial IBM | Le second du duopole commercial |
+| **MOSEK** | Solveur commercial conique/SDP | Le seul à couvrir la programmation semi-définie |
+| **XPRESS** | Solveur commercial FICO | Complète la liste des cibles pilotables par PuLP |
+
+Priorité suggérée, par ce qui débloque le plus vite le comparatif : **Pyomo**,
+**CVXPY**, **HiGHS** — trois pages suffiraient à faire de cette vue une
+comparaison réelle et à éteindre `R8b`. Le reste peut rester des mentions.
+
+Voisinage à câbler à la création (règle de propagation, `brain-v3.md` §10) : le
+dossier « Mathématiques/Optimisation/ » porte déjà les notions
+`Optimisation sous contrainte`, `Optimisation combinatoire` et
+`Programmation linéaire en nombres entiers (MIP)`, plus le hub `Optimisation` —
+ce sont elles qu'il faudra relier, et la page
+`Comparatif - Solveurs d'optimisation` dont la section « Ce comparatif ne compare
+rien » sera alors à retirer.

@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 761,
+  "count": 762,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -394,6 +394,7 @@
       "connectorx"
     ],
     "combinatorial-optimization": [
+      "Comparatif - Solveurs d'optimisation",
       "Optimisation",
       "Optimisation combinatoire",
       "Pattern - Pipeline scraping → matching → optimisation",
@@ -1374,6 +1375,7 @@
       "Socle"
     ],
     "linear-programming": [
+      "Comparatif - Solveurs d'optimisation",
       "Mathématiques",
       "Optimisation",
       "Pattern - Pipeline scraping → matching → optimisation",
@@ -2007,6 +2009,7 @@
     ],
     "optimization": [
       "Adam optimizer",
+      "Comparatif - Solveurs d'optimisation",
       "Convexity",
       "Gradient descent",
       "Learning rate schedules",
@@ -19032,6 +19035,25 @@
         "information-theory",
         "learning-theory",
         "linear-programming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/Comparatif - Solveurs d'optimisation.md",
+      "nom": "Comparatif - Solveurs d'optimisation",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "optimization",
+        "linear-programming",
+        "combinatorial-optimization"
       ],
       "alternatives": null,
       "complements": null,
