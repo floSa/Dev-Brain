@@ -17,35 +17,47 @@ url_repo: https://github.com/microsoft/autogen
 
 # AutoGen
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 
-Framework **multi-agents** issu de **Microsoft Research**, popularisé par son modèle d'**agents conversationnels** : plusieurs agents (assistant, exécuteur de code, proxy utilisateur…) échangent des messages, se répartissent les sous-tâches et appellent des **outils** pour résoudre un problème. La réécriture 0.4 a introduit une architecture asynchrone et événementielle. AutoGen a fortement influencé la catégorie (le « GroupChat » est devenu une référence). Code sous licence **MIT** (docs en CC-BY-4.0).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python, .NET | open-source | en bibliothèque, rien à héberger | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-⚠️ **Statut 2026** : le dépôt `microsoft/autogen` est officiellement **en maintenance** depuis fin 2025 — *« will not receive new features… community managed going forward »*. Microsoft oriente les nouveaux projets vers **Microsoft Agent Framework** (fusion d'AutoGen et de [[Semantic Kernel]]). En parallèle, une partie de la communauté maintient le **fork AG2** (`ag2ai/ag2`), compatible avec le style v0.2. Trois projets coexistent donc : AutoGen (legacy), AG2 (fork communautaire), Agent Framework (successeur Microsoft).
+## Définition
 
-## Quand l'utiliser
+Framework **multi-agents** issu de Microsoft Research, popularisé par son modèle d'**agents
+conversationnels** : plusieurs agents — assistant, exécuteur de code, proxy utilisateur —
+échangent des messages, se répartissent les sous-tâches et appellent des **outils** pour résoudre
+un problème. La réécriture 0.4 a introduit une architecture asynchrone et événementielle. Le
+« GroupChat » d'AutoGen a fait la catégorie et l'a fortement influencée. Le dépôt
+`microsoft/autogen` est **en maintenance depuis fin 2025** — *« will not receive new features…
+community managed going forward »* — et trois projets coexistent désormais : AutoGen (legacy),
+le fork communautaire **AG2** (`ag2ai/ag2`, compatible avec le style v0.2), et **Microsoft Agent
+Framework**, fusion d'AutoGen et de [[Semantic Kernel]], vers lequel Microsoft oriente les
+nouveaux projets.
 
-- **Maintenir / comprendre** une base de code existante déjà bâtie sur AutoGen.
-- Prototyper rapidement un schéma **multi-agents conversationnel** dont on connaît déjà les idiomes.
+## Prendre si / Écarter si
 
-## Quand NE PAS l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Maintenir ou comprendre une base de code existante déjà bâtie sur AutoGen | Nouveau projet : le dépôt n'aura plus de fonctionnalités, et l'arbitrage AutoGen / AG2 / Agent Framework est à faire avant d'écrire une ligne |
+| Prototyper rapidement un schéma multi-agents conversationnel dont on connaît déjà les idiomes | Besoin de garanties de support et d'évolution : maintenance seule, pas de nouvelles fonctionnalités |
+| | Suivre des exemples trouvés sur le web : 0.2 (GroupChat historique), 0.4 (refonte) et AG2 (fork) ne ciblent pas la même API |
+| | Budget non borné : les boucles d'agents conversationnels s'emballent et sont difficiles à borner |
 
-- **Nouveau** projet : préférer **Microsoft Agent Framework** (successeur) ou, hors écosystème Microsoft, [[CrewAI]] / [[LangGraph]].
-- Besoin de **garanties de support et d'évolution** : le dépôt est en maintenance, pas de nouvelles fonctionnalités.
+## Mise en œuvre
 
-## Déploiement & coût
+- Installation — bibliothèque importée dans l'application (`pip` pour Python, NuGet pour .NET)
+- Point d'entrée — API d'agents conversationnels ; le GroupChat comme primitive d'orchestration
+- Prérequis — Python ou .NET, un accès LLM, et un **bac à sable** (conteneur) dès qu'un agent exécuteur de code entre en jeu
+- Exécution — en bibliothèque dans l'application hôte, mono-nœud ; le scaling est celui de l'hôte
+- Coût — gratuit, MIT (documentation en CC-BY-4.0) ; la dépense réelle est celle des LLM, à border explicitement
 
-- Open-source (MIT), gratuit ; bibliothèque importée dans l'app (`pip` / NuGet), aucune infra propre.
-- Coût réel dominé par les appels aux **LLM** ; un agent exécuteur de code nécessite un **bac à sable** (conteneur) à sécuriser et provisionner.
-- Scaling = celui de l'application hôte (single-node).
+## Écosystème
 
-## Pièges
-
-- **Legacy** : construire du neuf dessus expose à l'absence de correctifs et d'évolutions — bien arbitrer AutoGen vs AG2 vs Agent Framework.
-- **Confusion de versions** : 0.2 (GroupChat historique), 0.4 (refonte), AG2 (fork) — les exemples du web ne ciblent pas tous la même API.
-- Boucles d'agents **coûteuses et difficiles à borner** : conversations qui s'emballent, dépenses LLM non maîtrisées sans garde-fous.
-
-## Alternatives
+### Alternatives
 
 - [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
 - [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
@@ -55,11 +67,17 @@ Framework **multi-agents** issu de **Microsoft Research**, popularisé par son m
 - [[swarm-forge]] — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - [[PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
-## Liens
+## Ressources
 
-- **Successeur** : Microsoft Agent Framework — fusion d'AutoGen et de [[Semantic Kernel]] ; nouveau socle Microsoft pour agents et workflows multi-agents.
-- **Fork communautaire** : AG2 (`ag2ai/ag2`) — continuité open-source du projet hors Microsoft.
-- Même famille de **frameworks d'agents** que [[CrewAI]], [[OpenAI Agents SDK]], [[Agno]], [[smolagents]], [[Letta]], [[PraisonAI]] et la couche d'orchestration [[LangGraph]].
-- Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://microsoft.github.io/autogen/
+- Documentation — https://microsoft.github.io/autogen/
+- Dépôt — https://github.com/microsoft/autogen
+
+## Voir aussi
+
+- [[Agents]] — le hub du dossier
+- [[Comparatif - Frameworks LLM]] — ce qui départage les briques du dossier
+- [[Multi-agent systems]] — systèmes à plusieurs agents coopérants
+- [[Agent patterns]] — patrons d'architecture d'agents
+- [[agent-loops]] — la boucle perception / action d'un agent
+- [[Tool use patterns]] — patrons d'appel d'outils
+- [[Agent memory]] — mémoire persistante d'agent

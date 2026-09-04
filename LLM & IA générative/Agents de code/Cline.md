@@ -10,7 +10,7 @@ licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: TypeScript
 alternatives: ["[[Continue]]", "[[Aider]]", "[[freebuff]]", "[[t3code]]", "[[pi]]"]
-complements: []
+complements: ["[[Spec Kit]]", "[[BMAD]]"]
 tags: [code-assistant, code-generation, llm, agents, mcp]
 url_docs: https://docs.cline.bot/
 url_repo: https://github.com/cline/cline
@@ -18,33 +18,43 @@ url_repo: https://github.com/cline/cline
 
 # Cline
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
 
-Agent de code autonome (Apache 2.0) qui s'exécute dans l'IDE, le terminal ou comme SDK : on choisit une tâche et il l'exécute. Différenciateur clé : la boucle **Plan/Act** — Plan lit et raisonne sur une stratégie, Act l'exécute avec approbation à chaque étape — et un support **MCP de première classe** (marketplace de serveurs, stdio/SSE) pour brancher bases, observabilité et outils internes.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension TypeScript | open-source | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Déléguer une tâche multi-étapes à un agent qui édite, lance des commandes terminal et itère, sous contrôle humain pas-à-pas.
-- Tirer parti de l'écosystème MCP : connecter facilement des outils externes à l'agent.
-- Rester dans VS Code (aussi JetBrains, Cursor, Windsurf, Zed, Neovim ; CLI en préversion).
+Agent de code autonome qui s'exécute dans l'IDE, le terminal ou comme SDK : on lui confie une
+tâche et il l'exécute — il édite, lance des commandes, lit les résultats et itère. Son
+différenciateur est la boucle **Plan/Act** : en Plan il lit le dépôt et raisonne sur une
+stratégie, en Act il l'exécute avec une approbation demandée à chaque étape. Second
+différenciateur, un support **MCP de première classe** — marketplace de serveurs, transports
+stdio et SSE — pour brancher bases, observabilité et outils internes sur l'agent. Le contrôle
+humain pas-à-pas en fait un agent prudent par défaut, au prix d'un aller-retour permanent.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Autocomplétion inline et assistant léger dans l'IDE → [[Continue]].
-- Workflow terminal pur avec commits git atomiques automatiques → [[Aider]].
+| Prendre si | Écarter si |
+|---|---|
+| Déléguer une tâche multi-étapes à un agent qui édite, lance des commandes terminal et itère, sous contrôle humain pas-à-pas | L'agent lance des commandes : hors environnement isolé, chaque action est à revoir avant approbation |
+| Tirer parti de l'écosystème MCP : connecter facilement des outils externes à l'agent | Brancher des serveurs MCP tiers élargit d'autant la surface d'exécution — vérifier ce qu'on connecte |
+| Rester dans VS Code (aussi JetBrains, Cursor, Windsurf, Zed, Neovim ; CLI en préversion) | Budget d'API serré : les boucles agent longues multiplient les appels LLM |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- Open-source Apache 2.0, écrit en TypeScript. Disponible en extension IDE, CLI (préversion macOS/Linux) et SDK.
-- Multiplateforme. Le contrôle humain à chaque étape (Plan/Act) en fait un agent prudent par défaut.
+- Installation — extension d'éditeur ; également une CLI (préversion macOS/Linux) et un SDK
+- Point d'entrée — panneau de l'IDE, avec la bascule Plan/Act ; serveurs MCP déclarés à côté
+- Prérequis — un éditeur supporté (VS Code, JetBrains, Cursor, Windsurf, Zed, Neovim) et un accès LLM
+- Exécution — sur le poste, dans le processus de l'éditeur ; Windows, macOS, Linux
+- Coût — outil gratuit sous Apache 2.0 ; la dépense réelle est celle du LLM, et elle monte vite sur les boucles agent longues
 
-## Pièges
+## Écosystème
 
-- Agent autonome qui lance des commandes : revoir chaque action avant approbation, surtout hors environnement isolé.
-- Coût d'API potentiellement élevé sur les boucles agent longues (nombreux appels LLM).
-- Le branchement de serveurs MCP tiers élargit la surface d'exécution : vérifier ce qu'on connecte.
-
-## Alternatives
+### Alternatives
 
 - [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 - [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
@@ -52,7 +62,17 @@ Agent de code autonome (Apache 2.0) qui s'exécute dans l'IDE, le terminal ou co
 - [[t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 
-## Liens
+### Compléments
 
-- [[Comparatif - Assistants de code IA]] — comparatif des assistants IA de code
-- Doc : https://docs.cline.bot/
+- [[Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement). — se pose au-dessus de Cline : la spec dit quoi faire, Cline l'exécute.
+- [[BMAD]] — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story. — même étage que Spec Kit : il pilote, l'exécution reste chez Cline.
+
+## Ressources
+
+- Documentation — https://docs.cline.bot/
+- Dépôt — https://github.com/cline/cline
+
+## Voir aussi
+
+- [[Agents de code]] — le hub du dossier
+- [[Comparatif - Assistants de code IA]] — ce qui départage les briques du dossier

@@ -17,44 +17,60 @@ url_repo: https://github.com/langchain-ai/langgraph
 
 # LangGraph
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.
 
-Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe [[LangChain]] mais **utilisable seule**. Elle modélise un agent comme un **graphe** de nœuds (étapes) et d'arêtes (transitions, y compris **cycliques** et conditionnelles), avec un **état partagé** persisté entre les pas. Ce modèle bas niveau apporte ce qui manque à une simple chaîne : **reprise après interruption** (checkpoints), **human-in-the-loop**, **mémoire** durable, exécution **streaming** et observabilité des transitions. Inspirée de Pregel/Beam (calcul sur graphes) et de l'API de NetworkX. Se situe **au-dessus de** LangChain dans le stack : LangChain fournit les briques (modèles, outils), LangGraph orchestre leur enchaînement stateful. Écrit en **Python** (portage JS), cœur sous licence **MIT**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Agents **non triviaux** : boucles, branchements conditionnels, plusieurs outils, plusieurs étapes.
-- Besoin d'**état durable** : reprise après panne, sessions longues, checkpoints.
-- **Human-in-the-loop** : suspendre, faire valider/corriger par un humain, puis reprendre.
-- Systèmes **multi-agents** coordonnés, avec contrôle explicite du flux et du partage d'état.
+Bibliothèque d'orchestration d'**agents stateful**, développée par l'équipe [[LangChain]] mais
+**utilisable seule**. Elle modélise un agent comme un **graphe** de nœuds (étapes) et d'arêtes
+(transitions, y compris **cycliques** et conditionnelles), avec un **état partagé** persisté
+entre les pas. Ce modèle bas niveau apporte ce qui manque à une simple chaîne : reprise après
+interruption par checkpoints, human-in-the-loop, mémoire durable, exécution en streaming et
+observabilité des transitions. Inspirée de Pregel/Beam (calcul sur graphes) et de l'API de
+NetworkX, elle se situe **au-dessus de** LangChain dans le stack — LangChain fournit les briques
+(modèles, outils), LangGraph orchestre leur enchaînement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Chaîne **linéaire simple** ou appel LLM one-shot : la surcouche graphe est inutile → [[LangChain]] (chaînes/LCEL) suffit.
-- App **centrée RAG/données** sans logique d'agent complexe → [[LlamaIndex]] ou [[Haystack]].
+| Prendre si | Écarter si |
+|---|---|
+| Agents non triviaux : boucles, branchements conditionnels, plusieurs outils, plusieurs étapes | **Confusion de licence à ne pas commettre** : la bibliothèque est MIT, mais le runtime serveur `langgraph-api` et la LangGraph Platform managée sont sous Elastic License 2.0 — déployer ce serveur en production demande une clé commerciale |
+| Besoin d'état durable : reprise après panne, sessions longues, checkpoints | Modèle graphe + état plus exigeant : il faut penser nœuds, transitions et schéma d'état — plus de cérémonie qu'une chaîne |
+| Human-in-the-loop : suspendre, faire valider ou corriger par un humain, puis reprendre | Écosystème jeune et API en évolution : épingler les versions |
+| Systèmes multi-agents coordonnés, avec contrôle explicite du flux et du partage d'état | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Cœur open-source (MIT), gratuit ; bibliothèque importée dans l'app.
-- ⚠️ Le **runtime serveur** `langgraph-api` (et la **LangGraph Platform** managée) est sous **Elastic License 2.0** : un déploiement en production de ce serveur requiert une clé/licence commerciale. Le cœur LangGraph reste MIT — distinguer la bibliothèque du serveur d'exécution managé.
-- Coût réel dominé par les appels LLM ; persistance d'état à prévoir (base/checkpointer).
+- Installation — bibliothèque importée dans l'application ; le serveur `langgraph-api` est un composant distinct
+- Point d'entrée — API Python (portage JS) : nœuds, arêtes, schéma d'état, checkpointer
+- Prérequis — Python, un accès LLM, et une persistance pour l'état (base ou checkpointer)
+- Exécution — en bibliothèque dans l'application hôte ; le runtime serveur et la Platform managée sont un autre produit
+- Coût — cœur gratuit sous MIT ; `langgraph-api` / LangGraph Platform sous Elastic License 2.0, licence commerciale requise en production. La dépense réelle reste celle des LLM, plus la persistance d'état
 
-## Pièges
+## Écosystème
 
-- **Confusion de licence** fréquente : la lib est MIT, mais `langgraph-api` / LangGraph Platform ne le sont pas — vérifier avant de bâtir une offre dessus.
-- Modèle **graphe + état** plus exigeant : il faut penser nœuds, transitions et schéma d'état — plus de cérémonie qu'une chaîne.
-- Écosystème jeune et **API en évolution** ; bien épingler les versions.
+### Alternatives
 
-## Alternatives
+- Aucun substitut direct fiché : LangGraph est une **couche d'orchestration**, pas un framework généraliste — les frameworks généralistes du comparatif intègrent leur propre couche d'agents, plus légère et moins explicite.
 
-<!-- LangGraph est une couche d'orchestration complémentaire (cf. Liens), pas un substitut direct des frameworks généralistes. -->
-- Pour un besoin d'agent plus léger, les frameworks généralistes ([[LangChain]], [[LlamaIndex]], [[Haystack]]) intègrent leur propre couche d'agents.
+## Ressources
 
-## Liens
+- Documentation — https://docs.langchain.com/oss/python/langgraph/overview
+- Dépôt — https://github.com/langchain-ai/langgraph
 
-- **Au-dessus de** [[LangChain]] : même équipe (LangChain Inc.), orchestre ses briques de façon stateful ; utilisable néanmoins sans LangChain.
-- Même famille de **frameworks d'agents** que [[CrewAI]], [[AutoGen]], [[OpenAI Agents SDK]], [[Agno]], [[smolagents]] et [[Letta]] — mais LangGraph se place en couche d'orchestration bas niveau, **complémentaire** plutôt que substitut.
-- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
-- Concepts : [[Agent patterns]], [[agent-loops]], [[Multi-agent systems]], [[Tool use patterns]], [[Agent memory]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.langchain.com/oss/python/langgraph/overview
+## Voir aussi
+
+- [[Agents]] — le hub du dossier
+- [[Comparatif - Frameworks LLM]] — ce qui départage les briques du dossier
+- [[Agent patterns]] — patrons d'architecture d'agents
+- [[agent-loops]] — la boucle perception / action d'un agent
+- [[Human-in-the-loop]] — la validation humaine intercalée dans la boucle
+- [[Multi-agent systems]] — systèmes à plusieurs agents coopérants
+- [[Tool use patterns]] — patrons d'appel d'outils
+- [[Agent memory]] — mémoire persistante d'agent

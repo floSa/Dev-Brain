@@ -17,35 +17,43 @@ url_repo: https://github.com/crewAIInc/crewAI
 
 # CrewAI
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
 
-Framework **multi-agents** Python qui modélise une équipe : des **agents** dotés d'un *rôle*, d'un *objectif* et d'outils, regroupés en **Crews** qui se répartissent des **tâches** selon un processus (séquentiel ou hiérarchique). Pour les besoins plus déterministes, les **Flows** ajoutent une orchestration événementielle à état, combinable avec les crews. Point souvent mal compris : CrewAI est **autonome**, réécrit de zéro et **indépendant de [[LangChain]]** (contrairement à ses débuts). Très adopté (50k+ stars). Cœur **open-source (MIT)**, complété par une plateforme **Enterprise** managée (déploiement, monitoring, gouvernance).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Décrire un problème comme une **équipe de rôles** collaborant (recherche → rédaction → revue, par ex.).
-- Vouloir un framework multi-agents **léger et lisible**, sans dépendre de LangChain.
-- Passer du proto à la prod via les **Flows** et, si besoin, la **plateforme Enterprise** managée.
+Framework **multi-agents** Python qui modélise une équipe : des **agents** dotés d'un *rôle*,
+d'un *objectif* et d'outils, regroupés en **Crews** qui se répartissent des **tâches** selon un
+processus séquentiel ou hiérarchique. Pour les besoins plus déterministes, les **Flows** ajoutent
+une orchestration événementielle à état, combinable avec les crews. Point souvent mal compris :
+CrewAI est **autonome**, réécrit de zéro et **indépendant de [[LangChain]]**, contrairement à ses
+débuts. Très adopté (50k+ stars). Le cœur libre est complété par une plateforme **Enterprise**
+managée — déploiement, monitoring, gouvernance — restée optionnelle.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Contrôle **bas niveau** du graphe d'état (cycles explicites, checkpoints, reprise) → [[LangGraph]].
-- Simple **appel LLM** ou extraction structurée, sans collaboration d'agents → [[Instructor]] / [[PydanticAI]].
-- Écosystème **Microsoft / .NET** → Microsoft Agent Framework (cf. [[AutoGen]]).
+| Prendre si | Écarter si |
+|---|---|
+| Décrire un problème comme une **équipe de rôles** collaborant (recherche → rédaction → revue, par exemple) | L'abstraction « rôles » est trompeuse de simplicité : sans cadrage des tâches et des sorties attendues, les agents partent en boucle ou se répètent |
+| Vouloir un framework multi-agents léger et lisible, sans dépendre de LangChain | Coûts et latence à tenir : comme tout système multi-agents, ils grimpent vite — borner itérations et délégations |
+| Passer du proto à la prod via les Flows et, si besoin, la plateforme Enterprise managée | API en évolution — Crews d'abord, Flows ensuite : vérifier que les tutoriels ciblent la version courante |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Cœur open-source (MIT), gratuit ; bibliothèque `pip`/`uv` importée dans l'app.
-- Offre **CrewAI Enterprise** managée (payante) : déploiement d'agents, tableaux de bord, journalisation, gouvernance — optionnelle.
-- Coût réel dominé par les appels **LLM** ; les processus multi-agents multiplient les appels — surveiller la dépense.
+- Installation — bibliothèque `pip` / `uv`, importée dans l'application
+- Point d'entrée — API Python : agents (rôle, objectif, outils), Crews et tâches, Flows événementiels
+- Prérequis — Python et un accès LLM ; rien d'autre pour le cœur
+- Exécution — en bibliothèque dans l'application hôte ; la plateforme Enterprise, elle, est managée
+- Coût — cœur gratuit sous MIT ; CrewAI Enterprise est payante et optionnelle. La dépense réelle est celle des LLM, multipliée par le nombre d'agents
 
-## Pièges
+## Écosystème
 
-- **Abstraction « rôles »** trompeuse de simplicité : sans cadrage des tâches et des sorties, les agents partent en boucle ou se répètent.
-- Comme tout système multi-agents : **coûts et latence** qui grimpent vite — borner itérations et délégations.
-- API en **évolution** (Crews puis Flows) ; vérifier que les tutoriels ciblent la version courante.
-
-## Alternatives
+### Alternatives
 
 - [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 - [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
@@ -55,10 +63,17 @@ Framework **multi-agents** Python qui modélise une équipe : des **agents** dot
 - [[swarm-forge]] — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - [[PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
-## Liens
+## Ressources
 
-- Même famille de **frameworks d'agents** que [[AutoGen]], [[OpenAI Agents SDK]], [[Agno]], [[smolagents]], [[Letta]], [[PraisonAI]] et la couche d'orchestration [[LangGraph]].
-- Peut router ses appels via [[LiteLLM]] (abstraction multi-fournisseurs).
-- Concepts : [[Multi-agent systems]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Agent memory]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.crewai.com/
+- Documentation — https://docs.crewai.com/
+- Dépôt — https://github.com/crewAIInc/crewAI
+
+## Voir aussi
+
+- [[Agents]] — le hub du dossier
+- [[Comparatif - Frameworks LLM]] — ce qui départage les briques du dossier
+- [[Multi-agent systems]] — systèmes à plusieurs agents coopérants
+- [[Agent patterns]] — patrons d'architecture d'agents
+- [[agent-loops]] — la boucle perception / action d'un agent
+- [[Tool use patterns]] — patrons d'appel d'outils
+- [[Agent memory]] — mémoire persistante d'agent
