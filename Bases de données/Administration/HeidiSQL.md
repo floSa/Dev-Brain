@@ -18,6 +18,14 @@ url_repo: https://github.com/HeidiSQL/HeidiSQL
 
 # HeidiSQL
 
+<!-- AUTO:BANDEAU:START -->
+> Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Delphi | open-source | Windows (Linux/macOS via Wine) | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Client SQL **léger et rapide** pour Windows, gratuit sous GPL. Historiquement orienté MySQL/MariaDB, il gère aussi PostgreSQL, SQL Server et SQLite. Démarrage instantané, faible empreinte mémoire, édition de données en grille, export de structure et de données — l'outil de prédilection pour un usage Windows sans installer une machine Java.

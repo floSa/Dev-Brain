@@ -18,6 +18,14 @@ url_repo: https://github.com/redis/RedisInsight
 
 # Redis Insight
 
+<!-- AUTO:BANDEAU:START -->
+> Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application TypeScript/Electron | source-available | Windows, macOS, Linux, web (Docker) | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Le client graphique **officiel** de Redis. Navigation dans l'espace de clés (par type : strings, hashes, listes, streams…), workbench pour exécuter des commandes avec coloration et aide, et surtout un support de premier ordre des **modules** Redis (JSON, Search/query, séries temporelles). Outils d'analyse mémoire et de profilage des commandes lentes. Source-available sous SSPLv1, gratuit.

@@ -17,6 +17,14 @@ url_repo: https://github.com/spotify/annoy
 
 # Annoy
 
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 *Approximate Nearest Neighbors Oh Yeah* — bibliothèque C++ (bindings Python) de Spotify, à base de **forêts d'arbres aléatoires**. Particularité : l'index est un fichier **mmap** partageable entre process et chargeable sans tout mettre en RAM. Licence Apache 2.0. A longtemps servi Discover Weekly ; Spotify recommande désormais Voyager (basé sur HNSW) pour les nouveaux usages — Annoy reste maintenu mais figé.

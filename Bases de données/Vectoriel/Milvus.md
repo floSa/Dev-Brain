@@ -19,6 +19,14 @@ url_repo: https://github.com/milvus-io/milvus
 
 # Milvus
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle distribuée, conçue pour les très gros volumes (milliards de vecteurs). Architecture découplée stockage/calcul, choix large d'index (HNSW, IVF, DiskANN), parallélisme massif. Le poids lourd quand l'échelle dépasse ce qu'un nœud unique encaisse.

@@ -17,6 +17,14 @@ url_repo: https://github.com/lancedb/lancedb
 
 # LanceDB
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle **embarquée** (in-process, comme SQLite) bâtie sur **Lance**, un format de fichier colonnaire pensé pour l'IA : accès aléatoire rapide, stockage de données profondément imbriquées (texte, images, vidéo, embeddings) dans une même table. Cœur en **Rust**, API Python / TypeScript / Rust. Les données vivent dans des fichiers Lance posés sur le **disque local ou un stockage objet** (S3, GCS) — pas de serveur à exploiter. Au-delà du simple index ANN, c'est un **lakehouse multimodal** : on y stocke et requête vecteurs *et* données brutes côte à côte. Open-source (Apache 2.0) ; LanceDB Cloud / Enterprise pour la version managée.

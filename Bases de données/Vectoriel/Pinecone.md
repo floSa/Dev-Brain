@@ -19,6 +19,14 @@ url_repo:
 
 # Pinecone
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle entièrement managée, pionnière du secteur. Architecture serverless : les vecteurs vivent sur de l'object storage (S3) découplé du calcul, un pool élastique de processeurs sert les requêtes. Moteur propriétaire en Rust. Aucune infra à provisionner ni opérer — on écrit, on requête, le reste est invisible.

@@ -19,6 +19,14 @@ url_repo: https://github.com/weaviate/weaviate
 
 # Weaviate
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle open-source en Go, pensée pour la production. Modules de vectorisation intégrés (la base peut produire elle-même les embeddings), recherche hybride dense+BM25 native, multi-tenancy de première classe.

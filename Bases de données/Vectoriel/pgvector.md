@@ -17,6 +17,14 @@ url_repo: https://github.com/pgvector/pgvector
 
 # pgvector
 
+<!-- AUTO:BANDEAU:START -->
+> Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension C | open-source | dans le moteur hôte, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Extension Postgres qui ajoute un type `vector` et des opérateurs de similarité (`<->`, `<#>`, `<=>`). Le vector search vit dans Postgres : pas de service séparé, pas de double écriture, transactions ACID et jointures SQL gratuites. Le choix pragmatique quand du Postgres est déjà là.

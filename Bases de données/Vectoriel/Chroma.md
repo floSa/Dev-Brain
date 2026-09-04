@@ -17,6 +17,14 @@ url_repo: https://github.com/chroma-core/chroma
 
 # Chroma
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle « batteries incluses » pensée pour le RAG. Contrairement aux index ANN nus (Faiss, hnswlib…), elle gère **collections, métadonnées, filtrage et persistance** avec une API minimale. S'utilise embarquée (in-process, comme SQLite) ou en mode client/serveur. Cœur réécrit en Rust, API Python/JS en façade. Open-source (Apache 2.0) ; Chroma Cloud offre une version managée serverless.

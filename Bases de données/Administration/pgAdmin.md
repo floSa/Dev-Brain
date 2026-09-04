@@ -18,6 +18,14 @@ url_repo: https://github.com/pgadmin-org/pgadmin4
 
 # pgAdmin
 
+<!-- AUTO:BANDEAU:START -->
+> Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Python | open-source | Windows, macOS, Linux, web (Docker) | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 L'outil d'administration **officiel** de PostgreSQL. Application web (servie en local ou en mode serveur) qui couvre tout le cycle Postgres : navigateur d'objets, éditeur SQL, tableau de bord d'activité du serveur, gestion des rôles, sauvegarde/restauration, suivi des sessions. Sous PostgreSQL License (permissive, type BSD).

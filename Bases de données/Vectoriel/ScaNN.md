@@ -17,6 +17,14 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 
 # ScaNN
 
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 *Scalable Nearest Neighbors* — bibliothèque C++ (API Python, op TensorFlow optionnelle) de Google Research. Sa nouveauté : la **quantification anisotrope**, qui préserve les composantes parallèles des vecteurs (celles qui comptent pour le produit scalaire) et pousse le compromis débit/rappel à l'état de l'art sur du *maximum inner product search*. Open-source (Apache 2.0), optimisée AVX (x86).

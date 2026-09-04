@@ -18,6 +18,14 @@ url_repo: https://github.com/dbeaver/dbeaver
 
 # DBeaver
 
+<!-- AUTO:BANDEAU:START -->
+> Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Java | open-core | Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Client de base de données **universel** : un même outil pour la majorité des SGBD (Postgres, MySQL/MariaDB, Oracle, SQL Server, SQLite) et, en édition payante, les bases NoSQL (Mongo, Cassandra, Redis). Éditeur SQL avec complétion, navigateur de schéma, éditeur de données en grille, diagrammes ER. L'Edition Community est gratuite sous Apache 2.0.

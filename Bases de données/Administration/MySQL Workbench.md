@@ -18,6 +18,14 @@ url_repo: https://github.com/mysql/mysql-workbench
 
 # MySQL Workbench
 
+<!-- AUTO:BANDEAU:START -->
+> Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application C++ | open-source | Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 L'outil graphique **officiel** de MySQL, édité par Oracle, sous GPLv2. Trois piliers : **conception** (modélisation visuelle de schéma et reverse engineering en diagrammes ER), **développement** (éditeur SQL) et **administration** (configuration du serveur, utilisateurs, sauvegarde, suivi des performances). La référence quand le projet est centré MySQL.

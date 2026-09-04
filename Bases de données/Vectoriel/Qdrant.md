@@ -19,6 +19,14 @@ url_repo: https://github.com/qdrant/qdrant
 
 # Qdrant
 
+<!-- AUTO:BANDEAU:START -->
+> Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Base vectorielle écrite en Rust. Performances élevées, **filtrage payload** puissant (filtres appliqués pendant la recherche, pas après), quantification scalaire/binaire. Le défaut moderne pour un vector store self-hosted sérieux.

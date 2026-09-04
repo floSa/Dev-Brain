@@ -17,6 +17,14 @@ url_repo: https://github.com/nmslib/hnswlib
 
 # hnswlib
 
+<!-- AUTO:BANDEAU:START -->
+> Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Implémentation header-only en C++ (bindings Python, R) de l'algorithme **HNSW** (graphe navigable hiérarchique), issue de nmslib. Aucune dépendance hors C++11. Construction incrémentale, suppression d'éléments, faible empreinte mémoire. Licence Apache 2.0. C'est le HNSW « nu » que plusieurs moteurs ont embarqué.

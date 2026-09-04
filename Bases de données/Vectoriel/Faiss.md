@@ -17,6 +17,14 @@ url_repo: https://github.com/facebookresearch/faiss
 
 # Faiss
 
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Bibliothèque C++ (bindings Python) de Meta FAIR pour la recherche de similarité et le clustering de vecteurs denses. Pas un serveur : un **index en mémoire** que l'on appelle in-process. Référence du domaine — beaucoup de vector stores l'utilisent en interne. Licence MIT, support GPU (CUDA / ROCm) optionnel.

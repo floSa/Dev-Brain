@@ -18,6 +18,14 @@ url_repo:
 
 # DataGrip
 
+<!-- AUTO:BANDEAU:START -->
+> IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Java/Kotlin | propriétaire | Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 L'IDE base de données de JetBrains. Apporte au SQL ce que les IDE apportent au code : **complétion contextuelle**, analyse statique des requêtes, refactoring (renommer une colonne propage partout), navigation entre objets, contrôle de version des scripts. Multi-moteurs (relationnel + plusieurs NoSQL). Depuis octobre 2025, **gratuit pour usage non commercial** ; licence commerciale payante sinon.
