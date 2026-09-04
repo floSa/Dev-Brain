@@ -17,39 +17,54 @@ url_repo: https://github.com/kmkurn/pytorch-crf
 
 # pytorch-crf
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.
 
-Implémentation minimale et canonique d'une **couche CRF** (champ aléatoire conditionnel linéaire) pour [[PyTorch]]. Posée en sortie d'un modèle de séquence (BiLSTM ou transformeur), elle calcule la **log-vraisemblance** des séquences de labels et **décode** la meilleure par Viterbi — pour que les labels prédits respectent les contraintes de transition (un `I-PER` ne suit pas un `O`).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Ajouter une tête **CRF** à un tagger d'[[NER et étiquetage de séquence|étiquetage de séquence]] (NER, POS, chunking).
-- Quand les **dépendances entre labels voisins** comptent et qu'un softmax token-par-token produit des séquences incohérentes.
+Implémentation minimale et canonique d'une **couche CRF** — champ aléatoire conditionnel
+linéaire — pour [[PyTorch]]. Posée en sortie d'un modèle de séquence, BiLSTM ou transformeur,
+elle calcule la **log-vraisemblance** des séquences de labels et **décode** la meilleure par
+Viterbi, de sorte que les labels prédits respectent les contraintes de transition : un `I-PER`
+ne suit pas un `O`. C'est une brique de sortie, rien de plus — pas un tagger. Le projet est
+**dormant** : dernière release en 2019, sans évolution depuis, même s'il fonctionne avec les
+PyTorch récents.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pipeline NER clé en main → [[spaCy]] ou [[HuggingFace]] (`token-classification`, souvent sans CRF explicite).
-- Tâche sans structure séquentielle (classification de document) → tête linéaire simple.
+| Prendre si | Écarter si |
+|---|---|
+| Ajouter une tête CRF à un tagger d'[[NER et étiquetage de séquence]] : NER, POS, chunking | Projet **dormant** depuis 2019 : aucune évolution, compatibilité à valider soi-même à chaque montée de version PyTorch |
+| Les **dépendances entre labels voisins** comptent et un softmax token par token produit des séquences incohérentes | Un gros transformeur fine-tuné rend souvent le CRF **optionnel** : mesurer le gain réel avant de l'ajouter → [[HuggingFace]] |
+| | Masquage des séquences de longueur variable à gérer soigneusement — padding et `mask` sont à la charge de l'appelant |
+| | Tâche sans structure séquentielle, comme la classification de document : une tête linéaire simple suffit |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite ; `uv add pytorch-crf`. S'utilise comme un `nn.Module`.
-- **Single-node** ; suit le device du modèle PyTorch (CPU / GPU).
+- Installation — `uv add pytorch-crf`
+- Point d'entrée — s'utilise comme un `nn.Module` [[PyTorch]], posé en sortie du modèle de séquence
+- Prérequis — gérer le `mask` des séquences paddées ; aucune ressource externe
+- Exécution — single-node ; suit le device du modèle PyTorch, CPU ou GPU
+- Coût — gratuit, MIT, rien à héberger
 
-## Pièges
+## Écosystème
 
-- **Très dormant** : dernière release en 2019 — fonctionne avec PyTorch récent, mais aucune évolution ; valider la compatibilité.
-- Masquage des séquences de longueur variable à gérer soigneusement (padding, `mask`).
-- Les gros transformeurs fine-tunés rendent souvent le CRF **optionnel** : mesurer le gain réel avant de l'ajouter.
+### Alternatives
 
-## Alternatives
+- Se passer de CRF — une tête de token-classification sur transformeur ([[HuggingFace]]) rend souvent la couche superflue ; c'est la voie concurrente réelle, aucune fiche du brain n'occupe le même créneau.
 
-Pas de substitut direct dans le brain (brique de bas niveau). En pratique, l'alternative est de **se passer de CRF** avec une tête de token-classification sur transformeur ([[HuggingFace]], cf. *Liens*).
+## Ressources
 
-## Liens
+- Documentation — https://pytorch-crf.readthedocs.io
+- Dépôt — https://github.com/kmkurn/pytorch-crf
 
-- [[NER et étiquetage de séquence]] — CRF et Viterbi y sont décrits.
-- [[PyTorch]] — le framework hôte.
-- [[HuggingFace]] — token-classification, souvent sans CRF.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Doc : https://pytorch-crf.readthedocs.io
+## Voir aussi
+
+- [[NER et étiquetage de séquence]] — la notion où CRF et Viterbi sont décrits
+- [[PyTorch]] — le framework hôte
+- [[Comparatif - NLP]] — ce qui départage les outils du dossier

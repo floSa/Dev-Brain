@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[MLflow]]"]
 tags: [model-monitoring, data-drift, concept-drift, model-evaluation]
 url_docs: https://docs.evidentlyai.com/
 url_repo: https://github.com/evidentlyai/evidently
@@ -17,45 +17,63 @@ url_repo: https://github.com/evidentlyai/evidently
 
 # Evidently
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.
 
-Framework Python open-source pour **évaluer et surveiller** les systèmes ML et LLM. On lui donne un jeu de **référence** et un jeu **courant** ; il calcule plus de 100 métriques (dérive de données et de prédictions, qualité des données, performance du modèle, métriques de classification/régression, et désormais évaluation LLM) et produit des **rapports** interactifs, des suites de **tests** (assertions pass/fail intégrables en CI) et des **tableaux de bord** de suivi dans le temps. La même bibliothèque va du diagnostic ponctuel en notebook au monitoring continu via un service self-hostable ou Evidently Cloud. C'est l'outillage qui opérationnalise les concepts de [[Data drift]] et de [[Monitoring de modèle en production]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Détecter la dérive** (data drift, concept drift) entre entraînement et production : 20+ méthodes de test de distribution, PSI, KS, khi-deux.
-- **Monitorer un modèle en production** : performance, qualité des données, dérive, suivis dans le temps avec alertes.
-- **Tests de données/modèle en CI** : transformer des seuils métier en suites pass/fail rejouables.
-- Évaluer des **applications LLM** (qualité de réponses, RAG, tracing) avec le même cadre.
+Framework Python pour **évaluer et surveiller** les systèmes ML et LLM. On lui donne un jeu de
+**référence** et un jeu **courant** ; il calcule plus de 100 métriques — dérive de données et
+de prédictions, qualité des données, performance du modèle, métriques de classification et de
+régression, évaluation LLM — et produit des rapports interactifs, des suites de **tests**
+pass/fail intégrables en CI, et des tableaux de bord de suivi dans le temps. Tout repose donc
+sur la fenêtre de référence choisie, et sur le contexte métier qui l'entoure : une dérive
+saisonnière connue n'est pas un incident, mais rien dans l'outil ne le sait à votre place.
+C'est l'outillage qui opérationnalise [[Data drift]] et
+[[Monitoring de modèle en production]].
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin d'**observabilité d'infrastructure** (latence, CPU, logs applicatifs) → stack Prometheus/Grafana ; Evidently surveille le modèle, pas le système.
-- Adaptation **en continu** à la dérive plutôt que détection batch → [[River]] (apprentissage en ligne, détecteurs ADWIN/Page-Hinkley).
-- Journaliser paramètres/métriques d'entraînement et versionner les modèles → [[MLflow]] (tracking/registry), complémentaire d'Evidently.
+| Prendre si | Écarter si |
+|---|---|
+| Détecter la dérive — data drift, concept drift — entre entraînement et production : 20+ méthodes de test de distribution, PSI, KS, khi-deux | Le choix de la **fenêtre de référence** conditionne tout : une référence non représentative déclenche de fausses alertes, ou en masque de vraies |
+| Monitorer un modèle en production : performance, qualité des données, dérive, suivi dans le temps avec alertes | Sur **gros volumes**, les tests statistiques (KS, khi-deux) sur-déclenchent — préférer PSI ou des seuils d'effet, ou sous-échantillonner |
+| Tests de données et de modèle en **CI** : transformer des seuils métier en suites pass/fail rejouables | Observabilité d'**infrastructure** — latence, CPU, logs applicatifs : Evidently surveille le modèle, pas le système |
+| Évaluer des applications **LLM** — qualité de réponses, RAG, tracing — dans le même cadre | Adaptation **en continu** à la dérive plutôt que détection batch → [[River]], et ses détecteurs ADWIN / Page-Hinkley |
+| | Journaliser paramètres et métriques d'entraînement, versionner les modèles → [[MLflow]], complémentaire et non substituable |
+| | API en évolution rapide, refondue autour de `Report` / `Dataset` : épingler la version et lire les notes de migration |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add evidently`. Modèle **hybride** : cœur d'évaluation open-source + service self-hostable + **Evidently Cloud** (managé, payant).
-- Self-host : la lib s'exécute dans le pipeline (batch, Airflow…) ; le service de monitoring (UI, stockage, dashboards) se déploie en conteneur.
-- Coût = gratuit en lib pure ; offre cloud facturée si l'on veut le suivi managé et le stockage des traces.
+- Installation — `uv add evidently`
+- Point d'entrée — API Python dans le pipeline (batch, Airflow) : jeu de référence contre jeu courant, puis `Report` ou suite de tests
+- Prérequis — une fenêtre de référence représentative, et le contexte métier qui distingue dérive attendue et incident
+- Exécution — la bibliothèque s'exécute dans le pipeline ; le service de monitoring (UI, stockage, dashboards) se déploie à côté, en conteneur
+- Coût — gratuit en bibliothèque pure (Apache-2.0) ; Evidently Cloud, managé, est payant, tout comme le stockage des traces
 
-## Pièges
+## Écosystème
 
-- Le choix de la **fenêtre de référence** conditionne tout : une référence non représentative déclenche de fausses alertes (ou en masque de vraies).
-- Sur **gros volumes**, les tests statistiques (KS, khi-deux) sur-déclenchent — préférer PSI/seuils d'effet ou sous-échantillonner.
-- Dérive **saisonnière connue** ≠ incident : sans contexte métier, l'alerte induit en erreur.
-- API en évolution rapide (refonte autour de `Report`/`Dataset` récente) : épingler la version et lire les notes de migration.
-
-## Alternatives
+### Alternatives
 
 - NannyML — estimation de performance sans labels et détection de drift (pas encore en fiche).
 - WhyLabs / whylogs — profiling et monitoring de données à grande échelle (pas encore en fiche).
 
-## Liens
+### Compléments
 
-- [[Data drift]] — dérive de données/concept qu'Evidently détecte et quantifie.
-- [[Monitoring de modèle en production]] — cadre opérationnel qu'il outille.
-- [[MLflow]] — tracking/registry où journaliser drift et performance ; complémentaire.
-- [[River]] — approche en ligne, adaptation continue plutôt que détection batch.
-- Doc : https://docs.evidentlyai.com/
+- [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud — où journaliser dérive et performance : la fiche l'énonce comme complémentaire, pas comme substitut.
+
+## Ressources
+
+- Documentation — https://docs.evidentlyai.com/
+- Dépôt — https://github.com/evidentlyai/evidently
+
+## Voir aussi
+
+- [[Data drift]] — la dérive de données et de concept qu'Evidently détecte et quantifie
+- [[Monitoring de modèle en production]] — le cadre opérationnel qu'il outille
+- [[River]] — l'approche en ligne : adaptation continue plutôt que détection batch

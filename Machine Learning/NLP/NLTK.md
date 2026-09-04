@@ -17,43 +17,55 @@ url_repo: https://github.com/nltk/nltk
 
 # NLTK
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
 
-La bibliothèque historique de **NLP classique** en Python (depuis 2001), pensée pour l'**enseignement et la recherche**. Couvre une large palette d'outils symboliques et statistiques : tokenisation, stemming (Porter, Snowball), lemmatisation (WordNet), étiquetage morphosyntaxique, parsing, classification, et surtout des dizaines de **corpus et lexiques** téléchargeables (`nltk.download`). Accompagnée du livre *NLP with Python* — son ADN reste didactique : montrer comment les briques fonctionnent, plus que servir en production.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Apprendre / enseigner le [[Traitement du langage naturel]] : voir chaque algorithme classique explicitement.
-- Accéder à des **corpus et ressources** prêts à l'emploi (WordNet, stopwords, treebanks, FrameNet).
-- Prototyper une baseline linguistique (stemming, n-grammes, collocations, [[Classification de texte|classification]] naïve Bayes).
-- Tâches ponctuelles de préparation : [[Tokenization|tokenisation]], segmentation de phrases, fréquences.
+La bibliothèque historique de **NLP classique** en Python, née en 2001 et pensée pour
+l'enseignement et la recherche. Elle couvre une large palette d'outils symboliques et
+statistiques — tokenisation, stemming (Porter, Snowball), lemmatisation par WordNet, étiquetage
+morphosyntaxique, parsing, classification — et surtout des dizaines de **corpus et lexiques**
+téléchargeables : WordNet, stopwords, treebanks, FrameNet. Ces ressources vivent **hors du
+paquet** et se récupèrent explicitement (`nltk.download`), ce qui est la première friction
+rencontrée. Accompagnée du livre *NLP with Python*, son ADN reste didactique : montrer comment
+les briques fonctionnent, plus que servir du débit.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- NLP **industriel** rapide et multilingue (pipelines pré-entraînés, [[NER et étiquetage de séquence|NER]], dépendances) → [[spaCy]].
-- État de l'art par transformeurs (fine-tuning, embeddings contextuels) → [[HuggingFace]].
-- Pipeline de production sous contrainte de latence : l'API objet par objet de NLTK n'est pas optimisée pour le débit.
+| Prendre si | Écarter si |
+|---|---|
+| Apprendre ou enseigner le [[Traitement du langage naturel]] : chaque algorithme classique est montré explicitement |  |
+| Accéder à des corpus et ressources prêts à l'emploi : WordNet, stopwords, treebanks, FrameNet | Support **multilingue inégal**, très centré anglais : pour le français, [[spaCy]] est souvent plus direct |
+| Prototyper une baseline linguistique : stemming, n-grammes, collocations, classification naïve Bayes ([[Classification de texte]]) | Pipeline de production sous contrainte de latence : l'API objet par objet n'est pas optimisée pour le volume |
+| Tâches ponctuelles de préparation : tokenisation ([[Tokenization]]), segmentation de phrases, fréquences |  |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add nltk` + téléchargement des ressources (`python -m nltk.downloader ...`).
-- **Single-node**, CPU, traitement en mémoire ; pas de modèle neuronal lourd à charger.
-- Ressources (corpus, modèles) gérées hors paquet, à télécharger explicitement.
+- Installation — `uv add nltk`, puis les ressources séparément : `python -m nltk.downloader punkt wordnet stopwords`
+- Point d'entrée — API Python objet par objet ; un `LookupError` au premier appel signale une ressource non téléchargée, pas un bug
+- Prérequis — espace disque pour les corpus, gérés hors paquet
+- Exécution — single-node, CPU, traitement en mémoire ; aucun modèle neuronal lourd à charger
+- Coût — gratuit, Apache-2.0, rien à héberger
 
-## Pièges
+## Écosystème
 
-- Oublier `nltk.download('punkt' / 'wordnet' / 'stopwords'...)` → `LookupError` au premier appel : les ressources ne sont pas embarquées.
-- Support **multilingue** inégal : très centré anglais ; pour le français, spaCy est souvent plus direct.
-- API verbeuse et lente sur du volume — c'est un outil d'apprentissage et de prototypage, pas un moteur de production.
-
-## Alternatives
+### Alternatives
 
 - [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
 
-## Liens
+## Ressources
 
-- [[Traitement du langage naturel]] — page chapeau ; NLTK en est la référence classique/pédagogique.
-- [[Tokenization]] · [[Classification de texte]] — tâches couvertes.
-- [[spaCy]] — la suite industrielle quand on passe du cours à la production.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Doc : https://www.nltk.org/
+- Documentation — https://www.nltk.org/
+- Dépôt — https://github.com/nltk/nltk
+
+## Voir aussi
+
+- [[Traitement du langage naturel]] — la notion chapeau du dossier, dont NLTK est la référence classique
+- [[Tokenization]] · [[Classification de texte]] — les tâches couvertes
+- [[Comparatif - NLP]] — ce qui départage les outils du dossier

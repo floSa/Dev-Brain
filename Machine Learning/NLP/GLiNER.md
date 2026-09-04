@@ -17,42 +17,53 @@ url_repo: https://github.com/urchade/GLiNER
 
 # GLiNER
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 
-Modèle de **NER zero-shot** : au lieu d'une liste figée de types appris, on lui **décrit les entités voulues en langage naturel** (« maladie », « numéro de contrat », « molécule ») et il les extrait, sans réentraînement. Un seul modèle compact (encodeur bidirectionnel), bien plus léger qu'un LLM, pour une extraction flexible.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Extraire des **types d'entités custom** sans données annotées ni fine-tuning.
-- Prototyper vite une extraction sur un domaine de niche (médical, juridique, technique).
-- Alternative frugale au prompting d'un LLM pour de la NER.
+Modèle de **NER zero-shot**. Au lieu d'une liste figée de types appris à l'entraînement, on lui
+**décrit les entités voulues en langage naturel** — « maladie », « numéro de contrat »,
+« molécule » — et il les extrait sans réentraînement. Un seul encodeur bidirectionnel compact
+suffit, bien plus léger qu'un LLM sollicité par prompt pour la même tâche. La contrepartie est
+que la qualité dépend directement de la **formulation des libellés** : les types se travaillent
+par itérations, et le zero-shot ne bat pas un modèle entraîné quand les données annotées
+existent.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Types d'entités **stables et volumineux** avec données dispo → un pipeline entraîné ([[spaCy]], [[HuggingFace]]) sera plus précis et plus rapide.
-- Pipeline linguistique complet (POS, dépendances, lemmes) → [[spaCy]].
-- Extraction relationnelle complexe / raisonnement → un LLM.
+| Prendre si | Écarter si |
+|---|---|
+| Extraire des types d'entités **custom** sans données annotées ni fine-tuning | Types d'entités stables et volumineux, avec données disponibles : un pipeline entraîné ([[spaCy]], [[HuggingFace]]) sera plus précis et plus rapide |
+| Prototyper vite une extraction sur un domaine de niche : médical, juridique, technique | Qualité **variable selon le domaine** et la formulation des types — itérer sur les libellés, sans garantie de convergence |
+| Alternative frugale au prompting d'un LLM pour de la NER | Projet jeune, encore en **0.x** : API et modèles mouvants, épingler la version et valider sur ses données |
+| | Extraction relationnelle complexe ou raisonnement : hors du périmètre d'un encodeur de NER |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite ; `uv add gliner`, modèles sur le Hub.
-- **Single-node** ; CPU possible, GPU pour le débit. Empreinte modérée.
-- Encore en **0.x** (API et modèles évoluent) — épingler la version.
+- Installation — `uv add gliner`
+- Point d'entrée — API Python ; modèles tirés du Hub [[HuggingFace]], types d'entités passés en clair à l'appel
+- Prérequis — épingler la version : le projet est en 0.x, l'API et les modèles évoluent
+- Exécution — single-node ; CPU possible, GPU pour le débit ; empreinte mémoire modérée
+- Coût — gratuit, Apache-2.0, rien à héberger
 
-## Pièges
+## Écosystème
 
-- Qualité **variable selon le domaine** et la formulation des types — itérer sur les libellés.
-- Projet jeune (0.x) : API mouvante, valider sur ses données.
-- Le zero-shot ne bat pas un modèle bien entraîné quand les données existent.
-
-## Alternatives
+### Alternatives
 
 - [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
 
-## Liens
+## Ressources
 
-- [[NER et étiquetage de séquence]] — son terrain (la voie zero-shot).
-- [[Traitement du langage naturel]] — page chapeau.
-- [[HuggingFace]] — modèles et exécution.
-- [[Comparatif - NLP|Comparatif — NLP]]
-- Repo : https://github.com/urchade/GLiNER
+- Dépôt — https://github.com/urchade/GLiNER
+
+## Voir aussi
+
+- [[NER et étiquetage de séquence]] — son terrain, par la voie zero-shot
+- [[Traitement du langage naturel]] — la notion chapeau du dossier
+- [[Comparatif - NLP]] — ce qui départage les outils du dossier

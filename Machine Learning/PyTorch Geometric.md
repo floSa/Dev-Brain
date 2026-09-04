@@ -17,43 +17,58 @@ url_repo: https://github.com/pyg-team/pytorch_geometric
 
 # PyTorch Geometric
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque de référence de deep learning sur graphes pour PyTorch — couches de message passing (GCN, GAT, GraphSAGE…), mini-batching par voisinage et datasets de graphes prêts à l'emploi pour construire et entraîner des GNN.
 
-Bibliothèque de référence pour le **deep learning sur graphes** au-dessus de [[PyTorch]]. Elle fournit la brique fondamentale des [[Graph Neural Networks]] — le **passage de messages** (`MessagePassing`) — et des dizaines de couches prêtes à l'emploi (GCN, GAT, GraphSAGE, GIN…), un format de données graphe (`Data`, `HeteroData`) basé sur des tenseurs `edge_index`, des **loaders** qui échantillonnent le voisinage pour faire tenir de gros graphes en mémoire (NeighborLoader), et un catalogue de datasets et de benchmarks. Opérations creuses et `scatter`/`gather` optimisés GPU : on écrit un GNN en quelques couches, on l'entraîne comme n'importe quel modèle PyTorch.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Apprendre sur des données relationnelles / en graphe** : classification de nœuds, prédiction de liens, propriété de graphe (molécules, réseaux sociaux, recommandation).
-- Prototyper et entraîner un **GNN** (GCN/GAT/GraphSAGE) sans réimplémenter le message passing.
-- Gros graphes ne tenant pas en mémoire → échantillonnage de voisinage (mini-batching) intégré.
-- Recherche : implémentations de référence et model zoo pour reproduire/étendre l'état de l'art.
+La bibliothèque de référence pour le **deep learning sur graphes** au-dessus de [[PyTorch]].
+Elle fournit la brique fondamentale des [[Graph Neural Networks]] — le **passage de messages**
+(`MessagePassing`) — et des dizaines de couches prêtes à l'emploi (GCN, GAT, GraphSAGE, GIN),
+un format de données graphe (`Data`, `HeteroData`) fondé sur des tenseurs `edge_index`, des
+loaders qui échantillonnent le voisinage pour faire tenir de gros graphes en mémoire
+(`NeighborLoader`), et un catalogue de datasets et de benchmarks. Le **mini-batching**
+concatène les graphes en un seul gros graphe par blocs diagonaux : le vecteur `batch` devient
+indispensable au pooling, et l'oublier produit des résultats faux **silencieusement**. Les
+opérations creuses et les `scatter`/`gather` sont optimisés GPU.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- La **structure du graphe n'apporte rien** : des features tabulaires + un [[XGBoost|GBDT]] font souvent aussi bien, pour moins cher (cf. [[Graph Neural Networks]]).
-- Données en grille ou séquence régulière → [[torchvision|CNN]] / Transformers, pas un GNN.
-- Préférence pour l'écosystème DGL (multi-backend historique) ou besoin d'un moteur de graphes en base → [[Neo4j]] (stockage, pas apprentissage).
+| Prendre si | Écarter si |
+|---|---|
+| Apprendre sur des données relationnelles ou en graphe : classification de nœuds, prédiction de liens, propriété de graphe | La **structure du graphe n'apporte rien** : des features tabulaires et un GBDT ([[XGBoost]]) font souvent aussi bien, pour moins cher — cf. [[Graph Neural Networks]] |
+| Prototyper et entraîner un GNN — GCN, GAT, GraphSAGE — sans réimplémenter le message passing | **Installation des extensions** (`torch-scatter`, `torch-sparse`, `pyg-lib`) sensible à la version exacte de PyTorch et CUDA : source classique d'échecs, roues officielles appariées obligatoires |
+| Gros graphes ne tenant pas en mémoire : échantillonnage de voisinage intégré | **Over-smoothing** : empiler trop de couches rend les nœuds indiscernables — rester peu profond, ou ajouter résidus et normalisation |
+| Recherche : implémentations de référence et model zoo pour reproduire ou étendre l'état de l'art | Échantillonnage de voisinage mal réglé sur des nœuds très connectés : biais, ou explosion mémoire |
+| | Données en grille ou séquence régulière — CNN, Transformers — plutôt qu'un graphe |
+| | Besoin d'un moteur de graphes **en base**, pas d'apprentissage → [[Neo4j]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; `uv add torch-geometric`. Extensions creuses optionnelles (`pyg-lib`, `torch-scatter`) à appairer avec la version PyTorch/CUDA.
-- Self-host : bibliothèque Python, rien à héberger ; coût = l'infra GPU d'entraînement.
-- Suit les devices et versions de PyTorch (CUDA, ROCm, CPU).
+- Installation — `uv add torch-geometric` ; extensions creuses optionnelles (`pyg-lib`, `torch-scatter`) à appairer avec la version PyTorch/CUDA
+- Point d'entrée — API Python : `Data` / `HeteroData`, couches `MessagePassing`, loaders d'échantillonnage
+- Prérequis — [[PyTorch]] installé, et une version de CUDA cohérente avec les roues des extensions
+- Exécution — single-node ; suit les devices et versions de PyTorch (CUDA, ROCm, CPU)
+- Coût — gratuit, MIT, rien à héberger ; le coût est celui de l'infra GPU d'entraînement
 
-## Pièges
+## Écosystème
 
-- **Installation des extensions** (`torch-scatter`, `torch-sparse`, `pyg-lib`) sensible à la version exacte de PyTorch et CUDA — source classique d'échecs ; utiliser les roues officielles appariées.
-- **Over-smoothing** : empiler trop de couches rend les nœuds indiscernables → rester peu profond ou ajouter résidus/normalisation.
-- Le **mini-batching de graphes** concatène les graphes en un gros graphe par blocs diagonaux : penser au vecteur `batch` pour le pooling, sinon résultats faux silencieux.
-- Échantillonnage de voisinage mal réglé → biais ou explosion mémoire sur nœuds très connectés (hubs).
+### Alternatives
 
-## Alternatives
+- Deep Graph Library (DGL) — l'alternative majeure pour les GNN, multi-backend historique (pas encore en fiche).
 
-- Deep Graph Library (DGL) — alternative majeure pour les GNN, multi-backend (pas encore en fiche).
+## Ressources
 
-## Liens
+- Documentation — https://pytorch-geometric.readthedocs.io/
+- Dépôt — https://github.com/pyg-team/pytorch_geometric
 
-- [[Graph Neural Networks]] — le concept (message passing, GCN/GAT/GraphSAGE) que PyG implémente.
-- [[PyTorch]] — framework sous-jacent.
-- [[Neo4j]] — source possible des graphes en entrée (stockage vs apprentissage).
-- Doc : https://pytorch-geometric.readthedocs.io/
+## Voir aussi
+
+- [[Graph Neural Networks]] — la notion : message passing, GCN, GAT, GraphSAGE, que PyG implémente
+- [[PyTorch]] — le framework sous-jacent
+- [[Neo4j]] — source possible des graphes en entrée : stockage, contre apprentissage
