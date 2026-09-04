@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 757 pages actives.
+> 759 pages actives.
 
 ## Par page
 
@@ -263,7 +263,7 @@
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[plotly]]
-- liens entrants : [[Comparatif - Visualisation]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Comparatif - Visualisation]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]]
 
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
@@ -393,7 +393,7 @@
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
 - liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[Pydantic]], [[Uvicorn]]
-- liens entrants : [[Flask]], [[HTMX]], [[Jinja2]], [[LM Studio]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]], [[vLLM]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[LM Studio]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]], [[vLLM]]
 
 ### fastmcp  ·  brique
 - tags : `mcp`, `tool-use`, `agents`
@@ -473,7 +473,7 @@
 ### Gradio  ·  brique
 - tags : `ml-demo`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Shiny for Python]], [[Streamlit]]
-- liens entrants : [[Dash]], [[HuggingFace]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[HuggingFace]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
@@ -538,7 +538,7 @@
 ### HTMX  ·  brique
 - tags : `hypermedia`
 - liens sortants : [[Comparatif - Frontends web légers]], [[FastAPI]], [[Flask]], [[Jinja2]]
-- liens entrants : [[Jinja2]], [[Web & API]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Jinja2]], [[Web & API]]
 
 ### HuggingFace  ·  brique
 - tags : `transformers`, `model-hub`, `fine-tuning`, `nlp`, `deep-learning`, `embeddings`
@@ -1388,7 +1388,7 @@
 ### Shiny for Python  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Streamlit]]
-- liens entrants : [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 
 ### SmartTube  ·  brique
 - tags : `media-player`, `privacy`
@@ -1463,7 +1463,7 @@
 ### Streamlit  ·  brique
 - tags : `data-app`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[plotly]]
-- liens entrants : [[Dash]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
 
 ### STUMPY  ·  brique
 - tags : `anomaly-detection`, `timeseries`
@@ -1690,6 +1690,11 @@
 - liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[MLflow]], [[Metaflow]]
 - liens entrants : [[Comparatif - Orchestrateurs ML]], [[Flyte]], [[Machine Learning]], [[Metaflow]]
 
+### Comparatif - Apps data & démos ML  ·  comparatif
+- tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
+- liens sortants : [[Comparatif - Apps data & démos ML.base]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Streamlit]]
+
 ### Comparatif - Assistants de code IA  ·  comparatif
 - tags : `code-assistant`, `agents`, `code-generation`
 - liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
@@ -1794,6 +1799,11 @@
 - tags : `text-to-sql`, `rag`, `agents`
 - liens sortants : [[Comparatif - Frameworks text-to-SQL.base]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
 - liens entrants : [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
+
+### Comparatif - Frontends web légers  ·  comparatif
+- tags : `web-framework`, `data-app`, `hypermedia`
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers.base]], [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Streamlit]]
 
 ### Comparatif - Gestionnaires de paquets Python  ·  comparatif
 - tags : `package-manager`, `reproducibility`
@@ -3840,8 +3850,8 @@
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
 - `cryptography` : PyJWT, Sécurité, croc  — pas de page concept dédiée
-- `dashboard` : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI  — pas de page concept dédiée
-- `data-app` : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
+- `dashboard` : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI  — pas de page concept dédiée
+- `data-app` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, Vision, albumentations, torchvision
 - `data-contract` : Contrats de données & qualité
 - `data-drift` : Data drift, Evidently, Monitoring de modèle en production
@@ -3907,7 +3917,7 @@
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
 - `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
-- `hypermedia` : HTMX, Web & API  — pas de page concept dédiée
+- `hypermedia` : Comparatif - Frontends web légers, HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Comparatif - Optimisation d'hyperparamètres, Hyperopt, Machine Learning, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune, Suivi d'expériences
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : ELT vs ETL & idempotence, Orchestration, Stream processing
@@ -3959,7 +3969,7 @@
 - `missing-data` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno  — pas de page concept dédiée
 - `mixed-precision` : Apprentissage profond, DeepSpeed, Mixed precision, accelerate
 - `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
-- `ml-demo` : Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
+- `ml-demo` : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `ml-pipeline` : Comparatif - Orchestrateurs ML, Flyte, Machine Learning, Metaflow, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantization  — pas de page concept dédiée
@@ -4107,7 +4117,7 @@
 - `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `wavelet` : Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
-- `web-framework` : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
+- `web-framework` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
 - `web-scraping` : Comparatif - Scraping, Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
@@ -4142,8 +4152,8 @@
 - `container` (porté par : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
-- `dashboard` (porté par : Beszel, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
-- `data-app` (porté par : Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
+- `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
+- `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-modeling` (porté par : Architecture médaillon)
 - `data-pipeline` (porté par : Airflow, Architecture médaillon, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Dagster, Data & pipelines, ELT vs ETL & idempotence, Kestra, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping)
 - `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Sortie typée, Structured outputs)
@@ -4183,7 +4193,7 @@
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
-- `hypermedia` (porté par : HTMX, Web & API)
+- `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `in-memory` (porté par : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
@@ -4214,7 +4224,7 @@
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
 - `metrics` (porté par : Beszel, Grafana, Observabilité)
 - `missing-data` (porté par : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno)
-- `ml-demo` (porté par : Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
+- `ml-demo` (porté par : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
 - `ml-pipeline` (porté par : Comparatif - Orchestrateurs ML, Flyte, Machine Learning, Metaflow, Socle, Suivi d'expériences, ZenML)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles)
@@ -4303,6 +4313,6 @@
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
 - `wavelet` (porté par : Ondelettes, PyWavelets, Signal & audio, Traitement)
-- `web-framework` (porté par : Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
+- `web-framework` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)

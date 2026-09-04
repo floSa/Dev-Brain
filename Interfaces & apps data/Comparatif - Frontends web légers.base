@@ -7,6 +7,20 @@ filters:
     # `file.path.startsWith("Dev/Services/")` est devenu faux au lot 3 ; la liste de
     # noms selectionne seule, et `role == "brique"` dit ce que le chemin disait.
     - role == "brique"
+    # POURQUOI UNE LISTE DE NOMS, ET PAS UN TAG — motif ecrit au lot 5, 2026-09-06.
+    # `R8d` avertit sur cette liste, et il a raison : une brique qui entre dans le
+    # theme n'entrera jamais dans cette vue. C'est assume, parce que la mesure dit
+    # qu'aucun tag ne capture ces cinq-la et rien d'autre :
+    #  - l'INTERSECTION des tags des 5 membres est VIDE — HTMX ne porte que
+    #    `hypermedia`, qu'aucun des quatre autres n'a ;
+    #  - `web-framework`, le meilleur candidat, en couvre 4 sur 5 (il rate HTMX) et
+    #    fait entrer Flask, Uvicorn et Shiny for Python — cette derniere appartenant
+    #    a « Comparatif - Apps data & demos ML » ;
+    #  - `data-app` fait pire : 2 sur 5, plus Marimo et Shiny for Python.
+    # La liste est donc l'expression d'une comparaison composee A LA MAIN, qu'aucune
+    # `categorie:` ni aucun tag ne capture. Elle se maintient a la main : ajouter un
+    # membre ici quand il entre dans la page. Cf. la section « Pourquoi la vue liste
+    # ses membres nom par nom » de la page du meme nom.
     - or:
         - file.name == "FastAPI"
         - file.name == "HTMX"

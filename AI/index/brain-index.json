@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 757,
+  "count": 759,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -503,6 +503,7 @@
     ],
     "dashboard": [
       "Beszel",
+      "Comparatif - Apps data & démos ML",
       "Dash",
       "Grafana",
       "Interfaces & apps data",
@@ -511,6 +512,8 @@
       "WrenAI"
     ],
     "data-app": [
+      "Comparatif - Apps data & démos ML",
+      "Comparatif - Frontends web légers",
       "Dash",
       "Interfaces & apps data",
       "Marimo",
@@ -1149,6 +1152,7 @@
       "Weaviate"
     ],
     "hypermedia": [
+      "Comparatif - Frontends web légers",
       "HTMX",
       "Web & API"
     ],
@@ -1702,6 +1706,7 @@
       "Mixture of Experts"
     ],
     "ml-demo": [
+      "Comparatif - Apps data & démos ML",
       "Gradio",
       "Interfaces & apps data",
       "Pattern - Stack démo ML locale multi-services"
@@ -3024,6 +3029,8 @@
       "Traitement"
     ],
     "web-framework": [
+      "Comparatif - Apps data & démos ML",
+      "Comparatif - Frontends web légers",
       "Dash",
       "FastAPI",
       "Flask",
@@ -7079,6 +7086,45 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Interfaces & apps data/Comparatif - Apps data & démos ML.md",
+      "nom": "Comparatif - Apps data & démos ML",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ui/data-app",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-app",
+        "dashboard",
+        "ml-demo",
+        "web-framework"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Interfaces & apps data/Comparatif - Frontends web légers.md",
+      "nom": "Comparatif - Frontends web légers",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ui/data-app",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "web-framework",
+        "data-app",
+        "hypermedia"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Interfaces & apps data/Dash.md",
