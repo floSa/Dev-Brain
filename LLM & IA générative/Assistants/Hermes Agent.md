@@ -19,52 +19,67 @@ url_repo: https://github.com/NousResearch/hermes-agent
 
 # Hermes Agent
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
 
-Agent auto-hébergé publié par **Nous Research** en février 2026. Son parti pris tient en une phrase : l'agent est censé **s'améliorer à l'usage**, via une boucle fermée à quatre temps — mémoire curée par l'agent lui-même, **création autonome de skills** après une tâche complexe, raffinement de ces skills à la réutilisation, et rappel inter-sessions par recherche plein texte (SQLite FTS5) doublée de résumés par LLM. S'y ajoute une modélisation de l'utilisateur (Honcho) qui se construit au fil des échanges.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python, TypeScript | open-source | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-Sur le plan pratique : plus de 40 outils intégrés, support de serveurs **MCP**, et une vingtaine de canaux d'accès (CLI, Telegram, Discord, Slack, WhatsApp, Signal, Matrix, Teams) derrière une passerelle de messagerie unique. L'exécution de commandes passe par six backends au choix — local, Docker, SSH, Singularity, Modal, Daytona — dont deux serverless qui ne coûtent presque rien à l'arrêt. Le modèle de langage est externe et libre : Nous Portal, OpenRouter, OpenAI, Anthropic ou tout endpoint compatible. Licence **MIT**.
+## Définition
 
-## Quand l'utiliser
+Agent auto-hébergé publié par **Nous Research** en février 2026, dont le parti pris tient en
+une phrase : il est censé **s'améliorer à l'usage**. La boucle est fermée et a quatre temps —
+mémoire curée par l'agent lui-même, **création autonome de skills** après une tâche complexe,
+raffinement de ces skills à la réutilisation, et rappel inter-sessions par recherche plein
+texte (SQLite FTS5) doublée de résumés par LLM ; s'y ajoute une modélisation de l'utilisateur
+(Honcho) qui se construit au fil des échanges. Côté outillage : plus de 40 outils intégrés, des
+serveurs MCP, une vingtaine de canaux d'accès derrière une passerelle de messagerie unique, et
+six backends d'exécution au choix. Le modèle de langage, lui, reste externe et interchangeable.
 
-- Vouloir un assistant qui **capitalise** : la mémoire et les skills accumulés sont le produit, pas un effet de bord.
-- Disposer d'un **serveur permanent** (VPS, machine perso, cluster) et vouloir y garder l'exécution.
-- Avoir besoin de **backends d'exécution variés** — bac à sable Docker pour le risque, SSH pour une machine distante, serverless pour ne payer qu'à l'usage.
+## Prendre si / Écarter si
 
-## Quand NE PAS l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Vouloir un assistant qui **capitalise** : la mémoire et les skills accumulés sont le produit, pas un effet de bord | Construire un agent dans sa propre application : c'est un agent fini, pas une bibliothèque → [[Agno]], [[OpenAI Agents SDK]], [[LangGraph]] |
+| Disposer d'un serveur permanent — VPS, machine perso, cluster — et vouloir y garder l'exécution | Vouloir la mémoire comme primitive exposée par API, réutilisable dans un produit tiers → [[Letta]] |
+| Avoir besoin de backends d'exécution variés : Docker pour le risque, SSH pour une machine distante, serverless pour ne payer qu'à l'usage | Tâche ponctuelle et sans état : la boucle d'apprentissage n'a rien à capitaliser → [[smolagents]] |
+| Joindre l'agent depuis les messageries déjà en place, derrière une passerelle unique | **Skills auto-créés non relus** : l'agent écrit du code réutilisé ensuite en boucle, et un skill erroné se rejoue indéfiniment |
+| | **Mémoire qui enfle et dérive** : sans invalidation, les souvenirs s'accumulent — bruit, coût, contexte saturé — et les faits périmés survivent |
+| | **Injection de prompt** : messageries ouvertes d'un côté, shell de l'autre ; cloisonner par un backend Docker plutôt que local |
+| | Versions **0.x** et rythme de publication rapide (v0.20.0 début août 2026) : épingler la version |
 
-- Construire un agent **dans sa propre application** : c'est un agent fini, pas une bibliothèque → [[Agno]], [[OpenAI Agents SDK]], [[LangGraph]].
-- Vouloir la **mémoire comme primitive exposée par API**, réutilisable dans un produit tiers → [[Letta]].
-- Tâche **ponctuelle et sans état** : la boucle d'apprentissage n'a rien à capitaliser → [[smolagents]].
+## Mise en œuvre
 
-## Déploiement & coût
+- Installation — Linux, macOS, WSL2, Termux, et Windows natif par installateur PowerShell
+- Point d'entrée — une CLI, plus une vingtaine de canaux de messagerie derrière la passerelle : Telegram, Discord, Slack, WhatsApp, Signal, Matrix, Teams
+- Prérequis — un endpoint de modèle externe (Nous Portal, OpenRouter, OpenAI, Anthropic ou tout endpoint compatible), avec **64 k de contexte minimum**
+- Exécution — mono-nœud, du VPS à 5 $ au cluster GPU ; l'échelle se joue sur le backend d'exécution — local, Docker, SSH, Singularity, Modal, Daytona
+- Coût — gratuit, licence MIT ; la dépense réelle est celle des appels au modèle, curation de mémoire et création de skills comprises
 
-- Auto-hébergé : Linux, macOS, WSL2, Termux, et Windows natif (installateur PowerShell).
-- Fonctionne sur un **VPS à 5 $** comme sur un cluster GPU ; architecture **mono-nœud**, l'échelle se joue sur le backend d'exécution.
-- Gratuit (MIT) ; le coût réel est celui des **appels au modèle**, auxquels s'ajoutent les appels de curation de mémoire et de création de skills.
+## Écosystème
 
-## Pièges
-
-- **Skills auto-créés non relus** : l'agent écrit lui-même du code réutilisable ensuite en boucle. Un skill erroné se rejoue indéfiniment — les relire comme du code de production. Cf. [[Agent skills]].
-- **Mémoire qui enfle et dérive** : sans invalidation, les souvenirs s'accumulent (bruit, coût, contexte saturé) et les faits périmés survivent — cf. [[Agent memory]].
-- **Injection de prompt** : agent connecté à des messageries ouvertes et doté d'un shell ; cloisonner via un backend Docker plutôt que local. Cf. [[Prompt injection]].
-- Versions **0.x** et rythme de publication rapide (v0.20.0 début août 2026) — épingler la version.
-
-## Alternatives
+### Alternatives
 
 - [[OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
 - [[LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
 - [[OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
-## Liens
+## Ressources
 
-- Même famille d'**agents prêts à l'emploi** que [[OpenClaw]] (assistant généraliste sur messageries) et [[OpenHands]] (agent de développement) — par opposition aux bibliothèques d'agents ([[Agno]], [[CrewAI]], [[smolagents]]).
-- Partage avec [[Letta]] l'idée de **mémoire persistante comme primitive** ; Letta l'expose en API pour d'autres produits, Hermes la garde interne à son propre agent.
-- Consomme des serveurs [[mcp-protocol|MCP]] pour son outillage — cf. [[fastmcp]] pour en écrire — et implémente [[a2a-protocol|A2A]] v1.0 depuis la v0.20.0 pour dialoguer avec des agents tiers.
-- Backends d'exécution : local et Docker, puis les bacs à sable managés [[Modal]] et [[Daytona]] — cf. [[Sandboxing de code généré]].
-- C'est un **harnais** au sens de [[Harnais d'agent]] : compatible avec tout endpoint OpenAI-compatible.
-- [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local ; exige 64 k de contexte minimum.
-- Concepts : [[Agent memory]], [[Agent skills]], [[Agent patterns]], [[agent-loops]], [[Tool use patterns]].
-- Sécurité : [[Prompt injection]], [[AI security]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://hermes-agent.nousresearch.com/docs/
+- Documentation — https://hermes-agent.nousresearch.com/docs/
+- Dépôt — https://github.com/NousResearch/hermes-agent
+
+## Voir aussi
+
+- [[Assistants]] — le hub du dossier : ce qui distingue une application d'agent d'une bibliothèque
+- [[OpenHands]] — le voisin du dossier spécialisé sur le développement
+- [[Pattern - Agent sur LLM auto-hébergé]] — le brancher sur un modèle local, et les 64 k de contexte exigés
+- [[Agent memory]] · [[Agent skills]] — les deux primitives sur lesquelles repose sa boucle d'apprentissage
+- [[Agent patterns]] · [[agent-loops]] · [[Tool use patterns]] — les schémas qu'il met en œuvre
+- [[Harnais d'agent]] — la catégorie : le modèle reste interchangeable derrière
+- [[mcp-protocol|MCP]] · [[fastmcp]] — les serveurs d'outils qu'il consomme, et de quoi en écrire
+- [[a2a-protocol|A2A]] — le protocole v1.0 qu'il implémente depuis la v0.20.0 pour dialoguer avec des agents tiers
+- [[Modal]] · [[Daytona]] · [[Sandboxing de code généré]] — les bacs à sable managés de ses backends d'exécution
+- [[Prompt injection]] · [[AI security]] — la surface d'attaque à traiter avant tout déploiement

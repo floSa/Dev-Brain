@@ -11,7 +11,7 @@ maturite: production
 langage: 
 scaling: single-node
 alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[SGLang]]", "[[TensorRT-LLM]]"]
-complements: []
+complements: ["[[LM Studio Bionic]]"]
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://lmstudio.ai/docs
 url_repo: 
@@ -19,38 +19,43 @@ url_repo:
 
 # LM Studio
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
 
-Application de bureau qui rend l'exécution locale de LLM accessible via une **interface graphique** : recherche et téléchargement de modèles (depuis Hugging Face), chat intégré, réglage des paramètres, et un **serveur local à API OpenAI-compatible** pour brancher ses apps. Sous le capot, elle s'appuie sur des moteurs **open-source** — [[llama.cpp]] (GGUF) partout, et **Apple MLX** sur Apple Silicon — mais **l'application elle-même est propriétaire** (closed-source). Multiplateforme (macOS, Windows, Linux). Existe aussi en version **headless** (`llmster`) et via un **CLI** (`lms`) pour les serveurs et la CI.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application | propriétaire | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Exécuter des LLM en local **avec une GUI** : découvrir, comparer et chatter sans ligne de commande.
-- Profil non-CLI ou onboarding rapide : tout est cliquable (téléchargement, quantization, GPU offload).
-- Brancher une app sur un LLM local via l'**API OpenAI-compatible** (RAG, agents, tests) sans cloud.
-- Stations **Apple Silicon** : tirer parti du backend **MLX** natif.
+Application de bureau qui rend l'exécution locale de LLM entièrement cliquable : recherche et
+téléchargement de modèles depuis Hugging Face, chat intégré, réglage des paramètres, et un
+**serveur local à API OpenAI-compatible** pour y brancher ses applications. Sous le capot, deux
+moteurs open-source — llama.cpp pour le GGUF partout, et **Apple MLX** sur Apple Silicon, que
+nul autre du dossier n'expose. L'application elle-même, en revanche, est fermée. Elle existe
+aussi en version **headless** (`llmster`) et en **CLI** (`lms`), pour les serveurs et la CI.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack 100 % open-source / souveraineté du code → [[Ollama]] ou [[llama.cpp]].
-- Serving GPU haut débit multi-utilisateurs en production → [[vLLM]], [[TGI]] ou [[SGLang]].
-- Automatisation/scriptabilité serveur sans GUI → [[Ollama]] (démon léger) ; LM Studio reste centré sur l'app de bureau (même si `llmster`/`lms` comblent en partie).
-- Contrôle bas niveau fin des flags d'inférence → [[llama.cpp]] directement.
+| Prendre si | Écarter si |
+|---|---|
+| Exécuter des LLM en local avec une interface graphique : découvrir, comparer et chatter sans ligne de commande | Application fermée : aucun audit du code possible, et une dépendance d'éditeur à peser en contexte sensible |
+| Onboarding rapide ou profil non-CLI : téléchargement, quantization et *GPU offload* se règlent à la souris | Pas de version serveur véritable : `llmster` et `lms` donnent du headless, le produit reste centré sur le poste de travail |
+| Station **Apple Silicon** : le backend MLX natif | Un modèle qui dépasse la VRAM bascule en RAM/CPU et ralentit fortement |
+| Brancher une app sur un LLM local par l'API OpenAI-compatible, sans cloud | Modèles quantifiés par défaut : la qualité est en retrait du poids plein si le quant n'est pas choisi |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Propriétaire mais gratuit** pour usage personnel et commercial ; l'app GUI est closed-source, seuls les moteurs sous-jacents (llama.cpp, MLX) et le CLI/SDK sont open.
-- Self-host de bureau (binaire macOS/Windows/Linux) ; serveur local sur le réseau via les endpoints OpenAI-compatibles.
-- Scaling **single-node** : une machine ; `llmster` permet un déploiement headless (Linux, cloud, CI) mais pas un serving distribué.
+- Installation — binaire macOS, Windows ou Linux ; version headless `llmster` et CLI `lms` pour les serveurs et la CI
+- Point d'entrée — l'interface graphique, doublée d'un serveur local exposant les endpoints OpenAI-compatibles
+- Prérequis — les poids se téléchargent depuis Hugging Face dans l'application ; Apple Silicon pour le backend MLX
+- Exécution — une machine de bureau, mono-nœud ; le mode headless ne fait pas un serving distribué
+- Coût — gratuit en usage personnel comme commercial ; l'application est propriétaire, seuls les moteurs sous-jacents et le CLI/SDK sont ouverts
 
-## Pièges
+## Écosystème
 
-- **Closed-source** : pas d'audit du code de l'app, dépendance à un éditeur (à peser pour un usage entreprise sensible).
-- Modèles **quantifiés** par défaut : qualité moindre que le poids plein si l'on ne choisit pas le bon quant.
-- Orienté **poste de travail** : le batching concurrent et le débit ne rivalisent pas avec un vrai serveur d'inférence.
-- Un modèle qui dépasse la VRAM bascule en RAM/CPU et ralentit fortement.
-
-## Alternatives
+### Alternatives
 
 - [[Ollama]] — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
 - [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
@@ -60,12 +65,17 @@ Application de bureau qui rend l'exécution locale de LLM accessible via une **i
 - [[SGLang]] — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
 - [[TensorRT-LLM]] — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
 
-## Liens
+### Compléments
 
-- Construit sur [[llama.cpp]] (inférence GGUF) et Apple MLX.
-- Sert de runtime à [[LM Studio Bionic]], l'agent de bureau du même éditeur — application distincte, pas un mode de LM Studio.
-- Couche modèle pour un agent auto-hébergé — cf. [[Pattern - Agent sur LLM auto-hébergé]] (stack recommandée côté OpenClaw).
-- Modèles tirés du hub [[HuggingFace]].
-- Endpoint OpenAI-compatible : se branche comme une API [[FastAPI]] devant les apps.
-- [[Comparatif - Exécution & serving LLM]] — comparatif de la catégorie
-- Doc : https://lmstudio.ai/docs
+- [[LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes. — la couche agentique du même éditeur, posée sur ce runtime ; application distincte, pas un mode.
+
+## Ressources
+
+- Documentation — https://lmstudio.ai/docs
+
+## Voir aussi
+
+- [[Inference optimization]] — la notion du dossier : ce que le moteur optimise
+- [[Comparatif - Exécution & serving LLM]] — ce qui départage les moteurs du dossier
+- [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet, où ce runtime tient la couche modèle
+- [[HuggingFace]] — d'où viennent les poids

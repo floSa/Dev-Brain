@@ -11,7 +11,7 @@ maturite: production
 langage: 
 scaling: single-node
 alternatives: ["[[OpenClaw]]", "[[Hermes Agent]]"]
-complements: []
+complements: ["[[LM Studio]]"]
 tags: [llm, agents, local-llm, mcp, code-generation]
 url_docs: https://lmstudio.ai/docs/bionic
 url_repo: 
@@ -19,60 +19,70 @@ url_repo:
 
 # LM Studio Bionic
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
 
-Agent de bureau publié par LM Studio le **16 juillet 2026**, présenté comme « l'agent IA fait pour les modèles ouverts ». C'est une **application distincte** de [[LM Studio]], et non un mode de celle-ci : LM Studio reste l'outil de configuration fine du runtime, Bionic est la couche agentique posée dessus.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application | propriétaire | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-Le travail s'organise en **projets**, de deux types : *Work* (recherche, rédaction, analyse, documents, PDF, tableurs, présentations) et *Code* (dépôt local, avec accès fichiers, recherche, Git et shell, diffs en ligne et points de restauration automatiques). S'y ajoutent une **transcription vocale hors ligne** via Voxtral, la recherche web, et l'installation de **serveurs [[mcp-protocol|MCP]]** pour étendre l'outillage au-delà du système de fichiers.
+## Définition
 
-L'inférence est **locale par défaut**, via le runtime LM Studio ; trois origines de modèle cohabitent : local, distant sur une autre machine du réseau (**LM Link**), ou **LM Studio Secure Cloud** pour les modèles ouverts de frontière (GLM, Kimi) sur les tâches lourdes, avec rétention zéro annoncée. L'application est **propriétaire**, gratuite en usage local ; le cloud fonctionne au crédit.
+Agent de bureau publié le **16 juillet 2026**, présenté comme « l'agent IA fait pour les
+modèles ouverts ». C'est une **application distincte** de LM Studio, et non un mode de
+celle-ci : LM Studio reste l'outil de configuration fine du runtime, Bionic est la couche
+agentique posée dessus. Le travail s'y organise en **projets** de deux types — *Work*
+(recherche, rédaction, analyse, documents, PDF, tableurs, présentations) et *Code* (dépôt
+local, avec accès fichiers, recherche, Git et shell, diffs en ligne et points de restauration
+automatiques). S'y ajoutent une **transcription vocale hors ligne** via Voxtral, la recherche
+web, et l'installation de serveurs MCP. L'inférence est **locale par défaut** ; deux autres
+origines de modèle cohabitent — une autre machine du réseau (**LM Link**), ou **LM Studio
+Secure Cloud** pour les modèles ouverts de frontière sur les tâches lourdes.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Vouloir un agent **local d'abord**, sur modèles ouverts, avec une interface graphique plutôt qu'un serveur à administrer.
-- Travail sur **documents et fichiers** autant que sur du code — c'est le périmètre revendiqué, plus large que celui d'un assistant de codage.
-- Exigence de **confidentialité** : la transcription vocale et l'inférence restent sur la machine tant que le cloud n'est pas sollicité.
-- Poste déjà équipé de LM Studio : le runtime, les modèles téléchargés et les quantizations sont réutilisés.
+| Prendre si | Écarter si |
+|---|---|
+| Vouloir un agent **local d'abord**, sur modèles ouverts, avec une interface graphique plutôt qu'un serveur à administrer | **Produit très jeune** : moins d'un mois d'existence à l'été 2026, tarification cloud encore mouvante — pas de flux critique sans réversibilité |
+| Travail sur documents et fichiers autant que sur du code : le périmètre revendiqué est plus large que celui d'un assistant de codage | **Fermé** : aucun audit possible de la couche agent, sur un composant qui a pourtant accès au shell et aux fichiers |
+| Exigence de confidentialité : transcription vocale et inférence restent sur la machine tant que le cloud n'est pas sollicité | La bascule vers le cloud est le point à surveiller : la rétention zéro est une promesse contractuelle, pas une garantie technique — pour un secret industriel, seul le tout-local se défend |
+| Poste déjà équipé de LM Studio : runtime, modèles téléchargés et quantizations sont réutilisés | Un projet *Code* donne à l'agent fichiers, Git et shell sur un dépôt réel ; les points de restauration limitent la casse, ils ne la préviennent pas |
+| | Serveurs MCP tiers à traiter comme du **code non fiable** : ils élargissent la surface d'attaque de l'agent |
+| | Pas de version serveur ni headless : c'est la contrepartie de la GUI → [[OpenClaw]] pour un agent résident joignable depuis une messagerie |
+| | Vouloir un agent qui capitalise entre les sessions — mémoire persistante, skills auto-créés — sur un serveur → [[Hermes Agent]] |
+| | Exigence d'open-source ou d'auditabilité de l'agent → [[OpenHands]] |
+| | Intégrer l'agent dans sa propre application : c'est un produit fini → [[Agno]], [[OpenAI Agents SDK]] |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Vouloir un agent **résident et joignable en permanence** depuis une messagerie : Bionic est une application de bureau, sans WhatsApp ni Telegram → [[OpenClaw]].
-- Vouloir un agent qui **capitalise entre les sessions** (mémoire persistante, skills auto-créés) sur un serveur → [[Hermes Agent]].
-- Exigence d'**open-source** ou d'auditabilité de l'agent : l'application est fermée → [[OpenHands]].
-- Intégrer l'agent **dans sa propre application** : c'est un produit fini → [[Agno]], [[OpenAI Agents SDK]].
+- Installation — application de bureau, **macOS et Windows** uniquement
+- Point d'entrée — l'interface graphique, ses projets *Work* et *Code*, et les serveurs MCP qu'on y installe
+- Prérequis — le runtime LM Studio pour l'inférence locale ; assez de VRAM pour le modèle visé, sans quoi il bascule en RAM et l'agent devient lent
+- Exécution — mono-nœud, éventuellement épaulé par une autre machine du réseau via LM Link (jusqu'à 5 appareils)
+- Coût — trois paliers : **gratuit** pour tout l'usage local (agent, modèles llama.cpp et MLX, transcription hors ligne, recherche web, LM Link) ; **pay as you go** au token pour le cloud, de ~0,13 $/M en entrée (DeepSeek V4 Flash) à ~15 $/M en sortie (Kimi K3), inférence aux États-Unis ; **Bionic Pass**, abonnement annoncé sans grille publiée
 
-## Déploiement & coût
+## Écosystème
 
-- Application de bureau, **macOS et Windows**. Pas de version serveur ni headless — la contrepartie de la GUI.
-- Trois paliers annoncés :
-  - **Gratuit (0 $)** — l'agent, les modèles locaux (llama.cpp et MLX), la transcription vocale hors ligne, la recherche web, et LM Link jusqu'à 5 appareils. Aucune donnée ne quitte la machine.
-  - **Pay as you go** — crédits pour le cloud, facturés au token : de ~0,13 $ / M tokens en entrée (DeepSeek V4 Flash) à ~15 $ / M en sortie (Kimi K3). Inférence aux États-Unis, rétention zéro par défaut.
-  - **Bionic Pass** — abonnement annoncé, grille non publiée à ce stade.
-- Le gratuit couvre donc tout l'usage **local** ; seul l'appel aux modèles de frontière hébergés est payant.
-- Scaling **single-node** : une machine, éventuellement épaulée par une autre du réseau via LM Link.
-- Le matériel commande la qualité : un modèle qui dépasse la VRAM bascule en RAM et l'agent devient lent, exactement comme sous LM Studio.
-
-## Pièges
-
-- **Produit très jeune** : moins d'un mois d'existence à l'été 2026, tarification cloud encore mouvante — ne pas bâtir un flux de travail critique dessus sans réversibilité.
-- **Propriétaire et fermé** : pas d'audit possible de la couche agent, dépendance à l'éditeur — le même reproche qu'à [[LM Studio]], sur un composant qui a cette fois accès au shell et aux fichiers.
-- La bascule vers le cloud est **le point à surveiller** : la rétention zéro est une promesse contractuelle, pas une garantie technique. Pour un secret industriel, le seul mode défendable est le tout-local.
-- Un projet *Code* donne à l'agent **fichiers, Git et shell** sur un dépôt réel. Les points de restauration limitent la casse, ils ne la préviennent pas — cf. [[Sandboxing de code généré]].
-- Serveurs MCP tiers à traiter comme du **code non fiable** : ils élargissent la surface d'attaque de l'agent. Cf. [[Prompt injection]].
-
-## Alternatives
+### Alternatives
 
 - [[OpenClaw]] — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
 - [[Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
 
-## Liens
+### Compléments
 
-- Couche agentique posée sur le runtime de [[LM Studio]] — même éditeur, applications distinctes.
-- Même famille d'**agents prêts à l'emploi** que [[OpenClaw]], [[Hermes Agent]] et [[OpenHands]] — mais seul à être une application de bureau fermée, les trois autres étant auto-hébergés et open-source.
-- Consomme des serveurs [[mcp-protocol|MCP]] — cf. [[fastmcp]] pour en écrire.
-- C'est un **harnais** au sens de [[Harnais d'agent]] — le seul fermé du brain, et le seul à ne pas accepter d'endpoint arbitraire.
-- [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet et ses pièges.
-- Concepts : [[Agent patterns]], [[agent-loops]], [[Tool use patterns]], [[Small Language Models]].
-- Sécurité : [[Prompt injection]], [[AI security]], [[Sandboxing de code généré]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://lmstudio.ai/docs/bionic
+- [[LM Studio]] — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit. — le runtime du même éditeur sur lequel Bionic est posé.
+
+## Ressources
+
+- Documentation — https://lmstudio.ai/docs/bionic
+
+## Voir aussi
+
+- [[Assistants]] — le hub du dossier : ce qui distingue une application d'agent d'une bibliothèque
+- [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet et ses pièges
+- [[Harnais d'agent]] — la catégorie : le seul fermé du brain, et le seul à ne pas accepter d'endpoint arbitraire
+- [[mcp-protocol|MCP]] · [[fastmcp]] — les serveurs d'outils qu'il consomme, et de quoi en écrire
+- [[Agent patterns]] · [[agent-loops]] · [[Tool use patterns]] — les schémas qu'il met en œuvre
+- [[Small Language Models]] — la famille de modèles que l'inférence locale rend praticable
+- [[Prompt injection]] · [[AI security]] · [[Sandboxing de code généré]] — la surface d'attaque d'un agent qui tient le shell
