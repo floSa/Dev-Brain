@@ -19,46 +19,59 @@ url_repo:
 
 # OpenRouter
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 
-**Passerelle LLM managée** : un **service hébergé** (SaaS propriétaire) qui expose une **seule API OpenAI-compatible** vers **300+ modèles** de **60+ fournisseurs** (OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, xAI…). Une **clé**, une **facture**, un **base URL** — et OpenRouter gère le routage vers le bon fournisseur, avec **fallbacks** automatiques si un provider est indisponible. Modèle économique : **crédits prépayés**, tarifs fournisseurs en **pass-through** (pas de marge sur le token) plus **~5,5 % de frais** de plateforme sur les crédits ; un palier gratuit donne accès à des modèles à coût nul (rate-limités). C'est l'équivalent **managé** de [[LiteLLM]] : pas de proxy à opérer soi-même.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Tester / comparer** rapidement beaucoup de modèles sans ouvrir un compte chez chaque fournisseur.
-- Vouloir **une seule facture** et une seule clé pour un parc hétérogène, sans héberger de gateway.
-- Avoir besoin de **fallbacks** et de bascule de modèle sans coder la logique de routage.
-- Projets perso, prototypes, agents : friction minimale pour accéder aux derniers modèles.
+Service hébergé qui expose une seule API OpenAI-compatible vers plus de 300 modèles de plus de
+60 fournisseurs (OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, xAI). Une clé, une
+facture, une URL de base — le routage vers le bon fournisseur est fait pour l'appelant, avec
+fallback automatique quand l'un d'eux est indisponible. C'est l'équivalent managé de
+[[LiteLLM]] : il n'y a pas de proxy à opérer. Le modèle économique tient en trois lignes :
+crédits prépayés, tarifs fournisseurs en pass-through sans marge sur le token, et environ
+5,5 % de frais de plateforme sur l'achat de crédits ; un palier gratuit ouvre des modèles à
+coût nul, sous limites de débit strictes. Comme sur toute passerelle, la couverture des
+fonctions — tools, vision, streaming, JSON — varie selon le modèle qui se trouve derrière
+l'API unique.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Exigence de **self-host / souveraineté** (données qui ne doivent pas transiter par un tiers) → [[LiteLLM]] en proxy auto-hébergé.
-- Besoin de **contrôle fin** (clés virtuelles internes, garde-fous maison, logs chez soi) → [[LiteLLM]].
-- **Composer** chaînes/RAG/agents : OpenRouter n'orchestre pas → frameworks d'apps ([[LangChain]], [[LlamaIndex]]) qui l'appellent dessous.
-- **Servir** un modèle (inférence GPU) → [[vLLM]], [[TGI]].
+| Prendre si | Écarter si |
+|---|---|
+| Tester et comparer rapidement beaucoup de modèles sans ouvrir un compte chez chaque fournisseur | Exigence de self-host ou de souveraineté : les données transitent par un tiers, dont la politique de rétention et l'éligibilité réglementaire sont à vérifier → [[LiteLLM]] en proxy auto-hébergé |
+| Vouloir une seule facture et une seule clé pour un parc hétérogène, sans héberger de passerelle | Contrôle fin voulu — clés virtuelles internes, garde-fous maison, logs chez soi → [[LiteLLM]] |
+| Avoir besoin de fallbacks et de bascule de modèle sans coder la logique de routage | Composer des chaînes, du RAG ou des agents : OpenRouter n'orchestre pas → [[LangChain]], [[LlamaIndex]] |
+| Projet perso, prototype ou agent : friction minimale pour accéder aux derniers modèles | Servir un modèle sur GPU → [[vLLM]], [[TGI]] |
+| | Point de dépendance externe : une panne d'OpenRouter coupe l'accès à tous les modèles — les fallbacks jouent entre fournisseurs, pas si la passerelle elle-même tombe |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Managé uniquement** (`hosted: managed`, `serverless`) : rien à déployer, on appelle `https://openrouter.ai/api/v1`.
-- **Crédits prépayés** ; le prix par token est celui du fournisseur (pass-through), majoré d'environ **5,5 %** de frais sur l'achat de crédits. Palier gratuit avec modèles à coût nul (rate limits stricts).
-- Pas de coût d'infra côté utilisateur, mais **dépendance à un tiers** pour la disponibilité et la confidentialité.
+- Installation — rien à installer
+- Point d'entrée — `https://openrouter.ai/api/v1`, au format OpenAI, avec une clé unique
+- Prérequis — un compte et des crédits prépayés
+- Exécution — managé uniquement, serverless
+- Coût — prix du fournisseur en pass-through, majoré d'environ 5,5 % de frais sur l'achat de crédits ; palier gratuit à limites de débit strictes ; ces frais sont à intégrer au calcul face à un accès direct au fournisseur
 
-## Pièges
+## Écosystème
 
-- **Service propriétaire** : les données transitent par OpenRouter — vérifier la politique de rétention et l'éligibilité réglementaire.
-- **Point de dépendance externe** : une panne OpenRouter coupe l'accès à tous les modèles (les fallbacks jouent entre fournisseurs, pas si la passerelle elle-même tombe).
-- La **couverture des features** (tools, vision, streaming, JSON) varie selon le modèle/fournisseur derrière l'API unique — tester par modèle.
-- Frais de plateforme à intégrer au **calcul de coût** par rapport à un accès direct au fournisseur.
-
-## Alternatives
+### Alternatives
 
 - [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
 - [[OmniRoute]] — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
-## Liens
+## Ressources
 
-- Équivalent **managé** de la passerelle auto-hébergée [[LiteLLM]] (même rôle : abstraction multi-fournisseurs au format OpenAI).
-- Appelé **en dessous** des frameworks d'apps : [[LangChain]], [[LlamaIndex]], et des builders [[Langflow]] / [[Flowise]] / [[Dify]].
-- Concepts : [[Routing and cascading]], [[Reliability patterns]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://openrouter.ai/docs
+- Documentation — https://openrouter.ai/docs
+
+## Voir aussi
+
+- [[Routing and cascading]] — la notion du dossier
+- [[Reliability patterns]] — les fallbacks qu'il applique pour l'appelant
+- [[Langflow]], [[Flowise]], [[Dify]] — les builders low-code qui l'appellent en dessous
+- [[Comparatif - Frameworks LLM]] — le comparatif du domaine LLM, dont les passerelles sont hors périmètre par construction

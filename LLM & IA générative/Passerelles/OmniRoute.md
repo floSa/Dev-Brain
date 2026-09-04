@@ -19,49 +19,64 @@ url_repo: https://github.com/diegosouzapw/OmniRoute
 
 # OmniRoute
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient des quotas et compression destructive des prompts ; mono-nœud sur SQLite, projet jeune sans recul de production.
 
-**Passerelle LLM auto-hébergée**, écrite en **TypeScript** (Next.js), sous licence **MIT**. Même rôle que [[LiteLLM]] : une API unique devant un parc de fournisseurs. Deux différences de conception. D'abord le **routage par combos** : une liste ordonnée de couples (fournisseur, modèle), avec fallback au niveau du compte puis du modèle, et un moteur de sélection automatique qui score sur neuf facteurs (coût, latence p95, taux de succès, marge de quota, proximité de lockout, état du circuit breaker, échecs récents, disponibilité du modèle, affinité de tags). Le **fallback conscient des quotas** est le cœur du projet. Ensuite la **compression de requêtes**, appliquée avant la traduction vers le fournisseur : règles lexicales (« Caveman » : packs de langue, suppression d'articles et de mots vides), filtres de sortie d'outils (« RTK » : troncature avec récupération du brut), pipelines empilables par combo, et moteurs de type LLMLingua-2. **Ce n'est pas du cache** ([[LLM caching]] réutilise un calcul identique) : c'est une **réécriture destructive du prompt**, donc du [[Context engineering]] avec perte assumée.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé · mono-nœud | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Jongler avec **beaucoup de comptes et de quotas gratuits** hétérogènes : c'est le seul cas où le fallback quota-aware apporte plus qu'un fallback classique.
-- Poste de travail ou machine unique : distribution npm, Docker multi-arch, Electron, Android/Termux, PWA.
-- Explorer les **pipelines de compression de prompt** avec une UI, avant d'en écrire un soi-même.
-- Contexte personnel, expérimental, sans exigence de conformité.
+Même rôle que [[LiteLLM]] — une API unique devant un parc de fournisseurs — avec deux partis
+pris propres. Le **routage par combos** d'abord : une liste ordonnée de couples (fournisseur,
+modèle), avec fallback au niveau du compte puis du modèle, et un moteur de sélection qui score
+sur neuf facteurs (coût, latence p95, taux de succès, marge de quota, proximité de lockout,
+état du circuit breaker, échecs récents, disponibilité du modèle, affinité de tags) ; le
+fallback conscient des quotas est le cœur du projet. La **compression de requêtes** ensuite,
+appliquée avant la traduction vers le fournisseur : règles lexicales (« Caveman »), filtres de
+sortie d'outils (« RTK »), pipelines empilables par combo, moteurs de type LLMLingua-2. Ce
+n'est pas du cache — [[LLM caching]] réutilise un calcul identique — mais une réécriture
+destructive du prompt, donc du [[Context engineering]] avec perte assumée. Le nombre de
+fournisseurs annoncé varie de 226 à 352 selon la source : retenir l'ordre de grandeur, pas le
+chiffre. Créé le 2026-02-13, commits quotidiens, cadence de release rapide (v3.8.51).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **En contexte professionnel** : le wiki documente des fournisseurs de type « cookie web » (ChatGPT Web, Gemini Web) et « OAuth / abonnement » (Claude Code, GitHub Copilot) détournés vers une API, avec une promesse d'« IA gratuite illimitée ». C'est structurellement contraire aux CGU de ces fournisseurs — le risque contractuel est réel et rédhibitoire.
-- Passerelle **d'équipe** à opérer (clés virtuelles, redondance, état partagé) → [[LiteLLM]], dont le proxy se réplique.
-- Ne rien héberger du tout → [[OpenRouter]].
-- **Servir** un modèle : OmniRoute ne fait aucune inférence, il route.
-- Prompts où la **fidélité littérale** compte (juridique, code, extraction) : la compression par règles altère le texte.
+| Prendre si | Écarter si |
+|---|---|
+| Jongler avec beaucoup de comptes et de quotas gratuits hétérogènes — le seul cas où le fallback conscient des quotas apporte plus qu'un fallback classique | En contexte professionnel : le wiki documente des fournisseurs de type « cookie web » (ChatGPT Web, Gemini Web) et « OAuth / abonnement » (Claude Code, GitHub Copilot) détournés vers une API, avec une promesse d'« IA gratuite illimitée » — structurellement contraire aux CGU de ces fournisseurs, risque contractuel réel et rédhibitoire |
+| Poste de travail ou machine unique : distribution npm, Docker multi-arch, Electron, Android/Termux, PWA | Passerelle d'équipe à opérer — clés virtuelles, redondance, état partagé → [[LiteLLM]], dont le proxy se réplique |
+| Explorer les pipelines de compression de prompt avec une UI, avant d'en écrire un soi-même | Ne rien héberger du tout → [[OpenRouter]] |
+| Contexte personnel, expérimental, sans exigence de conformité | Servir un modèle : OmniRoute ne fait aucune inférence, il route |
+| | Prompts où la fidélité littérale compte — juridique, code, extraction : la compression par règles altère le texte |
+| | Six mois d'existence, environ 200 issues ouvertes, aucun audit tiers ni adoption industrielle documentée ; le gain de tokens annoncé (« 15 à 95 %, moyenne 89,2 % ») est auto-déclaré, sans protocole publié ni mesure de l'impact sur la qualité |
+| | Clés API et configuration dans un SQLite local non chiffré par défaut ; dépôt d'environ 475 Mo pour une passerelle TypeScript, à inspecter avant de faire confiance à la chaîne de build |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Mono-nœud**, Next.js sur `PORT=20128`, persistance **SQLite** (`~/.omniroute/storage.sqlite` : fournisseurs, clés, combos, pricing, journaux). Pas d'état partagé, donc pas de réplication.
-- Une synchronisation cloud existe côté configuration (`NEXT_PUBLIC_CLOUD_URL`), mais le wiki place l'implémentation serveur **hors périmètre** : **aucune offre managée**, d'où `hosted: self`.
-- Gratuit (MIT) ; les tarifs des fournisseurs appelés s'appliquent normalement.
-- Créé le 2026-02-13, commits quotidiens, version v3.8.51 à cadence de release rapide.
+- Installation — npm, image Docker multi-arch, Electron, Android/Termux ou PWA
+- Point d'entrée — application Next.js sur `PORT=20128`, exposant une API unique devant les fournisseurs
+- Prérequis — SQLite local (`~/.omniroute/storage.sqlite`) pour fournisseurs, clés, combos, tarifs et journaux ; aucun état partagé, donc aucune réplication possible
+- Exécution — mono-nœud auto-hébergé ; une synchronisation cloud existe côté configuration (`NEXT_PUBLIC_CLOUD_URL`), mais son implémentation serveur est hors périmètre — aucune offre managée
+- Coût — gratuit sous MIT ; les tarifs des fournisseurs appelés s'appliquent normalement
 
-## Pièges
+## Écosystème
 
-- **Chiffres auto-déclarés.** Le gain de tokens annoncé (« 15 à 95 %, moyenne 89,2 % ») vient de l'éditeur, sans protocole publié ni mesure de l'impact sur la qualité des réponses. À mesurer soi-même sur ses propres prompts.
-- **Nombre de fournisseurs contradictoire selon la source** : 352 dans la description du dépôt, 350 dans le README indexé, 226 dans le wiki Providers-Guide. Retenir l'ordre de grandeur (quelques centaines), pas le chiffre.
-- **Six mois d'existence**, environ 200 issues ouvertes, aucun audit tiers ni adoption industrielle documentée — d'où `maturite: beta`.
-- Dépôt d'environ **475 Mo** pour une passerelle TypeScript : assets ou binaires vendorés, à inspecter avant de faire confiance à la chaîne de build.
-- La page d'accueil annoncée (`omniroute.online`) n'était **pas joignable** au moment de la vérification ; la seule documentation est le wiki GitHub.
-- Toute la configuration (clés API comprises) vit dans **un fichier SQLite local** non chiffré par défaut.
-
-## Alternatives
+### Alternatives
 
 - [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
 - [[OpenRouter]] — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 
-## Liens
+## Ressources
 
-- Voisin sans être une alternative : [[Helicone]] (observabilité LLM en mode proxy, avec cache et rate-limiting — l'angle est la mesure, pas le routage).
-- Concepts : [[Routing and cascading]], [[Reliability patterns]] (circuit breaker, fallback), [[Context engineering]] (compression de prompt), [[LLM caching]] (en contraste : réutilisation, pas réécriture).
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Wiki : https://github.com/diegosouzapw/OmniRoute/wiki
+- Documentation — https://github.com/diegosouzapw/OmniRoute/wiki — le wiki GitHub est la seule documentation : la page d'accueil annoncée (`omniroute.online`) n'était pas joignable à la vérification
+- Dépôt — https://github.com/diegosouzapw/OmniRoute
+
+## Voir aussi
+
+- [[Routing and cascading]] — la notion du dossier
+- [[Reliability patterns]] — le circuit breaker et le fallback qu'il implémente
+- [[Helicone]] — voisin sans être une alternative : proxy lui aussi, mais l'angle est la mesure, pas le routage
+- [[Comparatif - Frameworks LLM]] — le comparatif du domaine LLM, dont les passerelles sont hors périmètre par construction
