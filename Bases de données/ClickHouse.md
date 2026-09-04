@@ -19,41 +19,52 @@ url_repo: https://github.com/ClickHouse/ClickHouse
 
 # ClickHouse
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 
-SGBD **orienté colonnes** conçu pour l'OLAP. Les données sont stockées et traitées par colonne, fortement compressées, avec une exécution **vectorisée** : il balaie des centaines de millions de lignes par seconde. Architecture **distribuée** (sharding + réplication) pour scaler horizontalement. Origine open-source (2016), licence Apache 2.0.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Analytique temps réel sur gros volumes : dashboards, observabilité, événements.
-- Agrégations massives balayant beaucoup de lignes sur peu de colonnes.
-- Ingestion à fort débit de logs, métriques, télémétrie.
-- Besoin de scale-out horizontal sur un cluster.
+SGBD **orienté colonnes** conçu pour l'OLAP. Les données sont stockées et traitées par
+colonne, fortement compressées, avec une exécution **vectorisée** : le moteur balaie des
+centaines de millions de lignes par seconde. Il se distribue par sharding, pour le volume, et
+par réplication, pour la disponibilité. Le choix du moteur de table — la famille MergeTree —
+et des clés de tri est la décision structurante : il se fait avant l'ingestion et commande
+les performances de toutes les requêtes qui suivront.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- OLTP transactionnel, beaucoup de petites écritures et mises à jour ponctuelles → [[Postgres]].
-- Analytique locale / embarquée sur un seul poste, sans cluster → [[DuckDB]].
-- Mises à jour et suppressions fréquentes ligne à ligne (modèle pensé pour l'append).
+| Prendre si | Écarter si |
+|---|---|
+| Analytique temps réel sur gros volumes : tableaux de bord, observabilité, événements | Mises à jour et suppressions fréquentes ligne à ligne : le modèle est pensé pour l'append, et les mutations sont asynchrones et coûteuses |
+| Agrégations massives balayant beaucoup de lignes sur peu de colonnes | Lecture attendue juste après l'écriture : la cohérence de la réplication est éventuelle |
+| Ingestion à fort débit de logs, métriques, télémétrie | |
+| Scale-out horizontal sur un cluster | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (binaire, cluster) ou managé (ClickHouse Cloud).
-- Scaling distribué : sharding pour le volume, réplication pour la disponibilité.
-- Apache 2.0, gratuit ; le coût réel est l'exploitation du cluster.
+- Installation — binaire ou cluster en self-host, ou managé sur ClickHouse Cloud
+- Point d'entrée — SQL, depuis un client ou un pilote
+- Prérequis — le moteur de table (famille MergeTree) et les clés de tri choisis avant l'ingestion
+- Exécution — self-hébergé ou managé ; distribué, sharding pour le volume et réplication pour la disponibilité
+- Coût — gratuit, licence Apache 2.0 ; le coût réel est l'exploitation du cluster
 
-## Pièges
+## Écosystème
 
-- Updates et deletes coûteux (mutations asynchrones) — pas pour l'écriture en place.
-- Cohérence éventuelle sur la réplication.
-- Le choix du moteur de table (famille MergeTree) et des clés de tri détermine les perfs.
-
-## Alternatives
+### Alternatives
 
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases colonnes]] — comparatif des moteurs colonne / OLAP
-- Doc : https://clickhouse.com/docs
+- Documentation — https://clickhouse.com/docs
+- Dépôt — https://github.com/ClickHouse/ClickHouse
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases colonnes]] — ce qui départage les moteurs du dossier

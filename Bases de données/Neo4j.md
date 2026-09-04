@@ -19,45 +19,57 @@ url_repo: https://github.com/neo4j/neo4j
 
 # Neo4j
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.
 
-Base de graphes **native** : les données sont des nœuds reliés par des arêtes typées et orientées, chacun portant des propriétés (modèle *property graph*). Le stockage est pensé pour le graphe — suivre une relation est un saut de pointeur, pas une jointure, donc le parcours de relations profondes reste rapide quand sa profondeur augmente. Le langage **Cypher** exprime ces parcours de façon déclarative et visuelle (`MATCH (a)-[:CONNAIT]->(b)`). C'est la référence historique et la plus mûre du domaine, avec l'écosystème le plus riche (pilotes, GDS pour les algorithmes de graphe, outillage de viz).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Données fortement connectées où la relation est aussi importante que l'entité (réseaux sociaux, fraude, recommandation, généalogie).
-- Requêtes de parcours à profondeur variable ou inconnue (chemins, voisinages à N sauts) que SQL exprime mal.
-- Détection de motifs et algorithmes de graphe (centralité, communautés, plus courts chemins) via la lib GDS.
-- Graphes de connaissances et moteurs de raisonnement, y compris en appui d'un RAG.
+Base de graphes **native** : les données sont des nœuds reliés par des arêtes typées et
+orientées, chacun portant des propriétés — le modèle *property graph*. Le stockage est pensé
+pour le graphe : suivre une relation est un saut de pointeur, pas une jointure, donc le
+parcours reste rapide quand la profondeur augmente. Le langage **Cypher** exprime ces
+parcours de façon déclarative et visuelle (`MATCH (a)-[:CONNAIT]->(b)`). C'est la référence
+historique du domaine, et l'écosystème le plus riche : pilotes, bibliothèque GDS pour les
+algorithmes de graphe, outillage de visualisation. Penser « table » plutôt que « relation »
+produit un modèle plat qui perd tout l'intérêt du graphe.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Données tabulaires peu reliées, transactions classiques → [[Postgres]].
-- Graphe dépassant un seul nœud, besoin de partitionnement horizontal massif → [[Nebula Graph]].
-- Agrégations analytiques sur de gros volumes → une base colonne/OLAP.
+| Prendre si | Écarter si |
+|---|---|
+| Données fortement connectées où la relation compte autant que l'entité : réseaux sociaux, fraude, recommandation, généalogie | L'édition Community est mono-instance : ni cluster, ni sauvegarde à chaud |
+| Parcours à profondeur variable ou inconnue — chemins, voisinages à N sauts — que SQL exprime mal | La montée en charge se fait en vertical ; réplication et sharding *Fabric* sont réservés à l'édition Enterprise |
+| Détection de motifs et algorithmes de graphe (centralité, communautés, plus courts chemins) via la bibliothèque GDS | Les super-nœuds — un nœud à des millions d'arêtes — dégradent les parcours et imposent de remodéliser |
+| Graphes de connaissances et moteurs de raisonnement, y compris en appui d'un RAG | Agrégations analytiques sur de gros volumes : ce n'est pas un moteur colonne |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (Community ou Enterprise) ou managé via **Neo4j AuraDB** (offre cloud, free tier).
-- Scaling vertical par défaut ; le clustering (réplication, sharding *Fabric*) est réservé à l'édition Enterprise.
-- Modèle **open-core** : Community sous GPLv3 (mono-instance, sans clustering ni sauvegarde à chaud) ; Enterprise sous licence commerciale pour la HA et l'exploitation.
+- Installation — self-host en édition Community ou Enterprise, ou managé sur Neo4j AuraDB
+- Point d'entrée — Cypher, depuis le navigateur Neo4j ou un pilote
+- Prérequis — une JVM pour le self-host, et un modèle pensé en relations, pas en tables
+- Exécution — self-hébergé ou managé ; scaling vertical par défaut, le clustering relevant d'Enterprise
+- Coût — Community sous GPLv3, gratuite mais mono-instance ; Enterprise sous licence commerciale pour la HA — c'est le modèle open-core ; AuraDB propose un free tier
 
-## Pièges
+## Écosystème
 
-- Community est mono-instance : pas de cluster ni de hot backup, ce qui pousse vers Enterprise (payant) ou Aura en production.
-- Penser « table » plutôt que « relation » mène à un modèle plat qui perd l'intérêt du graphe.
-- Les super-nœuds (un nœud à des millions d'arêtes) dégradent les parcours ; à modéliser autrement.
-- La montée en charge se fait surtout en vertical : au-delà d'un nœud, l'architecture distribuée est contrainte.
-
-## Alternatives
+### Alternatives
 
 - [[Nebula Graph]] — Base de graphes distribuée pour jeux de données massifs.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases graphes]] — comparatif des moteurs de graphe
-- [[GraphRAG]] — retrieval RAG sur graphe de connaissances, souvent stocké ici
-- [[Construction de graphes de connaissances]] — peupler le graphe par extraction d'entités/relations
-- [[Graph Neural Networks]] — ML sur graphes, branché sur les données stockées ici
-- Doc : https://neo4j.com/docs/
+- Documentation — https://neo4j.com/docs/
+- Dépôt — https://github.com/neo4j/neo4j
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[GraphRAG]] — le retrieval RAG sur graphe de connaissances, souvent stocké ici
+- [[Construction de graphes de connaissances]] — peupler le graphe par extraction d'entités et de relations
+- [[Graph Neural Networks]] — le ML sur graphes, branché sur les données stockées ici

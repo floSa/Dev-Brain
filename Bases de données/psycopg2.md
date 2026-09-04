@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C/Python
 alternatives: []
-complements: []
+complements: ["[[Postgres]]", "[[SQLAlchemy]]"]
 tags: [postgres, relational, db-driver]
 url_docs: https://www.psycopg.org/docs/
 url_repo: https://github.com/psycopg/psycopg2
@@ -17,39 +17,56 @@ url_repo: https://github.com/psycopg/psycopg2
 
 # psycopg2
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.
 
-Le **driver PostgreSQL** le plus répandu pour Python. Il implémente la spécification **DB-API 2.0** et est écrit majoritairement en **C** comme wrapper de **libpq** — d'où son efficacité et sa sûreté. Thread-safe, il offre curseurs côté client et serveur, communication asynchrone et notifications, support de `COPY TO/FROM`. C'est la couche bas niveau sous de nombreux ORM (dont [[SQLAlchemy]], qui l'utilise comme dialecte Postgres par défaut). **Ce n'est pas un ORM** : aucun mapping objet, on écrit le SQL. Toujours largement utilisé et maintenu, mais **figé en fonctionnalités** : les nouveautés vont à **psycopg 3** (paquet `psycopg`).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C/Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Accès **SQL direct** à [[Postgres]] sans couche ORM (scripts, micro-services, contrôle fin et performance).
-- **Driver sous-jacent** d'un ORM/toolkit ([[SQLAlchemy]]) ou d'un framework existant.
-- Codebase **déjà sur psycopg2**, sans besoin d'async.
+Le **driver PostgreSQL** le plus répandu pour Python. Il implémente la spécification **DB-API
+2.0** et est écrit majoritairement en **C**, comme un wrapper de **libpq** — d'où son
+efficacité et sa sûreté. Thread-safe, il offre curseurs côté client et côté serveur,
+communication asynchrone, notifications et `COPY TO/FROM`. C'est la couche bas niveau sous de
+nombreux ORM. Ce n'est **pas** un ORM : aucun mapping objet, aucune migration, on écrit le
+SQL. Il reste largement utilisé et maintenu, mais **figé en fonctionnalités** — les
+nouveautés vont à psycopg 3, le paquet `psycopg`.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Nouveau projet** → préférer **psycopg 3** (`psycopg`) : async natif, meilleure gestion des types, pipeline mode.
-- Besoin d'**async hautes performances** → psycopg 3 ou **asyncpg**.
-- Vouloir un **mapping objet** et des **migrations** → [[SQLAlchemy]] + [[Alembic]].
+| Prendre si | Écarter si |
+|---|---|
+| Accès **SQL direct** à PostgreSQL sans couche ORM : scripts, micro-services, contrôle fin et performance | Nouveau projet : psycopg 3 apporte l'async natif, une meilleure gestion des types et le mode pipeline, que psycopg2 n'aura pas |
+| Driver sous-jacent d'un ORM, d'un toolkit ou d'un framework existant | Driver **synchrone** : inadapté à une application async à hautes performances |
+| Codebase déjà sur psycopg2, sans besoin d'async | `psycopg2-binary` en production : les mainteneurs recommandent de compiler `psycopg2` contre la libpq du système, le paquet binaire embarquant ses propres bibliothèques (SSL, locale), source de conflits |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (**LGPL**), gratuite, embarquée dans l'application : `single-node`, suit le déploiement de l'app. Requiert un PostgreSQL accessible.
-- Distribution : `psycopg2` (compilation, nécessite libpq + toolchain) ou `psycopg2-binary` (wheels précompilés, pratique en dev).
+- Installation — `uv add psycopg2` (compilation, libpq et chaîne d'outils requises) ou `psycopg2-binary` (wheels précompilés, pratique en dev)
+- Point d'entrée — l'API DB-API 2.0 : connexion, curseurs côté client ou serveur, `COPY TO/FROM`
+- Prérequis — un PostgreSQL accessible ; libpq et un compilateur pour la variante compilée
+- Exécution — dans le process de l'application, single-node ; rien à héberger
+- Coût — gratuit, licence LGPL
 
-## Pièges
+## Écosystème
 
-- **`psycopg2-binary` en production** : les mainteneurs recommandent de compiler `psycopg2` contre la libpq du système — le paquet binaire embarque ses propres libs (SSL, locale), source de conflits.
-- **Feature-frozen** : ne pas en attendre de nouveautés ; pour du neuf → psycopg 3.
-- **Driver synchrone** : inadapté à l'async (utiliser psycopg 3 ou asyncpg).
+### Alternatives
 
-## Alternatives
+- _Successeur direct **psycopg 3** (`psycopg`) et alternative async **asyncpg** — pas encore fichés dans le brain._
 
-- _Successeur direct **psycopg 3** (`psycopg`) et alternative async **asyncpg** — pas encore fichés dans le brain._ [[SQLAlchemy]] n'est pas une alternative : il s'appuie sur psycopg2, il ne le remplace pas.
+### Compléments
 
-## Liens
+- [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — la base pilotée.
+- [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0. — l'ORM qui s'appuie dessus comme dialecte Postgres par défaut ; il ne le remplace pas.
 
-- [[Postgres]] — la base pilotée.
-- [[SQLAlchemy]] — ORM/toolkit qui utilise psycopg2 comme driver Postgres.
-- Doc : https://www.psycopg.org/docs/
+## Ressources
+
+- Documentation — https://www.psycopg.org/docs/
+- Dépôt — https://github.com/psycopg/psycopg2
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
