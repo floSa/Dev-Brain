@@ -17,39 +17,53 @@ url_repo: https://github.com/prisma/prisma
 
 # Prisma
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
 
-ORM de l'écosystème Node/TypeScript. Un fichier `schema.prisma` déclaratif décrit le modèle ; Prisma génère un **client typé** (autocomplétion et vérification de types de bout en bout sur les requêtes) et les **migrations** correspondantes (`prisma migrate`). Couvre Postgres, MySQL, SQL Server, SQLite et MongoDB. La v7 (2025) a remplacé le moteur de requêtes Rust par du TypeScript pur, réduisant les démarrages à froid (utile en serverless).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Backend TypeScript/Node voulant un accès aux données fortement typé et une bonne DX.
-- Schéma déclaratif unique servant à la fois de modèle, de client et de source des migrations.
-- Déploiement serverless sensible au cold start (v7).
+ORM de l'écosystème Node et TypeScript. Un fichier `schema.prisma` déclaratif décrit le
+modèle ; Prisma en génère un **client typé** — autocomplétion et vérification de types de
+bout en bout sur les requêtes — et les **migrations** correspondantes, via `prisma migrate`.
+Il couvre Postgres, MySQL, SQL Server, SQLite et MongoDB. La v7, en 2025, a remplacé le
+moteur de requêtes Rust par du TypeScript pur, ce qui réduit les démarrages à froid — un gain
+qui compte en serverless.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack Python ([[FastAPI]], data/ML) → privilégier un ORM Python ([[SQLAlchemy]]) ou un outil de migration dédié comme [[Liquibase]] / [[Flyway]].
-- Besoin de SQL très fin / fonctionnalités spécifiques d'un moteur que l'ORM masque.
+| Prendre si | Écarter si |
+|---|---|
+| Backend TypeScript ou Node voulant un accès aux données fortement typé | Écosystème **TypeScript** avant tout : le client Python est communautaire, ce n'est pas l'usage principal |
+| Schéma déclaratif unique servant à la fois de modèle, de client et de source des migrations | L'abstraction gêne les requêtes très complexes, ou les fonctionnalités propres à un moteur qu'elle masque : il faut alors redescendre au SQL brut |
+| Déploiement serverless sensible au cold start, depuis la v7 | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque/CLI Node, intégrée à l'application ; open-source (Apache 2.0).
-- Services managés optionnels (Accelerate, Postgres hébergé) payants, mais l'ORM lui-même est gratuit.
+- Installation — bibliothèque et CLI Node, installées avec l'application
+- Point d'entrée — le fichier `schema.prisma`, le client généré, et `prisma migrate` pour les migrations
+- Prérequis — une stack Node/TypeScript ; Postgres, MySQL, SQL Server, SQLite ou MongoDB comme cible
+- Exécution — dans le process de l'application, single-node ; rien à héberger
+- Coût — gratuit, licence Apache 2.0 ; les services managés optionnels (Accelerate, Postgres hébergé) sont payants
 
-## Pièges
+## Écosystème
 
-- Écosystème **TypeScript** avant tout : le client Python est communautaire, pas l'usage principal.
-- L'abstraction peut gêner les requêtes très complexes (recours au SQL brut alors nécessaire).
-
-## Alternatives
+### Alternatives
 
 - [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
 - [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
-## Liens
+## Ressources
 
-- [[ORM]] — le concept (Wiki)
-- [[Migrations de schéma]] — Prisma Migrate relève de ce concept
-- [[Comparatif - ORM]] — comparatif des ORM
-- Doc : https://www.prisma.io/docs
+- Documentation — https://www.prisma.io/docs
+- Dépôt — https://github.com/prisma/prisma
+
+## Voir aussi
+
+- [[ORM]] — la notion du dossier
+- [[Migrations de schéma]] — la notion dont relève Prisma Migrate
+- [[Comparatif - ORM]] — ce qui départage les ORM du dossier

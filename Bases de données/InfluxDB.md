@@ -19,41 +19,51 @@ url_repo: https://github.com/influxdata/influxdb
 
 # InfluxDB
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
 
-SGBD spécialisé **séries temporelles** : données horodatées (métriques, événements, capteurs) écrites en flux continu. Modèle pensé pour l'append séquentiel, la rétention automatique et les requêtes par fenêtres temporelles (downsampling, agrégations glissantes). Le cœur InfluxDB 3 est réécrit en **Rust** sur la pile Apache Arrow / DataFusion / Parquet ; OSS sous licence MIT/Apache 2 (GA avril 2025).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Métriques d'infrastructure et d'application, monitoring, observabilité.
-- Télémétrie IoT / capteurs : fort débit d'écriture horodatée.
-- Données qui vieillissent : rétention et downsampling automatiques.
-- Requêtes temporelles (fenêtres, agrégations par intervalle) plus que jointures relationnelles.
+SGBD spécialisé **séries temporelles** : des données horodatées — métriques, événements,
+capteurs — écrites en flux continu. Le modèle est pensé pour l'append séquentiel, avec
+rétention et downsampling automatiques, et des requêtes par fenêtres temporelles plutôt que
+par jointures relationnelles. Le cœur d'InfluxDB 3, disponible depuis avril 2025, est réécrit
+sur la pile Apache Arrow, DataFusion et Parquet.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Données relationnelles, jointures et transactions ACID → [[Postgres]].
-- Besoin de SQL standard et de l'écosystème Postgres tout en faisant du temporel → [[TimescaleDB]].
-- Analytique colonne haute cardinalité non strictement temporelle → [[ClickHouse]].
+| Prendre si | Écarter si |
+|---|---|
+| Métriques d'infrastructure et d'application, monitoring, observabilité | La **cardinalité des séries** — le nombre de combinaisons de tags — est le facteur de coût mémoire : elle se borne dès la modélisation |
+| Télémétrie IoT et capteurs : fort débit d'écriture horodatée | Le langage de requête a changé trois fois — InfluxQL, puis Flux, puis SQL en v3 : la version cible se vérifie avant d'écrire quoi que ce soit |
+| Données qui vieillissent : rétention et downsampling automatiques | Mises à jour et suppressions ponctuelles : le moteur est pensé append, elles y sont peu naturelles |
+| Requêtes temporelles — fenêtres, agrégations par intervalle — plus que jointures | Haute disponibilité et clustering : l'édition self-host Core est mono-nœud |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host : InfluxDB 3 Core (OSS, mono-nœud) ; InfluxDB 3 Enterprise ajoute le clustering.
-- Managé : InfluxDB Cloud.
-- OSS gratuit (MIT/Apache 2) ; haute disponibilité et clustering relèvent des éditions Enterprise/Cloud.
+- Installation — InfluxDB 3 Core en self-host, Enterprise pour le clustering, ou InfluxDB Cloud pour le managé
+- Point d'entrée — SQL en v3 ; InfluxQL puis Flux sur les versions antérieures
+- Prérequis — une modélisation des tags qui borne la cardinalité des séries
+- Exécution — self-hébergé mono-nœud côté OSS, ou managé ; le clustering relève d'Enterprise
+- Coût — OSS gratuit sous MIT/Apache 2 ; haute disponibilité et clustering en éditions Enterprise ou Cloud
 
-## Pièges
+## Écosystème
 
-- La **cardinalité des séries** (nombre de combinaisons de tags) est le facteur de coût mémoire historique — à maîtriser dès la modélisation.
-- Langage de requête mouvant selon les versions (InfluxQL, puis Flux, puis SQL en v3) — vérifier la version cible.
-- Pensé append : mises à jour et suppressions ponctuelles peu naturelles.
-
-## Alternatives
+### Alternatives
 
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases temporelles]] — comparatif des moteurs temporels
-- Doc : https://docs.influxdata.com/
+- Documentation — https://docs.influxdata.com/
+- Dépôt — https://github.com/influxdata/influxdb
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases temporelles]] — ce qui départage les moteurs du dossier

@@ -17,38 +17,51 @@ url_repo: https://github.com/liquibase/liquibase
 
 # Liquibase
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
 
-Gère l'évolution d'un schéma de base comme du code versionné. Les changements sont décrits dans un **changelog** (XML, YAML, JSON ou SQL), chaque `changeSet` étant appliqué une seule fois et tracé dans une table de contrôle. Atouts : abstraction multi-SGBD (un même changelog déclaratif sur plusieurs moteurs), **rollback**, contextes/labels, et intégration CI/CD. Cœur open-source (Apache 2.0), édition Pro commerciale.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI Java | open-core | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Versionner le schéma et rejouer les migrations de façon déterministe entre environnements.
-- Besoin d'un format abstrait (YAML/XML) portable entre SGBD, ou de rollback gérés.
-- Pipeline CI/CD appliquant les migrations automatiquement au déploiement.
+Gère l'évolution d'un schéma de base comme du code versionné. Les changements sont décrits
+dans un **changelog** — XML, YAML, JSON ou SQL — où chaque `changeSet` est appliqué une seule
+fois et tracé dans une table de contrôle. L'atout est l'abstraction : un même changelog
+déclaratif s'applique à plusieurs SGBD, avec rollback, contextes et labels, et s'intègre à un
+pipeline CI/CD.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Préférence pour des migrations **SQL-first** minimalistes → [[Flyway]].
-- Migrations générées et couplées à un ORM TypeScript → [[Prisma]].
+| Prendre si | Écarter si |
+|---|---|
+| Versionner le schéma et rejouer les migrations de façon déterministe entre environnements | L'abstraction XML/YAML ajoute une couche de traduction : sur un seul SGBD, le SQL brut est plus direct |
+| Format abstrait (YAML, XML, JSON) portable entre plusieurs moteurs | Les rollbacks automatiques ne couvrent pas tous les changements : les DDL destructifs se testent avant de compter dessus |
+| Pipeline CI/CD appliquant les migrations automatiquement au déploiement | Qualité et observabilité relèvent de l'édition Pro payante |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- CLI Java (ou plugins Maven/Gradle, image Docker) exécutée en local ou en CI.
-- Cœur gratuit (Apache 2.0) ; fonctions avancées (qualité, observabilité) en édition Pro payante — modèle open-core.
+- Installation — CLI Java, plugins Maven ou Gradle, ou image Docker
+- Point d'entrée — un changelog XML, YAML, JSON ou SQL, appliqué `changeSet` par `changeSet`
+- Prérequis — une JVM
+- Exécution — en local ou en CI ; rien à héberger
+- Coût — cœur gratuit sous Apache 2.0 ; qualité et observabilité en édition Pro — c'est le modèle open-core
 
-## Pièges
+## Écosystème
 
-- L'abstraction XML/YAML ajoute une couche : sur un seul SGBD, le SQL brut est parfois plus simple.
-- Les rollbacks automatiques ne couvrent pas tous les changements (DDL destructifs) — à tester.
-
-## Alternatives
+### Alternatives
 
 - [[Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
 - [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
 
-## Liens
+## Ressources
 
-- [[Migrations de schéma]] — le concept (Wiki)
-- [[Comparatif - Migrations de schéma]] — comparatif des outils de migration
-- Doc : https://docs.liquibase.com/
+- Documentation — https://docs.liquibase.com/
+- Dépôt — https://github.com/liquibase/liquibase
+
+## Voir aussi
+
+- [[Migrations de schéma]] — la notion du dossier
+- [[Comparatif - Migrations de schéma]] — ce qui départage les outils du dossier

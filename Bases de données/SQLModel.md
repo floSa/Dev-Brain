@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: beta
 langage: Python
 alternatives: ["[[SQLAlchemy]]", "[[Prisma]]"]
-complements: []
+complements: ["[[Pydantic]]", "[[FastAPI]]", "[[Alembic]]"]
 tags: [orm, relational, type-hints, data-validation]
 url_docs: https://sqlmodel.tiangolo.com/
 url_repo: https://github.com/fastapi/sqlmodel
@@ -17,44 +17,58 @@ url_repo: https://github.com/fastapi/sqlmodel
 
 # SQLModel
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
-Couche fine qui réconcilie [[Pydantic]] (validation, sérialisation) et [[SQLAlchemy]] (ORM, accès SQL) : une classe `SQLModel` est **à la fois** un modèle Pydantic et une table SQLAlchemy. Une seule définition typée sert de schéma de validation des entrées, de modèle de réponse et d'entité persistée — pas de duplication entre couche API et couche données. Écrit par Sebastián Ramírez (tiangolo), auteur de [[FastAPI]], avec lequel l'intégration est l'usage de référence.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- App [[FastAPI]] voulant partager une seule définition de modèle entre validation HTTP et persistance.
-- Besoin du typage et de la validation Pydantic *plus* d'un ORM, sans maintenir deux jeux de classes en parallèle.
-- CRUD simple à modéré où l'on accepte de redescendre vers SQLAlchemy pour les requêtes pointues.
+Couche fine qui réconcilie Pydantic — validation, sérialisation — et SQLAlchemy — ORM, accès
+SQL : une classe `SQLModel` est **à la fois** un modèle Pydantic et une table SQLAlchemy. Une
+seule définition typée sert de schéma de validation des entrées, de modèle de réponse et
+d'entité persistée, sans duplication entre couche API et couche données. Écrite par Sebastián
+Ramírez, auteur de FastAPI, avec lequel l'intégration est l'usage de référence.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Contrôle fin du SQL, requêtes complexes, async avancé → [[SQLAlchemy]] directement (SQLModel n'expose qu'une partie de son API).
-- Stack TypeScript / Node → [[Prisma]].
-- Projet exigeant une API stable et figée : SQLModel est encore en **0.0.x** (pré-1.0), l'API peut bouger.
+| Prendre si | Écarter si |
+|---|---|
+| Application FastAPI voulant partager une seule définition de modèle entre validation HTTP et persistance | Périmètre volontairement réduit : SQLModel n'expose qu'une partie de l'API SQLAlchemy, et les requêtes pointues imposent d'y redescendre |
+| Typage et validation Pydantic **plus** un ORM, sans maintenir deux jeux de classes en parallèle | Pré-1.0, en 0.0.x : un projet qui exige une API stable et figée ne peut pas s'appuyer dessus |
+| CRUD simple à modéré, en acceptant de redescendre au besoin vers la couche sous-jacente | Double héritage Pydantic + table : confondre les modèles `table=True` et les DTO de validation mélange schéma API et schéma de base |
+| | Elle hérite des pièges de sa couche ORM : requêtes N+1, chargement paresseux |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite, intégrée à l'application. Tire [[Pydantic]] et [[SQLAlchemy]] comme dépendances.
-- Pas de service à héberger : single-node, suit le déploiement de l'app. Migrations de schéma déléguées à [[Alembic]] (comme SQLAlchemy).
+- Installation — `uv add sqlmodel` ; tire Pydantic et SQLAlchemy comme dépendances
+- Point d'entrée — une classe `SQLModel`, avec `table=True` pour les entités persistées
+- Prérequis — Python ; les migrations de schéma se délèguent à un outil distinct
+- Exécution — dans le process de l'application, single-node ; rien à héberger
+- Coût — gratuit, licence MIT
 
-## Pièges
+## Écosystème
 
-- **Pré-1.0** (0.0.x) : périmètre volontairement réduit ; certaines fonctions SQLAlchemy ne sont accessibles qu'en retombant sur l'API sous-jacente.
-- Double héritage Pydantic + table : bien distinguer les modèles `table=True` (persistés) des modèles de données purs (DTO de validation), sinon confusion entre schéma API et schéma BDD.
-- Hérite des pièges SQLAlchemy : requêtes **N+1**, chargement paresseux.
-
-## Alternatives
+### Alternatives
 
 - [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
 - [[Prisma]] — ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
 
-## Liens
+### Compléments
 
-- [[ORM]] — le concept (Wiki)
-- [[SQLAlchemy]] — socle ORM/SQL sur lequel SQLModel s'appuie
-- [[Pydantic]] — socle de validation/typage
-- [[FastAPI]] — intégration de référence (même auteur)
-- [[Alembic]] — migrations de schéma
-- [[Comparatif - ORM]] — comparatif des ORM
-- Doc : https://sqlmodel.tiangolo.com/
+- [[Pydantic]] — Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires. — le socle de validation et de typage.
+- [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — l'intégration de référence, du même auteur.
+- [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle. — les migrations de schéma, que SQLModel ne fait pas.
+
+## Ressources
+
+- Documentation — https://sqlmodel.tiangolo.com/
+- Dépôt — https://github.com/fastapi/sqlmodel
+
+## Voir aussi
+
+- [[ORM]] — la notion du dossier
+- [[Comparatif - ORM]] — ce qui départage les ORM du dossier

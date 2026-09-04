@@ -19,43 +19,54 @@ url_repo: https://github.com/apache/cassandra
 
 # Apache Cassandra
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
 
-Base NoSQL **wide-column** distribuée, conçue pour le volume et la disponibilité. Architecture **sans maître** (peer-to-peer) : tous les nœuds sont égaux, pas de point unique de défaillance, et ajouter des nœuds augmente la capacité de façon quasi linéaire. Réplication multi-datacenter native et cohérence **réglable par requête** (de `ONE` à `QUORUM`/`ALL`). Le modèle se pense autour des requêtes : on dénormalise et on modélise par pattern d'accès, pas par entité.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Écritures massives et continues (télémétrie, logs, IoT, séries d'événements).
-- Haute disponibilité « always-on » et déploiement multi-région / multi-datacenter.
-- Volumes dépassant un seul nœud, avec scale-out linéaire attendu.
-- Charge dont les patterns de lecture sont connus d'avance et stables.
+Base NoSQL **wide-column** conçue pour le volume et la disponibilité. L'architecture est
+**sans maître**, de pair à pair : tous les nœuds sont égaux, il n'y a pas de point unique de
+défaillance, et ajouter des nœuds augmente la capacité de façon quasi linéaire. La
+réplication multi-datacenter est native et la cohérence se règle **par requête**, de `ONE` à
+`QUORUM` ou `ALL`. Le modèle de données se pense autour des requêtes : on dénormalise et on
+modélise par pattern d'accès, pas par entité.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Requêtes ad hoc, jointures, agrégations imprévues → [[Postgres]] ou [[MongoDB]].
-- Petit volume mono-nœud : la complexité opérationnelle ne se justifie pas → [[Postgres]].
-- Cache ou structures en mémoire → [[Redis]].
+| Prendre si | Écarter si |
+|---|---|
+| Écritures massives et continues : télémétrie, logs, IoT, séries d'événements | Modéliser par entité plutôt que par requête produit des partitions inexploitables |
+| Haute disponibilité « always-on », déploiement multi-région ou multi-datacenter | Ni jointure ni agrégation libre : `ALLOW FILTERING` est une porte ouverte aux scans |
+| Volumes dépassant un seul nœud, avec un scale-out linéaire attendu | Partitions trop larges ou « hot partitions » : elles dégradent tout le cluster |
+| Patterns de lecture connus d'avance et stables | Exploitation JVM exigeante : compaction, repair et tombstones à surveiller en continu |
+| | Petit volume tenant sur un nœud : la complexité opérationnelle du cluster ne se rembourse pas |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host (cluster de nœuds, JVM à tuner) ou managé (DataStax Astra, Amazon Keyspaces).
-- Scaling horizontal par ajout de nœuds ; réplication réglable par datacenter.
-- Licence **Apache 2.0**, gratuit et OSI ; le coût réel est l'exploitation du cluster (JVM, compaction, réparations).
+- Installation — cluster de nœuds en self-host, ou managé (DataStax Astra, Amazon Keyspaces)
+- Point d'entrée — CQL, depuis un client ou un pilote
+- Prérequis — une JVM à régler, et un modèle pensé par requête avant la première écriture
+- Exécution — self-hébergé ou managé ; distribué, scaling horizontal par ajout de nœuds, réplication réglable par datacenter
+- Coût — gratuit, licence Apache 2.0 ; le coût réel est l'exploitation du cluster — compaction, repair, tuning JVM
 
-## Pièges
+## Écosystème
 
-- Modéliser par entité plutôt que par requête mène à des partitions inexploitables.
-- Pas de jointures ni d'agrégations libres ; `ALLOW FILTERING` est un piège à scans.
-- Partitions trop larges ou « hot partitions » dégradent tout le cluster.
-- Exploitation JVM exigeante : compaction, repair et tombstones à surveiller.
-
-## Alternatives
+### Alternatives
 
 - [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
 - [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
 
-## Liens
+## Ressources
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases NoSQL]] — comparatif des moteurs NoSQL
-- Doc : https://cassandra.apache.org/doc/
+- Documentation — https://cassandra.apache.org/doc/
+- Dépôt — https://github.com/apache/cassandra
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases NoSQL]] — ce qui départage les moteurs du dossier

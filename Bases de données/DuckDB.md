@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ClickHouse]]"]
-complements: []
+complements: ["[[pandas]]", "[[Polars]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb
@@ -17,41 +17,56 @@ url_repo: https://github.com/duckdb/duckdb
 
 # DuckDB
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 
-Base analytique **in-process** (embarquée), le « SQLite de l'OLAP ». Pas de serveur : elle tourne dans le process hôte (Python, R, CLI). Stockage **colonnes** et exécution **vectorisée**, sans dépendances (un compilateur C++17 suffit). Lit directement Parquet, CSV et JSON, et s'intègre à pandas, Polars et Arrow. Licence MIT, garantie à perpétuité par la DuckDB Foundation.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Analytique locale et exploration de données sur un poste (data science, notebooks).
-- Requêter des fichiers Parquet / CSV / JSON en SQL sans monter d'infra.
-- ETL léger et transformations au sein d'un pipeline Python.
-- Tests et prototypes analytiques jetables.
+Base analytique **in-process**, le « SQLite de l'OLAP » : pas de serveur, elle tourne dans le
+process hôte — Python, R, ou la ligne de commande. Stockage en **colonnes** et exécution
+**vectorisée**, sans dépendance externe : un compilateur C++17 suffit à la bâtir. Elle
+requête directement des fichiers Parquet, CSV et JSON, sans étape de chargement préalable, et
+s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un fichier unique.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Service analytique multi-utilisateur, distribué, sur gros cluster → [[ClickHouse]].
-- OLTP et écritures concurrentes transactionnelles → [[Postgres]].
-- Volumes dépassant une machine ou besoin de haute disponibilité.
+| Prendre si | Écarter si |
+|---|---|
+| Analytique locale et exploration sur un poste : data science, notebooks | Un seul écrivain à la fois, comme SQLite : les écritures concurrentes transactionnelles ne passent pas |
+| Requêter des fichiers Parquet, CSV ou JSON en SQL sans monter d'infra | Elle tient sur une machine : la RAM et le disque local bornent le volume |
+| ETL léger et transformations au sein d'un pipeline Python | Elle n'est pas conçue pour servir des milliers de clients simultanés, ni pour la haute disponibilité |
+| Tests et prototypes analytiques jetables | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Pas de déploiement : bibliothèque liée au process, base en mémoire ou fichier unique.
-- Single-node, mais exploite tous les cœurs locaux.
-- MIT, gratuit ; option managée cloud via MotherDuck.
+- Installation — `uv add duckdb` ; aucune dépendance externe à installer
+- Point d'entrée — SQL depuis Python, R ou la CLI ; requêtes directes sur Parquet, CSV et JSON
+- Prérequis — aucun serveur ; la base est en mémoire ou dans un fichier unique
+- Exécution — dans le process appelant, single-node, mais tous les cœurs locaux sont exploités
+- Coût — gratuit, licence MIT garantie à perpétuité par la DuckDB Foundation ; option managée via MotherDuck
 
-## Pièges
+## Écosystème
 
-- Pensée mono-process / un seul écrivain (comme SQLite côté concurrence).
-- Pas conçue pour servir des milliers de clients simultanés.
-- Tient sur une machine : la RAM et le disque local bornent le volume.
-
-## Alternatives
+### Alternatives
 
 - [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 
-## Liens
+### Compléments
 
-- [[Bases de données]] — le concept (Wiki)
-- [[Comparatif - Bases colonnes]] — comparatif des moteurs colonne / OLAP
-- Doc : https://duckdb.org/docs/
+- [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python. — intégration directe, dans les deux sens.
+- [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core. — intégration directe via Arrow.
+
+## Ressources
+
+- Documentation — https://duckdb.org/docs/
+- Dépôt — https://github.com/duckdb/duckdb
+
+## Voir aussi
+
+- [[Bases de données]] — le hub du domaine
+- [[Comparatif - Bases colonnes]] — ce qui départage les moteurs du dossier
