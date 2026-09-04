@@ -19,45 +19,56 @@ url_repo: https://github.com/langfuse/langfuse
 
 # Langfuse
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
 
-Plateforme d'**ingénierie LLM** open-core (cœur sous **MIT**, dossiers `ee/` sous licence commerciale ; éditeur racheté par **ClickHouse** en 2026, YC W23). Elle réunit quatre piliers dans un workflow unique : **observabilité/traçage** (chaque appel LLM et outil en spans imbriqués — latence, coût, tokens), **gestion de prompts** versionnés (avec cache), **évaluations** (LLM-as-judge, évaluateurs code, annotation humaine) et **datasets** d'exemples. Écrite en **TypeScript**, elle s'intègre à **OpenTelemetry**, aux SDK OpenAI, à [[LangChain]], [[LiteLLM]] et autres. Auto-hébergeable ou en SaaS (Langfuse Cloud).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | open-core | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Observer une app LLM en production** : traces de bout en bout, coûts, latence, débogage des chaînes/agents.
-- Centraliser **prompts versionnés**, **évals** et **datasets** au même endroit que les traces.
-- Exiger de l'**open-source auto-hébergeable** (souveraineté des données) sans renoncer à un cloud managé.
-- Stack hétérogène : ingestion via **OpenTelemetry** et intégrations multiples (OpenAI, LangChain, LiteLLM…).
+Plateforme d'ingénierie LLM qui réunit quatre piliers dans un workflow unique : le **traçage**
+(chaque appel de modèle et d'outil en spans imbriqués, avec latence, coût et tokens), la
+**gestion de prompts** versionnés et mis en cache, les **évaluations** (LLM-as-judge,
+évaluateurs code, annotation humaine) et les **datasets** d'exemples. L'ingestion passe par
+OpenTelemetry, par les SDK OpenAI, par [[LangChain]] ou par [[LiteLLM]], ce qui la rend
+utilisable sur une stack hétérogène. Elle sait rejouer sur ses traces des évals écrites avec
+[[Ragas]] ou [[DeepEval]]. Éditeur YC W23, racheté par ClickHouse en 2026.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin uniquement d'**éval offline en CI** (pas de plateforme à héberger) → [[Ragas]], [[DeepEval]].
-- App **100 % écosystème LangChain** cherchant l'intégration la plus serrée et un produit clé en main → [[LangSmith]].
-- Préférence pour une plateforme **bâtie nativement sur OpenTelemetry/OpenInference** avec un fort volet éval → [[Phoenix Arize]].
+| Prendre si | Écarter si |
+|---|---|
+| Observer une app LLM en production : traces de bout en bout, coûts, latence, débogage des chaînes et des agents | Besoin d'une éval offline en CI seulement, sans plateforme à héberger → [[Ragas]], [[DeepEval]] |
+| Centraliser prompts versionnés, évals et datasets au même endroit que les traces | Open-core : la fonction visée peut vivre dans les dossiers `ee/` sous licence commerciale, et non dans le cœur MIT |
+| Garder la souveraineté des données en auto-hébergeant, sans renoncer à un cloud managé | Le self-host de production n'est pas trivial : ClickHouse, Postgres et Redis à opérer |
+| Stack hétérogène : ingestion OpenTelemetry et intégrations multiples (OpenAI, LangChain, LiteLLM) | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : Docker Compose en dev ; Kubernetes/Helm et Terraform AWS/Azure/GCP en prod, multi-région — stack ClickHouse + Postgres + Redis, d'où `distributed`.
-- **Langfuse Cloud** managé avec free-tier généreux (`hosted: both`).
-- Cœur **MIT gratuit** ; certaines fonctions entreprise (SSO avancé, RBAC fin) relèvent des dossiers `ee/` sous licence commerciale.
+- Installation — Docker Compose en développement ; Helm sur Kubernetes ou Terraform AWS/Azure/GCP en production, multi-région possible
+- Point d'entrée — SDK Python et JS, ingestion OpenTelemetry, intégrations OpenAI, LangChain, LiteLLM
+- Prérequis — ClickHouse, Postgres et Redis pour le self-host de production ; le volume de traces commande le stockage, échantillonnage et rétention à régler
+- Exécution — self-hébergé ou Langfuse Cloud managé, architecture distribuée
+- Coût — cœur MIT gratuit ; SSO avancé et RBAC fin relèvent des dossiers `ee/` sous licence commerciale ; Langfuse Cloud a un free-tier généreux
 
-## Pièges
+## Écosystème
 
-- **Open-core** : vérifier que les fonctions visées sont dans le cœur MIT et non dans `ee/`.
-- Le self-host de prod n'est **pas trivial** (ClickHouse + Postgres + Redis à opérer).
-- Le **volume de traces** fait exploser le stockage : régler échantillonnage et rétention.
-
-## Alternatives
+### Alternatives
 
 - [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 - [[Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 - [[Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
-## Liens
+## Ressources
 
-- Ingestion via [[LiteLLM]] (proxy), [[LangChain]], OpenTelemetry.
-- Peut exécuter des évals issues de [[Ragas]] / [[DeepEval]] sur les traces.
-- Concepts : [[LLM observability]], [[LLM-as-judge]] (évals en ligne).
-- [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
-- Doc : https://langfuse.com/docs
+- Documentation — https://langfuse.com/docs
+- Dépôt — https://github.com/langfuse/langfuse
+
+## Voir aussi
+
+- [[LLM observability]] — la notion du dossier
+- [[LLM-as-judge]] — le mécanisme de ses évals en ligne
+- [[Comparatif - Observabilité LLM]] — ce qui départage les plateformes du dossier
