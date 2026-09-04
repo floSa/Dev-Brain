@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 760 pages actives.
+> 761 pages actives.
 
 ## Par page
 
@@ -243,7 +243,7 @@
 ### CuPy  ·  brique
 - tags : `gpu`, `array`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[JAX]], [[PyTorch]], [[numpy]]
-- liens entrants : [[Calcul distribué]], [[numpy]]
+- liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[numpy]]
 
 ### curl_cffi  ·  brique
 - tags : `web-scraping`
@@ -268,7 +268,7 @@
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Modin]], [[Polars]], [[Ray]], [[Spark]], [[numpy]], [[pandas]]
-- liens entrants : [[Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Modin]], [[Polars]], [[Prefect]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Modin]], [[Polars]], [[Prefect]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
 
 ### DataGrip  ·  brique
 - tags : `db-client`, `relational`, `nosql`
@@ -583,7 +583,7 @@
 ### JAX  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `array`
 - liens sortants : [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[numpy]]
-- liens entrants : [[Acme]], [[Apprentissage profond]], [[CuPy]], [[HuggingFace]], [[Keras]], [[PyMC]], [[PyTorch]], [[RLax]], [[Scikit-Learn]], [[TensorFlow]], [[Tunix]], [[numpy]]
+- liens entrants : [[Acme]], [[Apprentissage profond]], [[Comparatif - Calcul distribué]], [[CuPy]], [[HuggingFace]], [[Keras]], [[PyMC]], [[PyTorch]], [[RLax]], [[Scikit-Learn]], [[TensorFlow]], [[Tunix]], [[numpy]]
 
 ### Jinja2  ·  brique
 - tags : `templating`
@@ -898,7 +898,7 @@
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
 - liens sortants : [[CuPy]], [[Dask]], [[JAX]], [[Polars]], [[PyTorch]], [[pandas]], [[xarray]]
-- liens entrants : [[Algèbre linéaire]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Polars]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
+- liens entrants : [[Algèbre linéaire]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Polars]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
 
 ### NVIDIA Triton  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
@@ -1193,7 +1193,7 @@
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
 - liens sortants : [[BentoML]], [[Entraînement distribué]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[Keras]], [[LightGBM]], [[Mixed precision]], [[NVIDIA Triton]], [[Optuna]], [[Pruning]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[TorchServe]], [[XGBoost]], [[accelerate]]
-- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Ray Serve]], [[Reward modeling]], [[River]], [[SAELens]], [[SFT]], [[SGLang]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[TransformerLens]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[interpreto]], [[neuralforecast]], [[nnsight]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
+- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Comparatif - Calcul distribué]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Ray Serve]], [[Reward modeling]], [[River]], [[SAELens]], [[SFT]], [[SGLang]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[TransformerLens]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[interpreto]], [[neuralforecast]], [[nnsight]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
 
 ### PyTorch Geometric  ·  brique
 - tags : `gnn`, `deep-learning`, `gpu`, `representation-learning`
@@ -1243,17 +1243,17 @@
 ### Ray  ·  brique
 - tags : `distributed`, `parallel`, `gpu`
 - liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[Modin]], [[Polars]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[pandas]]
-- liens entrants : [[Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Serving de modèles]], [[Dask]], [[E2B]], [[Modal]], [[Ray Serve]], [[Ray Tune]], [[Spark]]
+- liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Serving de modèles]], [[Dask]], [[E2B]], [[Modal]], [[Ray Serve]], [[Ray Tune]], [[Spark]]
 
 ### Ray Serve  ·  brique
 - tags : `model-serving`, `inference`, `distributed`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray]], [[Ray Tune]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### Ray Tune  ·  brique
 - tags : `hyperparameter-tuning`, `distributed`, `bayesian`
 - liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Scikit-Learn]], [[XGBoost]]
-- liens entrants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Machine Learning]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Suivi d'expériences]]
+- liens entrants : [[Comparatif - Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Machine Learning]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Suivi d'expériences]]
 
 ### Redis  ·  brique
 - tags : `nosql`, `key-value`, `in-memory`
@@ -1413,7 +1413,7 @@
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
 - liens sortants : [[Apache Iceberg]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
-- liens entrants : [[Calcul distribué]], [[Dask]], [[Hyperopt]], [[Ray]]
+- liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Hyperopt]], [[Ray]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
@@ -1739,6 +1739,11 @@
 - tags : `boosting`, `tree-based`, `ensemble`
 - liens sortants : [[CatBoost]], [[Comparatif - Boosting.base]], [[LightGBM]], [[XGBoost]]
 - liens entrants : [[CatBoost]], [[LightGBM]], [[Tabulaire]], [[XGBoost]]
+
+### Comparatif - Calcul distribué  ·  comparatif
+- tags : `distributed`, `parallel`, `gpu`, `out-of-core`
+- liens sortants : [[Comparatif - Calcul distribué.base]], [[CuPy]], [[Dask]], [[JAX]], [[PyTorch]], [[Ray]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[numpy]]
+- liens entrants : [[Calcul distribué]], [[CuPy]], [[Dask]], [[Ray]], [[Spark]]
 
 ### Comparatif - Clients d'API  ·  comparatif
 - tags : `api-client`, `version-control`
@@ -3882,7 +3887,7 @@
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
-- `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
+- `distributed` : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
@@ -3915,7 +3920,7 @@
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
 - `graph-db` : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
@@ -4012,11 +4017,11 @@
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : Comparatif - ORM, ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
-- `out-of-core` : Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
+- `out-of-core` : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
 - `p-value` : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning, Théorie de l'apprentissage
 - `package-manager` : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
-- `parallel` : Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
+- `parallel` : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
@@ -4174,7 +4179,7 @@
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
-- `distributed` (porté par : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
+- `distributed` (porté par : Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
@@ -4195,7 +4200,7 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `gpu` (porté par : Apprentissage profond, Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
@@ -4251,10 +4256,10 @@
 - `optimization` (porté par : Adam optimizer, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
-- `out-of-core` (porté par : Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray)
+- `out-of-core` (porté par : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray)
 - `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv)
-- `parallel` (porté par : Calcul distribué, Dask, Modin, Ray)
+- `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, pdf-inspector, pdfplumber)

@@ -29,7 +29,7 @@
     "Wiki"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 760,
+  "count": 761,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -783,6 +783,7 @@
       "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
+      "Comparatif - Calcul distribué",
       "Dask",
       "Elasticsearch",
       "Flink",
@@ -1081,6 +1082,7 @@
     "gpu": [
       "Apprentissage profond",
       "Calcul distribué",
+      "Comparatif - Calcul distribué",
       "CuPy",
       "DeepSpeed",
       "Detectron2",
@@ -2056,6 +2058,7 @@
     ],
     "out-of-core": [
       "Calcul distribué",
+      "Comparatif - Calcul distribué",
       "Comparatif - Manipulation de données",
       "Dask",
       "DataFrames",
@@ -2085,6 +2088,7 @@
     ],
     "parallel": [
       "Calcul distribué",
+      "Comparatif - Calcul distribué",
       "Dask",
       "Modin",
       "Ray"
@@ -4862,6 +4866,26 @@
         "parallel",
         "out-of-core",
         "distributed-training"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Calcul distribué/Comparatif - Calcul distribué.md",
+      "nom": "Comparatif - Calcul distribué",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "compute/distribue",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "distributed",
+        "parallel",
+        "gpu",
+        "out-of-core"
       ],
       "alternatives": null,
       "complements": null,
