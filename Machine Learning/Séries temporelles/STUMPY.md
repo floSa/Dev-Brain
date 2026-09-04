@@ -17,45 +17,56 @@ url_repo: https://github.com/stumpy-dev/stumpy
 
 # STUMPY
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
-Calcule efficacement le **matrix profile** d'une série temporelle : pour chaque sous-séquence, la distance à sa plus proche voisine. De ce seul objet découlent **motifs** (répétitions), **discords** (anomalies de forme), segmentation et chaînes temporelles. Implémentation **vectorisée et compilée** (Numba JIT), **parallèle** multicœur, **distribuée** (Dask) et **GPU** (CUDA) — d'où son passage à l'échelle. C'est l'outil de référence pour la [[Time series anomaly detection|détection d'anomalies temporelles]] par matrix profile.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Détecter des **anomalies de forme** (discords) dans une série, sans modèle ni labels.
-- **Découverte de motifs** récurrents, segmentation de régimes, time series chains.
-- Volumes importants : `stumped` (Dask) et `gpu_stump` (GPU) pour les longues séries.
+Calcule le *matrix profile* d'une série : pour chaque sous-séquence de longueur `m`, la
+distance à sa plus proche voisine ailleurs dans la série. De ce seul objet découlent les
+motifs (répétitions), les discords (anomalies de forme), la segmentation de régimes et les
+chaînes temporelles. L'implémentation est vectorisée et compilée par Numba, parallèle
+multicœur, distribuable sur Dask et portée sur GPU — c'est ce qui la rend utilisable sur de
+longues séries. La distance étant z-normalisée, la comparaison porte sur la forme et jamais
+sur le niveau. Une autre implémentation Python existe, `matrixprofile`, nettement moins active.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Outliers **tabulaires multivariés** (pas de structure de forme) → [[PyOD]].
-- Simple seuillage **univarié** sur un flux → [[Détection d'outliers univariée]] (`numpy`/`scipy`).
-- **Prévision** de valeurs futures → [[Prophet]], [[ARIMA SARIMA]] ; STUMPY décrit, ne prédit pas.
+| Prendre si | Écarter si |
+|---|---|
+| Anomalies de forme (discords) dans une série, sans modèle ni labels | Prévoir des valeurs futures : STUMPY décrit, il ne prédit pas → [[Prophet]] |
+| Découverte de motifs récurrents, segmentation de régimes, chaînes temporelles | Simple seuillage univarié sur un flux → [[Détection d'outliers univariée]] |
+| Longues séries : `stumped` (Dask) et `gpu_stump` (GPU) tiennent l'échelle | Fenêtre `m` mal calée : trop courte elle capte le bruit, trop longue elle noie l'anomalie — la caler sur la période physique |
+| | Coût quadratique en longueur pour le calcul exact : passer à l'approché (`scrump`) ou au distribué |
+| | Régions plates (variance proche de zéro) : la z-normalisation y fabrique des artefacts |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (**BSD-3-Clause**), gratuite ; `uv add stumpy`.
-- **Single-node par défaut**, mais conçue pour l'échelle : Numba (parallèle), **Dask** (distribué, `stumped`), **GPU** (`gpu_stump`).
-- Aucune infra côté cœur ; un cluster Dask ou un GPU seulement pour les très longues séries.
+- Installation — `uv add stumpy`
+- Point d'entrée — API Python `stumpy.stump(T, m)`, puis `stumped` (Dask) et `gpu_stump` (CUDA)
+- Prérequis — Numba ; un cluster Dask ou un GPU seulement pour les très longues séries
+- Exécution — CPU multicœur mono-machine par défaut ; latence de compilation JIT au premier appel, négligeable ensuite
+- Coût — gratuit, BSD-3-Clause ; aucune infrastructure côté cœur
 
-## Pièges
+## Écosystème
 
-- **Fenêtre $m$** : hyperparamètre déterminant ; trop courte = bruit, trop longue = anomalie noyée. La caler sur la période physique.
-- **Latence de compilation Numba** au premier appel (JIT) ; négligeable ensuite.
-- **Mémoire / coût** quadratique en longueur pour le calcul exact ; passer à l'approché (`scrump`) ou au distribué sur très longues séries.
-- La distance étant **z-normalisée**, les régions **plates** (variance ~0) produisent des artefacts.
-
-## Alternatives
+### Alternatives
 
 - [[PyOD]] — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 
-Côté matrix profile spécifiquement, `matrixprofile` (matrix-profile-foundation) est l'autre implémentation Python, moins active.
+## Ressources
 
-## Liens
+- Documentation — https://stumpy.readthedocs.io/
+- Dépôt — https://github.com/stumpy-dev/stumpy
 
-- [[Time series anomaly detection|Détection d'anomalies temporelles]] — le cadre qu'il outille (discords, motifs).
-- [[PyOD]] — l'équivalent côté outliers tabulaires multivariés.
-- [[ARIMA SARIMA]] · [[Exponential smoothing]] — modèles du « normal » dont on peut analyser les résidus.
-- [[Comparatif - Détection d'anomalies|Comparatif — Détection d'anomalies]]
-- Doc : https://stumpy.readthedocs.io/
+## Voir aussi
+
+- [[Time series anomaly detection]] — la notion du dossier qu'il outille (discords, motifs)
+- [[ARIMA SARIMA]] — un modèle du « normal » dont on peut analyser les résidus
+- [[Exponential smoothing]] — l'autre modèle du « normal » disponible dans le dossier
+- [[Comparatif - Détection d'anomalies]] — ce qui le départage des détecteurs tabulaires

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Scikit-Learn]]"]
-complements: []
+complements: ["[[Featuretools]]"]
 tags: [feature-engineering]
 url_docs: https://contrib.scikit-learn.org/category_encoders/
 url_repo: https://github.com/scikit-learn-contrib/category_encoders
@@ -17,39 +17,57 @@ url_repo: https://github.com/scikit-learn-contrib/category_encoders
 
 # category_encoders
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.
 
-Collection de **transformers d'encodage catégoriel** suivant l'API scikit-learn (`fit`/`transform`, intégrables dans un `Pipeline` / `ColumnTransformer`). Au-delà des `OneHotEncoder` / `OrdinalEncoder` / `TargetEncoder` natifs de sklearn, elle apporte une large famille d'encodeurs **supervisés** (par la cible) et non supervisés : Target, **Weight of Evidence**, James-Stein, M-estimate, Leave-One-Out, CatBoost encoder, GLMM, Quantile, plus hashing et BaseN. Pensée pour les variables à **forte cardinalité**. Projet `scikit-learn-contrib`.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Variables catégorielles à **forte cardinalité** où le One-Hot explose en dimension.
-- Besoin d'un encodeur précis absent de sklearn : **WoE** (scoring crédit, cf. [[Régression logistique]]), James-Stein, M-estimate, CatBoost encoder.
-- Pipeline sklearn existant : les encodeurs s'y insèrent sans friction.
+Collection de transformers d'encodage catégoriel suivant l'API scikit-learn — `fit` /
+`transform` —, insérables tels quels dans un `Pipeline` ou un `ColumnTransformer`. Au-delà des
+encodeurs natifs, elle apporte une large famille d'encodeurs **supervisés**, calculés par la
+cible : Target, Weight of Evidence, James-Stein, M-estimate, Leave-One-Out, CatBoost encoder,
+GLMM, Quantile ; et non supervisés : hashing, BaseN. La cible visée est la variable à forte
+cardinalité, où le One-Hot explose en dimension. Projet `scikit-learn-contrib`.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Faible cardinalité, encodage simple → `OneHotEncoder` / `TargetEncoder` de [[Scikit-Learn]] suffisent (sklearn ≥ 1.3 gère le repli anti-fuite du target encoding).
-- Modèle gérant nativement les catégorielles → [[CatBoost]] (pas besoin d'encoder en amont).
+| Prendre si | Écarter si |
+|---|---|
+| Variables catégorielles à forte cardinalité, où le One-Hot explose en dimension | Faible cardinalité : les encodeurs natifs de scikit-learn suffisent, y compris le repli anti-fuite du target encoding depuis la 1.3 |
+| Encodeur précis absent de scikit-learn : WoE, James-Stein, M-estimate, CatBoost encoder | Les encodeurs par la cible (Target, WoE, LOO) sont des vecteurs de fuite : à ajuster dans le pipeline, pli par pli → [[Data leakage]] |
+| Scoring de crédit : le Weight of Evidence y est le format attendu → [[Régression logistique]] | Lissage à régler : trop faible, on surajuste les petites modalités ; trop fort, le signal se noie dans la moyenne globale |
+| Pipeline scikit-learn existant : les encodeurs s'y insèrent sans friction | WoE ne vaut que pour une cible binaire, sinon passer par `PolynomialWrapper` |
+| | Modèle qui gère nativement les catégorielles : encoder en amont n'a plus d'objet → [[CatBoost]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python open-source (BSD-3-Clause), `uv add category-encoders` ; rien à héberger.
-- Single-node, au-dessus de pandas / scikit-learn.
-- Maintenue dans l'écosystème `scikit-learn-contrib`.
+- Installation — `uv add category-encoders`
+- Point d'entrée — transformers scikit-learn (`TargetEncoder`, `WOEEncoder`, `JamesSteinEncoder`…) posés dans un `Pipeline`
+- Prérequis — scikit-learn et pandas
+- Exécution — CPU, sur une machine
+- Coût — gratuit, BSD-3-Clause ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- Les encodeurs **par la cible** (Target, WoE, LOO) sont des vecteurs de **fuite de données** : `fit` sur le train seul, dans le pipeline, à l'intérieur de chaque pli de validation croisée.
-- Le lissage (*smoothing*) se règle : trop faible = surajustement aux petites modalités, trop fort = signal noyé dans la moyenne globale.
-- WoE ne vaut que pour une **cible binaire** (sinon `PolynomialWrapper`).
-
-## Alternatives
+### Alternatives
 
 - [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-## Liens
+### Compléments
 
-- Concept implémenté : [[Encodage des variables catégorielles]]
-- Étape englobante : [[Ingénierie des caractéristiques]]
-- Doc : https://contrib.scikit-learn.org/category_encoders/
+- [[Featuretools]] — Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables. Fournit en amont les colonnes que ces encodeurs préparent.
+
+## Ressources
+
+- Documentation — https://contrib.scikit-learn.org/category_encoders/
+- Dépôt — https://github.com/scikit-learn-contrib/category_encoders
+
+## Voir aussi
+
+- [[Encodage des variables catégorielles]] — la notion qu'il implémente
+- [[Ingénierie des caractéristiques]] — l'étape qui l'englobe

@@ -19,48 +19,58 @@ url_repo: https://github.com/tensorflow/tensorboard
 
 # TensorBoard
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
 
-Boîte à outils de **visualisation d'entraînement**, issue de [[TensorFlow]] mais devenue framework-agnostique. Le code écrit des **event files** dans un répertoire de logs ; le serveur web `tensorboard --logdir` les lit et affiche des dashboards : courbes de **scalaires** (loss, métriques), **histogrammes** de poids/gradients, **graphe** du modèle, **images/audio**, projecteur d'**embeddings** (PCA/t-SNE) et profilage. C'est l'outil local par défaut pour *voir ce que fait un entraînement* sans envoyer de données à un service tiers. Côté [[PyTorch]], `torch.utils.tensorboard.SummaryWriter` écrit ces logs nativement ; la plupart des trackers (MLflow, W&B) savent aussi importer ou afficher des logs TensorBoard.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Visualisation rapide et locale** d'un entraînement (scalaires, histogrammes) sans compte ni SaaS.
-- Projet [[PyTorch]] / [[TensorFlow]] / `transformers` : `SummaryWriter` ou le callback intégré suffit.
-- Inspecter le **graphe** d'un modèle, des **images** générées ou un **projecteur d'embeddings**.
-- Profiler l'utilisation GPU/étapes via le plugin Profiler.
+Boîte à outils de visualisation d'entraînement, issue de TensorFlow puis devenue agnostique au
+framework. Le code écrit des *event files* dans un répertoire de logs ; le serveur
+`tensorboard --logdir` les lit et rend des tableaux de bord — courbes de scalaires,
+histogrammes de poids et de gradients, graphe du modèle, images et audio, projecteur
+d'embeddings (PCA, t-SNE), profilage. Ce n'est pas un gestionnaire d'expériences : il affiche
+des fichiers, et ne conserve ni artefacts ni métadonnées d'exécution au-delà des events.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Comparer des centaines de runs**, collaborer en équipe, gérer un **registre de modèles** → [[MLflow]] ou [[Weights & Biases]] (TensorBoard reste centré visualisation, pas gestion d'expériences).
-- Recherche d'hyperparamètres orchestrée (sweeps) → [[Weights & Biases]], [[Optuna]].
-- Suivi ultra-léger de très nombreux runs en self-host → [[Aim]].
+| Prendre si | Écarter si |
+|---|---|
+| Visualiser vite et localement un entraînement, sans compte ni service tiers | Les event files grossissent vite (histogrammes, images) : cadrer la fréquence de log et purger les vieux runs |
+| Projet PyTorch, TensorFlow ou `transformers` : `SummaryWriter` ou le callback intégré suffit | Aucune authentification : ne pas exposer le serveur brut sur Internet, le placer derrière un reverse-proxy |
+| Inspecter le graphe d'un modèle, des images générées, un projecteur d'embeddings | Comparaison d'exécutions limitée : pas de tableau d'hyperparamètres riche |
+| Profiler l'usage GPU et le coût des étapes, via le plugin Profiler | Suivi ultra-léger de très nombreuses exécutions en self-host → [[Aim]] |
+| | Recherche d'hyperparamètres orchestrée → [[Optuna]] |
+| | TensorBoard.dev est fermé : partager suppose d'exposer son propre serveur, ou d'exporter |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit ; `uv add tensorboard`. Serveur web local (`--logdir`), aucun backend à gérer.
-- Cœur Python (UI en TypeScript) ; lit des event files sur disque ou stockage objet.
-- Single-node : sert des logs ; ne stocke pas d'artefacts ni de métadonnées de run au-delà des events.
-- TensorBoard.dev (hébergement public de logs) a été **fermé** : partage = exposer son propre serveur ou exporter.
+- Installation — `uv add tensorboard`
+- Point d'entrée — serveur web `tensorboard --logdir`, alimenté par des event files ; côté PyTorch, `torch.utils.tensorboard.SummaryWriter`
+- Prérequis — un répertoire de logs sur disque ou sur stockage objet
+- Exécution — serveur local mono-nœud : il sert des fichiers, il ne stocke rien d'autre
+- Coût — gratuit, Apache-2.0 ; TensorBoard.dev, l'hébergement public de logs, est fermé
 
-## Pièges
+## Écosystème
 
-- Les **event files** grossissent vite (histogrammes, images) ; cadrer la fréquence de log et purger les vieux runs.
-- Pas d'authentification : ne pas exposer `tensorboard` brut sur Internet, le placer derrière un reverse-proxy.
-- Comparaison de runs **limitée** (pas de tableaux de hyperparamètres riches comme un tracker dédié).
-- Recharge incrémentale parfois capricieuse sur de gros logdir : rafraîchir / relancer si les courbes figent.
-
-## Alternatives
+### Alternatives
 
 - [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
 - [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
 
-Nuance : TensorBoard **visualise** un entraînement (local, gratuit, sans gestion de runs) ; MLflow et W&B sont des **plateformes de tracking** (comparaison de runs, registre, collaboration) qui peuvent d'ailleurs intégrer ses logs.
+## Ressources
 
-## Liens
+- Documentation — https://www.tensorflow.org/tensorboard
+- Dépôt — https://github.com/tensorflow/tensorboard
 
-- [[PyTorch]] — `torch.utils.tensorboard.SummaryWriter` écrit les logs nativement.
-- [[TensorFlow]] — projet d'origine ; callback Keras intégré.
-- [[HuggingFace]] — le `Trainer` logge vers TensorBoard via `report_to`.
-- [[MLflow]] · [[Weights & Biases]] · [[Aim]] — trackers qui en prennent le relais à l'échelle.
-- Doc : https://www.tensorflow.org/tensorboard
+## Voir aussi
+
+- [[Suivi d'expériences]] — le hub du dossier
+- [[PyTorch]] — `torch.utils.tensorboard.SummaryWriter` écrit ses logs nativement
+- [[TensorFlow]] — le projet d'origine ; callback Keras intégré
+- [[HuggingFace]] — le `Trainer` y journalise via `report_to`
+- [[Comparatif - Suivi d'expériences ML]] — ce qui départage les briques du dossier

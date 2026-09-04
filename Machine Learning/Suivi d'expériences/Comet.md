@@ -19,34 +19,42 @@ url_repo:
 
 # Comet
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
 
-Plateforme commerciale couvrant tout le cycle ML : **suivi d'expériences** (paramètres, métriques, artefacts, comparaison de runs), **registre de modèles**, gestion de datasets et panneaux de visualisation personnalisables. Comet a étendu son offre vers l'**observabilité LLM** avec **Opik**, brique open-source de tracing et d'évaluation d'applications génératives (RAG, agents). Cœur de plateforme propriétaire, Opik ouvert et auto-hébergeable.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Suivi d'expériences ML **et** observabilité d'apps LLM dans un même écosystème.
-- Besoin de dashboards personnalisables et de comparaisons de runs partagées.
-- Self-host souhaité côté LLM : Opik se déploie en Docker / Kubernetes.
+Plateforme commerciale couvrant le cycle ML : suivi d'expériences — paramètres, métriques,
+artefacts, comparaison d'exécutions —, registre de modèles, gestion de jeux de données et
+panneaux de visualisation personnalisables. Son extension vers l'observabilité des
+applications génératives passe par **Opik**, brique de tracing et d'évaluation de RAG et
+d'agents, déployable en Docker ou Kubernetes. Le périmètre est à lire avec soin : le cœur
+Comet est fermé, Opik seul est ouvert.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack 100 % open-source pour le tracking ML classique → [[MLflow]], [[ClearML]].
-- Visualisations deep learning de référence → [[Weights & Biases]].
-- Besoin minimal et local → [[Aim]].
+| Prendre si | Écarter si |
+|---|---|
+| Suivi ML et observabilité d'applications LLM dans un même écosystème | Deux périmètres et deux licences : le cœur Comet est propriétaire, seul Opik est ouvert |
+| Panneaux personnalisables et comparaisons d'exécutions partagées | En mode hébergé, les données partent au cloud par défaut |
+| Self-host côté LLM : Opik se déploie en Docker ou en Kubernetes | Tarification à l'usage ou par siège dès qu'on quitte le palier gratuit |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- SaaS managé (gratuit en perso/recherche, payant en équipe) ; déploiement on-prem possible.
-- **Opik** (observabilité LLM) open-source, auto-hébergeable (Docker local, K8s à l'échelle).
-- Plateforme cœur propriétaire ; tarification à l'usage / par sièges.
+- Installation — `uv add comet_ml` ; Opik séparément, en Docker local ou en Kubernetes
+- Point d'entrée — SDK Python et UI web ; Opik pour le tracing des applications LLM
+- Prérequis — un compte côté éditeur pour le service hébergé ; un cluster pour Opik à l'échelle
+- Exécution — service managé, ou déploiement on-prem
+- Coût — gratuit en usage personnel et recherche, payant en équipe, à l'usage ou par siège
 
-## Pièges
+## Écosystème
 
-- Distinguer le **cœur Comet** (propriétaire) d'**Opik** (open-source) — périmètres et licences différents.
-- Données envoyées au cloud par défaut en mode SaaS.
-
-## Alternatives
+### Alternatives
 
 - [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
 - [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
@@ -54,7 +62,12 @@ Plateforme commerciale couvrant tout le cycle ML : **suivi d'expériences** (par
 - [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 
-## Liens
+## Ressources
 
-- Opik (observabilité LLM, open-source) : https://github.com/comet-ml/opik
-- Doc : https://www.comet.com/docs/
+- Documentation — https://www.comet.com/docs/
+- Dépôt — https://github.com/comet-ml/opik
+
+## Voir aussi
+
+- [[Suivi d'expériences]] — le hub du dossier
+- [[Comparatif - Suivi d'expériences ML]] — ce qui départage les briques du dossier

@@ -17,45 +17,55 @@ url_repo: https://github.com/amazon-science/chronos-forecasting
 
 # Chronos
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).
 
-Chronos (Amazon) est un **modèle de fondation pour séries temporelles** : pré-entraîné sur d'immenses corpus de séries hétérogènes, il prévoit une série jamais vue en **zero-shot**, sans entraîner ni régler un modèle par série. La première génération **tokenise** les valeurs — mise à l'échelle puis discrétisation en bins — et entraîne un **seq2seq bâti sur T5**, exactement comme un modèle de langue. *Chronos-Bolt* est une variante plus rapide et plus légère. **Chronos-2** (2025) abandonne la tokenisation discrète pour un **encoder-only multivarié natif** (~120 M params) qui gère par *in-context learning* le forecasting univarié, multivarié et avec covariables. Sortie probabiliste (quantiles) → intervalles de prédiction natifs.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Baseline immédiate** sans pipeline par série : démarrage à froid (peu d'historique), parc de séries hétérogènes.
-- Besoin d'**intervalles probabilistes** sans calibration manuelle.
-- Prévision **multivariée / avec covariables** en zero-shot (Chronos-2).
-- Prototypage rapide d'une prévision « forte par défaut » avant d'investir dans un modèle dédié.
+Pré-entraîné par Amazon sur d'immenses corpus de séries hétérogènes, il prévoit une série
+jamais vue en zero-shot, sans pipeline ni réglage par série. La première génération tokenise
+les valeurs — mise à l'échelle, puis discrétisation en bins — et entraîne un seq2seq bâti sur
+T5, exactement comme un modèle de langue ; Chronos-Bolt en est la variante allégée. Chronos-2
+(2025) abandonne la tokenisation discrète pour un encoder-only multivarié natif (~120 M
+params) qui absorbe covariables et séries liées par *in-context learning*. La sortie est
+probabiliste : les quantiles donnent les intervalles sans calibration.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Une seule série longue et stationnaire où un modèle statistique bien réglé suffit pour bien moins cher → [[statsforecast]], [[ARIMA SARIMA]].
-- Beaucoup de séries à prévoir vite sur CPU, sans GPU → [[statsforecast]].
-- Catalogue de réseaux neuronaux à entraîner / fine-tuner soi-même → [[neuralforecast]].
-- Contraintes fortes de latence / budget GPU, ou domaine très spécifique où un modèle dédié fine-tuné l'emporte.
+| Prendre si | Écarter si |
+|---|---|
+| Baseline immédiate sans pipeline par série : démarrage à froid, parc de séries hétérogènes | Le pari zero-shot ne bat pas toujours un modèle dédié bien réglé : évaluer sur ses propres données avant d'adopter → [[Walk-forward CV]] |
+| Intervalles probabilistes attendus sans calibration manuelle | Les scores de leaderboard sont exposés à la fuite de pré-entraînement : la série de test a pu être vue à l'entraînement |
+| Prévision multivariée ou avec covariables, en zero-shot (Chronos-2) | Beaucoup de séries à prévoir vite sans GPU : le coût d'inférence devient l'obstacle → [[statsforecast]] |
+| Prototypage : une prévision forte par défaut avant d'investir dans un modèle dédié | Catalogue de réseaux à entraîner ou fine-tuner soi-même → [[neuralforecast]] |
+| | Une seule série longue et stationnaire : un modèle statistique bien réglé suffit pour bien moins cher → [[ARIMA SARIMA]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Poids ouverts (Apache-2.0), gratuits, accessibles via [[HuggingFace]] ; `pip install chronos-forecasting`. Rien de managé : self-host.
-- Inférence sur **GPU conseillée** (modèles 100 M+ params) ; mono-machine. Chronos-Bolt allège pour le CPU / l'edge.
-- Intégrable comme modèle dans [[darts]] et dans AutoGluon-TimeSeries.
+- Installation — `uv add chronos-forecasting` ; poids ouverts, distribués via [[HuggingFace]]
+- Point d'entrée — API Python `BaseChronosPipeline.from_pretrained(...)`, puis `predict_quantiles` ; intégrable comme modèle dans darts et AutoGluon-TimeSeries
+- Prérequis — GPU conseillé au-delà de 100 M de paramètres ; Chronos-Bolt allège pour le CPU et l'edge
+- Exécution — inférence mono-machine, rien de managé ; le modèle se charge dans un runtime local
+- Coût — gratuit, poids sous Apache-2.0 ; le coût réel est celui du GPU d'inférence
 
-## Pièges
+## Écosystème
 
-- Le pari zero-shot ne **bat pas toujours** un modèle dédié bien réglé : évaluer sur SES données avant d'adopter.
-- Risque de **fuite de pré-entraînement** (série de test vue à l'entraînement) qui gonfle les scores de leaderboard — juger en [[Walk-forward CV]].
-- Coût d'inférence GPU non négligeable pour de très nombreuses séries.
-
-## Alternatives
+### Alternatives
 
 - [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
 - [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
 
-## Liens
+## Ressources
 
-- [[Foundation models pour séries temporelles]] — le concept dont Chronos est l'un des modèles phares (tokenisation, panorama, évaluation).
-- [[Forecasting framing]] — cadrer le problème (horizon, fuite, covariables) reste indispensable même en zero-shot.
-- [[Walk-forward CV]] — l'évaluation honnête sur ses propres données, face au battage des leaderboards.
-- Voisins statistiques/neuronaux : [[statsforecast]], [[neuralforecast]].
-- Doc / poids : https://github.com/amazon-science/chronos-forecasting
+- Documentation — https://github.com/amazon-science/chronos-forecasting
+
+## Voir aussi
+
+- [[Foundation models pour séries temporelles]] — la notion dont Chronos est l'un des modèles phares
+- [[Forecasting framing]] — cadrer horizon, fuite et covariables reste nécessaire, même en zero-shot
+- [[Comparatif - Forecasting]] — ce qui départage les briques du dossier

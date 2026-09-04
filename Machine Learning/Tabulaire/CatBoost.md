@@ -17,43 +17,57 @@ url_repo: https://github.com/catboost/catboost
 
 # CatBoost
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
 
-Implémentation C++ du [[Gradient Boosting (GBDT)]] par Yandex. Deux partis pris la distinguent : la **gestion native des variables catégorielles** par *ordered target encoding* (encodage par la cible calculé sur un ordre de permutation, qui évite la fuite de cible), et des **arbres symétriques** (oblivious trees : même test partout à un niveau donné), rapides à l'inférence et régularisants. Bon résultat « out of the box », avec peu de réglage.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Jeux tabulaires riches en **variables catégorielles** (haute cardinalité) — ni one-hot ni encodage manuel.
-- Besoin d'un modèle solide **sans tuning lourd** (défauts raisonnables).
-- Inférence rapide recherchée (arbres symétriques) ; entraînement GPU efficace.
-- Interprétabilité : valeurs SHAP intégrées.
+Implémentation du gradient boosting par Yandex, que deux partis pris distinguent. Les
+variables catégorielles sont traitées nativement par *ordered target encoding* : l'encodage
+par la cible est calculé sur un ordre de permutation, ce qui évite la fuite de cible sans
+encodage manuel. Les arbres sont *symétriques* — le même test partout à un niveau donné —, ce
+qui régularise et rend l'inférence rapide. Le résultat par défaut est bon sans réglage lourd ;
+la contrepartie est un entraînement plus lent que LightGBM sur des colonnes purement
+numériques.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Données purement numériques où la vitesse d'entraînement prime → [[LightGBM]].
-- Écosystème distribué Spark / Dask / Ray déjà en place → [[XGBoost]] (intégrations plus matures).
-- Besoin modeste sans dépendance dédiée → `HistGradientBoosting` de [[Scikit-Learn]].
+| Prendre si | Écarter si |
+|---|---|
+| Jeux riches en variables catégorielles, y compris à forte cardinalité : ni one-hot ni encodage manuel | Colonnes purement numériques : plus lent que les autres implémentations du dossier |
+| Modèle solide sans réglage lourd : les défauts sont raisonnables | Colonnes catégorielles non déclarées dans `cat_features` : traitées comme numériques, et l'atout principal est perdu |
+| Inférence rapide recherchée (arbres symétriques), entraînement GPU efficace | Mémoire et temps qui montent avec le nombre de permutations et la cardinalité |
+| Interprétabilité : valeurs SHAP intégrées | Écosystème distribué déjà en place : les intégrations Spark, Dask et Ray y sont moins matures |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), `uv add catboost` ; rien à héberger.
-- Cœur C++ ; CPU multi-thread et **GPU** (entraînement très optimisé). Bindings Python, R, Java.
-- Entraînement distribué possible, mais le terrain de prédilection reste la machine unique (CPU / GPU).
+- Installation — `uv add catboost`
+- Point d'entrée — API Python `CatBoostClassifier` / `CatBoostRegressor` avec `cat_features` ; bindings R et Java
+- Prérequis — aucun : le cœur C++ est précompilé dans les roues
+- Exécution — CPU multi-thread ou GPU sur une machine ; le distribué est possible, mais ce n'est pas son terrain
+- Coût — gratuit, Apache-2.0 ; rien à héberger
 
-## Pièges
+## Écosystème
 
-- Déclarer les colonnes catégorielles (`cat_features`) — sinon traitées comme numériques, on perd l'atout principal.
-- Plus lent que LightGBM sur données purement numériques.
-- Mémoire et temps qui montent avec le nombre de permutations et la cardinalité catégorielle.
-
-## Alternatives
+### Alternatives
 
 - [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 - [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
 - [[Scikit-Learn]] — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-## Liens
+## Ressources
 
-- Concept implémenté : [[Gradient Boosting (GBDT)]] — sur la brique de base [[Arbres de décision]]
-- [[Comparatif - Boosting]] — comparatif des libs de boosting
-- Doc : https://catboost.ai/docs/
+- Documentation — https://catboost.ai/docs/
+- Dépôt — https://github.com/catboost/catboost
+
+## Voir aussi
+
+- [[Gradient Boosting (GBDT)]] — la notion qu'il implémente
+- [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
+- [[Encodage des variables catégorielles]] — la notion que son *ordered target encoding* internalise
+- [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier
