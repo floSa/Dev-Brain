@@ -19,36 +19,43 @@ url_repo: https://github.com/tensorflow/serving
 
 # TensorFlow Serving
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 
-Serveur d'inférence dédié aux modèles **[[TensorFlow]]/Keras** au format `SavedModel`. Cœur **C++** haute performance, conçu pour la production : **API REST (JSON) et gRPC (Protobuf)**, **versionnage** de modèles (chargement/déchargement à chaud, politiques de version), **batching** de requêtes, et chargement de nouveaux modèles sans redémarrer. Brique de déploiement historique de l'écosystème TF, intégrée aux pipelines **TFX**. Mono-framework par nature, mais très éprouvée et toujours activement maintenue.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Servir des modèles **TensorFlow/Keras** (`SavedModel`) en production, avec versionnage et hot-reload.
-- Besoin des **deux protocoles** REST et gRPC, du batching et de métriques de serving standard.
-- Pipeline **TFX** bout-en-bout déjà en place.
-- Recherche de **latence faible** côté serveur pour un parc mono-framework.
+Serveur d'inférence dédié aux modèles TensorFlow/Keras au format `SavedModel`. Cœur C++
+éprouvé, taillé pour servir en continu : **API REST (JSON) et gRPC (Protobuf)**, **versionnage** des modèles
+avec chargement et déchargement à chaud et politiques de version, **batching** des requêtes.
+Un nouveau modèle se charge sans redémarrer le serveur. C'est la brique de déploiement
+historique de l'écosystème TensorFlow, intégrée aux pipelines TFX. Mono-framework par
+construction : il lui faut un `SavedModel`, et hors de TensorFlow il ne sert à rien.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Modèles **non-TensorFlow** (PyTorch, ONNX, scikit-learn…) → [[NVIDIA Triton]] ou [[BentoML]].
-- Logique métier riche autour de l'inférence en Python → [[BentoML]].
-- Orchestration Kubernetes déclarative avec scale-to-zero → [[KServe]].
+| Prendre si | Écarter si |
+|---|---|
+| Servir des modèles TensorFlow/Keras en production, avec versionnage et rechargement à chaud | La signature du `SavedModel` — noms d'entrées et de sorties — doit être exacte, sinon les erreurs d'inférence sont opaques |
+| Besoin des deux protocoles REST et gRPC, du batching et de métriques de serving standard | Image GPU liée à une matrice CUDA/cuDNN précise, comme le reste de l'écosystème TF |
+| Pipeline TFX déjà en place de bout en bout | |
+| Latence serveur faible sur un parc mono-framework | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit ; distribué comme **conteneur** (`tensorflow/serving`) ou binaire.
-- Self-host (CPU/GPU) ; pas d'offre SaaS propre.
-- Scaling distribué via l'orchestrateur (réplicas K8s, souvent piloté par KServe).
+- Installation — conteneur `tensorflow/serving`, ou binaire
+- Point d'entrée — un `SavedModel` déposé dans le répertoire de modèles ; API REST et gRPC
+- Prérequis — un modèle TensorFlow exporté en `SavedModel` ; GPU optionnel
+- Exécution — self-hébergé, CPU ou GPU ; réplicas pilotés par l'orchestrateur
+- Coût — Apache-2.0, aucune offre SaaS propre ; le coût est celui des serveurs
 
-## Pièges
+## Écosystème
 
-- **Mono-framework** : il faut un `SavedModel` TF — pas une option pour un parc hétérogène.
-- La **signature** du SavedModel (noms d'entrées/sorties) doit être correcte, sinon erreurs d'inférence opaques.
-- Image GPU liée à une matrice CUDA/cuDNN précise (comme l'écosystème TF).
-
-## Alternatives
+### Alternatives
 
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
@@ -57,8 +64,13 @@ Serveur d'inférence dédié aux modèles **[[TensorFlow]]/Keras** au format `Sa
 - [[TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+## Ressources
 
-- Sert les modèles de [[TensorFlow]] (équivalent TF de [[TorchServe]]).
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc : https://www.tensorflow.org/tfx/guide/serving
+- Documentation — https://www.tensorflow.org/tfx/guide/serving
+- Dépôt — https://github.com/tensorflow/serving
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[TensorFlow]] — le framework dont il sert les modèles

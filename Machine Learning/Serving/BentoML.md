@@ -19,37 +19,44 @@ url_repo: https://github.com/bentoml/BentoML
 
 # BentoML
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 
-Framework **Python** pour empaqueter un modèle entraîné en service d'inférence. Une classe `Service` décrit les dépendances, le code de pré/post-traitement et les endpoints ; BentoML construit un artefact versionné (le **Bento**) qui contient modèle, code et environnement, prêt à conteneuriser. Agnostique au framework (scikit-learn, PyTorch, transformers, ONNX, modèles custom) et orienté du prototype local au déploiement scalable, avec un volet LLM (serving haut débit, files de jobs, pipelines multi-modèles). L'offre managée **BentoCloud** déploie ces Bentos sans opérer l'infra.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Exposer un modèle **Python** comme API d'inférence sans écrire le serveur HTTP à la main.
-- **Packaging reproductible** : figer modèle + code + dépendances dans un artefact conteneurisable.
-- Pipelines **multi-modèles** ou logique métier autour de l'inférence (pré/post-traitement riche).
-- Aller vite du notebook à un déploiement scalable, éventuellement managé via BentoCloud.
+Empaquette un modèle entraîné en service d'inférence. Une classe `Service` déclare les
+dépendances, le code de pré/post-traitement et les endpoints ; l'outil en construit un
+**Bento**, artefact versionné qui fige modèle, code et environnement, prêt à conteneuriser.
+Agnostique au framework (scikit-learn, PyTorch, transformers, ONNX, modèles custom) et pensé
+du prototype local au cluster, avec un volet LLM — serving haut débit, files de jobs,
+pipelines multi-modèles. Tout s'écrit en Python de bout en bout : c'est ce qui rend la
+logique métier autour de l'inférence libre, et ce qui prive le serveur du batching GPU fin.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Débit/latence maximal sur GPU avec batching dynamique multi-framework → [[NVIDIA Triton]].
-- Standard d'inférence déclaratif déjà sur Kubernetes (CRD, scale-to-zero) → [[KServe]].
-- Serving mono-framework strict sans couche Python → [[TensorFlow Serving]].
+| Prendre si | Écarter si |
+|---|---|
+| Exposer un modèle Python comme API d'inférence sans écrire le serveur HTTP à la main | L'image d'un Bento devient lourde — modèle plus dépendances : le `python` et les exclusions sont à soigner |
+| Figer modèle, code et dépendances dans un artefact conteneurisable | API remaniée en profondeur en 1.2+ : les tutoriels antérieurs ne s'appliquent plus |
+| Pipelines multi-modèles, ou logique métier riche autour de l'inférence | |
+| Aller du notebook au déploiement scalable, éventuellement managé | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), `uv add bentoml`. Serveur local en une commande, build d'un Bento puis image OCI.
-- Self-host : conteneur Bento sur n'importe quel runtime (Docker, Kubernetes).
-- Managé : **BentoCloud** (payant) — déploiement, autoscaling et scale-to-zero sans gérer l'infra.
-- Scaling distribué côté orchestrateur (réplicas K8s / BentoCloud).
+- Installation — `uv add bentoml`
+- Point d'entrée — une classe `Service` en Python ; serveur local en une commande, puis build d'un Bento et image OCI
+- Prérequis — Python ; Docker pour conteneuriser le Bento
+- Exécution — conteneur sur n'importe quel runtime (Docker, Kubernetes) ; réplicas côté orchestrateur, ou BentoCloud
+- Coût — Apache-2.0 pour le serveur ; BentoCloud, l'offre managée avec autoscaling et scale-to-zero, est payante
 
-## Pièges
+## Écosystème
 
-- L'image d'un Bento peut devenir lourde (modèle + dépendances) : soigner le `python` et les exclusions.
-- Le serveur Python n'a pas le batching GPU fin d'un [[NVIDIA Triton]] ; pour la latence GPU pure, combiner les deux (BentoML devant, Triton comme runtime).
-- API remaniée en profondeur en 1.2+ : beaucoup de tutoriels anciens ne s'appliquent plus.
-
-## Alternatives
+### Alternatives
 
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
 - [[KServe]] — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
@@ -58,8 +65,13 @@ Framework **Python** pour empaqueter un modèle entraîné en service d'inféren
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+## Ressources
 
-- Sert des modèles de tout framework : [[PyTorch]], [[Scikit-Learn]], [[HuggingFace]].
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc : https://docs.bentoml.com/
+- Documentation — https://docs.bentoml.com/
+- Dépôt — https://github.com/bentoml/BentoML
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[PyTorch]], [[Scikit-Learn]], [[HuggingFace]] — les frameworks dont il empaquette les modèles

@@ -19,36 +19,43 @@ url_repo: https://github.com/SeldonIO/seldon-core
 
 # Seldon Core
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
 
-Plateforme de serving et d'**orchestration d'inférence** sur **Kubernetes**. Au-delà d'exposer un modèle, elle compose des **graphes d'inférence** multi-étapes (transformers, routeurs, combiners, détecteurs de drift, explainers) déployés comme un seul service. Multi-framework, avec un serveur d'inférence open-source de bas niveau, **MLServer** (protocole V2, compatible KServe). Brique historique du serving ML K8s, **co-créatrice de KServe**. Point de vigilance majeur : depuis le **22 janvier 2024**, Seldon Core (v1 et v2) est passé d'Apache-2.0 à la **Business Source License (BSL 1.1)** — *source-available*, gratuit hors production, payant en production (conversion en Apache-2.0 quatre ans après chaque release).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | source-available | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Pipelines d'inférence complexes** : pré/post-traitement, routage A/B, ensembles, explainers en un graphe.
-- Besoin d'**explicabilité** (Alibi Explain) et de détection de drift/outliers (Alibi Detect) intégrés au serving.
-- Déjà sur Kubernetes, avec une équipe à l'aise pour opérer une plateforme MLOps complète.
-- Acceptation des **termes BSL** (usage non-production gratuit, licence commerciale en production).
+Plateforme de serving et d'**orchestration d'inférence** sur Kubernetes. Au-delà d'exposer un
+modèle, elle compose des **graphes d'inférence** multi-étapes — transformers, routeurs,
+combiners, détecteurs de drift, explainers — déployés comme un seul service. Multi-framework,
+elle s'appuie sur **MLServer**, son serveur d'inférence de bas niveau au protocole V2,
+compatible KServe. Brique historique du serving ML sur Kubernetes, et co-créatrice de KServe.
+Deux générations coexistent, Core v1 et v2/MLServer, aux architectures différentes.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Contrainte stricte **open-source en production** → [[KServe]] (Apache-2.0, CNCF) ou MLServer seul (Apache-2.0).
-- Serveur Python simple sans Kubernetes → [[BentoML]].
-- Latence GPU brute sur un parc multi-framework → [[NVIDIA Triton]].
+| Prendre si | Écarter si |
+|---|---|
+| Pipelines d'inférence complexes : pré/post-traitement, routage A/B, ensembles, explainers en un seul graphe | Usage en production sous contrainte d'open-source strict : la BSL 1.1 impose une licence commerciale, et l'éligibilité se vérifie avant, pas après |
+| Explicabilité (Alibi Explain) et détection de drift ou d'outliers (Alibi Detect) intégrées au serving | Deux générations aux architectures différentes, Core v1 et v2/MLServer : ne pas mélanger les documentations |
+| Déjà sur Kubernetes, avec une équipe à l'aise pour opérer une plateforme MLOps complète | Surface opérationnelle large : Kubernetes, réseau et observabilité restent à câbler |
+| Termes BSL acceptés : gratuit hors production, licence commerciale en production | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Source-available** (BSL 1.1) depuis 2024 : gratuit en non-production, **licence commerciale requise en production**. MLServer, lui, reste open-source (Apache-2.0).
-- Self-host sur Kubernetes (CRD, opérateurs Go) ; offre entreprise commerciale au-dessus.
-- Scaling distribué par conception (réplicas K8s, graphes répartis).
+- Installation — opérateurs et CRD posés sur un cluster Kubernetes, via Helm
+- Point d'entrée — un graphe d'inférence déclaré en CRD ; MLServer comme serveur de bas niveau, protocole V2
+- Prérequis — un cluster Kubernetes déjà opéré, et l'éligibilité aux termes BSL vérifiée avant toute mise en production
+- Exécution — self-hébergé sur Kubernetes ; réplicas et graphes répartis sur le cluster
+- Coût — BSL 1.1 depuis le 22 janvier 2024 : gratuit hors production, licence commerciale en production, conversion en Apache-2.0 quatre ans après chaque release. MLServer seul reste Apache-2.0
 
-## Pièges
+## Écosystème
 
-- **Changement de licence** : vérifier l'éligibilité BSL avant tout usage en production — c'est le critère décisif vs [[KServe]].
-- Deux générations (Core v1 vs v2/MLServer) aux architectures différentes : ne pas mélanger la doc.
-- Plateforme riche = surface opérationnelle large (K8s, réseau, observabilité à câbler).
-
-## Alternatives
+### Alternatives
 
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
@@ -57,9 +64,13 @@ Plateforme de serving et d'**orchestration d'inférence** sur **Kubernetes**. Au
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+## Ressources
 
-- Concurrent direct et co-fondé : [[KServe]] (protocole d'inférence V2 partagé).
-- Tourne sur Kubernetes ([[Docker]] pour les images).
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc : https://docs.seldon.ai/
+- Documentation — https://docs.seldon.ai/
+- Dépôt — https://github.com/SeldonIO/seldon-core
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[Docker]] — les images de modèles déployées sur le cluster

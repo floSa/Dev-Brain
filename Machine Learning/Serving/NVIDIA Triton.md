@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[BentoML]]", "[[KServe]]", "[[Seldon Core]]", "[[TorchServe]]", "[[TensorFlow Serving]]", "[[Ray Serve]]"]
-complements: []
+complements: ["[[TensorRT]]", "[[ONNX Runtime]]"]
 tags: [model-serving, inference, gpu]
 url_docs: https://docs.nvidia.com/deeplearning/triton-inference-server/
 url_repo: https://github.com/triton-inference-server/server
@@ -19,37 +19,44 @@ url_repo: https://github.com/triton-inference-server/server
 
 # NVIDIA Triton
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
 
-Serveur d'inférence haute performance de NVIDIA, pensé pour servir **plusieurs frameworks** derrière une seule API (TensorRT, PyTorch/LibTorch, ONNX Runtime, TensorFlow, OpenVINO, Python, FIL pour les arbres). Cœur **C++** optimisé pour le GPU : **batching dynamique** (agrège les requêtes pour saturer le GPU), **exécution concurrente** de plusieurs modèles/instances, ensembles de modèles, métriques Prometheus. Depuis mars 2025, intégré à la plateforme **NVIDIA Dynamo** (« Dynamo-Triton »), mais le cœur reste le même projet open-source avec des releases conteneur mensuelles sur NGC.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Débit et latence GPU** maximaux en production (batching dynamique, concurrence d'instances).
-- Parc de modèles **hétérogène** : servir TensorRT, PyTorch, ONNX et TF derrière un seul serveur.
-- Pipelines d'inférence par **ensembles** (chaînage de modèles côté serveur).
-- Stack NVIDIA (TensorRT, GPU data center) où l'optimisation matérielle compte.
+Serveur d'inférence de NVIDIA, pensé pour servir **plusieurs frameworks derrière une seule
+API** : TensorRT, PyTorch/LibTorch, ONNX Runtime, TensorFlow, OpenVINO, Python, et FIL pour
+les arbres. Cœur C++ optimisé pour le GPU — **batching dynamique** qui agrège les requêtes
+pour saturer la carte, **exécution concurrente** de plusieurs modèles ou instances, ensembles
+de modèles chaînés côté serveur, métriques Prometheus. Depuis mars 2025 il est intégré à la
+plateforme NVIDIA Dynamo (« Dynamo-Triton »), mais le cœur reste le même projet, avec des
+releases conteneur mensuelles sur NGC.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pas de GPU, besoin Python simple et packaging rapide → [[BentoML]].
-- Orchestration K8s déclarative avec scale-to-zero → [[KServe]] (qui peut d'ailleurs utiliser Triton comme runtime).
-- Un seul modèle TensorFlow, sans le poids de Triton → [[TensorFlow Serving]].
+| Prendre si | Écarter si |
+|---|---|
+| Débit et latence GPU maximaux en production : batching dynamique, concurrence d'instances | Le `model_repository` impose une arborescence et un `config.pbtxt` stricts — mal formé, il échoue en silence |
+| Parc de modèles hétérogène : TensorRT, PyTorch, ONNX et TF derrière un seul serveur | Image GPU volumineuse, liée à une matrice CUDA/driver précise |
+| Pipelines d'inférence par ensembles, chaînés côté serveur | L'optimisation TensorRT en amont n'est pas triviale : opérateurs non supportés, calibration → [[TensorRT]] |
+| Stack NVIDIA où l'optimisation matérielle compte | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (BSD-3-Clause), gratuit ; distribué surtout comme **conteneur NGC** (`nvcr.io/nvidia/tritonserver`), releases mensuelles.
-- Self-host sur serveur GPU (data center, cloud) ; pas d'offre SaaS directe.
-- Support entreprise et packaging via **NVIDIA AI Enterprise** (contrat de support, optionnel).
-- Scaling distribué via l'orchestrateur (réplicas K8s, souvent piloté par KServe).
+- Installation — conteneur NGC `nvcr.io/nvidia/tritonserver`, releases mensuelles
+- Point d'entrée — un `model_repository` sur disque et son `config.pbtxt` ; API HTTP/REST et gRPC
+- Prérequis — GPU NVIDIA et une paire CUDA/driver compatible avec l'image
+- Exécution — self-hébergé sur serveur GPU (data center, cloud) ; réplicas pilotés par l'orchestrateur, souvent KServe
+- Coût — BSD-3-Clause ; support et packaging par NVIDIA AI Enterprise, optionnels et payants. Le coût réel est le parc GPU
 
-## Pièges
+## Écosystème
 
-- Conversion/optimisation **TensorRT** parfois délicate (opérateurs non supportés, calibration) — gain réel mais setup non trivial.
-- Le **model repository** impose une arborescence et un `config.pbtxt` stricts : erreurs silencieuses si mal formé.
-- Image GPU volumineuse ; versions liées à une matrice CUDA/driver précise.
-
-## Alternatives
+### Alternatives
 
 - [[BentoML]] — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - [[KServe]] — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
@@ -58,9 +65,18 @@ Serveur d'inférence haute performance de NVIDIA, pensé pour servir **plusieurs
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-## Liens
+### Compléments
 
-- Runtimes servis : [[PyTorch]], [[TensorFlow]] (et ONNX, TensorRT).
-- Souvent déployé via [[KServe]] comme runtime d'inférence sur Kubernetes.
-- [[Comparatif - Serving de modèles]] — comparatif de la catégorie
-- Doc : https://docs.nvidia.com/deeplearning/triton-inference-server/
+- [[TensorRT]] — SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM. — le backend qui exécute les moteurs compilés servis par Triton
+- [[ONNX Runtime]] — Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge. — le backend qui exécute les modèles exportés en ONNX
+
+## Ressources
+
+- Documentation — https://docs.nvidia.com/deeplearning/triton-inference-server/
+- Dépôt — https://github.com/triton-inference-server/server
+
+## Voir aussi
+
+- [[Déploiement de modèles]] — la notion du dossier
+- [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[PyTorch]], [[TensorFlow]] — deux des frameworks dont il exécute les modèles
