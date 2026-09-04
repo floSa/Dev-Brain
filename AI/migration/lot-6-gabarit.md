@@ -248,3 +248,41 @@ ses remontées** au lieu d'aller éditer la fiche du voisin. C'est l'intégratio
 
 Ce découpage suit les **dossiers**, pas un compteur : c'est ce qui garantit qu'aucune
 fiche n'appartient à deux conversations.
+
+---
+
+## Trois règles nées des lots 1 à 5 — arrêtées le 2026-09-06
+
+### 1. Un wikilink dans une cellule de tableau est NU
+
+`[[Triton]]`, jamais `[[NVIDIA Triton|Triton]]`. Un wikilink à alias dans une cellule
+coupe la ligne du tableau ; l'échapper répare le rendu Obsidian et fait **échouer
+`check_brain` en violation dure** (« lien mort »). Mesuré par le lot 4, qui a vérifié
+sur la vraie expression régulière. Les deux formes cassent, la nue est la seule qui
+passe.
+
+### 2. Où va une puce « besoin -> [[concurrent]] » : ça dépend du comparatif
+
+Les cinq premiers lots l'ont traitée de trois façons, et chacun avait raison **dans son
+cas**. La règle qui les réconcilie :
+
+- **La brique est membre d'une vue `.base`** → la puce vit dans le comparatif, et la
+  cellule `Écarter si` de la fiche ne porte que des **bornes dures de la brique seule**.
+  C'est le cas du pilote et des lots 1, 2 et 5.
+- **La brique n'est membre d'AUCUNE vue** → la puce **reste** en `Écarter si`, avec son
+  wikilink. L'écarter la supprimerait. C'est le cas des lots 3 et 4 : un dossier peut
+  n'avoir aucun comparatif (`Apprentissage profond/`, 8 briques), et une vue filtrant par
+  tag rate des briques de son propre dossier (Kornia, timm, torchvision, hdbscan,
+  Featuretools, category_encoders, imbalanced-learn).
+
+Vérifier l'appartenance, ne pas la supposer : `AI/scripts/mesure_membres_bases.py` la
+donne. La conversation d'intégration normalise ce qui a divergé.
+
+### 3. `complements:` n'est pas « tout ce avec quoi ça s'intègre »
+
+Un couple ne se pose que si la fiche **énonce l'appariement comme une recommandation**,
+et il s'écrit **dans les deux sens**. « MLflow s'intègre à PyTorch, Scikit-Learn,
+XGBoost, Optuna » n'ouvre aucun couple : sinon les sept trackers du lot 5 en ouvrent
+une quinzaine et le champ devient du bruit. Une moitié de couple dont la cible est hors
+périmètre se pose de son côté et se **signale dans les remontées** ; l'intégration ferme
+l'autre moitié.
