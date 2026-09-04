@@ -17,53 +17,53 @@ url_repo: https://github.com/TransformerLensOrg/TransformerLens
 
 # TransformerLens
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
 
-L'outil de référence de l'[[Interprétabilité mécaniste|interprétabilité mécaniste]], créé par Neel Nanda et aujourd'hui maintenu par Bryce Meyer et Jonah Larson. La quasi-totalité des résultats publiés du domaine sont sortis de cette bibliothèque.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-Sa valeur n'est pas d'exposer des activations — n'importe quel hook PyTorch le fait — mais de **réécrire les poids en notation canonique**. Là où HuggingFace fusionne les têtes d'attention dans une seule matrice pour l'efficacité, TransformerLens les **sépare** et donne accès aux `W_Q`, `W_K`, `W_V`, `W_O` de chaque tête individuellement, ainsi qu'au flux résiduel décomposé par composant.
+## Définition
 
-C'est ce qui rend le raisonnement en circuits praticable : on peut enfin poser « que fait la tête 5 de la couche 3 » et obtenir une réponse, plutôt que de démêler un tenseur fusionné.
+L'outil de référence de l'[[Interprétabilité mécaniste|interprétabilité mécaniste]], créé par Neel Nanda, aujourd'hui maintenu par Bryce Meyer et Jonah Larson : la quasi-totalité des résultats publiés du domaine en sont sortis. Sa valeur n'est pas d'exposer des activations — n'importe quel hook PyTorch le fait — mais de **réécrire les poids en notation canonique**. Là où HuggingFace fusionne les têtes d'attention dans une seule matrice pour l'efficacité, TransformerLens les **sépare** et donne accès aux `W_Q`, `W_K`, `W_V`, `W_O` de chaque tête, ainsi qu'au flux résiduel décomposé par composant : c'est ce qui rend le raisonnement en circuits praticable, plutôt que de démêler un tenseur fusionné. Les poids sont donc **retraités**, pas ceux de HuggingFace tels quels — l'intérêt et le risque à la fois, les valeurs numériques pouvant différer légèrement. Le coût dominant est la mémoire : `run_with_cache` conserve tout, et la saturation arrive vite si l'on ne met pas en cache que les hooks nécessaires.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- **Analyse de circuits** : identifier ce que fait un composant, tracer un mécanisme (induction heads, circuit IOI). C'est son terrain, et il n'a pas d'égal dessus.
-- **Activation patching / ablation** : le système de hooks est fait pour intervenir en cours de passe.
-- Raisonner en **têtes d'attention séparées** ou en flux résiduel décomposé — la notation canonique est l'argument décisif.
-- Modèles GPT-style de taille petite à moyenne (GPT-2, Pythia, Llama…) : plus de 9 000 modèles portés, 50+ familles d'architectures.
-- Reproduire un résultat publié du domaine — l'écosystème et les notebooks sont écrits pour elle.
+| Prendre si | Écarter si |
+|---|---|
+| Analyse de circuits : identifier ce que fait un composant, tracer un mécanisme (induction heads, circuit IOI) | Modèle trop gros pour la machine : elle charge tout localement → [[nnsight]] et son exécution distante |
+| Activation patching et ablation : le système de hooks est fait pour intervenir en cours de passe | Entraîner ou analyser des **SAE** : la partie a été sortie du projet à la v2 → [[SAELens]] (`HookedSAETransformer`) |
+| Raisonner en têtes d'attention séparées ou en flux résiduel décomposé — la notation canonique est l'argument décisif | Simple attribution : hors sujet → [[Captum]] ou [[interpreto]] |
+| Modèles GPT-style de taille petite à moyenne : plus de 9 000 modèles portés, 50+ familles d'architectures | Production : outil de recherche, coûteux en mémoire puisqu'il conserve les activations |
+| Reproduire un résultat publié du domaine — l'écosystème et les notebooks sont écrits pour elle | Architecture exotique non portée : le passage à la notation canonique se fait modèle par modèle |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- **Modèle trop gros pour la machine** : elle charge tout localement. Pour intervenir sur un très gros modèle sans l'infrastructure, [[nnsight]] et son exécution distante.
-- **Simple attribution** : hors sujet. [[Captum]] ou [[interpreto]].
-- **Entraîner ou analyser des SAE** : depuis la v2, cette partie a été **sortie** de TransformerLens et déplacée vers [[SAELens]] (`HookedSAETransformer`). Ne pas la chercher ici.
-- **Production** : outil de recherche, coûteux en mémoire (elle conserve les activations).
-- **Architecture exotique non portée** : le portage vers la notation canonique est fait modèle par modèle.
+- Installation — `uv add transformer_lens` ; la **v3 a changé l'interface**, `TransformerBridge` étant le point d'entrée et `HookedTransformer` déprécié bien que disponible — beaucoup de notebooks en ligne visent encore l'ancienne API, épingler la version
+- Point d'entrée — import Python : charger un modèle porté, puis `run_with_cache` et les hooks
+- Prérequis — `torch`, `transformers`, `einops` ; l'essentiel du domaine se fait sur GPT-2 small, qui tourne sur un GPU grand public voire en CPU
+- Exécution — single-node, entièrement local
+- Coût — gratuit, MIT ; le coût réel est la **mémoire**, l'analyse conservant les activations de toutes les couches
 
-## Déploiement & coût
+## Écosystème
 
-- `pip install transformer_lens` — bibliothèque Python. Gratuit (MIT). Dépendances : `torch`, `transformers`, `einops`.
-- Exécution **single-node**. Le coût dominant est la **mémoire** : conserver les activations de toutes les couches pour analyse multiplie l'empreinte par rapport à une inférence ordinaire.
-- Pensée pour le chercheur indépendant : l'essentiel du domaine se fait sur GPT-2 small, qui tourne sur un GPU grand public — voire en CPU.
-
-## Pièges
-
-- **La v3 a changé l'interface** : `TransformerBridge` est désormais le point d'entrée, `HookedTransformer` est déprécié tout en restant disponible. Beaucoup de tutoriels et notebooks en ligne visent encore l'ancienne API. Épingler la version.
-- **Les SAE ne sont plus ici** : `HookedSAETransformer` a migré vers [[SAELens]] à la v2. Source de confusion fréquente dans la documentation ancienne.
-- **Mémoire** : `run_with_cache` garde tout. Sur un modèle moyen et un batch un peu large, la saturation arrive vite. Ne mettre en cache que les hooks nécessaires.
-- **Les poids sont retraités**, pas ceux de HuggingFace tels quels. C'est l'intérêt (notation canonique) et le risque : les valeurs numériques peuvent différer légèrement. La v3 préserve mieux les poids bruts.
-- **Le piège méthodologique n'est pas dans l'outil** : l'ablation à zéro sort le modèle de sa distribution et fabrique des artefacts. Préférer l'ablation à la moyenne ([[Interprétabilité mécaniste]]).
-
-## Alternatives
+### Alternatives
 
 - [[nnsight]] — Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
 - [[SAELens]] — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 
-## Liens
+## Ressources
 
-- [[Interprétabilité mécaniste]] — le concept parent : circuits, patching, ablation, steering.
-- [[Superposition]] — l'obstacle que l'analyse par composant rencontre.
-- [[Sparse autoencoders]] — le démêlage, désormais confié à SAELens.
-- [[Transformer architectures]] / [[Self-attention]] — l'objet d'étude, et la structure que la notation canonique rend lisible.
-- [[PyTorch]] / [[HuggingFace]] — le socle requis.
+- Documentation — https://transformerlensorg.github.io/TransformerLens/
+- Dépôt — https://github.com/TransformerLensOrg/TransformerLens
+
+## Voir aussi
+
+- [[Interprétabilité mécaniste]] — le concept parent : circuits, patching, ablation, steering ; et pourquoi l'ablation à zéro fabrique des artefacts
+- [[Superposition]] — l'obstacle que l'analyse par composant rencontre
+- [[Sparse autoencoders]] — le démêlage, désormais confié à un outil dédié
+- [[Transformer architectures]] · [[Self-attention]] — l'objet d'étude, et la structure que la notation canonique rend lisible
+- [[Comparatif - Explicabilité]] — ce qui départage les outils du dossier
+- [[HuggingFace]] — la source des poids, avant retraitement

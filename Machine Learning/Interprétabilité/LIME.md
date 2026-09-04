@@ -17,43 +17,48 @@ url_repo: https://github.com/marcotcr/lime
 
 # LIME
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
 
-**L**ocal **I**nterpretable **M**odel-agnostic **E**xplanations : explique **une** prédiction d'une boîte noire en l'approximant **localement** par un modèle simple (linéaire). Concrètement, LIME **perturbe** l'entrée autour du point, observe les sorties du modèle, et ajuste un surrogate pondéré par la proximité. Générique : tabulaire, **texte** (mots saillants) et **image** (super-pixels). Une porte d'entrée légère vers l'[[Explicabilité des modèles]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Explication **locale** rapide de n'importe quel classifieur, sans hypothèse sur le modèle.
-- **Texte / image** : surligner les mots ou régions qui ont fait pencher la décision.
-- Quand les méthodes exactes de [[SHAP]] ne s'appliquent pas au modèle.
+*Local Interpretable Model-agnostic Explanations* : expliquer **une** prédiction d'une boîte noire en l'approximant **localement** par un modèle simple. LIME perturbe l'entrée autour du point, observe les sorties du modèle, puis ajuste un surrogate linéaire pondéré par la proximité — d'où sa généricité (tabulaire, **texte** avec les mots saillants, **image** avec les super-pixels) et sa légèreté. Les deux limites sont dans la méthode elle-même : les perturbations étant aléatoires, deux exécutions sur le même point donnent des explications **différentes** — il faut fixer la graine et augmenter l'échantillon ; et la largeur du noyau, comme la taille du voisinage, sont des choix arbitraires qui pèsent fortement sur le résultat. La fidélité obtenue est locale, et ne dit rien du comportement global. Le projet est par ailleurs **à l'arrêt en amont** : le code fonctionne, mais rien n'évoluera et rien ne sera corrigé.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin de **cohérence** et d'agrégation local→global → [[SHAP]] (valeurs de Shapley).
-- Modèle à **arbres** → TreeSHAP exact et rapide ([[SHAP]]) plutôt qu'un surrogate approximatif.
-- **Stabilité** critique → les explications LIME varient d'un tirage à l'autre.
+| Prendre si | Écarter si |
+|---|---|
+| Explication locale rapide de n'importe quel classifieur, sans hypothèse sur le modèle | Besoin de cohérence et d'agrégation du local vers le global → [[SHAP]] et ses valeurs de Shapley |
+| Texte ou image : surligner les mots ou les régions qui ont fait pencher la décision | Modèle à arbres : TreeSHAP est exact et rapide, un surrogate approximatif n'a pas de raison d'être → [[SHAP]] |
+| Les méthodes exactes ne s'appliquent pas au modèle sous la main | Stabilité critique : les explications varient d'un tirage à l'autre |
+| | Modèle de langage HuggingFace, avec évaluation des explications → [[interpreto]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (**BSD-2-Clause**), gratuite ; `uv add lime`.
-- **Single-node, en mémoire** ; coût = nombre de perturbations × inférences du modèle.
-- Aucune infra.
+- Installation — `uv add lime` (version 0.2.0.1, dernière release en juin 2020)
+- Point d'entrée — import Python : un explainer par type d'entrée (`LimeTabularExplainer`, `LimeTextExplainer`, `LimeImageExplainer`)
+- Prérequis — aucun au-delà du modèle ; fixer la graine pour des explications reproductibles
+- Exécution — single-node, en mémoire ; le coût est le nombre de perturbations multiplié par les inférences du modèle
+- Coût — gratuit, BSD-2-Clause ; aucune infrastructure, mais aucune maintenance amont non plus
 
-## Pièges
+## Écosystème
 
-- **Instabilité** : perturbations aléatoires → explications différentes pour le même point ; fixer la graine, augmenter l'échantillon.
-- **Voisinage arbitraire** : largeur de noyau et nombre d'échantillons influencent fortement le résultat.
-- **Fidélité locale seulement** : ne dit rien du comportement global du modèle.
-- Projet **à l'arrêt en amont** : aucun commit depuis juillet 2021, aucune release depuis juin 2020 (`lime 0.2.0.1`). Le code fonctionne encore, mais rien n'évoluera et rien ne sera corrigé — préférer [[SHAP]], plus vivant et mieux fondé.
-
-## Alternatives
+### Alternatives
 
 - [[SHAP]] — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
 - [[interpreto]] — Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
 
-## Liens
+## Ressources
 
-- [[Explicabilité des modèles]] — le cadre qu'il outille (surrogate local).
-- [[SHAP]] — l'alternative cohérente et fondée, à préférer quand elle s'applique.
-- [[Comparatif - Explicabilité|Comparatif — Explicabilité]]
-- Doc : https://github.com/marcotcr/lime
+- Documentation — https://github.com/marcotcr/lime
+- Dépôt — https://github.com/marcotcr/lime
+
+## Voir aussi
+
+- [[Explicabilité des modèles]] — le cadre qu'il outille : le surrogate local, et ses limites
+- [[Comparatif - Explicabilité|Comparatif — Explicabilité]] — ce qui départage les outils du dossier
