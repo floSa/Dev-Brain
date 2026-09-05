@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Plateforme de développement d'API, et non simple client de requêtes : on compose et envoie
+Environnement complet de développement d'API, et non simple client de requêtes : on compose et envoie
 du HTTP, REST, GraphQL et gRPC, on range en collections, on gère des environnements de
 variables, on écrit des tests en JavaScript, puis on publie de la documentation, on monte
 des mocks et on branche des monitors. Tout cela est adossé à son **cloud** par défaut :

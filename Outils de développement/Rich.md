@@ -34,7 +34,7 @@ interroge les capacités du terminal et dégrade proprement quand elles manquent
 parse aucune commande et ne lit aucune entrée : il écrit, et c'est tout — ce qui explique
 qu'il serve de couche d'affichage à d'autres outils, pip et Typer compris. Créé par
 Will McGugan, il est aussi le socle du framework TUI Textual ; la société Textualize a
-fermé en mai 2025, le projet reste maintenu en open-source par une communauté plus
+fermé en mai 2025, le projet reste maintenu par Will McGugan et une communauté plus
 restreinte.
 
 ## Prendre si / Écarter si

@@ -29,8 +29,8 @@ url_repo: https://github.com/hydra-ecosystem/hydra
 
 Framework de configuration composable, créé en 2019 par Omry Yadan chez Facebook AI
 Research, passé le 13 août 2026 sous l'organisation communautaire **Hydra Ecosystem** —
-dépôt migré avec son historique, ses issues et ses PR, licence MIT inchangée : ni fork, ni
-abandon, un simple passage à une gouvernance indépendante. Sa marque : **composer**
+dépôt migré avec son historique, ses issues et ses PR : ni fork, ni abandon, un simple
+passage à une gouvernance indépendante. Sa marque : **composer**
 dynamiquement une configuration hiérarchique à partir de groupes de fichiers, puis la
 surcharger en ligne de commande. Bâti sur **OmegaConf** pour la fusion, les interpolations
 et le typage structuré. Le mode `--multirun` rejoue la même tâche sur un balayage de

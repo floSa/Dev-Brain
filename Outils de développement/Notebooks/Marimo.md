@@ -27,43 +27,46 @@ url_repo: https://github.com/marimo-team/marimo
 | Application Python | open-source | self-hébergé · mono-nœud | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Notebook **réactif** nouvelle génération : Marimo lit le graphe de dépendances entre cellules et **réexécute automatiquement** celles qui dépendent d'une variable modifiée. Conséquence directe — **pas d'état caché** : l'ordre d'exécution ne peut plus diverger de l'ordre du code, le défaut qui mine la reproductibilité de Jupyter. Le notebook est **stocké en `.py` pur** (pas de JSON, pas de pairing à gérer comme avec [[jupytext]]) : versionnable, lintable, importable et exécutable comme un script. Le même fichier se lance en éditeur, se déploie en **application web** interactive (sliders, tables, plots) ou s'exécute en batch. Projet affilié NumFOCUS.
+Notebook **réactif** : Marimo lit le graphe de dépendances entre cellules et réexécute
+automatiquement celles qui dépendent d'une variable modifiée. L'ordre d'exécution ne peut
+donc plus diverger de l'ordre du code, et l'état caché — le défaut qui mine la
+reproductibilité de Jupyter — devient impossible. La contrepartie est une contrainte de
+modèle : une cellule ne peut pas redéfinir une variable déclarée dans une autre. Le notebook
+est stocké en `.py` pur, sans JSON ni appariement à tenir : versionnable, lintable,
+importable et exécutable comme un script. Le même fichier s'ouvre en éditeur, se sert en
+application web interactive ou s'exécute en batch. Projet affilié NumFOCUS.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Vouloir un environnement notebook **reproductible par construction**, sans discipline manuelle de *Restart & Run All*.
-- Construire une **data-app** interactive en Python pur depuis le même fichier que l'analyse (alternative à Streamlit).
-- Versionner des notebooks en git nativement, sans outil de pairing.
-- Exécuter le notebook comme script paramétrable (`marimo run`, CLI) ou l'exporter.
+| Prendre si | Écarter si |
+|---|---|
+| Environnement notebook reproductible par construction, sans discipline manuelle de *Restart & Run All* | Écosystème Jupyter en place qu'on veut garder, en n'ajoutant que le versionnage propre → [[jupytext]] |
+| Construire une data-app interactive en Python pur depuis le fichier même de l'analyse | Exécution paramétrée d'un `.ipynb` existant en CI → [[papermill]] |
+| Versionner des notebooks dans git nativement, sans outil d'appariement | Publication documentaire multi-format mise en page → [[Quarto]] |
+| Exécuter le notebook en script paramétrable (`marimo run`) ou l'exporter | Dépendance à des extensions ou widgets Jupyter non portés : l'écosystème est plus jeune, et l'export `.ipynb` n'est pas un drop-in de l'API notebook |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Écosystème Jupyter déjà en place qu'on veut garder, en ajoutant seulement le versionnage propre → [[jupytext]].
-- Dépendance forte à des extensions/widgets de l'écosystème Jupyter classique non portés sous Marimo.
-- Simple exécution paramétrée d'un notebook `.ipynb` existant en CI → [[papermill]].
-- Publication documentaire multi-format mise en page → [[Quarto]].
+- Installation — `uv add marimo`
+- Point d'entrée — `marimo edit` pour l'éditeur, `marimo run` pour servir l'application ; le fichier édité est un `.py`
+- Prérequis — Python ; du code écrit pour un flux séquentiel impératif demande une réorganisation avant de passer au modèle réactif
+- Exécution — process Python (ASGI) pour l'application servie, ou export WASM pour tourner dans le navigateur sans serveur
+- Coût — gratuit sous licence Apache 2.0
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque Python (`uv add marimo`) ; `marimo edit` pour l'éditeur, `marimo run` pour servir l'app. Apache 2.0, gratuit, single-node.
-- Déploiement app : process Python (uvicorn/ASGI sous le capot) ou export WASM pour exécuter dans le navigateur sans serveur.
-- Coût nul côté licence ; l'app servie suit la taille du process Python.
-
-## Pièges
-
-- Modèle mental réactif différent de Jupyter : une cellule ne peut pas **redéfinir** une variable d'une autre cellule (contrainte qui garantit justement l'absence d'état caché).
-- Pas de cellules « out of order » : du code conçu pour un flux séquentiel impératif peut demander une réorganisation.
-- Écosystème plus jeune que Jupyter : moins d'extensions tierces, intégrations en cours de maturation.
-- L'export en `.ipynb` existe mais Marimo n'est pas un drop-in de l'API notebook Jupyter.
-
-## Alternatives
+### Alternatives
 
 - [[jupytext]] — Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.
 
-## Liens
+## Ressources
 
-- [[Notebooks-as-code]] — Marimo pousse le principe à l'extrême : `.py` pur, état caché impossible.
-- [[jupytext]] — l'autre voie (pairing) pour le même objectif de versionnage propre.
-- Doc : https://docs.marimo.io/
+- Documentation — https://docs.marimo.io/
+- Dépôt — https://github.com/marimo-team/marimo
+
+## Voir aussi
+
+- [[Notebooks]] — le hub du dossier
+- [[Notebooks-as-code]] — la notion du dossier, que Marimo pousse à l'extrême
