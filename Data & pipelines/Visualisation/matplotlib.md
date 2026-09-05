@@ -17,43 +17,55 @@ url_repo: https://github.com/matplotlib/matplotlib
 
 # matplotlib
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.
 
-Bibliothèque **fondatrice** de la visualisation Python. Deux interfaces : `pyplot` (style MATLAB, *stateful*, rapide à écrire) et l'API **orientée objet** (`Figure`/`Axes`, contrôle fin et reproductible). Rendu **statique** par défaut vers PNG/SVG/PDF via des backends (Agg en C++), plus des backends interactifs (Qt, Tk, notebook). Sa raison d'être : un contrôle **total** sur chaque élément du graphique. Quasi tout l'écosystème viz s'appuie dessus — [[seaborn]], le `.plot` de pandas, le rendu statique de nombreuses libs.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Graphiques *publication-ready* : figures composées, axes multiples, annotations, export vectoriel.
-- Besoin de **contrôle au pixel** sur chaque composant (ticks, légendes, colorbars).
-- Sortie statique pour rapports PDF/LaTeX, articles, slides.
-- Socle d'une lib maison : produire des figures par programme sans dépendance web.
+Bibliothèque fondatrice de la visualisation Python. Deux interfaces cohabitent : `pyplot`,
+de style MATLAB, *stateful* et rapide à écrire, et l'API **orientée objet**
+(`Figure` / `Axes`), qui seule donne du code reproductible — l'état global de `pyplot`, la
+« figure courante », surprend dès qu'un script boucle ou s'allonge. Le rendu est **statique**
+par défaut vers PNG, SVG et PDF via des backends (Agg, écrit en C++), avec des backends
+interactifs Qt, Tk ou notebook. Sa raison d'être est le contrôle **total** de chaque élément
+du graphique, ce qui explique sa verbosité. C'est le socle de presque tout l'écosystème :
+[[seaborn]], le `.plot` de [[pandas]], le rendu statique de bien d'autres bibliothèques.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Graphiques statistiques courants vite faits → [[seaborn]] (mêmes figures en une ligne).
-- Interactivité web (zoom, survol, dashboards) → [[plotly]], [[bokeh]] ou [[altair]].
-- API verbeuse pour de l'exploratoire rapide → une surcouche haut niveau fait gagner du temps.
+| Prendre si | Écarter si |
+|---|---|
+| Figures *publication-ready* : axes multiples, annotations, composition, export vectoriel | Deux API mélangées, `pyplot` *stateful* contre l'API objet : le code durable impose de choisir l'API objet |
+| Contrôle **au pixel** de chaque composant — ticks, légendes, colorbars | L'état global de `pyplot` produit des surprises en script long ou en boucle |
+| Sortie statique pour rapport PDF ou LaTeX, article, slides | Verbeux même pour des graphes simples — c'est le coût du contrôle total |
+| Servir de socle à une bibliothèque maison : produire des figures par programme, sans dépendance web | En génération massive, les figures doivent être fermées (`plt.close`) sous peine de fuite mémoire |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add matplotlib`) ; rien à héberger. Licence Matplotlib (style BSD/PSF), gratuit.
-- **Single-node**, rendu local ; les extensions critiques (Agg) sont en C++.
-- Sortie image (raster ou vectoriel) ou fenêtre interactive selon le backend choisi.
+- Installation — `uv add matplotlib`
+- Point d'entrée — import Python, `import matplotlib.pyplot as plt` ; API objet via `plt.subplots()`
+- Prérequis — Python ; un backend interactif (Qt, Tk) seulement si l'on veut une fenêtre
+- Exécution — dans le process appelant, mono-nœud ; rendu local, les extensions critiques sont en C++
+- Coût — gratuit, licence Matplotlib de style BSD/PSF, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Deux API mélangées (`pyplot` vs objet) : choisir l'API objet pour le code durable.
-- État global de `pyplot` (figure courante) : source de surprises en scripts longs / boucles.
-- Verbeux pour des graphes pourtant simples — d'où l'intérêt des surcouches.
-- Penser à fermer les figures (`plt.close`) pour éviter les fuites en génération massive.
-
-## Alternatives
+### Alternatives
 
 - [[seaborn]] — Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.
 
-## Liens
+## Ressources
 
-- Surcouche statistique : [[seaborn]] — l'appelle sous le capot.
-- Consommé par [[pandas]] (`DataFrame.plot`).
-- [[Comparatif - Visualisation]] — matplotlib vs seaborn / plotly / altair / bokeh.
-- Doc : https://matplotlib.org/stable/
+- Documentation — https://matplotlib.org/stable/
+- Dépôt — https://github.com/matplotlib/matplotlib
+
+## Voir aussi
+
+- [[Visualisation]] — le hub du dossier
+- [[pandas]] — consommateur direct : `DataFrame.plot` produit des figures matplotlib
+- [[Comparatif - Visualisation]] — ce qui départage les bibliothèques du dossier

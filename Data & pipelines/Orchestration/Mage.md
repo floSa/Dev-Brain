@@ -19,35 +19,45 @@ url_repo: https://github.com/mage-ai/mage-ai
 
 # Mage
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 
-Mage (Mage AI) est un orchestrateur **ELT hybride low-code**. Un pipeline s'assemble par **blocs** (data loader → transformer → exporter) dans une UI type notebook, chaque bloc restant du vrai code Python / SQL / R éditable, avec prévisualisation des données à chaque étape. Il vise un démarrage rapide pour l'ingénierie de données sans la lourdeur opérationnelle d'Airflow. Open-source (Apache-2.0), avec une offre managée Mage Pro.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Démarrer vite un pipeline ELT avec un éditeur visuel et un feedback immédiat (preview des données par bloc).
-- Petite équipe ou profils data analysts à l'aise en notebook, sans vouloir opérer un cluster Airflow.
-- Intégration et transformation de données avec dbt et les connecteurs courants.
+Orchestrateur **ELT low-code**. Un pipeline s'assemble par **blocs** — data loader,
+transformer, exporter — dans une UI type notebook, chaque bloc restant du vrai code Python,
+SQL ou R éditable, avec prévisualisation des données à la sortie de chaque étape. La
+promesse est un démarrage rapide sans la charge opérationnelle d'un orchestrateur
+distribué. Deux contreparties viennent avec : l'UI par blocs masque des conventions de
+structure de projet qu'il faut finir par comprendre, et le développement de l'édition libre avance
+moins vite depuis le virage vers l'offre managée Mage Pro — la vélocité du dépôt est à
+surveiller avant de l'installer pour dix ans.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Orchestration à grande échelle, distribuée, mission-critique → [[Airflow]] ou [[Kestra]].
-- Modèle orienté **assets** et lignage de données → [[Dagster]].
-- Workflows Python dynamiques et résilients définis par code → [[Prefect]].
+| Prendre si | Écarter si |
+|---|---|
+| Démarrer vite un pipeline ELT avec éditeur visuel et prévisualisation de la donnée par bloc | Positionnement mono-nœud par défaut : l'orchestration distribuée mission-critique n'est pas le terrain de l'outil |
+| Petite équipe, ou analystes à l'aise en notebook, sans vouloir opérer un cluster | Vélocité de l'open-source en retrait depuis le virage vers l'offre managée Mage Pro |
+| Intégration et transformation avec dbt et les connecteurs courants | Catalogue de connecteurs et écosystème nettement plus étroits que ceux du standard de la catégorie |
+| | L'UI par blocs masque une structure de projet générée qu'il faut de toute façon apprendre |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), auto-hébergeable : application unique avec scheduler intégré (déploiement Docker ; Kubernetes avec executors pour répartir les tâches).
-- Offre managée : Mage Pro (RBAC, multi-environnements, assistance IA, monitoring).
-- Positionnement plus léger (single-node par défaut) que les orchestrateurs distribués de la catégorie.
+- Installation — `uv add mage-ai`, ou image Docker pour la pile complète
+- Point d'entrée — UI web par blocs (loader / transformer / exporter), chaque bloc étant du code Python, SQL ou R
+- Prérequis — Python ; Kubernetes et ses executors si l'on veut répartir les tâches
+- Exécution — self-hébergé en application unique avec scheduler intégré, mono-nœud par défaut, ou managé
+- Coût — gratuit en Apache-2.0 ; Mage Pro (RBAC, multi-environnements, monitoring, assistance IA) est payant
 
-## Pièges
+## Écosystème
 
-- L'OSS avance moins vite depuis le virage vers Mage Pro (offre managée) — surveiller la vélocité du projet.
-- L'UI par blocs masque des conventions de structure de projet — utile de comprendre l'arborescence générée.
-- Moins de connecteurs et d'écosystème qu'Airflow.
-
-## Alternatives
+### Alternatives
 
 - [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
 - [[Dagster]] — Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.
@@ -55,7 +65,12 @@ Mage (Mage AI) est un orchestrateur **ELT hybride low-code**. Un pipeline s'asse
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 - [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Orchestrateurs data]] — comparatif de la catégorie
-- Doc : https://docs.mage.ai/
+- Documentation — https://docs.mage.ai/
+- Dépôt — https://github.com/mage-ai/mage-ai
+
+## Voir aussi
+
+- [[Orchestration]] — le hub du dossier
+- [[Comparatif - Orchestrateurs data]] — ce qui départage les orchestrateurs du dossier

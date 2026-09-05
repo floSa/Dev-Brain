@@ -17,45 +17,56 @@ url_repo: https://github.com/modin-project/modin
 
 # Modin
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
 
-**Remplaçant transparent de [[pandas]]** : on change une ligne d'import (`import modin.pandas as pd`) et le code pandas existant tourne **en parallèle sur tous les cœurs** au lieu d'un seul thread. Modin vise une couverture quasi complète de l'API pandas et délègue l'exécution à un moteur de calcul interchangeable : **Ray**, **Dask** ou **unidist/MPI**. La promesse : un *speedup* immédiat sur une machine, puis un passage au **cluster** sans réécrire la logique.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Base de code **pandas existante** lente, qu'on ne veut pas réécrire : Modin la parallélise sans changement.
-- Saturer tous les cœurs d'un poste de travail sur des opérations pandas (lecture, group-by, apply).
-- Besoin de passer à l'échelle vers un **cluster** Ray/Dask plus tard, en gardant l'API pandas.
+Remplaçant transparent de [[pandas]] : on change une ligne d'import
+(`import modin.pandas as pd`) et le code existant s'exécute **en parallèle sur tous les
+cœurs** au lieu d'un seul thread. L'exécution est déléguée à un moteur interchangeable —
+Ray, Dask ou unidist/MPI — ce qui ouvre le passage au cluster sans réécrire la logique. La
+couverture de l'API pandas se veut quasi complète, mais elle n'est **pas totale** : ce qui
+n'est pas implémenté retombe **silencieusement** sur pandas, donc sans gain et sans
+avertissement. Le comportement dépend par ailleurs du moteur retenu, qu'il faut fixer et
+tester, et les anti-patterns pandas restent coûteux une fois parallélisés.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Projet neuf sans dette pandas, où la performance prime → [[Polars]] (plus rapide nativement).
-- Petits jeux de données : la surcharge du moteur parallèle peut être plus lente que [[pandas]] seul.
-- Pipeline déjà orchestré en graphes de tâches, calcul array/dataframe distribué de bout en bout → [[Dask]] directement.
-- Couverture d'une API pandas exotique : Modin retombe sur pandas pour le non-implémenté (sans gain).
+| Prendre si | Écarter si |
+|---|---|
+| Base de code **pandas existante** trop lente, qu'on ne veut pas réécrire | Pipeline déjà exprimé en graphes de tâches, calcul array et dataframe distribué de bout en bout → [[Dask]] directement |
+| Saturer tous les cœurs d'un poste sur des opérations pandas : lecture, group-by, apply | Petits jeux de données : la surcharge de parallélisation coûte plus qu'elle ne rapporte |
+| Passer plus tard au **cluster** en gardant l'API pandas | Couverture d'API non totale, et le non-implémenté retombe **en silence** sur pandas — le gain disparaît sans le dire |
+| | Ne corrige aucun anti-pattern : un `apply` ligne à ligne reste coûteux, même parallélisé |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add "modin[ray]"` / `[dask]` / `[mpi]`) ; choix du moteur par variable d'env ou install. Apache-2.0, gratuit.
-- **Parallèle multi-cœurs** par défaut sur une machine ; **distribué** sur cluster via le backend Ray ou Dask.
-- Coût d'infra = celui du backend choisi (cluster Ray/Dask à provisionner pour le multi-nœuds).
+- Installation — `uv add "modin[ray]"`, ou `modin[dask]` / `modin[mpi]` selon le moteur
+- Point d'entrée — un seul import à changer, `import modin.pandas as pd`
+- Prérequis — Python ; le moteur se choisit à l'installation ou par variable d'environnement
+- Exécution — multi-cœurs sur une machine par défaut ; distribué sur un cluster Ray ou Dask à provisionner
+- Coût — gratuit en Apache-2.0 ; le coût d'infra est celui du moteur choisi
 
-## Pièges
+## Écosystème
 
-- Surcharge de parallélisation : sur petits volumes, Modin peut être plus lent que pandas.
-- Couverture d'API **non totale** : les méthodes non supportées retombent silencieusement sur pandas (perte du gain).
-- Le comportement dépend du backend (Ray/Dask/MPI) — fixer et tester le moteur ciblé.
-- N'élimine pas les anti-patterns pandas (`apply` ligne à ligne reste coûteux, même parallélisé).
-
-## Alternatives
+### Alternatives
 
 - [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
 - [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
 - [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 
-## Liens
+## Ressources
 
-- API cible : [[pandas]] — Modin en est un drop-in replacement.
-- Moteur d'exécution possible : [[Dask]] (aussi Ray, unidist/MPI — hors brain pour Ray).
-- [[Comparatif - Manipulation de données]] — Modin vs pandas / Polars / numpy.
-- Doc : https://modin.readthedocs.io/
+- Documentation — https://modin.readthedocs.io/
+- Dépôt — https://github.com/modin-project/modin
+
+## Voir aussi
+
+- [[DataFrames]] — le hub du dossier
+- [[Comparatif - Manipulation de données]] — ce qui départage les outils du dossier

@@ -17,45 +17,57 @@ url_repo: https://github.com/vega/altair
 
 # altair
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
-Bibliothèque de visualisation **déclarative** : au lieu de tracer pas à pas, on **décrit** le graphe — quelle colonne va sur quel encodage (`x`, `y`, `color`, `size`), quelle marque (`mark_bar`, `mark_line`, `mark_point`). Altair produit une spécification **Vega-Lite** (JSON) rendue de façon **interactive** dans le navigateur. La grammaire des graphiques rend le code concis et composable : superposition, facettes, sélections liées s'expriment par opérateurs. Entrée naturelle : un `DataFrame` [[pandas]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Exploration où l'on raisonne en **encodages** (grammaire des graphiques) plutôt qu'en primitives de dessin.
-- Graphes composés déclaratifs : superposition, facettes, **sélections interactives** liées.
-- Sortie interactive pour notebook / web, ou export de la **spec Vega-Lite** réutilisable ailleurs.
-- Code de visualisation lisible et concis à maintenir.
+Visualisation **déclarative** : au lieu de tracer pas à pas, on décrit le graphe — quelle
+colonne va sur quel encodage (`x`, `y`, `color`, `size`), quelle marque (`mark_bar`,
+`mark_line`, `mark_point`). La sortie est une spécification **Vega-Lite** en JSON, rendue de
+façon interactive dans le navigateur et réutilisable hors de Python. La grammaire des
+graphiques rend le code concis et composable : superposition, facettes et sélections liées
+s'expriment par opérateurs. Deux contreparties viennent de ce que la bibliothèque n'est
+qu'un générateur de spécification : la personnalisation très fine reste bornée par ce que
+Vega-Lite expose, et le rendu dépend de la version du moteur embarqué, à épingler pour la
+reproductibilité.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Très gros jeux : limite par défaut à 5000 lignes (`MaxRowsError`) — agréger ou activer un data server.
-- Contrôle bas niveau de chaque pixel → [[matplotlib]].
-- Dashboards serveur / streaming gros volumes → [[bokeh]].
-- Riche galerie de types prêts (3D, cartes avancées) → [[plotly]].
+| Prendre si | Écarter si |
+|---|---|
+| Raisonner en **encodages** — grammaire des graphiques — plutôt qu'en primitives de dessin | Limite par défaut à **5000 lignes** (`MaxRowsError`) : au-delà, il faut agréger ou passer par `alt.data_transformers` |
+| Graphes composés déclaratifs : superposition, facettes, sélections interactives liées | Le paradigme déclaratif déroute quand on attend une API impérative |
+| Exporter la **spec Vega-Lite** pour la réutiliser ailleurs qu'en Python | La personnalisation très fine est contrainte par ce que Vega-Lite expose, pas par le code Python |
+| Code de visualisation lisible et concis à maintenir | Le rendu dépend de la version du moteur Vega-Lite embarqué — à épingler pour reproduire une figure |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add altair`) ; génère du Vega-Lite rendu côté navigateur. BSD-3-Clause, gratuit.
-- **Single-node** : Altair produit la spec, le rendu est délégué à Vega-Lite/Vega.
-- Aucun serveur à tenir ; la spec JSON est portable (web, doc, autre moteur Vega).
+- Installation — `uv add altair`
+- Point d'entrée — import Python, `import altair as alt` ; entrée naturelle, un DataFrame
+- Prérequis — Python côté génération ; le rendu est délégué à Vega-Lite dans un navigateur
+- Exécution — dans le process appelant, mono-nœud ; aucun serveur à tenir, la spec JSON est portable
+- Coût — gratuit, licence BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Limite des **5000 lignes** par défaut : penser agrégation ou `alt.data_transformers`.
-- Paradigme déclaratif : déroutant si l'on attend une API impérative type matplotlib.
-- Le rendu dépend d'un moteur Vega-Lite (version embarquée) — épingler pour la repro.
-- Personnalisation très fine parfois contrainte par ce que Vega-Lite expose.
-
-## Alternatives
+### Alternatives
 
 - [[plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
 - [[bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
 
-## Liens
+## Ressources
 
-- Alternatives interactives : [[plotly]], [[bokeh]].
-- Repose sur la spécification Vega-Lite ; consomme des DataFrames [[pandas]].
-- [[Comparatif - Visualisation]] — altair vs matplotlib / seaborn / plotly / bokeh.
-- Doc : https://altair-viz.github.io/
+- Documentation — https://altair-viz.github.io/
+- Dépôt — https://github.com/vega/altair
+
+## Voir aussi
+
+- [[Visualisation]] — le hub du dossier
+- [[pandas]] — la source de données attendue en entrée
+- [[Comparatif - Visualisation]] — ce qui départage les bibliothèques du dossier

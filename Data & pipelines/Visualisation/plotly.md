@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python / JavaScript
 alternatives: ["[[bokeh]]", "[[altair]]"]
-complements: []
+complements: ["[[Dash]]"]
 tags: [dataviz, interactive-viz]
 url_docs: https://plotly.com/python/
 url_repo: https://github.com/plotly/plotly.py
@@ -17,44 +17,59 @@ url_repo: https://github.com/plotly/plotly.py
 
 # plotly
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
 
-Bibliothèque de visualisation **interactive** : les graphiques sont rendus dans le navigateur via **plotly.js** (HTML/JS). Deux niveaux : **Plotly Express** (`px`, haut niveau, un graphe par appel depuis un DataFrame) et **graph objects** (`go`, contrôle fin de la figure). Plus de 30 types de graphes : scientifiques, 3D, cartes, financiers. Interactivité native (zoom, pan, survol, sélection) sans écrire de JavaScript. C'est aussi le moteur de rendu de **Dash**, le framework d'apps analytiques du même éditeur.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python / JavaScript | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Graphiques **interactifs** à embarquer dans une page web, un notebook ou un rapport HTML.
-- Exploration où le survol / zoom apporte (séries denses, nuages, 3D, cartes).
-- Brique de visualisation d'une app **Dash** (ou Streamlit, qui affiche des figures plotly).
-- Export HTML autonome partageable sans serveur.
+Visualisation **interactive** : la figure est décrite en Python puis rendue dans le
+navigateur par **plotly.js**, zoom, pan, survol et sélection compris, sans écrire une ligne
+de JavaScript. Deux niveaux d'API : **Plotly Express** (`px`), un graphe par appel depuis un
+DataFrame, et les **graph objects** (`go`) pour le contrôle fin — on commence par `px` et on
+descend en `go` au besoin. Plus de trente types de graphes, dont les scientifiques, la 3D,
+les cartes et le financier. Le moteur JavaScript embarqué se paie : les pages HTML
+s'alourdissent dès qu'elles portent beaucoup de figures, et le rendu peine sur les nuages
+denses — l'issue est l'agrégation ou le passage en WebGL (`scattergl`).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Sortie statique pour PDF/print → [[matplotlib]] / [[seaborn]] (l'export image plotly demande Kaleido).
-- Approche déclarative concise type grammaire des graphiques → [[altair]].
-- Streaming serveur / très gros volumes côté serveur → [[bokeh]] et son serveur.
+| Prendre si | Écarter si |
+|---|---|
+| Graphiques interactifs à embarquer dans une page web, un notebook ou un rapport HTML | Poids de plotly.js embarqué : une page portant beaucoup de figures devient lourde |
+| Exploration où le survol et le zoom apportent : séries denses, nuages, 3D, cartes | L'export d'image statique passe par une dépendance supplémentaire, **Kaleido** |
+| Servir de brique de visualisation à une app analytique | Beaucoup de points : le rendu navigateur rame — agréger, ou basculer en `scattergl` |
+| Export HTML autonome, partageable sans serveur | Deux API à connaître, `px` et `go`, dont la frontière n'est pas toujours nette |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add plotly`) ; cœur de rendu en JavaScript (plotly.js). MIT, gratuit.
-- **Single-node** pour la génération ; le graphe vit ensuite dans le navigateur.
-- L'éditeur propose des offres commerciales séparées (Dash Enterprise, Chart Studio) — la lib reste libre.
+- Installation — `uv add plotly` ; `kaleido` en plus pour l'export d'images statiques
+- Point d'entrée — import Python, `import plotly.express as px` ou `plotly.graph_objects as go`
+- Prérequis — Python côté génération, un navigateur côté rendu ; le cœur graphique est en JavaScript
+- Exécution — dans le process appelant pour la génération, mono-nœud ; le graphe vit ensuite dans le navigateur
+- Coût — gratuit, licence MIT ; l'éditeur vend séparément Dash Enterprise et Chart Studio, la bibliothèque reste libre
 
-## Pièges
+## Écosystème
 
-- Poids de plotly.js embarqué : pages HTML lourdes si beaucoup de figures.
-- Export d'image statique = dépendance **Kaleido** supplémentaire.
-- Beaucoup de points → le rendu navigateur rame ; agréger ou passer en WebGL (`scattergl`).
-- Deux API (`px` vs `go`) : commencer par `px`, descendre en `go` au besoin.
-
-## Alternatives
+### Alternatives
 
 - [[bokeh]] — Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
 - [[altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
-## Liens
+### Compléments
 
-- Alternatives interactives : [[bokeh]], [[altair]].
-- Socle des apps Dash (même éditeur) ; figures affichables dans Streamlit.
-- [[Comparatif - Visualisation]] — plotly vs matplotlib / seaborn / altair / bokeh.
-- Doc : https://plotly.com/python/
+- [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask. — même éditeur, et plotly est le moteur de rendu des graphes d'une app Dash.
+
+## Ressources
+
+- Documentation — https://plotly.com/python/
+- Dépôt — https://github.com/plotly/plotly.py
+
+## Voir aussi
+
+- [[Visualisation]] — le hub du dossier
+- [[Comparatif - Visualisation]] — ce qui départage les bibliothèques du dossier

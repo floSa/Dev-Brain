@@ -17,44 +17,55 @@ url_repo: https://github.com/bokeh/bokeh
 
 # bokeh
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Visualisation interactive pour le navigateur, du graphique au dashboard, avec un serveur Bokeh pour le streaming et les grands volumes.
 
-Bibliothèque de visualisation **interactive** pour le navigateur. Côté Python on décrit la figure ; le rendu se fait en JavaScript via **BokehJS**. Deux usages : générer du **HTML autonome** (graphe embarqué dans une page) ou lancer un **serveur Bokeh** qui relie les widgets Python aux callbacks — apps et **dashboards** réactifs sans écrire de JS. Conçu pour rester fluide sur de **gros volumes**, voire des données en **streaming**. Outils intégrés : pan, zoom, survol, sélection, liaison entre graphes.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python / TypeScript | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Dashboards** et apps de données interactives côté serveur (widgets ↔ callbacks Python).
-- Visualisation de **gros jeux** ou de flux **streaming** à garder fluides.
-- Graphes liés (sélection partagée, axes synchronisés) dans une page web.
-- Sortie HTML interactive autonome sans dépendre d'un service tiers.
+Visualisation **interactive** pour le navigateur : la figure se décrit en Python, le rendu
+se fait en JavaScript via **BokehJS**. Deux usages distincts en découlent — produire du
+**HTML autonome**, un graphe embarqué dans une page sans rien à héberger, ou lancer un
+**serveur Bokeh** qui relie des widgets Python à des callbacks, ce qui donne des dashboards
+réactifs sans écrire de JS. C'est ce second mode qui distingue la bibliothèque, et c'est
+aussi ce qui coûte : sessions et callbacks forment un modèle à apprendre, et le serveur se
+dimensionne selon le nombre d'utilisateurs. Le rendu est pensé pour rester fluide sur de
+gros volumes, voire sur des données en **streaming**.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Graphes statistiques rapides en une ligne → [[seaborn]].
-- Sortie statique pour print/PDF → [[matplotlib]].
-- API plus immédiate pour l'interactif courant → [[plotly]] (Plotly Express).
-- Spécification déclarative concise → [[altair]].
+| Prendre si | Écarter si |
+|---|---|
+| Dashboards et apps de données interactives côté serveur : widgets Python reliés à des callbacks | Le modèle serveur — sessions, callbacks — a une courbe d'apprentissage plus raide que l'export statique |
+| Gros jeux de données ou flux **streaming** à garder fluides à l'affichage | Pas d'export d'image natif simple : il passe par des extras, Selenium ou geckodriver |
+| Graphes liés dans une page : sélection partagée, axes synchronisés | Une page interactive pèse plus qu'un PNG — inadapté au print |
+| Sortie HTML interactive autonome, sans dépendre d'un service tiers | Deux niveaux d'API historiquement, *models* bas niveau et `bokeh.plotting` : s'en tenir au second |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add bokeh`) ; rendu BokehJS (TypeScript). BSD-3-Clause, gratuit.
-- HTML autonome **sans serveur**, ou **serveur Bokeh** (`bokeh serve`) pour les apps réactives.
-- **Single-node** ; le serveur tient des sessions, à dimensionner selon le nombre d'utilisateurs.
+- Installation — `uv add bokeh`
+- Point d'entrée — import Python, `from bokeh.plotting import figure` ; `bokeh serve` pour le mode app
+- Prérequis — Python côté description, un navigateur côté rendu ; BokehJS est écrit en TypeScript
+- Exécution — HTML autonome sans serveur, ou serveur Bokeh mono-nœud tenant les sessions
+- Coût — gratuit, licence BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Le modèle serveur (sessions, callbacks) a une courbe d'apprentissage plus raide que l'export statique.
-- Deux niveaux d'API historiquement (bas niveau *models* vs `bokeh.plotting`) : s'en tenir à `plotting`.
-- Pas d'export image natif simple (passe par des extras, p. ex. Selenium/geckodriver).
-- Page plus lourde qu'un PNG : inadapté au print.
-
-## Alternatives
+### Alternatives
 
 - [[plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
 - [[altair]] — Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
-## Liens
+## Ressources
 
-- Alternatives interactives : [[plotly]], [[altair]].
-- [[Comparatif - Visualisation]] — bokeh vs matplotlib / seaborn / plotly / altair.
-- Doc : https://docs.bokeh.org/
+- Documentation — https://docs.bokeh.org/
+- Dépôt — https://github.com/bokeh/bokeh
+
+## Voir aussi
+
+- [[Visualisation]] — le hub du dossier
+- [[Comparatif - Visualisation]] — ce qui départage les bibliothèques du dossier

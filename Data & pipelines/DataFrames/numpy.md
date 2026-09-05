@@ -17,45 +17,58 @@ url_repo: https://github.com/numpy/numpy
 
 # numpy
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
 
-Paquet **fondamental du calcul scientifique** en Python. Son cœur est le `ndarray` : un **tableau N-dimensionnel homogène** stocké de façon contiguë en mémoire, sur lequel les opérations sont **vectorisées en C** (pas de boucle Python). Apporte le *broadcasting*, l'indexation avancée, l'algèbre linéaire (`linalg`), les transformées de Fourier, le tirage aléatoire et un système de `dtype`. C'est la **brique sur laquelle tout repose** : [[pandas]], scikit-learn, SciPy, matplotlib et la plupart des libs scientifiques manipulent des `ndarray`.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C / Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Calcul **numérique pur** sur vecteurs / matrices / tenseurs : algèbre linéaire, statistiques, simulation.
-- Vectoriser pour la performance : remplacer des boucles Python par des opérations sur tableaux entiers.
-- Interface bas niveau entre libs : c'est le format d'échange numérique de l'écosystème.
-- Tirage aléatoire reproductible (`np.random.default_rng`).
+Le cœur est le `ndarray` : un tableau **N-dimensionnel homogène** stocké de façon contiguë
+en mémoire, sur lequel les opérations sont vectorisées en C, sans boucle Python. Autour de
+lui viennent le *broadcasting*, l'indexation avancée, l'algèbre linéaire (`linalg`, adossée
+à BLAS/LAPACK), les transformées de Fourier, le tirage aléatoire reproductible
+(`np.random.default_rng`) et un système de `dtype`. Trois conséquences se paient à l'usage :
+un seul `dtype` par tableau, donc rien d'hétérogène ; le slicing renvoie le plus souvent une
+**vue**, si bien que la modifier modifie la source ; et les entiers à largeur fixe débordent
+en silence. C'est la brique sur laquelle reposent [[pandas]], scikit-learn, SciPy et
+matplotlib.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Données **tabulaires hétérogènes** avec étiquettes de colonnes et index → [[pandas]] ou [[Polars]].
-- Tableaux **plus grands que la RAM** ou calcul distribué → [[Dask]] (`dask.array`, même API).
-- Accélération **GPU** d'un code numpy existant → [[CuPy]] ; différentiation automatique → [[JAX]] / [[PyTorch]].
+| Prendre si | Écarter si |
+|---|---|
+| Calcul numérique pur sur vecteurs, matrices et tenseurs : algèbre linéaire, statistiques, simulation | Tableaux plus grands que la RAM, ou calcul à distribuer → [[Dask]] et son `dask.array`, de même API |
+| Vectoriser pour la performance : remplacer des boucles Python par des opérations sur tableaux entiers | Accélération **GPU** d'un code numpy existant → [[CuPy]], compatible drop-in |
+| Servir d'interface bas niveau entre bibliothèques — c'est le format d'échange numérique de l'écosystème | Différentiation automatique → [[JAX]] ou [[PyTorch]] : numpy ne dérive pas |
+| Tirage aléatoire reproductible par générateur explicite | Le *broadcasting* peut aligner des formes par erreur : vérifier les `shape` reste à la charge de l'appelant |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add numpy`) ; cœur C compilé. BSD-3-Clause, gratuit.
-- **Single-node, en mémoire** ; certaines routines `linalg` s'appuient sur BLAS/LAPACK multi-thread.
-- Empreinte mémoire prévisible : un `ndarray` = données brutes contiguës + métadonnées légères.
+- Installation — `uv add numpy`
+- Point d'entrée — import Python, `import numpy as np` ; cœur compilé en C
+- Prérequis — Python ; une BLAS/LAPACK est embarquée dans les roues officielles
+- Exécution — dans le process appelant, mono-nœud et en mémoire ; certaines routines `linalg` sont multi-thread via BLAS
+- Coût — gratuit, licence BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Tableau **homogène** : un seul `dtype` par tableau (pour de l'hétérogène, c'est pandas).
-- Le *broadcasting* est puissant mais peut aligner des formes par erreur — vérifier les `shape`.
-- Vue vs copie : le slicing renvoie souvent une **vue** ; modifier la vue modifie la source.
-- Dépassements silencieux sur les entiers à largeur fixe (`int32`…).
-
-## Alternatives
+### Alternatives
 
 - [[xarray]] — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
 - [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 - [[CuPy]] — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
 
-## Liens
+## Ressources
 
-- Briques bâties dessus : [[pandas]] (colonnes en `ndarray`), scikit-learn, SciPy.
-- À l'échelle / hors RAM : [[Dask]] réimplémente l'API numpy en `dask.array`.
-- GPU / autodiff : [[CuPy]] (drop-in GPU), [[JAX]], [[PyTorch]].
-- Doc : https://numpy.org/doc/stable/
+- Documentation — https://numpy.org/doc/stable/
+- Dépôt — https://github.com/numpy/numpy
+
+## Voir aussi
+
+- [[DataFrames]] — le hub du dossier
+- [[pandas]] — bâti dessus : ses colonnes sont des `ndarray`
+- [[Comparatif - Manipulation de données]] — ce qui départage les outils du dossier
