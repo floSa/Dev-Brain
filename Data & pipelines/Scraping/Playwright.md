@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[curl_cffi]]", "[[cloudscraper]]", "[[Crawlee]]", "[[Scrapling]]"]
-complements: []
+complements: ["[[selectolax]]", "[[Scrapy]]"]
 tags: [web-scraping]
 url_docs: https://playwright.dev/python/
 url_repo: https://github.com/microsoft/playwright-python
@@ -17,45 +17,62 @@ url_repo: https://github.com/microsoft/playwright-python
 
 # Playwright
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
-Pilote un **vrai navigateur** (Chromium, Firefox, WebKit) en mode headless via une API Python unique. Le navigateur **exécute le JavaScript** : indispensable pour les pages rendues côté client (SPA) qu'une simple requête HTTP ne voit pas. Les attentes sont **auto-résolues** (l'API patiente jusqu'à ce qu'un élément soit prêt), ce qui supprime les `sleep` fragiles. L'**état de session** (cookies, localStorage) se sauvegarde (`storage_state`) et se rejoue, ou se conserve dans un **contexte persistant** — login une fois, réutilisé ensuite. Signé Microsoft ; le paquet Python pilote un driver Node sous le capot.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Pages **rendues en JavaScript** / SPA où le HTML utile n'apparaît qu'après exécution du JS.
-- Scénarios derrière **login** avec session à persister et rejouer.
-- Interactions nécessaires avant extraction : clics, scroll infini, formulaires.
-- Aussi un framework de **tests E2E** : le même outil sert au scraping et aux tests d'interface.
+Pilote un **vrai navigateur** — Chromium, Firefox, WebKit — en mode headless derrière une API
+unique. Le navigateur **exécute le JavaScript**, ce qu'aucune requête HTTP ne fait : c'est la
+seule façon de voir le HTML d'une page rendue côté client. Les attentes sont **auto-résolues**,
+l'API patientant jusqu'à ce qu'un élément soit prêt, ce qui supprime les `sleep` fragiles.
+L'**état de session** (cookies, localStorage) se sauvegarde par `storage_state` et se rejoue,
+ou se conserve dans un contexte persistant : on se connecte une fois, on réutilise ensuite.
+Signé Microsoft ; le paquet Python pilote un driver Node sous le capot. Le même outil sert de
+framework de tests E2E.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pages **statiques** récupérables par simple HTTP → un client léger ([[curl_cffi]]) + un parseur ([[selectolax]]) est bien plus rapide.
-- Blocage uniquement sur l'**empreinte TLS/HTTP** sans besoin de JS → [[curl_cffi]] suffit.
-- Très **gros volumes** : un navigateur par page coûte cher en CPU/RAM — préférer l'HTTP quand c'est possible.
+| Prendre si | Écarter si |
+|---|---|
+| Pages rendues en JavaScript, où le HTML utile n'apparaît qu'après exécution du script | Un navigateur complet par worker coûte cher en CPU et en RAM : sur de gros volumes, l'HTTP reste bien moins lourd |
+| Scénarios derrière login, avec session à persister et à rejouer | Le headless est détectable (`navigator.webdriver`, fingerprint) : la furtivité n'est pas son objectif premier |
+| Interactions nécessaires avant extraction : clics, scroll infini, formulaires | `playwright install` est obligatoire après l'installation du paquet, sinon aucun navigateur n'est disponible |
+| Un seul outil pour le scraping et les tests E2E d'interface | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add playwright` puis `playwright install` pour télécharger les navigateurs). Apache-2.0, gratuit.
-- **Single-node** ; chaque contexte / navigateur consomme CPU et mémoire — paralléliser via des contextes plutôt que des process.
-- En CI / Docker : prévoir les dépendances système des navigateurs (ou l'image officielle `mcr.microsoft.com/playwright`).
+- Installation — `uv add playwright`, puis `playwright install` pour télécharger les navigateurs
+- Point d'entrée — API Python, synchrone ou asynchrone : navigateur, contexte, page
+- Prérequis — les dépendances système des navigateurs ; en CI ou en Docker, l'image officielle `mcr.microsoft.com/playwright` les porte
+- Exécution — mono-nœud ; paralléliser par contextes plutôt que par process, chaque navigateur consommant CPU et mémoire
+- Coût — gratuit, Apache-2.0
 
-## Pièges
+## Écosystème
 
-- Lourd : un navigateur complet par worker — ne pas l'employer là où l'HTTP suffit.
-- Headless détectable : certains sites repèrent l'automatisation (`navigator.webdriver`, fingerprint) — la furtivité n'est pas son objectif premier.
-- `playwright install` obligatoire après le `pip`/`uv add`, sinon aucun navigateur disponible.
-
-## Alternatives
+### Alternatives
 
 - [[curl_cffi]] — Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
 - [[cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
 - [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
 - [[Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 
-## Liens
+### Compléments
 
-- [[Web scraping]] — rendu navigateur vs HTTP statique : son cas d'usage central.
-- [[selectolax]] — parser le HTML une fois la page rendue récupérée.
-- [[Comparatif - Scraping]]
-- Doc : https://playwright.dev/python/
+- [[selectolax]] — Parseur HTML5 ultra-rapide en Python (binding C Lexbor/Modest) avec sélecteurs CSS — un ordre de grandeur plus rapide que BeautifulSoup pour extraire des données de gros volumes de pages. — parse le HTML une fois la page rendue récupérée.
+- [[Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production. — via scrapy-playwright, quand un crawl structuré doit rendre le JS.
+
+## Ressources
+
+- Documentation — https://playwright.dev/python/
+- Dépôt — https://github.com/microsoft/playwright-python
+
+## Voir aussi
+
+- [[Web scraping]] — la notion du dossier : rendu navigateur contre HTTP statique
+- [[Comparatif - Scraping]] — ce qui départage les outils du dossier

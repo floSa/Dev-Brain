@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[cloudscraper]]", "[[Playwright]]"]
-complements: []
+complements: ["[[selectolax]]"]
 tags: [web-scraping]
 url_docs: https://curl-cffi.readthedocs.io/
 url_repo: https://github.com/lexiforest/curl_cffi
@@ -17,41 +17,59 @@ url_repo: https://github.com/lexiforest/curl_cffi
 
 # curl_cffi
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Client HTTP Python (binding curl-impersonate) qui imite l'empreinte TLS/JA3 et HTTP/2 d'un vrai navigateur — passe les anti-bots qui filtrent sur le fingerprint, avec une API façon requests.
 
-Client HTTP Python qui **imite l'empreinte d'un vrai navigateur** au niveau **TLS/JA3** et **HTTP/2**. Binding (via cffi) vers le fork **curl-impersonate** de libcurl. Beaucoup d'anti-bots ne lisent pas le contenu mais le **fingerprint** de la connexion : `requests` / `httpx` ont une signature reconnaissable, curl_cffi se fait passer pour Chrome / Safari / Firefox (`impersonate="chrome"`). API **calquée sur requests** (`get`, `post`, `Session`), support asyncio, HTTP/2 et HTTP/3, WebSocket. Plus rapide que requests / httpx.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Cible qui bloque sur l'**empreinte TLS/HTTP** (403 alors que le navigateur passe) sans nécessiter d'exécuter du JS.
-- Remplacement **drop-in** de requests pour ajouter la furtivité fingerprint.
-- Volume élevé : reste un client HTTP léger là où un navigateur serait trop coûteux.
+Client HTTP Python qui **imite l'empreinte d'un vrai navigateur** au niveau **TLS/JA3** et
+**HTTP/2**. C'est un binding, via cffi, vers **curl-impersonate**, le fork de libcurl qui
+reproduit ces signatures. Beaucoup d'anti-bots ne lisent pas le contenu de la page mais le
+**fingerprint de la connexion** : `requests` et `httpx` ont une signature reconnaissable,
+curl_cffi se fait passer pour Chrome, Safari ou Firefox via `impersonate="chrome"`. L'API est
+calquée sur requests (`get`, `post`, `Session`), avec asyncio, HTTP/2, HTTP/3 et WebSocket, et
+se substitue donc à requests sans réécriture. Il ne rend rien : c'est du transport, pas un
+navigateur.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Page **rendue en JavaScript** : curl_cffi ne rend rien → [[Playwright]].
-- Défi **JS spécifique Cloudflare** (IUAM) à résoudre explicitement → [[cloudscraper]] (même si l'empreinte TLS suffit souvent).
-- Aucun anti-bot sur fingerprint → `httpx` / `requests` standard suffisent (hors brain).
+| Prendre si | Écarter si |
+|---|---|
+| Cible qui répond 403 à requests alors que le navigateur passe : le blocage porte sur l'empreinte TLS ou HTTP | Ne résout aucun défi JavaScript et ne rend aucune page — le contenu d'une SPA lui reste invisible |
+| Remplacement drop-in de requests pour ajouter la furtivité fingerprint | L'empreinte imitée vieillit : la cible `impersonate` s'épingle et se met à jour pour rester crédible |
+| Volume élevé, où un navigateur serait trop coûteux : reste un client HTTP léger | Un User-Agent incohérent avec l'empreinte TLS choisie trahit le bluff |
+| | Sans anti-bot sur le fingerprint, `httpx` ou `requests` standard suffisent — hors brain |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add curl_cffi`). Roues précompilées embarquant curl-impersonate. MIT, gratuit.
-- **Single-node**, en process. Choisir une cible d'impersonation à jour (les versions de navigateur évoluent).
+- Installation — `uv add curl_cffi`
+- Point d'entrée — API façon requests : `get`, `post`, `Session(impersonate=...)`
+- Prérequis — roues précompilées embarquant curl-impersonate ; aucune dépendance système
+- Exécution — en process, mono-nœud
+- Coût — gratuit, MIT
 
-## Pièges
+## Écosystème
 
-- L'empreinte imitée **vieillit** : épingler / mettre à jour la cible `impersonate` pour rester crédible.
-- Ne **résout pas** les défis JS ni le rendu : c'est du transport, pas un navigateur.
-- Un User-Agent incohérent avec l'empreinte TLS choisie trahit le bluff.
-
-## Alternatives
+### Alternatives
 
 - [[cloudscraper]] — Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
 - [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
-## Liens
+### Compléments
 
-- [[Web scraping]] — section anti-bot / fingerprinting.
-- [[selectolax]] — parser le HTML récupéré.
-- [[Comparatif - Scraping]]
-- Doc : https://curl-cffi.readthedocs.io/
+- [[selectolax]] — Parseur HTML5 ultra-rapide en Python (binding C Lexbor/Modest) avec sélecteurs CSS — un ordre de grandeur plus rapide que BeautifulSoup pour extraire des données de gros volumes de pages. — parse le HTML que curl_cffi récupère.
+
+## Ressources
+
+- Documentation — https://curl-cffi.readthedocs.io/
+- Dépôt — https://github.com/lexiforest/curl_cffi
+
+## Voir aussi
+
+- [[Web scraping]] — la notion du dossier : anti-bot et fingerprinting
+- [[Comparatif - Scraping]] — ce qui départage les outils du dossier

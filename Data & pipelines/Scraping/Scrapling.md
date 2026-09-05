@@ -17,42 +17,55 @@ url_repo: https://github.com/D4Vinci/Scrapling
 
 # Scrapling
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 
-Framework de scraping Python qui vise deux plaies du métier : la **fragilité des sélecteurs** et l'**anti-bot**. Son parseur **adaptatif** mémorise les éléments ciblés et les **re-localise automatiquement** quand la structure de la page change, au lieu de casser. Côté récupération, ses **fetchers furtifs** passent des protections comme Cloudflare Turnstile prêtes à l'emploi (empreinte navigateur, HTTP stealth), avec sessions (cookies/état) et mode headless. API familière (proche de BeautifulSoup / selectolax) et **API de spider façon Scrapy** pour le crawl concurrent avec throttling par domaine. Projet récent mais en forte croissance.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Cibles qui **changent souvent** de structure : l'adaptatif évite de réécrire les sélecteurs à chaque refonte.
-- Besoin de **furtivité intégrée** (anti-bot Cloudflare) sans assembler soi-même client stealth + navigateur.
-- Rester en **Python** avec une API simple, du simple `get` jusqu'au crawl concurrent.
+Framework de scraping Python qui attaque deux plaies du métier en même temps. La **fragilité
+des sélecteurs** d'abord : son parseur **adaptatif** mémorise les éléments ciblés et les
+**re-localise automatiquement** quand la structure de la page change, au lieu de casser.
+L'**anti-bot** ensuite : ses fetchers **furtifs** passent des protections comme Cloudflare
+Turnstile prêtes à l'emploi — empreinte navigateur, HTTP stealth — avec sessions et mode
+headless. L'API est proche de BeautifulSoup ou de selectolax, et une API de spider façon
+Scrapy couvre le crawl concurrent avec throttling par domaine.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Production critique exigeant un socle **éprouvé de longue date** → [[Scrapy]] (Scrapling est plus jeune).
-- Écosystème **Node.js / TypeScript** → [[Crawlee]].
-- Interactions navigateur riches et tests E2E → [[Playwright]].
+| Prendre si | Écarter si |
+|---|---|
+| Cibles qui changent souvent de structure : l'adaptatif évite de réécrire les sélecteurs à chaque refonte | Bibliothèque récente dont l'API et les comportements évoluent vite : verrouiller la version en production |
+| Furtivité intégrée face à Cloudflare, sans assembler soi-même client stealth et navigateur | Le mode adaptatif réduit la casse mais ne dispense pas de valider la sortie extraite |
+| Rester en Python, du simple `get` jusqu'au crawl concurrent | La furtivité anti-bot reste un jeu du chat et de la souris : efficace, jamais garantie dans le temps |
+| | Les fetchers navigateur portent les coûts habituels en CPU et en RAM ; seuls les fetchers HTTP restent légers |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add scrapling`). BSD-3, gratuit.
-- **Single-node**, en process. Les fetchers navigateur ont les coûts habituels (CPU/RAM) ; les fetchers HTTP restent légers.
-- Projet jeune et à évolution rapide : épingler la version.
+- Installation — `uv add scrapling`
+- Point d'entrée — fetchers (HTTP ou navigateur) et sélecteurs adaptatifs, plus une API de spider pour le crawl concurrent
+- Prérequis — Python ; les fetchers navigateur tirent les dépendances d'un navigateur
+- Exécution — en process, mono-nœud
+- Coût — gratuit, BSD-3
 
-## Pièges
+## Écosystème
 
-- **Maturité** : bibliothèque récente, API et comportements évoluent vite — verrouiller la version en production.
-- Le mode adaptatif réduit la casse mais ne dispense pas de **valider la sortie** extraite.
-- La furtivité anti-bot reste un jeu du chat et de la souris : efficace mais non garantie dans le temps.
-
-## Alternatives
+### Alternatives
 
 - [[Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
 - [[Crawlee]] — Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
 - [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
-## Liens
+## Ressources
 
-- [[Web scraping]] — le concept (anti-bot, robustesse des sélecteurs).
-- [[Comparatif - Scraping]]
-- Doc : https://scrapling.readthedocs.io/
+- Documentation — https://scrapling.readthedocs.io/
+- Dépôt — https://github.com/D4Vinci/Scrapling
+
+## Voir aussi
+
+- [[Web scraping]] — la notion du dossier : anti-bot, robustesse des sélecteurs
+- [[Comparatif - Scraping]] — ce qui départage les outils du dossier
