@@ -19,45 +19,59 @@ url_repo: https://github.com/langflow-ai/langflow
 
 # Langflow
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
 
-Constructeur **visuel low-code** d'applications LLM **agentiques et RAG** : on assemble des composants (modèles, prompts, vector stores, outils, boucles d'agent) en les reliant sur un **canvas drag-and-drop**, sans écrire le code de plomberie. Chaque flux est ensuite **exposable en API** (endpoint REST) ou **exportable en code Python**, ce qui évite l'effet boîte noire. **Backend Python**, frontend TypeScript/React, licence **MIT**. Projet de la société **Langflow**, passée chez **DataStax** (rachetée par **IBM** en 2025) ; reste open-source et intégré à l'écosystème watsonx.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Prototyper vite** un agent ou un pipeline RAG en visuel, sans démarrer un projet de code.
-- Faire **collaborer** profils techniques et non-techniques sur la même chaîne (le canvas sert de langage commun).
-- Partir du visuel puis **récupérer le code Python** pour industrialiser dans une app classique.
-- Exposer un flux en **API** pour le brancher à un front ou un autre service.
+Constructeur **visuel low-code** d'applications agentiques et RAG : on relie des composants
+— modèles, prompts, vector stores, outils, boucles d'agent — sur un **canvas
+drag-and-drop**, sans écrire le code de plomberie. Chaque flux s'expose ensuite en
+**endpoint REST** ou s'**exporte en code Python**, ce qui évite l'effet boîte noire — même
+si une app de production gagne souvent à être réécrite proprement plutôt que générée.
+Backend Python, frontend TypeScript/React. Projet de la société Langflow, passée chez
+DataStax, rachetée par IBM en 2025 ; il reste ouvert et intégré à l'écosystème watsonx. Le
+visuel masque la complexité jusqu'à un certain point : au-delà, les flux deviennent
+illisibles et il faut basculer en code.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Logique d'orchestration **complexe, stateful, versionnée en code** → [[LangGraph]] / [[LangChain]] directement.
-- Plateforme **LLMOps complète** (gestion de modèles, observabilité, équipes) plutôt qu'un éditeur de flux → [[Dify]].
-- Simple **appel LLM** ou extraction structurée dans du code → [[Instructor]] / [[PydanticAI]].
+| Prendre si | Écarter si |
+|---|---|
+| Prototyper vite un agent ou un pipeline RAG en visuel, sans démarrer un projet de code | Logique d'orchestration complexe, stateful, versionnée en code → [[LangGraph]], [[LangChain]] |
+| Faire collaborer profils techniques et non techniques sur la même chaîne : le canvas sert de langage commun | Plateforme LLMOps complète — gestion de modèles, observabilité, équipes — plutôt qu'un éditeur de flux → [[Dify]] |
+| Partir du visuel puis récupérer le code Python pour industrialiser dans une app classique | Simple appel LLM ou extraction structurée dans du code → [[Instructor]], [[PydanticAI]] |
+| Exposer un flux en API pour le brancher à un front ou à un autre service | Composants renommés ou déplacés d'une version à l'autre : épingler la version, se méfier des tutoriels datés |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit : **self-host** Docker/pip ou **Langflow Desktop**, déployable sur les grands clouds (`hosted: both`).
-- Une offre **managée** existe côté DataStax/IBM (canvas hébergé) pour qui ne veut pas opérer l'infra.
-- Coût réel dominé par les appels **LLM** des flux, pas par l'outil.
+- Installation — `pip`/`uv` ou Docker pour le self-host, Langflow Desktop en local, déployable sur les grands clouds
+- Point d'entrée — canvas web ; chaque flux s'expose en endpoint REST ou s'exporte en code Python
+- Prérequis — Python pour le backend ; les composants viennent de l'écosystème [[LangChain]]
+- Exécution — self-hébergé, en desktop, ou via l'offre managée côté DataStax/IBM ; mono-nœud
+- Coût — gratuit sous MIT ; le coût réel est dominé par les appels LLM des flux, pas par l'outil
 
-## Pièges
+## Écosystème
 
-- Le visuel **masque la complexité** jusqu'à un certain point : les flux non triviaux deviennent vite illisibles — basculer en code quand ça dépasse.
-- API en **évolution rapide** (composants renommés/déplacés) : épingler la version, attention aux tutoriels datés.
-- L'**export Python** facilite la sortie, mais une app de prod gagne souvent à être réécrite proprement plutôt que générée.
-
-## Alternatives
+### Alternatives
 
 - [[Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
 - [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 
-## Liens
+## Ressources
 
-- Même famille de **builders visuels** que [[Flowise]] (Node.js) et [[Dify]] (plateforme).
-- S'appuie sur l'écosystème [[LangChain]] (composants Python) ; flux exportables en code.
-- Peut router ses appels multi-fournisseurs via [[LiteLLM]] ou [[OpenRouter]].
-- Concepts : [[Agent patterns]], [[Advanced RAG]], [[Context engineering]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.langflow.org/
+- Documentation — https://docs.langflow.org/
+- Dépôt — https://github.com/langflow-ai/langflow
+
+## Voir aussi
+
+- [[Agent patterns]] — la notion : les formes d'agent que ses composants assemblent
+- [[Advanced RAG]] — la notion : ce que ses pipelines de récupération mettent en œuvre
+- [[Context engineering]] — la notion du dossier
+- Routage multi-fournisseurs possible via [[LiteLLM]] ou [[OpenRouter]]
+- [[LLM & IA générative]] — le hub du domaine

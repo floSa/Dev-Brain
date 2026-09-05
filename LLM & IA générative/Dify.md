@@ -19,43 +19,57 @@ url_repo: https://github.com/langgenius/dify
 
 # Dify
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
 
-**Plateforme LLMOps low-code** (éditeur **LangGenius**), plus large qu'un simple builder de flux : une interface visuelle qui combine **workflows agentiques**, **pipelines RAG**, **gestion de modèles** multi-fournisseurs, **observabilité** et exposition en API, pour aller du **prototype à la production** dans un seul outil. **Backend Python**, frontend Next.js/TypeScript. Licence **« Dify Open Source License »** : Apache 2.0 **modifiée** avec conditions additionnelles — interdiction d'en faire un **service multi-tenant** managé sans licence commerciale, et interdiction de **retirer le logo/copyright** de la console. Donc *source-available*, pas open-source OSI au sens strict.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | source-available | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Vouloir **une plateforme** (et pas seulement un éditeur de flux) : RAG, agents, gestion des modèles, logs et monitoring au même endroit.
-- Livrer une app LLM **self-host** clé en main avec console d'admin, datasets et suivi d'usage.
-- Outiller une **petite équipe** produit/ops autour d'un backend LLM commun, sans tout coder.
+Plateforme LLMOps low-code de LangGenius, plus large qu'un simple constructeur de flux : une
+console visuelle qui réunit **workflows agentiques**, **pipelines RAG**, gestion
+multi-fournisseurs des modèles, datasets, **observabilité** et exposition en API — du
+prototype à la production dans un seul outil. Backend Python, frontend Next.js/TypeScript. La
+contrepartie de cette couverture est double : la stack est lourde — API, worker, sandbox,
+base, plusieurs conteneurs à faire tourner —, et le verrouillage guette dès que toute la
+logique métier vit dans la console plutôt que dans du code portable.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin d'un simple **canvas de flux** exportable en code → [[Langflow]] (MIT) / [[Flowise]].
-- Projet où la **licence restrictive** (pas de multi-tenant, logo imposé) pose problème → préférer une option MIT/Apache pure.
-- Orchestration **fine en code** versionnée → [[LangGraph]] / [[LangChain]].
+| Prendre si | Écarter si |
+|---|---|
+| Vouloir une plateforme et pas seulement un éditeur de flux : RAG, agents, gestion des modèles, logs et monitoring au même endroit | Un simple canvas de flux exportable en code suffit → [[Langflow]], [[Flowise]] |
+| Livrer une app LLM self-host clé en main, avec console d'admin, datasets et suivi d'usage | L'orchestration doit être fine, versionnée en code → [[LangGraph]], [[LangChain]] |
+| Outiller une petite équipe produit ou ops autour d'un backend LLM commun, sans tout coder | La clause anti-multi-tenant et l'obligation d'afficher le logo bloquent l'usage produit visé : il faut alors une licence Apache ou MIT pure |
+| | Simple POC : plusieurs conteneurs à opérer pour un flux, ce n'est pas le choix le plus léger |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** via Docker Compose (gratuit), ou **Dify Cloud** managé (offre SaaS de l'éditeur) — d'où `hosted: both`.
-- Le cœur est *source-available* : usage commercial possible **sauf** revente en service multi-tenant et retrait du logo, qui exigent une **licence commerciale**.
-- Coût réel dominé par les appels **LLM** ; le déploiement Docker reste single-node par défaut (scalable au prix d'efforts d'infra).
+- Installation — Docker Compose pour le self-host, ou Dify Cloud pour le managé
+- Point d'entrée — console web : workflows, datasets, gestion des modèles, logs ; chaque app s'expose en API
+- Prérequis — plusieurs conteneurs (API, worker, sandbox, base de données)
+- Exécution — self-hébergé ou Dify Cloud ; mono-nœud par défaut, la montée en charge se paie en effort d'infra
+- Coût — gratuit à l'usage, mais la licence — une Apache 2.0 **modifiée** — exige un accord commercial pour revendre un service multi-tenant ou retirer le logo et le copyright de la console ; le coût réel est dominé par les appels LLM
 
-## Pièges
+## Écosystème
 
-- **Licence à lire** avant tout usage produit : la clause anti-multi-tenant et l'obligation de logo surprennent ceux qui croient à de l'Apache pur.
-- Stack relativement **lourde** (plusieurs conteneurs : API, worker, sandbox, base) — pas le choix le plus léger pour un simple POC.
-- Couvre beaucoup de terrain : risque de **verrouillage** dans la plateforme si toute la logique vit dans Dify plutôt que dans du code portable.
-
-## Alternatives
+### Alternatives
 
 - [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
 - [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 
-## Liens
+## Ressources
 
-- Même famille de **builders LLM low-code** que [[Langflow]] et [[Flowise]], en plus *plateforme* (LLMOps).
-- Gère nativement de multiples fournisseurs ; peut aussi router via [[LiteLLM]] / [[OpenRouter]].
-- Concepts : [[Agent patterns]], [[Advanced RAG]], [[Context engineering]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.dify.ai/
+- Documentation — https://docs.dify.ai/
+- Dépôt — https://github.com/langgenius/dify
+
+## Voir aussi
+
+- [[Agent patterns]] — la notion : les formes d'agent que ses workflows assemblent
+- [[Advanced RAG]] — la notion : ce que ses pipelines de récupération mettent en œuvre
+- [[Context engineering]] — la notion du dossier
+- Routage multi-fournisseurs possible via [[LiteLLM]] ou [[OpenRouter]]
+- [[LLM & IA générative]] — le hub du domaine

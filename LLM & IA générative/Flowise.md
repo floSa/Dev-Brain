@@ -19,44 +19,59 @@ url_repo: https://github.com/FlowiseAI/Flowise
 
 # Flowise
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 
-Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on glisse-dépose des **nœuds** (modèles, vector stores, outils, mémoire) sur un **canvas** pour assembler une app, exposée ensuite en **API** ou en widget de chat. Écrit en **TypeScript/Node.js** et **bâti sur LangChain.js** (l'équivalent JS de [[LangChain]]), c'est le pendant côté écosystème **JavaScript** des builders Python. Cœur **Apache-2.0** ; une **édition Enterprise** commerciale ajoute SSO, RBAC et fonctions d'équipe.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Prototyper **visuellement** un chatbot ou un agent RAG et l'exposer en **API/widget** en quelques minutes.
-- Rester dans l'écosystème **Node.js/JavaScript** (intégration front, déploiement serverless JS).
-- Donner un **outil no/low-code** à des profils non-Python pour itérer sur des flux LLM.
+Constructeur **visuel low-code** d'agents, de chatbots et de chaînes LLM : on glisse-dépose
+des **nœuds** — modèles, vector stores, outils, mémoire — sur un **canvas**, et le flux
+s'expose ensuite en **API** ou en widget de chat. Écrit en TypeScript/Node.js et bâti sur
+**LangChain.js**, c'est le seul constructeur de sa catégorie à vivre dans l'écosystème
+JavaScript, les autres étant en Python. Cette filiation est aussi sa dépendance : les
+ruptures d'API de LangChain.js le traversent, et son périmètre fonctionnel reste en retrait
+de la version Python. Comme tout constructeur visuel, les flux non triviaux y deviennent
+vite difficiles à maintenir et à versionner.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack **Python** où l'on veut exporter le flux en code → [[Langflow]].
-- Besoin d'une **plateforme** complète (gestion modèles, observabilité, datasets) → [[Dify]].
-- Orchestration **stateful complexe** versionnée en code → [[LangGraph]].
+| Prendre si | Écarter si |
+|---|---|
+| Prototyper visuellement un chatbot ou un agent RAG et l'exposer en API ou en widget en quelques minutes | Stack Python où l'on veut exporter le flux en code → [[Langflow]] |
+| Rester dans l'écosystème Node.js/JavaScript : intégration front, déploiement serverless JS | Besoin d'une plateforme complète — gestion des modèles, observabilité, datasets → [[Dify]] |
+| Donner un outil no-code ou low-code à des profils non-Python pour itérer sur des flux LLM | Orchestration stateful complexe, versionnée en code → [[LangGraph]] |
+| | Le partage entre l'édition Community et l'édition Enterprise est un préalable : SSO, RBAC et espaces de travail ne sont pas dans le cœur libre |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Cœur **Apache-2.0**, gratuit : **self-host** (npm/Docker) ou **Flowise Cloud** managé (`hosted: both`).
-- **Édition Enterprise** payante pour SSO, RBAC, espaces de travail — modèle open-core de fait.
-- Coût réel dominé par les appels **LLM** des flux ; déploiement single-node par défaut.
+- Installation — npm ou Docker pour le self-host, ou Flowise Cloud pour le managé
+- Point d'entrée — canvas web de nœuds ; le flux se publie en API REST ou en widget de chat
+- Prérequis — Node.js ; la logique repose sur LangChain.js, dont il suit les versions
+- Exécution — self-hébergé ou Flowise Cloud ; mono-nœud par défaut
+- Coût — cœur Apache-2.0 gratuit, édition Enterprise payante (SSO, RBAC, espaces de travail) — un open-core de fait ; le coût réel vient des appels LLM des flux
 
-## Pièges
+## Écosystème
 
-- Bien distinguer ce qui est **Apache-2.0 (Community)** de ce qui relève de l'**Enterprise** commerciale.
-- Comme tout builder visuel : les flux **non triviaux** deviennent vite difficiles à maintenir et à versionner.
-- Dépendance à **LangChain.js** : suivre ses ruptures d'API et l'écart de fonctionnalités avec la version Python.
-
-## Alternatives
+### Alternatives
 
 - [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
 - [[Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
 
-## Liens
+## Ressources
 
-- Même famille de **builders visuels** que [[Langflow]] et [[Dify]] ; côté **JS**, contrairement aux deux (Python).
-- Bâti sur **LangChain.js** (cf. [[LangChain]]).
-- Peut consommer de multiples fournisseurs, dont via [[OpenRouter]] / [[LiteLLM]].
-- Concepts : [[Agent patterns]], [[Advanced RAG]], [[Context engineering]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.flowiseai.com/
+- Documentation — https://docs.flowiseai.com/
+- Dépôt — https://github.com/FlowiseAI/Flowise
+
+## Voir aussi
+
+- [[LangChain]] — l'équivalent Python de la bibliothèque sur laquelle il est bâti
+- [[Agent patterns]] — la notion : les formes d'agent que ses nœuds assemblent
+- [[Advanced RAG]] — la notion : ce que ses flux de récupération mettent en œuvre
+- [[Context engineering]] — la notion du dossier
+- Routage multi-fournisseurs possible via [[OpenRouter]] ou [[LiteLLM]]
+- [[LLM & IA générative]] — le hub du domaine
