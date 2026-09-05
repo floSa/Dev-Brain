@@ -17,38 +17,48 @@ url_repo: https://github.com/dask/dask
 
 # Dask
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 
-Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages : des **collections** qui imitent les API connues — `dask.array` (≈ [[numpy]]), `dask.dataframe` (≈ [[pandas]]), `dask.bag` — et un **planificateur de tâches**. Les opérations sont **paresseuses** : elles construisent un graphe de tâches, optimisé puis exécuté (`.compute()`) en parallèle, sur les cœurs d'une machine ou sur un **cluster** via `dask.distributed`. Permet de traiter des données **plus grosses que la RAM** (par morceaux) et de scaler des bibliothèques familières sans tout réécrire.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Jeux **plus grands que la RAM** ou trop lents sur une machine, tout en gardant l'API numpy/pandas.
-- Passage à un **cluster** multi-nœuds avec un scheduler distribué (`dask.distributed`).
-- Pipelines de tâches **personnalisés** au-delà des dataframes : `dask.delayed`, `futures` pour paralléliser du code Python arbitraire.
-- Scaler scikit-learn, XGBoost, etc. via leurs intégrations Dask.
+Bibliothèque de calcul parallèle et distribué en **Python pur**, à deux étages. En haut,
+des collections qui imitent les API connues — `dask.array` pour numpy, `dask.dataframe`
+pour pandas, `dask.bag` — de sorte qu'on scale du code familier sans le réécrire. En bas,
+un planificateur de tâches : les opérations sont **paresseuses**, elles construisent un
+graphe, optimisé puis exécuté au `.compute()` sur les cœurs d'une machine ou sur un cluster
+via `dask.distributed`. C'est ce qui permet de traiter, par morceaux, des données plus
+grosses que la RAM.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Données qui tiennent en mémoire sur un nœud → [[pandas]] ou [[Polars]] (plus simples, souvent plus rapides à cette échelle).
-- Besoin de vitesse single-node sans cluster → [[Polars]] (multi-thread + streaming).
-- Garder l'API pandas sans gérer un graphe / cluster → [[Modin]] (drop-in, peut d'ailleurs tourner sur Dask).
-- Calcul array N-dim qui tient en RAM → [[numpy]] seul.
+| Prendre si | Écarter si |
+|---|---|
+| Jeux plus grands que la RAM, ou trop lents sur une machine, tout en gardant l'API numpy/pandas | Tout est **paresseux** : rien ne se calcule avant `.compute()` — penser en graphe, pas en exécution immédiate |
+| Passer à un cluster multi-nœuds avec `dask.distributed` — K8s, HPC, cloud | Le **partitionnement** (taille des chunks) fait toute la performance : mal réglé, c'est la lenteur ou l'OOM |
+| Paralléliser du code Python arbitraire au-delà des dataframes — `dask.delayed`, futures | Couverture pandas/numpy **partielle** : tri global et certains `merge` restent coûteux ou absents |
+| Scaler scikit-learn ou XGBoost via leurs intégrations Dask | Le distribué ajoute sérialisation et réseau : ne pas l'introduire si une machine suffit |
+| | Données qui tiennent en mémoire sur un nœud → [[pandas]] ou [[Polars]], plus simples et souvent plus rapides à cette échelle |
+| | Vitesse mono-nœud sans cluster → [[Polars]], multi-thread et streaming |
+| | Garder l'API pandas sans gérer de graphe ni de cluster → [[Modin]], drop-in, qui peut d'ailleurs tourner sur Dask |
+| | Calcul de tableaux N-dimensionnels qui tient en RAM → [[numpy]] seul |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add "dask[complete]"`) ; 100 % Python. BSD-3-Clause, gratuit.
-- **Scheduler local** (threads/processus) sans configuration, ou **cluster distribué** (`dask.distributed`) sur K8s, HPC, cloud.
-- Coût = l'infra du cluster (auto-hébergé ou managé, ex. Coiled). Maintenue par une communauté large (Anaconda, Coiled, NVIDIA…).
+- Installation — `uv add "dask[complete]"`
+- Point d'entrée — import Python : `dask.array`, `dask.dataframe`, `dask.delayed`, puis `.compute()`
+- Prérequis — 100 % Python, rien d'autre en local ; un cluster pour le mode distribué
+- Exécution — scheduler local en threads ou processus sans configuration, ou cluster `dask.distributed` sur K8s, HPC, cloud
+- Coût — gratuit, BSD-3-Clause ; le coût réel est l'infrastructure du cluster, auto-hébergée ou managée (Coiled)
 
-## Pièges
+## Écosystème
 
-- Tout est **paresseux** : rien ne se calcule avant `.compute()` — penser en graphe, pas en exécution immédiate.
-- Le **partitionnement** (taille des chunks/partitions) conditionne la performance ; mal réglé = lenteur ou OOM.
-- Couverture pandas/numpy **partielle** : certaines opérations (tri global, certains `merge`) sont coûteuses ou absentes.
-- Le distribué ajoute de la complexité (sérialisation, réseau) : ne pas l'introduire si une seule machine suffit.
-
-## Alternatives
+### Alternatives
 
 - [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
 - [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
@@ -57,10 +67,12 @@ Bibliothèque de **calcul parallèle et distribué en Python pur**. Deux étages
 - [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 - [[Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 
-## Liens
+## Ressources
 
-- APIs scalées : [[pandas]] (`dask.dataframe`) et [[numpy]] (`dask.array`).
-- Peut servir de moteur d'exécution à [[Modin]].
-- Autres moteurs de calcul distribué : [[Spark]] (big data JVM), [[Ray]] (Python ML).
-- [[Comparatif - Calcul distribué]] — comparatif de la catégorie
-- Doc : https://docs.dask.org/
+- Documentation — https://docs.dask.org/
+- Dépôt — https://github.com/dask/dask
+
+## Voir aussi
+
+- [[Calcul distribué]] — le hub du domaine
+- [[Comparatif - Calcul distribué]] — ce qui départage les moteurs du dossier
