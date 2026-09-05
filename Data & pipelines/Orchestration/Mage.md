@@ -34,7 +34,7 @@ transformer, exporter — dans une UI type notebook, chaque bloc restant du vrai
 SQL ou R éditable, avec prévisualisation des données à la sortie de chaque étape. La
 promesse est un démarrage rapide sans la charge opérationnelle d'un orchestrateur
 distribué. Deux contreparties viennent avec : l'UI par blocs masque des conventions de
-structure de projet qu'il faut finir par comprendre, et le développement open-source avance
+structure de projet qu'il faut finir par comprendre, et le développement de l'édition libre avance
 moins vite depuis le virage vers l'offre managée Mage Pro — la vélocité du dépôt est à
 surveiller avant de l'installer pour dix ans.
 

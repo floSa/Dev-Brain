@@ -17,42 +17,56 @@ url_repo: https://github.com/mwaskom/seaborn
 
 # seaborn
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.
 
-Surcouche **haut niveau** de [[matplotlib]] orientée **statistiques**. Prend un `DataFrame` [[pandas]] et produit des figures soignées en un appel : distributions (`histplot`, `kdeplot`), relations (`scatterplot`, `lmplot`), catégories (`boxplot`, `violinplot`), matrices (`heatmap`). Gère pour soi l'agrégation, les intervalles de confiance, le mapping couleur/facette. Depuis 0.12, l'interface **objects** (`seaborn.objects`, importée `so`) offre une grammaire des graphiques par couches. Le résultat reste une figure matplotlib, donc personnalisable à la main.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Visualisation **exploratoire statistique** rapide depuis un DataFrame.
-- Graphes courants jolis par défaut, sans régler matplotlib à la main.
-- Facettes (`FacetGrid`, `relplot`) pour décliner un graphe par sous-groupes.
-- Intervalles de confiance / régressions tracés automatiquement (`lmplot`, `regplot`).
+Surcouche haut niveau de [[matplotlib]] orientée **statistiques**. Elle prend un `DataFrame`
+[[pandas]] et produit une figure soignée en un appel : distributions (`histplot`,
+`kdeplot`), relations (`scatterplot`, `lmplot`), catégories (`boxplot`, `violinplot`),
+matrices (`heatmap`). L'agrégation, les intervalles de confiance, le mapping couleur et les
+facettes sont gérés pour soi. Le résultat reste une figure matplotlib : la touche finale se
+fait en récupérant l'`Axes` et en redescendant dans l'API du socle. Depuis la 0.12, une
+seconde interface coexiste avec la première, `seaborn.objects`, qui expose une grammaire des
+graphiques par couches — il faut en choisir une et s'y tenir.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin de contrôle fin / figure composée sur mesure → [[matplotlib]] directement.
-- Interactivité web (zoom, survol, dashboards) → [[plotly]], [[bokeh]] ou [[altair]].
-- Très gros volumes à tracer point par point → échantillonner ou agréger en amont.
+| Prendre si | Écarter si |
+|---|---|
+| Visualisation exploratoire **statistique** rapide, directement depuis un DataFrame | Aucune interactivité : la sortie est une image, héritée du socle statique |
+| Graphes courants jolis par défaut, sans régler matplotlib à la main | C'est un wrapper : la personnalisation fine oblige à retomber sur l'API matplotlib |
+| Facettes (`FacetGrid`, `relplot`) pour décliner un graphe par sous-groupes | `set_theme` modifie l'état matplotlib **partagé** du processus, donc les figures des autres bibliothèques |
+| Intervalles de confiance et régressions tracés automatiquement (`lmplot`, `regplot`) | Deux API coexistent — fonctions historiques et `seaborn.objects` — et les mélanger désoriente |
+| | Très gros volumes tracés point par point : il faut échantillonner ou agréger en amont |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add seaborn`) ; tire matplotlib, pandas, numpy. BSD-3-Clause, gratuit.
-- **Single-node**, rendu statique (hérité de matplotlib) ; scipy/statsmodels en option pour certaines stats.
-- Projet quasi mono-mainteneur (M. Waskom) : cadence de release lente, mais socle stable et mûr.
+- Installation — `uv add seaborn` ; tire matplotlib, pandas et numpy
+- Point d'entrée — import Python, `import seaborn as sns` ; entrée naturelle, un DataFrame
+- Prérequis — Python ; scipy et statsmodels en option pour certaines statistiques
+- Exécution — dans le process appelant, mono-nœud ; rendu statique hérité de matplotlib
+- Coût — gratuit, licence BSD-3-Clause ; projet quasi mono-mainteneur, cadence de publication lente
 
-## Pièges
+## Écosystème
 
-- C'est un wrapper : pour la touche finale, on retombe sur l'API matplotlib (récupérer l'`Axes`).
-- Deux API coexistent (fonctions historiques vs `seaborn.objects`) — choisir et s'y tenir.
-- Les styles globaux (`set_theme`) modifient l'état matplotlib partagé.
-- Pas d'interactivité : sortie image.
-
-## Alternatives
+### Alternatives
 
 - [[matplotlib]] — Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.
 
-## Liens
+## Ressources
 
-- Bâtie sur [[matplotlib]] ; consomme des DataFrames [[pandas]].
-- [[Comparatif - Visualisation]] — seaborn vs matplotlib / plotly / altair / bokeh.
-- Doc : https://seaborn.pydata.org/
+- Documentation — https://seaborn.pydata.org/
+- Dépôt — https://github.com/mwaskom/seaborn
+
+## Voir aussi
+
+- [[Visualisation]] — le hub du dossier
+- [[pandas]] — la source de données attendue en entrée
+- [[Comparatif - Visualisation]] — ce qui départage les bibliothèques du dossier
