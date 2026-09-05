@@ -11,7 +11,7 @@ maturite: beta
 langage: TypeScript
 scaling: single-node
 alternatives: []
-complements: []
+complements: ["[[fastmcp]]"]
 tags: [mcp, testing, tool-use]
 url_docs: https://www.mcpjam.com
 url_repo: https://github.com/MCPJam/inspector
@@ -19,39 +19,58 @@ url_repo: https://github.com/MCPJam/inspector
 
 # mcpjam
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
 
-Banc d'essai pour le [[mcp-protocol|Model Context Protocol]] : on y branche un serveur MCP et on **exécute ses outils, resources, resource templates, prompts et flux d'elicitation à la main**, avec une **observabilité JSON-RPC complète** (messages bruts dans les deux sens). Un **playground LLM** permet de discuter contre le serveur avec plusieurs modèles côte à côte pour voir comment un agent appellerait réellement les outils. **Fork de l'inspecteur MCP officiel** d'Anthropic, lancé parce que ses mainteneurs trouvaient l'amont trop lent ; écrit en **TypeScript** (Node 20+). Tourne en **web hébergé** (app.mcpjam.com), **app desktop** Mac/Windows, ou **terminal** (`npx @mcpjam/inspector@latest`). Inclut un **debugger OAuth**, un cadre d'**évals** et un **CLI/SDK** pour la CI/CD. Licence **Apache-2.0**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Développer / déboguer un serveur MCP** (p. ex. bâti avec [[fastmcp]]) : voir les schémas annoncés, appeler un outil, lire la réponse JSON-RPC.
-- Reproduire le comportement d'un **agent** : tester l'enchaînement d'appels d'outils dans le playground LLM avant de câbler l'app.
-- Vérifier les **transports** (stdio, HTTP/S) et le flux **OAuth** d'un serveur distant.
-- Intégrer des **évals** d'outils MCP en CI via le CLI.
+Banc d'essai pour le Model Context Protocol : on y branche un serveur MCP et on **exécute ses
+outils, resources, resource templates, prompts et flux d'elicitation à la main**, avec une
+**observabilité JSON-RPC complète** — les messages bruts dans les deux sens. Un **playground
+LLM** permet de discuter contre le serveur avec plusieurs modèles côte à côte, pour voir
+comment un agent appellerait réellement les outils : il *illustre* ce comportement, il ne le
+*certifie* pas. C'est un **fork de l'inspecteur MCP officiel** d'Anthropic, lancé parce que
+ses mainteneurs trouvaient l'amont trop lent, écrit en TypeScript. Il embarque un debugger
+OAuth, un cadre d'**évals** et un CLI/SDK pour la CI.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Tests automatisés du code du serveur lui-même → framework de tests classique ([[pytest]] côté Python) ; mcpjam est un **inspecteur interactif**, pas un test runner unitaire.
-- Besoin de rester sur l'outil de référence strict → **MCP Inspector officiel** (`@modelcontextprotocol/inspector`).
+| Prendre si | Écarter si |
+|---|---|
+| Développer ou déboguer un serveur MCP : voir les schémas annoncés, appeler un outil, lire la réponse JSON-RPC | Tests automatisés du code du serveur lui-même : c'est un inspecteur interactif, pas un test runner unitaire → [[pytest]] côté Python |
+| Reproduire le comportement d'un agent : tester l'enchaînement d'appels d'outils avant de câbler l'app | Besoin de rester sur l'outil de référence strict : c'est le MCP Inspector officiel, dont il est le fork |
+| Vérifier les transports (stdio, HTTP/S) et le flux OAuth d'un serveur distant | Jeune fork en évolution rapide : surface et flags bougent d'une version à l'autre, épingler la version dans les scripts CI |
+| Intégrer des évals d'outils MCP en CI via le CLI | Le web hébergé parle à un serveur local via un pont : pour un serveur sensible, ou des outils à effet de bord, préférer le desktop ou le terminal |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit. Usage zéro-install via le **web hébergé**, ou **local** (desktop / `npx` / Docker) pour garder les serveurs et secrets sur sa machine.
-- Outil de **développement**, single-node ; les appels LLM du playground passent par les clés du fournisseur choisi (coût = ces appels).
+- Installation — `npx @mcpjam/inspector@latest` en terminal, app desktop Mac et Windows, Docker, ou l'instance web hébergée (app.mcpjam.com)
+- Point d'entrée — interface d'inspection : outils, resources, resource templates, prompts, elicitation ; plus un playground LLM et un debugger OAuth
+- Prérequis — Node 20+ pour l'exécution locale ; les appels du playground consomment les clés du fournisseur choisi
+- Exécution — outil de développement, mono-nœud : en local pour garder serveurs et secrets sur la machine, ou en web hébergé pour un usage zéro-install
+- Coût — gratuit ; le seul coût est celui des appels LLM du playground
 
-## Pièges
+## Écosystème
 
-- Jeune **fork** en évolution rapide : surface et flags bougent d'une version à l'autre — épingler la version dans les scripts CI.
-- Le **web hébergé** parle à un serveur local via un pont : attention à ce qu'on expose (secrets, outils à effet de bord) ; préférer le desktop/terminal pour un serveur sensible.
-- Playground LLM ≠ garantie de production : il **illustre** le comportement d'un agent, il ne le **certifie** pas.
+### Alternatives
 
-## Alternatives
+- **MCP Inspector officiel** (`modelcontextprotocol/inspector`) — l'amont dont mcpjam est issu : plus minimaliste, sans playground LLM ni évals. *(Page dédiée non créée.)*
 
-- **MCP Inspector officiel** ([[mcp-protocol]], `modelcontextprotocol/inspector`) — l'amont dont mcpjam est issu : plus minimaliste, sans playground LLM ni évals. *(Page dédiée non créée.)*
+### Compléments
 
-## Liens
+- [[fastmcp]] — La façon rapide et pythonique de construire des serveurs (et clients) MCP — les serveurs qu'il inspecte le plus souvent.
 
-- Inspecte / débogue des serveurs [[mcp-protocol]], notamment ceux bâtis avec [[fastmcp]].
-- Pour les tests unitaires du serveur côté Python : [[pytest]].
-- Doc : https://www.mcpjam.com
+## Ressources
+
+- Documentation — https://www.mcpjam.com
+- Dépôt — https://github.com/MCPJam/inspector
+
+## Voir aussi
+
+- [[mcp-protocol]] — la notion : le protocole des serveurs qu'il inspecte
+- [[LLM & IA générative]] — le hub du domaine
