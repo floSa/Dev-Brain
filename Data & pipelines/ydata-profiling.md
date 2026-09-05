@@ -17,42 +17,55 @@ url_repo: https://github.com/ydataai/ydata-profiling
 
 # ydata-profiling
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 
-Outil de référence de l'[[EDA automatisée & profiling|EDA automatisée]] : `ProfileReport(df)` génère en une ligne un rapport HTML exhaustif d'un jeu de données. Par variable (type inféré, distribution, quantiles, taux de manquants, cardinalité, valeurs fréquentes) et entre variables (corrélations Pearson/Spearman/Cramér's V, interactions, doublons), plus une section d'**alertes** automatiques (constantes, forte cardinalité, fort taux de manquants, corrélations suspectes). Ex-`pandas-profiling`, renommé pour refléter le support **Spark** (depuis la v4).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Première passe d'EDA juste après le chargement, avant tout nettoyage — un portrait complet sans écrire de code.
-- Produire un rapport partageable (HTML auto-porté) pour un revue de qualité de données.
-- Comparer deux jeux (`compare()`) ou profiler un DataFrame **Spark** sur du volume.
-- Repérer d'un coup d'œil constantes, quasi-identifiants, manquants structurés, corrélations cible suspectes ([[Data leakage]]).
+Profileur **exhaustif** : `ProfileReport(df)` génère en une ligne un rapport HTML complet
+d'un jeu de données. Par variable — type inféré, distribution, quantiles, taux de manquants,
+cardinalité, valeurs fréquentes — et entre variables — corrélations Pearson, Spearman et
+Cramér's V, interactions, doublons — plus une section d'**alertes** automatiques :
+constantes, forte cardinalité, manquants massifs, corrélations suspectes avec la cible. Le
+prix de cette exhaustivité est en $O(p^2)$ : corrélations et interactions rendent le rapport
+interminable sur un jeu large. Ex-`pandas-profiling`, renommé quand la v4 a ajouté le backend
+Spark.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Rapport centré sur une **cible** ou comparaison train/test plus lisible → [[sweetviz]].
-- Diagnostic ciblé des seules **valeurs manquantes** (matrice, dendrogramme de nullité) → [[missingno]].
-- Très gros jeu en pandas : les corrélations et interactions en $O(p^2)$ rendent le rapport interminable — échantillonner ou désactiver ces calculs (mode `minimal`).
+| Prendre si | Écarter si |
+|---|---|
+| Première passe d'EDA juste après le chargement, avant tout nettoyage — un portrait complet sans écrire de code | Jeu large en pandas : les corrélations et interactions en $O(p^2)$ explosent — passer `minimal=True` ou échantillonner |
+| Produire un rapport partageable, HTML auto-porté, pour une revue de qualité de données | L'ancien paquet `pandas-profiling` est gelé : installer `ydata-profiling` et importer `from ydata_profiling import ProfileReport` |
+| Comparer deux jeux (`compare()`) ou profiler un DataFrame Spark sur du volume | Rapport générique : un point de départ, qui n'oriente pas les questions métier et ne remplace pas une viz ciblée |
+| Repérer d'un coup d'œil constantes, quasi-identifiants, manquants structurés, corrélations suspectes avec la cible ([[Data leakage]]) | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add ydata-profiling`), gratuite (MIT). Rien à héberger.
-- Single-node sur pandas ; backend **Spark** pour le distribué (sous-ensemble de métriques).
-- Sortie : HTML autonome, ou widget dans un [[Notebooks-as-code|notebook]].
+- Installation — `uv add ydata-profiling`
+- Point d'entrée — import Python, `ProfileReport(df)` ; `compare()` pour deux jeux
+- Prérequis — un DataFrame pandas, ou un DataFrame Spark pour le backend distribué (sous-ensemble de métriques)
+- Exécution — single-node sur pandas, distribué via Spark ; sortie HTML autonome ou widget dans un notebook
+- Coût — gratuit, MIT
 
-## Pièges
+## Écosystème
 
-- Coûteux sur larges jeux : passer en `minimal=True` ou échantillonner, sinon corrélations/interactions explosent.
-- L'ancien paquet `pandas-profiling` est gelé — installer `ydata-profiling` (import `from ydata_profiling import ProfileReport`).
-- Rapport générique : un **point de départ**, il n'oriente pas les questions métier ni ne remplace une viz ciblée.
-
-## Alternatives
+### Alternatives
 
 - [[sweetviz]] — EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
 - [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 
-## Liens
+## Ressources
 
-- Concept : [[EDA automatisée & profiling]] — la notion que cet outil incarne.
-- [[Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
-- Doc : https://docs.profiling.ydata.ai/
+- Documentation — https://docs.profiling.ydata.ai/
+- Dépôt — https://github.com/ydataai/ydata-profiling
+
+## Voir aussi
+
+- [[EDA automatisée & profiling]] — la notion du dossier, que cet outil incarne
+- [[Comparatif - Outils EDA - profiling]] — ce qui départage les trois profileurs du dossier

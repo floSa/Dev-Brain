@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[ADBC]]"]
-complements: []
+complements: ["[[Polars]]"]
 tags: [dataframe, columnar]
 url_docs: https://sfu-db.github.io/connector-x/
 url_repo: https://github.com/sfu-db/connector-x
@@ -17,43 +17,60 @@ url_repo: https://github.com/sfu-db/connector-x
 
 # connectorx
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
 
-Bibliothèque **spécialisée dans une seule chose** : sortir des données d'une base SQL vers un DataFrame Python le plus vite possible et avec le moins de mémoire. Écrite en **Rust**, elle applique le principe **zero-copy** — la donnée est copiée **exactement une fois**, directement de la source vers la destination, sans passer par des objets Python intermédiaires. Elle **parallélise** la lecture en partitionnant la requête sur une colonne. Sources : PostgreSQL, MySQL, SQLite, SQL Server, Oracle, BigQuery… Destinations : pandas, Polars, Arrow, Modin, Dask, NumPy. C'est le moteur derrière `pl.read_database(engine="connectorx")` de [[Polars]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Charger un gros résultat SQL en DataFrame nettement plus vite que `pandas.read_sql`.
-- Lecture parallélisée d'une grosse table en partitionnant sur une clé numérique.
-- Alimenter [[pandas]] ou [[Polars]] depuis une base sans pipeline ELT lourd.
-- Minimiser l'empreinte mémoire d'une extraction (copie unique, pas de gonflement intermédiaire).
+Bibliothèque spécialisée dans une seule opération : sortir le résultat d'une requête SQL vers
+un DataFrame Python, le plus vite possible et avec le moins de mémoire. Le principe est le
+**zero-copy** — la donnée est copiée exactement une fois, de la source vers la destination,
+sans objets Python intermédiaires — et la lecture se **parallélise** en partitionnant la
+requête sur une colonne. Sources : PostgreSQL, MySQL, SQLite, SQL Server, Oracle, BigQuery.
+Destinations : pandas, Polars, Arrow, Modin, Dask, NumPy. C'est le moteur derrière
+`read_database(engine="connectorx")` côté Polars. Le corollaire de cette spécialisation est
+qu'il ne fait rien d'autre : il charge, il n'écrit pas.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin d'**écrire** dans la base, de transactions ou d'une API de connectivité complète → [[ADBC]] ou un driver DB-API ([[psycopg2]]).
-- Mapping objet, migrations, modèle de domaine → [[SQLAlchemy]].
-- Requêtes analytiques locales sur fichiers/Parquet sans base distante → [[DuckDB]] directement.
-- Pilote exotique non supporté : la couverture des sources est plus étroite qu'un driver générique.
+| Prendre si | Écarter si |
+|---|---|
+| Charger un gros résultat SQL en DataFrame nettement plus vite que `pandas.read_sql` | Écrire dans la base, transactions, connectivité complète → [[ADBC]], ou un driver DB-API comme [[psycopg2]] |
+| Lire une grosse table en parallèle, en partitionnant sur une clé numérique | Mapping objet, migrations, modèle de domaine → [[SQLAlchemy]] |
+| Alimenter [[pandas]] depuis une base sans monter un pipeline ELT | Requêtes analytiques locales sur fichiers ou Parquet, sans base distante → [[DuckDB]] |
+| Minimiser l'empreinte mémoire d'une extraction : copie unique, aucun gonflement intermédiaire | Requête non partitionnable : sans colonne adaptée la lecture retombe en mono-flux, et une clé mal choisie déséquilibre les partitions |
+| | Types exotiques — numerics larges, dates avec fuseau : le mapping est parfois imparfait, vérifier le schéma de sortie |
+| | Pilote exotique, ou base dont la version compte : la couverture des sources est plus étroite qu'un driver générique, le projet est pré-1.0 et sa maintenance irrégulière |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add connectorx`), wheels précompilés. MIT, gratuit, single-node.
-- Gain maximal quand la requête est **partitionnable** (clé numérique régulière) ; sinon lecture mono-flux.
-- Pré-1.0 : vérifier la version et la matrice de sources/destinations supportées avant de s'engager.
+- Installation — `uv add connectorx`, wheels précompilés
+- Point d'entrée — `connectorx.read_sql(conn, query)`, ou `read_database(engine="connectorx")` côté Polars
+- Prérequis — une chaîne de connexion vers une source supportée ; une colonne de partitionnement pour paralléliser
+- Exécution — dans le process appelant, single-node ; le travail lourd se fait en Rust
+- Coût — gratuit, MIT
 
-## Pièges
+## Écosystème
 
-- Lecture seule : connectorx **charge**, il n'écrit pas et n'exécute pas de DDL.
-- Le partitionnement suppose une colonne adaptée ; mal choisie, les partitions sont déséquilibrées.
-- Mapping de types parfois imparfait sur les types exotiques (numerics larges, dates/timezones) — vérifier le schéma de sortie.
-- Projet à la maintenance irrégulière ; tester sur sa version de base de données cible.
-
-## Alternatives
+### Alternatives
 
 - [[ADBC]] — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.
 
-## Liens
+### Compléments
 
-- [[Polars]] — l'utilise comme moteur de `read_database`.
-- [[Comparatif - Manipulation de données]] — où atterrissent les DataFrames chargés.
-- Doc : https://sfu-db.github.io/connector-x/
+- [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core. Il appelle connectorx comme moteur de son `read_database`.
+
+## Ressources
+
+- Documentation — https://sfu-db.github.io/connector-x/
+- Dépôt — https://github.com/sfu-db/connector-x
+
+## Voir aussi
+
+- [[ELT vs ETL & idempotence]] — l'étape d'extraction que cette bibliothèque exécute
+- [[Comparatif - Manipulation de données]] — où atterrissent les DataFrames chargés
