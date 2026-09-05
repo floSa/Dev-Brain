@@ -17,42 +17,56 @@ url_repo: https://github.com/apify/crawlee
 
 # Crawlee
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
 
-Framework de crawling d'**Apify**, à **API unifiée** entre crawlers HTTP (Cheerio, BeautifulSoup, Parsel) et crawlers **navigateur** ([[Playwright]], Puppeteer) : on change de moteur sans réécrire la logique. Batteries incluses pour le scraping fiable : **rotation de proxys**, **anti-fingerprint** de navigateur, **autoscaling** selon les ressources, file d'URLs **persistante** (reprise après crash), retries et stockage de datasets. Historiquement Node.js/TypeScript ; le port **Python** (`crawlee-python`) est stable depuis la v1.0 (septembre 2025). Positionné explicitement pour l'extraction de données destinée aux LLM / RAG.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Écosystème **Node.js / TypeScript** pour un crawler de production robuste.
-- Besoin de basculer entre **HTTP et navigateur** selon les pages, avec une même base de code.
-- Crawls longs nécessitant reprise, proxys et anti-fingerprint sans tout recâbler à la main.
+Framework de crawling d'**Apify**. Son idée centrale est l'**API unifiée** entre les crawlers
+HTTP (Cheerio, BeautifulSoup, Parsel) et les crawlers **navigateur** (Playwright, Puppeteer) :
+on change de moteur sans réécrire la logique d'extraction. Il embarque ce qu'un crawler finit
+toujours par redévelopper une fois en exploitation — rotation de proxys, anti-fingerprint,
+autoscaling selon les ressources de la machine, file d'URLs persistante pour reprendre après
+un crash, retries et stockage de datasets. Historiquement Node.js / TypeScript ; le port
+Python (`crawlee-python`) est stable depuis la v1.0, en septembre 2025. Positionné
+explicitement pour l'extraction de données destinée aux LLM et au RAG.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Stack **Python** historique et matûre de préférence → [[Scrapy]].
-- Simple pilotage d'un navigateur pour quelques pages JS → [[Playwright]] seul suffit.
-- Résilience des sélecteurs aux changements de page → [[Scrapling]].
+| Prendre si | Écarter si |
+|---|---|
+| Écosystème Node.js / TypeScript pour un crawler de production robuste | Deux implémentations, Node et Python, à parité proche mais non identique : vérifier la fonctionnalité voulue dans le port choisi |
+| Basculer entre HTTP et navigateur selon les pages, avec une même base de code | Le mode navigateur reste coûteux en CPU et en RAM — préférer le crawler HTTP quand le JS n'est pas nécessaire |
+| Crawls longs à reprendre après incident : file d'URLs persistante, retries | L'autoscaling est celui d'une seule machine : la vraie distribution multi-nœuds passe par la plateforme Apify, payante |
+| Proxys et anti-fingerprint sans les recâbler à la main | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`npm i crawlee` ou `uv add crawlee` pour Python). Apache-2.0, gratuit.
-- **Single-node** avec autoscaling interne (adapte la concurrence aux ressources de la machine). Passage à l'échelle et ordonnancement managés via la **plateforme Apify** (payante).
-- En navigateur : mêmes contraintes que Playwright/Puppeteer (dépendances système, CPU/RAM).
+- Installation — `npm i crawlee`, ou `uv add crawlee` pour le port Python
+- Point d'entrée — classes de crawler HTTP ou navigateur, partageant la même API
+- Prérequis — Node.js ou Python ; en mode navigateur, les dépendances système de Playwright ou Puppeteer
+- Exécution — mono-nœud, avec autoscaling interne qui adapte la concurrence aux ressources ; l'ordonnancement managé passe par la plateforme Apify
+- Coût — gratuit, Apache-2.0 ; la plateforme Apify est payante
 
-## Pièges
+## Écosystème
 
-- Le mode navigateur reste coûteux en ressources — privilégier le crawler HTTP quand le JS n'est pas nécessaire.
-- Deux implémentations (Node et Python) à parité proche mais non identique : vérifier la fonctionnalité voulue dans le port choisi.
-- L'autoscaling « une machine » ne remplace pas une vraie distribution multi-nœuds (celle-ci passe par la plateforme Apify).
-
-## Alternatives
+### Alternatives
 
 - [[Scrapy]] — Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
 - [[Scrapling]] — Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 - [[Playwright]] — Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
-## Liens
+## Ressources
 
-- [[Web scraping]] — le concept (HTTP vs navigateur, anti-bot).
-- [[Comparatif - Scraping]]
-- Doc : https://crawlee.dev/
+- Documentation — https://crawlee.dev/
+- Dépôt — https://github.com/apify/crawlee
+
+## Voir aussi
+
+- [[Web scraping]] — la notion du dossier : HTTP contre navigateur, anti-bot
+- [[Comparatif - Scraping]] — ce qui départage les outils du dossier

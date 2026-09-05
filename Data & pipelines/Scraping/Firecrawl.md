@@ -19,40 +19,52 @@ url_repo: https://github.com/firecrawl/firecrawl
 
 # Firecrawl
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.
 
-Service qui **transforme des pages web en Markdown ou JSON structuré directement exploitable par un LLM**, sans avoir à gérer soi-même le rendu JS, la pagination ou le nettoyage du HTML. Un seul appel `scrape` (une URL) ou `crawl` (tout un site en suivant les liens) renvoie du contenu propre, avec une extraction structurée guidée par schéma. Pensé pour l'ingestion RAG et les agents : c'est la brique « du web au contexte » plutôt qu'un framework de crawl bas niveau. Cœur open source sous AGPL-3.0 (SDK MIT), disponible en self-host ou en cloud managé avec proxys et anti-bot inclus.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Alimenter un **RAG** ou un agent : récupérer un site en Markdown propre sans écrire de parseur.
-- Extraction **structurée** guidée par schéma (prix, articles, fiches) sur des pages hétérogènes.
-- Éviter l'infrastructure de scraping (rendu, proxys, retries) en déléguant à une API.
+Service qui transforme des pages web en **Markdown ou en JSON structuré** directement
+exploitable par un LLM. Un appel `scrape` traite une URL, `crawl` parcourt tout un site en
+suivant les liens, et l'extraction structurée est guidée par un schéma. Le rendu JavaScript,
+la pagination, les proxys, l'anti-bot et le nettoyage du HTML sont pris en charge : c'est la
+brique « du web au contexte » plutôt qu'un framework de crawl bas niveau. Le cœur est sous
+**AGPL-3.0**, les SDK sous MIT — une distinction qui commande le self-host.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Contrôle fin du crawl (pipelines, middlewares, règles par domaine) → [[Scrapy]] ou [[Crawlee]].
-- Interactions complexes sur la page (clics, scroll, formulaires) → [[Playwright]].
-- Interface **visuelle sans code** pour non-développeurs → [[Maxun]].
+| Prendre si | Écarter si |
+|---|---|
+| Alimenter un RAG ou un agent : récupérer un site en Markdown propre sans écrire de parseur | Le cœur en AGPL-3.0 impose de publier ses modifications dès que le service est exposé : à vérifier avant tout usage fermé |
+| Extraction structurée guidée par schéma sur des pages hétérogènes — prix, articles, fiches | Facturation à la page côté cloud : un crawl large consomme beaucoup de crédits, la profondeur et le périmètre se cadrent |
+| Déléguer l'infrastructure de scraping — rendu, proxys, retries — à une API | En self-host, c'est une infrastructure à opérer (Redis, workers), pas une simple bibliothèque |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Cloud managé** (firecrawl.dev) : facturation à l'usage (crédits par page), proxys et anti-bot gérés.
-- **Self-host** (AGPL-3.0, gratuit) : stack Docker avec workers et Redis — orientée service distribué. L'AGPL impose de publier les modifications si le service est exposé.
-- SDKs Python, Node, et autres langages pour appeler l'API.
+- Installation — stack Docker avec workers et Redis pour le self-host ; rien à installer côté cloud managé
+- Point d'entrée — API HTTP `scrape` et `crawl`, avec SDK Python, Node et autres langages
+- Prérequis — Docker et les services annexes en self-host ; une clé d'API en cloud
+- Exécution — self-hébergé ou managé, distribué
+- Coût — gratuit en self-host sous AGPL-3.0 ; le cloud est facturé à l'usage, en crédits par page
 
-## Pièges
+## Écosystème
 
-- Coût à la page côté cloud : un crawl large peut consommer beaucoup de crédits — cadrer la profondeur et le périmètre.
-- L'AGPL du cœur contraint les usages fermés en self-host exposé — vérifier la compatibilité de licence.
-- Dépendance à un service : en self-host, c'est une infrastructure à opérer (Redis, workers), pas une simple lib.
-
-## Alternatives
+### Alternatives
 
 - [[Maxun]] — Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.
 
-## Liens
+## Ressources
 
-- [[Web scraping]] — le concept (rendu, anti-bot, ingestion).
-- [[Comparatif - Scraping]]
-- Doc : https://docs.firecrawl.dev/
+- Documentation — https://docs.firecrawl.dev/
+- Dépôt — https://github.com/firecrawl/firecrawl
+
+## Voir aussi
+
+- [[Web scraping]] — la notion du dossier : rendu, anti-bot, ingestion
+- [[pdf-inspector]] — même éditeur, côté parsing de documents
+- [[Comparatif - Scraping]] — ce qui départage les outils du dossier

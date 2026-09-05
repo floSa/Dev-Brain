@@ -9,7 +9,7 @@ licence_type: source-available
 maturite: production
 langage: Python
 alternatives: ["[[Unstructured]]", "[[Docling]]", "[[LlamaParse]]", "[[pdf-inspector]]", "[[OpenDataLoader PDF]]"]
-complements: []
+complements: ["[[PyMuPDF]]"]
 tags: [document-parsing, pdf, ocr, markdown-conversion, rag]
 url_docs: https://github.com/datalab-to/marker
 url_repo: https://github.com/datalab-to/marker
@@ -17,37 +17,45 @@ url_repo: https://github.com/datalab-to/marker
 
 # Marker
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 
-Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormais Office, images, EPUB — en **Markdown, JSON, HTML ou chunks**, rapidement et avec une bonne fidélité (formules, tableaux, ordre de lecture). C'est un **pipeline vision multi-étapes** bâti sur la famille de modèles **OCR Surya** (détection, reconnaissance, analyse de layout). Nuance de licence majeure : le **code est en GPL-3.0**, mais les **poids des modèles** suivent une licence OpenRAIL-M modifiée, gratuite seulement pour la recherche, l'usage perso et les structures sous **2 M$** de revenus/financement — au-delà, licence commerciale Datalab requise.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | source-available | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Convertir en lot des PDF en **Markdown propre** pour le RAG, en self-host avec GPU.
-- Documents riches (formules, tableaux, multi-colonnes) où la qualité de conversion compte.
-- **Débit élevé** recherché (Marker est optimisé pour des dizaines de pages/seconde sur GPU).
-- Documents **scannés** : l'OCR Surya est intégré.
+Marker, de datalab.to (Vik Paruchuri), convertit des PDF — et désormais de l'Office, des
+images, de l'EPUB — en **Markdown, JSON, HTML ou chunks**, avec une bonne fidélité sur les
+formules, les tableaux et l'ordre de lecture. C'est un **pipeline vision multi-étapes** bâti
+sur la famille de modèles OCR **Surya**, du même éditeur : détection, reconnaissance, analyse
+de layout. Il est optimisé pour le **débit** — des dizaines de pages par seconde sur GPU — et
+l'OCR intégré lui ouvre les documents scannés. Sa vraie frontière est la licence, à deux
+étages : le code d'un côté, les **poids des modèles** de l'autre, qui ne suivent pas les mêmes
+règles.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Usage commercial au-dessus du seuil de 2 M$ sans payer la licence → [[Docling]] (MIT) / [[Unstructured]] (Apache-2.0).
-- Pas de GPU disponible → outils CPU ([[pdfplumber]], [[Docling]]) ou service managé [[LlamaParse]].
-- Simple extraction de texte brut, sans modèles → [[PyMuPDF]].
+| Prendre si | Écarter si |
+|---|---|
+| Convertir en lot des PDF en Markdown propre pour le RAG, en self-host avec GPU | Double licence à surveiller : code en GPL-3.0, poids en OpenRAIL-M modifiée, gratuits seulement en dessous de 2 M$ de revenus ou de financement — au-delà, licence commerciale Datalab |
+| Documents riches — formules, tableaux, multi-colonnes — où la qualité de conversion compte | Le GPL peut contaminer une distribution propriétaire : bien isoler |
+| Débit élevé recherché, de l'ordre de dizaines de pages par seconde sur GPU | Sans GPU, le débit s'effondre |
+| Documents scannés : l'OCR Surya est intégré, rien à brancher | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Self-host : `pip install marker-pdf`, modèles Surya téléchargés ; **GPU fortement recommandé**.
-- Managé : **API Datalab** (payante) pour le même moteur sans infra.
-- **Code GPL-3.0** + **poids OpenRAIL-M** restreints → vérifier l'éligibilité avant tout usage commercial.
-- Single-node (par instance GPU).
+- Installation — `pip install marker-pdf` ; les modèles Surya se téléchargent
+- Point d'entrée — conversion vers Markdown, JSON, HTML ou chunks ; l'API Datalab expose le même moteur en managé
+- Prérequis — GPU fortement recommandé
+- Exécution — mono-nœud par instance GPU en self-host ; l'API Datalab évite toute infra
+- Coût — code GPL-3.0 gratuit ; poids OpenRAIL-M gratuits sous le seuil de 2 M$, licence commerciale Datalab au-delà ; l'API Datalab est payante
 
-## Pièges
+## Écosystème
 
-- **Double licence** à surveiller : le code GPL *et* la restriction sur les poids de modèles.
-- Sans GPU, le débit s'effondre.
-- L'aspect GPL peut contaminer une distribution propriétaire — bien isoler.
-
-## Alternatives
+### Alternatives
 
 - [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
@@ -55,8 +63,16 @@ Marker (datalab.to, créé par Vik Paruchuri) convertit des PDF — et désormai
 - [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 - [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
-## Liens
+### Compléments
 
-- [[Comparatif - Parsing de documents]] — comparatif de la catégorie.
-- Moteur OCR sous-jacent : Surya (même éditeur, Datalab).
-- Doc : https://github.com/datalab-to/marker
+- [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale. — l'étage bas niveau, pour l'extraction brute en amont.
+
+## Ressources
+
+- Documentation — https://github.com/datalab-to/marker
+- Dépôt — https://github.com/datalab-to/marker
+
+## Voir aussi
+
+- [[Parsing]] — le hub du dossier
+- [[Comparatif - Parsing de documents]] — ce qui départage les outils du dossier
