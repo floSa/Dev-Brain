@@ -17,33 +17,45 @@ url_repo:
 
 # Obsidian
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain.
 
-Application de **base de connaissances personnelle** : des notes en **markdown stockées en local** (un simple dossier de fichiers `.md`, pas de cloud imposé), reliées entre elles par des **liens bidirectionnels** (wikilinks) et visualisables en **graphe**. Très **extensible** par plugins (Bases, Canvas, Dataview, Templater…). Propriétaire mais gratuit en usage personnel ; le fait que les données soient de simples fichiers markdown évite le verrouillage. C'est le **socle de ce DevBrain** (le vault courant).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| — | propriétaire | — | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Construire une **mémoire de connaissances** durable et navigable (notes liées, graphe, recherche).
-- Garder ses données **en local**, en markdown pérenne, sans dépendre d'un SaaS.
-- Étendre l'outil à ses usages via plugins (bases de données de notes, canevas, automatisation).
+Base de connaissances personnelle dont le format de stockage est le système de fichiers :
+un vault est un dossier de fichiers `.md` sur le disque, pas une base ni un espace distant.
+Les notes se relient par des **wikilinks bidirectionnels** — chaque page sait qui la cite —
+et l'ensemble se parcourt en graphe. L'extensibilité passe par des plugins : Bases, Canvas,
+Dataview, Templater. Le cœur du programme est fermé, mais les données ne le sont pas : ce
+sont des fichiers markdown ordinaires, lisibles et éditables sans lui. C'est le socle de ce
+DevBrain — le vault courant.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Édition **collaborative temps réel** multi-auteurs : ce n'est pas sa cible (plutôt un wiki d'équipe ou Notion).
-- Documentation publique versionnée par une équipe de dev → un générateur de site type MkDocs/Docusaurus sur un repo git.
+| Prendre si | Écarter si |
+|---|---|
+| Construire une mémoire de connaissances durable et navigable : notes liées, graphe, recherche | Édition collaborative en temps réel à plusieurs auteurs : ce n'est pas sa cible → un wiki d'équipe |
+| Garder ses données en local, en markdown pérenne, sans dépendre d'un SaaS | Documentation publique versionnée par une équipe → un générateur de site sur un dépôt git (MkDocs, Docusaurus) |
+| Étendre l'outil à ses usages par plugins : bases de notes, canevas, automatisation | Le programme n'est pas ouvert, même si les notes le sont : aucune reprise possible du cœur |
+| | Trop de plugins fragilise le vault — dépendances croisées, casse à la mise à jour |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- **Propriétaire**, gratuit en usage personnel (licence commerciale au-delà). Desktop Windows/macOS/Linux, mobile iOS/Android.
-- Données = dossier de fichiers markdown local ; sync payante optionnelle (ou git / cloud tiers).
-- Écosystème de plugins communautaires très riche ; format ouvert (markdown) donc portable.
+- Installation — application de bureau Windows, macOS et Linux ; applications mobiles iOS et Android
+- Point d'entrée — un vault, c'est-à-dire un dossier de fichiers markdown ouvert par l'application
+- Prérequis — aucun service à joindre : les données sont sur le disque
+- Exécution — sur le poste et sur mobile ; la synchronisation entre appareils est à choisir — service officiel, git, ou cloud tiers
+- Coût — gratuit en usage personnel, licence commerciale au-delà ; la synchronisation officielle est un service payant
 
-## Pièges
+## Ressources
 
-- **Cœur propriétaire** : l'app n'est pas open-source, même si les notes le sont (markdown).
-- La sync officielle est un service payant ; les alternatives (git, cloud) demandent un peu de mise en place.
-- Trop de plugins peut fragiliser le vault (dépendances, casse à la mise à jour).
+- Documentation — https://help.obsidian.md/
 
-## Liens
+## Voir aussi
 
-- Docs : https://help.obsidian.md/
+- [[Outils de développement]] — le hub du domaine

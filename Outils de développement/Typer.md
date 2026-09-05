@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[Rich]]"]
 tags: [cli, type-hints]
 url_docs: https://typer.tiangolo.com/
 url_repo: https://github.com/fastapi/typer
@@ -17,41 +17,52 @@ url_repo: https://github.com/fastapi/typer
 
 # Typer
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click.
 
-Bibliothèque pour construire des **interfaces en ligne de commande** à partir des **annotations de type** Python. On écrit une fonction avec des paramètres typés ; Typer en déduit arguments et options de la CLI, la **validation**, l'**aide** (`--help`) et la **complétion shell** — sans boilerplate. Même auteur que FastAPI (Sebastián Ramírez) et même philosophie : le type hint suffit. Bâti sur **Click** (intégré/vendored depuis la 0.26), dont il hérite la robustesse en simplifiant l'API.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Donner une CLI propre à un script ou un outil Python en quelques lignes.
-- Profiter de la complétion automatique et de l'aide générée sans les écrire à la main.
-- Projet déjà typé (mypy, Pydantic) : la CLI réutilise les mêmes annotations.
+Construit une interface en ligne de commande à partir des **annotations de type**. On écrit
+une fonction dont les paramètres sont typés ; Typer en déduit les arguments et les options,
+la validation, le texte de `--help` et la complétion shell — sans code de plomberie. Il est
+bâti sur **Click**, intégré au paquet depuis la 0.26, dont il hérite la robustesse en
+simplifiant l'API. Deux usages coexistent et ne se mélangent pas : `typer.run(fn)` expose
+une commande unique, `typer.Typer()` et `@app.command()` construisent une application
+multi-commandes. Même auteur que FastAPI, et même parti pris : l'annotation de type suffit.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Contrôle très fin du parsing ou cas tordus non couverts par l'abstraction → Click directement.
-- Dépendance zéro / script jetable → `argparse` de la stdlib.
-- Besoin d'une API web, pas d'une CLI → [[FastAPI]].
+| Prendre si | Écarter si |
+|---|---|
+| Donner une CLI propre à un script ou un outil Python en quelques lignes | Contrôle très fin du parsing, ou cas tordu non couvert par l'abstraction → redescendre à l'API Click sous-jacente |
+| Obtenir aide générée et complétion shell sans les écrire à la main | Script jetable, zéro dépendance → `argparse` de la bibliothèque standard |
+| Projet déjà typé (mypy, [[Pydantic]]) : la CLI réutilise les mêmes annotations | Besoin d'une API web et non d'une CLI → [[FastAPI]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add typer`). MIT, gratuit.
-- Single-node ; rien à héberger.
+- Installation — `uv add typer`
+- Point d'entrée — import Python : `typer.run(fn)` pour une commande, `typer.Typer()` et `@app.command()` pour plusieurs
+- Prérequis — Python ; l'aide et les erreurs enrichies passent par Rich, sinon le rendu reste brut
+- Exécution — dans le process appelant ; rien à héberger
+- Coût — gratuit sous licence MIT
 
-## Pièges
+## Écosystème
 
-- Couche au-dessus de Click : pour les besoins avancés, il faut parfois redescendre à l'API Click sous-jacente.
-- Le rendu enrichi de l'aide et des erreurs (couleurs, mise en forme) repose sur [[Rich|rich]] : l'installer pour en profiter.
-- Commande unique (`typer.run(fn)`) vs application multi-commandes (`app = typer.Typer()` + `@app.command()`) : deux usages distincts, à ne pas mélanger.
+### Compléments
 
-## Alternatives
+- [[Rich]] — Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes. — la couche d'affichage de l'aide et des tracebacks
 
-- Click — socle sur lequel Typer est bâti ; API explicite par décorateurs, plus verbeuse mais plus de contrôle. *(Page dédiée non créée.)*
-- argparse — parseur de la stdlib, zéro dépendance. *(Page dédiée non créée.)*
-- Fire (Google) — CLI générée par introspection, sans annotations. *(Page dédiée non créée.)*
+## Ressources
 
-## Liens
+- Documentation — https://typer.tiangolo.com/
+- Dépôt — https://github.com/fastapi/typer
 
-- [[Comparatif - Frameworks CLI]] — Typer vs Click / argparse.
-- Bâti sur Click ; même auteur que [[FastAPI]] ; rendu terminal via [[Rich|rich]].
-- Doc : https://typer.tiangolo.com/
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Frameworks CLI]] — ce qui départage les briques CLI du dossier

@@ -17,39 +17,53 @@ url_repo: https://github.com/astral-sh/uv
 
 # uv
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
-Gestionnaire de paquets et de projets Python **écrit en Rust** par Astral (les auteurs de [[Ruff]]). Résolution et installation de dépendances **10–100× plus rapides** que pip, grâce à un résolveur natif et un cache global partagé entre projets. Outil unique qui absorbe le rôle de **pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine** : gestion de projet (`pyproject.toml` + `uv.lock`), environnements virtuels, installation d'outils CLI isolés, et installation des versions de Python elles-mêmes.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Tout nouveau projet Python : `uv init`, `uv add`, `uv run` — lockfile reproductible et venv géré automatiquement.
-- Remplacer un empilement pip + virtualenv + pyenv + pipx par un seul binaire.
-- CI : installation de dépendances quasi instantanée, builds reproductibles via `uv.lock`.
-- Scripts autonomes avec dépendances inline (`uv run script.py`, PEP 723).
+Gestionnaire de paquets et de projets Python écrit par Astral, les auteurs de [[Ruff]]. Un
+résolveur natif et un cache global partagé entre projets rendent l'installation dix à cent
+fois plus rapide que pip. Surtout, c'est un outil **unique** : il absorbe les rôles de pip,
+pip-tools, pipx, poetry, pyenv, virtualenv et twine — projet décrit dans `pyproject.toml`,
+dépendances figées dans `uv.lock`, environnements virtuels créés sans qu'on les demande,
+outils en ligne de commande isolés, et jusqu'aux versions de Python elles-mêmes, qu'il
+télécharge et installe.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Environnement verrouillé sur l'outillage historique, sans marge de changement → [[pip]].
-- Besoin de fonctions binaires propres à conda pour l'écosystème scientifique non-wheel.
+| Prendre si | Écarter si |
+|---|---|
+| Nouveau projet Python : `uv init`, `uv add`, `uv run` — venv et `uv.lock` gérés sans y penser | `uv.lock` lui est propre : une équipe mixte doit s'aligner sur l'outil |
+| Remplacer un empilement pip + virtualenv + pyenv + pipx par un binaire unique | Écosystème jeune et en évolution rapide : épingler la version sur les projets longs |
+| CI : installation quasi instantanée, build reproductible par le lockfile | `uv pip …` imite l'interface de pip sans lire toute la configuration pip existante |
+| Script autonome à dépendances déclarées en tête (PEP 723), lancé par `uv run script.py` | Paquets binaires propres à conda, pour l'écosystème scientifique qui n'existe pas en wheel |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Binaire unique, installable sans Rust ni Python préalable (script `curl`, ou via pip/pipx). MIT, gratuit.
-- Local et CI ; rien à héberger. Cache global sur disque, partagé entre projets.
+- Installation — binaire unique par script d'installation, ou via pip et pipx ; ni Rust ni Python préalable
+- Point d'entrée — ligne de commande : `uv init`, `uv add`, `uv run`, `uv tool`, `uv python`
+- Prérequis — aucun : uv installe lui-même les versions de Python dont il a besoin
+- Exécution — sur le poste et en CI ; cache global sur disque, partagé entre projets
+- Coût — gratuit sous licence MIT
 
-## Pièges
+## Écosystème
 
-- Écosystème jeune et en évolution rapide : épingler la version d'uv sur les projets longs.
-- `uv.lock` est propre à uv ; une équipe mixte doit s'aligner sur l'outil.
-- `uv pip ...` imite l'interface pip mais ne lit pas toute la configuration pip existante.
-
-## Alternatives
+### Alternatives
 
 - [[pip]] — Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Gestionnaires de paquets Python]] — uv vs pip.
-- Même éditeur (Astral) : [[Ruff]].
-- Doc : https://docs.astral.sh/uv/
+- Documentation — https://docs.astral.sh/uv/
+- Dépôt — https://github.com/astral-sh/uv
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Gestionnaires de paquets Python]] — ce qui départage les gestionnaires du dossier

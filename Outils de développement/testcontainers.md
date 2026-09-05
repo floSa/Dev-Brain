@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[pytest]]"]
 tags: [testing, container]
 url_docs: https://testcontainers.com/
 url_repo: https://github.com/testcontainers/testcontainers-python
@@ -17,38 +17,52 @@ url_repo: https://github.com/testcontainers/testcontainers-python
 
 # testcontainers
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.
 
-Bibliothèque qui fournit une API conviviale pour **lancer des conteneurs Docker dans les tests**. Au lieu de mocker une dépendance ou de maintenir une base partagée, chaque test (ou suite) démarre une **instance jetable et isolée** d'un service réel — Postgres, Redis, Kafka, un navigateur Selenium, n'importe quelle image — puis Testcontainers l'**arrête et la nettoie** à la fin (conteneur sentinelle *Ryuk*). Résultat : des tests d'intégration qui s'exécutent contre la vraie dépendance, reproductibles en local comme en CI. Portage Python d'un projet multi-langage (`testcontainers-python`), avec des modules prêts à l'emploi par technologie.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Tests d'intégration nécessitant une vraie base ou un vrai broker, sans dépendre d'un service partagé.
-- Garantir l'isolation : chaque exécution part d'un état propre, pas de pollution entre tests.
-- Reproduire en CI l'environnement de dépendances réelles, à l'identique du poste de dev.
+Lance des conteneurs Docker depuis le code de test. Plutôt que mocker une dépendance ou
+maintenir une base partagée entre les développeurs, chaque test — ou chaque suite — démarre
+une instance **jetable et isolée** d'un service réel : Postgres, Redis, Kafka, un navigateur
+Selenium, n'importe quelle image. Un conteneur sentinelle, **Ryuk**, se charge de l'arrêt et
+du nettoyage même si la suite meurt en cours de route. Les tests d'intégration tournent donc
+contre la vraie dépendance, à l'identique sur le poste et en CI. C'est le portage Python
+d'un projet multi-langage, avec des modules prêts à l'emploi par technologie.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Tests unitaires purs sans I/O externe : un mock ou un fake suffit, le conteneur est un surcoût.
-- Environnement sans démon Docker disponible (certains CI restreints) : Testcontainers en a besoin.
-- Démarrage de conteneurs trop lent pour une boucle de feedback serrée : réserver aux tests d'intégration.
+| Prendre si | Écarter si |
+|---|---|
+| Tests d'intégration contre une vraie base ou un vrai broker, sans service partagé | Tests unitaires purs, sans entrées-sorties : un mock ou un fake suffit, le conteneur est un surcoût |
+| Isolation : chaque exécution part d'un état propre, aucune pollution entre tests | Runner CI sans accès au démon Docker : la dépendance est dure et il n'existe pas de repli |
+| Reproduire en CI les dépendances réelles, à l'identique du poste de développement | Boucle de feedback serrée : le démarrage des conteneurs coûte, à mutualiser par la portée des fixtures |
+| | Politique de sécurité qui bloque le conteneur Ryuk : il faut alors gérer l'arrêt explicitement |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque de développement (`uv add --dev testcontainers`). Apache-2.0, gratuit.
-- Local et CI ; nécessite un **démon Docker** (ou compatible) accessible. Rien à héberger en propre.
+- Installation — `uv add --dev testcontainers`
+- Point d'entrée — import Python : un conteneur par technologie, ouvert en gestionnaire de contexte ou exposé en fixture
+- Prérequis — un démon Docker, ou compatible, accessible depuis le process de test
+- Exécution — sur le poste et en CI ; les conteneurs vivent le temps du test, rien à héberger en propre
+- Coût — gratuit sous licence Apache-2.0
 
-## Pièges
+## Écosystème
 
-- Dépendance dure à Docker : prévoir le cas des runners CI sans accès au socket Docker.
-- Coût de démarrage des conteneurs : mutualiser via la portée des fixtures pour ne pas relancer à chaque test.
-- Le nettoyage repose sur Ryuk ; si ce conteneur est bloqué (politiques de sécurité), gérer l'arrêt explicitement.
+### Compléments
 
-## Alternatives
+- [[pytest]] — Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins. — c'est par ses fixtures que les conteneurs se partagent et se libèrent
 
-- `docker-compose` orchestré à la main, bases en mémoire / fakes (SQLite, fakeredis), mocks — Testcontainers se distingue en lançant la **vraie** dépendance, isolée et auto-nettoyée. *(Pages dédiées non créées.)*
+## Ressources
 
-## Liens
+- Documentation — https://testcontainers.com/
+- Dépôt — https://github.com/testcontainers/testcontainers-python
 
-- Voisin direct : [[pytest]] — les conteneurs jetables s'exposent en fixtures pytest pour les tests d'intégration.
-- Doc : https://testcontainers.com/
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine

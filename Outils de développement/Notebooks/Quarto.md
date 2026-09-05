@@ -17,44 +17,50 @@ url_repo: https://github.com/quarto-dev/quarto-cli
 
 # Quarto
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia).
 
-Système de **publication scientifique et technique** : à partir de Markdown enrichi (`.qmd`) ou de notebooks Jupyter, Quarto **exécute le code** embarqué puis **rend** le document en HTML, PDF (LaTeX), Word, présentations (reveal.js, Beamer, PowerPoint), sites web et livres. Bâti sur **Pandoc**, il ajoute les références croisées, figures numérotées, callouts, citations et mises en page propres à l'écrit technique. **Polyglotte** : le même outil sert Python, R, Julia et Observable JS. C'est un **CLI standalone** (binaire, embarque Pandoc) — pas une bibliothèque Python à importer — successeur unifié de R Markdown côté Posit.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Transformer une analyse (notebook ou `.qmd`) en **rapport mis en page** reproductible : HTML, PDF, slides.
-- Publier un **site ou un livre** technique (documentation, blog, cours) à partir de sources Markdown + code exécuté.
-- Mutualiser un pipeline de rendu entre **Python et R** dans une équipe polyglotte.
-- Régénérer la sortie à chaque build pour garantir que le document reflète le code courant.
+Système de publication scientifique et technique. À partir de Markdown enrichi (`.qmd`) ou
+de notebooks Jupyter, Quarto **exécute** le code embarqué puis **rend** le document : HTML,
+PDF par LaTeX, Word, présentations (reveal.js, Beamer, PowerPoint), sites web et livres.
+Bâti sur **Pandoc**, il ajoute ce que l'écrit technique réclame et que Markdown n'a pas —
+références croisées, figures numérotées, callouts, citations. Polyglotte : le même outil
+sert Python, R, Julia et Observable JS. C'est un binaire autonome qui embarque Pandoc, pas
+un module Python à importer, et le successeur unifié de R Markdown côté Posit. `.qmd` n'est
+pas un notebook : c'est du Markdown source, et l'aller-retour avec `.ipynb` passe par les
+formats Quarto, pas automatiquement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Versionner proprement le notebook source en git (objectif code, pas publication) → [[jupytext]].
-- Paramétrer et exécuter en masse des notebooks pour produire des artefacts `.ipynb`, sans rendu documentaire → [[papermill]].
-- Environnement notebook réactif au quotidien → [[Marimo]].
-- Application interactive (widgets serveur, état) : Quarto produit du document, pas une web-app dynamique.
+| Prendre si | Écarter si |
+|---|---|
+| Transformer une analyse — notebook ou `.qmd` — en rapport mis en page reproductible : HTML, PDF, slides | Versionner proprement le notebook source, objectif code et non publication → [[jupytext]] |
+| Publier un site ou un livre technique à partir de sources Markdown et de code exécuté | Exécuter en masse des notebooks paramétrés pour produire des `.ipynb`, sans rendu documentaire → [[papermill]] |
+| Mutualiser un pipeline de rendu entre Python et R dans une équipe polyglotte | Environnement notebook réactif au quotidien → [[Marimo]] |
+| Régénérer la sortie à chaque build, pour que le document reflète le code courant | Application interactive à état et widgets serveur : Quarto produit un document, pas une web-app |
+| | La chaîne PDF/LaTeX est lourde et ses erreurs sont cryptiques : préférer le HTML quand le PDF n'est pas requis |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- CLI à installer (binaire standalone, ou via `uv tool`/conda) ; rendu local par `quarto render`, prévisualisation par `quarto preview`. MIT, gratuit, single-node.
-- Le rendu PDF requiert une distribution **TeX** (`quarto install tinytex`) ; le HTML/Word n'en a pas besoin.
-- Intégré à VS Code, RStudio, JupyterLab. Coût nul côté licence ; le build tourne sur la machine ou en CI.
+- Installation — binaire autonome, ou via `uv tool` et conda
+- Point d'entrée — ligne de commande : `quarto render` pour produire, `quarto preview` pour prévisualiser
+- Prérequis — le rendu réexécute le code, donc un environnement épinglé ([[uv]], lockfile) conditionne la reproductibilité ; le PDF demande une distribution TeX (`quarto install tinytex`)
+- Exécution — sur le poste ou en CI ; outil externe à provisionner explicitement dans l'image, ce n'est pas un module Python. Intégré à VS Code, RStudio et JupyterLab
+- Coût — gratuit sous licence MIT
 
-## Pièges
+## Ressources
 
-- Le rendu **réexécute le code** : un environnement non épinglé ([[uv]], lockfile) casse la reproductibilité du document.
-- Chaîne PDF/LaTeX lourde et source d'erreurs cryptiques : préférer le HTML quand le PDF n'est pas requis.
-- Outil externe (binaire), pas un module Python : à provisionner explicitement en CI / image Docker.
-- `.qmd` ≠ notebook : c'est du Markdown source ; l'aller-retour avec `.ipynb` se fait via les formats Quarto, pas automatiquement.
+- Documentation — https://quarto.org/
+- Dépôt — https://github.com/quarto-dev/quarto-cli
 
-## Alternatives
+## Voir aussi
 
-- _Pas d'autre système de publication multi-format fiché à ce jour. `jupyter nbconvert` couvre un rendu plus simple sans la couche Pandoc/références croisées (non fiché)._
-
-## Liens
-
-- [[Notebooks-as-code]] — le rendu reproductible suppose un notebook exécutable de bout en bout.
-- [[papermill]] — exécution paramétrée en amont d'un rendu Quarto dans un pipeline.
-- [[uv]] — environnement épinglé qui rend le `quarto render` reproductible.
-- Doc : https://quarto.org/
+- [[Notebooks]] — le hub du dossier
+- [[Notebooks-as-code]] — la notion du dossier : un rendu reproductible suppose un notebook exécutable de bout en bout

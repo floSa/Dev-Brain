@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[Typer]]"]
 tags: [terminal-ui]
 url_docs: https://rich.readthedocs.io/
 url_repo: https://github.com/Textualize/rich
@@ -17,40 +17,55 @@ url_repo: https://github.com/Textualize/rich
 
 # Rich
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.
 
-Bibliothèque de **rendu riche dans le terminal**. Un objet `Console` écrit du texte en couleur et stylé, et compose des éléments avancés : **tables**, **barres de progression**, **Markdown**, **coloration syntaxique**, arbres, panneaux et **tracebacks** reformatés et lisibles. Détecte les capacités du terminal et dégrade proprement. Largement adoptée comme couche d'affichage par d'autres outils (pip, Typer…). Créée par Will McGugan (Textualize), socle du framework TUI **Textual**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Rendre lisible la sortie d'un script ou d'une CLI : tables, statuts colorés, barres de progression.
-- Améliorer les logs et les tracebacks en développement (`rich.traceback`, handler `logging`).
-- Afficher du Markdown ou du code coloré directement dans le terminal.
+Couche de rendu pour le terminal. Un objet `Console` remplace `print` et compose des
+éléments que le terminal ne connaît pas nativement : tables, barres de progression,
+arbres, panneaux, Markdown, code coloré, et des tracebacks reformatés qui se lisent. Il
+interroge les capacités du terminal et dégrade proprement quand elles manquent. Rich ne
+parse aucune commande et ne lit aucune entrée : il écrit, et c'est tout — ce qui explique
+qu'il serve de couche d'affichage à d'autres outils, pip et Typer compris. Créé par
+Will McGugan, il est aussi le socle du framework TUI Textual ; la société Textualize a
+fermé en mai 2025, le projet reste maintenu par Will McGugan et une communauté plus
+restreinte.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Application **interactive plein écran** (widgets, événements clavier/souris) → Textual, bâti sur Rich.
-- Simple besoin de couleurs ANSI portables, sans dépendance → colorama.
-- Saisie interactive avancée (prompts, complétion en ligne) → prompt_toolkit.
+| Prendre si | Écarter si |
+|---|---|
+| Rendre lisible la sortie d'un script ou d'une CLI : tables, statuts colorés, barres de progression | Hors d'un TTY — fichier, pipe, CI — les couleurs sont désactivées : forcer par `Console(force_terminal=True)` |
+| Améliorer logs et tracebacks en développement (`rich.traceback`, handler `logging`) | Le balisage `[bold red]…[/]` entre en conflit avec du texte contenant des crochets : échapper, ou passer par `Text` |
+| Afficher du Markdown ou du code coloré directement dans le terminal | Application interactive plein écran, à widgets et événements clavier → Textual, bâti sur Rich |
+| | Simples couleurs ANSI portables sans dépendance → colorama ; saisie interactive et REPL → prompt_toolkit |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add rich`), sans dépendance lourde. MIT, gratuit.
-- Single-node ; rien à héberger.
+- Installation — `uv add rich`
+- Point d'entrée — import Python : `rich.console.Console`, `rich.print`, `rich.traceback.install()`
+- Prérequis — Python, aucune dépendance lourde ; un terminal capable de couleur pour en profiter
+- Exécution — dans le process appelant ; rien à héberger
+- Coût — gratuit sous licence MIT
 
-## Pièges
+## Écosystème
 
-- Société Textualize fermée en mai 2025 ; Rich et Textual restent **maintenus** en open-source par Will McGugan — projet actif, mais porté par une communauté plus restreinte.
-- Le balisage par tags (`[bold red]…[/]`) est pratique mais peut entrer en conflit avec du texte contenant des crochets : échapper ou utiliser `Text` pour le contenu non fiable.
-- Une sortie redirigée (fichier, pipe) n'est pas un TTY : Rich désactive les couleurs, ce qui peut surprendre en CI — forcer via `Console(force_terminal=True)` si besoin.
+### Compléments
 
-## Alternatives
+- [[Typer]] — Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click. — c'est Rich qu'il appelle pour son aide et ses erreurs enrichies
 
-- colorama — couleurs/styles ANSI portables (Windows inclus), minimaliste. *(Page dédiée non créée.)*
-- prompt_toolkit — saisie interactive et REPL avancés en terminal. *(Page dédiée non créée.)*
-- Textual — framework d'applications TUI plein écran, bâti sur Rich. *(Page dédiée non créée.)*
+## Ressources
 
-## Liens
+- Documentation — https://rich.readthedocs.io/
+- Dépôt — https://github.com/Textualize/rich
 
-- Utilisé par [[Typer]] pour l'aide et les erreurs enrichies.
-- Doc : https://rich.readthedocs.io/
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Frameworks CLI]] — ce qui départage les briques CLI du dossier
