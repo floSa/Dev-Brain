@@ -17,40 +17,52 @@ url_repo: https://github.com/OlivierGarciaDev/fanalysis
 
 # Fanalysis
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
 
-Module d'**analyse factorielle descriptive** (PCA, CA, MCA) centré sur les **aides à l'interprétation** dans l'esprit du package R FactoMineR : contributions, cos², valeurs-tests, graphiques d'éboulis et plans factoriels prêts à lire. Double usage : exploration descriptive *et* étape de réduction dans un pipeline scikit-learn. Validé en comparant ses sorties à celles de FactoMineR.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Reproduire en Python le confort d'interprétation de FactoMineR sur PCA / CA / MCA (tableaux d'aides, valeurs-tests).
-- Enseignement et analyse exploratoire descriptive où la lecture des axes prime.
+Module d'analyse factorielle descriptive — PCA, CA, MCA — centré sur les **aides à
+l'interprétation** dans l'esprit du package R FactoMineR : contributions, cos²,
+valeurs-tests, éboulis et plans factoriels prêts à lire. Double usage, exploration
+descriptive ou étape de réduction dans un pipeline scikit-learn, et ses sorties ont été
+validées contre FactoMineR. Le point qui commande tout le reste est l'état du projet :
+**aucun commit depuis le 4 juin 2018**, resté en v0.0.1. Le code fonctionne, mais rien
+n'évoluera.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Famille complète (FAMD, MFA, GPA), maintenance active et API sklearn moderne → [[Prince]] (recommandé par défaut).
-- Projet **à l'arrêt en amont** : aucun commit depuis le 4 juin 2018, resté en v0.0.1 — le code fonctionne, mais rien n'évoluera. Pour tout usage durable, [[Prince]].
-- Données mixtes ou groupes de variables → [[Prince]].
+| Prendre si | Écarter si |
+|---|---|
+| Retrouver en Python le confort d'interprétation de FactoMineR sur PCA, CA et MCA — tableaux d'aides, valeurs-tests | Projet **à l'arrêt en amont** : v0.0.1, aucun commit depuis juin 2018, donc friction probable avec les NumPy et pandas récents |
+| Enseignement et analyse exploratoire descriptive, où la lecture des axes prime | Périmètre limité à PCA, CA et MCA : ni FAMD, ni MFA, ni GPA |
+| | Licence affichée de façon **incohérente** — BSD-3-Clause au README, MIT aux classifieurs PyPI : à trancher avant tout usage contraint |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`pip install fanalysis`), au-dessus de NumPy/pandas/matplotlib.
-- Single-node ; calcul en mémoire.
-- Open-source (licence affichée de façon incohérente : README BSD-3-Clause, classifieurs PyPI MIT) — gratuit dans les deux cas.
+- Installation — `pip install fanalysis` (pas de publication récente sur PyPI)
+- Point d'entrée — import Python, estimateurs à API scikit-learn
+- Prérequis — NumPy, pandas et matplotlib
+- Exécution — dans le process appelant, CPU, mono-nœud, tout en mémoire
+- Coût — gratuit ; licence ambiguë entre README (BSD-3-Clause) et PyPI (MIT)
 
-## Pièges
+## Écosystème
 
-- **Faible maintenance** : version 0.0.1, très peu de commits, pas de mise à jour récente → risque de friction avec des versions récentes de NumPy/pandas.
-- Périmètre limité à PCA/CA/MCA (pas de FAMD/MFA).
-- Licence ambiguë entre README et PyPI — vérifier avant tout usage contraint.
-
-## Alternatives
+### Alternatives
 
 - [[Prince]] — Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.
 
-## Liens
+## Ressources
 
-- Concepts implémentés : [[PCA]], [[MCA]], [[CA]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- [[Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
-- Doc : https://github.com/OlivierGarciaDev/fanalysis
+- Dépôt — https://github.com/OlivierGarciaDev/fanalysis
+
+## Voir aussi
+
+- [[PCA]] · [[MCA]] · [[CA]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Comparatif - Réduction de dimension]] — analyse factorielle face à la PCA et aux méthodes manifold
