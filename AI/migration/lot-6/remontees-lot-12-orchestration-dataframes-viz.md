@@ -178,21 +178,30 @@ ou casser le validateur. La règle 2 l'emporte, comme le brief le prévoit.
   périmètre n'a aucune `application`, il est fait de 13 `paquet` et 3… en réalité 6
   `plateforme` et 10 `paquet`.
 
-## 11. Écart des avertissements sur MA branche
+## 11. Écart des avertissements sur MA branche — 149 -> 133
 
-| | Avertissements |
-|---|---|
-| Départ, `d8f81d6` | 143 |
-| Après les 16 conversions | **133** |
+| | Avertissements du vault | dont citant mes trois dossiers |
+|---|---|---|
+| Départ, `d8f81d6` | **149** | **16**, toutes R15 |
+| Après les 16 conversions | **133** | **0** |
 
-Les 10 fermés sont exactement les 10 R15 de mes trois dossiers — 6 en Orchestration, 5 en
-DataFrames, 5 en Visualisation, soit 16 au départ, dont 10 n'apparaissaient pas encore au
-compte de `d8f81d6` parce que… non : les 16 y étaient. Le décompte exact, vérifié par
-`grep` sur la sortie du validateur : **16 R15 avant, 0 après** dans mes dossiers, et le
-total du vault passe de 143 à 133 — l'écart de 6 vient de ce que six de mes fiches étaient
-déjà comptées ailleurs. Ce que je peux affirmer sans ambiguïté, parce que c'est mesuré
-directement : **plus aucun avertissement, d'aucune règle, ne cite une page de mes trois
-dossiers.** `check_arbo.py` est vert, et `check_brain.py` ne signale aucune violation dure.
+L'écart est de 16, et il vaut exactement les 16 R15 de mon périmètre : la conversion n'a
+introduit **aucun** avertissement neuf, ni dans mes dossiers ni ailleurs dans le vault.
+R15 exige un lien vers une `notion` ou un `hub` ; les 16 fiches d'origine ne pointaient
+que vers leur comparatif, qui est un `role: comparatif`. La ligne `## Voir aussi` du
+nouveau gabarit, qui nomme le hub du dossier, les ferme toutes.
+
+> **Méthode, parce que je m'y suis trompé une fois.** Mon premier relevé disait 143, et il
+> était faux : je l'avais pris **après** avoir converti Orchestration, pas avant. La
+> mesure ci-dessus est reprise proprement — `git checkout d8f81d6 -- <mes trois dossiers>`,
+> relevé, puis `git checkout HEAD -- <mes trois dossiers>` — mon travail étant déjà
+> committé. À faire tenir aux conversations restantes : **relever la ligne de base avant
+> la première écriture**, sinon elle n'est plus récupérable qu'au prix de cette
+> gymnastique.
+
+`check_arbo.py` est vert (chemin et catégorie concordent partout), `check_brain.py` ne
+signale aucune violation dure, et `build_bandeau.py --check` sur les trois dossiers
+confirme que les 16 bandeaux concordent avec leur frontmatter.
 
 ## 12. Ce que je n'ai pas touché, et qui reste ouvert
 
