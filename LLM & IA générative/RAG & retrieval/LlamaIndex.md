@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[LangChain]]", "[[Haystack]]", "[[DSPy]]"]
-complements: []
+complements: ["[[LlamaIndex NLSQLTableQueryEngine]]"]
 tags: [llm, rag, embeddings, agents]
 url_docs: https://developers.llamaindex.ai/python/framework/
 url_repo: https://github.com/run-llama/llama_index
@@ -61,6 +61,10 @@ côté, les intégrations de l'autre.
 - [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 - [[DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
+### Compléments
+
+- [[LlamaIndex NLSQLTableQueryEngine]] — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle. — son module text-to-SQL, qui ne s'utilise pas sans lui.
+
 ## Ressources
 
 - Documentation — https://developers.llamaindex.ai/python/framework/
@@ -70,6 +74,6 @@ côté, les intégrations de l'autre.
 
 - [[RAG]] — la notion du dossier
 - [[Chunking strategies]] · [[Hybrid retrieval]] · [[Reranking]] · [[Advanced RAG]] — les techniques du pipeline
-- [[LlamaIndex NLSQLTableQueryEngine]] — son module text-to-SQL, cf. [[Text-to-SQL]]
+- [[Text-to-SQL]] — la notion que son module SQL met en œuvre
 - [[LiteLLM]] — pour router ses appels de modèle ; [[HuggingFace]] pour les modèles
 - [[Comparatif - Frameworks LLM]] — ce qui départage les frameworks du domaine
