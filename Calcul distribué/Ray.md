@@ -17,45 +17,57 @@ url_repo: https://github.com/ray-project/ray
 
 # Ray
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 
-Framework de **calcul distribué pour Python**, issu du RISELab de Berkeley et porté par Anyscale (entré à la PyTorch Foundation en 2025). Deux étages : un **cœur** (Ray Core) qui distribue du code Python arbitraire via deux primitives — les **tâches** (`@ray.remote` sur des fonctions) et les **acteurs** (classes à état) — sur les cœurs d'une machine ou un cluster, avec un object store partagé en mémoire ; et un **ensemble de bibliothèques ML** bâties dessus — [[Ray Tune]] (HPO), [[Ray Serve]] (serving), Ray Train (entraînement distribué), Ray Data (traitement), RLlib (RL). Le même code passe du portable au cluster sans réécriture.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Paralléliser du **code Python arbitraire** (pas seulement des dataframes) : simulations, traitements custom, pipelines hétérogènes.
-- Charges **ML/IA distribuées** : entraînement multi-GPU, HPO, serving, RL — via les bibliothèques de l'écosystème.
-- Calcul **à état** distribué grâce aux acteurs (services longs, agents, accumulateurs).
-- Scaler du laptop au **cluster** (K8s via KubeRay, cloud) avec une seule API.
+Framework de calcul distribué pour Python, issu du RISELab de Berkeley, porté par Anyscale
+et entré à la PyTorch Foundation en 2025. Son unité n'est ni la table ni le tableau mais la
+**tâche** (`@ray.remote` sur une fonction) et l'**acteur** (une classe à état) : c'est ce
+qui lui permet de distribuer du code Python quelconque, et pas seulement des collections.
+Le cœur — un ordonnanceur et un object store partagé en mémoire — porte tout un étage de
+bibliothèques ML : [[Ray Tune]] pour l'optimisation d'hyperparamètres, [[Ray Serve]] pour
+le serving, Ray Train, Ray Data et RLlib. Le même code passe du portable au cluster.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Mise à l'échelle d'API **numpy/pandas** familières → [[Dask]] (collections drop-in, plus simple pour ce cas).
-- Traitement **big data** SQL / DataFrame sur écosystème JVM → [[Spark]].
-- Données qui tiennent sur une machine → [[Polars]] / [[pandas]] ; pas de cluster à gérer.
+| Prendre si | Écarter si |
+|---|---|
+| Paralléliser du code Python arbitraire — simulations, traitements sur mesure, pipelines hétérogènes | La **sérialisation** cloudpickle des objets passés aux tâches et acteurs surprend : objets non picklables, copies coûteuses dans l'object store |
+| Charges ML/IA distribuées : entraînement multi-GPU, HPO, serving, RL, via l'écosystème | Ressources mal déclarées (`num_cpus`, `num_gpus`) : sur-souscription, ou GPU laissés inutilisés |
+| Calcul **à état** distribué grâce aux acteurs — services longs, agents, accumulateurs | L'object store partagé est en mémoire : quand il déborde, le spilling disque plombe les temps |
+| Scaler du portable au cluster avec une seule API — K8s via KubeRay, cloud | Écosystème large et mouvant : épingler les versions de Tune, Serve et Train, qui évoluent vite |
+| | Données qui tiennent sur une machine → [[Polars]] ou [[pandas]], sans cluster à gérer |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), `uv add "ray[default]"` (extras `ray[train]`, `ray[tune]`, `ray[serve]`, `ray[data]`).
-- **Self-host** : cluster local en une commande, ou multi-nœuds sur Kubernetes (KubeRay), cloud, HPC.
-- **Managé** : Anyscale (payant) — clusters Ray opérés, autoscaling et observabilité sans gérer l'infra.
-- Coût = l'infra du cluster (CPU/GPU) ; le runtime est gratuit.
+- Installation — `uv add "ray[default]"` ; extras `ray[train]`, `ray[tune]`, `ray[serve]`, `ray[data]`
+- Point d'entrée — import Python, `@ray.remote` sur fonctions et classes, puis `ray.get`
+- Prérequis — Python ; un cluster (Kubernetes via KubeRay, cloud, HPC) pour le multi-nœuds
+- Exécution — cluster local en une commande, ou multi-nœuds self-hébergé ; managé chez Anyscale, avec autoscaling et observabilité
+- Coût — gratuit, Apache-2.0 ; le coût réel est l'infrastructure CPU/GPU, ou l'abonnement Anyscale
 
-## Pièges
+## Écosystème
 
-- La **sérialisation** (cloudpickle) des objets passés aux tâches/acteurs peut surprendre : objets non picklables, copies coûteuses dans l'object store.
-- Penser **placement des ressources** (`num_cpus`, `num_gpus`) : mal déclaré = sur-souscription ou GPU inutilisés.
-- L'**object store** partagé est en mémoire : son débordement provoque du spilling disque, source de lenteurs.
-- Écosystème large et mouvant : bien épingler les versions des bibliothèques (Tune/Serve/Train évoluent vite).
-
-## Alternatives
+### Alternatives
 
 - [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 - [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 
-## Liens
+## Ressources
 
-- Famille Ray : [[Ray Tune]] (HPO), [[Ray Serve]] (serving) — bibliothèques bâties sur ce cœur.
-- [[Comparatif - Calcul distribué]] — comparatif de la catégorie
-- Peut servir de backend d'exécution à [[Modin]].
-- Doc : https://docs.ray.io/
+- Documentation — https://docs.ray.io/
+- Dépôt — https://github.com/ray-project/ray
+
+## Voir aussi
+
+- [[Calcul distribué]] — le hub du domaine
+- [[Ray Tune]] · [[Ray Serve]] — la famille Ray, bâtie sur ce cœur
+- [[Modin]] — peut prendre Ray comme backend d'exécution
+- [[Comparatif - Calcul distribué]] — ce qui départage les moteurs du dossier

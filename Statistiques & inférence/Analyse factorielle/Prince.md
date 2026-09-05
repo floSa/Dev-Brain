@@ -17,41 +17,54 @@ url_repo: https://github.com/MaxHalford/prince
 
 # Prince
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.
 
-Bibliothèque d'**analyse factorielle multivariée** (tradition Benzécri / FactoMineR) avec une **API scikit-learn** : `fit` / `transform`, qui travaille directement sur des DataFrames pandas et renvoie des sorties indexées. Couvre toute la famille — PCA (quantitatif), CA (contingence), MCA (qualitatif), FAMD (mixte), MFA (groupes de variables), GPA et PGA. Gère lignes/colonnes supplémentaires et pondérations, et est testée contre scikit-learn et FactoMineR (via rpy2). C'est l'implémentation Python de référence, activement maintenue.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Analyse exploratoire multivariée sur tableaux pandas : plans factoriels, contributions, cos².
-- Données qualitatives (MCA), de contingence (CA) ou mixtes (FAMD) — au-delà de la seule PCA quantitative de scikit-learn.
-- Intégration dans un pipeline scikit-learn (`fit_transform`).
+Bibliothèque d'analyse factorielle multivariée dans la tradition Benzécri / FactoMineR,
+exposée sous une **API scikit-learn** : `fit` / `transform` directement sur des DataFrames
+pandas, avec des sorties indexées et lisibles. Couvre toute la famille — PCA pour le
+quantitatif, CA pour la contingence, MCA pour le qualitatif, FAMD pour le mixte, MFA pour
+des groupes de variables, plus GPA et PGA. Gère les lignes et colonnes supplémentaires et
+les pondérations, et ses sorties sont testées contre scikit-learn et FactoMineR via rpy2.
+C'est l'implémentation Python de référence du domaine.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Aides à l'interprétation textuelles « façon FactoMineR » sur PCA/CA/MCA seules → [[Fanalysis]].
-- PCA quantitative pure dans un pipeline ML déjà sklearn → [[Scikit-Learn|sklearn.decomposition.PCA]].
-- Tests d'hypothèse / modèles statistiques → [[scipy.stats]], [[statsmodels]].
+| Prendre si | Écarter si |
+|---|---|
+| Analyse exploratoire multivariée sur tableaux pandas : plans factoriels, contributions, cos² | L'API a notablement évolué entre versions majeures (sorties, noms de méthodes) — épingler la version |
+| Données qualitatives (MCA), de contingence (CA) ou mixtes (FAMD), au-delà de la PCA quantitative | Visualisations bâties sur Altair : le rendu dépend de l'environnement, notebook compris |
+| Intégration dans un pipeline scikit-learn — `fit_transform` | La décomposition reste en mémoire sur un seul nœud : pas de très gros tableaux |
+| | PCA quantitative pure dans un pipeline déjà scikit-learn : `sklearn.decomposition.PCA` suffit → [[Scikit-Learn]] |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add prince`), au-dessus de pandas/scikit-learn/altair.
-- Single-node ; calcul en mémoire.
-- MIT, gratuit.
+- Installation — `uv add prince`
+- Point d'entrée — import Python, `import prince`, estimateurs `fit` / `transform`
+- Prérequis — pandas, scikit-learn et altair
+- Exécution — dans le process appelant, CPU, mono-nœud, tout en mémoire
+- Coût — gratuit, MIT, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- L'API a notablement évolué entre versions majeures (sorties, noms de méthodes) — épingler la version.
-- Visualisations basées sur Altair : rendu dépendant de l'environnement (notebook).
-- Sur de très gros tableaux, la décomposition reste en mémoire (single-node).
-
-## Alternatives
+### Alternatives
 
 - [[Fanalysis]] — Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
 
-## Liens
+## Ressources
 
-- Concepts implémentés : [[PCA]], [[MCA]], [[CA]], [[FAMD]], [[MFA]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- [[Comparatif - Réduction de dimension]] — analyse factorielle vs PCA / manifold.
-- Doc : https://maxhalford.github.io/prince/
+- Documentation — https://maxhalford.github.io/prince/
+- Dépôt — https://github.com/MaxHalford/prince
+
+## Voir aussi
+
+- [[PCA]] · [[MCA]] · [[CA]] · [[FAMD]] · [[MFA]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Comparatif - Réduction de dimension]] — analyse factorielle face à la PCA et aux méthodes manifold

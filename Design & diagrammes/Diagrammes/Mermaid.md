@@ -18,39 +18,53 @@ url_repo: https://github.com/mermaid-js/mermaid
 
 # Mermaid
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
-**Diagram-as-code** : on décrit le diagramme en **texte** (syntaxe inspirée de markdown) et Mermaid le rend. 20+ types : flowchart, séquence, classe, état, ERD, Gantt, pie, git graph. Le gros intérêt : le diagramme est **du texte versionnable** (diff lisible, revue en PR, généré automatiquement) et il se rend **nativement dans GitHub, GitLab et Obsidian** — pas d'image binaire à maintenir à côté du code. Écrit en JavaScript (MIT).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Diagramme qui **vit dans le repo / la doc** et doit rester synchro avec le code (archi, séquence, ERD dans un README).
-- Génération automatique (un script produit le texte Mermaid) ou revue en pull request.
-- Contexte markdown : GitHub, Obsidian, MkDocs, Docusaurus le rendent sans plugin lourd.
+Diagram-as-code : le diagramme est décrit en **texte**, dans une syntaxe inspirée de
+markdown, et Mermaid le rend. Vingt et quelques types couverts — flowchart, séquence,
+classe, état, ERD, Gantt, pie, git graph. Tout l'intérêt tient dans la nature du livrable :
+du texte versionnable, donc diffable, révisable en pull request et générable par script, et
+**rendu nativement par GitHub, GitLab et Obsidian** sans image binaire à maintenir à côté du
+code. Le prix de ce format est l'auto-layout : le placement des nœuds n'appartient pas à
+l'auteur.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Placement pixel-perfect ou mise en page très contrôlée → [[draw.io]] (GUI).
-- Schéma libre / croquis de réunion → [[Excalidraw]].
-- Diagramme dense où l'auto-layout devient illisible : Mermaid place les nœuds automatiquement, on subit la mise en page.
+| Prendre si | Écarter si |
+|---|---|
+| Diagramme qui vit dans le dépôt ou la doc et doit rester synchrone avec le code | **Auto-layout subi** : sur un graphe dense, le placement échappe à l'auteur — scinder en plusieurs diagrammes |
+| Génération automatique du diagramme par un script, ou revue en pull request | Syntaxe à apprendre, et qui varie d'un type de diagramme à l'autre |
+| Contexte markdown : GitHub, Obsidian, MkDocs et Docusaurus le rendent sans plugin lourd | Le rendu diffère légèrement d'une plateforme à l'autre : les versions de Mermaid embarquées ne sont pas les mêmes |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- Open-source MIT, JavaScript. Utilisable en lib navigateur, via CLI (`mermaid-cli` → PNG/SVG), ou intégré dans un moteur de doc.
-- Rendu natif GitHub/GitLab/Obsidian ; éditeur en ligne (Mermaid Live Editor).
+- Installation — rien à installer là où le rendu est natif ; sinon `npm i mermaid`, ou `mermaid-cli` pour l'export
+- Point d'entrée — un bloc de texte dans un markdown, une bibliothèque navigateur, ou la CLI pour produire PNG/SVG
+- Prérequis — un moteur de rendu qui embarque Mermaid, ou Node pour la CLI
+- Exécution — dans le moteur hôte (navigateur, GitHub, Obsidian), rien à héberger
+- Coût — gratuit, MIT, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- **Auto-layout subi** : sur un graphe dense, on ne maîtrise pas le placement ; scinder en plusieurs diagrammes.
-- Syntaxe à apprendre, et qui varie selon le type de diagramme.
-- Le rendu peut différer légèrement entre plateformes (versions de Mermaid embarquées différentes).
-
-## Alternatives
+### Alternatives
 
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Diagrammes]]
-- Docs : https://mermaid.js.org/ · Repo : https://github.com/mermaid-js/mermaid
+- Documentation — https://mermaid.js.org/
+- Dépôt — https://github.com/mermaid-js/mermaid
+
+## Voir aussi
+
+- [[Diagrammes]] — le hub du dossier
+- [[Comparatif - Diagrammes]] — ce qui départage les outils du dossier

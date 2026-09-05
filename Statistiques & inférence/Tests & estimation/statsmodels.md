@@ -17,42 +17,54 @@ url_repo: https://github.com/statsmodels/statsmodels
 
 # statsmodels
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
 
-Bibliothèque de **modélisation statistique** qui apporte à Python l'esprit de R : on estime un modèle (OLS, GLM, mixtes, ANOVA, ARIMA/SARIMAX, VAR…) puis on lit un **résumé annoté** (coefficients, erreurs-types, p-values, IC, R², AIC/BIC) et toute une batterie de **tests de spécification** (hétéroscédasticité, autocorrélation, normalité des résidus, multicolinéarité). Là où scipy.stats donne une fonction, statsmodels donne un objet modèle avec ses diagnostics.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- [[Régression linéaire]] (OLS), logistique et Poisson avec inférence complète (IC, tests sur les coefficients), via l'API formules `statsmodels.formula.api` (`smf`) inspirée de R (`y ~ x1 + x2`, sur patsy).
-- Modèles linéaires généralisés [[GLM]] (familles binomiale, Poisson, Gamma…) et modèles additifs généralisés [[GAM]] via `GLMGam` (splines pénalisées).
-- Séries temporelles : ARIMA, SARIMAX, lissage exponentiel, décomposition, tests de stationnarité (ADF, KPSS).
-- ANOVA et ANCOVA structurées, tests de spécification et d'adéquation d'un modèle.
+Bibliothèque de modélisation statistique qui apporte à Python l'esprit de R : on estime un
+modèle — OLS, GLM, mixtes, ANOVA, ARIMA/SARIMAX, VAR — puis on lit un **résumé annoté**
+(coefficients, erreurs-types, p-values, intervalles de confiance, R², AIC/BIC), doublé
+d'une batterie de tests de spécification : hétéroscédasticité, autocorrélation, normalité
+des résidus, multicolinéarité. Là où scipy.stats donne une fonction, statsmodels donne un
+objet modèle avec ses diagnostics. L'API formules à la R (`y ~ x1 + x2`, via patsy)
+coexiste avec l'API par classes, et les deux ne se mélangent pas.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Un simple test ponctuel ou une distribution → [[scipy.stats]] (plus direct, déjà installé).
-- Sortie lisible avec tailles d'effet et post-hoc sans construire de modèle → [[pingouin]].
-- Prédiction pure / ML supervisé à grande échelle → [[Scikit-Learn|scikit-learn]].
+| Prendre si | Écarter si |
+|---|---|
+| Régression linéaire, logistique ou Poisson avec inférence complète — IC et tests sur les coefficients | L'OLS **n'ajoute pas** la constante : `add_constant`, ou passer par la formule, sous peine de modèle faux |
+| Modèles linéaires généralisés et additifs — familles binomiale, Poisson, Gamma, `GLMGam` à splines pénalisées | API double, `sm.OLS` contre `smf.ols` : deux conventions qui se mélangent mal |
+| Séries temporelles : ARIMA, SARIMAX, lissage exponentiel, décomposition, tests de stationnarité (ADF, KPSS) | Prédiction pure ou ML supervisé à grande échelle → [[Scikit-Learn]] |
+| ANOVA et ANCOVA structurées, tests de spécification et d'adéquation d'un modèle | Orienté inférence, pas pipeline : aucun `fit`/`predict` homogène avec scikit-learn |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add statsmodels`), s'appuie sur NumPy/SciPy/pandas/patsy.
-- Single-node ; calcul en mémoire.
-- BSD-3-Clause, gratuit.
+- Installation — `uv add statsmodels`
+- Point d'entrée — import Python, `import statsmodels.api as sm` ou `statsmodels.formula.api as smf`
+- Prérequis — NumPy, SciPy, pandas et patsy ; rien d'autre
+- Exécution — dans le process appelant, CPU, mono-nœud, tout en mémoire
+- Coût — gratuit, BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- L'OLS **n'ajoute pas** la constante : penser à `add_constant` (ou la formule).
-- API double (classes `sm.OLS` vs formules `smf.ols`) : ne pas mélanger les conventions.
-- Orienté inférence, pas pipeline ML : pas d'API `fit/predict` homogène avec scikit-learn.
-
-## Alternatives
+### Alternatives
 
 - [[scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
 - [[pingouin]] — Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 
-## Liens
+## Ressources
 
-- Concepts implémentés : [[Régression linéaire]], [[GLM]], [[GAM]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- Doc : https://www.statsmodels.org/stable/
+- Documentation — https://www.statsmodels.org/stable/
+- Dépôt — https://github.com/statsmodels/statsmodels
+
+## Voir aussi
+
+- [[Régression linéaire]] · [[GLM]] · [[GAM]] · [[Test t et ANOVA]] · [[Tests d'hypothèse]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier

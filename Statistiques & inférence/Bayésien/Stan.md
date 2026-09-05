@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++ / Python
 alternatives: ["[[PyMC]]"]
-complements: []
+complements: ["[[ArviZ]]"]
 tags: [bayesian, probabilistic-programming, monte-carlo, markov]
 url_docs: https://mc-stan.org
 url_repo: https://github.com/stan-dev/cmdstanpy
@@ -17,41 +17,57 @@ url_repo: https://github.com/stan-dev/cmdstanpy
 
 # Stan
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.
 
-Plateforme de référence pour l'inférence bayésienne. On écrit le modèle dans un **langage dédié** (blocs `data`, `parameters`, `model`), Stan le **compile en C++** puis échantillonne l'a posteriori avec un **NUTS** réputé pour sa robustesse et sa vitesse. Stan est l'implémentation qui a popularisé NUTS ; les autres frameworks s'y comparent. Depuis Python, l'accès se fait via **CmdStanPy**, une interface pure-Python légère qui pilote l'exécutable CmdStan (alternatives historiques : PyStan, plus lourde à installer).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie C++ / Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Modèle bayésien exigeant en performance / taille, ou destiné à être réutilisé hors Python (R, ligne de commande, Julia).
-- Besoin de l'échantillonneur le plus éprouvé et de diagnostics de convergence soignés.
-- Modèle stable que l'on veut versionner comme un artefact `.stan` indépendant du langage hôte.
+Plateforme de référence pour l'inférence bayésienne. Le modèle s'écrit dans un **langage
+dédié** — blocs `data`, `parameters`, `model` —, Stan le **compile en C++**, puis
+échantillonne l'a posteriori avec le NUTS qu'il a lui-même popularisé et auquel les autres
+frameworks se comparent. Conséquence de ce détour par la compilation : le modèle devient un
+artefact `.stan` versionnable et réutilisable hors Python (R, Julia, ligne de commande),
+mais chaque modification repaie le coût de compilation. Depuis Python, l'accès passe par
+**CmdStanPy**, interface légère qui pilote l'exécutable CmdStan.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Prototypage rapide tout en Python, modèle évoluant souvent → [[PyMC]] (pas de compilation, syntaxe Python).
-- Statistique fréquentiste classique (GLM, séries temporelles, tests) → [[statsmodels]].
-- Exploration des résultats : déléguée à [[ArviZ]] (CmdStanPy expose un `InferenceData`).
+| Prendre si | Écarter si |
+|---|---|
+| Modèle bayésien exigeant en performance ou en taille | Coût de compilation au premier run **et à chaque modification** du `.stan` : mettre en cache le binaire |
+| Modèle destiné à être réutilisé hors Python — R, Julia, ligne de commande | Toolchain C++ requise : source classique d'échecs d'installation en CI et sous Windows — conteneur ou CmdStan pré-construit |
+| Versionner le modèle comme un artefact indépendant du langage hôte | Langage typé et strict : dimensions et contraintes à déclarer, plus rigide que la syntaxe Python |
+| Vouloir l'échantillonneur le plus éprouvé et des diagnostics de convergence soignés | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- `uv add cmdstanpy` puis `install_cmdstan()` télécharge et compile la toolchain CmdStan (C++) — prévoir un compilateur.
-- Single-node ; chaînes parallélisées sur les cœurs. Première exécution lente (compilation du modèle), puis binaire réutilisé.
-- BSD-3-Clause (Stan et CmdStanPy), gratuit.
+- Installation — `uv add cmdstanpy`, puis `install_cmdstan()` qui télécharge et compile la toolchain
+- Point d'entrée — fichier `.stan` compilé, piloté depuis Python par CmdStanPy
+- Prérequis — un compilateur C++ sur la machine ; c'est la contrainte structurante
+- Exécution — mono-nœud, chaînes parallélisées sur les cœurs ; première exécution lente, binaire réutilisé ensuite
+- Coût — gratuit, BSD-3-Clause pour Stan comme pour CmdStanPy
 
-## Pièges
+## Écosystème
 
-- Coût de compilation au premier run et à chaque modification du `.stan` : mettre en cache le binaire compilé.
-- Toolchain C++ requise : source d'échecs d'install en CI/Windows → privilégier conteneur ou cmdstan pré-construit.
-- Le langage Stan est typé et strict (déclarer dimensions et contraintes) : plus rigide que la syntaxe PyMC, mais protège des erreurs.
-
-## Alternatives
+### Alternatives
 
 - [[PyMC]] — Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).
 
-## Liens
+### Compléments
 
-- Concepts implémentés : [[Inférence bayésienne]], [[MCMC]]
-- Diagnostics & viz a posteriori : [[ArviZ]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- Doc : https://mc-stan.org/cmdstanpy
+- [[ArviZ]] — Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC. — CmdStanPy expose un `InferenceData`, et l'exploration des résultats lui est déléguée
+
+## Ressources
+
+- Documentation — https://mc-stan.org
+- Dépôt — https://github.com/stan-dev/cmdstanpy
+
+## Voir aussi
+
+- [[Inférence bayésienne]] · [[MCMC]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier

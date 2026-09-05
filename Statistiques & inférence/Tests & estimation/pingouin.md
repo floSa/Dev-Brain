@@ -17,41 +17,53 @@ url_repo: https://github.com/raphaelvallat/pingouin
 
 # pingouin
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 
-Bibliothèque de tests statistiques pensée pour la **lisibilité** : chaque test renvoie un DataFrame pandas prêt à publier, avec p-value **mais aussi taille d'effet, intervalle de confiance et puissance** — ce que scipy.stats laisse à calculer à part. Couvre t-tests, ANOVA (y compris à mesures répétées et mixtes) avec post-hoc et corrections, corrélations (dont robustes/partielles), tests non paramétriques, et une `pingouin.power_*` pour le dimensionnement. Écrite au-dessus de pandas/NumPy/SciPy.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Analyse statistique « classique » (recherche, expérimentation) où l'on veut p-value + taille d'effet + puissance d'un seul appel.
-- ANOVA à mesures répétées / mixtes avec tests post-hoc et correction de la multiplicité intégrés.
-- Calcul de puissance et de taille d'échantillon (`power_ttest`, `power_anova`…).
+Bibliothèque de tests statistiques pensée pour la lisibilité de la sortie : chaque appel
+rend un DataFrame pandas prêt à publier, portant d'un seul coup la p-value, la **taille
+d'effet**, l'**intervalle de confiance** et la **puissance** — ce que scipy.stats laisse à
+calculer à part. Couvre les t-tests, les ANOVA y compris à mesures répétées et mixtes avec
+post-hoc et corrections de multiplicité, les corrélations robustes et partielles, les tests
+non paramétriques, et une famille `power_*` pour le dimensionnement d'échantillon. C'est
+une surcouche de SciPy, pensée pour des jeux de taille recherche.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Catalogue exhaustif de lois et de tests, ou dépendance minimale → [[scipy.stats]].
-- Modèles de régression / séries temporelles avec diagnostics complets → [[statsmodels]].
-- Contrainte de licence permissive : pingouin est en **GPL-3.0** (copyleft) — à vérifier avant intégration dans un produit fermé.
+| Prendre si | Écarter si |
+|---|---|
+| Vouloir p-value, taille d'effet et puissance d'un seul appel, dans un DataFrame lisible | **GPL-3.0**, copyleft — là où scipy et statsmodels sont en BSD : à trancher avant toute intégration dans un produit fermé |
+| ANOVA à mesures répétées ou mixtes, avec post-hoc et correction de la multiplicité intégrés | Performances pensées pour des jeux de taille recherche, pas pour du volume |
+| Dimensionner une expérience — `power_ttest`, `power_anova` | Surcouche de SciPy : un cas très spécifique redescend de toute façon dans le test sous-jacent |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add pingouin`), maintenue par Raphael Vallat.
-- Single-node ; calcul en mémoire sur pandas.
-- GPL-3.0 (copyleft), gratuit — attention à la contamination de licence en distribution.
+- Installation — `uv add pingouin`
+- Point d'entrée — import Python, `import pingouin as pg`, entrées et sorties en DataFrames pandas
+- Prérequis — pandas, NumPy et SciPy ; rien d'autre
+- Exécution — dans le process appelant, CPU, mono-nœud, tout en mémoire
+- Coût — gratuit mais **GPL-3.0** : copyleft, contamination de licence à vérifier en distribution
 
-## Pièges
+## Écosystème
 
-- **GPL-3.0** : licence plus contraignante que le BSD de scipy/statsmodels.
-- Performances pensées pour des jeux de taille recherche, pas pour du massif.
-- Surcouche de SciPy : pour un cas très spécifique, le test sous-jacent reste dans scipy.stats.
-
-## Alternatives
+### Alternatives
 
 - [[scipy.stats]] — Socle bas niveau des tests statistiques et lois de probabilité en Python — p-values, distributions, corrélations, au sein de SciPy.
 - [[statsmodels]] — Modélisation statistique façon R en Python — GLM, séries temporelles, tests de spécification avec tables de résultats détaillées.
 
-## Liens
+## Ressources
 
-- Concepts implémentés : [[Test t et ANOVA]], [[Tests non paramétriques]], [[Analyse de puissance]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- Doc : https://pingouin-stats.org/
+- Documentation — https://pingouin-stats.org/
+- Dépôt — https://github.com/raphaelvallat/pingouin
+
+## Voir aussi
+
+- [[Test t et ANOVA]] · [[Tests non paramétriques]] · [[Analyse de puissance]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier

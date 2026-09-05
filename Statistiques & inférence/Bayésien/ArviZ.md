@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[PyMC]]", "[[Stan]]"]
 tags: [bayesian, monte-carlo]
 url_docs: https://python.arviz.org
 url_repo: https://github.com/arviz-devs/arviz
@@ -17,40 +17,58 @@ url_repo: https://github.com/arviz-devs/arviz
 
 # ArviZ
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.
 
-Bibliothèque dédiée à l'**analyse exploratoire des modèles bayésiens**, **indépendante du moteur** d'échantillonnage. Elle ingère la sortie de PyMC, Stan (CmdStanPy), NumPyro, Pyro… dans un format commun (`InferenceData`, adossé à xarray) puis fournit les diagnostics de chaînes ($\hat{R}$ de Gelman–Rubin, ESS, énergie BFMI), les visualisations (trace, rank, posterior, forest, PPC) et la **comparaison de modèles** (LOO, WAIC). C'est la brique transverse qui standardise le « après-échantillonnage » quel que soit le sampler.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Vérifier la convergence d'un run MCMC : $\hat{R} \approx 1$, ESS suffisant, divergences, autocorrélation.
-- Visualiser et comparer des a posteriori, faire des posterior predictive checks.
-- Comparer plusieurs modèles bayésiens (LOO/WAIC) sur un même jeu de données.
+Bibliothèque d'analyse exploratoire des modèles bayésiens, **indépendante du moteur**
+d'échantillonnage : elle n'infère rien elle-même. Elle ingère la sortie de PyMC, Stan,
+NumPyro ou Pyro dans un format commun, l'`InferenceData` adossé à xarray, puis rend les
+diagnostics de chaînes ($\hat{R}$ de Gelman–Rubin, ESS, énergie BFMI), les visualisations
+(trace, rank, posterior, forest, posterior predictive checks) et la comparaison de modèles
+par LOO et WAIC. C'est la brique qui standardise l'après-échantillonnage, quel que soit le
+sampler qui précède.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Construire et échantillonner le modèle : ArviZ ne fait pas d'inférence → [[PyMC]] ou [[Stan]] en amont.
-- Diagnostics fréquentistes / tables de régression classiques → [[statsmodels]].
+| Prendre si | Écarter si |
+|---|---|
+| Vérifier la convergence d'un run MCMC : $\hat{R}$, ESS, divergences, autocorrélation | N'infère rien : sans moteur d'échantillonnage en amont, il n'y a rien à ingérer |
+| Visualiser et comparer des a posteriori, faire des posterior predictive checks | Tout part de l'`InferenceData` : des dims et coords mal nommés en amont brouillent les graphes — laisser le convertisseur natif faire le travail |
+| Comparer plusieurs modèles bayésiens sur un même jeu — LOO, WAIC | $\hat{R} \approx 1$ ne suffit pas à conclure : croiser avec ESS et le nombre de divergences |
+| | L'écosystème se modularise en `arviz-base`, `arviz-stats` et `arviz-plots` : les imports recommandés dépendent de la version |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add arviz`), s'appuie sur xarray, NumPy, matplotlib (backend Bokeh optionnel).
-- Single-node ; travaille sur des échantillons déjà produits, coût négligeable.
-- Apache-2.0, gratuit ; sous l'ombrelle NumFOCUS.
+- Installation — `uv add arviz`
+- Point d'entrée — import Python, `import arviz as az`, sur un objet `InferenceData`
+- Prérequis — xarray, NumPy et matplotlib ; backend Bokeh optionnel
+- Exécution — dans le process appelant, CPU, mono-nœud ; travaille sur des échantillons déjà produits
+- Coût — gratuit, Apache-2.0, aucune limite d'usage ; sous l'ombrelle NumFOCUS
 
-## Pièges
+## Écosystème
 
-- Tout part de l'`InferenceData` : mal nommer dims/coords en amont brouille les graphes — laisser le convertisseur natif (`pm.sample` renvoie déjà de l'`InferenceData`).
-- $\hat{R}$ proche de 1 ne suffit pas : croiser avec ESS et le nombre de divergences avant de conclure à la convergence.
-- L'écosystème se modularise (`arviz-base`, `arviz-stats`, `arviz-plots`) : suivre les imports recommandés selon la version.
+### Alternatives
 
-## Alternatives
+- Aucune dans le brain : ArviZ ne concurrence pas les moteurs d'inférence, il se branche en aval.
 
-- Pas d'alternative directe dans le brain : ArviZ est **complémentaire** des moteurs d'inférence, pas un concurrent. Il se branche en aval de [[PyMC]] et [[Stan]].
+### Compléments
 
-## Liens
+- [[PyMC]] — Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor). — `pm.sample` rend directement un `InferenceData`
+- [[Stan]] — Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy. — CmdStanPy expose la même structure
 
-- Concepts implémentés : [[MCMC]], [[Inférence bayésienne]]
-- Moteurs en amont : [[PyMC]], [[Stan]]
-- [[Comparatif - Outils stats]] — comparatif des libs statistiques
-- Doc : https://python.arviz.org
+## Ressources
+
+- Documentation — https://python.arviz.org
+- Dépôt — https://github.com/arviz-devs/arviz
+
+## Voir aussi
+
+- [[MCMC]] · [[Inférence bayésienne]] — les notions implémentées
+- [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
