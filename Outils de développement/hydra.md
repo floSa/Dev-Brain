@@ -25,39 +25,48 @@ url_repo: https://github.com/hydra-ecosystem/hydra
 | Librairie Python | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Framework de configuration pour applications complexes, créé en 2019 par **Omry Yadan** chez Facebook AI Research. Le 13 août 2026, le projet a quitté la tutelle de Meta pour l'organisation communautaire **Hydra Ecosystem** (`hydra-ecosystem/hydra`) — dépôt migré avec son historique, ses issues et ses PR, licence MIT inchangée ; ce n'est ni un fork ni un abandon, mais un passage à une gouvernance indépendante. Sa marque : **composer dynamiquement** une configuration hiérarchique à partir de groupes de fichiers (`config groups`), puis la **surcharger en ligne de commande**. Bâti sur **OmegaConf** (résolution d'interpolations, fusion, typage structuré). Le mode **multirun** lance automatiquement une même tâche sur un balayage de paramètres (sweeps), et des launchers/sweepers (Joblib, Optuna, Ax, soumission cluster) s'y branchent. Installation via `hydra-core`.
+Framework de configuration composable, créé en 2019 par Omry Yadan chez Facebook AI
+Research, passé le 13 août 2026 sous l'organisation communautaire **Hydra Ecosystem** —
+dépôt migré avec son historique, ses issues et ses PR, licence MIT inchangée : ni fork, ni
+abandon, un simple passage à une gouvernance indépendante. Sa marque : **composer**
+dynamiquement une configuration hiérarchique à partir de groupes de fichiers, puis la
+surcharger en ligne de commande. Bâti sur **OmegaConf** pour la fusion, les interpolations
+et le typage structuré. Le mode `--multirun` rejoue la même tâche sur un balayage de
+paramètres, et des launchers et sweepers s'y branchent — Joblib, Optuna, Ax, soumission à un
+cluster. Hydra prend la main sur le répertoire de travail : un dossier de run par exécution.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Expériences ML où l'on veut faire varier modèle, dataset, optimiseur via des combinaisons de configs.
-- Lancer des balayages d'hyperparamètres ou de configurations en une commande (`--multirun`).
-- Applications à configuration profondément hiérarchique, surchargée depuis la CLI sans réécrire les fichiers.
+| Prendre si | Écarter si |
+|---|---|
+| Expériences ML où modèle, dataset et optimiseur varient par combinaisons de configs | Service web ayant besoin d'une configuration typée et validée → [[Pydantic Settings]] |
+| Balayage d'hyperparamètres ou de configurations en une seule commande (`--multirun`) | Multi-environnements applicatifs — default, dev, prod — avec secrets et formats variés → [[dynaconf]] |
+| Configuration profondément hiérarchique, surchargée depuis la CLI sans réécrire les fichiers | Charger quelques variables depuis un `.env` → [[python-dotenv]] |
+| | Coût d'entrée réel : composition, liste `defaults` et interpolations OmegaConf demandent un temps d'appropriation, et le répertoire de travail détourné surprend en debug |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Simple service web ayant besoin d'une config typée et validée → [[Pydantic Settings]].
-- Multi-environnements applicatifs (default/dev/prod) avec secrets et formats variés → [[dynaconf]].
-- Charger quelques variables depuis un `.env` → [[python-dotenv]].
+- Installation — `uv add hydra-core`
+- Point d'entrée — décorateur `@hydra.main(...)` sur la fonction d'entrée, plus un arbre de groupes de configs
+- Prérequis — Python et OmegaConf ; les launchers et sweepers (Joblib, Optuna, Ax, submitit) sont des plugins à installer
+- Exécution — dans le process appelant ; `--multirun` peut déléguer à un launcher distribué, Hydra lui-même n'héberge rien
+- Coût — gratuit sous licence MIT
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque Python (`uv add hydra-core`). MIT, gratuit.
-- Single-node ; le multirun peut déléguer l'exécution à un launcher distribué, mais Hydra lui-même n'héberge rien.
-
-## Pièges
-
-- Courbe d'apprentissage : composition, `defaults` list et interpolations OmegaConf demandent un temps d'appropriation.
-- Hydra prend la main sur le répertoire de travail (un dossier de run par exécution) : surprend en debug et en logging.
-- Pensé pour les scripts/expériences ; l'intégrer dans un service applicatif classique est moins naturel que Pydantic Settings ou dynaconf.
-
-## Alternatives
+### Alternatives
 
 - [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
 - [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 - [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
-## Liens
+## Ressources
 
-- Doc : https://hydra.cc/docs/intro/
+- Documentation — https://hydra.cc/docs/intro/
+- Dépôt — https://github.com/hydra-ecosystem/hydra
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine

@@ -25,40 +25,46 @@ url_repo: https://github.com/dynaconf/dynaconf
 | Librairie Python | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Bibliothèque de **gestion de configuration** pour Python. Sa marque : lire les réglages depuis **plusieurs formats** (TOML, YAML, JSON, INI, `.py`) et **plusieurs sources** (fichiers, variables d'environnement, `.env`, secrets, backends comme Vault et Redis), avec une **précédence claire** entre elles. Système de **couches par environnement** (`default`, `development`, `testing`, `production`) qui se superposent. Surcharge de n'importe quelle valeur par variable d'environnement (préfixe `DYNACONF_`). Extensions intégrées pour Django et Flask.
+Bibliothèque de gestion de configuration dont la marque est la **fusion de sources** : elle
+lit TOML, YAML, JSON, INI et `.py`, depuis des fichiers, l'environnement, un `.env`, des
+fichiers de secrets ou des backends comme Vault et Redis, et les superpose selon une
+précédence explicite. Par-dessus, un système de **couches par environnement** — `default`,
+`development`, `testing`, `production` — dont chacune hérite de la précédente. N'importe
+quelle valeur se surcharge par une variable préfixée `DYNACONF_`, et le basculement
+d'environnement se pilote par `ENV_FOR_DYNACONF`. Extensions intégrées pour Django et Flask.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Une application qui doit tourner sur plusieurs environnements avec des réglages distincts mais hérités.
-- Configuration éclatée sur plusieurs formats / fichiers, à fusionner avec une précédence prévisible.
-- Besoin de secrets externes (Vault) ou de surcharge fine par variable d'environnement sans toucher au code.
-- Projet Django ou Flask cherchant une couche de config unifiée.
+| Prendre si | Écarter si |
+|---|---|
+| Une application qui tourne sur plusieurs environnements, aux réglages distincts mais hérités | Validation typée stricte, modèles et coercition → [[Pydantic Settings]] |
+| Configuration éclatée sur plusieurs formats et fichiers, à fusionner avec une précédence prévisible | Composition hiérarchique d'expériences ML, surcharges CLI et balayages → [[hydra]] |
+| Secrets externes (Vault) ou surcharge fine par variable d'environnement, sans toucher au code | Simple chargement d'un `.env`, sans couches ni formats multiples → [[python-dotenv]] |
+| Projet Django ou Flask cherchant une couche de configuration unifiée | La richesse des sources se paie : la précédence fichiers / environnement / secrets surprend tant qu'elle n'est pas fixée et documentée |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Validation typée stricte de la config (modèles, coercition) → [[Pydantic Settings]].
-- Composition hiérarchique d'expériences ML avec overrides CLI et sweeps → [[hydra]].
-- Simple chargement d'un `.env` sans couches ni formats multiples → [[python-dotenv]].
+- Installation — `uv add dynaconf`
+- Point d'entrée — import Python : un objet `Dynaconf(...)` déclarant fichiers, environnements et préfixe
+- Prérequis — Python ; les backends externes (Vault, Redis) demandent leurs extras
+- Exécution — dans le process appelant, en mémoire ; rien à héberger
+- Coût — gratuit sous licence MIT
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque Python (`uv add dynaconf`). MIT, gratuit.
-- Single-node, en mémoire ; rien à héberger.
-
-## Pièges
-
-- La richesse des sources et la précédence (fichiers ↔ env ↔ secrets) peuvent surprendre : fixer et documenter l'ordre attendu.
-- Pas de validation de schéma native aussi forte que Pydantic : combiner avec un modèle typé si la config est critique.
-- Le basculement d'environnement repose sur une variable dédiée (`ENV_FOR_DYNACONF`) : bien cadrer son réglage en CI et en prod.
-
-## Alternatives
+### Alternatives
 
 - [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
 - [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 - [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
-## Liens
+## Ressources
 
-- Doc : https://www.dynaconf.com/
+- Documentation — https://www.dynaconf.com/
+- Dépôt — https://github.com/dynaconf/dynaconf
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine

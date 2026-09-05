@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python / Rust
 alternatives: []
-complements: []
+complements: ["[[Pydantic Settings]]"]
 tags: [data-validation, type-hints]
 url_docs: https://pydantic.dev/docs/validation/
 url_repo: https://github.com/pydantic/pydantic
@@ -25,37 +25,44 @@ url_repo: https://github.com/pydantic/pydantic
 | Librairie Python / Rust | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Bibliothèque de **validation de données** pilotée par les **annotations de type** Python. On déclare un `BaseModel` avec des champs typés ; Pydantic valide, **coerce** et structure les données entrantes à l'exécution, avec des messages d'erreur précis. Depuis la **v2**, le cœur de validation (`pydantic-core`) est **écrit en Rust** (via PyO3), d'où un gain de performance majeur sur la v1. C'est le socle de validation de tout un écosystème : FastAPI, SQLModel, LangChain et de nombreux outils l'utilisent pour leurs schémas.
+Validation de données pilotée par les **annotations de type**. On déclare un `BaseModel` aux
+champs typés ; Pydantic valide, **coerce** et structure les données entrantes à l'exécution,
+avec des erreurs qui désignent le champ fautif et la règle enfreinte. Depuis la **v2**, le
+cœur `pydantic-core` est écrit en Rust via PyO3 — d'où un gain de performance majeur, et une
+API changée : `@validator` devient `@field_validator`, `.dict()` devient `.model_dump()`.
+C'est le socle de validation d'un écosystème entier : FastAPI, SQLModel et LangChain
+s'appuient dessus pour leurs schémas.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Valider et parser des données externes (payloads API, JSON, formulaires) vers des objets Python typés.
-- Définir des schémas clairs et auto-documentés (`.model_dump()`, génération de JSON Schema).
-- Sorties structurées de LLM, frontières de modules — partout où l'on veut garantir la forme des données.
+| Prendre si | Écarter si |
+|---|---|
+| Valider et parser des données externes — payloads d'API, JSON, formulaires — vers des objets Python typés | Objets internes purs, sans validation ni entrées-sorties → `@dataclass` de la bibliothèque standard, plus léger |
+| Définir des schémas auto-documentés : `.model_dump()`, génération de JSON Schema | (Dé)sérialisation déclarative sans modèle riche → attrs et cattrs, ou marshmallow |
+| Garantir la forme des données aux frontières de modules, ou en sortie structurée de LLM | La coercition surprend (`"1"` devient `1`) : activer le mode strict quand la tolérance n'est pas voulue |
+| | Valider à chaque instanciation a un coût : ne pas revalider dans une boucle chaude des objets déjà sûrs |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Objets internes purs sans validation ni I/O → `@dataclass` de la stdlib (plus léger).
-- (Dé)sérialisation déclarative sans modèle riche → attrs + cattrs, marshmallow.
+- Installation — `uv add pydantic` ; la roue embarque le binaire Rust précompilé
+- Point d'entrée — import Python : une classe qui hérite de `BaseModel`
+- Prérequis — Python ; vérifier la version ciblée, l'API v1 et l'API v2 ne sont pas la même
+- Exécution — dans le process appelant, en mémoire ; rien à héberger
+- Coût — gratuit sous licence MIT
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque Python (`uv add pydantic`) ; roue avec binaire Rust précompilé. MIT, gratuit.
-- Single-node, en mémoire ; rien à héberger.
+### Compléments
 
-## Pièges
+- [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic. — la configuration d'application bâtie sur ce socle
 
-- Migration **v1 → v2** : API changée (`@validator` → `@field_validator`, `.dict()` → `.model_dump()`) ; vérifier la version ciblée.
-- La coercition est puissante mais peut surprendre (`"1"` → `1`) ; activer le mode strict si besoin.
-- Valider à chaque instanciation a un coût : éviter de revalider des objets déjà sûrs dans les boucles chaudes.
+## Ressources
 
-## Alternatives
+- Documentation — https://pydantic.dev/docs/validation/
+- Dépôt — https://github.com/pydantic/pydantic
 
-- dataclasses (stdlib), attrs, marshmallow — autres approches de modélisation / validation ; Pydantic se distingue par la validation à l'exécution pilotée par les types et son cœur Rust. *(Pages dédiées non créées.)*
+## Voir aussi
 
-## Liens
-
-- Configuration typée bâtie sur Pydantic : [[Pydantic Settings]].
-- Doc : https://pydantic.dev/docs/validation/
+- [[Outils de développement]] — le hub du domaine

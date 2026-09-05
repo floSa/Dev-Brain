@@ -25,39 +25,46 @@ url_repo: https://github.com/theskumar/python-dotenv
 | Librairie Python | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Bibliothèque minimale qui **lit un fichier `.env`** (paires `CLÉ=valeur`) et l'injecte dans les **variables d'environnement** du processus (`load_dotenv()`). Elle matérialise le principe **12-factor** : la config vit dans l'environnement, le `.env` sert le développement local sans être versionné. Fournit aussi une **CLI** (`dotenv get/set/list`) et la lecture d'un `.env` sans polluer l'environnement (`dotenv_values()`). Périmètre volontairement étroit : charger un `.env`, rien de plus.
+Lit un fichier `.env` — des paires `CLÉ=valeur` — et l'injecte dans les variables
+d'environnement du processus, par un `load_dotenv()`. C'est la mise en œuvre littérale du
+principe **12-factor** : la configuration vit dans l'environnement, le `.env` sert le
+développement local et ne se versionne pas. Une CLI (`dotenv get/set/list`) et une lecture
+sans pollution (`dotenv_values()`) complètent l'API. Le périmètre est volontairement étroit
+— charger un `.env`, rien de plus — et c'est ce qui en fait un socle bas niveau que d'autres
+outils de configuration savent lire à leur tour.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Développement local : centraliser les secrets et réglages dans un `.env` ignoré par Git.
-- Briser le couplage code ↔ config en suivant les 12 facteurs, sans dépendance lourde.
-- Socle bas niveau réutilisé par d'autres outils (Pydantic Settings, dynaconf savent lire un `.env`).
+| Prendre si | Écarter si |
+|---|---|
+| Développement local : centraliser réglages et secrets dans un `.env` ignoré par git | Validation et typage des valeurs chargées → [[Pydantic Settings]] |
+| Découpler code et configuration en suivant les 12 facteurs, sans dépendance lourde | Couches multi-environnements, formats multiples et secrets externes → [[dynaconf]] |
+| Socle bas niveau, réutilisé par d'autres outils de configuration | Composition hiérarchique d'expériences avec surcharges en ligne de commande → [[hydra]] |
+| | Tout arrive en chaîne brute : aucune coercition de type, aucune validation |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Validation et typage des valeurs chargées → [[Pydantic Settings]].
-- Couches multi-environnements, formats multiples et secrets externes → [[dynaconf]].
-- Composition hiérarchique d'expériences avec overrides CLI → [[hydra]].
+- Installation — `uv add python-dotenv`
+- Point d'entrée — import Python : `load_dotenv()`, `dotenv_values()` ; CLI `dotenv get/set/list`
+- Prérequis — un fichier `.env` non versionné ; en production les variables d'environnement réelles doivent primer, et le `.env` ne pas entrer dans l'image
+- Exécution — dans le process appelant ; rien à héberger
+- Coût — gratuit sous licence BSD-3-Clause
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque Python (`uv add python-dotenv`). BSD-3-Clause, gratuit.
-- Single-node ; rien à héberger.
-
-## Pièges
-
-- Charge des **chaînes brutes** : aucune coercition de type ni validation (tout est `str`).
-- En production, les variables d'environnement réelles doivent primer ; ne pas livrer le `.env` dans l'image.
-- N'apporte ni couches ni précédence d'environnements : pour ça, monter en gamme vers dynaconf ou Pydantic Settings.
-
-## Alternatives
+### Alternatives
 
 - [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
 - [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
 - [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 
-## Liens
+## Ressources
 
-- Doc : https://github.com/theskumar/python-dotenv#readme
+- Documentation — https://github.com/theskumar/python-dotenv#readme
+- Dépôt — https://github.com/theskumar/python-dotenv
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
