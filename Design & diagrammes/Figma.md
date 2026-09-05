@@ -18,39 +18,53 @@ url_repo:
 
 # Figma
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.
 
-Plateforme de **design d'interface (UI/UX) et de prototypage** collaborative, devenue le standard du design produit. Édition **temps réel multi-utilisateurs** dans le navigateur, systèmes de composants et de variables (design system), prototypes interactifs cliquables, et un **dev mode** qui expose mesures, tokens et bouts de code aux développeurs. Écosystème de plugins riche. Propriétaire, freemium (gratuit limité, payant par éditeur au-delà).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | — | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Concevoir des **interfaces** et des maquettes haute-fidélité, seul ou en équipe design.
-- Maintenir un **design system** partagé (composants, styles, variables).
-- Passer le relais aux devs proprement (dev mode : specs, tokens, export).
+Plateforme de design d'interface et de prototypage collaborative, devenue le standard du
+design produit. Édition temps réel multi-utilisateurs dans le navigateur, systèmes de
+composants et de variables pour tenir un design system, prototypes interactifs cliquables,
+et un **dev mode** qui expose mesures, tokens et bouts de code aux développeurs. L'écosystème
+de plugins est le plus riche du domaine. La contrepartie tient en une phrase : le service est
+un **cloud propriétaire sans self-host**, les fichiers sont chez l'éditeur, et le format
+n'est pas ouvert.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Exigence **open-source / self-host / souveraineté des données** → [[Penpot]].
-- Schéma technique (archi, réseau, UML) plutôt qu'interface → [[draw.io]] / [[Mermaid]].
-- Croquis conceptuel rapide → [[Excalidraw]].
+| Prendre si | Écarter si |
+|---|---|
+| Concevoir des interfaces et des maquettes haute-fidélité, seul ou en équipe design | **Cloud propriétaire, aucun self-host** : les données restent chez l'éditeur — rédhibitoire en contexte régulé ou souverain |
+| Maintenir un design system partagé — composants, styles, variables | Coût par éditeur, qui grimpe avec la taille de l'équipe |
+| Passer le relais aux développeurs proprement : specs, tokens, export via le dev mode | Format propriétaire : export et interopérabilité limités hors de l'écosystème |
+| | Schéma technique — architecture, réseau, UML — plutôt qu'interface → [[draw.io]] ou [[Mermaid]] |
+| | Croquis conceptuel rapide → [[Excalidraw]] |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- **Propriétaire**, freemium. Web + apps desktop Windows/macOS + apps mobiles de consultation.
-- Données hébergées par Figma (cloud) — point d'attention en contexte on-prem / sensible.
-- Nombreux plugins et intégrations (Slack, Jira, tokens…).
+- Installation — rien pour le web ; applications desktop Windows et macOS, apps mobiles de consultation
+- Point d'entrée — application web ou desktop, édition collaborative temps réel ; nombreux plugins et intégrations (Slack, Jira, tokens)
+- Prérequis — un compte Figma ; les fichiers sont hébergés par l'éditeur, sans option d'auto-hébergement
+- Exécution — Web, Windows, macOS
+- Coût — **propriétaire**, freemium : gratuit et limité, puis facturé par éditeur
 
-## Pièges
+## Écosystème
 
-- **Cloud propriétaire** : données chez l'éditeur, pas de self-host — rédhibitoire pour certains contextes régulés / souverains.
-- Coût par éditeur qui grimpe avec l'équipe.
-- Verrouillage : format propriétaire, export/interop limités hors de l'écosystème.
-
-## Alternatives
+### Alternatives
 
 - [[Penpot]] — Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Design & prototypage]]
-- Docs : https://help.figma.com/
+- Documentation — https://help.figma.com/
+
+## Voir aussi
+
+- [[Design & diagrammes]] — le hub du domaine
+- [[Comparatif - Design & prototypage]] — ce qui départage les outils du dossier

@@ -18,56 +18,61 @@ url_repo: https://github.com/tt-a1i/archify
 
 # Archify
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
-Archify (MIT, JavaScript/Node) est un **skill packagé pour agents de code**, pas une librairie de rendu que l'on appelle soi-même. L'agent ne dessine pas : il remplit une **IR JSON typée**, que la chaîne Archify compile de façon **déterministe** en une page HTML autonome, validée contre un schéma. Cinq types de diagrammes couverts : architecture, workflow, séquence, data-flow, lifecycle. En sortie, la page HTML plus des exports SVG, PNG et WebM, une share card 1200×630, et une vue « Architecture Delta » qui met en regard Before / Delta / After. Validation de schéma, règles de layout et traçage de routes encadrent le rendu — le but est de rendre reproductible ce qu'un agent produirait sinon en texte libre.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-Le projet se positionne explicitement comme alternative à [[Mermaid]] pour ce périmètre. Il est jeune (créé en avril 2026) et publie vite ; sa popularité sur GitHub est très en avance sur son âge, ce qui ne dit rien de sa stabilité.
+## Définition
 
-## Quand l'utiliser
+Archify est un **skill packagé pour agents de code**, pas une bibliothèque de rendu qu'on
+appelle soi-même. L'agent ne dessine pas : il remplit une **IR JSON typée**, que la chaîne
+Archify compile de façon **déterministe** en une page HTML autonome validée contre un
+schéma — même IR, même rendu. Cinq types de diagrammes sont couverts (architecture,
+workflow, séquence, data-flow, lifecycle), avec en sortie la page HTML plus des exports
+SVG, PNG et WebM, une share card et une vue « Architecture Delta » qui met en regard
+Before / Delta / After. Le projet est jeune — créé en avril 2026 — et publie vite.
 
-- Faire produire par un agent IA un schéma d'architecture ou de workflow **reproductible** : même IR, même rendu.
-- Livrer un diagramme comme artefact autonome (HTML seul fichier, ou SVG/PNG) plutôt que comme bloc de code dans un markdown.
-- Documenter une évolution d'architecture avec un avant / après explicite (Architecture Delta).
+## Prendre si / Écarter si
 
-## Quand NE PAS l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Faire produire par un agent IA un schéma d'architecture ou de workflow **reproductible** : même IR, même rendu | Sans agent de code dans la boucle : l'outil suppose un agent qui remplit l'IR, il ne s'utilise pas à la main |
+| Livrer un diagramme comme artefact autonome — HTML seul fichier, SVG, PNG — plutôt qu'un bloc de code dans un markdown | Quatre absences **documentées par le projet** : pas de parsing Mermaid, pas d'auto-layout généraliste, pas de partage hébergé, pas d'édition WYSIWYG |
+| Documenter une évolution d'architecture avec un avant / après explicite (Architecture Delta) | Le profil « deployment-ownership » n'infère rien d'un système vivant : les données sont saisies à la main, donc elles périment comme n'importe quelle doc |
+| | Prérequis Node chiffrés sur le seul canal DeepSeek : ailleurs l'environnement attendu n'est pas documenté — à vérifier avant d'industrialiser |
+| | Chaque agent a son chemin d'installation, et une mise à jour ne se propage pas aux autres |
+| | Projet récent à cadence soutenue : verrouiller une version si le schéma doit être reproductible dans six mois |
 
-- Diagramme rendu **nativement** dans GitHub, GitLab ou Obsidian sans build → [[Mermaid]].
-- Édition WYSIWYG à la souris : hors périmètre revendiqué → [[draw.io]], [[Excalidraw]].
-- Conversion d'un corpus Mermaid existant : le parsing Mermaid automatique n'est pas fourni.
-- Partage hébergé façon service en ligne : Archify produit des fichiers, pas des URLs.
-- Sans agent de code dans la boucle : l'outil suppose un agent qui remplit l'IR.
+## Mise en œuvre
 
-## Installation & plateformes
+- Installation — canal générique `npx skills add tt-a1i/archify -g` ; Cursor, Codex CLI, opencode, Raven et DeepSeek Harness ont chacun le leur
+- Point d'entrée — skill déposé dans le dossier de skills de l'agent : `~/.claude/skills/` ou `.claude/skills/` pour Claude Code, `~/.agents/skills/` pour Codex CLI et opencode ; upload de `archify.zip` sur Claude.ai
+- Prérequis — un agent de code compatible (Claude Code, Cursor, Codex CLI, opencode, Raven, Claude.ai, DeepSeek Harness) et Node ; version courante annoncée v2.16.0 (août 2026)
+- Exécution — dans l'agent hôte, qui remplit l'IR et lance la compilation ; rien à héberger
+- Coût — gratuit, MIT, aucune limite d'usage
 
-- Canal générique : `npx skills add tt-a1i/archify -g`.
-- Claude Code : dépôt du skill dans `~/.claude/skills/` (global) ou `.claude/skills/` (projet).
-- Codex CLI et opencode : `~/.agents/skills/` ou `.agents/skills/`.
-- Cursor : `npx -y skills add tt-a1i/archify --skill archify --agent cursor --global --copy --yes`.
-- Claude.ai : upload de `archify.zip` dans Settings → Capabilities → Skills.
-- Raven : dézipper dans `~/.raven/workspace/skills`. DeepSeek Harness : `dsh plugin --profile web add @tt-a1i/archify-dsh@0.1.0`.
-- Agents confirmés compatibles : Claude Code, Cursor, Codex CLI, opencode, Raven, Claude.ai, DeepSeek Harness. Version courante annoncée v2.16.0 (août 2026).
+## Écosystème
 
-## Pièges
-
-- **Hors périmètre assumé** : pas de parsing Mermaid, pas d'auto-layout généraliste, pas de partage hébergé, pas d'édition WYSIWYG. Ces quatre absences sont documentées par le projet, pas des oublis.
-- Le profil « deployment-ownership » n'infère rien d'un système vivant : les données sont saisies à la main, donc elles périment comme n'importe quelle doc.
-- Les prérequis Node ne sont chiffrés que sur le canal DeepSeek ; ailleurs, l'environnement attendu n'est pas documenté — vérifier avant d'industrialiser.
-- Multiplicité des canaux d'installation : chaque agent a son chemin, une mise à jour n'est pas propagée aux autres.
-- Projet récent, cadence de publication soutenue : verrouiller une version dans un projet qui doit rendre le même schéma dans six mois.
-
-## Alternatives
+### Alternatives
 
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 
-Voisin de forme mais pas de fonction : [[Graphify]], autre skill d'agent, qui indexe un dépôt au lieu de produire un schéma.
+## Ressources
 
-## Liens
+- Documentation — https://tt-a1i.github.io/archify/
+- Dépôt — https://github.com/tt-a1i/archify
 
-- [[Comparatif - Diagrammes]]
-- [[Agent skills]] — concept : compétence packagée installée dans un agent de code
-- [[Harnais d'agent]] · [[Context engineering]]
-- Docs : https://tt-a1i.github.io/archify/ · Repo : https://github.com/tt-a1i/archify
+## Voir aussi
+
+- [[Agent skills]] — la notion : compétence packagée installée dans un agent de code
+- [[Harnais d'agent]] · [[Context engineering]] — le contexte d'exécution du skill
+- [[Graphify]] — voisin de forme mais pas de fonction : autre skill d'agent, qui indexe un dépôt au lieu de produire un schéma
+- [[Diagrammes]] — le hub du dossier
+- [[Comparatif - Diagrammes]] — ce qui départage les outils du dossier

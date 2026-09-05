@@ -18,39 +18,53 @@ url_repo: https://github.com/excalidraw/excalidraw
 
 # Excalidraw
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 
-Whiteboard open-source (MIT) au **style croquis à main levée** : le rendu volontairement « dessiné » enlève la pression de la perfection et convient aux schémas d'idées. Idéal pour esquisser une architecture, un flux ou un concept **en quelques minutes**, seul ou à plusieurs en temps réel. Tourne dans le navigateur (excalidraw.com) sans compte, données chiffrées de bout en bout pour la collaboration ; existe aussi en plugin **Obsidian** très populaire et en extension VS Code.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application TypeScript | open-source | Web, Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Esquisser vite** une archi ou une idée, réunion, atelier, whiteboard partagé.
-- Illustrations de doc où le style « main levée » signale « schéma conceptuel, pas spec figée ».
-- Dans Obsidian : dessiner à côté de ses notes (plugin natif).
+Whiteboard au **style croquis à main levée** : le rendu volontairement dessiné n'est pas
+un effet, c'est un message — il signale « schéma conceptuel, pas spécification figée » et
+enlève la pression de la perfection. Fait pour esquisser une architecture, un flux ou une
+idée en quelques minutes, seul ou à plusieurs en temps réel. Tourne dans le navigateur
+sans compte, avec collaboration chiffrée de bout en bout, et existe en plugin Obsidian très
+répandu comme en extension VS Code. Le format `.excalidraw` est du JSON versionnable, et
+les exports PNG/SVG embarquent la source pour permettre la ré-édition.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Diagramme formel et précis (UML, réseau détaillé) → [[draw.io]].
-- Diagramme versionné en texte dans le repo → [[Mermaid]].
+| Prendre si | Écarter si |
+|---|---|
+| Esquisser vite une architecture ou une idée — réunion, atelier, tableau partagé | Le style croquis est **inadapté à un livrable formel** : il signale l'informel, ce qui s'assume ou se refuse |
+| Illustration de doc où le style main levée dit « conceptuel, pas figé » | Peu de formes structurées : c'est un whiteboard, pas un éditeur de diagrammes normés |
+| Dessiner à côté de ses notes dans Obsidian, via le plugin natif | Les grands tableaux collaboratifs rament côté navigateur |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- Open-source MIT, TypeScript. Web, apps desktop, plugin Obsidian, extension VS Code.
-- Format `.excalidraw` (JSON) versionnable ; export PNG/SVG (avec la source embarquée pour ré-édition).
-- Collaboration temps réel chiffrée de bout en bout ; auto-hébergeable.
+- Installation — rien pour excalidraw.com ; apps desktop, plugin Obsidian ou extension VS Code selon le contexte
+- Point d'entrée — application graphique ; fichiers `.excalidraw` (JSON), export PNG/SVG avec source embarquée
+- Prérequis — un navigateur ; auto-hébergement possible
+- Exécution — dans le navigateur ou l'application hôte ; collaboration temps réel chiffrée de bout en bout
+- Coût — gratuit, MIT, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Style « croquis » inadapté à un livrable formel : signale l'informel, à assumer.
-- Peu de formes structurées (pas un outil UML) : c'est un whiteboard, pas un éditeur de diagrammes normés.
-- Les gros tableaux collaboratifs peuvent ramer côté navigateur.
-
-## Alternatives
+### Alternatives
 
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Diagrammes]]
-- Docs : https://docs.excalidraw.com/ · Repo : https://github.com/excalidraw/excalidraw
+- Documentation — https://docs.excalidraw.com/
+- Dépôt — https://github.com/excalidraw/excalidraw
+
+## Voir aussi
+
+- [[Diagrammes]] — le hub du dossier
+- [[Comparatif - Diagrammes]] — ce qui départage les outils du dossier
