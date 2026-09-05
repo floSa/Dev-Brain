@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[testcontainers]]"]
 tags: [testing]
 url_docs: https://docs.pytest.org/
 url_repo: https://github.com/pytest-dev/pytest
@@ -25,38 +25,45 @@ url_repo: https://github.com/pytest-dev/pytest
 | Librairie Python | open-source | en bibliothèque, rien à héberger | production |
 <!-- AUTO:BANDEAU:END -->
 
-## Pourquoi
+## Définition
 
-Framework de tests **de facto** en Python. Sa marque : on écrit des `assert` Python ordinaires et pytest fournit une **introspection détaillée** en cas d'échec (il décompose l'expression). Le système de **fixtures** (injection de dépendances par paramètre, portées function/module/session) remplace le setup/teardown rigide d'`unittest`. Paramétrage des tests, marqueurs, et un **écosystème de plugins** très riche (couverture, parallélisme, mock, asyncio, conteneurs).
+Framework de tests de facto en Python. Sa marque : on écrit des `assert` ordinaires, et en
+cas d'échec pytest **décompose l'expression** pour montrer les valeurs intermédiaires — pas
+d'API d'assertions à apprendre. Le système de **fixtures** — injection par nom de paramètre,
+portées function, module ou session — remplace le setup/teardown rigide d'`unittest`. S'y
+ajoutent le paramétrage d'un même test sur N cas, les marqueurs, et un écosystème de plugins
+très fourni : `pytest-cov` pour la couverture, `pytest-xdist` pour le parallélisme,
+`pytest-asyncio`. La découverte des tests est automatique et repose entièrement sur des
+conventions de nommage.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Tests unitaires et fonctionnels de tout projet Python.
-- Besoin de fixtures réutilisables et composables (bases jetables, clients HTTP, données).
-- Paramétrer un même test sur de nombreux cas (`@pytest.mark.parametrize`).
-- S'appuyer sur des plugins : `pytest-cov` (couverture), `pytest-xdist` (parallélisme), `pytest-asyncio`, etc.
+| Prendre si | Écarter si |
+|---|---|
+| Tests unitaires et fonctionnels de tout projet Python | Contrainte de rester sur la bibliothèque standard, sans dépendance externe → `unittest` |
+| Fixtures réutilisables et composables : bases jetables, clients HTTP, jeux de données | Tests d'un autre langage : pytest est spécifique à Python |
+| Paramétrer un même test sur de nombreux cas (`@pytest.mark.parametrize`) | La découverte est silencieuse : un fichier ou une fonction hors convention (`test_*.py`, `test_*`) n'est jamais exécuté, sans avertissement |
+| S'appuyer sur les plugins : couverture, parallélisme, asyncio | Une portée de fixture mal choisie partage de l'état entre tests et produit des échecs intermittents — la magie devient opaque si `conftest.py` n'est pas documenté |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Contrainte de rester sur la bibliothèque standard sans dépendance externe → `unittest`.
-- Tests d'un autre langage : pytest est spécifique à Python.
+- Installation — `uv add --dev pytest`
+- Point d'entrée — commande `pytest` ; les tests sont des fonctions `test_*` dans des fichiers `test_*.py`
+- Prérequis — Python ; les fixtures partagées vivent dans un `conftest.py`
+- Exécution — sur le poste et en CI ; s'intègre à tout runner
+- Coût — gratuit sous licence MIT
 
-## Déploiement & coût
+## Écosystème
 
-- Bibliothèque de développement (`uv add --dev pytest`). MIT, gratuit.
-- Local et CI ; rien à héberger. S'intègre à tout runner CI.
+### Compléments
 
-## Pièges
+- [[testcontainers]] — Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement. — les conteneurs s'exposent en fixtures pour les tests d'intégration
 
-- La magie des fixtures peut devenir opaque : nommer et documenter les fixtures partagées (`conftest.py`).
-- Portée de fixture mal choisie → état partagé entre tests, échecs intermittents.
-- Découverte automatique : respecter les conventions de nommage (`test_*.py`, `test_*`) sinon les tests sont ignorés silencieusement.
+## Ressources
 
-## Alternatives
+- Documentation — https://docs.pytest.org/
+- Dépôt — https://github.com/pytest-dev/pytest
 
-- `unittest` (bibliothèque standard), nose2 — pytest reste le standard de l'écosystème ; il exécute d'ailleurs les tests `unittest` existants. *(Pages dédiées non créées.)*
+## Voir aussi
 
-## Liens
-
-- Conteneurs jetables pour tests d'intégration : [[testcontainers]].
-- Doc : https://docs.pytest.org/
+- [[Outils de développement]] — le hub du domaine
