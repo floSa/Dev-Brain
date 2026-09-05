@@ -19,37 +19,47 @@ url_repo:
 
 # Cloudflare R2
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
-Stockage objet managé de Cloudflare, **S3-compatible**, dont l'argument central est l'**absence de frais d'egress** : lire ses données ne coûte rien, quel que soit le volume sorti (API S3, Workers, domaine `r2.dev`). API compatible S3 donc migration outillage quasi transparente, et **intégration native avec Cloudflare Workers** pour servir la donnée au bord du réseau sans infra supplémentaire. Positionné frontalement contre le modèle de facturation d'AWS S3.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Charges à fort trafic sortant : diffusion de médias, assets, datasets publics — l'egress gratuit change l'économie face à S3.
-- Déjà dans l'écosystème Cloudflare : Workers, CDN, Pages → R2 s'y branche sans couture.
-- Migration depuis S3 avec un minimum de friction : réutiliser les SDK/outils S3 existants en repointant l'endpoint.
-- Backend objet d'apps edge / serverless servant beaucoup de lectures.
+Stockage objet managé de Cloudflare, **S3-compatible**, dont l'argument central tient en un
+point de facturation : **l'egress est à zéro**. Lire ses données ne coûte rien, quel que soit
+le volume sorti — par l'API S3, par un Worker ou par le domaine `r2.dev`. Le reste suit le
+modèle habituel : buckets, clés, classes Standard et Infrequent Access. La compatibilité S3
+rend la migration d'outillage quasi transparente, et l'**intégration native avec Cloudflare
+Workers** permet de servir la donnée au bord du réseau sans infra supplémentaire. Le
+positionnement est frontal : c'est le modèle économique d'AWS S3 qui est visé, pas ses
+fonctionnalités.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Architecture profondément intégrée à AWS (Athena, Glue, Lambda) → [[AWS S3]] reste plus naturel.
-- Souveraineté / auto-hébergement exigé → [[MinIO]] (sur site, même API).
-- Besoin de la palette complète de classes de stockage et services analytiques d'AWS → [[AWS S3]].
+| Prendre si | Écarter si |
+|---|---|
+| Fort trafic sortant — diffusion de médias, d'assets, de jeux de données publics : l'egress gratuit change l'économie | Architecture profondément intégrée à AWS (Athena, Glue, Lambda) → [[AWS S3]] reste plus naturel |
+| Déjà dans l'écosystème Cloudflare : Workers, CDN, Pages s'y branchent sans couture | Souveraineté ou auto-hébergement exigé : il n'existe pas de self-host → [[MinIO]] |
+| Migrer depuis S3 en repointant l'endpoint des SDK et outils existants | Palette complète des classes de stockage et des services analytiques attendue → [[AWS S3]] |
+| Backend objet d'applications edge ou serverless dominées par la lecture | La compatibilité S3 est large mais **pas exhaustive** : vérifier ses dépendances avant migration |
+| | L'egress gratuit ne supprime pas le coût des **opérations** — la classe A, en écriture, se modélise sur charge write-heavy |
+| | Empreinte régionale et garanties différentes d'AWS : latence et conformité à valider cas par cas |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- 100 % managé, serverless : pas d'infra à opérer, scaling automatique.
-- Facturation au **stockage** (Go-mois) + **opérations** (deux classes A/B), avec **egress à 0 $** — c'est la différence structurelle avec S3.
-- Palier gratuit mensuel ; classes Standard et Infrequent Access selon la fréquence d'accès.
+- Installation — aucune : un compte Cloudflare et un bucket
+- Point d'entrée — l'API S3 avec un endpoint R2, un binding Worker, ou le domaine public `r2.dev`
+- Prérequis — un compte Cloudflare ; aucune infra
+- Exécution — 100 % managé, serverless : scaling automatique, rien à opérer
+- Coût — stockage au Go-mois et opérations en deux classes A/B, **egress à 0 $** ; palier gratuit mensuel, classes Standard et Infrequent Access
 
-## Pièges
+## Écosystème
 
-- Service propriétaire Cloudflare : lock-in écosystème, pas de self-host possible.
-- Compatibilité S3 large mais **pas exhaustive** : certaines API/fonctions S3 manquent — vérifier ses dépendances avant migration.
-- L'egress gratuit ne supprime pas les coûts d'**opérations** (Class A en écriture surtout) : à modéliser sur charge write-heavy.
-- Empreinte régionale et garanties différentes d'AWS : valider latence et conformité selon le cas.
-
-## Alternatives
+### Alternatives
 
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.
@@ -57,8 +67,10 @@ Stockage objet managé de Cloudflare, **S3-compatible**, dont l'argument central
 - [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
 - [[Garage]] — Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
 
-## Liens
+## Ressources
 
-- [[AWS S3]] — la référence S3, dont R2 conteste le modèle d'egress
-- [[MinIO]] — alternative S3-compatible auto-hébergée
-- Doc : https://developers.cloudflare.com/r2/
+- Documentation — https://developers.cloudflare.com/r2/
+
+## Voir aussi
+
+- [[Stockage]] — le hub du domaine

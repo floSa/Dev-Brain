@@ -19,38 +19,47 @@ url_repo: https://git.deuxfleurs.fr/Deuxfleurs/garage
 
 # Garage
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
 
-Stockage objet **S3-compatible** écrit en **Rust**, conçu par le collectif **Deuxfleurs** pour l'auto-hébergement **géo-distribué** à petite et moyenne échelle. Sa particularité : viser des nœuds répartis sur plusieurs sites physiques, sur du matériel **hétérogène** (capacités disque inégales), tout en restant disponible quand des serveurs tombent. Pas de consensus lourd type Raft pour les données : il s'appuie sur des **CRDT** (inspiration Dynamo) pour une cohérence à terme. Léger, simple à opérer, résilient — pensé pour tourner *hors datacenter*. En production chez Deuxfleurs depuis 2020.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Auto-héberger du S3 réparti sur **plusieurs sites** avec réplication géographique.
-- Matériel modeste et hétérogène, faible empreinte RAM/CPU, tolérance aux pannes de nœud.
-- Besoin d'un binaire léger et simple à exploiter plutôt qu'une plateforme lourde → vs [[Ceph]].
-- Backend S3 pour services self-hosted (sauvegardes, médias, sites statiques).
+Stockage objet **S3-compatible** écrit en **Rust** par le collectif **Deuxfleurs**, conçu pour
+l'auto-hébergement **géo-distribué** à petite et moyenne échelle. Sa particularité est
+l'hypothèse de départ : des nœuds répartis sur plusieurs sites physiques, sur du matériel
+**hétérogène** aux capacités disque inégales, reliés par un réseau ordinaire — et le cluster
+doit rester disponible quand des serveurs tombent. Pour tenir cela, il renonce au consensus
+lourd type Raft sur les données et s'appuie sur des **CRDT**, dans la lignée de Dynamo : la
+cohérence est *à terme*, jamais transactionnelle. Le résultat est un binaire léger, simple à
+exploiter, pensé pour tourner hors datacenter. En production chez Deuxfleurs depuis 2020.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Très haute performance ou très gros volumes mono-site → [[MinIO]] ou [[SeaweedFS]].
-- Besoin de bloc/fichier en plus de l'objet → [[Ceph]].
-- Aucune envie d'opérer l'infra → managé [[AWS S3]] ou [[Cloudflare R2]].
-- Contrainte de licence : l'**AGPLv3** (copyleft réseau) peut être incompatible avec un produit fermé.
+| Prendre si | Écarter si |
+|---|---|
+| Auto-héberger du S3 réparti sur **plusieurs sites**, avec réplication géographique | Très haute performance ou très gros volumes mono-site : la cible annoncée est la petite et moyenne échelle → [[MinIO]], [[SeaweedFS]] |
+| Matériel modeste et hétérogène, faible empreinte RAM/CPU, tolérance aux pannes de nœud | Besoin de bloc ou de fichier en plus de l'objet → [[Ceph]] |
+| Backend S3 de services auto-hébergés : sauvegardes, médias, sites statiques | Aucune envie d'opérer l'infra → managé [[AWS S3]] ou [[Cloudflare R2]] |
+| | L'**AGPLv3** est un copyleft réseau : à valider avant toute intégration dans un produit fermé |
+| | Cohérence **à terme** par CRDT : aucune garantie transactionnelle |
+| | Compatibilité S3 sur un **sous-ensemble** de l'API — vérifier les fonctions réellement utilisées |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source **AGPLv3**, self-host gratuit ; binaire unique en Rust, image conteneur disponible.
-- Conçu pour tourner **hors datacenter** : faible empreinte, peu de RAM/CPU exigés.
-- Scaling horizontal par ajout de nœuds ; facteur de réplication configurable (souvent x3) entre zones.
+- Installation — un binaire Rust unique, ou une image de conteneur
+- Point d'entrée — l'API S3 ; configuration par fichier TOML et commande `garage`
+- Prérequis — plusieurs nœuds pour que la réplication ait un sens ; peu de RAM et de CPU par nœud
+- Exécution — self-hébergé, distribué, explicitement pensé pour tourner **hors datacenter** ; scaling horizontal par ajout de nœuds, facteur de réplication configurable (souvent x3) entre zones
+- Coût — gratuit, AGPLv3 ; le coût est le matériel, et la contrainte est la licence
 
-## Pièges
+## Écosystème
 
-- **AGPLv3** : copyleft réseau, à valider avant toute intégration dans un produit fermé.
-- Cohérence **à terme** (CRDT) : pas de garanties transactionnelles fortes type base SQL.
-- Cible explicite petite/moyenne échelle : mauvais choix pour des charges massives.
-- Compatibilité S3 sur un **sous-ensemble** de l'API : vérifier les fonctions réellement utilisées.
-
-## Alternatives
+### Alternatives
 
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.
 - [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
@@ -58,8 +67,11 @@ Stockage objet **S3-compatible** écrit en **Rust**, conçu par le collectif **D
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
-## Liens
+## Ressources
 
-- [[MinIO]] — autre S3 auto-hébergé, mono-site plus performant
-- [[Ceph]] — alternative lourde quand il faut bloc + fichier
-- Doc : https://garagehq.deuxfleurs.fr/documentation/
+- Documentation — https://garagehq.deuxfleurs.fr/documentation/
+- Dépôt — https://git.deuxfleurs.fr/Deuxfleurs/garage
+
+## Voir aussi
+
+- [[Stockage]] — le hub du domaine
