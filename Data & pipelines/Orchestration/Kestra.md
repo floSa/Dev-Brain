@@ -19,35 +19,45 @@ url_repo: https://github.com/kestra-io/kestra
 
 # Kestra
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 
-Kestra est un orchestrateur **déclaratif**. Les workflows s'écrivent en **YAML** (déclencheurs, tâches, dépendances) et s'exécutent sur un moteur **JVM** event-driven, avec éditeur intégré et API. La logique d'orchestration est ainsi **découplée du langage des tâches** : une tâche peut lancer du Python, du SQL, un script shell, un conteneur… Kestra 1.0 (LTS, septembre 2025) en fait une plateforme prête pour l'entreprise.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Orchestration **indépendante du langage** : équipes hétérogènes, pas seulement Python.
-- Préférence pour des workflows déclaratifs en YAML, versionnables et lisibles, plutôt que du code.
-- Event-driven et planifié, à l'échelle, avec une UI et une API de première classe.
-- Besoin d'un moteur robuste sur la JVM, déployable en cluster.
+Orchestrateur **déclaratif** : les workflows — déclencheurs, tâches, dépendances —
+s'écrivent en **YAML** et s'exécutent sur un moteur **JVM** event-driven, avec éditeur
+intégré et API. La conséquence est le trait qui le distingue : la logique d'orchestration
+est **découplée du langage des tâches**, une tâche pouvant lancer du Python, du SQL, un
+script shell ou un conteneur. L'équipe n'a donc pas à être Python pour écrire des
+pipelines. Le prix est une autre pile à opérer et à monitorer, et un YAML qui devient
+verbeux dès que la logique se complique — le remède est le découpage en sous-flows.
+Kestra 1.0 (LTS, septembre 2025) en fait une plateforme d'entreprise.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Équipe 100 % Python préférant définir les pipelines en code → [[Airflow]], [[Prefect]] ou [[Dagster]].
-- Modèle orienté **assets** data et lignage → [[Dagster]].
-- Prototypage ELT visuel low-code → [[Mage]].
+| Prendre si | Écarter si |
+|---|---|
+| Équipes hétérogènes : orchestration **indépendante du langage** des tâches | Une pile JVM de plus à opérer et à monitorer, là où la catégorie est majoritairement Python |
+| Workflows déclaratifs, versionnables et lisibles, plutôt que du code | Le tout-YAML devient verbeux sur une logique complexe — il faut découper en sous-flows |
+| Event-driven et planifié à l'échelle, avec UI et API de première classe | Écosystème plus jeune que celui du standard historique, même s'il croît vite |
+| Moteur robuste sur la JVM, déployable en cluster | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), auto-hébergeable : moteur JVM + base de métadonnées + file de messages, déployable en cluster distribué.
-- Offres : Kestra Cloud (managé) et Kestra Enterprise Edition (RBAC, SSO, multi-tenant et fonctionnalités entreprise).
+- Installation — image Docker ou JAR autonome ; `docker compose` pour la pile complète
+- Point d'entrée — fichiers de flow YAML, éditables dans l'UI intégrée ou poussés par l'API
+- Prérequis — une JVM, une base de métadonnées et une file de messages pour le mode cluster
+- Exécution — self-hébergé, mono-nœud ou distribué en cluster, ou managé
+- Coût — gratuit en Apache-2.0 ; Kestra Cloud et l'Enterprise Edition (RBAC, SSO, multi-tenant) sont payantes
 
-## Pièges
+## Écosystème
 
-- La JVM tranche avec les orchestrateurs Python — autre stack à opérer et monitorer.
-- Tout-YAML : la logique complexe peut devenir verbeuse → découper en sous-flows.
-- Écosystème plus jeune qu'Airflow, même s'il croît vite.
-
-## Alternatives
+### Alternatives
 
 - [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
 - [[Dagster]] — Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.
@@ -55,7 +65,12 @@ Kestra est un orchestrateur **déclaratif**. Les workflows s'écrivent en **YAML
 - [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 - [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Orchestrateurs data]] — comparatif de la catégorie
-- Doc : https://kestra.io/docs
+- Documentation — https://kestra.io/docs
+- Dépôt — https://github.com/kestra-io/kestra
+
+## Voir aussi
+
+- [[Orchestration]] — le hub du dossier
+- [[Comparatif - Orchestrateurs data]] — ce qui départage les orchestrateurs du dossier

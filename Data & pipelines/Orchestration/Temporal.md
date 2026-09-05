@@ -19,38 +19,47 @@ url_repo: https://github.com/temporalio/temporal
 
 # Temporal
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
 
-Temporal est une plateforme d'**exécution durable**. On écrit ses workflows comme du **code ordinaire** (Go, Java, Python, TypeScript, .NET, PHP) ; le moteur **persiste chaque étape** (historique event-sourced) de sorte que l'exécution survit aux crashs, retente les **activités**, gère les timeouts et peut durer des jours ou des mois. Distinction clé : les **Workflows** (orchestration déterministe) sont séparés des **Activities** (effets de bord, I/O). À la différence des orchestrateurs data orientés DAG batch, Temporal cible n'importe quel **processus métier long et fiable**. Serveur écrit en Go, licence MIT ; issu des créateurs de Cadence (Uber) et AWS SWF.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Processus métier longs et multi-étapes exigeant la fiabilité : commandes, paiements / sagas, provisioning, human-in-the-loop, orchestration d'agents IA.
-- Garantir retries et persistance d'état **sans** recâbler à la main files d'attente + machines à états.
-- Orchestration de microservices résiliente, pilotée par du code.
-- Besoin de reprise exacte après panne (pas de progrès perdu, pas de processus orphelin).
+Plateforme d'**exécution durable**, et le seul membre du dossier qui ne soit pas un
+orchestrateur data. On écrit ses workflows comme du **code ordinaire** — Go, Java, Python,
+TypeScript, .NET, PHP — et le moteur persiste chaque étape dans un historique
+event-sourced : l'exécution survit aux crashs, retente les **activités**, gère les timeouts
+et peut durer des mois. La distinction structurante est celle des **Workflows**
+(orchestration déterministe) et des **Activities** (effets de bord et I/O) : le code de
+workflow ne peut faire ni I/O direct, ni lecture d'horloge murale, ni tirage aléatoire —
+tout passe par une activité ou par les API du SDK. Issu des créateurs de Cadence (Uber) et
+d'AWS SWF.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- DAGs data/ETL planifiés avec lignage et catalogue de connecteurs → [[Airflow]] / [[Dagster]].
-- Traitement de flux temps réel → [[Flink]].
-- Simple cron / tâche planifiée → un scheduler suffit.
-- Tâche unique fire-and-forget → une file (Celery) est plus légère.
+| Prendre si | Écarter si |
+|---|---|
+| Processus métier longs et multi-étapes exigeant la fiabilité : commandes, paiements et sagas, provisioning, human-in-the-loop | Traitement de flux temps réel : Temporal orchestre des processus, il ne calcule pas sur un flux → [[Flink]] |
+| Retries et persistance d'état garantis sans recâbler à la main files d'attente et machines à états | Le code de workflow doit être **déterministe** — ni I/O direct, ni horloge murale, ni aléatoire hors des activités |
+| Orchestration de microservices résiliente, pilotée par du code | Le versionnage des workflows longue durée est délicat : des instances tournent pendant le déploiement |
+| Reprise exacte après panne : aucun progrès perdu, aucun processus orphelin | Un simple cron, ou une tâche fire-and-forget, se traite avec un scheduler ou une file — la persistance d'état y est de trop |
+| | Plusieurs composants à opérer en self-host : le serveur, sa persistance, et le store de visibilité |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), auto-hébergé : Temporal Server (Go) + une persistance (Cassandra, [[Postgres]] ou MySQL) + Elasticsearch optionnel pour la visibilité.
-- Managé : **Temporal Cloud** (facturé à l'action / au stockage d'état).
-- Architecture distribuée et horizontalement scalable ; plusieurs composants à opérer en self-host.
+- Installation — `temporal server start-dev` sur le poste ; images Docker ou chart Helm pour un cluster
+- Point d'entrée — SDK dans le langage applicatif (Go, Java, Python, TypeScript, .NET, PHP) et workers rattachés à des task queues
+- Prérequis — une persistance (Cassandra, [[Postgres]] ou MySQL), Elasticsearch en option pour la visibilité avancée
+- Exécution — self-hébergé ou managé ; architecture distribuée, scalable horizontalement
+- Coût — gratuit en MIT ; Temporal Cloud est facturé à l'action et au stockage d'état
 
-## Pièges
+## Écosystème
 
-- Le code de workflow doit être **déterministe** : pas d'I/O direct, pas d'horloge murale, pas d'aléatoire dans le chemin du workflow — tout passe par des activités ou les API du SDK.
-- Le **versioning** des workflows longue durée est délicat (instances en cours pendant un déploiement).
-- Courbe d'apprentissage : bien tracer la frontière Workflow / Activity.
-- Opérer la persistance et le store de visibilité demande du soin.
-
-## Alternatives
+### Alternatives
 
 - [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
 - [[Dagster]] — Orchestrateur orienté assets : on déclare les données à produire (software-defined assets) et non que les tâches ; lignage, typage et tests de données intégrés.
@@ -58,7 +67,12 @@ Temporal est une plateforme d'**exécution durable**. On écrit ses workflows co
 - [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Orchestrateurs data]] — comparatif de la catégorie.
-- Doc : https://docs.temporal.io/
+- Documentation — https://docs.temporal.io/
+- Dépôt — https://github.com/temporalio/temporal
+
+## Voir aussi
+
+- [[Orchestration]] — le hub du dossier
+- [[Comparatif - Orchestrateurs data]] — ce qui départage les orchestrateurs du dossier
