@@ -19,43 +19,56 @@ url_repo: https://github.com/windmill-labs/windmill
 
 # Windmill
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.
 
-**Plateforme développeur code-first** (backend **Rust**, front Svelte) : transforme des **scripts** (Python, TypeScript, Go, Bash, SQL…) en **workflows**, **UIs auto-générées** et **apps internes**. Moteur d'exécution **distribué** réputé très rapide (workers sans état tirant des jobs d'une file Postgres). Open source sous **AGPLv3** (Windmill Labs), avec une **Enterprise Edition** sous licence commerciale — d'où `open-core`. Se positionne en alternative à **Temporal**, **Airplane** et **Retool**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Rust | open-core | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Approche **code-first** : on écrit des scripts, Windmill fournit l'orchestration, l'UI et le scheduling autour.
-- Besoin de **performance** et de scaling **distribué** (workers horizontaux, Kubernetes).
-- Bâtir des **outils internes** (workflows + UI + apps) sur une base self-hostable unique.
+Plateforme développeur **code-first** : on écrit des scripts — Python, TypeScript, Go, Bash,
+SQL — et la plateforme fournit tout autour, l'orchestration en workflows, une **UI générée**
+depuis la signature du script, le scheduling et des apps internes. Le moteur est écrit en Rust
+et repose sur des workers sans état qui tirent leurs jobs d'une file Postgres, ce qui lui vaut
+sa réputation de rapidité et son scaling horizontal réel. C'est l'inverse exact du no-code
+visuel : le code est la source, le visuel est dérivé. Windmill Labs le positionne face à
+Temporal, Airplane et Retool plutôt que face aux plateformes d'automatisation grand public.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Public **non-développeur** voulant du pur no-code visuel → [[n8n]] / [[Zapier]].
-- Catalogue d'intégrations SaaS clé en main → [[Activepieces]] / [[Zapier]].
-- Contrainte **AGPL** bloquante pour un produit propriétaire qui ré-exposerait Windmill → licence Enterprise nécessaire.
+| Prendre si | Écarter si |
+|---|---|
+| Approche **code-first** : on écrit les scripts, la plateforme fournit orchestration, UI et scheduling | L'**AGPLv3** a un effet viral : ré-exposer Windmill comme fonctionnalité d'un produit propriétaire oblige à publier ce produit en AGPL, ou à prendre une licence Enterprise |
+| Besoin de performance et de scaling **distribué** — workers horizontaux, Kubernetes | Public non technique : écrire du code est le point d'entrée, pas une option |
+| Bâtir des outils internes — workflows, UI et apps — sur une base auto-hébergeable unique | Plateforme large (workflows + apps + scripts) : courbe d'apprentissage réelle, et un risque de verrouillage sur son modèle |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** gratuit (Docker, Kubernetes) ou **Windmill Cloud** managé — d'où `hosted: both`.
-- Architecture **distribuée** native : workers sans état + file Postgres, scaling horizontal.
-- **AGPLv3** : ré-exposer Windmill comme fonctionnalité d'un produit oblige à publier ce produit en AGPL ou à prendre une **licence commerciale**.
+- Installation — Docker ou Kubernetes pour le self-host, ou compte Windmill Cloud
+- Point d'entrée — un script (Python, TypeScript, Go, Bash, SQL) ; l'UI et le workflow s'en déduisent
+- Prérequis — un Postgres, qui sert de file de jobs ; des workers à dimensionner
+- Exécution — self-hébergé ou managé ; architecture distribuée native, workers sans état, scaling horizontal
+- Coût — gratuit sous AGPLv3 pour le cœur ; une Enterprise Edition sous licence commerciale lève la contrainte de licence et ajoute les fonctions d'équipe
 
-## Pièges
+## Écosystème
 
-- **AGPLv3** : effet viral à anticiper pour tout usage embarqué dans un produit propriétaire.
-- Code-first : moins adapté qu'un n8n/Zapier pour des utilisateurs **non techniques**.
-- Plateforme large (workflows + apps + scripts) : courbe d'apprentissage et risque de **verrouillage**.
-
-## Alternatives
+### Alternatives
 
 - [[n8n]] — Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.
 - [[Activepieces]] — Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.
 - [[Zapier]] — Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
 - [[gumloop]] — Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Automatisation no-code]] — comparatif de la catégorie
-- Frontière avec l'orchestration **data** ([[Airflow]], [[Dagster]], [[Prefect]]) et l'exécution durable ([[Temporal]]) : Windmill chevauche les deux mondes (scripts → workflows + UIs).
-- Doc : https://www.windmill.dev/docs/intro
+- Documentation — https://www.windmill.dev/docs/intro
+- Dépôt — https://github.com/windmill-labs/windmill
+
+## Voir aussi
+
+- [[Automatisation no-code]] — le hub du domaine
+- [[Comparatif - Automatisation no-code]] — ce qui départage les cinq plateformes du dossier
+- [[Airflow]] · [[Dagster]] · [[Prefect]] · [[Temporal]] — les mondes que Windmill chevauche : orchestration de données d'un côté, exécution durable de l'autre
