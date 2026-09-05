@@ -17,45 +17,57 @@ url_repo: https://github.com/deepset-ai/haystack
 
 # Haystack
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 
-Framework d'orchestration LLM de **deepset**, orienté **production**. Son modèle : des **pipelines** explicites où l'on câble des **composants** (retrievers, embedders, rankers, générateurs, routeurs) en un graphe lisible, avec un contrôle fin du flux de la récupération à la génération. Haystack **2.x** est une réécriture complète (composants + pipelines typés) par rapport à la 1.x. Solide sur le **RAG**, la recherche sémantique, la recherche **hybride** (dense + BM25) et, désormais, les **agents**. Écrit en **Python**, licence **Apache-2.0**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Mettre un **RAG ou une recherche sémantique en production** avec un pipeline explicite, testable et observable.
-- Vouloir du **contrôle fin** sur chaque étape (retrieval, reranking, routing, génération) plutôt que des abstractions opaques.
-- Recherche **hybride** dense + lexicale, branchée sur Elasticsearch / OpenSearch / une base vectorielle.
-- Préférer une licence **Apache-2.0** et un éditeur orienté entreprise (deepset).
+Framework d'orchestration LLM de **deepset**, orienté production. Son modèle est le **pipeline
+explicite** : on câble des composants typés — retrievers, embedders, rankers, générateurs,
+routeurs — en un graphe lisible, testable et observable, et l'on garde la main sur chaque
+étape de la récupération à la génération. Il est solide sur le RAG, la recherche sémantique,
+la recherche hybride dense + BM25 et, depuis peu, les agents. La 2.x est une réécriture
+complète de la 1.x : composants et pipelines typés, API incompatible avec l'ancien
+`farm-haystack`.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Prototypage rapide tirant parti du **plus gros catalogue d'intégrations** → [[LangChain]].
-- App **centrée données** où l'indexation multi-format prime → [[LlamaIndex]].
-- Besoin d'**optimiser automatiquement** les prompts → [[DSPy]].
+| Prendre si | Écarter si |
+|---|---|
+| Mettre un RAG ou une recherche sémantique en production avec un pipeline explicite, testable et observable | Rupture 1.x → 2.x : `farm-haystack` et la 2.x ont des API incompatibles — vérifier sur quelle version pointe un tutoriel avant de le suivre |
+| Vouloir du contrôle fin sur chaque étape — retrieval, reranking, routing, génération — plutôt que des abstractions opaques | Écosystème d'intégrations plus restreint : certains connecteurs récents manquent ou sont communautaires |
+| Recherche hybride dense + lexicale, branchée sur Elasticsearch, OpenSearch ou une base vectorielle | Le pipeline de composants est plus verbeux qu'il ne faut pour un simple appel LLM one-shot |
+| Préférer une licence permissive et un éditeur orienté entreprise (deepset) | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (Apache-2.0), gratuit ; bibliothèque importée, pipelines sérialisables (YAML) déployables comme service.
-- Offre **managée payante** de deepset (deepset AI Platform / Studio) pour construire et opérer les pipelines — optionnelle.
-- Coût dominé par les appels LLM, l'embedding et l'infra de la base de recherche/vectorielle.
+- Installation — bibliothèque Python importée dans l'app ; vérifier le paquet visé, l'ancien `farm-haystack` (1.x) n'ayant pas la même API que la 2.x
+- Point d'entrée — un pipeline de composants typés, sérialisable en YAML
+- Prérequis — une base de recherche ou vectorielle en amont : [[Elasticsearch]], [[Qdrant]], [[Weaviate]], [[pgvector]]
+- Exécution — importée dans l'app ; un pipeline sérialisé se déploie comme service
+- Coût — gratuit sous Apache-2.0 ; deepset AI Platform / Studio est une offre managée payante et optionnelle ; le coût réel est dominé par les appels LLM, l'embedding et l'infra de la base de recherche
 
-## Pièges
+## Écosystème
 
-- **Rupture 1.x → 2.x** : l'ancien `farm-haystack` et la 2.x ont des API incompatibles — vérifier sur quelle version pointe un tutoriel.
-- Écosystème d'intégrations **plus restreint** que LangChain : certains connecteurs récents manquent ou sont communautaires.
-- Le modèle « pipeline de composants » est puissant mais **plus verbeux** pour un simple appel LLM one-shot.
-
-## Alternatives
+### Alternatives
 
 - [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 - [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - [[DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
-## Liens
+## Ressources
 
-- Concept : [[RAG]] — et ses techniques [[Chunking strategies]], [[Hybrid retrieval]], [[Reranking]], [[Advanced RAG]].
-- Bases de recherche / vectorielles : [[Elasticsearch]], [[Qdrant]], [[Weaviate]], [[pgvector]].
-- Peut router ses appels via [[LiteLLM]] ; modèles et embedders depuis [[HuggingFace]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://docs.haystack.deepset.ai/
+- Documentation — https://docs.haystack.deepset.ai/
+- Dépôt — https://github.com/deepset-ai/haystack
+
+## Voir aussi
+
+- [[RAG]] — la notion du dossier
+- [[Chunking strategies]] · [[Hybrid retrieval]] · [[Reranking]] · [[Advanced RAG]] — les techniques que ses composants implémentent
+- [[LiteLLM]] — pour router ses appels de modèle ; [[HuggingFace]] pour les modèles et les embedders
+- [[Comparatif - Frameworks LLM]] — ce qui départage les frameworks du domaine
