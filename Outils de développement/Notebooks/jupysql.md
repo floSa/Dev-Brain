@@ -17,6 +17,14 @@ url_repo: https://github.com/ploomber/jupysql
 
 # jupysql
 
+<!-- AUTO:BANDEAU:START -->
+> SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Exécute du **SQL directement dans un notebook** Jupyter via des *magics* : `%sql SELECT ...` en ligne, `%%sql` en cellule, `%sqlplot` pour tracer. Maintenu par **Ploomber**, c'est un **fork activement développé d'ipython-sql** (drop-in dans 99 % des cas) qui ajoute le tracé de gros volumes sans saturer la RAM, la composition de requêtes en **CTE** sur plusieurs cellules, et la paramétrisation. Compatible avec les grandes bases (PostgreSQL, MySQL, SQL Server), les entrepôts (Snowflake, BigQuery, Redshift) et les moteurs embarqués ([[DuckDB]], SQLite) via SQLAlchemy. Les résultats se convertissent en DataFrame [[pandas]] ou [[Polars]].

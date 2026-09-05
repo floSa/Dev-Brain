@@ -17,6 +17,14 @@ url_repo: https://github.com/dynaconf/dynaconf
 
 # dynaconf
 
+<!-- AUTO:BANDEAU:START -->
+> Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Bibliothèque de **gestion de configuration** pour Python. Sa marque : lire les réglages depuis **plusieurs formats** (TOML, YAML, JSON, INI, `.py`) et **plusieurs sources** (fichiers, variables d'environnement, `.env`, secrets, backends comme Vault et Redis), avec une **précédence claire** entre elles. Système de **couches par environnement** (`default`, `development`, `testing`, `production`) qui se superposent. Surcharge de n'importe quelle valeur par variable d'environnement (préfixe `DYNACONF_`). Extensions intégrées pour Django et Flask.

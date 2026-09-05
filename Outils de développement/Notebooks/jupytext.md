@@ -17,6 +17,14 @@ url_repo: https://github.com/mwouts/jupytext
 
 # jupytext
 
+<!-- AUTO:BANDEAU:START -->
+> Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Maintient une **paire** notebook ↔ fichier texte : un `.ipynb` reste l'artefact d'exécution, mais le **code et le markdown** vivent dans un `.py` (format `percent`, cellules `# %%`), un `.md` ou un `.qmd` synchronisé automatiquement. Le texte ne contient **pas les sorties** : le diff git devient lisible, mergeable et relisible en PR. On versionne le pendant texte et on **gitignore** le `.ipynb`. C'est l'implémentation canonique du [[Notebooks-as-code]] : le notebook redevient du vrai code, sans changer d'environnement Jupyter.

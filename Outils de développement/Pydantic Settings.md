@@ -17,6 +17,14 @@ url_repo: https://github.com/pydantic/pydantic-settings
 
 # Pydantic Settings
 
+<!-- AUTO:BANDEAU:START -->
+> Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Extension de [[Pydantic]] dédiée à la **configuration d'application**. Une classe `BaseSettings` mappe automatiquement ses champs sur les **variables d'environnement**, les fichiers **`.env`**, les **secrets** (fichiers montés) et d'autres sources, le tout **validé et typé** par Pydantic. C'était `pydantic.BaseSettings` en v1 ; depuis Pydantic **v2**, c'est un paquet séparé (`pydantic-settings`). Source de configuration unique, hiérarchisée (précédence des sources) et fail-fast au démarrage si une valeur manque ou est mal typée.

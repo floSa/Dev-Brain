@@ -17,37 +17,52 @@ url_repo: https://github.com/pypa/pip
 
 # pip
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
 
-Installeur de paquets **de référence** de Python, maintenu par la **PyPA** (Python Packaging Authority). Installe depuis le **PyPI** et tout index compatible. Présent par défaut dans la plupart des distributions Python : c'est le plus petit dénominateur commun de l'écosystème — si une procédure doit marcher partout, elle marche avec `pip install`. Outil volontairement minimal (installation / désinstallation de paquets) ; la gestion d'environnements, le lockfile et l'isolation d'outils sont laissés à d'autres briques (venv, pip-tools, pipx).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Environnement où l'on ne contrôle pas l'outillage (image de base, doc tierce, support universel).
-- Besoin minimal : installer quelques paquets dans un venv existant.
-- Compatibilité maximale : tutoriels, scripts d'install, instructions « copier-coller ».
+Installeur de paquets de référence de Python, maintenu par la **PyPA**. Il installe depuis
+le PyPI et tout index compatible, et son périmètre s'arrête là : ni environnements
+virtuels, ni lockfile, ni isolation d'outils en ligne de commande — ces rôles sont laissés
+à `venv`, à pip-tools, à pipx. Ce minimalisme est ce qui en fait le plus petit dénominateur
+commun de l'écosystème : il est livré avec la plupart des distributions Python, donc une
+procédure écrite avec `pip install` marche partout, y compris là où l'outillage n'est pas
+le nôtre.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Projet géré de bout en bout (résolution rapide, lockfile, venv, versions de Python) → [[uv]].
-- Besoin de vitesse en CI sur de grosses arborescences de dépendances → [[uv]].
+| Prendre si | Écarter si |
+|---|---|
+| Environnement dont on ne choisit pas l'outillage : image de base, doc tierce, support universel | Aucun lockfile natif : la reproductibilité passe par `pip freeze`, pip-tools ou un autre outil |
+| Besoin minimal : installer quelques paquets dans un venv déjà en place | Résolveur strict depuis 2020, mais lent sur de gros graphes de dépendances |
+| Compatibilité maximale : tutoriels, scripts d'installation, instructions « copier-coller » | N'isole rien de lui-même : hors d'un venv, il installe dans le Python système |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Inclus avec Python (ou `python -m ensurepip`). MIT, gratuit.
-- Local et CI ; rien à héberger. Nouvelle version environ tous les 3 mois.
+- Installation — livré avec Python, ou `python -m ensurepip`
+- Point d'entrée — ligne de commande : `pip install`, `pip uninstall`, `pip freeze`
+- Prérequis — un interpréteur Python, et un venv pour ne pas toucher au Python système
+- Exécution — sur le poste et en CI ; rien à héberger
+- Coût — gratuit sous licence MIT ; une nouvelle version environ tous les trois mois
 
-## Pièges
+## Écosystème
 
-- Pas de lockfile natif : la reproductibilité exige `pip freeze` / pip-tools / un autre outil.
-- Le résolveur (strict depuis 2020) peut être lent sur de gros graphes de dépendances.
-- N'isole pas les environnements : toujours l'utiliser dans un venv pour ne pas polluer le Python système.
-
-## Alternatives
+### Alternatives
 
 - [[uv]] — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Gestionnaires de paquets Python]] — pip vs uv.
-- Doc : https://pip.pypa.io/
+- Documentation — https://pip.pypa.io/
+- Dépôt — https://github.com/pypa/pip
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Gestionnaires de paquets Python]] — ce qui départage les gestionnaires du dossier

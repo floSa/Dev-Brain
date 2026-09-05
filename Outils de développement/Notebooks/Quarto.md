@@ -17,6 +17,14 @@ url_repo: https://github.com/quarto-dev/quarto-cli
 
 # Quarto
 
+<!-- AUTO:BANDEAU:START -->
+> Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia).
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Système de **publication scientifique et technique** : à partir de Markdown enrichi (`.qmd`) ou de notebooks Jupyter, Quarto **exécute le code** embarqué puis **rend** le document en HTML, PDF (LaTeX), Word, présentations (reveal.js, Beamer, PowerPoint), sites web et livres. Bâti sur **Pandoc**, il ajoute les références croisées, figures numérotées, callouts, citations et mises en page propres à l'écrit technique. **Polyglotte** : le même outil sert Python, R, Julia et Observable JS. C'est un **CLI standalone** (binaire, embarque Pandoc) — pas une bibliothèque Python à importer — successeur unifié de R Markdown côté Posit.

@@ -17,6 +17,14 @@ url_repo: https://github.com/hydra-ecosystem/hydra
 
 # hydra
 
+<!-- AUTO:BANDEAU:START -->
+> Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Framework de configuration pour applications complexes, créé en 2019 par **Omry Yadan** chez Facebook AI Research. Le 13 août 2026, le projet a quitté la tutelle de Meta pour l'organisation communautaire **Hydra Ecosystem** (`hydra-ecosystem/hydra`) — dépôt migré avec son historique, ses issues et ses PR, licence MIT inchangée ; ce n'est ni un fork ni un abandon, mais un passage à une gouvernance indépendante. Sa marque : **composer dynamiquement** une configuration hiérarchique à partir de groupes de fichiers (`config groups`), puis la **surcharger en ligne de commande**. Bâti sur **OmegaConf** (résolution d'interpolations, fusion, typage structuré). Le mode **multirun** lance automatiquement une même tâche sur un balayage de paramètres (sweeps), et des launchers/sweepers (Joblib, Optuna, Ax, soumission cluster) s'y branchent. Installation via `hydra-core`.

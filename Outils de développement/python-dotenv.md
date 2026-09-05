@@ -17,6 +17,14 @@ url_repo: https://github.com/theskumar/python-dotenv
 
 # python-dotenv
 
+<!-- AUTO:BANDEAU:START -->
+> Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Bibliothèque minimale qui **lit un fichier `.env`** (paires `CLÉ=valeur`) et l'injecte dans les **variables d'environnement** du processus (`load_dotenv()`). Elle matérialise le principe **12-factor** : la config vit dans l'environnement, le `.env` sert le développement local sans être versionné. Fournit aussi une **CLI** (`dotenv get/set/list`) et la lecture d'un `.env` sans polluer l'environnement (`dotenv_values()`). Périmètre volontairement étroit : charger un `.env`, rien de plus.

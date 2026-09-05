@@ -19,6 +19,14 @@ url_repo: https://github.com/marimo-team/marimo
 
 # Marimo
 
+<!-- AUTO:BANDEAU:START -->
+> Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Notebook **réactif** nouvelle génération : Marimo lit le graphe de dépendances entre cellules et **réexécute automatiquement** celles qui dépendent d'une variable modifiée. Conséquence directe — **pas d'état caché** : l'ordre d'exécution ne peut plus diverger de l'ordre du code, le défaut qui mine la reproductibilité de Jupyter. Le notebook est **stocké en `.py` pur** (pas de JSON, pas de pairing à gérer comme avec [[jupytext]]) : versionnable, lintable, importable et exécutable comme un script. Le même fichier se lance en éditeur, se déploie en **application web** interactive (sliders, tables, plots) ou s'exécute en batch. Projet affilié NumFOCUS.

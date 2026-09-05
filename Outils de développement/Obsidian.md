@@ -17,6 +17,14 @@ url_repo:
 
 # Obsidian
 
+<!-- AUTO:BANDEAU:START -->
+> Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| — | propriétaire | — | — |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Application de **base de connaissances personnelle** : des notes en **markdown stockées en local** (un simple dossier de fichiers `.md`, pas de cloud imposé), reliées entre elles par des **liens bidirectionnels** (wikilinks) et visualisables en **graphe**. Très **extensible** par plugins (Bases, Canvas, Dataview, Templater…). Propriétaire mais gratuit en usage personnel ; le fait que les données soient de simples fichiers markdown évite le verrouillage. C'est le **socle de ce DevBrain** (le vault courant).

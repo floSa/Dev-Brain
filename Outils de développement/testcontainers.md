@@ -17,6 +17,14 @@ url_repo: https://github.com/testcontainers/testcontainers-python
 
 # testcontainers
 
+<!-- AUTO:BANDEAU:START -->
+> Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Bibliothèque qui fournit une API conviviale pour **lancer des conteneurs Docker dans les tests**. Au lieu de mocker une dépendance ou de maintenir une base partagée, chaque test (ou suite) démarre une **instance jetable et isolée** d'un service réel — Postgres, Redis, Kafka, un navigateur Selenium, n'importe quelle image — puis Testcontainers l'**arrête et la nettoie** à la fin (conteneur sentinelle *Ryuk*). Résultat : des tests d'intégration qui s'exécutent contre la vraie dépendance, reproductibles en local comme en CI. Portage Python d'un projet multi-langage (`testcontainers-python`), avec des modules prêts à l'emploi par technologie.

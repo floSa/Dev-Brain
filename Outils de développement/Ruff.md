@@ -17,6 +17,14 @@ url_repo: https://github.com/astral-sh/ruff
 
 # Ruff
 
+<!-- AUTO:BANDEAU:START -->
+> Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Linter **et** formateur Python **écrit en Rust** par Astral (les auteurs de [[uv]]). Plus de 900 règles, ré-implémentations natives des plugins Flake8 populaires, tri des imports (isort), réécritures (pyupgrade) et un formateur compatible Black — le tout **10–100× plus rapide** que les outils qu'il remplace. Un seul binaire et une seule configuration (`pyproject.toml`) à la place de l'empilement Flake8 + Black + isort + pydocstyle + pyupgrade + autoflake.

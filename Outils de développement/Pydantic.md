@@ -17,6 +17,14 @@ url_repo: https://github.com/pydantic/pydantic
 
 # Pydantic
 
+<!-- AUTO:BANDEAU:START -->
+> Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python / Rust | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Bibliothèque de **validation de données** pilotée par les **annotations de type** Python. On déclare un `BaseModel` avec des champs typés ; Pydantic valide, **coerce** et structure les données entrantes à l'exécution, avec des messages d'erreur précis. Depuis la **v2**, le cœur de validation (`pydantic-core`) est **écrit en Rust** (via PyO3), d'où un gain de performance majeur sur la v1. C'est le socle de validation de tout un écosystème : FastAPI, SQLModel, LangChain et de nombreux outils l'utilisent pour leurs schémas.

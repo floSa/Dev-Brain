@@ -18,37 +18,50 @@ url_repo:
 
 # Postman
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
 
-Plateforme complète de développement d'API : composer et envoyer des requêtes HTTP/REST/GraphQL/gRPC, organiser en collections, gérer des environnements de variables, écrire des tests en JavaScript, générer de la doc, créer des mocks et des monitors. Outil le plus répandu, fortement orienté collaboration d'équipe via le cloud.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | — | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Travail d'équipe sur des API avec partage de collections, espaces de travail et historique synchronisés dans le cloud.
-- Besoin de l'écosystème complet : mocks, monitoring, doc publiée, catalogue d'API, intégration CI/CD.
-- Découverte et test ad hoc d'une API tierce, avec import OpenAPI/cURL.
+Plateforme de développement d'API, et non simple client de requêtes : on compose et envoie
+du HTTP, REST, GraphQL et gRPC, on range en collections, on gère des environnements de
+variables, on écrit des tests en JavaScript, puis on publie de la documentation, on monte
+des mocks et on branche des monitors. Tout cela est adossé à son **cloud** par défaut :
+c'est lui qui porte la synchronisation, les espaces de travail partagés et les services.
+L'export de fichiers existe, mais il produit un JSON conçu pour la machine.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Collections versionnables dans git, 100 % local, sans compte ni cloud → [[Bruno]].
-- Refus du modèle propriétaire / freemium à quotas : depuis mars 2026 le plan gratuit est limité à **un seul utilisateur**, toute équipe ≥ 2 doit passer au payant → [[Bruno]].
+| Prendre si | Écarter si |
+|---|---|
+| Partager collections, espaces de travail et historique dans une équipe | Depuis mars 2026 le plan gratuit est limité à un seul utilisateur, et les quotas sont durs |
+| Besoin de la couche plateforme : mocks, monitors, doc publiée, catalogue d'API, intégration CI/CD | Le versionnage git n'est pas natif : l'export est un JSON peu lisible en diff |
+| Découvrir et tester une API tierce, avec import OpenAPI ou cURL | Surface fonctionnelle large, plus lourde qu'un simple client de requêtes |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- Propriétaire, modèle freemium (Free 1 utilisateur, Basic, Professional, Enterprise). Plusieurs fonctions (collaboration, SSO, audit) sont derrière des paliers payants.
-- Application desktop (Windows, macOS, Linux) et version web. Données et collections adossées au cloud Postman par défaut.
+- Installation — application de bureau Windows, macOS et Linux, ou version web sans installation
+- Point d'entrée — client de requêtes HTTP, REST, GraphQL et gRPC, organisé en collections et environnements
+- Prérequis — un compte Postman : les collections sont adossées à son cloud par défaut
+- Exécution — le client tourne sur le poste ou dans le navigateur ; la synchronisation, les mocks et les monitors tournent dans le cloud Postman
+- Coût — freemium : Free limité à un utilisateur depuis mars 2026, puis Basic, Professional et Enterprise ; collaboration, SSO et audit sont derrière des paliers payants
 
-## Pièges
+## Écosystème
 
-- Les collections vivent dans le cloud Postman par défaut : le versionnage git n'est pas natif et l'export de fichiers reste un format JSON peu lisible en diff.
-- Plan gratuit restreint à un utilisateur (mars 2026) ; les quotas sont durs, pas des limites souples.
-- Tendance à la « plateforme » : surface fonctionnelle large, plus lourde qu'un simple client de requêtes.
-
-## Alternatives
+### Alternatives
 
 - [[Bruno]] — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Clients d'API]] — comparatif des clients d'API
-- Doc : https://learning.postman.com/docs/
+- Documentation — https://learning.postman.com/docs/
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Clients d'API]] — ce qui départage les clients du dossier

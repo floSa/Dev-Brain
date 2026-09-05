@@ -17,6 +17,14 @@ url_repo: https://github.com/pytest-dev/pytest
 
 # pytest
 
+<!-- AUTO:BANDEAU:START -->
+> Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Framework de tests **de facto** en Python. Sa marque : on écrit des `assert` Python ordinaires et pytest fournit une **introspection détaillée** en cas d'échec (il décompose l'expression). Le système de **fixtures** (injection de dépendances par paramètre, portées function/module/session) remplace le setup/teardown rigide d'`unittest`. Paramétrage des tests, marqueurs, et un **écosystème de plugins** très riche (couverture, parallélisme, mock, asyncio, conteneurs).

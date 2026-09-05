@@ -18,36 +18,53 @@ url_repo: https://github.com/usebruno/bruno
 
 # Bruno
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 
-Client d'API léger et open-source (MIT), pensé git-native : les collections sont stockées en clair sur le système de fichiers dans un langage de balisage texte, **Bru** (fichiers `.bru`). Conçu comme alternative sobre à Postman/Insomnia, sans compte ni synchronisation cloud — tout reste local et se versionne avec git comme n'importe quel code.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application JavaScript (Electron) | open-source | Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Versionner les collections d'API dans le dépôt git du projet (diffs lisibles, revue de code, branches).
-- Travailler 100 % hors-ligne, sans compte ni envoi de données vers un cloud tiers.
-- Client de requêtes simple et rapide : scripting JavaScript, assertions style Chai, import npm dans une collection.
+Client d'API pensé pour le dépôt git : une collection n'est pas une entrée de base, c'est un
+dossier de fichiers texte posés sur le disque, écrits dans **Bru**, un langage de balisage
+qui lui est propre. Requêtes, environnements et assertions se lisent, se diffent, se
+branchent et se relisent en revue de code comme n'importe quelle source. Rien ne part vers
+un serveur : ni compte, ni synchronisation, ni espace partagé. Les requêtes se scriptent en
+JavaScript avec des assertions de style Chai, et une CLI rejoue les collections en
+intégration continue.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin de l'écosystème complet (mocks, monitoring, doc publiée, catalogue, collaboration cloud clés en main) → [[Postman]].
-- Équipe déjà investie dans les espaces de travail partagés Postman → [[Postman]].
+| Prendre si | Écarter si |
+|---|---|
+| Versionner les collections dans le dépôt du projet : diff lisible, branche, revue de code | Le format `.bru` n'est pas un standard : l'import/export Postman ou OpenAPI existe, mais reste imparfait |
+| Travailler entièrement hors-ligne, sans compte ni envoi vers un cloud tiers | Ni mocks, ni monitoring, ni doc publiée, ni catalogue : la couche « plateforme » n'existe pas |
+| Scripter les requêtes en JavaScript, avec assertions Chai et import de paquets npm | |
+| Rejouer les collections en intégration continue par la CLI | |
 
-## Bases & plateformes
+## Mise en œuvre
 
-- Open-source, licence MIT. Cœur gratuit ; offre commerciale (support / fonctions entreprise) en option, sans rendre l'outil propriétaire.
-- Application desktop Windows, macOS, Linux. Installation par binaire ou gestionnaires de paquets (Homebrew, Chocolatey, Scoop, Snap, Flatpak, Apt). CLI disponible pour l'exécution en CI.
+- Installation — binaire, ou gestionnaire de paquets : Homebrew, Chocolatey, Scoop, Snap, Flatpak, Apt
+- Point d'entrée — application de bureau ; les collections sont des fichiers `.bru` sur le disque ; CLI pour la CI
+- Prérequis — Windows, macOS ou Linux ; application Electron, aucun service tiers à joindre
+- Exécution — sur le poste, tout est local : aucun compte, aucune synchronisation
+- Coût — gratuit sous licence MIT ; une offre commerciale ajoute support et fonctions d'entreprise sans fermer le cœur
 
-## Pièges
+## Écosystème
 
-- Format `.bru` propre à Bruno : pas un standard interopérable (import/export Postman/OpenAPI disponible mais imparfait).
-- Moins de fonctions « plateforme » que Postman (pas de monitoring/mocks cloud intégrés) — c'est le compromis assumé.
-
-## Alternatives
+### Alternatives
 
 - [[Postman]] — Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Clients d'API]] — comparatif des clients d'API
-- Doc : https://docs.usebruno.com/
+- Documentation — https://docs.usebruno.com/
+- Dépôt — https://github.com/usebruno/bruno
+
+## Voir aussi
+
+- [[Outils de développement]] — le hub du domaine
+- [[Comparatif - Clients d'API]] — ce qui départage les clients du dossier

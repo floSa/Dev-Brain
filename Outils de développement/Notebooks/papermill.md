@@ -17,6 +17,14 @@ url_repo: https://github.com/nteract/papermill
 
 # papermill
 
+<!-- AUTO:BANDEAU:START -->
+> Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI.
+
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
+
 ## Pourquoi
 
 Exécute un notebook Jupyter de **manière non interactive et paramétrée**. On marque une cellule du tag `parameters` ; papermill **injecte** de nouvelles valeurs au-dessus à l'exécution (`papermill in.ipynb out.ipynb -p date 2026-06-11`), lance le notebook de bout en bout via un kernel et écrit un **notebook de sortie exécuté** (sorties incluses). Cela transforme un notebook en **brique rejouable** : même notebook, paramètres différents → un rapport daté, un balayage de configs, une étape planifiée en CI ou orchestrée. API Python et CLI ; lecture/écriture vers le système de fichiers, S3, GCS, Azure.
