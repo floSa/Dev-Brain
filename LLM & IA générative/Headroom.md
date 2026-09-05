@@ -17,56 +17,64 @@ url_repo: https://github.com/headroomlabs-ai/headroom
 
 # Headroom
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
 
-Le poste de dépense d'un agent n'est pas le prompt système, c'est ce que les outils renvoient : sorties de commandes, logs, fichiers entiers, chunks de RAG. Headroom s'insère **entre l'application et le modèle** et réécrit ce flux entrant sous une forme plus courte, avant facturation.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python, TypeScript, Rust | open-source | en bibliothèque, rien à héberger | beta |
+<!-- AUTO:BANDEAU:END -->
 
-La propriété qui distingue l'approche est la **réversibilité**. L'original est conservé côté local et le modèle reçoit un outil `headroom_retrieve` : quand la version comprimée ne suffit pas, il redemande le contenu intégral. La compression devient un pari révocable, pas une perte de contexte définitive.
+## Définition
 
-Quatre modes d'insertion, du plus intrusif au moins : **bibliothèque** (`compress(messages)` en Python ou TypeScript), **proxy** transparent (`headroom proxy --port 8787`, aucun changement de code), **enrobage d'agent** (`headroom wrap claude`, et une quinzaine d'assistants de code reconnus), **serveur MCP** exposant les outils de compression, de récupération et de statistiques.
+Le poste de dépense d'un agent n'est pas le prompt système, c'est ce que les outils
+renvoient : sorties de commandes, logs, fichiers entiers, chunks de RAG. Headroom s'insère
+**entre l'application et le modèle** et réécrit ce flux entrant sous une forme plus courte,
+avant facturation. La propriété qui distingue l'approche est la **réversibilité** :
+l'original reste côté local et le modèle reçoit un outil `headroom_retrieve` pour redemander
+le contenu intégral quand la version comprimée ne suffit pas — la compression devient un pari
+révocable, pas une perte définitive. Quatre modes d'insertion, du plus intrusif au moins :
+bibliothèque, proxy transparent, enrobage d'agent, serveur MCP. Les gains annoncés — de
+l'ordre de 15 à 20 % de tokens en moins sur un agent de code, 60 à 95 % sur du JSON verbeux —
+sont **auto-déclarés par le projet**, sans mesure indépendante publiée : à revalider sur sa
+propre charge avant d'en faire une hypothèse de budget.
 
-Les gains annoncés sont **auto-déclarés par le projet** : de l'ordre de 15 à 20 % de tokens en moins sur un agent de code, 60 à 95 % sur du JSON verbeux. Aucune mesure indépendante n'est publiée — à revalider sur sa propre charge avant d'en faire une hypothèse de budget. Le projet est **pré-1.0** (v0.37.0 en août 2026).
+## Prendre si / Écarter si
 
-## Quand l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Agent de code ou agent outillé dont les sorties d'outils saturent la fenêtre de contexte | Le problème est le routage ou l'abstraction multi-fournisseurs, pas le volume → [[LiteLLM]] |
+| Pipeline RAG qui envoie beaucoup de chunks redondants ou de JSON structuré | Il s'agit de mesurer ce qui est envoyé plutôt que de le réduire → [[Comparatif - Observabilité LLM]] |
+| Réduire la facture de tokens sans toucher au code de l'application, en mode proxy | Contexte déjà court et maîtrisé, ou contraintes de latence dures : une brique de plus dans le chemin critique pour un gain marginal |
+| Garantir que rien n'est perdu : le modèle peut toujours redemander l'original | Le gain net dépend du taux de récupération — un modèle qui rappelle souvent l'original annule l'économie |
+| | La compression **change le prompt** : tout jugement de qualité doit être rejoué après activation, jamais supposé stable |
+| | Pré-1.0 à cadence de release élevée, sur un chemin critique : épingler la version |
 
-- Agent de code ou agent outillé dont les sorties d'outils saturent la fenêtre de contexte.
-- Pipeline RAG qui envoie beaucoup de chunks redondants ou de JSON structuré.
-- Réduire la facture de tokens **sans toucher au code** de l'application (mode proxy).
-- Besoin de garantir que rien n'est perdu : le modèle peut toujours redemander l'original.
+## Mise en œuvre
 
-## Quand NE PAS l'utiliser
+- Installation — `pip install "headroom-ai[all]"`, `uv tool install`, `npm install headroom-ai`, ou l'image `ghcr.io/headroomlabs-ai/headroom`
+- Point d'entrée — quatre modes : bibliothèque `compress(messages)` en Python ou TypeScript, proxy transparent `headroom proxy --port 8787`, enrobage `headroom wrap <assistant>` (la matrice d'assistants reconnus bouge, se référer au dépôt), serveur MCP exposant compression, récupération et statistiques
+- Prérequis — le cache des originaux occupe du disque et contient le contexte brut : à traiter comme une donnée sensible
+- Exécution — en local, aucune donnée sortante ajoutée par la brique elle-même ; le mode proxy est un processus à superviser, mono-nœud
+- Coût — gratuit ; une intégration par callback existe côté passerelle (`litellm.callbacks = [HeadroomCallback()]`)
 
-- Problème de **routage** ou d'abstraction multi-fournisseurs, pas de volume : c'est le rôle d'une passerelle comme [[LiteLLM]].
-- Besoin de **mesurer** ce qui est envoyé plutôt que de le réduire → outils d'observabilité LLM (cf. [[Comparatif - Observabilité LLM]]).
-- Contexte déjà court et maîtrisé : une brique de plus dans le chemin critique pour un gain marginal.
-- Contraintes de latence dures : la compression ajoute une étape avant chaque appel.
+## Écosystème
 
-## Déploiement & coût
+### Alternatives
 
-- Open-source (Apache-2.0), gratuit ; s'exécute **en local**, aucune donnée sortante ajoutée par la brique elle-même.
-- `pip install "headroom-ai[all]"`, `uv tool install`, `npm install headroom-ai`, ou image `ghcr.io/headroomlabs-ai/headroom`.
-- Mode proxy = un processus à superviser sur le poste ou le serveur applicatif (single-node).
-- Intégration [[LiteLLM]] par callback : `litellm.callbacks = [HeadroomCallback()]`.
-- Le cache des originaux occupe du disque et contient le contexte brut — à traiter comme une donnée sensible.
+Aucune brique équivalente n'est référencée dans le brain à ce jour : la compression
+réversible de contexte n'y a pas d'autre représentant.
 
-## Pièges
+## Ressources
 
-- **Chiffres auto-déclarés** : les 60-95 % concernent du JSON, cas le plus favorable ; sur du texte ou du code, l'ordre de grandeur annoncé tombe à 15-20 %.
-- La compression **change le prompt** : tout jugement de qualité doit être rejoué après activation, pas supposé stable.
-- Le gain net dépend du **taux de récupération** : un modèle qui appelle souvent `headroom_retrieve` annule l'économie.
-- **Pré-1.0** à cadence de release élevée, sur un chemin critique — épingler la version.
-- Le mode `wrap` dépend de l'assistant ciblé ; la matrice d'intégrations bouge, se référer au dépôt plutôt qu'à une liste figée.
+- Documentation — https://headroom-docs.vercel.app/docs
+- Dépôt — https://github.com/headroomlabs-ai/headroom
 
-## Alternatives
+## Voir aussi
 
-Aucune brique équivalente n'est référencée dans le brain à ce jour : la catégorie `llm/context` est neuve et Headroom y est seul.
-
-## Liens
-
-- S'intègre à [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous.
-- [[Context engineering]] — concept : composition et budget du contexte
-- [[Harnais d'agent]] — concept : ce qui entoure le modèle dans une boucle d'agent
-- [[Agent memory]] — concept : persistance du contexte entre sessions
-- [[Tokenization]] — concept : l'unité que l'on cherche à économiser
-- [[mcp-protocol]] — concept : le protocole par lequel Headroom expose ses outils
-- Doc : https://headroom-docs.vercel.app/docs
+- [[Context engineering]] — la notion : composition et budget du contexte
+- [[Agent memory]] — la notion : persistance du contexte entre sessions
+- [[Harnais d'agent]] — la notion : ce qui entoure le modèle dans une boucle d'agent
+- [[Tokenization]] — la notion : l'unité que l'on cherche à économiser
+- [[mcp-protocol]] — la notion : le protocole par lequel il expose ses outils
+- [[LLM & IA générative]] — le hub du domaine
