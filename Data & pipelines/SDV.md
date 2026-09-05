@@ -17,43 +17,55 @@ url_repo: https://github.com/sdv-dev/SDV
 
 # SDV
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL).
 
-SDV (Synthetic Data Vault, projet DataCebo, né au Data to AI Lab du MIT en 2016) **apprend les patterns d'un vrai jeu tabulaire** et en émet une copie **synthétique** statistiquement proche, sans exposer les enregistrements d'origine. Contrairement à [[Faker]] / [[Mimesis]] (valeurs tirées par règles), SDV **modélise la distribution jointe** : corrélations, marginales, contraintes. Il offre plusieurs synthétiseurs, du statistique (**GaussianCopula**) au profond (**CTGAN**, **TVAE**, CopulaGAN), pilotés par des **métadonnées** décrivant le schéma. Couvre la **table unique**, le **multi-tables relationnel** (HMA) et le **séquentiel** (PAR), avec des rapports de **qualité** et de diagnostic.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | source-available | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Partager / tester sur des données **sensibles** sans diffuser le réel (PII, santé, finance).
-- Augmenter un jeu tabulaire en préservant **corrélations et lois marginales**.
-- Synthétiser une **base relationnelle** entière (clés étrangères) ou des **séries** par entité.
-- Mesurer la fidélité du synthétique (rapports qualité, diagnostics de validité).
+Synthèse tabulaire **par modèles** : SDV apprend les patterns d'un vrai jeu et en émet une
+copie statistiquement proche, sans exposer les enregistrements d'origine. Là où un
+générateur par règles tire chaque champ isolément, SDV modélise la **distribution jointe** —
+corrélations, lois marginales, contraintes — à partir de métadonnées décrivant le schéma.
+Plusieurs synthétiseurs couvrent le spectre, du statistique (GaussianCopula) au profond
+(CTGAN, TVAE, CopulaGAN), sur table unique, base relationnelle entière (HMA, clés étrangères
+suivies) ou séquences par entité (PAR). Des rapports de qualité et de diagnostic mesurent la
+fidélité du résultat : l'étape n'est pas facultative, un synthétique plausible peut avoir
+cassé une corrélation clé. Projet DataCebo, né au Data to AI Lab du MIT en 2016.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Simples **fixtures / fakes** sans souci de distribution → [[Faker]], [[Mimesis]] (plus simples, plus rapides).
-- Seulement **rééquilibrer une classe minoritaire** → [[imbalanced-learn]] (SMOTE), plus léger.
-- Usage **commercial de type service de données synthétiques** : la licence BSL l'interdit (voir ci-dessous).
+| Prendre si | Écarter si |
+|---|---|
+| Partager ou tester sur des données sensibles sans diffuser le réel (PII, santé, finance) | Simples fixtures ou fakes, sans souci de distribution → [[Faker]], [[Mimesis]] |
+| Augmenter un jeu tabulaire en préservant corrélations et lois marginales | Seulement rééquilibrer une classe minoritaire → [[imbalanced-learn]] (SMOTE), plus léger |
+| Synthétiser une base relationnelle entière, clés étrangères comprises, ou des séquences par entité | Usage commercial de type *service de données synthétiques* : la Business Source License 1.1 l'interdit — chaque version bascule en MIT quatre ans après sa sortie |
+| Mesurer la fidélité du synthétique produit (rapports qualité, diagnostics de validité) | Le synthétique n'est pas anonyme par défaut : sans contrôle, un modèle peut mémoriser et réémettre des lignes réelles |
+| | Petits jeux : CTGAN et TVAE demandent du volume et du tuning, GaussianCopula est plus robuste là |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Source-available** : Business Source License 1.1 — gratuit en usage non commercial ; interdit d'en faire un *Synthetic Data Service* commercial. Chaque version **bascule en MIT** 4 ans après sa sortie.
-- `uv add sdv`. Rien à héberger ; calcul **single-node**. CTGAN / TVAE entraînent un réseau (GPU utile pour les gros volumes), GaussianCopula reste léger (CPU).
-- Offre managée séparée (SDV Enterprise) chez DataCebo pour l'usage commercial.
+- Installation — `uv add sdv`
+- Point d'entrée — import Python : métadonnées du schéma, puis un synthétiseur (`GaussianCopulaSynthesizer`, `CTGANSynthesizer`, `PARSynthesizer`…)
+- Prérequis — les métadonnées décrivant le schéma ; assez de données pour les synthétiseurs profonds
+- Exécution — single-node ; CPU pour GaussianCopula, GPU utile pour CTGAN et TVAE sur gros volumes
+- Coût — gratuit en usage non commercial (BSL 1.1) ; SDV Enterprise, chez DataCebo, couvre l'usage commercial
 
-## Pièges
+## Écosystème
 
-- **Licence BSL** : vérifier la conformité avant tout usage commercial — ce n'est pas de l'open-source au sens OSI.
-- Le synthétique **n'est pas anonyme par défaut** : sans contrôle, un modèle peut mémoriser et réémettre des lignes réelles ; valider la confidentialité.
-- CTGAN / TVAE demandent **assez de données** et du tuning ; sur petits jeux, GaussianCopula est souvent plus robuste.
-- Toujours **évaluer la fidélité** (rapports qualité) avant d'exploiter le jeu généré — un synthétique plausible peut casser des corrélations clés.
+### Alternatives
 
-## Alternatives
+- Aucune brique du brain ne couvre la synthèse tabulaire par modèles. Les voisins cités en `Écarter si` sont d'une autre nature : génération par règles, ou rééchantillonnage d'une seule classe.
 
-Pas d'équivalent direct dans le brain. Briques voisines mais de **nature différente** : [[Faker]] et [[Mimesis]] génèrent des fakes par règles (pas de distribution apprise) ; [[imbalanced-learn]] (SMOTE) synthétise des exemples minoritaires par interpolation, sans modèle génératif global.
+## Ressources
 
-## Liens
+- Documentation — https://docs.sdv.dev/sdv
+- Dépôt — https://github.com/sdv-dev/SDV
 
-- [[Synthetic data generation]] — le concept parent : ici, synthèse tabulaire par modèles appris (vs génération par LLM).
-- [[Faker]] / [[Mimesis]] — génération par règles, le pendant simple.
-- [[imbalanced-learn]] — synthèse ciblée de classe minoritaire (SMOTE).
-- Doc : https://docs.sdv.dev/sdv
+## Voir aussi
+
+- [[Synthetic data generation]] — la notion parente : ici, synthèse tabulaire par modèles appris

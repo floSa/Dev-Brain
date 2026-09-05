@@ -17,42 +17,55 @@ url_repo: https://github.com/apache/parquet-format
 
 # Parquet
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
-Apache Parquet est un format de fichier **orienté colonnes**, inspiré de Google Dremel. Une table est découpée horizontalement en **row groups** (≈ 128 Mo – 1 Go) ; à l'intérieur, les données sont rangées **colonne par colonne** (column chunks). Chaque colonne porte son propre **encodage** (dictionnaire, RLE, delta) et son **codec** de compression (Snappy, Zstd, GZIP), plus des **statistiques min/max** par row group. Résultat : un moteur ne lit que les colonnes demandées (projection pushdown) et saute les row groups hors filtre (predicate pushdown). Les colonnes imbriquées sont gérées via les **definition / repetition levels** de Dremel. Apache-2.0 ; format de fait du stockage analytique.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Spécification Java | open-source | rien à exécuter | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Scans analytiques (OLAP) lisant peu de colonnes sur beaucoup de lignes.
-- Stockage durable de tables sur object storage (S3, MinIO) lu par DuckDB, Spark, [[Polars]], ClickHouse.
-- Interop colonnaire via Apache Arrow / PyArrow (lecture quasi zéro-copie).
-- Compression forte et requêtes sélectives recherchées sur de gros volumes.
+Format de fichier **orienté colonnes**, inspiré de Google Dremel. Une table est découpée
+horizontalement en *row groups* (128 Mo à 1 Go) ; à l'intérieur, la donnée est rangée colonne
+par colonne, chaque colonne portant son propre encodage (dictionnaire, RLE, delta), son codec
+de compression (Snappy, Zstd, GZIP) et des statistiques min/max. De là viennent les deux
+gains : un moteur ne lit que les colonnes demandées (projection pushdown) et saute les row
+groups hors filtre (predicate pushdown). Les colonnes imbriquées passent par les *definition*
+et *repetition levels* de Dremel. La contrepartie du modèle est l'immutabilité : mettre une
+ligne à jour, c'est réécrire un fichier entier.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Écriture / append **enregistrement par enregistrement** ou messages de flux → [[Avro]] (orienté ligne).
-- Mises à jour fréquentes de lignes / OLTP → base relationnelle ([[Postgres]]).
-- Besoin de **sémantique de table** (ACID, time travel, évolution de schéma au niveau table) → [[Apache Iceberg]] (couche table par-dessus Parquet).
+| Prendre si | Écarter si |
+|---|---|
+| Scans analytiques lisant peu de colonnes sur beaucoup de lignes | Écriture ou append enregistrement par enregistrement, messages de flux → [[Avro]] |
+| Stockage durable de tables sur object storage (S3, MinIO), lu par [[DuckDB]], [[Spark]], [[Polars]], ClickHouse | Mises à jour fréquentes de lignes, OLTP → [[Postgres]] |
+| Interop colonnaire via Apache Arrow / PyArrow, en lecture quasi zéro-copie | Sémantique de table — ACID, time travel, évolution de schéma → [[Apache Iceberg]], couche posée par-dessus Parquet |
+| Compression forte et requêtes sélectives sur de gros volumes | Le *small files problem* : beaucoup de petits fichiers font exploser le coût des métadonnées, prévoir une compaction |
+| | Taille de row group à régler selon le moteur et le stockage ; schéma à tenir cohérent entre les fichiers d'un même jeu, et rien n'est lisible à l'œil |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Ce n'est pas un service mais un **format ouvert** + des bibliothèques : Arrow / PyArrow, parquet-java, fastparquet. Gratuit (Apache-2.0).
-- Les fichiers vivent sur object storage ou système de fichiers ; rien à héberger.
-- **Splittable** : conçu pour les moteurs distribués (un row group par tâche).
+- Installation — bibliothèques de lecture / écriture : Arrow et PyArrow (`uv add pyarrow`), parquet-java, fastparquet
+- Point d'entrée — l'API du moteur ou de la bibliothèque ; il n'y a aucun service à appeler
+- Prérequis — un système de fichiers ou un stockage objet, rien d'autre
+- Exécution — dans le process du moteur ; format splittable, un row group par tâche côté distribué
+- Coût — gratuit, Apache-2.0 ; le coût réel est celui du stockage et des requêtes
 
-## Pièges
+## Écosystème
 
-- Fichiers immuables : une mise à jour impose de **réécrire** des fichiers entiers.
-- Le « small files problem » : trop de petits fichiers → surcoût de métadonnées, prévoir une compaction.
-- Taille de row group à régler selon le moteur et le stockage.
-- Non lisible à l'œil ; le schéma doit rester cohérent entre fichiers d'un même jeu.
-
-## Alternatives
+### Alternatives
 
 - [[Avro]] — Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
 
-## Liens
+## Ressources
 
-- [[Apache Iceberg]] — format de table transactionnel qui stocke ses données en Parquet.
-- Format mémoire complémentaire : Apache Arrow (colonnaire en RAM) — interop directe.
-- Doc : https://parquet.apache.org/docs/
+- Documentation — https://parquet.apache.org/docs/
+- Dépôt — https://github.com/apache/parquet-format
+
+## Voir aussi
+
+- [[Partitionnement & layout de données]] — le data skipping que les statistiques par row group rendent possible
+- [[Architecture médaillon]] — les couches de tables qui reposent sur ces fichiers

@@ -17,42 +17,54 @@ url_repo: https://github.com/fbdesignpro/sweetviz
 
 # sweetviz
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
 
-Bibliothèque d'[[EDA automatisée & profiling|EDA automatisée]] orientée **visuel et comparaison**. En une ligne, `sweetviz.analyze(df)` produit un rapport HTML auto-porté à forte densité graphique. Sa différence : il est construit autour d'une **variable cible** (comment chaque feature se comporte selon la cible) et de la **comparaison de deux jeux** — train vs test (`compare`), ou deux sous-groupes d'un même jeu (`compare_intra`, séparés par une condition booléenne).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Analyser comment les features se rapportent à une **cible** (classification ou régression).
-- Comparer **train vs test** pour détecter un décalage de distribution avant modélisation.
-- Comparer deux sous-populations (hommes/femmes, avant/après) d'un même jeu.
-- Obtenir un rapport visuel partageable, plus « lisible d'un coup d'œil » qu'un dump exhaustif.
+Profileur orienté **visuel et comparaison** : `sweetviz.analyze(df)` produit en une ligne un
+rapport HTML auto-porté à forte densité graphique. Ce qui le distingue tient en deux objets —
+une **variable cible**, autour de laquelle chaque feature est décrite selon son comportement
+vis-à-vis d'elle, et la **comparaison de deux jeux** : `compare` pour train contre test,
+`compare_intra` pour deux sous-populations d'un même jeu séparées par une condition
+booléenne. C'est le seul du dossier à répondre « la distribution a-t-elle bougé ? ». Les
+graphiques sont pré-rendus et intégrés au HTML, ce qui rend le rapport partageable tel quel.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Rapport de **profiling exhaustif** (toutes les statistiques, alertes qualité, support Spark) → [[ydata-profiling]].
-- Diagnostic ciblé des seules **valeurs manquantes** → [[missingno]].
-- Très haute dimension (centaines de colonnes) : le rapport devient lourd ; désactiver l'analyse par paires (`pairwise_analysis="off"`).
+| Prendre si | Écarter si |
+|---|---|
+| Analyser comment les features se rapportent à une cible, en classification ou en régression | La cible doit être typée explicitement (`FeatureConfig`, `target_feat`) : mal typée, elle fausse l'analyse d'association |
+| Comparer train et test pour détecter un décalage de distribution avant modélisation | `pairwise_analysis` coûte cher en haute dimension — le passer à `"off"` au-delà de quelques dizaines de colonnes |
+| Comparer deux sous-populations d'un même jeu (avant / après, deux segments) | Pensé pour du tabulaire de taille raisonnable, en mémoire : ce n'est pas un outil de qualité de données industriel |
+| Obtenir un rapport visuel partageable, lisible d'un coup d'œil | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python (`uv add sweetviz`), gratuite (MIT). Rien à héberger.
-- Single-node, en mémoire (pandas). Sortie HTML autonome ou rendu dans un [[Notebooks-as-code|notebook]].
-- S'appuie sur matplotlib pour les graphiques pré-rendus intégrés au HTML.
+- Installation — `uv add sweetviz`
+- Point d'entrée — import Python : `analyze`, `compare`, `compare_intra`
+- Prérequis — un DataFrame pandas tenant en mémoire ; matplotlib pour les graphiques pré-rendus
+- Exécution — CPU, single-node ; sortie HTML autonome ou rendu dans un notebook
+- Coût — gratuit, MIT
 
-## Pièges
+## Écosystème
 
-- Préciser le **type de la cible** (`FeatureConfig` / `target_feat`) : une cible mal typée fausse l'analyse d'association.
-- `pairwise_analysis` est coûteux en haute dimension — le passer à `"off"` au-delà de quelques dizaines de colonnes.
-- Pensé pour des jeux **tabulaires de taille raisonnable** ; pas un outil de qualité de données industriel.
-
-## Alternatives
+### Alternatives
 
 - [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 - [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 
-## Liens
+## Ressources
 
-- Concept : [[EDA automatisée & profiling]] — la notion que cet outil incarne.
-- [[Comparatif - Outils EDA - profiling|Comparatif — Outils EDA / profiling]]
-- Doc : https://github.com/fbdesignpro/sweetviz
+- Documentation — https://pypi.org/project/sweetviz/
+- Dépôt — https://github.com/fbdesignpro/sweetviz
+
+## Voir aussi
+
+- [[EDA automatisée & profiling]] — la notion du dossier, que cet outil incarne
+- [[Comparatif - Outils EDA - profiling]] — ce qui départage les trois profileurs du dossier
