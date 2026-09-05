@@ -17,46 +17,59 @@ url_repo: https://github.com/stanfordnlp/dspy
 
 # DSPy
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
-Framework du **Stanford NLP** (Omar Khattab) pour **programmer plutôt que prompter** les LLM. Au lieu d'écrire des prompts en chaînes de caractères, on déclare des **signatures** typées (entrées → sorties) et on les compose en **modules** (`Predict`, `ChainOfThought`, `ReAct`…). Un **optimiseur** (*teleprompter* : MIPROv2, BootstrapFewShot…) génère et **règle automatiquement** les prompts — voire fine-tune — à partir d'exemples et d'une **métrique**, jusqu'à convergence de la qualité. Le sigle se relit *Declarative Self-improving Python*. L'intérêt : des programmes LLM **modulaires, versionnables et auto-optimisables**, qui résistent aux changements de modèle. Écrit en **Python** (≥ 3.10), licence **MIT**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Remplacer le **prompt engineering manuel** par une optimisation pilotée par métrique sur un jeu d'exemples.
-- Pipelines LLM à **plusieurs étapes** (RAG, classification, extraction) qu'on veut faire converger objectivement.
-- Garder un programme **portable** entre modèles : recompiler plutôt que réécrire les prompts à chaque changement.
-- Contexte recherche/eval où la **mesure** guide l'itération.
+Framework du Stanford NLP (Omar Khattab) pour **programmer plutôt que prompter**. Au lieu
+d'écrire des prompts en chaînes de caractères, on déclare des **signatures** typées
+(entrées → sorties) et on les compose en **modules** (`Predict`, `ChainOfThought`, `ReAct`).
+Un **optimiseur** — le *teleprompter* : MIPROv2, BootstrapFewShot — génère et règle
+automatiquement ces prompts, voire fine-tune, à partir d'exemples et d'une **métrique**,
+jusqu'à convergence. Le sigle se relit *Declarative Self-improving Python*. Le programme
+devient modulaire, versionnable et recompilable : il résiste au changement de modèle là où
+un prompt écrit à la main se réécrit. Tout repose donc sur la métrique — mal choisie, elle
+produit un programme parfaitement optimisé pour la mauvaise chose.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- App orientée **intégrations et agents prêts à l'emploi** → [[LangChain]].
-- **RAG centré données** clé en main → [[LlamaIndex]].
-- Pipeline de production à **composants explicites** → [[Haystack]].
-- Pas de **jeu d'exemples ni de métrique** : sans signal à optimiser, DSPy perd son intérêt principal.
+| Prendre si | Écarter si |
+|---|---|
+| Remplacer le prompt engineering manuel par une optimisation pilotée par métrique sur un jeu d'exemples | Aucun jeu d'exemples ni métrique : sans signal à optimiser, l'outil perd son intérêt principal |
+| Pipeline LLM à plusieurs étapes (RAG, classification, extraction) qu'on veut faire converger objectivement | La compilation lance de nombreux appels LLM pour explorer prompts et démonstrations : un budget distinct de l'inférence, à provisionner |
+| Garder un programme portable entre modèles : recompiler plutôt que réécrire les prompts à chaque changement | Paradigme déroutant au départ — signatures, modules, compilateur — et API encore mouvante entre majeures |
+| Contexte recherche ou évaluation, où la mesure guide l'itération | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; bibliothèque importée, aucune infra dédiée.
-- Coût notable à la **compilation** : l'optimisation lance de nombreux appels LLM pour explorer prompts/démonstrations — budgéter cette phase (distincte de l'inférence en production).
-- S'appuie sur [[LiteLLM]] en interne pour appeler les fournisseurs.
+- Installation — dépendance Python installée dans l'app (`uv add` / `pip install`)
+- Point d'entrée — import Python : on déclare des signatures, on compose des modules, puis on compile avec un optimiseur
+- Prérequis — Python ≥ 3.10 ; surtout, un jeu d'exemples et une métrique, sans quoi il n'y a rien à compiler
+- Exécution — en bibliothèque, rien à héberger ; les appels aux fournisseurs passent par [[LiteLLM]] en interne
+- Coût — gratuit ; le poste réel est la **compilation**, d'autant plus chère que le modèle « enseignant » est gros
 
-## Pièges
+## Écosystème
 
-- La phase d'**optimisation consomme beaucoup de tokens** : surveiller le budget, surtout avec un gros modèle « enseignant ».
-- Qualité de l'optimisation **dépend de la métrique** : une métrique mal choisie produit un programme bien optimisé… pour la mauvaise chose.
-- Paradigme **déroutant au départ** (signatures, modules, compilateur) : courbe d'apprentissage différente du prompting classique.
-- API encore **mouvante** entre versions majeures.
-
-## Alternatives
+### Alternatives
 
 - [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 - [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 
-## Liens
+## Ressources
 
-- S'appuie sur [[LiteLLM]] pour l'accès multi-fournisseurs ; modèles depuis [[HuggingFace]].
-- Vector stores pour les modules RAG : [[Qdrant]], [[Chroma]].
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://dspy.ai/
+- Documentation — https://dspy.ai/
+- Dépôt — https://github.com/stanfordnlp/dspy
+
+## Voir aussi
+
+- [[Prompt engineering]] — la notion que l'optimiseur remplace par une compilation
+- Modèles depuis [[HuggingFace]] ; vector stores pour les modules RAG : [[Qdrant]], [[Chroma]]
+- [[LLM & IA générative]] — le hub du domaine
+- [[Comparatif - Frameworks LLM]] — ce qui départage les frameworks de la catégorie
