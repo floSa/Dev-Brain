@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[HTMX]]"]
 tags: [templating]
 url_docs: https://jinja.palletsprojects.com/
 url_repo: https://github.com/pallets/jinja
@@ -17,39 +17,58 @@ url_repo: https://github.com/pallets/jinja
 
 # Jinja2
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask.
 
-Moteur de templates Python de référence : des gabarits texte (typiquement HTML) mêlent du balisage statique et des emplacements `{{ ... }}` / `{% ... %}` remplis à partir de données. Apporte l'**héritage de templates** (`extends` / `block`), les inclusions, macros, filtres, et un **échappement automatique** du HTML (protection XSS). Syntaxe d'expressions proche de Python. Développé par l'organisation Pallets ; c'est le moteur de templates de [[Flask]], et il sert au-delà du web (génération de config, e-mails, fichiers, Ansible).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Rendu HTML côté serveur d'une app [[Flask]] / [[FastAPI]] (pages complètes ou fragments pour [[HTMX]]).
-- Génération de tout fichier texte paramétré : fichiers de configuration, e-mails, manifestes, code.
-- Besoin d'héritage de gabarits et d'échappement automatique sans logique applicative dans les templates.
+Moteur de gabarits Python de référence : un fichier texte — typiquement du HTML — mêle du
+balisage statique et des emplacements `{{ ... }}` et `{% ... %}` remplis à partir de données.
+Il apporte l'**héritage de gabarits** (`extends` / `block`), les inclusions, les macros, les
+filtres, et un **échappement automatique** du HTML qui ferme la porte au XSS par défaut. La
+syntaxe des expressions est proche de Python sans l'être : le gabarit n'est pas censé porter de
+logique. Développé par l'organisation Pallets, il sert bien au-delà du web — génération de
+fichiers de configuration, d'e-mails, de manifestes, et c'est le moteur d'Ansible.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Logique métier lourde : les templates doivent rester de la **présentation**, pas de la logique (la déporter dans le code Python).
-- Front à fort état client → rendu côté client (frameworks SPA hors brain).
+| Prendre si | Écarter si |
+|---|---|
+| Rendre du HTML côté serveur, en pages complètes ou en fragments | Compiler un gabarit venant d'une **entrée externe** ouvre une injection côté serveur (SSTI) — à ne jamais faire |
+| Générer n'importe quel fichier texte paramétré : configuration, e-mails, manifestes, code | L'échappement automatique dépend du contexte : actif pour les extensions HTML, à vérifier ailleurs, et `\| safe` le désactive |
+| Vouloir l'héritage de gabarits sans mettre de logique applicative dedans | Logique métier lourde : les gabarits doivent rester de la présentation, sinon ils deviennent illisibles |
+| | Front à fort état client : le rendu se fait alors côté navigateur, hors de portée d'un moteur serveur |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (BSD-3-Clause), gratuite, intégrée à l'application Python. Aucune dépendance lourde.
-- Pas de service à héberger : single-node, suit le déploiement de l'app. Version courante : 3.1.x.
+- Installation — `uv add jinja2`
+- Point d'entrée — import Python, `from jinja2 import Environment` ; Flask l'expose déjà configuré, FastAPI par `Jinja2Templates`
+- Prérequis — aucune dépendance lourde ; le moteur est pur Python
+- Exécution — dans le processus de l'application, rien à héberger à part
+- Coût — gratuit, BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- L'échappement automatique dépend du contexte : actif pour les extensions HTML, à vérifier pour les autres formats ; `| safe` désactive la protection XSS — à manier avec prudence.
-- Tentation de mettre trop de logique dans les templates (boucles, conditions imbriquées) → gabarits illisibles.
-- Le rendu de templates non fiables (saisis par l'utilisateur) ouvre une surface d'injection (SSTI) — ne jamais compiler de template venant d'une entrée externe.
+### Alternatives
 
-## Alternatives
+<!-- Aucune : les autres moteurs de gabarits (Mako, Chameleon, gabarits Django) ne sont pas fichés dans le brain. -->
 
-<!-- Pas d'alternative dans le brain : autres moteurs de templates (Mako, Chameleon, Django templates) non documentés. -->
+### Compléments
 
-## Liens
+- [[HTMX]] — Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd. — consomme les fragments que Jinja2 rend ; c'est la paire usuelle côté Python
 
-- [[Flask]] — embarque Jinja2 comme moteur de templates par défaut
-- [[FastAPI]] — rendu HTML optionnel via Jinja2Templates
-- [[HTMX]] — consomme les fragments HTML rendus par Jinja2 (paire usuelle)
-- Doc : https://jinja.palletsprojects.com/
+## Ressources
+
+- Documentation — https://jinja.palletsprojects.com/
+- Dépôt — https://github.com/pallets/jinja
+
+## Voir aussi
+
+- [[Web & API]] — le hub du domaine
+- [[Flask]] — l'embarque comme moteur de gabarits par défaut
+- [[FastAPI]] — rendu HTML optionnel, par `Jinja2Templates`
