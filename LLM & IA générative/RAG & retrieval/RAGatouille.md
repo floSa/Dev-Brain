@@ -17,45 +17,59 @@ url_repo: https://github.com/AnswerDotAI/RAGatouille
 
 # RAGatouille
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
 
-Bibliothèque Python (AnswerDotAI, Ben Clavié, Apache-2.0) dont le but est de rendre la **[[Late-interaction retrieval|recherche par late-interaction]] (ColBERT)** simple à utiliser dans un pipeline RAG. Elle enveloppe l'implémentation de référence **colbert-ai** (Stanford) et expose en quelques lignes : **indexation** compressée et persistée sur disque (index **PLAID**), **recherche**, et **entraînement / fine-tuning** (traitement des données, *hard negative mining*). Argument central : les modèles ColBERT **généralisent mieux hors domaine** que les embeddings denses mono-vecteur et sont **économes en données**. À noter : la **maintenance a ralenti** (dernière release **0.0.9.post2**, mai 2025, dernier commit le même mois) ; le projet reste l'entrée la plus simple vers ColBERT.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Tester rapidement **ColBERT / late-interaction** comme retriever ou reranker, sans manipuler colbert-ai à la main.
-- Corpus **spécialisé / out-of-domain** où le dense mono-vecteur généralise mal.
-- **Fine-tuner** un modèle ColBERT sur son domaine (peu de données annotées) avec le minage de négatifs intégré.
-- Brancher la late-interaction dans [[LangChain]] / [[LlamaIndex]] (intégrations fournies).
+Bibliothèque d'AnswerDotAI (Ben Clavié) dont le but est de rendre la
+[[Late-interaction retrieval|recherche par late-interaction]] ColBERT simple à utiliser dans
+un pipeline RAG. Elle enveloppe l'implémentation de référence **colbert-ai** (Stanford) et
+expose en quelques lignes l'indexation compressée et persistée sur disque (index **PLAID**),
+la recherche, et l'entraînement ou le fine-tuning avec préparation des données et *hard
+negative mining*. Son argument central : les modèles ColBERT généralisent mieux hors domaine
+que les embeddings denses mono-vecteur, et demandent moins de données annotées. Des
+intégrations sont fournies pour [[LangChain]] et [[LlamaIndex]].
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Reranking simple sur un top-k → un **cross-encoder** via [[sentence-transformers]] (BGE-reranker…) est plus léger ([[Reranking]]).
-- Retrieval dense mono-vecteur classique → [[sentence-transformers]] + une [[Bases de données vectorielles|base vectorielle]].
-- Mise à l'échelle de la late-interaction en production exigeante → moteur à support natif des multi-vecteurs ([[Vespa]]).
-- Besoin de garanties de maintenance à jour → vérifier l'activité du dépôt avant de s'engager.
+| Prendre si | Écarter si |
+|---|---|
+| Tester rapidement ColBERT et la late-interaction comme retriever ou comme reranker, sans manipuler colbert-ai à la main | Mettre la late-interaction à l'échelle en production exigeante → [[Vespa]], qui supporte nativement les multi-vecteurs |
+| Corpus spécialisé ou hors domaine, où le dense mono-vecteur généralise mal | Maintenance ralentie — 0.0.9.post2 en mai 2025, aucun commit depuis : vérifier la compatibilité des dépendances avant de s'engager sur la durée |
+| Fine-tuner un modèle ColBERT sur son domaine avec peu de données annotées, minage de négatifs compris | Index multi-vecteur volumineux — un vecteur par token : prévoir le stockage, PLAID atténue le surcoût sans le supprimer |
+| Brancher la late-interaction dans un pipeline LangChain ou LlamaIndex, intégrations fournies | ColBERT n'est pas un cross-encoder : c'est un retriever et scorer multi-vecteur, pas un reclasseur de paire — calibrer l'usage en conséquence |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- `uv add ragatouille` ; Apache-2.0, gratuit. **Single-node**, **GPU** recommandé (encodage + index).
-- S'appuie sur **colbert-ai**, [[PyTorch]], faiss-cpu et [[sentence-transformers]] — dépendances lourdes.
-- Coût caché : l'index multi-vecteur (un vecteur par token) est **plus volumineux** qu'un index mono-vecteur ; PLAID le compresse.
+- Installation — `uv add ragatouille`
+- Point d'entrée — API Python : indexation PLAID, recherche, entraînement et fine-tuning
+- Prérequis — GPU recommandé pour l'encodage et l'indexation ; dépendances lourdes — colbert-ai, [[PyTorch]], faiss-cpu, [[sentence-transformers]]
+- Exécution — mono-nœud, bibliothèque importée dans l'app
+- Coût — gratuit sous Apache-2.0 ; le coût caché est l'index multi-vecteur, plus volumineux qu'un index mono-vecteur
 
-## Pièges
+## Écosystème
 
-- **Maintenance ralentie** (0.0.9.post2, mai 2025 — aucun commit depuis) : surveiller la compatibilité des dépendances avant un usage durable.
-- Index **multi-vecteur volumineux** : prévoir le stockage ; PLAID atténue mais ne supprime pas le surcoût.
-- ColBERT ≠ cross-encoder : c'est un retriever/scorer multi-vecteur, pas un simple reranker de paire — calibrer l'usage.
+### Alternatives
 
-## Alternatives
+Aucun substitut direct dans le brain pour la late-interaction clé en main : RAGatouille est le
+wrapper de référence au-dessus de **colbert-ai**, la bibliothèque Stanford, plus bas niveau.
+Les deux voisinages sont ailleurs — le reranking classique par cross-encoder chez
+[[sentence-transformers]], la late-interaction à l'échelle chez [[Vespa]].
 
-Pas de substitut direct dans le brain pour la late-interaction « clé en main » : RAGatouille est le wrapper de référence au-dessus de **colbert-ai** (la lib Stanford, plus bas niveau). Pour le **reranking** classique par cross-encoder, voir [[sentence-transformers]] (catégorie `ml/framework`) ; pour exécuter la late-interaction **à l'échelle**, [[Vespa]] la supporte nativement.
+## Ressources
 
-## Liens
+- Documentation — https://github.com/AnswerDotAI/RAGatouille
+- Dépôt — https://github.com/AnswerDotAI/RAGatouille
 
-- Met en œuvre le concept [[Late-interaction retrieval]] (ColBERT, MaxSim, index PLAID).
-- [[Reranking]] · [[Recherche d'information]] — ses rôles dans le pipeline (retriever ou reclasseur).
-- [[RAG]] — contexte d'usage.
-- [[sentence-transformers]] — l'alternative mono-vecteur / cross-encoder.
-- [[Vespa]] — la late-interaction à l'échelle, en serving.
-- Doc : https://github.com/AnswerDotAI/RAGatouille
+## Voir aussi
+
+- [[Late-interaction retrieval]] — la notion qu'elle met en œuvre (ColBERT, MaxSim, index PLAID)
+- [[RAG]] — le contexte d'usage
+- [[Reranking]] · [[Recherche d'information]] — ses deux rôles possibles dans le pipeline
+- [[Comparatif - Frameworks LLM]] · [[Comparatif - NLP]] — les deux vues qui la comparent

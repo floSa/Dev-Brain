@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[LangChain SQL agent]]"]
-complements: []
+complements: ["[[LlamaIndex]]"]
 tags: [text-to-sql, llm, rag, retrieval]
 url_docs: https://developers.llamaindex.ai/python/examples/index_structs/struct_indices/sqlindexdemo/
 url_repo: https://github.com/run-llama/llama_index
@@ -17,40 +17,58 @@ url_repo: https://github.com/run-llama/llama_index
 
 # LlamaIndex NLSQLTableQueryEngine
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle.
 
-Sous-composant text-to-SQL de [[LlamaIndex]] — pas un produit dédié, un **query engine** intégré au framework. On lui passe un objet `SQLDatabase` (via SQLAlchemy) et des noms de tables ; il introspecte le schéma, fait générer le SQL par le LLM, l'exécute, puis **synthétise une réponse** en langage naturel à partir du résultat. Pour un schéma trop gros pour tenir dans le prompt, sa variante `SQLTableRetrieverQueryEngine` indexe les tables (ObjectIndex + embeddings) et **récupère d'abord les tables pertinentes** avant de générer. C'est le text-to-SQL « batteries incluses » de LlamaIndex, aligné sur son moteur d'indexation et de retrieval.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- LlamaIndex est **déjà le socle** de l'application (RAG documentaire, agents data) : on branche le SQL dans le même framework.
-- Gros schéma : la variante `SQLTableRetrieverQueryEngine` gère le cas où toutes les tables ne rentrent pas dans le prompt.
-- Besoin d'une **réponse en langage naturel** synthétisée (pas juste le tableau de résultats).
+Sous-composant text-to-SQL de [[LlamaIndex]] : pas un produit dédié, un **query engine**
+intégré au framework. On lui passe un objet `SQLDatabase` (via SQLAlchemy) et des noms de
+tables ; il introspecte le schéma, fait générer le SQL par le LLM, l'exécute, puis
+**synthétise une réponse en langage naturel** à partir du résultat — et non un simple tableau.
+Pour un schéma trop gros pour tenir dans le prompt, la variante
+`SQLTableRetrieverQueryEngine` indexe les tables (ObjectIndex et embeddings) et récupère
+d'abord les tables pertinentes avant de générer. C'est le text-to-SQL « batteries incluses »
+de LlamaIndex, aligné sur son moteur d'indexation et de retrieval.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Recherche d'un produit dédié avec UI et entraînement d'exemples clé en main → [[Vanna]] ou [[WrenAI]].
-- Stack déjà en LangChain → son [[LangChain SQL agent|SQL agent]], même logique dans l'autre écosystème.
-- Besoin d'une boucle agent riche (correction itérative, multi-outils) plus poussée que le query engine.
+| Prendre si | Écarter si |
+|---|---|
+| LlamaIndex est déjà le socle de l'application — RAG documentaire, agents data : on branche le SQL dans le même framework | Risque d'exécution : le query engine lance du SQL produit par le LLM — scoper les droits, borner les résultats |
+| Gros schéma : `SQLTableRetrieverQueryEngine` traite le cas où toutes les tables ne rentrent pas dans le prompt | Sur gros schéma sans la variante retriever, le prompt explose : il faut passer à `SQLTableRetrieverQueryEngine` |
+| Vouloir une réponse en langage naturel synthétisée, et pas seulement le tableau de résultats | Aucune couche sémantique métier : le moteur voit le schéma physique, et la qualité dépend des descriptions de tables et de colonnes fournies |
+| | C'est un query engine, pas une boucle d'agent : ni correction itérative, ni multi-outils |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : s'exécute dans l'application Python qui embarque LlamaIndex (MIT). Pas d'infra propre ; LLM au choix, dont local (Ollama). La variante retriever ajoute un magasin d'embeddings pour l'index des tables.
-- Compte base **lecture seule** requis (le moteur exécute le SQL généré).
+- Installation — aucune : le module s'exécute dans l'application Python qui embarque déjà LlamaIndex
+- Point d'entrée — un objet `SQLDatabase` et des noms de tables ; `SQLTableRetrieverQueryEngine` pour les gros schémas
+- Prérequis — un compte base **en lecture seule**, le moteur exécutant du SQL généré ; un LLM au choix, dont local via Ollama ; un magasin d'embeddings si l'on passe par la variante retriever
+- Exécution — mono-nœud, dans l'application hôte
+- Coût — gratuit sous MIT ; aucune infra propre au-delà de celle de LlamaIndex
 
-## Pièges
+## Écosystème
 
-- **Risque d'exécution** : le query engine lance du SQL produit par le LLM. Scoper les droits, borner les résultats.
-- Sur gros schéma sans la variante retriever, le prompt explose : passer à `SQLTableRetrieverQueryEngine`.
-- Pas de couche sémantique métier : le moteur voit le schéma physique. La qualité dépend des descriptions de tables/colonnes fournies.
-
-## Alternatives
+### Alternatives
 
 - [[LangChain SQL agent]] — Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle.
 
-## Liens
+### Compléments
 
-- [[LlamaIndex]] — framework parent dont ce module fait partie.
-- [[Text-to-SQL]] — concept : traduire une question en langage naturel en SQL exécutable.
-- [[Comparatif - Frameworks text-to-SQL]]
-- Docs : https://developers.llamaindex.ai/python/examples/index_structs/struct_indices/sqlindexdemo/
+- [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances. — le framework parent dont ce module fait partie : il ne s'utilise pas sans lui.
+
+## Ressources
+
+- Documentation — https://developers.llamaindex.ai/python/examples/index_structs/struct_indices/sqlindexdemo/
+- Dépôt — https://github.com/run-llama/llama_index
+
+## Voir aussi
+
+- [[Text-to-SQL]] — la notion du dossier
+- [[Comparatif - Frameworks text-to-SQL]] — ce qui départage les frameworks du dossier

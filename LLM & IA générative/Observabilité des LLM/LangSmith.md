@@ -19,44 +19,55 @@ url_repo:
 
 # LangSmith
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 
-Plateforme **propriétaire** (closed-source, SaaS) d'**observabilité, d'évaluation et de déploiement** d'agents LLM, éditée par **LangChain Inc.** Elle fournit traçage détaillé, dashboards de monitoring, jeux d'évaluations (datasets, LLM-as-judge, annotation) et déploiement d'agents. Bien que née dans l'écosystème [[LangChain]], elle est **framework-agnostique** : elle instrumente une app quel que soit son framework, et supporte **OpenTelemetry** (depuis 2026). C'est le produit « clé en main » de l'éditeur, le plus intégré avec LangChain / [[LangGraph]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme | propriétaire | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- App bâtie sur **LangChain / LangGraph** : intégration la plus serrée, traçage quasi sans configuration.
-- Vouloir un **produit managé** complet (observabilité + éval + déploiement) sans opérer d'infra.
-- Workflow d'**éval continue** (datasets, comparaisons, regression testing) couplé au monitoring de prod.
-- Contraintes de résidence des données → offre **self-host / BYOC** (entreprise).
+Plateforme d'observabilité, d'évaluation et de déploiement d'agents LLM éditée par LangChain
+Inc. : traçage détaillé, dashboards de monitoring, jeux d'évaluation (datasets, LLM-as-judge,
+annotation humaine) et déploiement d'agents dans un seul produit clé en main. Née dans
+l'écosystème [[LangChain]], elle est **framework-agnostique** — elle instrumente une app quel
+que soit son framework et accepte OpenTelemetry depuis 2026 — mais c'est avec LangChain et
+[[LangGraph]] que le traçage demande le moins de configuration. Le langage d'implémentation
+n'est pas divulgué.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Exigence d'**open-source auto-hébergeable** gratuit → [[Langfuse]] ou [[Phoenix Arize]].
-- Besoin seulement d'**éval offline** en bibliothèque/CI → [[Ragas]], [[DeepEval]].
-- Refus d'un **SaaS propriétaire** ou budget contraint (self-host réservé à l'entreprise).
+| Prendre si | Écarter si |
+|---|---|
+| App bâtie sur [[LangChain]] ou [[LangGraph]] : intégration la plus serrée, traçage quasi sans configuration | Besoin d'une éval offline en bibliothèque ou en CI, sans plateforme à opérer → [[Ragas]], [[DeepEval]] |
+| Vouloir un produit managé complet — observabilité, éval, déploiement — sans opérer d'infra | Self-host et BYOC réservés à l'offre entreprise : hors de ce contrat, seul le SaaS est accessible |
+| Workflow d'éval continue (datasets, comparaisons, tests de régression) couplé au monitoring de production | Code fermé : dépendance à l'éditeur, rien à auditer ni à forker |
+| Contrainte de résidence des données, couverte par l'offre self-host / BYOC entreprise | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Cloud managé** (smith.langchain.com) par défaut ; **self-host** et **BYOC** réservés à l'offre **entreprise** (contrat + Kubernetes) — d'où `hosted: both`, mais self-host inaccessible aux tiers Developer/Plus.
-- **Propriétaire**, payant par usage/siège ; pas de code source ouvert (langage d'implémentation non divulgué).
-- SSO, RBAC, audit logs et self-host **gated** derrière l'offre entreprise.
+- Installation — rien à installer sur le SaaS (`smith.langchain.com`) ; le self-host et le BYOC passent par un contrat entreprise et un cluster Kubernetes
+- Point d'entrée — SDK LangSmith, intégration native LangChain / LangGraph, ou ingestion OpenTelemetry
+- Prérequis — un compte ; Kubernetes uniquement pour le self-host entreprise
+- Exécution — cloud managé par défaut, self-hébergé ou BYOC en entreprise, architecture distribuée
+- Coût — payant à l'usage et au siège ; le volume de traces est facturé, prévoir l'échantillonnage ; SSO, RBAC et audit logs sont derrière l'offre entreprise
 
-## Pièges
+## Écosystème
 
-- **Propriétaire** : risque de verrouillage (lock-in) et dépendance à l'éditeur.
-- Self-host **non disponible** hors entreprise : les petites équipes restent sur le SaaS.
-- Le **volume de traces** facturé peut surprendre : échantillonner.
-
-## Alternatives
+### Alternatives
 
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
 - [[Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 - [[Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
-## Liens
+## Ressources
 
-- Produit de l'écosystème [[LangChain]] / [[LangGraph]] (mais framework-agnostique).
-- Concepts : [[LLM observability]], [[LLM eval metrics]].
-- [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
-- Doc : https://docs.langchain.com/langsmith
+- Documentation — https://docs.langchain.com/langsmith
+
+## Voir aussi
+
+- [[LLM observability]] — la notion du dossier
+- [[LLM eval metrics]] — ce que ses évaluations mesurent
+- [[Comparatif - Observabilité LLM]] — ce qui départage les plateformes du dossier

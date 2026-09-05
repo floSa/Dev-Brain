@@ -19,44 +19,56 @@ url_repo: https://github.com/Helicone/helicone
 
 # Helicone
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
-Plateforme d'**observabilité LLM** open-source (**Apache-2.0**, éditeur YC W23) dont la marque de fabrique est le **mode proxy / AI gateway** : on change l'URL de base du SDK et chaque requête transite par Helicone, qui logge requête/réponse, compte tokens et coûts, mesure la latence, puis applique cache, rate-limiting et métadonnées avant de relayer au fournisseur. Le tableau de bord (TypeScript) s'appuie sur une architecture **distribuée** (Cloudflare Workers, ClickHouse, Kafka) ; la passerelle elle-même est un binaire **Rust** séparé ([`Helicone/ai-gateway`](https://github.com/Helicone/ai-gateway)). **À savoir** : Helicone a été **racheté par Mintlify (annoncé le 3 mars 2026)** et est passé en **maintenance mode** — correctifs de sécurité et de bugs uniquement, plus de nouvelles intégrations ni de roadmap, et accompagnement des clients vers une migration.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Brancher de l'**observabilité LLM en une ligne** (changement d'URL), sans instrumenter le code.
-- Vouloir un **gateway** : cache de réponses, rate-limiting, routage et métadonnées en plus des logs/coûts.
-- **Self-host** rapide (un `docker compose`) pour garder les traces derrière son pare-feu.
-- Maintenir une **app déjà intégrée à Helicone** (le proxy et l'image Docker restent fonctionnels).
+Observabilité LLM en **mode proxy** : on change l'URL de base du SDK, chaque requête transite
+par Helicone, qui journalise requête et réponse, compte tokens et coûts, mesure la latence,
+puis applique cache, rate-limiting et métadonnées avant de relayer au fournisseur. C'est ce
+qui la sépare d'un traçage par SDK — rien à instrumenter, mais un intermédiaire de plus sur
+le chemin des appels. Le tableau de bord repose sur Cloudflare Workers, ClickHouse et Kafka ;
+la passerelle elle-même est un binaire Rust séparé, `Helicone/ai-gateway`. Éditeur YC W23,
+racheté par Mintlify le 3 mars 2026.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **Nouveau projet à horizon long** → éviter : projet en maintenance, sans roadmap, migration encouragée. Préférer [[Langfuse]] (OSS actif) ou [[Phoenix Arize]].
-- Besoin fort d'**évals, datasets et gestion de prompts** intégrés → [[Langfuse]], [[LangSmith]].
-- Refus de mettre un **proxy sur le chemin critique** des appels LLM (latence, point unique de défaillance) → traçage par SDK/OpenTelemetry ([[Phoenix Arize]]).
+| Prendre si | Écarter si |
+|---|---|
+| Brancher de l'observabilité LLM en une ligne — un changement d'URL, aucun code à instrumenter | Maintenance mode depuis le rachat Mintlify : correctifs de sécurité et de bugs seulement, plus de nouvelles intégrations ni de roadmap |
+| Vouloir une passerelle et pas seulement des logs : cache de réponses, rate-limiting, routage, métadonnées | Le proxy est sur le chemin critique des appels — latence ajoutée et dépendance ; le logging asynchrone existe mais couvre moins de fonctions |
+| Self-host rapide (un `docker compose`) pour garder les traces derrière son pare-feu | |
+| Maintenir une app déjà intégrée : le proxy et l'image Docker restent fonctionnels | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : déploiement Docker / Kubernetes ; architecture distribuée (Cloudflare Workers, ClickHouse, Kafka).
-- **Helicone Cloud** managé avec free-tier (`hosted: both`).
-- Code **Apache-2.0** gratuit ; le dépôt accepte encore les contributions malgré le mode maintenance.
+- Installation — `docker compose` en self-host, Docker ou Kubernetes en déploiement
+- Point d'entrée — l'URL de base du SDK ; la passerelle est un binaire Rust distinct (`Helicone/ai-gateway`)
+- Prérequis — architecture distribuée à opérer (Cloudflare Workers, ClickHouse, Kafka) ; le volume de logs commande le stockage, échantillonnage et rétention à régler
+- Exécution — self-hébergé, ou Helicone Cloud managé
+- Coût — code Apache-2.0 gratuit ; Helicone Cloud a un free-tier ; le dépôt accepte encore les contributions malgré le mode maintenance
 
-## Pièges
+## Écosystème
 
-- **Maintenance mode depuis le rachat Mintlify** : sécurité + bugfix seulement, aucune nouveauté — anticiper une migration pour tout projet durable.
-- **Mode proxy** = Helicone sur le chemin critique des appels (latence ajoutée, dépendance) ; le logging asynchrone existe mais couvre moins de fonctions.
-- Le **volume de logs** fait grimper le stockage : régler échantillonnage et rétention.
-
-## Alternatives
+### Alternatives
 
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
 - [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 - [[Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 
-## Liens
+## Ressources
 
-- Recoupe aussi la catégorie passerelle : [[LiteLLM]] (proxy multi-fournisseurs).
-- Concepts : [[LLM observability]].
-- [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
-- Doc : https://docs.helicone.ai/
+- Documentation — https://docs.helicone.ai/
+- Dépôt — https://github.com/Helicone/helicone
+
+## Voir aussi
+
+- [[LLM observability]] — la notion du dossier
+- [[LiteLLM]] — l'autre proxy du vault, côté passerelles multi-fournisseurs
+- [[Comparatif - Observabilité LLM]] — ce qui départage les plateformes du dossier

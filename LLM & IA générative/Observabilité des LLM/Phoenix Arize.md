@@ -19,45 +19,58 @@ url_repo: https://github.com/Arize-ai/phoenix
 
 # Phoenix Arize
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 
-Plateforme open-source d'**observabilité et d'évaluation** LLM/agents éditée par **Arize AI**, sous **Elastic License 2.0** (source-available : usage interne large, mais interdiction d'en faire un service managé concurrent). Son traçage est bâti sur **OpenTelemetry / OpenInference** : elle ingère des spans depuis [[LangChain]], [[LlamaIndex]], [[DSPy]], CrewAI, les SDK OpenAI/Anthropic/Bedrock… Elle ajoute des **évals par LLM** (réponse et retrieval), des **datasets** versionnés et des **expérimentations**. C'est la version OSS, auto-hébergeable, de la plateforme entreprise **Arize AX**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Python | source-available | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Standardiser sur OpenTelemetry** : instrumentation ouverte, portable, multi-framework.
-- Vouloir **observabilité + éval** dans un même outil open-source, auto-hébergeable simplement (un conteneur).
-- Tracer des stacks variés (LangChain, LlamaIndex, DSPy, agents) sans coupler à un éditeur de framework.
-- Démarrer gratuitement puis, au besoin, monter vers **Arize AX** (entreprise) sans tout réécrire.
+Plateforme d'observabilité et d'évaluation d'applications LLM et d'agents, éditée par Arize
+AI. Son traçage est bâti **nativement sur OpenTelemetry** et sur la convention OpenInference :
+elle ingère des spans venus de [[LangChain]], [[LlamaIndex]], [[DSPy]], CrewAI ou des SDK
+OpenAI, Anthropic et Bedrock, sans coupler l'instrumentation à un éditeur de framework. S'y
+ajoutent des évals par LLM (réponse et retrieval), des datasets versionnés et des
+expérimentations, et elle peut exécuter des évals de type [[Ragas]] sur les traces collectées.
+C'est la version auto-hébergeable de la plateforme entreprise **Arize AX** — deux produits
+distincts, aux périmètres et aux licences différents, à ne pas confondre.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Exigence d'**OSI open source** strict (procurement) : ELv2 est *source-available*, pas OSI → [[Langfuse]] (cœur MIT) convient mieux.
-- App **100 % LangChain** cherchant le produit le plus intégré et managé → [[LangSmith]].
-- Besoin uniquement d'**éval offline** en bibliothèque/CI → [[Ragas]], [[DeepEval]].
+| Prendre si | Écarter si |
+|---|---|
+| Standardiser l'instrumentation sur OpenTelemetry : portable, multi-framework, non couplée à un éditeur | Besoin d'une éval offline en bibliothèque ou en CI, sans plateforme à opérer → [[Ragas]], [[DeepEval]] |
+| Vouloir observabilité et éval dans un même outil auto-hébergeable, en un conteneur | Elastic License 2.0 : *source-available* et non OSI — usage interne large, mais revente en service managé interdite, et compatibilité juridique interne à vérifier |
+| Tracer des stacks variés — LangChain, LlamaIndex, DSPy, agents — sans réécrire l'instrumentation | |
+| Démarrer gratuitement puis monter vers Arize AX sans tout réécrire | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : un conteneur Docker `arizephoenix/phoenix` (backend SQLite ou Postgres), exécution typiquement mono-nœud (`single-node`).
-- Aussi en **cloud** (Phoenix Cloud) et adossé à **Arize AX** managé (`hosted: both`).
-- Gratuit, **Elastic License 2.0** : pas de frais de siège ni de plafond d'événements, mais revente en service managé interdite.
+- Installation — un conteneur Docker `arizephoenix/phoenix`
+- Point d'entrée — SDK Python, ingestion OpenTelemetry / OpenInference, interface web
+- Prérequis — SQLite pour démarrer, Postgres pour durer ; le volume de spans grossit vite, rétention et échantillonnage à régler
+- Exécution — self-hébergé, typiquement mono-nœud, ou Phoenix Cloud et Arize AX managés
+- Coût — gratuit : ni frais de siège ni plafond d'événements, mais la revente en service managé est interdite par l'Elastic License 2.0
 
-## Pièges
+## Écosystème
 
-- **ELv2 ≠ OSI** : *source-available* — vérifier la compatibilité avec les contraintes légales internes.
-- Ne pas confondre **Phoenix** (OSS) et **Arize AX** (plateforme entreprise) : périmètres et licences différents.
-- Le **volume de spans** OpenTelemetry grossit vite : régler rétention et échantillonnage.
-
-## Alternatives
+### Alternatives
 
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
 - [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 - [[Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
-## Liens
+## Ressources
 
-- Traçage **OpenTelemetry/OpenInference** depuis [[LangChain]], [[LlamaIndex]], [[DSPy]].
-- Peut exécuter des évals de type [[Ragas]] sur les traces ; complément de [[TruLens]].
-- Concepts : [[LLM observability]], [[LLM-as-judge]] (évals par LLM).
-- [[Comparatif - Observabilité LLM]] — comparatif de la catégorie
-- Doc : https://arize.com/docs/phoenix
+- Documentation — https://arize.com/docs/phoenix
+- Dépôt — https://github.com/Arize-ai/phoenix
+
+## Voir aussi
+
+- [[LLM observability]] — la notion du dossier
+- [[LLM-as-judge]] — le mécanisme de ses évals par LLM
+- [[TruLens]] — l'autre approche par instrumentation, en bibliothèque plutôt qu'en plateforme
+- [[Comparatif - Observabilité LLM]] — ce qui départage les plateformes du dossier
