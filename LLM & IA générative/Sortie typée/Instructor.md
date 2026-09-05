@@ -17,43 +17,55 @@ url_repo: https://github.com/567-labs/instructor
 
 # Instructor
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
 
-Bibliothèque **minimaliste** dédiée à une seule chose, bien faite : obtenir d'un LLM une **sortie structurée validée**. Créée par **Jason Liu**, elle **emballe le client du fournisseur** (OpenAI, Anthropic, Gemini, Ollama…) et ajoute un paramètre `response_model` prenant un modèle [[Pydantic]] ; la réponse est parsée, **validée**, et **re-demandée automatiquement** au LLM si la validation échoue (avec le message d'erreur en feedback). Pas de couche d'agent, pas d'orchestration : on garde son propre flux et on greffe l'extraction typée. Très diffusée (3M+ téléchargements/mois) et déclinée en plusieurs langages (TypeScript, Go, Ruby, PHP, Elixir). Licence **MIT**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Extraction** d'un objet typé à partir de texte/LLM (parsing de documents, classification, enrichissement) sans bâtir d'agent.
-- Ajouter des **sorties structurées fiables** à un code existant **sans changer de framework** (on garde son client).
-- Besoin de **re-tentatives sur validation** et de support **multi-fournisseurs** avec une API unique et fine.
+Bibliothèque minimaliste dédiée à une seule chose : obtenir d'un LLM une **sortie structurée
+validée**. Elle emballe le client du fournisseur — OpenAI, Anthropic, Gemini, Ollama et une
+quinzaine d'autres — et ajoute un paramètre `response_model` prenant un modèle [[Pydantic]] ;
+la réponse est parsée, validée, et **re-demandée automatiquement** au LLM si la validation
+échoue, avec le message d'erreur en retour. Ni couche d'agent ni orchestration : on garde son
+propre flux et l'on y greffe l'extraction typée. C'est ce qui la rend utilisable derrière une
+API fermée, là où le décodage contraint ne l'est pas. Créée par Jason Liu, très diffusée (plus
+de 3 M de téléchargements par mois) et déclinée en TypeScript, Go, Ruby, PHP et Elixir.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin d'un **agent complet** (boucle d'outils, état, dépendances) → [[PydanticAI]] (même esprit Pydantic, mais framework d'agents).
-- Application déjà bâtie sur un framework généraliste qui gère nativement le structured output → [[LangChain]].
+| Prendre si | Écarter si |
+|---|---|
+| Extraire un objet typé depuis du texte — parsing de documents, classification, enrichissement — sans bâtir d'agent | Les re-tentatives automatiques gonflent facture et latence quand le modèle peine à respecter le schéma : borner `max_retries` |
+| Ajouter des sorties structurées fiables à un code existant sans changer de framework, en gardant son client | La qualité du résultat dépend fortement de la clarté du schéma — les descriptions de champs font partie du prompt |
+| Vouloir des re-tentatives sur validation et un support multi-fournisseurs derrière une API unique et fine | Couvre l'extraction, pas l'orchestration : enchaîner des étapes demande une couche au-dessus |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Open-source (MIT), gratuit ; simple dépendance `pip`/`uv`, aucune infra.
-- Coût réel = appels **LLM** ; attention aux **re-tentatives** qui multiplient les appels en cas de schéma difficile à satisfaire.
-- Scaling = celui de l'application hôte (single-node).
+- Installation — `uv add instructor`
+- Point d'entrée — on emballe le client du fournisseur et l'on passe un `response_model` [[Pydantic]]
+- Prérequis — un client de fournisseur existant ; aucune infra à prévoir
+- Exécution — mono-nœud, dans l'application hôte
+- Coût — gratuit sous MIT ; le coût réel est celui des appels LLM, que les re-tentatives multiplient sur un schéma difficile à satisfaire
 
-## Pièges
+## Écosystème
 
-- Les **re-tentatives automatiques** peuvent gonfler la facture et la latence si le modèle peine à respecter le schéma — borner `max_retries`.
-- Qualité du résultat très dépendante de la **clarté du schéma** (descriptions de champs = partie du prompt).
-- Couvre l'**extraction**, pas l'orchestration : pour enchaîner des étapes, il faut une couche au-dessus.
-
-## Alternatives
+### Alternatives
 
 - [[PydanticAI]] — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
 
-## Liens
+## Ressources
 
-- Repose sur [[Pydantic]] pour la définition et la validation des schémas.
-- Met en œuvre le concept [[Structured outputs]] (le patron des sorties structurées).
-- À opposer au [[Constrained decoding|décodage contraint]] ([[Outlines]], [[Guidance]]) : Instructor **demande + valide + retente** (tout fournisseur, API fermée OK) ; eux **contraignent le décodage** (validité garantie, modèle sous contrôle).
-- Sert de [[Guardrails|garde-fou de sortie]] : la validation de schéma + retry est un garde-fou applicatif.
-- Couple **sorties structurées** avec [[PydanticAI]] : Instructor = bibliothèque focalisée extraction ; PydanticAI = framework d'agents complet.
-- [[Comparatif - Frameworks LLM]] — comparatif de la catégorie
-- Doc : https://python.useinstructor.com/
+- Documentation — https://python.useinstructor.com/
+- Dépôt — https://github.com/567-labs/instructor
+
+## Voir aussi
+
+- [[Structured outputs]] — le patron qu'elle met en œuvre
+- [[Constrained decoding]] — l'approche opposée, celle d'[[Outlines]] et de [[Guidance]] : eux contraignent le décodage, elle demande, valide et retente
+- [[Guardrails]] — validation de schéma et retry font un garde-fou applicatif de sortie
+- [[Comparatif - Frameworks LLM]] — ce qui départage les frameworks du domaine
