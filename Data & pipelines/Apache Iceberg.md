@@ -17,45 +17,57 @@ url_repo: https://github.com/apache/iceberg
 
 # Apache Iceberg
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).
 
-Apache Iceberg est un **format de table ouvert** (pas un format de fichier) : il ajoute une **sémantique de table** au-dessus de fichiers de données posés sur stockage objet. Les données vivent en **[[Parquet]]** (ou ORC / [[Avro]]) ; une arborescence de métadonnées (snapshots, listes de manifests en Avro) décrit l'état de la table. On obtient des **transactions ACID** par isolation de snapshots, le **time travel**, l'**évolution de schéma**, le **partitionnement caché** et l'**évolution de partitionnement**. Indépendant du moteur : lu et écrit par Spark, Trino, [[Flink]], Dremio, DuckDB, Snowflake, Databricks. Né chez Netflix, projet Apache de premier rang ; Databricks a racheté Tabular (fondé par les créateurs d'Iceberg) en 2024.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Spécification Java | open-source | rien à exécuter | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Tables analytiques sur data lake exigeant ACID, écrivains concurrents, time travel.
-- Évolution de **schéma** et de **partitionnement** sans réécrire ni casser l'historique.
-- Accès **multi-moteurs** au même jeu de données, sans verrouillage propriétaire.
-- Remplacement des tables Hive vieillissantes.
+Format de **table** ouvert, et non format de fichier : il pose une sémantique de table
+au-dessus de fichiers déposés sur stockage objet. Les données vivent en Parquet, ORC ou
+Avro ; à côté, une arborescence de métadonnées — snapshots, listes de manifests — décrit
+l'état de la table à un instant donné. De cette indirection viennent les transactions ACID
+par isolation de snapshots, le time travel, l'évolution de schéma, le partitionnement caché
+et l'évolution de partitionnement. Iceberg n'exécute rien lui-même : il lui faut un moteur
+pour lire ou écrire, et un catalogue pour suivre les métadonnées. Né chez Netflix ;
+Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Un simple fichier sans besoin de sémantique de table → [[Parquet]] seul.
-- Upserts / CDC intensifs sur clés primaires en flux → Apache Hudi peut mieux convenir.
-- Maison 100 % Databricks/Spark déjà sur Delta Lake → Delta Lake.
-- Transactionnel ligne à ligne (OLTP) → base relationnelle ([[Postgres]]).
+| Prendre si | Écarter si |
+|---|---|
+| Tables analytiques sur data lake exigeant ACID, écrivains concurrents et time travel | Un simple fichier, sans besoin de sémantique de table → [[Parquet]] seul |
+| Faire évoluer schéma **et** partitionnement sans réécrire ni casser l'historique | Upserts et CDC intensifs sur clés primaires en flux : Apache Hudi, hors brain, est taillé pour ça |
+| Donner accès au même jeu de données à plusieurs moteurs, sans verrouillage propriétaire | Maison déjà 100 % Databricks / Spark sur Delta Lake : le format de table y est en place |
+| Remplacer des tables Hive vieillissantes | Transactionnel ligne à ligne, OLTP → [[Postgres]] |
+| | Le catalogue est une dépendance dure et un point de migration ; la promesse « ouvert » suppose des catalogues interopérables, et en pratique il peut lier à un fournisseur |
+| | Snapshots et petits fichiers s'accumulent : compaction et expiration des snapshots sont une maintenance obligatoire, pas une option |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Spécification + bibliothèques (cœur Java, PyIceberg, Rust, Go). Gratuit (Apache-2.0).
-- Dépend d'un **catalogue** qui suit les métadonnées : REST catalog, AWS Glue, Hive Metastore, Nessie, Polaris.
-- Données sur S3 / MinIO / HDFS ; catalogues managés via AWS Glue, Snowflake, Databricks.
-- N'est **pas un moteur** : nécessite Spark / Trino / Flink / DuckDB pour requêter.
+- Installation — bibliothèques par langage : cœur Java, PyIceberg, Rust, Go
+- Point d'entrée — aucune API propre : un moteur ([[Spark]], Trino, [[Flink]], [[DuckDB]]) lit et écrit les tables
+- Prérequis — un catalogue qui suit les métadonnées (REST catalog, AWS Glue, Hive Metastore, Nessie, Polaris) et un stockage objet (S3, MinIO, HDFS) ; vérifier quelle version de spec (v1 / v2 / v3) le moteur retenu supporte
+- Exécution — rien à exécuter en propre : le calcul est celui du moteur, le stockage celui de l'objet
+- Coût — gratuit, Apache-2.0 ; les catalogues managés (AWS Glue, Snowflake, Databricks) sont facturés
 
-## Pièges
+## Écosystème
 
-- Le catalogue est une **dépendance dure** et un point de migration ; le choisir tôt.
-- Snapshots et petits fichiers s'accumulent → maintenance obligatoire (compaction, expiration des snapshots).
-- Versions de spec (v1 / v2 / v3) et support moteur **variables** — vérifier la compatibilité.
-- La promesse « ouvert » suppose des catalogues interopérables ; en pratique le catalogue peut lier à un fournisseur.
+### Alternatives
 
-## Alternatives
+- Aucun autre format de table dans le brain. Concurrents directs hors brain : **Delta Lake** (écosystème Databricks / Spark) et **Apache Hudi** (orienté upserts et CDC en flux).
 
-- Pas encore d'autre format de table en brain. Concurrents directs hors brain : **Delta Lake** (écosystème Databricks / Spark) et **Apache Hudi** (orienté upserts et CDC en flux).
+## Ressources
 
-## Liens
+- Documentation — https://iceberg.apache.org/docs/latest/
+- Dépôt — https://github.com/apache/iceberg
 
-- [[Parquet]] — format des fichiers de données sous-jacents.
-- [[Avro]] — format des fichiers de métadonnées (manifests).
-- [[Flink]] — moteur de flux capable d'écrire des tables Iceberg.
-- Doc : https://iceberg.apache.org/docs/latest/
+## Voir aussi
+
+- [[Partitionnement & layout de données]] — le partitionnement caché et la compaction que ce format automatise
+- [[Architecture médaillon]] — le cadre où ces tables s'empilent en bronze / silver / gold
+- [[Avro]] — le format des fichiers de métadonnées (manifests)
