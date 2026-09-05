@@ -17,40 +17,59 @@ url_repo: https://github.com/mindee/doctr
 
 # docTR
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.
 
-Bibliothèque d'**[[OCR]]** (Document Text Recognition) de Mindee, intégrée à l'écosystème [[PyTorch]] (backend TensorFlow aussi disponible). Implémente le pipeline OCR **en deux étages** prêt à l'emploi : **détection de texte** (DBNet, LinkNet — localiser les mots) puis **reconnaissance** (CRNN, SAR, ViTSTR — lire les caractères), le tout avec **modèles pré-entraînés**. Une fonction (`ocr_predictor`) enchaîne les deux et restitue le texte **avec sa position** et la structure (pages, blocs, lignes, mots). C'est l'OCR open-source clé en main pour numériser des documents, sans assembler soi-même détection et reconnaissance.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Extraire le **texte de documents** (PDF, scans, photos) avec sa **position** et sa structure.
-- OCR **open-source hors ligne**, sans API cloud ni coût à la page.
-- Besoin de choisir le **backend** (PyTorch ou TensorFlow) ou de **fine-tuner** détection/reconnaissance sur son corpus.
-- Brique d'un pipeline RAG/extraction documentaire : OCR → texte → indexation.
+Bibliothèque d'OCR de Mindee qui implémente le pipeline **en deux étages**, prêt à l'emploi :
+**détection de texte** — DBNet, LinkNet — pour localiser les mots, puis **reconnaissance** —
+CRNN, SAR, ViTSTR — pour lire les caractères, avec des modèles pré-entraînés de chaque côté.
+Une seule fonction, `ocr_predictor`, enchaîne les deux et restitue le texte **avec sa
+position** et sa structure : pages, blocs, lignes, mots. Le backend se choisit explicitement à
+l'installation, PyTorch ou TensorFlow, et les deux étages se fine-tunent sur un corpus propre.
+Elle s'arrête à la lecture : l'extraction métier — champs, tableaux structurés — n'est pas
+dans son périmètre.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Texte de **scène** très varié / multilingue (panneaux, devantures) ou manuscrit difficile → moteurs spécialisés (PaddleOCR, EasyOCR, TrOCR — voir [[OCR]]).
-- **Compréhension** de document de bout en bout (questions/réponses, extraction sémantique) → un [[Vision Language Models|modèle vision-langage]].
-- Simple lecture ponctuelle sans déploiement → un moteur léger type Tesseract (voir [[OCR]]).
+| Prendre si | Écarter si |
+|---|---|
+| Extraire le texte de documents — PDF, scans, photos — avec sa position et sa structure | Ordre de lecture non garanti en mise en page complexe (multi-colonnes, tableaux) : la reconstruction de structure reste un post-traitement |
+| OCR open-source hors ligne, sans API cloud ni coût à la page | Ne couvre pas l'extraction métier — champs, tableaux structurés — qui est le périmètre payant de Mindee |
+| Choisir le backend, PyTorch ou TensorFlow, ou fine-tuner détection et reconnaissance sur son corpus | Texte de scène très varié, multilingue ou manuscrit difficile : les moteurs spécialisés valent mieux, voir [[OCR]] |
+| Brique d'un pipeline RAG ou d'extraction documentaire : OCR, puis texte, puis indexation | Compréhension de document de bout en bout — questions-réponses, extraction sémantique → [[Vision Language Models]] |
+| | Le choix du backend est explicite à l'installation : se tromper d'extra casse l'import des modèles |
+| | Qualité d'entrée déterminante : résolution, contraste, redressement — un document penché ou bruité dégrade la détection |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque Python open-source sous **Apache-2.0** (permissive), gratuite ; `uv add python-doctr` (import `doctr`). Rien à héberger.
-- **Backend au choix** : installer la variante PyTorch ou TensorFlow ; modèles pré-entraînés téléchargés au premier usage.
-- S'exécute CPU ou GPU ; single-node. Service d'inférence possible (API maison, ou via les produits Mindee pour l'extraction structurée).
+- Installation — `uv add python-doctr` avec l'extra du backend voulu ; import `doctr`
+- Point d'entrée — `ocr_predictor`, qui enchaîne détection et reconnaissance
+- Prérequis — PyTorch ou TensorFlow selon l'extra choisi ; modèles pré-entraînés téléchargés au premier usage
+- Exécution — CPU ou GPU, mono-nœud, rien à héberger
+- Coût — gratuit, Apache-2.0 ; l'extraction structurée est le périmètre payant de Mindee
 
-## Pièges
+## Écosystème
 
-- **Choix du backend explicite** à l'installation (extra PyTorch vs TensorFlow) — se tromper d'extra casse l'import des modèles.
-- Qualité d'entrée déterminante : résolution, contraste, redressement ; documents penchés ou bruités dégradent la détection.
-- **Ordre de lecture** en mise en page complexe (multi-colonnes, tableaux) non garanti — la [[OCR|reconstruction de structure]] reste un post-traitement.
-- Couvre détection + reconnaissance, pas l'**extraction métier** (champs, tableaux structurés) — c'est le périmètre payant de Mindee.
+### Alternatives
 
-## Liens
+- Aucune dans le brain : les moteurs OCR concurrents — PaddleOCR, EasyOCR, TrOCR, Tesseract — sont hors périmètre.
 
-- [[OCR]] — le concept : deux étages (détection puis reconnaissance), CTC vs attention, CER/WER, panorama des moteurs.
-- [[Détection d'objets]] / [[Segmentation]] — l'étage de détection de texte en est une variante spécialisée.
-- [[Vision Language Models]] — l'alternative lecture-compréhension de bout en bout.
-- [[PyTorch]] — l'écosystème d'intégration.
-- Doc : https://mindee.github.io/doctr/
+## Ressources
+
+- Documentation — https://mindee.github.io/doctr/
+- Dépôt — https://github.com/mindee/doctr
+
+## Voir aussi
+
+- [[Parsing]] — le hub du dossier
+- [[OCR]] — la notion : deux étages, CTC contre attention, CER/WER, panorama des moteurs
+- [[Détection d'objets]] · [[Segmentation]] — l'étage de détection de texte en est une variante spécialisée
+- [[PyTorch]] — l'écosystème d'intégration
+- [[Comparatif - Parsing de documents]] — ce qui départage les outils du dossier

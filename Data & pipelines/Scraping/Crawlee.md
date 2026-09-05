@@ -29,8 +29,8 @@ url_repo: https://github.com/apify/crawlee
 
 Framework de crawling d'**Apify**. Son idée centrale est l'**API unifiée** entre les crawlers
 HTTP (Cheerio, BeautifulSoup, Parsel) et les crawlers **navigateur** (Playwright, Puppeteer) :
-on change de moteur sans réécrire la logique d'extraction. Il embarque ce qu'un crawler de
-production finit toujours par redévelopper — rotation de proxys, anti-fingerprint,
+on change de moteur sans réécrire la logique d'extraction. Il embarque ce qu'un crawler finit
+toujours par redévelopper une fois en exploitation — rotation de proxys, anti-fingerprint,
 autoscaling selon les ressources de la machine, file d'URLs persistante pour reprendre après
 un crash, retries et stockage de datasets. Historiquement Node.js / TypeScript ; le port
 Python (`crawlee-python`) est stable depuis la v1.0, en septembre 2025. Positionné

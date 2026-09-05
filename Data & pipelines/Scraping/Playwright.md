@@ -33,7 +33,7 @@ seule façon de voir le HTML d'une page rendue côté client. Les attentes sont 
 l'API patientant jusqu'à ce qu'un élément soit prêt, ce qui supprime les `sleep` fragiles.
 L'**état de session** (cookies, localStorage) se sauvegarde par `storage_state` et se rejoue,
 ou se conserve dans un contexte persistant : on se connecte une fois, on réutilise ensuite.
-Signé Microsoft ; le paquet Python pilote un driver Node sous le capot. Le même outil sert de
+Signé Microsoft ; la bibliothèque Python pilote un driver Node sous le capot. Le même outil sert de
 framework de tests E2E.
 
 ## Prendre si / Écarter si
