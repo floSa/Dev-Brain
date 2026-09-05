@@ -33,7 +33,7 @@ design produit. Édition temps réel multi-utilisateurs dans le navigateur, syst
 composants et de variables pour tenir un design system, prototypes interactifs cliquables,
 et un **dev mode** qui expose mesures, tokens et bouts de code aux développeurs. L'écosystème
 de plugins est le plus riche du domaine. La contrepartie tient en une phrase : le service est
-un **cloud propriétaire sans self-host**, les fichiers sont chez l'éditeur, et le format
+un **cloud fermé, sans self-host**, les fichiers sont chez l'éditeur, et le format
 n'est pas ouvert.
 
 ## Prendre si / Écarter si
