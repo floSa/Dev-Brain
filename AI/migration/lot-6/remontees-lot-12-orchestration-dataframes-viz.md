@@ -175,8 +175,8 @@ ou casser le validateur. La règle 2 l'emporte, comme le brief le prévoit.
   tiret cadratin. Contrairement aux sept `famille: application` du pilote, les 16 fiches
   d'ici portent un frontmatter complet — `maturite:` compris. L'hypothèse du pilote (le
   champ manquerait surtout à la famille `application`) n'est ni confirmée ni infirmée : ce
-  périmètre n'a aucune `application`, il est fait de 13 `paquet` et 3… en réalité 6
-  `plateforme` et 10 `paquet`.
+  périmètre n'a aucune `application` : il est fait de 6 `plateforme` (les six
+  orchestrateurs) et de 10 `paquet` (DataFrames et Visualisation).
 
 ## 11. Écart des avertissements sur MA branche — 149 -> 133
 
