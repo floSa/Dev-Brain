@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[numpy]]"]
-complements: []
+complements: ["[[Dask]]"]
 tags: [array, out-of-core]
 url_docs: https://docs.xarray.dev/
 url_repo: https://github.com/pydata/xarray
@@ -17,45 +17,60 @@ url_repo: https://github.com/pydata/xarray
 
 # xarray
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
 
-Apporte les **étiquettes** aux tableaux N-dimensionnels. Là où un `ndarray` [[numpy]] s'indexe par position (`a[3, :, 0]`), xarray nomme les **dimensions**, attache des **coordonnées** et des **attributs** : on écrit `da.sel(time="2024-01", lat=48.5)`. Deux structures : `DataArray` (un tableau étiqueté) et `Dataset` (plusieurs variables partageant des axes). C'est, pour les données **multidimensionnelles**, ce que [[pandas]] est aux tables 2D — d'ailleurs largement inspiré de lui. Lecture/écriture native NetCDF et Zarr ; standard de fait en sciences du climat, océan, géospatial et imagerie. Apache 2.0, projet NumFOCUS.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Données **N-D avec axes nommés** : grilles spatio-temporelles, raster multi-bandes, sorties de simulation.
-- Sélection et alignement par étiquette plutôt que par position (`.sel`, `.resample`, `groupby` sur coordonnées).
-- Lire/écrire NetCDF, Zarr, GRIB ; manipuler des cubes climat/géo sans réinventer l'indexation.
-- Passer à l'**out-of-core** : `chunks=...` délègue le calcul à [[Dask]] sur des données plus grosses que la RAM.
+Apporte les **étiquettes** aux tableaux N-dimensionnels. Là où un `ndarray` [[numpy]]
+s'indexe par position, xarray nomme les **dimensions**, attache des **coordonnées** et des
+**attributs** : on écrit `da.sel(time="2024-01", lat=48.5)`. Deux structures : le
+`DataArray`, un tableau étiqueté, et le `Dataset`, plusieurs variables partageant des axes.
+Lecture et écriture natives NetCDF et Zarr en font le standard de fait en climat, océan,
+géospatial et imagerie. Le prix de la surcouche est double : un peu d'overhead et une
+courbe d'apprentissage (dimensions, coordonnées et index ne sont pas la même chose), et
+surtout un **alignement automatique par coordonnées** qui fabrique des `NaN` en silence dès
+que deux axes ne coïncident pas exactement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Calcul numérique pur sans besoin d'étiquettes → [[numpy]] directement (moins de surcouche).
-- Données **tabulaires 2D** hétérogènes → [[pandas]] ou [[Polars]].
-- Pipeline orienté performance pure sur colonnes → [[Polars]] ; xarray privilégie l'expressivité scientifique.
-- Petits tableaux où la machinerie de coordonnées ajoute plus de friction que de valeur.
+| Prendre si | Écarter si |
+|---|---|
+| Données N-D à axes nommés : grilles spatio-temporelles, raster multi-bandes, sorties de simulation | L'alignement automatique par coordonnées produit des `NaN` **sans rien signaler** quand les axes divergent |
+| Sélection et alignement par étiquette plutôt que par position (`.sel`, `.resample`, `groupby` sur coordonnées) | Petits tableaux : la machinerie de coordonnées ajoute plus de friction qu'elle n'apporte |
+| Lire et écrire NetCDF, Zarr ou GRIB sans réinventer l'indexation de cubes | Les performances dépendent du backend d'I/O choisi et du découpage en chunks — ce n'est pas un réglage neutre |
+| Passer à l'out-of-core en activant les chunks, sans changer de bibliothèque | Toutes les opérations ne se vectorisent pas proprement : certaines retombent sur des boucles coûteuses |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add xarray`) ; backends optionnels (`netCDF4`, `zarr`, `dask`). Apache 2.0, gratuit.
-- **Single-node** en mémoire par défaut ; **out-of-core / parallèle** dès qu'on active les chunks Dask.
-- Empreinte mémoire et performance héritées de numpy (cœur) et du backend d'I/O choisi.
+- Installation — `uv add xarray` ; extras `netCDF4`, `zarr`, `dask` selon les besoins
+- Point d'entrée — import Python, `import xarray as xr` ; `open_dataset` pour lire un fichier
+- Prérequis — Python ; numpy comme socle, un backend d'I/O pour chaque format visé
+- Exécution — dans le process appelant, mono-nœud et en mémoire par défaut ; out-of-core et parallèle dès que les chunks sont activés
+- Coût — gratuit, licence Apache 2.0, projet NumFOCUS
 
-## Pièges
+## Écosystème
 
-- Surcouche d'étiquettes : un peu d'overhead et une courbe d'apprentissage (dims vs coords vs index).
-- L'alignement automatique par coordonnées peut produire silencieusement des `NaN` si les axes ne coïncident pas.
-- Les performances dépendent du backend (NetCDF vs Zarr) et du découpage en chunks pour Dask.
-- Tout n'est pas vectorisable proprement : certaines opérations retombent sur des boucles coûteuses.
-
-## Alternatives
+### Alternatives
 
 - [[numpy]] — Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
 
-## Liens
+### Compléments
 
-- Socle numérique : [[numpy]] — xarray étiquette ses `ndarray`.
-- À l'échelle / hors RAM : [[Dask]] — backend de calcul paresseux via les chunks.
-- Parent tabulaire : [[pandas]] — même philosophie d'étiquetage, en 2D.
-- [[Comparatif - Manipulation de données]] — xarray vs numpy / pandas.
-- Doc : https://docs.xarray.dev/
+- [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster. — `chunks=...` lui délègue le calcul, c'est la voie documentée pour dépasser la RAM.
+
+## Ressources
+
+- Documentation — https://docs.xarray.dev/
+- Dépôt — https://github.com/pydata/xarray
+
+## Voir aussi
+
+- [[DataFrames]] — le hub du dossier
+- [[pandas]] — le parent tabulaire : même philosophie d'étiquetage, en deux dimensions
+- [[Comparatif - Manipulation de données]] — ce qui départage les outils du dossier
