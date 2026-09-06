@@ -17,43 +17,56 @@ url_repo: https://github.com/plotly/dash
 
 # Dash
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 
-Framework de **dashboards et apps analytiques** édité par **Plotly**. On déclare une arborescence de composants (`dash.html`, `dash.dcc`) et on relie entrées et sorties par des **callbacks** : un décorateur `@callback(Output, Input, State)` recalcule seulement ce qui dépend de l'élément modifié — pas de re-run global du script. Bâti sur **Flask** (serveur) + **React** (composants) + **Plotly.js** (graphes). Licence **MIT**. Modèle plus verbeux que Streamlit mais qui passe à l'échelle des apps multi-pages structurées.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Dashboard analytique riche : pages multiples, filtres croisés, interactions fines entre composants.
-- App data destinée à durer, avec une vraie séparation layout / logique (callbacks).
-- Visualisation interactive poussée (on est dans l'écosystème [[plotly]]).
+Framework de dashboards et d'apps analytiques édité par **Plotly**. On déclare une arborescence
+de composants (`dash.html`, `dash.dcc`), puis on relie entrées et sorties par des **callbacks** :
+un décorateur `@callback(Output, Input, State)` ne recalcule que ce qui dépend de l'élément
+modifié. Il n'y a donc pas de re-run global, mais un graphe de dépendances que l'auteur écrit
+lui-même, explicitement — c'est le compromis central de l'outil, plus de code en échange d'un
+recalcul ciblé et d'apps multi-pages qui tiennent dans la durée. La pile est Flask pour le
+serveur, React pour les composants, Plotly.js pour les graphes.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Prototype rapide / script analytique à exposer vite → [[Streamlit]] (moins de code).
-- Préférence pour un modèle réactif fin sans écrire de callbacks explicites → [[Shiny for Python]].
-- Simple démo entrée→sortie d'un modèle ML → [[Gradio]].
+| Prendre si | Écarter si |
+|---|---|
+| Dashboard analytique riche : pages multiples, filtres croisés, interactions fines entre composants | Verbosité : layout et callbacks demandent plus de code que la concurrence pour un résultat simple |
+| App data destinée à durer, avec une vraie séparation entre layout et logique | Le graphe de callbacks se complique vite — dépendances circulaires et `prevent_initial_call` à surveiller |
+| Visualisation interactive poussée, dans l'écosystème Plotly | L'état se partage par `dcc.Store` ou par un cache, **jamais par des globales** : le multi-worker ne pardonne pas |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite. App Flask/WSGI : servie par Gunicorn, conteneurisable.
-- Managé : **Dash Enterprise** (offre commerciale Plotly — déploiement, auth, workspaces). Pas de cloud gratuit officiel type Community Cloud.
-- Serveur **sans état applicatif** côté callbacks → **scaling horizontal** classique (plusieurs workers/instances derrière un load balancer).
+- Installation — `uv add dash`
+- Point d'entrée — import Python ; l'objet obtenu est une application Flask/WSGI
+- Prérequis — un script Python ; les graphes passent par Plotly.js, embarqué
+- Exécution — servie par Gunicorn ou en conteneur ; les callbacks étant sans état applicatif, le scaling horizontal est classique — plusieurs workers ou instances derrière un load balancer
+- Coût — gratuit, MIT. **Dash Enterprise** est l'offre commerciale de Plotly (déploiement, auth, workspaces) ; il n'existe pas de cloud gratuit officiel de type Community Cloud
 
-## Pièges
+## Écosystème
 
-- Verbosité : layout + callbacks demandent plus de code que Streamlit pour un résultat simple.
-- Graphe de callbacks vite complexe ; circular dependencies et `prevent_initial_call` à surveiller.
-- Partage d'état entre callbacks : passer par `dcc.Store` ou un cache, pas par des globales (multi-worker).
-
-## Alternatives
+### Alternatives
 
 - [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
 - [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 - [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Apps data & démos ML]] — Dash vs Streamlit / Shiny / Gradio.
-- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Gradio.
-- [[plotly]] — moteur de rendu des graphes Dash (même éditeur).
-- Doc : https://dash.plotly.com
+- Documentation — https://dash.plotly.com
+- Dépôt — https://github.com/plotly/dash
+
+## Voir aussi
+
+- [[Interfaces & apps data]] — le hub du domaine
+- [[Comparatif - Apps data & démos ML]] — ce qui départage les quatre frameworks du dossier
+- [[Comparatif - Frontends web légers]] — le même choix élargi à l'option à la main, FastAPI + HTMX
+- [[plotly]] — le moteur de rendu des graphes, du même éditeur
