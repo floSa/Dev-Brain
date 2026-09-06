@@ -89,10 +89,17 @@ reste de la politique git n'est écrit qu'**ici**.
 Dans cet ordre, l'index d'abord : les deux suivants le consomment.
 
 ```bash
-uv run AI/scripts/build_index.py   # brain-index.json + brain-index.md
-uv run AI/scripts/build_mocs.py    # zones AUTO des hubs de l'arbre + Métiers/
-uv run AI/scripts/build_links.py   # carte des liens (AI/index/liens.md)
+uv run AI/scripts/build_index.py     # brain-index.json + brain-index.md
+uv run AI/scripts/build_mocs.py      # zones AUTO des hubs de l'arbre + Métiers/
+uv run AI/scripts/build_bandeau.py   # zones AUTO:BANDEAU des pages, depuis le frontmatter
+uv run AI/scripts/build_links.py     # carte des liens (AI/index/liens.md)
 ```
+
+`build_bandeau.py` est entré dans cette liste au **lot 8**, et son absence était un trou :
+la règle 9 du §10 — « le bandeau concorde avec le frontmatter » — était déclarée durcissable
+et n'était exécutée par rien à la clôture. Un `licence_type:` modifié laissait le bandeau
+périmé sans qu'aucune étape ne le dise. Le bandeau est une zone générée, exactement comme la
+zone AUTO d'un hub : on le régénère, et la règle devient vraie par construction.
 
 `build_mocs.py` ne remplit plus de dossier `MOC/` — il n'en existe plus depuis la clôture du
 lot 4. Il écrit la zone `<!-- AUTO -->` de chaque page `role: hub` de l'arbre et les 6 hubs de
@@ -105,8 +112,9 @@ stade est un lien mort que l'étape 2 va confirmer.
 ### 2. Valider — les DEUX validateurs, et corriger jusqu'au vert
 
 ```bash
-uv run AI/scripts/check_brain.py   # le contenu : frontmatter, enums, réciprocité, pitchs, liens
-uv run AI/scripts/check_arbo.py    # la structure : chemin ↔ categorie, seuil, un hub par dossier
+uv run AI/scripts/check_brain.py            # le contenu : frontmatter, enums, réciprocité, pitchs, liens
+uv run AI/scripts/check_arbo.py             # la structure : chemin ↔ categorie, seuil, un hub par dossier
+uv run AI/scripts/build_bandeau.py --check  # les bandeaux : concordance avec le frontmatter (sort 2 sinon)
 ```
 
 Ils ne contrôlent pas la même chose et **aucun ne remplace l'autre**. `check_brain` valide ce
@@ -127,8 +135,17 @@ et le comparer après est le seul moyen de voir qu'une écriture a créé une de
 uv run AI/scripts/check_brain.py 2>&1 | tail -1   # « OK — aucune violation dure. (N avertissement(s)) »
 ```
 
-Fin d'étape vérifiable : `OK — aucune violation dure` **et** `OK — chemin et catégorie
-concordent partout`, avec un code de retour 0 pour les deux.
+Fin d'étape vérifiable : `OK — aucune violation dure`, `OK — chemin et catégorie
+concordent partout` **et** `OK — tous les bandeaux concordent avec leur frontmatter`, avec un
+code de retour 0 pour les trois.
+
+> **Les dix règles du §10 sont dures depuis le lot 8**, à trois exceptions écrites : la
+> règle 4 (voisinage déclaré, R20) reste un avertissement par conception ; la moitié
+> `Ressources` de la règle 7 (R23) attend un arbitrage de vocabulaire ; la règle 10 (R26)
+> n'est pas scriptable. Les motifs sont dans le code, à côté de chaque règle, et les mesures
+> dans `AI/migration/lot-8-durcissement.md`. Une violation dure nouvelle sous R15, R18, R19,
+> R21, R23 ou R24 n'est donc pas un faux positif à contourner : c'est une écriture
+> incomplète.
 
 ### 3. Vérifier que la base n'a pas divergé — avant tout commit
 
