@@ -9,8 +9,8 @@ tags: [meta, mode-brain]
 # CLAUDE-build.md — Mode brain du DevBrain
 
 Tu es en mode **BRAIN** : on enrichit le brain. Lecture/écriture légitime sur **l'arbre des
-20 domaines** à la racine, `Métiers/`, `Patterns/`, `Rules/`, `Templates/`, `Documentation/`
-et `AI/`. Suis ces conventions strictement.
+20 domaines** à la racine, `Métiers/`, `Patterns/`, `Rules/`, `Comparatifs/`, `Templates/`,
+`Documentation/` et `AI/`. Suis ces conventions strictement.
 
 Spec de référence : `AI/design/brain-v3.md` (ce que la v2 a établi et qui reste vrai :
 `AI/design/brain-v2.md`).
@@ -21,7 +21,7 @@ Spec de référence : `AI/design/brain-v3.md` (ce que la v2 a établi et qui res
 > est la mémoire perso de floSa : la **créer** dans une capture est normal, la **réécrire**
 > demande son accord (cf. `CLAUDE.md`).
 
-> **Les zones `<!-- AUTO -->` des hubs, `Métiers/` et `AI/index/` sont
+> **Les zones `<!-- AUTO -->` des hubs, `Métiers/`, `Comparatifs/` et `AI/index/` sont
 > générées.** Ne pas les éditer à la main : `cloturer-brain` les régénère et écraserait la
 > modification. Le **corps** d'un hub, hors zone AUTO, s'écrit à la main — et ne se répare
 > donc pas tout seul.
@@ -56,8 +56,8 @@ Anthropic strict — pas de champ `role:`.
 | **`notion`** | ce qu'il faut comprendre : définitions, maths, mécanismes | `<Dossier>/<Nom>.md`, dérivé de `categorie:` — **le même dossier qu'une brique** | à la main, création libre / modification sur accord |
 | **`pattern`** | une architecture éprouvée | `Patterns/Pattern - <nom>.md` | à la main |
 | **`rule`** | une règle transverse | `Rules/Rule - <nom>.md` | à la main |
-| **`hub`** | la page d'un dossier, l'aiguillage | `<Dossier>/<Dossier>.md` + les 6 de `Métiers/` | corps à la main, **zone AUTO générée** |
-| **`comparatif`** | ce qui départage plusieurs briques | `<Dossier>/Comparatif - <thème>.md`, **plus** le `.base` à côté, que la page embarque | corps à la main |
+| **`hub`** | la page d'un dossier, l'aiguillage | `<Dossier>/<Dossier>.md` + les 6 de `Métiers/` + `Comparatifs/Comparatifs.md` | corps à la main, **zone AUTO générée** |
+| **`comparatif`** | ce qui départage plusieurs briques | `<Dossier>/Comparatif - <thème>.md`, **plus** le `.base` à côté, que la page embarque | corps à la main, **plus le `## Voir aussi` vers `[[Comparatifs]]`** |
 
 `role: hub`, `pattern` et `rule` ne portent **pas** de `categorie:`, et c'est délibéré : un hub
 *est* le rangement (son domaine est son chemin), un pattern enjambe plusieurs domaines par
@@ -239,7 +239,9 @@ configuration Docker, WSL2 et le runtime GPU sont nommés) :
 ## Conventions Comparatifs (`.base`)
 
 Un comparatif vit **dans le dossier de ses membres** : `<Dossier>/Comparatif - <thème>.base`.
-C'est ce qui le rend trouvable par `ls`, et c'est la ligne P3 de la règle de propagation.
+C'est ce qui le rend trouvable par `ls`, et c'est la ligne P3 de la règle de propagation. Il
+n'en bouge pas, y compris pour rejoindre le hub qui les réunit : `Comparatifs/` ne porte que
+sa page, et la page du comparatif la cite dans un `## Voir aussi`.
 
 ```yaml
 filters:
@@ -295,7 +297,8 @@ Exceptions → Voir aussi.
 
 ## Conventions Hubs (`role: hub`)
 
-Tout dossier de l'arbre porte une page à son nom, plus les 5 de `Métiers/`.
+Tout dossier de l'arbre porte une page à son nom, plus les 6 de `Métiers/` et celle de
+`Comparatifs/`.
 
 ```yaml
 ---
@@ -313,6 +316,13 @@ Corps : `## Ce qu'il faut comprendre` et `## Choisir`, **écrits à la main**, p
 `<!-- AUTO:START -->` / `<!-- AUTO:END -->`, **générée** par `build_mocs.py` depuis le
 contenu du dossier. Le budget d'écriture d'un hub suit les **confusions à lever**, pas le
 nombre de pages.
+
+**Deux hubs ne lisent pas un dossier**, et `build_mocs.py` leur donne à chacun sa boucle :
+les 6 de `Métiers/`, dont le périmètre est le champ `domaines:`, et `Comparatifs/Comparatifs.md`,
+dont le périmètre est `role: comparatif`. Ce dernier ne porte **aucune** page à côté de lui :
+les 47 comparatifs restent dans le dossier des briques qu'ils départagent, et le citent en
+retour dans leur `## Voir aussi`. C'est ce lien retour qui les rassemble dans le graphe — le
+hub seul ne ferait qu'un nœud de plus.
 
 ## Conventions `role: notion`
 

@@ -45,6 +45,11 @@ n'a **ni frontmatter ni corps**, donc ni couleur ni lien sortant. Les 47 compara
 membres : le nœud rouge est **relié** au bleu de chaque brique qu'il départage, dans les deux
 sens.
 
+> **La couleur rend visible ; elle ne rassemble pas.** Reliés à leurs seuls membres, les 47
+> nœuds rouges restaient dispersés dans les treize grappes de domaine — on les repérait un par
+> un, on ne les voyait jamais ensemble. C'est ce qu'a corrigé le hub [[Comparatifs]] : il les
+> cite tous, chacun le cite en retour, et la grappe existe. Voir §2.
+
 Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 
 ```json
@@ -93,6 +98,25 @@ Les pages hub sont générées par `AI/scripts/build_mocs.py` sur 2 étages — 
 - **les hubs de l'arbre** — un par dossier de domaine et de sous-domaine (`Bases de données`, `Machine Learning`…), zone `AUTO` remplie depuis le contenu du dossier. Ils ont remplacé `MOC/Categories/`, vide depuis le lot 3.
 
 Résultat : `Data Science` → `Machine Learning` → `Non supervisé` → feuilles. On descend par étages au lieu de noyer l'écran. Il ne reste que **deux** étages depuis le 2026-09-05 — `Métiers/` et les hubs de l'arbre — et c'est l'état visé : le troisième n'existait que parce que les notions vivaient dans une galaxie séparée.
+
+### Les deux hubs qui ne sont pas un étage
+
+Deux pages `role: hub` ne descendent de rien et ne mènent à rien de plus bas : elles
+**traversent** l'arbre au lieu de l'ordonner. Ce ne sont pas des étages de navigation, mais
+des grappes de graphe, et c'est leur seule raison d'être.
+
+- **`Métiers/`** est le premier, par son champ `domaines:` — il est aussi le premier étage
+  ci-dessus, parce qu'il pointe vers les sous-hubs et non vers les feuilles.
+- **`Comparatifs/`** est le second, né le 2026-09-06, et son périmètre est un **rôle**. Le
+  dossier ne porte que sa page : les 47 comparatifs restent dans le dossier des briques
+  qu'ils départagent — c'est ce qui les rend trouvables par `ls`, et la règle de propagation
+  en dépend. Le hub cite les 47 ; les 47 le citent en retour, dans leur section
+  `## Voir aussi`. **C'est le lien retour qui fait la grappe** : sans lui, le hub serait un
+  nœud qui pointe et vers lequel personne ne pointe — la dispersion des rouges resterait
+  entière, avec une page de plus.
+
+Ces deux-là n'ont pas de zone AUTO remplie par `zone_hub()`, qui lit un **dossier** : chacun
+a sa boucle dans `build_mocs.py`.
 
 ## 3. Se balader en profondeur (graphe local)
 

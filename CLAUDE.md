@@ -26,7 +26,10 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > comparatifs, les 5 patterns et les 5 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
-> `role:` groupe et qu'aucune `categorie:` ne range. Ce qui suit décrit l'état réel.
+> `role:` groupe et qu'aucune `categorie:` ne range — plus « Comparatifs/ » depuis le
+> 2026-09-06, qui ne porte **que son hub** : les 47 comparatifs, eux, restent rangés par
+> leur `categorie:`, dans le dossier des briques qu'ils départagent. Ce qui suit décrit
+> l'état réel.
 >
 > **Plus rien n'est ouvert : la migration v3 est CLOSE depuis le 2026-09-06.** Les 337 fiches
 > sont au nouveau gabarit (lot 6), les 47 comparatifs sont des pages `role: comparatif` à côté
@@ -79,7 +82,7 @@ wiki", il annonce simplement qu'il vient travailler ses notions : applique la fr
 
 ## Ce que tu peux faire ici par défaut
 
-- Lire/explorer la structure du vault (l'arbre des domaines, `Métiers/`, `Patterns/`, `Rules/`, `Documentation/`)
+- Lire/explorer la structure du vault (l'arbre des domaines, `Métiers/`, `Patterns/`, `Rules/`, `Comparatifs/`, `Documentation/`)
 - Répondre à des questions générales sur le contenu
 - Suggérer des fiches manquantes
 - Auditer la cohérence (frontmatter, taxonomie — cf. `Documentation/general/taxonomie.md`)
@@ -202,6 +205,12 @@ Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role:
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
+Comparatifs/                 ← Comparatifs.md (hub) et RIEN d'autre : les 47 pages
+                               `role: comparatif` restent dans le dossier des briques
+                               qu'elles départagent. Ce hub les réunit, il ne les range
+                               pas — zone AUTO générée depuis `role:`, lien retour dans
+                               le `## Voir aussi` de chaque comparatif
+
 Documentation/               ← gouvernance (tags, taxonomie, thèmes, conventions perso)
 ├── general/                  (réutilisable : tags.md, taxonomie.md, themes.md, questions-projet.md)
 └── perso/                    (conventions.md, archetypes.md, machines.md, obsidian-graph.md, reservoir-v1.md)
@@ -228,9 +237,9 @@ AI/                          ← TON espace agent
 ```
 
 **Frontières fermes** — la première se lit sur un **chemin**, la seconde sur un **champ** :
-- **L'arbre des domaines**, `Patterns/`, `Rules/` → modifiables en mode brain seulement (selon `CLAUDE-build.md`). Depuis un projet, **aucune écriture**.
+- **L'arbre des domaines**, `Patterns/`, `Rules/`, `Comparatifs/` → modifiables en mode brain seulement (selon `CLAUDE-build.md`). Depuis un projet, **aucune écriture**.
 - **Les pages `role: notion`** → création libre en mode brain ; **modification d'une notion existante sur demande explicite** (cf. section dédiée). **Aucun dossier ne les rassemble** : elles sont dispersées dans l'arbre, mêlées aux briques. Cette frontière ne se déduit donc jamais d'un chemin — elle se lit dans le frontmatter, page par page, avant d'écrire.
-- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
+- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `Comparatifs/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
 - `AI/` (hors index/) → ton espace, tu peux y écrire librement.
 - `Documentation/` → modifiable en mode brain, toujours avec prudence (c'est la gouvernance du brain).
 - `Inbox.md` → modifiable dans les deux modes (écriture par l'utilisateur seulement)
@@ -244,7 +253,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 |------|--------|
 | Brique (`role: brique`) | `<Dossier>/<Nom>.md` |
 | Hub (`role: hub`) | `<Dossier>/<Dossier>.md` — la page porte le nom de son dossier |
-| Comparatif (`role: comparatif`) | `<Dossier>/Comparatif - <thème>.md`, **plus** `<Dossier>/Comparatif - <thème>.base` à côté — la page embarque la vue par `![[Comparatif - <thème>.base]]`. Le dossier se dérive de la `categorie:` de la page, celle qui rassemble le plus de ses membres |
+| Comparatif (`role: comparatif`) | `<Dossier>/Comparatif - <thème>.md`, **plus** `<Dossier>/Comparatif - <thème>.base` à côté — la page embarque la vue par `![[Comparatif - <thème>.base]]`. Le dossier se dérive de la `categorie:` de la page, celle qui rassemble le plus de ses membres. La page se clôt par un `## Voir aussi` citant `[[Comparatifs]]` : c'est ce lien retour, et lui seul, qui donne aux 47 une grappe dans le graphe |
 | Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
 | Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
 | Notion (`role: notion`) | `<Dossier>/<Nom>.md` — **exactement** comme une brique : même dossier, même dérivation. Seul `role:` les distingue |

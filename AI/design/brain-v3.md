@@ -113,13 +113,23 @@ SecondBrain/
 │
 ├── Métiers/             5 hubs transverses, indexés par `domaines:`
 ├── Patterns/            1 hub + 5 pages, indexés par `role: pattern`
-└── Rules/               1 hub + 5 pages, indexés par `role: rule`
+├── Rules/               1 hub + 5 pages, indexés par `role: rule`
+└── Comparatifs/         1 hub SEUL, indexant les 47 `role: comparatif` de l'arbre
 ```
 
-Les trois derniers dossiers ne sont pas des domaines : rien ne s'y dérive d'une
+Les trois premiers de ces dossiers ne sont pas des domaines : rien ne s'y dérive d'une
 `categorie:`, et c'est pourquoi ils sont à la racine plutôt que dans l'arbre. Ils sont
 la seule exception à la règle 4, et elle est fermée — `check_arbo.py` compte leurs pages
 à part (`arbo.ROLES_SANS_CATEGORIE`).
+
+Le quatrième, « Comparatifs/ », né le 2026-09-06, n'est pas une exception à la règle 4 :
+il ne porte **aucune page à ranger**. Les 47 comparatifs gardent leur `categorie:` et le
+dossier qu'elle dérive — celui des briques qu'ils départagent, ce dont la ligne P3 de §10
+dépend. Ce dossier ne porte que son hub, dont le périmètre est un `role:` et non un
+dossier, comme celui de « Métiers/ » est un champ. Le motif est le graphe, et lui seul :
+relié à ses seuls membres, un comparatif restait dispersé dans la grappe de son domaine —
+la couleur rouge du lot 5 les rendait visibles un par un, elle ne les rassemblait pas.
+Cf. `Documentation/perso/obsidian-graph.md` §2.
 
 > Cet arbre décrivait l'état visé **après le lot 4**, pas après le lot 3 : au lot 3,
 > `Bases de données vectorielles.md` était une notion rangée par la galaxie wiki et non
@@ -332,7 +342,17 @@ lot 5, le 2026-09-06** :
 - [[Qdrant]] — filtrage payload appliqué pendant la recherche, pas après
 - [[Weaviate]] — l'embedding est délégué à la base
 - [[pgvector]] — le bon choix si du Postgres est déjà en place
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
 ```
+
+**La section `## Voir aussi` est arrivée le 2026-09-06, et elle n'est pas décorative.**
+Elle porte l'unique lien retour vers le hub `Comparatifs/`. Sans elle, le hub cite les 47
+et aucun ne le cite : un nœud qui pointe et vers lequel personne ne pointe ne fait pas une
+grappe — il ajoute une page à un graphe qui reste dispersé. C'est le lien retour qui crée
+la galaxie, pas la liste.
 
 Le `.base` reste, comme moteur de tableau, rangé à côté. La page porte le `role:`, la couleur,
 les liens sortants et donc les backlinks. ~~Neuf comparatifs ne filtrent pas sur `categorie:` :

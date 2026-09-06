@@ -41,7 +41,7 @@ Qdrant dans `Bases de données/Vectoriel/` détermine, sans rien deviner :
 |---|---|---|---|
 | **P1** | Le hub du dossier — `Vectoriel/Vectoriel.md` | c'est le dossier d'accueil | **généré** (zone AUTO) + corps à relire |
 | **P2** | Les hubs parents — `Bases de données/Bases de données.md` | remontée de chemin | **généré** (zone AUTO) + corps à relire |
-| **P3** | Le comparatif du dossier — la **page** `role: comparatif`, et le `.base` qu'elle embarque | `ls "<dossier>"/'Comparatif - '*` — les deux fichiers portent le même nom | vue : **automatique** (le `.base` filtre par `categorie`) ; puce de « Ce qui départage » dans la **page** : **à écrire** |
+| **P3** | Le comparatif du dossier — la **page** `role: comparatif`, et le `.base` qu'elle embarque | `ls "<dossier>"/'Comparatif - '*` — les deux fichiers portent le même nom | vue : **automatique** (le `.base` filtre par `categorie`) ; puce de « Ce qui départage » dans la **page** : **à écrire**. Si le comparatif est **créé**, il a un consommateur de plus : le hub `Comparatifs/Comparatifs.md` — zone AUTO **générée**, et son `## Voir aussi` **à écrire** |
 | **P4** | La notion du sujet | le `role: notion` du sujet (cf. *L'exception notion*) | **à écrire**, dans les deux sens |
 | **P5** | Les briques pairs — les autres `role: brique` du dossier | `ls <dossier>/*.md` | **à écrire**, réciprocité obligatoire |
 | **P6** | Les pitchs réinjectés chez les pairs | `alternatives:` / `complements:` des pairs | **à écrire**, pitch copié jamais retapé — vérifié par `[V1]` |
@@ -242,7 +242,25 @@ ne l'est pas : proposer, et attendre.
        `[[<thème>.base]]` serait une régression (lot 5, remontée 2).
 
      Aucun comparatif dans le dossier et ≥ 2 briques de la catégorie → en proposer un, page
-     **et** `.base` (`check_brain` le réclame déjà en `[WARN] R8a`).
+     **et** `.base` (`check_brain` le réclame déjà en `[WARN] R8a`). **Un comparatif créé a un
+     consommateur que le dossier ne rend pas** — le seul de toute la table : le hub
+     `Comparatifs/Comparatifs.md`, qui réunit les 47 et n'est dans le rayon d'aucune
+     insertion, puisqu'il vit à la racine.
+
+     - **Le hub — généré.** Sa zone AUTO se remplit depuis `role: comparatif` : `cloturer-brain`
+       la régénère, rien à écrire à la main. Une liste tenue à la main mentirait dès ce
+       comparatif-ci.
+     - **Le lien retour — à écrire, et c'est lui qui compte.** La nouvelle page se clôt par :
+
+       ```markdown
+       ## Voir aussi
+
+       - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
+       ```
+
+       Sans lui, le hub cite le nouveau comparatif et le nouveau comparatif ne cite personne :
+       il reste un nœud rouge isolé dans la grappe de son domaine, exactement l'état que le
+       hub a corrigé le 2026-09-06. C'est le **lien retour** qui fait la galaxie, pas la liste.
    - **P4 — la notion.** La brique cite sa notion dans `## Liens` ; la notion cite la brique
      dans `## Approches voisines`. Les **deux** sens, sinon `check_brain` sort `[WARN] R15`.
      Notion absente → la créer (c'est une capture, pas une incursion). Notion existante à
@@ -268,7 +286,7 @@ ne l'est pas : proposer, et attendre.
    |---|---|
    | Fichier du dossier **touché** | normal, il est dans le rayon |
    | Fichier du dossier **non touché** | **déclarer pourquoi** (« pas une alternative de X »). Le silence n'est pas une réponse |
-   | Fichier touché **hors du dossier** | légitime pour P2 (hubs parents) et P4 (notion) ; **suspect** partout ailleurs — l'expliquer ou le défaire |
+   | Fichier touché **hors du dossier** | légitime pour P2 (hubs parents), P4 (notion) et, si un comparatif a été **créé**, `Comparatifs/Comparatifs.md` (P3) ; **suspect** partout ailleurs — l'expliquer ou le défaire |
 
    Un écart se **signale**, il ne se tait pas. C'est la sortie attendue de ce skill, pas une
    formalité : la v2 échouait précisément parce que cette confrontation n'existait pas.
