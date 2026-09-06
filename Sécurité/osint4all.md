@@ -19,46 +19,56 @@ url_repo: https://github.com/osint4all/osint4all.github.io
 
 # osint4all
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.
 
-**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un outil exécutable. C'est un **annuaire de liens** — un unique `README.md` de quelque 3 000 lignes, servi en page GitHub Pages via Jekyll. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre, et cela ne se lit pas comme une brique choisissable. Son `categorie: security/osint` porte le **sujet listé**, pas sa nature. L'autre annuaire du vault suit la même règle — [[public-apis]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Annuaire | open-source | rien à exécuter | deprecated |
+<!-- AUTO:BANDEAU:END -->
 
-Cela posé, ce que c'est : le portage GitHub d'une page `start.me` (celle nommée « osint4all » dans la description du dépôt), sous licence CC0-1.0 — domaine public. De l'ordre de **78 rubriques** et **1 400 liens** : contacts jetables, générateurs d'identité, bacs à sable, récupération de hash, services de confidentialité et communication sécurisée, renseignement sur les menaces, résolution d'identité, recherche par personne / pseudonyme / courriel / téléphone, plateforme par plateforme pour les réseaux sociaux, moteurs et *dorking*, images et médias, plaques et véhicules, suivi aérien et maritime, WHOIS et DNS, malware, IoT, radio, immobilier, jeux de données, guides.
+## Définition
 
-Il faut être franc sur la taille du projet : de l'ordre de **95 étoiles**, huit commits, et **aucune mise à jour depuis le 9 juillet 2022**. Ce n'est pas une référence de premier plan, c'est une liste correcte et modeste. La page `start.me` d'origine n'a pas pu être consultée pour vérifier si la source, elle, vit encore.
+Ni un logiciel, ni un service, ni un outil exécutable : un **annuaire de liens**, un
+unique `README.md` d'environ 3 000 lignes servi en page GitHub Pages via Jekyll. Rien ne
+s'installe, rien ne se déploie, il n'y a pas de version à suivre. C'est le portage d'une
+page `start.me` sous CC0-1.0 — domaine public — rassemblant de l'ordre de **78 rubriques**
+et **1 400 liens** : contacts jetables, générateurs d'identité, bacs à sable, récupération
+de hash, confidentialité et communication sécurisée, renseignement sur les menaces,
+résolution d'identité, recherche par personne, pseudonyme, courriel ou téléphone, réseaux
+sociaux plateforme par plateforme, moteurs et *dorking*, images et médias, plaques et
+véhicules, suivi aérien et maritime, WHOIS et DNS, malware, IoT, radio, immobilier, jeux
+de données, guides. Sa `categorie:` porte le **sujet listé**, pas la nature de la page.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Chercher le nom d'un service spécialisé pour une tâche de reconnaissance précise, avant de savoir lequel existe.
-- Se faire une carte du domaine OSINT en une lecture, par rubrique.
-- Trouver des utilitaires périphériques et durables : adresse jetable, bac à sable, dépôt de fichier temporaire, générateur de données de test.
+| Prendre si | Écarter si |
+|---|---|
+| Chercher le nom d'un service spécialisé pour une tâche de reconnaissance précise, avant même de savoir lequel existe | Comme outil : il n'y en a pas un seul ici, uniquement des adresses vers des outils tiers → [[Web-Check]], qui s'exécute |
+| Se faire une carte du domaine OSINT en une lecture, rubrique par rubrique | Comme source à jour : huit commits, rien depuis le 9 juillet 2022, sur un terrain où les services ferment vite — une part des liens est morte ou a changé de mains, et rien n'indique la fraîcheur entrée par entrée |
+| Trouver des utilitaires périphériques et durables : adresse jetable, bac à sable, dépôt de fichier temporaire, générateur de données de test | Comme garantie de qualité : aucune curation vérifiable, aucune note ; plusieurs rubriques pointent vers des services commerciaux de recherche de personnes, et vers des services tiers non audités auxquels on confierait un fichier ou une empreinte |
+| | Comme référence dans un livrable client : ni citable, ni pérenne |
+| | Sans avoir qualifié le cadre légal : une bonne part des liens porte sur des données personnelles, dont la consultation et la conservation relèvent du RGPD et du droit national quelle que soit la disponibilité publique de la donnée — la rubrique de récupération de hash ne s'utilise que sur ses propres empreintes, et avec autorisation |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Comme outil : il n'y en a pas un seul ici, seulement des adresses vers des outils tiers.
-- Comme source à jour : quatre ans sans commit sur un domaine où les services ferment vite, une part significative des liens est morte ou a changé de mains.
-- Comme garantie de qualité : aucune curation vérifiable, aucune note sur les services listés — plusieurs rubriques pointent vers des services commerciaux de recherche de personnes, à traiter avec la prudence qui s'impose.
-- Comme référence dans un livrable client : ni citable, ni pérenne.
+- Installation — aucune : une page GitHub, lisible en ligne ou clonée
+- Point d'entrée — le `README.md` du dépôt, rendu sur `osint4all.github.io` par Jekyll
+- Prérequis — un navigateur ; ni langage applicatif, ni plateforme, ni dépendance
+- Exécution — rien ne s'exécute ici : la page se lit, et tout ce qu'elle liste tourne chez des tiers
+- Coût — gratuit, CC0-1.0, domaine public ; les services listés ont chacun leur propre modèle
 
-## Installation & plateformes
+## Écosystème
 
-Aucune installation : une page GitHub, lisible en ligne ou clonée. Pas de langage applicatif, pas de plateforme, pas de dépendance.
+### Alternatives
 
-## Pièges
+- *Aucune : un annuaire de liens n'a pas d'équivalent fiché au brain, et les outils de reconnaissance n'en sont pas des substituts. Hors brain, les références vivantes du domaine sont l'OSINT Framework et les listes `awesome-osint`.*
 
-- **Le cadre légal est à la charge de l'utilisateur.** Une bonne partie des liens portent sur des données personnelles ; leur consultation et leur conservation relèvent du RGPD et du droit national, quelle que soit la disponibilité publique de la donnée.
-- Liens vers des services tiers non audités : y déposer un fichier, une adresse ou une empreinte de mot de passe revient à la confier à un inconnu.
-- La rubrique de récupération de hash n'est pas un outil d'administration : usage sur ses propres empreintes uniquement, et avec autorisation.
-- Aucune indication de fraîcheur par entrée : impossible de savoir quel lien a été vérifié et quand.
-- **Un seul tag du vocabulaire fermé s'applique honnêtement** (`osint`) ; il désigne le sujet, pas la nature de la page. Aucun tag ne dit « annuaire de ressources ».
-- `status: abandonne` porte sur le dépôt, pas sur la valeur résiduelle de la liste — la nuance ne se lit pas dans le champ.
+## Ressources
 
-## Alternatives
+- Dépôt — https://github.com/osint4all/osint4all.github.io
 
-Aucune. Un annuaire de liens n'a pas d'équivalent fiché dans le brain, et les outils de reconnaissance n'en sont pas des substituts. Hors brain, la référence vivante du domaine est l'OSINT Framework, et les listes `awesome-osint`.
+## Voir aussi
 
-## Liens
-
-- [[public-apis]] — l'autre annuaire du vault, même problème de rangement, même avertissement
-- [[Web-Check]] — un outil de reconnaissance réel, à opposer à cette page : l'un s'exécute, l'autre se lit
-- Repo : https://github.com/osint4all/osint4all.github.io
+- [[Sécurité]] — le hub du domaine
+- [[public-apis]] — l'autre annuaire du vault : même problème de rangement, même avertissement

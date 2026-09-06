@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-complements: []
+complements: ["[[Loki]]"]
 tags: [observability, metrics, dashboard, dataviz]
 url_docs: https://grafana.com/docs/grafana/latest/
 url_repo: https://github.com/grafana/grafana
@@ -19,39 +19,59 @@ url_repo: https://github.com/grafana/grafana
 
 # Grafana
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
 
-Plateforme de **dashboards et d'observabilité** open-source éditée par Grafana Labs, sous **AGPL-3.0-only** (relicenciée depuis Apache 2.0 en 2021). Backend en **Go**, front en React/TypeScript. Sa force est d'être **composable** : elle ne stocke pas les données mais se connecte à 150+ **sources** (Prometheus, [[Loki]], [[InfluxDB]], [[Elasticsearch]], [[Postgres]]…) pour visualiser **métriques, logs et traces** au même endroit, avec exploration ad hoc et **alerting** intégré.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Go | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- **Dashboards unifiés** au-dessus de plusieurs sources hétérogènes (métriques + logs + traces).
-- Visualiser des métriques **Prometheus** ou des logs **Loki** (LogQL) avec alerting.
-- Centraliser la supervision d'une infra / d'une stack data sur un outil ouvert et auto-hébergeable.
+Plateforme de dashboards et d'observabilité éditée par Grafana Labs, backend en Go et
+front en React/TypeScript. Sa particularité est de **ne rien stocker** : elle se branche
+sur plus de 150 sources — Prometheus, Loki, InfluxDB, Elasticsearch, Postgres — et met
+métriques, logs et traces sur les mêmes tableaux de bord, avec exploration ad hoc et
+alerting intégré. Cette composabilité est aussi sa contrainte : la source de données est
+un composant à choisir, à déployer et à exploiter séparément, et Grafana ne dispense
+d'aucun de ces trois travaux. Le projet est passé d'Apache 2.0 à AGPL-3.0-only en 2021,
+un copyleft **réseau** dont les obligations se déclenchent à l'exposition, pas à la
+distribution.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Pour **stocker** les métriques : Grafana ne stocke rien — il faut une base derrière (Prometheus/Mimir, [[InfluxDB]]).
-- Pour une simple **app data interactive** en Python (formulaires, ML demo) → [[Streamlit]], [[Dash]] : autre usage que la supervision.
+| Prendre si | Écarter si |
+|---|---|
+| Tableaux de bord unifiés au-dessus de plusieurs sources hétérogènes — métriques, logs, traces | Stocker les métriques : Grafana ne stocke rien, il faut une base derrière (Prometheus, Mimir, [[InfluxDB]]) et l'opérer |
+| Visualiser des métriques Prometheus ou des logs LogQL, avec alerting sur les mêmes requêtes | Simple application data interactive en Python — formulaires, démo de modèle → [[Streamlit]], [[Dash]] |
+| Corréler une métrique et un log dans le même écran, sans changer d'outil | Intégrer et exposer Grafana dans un produit : l'AGPL-3.0 est un copyleft réseau, à faire qualifier avant de s'engager |
+| Centraliser la supervision d'une infra ou d'une stack data sur un outil ouvert et auto-hébergeable | Reporting planifié ou RBAC fin attendus d'emblée : ces fonctions sont réservées à l'édition Enterprise |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : binaire Go unique ou Docker ; haute disponibilité possible avec base partagée (plusieurs instances derrière un load-balancer), d'où `distributed`.
-- **Grafana Cloud** managé (bundle Mimir/Loki/Tempo/Pyroscope).
-- **AGPLv3** gratuit ; édition **Enterprise** (binaire propriétaire) débloque reporting, RBAC fin et plugins commerciaux sous clé.
+- Installation — binaire Go unique, image Docker ou paquet système ; Grafana Cloud pour l'offre managée
+- Point d'entrée — application web sur le port 3000 par défaut ; sources et dashboards provisionnables par fichiers YAML
+- Prérequis — au moins une source de données exploitée à part (Prometheus ou Mimir, Loki, InfluxDB) ; base SQLite embarquée, ou Postgres/MySQL partagée dès qu'on veut plusieurs instances
+- Exécution — auto-hébergé ou managé ; haute disponibilité par plusieurs instances derrière un répartiteur, sur base partagée
+- Coût — cœur AGPL-3.0-only gratuit ; édition Enterprise commerciale (reporting, RBAC fin, plugins sous clé) ; Grafana Cloud facturé à l'usage
 
-## Pièges
+## Écosystème
 
-- Grafana **ne stocke pas les données** : prévoir et opérer la source (TSDB, Loki…).
-- **AGPLv3** : copyleft réseau — vérifier les implications si Grafana est intégré et exposé dans un produit.
-- **OSS vs Enterprise** : certaines fonctions (reporting, RBAC avancé) sont réservées à l'édition payante.
+### Alternatives
 
-## Alternatives
+- *Aucune alternative déclarée : la catégorie `observability/supervision` n'a pas encore de second outil de visualisation fiché.*
 
-- _Pas encore d'alternative équivalente fichée dans le brain (catégorie naissante)._ Grafana se couple à [[Loki]] (logs) et aux sources de métriques, plutôt qu'il ne les remplace.
+### Compléments
 
-## Liens
+- [[Loki]] — Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana. — même éditeur, LogQL exploré depuis les mêmes tableaux de bord que les métriques
 
-- [[Loki]] — agrégation de logs du même éditeur, source naturelle visualisée dans Grafana.
-- Sources fréquentes : Prometheus, [[InfluxDB]], [[Elasticsearch]], [[Postgres]].
-- Doc : https://grafana.com/docs/grafana/latest/
+## Ressources
+
+- Documentation — https://grafana.com/docs/grafana/latest/
+- Dépôt — https://github.com/grafana/grafana
+
+## Voir aussi
+
+- [[Observabilité]] — le hub du domaine
+- [[Beszel]] — l'échelon en dessous : l'état des hôtes sans pile à opérer

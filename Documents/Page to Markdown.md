@@ -18,52 +18,58 @@ url_repo:
 
 # Page to Markdown
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.
 
-Geste à l'unité : une page de documentation lue dans le navigateur, un thread, un article — récupérés en Markdown structuré en deux clics, pour les coller dans un prompt, une note Obsidian ou une doc de projet. Le copier-coller brut d'un navigateur perd la hiérarchie de titres, casse les blocs de code et embarque la navigation du site ; c'est ce trou que l'extension comble.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Extension | propriétaire | dans le moteur hôte, rien à héberger | — |
+<!-- AUTO:BANDEAU:END -->
 
-L'éditeur (StarterBuild) annonce trois modes : page nettoyée (la navigation et l'habillage sont retirés), page complète, et sélection seule — accessible aussi par le menu contextuel. La conversion préserve titres, liens, images, listes, citations, tableaux, blocs de code délimités et blocs dépliants (`details`). Sortie au choix : presse-papiers ou fichier `.md`.
+## Définition
 
-Point qui compte pour un usage professionnel : **la conversion s'exécute localement dans Chrome**. L'éditeur déclare que le contenu de la page n'est envoyé ni à StarterBuild ni à un tiers. Déclaration non vérifiable de l'extérieur, l'extension n'étant pas open-source — à peser selon la sensibilité des pages consultées.
+Le geste à l'unité : une page de documentation lue dans le navigateur, un thread, un
+article — récupérés en Markdown structuré en deux clics, pour les coller dans un prompt,
+une note ou une doc de projet. Le copier-coller brut perd la hiérarchie de titres, casse
+les blocs de code et embarque la navigation du site ; c'est ce trou que l'extension
+comble. L'éditeur (StarterBuild) annonce trois modes — page nettoyée, page complète,
+sélection seule, cette dernière aussi par le menu contextuel — et la conversion préserve
+titres, liens, images, listes, citations, tableaux, blocs de code délimités et blocs
+dépliants (`details`). La conversion s'exécute **localement dans Chrome** : l'éditeur
+déclare que le contenu de la page n'est envoyé ni à StarterBuild ni à un tiers, mais la
+déclaration est invérifiable de l'extérieur, le code n'étant pas publié.
 
-Utile comme complément d'un pipeline d'ingestion : ce que le scraping programmatique fait à l'échelle, cette extension le fait sur la page qu'on a déjà sous les yeux.
+## Prendre si / Écarter si
 
-## Quand l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Nourrir un prompt ou un contexte LLM avec une page de doc, en gardant une structure exploitable | Extraction à l'échelle, planifiée ou automatisée sur des milliers d'URL → [[Firecrawl]], [[Maxun]] |
+| Alimenter des notes ou un wiki personnel à partir de lectures ponctuelles | Conversion de PDF ou de documents bureautiques : c'est une extension de navigateur → [[OpenDataLoader PDF]], [[Docling]] |
+| Récupérer un extrait de page — un tableau, un bloc de code — sans écrire un script | Exigence de code auditable ou d'auto-hébergement : l'extension est propriétaire et sans dépôt public, le « tout local » repose sur la parole de l'éditeur |
+| Contexte où le contenu de la page ne doit pas transiter par un service distant, sous réserve de faire confiance à cette déclaration | Navigateur autre que Chrome : lui seul est annoncé, la compatibilité Edge, Brave ou Vivaldi n'est pas documentée, et il n'existe ni version Firefox ni version Safari |
+| | En faire une dépendance de production : extension gratuite d'un petit éditeur, qui peut changer de modèle économique ou de mainteneur |
+| | Page rendue entièrement côté client, ou mise en page atypique : la capture peut être incomplète avant la fin du chargement, et l'heuristique du mode « page nettoyée » retire parfois du contenu utile — comparer avec le mode page complète |
 
-- Nourrir un prompt ou un contexte LLM avec une page de doc, en gardant la structure exploitable.
-- Alimenter des notes ou un wiki personnel à partir de lectures ponctuelles.
-- Récupérer un extrait de page — un tableau, un bloc de code — sans passer par un script.
-- Contexte où le contenu de la page ne doit pas transiter par un service distant (sous réserve de faire confiance à la déclaration de l'éditeur).
+## Mise en œuvre
 
-## Quand NE PAS l'utiliser
+- Installation — Chrome Web Store, identifiant `abpdjempcbodkeajhfhblcajghbgbdae` ; présentation et lien sur `starterbuild.com/page-to-markdown/`
+- Point d'entrée — extension de navigateur : icône de barre d'outils, ou menu contextuel pour une sélection ; sortie au presse-papiers ou en fichier `.md`
+- Prérequis — Chrome, sur Windows, macOS, Linux ou ChromeOS ; aucun compte ni clé d'API annoncés. Vérifier les permissions demandées dans le Chrome Web Store avant d'installer, en particulier pour des pages internes ou sous authentification
+- Exécution — entièrement dans le navigateur, sur le poste ; rien à héberger
+- Coût — gratuite. Aucun code source publié, donc aucun build maison possible
 
-- Extraction à l'échelle, planifiée ou automatisée sur des milliers d'URL → [[Firecrawl]], [[Maxun]].
-- Conversion de PDF ou de documents bureautiques : hors périmètre, c'est une extension de navigateur → [[OpenDataLoader PDF]], [[Docling]].
-- Exigence de code auditable ou d'auto-hébergement : l'extension est propriétaire et sans dépôt public.
-- Navigateur autre que Chrome : seul Chrome est annoncé.
+## Écosystème
 
-## Installation & plateformes
+### Alternatives
 
-- Installation depuis le Chrome Web Store (identifiant `abpdjempcbodkeajhfhblcajghbgbdae`), présentation et lien sur `starterbuild.com/page-to-markdown/`.
-- Gratuite. Aucun compte ni clé d'API annoncés.
-- Chrome uniquement d'après l'éditeur ; la compatibilité avec les autres navigateurs Chromium (Edge, Brave, Vivaldi) n'est pas documentée.
-- Aucune version Firefox ou Safari annoncée. Pas de code source publié, donc pas de build maison possible.
+- *Aucune alternative déclarée : seule page de la catégorie `docs/capture`. Le voisinage fonctionnel est ailleurs — le scraping programmatique en `data/scraping`, le parsing de documents en `data/parsing` —, pointé dans le tableau ci-dessus.*
 
-## Pièges
+## Ressources
 
-- **Extension propriétaire sans dépôt** : le « tout local » repose sur la parole de l'éditeur. Sur des pages internes ou sous authentification, vérifier les permissions demandées dans le Chrome Web Store avant d'installer.
-- Une extension gratuite d'un petit éditeur peut changer de modèle économique ou de mainteneur : ne pas en faire une dépendance de production.
-- Le mode « page nettoyée » applique une heuristique : sur des mises en page atypiques, il peut retirer du contenu utile. Comparer avec le mode page complète en cas de doute.
-- Les pages entièrement rendues côté client peuvent être capturées incomplètement si la conversion a lieu avant la fin du chargement.
-- Nombre d'utilisateurs, note et date de dernière mise à jour non vérifiés : la fiche du Chrome Web Store n'a pas pu être consultée.
+- Documentation — https://starterbuild.com/page-to-markdown/
 
-## Alternatives
+## Voir aussi
 
-Aucune autre page de la catégorie `tooling/capture` dans le brain à ce jour. Le voisinage fonctionnel est ailleurs : le scraping programmatique dans `data/scraping`, et le parsing de documents dans `data/parsing`.
-
-## Liens
-
-- [[Firecrawl]] — équivalent programmatique et à l'échelle, côté scraping web.
-- [[Comparatif - Scraping]] — comparatif de la famille scraping.
-- [[Comparatif - Parsing de documents]] — comparatif de la famille parsing, pour les documents plutôt que les pages web.
-- Site : https://starterbuild.com/page-to-markdown/
+- [[Documents]] — le hub du domaine
+- [[Comparatif - Scraping]] — ce qui départage les outils de scraping, l'équivalent programmatique et à l'échelle
+- [[Comparatif - Parsing de documents]] — la même question pour des documents plutôt que des pages web
