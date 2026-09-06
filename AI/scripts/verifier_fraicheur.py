@@ -47,11 +47,17 @@ SORTIE = VAULT / "AI" / "index" / "fraicheur.json"
 UA = {"User-Agent": "devbrain-verifier-fraicheur"}
 
 GH_SLUG = re.compile(r"^https?://github\.com/([^/\s]+)/([^/\s?#]+?)(?:\.git)?/?$")
-# C2 : sections qui parlent du sujet lui-même (« Installation & plateformes » est
-# l'équivalent de « Déploiement & coût » pour les ex-fiches `outil`, fondues dans
-# `role: brique` au lot 2 ; le lot 6 fusionnera les deux en « Mise en œuvre »).
-SECTIONS = {"## Pourquoi", "## Déploiement & coût", "## Installation & plateformes",
-            "## Pièges"}
+# C2 : sections qui parlent du sujet lui-même. **Réécrites le 2026-09-06, à la clôture
+# du lot 6** : les quatre noms d'avant — « Pourquoi », « Déploiement & coût »,
+# « Installation & plateformes », « Pièges » — n'existent plus sur aucune des 337 fiches,
+# et `lignes_sujet()` ne rendait donc plus une seule ligne. La règle C2
+# (`corps_declin_vs_maturite_vive`) était morte sur le vault entier, en silence : le
+# script sort 0 en toutes circonstances, et une règle qui ne trouve rien ressemble à une
+# règle satisfaite. Correspondance du lot 6 : `Pourquoi` → `Définition` ;
+# `Déploiement & coût` et `Installation & plateformes` → `Mise en œuvre` ; `Pièges`
+# dissoute vers la colonne `Écarter si` du tableau de décision et vers `Définition`.
+SECTIONS = {"## Définition", "## Mise en œuvre", "## Prendre si / Écarter si",
+            "## Retours"}
 DECLIN = re.compile(r"dormant|déclin(?:e|ant)?\b|(?:plus|non) maintenu|"
                     r"maintenance (?:très )?ralentie|sans commit depuis", re.I)
 # Annexe C §3 : formulations qui présentent une version comme *courante*.
