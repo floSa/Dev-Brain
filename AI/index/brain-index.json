@@ -24,8 +24,7 @@
     "Statistiques & inférence",
     "Stockage",
     "Sécurité",
-    "Web & API",
-    "Wiki"
+    "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
   "count": 764,
@@ -3291,7 +3290,9 @@
       "alternatives": [
         "[[connectorx]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Polars]]"
+      ],
       "maturite": "production"
     },
     {
@@ -3433,7 +3434,9 @@
       "alternatives": [
         "[[DBeaver]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[MongoDB]]"
+      ],
       "maturite": null
     },
     {
@@ -3459,7 +3462,9 @@
         "[[DBeaver]]",
         "[[HeidiSQL]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[MySQL]]"
+      ],
       "maturite": null
     },
     {
@@ -3485,7 +3490,9 @@
       "alternatives": [
         "[[DBeaver]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Redis]]"
+      ],
       "maturite": null
     },
     {
@@ -3511,7 +3518,9 @@
       "alternatives": [
         "[[DBeaver]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Postgres]]"
+      ],
       "maturite": null
     },
     {
@@ -3534,7 +3543,10 @@
         "[[Flyway]]",
         "[[Liquibase]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[SQLAlchemy]]",
+        "[[SQLModel]]"
+      ],
       "maturite": "production"
     },
     {
@@ -3741,7 +3753,11 @@
       "alternatives": [
         "[[ClickHouse]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[jupysql]]"
+      ],
       "maturite": "production"
     },
     {
@@ -3858,7 +3874,9 @@
         "[[Redis]]",
         "[[Apache Cassandra]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[MongoDB Compass]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4147,7 +4165,9 @@
         "[[Marqo]]",
         "[[Elasticsearch]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[sentence-transformers]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4171,7 +4191,9 @@
         "[[MongoDB]]",
         "[[Apache Cassandra]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Redis Insight]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4294,7 +4316,9 @@
         "[[CockroachDB]]",
         "[[Microsoft SQL Server]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[MySQL Workbench]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4322,7 +4346,12 @@
         "[[CockroachDB]]",
         "[[Microsoft SQL Server]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[pgvector]]",
+        "[[pgAdmin]]",
+        "[[TimescaleDB]]",
+        "[[psycopg2]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4391,7 +4420,10 @@
         "[[Prisma]]",
         "[[SQLModel]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Alembic]]",
+        "[[psycopg2]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4416,7 +4448,11 @@
         "[[SQLAlchemy]]",
         "[[Prisma]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Pydantic]]",
+        "[[FastAPI]]",
+        "[[Alembic]]"
+      ],
       "maturite": "beta"
     },
     {
@@ -4439,7 +4475,9 @@
       "alternatives": [
         "[[InfluxDB]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Postgres]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4828,7 +4866,9 @@
         "[[Milvus]]",
         "[[Pinecone]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Postgres]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4850,7 +4890,10 @@
         "db-driver"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Postgres]]",
+        "[[SQLAlchemy]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4951,7 +4994,9 @@
         "[[Spark]]",
         "[[Ray]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[xarray]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5362,7 +5407,11 @@
         "[[Modin]]",
         "[[Dask]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[ADBC]]",
+        "[[DuckDB]]",
+        "[[connectorx]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5411,7 +5460,9 @@
         "[[Modin]]",
         "[[Dask]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[DuckDB]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5434,7 +5485,9 @@
       "alternatives": [
         "[[numpy]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Dask]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5840,7 +5893,10 @@
         "[[pdf-inspector]]",
         "[[OpenDataLoader PDF]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5898,7 +5954,9 @@
         "[[pdf-inspector]]",
         "[[OpenDataLoader PDF]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyMuPDF]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5930,7 +5988,10 @@
         "[[Marker]]",
         "[[pdf-inspector]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5980,7 +6041,12 @@
         "[[pdfplumber]]",
         "[[pdf-inspector]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Docling]]",
+        "[[Marker]]",
+        "[[Unstructured]]",
+        "[[OpenDataLoader PDF]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6007,7 +6073,10 @@
         "[[Marker]]",
         "[[OpenDataLoader PDF]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6089,7 +6158,11 @@
         "[[PyMuPDF]]",
         "[[pdf-inspector]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Docling]]",
+        "[[Unstructured]]",
+        "[[OpenDataLoader PDF]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6255,7 +6328,10 @@
         "[[Crawlee]]",
         "[[Scrapling]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[selectolax]]",
+        "[[Scrapy]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6320,7 +6396,10 @@
         "[[Crawlee]]",
         "[[Scrapling]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Playwright]]",
+        "[[selectolax]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6390,7 +6469,9 @@
         "[[cloudscraper]]",
         "[[Playwright]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[selectolax]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6429,7 +6510,11 @@
         "document-parsing"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[curl_cffi]]",
+        "[[Playwright]]",
+        "[[Scrapy]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6625,7 +6710,9 @@
         "[[bokeh]]",
         "[[altair]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Dash]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6671,7 +6758,9 @@
       "alternatives": [
         "[[ADBC]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Polars]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7049,7 +7138,9 @@
         "container"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[GitHub Actions]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7070,7 +7161,9 @@
         "ci-cd"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Docker]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7208,7 +7301,9 @@
         "[[Shiny for Python]]",
         "[[Gradio]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[plotly]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7392,7 +7487,10 @@
         "[[t3code]]",
         "[[pi]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Spec Kit]]",
+        "[[BMAD]]"
+      ],
       "maturite": null
     },
     {
@@ -7421,7 +7519,11 @@
       "alternatives": [
         "[[Spec Kit]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]"
+      ],
       "maturite": null
     },
     {
@@ -7452,7 +7554,10 @@
         "[[t3code]]",
         "[[pi]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Spec Kit]]",
+        "[[BMAD]]"
+      ],
       "maturite": null
     },
     {
@@ -7503,7 +7608,10 @@
         "[[t3code]]",
         "[[pi]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Spec Kit]]",
+        "[[BMAD]]"
+      ],
       "maturite": null
     },
     {
@@ -7589,7 +7697,11 @@
       "alternatives": [
         "[[BMAD]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Aider]]",
+        "[[Cline]]",
+        "[[Continue]]"
+      ],
       "maturite": null
     },
     {
@@ -7719,9 +7831,7 @@
       "categorie": "llm/agent-de-code",
       "famille": "cli",
       "langage": "Clojure",
-      "domaines": [
-        "ai-eng"
-      ],
+      "domaines": null,
       "pitch": "Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.",
       "tags": [
         "multi-agent",
@@ -8388,7 +8498,9 @@
         "[[OpenClaw]]",
         "[[Hermes Agent]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LM Studio]]"
+      ],
       "maturite": "production"
     },
     {
@@ -8964,7 +9076,9 @@
         "[[Axolotl]]",
         "[[LLaMA-Factory]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[vLLM]]"
+      ],
       "maturite": "beta"
     },
     {
@@ -9104,7 +9218,9 @@
         "[[Semantic Kernel]]",
         "[[PydanticAI]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LangChain SQL agent]]"
+      ],
       "maturite": "production"
     },
     {
@@ -10002,7 +10118,9 @@
         "[[Haystack]]",
         "[[DSPy]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LlamaIndex NLSQLTableQueryEngine]]"
+      ],
       "maturite": "production"
     },
     {
@@ -10222,7 +10340,9 @@
         "[[SGLang]]",
         "[[TensorRT-LLM]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LM Studio Bionic]]"
+      ],
       "maturite": "production"
     },
     {
@@ -10622,7 +10742,9 @@
         "[[SGLang]]",
         "[[TensorRT-LLM]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Tunix]]"
+      ],
       "maturite": "production"
     },
     {
@@ -10844,7 +10966,9 @@
       "alternatives": [
         "[[LlamaIndex NLSQLTableQueryEngine]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LangChain]]"
+      ],
       "maturite": "production"
     },
     {
@@ -10872,7 +10996,9 @@
       "alternatives": [
         "[[LangChain SQL agent]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[LlamaIndex]]"
+      ],
       "maturite": "production"
     },
     {
@@ -11006,7 +11132,9 @@
         "agents"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[mcpjam]]"
+      ],
       "maturite": "production"
     },
     {
@@ -11086,7 +11214,9 @@
         "tool-use"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[fastmcp]]"
+      ],
       "maturite": "beta"
     },
     {
@@ -11706,7 +11836,9 @@
       "alternatives": [
         "[[OpenSpiel]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Stable-Baselines3]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12063,7 +12195,9 @@
         "[[TF-Agents]]",
         "[[RLax]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Gymnasium]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12462,7 +12596,9 @@
         "[[accelerate]]",
         "[[PyTorch Lightning]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyTorch]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12748,7 +12884,9 @@
         "[[PyTorch]]",
         "[[TensorFlow]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Keras]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12773,7 +12911,11 @@
       "alternatives": [
         "[[PyTorch Lightning]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyTorch]]",
+        "[[TensorFlow]]",
+        "[[JAX]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13024,7 +13166,9 @@
         "[[accelerate]]",
         "[[DeepSpeed]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyTorch]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13051,7 +13195,13 @@
         "[[TensorFlow]]",
         "[[JAX]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Keras]]",
+        "[[PyTorch Lightning]]",
+        "[[accelerate]]",
+        "[[DeepSpeed]]",
+        "[[pykan]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13214,7 +13364,9 @@
         "[[PyTorch]]",
         "[[JAX]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Keras]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13301,7 +13453,9 @@
         "[[PyTorch Lightning]]",
         "[[DeepSpeed]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[PyTorch]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13321,7 +13475,9 @@
         "deep-learning"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[PyTorch]]"
+      ],
       "maturite": "experimental"
     },
     {
@@ -13408,7 +13564,9 @@
         "model-evaluation"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[MLflow]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13508,7 +13666,11 @@
         "embeddings"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[datasets]]",
+        "[[sentence-transformers]]",
+        "[[spaCy]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13916,7 +14078,9 @@
         "[[Captum]]",
         "[[SAELens]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[nnsight]]"
+      ],
       "maturite": "experimental"
     },
     {
@@ -13941,7 +14105,9 @@
         "[[TransformerLens]]",
         "[[Captum]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[interpreto]]"
+      ],
       "maturite": "beta"
     },
     {
@@ -14294,7 +14460,9 @@
         "fine-tuning"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[sentence-transformers]]"
+      ],
       "maturite": "production"
     },
     {
@@ -14418,7 +14586,9 @@
         "[[GLiNER]]",
         "[[NLTK]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[HuggingFace]]"
+      ],
       "maturite": "production"
     },
     {
@@ -14983,7 +15153,9 @@
       "alternatives": [
         "[[Scikit-Learn]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[umap-learn]]"
+      ],
       "maturite": "production"
     },
     {
@@ -15059,7 +15231,9 @@
         "[[Scikit-Learn]]",
         "[[PaCMAP]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[hdbscan]]"
+      ],
       "maturite": "production"
     },
     {
@@ -15301,7 +15475,10 @@
         "[[TensorFlow Serving]]",
         "[[Ray Serve]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[TensorRT]]",
+        "[[ONNX Runtime]]"
+      ],
       "maturite": "production"
     },
     {
@@ -15328,7 +15505,9 @@
       "alternatives": [
         "[[TensorRT]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[NVIDIA Triton]]"
+      ],
       "maturite": "production"
     },
     {
@@ -15473,7 +15652,9 @@
       "alternatives": [
         "[[ONNX Runtime]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[NVIDIA Triton]]"
+      ],
       "maturite": "production"
     },
     {
@@ -16228,7 +16409,9 @@
         "[[Aim]]",
         "[[TensorBoard]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Evidently]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17211,7 +17394,9 @@
       "alternatives": [
         "[[Scikit-Learn]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[category_encoders]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17533,7 +17718,9 @@
       "alternatives": [
         "[[Scikit-Learn]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Featuretools]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17724,7 +17911,9 @@
         "[[Ultralytics YOLO]]",
         "[[segment-anything]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[supervision]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17988,7 +18177,10 @@
       "alternatives": [
         "[[Kornia]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[albumentations]]",
+        "[[supervision]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18182,7 +18374,9 @@
       "alternatives": [
         "[[Detectron2]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[supervision]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18295,7 +18489,9 @@
         "[[torchvision]]",
         "[[Kornia]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[OpenCV]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18324,7 +18520,9 @@
       "alternatives": [
         "[[Detectron2]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[supervision]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18346,7 +18544,12 @@
         "computer-vision"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Ultralytics YOLO]]",
+        "[[Detectron2]]",
+        "[[segment-anything]]",
+        "[[OpenCV]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18452,7 +18655,9 @@
         "deep-learning"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[HuggingFace]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18504,7 +18709,11 @@
         "nlp"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[HuggingFace]]",
+        "[[SetFit]]",
+        "[[txtai]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18782,7 +18991,9 @@
         "benchmark"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[seqeval]]"
+      ],
       "maturite": "production"
     },
     {
@@ -18804,7 +19015,9 @@
         "nlp"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[evaluate]]"
+      ],
       "maturite": "production"
     },
     {
@@ -19995,7 +20208,9 @@
         "dataviz"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Loki]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20017,7 +20232,9 @@
         "distributed"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Grafana]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20244,7 +20461,9 @@
         "dataframe"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[DuckDB]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20267,7 +20486,9 @@
       "alternatives": [
         "Marimo"
       ],
-      "complements": [],
+      "complements": [
+        "[[papermill]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20287,7 +20508,9 @@
         "reproducibility"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[jupytext]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20391,7 +20614,9 @@
         "[[hydra]]",
         "[[python-dotenv]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Pydantic]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20411,7 +20636,10 @@
         "type-hints"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Pydantic Settings]]",
+        "[[SQLModel]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20430,7 +20658,9 @@
         "terminal-ui"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Typer]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20470,7 +20700,9 @@
         "type-hints"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Rich]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20555,7 +20787,9 @@
         "testing"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[testcontainers]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20600,7 +20834,9 @@
         "container"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[pytest]]"
+      ],
       "maturite": "production"
     },
     {
@@ -21586,7 +21822,10 @@
         "monte-carlo"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[PyMC]]",
+        "[[Stan]]"
+      ],
       "maturite": "production"
     },
     {
@@ -21718,7 +21957,9 @@
       "alternatives": [
         "[[Stan]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[ArviZ]]"
+      ],
       "maturite": "production"
     },
     {
@@ -21744,7 +21985,9 @@
       "alternatives": [
         "[[PyMC]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[ArviZ]]"
+      ],
       "maturite": "production"
     },
     {
@@ -23003,7 +23246,11 @@
       "alternatives": [
         "[[Flask]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Uvicorn]]",
+        "[[HTMX]]",
+        "[[SQLModel]]"
+      ],
       "maturite": "production"
     },
     {
@@ -23043,7 +23290,10 @@
         "hypermedia"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Jinja2]]",
+        "[[FastAPI]]"
+      ],
       "maturite": "production"
     },
     {
@@ -23063,7 +23313,9 @@
         "templating"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[HTMX]]"
+      ],
       "maturite": "production"
     },
     {
@@ -23082,7 +23334,9 @@
         "web-framework"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[FastAPI]]"
+      ],
       "maturite": "production"
     },
     {

@@ -7,7 +7,7 @@
 
 ### accelerate  ·  brique
 - tags : `distributed-training`, `mixed-precision`, `gpu`, `deep-learning`
-- liens sortants : [[DeepSpeed]], [[Entraînement distribué]], [[HuggingFace]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[datasets]]
+- liens sortants : [[Apprentissage profond]], [[DeepSpeed]], [[Entraînement distribué]], [[HuggingFace]], [[JAX]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[TensorFlow]], [[datasets]]
 - liens entrants : [[Apprentissage profond]], [[DeepSpeed]], [[Entraînement distribué]], [[HuggingFace]], [[PyTorch]], [[PyTorch Lightning]], [[datasets]]
 
 ### Acme  ·  brique
@@ -17,53 +17,53 @@
 
 ### Activepieces  ·  brique
 - tags : `low-code`, `orchestration`, `agents`, `mcp`
-- liens sortants : [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[mcp-protocol]], [[n8n]]
+- liens sortants : [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[mcp-protocol]], [[n8n]]
 - liens entrants : [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### ADBC  ·  brique
 - tags : `db-driver`, `columnar`
-- liens sortants : [[DuckDB]], [[Polars]], [[SQLAlchemy]], [[connectorx]], [[psycopg2]]
-- liens entrants : [[Bases de données]], [[connectorx]]
+- liens sortants : [[Bases de données]], [[Polars]], [[SQLAlchemy]], [[connectorx]], [[psycopg2]]
+- liens entrants : [[Bases de données]], [[Polars]], [[connectorx]]
 
 ### Agno  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Instructor]], [[LangGraph]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[PydanticAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[PraisonAI]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
+- liens entrants : [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[Letta]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[PraisonAI]], [[smolagents]]
 
 ### ai-memory  ·  brique
 - tags : `agent-memory`, `mcp`, `context-engineering`, `code-assistant`, `retrieval`
-- liens sortants : [[Agent memory]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Hybrid retrieval]], [[Letta]], [[OpenViking]], [[mcp-protocol]]
+- liens sortants : [[Agent memory]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Hybrid retrieval]], [[Letta]], [[OpenViking]], [[mcp-protocol]]
 - liens entrants : [[Agent memory]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Graphify]], [[OpenViking]]
 
 ### Aider  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `version-control`
-- liens sortants : [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[freebuff]], [[pi]], [[t3code]]
-- liens entrants : [[Agents de code]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Graphify]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens sortants : [[Agents de code]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens entrants : [[Agents de code]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
 
 ### Aim  ·  brique
 - tags : `experiment-tracking`
-- liens sortants : [[ClearML]], [[Comet]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[PyTorch]], [[Weights & Biases]]
+- liens sortants : [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[PyTorch]], [[Suivi d'expériences]], [[Weights & Biases]]
 - liens entrants : [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
 
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
-- liens sortants : [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Mage]], [[Postgres]], [[Prefect]], [[Temporal]]
+- liens sortants : [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Mage]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
 
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
-- liens sortants : [[Augmentation d'images]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Segmentation]], [[torchvision]]
-- liens entrants : [[Augmentation d'images]], [[Comparatif - Détection & segmentation]], [[Kornia]], [[OpenCV]], [[Vision]], [[supervision]], [[timm]], [[torchvision]]
+- liens sortants : [[Augmentation d'images]], [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Segmentation]], [[torchvision]]
+- liens entrants : [[Augmentation d'images]], [[Comparatif - Détection & segmentation]], [[Kornia]], [[OpenCV]], [[Vision]], [[timm]], [[torchvision]]
 
 ### Alembic  ·  brique
 - tags : `migration`, `relational`
-- liens sortants : [[Comparatif - Migrations de schéma]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]]
+- liens sortants : [[Comparatif - Migrations de schéma]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
 - liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[SQLAlchemy]], [[SQLModel]], [[psycopg2]]
 
 ### altair  ·  brique
 - tags : `dataviz`, `declarative-viz`, `interactive-viz`
-- liens sortants : [[Comparatif - Visualisation]], [[bokeh]], [[matplotlib]], [[pandas]], [[plotly]]
-- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens sortants : [[Comparatif - Visualisation]], [[Visualisation]], [[bokeh]], [[pandas]], [[plotly]]
+- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[bokeh]], [[plotly]]
 
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
@@ -77,67 +77,67 @@
 
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`
-- liens sortants : [[Avro]], [[Flink]], [[Parquet]], [[Postgres]]
+- liens sortants : [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]]
 - liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[Stockage]]
 
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
-- liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Excalidraw]], [[FossFLOW]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
+- liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
-- liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[statsmodels]]
+- liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
 - liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
-- liens entrants : [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]], [[Semantic Kernel]], [[smolagents]], [[swarm-forge]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
+- liens entrants : [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]], [[Semantic Kernel]], [[smolagents]], [[swarm-forge]]
 
 ### Avro  ·  brique
 - tags : `file-format`, `serialization`, `schema-evolution`
-- liens sortants : [[Apache Iceberg]], [[Parquet]]
+- liens sortants : [[Apache Iceberg]], [[Contrats de données & qualité]], [[Parquet]], [[Stream processing]]
 - liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Parquet]]
 
 ### AWS S3  ·  brique
 - tags : `object-storage`
-- liens sortants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens sortants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 - liens entrants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Metaflow]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 
 ### Axolotl  ·  brique
 - tags : `fine-tuning`, `declarative-config`, `distributed-training`, `llm`
-- liens sortants : [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens sortants : [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[Fine-tuning]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### BentoML  ·  brique
 - tags : `model-serving`, `inference`
-- liens sortants : [[Comparatif - Serving de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Beszel  ·  brique
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
-- liens sortants : [[Docker]], [[Grafana]], [[Loki]], [[Sniffnet]]
-- liens entrants : [[Observabilité]], [[Sniffnet]], [[Web-Check]]
+- liens sortants : [[Docker]], [[Grafana]], [[Loki]], [[Observabilité]], [[Sniffnet]]
+- liens entrants : [[Grafana]], [[Observabilité]], [[Sniffnet]], [[Web-Check]]
 
 ### bm25s  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
-- liens sortants : [[BM25]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[Ranking metrics]], [[Recherche d'information]], [[rank-bm25]], [[sentence-transformers]]
+- liens sortants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[Ranking metrics]], [[Recherche d'information]], [[rank-bm25]], [[sentence-transformers]]
 - liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[rank-bm25]]
 
 ### BMAD  ·  brique
 - tags : `agent-skill`, `code-assistant`, `agents`, `multi-agent`, `code-generation`
-- liens sortants : [[Agent patterns]], [[Agent skills]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Multi-agent systems]], [[Spec Kit]]
-- liens entrants : [[Agent skills]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Spec Kit]]
+- liens sortants : [[Agent patterns]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Multi-agent systems]], [[Spec Kit]]
+- liens entrants : [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Spec Kit]]
 
 ### bokeh  ·  brique
 - tags : `dataviz`, `interactive-viz`
-- liens sortants : [[Comparatif - Visualisation]], [[altair]], [[matplotlib]], [[plotly]], [[seaborn]]
-- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[altair]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens sortants : [[Comparatif - Visualisation]], [[Visualisation]], [[altair]], [[plotly]]
+- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[altair]], [[plotly]]
 
 ### Bruno  ·  brique
 - tags : `api-client`, `version-control`
-- liens sortants : [[Comparatif - Clients d'API]], [[Postman]]
+- liens sortants : [[Comparatif - Clients d'API]], [[Outils de développement]], [[Postman]]
 - liens entrants : [[Comparatif - Clients d'API]], [[Outils de développement]], [[Postman]], [[public-apis]]
 
 ### Captum  ·  brique
@@ -147,12 +147,12 @@
 
 ### CatBoost  ·  brique
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`
-- liens sortants : [[Arbres de décision]], [[Comparatif - Boosting]], [[Gradient Boosting (GBDT)]], [[LightGBM]], [[Scikit-Learn]], [[XGBoost]]
+- liens sortants : [[Arbres de décision]], [[Comparatif - Boosting]], [[Encodage des variables catégorielles]], [[Gradient Boosting (GBDT)]], [[LightGBM]], [[Scikit-Learn]], [[XGBoost]]
 - liens entrants : [[Arbres de décision]], [[Boosting]], [[Comparatif - Boosting]], [[Ensembling]], [[Gradient Boosting (GBDT)]], [[LightGBM]], [[Machine Learning]], [[SHAP]], [[Scikit-Learn]], [[Tabulaire]], [[XGBoost]], [[category_encoders]], [[darts]]
 
 ### category_encoders  ·  brique
 - tags : `feature-engineering`
-- liens sortants : [[CatBoost]], [[Encodage des variables catégorielles]], [[Ingénierie des caractéristiques]], [[Régression logistique]], [[Scikit-Learn]]
+- liens sortants : [[CatBoost]], [[Data leakage]], [[Encodage des variables catégorielles]], [[Featuretools]], [[Ingénierie des caractéristiques]], [[Régression logistique]], [[Scikit-Learn]]
 - liens entrants : [[Encodage des variables catégorielles]], [[Featuretools]], [[Scikit-Learn]], [[Tabulaire]], [[Types de données et choix de modèle]]
 
 ### CausalImpact  ·  brique
@@ -162,27 +162,27 @@
 
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 - liens entrants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
 - liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[LanceDB]], [[ScaNN]], [[hnswlib]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[LanceDB]], [[LangChain]], [[LlamaIndex]], [[ScaNN]], [[Vectoriel]], [[hnswlib]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Faiss]], [[LanceDB]], [[LangChain]], [[LlamaIndex]], [[ScaNN]], [[Vanna]], [[Vectoriel]], [[hnswlib]]
 
 ### Chronos  ·  brique
 - tags : `forecasting`, `timeseries`, `foundation-model`, `transformers`, `deep-learning`
-- liens sortants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[HuggingFace]], [[Prophet]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[HuggingFace]], [[Prophet]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[statsforecast]]
 - liens entrants : [[Comparatif - Forecasting]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[darts]]
 
 ### Claude Video  ·  brique
 - tags : `multimodal`, `speech`, `context-engineering`
-- liens sortants : [[Graphify]]
+- liens sortants : [[Graphify]], [[Médias]], [[Superwhisper]]
 - liens entrants : [[Médias]], [[OpenCut]], [[Superwhisper]]
 
 ### ClearML  ·  brique
 - tags : `experiment-tracking`, `model-registry`, `orchestration`
-- liens sortants : [[Aim]], [[Comet]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[Weights & Biases]]
+- liens sortants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[Suivi d'expériences]], [[Weights & Biases]]
 - liens entrants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### ClickHouse  ·  brique
@@ -192,12 +192,12 @@
 
 ### Cline  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`, `mcp`
-- liens sortants : [[Aider]], [[Comparatif - Assistants de code IA]], [[Continue]], [[freebuff]], [[pi]], [[t3code]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
 
 ### Cloudflare R2  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 - liens entrants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 
 ### cloudscraper  ·  brique
@@ -212,37 +212,37 @@
 
 ### Comet  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[MLflow]], [[Neptune]], [[Weights & Biases]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 - liens entrants : [[Aim]], [[ClearML]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### connectorx  ·  brique
 - tags : `dataframe`, `columnar`
-- liens sortants : [[ADBC]], [[Comparatif - Manipulation de données]], [[DuckDB]], [[Polars]], [[SQLAlchemy]], [[pandas]], [[psycopg2]]
-- liens entrants : [[ADBC]], [[Data & pipelines]], [[DataFrames]]
+- liens sortants : [[ADBC]], [[Comparatif - Manipulation de données]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Polars]], [[SQLAlchemy]], [[pandas]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[Data & pipelines]], [[DataFrames]], [[Polars]]
 
 ### Continue  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`
-- liens sortants : [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[freebuff]], [[pi]], [[t3code]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Graphify]], [[Maka]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Spec Kit]], [[freebuff]], [[pi]], [[t3code]]
 
 ### Crawlee  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Comparatif - Scraping]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
+- liens entrants : [[Comparatif - Scraping]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]]
 
 ### CrewAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[Instructor]], [[LangChain]], [[LangGraph]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[PydanticAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[Hermes Agent]], [[Human-in-the-loop]], [[LangGraph]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[a2a-protocol]], [[smolagents]], [[swarm-forge]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[LangChain]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[Human-in-the-loop]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[OpenMAIC]], [[PraisonAI]], [[Tool use patterns]], [[a2a-protocol]], [[smolagents]], [[swarm-forge]]
 
 ### croc  ·  brique
 - tags : `file-transfer`, `networking`, `cryptography`, `cli`, `self-hosted`
-- liens sortants : [[MinIO]], [[Sniffnet]]
+- liens sortants : [[MinIO]], [[Réseau]], [[Sniffnet]]
 - liens entrants : [[Réseau]]
 
 ### CuPy  ·  brique
 - tags : `gpu`, `array`
-- liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[JAX]], [[PyTorch]], [[numpy]]
+- liens sortants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[JAX]], [[PyTorch]], [[numpy]]
 - liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[numpy]]
 
 ### curl_cffi  ·  brique
@@ -252,22 +252,22 @@
 
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
 
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
-- liens sortants : [[CatBoost]], [[Chronos]], [[Forecasting framing]], [[LightGBM]], [[Prophet]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens sortants : [[CatBoost]], [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[LightGBM]], [[Prophet]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 - liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[plotly]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Comparatif - Visualisation]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Gradio]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[plotly]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Comparatif - Visualisation]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]], [[plotly]]
 
 ### Dask  ·  brique
 - tags : `distributed`, `parallel`, `out-of-core`, `lazy-evaluation`
-- liens sortants : [[Comparatif - Calcul distribué]], [[Modin]], [[Polars]], [[Ray]], [[Spark]], [[numpy]], [[pandas]]
+- liens sortants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Modin]], [[Polars]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
 - liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Modin]], [[Polars]], [[Prefect]], [[Ray]], [[Spark]], [[numpy]], [[pandas]], [[xarray]]
 
 ### DataGrip  ·  brique
@@ -277,12 +277,12 @@
 
 ### datasets  ·  brique
 - tags : `out-of-core`, `streaming`, `nlp`, `deep-learning`
-- liens sortants : [[Airflow]], [[Dagster]], [[HuggingFace]], [[Polars]], [[PyTorch]], [[accelerate]], [[evaluate]], [[pandas]]
+- liens sortants : [[Airflow]], [[Dagster]], [[HuggingFace]], [[Machine Learning]], [[Polars]], [[PyTorch]], [[accelerate]], [[evaluate]], [[pandas]]
 - liens entrants : [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[accelerate]], [[evaluate]]
 
 ### Daytona  ·  brique
 - tags : `agents`, `llm`, `container`, `ai-security`
-- liens sortants : [[AI security]], [[E2B]], [[Hermes Agent]], [[Modal]], [[Prompt injection]], [[Sandboxing de code généré]]
+- liens sortants : [[AI security]], [[Calcul distribué]], [[E2B]], [[Hermes Agent]], [[Modal]], [[Prompt injection]], [[Sandboxing de code généré]]
 - liens entrants : [[Calcul distribué]], [[E2B]], [[Hermes Agent]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
 
 ### DB-GPT  ·  brique
@@ -297,83 +297,83 @@
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
-- liens sortants : [[Comparatif - Évaluation LLM]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangChain]], [[Langfuse]], [[LlamaIndex]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
+- liens sortants : [[Comparatif - Évaluation LLM]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
 - liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
 
 ### DeepSpeed  ·  brique
 - tags : `distributed-training`, `memory-optimization`, `deep-learning`, `gpu`, `mixed-precision`
-- liens sortants : [[Entraînement distribué]], [[HuggingFace]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
-- liens entrants : [[Apprentissage profond]], [[Axolotl]], [[Entraînement distribué]], [[LLaMA-Factory]], [[PyTorch Lightning]], [[TRL]], [[accelerate]]
+- liens sortants : [[Apprentissage profond]], [[Entraînement distribué]], [[HuggingFace]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
+- liens entrants : [[Apprentissage profond]], [[Axolotl]], [[Entraînement distribué]], [[LLaMA-Factory]], [[PyTorch]], [[PyTorch Lightning]], [[TRL]], [[accelerate]]
 
 ### Detectron2  ·  brique
 - tags : `object-detection`, `segmentation`, `computer-vision`, `deep-learning`, `gpu`
-- liens sortants : [[Détection d'objets]], [[HuggingFace]], [[PyTorch]], [[Segmentation]], [[Ultralytics YOLO]], [[segment-anything]], [[supervision]], [[torchvision]]
+- liens sortants : [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[HuggingFace]], [[PyTorch]], [[Segmentation]], [[Ultralytics YOLO]], [[segment-anything]], [[supervision]], [[torchvision]]
 - liens entrants : [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]], [[supervision]]
 
 ### Dify  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
-- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Flowise]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
+- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Context engineering]], [[Flowise]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
 - liens entrants : [[Flowise]], [[LLM & IA générative]], [[Langflow]], [[OpenRouter]], [[PraisonAI]]
 
 ### Docker  ·  brique
 - tags : `container`
-- liens sortants : [[GitHub Actions]]
+- liens sortants : [[DevOps]], [[GitHub Actions]]
 - liens entrants : [[Beszel]], [[DevOps]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 - liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
-- liens sortants : [[Détection d'objets]], [[OCR]], [[PyTorch]], [[Segmentation]], [[Vision Language Models]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[OCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Vision Language Models]]
 - liens entrants : [[Comparatif - Parsing de documents]], [[OCR]], [[Parsing]]
 
 ### draw.io  ·  brique
 - tags : `diagram`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]]
 - liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]]
 
 ### DSPy  ·  brique
 - tags : `llm`, `prompt-optimization`, `nlp`
-- liens sortants : [[Chroma]], [[Comparatif - Frameworks LLM]], [[Haystack]], [[HuggingFace]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[Qdrant]]
+- liens sortants : [[Chroma]], [[Comparatif - Frameworks LLM]], [[Haystack]], [[HuggingFace]], [[LLM & IA générative]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[Prompt engineering]], [[Qdrant]]
 - liens entrants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[Phoenix Arize]], [[Prompt engineering]]
 
 ### DuckDB  ·  brique
 - tags : `columnar`, `olap`, `embedded`
-- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Postgres]]
-- liens entrants : [[ADBC]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Notebooks]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]]
+- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Polars]], [[Postgres]], [[jupysql]], [[pandas]]
+- liens entrants : [[Apache Iceberg]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Flink]], [[Notebooks]], [[Parquet]], [[Polars]], [[Relationnel]], [[Spark]], [[connectorx]], [[jupysql]], [[pandas]]
 
 ### dynaconf  ·  brique
 - tags : `config`
-- liens sortants : [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
+- liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
 - liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[hydra]], [[python-dotenv]]
 
 ### E2B  ·  brique
 - tags : `agents`, `llm`, `container`, `ai-security`
-- liens sortants : [[AI security]], [[Daytona]], [[Docker]], [[Hermes Agent]], [[Modal]], [[OpenHands]], [[Prompt injection]], [[Ray]], [[Sandboxing de code généré]]
+- liens sortants : [[AI security]], [[Calcul distribué]], [[Daytona]], [[Docker]], [[Hermes Agent]], [[Modal]], [[OpenHands]], [[Prompt injection]], [[Ray]], [[Sandboxing de code généré]]
 - liens entrants : [[Calcul distribué]], [[Daytona]], [[Maka]], [[Modal]], [[Sandboxing de code généré]]
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[Hybrid retrieval]], [[Marqo]], [[Postgres]], [[Recherche d'information]], [[Vespa]], [[txtai]]
-- liens entrants : [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Grafana]], [[Haystack]], [[Hybrid retrieval]], [[Loki]], [[Marqo]], [[Recherche]], [[Recherche d'information]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Haystack]], [[Hybrid retrieval]], [[Loki]], [[Marqo]], [[Recherche]], [[Recherche d'information]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
 
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
-- liens sortants : [[Classification metrics]], [[DeepEval]], [[HuggingFace]], [[MLflow]], [[Ragas]], [[Ranking metrics]], [[Scikit-Learn]], [[Weights & Biases]], [[datasets]], [[seqeval]]
+- liens sortants : [[Classification metrics]], [[DeepEval]], [[HuggingFace]], [[MLflow]], [[Ragas]], [[Ranking metrics]], [[Scikit-Learn]], [[Weights & Biases]], [[datasets]], [[seqeval]], [[Évaluation de modèles]]
 - liens entrants : [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[datasets]], [[seqeval]], [[Évaluation de modèles]]
 
 ### Evidently  ·  brique
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
 - liens sortants : [[Data drift]], [[MLflow]], [[Monitoring de modèle en production]], [[River]]
-- liens entrants : [[Data drift]], [[Interprétabilité]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[Data drift]], [[Interprétabilité]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Serving]], [[Suivi d'expériences]]
 
 ### Excalidraw  ·  brique
 - tags : `diagram`, `whiteboard`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Figma]], [[FossFLOW]], [[Mermaid]], [[Penpot]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Figma]], [[Penpot]], [[draw.io]]
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -392,12 +392,12 @@
 
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
-- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[Pydantic]], [[Uvicorn]]
-- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[LM Studio]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]], [[vLLM]]
+- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Pydantic]], [[SQLModel]], [[Uvicorn]], [[Web & API]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]]
 
 ### fastmcp  ·  brique
 - tags : `mcp`, `tool-use`, `agents`
-- liens sortants : [[Guardrails]], [[LangGraph]], [[PydanticAI]], [[mcp-protocol]], [[mcpjam]], [[tool-use]]
+- liens sortants : [[Guardrails]], [[LLM & IA générative]], [[LangGraph]], [[PydanticAI]], [[mcp-protocol]], [[mcpjam]], [[tool-use]]
 - liens entrants : [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[OpenClaw]], [[mcp-protocol]], [[mcpjam]]
 
 ### Feast  ·  brique
@@ -407,37 +407,37 @@
 
 ### Featuretools  ·  brique
 - tags : `feature-engineering`
-- liens sortants : [[Ingénierie des caractéristiques]], [[Scikit-Learn]], [[Sélection de variables]], [[category_encoders]]
-- liens entrants : [[Feast]], [[Ingénierie des caractéristiques]], [[Scikit-Learn]], [[Tabulaire]]
+- liens sortants : [[Data leakage]], [[Ingénierie des caractéristiques]], [[Scikit-Learn]], [[Sélection de variables]], [[category_encoders]]
+- liens entrants : [[Feast]], [[Ingénierie des caractéristiques]], [[Scikit-Learn]], [[Tabulaire]], [[category_encoders]]
 
 ### Figma  ·  brique
 - tags : `design-tool`
-- liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Mermaid]], [[Penpot]], [[draw.io]]
+- liens sortants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Excalidraw]], [[Mermaid]], [[Penpot]], [[draw.io]]
 - liens entrants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Penpot]]
 
 ### Firecrawl  ·  brique
 - tags : `web-scraping`, `markdown-conversion`
-- liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Maxun]], [[Playwright]], [[Scrapy]], [[Web scraping]]
-- liens entrants : [[Comparatif - Scraping]], [[Maxun]], [[Page to Markdown]], [[Scraping]], [[Web scraping]], [[minim]], [[pdf-inspector]]
+- liens sortants : [[Comparatif - Scraping]], [[Maxun]], [[Web scraping]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Scraping]], [[Maxun]], [[Page to Markdown]], [[Scraping]], [[Web scraping]], [[pdf-inspector]]
 
 ### Flask  ·  brique
 - tags : `web-framework`
-- liens sortants : [[FastAPI]]
+- liens sortants : [[FastAPI]], [[Jinja2]], [[Web & API]]
 - liens entrants : [[FastAPI]], [[HTMX]], [[Jinja2]], [[Web & API]]
 
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
-- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Stream processing]]
-- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Orchestration]], [[Stream processing]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[DuckDB]], [[Spark]], [[Stream processing]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Data & pipelines]], [[Orchestration]], [[Stream processing]], [[Temporal]]
 
 ### Flowise  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
-- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Dify]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
+- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Context engineering]], [[Dify]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
 - liens entrants : [[Dify]], [[LLM & IA générative]], [[Langflow]], [[OpenRouter]]
 
 ### Flyte  ·  brique
 - tags : `orchestration`, `ml-pipeline`, `kubernetes`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Metaflow]], [[ZenML]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Machine Learning]], [[Metaflow]], [[ZenML]]
 - liens entrants : [[Comparatif - Orchestrateurs ML]], [[Machine Learning]], [[Metaflow]], [[ZenML]]
 
 ### Flyway  ·  brique
@@ -447,22 +447,22 @@
 
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[Mermaid]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
 - liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
 
 ### freebuff  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `multi-agent`, `cli`
-- liens sortants : [[Agent patterns]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Multi-agent systems]], [[pi]], [[tool-use]]
+- liens sortants : [[Agent patterns]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Multi-agent systems]], [[pi]], [[tool-use]]
 - liens entrants : [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Multi-agent systems]], [[pi]]
 
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 - liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
 
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
-- liens sortants : [[Docker]]
+- liens sortants : [[DevOps]], [[Docker]]
 - liens entrants : [[DevOps]], [[Docker]], [[Rule - Qualité stricte]]
 
 ### GLiNER  ·  brique
@@ -472,47 +472,47 @@
 
 ### Gradio  ·  brique
 - tags : `ml-demo`, `web-framework`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Shiny for Python]], [[Streamlit]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[HuggingFace]], [[Interfaces & apps data]], [[Shiny for Python]], [[Streamlit]], [[Web & API]], [[text-generation-webui]]
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
-- liens sortants : [[Dash]], [[Elasticsearch]], [[InfluxDB]], [[Loki]], [[Postgres]], [[Streamlit]]
+- liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Loki]], [[Observabilité]], [[Streamlit]]
 - liens entrants : [[Beszel]], [[Loki]], [[Observabilité]]
 
 ### Graphify  ·  brique
 - tags : `code-assistant`, `knowledge-graph`, `mcp`, `context-engineering`
-- liens sortants : [[Aider]], [[Cline]], [[Construction de graphes de connaissances]], [[Continue]], [[ai-memory]]
+- liens sortants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Construction de graphes de connaissances]], [[ai-memory]]
 - liens entrants : [[Agents de code]], [[Archify]], [[Claude Video]], [[Comparatif - Assistants de code IA]], [[ai-memory]], [[i-have-adhd]]
 
 ### Guidance  ·  brique
 - tags : `structured-output`, `decoding`, `llm`
-- liens sortants : [[Constrained decoding]], [[Decoding strategies]], [[Instructor]], [[Outlines]], [[Pydantic]], [[PydanticAI]], [[Structured outputs]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
+- liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Outlines]], [[Pydantic]], [[PydanticAI]], [[Structured outputs]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Instructor]], [[LLM & IA générative]], [[Outlines]], [[Sortie typée]], [[Structured outputs]]
 
 ### gumloop  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
-- liens sortants : [[Activepieces]], [[Agent patterns]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[n8n]]
+- liens sortants : [[Activepieces]], [[Agent patterns]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[n8n]]
 - liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[n8n]]
 
 ### Gymnasium  ·  brique
 - tags : `reinforcement-learning`
-- liens sortants : [[Comparatif - Reinforcement learning]], [[Markov Decision Process]], [[OpenSpiel]], [[Reinforcement learning]], [[Stable-Baselines3]]
+- liens sortants : [[Comparatif - Reinforcement learning]], [[Markov Decision Process]], [[OpenSpiel]], [[Reinforcement learning]], [[Stable-Baselines3]], [[TF-Agents]]
 - liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[OpenSpiel]], [[PPO]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Q-learning and DQN]], [[Reinforcement learning]], [[Stable-Baselines3]], [[TF-Agents]]
 
 ### Haystack  ·  brique
 - tags : `llm`, `rag`, `semantic-search`, `hybrid-search`, `agents`
 - liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Elasticsearch]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[Qdrant]], [[RAG]], [[Reranking]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Advanced RAG]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Hybrid retrieval]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[RAG]], [[RAG & retrieval]], [[Reranking]]
+- liens entrants : [[Advanced RAG]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[RAG]], [[RAG & retrieval]], [[Reranking]]
 
 ### hdbscan  ·  brique
 - tags : `clustering`, `unsupervised`
-- liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[K-Means]], [[Scikit-Learn]], [[umap-learn]]
+- liens sortants : [[Clustering]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[K-Means]], [[Non supervisé]], [[Scikit-Learn]], [[umap-learn]]
 - liens entrants : [[Apprentissage non supervisé]], [[Clustering hiérarchique par densité]], [[Machine Learning]], [[Non supervisé]], [[Scikit-Learn]], [[umap-learn]]
 
 ### Headroom  ·  brique
 - tags : `llm`, `context-engineering`, `token-optimization`, `caching`, `mcp`
-- liens sortants : [[Agent memory]], [[Comparatif - Observabilité LLM]], [[Context engineering]], [[Harnais d'agent]], [[LiteLLM]], [[Tokenization]], [[mcp-protocol]]
+- liens sortants : [[Agent memory]], [[Comparatif - Observabilité LLM]], [[Context engineering]], [[Harnais d'agent]], [[LLM & IA générative]], [[LiteLLM]], [[Tokenization]], [[mcp-protocol]]
 - liens entrants : [[Context engineering]], [[LLM & IA générative]]
 
 ### HeidiSQL  ·  brique
@@ -527,8 +527,8 @@
 
 ### Hermes Agent  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Daytona]], [[Harnais d'agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Modal]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
-- liens entrants : [[Agent memory]], [[Agent skills]], [[Assistants]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Modal]], [[OpenClaw]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
+- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Assistants]], [[Daytona]], [[Harnais d'agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Modal]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
+- liens entrants : [[Agent memory]], [[Agent skills]], [[Assistants]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Modal]], [[OpenClaw]], [[OpenHands]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -537,17 +537,17 @@
 
 ### HTMX  ·  brique
 - tags : `hypermedia`
-- liens sortants : [[Comparatif - Frontends web légers]], [[FastAPI]], [[Flask]], [[Jinja2]]
-- liens entrants : [[Comparatif - Frontends web légers]], [[Jinja2]], [[Web & API]]
+- liens sortants : [[Comparatif - Frontends web légers]], [[FastAPI]], [[Flask]], [[Jinja2]], [[Web & API]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[FastAPI]], [[Jinja2]], [[Web & API]]
 
 ### HuggingFace  ·  brique
 - tags : `transformers`, `model-hub`, `fine-tuning`, `nlp`, `deep-learning`, `embeddings`
-- liens sortants : [[Gradio]], [[JAX]], [[LightGBM]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]], [[accelerate]], [[datasets]], [[evaluate]]
-- liens entrants : [[Aim]], [[Apprentissage profond]], [[Axolotl]], [[BentoML]], [[Chronos]], [[Classification d'images]], [[Comparatif - NLP]], [[DSPy]], [[DeepSpeed]], [[Detectron2]], [[Détection d'objets]], [[Foundation models pour séries temporelles]], [[GLiNER]], [[Haystack]], [[JAX]], [[Keras]], [[LLaMA-Factory]], [[LM Studio]], [[LangChain]], [[LlamaIndex]], [[LoRA et QLoRA]], [[Machine Learning]], [[Modèles de fondation vision]], [[NER et étiquetage de séquence]], [[NLTK]], [[Ollama]], [[PEFT]], [[PyTorch]], [[PyTorch Lightning]], [[RL for LLMs]], [[Ray Serve]], [[Rendu neuronal 3D & estimation de profondeur]], [[Reranking]], [[Reward modeling]], [[SFT]], [[SGLang]], [[Segment Anything (SAM)]], [[Self-attention]], [[SetFit]], [[TGI]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT-LLM]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Transformer architectures]], [[TransformerLens]], [[Unsloth]], [[Vision Transformers (ViT)]], [[Weights & Biases]], [[accelerate]], [[datasets]], [[evaluate]], [[interpreto]], [[librosa]], [[llama.cpp]], [[nnsight]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]], [[supervision]], [[text-generation-webui]], [[timm]], [[txtai]], [[vLLM]]
+- liens sortants : [[Gradio]], [[JAX]], [[LightGBM]], [[Machine Learning]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]], [[accelerate]], [[datasets]], [[evaluate]], [[sentence-transformers]], [[sentencepiece]], [[spaCy]]
+- liens entrants : [[Aim]], [[Apprentissage profond]], [[Axolotl]], [[BentoML]], [[Chronos]], [[Classification d'images]], [[Comparatif - NLP]], [[DSPy]], [[DeepSpeed]], [[Detectron2]], [[Détection d'objets]], [[Foundation models pour séries temporelles]], [[GLiNER]], [[Haystack]], [[JAX]], [[Keras]], [[LLaMA-Factory]], [[LM Studio]], [[LangChain]], [[LlamaIndex]], [[LoRA et QLoRA]], [[Machine Learning]], [[Modèles de fondation vision]], [[NER et étiquetage de séquence]], [[Ollama]], [[PEFT]], [[PyTorch]], [[PyTorch Lightning]], [[RL for LLMs]], [[Rendu neuronal 3D & estimation de profondeur]], [[Reranking]], [[Reward modeling]], [[SFT]], [[SGLang]], [[Segment Anything (SAM)]], [[Self-attention]], [[SetFit]], [[TGI]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT-LLM]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Transformer architectures]], [[TransformerLens]], [[Unsloth]], [[Vision Transformers (ViT)]], [[Weights & Biases]], [[accelerate]], [[datasets]], [[evaluate]], [[interpreto]], [[librosa]], [[llama.cpp]], [[nnsight]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[sentencepiece]], [[spaCy]], [[text-generation-webui]], [[timm]], [[txtai]], [[vLLM]]
 
 ### hydra  ·  brique
 - tags : `config`
-- liens sortants : [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
+- liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
 - liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[python-dotenv]]
 
 ### Hyperopt  ·  brique
@@ -557,7 +557,7 @@
 
 ### i-have-adhd  ·  brique
 - tags : `agent-skill`, `prompting`, `code-assistant`, `agents`
-- liens sortants : [[Agent skills]], [[Archify]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Harnais d'agent]], [[Prompt engineering]], [[Spec Kit]]
+- liens sortants : [[Agent skills]], [[Agents de code]], [[Archify]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Harnais d'agent]], [[Prompt engineering]], [[Spec Kit]]
 - liens entrants : [[Agent skills]], [[Agents de code]], [[Comparatif - Assistants de code IA]]
 
 ### imbalanced-learn  ·  brique
@@ -572,52 +572,52 @@
 
 ### Instructor  ·  brique
 - tags : `llm`, `structured-output`, `data-validation`, `type-hints`
-- liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Guardrails]], [[Guidance]], [[LangChain]], [[Outlines]], [[Pydantic]], [[PydanticAI]], [[Structured outputs]]
-- liens entrants : [[Agno]], [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[CrewAI]], [[Guardrails]], [[Guidance]], [[LLM & IA générative]], [[Langflow]], [[Letta]], [[Outlines]], [[PraisonAI]], [[PydanticAI]], [[Reliability patterns]], [[Sortie typée]], [[Structured outputs]], [[Tool use patterns]], [[needle]], [[tool-use]]
+- liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Guardrails]], [[Guidance]], [[Outlines]], [[Pydantic]], [[PydanticAI]], [[Structured outputs]]
+- liens entrants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Guardrails]], [[LLM & IA générative]], [[Langflow]], [[Letta]], [[Outlines]], [[PydanticAI]], [[Reliability patterns]], [[Sortie typée]], [[Structured outputs]], [[Tool use patterns]], [[needle]], [[tool-use]]
 
 ### interpreto  ·  brique
 - tags : `explainability`, `llm`, `nlp`
-- liens sortants : [[Attribution par gradient]], [[Captum]], [[Classification de texte]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[HuggingFace]], [[ICA]], [[Interprétabilité mécaniste]], [[LIME]], [[NMF]], [[Probing]], [[PyTorch]], [[SAELens]], [[SHAP]], [[Self-attention]], [[Sparse autoencoders]], [[Traitement du langage naturel]], [[Transformer architectures]], [[nnsight]]
+- liens sortants : [[Attribution par gradient]], [[Captum]], [[Classification de texte]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[HuggingFace]], [[ICA]], [[Interprétabilité mécaniste]], [[LIME]], [[NMF]], [[Probing]], [[SAELens]], [[SHAP]], [[Self-attention]], [[Sparse autoencoders]], [[Traitement du langage naturel]], [[Transformer architectures]], [[nnsight]]
 - liens entrants : [[Attribution par gradient]], [[Captum]], [[Comparatif - Explicabilité]], [[Comparatif - NLP]], [[Explicabilité des modèles]], [[ICA]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[LIME]], [[NMF]], [[Probing]], [[SAELens]], [[SHAP]], [[Sparse autoencoders]], [[Superposition]], [[TransformerLens]], [[nnsight]]
 
 ### JAX  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `array`
-- liens sortants : [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[numpy]]
-- liens entrants : [[Acme]], [[Apprentissage profond]], [[Comparatif - Calcul distribué]], [[CuPy]], [[HuggingFace]], [[Keras]], [[PyMC]], [[PyTorch]], [[RLax]], [[Scikit-Learn]], [[TensorFlow]], [[Tunix]], [[numpy]]
+- liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[numpy]]
+- liens entrants : [[Acme]], [[Apprentissage profond]], [[Comparatif - Calcul distribué]], [[CuPy]], [[HuggingFace]], [[Keras]], [[PyMC]], [[PyTorch]], [[RLax]], [[Scikit-Learn]], [[TensorFlow]], [[Tunix]], [[accelerate]], [[numpy]]
 
 ### Jinja2  ·  brique
 - tags : `templating`
-- liens sortants : [[FastAPI]], [[Flask]], [[HTMX]]
-- liens entrants : [[HTMX]], [[Web & API]]
+- liens sortants : [[FastAPI]], [[Flask]], [[HTMX]], [[Web & API]]
+- liens entrants : [[Flask]], [[HTMX]], [[Web & API]]
 
 ### jupysql  ·  brique
 - tags : `notebook`, `dataframe`
-- liens sortants : [[DuckDB]], [[Polars]], [[pandas]], [[psycopg2]]
-- liens entrants : [[Notebooks]]
+- liens sortants : [[DuckDB]], [[Notebooks]], [[Polars]], [[pandas]], [[psycopg2]]
+- liens entrants : [[DuckDB]], [[Notebooks]]
 
 ### jupytext  ·  brique
 - tags : `notebook`, `version-control`, `reproducibility`
-- liens sortants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[Ruff]], [[papermill]], [[pytest]]
+- liens sortants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[Ruff]], [[papermill]], [[pytest]]
 - liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[papermill]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
-- liens sortants : [[HuggingFace]], [[JAX]], [[PyTorch]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]]
+- liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[PyTorch]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]]
 - liens entrants : [[Apprentissage profond]], [[Architectures CNN]], [[Autoencodeurs]], [[CNN]], [[JAX]], [[Perceptron et MLP]], [[PyTorch]], [[PyTorch Lightning]], [[River]], [[TensorFlow]], [[Vision par ordinateur]]
 
 ### Kestra  ·  brique
 - tags : `orchestration`, `data-pipeline`, `declarative-config`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Prefect]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
 ### Kornia  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `deep-learning`, `gpu`, `autograd`
-- liens sortants : [[Augmentation d'images]], [[CNN]], [[OpenCV]], [[PyTorch]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
+- liens sortants : [[Augmentation d'images]], [[CNN]], [[OpenCV]], [[PyTorch]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
 - liens entrants : [[Augmentation d'images]], [[OpenCV]], [[Vision]], [[albumentations]], [[timm]], [[torchvision]]
 
 ### KServe  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### LanceDB  ·  brique
@@ -627,17 +627,17 @@
 
 ### LangChain  ·  brique
 - tags : `llm`, `rag`, `agents`, `tool-use`
-- liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain SQL agent]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[PydanticAI]], [[Qdrant]], [[RAG]], [[Reranking]], [[Semantic Kernel]], [[Text-to-SQL]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[CrewAI]], [[DSPy]], [[DeepEval]], [[Dify]], [[Flowise]], [[GraphRAG]], [[Haystack]], [[Instructor]], [[LLM & IA générative]], [[LangChain SQL agent]], [[LangGraph]], [[LangSmith]], [[Langflow]], [[Langfuse]], [[LiteLLM]], [[LlamaIndex]], [[OpenRouter]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Phoenix Arize]], [[PydanticAI]], [[Query transformations]], [[RAG]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Semantic Kernel]], [[Text-to-SQL]], [[Tool use patterns]], [[TruLens]], [[agent-loops]], [[promptfoo]], [[tool-use]]
+- liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain SQL agent]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[PydanticAI]], [[Qdrant]], [[RAG]], [[Reranking]], [[Semantic Kernel]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[CrewAI]], [[DSPy]], [[Dify]], [[Flowise]], [[GraphRAG]], [[Haystack]], [[LLM & IA générative]], [[LangChain SQL agent]], [[LangGraph]], [[LangSmith]], [[Langflow]], [[Langfuse]], [[LiteLLM]], [[LlamaIndex]], [[OpenRouter]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Phoenix Arize]], [[PydanticAI]], [[Query transformations]], [[RAG]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Semantic Kernel]], [[Text-to-SQL]], [[Tool use patterns]], [[agent-loops]], [[tool-use]]
 
 ### LangChain SQL agent  ·  brique
 - tags : `text-to-sql`, `llm`, `agents`, `tool-use`
-- liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
+- liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain]], [[LangGraph]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]]
 - liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]]
 
 ### Langflow  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
-- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Dify]], [[Flowise]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[OpenRouter]], [[PydanticAI]]
+- liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Context engineering]], [[Dify]], [[Flowise]], [[Instructor]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[OpenRouter]], [[PydanticAI]]
 - liens entrants : [[Dify]], [[Flowise]], [[LLM & IA générative]], [[OpenRouter]], [[PraisonAI]]
 
 ### Langfuse  ·  brique
@@ -647,8 +647,8 @@
 
 ### LangGraph  ·  brique
 - tags : `llm`, `agents`, `tool-use`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Haystack]], [[LangChain]], [[Letta]], [[LiteLLM]], [[LlamaIndex]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Dify]], [[Flowise]], [[Hermes Agent]], [[Human-in-the-loop]], [[LangChain]], [[LangSmith]], [[Langflow]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PraisonAI]], [[PydanticAI]], [[Semantic Kernel]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Comparatif - Frameworks LLM]], [[Human-in-the-loop]], [[LangChain]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]]
+- liens entrants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Comparatif - Frameworks LLM]], [[Dify]], [[Flowise]], [[Hermes Agent]], [[Human-in-the-loop]], [[LangChain]], [[LangChain SQL agent]], [[LangSmith]], [[Langflow]], [[Letta]], [[Multi-agent systems]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[tool-use]]
 
 ### LangSmith  ·  brique
 - tags : `llm`, `llm-observability`, `tracing`, `llm-eval`
@@ -657,17 +657,17 @@
 
 ### Letta  ·  brique
 - tags : `llm`, `agents`, `tool-use`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Instructor]], [[LangGraph]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenViking]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agent memory]], [[Agno]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[Hermes Agent]], [[LLM & IA générative]], [[LangGraph]], [[OpenAI Agents SDK]], [[OpenViking]], [[ai-memory]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[CrewAI]], [[Instructor]], [[LLM & IA générative]], [[LangGraph]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenViking]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
+- liens entrants : [[Agent memory]], [[Agno]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[Hermes Agent]], [[LLM & IA générative]], [[OpenAI Agents SDK]], [[OpenViking]], [[ai-memory]], [[smolagents]]
 
 ### librosa  ·  brique
 - tags : `signal-processing`, `spectrogram`, `feature-engineering`
-- liens sortants : [[Comparatif - Traitement du signal]], [[HuggingFace]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Comparatif - Traitement du signal]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
+- liens sortants : [[Comparatif - Traitement du signal]], [[HuggingFace]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Classification audio par spectrogramme]], [[Comparatif - Traitement du signal]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
-- liens sortants : [[Analyse de survie]], [[PyMC]], [[Stan]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[Analyse de survie]], [[Comparatif - Outils stats]]
 - liens entrants : [[Analyse de survie]], [[Comparatif - Outils stats]], [[Maintenance prédictive et RUL]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### LightGBM  ·  brique
@@ -687,62 +687,62 @@
 
 ### LiteLLM  ·  brique
 - tags : `llm`, `llm-gateway`, `inference`
-- liens sortants : [[Comparatif - Frameworks LLM]], [[DSPy]], [[Guardrails]], [[Haystack]], [[LangChain]], [[LlamaIndex]], [[Ollama]], [[OmniRoute]], [[OpenRouter]], [[TGI]], [[vLLM]]
-- liens entrants : [[Agno]], [[CrewAI]], [[DSPy]], [[Dify]], [[Flowise]], [[Guardrails]], [[Haystack]], [[Headroom]], [[Helicone]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[LangGraph]], [[Langflow]], [[Langfuse]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Passerelles]], [[PraisonAI]], [[PydanticAI]], [[Reliability patterns]], [[Routing and cascading]], [[Runtimes]], [[Semantic Kernel]], [[promptfoo]], [[smolagents]], [[tool-use]]
+- liens sortants : [[Comparatif - Frameworks LLM]], [[DSPy]], [[Guardrails]], [[Haystack]], [[LangChain]], [[LlamaIndex]], [[Ollama]], [[OmniRoute]], [[OpenRouter]], [[Routing and cascading]], [[TGI]], [[vLLM]]
+- liens entrants : [[DSPy]], [[Dify]], [[Flowise]], [[Guardrails]], [[Haystack]], [[Headroom]], [[Helicone]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Langflow]], [[Langfuse]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Passerelles]], [[Reliability patterns]], [[Routing and cascading]], [[Runtimes]], [[smolagents]], [[tool-use]]
 
 ### LLaMA-Factory  ·  brique
 - tags : `fine-tuning`, `declarative-config`, `low-code`, `distributed-training`, `llm`
-- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[HuggingFace]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[Fine-tuning]], [[HuggingFace]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### llama.cpp  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[Ollama]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[needle]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Guidance]], [[LM Studio]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantization]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llmfit]], [[needle]], [[pi]], [[text-generation-webui]], [[vLLM]]
 
 ### LlamaIndex  ·  brique
 - tags : `llm`, `rag`, `embeddings`, `agents`
 - liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Docling]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[LlamaParse]], [[Qdrant]], [[RAG]], [[Reranking]], [[Text-to-SQL]], [[Unstructured]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[DeepEval]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]], [[TruLens]], [[promptfoo]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]]
 
 ### LlamaIndex NLSQLTableQueryEngine  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `retrieval`
-- liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain SQL agent]], [[LlamaIndex]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
+- liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain SQL agent]], [[LlamaIndex]], [[Text-to-SQL]]
 - liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[LangChain SQL agent]], [[LlamaIndex]], [[Text-to-SQL]]
 
 ### LlamaParse  ·  brique
 - tags : `document-parsing`, `rag`, `ocr`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PyMuPDF]], [[Unstructured]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[Parsing]], [[Unstructured]]
 - liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaIndex]], [[Marker]], [[Parsing]], [[Unstructured]]
 
 ### llmfit  ·  brique
 - tags : `local-llm`, `hardware-sizing`, `quantization`, `benchmark`, `terminal-ui`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Évaluation LLM]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Small Language Models]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Évaluation LLM]], [[LLM & IA générative]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Small Language Models]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[LLM & IA générative]], [[Modèles de langage]], [[Runtimes]], [[Small Language Models]]
 
 ### LM Studio  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[LM Studio Bionic]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio Bionic]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[text-generation-webui]], [[vLLM]]
 
 ### LM Studio Bionic  ·  brique
 - tags : `llm`, `agents`, `local-llm`, `mcp`, `code-generation`
-- liens sortants : [[AI security]], [[Agent patterns]], [[Agno]], [[Comparatif - Frameworks LLM]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
+- liens sortants : [[AI security]], [[Agent patterns]], [[Agno]], [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
 - liens entrants : [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]]
 
 ### Loki  ·  brique
 - tags : `observability`, `logging`, `distributed`
-- liens sortants : [[Elasticsearch]], [[Grafana]]
+- liens sortants : [[Elasticsearch]], [[Grafana]], [[Observabilité]]
 - liens entrants : [[Beszel]], [[Grafana]], [[Observabilité]]
 
 ### Mage  ·  brique
 - tags : `orchestration`, `data-pipeline`, `low-code`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Prefect]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Orchestration]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
 ### Maka  ·  brique
 - tags : `audit-log`, `agents`, `tool-use`, `ai-security`, `code-assistant`
-- liens sortants : [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[OpenHands]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[t3code]]
+- liens sortants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[OpenHands]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[t3code]]
 - liens entrants : [[Agents de code]], [[Assistants]], [[Comparatif - Assistants de code IA]], [[Harnais d'agent]], [[OpenHands]], [[t3code]]
 
 ### MariaDB  ·  brique
@@ -752,13 +752,13 @@
 
 ### Marimo  ·  brique
 - tags : `notebook`, `reproducibility`, `data-app`
-- liens sortants : [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
+- liens sortants : [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
 - liens entrants : [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[papermill]]
 
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
 
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
@@ -767,27 +767,27 @@
 
 ### matplotlib  ·  brique
 - tags : `dataviz`, `static-viz`
-- liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[pandas]], [[plotly]], [[seaborn]]
-- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[altair]], [[bokeh]], [[plotly]], [[seaborn]]
+- liens sortants : [[Comparatif - Visualisation]], [[Visualisation]], [[pandas]], [[seaborn]]
+- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[seaborn]]
 
 ### Maxun  ·  brique
 - tags : `web-scraping`, `low-code`
-- liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Scrapy]], [[Web scraping]]
+- liens sortants : [[Comparatif - Scraping]], [[Firecrawl]], [[Web scraping]]
 - liens entrants : [[Comparatif - Scraping]], [[Firecrawl]], [[Page to Markdown]], [[Scraping]], [[Web scraping]]
 
 ### mcpjam  ·  brique
 - tags : `mcp`, `testing`, `tool-use`
-- liens sortants : [[fastmcp]], [[mcp-protocol]], [[pytest]]
+- liens sortants : [[LLM & IA générative]], [[fastmcp]], [[mcp-protocol]], [[pytest]]
 - liens entrants : [[LLM & IA générative]], [[fastmcp]], [[mcp-protocol]]
 
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[draw.io]]
-- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Penpot]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Figma]], [[Penpot]], [[draw.io]]
 
 ### Metaflow  ·  brique
 - tags : `orchestration`, `ml-pipeline`
-- liens sortants : [[AWS S3]], [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Flyte]], [[MLflow]], [[ZenML]]
+- liens sortants : [[AWS S3]], [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Flyte]], [[MLflow]], [[Machine Learning]], [[ZenML]]
 - liens entrants : [[Comparatif - Orchestrateurs ML]], [[Flyte]], [[Machine Learning]], [[ZenML]]
 
 ### Microsoft SQL Server  ·  brique
@@ -807,57 +807,57 @@
 
 ### minim  ·  brique
 - tags : `web-scraping`
-- liens sortants : [[Firecrawl]], [[Scrapy]]
+- liens sortants : [[Comparatif - Scraping]], [[Web scraping]]
 - liens entrants : [[Comparatif - Scraping]], [[Scraping]]
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[SeaweedFS]], [[Stockage]]
 - liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Pattern - Stack démo ML locale multi-services]], [[SeaweedFS]], [[Stockage]], [[croc]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
-- liens sortants : [[Comparatif - Outils EDA - profiling]], [[Imputation des valeurs manquantes]], [[Mécanismes de données manquantes]], [[Notebooks-as-code]], [[sweetviz]], [[ydata-profiling]]
+- liens sortants : [[Comparatif - Outils EDA - profiling]], [[Imputation des valeurs manquantes]], [[Mécanismes de données manquantes]], [[sweetviz]], [[ydata-profiling]]
 - liens entrants : [[Comparatif - Outils EDA - profiling]], [[Data & pipelines]], [[EDA automatisée & profiling]], [[Mécanismes de données manquantes]], [[sweetviz]], [[ydata-profiling]]
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Déploiement de modèles]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]]
 - liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
 
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
-- liens sortants : [[Daytona]], [[E2B]], [[Hermes Agent]], [[Ray]], [[Sandboxing de code généré]]
+- liens sortants : [[Calcul distribué]], [[Daytona]], [[E2B]], [[Hermes Agent]], [[Ray]], [[Sandboxing de code généré]]
 - liens entrants : [[Calcul distribué]], [[Daytona]], [[E2B]], [[Hermes Agent]], [[Sandboxing de code généré]]
 
 ### Modin  ·  brique
 - tags : `dataframe`, `parallel`, `distributed`
-- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Polars]], [[pandas]]
+- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[Polars]], [[pandas]]
 - liens entrants : [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[Polars]], [[Ray]], [[pandas]]
 
 ### MongoDB  ·  brique
 - tags : `nosql`, `document-db`
-- liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[Postgres]], [[Redis]]
+- liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB Compass]], [[Postgres]], [[Redis]]
 - liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB Compass]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
 
 ### MongoDB Compass  ·  brique
 - tags : `db-client`, `document-db`, `nosql`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[MongoDB]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[MongoDB]]
 
 ### MySQL  ·  brique
 - tags : `relational`
-- liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[Postgres]], [[SQLite]]
+- liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[SQLite]]
 - liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### MySQL Workbench  ·  brique
 - tags : `db-client`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]], [[MySQL]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]], [[MySQL]]
 
 ### n8n  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
-- liens sortants : [[Activepieces]], [[Airflow]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Windmill]], [[Zapier]], [[gumloop]]
+- liens sortants : [[Activepieces]], [[Airflow]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Windmill]], [[Zapier]], [[gumloop]]
 - liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]]
 
 ### Nebula Graph  ·  brique
@@ -867,7 +867,7 @@
 
 ### needle  ·  brique
 - tags : `local-llm`, `small-language-model`, `quantization`, `tool-use`, `structured-output`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Constrained decoding]], [[GLiNER]], [[Instructor]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Quantization]], [[Routing and cascading]], [[Small Language Models]], [[Tool use patterns]], [[llama.cpp]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Constrained decoding]], [[GLiNER]], [[Inference optimization]], [[Instructor]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Quantization]], [[Routing and cascading]], [[Small Language Models]], [[Tool use patterns]], [[llama.cpp]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Ollama]], [[Runtimes]], [[Small Language Models]], [[llama.cpp]]
 
 ### Neo4j  ·  brique
@@ -877,43 +877,43 @@
 
 ### Neptune  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Weights & Biases]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
 - liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### neuralforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`, `gpu`
-- liens sortants : [[Prophet]], [[PyTorch]], [[darts]], [[statsforecast]]
+- liens sortants : [[Comparatif - Forecasting]], [[Forecasting framing]], [[Prophet]], [[PyTorch]], [[darts]], [[statsforecast]]
 - liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[Time series feature engineering]], [[darts]], [[pmdarima]], [[statsforecast]]
 
 ### NLTK  ·  brique
 - tags : `nlp`, `tokenization`, `text-classification`
-- liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[Tokenization]], [[Traitement du langage naturel]], [[spaCy]]
-- liens entrants : [[Comparatif - NLP]], [[NLP]], [[Traitement du langage naturel]], [[sentencepiece]], [[spaCy]]
+- liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[Tokenization]], [[Traitement du langage naturel]], [[spaCy]]
+- liens entrants : [[Comparatif - NLP]], [[NLP]], [[Traitement du langage naturel]], [[spaCy]]
 
 ### nnsight  ·  brique
 - tags : `explainability`, `llm`
-- liens sortants : [[Captum]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[Probing]], [[PyTorch]], [[Sparse autoencoders]], [[Transformer architectures]], [[TransformerLens]], [[interpreto]]
+- liens sortants : [[Captum]], [[Comparatif - Explicabilité]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[Probing]], [[Sparse autoencoders]], [[Transformer architectures]], [[TransformerLens]], [[interpreto]]
 - liens entrants : [[Captum]], [[Comparatif - Explicabilité]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[Probing]], [[Sparse autoencoders]], [[TransformerLens]], [[interpreto]]
 
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
-- liens sortants : [[CuPy]], [[Dask]], [[JAX]], [[Polars]], [[PyTorch]], [[pandas]], [[xarray]]
-- liens entrants : [[Algèbre linéaire]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Polars]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
+- liens sortants : [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[JAX]], [[PyTorch]], [[pandas]], [[xarray]]
+- liens entrants : [[Algèbre linéaire]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
 
 ### NVIDIA Triton  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[ONNX Runtime]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[ONNX Runtime]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TensorRT-LLM]], [[TorchServe]]
 
 ### Obsidian  ·  brique
 - tags : `note-taking`, `knowledge-graph`
-- liens sortants : —
+- liens sortants : [[Outils de développement]]
 - liens entrants : [[Outils de développement]]
 
 ### Ollama  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Harnais d'agent]], [[LM Studio]], [[LiteLLM]], [[OpenViking]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Harnais d'agent]], [[LM Studio]], [[LiteLLM]], [[OpenViking]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[Vanna]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
 
 ### OmniRoute  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `reliability`, `context-engineering`
@@ -922,57 +922,57 @@
 
 ### ONNX Runtime  ·  brique
 - tags : `inference`, `model-serving`, `inference-optimization`, `gpu`, `quantization`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[PyTorch]], [[TensorFlow]], [[TensorRT]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[Serving]], [[TensorRT]]
+- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[PyTorch]], [[TensorFlow]], [[TensorRT]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[Serving]], [[TensorRT]]
 
 ### OpenAI Agents SDK  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[OpenClaw]], [[OpenHands]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[Letta]], [[OpenClaw]], [[OpenHands]], [[smolagents]]
 
 ### OpenClaw  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Guardrails]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[OpenAI Agents SDK]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
-- liens entrants : [[Agent skills]], [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenMAIC]], [[Pattern - Agent sur LLM auto-hébergé]], [[mcp-protocol]]
+- liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Assistants]], [[Guardrails]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[LangGraph]], [[OpenAI Agents SDK]], [[OpenHands]], [[OpenMAIC]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
+- liens entrants : [[Agent skills]], [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenHands]], [[OpenMAIC]], [[Pattern - Agent sur LLM auto-hébergé]], [[mcp-protocol]]
 
 ### OpenCut  ·  brique
 - tags : `video-editing`, `privacy`
-- liens sortants : [[Claude Video]], [[SmartTube]], [[Video generation]], [[mcp-protocol]]
+- liens sortants : [[Claude Video]], [[Médias]], [[SmartTube]], [[Video generation]], [[mcp-protocol]]
 - liens entrants : [[Médias]], [[SmartTube]]
 
 ### OpenCV  ·  brique
 - tags : `computer-vision`, `object-detection`, `object-tracking`
-- liens sortants : [[Augmentation d'images]], [[Kornia]], [[PyTorch]], [[Suivi d'objets]], [[Vision par ordinateur]], [[albumentations]], [[timm]], [[torchvision]]
+- liens sortants : [[Comparatif - Détection & segmentation]], [[Kornia]], [[PyTorch]], [[Suivi d'objets]], [[Vision par ordinateur]], [[albumentations]], [[supervision]], [[timm]], [[torchvision]]
 - liens entrants : [[Comparatif - Détection & segmentation]], [[Kornia]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[supervision]], [[torchvision]]
 
 ### OpenDataLoader PDF  ·  brique
 - tags : `pdf`, `document-parsing`, `layout-analysis`, `table-extraction`, `markdown-conversion`, `rag`, `accessibility`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[PyMuPDF]], [[RAG]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[Page to Markdown]], [[Parsing]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]]
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[Parsing]], [[PyMuPDF]], [[RAG]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### OpenHands  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `code-generation`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[Maka]], [[OpenAI Agents SDK]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[Hermes Agent]], [[LangGraph]], [[Maka]], [[OpenAI Agents SDK]], [[OpenClaw]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
 - liens entrants : [[Assistants]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[Maka]], [[OpenClaw]]
 
 ### OpenMAIC  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `education`, `self-hosted`
-- liens sortants : [[Agent patterns]], [[CrewAI]], [[LangGraph]], [[Multi-agent systems]], [[OpenClaw]], [[PraisonAI]]
-- liens entrants : [[Assistants]], [[Multi-agent systems]]
+- liens sortants : [[Agent patterns]], [[Assistants]], [[CrewAI]], [[LangGraph]], [[Multi-agent systems]], [[OpenClaw]], [[PraisonAI]]
+- liens entrants : [[Assistants]], [[Multi-agent systems]], [[OpenClaw]]
 
 ### OpenRouter  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `inference`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Dify]], [[Flowise]], [[LangChain]], [[Langflow]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[Reliability patterns]], [[Routing and cascading]], [[TGI]], [[vLLM]]
-- liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[OmniRoute]], [[Passerelles]], [[Pattern - Agent sur LLM auto-hébergé]], [[Routing and cascading]], [[Runtimes]], [[needle]], [[pi]], [[promptfoo]]
+- liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[OmniRoute]], [[Passerelles]], [[Pattern - Agent sur LLM auto-hébergé]], [[Routing and cascading]], [[Runtimes]], [[needle]], [[pi]]
 
 ### OpenSpiel  ·  brique
 - tags : `reinforcement-learning`, `game-theory`
-- liens sortants : [[AlphaZero and self-play]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Stable-Baselines3]], [[Théorie des jeux]]
+- liens sortants : [[AlphaZero and self-play]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Théorie des jeux]]
 - liens entrants : [[AlphaZero and self-play]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Théorie des jeux]]
 
 ### OpenViking  ·  brique
 - tags : `agent-memory`, `rag`, `context-engineering`, `agents`, `retrieval`, `mcp`
-- liens sortants : [[Agent memory]], [[Agent skills]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Hermes Agent]], [[Letta]], [[Ollama]], [[Qdrant]], [[RAG]], [[ai-memory]], [[pgvector]]
+- liens sortants : [[Agent memory]], [[Agent skills]], [[Context engineering]], [[Hermes Agent]], [[LLM & IA générative]], [[Letta]], [[Ollama]], [[Qdrant]], [[RAG]], [[ai-memory]], [[pgvector]]
 - liens entrants : [[Agent memory]], [[Hermes Agent]], [[LLM & IA générative]], [[Letta]], [[ai-memory]]
 
 ### Optuna  ·  brique
@@ -982,63 +982,63 @@
 
 ### osint4all  ·  brique
 - tags : `osint`
-- liens sortants : [[Web-Check]], [[public-apis]]
+- liens sortants : [[Sécurité]], [[Web-Check]], [[public-apis]]
 - liens entrants : [[Sécurité]], [[Web-Check]]
 
 ### Outlines  ·  brique
 - tags : `structured-output`, `decoding`, `llm`
-- liens sortants : [[Constrained decoding]], [[Decoding strategies]], [[Guidance]], [[Instructor]], [[Ollama]], [[Pydantic]], [[SGLang]], [[Structured outputs]], [[TGI]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
+- liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Guidance]], [[Instructor]], [[Ollama]], [[Pydantic]], [[SGLang]], [[Structured outputs]], [[TGI]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Guidance]], [[Instructor]], [[LLM & IA générative]], [[Sortie typée]], [[Structured outputs]], [[needle]]
 
 ### PaCMAP  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
-- liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens sortants : [[Comparatif - Réduction de dimension]], [[PCA]], [[Réduction de dimension]], [[t-SNE and UMAP]], [[umap-learn]]
 - liens entrants : [[Analyse factorielle]], [[Comparatif - Réduction de dimension]], [[Machine Learning]], [[Non supervisé]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Comparatif - Scraping]], [[Docling]], [[Firecrawl]], [[Maxun]], [[OpenDataLoader PDF]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Comparatif - Scraping]], [[Docling]], [[Documents]], [[Firecrawl]], [[Maxun]], [[OpenDataLoader PDF]]
 - liens entrants : [[Documents]]
 
 ### pandas  ·  brique
 - tags : `dataframe`, `in-memory`
-- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Modin]], [[Polars]], [[numpy]]
-- liens entrants : [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[seaborn]], [[xarray]]
+- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[DuckDB]], [[Modin]], [[Polars]], [[numpy]]
+- liens entrants : [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[DuckDB]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[seaborn]], [[xarray]]
 
 ### papermill  ·  brique
 - tags : `notebook`, `reproducibility`
-- liens sortants : [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]], [[uv]]
+- liens sortants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]]
 - liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[jupytext]]
 
 ### Parquet  ·  brique
 - tags : `file-format`, `columnar`, `olap`
-- liens sortants : [[Apache Iceberg]], [[Avro]], [[Polars]], [[Postgres]]
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[Spark]]
 - liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Partitionnement & layout de données]], [[Spark]]
 
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
 
 ### pdfplumber  ·  brique
 - tags : `pdf`, `table-extraction`, `document-parsing`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
 
 ### Penpot  ·  brique
 - tags : `design-tool`
-- liens sortants : [[Comparatif - Design & prototypage]], [[Excalidraw]], [[Figma]], [[Mermaid]], [[draw.io]]
+- liens sortants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Excalidraw]], [[Figma]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Comparatif - Design & prototypage]], [[Design & diagrammes]], [[Figma]]
 
 ### pgAdmin  ·  brique
 - tags : `db-client`, `postgres`, `relational`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Postgres]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Postgres]]
 
 ### pgvector  ·  brique
 - tags : `vector-db`, `rag`, `postgres`
-- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Weaviate]]
-- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[TimescaleDB]], [[Vectoriel]], [[Weaviate]]
+- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[Weaviate]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[LlamaIndex]], [[Milvus]], [[OpenViking]], [[Pinecone]], [[Postgres]], [[Qdrant]], [[TimescaleDB]], [[Vanna]], [[Vectoriel]], [[Weaviate]]
 
 ### Phoenix Arize  ·  brique
 - tags : `llm`, `llm-observability`, `llm-eval`, `tracing`
@@ -1047,7 +1047,7 @@
 
 ### pi  ·  brique
 - tags : `code-assistant`, `agents`, `local-llm`, `terminal-ui`, `tool-use`
-- liens sortants : [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[OpenRouter]], [[Sandboxing de code généré]], [[agent-loops]], [[freebuff]], [[llama.cpp]], [[tool-use]]
+- liens sortants : [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[OpenRouter]], [[Sandboxing de code généré]], [[agent-loops]], [[freebuff]], [[llama.cpp]], [[tool-use]]
 - liens entrants : [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[freebuff]]
 
 ### Pinecone  ·  brique
@@ -1062,53 +1062,53 @@
 
 ### pip  ·  brique
 - tags : `package-manager`
-- liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[uv]]
+- liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Outils de développement]], [[uv]]
 - liens entrants : [[Comparatif - Gestionnaires de paquets Python]], [[Outils de développement]], [[uv]]
 
 ### Playwright  ·  brique
 - tags : `web-scraping`
-- liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Scrapling]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
-- liens entrants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Comparatif - Scraping]], [[Crawlee]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
 
 ### plotly  ·  brique
 - tags : `dataviz`, `interactive-viz`
-- liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[seaborn]]
-- liens entrants : [[Comparatif - Visualisation]], [[Dash]], [[Streamlit]], [[Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[seaborn]]
+- liens sortants : [[Comparatif - Visualisation]], [[Dash]], [[Visualisation]], [[altair]], [[bokeh]]
+- liens entrants : [[Comparatif - Visualisation]], [[Dash]], [[Streamlit]], [[Visualisation]], [[altair]], [[bokeh]]
 
 ### pmdarima  ·  brique
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
 - liens entrants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Séries temporelles]], [[darts]], [[statsforecast]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
-- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Modin]], [[numpy]], [[pandas]]
-- liens entrants : [[ADBC]], [[Calcul distribué]], [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[numpy]], [[pandas]], [[xarray]]
+- liens sortants : [[ADBC]], [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[DuckDB]], [[Modin]], [[connectorx]], [[pandas]]
+- liens entrants : [[ADBC]], [[Calcul distribué]], [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[DuckDB]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[connectorx]], [[datasets]], [[jupysql]], [[pandas]]
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
-- liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLite]], [[pgvector]]
-- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Grafana]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[pgAdmin]], [[psycopg2]]
+- liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLAlchemy]], [[SQLite]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
-- liens sortants : [[Bruno]], [[Comparatif - Clients d'API]]
+- liens sortants : [[Bruno]], [[Comparatif - Clients d'API]], [[Outils de développement]]
 - liens entrants : [[Bruno]], [[Comparatif - Clients d'API]], [[Outils de développement]], [[public-apis]]
 
 ### PraisonAI  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `low-code`, `mcp`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Dify]], [[Instructor]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[Multi-agent systems]], [[PydanticAI]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Dify]], [[Langflow]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[smolagents]]
 - liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenMAIC]], [[smolagents]]
 
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Dask]], [[Kestra]], [[Mage]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Dask]], [[Kestra]], [[Mage]], [[Orchestration]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Temporal]], [[Windmill]], [[n8n]]
 
 ### Prince  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
-- liens sortants : [[CA]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[FAMD]], [[Fanalysis]], [[MCA]], [[MFA]], [[PCA]], [[Scikit-Learn]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[Fanalysis]], [[PCA]], [[Scikit-Learn]], [[Statistiques & inférence]], [[scipy.stats]]
+- liens sortants : [[CA]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[FAMD]], [[Fanalysis]], [[MCA]], [[MFA]], [[PCA]], [[Scikit-Learn]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Comparatif - Outils stats]], [[Comparatif - Réduction de dimension]], [[Fanalysis]], [[PCA]], [[Scikit-Learn]], [[Statistiques & inférence]]
 
 ### Prisma  ·  brique
 - tags : `orm`, `relational`
@@ -1117,83 +1117,83 @@
 
 ### promptfoo  ·  brique
 - tags : `llm`, `llm-eval`, `testing`, `ai-security`
-- liens sortants : [[AI security]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangChain]], [[Langfuse]], [[LiteLLM]], [[LlamaIndex]], [[OpenRouter]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]]
+- liens sortants : [[AI security]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]]
 - liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Ragas]], [[TruLens]], [[Évaluation]]
 
 ### Prophet  ·  brique
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[Chronos]], [[Forecasting framing]], [[darts]], [[neuralforecast]], [[statsforecast]]
+- liens sortants : [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Intermittent demand]], [[darts]], [[neuralforecast]], [[statsforecast]]
 - liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[STUMPY]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[statsforecast]]
 
 ### psycopg2  ·  brique
 - tags : `postgres`, `relational`, `db-driver`
-- liens sortants : [[Alembic]], [[Postgres]], [[SQLAlchemy]]
-- liens entrants : [[ADBC]], [[Bases de données]], [[connectorx]], [[jupysql]]
+- liens sortants : [[Alembic]], [[Bases de données]], [[Postgres]], [[SQLAlchemy]]
+- liens entrants : [[ADBC]], [[Bases de données]], [[Postgres]], [[SQLAlchemy]], [[connectorx]], [[jupysql]]
 
 ### public-apis  ·  brique
 - tags : —
-- liens sortants : [[Bruno]], [[Comparatif - Clients d'API]], [[Postman]]
+- liens sortants : [[Bruno]], [[Postman]], [[Web & API]]
 - liens entrants : [[Web & API]], [[osint4all]]
 
 ### PuLP  ·  brique
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Optimisation]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]]
 - liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
 
 ### Pydantic  ·  brique
 - tags : `data-validation`, `type-hints`
-- liens sortants : [[Pydantic Settings]]
-- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]], [[Web & API]]
+- liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[SQLModel]]
+- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]], [[Typer]], [[Web & API]]
 
 ### Pydantic Settings  ·  brique
 - tags : `config`, `data-validation`
-- liens sortants : [[Pydantic]], [[dynaconf]], [[hydra]], [[python-dotenv]]
+- liens sortants : [[Outils de développement]], [[Pydantic]], [[dynaconf]], [[hydra]], [[python-dotenv]]
 - liens entrants : [[Outils de développement]], [[Pydantic]], [[Rule - Config typée]], [[dynaconf]], [[hydra]], [[python-dotenv]]
 
 ### PydanticAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `structured-output`, `type-hints`
-- liens sortants : [[Comparatif - Frameworks LLM]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[Pydantic]], [[Structured outputs]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Guardrails]], [[Guidance]], [[Human-in-the-loop]], [[Instructor]], [[LangChain]], [[Langflow]], [[PraisonAI]], [[Structured outputs]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[tool-use]]
+- liens sortants : [[Agents]], [[Comparatif - Frameworks LLM]], [[Instructor]], [[LangChain]], [[Pydantic]], [[Structured outputs]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Comparatif - Frameworks LLM]], [[Guardrails]], [[Guidance]], [[Human-in-the-loop]], [[Instructor]], [[LangChain]], [[Langflow]], [[Structured outputs]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[tool-use]]
 
 ### PyJWT  ·  brique
 - tags : `authentication`, `cryptography`
-- liens sortants : [[FastAPI]]
+- liens sortants : [[FastAPI]], [[Sécurité]]
 - liens entrants : [[Sécurité]]
 
 ### pykan  ·  brique
 - tags : `deep-learning`
-- liens sortants : [[Kolmogorov-Arnold Networks]], [[PyTorch]], [[Scikit-Learn]], [[Transformer architectures]]
-- liens entrants : [[Apprentissage profond]], [[Kolmogorov-Arnold Networks]]
+- liens sortants : [[Apprentissage profond]], [[Kolmogorov-Arnold Networks]], [[PyTorch]], [[Scikit-Learn]], [[Transformer architectures]]
+- liens entrants : [[Apprentissage profond]], [[Kolmogorov-Arnold Networks]], [[PyTorch]]
 
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
-- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Stan]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Stan]], [[Statistiques & inférence]], [[lifelines]]
+- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Stan]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
 
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
-- liens sortants : [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[STUMPY]], [[Scikit-Learn]]
+- liens sortants : [[Apprentissage non supervisé]], [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[STUMPY]], [[Scikit-Learn]]
 - liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[STUMPY]]
 
 ### pytest  ·  brique
 - tags : `testing`
-- liens sortants : [[testcontainers]]
+- liens sortants : [[Outils de développement]], [[testcontainers]]
 - liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Rule - Qualité stricte]], [[jupytext]], [[mcpjam]], [[testcontainers]]
 
 ### python-dotenv  ·  brique
 - tags : `config`
-- liens sortants : [[Pydantic Settings]], [[dynaconf]], [[hydra]]
+- liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
 - liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
 
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
-- liens sortants : [[BentoML]], [[Entraînement distribué]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[Keras]], [[LightGBM]], [[Mixed precision]], [[NVIDIA Triton]], [[Optuna]], [[Pruning]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[TorchServe]], [[XGBoost]], [[accelerate]]
-- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Comparatif - Calcul distribué]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Ray Serve]], [[Reward modeling]], [[River]], [[SAELens]], [[SFT]], [[SGLang]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[TransformerLens]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[interpreto]], [[neuralforecast]], [[nnsight]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
+- liens sortants : [[Apprentissage profond]], [[BentoML]], [[DeepSpeed]], [[Entraînement distribué]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[Keras]], [[LightGBM]], [[Mixed precision]], [[NVIDIA Triton]], [[Optuna]], [[Pruning]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[TorchServe]], [[XGBoost]], [[accelerate]], [[pykan]]
+- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Comparatif - Calcul distribué]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Reward modeling]], [[River]], [[SFT]], [[SGLang]], [[SHAP]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[neuralforecast]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
 
 ### PyTorch Geometric  ·  brique
 - tags : `gnn`, `deep-learning`, `gpu`, `representation-learning`
@@ -1202,27 +1202,27 @@
 
 ### PyTorch Lightning  ·  brique
 - tags : `deep-learning`, `gpu`, `distributed`
-- liens sortants : [[DeepSpeed]], [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[accelerate]]
+- liens sortants : [[Apprentissage profond]], [[DeepSpeed]], [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[accelerate]]
 - liens entrants : [[Apprentissage profond]], [[DeepSpeed]], [[Entraînement distribué]], [[Keras]], [[PyTorch]], [[accelerate]]
 
 ### pytorch-crf  ·  brique
 - tags : `sequence-labeling`, `ner`, `deep-learning`
-- liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[PyTorch]], [[spaCy]]
+- liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[PyTorch]]
 - liens entrants : [[Comparatif - NLP]], [[NER et étiquetage de séquence]], [[NLP]]
 
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
-- liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+- liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Index ANN — internes]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[DSPy]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[Vanna]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
-- liens sortants : [[Marimo]], [[Notebooks-as-code]], [[jupytext]], [[papermill]], [[uv]]
+- liens sortants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[jupytext]], [[papermill]], [[uv]]
 - liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[jupytext]], [[papermill]]
 
 ### Ragas  ·  brique
@@ -1232,48 +1232,48 @@
 
 ### RAGatouille  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `nlp`
-- liens sortants : [[Bases de données vectorielles]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[sentence-transformers]]
+- liens sortants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[sentence-transformers]]
 - liens entrants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Late-interaction retrieval]], [[RAG & retrieval]]
 
 ### rank-bm25  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
-- liens sortants : [[BM25]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[RAG]], [[Recherche d'information]], [[bm25s]], [[sentence-transformers]]
+- liens sortants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[Recherche d'information]], [[bm25s]], [[sentence-transformers]]
 - liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[Traitement du langage naturel]], [[bm25s]], [[sentence-transformers]]
 
 ### Ray  ·  brique
 - tags : `distributed`, `parallel`, `gpu`
-- liens sortants : [[Comparatif - Calcul distribué]], [[Dask]], [[Modin]], [[Polars]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[pandas]]
+- liens sortants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Modin]], [[Polars]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[pandas]]
 - liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Serving de modèles]], [[Dask]], [[E2B]], [[Modal]], [[Ray Serve]], [[Ray Tune]], [[Spark]]
 
 ### Ray Serve  ·  brique
 - tags : `model-serving`, `inference`, `distributed`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray]], [[Ray Tune]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### Ray Tune  ·  brique
 - tags : `hyperparameter-tuning`, `distributed`, `bayesian`
-- liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Scikit-Learn]], [[XGBoost]]
+- liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Scikit-Learn]]
 - liens entrants : [[Comparatif - Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Machine Learning]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Suivi d'expériences]]
 
 ### Redis  ·  brique
 - tags : `nosql`, `key-value`, `in-memory`
-- liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB]], [[Postgres]]
+- liens sortants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[MongoDB]], [[Postgres]], [[Redis Insight]]
 - liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Comparatif - Bases NoSQL]], [[Feast]], [[LLM caching]], [[MongoDB]], [[Redis Insight]]
 
 ### Redis Insight  ·  brique
 - tags : `db-client`, `key-value`, `in-memory`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Redis]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[Redis]]
 
 ### Rich  ·  brique
 - tags : `terminal-ui`
-- liens sortants : [[Typer]]
+- liens sortants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Typer]]
 - liens entrants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Typer]]
 
 ### River  ·  brique
 - tags : `streaming`, `concept-drift`
-- liens sortants : [[Data drift]], [[Keras]], [[PyTorch]], [[Scikit-Learn]]
-- liens entrants : [[Data drift]], [[Evidently]], [[Isolation Forest]], [[Machine Learning]], [[Socle]]
+- liens sortants : [[Data drift]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[Socle]]
+- liens entrants : [[Data drift]], [[Evidently]], [[Isolation Forest]], [[Machine Learning]], [[Scikit-Learn]], [[Socle]]
 
 ### RLax  ·  brique
 - tags : `reinforcement-learning`
@@ -1282,12 +1282,12 @@
 
 ### Ruff  ·  brique
 - tags : `linter`, `formatter`
-- liens sortants : [[uv]]
+- liens sortants : [[Outils de développement]], [[uv]]
 - liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Rule - Qualité stricte]], [[Rule - Toolchain Python]], [[jupytext]], [[uv]]
 
 ### SAELens  ·  brique
 - tags : `explainability`, `llm`
-- liens sortants : [[Autoencodeurs]], [[Captum]], [[Interprétabilité mécaniste]], [[PyTorch]], [[SHAP]], [[Sparse autoencoders]], [[Superposition]], [[TransformerLens]], [[interpreto]]
+- liens sortants : [[Autoencodeurs]], [[Captum]], [[Comparatif - Explicabilité]], [[Interprétabilité mécaniste]], [[SHAP]], [[Sparse autoencoders]], [[Superposition]], [[TransformerLens]], [[interpreto]]
 - liens entrants : [[Comparatif - Explicabilité]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[Sparse autoencoders]], [[Superposition]], [[TransformerLens]], [[interpreto]]
 
 ### ScaNN  ·  brique
@@ -1297,8 +1297,8 @@
 
 ### Scikit-Learn  ·  brique
 - tags : `supervised`, `unsupervised`, `dimensionality-reduction`, `model-evaluation`
-- liens sortants : [[CatBoost]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Encodage des variables catégorielles]], [[Fanalysis]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[JAX]], [[K-Means]], [[LightGBM]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Prince]], [[PyTorch]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Réduction de dimension]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Sélection de variables]], [[TensorFlow]], [[Validation croisée]], [[XGBoost]], [[category_encoders]], [[hdbscan]], [[scipy.stats]], [[statsmodels]], [[umap-learn]]
-- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Machine Learning]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[PaCMAP]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Serve]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVD]], [[SVM]], [[SetFit]], [[Socle]], [[Statistiques & inférence]], [[Sélection de variables]], [[TF-IDF]], [[Tabulaire]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
+- liens sortants : [[CatBoost]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Encodage des variables catégorielles]], [[Fanalysis]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[JAX]], [[K-Means]], [[LightGBM]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Prince]], [[PyTorch]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[River]], [[Réduction de dimension]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]], [[Socle]], [[Sélection de variables]], [[TensorFlow]], [[Validation croisée]], [[XGBoost]], [[category_encoders]], [[hdbscan]], [[scipy.stats]], [[statsmodels]], [[umap-learn]]
+- liens entrants : [[AdaBoost]], [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[BentoML]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[ClearML]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Cross-entropy]], [[DBSCAN]], [[Eigendecomposition]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Extra Trees]], [[Featuretools]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[JAX]], [[K-Means]], [[Keras]], [[LightGBM]], [[Local Outlier Factor]], [[MLflow]], [[Machine Learning]], [[Manifold learning]], [[Mise à l'échelle]], [[Mutual information]], [[NMF]], [[Naive Bayes]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PCA]], [[Perceptron et MLP]], [[Prince]], [[Probing]], [[PyOD]], [[PyTorch]], [[PyTorch Lightning]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SHAP]], [[SVD]], [[SVM]], [[SetFit]], [[Socle]], [[Statistiques & inférence]], [[Sélection de variables]], [[TF-IDF]], [[Tabulaire]], [[TensorFlow]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Walk-forward CV]], [[XGBoost]], [[category_encoders]], [[evaluate]], [[hdbscan]], [[imbalanced-learn]], [[k-NN]], [[pykan]], [[seqeval]], [[spaCy]], [[statsmodels]], [[umap-learn]]
 
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
@@ -1307,8 +1307,8 @@
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
-- liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Intervalles de confiance]], [[Prince]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[statsmodels]]
-- liens entrants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Prince]], [[Probabilités]], [[PyMC]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests & estimation]], [[Wasserstein distance]], [[lifelines]], [[pingouin]], [[statsmodels]]
+- liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[statsmodels]]
+- liens entrants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Probabilités]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests & estimation]], [[Wasserstein distance]], [[pingouin]], [[statsmodels]]
 
 ### Scrapling  ·  brique
 - tags : `web-scraping`
@@ -1318,7 +1318,7 @@
 ### Scrapy  ·  brique
 - tags : `web-scraping`
 - liens sortants : [[Comparatif - Scraping]], [[Crawlee]], [[Playwright]], [[Scrapling]], [[Web scraping]], [[selectolax]]
-- liens entrants : [[Comparatif - Scraping]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Scraping]], [[Scrapling]], [[Web scraping]], [[minim]]
+- liens entrants : [[Comparatif - Scraping]], [[Crawlee]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Web scraping]], [[selectolax]]
 
 ### SDV  ·  brique
 - tags : `synthetic-data`, `generative-model`, `gan`
@@ -1327,47 +1327,47 @@
 
 ### seaborn  ·  brique
 - tags : `dataviz`, `statistical-viz`, `static-viz`
-- liens sortants : [[Comparatif - Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[pandas]], [[plotly]]
-- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[bokeh]], [[matplotlib]], [[plotly]]
+- liens sortants : [[Comparatif - Visualisation]], [[Visualisation]], [[matplotlib]], [[pandas]]
+- liens entrants : [[Comparatif - Visualisation]], [[Visualisation]], [[matplotlib]]
 
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Stockage]]
 - liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Stockage]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
-- liens sortants : [[Detectron2]], [[Détection d'objets]], [[HuggingFace]], [[Modèles de fondation vision]], [[PyTorch]], [[Segment Anything (SAM)]], [[Segmentation]], [[Ultralytics YOLO]], [[supervision]], [[torchvision]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[supervision]]
+- liens sortants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[HuggingFace]], [[Modèles de fondation vision]], [[PyTorch]], [[Segment Anything (SAM)]], [[Segmentation]], [[supervision]], [[torchvision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Segment Anything (SAM)]], [[Vision]], [[supervision]]
 
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### selectolax  ·  brique
 - tags : `web-scraping`, `document-parsing`
-- liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Web scraping]], [[curl_cffi]]
+- liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Scrapy]], [[Web scraping]], [[curl_cffi]]
 - liens entrants : [[Comparatif - Scraping]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapy]], [[Web scraping]], [[curl_cffi]]
 
 ### Semantic Kernel  ·  brique
 - tags : `llm`, `agents`, `tool-use`
-- liens sortants : [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangChain]], [[LangGraph]], [[LiteLLM]]
+- liens sortants : [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[LangChain]], [[Tool use patterns]]
 - liens entrants : [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[LangChain]]
 
 ### sentence-transformers  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `reranking`, `nlp`
-- liens sortants : [[Comparatif - NLP]], [[Elasticsearch]], [[HuggingFace]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[embeddings]], [[rank-bm25]]
-- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens sortants : [[Comparatif - NLP]], [[Elasticsearch]], [[HuggingFace]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[embeddings]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### sentencepiece  ·  brique
 - tags : `tokenization`, `nlp`
-- liens sortants : [[HuggingFace]], [[NLTK]], [[Tokenization]], [[spaCy]]
-- liens entrants : [[Comparatif - NLP]], [[NLP]], [[Tokenization]]
+- liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[Tokenization]], [[Traitement du langage naturel]]
+- liens entrants : [[Comparatif - NLP]], [[HuggingFace]], [[NLP]], [[Tokenization]]
 
 ### seqeval  ·  brique
 - tags : `ner`, `sequence-labeling`, `model-evaluation`, `nlp`
-- liens sortants : [[Classification metrics]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[Scikit-Learn]], [[evaluate]]
+- liens sortants : [[Classification metrics]], [[NER et étiquetage de séquence]], [[Scikit-Learn]], [[evaluate]], [[Évaluation de modèles]]
 - liens entrants : [[Comparatif - NLP]], [[Machine Learning]], [[NER et étiquetage de séquence]], [[NLP]], [[evaluate]], [[Évaluation de modèles]]
 
 ### SetFit  ·  brique
@@ -1377,53 +1377,53 @@
 
 ### SGLang  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PyTorch]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PyTorch]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Runtimes]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### SHAP  ·  brique
 - tags : `explainability`, `supervised`
-- liens sortants : [[Captum]], [[CatBoost]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[GAM]], [[GLM]], [[LIME]], [[LightGBM]], [[XGBoost]], [[interpreto]]
+- liens sortants : [[Captum]], [[CatBoost]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[GAM]], [[GLM]], [[LIME]], [[LightGBM]], [[PyTorch]], [[Scikit-Learn]], [[XGBoost]], [[interpreto]]
 - liens entrants : [[Captum]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[Interprétabilité]], [[LIME]], [[SAELens]], [[Tabulaire]], [[interpreto]]
 
 ### Shiny for Python  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Streamlit]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 
 ### SmartTube  ·  brique
 - tags : `media-player`, `privacy`
-- liens sortants : [[OpenCut]], [[Video generation]]
+- liens sortants : [[Médias]], [[OpenCut]], [[Video generation]]
 - liens entrants : [[Médias]], [[OpenCut]]
 
 ### smolagents  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LangGraph]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LangGraph]], [[Letta]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[PraisonAI]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[Letta]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]]
 
 ### Sniffnet  ·  brique
 - tags : `networking`, `traffic-analysis`
-- liens sortants : [[Beszel]], [[Docker]], [[Web-Check]]
+- liens sortants : [[Beszel]], [[Docker]], [[Réseau]], [[Web-Check]]
 - liens entrants : [[Beszel]], [[Réseau]], [[Web-Check]], [[croc]]
 
 ### spaCy  ·  brique
 - tags : `nlp`, `ner`, `sequence-labeling`, `tokenization`
 - liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[GLiNER]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[NLTK]], [[Scikit-Learn]], [[Tokenization]], [[Traitement du langage naturel]]
-- liens entrants : [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[GLiNER]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[TF-IDF]], [[Traitement du langage naturel]], [[pytorch-crf]], [[sentencepiece]]
+- liens entrants : [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[GLiNER]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[TF-IDF]], [[Traitement du langage naturel]]
 
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
-- liens sortants : [[Apache Iceberg]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
-- liens entrants : [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Hyperopt]], [[Ray]]
+- liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
+- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Flink]], [[Hyperopt]], [[Parquet]], [[Ray]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
-- liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Continue]]
-- liens entrants : [[Agents de code]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[i-have-adhd]]
+- liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[i-have-adhd]]
 
 ### SQLAlchemy  ·  brique
 - tags : `orm`, `relational`, `type-hints`
-- liens sortants : [[Alembic]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[SQLModel]]
-- liens entrants : [[ADBC]], [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Migrations de schéma]], [[ORM]], [[Prisma]], [[SQLModel]], [[connectorx]], [[psycopg2]]
+- liens sortants : [[Alembic]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[SQLModel]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[Alembic]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Migrations de schéma]], [[ORM]], [[Postgres]], [[Prisma]], [[SQLModel]], [[connectorx]], [[psycopg2]]
 
 ### SQLite  ·  brique
 - tags : `relational`, `embedded`
@@ -1433,36 +1433,36 @@
 ### SQLModel  ·  brique
 - tags : `orm`, `relational`, `type-hints`, `data-validation`
 - liens sortants : [[Alembic]], [[Comparatif - ORM]], [[FastAPI]], [[ORM]], [[Prisma]], [[Pydantic]], [[SQLAlchemy]]
-- liens entrants : [[Bases de données]], [[Comparatif - ORM]], [[ORM]], [[Prisma]], [[SQLAlchemy]]
+- liens entrants : [[Alembic]], [[Bases de données]], [[Comparatif - ORM]], [[FastAPI]], [[ORM]], [[Prisma]], [[Pydantic]], [[SQLAlchemy]]
 
 ### Stable-Baselines3  ·  brique
 - tags : `reinforcement-learning`, `deep-learning`
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[Comparatif - Reinforcement learning]], [[Gymnasium]], [[PPO]], [[PyTorch]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[TF-Agents]]
-- liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[Gymnasium]], [[OpenSpiel]], [[PPO]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[TF-Agents]]
+- liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[Gymnasium]], [[PPO]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[TF-Agents]]
 
 ### Stan  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`
-- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Statistiques & inférence]], [[lifelines]]
+- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Statistiques & inférence]]
 
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
-- liens sortants : [[ARIMA SARIMA]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]]
+- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]]
 - liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]]
 
 ### statsmodels  ·  brique
 - tags : `statistical-inference`, `hypothesis-testing`, `parametric-test`, `p-value`
 - liens sortants : [[Comparatif - Outils stats]], [[GAM]], [[GLM]], [[Régression linéaire]], [[Scikit-Learn]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
-- liens entrants : [[ArviZ]], [[CausalImpact]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence causale]], [[Prince]], [[PyMC]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Stan]], [[Statistiques & inférence]], [[Tests & estimation]], [[lifelines]], [[pingouin]], [[scipy.stats]]
+- liens entrants : [[CausalImpact]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence causale]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Tests & estimation]], [[pingouin]], [[scipy.stats]]
 
 ### Stirling PDF  ·  brique
 - tags : `pdf`, `ocr`, `self-hosted`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Documents]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]]
 - liens entrants : [[Documents]], [[OCR]], [[OpenDataLoader PDF]]
 
 ### Streamlit  ·  brique
 - tags : `data-app`, `web-framework`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[plotly]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Shiny for Python]], [[plotly]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Grafana]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Web & API]]
 
 ### STUMPY  ·  brique
@@ -1472,133 +1472,133 @@
 
 ### supervision  ·  brique
 - tags : `object-detection`, `object-tracking`, `computer-vision`
-- liens sortants : [[Detectron2]], [[Détection d'objets]], [[HuggingFace]], [[OpenCV]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
+- liens sortants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[OpenCV]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision par ordinateur]], [[segment-anything]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[OpenCV]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
 
 ### Superwhisper  ·  brique
 - tags : `speech`, `multimodal`, `local-llm`
-- liens sortants : [[Claude Video]], [[Inference optimization]], [[Quantization]], [[Speech models]]
-- liens entrants : [[Médias]], [[Speech models]]
+- liens sortants : [[Claude Video]], [[Inference optimization]], [[Médias]], [[Quantization]], [[Speech models]]
+- liens entrants : [[Claude Video]], [[Médias]], [[Speech models]]
 
 ### swarm-forge  ·  brique
 - tags : `multi-agent`, `agents`, `code-assistant`, `cli`, `version-control`
-- liens sortants : [[Agent patterns]], [[AutoGen]], [[Comparatif - Assistants de code IA]], [[CrewAI]], [[Harnais d'agent]], [[Multi-agent systems]], [[agent-loops]]
+- liens sortants : [[Agent patterns]], [[Agents de code]], [[AutoGen]], [[Comparatif - Assistants de code IA]], [[CrewAI]], [[Harnais d'agent]], [[Multi-agent systems]], [[agent-loops]]
 - liens entrants : [[Agents de code]], [[AutoGen]], [[Comparatif - Assistants de code IA]], [[CrewAI]], [[Multi-agent systems]]
 
 ### sweetviz  ·  brique
 - tags : `eda`, `statistical-viz`, `dataframe`
-- liens sortants : [[Comparatif - Outils EDA - profiling]], [[EDA automatisée & profiling]], [[Notebooks-as-code]], [[missingno]], [[ydata-profiling]]
+- liens sortants : [[Comparatif - Outils EDA - profiling]], [[EDA automatisée & profiling]], [[missingno]], [[ydata-profiling]]
 - liens entrants : [[Comparatif - Outils EDA - profiling]], [[Data & pipelines]], [[EDA automatisée & profiling]], [[missingno]], [[ydata-profiling]]
 
 ### t3code  ·  brique
 - tags : `code-assistant`, `agents`, `code-generation`
-- liens sortants : [[Agent patterns]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Maka]], [[agent-loops]]
+- liens sortants : [[Agent patterns]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Maka]], [[agent-loops]]
 - liens entrants : [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Maka]]
 
 ### Temporal  ·  brique
 - tags : `orchestration`, `durable-execution`, `distributed`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Mage]], [[Postgres]], [[Prefect]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Mage]], [[Orchestration]], [[Postgres]], [[Prefect]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Windmill]]
 
 ### TensorBoard  ·  brique
 - tags : `experiment-tracking`, `deep-learning`, `dataviz`
-- liens sortants : [[Aim]], [[HuggingFace]], [[MLflow]], [[Optuna]], [[PyTorch]], [[TensorFlow]], [[Weights & Biases]]
+- liens sortants : [[Aim]], [[Comparatif - Suivi d'expériences ML]], [[HuggingFace]], [[MLflow]], [[Optuna]], [[PyTorch]], [[Suivi d'expériences]], [[TensorFlow]], [[Weights & Biases]]
 - liens entrants : [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### TensorFlow  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
-- liens sortants : [[HuggingFace]], [[JAX]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow Serving]], [[XGBoost]]
-- liens entrants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]], [[Scikit-Learn]], [[TF-Agents]], [[TensorBoard]], [[TensorFlow Serving]], [[Weights & Biases]]
+- liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow Serving]], [[XGBoost]]
+- liens entrants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]], [[Scikit-Learn]], [[TF-Agents]], [[TensorBoard]], [[TensorFlow Serving]], [[Weights & Biases]], [[accelerate]]
 
 ### TensorFlow Serving  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TorchServe]]
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow]], [[TorchServe]]
 
 ### TensorRT  ·  brique
 - tags : `inference`, `inference-optimization`, `model-serving`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[ONNX Runtime]], [[Serving]]
+- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Serving]]
 
 ### TensorRT-LLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[LM Studio]], [[NVIDIA Triton]], [[Ollama]], [[SGLang]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[NVIDIA Triton]], [[Ollama]], [[Quantization]], [[SGLang]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Runtimes]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
-- liens sortants : [[pytest]]
+- liens sortants : [[Outils de développement]], [[pytest]]
 - liens entrants : [[DevOps]], [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[pytest]]
 
 ### text-generation-webui  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Gradio]], [[HuggingFace]], [[LM Studio]], [[Ollama]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Gradio]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[LM Studio]], [[Ollama]], [[Runtimes]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[vLLM]]
 
 ### TF-Agents  ·  brique
 - tags : `reinforcement-learning`
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[Comparatif - Reinforcement learning]], [[Gymnasium]], [[PPO]], [[Policy gradient]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[Stable-Baselines3]], [[TensorFlow]]
-- liens entrants : [[Acme]], [[Actor-Critic methods]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[PPO]], [[Policy gradient]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[Stable-Baselines3]]
+- liens entrants : [[Acme]], [[Actor-Critic methods]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[Gymnasium]], [[PPO]], [[Policy gradient]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[Stable-Baselines3]]
 
 ### TGI  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[SGLang]], [[Speculative decoding]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[SGLang]], [[Server-Sent Events & streaming LLM]], [[Speculative decoding]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Runtimes]], [[SGLang]], [[Speculative decoding]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### TimescaleDB  ·  brique
 - tags : `timeseries`, `postgres`
-- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[InfluxDB]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[InfluxDB]]
+- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[InfluxDB]], [[Postgres]], [[pgvector]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[InfluxDB]], [[Postgres]]
 
 ### timm  ·  brique
 - tags : `computer-vision`, `cnn`, `vit`, `transfer-learning`, `fine-tuning`, `deep-learning`, `model-hub`
-- liens sortants : [[Architectures CNN]], [[CNN]], [[Classification d'images]], [[HuggingFace]], [[Kornia]], [[PyTorch]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
+- liens sortants : [[Architectures CNN]], [[CNN]], [[Classification d'images]], [[HuggingFace]], [[Kornia]], [[PyTorch]], [[Transfer learning vision]], [[Vision]], [[Vision Transformers (ViT)]], [[albumentations]], [[torchvision]]
 - liens entrants : [[Apprentissage profond]], [[Architectures CNN]], [[CNN]], [[OpenCV]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[torchvision]]
 
 ### TorchServe  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]]
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]]
 
 ### torchvision  ·  brique
 - tags : `computer-vision`, `cnn`, `transfer-learning`, `data-augmentation`, `deep-learning`, `gpu`
-- liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Segmentation]], [[Transfer learning vision]], [[Vision par ordinateur]], [[albumentations]], [[timm]]
+- liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[timm]]
 - liens entrants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Detectron2]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch Geometric]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[timm]]
 
 ### TransformerLens  ·  brique
 - tags : `explainability`, `llm`
-- liens sortants : [[Captum]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[PyTorch]], [[SAELens]], [[Self-attention]], [[Sparse autoencoders]], [[Superposition]], [[Transformer architectures]], [[interpreto]], [[nnsight]]
+- liens sortants : [[Captum]], [[Comparatif - Explicabilité]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[SAELens]], [[Self-attention]], [[Sparse autoencoders]], [[Superposition]], [[Transformer architectures]], [[interpreto]], [[nnsight]]
 - liens entrants : [[Captum]], [[Comparatif - Explicabilité]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[Probing]], [[SAELens]], [[Sparse autoencoders]], [[nnsight]]
 
 ### TRL  ·  brique
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `transformers`, `llm`
-- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[GRPO]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[PPO]], [[PyTorch]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Tunix]], [[Unsloth]]
+- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Fine-tuning]], [[GRPO]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[PPO]], [[PyTorch]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[Tunix]], [[Unsloth]]
 
 ### TruLens  ·  brique
 - tags : `llm`, `llm-eval`, `tracing`, `llm-as-judge`
-- liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangChain]], [[LangSmith]], [[Langfuse]], [[LlamaIndex]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[promptfoo]]
+- liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[promptfoo]]
 - liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[promptfoo]], [[Évaluation]]
 
 ### Tunix  ·  brique
 - tags : `llm`, `reinforcement-learning`, `fine-tuning`
-- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[JAX]], [[LLaMA-Factory]], [[RL for LLMs]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Unsloth]], [[vLLM]]
-- liens entrants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[RL for LLMs]], [[RLHF and DPO]], [[TRL]], [[Unsloth]]
+- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[GRPO]], [[JAX]], [[LLaMA-Factory]], [[RL for LLMs]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Unsloth]], [[vLLM]]
+- liens entrants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[RL for LLMs]], [[RLHF and DPO]], [[TRL]], [[Unsloth]], [[vLLM]]
 
 ### txtai  ·  brique
 - tags : `search`, `semantic-search`, `embeddings`, `rag`, `vector-db`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[FastAPI]], [[HuggingFace]], [[Marqo]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Vespa]], [[embeddings]], [[sentence-transformers]]
-- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[sentence-transformers]]
 
 ### Typer  ·  brique
 - tags : `cli`, `type-hints`
-- liens sortants : [[Comparatif - Frameworks CLI]], [[FastAPI]], [[Rich]]
+- liens sortants : [[Comparatif - Frameworks CLI]], [[FastAPI]], [[Outils de développement]], [[Pydantic]], [[Rich]]
 - liens entrants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Rich]]
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
-- liens sortants : [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[segment-anything]], [[supervision]], [[torchvision]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Vision]], [[segment-anything]], [[supervision]]
+- liens sortants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[supervision]], [[torchvision]]
+- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Vision]], [[supervision]]
 
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -1607,28 +1607,28 @@
 
 ### Unsloth  ·  brique
 - tags : `fine-tuning`, `memory-optimization`, `quantization`, `gpu`, `llm`
-- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RL for LLMs]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]]
+- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[GRPO]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RL for LLMs]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]]
 - liens entrants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]]
 
 ### Unstructured  ·  brique
 - tags : `document-parsing`, `rag`, `ocr`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
+- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[pdfplumber]]
 
 ### uv  ·  brique
 - tags : `package-manager`
-- liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Ruff]], [[pip]]
-- liens entrants : [[Comparatif - Gestionnaires de paquets Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[papermill]], [[pip]]
+- liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Outils de développement]], [[Ruff]], [[pip]]
+- liens entrants : [[Comparatif - Gestionnaires de paquets Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Quarto]], [[Ruff]], [[Rule - Toolchain Python]], [[pip]]
 
 ### Uvicorn  ·  brique
 - tags : `web-framework`
-- liens sortants : [[FastAPI]]
+- liens sortants : [[FastAPI]], [[Web & API]]
 - liens entrants : [[FastAPI]], [[Pattern - Stack démo ML locale multi-services]], [[Web & API]]
 
 ### Vanna  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `local-llm`
-- liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Text-to-SQL]], [[WrenAI]]
-- liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[WrenAI]]
+- liens sortants : [[Chroma]], [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Ollama]], [[Qdrant]], [[RAG]], [[Text-to-SQL]], [[WrenAI]], [[pgvector]]
+- liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Text-to-SQL]], [[WrenAI]]
 
 ### Vespa  ·  brique
 - tags : `search`, `vector-db`, `hybrid-search`, `ranking`, `distributed`
@@ -1637,7 +1637,7 @@
 
 ### vLLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[FastAPI]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantization]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[text-generation-webui]]
 - liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantization]], [[RL for LLMs]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[llama.cpp]], [[llmfit]], [[text-generation-webui]]
 
 ### Weaviate  ·  brique
@@ -1647,47 +1647,47 @@
 
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
-- liens sortants : [[Beszel]], [[Docker]], [[Sniffnet]], [[osint4all]]
+- liens sortants : [[Beszel]], [[Docker]], [[Sniffnet]], [[Sécurité]], [[osint4all]]
 - liens entrants : [[Réseau]], [[Sniffnet]], [[Sécurité]], [[osint4all]]
 
 ### Weights & Biases  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[TensorBoard]], [[TensorFlow]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[HuggingFace]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Suivi d'expériences]], [[TensorBoard]], [[TensorFlow]]
 - liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[evaluate]]
 
 ### Windmill  ·  brique
 - tags : `low-code`, `orchestration`
-- liens sortants : [[Activepieces]], [[Airflow]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Temporal]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens sortants : [[Activepieces]], [[Airflow]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Temporal]], [[Zapier]], [[gumloop]], [[n8n]]
 - liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### WrenAI  ·  brique
 - tags : `text-to-sql`, `llm`, `agents`, `dashboard`
 - liens sortants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Text-to-SQL]], [[Vanna]]
-- liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[Vanna]]
+- liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Text-to-SQL]], [[Vanna]]
 
 ### xarray  ·  brique
 - tags : `array`, `out-of-core`
-- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[Polars]], [[numpy]], [[pandas]]
-- liens entrants : [[Comparatif - Manipulation de données]], [[DataFrames]], [[numpy]]
+- liens sortants : [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[numpy]], [[pandas]]
+- liens entrants : [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[numpy]]
 
 ### XGBoost  ·  brique
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`, `distributed`
-- liens sortants : [[Arbres de décision]], [[CatBoost]], [[Comparatif - Boosting]], [[Gradient Boosting (GBDT)]], [[LightGBM]], [[Scikit-Learn]]
-- liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Boosting]], [[CatBoost]], [[Classification]], [[Comparatif - Boosting]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Imbalanced classification]], [[Keras]], [[LightGBM]], [[MLflow]], [[Machine Learning]], [[Optuna]], [[PyTorch]], [[PyTorch Geometric]], [[Ray Tune]], [[Régression]], [[SHAP]], [[Scikit-Learn]], [[Tabulaire]], [[TensorFlow]], [[darts]], [[imbalanced-learn]]
+- liens sortants : [[Apprentissage profond]], [[Arbres de décision]], [[CatBoost]], [[Comparatif - Boosting]], [[Gradient Boosting (GBDT)]], [[LightGBM]], [[Scikit-Learn]]
+- liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Boosting]], [[CatBoost]], [[Classification]], [[Comparatif - Boosting]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Imbalanced classification]], [[Keras]], [[LightGBM]], [[MLflow]], [[Machine Learning]], [[Optuna]], [[PyTorch]], [[PyTorch Geometric]], [[Régression]], [[SHAP]], [[Scikit-Learn]], [[Tabulaire]], [[TensorFlow]], [[darts]], [[imbalanced-learn]]
 
 ### ydata-profiling  ·  brique
 - tags : `eda`, `data-quality`, `dataframe`
-- liens sortants : [[Comparatif - Outils EDA - profiling]], [[Data leakage]], [[EDA automatisée & profiling]], [[Notebooks-as-code]], [[missingno]], [[sweetviz]]
+- liens sortants : [[Comparatif - Outils EDA - profiling]], [[Data leakage]], [[EDA automatisée & profiling]], [[missingno]], [[sweetviz]]
 - liens entrants : [[Comparatif - Outils EDA - profiling]], [[Data & pipelines]], [[EDA automatisée & profiling]], [[Types de données et choix de modèle]], [[missingno]], [[sweetviz]]
 
 ### Zapier  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
-- liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[gumloop]], [[n8n]]
+- liens sortants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[gumloop]], [[n8n]]
 - liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[gumloop]], [[n8n]]
 
 ### ZenML  ·  brique
 - tags : `orchestration`, `ml-pipeline`
-- liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[MLflow]], [[Metaflow]]
+- liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[MLflow]], [[Machine Learning]], [[Metaflow]]
 - liens entrants : [[Comparatif - Orchestrateurs ML]], [[Flyte]], [[Machine Learning]], [[Metaflow]]
 
 ### Comparatif - Apps data & démos ML  ·  comparatif
@@ -1698,7 +1698,7 @@
 ### Comparatif - Assistants de code IA  ·  comparatif
 - tags : `code-assistant`, `agents`, `code-generation`
 - liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Continue]], [[Maka]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 
 ### Comparatif - Automatisation no-code  ·  comparatif
 - tags : `low-code`, `orchestration`, `agents`, `mcp`
@@ -1748,7 +1748,7 @@
 ### Comparatif - Clients d'API  ·  comparatif
 - tags : `api-client`, `version-control`
 - liens sortants : [[Bruno]], [[Comparatif - Clients d'API.base]], [[Postman]]
-- liens entrants : [[Bruno]], [[Outils de développement]], [[Postman]], [[public-apis]]
+- liens entrants : [[Bruno]], [[Outils de développement]], [[Postman]]
 
 ### Comparatif - Clients de bases de données  ·  comparatif
 - tags : `db-client`
@@ -1768,7 +1768,7 @@
 ### Comparatif - Détection & segmentation  ·  comparatif
 - tags : `object-detection`, `segmentation`, `computer-vision`
 - liens sortants : [[Comparatif - Détection & segmentation.base]], [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[albumentations]], [[segment-anything]], [[supervision]]
-- liens entrants : [[Vision]]
+- liens entrants : [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[Vision]], [[albumentations]], [[segment-anything]], [[supervision]]
 
 ### Comparatif - Détection d'anomalies  ·  comparatif
 - tags : `anomaly-detection`, `unsupervised`
@@ -1778,7 +1778,7 @@
 ### Comparatif - Explicabilité  ·  comparatif
 - tags : `explainability`, `transformers`, `model-evaluation`
 - liens sortants : [[Captum]], [[Comparatif - Explicabilité.base]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
-- liens entrants : [[Captum]], [[Interprétabilité]], [[LIME]], [[SHAP]], [[interpreto]]
+- liens entrants : [[Captum]], [[Interprétabilité]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
 
 ### Comparatif - Exécution & serving LLM  ·  comparatif
 - tags : `local-llm`, `model-serving`, `inference`, `quantization`
@@ -1793,17 +1793,17 @@
 ### Comparatif - Forecasting  ·  comparatif
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[Séries temporelles]]
+- liens entrants : [[Chronos]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Comparatif - Frameworks CLI  ·  comparatif
 - tags : `cli`, `terminal-ui`
 - liens sortants : [[Comparatif - Frameworks CLI.base]], [[Rich]], [[Typer]]
-- liens entrants : [[Outils de développement]], [[Typer]]
+- liens entrants : [[Outils de développement]], [[Rich]], [[Typer]]
 
 ### Comparatif - Frameworks LLM  ·  comparatif
 - tags : `agents`, `rag`, `structured-output`, `multi-agent`
 - liens sortants : [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM.base]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LlamaIndex]], [[OpenAI Agents SDK]], [[Outlines]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[CrewAI]], [[DSPy]], [[Dify]], [[Flowise]], [[Haystack]], [[Hermes Agent]], [[Instructor]], [[LM Studio Bionic]], [[LangChain]], [[LangGraph]], [[Langflow]], [[Letta]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenRouter]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PraisonAI]], [[PydanticAI]], [[Semantic Kernel]], [[smolagents]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
 
 ### Comparatif - Frameworks text-to-SQL  ·  comparatif
 - tags : `text-to-sql`, `rag`, `agents`
@@ -1823,7 +1823,7 @@
 ### Comparatif - Manipulation de données  ·  comparatif
 - tags : `dataframe`, `array`, `columnar`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données.base]], [[Dask]], [[Modin]], [[Polars]], [[numpy]], [[pandas]], [[xarray]]
-- liens entrants : [[DataFrames]], [[Modin]], [[Polars]], [[connectorx]], [[pandas]], [[xarray]]
+- liens entrants : [[DataFrames]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
 
 ### Comparatif - Migrations de schéma  ·  comparatif
 - tags : `migration`
@@ -1833,12 +1833,12 @@
 ### Comparatif - Moteurs de recherche  ·  comparatif
 - tags : `search`
 - liens sortants : [[Comparatif - Moteurs de recherche.base]], [[Elasticsearch]], [[Marqo]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[txtai]]
+- liens entrants : [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### Comparatif - NLP  ·  comparatif
 - tags : `nlp`, `information-retrieval`, `ner`, `sequence-labeling`, `text-classification`
 - liens sortants : [[Comparatif - NLP.base]], [[DSPy]], [[GLiNER]], [[HuggingFace]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[bm25s]], [[datasets]], [[evaluate]], [[interpreto]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]]
-- liens entrants : [[GLiNER]], [[NLP]], [[NLTK]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[spaCy]]
+- liens entrants : [[GLiNER]], [[NLP]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[spaCy]]
 
 ### Comparatif - Observabilité LLM  ·  comparatif
 - tags : `llm-observability`, `tracing`
@@ -1873,12 +1873,12 @@
 ### Comparatif - Outils stats  ·  comparatif
 - tags : `hypothesis-testing`, `statistical-inference`, `bayesian`, `factor-analysis`, `causal-inference`
 - liens sortants : [[ArviZ]], [[CausalImpact]], [[Comparatif - Outils stats.base]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[CausalImpact]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[Tests & estimation]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[ArviZ]], [[CausalImpact]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[Tests & estimation]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents.base]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[Documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Docling]], [[Documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Comparatif - Reinforcement learning  ·  comparatif
 - tags : `reinforcement-learning`, `self-play`
@@ -1893,7 +1893,7 @@
 ### Comparatif - Scraping  ·  comparatif
 - tags : `web-scraping`, `document-parsing`, `low-code`
 - liens sortants : [[Comparatif - Scraping.base]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Page to Markdown]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Page to Markdown]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
 
 ### Comparatif - Serving de modèles  ·  comparatif
 - tags : `model-serving`, `inference`, `kubernetes`
@@ -1908,7 +1908,7 @@
 ### Comparatif - Suivi d'expériences ML  ·  comparatif
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
-- liens entrants : [[Suivi d'expériences]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
 
 ### Comparatif - Traitement du signal  ·  comparatif
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`
@@ -1933,12 +1933,12 @@
 ### Agents  ·  hub
 - tags : `agents`, `multi-agent`, `tool-use`, `agent-memory`, `llm`
 - liens sortants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agents de code]], [[Agno]], [[Assistants]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Harnais d'agent]], [[Human-in-the-loop]], [[LangGraph]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[PydanticAI]], [[Reliability patterns]], [[Semantic Kernel]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[mcp-protocol]], [[smolagents]], [[tool-use]]
-- liens entrants : [[AI Engineering]], [[Agents de code]], [[Apprentissage par renforcement]], [[Assistants]], [[LLM & IA générative]], [[Sortie typée]]
+- liens entrants : [[AI Engineering]], [[Agents de code]], [[Agno]], [[Apprentissage par renforcement]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[LLM & IA générative]], [[LangGraph]], [[OpenAI Agents SDK]], [[PraisonAI]], [[PydanticAI]], [[Semantic Kernel]], [[Sortie typée]], [[smolagents]]
 
 ### Agents de code  ·  hub
 - tags : `code-assistant`, `code-generation`, `agents`, `agent-skill`, `mcp`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Aider]], [[BMAD]], [[Cline]], [[Code and math benchmarks]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Graphify]], [[Harnais d'agent]], [[Maka]], [[Sandboxing de code généré]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[Agents]], [[Assistants]], [[LLM & IA générative]]
+- liens entrants : [[Agents]], [[Aider]], [[Assistants]], [[BMAD]], [[Cline]], [[Continue]], [[Graphify]], [[LLM & IA générative]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 
 ### AI Engineering  ·  hub
 - tags : —
@@ -1963,22 +1963,22 @@
 ### Apprentissage profond  ·  hub
 - tags : `deep-learning`, `gpu`, `autograd`, `transformers`, `attention`, `distributed-training`, `mixed-precision`, `quantization`, `model-compression`
 - liens sortants : [[Adam optimizer]], [[Apprentissage par renforcement]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[Attribution par gradient]], [[Autoencodeurs]], [[CNN]], [[Calculs adaptatifs]], [[Classification audio par spectrogramme]], [[DeepSpeed]], [[Diffusion models]], [[Distillation]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[GANs]], [[Gradient checkpointing]], [[Graph Neural Networks]], [[HuggingFace]], [[Image generation]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[JAX]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[LLM & IA générative]], [[Maximal Update Parametrization]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[NLP]], [[Positional encoding]], [[Probing]], [[Pruning]], [[PyTorch]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[Quantization]], [[Self-attention]], [[Serving]], [[Sparse autoencoders]], [[Speech models]], [[State Space Models]], [[Superposition]], [[TensorFlow]], [[Transformer architectures]], [[Video generation]], [[Vision]], [[Vision Transformers (ViT)]], [[accelerate]], [[pykan]], [[timm]]
-- liens entrants : [[Kolmogorov-Arnold Networks]], [[ML Engineering]], [[Machine Learning]], [[Serving]], [[Socle]], [[Séries temporelles]], [[Vision]], [[Vision par ordinateur]]
+- liens entrants : [[DeepSpeed]], [[JAX]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[ML Engineering]], [[Machine Learning]], [[PyTorch]], [[PyTorch Lightning]], [[Serving]], [[Socle]], [[Séries temporelles]], [[TensorFlow]], [[Vision]], [[Vision par ordinateur]], [[XGBoost]], [[accelerate]], [[pykan]]
 
 ### Assistants  ·  hub
 - tags : `agents`, `agent-memory`, `local-llm`, `mcp`, `agent-skill`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Agents de code]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[LM Studio Bionic]], [[Letta]], [[Maka]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]], [[Prompt injection]]
-- liens entrants : [[Agents]], [[LLM & IA générative]]
+- liens entrants : [[Agents]], [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]]
 
 ### Automatisation no-code  ·  hub
 - tags : `low-code`, `orchestration`, `self-hosted`
 - liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
-- liens entrants : —
+- liens entrants : [[Activepieces]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache Cassandra]], [[Bases de données vectorielles]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[Liquibase]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[AI Engineering]], [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]]
+- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
@@ -1988,7 +1988,7 @@
 ### Calcul distribué  ·  hub
 - tags : `distributed`, `gpu`, `parallel`, `out-of-core`, `distributed-training`
 - liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
-- liens entrants : [[Data Engineering]], [[ML Engineering]]
+- liens entrants : [[CuPy]], [[Dask]], [[Data Engineering]], [[Daytona]], [[E2B]], [[ML Engineering]], [[Modal]], [[Ray]], [[Spark]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
@@ -2008,32 +2008,32 @@
 ### DataFrames  ·  hub
 - tags : `dataframe`, `array`, `lazy-evaluation`, `out-of-core`
 - liens sortants : [[Comparatif - Manipulation de données]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
-- liens entrants : [[Algèbre linéaire]], [[Data & pipelines]], [[Data Science]], [[Tabulaire]]
+- liens entrants : [[Algèbre linéaire]], [[Data & pipelines]], [[Data Science]], [[Modin]], [[Polars]], [[Tabulaire]], [[numpy]], [[pandas]], [[xarray]]
 
 ### Design & diagrammes  ·  hub
 - tags : `design-tool`, `diagram`, `whiteboard`
 - liens sortants : [[Comparatif - Design & prototypage]], [[Diagrammes]], [[Figma]], [[Mermaid]], [[Penpot]]
-- liens entrants : [[AI Engineering]]
+- liens entrants : [[AI Engineering]], [[Figma]], [[Penpot]]
 
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
 - liens sortants : [[Docker]], [[GitHub Actions]], [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[MLOps]], [[Outils de développement]]
+- liens entrants : [[Docker]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]]
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Design & diagrammes]]
+- liens entrants : [[Archify]], [[Design & diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 
 ### Documents  ·  hub
 - tags : `pdf`, `markdown-conversion`, `ocr`, `web-scraping`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Page to Markdown]], [[Stirling PDF]], [[Web scraping]]
-- liens entrants : [[AI Engineering]], [[Vision]]
+- liens entrants : [[AI Engineering]], [[Page to Markdown]], [[Stirling PDF]], [[Vision]]
 
 ### Fine-tuning  ·  hub
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `quantization`, `synthetic-data`
 - liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[Prompt engineering]], [[RAG]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Synthetic data generation]], [[TRL]], [[Tunix]], [[Unsloth]]
-- liens entrants : [[AI Engineering]], [[Apprentissage par renforcement]], [[LLM & IA générative]], [[Modèles de langage]]
+- liens entrants : [[AI Engineering]], [[Apprentissage par renforcement]], [[Axolotl]], [[LLM & IA générative]], [[LLaMA-Factory]], [[Modèles de langage]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
@@ -2043,7 +2043,7 @@
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Web & API]]
-- liens entrants : [[AI Engineering]], [[Data Science]], [[Visualisation]], [[Web & API]]
+- liens entrants : [[AI Engineering]], [[Dash]], [[Data Science]], [[Gradio]], [[Shiny for Python]], [[Streamlit]], [[Visualisation]], [[Web & API]]
 
 ### Interprétabilité  ·  hub
 - tags : `explainability`, `deep-learning`, `transformers`, `llm`, `model-evaluation`
@@ -2053,12 +2053,12 @@
 ### LLM & IA générative  ·  hub
 - tags : `llm`, `rag`, `agents`, `llm-eval`, `llm-observability`, `mcp`, `structured-output`, `llm-gateway`
 - liens sortants : [[AI security]], [[Advanced RAG]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Assistants]], [[Chain-of-Thought]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[DSPy]], [[Decoding strategies]], [[Dify]], [[Fine-tuning]], [[Flowise]], [[GraphRAG]], [[Guardrails]], [[Guidance]], [[Headroom]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[LLM caching]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[Langflow]], [[Late-interaction retrieval]], [[Letta]], [[LiteLLM]], [[Machine Learning]], [[Modèles de langage]], [[Observabilité des LLM]], [[OpenViking]], [[Outlines]], [[Passerelles]], [[Perplexity]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[Reasoning models]], [[Reliability patterns]], [[Reranking]], [[Routing and cascading]], [[Runtimes]], [[SFT]], [[Sandboxing de code généré]], [[Scaling laws]], [[Small Language Models]], [[Sortie typée]], [[Structured outputs]], [[Synthetic data generation]], [[Systèmes IA]], [[Sécurité]], [[Text-to-SQL]], [[Tokenization]], [[a2a-protocol]], [[fastmcp]], [[llmfit]], [[mcp-protocol]], [[mcpjam]], [[prompt-caching]], [[tool-use]], [[Évaluation]]
-- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]], [[Évaluation de modèles]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[DSPy]], [[Dify]], [[Flowise]], [[Headroom]], [[LangChain]], [[Langflow]], [[Letta]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[OpenViking]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]], [[fastmcp]], [[llmfit]], [[mcpjam]], [[Évaluation de modèles]]
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
 - liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
-- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Engineering]], [[Data Science]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Observabilité des LLM]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[Évaluation]]
+- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -2083,7 +2083,7 @@
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
 - liens sortants : [[Claude Video]], [[OpenCut]], [[SmartTube]], [[Superwhisper]]
-- liens entrants : [[AI Engineering]]
+- liens entrants : [[AI Engineering]], [[Claude Video]], [[OpenCut]], [[SmartTube]], [[Superwhisper]]
 
 ### NLP  ·  hub
 - tags : `nlp`, `ner`, `sequence-labeling`, `text-classification`, `information-retrieval`, `tokenization`, `string-matching`
@@ -2093,17 +2093,17 @@
 ### Non supervisé  ·  hub
 - tags : `unsupervised`, `clustering`, `dimensionality-reduction`, `anomaly-detection`, `manifold`
 - liens sortants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Réduction de dimension]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Gaussian Mixture Models (GMM)]], [[ICA]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[Manifold learning]], [[NMF]], [[One-Class SVM]], [[PaCMAP]], [[PyOD]], [[Socle]], [[embeddings]], [[hdbscan]], [[k-médoïds (PAM)]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Socle]], [[Séries temporelles]]
+- liens entrants : [[Analyse factorielle]], [[Machine Learning]], [[Socle]], [[Séries temporelles]], [[hdbscan]]
 
 ### Notebooks  ·  hub
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[DuckDB]], [[Marimo]], [[Notebooks-as-code]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
-- liens entrants : [[Outils de développement]]
+- liens entrants : [[Marimo]], [[Outils de développement]], [[Quarto]], [[jupysql]], [[jupytext]], [[papermill]]
 
 ### Observabilité  ·  hub
 - tags : `observability`, `logging`, `metrics`, `dashboard`, `self-hosted`
 - liens sortants : [[Beszel]], [[Grafana]], [[Loki]]
-- liens entrants : [[AI Engineering]], [[MLOps]]
+- liens entrants : [[AI Engineering]], [[Beszel]], [[Grafana]], [[Loki]], [[MLOps]]
 
 ### Observabilité des LLM  ·  hub
 - tags : `llm-observability`, `tracing`, `observability`
@@ -2113,22 +2113,22 @@
 ### Optimisation  ·  hub
 - tags : `optimization`, `gradient-descent`, `convexity`, `second-order`, `learning-rate`, `linear-programming`, `combinatorial-optimization`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Newton & quasi-Newton]], [[Optimisation combinatoire]], [[Optimisation d'hyperparamètres]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]]
-- liens entrants : [[Mathématiques]]
+- liens entrants : [[Mathématiques]], [[PuLP]]
 
 ### Orchestration  ·  hub
 - tags : `orchestration`, `data-pipeline`, `durable-execution`, `idempotence`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Data & pipelines]], [[Data Engineering]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
 - liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[ML Engineering]], [[MLOps]]
+- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Vision]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[Vision]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Passerelles  ·  hub
 - tags : `llm-gateway`, `routing`, `caching`
@@ -2173,7 +2173,7 @@
 ### Réseau  ·  hub
 - tags : `networking`, `traffic-analysis`, `file-transfer`
 - liens sortants : [[Sniffnet]], [[Stockage]], [[Web-Check]], [[croc]]
-- liens entrants : [[Infrastructure & Ops]]
+- liens entrants : [[Infrastructure & Ops]], [[Sniffnet]], [[croc]]
 
 ### Scraping  ·  hub
 - tags : `web-scraping`, `data-pipeline`
@@ -2188,12 +2188,12 @@
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
 - liens sortants : [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Data Science]], [[ML Engineering]]
+- liens entrants : [[Data Science]], [[ML Engineering]], [[librosa]]
 
 ### Socle  ·  hub
 - tags : `supervised`, `classification`, `regression`, `linear-model`, `ml-pipeline`
 - liens sortants : [[Analyse discriminante]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Classification]], [[GAM]], [[GLM]], [[Gaussian Process]], [[Naive Bayes]], [[Non supervisé]], [[Perceptron et MLP]], [[Ranking metrics]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Systèmes de recommandation]], [[Tabulaire]], [[Types de données et choix de modèle]], [[k-NN]], [[Évaluation de modèles]]
-- liens entrants : [[Machine Learning]], [[Non supervisé]], [[Tabulaire]]
+- liens entrants : [[Machine Learning]], [[Non supervisé]], [[River]], [[Scikit-Learn]], [[Tabulaire]]
 
 ### Sortie typée  ·  hub
 - tags : `structured-output`, `decoding`, `data-validation`
@@ -2208,12 +2208,12 @@
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
 - liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]]
-- liens entrants : [[Data Engineering]], [[Réseau]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Data Engineering]], [[Garage]], [[MinIO]], [[Réseau]], [[SeaweedFS]]
 
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Evidently]], [[LLM & IA générative]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]], [[Serving]], [[TensorBoard]], [[Weights & Biases]]
-- liens entrants : [[MLOps]], [[Machine Learning]], [[Serving]], [[Séries temporelles]], [[Évaluation de modèles]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[MLOps]], [[Machine Learning]], [[Neptune]], [[Serving]], [[Séries temporelles]], [[TensorBoard]], [[Weights & Biases]], [[Évaluation de modèles]]
 
 ### Systèmes IA  ·  hub
 - tags : `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
@@ -2223,7 +2223,7 @@
 ### Sécurité  ·  hub
 - tags : `authentication`, `recon`, `osint`, `cryptography`, `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
 - liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[Prompt injection]], [[PyJWT]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
-- liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[Systèmes IA]]
+- liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[PyJWT]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
 
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
@@ -2243,7 +2243,7 @@
 ### Text-to-SQL  ·  hub
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `benchmark`
 - liens sortants : [[Agent patterns]], [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[LLM benchmarks]], [[LangChain]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[RAG]], [[Vanna]], [[WrenAI]]
-- liens entrants : [[AI Engineering]], [[DB-GPT]], [[LLM & IA générative]], [[LangChain]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
+- liens entrants : [[AI Engineering]], [[DB-GPT]], [[LLM & IA générative]], [[LangChain SQL agent]], [[LlamaIndex]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
 
 ### Théorie de l'apprentissage  ·  hub
 - tags : `learning-theory`, `pac-learning`, `vc-dimension`, `rademacher-complexity`, `generalization-bound`, `no-free-lunch`
@@ -2268,17 +2268,17 @@
 ### Vision  ·  hub
 - tags : `computer-vision`, `cnn`, `vit`, `object-detection`, `segmentation`, `image-classification`, `data-augmentation`, `object-tracking`, `transfer-learning`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Classification d'images]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Documents]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[LLM & IA générative]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Modèles de langage]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Parsing]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Serving]], [[Suivi d'objets]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[supervision]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[Modèles de langage]]
+- liens entrants : [[Apprentissage profond]], [[Kornia]], [[Machine Learning]], [[Modèles de langage]], [[timm]], [[torchvision]]
 
 ### Visualisation  ·  hub
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `statistical-viz`
 - liens sortants : [[Comparatif - Visualisation]], [[Dash]], [[Interfaces & apps data]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
-- liens entrants : [[Data & pipelines]], [[Data Science]]
+- liens entrants : [[Data & pipelines]], [[Data Science]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
 
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
-- liens entrants : [[AI Engineering]], [[Data Engineering]], [[Interfaces & apps data]], [[MLOps]]
+- liens entrants : [[AI Engineering]], [[Data Engineering]], [[FastAPI]], [[Flask]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[MLOps]], [[Uvicorn]], [[public-apis]]
 
 ### Évaluation  ·  hub
 - tags : `llm-eval`, `benchmark`, `rag-eval`, `llm-as-judge`, `model-evaluation`
@@ -2288,7 +2288,7 @@
 ### Évaluation de modèles  ·  hub
 - tags : `model-evaluation`, `classification`, `regression`, `ranking`, `calibration`, `resampling`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Compromis biais-variance]], [[Data leakage]], [[Imbalanced classification]], [[LLM & IA générative]], [[Optimisation d'hyperparamètres]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Suivi d'expériences]], [[Tabulaire]], [[Théorie de l'apprentissage]], [[Validation croisée]], [[Walk-forward CV]], [[evaluate]], [[seqeval]], [[Évaluation]]
-- liens entrants : [[Machine Learning]], [[Socle]], [[Tabulaire]]
+- liens entrants : [[Machine Learning]], [[Socle]], [[Tabulaire]], [[evaluate]], [[seqeval]]
 
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
@@ -2383,7 +2383,7 @@
 ### Apprentissage non supervisé  ·  notion
 - tags : `unsupervised`, `clustering`
 - liens sortants : [[Apprentissage supervisé]], [[CA]], [[Classification hiérarchique (CAH)]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Eigendecomposition]], [[FAMD]], [[Gaussian Mixture Models (GMM)]], [[HCPC]], [[Isolation Forest]], [[K-Means]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[Prince]], [[PyOD]], [[Reinforcement learning]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[embeddings]], [[hdbscan]], [[t-SNE and UMAP]], [[umap-learn]]
-- liens entrants : [[Apprentissage supervisé]], [[Autoencodeurs]], [[Clustering]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Réduction de dimension]], [[Types de données et choix de modèle]]
+- liens entrants : [[Apprentissage supervisé]], [[Autoencodeurs]], [[Clustering]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[PyOD]], [[Réduction de dimension]], [[Types de données et choix de modèle]]
 
 ### Apprentissage supervisé  ·  notion
 - tags : `supervised`, `classification`, `regression`
@@ -2398,7 +2398,7 @@
 ### Architecture médaillon  ·  notion
 - tags : `data-modeling`, `data-pipeline`, `lakehouse`, `data-quality`
 - liens sortants : [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Partitionnement & layout de données]], [[Versionnage de données]]
-- liens entrants : [[Data & pipelines]], [[Partitionnement & layout de données]]
+- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Parquet]], [[Partitionnement & layout de données]]
 
 ### Architectures CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -2433,7 +2433,7 @@
 ### Augmentation d'images  ·  notion
 - tags : `data-augmentation`, `regularization`, `computer-vision`, `deep-learning`
 - liens sortants : [[CNN]], [[Compromis biais-variance]], [[Cross-entropy]], [[Distillation]], [[Imbalanced classification]], [[Kornia]], [[Transfer learning vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[OpenCV]], [[Segmentation]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
+- liens entrants : [[Apprentissage auto-supervisé en vision]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[Segmentation]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
 
 ### Autocorrelation  ·  notion
 - tags : `timeseries`, `stochastic-process`
@@ -2453,7 +2453,7 @@
 ### Bases de données vectorielles  ·  notion
 - tags : `vector-db`, `embeddings`, `semantic-search`, `rag`
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
-- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[RAGatouille]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
+- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -2523,7 +2523,7 @@
 ### Classification d'images  ·  notion
 - tags : `image-classification`, `computer-vision`, `cnn`, `deep-learning`
 - liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Calibration]], [[Classification metrics]], [[Cross-entropy]], [[Détection d'objets]], [[HuggingFace]], [[Imbalanced classification]], [[PyTorch]], [[Segmentation]], [[Transfer learning vision]], [[Vision par ordinateur]]
-- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Détection d'objets]], [[Vision]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
+- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Détection d'objets]], [[Vision]], [[Vision par ordinateur]], [[timm]]
 
 ### Classification de texte  ·  notion
 - tags : `nlp`, `text-classification`, `classification`, `supervised`, `class-imbalance`
@@ -2588,7 +2588,7 @@
 ### Contrats de données & qualité  ·  notion
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Dagster]], [[Data drift]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Avro]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
 
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
@@ -2623,7 +2623,7 @@
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
 - liens sortants : [[Encodage des variables catégorielles]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[imbalanced-learn]], [[ydata-profiling]], [[Évaluation de modèles]]
+- liens entrants : [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Featuretools]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[category_encoders]], [[imbalanced-learn]], [[ydata-profiling]], [[Évaluation de modèles]]
 
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -2653,12 +2653,12 @@
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
 - liens sortants : [[A/B testing]], [[BentoML]], [[Data drift]], [[KServe]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]]
-- liens entrants : [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Serving]]
+- liens entrants : [[BentoML]], [[KServe]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 
 ### Détection d'objets  ·  notion
 - tags : `object-detection`, `computer-vision`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Detectron2]], [[Estimation de pose]], [[HuggingFace]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Ultralytics YOLO]], [[Vision par ordinateur]], [[supervision]], [[torchvision]]
-- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[segment-anything]], [[supervision]], [[torchvision]]
+- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[supervision]]
 
 ### Détection d'outliers multivariée  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -2683,7 +2683,7 @@
 ### ELT vs ETL & idempotence  ·  notion
 - tags : `data-pipeline`, `idempotence`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[Migrations de schéma]], [[Versionnage de données]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[Stream processing]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[Stream processing]], [[Versionnage de données]], [[connectorx]]
 
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
@@ -2693,7 +2693,7 @@
 ### Encodage des variables catégorielles  ·  notion
 - tags : `feature-engineering`
 - liens sortants : [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Régression logistique]], [[Scikit-Learn]], [[category_encoders]]
-- liens entrants : [[Data leakage]], [[EDA automatisée & profiling]], [[Feature store — concept]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Machine Learning]], [[Scikit-Learn]], [[Tabulaire]], [[Types de données et choix de modèle]], [[category_encoders]]
+- liens entrants : [[CatBoost]], [[Data leakage]], [[EDA automatisée & profiling]], [[Feature store — concept]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Machine Learning]], [[Scikit-Learn]], [[Tabulaire]], [[Types de données et choix de modèle]], [[category_encoders]]
 
 ### Ensembling  ·  notion
 - tags : `ensemble`, `supervised`
@@ -2728,7 +2728,7 @@
 ### Exponential smoothing  ·  notion
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[STUMPY]], [[Stationarity]], [[Séries temporelles]], [[Time series anomaly detection]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Forecasting framing]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[STUMPY]], [[Stationarity]], [[Séries temporelles]], [[Time series anomaly detection]], [[statsforecast]]
 
 ### Extra Trees  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `classification`, `regression`
@@ -2758,7 +2758,7 @@
 ### Forecasting framing  ·  notion
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Prophet]], [[Stationarity]], [[Validation croisée]], [[darts]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Exponential smoothing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Régression]], [[Stationarity]], [[Séries temporelles]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[darts]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Exponential smoothing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Régression]], [[Stationarity]], [[Séries temporelles]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Forecasting metrics  ·  notion
 - tags : `forecasting`, `timeseries`, `model-evaluation`
@@ -2863,7 +2863,7 @@
 ### Human-in-the-loop  ·  notion
 - tags : `human-in-the-loop`, `agents`, `reliability`, `llm`
 - liens sortants : [[Agent evaluation]], [[CrewAI]], [[Guardrails]], [[LLM observability]], [[LangGraph]], [[PydanticAI]], [[Reliability patterns]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Assistants]], [[Guardrails]], [[LLM & IA générative]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[a2a-protocol]], [[agent-loops]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Assistants]], [[Guardrails]], [[LLM & IA générative]], [[LangGraph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[a2a-protocol]], [[agent-loops]]
 
 ### Hybrid retrieval  ·  notion
 - tags : `retrieval`, `hybrid-search`, `semantic-search`, `search`, `rag`
@@ -2903,7 +2903,7 @@
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
 - liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[prompt-caching]], [[vLLM]]
-- liens entrants : [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Calculs adaptatifs]], [[Flash Attention and efficient attention]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Positional encoding]], [[Pruning]], [[Quantization]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[Superwhisper]], [[TGI]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Calculs adaptatifs]], [[Flash Attention and efficient attention]], [[LM Studio]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Ollama]], [[Positional encoding]], [[Pruning]], [[Quantization]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[Superwhisper]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
 
 ### Inférence bayésienne  ·  notion
 - tags : `bayesian`, `statistical-inference`, `prior`
@@ -2923,7 +2923,7 @@
 ### Intermittent demand  ·  notion
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[statsforecast]]
-- liens entrants : [[Forecasting metrics]], [[Séries temporelles]]
+- liens entrants : [[Forecasting metrics]], [[Prophet]], [[Séries temporelles]]
 
 ### Interprétabilité mécaniste  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`
@@ -3193,7 +3193,7 @@
 ### NER et étiquetage de séquence  ·  notion
 - tags : `nlp`, `ner`, `sequence-labeling`, `supervised`
 - liens sortants : [[Classification de texte]], [[Construction de graphes de connaissances]], [[Cross-entropy]], [[GLiNER]], [[HuggingFace]], [[RAG]], [[Self-attention]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[embeddings]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
-- liens entrants : [[Classification de texte]], [[Construction de graphes de connaissances]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NLP]], [[NLTK]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Traitement du langage naturel]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
+- liens entrants : [[Classification de texte]], [[Construction de graphes de connaissances]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NLP]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Traitement du langage naturel]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
 
 ### Newton & quasi-Newton  ·  notion
 - tags : `optimization`, `second-order`
@@ -3213,7 +3213,7 @@
 ### Notebooks-as-code  ·  notion
 - tags : `notebook`, `reproducibility`, `version-control`
 - liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[papermill]], [[pytest]], [[uv]]
-- liens entrants : [[Data & pipelines]], [[Marimo]], [[Notebooks]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[missingno]], [[papermill]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Data & pipelines]], [[Marimo]], [[Notebooks]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[papermill]]
 
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
@@ -3243,7 +3243,7 @@
 ### Optimisation combinatoire  ·  notion
 - tags : `optimization`, `combinatorial-optimization`, `dynamic-programming`
 - liens sortants : [[Convexity]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
-- liens entrants : [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens entrants : [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]]
 
 ### Optimisation d'hyperparamètres  ·  notion
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
@@ -3268,7 +3268,7 @@
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]]
-- liens entrants : [[Architecture médaillon]], [[Data & pipelines]], [[Stream processing]]
+- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Parquet]], [[Stream processing]]
 
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -3333,7 +3333,7 @@
 ### Prompt engineering  ·  notion
 - tags : `prompting`, `llm`
 - liens sortants : [[Chain-of-Thought]], [[Context engineering]], [[DSPy]], [[RAG]], [[SFT]], [[Structured outputs]]
-- liens entrants : [[Chain-of-Thought]], [[Context engineering]], [[Fine-tuning]], [[LLM & IA générative]], [[SFT]], [[i-have-adhd]]
+- liens entrants : [[Chain-of-Thought]], [[Context engineering]], [[DSPy]], [[Fine-tuning]], [[LLM & IA générative]], [[SFT]], [[i-have-adhd]]
 
 ### Prompt injection  ·  notion
 - tags : `prompt-injection`, `ai-security`, `llm`
@@ -3343,7 +3343,7 @@
 ### prompt-caching  ·  notion
 - tags : `caching`, `inference-optimization`, `llm`, `context-engineering`
 - liens sortants : [[Context engineering]], [[Inference optimization]], [[LLM caching]]
-- liens entrants : [[Context engineering]], [[Inference optimization]], [[LLM & IA générative]], [[LLM caching]], [[LLM observability]], [[Passerelles]], [[Runtimes]]
+- liens entrants : [[Context engineering]], [[Inference optimization]], [[LLM & IA générative]], [[LLM caching]], [[LLM observability]], [[Passerelles]], [[Runtimes]], [[SGLang]]
 
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
@@ -3358,7 +3358,7 @@
 ### Quantization  ·  notion
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
+- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
 
 ### Query transformations  ·  notion
 - tags : `query-transformation`, `rag`, `retrieval`, `llm`
@@ -3373,7 +3373,7 @@
 ### RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`, `embeddings`, `semantic-search`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Context engineering]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[Query transformations]], [[RAG eval]], [[Reranking]], [[Routing and cascading]], [[SFT]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[pdf-inspector]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[Vanna]], [[pdf-inspector]], [[sentence-transformers]], [[txtai]]
 
 ### RAG benchmarks  ·  notion
 - tags : `benchmark`, `rag-eval`, `rag`, `retrieval`, `llm-eval`
@@ -3458,7 +3458,7 @@
 ### Routing and cascading  ·  notion
 - tags : `routing`, `llm`, `rag`
 - liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM & IA générative]], [[LLM caching]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[needle]]
+- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[needle]]
 
 ### Réduction de dimension  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -3498,7 +3498,7 @@
 ### Sandboxing de code généré  ·  notion
 - tags : `agents`, `llm`, `ai-security`, `container`
 - liens sortants : [[AI security]], [[Agent evaluation]], [[Agent skills]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[Modal]], [[Prompt injection]], [[agent-loops]]
-- liens entrants : [[Agents de code]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[Maka]], [[Modal]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Systèmes IA]], [[Sécurité]], [[pi]]
+- liens entrants : [[Agents de code]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[Maka]], [[Modal]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Systèmes IA]], [[Sécurité]], [[pi]], [[smolagents]]
 
 ### Scaling laws  ·  notion
 - tags : `scaling-laws`, `llm`, `deep-learning`
@@ -3513,7 +3513,7 @@
 ### Segmentation  ·  notion
 - tags : `segmentation`, `computer-vision`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[CNN]], [[Cross-entropy]], [[Détection d'objets]], [[Métriques vision]], [[Segment Anything (SAM)]], [[Transfer learning vision]], [[Vision par ordinateur]]
-- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Métriques vision]], [[OCR]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[segment-anything]], [[supervision]], [[torchvision]]
+- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Métriques vision]], [[OCR]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[segment-anything]], [[supervision]]
 
 ### Self-attention  ·  notion
 - tags : `attention`, `transformers`, `deep-learning`
@@ -3528,7 +3528,7 @@
 ### Server-Sent Events & streaming LLM  ·  notion
 - tags : `streaming`, `llm`, `web-framework`
 - liens sortants : [[Decoding strategies]], [[FastAPI]], [[Inference optimization]], [[LLM observability]], [[Reliability patterns]], [[Structured outputs]], [[Tokenization]]
-- liens entrants : [[Decoding strategies]], [[Runtimes]]
+- liens entrants : [[Decoding strategies]], [[Runtimes]], [[TGI]]
 
 ### SFT  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -3578,7 +3578,7 @@
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
 - liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Partitionnement & layout de données]]
-- liens entrants : [[Data & pipelines]], [[Flink]], [[Partitionnement & layout de données]]
+- liens entrants : [[Avro]], [[Data & pipelines]], [[Flink]], [[Partitionnement & layout de données]]
 
 ### Structured outputs  ·  notion
 - tags : `structured-output`, `llm`, `tool-use`, `data-validation`
@@ -3678,7 +3678,7 @@
 ### Tool use patterns  ·  notion
 - tags : `tool-use`, `agents`, `llm`
 - liens sortants : [[Advanced RAG]], [[Agent patterns]], [[CrewAI]], [[Instructor]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[PydanticAI]], [[RAG]], [[Reliability patterns]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agents]], [[Agno]], [[AutoGen]], [[Context engineering]], [[CrewAI]], [[Harnais d'agent]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Maka]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[PraisonAI]], [[Reliability patterns]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[needle]], [[smolagents]], [[tool-use]]
+- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agents]], [[Agno]], [[AutoGen]], [[Context engineering]], [[CrewAI]], [[Harnais d'agent]], [[Hermes Agent]], [[Human-in-the-loop]], [[LLM observability]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Maka]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[PraisonAI]], [[Reliability patterns]], [[Semantic Kernel]], [[Structured outputs]], [[agent-loops]], [[mcp-protocol]], [[needle]], [[smolagents]], [[tool-use]]
 
 ### tool-use  ·  notion
 - tags : `tool-use`, `structured-output`, `llm`
@@ -3688,7 +3688,7 @@
 ### Traitement du langage naturel  ·  notion
 - tags : `nlp`
 - liens sortants : [[BM25]], [[Classification de texte]], [[Comparatif - NLP]], [[Data leakage]], [[GLiNER]], [[HuggingFace]], [[Hybrid retrieval]], [[Imbalanced classification]], [[NER et étiquetage de séquence]], [[NLTK]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Scikit-Learn]], [[SetFit]], [[TF-IDF]], [[Tokenization]], [[Transformer architectures]], [[embeddings]], [[rank-bm25]], [[sentence-transformers]], [[spaCy]]
-- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[OCR]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[interpreto]], [[spaCy]]
+- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[OCR]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[interpreto]], [[sentencepiece]], [[spaCy]]
 
 ### Traitement du signal  ·  notion
 - tags : `signal-processing`
@@ -3753,7 +3753,7 @@
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Diffusion models]], [[Distillation]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Keras]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[PyTorch]], [[Quantization]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Self-attention]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Kornia]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[supervision]], [[timm]], [[torchvision]]
+- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Kornia]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[supervision]], [[torchvision]]
 
 ### Vision Transformers (ViT)  ·  notion
 - tags : `vit`, `transformers`, `computer-vision`, `deep-learning`
@@ -3773,7 +3773,7 @@
 ### Web scraping  ·  notion
 - tags : `web-scraping`, `data-pipeline`
 - liens sortants : [[Bases de données]], [[Comparatif - Scraping]], [[Crawlee]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Documents]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[selectolax]]
+- liens entrants : [[Crawlee]], [[Documents]], [[EDA automatisée & profiling]], [[Firecrawl]], [[Fuzzy matching & similarité de chaînes]], [[Maxun]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
 
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
