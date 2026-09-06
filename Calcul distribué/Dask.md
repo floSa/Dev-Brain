@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[pandas]]", "[[Polars]]", "[[numpy]]", "[[Modin]]", "[[Spark]]", "[[Ray]]"]
-complements: []
+complements: ["[[xarray]]"]
 tags: [distributed, parallel, out-of-core, lazy-evaluation]
 url_docs: https://docs.dask.org/
 url_repo: https://github.com/dask/dask
@@ -66,6 +66,10 @@ grosses que la RAM.
 - [[Modin]] — Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
 - [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 - [[Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
+
+### Compléments
+
+- [[xarray]] — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial). — les tableaux étiquetés qui dépassent la RAM en `chunks=`, la voie documentée du passage à l'échelle
 
 ## Ressources
 

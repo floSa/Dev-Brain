@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[pandas]]", "[[Modin]]", "[[Dask]]"]
-complements: ["[[ADBC]]", "[[DuckDB]]"]
+complements: ["[[ADBC]]", "[[DuckDB]]", "[[connectorx]]"]
 tags: [dataframe, columnar, lazy-evaluation, out-of-core]
 url_docs: https://docs.pola.rs/
 url_repo: https://github.com/pola-rs/polars
@@ -65,6 +65,7 @@ API d'expressions (`pl.col(...)`) qui ne se devine pas depuis pandas.
 
 - [[ADBC]] — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow. — `read_database(engine="adbc")` s'appuie dessus pour éviter une conversion.
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur. — intégration directe via Arrow, dans les deux sens.
+- [[connectorx]] — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination. — le moteur derrière `read_database(engine="connectorx")`
 
 ## Ressources
 

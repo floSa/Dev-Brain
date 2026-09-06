@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Streamlit]]", "[[Shiny for Python]]", "[[Gradio]]"]
-complements: []
+complements: ["[[plotly]]"]
 tags: [data-app, dashboard, web-framework]
 url_docs: https://dash.plotly.com
 url_repo: https://github.com/plotly/dash
@@ -59,6 +59,10 @@ serveur, React pour les composants, Plotly.js pour les graphes.
 - [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 - [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
+### Compléments
+
+- [[plotly]] — Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash. — le moteur de rendu des graphes, du même éditeur
+
 ## Ressources
 
 - Documentation — https://dash.plotly.com
@@ -69,4 +73,3 @@ serveur, React pour les composants, Plotly.js pour les graphes.
 - [[Interfaces & apps data]] — le hub du domaine
 - [[Comparatif - Apps data & démos ML]] — ce qui départage les quatre frameworks du dossier
 - [[Comparatif - Frontends web légers]] — le même choix élargi à l'option à la main, FastAPI + HTMX
-- [[plotly]] — le moteur de rendu des graphes, du même éditeur

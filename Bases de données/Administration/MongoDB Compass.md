@@ -10,7 +10,7 @@ licence_type: source-available
 os: "Windows, macOS, Linux"
 langage: TypeScript/Electron
 alternatives: ["[[DBeaver]]"]
-complements: []
+complements: ["[[MongoDB]]"]
 tags: [db-client, document-db, nosql]
 url_docs: https://www.mongodb.com/docs/compass/
 url_repo: https://github.com/mongodb-js/compass
@@ -56,6 +56,10 @@ sans schéma déclaré ne donne autrement.
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
+### Compléments
+
+- [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding. — le moteur exploré — le client n'a pas d'objet sans lui
+
 ## Ressources
 
 - Documentation — https://www.mongodb.com/docs/compass/
@@ -63,5 +67,4 @@ sans schéma déclaré ne donne autrement.
 ## Voir aussi
 
 - [[Bases de données]] — le hub du domaine
-- [[MongoDB]] — le moteur exploré
 - [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier

@@ -40,7 +40,7 @@ des fichiers, et ne conserve ni artefacts ni métadonnées d'exécution au-delà
 
 | Prendre si | Écarter si |
 |---|---|
-| Visualiser vite et localement un entraînement, sans compte ni service tiers | Les event files grossissent vite (histogrammes, images) : cadrer la fréquence de log et purger les vieux runs |
+| Visualiser vite et localement un entraînement, sans compte ni service tiers | |
 | Projet PyTorch, TensorFlow ou `transformers` : `SummaryWriter` ou le callback intégré suffit | Aucune authentification : ne pas exposer le serveur brut sur Internet, le placer derrière un reverse-proxy |
 | Inspecter le graphe d'un modèle, des images générées, un projecteur d'embeddings | Comparaison d'exécutions limitée : pas de tableau d'hyperparamètres riche |
 | Profiler l'usage GPU et le coût des étapes, via le plugin Profiler | Suivi ultra-léger de très nombreuses exécutions en self-host → [[Aim]] |
@@ -51,7 +51,7 @@ des fichiers, et ne conserve ni artefacts ni métadonnées d'exécution au-delà
 
 - Installation — `uv add tensorboard`
 - Point d'entrée — serveur web `tensorboard --logdir`, alimenté par des event files ; côté PyTorch, `torch.utils.tensorboard.SummaryWriter`
-- Prérequis — un répertoire de logs sur disque ou sur stockage objet
+- Prérequis — un répertoire de logs sur disque ou sur stockage objet ; les event files y grossissent vite avec les histogrammes et les images, d'où une fréquence de log à cadrer et de vieux runs à purger
 - Exécution — serveur local mono-nœud : il sert des fichiers, il ne stocke rien d'autre
 - Coût — gratuit, Apache-2.0 ; TensorBoard.dev, l'hébergement public de logs, est fermé
 

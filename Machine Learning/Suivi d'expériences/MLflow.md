@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Weights & Biases]]", "[[Neptune]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
-complements: []
+complements: ["[[Evidently]]"]
 tags: [experiment-tracking, model-registry]
 url_docs: https://mlflow.org/docs/latest/
 url_repo: https://github.com/mlflow/mlflow
@@ -64,6 +64,10 @@ de modèles ouvert.
 - [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 - [[TensorBoard]] — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
+
+### Compléments
+
+- [[Evidently]] — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production. — le versant dérive et qualité des données, en aval du run suivi
 
 ## Ressources
 

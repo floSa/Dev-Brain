@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Flask]]"]
-complements: ["[[Uvicorn]]", "[[HTMX]]"]
+complements: ["[[Uvicorn]]", "[[HTMX]]", "[[SQLModel]]"]
 tags: [web-framework, type-hints]
 url_docs: https://fastapi.tiangolo.com
 url_repo: https://github.com/fastapi/fastapi
@@ -62,6 +62,7 @@ branche ailleurs. Créé par Sebastián Ramírez (tiangolo), ligne 0.13x en 2026
 
 - [[Uvicorn]] — Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI. — la brique d'exécution, sans laquelle l'application ne tourne pas
 - [[HTMX]] — Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd. — la couche d'interactivité quand ce backend doit aussi servir des pages
+- [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI. — la couche de persistance typée du même auteur, modèles partagés entre table et schéma d'API
 
 ## Ressources
 

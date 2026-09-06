@@ -47,7 +47,7 @@ JavaScript.
 
 - Installation — `uv add chromadb`
 - Point d'entrée — API Python ou JavaScript ; mode embarqué in-process, ou serveur via Docker
-- Prérequis — rien en mode embarqué ; l'index ANN sous-jacent est un HNSW
+- Prérequis — rien en mode embarqué ; l'index ANN sous-jacent est un HNSW ; comme pour tout magasin de vecteurs, la métrique de distance et le modèle d'embedding doivent rester cohérents entre l'indexation et la requête
 - Exécution — embarquée avec persistance sur disque, ou en serveur ; single-node côté open-source
 - Coût — gratuit en self-host (Apache 2.0) ; Chroma Cloud, serverless, payant à l'usage
 

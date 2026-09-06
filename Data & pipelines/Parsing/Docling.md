@@ -40,7 +40,7 @@ natives LangChain et LlamaIndex pour le RAG.
 
 | Prendre si | Écarter si |
 |---|---|
-| Convertir des PDF ou de l'Office en Markdown structuré en local, sans envoyer les documents à un tiers | Premier run : téléchargement des modèles, donc latence et espace disque |
+| Convertir des PDF ou de l'Office en Markdown structuré en local, sans envoyer les documents à un tiers | |
 | Extraction de tableaux et de structure de document de bonne qualité, gratuitement | Le traitement d'un gros PDF reste coûteux en CPU sans GPU |
 | Pipeline RAG souverain ou on-prem, sur données sensibles | Projet jeune à évolution rapide : épingler la version |
 | Intégration directe avec LangChain ou LlamaIndex | |
@@ -49,7 +49,7 @@ natives LangChain et LlamaIndex pour le RAG.
 
 - Installation — `pip install docling` ; les modèles layout et TableFormer se téléchargent au premier usage
 - Point d'entrée — conversion vers `DoclingDocument`, puis export Markdown, HTML, JSON lossless ou DocTags
-- Prérequis — Python ; un CPU correct suffit, un GPU accélère ; de l'espace disque pour les modèles
+- Prérequis — Python ; un CPU correct suffit, un GPU accélère ; de l'espace disque pour les modèles, que le premier run télécharge, d'où sa latence
 - Exécution — en process, mono-nœud, rien à héberger
 - Coût — gratuit, MIT ; le modèle compagnon Granite-Docling est sous Apache-2.0
 

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[HuggingFace]]", "[[SetFit]]"]
+complements: ["[[HuggingFace]]", "[[SetFit]]", "[[txtai]]"]
 tags: [embeddings, semantic-search, retrieval, reranking, nlp]
 url_docs: https://www.sbert.net
 url_repo: https://github.com/huggingface/sentence-transformers
@@ -65,6 +65,7 @@ modèles donnent deux espaces incompatibles. Maintenu par Hugging Face.
 
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — le socle de modèles et le Hub d'où viennent les encodeurs.
 - [[SetFit]] — Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM — bâti dessus, pour la classification few-shot.
+- [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI. — l'index et les workflows qui se montent au-dessus des embeddings produits
 
 ## Ressources
 

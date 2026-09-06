@@ -47,7 +47,7 @@ multimodal, où vecteurs et données brutes se requêtent côte à côte.
 
 - Installation — `uv add lancedb`
 - Point d'entrée — API Python, TypeScript ou Rust, en mode embarqué
-- Prérequis — un disque local ou un stockage objet (S3, GCS, Azure)
+- Prérequis — un disque local ou un stockage objet (S3, GCS, Azure) ; comme pour tout magasin de vecteurs, la métrique de distance et le modèle d'embedding doivent rester cohérents entre l'indexation et la requête
 - Exécution — dans le process appelant ; single-node côté open-source, l'échelle passant par le stockage objet, calcul séparé du stockage. Index IVF-PQ et HNSW
 - Coût — gratuit en self-host (Apache 2.0) ; LanceDB Cloud (serverless) et LanceDB Enterprise, payants
 

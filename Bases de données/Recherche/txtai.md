@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Vespa]]", "[[Marqo]]", "[[Elasticsearch]]"]
-complements: []
+complements: ["[[sentence-transformers]]"]
 tags: [search, semantic-search, embeddings, rag, vector-db]
 url_docs: https://neuml.github.io/txtai/
 url_repo: https://github.com/neuml/txtai
@@ -60,6 +60,10 @@ JavaScript, Java, Rust et Go.
 - [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
 - [[Elasticsearch]] — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
+### Compléments
+
+- [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi. — le socle d'embeddings sous-jacent
+
 ## Ressources
 
 - Documentation — https://neuml.github.io/txtai/
@@ -71,5 +75,4 @@ JavaScript, Java, Rust et Go.
 - [[Bases de données vectorielles]] — ce qu'il stocke et recherche
 - [[embeddings]] — la représentation qu'il indexe
 - [[RAG]] — son usage phare, avec workflows et pipelines intégrés
-- [[sentence-transformers]] — le socle d'embeddings sous-jacent
 - [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier

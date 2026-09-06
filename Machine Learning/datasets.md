@@ -41,7 +41,7 @@ fait par buffer. Ce n'est pas un moteur de requête — ni jointures, ni group-b
 | Prendre si | Écarter si |
 |---|---|
 | Charger un jeu public du Hub sans réécrire de loader : NLP, vision, audio | Manipulation tabulaire analytique — jointures, group-by complexes : ce n'est pas un moteur de requête → [[Polars]] ou [[pandas]] |
-| Traiter **plus grand que la RAM** : Arrow memory-mappé et `map` batché, streaming pour l'out-of-core pur | Le **cache** grossit vite et n'est jamais purgé seul : surveiller le disque, épingler une `revision=` pour la reproductibilité |
+| Traiter **plus grand que la RAM** : Arrow memory-mappé et `map` batché, streaming pour l'out-of-core pur | |
 | Alimenter un entraînement [[PyTorch]] ou `transformers` : `.with_format("torch")`, intégration directe au `Trainer` | En **streaming**, ni accès aléatoire ni `len()` : l'itération est séquentielle et le `shuffle` approximatif, par buffer |
 | Publier et versionner un dataset privé ou public sur le Hub, en Git/LFS | `trust_remote_code=True` **exécute un script de chargement distant** — à n'activer que pour des sources de confiance |
 | | Données qui tiennent en mémoire et restent dans un DataFrame métier : la couche Arrow est un coût sans contrepartie |
@@ -51,7 +51,7 @@ fait par buffer. Ce n'est pas un moteur de requête — ni jointures, ni group-b
 
 - Installation — `uv add datasets`
 - Point d'entrée — `load_dataset("nom")`, puis `map` / `filter` / `cast` ; passer `batched=True` et régler `num_proc`, un `map` non batché étant lent
-- Prérequis — espace disque pour le cache memory-mappé (`~/.cache/huggingface/datasets`)
+- Prérequis — espace disque pour le cache memory-mappé (`~/.cache/huggingface/datasets`), qui grossit vite et n'est jamais purgé seul ; épingler une `revision=` pour la reproductibilité
 - Exécution — single-node, appuyé sur PyArrow ; conversions sans copie vers [[pandas]], [[Polars]], NumPy, PyTorch
 - Coût — gratuit, Apache-2.0, rien à héberger côté bibliothèque ; le Hub est gratuit en accès public, payant pour le stockage privé et les gros volumes
 

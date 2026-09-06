@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[LlamaIndex]]", "[[Haystack]]", "[[DSPy]]", "[[Semantic Kernel]]", "[[PydanticAI]]"]
-complements: []
+complements: ["[[LangChain SQL agent]]"]
 tags: [llm, rag, agents, tool-use]
 url_docs: https://docs.langchain.com/
 url_repo: https://github.com/langchain-ai/langchain
@@ -64,6 +64,10 @@ d'autres briques du domaine se définissent par rapport à lui.
 - [[Semantic Kernel]] — SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur.
 - [[PydanticAI]] — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
 
+### Compléments
+
+- [[LangChain SQL agent]] — Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle. — son module text-to-SQL : SQLDatabaseToolkit et l'agent qui l'exploite
+
 ## Ressources
 
 - Documentation — https://docs.langchain.com/
@@ -72,7 +76,6 @@ d'autres briques du domaine se définissent par rapport à lui.
 ## Voir aussi
 
 - [[RAG]] — la notion, et ses techniques [[Chunking strategies]], [[Hybrid retrieval]], [[Reranking]], [[Advanced RAG]]
-- [[LangChain SQL agent]] — son module text-to-SQL (SQLDatabaseToolkit + agent), et la notion [[Text-to-SQL]]
 - Modèles et embeddings depuis [[HuggingFace]] ; vector stores comme [[Qdrant]] ou [[Chroma]] pour le RAG
 - [[LLM & IA générative]] — le hub du domaine
 - [[Comparatif - Frameworks LLM]] — ce qui départage les frameworks de la catégorie

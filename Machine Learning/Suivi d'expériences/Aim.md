@@ -40,7 +40,7 @@ registre de modèles ni RBAC — c'est le prix de la légèreté.
 
 | Prendre si | Écarter si |
 |---|---|
-| Tracker simple à lancer en local, sans compte ni service tiers | Les exécutions vivent sur le disque du serveur Aim : sauvegarde et rétention sont à prévoir |
+| Tracker simple à lancer en local, sans compte ni service tiers | |
 | Comparaison interactive de très nombreuses exécutions, avec une UI qui reste fluide | Ni registre de modèles ni RBAC : les fonctions d'entreprise manquent |
 | Souveraineté des données : tout reste auto-hébergé | Packaging et déploiement de modèles ne sont pas dans le périmètre |
 | Alternative légère quand le registre de modèles n'est pas requis | |
@@ -49,7 +49,7 @@ registre de modèles ni RBAC — c'est le prix de la légèreté.
 
 - Installation — `uv add aim` ; UI via `aim up`
 - Point d'entrée — API Python `aim.Run`, UI web, et un SDK de requêtes sur les métadonnées
-- Prérequis — un disque pour le dépôt de runs ; aucun service externe
+- Prérequis — un disque pour le dépôt de runs, où les exécutions vivent : sauvegarde et rétention sont à prévoir ; aucun service externe
 - Exécution — serveur mono-nœud auto-hébergé : bare metal, AWS, GCP ou Kubernetes
 - Coût — gratuit, Apache-2.0 ; aucun service central imposé
 

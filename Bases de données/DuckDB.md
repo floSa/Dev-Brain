@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ClickHouse]]"]
-complements: ["[[pandas]]", "[[Polars]]"]
+complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb
@@ -60,6 +60,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 
 - [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python. — intégration directe, dans les deux sens.
 - [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core. — intégration directe via Arrow.
+- [[jupysql]] — SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats. — le compagnon notebook : du SQL analytique local en magic cell
 
 ## Ressources
 

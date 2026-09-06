@@ -60,7 +60,7 @@ fait exploser l'index et la facture ; les labels se modélisent avec parcimonie.
 
 ### Alternatives
 
-- *Aucune alternative déclarée : le voisin fonctionnel, Elasticsearch, relève de `database/search` et non de cette catégorie — il est pointé dans le tableau ci-dessus.*
+- *Aucune alternative déclarée : le voisin fonctionnel, Elasticsearch, relève de `database/recherche` et non de cette catégorie — il est pointé dans le tableau ci-dessus.*
 
 ### Compléments
 

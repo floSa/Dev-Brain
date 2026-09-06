@@ -10,7 +10,7 @@ licence_type: source-available
 os: "Windows, macOS, Linux, web (Docker)"
 langage: TypeScript/Electron
 alternatives: ["[[DBeaver]]"]
-complements: []
+complements: ["[[Redis]]"]
 tags: [db-client, key-value, in-memory]
 url_docs: https://redis.io/docs/latest/develop/tools/insight/
 url_repo: https://github.com/redis/RedisInsight
@@ -56,6 +56,10 @@ lentes.
 
 - [[DBeaver]] — Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
+### Compléments
+
+- [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub. — le moteur exploré — le client n'a pas d'objet sans lui
+
 ## Ressources
 
 - Documentation — https://redis.io/docs/latest/develop/tools/insight/
@@ -63,5 +67,4 @@ lentes.
 ## Voir aussi
 
 - [[Bases de données]] — le hub du domaine
-- [[Redis]] — le moteur exploré
 - [[Comparatif - Clients de bases de données]] — ce qui départage les clients du dossier
