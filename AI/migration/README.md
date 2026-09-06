@@ -42,13 +42,22 @@ propre travail.
 | 3 | Déplacement des fichiers, domaine par domaine | `lot-3-arborescence.md` | après lot 2 | **fait le 2026-09-05** — 20 domaines, 682 fichiers déplacés, `Dev/` n'existe plus |
 | 4 | Recatégorisation des 205 notions | `lot-4-notions.md` | après lot 3 | **fait le 2026-09-05** — 297 notions rangées, 10 MOC supprimées sur mesure, `Wiki/` et `MOC/` n'existent plus |
 | 5 | Comparatifs `.base` → pages `.md` | `lot-5-comparatifs.md` | après lot 3 | **fait le 2026-09-06** — les 47 sont des pages `role: comparatif`, 258 puces toutes sourcées, les 47 `.base` conservés à côté de leur page. Quatre sessions, 27 *Remontées* |
-| 6 | Conversion des fiches au nouveau gabarit | `lot-6-gabarit.md` | après lot 2 | — |
+| 6 | Conversion des fiches au nouveau gabarit | `lot-6-gabarit.md` | après lot 2 | **fait le 2026-09-06** — les 337 briques au gabarit v3, 149 → 28 avertissements (les 121 fermés sont tous des R15). **Seul lot mené en parallèle** : un pilote seul, puis 17 conversations simultanées, puis une intégration. Zéro conflit, 20 *Remontées* consolidées dans le journal du brief |
 | 7 | Skills et règle de propagation | `lot-7-skills.md` | après lots 2 et 3 | **fait** — `enrichir-brain` et `cloturer-brain` scindés, mode wiki dissous |
 | 8 | Durcissement des règles du validateur | `lot-8-durcissement.md` | en dernier | — |
 
-**Une conversation à la fois, jamais deux en parallèle.** Les fichiers sources de 4, 5 et 6 sont
-bien disjoints, mais chaque lot se clôt par `cloturer-brain`, qui régénère `AI/index/` et `MOC/`,
-commit et pousse : deux clôtures simultanées se percutent sur les fichiers générés et sur le push.
+**Une conversation à la fois, jamais deux en parallèle** — sauf sous le protocole du lot 6.
+Les fichiers sources de 4, 5 et 6 sont bien disjoints, mais chaque lot se clôt par
+`cloturer-brain`, qui régénère `AI/index/`, commit et pousse : deux clôtures simultanées se
+percutent sur les fichiers générés et sur le push.
+
+Le lot 6 a levé cette contrainte en **retirant la clôture** des conversations de conversion :
+dix-sept branches, six interdits (pas de régénération, pas de `cloturer-brain`, pas de fichier
+partagé, un dossier entier par conversation, remontées dans son propre fichier, push sur sa
+branche seulement), puis une conversation d'intégration qui régénère et clôt une fois. Résultat
+mesuré : 322 fiches, zéro collision, zéro conflit de merge. Le protocole et ses trois manques
+sont écrits dans `lot-6-gabarit.md` — il est réutilisable, mais seulement pour un lot qui **ne
+déplace ni ne renomme rien**.
 
 **Le lot 7 est prioritaire dès que le 3 est fait.** Tant qu'il n'a pas tourné, les skills
 suivent encore les règles v2 : toute page ajoutée entre-temps dégrade la structure neuve.

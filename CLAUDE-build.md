@@ -2,7 +2,7 @@
 nom: CLAUDE-build
 role: gouvernance
 created: 2026-05-19
-modified: 2026-09-05
+modified: 2026-09-06
 tags: [meta, mode-brain]
 ---
 
@@ -57,7 +57,7 @@ Anthropic strict — pas de champ `role:`.
 | **`pattern`** | une architecture éprouvée | `Patterns/Pattern - <nom>.md` | à la main |
 | **`rule`** | une règle transverse | `Rules/Rule - <nom>.md` | à la main |
 | **`hub`** | la page d'un dossier, l'aiguillage | `<Dossier>/<Dossier>.md` + les 6 de `Métiers/` | corps à la main, **zone AUTO générée** |
-| **`comparatif`** | ce qui départage plusieurs briques | aucune page encore — arrive au **lot 5**, les comparatifs sont des `.base` | — |
+| **`comparatif`** | ce qui départage plusieurs briques | `<Dossier>/Comparatif - <thème>.md`, **plus** le `.base` à côté, que la page embarque | corps à la main |
 
 `role: hub`, `pattern` et `rule` ne portent **pas** de `categorie:`, et c'est délibéré : un hub
 *est* le rangement (son domaine est son chemin), un pattern enjambe plusieurs domaines par
@@ -152,20 +152,51 @@ Sections types (cf. `AI/design/brain-v3.md` §6, `Templates/Service-Dev.md`) :
 ```markdown
 # <Nom>
 
-## Pourquoi          (2-3 lignes : ce qu'il fait, sa différence)
-## Quand l'utiliser  (bullets)
-## Quand NE PAS      (bullets + wikilinks vers alternatives)
-## Déploiement & coût (self-host vs managé, prix, scaling — si la brique s'héberge)
-## Pièges            (pièges connus et retours d'expérience de la brique)
-## Alternatives
-- [[X]] — reprend le pitch de X
-## Liens
+<!-- AUTO:BANDEAU:START -->        ← généré par AI/scripts/build_bandeau.py, jamais à la main
+> <pitch>
+| Nature | Licence | Exécution | Maturité |
+<!-- AUTO:BANDEAU:END -->
+
+## Définition            (prose vulgarisée, 4 à 6 lignes — la SEULE prose de la page)
+## Prendre si / Écarter si   (un tableau à deux colonnes, une ligne = une idée)
+## Mise en œuvre         (cinq étiquettes fixes : Installation, Point d'entrée,
+                          Prérequis, Exécution, Coût)
+## Écosystème
+### Alternatives         (une puce par cible d'`alternatives:`, pitch réinjecté)
+### Compléments          (une puce par cible de `complements:`, idem)
+## Ressources            (liens externes étiquetés : Documentation, Dépôt, Tutoriel,
+                          Article, Papier, Cours, Vidéo)
+## Voir aussi            (navigation interne : la notion parente, le hub, le comparatif)
+## Retours               (n'existe QUE si une entrée datée existe — aucune fiche du vault
+                          n'en porte au 2026-09-06)
 ```
 
-> Le gabarit v3 (§6) remplace `Quand l'utiliser` / `Quand NE PAS` par un tableau
-> `## Prendre si / Écarter si`, dont chaque cellule d'exclusion porte un wikilink. **Aucune
-> fiche ne le porte encore** : c'est le **lot 6** qui convertira les fiches, domaine par
-> domaine. Écrire une fiche neuve dans l'ancien découpage reste donc la norme aujourd'hui.
+**C'est le gabarit v3, et c'est la norme : les 337 fiches `role: brique` le portent depuis la
+clôture du lot 6, le 2026-09-06.** Une fiche neuve s'écrit ainsi, jamais dans l'ancien
+découpage. Le raisonnement complet est en `AI/design/brain-v3.md` §6 ; le journal du lot, avec
+ses vingt remontées mesurées, en `AI/migration/lot-6-gabarit.md`.
+
+Le principe tient en une phrase : **une ligne, une étiquette, une idée. Aucune prose hors de
+`## Définition`.** Trois conséquences qui se vérifient et qui ont coûté cher à découvrir :
+
+- **Le bandeau est entièrement dérivé du frontmatter.** Rien à écrire, rien à resynchroniser,
+  et une cellule sans source affiche un tiret cadratin — jamais une valeur plausible. Lancer
+  `uv run AI/scripts/build_bandeau.py "<chemin>"` après avoir écrit le frontmatter.
+- **Un wikilink dans une cellule de tableau est NU.** `[[Triton]]`, jamais
+  `[[NVIDIA Triton|Triton]]` : la barre de l'alias coupe la ligne du tableau, et l'échapper
+  d'une contre-oblique fait échouer `check_brain` en violation **dure** (« lien mort »). Les
+  deux formes cassent ; la nue est la seule qui passe.
+- **`Écarter si` est réservé à ce qui DISQUALIFIE le choix.** Une contrainte d'exploitation
+  qu'on subit une fois le choix fait — volume de traces, cache qui grossit, distribution TeX à
+  installer — va sous l'étiquette `Prérequis` de `## Mise en œuvre`.
+
+**Où va une exclusion « besoin → [[concurrent]] »** — c'est la question qui a coûté le plus de
+temps au lot 6, et elle se tranche sur la **cible**, pas sur la fiche : si la brique **et** sa
+cible sont membres de la **même vue `.base`**, la puce vit dans le comparatif et la cellule ne
+porte qu'une borne dure de la brique seule ; **sinon** — dossier sans comparatif, vue filtrée
+par tag, cible hors de la vue, ou cible qui est une notion — la puce **reste** en `Écarter si`
+avec son wikilink, parce qu'aucun comparatif ne peut la porter. Vérifier, ne pas supposer :
+`uv run AI/migration/scripts/mesure_membres_bases.py`.
 
 **Mécanique du pitch (anti-duplication)** : chaque page porte SON `pitch:` dans le
 frontmatter, écrit une seule fois. La ligne affichée dans la section *Alternatives* d'une
@@ -187,11 +218,14 @@ déplaceront encore. Contrepartie : **vérifier que le nom de fichier d'une page
 unique dans le vault**, à la casse près.
 
 **Important** : les **retours d'expérience et bugs rencontrés** vont dans la section
-`## Pièges` de la fiche concernée. Il n'y a pas de dossier séparé.
+`## Retours` de la fiche concernée — **et elle n'existe que s'il y en a un**. Il n'y a pas de
+dossier séparé. La section `## Pièges` qui les accueillait a été dissoute au lot 6 : ses 337
+occurrences ne contenaient **aucune** entrée datée, rien que de la limite de conception
+recopiée de la doc, qui est décisionnelle et vit désormais en `Écarter si`.
 
 | Convention | Format / règle |
 |---|---|
-| **Entrée d'expérience datée** (`## Pièges`) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté ; sans date, c'est un piège générique |
+| **Entrée d'expérience datée** (`## Retours`) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté ; **sans date, ce n'est pas un retour** : c'est une borne, sa place est `Écarter si` ou `Prérequis` |
 | **Imputation d'un incident inter-briques** | il s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne. La fiche de l'autre brique **ne le mentionne pas** — une entrée dupliquée devient une seconde chose à synchroniser ; le nom en clair suffit à la retrouver par `grep` |
 
 Exemple d'entrée inter-briques, dans `DevOps/Docker.md` (le correctif a porté sur la
@@ -354,5 +388,5 @@ jamais `--author`, jamais l'email annoncé par le harnais.
 - Réécrire une fiche entière au lieu de patcher la section concernée.
 - Réécrire une `role: notion` existante sans que floSa l'ait demandé.
 - Modifier un champ d'une fiche existante sans dérouler la *table des effets de bord* de `enrichir-brain` (workflow général, point 5) — un `pitch:` réécrit sans repropager laisse un pitch périmé chez chaque citeur.
-- Écrire un retour d'expérience sans date dans `## Pièges`, ou le dupliquer sur les deux briques d'un incident inter-briques.
+- Écrire un retour d'expérience sans date dans `## Retours`, ou le dupliquer sur les deux briques d'un incident inter-briques. Sans date, ce n'est pas un retour : c'est une borne, qui va en `Écarter si` ou en `Prérequis`.
 - Supprimer une page : pendant la migration v3, **aucun `rm`** — un déplacement se fait par `git mv`, une suppression se demande.

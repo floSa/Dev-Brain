@@ -442,7 +442,9 @@ mesure qui vaille — un compte de référence recopié de mémoire ne prouve ri
 ### Cas particulier — retour d'expérience daté
 
 Un bug rencontré n'est pas une modification de champ : il s'écrit dans la section
-`## Pièges` de la fiche concernée et **ne déclenche aucune propagation** — rayon nul.
+`## Retours` de la fiche concernée — **créée à cette occasion si elle n'existe pas** — et
+**ne déclenche aucune propagation** — rayon nul. La section `## Pièges` qui l'accueillait a été
+dissoute au lot 6 : elle ne contenait aucun retour, rien que des bornes de conception.
 
 - **Format** : `- YYYY-MM-DD — <symptôme> : <correctif>.` La date est ce qui distingue le
   vécu du piège documenté.

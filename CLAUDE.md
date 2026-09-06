@@ -85,7 +85,7 @@ wiki", il annonce simplement qu'il vient travailler ses notions : applique la fr
 
 ## Ce que tu NE fais PAS sans confirmation explicite
 
-- Modifier une page `role: brique` existante (y compris sa section `## Pièges`) — en mode projet, **aucune écriture dans l'arbre des domaines**
+- Modifier une page `role: brique` existante (y compris sa section `## Retours`) — en mode projet, **aucune écriture dans l'arbre des domaines**
 - **Modifier ou créer une page `role: notion` sans demande explicite** (les notions sont la mémoire perso de l'utilisateur — pas la tienne). Une demande de capture (« ajoute X », « documente Y ») en est une : `enrichir-brain` écrit la brique et sa notion du même geste, c'est son travail. Un balayage de fin de conversation n'en est pas une pour les notions déjà écrites : proposer, pas réécrire.
 - Supprimer quoi que ce soit — et pendant la migration v3, **aucun `rm` sur une page** : un déplacement se fait par `git mv`, qui conserve l'historique
 - Committer ou pousser sans avoir clôturé : toute écriture dans une page du brain se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateurs verts, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
@@ -240,7 +240,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 | Pattern (`role: pattern`) | `Patterns/Pattern - <nom>.md` |
 | Règle (`role: rule`) | `Rules/Rule - <nom>.md` |
 | Notion (`role: notion`) | `<Dossier>/<Nom>.md` — **exactement** comme une brique : même dossier, même dérivation. Seul `role:` les distingue |
-| **Entrée d'expérience datée** (dans `## Pièges` de la fiche concernée) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté |
+| **Entrée d'expérience datée** (dans `## Retours` de la fiche concernée, section qui n'existe **que** dans ce cas) | `- YYYY-MM-DD — <symptôme> : <correctif>.` — la date distingue le vécu du piège documenté ; sans date, ce n'est pas un retour mais une borne, qui va en `Écarter si` ou en `Prérequis` |
 | **Incident né entre deux briques** | s'inscrit **sous la brique qui a porté le correctif**, une seule fois, les autres briques nommées **en clair** dans la ligne ; la fiche de l'autre brique **ne le mentionne pas** (une entrée dupliquée serait une seconde chose à synchroniser) |
 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
