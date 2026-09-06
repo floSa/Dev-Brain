@@ -16,3 +16,7 @@ tags: [nosql]
 - [[MongoDB]] — documents BSON à schéma libre : l'objet métier se lit et s'écrit d'un bloc, et `$lookup` ne remplace pas une jointure.
 - [[Redis]] — tout en RAM, chemin de commande mono-thread : sub-milliseconde, mais dépasser la mémoire déclenche l'éviction et une commande coûteuse bloque le serveur.
 - [[Apache Cassandra]] — sans maître, réplication multi-datacenter et cohérence réglable par requête ; le modèle se pense par requête, pas par entité.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

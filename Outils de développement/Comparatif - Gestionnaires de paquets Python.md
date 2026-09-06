@@ -15,3 +15,7 @@ tags: [package-manager, reproducibility]
 
 - [[pip]] — volontairement minimal : il installe, et c'est tout — ni lockfile, ni venv, ni isolation d'outils. C'est ce qui en fait le seul présent **partout**, celui qu'un « copier-coller » de doc tierce peut supposer.
 - [[uv]] — absorbe pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine dans un binaire Rust, avec `uv.lock` et l'installation des versions de Python elles-mêmes. Le lock lui est propre : une équipe mixte doit s'aligner.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

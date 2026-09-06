@@ -15,3 +15,7 @@ tags: [timeseries]
 
 - [[TimescaleDB]] — extension Postgres : l'hypertable partitionne par le temps en gardant SQL, jointures et ACID ; le multi-nœuds distribué est déprécié.
 - [[InfluxDB]] — serveur temporel autonome, pensé append, avec rétention et downsampling automatiques ; la cardinalité des séries est son facteur de coût.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

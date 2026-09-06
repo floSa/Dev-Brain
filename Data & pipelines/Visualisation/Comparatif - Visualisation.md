@@ -18,3 +18,7 @@ tags: [dataviz, static-viz, interactive-viz, declarative-viz]
 - [[plotly]] — l'interactif **immédiat** : plotly.js dans le navigateur, zoom, survol et sélection sans écrire de JavaScript, et c'est le moteur de rendu de [[Dash]]. Pages HTML lourdes dès qu'il y a beaucoup de figures, export image conditionné à **Kaleido**, et le rendu rame sur beaucoup de points — agréger ou passer en `scattergl`.
 - [[bokeh]] — l'interactif **côté serveur** : un serveur Bokeh relie les widgets Python à des callbacks, ce qui donne des dashboards réactifs sans JS, et le rendu est pensé pour rester fluide sur de gros volumes ou du **streaming**. Le modèle de sessions et de callbacks a une courbe plus raide, et il n'y a pas d'export image natif simple.
 - [[altair]] — le seul **déclaratif** : on décrit des encodages plutôt qu'un tracé, et la sortie est une spécification **Vega-Lite** réutilisable hors Python. Limite par défaut à **5000 lignes** (`MaxRowsError`), et la personnalisation très fine reste bornée par ce que Vega-Lite expose.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

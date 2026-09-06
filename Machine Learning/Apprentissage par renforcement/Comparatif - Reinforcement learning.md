@@ -19,3 +19,7 @@ tags: [reinforcement-learning, self-play]
 - [[Acme]] — structure un agent en acteurs / learners / replay pour passer du single-process aux centaines d'acteurs sans réécriture, mais Reverb et Launchpad sont **Linux seulement** et la dernière release date de 2022.
 - [[RLax]] — la couche mathématique nue en JAX (pertes TD, λ-returns, V-trace) : ni agents, ni environnements, ni replay, ni boucle — tout le reste est à écrire.
 - [[TF-Agents]] — l'équivalent SB3 côté TensorFlow, et le seul dont la couverture des **bandits contextuels** soit complète ; figé sur TF 2.15, avec un couplage de versions TF / tf-agents / Reverb strict.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

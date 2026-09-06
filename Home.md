@@ -48,6 +48,12 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 - [[Patterns]] — 5 architectures type, chacune enjambant plusieurs domaines
 - [[Rules]] — 5 règles transverses, applicables quelle que soit la stack
 
+## Réunis par `role:` — les comparatifs
+
+- [[Comparatifs]] — 47 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+  chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
+  contient donc aucune page — il est la seule qui les réunisse toutes.
+
 ## Pilotage
 
 - [[brain-index|Index lisible]] — toutes les pages par domaine et par `role:`
@@ -65,9 +71,10 @@ les 20 domaines, ses trois scaffolds vides (`Outils/`, `Workflows/`, `Roadmaps/`
 supprimés, et `MOC/` ne porte plus aucune page. Une notion se cherche donc exactement
 comme une brique : par le hub de son dossier.
 
-Ce qui reste ouvert est du **format**, pas du rangement : les comparatifs `.base`
-deviennent des pages au lot 5, les fiches passent au nouveau gabarit au lot 6, et les
-règles du validateur restées en avertissement durcissent au lot 8.
+**Plus rien n'est ouvert : la migration v3 est close depuis le 2026-09-06.** Ce qui restait
+était du format, pas du rangement — les comparatifs `.base` sont devenus des pages au lot 5,
+les 337 fiches sont passées au nouveau gabarit au lot 6, et les dix règles du validateur ont
+été durcies ou motivées au lot 8.
 
 ## Skills
 

@@ -22,3 +22,7 @@ tags: [document-parsing, pdf, ocr, rag, layout-analysis]
 - [[Marker]] — un pipeline **vision** multi-étapes sur la famille de modèles OCR **Surya**, optimisé pour le **débit** sur GPU. Sa vraie frontière est la **double licence** : code en GPL-3.0, mais **poids** en OpenRAIL-M modifiée, gratuits seulement en dessous de 2 M$ de revenus ou financement. Sans GPU, le débit s'effondre.
 - [[LlamaParse]] — le seul **managé** et non open-source : des tiers Fast à Agentic Plus, une facturation à crédits, et aucune infra GPU ni modèle à opérer. Les documents **transitent par le cloud**, ce qui l'exclut sous contrainte de souveraineté, et le coût grimpe vite en mode agentique.
 - [[OpenDataLoader PDF]] — le seul **déterministe** par défaut : analyse de layout algorithmique (XY-Cut++) sans GPU, donc sortie reproductible à PDF constant, bounding boxes pour citer la source exacte, et le premier open-source à produire un **Tagged PDF** de bout en bout. Le mode local est bien plus faible sur les tableaux — 0,489 contre 0,928 en hybride, chiffres du projet — et chaque appel démarre un processus JVM.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

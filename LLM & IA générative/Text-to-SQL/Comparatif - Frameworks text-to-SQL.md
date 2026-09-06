@@ -18,3 +18,7 @@ tags: [text-to-sql, rag, agents]
 - [[DB-GPT]] — le plus large : **multi-agent** avec son propre langage de workflow AWEL, et le seul du lot à embarquer le **fine-tuning Text2SQL** pour spécialiser un modèle sur son schéma. Le prix est un coût conceptuel élevé — AWEL, framework d'agents et pipeline à maîtriser avant d'être productif.
 - [[LangChain SQL agent]] — pas un produit mais un **assemblage** : `SQLDatabase` + `SQLDatabaseToolkit` + un agent qui **boucle** — inspecter le schéma, écrire, exécuter, se corriger sur erreur. À prendre quand LangChain (ou LangGraph) est déjà le socle ; sinon c'est du câblage à maintenir, sans exemples ni couche sémantique fournis.
 - [[LlamaIndex NLSQLTableQueryEngine]] — le même arbitrage dans l'autre écosystème, mais en **query engine** et non en boucle d'agent : il génère, exécute, puis **synthétise une réponse** en langage naturel. Son atout propre est `SQLTableRetrieverQueryEngine`, qui indexe les tables et récupère les pertinentes quand le schéma ne tient pas dans le prompt.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

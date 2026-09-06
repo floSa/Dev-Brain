@@ -17,3 +17,7 @@ tags: [llm-eval, rag-eval, llm-as-judge]
 - [[DeepEval]] — le « **pytest des LLM** » : des assertions dans le framework de test Python, donc une régression bloquée avant le merge. C'est aussi le plus large catalogue — 50+ métriques couvrant RAG, agents, tool-use, conversation et sécurité, plus *G-Eval* pour un critère écrit en langage naturel.
 - [[promptfoo]] — **déclaratif** : prompts, fournisseurs, cas et assertions dans un YAML versionné, et `promptfoo eval` rend une matrice de comparaison côte à côte. C'est le seul du lot à porter un volet **red-teaming** (50+ types : injection, jailbreak, fuite). Racheté par OpenAI en mars 2026, licence MIT annoncée maintenue.
 - [[TruLens]] — évalue **en instrumentant** : il capture les traces de l'app puis y attache des *feedback functions* qui notent chaque étape interne, pas seulement la sortie. C'est le socle de Snowflake AI Observability ; il trace, mais n'est pas une plateforme de monitoring multi-équipes hébergée.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

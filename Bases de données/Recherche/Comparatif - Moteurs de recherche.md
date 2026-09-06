@@ -19,3 +19,7 @@ tags: [search]
 - [[bm25s]] — BM25 pré-calculé à l'indexation en matrices creuses : requêtes en millisecondes, sans mise à jour incrémentale.
 - [[rank-bm25]] — BM25 en Python pur, sans index ni dépendance ; dormant depuis 2022 et tout en mémoire.
 - [[Marqo]] — génère lui-même les embeddings texte et image derrière une seule API, mais le projet open-source est déprécié et sans correctif de sécurité.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

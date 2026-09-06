@@ -15,3 +15,7 @@ tags: [design-tool]
 
 - [[Figma]] — le standard du design produit : composants et variables pour tenir un design system, prototypes cliquables, et un **dev mode** qui expose mesures, tokens et bouts de code aux développeurs. Cloud **propriétaire sans self-host**, format fermé, coût par éditeur qui grimpe avec l'équipe — rédhibitoire en contexte souverain ou régulé.
 - [[Penpot]] — le même métier en **MPL-2.0 et self-hostable** en Docker, bâti sur des **standards web** (SVG, CSS) : les designs parlent le langage du code, sans verrouillage de format. L'écart assumé est celui de la maturité et des plugins, et le self-host est une infra de plus à opérer.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

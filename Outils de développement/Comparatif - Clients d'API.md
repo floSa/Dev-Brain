@@ -15,3 +15,7 @@ tags: [api-client, version-control]
 
 - [[Bruno]] — les collections sont des fichiers texte `.bru` posés dans le dépôt : diff lisible, branche, revue de code, et **aucun compte ni cloud**. Le format lui est propre, il n'est pas interopérable, et il n'y a ni mocks ni monitoring.
 - [[Postman]] — la plateforme entière : mocks, monitors, doc publiée, catalogue, espaces partagés. Les collections vivent **dans son cloud** par défaut, l'export est un JSON illisible en diff, et depuis mars 2026 le plan gratuit est limité à **un seul utilisateur**.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

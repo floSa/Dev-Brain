@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 764 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 765 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1104,6 +1104,7 @@
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 - **Bayésien** — Traiter le paramètre comme une variable aléatoire — une distribution en sortie plutôt qu'un point, au prix d'un a priori assumé et d'un échantillonnage à faire converger.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
+- **Comparatifs** — Ce qui départage plusieurs briques d'un même thème — un tableau par thème, rangé dans le domaine qu'il compare.
 - **Data & pipelines** — Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
 - **Data Engineering** — Amener la donnée d'où elle naît jusqu'où elle sert, de façon répétable, traçable et vérifiable.
 - **Data Science** — Comprendre un jeu de données et en tirer un modèle qui répond à une question — explorer, tester, mesurer, expliquer.

@@ -15,3 +15,7 @@ tags: [graph-db]
 
 - [[Neo4j]] — le plus mûr : Cypher, algorithmes GDS, outillage de viz ; mais Community est mono-instance et la montée en charge reste verticale.
 - [[Nebula Graph]] — distribuée nativement (graphd, storaged, metad, réplication Raft) : trois services à exploiter, et le nombre de partitions se fige à la création.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

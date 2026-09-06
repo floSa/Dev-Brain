@@ -34,3 +34,7 @@ HTMX) et fait entrer trois briques que ce comparatif ne compare pas : Flask, Uvi
 
 La liste est donc l'expression honnête d'une comparaison **composée à la main**, qu'aucune
 `categorie:` ni aucun tag ne capture. Elle se maintient à la main, et c'est le coût accepté.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

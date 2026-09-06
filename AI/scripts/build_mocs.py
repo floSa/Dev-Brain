@@ -9,6 +9,7 @@ explicites (→ arêtes visibles dans le graphe Obsidian) :
   - la zone AUTO de chaque page `role: hub` de l'arbre — son périmètre est son DOSSIER
   - MOC/Concepts/<Label>.md   : sous-hub Wiki par famille de catégorie (concept/stats → « Statistiques »)
   - Métiers/<Label>.md        : hub transverse par `domaines:` (data-eng → « Data Engineering »)
+  - Comparatifs/Comparatifs.md : hub transverse par `role: comparatif`, groupé par domaine
 
 Le lot 3 a vidé `Dev/` : les 337 briques sont descendues dans l'arbre des domaines, les
 5 patterns et les 5 règles dans « Patterns/ » et « Rules/ ». Les deux boucles qui
@@ -40,6 +41,12 @@ MOC = VAULT / "MOC"
 # remontée 21 (collision de vocabulaire, à trancher au lot 8).
 METIERS = VAULT / "Métiers"
 MOC_CONCEPT = VAULT / "MOC" / "Concepts"
+# Le hub des comparatifs — un dossier racine qui ne porte QUE sa page, et c'est le
+# point : les 47 `role: comparatif` restent chacun dans le dossier du domaine qu'ils
+# comparent (la ligne P3 de la règle de propagation en dépend), ce hub ne fait que les
+# réunir. Son périmètre est un RÔLE, comme celui de « Métiers/ » est un CHAMP — dans les
+# deux cas, `zone_hub()` ne sait pas le remplir : elle lit un dossier.
+COMPARATIFS = VAULT / "Comparatifs"
 
 # Un hub de `Métiers/` est rempli par la boucle `domaines:` ci-dessous, PAS par
 # `zone_hub()` : son périmètre est un champ, pas un dossier. Le lister dans les deux
@@ -197,6 +204,37 @@ def zone_hub(hub: Path, pages: list[dict]) -> list[str]:
     return lignes or ["*(dossier vide)*"]
 
 
+def zone_comparatifs(pages: list[dict]) -> list[str]:
+    """Contenu de la zone AUTO du hub « Comparatifs » : les 47, groupés par domaine.
+
+    Le défaut que ce hub répare : un comparatif n'était relié qu'à ses membres, donc
+    dispersé dans la grappe de son domaine. La couleur rouge (`role: comparatif`, lot 5)
+    les rendait visibles un par un ; elle ne les rassemblait pas. Ce qui fait une galaxie
+    dans le graphe, c'est une page que TOUS citent et qui les cite tous — c'est ce que
+    « Patterns/ » et « Rules/ » ont par construction, leurs pages vivant dans le dossier
+    de leur hub. Les comparatifs, eux, ne peuvent pas déménager : leur place est le
+    dossier de leurs membres. Le lien retour est donc écrit dans chaque page (section
+    `## Voir aussi`), et cette liste est l'aller.
+
+    Le groupe est le DOMAINE, c'est-à-dire le premier segment du chemin : un comparatif
+    rangé dans un sous-dossier promu (« Bases de données/Vectoriel/ ») compte pour son
+    domaine, pas pour son sous-domaine — sinon ce hub redoublerait l'arbre au lieu de le
+    traverser, et la vingtaine de groupes deviendrait une cinquantaine.
+    """
+    par_dom: dict[str, list[dict]] = {}
+    for p in pages:
+        if p.get("role") != "comparatif":
+            continue
+        par_dom.setdefault(p["path"].split("/")[0], []).append(p)
+    lignes: list[str] = []
+    for dom, membres in sorted(par_dom.items()):
+        lignes += ["### " + dom]
+        lignes += ["- " + link(q)
+                   for q in sorted(membres, key=lambda e: e["nom"].lower())]
+        lignes += [""]
+    return lignes or ["*(aucune page `role: comparatif`)*"]
+
+
 def main() -> int:
     if not INDEX.exists():
         raise SystemExit("Index absent — lancer d'abord : uv run AI/scripts/build_index.py")
@@ -290,9 +328,11 @@ def main() -> int:
     # `Métiers/` sont exclus : leur périmètre est un CHAMP, pas un dossier — la
     # boucle ci-dessus les a déjà remplis.
     for hub in hubs():
-        if hub.relative_to(VAULT).parts[0] in HUBS_TRANSVERSES:
+        racine = hub.relative_to(VAULT).parts[0]
+        if racine in HUBS_TRANSVERSES:
             continue
-        lignes = zone_hub(hub, pages)
+        lignes = (zone_comparatifs(pages) if racine == COMPARATIFS.name
+                  else zone_hub(hub, pages))
         txt = hub.read_text(encoding="utf-8")
         if not AUTO_RE.search(txt):
             skipped.append(hub.relative_to(VAULT).as_posix() + " : aucune zone "
@@ -303,6 +343,12 @@ def main() -> int:
                 + nl + "<!-- AUTO:END -->")
         hub.write_text(AUTO_RE.sub(lambda m: auto, txt), encoding="utf-8")
         written.append(("hub", hub.relative_to(VAULT).as_posix(), len(lignes)))
+
+    hub_comp = COMPARATIFS / (COMPARATIFS.name + ".md")
+    if not hub_comp.exists():
+        skipped.append(f"{hub_comp.relative_to(VAULT).as_posix()} absent — les "
+                       f"{sum(1 for p in pages if p.get('role') == 'comparatif')} "
+                       "comparatif(s) n'ont pas de hub qui les réunisse")
 
     for kind, label, n in written:
         if kind == "hub":

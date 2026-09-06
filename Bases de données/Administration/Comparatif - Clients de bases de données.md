@@ -20,3 +20,7 @@ tags: [db-client]
 - [[MySQL Workbench]] — outil officiel MySQL, le seul à faire la modélisation ER et le reverse engineering vers du DDL.
 - [[MongoDB Compass]] — client officiel Mongo, le seul à analyser le schéma implicite des documents — sur un échantillon.
 - [[Redis Insight]] — client officiel Redis, support de premier ordre des modules (JSON, Search) et analyse mémoire ; licence SSPL.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

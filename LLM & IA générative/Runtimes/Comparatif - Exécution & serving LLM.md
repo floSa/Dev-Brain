@@ -22,3 +22,7 @@ tags: [local-llm, model-serving, inference, quantization]
 - [[TGI]] — routeur **Rust** devant des workers Python, et le moteur des Inference Endpoints de Hugging Face : c'est l'ancrage écosystème qui le choisit, pas le débit brut. Vérifier la version si la conformité compte — de mi-2023 à début 2024 il était sous licence restrictive HFOIL, avant retour à Apache-2.0.
 - [[TensorRT-LLM]] — le modèle est **compilé** en un moteur TensorRT, avec les kernels et les précisions les plus récentes de NVIDIA (FP8, FP4 sur Blackwell). Latence et débit maximaux, mais un build par couple modèle / GPU / précision — inadapté à l'expérimentation, et verrou matériel total.
 - [[needle]] — l'intrus assumé : **pas un runtime mais un modèle** de 45 M paramètres qui embarque son propre moteur dans 14 Mo, dédié à l'appel d'outils et à l'extraction structurée, JSON garanti par grammaire. Fenêtre de 256 tokens glissante : ni chat, ni génération libre.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

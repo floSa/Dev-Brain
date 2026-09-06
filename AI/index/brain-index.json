@@ -5,6 +5,7 @@
     "Automatisation no-code",
     "Bases de données",
     "Calcul distribué",
+    "Comparatifs",
     "Data & pipelines",
     "Design & diagrammes",
     "DevOps",
@@ -24,11 +25,10 @@
     "Statistiques & inférence",
     "Stockage",
     "Sécurité",
-    "Web & API",
-    "Wiki"
+    "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 764,
+  "count": 765,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -5136,6 +5136,21 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Comparatifs/Comparatifs.md",
+      "nom": "Comparatifs",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": "Ce qui départage plusieurs briques d'un même thème — un tableau par thème, rangé dans le domaine qu'il compare.",
+      "tags": null,
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Apache Iceberg.md",

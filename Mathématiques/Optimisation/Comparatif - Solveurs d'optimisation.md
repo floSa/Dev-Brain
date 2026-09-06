@@ -33,3 +33,7 @@ autres solveurs.** La fiche [[PuLP]] en nomme onze en clair, aucun n'ayant de pa
 compte les membres du `.base`, que la page n'a pas modifié. L'avertissement reste donc
 visible tant que le trou n'est pas comblé. Il est ouvert au backlog
 (`AI/backlog-enrichissement-brain.md`, section « Solveurs d'optimisation »).
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

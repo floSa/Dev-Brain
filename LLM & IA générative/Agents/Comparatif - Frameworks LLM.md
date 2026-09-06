@@ -30,3 +30,7 @@ tags: [agents, rag, structured-output, multi-agent]
 - [[Instructor]] — la sortie structurée **sans changer de stack** : il emballe le client du fournisseur, ajoute `response_model` et **re-demande automatiquement** au LLM sur échec de validation. C'est du prompt + validation + retry, donc utilisable sur API fermée — et les retries gonflent facture et latence.
 - [[Outlines]] — la garantie par **décodage contraint** : les tokens invalides sont masqués à chaque pas, la sortie est conforme par construction et non par parsing. Il lui faut donc les logits — inutilisable derrière une API fermée — et contraindre **biaise la distribution**.
 - [[Guidance]] — le seul à **entrelacer contrôle et génération** dans un même programme : conditionnels, boucles et appels d'outils s'intercalent entre les segments générés, avec *token healing* et *fast-forward*. C'est un DSL à apprendre, et ce qui est réellement contraint dépend du backend.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

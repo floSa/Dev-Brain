@@ -20,3 +20,7 @@ tags: [experiment-tracking, model-registry]
 - [[Comet]] — le seul à couvrir le tracking ML **et** l'observabilité LLM, via **Opik** (tracing et évaluation de RAG/agents), déployable en Docker/Kubernetes. Attention au périmètre : le cœur Comet est propriétaire, Opik seul est open-source.
 - [[TensorBoard]] — pas un tracker mais un **visualiseur** : le code écrit des *event files*, le serveur les lit — graphe du modèle, histogrammes de gradients, projecteur d'embeddings, profilage. Comparaison de runs limitée, aucune authentification, et les event files grossissent vite.
 - [[Neptune]] — le critère est de cycle de vie, pas de fonction : racheté par OpenAI en décembre 2025, **service hébergé arrêté le 5 mars 2026**. Plus de nouvel usage — export de données existantes seulement.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

@@ -26,3 +26,7 @@ tags: [code-assistant, agents, code-generation]
 - [[Maka]] — l'axe est la **traçabilité** : chaque message, appel d'outil et décision de permission part dans un journal **append-only** rejouable, local. Deux bornes dures : **Linux n'est pas supporté**, et aucune release Apache n'est encore publiée.
 - [[Graphify]] — ne code pas, il **cartographie** : le dépôt indexé en knowledge graph (Tree-sitter, communautés Leiden, *god nodes*), que l'assistant lit avant de grep. Le graphe est un artefact à régénérer — périmé, il induit l'assistant en erreur.
 - [[ai-memory]] — l'autre fournisseur de contexte, mais dans le temps plutôt que dans l'espace : un serveur MCP qui consolide les sessions en **wiki markdown versionné par git**, ce qui permet de quitter une CLI au milieu d'une tâche et de reprendre sous une autre. Windows natif expérimental, WSL2 recommandé.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

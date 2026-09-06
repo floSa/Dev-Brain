@@ -22,3 +22,7 @@ tags: [model-serving, inference, kubernetes]
 - [[TorchServe]] — l'équivalent PyTorch historique, frontend Java et handlers Python : **dépôt archivé le 7 août 2025**, plus aucun correctif de sécurité. Maintenance d'existant seulement.
 - [[ONNX Runtime]] — pas un serveur mais un **moteur** : un modèle exporté une fois, exécuté partout via les Execution Providers (CUDA, TensorRT, OpenVINO, CoreML, WASM). Un opérateur non couvert retombe sur CPU sans le dire.
 - [[TensorRT]] — compile le réseau en un **moteur figé sur une architecture GPU et une version**, avec quantization FP8/INT8 : la latence la plus basse sur NVIDIA, à rebuild pour chaque cible, et à valider en précision et pas seulement en vitesse.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

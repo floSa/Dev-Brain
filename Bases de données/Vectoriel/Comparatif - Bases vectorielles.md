@@ -24,3 +24,7 @@ tags: [vector-db]
 - [[hnswlib]] — HNSW nu, header-only, sans dépendance hors C++11, index incrémental.
 - [[ScaNN]] — quantification anisotrope pour le produit scalaire (MIPS), au prix d'une optimisation x86/AVX.
 - [[Annoy]] — index mmap partageable entre process, mais immuable après `build()` et en mode maintenance.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

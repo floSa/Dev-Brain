@@ -18,3 +18,7 @@ tags: [dimensionality-reduction, manifold, factor-analysis]
 - [[PaCMAP]] — trois familles de paires dont les **mid-near** : la structure globale est préservée en même temps que la locale, et le résultat est plus robuste au choix d'hyperparamètres. API encore sous la 1.0, écosystème restreint.
 - [[Prince]] — toute la famille factorielle, pas seulement la PCA : CA, MCA, FAMD, MFA, GPA, sur DataFrames pandas indexés, avec lignes et colonnes supplémentaires.
 - [[Fanalysis]] — les **aides à l'interprétation** façon FactoMineR (contributions, cos², valeurs-tests) plutôt que les coordonnées seules ; limité à PCA/CA/MCA, aucun commit depuis le 4 juin 2018, resté en v0.0.1.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

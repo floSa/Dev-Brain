@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 764 pages actives.
+> 765 pages actives.
 
 ## Par page
 
@@ -1692,238 +1692,238 @@
 
 ### Comparatif - Apps data & démos ML  ·  comparatif
 - tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
-- liens sortants : [[Comparatif - Apps data & démos ML.base]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]]
-- liens entrants : [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Streamlit]]
+- liens sortants : [[Comparatif - Apps data & démos ML.base]], [[Comparatifs]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Comparatifs]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Shiny for Python]], [[Streamlit]]
 
 ### Comparatif - Assistants de code IA  ·  comparatif
 - tags : `code-assistant`, `agents`, `code-generation`
-- liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Comparatifs]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatifs]], [[Continue]], [[Graphify]], [[Maka]], [[Spec Kit]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 
 ### Comparatif - Automatisation no-code  ·  comparatif
 - tags : `low-code`, `orchestration`, `agents`, `mcp`
-- liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code.base]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
-- liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code.base]], [[Comparatifs]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
+- liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatifs]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
 
 ### Comparatif - Bases colonnes  ·  comparatif
 - tags : `columnar`, `olap`
-- liens sortants : [[ClickHouse]], [[Comparatif - Bases colonnes.base]], [[DuckDB]]
-- liens entrants : [[Bases de données]], [[ClickHouse]], [[DuckDB]]
+- liens sortants : [[ClickHouse]], [[Comparatif - Bases colonnes.base]], [[Comparatifs]], [[DuckDB]]
+- liens entrants : [[Bases de données]], [[ClickHouse]], [[Comparatifs]], [[DuckDB]]
 
 ### Comparatif - Bases graphes  ·  comparatif
 - tags : `graph-db`
-- liens sortants : [[Comparatif - Bases graphes.base]], [[Nebula Graph]], [[Neo4j]]
-- liens entrants : [[Bases de données]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
+- liens sortants : [[Comparatif - Bases graphes.base]], [[Comparatifs]], [[Nebula Graph]], [[Neo4j]]
+- liens entrants : [[Bases de données]], [[Comparatifs]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
 
 ### Comparatif - Bases NoSQL  ·  comparatif
 - tags : `nosql`
-- liens sortants : [[Apache Cassandra]], [[Comparatif - Bases NoSQL.base]], [[MongoDB]], [[Redis]]
-- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[MongoDB]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
+- liens sortants : [[Apache Cassandra]], [[Comparatif - Bases NoSQL.base]], [[Comparatifs]], [[MongoDB]], [[Redis]]
+- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Comparatifs]], [[MongoDB]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]]
 
 ### Comparatif - Bases relationnelles  ·  comparatif
 - tags : `relational`
-- liens sortants : [[CockroachDB]], [[Comparatif - Bases relationnelles.base]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[CockroachDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens sortants : [[CockroachDB]], [[Comparatif - Bases relationnelles.base]], [[Comparatifs]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]], [[pgvector]]
+- liens entrants : [[Bases de données]], [[CockroachDB]], [[Comparatifs]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### Comparatif - Bases temporelles  ·  comparatif
 - tags : `timeseries`
-- liens sortants : [[Comparatif - Bases temporelles.base]], [[InfluxDB]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[InfluxDB]], [[TimescaleDB]]
+- liens sortants : [[Comparatif - Bases temporelles.base]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
 
 ### Comparatif - Bases vectorielles  ·  comparatif
 - tags : `vector-db`
-- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles.base]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles.base]], [[Comparatifs]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatifs]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 
 ### Comparatif - Boosting  ·  comparatif
 - tags : `boosting`, `tree-based`, `ensemble`
-- liens sortants : [[CatBoost]], [[Comparatif - Boosting.base]], [[LightGBM]], [[XGBoost]]
-- liens entrants : [[CatBoost]], [[LightGBM]], [[Tabulaire]], [[XGBoost]]
+- liens sortants : [[CatBoost]], [[Comparatif - Boosting.base]], [[Comparatifs]], [[LightGBM]], [[XGBoost]]
+- liens entrants : [[CatBoost]], [[Comparatifs]], [[LightGBM]], [[Tabulaire]], [[XGBoost]]
 
 ### Comparatif - Calcul distribué  ·  comparatif
 - tags : `distributed`, `parallel`, `gpu`, `out-of-core`
-- liens sortants : [[Comparatif - Calcul distribué.base]], [[CuPy]], [[Dask]], [[JAX]], [[PyTorch]], [[Ray]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[numpy]]
-- liens entrants : [[Calcul distribué]], [[CuPy]], [[Dask]], [[Ray]], [[Spark]]
+- liens sortants : [[Comparatif - Calcul distribué.base]], [[Comparatifs]], [[CuPy]], [[Dask]], [[JAX]], [[PyTorch]], [[Ray]], [[Ray Serve]], [[Ray Tune]], [[Spark]], [[numpy]]
+- liens entrants : [[Calcul distribué]], [[Comparatifs]], [[CuPy]], [[Dask]], [[Ray]], [[Spark]]
 
 ### Comparatif - Clients d'API  ·  comparatif
 - tags : `api-client`, `version-control`
-- liens sortants : [[Bruno]], [[Comparatif - Clients d'API.base]], [[Postman]]
-- liens entrants : [[Bruno]], [[Outils de développement]], [[Postman]]
+- liens sortants : [[Bruno]], [[Comparatif - Clients d'API.base]], [[Comparatifs]], [[Postman]]
+- liens entrants : [[Bruno]], [[Comparatifs]], [[Outils de développement]], [[Postman]]
 
 ### Comparatif - Clients de bases de données  ·  comparatif
 - tags : `db-client`
-- liens sortants : [[Comparatif - Clients de bases de données.base]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
-- liens entrants : [[Administration]], [[Bases de données]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+- liens sortants : [[Comparatif - Clients de bases de données.base]], [[Comparatifs]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatifs]], [[DBeaver]], [[DataGrip]], [[HeidiSQL]], [[MongoDB Compass]], [[MySQL Workbench]], [[Redis Insight]], [[pgAdmin]]
 
 ### Comparatif - Design & prototypage  ·  comparatif
 - tags : `design-tool`
-- liens sortants : [[Comparatif - Design & prototypage.base]], [[Figma]], [[Penpot]]
-- liens entrants : [[Design & diagrammes]], [[Figma]], [[Penpot]]
+- liens sortants : [[Comparatif - Design & prototypage.base]], [[Comparatifs]], [[Figma]], [[Penpot]]
+- liens entrants : [[Comparatifs]], [[Design & diagrammes]], [[Figma]], [[Penpot]]
 
 ### Comparatif - Diagrammes  ·  comparatif
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes.base]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes.base]], [[Comparatifs]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatifs]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]], [[draw.io]]
 
 ### Comparatif - Détection & segmentation  ·  comparatif
 - tags : `object-detection`, `segmentation`, `computer-vision`
-- liens sortants : [[Comparatif - Détection & segmentation.base]], [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[albumentations]], [[segment-anything]], [[supervision]]
-- liens entrants : [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[Vision]], [[albumentations]], [[segment-anything]], [[supervision]]
+- liens sortants : [[Comparatif - Détection & segmentation.base]], [[Comparatifs]], [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[albumentations]], [[segment-anything]], [[supervision]]
+- liens entrants : [[Comparatifs]], [[Detectron2]], [[OpenCV]], [[Ultralytics YOLO]], [[Vision]], [[albumentations]], [[segment-anything]], [[supervision]]
 
 ### Comparatif - Détection d'anomalies  ·  comparatif
 - tags : `anomaly-detection`, `unsupervised`
-- liens sortants : [[Comparatif - Détection d'anomalies.base]], [[PyOD]], [[STUMPY]]
-- liens entrants : [[Machine Learning]], [[Non supervisé]], [[PyOD]], [[STUMPY]], [[Séries temporelles]]
+- liens sortants : [[Comparatif - Détection d'anomalies.base]], [[Comparatifs]], [[PyOD]], [[STUMPY]]
+- liens entrants : [[Comparatifs]], [[Machine Learning]], [[Non supervisé]], [[PyOD]], [[STUMPY]], [[Séries temporelles]]
 
 ### Comparatif - Explicabilité  ·  comparatif
 - tags : `explainability`, `transformers`, `model-evaluation`
-- liens sortants : [[Captum]], [[Comparatif - Explicabilité.base]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
-- liens entrants : [[Captum]], [[Interprétabilité]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
+- liens sortants : [[Captum]], [[Comparatif - Explicabilité.base]], [[Comparatifs]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
+- liens entrants : [[Captum]], [[Comparatifs]], [[Interprétabilité]], [[LIME]], [[SAELens]], [[SHAP]], [[TransformerLens]], [[interpreto]], [[nnsight]]
 
 ### Comparatif - Exécution & serving LLM  ·  comparatif
 - tags : `local-llm`, `model-serving`, `inference`, `quantization`
-- liens sortants : [[Comparatif - Exécution & serving LLM.base]], [[LM Studio]], [[Ollama]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[LM Studio]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM.base]], [[Comparatifs]], [[LM Studio]], [[Ollama]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Comparatifs]], [[LM Studio]], [[Ollama]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
 
 ### Comparatif - Fine-tuning LLM  ·  comparatif
 - tags : `fine-tuning`, `llm`, `alignment`
-- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM.base]], [[LLaMA-Factory]], [[TRL]], [[Tunix]], [[Unsloth]]
-- liens entrants : [[Axolotl]], [[Fine-tuning]], [[LLaMA-Factory]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM.base]], [[Comparatifs]], [[LLaMA-Factory]], [[TRL]], [[Tunix]], [[Unsloth]]
+- liens entrants : [[Axolotl]], [[Comparatifs]], [[Fine-tuning]], [[LLaMA-Factory]], [[TRL]], [[Tunix]], [[Unsloth]]
 
 ### Comparatif - Forecasting  ·  comparatif
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Comparatifs]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[Chronos]], [[Comparatifs]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Comparatif - Frameworks CLI  ·  comparatif
 - tags : `cli`, `terminal-ui`
-- liens sortants : [[Comparatif - Frameworks CLI.base]], [[Rich]], [[Typer]]
-- liens entrants : [[Outils de développement]], [[Rich]], [[Typer]]
+- liens sortants : [[Comparatif - Frameworks CLI.base]], [[Comparatifs]], [[Rich]], [[Typer]]
+- liens entrants : [[Comparatifs]], [[Outils de développement]], [[Rich]], [[Typer]]
 
 ### Comparatif - Frameworks LLM  ·  comparatif
 - tags : `agents`, `rag`, `structured-output`, `multi-agent`
-- liens sortants : [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM.base]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LlamaIndex]], [[OpenAI Agents SDK]], [[Outlines]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
+- liens sortants : [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM.base]], [[Comparatifs]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LlamaIndex]], [[OpenAI Agents SDK]], [[Outlines]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatifs]], [[CrewAI]], [[DSPy]], [[Guidance]], [[Haystack]], [[Instructor]], [[LangChain]], [[LangGraph]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PraisonAI]], [[PydanticAI]], [[RAGatouille]], [[Semantic Kernel]], [[smolagents]]
 
 ### Comparatif - Frameworks text-to-SQL  ·  comparatif
 - tags : `text-to-sql`, `rag`, `agents`
-- liens sortants : [[Comparatif - Frameworks text-to-SQL.base]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
-- liens entrants : [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
+- liens sortants : [[Comparatif - Frameworks text-to-SQL.base]], [[Comparatifs]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Vanna]], [[WrenAI]]
+- liens entrants : [[Comparatifs]], [[DB-GPT]], [[LangChain SQL agent]], [[LlamaIndex NLSQLTableQueryEngine]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
 
 ### Comparatif - Frontends web légers  ·  comparatif
 - tags : `web-framework`, `data-app`, `hypermedia`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers.base]], [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Shiny for Python]], [[Streamlit]]
-- liens entrants : [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Streamlit]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers.base]], [[Comparatifs]], [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Shiny for Python]], [[Streamlit]]
+- liens entrants : [[Comparatifs]], [[Dash]], [[FastAPI]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Pattern - Stack démo ML locale multi-services]], [[Streamlit]]
 
 ### Comparatif - Gestionnaires de paquets Python  ·  comparatif
 - tags : `package-manager`, `reproducibility`
-- liens sortants : [[Comparatif - Gestionnaires de paquets Python.base]], [[pip]], [[uv]]
-- liens entrants : [[Outils de développement]], [[pip]], [[uv]]
+- liens sortants : [[Comparatif - Gestionnaires de paquets Python.base]], [[Comparatifs]], [[pip]], [[uv]]
+- liens entrants : [[Comparatifs]], [[Outils de développement]], [[pip]], [[uv]]
 
 ### Comparatif - Manipulation de données  ·  comparatif
 - tags : `dataframe`, `array`, `columnar`, `out-of-core`
-- liens sortants : [[Comparatif - Manipulation de données.base]], [[Dask]], [[Modin]], [[Polars]], [[numpy]], [[pandas]], [[xarray]]
-- liens entrants : [[DataFrames]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
+- liens sortants : [[Comparatif - Manipulation de données.base]], [[Comparatifs]], [[Dask]], [[Modin]], [[Polars]], [[numpy]], [[pandas]], [[xarray]]
+- liens entrants : [[Comparatifs]], [[DataFrames]], [[Modin]], [[Polars]], [[connectorx]], [[numpy]], [[pandas]], [[xarray]]
 
 ### Comparatif - Migrations de schéma  ·  comparatif
 - tags : `migration`
-- liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma.base]], [[Flyway]], [[Liquibase]], [[SQLAlchemy]]
-- liens entrants : [[Alembic]], [[Bases de données]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]]
+- liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma.base]], [[Comparatifs]], [[Flyway]], [[Liquibase]], [[SQLAlchemy]]
+- liens entrants : [[Alembic]], [[Bases de données]], [[Comparatifs]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]]
 
 ### Comparatif - Moteurs de recherche  ·  comparatif
 - tags : `search`
-- liens sortants : [[Comparatif - Moteurs de recherche.base]], [[Elasticsearch]], [[Marqo]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens sortants : [[Comparatif - Moteurs de recherche.base]], [[Comparatifs]], [[Elasticsearch]], [[Marqo]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Comparatifs]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### Comparatif - NLP  ·  comparatif
 - tags : `nlp`, `information-retrieval`, `ner`, `sequence-labeling`, `text-classification`
-- liens sortants : [[Comparatif - NLP.base]], [[DSPy]], [[GLiNER]], [[HuggingFace]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[bm25s]], [[datasets]], [[evaluate]], [[interpreto]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]]
-- liens entrants : [[GLiNER]], [[NLP]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[spaCy]]
+- liens sortants : [[Comparatif - NLP.base]], [[Comparatifs]], [[DSPy]], [[GLiNER]], [[HuggingFace]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[bm25s]], [[datasets]], [[evaluate]], [[interpreto]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]]
+- liens entrants : [[Comparatifs]], [[GLiNER]], [[NLP]], [[NLTK]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[pytorch-crf]], [[rank-bm25]], [[sentence-transformers]], [[sentencepiece]], [[spaCy]]
 
 ### Comparatif - Observabilité LLM  ·  comparatif
 - tags : `llm-observability`, `tracing`
-- liens sortants : [[Comparatif - Observabilité LLM.base]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]]
-- liens entrants : [[Headroom]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Observabilité des LLM]], [[Phoenix Arize]]
+- liens sortants : [[Comparatif - Observabilité LLM.base]], [[Comparatifs]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]]
+- liens entrants : [[Comparatifs]], [[Headroom]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Observabilité des LLM]], [[Phoenix Arize]]
 
 ### Comparatif - Optimisation d'hyperparamètres  ·  comparatif
 - tags : `hyperparameter-tuning`
-- liens sortants : [[Comparatif - Optimisation d'hyperparamètres.base]], [[Hyperopt]], [[Optuna]], [[Ray]], [[Ray Tune]]
-- liens entrants : [[Hyperopt]], [[Machine Learning]], [[Optuna]], [[Ray Tune]]
+- liens sortants : [[Comparatif - Optimisation d'hyperparamètres.base]], [[Comparatifs]], [[Hyperopt]], [[Optuna]], [[Ray]], [[Ray Tune]]
+- liens entrants : [[Comparatifs]], [[Hyperopt]], [[Machine Learning]], [[Optuna]], [[Ray Tune]]
 
 ### Comparatif - Orchestrateurs data  ·  comparatif
 - tags : `orchestration`, `data-pipeline`, `scheduler`, `durable-execution`
-- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data.base]], [[Dagster]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Airflow]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data.base]], [[Comparatifs]], [[Dagster]], [[Kestra]], [[Mage]], [[Prefect]], [[Temporal]]
+- liens entrants : [[Airflow]], [[Comparatifs]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
 ### Comparatif - Orchestrateurs ML  ·  comparatif
 - tags : `orchestration`, `ml-pipeline`, `reproducibility`
-- liens sortants : [[Comparatif - Orchestrateurs ML.base]], [[Flyte]], [[Metaflow]], [[ZenML]]
-- liens entrants : [[Flyte]], [[Machine Learning]], [[Metaflow]], [[Suivi d'expériences]], [[ZenML]]
+- liens sortants : [[Comparatif - Orchestrateurs ML.base]], [[Comparatifs]], [[Flyte]], [[Metaflow]], [[ZenML]]
+- liens entrants : [[Comparatifs]], [[Flyte]], [[Machine Learning]], [[Metaflow]], [[Suivi d'expériences]], [[ZenML]]
 
 ### Comparatif - ORM  ·  comparatif
 - tags : `orm`
-- liens sortants : [[Alembic]], [[Comparatif - ORM.base]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
-- liens entrants : [[Bases de données]], [[ORM]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
+- liens sortants : [[Alembic]], [[Comparatif - ORM.base]], [[Comparatifs]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
+- liens entrants : [[Bases de données]], [[Comparatifs]], [[ORM]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
 
 ### Comparatif - Outils EDA - profiling  ·  comparatif
 - tags : `eda`, `data-quality`, `missing-data`
-- liens sortants : [[Comparatif - Outils EDA - profiling.base]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Data & pipelines]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
+- liens sortants : [[Comparatif - Outils EDA - profiling.base]], [[Comparatifs]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Comparatifs]], [[Data & pipelines]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
 
 ### Comparatif - Outils stats  ·  comparatif
 - tags : `hypothesis-testing`, `statistical-inference`, `bayesian`, `factor-analysis`, `causal-inference`
-- liens sortants : [[ArviZ]], [[CausalImpact]], [[Comparatif - Outils stats.base]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[ArviZ]], [[CausalImpact]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[Tests & estimation]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[ArviZ]], [[CausalImpact]], [[Comparatif - Outils stats.base]], [[Comparatifs]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[ArviZ]], [[CausalImpact]], [[Comparatifs]], [[Fanalysis]], [[Prince]], [[PyMC]], [[Stan]], [[Tests & estimation]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents.base]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Docling]], [[Documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Comparatif - Reinforcement learning  ·  comparatif
 - tags : `reinforcement-learning`, `self-play`
-- liens sortants : [[Acme]], [[Comparatif - Reinforcement learning.base]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
-- liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
+- liens sortants : [[Acme]], [[Comparatif - Reinforcement learning.base]], [[Comparatifs]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
+- liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatifs]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
 
 ### Comparatif - Réduction de dimension  ·  comparatif
 - tags : `dimensionality-reduction`, `manifold`, `factor-analysis`
-- liens sortants : [[Comparatif - Réduction de dimension.base]], [[Fanalysis]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
-- liens entrants : [[Fanalysis]], [[Machine Learning]], [[Non supervisé]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
+- liens sortants : [[Comparatif - Réduction de dimension.base]], [[Comparatifs]], [[Fanalysis]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
+- liens entrants : [[Comparatifs]], [[Fanalysis]], [[Machine Learning]], [[Non supervisé]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
 
 ### Comparatif - Scraping  ·  comparatif
 - tags : `web-scraping`, `document-parsing`, `low-code`
-- liens sortants : [[Comparatif - Scraping.base]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
-- liens entrants : [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Page to Markdown]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
+- liens sortants : [[Comparatif - Scraping.base]], [[Comparatifs]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Playwright]], [[Scrapling]], [[Scrapy]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
+- liens entrants : [[Comparatifs]], [[Crawlee]], [[Firecrawl]], [[Maxun]], [[Page to Markdown]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Scrapling]], [[Scrapy]], [[Web scraping]], [[cloudscraper]], [[curl_cffi]], [[minim]], [[selectolax]]
 
 ### Comparatif - Serving de modèles  ·  comparatif
 - tags : `model-serving`, `inference`, `kubernetes`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles.base]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles.base]], [[Comparatifs]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatifs]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 
 ### Comparatif - Solveurs d'optimisation  ·  comparatif
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Comparatif - Solveurs d'optimisation.base]], [[PuLP]]
-- liens entrants : [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]]
+- liens sortants : [[Comparatif - Solveurs d'optimisation.base]], [[Comparatifs]], [[PuLP]]
+- liens entrants : [[Comparatifs]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]]
 
 ### Comparatif - Suivi d'expériences ML  ·  comparatif
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[Comparatifs]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatifs]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
 
 ### Comparatif - Traitement du signal  ·  comparatif
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`
-- liens sortants : [[Comparatif - Traitement du signal.base]], [[PyWavelets]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[PyWavelets]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
+- liens sortants : [[Comparatif - Traitement du signal.base]], [[Comparatifs]], [[PyWavelets]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Comparatifs]], [[PyWavelets]], [[Traitement]], [[Traitement du signal]], [[librosa]], [[scipy.signal]]
 
 ### Comparatif - Visualisation  ·  comparatif
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `declarative-viz`
-- liens sortants : [[Comparatif - Visualisation.base]], [[Dash]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
-- liens entrants : [[Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens sortants : [[Comparatif - Visualisation.base]], [[Comparatifs]], [[Dash]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
+- liens entrants : [[Comparatifs]], [[Visualisation]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
 
 ### Comparatif - Évaluation LLM  ·  comparatif
 - tags : `llm-eval`, `rag-eval`, `llm-as-judge`
-- liens sortants : [[Comparatif - Évaluation LLM.base]], [[DeepEval]], [[Ragas]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[DeepEval]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
+- liens sortants : [[Comparatif - Évaluation LLM.base]], [[Comparatifs]], [[DeepEval]], [[Ragas]], [[TruLens]], [[promptfoo]]
+- liens entrants : [[Comparatifs]], [[DeepEval]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
 
 ### Administration  ·  hub
 - tags : —
@@ -1989,6 +1989,11 @@
 - tags : `distributed`, `gpu`, `parallel`, `out-of-core`, `distributed-training`
 - liens sortants : [[Comparatif - Calcul distribué]], [[CuPy]], [[Dask]], [[Daytona]], [[DuckDB]], [[E2B]], [[Modal]], [[Polars]], [[Ray]], [[Spark]]
 - liens entrants : [[CuPy]], [[Dask]], [[Data Engineering]], [[Daytona]], [[E2B]], [[ML Engineering]], [[Modal]], [[Ray]], [[Spark]]
+
+### Comparatifs  ·  hub
+- tags : —
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Reinforcement learning]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Reinforcement learning]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
@@ -2138,7 +2143,7 @@
 ### Patterns  ·  hub
 - tags : —
 - liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
-- liens entrants : —
+- liens entrants : [[Comparatifs]]
 
 ### Probabilités  ·  hub
 - tags : `probability`, `convergence`, `concentration`, `stochastic-process`, `markov`, `monte-carlo`
@@ -2163,7 +2168,7 @@
 ### Rules  ·  hub
 - tags : —
 - liens sortants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
-- liens entrants : [[Patterns]]
+- liens entrants : [[Comparatifs]], [[Patterns]]
 
 ### Runtimes  ·  hub
 - tags : `local-llm`, `inference`, `inference-optimization`, `quantization`, `model-serving`

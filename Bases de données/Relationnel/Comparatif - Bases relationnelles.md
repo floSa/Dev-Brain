@@ -19,3 +19,7 @@ tags: [relational]
 - [[MySQL]] — le plus déployé du web, l'écosystème d'hébergement le plus large ; ses défauts historiques se forcent à la main (`utf8mb4`, `sql_mode` strict).
 - [[MariaDB]] — fork 100 % open-source de MySQL, gouvernance hors Oracle, moteurs propres (ColumnStore, Galera) ; la divergence avec MySQL croît.
 - [[Microsoft SQL Server]] — le seul propriétaire : T-SQL et l'outillage BI intégré, contre une licence par cœur et un SQL non portable.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

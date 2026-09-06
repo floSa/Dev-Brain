@@ -15,3 +15,7 @@ tags: [cli, terminal-ui]
 
 - [[Typer]] — ne rend rien à l'écran : il **déduit la CLI des annotations de type**, arguments, validation, `--help` et complétion shell compris. Couche au-dessus de Click, dont il faut parfois redescendre l'API pour les cas tordus.
 - [[Rich]] — ne parse aucune commande : il **compose la sortie** — tables, barres de progression, Markdown, tracebacks reformatés — et c'est lui que Typer appelle pour son aide enrichie. Hors d'un TTY il désactive les couleurs, ce qui surprend en CI.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

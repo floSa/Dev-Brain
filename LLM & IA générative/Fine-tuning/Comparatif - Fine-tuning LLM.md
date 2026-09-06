@@ -18,3 +18,7 @@ tags: [fine-tuning, llm, alignment]
 - [[LLaMA-Factory]] — la **couverture** : 100+ familles de LLM **et de VLM**, donc le seul à fine-tuner du multimodal avec le même outil que le texte, et le seul à offrir une **interface web** no-code (LLaMA Board). Largeur n'est pas profondeur — sur un cas pointu, l'outil spécialisé reprend l'avantage.
 - [[Unsloth]] — des **kernels Triton sur mesure** : ~2× plus rapide et 70-80 % de VRAM en moins, ce qui met un modèle de plusieurs dizaines de milliards de paramètres sur **un seul GPU grand public**. C'est aussi sa borne — le multi-GPU est bridé dans la version open-source.
 - [[Tunix]] — le pendant **JAX/TPU** de TRL, sur Flax NNX, avec le RL agentique multi-tour et des rollouts sur vLLM ou SGLang-JAX. L'avantage ne se matérialise que sur TPU, et le projet est en 0.1.x : breaking changes fréquents.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

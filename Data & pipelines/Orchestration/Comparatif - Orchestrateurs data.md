@@ -19,3 +19,7 @@ tags: [orchestration, data-pipeline, scheduler, durable-execution]
 - [[Kestra]] — le seul **déclaratif YAML**, sur un moteur **JVM** event-driven : la logique d'orchestration est découplée du langage des tâches, donc l'équipe n'a pas à être Python. Autre stack à opérer et monitorer, et le tout-YAML devient verbeux dès que la logique se complique — d'où le découpage en sous-flows.
 - [[Mage]] — l'**ELT low-code par blocs** dans une UI type notebook, avec prévisualisation de la donnée à chaque étape, chaque bloc restant du vrai code Python, SQL ou R. L'OSS avance moins vite depuis le virage vers l'offre managée Mage Pro, et le catalogue de connecteurs est en retrait.
 - [[Temporal]] — le seul qui n'est pas un orchestrateur data : de l'**exécution durable**, où chaque étape est persistée en historique event-sourced, l'exécution survit aux crashs et peut durer des mois. Le prix est une discipline — le code de workflow doit être **déterministe** (ni I/O direct, ni horloge murale, ni aléatoire) — et le versioning des instances longues est délicat.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

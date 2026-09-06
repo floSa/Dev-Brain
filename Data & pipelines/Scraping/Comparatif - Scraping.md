@@ -23,3 +23,7 @@ tags: [web-scraping, document-parsing, low-code]
 - [[Firecrawl]] — l'angle **LLM** : `scrape` et `crawl` rendent du Markdown propre ou du JSON guidé par schéma, rendu JS, proxys et anti-bot compris, sans écrire de parseur. Cœur en **AGPL-3.0**, ce qui contraint un self-host exposé ; coût à la page côté cloud ; et le self-host est une infrastructure à opérer (Redis, workers), pas une lib.
 - [[Maxun]] — le seul **no-code** : on enregistre ses actions dans le navigateur pour fabriquer un robot rejouable et planifié, qui transforme un site en API ou en tableur. Plateforme en beta qui évolue vite, et le no-code plafonne sur les sites complexes ou fortement défendus.
 - [[minim]] — le seul qui ne scrape pas du HTML : sept plateformes musicales sous une API Python unique, dont des **API privées** reproduites depuis les requêtes des apps officielles, plus un module de tagging audio. **Zone grise légale** assumée, clients qui cassent sans préavis quand la plateforme bouge, v1 en maintenance et un seul mainteneur — usage perso ou recherche, pas production.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

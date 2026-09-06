@@ -18,3 +18,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[Excalidraw]] — le style **croquis à main levée**, qui est un choix de communication avant d'être un choix d'outil : il signale « schéma conceptuel, pas spec figée ». Whiteboard collaboratif, pas éditeur normé — peu de formes structurées, et les grands tableaux rament côté navigateur.
 - [[FossFLOW]] — le seul à faire de l'**isométrique 3D** d'infrastructure, avec les jeux d'icônes cloud standard, en PWA qui tourne entièrement dans le navigateur, hors ligne comprise. Périmètre étroit assumé, et le stockage est celui du navigateur : exporter le JSON ou perdre son travail en changeant de poste.
 - [[Archify]] — le seul qui ne s'utilise pas à la main : c'est un **skill pour agent de code**, où l'agent remplit une **IR JSON typée** que la chaîne compile de façon **déterministe** en HTML autonome validé — même IR, même rendu. Quatre absences documentées par le projet lui-même : pas de parsing Mermaid, pas d'auto-layout généraliste, pas de partage hébergé, pas d'édition WYSIWYG.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

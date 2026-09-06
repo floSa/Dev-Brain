@@ -18,3 +18,7 @@ tags: [dataframe, array, columnar, out-of-core]
 - [[Modin]] — le seul **remplaçant transparent** : une ligne d'import, et le code pandas existant sature tous les cœurs, sur un moteur Ray, Dask ou MPI interchangeable. Couverture d'API **non totale** — le non-implémenté retombe **silencieusement** sur pandas, donc sans gain — et sur petits volumes la surcharge de parallélisation coûte plus qu'elle ne rend.
 - [[numpy]] — le `ndarray` **homogène** stocké de façon contiguë, vectorisé en C : ce n'est pas un outil tabulaire, c'est la brique sur laquelle pandas et le reste reposent. Un seul `dtype` par tableau, le slicing renvoie souvent une **vue** que l'on modifie par erreur, et les entiers à largeur fixe débordent en silence.
 - [[xarray]] — les **étiquettes** portées sur le N-dimensionnel : dimensions nommées, coordonnées et attributs, donc `da.sel(time="2024-01", lat=48.5)` au lieu d'une position ; NetCDF et Zarr natifs, et `chunks=...` délègue l'out-of-core à [[Dask]]. L'alignement automatique par coordonnées fabrique des `NaN` **en silence** quand les axes ne coïncident pas.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

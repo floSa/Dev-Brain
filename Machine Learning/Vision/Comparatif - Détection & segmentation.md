@@ -19,3 +19,7 @@ tags: [object-detection, segmentation, computer-vision]
 - [[supervision]] — **model-agnostic** : il ne fait aucune inférence, il exploite celle des autres. `Detections` unifie les sorties de YOLO, Detectron2 ou SAM, puis ajoute annotateurs, ByteTrack, zones et comptage — c'est la colle entre un détecteur et une application.
 - [[albumentations]] — le seul du lot en **amont** de l'entraînement : 70+ transformations qui propagent **cohéremment** la transformation aux boîtes, masques et keypoints. CPU et NumPy (HWC) par construction : hors du graphe d'autograd, contrairement à Kornia.
 - [[OpenCV]] — la vision **classique** sous les autres : filtrage, contours, features, géométrie (homographie, calibration, stéréo, flux optique), cœur C++ exposé en `cv2`. Ni batch, ni GPU, ni autograd — inadapté à l'entraînement, et il renvoie du **BGR**, pas du RGB.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

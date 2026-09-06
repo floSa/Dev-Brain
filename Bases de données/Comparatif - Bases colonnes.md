@@ -15,3 +15,7 @@ tags: [columnar, olap]
 
 - [[DuckDB]] — in-process, sans serveur : elle tourne dans le process hôte et requête Parquet, CSV et JSON directement ; la RAM et le disque local bornent le volume.
 - [[ClickHouse]] — distribuée par sharding et réplication, mais updates et deletes sont des mutations asynchrones coûteuses : le modèle est pensé pour l'append.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

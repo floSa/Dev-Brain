@@ -16,3 +16,7 @@ tags: [migration]
 - [[Alembic]] — dérive les migrations des modèles [[SQLAlchemy]] par autogénération, qui ne détecte pas tout et se relit toujours.
 - [[Flyway]] — SQL-first, aucune abstraction : un fichier numéroté par version, à réécrire par moteur si l'on en cible plusieurs, et l'undo est réservé aux éditions payantes.
 - [[Liquibase]] — changelog XML/YAML/JSON portable entre SGBD, avec rollback, au prix d'une couche d'abstraction de plus.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

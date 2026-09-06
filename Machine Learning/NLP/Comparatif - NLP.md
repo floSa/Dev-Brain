@@ -29,3 +29,7 @@ tags: [nlp, information-retrieval, ner, sequence-labeling, text-classification]
 - [[seqeval]] — score au niveau **entité** et non au niveau token, span exact et type compris : c'est la seule métrique qui reflète la qualité réelle d'un tagger, là où `sklearn` surévalue. Dernière release en octobre 2020.
 - [[interpreto]] — le seul du lot à expliquer un modèle de langage déjà entraîné, attributions **et** concepts, avec le scoring des explications ; limité à HuggingFace et déclaré alpha en 0.5.0.
 - [[DSPy]] — renverse le sujet : on déclare des signatures typées et un **optimiseur compile les prompts** contre une métrique. Sans jeu d'exemples ni métrique, il perd son intérêt, et la phase d'optimisation consomme beaucoup de tokens.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

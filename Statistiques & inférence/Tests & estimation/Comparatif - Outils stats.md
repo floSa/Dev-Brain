@@ -23,3 +23,7 @@ tags: [hypothesis-testing, statistical-inference, bayesian, factor-analysis, cau
 - [[CausalImpact]] — la seule question **causale datée** : l'effet d'une intervention ponctuelle, estimé par un **contrefactuel** BSTS bâti sur des séries de contrôle, avec son intervalle de crédibilité. Écosystème Python **fragmenté** — `tfcausalimpact` communautaire contre `tfp-causalimpact` de Google, API différentes —, hypothèse forte que les contrôles restent non affectés sur toute la période post, et sensibilité à la fenêtre pré-intervention.
 - [[Prince]] — toute la famille **factorielle** sous une API scikit-learn : PCA, CA, MCA, FAMD, MFA, GPA, sur DataFrames indexés, testée contre FactoMineR. L'API a notablement évolué entre versions majeures, les visualisations Altair dépendent de l'environnement de rendu, et la décomposition reste en mémoire sur un seul nœud.
 - [[Fanalysis]] — le même terrain réduit à PCA/CA/MCA, mais centré sur les **aides à l'interprétation** façon FactoMineR : contributions, cos², valeurs-tests, éboulis. **À l'arrêt en amont** — aucun commit depuis le 4 juin 2018, resté en v0.0.1 — avec le risque de friction que cela implique sur des NumPy/pandas récents, et une licence ambiguë entre README et PyPI.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.

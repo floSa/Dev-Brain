@@ -20,3 +20,7 @@ tags: [explainability, transformers, model-evaluation]
 - [[nnsight]] — la même famille d'interventions, mais en **exécution différée** et surtout **à distance** via NDIF : le seul par lequel un très gros modèle s'instrumente depuis une machine ordinaire. Il garde le modèle HuggingFace tel quel, sans notation canonique.
 - [[SAELens]] — ne fait que des sparse autoencoders, et c'est son **catalogue de SAE déjà entraînés** qui compte : entraîner coûte des millions d'activations, charger prend trois lignes.
 - [[interpreto]] — le seul à porter le pipeline concept de bout en bout (extraction, dictionnaire, interprétation, scoring) et à le **scorer** ; limité aux modèles de langage HuggingFace, et déclaré alpha en 0.5.0.
+
+## Voir aussi
+
+- [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
