@@ -17,45 +17,58 @@ url_repo: https://github.com/librosa/librosa
 
 # librosa
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.
 
-Bibliothèque de référence pour l'**analyse audio et musicale** en Python. Charge des fichiers son et fournit, sous une API simple, les représentations clés : **STFT**, **mel-spectrogramme**, **MFCC**, chromagramme, plus l'estimation de **tempo / beat**, de **hauteur** (pitch), la séparation **harmonique / percussive** (HPSS) et le time-stretch / pitch-shift. C'est l'étage d'**extraction de features** standard avant un modèle audio (CNN, transformers).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Charger et rééchantillonner de l'audio, calculer mel-spectrogrammes / MFCC.
-- Produire des features pour de la **classification audio**, du MIR (music information retrieval), de la parole.
-- Beat tracking, estimation de tempo, onset detection, séparation HPSS.
-- Prototyper rapidement un pipeline audio → ML.
+Bibliothèque d'analyse audio et musicale en Python. Elle charge des fichiers son et
+fournit sous une API uniforme les représentations standard du domaine — STFT,
+mel-spectrogramme, MFCC, chromagramme — plus l'estimation de tempo et de beat, la
+détection d'onsets, l'estimation de hauteur, la séparation harmonique/percussive (HPSS),
+le time-stretch et le pitch-shift. C'est l'étage d'extraction de features en amont d'un
+modèle audio. Deux comportements par défaut piègent tout pipeline qui les ignore :
+`sr=22050` est la fréquence d'échantillonnage par défaut, donc un chargement
+**rééchantillonne** le signal tant qu'on ne fixe pas `sr=None` ; et les amplitudes
+brutes ne sont exploitables qu'une fois passées en décibels par `power_to_db` ou
+`amplitude_to_db`.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- **DSP générique** non audio (filtres, capteurs) → [[scipy.signal]].
-- Analyse par **ondelettes** → [[PyWavelets]].
-- **Reconnaissance vocale** (ASR) ou TTS de bout en bout → modèles dédiés ([[HuggingFace]] : Whisper, wav2vec2).
-- Traitement audio **temps réel / faible latence** → librosa vise l'analyse hors ligne (NumPy, CPU).
+| Prendre si | Écarter si |
+|---|---|
+| Charger et rééchantillonner de l'audio, calculer mel-spectrogrammes et MFCC | Reconnaissance vocale ou synthèse de parole de bout en bout → [[HuggingFace]] et ses modèles dédiés (Whisper, wav2vec2) |
+| Produire des features pour de la classification audio, du MIR ou de la parole | Traitement temps réel ou à faible latence : l'analyse est hors ligne, en NumPy et sur CPU |
+| Beat tracking, estimation de tempo, détection d'onsets, séparation HPSS | Gros volumes à l'entraînement : lent en Python et NumPy — précalculer et mettre en cache les spectrogrammes plutôt que les recalculer par époque |
+| Prototyper un pipeline audio vers un modèle ML | |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque (`uv add librosa`). Licence ISC, gratuit.
-- **Single-node, en mémoire** ; Python pur au-dessus de NumPy / SciPy (+ soundfile / audioread pour l'I/O).
-- Aucune infra ; CPU uniquement (pas d'accélération GPU).
+- Installation — `uv add librosa`
+- Point d'entrée — import Python, `import librosa`
+- Prérequis — NumPy et SciPy ; `soundfile` ou `audioread` pour l'I/O, et `ffmpeg` pour certains formats compressés
+- Exécution — dans le process appelant, CPU uniquement, en mémoire ; aucune accélération GPU
+- Coût — gratuit, licence ISC, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- **Lent sur gros volumes** (Python / NumPy) : pour l'entraînement à l'échelle, précalculer et mettre en cache les spectrogrammes.
-- `sr=22050` par défaut : librosa **rééchantillonne** au chargement — fixer `sr=None` (ou explicite) pour ne pas dégrader le signal.
-- Amplitudes : penser `power_to_db` / `amplitude_to_db` pour des mel-spectrogrammes exploitables.
-- I/O : certains formats compressés exigent `ffmpeg` (via audioread).
-
-## Alternatives
+### Alternatives
 
 - [[scipy.signal]] — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
 
-## Liens
+## Ressources
 
-- [[STFT et spectrogramme]] — mel-spectrogramme et MFCC, son terrain principal.
-- [[Traitement du signal]] — page chapeau.
-- [[scipy.signal]] — DSP bas niveau sous-jacent.
-- [[Comparatif - Traitement du signal|Comparatif — Traitement du signal]]
-- Doc : https://librosa.org/doc/
+- Documentation — https://librosa.org/doc/
+- Dépôt — https://github.com/librosa/librosa
+
+## Voir aussi
+
+- [[Signal & audio]] — le hub du domaine
+- [[STFT et spectrogramme]] — la notion : mel-spectrogramme et MFCC, son terrain principal
+- [[Traitement du signal]] — la notion voisine, côté DSP
+- [[Comparatif - Traitement du signal]] — ce qui départage les outils du dossier
