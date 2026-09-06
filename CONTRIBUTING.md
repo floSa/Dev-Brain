@@ -166,7 +166,7 @@ morceau du message.
 - Wikilinks qualifiés par chemin — ils cassent au prochain déplacement.
 - Poser une page ailleurs que dans le dossier que sa `categorie:` désigne.
 - Modifier une fiche `maturite: deprecated` sans discussion.
-- **`rm` sur une page** pendant la migration v3 : un déplacement se fait par `git mv`, une suppression se demande.
+- **`rm` sur une page** : un déplacement se fait par `git mv`, une suppression se demande. L'interdiction absolue de tout `rm` valait pendant la migration v3, close le 2026-09-06 ; l'accord explicite reste requis.
 - Committer avec une adresse `@aosis.net`, ou contourner les hooks avec `--no-verify`.
 - Push direct sur `main` avec `--force` (sauf cas exceptionnel discuté). Réécriture d'historique : décision de floSa, jamais d'un agent.
 - Trailer `Co-Authored-By` : les commits sont à floSa seul. **Tenu par hook** depuis le

@@ -389,4 +389,4 @@ jamais `--author`, jamais l'email annoncé par le harnais.
 - Réécrire une `role: notion` existante sans que floSa l'ait demandé.
 - Modifier un champ d'une fiche existante sans dérouler la *table des effets de bord* de `enrichir-brain` (workflow général, point 5) — un `pitch:` réécrit sans repropager laisse un pitch périmé chez chaque citeur.
 - Écrire un retour d'expérience sans date dans `## Retours`, ou le dupliquer sur les deux briques d'un incident inter-briques. Sans date, ce n'est pas un retour : c'est une borne, qui va en `Écarter si` ou en `Prérequis`.
-- Supprimer une page : pendant la migration v3, **aucun `rm`** — un déplacement se fait par `git mv`, une suppression se demande.
+- Supprimer une page : une suppression se **demande**. Un déplacement se fait par `git mv`, jamais par `rm` + création — sinon l'historique de la page est perdu. L'interdiction absolue de tout `rm` a expiré avec la migration v3, close le 2026-09-06 ; l'accord explicite, lui, reste requis.

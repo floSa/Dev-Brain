@@ -208,7 +208,7 @@ frontalement (constat C3 de l'axe 3).
 - **Jamais** de `--no-verify` : les hooks du dépôt portent une règle, pas une gêne.
 - Intégration dans `main` en **fast-forward uniquement**.
 - Une seule branche vivante à la fois. Les worktrees d'agents se nettoient après intégration.
-- **Aucun `rm` sur une page** pendant la migration v3 : un déplacement se fait par `git mv`, qui conserve l'historique. Une suppression se demande.
+- **Un déplacement se fait par `git mv`**, qui conserve l'historique — jamais par `rm` + création. Une suppression se demande. L'interdiction absolue de tout `rm`, elle, valait pendant la migration v3, close le 2026-09-06.
 
 ## Anti-patterns
 

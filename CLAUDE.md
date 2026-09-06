@@ -28,10 +28,11 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range. Ce qui suit décrit l'état réel.
 >
-> Ce qui reste ouvert est du **format**, pas du rangement : les fiches passent au nouveau
-> gabarit au lot 6, les règles restées en avertissement durcissent au lot 8. Les 47
-> comparatifs, eux, **sont des pages depuis la clôture du lot 5, le 2026-09-06** — chacune
-> `role: comparatif`, à côté du `.base` qu'elle embarque.
+> **Plus rien n'est ouvert : la migration v3 est CLOSE depuis le 2026-09-06.** Les 337 fiches
+> sont au nouveau gabarit (lot 6), les 47 comparatifs sont des pages `role: comparatif` à côté
+> du `.base` qu'elles embarquent (lot 5), et les dix règles du validateur sont écrites et
+> mesurées (lot 8) — sept dures, trois en avertissement avec un motif écrit. Le compte de
+> chacune est dans `AI/migration/lot-8-durcissement.md`, *Journal du lot 8*.
 
 ## Identité utilisateur
 
@@ -87,7 +88,7 @@ wiki", il annonce simplement qu'il vient travailler ses notions : applique la fr
 
 - Modifier une page `role: brique` existante (y compris sa section `## Retours`) — en mode projet, **aucune écriture dans l'arbre des domaines**
 - **Modifier ou créer une page `role: notion` sans demande explicite** (les notions sont la mémoire perso de l'utilisateur — pas la tienne). Une demande de capture (« ajoute X », « documente Y ») en est une : `enrichir-brain` écrit la brique et sa notion du même geste, c'est son travail. Un balayage de fin de conversation n'en est pas une pour les notions déjà écrites : proposer, pas réécrire.
-- Supprimer quoi que ce soit — et pendant la migration v3, **aucun `rm` sur une page** : un déplacement se fait par `git mv`, qui conserve l'historique
+- Supprimer quoi que ce soit. L'interdiction **absolue** de tout `rm` sur une page valait « pendant la migration v3 » ; la migration est close depuis le 2026-09-06, donc elle retombe dans cette liste : une suppression se **demande**, elle n'est plus impossible. Ce qui ne change pas : un **déplacement** se fait par `git mv`, jamais par `rm` + création, sans quoi l'historique de la page est perdu
 - Committer ou pousser sans avoir clôturé : toute écriture dans une page du brain se clôt par le skill `cloturer-brain`, **seul endroit où la politique git du vault est écrite** (régénération, validateurs verts, vérification de divergence, puis commit et intégration en fast-forward d'office). Jamais de `--force` ni de `rebase` sans accord explicite.
 - Créer des fiches dans une `categorie` non listée dans `Documentation/general/taxonomie.md`
 
