@@ -47,9 +47,9 @@ Une fois DevBrain installé, ton coffre Obsidian aura cette structure :
 
 ![Vue d'ensemble du vault DevBrain](docs/install/img/24-vault-overview.png)
 
-À gauche : l'arborescence du vault — **un dossier par domaine**, à la racine. À droite : un
-*Comparatif* `.base` qui se remplit tout seul en lisant le frontmatter des fiches de sa
-catégorie (ici, les frameworks LLM open-source).
+À gauche : l'arborescence du vault — **un dossier par domaine**, à la racine. À droite :
+`Home.md`, la porte d'entrée, qui liste les 20 domaines avec leur compte de briques et leurs
+sous-domaines.
 
 Chaque fiche de brique (`role: brique`) utilise un frontmatter dense, lisible par Claude comme
 par toi en mode lecture :
@@ -60,9 +60,10 @@ C'est la combinaison **frontmatter + Bases** qui permet à Claude (et à toi) de
 questions comme « liste mes bases vectorielles open-source encore en production » sans rien
 indexer.
 
-> Les captures de ce guide datent de la v2, où les fiches vivaient sous `Dev/Services/`. Le
-> lot 3 de la v3 les a descendues dans l'arbre des 20 domaines : les images montrent encore
-> les anciens chemins, le texte donne les vrais.
+> Les 28 captures de ce guide ont été reprises le **2026-09-06** sur le vault v3 réel, avec
+> les quatre modules installés dans l'ordre du guide. Ce qu'elles montrent est ce que tu
+> obtiendras. Les deux écrans qui affichaient la clé d'API du plugin REST la montrent masquée :
+> une clé n'a pas sa place dans un dépôt.
 
 ---
 
@@ -472,10 +473,6 @@ Effets visuels immédiats (recharge le vault si besoin, `Ctrl+R`) :
 - **Note ouverte** : bord gauche coloré selon le champ `role:` du frontmatter
 - **Property** `role:` dans le panneau Properties : rendue en pastille colorée
 
-> La capture ci-dessus date de la v2, quand l'extrait s'appelait `galaxies.css` et que la
-> sidebar montrait `Wiki/` en vert. Le mécanisme est identique ; seuls le nom du fichier et le
-> champ lu ont changé.
-
 ### B. Activer le module Graph et configurer les groupes
 
 > ⚠️ Si tu ne vois pas **Affichage du graphique** dans tes Settings, c'est que le module natif Obsidian est désactivé. Active-le d'abord :
@@ -491,26 +488,25 @@ Une fois le module activé, configurer les groupes :
 1. Clique sur l'icône **Affichage du graphique** dans la sidebar gauche pour ouvrir le graphe
 2. Dans le panneau du graphe, clique sur l'icône **engrenage** (en haut à droite, dans le panneau du graphe lui-même)
 3. Va dans l'onglet **Groupes** *(Groups)*
-4. Clique 6 fois sur **Nouveau groupe** *(New group)* et configure chacun **dans cet ordre** :
+4. Clique 7 fois sur **Nouveau groupe** *(New group)* et configure chacun **dans cet ordre** :
 
 | # | Requête (à coller telle quelle) | Couleur (hex — RGB) |
 |---|---|---|
-| 1 | `path:Métiers/` | 🟡 or `#FFD43B` — 255/212/59 |
-| 2 | `["role":"hub"] OR path:MOC/` | 🟠 orange `#FF922B` — 255/146/43 |
-| 3 | `["role":"brique"]` | 🔵 indigo `#412CDD` — 65/44/221 |
-| 4 | `["role":"notion"]` | 🟢 vert olive `#7AB800` — 122/184/0 |
-| 5 | `["role":"comparatif"]` | 🔴 rouge `#EF4444` — 239/68/68 |
-| 6 | `["role":"pattern"] OR ["role":"rule"]` | ⚪ gris `#94A3B8` — 148/163/184 |
+| 1 | `path:Comparatifs/` | 🔴 rouge `#EF4444` — 239/68/68 |
+| 2 | `path:Métiers/` | 🟡 or `#FFD43B` — 255/212/59 |
+| 3 | `["role":"hub"]` | 🟠 orange `#FF922B` — 255/146/43 |
+| 4 | `["role":"brique"]` | 🔵 indigo `#412CDD` — 65/44/221 |
+| 5 | `["role":"notion"]` | 🟢 vert olive `#7AB800` — 122/184/0 |
+| 6 | `["role":"comparatif"]` | 🔴 rouge `#EF4444` — 239/68/68 |
+| 7 | `["role":"pattern"] OR ["role":"rule"]` | ⚪ gris `#94A3B8` — 148/163/184 |
 
 Pour la couleur : à droite de la requête, clique sur le petit carré de couleur → un sélecteur s'ouvre. Dans Obsidian 1.12.7, le plus simple est de saisir les trois champs **R / G / B** en bas du sélecteur (valeurs ci-dessus), puis `Entrée`.
 
-> ⚠️ **L'ordre des règles compte.** `path:Métiers/` doit passer **avant** la règle `hub`, sinon les cinq axes métier prendraient l'orange des hubs — ce sont eux aussi des `role: hub`. Obsidian applique la première règle qui matche.
+> ⚠️ **L'ordre des règles compte.** Obsidian applique la première règle qui matche, et deux pages `role: hub` doivent y échapper. `path:Comparatifs/` passe en tête : le hub qui réunit les 47 comparatifs porte **leur** rouge, sinon il se confond avec les 46 hubs orange de l'arbre et devient introuvable à l'œil. `path:Métiers/` passe ensuite, pour la même raison — les six axes métier sont eux aussi des `role: hub`.
 
-> 💡 **Pourquoi une règle mixte en 2 ?** `MOC/Concepts/` porte les 10 MOC de notions, seule porte d'entrée de 30 d'entre elles ; ce ne sont pas encore des `role: hub`, et elles vivent jusqu'au **lot 4**. La règle `["role":"hub"] OR path:MOC/` couvre les deux le temps de la migration, sans qu'il faille y retoucher le jour où `MOC/` disparaît.
+> 💡 **Un `.base` ne se colore pas, et ce n'est pas un oubli.** Les 47 fichiers `.base` vivent à côté de leur page comme moteur de tableau. Aucune requête ne peut les atteindre : un `.base` n'a pas de frontmatter, donc pas de `role:`. Ils apparaissent en couleur par défaut, tenus par l'unique arête de l'embed de leur page.
 
-> 💡 **Deux règles ne colorent encore rien** : `comparatif` naît au **lot 5**, quand les `.base` deviendront des pages. La règle est posée d'avance — elle coloriera le jour même, sans intervention.
-
-> ℹ️ Deux règles de l'ancien bloc v2 ont été **retirées** et non transposées. `path:AI/skills/` : ce dossier n'existe plus, les skills vivent sous `.claude/skills/`, et Obsidian **n'indexe aucun dossier commençant par un point** — la règle ne pouvait pas fonctionner sous son nouveau chemin. `["galaxie":"meta"]` : le champ n'existe plus, et les pages de gouvernance (`Documentation/`, `AI/`) sont déjà hors du graphe par `userIgnoreFilters`.
+> ℹ️ Trois règles de l'ancien bloc v2 ont été **retirées** et non transposées. `path:AI/skills/` : ce dossier n'existe plus, les skills vivent sous `.claude/skills/`, et Obsidian **n'indexe aucun dossier commençant par un point**. `["galaxie":"meta"]` : le champ n'existe plus. `path:MOC/` : le dossier est mort à la clôture du lot 4. Les pages de gouvernance (`Documentation/`, `AI/`) sont hors du graphe par `userIgnoreFilters`, qui exclut désormais **tout** `AI/` en une seule entrée — les huit filtres partiels d'avant laissaient passer `AI/migration/` et `AI/audit/`.
 
 Une fois les 6 groupes saisis, le panneau **Groupes** ressemble à ça, et le graphe se colorie en direct :
 
@@ -519,8 +515,6 @@ Une fois les 6 groupes saisis, le panneau **Groupes** ressemble à ça, et le gr
 Le graphe affiche alors tes notes coloriées par nature (métiers en or, hubs en orange, briques en bleu, notions en vert) :
 
 ![Graphe DevBrain colorié par rôle](docs/install/img/26-graph-colore.png)
-
-> Ces deux captures datent de la v2 (7 groupes, requêtes en `galaxie:`). Le résultat visuel est le même ; les requêtes du tableau ci-dessus font foi.
 
 Si tu ne vois pas l'effet, refais "Reload app" (`Ctrl+R`).
 
