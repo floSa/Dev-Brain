@@ -19,53 +19,58 @@ url_repo: https://github.com/Stirling-Tools/Stirling-PDF
 
 # Stirling PDF
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.
 
-Remplace le triptyque « site de conversion gratuit + Acrobat + bricolage bureautique ». Application web Java lancée en un `docker run`, qui expose plus de 50 opérations sur des fichiers PDF : fusion, découpe, extraction et réorganisation de pages, rotation, conversion depuis et vers les formats bureautiques et images, OCR, signature, rédaction, compression, mots de passe, métadonnées. UI en plus de 40 langues, API REST sur la quasi-totalité des outils, et chaînage de pipelines sans code depuis l'interface.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-L'argument central est la **non-circulation des documents**. Le traitement a lieu sur l'instance : le fichier reste sur la machine ou en mémoire du serveur le temps de l'opération. C'est la raison d'être en contexte on-prem, où un contrat, un dossier RH ou un plan client ne doit pas transiter par un service tiers.
+## Définition
 
-Frontière avec la famille `data/parsing` : Stirling PDF produit un **document destiné à un humain** — un PDF fusionné, signé, allégé, lisible. Il ne produit pas de donnée structurée pour une machine : ni JSON à bounding boxes, ni ordre de lecture exploitable en aval d'un pipeline RAG. Ce besoin relève de [[OpenDataLoader PDF]] et de ses voisins.
+Application web Java lancée en un `docker run`, qui expose plus de 50 opérations sur des
+fichiers PDF : fusion, découpe, extraction et réorganisation de pages, rotation,
+conversion depuis et vers les formats bureautiques et images, OCR, signature, rédaction,
+compression, mots de passe, métadonnées. Interface en plus de 40 langues, API REST sur la
+quasi-totalité des outils, et chaînage de pipelines sans code depuis l'interface.
+L'argument central est la **non-circulation des documents** : le traitement a lieu sur
+l'instance, le fichier reste sur la machine le temps de l'opération. La frontière à tenir
+est celle du destinataire — Stirling PDF produit un document destiné à un **humain**,
+fusionné, signé, allégé, lisible ; jamais de la donnée structurée pour une machine, ni
+JSON à bounding boxes, ni ordre de lecture exploitable en aval d'un pipeline RAG.
 
-Modèle **open-core** assumé : le dépôt est sous MIT, sauf les répertoires `app/proprietary/`, `app/saas/`, `engine/` et plusieurs dossiers du frontend, chacun régi par sa propre licence. Projet très actif (v2.14.3 en août 2026, commits quotidiens, environ 91 000 étoiles GitHub).
+## Prendre si / Écarter si
 
-## Quand l'utiliser
+| Prendre si | Écarter si |
+|---|---|
+| Manipuler des PDF régulièrement sans les envoyer sur un service en ligne : contrainte RGPD, données clients, réseau isolé | Extraire de la donnée structurée d'un PDF pour du RAG ou du ML → [[OpenDataLoader PDF]], [[Docling]], [[Unstructured]] |
+| Mutualiser l'outillage PDF d'une équipe derrière une URL interne, plutôt qu'une installation poste par poste | Manipuler des PDF depuis du code, sans serveur intermédiaire → [[PyMuPDF]] |
+| Automatiser un traitement documentaire répétitif : l'API REST scripte ce que l'interface fait à la main | Retoucher le contenu rédactionnel d'un document comme dans un traitement de texte : l'outil agit sur la structure du PDF, pas sur la rédaction |
+| Donner une interface d'appoint aux non-développeurs, à côté d'un pipeline Python existant | SSO, audit, base de données externe ou déploiement air-gapped supporté attendus d'emblée : ces briques sont dans les modules payants, et l'éditeur annonce le plan gratuit « jusqu'à 5 utilisateurs » |
+| | Fork ou redistribution sans revue de licence : cœur MIT et code propriétaire cohabitent dans le même arbre de fichiers, `LICENSE` se lit répertoire par répertoire |
 
-- Manipuler des PDF de façon régulière sans les envoyer sur un service en ligne : contrainte RGPD, données clients, réseau isolé.
-- Mutualiser l'outillage PDF d'une équipe derrière une URL interne, plutôt que des installations poste par poste.
-- Automatiser un traitement documentaire répétitif : l'API REST permet de scripter ce que l'UI fait à la main.
-- Donner une interface d'appoint aux non-développeurs, à côté d'un pipeline Python existant.
+## Mise en œuvre
 
-## Quand NE PAS l'utiliser
+- Installation — `docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf`, puis `http://localhost:8080`. Images Docker officielles, Kubernetes, JAR bare-metal, clients desktop Windows, macOS et Linux. Le périmètre bouge vite d'une version à l'autre, y compris la répartition entre cœur libre et modules payants : épingler un tag d'image plutôt que `latest`
+- Point d'entrée — application web en plus de 40 langues, API REST sur la quasi-totalité des outils, pipelines chaînés sans code
+- Prérequis — trois variantes d'image, à choisir en connaissance de cause : `latest` (environ 1,5 Go, OCR et conversion bureautique inclus), `latest-ultra-lite` (environ 350 Mo compressés, **sans** Tesseract ni LibreOffice, donc sans OCR ni conversion — l'économie retire la fonction silencieusement), `latest-fat` (plus de 2 Go, polices supplémentaires pour l'usage hors ligne). Deux JAR : celui par défaut sans authentification, et une variante `with-login` activée par `SECURITY_ENABLELOGIN`
+- Exécution — auto-hébergé ou managé (Stirling Cloud) ; instance sans état, montée en charge par réplication derrière un répartiteur, chaque traitement restant sur un nœud. L'image standard embarque LibreOffice via unoserver, Tesseract et OCRmyPDF : CPU et mémoire notables sur l'OCR et la compression, à dimensionner
+- Coût — cœur MIT gratuit ; plan Server annoncé à 99 $/mois ou 999 $/an pour 100 utilisateurs, Enterprise sur devis ; offre managée et plan Processor à crédits séparés
 
-- Extraire de la donnée structurée d'un PDF pour du RAG ou du ML → [[OpenDataLoader PDF]], [[Docling]], [[Unstructured]].
-- Manipuler des PDF depuis du code, sans serveur intermédiaire → [[PyMuPDF]].
-- Retoucher le contenu rédactionnel d'un document comme dans un traitement de texte : l'outil agit sur la structure du PDF, pas sur la rédaction.
-- Besoin immédiat de SSO, d'audit, de base de données externe ou de déploiement air-gapped supporté : ces briques sont dans les modules payants.
+## Écosystème
 
-## Déploiement & coût
+### Alternatives
 
-- `docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf`, puis `http://localhost:8080`. Images Docker officielles, Kubernetes, JAR bare-metal et clients desktop Windows, macOS et Linux.
-- Trois variantes d'image : `latest` (standard, environ 1,5 Go, OCR et conversion bureautique inclus), `latest-ultra-lite` (environ 350 Mo compressés, sans Tesseract ni LibreOffice donc sans OCR ni conversion), `latest-fat` (plus de 2 Go, polices supplémentaires pour l'usage hors ligne).
-- Deux JAR : celui par défaut sans authentification, et une variante `with-login` où l'authentification s'active par variables d'environnement (`SECURITY_ENABLELOGIN`).
-- Cœur MIT gratuit. Le plan Server est annoncé par l'éditeur à 99 $/mois ou 999 $/an pour 100 utilisateurs, Enterprise sur devis ; une offre managée (Stirling Cloud) et un plan Processor à crédits existent séparément.
-- Instance sans état : la montée en charge se fait par réplication derrière un répartiteur, chaque traitement restant sur un nœud.
+- *Aucune alternative déclarée : seule page de la catégorie `docs/pdf`. Les substituts fonctionnels sont soit des services en ligne — exclus par l'hypothèse de non-circulation des documents —, soit des bibliothèques appelées depuis du code, sans interface pour un utilisateur non technique, pointées dans le tableau ci-dessus.*
 
-## Pièges
+## Ressources
 
-- **« Gratuit » n'égale pas « illimité »** : la documentation éditeur annonce le plan gratuit « jusqu'à 5 utilisateurs ». Le plafond porte sur les composants propriétaires — une build excluant le répertoire `proprietary` reste régie par le seul MIT. À trancher avant de déployer pour une équipe.
-- MIT et code propriétaire cohabitent dans le même arbre de fichiers : lire `LICENSE` répertoire par répertoire avant tout fork ou toute redistribution.
-- L'image standard embarque LibreOffice (via unoserver), Tesseract et OCRmyPDF : d'où son poids, et une consommation CPU et mémoire notable sur l'OCR et la compression. Dimensionner en conséquence.
-- Choisir `ultra-lite` par réflexe d'économie retire silencieusement l'OCR et la conversion bureautique.
-- Le périmètre de fonctionnalités bouge vite d'une version à l'autre, y compris la répartition entre cœur libre et modules payants : épingler un tag d'image plutôt que `latest`.
+- Documentation — https://docs.stirlingpdf.com/
+- Dépôt — https://github.com/Stirling-Tools/Stirling-PDF
 
-## Alternatives
+## Voir aussi
 
-Aucune autre page de la catégorie `tooling/document` dans le brain à ce jour. Les substituts fonctionnels sont soit des services en ligne (exclus par l'hypothèse de non-circulation des documents), soit des bibliothèques appelées depuis du code comme [[PyMuPDF]] — sans interface pour un utilisateur non technique.
-
-## Liens
-
-- [[OpenDataLoader PDF]] — l'autre face du PDF : extraction structurée pour une machine, catégorie `data/parsing`.
-- [[Comparatif - Parsing de documents]] — comparatif de la famille parsing, à ne pas confondre avec cet outil.
-- [[OCR]] — concept : reconnaissance optique de caractères.
-- Docs : https://docs.stirlingpdf.com/ · Repo : https://github.com/Stirling-Tools/Stirling-PDF
+- [[Documents]] — le hub du domaine
+- [[OCR]] — la notion : reconnaissance optique de caractères
+- [[Comparatif - Parsing de documents]] — l'autre face du PDF : l'extraction pour une machine, à ne pas confondre avec cet outil

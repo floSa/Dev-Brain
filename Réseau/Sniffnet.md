@@ -18,53 +18,60 @@ url_repo: https://github.com/GyulyVGC/sniffnet
 
 # Sniffnet
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.
 
-Analyseur de trafic réseau **à interface graphique**, écrit en Rust (bibliothèque GUI `iced`), double licence MIT ou Apache-2.0. Il capture sur une interface choisie et répond à la question « qu'est-ce qui sort de cette machine, vers qui, sur quel port, à quel volume ». Pour chaque hôte distant : nom de domaine, ASN, pays. Pour chaque flux : protocole applicatif reconnu (le projet revendique plus de 6 000 services, protocoles et signatures connues), et le **programme local** responsable du trafic.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Application Rust | open-source | Windows, macOS, Linux | — |
+<!-- AUTO:BANDEAU:END -->
 
-Positionnement : la couche entre `netstat` (instantané, sans historique) et Wireshark (dissection paquet par paquet, courbe d'apprentissage réelle). Sniffnet se lit d'un coup d'œil, avec courbes temps réel, favoris, notifications déclenchées sur seuil ou sur liste noire d'IP, et import/export de fichiers PCAP.
+## Définition
 
-En contexte on-prem, c'est l'outil de première intention pour caractériser le comportement réseau d'un service déployé chez un client : un conteneur qui appelle un domaine inattendu, un pipeline qui sature un lien, une machine coupée du monde qui parle quand même.
+Analyseur de trafic réseau à interface graphique, écrit en Rust sur la bibliothèque GUI
+`iced`. Il capture sur une interface choisie et répond à une question : qu'est-ce qui sort
+de cette machine, vers qui, sur quel port, à quel volume. Pour chaque hôte distant, le nom
+de domaine, l'ASN et le pays ; pour chaque flux, le protocole applicatif reconnu — le
+projet revendique plus de 6 000 services et signatures — et le **programme local**
+responsable. Il occupe la place entre `netstat`, instantané sans historique, et Wireshark,
+dissection paquet par paquet à courbe d'apprentissage réelle : courbes temps réel,
+favoris, notifications sur seuil ou sur liste noire d'IP, import et export PCAP. Le choix
+de l'interface commande tout le résultat — le trafic d'un conteneur s'observe sur
+l'interface bridge de l'hôte, jamais sur l'interface physique.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Vérifier ce qu'un service auto-hébergé émet réellement vers l'extérieur, avant une mise en production en réseau contraint.
-- Identifier le processus qui consomme la bande passante sur un poste ou un serveur avec accès graphique.
-- Confirmer qu'un traitement supposé hors ligne (modèle local, batch) ne fait aucun appel sortant.
-- Relire un PCAP fourni par une équipe réseau, sans monter Wireshark.
+| Prendre si | Écarter si |
+|---|---|
+| Vérifier ce qu'un service auto-hébergé émet réellement vers l'extérieur, avant une mise en production en réseau contraint | Dissection protocolaire fine, reconstruction de session, filtres BPF complexes : c'est le domaine de Wireshark et `tshark` (hors brain) |
+| Identifier le processus qui consomme la bande passante sur un poste ou un serveur à accès graphique | Supervision continue et centralisée d'un parc : c'est une application locale, sans agent ni base historisée → [[Beszel]] |
+| Confirmer qu'un traitement supposé hors ligne — modèle local, batch — ne fait aucun appel sortant | Serveur sans affichage : l'interface est graphique, il n'existe pas de mode terminal — sur une machine en SSH seul, l'outil ne s'utilise pas |
+| Relire un PCAP fourni par une équipe réseau, sans monter Wireshark | Analyse de contenu chiffré : les métadonnées de flux sont visibles, les charges utiles TLS ne le sont pas |
+| | Capture de longue durée : mémoire et fichiers PCAP croissent — l'outil est fait pour des sessions d'observation, pas pour tourner des semaines |
+| | Se fier à l'étiquetage : la reconnaissance repose sur les ports et des signatures, un service sur port non standard reste générique, et l'attribution par programme dépend de l'OS — souvent non résolue pour les processus système ou les flux conteneurisés |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Dissection protocolaire fine, reconstruction de session, filtres BPF complexes : c'est le domaine de Wireshark / `tshark`.
-- Supervision continue et centralisée d'un parc : Sniffnet est une application locale, sans agent ni base de données historisée → voir [[Beszel]] pour la supervision d'hôtes.
-- Serveur sans affichage : l'interface est graphique, il n'y a pas de mode terminal. Sur une machine distante en SSH seul, l'outil ne s'utilise pas.
-- Analyse de contenu chiffré : les métadonnées de flux sont visibles, pas les charges utiles TLS.
+- Installation — Windows x64, arm64 et x86 par installeur ; Linux amd64, arm64, i386 et armhf en paquets DEB et RPM ou en AppImage ; macOS Intel et Apple Silicon
+- Point d'entrée — application de bureau : on choisit l'interface, puis courbes, tableaux de flux, notifications et export PCAP
+- Prérequis — **Npcap en mode compatible WinPcap** sous Windows, `libpcap` sous Linux : leur absence est le premier motif d'échec au lancement, et le message d'erreur ne le dit pas toujours clairement. Linux demande aussi ALSA, fontconfig et GTK 3 ; macOS n'a aucune dépendance supplémentaire
+- Exécution — sur le poste, en local ; la capture exige des privilèges — sous Linux, `setcap cap_net_raw,cap_net_admin=eip <chemin>` plutôt que `sudo`, sous macOS une exécution en administrateur. Sans privilège, la liste des interfaces apparaît vide ou incomplète, symptôme trompeur qui ressemble à une panne de matériel
+- Coût — gratuit, double licence MIT ou Apache-2.0 ; les données de géolocalisation et d'ASN proviennent de MaxMind et sont embarquées dans l'application
 
-## Installation & plateformes
+## Écosystème
 
-- **Windows** (x64, arm64, x86) : installeur, plus **Npcap** en mode compatible WinPcap — dépendance obligatoire.
-- **Linux** (amd64, arm64, i386, armhf) : paquets DEB et RPM, AppImage. Dépendances système `libpcap`, ALSA, fontconfig, GTK 3.
-- **macOS** (Intel et Apple Silicon) : aucune dépendance supplémentaire.
+### Alternatives
 
-La capture demande des privilèges. Sur Linux, plutôt que `sudo`, accorder les capacités au binaire : `setcap cap_net_raw,cap_net_admin=eip <chemin>`. Sur macOS, exécution en administrateur requise. Les données de géolocalisation et d'ASN proviennent de MaxMind, embarquées dans l'application.
+- *Aucune alternative déclarée : première entrée en `network/analyse`. Hors brain : Wireshark (dissection experte), `iftop`, `nethogs` et `bandwhich` (terminal, sans historique ni géolocalisation), ntopng (supervision réseau centralisée, bien plus lourde).*
 
-## Pièges
+## Ressources
 
-- **La dépendance de capture est le premier motif d'échec au lancement** : Npcap absent sur Windows, `libpcap` absent sur Linux. Le message d'erreur ne le dit pas toujours clairement.
-- Sans privilège adéquat, la liste des interfaces apparaît vide ou incomplète — symptôme trompeur qui ressemble à un problème de matériel.
-- L'attribution par programme dépend de l'OS et n'est pas toujours résolue pour les processus système ou les flux conteneurisés.
-- Un flux passant par un conteneur Docker s'observe sur l'interface bridge de l'hôte, pas sur l'interface physique : choisir la bonne interface change tout le résultat.
-- La reconnaissance de service repose sur les ports et des signatures : un service sur port non standard sera étiqueté de façon générique.
-- Capture longue durée = mémoire et fichiers PCAP qui croissent ; l'outil est fait pour des sessions d'observation, pas pour tourner des semaines.
+- Documentation — https://github.com/GyulyVGC/sniffnet/wiki
+- Dépôt — https://github.com/GyulyVGC/sniffnet
+- Site — https://sniffnet.app
 
-## Alternatives
+## Voir aussi
 
-Aucune fiche du brain ne couvre le même terrain aujourd'hui — Sniffnet est la première entrée en `network/analysis`. Les comparables hors brain sont Wireshark (dissection experte), `iftop` / `nethogs` / `bandwhich` (terminal, sans historique ni géolocalisation) et ntopng (supervision réseau centralisée, bien plus lourde).
-
-## Liens
-
-- [[Beszel]] — supervision des hôtes et conteneurs, complémentaire : Beszel dit *comment va la machine*, Sniffnet dit *ce qui circule*
-- [[Web-Check]] — l'angle inverse : ce qu'un service expose vu de l'extérieur
+- [[Réseau]] — le hub du domaine
+- [[Web-Check]] — l'angle inverse : ce qu'un service expose, vu de l'extérieur
 - [[Docker]] — pour observer le trafic d'un conteneur, capturer sur l'interface bridge de l'hôte
-- Site : https://sniffnet.app
-- Repo : https://github.com/GyulyVGC/sniffnet
