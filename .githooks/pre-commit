@@ -82,8 +82,17 @@ hooks_dir=$(git config --get core.hooksPath || echo "")
 if [ -z "$hooks_dir" ]; then
     hooks_dir="$(git rev-parse --git-common-dir)/hooks"
 fi
+# `core.hooksPath` peut être relatif (« .githooks », le cas documenté) ou absolu,
+# et sous Windows un chemin absolu arrive avec des ANTISLASHES. On normalise les
+# séparateurs d'abord : la première version testait l'absolu par une expression
+# entre crochets, `[A-Za-z]:[/\]*`, où l'antislash échappait le crochet fermant
+# au lieu d'entrer dedans. Le motif ne matchait donc jamais, le chemin absolu du
+# dépôt principal se voyait préfixer par la racine du worktree, et TOUT commit
+# était refusé. Trouvé en committant, pas en relisant — et le hook a bien échoué
+# bruyamment, ce qui est son travail.
+hooks_dir=$(printf '%s' "$hooks_dir" | tr '\' '/')
 case "$hooks_dir" in
-    /*|[A-Za-z]:[/\]*) ;;                                   # déjà absolu
+    /* | ?:/*) ;;                                  # déjà absolu — POSIX ou Windows
     *) hooks_dir="$(git rev-parse --show-toplevel)/$hooks_dir" ;;
 esac
 

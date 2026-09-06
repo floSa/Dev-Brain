@@ -425,6 +425,28 @@ def main() -> int:
     ancien = json.loads(SORTIE.read_text(encoding="utf-8")) if SORTIE.exists() else {}
     aujourdhui = datetime.now(timezone.utc).date()
 
+    # Le side-car est indexé par CHEMIN de page, et un chemin bouge. Constaté à la
+    # clôture du lot 8 : ses 101 entrées étaient toutes en `Dev/Outils/…` et
+    # `Dev/Services/…`, chemins qui n'existent plus depuis le lot 3. Aucune ne
+    # correspondait plus à une page, donc `frais()` ne trouvait jamais rien : le
+    # mécanisme de reprise — « ne pas re-sonder une fiche sondée depuis moins de
+    # --age-max-jours » — était mort, et le script re-sondait tout le vault à chaque
+    # passage sans que rien ne le dise. Troisième défaut de la même famille dans ce
+    # seul fichier, après `SECTIONS` et le périmètre : une clé dérivée d'un chemin ou
+    # d'un nom de section est cassée par toute réorganisation, et elle se taît.
+    # On ne peut pas y remédier par une clé stable — une page n'a pas d'identifiant —
+    # mais on peut refuser de se taire.
+    connus = {chemin for chemin, _, _ in pages} | {chemin for chemin, _, _ in cmps}
+    orphelines = sorted(set(ancien) - connus)
+    if orphelines:
+        print(f"verifier_fraicheur : {len(orphelines)} entrée(s) du side-car ne visent "
+              "plus aucune page — page renommée, déplacée ou supprimée. Leurs sondes "
+              "en ligne sont perdues et seront refaites.")
+        for chemin in orphelines[:5]:
+            print(f"  - {chemin}")
+        if len(orphelines) > 5:
+            print(f"  … et {len(orphelines) - 5} autre(s)")
+
     def frais(chemin: str) -> bool:
         d = (ancien.get(chemin) or {}).get("sonde_le")
         return bool(d) and (aujourdhui - date.fromisoformat(d)).days < args.age_max_jours

@@ -485,6 +485,22 @@ Défaut de périmètre corrigé du même geste : `Templates/` n'était pas écar
 ses deux gabarits portent `role: brique`. Le script annonçait « 339 fiches » sur un vault qui
 en compte 337.
 
+Et un **troisième** défaut de la même famille, trouvé à la clôture même du lot, en lisant le
+diff : le side-car `AI/index/fraicheur.json` portait **101 entrées, toutes clés en
+`Dev/Outils/…` et `Dev/Services/…`** — des chemins qui n'existent plus depuis le lot 3.
+Aucune ne correspondait donc plus à une page. Conséquence invisible : `frais()` ne trouvait
+jamais rien, le mécanisme de reprise (« ne pas re-sonder une fiche sondée depuis moins de
+`--age-max-jours` ») était **mort**, et le script re-sondait tout le vault à chaque passage
+sans que rien ne le dise. Trois fois le même schéma dans un seul fichier — une clé dérivée
+d'un nom de section, d'un rôle, ou d'un chemin, cassée par une réorganisation, et muette.
+
+Il n'y a pas de remède par une clé stable : une page du vault n'a pas d'identifiant. Ce qu'on
+peut faire, c'est refuser de se taire — le script compte maintenant les entrées du side-car
+qui ne visent plus aucune page et les nomme. Vérifié en remettant l'ancien side-car en place :
+« 101 entrée(s) du side-car ne visent plus aucune page ». Les 101 entrées mortes ont été
+purgées par le premier passage du script réparé ; rien d'utilisable n'a été perdu, puisque
+rien ne pouvait plus les lire.
+
 ### Ce qui a été vérifié par exécution, et non déclaré
 
 Le brief insiste sur un point, et il a raison : **une règle qui ne trouve jamais rien
