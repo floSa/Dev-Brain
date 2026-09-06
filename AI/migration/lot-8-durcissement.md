@@ -8,6 +8,11 @@ tags: [meta, migration, v3]
 
 # Lot 8 — Durcissement du validateur
 
+> [!success] **CLOS le 2026-09-06.** Dernier lot de la migration v3, et la migration est close
+> avec lui. Le compte de violations de chaque règle avant durcissement, les deux réécritures et
+> ce qui a été vérifié par exécution sont dans le *Journal du lot 8*, en fin de fichier.
+> Ce qui suit est le brief d'origine, conservé tel quel.
+
 Effort : **une demi-session**. Dernier lot.
 
 Prérequis : tous les autres lots faits, validateur au vert. **Le lot 6 est clos depuis le
@@ -331,3 +336,238 @@ Deux **notions** citent en prose une catégorie qui n'existe plus — `Contrats 
 qualité` (`data/quality`) et `Versionnage de données` (`data/versioning`). Elles n'ont pas été
 corrigées : ce sont des pages `role: notion`, et on ne les réécrit pas sans que floSa l'ait
 demandé.
+
+---
+
+## Journal du lot 8 — clos le 2026-09-06
+
+> Une conversation, la 39e. Dernier lot de la migration v3, et le seul dont le livrable
+> principal est un **tableau de mesures** : la sévérité de chaque règle est le résultat d'un
+> comptage, jamais d'une intention.
+
+### Le constat de départ, qui n'était pas celui du brief
+
+Le brief suppose dix règles implémentées, dont trois « démarrent en avertissement ». La
+lecture du code dit autre chose : **quatre règles sur dix étaient écrites**. Les six autres
+n'étaient pas souples, elles étaient **absentes** — et une règle absente ne ressemble pas à
+une règle souple, elle ressemble à une règle satisfaite. C'est le défaut exact que le lot 6
+a trouvé dans `verifier_fraicheur.py`, à un autre endroit du même outillage.
+
+| Règle du §10 | État réel avant le lot 8 |
+|---|---|
+| 1 — réciprocité | écrite pour `alternatives:` **seulement** |
+| 2 — chemin ↔ catégorie | écrite, dure, dans `check_arbo.py` |
+| 3 — brique dans le hub | **absente** (R7 vérifiait « atteignable depuis un hub », pas « présente dans le hub de son dossier ») |
+| 4 — voisinage déclaré | **absente** |
+| 5 — exclusion sourcée | **absente** |
+| 6 — réinjection du pitch | écrite pour `alternatives:` **seulement** |
+| 7 — étiquettes fermées | **absente** |
+| 8 — pas de double citation | **absente** |
+| 9 — bandeau à jour | écrite dans `build_bandeau.py --check`, **exécutée par rien** |
+| 10 — anti-répétition | **absente** |
+
+Écrire d'abord, mesurer ensuite, durcir en dernier : c'est l'ordre qui a été suivi, et
+c'est ce qui rend le tableau ci-dessous vérifiable.
+
+### Le tableau des mesures — 337 briques, 764 pages, le 2026-09-06
+
+| Code | Règle | Violations mesurées | Verdict |
+|---|---|---|---|
+| R12 | réciprocité d'`alternatives:` | 0 | **dure** (l'était déjà) |
+| R18 | réciprocité de `complements:` | **0** | **durcie** |
+| R19 | brique présente dans le hub de son dossier | **0** | **durcie** |
+| R21 | règle 5 réécrite | **1** → 0 | **durcie** après réparation |
+| R22 | pitch réinjecté en `### Compléments` | **2** → 0 | **durcie** après réparation |
+| R23 | cinq étiquettes de `## Mise en œuvre` | **0** | **durcie** |
+| R24 | règle 8 réécrite | **0** | **durcie** |
+| R15 | un lien vers une notion ou un hub | **0** | **durcie** (souple depuis la v2) |
+| — | règle 2, chemin ↔ catégorie | 0 | dure, `check_arbo.py` sort 1 |
+| — | règle 9, bandeau ↔ frontmatter | 0 | dure, `build_bandeau.py --check` sort 2 — **et entre dans `cloturer-brain`** |
+| R20 | règle 4, voisinage non déclaré | **62** | **souple définitivement**, par conception |
+| R23 | étiquette de `## Ressources` | **5** | **souple**, arbitrage de vocabulaire à floSa |
+| R26 | règle 10, `## Définition` ↔ bandeau | **4** signalés, 11 candidats | **souple définitivement**, non scriptable |
+| R8e | angle mort de R8a *(nouvelle)* | **11** | souple, comme toute la famille R8 |
+| R14b | absence de `famille:` *(nouvelle)* | **1** | souple par décision de taxonomie |
+| R5 | collisions d'alias | 13 | souple, décision d'audit v2 |
+| R8a/b/c/d | couverture des comparatifs | 15 | souple, décision éditoriale |
+
+**28 avertissements avant, 111 après.** La hausse est le but : 83 des 84 nouveaux viennent de
+règles qui n'existaient pas et qui disent maintenant ce qu'elles voient. Zéro violation dure.
+
+### Les deux réécritures
+
+#### Règle 5 — aucune des deux reformulations proposées ne tient seule
+
+Le brief demandait de choisir l'une des deux, ou de dire pourquoi aucune ne tient. **Aucune
+ne tient prise séparément**, et la mesure le montre :
+
+| Forme | Violations | Ce qui ne va pas |
+|---|---|---|
+| d'origine — « toute cellule `Écarter si` contient un wikilink » | **1 031** / 1 388 cellules | inatteignable, et aucun enrichissement ne le comble |
+| lot 4 — « nomme un besoin couvert par une autre brique » | **177** | confond *nommer* une brique et *rediriger* vers elle. « Centré Postgres : inutile dès qu'il faut toucher un autre moteur » nomme Postgres sans lui renvoyer personne. Les alias courts ajoutent du bruit — `fabric` (PyTorch Lightning) attrapé dans une phrase sur Neo4j, `scipy` dans une phrase sur CuPy |
+| lot 5 — « le motif est une redirection » | **18** | 5 sont des flèches de **version** (`0.x → 1.x`, `ONNX → TensorRT`, `v1 → v2`), 13 des redirections vers une cible **hors brain** (`→ argparse`, `→ unittest`, `→ mypy`, `→ un wiki d'équipe`, `→ Textual`). Les exiger rendrait vingt-cinq outils non fichés obligatoires à ficher |
+| **conjonction retenue** | **1** | — |
+
+La forme retenue : **une cellule qui redirige — la flèche le dit — et dont la cible est une
+brique fichée, porte son wikilink.** Le lot 5 fournit la *position*, le lot 4 la *condition*.
+345 des 1 388 cellules portent une flèche ; 17 la portent sans lien, et aucune de ces 17 ne
+nomme une brique du brain — ce sont toutes des cibles externes ou des sauts de version.
+
+La violation unique était `Machine Learning/Socle/River.md` : « Entraînement distribué
+multi-nœuds sur flux → Spark Structured Streaming et MLlib, **hors brain** », alors que
+`Calcul distribué/Spark.md` existe. La même affirmation fausse figurait deux lignes plus bas,
+en `### Alternatives` ; les deux sont corrigées.
+
+#### Règle 8 — la lecture du lot 9, plus une précision qu'il fallait ajouter
+
+La lecture « sections de liste de liens » est la bonne, et le lot 6 l'annonçait conforme sur
+les 337 fiches. **Elle ne l'était pas tout à fait : 1 violation**, `CausalImpact.md`, où
+`[[Diff-in-Diff]]` apparaît en `### Alternatives` et en `## Voir aussi`.
+
+Et ce cas n'est **pas** un défaut : la puce d'`Alternatives` est celle que le lot 6 recommande
+lui-même pour une section vide — « Aucune outillée dans le brain : côté méthode, l'approche
+concurrente est [[Diff-in-Diff]] ». Le lien y **explique**, il ne liste pas. Punir cette forme
+aurait fait du validateur l'adversaire de sa propre recommandation.
+
+D'où la précision : la règle porte sur ce qu'une puce **liste**, c'est-à-dire sur les liens de
+son **entrée** — ce avec quoi elle commence, éventuellement plusieurs enchaînés par `·`. Sous
+cette forme : **0 sur 337**, et le défaut d'origine est toujours attrapé (Mimesis listé en
+`Alternatives` **et** en `Liens` sur la page Faker, deux listes de liens).
+
+Contrôle inverse, pour être sûr que la règle voit encore quelque chose : la lecture « toutes
+sections confondues » donne **242 violations**. Ce n'est pas une règle assouplie jusqu'à
+l'inutilité, c'est une règle recentrée sur ce qu'elle visait.
+
+### L'angle mort de R8a — les « 38 briques » se décomposent
+
+Le compte du lot 6 est reproduit **à l'unité** : 89 briques hors de toute vue, 51 dans les 13
+catégories que R8a signale, **38 invisibles à R8a**, sur 28 catégories. Ce que le lot 8 ajoute,
+c'est que ces 38 ne sont pas un bloc :
+
+- **11** sont le vrai défaut : une vue existe pour leur catégorie, elle retient leurs pairs, et
+  son filtre les a laissées dehors. Réparable en élargissant un filtre. C'est ce que **R8e**
+  signale, et il retrouve les deux groupes que les lots 3 et 5 avaient trouvés à la main —
+  `ml/tabulaire` (Featuretools, category_encoders, imbalanced-learn) et `ml/vision` (Kornia,
+  timm, torchvision) — plus cinq autres qu'aucun lot n'avait vus ;
+- **27** vivent dans une catégorie de **1 ou 2 briques**, où aucun comparatif n'a de sens : les
+  seuils sont à 3 briques et 2 membres, et à raison. Les signaler aurait produit 27
+  avertissements irréparables et rendu R8a illisible. Leur seule issue est de **ficher des
+  voisins**, donc le backlog d'enrichissement.
+
+La proposition du lot 5 — « R8a doit aussi compter les briques qu'aucune vue ne retient » —
+est donc retenue **dans sa moitié réparable**, et le reste est versé au backlog avec son
+décompte. Attraper les 38 sans distinguer les deux populations aurait fabriqué du bruit.
+
+### `verifier_fraicheur.py` — le branchement n'était pas « deux lignes »
+
+Le lot 6 estimait le branchement sur les comparatifs à « un travail de deux lignes de
+périmètre ». Ce n'en est pas : ajouter `comparatif` au filtre de rôle **n'aurait rien
+produit**. Les deux règles hors ligne lisent `maturite:` et `alternatives:`, qu'un comparatif
+ne porte pas — le compteur serait resté à zéro, et un compteur à zéro ressemble à une règle
+satisfaite. Exactement le piège que le lot 6 venait de trouver, à deux fichiers de là.
+
+Il a donc fallu une règle **croisée**, C2' : le fait est écrit sur le comparatif, le champ
+qu'il contredit vit sur la fiche, et personne ne relit les deux ensemble. 258 puces
+confrontées, **5 contradictions** — rank-bm25, Helicone, RAGatouille, promptfoo, evaluate. Les
+silences sont vérifiés un par un : Vanna, TorchServe, Neptune et LIME sont déjà
+`maturite: deprecated`, donc le frontmatter est d'accord avec le comparatif ; Seldon Core est
+un fait de **licence** (BSL), pas de maturité.
+
+Deux ajouts au passage : `FIN_DE_VIE`, qui couvre les faits de cycle de vie que `DECLIN` ne
+voyait pas (dépôt archivé, rachat, service fermé, bascule BSL) et qui trouve 4 fiches de plus
+— Flyway, Helicone, TruLens, promptfoo ; et l'**autotest** que le lot 6 demandait : le script
+compte au démarrage ce que ses filtres attrapent, et s'ils n'attrapent rien il l'annonce en
+bannière et sort en **3**. Le contrat « toujours 0 » protège le vault d'un dépôt tiers en
+panne ; il n'a jamais couvert le script lui-même en panne, et c'est cette confusion qui a
+laissé la règle C2 morte pendant tout le lot 6.
+
+Défaut de périmètre corrigé du même geste : `Templates/` n'était pas écarté du balayage, et
+ses deux gabarits portent `role: brique`. Le script annonçait « 339 fiches » sur un vault qui
+en compte 337.
+
+### Ce qui a été vérifié par exécution, et non déclaré
+
+Le brief insiste sur un point, et il a raison : **une règle qui ne trouve jamais rien
+ressemble à une règle satisfaite.** Rien de ce qui suit n'est une lecture de code.
+
+- **Les sept règles dures refusent réellement.** Sept cas de non-conformité fabriqués un par
+  un sur des pages réelles — `complements:` déréciproqué, puce de `Compléments` tronquée,
+  redirection délinkée, étiquette `Install` au lieu d'`Installation`, cible listée deux fois,
+  hub délié, `## Voir aussi` vidé. Chacun refusé sous **son propre code R**, vault remis vert
+  après les sept.
+- **Les hooks git refusent.** Dépôt de test isolé : message propre accepté ; trailer refusé au
+  commit ; casse basse refusée ; trailer **commenté** accepté (git le retirera) ; `commit-msg`
+  retiré → commit refusé ; trailer forcé en `--no-verify` → **push refusé et distant
+  immobile** ; `amend` puis push accepté. Non-régression d'identité : `aosis.net` toujours
+  refusé au commit et au push.
+- **L'autotest de `verifier_fraicheur` refuse.** `SECTIONS` remis aux quatre noms d'avant le
+  lot 6 → bannière et code 3 ; `PUCE_COMPARATIF` neutralisée → bannière et code 3 ; scripts
+  remis → code 0.
+- **Le hook `Stop` tourne.** Payload réel : arbre propre → « aucune écriture », `check_brain`
+  non lancé, code 0 ; page touchée et vault vert → « check_brain vert », silencieux ; page
+  touchée et violation dure → `systemMessage` portant les `[FAIL]`, code 0 (il ne bloque
+  jamais).
+
+Cette dernière vérification a trouvé **deux défauts que la relecture ne montrait pas**, et
+c'est tout l'argument pour exécuter :
+
+1. `run_check_brain()` lançait son sous-processus en `text=True` sans `encoding`, donc décodait
+   en cp1252 une sortie UTF-8. Le `systemMessage` arrivait en mojibake — « contrÃ´lÃ©es » —
+   illisible par le lecteur auquel il est destiné. L'appel voisin, `touched_in_git()`, passait
+   déjà l'encodage.
+2. Le message portait la **queue brute** de la sortie sur 2 000 caractères. Ça marchait avec 28
+   avertissements ; ce lot les a portés à 111, et la queue s'est mise à charrier des R20 et des
+   R8e avant d'arriver à la seule chose utile. **C'est mon propre changement qui a cassé ce
+   message**, et le réparer faisait partie du lot. Il ne remonte plus que les lignes `[FAIL]`.
+
+### La seule chose qui manque, et qui n'est pas un bug
+
+`session_to_devbrain.py`, la seconde moitié du hook `Stop`, ne produit rien sans
+`ANTHROPIC_API_KEY`, et la variable n'est pas positionnée sur cette machine. C'est la cause du
+trou dans `AI/sessions/`, qui s'arrête au 2026-09-03 alors que les lots 5, 6 et 7 ont tourné
+depuis. Le script est branché, résout correctement le vault, et sort proprement en 0. **Les
+deux causes que l'audit axe 3 avait relevées sont bien levées** — `settings.json` est versionné
+avec sa clé `hooks.Stop`, et plus aucun chemin de vault n'est en dur. Il lui manque une clé,
+qui est une donnée personnelle et appartient à floSa.
+
+### Gouvernance
+
+- **Les hooks git passent de deux à trois.** Cinq commits de `main` portent un trailer
+  `Co-Authored-By` — 859cc55, 2b6dde7, f23d72f, aaeda03, b18a4e3, tous du lot 6. Les hooks ne
+  les ont pas vus, et ce n'était pas un bug : ils cherchent une adresse dans l'**identité**, et
+  un trailer est une ligne de **message**. `pre-commit` ne peut pas porter ce test — git
+  l'exécute **avant** de composer le message, et `COMMIT_EDITMSG` porte alors encore celui du
+  commit précédent. Le mettre là aurait écrit une règle qui ne voit rien. D'où
+  `.githooks/commit-msg`, seul hook à recevoir le message ; `pre-commit` garde le rôle de
+  refuser un commit quand **ce hook-là n'est pas installé** ; `pre-push` scanne aussi les
+  messages de la plage poussée, ce qui couvre le `--no-verify` et le commit importé.
+  Les cinq commits déjà poussés ne sont **pas** rattrapés : les retirer demanderait une
+  réécriture d'historique, qui ne se décide pas seule.
+- **25 branches `claude/` supprimées côté `origin`**, chacune après vérification qu'elle est
+  bien ancêtre de `main`. Il ne reste sur `origin` que `main` et la branche du lot 8,
+  `claude/lot-8-validateur-durcissement-2472bf`. Les 54 branches **locales** et les 27
+  worktrees encore montés ne sont pas touchés — cf. les *Remontées* du pilote.
+
+### Les cinq comparatifs manquants, et les six décisions de forme
+
+Aucun n'est traité ici, et c'est la règle du lot : ce sont du **contenu**, pas de la règle.
+Tous versés à `AI/backlog-enrichissement-brain.md` avec leur axe de départage déjà écrit, en
+sept sections. Des six décisions de forme du lot 6, deux ont un effet sur une règle et sont
+donc tranchées ici — l'étiquette `Site` (R23 reste souple, l'arbitrage est à floSa) et
+`famille:` requis (R14b, refusé parce que contraire à `taxonomie.md`). Les quatre autres sont
+des conventions de rédaction : elles restent au backlog.
+
+### Critères d'acceptation
+
+- [x] Chaque règle est soit dure, soit souple **avec un motif écrit** — dans le code, à côté de
+      la règle, et dans le tableau ci-dessus.
+- [x] **Aucune exception ajoutée au validateur pour faire passer une règle.** Deux règles ont
+      été *réécrites*, ce qui n'est pas la même chose : la mesure a montré leur formulation
+      inatteignable, et la nouvelle forme est plus stricte que l'ancienne sur ce qu'elle vise
+      (contrôle : la lecture large de la règle 8 donne 242 violations, la lecture retenue en
+      trouve toujours le défaut d'origine). Trois pages ont été réparées, pas contournées.
+- [x] Le hook `Stop` tourne réellement — vérifié par exécution, avec deux défauts trouvés et
+      corrigés au passage. Sa moitié « résumé » attend une clé d'API, et c'est écrit.
+- [x] `AI/design/brain-v2.md` porte une mention en tête renvoyant vers la v3.
+- [x] Le pilote est à jour et la migration close. Aucune décision n'y reste ouverte sans être
+      tranchée ou nommée comme reportée ; `brain-v3.md` ne parle plus d'aucun lot au futur.

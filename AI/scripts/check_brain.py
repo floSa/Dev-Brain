@@ -67,6 +67,9 @@ Règles SOUPLES (avertissent) :
     n'avoir aucune alternative — la signaler aide, l'interdire mentirait      [R20]
   - étiquette de `## Ressources` hors vocabulaire. Souple tant que l'ouverture
     du vocabulaire à `Site` et `Poids` n'est pas tranchée par floSa           [R23]
+  - `role: brique` sans `famille:`. SOUPLE PAR DÉCISION DE TAXONOMIE : un champ
+    vide est le seul signal prévu pour « l'arbre n'a pas tranché ». Ce qui
+    manquait n'était pas la contrainte, c'était de le DIRE                   [R14b]
   - `## Définition` redit peut-être le bandeau. SOUPLE DÉFINITIVEMENT : la
     règle n'est pas scriptable — `production`, `application`, `open-source`
     sont des mots français ordinaires, et la mesure du lot 8 donne 9 faux
@@ -856,6 +859,24 @@ def main() -> int:
         if fam is not None and fam not in familles:
             hard.append(f"R14 — {path}: `famille: {fam}` hors énumération fermée "
                         f"{sorted(familles)} (cf. taxonomie.md, bloc ```famille)")
+
+        # 3a bis. R14b (SOUPLE) — l'ABSENCE de `famille:`, posée au lot 8.
+        # Le lot 6 proposait de rendre le champ REQUIS, « correctif d'une ligne » —
+        # et c'en est un : une seule brique sur 337 ne le porte pas. Mais ce serait
+        # contredire une décision écrite de la taxonomie, qui dit noir sur blanc que
+        # `check_brain` « accepte un champ vide : c'est le seul signal prévu pour
+        # "l'arbre n'a pas tranché, à arbitrer". Une famille inventée est une faute,
+        # un champ vide est une question ouverte. » Exiger le champ supprimerait le
+        # seul moyen qu'a le vault de dire qu'il ne sait pas, et pousserait à
+        # inventer une valeur — ce que la même page interdit.
+        # Ce qu'il fallait corriger n'était donc pas la permissivité, c'était le
+        # SILENCE : une brique sans `famille:` échappait à R14 sans que rien ne le
+        # dise, et perdait deux colonnes de bandeau sur quatre. Elle le dit
+        # maintenant. Mesure du 2026-09-06 : 1 brique, `Outils de développement/Obsidian.md`.
+        if typ == "brique" and "famille" not in fm:
+            warn.append(f"R14b — {path} : aucune `famille:` — l'arbre de décision de "
+                        "taxonomie.md n'a pas tranché, ou n'a pas été déroulé "
+                        "(deux colonnes de bandeau perdues sur quatre)")
 
         # 3b. R4 — domaines ⊆ vocabulaire de themes.md
         for dom in fm.get("domaines") or []:

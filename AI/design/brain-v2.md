@@ -4,11 +4,27 @@ nom: brain-v2
 type: design-doc
 created: 2026-06-03
 modified: 2026-06-03
-status: en-discussion
+status: supersede-par-v3
 tags: [meta, design, v2]
 ---
 
 # DevBrain v2 — Spec de reconstruction
+
+> [!warning] **Ce document est SUPERSÉDÉ par [[AI/design/brain-v3|brain-v3]] depuis le
+> 2026-09-06.** La v3 est en place : les 764 pages vivent dans l'arbre des 20 domaines,
+> `role:` a remplacé `galaxie:` et `type:`, `Dev/`, `Wiki/` et `MOC/` n'existent plus.
+> **Sur tout ce que les deux documents décrivent, c'est la v3 qui fait foi**, et en
+> particulier tout ce qui parle de dossiers, de galaxies ou de `type:` ci-dessous est
+> périmé — lire `brain-v3.md` §2, §3 et §10.
+>
+> **Ce document n'est pas à supprimer**, et c'est écrit dans le pilote du lot 8 : il porte
+> les arbitrages de la v2 qui restent vrais et que la v3 reconduit sans les réexpliquer —
+> les deux axes `categorie:` × `famille:` avec leurs arbres de décision déterministes
+> (§5.2, §6), et la convention de réinjection du pitch, dont la v3 fait sa règle 6.
+>
+> Le « statut : en discussion » ci-dessous et les sections 🟡 sont **historiques**. Plus
+> rien n'y est à trancher : ce qui restait ouvert a été tranché par la v3 ou par ses huit
+> lots de migration, et les décisions sont datées dans `brain-v3.md` §14.
 
 > Document de conception vivant. On co-écrit ici la cible **avant** tout code.
 > Quand la spec est validée, on reconstruit le vault et on remigre le contenu v1.
