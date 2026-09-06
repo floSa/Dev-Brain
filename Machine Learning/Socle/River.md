@@ -35,7 +35,7 @@ L'apprentissage **en ligne** en Python : les modèles apprennent **un échantill
 |---|---|
 | Flux de données continus : arrivée en temps réel, volume au-delà de la RAM, ou séries non stationnaires | Jeu de données **statique** qui tient en mémoire → [[Scikit-Learn]] : plus de modèles, et plus rapide hors ligne |
 | Modèles qui s'adaptent à la dérive sans ré-entraînement batch : détecteurs ADWIN, Page-Hinkley, DDM | Deep learning sur GPU → [[PyTorch]] ou [[Keras]] |
-| Apprentissage incrémental à faible empreinte mémoire : un seul échantillon à la fois | Entraînement distribué multi-nœuds sur flux → Spark Structured Streaming et MLlib, hors brain |
+| Apprentissage incrémental à faible empreinte mémoire : un seul échantillon à la fois | Entraînement distribué multi-nœuds sur flux → [[Spark]], Structured Streaming et MLlib |
 | Prototyper un pipeline streaming : prétraitement online, métriques progressives (`progressive_val_score`) | |
 
 ## Mise en œuvre
@@ -50,7 +50,7 @@ L'apprentissage **en ligne** en Python : les modèles apprennent **un échantill
 
 ### Alternatives
 
-- Pas d'équivalent direct dans le brain : scikit-learn en est le pendant **batch**, avec quelques estimateurs à `partial_fit` pour de l'incrémental limité. Hors brain — Vowpal Wabbit (online learning haute performance) et Spark Streaming MLlib (flux distribué).
+- Pas d'équivalent direct dans le brain : scikit-learn en est le pendant **batch**, avec quelques estimateurs à `partial_fit` pour de l'incrémental limité. Côté flux distribué, [[Spark]] Structured Streaming et MLlib. Hors brain — Vowpal Wabbit (online learning haute performance).
 
 ## Ressources
 

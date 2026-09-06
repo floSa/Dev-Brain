@@ -64,7 +64,7 @@ maintenance.
 
 ### Compléments
 
-- [[mcpjam]] — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — pour exécuter les outils du serveur à la main et lire le JSON-RPC brut.
+- [[mcpjam]] — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM — pour exécuter les outils du serveur à la main et lire le JSON-RPC brut.
 
 ## Ressources
 

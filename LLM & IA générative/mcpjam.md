@@ -63,7 +63,7 @@ OAuth, un cadre d'**évals** et un CLI/SDK pour la CI.
 
 ### Compléments
 
-- [[fastmcp]] — La façon rapide et pythonique de construire des serveurs (et clients) MCP — les serveurs qu'il inspecte le plus souvent.
+- [[fastmcp]] — La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma — les serveurs qu'il inspecte le plus souvent.
 
 ## Ressources
 
