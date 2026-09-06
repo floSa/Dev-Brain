@@ -17,44 +17,56 @@ url_repo: https://github.com/gradio-app/gradio
 
 # Gradio
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
-Framework de **démos de modèles ML** édité par **Hugging Face** (acquisition de Gradio en 2021). On enveloppe une fonction Python dans une `Interface` (ou un `Blocks` pour des layouts custom) : Gradio mappe ses arguments et son retour sur des **composants d'entrée/sortie** (image, audio, texte, chat…) et génère une web app. **File d'attente** et **streaming** intégrés pour gérer la concurrence et les sorties token par token (chatbots). Licence **Apache-2.0**. C'est le SDK de référence pour publier une démo sur **Hugging Face Spaces**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Exposer un modèle (classif, génération, ASR/TTS, vision, LLM) en interface cliquable, vite.
-- Partager une démo publique sans infra : `share=True` (tunnel temporaire) ou Hugging Face Spaces.
-- Interfaces de chat / streaming pour modèles génératifs (composant `ChatInterface`).
+Framework de démos de modèles ML édité par **Hugging Face**. Il ne part pas d'une application
+mais d'une **fonction** : on l'enveloppe dans une `Interface` — ou dans un `Blocks` pour un
+layout sur mesure — et Gradio mappe ses arguments et son retour sur des composants d'entrée et
+de sortie typés : image, audio, texte, chat. La conséquence pratique est qu'un modèle devient
+cliquable sans qu'on écrive d'interface. Deux mécanismes viennent avec, et ils comptent autant
+que le mapping : une **file d'attente** pour absorber la concurrence, et le **streaming** pour
+les sorties token par token des modèles génératifs. C'est le SDK de référence de Hugging Face
+Spaces.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- App data généraliste / dashboard analytique, au-delà de la démo modèle → [[Streamlit]] ou [[Dash]].
-- Dashboard multi-pages à interdépendances fines → [[Dash]] / [[Shiny for Python]].
-- Besoin d'un modèle réactif fin pour une app complexe → [[Shiny for Python]].
+| Prendre si | Écarter si |
+|---|---|
+| Exposer un modèle — classification, génération, ASR/TTS, vision, LLM — en interface cliquable, vite | Pensé pour la **démo** : en retrait dès qu'il faut un dashboard riche à plusieurs vues |
+| Partager une démo publique sans infra : `share=True`, ou Hugging Face Spaces | Le lien `share=True` est un tunnel **temporaire**, quelques heures — ce n'est pas un hébergement |
+| Interface de chat ou de streaming pour un modèle génératif (`ChatInterface`) | Surface d'API mouvante entre versions majeures — la 5 date de 2024, la ligne courante est la 6.x : épingler la version |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite. Lancement : `gradio app.py` ou `demo.launch()`.
-- Managé : **Hugging Face Spaces** (SDK `gradio`, hébergement gratuit ou payant selon le hardware).
-- Self-host : app ASGI (montable dans FastAPI), conteneurisable ; `share=True` ouvre un tunnel public temporaire.
-- **Single-node** par app ; file d'attente intégrée pour la concurrence ; scale par réplication / Spaces.
+- Installation — `uv add gradio`
+- Point d'entrée — `gradio app.py`, ou `demo.launch()` depuis le script
+- Prérequis — une fonction Python dont les entrées et sorties se mappent sur des composants
+- Exécution — application ASGI, montable dans un FastAPI et conteneurisable ; mono-nœud par app, avec la file d'attente intégrée pour la concurrence et la réplication pour l'échelle. Managé par **Hugging Face Spaces** (SDK `gradio`)
+- Coût — gratuit, Apache-2.0 ; Spaces est gratuit ou payant selon le matériel demandé
 
-## Pièges
+## Écosystème
 
-- Pensé pour la démo : moins adapté qu'une vraie app data à des dashboards riches multi-vues.
-- Le lien `share=True` est temporaire (quelques heures) — pas un hébergement pérenne.
-- Surface d'API mouvante entre versions majeures (la 5 date de 2024, la ligne actuelle est la 6.x) : épingler la version.
-
-## Alternatives
+### Alternatives
 
 - [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
 - [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 - [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 
-## Liens
+## Ressources
 
-- [[Comparatif - Apps data & démos ML]] — Gradio vs Streamlit / Dash / Shiny.
-- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Streamlit, Dash.
-- SDK de référence pour Hugging Face Spaces.
-- Doc : https://gradio.app/docs
+- Documentation — https://gradio.app/docs
+- Dépôt — https://github.com/gradio-app/gradio
+
+## Voir aussi
+
+- [[Interfaces & apps data]] — le hub du domaine
+- [[Comparatif - Apps data & démos ML]] — ce qui départage les quatre frameworks du dossier
+- [[Comparatif - Frontends web légers]] — le même choix élargi à l'option à la main, FastAPI + HTMX

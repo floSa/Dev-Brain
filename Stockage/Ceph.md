@@ -19,37 +19,46 @@ url_repo: https://github.com/ceph/ceph
 
 # Ceph
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
 
-Plateforme de stockage distribué **unifiée** : un même cluster expose du stockage **objet** (API S3 et Swift via le démon RADOS Gateway), **bloc** (RBD) et **fichier** (CephFS), au-dessus de la couche **RADOS** qui réplique et auto-répare les données sans point de défaillance unique. Conçu pour l'échelle massive (péta- à exaoctet) sur matériel standard. L'API S3 arrive via **radosgw** : c'est le moyen d'avoir du S3 auto-hébergé quand on veut *aussi* du bloc et du fichier sur la même infra. Maintenu par la Ceph Foundation (Linux Foundation), longtemps porté par Red Hat puis IBM.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Stockage **unifié** objet + bloc + fichier sur un seul cluster (souvent couplé à OpenStack, Proxmox ou Kubernetes via Rook).
-- Très grande échelle, tolérance aux pannes disque/nœud sans RAID, auto-réparation et rééquilibrage.
-- Infra souveraine / sur site où le stockage est un socle partagé entre plusieurs charges.
-- Équipe ops capable d'opérer un système distribué complexe.
+Plateforme de stockage distribué **unifiée** : un même cluster expose de l'**objet** (API S3 et
+Swift par le démon RADOS Gateway), du **bloc** (RBD) et du **fichier** (CephFS), au-dessus de la
+couche **RADOS** qui réplique et auto-répare les données sans point de défaillance unique. Elle
+est conçue pour l'échelle massive — du péta à l'exaoctet — sur du matériel standard, et se
+passe de RAID : la tolérance aux pannes de disque et de nœud est portée par le placement des
+objets. L'API S3 n'est donc pas le produit mais une façade parmi trois, ce qui est tout
+l'argument : c'est le moyen d'avoir du S3 auto-hébergé quand on veut *aussi* du bloc et du
+fichier sur la même infra. Portée par la Ceph Foundation, longtemps chez Red Hat puis IBM.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Juste besoin d'un endpoint S3 simple → [[MinIO]] ou [[Garage]] (bien plus légers).
-- Pas d'équipe ops dédiée : Ceph est réputé lourd à déployer et à tuner.
-- Charge mono-nœud ou petit volume : surdimensionné → [[SeaweedFS]] ou le managé [[AWS S3]].
+| Prendre si | Écarter si |
+|---|---|
+| Stockage unifié objet + bloc + fichier sur un seul cluster (OpenStack, Proxmox, Kubernetes par Rook) | Il ne faut qu'un endpoint S3 simple : le minimum viable est déjà de plusieurs nœuds → [[MinIO]], [[Garage]] |
+| Très grande échelle, tolérance aux pannes sans RAID, auto-réparation et rééquilibrage | Pas d'équipe ops dédiée : MON/OSD/PG, rééquilibrage et tuning fin ont une réputation de difficulté méritée |
+| Infra souveraine ou sur site où le stockage est un socle partagé entre plusieurs charges | Charge mono-nœud ou petit volume : surdimensionné → [[SeaweedFS]], ou le managé [[AWS S3]] |
+| | La performance de radosgw se règle sur gros volumes d'objets — le sharding de l'index de bucket en particulier |
+| | Récupération après panne longue si le cluster est sous-dimensionné en capacité ou en réseau |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- 100 % open-source (**LGPL-2.1 / LGPL-3.0**), self-host gratuit ; déploiement via cephadm, Rook (K8s) ou distributions (Proxmox, IBM/Red Hat Ceph Storage pour l'offre commerciale).
-- Coût = matériel + exploitation ; pas de licence pour le cœur. Support commercial via IBM/Red Hat.
-- Scaling horizontal en ajoutant des OSD/nœuds ; viser plusieurs nœuds et un réseau rapide dès le départ.
+- Installation — cephadm, Rook pour Kubernetes, ou une distribution qui l'embarque (Proxmox, IBM/Red Hat Ceph Storage)
+- Point d'entrée — trois façades au choix : API S3/Swift par radosgw, bloc par RBD, fichier par CephFS
+- Prérequis — plusieurs nœuds et un réseau rapide dès le départ ; une équipe capable d'opérer un système distribué
+- Exécution — self-hébergé, distribué : scaling horizontal par ajout d'OSD et de nœuds
+- Coût — gratuit, LGPL-2.1 / LGPL-3.0 pour le cœur ; le coût réel est le matériel et l'exploitation. Support commercial par IBM/Red Hat
 
-## Pièges
+## Écosystème
 
-- Courbe d'apprentissage et exploitation **réputées difficiles** : MON/OSD/PG, rééquilibrage, tuning fin.
-- Surdimensionné pour un simple besoin S3 ; minimum viable = plusieurs nœuds.
-- Performance de radosgw à régler sur gros volumes d'objets (sharding de l'index de bucket notamment).
-- Récupération après panne longue si le cluster est sous-dimensionné en capacité ou en réseau.
-
-## Alternatives
+### Alternatives
 
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.
 - [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
@@ -57,8 +66,11 @@ Plateforme de stockage distribué **unifiée** : un même cluster expose du stoc
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
-## Liens
+## Ressources
 
-- [[MinIO]] — endpoint S3 simple quand le bloc/fichier n'est pas requis
-- [[AWS S3]] — la référence S3 dont radosgw réimplémente l'API
-- Doc : https://docs.ceph.com/
+- Documentation — https://docs.ceph.com/
+- Dépôt — https://github.com/ceph/ceph
+
+## Voir aussi
+
+- [[Stockage]] — le hub du domaine

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: JavaScript
 alternatives: []
-complements: []
+complements: ["[[Jinja2]]", "[[FastAPI]]"]
 tags: [hypermedia]
 url_docs: https://htmx.org/
 url_repo: https://github.com/bigskysoftware/htmx
@@ -17,39 +17,60 @@ url_repo: https://github.com/bigskysoftware/htmx
 
 # HTMX
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd.
 
-Petite bibliothèque JavaScript (sans dépendance) qui étend le HTML : des attributs (`hx-get`, `hx-post`, `hx-target`, `hx-swap`) déclenchent des requêtes HTTP et **remplacent un fragment de page par le HTML renvoyé** par le serveur. L'interactivité d'une SPA — chargement partiel, formulaires asynchrones, pagination, polling — sans écrire de JavaScript ni gérer un état client. Concrétise l'approche *hypermedia* (HTML comme moteur d'état applicatif) : le serveur reste la source de vérité et renvoie de l'HTML, pas du JSON. Écrit par Carson Gross, successeur d'intercooler.js. Licence 0BSD (domaine public de fait).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie JavaScript | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- App rendue côté serveur ([[FastAPI]], [[Flask]], Django) à qui l'on veut ajouter de l'interactivité sans pipeline JS.
-- Équipe back-end qui préfère renvoyer de l'HTML (via [[Jinja2]]) plutôt que maintenir un front JSON + framework JS séparé.
-- CRUD, dashboards internes, formulaires dynamiques où l'état vit côté serveur.
+Petite bibliothèque JavaScript sans dépendance qui étend le HTML : des attributs — `hx-get`,
+`hx-post`, `hx-target`, `hx-swap` — déclenchent une requête HTTP et **remplacent un fragment de
+page par le HTML renvoyé** par le serveur. On obtient le chargement partiel, les formulaires
+asynchrones, la pagination et le polling sans écrire de JavaScript ni gérer d'état côté client.
+C'est l'approche *hypermedia* prise au mot : le serveur reste la source de vérité et renvoie de
+l'HTML, pas du JSON. Écrit par Carson Gross, successeur d'intercooler.js ; la v2 est la ligne
+stable, une v4 est en développement.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- UI à fort état client, hors-ligne, temps réel complexe, animations riches → framework SPA (React, Vue, Svelte — hors brain).
-- Application sans rendu HTML serveur (API pure consommée par un client natif).
+| Prendre si | Écarter si |
+|---|---|
+| Ajouter de l'interactivité à une app déjà rendue côté serveur, sans pipeline JS | Chaque interaction est un aller-retour réseau : la **latence se ressent**, à mitiger par des fragments ciblés |
+| Équipe back-end qui préfère renvoyer de l'HTML plutôt que maintenir un front JSON séparé | Le serveur doit savoir rendre des **fragments** distincts des pages complètes — discipline de templating à tenir |
+| CRUD, dashboards internes, formulaires dynamiques où l'état vit côté serveur | UI à fort état client, hors-ligne, temps réel complexe, animations riches : frameworks SPA (React, Vue, Svelte), non fichés ici |
+| | Application sans rendu HTML serveur — une API pure consommée par un client natif n'a rien à échanger avec HTMX |
+| | Pousse à loger de la logique d'UI dans des attributs HTML peu testables si l'on en abuse |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Un seul fichier JS chargé depuis un CDN ou servi en statique ; open-source (0BSD), gratuit. Aucune build step requise.
-- Pas de service à héberger : s'exécute dans le navigateur, suit le déploiement du serveur HTML. La v2 est la ligne stable ; une v4 est en développement.
+- Installation — un seul fichier JS, chargé depuis un CDN ou servi en statique ; aucune étape de build
+- Point d'entrée — des attributs `hx-*` posés directement dans le balisage
+- Prérequis — un serveur capable de renvoyer des fragments HTML ; rien côté client
+- Exécution — dans le navigateur ; suit le déploiement du serveur HTML, il n'y a pas de service à héberger
+- Coût — gratuit, 0BSD, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- L'interactivité reposant sur des allers-retours serveur, la **latence réseau** se ressent sur chaque interaction (mitiger par fragments ciblés, pas de full-page).
-- Le serveur doit savoir renvoyer des **fragments** HTML partiels distincts des pages complètes — discipline de templating à tenir.
-- Peut pousser à mettre de la logique d'UI dans des attributs HTML peu testables si l'on en abuse.
+### Alternatives
 
-## Alternatives
+<!-- Aucune : les frameworks SPA (React, Vue, Svelte) ne sont pas fichés dans le brain. -->
 
-<!-- Pas d'alternative dans le brain : les frameworks SPA (React, Vue, Svelte) ne sont pas documentés. -->
+### Compléments
 
-## Liens
+- [[Jinja2]] — Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask. — rend les fragments que HTMX vient injecter ; c'est la paire usuelle côté Python
+- [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — le backend qui sert ces fragments ; le comparatif du dossier traite « FastAPI + HTMX » comme un couple, pas comme deux concurrents
 
-- [[Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
-- [[Jinja2]] — rend les fragments HTML que HTMX vient injecter (paire usuelle)
-- [[FastAPI]] / [[Flask]] — serveurs HTML côté back
-- Doc : https://htmx.org/
+## Ressources
+
+- Documentation — https://htmx.org/
+- Dépôt — https://github.com/bigskysoftware/htmx
+
+## Voir aussi
+
+- [[Web & API]] — le hub du domaine
+- [[Comparatif - Frontends web légers]] — ce qui départage FastAPI + HTMX de Streamlit, Gradio et Dash
+- [[Flask]] — l'autre serveur HTML du dossier, côté WSGI

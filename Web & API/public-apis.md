@@ -18,44 +18,54 @@ url_repo: https://github.com/public-apis/public-apis
 
 # public-apis
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.
 
-**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un client d'API. C'est un annuaire de liens — un unique `README.md`. C'est ce que dit son `famille: annuaire` : rien ne s'installe, rien ne se déploie, il n'y a pas de version à suivre. Ne pas le lire comme une brique choisissable. Son `categorie: tooling/api` porte le **sujet listé** (des API), pas sa nature — d'où le voisinage de [[Postman]] et [[Bruno]], qui sont des clients d'API sur le même domaine et d'une autre famille.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Annuaire | open-source | rien à exécuter | — |
+<!-- AUTO:BANDEAU:END -->
 
-Cela dit, c'est l'annuaire de référence : de l'ordre de **1 700 entrées** réparties en **52 catégories** (météo, finance, jeux vidéo, musique, transports, données ouvertes…), avec pour chacune l'authentification requise, le support HTTPS et le CORS. Maintenu depuis 2016 sous licence MIT.
+## Définition
 
-Utilité concrète : trouver une source de données réelle pour un prototype, une démo, un jeu de test ou un exercice, sans monter un backend.
+**Nature de cette page, à lire en premier** : ce n'est ni un logiciel, ni un service, ni un
+client d'API. C'est un annuaire de liens — un unique `README.md`. Rien ne s'installe, rien ne
+se déploie, il n'y a pas de version à suivre. Ne pas le lire comme une brique choisissable.
+Ce qu'il contient : de l'ordre de **1 700 entrées** réparties en **52 catégories** — météo,
+finance, jeux vidéo, musique, transports, données ouvertes — chacune annotée de
+l'authentification requise, du support HTTPS et du CORS. Maintenu depuis 2016. L'usage concret
+est de trouver une source de données réelle pour un prototype, une démo, un jeu de test ou un
+exercice, sans monter de backend.
 
-## Quand l'utiliser
+## Prendre si / Écarter si
 
-- Chercher une API gratuite pour alimenter un prototype ou une démo.
-- Trouver un jeu de données vivant pour tester un pipeline d'ingestion ou une interface.
-- Repérer, dans un domaine donné, quels fournisseurs exposent une API publique.
+| Prendre si | Écarter si |
+|---|---|
+| Chercher une API gratuite pour alimenter un prototype ou une démo | Choisir une API pour de la **production** : rien ne garantit la disponibilité, les quotas ni la pérennité des entrées listées |
+| Trouver un jeu de données vivant pour tester un pipeline d'ingestion ou une interface | Compter sur la fraîcheur : à cette échelle la liste contient des liens morts, et le backlog non trié est de l'ordre de 1 800 issues et autant de pull requests |
+| Repérer, dans un domaine donné, quels fournisseurs exposent une API publique | Chercher un outil pour **appeler** ces API : ce n'en est pas un → [[Bruno]], [[Postman]] |
+| | Consultation programmatique : ce sont des forks tiers qui offrent une API JSON et une recherche, pas le dépôt canonique |
+| | Le nombre d'entrées bouge à chaque *merge* — ne figer aucun chiffre exact |
 
-## Quand NE PAS l'utiliser
+## Mise en œuvre
 
-- Choisir une API pour de la production : rien ne garantit la disponibilité, les quotas ni la pérennité des entrées listées.
-- Compter sur la fraîcheur : à cette échelle, la liste contient forcément des liens morts, et le backlog de contributions non triées est de l'ordre de 1 800 issues et autant de pull requests.
-- Chercher un outil pour appeler ces APIs : ce n'en est pas un → [[Bruno]], [[Postman]].
+- Installation — aucune : une page GitHub, lisible en ligne ou clonée
+- Point d'entrée — le `README.md` du dépôt
+- Prérequis — aucun
+- Exécution — rien à exécuter
+- Coût — gratuit, MIT
 
-## Installation & plateformes
+## Écosystème
 
-Aucune installation : une page GitHub, lisible en ligne ou clonée. Pas de langage applicatif, pas de plateforme.
+### Alternatives
 
-## Pièges
+<!-- Aucune : un annuaire de liens n'a pas d'équivalent fiché dans le brain, et un client d'API n'en est pas un substitut. -->
 
-- **L'ancienne API communautaire `api.publicapis.org` n'est plus mise en avant** par le dépôt. Le champ `homepage` pointe désormais vers APILayer.com, avec des paramètres UTM de sponsoring : le lien « API officielle » a été remplacé par un lien commercial.
-- Pour une consultation programmatique, ce sont des forks tiers qui proposent une API JSON et une recherche (`public-api-lists/public-api-lists`, `marcelscruz/public-apis`) — pas le dépôt canonique.
-- Le nombre d'entrées bouge à chaque merge : ne pas figer un chiffre exact.
-- **Aucun tag du vocabulaire fermé ne décrit honnêtement un annuaire de ressources** — la page est volontairement sans tag plutôt qu'étiquetée `api-client`, ce qui serait faux.
-- Effet de bord assumé : `[[Comparatif - Clients d'API]]` filtre sur `categorie == "tooling/api"`, donc cette page y apparaîtra alors qu'elle n'est pas un client.
+## Ressources
 
-## Alternatives
+- Dépôt — https://github.com/public-apis/public-apis
+- Documentation — le `README.md` du dépôt ; il n'existe pas de site séparé
 
-- Aucune. Un annuaire de liens n'a pas d'équivalent fiché dans le brain, et les clients d'API n'en sont pas des substituts.
+## Voir aussi
 
-## Liens
-
-- [[Bruno]] — avec quoi appeler ce qu'on y trouve, en local et versionné
-- [[Postman]] — l'équivalent cloud et collaboratif
-- Repo : https://github.com/public-apis/public-apis
+- [[Web & API]] — le hub du domaine

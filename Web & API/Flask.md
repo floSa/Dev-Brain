@@ -17,39 +17,55 @@ url_repo: https://github.com/pallets/flask
 
 # Flask
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
 
-Micro-framework web Python **synchrone (WSGI)**. « Micro » ne veut pas dire limité : le cœur est volontairement réduit (routage et utilitaires HTTP via **Werkzeug**, templates via **Jinja2**), et tout le reste — ORM, formulaires, authentification, admin — s'ajoute à la carte par **extensions** (Flask-SQLAlchemy, Flask-Login…). On garde le contrôle de l'architecture, sans conventions imposées. Maintenu par l'organisation **Pallets** (créé en 2010 par Armin Ronacher), licence BSD-3-Clause. Très stable : version 3.1.x (3.1.3, févr. 2026), et de loin le framework web Python le plus téléchargé (~70 M/mois). Des vues `async` sont possibles depuis la 2.0, mais le modèle d'exécution reste WSGI synchrone.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Petite ou moyenne app web, microservice, prototype : démarrage immédiat, peu de cérémonie.
-- Besoin de **contrôle** sur la structure et les briques (choisir son ORM, sa validation) plutôt qu'un cadre imposé.
-- Rendu de pages côté serveur (Jinja2) autant qu'API JSON.
-- Écosystème d'extensions mûr et abondant déjà connu de l'équipe.
+Micro-framework web Python **synchrone (WSGI)**. « Micro » ne dit pas limité : le cœur est
+volontairement réduit — routage et utilitaires HTTP par **Werkzeug**, gabarits par
+**Jinja2** — et tout le reste (ORM, formulaires, authentification, admin) s'ajoute à la carte
+par **extensions** (Flask-SQLAlchemy, Flask-Login…). On garde donc le contrôle de
+l'architecture, sans convention imposée, et on paie ce contrôle en décisions à prendre. Des
+vues `async` existent depuis la 2.0, mais le modèle d'exécution reste WSGI synchrone : une vue
+occupe un worker du début à la fin. Maintenu par l'organisation **Pallets** (créé en 2010 par
+Armin Ronacher), ligne 3.1.x, et de loin le framework web Python le plus téléchargé.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- API JSON typée, fort I/O async (BDD async, appels LLM) avec doc OpenAPI automatique → [[FastAPI]].
-- Besoin d'un framework « batteries incluses » (ORM, admin, auth intégrés) → Django.
-- Charge fortement concurrente I/O-bound où l'async natif change la donne → pile ASGI.
+| Prendre si | Écarter si |
+|---|---|
+| Petite ou moyenne app web, microservice, prototype : démarrage immédiat, peu de cérémonie | API JSON typée, fort I/O async, doc OpenAPI automatique → [[FastAPI]] |
+| Vouloir choisir soi-même ses briques (ORM, validation) plutôt qu'un cadre imposé | Modèle synchrone : une vue qui bloque sur de l'I/O monopolise un worker — dimensionner les workers, ne pas compter sur `async` |
+| Rendre des pages côté serveur (Jinja2) autant que servir du JSON | Le serveur de développement (`flask run`) est mono-thread par défaut et inadapté à la production |
+| Écosystème d'extensions mûr, déjà connu de l'équipe | Besoin d'un cadre « batteries incluses » — admin, ORM, auth intégrés : Django, non fiché ici |
+| | « Micro » laisse les choix à l'intégrateur : sans discipline, extensions et patterns divergent d'un projet à l'autre |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (BSD-3-Clause), gratuite. Le serveur de dev intégré n'est **pas** pour la production : servir via un serveur WSGI (Gunicorn, uWSGI, waitress), souvent derrière Nginx ou en conteneur.
-- Sans état : montée en charge par **workers** (processus/threads d'un serveur WSGI) et plusieurs instances derrière un load balancer → scaling single-node par réplication.
+- Installation — `uv add flask`
+- Point d'entrée — import Python, `from flask import Flask` ; l'objet obtenu est une application WSGI
+- Prérequis — Werkzeug et Jinja2, tirés comme dépendances ; rien d'autre n'est imposé
+- Exécution — un serveur WSGI de production (Gunicorn, uWSGI, waitress), souvent derrière Nginx ou en conteneur ; montée en charge par workers puis par réplication
+- Coût — gratuit, BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Le serveur de développement (`flask run`) est mono-thread par défaut et inadapté à la prod — oubli classique.
-- Modèle **synchrone** : une vue qui bloque sur de l'I/O monopolise un worker ; dimensionner les workers, ne pas compter sur l'`async` comme sur une pile ASGI.
-- « Micro » = beaucoup de choix laissés à l'intégrateur : sans discipline, les extensions et patterns divergent d'un projet à l'autre.
-
-## Alternatives
+### Alternatives
 
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
 
-## Liens
+## Ressources
 
-- [[FastAPI]] — l'alternative async/API-first la plus directe
-- Doc : https://flask.palletsprojects.com
+- Documentation — https://flask.palletsprojects.com
+- Dépôt — https://github.com/pallets/flask
+
+## Voir aussi
+
+- [[Web & API]] — le hub du domaine
+- [[Jinja2]] — le moteur de gabarits que Flask embarque par défaut

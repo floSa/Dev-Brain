@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[FastAPI]]"]
 tags: [web-framework]
 url_docs: https://uvicorn.dev
 url_repo: https://github.com/Kludex/uvicorn
@@ -17,37 +17,57 @@ url_repo: https://github.com/Kludex/uvicorn
 
 # Uvicorn
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI.
 
-Serveur **ASGI** pour Python : il exécute les applications web asynchrones ([[FastAPI]], Starlette, Django ASGI…) en parlant HTTP/1.1 et WebSockets. Implémentation rapide grâce à `uvloop` (event loop) et `httptools` (parsing HTTP), tous deux optionnels. Brique d'exécution standard de l'écosystème async Python. Maintenu par Marcelo Trylesinski (Kludex) — le projet a quitté l'organisation `encode` pour `Kludex/uvicorn`, docs sur `uvicorn.dev`.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Servir une app ASGI ([[FastAPI]], Starlette) en dev (`--reload`) comme en prod.
-- Besoin d'un serveur léger et rapide pour des charges I/O-bound asynchrones.
-- En prod, souvent supervisé par Gunicorn (workers) ou en conteneur derrière un reverse proxy.
+Serveur **ASGI** pour Python : il parle HTTP/1.1 et WebSockets, et exécute les applications web
+asynchrones — FastAPI, Starlette, Django en mode ASGI. Sa vitesse vient de deux dépendances
+optionnelles, `uvloop` pour la boucle d'événements et `httptools` pour l'analyse HTTP, réunies
+sous l'extra `standard`. C'est la brique d'exécution standard de l'écosystème async Python : le
+framework décrit les routes, Uvicorn les sert. Il ne fait volontairement rien d'autre — ni TLS,
+ni routage L7, ni supervision multi-processus avancée. Maintenu par Marcelo Trylesinski
+(Kludex), le projet ayant quitté l'organisation `encode` pour `Kludex/uvicorn`.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- App WSGI synchrone (Flask / Django classiques) → serveur WSGI (Gunicorn seul, uWSGI).
-- Terminaison TLS, routage L7, fichiers statiques → déléguer à un reverse proxy (Nginx, Traefik) devant Uvicorn.
+| Prendre si | Écarter si |
+|---|---|
+| Servir une application ASGI en développement (`--reload`) comme en production | Application WSGI synchrone (Flask, Django classique) : il faut un serveur WSGI, Gunicorn seul ou uWSGI |
+| Charge I/O-bound asynchrone où un serveur léger et rapide suffit | Terminaison TLS, routage L7, fichiers statiques : à déléguer à un reverse proxy (Nginx, Traefik) placé devant |
+| Accepter de superviser les workers par Gunicorn ou par le conteneur | Pas de supervision multi-processus avancée native : un processus = un nœud, le reste se réplique |
+| | `uvloop` n'est pas disponible sous **Windows** — la boucle asyncio standard prend le relais, sans le gain de vitesse |
+| | L'install minimale est nettement plus lente que `uvicorn[standard]` : oublier l'extra coûte des performances sans le dire |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (BSD-3-Clause), gratuite ; installée avec l'app (`uvicorn[standard]` pour uvloop/httptools).
-- Un processus = single-node ; montée en charge via plusieurs workers/instances. Pas de supervision multi-process avancée native → Gunicorn pour gérer les workers.
+- Installation — `uv add "uvicorn[standard]"` ; l'extra tire `uvloop` et `httptools`
+- Point d'entrée — la commande `uvicorn module:app`, ou l'API Python `uvicorn.run()`
+- Prérequis — une application ASGI ; `uvloop` exige un système POSIX
+- Exécution — un processus par instance, en local ou en conteneur ; montée en charge par workers Gunicorn ou par réplication, derrière un reverse proxy
+- Coût — gratuit, BSD-3-Clause, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- `uvicorn[standard]` (uvloop/httptools) est nettement plus rapide que l'install minimale — penser à l'extra.
-- `uvloop` n'est pas disponible sous Windows : event loop asyncio standard par défaut.
-- Repo et docs déplacés (`encode` → `Kludex`, `uvicorn.dev`) : d'anciens liens pointent encore vers `encode/uvicorn` / `uvicorn.org`.
+### Alternatives
 
-## Alternatives
+<!-- Aucune : aucun autre serveur ASGI n'est fiché dans le brain. FastAPI est le framework compagnon, pas un substitut. -->
 
-<!-- Pas d'autre serveur ASGI en brain. FastAPI est le framework compagnon, pas une alternative. -->
+### Compléments
 
-## Liens
+- [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — l'application que ce serveur exécute ; c'est le couple par défaut de l'écosystème async Python
 
-- [[FastAPI]] — framework ASGI typiquement servi par Uvicorn
-- Doc : https://uvicorn.dev
+## Ressources
+
+- Documentation — https://uvicorn.dev
+- Dépôt — https://github.com/Kludex/uvicorn
+
+## Voir aussi
+
+- [[Web & API]] — le hub du domaine

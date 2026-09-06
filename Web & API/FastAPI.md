@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Flask]]"]
-complements: []
+complements: ["[[Uvicorn]]", "[[HTMX]]"]
 tags: [web-framework, type-hints]
 url_docs: https://fastapi.tiangolo.com
 url_repo: https://github.com/fastapi/fastapi
@@ -17,38 +17,59 @@ url_repo: https://github.com/fastapi/fastapi
 
 # FastAPI
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
 
-Framework web Python **asynchrone** centré sur les API. Bâti sur Starlette (couche ASGI / routage) et [[Pydantic]] (validation), il déduit des annotations de type la validation des entrées/sorties, la sérialisation et la **documentation OpenAPI** (Swagger UI / ReDoc). DX forte : autocomplétion, erreurs détectées tôt, peu de code répétitif. Créé par Sebastián Ramírez (tiangolo), très actif (0.13x en 2026).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Exposer une API REST/JSON typée, surtout en contexte I/O-bound (réseau, BDD async, services LLM).
-- Profiter de la doc OpenAPI automatique et de la validation Pydantic sans code répétitif.
-- Backend Python d'une app data/ML servant des modèles ou des pipelines.
+Framework web Python centré sur les **API**, bâti sur **Starlette** (couche ASGI, routage) et
+**Pydantic** (validation). Il déduit des annotations de type la validation des entrées et des
+sorties, la sérialisation et la **documentation OpenAPI** — Swagger UI et ReDoc sont servies
+sans une ligne de plus. Le modèle d'exécution est **asynchrone** : une route `async def` rend
+la main pendant ses I/O, ce qui est exactement le régime des appels réseau, des bases async et
+des services LLM. Il ne rend **aucune page** : c'est un backend d'API, la présentation se
+branche ailleurs. Créé par Sebastián Ramírez (tiangolo), ligne 0.13x en 2026.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- App surtout synchrone ou rendu de templates serveur classique → framework WSGI (Django, Flask).
-- Besoin d'un framework « batteries incluses » (admin, ORM, auth intégrés) → Django.
+| Prendre si | Écarter si |
+|---|---|
+| Exposer une API REST/JSON typée, surtout en contexte I/O-bound (réseau, base async, services LLM) | Une route déclarée `def` plutôt qu'`async def` qui fait de l'I/O bloque l'event loop sous charge |
+| Vouloir la doc OpenAPI et la validation Pydantic sans code répétitif | Rendu de templates serveur classique, ou application surtout synchrone → [[Flask]] |
+| Backend Python d'une app data/ML qui sert des modèles ou des pipelines | Besoin d'un cadre « batteries incluses » — admin, ORM, auth intégrés : Django, non fiché ici |
+| | Dépendance forte à Pydantic : la migration v1 → v2 a changé l'API de validation |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite. S'exécute derrière un serveur ASGI ([[Uvicorn]]), souvent supervisé par Gunicorn (workers) ou en conteneur.
-- Sans état : montée en charge horizontale (plusieurs instances derrière un load balancer) ou serverless ; scaling par processus → single-node.
+- Installation — `uv add fastapi`
+- Point d'entrée — import Python, `from fastapi import FastAPI` ; l'objet obtenu est une application ASGI
+- Prérequis — Pydantic (v2 pour la ligne courante) et un serveur ASGI pour exécuter l'application
+- Exécution — derrière Uvicorn, souvent supervisé par Gunicorn (workers) ou en conteneur ; sans état, donc réplicable horizontalement ou en serverless
+- Coût — gratuit, MIT, aucune limite d'usage
 
-## Pièges
+## Écosystème
 
-- Une route déclarée `def` (et non `async def`) qui fait de l'I/O bloque l'event loop sous charge → la basculer en `async def` ou la déporter dans un threadpool.
-- Dépendance forte à Pydantic : la migration Pydantic v1 → v2 a changé l'API de validation.
-
-## Alternatives
+### Alternatives
 
 - [[Flask]] — Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
 
-## Liens
+### Compléments
 
-- [[Comparatif - Frontends web légers]] — FastAPI+HTMX vs Streamlit / Gradio / Dash.
-- [[Uvicorn]] — serveur ASGI qui exécute l'application
-- [[Pydantic]] — validation des données dont FastAPI dépend
-- Doc : https://fastapi.tiangolo.com
+- [[Uvicorn]] — Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI. — la brique d'exécution, sans laquelle l'application ne tourne pas
+- [[HTMX]] — Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd. — la couche d'interactivité quand ce backend doit aussi servir des pages
+
+## Ressources
+
+- Documentation — https://fastapi.tiangolo.com
+- Dépôt — https://github.com/fastapi/fastapi
+
+## Voir aussi
+
+- [[Web & API]] — le hub du domaine
+- [[Comparatif - Frontends web légers]] — ce qui départage FastAPI + HTMX de Streamlit, Gradio et Dash
+- [[Pydantic]] — la validation dont FastAPI dérive tout son typage

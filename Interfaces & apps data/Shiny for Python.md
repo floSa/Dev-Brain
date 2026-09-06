@@ -17,42 +17,54 @@ url_repo: https://github.com/posit-dev/py-shiny
 
 # Shiny for Python
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 
-Port Python de **Shiny**, le framework d'apps réactives de **Posit** (ex-RStudio). Cœur du modèle : un **moteur de réactivité à dépendances fines** — `reactive.calc`, `reactive.effect`, et des outputs qui se recalculent **uniquement quand leurs entrées amont changent**. Ni re-run global du script (Streamlit) ni callbacks à câbler à la main (Dash) : le graphe de dépendances est déduit. Deux API : **Core** (UI/serveur séparés, contrôle fin) et **Express** (concis). Licence **MIT**.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- App data où le re-run global de Streamlit coûte trop cher : recalcul ciblé natif.
-- Dashboard structuré avec beaucoup d'interdépendances entre entrées et sorties.
-- Équipe déjà sous Shiny R, ou besoin d'une app **full-navigateur** sans serveur (Shinylive / WASM).
+Port Python de **Shiny**, le framework d'apps réactives de **Posit** (ex-RStudio). Son cœur est
+un moteur de réactivité à **dépendances fines** : avec `reactive.calc` et `reactive.effect`, un
+output ne se recalcule que quand ses entrées amont changent — et le graphe de dépendances est
+**déduit**, pas déclaré. C'est un troisième modèle, ni le re-run global d'un script, ni les
+callbacks écrits à la main : on obtient le recalcul ciblé sans câbler quoi que ce soit, en
+échange d'une notion — la réactivité — qu'il faut avoir comprise avant d'écrire. Deux API
+coexistent, **Core** (UI et serveur séparés, contrôle fin) et **Express** (concise).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Prototype ultra-rapide depuis un script, sans réfléchir à la réactivité → [[Streamlit]].
-- Écosystème graphes Plotly et tooling dashboard Plotly → [[Dash]].
-- Simple démo entrée→sortie d'un modèle ML → [[Gradio]].
+| Prendre si | Écarter si |
+|---|---|
+| App data où le re-run global coûte trop cher : le recalcul ciblé est natif | Courbe d'apprentissage de la réactivité — `@reactive.calc` contre `@reactive.effect`, dépendances implicites — plus raide que chez la concurrence |
+| Dashboard structuré avec beaucoup d'interdépendances entre entrées et sorties | Écosystème Python **plus jeune que la version R** : exemples et composants tiers moins nombreux |
+| Équipe déjà sous Shiny R, ou besoin d'une app full-navigateur sans serveur | **Shinylive** (WASM) ne charge que les paquets compatibles Pyodide : toutes les bibliothèques ne passent pas |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (MIT), gratuite. App **ASGI** servie par Uvicorn ; conteneurisable.
-- Managé : **Posit Connect** / **Connect Cloud** (gratuit), **shinyapps.io** ; déploiement possible sur Hugging Face Spaces.
-- **Single-node** : état réactif par session côté serveur ; scale par réplication.
-- Option **serverless / client-side** via **Shinylive** (exécution dans le navigateur par Pyodide/WASM, sans backend).
+- Installation — `uv add shiny`
+- Point d'entrée — deux API au choix, Core (UI et serveur séparés) ou Express (concise)
+- Prérequis — un script Python ; pour Shinylive, des dépendances compatibles Pyodide
+- Exécution — application ASGI servie par Uvicorn, conteneurisable ; mono-nœud, état réactif par session côté serveur, scaling par réplication. Option **serverless côté client** par Shinylive, qui exécute dans le navigateur via Pyodide, sans backend. Managé par **Posit Connect** / **Connect Cloud** (gratuit), **shinyapps.io**, ou Hugging Face Spaces
+- Coût — gratuit, MIT ; les offres managées de Posit sont l'option payante
 
-## Pièges
+## Écosystème
 
-- Courbe d'apprentissage de la réactivité (`@reactive.calc` vs `@reactive.effect`, dépendances implicites) plus raide que Streamlit.
-- Écosystème Python plus jeune que la version R : exemples et composants tiers moins nombreux.
-- Shinylive (WASM) ne charge que les paquets compatibles Pyodide — toutes les libs ne passent pas.
-
-## Alternatives
+### Alternatives
 
 - [[Streamlit]] — Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
 - [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 - [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Apps data & démos ML]] — Shiny vs Streamlit / Dash / Gradio.
-- Doc : https://shiny.posit.co/py/
+- Documentation — https://shiny.posit.co/py/
+- Dépôt — https://github.com/posit-dev/py-shiny
+
+## Voir aussi
+
+- [[Interfaces & apps data]] — le hub du domaine
+- [[Comparatif - Apps data & démos ML]] — ce qui départage les quatre frameworks du dossier

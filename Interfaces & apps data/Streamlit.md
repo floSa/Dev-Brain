@@ -17,44 +17,57 @@ url_repo: https://github.com/streamlit/streamlit
 
 # Streamlit
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
 
-Framework d'**apps data en Python pur** : on écrit un script linéaire, chaque widget (`st.slider`, `st.selectbox`…) renvoie sa valeur, et **tout le script se ré-exécute de haut en bas à chaque interaction**. Pas de HTML, de callbacks ni de gestion d'état explicite à écrire. Le coût du re-run global est maîtrisé par `@st.cache_data` / `@st.cache_resource` et `st.session_state`. Édité par **Snowflake** (rachat de Streamlit Inc. en 2022), licence **Apache-2.0**, très actif.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Transformer un script d'analyse ou un notebook en app partageable en quelques heures.
-- Outils internes, prototypes, dashboards exploratoires où la vitesse de développement prime.
-- Démo data/ML rapide quand on reste dans l'écosystème Python (pandas, plotly, modèles).
+Framework d'apps data en Python pur, bâti sur une seule idée : le script est linéaire, chaque
+widget (`st.slider`, `st.selectbox`…) renvoie sa valeur, et **tout le script se ré-exécute de
+haut en bas à chaque interaction**. Il n'y a donc ni HTML, ni callbacks, ni état explicite à
+écrire — le modèle mental tient en une phrase, et c'est ce qui permet de transformer un
+notebook en app partageable en quelques heures. Le coût de ce re-run global n'est pas éliminé,
+il est déplacé sur deux mécanismes que l'auteur doit poser lui-même, `@st.cache_data` /
+`@st.cache_resource` pour les calculs, `st.session_state` pour la mémoire. Édité par Snowflake
+depuis le rachat de Streamlit Inc. en 2022.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Dashboard analytique multi-pages à composants finement liés → [[Dash]].
-- Besoin de recalcul réactif ciblé (sans re-run global) sur app lourde → [[Shiny for Python]].
-- Démo d'un modèle ML centrée entrée→sortie, hébergée sur HF → [[Gradio]].
+| Prendre si | Écarter si |
+|---|---|
+| Transformer un script d'analyse ou un notebook en app partageable en quelques heures | Le re-run complet à chaque interaction surprend : **sans `@st.cache_*`, les calculs et I/O lourds repartent à chaque clic** |
+| Outils internes, prototypes, dashboards exploratoires où la vitesse de développement prime | `st.session_state` devient obligatoire dès qu'il faut conserver quoi que ce soit entre deux re-runs |
+| Démo data/ML rapide en restant dans l'écosystème Python | Mise en page contrainte — flux vertical et colonnes : peu adapté aux layouts complexes ou très denses |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- Bibliothèque open-source (Apache-2.0), gratuite. Lancement : `streamlit run app.py`.
-- Managé : **Streamlit Community Cloud** (gratuit, lié à GitHub, ressources limitées) et **Streamlit in Snowflake** (offre entreprise).
-- Self-host : conteneur Docker / VPS derrière un reverse proxy.
-- **Single-node** : état par session en mémoire serveur ; montée en charge par réplication derrière un load balancer.
+- Installation — `uv add streamlit`
+- Point d'entrée — `streamlit run app.py`
+- Prérequis — un script Python ; rien d'autre
+- Exécution — mono-nœud, état par session en mémoire serveur ; montée en charge par réplication derrière un load balancer. Managé par **Streamlit Community Cloud** (gratuit, lié à GitHub, ressources limitées) ou **Streamlit in Snowflake** ; self-host en conteneur derrière un reverse proxy
+- Coût — gratuit, Apache-2.0 ; le managé Snowflake est l'offre payante
 
-## Pièges
+## Écosystème
 
-- Le re-run complet à chaque interaction surprend : sans `@st.cache_*`, les calculs et I/O lourds repartent à chaque clic.
-- `st.session_state` est nécessaire dès qu'on veut conserver un état entre les re-runs.
-- Mise en page contrainte (flux vertical, colonnes) : peu adapté aux layouts complexes ou très denses.
-
-## Alternatives
+### Alternatives
 
 - [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 - [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 - [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Apps data & démos ML]] — Streamlit vs Dash / Shiny / Gradio.
-- [[Comparatif - Frontends web légers]] — face à FastAPI+HTMX, Gradio, Dash.
-- Affiche les figures [[plotly]], matplotlib, altair, etc.
-- Doc : https://docs.streamlit.io
+- Documentation — https://docs.streamlit.io
+- Dépôt — https://github.com/streamlit/streamlit
+
+## Voir aussi
+
+- [[Interfaces & apps data]] — le hub du domaine
+- [[Comparatif - Apps data & démos ML]] — ce qui départage les quatre frameworks du dossier
+- [[Comparatif - Frontends web légers]] — le même choix élargi à l'option à la main, FastAPI + HTMX
+- [[plotly]] — dont il affiche les figures, comme celles de matplotlib ou altair

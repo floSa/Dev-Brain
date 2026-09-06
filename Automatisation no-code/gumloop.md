@@ -19,43 +19,56 @@ url_repo:
 
 # gumloop
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.
 
-**Automatisation no-code pilotée par l'IA** (SaaS propriétaire, **YC W24**) : un **canvas drag-and-drop** où l'on relie des nœuds modulaires, mais où **chaque nœud peut porter de la logique IA** (analyser du texte, décider, transformer) sans câbler manuellement d'appels LLM. Cible la construction d'**agents** métier (onboarding, rapprochement de factures, tri de tickets, mise à jour CRM) par des employés non développeurs.
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Workflows où **l'IA est au cœur** de chaque étape, pas un simple add-on.
-- Permettre à des **employés non-dev** de bâtir des agents IA en autonomie.
-- Prototyper vite des automatisations **document/texte** lourdes en raisonnement.
+Automatisation no-code où l'IA n'est pas un nœud parmi d'autres : sur un **canvas
+drag-and-drop**, **chaque nœud peut porter de la logique IA** — analyser un texte, décider,
+transformer — sans qu'on câble un seul appel LLM. La cible affichée est la construction
+d'agents métier par des employés non développeurs : onboarding, rapprochement de factures, tri
+de tickets, mise à jour de CRM. C'est ce déplacement du LLM depuis l'add-on vers le matériau de
+base qui définit l'outil, et c'est aussi ce qui explique ses limites d'exploitation. Éditeur
+fondé en 2023, passé par Y Combinator (W24).
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin de **self-host** / contrôle des données → [[n8n]] / [[Activepieces]] / [[Windmill]].
-- Très **large catalogue** d'intégrations SaaS classiques → [[Zapier]].
-- Automatisation **déterministe** simple sans IA : un moteur de workflow standard suffit.
+| Prendre si | Écarter si |
+|---|---|
+| Workflows où l'IA est **au cœur** de chaque étape, pas un simple add-on | L'IA dans chaque nœud rend les exécutions **moins déterministes** et nettement plus difficiles à déboguer |
+| Permettre à des employés non développeurs de bâtir des agents IA en autonomie | Jeune éditeur : produit et tarifs en évolution rapide, rien n'est stabilisé |
+| Prototyper vite des automatisations document ou texte, lourdes en raisonnement | Lock-in propriétaire doublé d'une dépendance aux **coûts LLM** sous-jacents, qui pilotent la facture |
+| | Automatisation déterministe simple, sans IA : un moteur de workflow ordinaire fait le travail pour moins cher |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **100 % managé** (SaaS), aucun self-host — d'où `hosted: managed`.
-- Tarification par **crédits** / volume d'exécutions IA ; offres self-serve et Enterprise.
-- Coût dominé par la **consommation IA** des nœuds (modèles appelés à chaque étape).
+- Installation — aucune : un compte suffit
+- Point d'entrée — le canvas drag-and-drop de nœuds
+- Prérequis — aucun ; pas de self-host à prévoir, ni possible
+- Exécution — 100 % managé, serverless
+- Coût — par **crédits** et volume d'exécutions IA, en offres self-serve et Enterprise ; la facture est dominée par la consommation des modèles appelés à chaque étape
 
-## Pièges
+## Écosystème
 
-- Jeune éditeur (fondé 2023) : produit et tarifs **en évolution rapide**.
-- **Lock-in** propriétaire + dépendance aux **coûts LLM** sous-jacents.
-- L'IA dans chaque nœud peut rendre les exécutions **moins déterministes** et plus difficiles à déboguer.
-
-## Alternatives
+### Alternatives
 
 - [[n8n]] — Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.
 - [[Activepieces]] — Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.
 - [[Windmill]] — Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.
 - [[Zapier]] — Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Automatisation no-code]] — comparatif de la catégorie
-- Concept : [[Agent patterns]] — chaque nœud gumloop encapsule un pas d'agent IA.
-- Doc : https://docs.gumloop.com/
+- Documentation — https://docs.gumloop.com/
+
+## Voir aussi
+
+- [[Automatisation no-code]] — le hub du domaine
+- [[Comparatif - Automatisation no-code]] — ce qui départage les cinq plateformes du dossier
+- [[Agent patterns]] — chaque nœud gumloop encapsule un pas d'agent

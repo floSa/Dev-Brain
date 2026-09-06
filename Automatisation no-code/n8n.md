@@ -19,43 +19,56 @@ url_repo: https://github.com/n8n-io/n8n
 
 # n8n
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Plateforme d'automatisation de workflows fair-code (source-available, Sustainable Use License) — éditeur visuel de nœuds avec code custom et nœuds IA natifs, 400+ intégrations ; self-host ou n8n Cloud.
 
-**Plateforme d'automatisation de workflows** (Node.js/TypeScript) : éditeur visuel où l'on relie des **nœuds** (déclencheurs, actions, logique) pour connecter 400+ applications, avec la possibilité d'insérer du **code custom** (JS/Python) et des **nœuds IA natifs** (agents, LLM, RAG). Positionnement *fair-code* : code **source-available** sous **Sustainable Use License**, pas open-source au sens OSI (l'usage commercial en revente/multi-tenant est restreint).
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme TypeScript | source-available | self-hébergé ou managé · mono-nœud | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Vouloir un **self-host** complet sur ses propres serveurs, avec contrôle des données.
-- Workflows qui mêlent **no-code et code** : la plupart des étapes en visuel, quelques nœuds en JS/Python.
-- Besoin de **nœuds IA** intégrés (agents, appels LLM) sans coder toute la tuyauterie.
+Plateforme d'automatisation de workflows en Node.js : un éditeur visuel où l'on relie des
+**nœuds** — déclencheurs, actions, logique — pour connecter plus de 400 applications, avec deux
+particularités. On peut insérer du **code** JavaScript ou Python au milieu du visuel, ce qui
+rattrape tout ce que le no-code ne sait pas exprimer ; et les **nœuds IA** sont natifs, agents
+et appels LLM compris, sans câbler la tuyauterie. Le positionnement est *fair-code* : le code
+est lisible et modifiable, mais la licence n'est pas OSI (cf. *Écarter si*) — c'est la
+distinction que le nom « open source » masque le plus souvent sur cet outil.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Refus de toute contrainte de licence sur la revente → préférer un cœur **MIT** : [[Activepieces]].
-- Automatisation **pilotée par scripts/code** plutôt que par nœuds → [[Windmill]].
-- Aucune envie d'opérer une infra, tout managé → [[Zapier]].
+| Prendre si | Écarter si |
+|---|---|
+| Vouloir un self-host complet sur ses propres serveurs, avec contrôle des données | La **Sustainable Use License** est source-available, pas open-source au sens OSI : l'usage commercial en revente ou multi-tenant est restreint et exige une licence Enterprise |
+| Workflows qui mêlent no-code et code : la plupart des étapes en visuel, quelques nœuds en JS ou Python | Les nœuds **code** rendent les workflows peu portables et difficiles à versionner proprement |
+| Besoin de **nœuds IA** intégrés — agents, appels LLM — sans écrire la tuyauterie | Monter au-delà du mono-nœud passe par le **queue mode** (workers Redis) : ce n'est pas une case à cocher |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** gratuit (Docker, npm) ou **n8n Cloud** managé (abonnement) — d'où `hosted: both`.
-- Single-node par défaut ; montée en charge possible via le **queue mode** (workers Redis), au prix d'efforts d'infra.
-- Licence à lire pour tout usage **commercial où n8n est exposé à des clients** (multi-tenant) : exige une licence Enterprise.
+- Installation — Docker ou npm pour le self-host, ou compte n8n Cloud
+- Point d'entrée — l'éditeur visuel de nœuds ; les nœuds code acceptent du JavaScript ou du Python
+- Prérequis — Docker ou Node.js pour le self-host ; Redis en plus si l'on active le queue mode
+- Exécution — self-hébergé ou managé, mono-nœud par défaut, distribué en queue mode
+- Coût — self-host gratuit, n8n Cloud sur abonnement. La licence est à lire pour tout usage commercial où n8n est exposé à des clients
 
-## Pièges
+## Écosystème
 
-- *Fair-code* ≠ open-source : la **Sustainable Use License** surprend ceux qui croient à du MIT/Apache.
-- Les nœuds **code** rendent vite les workflows non portables / difficiles à versionner proprement.
-- Scaling au-delà du single-node = configuration **queue mode** non triviale.
-
-## Alternatives
+### Alternatives
 
 - [[Activepieces]] — Automatisation de workflows open source (cœur MIT, éditeur Activepieces) — éditeur visuel TypeScript, 200+ pièces, agents IA et serveurs MCP ; self-host Docker ou Activepieces Cloud, alternative à Zapier.
 - [[Windmill]] — Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.
 - [[Zapier]] — Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
 - [[gumloop]] — Plateforme SaaS d'automatisation no-code pilotée par l'IA (propriétaire, YC W24) — canvas drag-and-drop où chaque nœud peut porter de la logique IA pour bâtir agents et workflows ; entièrement managé, sans self-host.
 
-## Liens
+## Ressources
 
-- [[Comparatif - Automatisation no-code]] — comparatif de la catégorie
-- Distinct des orchestrateurs de pipelines **data** ([[Airflow]], [[Dagster]], [[Prefect]]) : n8n automatise des **apps**, pas des DAG de données.
-- Doc : https://docs.n8n.io/
+- Documentation — https://docs.n8n.io/
+- Dépôt — https://github.com/n8n-io/n8n
+
+## Voir aussi
+
+- [[Automatisation no-code]] — le hub du domaine
+- [[Comparatif - Automatisation no-code]] — ce qui départage les cinq plateformes du dossier
+- [[Airflow]] · [[Dagster]] · [[Prefect]] — la frontière à ne pas franchir : ces trois-là orchestrent des DAG de **données**, n8n automatise des **applications**
