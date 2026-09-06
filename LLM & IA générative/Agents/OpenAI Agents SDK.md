@@ -43,6 +43,7 @@ l'API Chat Completions ou [[LiteLLM]]. Disponible en Python et en TypeScript.
 | Vouloir un framework d'agent minimal et explicite, sans abstractions lourdes à apprendre | Le **tracing part par défaut vers le tableau de bord OpenAI** — vérifier la conformité données, et le désactiver ou le rediriger vers un processor tiers pour rester self-contained |
 | Schémas multi-agents par handoffs (triage → spécialistes) avec garde-fous et traçabilité | Minimalisme assumé : au-delà des primitives, la robustesse — retries, fallback, timeouts — reste entièrement à câbler |
 | Écosystème OpenAI, sans exclusivité, et besoin d'un tracing prêt à l'emploi | Projet à figer : sorti en 2025, l'API est encore mouvante — épingler les versions |
+| | **Mémoire persistante** longue durée comme primitive centrale → [[Letta]] |
 
 ## Mise en œuvre
 

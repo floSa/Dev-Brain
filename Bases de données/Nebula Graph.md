@@ -45,6 +45,7 @@ moteur accepte aussi via openCypher.
 | Haute disponibilité et réplication multi-nœuds intégrées, par Raft | Écosystème et outillage plus jeunes : pilotes, visualisation, algorithmes prêts à l'emploi |
 | Parcours sur graphes massifs : recommandation à grande échelle, antifraude, knowledge graph d'entreprise | nGQL ressemble à Cypher sans lui être identique : un portage n'est pas automatique |
 | | Petit projet ou prototype : la complexité opérationnelle du cluster ne se rembourse pas |
+| | Données peu connectées, modèle tabulaire et transactions classiques → [[Postgres]] |
 
 ## Mise en œuvre
 

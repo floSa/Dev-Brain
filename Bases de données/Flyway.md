@@ -40,6 +40,7 @@ fonctions avancées.
 | Versionner le schéma en restant au plus près du SQL natif, sans couche d'abstraction | Aucune abstraction : un même changement se réécrit moteur par moteur dès qu'on en cible plusieurs |
 | Migrations simples et lisibles, faciles à relire en revue de code | L'undo, donc le rollback, est réservé aux éditions payantes |
 | Intégration au build (plugins Maven, Gradle) et exécution en CI/CD | Le tier Teams est fermé aux nouveaux clients depuis mai 2025 : l'entrée payante est désormais Enterprise |
+| | Migrations dérivées d'un schéma d'ORM TypeScript → [[Prisma]] |
 
 ## Mise en œuvre
 

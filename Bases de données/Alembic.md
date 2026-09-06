@@ -40,6 +40,7 @@ merges de révisions, et exécution offline, qui écrit le SQL sans se connecter
 | Versionner l'évolution du schéma d'une application déjà bâtie sur SQLAlchemy | Le schéma doit être décrit en SQL natif ou hors de SQLAlchemy : Alembic dérive ses migrations des modèles |
 | Dériver les migrations des modèles ORM par autogénération, plutôt qu'écrire le DDL à la main | L'autogénération ne détecte pas tout — types subtils, renommages, contraintes côté serveur : le script produit se relit toujours |
 | Rejouer les migrations de façon déterministe en CI/CD (`alembic upgrade head`) | L'ordre des révisions et les merges de branches divergent entre développeurs : la tête `head` demande de la discipline |
+| | Migrations couplées à un ORM TypeScript → [[Prisma]] |
 
 ## Mise en œuvre
 

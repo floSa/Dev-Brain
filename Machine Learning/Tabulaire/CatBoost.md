@@ -43,6 +43,7 @@ numériques.
 | Modèle solide sans réglage lourd : les défauts sont raisonnables | Colonnes catégorielles non déclarées dans `cat_features` : traitées comme numériques, et l'atout principal est perdu |
 | Inférence rapide recherchée (arbres symétriques), entraînement GPU efficace | Mémoire et temps qui montent avec le nombre de permutations et la cardinalité |
 | Interprétabilité : valeurs SHAP intégrées | Écosystème distribué déjà en place : les intégrations Spark, Dask et Ray y sont moins matures |
+| | Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Scikit-Learn]] |
 
 ## Mise en œuvre
 

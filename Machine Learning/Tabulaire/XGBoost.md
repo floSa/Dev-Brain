@@ -43,6 +43,7 @@ l'autre native (`xgb.train` sur `DMatrix`).
 | Distribuer l'entraînement sur cluster (Spark, Dask, Ray, Flink) ou sur GPU | Sans réglage conjoint de `n_estimators`, `learning_rate` et `max_depth`, plus l'early stopping, le surapprentissage vient vite |
 | Écosystème large : bindings Python, R, Java, Scala, Julia | Les deux API — sklearn et native — ne se mélangent pas dans un même code |
 | Réglage fin recherché : contrôle complet de la régularisation | Données non tabulaires — images, texte, séquences → [[Apprentissage profond]] |
+| | Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Scikit-Learn]] |
 
 ## Mise en œuvre
 

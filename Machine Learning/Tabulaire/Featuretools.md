@@ -39,11 +39,12 @@ ex-Feature Labs.
 
 | Prendre si | Écarter si |
 |---|---|
-| Données multi-tables (clients ↔ transactions ↔ produits) où les variables utiles sont des agrégats inter-tables | Une seule table plate, sans relations : un `ColumnTransformer` écrit à la main suffit |
+| Données multi-tables (clients ↔ transactions ↔ produits) où les variables utiles sont des agrégats inter-tables | Une seule table plate, sans relations : un `ColumnTransformer` de [[Scikit-Learn]] écrit à la main suffit |
 | Données temporelles à agréger sans laisser le futur fuiter, via la *cutoff time* | *Cutoff time* mal réglée : elle réintroduit exactement la fuite que l'outil est censé éviter → [[Data leakage]] |
 | Prototypage : générer un large jeu de candidates, puis filtrer → [[Sélection de variables]] | DFS produit beaucoup de variables redondantes : la sélection en aval n'est pas optionnelle |
 | Industrialiser une logique reproductible : mêmes primitives à l'entraînement et en production | `EntitySet` mal défini (types logiques, relations) : toute la suite en dépend |
 | | Volumes hors mémoire : les backends Dask et Spark ne sont que partiellement supportés |
+| | Encodage catégoriel fin — Target, WoE → [[category_encoders]] |
 
 ## Mise en œuvre
 

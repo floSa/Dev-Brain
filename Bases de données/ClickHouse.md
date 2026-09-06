@@ -42,7 +42,7 @@ les performances de toutes les requêtes qui suivront.
 |---|---|
 | Analytique temps réel sur gros volumes : tableaux de bord, observabilité, événements | Mises à jour et suppressions fréquentes ligne à ligne : le modèle est pensé pour l'append, et les mutations sont asynchrones et coûteuses |
 | Agrégations massives balayant beaucoup de lignes sur peu de colonnes | Lecture attendue juste après l'écriture : la cohérence de la réplication est éventuelle |
-| Ingestion à fort débit de logs, métriques, télémétrie | |
+| Ingestion à fort débit de logs, métriques, télémétrie | OLTP transactionnel, beaucoup de petites écritures et de mises à jour ponctuelles → [[Postgres]] |
 | Scale-out horizontal sur un cluster | |
 
 ## Mise en œuvre

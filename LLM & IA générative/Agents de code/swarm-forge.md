@@ -42,7 +42,7 @@ le dashboard s'ouvre dans le navigateur.
 | Prendre si | Écarter si |
 |---|---|
 | Découper une tâche large entre plusieurs agents de code sans qu'ils se disputent l'arbre de travail | **Contexte professionnel : le dépôt ne déclare aucune licence.** Un dépôt public sans fichier LICENSE n'accorde aucun droit d'usage, de modification ni de redistribution — à réserver à l'exploration personnelle tant que ce n'est pas corrigé |
-| Rester en terminal, sur sa machine, sans plateforme ni service tiers | Construire une application multi-agents : ce n'est pas un framework, on n'écrit rien avec — on orchestre des CLI tierces déjà installées |
+| Rester en terminal, sur sa machine, sans plateforme ni service tiers | Construire une application multi-agents : ce n'est pas un framework, on n'écrit rien avec — on orchestre des CLI tierces déjà installées → [[CrewAI]], [[AutoGen]] |
 | Étudier une approche d'orchestration en essaim minimaliste, lisible de bout en bout | Sans tmux, ou avec une exigence d'interface graphique : la dépendance est forte, et le copier-coller comme la navigation entre panes déroutent quand plusieurs agents parlent en même temps |
 | | Besoin de déploiement ou de reprise après incident : local uniquement, mono-machine |
 | | Exigence de stabilité : ni versioning, ni release, ni documentation au-delà du README et d'`AGENTS.md`, aucune roadmap publiée |

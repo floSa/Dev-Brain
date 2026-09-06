@@ -41,10 +41,10 @@ modélise par pattern d'accès, pas par entité.
 | Prendre si | Écarter si |
 |---|---|
 | Écritures massives et continues : télémétrie, logs, IoT, séries d'événements | Modéliser par entité plutôt que par requête produit des partitions inexploitables |
-| Haute disponibilité « always-on », déploiement multi-région ou multi-datacenter | Ni jointure ni agrégation libre : `ALLOW FILTERING` est une porte ouverte aux scans |
+| Haute disponibilité « always-on », déploiement multi-région ou multi-datacenter | Requêtes ad hoc, jointures, agrégations imprévues → [[Postgres]] ; ici, `ALLOW FILTERING` est une porte ouverte aux scans |
 | Volumes dépassant un seul nœud, avec un scale-out linéaire attendu | Partitions trop larges ou « hot partitions » : elles dégradent tout le cluster |
 | Patterns de lecture connus d'avance et stables | Exploitation JVM exigeante : compaction, repair et tombstones à surveiller en continu |
-| | Petit volume tenant sur un nœud : la complexité opérationnelle du cluster ne se rembourse pas |
+| | Petit volume tenant sur un nœud : la complexité opérationnelle du cluster ne se rembourse pas → [[Postgres]] |
 
 ## Mise en œuvre
 

@@ -45,7 +45,7 @@ opérations creuses et les `scatter`/`gather` sont optimisés GPU.
 | Prototyper et entraîner un GNN — GCN, GAT, GraphSAGE — sans réimplémenter le message passing | **Installation des extensions** (`torch-scatter`, `torch-sparse`, `pyg-lib`) sensible à la version exacte de PyTorch et CUDA : source classique d'échecs, roues officielles appariées obligatoires |
 | Gros graphes ne tenant pas en mémoire : échantillonnage de voisinage intégré | **Over-smoothing** : empiler trop de couches rend les nœuds indiscernables — rester peu profond, ou ajouter résidus et normalisation |
 | Recherche : implémentations de référence et model zoo pour reproduire ou étendre l'état de l'art | Échantillonnage de voisinage mal réglé sur des nœuds très connectés : biais, ou explosion mémoire |
-| | Données en grille ou séquence régulière — CNN, Transformers — plutôt qu'un graphe |
+| | Données en grille ou séquence régulière : un CNN ([[torchvision]]) ou un Transformer, plutôt qu'un GNN |
 | | Besoin d'un moteur de graphes **en base**, pas d'apprentissage → [[Neo4j]] |
 
 ## Mise en œuvre

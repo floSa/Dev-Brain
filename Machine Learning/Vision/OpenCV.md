@@ -42,8 +42,8 @@ sont à convertir avant de passer à un modèle entraîné en RGB.
 |---|---|
 | Prétraitement et manipulation d'images ou de vidéos : redimensionnement, conversion, filtrage, ROI | Quatre paquets pip mutuellement exclusifs (`opencv-python`, `-contrib-`, `-headless`, `-contrib-headless`) : n'en installer qu'un, et `-headless` sur serveur |
 | Vision géométrique : calibration, homographie, stéréo, estimation de pose, flux optique | L'accélération CUDA n'est pas dans les wheels : elle se compile depuis les sources |
-| Détecteurs et trackers classiques — cascades de Haar, KCF, CSRT — quand un réseau est superflu | |
-| Capture caméra et pipeline vidéo temps réel côté CPU | |
+| Détecteurs et trackers classiques — cascades de Haar, KCF, CSRT — quand un réseau est superflu | Entraîner ou fine-tuner un réseau de vision → [[PyTorch]], avec [[torchvision]] ou [[timm]] |
+| Capture caméra et pipeline vidéo temps réel côté CPU | Opérations de vision **différentiables**, dans une boucle d'autograd sur GPU → [[Kornia]] |
 
 ## Mise en œuvre
 

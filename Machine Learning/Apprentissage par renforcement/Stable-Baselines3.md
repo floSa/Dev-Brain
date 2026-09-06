@@ -41,7 +41,7 @@ ARS et CrossQ. Successeur PyTorch de Stable Baselines, lui-même fork d'OpenAI B
 | Prendre si | Écarter si |
 |---|---|
 | Entraîner un agent sans réimplémenter : PPO, A2C, DQN, SAC, TD3, DDPG au cœur, variantes dans SB3-Contrib | RL **distribué à grande échelle** (milliers d'acteurs) : la parallélisation est celle des environnements vectorisés (`VecEnv`), pas un entraînement multi-nœuds → [[Acme]], ou RLlib hors brain |
-| Baseline solide pour démarrer ou comparer un projet de contrôle, robotique, jeux | Recherche sur un algorithme **nouveau** ou très custom : le cadre impose sa boucle → [[RLax]] pour composer soi-même, ou une implémentation mono-fichier |
+| Baseline solide pour démarrer ou comparer un projet de contrôle, robotique, jeux | Recherche sur un algorithme **nouveau** ou très custom : le cadre impose sa boucle → [[RLax]] pour composer soi-même, ou une implémentation mono-fichier type CleanRL, écrite sur [[PyTorch]] |
 | Reproductibilité : hyperparamètres documentés (RL Baselines3 Zoo), seeds, évaluation standardisée | Post-training **RL des LLM** (RLHF, GRPO) : hors périmètre de la bibliothèque, qui vise le contrôle et les jeux |
 | | Migration **Gym → Gymnasium** : les versions récentes attendent l'API [[Gymnasium]] (`terminated` / `truncated`), un code figé sur l'ancien `gym` ne passe pas tel quel |
 

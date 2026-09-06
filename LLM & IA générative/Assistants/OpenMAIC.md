@@ -50,7 +50,7 @@ entièrement locale possible pour le LLM, la synthèse et la reconnaissance voca
 | | Empilement Next.js 16 / React 19 récent : contraintes de build et d'hébergement serrées |
 | | Simple générateur de présentations : la classe multi-agents est un surcoût inutile |
 | | Plateforme d'apprentissage avec suivi des apprenants, inscriptions et notation : ce n'est pas un LMS |
-| | Construire une application d'agents propre : c'est une bibliothèque qu'il faut → [[PraisonAI]], [[CrewAI]] |
+| | Construire une application d'agents propre : c'est une bibliothèque qu'il faut → [[LangGraph]], [[PraisonAI]], [[CrewAI]] |
 
 ## Mise en œuvre
 

@@ -41,7 +41,7 @@ par Tiger Data, ex-Timescale.
 | Postgres déjà présent : ajouter du temporel sans monter une nouvelle base | Aucun Postgres dans le projet : en installer un pour cela seul est rarement gagnant |
 | Séries temporelles à requêter en **SQL standard**, avec jointures sur des tables relationnelles | Le multi-nœuds distribué est abandonné : la montée en charge est verticale plus des réplicas de lecture, pas du sharding natif |
 | Métriques, IoT, finance, où la cohérence transactionnelle compte | Deux licences dans le même produit — noyau Apache 2.0, fonctions Community sous TSL : ce qui est couvert se vérifie fonction par fonction |
-| Agrégats continus et compression sur l'historique | |
+| Agrégats continus et compression sur l'historique | Analytique colonne massive, non temporelle → [[ClickHouse]] |
 
 ## Mise en œuvre
 

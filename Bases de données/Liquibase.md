@@ -40,6 +40,7 @@ pipeline CI/CD.
 | Versionner le schéma et rejouer les migrations de façon déterministe entre environnements | L'abstraction XML/YAML ajoute une couche de traduction : sur un seul SGBD, le SQL brut est plus direct |
 | Format abstrait (YAML, XML, JSON) portable entre plusieurs moteurs | Les rollbacks automatiques ne couvrent pas tous les changements : les DDL destructifs se testent avant de compter dessus |
 | Pipeline CI/CD appliquant les migrations automatiquement au déploiement | Qualité et observabilité relèvent de l'édition Pro payante |
+| | Migrations générées et couplées à un ORM TypeScript → [[Prisma]] |
 
 ## Mise en œuvre
 

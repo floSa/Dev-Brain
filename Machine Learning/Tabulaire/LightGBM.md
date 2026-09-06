@@ -43,6 +43,7 @@ vite si `num_leaves` n'est pas borné.
 | Beaucoup de variables, dont des creuses issues du one-hot : EFB les regroupe | `num_leaves` est le levier central, distinct de `max_depth` : trop grand pour la profondeur, on surajuste |
 | Variables catégorielles en cardinalité modérée : prise en charge native, sans one-hot | Variables catégorielles à déclarer explicitement (`categorical_feature`), sinon traitées comme numériques |
 | Entraînement distribué intégré, ou sur GPU | `min_data_in_leaf` à soigner en même temps, sous peine de feuilles bâties sur quelques points |
+| | Besoin modeste sans dépendance dédiée → le `HistGradientBoosting` de [[Scikit-Learn]], inspiré de LightGBM |
 
 ## Mise en œuvre
 

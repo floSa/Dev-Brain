@@ -42,6 +42,7 @@ nouveautés vont à psycopg 3, le paquet `psycopg`.
 | Accès **SQL direct** à PostgreSQL sans couche ORM : scripts, micro-services, contrôle fin et performance | Nouveau projet : psycopg 3 apporte l'async natif, une meilleure gestion des types et le mode pipeline, que psycopg2 n'aura pas |
 | Driver sous-jacent d'un ORM, d'un toolkit ou d'un framework existant | Driver **synchrone** : inadapté à une application async à hautes performances |
 | Codebase déjà sur psycopg2, sans besoin d'async | `psycopg2-binary` en production : les mainteneurs recommandent de compiler `psycopg2` contre la libpq du système, le paquet binaire embarquant ses propres bibliothèques (SSL, locale), source de conflits |
+| | Vouloir un **mapping objet** et des **migrations** → [[SQLAlchemy]] et [[Alembic]] |
 
 ## Mise en œuvre
 

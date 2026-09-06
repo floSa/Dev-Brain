@@ -40,7 +40,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 | Analytique locale et exploration sur un poste : data science, notebooks | Un seul écrivain à la fois, comme SQLite : les écritures concurrentes transactionnelles ne passent pas |
 | Requêter des fichiers Parquet, CSV ou JSON en SQL sans monter d'infra | Elle tient sur une machine : la RAM et le disque local bornent le volume |
 | ETL léger et transformations au sein d'un pipeline Python | Elle n'est pas conçue pour servir des milliers de clients simultanés, ni pour la haute disponibilité |
-| Tests et prototypes analytiques jetables | |
+| Tests et prototypes analytiques jetables | OLTP et écritures concurrentes transactionnelles → [[Postgres]] |
 
 ## Mise en œuvre
 

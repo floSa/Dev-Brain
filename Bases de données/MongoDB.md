@@ -43,7 +43,7 @@ de schéma : sans validation JSON Schema, la dérive de modèle s'installe.
 | Données semi-structurées ou au schéma mouvant : catalogues, profils, contenus, événements | Pas de jointure au sens SQL : `$lookup` existe, mais l'employer souvent trahit un modèle mal découpé |
 | Modèle agrégat : l'objet métier se lit et s'écrit d'un bloc, peu de relations transverses | Cohérence par défaut au niveau du document ; les transactions multi-documents existent, mais coûtent |
 | Scaler horizontalement en écriture sans réarchitecturer, le sharding étant intégré | Index oubliés = scans de collection, et le working set doit tenir en RAM |
-| Prototypage rapide, tant que le schéma n'est pas figé | |
+| Prototypage rapide, tant que le schéma n'est pas figé | Fortes garanties relationnelles, jointures complexes, intégrité référentielle → [[Postgres]], dont le `JSONB` couvre déjà le semi-structuré modéré |
 
 ## Mise en œuvre
 

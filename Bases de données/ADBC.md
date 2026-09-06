@@ -43,7 +43,9 @@ mapping objet, aucune migration.
 | Accéder à une base depuis un pipeline colonnaire sans payer la conversion ligne → colonne | Le moteur visé n'a pas de driver ADBC mûr : l'écosystème est plus jeune que ceux d'ODBC et JDBC |
 | Lire **et** écrire, ingestion en masse comprise, derrière une API unique indépendante du fournisseur | Packaging par moteur : un paquet driver par base, aux versions appariées avec le driver manager |
 | Remplacer ODBC/JDBC quand la charge est analytique et que la destination est Arrow | Sémantique des types Arrow ↔ SQL à vérifier sur les cas limites : décimaux, timestamps |
-| Standardiser l'accès à plusieurs bases derrière une seule interface Arrow-native | |
+| Standardiser l'accès à plusieurs bases derrière une seule interface Arrow-native | Lecture seule la plus rapide possible vers un DataFrame, sans écriture → [[connectorx]] |
+| | Application transactionnelle Postgres classique, ligne à ligne → driver DB-API [[psycopg2]] |
+| | Mapping objet, migrations, modèle de domaine → [[SQLAlchemy]] |
 
 ## Mise en œuvre
 

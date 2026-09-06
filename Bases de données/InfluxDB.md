@@ -43,6 +43,8 @@ sur la pile Apache Arrow, DataFusion et Parquet.
 | Télémétrie IoT et capteurs : fort débit d'écriture horodatée | Le langage de requête a changé trois fois — InfluxQL, puis Flux, puis SQL en v3 : la version cible se vérifie avant d'écrire quoi que ce soit |
 | Données qui vieillissent : rétention et downsampling automatiques | Mises à jour et suppressions ponctuelles : le moteur est pensé append, elles y sont peu naturelles |
 | Requêtes temporelles — fenêtres, agrégations par intervalle — plus que jointures | Haute disponibilité et clustering : l'édition self-host Core est mono-nœud |
+| | Données relationnelles, jointures et transactions ACID → [[Postgres]] |
+| | Analytique colonne à haute cardinalité, non strictement temporelle → [[ClickHouse]] |
 
 ## Mise en œuvre
 

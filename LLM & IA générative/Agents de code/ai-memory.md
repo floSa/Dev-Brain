@@ -43,7 +43,7 @@ dépôt lui-même.
 | Prendre si | Écarter si |
 |---|---|
 | Alterner entre plusieurs CLI d'agents sur le même dépôt et vouloir un contexte partagé entre elles | Windows natif : le support est expérimental, WSL2 est la voie recommandée |
-| Garder une trace inspectable de ce que les agents ont appris d'un projet, sous forme de fichiers markdown versionnés | Mémoire d'un agent applicatif que l'on construit, plutôt que d'une CLI de code : ce n'est pas la cible → [[Letta]] |
+| Garder une trace inspectable de ce que les agents ont appris d'un projet, sous forme de fichiers markdown versionnés | Mémoire d'un agent applicatif que l'on construit, plutôt que d'une CLI de code : ce n'est pas la cible → [[Letta]], [[OpenViking]] |
 | Éviter de réexpliquer la même architecture à chaque nouvelle session | Contexte multi-utilisateur ou multi-instance : un seul serveur par répertoire de données, jamais deux en concurrence, et l'authentification demande une configuration soignée |
 | | Débit d'écriture élevé : l'auteur mesure un plafond de l'ordre de 700 écritures par seconde |
 | | Aucune sortie de données tolérée : le classement vectoriel, s'il est activé, implique un fournisseur d'embeddings |

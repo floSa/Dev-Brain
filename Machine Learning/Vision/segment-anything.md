@@ -44,6 +44,7 @@ SAM segmente mais ne nomme pas : le nommage vient d'un modèle en amont.
 | Masques zero-shot sur des objets quelconques, sans dataset annoté par classe | Une invite est ambiguë par nature : un point peut renvoyer plusieurs masques candidats, et le choix du meilleur reste à gérer |
 | Brique d'un pipeline plus large : un détecteur propose des boîtes, SAM en tire les masques | Contraintes mobiles ou temps réel : viser les variantes allégées MobileSAM ou FastSAM plutôt que SAM original |
 | Segmentation interactive pilotée par l'utilisateur, au clic ou à la boîte | Le dépôt ne fournit que l'inférence : aucun code d'entraînement |
+| | **Classes fixes**, latence serrée, précision sur un domaine donné → un U-Net, DeepLab ou Mask R-CNN dédié, via [[torchvision]] |
 
 ## Mise en œuvre
 

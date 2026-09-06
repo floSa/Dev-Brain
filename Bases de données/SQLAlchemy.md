@@ -41,6 +41,7 @@ Chaque SGBD est piloté par un dialecte et un driver. Écrit par Mike Bayer.
 | Besoin des deux niveaux : l'ORM pour le CRUD, Core ou SQL brut pour les requêtes complexes | Saut d'API important entre 1.x et 2.0 — style `select()`, sessions : la version visée se vérifie |
 | Modèles typés et accès async, avec un driver compatible, en 2.0 | La migration de schéma n'est pas incluse : c'est un outil distinct |
 | | Micro-script à une poignée de requêtes : la couche ne se rembourse pas, un driver brut suffit |
+| | Seulement des migrations, sans couche d'accès → outils dédiés, [[Flyway]] ou [[Liquibase]] |
 
 ## Mise en œuvre
 

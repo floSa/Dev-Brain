@@ -42,6 +42,7 @@ JavaScript, Java, Rust et Go.
 | Un index unifié vecteur + SQL + graphe, plutôt que d'assembler plusieurs briques | Tire un écosystème HuggingFace lourd selon les extras installés (taille d'image, dépendances) |
 | Du prototype embarqué à une mise en production modeste exposée en API | Le modèle d'embedding est à choisir selon la langue et le domaine, et à garder cohérent entre index et requête |
 | Orchestrer des workflows LLM (pipelines, agents) au plus près de l'index | Stack non-Python où le moteur doit être un service indépendant : les bindings restent secondaires |
+| | Base vectorielle managée clé en main → [[Pinecone]] ; fort filtrage sur une base dédiée → [[Qdrant]] |
 
 ## Mise en œuvre
 

@@ -43,7 +43,8 @@ continu. C'est le seul du dossier à faire le retrieval et le reclassement au m�
 | Combiner retrieval (lexical + dense) et ranking ML multi-phases dans un seul moteur, sans pipeline externe | Complexité opérationnelle réelle : modèle de déploiement, schémas et ranking profiles sont à maîtriser avant la mise en production |
 | Très grande échelle, données qui changent en continu, contraintes de latence fortes | Configuration verbeuse (schémas, services) : chaque itération passe par un redéploiement |
 | Exécuter un modèle de ranking, ou de la late-interaction, dans le serving et non après coup | Surdimensionné pour un besoin de recherche basique — ce n'est pas un moteur à prendre « par défaut » |
-| Late-interaction : tenseurs multi-vecteurs (ColBERT) et MaxSim supportés nativement | |
+| Late-interaction : tenseurs multi-vecteurs (ColBERT) et MaxSim supportés nativement | Petit corpus, besoin simple : la complexité opérationnelle est disproportionnée → une base vectorielle dédiée, [[Qdrant]] ou [[Weaviate]] |
+| | Prototype Python embarqué → un index [[Faiss]] en mémoire |
 
 ## Mise en œuvre
 

@@ -38,7 +38,7 @@ cardinalité, où le One-Hot explose en dimension. Projet `scikit-learn-contrib`
 
 | Prendre si | Écarter si |
 |---|---|
-| Variables catégorielles à forte cardinalité, où le One-Hot explose en dimension | Faible cardinalité : les encodeurs natifs de scikit-learn suffisent, y compris le repli anti-fuite du target encoding depuis la 1.3 |
+| Variables catégorielles à forte cardinalité, où le One-Hot explose en dimension | Faible cardinalité : les encodeurs natifs de [[Scikit-Learn]] suffisent, y compris le repli anti-fuite du target encoding depuis la 1.3 |
 | Encodeur précis absent de scikit-learn : WoE, James-Stein, M-estimate, CatBoost encoder | Les encodeurs par la cible (Target, WoE, LOO) sont des vecteurs de fuite : à ajuster dans le pipeline, pli par pli → [[Data leakage]] |
 | Scoring de crédit : le Weight of Evidence y est le format attendu → [[Régression logistique]] | Lissage à régler : trop faible, on surajuste les petites modalités ; trop fort, le signal se noie dans la moyenne globale |
 | Pipeline scikit-learn existant : les encodeurs s'y insèrent sans friction | WoE ne vaut que pour une cible binaire, sinon passer par `PolynomialWrapper` |

@@ -44,6 +44,7 @@ persistance est optionnelle : snapshots RDB ou journal AOF.
 | Sessions, rate-limiting, compteurs, verrous distribués | Persistance non garantie par défaut : selon la configuration, un crash perd les écritures récentes |
 | File de jobs ou broker léger (listes, streams) et pub/sub temps réel | Mono-thread : une commande coûteuse — `KEYS *`, un gros `SORT` — bloque tout le serveur |
 | Classements et fenêtres temporelles via les sorted sets | Redis Cluster impose ses contraintes : slots, et opérations multi-clés limitées au même slot |
+| | Source de vérité durable au-delà de ce qui tient en RAM → une base sur disque, [[Postgres]] |
 
 ## Mise en œuvre
 

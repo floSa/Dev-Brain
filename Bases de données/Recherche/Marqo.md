@@ -43,6 +43,7 @@ effort vers une offre commerciale de recherche et de découverte produit pour l'
 | Maintenance d'un existant déjà bâti sur Marqo open-source | Tout nouveau projet open-source : le moteur n'est plus maintenu et ne reçoit aucun correctif de sécurité — risque de conformité en production |
 | Évaluation du produit commercial pour un cas d'usage e-commerce (search & discovery) | L'inférence intégrée couple le moteur au choix de modèle et à sa charge GPU : en changer n'est pas anodin |
 | Indexation multimodale texte + image sans pipeline d'embedding à monter | Le pivot e-commerce oriente le produit commercial vers un cas d'usage précis : l'adéquation est à vérifier avant tout engagement |
+| | Embedding maîtrisé côté application, plus une base vectorielle dédiée → [[Qdrant]], [[Weaviate]] |
 
 ## Mise en œuvre
 

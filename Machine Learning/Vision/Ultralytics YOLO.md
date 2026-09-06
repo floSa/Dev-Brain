@@ -43,6 +43,7 @@ un détecteur qui marche vite, sans assembler soi-même backbone, têtes et post
 | Une seule bibliothèque pour détection, segmentation, pose et suivi, sans changer d'API | Les poids COCO couvrent 80 classes génériques : un domaine spécifique exige du fine-tuning sur données annotées |
 | Déploiement edge ou embarqué : export TensorRT/ONNX, variantes nano à extra-large | Numérotation mouvante — v5, v8, 11, 26, plus les forks v7, v9 et v10 hors Ultralytics : épingler la version dans le lockfile |
 | Prototypage rapide et fine-tuning depuis des poids COCO pré-entraînés | L'API clé en main masque les hyperparamètres ; sur cas difficile, descendre dans la config reste nécessaire |
+| | Briques de détection et de segmentation dans l'écosystème PyTorch officiel, sans contrainte de licence → [[torchvision]] |
 
 ## Mise en œuvre
 

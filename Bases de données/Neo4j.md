@@ -46,6 +46,7 @@ produit un modèle plat qui perd tout l'intérêt du graphe.
 | Parcours à profondeur variable ou inconnue — chemins, voisinages à N sauts — que SQL exprime mal | La montée en charge se fait en vertical ; réplication et sharding *Fabric* sont réservés à l'édition Enterprise |
 | Détection de motifs et algorithmes de graphe (centralité, communautés, plus courts chemins) via la bibliothèque GDS | Les super-nœuds — un nœud à des millions d'arêtes — dégradent les parcours et imposent de remodéliser |
 | Graphes de connaissances et moteurs de raisonnement, y compris en appui d'un RAG | Agrégations analytiques sur de gros volumes : ce n'est pas un moteur colonne |
+| | Données tabulaires peu reliées, transactions classiques → [[Postgres]] |
 
 ## Mise en œuvre
 

@@ -40,7 +40,7 @@ qui compte en serverless.
 |---|---|
 | Backend TypeScript ou Node voulant un accès aux données fortement typé | Écosystème **TypeScript** avant tout : le client Python est communautaire, ce n'est pas l'usage principal |
 | Schéma déclaratif unique servant à la fois de modèle, de client et de source des migrations | L'abstraction gêne les requêtes très complexes, ou les fonctionnalités propres à un moteur qu'elle masque : il faut alors redescendre au SQL brut |
-| Déploiement serverless sensible au cold start, depuis la v7 | |
+| Déploiement serverless sensible au cold start, depuis la v7 | Stack Python — data, ML, [[FastAPI]] → un ORM Python ([[SQLAlchemy]]) ou un outil de migration dédié, [[Liquibase]] ou [[Flyway]] |
 
 ## Mise en œuvre
 

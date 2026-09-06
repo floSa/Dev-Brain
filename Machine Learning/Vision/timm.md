@@ -44,6 +44,7 @@ segmenteur. L'espace de noms est touffu : les suffixes (`.a1_in1k`, `.augreg`,
 | Fine-tuner, ou extraire des features (`features_only=True`) pour un pipeline détection ou segmentation | Certains poids héritent d'une licence non commerciale du jeu d'origine : à vérifier au cas par cas |
 | Comparer des dizaines d'architectures à budget donné, benchmarks du dépôt à l'appui | Besoin limité aux modèles classiques, aux datasets et aux tâches clés en main → [[torchvision]] |
 | Réutiliser des recettes d'entraînement éprouvées : RandAugment, Mixup/CutMix, EMA | Modèles multimodaux ou hors vision pure — CLIP, détecteurs end-to-end packagés → `transformers` de [[HuggingFace]] |
+| | Augmentation seule, sans modèles → [[albumentations]] ou [[Kornia]] |
 
 ## Mise en œuvre
 

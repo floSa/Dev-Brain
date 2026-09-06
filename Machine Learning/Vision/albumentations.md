@@ -43,6 +43,7 @@ HWC, en CPU et hors du graphe d'autograd.
 | Pipeline d'augmentation CPU performant dans un `Dataset`/`DataLoader` PyTorch | Le fork `AlbumentationsX` porte les **mêmes imports** que le paquet historique, sous une licence opposée : la confusion est facile |
 | Large catalogue de transformations — météo, distorsions, dropout spatial — déclaré de façon lisible | Rester dans l'écosystème officiel, sans dépendance supplémentaire → [[torchvision]] |
 | | Augmenter autre chose que de l'image (texte, audio, tabulaire) : hors périmètre |
+| | Augmentation **sur GPU** et **différentiable**, dans le graphe d'autograd → [[Kornia]] |
 
 ## Mise en œuvre
 
