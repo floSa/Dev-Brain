@@ -90,7 +90,7 @@ fi
 # dépôt principal se voyait préfixer par la racine du worktree, et TOUT commit
 # était refusé. Trouvé en committant, pas en relisant — et le hook a bien échoué
 # bruyamment, ce qui est son travail.
-hooks_dir=$(printf '%s' "$hooks_dir" | tr '\' '/')
+hooks_dir=$(printf '%s' "$hooks_dir" | tr '\\' '/')
 case "$hooks_dir" in
     /* | ?:/*) ;;                                  # déjà absolu — POSIX ou Windows
     *) hooks_dir="$(git rev-parse --show-toplevel)/$hooks_dir" ;;
