@@ -1,7 +1,5 @@
 ---
-galaxie: meta
 nom: Rapport audit axe 6 - REX
-type: meta-doc
 tags: [meta]
 ---
 

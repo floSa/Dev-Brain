@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 nom: obsidian-graph
 type: perso
 created: 2026-06-04

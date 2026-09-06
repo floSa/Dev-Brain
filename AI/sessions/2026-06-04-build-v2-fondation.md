@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 type: session
 date: 2026-06-04
 mode: build

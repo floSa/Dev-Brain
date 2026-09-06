@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 nom: brain-v2
 type: design-doc
 created: 2026-06-03

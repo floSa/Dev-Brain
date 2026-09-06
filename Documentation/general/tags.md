@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 nom: tags
 type: gouvernance
 created: 2026-06-04
@@ -325,7 +324,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `templating` | Moteur de templates — génération de texte/HTML à partir de gabarits et de données (rendu côté serveur, héritage de templates, échappement automatique) |
 | `authentication` | Authentification — vérification d'identité et gestion des accès (tokens, sessions, JWT, OAuth/OIDC) |
 | `cryptography` | Primitives cryptographiques — signature et vérification, HMAC, chiffrement à clé symétrique / asymétrique (RSA, ECDSA, EdDSA) |
-| `pattern` | Marqueur de type — page de pattern / décision d'architecture (`Dev/Patterns/`). Imposé par le gabarit Pattern |
+| `pattern` | Marqueur de type — page de pattern / décision d'architecture (`Patterns/`). Imposé par le gabarit Pattern |
 | `rule` | Marqueur de type — page de règle transverse (`Dev/Rules/`). Imposé par le gabarit Rule |
 
 | `networking` | Réseau entre machines — protocoles, adressage, flux ; ce qui circule entre les hôtes indépendamment de l'applicatif |

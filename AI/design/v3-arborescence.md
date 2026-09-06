@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 nom: v3-arborescence
 type: design-doc
 created: 2026-09-04

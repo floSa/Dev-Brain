@@ -1,5 +1,4 @@
 ---
-galaxie: meta
 nom: themes
 type: gouvernance
 created: 2026-06-04
