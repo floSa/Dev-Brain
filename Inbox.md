@@ -1,7 +1,5 @@
 ---
-galaxie: meta
 nom: Inbox
-type: meta-doc
 tags: [meta]
 ---
 

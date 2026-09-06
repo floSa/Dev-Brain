@@ -1,7 +1,5 @@
 ---
-galaxie: meta
 nom: Home
-type: meta-doc
 tags: [meta]
 ---
 

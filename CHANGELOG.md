@@ -1,7 +1,5 @@
 ---
-galaxie: meta
 nom: CHANGELOG
-type: meta-doc
 created: 2026-05-20
 modified: 2026-09-03
 tags: [meta]
