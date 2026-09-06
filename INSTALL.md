@@ -462,7 +462,7 @@ Le fichier `.obsidian/snippets/roles.css` est versionné dans le repo. Pour l'ac
 3. Cherche **roles** dans la liste
 4. Clique sur le toggle à droite — il devient violet/actif
 
-![Extrait CSS activé dans Apparence → Extraits CSS](docs/install/img/27-snippet-galaxies-active.png)
+![Extrait CSS roles activé dans Apparence → Extraits CSS](docs/install/img/27-snippet-roles-active.png)
 
 Le toggle passe au violet et l'effet est immédiat dans la sidebar.
 
