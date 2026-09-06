@@ -6,8 +6,15 @@
 
 Spécification : AI/audit/rapports/axe-4-fraicheur.md, annexe B (+ constats C2, C5, C8).
 
-C'est un RAPPORT, pas un validateur : code de retour **0 en toutes circonstances**.
+C'est un RAPPORT, pas un validateur : code de retour **0 sur les constats**.
 Bloquer un commit sur la santé d'un dépôt tiers rendrait le vault otage de l'amont.
+Une seule exception, posée au lot 8 : **3** quand l'autotest de démarrage montre
+qu'une règle est MUETTE — filtre de section qui ne matche plus rien après une
+refonte de gabarit. Là, ce n'est pas l'amont qui est en panne, c'est ce script, et
+c'est ce silence-là qui a laissé la règle C2 morte pendant tout le lot 6.
+
+Périmètre : `role: brique` **et** `role: comparatif` (les onze puces datées de fin
+de vie vivent sur les comparatifs — cf. `comparatifs_vs_maturite`, règle C2').
 
 Ce qu'il refuse de faire (annexe B) : aucun mode --fix ; il n'écrit jamais dans Dev/,
 Wiki/, MOC/, Documentation/, Templates/ ; il ne réécrit ni un url_repo transféré ni une
@@ -60,6 +67,18 @@ SECTIONS = {"## Définition", "## Mise en œuvre", "## Prendre si / Écarter si"
             "## Retours"}
 DECLIN = re.compile(r"dormant|déclin(?:e|ant)?\b|(?:plus|non) maintenu|"
                     r"maintenance (?:très )?ralentie|sans commit depuis", re.I)
+# FIN_DE_VIE — les faits de CYCLE DE VIE, ajoutés au lot 8. `DECLIN` décrit un
+# projet qui ralentit ; ceux-ci décrivent un projet dont la vie s'arrête, et ce
+# sont eux que portent les onze puces datées des pages de comparatif : un dépôt
+# archivé, un rachat suivi d'un passage en maintenance mode, un service hébergé
+# fermé, une bascule de licence en BSL, un tier fermé aux nouveaux clients.
+# Cherchés dans les DEUX périmètres — une fiche qui écrit « dépôt archivé » en
+# gardant `maturite: production` porte exactement le même défaut.
+FIN_DE_VIE = re.compile(
+    r"d[ée]p[ôo]t\s+\*{0,2}archiv|archiv[ée]e?\s+(?:le|depuis)|maintenance mode|"
+    r"rachet[ée]\s+par|service h[ée]berg[ée]\s+\*{0,2}arr[êe]t|"
+    r"(?:pass[ée]|bascul[ée])\s+en\s+\*{0,2}BSL|"
+    r"ferm[ée]\s+aux nouveaux|maintenance\s+(?:s'arr[êe]te|arr[êe]t[ée]e)", re.I)
 # Annexe C §3 : formulations qui présentent une version comme *courante*.
 VERSION_COURANTE = re.compile(r"la version courante|dernière version|"
                               r"est la version activement développée", re.I)
@@ -71,7 +90,8 @@ SPDX_FERMEES = {"SSPL-1.0", "BUSL-1.1", "BUSL-1.0", "Elastic-2.0", "FSL-1.1-ALv2
                 "FSL-1.1-MIT", "CC-BY-NC-4.0", "CC-BY-NC-SA-4.0", "Commons-Clause"}
 # Tri de la sortie humaine : du plus grave au plus mineur.
 GRAVITE = ["depot_disparu", "url_morte", "version_perimee", "depot_transfere",
-           "corps_declin_vs_maturite_vive", "depot_archive", "push_ancien",
+           "corps_declin_vs_maturite_vive", "comparatif_declin_vs_maturite_vive",
+           "depot_archive", "push_ancien",
            "deprecie_sans_alternative",
            "licence_divergente", "url_domaine_change"]
 # Le lot 2 de la migration v3 a supprimé `status:` et `remplace_par:`. Les cinq règles
@@ -100,22 +120,49 @@ def parse(texte: str) -> tuple[dict | None, str]:
     return (fm if isinstance(fm, dict) else None), parts[2]
 
 
+# Dossiers de la racine qui ne portent PAS de pages du brain. `Templates/` en est,
+# et son absence était un défaut de périmètre corrigé au lot 8 : `Service-Dev.md` et
+# `Outil-Dev.md` portent `role: brique`, donc le script annonçait « 339 fiches »
+# quand le vault en compte 337, et sondait les URL de deux gabarits.
+NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
+             "Projects", "docs", "MOC"}
+
+
+def _pages(role: str) -> list[tuple[str, dict, str]]:
+    """Les pages d'un `role:`, triées par chemin."""
+    out = []
+    for p in sorted(VAULT.rglob("*.md"), key=lambda q: q.as_posix()):
+        parts = p.relative_to(VAULT).parts
+        if not parts or parts[0] in NON_PAGES:
+            continue
+        fm, corps = parse(p.read_text(encoding="utf-8"))
+        if fm and fm.get("role") == role:
+            out.append((p.relative_to(VAULT).as_posix(), fm, corps))
+    return out
+
+
 def fiches() -> list[tuple[str, dict, str]]:
     """Les pages `role: brique` du vault, triées par chemin (annexe C §1).
 
     Balayait `Dev/` avant le lot 3 ; balaye la racine depuis, puisque les briques
-    descendent dans l'arbre des domaines. `.git/` et `.claude/` sont écartés — un
-    worktree est une copie complète du vault, le balayer doublerait tout.
+    descendent dans l'arbre des domaines. Les dossiers d'outillage sont écartés —
+    un worktree est une copie complète du vault, le balayer doublerait tout, et
+    `Templates/` porte deux gabarits en `role: brique` qui ne sont pas des fiches.
     """
-    out = []
-    for p in sorted(VAULT.rglob("*.md"), key=lambda q: q.as_posix()):
-        parts = p.relative_to(VAULT).parts
-        if not parts or parts[0] in {".git", ".claude"}:
-            continue
-        fm, corps = parse(p.read_text(encoding="utf-8"))
-        if fm and fm.get("role") == "brique":
-            out.append((p.relative_to(VAULT).as_posix(), fm, corps))
-    return out
+    return _pages("brique")
+
+
+def comparatifs() -> list[tuple[str, dict, str]]:
+    """Les pages `role: comparatif`, entrées dans le périmètre au lot 8.
+
+    Onze puces datées y vivent — Helicone en maintenance mode depuis le rachat
+    Mintlify, le dépôt OSS de Vanna archivé le 29 mars 2026, TorchServe archivé le
+    7 août 2025, Seldon basculé en BSL le 22 janvier 2024, le service Neptune
+    arrêté le 5 mars 2026… Ce sont exactement les faits que ce script existe pour
+    surveiller, et il ne les voyait pas : son périmètre s'arrêtait à `role: brique`.
+    Une page de comparatif est une page comme une autre depuis la clôture du lot 5.
+    """
+    return _pages("comparatif")
 
 
 # Wikilinks du corps. Depuis le lot 3, les liens du vault sont NUS : le test
@@ -172,10 +219,50 @@ def hors_ligne(fm: dict, corps: str) -> list[tuple[str, str, str, str]]:
         sig.append(("deprecie_sans_alternative", f"maturite={mat}", etat, f"maturite={mat}"))
     if mat is not None and mat != MATURITE_MORTE:
         for ligne in lignes_sujet(corps):
-            if DECLIN.search(ligne):
+            if DECLIN.search(ligne) or FIN_DE_VIE.search(ligne):
                 sig.append(("corps_declin_vs_maturite_vive", f"maturite: {mat}",
                             ligne[:90], ""))
                 break
+    return sig
+
+
+# Une puce de comparatif : `- [[Cible]] — <ce qui la départage>`. Seule l'ENTRÉE de
+# la puce désigne la brique dont elle parle ; un lien cité au milieu de la glose
+# parle d'autre chose.
+PUCE_COMPARATIF = re.compile(r"^\s*-\s*\[\[([^\]|#]+?)(?:\|[^\]]*)?\]\]\s*[—-]\s*(.+)$")
+
+
+def comparatifs_vs_maturite(cmps, index) -> list[tuple[str, str, str, str, str]]:
+    """C2' — un comparatif décrit la fin de vie d'une brique que son frontmatter dit
+    vivante. Rend : (chemin de la BRIQUE, code, valeur brain, constaté, comparatif).
+
+    C'est une règle CROISÉE, et c'est ce qui la rend nécessaire : le fait est écrit
+    sur le comparatif, le champ qu'il contredit vit sur la fiche, et personne ne
+    relit les deux ensemble. Brancher le script sur `role: comparatif` SANS cette
+    règle n'aurait rien produit — les deux règles hors ligne existantes lisent
+    `maturite:` et `alternatives:`, qu'un comparatif ne porte pas ; le compteur
+    serait resté à zéro, ce qui ressemble à une règle satisfaite. C'est le piège que
+    le lot 6 a trouvé sur `SECTIONS`, et il n'était pas à retomber dedans.
+    """
+    sig = []
+    for chemin, _, corps in cmps:
+        for ligne in corps.splitlines():
+            m = PUCE_COMPARATIF.match(ligne)
+            if not m:
+                continue
+            glose = m.group(2)
+            if not (DECLIN.search(glose) or FIN_DE_VIE.search(glose)):
+                continue
+            entree = index.get(m.group(1).split("/")[-1].strip())
+            if entree is None:
+                continue
+            chemin_brique, fm = entree
+            mat = fm.get("maturite")
+            if mat is None or mat == MATURITE_MORTE:
+                continue
+            sig.append((chemin_brique, "comparatif_declin_vs_maturite_vive",
+                        f"maturite: {mat}", glose[:80],
+                        chemin.rsplit("/", 1)[-1][:-3]))
     return sig
 
 
@@ -302,6 +389,39 @@ def main() -> int:
     token = os.environ.get("GITHUB_TOKEN") or None
 
     pages = fiches()
+    cmps = comparatifs()
+    index_briques = {str(fm.get("nom")): (chemin, fm) for chemin, fm, _ in pages
+                     if fm.get("nom")}
+
+    # ------------------------------- AUTOTEST : une règle muette est une règle morte
+    # Le lot 6 a trouvé la règle C2 morte sur le vault ENTIER, en silence : la
+    # constante `SECTIONS` portait les quatre noms de sections d'avant le gabarit,
+    # `lignes_sujet()` ne rendait plus une seule ligne, et comme ce script sort 0 en
+    # toutes circonstances, « zéro signalement » ressemblait à « tout va bien ».
+    # Le contrat « toujours 0 » protège le vault d'un dépôt tiers en panne ; il ne
+    # couvre pas le script lui-même en panne. Un filtre sur un nom de section est
+    # cassé par toute refonte de gabarit, et il ne le dit pas : on le lui fait dire.
+    lignes_balayees = sum(1 for _, _, corps in pages for _ in lignes_sujet(corps))
+    puces_comparatif = sum(
+        1 for _, _, corps in cmps for ligne in corps.splitlines()
+        if PUCE_COMPARATIF.match(ligne))
+    muettes = []
+    if pages and lignes_balayees == 0:
+        muettes.append("`SECTIONS` ne matche AUCUNE section des "
+                       f"{len(pages)} fiches — la règle C2 est morte")
+    if cmps and puces_comparatif == 0:
+        muettes.append("`PUCE_COMPARATIF` ne matche AUCUNE puce des "
+                       f"{len(cmps)} comparatifs — la règle C2' est morte")
+    if muettes:
+        print("!" * 78)
+        print("verifier_fraicheur : REGLE(S) MORTE(S) — le script ne mesure plus "
+              "ce qu'il croit mesurer.")
+        for m in muettes:
+            print(f"  - {m}")
+        print("Un compteur a zero n'est pas une bonne nouvelle. Reparer les motifs "
+              "avant de lire\nquoi que ce soit de la sortie ci-dessous.")
+        print("!" * 78)
+
     ancien = json.loads(SORTIE.read_text(encoding="utf-8")) if SORTIE.exists() else {}
     aujourdhui = datetime.now(timezone.utc).date()
 
@@ -337,11 +457,26 @@ def main() -> int:
             lignes.append((GRAVITE.index(code) if code in GRAVITE else 99,
                            chemin, code, brain, constate))
 
+    # C2' — les faits de fin de vie écrits sur un comparatif, confrontés au
+    # `maturite:` de la brique dont la puce parle. Versés dans le side-car sous la
+    # fiche concernée, pas sous le comparatif : c'est la fiche qui porte le champ à
+    # corriger, et c'est là qu'on veut retrouver le signalement.
+    for chemin, code, brain, constate, source in comparatifs_vs_maturite(cmps, index_briques):
+        rec = resultat.setdefault(chemin, dict(ancien.get(chemin) or {}))
+        rec.setdefault("signalements", [])
+        jeton = f"{code}:{source}"
+        if jeton not in rec["signalements"]:
+            rec["signalements"].append(jeton)
+        lignes.append((GRAVITE.index(code) if code in GRAVITE else 99,
+                       chemin, code, brain, f"{constate}  [{source}]"))
+
     SORTIE.parent.mkdir(parents=True, exist_ok=True)
     SORTIE.write_text(json.dumps(dict(sorted(resultat.items())), ensure_ascii=False,
                                  indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
     print(f"# Fraîcheur du brain — {aujourdhui.isoformat()}")
+    print(f"{len(cmps)} comparatif(s) lus · {puces_comparatif} puce(s) confrontées "
+          f"au `maturite:` de leur cible · {lignes_balayees} ligne(s) de fiche balayées")
     print(f"{len(pages)} fiches Dev lues · {len(a_sonder)} sondées en ligne "
           f"(jeton : {'oui' if token else 'non'}) · seuil push_ancien : "
           f"{args.seuil_jours} j · {len(lignes)} signalement(s)\n")
@@ -352,7 +487,11 @@ def main() -> int:
         print(f"{nom[:33]:<34} {code:<31} {brain[:25]:<26} {constate}")
     print(f"\nSide-car écrit : {SORTIE.relative_to(VAULT).as_posix()} "
           f"({len(resultat)} fiche(s)). Rapport seul : rien n'a été corrigé.")
-    return 0  # toujours 0 : rapport, pas validateur (annexe B)
+    # 0 sur les CONSTATS — un dépôt tiers en panne ne bloque pas le vault (annexe B).
+    # 3 si l'AUTOTEST a parlé : là, ce n'est pas l'amont qui est en panne, c'est ce
+    # script. Le contrat « toujours 0 » n'a jamais couvert ce cas, et c'est ce
+    # silence qui a laissé la règle C2 morte pendant tout le lot 6.
+    return 3 if muettes else 0
 
 
 if __name__ == "__main__":
