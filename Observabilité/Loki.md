@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-complements: []
+complements: ["[[Grafana]]"]
 tags: [observability, logging, distributed]
 url_docs: https://grafana.com/docs/loki/latest/
 url_repo: https://github.com/grafana/loki
@@ -19,39 +19,58 @@ url_repo: https://github.com/grafana/loki
 
 # Loki
 
-## Pourquoi
+<!-- AUTO:BANDEAU:START -->
+> Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
 
-Système d'**agrégation de logs** open-source de Grafana Labs (**AGPLv3**, écrit en **Go**), « comme Prometheus, mais pour les logs ». Son parti pris : **n'indexer que des labels** (un jeu d'étiquettes par flux de logs), pas le contenu — ce qui réduit fortement le coût de stockage face à un moteur plein-texte. Les logs sont compressés en **chunks** et déposés sur un **object store** (S3, GCS, ou le filesystem en dev). Multi-tenant, **horizontalement scalable** (architecture microservices : distributor, ingester, querier, query-frontend), requêté en **LogQL** (proche de PromQL) et exploré dans [[Grafana]].
+| Nature | Licence | Exécution | Maturité |
+|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+<!-- AUTO:BANDEAU:END -->
 
-## Quand l'utiliser
+## Définition
 
-- Agréger des logs **à coût maîtrisé** grâce à l'indexation par labels + object store.
-- Stack déjà sur **Grafana / Prometheus** : intégration naturelle, LogQL familier.
-- Corréler logs et métriques dans un même tableau de bord [[Grafana]].
+Système d'agrégation de logs de Grafana Labs — « comme Prometheus, mais pour les logs ».
+Son parti pris tient en une phrase : **n'indexer que des labels**, un jeu d'étiquettes
+par flux de logs, et jamais le contenu, ce qui effondre le coût de stockage face à un
+moteur plein-texte. Les lignes sont compressées en *chunks* déposés sur un object store,
+et l'architecture est découpée en composants — distributor, ingester, querier,
+query-frontend — dimensionnables séparément, multi-tenant. Les requêtes s'écrivent en
+**LogQL**, proche de PromQL. La conséquence directe du modèle est le seul vrai paramètre
+de conception : la **cardinalité des labels**. Un identifiant utilisateur posé en label
+fait exploser l'index et la facture ; les labels se modélisent avec parcimonie.
 
-## Quand NE PAS l'utiliser
+## Prendre si / Écarter si
 
-- Besoin de **recherche plein-texte** riche ou d'analytics sur le contenu des logs → [[Elasticsearch]] (qui indexe le contenu).
-- Logs **non structurés en labels** exploitables : sans labels pertinents, l'avantage de Loki s'effondre et les requêtes deviennent de simples scans.
+| Prendre si | Écarter si |
+|---|---|
+| Agréger des logs à coût maîtrisé, par indexation de labels et stockage objet | Recherche plein-texte riche, ou analytique sur le contenu des lignes → [[Elasticsearch]], qui indexe le contenu |
+| Stack déjà sur Grafana et Prometheus : intégration native, LogQL déjà familier | Logs sans labels discriminants : l'avantage s'effondre et toute requête redevient un scan de chunks |
+| Corréler logs et métriques dans un même tableau de bord | Recherches arbitraires et massives sur du texte : il n'y a pas d'index de contenu à interroger |
+| Monter en charge par composant : distributor, ingester et querier se dimensionnent séparément | Exploration hors Grafana ou d'un client LogQL : le confort de requêtage en dépend entièrement |
 
-## Déploiement & coût
+## Mise en œuvre
 
-- **Self-host** : binaire unique (mode monolithique) ou déploiement microservices distribué ; nécessite un object store. `scaling: distributed` (composants scalables indépendamment).
-- **Grafana Cloud Logs** managé (`hosted: both`).
-- **AGPLv3** gratuit.
+- Installation — binaire unique en mode monolithique, ou déploiement par composants (Helm) pour le mode distribué ; Grafana Cloud Logs pour l'offre managée
+- Point d'entrée — API HTTP d'ingestion et de requêtage ; LogQL depuis un tableau de bord ou `logcli`
+- Prérequis — un object store (S3, GCS, Azure Blob) ; le filesystem ne convient qu'en développement
+- Exécution — auto-hébergé ou managé ; composants scalables indépendamment les uns des autres
+- Coût — gratuit, AGPL-3.0 ; Grafana Cloud Logs facturé à l'usage
 
-## Pièges
+## Écosystème
 
-- **Cardinalité des labels** : trop de valeurs distinctes (ex. un ID utilisateur en label) explose l'index et les coûts — modéliser les labels avec parcimonie.
-- Pas d'index de contenu : les requêtes **scannent les chunks** (filtrage), peu adapté aux recherches arbitraires massives sur du texte.
-- Confort d'exploration **dépendant de Grafana** (ou d'un client LogQL).
+### Alternatives
 
-## Alternatives
+- *Aucune alternative déclarée : le voisin fonctionnel, Elasticsearch, relève de `database/search` et non de cette catégorie — il est pointé dans le tableau ci-dessus.*
 
-- [[Elasticsearch]] — voisin : approche concurrente par **indexation du contenu** (recherche plein-texte puissante, mais plus coûteuse) ; relève de `database/search`, pas de cette catégorie.
+### Compléments
 
-## Liens
+- [[Grafana]] — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud. — même éditeur, et l'interface de requêtage LogQL de fait
 
-- [[Grafana]] — visualisation et exploration des logs Loki (LogQL), même éditeur.
-- [[Elasticsearch]] — alternative par indexation plein-texte.
-- Doc : https://grafana.com/docs/loki/latest/
+## Ressources
+
+- Documentation — https://grafana.com/docs/loki/latest/
+- Dépôt — https://github.com/grafana/loki
+
+## Voir aussi
+
+- [[Observabilité]] — le hub du domaine
