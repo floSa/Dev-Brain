@@ -16,9 +16,18 @@
 # Activation (versionnée, mais pas automatique — cf. INSTALL.md §16) :
 #     git config core.hooksPath .githooks
 #
-# Ce que le hook contrôle : l'auteur ET le committer, les deux pouvant différer.
-# Ce qu'il ne contrôle pas : le trailer `Co-Authored-By`, qui relève du message
-# et non de l'identité — il est interdit ailleurs (cloturer-brain).
+# Ce que le hook contrôle : l'auteur ET le committer, les deux pouvant différer,
+# plus la PRÉSENCE du hook `commit-msg`, qui porte l'autre moitié de la règle.
+#
+# Le trailer `Co-Authored-By` est interdit lui aussi — les commits du vault sont
+# à floSa seul — mais ce hook ne peut pas le lire : git l'exécute AVANT de
+# composer le message, et `COMMIT_EDITMSG` porte alors encore celui du commit
+# précédent. Le test vit donc dans `.githooks/commit-msg`, seul hook qui reçoive
+# le message. Ce qui reste ici est le contrôle d'INSTALLATION : refuser de
+# committer quand ce hook-là manque, pour qu'une installation partielle ne fasse
+# pas disparaître le garde-fou en silence. Cinq commits de `main` portent le
+# trailer (859cc55, 2b6dde7, f23d72f, aaeda03, b18a4e3) précisément parce que
+# rien ne le cherchait.
 
 set -u
 
@@ -64,5 +73,54 @@ esac
 case "$committer" in
     *"$DOMAINE_INTERDIT"*) refuse "committer" "$committer" ;;
 esac
+
+# --- Le garde-fou du garde-fou : `commit-msg` doit être installé -------------
+# Sans lui, rien ne cherche le trailer `Co-Authored-By`, et l'absence ne se voit
+# pas : un commit passe, simplement. On lit le `core.hooksPath` EFFECTIF, celui
+# que git utilisera, pas le chemin où ce fichier se trouve.
+hooks_dir=$(git config --get core.hooksPath || echo "")
+if [ -z "$hooks_dir" ]; then
+    hooks_dir="$(git rev-parse --git-common-dir)/hooks"
+fi
+case "$hooks_dir" in
+    /*|[A-Za-z]:[/\]*) ;;                                   # déjà absolu
+    *) hooks_dir="$(git rev-parse --show-toplevel)/$hooks_dir" ;;
+esac
+
+# La condition reproduit celle de GIT, pas celle du shell : sous Windows,
+# `test -x` répond sur des heuristiques de nom de fichier, alors que git juge un
+# hook exécutable dès qu'il porte le bit d'exécution OU commence par `#!`
+# (`is_executable()`, compat/mingw.c). Tester `-x` seul refuserait tous les
+# commits d'un clone Windows parfaitement installé.
+installe=no
+if [ -f "$hooks_dir/commit-msg" ]; then
+    if [ -x "$hooks_dir/commit-msg" ]; then
+        installe=oui
+    else
+        case "$(head -c 2 "$hooks_dir/commit-msg" 2>/dev/null)" in
+            '#!') installe=oui ;;
+        esac
+    fi
+fi
+
+if [ "$installe" != oui ]; then
+    cat >&2 <<MSG
+
+  COMMIT REFUSÉ — le hook « commit-msg » est absent ou non exécutable.
+
+    attendu : $hooks_dir/commit-msg
+
+  C'est lui qui refuse le trailer « Co-Authored-By » ; « pre-commit » ne peut
+  pas le faire (git compose le message APRÈS son passage). Sans lui, la règle
+  « les commits sont à floSa seul » n'est plus vérifiée par rien.
+
+  Réparer :
+
+      git config core.hooksPath .githooks
+      chmod +x .githooks/commit-msg
+
+MSG
+    exit 1
+fi
 
 exit 0

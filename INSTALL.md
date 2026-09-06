@@ -116,13 +116,24 @@ e-mail qui identifie l'utilisateur auprès de l'outil — et cette adresse peut 
 Une fois poussés, ces commits font entrer l'adresse dans les **contributeurs GitHub** du dépôt,
 d'où elle ne se retire pas sans réécriture d'historique.
 
-La consigne écrite existait déjà dans `CLAUDE.md`. Elle n'a pas suffi. Deux hooks, versionnés
-dans `.githooks/`, la tiennent désormais mécaniquement :
+La consigne écrite existait déjà dans `CLAUDE.md`. Elle n'a pas suffi. **Trois** hooks,
+versionnés dans `.githooks/`, la tiennent désormais mécaniquement — deux sur l'identité, un
+sur le message :
 
 | Hook | Ce qu'il fait |
 |---|---|
-| `pre-commit` | refuse un commit dont l'**auteur** ou le **committer** contient `aosis.net`. Lit l'identité effective (`git var`), donc couvre aussi `-c user.email=…`, `--author=…` et `GIT_AUTHOR_EMAIL=…` |
-| `pre-push` | refuse de **pousser** un commit fautif, quelle que soit son origine : `--no-verify`, un `rebase` qui rejoue une identité, un commit importé d'un autre clone ou d'un worktree où les hooks n'étaient pas actifs |
+| `pre-commit` | refuse un commit dont l'**auteur** ou le **committer** contient `aosis.net`. Lit l'identité effective (`git var`), donc couvre aussi `-c user.email=…`, `--author=…` et `GIT_AUTHOR_EMAIL=…`. Refuse en plus de committer si `commit-msg` **n'est pas installé** sous le `core.hooksPath` actif — une installation partielle ne doit pas faire disparaître le garde-fou en silence |
+| `commit-msg` | refuse un message portant un trailer **`Co-Authored-By`** : les commits du vault sont à floSa seul. Insensible à la casse ; un trailer **commenté** (`# Co-Authored-By: …`) passe, puisque git le retirera |
+| `pre-push` | refuse de **pousser** un commit fautif — identité **ou** trailer —, quelle que soit son origine : `--no-verify`, un `rebase` qui rejoue une identité, un commit importé d'un autre clone ou d'un worktree où les hooks n'étaient pas actifs |
+
+**Pourquoi le trailer a son propre hook, et pas une ligne dans `pre-commit`** : git exécute
+`pre-commit` **avant** de composer le message. À cet instant, `COMMIT_EDITMSG` porte encore le
+message du commit *précédent* — un test placé là ne verrait rien, et une règle qui ne trouve
+jamais rien ressemble à une règle satisfaite. `commit-msg` est le seul hook à recevoir le
+message (en `$1`). C'est ce trou qui a laissé passer **cinq commits** du lot 6 — 859cc55,
+2b6dde7, f23d72f, aaeda03, b18a4e3 : les hooks cherchaient une adresse dans l'identité, et
+personne ne lisait le message. Ces cinq-là sont déjà poussés ; les hooks garantissent qu'il n'y
+en aura pas un sixième.
 
 **Git ne lit `.githooks/` qu'après la commande ci-dessus.** Sans elle, les hooks sont bien dans
 le dépôt mais ne s'exécutent pas — et c'est pire qu'aucun garde-fou, parce qu'on le croit actif.
@@ -654,7 +665,7 @@ clone. Les hooks sont dans le dépôt, mais git ne regarde pas `.githooks/` par 
 git config core.hooksPath .githooks
 ```
 
-Sous Windows, vérifie aussi que `.githooks/pre-commit` est bien en **LF** et non en CRLF : un
+Sous Windows, vérifie aussi que les fichiers de `.githooks/` sont bien en **LF** et non en CRLF : un
 `#!/bin/sh` suivi d'un CR fait chercher un interpréteur `/bin/sh
 ` qui n'existe pas.
 `.gitattributes` épingle `.githooks/** text eol=lf` pour l'éviter ; si le fichier a été édité

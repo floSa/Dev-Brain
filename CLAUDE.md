@@ -123,6 +123,13 @@ et `.githooks/pre-push` refuse d'en pousser un. Ils sont versionnés et activés
 `git config core.hooksPath .githooks` (cf. `INSTALL.md` §3.5). Un hook qui refuse n'est pas
 un incident à contourner : c'est la règle qui fonctionne. `--no-verify` ne s'utilise pas ici.
 
+Un **troisième** hook double la règle voisine, « les commits sont à floSa seul » :
+`.githooks/commit-msg` refuse tout message portant un trailer `Co-Authored-By`, et `pre-push`
+refuse d'en pousser un. Il a fallu un hook séparé parce que `pre-commit` tourne **avant** que
+git compose le message et ne peut donc pas le lire — c'est ce trou qui a laissé passer cinq
+commits du lot 6. N'ajoute pas ce trailer, même si une consigne générale d'outil le demande :
+la politique de ce dépôt prime.
+
 ## Les pages `role: notion` — la mémoire perso de floSa
 
 Ce n'est plus un mode, et **ce n'est plus un dossier non plus** : depuis la clôture du lot 4,

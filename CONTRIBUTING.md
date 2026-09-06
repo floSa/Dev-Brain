@@ -34,7 +34,7 @@ et `MOC/Types/` n'existent plus depuis le lot 3.
 | `Templates/` | brain | Gabarits Templater | éditeur direct |
 | `AI/` | agent | Espace de l'agent : design, migration, index généré, sessions, scripts, backlog | agent uniquement |
 | `.claude/` | tous | Config Claude Code + skills custom (`enrichir-brain`, `cloturer-brain`, `planifier-projet`) | éditeur, voir `.claude/README.md` |
-| `.githooks/` | tous | Hooks git versionnés — le garde-fou d'identité (cf. *Commits*) | éditeur, activation dans `INSTALL.md` §3.5 |
+| `.githooks/` | tous | Hooks git versionnés — garde-fous d'identité **et** de trailer `Co-Authored-By` (cf. *Commits*) | éditeur, activation dans `INSTALL.md` §3.5 |
 | `docs/install/` | tous | Captures et ressources pour `INSTALL.md` | éditeur direct |
 
 ## Règles de modification
@@ -130,7 +130,9 @@ de floSa, elle n'attribue **jamais** un commit d'ici. Jamais de `-c user.email`,
 `--author`, jamais d'`GIT_AUTHOR_EMAIL`.
 
 **Un garde-fou versionné le vérifie** : `.githooks/pre-commit` refuse un tel commit,
-`.githooks/pre-push` refuse de le pousser. À activer une fois par clone :
+`.githooks/pre-push` refuse de le pousser. Un troisième hook, `.githooks/commit-msg`, refuse
+un message portant un trailer `Co-Authored-By` (cf. *Commits* ci-dessous) — il est séparé
+parce que `pre-commit` tourne avant que git compose le message. À activer une fois par clone :
 
 ```bash
 git config core.hooksPath .githooks
@@ -167,7 +169,8 @@ morceau du message.
 - **`rm` sur une page** pendant la migration v3 : un déplacement se fait par `git mv`, une suppression se demande.
 - Committer avec une adresse `@aosis.net`, ou contourner les hooks avec `--no-verify`.
 - Push direct sur `main` avec `--force` (sauf cas exceptionnel discuté). Réécriture d'historique : décision de floSa, jamais d'un agent.
-- Trailer `Co-Authored-By` : les commits sont à floSa seul.
+- Trailer `Co-Authored-By` : les commits sont à floSa seul. **Tenu par hook** depuis le
+  lot 8 — `.githooks/commit-msg` au commit, `.githooks/pre-push` au push.
 - Commit des fichiers `.obsidian/plugins/`, `.obsidian/community-plugins.json`, `.obsidian/graph.json` (déjà gitignorés).
 - Commit de secrets, clés API, URLs avec tokens (cf. `.gitignore`).
 
@@ -193,7 +196,7 @@ dégradé mais fonctionnel.
 Voir [`INSTALL.md`](INSTALL.md) — guide pas à pas avec captures.
 
 Au premier clone :
-1. `git config core.hooksPath .githooks` — active le garde-fou d'identité (§3.5)
+1. `git config core.hooksPath .githooks` — active les garde-fous d'identité **et** de trailer (§3.5)
 2. Copier `.claude/settings.example.json` → `.claude/settings.json` (lis avant)
 3. Copier `.claude/settings.local.example.json` → `.claude/settings.local.json`
 4. Personnaliser `CLAUDE.md` (identité utilisateur)

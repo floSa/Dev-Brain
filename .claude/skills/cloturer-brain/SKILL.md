@@ -62,7 +62,9 @@ de floSa.** Elle l'identifie auprès de l'outil ; elle n'attribue **jamais** un 
 
 **Garde-fou mécanique**, parce que la consigne écrite n'a pas suffi : `.githooks/pre-commit`
 refuse tout commit dont l'auteur ou le committer porte `aosis.net`, et `.githooks/pre-push`
-refuse d'en pousser un. Activation : `git config core.hooksPath .githooks` (cf. `INSTALL.md`
+refuse d'en pousser un. Depuis le lot 8, `.githooks/commit-msg` refuse en plus tout message
+portant un trailer `Co-Authored-By`, et `pre-push` refuse d'en pousser un — un hook séparé
+parce que `pre-commit` tourne avant que git compose le message. Activation : `git config core.hooksPath .githooks` (cf. `INSTALL.md`
 §3.5) — **à vérifier sur un clone neuf ou un worktree frais**, sinon les hooks sont là mais
 git ne les lit pas :
 
@@ -185,7 +187,7 @@ frontalement (constat C3 de l'axe 3).
 - **Identité** : celle de la config locale du dépôt. Jamais `-c user.email`, jamais `--author`, jamais l'email du harnais. Hooks `.githooks/` activés par `core.hooksPath`.
 - Commit et push **d'office** après clôture verte, sans demander.
 - **Jamais** de `--force`, de `push --force-with-lease` ni de `rebase` sans accord explicite de l'utilisateur, formulé pour ce cas précis. Une **réécriture d'historique** non plus, y compris pour corriger une identité déjà poussée : c'est une décision de floSa.
-- **Jamais** de trailer `Co-Authored-By` : les commits sont attribués à floSa seul.
+- **Jamais** de trailer `Co-Authored-By` : les commits sont attribués à floSa seul. Tenu par `.githooks/commit-msg` et `.githooks/pre-push` depuis le lot 8.
 - **Jamais** de `--no-verify` : les hooks du dépôt portent une règle, pas une gêne.
 - Intégration dans `main` en **fast-forward uniquement**.
 - Une seule branche vivante à la fois. Les worktrees d'agents se nettoient après intégration.
