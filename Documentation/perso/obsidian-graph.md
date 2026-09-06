@@ -54,6 +54,7 @@ Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 
 ```json
 "colorGroups": [
+  { "query": "path:Comparatifs/",          "color": { "a": 1, "rgb": 15680580 } },
   { "query": "path:Métiers/",              "color": { "a": 1, "rgb": 16766011 } },
   { "query": "[\"role\":\"hub\"]",             "color": { "a": 1, "rgb": 16749099 } },
   { "query": "[\"role\":\"brique\"]",        "color": { "a": 1, "rgb": 4271325 } },
@@ -66,6 +67,12 @@ Bloc exact (clé `colorGroups` de `.obsidian/graph.json`) :
 Vérification des entiers : `16766011` = `#FFD43B` (or) · `16749099` = `#FF922B` (orange) ·
 `4271325` = `#412CDD` (indigo, ex-`galaxie: dev`) · `8042496` = `#7AB800` (vert olive,
 ex-`galaxie: wiki`) · `15680580` = `#EF4444` (rouge) · `9741240` = `#94A3B8` (gris).
+
+**Le hub `Comparatifs/` prend le rouge des comparatifs, pas l'orange des hubs.** La règle
+`path:Comparatifs/` est placée **en tête**, avant `["role":"hub"]`, pour cette raison :
+il ne s'agit pas d'un aiguillage de dossier parmi d'autres, c'est le point de ralliement
+des 47 comparatifs. En orange il se confondait avec les 46 hubs de l'arbre et devenait
+introuvable à l'œil — arbitrage du 2026-09-06.
 
 Deux règles de l'ancien bloc ont été **retirées**, et non transposées :
 
