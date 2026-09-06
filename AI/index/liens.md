@@ -1272,7 +1272,7 @@
 
 ### River  ·  brique
 - tags : `streaming`, `concept-drift`
-- liens sortants : [[Data drift]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[Socle]]
+- liens sortants : [[Data drift]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[Socle]], [[Spark]]
 - liens entrants : [[Data drift]], [[Evidently]], [[Isolation Forest]], [[Machine Learning]], [[Scikit-Learn]], [[Socle]]
 
 ### RLax  ·  brique
@@ -1413,7 +1413,7 @@
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
 - liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DuckDB]], [[Parquet]], [[Polars]], [[Ray]]
-- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Flink]], [[Hyperopt]], [[Parquet]], [[Ray]]
+- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Flink]], [[Hyperopt]], [[Parquet]], [[Ray]], [[River]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
