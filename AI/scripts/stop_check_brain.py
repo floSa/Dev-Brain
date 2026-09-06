@@ -48,6 +48,13 @@ EDIT_TOOLS = {"Write", "Edit", "MultiEdit", "NotebookEdit"}
 CHECK_TIMEOUT_S = 300
 GIT_TIMEOUT_S = 30
 MAX_MESSAGE_CHARS = 2000
+# Le message ne remonte que les lignes `[FAIL]` — les violations DURES. Il portait
+# la QUEUE brute de la sortie, ce qui marchait tant que les avertissements étaient
+# peu nombreux ; le lot 8 les a fait passer de 28 à 110 en écrivant les six règles
+# du §10 qui manquaient, et la queue s'est retrouvée à charrier des R20 et des R8e
+# pour finir par la seule chose utile. Un hook qui noie son propre signal finit
+# ignoré, donc désactivé, donc inutile.
+FAIL_ONLY = "  [FAIL] "
 
 
 def git_root(start: Path) -> Path | None:
@@ -66,7 +73,11 @@ def git_root(start: Path) -> Path | None:
 
 
 def looks_like_vault(path: Path | None) -> bool:
-    """Un DevBrain a un AI/design/brain-v2.md et un dossier Dev/."""
+    """Un DevBrain a un AI/design/brain-v2.md.
+
+    La mention d'un « dossier Dev/ » a disparu de ce test avec le lot 3, mais était
+    restée dans cette phrase — le genre de prose qui survit à ce qui l'invalide.
+    """
     return bool(path) and (path / "AI" / "design" / "brain-v2.md").is_file()
 
 
@@ -167,6 +178,13 @@ def run_check_brain(vault: Path) -> tuple[int, str]:
         out = subprocess.run(
             ["uv", "run", str(script)],
             cwd=str(vault), capture_output=True, text=True, timeout=CHECK_TIMEOUT_S,
+            # `text=True` seul décode avec la page de code du système — cp1252 sous
+            # Windows — alors que `check_brain` écrit de l'UTF-8. Le `systemMessage`
+            # arrivait donc en mojibake (« contrÃ´lÃ©es », « â€” »), c'est-à-dire
+            # illisible par le lecteur auquel il est destiné. Trouvé en EXÉCUTANT le
+            # hook au lot 8 ; `touched_in_git` ci-dessus passait déjà l'encodage,
+            # cet appel-ci l'avait oublié.
+            encoding="utf-8", errors="replace",
         )
     except FileNotFoundError:
         return 0, "uv introuvable — check_brain non lancé."
@@ -202,11 +220,14 @@ def main() -> None:
         print(f"stop_check_brain : check_brain vert.\n{output}", file=sys.stderr)
         return
 
-    tail = output[-MAX_MESSAGE_CHARS:] if output else "(aucune sortie)"
+    fails = [l for l in output.splitlines() if l.startswith(FAIL_ONLY)]
+    corps = "\n".join(fails) if fails else (output or "(aucune sortie)")
+    corps = corps[-MAX_MESSAGE_CHARS:]
     print(json.dumps({
         "systemMessage": (
-            "check_brain a relevé des violations sur les pages touchées "
-            f"(code {code}). Le hook ne bloque pas ; à corriger avant commit.\n{tail}"
+            f"check_brain a relevé {len(fails) or '?'} violation(s) DURE(s) sur les "
+            f"pages touchées (code {code}). Le hook ne bloque pas ; à corriger avant "
+            f"commit.\n{corps}"
         )
     }, ensure_ascii=False))
 
