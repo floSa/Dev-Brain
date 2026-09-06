@@ -310,3 +310,122 @@ dossier « Mathématiques/Optimisation/ » porte déjà les notions
 ce sont elles qu'il faudra relier, et la page
 `Comparatif - Solveurs d'optimisation` dont la section « Ce comparatif ne compare
 rien » sera alors à retirer.
+
+---
+
+## Ce que le lot 8 verse ici — arrêté le 2026-09-06
+
+> Ouvert le **2026-09-06**, à la clôture du lot 8 et de la migration v3. Source :
+> `Analyse` — le lot 8 est un lot de RÈGLES, et tout ce qui suit est du **contenu**.
+> C'est la frontière que `lot-8-durcissement.md` pose lui-même : « ne pas durcir une
+> règle avec des violations résiduelles », mais pas davantage créer des pages pour
+> faire taire un avertissement. Un avertissement se traite comme un sujet.
+
+### 1. Les cinq comparatifs manquants, avec leur axe de départage déjà écrit
+
+Signalés par la conversion du lot 6, qui a lu les 337 fiches à la file. Chacun est
+bon marché à ouvrir parce que **ce qui départage est déjà rédigé dans les fiches** —
+il reste à l'extraire, pas à le trouver. `check_brain` les signale sous `R8a`.
+
+| Catégorie | Briques | Ce qui départage, déjà écrit | Signalé par |
+|---|---|---|---|
+| `ml/apprentissage-profond` | **8** | quatre paragraphes « Nuance : … » font mot pour mot le travail d'une section « Ce qui départage » : bas niveau contre structure imposée, moteur d'optimisation contre surcouche, `Fabric` comme pendant d'`accelerate` | lot 6 / 4 |
+| `llm/assistant` | 5 | et `Comparatif - Frameworks LLM` les **exclut explicitement** par un commentaire de son propre filtre | lot 6 / 8 |
+| `data/format` | 3 | Parquet contre Avro, colonnaire contre ligne ; Iceberg au-dessus des deux, qui n'est pas un format mais une sémantique de table | lot 6 / 13 |
+| `data/synthetique` | 3 | Faker contre Mimesis, écosystème contre vitesse ; SDV ailleurs, il apprend une distribution | lot 6 / 13 |
+| `compute/a-la-demande` | 3 | Daytona, E2B, Modal partagent un dossier avec quatre moteurs sans partager leur vue | lot 6 / 15 |
+
+**À ouvrir en premier : `ml/apprentissage-profond`.** C'est le plus coûteux des cinq
+et pour une raison qui empire avec le temps : faute de comparatif d'accueil, les
+quatre « Nuance » ont dû être **repliées en cellules `Écarter si`**. L'information
+est conservée, mais éclatée en quatre morceaux qui devront rester d'accord entre eux
+— et rien ne le vérifie.
+
+Un sixième trou, d'une autre nature : `Comparatif - Gestionnaires de paquets Python`
+ne dit rien de la **vitesse**, alors que `pip → uv` sur la vitesse était la
+redirection la plus nette de la fiche `pip`. L'intégration a retenu la borne sur la
+fiche ; ajouter la colonne au comparatif reste à faire.
+
+### 2. Les onze filtres de vue trop étroits — `R8e`
+
+`R8e`, née au lot 8, signale **11 briques** qu'une vue a laissées dehors alors
+qu'elle retient leurs pairs de la même `categorie:`. Ce n'est pas un manque de
+comparatif : le comparatif existe, et son filtre est trop étroit. Le correctif est
+d'**élargir le filtre du `.base`**, pas d'écrire une page — donc c'est un travail
+d'une ligne par vue, et il est ici parce qu'il touche du contenu de vue.
+
+| Vue | Ce que son filtre rate | Pourquoi |
+|---|---|---|
+| `ml/tabulaire` | Featuretools, category_encoders, imbalanced-learn | filtre `file.hasTag("boosting")` — les trois ne font pas de boosting |
+| `ml/vision` | Kornia, timm, torchvision | filtre `object-detection or segmentation` — les trois sont des socles, pas des tâches |
+| `web/backend` | Flask, Uvicorn | |
+| `web/frontend` | Jinja2 | |
+| `ml/non-supervise` | hdbscan | |
+| `ml/socle` | River | |
+
+Les deux premiers groupes ont été trouvés **à la main**, par deux lots différents,
+chacun croyant à un cas isolé. C'est ce qui a motivé `R8e`.
+
+### 3. Les 89 briques hors de toute vue — dont 27 sans recours
+
+Décompte du 2026-09-06, sur les 47 vues : **89 briques sur 337 (26 %)** ne sont
+membres d'aucune. Elles se décomposent en trois populations, et seule la troisième
+n'a pas d'issue :
+
+- **51** relèvent des 13 catégories que `R8a` signale déjà — leur issue est un
+  comparatif à créer (§1 ci-dessus en couvre 5) ;
+- **11** sont le cas `R8e` — leur issue est un filtre à élargir (§2) ;
+- **27** vivent dans une catégorie de **1 ou 2 briques**, où aucun comparatif n'a de
+  sens : les seuils sont à 3 briques et 2 membres, et à raison. Leur seule issue est
+  de **ficher des voisins** — c'est-à-dire d'enrichir le brain, ce qui est
+  exactement le propos de ce fichier. Aucune règle ne les signale, et c'est
+  volontaire : 27 avertissements irréparables auraient rendu `R8a` illisible.
+
+Conséquence à ne pas perdre de vue : une brique hors de toute vue garde **toutes**
+ses redirections en cellules `Écarter si`, faute de comparatif d'accueil. Ces 89
+briques sont donc aussi celles qui pèsent le plus dans le taux de 26 % de cellules
+liées qui a rendu la règle 5 du §10 inatteignable dans sa forme d'origine.
+
+### 4. Les 39 champs de frontmatter vides
+
+`build_bandeau.py` les nomme à chaque passage, et depuis le lot 8 il tourne à chaque
+clôture — le compte est donc sous les yeux à chaque fois. **34 sont un `maturite:`
+seul**, et six lots ont mesuré que le trou suit les **dossiers** saisis sans ce champ,
+pas la famille de la brique : c'est un artefact de saisie par lots, pas une
+information manquante par nature. Chaque champ vide coûte une colonne de bandeau.
+
+### 5. Les six déclarations d'`alternatives:` que la fiche elle-même démentit
+
+Réciproques et donc valides pour `check_brain` (R12 passe), mais fausses au sens :
+
+- `t3code`, `Spec Kit` et `BMAD` se placent **au-dessus** de ce qu'elles déclarent
+  concurrent ;
+- `PyTorch Lightning` et `accelerate` déclarent `DeepSpeed` en alternative, alors que
+  les trois fiches disent que c'est un **backend** — donc un `complements:`.
+
+Aucune règle ne peut trancher cela : la réciprocité est vérifiable, la justesse d'une
+relation ne l'est pas. C'est une relecture.
+
+### 6. Les briques nommées mais non fichées
+
+Relevées par les lots de conversion, qui les citent en clair faute de page à lier.
+C'est aussi ce qui interdit d'exiger un wikilink sur toute redirection (règle 5 du
+§10) : les rendre obligatoires à ficher serait une décision de contenu déguisée en
+décision de format.
+
+- outillage Python : `Click`, `argparse`, `Fire`, `mypy`, `unittest`, `conda`,
+  `MkDocs`, `attrs`, `Flake8`, `Black`, `isort`, `pylint`, `Textual`, `colorama`,
+  `prompt_toolkit`, `marshmallow`, `cattrs` ;
+- réseau et sécurité : `Wireshark`, `rsync`, `Qualys SSL Labs`, `Podman`,
+  `Kubernetes` ;
+- data et ML : `psycopg 3`, `asyncpg`, `scikit-survival`, `Pyomo`, `verl`,
+  `OpenRLHF`, `tiktoken`, `Vowpal Wabbit`, `LightEval` ;
+- les onze solveurs de `PuLP` — ils ont leur propre section ci-dessus.
+
+### 7. Deux notions qui citent une catégorie disparue
+
+`Contrats de données & qualité` (cite `data/quality`) et `Versionnage de données`
+(cite `data/versioning`) nomment en prose des catégories que la taxonomie ne porte
+plus. **Elles n'ont pas été corrigées, et ne doivent pas l'être ici** : ce sont des
+pages `role: notion`, la mémoire perso de floSa, et on ne les réécrit pas sans qu'il
+l'ait demandé. À lui proposer, pas à faire.
