@@ -168,12 +168,19 @@ SecondBrain/
 ├── Métiers/   (5 hubs transverses, générés depuis `domaines:`)
 │   └── Data Science · Data Engineering · MLOps · ML Engineering · AI Engineering
 ├── Patterns/   (1 hub + 5 pages `role: pattern`)
-└── Rules/      (1 hub + 5 pages `role: rule`)
+├── Rules/      (1 hub + 5 pages `role: rule`)
+└── Comparatifs/  (1 hub SEUL — les 47 comparatifs restent dans l'arbre)
 ```
 
-Les trois derniers ne sont pas des domaines et ne se dérivent d'aucune `categorie:` :
+Les trois premiers ne sont pas des domaines et ne se dérivent d'aucune `categorie:` :
 « Métiers/ » est indexé par le champ `domaines:`, « Patterns/ » et « Rules/ » par
 `role:`. `check_arbo.py` les compte à part (`arbo.ROLES_SANS_CATEGORIE`).
+
+« Comparatifs/ », né le 2026-09-06, ne relève pas de cette exception : il ne porte
+aucune page à ranger. Les 47 comparatifs gardent leur `categorie:` et le dossier
+qu'elle dérive — ils apparaissent donc dans le détail par domaine ci-dessous, et pas
+ici. Ce hub-là ne les range pas, il les **relie** : sa zone AUTO les cite tous, et
+chacun le cite en retour. `check_arbo.py` ne voit qu'un dossier sans page migrée.
 
 ## Détail par domaine
 

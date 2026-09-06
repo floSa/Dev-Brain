@@ -39,7 +39,7 @@ Pré-requis : Obsidian, Git, Node.js ≥ 18, Python ≥ 3.10, [`uv`](https://doc
 | | |
 |---|---|
 | **L'arbre** | 20 dossiers de domaine à la racine — 337 briques, 297 notions, 47 comparatifs, et une page hub par dossier |
-| **Hors de l'arbre** | `Métiers/` (6 hubs transverses, générés depuis `domaines:`), `Patterns/` et `Rules/`, groupés par `role:` — aucune `categorie:` ne les range |
+| **Hors de l'arbre** | `Métiers/` (6 hubs transverses, générés depuis `domaines:`), `Patterns/` et `Rules/`, groupés par `role:` — aucune `categorie:` ne les range. Plus `Comparatifs/`, qui ne porte **que son hub** : il réunit les 47 comparatifs restés, eux, dans l'arbre |
 | **Skills** | `enrichir-brain` (capture), `cloturer-brain` (clôture + politique git), `planifier-projet` (cadrage) |
 | **Rangement** | trois axes : `role:` ce que la page **est**, `categorie:` son **domaine** (qui donne son dossier), `famille:` la **nature technique** d'une brique — arbres de décision dans `Documentation/general/taxonomie.md` |
 | **Garde-fous** | `check_brain.py` (le contenu) et `check_arbo.py` (le rangement), tous deux à passer au vert avant tout commit |
@@ -61,6 +61,8 @@ DevBrain/
 ├── Métiers/                      ← 6 hubs transverses, générés depuis `domaines:`
 ├── Patterns/                     ← Pattern - <nom>.md   (role: pattern)
 ├── Rules/                        ← Rule - <nom>.md      (role: rule)
+├── Comparatifs/                  ← Comparatifs.md (role: hub) et rien d'autre :
+│                                   il réunit les 47 comparatifs de l'arbre
 ├── Documentation/                ← gouvernance (tags, taxonomie, conventions perso)
 ├── Templates/                    ← gabarits Templater
 ├── Projects/                     ← log des projets en cours (scaffold, vide)
