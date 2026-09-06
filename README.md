@@ -24,6 +24,14 @@ git clone https://github.com/floSa/DevBrain.git ~/DevBrain
 
 **Guide pas à pas complet (avec captures d'écran) :** [INSTALL.md](INSTALL.md).
 
+**Une fois installé**, trois guides d'usage :
+
+| Guide | Pour quoi |
+|---|---|
+| [Manuel d'utilisateur](docs/manuel-utilisateur.md) | ce que tu as sous les yeux : les six rôles, la dérivation du chemin, comment lire une fiche et un comparatif |
+| [Enrichir le brain](docs/guide-enrichissement.md) | ajouter une techno, et ce que ça déclenche autour — une page ne s'ajoute jamais seule |
+| [S'en servir depuis un projet](docs/guide-projet.md) | contraindre l'IA qui code avec ce que tu as déjà évalué |
+
 Pré-requis : Obsidian, Git, Node.js ≥ 18, Python ≥ 3.10, [`uv`](https://docs.astral.sh/uv/), Claude Code.
 
 ## Comment on l'alimente, comment on l'utilise

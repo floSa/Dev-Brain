@@ -1,6 +1,5 @@
 ---
 nom: tags
-type: gouvernance
 created: 2026-06-04
 modified: 2026-09-02
 tags: [meta, gouvernance, vocabulaire]

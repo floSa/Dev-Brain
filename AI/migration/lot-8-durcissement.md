@@ -587,3 +587,28 @@ des conventions de rédaction : elles restent au backlog.
 - [x] `AI/design/brain-v2.md` porte une mention en tête renvoyant vers la v3.
 - [x] Le pilote est à jour et la migration close. Aucune décision n'y reste ouverte sans être
       tranchée ou nommée comme reportée ; `brain-v3.md` ne parle plus d'aucun lot au futur.
+
+---
+
+## R25 — le trou de périmètre, refermé le 2026-09-06
+
+Le lot 8 avait constaté le symptôme sur `README.md` (seul fichier illisible du dépôt, hors
+périmètre de R17) sans refermer la cause. Elle est mesurée : **ni la racine, ni
+`Documentation/`, ni `Templates/` n'entrent dans le périmètre des deux validateurs**, qui
+énumèrent les dossiers de premier niveau portant des pages.
+
+Conséquence constatée le 2026-09-06, deux jours après la clôture de la migration : `Inbox.md`,
+`Home.md`, `CHANGELOG.md` et **onze** documents de gouvernance portaient encore
+`galaxie: meta` ou `type:`, champs supprimés au lot 2. Aucune des quarante conversations de
+migration ne l'a vu, parce que rien ne regardait là.
+
+**R25, dure** : aucun des cinq champs supprimés par la v3 — `galaxie`, `type`, `status`,
+`remplace_par`, `indexe` — ne survit dans le frontmatter d'un `.md` de la racine, de
+`Documentation/` ou de `Templates/`.
+
+`AI/` en est exclu délibérément : ses journaux de lot **citent** ces champs pour raconter leur
+suppression. Une règle qui les y interdirait rendrait impossible d'écrire l'histoire de la
+migration.
+
+Compte à l'écriture : 7 violations, toutes dans `Documentation/` — corrigées dans le même
+commit. Depuis, zéro.

@@ -43,6 +43,8 @@ Règles DURES (bloquent) :
   - frontmatter LISIBLE : une page qui ne parse pas est une erreur, jamais une
     absence. Elle était sautée en silence — hors du total, hors de toutes les
     autres règles, liens non résolus (remontée 44 du lot 4)                    [R17]
+  - aucun champ supprimé par la v3 ne survit HORS de l'arbre des pages —
+    racine, Documentation/, Templates/ (le 2026-09-06)                       [R25]
   - les DIX règles de brain-v3.md §10, durcies au lot 8 après mesure — la
     réciprocité et le pitch des DEUX listes de `## Écosystème`, pas seulement
     d'`alternatives:`                                          [R18, R22]
@@ -750,6 +752,45 @@ def check_alias(active: list[tuple[str, dict, str]]) -> tuple[list[str], list[st
     return warn, dur
 
 
+# --- R25 — champs morts hors de l'arbre des pages ------------------------------
+# Cause : le perimetre des deux validateurs est « les dossiers de premier niveau qui
+# portent des pages ». Ni la RACINE, ni Documentation/, ni Templates/ n'y entrent —
+# donc rien ne les relisait. Consequence mesuree le 2026-09-06 : Inbox.md, Home.md,
+# CHANGELOG.md et onze documents de gouvernance portaient encore `galaxie: meta` et
+# `type: meta-doc`, deux jours apres la suppression des champs au lot 2, sans qu'aucune
+# des quarante conversations de migration ne s'en apercoive.
+CHAMPS_MORTS = ("galaxie", "type", "status", "remplace_par", "indexe")
+
+
+def check_hors_arbre() -> list[str]:
+    """R25 (DURE) — aucun champ supprime par la v3 ne survit hors de l'arbre.
+
+    Perimetre : les .md de la racine, Documentation/ et Templates/. AI/ en est exclu :
+    il porte les journaux de lot, qui CITENT ces champs pour raconter leur suppression.
+    """
+    faits: list[str] = []
+    cibles = sorted(VAULT.glob("*.md"))
+    for d in ("Documentation", "Templates"):
+        cibles += sorted((VAULT / d).rglob("*.md"))
+    for md in cibles:
+        try:
+            texte = md.read_text(encoding="utf-8")
+        except OSError as e:
+            faits.append(f"R25 — {rel(md)} : illisible ({e})")
+            continue
+        if not texte.startswith("---"):
+            continue
+        fin = texte.find("---", 3)
+        if fin == -1:
+            continue
+        for ligne in texte[3:fin].splitlines():
+            cle = ligne.split(":", 1)[0].strip()
+            if cle in CHAMPS_MORTS:
+                faits.append(f"R25 — {rel(md)} : champ `{cle}:` supprime par la v3, "
+                             f"encore present dans le frontmatter")
+    return faits
+
+
 def main() -> int:
     vocab = load_tag_vocab()
     themes = load_theme_vocab()
@@ -1099,6 +1140,7 @@ def main() -> int:
     warn += w_alias
     hard += h_alias
     warn += check_bases(active, cited_bases)
+    hard += check_hors_arbre()
 
     suffixe = f" ({len(illisibles)} illisible(s), cf. R17)" if illisibles else ""
     print(f"check_brain : {len(active)} pages actives contrôlées{suffixe}")

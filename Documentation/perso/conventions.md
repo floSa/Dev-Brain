@@ -1,6 +1,5 @@
 ---
 nom: conventions
-type: perso
 created: 2026-06-04
 modified: 2026-06-04
 tags: [meta, perso, conventions]
