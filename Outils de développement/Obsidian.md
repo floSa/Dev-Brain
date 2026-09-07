@@ -15,7 +15,7 @@ url_docs: https://help.obsidian.md/
 url_repo: 
 ---
 
-<video src="img/obsidian_graph_480p.mp4" controls loop muted autoplay></video>
+![Graphe Obsidian](img/obsidian_graph_optimized.gif)
 
 # Obsidian
 
