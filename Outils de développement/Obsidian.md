@@ -15,6 +15,8 @@ url_docs: https://help.obsidian.md/
 url_repo: 
 ---
 
+<video src="img/obsidian_graph_480p.mp4" controls loop muted autoplay></video>
+
 # Obsidian
 
 <!-- AUTO:BANDEAU:START -->
