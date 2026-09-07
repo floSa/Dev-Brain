@@ -5,7 +5,7 @@
 ![Obsidian](https://img.shields.io/badge/Obsidian-vault-7C3AED?logo=obsidian&logoColor=white) ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white) ![uv](https://img.shields.io/badge/uv-package_manager-DE5FE9?logo=uv&logoColor=white) ![Claude Code](https://img.shields.io/badge/Claude_Code-agent-D97757) 
 
 <p align="center">
-  <img src="docs/img/obsidian_graph_optimized.gif" alt="Vue du graphe Obsidian DevBrain" width="67%" />
+  <img src="docs/img/obsidian_graph_optimized.gif" alt="Vue du graphe Obsidian DevBrain" width="100%" />
 </p>
 
 DevBrain est ma mémoire technique personnelle pour mes projets de dev (data science, data engineering, MLOps, ML/AI engineering). C'est un vault Obsidian versionné dans ce repo : des fiches structurées sur les outils, frameworks, patterns et retours d'expérience que j'utilise, écrites pour être lues aussi bien par moi que par un agent IA. Le but : ne plus jamais rechoisir une base vectorielle ou refaire une erreur déjà loguée — le brain garde la mémoire, le projet suivant en profite directement.
