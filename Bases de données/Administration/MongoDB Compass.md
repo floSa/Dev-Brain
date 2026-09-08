@@ -21,9 +21,9 @@ url_repo: https://github.com/mongodb-js/compass
 <!-- AUTO:BANDEAU:START -->
 > Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript/Electron | source-available | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript/Electron | source-available | Windows, macOS, Linux | — | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

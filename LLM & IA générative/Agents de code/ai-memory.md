@@ -21,9 +21,9 @@ url_repo: https://github.com/akitaonrails/ai-memory
 <!-- AUTO:BANDEAU:START -->
 > Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Rust | open-source | — | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust | open-source | — | — | à jour · 2026-09-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/alteryx/featuretools
 <!-- AUTO:BANDEAU:START -->
 > Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2024-05-14 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

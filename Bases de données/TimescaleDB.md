@@ -20,9 +20,9 @@ url_repo: https://github.com/timescale/timescaledb
 <!-- AUTO:BANDEAU:START -->
 > Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension C | open-source | dans le moteur hôte, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension C | open-source | dans le moteur hôte, rien à héberger | production | à jour · 2026-08-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

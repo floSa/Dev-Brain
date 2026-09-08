@@ -20,9 +20,9 @@ url_repo: https://github.com/openai/openai-agents-python
 <!-- AUTO:BANDEAU:START -->
 > SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python, TypeScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python, TypeScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

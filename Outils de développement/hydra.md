@@ -20,9 +20,9 @@ url_repo: https://github.com/hydra-ecosystem/hydra
 <!-- AUTO:BANDEAU:START -->
 > Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,9 +21,9 @@ url_repo: https://github.com/public-apis/public-apis
 <!-- AUTO:BANDEAU:START -->
 > Annuaire communautaire d'APIs publiques et gratuites (MIT, maintenu depuis 2016) : de l'ordre de 1 700 entrées classées en 52 catégories, dans un seul README — pas un client d'API, pas de service, rien à installer.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Annuaire | open-source | rien à exécuter | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Annuaire | open-source | rien à exécuter | — | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

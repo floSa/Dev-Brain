@@ -20,9 +20,9 @@ url_repo: https://github.com/microsoft/semantic-kernel
 <!-- AUTO:BANDEAU:START -->
 > SDK d'orchestration LLM de Microsoft (C#, Python, Java) — plugins, function calling et planificateurs pour intégrer des agents dans des applications d'entreprise ; désormais convergé dans Microsoft Agent Framework, son successeur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C#, Python, Java | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C#, Python, Java | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

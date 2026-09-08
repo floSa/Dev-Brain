@@ -21,9 +21,9 @@ url_repo: https://github.com/HeidiSQL/HeidiSQL
 <!-- AUTO:BANDEAU:START -->
 > Client SQL léger pour Windows : MySQL/MariaDB, PostgreSQL, SQL Server et SQLite, gratuit et rapide.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Delphi | open-source | Windows (Linux/macOS via Wine) | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Delphi | open-source | Windows (Linux/macOS via Wine) | — | à jour · 2026-08-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

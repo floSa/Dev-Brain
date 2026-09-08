@@ -20,9 +20,9 @@ url_repo: https://github.com/scikit-learn-contrib/hdbscan
 <!-- AUTO:BANDEAU:START -->
 > Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

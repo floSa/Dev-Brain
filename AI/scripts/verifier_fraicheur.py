@@ -28,6 +28,25 @@ Les règles hors ligne (C2, C5, C4) tournent toujours sur les 336 fiches : elles
 coûtent aucun appel. --limit ne borne que les sondes réseau. La reprise saute les
 fiches déjà sondées depuis moins de --age-max-jours. GITHUB_TOKEN optionnel dans
 l'environnement (60 appels/h sans, 5000 avec) — jamais écrit dans le vault.
+
+# Sa sortie a changé de nom le 2026-09-08, et ce n'est pas un détail
+
+Ce script écrivait `AI/index/fraicheur.json`. Ce fichier est devenu, le
+2026-09-08, le **side-car de l'amont** déclaré par `brain.yml` (bloc `amont:`,
+champ `side_car:`) : c'est `brainkit sonder`, appelé par
+`AI/scripts/sonder_amont.py`, qui le compose désormais, et la colonne
+`Fraîcheur` du bandeau des 337 briques le lit. Deux écrivains sur un même
+fichier, avec deux formes d'enregistrement différentes, se seraient effacés
+l'un l'autre en silence — et un side-car à moitié écrit ne se voit pas.
+
+Ce script écrit donc `AI/index/fraicheur-hors-ligne.json`, et il garde ce que le
+kit ne fait pas : les URL mortes et les redirections de domaine, la licence
+constatée contre `licence_type:`, la version majeure affirmée dans le corps
+contre celle du registre, le corps qui décrit un déclin sous une `maturite:`
+vive, et le croisement C2' avec les puces de fin de vie des comparatifs. Les
+deux se recouvrent sur un seul fait — l'archivage — et le kit le sonde
+autrement, sans jeton. Fondre les deux est un lot à part : cf. les *Remontées*
+de `AI/migration/lot-10-fraicheur.md`.
 """
 
 from __future__ import annotations
@@ -50,7 +69,9 @@ except ModuleNotFoundError:  # pragma: no cover
     sys.exit("PyYAML manquant — lancer via uv : uv run AI/scripts/verifier_fraicheur.py")
 
 VAULT = Path(__file__).resolve().parents[2]
-SORTIE = VAULT / "AI" / "index" / "fraicheur.json"
+# `fraicheur.json` appartient depuis le 2026-09-08 au side-car de l'amont, que
+# `brainkit sonder` compose et que le bandeau lit. Cf. l'en-tête.
+SORTIE = VAULT / "AI" / "index" / "fraicheur-hors-ligne.json"
 UA = {"User-Agent": "devbrain-verifier-fraicheur"}
 
 GH_SLUG = re.compile(r"^https?://github\.com/([^/\s]+)/([^/\s?#]+?)(?:\.git)?/?$")

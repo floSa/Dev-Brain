@@ -20,9 +20,9 @@ url_repo: https://github.com/catboost/catboost
 <!-- AUTO:BANDEAU:START -->
 > Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-02-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

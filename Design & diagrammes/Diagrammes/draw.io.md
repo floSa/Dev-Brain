@@ -21,9 +21,9 @@ url_repo: https://github.com/jgraph/drawio
 <!-- AUTO:BANDEAU:START -->
 > Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application JavaScript | open-source | Web, Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application JavaScript | open-source | Web, Windows, macOS, Linux | — | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

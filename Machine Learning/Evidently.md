@@ -20,9 +20,9 @@ url_repo: https://github.com/evidentlyai/evidently
 <!-- AUTO:BANDEAU:START -->
 > Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-10 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

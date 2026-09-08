@@ -21,9 +21,9 @@ url_repo: https://github.com/tt-a1i/archify
 <!-- AUTO:BANDEAU:START -->
 > Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-08-30 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

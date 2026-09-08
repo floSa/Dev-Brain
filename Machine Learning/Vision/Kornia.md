@@ -20,9 +20,9 @@ url_repo: https://github.com/kornia/kornia
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

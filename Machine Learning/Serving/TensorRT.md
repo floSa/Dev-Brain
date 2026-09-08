@@ -20,9 +20,9 @@ url_repo: https://github.com/NVIDIA/TensorRT
 <!-- AUTO:BANDEAU:START -->
 > SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | propriétaire | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | propriétaire | en bibliothèque, rien à héberger | production | à jour · 2026-08-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

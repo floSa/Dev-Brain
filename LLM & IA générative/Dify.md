@@ -22,9 +22,9 @@ url_repo: https://github.com/langgenius/dify
 <!-- AUTO:BANDEAU:START -->
 > Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | source-available | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | source-available | self-hébergé ou managé · mono-nœud | production | à jour · 2026-09-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

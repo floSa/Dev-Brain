@@ -22,9 +22,9 @@ url_repo: https://github.com/firecrawl/firecrawl
 <!-- AUTO:BANDEAU:START -->
 > API de scraping qui transforme un site entier en Markdown prêt pour LLM (scrape, crawl, extraction structurée) — open source AGPL, self-host ou cloud managé.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

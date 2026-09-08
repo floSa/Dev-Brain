@@ -22,9 +22,9 @@ url_repo: https://github.com/apache/flink
 <!-- AUTO:BANDEAU:START -->
 > Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-06-22 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

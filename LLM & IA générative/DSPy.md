@@ -20,9 +20,9 @@ url_repo: https://github.com/stanfordnlp/dspy
 <!-- AUTO:BANDEAU:START -->
 > Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

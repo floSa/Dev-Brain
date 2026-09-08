@@ -22,9 +22,9 @@ url_repo: https://github.com/seaweedfs/seaweedfs
 <!-- AUTO:BANDEAU:START -->
 > Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

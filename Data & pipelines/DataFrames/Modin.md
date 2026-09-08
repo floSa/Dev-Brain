@@ -20,9 +20,9 @@ url_repo: https://github.com/modin-project/modin
 <!-- AUTO:BANDEAU:START -->
 > Accélère pandas sans réécriture : `import modin.pandas as pd` parallélise les opérations sur tous les cœurs, avec backends Ray, Dask ou unidist/MPI.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-10-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

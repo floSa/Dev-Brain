@@ -20,9 +20,9 @@ url_repo: https://github.com/astral-sh/ruff
 <!-- AUTO:BANDEAU:START -->
 > Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Rust | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

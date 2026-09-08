@@ -22,9 +22,9 @@ url_repo: https://github.com/mlflow/mlflow
 <!-- AUTO:BANDEAU:START -->
 > Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

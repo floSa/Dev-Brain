@@ -20,9 +20,9 @@ url_repo: https://github.com/numpy/numpy
 <!-- AUTO:BANDEAU:START -->
 > Socle du calcul numérique Python : tableau N-dimensionnel (ndarray) contigu et opérations vectorisées en C ; la fondation de pandas, scikit-learn et tout l'écosystème scientifique.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C / Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C / Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/apache/parquet-format
 <!-- AUTO:BANDEAU:START -->
 > Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

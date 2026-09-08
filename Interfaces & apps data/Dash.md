@@ -20,9 +20,9 @@ url_repo: https://github.com/plotly/dash
 <!-- AUTO:BANDEAU:START -->
 > Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

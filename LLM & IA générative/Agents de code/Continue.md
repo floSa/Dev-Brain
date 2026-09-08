@@ -21,9 +21,9 @@ url_repo: https://github.com/continuedev/continue
 <!-- AUTO:BANDEAU:START -->
 > Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension TypeScript, Kotlin | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension TypeScript, Kotlin | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-06-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

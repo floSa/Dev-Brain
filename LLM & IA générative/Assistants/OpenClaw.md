@@ -22,9 +22,9 @@ url_repo: https://github.com/openclaw/openclaw
 <!-- AUTO:BANDEAU:START -->
 > Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript, Swift | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript, Swift | open-source | self-hébergé · mono-nœud | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

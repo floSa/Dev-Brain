@@ -20,9 +20,9 @@ url_repo: https://github.com/promptfoo/promptfoo
 <!-- AUTO:BANDEAU:START -->
 > Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application | propriétaire | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application | propriétaire | self-hébergé · mono-nœud | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,9 +21,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > IDE bases de données de JetBrains : complétion SQL intelligente, refactoring et navigation multi-moteurs.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Java/Kotlin | propriétaire | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Java/Kotlin | propriétaire | Windows, macOS, Linux | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

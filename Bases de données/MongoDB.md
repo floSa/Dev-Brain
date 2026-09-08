@@ -22,9 +22,9 @@ url_repo: https://github.com/mongodb/mongo
 <!-- AUTO:BANDEAU:START -->
 > Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C++ | source-available | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C++ | source-available | self-hébergé ou managé · distribué | production | à jour · 2026-08-11 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

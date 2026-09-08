@@ -20,9 +20,9 @@ url_repo: https://github.com/pymc-devs/pymc
 <!-- AUTO:BANDEAU:START -->
 > Programmation probabiliste en Python — modélisation bayésienne et échantillonnage MCMC (NUTS) sur un backend autodiff (PyTensor).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-16 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

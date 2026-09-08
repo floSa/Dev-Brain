@@ -22,9 +22,9 @@ url_repo: https://github.com/windmill-labs/windmill
 <!-- AUTO:BANDEAU:START -->
 > Plateforme développeur open source (AGPLv3, Windmill Labs) — transforme des scripts (Python, TS, Go, Bash…) en workflows, UIs et apps internes ; moteur d'exécution distribué très rapide, self-host ou Windmill Cloud, alternative à Temporal/Retool.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Rust | open-core | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust | open-core | self-hébergé ou managé · distribué | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/huggingface/text-generation-inference
 <!-- AUTO:BANDEAU:START -->
 > Serveur d'inférence LLM de Hugging Face (Rust + Python) — production-grade : continuous batching, sharding multi-GPU, streaming ; moteur des Inference Endpoints HF.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Rust/Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust/Python | open-source | self-hébergé ou managé · distribué | production | dépôt archivé · 2026-03-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

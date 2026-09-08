@@ -22,9 +22,9 @@ url_repo: https://github.com/minio/minio
 <!-- AUTO:BANDEAU:START -->
 > Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | production | dépôt archivé · 2026-04-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

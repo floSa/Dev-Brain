@@ -21,9 +21,9 @@ url_repo: https://github.com/pgadmin-org/pgadmin4
 <!-- AUTO:BANDEAU:START -->
 > Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Python | open-source | Windows, macOS, Linux, web (Docker) | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Python | open-source | Windows, macOS, Linux, web (Docker) | — | à jour · 2026-07-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

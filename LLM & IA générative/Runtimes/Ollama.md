@@ -22,9 +22,9 @@ url_repo: https://github.com/ollama/ollama
 <!-- AUTO:BANDEAU:START -->
 > Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · mono-nœud | production | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

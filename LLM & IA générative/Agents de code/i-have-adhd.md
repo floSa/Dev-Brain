@@ -21,9 +21,9 @@ url_repo: https://github.com/ayghri/i-have-adhd
 <!-- AUTO:BANDEAU:START -->
 > Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension Markdown | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension Markdown | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

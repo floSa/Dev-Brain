@@ -20,9 +20,9 @@ url_repo: https://github.com/MaxHalford/prince
 <!-- AUTO:BANDEAU:START -->
 > Analyse factorielle (PCA, CA, MCA, FAMD, MFA, GPA) en API scikit-learn — fit/transform sur DataFrames pandas.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

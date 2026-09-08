@@ -35,7 +35,7 @@ Si aucune ne répond, les ponts **s'arrêtent en 2** et disent les trois pistes.
 Ils ne devinent pas : un kit deviné est un verdict rendu par un code qu'on n'a
 pas choisi.
 
-## Les six ponts
+## Les sept ponts
 
 | Fichier | Ce qu'il appelle | Ce qu'il contrôle ou produit |
 |---|---|---|
@@ -45,6 +45,7 @@ pas choisi.
 | [`build_mocs.py`](build_mocs.py) | `brainkit generer --quoi hubs` | les zones `<!-- AUTO -->` des 74 hubs, `Métiers/`, `Comparatifs.md` |
 | [`build_links.py`](build_links.py) | `brainkit generer --quoi liens` | `AI/index/liens.md`, dont la section « à créer » |
 | [`build_bandeau.py`](build_bandeau.py) | `brainkit generer --quoi bandeau` | les zones `<!-- AUTO:BANDEAU -->` des 337 briques |
+| [`sonder_amont.py`](sonder_amont.py) | `brainkit sonder` | `AI/index/fraicheur.json` : dernière version publiée, dernier commit, dépôt archivé. **N'écrit dans aucune page** |
 
 Plus une **bibliothèque**, [`arbo.py`](arbo.py) : la dérivation
 `categorie:` → chemin, que `enrichir-brain` importe pour savoir où ranger une
@@ -55,6 +56,23 @@ page avant de l'écrire. Son API publique — `domaine()`, `promotions()`,
 Les quatre générateurs prennent `--check` : ils n'écrivent alors rien et sortent
 en **2** s'il reste un écart. C'est la forme vérifiable du contrat *ce qui est
 généré n'est jamais édité à la main*.
+
+`sonder_amont.py` est le seul pont qui parle à l'extérieur du vault. Il n'a
+**pas** sa place dans la séquence de clôture — sonder est un geste occasionnel,
+pas une étape de commit — mais il en déclenche une : après un sondage, la
+colonne `Fraîcheur` du bandeau a changé, et `build_bandeau.py` doit repasser.
+La séquence complète est donc `sonder_amont.py`, puis la clôture normale.
+
+```bash
+uv run AI/scripts/sonder_amont.py              # la passe complète, ~8 minutes
+uv run AI/scripts/sonder_amont.py --limit 60   # une passe bornée, reprise au prochain appel
+uv run AI/scripts/sonder_amont.py --recalculer # rejoue les états, AUCUN appel réseau
+```
+
+Aucun jeton, nulle part : les trois URL sondées sont celles qu'un navigateur
+charge. Un désaccord entre l'amont et la fiche se **signale** (règle
+`amont_concorde`, en avertissement) — il ne se corrige pas, et il n'y a pas de
+`--fix`.
 
 ```bash
 # La séquence de clôture. Le skill `cloturer-brain` la porte en entier —
@@ -90,7 +108,7 @@ Ils n'ont **rien à voir avec BrainKit** et le lot 9 ne les a pas touchés.
 | `query_index.py` | interroger `brain-index.json` par rôle, famille, nom | terminal |
 | `stop_check_brain.py` | hook `Stop` de Claude Code — lance `check_brain.py` si la session a touché une page ; silencieux quand c'est vert | `systemMessage` |
 | `session_to_devbrain.py` | hook `Stop` — écrit le résumé de session | `AI/sessions/…` |
-| `verifier_fraicheur.py` | vérifier la fraîcheur des fiches (versions, dépôts) | `AI/index/fraicheur.json` |
+| `verifier_fraicheur.py` | les règles **hors ligne** de fraîcheur : URL mortes, licence constatée contre `licence_type:`, corps qui décrit un déclin sous une `maturite:` vive, croisement avec les puces de fin de vie des comparatifs | `AI/index/fraicheur-hors-ligne.json` |
 | `audit_mesures.py` | audit des mesures citées dans les fiches | terminal |
 | `list_reservoir.py`, `sync_reservoir.py` | le réservoir v1, hors du vault | terminal |
 | `audit-vault.ps1`, `report-ghosts.ps1`, `find-connexes.ps1`, `discover-links.ps1`, `audit-links.ps1`, `add-wikilinks.ps1`, `gen-stubs-batch.ps1` | audits PowerShell hérités de la v2 | `AI/audits/…` |

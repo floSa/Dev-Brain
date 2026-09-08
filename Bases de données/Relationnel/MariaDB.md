@@ -22,9 +22,9 @@ url_repo: https://github.com/MariaDB/server
 <!-- AUTO:BANDEAU:START -->
 > Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

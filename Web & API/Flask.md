@@ -20,9 +20,9 @@ url_repo: https://github.com/pallets/flask
 <!-- AUTO:BANDEAU:START -->
 > Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-02-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

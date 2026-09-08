@@ -20,9 +20,9 @@ url_repo: https://github.com/run-llama/llama_index
 <!-- AUTO:BANDEAU:START -->
 > Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

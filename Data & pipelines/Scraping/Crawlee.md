@@ -20,9 +20,9 @@ url_repo: https://github.com/apify/crawlee
 <!-- AUTO:BANDEAU:START -->
 > Framework de crawling d'Apify (Node.js et Python) à API unifiée HTTP + navigateur (Playwright/Puppeteer) : rotation de proxys, anti-fingerprint, autoscaling et file d'URLs persistante.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

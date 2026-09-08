@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et fallbacks automatiques ; ~5,5 % de frais sur les crédits, tarifs fournisseurs en pass-through.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

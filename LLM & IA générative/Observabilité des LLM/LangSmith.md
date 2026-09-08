@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme | propriétaire | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme | propriétaire | self-hébergé ou managé · distribué | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,9 +21,9 @@ url_repo: https://github.com/CodebuffAI/freebuff
 <!-- AUTO:BANDEAU:START -->
 > Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI TypeScript | open-core | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-core | en ligne de commande, rien à héberger | — | à jour · 2026-05-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

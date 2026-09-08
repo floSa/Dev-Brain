@@ -22,9 +22,9 @@ url_repo: https://github.com/Helicone/helicone
 <!-- AUTO:BANDEAU:START -->
 > Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/spotify/annoy
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2023-06-14 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

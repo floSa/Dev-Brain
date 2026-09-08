@@ -21,9 +21,9 @@ url_repo: https://github.com/github/spec-kit
 <!-- AUTO:BANDEAU:START -->
 > CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension Python | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

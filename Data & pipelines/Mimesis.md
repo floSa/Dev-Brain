@@ -20,9 +20,9 @@ url_repo: https://github.com/lk-geimfari/mimesis
 <!-- AUTO:BANDEAU:START -->
 > Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-16 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

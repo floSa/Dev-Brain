@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

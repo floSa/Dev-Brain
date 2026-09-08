@@ -22,9 +22,9 @@ url_repo: https://github.com/sgl-project/sglang
 <!-- AUTO:BANDEAU:START -->
 > Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · distribué | production | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

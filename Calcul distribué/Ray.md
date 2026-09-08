@@ -20,9 +20,9 @@ url_repo: https://github.com/ray-project/ray
 <!-- AUTO:BANDEAU:START -->
 > Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

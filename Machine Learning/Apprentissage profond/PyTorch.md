@@ -20,9 +20,9 @@ url_repo: https://github.com/pytorch/pytorch
 <!-- AUTO:BANDEAU:START -->
 > Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

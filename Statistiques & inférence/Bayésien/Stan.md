@@ -20,9 +20,9 @@ url_repo: https://github.com/stan-dev/cmdstanpy
 <!-- AUTO:BANDEAU:START -->
 > Inférence bayésienne haute performance : langage de modélisation dédié compilé en C++, échantillonneur NUTS de référence, piloté depuis Python via CmdStanPy.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ / Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ / Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-10-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

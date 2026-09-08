@@ -21,9 +21,9 @@ url_repo: https://github.com/usebruno/bruno
 <!-- AUTO:BANDEAU:START -->
 > Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application JavaScript (Electron) | open-source | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application JavaScript (Electron) | open-source | Windows, macOS, Linux | — | à jour · 2026-08-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

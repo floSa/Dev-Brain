@@ -22,9 +22,9 @@ url_repo: https://github.com/bentoml/BentoML
 <!-- AUTO:BANDEAU:START -->
 > Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-05-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

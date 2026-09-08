@@ -20,9 +20,9 @@ url_repo: https://github.com/MervinPraison/PraisonAI
 <!-- AUTO:BANDEAU:START -->
 > Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python, JavaScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python, JavaScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

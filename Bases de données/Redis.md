@@ -22,9 +22,9 @@ url_repo: https://github.com/redis/redis
 <!-- AUTO:BANDEAU:START -->
 > Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-17 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

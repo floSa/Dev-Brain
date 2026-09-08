@@ -22,9 +22,9 @@ url_repo: https://github.com/qdrant/qdrant
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle en Rust, ultra-rapide, filtrage payload puissant, self-host simple.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Rust | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

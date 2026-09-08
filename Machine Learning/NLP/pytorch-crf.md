@@ -20,9 +20,9 @@ url_repo: https://github.com/kmkurn/pytorch-crf
 <!-- AUTO:BANDEAU:START -->
 > Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2019-02-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

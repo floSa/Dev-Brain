@@ -20,9 +20,9 @@ url_repo: https://github.com/bbye98/minim
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque Python d'interfaces vers les API musicales (Discogs, iTunes, Qobuz, Spotify, TIDAL, Deezer, Musixmatch) : récupération de métadonnées et tagging audio semi-automatisé.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-04-09 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

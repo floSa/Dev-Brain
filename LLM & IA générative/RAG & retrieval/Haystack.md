@@ -20,9 +20,9 @@ url_repo: https://github.com/deepset-ai/haystack
 <!-- AUTO:BANDEAU:START -->
 > Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

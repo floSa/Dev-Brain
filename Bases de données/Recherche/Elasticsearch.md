@@ -22,9 +22,9 @@ url_repo: https://github.com/elastic/elasticsearch
 <!-- AUTO:BANDEAU:START -->
 > Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

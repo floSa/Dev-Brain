@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/tensorflow/tensorboard
 <!-- AUTO:BANDEAU:START -->
 > Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Python | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | production | à jour · 2026-06-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

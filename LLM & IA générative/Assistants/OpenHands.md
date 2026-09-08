@@ -22,9 +22,9 @@ url_repo: https://github.com/OpenHands/OpenHands
 <!-- AUTO:BANDEAU:START -->
 > Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python, TypeScript | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python, TypeScript | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

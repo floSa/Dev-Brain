@@ -22,9 +22,9 @@ url_repo: https://github.com/cockroachdb/cockroach
 <!-- AUTO:BANDEAU:START -->
 > Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | source-available | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | source-available | self-hébergé ou managé · distribué | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

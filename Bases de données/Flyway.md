@@ -20,9 +20,9 @@ url_repo: https://github.com/flyway/flyway
 <!-- AUTO:BANDEAU:START -->
 > Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Java | open-core | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Java | open-core | en ligne de commande, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

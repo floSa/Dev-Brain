@@ -21,9 +21,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Plateforme d'API tout-en-un : collections, environnements, tests, mocks et doc — la référence du marché, cloud et collaborative.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | — | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | — | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

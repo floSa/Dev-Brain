@@ -22,9 +22,9 @@ url_repo: https://github.com/grafana/loki
 <!-- AUTO:BANDEAU:START -->
 > Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

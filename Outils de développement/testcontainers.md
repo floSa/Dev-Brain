@@ -20,9 +20,9 @@ url_repo: https://github.com/testcontainers/testcontainers-python
 <!-- AUTO:BANDEAU:START -->
 > Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

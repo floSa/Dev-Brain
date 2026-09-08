@@ -20,9 +20,9 @@ url_repo: https://github.com/FOR-sight-ai/interpreto
 <!-- AUTO:BANDEAU:START -->
 > Boîte à outils d'explicabilité post-hoc pour modèles de langage HuggingFace (BERT → LLM) — réunit attributions et méthodes à base de concepts sous une API unique, avec un pipeline concept de bout en bout (extraction d'activations → apprentissage → interprétation → scoring) rare ailleurs.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | experimental |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | experimental | à jour · 2026-06-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

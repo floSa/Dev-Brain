@@ -20,9 +20,9 @@ url_repo: https://github.com/streamlit/streamlit
 <!-- AUTO:BANDEAU:START -->
 > Apps data en Python pur : le script se ré-exécute de haut en bas à chaque interaction, widgets et cache intégrés, zéro HTML/JS.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/vesoft-inc/nebula
 <!-- AUTO:BANDEAU:START -->
 > Base de graphes distribuée pour jeux de données massifs.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C++ | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-07-09 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

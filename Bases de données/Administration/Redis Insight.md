@@ -21,9 +21,9 @@ url_repo: https://github.com/redis/RedisInsight
 <!-- AUTO:BANDEAU:START -->
 > Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript/Electron | source-available | Windows, macOS, Linux, web (Docker) | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript/Electron | source-available | Windows, macOS, Linux, web (Docker) | — | à jour · 2026-07-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

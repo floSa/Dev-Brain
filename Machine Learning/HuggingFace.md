@@ -22,9 +22,9 @@ url_repo: https://github.com/huggingface/transformers
 <!-- AUTO:BANDEAU:START -->
 > Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

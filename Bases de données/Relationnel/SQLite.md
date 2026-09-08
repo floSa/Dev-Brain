@@ -20,9 +20,9 @@ url_repo: https://github.com/sqlite/sqlite
 <!-- AUTO:BANDEAU:START -->
 > Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-12 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

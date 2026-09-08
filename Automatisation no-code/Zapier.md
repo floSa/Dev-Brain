@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Plateforme SaaS d'automatisation no-code / iPaaS (propriétaire) — connecte 8000+ applications via des « Zaps » (déclencheur → actions), plus Tables, Interfaces et agents IA ; entièrement managé, sans self-host.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

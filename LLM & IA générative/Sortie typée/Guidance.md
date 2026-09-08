@@ -20,9 +20,9 @@ url_repo: https://github.com/guidance-ai/guidance
 <!-- AUTO:BANDEAU:START -->
 > Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

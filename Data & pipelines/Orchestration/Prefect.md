@@ -22,9 +22,9 @@ url_repo: https://github.com/PrefectHQ/prefect
 <!-- AUTO:BANDEAU:START -->
 > Orchestrateur Python natif : des décorateurs transforment fonctions en flows et tasks ; workflows dynamiques et résilients, sans DAG statique à déclarer.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

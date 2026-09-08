@@ -22,9 +22,9 @@ url_repo: https://github.com/THU-MAIC/OpenMAIC
 <!-- AUTO:BANDEAU:START -->
 > Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta | à jour · 2026-09-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

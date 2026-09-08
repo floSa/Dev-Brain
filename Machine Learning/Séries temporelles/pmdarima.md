@@ -20,9 +20,9 @@ url_repo: https://github.com/alkaline-ml/pmdarima
 <!-- AUTO:BANDEAU:START -->
 > AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-11-17 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/oobabooga/text-generation-webui
 <!-- AUTO:BANDEAU:START -->
 > UI web open-source (Gradio) pour LLM locaux — multi-backends commutables (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM), chat, vision, tool-calling et API compatible OpenAI/Anthropic ; le couteau suisse historique de l'inférence locale.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Python | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | production | à jour · 2026-05-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

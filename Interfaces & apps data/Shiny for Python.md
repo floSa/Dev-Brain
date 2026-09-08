@@ -20,9 +20,9 @@ url_repo: https://github.com/posit-dev/py-shiny
 <!-- AUTO:BANDEAU:START -->
 > Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

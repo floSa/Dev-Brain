@@ -20,9 +20,9 @@ url_repo: https://github.com/pola-rs/polars
 <!-- AUTO:BANDEAU:START -->
 > DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

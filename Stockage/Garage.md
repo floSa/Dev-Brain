@@ -22,9 +22,9 @@ url_repo: https://git.deuxfleurs.fr/Deuxfleurs/garage
 <!-- AUTO:BANDEAU:START -->
 > Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Rust | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé · distribué | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

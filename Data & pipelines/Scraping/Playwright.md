@@ -20,9 +20,9 @@ url_repo: https://github.com/microsoft/playwright-python
 <!-- AUTO:BANDEAU:START -->
 > Automatisation de navigateur headless (Chromium, Firefox, WebKit) via une API unique : exécute le JavaScript des pages, persiste l'état de session (cookies, storage) et attend le rendu automatiquement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

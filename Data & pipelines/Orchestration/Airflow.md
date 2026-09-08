@@ -22,9 +22,9 @@ url_repo: https://github.com/apache/airflow
 <!-- AUTO:BANDEAU:START -->
 > Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

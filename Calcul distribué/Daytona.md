@@ -22,9 +22,9 @@ url_repo: https://github.com/daytonaio/daytona
 <!-- AUTO:BANDEAU:START -->
 > Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; passé closed-source en juin 2026, le dépôt public restant figé à la v0.190.0 et non maintenu.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | source-available | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | source-available | managé · serverless | production | à jour · 2026-06-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

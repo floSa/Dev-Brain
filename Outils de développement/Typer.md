@@ -20,9 +20,9 @@ url_repo: https://github.com/fastapi/typer
 <!-- AUTO:BANDEAU:START -->
 > Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

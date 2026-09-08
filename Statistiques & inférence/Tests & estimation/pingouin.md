@@ -20,9 +20,9 @@ url_repo: https://github.com/raphaelvallat/pingouin
 <!-- AUTO:BANDEAU:START -->
 > Tests statistiques simples et lisibles, tailles d'effet incluses — la clarté plutôt que l'exhaustivité, sur pandas.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

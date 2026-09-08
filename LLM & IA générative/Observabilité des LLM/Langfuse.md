@@ -22,9 +22,9 @@ url_repo: https://github.com/langfuse/langfuse
 <!-- AUTO:BANDEAU:START -->
 > Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript | open-core | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript | open-core | self-hébergé ou managé · distribué | production | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

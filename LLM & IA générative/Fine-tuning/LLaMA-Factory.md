@@ -20,9 +20,9 @@ url_repo: https://github.com/hiyouga/LLaMA-Factory
 <!-- AUTO:BANDEAU:START -->
 > Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-05-30 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/PyWavelets/pywt
 <!-- AUTO:BANDEAU:START -->
 > Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…) ; le standard de l'analyse temps-échelle.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C / Cython / Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C / Cython / Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

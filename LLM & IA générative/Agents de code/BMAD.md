@@ -21,9 +21,9 @@ url_repo: https://github.com/bmad-code-org/BMAD-METHOD
 <!-- AUTO:BANDEAU:START -->
 > Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/mage-ai/mage-ai
 <!-- AUTO:BANDEAU:START -->
 > Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-01-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

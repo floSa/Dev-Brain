@@ -21,9 +21,9 @@ url_repo: https://github.com/mermaid-js/mermaid
 <!-- AUTO:BANDEAU:START -->
 > Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-08-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

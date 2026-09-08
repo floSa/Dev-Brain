@@ -20,9 +20,9 @@ url_repo: https://github.com/hyperopt/hyperopt
 <!-- AUTO:BANDEAU:START -->
 > Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/fbdesignpro/sweetviz
 <!-- AUTO:BANDEAU:START -->
 > EDA visuelle en une ligne — rapport HTML auto-porté centré sur l'analyse d'une cible et la comparaison de deux jeux (train vs test, sous-groupes).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-04-11 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

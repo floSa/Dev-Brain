@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Base de connaissances personnelle (propriétaire, gratuit en usage perso) : notes markdown locales, liens bidirectionnels et vue en graphe, extensible par plugins ; le socle de ce DevBrain.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| — | propriétaire | — | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| — | propriétaire | — | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

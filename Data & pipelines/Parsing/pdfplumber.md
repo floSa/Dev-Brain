@@ -20,9 +20,9 @@ url_repo: https://github.com/jsvine/pdfplumber
 <!-- AUTO:BANDEAU:START -->
 > Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-15 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

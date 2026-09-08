@@ -22,9 +22,9 @@ url_repo: https://github.com/milvus-io/milvus
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

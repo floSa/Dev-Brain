@@ -20,9 +20,9 @@ url_repo: https://github.com/CamDavidsonPilon/lifelines
 <!-- AUTO:BANDEAU:START -->
 > Analyse de survie en Python pur — estimateurs non paramétriques (Kaplan-Meier, Nelson-Aalen) et modèles de régression (Cox à risques proportionnels, AFT) pour modéliser le temps jusqu'à un événement avec données censurées.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

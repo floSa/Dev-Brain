@@ -22,9 +22,9 @@ url_repo: https://github.com/neo4j/neo4j
 <!-- AUTO:BANDEAU:START -->
 > SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

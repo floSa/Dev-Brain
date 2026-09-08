@@ -20,9 +20,9 @@ url_repo: https://github.com/liquibase/liquibase
 <!-- AUTO:BANDEAU:START -->
 > Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Java | open-core | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Java | open-core | en ligne de commande, rien à héberger | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

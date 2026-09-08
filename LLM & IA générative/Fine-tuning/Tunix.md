@@ -20,9 +20,9 @@ url_repo: https://github.com/google/tunix
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

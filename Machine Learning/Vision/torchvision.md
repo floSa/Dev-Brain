@@ -20,9 +20,9 @@ url_repo: https://github.com/pytorch/vision
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python/C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python/C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

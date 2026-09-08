@@ -20,9 +20,9 @@ url_repo: https://github.com/pytest-dev/pytest
 <!-- AUTO:BANDEAU:START -->
 > Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

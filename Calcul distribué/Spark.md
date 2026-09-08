@@ -22,9 +22,9 @@ url_repo: https://github.com/apache/spark
 <!-- AUTO:BANDEAU:START -->
 > Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Scala / JVM | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Scala / JVM | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/nmslib/hnswlib
 <!-- AUTO:BANDEAU:START -->
 > Implémentation HNSW C++/Python header-only — rapide, minimale, faite pour embarquer l'ANN dans une app.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/Lissy93/web-check
 <!-- AUTO:BANDEAU:START -->
 > Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

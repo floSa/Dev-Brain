@@ -20,9 +20,9 @@ url_repo: https://github.com/pgvector/pgvector
 <!-- AUTO:BANDEAU:START -->
 > Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension C | open-source | dans le moteur hôte, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension C | open-source | dans le moteur hôte, rien à héberger | production | à jour · 2026-07-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

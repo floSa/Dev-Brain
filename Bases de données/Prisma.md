@@ -20,9 +20,9 @@ url_repo: https://github.com/prisma/prisma
 <!-- AUTO:BANDEAU:START -->
 > ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie TypeScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

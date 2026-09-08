@@ -20,9 +20,9 @@ url_repo: https://github.com/matplotlib/matplotlib
 <!-- AUTO:BANDEAU:START -->
 > Socle de la visualisation Python : API impérative bas niveau pour des graphiques statiques entièrement contrôlables (PNG/SVG/PDF), base de presque tout l'écosystème viz.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

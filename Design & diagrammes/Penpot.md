@@ -21,9 +21,9 @@ url_repo: https://github.com/penpot/penpot
 <!-- AUTO:BANDEAU:START -->
 > Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Clojure, JavaScript | open-source | Web (self-host Docker) | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Clojure, JavaScript | open-source | Web (self-host Docker) | — | à jour · 2026-08-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

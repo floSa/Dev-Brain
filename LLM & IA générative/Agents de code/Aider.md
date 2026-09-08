@@ -21,9 +21,9 @@ url_repo: https://github.com/Aider-AI/aider
 <!-- AUTO:BANDEAU:START -->
 > Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Python | open-source | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | — | à jour · 2026-02-12 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/apache/iceberg
 <!-- AUTO:BANDEAU:START -->
 > Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-05-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

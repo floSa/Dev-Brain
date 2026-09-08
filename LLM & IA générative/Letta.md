@@ -22,9 +22,9 @@ url_repo: https://github.com/letta-ai/letta
 <!-- AUTO:BANDEAU:START -->
 > Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-05-14 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

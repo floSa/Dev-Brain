@@ -21,9 +21,9 @@ url_repo: https://github.com/pingdotgg/t3code
 <!-- AUTO:BANDEAU:START -->
 > Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | Windows, macOS, Linux, iOS, Android | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | Windows, macOS, Linux, iOS, Android | — | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

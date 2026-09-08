@@ -21,9 +21,9 @@ url_repo: https://github.com/dbeaver/dbeaver
 <!-- AUTO:BANDEAU:START -->
 > Client SQL universel open-source : un seul outil pour Postgres, MySQL, Oracle, Mongo et 80+ bases.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Java | open-core | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Java | open-core | Windows, macOS, Linux | — | à jour · 2026-08-30 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

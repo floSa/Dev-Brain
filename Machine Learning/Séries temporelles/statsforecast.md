@@ -20,9 +20,9 @@ url_repo: https://github.com/Nixtla/statsforecast
 <!-- AUTO:BANDEAU:START -->
 > Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-16 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

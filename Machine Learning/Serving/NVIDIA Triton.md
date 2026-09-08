@@ -22,9 +22,9 @@ url_repo: https://github.com/triton-inference-server/server
 <!-- AUTO:BANDEAU:START -->
 > Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C++ | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production | à jour · 2026-08-31 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

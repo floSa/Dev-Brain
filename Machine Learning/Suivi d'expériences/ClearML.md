@@ -22,9 +22,9 @@ url_repo: https://github.com/clearml/clearml
 <!-- AUTO:BANDEAU:START -->
 > Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

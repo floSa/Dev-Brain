@@ -20,9 +20,9 @@ url_repo: https://github.com/sfu-db/connector-x
 <!-- AUTO:BANDEAU:START -->
 > Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-01-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

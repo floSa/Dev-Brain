@@ -20,9 +20,9 @@ url_repo: https://github.com/scrapy/scrapy
 <!-- AUTO:BANDEAU:START -->
 > Framework Python mature de crawling à grande échelle : spiders, pipelines, middlewares et requêtes asynchrones — la référence historique du scraping structuré en production.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

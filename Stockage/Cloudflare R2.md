@@ -22,9 +22,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

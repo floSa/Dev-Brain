@@ -20,9 +20,9 @@ url_repo: https://github.com/pypa/pip
 <!-- AUTO:BANDEAU:START -->
 > Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-08-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

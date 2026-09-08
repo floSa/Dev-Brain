@@ -22,9 +22,9 @@ url_repo: https://github.com/getmaxun/maxun
 <!-- AUTO:BANDEAU:START -->
 > Plateforme no-code open source d'extraction web : on enregistre ses actions dans le navigateur pour créer des robots réutilisables qui transforment un site en API ou tableur, self-host.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta | à jour · 2026-08-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

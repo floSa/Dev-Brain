@@ -20,9 +20,9 @@ url_repo: https://github.com/dynaconf/dynaconf
 <!-- AUTO:BANDEAU:START -->
 > Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

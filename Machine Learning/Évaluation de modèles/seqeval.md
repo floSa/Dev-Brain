@@ -20,9 +20,9 @@ url_repo: https://github.com/chakki-works/seqeval
 <!-- AUTO:BANDEAU:START -->
 > Calcul des métriques d'étiquetage de séquence au niveau entité (F1, precision, recall) pour la NER et le chunking — schémas IOB1/2, IOE1/2, IOBES, BILOU, mode strict compatible conlleval ; la référence pour scorer un tagger.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2020-10-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

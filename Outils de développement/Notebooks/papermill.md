@@ -20,9 +20,9 @@ url_repo: https://github.com/nteract/papermill
 <!-- AUTO:BANDEAU:START -->
 > Paramètre et exécute des notebooks Jupyter par API ou CLI — injecte des paramètres dans une cellule taguée et produit un notebook exécuté, pour rejouer/planifier en CI.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-02-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

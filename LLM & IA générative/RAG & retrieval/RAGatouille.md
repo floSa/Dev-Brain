@@ -20,9 +20,9 @@ url_repo: https://github.com/AnswerDotAI/RAGatouille
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2025-05-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

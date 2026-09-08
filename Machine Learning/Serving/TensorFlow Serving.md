@@ -22,9 +22,9 @@ url_repo: https://github.com/tensorflow/serving
 <!-- AUTO:BANDEAU:START -->
 > Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C++ | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production | à jour · 2026-06-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

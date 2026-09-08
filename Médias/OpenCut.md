@@ -21,9 +21,9 @@ url_repo: https://github.com/OpenCut-app/OpenCut
 <!-- AUTO:BANDEAU:START -->
 > Éditeur de montage vidéo open-source (MIT), alternative déclarée à CapCut : cœur Rust, frontend TypeScript/Next.js, médias traités en local. Réécriture en cours — serveur MCP, mode headless et plugins sont annoncés, pas livrés.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript, Rust | open-source | Navigateur (aujourd'hui) ; desktop et mobile annoncés, non livrés | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript, Rust | open-source | Navigateur (aujourd'hui) ; desktop et mobile annoncés, non livrés | — | à jour · 2026-05-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

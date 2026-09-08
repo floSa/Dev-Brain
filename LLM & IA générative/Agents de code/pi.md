@@ -21,9 +21,9 @@ url_repo: https://github.com/earendil-works/pi
 <!-- AUTO:BANDEAU:START -->
 > Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI TypeScript | open-source | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | — | à jour · 2026-09-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

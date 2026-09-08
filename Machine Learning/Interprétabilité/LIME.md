@@ -20,9 +20,9 @@ url_repo: https://github.com/marcotcr/lime
 <!-- AUTO:BANDEAU:START -->
 > Explications locales model-agnostic par surrogate linéaire — perturbe autour d'un point et ajuste un modèle simple interprétable ; rapide et générique (tabulaire, texte, image), mais explications instables et purement locales ; dépôt sans commit depuis juillet 2021, dernière release en juin 2020 — préférer SHAP.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated | amont ancien · 2020-06-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

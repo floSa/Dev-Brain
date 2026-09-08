@@ -22,9 +22,9 @@ url_repo: https://github.com/wandb/wandb
 <!-- AUTO:BANDEAU:START -->
 > Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | production | à jour · 2026-08-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

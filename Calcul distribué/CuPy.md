@@ -20,9 +20,9 @@ url_repo: https://github.com/cupy/cupy
 <!-- AUTO:BANDEAU:START -->
 > NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / C++ / CUDA | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / C++ / CUDA | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

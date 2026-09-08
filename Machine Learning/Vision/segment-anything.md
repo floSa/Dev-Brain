@@ -20,9 +20,9 @@ url_repo: https://github.com/facebookresearch/segment-anything
 <!-- AUTO:BANDEAU:START -->
 > Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Modèle Python | open-source | à charger dans un runtime | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | production | amont ancien · 2024-09-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

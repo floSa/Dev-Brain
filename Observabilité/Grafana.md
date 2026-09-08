@@ -22,9 +22,9 @@ url_repo: https://github.com/grafana/grafana
 <!-- AUTO:BANDEAU:START -->
 > Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Go | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Go | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

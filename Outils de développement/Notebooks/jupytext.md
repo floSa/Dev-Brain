@@ -20,9 +20,9 @@ url_repo: https://github.com/mwouts/jupytext
 <!-- AUTO:BANDEAU:START -->
 > Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

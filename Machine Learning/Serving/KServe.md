@@ -22,9 +22,9 @@ url_repo: https://github.com/kserve/kserve
 <!-- AUTO:BANDEAU:START -->
 > Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | production | à jour · 2026-08-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

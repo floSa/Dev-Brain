@@ -22,9 +22,9 @@ url_repo: https://github.com/vespa-engine/vespa
 <!-- AUTO:BANDEAU:START -->
 > Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java/C++ | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java/C++ | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

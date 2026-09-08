@@ -20,9 +20,9 @@ url_repo: https://github.com/apache/avro
 <!-- AUTO:BANDEAU:START -->
 > Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-08-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

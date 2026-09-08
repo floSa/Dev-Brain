@@ -20,9 +20,9 @@ url_repo: https://github.com/opendataloader-project/opendataloader-pdf
 <!-- AUTO:BANDEAU:START -->
 > Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Java | open-core | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Java | open-core | en bibliothèque, rien à héberger | production | à jour · 2026-09-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,9 +21,9 @@ url_repo: https://github.com/GyulyVGC/sniffnet
 <!-- AUTO:BANDEAU:START -->
 > Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Rust | open-source | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Rust | open-source | Windows, macOS, Linux | — | à jour · 2026-07-22 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

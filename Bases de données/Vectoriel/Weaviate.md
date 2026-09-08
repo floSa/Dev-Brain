@@ -22,9 +22,9 @@ url_repo: https://github.com/weaviate/weaviate
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

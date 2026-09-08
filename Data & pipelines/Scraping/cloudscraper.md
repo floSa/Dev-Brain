@@ -20,9 +20,9 @@ url_repo: https://github.com/VeNoMouS/cloudscraper
 <!-- AUTO:BANDEAU:START -->
 > Module Python qui contourne la page anti-bot « I'm Under Attack » de Cloudflare en résolvant ses défis JavaScript, par-dessus l'API de requests.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-06-10 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

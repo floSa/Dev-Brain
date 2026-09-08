@@ -21,9 +21,9 @@ url_repo: https://github.com/schollz/croc
 <!-- AUTO:BANDEAU:START -->
 > Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Go | open-source | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Go | open-source | en ligne de commande, rien à héberger | — | à jour · 2026-09-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

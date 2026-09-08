@@ -20,9 +20,9 @@ url_repo: https://github.com/google-research/google-research/tree/master/scann
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-08-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

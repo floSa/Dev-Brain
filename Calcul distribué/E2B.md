@@ -22,9 +22,9 @@ url_repo: https://github.com/e2b-dev/E2B
 <!-- AUTO:BANDEAU:START -->
 > Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript, Python, Go | open-source | self-hébergé ou managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript, Python, Go | open-source | self-hébergé ou managé · serverless | production | à jour · 2026-09-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

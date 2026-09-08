@@ -20,9 +20,9 @@ url_repo: https://github.com/theskumar/python-dotenv
 <!-- AUTO:BANDEAU:START -->
 > Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-16 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

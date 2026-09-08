@@ -20,9 +20,9 @@ url_repo: https://github.com/scikit-learn-contrib/imbalanced-learn
 <!-- AUTO:BANDEAU:START -->
 > Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

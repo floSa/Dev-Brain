@@ -20,9 +20,9 @@ url_repo: https://github.com/nltk/nltk
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-13 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/ndif-team/nnsight
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque d'intervention sur les internes d'un réseau PyTorch — capture et modifie activations et gradients via un contexte à exécution différée, et sait exécuter ces interventions à distance sur des modèles trop gros pour la machine locale (infrastructure NDIF).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-05-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

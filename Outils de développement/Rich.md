@@ -20,9 +20,9 @@ url_repo: https://github.com/Textualize/rich
 <!-- AUTO:BANDEAU:START -->
 > Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-04-12 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

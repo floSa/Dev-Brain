@@ -21,9 +21,9 @@ url_repo: https://github.com/yuliskov/SmartTube
 <!-- AUTO:BANDEAU:START -->
 > Client YouTube alternatif pour Android TV et box (MIT, Java) : lecture sans publicité, SponsorBlock, sans Google Services. Distribué hors magasin par APK à installer soi-même.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Java | open-source | Android TV 4.3+ : téléviseurs Android/Google TV, box, NVIDIA Shield, Chromecast with Google TV, FireTV d'avant octobre 2025. Ni smartphone, ni tablette, ni Tizen, ni webOS, ni tvOS. | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Java | open-source | Android TV 4.3+ : téléviseurs Android/Google TV, box, NVIDIA Shield, Chromecast with Google TV, FireTV d'avant octobre 2025. Ni smartphone, ni tablette, ni Tizen, ni webOS, ni tvOS. | — | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

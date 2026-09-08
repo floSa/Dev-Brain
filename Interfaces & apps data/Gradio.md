@@ -20,9 +20,9 @@ url_repo: https://github.com/gradio-app/gradio
 <!-- AUTO:BANDEAU:START -->
 > Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

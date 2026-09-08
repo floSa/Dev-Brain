@@ -22,9 +22,9 @@ url_repo: https://github.com/kestra-io/kestra
 <!-- AUTO:BANDEAU:START -->
 > Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

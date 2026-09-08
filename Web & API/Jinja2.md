@@ -20,9 +20,9 @@ url_repo: https://github.com/pallets/jinja
 <!-- AUTO:BANDEAU:START -->
 > Moteur de templates Python rapide et expressif : gabarits HTML avec héritage, échappement automatique et expressions proches de Python ; le moteur de templates de Flask.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-03-05 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

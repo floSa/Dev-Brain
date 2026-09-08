@@ -20,9 +20,9 @@ url_repo: https://github.com/dmlc/xgboost
 <!-- AUTO:BANDEAU:START -->
 > Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-15 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

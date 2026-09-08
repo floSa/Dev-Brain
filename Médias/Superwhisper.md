@@ -21,9 +21,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Application propriétaire de dictée vocale (macOS, Windows, iOS) qui transcrit en local via whisper.cpp (modèles de 75 Mo à 3 Go) ou WhisperKit/Parakeet, avec repli sur des modèles cloud ; freemium, Pro à 8,49 $/mois ou 249,99 $ à vie.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application | propriétaire | macOS, Windows, iOS | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application | propriétaire | macOS, Windows, iOS | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

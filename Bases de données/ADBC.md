@@ -20,9 +20,9 @@ url_repo: https://github.com/apache/arrow-adbc
 <!-- AUTO:BANDEAU:START -->
 > Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Spécification C / Go / Java | open-source | rien à exécuter | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Spécification C / Go / Java | open-source | rien à exécuter | production | à jour · 2026-07-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

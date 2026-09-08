@@ -20,9 +20,9 @@ url_repo: https://github.com/dorianbrown/rank_bm25
 <!-- AUTO:BANDEAU:START -->
 > Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2022-02-16 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

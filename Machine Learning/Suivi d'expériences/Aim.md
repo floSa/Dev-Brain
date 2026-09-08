@@ -22,9 +22,9 @@ url_repo: https://github.com/aimhubio/aim
 <!-- AUTO:BANDEAU:START -->
 > Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · mono-nœud | production | à jour · 2025-05-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

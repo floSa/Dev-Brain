@@ -21,9 +21,9 @@ url_repo: https://github.com/bradautomates/claude-video
 <!-- AUTO:BANDEAU:START -->
 > Skill /watch qui donne à un agent la capacité de regarder une vidéo (YouTube, TikTok, Loom, fichier local) : télécharge via yt-dlp, extrait des frames JPEG horodatées via ffmpeg, récupère une transcription (captions natives ou Whisper), puis remet frames + transcript à l'assistant pour analyse.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension Python | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-07-01 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

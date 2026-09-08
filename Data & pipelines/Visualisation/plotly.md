@@ -20,9 +20,9 @@ url_repo: https://github.com/plotly/plotly.py
 <!-- AUTO:BANDEAU:START -->
 > Visualisation interactive pour le web (zoom, survol, 3D) via plotly.js ; API haut niveau Plotly Express et socle des apps Dash.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / JavaScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / JavaScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,9 +21,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Extension Chrome qui convertit une page web ou une sélection en Markdown propre, entièrement dans le navigateur, avec copie au presse-papiers ou téléchargement .md.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension | propriétaire | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension | propriétaire | dans le moteur hôte, rien à héberger | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

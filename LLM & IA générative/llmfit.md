@@ -21,9 +21,9 @@ url_repo: https://github.com/AlexsJones/llmfit
 <!-- AUTO:BANDEAU:START -->
 > CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Rust | open-source | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | — | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

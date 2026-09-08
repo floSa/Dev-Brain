@@ -20,9 +20,9 @@ url_repo: https://github.com/astral-sh/uv
 <!-- AUTO:BANDEAU:START -->
 > Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Rust | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

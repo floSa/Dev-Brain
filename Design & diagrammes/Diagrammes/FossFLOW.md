@@ -21,9 +21,9 @@ url_repo: https://github.com/stan-smith/FossFLOW
 <!-- AUTO:BANDEAU:START -->
 > Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | Web (PWA) | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | Web (PWA) | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

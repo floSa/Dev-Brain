@@ -22,9 +22,9 @@ url_repo: https://github.com/ray-project/ray
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

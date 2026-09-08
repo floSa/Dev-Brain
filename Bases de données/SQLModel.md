@@ -20,9 +20,9 @@ url_repo: https://github.com/fastapi/sqlmodel
 <!-- AUTO:BANDEAU:START -->
 > Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

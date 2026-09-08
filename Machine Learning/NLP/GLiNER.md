@@ -20,9 +20,9 @@ url_repo: https://github.com/urchade/GLiNER
 <!-- AUTO:BANDEAU:START -->
 > Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Modèle Python | open-source | à charger dans un runtime | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | beta | à jour · 2026-07-24 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

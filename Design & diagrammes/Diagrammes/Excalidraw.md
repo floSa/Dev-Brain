@@ -21,9 +21,9 @@ url_repo: https://github.com/excalidraw/excalidraw
 <!-- AUTO:BANDEAU:START -->
 > Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | Web, Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | Web, Windows, macOS, Linux | — | à jour · 2026-04-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

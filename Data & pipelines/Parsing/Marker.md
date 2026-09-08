@@ -20,9 +20,9 @@ url_repo: https://github.com/datalab-to/marker
 <!-- AUTO:BANDEAU:START -->
 > Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | source-available | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | source-available | en bibliothèque, rien à héberger | production | à jour · 2026-07-20 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

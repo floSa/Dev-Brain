@@ -20,9 +20,9 @@ url_repo: https://github.com/microsoft/autogen
 <!-- AUTO:BANDEAU:START -->
 > Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python, .NET | open-source | en bibliothèque, rien à héberger | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python, .NET | open-source | en bibliothèque, rien à héberger | deprecated | à jour · 2026-06-30 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

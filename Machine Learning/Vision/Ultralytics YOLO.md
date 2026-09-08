@@ -20,9 +20,9 @@ url_repo: https://github.com/ultralytics/ultralytics
 <!-- AUTO:BANDEAU:START -->
 > Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Modèle Python | open-source | à charger dans un runtime | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | production | à jour · 2026-09-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

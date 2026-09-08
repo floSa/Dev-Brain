@@ -22,9 +22,9 @@ url_repo: https://github.com/SeldonIO/seldon-core
 <!-- AUTO:BANDEAU:START -->
 > Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Go | source-available | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | source-available | self-hébergé · distribué | production | à jour · 2026-01-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

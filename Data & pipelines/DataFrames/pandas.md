@@ -20,9 +20,9 @@ url_repo: https://github.com/pandas-dev/pandas
 <!-- AUTO:BANDEAU:START -->
 > DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / Cython | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / Cython | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-22 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/eosphoros-ai/DB-GPT
 <!-- AUTO:BANDEAU:START -->
 > Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · mono-nœud | production | à jour · 2026-08-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

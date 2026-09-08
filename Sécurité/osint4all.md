@@ -22,9 +22,9 @@ url_repo: https://github.com/osint4all/osint4all.github.io
 <!-- AUTO:BANDEAU:START -->
 > Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Annuaire | open-source | rien à exécuter | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Annuaire | open-source | rien à exécuter | deprecated | amont ancien · 2022-07-09 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/pymupdf/PyMuPDF
 <!-- AUTO:BANDEAU:START -->
 > Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C / Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C / Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/pytorch/serve
 <!-- AUTO:BANDEAU:START -->
 > Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java/Python | open-source | self-hébergé · distribué | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java/Python | open-source | self-hébergé · distribué | deprecated | dépôt archivé · 2025-08-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

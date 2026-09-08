@@ -20,9 +20,9 @@ url_repo: https://github.com/psycopg/psycopg2
 <!-- AUTO:BANDEAU:START -->
 > Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C/Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C/Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-04-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

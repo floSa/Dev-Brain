@@ -21,9 +21,9 @@ url_repo: https://github.com/cline/cline
 <!-- AUTO:BANDEAU:START -->
 > Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension TypeScript | open-source | dans le moteur hôte, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension TypeScript | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/axolotl-ai-cloud/axolotl
 <!-- AUTO:BANDEAU:START -->
 > Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-07-17 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

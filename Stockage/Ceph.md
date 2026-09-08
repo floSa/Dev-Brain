@@ -22,9 +22,9 @@ url_repo: https://github.com/ceph/ceph
 <!-- AUTO:BANDEAU:START -->
 > Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C++ | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C++ | open-source | self-hébergé · distribué | production | à jour · 2026-08-18 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

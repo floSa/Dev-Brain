@@ -20,9 +20,9 @@ url_repo: https://github.com/scikit-learn/scikit-learn
 <!-- AUTO:BANDEAU:START -->
 > Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

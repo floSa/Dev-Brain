@@ -20,9 +20,9 @@ url_repo: https://github.com/fastapi/fastapi
 <!-- AUTO:BANDEAU:START -->
 > Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

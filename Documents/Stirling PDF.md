@@ -22,9 +22,9 @@ url_repo: https://github.com/Stirling-Tools/Stirling-PDF
 <!-- AUTO:BANDEAU:START -->
 > Plateforme PDF web auto-hébergeable au cœur MIT : plus de 50 opérations (fusion, découpe, rotation, conversion, OCR, signature, rédaction, compression) exécutées sur son propre serveur, avec API REST et pipelines no-code ; SSO, audit et déploiement air-gapped réservés aux modules propriétaires.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

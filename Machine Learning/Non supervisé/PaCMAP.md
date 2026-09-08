@@ -20,9 +20,9 @@ url_repo: https://github.com/YingfanWang/PaCMAP
 <!-- AUTO:BANDEAU:START -->
 > Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-03-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

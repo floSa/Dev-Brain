@@ -22,9 +22,9 @@ url_repo: https://github.com/FlowiseAI/Flowise
 <!-- AUTO:BANDEAU:START -->
 > Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme TypeScript | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme TypeScript | open-source | self-hébergé ou managé · mono-nœud | production | dépôt archivé · 2026-08-13 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/MCPJam/inspector
 <!-- AUTO:BANDEAU:START -->
 > « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé ou managé · mono-nœud | beta | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

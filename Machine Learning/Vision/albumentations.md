@@ -20,9 +20,9 @@ url_repo: https://github.com/albumentations-team/albumentations
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV ; le standard de l'augmentation CPU dans les pipelines vision.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | dépôt archivé · 2025-07-10 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

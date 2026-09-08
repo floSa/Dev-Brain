@@ -20,9 +20,9 @@ url_repo: https://github.com/OlivierGarciaDev/fanalysis
 <!-- AUTO:BANDEAU:START -->
 > Analyses factorielles descriptives (PCA, CA, MCA) avec aides à l'interprétation façon FactoMineR ; dépôt sans commit depuis juin 2018, resté en v0.0.1 — préférer Prince.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated | amont ancien · 2018-06-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

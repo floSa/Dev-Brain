@@ -20,9 +20,9 @@ url_repo: https://github.com/tensorflow/tensorflow
 <!-- AUTO:BANDEAU:START -->
 > Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-03-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

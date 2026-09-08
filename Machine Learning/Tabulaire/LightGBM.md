@@ -20,9 +20,9 @@ url_repo: https://github.com/lightgbm-org/LightGBM
 <!-- AUTO:BANDEAU:START -->
 > Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

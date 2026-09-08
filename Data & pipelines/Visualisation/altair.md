@@ -20,9 +20,9 @@ url_repo: https://github.com/vega/altair
 <!-- AUTO:BANDEAU:START -->
 > Visualisation déclarative fondée sur Vega-Lite : on décrit la correspondance données → encodages, le rendu interactif est généré.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-06-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

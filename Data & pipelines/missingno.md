@@ -20,9 +20,9 @@ url_repo: https://github.com/ResidentMario/missingno
 <!-- AUTO:BANDEAU:START -->
 > Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2023-02-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

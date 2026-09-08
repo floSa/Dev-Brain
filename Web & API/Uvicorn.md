@@ -20,9 +20,9 @@ url_repo: https://github.com/Kludex/uvicorn
 <!-- AUTO:BANDEAU:START -->
 > Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Python | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-08-19 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

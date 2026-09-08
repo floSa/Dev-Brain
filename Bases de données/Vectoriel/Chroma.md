@@ -20,9 +20,9 @@ url_repo: https://github.com/chroma-core/chroma
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

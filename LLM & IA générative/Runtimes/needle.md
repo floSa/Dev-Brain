@@ -20,9 +20,9 @@ url_repo: https://github.com/cactus-compute/needle
 <!-- AUTO:BANDEAU:START -->
 > Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Modèle Python | open-source | à charger dans un runtime | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | beta | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/actions/runner
 <!-- AUTO:BANDEAU:START -->
 > CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | managé · serverless | production | à jour · 2026-08-26 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

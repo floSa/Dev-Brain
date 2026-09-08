@@ -21,9 +21,9 @@ url_repo:
 <!-- AUTO:BANDEAU:START -->
 > Plateforme de design d'interface et de prototypage collaboratif (propriétaire, freemium) : design temps réel multi-utilisateurs, prototypes interactifs, dev mode ; l'outil de référence du design produit.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| SaaS | propriétaire | — | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| SaaS | propriétaire | — | — | aucun amont fiché |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

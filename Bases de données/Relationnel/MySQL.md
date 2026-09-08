@@ -22,9 +22,9 @@ url_repo: https://github.com/mysql/mysql-server
 <!-- AUTO:BANDEAU:START -->
 > SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé ou managé · mono-nœud | production | à jour · 2026-07-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

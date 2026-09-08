@@ -20,9 +20,9 @@ url_repo: https://github.com/scipy/scipy
 <!-- AUTO:BANDEAU:START -->
 > Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution, corrélation et ré-échantillonnage, au-dessus de NumPy.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C / Fortran / Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C / Fortran / Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/apache/cassandra
 <!-- AUTO:BANDEAU:START -->
 > Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Java | open-source | self-hébergé ou managé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-08-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

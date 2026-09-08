@@ -20,9 +20,9 @@ url_repo: https://github.com/google/sentencepiece
 <!-- AUTO:BANDEAU:START -->
 > Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++/Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-07-12 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

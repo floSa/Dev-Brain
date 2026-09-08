@@ -20,9 +20,9 @@ url_repo: https://github.com/pydantic/pydantic
 <!-- AUTO:BANDEAU:START -->
 > Validation de données pilotée par les annotations de type Python, avec un cœur de validation en Rust : parsing, coercition et erreurs claires.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python / Rust | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python / Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

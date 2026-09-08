@@ -20,9 +20,9 @@ url_repo: https://github.com/firecrawl/pdf-inspector
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

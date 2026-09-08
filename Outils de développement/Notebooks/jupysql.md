@@ -20,9 +20,9 @@ url_repo: https://github.com/ploomber/jupysql
 <!-- AUTO:BANDEAU:START -->
 > SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Extension Python | open-source | dans le moteur hôte, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | production | à jour · 2025-03-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

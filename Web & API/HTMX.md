@@ -20,9 +20,9 @@ url_repo: https://github.com/bigskysoftware/htmx
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie JavaScript | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie JavaScript | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-28 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

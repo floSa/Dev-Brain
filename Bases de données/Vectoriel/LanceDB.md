@@ -20,9 +20,9 @@ url_repo: https://github.com/lancedb/lancedb
 <!-- AUTO:BANDEAU:START -->
 > Base vectorielle embarquée et multimodale écrite en Rust sur le format colonnaire Lance — du notebook au lakehouse sur stockage objet, sans serveur à gérer.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-09-06 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

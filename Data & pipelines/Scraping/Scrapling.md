@@ -20,9 +20,9 @@ url_repo: https://github.com/D4Vinci/Scrapling
 <!-- AUTO:BANDEAU:START -->
 > Framework de scraping Python adaptatif et furtif : les sélecteurs se re-localisent seuls quand la page change, fetchers anti-bot intégrés (Cloudflare) et API façon BeautifulSoup.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-08-23 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

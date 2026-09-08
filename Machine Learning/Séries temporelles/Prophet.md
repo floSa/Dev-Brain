@@ -20,9 +20,9 @@ url_repo: https://github.com/facebook/prophet
 <!-- AUTO:BANDEAU:START -->
 > Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python/R | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python/R | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-15 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

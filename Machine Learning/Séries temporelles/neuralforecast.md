@@ -20,9 +20,9 @@ url_repo: https://github.com/Nixtla/neuralforecast
 <!-- AUTO:BANDEAU:START -->
 > Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

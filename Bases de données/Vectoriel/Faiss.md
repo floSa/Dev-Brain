@@ -20,9 +20,9 @@ url_repo: https://github.com/facebookresearch/faiss
 <!-- AUTO:BANDEAU:START -->
 > Bibliothèque ANN de référence (Meta), index en mémoire CPU/GPU — le moteur derrière beaucoup de vector stores.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie C++ | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-08-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -20,9 +20,9 @@ url_repo: https://github.com/unclebob/swarm-forge
 <!-- AUTO:BANDEAU:START -->
 > Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI Clojure | — | en ligne de commande, rien à héberger | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Clojure | — | en ligne de commande, rien à héberger | — | à jour · 2026-08-30 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

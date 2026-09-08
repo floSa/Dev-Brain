@@ -20,9 +20,9 @@ url_repo: https://github.com/vanna-ai/vanna
 <!-- AUTO:BANDEAU:START -->
 > Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM (dont Ollama en local), UI web fournie ; OSS archivé en mars 2026 (pivot vers Vanna Cloud hébergé), code toujours forkable.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | deprecated | dépôt archivé · 2026-03-29 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

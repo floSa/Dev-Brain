@@ -20,9 +20,9 @@ url_repo: https://github.com/amazon-science/chronos-forecasting
 <!-- AUTO:BANDEAU:START -->
 > Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Modèle Python | open-source | à charger dans un runtime | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Modèle Python | open-source | à charger dans un runtime | production | à jour · 2026-07-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

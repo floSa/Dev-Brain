@@ -22,9 +22,9 @@ url_repo: https://github.com/ggml-org/llama.cpp
 <!-- AUTO:BANDEAU:START -->
 > Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme C/C++ | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme C/C++ | open-source | self-hébergé · mono-nœud | production | à jour · 2026-09-08 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

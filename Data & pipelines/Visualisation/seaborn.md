@@ -20,9 +20,9 @@ url_repo: https://github.com/mwaskom/seaborn
 <!-- AUTO:BANDEAU:START -->
 > Surcouche statistique de matplotlib : graphiques soignés en une ligne (distributions, relations, catégories) directement depuis un DataFrame pandas.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2024-01-25 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

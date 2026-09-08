@@ -20,9 +20,9 @@ url_repo: https://github.com/quarto-dev/quarto-cli
 <!-- AUTO:BANDEAU:START -->
 > Système de publication scientifique multi-format (HTML, PDF, Word, sites, slides) à partir de Markdown et de notebooks, bâti sur Pandoc, polyglotte (Python/R/Julia).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | à jour · 2026-09-03 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

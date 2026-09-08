@@ -22,9 +22,9 @@ url_repo: https://github.com/feast-dev/feast
 <!-- AUTO:BANDEAU:START -->
 > Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…).
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé · distribué | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · distribué | production | à jour · 2026-08-21 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

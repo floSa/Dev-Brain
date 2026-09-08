@@ -22,9 +22,9 @@ url_repo: https://github.com/marimo-team/marimo
 <!-- AUTO:BANDEAU:START -->
 > Notebook Python réactif stocké en `.py` pur — réexécution automatique des cellules dépendantes, pas d'état caché, déployable en app ou exécutable en script.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application Python | open-source | self-hébergé · mono-nœud | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | production | à jour · 2026-08-17 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

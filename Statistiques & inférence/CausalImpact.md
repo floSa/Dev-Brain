@@ -20,9 +20,9 @@ url_repo: https://github.com/WillianFuks/tfcausalimpact
 <!-- AUTO:BANDEAU:START -->
 > Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | production | à jour · 2025-01-13 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

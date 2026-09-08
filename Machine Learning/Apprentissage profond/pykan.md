@@ -20,9 +20,9 @@ url_repo: https://github.com/KindXiaoming/pykan
 <!-- AUTO:BANDEAU:START -->
 > Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python | open-source | en bibliothèque, rien à héberger | experimental |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python | open-source | en bibliothèque, rien à héberger | experimental | à jour · 2024-11-14 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

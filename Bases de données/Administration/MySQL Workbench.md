@@ -21,9 +21,9 @@ url_repo: https://github.com/mysql/mysql-workbench
 <!-- AUTO:BANDEAU:START -->
 > Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Application C++ | open-source | Windows, macOS, Linux | — |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application C++ | open-source | Windows, macOS, Linux | — | à jour · 2026-04-02 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

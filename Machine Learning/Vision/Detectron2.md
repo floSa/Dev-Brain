@@ -20,9 +20,9 @@ url_repo: https://github.com/facebookresearch/detectron2
 <!-- AUTO:BANDEAU:START -->
 > Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python/C++ | open-source | en bibliothèque, rien à héberger | production |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python/C++ | open-source | en bibliothèque, rien à héberger | production | amont ancien · 2021-11-15 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -22,9 +22,9 @@ url_repo: https://github.com/neptune-ai/neptune-client
 <!-- AUTO:BANDEAU:START -->
 > Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | deprecated |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | propriétaire | self-hébergé ou managé · distribué | deprecated | dépôt archivé · 2026-05-07 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

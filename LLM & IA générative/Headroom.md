@@ -20,9 +20,9 @@ url_repo: https://github.com/headroomlabs-ai/headroom
 <!-- AUTO:BANDEAU:START -->
 > Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
 
-| Nature | Licence | Exécution | Maturité |
-|---|---|---|---|
-| Librairie Python, TypeScript, Rust | open-source | en bibliothèque, rien à héberger | beta |
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Librairie Python, TypeScript, Rust | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-08-27 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
