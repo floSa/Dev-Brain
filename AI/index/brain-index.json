@@ -1,7 +1,6 @@
 {
   "generated_by": "AI/scripts/build_index.py",
   "scanned": [
-    ".githooks",
     "Automatisation no-code",
     "Bases de données",
     "Calcul distribué",
@@ -25,8 +24,7 @@
     "Statistiques & inférence",
     "Stockage",
     "Sécurité",
-    "Web & API",
-    "obsidian_outer_backup_20260907"
+    "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
   "count": 765,

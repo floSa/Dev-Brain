@@ -2,219 +2,62 @@
 # requires-python = ">=3.10"
 # dependencies = ["pyyaml>=6"]
 # ///
-"""build_index.py — génère l'index du DevBrain (machine + humain).
+"""build_index.py — PONT vers `brainkit generer --quoi index`. Le catalogue machine et le document humain.
 
-Scanne les dossiers de pages de la racine et produit, dans AI/index/ :
-  - brain-index.json : catalogue machine, lu par les skills via query_index.py
-  - brain-index.md   : document humain, propre — groupé par rôle, puis par domaine
+    uv run AI/scripts/build_index.py            # écrit dans le vault
+    uv run AI/scripts/build_index.py --check    # n'écrit rien, sort en 2 s'il reste un écart
 
-Depuis le lot 2 de la migration v3, l'axe de regroupement est `role:` et non plus
-`galaxie:`/`type:` : le dossier porte le domaine, le champ porte la nature de la page
-(cf. AI/design/brain-v3.md §2). `path` est indexé, il devient l'axe « domaine » dès
-que l'arborescence bouge au lot 3.
+Produit `AI/index/brain-index.json` (lu par les skills et par `query_index.py`)
+et `AI/index/brain-index.md` (lu par floSa). Les deux sortent du même jeu
+d'entrées, dans le même ordre : tri stable, aucun horodatage — sans quoi deux
+régénérations d'un vault inchangé ne produiraient pas le même octet.
 
-Portée « v2 only » : Dev/ est 100 % v2 ; côté Wiki, le réservoir v1 (pages portant
-des champs hérités v1) est ignoré — il reste en place comme référence, hors index actif.
+`generated_by` du catalogue vaut `AI/scripts/build_index.py`, et c'est exact :
+la signature nomme le fichier qu'on lance, pas le paquet qui fait le travail.
+Elle est déclarée dans `brain.yml`, bloc `genere.index.signature`.
 
-Usage : uv run AI/scripts/build_index.py
-Cross-OS, chemins relatifs, sortie déterministe (triée, sans horodatage).
+# Ce que le lot 9 a changé dans l'artefact, et c'est tout
+
+La clé `scanned` ne publie plus que les dossiers qui **portent au moins une
+page**. Avant, elle publiait tout dossier de premier niveau hors `non_pages`,
+suivi par git ou non : le catalogue committé annonçait
+`obsidian_outer_backup_20260907`, une sauvegarde locale qui n'existe plus, et
+`.githooks`, qui ne porte aucune page. Un artefact versionné cessait donc d'être
+reproductible — deux machines, deux catalogues. Deux lignes de moins, aucune
+page touchée.
+
+# Le moteur de zone AUTO, et ce qui n'a pas changé
+
+Le kit reprend le contrat mot pour mot : balises dédiées, remplacement en bloc,
+préservation de ce qui est écrit à la main autour, **idempotence** — zéro octet
+écrit si rien ne change — et `--check` qui sort en 2. Le lot 4 de BrainKit l'a
+prouvé sur ce vault même : 413 artefacts sur 414 régénérés identiques à l'octet,
+le 414e étant la clé `scanned` du catalogue, corrigée par le lot 9.
+
+Où vit le kit : `AI/scripts/_pont_kit.py`.
 """
 
 from __future__ import annotations
 
-import json
 import sys
 from pathlib import Path
 
-try:
-    import yaml
-except ModuleNotFoundError:  # pragma: no cover
-    sys.exit("PyYAML manquant — lancer via uv : uv run AI/scripts/build_index.py")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import _pont_kit                                            # noqa: E402
 
-VAULT = Path(__file__).resolve().parents[2]
-# Périmètre de balayage. Avant le lot 3, deux dossiers fixes : `Dev` et `Wiki`.
-# Depuis, les pages descendent dans un arbre de DOMAINES à la racine (« Bases de
-# données/ », « Machine Learning/ »…), et `Dev/`+`Wiki/` ne portent plus que les
-# domaines pas encore migrés. On énumère donc par la NÉGATIVE : tout dossier de la
-# racine qui n'est pas de l'outillage est un dossier de pages. Aucune table de
-# domaines à tenir à jour, et le jour où `Dev/` et `Wiki/` disparaissent, rien à
-# changer ici. Cf. AI/design/brain-v3.md §4 et §11.
-NON_PAGES = {".git", ".claude", ".obsidian", "AI", "Documentation", "Templates",
-             "Projects", "docs", "MOC"}
-
-
-def scan_dirs() -> list[str]:
-    """Dossiers de premier niveau qui portent des pages, triés."""
-    return sorted(d.name for d in VAULT.iterdir()
-                  if d.is_dir() and d.name not in NON_PAGES)
-OUT_JSON = VAULT / "AI" / "index" / "brain-index.json"
-OUT_MD = VAULT / "AI" / "index" / "brain-index.md"
-
-# Champs repris dans l'index. Ordre stable.
-# `maturite` est un critère ÉLIMINATOIRE : sans lui, un consommateur machine
-# (planifier-projet) qui filtre sur l'index sans ouvrir les fiches proposerait une brique
-# `deprecated` sans jamais voir qu'elle l'est. Il porte seul ce rôle depuis le lot 2 —
-# `status:` a été supprimé, il était redondant (272 fiches sur 336 `actif` + `production`).
-# Tous les champs sont facultatifs : `fm.get()` écrit `null` pour une page qui ne les
-# porte pas (les notions n'ont pas de `maturite` ; les patterns et les rules n'ont ni
-# `nom` ni `categorie`).
-# `famille` est le second axe de rangement des briques (la NATURE : paquet, plateforme,
-# application…), `categorie` restant le domaine — cf. Documentation/general/taxonomie.md.
-# `complements` est le symétrique d'`alternatives` ouvert au lot 2 : ce qui s'utilise AVEC
-# la brique, quand `alternatives` dit ce qui s'utilise À SA PLACE.
-# `langage` est indexé depuis le lot 4 : sans lui, `planifier-projet` ne pouvait pas
-# répondre à « un paquet Python pour ce besoin » en une requête — il devait ouvrir le
-# frontmatter des candidates une à une (remontée 2 de AI/migration/lot-7-skills.md).
-FIELDS = ["nom", "alias", "role", "categorie", "famille", "langage", "domaines",
-          "pitch", "tags", "alternatives", "complements", "maturite"]
-
-# Champs hérités v1 : leur présence dans une page Wiki = réservoir → hors index actif.
-# `maturite` en fait partie : côté Wiki il n'a jamais désigné que du réservoir v1. Une
-# brique rangée sous Wiki/ (Obsidian) le porterait légitimement — elle ne le porte pas.
-V1_MARKERS = {"created", "modified", "maturite", "lecture_min", "auteurs_cles",
-              "sous_categories", "score", "mes_projets", "clients_officiels",
-              "plateforme", "remplace", "url_officiel", "licence"}
-
-
-def parse_frontmatter(text: str) -> dict | None:
-    if not text.startswith("---"):
-        return None
-    parts = text.split("---", 2)
-    if len(parts) < 3:
-        return None
-    try:
-        data = yaml.safe_load(parts[1])
-    except yaml.YAMLError:
-        return None
-    return data if isinstance(data, dict) else None
-
-
-def rel(path: Path) -> str:
-    return path.relative_to(VAULT).as_posix()
-
-
-def is_active_v2(scan_dir: str, fm: dict) -> bool:
-    """Le réservoir v1 ne vit que sous `Wiki/` — partout ailleurs, tout est v2.
-
-    Le test portait sur « pas Dev/ », ce qui aurait classé RÉSERVOIR toute brique
-    descendue dans l'arbre des domaines au lot 3 : `maturite` est un marqueur v1, et
-    337 briques le portent légitimement. Une brique déplacée serait sortie de l'index
-    en silence. Le réservoir est un fait de `Wiki/`, pas un fait de « hors Dev/ ».
-    """
-    if scan_dir != "Wiki":
-        return True
-    return not (V1_MARKERS & set(fm.keys()))
-
-
-def collect() -> tuple[list[dict], list[str], int]:
-    pages: list[dict] = []
-    skipped: list[str] = []
-    reservoir = 0
-    for d in scan_dirs():
-        base = VAULT / d
-        if not base.exists():
-            continue
-        for md in sorted(base.rglob("*.md")):
-            fm = parse_frontmatter(md.read_text(encoding="utf-8"))
-            if fm is None:
-                skipped.append(rel(md))
-                continue
-            if not is_active_v2(d, fm):
-                reservoir += 1
-                continue
-            entry: dict = {"path": rel(md)}
-            for f in FIELDS:
-                entry[f] = fm.get(f)
-            if not entry.get("nom"):
-                entry["nom"] = md.stem
-            pages.append(entry)
-    pages.sort(key=lambda e: e["path"])
-    return pages, skipped, reservoir
-
-
-def build_tags_index(pages: list[dict]) -> dict[str, list[str]]:
-    ti: dict[str, list[str]] = {}
-    for p in pages:
-        for t in p.get("tags") or []:
-            ti.setdefault(t, []).append(p["nom"])
-    return {t: sorted(set(v)) for t, v in sorted(ti.items())}
-
-
-# --- rendu du document humain ---------------------------------------------
-
-ROLE_LABEL = {
-    "brique": "Briques — ce qu'on déploie ou importe",
-    "notion": "Notions — ce qu'il faut comprendre",
-    "pattern": "Patterns — architectures éprouvées",
-    "rule": "Rules — règles transverses",
-    "comparatif": "Comparatifs — ce qui départage plusieurs briques",
-}
-ROLE_ORDER = ["brique", "notion", "comparatif", "pattern", "rule"]
-
-
-def descriptor(p: dict) -> str:
-    """Ligne « solution » : le pitch d'une brique ; les domaines/alias d'une notion."""
-    if p.get("pitch"):
-        return p["pitch"]
-    bits = []
-    if p.get("domaines"):
-        bits.append("domaines : " + ", ".join(p["domaines"]))
-    if p.get("alias"):
-        bits.append("alias : " + ", ".join(p["alias"]))
-    return " · ".join(bits) if bits else "—"
-
-
-def render_md(pages: list[dict], reservoir: int) -> str:
-    lines = [
-        "# Index — DevBrain",
-        "",
-        "> Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.",
-        f"> {len(pages)} pages actives. Réservoir v1 ({reservoir} pages Wiki) : "
-        "référence, non indexé.",
-        "",
-    ]
-    by_role: dict[str, list[dict]] = {}
-    for p in pages:
-        by_role.setdefault(p.get("role") or "?", []).append(p)
-
-    for role in sorted(by_role, key=lambda r: (
-            ROLE_ORDER.index(r) if r in ROLE_ORDER else 99, r)):
-        lines += [f"## {ROLE_LABEL.get(role, role)}", ""]
-        by_cat: dict[str, list[dict]] = {}
-        for p in by_role[role]:
-            by_cat.setdefault(p.get("categorie") or "(sans catégorie)", []).append(p)
-        for cat in sorted(by_cat):
-            lines.append(f"### {cat}")
-            for p in sorted(by_cat[cat], key=lambda e: e["nom"].lower()):
-                lines.append(f"- **{p['nom']}** — {descriptor(p)}")
-            lines.append("")
-    return "\n".join(lines).rstrip() + "\n"
+QUOI = "index"
 
 
 def main() -> int:
-    pages, skipped, reservoir = collect()
-    index = {
-        "generated_by": "AI/scripts/build_index.py",
-        "scanned": scan_dirs(),
-        "scope": "v2-only (réservoir v1 exclu)",
-        "count": len(pages),
-        "tags_index": build_tags_index(pages),
-        "pages": pages,
-    }
-    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    OUT_JSON.write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n",
-                        encoding="utf-8")
-    OUT_MD.write_text(render_md(pages, reservoir), encoding="utf-8")
+    _pont_kit.sortie_utf8()
+    _pont_kit.branche()
+    from brainkit.generer.__main__ import main as generer   # noqa: PLC0415
 
-    by_role: dict[str, int] = {}
-    for p in pages:
-        key = p.get("role") or "?"
-        by_role[key] = by_role.get(key, 0) + 1
-    print(f"Index écrit : {rel(OUT_JSON)} + {rel(OUT_MD)}")
-    print(f"  {len(pages)} pages actives — {by_role} ; réservoir v1 ignoré : {reservoir}")
-    if skipped:
-        print(f"  {len(skipped)} fichier(s) sans frontmatter ignoré(s)")
-    return 0
+    reste = [a for a in sys.argv[1:] if a != "--check"]
+    mode = ["--check"] if "--check" in sys.argv[1:] else ["--ecrire"]
+    sys.argv = ["brainkit generer", "--vault", str(_pont_kit.VAULT),
+                "--quoi", QUOI, *mode, *reste]
+    return generer()
 
 
 if __name__ == "__main__":
