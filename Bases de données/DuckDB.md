@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[ClickHouse]]"]
+alternatives: ["[[ClickHouse]]", "[[Snowflake]]"]
 complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
@@ -55,6 +55,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 ### Alternatives
 
 - [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
+- [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — l'extrême opposé : rien ne tourne en local, tout est managé, et le volume n'est plus borné par le poste ; rangé en plateforme, pas en base, cf. la règle D-R8 de la taxonomie.
 
 ### Compléments
 

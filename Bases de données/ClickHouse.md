@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[DuckDB]]"]
+alternatives: ["[[DuckDB]]", "[[Snowflake]]"]
 complements: []
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
@@ -58,6 +58,7 @@ les performances de toutes les requêtes qui suivront.
 ### Alternatives
 
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
+- [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — la même analytique colonnes, mais sans cluster à opérer et sans possibilité d'auto-hébergement ; rangé en plateforme, pas en base, cf. la règle D-R8 de la taxonomie.
 
 ## Ressources
 

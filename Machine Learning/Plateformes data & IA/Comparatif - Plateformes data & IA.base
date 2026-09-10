@@ -1,0 +1,45 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
+    - categorie == "ml/plateforme"
+views:
+  - type: table
+    name: Plateformes data & IA
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Installable sur site
+    filters:
+      and:
+        - hosted.contains("self")
+    order:
+      - file.name
+      - pitch
+      - scaling
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Managé seulement
+    filters:
+      and:
+        - "!hosted.contains(\"self\")"
+    order:
+      - file.name
+      - pitch
+      - scaling
+    sort:
+      - property: file.name
+        direction: asc

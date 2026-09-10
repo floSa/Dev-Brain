@@ -15,6 +15,7 @@ tags: [columnar, olap]
 
 - [[DuckDB]] — in-process, sans serveur : elle tourne dans le process hôte et requête Parquet, CSV et JSON directement ; la RAM et le disque local bornent le volume.
 - [[ClickHouse]] — distribuée par sharding et réplication, mais updates et deletes sont des mutations asynchrones coûteuses : le modèle est pensé pour l'append.
+- [[Snowflake]] — **absent de la vue ci-dessus, et c'est voulu** : il est rangé en `ml/plateforme` et non en `database/analytique`, parce que son concurrent réel en clientèle est une plateforme et non un moteur (règle D-R8 de la taxonomie). Il départage pourtant les deux autres sur le seul axe qui compte ici : rien à opérer, mais rien à auto-héberger non plus, et un enfermement qui commence dès qu'on écrit une fonction Cortex en SQL.
 
 ## Voir aussi
 

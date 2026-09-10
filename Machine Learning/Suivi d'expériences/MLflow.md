@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Weights & Biases]]", "[[Neptune]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
-complements: ["[[Evidently]]"]
+complements: ["[[Evidently]]", "[[Databricks]]"]
 tags: [experiment-tracking, model-registry]
 url_docs: https://mlflow.org/docs/latest/
 url_repo: https://github.com/mlflow/mlflow
@@ -68,6 +68,7 @@ de modèles ouvert.
 ### Compléments
 
 - [[Evidently]] — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production. — le versant dérive et qualité des données, en aval du run suivi
+- [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la plateforme dont il est né, et qui en propose une édition managée intégrée à l'authentification et au catalogue.
 
 ## Ressources
 

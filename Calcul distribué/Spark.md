@@ -11,7 +11,7 @@ maturite: production
 langage: Scala / JVM
 scaling: distributed
 alternatives: ["[[Dask]]", "[[Ray]]"]
-complements: []
+complements: ["[[Databricks]]"]
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
 url_repo: https://github.com/apache/spark
@@ -61,6 +61,10 @@ ajoute Spark Connect, le type VARIANT, l'ANSI SQL par défaut et Java 21.
 
 - [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 - [[Ray]] — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML (Train, Tune, Serve, Data, RLlib).
+
+### Compléments
+
+- [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la plateforme écrite par ses auteurs : elle l'exploite pour vous, et les compétences se transfèrent dans les deux sens.
 
 ## Ressources
 

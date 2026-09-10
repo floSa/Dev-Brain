@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Dash]]", "[[Shiny for Python]]", "[[Gradio]]"]
-complements: []
+complements: ["[[Snowflake]]"]
 tags: [data-app, web-framework]
 url_docs: https://docs.streamlit.io
 url_repo: https://github.com/streamlit/streamlit
@@ -59,6 +59,10 @@ depuis le rachat de Streamlit Inc. en 2022.
 - [[Dash]] — Apps analytiques et dashboards multi-pages : composants réactifs liés par callbacks déclaratifs, rendu Plotly.js sur socle Flask.
 - [[Shiny for Python]] — Apps réactives à dépendances fines (Posit) : seuls les outputs dont les entrées changent se recalculent ; déployable côté serveur ou full-navigateur (WASM).
 - [[Gradio]] — Démos de modèles ML en quelques lignes (Hugging Face) : composants d'entrée/sortie, file d'attente et streaming intégrés, hébergement sur HF Spaces.
+
+### Compléments
+
+- [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — son éditeur depuis le rachat, et l'endroit où l'app s'exécute à côté des données plutôt que devant elles.
 
 ## Ressources
 
