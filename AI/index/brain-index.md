@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 765 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 776 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -400,6 +400,16 @@
 - **Metaflow** — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
 - **ZenML** — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
 
+### ml/plateforme
+- **Alteryx** — Préparation, enrichissement et analyse de données en flux visuels sans code, pour analystes métier : Designer sur poste Windows, Server pour publier et planifier, Analytics Cloud pour la version managée.
+- **AWS SageMaker** — Écosystème ML natif d'AWS : notebooks, entraînement distribué, réglage, registre et endpoints d'inférence managés, réunis avec les services data d'AWS sous SageMaker Unified Studio ; descend sur site par Outposts.
+- **Databricks** — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement.
+- **Dataiku** — Plateforme data et IA de bout en bout, auto-hébergeable : un même projet se construit en interface visuelle ou en Python, R et SQL, avec préparation, entraînement, déploiement et gouvernance sous une seule console et un seul modèle de droits.
+- **DataRobot** — Plateforme d'AutoML et de MLOps : elle entraîne et classe des dizaines de modèles candidats, puis déploie et surveille celui qu'on retient ; auto-hébergeable sur Kubernetes ou managée.
+- **Google Cloud Vertex AI** — Écosystème ML natif de Google Cloud : entraînement, registre, pipelines et endpoints managés, plus l'accès aux modèles Gemini ; une partie seulement descend sur site, sur l'appliance air-gapped de Google Distributed Cloud.
+- **Microsoft Azure Machine Learning** — Écosystème ML natif d'Azure : espaces de travail, entraînement, registre et endpoints managés, pilotables en SDK Python ou en YAML ; seul des trois clouds à faire tourner entraînement et inférence sur un Kubernetes déjà en place, par Azure Arc.
+- **Snowflake** — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement.
+
 ### ml/rl
 - **Acme** — Framework de recherche RL de Google DeepMind (JAX/TF) — composants modulaires (acteurs, learners, replay Reverb) pour prototyper puis distribuer des agents, du single-process au massivement parallèle ; maintenance très ralentie depuis 2022.
 - **Gymnasium** — Standard d'API pour les environnements de RL à agent unique (successeur d'OpenAI Gym, par la Farama Foundation) — interface reset/step uniforme + environnements de référence (classic control, Box2D, MuJoCo, Atari) ; le contrat commun entre agents et environnements.
@@ -773,6 +783,9 @@
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
 
+### ml/plateforme
+- **Plateforme data & IA — concept** — domaines : data-sci, data-eng, mlops, ml-eng · alias : plateforme ML, plateforme data science, build vs buy, enfermement fournisseur, vendor lock-in
+
 ### ml/rl
 - **Actor-Critic methods** — domaines : ml-eng · alias : actor-critic, acteur-critique, méthodes acteur-critique, A2C, A3C, advantage actor-critic
 - **AlphaZero and self-play** — domaines : ml-eng, ai-eng · alias : AlphaZero, self-play, jeu contre soi-même, AlphaGo Zero, MuZero, apprentissage par self-play
@@ -1042,6 +1055,9 @@
 ### ml/orchestration
 - **Comparatif - Orchestrateurs ML** — —
 
+### ml/plateforme
+- **Comparatif - Plateformes data & IA** — —
+
 ### ml/rl
 - **Comparatif - Reinforcement learning** — —
 
@@ -1135,6 +1151,7 @@
 - **Parsing** — Extraire du contenu structuré depuis des documents — PDF, Office, scans — pour le rendre lisible par une machine.
 - **Passerelles** — Une seule API devant plusieurs fournisseurs — router, replier, plafonner, et ne pas rappeler ce qu'on a déjà demandé.
 - **Patterns** — Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.
+- **Plateformes data & IA** — Les suites qui couvrent tout le cycle sous une console unique — et la question qu'elles posent toutes : sur quel matériel, et à quel prix de sortie.
 - **Probabilités** — Ce qui rend l'inférence possible — les théorèmes qui disent qu'un échantillon converge, et les processus qui modélisent le hasard dans le temps.
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.

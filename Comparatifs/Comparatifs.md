@@ -75,6 +75,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - NLP]]
 - [[Comparatif - Optimisation d'hyperparamètres]]
 - [[Comparatif - Orchestrateurs ML]]
+- [[Comparatif - Plateformes data & IA]]
 - [[Comparatif - Reinforcement learning]]
 - [[Comparatif - Réduction de dimension]]
 - [[Comparatif - Serving de modèles]]

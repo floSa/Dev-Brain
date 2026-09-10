@@ -2787,6 +2787,46 @@
   "release_tag": "v5.0.0",
   "sonde_le": "2026-09-08"
  },
+ "Machine Learning/Plateformes data & IA/AWS SageMaker.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Alteryx.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/DataRobot.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Databricks.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Dataiku.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Google Cloud Vertex AI.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Microsoft Azure Machine Learning.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
+ "Machine Learning/Plateformes data & IA/Snowflake.md": {
+  "date": "",
+  "etat": "sans_amont",
+  "sonde_le": "2026-09-10"
+ },
  "Machine Learning/PyTorch Geometric.md": {
   "amont": "github:pyg-team/pytorch_geometric",
   "archive": false,

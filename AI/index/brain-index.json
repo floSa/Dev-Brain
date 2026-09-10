@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 765,
+  "count": 776,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -207,6 +207,16 @@
       "Kornia",
       "PyTorch",
       "TensorFlow"
+    ],
+    "automl": [
+      "AWS SageMaker",
+      "Comparatif - Plateformes data & IA",
+      "DataRobot",
+      "Dataiku",
+      "Google Cloud Vertex AI",
+      "Microsoft Azure Machine Learning",
+      "Plateforme data & IA — concept",
+      "Plateformes data & IA"
     ],
     "bagging": [
       "Bagging",
@@ -391,6 +401,7 @@
       "LanceDB",
       "Parquet",
       "Polars",
+      "Snowflake",
       "connectorx"
     ],
     "combinatorial-optimization": [
@@ -538,6 +549,15 @@
       "Evidently",
       "Monitoring de modèle en production"
     ],
+    "data-governance": [
+      "Comparatif - Plateformes data & IA",
+      "DataRobot",
+      "Databricks",
+      "Dataiku",
+      "Plateforme data & IA — concept",
+      "Plateformes data & IA",
+      "Snowflake"
+    ],
     "data-leakage": [
       "Data leakage"
     ],
@@ -546,11 +566,13 @@
     ],
     "data-pipeline": [
       "Airflow",
+      "Alteryx",
       "Architecture médaillon",
       "Change Data Capture (CDC)",
       "Comparatif - Orchestrateurs data",
       "Dagster",
       "Data & pipelines",
+      "Databricks",
       "ELT vs ETL & idempotence",
       "Kestra",
       "Mage",
@@ -562,6 +584,7 @@
       "Web scraping"
     ],
     "data-quality": [
+      "Alteryx",
       "Architecture médaillon",
       "Comparatif - Outils EDA - profiling",
       "Contrats de données & qualité",
@@ -780,12 +803,14 @@
       "umap-learn"
     ],
     "distributed": [
+      "AWS SageMaker",
       "Apache Cassandra",
       "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
       "Comparatif - Calcul distribué",
       "Dask",
+      "Databricks",
       "Elasticsearch",
       "Flink",
       "Hyperopt",
@@ -799,6 +824,7 @@
       "Ray",
       "Ray Serve",
       "Ray Tune",
+      "Snowflake",
       "Spark",
       "Temporal",
       "TensorFlow",
@@ -1320,15 +1346,19 @@
     ],
     "kubernetes": [
       "Comparatif - Serving de modèles",
+      "DataRobot",
       "Flyte",
       "KServe",
+      "Microsoft Azure Machine Learning",
       "Seldon Core",
       "Serving"
     ],
     "lakehouse": [
       "Apache Iceberg",
       "Architecture médaillon",
-      "Partitionnement & layout de données"
+      "Databricks",
+      "Partitionnement & layout de données",
+      "Plateformes data & IA"
     ],
     "layout-analysis": [
       "Comparatif - Parsing de documents",
@@ -1420,6 +1450,7 @@
       "E2B",
       "Flowise",
       "GRPO",
+      "Google Cloud Vertex AI",
       "GraphRAG",
       "Guardrails",
       "Guidance",
@@ -1490,6 +1521,7 @@
       "Semantic Kernel",
       "Server-Sent Events & streaming LLM",
       "Small Language Models",
+      "Snowflake",
       "Sparse autoencoders",
       "Speculative decoding",
       "Structured outputs",
@@ -1591,15 +1623,20 @@
     ],
     "low-code": [
       "Activepieces",
+      "Alteryx",
       "Automatisation no-code",
       "Comparatif - Automatisation no-code",
+      "Comparatif - Plateformes data & IA",
       "Comparatif - Scraping",
+      "Dataiku",
       "Dify",
       "Flowise",
       "LLaMA-Factory",
       "Langflow",
       "Mage",
       "Maxun",
+      "Plateforme data & IA — concept",
+      "Plateformes data & IA",
       "PraisonAI",
       "Windmill",
       "Zapier",
@@ -1722,13 +1759,31 @@
       "Pattern - Stack démo ML locale multi-services"
     ],
     "ml-pipeline": [
+      "AWS SageMaker",
       "Comparatif - Orchestrateurs ML",
+      "Dataiku",
       "Flyte",
+      "Google Cloud Vertex AI",
       "Machine Learning",
       "Metaflow",
+      "Microsoft Azure Machine Learning",
+      "Plateforme data & IA — concept",
       "Socle",
       "Suivi d'expériences",
       "ZenML"
+    ],
+    "ml-platform": [
+      "AWS SageMaker",
+      "Alteryx",
+      "Comparatif - Plateformes data & IA",
+      "DataRobot",
+      "Databricks",
+      "Dataiku",
+      "Google Cloud Vertex AI",
+      "Microsoft Azure Machine Learning",
+      "Plateforme data & IA — concept",
+      "Plateformes data & IA",
+      "Snowflake"
     ],
     "model-based-rl": [
       "Model-based RL",
@@ -1773,26 +1828,34 @@
     ],
     "model-monitoring": [
       "Data drift",
+      "DataRobot",
       "Evidently",
       "Machine Learning",
       "Monitoring de modèle en production"
     ],
     "model-registry": [
+      "AWS SageMaker",
       "ClearML",
       "Comet",
       "Comparatif - Suivi d'expériences ML",
+      "DataRobot",
+      "Google Cloud Vertex AI",
       "MLflow",
+      "Microsoft Azure Machine Learning",
       "Model registry & versioning",
       "Neptune",
       "Suivi d'expériences",
       "Weights & Biases"
     ],
     "model-serving": [
+      "AWS SageMaker",
       "BentoML",
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
+      "Google Cloud Vertex AI",
       "KServe",
+      "Microsoft Azure Machine Learning",
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ray Serve",
@@ -2001,9 +2064,11 @@
       "Apache Iceberg",
       "ClickHouse",
       "Comparatif - Bases colonnes",
+      "Databricks",
       "DuckDB",
       "Parquet",
-      "Partitionnement & layout de données"
+      "Partitionnement & layout de données",
+      "Snowflake"
     ],
     "optimal-transport": [
       "Optimal transport",
@@ -2539,6 +2604,7 @@
     "self-hosted": [
       "Automatisation no-code",
       "Beszel",
+      "Dataiku",
       "Observabilité",
       "OpenMAIC",
       "Stirling PDF",
@@ -3625,7 +3691,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[DuckDB]]"
+        "[[DuckDB]]",
+        "[[Snowflake]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -3751,7 +3818,8 @@
         "embedded"
       ],
       "alternatives": [
-        "[[ClickHouse]]"
+        "[[ClickHouse]]",
+        "[[Snowflake]]"
       ],
       "complements": [
         "[[pandas]]",
@@ -5133,7 +5201,9 @@
         "[[Dask]]",
         "[[Ray]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Databricks]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7421,7 +7491,9 @@
         "[[Shiny for Python]]",
         "[[Gradio]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Snowflake]]"
+      ],
       "maturite": "production"
     },
     {
@@ -15307,6 +15379,374 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Plateformes data & IA/AWS SageMaker.md",
+      "nom": "AWS SageMaker",
+      "alias": [
+        "SageMaker",
+        "Amazon SageMaker",
+        "SageMaker AI",
+        "SageMaker Unified Studio"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "saas",
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Écosystème ML natif d'AWS : notebooks, entraînement distribué, réglage, registre et endpoints d'inférence managés, réunis avec les services data d'AWS sous SageMaker Unified Studio ; descend sur site par Outposts.",
+      "tags": [
+        "ml-platform",
+        "model-serving",
+        "model-registry",
+        "ml-pipeline",
+        "automl",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Google Cloud Vertex AI]]",
+        "[[Microsoft Azure Machine Learning]]",
+        "[[Dataiku]]",
+        "[[Databricks]]",
+        "[[DataRobot]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Alteryx.md",
+      "nom": "Alteryx",
+      "alias": [
+        "alteryx",
+        "Alteryx Designer",
+        "Alteryx Server",
+        "Alteryx Analytics Cloud"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "application",
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": "Préparation, enrichissement et analyse de données en flux visuels sans code, pour analystes métier : Designer sur poste Windows, Server pour publier et planifier, Analytics Cloud pour la version managée.",
+      "tags": [
+        "ml-platform",
+        "low-code",
+        "data-pipeline",
+        "data-quality"
+      ],
+      "alternatives": [
+        "[[Dataiku]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Comparatif - Plateformes data & IA.md",
+      "nom": "Comparatif - Plateformes data & IA",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/plateforme",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "ml-platform",
+        "data-governance",
+        "automl",
+        "low-code"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/DataRobot.md",
+      "nom": "DataRobot",
+      "alias": [
+        "datarobot"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "plateforme",
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": "Plateforme d'AutoML et de MLOps : elle entraîne et classe des dizaines de modèles candidats, puis déploie et surveille celui qu'on retient ; auto-hébergeable sur Kubernetes ou managée.",
+      "tags": [
+        "ml-platform",
+        "automl",
+        "model-monitoring",
+        "model-registry",
+        "data-governance",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[Dataiku]]",
+        "[[AWS SageMaker]]",
+        "[[Google Cloud Vertex AI]]",
+        "[[Microsoft Azure Machine Learning]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Databricks.md",
+      "nom": "Databricks",
+      "alias": [
+        "databricks",
+        "Azure Databricks",
+        "Databricks Lakehouse"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "saas",
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": "Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement.",
+      "tags": [
+        "ml-platform",
+        "lakehouse",
+        "distributed",
+        "data-governance",
+        "data-pipeline",
+        "olap"
+      ],
+      "alternatives": [
+        "[[Dataiku]]",
+        "[[Snowflake]]",
+        "[[AWS SageMaker]]",
+        "[[Google Cloud Vertex AI]]",
+        "[[Microsoft Azure Machine Learning]]"
+      ],
+      "complements": [
+        "[[Spark]]",
+        "[[MLflow]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Dataiku.md",
+      "nom": "Dataiku",
+      "alias": [
+        "dataiku",
+        "DSS",
+        "Dataiku DSS"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "plateforme",
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": "Plateforme data et IA de bout en bout, auto-hébergeable : un même projet se construit en interface visuelle ou en Python, R et SQL, avec préparation, entraînement, déploiement et gouvernance sous une seule console et un seul modèle de droits.",
+      "tags": [
+        "ml-platform",
+        "low-code",
+        "data-governance",
+        "automl",
+        "ml-pipeline",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Databricks]]",
+        "[[DataRobot]]",
+        "[[Alteryx]]",
+        "[[AWS SageMaker]]",
+        "[[Google Cloud Vertex AI]]",
+        "[[Microsoft Azure Machine Learning]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Google Cloud Vertex AI.md",
+      "nom": "Google Cloud Vertex AI",
+      "alias": [
+        "Vertex AI",
+        "vertex-ai",
+        "Vertex",
+        "Gemini Enterprise Agent Platform"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "saas",
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Écosystème ML natif de Google Cloud : entraînement, registre, pipelines et endpoints managés, plus l'accès aux modèles Gemini ; une partie seulement descend sur site, sur l'appliance air-gapped de Google Distributed Cloud.",
+      "tags": [
+        "ml-platform",
+        "model-serving",
+        "model-registry",
+        "ml-pipeline",
+        "automl",
+        "llm"
+      ],
+      "alternatives": [
+        "[[AWS SageMaker]]",
+        "[[Microsoft Azure Machine Learning]]",
+        "[[Dataiku]]",
+        "[[Databricks]]",
+        "[[DataRobot]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Microsoft Azure Machine Learning.md",
+      "nom": "Microsoft Azure Machine Learning",
+      "alias": [
+        "Azure ML",
+        "azure-ml",
+        "Azure Machine Learning",
+        "AzureML"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "saas",
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": "Écosystème ML natif d'Azure : espaces de travail, entraînement, registre et endpoints managés, pilotables en SDK Python ou en YAML ; seul des trois clouds à faire tourner entraînement et inférence sur un Kubernetes déjà en place, par Azure Arc.",
+      "tags": [
+        "ml-platform",
+        "model-serving",
+        "model-registry",
+        "ml-pipeline",
+        "automl",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[AWS SageMaker]]",
+        "[[Google Cloud Vertex AI]]",
+        "[[Dataiku]]",
+        "[[Databricks]]",
+        "[[DataRobot]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Plateforme data & IA — concept.md",
+      "nom": "Plateforme data & IA — concept",
+      "alias": [
+        "plateforme ML",
+        "plateforme data science",
+        "build vs buy",
+        "enfermement fournisseur",
+        "vendor lock-in"
+      ],
+      "role": "notion",
+      "categorie": "ml/plateforme",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ml-platform",
+        "data-governance",
+        "automl",
+        "low-code",
+        "ml-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Plateformes data & IA.md",
+      "nom": "Plateformes data & IA",
+      "alias": [
+        "plateformes ML",
+        "plateformes de données et d'IA",
+        "suites data science"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": "Les suites qui couvrent tout le cycle sous une console unique — et la question qu'elles posent toutes : sur quel matériel, et à quel prix de sortie.",
+      "tags": [
+        "ml-platform",
+        "automl",
+        "data-governance",
+        "low-code",
+        "lakehouse"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Plateformes data & IA/Snowflake.md",
+      "nom": "Snowflake",
+      "alias": [
+        "snowflake",
+        "Snowpark",
+        "Snowflake Cortex",
+        "Snowflake ML"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "saas",
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": "Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement.",
+      "tags": [
+        "ml-platform",
+        "olap",
+        "columnar",
+        "distributed",
+        "data-governance",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Databricks]]",
+        "[[ClickHouse]]",
+        "[[DuckDB]]"
+      ],
+      "complements": [
+        "[[Streamlit]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/PyTorch Geometric.md",
       "nom": "PyTorch Geometric",
       "alias": [
@@ -16425,7 +16865,8 @@
         "[[TensorBoard]]"
       ],
       "complements": [
-        "[[Evidently]]"
+        "[[Evidently]]",
+        "[[Databricks]]"
       ],
       "maturite": "production"
     },
