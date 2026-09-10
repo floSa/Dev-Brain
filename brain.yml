@@ -44,8 +44,10 @@ brain:
   # oubli : la prose generee sort de gabarits, et un gabarit se duplique par langue
   # le jour ou deux instances francaises tournent.
   volume_cible: 800
-  # 337 briques + 297 notions + 47 comparatifs + 74 hubs + 5 patterns + 5 regles
-  # = 765 pages mesurees le 2026-09-07, plus la marge. Cf. Remontee 1 du lot 1 :
+  # 345 briques + 298 notions + 48 comparatifs + 75 hubs + 5 patterns + 5 regles
+  # = 776 pages mesurees le 2026-09-10, apres l ouverture de ml/plateforme.
+  # Etait 765 le 2026-09-07. Le volume cible n a pas bouge et se rapproche.
+  # Cf. Remontee 1 du lot 1 :
   # 00-cadrage.md annonce 338/299/75/6/6, qui compte les 6 gabarits de Templates/.
   usage: perso
   profil: obsidian        # §5.5, recommandation : `obsidian` (tout) ou `nu` (sans .base)
@@ -108,7 +110,7 @@ roles:
     apparait_dans_le_hub: true
     couleur: "#412CDD"
     taille_avertissement: 90        # check_brain.SIZE_WARN["brique"]
-    population: 337
+    population: 345
     champs:
       requis: [role, nom, pitch, categorie]
       autorises: [role, nom, alias, pitch, categorie, famille, domaines,
@@ -146,15 +148,15 @@ roles:
         corrige, et exprimer une VRAIE obligation conditionnelle demanderait un
         second champ, que ce lot ne cree pas — cf. rapport du lot 2, remontee 2.
     corps:
-      - { titre: "<bandeau>", niveau: 0, genre: bandeau, mesure: 337 }
+      - { titre: "<bandeau>", niveau: 0, genre: bandeau, mesure: 345 }
       - { titre: "Definition", titre_rendu: "Définition", niveau: 2, genre: prose,
-          mesure: 337,
+          mesure: 345,
           doctrine: "Quatre a six lignes. La SEULE section ou la prose est permise." }
       - { titre: "Prendre si / Ecarter si", titre_rendu: "Prendre si / Écarter si",
-          niveau: 2, genre: decision, mesure: 337,
+          niveau: 2, genre: decision, mesure: 345,
           colonne_positive: "Prendre si", colonne_negative: "Écarter si" }
       - { titre: "Mise en oeuvre", titre_rendu: "Mise en œuvre",
-          niveau: 2, genre: etiquetee, mesure: 337,
+          niveau: 2, genre: etiquetee, mesure: 345,
           obligatoires: [Installation, "Point d'entrée", Prérequis, Exécution, Coût],
           permises:     [Installation, "Point d'entrée", Prérequis, Exécution, Coût],
           mesure_etiquettes: "les 5 etiquettes sur 337/337 pages" }
@@ -162,7 +164,7 @@ roles:
         titre_rendu: "Écosystème"
         niveau: 2
         genre: libre
-        mesure: 333
+        mesure: 341
         motif: >
           333 et non 337 : quatre briques ne portent AUCUNE section Ecosysteme,
           donc ni Alternatives ni Complements — imbalanced-learn, Obsidian,
@@ -173,7 +175,7 @@ roles:
         niveau: 3
         genre: liste_liens
         champ: alternatives
-        mesure: 324
+        mesure: 332
         existe_si: "la brique a des voisines interchangeables à nommer — soit `alternatives:` est renseigné, soit la section écrit en clair qu'aucune n'est fichée"
         motif: >
           CORRIGE AU LOT 2, boite 1. Le lot 1 declarait la section sans condition
@@ -189,7 +191,7 @@ roles:
         niveau: 3
         genre: liste_liens
         champ: complements
-        mesure: 103
+        mesure: 107
         existe_si: "`complements:` est renseigné"
         motif: >
           CORRIGE AU LOT 2, boite 1. Declaree sans condition pour 103 pages sur
@@ -197,14 +199,14 @@ roles:
           exact de son champ : zero page porte la section avec un champ vide, zero
           page a un champ renseigne sans la section. La condition s ecrit donc sur
           le champ, et rien d autre.
-      - { titre: "Ressources", niveau: 2, genre: etiquetee, mesure: 337,
+      - { titre: "Ressources", niveau: 2, genre: etiquetee, mesure: 345,
           obligatoires: [],
           permises: [Documentation, Dépôt, Tutoriel, Article, Papier, Cours, Vidéo],
           mesure_etiquettes: "Documentation 329 · Dépôt 309 · Papier 3 · Article 1 ·
                               hors vocabulaire : Site 4, Poids 1 (= les 5 violations
                               de la regle 7, moitie Ressources)" }
       - { titre: "Voir aussi", niveau: 2, genre: liste_liens, champ: null,
-          mesure: 337 }
+          mesure: 345 }
       - titre: "Retours"
         niveau: 2
         genre: conditionnelle
@@ -234,14 +236,14 @@ roles:
     apparait_dans_le_hub: true
     couleur: "#7AB800"
     taille_avertissement: 200       # check_brain.SIZE_WARN["notion"]
-    population: 297
+    population: 298
     champs:
       requis: [role, nom, categorie, domaines]
       autorises: [role, nom, alias, categorie, domaines, tags]
     corps:
-      - { titre: "Apercu", titre_rendu: "Aperçu", niveau: 2, genre: libre, mesure: 297 }
+      - { titre: "Apercu", titre_rendu: "Aperçu", niveau: 2, genre: libre, mesure: 298 }
       - { titre: "Concepts cles", titre_rendu: "Concepts clés", niveau: 2,
-          genre: libre, mesure: 297 }
+          genre: libre, mesure: 298 }
       - titre: "Les maths, simplement"
         niveau: 2
         genre: conditionnelle
@@ -252,17 +254,17 @@ roles:
           quinze notions n ont pas de maths a expliquer, et la section n a pas
           ete posee vide. C est le comportement voulu, mais brain-v3.md §7 la
           declare inconditionnelle — cf. Remontee 3.
-      - { titre: "En pratique", niveau: 2, genre: libre, mesure: 297 }
+      - { titre: "En pratique", niveau: 2, genre: libre, mesure: 298 }
       - titre: "Approches voisines & alternatives"
         niveau: 2
         genre: liste_liens
         champ: null
-        mesure: 297
+        mesure: 298
         motif: >
           Le titre REEL des 297 pages. brain-v3.md §7 et 00-cadrage.md §2.2
           ecrivent tous deux « Approches voisines » — le gabarit de la spec est
           en retard sur les pages, exactement le constat E4. Cf. Remontee 2.
-      - { titre: "Pour aller plus loin", niveau: 2, genre: libre, mesure: 297 }
+      - { titre: "Pour aller plus loin", niveau: 2, genre: libre, mesure: 298 }
     motif: >
       Ce que floSa a compris et ecrit pour lui-meme. On y ajoute volontiers ; on
       n y reecrit pas sans qu il l ait demande. La frontiere est portee par le
@@ -280,7 +282,7 @@ roles:
     pese_sur_le_seuil: false        # arbo.ROLES_HORS_SEUIL
     apparait_dans_le_hub: true
     couleur: "#EF4444"
-    population: 47
+    population: 48
     vue_embarquee:
       extension: ".base"
       moteur: "obsidian-bases"
@@ -324,9 +326,9 @@ roles:
           forme: "> On tranche sur : …" }
       - { titre: "<embed>", niveau: 0, genre: auto }
       - { titre: "Ce qui departage", titre_rendu: "Ce qui départage", niveau: 2,
-          genre: liste_liens, champ: null, mesure: 47 }
+          genre: liste_liens, champ: null, mesure: 48 }
       - { titre: "Voir aussi", niveau: 2, genre: liste_liens, champ: null,
-          mesure: 47,
+          mesure: 48,
           motif: "Porte l unique lien retour vers le hub Comparatifs. Arrivee le 2026-09-06." }
     motif: >
       Departager des objets INTERCHANGEABLES, dont on choisit un. C est l intention
@@ -344,7 +346,7 @@ roles:
     pese_sur_le_seuil: false
     apparait_dans_le_hub: false      # un hub ne se liste pas dans son propre hub
     couleur: "#FF922B"
-    population: 74
+    population: 75
     repartition: "6 Métiers/ · 20 domaines · Patterns/ · Rules/ · Comparatifs/ · 45 sous-domaines promus"
     champs:
       requis: [role, nom, pitch]
@@ -359,7 +361,7 @@ roles:
       - titre: "Ce qu'il faut comprendre"
         niveau: 2
         genre: libre
-        mesure: 71
+        mesure: 72
         ecrit_a_la_main: true
         existe_si: "le hub porte un corps d'aiguillage écrit à la main"
         motif: >
@@ -374,7 +376,7 @@ roles:
       - titre: "Choisir"
         niveau: 2
         genre: libre
-        mesure: 71
+        mesure: 72
         ecrit_a_la_main: true
         existe_si: "le hub porte un corps d'aiguillage écrit à la main"
         motif: "Meme cas et memes trois hubs que la section precedente."
@@ -422,9 +424,9 @@ roles:
           - { titre: "Sous-domaines", source: "sous-dossiers portant un hub",
               depuis: sous_dossiers, separateur: " · ", mesure: 10 }
           - { titre: "Notions",     source: "role: notion du dossier",
-              depuis: role, role: notion,     mesure: 39 }
+              depuis: role, role: notion,     mesure: 40 }
           - { titre: "Briques",     source: "role: brique du dossier",
-              depuis: role, role: brique,     mesure: 58 }
+              depuis: role, role: brique,     mesure: 59 }
           - { titre: "Patterns",    source: "role: pattern du dossier",
               depuis: role, role: pattern,    mesure: 1 }
           - { titre: "Rules",       source: "role: rule du dossier",
@@ -432,7 +434,7 @@ roles:
           - titre: "Comparatifs"
             source: "fichiers *.base du dossier"
             depuis: vues
-            mesure: 37
+            mesure: 38
             motif: >
               La seule section qui ne lit PAS `role:` mais l extension des
               fichiers. Anomalie du code actuel, rapportee sans etre corrigee :
@@ -441,7 +443,7 @@ roles:
       - titre: "Notes"
         niveau: 2
         genre: libre
-        mesure: 13
+        mesure: 14
         ecrit_a_la_main: true
         hors_zone_auto: true
         existe_si: "le hub porte une note manuelle sous sa zone AUTO"
@@ -553,14 +555,19 @@ axes:
       Les libelles restent declares : la promotion reprendra d elle-meme le jour
       ou le domaine gagne une seconde population.
     mesure:
-      valeurs_declarees: 109
-      valeurs_declarees_detail: "103 sous le bloc ```domaine (20 prefixes) + 6 sous le fence nu skill/* (1 prefixe rattache)"
-      valeurs_portees: 104
+      valeurs_declarees: 110
+      valeurs_declarees_detail: "104 sous le bloc ```domaine (20 prefixes) + 6 sous le fence nu skill/* (1 prefixe rattache)"
+      valeurs_portees: 105
       prefixes: 20
-      sous_libelles_declares: 47
-      sous_domaines_promus: 45
+      sous_libelles_declares: 48
+      sous_domaines_promus: 46
       motif_ecart_promus: "storage/objet et automation/no-code sont bloques par le plafond"
-      date: "2026-09-07"
+      date: "2026-09-10"
+      motif_derniere_mesure: >
+        Ouverture de ml/plateforme le 2026-09-10 : +1 valeur declaree, +1 portee,
+        +1 libelle, +1 promotion (« Plateformes data & IA », 9 pages pesantes
+        pour un seuil de 5, plafond non atteint — 17 pages restent au niveau du
+        domaine « Machine Learning »).
 
     # ------------------------------------------------------------------------
     # LES 20 PREFIXES, dans l ordre du bloc ```domaine de taxonomie.md.
@@ -652,6 +659,27 @@ axes:
               Distinct de math/optimisation, qui minimise une fonction connue.
               Sous le seuil : 4 pages, pas de dossier, donc pas de libelle.
           orchestration: {}
+          plateforme:
+            libelle: "Plateformes data & IA"
+            motif: >
+              Ouvert le 2026-09-10, par les huit suites que floSa rencontre en
+              clientele. Et NON « Plateformes » seul, qui se lirait comme l axe
+              `famille:` — dont la valeur `plateforme` qualifie des dizaines de
+              briques du vault qui n ont rien a faire ici : `famille:` dit ce
+              qu une brique EST techniquement, `categorie:` de quoi elle PARLE.
+              Le « data » du libelle n est pas un ornement : Snowflake et
+              Databricks entrent par l entrepot et le lakehouse, pas par le
+              modele, et un libelle « ML » seul les aurait mal accueillis.
+            frontiere: >
+              Les suites integrees qui couvrent TOUT LE CYCLE — preparation des
+              donnees, entrainement, deploiement, gouvernance — sous une seule
+              console et un seul modele de droits, et qui se vendent comme le
+              socle unique d une DSI. Distincte de ml/orchestration (ZenML,
+              Metaflow, Flyte), qui ne decrit qu un PIPELINE et laisse dehors
+              l infrastructure, le catalogue et les droits : c est le departage
+              D-R9. Distincte de database/analytique, dont elle prend un membre
+              par D-R8 quand le concurrent reel de ce membre est une plateforme
+              et non un moteur (arbitrage Snowflake).
           tracking:
             libelle: "Suivi d'expériences"
           serving:
@@ -1193,9 +1221,10 @@ axes:
           motif: "ARRET — demander avant d inventer. Une categorie manquante ne s invente jamais." }
 
     # ------------------------------------------------------------------------
-    # departages — SEPT. L endroit ou s ecrit un arbitrage recurrent, une fois,
+    # departages — NEUF. L endroit ou s ecrit un arbitrage recurrent, une fois,
     # avec le cas qui l a provoque. NAIT VIDE dans un brain neuf (principe 2) :
-    # ces sept sont le sediment de 337 pages.
+    # ces neuf sont le sediment de 345 pages. Les deux derniers sont nes le
+    # 2026-09-10 avec la valeur ml/plateforme.
     # ------------------------------------------------------------------------
     departages:
       - n: D-R1
@@ -1225,9 +1254,36 @@ axes:
           sort des hubs et viole aussitot R7 (toute page atteignable). Une
           exoneration pour 2 pages sur 337 serait une exception que personne ne
           retient, au prix d une page injoignable.
+      - n: D-R8
+        regle: "Un moteur analytique dont le concurrent réel est une plateforme, et non un autre moteur, se range en ml/plateforme et non en database/analytique. Le critère est la question que l'arbitrage tranche devant le client, pas la technologie du stockage."
+        cas: "Snowflake -> ml/plateforme ; ClickHouse et DuckDB restent en database/analytique"
+        motif: >
+          database/analytique existait et aurait pu accueillir Snowflake : la
+          valeur a ete ECARTEE, pas oubliee. Motif mesure sur sa population
+          reelle — DuckDB est embarque, ClickHouse vise le temps reel, et aucun
+          des deux n est le concurrent que floSa rencontre en clientele, ou la
+          question posee est « Snowflake ou Databricks ? ». Snowpark, Cortex et
+          Snowflake ML executent desormais du code et des modeles DANS le
+          moteur, ce qui achève de le sortir du rang des moteurs. Le rangement
+          dit ou l on CHERCHE une page, pas a quoi elle ressemble : le lien
+          croise dit le reste, et il est pose — Snowflake est en
+          `alternatives:` de ClickHouse et de DuckDB dans les deux sens, et la
+          page « Comparatif - Bases colonnes » le nomme.
+      - n: D-R9
+        regle: "Après D2, une brique ml/* qui couvre à elle seule la préparation des données, l'entraînement, le déploiement ET la gouvernance, sous une console et un modèle de droits uniques, est ml/plateforme. Si elle ne décrit qu'un pipeline et laisse l'infrastructure, le catalogue et les droits au dehors, elle est ml/orchestration."
+        cas: "Dataiku, Databricks, DataRobot -> ml/plateforme ; ZenML, Metaflow, Flyte -> ml/orchestration"
+        motif: >
+          La question fermee est « tout le cycle, ou seulement le pipeline ? ».
+          Elle est verifiable sans jugement : on compte les quatre etapes que la
+          brique porte elle-meme. ZenML les orchestre sans en executer aucune —
+          sa propre fiche le dit, « il n execute rien lui-meme » — la ou Dataiku
+          embarque la preparation, le calcul, le deploiement et les droits.
+          Sans ce departage, les huit suites seraient tombees en
+          ml/orchestration, ou elles auraient noye les trois frameworks que
+          floSa y range et fausse le comparatif des orchestrateurs.
 
     # ------------------------------------------------------------------------
-    # frontieres — HUIT frontieres disputees, ecrites une fois. Distinctes des
+    # frontieres — NEUF frontieres disputees, ecrites une fois. Distinctes des
     # `frontiere:` portees par chaque valeur : celles-ci opposent DEUX OU TROIS
     # valeurs nommees, elles ne definissent pas une valeur.
     # ------------------------------------------------------------------------
@@ -1248,6 +1304,8 @@ axes:
           distinction: "llm/agent-de-code : assistants et agents de codage, quelle que soit leur famille (extension d'IDE, CLI, application, plateforme de mémoire d'agent). llm/agents : briques génériques d'orchestration, sans spécialisation code. llm/assistant : application LLM prête à déployer pour un utilisateur final non développeur." }
       - { entre: "database/admin", et: ["devtools/*"],
           distinction: "Le sujet est la base, pas la fabrication de logiciel." }
+      - { entre: "ml/plateforme", et: ["ml/orchestration", "database/analytique"],
+          distinction: "ml/plateforme : la suite couvre tout le cycle — préparation, entraînement, déploiement, gouvernance — sous une console unique. ml/orchestration : le pipeline seul, l'infrastructure et les droits restent au dehors (D-R9). database/analytique : le moteur, quand son concurrent réel est un autre moteur et non une plateforme (D-R8)." }
 
     # ------------------------------------------------------------------------
     # journal — le vocabulaire de galaxie `concept/*` a ete CLOS le 2026-09-05,

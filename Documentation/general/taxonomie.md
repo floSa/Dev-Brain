@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 101 valeurs, cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 104 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (101 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (104 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -183,7 +183,7 @@ le sous-domaine se lit dans le bloc, à l'intérieur de la branche retenue.
 ```domaine
 ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl,
     non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
-    orchestration, tracking, serving, monitoring, feature-store, hub}
+    orchestration, plateforme, tracking, serving, monitoring, feature-store, hub}
 llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
      sortie-structuree, text-to-sql, low-code, protocole, passerelle, runtime,
      finetuning, eval, observabilite, outillage}
@@ -244,12 +244,19 @@ WrenAI ne produit aucun SQL.
 | D-R5 | Une bibliothèque qui **cherche des hyperparamètres** est `ml/hyperopt`, même si son moteur d'exécution est distribué : le distribué est son moyen, pas son sujet. | Ray Tune → `ml/hyperopt` (et non `compute/distribue`) |
 | D-R6 | Un connecteur qui **rapatrie** des lignes vers un DataFrame est `data/ingestion` ; un `database/driver` transporte du SQL sans construire de table en mémoire. | connectorx → `data/ingestion` ; psycopg2, ADBC → `database/driver` |
 | D-R7 | `famille: annuaire` n'exonère pas du domaine (cf. section *famille*). Un annuaire multi-domaines prend le domaine de l'**intention de recherche** qui le fait ouvrir, et l'arbitrage s'écrit en clair dans le corps de la fiche. | public-apis → `web/api` |
+| D-R8 | Un moteur analytique dont le **concurrent réel est une plateforme**, et non un autre moteur, se range en `ml/plateforme` et non en `database/analytique`. Le critère est la question que l'arbitrage tranche devant le client, pas la technologie du stockage. | Snowflake → `ml/plateforme` ; ClickHouse et DuckDB restent en `database/analytique` |
+| D-R9 | Après D2, une brique `ml/*` qui couvre **à elle seule** la préparation des données, l'entraînement, le déploiement **et** la gouvernance, sous une console et un modèle de droits uniques, est `ml/plateforme`. Si elle ne décrit qu'un **pipeline** et laisse l'infrastructure, le catalogue et les droits au dehors, elle est `ml/orchestration`. | Dataiku, Databricks, DataRobot → `ml/plateforme` ; ZenML, Metaflow, Flyte → `ml/orchestration` |
 
 ### Frontières disputées, écrites une fois
 
 - `ml/socle` (généraliste, toutes tâches, aucune hypothèse sur le type de données) **distinct de**
   `ml/tabulaire` (spécialisé données en colonnes) : scikit-learn ne suppose rien du type de
   données, XGBoost si.
+- `ml/plateforme` (la suite couvre **tout le cycle** — préparation, entraînement, déploiement,
+  gouvernance — sous une console unique) **distinct de** `ml/orchestration` (le **pipeline** seul :
+  l'infrastructure, le catalogue et les droits restent au dehors — règle D-R9) et de
+  `database/analytique` (le **moteur**, tant que son concurrent réel est un autre moteur — règle
+  D-R8).
 - `llm/socle` (LangChain, DSPy — on **assemble**) **distinct de** `llm/agents` (on orchestre une
   boucle d'outils) et de `llm/rag` (on indexe et on récupère).
 - `llm/runtime` (**servir** le modèle) **distinct de** `llm/passerelle` (**router** vers des
@@ -349,6 +356,36 @@ valeurs disparues et ne sont pas reconduites.
   (t-SNE/UMAP, ICA, NMF, autoencodeurs), qui vise une représentation utile à une tâche. La
   frontière est réelle mais fine : les deux familles partagent le tag `dimensionality-reduction`.
   Distinct aussi de `data/eda` (profiling automatique d'un jeu de données).
+- `ml/plateforme` — **ouvert le 2026-09-10.** Les suites intégrées qui couvrent **tout le cycle**
+  — préparation des données, entraînement, déploiement, gouvernance — sous une seule console et un
+  seul modèle de droits, et qui se vendent comme le socle unique d'une DSI : [[Dataiku]],
+  [[Databricks]], [[DataRobot]], [[Alteryx]], [[AWS SageMaker]], [[Google Cloud Vertex AI]],
+  [[Microsoft Azure Machine Learning]], [[Snowflake]]. La **question fermée** qui y mène est celle
+  de la règle D-R9, et elle se vérifie sans jugement — on compte les quatre étapes que la brique
+  porte elle-même : *tout le cycle, ou seulement le pipeline ?* Distinct de `ml/orchestration`
+  (ZenML, Metaflow, Flyte), qui ne décrit qu'un **pipeline** et laisse dehors l'infrastructure, le
+  catalogue et les droits — ZenML l'écrit lui-même, « il n'exécute rien lui-même », là où Dataiku
+  embarque la préparation, le calcul, le déploiement et les droits. Sans ce départage, les huit
+  suites seraient tombées dans `ml/orchestration`, où elles auraient noyé les trois frameworks et
+  faussé le comparatif des orchestrateurs. Le libellé du dossier est « Plateformes data & IA » et
+  non « Plateformes » seul : ce dernier se lirait comme l'axe `famille:`, dont la valeur
+  `plateforme` qualifie des dizaines de briques qui n'ont rien à faire ici — `famille:` dit ce
+  qu'une brique **est** techniquement, `categorie:` **de quoi elle parle**.
+  - **L'arbitrage Snowflake, écrit une fois pour la prochaine capture d'un moteur analytique.**
+    `database/analytique` existait et aurait pu l'accueillir : elle a été **écartée, pas oubliée**.
+    Le motif se lit sur la population réelle de la valeur — [[DuckDB]] est embarqué, [[ClickHouse]]
+    vise le temps réel, et **ni l'un ni l'autre n'est le concurrent rencontré en clientèle**, où la
+    question posée est « Snowflake ou Databricks ? ». S'y ajoute le fait que Snowpark, Cortex et
+    Snowflake ML exécutent désormais du code et des modèles **dans** le moteur. D'où la règle D-R8,
+    dont le critère est la question que l'arbitrage tranche devant le client, pas la technologie du
+    stockage. Un moteur dont le concurrent reste un moteur — le prochain ClickHouse, le prochain
+    DuckDB — va donc en `database/analytique` : la branche n'a pas bougé, seul Snowflake en sort.
+  - **Le rangement dit où l'on cherche une page, pas à quoi elle ressemble.** C'est pourquoi il est
+    doublé d'un câblage que le dossier ne dit pas : Snowflake est en `alternatives:` de ClickHouse
+    et de DuckDB **dans les deux sens**, et [[Comparatif - Bases colonnes]] le nomme dans « Ce qui
+    départage ». Il n'entre pas dans la **vue** `.base` de ce comparatif, filtrée sur
+    `categorie: database/analytique` — c'est la conséquence assumée du rangement, pas un défaut à
+    contourner en codant un nom en dur dans le filtre.
 - `ml/eval` — **élargi au lot 4.** Mesurer ce que vaut un modèle : le **protocole** qui rend
   le chiffre honnête (validation croisée, fuite de données, compromis biais-variance) et les
   **métriques** qui disent ce qu'il décrit (classification, régression, ranking, courbes ROC
