@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[Deep Agents]]", "[[open_deep_research]]"]
 tags: [llm, agents, tool-use]
 url_docs: https://docs.langchain.com/oss/python/langgraph/overview
 url_repo: https://github.com/langchain-ai/langgraph
@@ -59,6 +59,11 @@ NetworkX, elle se situe **au-dessus de** LangChain dans le stack — LangChain f
 
 - Aucun substitut direct fiché : LangGraph est une **couche d'orchestration**, pas un framework généraliste — les frameworks généralistes du comparatif intègrent leur propre couche d'agents, plus légère et moins explicite.
 
+### Compléments
+
+- [[Deep Agents]] — Harnais d'agent « batteries incluses » de l'équipe LangChain (MIT), construit sur LangGraph — système de fichiers à backends interchangeables, sous-agents à contexte isolé (outil `task`), résumé et déport du contexte sur disque, planification en option (`write_todos`) ; agnostique du modèle, Python et TypeScript. — se pose au-dessus de LangGraph : le runtime reste LangGraph, le harnais fournit fichiers, sous-agents et gestion du contexte tout faits.
+- [[open_deep_research]] — Agent de recherche approfondie open source de LangChain (MIT) — clarifie la demande, rédige un brief, délègue à des chercheurs parallèles pilotés par un superviseur LangGraph, puis produit le rapport ; modèles, moteurs de recherche et MCP configurables ; dépôt archivé (dernier commit 2026-08-10). — un exemple complet de graphe LangGraph à sous-graphes, lisible de bout en bout ; dépôt archivé.
+
 ## Ressources
 
 - Documentation — https://docs.langchain.com/oss/python/langgraph/overview
@@ -72,5 +77,7 @@ NetworkX, elle se situe **au-dessus de** LangChain dans le stack — LangChain f
 - [[agent-loops]] — la boucle perception / action d'un agent
 - [[Human-in-the-loop]] — la validation humaine intercalée dans la boucle
 - [[Multi-agent systems]] — systèmes à plusieurs agents coopérants
+- [[Architecture deep agent]] — le patron que Deep Agents assemble au-dessus de ce runtime
+- [[Sous-agents et isolation du contexte]] — un graphe compilé peut servir de sous-agent
 - [[Tool use patterns]] — patrons d'appel d'outils
 - [[Agent memory]] — mémoire persistante d'agent
