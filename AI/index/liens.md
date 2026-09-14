@@ -188,7 +188,7 @@
 ### Claude Agent SDK  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `mcp`
 - liens sortants : [[Agent skills]], [[Agents]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Deep Agents]], [[Harnais d'agent]], [[OpenAI Agents SDK]], [[Sous-agents et isolation du contexte]], [[mcp-protocol]]
-- liens entrants : [[Agents]], [[Architecture deep agent]], [[Comparatif - Frameworks LLM]], [[Deep Agents]], [[Sous-agents et isolation du contexte]]
+- liens entrants : [[Agents]], [[Architecture deep agent]], [[Comparatif - Frameworks LLM]], [[Deep Agents]], [[Harnais d'agent]], [[Sous-agents et isolation du contexte]]
 
 ### Claude Video  ·  brique
 - tags : `multimodal`, `speech`, `context-engineering`
@@ -328,7 +328,7 @@
 ### Deep Agents  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `context-engineering`, `mcp`
 - liens sortants : [[Agents]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Deep research]], [[Harnais d'agent]], [[LangChain]], [[LangGraph]], [[Multi-agent systems]], [[Sous-agents et isolation du contexte]], [[open_deep_research]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[Deep research]], [[LangGraph]], [[Sous-agents et isolation du contexte]], [[open_deep_research]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[Deep research]], [[Harnais d'agent]], [[LangGraph]], [[Sous-agents et isolation du contexte]], [[open_deep_research]]
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
@@ -2468,7 +2468,7 @@
 ### Architecture deep agent  ·  notion
 - tags : `agents`, `llm`, `multi-agent`, `context-engineering`, `tool-use`
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Claude Agent SDK]], [[Context engineering]], [[Deep Agents]], [[Deep research]], [[Harnais d'agent]], [[LangGraph]], [[Multi-agent systems]], [[OpenViking]], [[Sous-agents et isolation du contexte]], [[agent-loops]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Deep Agents]], [[Deep research]], [[LangGraph]], [[Sous-agents et isolation du contexte]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Context engineering]], [[Deep Agents]], [[Deep research]], [[Harnais d'agent]], [[LangGraph]], [[Sous-agents et isolation du contexte]]
 
 ### Architecture médaillon  ·  notion
 - tags : `data-modeling`, `data-pipeline`, `lakehouse`, `data-quality`
@@ -2657,7 +2657,7 @@
 
 ### Context engineering  ·  notion
 - tags : `context-engineering`, `llm`, `agents`
-- liens sortants : [[Agent memory]], [[Headroom]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Tokenization]], [[Tool use patterns]], [[prompt-caching]]
+- liens sortants : [[Agent memory]], [[Architecture deep agent]], [[Headroom]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Sous-agents et isolation du contexte]], [[Tokenization]], [[Tool use patterns]], [[prompt-caching]]
 - liens entrants : [[Agent skills]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[BMAD]], [[Claude Agent SDK]], [[Deep Agents]], [[Deep research]], [[Dify]], [[Flowise]], [[Harnais d'agent]], [[Headroom]], [[LLM & IA générative]], [[Langflow]], [[OmniRoute]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Positional encoding]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Sous-agents et isolation du contexte]], [[Tokenization]], [[agent-loops]], [[ai-memory]], [[i-have-adhd]], [[mcp-protocol]], [[prompt-caching]]
 
 ### Contrats de données & qualité  ·  notion
@@ -2927,7 +2927,7 @@
 
 ### Harnais d'agent  ·  notion
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
-- liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Context engineering]], [[Hermes Agent]], [[LLM benchmarks]], [[LM Studio]], [[LM Studio Bionic]], [[Maka]], [[Ollama]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[pi]], [[t3code]], [[tool-use]]
+- liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Context engineering]], [[Deep Agents]], [[Hermes Agent]], [[LLM benchmarks]], [[LM Studio]], [[LM Studio Bionic]], [[Maka]], [[Ollama]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Sandboxing de code généré]], [[Small Language Models]], [[Sous-agents et isolation du contexte]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[pi]], [[t3code]], [[tool-use]]
 - liens entrants : [[Agent evaluation]], [[Agent patterns]], [[Agents]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Deep Agents]], [[Headroom]], [[Hermes Agent]], [[LM Studio Bionic]], [[Maka]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]], [[agent-loops]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 
 ### HCPC  ·  notion
@@ -3633,7 +3633,7 @@
 ### Sous-agents et isolation du contexte  ·  notion
 - tags : `agents`, `multi-agent`, `llm`, `context-engineering`, `tool-use`
 - liens sortants : [[Agent evaluation]], [[Agent memory]], [[Architecture deep agent]], [[AutoGen]], [[Claude Agent SDK]], [[Context engineering]], [[Deep Agents]], [[LangGraph]], [[Multi-agent systems]], [[Reliability patterns]], [[Tool use patterns]], [[open_deep_research]]
-- liens entrants : [[Agents]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Deep Agents]], [[Deep research]], [[LangGraph]], [[open_deep_research]]
+- liens entrants : [[Agents]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Context engineering]], [[Deep Agents]], [[Deep research]], [[Harnais d'agent]], [[LangGraph]], [[open_deep_research]]
 
 ### Sparse autoencoders  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`, `unsupervised`

@@ -23,6 +23,9 @@ tags: [context-engineering, llm, agents]
 - **Sélectionner** : ne récupérer que le pertinent ([[RAG]]), filtrer par métadonnées, éviter le bruit.
 - **Compresser** : résumer l'historique, mémoire à fenêtre glissante, éviction des tours anciens ([[Agent memory]]).
 
+### Isoler
+- **Isoler** : confier le travail volumineux à un sous-agent qui a sa propre fenêtre. Seul son résultat remonte dans le contexte principal, le travail intermédiaire n'y entre jamais — cf. [[Sous-agents et isolation du contexte]].
+
 ### Ordre et position
 - Phénomène *lost in the middle* : l'information au **milieu** d'un long contexte est moins bien exploitée que celle du **début** et de la **fin**. Placer les instructions critiques aux extrémités.
 
@@ -46,6 +49,8 @@ tags: [context-engineering, llm, agents]
 
 - [[RAG]] — principal levier pour n'injecter que le contexte pertinent.
 - [[Agent memory]] — gère ce qu'un agent retient et réinjecte entre les tours.
+- [[Sous-agents et isolation du contexte]] — isoler le travail intermédiaire dans un contexte séparé ; seul le résultat remonte.
+- [[Architecture deep agent]] — déporter les résultats volumineux sur disque plutôt que les garder dans la fenêtre.
 - [[Tool use patterns]] — les résultats d'outils reviennent dans le contexte et consomment du budget.
 - [[Tokenization]] — la fenêtre se compte en tokens, unité de tout le budget.
 - [[Prompt engineering]] — travaille la formulation ; complémentaire de la gestion du contexte.
