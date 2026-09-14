@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: []
+alternatives: ["[[Kibana]]"]
 complements: ["[[Loki]]"]
 tags: [observability, metrics, dashboard, dataviz]
 url_docs: https://grafana.com/docs/grafana/latest/
@@ -60,7 +60,7 @@ distribution.
 
 ### Alternatives
 
-- *Aucune alternative déclarée : la catégorie `observability/supervision` n'a pas encore de second outil de visualisation fiché.*
+- [[Kibana]] — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui. — l'interface de la pile Elastic : plus riche sur Elasticsearch, limitée à lui.
 
 ### Compléments
 

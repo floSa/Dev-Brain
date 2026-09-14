@@ -23,10 +23,12 @@ tags: [observability, logging, metrics, dashboard, self-hosted]
 - Un serveur ou une poignée de machines, à surveiller sans monter une pile → [[Beszel]], quelques mégaoctets, historique inclus.
 - Des tableaux de bord et des alertes sur des sources existantes → [[Grafana]].
 - Centraliser les logs de plusieurs services sans payer un index plein texte → [[Loki]], lu depuis [[Grafana]].
+- Explorer et visualiser des logs déjà indexés dans [[Elasticsearch]] → [[Kibana]] ; il ne lit que cette source, là où [[Grafana]] en branche plus de 150.
 
 <!-- AUTO:START -->
 ### Briques
 - [[Beszel]] — Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.
 - [[Grafana]] — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
+- [[Kibana]] — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui.
 - [[Loki]] — Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
 <!-- AUTO:END -->

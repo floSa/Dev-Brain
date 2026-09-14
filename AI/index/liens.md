@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 782 pages actives.
+> 793 pages actives.
 
 ## Par page
 
@@ -85,6 +85,11 @@
 - liens sortants : [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]]
 - liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Databricks]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]]
 
+### Apache Solr  ·  brique
+- tags : `search`, `distributed`
+- liens sortants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Index inversé]], [[Lucene]], [[OpenSearch]], [[Postgres]], [[Recherche]]
+- liens entrants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Index inversé]], [[Lucene]], [[OpenSearch]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
+
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
 - liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
@@ -120,6 +125,11 @@
 - liens sortants : [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[Fine-tuning]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 
+### Beats  ·  brique
+- tags : `logging`, `data-pipeline`
+- liens sortants : [[Data & pipelines]], [[Elasticsearch]], [[Kibana]], [[Logstash]], [[Loki]]
+- liens entrants : [[Data & pipelines]], [[Elasticsearch]], [[Kibana]], [[Logstash]], [[Recherche]]
+
 ### BentoML  ·  brique
 - tags : `model-serving`, `inference`
 - liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
@@ -133,7 +143,7 @@
 ### bm25s  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
 - liens sortants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Elasticsearch]], [[Hybrid retrieval]], [[Ranking metrics]], [[Recherche d'information]], [[rank-bm25]], [[sentence-transformers]]
-- liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[rank-bm25]]
+- liens entrants : [[BM25]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Index inversé]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Recherche]], [[rank-bm25]]
 
 ### BMAD  ·  brique
 - tags : `agent-skill`, `code-assistant`, `agents`, `multi-agent`, `code-generation`
@@ -392,8 +402,8 @@
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
-- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[Hybrid retrieval]], [[Marqo]], [[Postgres]], [[Recherche d'information]], [[Vespa]], [[txtai]]
-- liens entrants : [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Haystack]], [[Hybrid retrieval]], [[Loki]], [[Marqo]], [[Recherche]], [[Recherche d'information]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens sortants : [[Apache Solr]], [[Bases de données]], [[Beats]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[Hybrid retrieval]], [[Index inversé]], [[Kibana]], [[Logstash]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Postgres]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[txtai]]
+- liens entrants : [[Apache Solr]], [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Comparatif - Moteurs de recherche]], [[Data & pipelines]], [[Haystack]], [[Hybrid retrieval]], [[Index inversé]], [[Kibana]], [[Logstash]], [[Loki]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[Observabilité]], [[OpenSearch]], [[Recherche]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
 
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
@@ -517,8 +527,8 @@
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
-- liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Loki]], [[Observabilité]], [[Streamlit]]
-- liens entrants : [[Beszel]], [[Loki]], [[Observabilité]]
+- liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Kibana]], [[Loki]], [[Observabilité]], [[Streamlit]]
+- liens entrants : [[Beszel]], [[Kibana]], [[Loki]], [[Observabilité]]
 
 ### Graphify  ·  brique
 - tags : `code-assistant`, `knowledge-graph`, `mcp`, `context-engineering`
@@ -572,8 +582,8 @@
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
-- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
+- liens sortants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Lucene]], [[Recherche vectorielle approximative]], [[ScaNN]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[Index ANN — internes]], [[Lucene]], [[Recherche vectorielle approximative]], [[ScaNN]], [[Vectoriel]], [[k-NN]]
 
 ### HTMX  ·  brique
 - tags : `hypermedia`
@@ -649,6 +659,11 @@
 - tags : `orchestration`, `data-pipeline`, `declarative-config`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
+
+### Kibana  ·  brique
+- tags : `observability`, `logging`, `dashboard`
+- liens sortants : [[Beats]], [[Elasticsearch]], [[Grafana]], [[Logstash]], [[Loki]], [[Observabilité]]
+- liens entrants : [[Beats]], [[Elasticsearch]], [[Grafana]], [[Logstash]], [[Observabilité]], [[Recherche]]
 
 ### Kornia  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `deep-learning`, `gpu`, `autograd`
@@ -770,10 +785,20 @@
 - liens sortants : [[AI security]], [[Agent patterns]], [[Agno]], [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Small Language Models]], [[Tool use patterns]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]]
 - liens entrants : [[Assistants]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]]
 
+### Logstash  ·  brique
+- tags : `logging`, `data-pipeline`
+- liens sortants : [[Beats]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[Elasticsearch]], [[Kibana]]
+- liens entrants : [[Beats]], [[Data & pipelines]], [[Elasticsearch]], [[Kibana]], [[Recherche]]
+
 ### Loki  ·  brique
 - tags : `observability`, `logging`, `distributed`
 - liens sortants : [[Elasticsearch]], [[Grafana]], [[Observabilité]]
-- liens entrants : [[Beszel]], [[Grafana]], [[Observabilité]]
+- liens entrants : [[Beats]], [[Beszel]], [[Grafana]], [[Kibana]], [[Observabilité]]
+
+### Lucene  ·  brique
+- tags : `search`, `ann`, `embedded`
+- liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Index inversé]], [[OpenSearch]], [[Recherche]], [[Recherche vectorielle approximative]], [[hnswlib]]
+- liens entrants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Index inversé]], [[Recherche]], [[Recherche vectorielle approximative]], [[hnswlib]]
 
 ### Mage  ·  brique
 - tags : `orchestration`, `data-pipeline`, `low-code`
@@ -819,6 +844,11 @@
 - tags : `mcp`, `testing`, `tool-use`
 - liens sortants : [[LLM & IA générative]], [[fastmcp]], [[mcp-protocol]], [[pytest]]
 - liens entrants : [[LLM & IA générative]], [[fastmcp]], [[mcp-protocol]]
+
+### Meilisearch  ·  brique
+- tags : `search`, `hybrid-search`, `semantic-search`, `self-hosted`
+- liens sortants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Recherche]], [[Recherche sémantique]], [[Typesense]]
+- liens entrants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]]
 
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
@@ -1015,6 +1045,11 @@
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Dify]], [[Flowise]], [[LangChain]], [[Langflow]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[Reliability patterns]], [[Routing and cascading]], [[TGI]], [[vLLM]]
 - liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[OmniRoute]], [[Passerelles]], [[Pattern - Agent sur LLM auto-hébergé]], [[Routing and cascading]], [[Runtimes]], [[needle]], [[pi]]
 
+### OpenSearch  ·  brique
+- tags : `search`, `distributed`, `hybrid-search`, `semantic-search`
+- liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Recherche]], [[Recherche vectorielle approximative]]
+- liens entrants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Lucene]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
+
 ### OpenSpiel  ·  brique
 - tags : `reinforcement-learning`, `game-theory`
 - liens sortants : [[AlphaZero and self-play]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Théorie des jeux]]
@@ -1138,7 +1173,7 @@
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
 - liens sortants : [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLAlchemy]], [[SQLite]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airflow]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache Solr]], [[Bases de données]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1408,7 +1443,7 @@
 ### sentence-transformers  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `reranking`, `nlp`
 - liens sortants : [[Comparatif - NLP]], [[Elasticsearch]], [[HuggingFace]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[embeddings]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[Recherche sémantique]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### sentencepiece  ·  brique
 - tags : `tokenization`, `nlp`
@@ -1643,12 +1678,17 @@
 ### txtai  ·  brique
 - tags : `search`, `semantic-search`, `embeddings`, `rag`, `vector-db`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[FastAPI]], [[HuggingFace]], [[Marqo]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Vespa]], [[embeddings]], [[sentence-transformers]]
-- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[sentence-transformers]]
+- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Recherche sémantique]], [[Vespa]], [[sentence-transformers]]
 
 ### Typer  ·  brique
 - tags : `cli`, `type-hints`
 - liens sortants : [[Comparatif - Frameworks CLI]], [[FastAPI]], [[Outils de développement]], [[Pydantic]], [[Rich]]
 - liens entrants : [[Comparatif - Frameworks CLI]], [[Outils de développement]], [[Rich]]
+
+### Typesense  ·  brique
+- tags : `search`, `hybrid-search`, `ann`, `self-hosted`
+- liens sortants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Meilisearch]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
+- liens entrants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Meilisearch]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
@@ -1788,7 +1828,7 @@
 ### Comparatif - Bases vectorielles  ·  comparatif
 - tags : `vector-db`
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles.base]], [[Comparatifs]], [[Faiss]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Weaviate]], [[hnswlib]], [[pgvector]]
-- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatifs]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
+- liens entrants : [[Annoy]], [[Bases de données vectorielles]], [[Chroma]], [[Comparatifs]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche vectorielle approximative]], [[ScaNN]], [[Vectoriel]], [[Weaviate]], [[hnswlib]], [[pgvector]]
 
 ### Comparatif - Boosting  ·  comparatif
 - tags : `boosting`, `tree-based`, `ensemble`
@@ -1887,8 +1927,8 @@
 
 ### Comparatif - Moteurs de recherche  ·  comparatif
 - tags : `search`
-- liens sortants : [[Comparatif - Moteurs de recherche.base]], [[Comparatifs]], [[Elasticsearch]], [[Marqo]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Comparatifs]], [[Elasticsearch]], [[Marqo]], [[Recherche]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche.base]], [[Comparatifs]], [[Elasticsearch]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Apache Solr]], [[Comparatifs]], [[Elasticsearch]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Recherche]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### Comparatif - NLP  ·  comparatif
 - tags : `nlp`, `information-retrieval`, `ner`, `sequence-labeling`, `text-classification`
@@ -2057,8 +2097,8 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
-- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Faker]], [[Flink]], [[Index ANN — internes]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Data Engineering]], [[Data Science]], [[MLOps]], [[Machine Learning]], [[Tabulaire]]
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Flink]], [[Index ANN — internes]], [[Logstash]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[Beats]], [[Data Engineering]], [[Data Science]], [[Logstash]], [[MLOps]], [[Machine Learning]], [[Recherche]], [[Tabulaire]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -2167,8 +2207,8 @@
 
 ### Observabilité  ·  hub
 - tags : `observability`, `logging`, `metrics`, `dashboard`, `self-hosted`
-- liens sortants : [[Beszel]], [[Grafana]], [[Loki]]
-- liens entrants : [[AI Engineering]], [[Beszel]], [[Grafana]], [[Loki]], [[MLOps]]
+- liens sortants : [[Beszel]], [[Elasticsearch]], [[Grafana]], [[Kibana]], [[Loki]]
+- liens entrants : [[AI Engineering]], [[Beszel]], [[Grafana]], [[Kibana]], [[Loki]], [[MLOps]], [[Recherche]]
 
 ### Observabilité des LLM  ·  hub
 - tags : `llm-observability`, `tracing`, `observability`
@@ -2222,8 +2262,8 @@
 
 ### Recherche  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Marqo]], [[Vectoriel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Bases de données]], [[NLP]], [[RAG & retrieval]]
+- liens sortants : [[Apache Solr]], [[Beats]], [[Comparatif - Moteurs de recherche]], [[Data & pipelines]], [[Elasticsearch]], [[Index inversé]], [[Kibana]], [[Logstash]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[Observabilité]], [[OpenSearch]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vectoriel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Apache Solr]], [[Bases de données]], [[Lucene]], [[Meilisearch]], [[NLP]], [[OpenSearch]], [[RAG & retrieval]], [[Typesense]]
 
 ### Relationnel  ·  hub
 - tags : —
@@ -2528,7 +2568,7 @@
 ### Bases de données vectorielles  ·  notion
 - tags : `vector-db`, `embeddings`, `semantic-search`, `rag`
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
-- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
+- liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Chroma]], [[Data & pipelines]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -2538,7 +2578,7 @@
 ### BM25  ·  notion
 - tags : `nlp`, `information-retrieval`, `ranking`, `search`
 - liens sortants : [[Elasticsearch]], [[Hybrid retrieval]], [[Ranking metrics]], [[Recherche d'information]], [[Reranking]], [[TF-IDF]], [[Traitement du langage naturel]], [[bm25s]], [[embeddings]], [[rank-bm25]]
-- liens entrants : [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[RAG]], [[Recherche d'information]], [[TF-IDF]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]]
+- liens entrants : [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[Index inversé]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[TF-IDF]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]]
 
 ### Boosting  ·  notion
 - tags : `supervised`, `ensemble`, `boosting`
@@ -2573,7 +2613,7 @@
 ### Change Data Capture (CDC)  ·  notion
 - tags : `cdc`, `streaming`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
-- liens entrants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Stream processing]], [[Versionnage de données]]
+- liens entrants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Logstash]], [[Stream processing]], [[Versionnage de données]]
 
 ### Chaînes de Markov  ·  notion
 - tags : `stochastic-process`, `markov`, `probability`
@@ -2768,7 +2808,7 @@
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
 - liens sortants : [[Bases de données vectorielles]], [[Clustering]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Réduction de dimension]], [[TF-IDF]], [[t-SNE and UMAP]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Non supervisé]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Non supervisé]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
 
 ### Encodage des variables catégorielles  ·  notion
 - tags : `feature-engineering`
@@ -2947,8 +2987,8 @@
 
 ### Hybrid retrieval  ·  notion
 - tags : `retrieval`, `hybrid-search`, `semantic-search`, `search`, `rag`
-- liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Haystack]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[TF-IDF]], [[Weaviate]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Elasticsearch]], [[GraphRAG]], [[Haystack]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[Recherche d'information]], [[Reranking]], [[Traitement du langage naturel]], [[Vespa]], [[ai-memory]], [[bm25s]], [[rank-bm25]]
+- liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Haystack]], [[Index inversé]], [[Meilisearch]], [[OpenSearch]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[TF-IDF]], [[Typesense]], [[Weaviate]], [[embeddings]]
+- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Elasticsearch]], [[GraphRAG]], [[Haystack]], [[Index inversé]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Meilisearch]], [[OpenSearch]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Traitement du langage naturel]], [[Typesense]], [[Vespa]], [[ai-memory]], [[bm25s]], [[rank-bm25]]
 
 ### ICA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -2978,7 +3018,12 @@
 ### Index ANN — internes  ·  notion
 - tags : `ann`, `vector-db`, `embeddings`
 - liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[embeddings]], [[hnswlib]]
-- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[Qdrant]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Bases de données vectorielles]], [[Data & pipelines]], [[Faiss]], [[Index inversé]], [[Qdrant]], [[Recherche vectorielle approximative]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+
+### Index inversé  ·  notion
+- tags : `search`, `information-retrieval`
+- liens sortants : [[Apache Solr]], [[BM25]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index ANN — internes]], [[Lucene]], [[Meilisearch]], [[OpenSearch]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[TF-IDF]], [[Typesense]], [[bm25s]]
+- liens entrants : [[Apache Solr]], [[Elasticsearch]], [[Hybrid retrieval]], [[Lucene]], [[Meilisearch]], [[OpenSearch]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -3048,7 +3093,7 @@
 ### k-NN  ·  notion
 - tags : `supervised`, `classification`, `regression`
 - liens sortants : [[Annoy]], [[Arbres de décision]], [[Bases de données vectorielles]], [[Classification]], [[Compromis biais-variance]], [[Faiss]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Index ANN — internes]], [[Mise à l'échelle]], [[PCA]], [[Réduction de dimension]], [[Régression]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]], [[embeddings]], [[hnswlib]], [[k-médoïds (PAM)]]
-- liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Classification]], [[Compromis biais-variance]], [[Gaussian Process]], [[Imbalanced classification]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Mise à l'échelle]], [[Naive Bayes]], [[Réduction de dimension]], [[Régression]], [[Régression linéaire]], [[SVM]], [[Socle]], [[Types de données et choix de modèle]]
+- liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Classification]], [[Compromis biais-variance]], [[Gaussian Process]], [[Imbalanced classification]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Mise à l'échelle]], [[Naive Bayes]], [[Recherche vectorielle approximative]], [[Réduction de dimension]], [[Régression]], [[Régression linéaire]], [[SVM]], [[Socle]], [[Types de données et choix de modèle]]
 
 ### KL divergence  ·  notion
 - tags : `information-theory`, `kl-divergence`
@@ -3458,7 +3503,7 @@
 ### RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`, `embeddings`, `semantic-search`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Context engineering]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[Query transformations]], [[RAG eval]], [[Reranking]], [[Routing and cascading]], [[SFT]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Deep research]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[Vanna]], [[pdf-inspector]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Deep research]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[Vanna]], [[pdf-inspector]], [[sentence-transformers]], [[txtai]]
 
 ### RAG benchmarks  ·  notion
 - tags : `benchmark`, `rag-eval`, `rag`, `retrieval`, `llm-eval`
@@ -3488,7 +3533,17 @@
 ### Recherche d'information  ·  notion
 - tags : `nlp`, `information-retrieval`, `retrieval`, `hybrid-search`, `ranking`, `semantic-search`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Query transformations]], [[RAG]], [[Ranking metrics]], [[Reranking]], [[TF-IDF]], [[Traitement du langage naturel]], [[embeddings]]
-- liens entrants : [[BM25]], [[Bases de données vectorielles]], [[Construction de graphes de connaissances]], [[Elasticsearch]], [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Marqo]], [[NLP]], [[OCR]], [[RAGatouille]], [[Reranking]], [[Systèmes de recommandation]], [[TF-IDF]], [[Traitement du langage naturel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[BM25]], [[Bases de données vectorielles]], [[Construction de graphes de connaissances]], [[Elasticsearch]], [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[Index inversé]], [[Late-interaction retrieval]], [[Marqo]], [[NLP]], [[OCR]], [[RAGatouille]], [[Recherche sémantique]], [[Reranking]], [[Systèmes de recommandation]], [[TF-IDF]], [[Traitement du langage naturel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+
+### Recherche sémantique  ·  notion
+- tags : `search`, `semantic-search`, `embeddings`
+- liens sortants : [[Apache Solr]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Meilisearch]], [[OpenSearch]], [[RAG]], [[Recherche d'information]], [[Recherche vectorielle approximative]], [[Reranking]], [[Typesense]], [[embeddings]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Meilisearch]], [[Recherche]], [[Recherche vectorielle approximative]], [[Typesense]]
+
+### Recherche vectorielle approximative  ·  notion
+- tags : `search`, `ann`, `semantic-search`
+- liens sortants : [[Apache Solr]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index ANN — internes]], [[Index inversé]], [[Lucene]], [[Meilisearch]], [[OpenSearch]], [[Recherche sémantique]], [[Typesense]], [[embeddings]], [[hnswlib]], [[k-NN]]
+- liens entrants : [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Lucene]], [[OpenSearch]], [[Recherche]], [[Recherche sémantique]], [[Typesense]], [[hnswlib]]
 
 ### Regression metrics  ·  notion
 - tags : `model-evaluation`, `regression`, `supervised`
@@ -3513,7 +3568,7 @@
 ### Reranking  ·  notion
 - tags : `retrieval`, `reranking`, `ranking`, `rag`
 - liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[RAG]], [[Ranking metrics]], [[Recherche d'information]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Traitement du langage naturel]], [[Vespa]], [[sentence-transformers]]
+- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Traitement du langage naturel]], [[Vespa]], [[sentence-transformers]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -3738,7 +3793,7 @@
 ### TF-IDF  ·  notion
 - tags : `nlp`, `information-retrieval`, `feature-engineering`
 - liens sortants : [[BM25]], [[Classification de texte]], [[Data leakage]], [[Ingénierie des caractéristiques]], [[Naive Bayes]], [[Recherche d'information]], [[Régression logistique]], [[Scikit-Learn]], [[Traitement du langage naturel]], [[embeddings]], [[spaCy]]
-- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Recherche d'information]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[embeddings]]
+- liens entrants : [[BM25]], [[Classification de texte]], [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[Index inversé]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Recherche d'information]], [[Traitement du langage naturel]], [[Types de données et choix de modèle]], [[embeddings]]
 
 ### Théorie des jeux  ·  notion
 - tags : `game-theory`, `optimization`
@@ -3924,7 +3979,7 @@
 - `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Claude Agent SDK, Cline, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Context engineering, Continue, CrewAI, Daytona, Deep Agents, Deep research, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
 - `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, Systèmes IA, Sécurité, promptfoo
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
-- `ann` : Annoy, Faiss, Index ANN — internes, Milvus, Qdrant, ScaNN, hnswlib
+- `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
 - `anomaly-detection` : Comparatif - Détection d'anomalies, Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
@@ -3966,7 +4021,7 @@
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
 - `cryptography` : PyJWT, Sécurité, croc  — pas de page concept dédiée
-- `dashboard` : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI  — pas de page concept dédiée
+- `dashboard` : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Observabilité, Shiny for Python, WrenAI  — pas de page concept dédiée
 - `data-app` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, Vision, albumentations, torchvision
 - `data-contract` : Contrats de données & qualité
@@ -3974,7 +4029,7 @@
 - `data-governance` : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `data-leakage` : Data leakage
 - `data-modeling` : Architecture médaillon  — pas de page concept dédiée
-- `data-pipeline` : Airflow, Alteryx, Architecture médaillon, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping  — pas de page concept dédiée
+- `data-pipeline` : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping  — pas de page concept dédiée
 - `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Contrats de données & qualité, ydata-profiling
 - `data-validation` : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Sortie typée, Structured outputs  — pas de page concept dédiée
 - `data-versioning` : Versionnage de données
@@ -3994,7 +4049,7 @@
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
-- `distributed` : AWS SageMaker, Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
+- `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
@@ -4004,8 +4059,8 @@
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
-- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
-- `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Systèmes de recommandation, embeddings, sentence-transformers, txtai
+- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
+- `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Recherche sémantique, Systèmes de recommandation, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy, Théorie de l'information
 - `experiment-tracking` : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases  — pas de page concept dédiée
@@ -4033,7 +4088,7 @@
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
-- `hybrid-search` : Haystack, Hybrid retrieval, Recherche d'information, Vespa, Weaviate
+- `hybrid-search` : Haystack, Hybrid retrieval, Meilisearch, OpenSearch, Recherche d'information, Typesense, Vespa, Weaviate
 - `hypermedia` : Comparatif - Frontends web légers, HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Comparatif - Optimisation d'hyperparamètres, Hyperopt, Machine Learning, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune, Suivi d'expériences
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
@@ -4044,7 +4099,7 @@
 - `in-memory` : Faiss, LLM caching, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
 - `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Inference optimization, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
-- `information-retrieval` : BM25, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
+- `information-retrieval` : BM25, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
 - `interactive-viz` : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
 - `isometric` : Comparatif - Diagrammes, Diagrammes, FossFLOW  — pas de page concept dédiée
@@ -4068,7 +4123,7 @@
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
 - `llm-observability` : Comparatif - Observabilité LLM, Helicone, LLM & IA générative, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize
 - `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
-- `logging` : Loki, Observabilité  — pas de page concept dédiée
+- `logging` : Beats, Kibana, Logstash, Loki, Observabilité  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
@@ -4116,7 +4171,7 @@
 - `object-detection` : Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
-- `observability` : Beszel, Grafana, Loki, Observabilité, Observabilité des LLM  — pas de page concept dédiée
+- `observability` : Beszel, Grafana, Kibana, Loki, Observabilité, Observabilité des LLM  — pas de page concept dédiée
 - `ocr` : Comparatif - Parsing de documents, Documents, LlamaParse, Marker, OCR, Parsing, Stirling PDF, Unstructured, docTR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake  — pas de page concept dédiée
@@ -4180,13 +4235,13 @@
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow, Comparatif - Orchestrateurs data  — pas de page concept dédiée
 - `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité  — pas de page concept dédiée
-- `search` : BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
+- `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Automatisation no-code, Beszel, Dataiku, Observabilité, OpenMAIC, Stirling PDF, Stockage, Web-Check, croc  — pas de page concept dédiée
+- `self-hosted` : Automatisation no-code, Beszel, Dataiku, Meilisearch, Observabilité, OpenMAIC, Stirling PDF, Stockage, Typesense, Web-Check, croc  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
-- `semantic-search` : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, RAG & retrieval, Recherche d'information, embeddings, sentence-transformers, txtai  — pas de page concept dédiée
+- `semantic-search` : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, embeddings, sentence-transformers, txtai
 - `sequence-labeling` : Comparatif - NLP, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : Avro  — pas de page concept dédiée
@@ -4271,11 +4326,11 @@
 - `container` (porté par : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
-- `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Observabilité, Shiny for Python, WrenAI)
+- `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Observabilité, Shiny for Python, WrenAI)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `data-modeling` (porté par : Architecture médaillon)
-- `data-pipeline` (porté par : Airflow, Alteryx, Architecture médaillon, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping)
+- `data-pipeline` (porté par : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, Scraping, Stream processing, Web scraping)
 - `data-validation` (porté par : Contrats de données & qualité, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Sortie typée, Structured outputs)
 - `dataframe` (porté par : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, sweetviz, ydata-profiling)
 - `dataviz` (porté par : Comparatif - Visualisation, Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn)
@@ -4289,7 +4344,7 @@
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, Mermaid, draw.io)
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
-- `distributed` (porté par : AWS SageMaker, Apache Cassandra, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
+- `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, LlamaParse, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
@@ -4297,7 +4352,7 @@
 - `education` (porté par : OpenMAIC)
 - `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin)
 - `eigenvalue` (porté par : Algèbre linéaire, Eigendecomposition, SVD)
-- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, SQLite, ScaNN, hnswlib)
+- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
@@ -4334,7 +4389,7 @@
 - `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
 - `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
-- `logging` (porté par : Loki, Observabilité)
+- `logging` (porté par : Beats, Kibana, Logstash, Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector)
@@ -4362,7 +4417,7 @@
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage)
-- `observability` (porté par : Beszel, Grafana, Loki, Observabilité, Observabilité des LLM)
+- `observability` (porté par : Beszel, Grafana, Kibana, Loki, Observabilité, Observabilité des LLM)
 - `olap` (porté par : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake)
 - `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
@@ -4398,11 +4453,10 @@
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
-- `search` (porté par : BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Marqo, Vespa, bm25s, rank-bm25, txtai)
+- `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Automatisation no-code, Beszel, Dataiku, Observabilité, OpenMAIC, Stirling PDF, Stockage, Web-Check, croc)
+- `self-hosted` (porté par : Automatisation no-code, Beszel, Dataiku, Meilisearch, Observabilité, OpenMAIC, Stirling PDF, Stockage, Typesense, Web-Check, croc)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
-- `semantic-search` (porté par : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Pinecone, RAG, RAG & retrieval, Recherche d'information, embeddings, sentence-transformers, txtai)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
 - `spectrogram` (porté par : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)

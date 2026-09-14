@@ -59,6 +59,7 @@ exposés directement.
 - [[Annoy]] — Bibliothèque ANN de Spotify, index sur disque mmap — simple et stable, désormais en mode maintenance.
 - [[ScaNN]] — Bibliothèque ANN de Google à quantification anisotrope — débit/rappel à l'état de l'art sur gros volumes.
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+- [[Lucene]] — voisin : bibliothèque de recherche plein texte qui embarque sa propre implémentation HNSW, quand l'index vectoriel doit vivre à côté d'un index inversé.
 
 ## Ressources
 
@@ -69,4 +70,5 @@ exposés directement.
 
 - [[Bases de données vectorielles]] — la notion du dossier
 - [[Index ANN — internes]] — les internes de HNSW et le réglage de `M` et `ef`
+- [[Recherche vectorielle approximative]] — comment un moteur de recherche exécute le kNN approximatif
 - [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier

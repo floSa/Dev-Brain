@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 782 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 793 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -36,7 +36,9 @@
 - **Parquet** — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
 ### data/ingestion
+- **Beats** — Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash.
 - **connectorx** — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
+- **Logstash** — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire.
 
 ### data/orchestration
 - **Airflow** — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
@@ -130,11 +132,16 @@
 - **SQLModel** — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 
 ### database/recherche
+- **Apache Solr** — Plateforme de recherche Apache (Apache-2.0) bâtie sur Lucene — full-text, vectoriel et géospatial, distribuée par SolrCloud (réplication, bascule automatique).
 - **bm25s** — Implémentation BM25 ultra-rapide en Python (matrices creuses SciPy) — scores pré-calculés à l'indexation, requêtes en millisecondes, des ordres de grandeur plus vite que rank-bm25, avec index sauvegardable et rechargeable en mémoire-mappée.
 - **Elasticsearch** — Moteur de recherche et d'analytique distribué : indexation full-text et logs à grande échelle.
+- **Lucene** — Bibliothèque Java de recherche plein texte (Apache-2.0) — le moteur d'indexation sous Elasticsearch et Solr ; index inversé et HNSW natifs, à embarquer dans une application JVM.
 - **Marqo** — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
+- **Meilisearch** — Moteur de recherche instantané en Rust — full-text tolérant aux fautes de frappe, sémantique et hybride derrière une API REST ; édition communautaire MIT, sharding réservé à l'édition Enterprise.
+- **OpenSearch** — Moteur de recherche et d'analytique distribué (Apache-2.0) — fork d'Elasticsearch 7.10.2 : full-text, k-NN et recherche hybride, visualisé dans OpenSearch Dashboards.
 - **rank-bm25** — Implémentation Python pure des algorithmes BM25 (Okapi, BM25L, BM25+) pour le classement lexical de documents — minimale, sans index ni dépendance, idéale pour prototyper un retrieval sparse.
 - **txtai** — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
+- **Typesense** — Moteur de recherche tolérant aux fautes de frappe (GPL-3.0, C++) — index en mémoire pour du search-as-you-type sous 50 ms, avec recherche vectorielle HNSW et hybride ; alternative ouverte à Algolia.
 - **Vespa** — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
 
 ### database/relationnel
@@ -482,6 +489,7 @@
 ### observability/supervision
 - **Beszel** — Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.
 - **Grafana** — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
+- **Kibana** — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui.
 - **Loki** — Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
 
 ### security/auth
@@ -573,6 +581,11 @@
 
 ### database/orm
 - **ORM** — domaines : data-eng · alias : orm, object-relational mapping, mapping objet-relationnel
+
+### database/recherche
+- **Index inversé** — domaines : data-eng, ai-eng · alias : inverted index, index inverse, postings list, liste de postings
+- **Recherche sémantique** — domaines : data-eng, ai-eng · alias : semantic search, recherche par le sens, recherche dense
+- **Recherche vectorielle approximative** — domaines : data-eng, ai-eng · alias : approximate kNN, kNN approximatif, recherche kNN approximative, recherche des plus proches voisins approximative
 
 ### database/vecteur
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle

@@ -10,8 +10,8 @@ hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: distributed
-alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]"]
-complements: []
+alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]", "[[OpenSearch]]", "[[Meilisearch]]", "[[Typesense]]", "[[Apache Solr]]"]
+complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]"]
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
 url_repo: https://github.com/elastic/elasticsearch
@@ -29,11 +29,11 @@ url_repo: https://github.com/elastic/elasticsearch
 
 ## Définition
 
-Moteur de recherche et d'analytique bâti sur Apache Lucene. Il indexe des documents JSON et
+Moteur de recherche et d'analytique bâti sur [[Lucene]]. Il indexe des documents JSON et
 offre la recherche **plein texte** avec scoring de pertinence BM25, des agrégations sur les
 mêmes index, et un fonctionnement **quasi temps réel** — un document devient interrogeable au
 prochain refresh, pas à l'`INSERT`. La distribution se fait par sharding pour le volume et
-réplication pour la disponibilité. C'est le cœur de la suite Elastic, avec Kibana pour la
+réplication pour la disponibilité. C'est le cœur de la suite Elastic, avec [[Kibana]] pour la
 visualisation.
 
 ## Prendre si / Écarter si
@@ -61,6 +61,16 @@ visualisation.
 - [[Vespa]] — Plateforme de recherche et de serving IA (Apache-2.0) — combine full-text, recherche vectorielle et ranking par modèles ML dans un même moteur distribué, à l'échelle du milliard de documents et sous 100 ms.
 - [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI.
 - [[Marqo]] — Moteur de recherche vectorielle end-to-end (Apache-2.0) qui gère lui-même l'inférence des embeddings texte et image via une seule API — projet open-source déprécié, pivoté vers une plateforme commerciale de recherche e-commerce.
+- [[OpenSearch]] — Moteur de recherche et d'analytique distribué (Apache-2.0) — fork d'Elasticsearch 7.10.2 : full-text, k-NN et recherche hybride, visualisé dans OpenSearch Dashboards. — le fork Apache-2.0 : même modèle d'API, licence sans copyleft réseau.
+- [[Meilisearch]] — Moteur de recherche instantané en Rust — full-text tolérant aux fautes de frappe, sémantique et hybride derrière une API REST ; édition communautaire MIT, sharding réservé à l'édition Enterprise. — pour une recherche de site ou d'application, plus simple à mettre en route qu'un cluster.
+- [[Typesense]] — Moteur de recherche tolérant aux fautes de frappe (GPL-3.0, C++) — index en mémoire pour du search-as-you-type sous 50 ms, avec recherche vectorielle HNSW et hybride ; alternative ouverte à Algolia. — même cible que Meilisearch, index en mémoire.
+- [[Apache Solr]] — Plateforme de recherche Apache (Apache-2.0) bâtie sur Lucene — full-text, vectoriel et géospatial, distribuée par SolrCloud (réplication, bascule automatique). — l'autre moteur distribué sur Lucene, sous Apache-2.0.
+
+### Compléments
+
+- [[Kibana]] — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui. — l'interface d'exploration et de dashboards de la pile Elastic.
+- [[Logstash]] — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire. — le pipeline qui transforme les événements avant l'indexation.
+- [[Beats]] — Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash. — les agents qui expédient logs et métriques depuis les machines sources.
 
 ## Ressources
 
@@ -72,4 +82,7 @@ visualisation.
 - [[Bases de données]] — le hub du domaine
 - [[Recherche d'information]] — recherche lexicale (BM25) et, désormais, dense (kNN)
 - [[Hybrid retrieval]] — combiner BM25 et kNN dans la même requête
+- [[Index inversé]] — la structure sur laquelle repose la recherche plein texte
+- [[Recherche vectorielle approximative]] — le kNN approximatif dans le moteur
+- [[Recherche sémantique]] — chercher par le sens
 - [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier
