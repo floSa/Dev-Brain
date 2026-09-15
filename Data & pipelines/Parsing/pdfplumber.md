@@ -8,8 +8,8 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[PyMuPDF]]", "[[pdf-inspector]]"]
-complements: ["[[Docling]]", "[[Unstructured]]", "[[OpenDataLoader PDF]]"]
+alternatives: ["[[PyMuPDF]]", "[[pdf-inspector]]", "[[pypdf]]"]
+complements: ["[[Docling]]", "[[Unstructured]]", "[[OpenDataLoader PDF]]", "[[pdfminer.six]]"]
 tags: [pdf, table-extraction, document-parsing]
 url_docs: https://github.com/jsvine/pdfplumber
 url_repo: https://github.com/jsvine/pdfplumber
@@ -58,12 +58,14 @@ PDF **natif**.
 
 - [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
 - [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[pypdf]] — Bibliothèque Python pure sous BSD-3 pour lire, fusionner, découper, chiffrer, annoter et remplir des PDF, avec extraction de texte (modes plain et layout) ; aucune dépendance obligatoire, ni OCR ni rendu d'image.
 
 ### Compléments
 
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local. — l'étage de conversion structurée, en aval de l'extraction brute.
 - [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG. — le pipeline d'ingestion qui appelle l'extraction brute.
 - [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA. — l'étage d'analyse de mise en page au-dessus de l'extraction brute.
+- [[pdfminer.six]] — Bibliothèque Python pure sous MIT qui analyse la mise en page d'un PDF (caractères, mots, lignes, boîtes via LAParams) et en extrait texte et positions ; base de pdfplumber, lecture seule, sans OCR, lente et à maintenance ralentie. — la couche sur laquelle elle est bâtie, pour l'analyse de mise en page brute.
 
 ## Ressources
 

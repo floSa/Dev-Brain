@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C / Python
-alternatives: ["[[pdfplumber]]", "[[pdf-inspector]]"]
+alternatives: ["[[pdfplumber]]", "[[pdf-inspector]]", "[[pypdf]]", "[[pypdfium2]]", "[[pdfminer.six]]"]
 complements: ["[[Docling]]", "[[Marker]]", "[[Unstructured]]", "[[OpenDataLoader PDF]]", "[[Tesseract]]"]
 tags: [pdf, document-parsing]
 url_docs: https://pymupdf.readthedocs.io/
@@ -57,6 +57,9 @@ dossier dont l'usage libre est conditionné par une licence à double détente.
 
 - [[pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT.
 - [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
+- [[pypdf]] — Bibliothèque Python pure sous BSD-3 pour lire, fusionner, découper, chiffrer, annoter et remplir des PDF, avec extraction de texte (modes plain et layout) ; aucune dépendance obligatoire, ni OCR ni rendu d'image.
+- [[pypdfium2]] — Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page.
+- [[pdfminer.six]] — Bibliothèque Python pure sous MIT qui analyse la mise en page d'un PDF (caractères, mots, lignes, boîtes via LAParams) et en extrait texte et positions ; base de pdfplumber, lecture seule, sans OCR, lente et à maintenance ralentie.
 
 ### Compléments
 
