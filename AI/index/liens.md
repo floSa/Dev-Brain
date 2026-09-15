@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 821 pages actives.
+> 822 pages actives.
 
 ## Par page
 
@@ -388,12 +388,12 @@
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
+- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
 
 ### draw.io  ·  brique
 - tags : `diagram`
@@ -422,8 +422,8 @@
 
 ### EasyOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Tesseract]], [[docTR]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[pypdfium2]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Tesseract]], [[docTR]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[pypdfium2]]
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
@@ -868,7 +868,7 @@
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
 
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
@@ -927,8 +927,8 @@
 
 ### MinerU  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `layout-analysis`, `table-extraction`, `vision-language`, `rag`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Vision Language Models]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[olmOCR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Vision Language Models]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[olmOCR]]
 
 ### minim  ·  brique
 - tags : `web-scraping`
@@ -1047,8 +1047,8 @@
 
 ### olmOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`, `markdown-conversion`, `vision-language`, `gpu`, `self-hosted`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[PaddleOCR]], [[Parsing]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[Vision Language Models]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]]
 
 ### OmniRoute  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `reliability`, `context-engineering`
@@ -1147,8 +1147,8 @@
 
 ### PaddleOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `table-extraction`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1173,7 +1173,7 @@
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
 
 ### pdfminer.six  ·  brique
 - tags : `pdf`, `document-parsing`, `layout-analysis`
@@ -1183,7 +1183,7 @@
 ### pdfplumber  ·  brique
 - tags : `pdf`, `table-extraction`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### Penpot  ·  brique
 - tags : `design-tool`
@@ -1343,7 +1343,7 @@
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
@@ -1358,7 +1358,7 @@
 ### pypdfium2  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pypdf]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pypdf]]
 
 ### pytest  ·  brique
 - tags : `testing`
@@ -1722,8 +1722,8 @@
 
 ### Tesseract  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
@@ -2098,7 +2098,7 @@
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Comparatif - Plateformes data & IA  ·  comparatif
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`
@@ -2172,7 +2172,7 @@
 
 ### AI Engineering  ·  hub
 - tags : —
-- liens sortants : [[Agents]], [[Bases de données]], [[Data Science]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Agents]], [[Bases de données]], [[Data & pipelines]], [[Data Science]], [[Design & diagrammes]], [[Documents]], [[Fine-tuning]], [[Interfaces & apps data]], [[LLM & IA générative]], [[Machine Learning]], [[Mathématiques]], [[Médias]], [[Observabilité]], [[Outils de développement]], [[Runtimes]], [[Sécurité]], [[Text-to-SQL]], [[Vectoriel]], [[Web & API]]
 - liens entrants : —
 
 ### Algèbre linéaire  ·  hub
@@ -2228,7 +2228,7 @@
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Flink]], [[Index ANN — internes]], [[Logstash]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[Beats]], [[Data Engineering]], [[Data Science]], [[Logstash]], [[MLOps]], [[Machine Learning]], [[Recherche]], [[Tabulaire]]
+- liens entrants : [[AI Engineering]], [[Beats]], [[Data Engineering]], [[Data Science]], [[Logstash]], [[MLOps]], [[Machine Learning]], [[Recherche]], [[Tabulaire]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -2362,8 +2362,8 @@
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Passerelles  ·  hub
 - tags : `llm-gateway`, `routing`, `caching`
@@ -3478,7 +3478,12 @@
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[Métriques vision]], [[OpenDataLoader PDF]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
-- liens entrants : [[Détection d'objets]], [[EasyOCR]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]]
+- liens entrants : [[Détection d'objets]], [[EasyOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]]
+
+### OCR classique vs modèles vision-langage pour documents  ·  notion
+- tags : `ocr`, `document-parsing`, `vision-language`, `layout-analysis`, `benchmark`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Marker]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Vision Language Models]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
+- liens entrants : [[EasyOCR]], [[MinerU]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
 
 ### Offline RL  ·  notion
 - tags : `reinforcement-learning`, `offline-rl`, `value-function`
@@ -4033,7 +4038,7 @@
 ### Vision Language Models  ·  notion
 - tags : `vision-language`, `multimodal`, `transformers`, `llm`
 - liens sortants : [[Architectures CNN]], [[CNN]], [[Image generation]], [[Modèles de fondation vision]], [[PEFT]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Image generation]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Image generation]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
 
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
@@ -4132,7 +4137,7 @@
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence  — pas de page concept dédiée
-- `benchmark` : Code and math benchmarks, Inspect AI, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
+- `benchmark` : Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
 - `caching` : Headroom, LLM caching, Passerelles, prompt-caching  — pas de page concept dédiée
@@ -4193,7 +4198,7 @@
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
+- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
@@ -4250,7 +4255,7 @@
 - `knowledge-graph` : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
-- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
+- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
@@ -4313,7 +4318,7 @@
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
-- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
+- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
@@ -4430,7 +4435,7 @@
 - `version-control` : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
-- `vision-language` : MinerU, Modèles de fondation vision, Vision Language Models, olmOCR  — pas de page concept dédiée
+- `vision-language` : MinerU, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Vision Language Models, olmOCR  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
 - `web-framework` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
@@ -4455,7 +4460,7 @@
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence)
-- `benchmark` (porté par : Code and math benchmarks, Inspect AI, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
+- `benchmark` (porté par : Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
 - `ci-cd` (porté par : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
@@ -4489,7 +4494,7 @@
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
+- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
@@ -4521,7 +4526,7 @@
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
-- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
+- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
 - `learning-theory` (porté par : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension)
@@ -4630,7 +4635,7 @@
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
-- `vision-language` (porté par : MinerU, Modèles de fondation vision, Vision Language Models, olmOCR)
+- `vision-language` (porté par : MinerU, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Vision Language Models, olmOCR)
 - `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)

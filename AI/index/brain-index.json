@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 821,
+  "count": 822,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -264,6 +264,7 @@
       "Code and math benchmarks",
       "Inspect AI",
       "LLM benchmarks",
+      "OCR classique vs modèles vision-langage pour documents",
       "RAG benchmarks",
       "Text-to-SQL",
       "evaluate",
@@ -890,6 +891,7 @@
       "LlamaParse",
       "Marker",
       "MinerU",
+      "OCR classique vs modèles vision-langage pour documents",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "Parsing",
@@ -1417,6 +1419,7 @@
       "Comparatif - Parsing de documents",
       "Docling",
       "MinerU",
+      "OCR classique vs modèles vision-langage pour documents",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "docTR",
@@ -2162,6 +2165,7 @@
       "Marker",
       "MinerU",
       "OCR",
+      "OCR classique vs modèles vision-langage pour documents",
       "PaddleOCR",
       "Parsing",
       "Stirling PDF",
@@ -3280,6 +3284,7 @@
     "vision-language": [
       "MinerU",
       "Modèles de fondation vision",
+      "OCR classique vs modèles vision-langage pour documents",
       "Vision Language Models",
       "olmOCR"
     ],
@@ -6558,6 +6563,36 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/OCR classique vs modèles vision-langage pour documents.md",
+      "nom": "OCR classique vs modèles vision-langage pour documents",
+      "alias": [
+        "OCR vs VLM",
+        "OCR classique ou VLM",
+        "pipeline OCR vs VLM",
+        "OCR end-to-end",
+        "VLM pour l'OCR"
+      ],
+      "role": "notion",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "vision-language",
+        "layout-analysis",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Parsing/OpenDataLoader PDF.md",
