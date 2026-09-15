@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 813,
+  "count": 816,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -440,6 +440,7 @@
       "Comparatif - Détection & segmentation",
       "Detectron2",
       "Détection d'objets",
+      "EasyOCR",
       "Estimation de pose",
       "Kornia",
       "Metric learning & ré-identification",
@@ -447,6 +448,7 @@
       "Métriques vision",
       "OCR",
       "OpenCV",
+      "PaddleOCR",
       "Rendu neuronal 3D & estimation de profondeur",
       "Segment Anything (SAM)",
       "Segmentation",
@@ -711,6 +713,7 @@
       "Diffusion models",
       "Distillation",
       "Détection d'objets",
+      "EasyOCR",
       "Entraînement distribué",
       "Estimation de pose",
       "Foundation models pour séries temporelles",
@@ -729,6 +732,7 @@
       "Mixed precision",
       "Mixture of Experts",
       "OCR",
+      "PaddleOCR",
       "Perceptron et MLP",
       "Probing",
       "Pruning",
@@ -882,11 +886,14 @@
       "Comparatif - Scraping",
       "Data & pipelines",
       "Docling",
+      "EasyOCR",
       "LlamaParse",
       "Marker",
       "OpenDataLoader PDF",
+      "PaddleOCR",
       "Parsing",
       "PyMuPDF",
+      "Tesseract",
       "Unstructured",
       "docTR",
       "pdf-inspector",
@@ -1404,6 +1411,7 @@
       "Comparatif - Parsing de documents",
       "Docling",
       "OpenDataLoader PDF",
+      "PaddleOCR",
       "docTR",
       "pdf-inspector"
     ],
@@ -2139,11 +2147,14 @@
     "ocr": [
       "Comparatif - Parsing de documents",
       "Documents",
+      "EasyOCR",
       "LlamaParse",
       "Marker",
       "OCR",
+      "PaddleOCR",
       "Parsing",
       "Stirling PDF",
+      "Tesseract",
       "Unstructured",
       "docTR",
       "pdf-inspector"
@@ -2282,6 +2293,7 @@
       "Parsing",
       "PyMuPDF",
       "Stirling PDF",
+      "Tesseract",
       "pdf-inspector",
       "pdfplumber"
     ],
@@ -2956,6 +2968,7 @@
     "table-extraction": [
       "Docling",
       "OpenDataLoader PDF",
+      "PaddleOCR",
       "pdfplumber"
     ],
     "templating": [
@@ -6389,7 +6402,39 @@
       ],
       "complements": [
         "[[PyMuPDF]]",
-        "[[pdfplumber]]"
+        "[[pdfplumber]]",
+        "[[Tesseract]]",
+        "[[EasyOCR]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/EasyOCR.md",
+      "nom": "EasyOCR",
+      "alias": [
+        "easyocr",
+        "JaidedAI EasyOCR",
+        "Jaided AI"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[docTR]]",
+        "[[PaddleOCR]]",
+        "[[Tesseract]]"
+      ],
+      "complements": [
+        "[[Docling]]"
       ],
       "maturite": "production"
     },
@@ -6489,6 +6534,40 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Parsing/PaddleOCR.md",
+      "nom": "PaddleOCR",
+      "alias": [
+        "paddleocr",
+        "PaddlePaddle OCR",
+        "PP-OCR",
+        "PP-OCRv5",
+        "PP-OCRv6",
+        "PP-StructureV3",
+        "PaddleOCR-VL"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "layout-analysis",
+        "table-extraction",
+        "computer-vision",
+        "deep-learning"
+      ],
+      "alternatives": [
+        "[[docTR]]",
+        "[[Tesseract]]",
+        "[[EasyOCR]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Parsing/Parsing.md",
       "nom": "Parsing",
       "alias": [
@@ -6539,7 +6618,39 @@
         "[[Docling]]",
         "[[Marker]]",
         "[[Unstructured]]",
-        "[[OpenDataLoader PDF]]"
+        "[[OpenDataLoader PDF]]",
+        "[[Tesseract]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Tesseract.md",
+      "nom": "Tesseract",
+      "alias": [
+        "tesseract-ocr",
+        "Tesseract OCR",
+        "pytesseract"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "cli",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "pdf"
+      ],
+      "alternatives": [
+        "[[docTR]]",
+        "[[PaddleOCR]]",
+        "[[EasyOCR]]"
+      ],
+      "complements": [
+        "[[PyMuPDF]]",
+        "[[Docling]]",
+        "[[Unstructured]]"
       ],
       "maturite": "production"
     },
@@ -6569,7 +6680,8 @@
       ],
       "complements": [
         "[[PyMuPDF]]",
-        "[[pdfplumber]]"
+        "[[pdfplumber]]",
+        "[[Tesseract]]"
       ],
       "maturite": "production"
     },
@@ -6595,7 +6707,11 @@
         "computer-vision",
         "deep-learning"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[PaddleOCR]]",
+        "[[Tesseract]]",
+        "[[EasyOCR]]"
+      ],
       "complements": [],
       "maturite": "production"
     },
