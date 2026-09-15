@@ -45,7 +45,7 @@ redressement.
 | Prendre si | Écarter si |
 |---|---|
 | OCR de texte imprimé propre, sur CPU seul, sans dépendance à PyTorch ou à PaddlePaddle | Scan dégradé, penché ou bruité sans pré-traitement : la segmentation de lignes se dégrade nettement, la doc recommande de redresser et binariser |
-| Produire un **PDF cherchable** ou du hOCR / ALTO à partir de scans | Tableaux, formules, mise en page multi-colonnes à restituer → [[Docling]] |
+| Produire un **PDF cherchable** ou du hOCR / ALTO à partir de scans | Tableaux, formules, mise en page multi-colonnes à restituer → [[Docling]] ou [[MinerU]] |
 | Empreinte minimale, installation par le gestionnaire de paquets, licence permissive | Texte de scène, écritures non latines difficiles ou meilleure précision attendue → [[PaddleOCR]] ou [[docTR]] |
 | Brique d'OCR branchée derrière un autre outil — [[PyMuPDF]], [[Docling]], [[Unstructured]] savent l'appeler | Manuscrit : la doc dit que le résultat sera médiocre, le moteur étant conçu pour l'imprimé |
 | | Pas de GPU exploitable : le calcul est limité au CPU, par threads OpenMP |
