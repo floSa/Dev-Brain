@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 794,
+  "count": 796,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -82,6 +82,7 @@
       "Haystack",
       "Hermes Agent",
       "Human-in-the-loop",
+      "Inspect AI",
       "LLM & IA générative",
       "LM Studio Bionic",
       "LangChain",
@@ -253,6 +254,7 @@
     ],
     "benchmark": [
       "Code and math benchmarks",
+      "Inspect AI",
       "LLM benchmarks",
       "RAG benchmarks",
       "Text-to-SQL",
@@ -1491,6 +1493,7 @@
       "Hermes Agent",
       "Human-in-the-loop",
       "Inference optimization",
+      "Inspect AI",
       "Instructor",
       "Interprétabilité",
       "Interprétabilité mécaniste",
@@ -1531,6 +1534,7 @@
       "Perplexity",
       "Phoenix Arize",
       "PraisonAI",
+      "Prometheus-Eval",
       "Prompt engineering",
       "Prompt injection",
       "PydanticAI",
@@ -1588,7 +1592,9 @@
     "llm-as-judge": [
       "Comparatif - Évaluation LLM",
       "DeepEval",
+      "Inspect AI",
       "LLM-as-judge",
+      "Prometheus-Eval",
       "TruLens",
       "Évaluation"
     ],
@@ -1597,6 +1603,7 @@
       "Code and math benchmarks",
       "Comparatif - Évaluation LLM",
       "DeepEval",
+      "Inspect AI",
       "LLM & IA générative",
       "LLM benchmarks",
       "LLM eval metrics",
@@ -1604,6 +1611,7 @@
       "LangSmith",
       "Langfuse",
       "Phoenix Arize",
+      "Prometheus-Eval",
       "RAG benchmarks",
       "RAG eval",
       "Ragas",
@@ -1636,6 +1644,7 @@
       "LM Studio Bionic",
       "Ollama",
       "Pattern - Agent sur LLM auto-hébergé",
+      "Prometheus-Eval",
       "Runtimes",
       "Small Language Models",
       "Superwhisper",
@@ -11938,6 +11947,37 @@
       "alternatives": [
         "[[Ragas]]",
         "[[TruLens]]",
+        "[[promptfoo]]",
+        "[[Inspect AI]]",
+        "[[Prometheus-Eval]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Inspect AI.md",
+      "nom": "Inspect AI",
+      "alias": [
+        "inspect-ai",
+        "inspect_ai",
+        "Inspect",
+        "UK AISI Inspect"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'évaluation de LLM et d'agents (MIT, UK AI Security Institute et Meridian Labs) — des tâches composées d'un dataset, d'un solver et d'un scorer (texte ou noté par un modèle), 200+ évaluations prêtes à lancer, sandbox pour le code non fiable, visualiseur web et extension VS Code.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "llm-as-judge",
+        "agents",
+        "benchmark"
+      ],
+      "alternatives": [
+        "[[DeepEval]]",
         "[[promptfoo]]"
       ],
       "complements": [],
@@ -12039,6 +12079,33 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Prometheus-Eval.md",
+      "nom": "Prometheus-Eval",
+      "alias": [
+        "prometheus-eval",
+        "Prometheus 2",
+        "Prometheus2",
+        "M-Prometheus"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèles-juges ouverts et bibliothèque Python (Apache-2.0) — Prometheus 2 en 7B et 8x7B note une réponse de 1 à 5 selon une rubrique ou choisit entre deux réponses, en local via vLLM ou par API via LiteLLM ; M-Prometheus (3B, 7B, 14B) pour le multilingue.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "llm-as-judge",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[DeepEval]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/Évaluation/RAG benchmarks.md",
@@ -12184,7 +12251,8 @@
       "alternatives": [
         "[[DeepEval]]",
         "[[Ragas]]",
-        "[[TruLens]]"
+        "[[TruLens]]",
+        "[[Inspect AI]]"
       ],
       "complements": [],
       "maturite": "production"
