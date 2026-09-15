@@ -1,0 +1,19 @@
+"""brainkit.valider — UN validateur de vault, pilote par `brain.yml`.
+
+Il remplace les deux validateurs du vault d'origine (`check_brain.py` et
+`check_arbo.py`) et ne sait rien du dev : ni prefixe, ni categorie, ni famille,
+ni role, ni titre de section, ni seuil de promotion, ni severite. Tout se lit
+dans le manifeste.
+
+    from pathlib import Path
+    from brainkit.valider import charge, valide
+
+    mo = charge(Path("<vault>/brain.yml"))
+    v = valide(mo, Path("<le vault>"))
+    print(v.code, len(v.dures), len(v.avertissements))
+"""
+
+from .manifeste import Modele, charge
+from .moteur import Verdict, imprime, valide
+
+__all__ = ["Modele", "charge", "Verdict", "valide", "imprime"]
