@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: []
+alternatives: ["[[PaddleOCR]]", "[[Tesseract]]", "[[EasyOCR]]"]
 complements: []
 tags: [ocr, document-parsing, layout-analysis, computer-vision, deep-learning]
 url_docs: https://mindee.github.io/doctr/
@@ -59,7 +59,9 @@ dans son périmètre.
 
 ### Alternatives
 
-- Aucune dans le brain : les moteurs OCR concurrents — PaddleOCR, EasyOCR, TrOCR, Tesseract — sont hors périmètre.
+- [[PaddleOCR]] — Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.
+- [[Tesseract]] — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux.
+- [[EasyOCR]] — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
 
 ## Ressources
 

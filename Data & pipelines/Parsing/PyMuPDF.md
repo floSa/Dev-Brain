@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C / Python
 alternatives: ["[[pdfplumber]]", "[[pdf-inspector]]"]
-complements: ["[[Docling]]", "[[Marker]]", "[[Unstructured]]", "[[OpenDataLoader PDF]]"]
+complements: ["[[Docling]]", "[[Marker]]", "[[Unstructured]]", "[[OpenDataLoader PDF]]", "[[Tesseract]]"]
 tags: [pdf, document-parsing]
 url_docs: https://pymupdf.readthedocs.io/
 url_repo: https://github.com/pymupdf/PyMuPDF
@@ -64,6 +64,7 @@ dossier dont l'usage libre est conditionné par une licence à double détente.
 - [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte. — l'autre étage de conversion structurée, quand un GPU est disponible.
 - [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG. — le pipeline d'ingestion qui appelle l'extraction brute.
 - [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA. — l'étage d'analyse de mise en page au-dessus de l'extraction brute.
+- [[Tesseract]] — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux. — le moteur OCR sur lequel repose son OCR intégré, à installer à part.
 
 ## Ressources
 

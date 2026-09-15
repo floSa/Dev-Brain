@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Docling]]", "[[LlamaParse]]", "[[Marker]]", "[[OpenDataLoader PDF]]"]
-complements: ["[[PyMuPDF]]", "[[pdfplumber]]"]
+complements: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Tesseract]]"]
 tags: [document-parsing, rag, ocr]
 url_docs: https://docs.unstructured.io/
 url_repo: https://github.com/Unstructured-IO/unstructured
@@ -65,6 +65,7 @@ mêmes étapes, ce qui permet de prototyper avec la bibliothèque puis de bascul
 
 - [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale. — l'étage bas niveau, pour l'extraction brute en amont.
 - [[pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT. — l'étage bas niveau, pour l'extraction brute en amont.
+- [[Tesseract]] — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux. — le moteur OCR que son parsing avancé appelle, installé comme binaire système.
 
 ## Ressources
 
