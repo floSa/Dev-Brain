@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 816 pages actives.
+> 818 pages actives.
 
 ## Par page
 
@@ -387,8 +387,8 @@
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
@@ -867,8 +867,8 @@
 
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
 
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
@@ -924,6 +924,11 @@
 - tags : `synthetic-data`, `testing`
 - liens sortants : [[Faker]], [[SDV]], [[Synthetic data generation]], [[imbalanced-learn]]
 - liens entrants : [[Data & pipelines]], [[Faker]], [[SDV]], [[Synthetic data generation]]
+
+### MinerU  ·  brique
+- tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `layout-analysis`, `table-extraction`, `vision-language`, `rag`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Vision Language Models]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[olmOCR]]
 
 ### minim  ·  brique
 - tags : `web-scraping`
@@ -1040,6 +1045,11 @@
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Pattern - Agent sur LLM auto-hébergé]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[Comparatif - Exécution & serving LLM]], [[Harnais d'agent]], [[LM Studio]], [[LiteLLM]], [[OpenViking]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[Vanna]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
 
+### olmOCR  ·  brique
+- tags : `ocr`, `document-parsing`, `pdf`, `markdown-conversion`, `vision-language`, `gpu`, `self-hosted`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[Vision Language Models]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[PaddleOCR]], [[Parsing]]
+
 ### OmniRoute  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `reliability`, `context-engineering`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Helicone]], [[LLM caching]], [[LiteLLM]], [[OpenRouter]], [[Reliability patterns]], [[Routing and cascading]]
@@ -1137,8 +1147,8 @@
 
 ### PaddleOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `table-extraction`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[Parsing]], [[Tesseract]], [[docTR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Parsing]], [[Tesseract]], [[docTR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1697,8 +1707,8 @@
 
 ### Tesseract  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]]
 
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
@@ -2072,8 +2082,8 @@
 
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Comparatif - Plateformes data & IA  ·  comparatif
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`
@@ -2337,8 +2347,8 @@
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
 
 ### Passerelles  ·  hub
 - tags : `llm-gateway`, `routing`, `caching`
@@ -3453,7 +3463,7 @@
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[Métriques vision]], [[OpenDataLoader PDF]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
-- liens entrants : [[Détection d'objets]], [[EasyOCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
+- liens entrants : [[Détection d'objets]], [[EasyOCR]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]]
 
 ### Offline RL  ·  notion
 - tags : `reinforcement-learning`, `offline-rl`, `value-function`
@@ -4008,7 +4018,7 @@
 ### Vision Language Models  ·  notion
 - tags : `vision-language`, `multimodal`, `transformers`, `llm`
 - liens sortants : [[Architectures CNN]], [[CNN]], [[Image generation]], [[Modèles de fondation vision]], [[PEFT]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Image generation]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]]
+- liens entrants : [[Image generation]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
 
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
@@ -4168,7 +4178,7 @@
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
+- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
@@ -4198,7 +4208,7 @@
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
 - `graph-db` : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
@@ -4225,7 +4235,7 @@
 - `knowledge-graph` : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
-- `layout-analysis` : Comparatif - Parsing de documents, Docling, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector  — pas de page concept dédiée
+- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
@@ -4243,7 +4253,7 @@
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
-- `markdown-conversion` : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector  — pas de page concept dédiée
+- `markdown-conversion` : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector  — pas de page concept dédiée
 - `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Apprentissage par renforcement, Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
@@ -4288,7 +4298,7 @@
 - `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
-- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, OCR, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, pdf-inspector
+- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake  — pas de page concept dédiée
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
@@ -4304,7 +4314,7 @@
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `pdf` : Comparatif - Parsing de documents, Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, pdf-inspector, pdfplumber  — pas de page concept dédiée
+- `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfplumber  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
 - `point-estimation` : Bayésien, Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
@@ -4324,7 +4334,7 @@
 - `quantization` : Apprentissage profond, Comparatif - Exécution & serving LLM, Fine-tuning, LM Studio, ONNX Runtime, Ollama, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
 - `query-transformation` : Query transformations
 - `rademacher-complexity` : Rademacher complexity, Théorie de l'apprentissage
-- `rag` : ARES, Advanced RAG, Bases de données vectorielles, Chroma, Chunking strategies, Cohere Rerank, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Rerankers, DB-GPT, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGChecker, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
+- `rag` : ARES, Advanced RAG, Bases de données vectorielles, Chroma, Chunking strategies, Cohere Rerank, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Rerankers, DB-GPT, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, MinerU, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGChecker, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
 - `rag-eval` : ARES, Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, RAGChecker, Ragas, Évaluation
 - `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
 - `re-identification` : Metric learning & ré-identification
@@ -4354,7 +4364,7 @@
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Alertmanager, Automatisation no-code, Beszel, Dataiku, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc  — pas de page concept dédiée
+- `self-hosted` : Alertmanager, Automatisation no-code, Beszel, Dataiku, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Haystack, Hybrid retrieval, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, embeddings, sentence-transformers, txtai
@@ -4378,7 +4388,7 @@
 - `supervised` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN  — pas de page concept dédiée
 - `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, Tests & estimation, lifelines
 - `synthetic-data` : Distillation, Faker, Fine-tuning, Mimesis, SDV, Synthetic data generation
-- `table-extraction` : Docling, OpenDataLoader PDF, PaddleOCR, pdfplumber  — pas de page concept dédiée
+- `table-extraction` : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber  — pas de page concept dédiée
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
 - `terminal-ui` : Comparatif - Frameworks CLI, Rich, llmfit, pi  — pas de page concept dédiée
@@ -4405,7 +4415,7 @@
 - `version-control` : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
-- `vision-language` : Modèles de fondation vision, Vision Language Models  — pas de page concept dédiée
+- `vision-language` : MinerU, Modèles de fondation vision, Vision Language Models, olmOCR  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
 - `web-framework` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API  — pas de page concept dédiée
@@ -4464,7 +4474,7 @@
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, pdf-inspector, pdfplumber, selectolax)
+- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfplumber, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
@@ -4483,7 +4493,7 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Bases de données, Comparatif - Bases graphes, GraphRAG, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
@@ -4496,7 +4506,7 @@
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
-- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector)
+- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
 - `learning-theory` (porté par : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension)
@@ -4510,7 +4520,7 @@
 - `logging` (porté par : Beats, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry)
 - `low-code` (porté par : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
-- `markdown-conversion` (porté par : Documents, Firecrawl, Marker, OpenDataLoader PDF, Page to Markdown, Parsing, pdf-inspector)
+- `markdown-conversion` (porté par : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector)
 - `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
@@ -4546,7 +4556,7 @@
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
-- `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, pdf-inspector, pdfplumber)
+- `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfplumber)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
@@ -4573,7 +4583,7 @@
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Alertmanager, Automatisation no-code, Beszel, Dataiku, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc)
+- `self-hosted` (porté par : Alertmanager, Automatisation no-code, Beszel, Dataiku, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
@@ -4587,7 +4597,7 @@
 - `streaming` (porté par : Change Data Capture (CDC), Flink, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use)
 - `supervised` (porté par : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
-- `table-extraction` (porté par : Docling, OpenDataLoader PDF, PaddleOCR, pdfplumber)
+- `table-extraction` (porté par : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber)
 - `templating` (porté par : Jinja2, Web & API)
 - `temporal-difference` (porté par : Q-learning and DQN)
 - `terminal-ui` (porté par : Comparatif - Frameworks CLI, Rich, llmfit, pi)
@@ -4605,7 +4615,7 @@
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
-- `vision-language` (porté par : Modèles de fondation vision, Vision Language Models)
+- `vision-language` (porté par : MinerU, Modèles de fondation vision, Vision Language Models, olmOCR)
 - `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)

@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 816,
+  "count": 818,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -889,6 +889,7 @@
       "EasyOCR",
       "LlamaParse",
       "Marker",
+      "MinerU",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "Parsing",
@@ -896,6 +897,7 @@
       "Tesseract",
       "Unstructured",
       "docTR",
+      "olmOCR",
       "pdf-inspector",
       "pdfplumber",
       "selectolax"
@@ -1189,6 +1191,7 @@
       "accelerate",
       "llama.cpp",
       "neuralforecast",
+      "olmOCR",
       "segment-anything",
       "text-generation-webui",
       "torchvision",
@@ -1410,6 +1413,7 @@
     "layout-analysis": [
       "Comparatif - Parsing de documents",
       "Docling",
+      "MinerU",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "docTR",
@@ -1730,9 +1734,11 @@
       "Documents",
       "Firecrawl",
       "Marker",
+      "MinerU",
       "OpenDataLoader PDF",
       "Page to Markdown",
       "Parsing",
+      "olmOCR",
       "pdf-inspector"
     ],
     "markov": [
@@ -2150,6 +2156,7 @@
       "EasyOCR",
       "LlamaParse",
       "Marker",
+      "MinerU",
       "OCR",
       "PaddleOCR",
       "Parsing",
@@ -2157,6 +2164,7 @@
       "Tesseract",
       "Unstructured",
       "docTR",
+      "olmOCR",
       "pdf-inspector"
     ],
     "offline-rl": [
@@ -2289,11 +2297,13 @@
       "Comparatif - Parsing de documents",
       "Documents",
       "Marker",
+      "MinerU",
       "OpenDataLoader PDF",
       "Parsing",
       "PyMuPDF",
       "Stirling PDF",
       "Tesseract",
+      "olmOCR",
       "pdf-inspector",
       "pdfplumber"
     ],
@@ -2430,6 +2440,7 @@
       "LlamaParse",
       "Marker",
       "Milvus",
+      "MinerU",
       "OpenDataLoader PDF",
       "OpenViking",
       "Pattern - RAG structuré graphe + human-in-the-loop",
@@ -2753,7 +2764,8 @@
       "VictoriaMetrics",
       "Web-Check",
       "Zabbix",
-      "croc"
+      "croc",
+      "olmOCR"
     ],
     "self-play": [
       "AlphaZero and self-play",
@@ -2967,6 +2979,7 @@
     ],
     "table-extraction": [
       "Docling",
+      "MinerU",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "pdfplumber"
@@ -3258,8 +3271,10 @@
       "Video generation"
     ],
     "vision-language": [
+      "MinerU",
       "Modèles de fondation vision",
-      "Vision Language Models"
+      "Vision Language Models",
+      "olmOCR"
     ],
     "vit": [
       "Vision",
@@ -6398,7 +6413,9 @@
         "[[LlamaParse]]",
         "[[Marker]]",
         "[[pdf-inspector]]",
-        "[[OpenDataLoader PDF]]"
+        "[[OpenDataLoader PDF]]",
+        "[[MinerU]]",
+        "[[olmOCR]]"
       ],
       "complements": [
         "[[PyMuPDF]]",
@@ -6491,11 +6508,47 @@
         "[[Docling]]",
         "[[LlamaParse]]",
         "[[pdf-inspector]]",
-        "[[OpenDataLoader PDF]]"
+        "[[OpenDataLoader PDF]]",
+        "[[MinerU]]",
+        "[[olmOCR]]"
       ],
       "complements": [
         "[[PyMuPDF]]"
       ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/MinerU.md",
+      "nom": "MinerU",
+      "alias": [
+        "mineru",
+        "opendatalab MinerU",
+        "MinerU2.5",
+        "mineru-kit"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Extracteur de documents d'OpenDataLab vers Markdown, HTML, LaTeX et JSON : quatre niveaux de qualité, du traitement natif sur CPU jusqu'à un modèle vision-langage de 1,2 milliard de paramètres ; licence propre (Apache 2.0 plus conditions, seuils à 100 M d'utilisateurs ou 20 M$ de revenu mensuel), version 4.0 incompatible avec la 3.x.",
+      "tags": [
+        "document-parsing",
+        "pdf",
+        "ocr",
+        "markdown-conversion",
+        "layout-analysis",
+        "table-extraction",
+        "vision-language",
+        "rag"
+      ],
+      "alternatives": [
+        "[[olmOCR]]",
+        "[[Marker]]",
+        "[[Docling]]",
+        "[[PaddleOCR]]"
+      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -6562,7 +6615,9 @@
       "alternatives": [
         "[[docTR]]",
         "[[Tesseract]]",
-        "[[EasyOCR]]"
+        "[[EasyOCR]]",
+        "[[olmOCR]]",
+        "[[MinerU]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -6714,6 +6769,39 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/olmOCR.md",
+      "nom": "olmOCR",
+      "alias": [
+        "olmocr",
+        "olmOCR 2",
+        "Ai2 olmOCR",
+        "allenai olmocr"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Toolkit d'Ai2 qui convertit PDF et images en Markdown avec un modèle vision-langage de 7 milliards de paramètres affiné pour l'OCR : tableaux, équations et ordre de lecture, traitement en lot sur GPU via vLLM ; code et poids Apache 2.0, GPU obligatoire.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "pdf",
+        "markdown-conversion",
+        "vision-language",
+        "gpu",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[MinerU]]",
+        "[[Marker]]",
+        "[[Docling]]",
+        "[[PaddleOCR]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Data & pipelines/Parsing/pdf-inspector.md",
