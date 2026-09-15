@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: 
 langage: JavaScript
-alternatives: ["[[Mermaid]]", "[[draw.io]]", "[[Excalidraw]]", "[[FossFLOW]]"]
+alternatives: ["[[Mermaid]]", "[[draw.io]]", "[[Excalidraw]]", "[[FossFLOW]]", "[[GitDiagram]]"]
 complements: []
 tags: [agent-skill, diagram, diagram-as-code, code-assistant, agents]
 url_docs: https://tt-a1i.github.io/archify/
@@ -63,6 +63,7 @@ Before / Delta / After. Le projet est jeune — créé en avril 2026 — et publ
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
+- [[GitDiagram]] — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents. — même besoin, autre chaîne : rien à installer et pas d'agent requis, mais le schéma est régénéré par un modèle à chaque visite, sans la reproductibilité d'une IR.
 
 ## Ressources
 

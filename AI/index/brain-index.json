@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 793,
+  "count": 794,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -775,6 +775,7 @@
       "Diagrammes",
       "Excalidraw",
       "FossFLOW",
+      "GitDiagram",
       "Mermaid",
       "draw.io"
     ],
@@ -1478,6 +1479,7 @@
       "E2B",
       "Flowise",
       "GRPO",
+      "GitDiagram",
       "Google Cloud Vertex AI",
       "GraphRAG",
       "Guardrails",
@@ -1730,6 +1732,7 @@
       "Cline",
       "Comparatif - Automatisation no-code",
       "Deep Agents",
+      "GitDiagram",
       "Graphify",
       "Headroom",
       "Hermes Agent",
@@ -7313,7 +7316,8 @@
         "[[Mermaid]]",
         "[[draw.io]]",
         "[[Excalidraw]]",
-        "[[FossFLOW]]"
+        "[[FossFLOW]]",
+        "[[GitDiagram]]"
       ],
       "complements": [],
       "maturite": null
@@ -7407,6 +7411,31 @@
       ],
       "alternatives": [
         "[[draw.io]]",
+        "[[Archify]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/GitDiagram.md",
+      "nom": "GitDiagram",
+      "alias": [
+        "gitdiagram"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "application",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.",
+      "tags": [
+        "diagram",
+        "mcp",
+        "llm"
+      ],
+      "alternatives": [
         "[[Archify]]"
       ],
       "complements": [],
