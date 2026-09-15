@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-complements: ["[[Grafana]]"]
+complements: ["[[Grafana]]", "[[Tempo]]"]
 tags: [observability, logging, distributed]
 url_docs: https://grafana.com/docs/loki/latest/
 url_repo: https://github.com/grafana/loki
@@ -65,6 +65,7 @@ fait exploser l'index et la facture ; les labels se modélisent avec parcimonie.
 ### Compléments
 
 - [[Grafana]] — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud. — même éditeur, et l'interface de requêtage LogQL de fait
+- [[Tempo]] — Backend de traces distribuées open-source (AGPL-3.0, Go) de Grafana Labs — stockage sur object store sans index, accepte OTLP, Jaeger et Zipkin, requêté en TraceQL depuis Grafana ; mode monolithique ou microservices, Grafana Cloud Traces pour le managé. — même stockage objet et mêmes habitudes de requête : les logs se lisent à côté des traces.
 
 ## Ressources
 
@@ -74,3 +75,4 @@ fait exploser l'index et la facture ; les labels se modélisent avec parcimonie.
 ## Voir aussi
 
 - [[Observabilité]] — le hub du domaine
+- [[Métriques, logs et traces]] — la notion : ce que le log dit que la métrique et la trace ne disent pas, et ce qu'il coûte

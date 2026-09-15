@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 803 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 813 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -496,10 +496,18 @@
 - **croc** — Transfert de fichiers de machine à machine par phrase de passe : chiffrement de bout en bout via PAKE, relais public ou auto-hébergé, reprise sur interruption, un seul binaire.
 
 ### observability/supervision
+- **Alertmanager** — Routeur d'alertes open-source (Apache-2.0, Go) du projet Prometheus — dédoublonne, regroupe, inhibe et met en silence les alertes reçues, puis les route vers le bon récepteur (courriel, PagerDuty, OpsGenie…) ; cluster haute disponibilité.
 - **Beszel** — Hub de supervision de serveurs léger (Go, MIT) : CPU, mémoire, disque, réseau, température, statistiques des conteneurs Docker, historique et alertes, en architecture hub + agents.
 - **Grafana** — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud.
 - **Kibana** — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui.
 - **Loki** — Système open-source d'agrégation de logs (AGPLv3) inspiré de Prometheus — indexe des labels plutôt que le contenu, stocke des chunks compressés sur object store ; horizontalement scalable, requêté en LogQL et visualisé dans Grafana.
+- **Netdata** — Agent de supervision temps réel (GPLv3+, Go, C, Rust) — métriques à la seconde d'hôtes, conteneurs et applications sans configuration, tableau de bord local sur le port 19999, alertes locales ; interface sous licence propriétaire NCUL1, Netdata Cloud optionnel.
+- **OpenTelemetry** — Cadre d'observabilité open-source (Apache-2.0, CNCF) neutre vis-à-vis des fournisseurs — spécification, protocole OTLP, SDK, instrumentation automatique et Collector qui reçoit, traite et exporte traces, métriques et logs ; n'est pas un backend.
+- **Prometheus** — Système de supervision et base de séries temporelles open-source (Apache-2.0, Go) — scrape les métriques exposées en HTTP, modèle de données à labels, requêtes PromQL, règles d'alerte transmises à Alertmanager ; stockage local mono-nœud, sans cluster natif.
+- **Tempo** — Backend de traces distribuées open-source (AGPL-3.0, Go) de Grafana Labs — stockage sur object store sans index, accepte OTLP, Jaeger et Zipkin, requêté en TraceQL depuis Grafana ; mode monolithique ou microservices, Grafana Cloud Traces pour le managé.
+- **Uptime Kuma** — Surveillance de disponibilité auto-hébergée (MIT, Node.js) — sondes HTTP, TCP, ping, DNS, push et conteneurs Docker, notifications vers plus de 90 services, pages de statut publiques ; interface web, sonde de l'extérieur uniquement.
+- **VictoriaMetrics** — Base de séries temporelles et stockage long terme compatible Prometheus (Apache-2.0, Go) — binaire unique sans dépendance ou version cluster, ingestion remote write, requêtes PromQL et MetricsQL ; édition Enterprise et VictoriaMetrics Cloud.
+- **Zabbix** — Plateforme de supervision distribuée d'entreprise (AGPL-3.0 depuis la 7.0, C, PHP, Go) — serveur, agents actifs ou passifs, collecte sans agent (SNMP, IPMI), modèles, déclencheurs et tableaux de bord sur MySQL, MariaDB ou PostgreSQL ; proxies pour les sites distants.
 
 ### security/auth
 - **PyJWT** — Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.
@@ -909,6 +917,10 @@
 - **Transfer learning vision** — domaines : data-sci, ml-eng · alias : transfer learning, transfert d'apprentissage, fine-tuning vision, feature extraction, backbone gelé
 - **Vision par ordinateur** — domaines : data-sci, ml-eng · alias : computer vision, CV, vision
 - **Vision Transformers (ViT)** — domaines : ml-eng, ai-eng · alias : ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision
+
+### observability/supervision
+- **Métriques, logs et traces** — domaines : infra-ops, mlops · alias : three pillars, trois piliers, télémétrie, telemetry, signaux d'observabilité, métriques logs traces
+- **SLO et alerting** — domaines : infra-ops, mlops · alias : SLO, SLI, SLA, service level objective, budget d'erreur, error budget, burn rate, taux de consommation, alerting, alerte sur les SLO
 
 ### security/ia
 - **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM

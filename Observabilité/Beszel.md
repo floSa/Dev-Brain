@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: single-node
-alternatives: []
+alternatives: ["[[Netdata]]"]
 complements: []
 tags: [observability, metrics, self-hosted, dashboard, container]
 url_docs: https://beszel.dev
@@ -61,7 +61,9 @@ Alertmanager demande quatre composants à configurer, à versionner et à mainte
 
 ### Alternatives
 
-- *Aucune alternative déclarée : le comparable de référence est une pile Prometheus et Grafana, plus puissante et plus coûteuse à exploiter, pointée dans le tableau ci-dessus. Hors brain : Netdata (temps réel très fin, plus verbeux), Zabbix (parc d'entreprise), Glances (poste unique, terminal).*
+- [[Netdata]] — Agent de supervision temps réel (GPLv3+, Go, C, Rust) — métriques à la seconde d'hôtes, conteneurs et applications sans configuration, tableau de bord local sur le port 19999, alertes locales ; interface sous licence propriétaire NCUL1, Netdata Cloud optionnel. — le concurrent direct à l'échelle d'un parc réduit : plus de détail à la seconde, une licence à trois étages, un hub central optionnel.
+- [[Zabbix]] — voisin : le parc d'entreprise, avec serveur, base et proxies à opérer.
+- *Le comparable de référence en pile reste Prometheus et Grafana, plus puissante et plus coûteuse à exploiter, pointée dans le tableau ci-dessus. Hors brain : Glances (poste unique, terminal).*
 
 ## Ressources
 
