@@ -2443,7 +2443,7 @@
 ### Agent evaluation  ·  notion
 - tags : `agents`, `llm-eval`, `llm`
 - liens sortants : [[Agent patterns]], [[DeepEval]], [[Harnais d'agent]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Multi-agent systems]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[Reliability patterns]], [[TruLens]], [[agent-loops]]
-- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agents]], [[Deep research]], [[Harnais d'agent]], [[Human-in-the-loop]], [[Multi-agent systems]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Sous-agents et isolation du contexte]], [[a2a-protocol]], [[open_deep_research]], [[Évaluation]]
+- liens entrants : [[Agent patterns]], [[Agent skills]], [[Agents]], [[Deep research]], [[Harnais d'agent]], [[Human-in-the-loop]], [[LLM-as-judge]], [[Multi-agent systems]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Sous-agents et isolation du contexte]], [[a2a-protocol]], [[open_deep_research]], [[Évaluation]]
 
 ### Agent memory  ·  notion
 - tags : `agents`, `llm`, `retrieval`
@@ -2683,7 +2683,7 @@
 ### Code and math benchmarks  ·  notion
 - tags : `benchmark`, `code-generation`, `reasoning`, `llm-eval`, `llm`
 - liens sortants : [[Chain-of-Thought]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Reasoning models]]
-- liens entrants : [[Agents de code]], [[LLM benchmarks]], [[LLM eval metrics]], [[Évaluation]]
+- liens entrants : [[Agents de code]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Évaluation]]
 
 ### Compromis biais-variance  ·  notion
 - tags : `model-evaluation`, `supervised`
@@ -2973,7 +2973,7 @@
 ### Harnais d'agent  ·  notion
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
 - liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Context engineering]], [[Deep Agents]], [[Hermes Agent]], [[LLM benchmarks]], [[LM Studio]], [[LM Studio Bionic]], [[Maka]], [[Ollama]], [[OpenClaw]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Reasoning models]], [[Sandboxing de code généré]], [[Small Language Models]], [[Sous-agents et isolation du contexte]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[pi]], [[t3code]], [[tool-use]]
-- liens entrants : [[Agent evaluation]], [[Agent patterns]], [[Agents]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Deep Agents]], [[Headroom]], [[Hermes Agent]], [[LM Studio Bionic]], [[Maka]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]], [[agent-loops]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens entrants : [[Agent evaluation]], [[Agent patterns]], [[Agents]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[Claude Agent SDK]], [[Deep Agents]], [[Headroom]], [[Hermes Agent]], [[LLM-as-judge]], [[LM Studio Bionic]], [[Maka]], [[OpenClaw]], [[Pattern - Agent sur LLM auto-hébergé]], [[agent-loops]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
 
 ### HCPC  ·  notion
 - tags : `clustering`, `factor-analysis`, `unsupervised`
@@ -3142,7 +3142,7 @@
 
 ### LLM-as-judge  ·  notion
 - tags : `llm-as-judge`, `llm-eval`, `llm`
-- liens sortants : [[Chain-of-Thought]], [[DeepEval]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[RAG eval]], [[Ragas]], [[TruLens]]
+- liens sortants : [[Agent evaluation]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[DeepEval]], [[Harnais d'agent]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[TruLens]]
 - liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Guardrails]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Perplexity]], [[Phoenix Arize]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[Synthetic data generation]], [[TruLens]], [[promptfoo]], [[Évaluation]]
 
 ### Local Outlier Factor  ·  notion
@@ -3578,7 +3578,7 @@
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
 - liens sortants : [[GRPO]], [[HuggingFace]], [[LLM-as-judge]], [[PPO]], [[PyTorch]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reward shaping and hacking]], [[SFT]]
-- liens entrants : [[Fine-tuning]], [[GRPO]], [[Imitation learning]], [[PPO]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Synthetic data generation]], [[TRL]]
+- liens entrants : [[Fine-tuning]], [[GRPO]], [[Imitation learning]], [[LLM-as-judge]], [[PPO]], [[RL for LLMs]], [[RLHF and DPO]], [[Reasoning models]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Synthetic data generation]], [[TRL]]
 
 ### Reward shaping and hacking  ·  notion
 - tags : `reinforcement-learning`, `reward-shaping`, `alignment`
