@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 822,
+  "count": 823,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -2129,6 +2129,7 @@
       "Garage",
       "MinIO",
       "Pattern - Stack démo ML locale multi-services",
+      "RustFS",
       "SeaweedFS",
       "Stockage"
     ],
@@ -2697,6 +2698,7 @@
       "Cloudflare R2",
       "Garage",
       "MinIO",
+      "RustFS",
       "SeaweedFS",
       "Stockage"
     ],
@@ -24787,6 +24789,7 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[RustFS]]",
         "[[MinIO]]",
         "[[SeaweedFS]]",
         "[[Garage]]",
@@ -24840,6 +24843,7 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[RustFS]]",
         "[[MinIO]]",
         "[[SeaweedFS]]",
         "[[Ceph]]",
@@ -24860,12 +24864,13 @@
       "famille": "plateforme",
       "langage": "Go",
       "domaines": null,
-      "pitch": "Stockage objet S3-compatible auto-hébergé écrit en Go : haute performance, erasure coding distribué, sous licence AGPLv3.",
+      "pitch": "Stockage objet S3-compatible auto-hébergé en Go, sous AGPLv3 : dépôt communautaire archivé et déclaré non maintenu par l'éditeur (2026-04-25), dernière release en octobre 2025 ; la suite est AIStor (propriétaire) ou un fork communautaire.",
       "tags": [
         "object-storage",
         "s3-compatible"
       ],
       "alternatives": [
+        "[[RustFS]]",
         "[[Ceph]]",
         "[[SeaweedFS]]",
         "[[Garage]]",
@@ -24873,7 +24878,33 @@
         "[[Cloudflare R2]]"
       ],
       "complements": [],
-      "maturite": "production"
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Stockage/RustFS.md",
+      "nom": "RustFS",
+      "alias": [
+        "rustfs",
+        "rust fs"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]",
+        "[[Ceph]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Stockage/SeaweedFS.md",
@@ -24894,6 +24925,7 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[RustFS]]",
         "[[MinIO]]",
         "[[Ceph]]",
         "[[Garage]]",
