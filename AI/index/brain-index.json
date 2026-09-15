@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 823,
+  "count": 825,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -2124,10 +2124,12 @@
     ],
     "object-storage": [
       "AWS S3",
+      "Apache Ozone",
       "Ceph",
       "Cloudflare R2",
       "Garage",
       "MinIO",
+      "OpenStack Swift",
       "Pattern - Stack démo ML locale multi-services",
       "RustFS",
       "SeaweedFS",
@@ -2694,10 +2696,12 @@
       "Rule - Toolchain Python"
     ],
     "s3-compatible": [
+      "Apache Ozone",
       "Ceph",
       "Cloudflare R2",
       "Garage",
       "MinIO",
+      "OpenStack Swift",
       "RustFS",
       "SeaweedFS",
       "Stockage"
@@ -24770,6 +24774,32 @@
       "maturite": "production"
     },
     {
+      "path": "Stockage/Apache Ozone.md",
+      "nom": "Apache Ozone",
+      "alias": [
+        "ozone",
+        "apache-ozone"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Stockage objet distribué d'Apache (Apache 2.0) pour les très gros volumes analytiques sur site : espace de noms à milliards d'objets, accès S3 et système de fichiers Hadoop, erasure coding et cohérence forte par Raft, mais une douzaine de machines au minimum et un S3 sans versioning, Object Lock ni politiques de bucket.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[OpenStack Swift]]",
+        "[[Ceph]]",
+        "[[SeaweedFS]]",
+        "[[MinIO]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Stockage/Ceph.md",
       "nom": "Ceph",
       "alias": [
@@ -24789,6 +24819,8 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[OpenStack Swift]]",
+        "[[Apache Ozone]]",
         "[[RustFS]]",
         "[[MinIO]]",
         "[[SeaweedFS]]",
@@ -24870,6 +24902,7 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[Apache Ozone]]",
         "[[RustFS]]",
         "[[Ceph]]",
         "[[SeaweedFS]]",
@@ -24879,6 +24912,31 @@
       ],
       "complements": [],
       "maturite": "deprecated"
+    },
+    {
+      "path": "Stockage/OpenStack Swift.md",
+      "nom": "OpenStack Swift",
+      "alias": [
+        "swift",
+        "openstack-swift"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Stockage objet d'OpenStack (Apache 2.0) : proxy, anneau de placement et réplication ou erasure coding, API native Swift plus S3 par middleware ; maintenu mais historique, pertinent dans un parc OpenStack existant, cohérence à terme et sans cycle de vie ni étiquettes S3.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[Ceph]]",
+        "[[Apache Ozone]]",
+        "[[SeaweedFS]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Stockage/RustFS.md",
@@ -24925,6 +24983,8 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[OpenStack Swift]]",
+        "[[Apache Ozone]]",
         "[[RustFS]]",
         "[[MinIO]]",
         "[[Ceph]]",
