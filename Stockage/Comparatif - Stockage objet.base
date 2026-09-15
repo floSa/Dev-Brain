@@ -1,0 +1,38 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
+    - categorie == "storage/objet"
+views:
+  - type: table
+    name: Stockage objet
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - hosted
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Auto-hébergeables
+    filters:
+      and:
+        - hosted.contains("self")
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
