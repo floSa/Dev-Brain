@@ -7,7 +7,7 @@ tags: [llm-eval, rag-eval, llm-as-judge]
 
 # Comparatif - Évaluation LLM
 
-> On tranche sur : ce qu'on note — la sortie finale ou les étapes internes —, et où ça tourne : une suite de tests en CI, un fichier YAML déclaratif, une app instrumentée, ou un cadre de tâches pour agents. Un membre du lot n'est pas un cadre mais le juge lui-même : un modèle ouvert qui tourne en local.
+> On tranche sur : ce qu'on note — la sortie finale ou les étapes internes —, et où ça tourne : une suite de tests en CI, un fichier YAML déclaratif, une app instrumentée, ou un cadre de tâches pour agents. Deux membres n'ont pas la forme d'un cadre de test : [[Prometheus-Eval]] est le juge lui-même, un modèle ouvert qui tourne en local, et [[ARES]] et [[RAGChecker]] sont des méthodes de mesure de RAG — l'une calibre ses juges par PPI, l'autre attribue l'erreur au niveau claim.
 
 ![[Comparatif - Évaluation LLM.base]]
 
@@ -20,6 +20,9 @@ tags: [llm-eval, rag-eval, llm-as-judge]
 
 - [[Inspect AI]] — un cadre de **tâches composables** (dataset, solver, scorer) pensé pour évaluer des modèles et des **agents** : les agents externes comme Claude Code s'y branchent, et le code généré s'exécute dans un sandbox. Il embarque 200+ évaluations prêtes à lancer. Versionnage 0.x — épingler.
 - [[Prometheus-Eval]] — **le seul du lot qui soit le juge lui-même** : des modèles ouverts (7B, 8x7B) qui notent selon une rubrique ou départagent deux réponses, en local sur GPU. Bibliothèque en beta, sans release depuis septembre 2024.
+
+- [[ARES]] — **entraîne ses juges** : de petits modèles affinés sur données synthétiques, puis une correction statistique (PPI) qui donne un **intervalle de confiance**. Le prix est un jeu annoté à la main, au moins 50 exemples. Dernière release PyPI en juillet 2024.
+- [[RAGChecker]] — **attribue la faute** : il découpe la réponse en claims et vérifie chacun par entailment, ce qui sépare le retriever (claim recall, context precision) du générateur (fidélité, hallucination, sensibilité au bruit). Il exige une réponse de référence par question. Dernière release PyPI en septembre 2024.
 
 ## Voir aussi
 

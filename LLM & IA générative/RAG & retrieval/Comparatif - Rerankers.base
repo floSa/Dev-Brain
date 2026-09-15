@@ -1,0 +1,24 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Le filtre de catégorie seul mêlerait les
+    # rerankers aux frameworks de pipeline du dossier (Haystack, LlamaIndex) : on
+    # restreint donc aussi par le tag `reranking`, qui est ce que les membres ont en commun.
+    - role == "brique"
+    - categorie == "llm/rag"
+    - tags.contains("reranking")
+views:
+  - type: table
+    name: Rerankers
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
