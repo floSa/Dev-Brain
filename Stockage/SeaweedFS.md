@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[RustFS]]", "[[MinIO]]", "[[Ceph]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
+alternatives: ["[[OpenStack Swift]]", "[[Apache Ozone]]", "[[RustFS]]", "[[MinIO]]", "[[Ceph]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
 complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://github.com/seaweedfs/seaweedfs/wiki
@@ -78,6 +78,8 @@ petits fichiers est une thèse d'architecture, pas un résultat indépendant.
 
 ### Alternatives
 
+- [[OpenStack Swift]] — Stockage objet d'OpenStack (Apache 2.0) : proxy, anneau de placement et réplication ou erasure coding, API native Swift plus S3 par middleware ; maintenu mais historique, pertinent dans un parc OpenStack existant, cohérence à terme et sans cycle de vie ni étiquettes S3.
+- [[Apache Ozone]] — Stockage objet distribué d'Apache (Apache 2.0) pour les très gros volumes analytiques sur site : espace de noms à milliards d'objets, accès S3 et système de fichiers Hadoop, erasure coding et cohérence forte par Raft, mais une douzaine de machines au minimum et un S3 sans versioning, Object Lock ni politiques de bucket.
 - [[RustFS]] — Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé en Go, sous AGPLv3 : dépôt communautaire archivé et déclaré non maintenu par l'éditeur (2026-04-25), dernière release en octobre 2025 ; la suite est AIStor (propriétaire) ou un fork communautaire.
 - [[Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
