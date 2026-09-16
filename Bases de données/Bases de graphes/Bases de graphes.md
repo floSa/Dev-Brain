@@ -16,6 +16,7 @@ tags: [graph-db]
 - **Un moteur de graphe ne se distingue pas d'un relationnel par le stockage, mais par la requête.** Un chemin de longueur inconnue — « les contacts de mes contacts, jusqu'à ce que… » — s'écrit en une ligne et se parcourt sans jointure répétée. Quand les relations sont peu profondes, un relationnel bien indexé rivalise, et [[Postgres]] reste le défaut.
 - **Trois natures de briques cohabitent ici.** Un moteur **natif** ([[Neo4j]], [[Memgraph]], [[Nebula Graph]], [[Dgraph]]) ; une **couche** de graphe posée sur un stockage qu'elle ne fournit pas ([[JanusGraph]]) ; une **extension** d'une base existante ([[Apache AGE]], dans Postgres) ; un moteur **multi-modèle** dont le graphe est l'un des modèles ([[ArangoDB]]).
 - **La licence est le premier critère qui départage, avant les performances.** Neo4j Community est libre (GPLv3) mais mono-instance, et Enterprise est commercial ; Memgraph et ArangoDB sont en BSL 1.1, avec un usage interne permis et un plafond de 100 Go sur les binaires d'ArangoDB ; Apache AGE, Nebula Graph, Dgraph et JanusGraph sont en Apache-2.0 ; la Community de Nebula n'a plus de release depuis mai 2024, JanusGraph depuis novembre 2024, et Dgraph a changé de propriétaire en 2025.
+- **La théorie du dossier tient dans une notion.** [[Bases graphe — modèles et langages de requête]] dit ce que sont un graphe de propriétés et RDF, ce que parlent Cypher, GQL, Gremlin et SQL/PGQ, quand un graphe bat un relationnel et pourquoi il se partitionne mal. À lire avant de choisir un moteur.
 - **Le langage n'est pas le même d'un moteur à l'autre.** Cypher (Neo4j, Memgraph, Apache AGE), nGQL (Nebula Graph), AQL (ArangoDB), Gremlin (JanusGraph), DQL et GraphQL (Dgraph) : changer de moteur veut dire réécrire les requêtes, même entre deux dialectes voisins.
 
 ## Choisir
@@ -28,6 +29,9 @@ tags: [graph-db]
 - Plusieurs milliards d'éléments, des équipes qui savent déjà opérer Cassandra et Elasticsearch, et Gremlin acceptable → [[JanusGraph]], au prix de trois composants à exploiter. Cf. [[Comparatif - Bases graphes]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Bases graphe — modèles et langages de requête]] — domaines : data-eng, ai-eng
+
 ### Briques
 - [[Apache AGE]] — Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre.
 - [[ArangoDB]] — Base multi-modèle (documents, graphes, clé-valeur, recherche) interrogée en AQL (C++, BSL 1.1) — cluster complet, mais binaires Community limités à un usage interne sous 100 Go de données, licence commerciale au-delà.
