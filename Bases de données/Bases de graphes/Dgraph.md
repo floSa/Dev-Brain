@@ -82,3 +82,4 @@ revendu le projet à Istari Digital en octobre 2025.
 
 - [[Bases de graphes]] — le hub du sous-domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (DQL, le sharding par prédicat et les jointures distribuées)
