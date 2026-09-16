@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 827,
+  "count": 835,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -261,6 +261,7 @@
       "Statistiques & inférence"
     ],
     "benchmark": [
+      "Choisir un modèle d'embedding",
       "Code and math benchmarks",
       "Inspect AI",
       "LLM benchmarks",
@@ -952,14 +953,22 @@
     ],
     "embeddings": [
       "Bases de données vectorielles",
+      "Choisir un modèle d'embedding",
+      "Comparatif - Embeddings",
+      "Embeddings & encodeurs",
+      "FastEmbed",
       "HuggingFace",
       "Index ANN — internes",
+      "Infinity",
       "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex",
+      "Qwen3-Embedding",
       "RAG",
       "Recherche sémantique",
       "Systèmes de recommandation",
+      "Text Embeddings Inference",
+      "bge-m3",
       "bge-reranker",
       "embeddings",
       "sentence-transformers",
@@ -1228,6 +1237,8 @@
       "Pattern - RAG structuré graphe + human-in-the-loop"
     ],
     "hybrid-search": [
+      "Choisir un modèle d'embedding",
+      "FastEmbed",
       "Haystack",
       "Hybrid retrieval",
       "Meilisearch",
@@ -1235,7 +1246,8 @@
       "Recherche d'information",
       "Typesense",
       "Vespa",
-      "Weaviate"
+      "Weaviate",
+      "bge-m3"
     ],
     "hypermedia": [
       "Comparatif - Frontends web légers",
@@ -1301,7 +1313,10 @@
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
+      "Embeddings & encodeurs",
+      "FastEmbed",
       "Inference optimization",
+      "Infinity",
       "KServe",
       "LM Studio",
       "LiteLLM",
@@ -1319,6 +1334,7 @@
       "TensorFlow Serving",
       "TensorRT",
       "TensorRT-LLM",
+      "Text Embeddings Inference",
       "TorchServe",
       "llama.cpp",
       "text-generation-webui",
@@ -1949,7 +1965,9 @@
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
+      "Embeddings & encodeurs",
       "Google Cloud Vertex AI",
+      "Infinity",
       "KServe",
       "Microsoft Azure Machine Learning",
       "NVIDIA Triton",
@@ -1963,6 +1981,7 @@
       "TensorFlow Serving",
       "TensorRT",
       "TensorRT-LLM",
+      "Text Embeddings Inference",
       "TorchServe",
       "vLLM"
     ],
@@ -2405,6 +2424,7 @@
     ],
     "quantization": [
       "Apprentissage profond",
+      "Choisir un modèle d'embedding",
       "Comparatif - Exécution & serving LLM",
       "Fine-tuning",
       "LM Studio",
@@ -2637,12 +2657,16 @@
     "reranking": [
       "Cohere Rerank",
       "Comparatif - Rerankers",
+      "FastEmbed",
       "FlashRank",
+      "Infinity",
       "Jina Reranker",
       "Late-interaction retrieval",
+      "Qwen3-Embedding",
       "RAG & retrieval",
       "RAGatouille",
       "Reranking",
+      "Text Embeddings Inference",
       "bge-reranker",
       "sentence-transformers"
     ],
@@ -2656,10 +2680,12 @@
     "retrieval": [
       "Advanced RAG",
       "Agent memory",
+      "Choisir un modèle d'embedding",
       "Chunking strategies",
       "Cohere Rerank",
       "Comparatif - Rerankers",
       "Deep research",
+      "Embeddings & encodeurs",
       "FlashRank",
       "GraphRAG",
       "Hybrid retrieval",
@@ -2668,6 +2694,7 @@
       "LlamaIndex NLSQLTableQueryEngine",
       "OpenViking",
       "Query transformations",
+      "Qwen3-Embedding",
       "RAG",
       "RAG & retrieval",
       "RAG benchmarks",
@@ -2677,6 +2704,7 @@
       "Reranking",
       "Systèmes de recommandation",
       "ai-memory",
+      "bge-m3",
       "bge-reranker",
       "open_deep_research",
       "sentence-transformers"
@@ -2770,7 +2798,9 @@
       "Alertmanager",
       "Automatisation no-code",
       "Beszel",
+      "Choisir un modèle d'embedding",
       "Dataiku",
+      "Infinity",
       "Meilisearch",
       "Netdata",
       "Observabilité",
@@ -2780,6 +2810,7 @@
       "Stirling PDF",
       "Stockage",
       "Tempo",
+      "Text Embeddings Inference",
       "Typesense",
       "Uptime Kuma",
       "VictoriaMetrics",
@@ -2801,19 +2832,27 @@
     ],
     "semantic-search": [
       "Bases de données vectorielles",
+      "Choisir un modèle d'embedding",
+      "Comparatif - Embeddings",
+      "Embeddings & encodeurs",
+      "FastEmbed",
       "Haystack",
       "Hybrid retrieval",
+      "Infinity",
       "LLM caching",
       "Late-interaction retrieval",
       "Marqo",
       "Meilisearch",
       "OpenSearch",
       "Pinecone",
+      "Qwen3-Embedding",
       "RAG",
       "RAG & retrieval",
       "Recherche d'information",
       "Recherche sémantique",
       "Recherche vectorielle approximative",
+      "Text Embeddings Inference",
+      "bge-m3",
       "embeddings",
       "sentence-transformers",
       "txtai"
@@ -3163,12 +3202,14 @@
       "Multi-Token Prediction",
       "Multi-head Latent Attention",
       "Positional encoding",
+      "Qwen3-Embedding",
       "Segment Anything (SAM)",
       "Self-attention",
       "TRL",
       "Transformer architectures",
       "Vision Language Models",
       "Vision Transformers (ViT)",
+      "bge-m3",
       "segment-anything"
     ],
     "tree-based": [
@@ -5216,7 +5257,9 @@
         "[[Milvus]]",
         "[[Pinecone]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[FastEmbed]]"
+      ],
       "maturite": "production"
     },
     {
@@ -11434,7 +11477,9 @@
         "[[Jina Reranker]]"
       ],
       "complements": [
-        "[[sentence-transformers]]"
+        "[[sentence-transformers]]",
+        "[[bge-m3]]",
+        "[[Text Embeddings Inference]]"
       ],
       "maturite": "production"
     },
@@ -14835,6 +14880,305 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Choisir un modèle d'embedding.md",
+      "nom": "Choisir un modèle d'embedding",
+      "alias": [
+        "choix d'un modèle d'embedding",
+        "sélectionner un modèle d'embeddings",
+        "MTEB",
+        "limites de MTEB"
+      ],
+      "role": "notion",
+      "categorie": "ml/embeddings",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "hybrid-search",
+        "benchmark",
+        "quantization",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Comparatif - Embeddings.md",
+      "nom": "Comparatif - Embeddings",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/embeddings",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "embeddings",
+        "semantic-search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Embeddings & encodeurs.md",
+      "nom": "Embeddings & encodeurs",
+      "alias": [
+        "embeddings et encodeurs",
+        "calcul d'embeddings",
+        "serving d'embeddings"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Produire des vecteurs à partir de texte — choisir le modèle, puis l'outil qui le calcule ou le sert, sans dépendre d'une API externe.",
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "model-serving",
+        "inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/FastEmbed.md",
+      "nom": "FastEmbed",
+      "alias": [
+        "fastembed",
+        "Qdrant FastEmbed",
+        "fastembed-gpu"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.",
+      "tags": [
+        "embeddings",
+        "inference",
+        "semantic-search",
+        "reranking",
+        "hybrid-search"
+      ],
+      "alternatives": [
+        "[[sentence-transformers]]",
+        "[[Text Embeddings Inference]]",
+        "[[Infinity]]"
+      ],
+      "complements": [
+        "[[Qdrant]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Infinity.md",
+      "nom": "Infinity",
+      "alias": [
+        "infinity-emb",
+        "michaelfeil infinity",
+        "Infinity embeddings"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique.",
+      "tags": [
+        "embeddings",
+        "model-serving",
+        "inference",
+        "semantic-search",
+        "reranking",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Text Embeddings Inference]]",
+        "[[sentence-transformers]]",
+        "[[FastEmbed]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Qwen3-Embedding.md",
+      "nom": "Qwen3-Embedding",
+      "alias": [
+        "Qwen3 Embedding",
+        "Qwen3-Embedding-0.6B",
+        "Qwen3-Embedding-4B",
+        "Qwen3-Embedding-8B"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.",
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "transformers",
+        "reranking"
+      ],
+      "alternatives": [
+        "[[bge-m3]]"
+      ],
+      "complements": [
+        "[[sentence-transformers]]",
+        "[[Text Embeddings Inference]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Text Embeddings Inference.md",
+      "nom": "Text Embeddings Inference",
+      "alias": [
+        "TEI",
+        "text-embeddings-inference",
+        "HF TEI"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026.",
+      "tags": [
+        "embeddings",
+        "model-serving",
+        "inference",
+        "semantic-search",
+        "reranking",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[sentence-transformers]]",
+        "[[Infinity]]",
+        "[[FastEmbed]]"
+      ],
+      "complements": [
+        "[[bge-m3]]",
+        "[[Qwen3-Embedding]]",
+        "[[bge-reranker]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/bge-m3.md",
+      "nom": "bge-m3",
+      "alias": [
+        "BGE-M3",
+        "BAAI/bge-m3",
+        "M3-Embedding"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.",
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "hybrid-search",
+        "transformers"
+      ],
+      "alternatives": [
+        "[[Qwen3-Embedding]]"
+      ],
+      "complements": [
+        "[[sentence-transformers]]",
+        "[[Text Embeddings Inference]]",
+        "[[bge-reranker]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/embeddings.md",
+      "nom": "embeddings",
+      "alias": [
+        "représentations vectorielles",
+        "plongements",
+        "embedding",
+        "vector embeddings"
+      ],
+      "role": "notion",
+      "categorie": "ml/embeddings",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "representation-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/sentence-transformers.md",
+      "nom": "sentence-transformers",
+      "alias": [
+        "sbert",
+        "sentence transformers",
+        "sentence-bert"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.",
+      "tags": [
+        "embeddings",
+        "semantic-search",
+        "retrieval",
+        "reranking",
+        "nlp"
+      ],
+      "alternatives": [
+        "[[FastEmbed]]",
+        "[[Text Embeddings Inference]]",
+        "[[Infinity]]"
+      ],
+      "complements": [
+        "[[HuggingFace]]",
+        "[[SetFit]]",
+        "[[txtai]]",
+        "[[bge-reranker]]",
+        "[[Jina Reranker]]",
+        "[[bge-m3]]",
+        "[[Qwen3-Embedding]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Machine Learning/Evidently.md",
@@ -20319,64 +20663,6 @@
       "alternatives": [],
       "complements": [
         "[[HuggingFace]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/embeddings.md",
-      "nom": "embeddings",
-      "alias": [
-        "représentations vectorielles",
-        "plongements",
-        "embedding",
-        "vector embeddings"
-      ],
-      "role": "notion",
-      "categorie": "ml/embeddings",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "representation-learning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/sentence-transformers.md",
-      "nom": "sentence-transformers",
-      "alias": [
-        "sbert",
-        "sentence transformers",
-        "sentence-bert"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.",
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "retrieval",
-        "reranking",
-        "nlp"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[HuggingFace]]",
-        "[[SetFit]]",
-        "[[txtai]]",
-        "[[bge-reranker]]",
-        "[[Jina Reranker]]"
       ],
       "maturite": "production"
     },
