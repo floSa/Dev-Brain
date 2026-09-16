@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Neo4j]]"]
+alternatives: ["[[Neo4j]]", "[[Dgraph]]"]
 complements: []
 tags: [graph-db, document-db, distributed]
 url_docs: https://docs.arango.ai/arangodb/3.12/
@@ -68,6 +68,7 @@ en douze mois. La documentation ne mentionne ni Cypher, ni Gremlin.
 ### Alternatives
 
 - [[Neo4j]] — SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).
+- [[Dgraph]] — Base de graphes distribuée en Go (Apache-2.0) — sharding par prédicat, Raft, DQL et GraphQL natif ; reprise par Istari Digital en 2025, sans offre managée ni Cypher, et à la gouvernance encore fragile.
 
 ## Ressources
 

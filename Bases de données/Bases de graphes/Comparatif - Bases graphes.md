@@ -18,6 +18,8 @@ tags: [graph-db]
 - [[Memgraph]] — tout le graphe en mémoire, Cypher et Bolt, flux Kafka ; licence BSL (usage interne seulement) et haute disponibilité automatique réservée à Enterprise.
 - [[Apache AGE]] — un graphe dans Postgres, joint au relationnel en SQL ; pas de scale-out propre ni de bibliothèque d'algorithmes.
 - [[ArangoDB]] — documents, graphes et recherche dans un moteur, en AQL ; les binaires Community sont plafonnés à 100 Go et réservés à un usage interne.
+- [[JanusGraph]] — une couche de graphe sans stockage propre : Gremlin sur Cassandra, ScyllaDB ou HBase, avec un index externe ; la plus extensible, la plus lourde à exploiter, et sans version stable depuis novembre 2024.
+- [[Dgraph]] — distribuée et en Apache-2.0 pur, partagée par prédicat, avec GraphQL natif ; reprise par Istari Digital en 2025, sans offre managée ni Cypher.
 
 ## Voir aussi
 
