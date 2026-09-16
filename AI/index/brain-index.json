@@ -4199,7 +4199,7 @@
       "famille": "plateforme",
       "langage": "C++",
       "domaines": null,
-      "pitch": "Base de graphes distribuée pour jeux de données massifs.",
+      "pitch": "Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.",
       "tags": [
         "graph-db",
         "distributed"
@@ -4223,7 +4223,7 @@
       "famille": "plateforme",
       "langage": "Java",
       "domaines": null,
-      "pitch": "SGBD de graphes natif, leader des données connectées : modèle propriété-graphe et requêtes Cypher.",
+      "pitch": "SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).",
       "tags": [
         "graph-db"
       ],
