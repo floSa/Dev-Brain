@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Cohere Rerank]]", "[[FlashRank]]", "[[Jina Reranker]]"]
-complements: ["[[sentence-transformers]]"]
+complements: ["[[sentence-transformers]]", "[[bge-m3]]", "[[Text Embeddings Inference]]"]
 tags: [retrieval, reranking, rag, embeddings]
 url_docs: https://bge-model.com
 url_repo: https://github.com/FlagOpen/FlagEmbedding
@@ -66,6 +66,8 @@ n'ont pas été relues ici.
 ### Compléments
 
 - [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi. — le runtime : sa classe `CrossEncoder` charge ces poids et les applique au top-k.
+- [[bge-m3]] — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle. — le premier étage : `bge-reranker-v2-m3` est bâti sur lui et reclasse le top-k qu'il a récupéré.
+- [[Text Embeddings Inference]] — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026. — sert les rerankers XLM-R par `/rerank`, derrière une API.
 
 ## Ressources
 
