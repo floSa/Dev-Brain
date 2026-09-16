@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 841 pages actives.
+> 842 pages actives.
 
 ## Par page
 
@@ -82,8 +82,8 @@
 
 ### Apache AGE  ·  brique
 - tags : `graph-db`, `postgres`
-- liens sortants : [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Memgraph]], [[Neo4j]], [[Postgres]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Memgraph]], [[Neo4j]], [[Postgres]]
+- liens sortants : [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Memgraph]], [[Neo4j]], [[Postgres]], [[pgvector]]
+- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Memgraph]], [[Neo4j]], [[Postgres]]
 
 ### Apache Cassandra  ·  brique
 - tags : `nosql`, `wide-column`, `distributed`
@@ -107,8 +107,8 @@
 
 ### ArangoDB  ·  brique
 - tags : `graph-db`, `document-db`, `distributed`
-- liens sortants : [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[MongoDB]], [[Neo4j]]
-- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Neo4j]]
+- liens sortants : [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[MongoDB]], [[Neo4j]]
+- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Neo4j]]
 
 ### Archify  ·  brique
 - tags : `agent-skill`, `diagram`, `diagram-as-code`, `code-assistant`, `agents`
@@ -397,8 +397,8 @@
 
 ### Dgraph  ·  brique
 - tags : `graph-db`, `distributed`
-- liens sortants : [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[JanusGraph]], [[Nebula Graph]]
-- liens entrants : [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[JanusGraph]], [[Nebula Graph]]
+- liens sortants : [[ArangoDB]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[JanusGraph]], [[Nebula Graph]]
+- liens entrants : [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[JanusGraph]], [[Nebula Graph]]
 
 ### Dify  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
@@ -707,8 +707,8 @@
 
 ### JanusGraph  ·  brique
 - tags : `graph-db`, `distributed`
-- liens sortants : [[Apache Cassandra]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Elasticsearch]], [[Nebula Graph]], [[Postgres]]
-- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Elasticsearch]], [[Nebula Graph]]
+- liens sortants : [[Apache Cassandra]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Elasticsearch]], [[Nebula Graph]], [[Postgres]]
+- liens entrants : [[Apache Cassandra]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Elasticsearch]], [[Nebula Graph]]
 
 ### JAX  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `array`
@@ -937,8 +937,8 @@
 
 ### Memgraph  ·  brique
 - tags : `graph-db`, `in-memory`
-- liens sortants : [[Apache AGE]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Neo4j]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Neo4j]]
+- liens sortants : [[Apache AGE]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Neo4j]], [[Postgres]]
+- liens entrants : [[Apache AGE]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Neo4j]]
 
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
@@ -1032,8 +1032,8 @@
 
 ### Nebula Graph  ·  brique
 - tags : `graph-db`, `distributed`
-- liens sortants : [[Bases de données]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graph Neural Networks]], [[JanusGraph]], [[Neo4j]], [[Postgres]]
-- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graph Neural Networks]], [[JanusGraph]], [[Neo4j]]
+- liens sortants : [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graph Neural Networks]], [[JanusGraph]], [[Neo4j]], [[Postgres]]
+- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graph Neural Networks]], [[JanusGraph]], [[Neo4j]]
 
 ### needle  ·  brique
 - tags : `local-llm`, `small-language-model`, `quantization`, `tool-use`, `structured-output`
@@ -1042,8 +1042,8 @@
 
 ### Neo4j  ·  brique
 - tags : `graph-db`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Memgraph]], [[Nebula Graph]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Memgraph]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]]
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Memgraph]], [[Nebula Graph]], [[Postgres]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Memgraph]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]]
 
 ### Neptune  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1298,7 +1298,7 @@
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
 - liens sortants : [[Apache AGE]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLAlchemy]], [[SQLite]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache Solr]], [[Bases de données]], [[Bases de graphes]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[InfluxDB]], [[JanusGraph]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache Solr]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[InfluxDB]], [[JanusGraph]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLite]], [[Temporal]], [[TimescaleDB]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1997,8 +1997,8 @@
 
 ### Comparatif - Bases graphes  ·  comparatif
 - tags : `graph-db`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Comparatif - Bases graphes.base]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes.base]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
 
 ### Comparatif - Bases NoSQL  ·  comparatif
 - tags : `nosql`
@@ -2283,12 +2283,12 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache AGE]], [[Apache Cassandra]], [[ArangoDB]], [[Bases de données vectorielles]], [[Bases de graphes]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[Dgraph]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[JanusGraph]], [[Liquibase]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
 
 ### Bases de graphes  ·  hub
 - tags : `graph-db`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Dgraph]], [[JanusGraph]], [[Memgraph]]
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Postgres]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]]
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
@@ -2785,6 +2785,11 @@
 - liens sortants : [[Annoy]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Elasticsearch]], [[Faiss]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Recherche d'information]], [[ScaNN]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[pgvector]], [[txtai]]
 - liens entrants : [[Agent memory]], [[Annoy]], [[Bases de données]], [[Choisir un modèle d'embedding]], [[Chroma]], [[Data & pipelines]], [[Embeddings & encodeurs]], [[Faiss]], [[GraphRAG]], [[Hybrid retrieval]], [[Index ANN — internes]], [[LanceDB]], [[Marqo]], [[Metric learning & ré-identification]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[ScaNN]], [[Systèmes de recommandation]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[embeddings]], [[hnswlib]], [[k-NN]], [[pgvector]], [[txtai]]
 
+### Bases graphe — modèles et langages de requête  ·  notion
+- tags : `graph-db`, `knowledge-graph`, `relational`, `distributed`
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Dgraph]], [[Graph Neural Networks]], [[GraphRAG]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Postgres]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
+
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
 - liens sortants : [[Markov Decision Process]], [[Q-learning and DQN]], [[Reinforcement learning]], [[Value functions]]
@@ -2913,7 +2918,7 @@
 ### Construction de graphes de connaissances  ·  notion
 - tags : `knowledge-graph`, `relation-extraction`, `ner`, `llm`
 - liens sortants : [[GLiNER]], [[GraphRAG]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[Neo4j]], [[RAG]], [[Recherche d'information]], [[Structured outputs]], [[embeddings]], [[spaCy]]
-- liens entrants : [[GraphRAG]], [[Graphify]], [[LLM & IA générative]], [[NER et étiquetage de séquence]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG & retrieval]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[GraphRAG]], [[Graphify]], [[LLM & IA générative]], [[NER et étiquetage de séquence]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG & retrieval]]
 
 ### Context engineering  ·  notion
 - tags : `context-engineering`, `llm`, `agents`
@@ -3168,12 +3173,12 @@
 ### Graph Neural Networks  ·  notion
 - tags : `gnn`, `deep-learning`, `representation-learning`
 - liens sortants : [[CNN]], [[Gradient Boosting (GBDT)]], [[GraphRAG]], [[Nebula Graph]], [[Neo4j]], [[PyTorch Geometric]], [[Self-attention]], [[Transformer architectures]], [[embeddings]]
-- liens entrants : [[Apprentissage profond]], [[Nebula Graph]], [[Neo4j]], [[PyTorch Geometric]], [[Systèmes de recommandation]]
+- liens entrants : [[Apprentissage profond]], [[Bases graphe — modèles et langages de requête]], [[Nebula Graph]], [[Neo4j]], [[PyTorch Geometric]], [[Systèmes de recommandation]]
 
 ### GraphRAG  ·  notion
 - tags : `rag`, `knowledge-graph`, `graph-db`, `retrieval`, `llm`
 - liens sortants : [[Advanced RAG]], [[Bases de données vectorielles]], [[Construction de graphes de connaissances]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[Neo4j]], [[Query transformations]], [[RAG]], [[RAG eval]], [[Reranking]]
-- liens entrants : [[Advanced RAG]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[LLM & IA générative]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG]], [[RAG & retrieval]]
+- liens entrants : [[Advanced RAG]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[LLM & IA générative]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG]], [[RAG & retrieval]]
 
 ### GRPO  ·  notion
 - tags : `reinforcement-learning`, `reasoning`, `alignment`, `llm`
@@ -4290,7 +4295,7 @@
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
-- `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, ArangoDB, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, Elasticsearch, Flink, Hyperopt, JanusGraph, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
+- `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, Elasticsearch, Flink, Hyperopt, JanusGraph, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
@@ -4325,7 +4330,7 @@
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
-- `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
+- `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
@@ -4347,7 +4352,7 @@
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
-- `knowledge-graph` : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
+- `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
@@ -4461,7 +4466,7 @@
 - `regularization` : Augmentation d'images, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Comparatif - Reinforcement learning, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
 - `relation-extraction` : Construction de graphes de connaissances  — pas de page concept dédiée
-- `relational` : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
+- `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
@@ -4587,7 +4592,7 @@
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, draw.io)
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
-- `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, ArangoDB, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, Elasticsearch, Flink, Hyperopt, JanusGraph, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
+- `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, Elasticsearch, Flink, Hyperopt, JanusGraph, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : ArangoDB, MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
@@ -4609,7 +4614,7 @@
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
-- `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
+- `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `in-memory` (porté par : Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
@@ -4618,7 +4623,7 @@
 - `interactive-viz` (porté par : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly)
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
-- `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
+- `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
@@ -4686,7 +4691,7 @@
 - `recon` (porté par : Sécurité, Web-Check)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
-- `relational` (porté par : Alembic, Bases de données, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
+- `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
