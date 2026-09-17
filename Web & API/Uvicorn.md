@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[FastAPI]]"]
+complements: ["[[FastAPI]]", "[[Nginx]]"]
 tags: [web-framework]
 url_docs: https://uvicorn.dev
 url_repo: https://github.com/Kludex/uvicorn
@@ -62,6 +62,7 @@ ni routage L7, ni supervision multi-processus avancée. Maintenu par Marcelo Try
 ### Compléments
 
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — l'application que ce serveur exécute ; c'est le couple par défaut de l'écosystème async Python
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — la documentation d'Uvicorn le recommande devant ses processus ; `--forwarded-allow-ips` dit à quels proxys faire confiance pour les en-têtes transférés.
 
 ## Ressources
 
