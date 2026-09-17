@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 106 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 107 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (106 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (107 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -200,7 +200,7 @@ storage/{objet}
 web/{backend, frontend, api, proxy}
 ui/{data-app}
 network/{analyse, transfert}
-security/{recon, auth, secrets, ia}
+security/{recon, auth, secrets, analyse, ia}
 devops/{ci, conteneur}
 observability/{supervision}
 automation/{no-code}
@@ -465,6 +465,19 @@ valeurs disparues et ne sont pas reconduites.
   `security/auth` (prouver **qui** appelle : fournisseurs d'identité, jetons) et de `devtools/config`
   (charger une configuration applicative, secrète ou non : python-dotenv, Pydantic Settings — qui
   lisent un secret sans le garder).
+- `security/analyse` — **ouvert le 2026-09-30**, arbitrage de floSa. Examiner **son propre** code, ses
+  dépendances, ses images de conteneurs et ses dépôts avant livraison, pour y trouver un composant
+  vulnérable, une faille dans le code ou un secret exposé, et tenir l'inventaire de ce qu'on livre
+  (scanners de vulnérabilités, détection de secrets dans le code et l'historique Git, analyse
+  statique, suivi de SBOM : [[Trivy]], [[Grype]], [[Gitleaks]], [[Semgrep]], [[Dependency-Track]]).
+  Rangé sous `security/` par D9, et non sous `devtools/*` bien que D11 (fabriquer du logiciel)
+  semble l'appeler : ces outils ne fabriquent rien, ils jugent ce qui a été fabriqué. Distinct de
+  `security/secrets` (**stocker**, distribuer et faire tourner un secret : le coffre et le fichier
+  chiffré — détecter un secret déjà fuité dans un dépôt, c'est de l'analyse), de `security/recon`
+  (inspecter une cible **depuis l'extérieur**, sans accès à son code : Web-Check) et de
+  `security/ia` (la surface d'attaque des systèmes à modèle : les scanners d'injection de prompt
+  ou de robustesse d'un LLM en relèvent, pas les scanners de dépendances d'une application qui
+  en embarque un). Distinct aussi de `network/analyse` (le trafic, pas le code).
 - `network/analyse` — observation et analyse du **trafic** (qui parle à qui, ports, protocoles,
   volumes, alertes). Distinct d'`observability/supervision`, qui instrumente des machines et des
   applications *depuis l'intérieur*.
