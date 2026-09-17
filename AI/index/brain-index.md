@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 849 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 851 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -641,6 +641,9 @@
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
 - **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
 
+### devops/conteneur
+- **Du Compose à Kubernetes — quand changer d'échelle** — domaines : mlops, infra-ops · alias : compose vers kubernetes, quand passer à kubernetes, migrer de compose à k8s, gitops
+
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 
@@ -1082,6 +1085,9 @@
 
 ### design/ui
 - **Comparatif - Design & prototypage** — —
+
+### devops/conteneur
+- **Comparatif - Orchestration de conteneurs** — —
 
 ### devtools/cli
 - **Comparatif - Frameworks CLI** — —

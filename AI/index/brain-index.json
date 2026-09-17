@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 849,
+  "count": 851,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -312,6 +312,7 @@
     "ci-cd": [
       "Argo CD",
       "DevOps",
+      "Du Compose à Kubernetes — quand changer d'échelle",
       "GitHub Actions",
       "Rule - Packaging démo",
       "Rule - Qualité stricte"
@@ -497,11 +498,13 @@
     ],
     "container": [
       "Beszel",
+      "Comparatif - Orchestration de conteneurs",
       "Conteneurs & orchestration",
       "Daytona",
       "DevOps",
       "Docker",
       "Docker Compose",
+      "Du Compose à Kubernetes — quand changer d'échelle",
       "E2B",
       "Kubernetes",
       "Modal",
@@ -1175,7 +1178,8 @@
       "Video generation"
     ],
     "gitops": [
-      "Argo CD"
+      "Argo CD",
+      "Du Compose à Kubernetes — quand changer d'échelle"
     ],
     "gnn": [
       "Graph Neural Networks",
@@ -1443,6 +1447,7 @@
       "Comparatif - Serving de modèles",
       "Conteneurs & orchestration",
       "DataRobot",
+      "Du Compose à Kubernetes — quand changer d'échelle",
       "Flyte",
       "Helm",
       "KServe",
@@ -8270,6 +8275,23 @@
       "maturite": "production"
     },
     {
+      "path": "DevOps/Conteneurs & orchestration/Comparatif - Orchestration de conteneurs.md",
+      "nom": "Comparatif - Orchestration de conteneurs",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devops/conteneur",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "container"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "DevOps/Conteneurs & orchestration/Conteneurs & orchestration.md",
       "nom": "Conteneurs & orchestration",
       "alias": [
@@ -8345,6 +8367,34 @@
         "[[GitHub Actions]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Du Compose à Kubernetes — quand changer d'échelle.md",
+      "nom": "Du Compose à Kubernetes — quand changer d'échelle",
+      "alias": [
+        "compose vers kubernetes",
+        "quand passer à kubernetes",
+        "migrer de compose à k8s",
+        "gitops"
+      ],
+      "role": "notion",
+      "categorie": "devops/conteneur",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "container",
+        "kubernetes",
+        "gitops",
+        "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "DevOps/Conteneurs & orchestration/Helm.md",
