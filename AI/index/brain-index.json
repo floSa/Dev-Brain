@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 844,
+  "count": 849,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -310,6 +310,7 @@
       "RAG & retrieval"
     ],
     "ci-cd": [
+      "Argo CD",
       "DevOps",
       "GitHub Actions",
       "Rule - Packaging démo",
@@ -496,16 +497,19 @@
     ],
     "container": [
       "Beszel",
+      "Conteneurs & orchestration",
       "Daytona",
       "DevOps",
       "Docker",
       "Docker Compose",
       "E2B",
+      "Kubernetes",
       "Modal",
       "Pattern - Stack démo ML locale multi-services",
       "Podman",
       "Rule - Packaging démo",
       "Sandboxing de code généré",
+      "k3s",
       "testcontainers"
     ],
     "context-engineering": [
@@ -1170,6 +1174,9 @@
       "SDV",
       "Video generation"
     ],
+    "gitops": [
+      "Argo CD"
+    ],
     "gnn": [
       "Graph Neural Networks",
       "PyTorch Geometric"
@@ -1432,13 +1439,18 @@
       "RAG & retrieval"
     ],
     "kubernetes": [
+      "Argo CD",
       "Comparatif - Serving de modèles",
+      "Conteneurs & orchestration",
       "DataRobot",
       "Flyte",
+      "Helm",
       "KServe",
+      "Kubernetes",
       "Microsoft Azure Machine Learning",
       "Seldon Core",
-      "Serving"
+      "Serving",
+      "k3s"
     ],
     "lakehouse": [
       "Apache Iceberg",
@@ -2814,11 +2826,13 @@
     ],
     "self-hosted": [
       "Alertmanager",
+      "Argo CD",
       "Automatisation no-code",
       "Beszel",
       "Choisir un modèle d'embedding",
       "Dataiku",
       "Infinity",
+      "Kubernetes",
       "Meilisearch",
       "Netdata",
       "Observabilité",
@@ -2836,6 +2850,7 @@
       "Web-Check",
       "Zabbix",
       "croc",
+      "k3s",
       "olmOCR"
     ],
     "self-play": [
@@ -8226,6 +8241,222 @@
       "maturite": null
     },
     {
+      "path": "DevOps/Argo CD.md",
+      "nom": "Argo CD",
+      "alias": [
+        "argocd",
+        "argo-cd",
+        "argo cd",
+        "argo"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé).",
+      "tags": [
+        "ci-cd",
+        "kubernetes",
+        "gitops",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[Helm]]",
+        "[[GitHub Actions]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Conteneurs & orchestration.md",
+      "nom": "Conteneurs & orchestration",
+      "alias": [
+        "conteneurs",
+        "orchestration de conteneurs",
+        "containers"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Exécuter des applications en conteneurs, de la machine unique au cluster — le moteur, la pile locale, l'orchestrateur et l'outil qui installe dessus.",
+      "tags": [
+        "container",
+        "kubernetes"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Docker Compose.md",
+      "nom": "Docker Compose",
+      "alias": [
+        "compose",
+        "docker-compose",
+        "docker compose",
+        "compose.yaml"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling.",
+      "tags": [
+        "container"
+      ],
+      "alternatives": [
+        "[[k3s]]",
+        "[[Kubernetes]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Podman]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Docker.md",
+      "nom": "Docker",
+      "alias": [
+        "docker"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.",
+      "tags": [
+        "container"
+      ],
+      "alternatives": [
+        "[[Podman]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]",
+        "[[GitHub Actions]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Helm.md",
+      "nom": "Helm",
+      "alias": [
+        "helm",
+        "helm chart",
+        "helm charts"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Gestionnaire de paquets de Kubernetes : un chart décrit, versionne et installe un ensemble de ressources (Apache-2.0, Go, CNCF diplômé).",
+      "tags": [
+        "kubernetes"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[k3s]]",
+        "[[Argo CD]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Kubernetes.md",
+      "nom": "Kubernetes",
+      "alias": [
+        "k8s",
+        "kube",
+        "kubernetes"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter.",
+      "tags": [
+        "container",
+        "kubernetes",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[k3s]]",
+        "[[Docker Compose]]"
+      ],
+      "complements": [
+        "[[Helm]]",
+        "[[Argo CD]]",
+        "[[KServe]]",
+        "[[Seldon Core]]",
+        "[[Ray Serve]]",
+        "[[BentoML]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Podman.md",
+      "nom": "Podman",
+      "alias": [
+        "podman",
+        "podman desktop",
+        "quadlet"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.",
+      "tags": [
+        "container",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Docker]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/k3s.md",
+      "nom": "k3s",
+      "alias": [
+        "rancher k3s"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem.",
+      "tags": [
+        "container",
+        "kubernetes",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kubernetes]]",
+        "[[Docker Compose]]"
+      ],
+      "complements": [
+        "[[Helm]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "DevOps/DevOps.md",
       "nom": "DevOps",
       "alias": [
@@ -8252,55 +8483,6 @@
       "maturite": null
     },
     {
-      "path": "DevOps/Docker Compose.md",
-      "nom": "Docker Compose",
-      "alias": [
-        "compose",
-        "docker-compose",
-        "docker compose",
-        "compose.yaml"
-      ],
-      "role": "brique",
-      "categorie": "devops/conteneur",
-      "famille": "cli",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling.",
-      "tags": [
-        "container"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[Docker]]",
-        "[[Podman]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "DevOps/Docker.md",
-      "nom": "Docker",
-      "alias": [
-        "docker"
-      ],
-      "role": "brique",
-      "categorie": "devops/conteneur",
-      "famille": "plateforme",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.",
-      "tags": [
-        "container"
-      ],
-      "alternatives": [
-        "[[Podman]]"
-      ],
-      "complements": [
-        "[[Docker Compose]]",
-        "[[GitHub Actions]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "DevOps/GitHub Actions.md",
       "nom": "GitHub Actions",
       "alias": [
@@ -8319,33 +8501,8 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[Docker]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "DevOps/Podman.md",
-      "nom": "Podman",
-      "alias": [
-        "podman",
-        "podman desktop",
-        "quadlet"
-      ],
-      "role": "brique",
-      "categorie": "devops/conteneur",
-      "famille": "cli",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.",
-      "tags": [
-        "container",
-        "self-hosted"
-      ],
-      "alternatives": [
-        "[[Docker]]"
-      ],
-      "complements": [
-        "[[Docker Compose]]"
+        "[[Docker]]",
+        "[[Argo CD]]"
       ],
       "maturite": "production"
     },
@@ -17646,7 +17803,9 @@
         "[[TensorFlow Serving]]",
         "[[Ray Serve]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17724,7 +17883,9 @@
         "[[TensorFlow Serving]]",
         "[[Ray Serve]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17816,7 +17977,9 @@
         "[[TorchServe]]",
         "[[TensorFlow Serving]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
       "maturite": "production"
     },
     {
@@ -17845,7 +18008,9 @@
         "[[TensorFlow Serving]]",
         "[[Ray Serve]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
       "maturite": "production"
     },
     {
