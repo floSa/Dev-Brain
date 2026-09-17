@@ -1,0 +1,35 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde la notion OAuth2
+    # hors de la vue (cf. Comparatif - Orchestration de conteneurs).
+    - role == "brique"
+    - categorie == "security/auth"
+views:
+  - type: table
+    name: Fournisseurs d'identité
+    filters:
+      and:
+        - famille == "plateforme"
+    order:
+      - file.name
+      - pitch
+      - scaling
+      - langage
+      - licence_type
+      - hosted
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Toute la catégorie
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
