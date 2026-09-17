@@ -1132,7 +1132,26 @@ axes:
               (DNS, TLS, en-tetes, technologies detectees), et renseignement en
               sources ouvertes : l ancienne distinction recon / osint ne portait
               aucune consequence, les deux valeurs sont fusionnees.
-          auth: {}
+          auth:
+            libelle: "Authentification"
+            motif: >
+              Promu le 2026-09-30 a la cinquieme page (PyJWT, Keycloak, Authentik,
+              Authelia, la notion OAuth2 et OpenID Connect). Libelle « Authentification » :
+              le nom d usage du sujet, distinct de la notion « OAuth2 et OpenID Connect »
+              et du tag authentication.
+          secrets:
+            libelle: "Secrets"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur
+              existante ne rangeait un gestionnaire de secrets. D3 (stocker et
+              interroger) passe avant D9 et l aurait envoye en database/* ; un coffre
+              n est pas un SGBD. Libelle « Secrets » : le nom d usage, distinct de la
+              notion « Gestion des secrets ».
+            frontiere: >
+              Stocker, distribuer, chiffrer et faire tourner les secrets d un
+              systeme (mots de passe de service, cles d API, cles de chiffrement,
+              certificats). Distinct de security/auth (prouver QUI appelle) et de
+              devtools/config (charger une configuration, secrete ou non).
           ia:
             libelle: "Systèmes IA"
             motif: >
