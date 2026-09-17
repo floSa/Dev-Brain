@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[VictoriaMetrics]]", "[[Zabbix]]"]
-complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]"]
+complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[HAProxy]]"]
 tags: [observability, metrics, alerting, self-hosted]
 url_docs: https://prometheus.io/docs/introduction/overview/
 url_repo: https://github.com/prometheus/prometheus
@@ -68,6 +68,10 @@ de valeurs de chaque label.
 - [[Alertmanager]] — Routeur d'alertes open-source (Apache-2.0, Go) du projet Prometheus — dédoublonne, regroupe, inhibe et met en silence les alertes reçues, puis les route vers le bon récepteur (courriel, PagerDuty, OpsGenie…) ; cluster haute disponibilité. — reçoit les alertes que Prometheus évalue, et les regroupe, les inhibe et les route.
 - [[Grafana]] — Plateforme open-source de dashboards et d'observabilité (AGPL-3.0) — visualise métriques, logs et traces depuis 150+ sources (Prometheus, Loki, InfluxDB, Postgres…) ; alerting intégré, self-host ou Grafana Cloud. — la source de données par défaut pour visualiser les métriques.
 - [[OpenTelemetry]] — Cadre d'observabilité open-source (Apache-2.0, CNCF) neutre vis-à-vis des fournisseurs — spécification, protocole OTLP, SDK, instrumentation automatique et Collector qui reçoit, traite et exporte traces, métriques et logs ; n'est pas un backend. — Prometheus peut recevoir des métriques OTLP, à activer explicitement.
+- [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — métriques exposées nativement.
+- [[Caddy]] — Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire. — option globale `metrics`, sur le port d'administration.
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — par `nginx-prometheus-exporter`, qui lit `stub_status`.
+- [[HAProxy]] — Répartiteur de charge TCP et HTTP à haute performance, configuré dans un seul haproxy.cfg (GPL-2.0, C, HAProxy Technologies) — health checks actifs, stick-tables et rechargement sans coupure ; ne sert pas de fichiers statiques, ACME natif encore expérimental, WAF et synchronisation multi-nœuds réservés à l'édition Enterprise. — export intégré, sans exporteur séparé.
 
 ## Ressources
 
