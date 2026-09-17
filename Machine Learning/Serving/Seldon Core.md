@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[BentoML]]", "[[NVIDIA Triton]]", "[[KServe]]", "[[TorchServe]]", "[[TensorFlow Serving]]", "[[Ray Serve]]"]
-complements: []
+complements: ["[[Kubernetes]]"]
 tags: [model-serving, inference, kubernetes]
 url_docs: https://docs.seldon.ai/
 url_repo: https://github.com/SeldonIO/seldon-core
@@ -63,6 +63,10 @@ Deux générations coexistent, Core v1 et v2/MLServer, aux architectures différ
 - [[TorchServe]] — Serveur de modèles PyTorch (handlers Python, frontend Java) — packaging .mar, batching et versionnage ; projet archivé et non maintenu depuis août 2025.
 - [[TensorFlow Serving]] — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
 - [[Ray Serve]] — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
+
+### Compléments
+
+- [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — l'environnement sur lequel il repose : un cluster est obligatoire.
 
 ## Ressources
 
