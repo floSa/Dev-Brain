@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 855,
+  "count": 858,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1455,6 +1455,7 @@
       "Kubernetes",
       "Microsoft Azure Machine Learning",
       "Nginx",
+      "Reverse proxy et TLS",
       "Seldon Core",
       "Serving",
       "Traefik",
@@ -1730,6 +1731,8 @@
     "load-balancer": [
       "HAProxy",
       "Nginx",
+      "Reverse proxies",
+      "Reverse proxy et TLS",
       "Traefik"
     ],
     "local-llm": [
@@ -2754,8 +2757,11 @@
     ],
     "reverse-proxy": [
       "Caddy",
+      "Comparatif - Reverse proxies",
       "HAProxy",
       "Nginx",
+      "Reverse proxies",
+      "Reverse proxy et TLS",
       "Traefik"
     ],
     "reward-shaping": [
@@ -2862,6 +2868,7 @@
       "OpenTelemetry",
       "Podman",
       "Prometheus",
+      "Reverse proxy et TLS",
       "Stirling PDF",
       "Stockage",
       "Tempo",
@@ -3174,6 +3181,8 @@
       "Caddy",
       "HAProxy",
       "Nginx",
+      "Reverse proxies",
+      "Reverse proxy et TLS",
       "Traefik"
     ],
     "token-optimization": [
@@ -26145,34 +26154,6 @@
       "maturite": "deprecated"
     },
     {
-      "path": "Web & API/Caddy.md",
-      "nom": "Caddy",
-      "alias": [
-        "caddy server"
-      ],
-      "role": "brique",
-      "categorie": "web/proxy",
-      "famille": "plateforme",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire.",
-      "tags": [
-        "reverse-proxy",
-        "tls",
-        "self-hosted"
-      ],
-      "alternatives": [
-        "[[Traefik]]",
-        "[[Nginx]]",
-        "[[HAProxy]]"
-      ],
-      "complements": [
-        "[[Docker Compose]]",
-        "[[Prometheus]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Web & API/FastAPI.md",
       "nom": "FastAPI",
       "alias": [
@@ -26224,35 +26205,6 @@
       "maturite": "production"
     },
     {
-      "path": "Web & API/HAProxy.md",
-      "nom": "HAProxy",
-      "alias": [
-        "haproxy.cfg"
-      ],
-      "role": "brique",
-      "categorie": "web/proxy",
-      "famille": "plateforme",
-      "langage": "C",
-      "domaines": null,
-      "pitch": "Répartiteur de charge TCP et HTTP à haute performance, configuré dans un seul haproxy.cfg (GPL-2.0, C, HAProxy Technologies) — health checks actifs, stick-tables et rechargement sans coupure ; ne sert pas de fichiers statiques, ACME natif encore expérimental, WAF et synchronisation multi-nœuds réservés à l'édition Enterprise.",
-      "tags": [
-        "reverse-proxy",
-        "tls",
-        "load-balancer",
-        "self-hosted"
-      ],
-      "alternatives": [
-        "[[Traefik]]",
-        "[[Caddy]]",
-        "[[Nginx]]"
-      ],
-      "complements": [
-        "[[Kubernetes]]",
-        "[[Prometheus]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Web & API/HTMX.md",
       "nom": "HTMX",
       "alias": [
@@ -26297,7 +26249,81 @@
       "maturite": "production"
     },
     {
-      "path": "Web & API/Nginx.md",
+      "path": "Web & API/Reverse proxies/Caddy.md",
+      "nom": "Caddy",
+      "alias": [
+        "caddy server"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Traefik]]",
+        "[[Nginx]]",
+        "[[HAProxy]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]",
+        "[[Prometheus]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Reverse proxies/Comparatif - Reverse proxies.md",
+      "nom": "Comparatif - Reverse proxies",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "web/proxy",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "reverse-proxy"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Web & API/Reverse proxies/HAProxy.md",
+      "nom": "HAProxy",
+      "alias": [
+        "haproxy.cfg"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Répartiteur de charge TCP et HTTP à haute performance, configuré dans un seul haproxy.cfg (GPL-2.0, C, HAProxy Technologies) — health checks actifs, stick-tables et rechargement sans coupure ; ne sert pas de fichiers statiques, ACME natif encore expérimental, WAF et synchronisation multi-nœuds réservés à l'édition Enterprise.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]"
+      ],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[Prometheus]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Reverse proxies/Nginx.md",
       "nom": "Nginx",
       "alias": [
         "nginx.conf"
@@ -26332,7 +26358,63 @@
       "maturite": "production"
     },
     {
-      "path": "Web & API/Traefik.md",
+      "path": "Web & API/Reverse proxies/Reverse proxies.md",
+      "nom": "Reverse proxies",
+      "alias": [
+        "proxys inverses",
+        "reverse proxies",
+        "load balancers"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": "Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Web & API/Reverse proxies/Reverse proxy et TLS.md",
+      "nom": "Reverse proxy et TLS",
+      "alias": [
+        "reverse proxy",
+        "terminaison tls",
+        "tls interne",
+        "autorité de certification interne",
+        "gateway api et ingress"
+      ],
+      "role": "notion",
+      "categorie": "web/proxy",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer",
+        "kubernetes",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Web & API/Reverse proxies/Traefik.md",
       "nom": "Traefik",
       "alias": [
         "traefik proxy"
