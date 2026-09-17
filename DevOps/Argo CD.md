@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-complements: ["[[Kubernetes]]", "[[Helm]]", "[[GitHub Actions]]"]
+complements: ["[[Kubernetes]]", "[[Helm]]", "[[GitHub Actions]]", "[[Traefik]]", "[[Nginx]]"]
 tags: [ci-cd, kubernetes, gitops, self-hosted]
 url_docs: https://argo-cd.readthedocs.io/
 url_repo: https://github.com/argoproj/argo-cd
@@ -74,6 +74,8 @@ Les mainteneurs viennent de plusieurs entreprises (Intuit, Akuity, Red Hat, Octo
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — le seul environnement où il sert
 - [[Helm]] — Gestionnaire de paquets de Kubernetes : un chart décrit, versionne et installe un ensemble de ressources (Apache-2.0, Go, CNCF diplômé). — l'une des sources de manifestes qu'il sait rendre
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — la CI qui construit l'image et met à jour le dépôt de configuration
+- [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — la documentation d'Argo CD donne la configuration pour exposer le serveur derrière lui : TLS terminé au proxy, `--insecure` côté Argo CD.
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — la documentation d'Argo CD décrit le F5 NGINX Ingress Controller pour exposer le serveur.
 
 ## Ressources
 
