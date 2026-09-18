@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 867,
+  "count": 875,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -319,8 +319,12 @@
       "DevOps",
       "Du Compose à Kubernetes — quand changer d'échelle",
       "GitHub Actions",
+      "Gitleaks",
+      "Grype",
       "Rule - Packaging démo",
-      "Rule - Qualité stricte"
+      "Rule - Qualité stricte",
+      "Semgrep",
+      "Trivy"
     ],
     "class-imbalance": [
       "Classification de texte",
@@ -511,6 +515,7 @@
       "Docker Compose",
       "Du Compose à Kubernetes — quand changer d'échelle",
       "E2B",
+      "Grype",
       "Kubernetes",
       "Modal",
       "Pattern - Stack démo ML locale multi-services",
@@ -518,6 +523,7 @@
       "Rule - Packaging démo",
       "Sandboxing de code généré",
       "Traefik",
+      "Trivy",
       "k3s",
       "testcontainers"
     ],
@@ -2817,6 +2823,19 @@
       "Guardrails",
       "Jailbreaking and defenses"
     ],
+    "sast": [
+      "Analyse de vulnérabilités",
+      "Semgrep",
+      "Sécurité"
+    ],
+    "sbom": [
+      "Analyse de vulnérabilités",
+      "Dependency-Track",
+      "Grype",
+      "Supply chain logicielle et SBOM",
+      "Sécurité",
+      "Trivy"
+    ],
     "scaling-laws": [
       "Maximal Update Parametrization",
       "Mixture of Experts",
@@ -2857,6 +2876,12 @@
       "Newton & quasi-Newton",
       "Optimisation"
     ],
+    "secret-scanning": [
+      "Analyse de vulnérabilités",
+      "Gitleaks",
+      "Sécurité",
+      "Trivy"
+    ],
     "secrets-management": [
       "Gestion des secrets",
       "OpenBao",
@@ -2884,6 +2909,7 @@
       "Caddy",
       "Choisir un modèle d'embedding",
       "Dataiku",
+      "Dependency-Track",
       "Gestion des secrets",
       "HAProxy",
       "Infinity",
@@ -3124,6 +3150,16 @@
       "XGBoost",
       "imbalanced-learn",
       "k-NN"
+    ],
+    "supply-chain": [
+      "Analyse de vulnérabilités",
+      "Dependency-Track",
+      "Gitleaks",
+      "Grype",
+      "Semgrep",
+      "Supply chain logicielle et SBOM",
+      "Sécurité",
+      "Trivy"
     ],
     "survival-analysis": [
       "Analyse de survie",
@@ -3453,6 +3489,15 @@
       "Vision",
       "Vision Transformers (ViT)",
       "timm"
+    ],
+    "vulnerability-scanning": [
+      "Analyse de vulnérabilités",
+      "Comparatif - Scanners de sécurité",
+      "Dependency-Track",
+      "Grype",
+      "Supply chain logicielle et SBOM",
+      "Sécurité",
+      "Trivy"
     ],
     "wavelet": [
       "Comparatif - Traitement du signal",
@@ -8444,7 +8489,9 @@
       ],
       "complements": [
         "[[Docker Compose]]",
-        "[[GitHub Actions]]"
+        "[[GitHub Actions]]",
+        "[[Trivy]]",
+        "[[Grype]]"
       ],
       "maturite": "production"
     },
@@ -8536,7 +8583,8 @@
         "[[HAProxy]]",
         "[[Keycloak]]",
         "[[OpenBao]]",
-        "[[SOPS]]"
+        "[[SOPS]]",
+        "[[Trivy]]"
       ],
       "maturite": "production"
     },
@@ -8562,7 +8610,9 @@
         "[[Docker]]"
       ],
       "complements": [
-        "[[Docker Compose]]"
+        "[[Docker Compose]]",
+        "[[Trivy]]",
+        "[[Grype]]"
       ],
       "maturite": "production"
     },
@@ -8639,7 +8689,11 @@
       "alternatives": [],
       "complements": [
         "[[Docker]]",
-        "[[Argo CD]]"
+        "[[Argo CD]]",
+        "[[Trivy]]",
+        "[[Grype]]",
+        "[[Gitleaks]]",
+        "[[Semgrep]]"
       ],
       "maturite": "production"
     },
@@ -23524,7 +23578,9 @@
         "formatter"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Semgrep]]"
+      ],
       "maturite": "production"
     },
     {
@@ -25944,6 +26000,234 @@
       "maturite": null
     },
     {
+      "path": "Sécurité/Analyse de vulnérabilités/Analyse de vulnérabilités.md",
+      "nom": "Analyse de vulnérabilités",
+      "alias": [
+        "analyse de vulnérabilités",
+        "scanners de sécurité",
+        "scanner de vulnérabilités",
+        "sast",
+        "sca",
+        "détection de secrets",
+        "sbom"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": "Savoir ce que contient ce qu'on livre et ce que ça expose — composants vulnérables d'une image ou d'un dépôt, secrets oubliés dans l'historique Git, failles dans le code, et suivi des versions déjà livrées.",
+      "tags": [
+        "vulnerability-scanning",
+        "sbom",
+        "secret-scanning",
+        "sast",
+        "supply-chain"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Comparatif - Scanners de sécurité.md",
+      "nom": "Comparatif - Scanners de sécurité",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "security/analyse",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "vulnerability-scanning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Dependency-Track.md",
+      "nom": "Dependency-Track",
+      "alias": [
+        "dependency-track",
+        "owasp dependency-track",
+        "dependency track",
+        "dtrack"
+      ],
+      "role": "brique",
+      "categorie": "security/analyse",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Plateforme OWASP (Apache-2.0, Java) qui ingère des SBOM CycloneDX et suit dans la durée les vulnérabilités des composants d'un portefeuille de projets, avec alertes sur les nouvelles CVE, politiques et VEX — elle ne scanne rien elle-même, exige PostgreSQL, et sa documentation hors ligne est encore incomplète.",
+      "tags": [
+        "vulnerability-scanning",
+        "sbom",
+        "supply-chain",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Trivy]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Gitleaks.md",
+      "nom": "Gitleaks",
+      "alias": [
+        "gitleaks",
+        "gitleaks scanner",
+        "zricethezav gitleaks"
+      ],
+      "role": "brique",
+      "categorie": "security/analyse",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Détecteur de secrets dans un dépôt Git, un répertoire ou un flux (MIT, Go) : 222 règles par défaut en expressions régulières, entropie et mots-clés, hook pre-commit, aucune vérification en ligne — mais l'auteur l'a déclaré « complet », sans nouvelles fonctions, et travaille sur son successeur Betterleaks ; l'action GitHub officielle n'est pas en MIT.",
+      "tags": [
+        "secret-scanning",
+        "supply-chain",
+        "ci-cd"
+      ],
+      "alternatives": [
+        "[[Trivy]]"
+      ],
+      "complements": [
+        "[[GitHub Actions]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Grype.md",
+      "nom": "Grype",
+      "alias": [
+        "grype",
+        "anchore grype",
+        "syft et grype"
+      ],
+      "role": "brique",
+      "categorie": "security/analyse",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours.",
+      "tags": [
+        "vulnerability-scanning",
+        "sbom",
+        "supply-chain",
+        "container",
+        "ci-cd"
+      ],
+      "alternatives": [
+        "[[Trivy]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Podman]]",
+        "[[GitHub Actions]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Semgrep.md",
+      "nom": "Semgrep",
+      "alias": [
+        "semgrep",
+        "semgrep ce",
+        "semgrep community edition",
+        "semgrep oss"
+      ],
+      "role": "brique",
+      "categorie": "security/analyse",
+      "famille": "cli",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Analyse statique de code par motifs, en édition communautaire (moteur LGPL-2.1, Semgrep Inc.) : règles YAML, plus de 30 langages dont Python, sorties SARIF et JSON, utilisable hors ligne avec des règles locales — mais sans analyse entre fichiers ni entre fonctions, et avec des règles du registre sous une licence d'usage interne qui interdit de les redistribuer.",
+      "tags": [
+        "sast",
+        "supply-chain",
+        "ci-cd"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[GitHub Actions]]",
+        "[[Ruff]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Supply chain logicielle et SBOM.md",
+      "nom": "Supply chain logicielle et SBOM",
+      "alias": [
+        "sbom",
+        "software bill of materials",
+        "supply chain logicielle",
+        "chaîne d'approvisionnement logicielle",
+        "vex",
+        "cyclonedx",
+        "spdx",
+        "nomenclature logicielle",
+        "provenance"
+      ],
+      "role": "notion",
+      "categorie": "security/analyse",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "sbom",
+        "supply-chain",
+        "vulnerability-scanning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Analyse de vulnérabilités/Trivy.md",
+      "nom": "Trivy",
+      "alias": [
+        "trivy",
+        "aquasecurity trivy",
+        "trivy scanner"
+      ],
+      "role": "brique",
+      "categorie": "security/analyse",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées).",
+      "tags": [
+        "vulnerability-scanning",
+        "sbom",
+        "secret-scanning",
+        "supply-chain",
+        "container",
+        "ci-cd"
+      ],
+      "alternatives": [
+        "[[Grype]]",
+        "[[Gitleaks]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Podman]]",
+        "[[Kubernetes]]",
+        "[[GitHub Actions]]",
+        "[[Dependency-Track]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Sécurité/Authentification/Authelia.md",
       "nom": "Authelia",
       "alias": [
@@ -26399,12 +26683,17 @@
         "ai-eng",
         "infra-ops"
       ],
-      "pitch": "Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.",
+      "pitch": "Prouver qui appelle, garder les secrets hors du code, savoir ce que contient et ce qu'expose ce qu'on livre, voir ce qu'un système montre de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.",
       "tags": [
         "authentication",
         "sso",
         "identity-provider",
         "secrets-management",
+        "vulnerability-scanning",
+        "sbom",
+        "secret-scanning",
+        "sast",
+        "supply-chain",
         "recon",
         "osint",
         "cryptography",

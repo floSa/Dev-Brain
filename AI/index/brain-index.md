@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 867 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 875 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -533,6 +533,13 @@
 - **VictoriaMetrics** — Base de séries temporelles et stockage long terme compatible Prometheus (Apache-2.0, Go) — binaire unique sans dépendance ou version cluster, ingestion remote write, requêtes PromQL et MetricsQL ; édition Enterprise et VictoriaMetrics Cloud.
 - **Zabbix** — Plateforme de supervision distribuée d'entreprise (AGPL-3.0 depuis la 7.0, C, PHP, Go) — serveur, agents actifs ou passifs, collecte sans agent (SNMP, IPMI), modèles, déclencheurs et tableaux de bord sur MySQL, MariaDB ou PostgreSQL ; proxies pour les sites distants.
 
+### security/analyse
+- **Dependency-Track** — Plateforme OWASP (Apache-2.0, Java) qui ingère des SBOM CycloneDX et suit dans la durée les vulnérabilités des composants d'un portefeuille de projets, avec alertes sur les nouvelles CVE, politiques et VEX — elle ne scanne rien elle-même, exige PostgreSQL, et sa documentation hors ligne est encore incomplète.
+- **Gitleaks** — Détecteur de secrets dans un dépôt Git, un répertoire ou un flux (MIT, Go) : 222 règles par défaut en expressions régulières, entropie et mots-clés, hook pre-commit, aucune vérification en ligne — mais l'auteur l'a déclaré « complet », sans nouvelles fonctions, et travaille sur son successeur Betterleaks ; l'action GitHub officielle n'est pas en MIT.
+- **Grype** — Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours.
+- **Semgrep** — Analyse statique de code par motifs, en édition communautaire (moteur LGPL-2.1, Semgrep Inc.) : règles YAML, plus de 30 langages dont Python, sorties SARIF et JSON, utilisable hors ligne avec des règles locales — mais sans analyse entre fichiers ni entre fonctions, et avec des règles du registre sous une licence d'usage interne qui interdit de les redistribuer.
+- **Trivy** — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées).
+
 ### security/auth
 - **Authelia** — Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante).
 - **Authentik** — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois.
@@ -972,6 +979,9 @@
 - **Métriques, logs et traces** — domaines : infra-ops, mlops · alias : three pillars, trois piliers, télémétrie, telemetry, signaux d'observabilité, métriques logs traces
 - **SLO et alerting** — domaines : infra-ops, mlops · alias : SLO, SLI, SLA, service level objective, budget d'erreur, error budget, burn rate, taux de consommation, alerting, alerte sur les SLO
 
+### security/analyse
+- **Supply chain logicielle et SBOM** — domaines : infra-ops, mlops · alias : sbom, software bill of materials, supply chain logicielle, chaîne d'approvisionnement logicielle, vex, cyclonedx, spdx, nomenclature logicielle, provenance
+
 ### security/auth
 - **OAuth2 et OpenID Connect** — domaines : infra-ops, ai-eng · alias : oauth2, oauth 2.0, oidc, openid connect, authorization code pkce, jeton d'accès, id token
 
@@ -1187,6 +1197,9 @@
 ### ml/vision
 - **Comparatif - Détection & segmentation** — —
 
+### security/analyse
+- **Comparatif - Scanners de sécurité** — —
+
 ### security/auth
 - **Comparatif - Fournisseurs d'identité** — —
 
@@ -1232,6 +1245,7 @@
 - **Agents de code** — Les agents qui lisent et modifient un dépôt — dans le terminal, dans l'éditeur, ou au-dessus des deux.
 - **AI Engineering** — Construire une application autour d'un modèle de langage — contexte, outils, garde-fous, évaluation.
 - **Algèbre linéaire** — Le langage dans lequel les données et les modèles sont écrits — normes, produits, projections, et les décompositions qui rendent tout le reste calculable.
+- **Analyse de vulnérabilités** — Savoir ce que contient ce qu'on livre et ce que ça expose — composants vulnérables d'une image ou d'un dépôt, secrets oubliés dans l'historique Git, failles dans le code, et suivi des versions déjà livrées.
 - **Analyse factorielle** — Résumer un grand tableau par quelques axes qu'on puisse interpréter — l'école française de l'analyse de données, et ses variantes selon le type de variables.
 - **Apprentissage par renforcement** — Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.
 - **Apprentissage profond** — Comment un réseau de neurones est fait et comment on l'entraîne — architectures, optimisation, mise à l'échelle, compression — et les socles qui le font tourner.
@@ -1293,7 +1307,7 @@
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Suivi d'expériences** — Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.
 - **Systèmes IA** — La surface d'attaque d'un système qui embarque un modèle, et les défenses qui tiennent.
-- **Sécurité** — Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
+- **Sécurité** — Prouver qui appelle, garder les secrets hors du code, savoir ce que contient et ce qu'expose ce qu'on livre, voir ce qu'un système montre de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
 - **Tabulaire** — Des lignes, des colonnes, une cible — les arbres et leurs ensembles, et le travail sur les variables qui décide de leur score.
 - **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.
