@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: []
-complements: []
+complements: ["[[dbt Core]]"]
 tags: [lakehouse, olap, schema-evolution]
 url_docs: https://iceberg.apache.org/docs/latest/
 url_repo: https://github.com/apache/iceberg
@@ -60,6 +60,10 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 ### Alternatives
 
 - Aucun autre format de table dans le brain. Concurrents directs hors brain : **Delta Lake** (écosystème Databricks / Spark) et **Apache Hudi** (orienté upserts et CDC en flux).
+
+### Compléments
+
+- [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — dbt-spark accepte `file_format: iceberg` ; la documentation dbt des catalogues Iceberg (`catalogs.yml`, dbt 1.10) détaille Snowflake, BigQuery, Databricks et DuckDB (ce dernier en dbt v2 seulement) et ne dit rien d'Iceberg pour Trino ni pour ClickHouse.
 
 ## Ressources
 

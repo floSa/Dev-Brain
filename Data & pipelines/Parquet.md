@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: ["[[Avro]]"]
-complements: []
+complements: ["[[dbt Core]]"]
 tags: [file-format, columnar, olap]
 url_docs: https://parquet.apache.org/docs/
 url_repo: https://github.com/apache/parquet-format
@@ -59,6 +59,10 @@ ligne à jour, c'est réécrire un fichier entier.
 ### Alternatives
 
 - [[Avro]] — Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
+
+### Compléments
+
+- [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — dbt-duckdb écrit du Parquet par la matérialisation `external` (`format: parquet`) et dbt-spark le prend comme `file_format`.
 
 ## Ressources
 
