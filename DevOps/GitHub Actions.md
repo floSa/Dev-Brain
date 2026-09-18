@@ -11,7 +11,7 @@ maturite: production
 langage: 
 scaling: serverless
 alternatives: []
-complements: ["[[Docker]]", "[[Argo CD]]"]
+complements: ["[[Docker]]", "[[Argo CD]]", "[[Trivy]]", "[[Grype]]", "[[Gitleaks]]", "[[Semgrep]]"]
 tags: [ci-cd]
 url_docs: https://docs.github.com/actions
 url_repo: https://github.com/actions/runner
@@ -54,7 +54,7 @@ mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à
 
 - Installation — rien à installer si le dépôt est sur GitHub ; le runner (`actions/runner`) est open-source et s'auto-héberge. Sur GitHub Enterprise Server : Actions activé par l'administrateur, avec un stockage blob externe obligatoire (S3, Azure Blob, GCS, ou un MinIO compatible S3) et un minimum de 8 vCPU et 64 Go de RAM pour 740 runners connectés
 - Point d'entrée — fichiers YAML dans `.github/workflows/`, déclenchés par événement de dépôt
-- Prérequis — un dépôt GitHub. Les secrets passent par le magasin chiffré du dépôt ou de l'organisation, jamais en clair dans le YAML ; se méfier de `pull_request_target`, qui donne à une PR de fork le contexte du dépôt cible. Épingler les actions tierces par SHA — l'action `tj-actions/changed-files` a été compromise en mars 2025 (CVE-2025-30066, tags réécrits, secrets vidés dans les journaux, plus de 23 000 dépôts) — ; la politique d'actions autorisées d'une organisation peut exiger cet épinglage depuis le 2025-08-15. Restreindre `permissions:` au strict nécessaire
+- Prérequis — un dépôt GitHub. Les secrets passent par le magasin chiffré du dépôt ou de l'organisation, jamais en clair dans le YAML ; se méfier de `pull_request_target`, qui donne à une PR de fork le contexte du dépôt cible. Épingler les actions tierces par SHA — l'action `tj-actions/changed-files` a été compromise en mars 2025 (CVE-2025-30066, tags réécrits, secrets vidés dans les journaux, plus de 23 000 dépôts) ; un an plus tard, les tags de `aquasecurity/trivy-action` (76 sur 77) et de `setup-trivy` ont été réécrits vers des commits malveillants pendant une douzaine d'heures (2026-03-19, avis GHSA-69fq-xp46-6x23) : un scanner de sécurité est une action tierce comme une autre, exécutée avec les secrets du workflow, et Aqua précise que le badge « release immuable » ne suffit pas à empêcher le déplacement d'un tag — l'épinglage par SHA reste la protection ; la politique d'actions autorisées d'une organisation peut exiger cet épinglage depuis le 2025-08-15. Restreindre `permissions:` au strict nécessaire
 - Exécution — managé, sur des runners éphémères hébergés par GitHub, ou sur des runners auto-hébergés ; sur un cluster Kubernetes, le contrôleur Actions Runner Controller (ARC) les fait vivre. La rétention des journaux, statuts et exécutions passe à 90 jours par défaut au 2026-10-01 (plus de 400 jours auparavant)
 - Coût — gratuit sur les dépôts publics ; sur les dépôts privés, minutes incluses par mois : 2 000 (Free), 3 000 (Pro, Team), 50 000 (Enterprise Cloud), puis facturation à la minute — Linux 2 cœurs 0,006 $, Windows 2 cœurs 0,010 $, macOS 0,062 $. Baisse des tarifs des runners hébergés allant jusqu'à 39 % le 2026-01-01. Cache : 10 Go par dépôt, 0,07 $/Go/mois au-delà
 
@@ -68,6 +68,10 @@ mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à
 
 - [[Docker]] — Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre. — les images que les workflows construisent et publient
 - [[Argo CD]] — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé). — le CD qui déploie ce que la CI a construit
+- [[Trivy]] — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées). — action officielle `aquasecurity/trivy-action`, dont 76 tags sur 77 ont été détournés le 2026-03-19 : à épingler par SHA, en versions sûres (≥ 0.35.0).
+- [[Grype]] — Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours. — `anchore/scan-action` (et `anchore/sbom-action` pour le SBOM) ; son README recommande l'épinglage par SHA.
+- [[Gitleaks]] — Détecteur de secrets dans un dépôt Git, un répertoire ou un flux (MIT, Go) : 222 règles par défaut en expressions régulières, entropie et mots-clés, hook pre-commit, aucune vérification en ligne — mais l'auteur l'a déclaré « complet », sans nouvelles fonctions, et travaille sur son successeur Betterleaks ; l'action GitHub officielle n'est pas en MIT. — `gitleaks/gitleaks-action` est sous licence à clé gratuite pour les comptes d'organisation ; appeler le binaire dans une étape évite la question.
+- [[Semgrep]] — Analyse statique de code par motifs, en édition communautaire (moteur LGPL-2.1, Semgrep Inc.) : règles YAML, plus de 30 langages dont Python, sorties SARIF et JSON, utilisable hors ligne avec des règles locales — mais sans analyse entre fichiers ni entre fonctions, et avec des règles du registre sous une licence d'usage interne qui interdit de les redistribuer. — modèle de job dans un conteneur `semgrep/semgrep`, sans jeton ; l'ancienne `semgrep-action` est archivée.
 
 ## Ressources
 
