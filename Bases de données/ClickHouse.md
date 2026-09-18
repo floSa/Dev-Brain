@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[DuckDB]]", "[[Snowflake]]"]
-complements: []
+complements: ["[[dbt Core]]", "[[SQLMesh]]"]
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
 url_repo: https://github.com/ClickHouse/ClickHouse
@@ -59,6 +59,11 @@ les performances de toutes les requêtes qui suivront.
 
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 - [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — la même analytique colonnes, mais sans cluster à opérer et sans possibilité d'auto-hébergement ; rangé en plateforme, pas en base, cf. la règle D-R8 de la taxonomie.
+
+### Compléments
+
+- [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dbt-clickhouse` (1.10.3, 2026-09-15), maintenu par ClickHouse Inc. ; vues matérialisées et tables distribuées expérimentales ; en dbt v2 il est en *private beta*, sans `ON CLUSTER` ni matérialisations distribuées.
+- [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge mais contraint : pas d'upsert (échange de tables et de partitions qui copient l'existant), ne peut pas héberger l'état, et une issue ouverte le 2026-09-23 signale des échecs silencieux de l'échange.
 
 ## Ressources
 
