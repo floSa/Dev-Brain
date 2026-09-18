@@ -102,3 +102,4 @@ téléchargements PyPI sur 30 jours — contre 22,5 M pour dbt-core. Tobiko Data
 - [[Comparatif - Transformation SQL]] — ce qui départage dbt Core et SQLMesh
 - [[ELT vs ETL & idempotence]] — l'ordre d'assemblage dont SQLMesh est le T, et l'idempotence de ses kinds
 - [[Architecture médaillon]] — les couches que les modèles raffinent
+- [[Modélisation dimensionnelle]] — les dimensions à historique, natives en `SCD_TYPE_2`
