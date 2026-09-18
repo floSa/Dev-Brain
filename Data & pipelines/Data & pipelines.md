@@ -4,7 +4,7 @@ nom: Data & pipelines
 alias: [pipelines de données]
 pitch: Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
 domaines: [data-eng, data-sci]
-tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
+tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-transformation]
 ---
 
 # Data & pipelines
@@ -17,6 +17,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 - Le clivage qui structure le plus les choix est **la donnée tient-elle en mémoire**. En dessous, tout marche et [[pandas]] suffit. Au-dessus, il faut un moteur qui construise un plan avant d'exécuter ([[Polars]]) ou qui distribue ([[Flink]]) — et le code change, pas seulement la machine.
 - Le **format sur disque** n'est pas un détail d'implémentation, c'est ce qui décide de la vitesse de lecture. [[Parquet]] est colonnaire, donc rapide en analytique et lent à la ligne ; [[Avro]] est en lignes, donc adapté à l'échange et aux messages ; [[Apache Iceberg]] n'est ni l'un ni l'autre — c'est une couche de table transactionnelle **par-dessus** ces fichiers, ce qui donne au [[Architecture médaillon|lakehouse]] ce que le stockage objet ne sait pas faire : l'ACID et le time travel. Cf. [[Partitionnement & layout de données]].
 - Un pipeline se juge sur sa **rejouabilité** avant sa vitesse. Rejouer un jour manquant sans dupliquer ni décaler est la propriété qui distingue un pipeline d'un script — cf. [[ELT vs ETL & idempotence]]. C'est le fil du dossier [[Fiabilité des données]], où quatre notions et trois outils de vérification répondent tous à « à quoi peut-on se fier » plutôt qu'à « comment ça tourne » : l'ordre d'assemblage et l'idempotence, le découpage en couches de raffinage ([[Architecture médaillon]]), ce qu'on promet au consommateur ([[Contrats de données & qualité]]), et l'état figé qui rend un résultat reproductible ([[Versionnage de données]]). L'orchestrateur exécute ; il ne garantit rien de tout ça.
+- **Transformer** et **vérifier** sont deux gestes distincts, qu'un même projet porte souvent. La transformation dérive des tables d'autres tables par des modèles versionnés : [[dbt Core]] exécute dans le moteur sans état à héberger, [[SQLMesh]] garde un état et fabrique des environnements virtuels — cf. [[Comparatif - Transformation SQL]], et [[Modélisation dimensionnelle]] pour la forme des tables produites. La vérification, elle, teste des règles connues sur un lot livré ; elle vit dans [[Fiabilité des données]]. Ni l'une ni l'autre ne planifie quoi que ce soit : c'est le rôle d'[[Orchestration]].
 - **Au fil de l'eau, deux pages distinctes que le mot « streaming » confond.** [[Change Data Capture (CDC)]] *produit* le flux — il lit le journal de transactions d'une base et en sort les changements ; [[Stream processing]] le *consomme* — fenêtrage, event-time, watermarks, exactly-once. L'un est de l'ingestion, l'autre du traitement, et leurs pièges n'ont rien à voir.
 - La **donnée factice** et la **donnée synthétique** sont deux besoins distincts, souvent confondus. [[Faker]] et [[Mimesis]] fabriquent des valeurs plausibles champ par champ, indépendamment les unes des autres — parfait pour peupler des tests. [[SDV]] apprend la distribution jointe du réel — nécessaire dès qu'on veut que les corrélations tiennent. Cf. [[Synthetic data generation]].
 - Le **profilage** ([[ydata-profiling]], [[sweetviz]], [[missingno]]) est le premier geste sur un jeu inconnu, et il précède toute modélisation : cf. [[EDA automatisée & profiling]].
@@ -36,6 +37,9 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 - Peupler des tests → [[Faker]] (ou [[Mimesis]] si le volume compte) ; reproduire une distribution réelle → [[SDV]].
 - Découvrir un jeu de données inconnu → [[ydata-profiling]] ; comparer deux jeux → [[sweetviz]] ; comprendre la structure des trous → [[missingno]].
 - Répliquer une base source sans la recharger entière → [[Change Data Capture (CDC)]].
+- Dériver des tables par des modèles SQL versionnés, testés et documentés → [[dbt Core]] ; avec un état, des environnements virtuels et un plan des changements → [[SQLMesh]].
+- Vérifier qu'un lot livré respecte ses règles → [[Fiabilité des données]] ([[Great Expectations]], [[Soda Core]], [[pandera]]).
+- Ranger les tables produites en faits et dimensions → [[Modélisation dimensionnelle]].
 - Rendre un pipeline rejouable, contractuel, reproductible → [[ELT vs ETL & idempotence]], [[Contrats de données & qualité]], [[Versionnage de données]].
 - Cinq notions **ne sont pas ici**, et c'est délibéré : [[ORM]], [[Migrations de schéma]], [[Bases de données vectorielles]] et [[Index ANN — internes]] sont descendues dans [[Bases de données]], [[Notebooks-as-code]] dans [[Outils de développement]]. Elles portaient toutes la même catégorie de notion, parce que la galaxie wiki n'avait pas de valeur plus fine ; leur sujet est le moteur ou l'outil, pas le pipeline.
 
