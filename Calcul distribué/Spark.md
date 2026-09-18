@@ -11,7 +11,7 @@ maturite: production
 langage: Scala / JVM
 scaling: distributed
 alternatives: ["[[Dask]]", "[[Ray]]"]
-complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]"]
+complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[pandera]]"]
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
 url_repo: https://github.com/apache/spark
@@ -67,6 +67,8 @@ ajoute Spark Connect, le type VARIANT, l'ANSI SQL par défaut et Java 21.
 - [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la plateforme écrite par ses auteurs : elle l'exploite pour vous, et les compétences se transfèrent dans les deux sens.
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dbt-spark` (1.11.0, 2026-07-16), maintenu par dbt Labs ; connexions ODBC, Thrift, HTTP et session, formats de fichier `parquet`, `delta`, `iceberg` et `hudi` ; en dbt v2 il est en bêta, limité à Spark 3.0.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge, conçu et testé pour un seul catalogue, qui ne peut pas héberger l'état.
+- [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — les DataFrames Spark se valident par `add_spark(...)` (extra `spark`) et Spark figure dans la liste de compatibilité officielle.
+- [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — PySpark SQL est de première classe (schéma, modèle, checks, validation paresseuse), par l'extra `pyspark`.
 
 ## Ressources
 
