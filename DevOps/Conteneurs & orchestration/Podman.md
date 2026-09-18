@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[Docker]]"]
-complements: ["[[Docker Compose]]"]
+complements: ["[[Docker Compose]]", "[[Trivy]]", "[[Grype]]"]
 tags: [container, self-hosted]
 url_docs: https://podman.io/docs
 url_repo: https://github.com/containers/podman
@@ -72,6 +72,8 @@ Tools », au niveau Sandbox de la CNCF depuis le 2025-01-21.
 ### Compléments
 
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling. — le format que `podman compose` exécute
+- [[Trivy]] — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées). — une image Podman locale (≥ 2.0) se scanne directement ; le Podman distant n'est pas pris en charge.
+- [[Grype]] — Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours. — `--from podman` lit une image Podman locale.
 
 ## Ressources
 
