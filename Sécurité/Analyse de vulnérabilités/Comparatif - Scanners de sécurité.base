@@ -1,0 +1,63 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde la notion
+    # « Supply chain logicielle et SBOM » hors de la vue.
+    - role == "brique"
+    - categorie == "security/analyse"
+views:
+  - type: table
+    name: Composants (images, dépendances, SBOM)
+    filters:
+      and:
+        - file.hasTag("vulnerability-scanning")
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - hosted
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Secrets exposés
+    filters:
+      and:
+        - file.hasTag("secret-scanning")
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Code source
+    filters:
+      and:
+        - file.hasTag("sast")
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Toute la catégorie
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
