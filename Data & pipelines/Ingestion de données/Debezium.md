@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Airbyte]]"]
-complements: ["[[Postgres]]", "[[MySQL]]", "[[MariaDB]]", "[[Microsoft SQL Server]]", "[[MongoDB]]", "[[Apache Iceberg]]", "[[Flink]]"]
+complements: ["[[Postgres]]", "[[MySQL]]", "[[MariaDB]]", "[[Microsoft SQL Server]]", "[[MongoDB]]", "[[Apache Iceberg]]", "[[Flink]]", "[[NATS]]", "[[RabbitMQ]]", "[[Kafka]]"]
 tags: [data-ingestion, cdc, streaming, self-hosted]
 url_docs: https://debezium.io/documentation/
 url_repo: https://github.com/debezium/debezium
@@ -86,6 +86,9 @@ environ 13 170 étoiles, dernier commit du 2026-09-28. Le projet a rejoint la Co
 - [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding. — connecteur stable.
 - [[Apache Iceberg]] — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB). — cible via le puits communautaire de Debezium Server.
 - [[Flink]] — Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch. — Flink CDC figure parmi les intégrations de la page des utilisateurs de Debezium.
+- [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF. — sink de Debezium Server : NATS JetStream.
+- [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — sink de Debezium Server vers RabbitMQ Streams, pas vers les files AMQP classiques.
+- [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — mode Kafka Connect, le plus courant : Kafka est obligatoire ; Debezium Server sait aussi écrire vers Kafka.
 
 ## Ressources
 
