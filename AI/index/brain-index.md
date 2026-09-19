@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 891 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 897 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -48,6 +48,13 @@
 - **Debezium** — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0).
 - **dlt** — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0).
 - **Logstash** — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire.
+
+### data/messagerie
+- **Celery** — File de tâches distribuée pour Python : des workers exécutent des fonctions asynchrones postées sur un broker (RabbitMQ, Redis, SQS), avec relances, planification (Beat) et enchaînements (canvas) ; au moins une fois, BSD-3-Clause.
+- **Kafka** — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0).
+- **NATS** — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF.
+- **RabbitMQ** — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série.
+- **Redpanda** — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale.
 
 ### data/orchestration
 - **Airflow** — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data.
@@ -1300,6 +1307,7 @@
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
 - **Machine Learning** — Apprendre une fonction à partir de données — la cadrer, l'entraîner, mesurer ce qu'elle vaut, puis la tenir en production.
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
+- **Messagerie** — Transporter des événements et des tâches entre services sans les interpréter — brokers en journal ou en file, file de tâches Python par-dessus — et savoir ce que chacun garantit à la livraison.
 - **ML Engineering** — Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.
 - **MLOps** — Mettre un modèle en production et savoir, ensuite, s'il marche encore.
 - **Modèles de langage** — Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.
