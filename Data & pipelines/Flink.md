@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: []
-complements: []
+complements: ["[[Debezium]]"]
 tags: [streaming, distributed]
 url_docs: https://nightlies.apache.org/flink/flink-docs-stable/
 url_repo: https://github.com/apache/flink
@@ -62,6 +62,10 @@ système de fichiers distribué.
 ### Alternatives
 
 - Aucun autre moteur de flux dans le brain. Concurrents directs hors brain : **Spark Structured Streaming** (micro-batch, écosystème Spark) et **Kafka Streams** (bibliothèque, couplée à Kafka).
+
+### Compléments
+
+- [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — les connecteurs Flink CDC de Ververica figurent parmi les intégrations de la page des utilisateurs de Debezium.
 
 ## Ressources
 
