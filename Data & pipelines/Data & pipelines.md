@@ -13,7 +13,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 
 ## Ce qu'il faut comprendre
 
-- Le domaine suit la trajectoire d'une donnée, et ses sept sous-dossiers sont sept étapes de cette trajectoire : on la **collecte** ([[Scraping]], [[Parsing]]), on l'**amène** d'une source à sa destination ([[Ingestion de données]]), on la **manipule** ([[DataFrames]]), on **planifie** son passage ([[Orchestration]]), on **s'y fie** ([[Fiabilité des données]]), on la **regarde** ([[Visualisation]]). Ce qui reste au niveau du domaine est ce qui **traverse** ces étapes : les formats sur disque, la génération de faux, le profilage, le fil de l'eau.
+- Le domaine suit la trajectoire d'une donnée, et ses huit sous-dossiers sont huit étapes de cette trajectoire : on la **collecte** ([[Scraping]], [[Parsing]]), on l'**amène** d'une source à sa destination ([[Ingestion de données]]), on la **transporte** entre services ([[Messagerie]]), on la **manipule** ([[DataFrames]]), on **planifie** son passage ([[Orchestration]]), on **s'y fie** ([[Fiabilité des données]]), on la **regarde** ([[Visualisation]]). Ce qui reste au niveau du domaine est ce qui **traverse** ces étapes : les formats sur disque, la génération de faux, le profilage, le fil de l'eau.
 - Le clivage qui structure le plus les choix est **la donnée tient-elle en mémoire**. En dessous, tout marche et [[pandas]] suffit. Au-dessus, il faut un moteur qui construise un plan avant d'exécuter ([[Polars]]) ou qui distribue ([[Flink]]) — et le code change, pas seulement la machine.
 - Le **format sur disque** n'est pas un détail d'implémentation, c'est ce qui décide de la vitesse de lecture. [[Parquet]] est colonnaire, donc rapide en analytique et lent à la ligne ; [[Avro]] est en lignes, donc adapté à l'échange et aux messages ; [[Apache Iceberg]] n'est ni l'un ni l'autre — c'est une couche de table transactionnelle **par-dessus** ces fichiers, ce qui donne au [[Architecture médaillon|lakehouse]] ce que le stockage objet ne sait pas faire : l'ACID et le time travel. Cf. [[Partitionnement & layout de données]].
 - Un pipeline se juge sur sa **rejouabilité** avant sa vitesse. Rejouer un jour manquant sans dupliquer ni décaler est la propriété qui distingue un pipeline d'un script — cf. [[ELT vs ETL & idempotence]]. C'est le fil du dossier [[Fiabilité des données]], où quatre notions et trois outils de vérification répondent tous à « à quoi peut-on se fier » plutôt qu'à « comment ça tourne » : l'ordre d'assemblage et l'idempotence, le découpage en couches de raffinage ([[Architecture médaillon]]), ce qu'on promet au consommateur ([[Contrats de données & qualité]]), et l'état figé qui rend un résultat reproductible ([[Versionnage de données]]). L'orchestrateur exécute ; il ne garantit rien de tout ça.
@@ -32,6 +32,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - Faire tourner tout ça chaque nuit, avec dépendances et reprises → [[Orchestration]].
 - En faire un graphique → [[Visualisation]].
 - Traiter au fil de l'eau plutôt que par lots → [[Flink]], et [[Stream processing]] pour la théorie.
+- Faire circuler des événements ou des tâches entre services, sur site → [[Messagerie]] : [[Kafka]] (journal rejouable), [[NATS]] (un binaire léger), [[RabbitMQ]] (files et routage), [[Redpanda]] (protocole Kafka, licence BSL), et [[Celery]] pour les tâches Python.
 - Sortir vite une table SQL vers un DataFrame → [[connectorx]].
 - Poser une table analytique durable sur du stockage objet → [[Parquet]] plus [[Apache Iceberg]].
 - Échanger des messages à schéma versionné → [[Avro]].
@@ -46,7 +47,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[DataFrames]] · [[Fiabilité des données]] · [[Ingestion de données]] · [[Orchestration]] · [[Parsing]] · [[Scraping]] · [[Visualisation]]
+- [[DataFrames]] · [[Fiabilité des données]] · [[Ingestion de données]] · [[Messagerie]] · [[Orchestration]] · [[Parsing]] · [[Scraping]] · [[Visualisation]]
 
 ### Notions
 - [[EDA automatisée & profiling]] — domaines : data-sci, data-eng
