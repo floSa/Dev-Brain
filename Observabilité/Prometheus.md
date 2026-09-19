@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[VictoriaMetrics]]", "[[Zabbix]]"]
-complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[HAProxy]]"]
+complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[HAProxy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]"]
 tags: [observability, metrics, alerting, self-hosted]
 url_docs: https://prometheus.io/docs/introduction/overview/
 url_repo: https://github.com/prometheus/prometheus
@@ -72,6 +72,9 @@ de valeurs de chaque label.
 - [[Caddy]] — Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire. — option globale `metrics`, sur le port d'administration.
 - [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — par `nginx-prometheus-exporter`, qui lit `stub_status`.
 - [[HAProxy]] — Répartiteur de charge TCP et HTTP à haute performance, configuré dans un seul haproxy.cfg (GPL-2.0, C, HAProxy Technologies) — health checks actifs, stick-tables et rechargement sans coupure ; ne sert pas de fichiers statiques, ACME natif encore expérimental, WAF et synchronisation multi-nœuds réservés à l'édition Enterprise. — export intégré, sans exporteur séparé.
+- [[Redpanda]] — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale. — expose ses métriques nativement, port 9644, `/public_metrics`.
+- [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF. — collecté par `prometheus-nats-exporter`, la supervision JSON du serveur n'étant pas au format Prometheus.
+- [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — plugin natif livré avec le broker, port 15692.
 
 ## Ressources
 

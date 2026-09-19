@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Kibana]]"]
-complements: ["[[Loki]]", "[[Prometheus]]", "[[Tempo]]", "[[VictoriaMetrics]]", "[[Keycloak]]"]
+complements: ["[[Loki]]", "[[Prometheus]]", "[[Tempo]]", "[[VictoriaMetrics]]", "[[Keycloak]]", "[[Redpanda]]", "[[RabbitMQ]]"]
 tags: [observability, metrics, dashboard, dataviz]
 url_docs: https://grafana.com/docs/grafana/latest/
 url_repo: https://github.com/grafana/grafana
@@ -71,6 +71,8 @@ distribution.
 - [[Tempo]] — Backend de traces distribuées open-source (AGPL-3.0, Go) de Grafana Labs — stockage sur object store sans index, accepte OTLP, Jaeger et Zipkin, requêté en TraceQL depuis Grafana ; mode monolithique ou microservices, Grafana Cloud Traces pour le managé. — le backend de traces, exploré en TraceQL depuis la même interface.
 - [[VictoriaMetrics]] — Base de séries temporelles et stockage long terme compatible Prometheus (Apache-2.0, Go) — binaire unique sans dépendance ou version cluster, ingestion remote write, requêtes PromQL et MetricsQL ; édition Enterprise et VictoriaMetrics Cloud. — se branche comme une source Prometheus, avec un stockage qui monte en charge.
 - [[Keycloak]] — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter. — sa documentation a une page dédiée à Keycloak pour l'authentification OAuth générique (`auth.generic_oauth`).
+- [[Redpanda]] — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale. — `rpk generate grafana-dashboard` produit un tableau de bord depuis les métriques Prometheus du broker.
+- [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — tableaux de bord officiels de RabbitMQ sur grafana.com, alimentés par son plugin Prometheus.
 
 ## Ressources
 
