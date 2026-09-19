@@ -1,0 +1,21 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # rangees sous la meme categorie hors de la vue.
+    - role == "brique"
+    - categorie == "data/ingestion"
+views:
+  - type: table
+    name: Ingestion de données
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
