@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]", "[[Airbyte]]", "[[dlt]]", "[[Celery]]"]
 tags: [orchestration, data-pipeline, scheduler]
 url_docs: https://airflow.apache.org/docs/
 url_repo: https://github.com/apache/airflow
@@ -74,6 +74,7 @@ ajoute l'Edge Executor pour l'exécution distante.
 - [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — provider officiel `airflow-provider-great-expectations` (1.0.0, 2026-01-28, Apache-2.0, maintenu par Astronomer avec GX) : trois opérateurs, pour un DataFrame pandas ou Spark en mémoire, pour des données externes par une Batch Definition, et pour un Checkpoint.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — le fournisseur `apache-airflow-providers-airbyte` (6.1.0, 2026-09-29) déclenche et surveille les synchronisations Airbyte.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — `PipelineTasksGroup` transforme un pipeline dlt en groupe de tâches (modes sérialisé, parallèle, parallèle isolé).
+- [[Celery]] — File de tâches distribuée pour Python : des workers exécutent des fonctions asynchrones postées sur un broker (RabbitMQ, Redis, SQS), avec relances, planification (Beat) et enchaînements (canvas) ; au moins une fois, BSD-3-Clause. — CeleryExecutor : Celery distribue les tâches aux workers, avec RabbitMQ, Redis ou Redis Sentinel comme broker ; la doc recommande un backend de résultats en base de données.
 
 ## Ressources
 
