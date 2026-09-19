@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[DuckDB]]", "[[Snowflake]]"]
-complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
 url_repo: https://github.com/ClickHouse/ClickHouse
@@ -66,6 +66,8 @@ les performances de toutes les requêtes qui suivront.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge mais contraint : pas d'upsert (échange de tables et de partitions qui copient l'existant), ne peut pas héberger l'état, et une issue ouverte le 2026-09-23 signale des échecs silencieux de l'échange.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination certifiée en disponibilité générale.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination documentée, utilisable sur site.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — connecteur de base listé.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée en GA.
 
 ## Ressources
 
