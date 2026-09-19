@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Elasticsearch]]", "[[Apache Solr]]"]
-complements: []
+complements: ["[[OpenMetadata]]", "[[DataHub]]"]
 tags: [search, distributed, hybrid-search, semantic-search]
 url_docs: https://docs.opensearch.org/latest/
 url_repo: https://github.com/opensearch-project/OpenSearch
@@ -63,6 +63,8 @@ Dashboards, est livrée avec.
 ### Compléments
 
 - *Aucun complément déclaré.*
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — autre moteur de recherche accepté, en 3.x.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — autre moteur de recherche accepté, en 2.x ou 3.x.
 
 ## Ressources
 
