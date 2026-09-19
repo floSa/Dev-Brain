@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[Soda Core]]"]
+complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Debezium]]", "[[Apache NiFi]]"]
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
 url_repo: https://github.com/postgres/postgres
@@ -74,6 +74,10 @@ le relationnel. C'est le défaut raisonnable pour une base applicative.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur d'exécution pris en charge (extra `postgres`) et base d'état recommandée (`state_connection`), à côté du moteur de données.
 - [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — source SQL de la liste de compatibilité officielle de GX (extra `postgresql`).
 - [[Soda Core]] — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud. — paquet `soda-postgres` : les contrôles s'exécutent en SQL dans la base.
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — source en disponibilité générale (`source-postgres` 3.8.5), en curseur, en `xmin` ou en CDC par slot `pgoutput`, et destination en disponibilité générale.
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination, et source CDC par `pg_replication` (slot logique `pgoutput`, sans Kafka).
+- [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — source de capture par décodage logique (`wal_level=logical`, `pgoutput`), versions 14 à 18.
+- [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — lu et écrit par les processeurs JDBC (`ExecuteSQL`, `QueryDatabaseTable`, `PutDatabaseRecord`).
 
 ## Ressources
 

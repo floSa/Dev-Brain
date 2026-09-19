@@ -11,7 +11,7 @@ maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Postgres]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[MySQL Workbench]]"]
+complements: ["[[MySQL Workbench]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]"]
 tags: [relational]
 url_docs: https://dev.mysql.com/doc/
 url_repo: https://github.com/mysql/mysql-server
@@ -66,6 +66,9 @@ commerciale.
 ### Compléments
 
 - [[MySQL Workbench]] — Outil graphique officiel MySQL d'Oracle : modélisation, requêtes SQL et administration du serveur. — la modélisation et l'administration graphiques du serveur
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — source avec CDC par le binlog, marquée alpha dans son `metadata.yaml`.
+- [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — source par le binlog (`binlog_format=ROW`), versions 8.0, 8.4 et 9.7.
+- [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — `CaptureChangeMySQL` lit son journal : la seule base dotée d'un processeur CDC.
 
 ## Ressources
 
