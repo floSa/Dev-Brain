@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 884 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 891 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -41,8 +41,12 @@
 - **Parquet** — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
 ### data/ingestion
+- **Airbyte** — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes.
+- **Apache NiFi** — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker.
 - **Beats** — Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash.
 - **connectorx** — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.
+- **Debezium** — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0).
+- **dlt** — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0).
 - **Logstash** — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire.
 
 ### data/orchestration
@@ -643,6 +647,7 @@
 
 ### data/ingestion
 - **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
+- **Ingestion incrémentale et curseurs** — domaines : data-eng · alias : ingestion incrémentale, incremental load, curseur, cursor, watermark, high-water mark, full refresh, attribution window, backfill incrémental
 
 ### data/parsing
 - **OCR classique vs modèles vision-langage pour documents** — domaines : data-eng, ai-eng · alias : OCR vs VLM, OCR classique ou VLM, pipeline OCR vs VLM, OCR end-to-end, VLM pour l'OCR
@@ -1080,6 +1085,9 @@
 ### data/fiabilite
 - **Comparatif - Qualité de données** — —
 
+### data/ingestion
+- **Comparatif - Ingestion de données** — —
+
 ### data/orchestration
 - **Comparatif - Orchestrateurs data** — —
 
@@ -1286,6 +1294,7 @@
 - **Fiabilité des données** — Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
 - **Infrastructure & Ops** — Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
+- **Ingestion de données** — Amener la donnée d'une source — base, API, fichier, journal — jusqu'à sa destination, sans la remodeler, et savoir la recharger sans tout relire.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
 - **Interprétabilité** — Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.

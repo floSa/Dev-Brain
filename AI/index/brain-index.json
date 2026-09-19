@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 884,
+  "count": 891,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -308,7 +308,10 @@
       "Statistiques & inférence"
     ],
     "cdc": [
-      "Change Data Capture (CDC)"
+      "Airbyte",
+      "Change Data Capture (CDC)",
+      "Debezium",
+      "Ingestion de données"
     ],
     "chunking": [
       "Chunking strategies",
@@ -617,6 +620,15 @@
       "Plateformes data & IA",
       "Snowflake"
     ],
+    "data-ingestion": [
+      "Airbyte",
+      "Apache NiFi",
+      "Comparatif - Ingestion de données",
+      "Debezium",
+      "Ingestion de données",
+      "Ingestion incrémentale et curseurs",
+      "dlt"
+    ],
     "data-leakage": [
       "Data leakage"
     ],
@@ -625,17 +637,22 @@
       "Modélisation dimensionnelle"
     ],
     "data-pipeline": [
+      "Airbyte",
       "Airflow",
       "Alteryx",
+      "Apache NiFi",
       "Architecture médaillon",
       "Beats",
       "Change Data Capture (CDC)",
+      "Comparatif - Ingestion de données",
       "Comparatif - Orchestrateurs data",
       "Comparatif - Transformation SQL",
       "Dagster",
       "Data & pipelines",
       "Databricks",
       "ELT vs ETL & idempotence",
+      "Ingestion de données",
+      "Ingestion incrémentale et curseurs",
       "Kestra",
       "Logstash",
       "Mage",
@@ -647,7 +664,8 @@
       "Scraping",
       "Stream processing",
       "Web scraping",
-      "dbt Core"
+      "dbt Core",
+      "dlt"
     ],
     "data-quality": [
       "Alteryx",
@@ -1354,6 +1372,7 @@
     "idempotence": [
       "ELT vs ETL & idempotence",
       "Fiabilité des données",
+      "Ingestion incrémentale et curseurs",
       "Orchestration",
       "Stream processing"
     ],
@@ -1810,6 +1829,7 @@
     ],
     "logging": [
       "Beats",
+      "Ingestion de données",
       "Kibana",
       "Logstash",
       "Loki",
@@ -1823,6 +1843,7 @@
     "low-code": [
       "Activepieces",
       "Alteryx",
+      "Apache NiFi",
       "Automatisation no-code",
       "Comparatif - Automatisation no-code",
       "Comparatif - Plateformes data & IA",
@@ -2881,7 +2902,8 @@
     "schema-evolution": [
       "Apache Iceberg",
       "Avro",
-      "Contrats de données & qualité"
+      "Contrats de données & qualité",
+      "dlt"
     ],
     "search": [
       "Apache Solr",
@@ -2931,7 +2953,9 @@
       "segment-anything"
     ],
     "self-hosted": [
+      "Airbyte",
       "Alertmanager",
+      "Apache NiFi",
       "Argo CD",
       "Authelia",
       "Authentik",
@@ -2940,6 +2964,7 @@
       "Caddy",
       "Choisir un modèle d'embedding",
       "Dataiku",
+      "Debezium",
       "Dependency-Track",
       "Gestion des secrets",
       "HAProxy",
@@ -3109,6 +3134,7 @@
     ],
     "streaming": [
       "Change Data Capture (CDC)",
+      "Debezium",
       "Flink",
       "River",
       "Server-Sent Events & streaming LLM",
@@ -4384,7 +4410,9 @@
       ],
       "complements": [
         "[[dbt Core]]",
-        "[[SQLMesh]]"
+        "[[SQLMesh]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -4501,7 +4529,9 @@
         "[[jupysql]]",
         "[[dbt Core]]",
         "[[SQLMesh]]",
-        "[[Soda Core]]"
+        "[[Soda Core]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -4620,7 +4650,9 @@
         "[[Apache Cassandra]]"
       ],
       "complements": [
-        "[[MongoDB Compass]]"
+        "[[MongoDB Compass]]",
+        "[[Airbyte]]",
+        "[[Debezium]]"
       ],
       "maturite": "production"
     },
@@ -5173,7 +5205,9 @@
         "[[CockroachDB]]",
         "[[Microsoft SQL Server]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Debezium]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5201,7 +5235,10 @@
         "[[SQLite]]",
         "[[CockroachDB]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Airbyte]]",
+        "[[Debezium]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5227,7 +5264,10 @@
         "[[Microsoft SQL Server]]"
       ],
       "complements": [
-        "[[MySQL Workbench]]"
+        "[[MySQL Workbench]]",
+        "[[Airbyte]]",
+        "[[Debezium]]",
+        "[[Apache NiFi]]"
       ],
       "maturite": "production"
     },
@@ -5265,7 +5305,11 @@
         "[[dbt Core]]",
         "[[SQLMesh]]",
         "[[Great Expectations]]",
-        "[[Soda Core]]"
+        "[[Soda Core]]",
+        "[[Airbyte]]",
+        "[[dlt]]",
+        "[[Debezium]]",
+        "[[Apache NiFi]]"
       ],
       "maturite": "production"
     },
@@ -6094,7 +6138,10 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[dbt Core]]"
+        "[[dbt Core]]",
+        "[[Airbyte]]",
+        "[[Debezium]]",
+        "[[Apache NiFi]]"
       ],
       "maturite": "production"
     },
@@ -6121,58 +6168,6 @@
       ],
       "complements": [],
       "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Beats.md",
-      "nom": "Beats",
-      "alias": [
-        "beats",
-        "elastic beats",
-        "filebeat",
-        "metricbeat"
-      ],
-      "role": "brique",
-      "categorie": "data/ingestion",
-      "famille": "cli",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash.",
-      "tags": [
-        "logging",
-        "data-pipeline"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[Elasticsearch]]",
-        "[[Logstash]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Change Data Capture (CDC).md",
-      "nom": "Change Data Capture (CDC)",
-      "alias": [
-        "CDC",
-        "change data capture",
-        "capture de changements",
-        "log-based replication"
-      ],
-      "role": "notion",
-      "categorie": "data/ingestion",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "cdc",
-        "streaming",
-        "data-pipeline"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
     },
     {
       "path": "Data & pipelines/Comparatif - Outils EDA - profiling.md",
@@ -6766,11 +6761,246 @@
         "distributed"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[Debezium]]"
+      ],
       "maturite": "production"
     },
     {
-      "path": "Data & pipelines/Logstash.md",
+      "path": "Data & pipelines/Ingestion de données/Airbyte.md",
+      "nom": "Airbyte",
+      "alias": [
+        "airbyte",
+        "Airbyte Core",
+        "Airbyte Open Source",
+        "abctl"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "plateforme",
+      "langage": "Java, Kotlin, Python",
+      "domaines": null,
+      "pitch": "Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes.",
+      "tags": [
+        "data-ingestion",
+        "data-pipeline",
+        "cdc",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[dlt]]",
+        "[[Apache NiFi]]",
+        "[[Debezium]]"
+      ],
+      "complements": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Kestra]]",
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[Microsoft SQL Server]]",
+        "[[MongoDB]]",
+        "[[ClickHouse]]",
+        "[[DuckDB]]",
+        "[[Apache Iceberg]]",
+        "[[Parquet]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Apache NiFi.md",
+      "nom": "Apache NiFi",
+      "alias": [
+        "NiFi",
+        "MiNiFi"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker.",
+      "tags": [
+        "data-ingestion",
+        "data-pipeline",
+        "low-code",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Airbyte]]",
+        "[[dlt]]",
+        "[[Logstash]]"
+      ],
+      "complements": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[Apache Iceberg]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Beats.md",
+      "nom": "Beats",
+      "alias": [
+        "beats",
+        "elastic beats",
+        "filebeat",
+        "metricbeat"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash.",
+      "tags": [
+        "logging",
+        "data-pipeline"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Elasticsearch]]",
+        "[[Logstash]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Change Data Capture (CDC).md",
+      "nom": "Change Data Capture (CDC)",
+      "alias": [
+        "CDC",
+        "change data capture",
+        "capture de changements",
+        "log-based replication"
+      ],
+      "role": "notion",
+      "categorie": "data/ingestion",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "cdc",
+        "streaming",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Comparatif - Ingestion de données.md",
+      "nom": "Comparatif - Ingestion de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/ingestion",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-ingestion",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Debezium.md",
+      "nom": "Debezium",
+      "alias": [
+        "debezium",
+        "Debezium Server",
+        "Debezium Engine"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0).",
+      "tags": [
+        "data-ingestion",
+        "cdc",
+        "streaming",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Airbyte]]"
+      ],
+      "complements": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[MariaDB]]",
+        "[[Microsoft SQL Server]]",
+        "[[MongoDB]]",
+        "[[Apache Iceberg]]",
+        "[[Flink]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Ingestion de données.md",
+      "nom": "Ingestion de données",
+      "alias": [
+        "ingestion",
+        "extract-load",
+        "EL"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Amener la donnée d'une source — base, API, fichier, journal — jusqu'à sa destination, sans la remodeler, et savoir la recharger sans tout relire.",
+      "tags": [
+        "data-ingestion",
+        "data-pipeline",
+        "cdc",
+        "logging"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Ingestion incrémentale et curseurs.md",
+      "nom": "Ingestion incrémentale et curseurs",
+      "alias": [
+        "ingestion incrémentale",
+        "incremental load",
+        "curseur",
+        "cursor",
+        "watermark",
+        "high-water mark",
+        "full refresh",
+        "attribution window",
+        "backfill incrémental"
+      ],
+      "role": "notion",
+      "categorie": "data/ingestion",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-ingestion",
+        "data-pipeline",
+        "idempotence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/Logstash.md",
       "nom": "Logstash",
       "alias": [
         "logstash",
@@ -6786,10 +7016,73 @@
         "logging",
         "data-pipeline"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Apache NiFi]]"
+      ],
       "complements": [
         "[[Elasticsearch]]",
         "[[Beats]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/connectorx.md",
+      "nom": "connectorx",
+      "alias": [
+        "connector-x",
+        "connectorx"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "paquet",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.",
+      "tags": [
+        "dataframe",
+        "columnar"
+      ],
+      "alternatives": [
+        "[[ADBC]]"
+      ],
+      "complements": [
+        "[[Polars]]",
+        "[[dlt]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Ingestion de données/dlt.md",
+      "nom": "dlt",
+      "alias": [
+        "dlt",
+        "data load tool",
+        "dlt-hub"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0).",
+      "tags": [
+        "data-ingestion",
+        "data-pipeline",
+        "schema-evolution"
+      ],
+      "alternatives": [
+        "[[Airbyte]]",
+        "[[Apache NiFi]]"
+      ],
+      "complements": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Kestra]]",
+        "[[connectorx]]",
+        "[[Postgres]]",
+        "[[DuckDB]]",
+        "[[ClickHouse]]",
+        "[[Parquet]]"
       ],
       "maturite": "production"
     },
@@ -6845,7 +7138,9 @@
         "[[Keycloak]]",
         "[[Authentik]]",
         "[[dbt Core]]",
-        "[[Great Expectations]]"
+        "[[Great Expectations]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -6894,7 +7189,9 @@
       ],
       "complements": [
         "[[dbt Core]]",
-        "[[pandera]]"
+        "[[pandera]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -6924,7 +7221,9 @@
       ],
       "complements": [
         "[[dbt Core]]",
-        "[[SQLMesh]]"
+        "[[SQLMesh]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -7060,7 +7359,9 @@
         "[[Avro]]"
       ],
       "complements": [
-        "[[dbt Core]]"
+        "[[dbt Core]]",
+        "[[Airbyte]]",
+        "[[dlt]]"
       ],
       "maturite": "production"
     },
@@ -8253,31 +8554,6 @@
         "[[matplotlib]]"
       ],
       "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/connectorx.md",
-      "nom": "connectorx",
-      "alias": [
-        "connector-x",
-        "connectorx"
-      ],
-      "role": "brique",
-      "categorie": "data/ingestion",
-      "famille": "paquet",
-      "langage": "Rust",
-      "domaines": null,
-      "pitch": "Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination.",
-      "tags": [
-        "dataframe",
-        "columnar"
-      ],
-      "alternatives": [
-        "[[ADBC]]"
-      ],
-      "complements": [
-        "[[Polars]]"
-      ],
       "maturite": "production"
     },
     {
