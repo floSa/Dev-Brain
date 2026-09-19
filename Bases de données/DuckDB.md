@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ClickHouse]]", "[[Snowflake]]"]
-complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]"]
+complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb
@@ -65,6 +65,8 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dbt-duckdb` (1.11.0, 2026-08-07) lit des fichiers CSV, Parquet et JSON et en écrit par la matérialisation `external` ; adaptateur intégré et en disponibilité générale dans dbt v2, dont le pilote embarqué ne charge pas d'extensions.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge, à utilisateur unique et recommandé pour le développement seulement ; c'est aussi le moteur des tests unitaires par défaut, et la documentation le déconseille comme base d'état en production.
 - [[Soda Core]] — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud. — un DataFrame pandas ou Polars est enregistré dans un DuckDB en mémoire, puis le contrat est vérifié sur cette vue (paquet `soda-duckdb`).
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination communautaire en bêta (`destination-duckdb` 0.6.0).
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination locale, la plus simple pour essayer un pipeline.
 
 ## Ressources
 
