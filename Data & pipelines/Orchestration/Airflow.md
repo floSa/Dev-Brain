@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]"]
+complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]", "[[Airbyte]]", "[[dlt]]"]
 tags: [orchestration, data-pipeline, scheduler]
 url_docs: https://airflow.apache.org/docs/
 url_repo: https://github.com/apache/airflow
@@ -72,6 +72,8 @@ ajoute l'Edge Executor pour l'exécution distante.
 - [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — fournisseur `authentik` de la liste OAuth du provider FAB.
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — le paquet distinct `astronomer-cosmos` (Apache-2.0, 1.15.1 du 2026-08-04) rend un projet dbt en DAG ou en groupe de tâches Airflow, une tâche par modèle, avec reprises et tests lancés juste après chaque modèle ; Airflow 2.9 à 3.3 et dbt Core 1.8 à 1.12 d'après la politique de compatibilité de la branche principale.
 - [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — provider officiel `airflow-provider-great-expectations` (1.0.0, 2026-01-28, Apache-2.0, maintenu par Astronomer avec GX) : trois opérateurs, pour un DataFrame pandas ou Spark en mémoire, pour des données externes par une Batch Definition, et pour un Checkpoint.
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — le fournisseur `apache-airflow-providers-airbyte` (6.1.0, 2026-09-29) déclenche et surveille les synchronisations Airbyte.
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — `PipelineTasksGroup` transforme un pipeline dlt en groupe de tâches (modes sérialisé, parallèle, parallèle isolé).
 
 ## Ressources
 
