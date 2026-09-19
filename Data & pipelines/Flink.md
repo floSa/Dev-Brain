@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: []
-complements: ["[[Debezium]]"]
+complements: ["[[Debezium]]", "[[Kafka]]"]
 tags: [streaming, distributed]
 url_docs: https://nightlies.apache.org/flink/flink-docs-stable/
 url_repo: https://github.com/apache/flink
@@ -38,12 +38,25 @@ batch, exposé à trois niveaux — DataStream (bas niveau), Table API et SQL (d
 PyFlink (Python). La version 2.0, sortie en mars 2025, désagrège la gestion d'état sur
 système de fichiers distribué.
 
+Relevé le 2026-09-30 : **2.3.0** du 2026-06-25 (opérateurs SQL `FROM_CHANGELOG` et `TO_CHANGELOG`,
+contrôle des rafraîchissements de tables matérialisées, sélection adaptative de partitions contre
+la contre-pression, système de fichiers S3 natif expérimental), Apache-2.0, environ 26 400
+étoiles. La politique de support de la page de téléchargements : la version mineure courante et la
+précédente reçoivent les correctifs critiques, et la précédente une dernière version corrective à
+la sortie d'une nouvelle mineure.
+
+**Intégration Kafka** : le connecteur officiel (`flink-connector-kafka`, 5.0.0 du 2026-06-02) cible
+Flink 2.1 et 2.2 ; la documentation de la version stable dit qu'il n'existe pas encore de
+connecteur pour Flink 2.3. La source valide ses offsets à la fin de chaque checkpoint, à titre de
+suivi seulement : la reprise repose sur l'état du checkpoint. Le sink offre `NONE`, `AT_LEAST_ONCE`
+et `EXACTLY_ONCE` (transactions Kafka, lisibles sans doublon par un consommateur `read_committed`).
+
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
 |---|---|
 | Pipelines temps réel à faible latence : détection de fraude, alerting, ETL et analytique en flux, CEP | DAGs batch planifiés et leur lignage → [[Airflow]] ou [[Dagster]], qui sont des orchestrateurs, pas des moteurs de flux |
-| Gros traitements stateful en flux — fenêtres, jointures, agrégations — avec exactly-once | Transformations légères couplées à Kafka seul : Kafka Streams, hors brain, s'opère plus simplement |
+| Gros traitements stateful en flux — fenêtres, jointures, agrégations — avec exactly-once | Transformations légères couplées à Kafka seul : Kafka Streams, livré avec [[Kafka]], s'opère plus simplement |
 | Justesse en event-time sur des flux désordonnés ou avec données tardives | Analytique batch sur fichiers → [[Spark]] ou [[DuckDB]] |
 | SQL continu sur des flux (Table API, Flink SQL) | Petite échelle sans besoin temps réel : le moteur est surdimensionné, et son exploitation est le vrai coût |
 | | L'état est le point dur : tuning RocksDB, backpressure, taille et fréquence des checkpoints |
@@ -61,11 +74,12 @@ système de fichiers distribué.
 
 ### Alternatives
 
-- Aucun autre moteur de flux dans le brain. Concurrents directs hors brain : **Spark Structured Streaming** (micro-batch, écosystème Spark) et **Kafka Streams** (bibliothèque, couplée à Kafka).
+- Aucun autre moteur de flux dans le brain. Concurrents directs hors brain : **Spark Structured Streaming** (micro-batch, écosystème Spark) et **Kafka Streams** (bibliothèque livrée avec [[Kafka]], couplée à lui).
 
 ### Compléments
 
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — les connecteurs Flink CDC de Ververica figurent parmi les intégrations de la page des utilisateurs de Debezium.
+- [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — source et sink Kafka par le connecteur officiel (5.0.0 pour Flink 2.1 et 2.2, pas encore pour 2.3) ; le sink écrit en exactly-once par les transactions Kafka.
 
 ## Ressources
 
