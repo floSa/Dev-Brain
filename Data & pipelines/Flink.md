@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: []
-complements: ["[[Debezium]]", "[[Kafka]]"]
+complements: ["[[Debezium]]", "[[Kafka]]", "[[OpenLineage]]"]
 tags: [streaming, distributed]
 url_docs: https://nightlies.apache.org/flink/flink-docs-stable/
 url_repo: https://github.com/apache/flink
@@ -80,6 +80,7 @@ et `EXACTLY_ONCE` (transactions Kafka, lisibles sans doublon par un consommateur
 
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — les connecteurs Flink CDC de Ververica figurent parmi les intégrations de la page des utilisateurs de Debezium.
 - [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — source et sink Kafka par le connecteur officiel (5.0.0 pour Flink 2.1 et 2.2, pas encore pour 2.3) ; le sink écrit en exactly-once par les transactions Kafka.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — deux implémentations : Flink 1.x par `JobListener`, avec modification du code et sans Flink SQL ; Flink 2.x par les interfaces natives (FLIP-314), sans modifier le code, avec Flink SQL.
 
 ## Ressources
 

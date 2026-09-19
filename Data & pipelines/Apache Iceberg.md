@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: []
-complements: ["[[dbt Core]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]"]
+complements: ["[[dbt Core]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]", "[[DataHub]]"]
 tags: [lakehouse, olap, schema-evolution]
 url_docs: https://iceberg.apache.org/docs/latest/
 url_repo: https://github.com/apache/iceberg
@@ -67,6 +67,7 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination « S3 Data Lake », certifiée mais en alpha.
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — cible par le puits communautaire de Debezium Server ; Apache Iceberg figure aussi parmi les intégrations de la page des utilisateurs de Debezium.
 - [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — destination par le processeur `PutIcebergRecord`.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée sur la page des intégrations, en bêta.
 
 ## Ressources
 
