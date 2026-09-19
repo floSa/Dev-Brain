@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 109 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 110 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (109 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (110 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -190,7 +190,7 @@ llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz, fiabilite, transformation, messagerie}
+      synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -330,6 +330,16 @@ valeurs disparues et ne sont pas reconduites.
   `data/ingestion` (Debezium *produit* un flux depuis une base, il ne le transporte pas) et de
   `database/cle-valeur` (Redis sert aussi de file, mais son sujet est le stockage). Les
   protocoles industriels de capteurs (MQTT, OPC UA) ne sont pas ici : ils forment un bloc à part.
+- `data/catalogue` — **ouvert au lot « catalogue et lignage » (2026-09-30), sur arbitrage de
+  floSa** : aucune valeur ne rangeait un catalogue de métadonnées ni un outil de lignage.
+  **Découvrir, documenter et tracer l'origine des jeux de données** : catalogues de métadonnées
+  techniques, métier et opérationnelles (propriétaires, glossaire, classification), et la
+  collecte du lignage — spécification d'événements comme OpenLineage, magasins qui les reçoivent.
+  Distinct de `data/fiabilite` (ce qui rend une donnée digne de confiance : contrats, qualité,
+  versionnage — un catalogue *affiche* un résultat de test, il ne le produit pas), de
+  `data/orchestration` (l'outil qui exécute le graphe et *émet* les événements de lignage), de
+  `data/transformation` (dbt et SQLMesh calculent leur propre graphe de modèles) et de
+  `ml/plateforme` (le catalogue d'une plateforme intégrée, D-R9).
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et

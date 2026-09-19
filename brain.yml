@@ -958,6 +958,26 @@ axes:
               transporte pas) et de database/cle-valeur (Redis sert aussi de
               file, mais son sujet est le stockage). Les protocoles industriels
               de capteurs (MQTT, OPC UA) forment un bloc a part.
+          catalogue:
+            libelle: "Catalogue et lignage"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur ne
+              rangeait un catalogue de donnees ni un outil de lignage.
+              data/fiabilite decrit la confiance qu'on peut avoir en une donnee,
+              pas la connaissance de son existence et de son origine. Libelle
+              choisi par floSa, sans collision avec le nom de la notion « Catalogue
+              de donnees et lignage » ; il ne sert que si le seuil de promotion
+              est franchi.
+            frontiere: >
+              DECOUVRIR, documenter et tracer l origine des jeux de donnees :
+              catalogues de metadonnees (techniques, metier, operationnelles ;
+              proprietaires, glossaire, classification) et collecte de lignage
+              (specification d evenements, magasin qui les recoit). Distinct de
+              data/fiabilite (contrats, qualite, versionnage : ce qui rend la
+              donnee digne de confiance), de data/orchestration (l outil qui
+              execute le graphe et emet les evenements), de data/transformation
+              (dbt et SQLMesh calculent leur propre graphe de modeles) et de
+              ml/plateforme (le catalogue d une plateforme integree, D-R9).
 
       - cle: devtools
         dossier: "Outils de développement"
