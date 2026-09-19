@@ -68,7 +68,6 @@ versions.
   - le fichier `COMMUNITY_SUPPORT.md` du dépôt dit que seule la dernière série mineure reçoit des correctifs pour les non-payants, hors failles critiques, et que l'équipe « n'a aucune obligation de répondre » ;
   - une série ne reçoit donc que **quelques mois** de correctifs communautaires : 4.3 du 2026-04-23 au 2026-11-30, 4.2 close depuis le 2026-07-31. Les binaires et images de la série courante restent publics.
 - **Fonctions payantes** (Tanzu RabbitMQ, produit distinct) : support étendu, FIPS 140-2 pour TLS, réplication *warm standby* vers un cluster distant, *shovels* distribués, AMQP 1.0 sur WebSocket, compression intra-cluster, audit sur Kubernetes, « Stream Browser » dans l'interface.
-- **Images Bitnami** : le catalogue public de Bitnami (Broadcom) a quitté Docker Hub le 2025-09-29, ses tags versionnés étant déplacés vers `bitnamilegacy` sans mise à jour ; l'annonce ne cite pas RabbitMQ. Préférer l'image officielle.
 
 ## Limites à connaître
 
@@ -76,7 +75,6 @@ versions.
 - **Quorum queues : des restrictions** — pas de files non durables ni exclusives, pas de QoS global (donc pas d'autoscale de workers [[Celery]] avec elles), limite de redélivrance à 20 par défaut, priorités disponibles seulement depuis la 4.3. Leur file de lettres mortes offre l'*au moins une fois*, ce que les autres types de files n'offrent pas.
 - **La persistance se demande** : publier vers une file durable ne rend pas le message persistant, il faut marquer le message.
 - **Les streams ne sont pas Kafka** : une stream est unitaire (le partitionnement passe par les super streams), et le protocole binaire dédié est recommandé pour les performances. La page de comparaison de la doc vient de l'équipe RabbitMQ et le dit : « commencer avec RabbitMQ, ajouter Kafka pour la compaction de log, le stockage hiérarchisé ou Kafka Streams ».
-- **pika ralentit** : trois ans sans version entre 2023 et 2026 ; **aio-pika** dépend d'une seule personne.
 
 ## Écosystème
 
@@ -105,3 +103,5 @@ versions.
 ## Voir aussi
 
 - [[Messagerie]] — le hub du dossier
+- [[Comparatif - Brokers de messages]] — ce qui départage Kafka, Redpanda, NATS et RabbitMQ, et la vue à part de Celery
+- [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison, idempotence

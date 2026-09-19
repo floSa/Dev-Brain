@@ -94,3 +94,5 @@ branche `dev` lu au 2026-08-20. Console 3.12.0 (2026-09-16), Redpanda Connect 4.
 ## Voir aussi
 
 - [[Messagerie]] — le hub du dossier
+- [[Comparatif - Brokers de messages]] — ce qui départage Kafka, Redpanda, NATS et RabbitMQ, et la vue à part de Celery
+- [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison, idempotence
