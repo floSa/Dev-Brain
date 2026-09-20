@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Airbyte]]", "[[dlt]]", "[[Logstash]]"]
-complements: ["[[Postgres]]", "[[MySQL]]", "[[Apache Iceberg]]"]
+complements: ["[[Postgres]]", "[[MySQL]]", "[[Apache Iceberg]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [data-ingestion, data-pipeline, low-code, self-hosted]
 url_docs: https://nifi.apache.org/nifi-docs/
 url_repo: https://github.com/apache/nifi
@@ -85,6 +85,8 @@ depuis le 2024-12-08 (1.28.1 est la dernière).
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — lu et écrit par les processeurs JDBC (`ExecuteSQL`, `QueryDatabaseTable`, `PutDatabaseRecord`).
 - [[MySQL]] — SGBD relationnel open-source ultra-répandu, simple et éprouvé pour le web. — seule base dont le journal est lu par un processeur CDC (`CaptureChangeMySQL`).
 - [[Apache Iceberg]] — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB). — destination par le processeur `PutIcebergRecord`.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — connecteur de pipeline listé.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée en GA.
 
 ## Ressources
 
