@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[OpenStack Swift]]", "[[Apache Ozone]]", "[[RustFS]]", "[[MinIO]]", "[[SeaweedFS]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
-complements: []
+complements: ["[[lakeFS]]", "[[DVC]]"]
 tags: [object-storage, s3-compatible]
 url_docs: https://docs.ceph.com/
 url_repo: https://github.com/ceph/ceph
@@ -68,6 +68,11 @@ fichier sur la même infra. Portée par la Ceph Foundation, longtemps chez Red H
 - [[Garage]] — Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
+
+### Compléments
+
+- [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — cité par la page d'architecture de lakeFS comme stockage S3-compatible, avec NetApp StorageGRID.
+- [[DVC]] — Versionnage de données et de modèles en ligne de commande, posé sur Git : des pointeurs `.dvc` dans le dépôt, le contenu dans un cache adressé par le hash et des remotes (S3 compatible, SSH, NAS), plus des pipelines reproductibles par `dvc repro` ; Apache-2.0, projet racheté par lakeFS en novembre 2025. — remote S3-compatible cité par la documentation de DVC.
 
 ## Ressources
 
