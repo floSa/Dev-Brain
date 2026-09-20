@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[k3s]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]"]
+complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://kubernetes.io/docs/
 url_repo: https://github.com/kubernetes/kubernetes
@@ -92,6 +92,8 @@ CNCF diplômé (graduated) le 2018-03-06.
 - [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — Cluster Operator officiel, développé par l'équipe RabbitMQ (MPL-2.0).
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — chart Helm, guide de déploiement sur site et orchestrateur d'ingestion natif (Jobs et CronJobs, GA depuis la 1.12).
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — deux charts Helm, `datahub-prerequisites` et `datahub`.
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — chart Helm documenté (une réplique, 1 Gio et 1 CPU demandés par défaut).
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — chart Helm documenté, avec PostgreSQL, Redis, ClickHouse en option et Nuclio ; stockage RWX requis sur plusieurs nœuds.
 
 ## Ressources
 
