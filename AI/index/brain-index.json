@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 912,
+  "count": 916,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -497,6 +497,8 @@
       "Data drift",
       "Evidently",
       "Monitoring de modèle en production",
+      "Monitoring de modèles",
+      "NannyML",
       "River"
     ],
     "confidence-interval": [
@@ -622,9 +624,13 @@
       "Soda Core"
     ],
     "data-drift": [
+      "Comparatif - Monitoring de modèles",
       "Data drift",
+      "Deepchecks",
       "Evidently",
-      "Monitoring de modèle en production"
+      "Monitoring de modèle en production",
+      "Monitoring de modèles",
+      "NannyML"
     ],
     "data-governance": [
       "Catalogue de données et lignage",
@@ -719,6 +725,7 @@
     "data-validation": [
       "Comparatif - Qualité de données",
       "Contrats de données & qualité",
+      "Deepchecks",
       "Fiabilité des données",
       "Great Expectations",
       "Instructor",
@@ -2092,15 +2099,19 @@
       "Classification metrics",
       "Clustering evaluation",
       "Comparatif - Explicabilité",
+      "Comparatif - Monitoring de modèles",
       "Compromis biais-variance",
       "Data leakage",
+      "Deepchecks",
       "Evidently",
       "Forecasting metrics",
       "Interprétabilité",
       "LLM benchmarks",
       "LLM eval metrics",
       "Machine Learning",
+      "Monitoring de modèles",
       "Métriques vision",
+      "NannyML",
       "Optimisation d'hyperparamètres",
       "Perplexity",
       "ROC-AUC / courbe PR",
@@ -2119,11 +2130,15 @@
       "timm"
     ],
     "model-monitoring": [
+      "Comparatif - Monitoring de modèles",
       "Data drift",
       "DataRobot",
+      "Deepchecks",
       "Evidently",
       "Machine Learning",
-      "Monitoring de modèle en production"
+      "Monitoring de modèle en production",
+      "Monitoring de modèles",
+      "NannyML"
     ],
     "model-registry": [
       "AWS SageMaker",
@@ -16819,33 +16834,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Data drift.md",
-      "nom": "Data drift",
-      "alias": [
-        "dérive de données",
-        "distribution shift",
-        "drift",
-        "dérive de distribution"
-      ],
-      "role": "notion",
-      "categorie": "ml/monitoring",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "mlops",
-        "data-sci"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-drift",
-        "concept-drift",
-        "model-monitoring"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Machine Learning/Embeddings & encodeurs/Choisir un modèle d'embedding.md",
       "nom": "Choisir un modèle d'embedding",
       "alias": [
@@ -17141,32 +17129,6 @@
         "[[Jina Reranker]]",
         "[[bge-m3]]",
         "[[Qwen3-Embedding]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Evidently.md",
-      "nom": "Evidently",
-      "alias": [
-        "evidently",
-        "evidently ai",
-        "evidentlyai"
-      ],
-      "role": "brique",
-      "categorie": "ml/monitoring",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.",
-      "tags": [
-        "model-monitoring",
-        "data-drift",
-        "concept-drift",
-        "model-evaluation"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[MLflow]]"
       ],
       "maturite": "production"
     },
@@ -17803,7 +17765,111 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Monitoring de modèle en production.md",
+      "path": "Machine Learning/Monitoring de modèles/Comparatif - Monitoring de modèles.md",
+      "nom": "Comparatif - Monitoring de modèles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/monitoring",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/Data drift.md",
+      "nom": "Data drift",
+      "alias": [
+        "dérive de données",
+        "distribution shift",
+        "drift",
+        "dérive de distribution"
+      ],
+      "role": "notion",
+      "categorie": "ml/monitoring",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-drift",
+        "concept-drift",
+        "model-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/Deepchecks.md",
+      "nom": "Deepchecks",
+      "alias": [
+        "deepchecks",
+        "deepchecks testing"
+      ],
+      "role": "brique",
+      "categorie": "ml/monitoring",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": [
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": "Bibliothèque Python de validation continue pour le ML — suites de checks sur données et modèles tabulaires, NLP et vision, avec conditions pass/fail rejouables en CI ; cœur AGPL-3.0, monitoring auto-hébergé limité à un modèle, évaluation de LLM et fonctions premium commerciales.",
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "model-evaluation",
+        "data-validation"
+      ],
+      "alternatives": [
+        "[[Evidently]]",
+        "[[NannyML]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/Evidently.md",
+      "nom": "Evidently",
+      "alias": [
+        "evidently",
+        "evidently ai",
+        "evidentlyai"
+      ],
+      "role": "brique",
+      "categorie": "ml/monitoring",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.",
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "concept-drift",
+        "model-evaluation"
+      ],
+      "alternatives": [
+        "[[NannyML]]",
+        "[[Deepchecks]]"
+      ],
+      "complements": [
+        "[[MLflow]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/Monitoring de modèle en production.md",
       "nom": "Monitoring de modèle en production",
       "alias": [
         "model monitoring",
@@ -17828,6 +17894,58 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/Monitoring de modèles.md",
+      "nom": "Monitoring de modèles",
+      "alias": [],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": "Savoir qu'un modèle déployé se dégrade avant que ses utilisateurs ne le disent — dérive, performance sans étiquettes, tests avant mise en production.",
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "concept-drift",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Monitoring de modèles/NannyML.md",
+      "nom": "NannyML",
+      "alias": [
+        "nannyml",
+        "nanny ml"
+      ],
+      "role": "brique",
+      "categorie": "ml/monitoring",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": [
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": "Bibliothèque Python open source d'estimation de performance sans vérité terrain (CBPE, DLE) et de détection de dérive univariée et multivariée sur données tabulaires — édition libre figée depuis juillet 2025, fonctions avancées réservées à NannyML Cloud.",
+      "tags": [
+        "model-monitoring",
+        "data-drift",
+        "concept-drift",
+        "model-evaluation"
+      ],
+      "alternatives": [
+        "[[Evidently]]",
+        "[[Deepchecks]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Machine Learning/NLP/BM25.md",

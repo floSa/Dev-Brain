@@ -83,6 +83,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Embeddings]]
 - [[Comparatif - Explicabilité]]
 - [[Comparatif - Forecasting]]
+- [[Comparatif - Monitoring de modèles]]
 - [[Comparatif - NLP]]
 - [[Comparatif - Optimisation d'hyperparamètres]]
 - [[Comparatif - Orchestrateurs ML]]
