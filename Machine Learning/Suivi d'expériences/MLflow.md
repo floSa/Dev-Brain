@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[Weights & Biases]]", "[[Neptune]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
-complements: ["[[Evidently]]", "[[Databricks]]"]
+complements: ["[[Evidently]]", "[[Databricks]]", "[[lakeFS]]", "[[DVC]]"]
 tags: [experiment-tracking, model-registry]
 url_docs: https://mlflow.org/docs/latest/
 url_repo: https://github.com/mlflow/mlflow
@@ -69,6 +69,8 @@ de modèles ouvert.
 
 - [[Evidently]] — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production. — le versant dérive et qualité des données, en aval du run suivi
 - [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la plateforme dont il est né, et qui en propose une édition managée intégrée à l'authentification et au catalogue.
+- [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — intégration officielle de lakeFS : le run journalise un jeu de données dont la source est `s3://dépôt/<commit>/…`, avec une branche par expérience.
+- [[DVC]] — Versionnage de données et de modèles en ligne de commande, posé sur Git : des pointeurs `.dvc` dans le dépôt, le contenu dans un cache adressé par le hash et des remotes (S3 compatible, SSH, NAS), plus des pipelines reproductibles par `dvc repro` ; Apache-2.0, projet racheté par lakeFS en novembre 2025. — aucune intégration native : l'identifiant du commit Git ou DVC se journalise comme paramètre du run, et un article d'AWS de 2026 en donne la recette.
 
 ## Ressources
 
