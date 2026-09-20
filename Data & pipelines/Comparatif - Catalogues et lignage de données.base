@@ -1,0 +1,22 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # rangees sous la meme categorie hors de la vue.
+    - role == "brique"
+    - categorie == "data/catalogue"
+views:
+  - type: table
+    name: Catalogues et lignage de données
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
