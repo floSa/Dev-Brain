@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[GLiNER]]", "[[NLTK]]"]
-complements: ["[[HuggingFace]]"]
+complements: ["[[HuggingFace]]", "[[Label Studio]]"]
 tags: [nlp, ner, sequence-labeling, tokenization]
 url_docs: https://spacy.io
 url_repo: https://github.com/explosion/spaCy
@@ -64,6 +64,7 @@ directement le compromis vitesse / précision.
 ### Compléments
 
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — le fine-tuning de transformeurs, complément plus que substitut, branché via `spacy-transformers`.
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemple officiel `spacy` pour pré-annoter des entités, et export au format spaCy.
 
 ## Ressources
 
