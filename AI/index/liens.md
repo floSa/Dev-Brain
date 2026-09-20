@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 907 pages actives.
+> 912 pages actives.
 
 ## Par page
 
@@ -96,9 +96,9 @@
 - liens entrants : [[Bases de données]], [[Comparatif - Bases NoSQL]], [[JanusGraph]], [[MongoDB]], [[Redis]]
 
 ### Apache Iceberg  ·  brique
-- tags : `lakehouse`, `olap`, `schema-evolution`
-- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[dbt Core]]
-- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[dbt Core]]
+- tags : `lakehouse`, `olap`, `schema-evolution`, `data-versioning`
+- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[dbt Core]]
+- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Delta Lake]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[dbt Core]], [[lakeFS]]
 
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
@@ -158,7 +158,7 @@
 ### Avro  ·  brique
 - tags : `file-format`, `serialization`, `schema-evolution`
 - liens sortants : [[Apache Iceberg]], [[Contrats de données & qualité]], [[Parquet]], [[Stream processing]]
-- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Parquet]]
+- liens entrants : [[Apache Iceberg]], [[Data & pipelines]], [[Formats de fichiers et de tables]], [[Parquet]]
 
 ### AWS S3  ·  brique
 - tags : `object-storage`
@@ -252,8 +252,8 @@
 
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[lakeFS]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[lakeFS]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
@@ -278,7 +278,7 @@
 ### ClearML  ·  brique
 - tags : `experiment-tracking`, `model-registry`, `orchestration`
 - liens sortants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[Suivi d'expériences]], [[Weights & Biases]]
-- liens entrants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
+- liens entrants : [[Aim]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Versionnage de données]], [[MLflow]], [[Neptune]], [[Suivi d'expériences]], [[Weights & Biases]]
 
 ### ClickHouse  ·  brique
 - tags : `columnar`, `olap`, `distributed`
@@ -445,6 +445,11 @@
 - liens sortants : [[Apprentissage profond]], [[Entraînement distribué]], [[HuggingFace]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
 - liens entrants : [[Apprentissage profond]], [[Axolotl]], [[Entraînement distribué]], [[LLaMA-Factory]], [[PyTorch]], [[PyTorch Lightning]], [[TRL]], [[accelerate]]
 
+### Delta Lake  ·  brique
+- tags : `lakehouse`, `file-format`, `schema-evolution`, `data-versioning`
+- liens sortants : [[Apache Iceberg]], [[Comparatif - Versionnage de données]], [[DVC]], [[DuckDB]], [[Flink]], [[Formats de fichiers et de tables]], [[MinIO]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[Versionnage de données]], [[lakeFS]]
+- liens entrants : [[Apache Iceberg]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[MinIO]], [[Parquet]], [[Spark]], [[lakeFS]]
+
 ### Dependency-Track  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `self-hosted`
 - liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Supply chain logicielle et SBOM]], [[Trivy]]
@@ -502,8 +507,13 @@
 
 ### DuckDB  ·  brique
 - tags : `columnar`, `olap`, `embedded`
-- liens sortants : [[Airbyte]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Polars]], [[Postgres]], [[SQLMesh]], [[Snowflake]], [[Soda Core]], [[dbt Core]], [[dlt]], [[jupysql]], [[pandas]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Databricks]], [[Flink]], [[Notebooks]], [[Parquet]], [[Plateformes data & IA]], [[Polars]], [[Relationnel]], [[SQLMesh]], [[Snowflake]], [[Soda Core]], [[Spark]], [[connectorx]], [[dbt Core]], [[dlt]], [[jupysql]], [[pandas]]
+- liens sortants : [[Airbyte]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Delta Lake]], [[Polars]], [[Postgres]], [[SQLMesh]], [[Snowflake]], [[Soda Core]], [[dbt Core]], [[dlt]], [[jupysql]], [[pandas]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Bases de données]], [[Calcul distribué]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Databricks]], [[Delta Lake]], [[Flink]], [[Formats de fichiers et de tables]], [[Notebooks]], [[Parquet]], [[Plateformes data & IA]], [[Polars]], [[Relationnel]], [[SQLMesh]], [[Snowflake]], [[Soda Core]], [[Spark]], [[connectorx]], [[dbt Core]], [[dlt]], [[jupysql]], [[pandas]]
+
+### DVC  ·  brique
+- tags : `data-versioning`, `reproducibility`, `ml-pipeline`
+- liens sortants : [[Apache Iceberg]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Delta Lake]], [[Fiabilité des données]], [[MLflow]], [[MinIO]], [[Model registry & versioning]], [[Versionnage de données]], [[lakeFS]]
+- liens entrants : [[Ceph]], [[Comparatif - Versionnage de données]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[MLflow]], [[MinIO]], [[lakeFS]]
 
 ### dynaconf  ·  brique
 - tags : `config`
@@ -602,8 +612,8 @@
 
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
-- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Debezium]], [[DuckDB]], [[Kafka]], [[OpenLineage]], [[Spark]], [[Stream processing]]
-- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Data & pipelines]], [[Debezium]], [[Kafka]], [[Messagerie]], [[OpenLineage]], [[Orchestration]], [[Stream processing]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Kafka]], [[OpenLineage]], [[Spark]], [[Stream processing]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Data & pipelines]], [[Debezium]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[Kafka]], [[Messagerie]], [[OpenLineage]], [[Orchestration]], [[Stream processing]], [[Temporal]]
 
 ### Flowise  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
@@ -872,13 +882,18 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]], [[lakeFS]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]], [[lakeFS]]
 
 ### Label Studio  ·  brique
 - tags : `annotation`, `human-in-the-loop`, `self-hosted`, `computer-vision`, `ner`
 - liens sortants : [[Annotation de données]], [[CVAT]], [[Docker Compose]], [[GLiNER]], [[Kubernetes]], [[Machine Learning]], [[NER et étiquetage de séquence]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]], [[spaCy]]
 - liens entrants : [[Annotation de données]], [[CVAT]], [[Docker Compose]], [[GLiNER]], [[Kubernetes]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]], [[spaCy]]
+
+### lakeFS  ·  brique
+- tags : `data-versioning`, `reproducibility`, `object-storage`, `s3-compatible`, `self-hosted`
+- liens sortants : [[Apache Iceberg]], [[Ceph]], [[Comparatif - Versionnage de données]], [[DVC]], [[Delta Lake]], [[Fiabilité des données]], [[Kubernetes]], [[MLflow]], [[MinIO]], [[Postgres]], [[Spark]], [[Stockage objet et API S3]], [[Versionnage de données]]
+- liens entrants : [[Ceph]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[Kubernetes]], [[MLflow]], [[MinIO]], [[Postgres]], [[Spark]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1102,8 +1117,8 @@
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]], [[dlt]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[lakeFS]]
+- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]], [[dlt]], [[lakeFS]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
@@ -1112,8 +1127,8 @@
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
+- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[DVC]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]], [[lakeFS]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]], [[lakeFS]]
 
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
@@ -1367,8 +1382,8 @@
 
 ### Parquet  ·  brique
 - tags : `file-format`, `columnar`, `olap`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[Spark]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Partitionnement & layout de données]], [[Spark]], [[dbt Core]], [[dlt]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Delta Lake]], [[DuckDB]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[Spark]], [[dbt Core]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[Partitionnement & layout de données]], [[Spark]], [[dbt Core]], [[dlt]]
 
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
@@ -1452,8 +1467,8 @@
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
-- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CVAT]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Great Expectations]], [[Label Studio]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CVAT]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Great Expectations]], [[Label Studio]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1842,8 +1857,8 @@
 
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
-- liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[DuckDB]], [[Great Expectations]], [[OpenLineage]], [[Parquet]], [[Polars]], [[Ray]], [[SQLMesh]], [[dbt Core]], [[pandera]]
-- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Flink]], [[Great Expectations]], [[Hyperopt]], [[OpenLineage]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[dbt Core]], [[pandera]]
+- liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Delta Lake]], [[DuckDB]], [[Great Expectations]], [[OpenLineage]], [[Parquet]], [[Polars]], [[Ray]], [[SQLMesh]], [[dbt Core]], [[lakeFS]], [[pandera]]
+- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Delta Lake]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Hyperopt]], [[OpenLineage]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[dbt Core]], [[lakeFS]], [[pandera]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
@@ -2363,7 +2378,7 @@
 ### Comparatif - Orchestrateurs ML  ·  comparatif
 - tags : `orchestration`, `ml-pipeline`, `reproducibility`
 - liens sortants : [[Comparatif - Orchestrateurs ML.base]], [[Comparatifs]], [[Flyte]], [[Metaflow]], [[ZenML]]
-- liens entrants : [[Comparatif - Plateformes data & IA]], [[Comparatifs]], [[DataRobot]], [[Flyte]], [[Machine Learning]], [[Metaflow]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[ZenML]]
+- liens entrants : [[Comparatif - Plateformes data & IA]], [[Comparatif - Versionnage de données]], [[Comparatifs]], [[DataRobot]], [[Flyte]], [[Machine Learning]], [[Metaflow]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[ZenML]]
 
 ### Comparatif - Orchestration de conteneurs  ·  comparatif
 - tags : `container`
@@ -2460,6 +2475,11 @@
 - liens sortants : [[Airflow]], [[Comparatif - Transformation SQL.base]], [[Comparatifs]], [[Dagster]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Prefect]], [[SQLMesh]], [[dbt Core]]
 - liens entrants : [[Comparatif - Ingestion de données]], [[Comparatifs]], [[Data & pipelines]], [[Ingestion de données]], [[SQLMesh]], [[dbt Core]]
 
+### Comparatif - Versionnage de données  ·  comparatif
+- tags : `data-versioning`
+- liens sortants : [[Apache Iceberg]], [[ClearML]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Versionnage de données.base]], [[Comparatifs]], [[DVC]], [[Delta Lake]], [[Fiabilité des données]], [[MLflow]], [[Model registry & versioning]], [[Versionnage de données]], [[lakeFS]]
+- liens entrants : [[Apache Iceberg]], [[Comparatifs]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[lakeFS]]
+
 ### Comparatif - Visualisation  ·  comparatif
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `declarative-viz`
 - liens sortants : [[Comparatif - Visualisation.base]], [[Comparatifs]], [[Dash]], [[altair]], [[bokeh]], [[matplotlib]], [[plotly]], [[seaborn]]
@@ -2552,8 +2572,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers de messages]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers de messages]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers de messages]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers de messages]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -2562,7 +2582,7 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[DataFrames]], [[DataHub]], [[Debezium]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[DataFrames]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[lakeFS]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
 - liens entrants : [[AI Engineering]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[MLOps]], [[Machine Learning]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
 
 ### Data Engineering  ·  hub
@@ -2607,13 +2627,18 @@
 
 ### Fiabilité des données  ·  hub
 - tags : `data-quality`, `data-contract`, `idempotence`, `data-versioning`, `data-validation`
-- liens sortants : [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Orchestration]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
-- liens entrants : [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Great Expectations]], [[Ingestion de données]], [[Soda Core]], [[pandera]]
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[Delta Lake]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Orchestration]], [[Soda Core]], [[Versionnage de données]], [[lakeFS]], [[pandera]]
+- liens entrants : [[Comparatif - Qualité de données]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Ingestion de données]], [[Soda Core]], [[lakeFS]], [[pandera]]
 
 ### Fine-tuning  ·  hub
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `quantization`, `synthetic-data`
 - liens sortants : [[Axolotl]], [[Comparatif - Fine-tuning LLM]], [[GRPO]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[Prompt engineering]], [[RAG]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SFT]], [[Synthetic data generation]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[AI Engineering]], [[Apprentissage par renforcement]], [[Axolotl]], [[LLM & IA générative]], [[LLaMA-Factory]], [[Modèles de langage]], [[TRL]], [[Tunix]], [[Unsloth]]
+
+### Formats de fichiers et de tables  ·  hub
+- tags : `file-format`, `lakehouse`, `schema-evolution`, `data-versioning`, `columnar`
+- liens sortants : [[Apache Iceberg]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Delta Lake]], [[DuckDB]], [[Fiabilité des données]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[lakeFS]]
+- liens entrants : [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]]
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
@@ -3778,7 +3803,7 @@
 ### Model registry & versioning  ·  notion
 - tags : `model-registry`, `experiment-tracking`
 - liens sortants : [[Data drift]], [[Déploiement de modèles]], [[MLflow]], [[Monitoring de modèle en production]]
-- liens entrants : [[Déploiement de modèles]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[Comparatif - Versionnage de données]], [[DVC]], [[Déploiement de modèles]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
 
 ### Model-based RL  ·  notion
 - tags : `reinforcement-learning`, `model-based-rl`, `dynamic-programming`
@@ -3943,7 +3968,7 @@
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]]
-- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Modélisation dimensionnelle]], [[Parquet]], [[Stream processing]]
+- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[Modélisation dimensionnelle]], [[Parquet]], [[Stream processing]]
 
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -4283,7 +4308,7 @@
 ### Stockage objet et API S3  ·  notion
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[lakeFS]]
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
@@ -4453,7 +4478,7 @@
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
 - liens sortants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]]
-- liens entrants : [[Annotation de données]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]]
+- liens entrants : [[Annotation de données]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]], [[lakeFS]]
 
 ### Video generation  ·  notion
 - tags : `generative-model`, `video-generation`, `diffusion`, `multimodal`
@@ -4579,7 +4604,7 @@
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
-- `columnar` : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, LanceDB, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
+- `columnar` : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, Optimisation, Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
@@ -4608,7 +4633,7 @@
 - `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, OpenMetadata, SQLMesh, Soda Core, dbt Core, pandera, ydata-profiling
 - `data-transformation` : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core  — pas de page concept dédiée
 - `data-validation` : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera  — pas de page concept dédiée
-- `data-versioning` : Fiabilité des données, Versionnage de données
+- `data-versioning` : Apache Iceberg, Comparatif - Versionnage de données, DVC, Delta Lake, Fiabilité des données, Formats de fichiers et de tables, Versionnage de données, lakeFS
 - `dataframe` : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling  — pas de page concept dédiée
 - `dataviz` : Comparatif - Visualisation, Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
 - `db-client` : Comparatif - Clients de bases de données, DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin  — pas de page concept dédiée
@@ -4647,7 +4672,7 @@
 - `factor-analysis` : Analyse factorielle, CA, Comparatif - Outils stats, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence  — pas de page concept dédiée
 - `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Ingénierie des caractéristiques, Machine Learning, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Tabulaire, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
 - `feature-store` : Feast, Feature store — concept
-- `file-format` : Avro, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
+- `file-format` : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `file-transfer` : Réseau, croc  — pas de page concept dédiée
 - `fine-tuning` : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
 - `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
@@ -4687,7 +4712,7 @@
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
-- `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
+- `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
@@ -4723,7 +4748,7 @@
 - `mixed-precision` : Apprentissage profond, DeepSpeed, Mixed precision, accelerate
 - `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
 - `ml-demo` : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `ml-pipeline` : AWS SageMaker, Comparatif - Orchestrateurs ML, Dataiku, Flyte, Google Cloud Vertex AI, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
+- `ml-pipeline` : AWS SageMaker, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
 - `ml-platform` : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantization  — pas de page concept dédiée
@@ -4750,7 +4775,7 @@
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : CVAT, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
-- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3  — pas de page concept dédiée
+- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
@@ -4804,7 +4829,7 @@
 - `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
-- `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
+- `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill  — pas de page concept dédiée
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
@@ -4812,19 +4837,19 @@
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
-- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3
+- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS
 - `safety` : AI security, Guardrails, Jailbreaking and defenses  — pas de page concept dédiée
 - `sast` : Analyse de vulnérabilités, Semgrep, Sécurité  — pas de page concept dédiée
 - `sbom` : Analyse de vulnérabilités, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow, Comparatif - Orchestrateurs data  — pas de page concept dédiée
-- `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité, dlt  — pas de page concept dédiée
+- `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt  — pas de page concept dédiée
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4912,7 +4937,7 @@
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
-- `columnar` (porté par : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, LanceDB, Parquet, Polars, Snowflake, connectorx)
+- `columnar` (porté par : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, Parquet, Polars, Snowflake, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
@@ -4953,7 +4978,7 @@
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
 - `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
 - `factor-analysis` (porté par : Analyse factorielle, CA, Comparatif - Outils stats, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence)
-- `file-format` (porté par : Avro, Parquet, Partitionnement & layout de données)
+- `file-format` (porté par : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données)
 - `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
@@ -4974,7 +4999,7 @@
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s)
-- `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
+- `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
@@ -4999,7 +5024,7 @@
 - `metrics` (porté par : Beszel, Grafana, Métriques, logs et traces, Netdata, Observabilité, OpenTelemetry, Prometheus, VictoriaMetrics, Zabbix)
 - `missing-data` (porté par : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno)
 - `ml-demo` (porté par : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
-- `ml-pipeline` (porté par : AWS SageMaker, Comparatif - Orchestrateurs ML, Dataiku, Flyte, Google Cloud Vertex AI, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
+- `ml-pipeline` (porté par : AWS SageMaker, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
 - `ml-platform` (porté par : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Compromis biais-variance, Data leakage, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Métriques vision, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles)
@@ -5015,7 +5040,7 @@
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
-- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3)
+- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
 - `olap` (porté par : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake)
 - `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
@@ -5045,17 +5070,17 @@
 - `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
-- `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
+- `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `sast` (porté par : Analyse de vulnérabilités, Semgrep, Sécurité)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
-- `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité, dlt)
+- `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
-- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
+- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)

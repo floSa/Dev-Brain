@@ -52,6 +52,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Qualité de données]]
 - [[Comparatif - Scraping]]
 - [[Comparatif - Transformation SQL]]
+- [[Comparatif - Versionnage de données]]
 - [[Comparatif - Visualisation]]
 
 ### Design & diagrammes
