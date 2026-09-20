@@ -67,8 +67,7 @@ branche, est sortie plus tard, le 2026-09-25 ; la 1.8.0 est en versions candidat
 
 ## Limites à connaître
 
-- **Kafka partout** : il porte les événements de métadonnées (MCE, MAE) ; le retirer n'est pas un mode documenté.
-- **Trois lignes de version actives** en septembre 2026 avec de nombreuses versions candidates : lire la note de version avant de monter, le chemin passe par la 1.6.0.
+- **Kafka partout** : il porte les événements de métadonnées (MCE, MAE) ; le retirer n'est pas un mode documenté. **Trois lignes de version actives** en septembre 2026 : lire la note de version avant de monter, le chemin passe par la 1.6.0.
 - **OpenLineage par HTTP, avec réserves** : l'endpoint ne porte pas tout le `PathSpec` ; pour Spark et Airflow la doc recommande le plugin DataHub plutôt que le récepteur générique.
 - **Connecteurs de maturité inégale** : Apache Iceberg et Flink en bêta, Airbyte et SQLMesh en alpha, d'après la page des intégrations ; Kestra et Debezium n'y figurent pas.
 - **SSO** : OIDC par variables `AUTH_OIDC_*` ; la doc cite Okta, Google, Azure AD, Keycloak (ce dernier en lien de référence, sans guide dédié).
@@ -104,3 +103,4 @@ branche, est sortie plus tard, le 2026-09-25 ; la 1.8.0 est en versions candidat
 ## Voir aussi
 
 - [[Data & pipelines]] — le hub du dossier
+- [[Catalogue de données et lignage]] (la notion) et [[Comparatif - Catalogues et lignage de données]] (ce qui départage DataHub, OpenMetadata et OpenLineage)
