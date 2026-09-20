@@ -124,12 +124,16 @@ aperçoive.
 
 **Toute violation DURE se corrige, et on relance.** Ne pas clore tant que les deux ne sont
 pas verts. Les avertissements (`[WARN]`) ne bloquent pas : ils décrivent un passif connu et
-documenté (domaines sans comparatif, `.base` à filtre figé, collisions d'alias, couple
-brique↔notion manquant). Ne pas les corriger à la volée sous prétexte de faire baisser le
+documenté (voisinage déclaré R20, domaines sans comparatif ou `.base` à filtre figé R8, collisions
+d'alias R5, amont divergent, famille vide R14b, taille de fiche, anti-répétition R26, étiquette
+`Ressources` hors vocabulaire R23). Le couple brique↔notion n'en fait plus partie : R15 est dure. Ne pas les corriger à la volée sous prétexte de faire baisser le
 compteur — un avertissement se traite comme un sujet, pas comme un résidu.
 
 **En revanche, le compte d'avertissements ne doit pas augmenter.** Le relever avant d'écrire
-et le comparer après est le seul moyen de voir qu'une écriture a créé une dette souple :
+et le comparer après est le seul moyen de voir qu'une écriture a créé une dette souple. **Un compte
+ne s'annonce — message de commit, synthèse — que s'il a été mesuré sur l'état précédent** (jamais
+recopié d'un message antérieur ni d'un run filtré par `--regle`, dont la ligne finale ne vaut pas
+verdict) :
 
 ```bash
 uv run AI/scripts/check_brain.py 2>&1 | tail -1   # « OK — aucune violation dure. (N avertissement(s)) »
@@ -170,6 +174,11 @@ que de committer sans filet.
 
 D'office, sans demander — les deux validateurs verts et la divergence vérifiée sont les
 conditions, et elles suffisent.
+
+**Les fichiers de vocabulaire partent dans ce même commit** : si la capture a touché `brain.yml`,
+`Documentation/general/taxonomie.md` ou `Documentation/general/tags.md`, ils sont commités avec
+les pages qui s'en servent — jamais avant seuls, jamais après (cf. *Procédure — nouvelle valeur de
+catégorie* dans `enrichir-brain`). `git add -A` les prend déjà ; la règle interdit de les scinder.
 
 ```bash
 git add -A
