@@ -312,6 +312,11 @@ valeurs disparues et ne sont pas reconduites.
   et pas seulement les pages qui décrivent la garantie. Ce qui les sépare de
   `devtools/validation` : ils valident un **jeu de données** (colonnes, volumes, fraîcheur,
   règles métier), pas la forme d'un objet applicatif comme le fait Pydantic.
+  **Élargie le 2026-09-30 (conversation 14)** : la valeur range aussi les **outils de
+  versionnage** de jeux de données — DVC (des fichiers, à côté de Git) et lakeFS (un dépôt
+  d'objets, avec branches et commits). Le time travel d'un **format de table** (Delta Lake,
+  Apache Iceberg) reste `data/format` : l'état y est porté par le format lui-même, pas par
+  un outil posé de l'extérieur.
 - `data/transformation` — **ouvert au lot « transformation & qualité » (2026-09-30).**
   Dériver des tables à partir d'autres tables **par des modèles versionnés** — un `SELECT`
   par modèle, un graphe de dépendances, des matérialisations (vue, table, incrémental) et des
