@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python/C++
 alternatives: ["[[Ultralytics YOLO]]", "[[segment-anything]]"]
-complements: ["[[supervision]]"]
+complements: ["[[supervision]]", "[[CVAT]]"]
 tags: [object-detection, segmentation, computer-vision, deep-learning, gpu]
 url_docs: https://detectron2.readthedocs.io/
 url_repo: https://github.com/facebookresearch/detectron2
@@ -62,6 +62,7 @@ remplace sans réécrire le pipeline. Elle embarque des ops C++/CUDA custom, ce 
 ### Compléments
 
 - [[supervision]] — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application. — l'outillage qui exploite ses sorties en aval
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — fonction serverless `pytorch/facebookresearch/detectron2` dans le dépôt, pour la détection et la segmentation d'instances.
 
 ## Ressources
 
