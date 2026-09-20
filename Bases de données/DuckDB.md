@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ClickHouse]]", "[[Snowflake]]"]
-complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb
@@ -67,6 +67,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 - [[Soda Core]] — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud. — un DataFrame pandas ou Polars est enregistré dans un DuckDB en mémoire, puis le contrat est vérifié sur cette vue (paquet `soda-duckdb`).
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination communautaire en bêta (`destination-duckdb` 0.6.0).
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination locale, la plus simple pour essayer un pipeline.
+- [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — extension `delta` fondée sur `delta-kernel-rs` : lecture, et écriture limitée à des ajouts d'enregistrements.
 
 ## Ressources
 
