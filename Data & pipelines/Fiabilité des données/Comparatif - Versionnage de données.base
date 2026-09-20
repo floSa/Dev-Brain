@@ -1,0 +1,24 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # rangees sous la meme categorie hors de la vue. La vue filtre par TAG et non
+    # par categorie : les quatre membres se partagent deux valeurs
+    # (data/fiabilite pour DVC et lakeFS, data/format pour Delta Lake et Iceberg).
+    - role == "brique"
+    - tags.contains("data-versioning")
+views:
+  - type: table
+    name: Versionnage de données
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
