@@ -22,7 +22,7 @@ url_repo: https://github.com/apache/avro
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-08-23 |
+| Spécification Java | open-source | rien à exécuter | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
