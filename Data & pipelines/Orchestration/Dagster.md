@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Airflow]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: ["[[dbt Core]]", "[[pandera]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[dbt Core]]", "[[pandera]]", "[[Airbyte]]", "[[dlt]]", "[[OpenLineage]]"]
 tags: [orchestration, data-pipeline]
 url_docs: https://docs.dagster.io/
 url_repo: https://github.com/dagster-io/dagster
@@ -71,6 +71,7 @@ une documentation trouvée en ligne peut décrire une API qui n'existe plus.
 - [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — `dagster-pandera` (0.29.24, 2026-09-21, Apache-2.0, bêta) génère un type Dagster dont le contrôle appelle `validate()` ; pandas et Polars.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — `dagster-airbyte` (0.29.24, 2026-09-21) charge les connexions Airbyte comme assets.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — `dagster-dlt` (0.29.24, 2026-09-21) expose les ressources dlt comme assets.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — `dagster-openlineage` 0.2.1 (2026-05-22), maintenu par la communauté, Dagster 1.11.6 ou plus : deux modes, un wrapper du stockage d'événements dans `instance.yaml` ou un capteur `openlineage_sensor`, seul mode possible sur Dagster+ ; l'ancien `openlineage-dagster` reste bloqué sur Dagster 1.6.9 ou moins.
 
 ## Ressources
 
