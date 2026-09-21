@@ -997,8 +997,9 @@ axes:
               orchestrateur suit un graphe de taches ; une file execute un appel
               isole), de data/ingestion (Debezium produit un flux, il ne le
               transporte pas) et de database/cle-valeur (Redis sert aussi de
-              file, mais son sujet est le stockage). Les protocoles industriels
-              de capteurs (MQTT, OPC UA) forment un bloc a part.
+              file, mais son sujet est le stockage) et de data/industrie (un
+              broker dont le sujet est MQTT, une pile OPC UA : les protocoles
+              industriels de capteurs forment un bloc a part).
           catalogue:
             libelle: "Catalogue et lignage"
             motif: >
@@ -1019,6 +1020,29 @@ axes:
               execute le graphe et emet les evenements), de data/transformation
               (dbt et SQLMesh calculent leur propre graphe de modeles) et de
               ml/plateforme (le catalogue d une plateforme integree, D-R9).
+          industrie:
+            libelle: "Données industrielles"
+            motif: >
+              Ouvert le 2026-09-30 (conversation 16) sur arbitrage de floSa :
+              aucune valeur ne rangeait un broker MQTT, une pile OPC UA ni un outil
+              de flux d atelier, et la frontiere de data/messagerie ecrivait deja
+              que MQTT et OPC UA « forment un bloc a part ». Choisi contre un 21e
+              prefixe iot/* (un domaine racine entier pour cinq pages) et contre
+              l eclatement sur data/messagerie et data/ingestion (les piles OPC UA
+              ne sont pas de l ingestion). Libelle sans collision de nom de fichier.
+            frontiere: >
+              Amener la donnee de l ATELIER (capteurs, automates, machines) jusqu a
+              un systeme d information, par les protocoles de l atelier : brokers
+              dont le sujet est MQTT et Sparkplug B, piles et clients OPC UA,
+              passerelles et outils de flux d atelier (Node-RED, Telegraf en mode
+              passerelle). Distinct de data/messagerie (transporter des evenements
+              entre services : un broker generique qui parle MQTT par un plugin,
+              comme RabbitMQ ou NATS, y reste), de data/ingestion (outils generiques
+              de chargement : Airbyte, NiFi), de database/series-temporelles (la base
+              qui stocke le resultat), de network/* (ce qui circule entre machines,
+              sans modele de donnees) et de automation/* (Node-RED ici : D4 passe
+              avant D13, parce qu il deplace de la donnee machine et non des
+              applications SaaS).
 
       - cle: devtools
         dossier: "Outils de développement"

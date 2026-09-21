@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 111 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 112 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (111 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (112 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -190,7 +190,7 @@ llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue}
+      synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -334,7 +334,7 @@ valeurs disparues et ne sont pas reconduites.
   et en suit l'état ; une file de tâches exécute un appel isolé sans connaître le graphe), de
   `data/ingestion` (Debezium *produit* un flux depuis une base, il ne le transporte pas) et de
   `database/cle-valeur` (Redis sert aussi de file, mais son sujet est le stockage). Les
-  protocoles industriels de capteurs (MQTT, OPC UA) ne sont pas ici : ils forment un bloc à part.
+  protocoles industriels de capteurs (MQTT, OPC UA) ne sont pas ici : ils sont rangés en `data/industrie`.
 - `data/catalogue` — **ouvert au lot « catalogue et lignage » (2026-09-30), sur arbitrage de
   floSa** : aucune valeur ne rangeait un catalogue de métadonnées ni un outil de lignage.
   **Découvrir, documenter et tracer l'origine des jeux de données** : catalogues de métadonnées
@@ -345,6 +345,20 @@ valeurs disparues et ne sont pas reconduites.
   `data/orchestration` (l'outil qui exécute le graphe et *émet* les événements de lignage), de
   `data/transformation` (dbt et SQLMesh calculent leur propre graphe de modèles) et de
   `ml/plateforme` (le catalogue d'une plateforme intégrée, D-R9).
+- `data/industrie` — **ouvert au lot « données industrielles » (2026-09-30), sur arbitrage de
+  floSa** : aucune valeur ne rangeait un broker MQTT, une pile OPC UA ni un outil de flux
+  d'atelier, et la frontière de `data/messagerie` écrivait déjà que MQTT et OPC UA « forment un
+  bloc à part ». Choisi contre un 21e préfixe `iot/*` (un dossier racine entier pour cinq pages)
+  et contre l'éclatement sur `data/messagerie` et `data/ingestion` (une pile OPC UA n'est pas de
+  l'ingestion). **Amener la donnée de l'atelier** (capteurs, automates, machines) jusqu'à un
+  système d'information **par les protocoles de l'atelier** : brokers dont le sujet est MQTT et
+  Sparkplug B, piles et clients OPC UA, passerelles et outils de flux d'atelier (Node-RED, Telegraf
+  en passerelle). Distinct de `data/messagerie` (transporter des événements entre services : un
+  broker générique qui parle MQTT par un plugin, RabbitMQ ou NATS, y reste), de `data/ingestion`
+  (outils génériques de chargement : Airbyte, NiFi), de `database/series-temporelles` (la base qui
+  stocke le résultat), de `network/*` (ce qui circule entre machines, sans modèle de données) et
+  de `automation/*` (Node-RED est ici : D4 passe avant D13, il déplace de la donnée machine et non
+  des applications SaaS). Libellé du dossier : « Données industrielles ».
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
