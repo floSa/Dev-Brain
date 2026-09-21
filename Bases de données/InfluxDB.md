@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: single-node
 alternatives: ["[[TimescaleDB]]"]
-complements: []
+complements: ["[[EMQX]]"]
 tags: [timeseries]
 url_docs: https://docs.influxdata.com/
 url_repo: https://github.com/influxdata/influxdb
@@ -59,6 +59,10 @@ sur la pile Apache Arrow, DataFusion et Parquet.
 ### Alternatives
 
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
+
+### Compléments
+
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — intégration de données documentée d'EMQX vers InfluxDB, sans passerelle séparée.
 
 ## Ressources
 
