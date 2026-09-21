@@ -34,7 +34,7 @@ tags: [message-broker, task-queue]
 
 **Clients Python.** [[Kafka]] : `confluent-kafka` 2.15.1 (librdkafka), `kafka-python` 3.0.11, `aiokafka` 0.14.0. [[Redpanda]] : les mêmes, validés par l'éditeur. [[NATS]] : `nats-py` 2.16.0, asyncio. [[RabbitMQ]] : `pika` 1.4.4, `aio-pika` 10.1.0 (mainteneur individuel), `kombu`, et `rstream` pour les streams.
 
-**Protocoles industriels.** [[NATS]] parle MQTT 3.1.1 nativement (QoS 0, 1 et 2, JetStream requis) ; [[RabbitMQ]] parle MQTT 3.1, 3.1.1 et 5.0 par plugin ; [[Kafka]] et [[Redpanda]] ne parlent pas MQTT (Redpanda Connect a un composant qui lit un broker MQTT : c'est une passerelle). MQTT et OPC UA forment un bloc à part.
+**Protocoles industriels.** [[NATS]] parle MQTT 3.1.1 nativement (QoS 0, 1 et 2, JetStream requis) ; [[RabbitMQ]] parle MQTT 3.1, 3.1.1 et 5.0 par plugin, sans QoS 2 ni abonnements partagés ; [[Kafka]] et [[Redpanda]] ne parlent pas MQTT (Redpanda Connect a un composant qui lit un broker MQTT : c'est une passerelle). Pour un broker dont le sujet est MQTT, voir [[Comparatif - Brokers MQTT]] : MQTT et OPC UA forment un bloc à part.
 
 **Licence.** [[Kafka]] et [[NATS]] : Apache-2.0. [[RabbitMQ]] : MPL-2.0, copyright Broadcom. [[Redpanda]] : **BSL 1.1** pour le cœur — l'usage interne d'une entreprise n'est pas visé, mais offrir Redpanda comme service à des tiers est interdit, et une ESN qui héberge un cluster pour ses clients est un cas à faire valider — et licence commerciale pour les fonctions Enterprise, avec des montées de version majeure bloquées si elles sont actives sans licence.
 

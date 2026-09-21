@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Erlang
 scaling: distributed
-alternatives: ["[[Kafka]]", "[[Redpanda]]", "[[NATS]]"]
+alternatives: ["[[Kafka]]", "[[Redpanda]]", "[[NATS]]", "[[Mosquitto]]", "[[EMQX]]"]
 complements: ["[[Prometheus]]", "[[Grafana]]", "[[Kubernetes]]", "[[Debezium]]", "[[Kestra]]", "[[Celery]]"]
 tags: [message-broker, distributed, self-hosted]
 url_docs: https://www.rabbitmq.com/docs
@@ -75,6 +75,7 @@ versions.
 - **Quorum queues : des restrictions** — pas de files non durables ni exclusives, pas de QoS global (donc pas d'autoscale de workers [[Celery]] avec elles), limite de redélivrance à 20 par défaut, priorités disponibles seulement depuis la 4.3. Leur file de lettres mortes offre l'*au moins une fois*, ce que les autres types de files n'offrent pas.
 - **La persistance se demande** : publier vers une file durable ne rend pas le message persistant, il faut marquer le message.
 - **Les streams ne sont pas Kafka** : une stream est unitaire (le partitionnement passe par les super streams), et le protocole binaire dédié est recommandé pour les performances. La page de comparaison de la doc vient de l'équipe RabbitMQ et le dit : « commencer avec RabbitMQ, ajouter Kafka pour la compaction de log, le stockage hiérarchisé ou Kafka Streams ».
+- **MQTT par plugin, avec des bornes écrites** : MQTT 3.1, 3.1.1 et 5.0 (la 5.0 depuis la 3.13.0 du 2024-02-22, « avec limitations »), mais **QoS 2 non supporté**, **abonnements partagés non supportés**, et des messages retenus locaux à chaque nœud, donc non répliqués (en mémoire, ou sur disque dans la limite de 2 Go par hôte virtuel). Relevé dans la page `rabbitmq.com/docs/mqtt` le 2026-09-30. Un client MQTT 5 se connecte sans ces garanties : pour des capteurs, voir [[Comparatif - Brokers MQTT]].
 
 ## Écosystème
 
@@ -83,6 +84,8 @@ versions.
 - [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — le journal partitionné à grand débit, avec compaction et stockage hiérarchisé, quand le message est un fait à conserver plutôt qu'un travail à faire.
 - [[Redpanda]] — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale. — le protocole Kafka sans JVM, sous licence BSL.
 - [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF. — un binaire unique et un routage par sujets hiérarchiques plutôt que par exchanges et liaisons.
+- [[Mosquitto]] — Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse. — un broker dédié à MQTT, quand MQTT est l'usage principal plutôt qu'un plugin d'un broker de files.
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — un cluster MQTT natif avec intégrations de données, sous licence BSL, quand MQTT est l'usage principal.
 
 ### Compléments
 
