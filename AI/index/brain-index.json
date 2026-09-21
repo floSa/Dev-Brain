@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 918,
+  "count": 921,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -967,6 +967,7 @@
       "Dask",
       "Databricks",
       "Dgraph",
+      "EMQX",
       "Elasticsearch",
       "Flink",
       "Hyperopt",
@@ -1442,6 +1443,10 @@
       "Keycloak",
       "OAuth2 et OpenID Connect",
       "Sécurité"
+    ],
+    "iiot": [
+      "EMQX",
+      "Mosquitto"
     ],
     "image-classification": [
       "Classification d'images",
@@ -2009,9 +2014,12 @@
     ],
     "message-broker": [
       "Architecture pilotée par les événements",
+      "Comparatif - Brokers MQTT",
       "Comparatif - Brokers de messages",
+      "EMQX",
       "Kafka",
       "Messagerie",
+      "Mosquitto",
       "NATS",
       "RabbitMQ",
       "Redpanda"
@@ -2196,6 +2204,11 @@
       "Probabilités",
       "PyMC",
       "Stan"
+    ],
+    "mqtt": [
+      "Comparatif - Brokers MQTT",
+      "EMQX",
+      "Mosquitto"
     ],
     "multi-agent": [
       "Agents",
@@ -3063,6 +3076,7 @@
       "Dataiku",
       "Debezium",
       "Dependency-Track",
+      "EMQX",
       "Gestion des secrets",
       "HAProxy",
       "Infinity",
@@ -3072,6 +3086,7 @@
       "Kubernetes",
       "Label Studio",
       "Meilisearch",
+      "Mosquitto",
       "NATS",
       "Netdata",
       "Nginx",
@@ -4693,7 +4708,9 @@
       "alternatives": [
         "[[TimescaleDB]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[EMQX]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5563,7 +5580,8 @@
         "[[InfluxDB]]"
       ],
       "complements": [
-        "[[Postgres]]"
+        "[[Postgres]]",
+        "[[EMQX]]"
       ],
       "maturite": "production"
     },
@@ -6282,6 +6300,24 @@
       "maturite": null
     },
     {
+      "path": "Data & pipelines/Comparatif - Brokers MQTT.md",
+      "nom": "Comparatif - Brokers MQTT",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/industrie",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "mqtt",
+        "message-broker"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Comparatif - Catalogues et lignage de données.md",
       "nom": "Comparatif - Catalogues et lignage de données",
       "alias": null,
@@ -6613,6 +6649,42 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Data & pipelines/EMQX.md",
+      "nom": "EMQX",
+      "alias": [
+        "emqx",
+        "EMQX Enterprise",
+        "EMQX Broker",
+        "EMQ X"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "plateforme",
+      "langage": "Erlang",
+      "domaines": null,
+      "pitch": "Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale).",
+      "tags": [
+        "mqtt",
+        "message-broker",
+        "iiot",
+        "distributed",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Mosquitto]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]"
+      ],
+      "complements": [
+        "[[Prometheus]]",
+        "[[Kubernetes]]",
+        "[[Kafka]]",
+        "[[InfluxDB]]",
+        "[[TimescaleDB]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Faker.md",
@@ -7635,7 +7707,8 @@
         "[[Kestra]]",
         "[[OpenLineage]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[EMQX]]"
       ],
       "maturite": "production"
     },
@@ -7687,7 +7760,9 @@
       "alternatives": [
         "[[Kafka]]",
         "[[Redpanda]]",
-        "[[RabbitMQ]]"
+        "[[RabbitMQ]]",
+        "[[Mosquitto]]",
+        "[[EMQX]]"
       ],
       "complements": [
         "[[Prometheus]]",
@@ -7719,7 +7794,9 @@
       "alternatives": [
         "[[Kafka]]",
         "[[Redpanda]]",
-        "[[NATS]]"
+        "[[NATS]]",
+        "[[Mosquitto]]",
+        "[[EMQX]]"
       ],
       "complements": [
         "[[Prometheus]]",
@@ -7783,6 +7860,34 @@
       ],
       "alternatives": [
         "[[Faker]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Mosquitto.md",
+      "nom": "Mosquitto",
+      "alias": [
+        "mosquitto",
+        "Eclipse Mosquitto",
+        "mosquitto-broker"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "plateforme",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse.",
+      "tags": [
+        "mqtt",
+        "message-broker",
+        "iiot",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[EMQX]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9883,7 +9988,8 @@
         "[[Label Studio]]",
         "[[CVAT]]",
         "[[lakeFS]]",
-        "[[Kubeflow]]"
+        "[[Kubeflow]]",
+        "[[EMQX]]"
       ],
       "maturite": "production"
     },
@@ -24612,7 +24718,8 @@
         "[[HAProxy]]",
         "[[Redpanda]]",
         "[[NATS]]",
-        "[[RabbitMQ]]"
+        "[[RabbitMQ]]",
+        "[[EMQX]]"
       ],
       "maturite": "production"
     },
