@@ -754,9 +754,14 @@ axes:
               ingere (Tokenization), comment il choisit (Decoding strategies), ce
               qui se mesure sans tache applicative (Perplexity), ce que sa taille
               achete (Scaling laws), et les deux classes nees de ce compromis
-              (Small Language Models, Reasoning models). Distinct de llm/runtime
-              (qui le SERT), de llm/finetuning (qui l AJUSTE) et de llm/eval (qui
-              mesure une APPLICATION).
+              (Small Language Models, Reasoning models). Range aussi, depuis le
+              2026-09-30, les fiches des familles de modeles de langage a poids
+              ouverts (famille: modele — Qwen, Mistral, Gemma, gpt-oss) et la notion
+              de leurs licences : un modele generateur est ce qu il FAUT comprendre
+              avant de le servir. Distinct de ml/embeddings (un modele dont la sortie
+              est un VECTEUR : bge-m3, Qwen3-Embedding), de llm/runtime (qui le
+              SERT), de llm/finetuning (qui l AJUSTE) et de llm/eval (qui mesure une
+              APPLICATION).
           prompt:
             motif: "Ouvert au lot 4."
             frontiere: >
