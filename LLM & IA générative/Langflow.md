@@ -34,10 +34,12 @@ Constructeur **visuel low-code** d'applications agentiques et RAG : on relie des
 drag-and-drop**, sans écrire le code de plomberie. Chaque flux s'expose ensuite en
 **endpoint REST** ou s'**exporte en code Python**, ce qui évite l'effet boîte noire — même
 si une app de production gagne souvent à être réécrite proprement plutôt que générée.
-Backend Python, frontend TypeScript/React. Projet de la société Langflow, passée chez
-DataStax, rachetée par IBM en 2025 ; il reste ouvert et intégré à l'écosystème watsonx. Le
+Backend Python, frontend TypeScript/React. Projet de la société Langflow, rachetée par
+DataStax en 2024 ; IBM a annoncé le rachat de DataStax en février 2025 et dit continuer à le soutenir en open source. Il reste sous MIT et s'intègre à l'écosystème watsonx. Le
 visuel masque la complexité jusqu'à un certain point : au-delà, les flux deviennent
 illisibles et il faut basculer en code.
+
+Version **1.12.4** du 2026-09-29 (publication hebdomadaire), 155 398 étoiles le 2026-09-30. **Pas de SSO complet dans le dépôt MIT** : la 1.12 ajoute des « fondations SSO » et des points d'extension, les rôles de l'édition libre se limitent à administrateur et utilisateur, et la gestion des utilisateurs passe par l'API. **Pas d'isolation entre utilisateurs** dans un même processus, d'après la documentation de sécurité : le multi-tenant suppose une instance, un disque, un réseau et une base par client. La licence MIT permet à une ESN de déployer, rebrander et revendre. **Sécurité : le plus exposé du lot** — six CVE Langflow figurent au catalogue CISA des vulnérabilités exploitées (dont CVE-2026-33017, exécution de code sans authentification, et CVE-2026-55255, relevés en 2026) : épingler la version, ne jamais exposer l'instance sans authentification, et garder `LANGFLOW_AUTO_LOGIN=false`.
 
 ## Prendre si / Écarter si
 
@@ -61,7 +63,7 @@ illisibles et il faut basculer en code.
 ### Alternatives
 
 - [[Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.
-- [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
+- [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0 hors dossier enterprise, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; dépôt archivé depuis le 2026-08-13, sans correctifs à attendre.
 
 ## Ressources
 
