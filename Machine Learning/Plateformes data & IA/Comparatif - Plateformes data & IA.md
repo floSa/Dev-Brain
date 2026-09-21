@@ -9,7 +9,7 @@ tags: [ml-platform, data-governance, automl, low-code]
 
 > On tranche sur : **où tournent les données**, et **ce qu'on réécrit le jour où l'on part**.
 > Dans cet ordre, et pas dans l'autre. La contrainte d'hébergement élimine avant qu'on ait
-> parlé de fonctionnalités — trois de ces huit s'installent sur des serveurs qu'on possède,
+> parlé de fonctionnalités — quatre de ces neuf s'installent sur des serveurs qu'on possède,
 > les cinq autres exigent un compte chez un fournisseur. Le coût de sortie, lui, ne se voit
 > qu'au dixième projet : il se lit dans le format de stockage, dans la portabilité de la
 > logique métier, et dans le catalogue de droits qu'il faudra rebâtir ailleurs.
@@ -26,6 +26,7 @@ tags: [ml-platform, data-governance, automl, low-code]
 - [[Microsoft Azure Machine Learning]] — **le seul des trois clouds à faire tourner entraînement et inférence sur le matériel du client**, par une extension Azure Arc posée sur un Kubernetes déjà en place. Le plan de contrôle reste chez Microsoft et une connexion sortante est nécessaire : c'est un compromis, pas une souveraineté. C'est aussi le plus déclaratif des trois, pilotable en YAML versionné.
 - [[AWS SageMaker]] — la surface la plus large et la plus morcelée, réunie depuis 2025 sous une console commune avec les services data d'AWS. Sa descente sur site passe par des **baies AWS louées** et exploitées par AWS dans la salle machine : les données restent, le contrat et l'exploitation partent.
 - [[Google Cloud Vertex AI]] — l'accès direct aux modèles Gemini sous contrat d'entreprise est son argument propre. Sur site, il ne descend qu'**une partie** — un jeu restreint d'API pré-entraînées sur une appliance air-gapped. Point de vigilance qui n'est pas technique : le produit est en cours de rebaptême en Gemini Enterprise Agent Platform, et sa documentation bouge.
+- [[Kubeflow]] — le seul **open source** du lot, et le seul qui ne se commande pas : il s'assemble sur un cluster Kubernetes qu'on opère déjà (Istio, Knative, cert-manager et Dex font partie de l'installation) et se met à jour à la main. Il s'installe en entier ou composant par composant (Pipelines, Trainer, Katib). Ce qu'il coûte n'est pas une licence mais une équipe, et il n'a pas de recette visuelle à réécrire le jour où l'on part : les pipelines sont du Python, les ressources du YAML.
 
 ## Voir aussi
 
