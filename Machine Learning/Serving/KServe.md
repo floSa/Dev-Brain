@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[BentoML]]", "[[NVIDIA Triton]]", "[[Seldon Core]]", "[[TorchServe]]", "[[TensorFlow Serving]]", "[[Ray Serve]]"]
-complements: ["[[Kubernetes]]"]
+complements: ["[[Kubernetes]]", "[[Kubeflow]]"]
 tags: [model-serving, inference, kubernetes]
 url_docs: https://kserve.github.io/website/
 url_repo: https://github.com/kserve/kserve
@@ -71,6 +71,7 @@ le 2026-09-30 : v0.21.0 du 2026-09-25, 6 053 étoiles, Apache-2.0, commits quoti
 ### Compléments
 
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — l'environnement sur lequel il repose : un cluster est obligatoire.
+- [[Kubeflow]] — Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer. — le serving de sa distribution, dont KServe est sorti en 2022.
 
 ## Ressources
 
