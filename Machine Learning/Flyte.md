@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[ZenML]]", "[[Metaflow]]"]
+alternatives: ["[[ZenML]]", "[[Metaflow]]", "[[Kubeflow]]"]
 complements: []
 tags: [orchestration, ml-pipeline, kubernetes]
 url_docs: https://docs.flyte.org/
@@ -61,6 +61,7 @@ portée par Union.ai, et une migration vers **Flyte 2** est en cours.
 
 - [[ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
 - [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
+- [[Kubeflow]] — Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer.
 
 ## Ressources
 

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[ZenML]]", "[[Flyte]]"]
+alternatives: ["[[ZenML]]", "[[Flyte]]", "[[Kubeflow]]"]
 complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.metaflow.org/
@@ -62,6 +62,7 @@ managée.
 
 - [[ZenML]] — Framework MLOps open-source (Python) qui découple le code des pipelines de l'infrastructure : un même pipeline tourne en local puis sur n'importe quel backend (Kubernetes, Airflow, cloud) via des stacks composables ; orchestre les outils MLOps existants derrière une abstraction unique.
 - [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
+- [[Kubeflow]] — Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer.
 
 ## Ressources
 

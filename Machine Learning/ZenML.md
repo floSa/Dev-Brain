@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[Metaflow]]", "[[Flyte]]"]
+alternatives: ["[[Metaflow]]", "[[Flyte]]", "[[Kubeflow]]"]
 complements: []
 tags: [orchestration, ml-pipeline]
 url_docs: https://docs.zenml.io/
@@ -62,6 +62,7 @@ sauvegarder. Une édition managée, ZenML Pro, s'adresse aux équipes.
 
 - [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
 - [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
+- [[Kubeflow]] — Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer.
 
 ## Ressources
 
