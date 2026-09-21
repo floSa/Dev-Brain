@@ -23,7 +23,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - **Sans cible, la validation n'existe plus** : c'est ce qui rend le non-supervisé exigeant. [[Clustering]] pose le cadre, [[K-Means]] et [[k-médoïds (PAM)]] partitionnent, [[DBSCAN]] et [[Clustering hiérarchique par densité]] trouvent des formes quelconques et laissent du bruit dehors, [[Classification hiérarchique (CAH)]] produit un arbre plutôt qu'une partition, [[Gaussian Mixture Models (GMM)]] une affectation probabiliste. [[Clustering evaluation]] est la page à lire avant d'annoncer un résultat.
 - **Réduire la dimension sert à deux choses opposées** — visualiser, ou compresser avant un modèle — et les outils ne sont pas interchangeables. [[t-SNE and UMAP]] préservent le voisinage local et servent à voir, pas à alimenter un classifieur ; [[ICA]] sépare des sources, [[NMF]] impose la positivité et donne des parties additives. Les [[embeddings]] sont la version apprise du même problème.
 - **La détection d'anomalies est un problème de définition avant d'être un problème d'algorithme.** [[Détection d'outliers univariée]] et [[Détection d'outliers multivariée]] ne visent pas la même chose ; [[Isolation Forest]], [[Local Outlier Factor]] et [[One-Class SVM]] traduisent trois hypothèses différentes sur ce qu'« anormal » veut dire.
-- **Un modèle en production est un système, pas un fichier.** [[Déploiement de modèles]] et [[Model registry & versioning]] posent la traçabilité, [[Monitoring de modèle en production]] et [[Data drift]] la surveillance, outillée dans [[Monitoring de modèles]] — un modèle ne tombe pas en panne, il se dégrade en silence. [[Feature store — concept]] règle le décalage entre les features d'entraînement et celles servies à l'inférence. [[Explicabilité des modèles]] est ce qu'on doit au métier, [[Optimisation d'hyperparamètres]] ce qu'on doit au modèle.
+- **Un modèle en production est un système, pas un fichier.** [[Déploiement de modèles]] et [[Model registry & versioning]] posent la traçabilité, [[CI-CD pour le ML]] ce qui change dans le pipeline qui les enchaîne, [[Monitoring de modèle en production]] et [[Data drift]] la surveillance, outillée dans [[Monitoring de modèles]] — un modèle ne tombe pas en panne, il se dégrade en silence. [[Feature store — concept]] règle le décalage entre les features d'entraînement et celles servies à l'inférence. [[Explicabilité des modèles]] est ce qu'on doit au métier, [[Optimisation d'hyperparamètres]] ce qu'on doit au modèle.
 
 ## Choisir
 
@@ -56,6 +56,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 
 ### Notions
 - [[Annotation de données]] — domaines : data-sci, ml-eng
+- [[CI-CD pour le ML]] — domaines : mlops
 - [[Feature store — concept]] — domaines : mlops, data-eng
 - [[Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
 
