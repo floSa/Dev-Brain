@@ -11,7 +11,7 @@ maturite: production
 langage: Erlang
 scaling: distributed
 alternatives: ["[[Mosquitto]]", "[[NATS]]", "[[RabbitMQ]]"]
-complements: ["[[Prometheus]]", "[[Kubernetes]]", "[[Kafka]]", "[[InfluxDB]]", "[[TimescaleDB]]"]
+complements: ["[[Prometheus]]", "[[Kubernetes]]", "[[Kafka]]", "[[InfluxDB]]", "[[TimescaleDB]]", "[[Node-RED]]"]
 tags: [mqtt, message-broker, iiot, distributed, self-hosted]
 url_docs: https://docs.emqx.com/en/emqx/latest/
 url_repo: https://github.com/emqx/emqx
@@ -90,6 +90,7 @@ signe 82 des 100 derniers commits.
 - [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — pont Kafka intégré : les messages MQTT sont produits vers Kafka, ou consommés depuis Kafka.
 - [[InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles. — intégration de données documentée : les messages MQTT arrivent dans InfluxDB sans passerelle séparée.
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres. — intégration de données documentée vers Timescale.
+- [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — [[Node-RED]] lit et écrit EMQX comme n'importe quel broker MQTT.
 
 ## Ressources
 
@@ -99,6 +100,7 @@ signe 82 des 100 derniers commits.
 
 ## Voir aussi
 
-- [[Data & pipelines]] — le hub du domaine
+- [[Données industrielles]] — le hub du dossier
+- [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — la notion : MQTT, OPC UA, Modbus, Sparkplug B, sécurité d'un réseau d'atelier
 - [[Comparatif - Brokers MQTT]] — ce qui départage Mosquitto et EMQX, et les deux brokers écartés
 - [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison
