@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 931,
+  "count": 937,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -58,6 +58,7 @@
       "Agents",
       "Agents de code",
       "Agno",
+      "AnythingLLM",
       "Archify",
       "Architecture deep agent",
       "Assistants",
@@ -69,6 +70,7 @@
       "Comparatif - Automatisation no-code",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
+      "Comparatif - Plateformes LLM auto-hébergées",
       "Context engineering",
       "Continue",
       "CrewAI",
@@ -90,6 +92,7 @@
       "LangGraph",
       "Langflow",
       "Letta",
+      "LibreChat",
       "LlamaIndex",
       "Maka",
       "Modal",
@@ -320,7 +323,8 @@
     ],
     "chunking": [
       "Chunking strategies",
-      "RAG & retrieval"
+      "RAG & retrieval",
+      "RAGFlow"
     ],
     "ci-cd": [
       "Argo CD",
@@ -1025,6 +1029,7 @@
       "PaddleOCR",
       "Parsing",
       "PyMuPDF",
+      "RAGFlow",
       "Tesseract",
       "Unstructured",
       "docTR",
@@ -1690,6 +1695,7 @@
       "Agents",
       "Agno",
       "Aider",
+      "AnythingLLM",
       "Architecture deep agent",
       "AutoGen",
       "Axolotl",
@@ -1748,6 +1754,7 @@
       "Langflow",
       "Langfuse",
       "Letta",
+      "LibreChat",
       "Licences de modèles open weights",
       "LiteLLM",
       "LlamaIndex",
@@ -1760,6 +1767,7 @@
       "Multi-agent systems",
       "Ollama",
       "OmniRoute",
+      "Open WebUI",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
@@ -1778,7 +1786,9 @@
       "Query transformations",
       "Qwen",
       "RAG",
+      "RAG documentaire on-prem - clé en main ou assemblé",
       "RAGChecker",
+      "RAGFlow",
       "RL for LLMs",
       "RLHF and DPO",
       "Ragas",
@@ -1889,18 +1899,23 @@
       "Traefik"
     ],
     "local-llm": [
+      "AnythingLLM",
       "Assistants",
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Modèles de langage open weights",
+      "Comparatif - Plateformes LLM auto-hébergées",
       "Gemma",
       "LM Studio",
       "LM Studio Bionic",
+      "LibreChat",
       "Licences de modèles open weights",
       "Mistral",
       "Ollama",
+      "Open WebUI",
       "Pattern - Agent sur LLM auto-hébergé",
       "Prometheus-Eval",
       "Qwen",
+      "RAG documentaire on-prem - clé en main ou assemblé",
       "Runtimes",
       "Small Language Models",
       "Superwhisper",
@@ -1931,6 +1946,7 @@
       "Apache NiFi",
       "Automatisation no-code",
       "Comparatif - Automatisation no-code",
+      "Comparatif - Plateformes LLM auto-hébergées",
       "Comparatif - Plateformes data & IA",
       "Comparatif - Scraping",
       "Dataiku",
@@ -2000,6 +2016,7 @@
     "mcp": [
       "Activepieces",
       "Agents de code",
+      "AnythingLLM",
       "Assistants",
       "Claude Agent SDK",
       "Cline",
@@ -2011,6 +2028,7 @@
       "Hermes Agent",
       "LLM & IA générative",
       "LM Studio Bionic",
+      "LibreChat",
       "OpenClaw",
       "OpenViking",
       "PraisonAI",
@@ -2701,6 +2719,7 @@
     "rag": [
       "ARES",
       "Advanced RAG",
+      "AnythingLLM",
       "Bases de données vectorielles",
       "Chroma",
       "Chunking strategies",
@@ -2708,6 +2727,7 @@
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
       "Comparatif - Parsing de documents",
+      "Comparatif - Plateformes LLM auto-hébergées",
       "Comparatif - Rerankers",
       "DB-GPT",
       "Dify",
@@ -2722,12 +2742,14 @@
       "LangChain",
       "Langflow",
       "Late-interaction retrieval",
+      "LibreChat",
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LlamaParse",
       "Marker",
       "Milvus",
       "MinerU",
+      "Open WebUI",
       "OpenDataLoader PDF",
       "OpenViking",
       "Pattern - RAG structuré graphe + human-in-the-loop",
@@ -2737,8 +2759,10 @@
       "RAG",
       "RAG & retrieval",
       "RAG benchmarks",
+      "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
       "RAGChecker",
+      "RAGFlow",
       "RAGatouille",
       "Ragas",
       "Reranking",
@@ -2957,7 +2981,9 @@
       "RAG",
       "RAG & retrieval",
       "RAG benchmarks",
+      "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
+      "RAGFlow",
       "RAGatouille",
       "Recherche d'information",
       "Reranking",
@@ -3097,6 +3123,7 @@
       "Airbyte",
       "Alertmanager",
       "Annotation de données",
+      "AnythingLLM",
       "Apache NiFi",
       "Argo CD",
       "Authelia",
@@ -3107,6 +3134,7 @@
       "Caddy",
       "Choisir un modèle d'embedding",
       "Comparatif - Modèles de langage open weights",
+      "Comparatif - Plateformes LLM auto-hébergées",
       "Dataiku",
       "Debezium",
       "Dependency-Track",
@@ -3119,6 +3147,7 @@
       "Kubeflow",
       "Kubernetes",
       "Label Studio",
+      "LibreChat",
       "Licences de modèles open weights",
       "Meilisearch",
       "Mosquitto",
@@ -3127,11 +3156,14 @@
       "Nginx",
       "Node-RED",
       "Observabilité",
+      "Open WebUI",
       "OpenBao",
       "OpenMAIC",
       "OpenTelemetry",
       "Podman",
       "Prometheus",
+      "RAG documentaire on-prem - clé en main ou assemblé",
+      "RAGFlow",
       "RabbitMQ",
       "Redpanda",
       "Reverse proxy et TLS",
@@ -4828,7 +4860,8 @@
       "complements": [
         "[[MongoDB Compass]]",
         "[[Airbyte]]",
-        "[[Debezium]]"
+        "[[Debezium]]",
+        "[[LibreChat]]"
       ],
       "maturite": "production"
     },
@@ -4955,7 +4988,8 @@
         "[[Beats]]",
         "[[JanusGraph]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[RAGFlow]]"
       ],
       "maturite": "production"
     },
@@ -5497,7 +5531,8 @@
         "[[DataHub]]",
         "[[Label Studio]]",
         "[[CVAT]]",
-        "[[lakeFS]]"
+        "[[lakeFS]]",
+        "[[Open WebUI]]"
       ],
       "maturite": "production"
     },
@@ -5809,7 +5844,9 @@
       "alternatives": [
         "[[Chroma]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[AnythingLLM]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5888,7 +5925,8 @@
         "[[Pinecone]]"
       ],
       "complements": [
-        "[[FastEmbed]]"
+        "[[FastEmbed]]",
+        "[[AnythingLLM]]"
       ],
       "maturite": "production"
     },
@@ -6017,7 +6055,8 @@
         "[[Pinecone]]"
       ],
       "complements": [
-        "[[Postgres]]"
+        "[[Postgres]]",
+        "[[LibreChat]]"
       ],
       "maturite": "production"
     },
@@ -8416,7 +8455,9 @@
         "[[PyMuPDF]]",
         "[[pdfplumber]]",
         "[[Tesseract]]",
-        "[[EasyOCR]]"
+        "[[EasyOCR]]",
+        "[[Open WebUI]]",
+        "[[RAGFlow]]"
       ],
       "maturite": "production"
     },
@@ -8544,7 +8585,9 @@
         "[[Docling]]",
         "[[PaddleOCR]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[RAGFlow]]"
+      ],
       "maturite": "production"
     },
     {
@@ -11701,6 +11744,41 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Assistants/AnythingLLM.md",
+      "nom": "AnythingLLM",
+      "alias": [
+        "anythingllm",
+        "anything-llm",
+        "Mintplex AnythingLLM"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "application",
+      "langage": "JavaScript",
+      "domaines": null,
+      "pitch": "Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "rag",
+        "agents",
+        "mcp",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Open WebUI]]",
+        "[[LibreChat]]"
+      ],
+      "complements": [
+        "[[Ollama]]",
+        "[[LM Studio]]",
+        "[[LiteLLM]]",
+        "[[LanceDB]]",
+        "[[Qdrant]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "LLM & IA générative/Assistants/Assistants.md",
       "nom": "Assistants",
       "alias": [
@@ -11721,6 +11799,27 @@
         "local-llm",
         "mcp",
         "agent-skill"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Assistants/Comparatif - Plateformes LLM auto-hébergées.md",
+      "nom": "Comparatif - Plateformes LLM auto-hébergées",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/assistant",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rag",
+        "agents",
+        "low-code",
+        "self-hosted",
+        "local-llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -11781,6 +11880,75 @@
       ],
       "complements": [
         "[[LM Studio]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/LibreChat.md",
+      "nom": "LibreChat",
+      "alias": [
+        "librechat",
+        "libre-chat",
+        "danny-avila/LibreChat"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "application",
+      "langage": "JavaScript, TypeScript",
+      "domaines": null,
+      "pitch": "Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "rag",
+        "agents",
+        "mcp",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Open WebUI]]",
+        "[[AnythingLLM]]"
+      ],
+      "complements": [
+        "[[Ollama]]",
+        "[[LiteLLM]]",
+        "[[MongoDB]]",
+        "[[pgvector]]",
+        "[[Keycloak]]",
+        "[[Authentik]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Assistants/Open WebUI.md",
+      "nom": "Open WebUI",
+      "alias": [
+        "open-webui",
+        "openwebui",
+        "open webui"
+      ],
+      "role": "brique",
+      "categorie": "llm/assistant",
+      "famille": "application",
+      "langage": "Python, TypeScript",
+      "domaines": null,
+      "pitch": "Interface web de chat auto-hébergée pour modèles locaux (Ollama) et API OpenAI-compatibles, licence propre à clause de marque (BSD-3 + interdiction de retirer le nom et le logo au-delà de 50 utilisateurs, non OSI) — RAG, rôles et groupes, LDAP et OIDC, extensible par outils et fonctions Python.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "rag",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[LibreChat]]",
+        "[[AnythingLLM]]"
+      ],
+      "complements": [
+        "[[Ollama]]",
+        "[[vLLM]]",
+        "[[LiteLLM]]",
+        "[[Docling]]",
+        "[[Postgres]]"
       ],
       "maturite": "production"
     },
@@ -13253,7 +13421,11 @@
         "[[OpenRouter]]",
         "[[OmniRoute]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Open WebUI]]",
+        "[[LibreChat]]",
+        "[[AnythingLLM]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13589,7 +13761,8 @@
       "alternatives": [
         "[[LangChain]]",
         "[[LlamaIndex]]",
-        "[[DSPy]]"
+        "[[DSPy]]",
+        "[[RAGFlow]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -13710,7 +13883,8 @@
       "alternatives": [
         "[[LangChain]]",
         "[[Haystack]]",
-        "[[DSPy]]"
+        "[[DSPy]]",
+        "[[RAGFlow]]"
       ],
       "complements": [
         "[[LlamaIndex NLSQLTableQueryEngine]]"
@@ -13777,6 +13951,36 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/RAG documentaire on-prem - clé en main ou assemblé.md",
+      "nom": "RAG documentaire on-prem - clé en main ou assemblé",
+      "alias": [
+        "RAG documentaire on-prem",
+        "RAG on-prem",
+        "RAG documentaire on-prem : clé en main ou assemblé",
+        "moteur RAG clé en main",
+        "RAG clé en main ou assemblé",
+        "RAG interne"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "llm",
+        "retrieval",
+        "local-llm",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/RAG.md",
       "nom": "RAG",
       "alias": [
@@ -13802,6 +14006,42 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAGFlow.md",
+      "nom": "RAGFlow",
+      "alias": [
+        "ragflow",
+        "infiniflow-ragflow",
+        "ragflow.io"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "plateforme",
+      "langage": "Go, Python",
+      "domaines": null,
+      "pitch": "Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.",
+      "tags": [
+        "llm",
+        "rag",
+        "retrieval",
+        "chunking",
+        "document-parsing",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[LlamaIndex]]",
+        "[[Haystack]]"
+      ],
+      "complements": [
+        "[[Elasticsearch]]",
+        "[[MinIO]]",
+        "[[MinerU]]",
+        "[[Docling]]",
+        "[[Ollama]]",
+        "[[Text Embeddings Inference]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/RAG & retrieval/RAGatouille.md",
@@ -13971,7 +14211,8 @@
         "[[LM Studio Bionic]]",
         "[[Mistral]]",
         "[[Gemma]]",
-        "[[gpt-oss]]"
+        "[[gpt-oss]]",
+        "[[AnythingLLM]]"
       ],
       "maturite": "production"
     },
@@ -14038,7 +14279,11 @@
         "[[Qwen]]",
         "[[Mistral]]",
         "[[Gemma]]",
-        "[[gpt-oss]]"
+        "[[gpt-oss]]",
+        "[[Open WebUI]]",
+        "[[LibreChat]]",
+        "[[AnythingLLM]]",
+        "[[RAGFlow]]"
       ],
       "maturite": "production"
     },
@@ -14390,7 +14635,8 @@
         "[[Qwen]]",
         "[[Mistral]]",
         "[[Gemma]]",
-        "[[gpt-oss]]"
+        "[[gpt-oss]]",
+        "[[Open WebUI]]"
       ],
       "maturite": "production"
     },
@@ -17575,7 +17821,8 @@
       "complements": [
         "[[bge-m3]]",
         "[[Qwen3-Embedding]]",
-        "[[bge-reranker]]"
+        "[[bge-reranker]]",
+        "[[RAGFlow]]"
       ],
       "maturite": "production"
     },
@@ -27955,7 +28202,8 @@
       "complements": [
         "[[Delta Lake]]",
         "[[lakeFS]]",
-        "[[DVC]]"
+        "[[DVC]]",
+        "[[RAGFlow]]"
       ],
       "maturite": "deprecated"
     },
@@ -28413,7 +28661,8 @@
         "[[Nginx]]",
         "[[Airflow]]",
         "[[Langfuse]]",
-        "[[Node-RED]]"
+        "[[Node-RED]]",
+        "[[LibreChat]]"
       ],
       "maturite": "production"
     },
@@ -28466,7 +28715,8 @@
         "[[Kubernetes]]",
         "[[OpenMetadata]]",
         "[[DataHub]]",
-        "[[CVAT]]"
+        "[[CVAT]]",
+        "[[LibreChat]]"
       ],
       "maturite": "production"
     },
