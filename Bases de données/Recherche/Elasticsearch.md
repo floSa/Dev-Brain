@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]", "[[OpenSearch]]", "[[Meilisearch]]", "[[Typesense]]", "[[Apache Solr]]"]
-complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]", "[[JanusGraph]]", "[[OpenMetadata]]", "[[DataHub]]"]
+complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]", "[[JanusGraph]]", "[[OpenMetadata]]", "[[DataHub]]", "[[RAGFlow]]"]
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
 url_repo: https://github.com/elastic/elasticsearch
@@ -74,6 +74,7 @@ visualisation.
 - [[JanusGraph]] — Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024. — la couche de graphe qui s'appuie sur Elasticsearch comme index externe pour la recherche par propriété.
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — moteur de recherche obligatoire du serveur, en 9.x.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — moteur de recherche du serveur, en 8.x ; l'index de graphe s'y appuie aussi.
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources
 
