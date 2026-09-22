@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[Chroma]]"]
-complements: []
+complements: ["[[AnythingLLM]]"]
 tags: [vector-db, embedded, multimodal, columnar]
 url_docs: https://lancedb.com/documentation/
 url_repo: https://github.com/lancedb/lancedb
@@ -56,6 +56,10 @@ multimodal, où vecteurs et données brutes se requêtent côte à côte.
 ### Alternatives
 
 - [[Chroma]] — Base vectorielle légère et embarquée, du notebook au serveur — l'option la plus simple pour prototyper un RAG.
+
+### Compléments
+
+- [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
 
 ## Ressources
 

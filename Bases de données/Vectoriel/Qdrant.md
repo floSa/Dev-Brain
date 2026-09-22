@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Weaviate]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: ["[[FastEmbed]]"]
+complements: ["[[FastEmbed]]", "[[AnythingLLM]]"]
 tags: [vector-db, rag, ann]
 url_docs: https://qdrant.tech/documentation/
 url_repo: https://github.com/qdrant/qdrant
@@ -66,6 +66,7 @@ sauvegarde.
 ### Compléments
 
 - [[FastEmbed]] — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut. — produit les vecteurs à insérer, avec l'intégration `qdrant-client[fastembed]`.
+- [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
 
 ## Ressources
 
