@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Keycloak]]", "[[Authelia]]"]
-complements: ["[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Airflow]]", "[[Langfuse]]", "[[Node-RED]]"]
+complements: ["[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Airflow]]", "[[Langfuse]]", "[[Node-RED]]", "[[LibreChat]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://docs.goauthentik.io/
 url_repo: https://github.com/goauthentik/authentik
@@ -75,6 +75,7 @@ Fournisseur d'identité dont la logique de connexion se **construit** : chaque p
 - [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data. — le fournisseur `authentik` figure dans la liste OAuth du provider FAB.
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry. — variables d'environnement `AUTH_AUTHENTIK_*` dédiées à l'authentification unique.
 - [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — page d'intégration « Node-RED » dans la doc d'Authentik (support communautaire), par `passport-openidconnect`.
+- [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 
 ## Ressources
 
