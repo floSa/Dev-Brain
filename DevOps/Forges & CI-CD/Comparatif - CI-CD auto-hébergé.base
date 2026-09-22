@@ -1,0 +1,23 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du même dossier.
+    - role == "brique"
+    - categorie == "devops/ci"
+    # Argo CD est dans devops/ci mais ne construit rien : il déploie depuis Git
+    # sur Kubernetes. Il n'est pas un concurrent des CI de ce comparatif.
+    - '!tags.contains("gitops")'
+views:
+  - type: table
+    name: CI/CD auto-hébergé
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
