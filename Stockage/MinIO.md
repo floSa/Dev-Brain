@@ -11,7 +11,7 @@ maturite: deprecated
 langage: Go
 scaling: distributed
 alternatives: ["[[Apache Ozone]]", "[[RustFS]]", "[[Ceph]]", "[[SeaweedFS]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
-complements: ["[[Delta Lake]]", "[[lakeFS]]", "[[DVC]]"]
+complements: ["[[Delta Lake]]", "[[lakeFS]]", "[[DVC]]", "[[RAGFlow]]"]
 tags: [object-storage, s3-compatible]
 url_docs: https://min.io/docs/minio/linux/index.html
 url_repo: https://github.com/minio/minio
@@ -99,6 +99,7 @@ depuis, et aucun correctif de sécurité officiel à attendre.
 - [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — stockage S3-compatible décrit par la documentation de delta-rs (`aws_conditional_put`) et cité parmi les intégrations communautaires de Delta.
 - [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — exemple de configuration de la page d'installation sur site de lakeFS (`force_path_style: true`).
 - [[DVC]] — Versionnage de données et de modèles en ligne de commande, posé sur Git : des pointeurs `.dvc` dans le dépôt, le contenu dans un cache adressé par le hash et des remotes (S3 compatible, SSH, NAS), plus des pipelines reproductibles par `dvc repro` ; Apache-2.0, projet racheté par lakeFS en novembre 2025. — remote S3-compatible cité par la documentation de DVC.
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources
 
