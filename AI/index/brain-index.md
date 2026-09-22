@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 937 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 943 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -25,6 +25,10 @@
 ### compute/gpu
 - **CuPy** — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
 
+### data/bi
+- **Apache Superset** — BI auto-hébergée Apache-2.0 tournée vers l'exploration : SQL Lab, constructeur de graphiques, tableaux de bord, droits par ligne, alertes et embedding sans édition payante ; exploitation plus lourde (base de métadonnées, Redis, Celery).
+- **Metabase** — BI auto-hébergée orientée utilisateurs métier : questions sans code et SQL natif, tableaux de bord, alertes, en un seul conteneur Java ; AGPL-3.0 avec SSO avancé, droits par ligne et embedding complet réservés aux éditions payantes.
+
 ### data/catalogue
 - **DataHub** — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).
 - **OpenLineage** — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data).
@@ -43,6 +47,7 @@
 - **Soda Core** — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud.
 
 ### data/format
+- **Apache Arrow** — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0).
 - **Apache Iceberg** — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).
 - **Avro** — Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
 - **Delta Lake** — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source.
@@ -147,6 +152,7 @@
 ### database/analytique
 - **ClickHouse** — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 - **DuckDB** — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
+- **Trino** — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java.
 
 ### database/cle-valeur
 - **Apache Cassandra** — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
@@ -705,6 +711,9 @@
 ### data/streaming
 - **Stream processing** — domaines : data-eng · alias : stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time
 
+### database/analytique
+- **OLTP, OLAP et lakehouse** — domaines : data-eng, data-sci · alias : OLTP, OLAP, lakehouse, entrepôt de données, data warehouse, data lake, moteur de requête fédéré
+
 ### database/graphe
 - **Bases graphe — modèles et langages de requête** — domaines : data-eng, ai-eng · alias : {'Bases graphe': 'modèles et langages de requête'}, property graph vs RDF, Cypher GQL Gremlin, langages de requête de graphe, graphe ou relationnel
 
@@ -1133,6 +1142,9 @@
 
 ### compute/distribue
 - **Comparatif - Calcul distribué** — —
+
+### data/bi
+- **Comparatif - BI auto-hébergée** — —
 
 ### data/catalogue
 - **Comparatif - Catalogues et lignage de données** — —

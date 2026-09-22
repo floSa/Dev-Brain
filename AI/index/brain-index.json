@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 937,
+  "count": 943,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -285,6 +285,11 @@
       "llmfit",
       "Évaluation"
     ],
+    "bi": [
+      "Apache Superset",
+      "Comparatif - BI auto-hébergée",
+      "Metabase"
+    ],
     "boosting": [
       "AdaBoost",
       "Boosting",
@@ -438,6 +443,7 @@
     ],
     "columnar": [
       "ADBC",
+      "Apache Arrow",
       "Bases de données",
       "ClickHouse",
       "Comparatif - Bases colonnes",
@@ -445,6 +451,7 @@
       "DuckDB",
       "Formats de fichiers et de tables",
       "LanceDB",
+      "OLTP, OLAP et lakehouse",
       "Parquet",
       "Polars",
       "Snowflake",
@@ -584,12 +591,15 @@
       "croc"
     ],
     "dashboard": [
+      "Apache Superset",
       "Beszel",
       "Comparatif - Apps data & démos ML",
+      "Comparatif - BI auto-hébergée",
       "Dash",
       "Grafana",
       "Interfaces & apps data",
       "Kibana",
+      "Metabase",
       "Netdata",
       "Observabilité",
       "Shiny for Python",
@@ -963,6 +973,7 @@
       "AWS SageMaker",
       "Apache Cassandra",
       "Apache Solr",
+      "Apache Superset",
       "ArangoDB",
       "Bases graphe — modèles et langages de requête",
       "Calcul distribué",
@@ -997,6 +1008,7 @@
       "Spark",
       "Temporal",
       "TensorFlow",
+      "Trino",
       "Vespa",
       "XGBoost",
       "statsforecast"
@@ -1210,6 +1222,10 @@
     "feature-store": [
       "Feast",
       "Feature store — concept"
+    ],
+    "federation": [
+      "OLTP, OLAP et lakehouse",
+      "Trino"
     ],
     "file-format": [
       "Avro",
@@ -1472,6 +1488,7 @@
       "Imitation learning"
     ],
     "in-memory": [
+      "Apache Arrow",
       "Faiss",
       "LLM caching",
       "Memgraph",
@@ -1562,6 +1579,9 @@
       "bokeh",
       "plotly"
     ],
+    "interoperability": [
+      "Apache Arrow"
+    ],
     "isometric": [
       "Comparatif - Diagrammes",
       "Diagrammes",
@@ -1616,8 +1636,10 @@
       "Databricks",
       "Delta Lake",
       "Formats de fichiers et de tables",
+      "OLTP, OLAP et lakehouse",
       "Partitionnement & layout de données",
-      "Plateformes data & IA"
+      "Plateformes data & IA",
+      "Trino"
     ],
     "layout-analysis": [
       "Comparatif - Parsing de documents",
@@ -2471,9 +2493,11 @@
       "Comparatif - Bases colonnes",
       "Databricks",
       "DuckDB",
+      "OLTP, OLAP et lakehouse",
       "Parquet",
       "Partitionnement & layout de données",
-      "Snowflake"
+      "Snowflake",
+      "Trino"
     ],
     "opc-ua": [
       "Données industrielles",
@@ -2708,6 +2732,10 @@
       "llmfit",
       "needle",
       "text-generation-webui"
+    ],
+    "query-engine": [
+      "OLTP, OLAP et lakehouse",
+      "Trino"
     ],
     "query-transformation": [
       "Query transformations"
@@ -3125,6 +3153,7 @@
       "Annotation de données",
       "AnythingLLM",
       "Apache NiFi",
+      "Apache Superset",
       "Argo CD",
       "Authelia",
       "Authentik",
@@ -3133,6 +3162,7 @@
       "CVAT",
       "Caddy",
       "Choisir un modèle d'embedding",
+      "Comparatif - BI auto-hébergée",
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Dataiku",
@@ -3150,6 +3180,7 @@
       "LibreChat",
       "Licences de modèles open weights",
       "Meilisearch",
+      "Metabase",
       "Mosquitto",
       "NATS",
       "Netdata",
@@ -3232,6 +3263,7 @@
       "Sequential testing"
     ],
     "serialization": [
+      "Apache Arrow",
       "Avro"
     ],
     "signal-processing": [
@@ -4011,7 +4043,8 @@
         "[[connectorx]]"
       ],
       "complements": [
-        "[[Polars]]"
+        "[[Polars]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -4609,7 +4642,8 @@
       ],
       "alternatives": [
         "[[DuckDB]]",
-        "[[Snowflake]]"
+        "[[Snowflake]]",
+        "[[Trino]]"
       ],
       "complements": [
         "[[dbt Core]]",
@@ -4617,7 +4651,8 @@
         "[[Airbyte]]",
         "[[dlt]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Metabase]]"
       ],
       "maturite": "production"
     },
@@ -4726,7 +4761,8 @@
       ],
       "alternatives": [
         "[[ClickHouse]]",
-        "[[Snowflake]]"
+        "[[Snowflake]]",
+        "[[Trino]]"
       ],
       "complements": [
         "[[pandas]]",
@@ -4737,7 +4773,8 @@
         "[[Soda Core]]",
         "[[Airbyte]]",
         "[[dlt]]",
-        "[[Delta Lake]]"
+        "[[Delta Lake]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -4864,6 +4901,38 @@
         "[[LibreChat]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Bases de données/OLTP, OLAP et lakehouse.md",
+      "nom": "OLTP, OLAP et lakehouse",
+      "alias": [
+        "OLTP",
+        "OLAP",
+        "lakehouse",
+        "entrepôt de données",
+        "data warehouse",
+        "data lake",
+        "moteur de requête fédéré"
+      ],
+      "role": "notion",
+      "categorie": "database/analytique",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "olap",
+        "columnar",
+        "lakehouse",
+        "query-engine",
+        "federation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Bases de données/ORM.md",
@@ -5349,7 +5418,8 @@
         "[[Apache Cassandra]]"
       ],
       "complements": [
-        "[[Redis Insight]]"
+        "[[Redis Insight]]",
+        "[[Apache Superset]]"
       ],
       "maturite": "production"
     },
@@ -5484,7 +5554,8 @@
         "[[Debezium]]",
         "[[Apache NiFi]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Metabase]]"
       ],
       "maturite": "production"
     },
@@ -5532,7 +5603,9 @@
         "[[Label Studio]]",
         "[[CVAT]]",
         "[[lakeFS]]",
-        "[[Open WebUI]]"
+        "[[Open WebUI]]",
+        "[[Metabase]]",
+        "[[Apache Superset]]"
       ],
       "maturite": "production"
     },
@@ -5660,6 +5733,38 @@
       "complements": [
         "[[Postgres]]",
         "[[EMQX]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Trino.md",
+      "nom": "Trino",
+      "alias": [
+        "trino",
+        "PrestoSQL"
+      ],
+      "role": "brique",
+      "categorie": "database/analytique",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java.",
+      "tags": [
+        "query-engine",
+        "federation",
+        "olap",
+        "distributed",
+        "lakehouse"
+      ],
+      "alternatives": [
+        "[[DuckDB]]",
+        "[[ClickHouse]]"
+      ],
+      "complements": [
+        "[[Apache Iceberg]]",
+        "[[Delta Lake]]",
+        "[[MinIO]]",
+        "[[Apache Superset]]"
       ],
       "maturite": "production"
     },
@@ -6331,7 +6436,8 @@
         "[[OpenLineage]]",
         "[[DataHub]]",
         "[[Delta Lake]]",
-        "[[lakeFS]]"
+        "[[lakeFS]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -6349,6 +6455,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Apache Superset.md",
+      "nom": "Apache Superset",
+      "alias": [
+        "superset"
+      ],
+      "role": "brique",
+      "categorie": "data/bi",
+      "famille": "application",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "BI auto-hébergée Apache-2.0 tournée vers l'exploration : SQL Lab, constructeur de graphiques, tableaux de bord, droits par ligne, alertes et embedding sans édition payante ; exploitation plus lourde (base de métadonnées, Redis, Celery).",
+      "tags": [
+        "bi",
+        "dashboard",
+        "self-hosted",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Metabase]]"
+      ],
+      "complements": [
+        "[[Trino]]",
+        "[[Postgres]]",
+        "[[Redis]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Catalogue de données et lignage.md",
@@ -6376,6 +6510,25 @@
         "data-catalog",
         "data-lineage",
         "data-governance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Comparatif - BI auto-hébergée.md",
+      "nom": "Comparatif - BI auto-hébergée",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/bi",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "bi",
+        "dashboard",
+        "self-hosted"
       ],
       "alternatives": null,
       "complements": null,
@@ -6562,7 +6715,8 @@
         "[[ADBC]]",
         "[[DuckDB]]",
         "[[connectorx]]",
-        "[[pandera]]"
+        "[[pandera]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -6615,7 +6769,8 @@
       "complements": [
         "[[DuckDB]]",
         "[[Great Expectations]]",
-        "[[pandera]]"
+        "[[pandera]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -7326,6 +7481,36 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Apache Arrow.md",
+      "nom": "Apache Arrow",
+      "alias": [
+        "arrow",
+        "pyarrow"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "paquet",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0).",
+      "tags": [
+        "columnar",
+        "in-memory",
+        "interoperability",
+        "serialization"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[ADBC]]",
+        "[[Parquet]]",
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[Spark]]",
+        "[[DuckDB]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Formats de fichiers et de tables/Apache Iceberg.md",
       "nom": "Apache Iceberg",
       "alias": [
@@ -7352,7 +7537,8 @@
         "[[Airbyte]]",
         "[[Debezium]]",
         "[[Apache NiFi]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Trino]]"
       ],
       "maturite": "production"
     },
@@ -7410,7 +7596,8 @@
         "[[Flink]]",
         "[[DuckDB]]",
         "[[MinIO]]",
-        "[[lakeFS]]"
+        "[[lakeFS]]",
+        "[[Trino]]"
       ],
       "maturite": "production"
     },
@@ -7467,7 +7654,8 @@
         "[[dbt Core]]",
         "[[Airbyte]]",
         "[[dlt]]",
-        "[[Delta Lake]]"
+        "[[Delta Lake]]",
+        "[[Apache Arrow]]"
       ],
       "maturite": "production"
     },
@@ -8069,6 +8257,33 @@
         "[[Prometheus]]",
         "[[Grafana]]",
         "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Metabase.md",
+      "nom": "Metabase",
+      "alias": [
+        "metabase"
+      ],
+      "role": "brique",
+      "categorie": "data/bi",
+      "famille": "application",
+      "langage": "Clojure",
+      "domaines": null,
+      "pitch": "BI auto-hébergée orientée utilisateurs métier : questions sans code et SQL natif, tableaux de bord, alertes, en un seul conteneur Java ; AGPL-3.0 avec SSO avancé, droits par ligne et embedding complet réservés aux éditions payantes.",
+      "tags": [
+        "bi",
+        "dashboard",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Apache Superset]]"
+      ],
+      "complements": [
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[ClickHouse]]"
       ],
       "maturite": "production"
     },
@@ -28203,7 +28418,8 @@
         "[[Delta Lake]]",
         "[[lakeFS]]",
         "[[DVC]]",
-        "[[RAGFlow]]"
+        "[[RAGFlow]]",
+        "[[Trino]]"
       ],
       "maturite": "deprecated"
     },
