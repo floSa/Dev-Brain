@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Unstructured]]", "[[LlamaParse]]", "[[Marker]]", "[[pdf-inspector]]", "[[OpenDataLoader PDF]]", "[[MinerU]]", "[[olmOCR]]"]
-complements: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Tesseract]]", "[[EasyOCR]]"]
+complements: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Tesseract]]", "[[EasyOCR]]", "[[Open WebUI]]", "[[RAGFlow]]"]
 tags: [document-parsing, rag, table-extraction, layout-analysis]
 url_docs: https://docling-project.github.io/docling/
 url_repo: https://github.com/docling-project/docling
@@ -71,6 +71,8 @@ natives LangChain et LlamaIndex pour le RAG.
 - [[pdfplumber]] — Extraction de texte et de tableaux PDF avec accès détaillé à chaque objet (caractères, lignes, rectangles), bâtie sur pdfminer.six ; extraction de tableaux configurable et débogage visuel, licence MIT. — l'étage bas niveau, pour l'extraction brute en amont.
 - [[Tesseract]] — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux. — un des moteurs OCR que Docling sait brancher, en ligne de commande ou via tesserocr.
 - [[EasyOCR]] — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024. — un autre moteur OCR branchable, pour les scans et les images.
+- [[Open WebUI]] — Interface web de chat auto-hébergée pour modèles locaux (Ollama) et API OpenAI-compatibles, licence propre à clause de marque (BSD-3 + interdiction de retirer le nom et le logo au-delà de 50 utilisateurs, non OSI) — RAG, rôles et groupes, LDAP et OIDC, extensible par outils et fonctions Python.
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources
 
