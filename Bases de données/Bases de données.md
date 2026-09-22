@@ -30,6 +30,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 ### Colonne / OLAP
 - Stockage orienté colonnes, optimisé pour l'agrégation analytique sur de gros volumes. Implémentations Dev : [[ClickHouse]] (distribué) et [[DuckDB]] (embarqué) ; managé type BigQuery.
 - À l'opposé du relationnel ligne-à-ligne pensé pour l'OLTP.
+- Un moteur de requête peut aussi **se passer de stockage** : [[Trino]] interroge des tables Iceberg ou Delta sur stockage objet et des bases externes. Charge transactionnelle, analytique et lakehouse : [[OLTP, OLAP et lakehouse]].
 
 ### Graphe
 - Nœuds et arêtes typées ; idéal pour les données fortement connectées et le parcours de relations profondes que SQL exprime mal.
@@ -91,6 +92,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 ### Notions
 - [[Migrations de schéma]] — domaines : data-eng
+- [[OLTP, OLAP et lakehouse]] — domaines : data-eng, data-sci
 - [[ORM]] — domaines : data-eng
 
 ### Briques
@@ -109,6 +111,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 - [[SQLAlchemy]] — Toolkit SQL et ORM Python de référence : couche Core d'expression SQL + ORM Data Mapper, entièrement typé depuis la 2.0.
 - [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI.
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
+- [[Trino]] — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java.
 
 ### Comparatifs
 - [[Comparatif - Bases NoSQL]]
