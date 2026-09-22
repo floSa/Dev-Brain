@@ -1048,6 +1048,26 @@ axes:
               sans modele de donnees) et de automation/* (Node-RED ici : D4 passe
               avant D13, parce qu il deplace de la donnee machine et non des
               applications SaaS).
+          bi:
+            libelle: "BI et tableaux de bord"
+            motif: >
+              Ouvert le 2026-09-30 (conversation 19) sur arbitrage de floSa : aucune
+              valeur ne rangeait un outil de BI auto-heberge. data/viz est defini
+              comme « graphiques de donnees » et ses cinq membres sont des
+              bibliotheques Python ; ui/data-app range des applications ECRITES en
+              code (Streamlit, Dash). Metabase et Superset sont des serveurs. Libelle
+              sans collision de nom de fichier ; il ne sert que si le seuil de
+              promotion est franchi.
+            frontiere: >
+              Outil de BI SERVI a des utilisateurs metier : connexions a des bases,
+              modele de donnees, requetes sans code et SQL libre, tableaux de bord
+              partages, droits et authentification, sans que l utilisateur ecrive
+              une application. Distinct de data/viz (une bibliotheque de graphiques
+              qu un developpeur appelle dans son code), de ui/data-app (une
+              application ecrite en Python ou R avec Streamlit, Dash, Gradio,
+              Shiny), de observability/* (Grafana : metriques et series techniques,
+              pas l analyse metier) et de database/analytique (le moteur qui execute
+              le SQL, pas l outil qui l expose aux utilisateurs).
 
       - cle: devtools
         dossier: "Outils de développement"
