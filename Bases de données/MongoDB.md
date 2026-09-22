@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[Redis]]", "[[Apache Cassandra]]"]
-complements: ["[[MongoDB Compass]]", "[[Airbyte]]", "[[Debezium]]"]
+complements: ["[[MongoDB Compass]]", "[[Airbyte]]", "[[Debezium]]", "[[LibreChat]]"]
 tags: [nosql, document-db]
 url_docs: https://www.mongodb.com/docs/
 url_repo: https://github.com/mongodb/mongo
@@ -65,6 +65,7 @@ de schéma : sans validation JSON Schema, la dérive de modèle s'installe.
 - [[MongoDB Compass]] — Client graphique officiel de MongoDB : exploration de documents, requêtes visuelles et analyse de schéma. — le client officiel pour explorer et administrer l'instance.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — source en disponibilité générale (`source-mongodb-v2`) qui lit les change streams.
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — connecteur stable.
+- [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 
 ## Ressources
 
