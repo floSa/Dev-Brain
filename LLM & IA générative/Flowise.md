@@ -56,7 +56,7 @@ vite difficiles à maintenir et à versionner.
 
 - Installation — npm ou Docker pour le self-host, ou Flowise Cloud pour le managé
 - Point d'entrée — canvas web de nœuds ; le flux se publie en API REST ou en widget de chat
-- Prérequis — Node.js ; la logique repose sur LangChain.js, dont il suit les versions
+- Prérequis — Node.js ; la logique repose sur LangChain.js, dont il suit les versions ; SQLite par défaut, PostgreSQL en option, Redis seulement en mode file d'attente
 - Exécution — self-hébergé ou Flowise Cloud ; mono-nœud par défaut
 - Coût — cœur Apache-2.0 gratuit, dossier enterprise sous licence commerciale (SSO, RBAC, espaces de travail) — un open-core ; le coût réel vient des appels LLM des flux, puis de la dette de sécurité d'un dépôt sans mainteneur
 
@@ -78,5 +78,6 @@ vite difficiles à maintenir et à versionner.
 - [[Agent patterns]] — la notion : les formes d'agent que ses nœuds assemblent
 - [[Advanced RAG]] — la notion : ce que ses flux de récupération mettent en œuvre
 - [[Context engineering]] — la notion du dossier
+- [[Comparatif - Plateformes LLM auto-hébergées]] — le comparatif qui situe les interfaces de chat, le moteur RAG et les constructeurs visuels
 - Routage multi-fournisseurs possible via [[OpenRouter]] ou [[LiteLLM]]
 - [[LLM & IA générative]] — le hub du domaine

@@ -35,7 +35,7 @@ drag-and-drop**, sans écrire le code de plomberie. Chaque flux s'expose ensuite
 **endpoint REST** ou s'**exporte en code Python**, ce qui évite l'effet boîte noire — même
 si une app de production gagne souvent à être réécrite proprement plutôt que générée.
 Backend Python, frontend TypeScript/React. Projet de la société Langflow, rachetée par
-DataStax en 2024 ; IBM a annoncé le rachat de DataStax en février 2025 et dit continuer à le soutenir en open source. Il reste sous MIT et s'intègre à l'écosystème watsonx. Le
+DataStax en 2024 ; IBM a annoncé le rachat de DataStax en février 2025 et dit continuer à le soutenir. Il reste sous MIT et s'intègre à l'écosystème watsonx. Le
 visuel masque la complexité jusqu'à un certain point : au-delà, les flux deviennent
 illisibles et il faut basculer en code.
 
@@ -54,7 +54,7 @@ Version **1.12.4** du 2026-09-29 (publication hebdomadaire), 155 398 étoiles le
 
 - Installation — `pip`/`uv` ou Docker pour le self-host, Langflow Desktop en local, déployable sur les grands clouds
 - Point d'entrée — canvas web ; chaque flux s'expose en endpoint REST ou s'exporte en code Python
-- Prérequis — Python pour le backend ; les composants viennent de l'écosystème [[LangChain]]
+- Prérequis — Python pour le backend ; les composants viennent de l'écosystème [[LangChain]] ; SQLite par défaut, [[Postgres]] recommandé en production
 - Exécution — self-hébergé, en desktop, ou via l'offre managée côté DataStax/IBM ; mono-nœud
 - Coût — gratuit sous MIT ; le coût réel est dominé par les appels LLM des flux, pas par l'outil
 
@@ -75,5 +75,6 @@ Version **1.12.4** du 2026-09-29 (publication hebdomadaire), 155 398 étoiles le
 - [[Agent patterns]] — la notion : les formes d'agent que ses composants assemblent
 - [[Advanced RAG]] — la notion : ce que ses pipelines de récupération mettent en œuvre
 - [[Context engineering]] — la notion du dossier
+- [[Comparatif - Plateformes LLM auto-hébergées]] — le comparatif qui situe les interfaces de chat, le moteur RAG et les constructeurs visuels
 - Routage multi-fournisseurs possible via [[LiteLLM]] ou [[OpenRouter]]
 - [[LLM & IA générative]] — le hub du domaine
