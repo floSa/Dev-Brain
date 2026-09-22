@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C / Go / Java
 alternatives: ["[[connectorx]]"]
-complements: ["[[Polars]]"]
+complements: ["[[Polars]]", "[[Apache Arrow]]"]
 tags: [db-driver, columnar]
 url_docs: https://arrow.apache.org/adbc/
 url_repo: https://github.com/apache/arrow-adbc
@@ -64,6 +64,7 @@ mapping objet, aucune migration.
 ### Compléments
 
 - [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core. — son `read_database(engine="adbc")` s'appuie dessus.
+- [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — la spécification et les bibliothèques sur lesquelles ADBC renvoie ses résultats.
 
 ## Ressources
 
