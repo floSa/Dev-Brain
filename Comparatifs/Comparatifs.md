@@ -118,6 +118,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 
 ### Sécurité
 - [[Comparatif - Fournisseurs d'identité]]
+- [[Comparatif - Garde-fous pour LLM]]
 - [[Comparatif - Scanners de sécurité]]
 
 ### Web & API

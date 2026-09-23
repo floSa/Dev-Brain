@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 956,
+  "count": 962,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -133,12 +133,17 @@
     "ai-security": [
       "AI security",
       "Daytona",
+      "Données personnelles et anonymisation pour LLM",
       "E2B",
+      "Llama Guard",
       "Maka",
+      "NeMo Guardrails",
+      "Presidio",
       "Prompt injection",
       "Sandboxing de code généré",
       "Systèmes IA",
       "Sécurité",
+      "garak",
       "promptfoo"
     ],
     "alerting": [
@@ -1404,7 +1409,10 @@
       "Pattern - RAG structuré graphe + human-in-the-loop"
     ],
     "guardrails": [
+      "Comparatif - Garde-fous pour LLM",
       "Guardrails",
+      "Llama Guard",
+      "NeMo Guardrails",
       "Systèmes IA",
       "Sécurité"
     ],
@@ -1609,7 +1617,8 @@
     "jailbreak": [
       "Jailbreaking and defenses",
       "Systèmes IA",
-      "Sécurité"
+      "Sécurité",
+      "garak"
     ],
     "key-value": [
       "Redis",
@@ -1806,6 +1815,7 @@
       "Modèles de langage",
       "Multi-Token Prediction",
       "Multi-agent systems",
+      "NeMo Guardrails",
       "Ollama",
       "OmniRoute",
       "Open WebUI",
@@ -1911,6 +1921,7 @@
       "RAGChecker",
       "Ragas",
       "TruLens",
+      "garak",
       "promptfoo",
       "Évaluation"
     ],
@@ -1950,6 +1961,7 @@
       "LM Studio Bionic",
       "LibreChat",
       "Licences de modèles open weights",
+      "Llama Guard",
       "Mistral",
       "Ollama",
       "Open WebUI",
@@ -2345,10 +2357,12 @@
     "ner": [
       "Comparatif - NLP",
       "Construction de graphes de connaissances",
+      "Données personnelles et anonymisation pour LLM",
       "GLiNER",
       "Label Studio",
       "NER et étiquetage de séquence",
       "NLP",
+      "Presidio",
       "pytorch-crf",
       "seqeval",
       "spaCy"
@@ -2695,8 +2709,10 @@
       "PyMC"
     ],
     "privacy": [
+      "Données personnelles et anonymisation pour LLM",
       "OpenCut",
       "Page to Markdown",
+      "Presidio",
       "SmartTube"
     ],
     "probabilistic-programming": [
@@ -2721,7 +2737,8 @@
     "prompt-injection": [
       "Prompt injection",
       "Systèmes IA",
-      "Sécurité"
+      "Sécurité",
+      "garak"
     ],
     "prompt-optimization": [
       "DSPy"
@@ -3088,7 +3105,9 @@
     "safety": [
       "AI security",
       "Guardrails",
-      "Jailbreaking and defenses"
+      "Jailbreaking and defenses",
+      "Llama Guard",
+      "NeMo Guardrails"
     ],
     "sast": [
       "Analyse de vulnérabilités",
@@ -14070,7 +14089,8 @@
       "complements": [
         "[[Open WebUI]]",
         "[[LibreChat]]",
-        "[[AnythingLLM]]"
+        "[[AnythingLLM]]",
+        "[[Presidio]]"
       ],
       "maturite": "production"
     },
@@ -14929,7 +14949,8 @@
         "[[Open WebUI]]",
         "[[LibreChat]]",
         "[[AnythingLLM]]",
-        "[[RAGFlow]]"
+        "[[RAGFlow]]",
+        "[[Llama Guard]]"
       ],
       "maturite": "production"
     },
@@ -15282,7 +15303,8 @@
         "[[Mistral]]",
         "[[Gemma]]",
         "[[gpt-oss]]",
-        "[[Open WebUI]]"
+        "[[Open WebUI]]",
+        "[[Llama Guard]]"
       ],
       "maturite": "production"
     },
@@ -16218,7 +16240,8 @@
         "[[DeepEval]]",
         "[[Ragas]]",
         "[[TruLens]]",
-        "[[Inspect AI]]"
+        "[[Inspect AI]]",
+        "[[garak]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -19516,7 +19539,8 @@
         "[[spaCy]]"
       ],
       "complements": [
-        "[[Label Studio]]"
+        "[[Label Studio]]",
+        "[[Presidio]]"
       ],
       "maturite": "beta"
     },
@@ -19781,7 +19805,8 @@
       ],
       "complements": [
         "[[HuggingFace]]",
-        "[[Label Studio]]"
+        "[[Label Studio]]",
+        "[[Presidio]]"
       ],
       "maturite": "production"
     },
@@ -29540,6 +29565,53 @@
       "maturite": null
     },
     {
+      "path": "Sécurité/Systèmes IA/Comparatif - Garde-fous pour LLM.md",
+      "nom": "Comparatif - Garde-fous pour LLM",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "guardrails"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Données personnelles et anonymisation pour LLM.md",
+      "nom": "Données personnelles et anonymisation pour LLM",
+      "alias": [
+        "données personnelles et LLM",
+        "RGPD et LLM",
+        "PII masking",
+        "masquage de données personnelles",
+        "pseudonymisation",
+        "anonymisation de données personnelles",
+        "PII"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "privacy",
+        "ai-security",
+        "ner"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Sécurité/Systèmes IA/Guardrails.md",
       "nom": "Guardrails",
       "alias": [
@@ -29591,6 +29663,98 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Llama Guard.md",
+      "nom": "Llama Guard",
+      "alias": [
+        "llama guard",
+        "Llama Guard 3",
+        "Llama Guard 4",
+        "Meta Llama Guard",
+        "Llama Prompt Guard",
+        "Prompt Guard 2",
+        "LlamaGuard"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher.",
+      "tags": [
+        "guardrails",
+        "safety",
+        "ai-security",
+        "local-llm"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[NeMo Guardrails]]",
+        "[[vLLM]]",
+        "[[Ollama]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Systèmes IA/NeMo Guardrails.md",
+      "nom": "NeMo Guardrails",
+      "alias": [
+        "nemo guardrails",
+        "nemoguardrails",
+        "NVIDIA NeMo Guardrails",
+        "Colang",
+        "NeMo Guardrails library"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits en YAML et en Colang, avec des rails prêts à l'emploi (sûreté du contenu, jailbreak, thème, PII) ; chaque contrôle sémantique rappelle un LLM, d'où une latence ajoutée.",
+      "tags": [
+        "guardrails",
+        "ai-security",
+        "safety",
+        "llm"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Presidio]]",
+        "[[Llama Guard]]",
+        "[[garak]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Presidio.md",
+      "nom": "Presidio",
+      "alias": [
+        "presidio",
+        "microsoft presidio",
+        "presidio analyzer",
+        "presidio anonymizer",
+        "data privacy stack presidio"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France.",
+      "tags": [
+        "privacy",
+        "ner",
+        "ai-security"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[spaCy]]",
+        "[[GLiNER]]",
+        "[[LiteLLM]]",
+        "[[NeMo Guardrails]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Sécurité/Systèmes IA/Prompt injection.md",
@@ -29672,6 +29836,35 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/garak.md",
+      "nom": "garak",
+      "alias": [
+        "garak",
+        "NVIDIA garak",
+        "garak llm scanner",
+        "Generative AI Red-teaming and Assessment Kit"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites, génération de code malveillant) lancées contre un modèle local ou distant, avec détecteurs, rapports JSONL et HTML ; la plupart des détecteurs tournent en local, les attaques multi-tours demandent un modèle juge.",
+      "tags": [
+        "ai-security",
+        "prompt-injection",
+        "jailbreak",
+        "llm-eval"
+      ],
+      "alternatives": [
+        "[[promptfoo]]"
+      ],
+      "complements": [
+        "[[NeMo Guardrails]]"
+      ],
+      "maturite": "beta"
     },
     {
       "path": "Sécurité/Sécurité.md",
