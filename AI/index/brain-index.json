@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 955,
+  "count": 956,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1587,6 +1587,7 @@
     ],
     "infrastructure-as-code": [
       "Ansible",
+      "Infrastructure as code — configuration, provisionnement et idempotence",
       "OpenTofu"
     ],
     "interactive-viz": [
@@ -2973,6 +2974,7 @@
       "Comparatif - Gestionnaires de paquets Python",
       "Comparatif - Orchestrateurs ML",
       "DVC",
+      "Infrastructure as code — configuration, provisionnement et idempotence",
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
@@ -10894,6 +10896,37 @@
         "[[Kubernetes]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "DevOps/Infrastructure as code — configuration, provisionnement et idempotence.md",
+      "nom": "Infrastructure as code — configuration, provisionnement et idempotence",
+      "alias": [
+        {
+          "Infrastructure as code": "configuration"
+        },
+        "provisionnement et idempotence",
+        "infrastructure as code",
+        "iac",
+        "idempotence",
+        "dérive de configuration",
+        "provisionnement et configuration"
+      ],
+      "role": "notion",
+      "categorie": "devops/infrastructure",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "infrastructure-as-code",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "DevOps/OpenTofu.md",
