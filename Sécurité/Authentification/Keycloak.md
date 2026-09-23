@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Authentik]]", "[[Authelia]]"]
-complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]", "[[CVAT]]", "[[LibreChat]]", "[[GitLab CE]]", "[[Forgejo]]"]
+complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]", "[[CVAT]]", "[[LibreChat]]", "[[GitLab CE]]", "[[Forgejo]]", "[[Harbor]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://www.keycloak.org/documentation
 url_repo: https://github.com/keycloak/keycloak
@@ -78,6 +78,7 @@ Fournisseur d'identité et de gestion des accès en Java sur Quarkus. Il tient l
 - [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 - [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — authentification unique en OIDC ou SAML pour la forge.
 - [[Forgejo]] — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie. — authentification unique via OAuth2 pour la forge.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo). — se connecte à Keycloak en OIDC pour l'authentification des utilisateurs.
 
 ## Ressources
 
