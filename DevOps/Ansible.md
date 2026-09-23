@@ -94,3 +94,4 @@ Outil de **gestion de configuration** : on décrit l'état voulu d'une machine (
 ## Voir aussi
 
 - [[DevOps]] — le hub du domaine
+- [[Infrastructure as code — configuration, provisionnement et idempotence]] — la notion : impératif et déclaratif, configuration et provisionnement, idempotence, dérive, sans agent ou avec agent, réseau fermé.
