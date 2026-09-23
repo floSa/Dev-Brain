@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[OpenBao]]"]
-complements: ["[[Kubernetes]]"]
+complements: ["[[Kubernetes]]", "[[Ansible]]"]
 tags: [secrets-management, cryptography]
 url_docs: https://getsops.io/docs/
 url_repo: https://github.com/getsops/sops
@@ -64,6 +64,7 @@ Ce que SOPS **n'est pas** : un serveur. Rien ne journalise qui lit, rien ne rév
 ### Compléments
 
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — les manifestes Secret peuvent être chiffrés dans Git avec SOPS puis déchiffrés dans le cluster par Flux.
+- [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil. — la collection `community.sops` lit les fichiers de secrets chiffrés par SOPS dans un playbook.
 
 ## Ressources
 

@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[SOPS]]"]
-complements: ["[[Kubernetes]]"]
+complements: ["[[Kubernetes]]", "[[OpenTofu]]"]
 tags: [secrets-management, cryptography, self-hosted, kubernetes]
 url_docs: https://openbao.org/docs/
 url_repo: https://github.com/openbao/openbao
@@ -79,6 +79,7 @@ Serveur de secrets : les applications ne lisent plus un mot de passe dans un fic
 ### Compléments
 
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — chart Helm, fournisseur CSI et méthode d'authentification Kubernetes ; External Secrets Operator sait y synchroniser des secrets depuis OpenBao.
+- [[OpenTofu]] — Provisionnement d'infrastructure déclaratif avec un état (MPL-2.0, Go, fork de Terraform 1.5 sous la Linux Foundation, CNCF sandbox) : des fichiers HCL, un plan avant chaque changement, des fournisseurs pour VMware, Proxmox, libvirt, Kubernetes ; chiffrement d'état natif, miroir de fournisseurs pour le réseau fermé — Terraform, lui, est sous BUSL depuis 2023. — le moteur Transit d'OpenBao sert de fournisseur de clé au chiffrement natif de l'état d'OpenTofu.
 
 ## Ressources
 
