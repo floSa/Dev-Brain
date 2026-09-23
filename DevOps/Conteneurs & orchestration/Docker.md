@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[Podman]]"]
-complements: ["[[Docker Compose]]", "[[GitHub Actions]]", "[[Trivy]]", "[[Grype]]", "[[GitLab CE]]", "[[Forgejo]]", "[[Jenkins]]", "[[Woodpecker CI]]"]
+complements: ["[[Docker Compose]]", "[[GitHub Actions]]", "[[Trivy]]", "[[Grype]]", "[[GitLab CE]]", "[[Forgejo]]", "[[Jenkins]]", "[[Woodpecker CI]]", "[[Ansible]]"]
 tags: [container]
 url_docs: https://docs.docker.com/
 url_repo: https://github.com/moby/moby
@@ -76,6 +76,7 @@ et les produits payants.
 - [[Forgejo]] — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie. — l'image officielle du serveur, et le moteur des jobs de son runner.
 - [[Jenkins]] — Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois. — l'image officielle du contrôleur, et les conteneurs de build des agents.
 - [[Woodpecker CI]] — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge. — le moteur par défaut de chaque étape de pipeline.
+- [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil. — la collection `community.docker` de son paquet installe le moteur sur un hôte et lance des conteneurs depuis un playbook.
 
 ## Ressources
 
