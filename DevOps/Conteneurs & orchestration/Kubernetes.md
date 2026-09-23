@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[k3s]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]", "[[EMQX]]", "[[GitLab CE]]", "[[Jenkins]]", "[[Woodpecker CI]]", "[[Ansible]]", "[[OpenTofu]]"]
+complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]", "[[EMQX]]", "[[GitLab CE]]", "[[Jenkins]]", "[[Woodpecker CI]]", "[[Ansible]]", "[[OpenTofu]]", "[[Harbor]]", "[[Zot]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://kubernetes.io/docs/
 url_repo: https://github.com/kubernetes/kubernetes
@@ -102,6 +102,8 @@ CNCF diplômé (graduated) le 2018-03-06.
 - [[Woodpecker CI]] — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge. — un moteur d'exécution des étapes en pods.
 - [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil. — la collection `kubernetes.core` de son paquet applique des manifestes et des charts sur un cluster.
 - [[OpenTofu]] — Provisionnement d'infrastructure déclaratif avec un état (MPL-2.0, Go, fork de Terraform 1.5 sous la Linux Foundation, CNCF sandbox) : des fichiers HCL, un plan avant chaque changement, des fournisseurs pour VMware, Proxmox, libvirt, Kubernetes ; chiffrement d'état natif, miroir de fournisseurs pour le réseau fermé — Terraform, lui, est sous BUSL depuis 2023. — les fournisseurs `hashicorp/kubernetes` et `hashicorp/helm` créent des ressources d'un cluster, mais l'état dérive vite si un outil GitOps agit aussi dessus.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo). — le registre interne dont le cluster tire ses images, avec réplication et scan.
+- [[Zot]] — Registre OCI léger en un seul binaire (Apache-2.0, Go, CNCF sandbox) : stockage sur disque ou S3 compatible, sans base de données externe, synchronisation et miroir à la demande, scan Trivy embarqué ; interface et recherche en extensions, contrôle d'accès par dépôt et non par projet. — un registre interne léger pour un cluster sur site.
 
 ## Ressources
 
