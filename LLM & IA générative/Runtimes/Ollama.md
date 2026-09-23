@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[llama.cpp]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[SGLang]]", "[[TensorRT-LLM]]", "[[needle]]"]
-complements: ["[[Qwen]]", "[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]", "[[Open WebUI]]", "[[LibreChat]]", "[[AnythingLLM]]", "[[RAGFlow]]"]
+complements: ["[[Qwen]]", "[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]", "[[Open WebUI]]", "[[LibreChat]]", "[[AnythingLLM]]", "[[RAGFlow]]", "[[Llama Guard]]"]
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://docs.ollama.com/
 url_repo: https://github.com/ollama/ollama
@@ -77,6 +77,7 @@ source de surprise.
 - [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 - [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
 - [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
+- [[Llama Guard]] — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher. — publie le tag `llama-guard3` (1B et 8B) : un classifieur de sûreté local à côté du modèle principal.
 
 ## Ressources
 
