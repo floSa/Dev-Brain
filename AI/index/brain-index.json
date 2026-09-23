@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 952,
+  "count": 955,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -560,6 +560,11 @@
       "Woodpecker CI",
       "k3s",
       "testcontainers"
+    ],
+    "container-registry": [
+      "Comparatif - Registres d'images",
+      "Harbor",
+      "Zot"
     ],
     "context-engineering": [
       "Agent skills",
@@ -3182,6 +3187,7 @@
       "Comparatif - CI-CD auto-hébergé",
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
+      "Comparatif - Registres d'images",
       "Dataiku",
       "Debezium",
       "Dependency-Track",
@@ -3191,6 +3197,7 @@
       "Gestion des secrets",
       "GitLab CE",
       "HAProxy",
+      "Harbor",
       "Infinity",
       "Jenkins",
       "Kafka",
@@ -3231,6 +3238,7 @@
       "Web-Check",
       "Woodpecker CI",
       "Zabbix",
+      "Zot",
       "croc",
       "k3s",
       "lakeFS",
@@ -3459,11 +3467,13 @@
       "Dependency-Track",
       "Gitleaks",
       "Grype",
+      "Harbor",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Semgrep",
       "Supply chain logicielle et SBOM",
       "Sécurité",
-      "Trivy"
+      "Trivy",
+      "Zot"
     ],
     "survival-analysis": [
       "Analyse de survie",
@@ -10254,6 +10264,24 @@
       "maturite": null
     },
     {
+      "path": "DevOps/Conteneurs & orchestration/Comparatif - Registres d'images.md",
+      "nom": "Comparatif - Registres d'images",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devops/conteneur",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "container-registry",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "DevOps/Conteneurs & orchestration/Conteneurs & orchestration.md",
       "nom": "Conteneurs & orchestration",
       "alias": [
@@ -10339,7 +10367,9 @@
         "[[Forgejo]]",
         "[[Jenkins]]",
         "[[Woodpecker CI]]",
-        "[[Ansible]]"
+        "[[Ansible]]",
+        "[[Harbor]]",
+        "[[Zot]]"
       ],
       "maturite": "production"
     },
@@ -10372,6 +10402,38 @@
       "maturite": null
     },
     {
+      "path": "DevOps/Conteneurs & orchestration/Harbor.md",
+      "nom": "Harbor",
+      "alias": [
+        "harbor",
+        "goharbor",
+        "harbor registry"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo).",
+      "tags": [
+        "container-registry",
+        "self-hosted",
+        "supply-chain"
+      ],
+      "alternatives": [
+        "[[Zot]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Kubernetes]]",
+        "[[Helm]]",
+        "[[Trivy]]",
+        "[[Keycloak]]",
+        "[[OpenTofu]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "DevOps/Conteneurs & orchestration/Helm.md",
       "nom": "Helm",
       "alias": [
@@ -10393,7 +10455,8 @@
         "[[Kubernetes]]",
         "[[k3s]]",
         "[[Argo CD]]",
-        "[[GitLab CE]]"
+        "[[GitLab CE]]",
+        "[[Harbor]]"
       ],
       "maturite": "production"
     },
@@ -10448,7 +10511,9 @@
         "[[Jenkins]]",
         "[[Woodpecker CI]]",
         "[[Ansible]]",
-        "[[OpenTofu]]"
+        "[[OpenTofu]]",
+        "[[Harbor]]",
+        "[[Zot]]"
       ],
       "maturite": "production"
     },
@@ -10477,6 +10542,35 @@
         "[[Docker Compose]]",
         "[[Trivy]]",
         "[[Grype]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Conteneurs & orchestration/Zot.md",
+      "nom": "Zot",
+      "alias": [
+        "zot",
+        "zot registry",
+        "project-zot"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Registre OCI léger en un seul binaire (Apache-2.0, Go, CNCF sandbox) : stockage sur disque ou S3 compatible, sans base de données externe, synchronisation et miroir à la demande, scan Trivy embarqué ; interface et recherche en extensions, contrôle d'accès par dépôt et non par projet.",
+      "tags": [
+        "container-registry",
+        "self-hosted",
+        "supply-chain"
+      ],
+      "alternatives": [
+        "[[Harbor]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Kubernetes]]",
+        "[[Trivy]]"
       ],
       "maturite": "production"
     },
@@ -10824,7 +10918,8 @@
       "complements": [
         "[[Ansible]]",
         "[[OpenBao]]",
-        "[[Kubernetes]]"
+        "[[Kubernetes]]",
+        "[[Harbor]]"
       ],
       "maturite": "production"
     },
@@ -29088,7 +29183,9 @@
         "[[Podman]]",
         "[[Kubernetes]]",
         "[[GitHub Actions]]",
-        "[[Dependency-Track]]"
+        "[[Dependency-Track]]",
+        "[[Harbor]]",
+        "[[Zot]]"
       ],
       "maturite": "production"
     },
@@ -29237,7 +29334,8 @@
         "[[CVAT]]",
         "[[LibreChat]]",
         "[[GitLab CE]]",
-        "[[Forgejo]]"
+        "[[Forgejo]]",
+        "[[Harbor]]"
       ],
       "maturite": "production"
     },
