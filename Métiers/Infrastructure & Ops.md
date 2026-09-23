@@ -10,10 +10,10 @@ pitch: Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-
 Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
 
 - [[Sécurité]] — 4 page(s)
+- [[DevOps]] — 2 page(s)
 - [[Observabilité]] — 2 page(s)
 - [[Réseau]] — 2 page(s)
 - [[Data & pipelines]] — 1 page(s)
-- [[DevOps]] — 1 page(s)
 - [[Stockage]] — 1 page(s)
 - [[Web & API]] — 1 page(s)
 <!-- AUTO:END -->

@@ -62,6 +62,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Diagrammes]]
 
 ### DevOps
+- [[Comparatif - CI-CD auto-hébergé]]
 - [[Comparatif - Orchestration de conteneurs]]
 
 ### Interfaces & apps data

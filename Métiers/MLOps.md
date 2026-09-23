@@ -25,11 +25,11 @@ pitch: Mettre un modèle en production et savoir, ensuite, s'il marche encore.
 Axe métier **MLOps** (`mlops`) — explorer par sous-domaine, puis descendre via le graphe local.
 
 - [[Machine Learning]] — 20 page(s)
+- [[DevOps]] — 2 page(s)
 - [[LLM & IA générative]] — 2 page(s)
 - [[Observabilité]] — 2 page(s)
 - [[Sécurité]] — 2 page(s)
 - [[Data & pipelines]] — 1 page(s)
-- [[DevOps]] — 1 page(s)
 - [[Outils de développement]] — 1 page(s)
 - [[Stockage]] — 1 page(s)
 - [[Web & API]] — 1 page(s)
