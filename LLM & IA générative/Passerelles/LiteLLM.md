@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: single-node
 alternatives: ["[[OpenRouter]]", "[[OmniRoute]]"]
-complements: ["[[Open WebUI]]", "[[LibreChat]]", "[[AnythingLLM]]"]
+complements: ["[[Open WebUI]]", "[[LibreChat]]", "[[AnythingLLM]]", "[[Presidio]]"]
 tags: [llm, llm-gateway, inference]
 url_docs: https://docs.litellm.ai/
 url_repo: https://github.com/BerriAI/litellm
@@ -68,6 +68,7 @@ vision, streaming, JSON), qui se testent un par un.
 - [[Open WebUI]] — Interface web de chat auto-hébergée pour modèles locaux (Ollama) et API OpenAI-compatibles, licence propre à clause de marque (BSD-3 + interdiction de retirer le nom et le logo au-delà de 50 utilisateurs, non OSI) — RAG, rôles et groupes, LDAP et OIDC, extensible par outils et fonctions Python.
 - [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 - [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
+- [[Presidio]] — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France. — son garde-fou `presidio` appelle l'analyseur et l'anonymiseur de Presidio (deux services REST) avant ou après l'appel au modèle, pour masquer ou bloquer ; il peut restaurer les valeurs d'origine dans la réponse.
 
 ## Ressources
 
