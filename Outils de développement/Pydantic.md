@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python / Rust
 alternatives: []
-complements: ["[[Pydantic Settings]]", "[[SQLModel]]", "[[pandera]]"]
+complements: ["[[Pydantic Settings]]", "[[SQLModel]]", "[[pandera]]", "[[mypy]]"]
 tags: [data-validation, type-hints]
 url_docs: https://pydantic.dev/docs/validation/
 url_repo: https://github.com/pydantic/pydantic
@@ -59,6 +59,7 @@ s'appuient dessus pour leurs schémas.
 - [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic. — la configuration d'application bâtie sur ce socle
 - [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI. — la variante ORM bâtie sur ce socle : un modèle sert de schéma et de table
 - [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — intégration dans les deux sens : un champ `DataFrame[Schema]` dans un modèle Pydantic, ou un modèle Pydantic comme validateur ligne à ligne, au prix d'une performance dégradée sur les gros jeux d'après la documentation.
+- [[mypy]] — Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour. — plugin `pydantic.mypy` documenté par Pydantic ; [[Pyright]] n'en a pas et lit les modèles par `dataclass_transform`.
 
 ## Ressources
 
