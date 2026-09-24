@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 962,
+  "count": 963,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -2748,6 +2748,9 @@
       "Prompt engineering",
       "i-have-adhd"
     ],
+    "property-based-testing": [
+      "Hypothesis"
+    ],
     "pruning": [
       "Pruning"
     ],
@@ -3538,6 +3541,7 @@
     "testing": [
       "DeepEval",
       "Faker",
+      "Hypothesis",
       "Mimesis",
       "Outils de développement",
       "Rule - Qualité stricte",
@@ -6803,7 +6807,9 @@
         "[[Dask]]",
         "[[CuPy]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Hypothesis]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6831,7 +6837,8 @@
         "[[DuckDB]]",
         "[[Great Expectations]]",
         "[[pandera]]",
-        "[[Apache Arrow]]"
+        "[[Apache Arrow]]",
+        "[[Hypothesis]]"
       ],
       "maturite": "production"
     },
@@ -26252,6 +26259,28 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Hypothesis.md",
+      "nom": "Hypothesis",
+      "alias": [],
+      "role": "brique",
+      "categorie": "devtools/test",
+      "famille": "paquet",
+      "langage": "Python / Rust",
+      "domaines": null,
+      "pitch": "Test par propriétés pour Python : on décrit les entrées valides, la bibliothèque en génère des centaines, cherche un contre-exemple et le réduit au plus petit cas qui échoue.",
+      "tags": [
+        "testing",
+        "property-based-testing"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[pytest]]",
+        "[[numpy]]",
+        "[[pandas]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Notebooks/Marimo.md",
       "nom": "Marimo",
       "alias": [
@@ -26697,6 +26726,7 @@
       ],
       "alternatives": [],
       "complements": [
+        "[[Hypothesis]]",
         "[[testcontainers]]"
       ],
       "maturite": "production"

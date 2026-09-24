@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 962 pages actives.
+> 963 pages actives.
 
 ## Par page
 
@@ -840,6 +840,11 @@
 - liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]], [[Scikit-Learn]], [[Spark]]
 - liens entrants : [[Comparatif - Optimisation d'hyperparamètres]], [[Gaussian Process]], [[Machine Learning]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]]
 
+### Hypothesis  ·  brique
+- tags : `testing`, `property-based-testing`
+- liens sortants : [[Outils de développement]], [[Pydantic]], [[numpy]], [[pandas]], [[pytest]]
+- liens entrants : [[Outils de développement]], [[numpy]], [[pandas]], [[pytest]]
+
 ### i-have-adhd  ·  brique
 - tags : `agent-skill`, `prompting`, `code-assistant`, `agents`
 - liens sortants : [[Agent skills]], [[Agents de code]], [[Archify]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Harnais d'agent]], [[Prompt engineering]], [[Spec Kit]]
@@ -1332,8 +1337,8 @@
 
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
-- liens sortants : [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[JAX]], [[PyTorch]], [[pandas]], [[xarray]]
-- liens entrants : [[Algèbre linéaire]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
+- liens sortants : [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Hypothesis]], [[JAX]], [[PyTorch]], [[pandas]], [[xarray]]
+- liens entrants : [[Algèbre linéaire]], [[Comparatif - Calcul distribué]], [[Comparatif - Manipulation de données]], [[CuPy]], [[Dask]], [[DataFrames]], [[Eigendecomposition]], [[Hypothesis]], [[JAX]], [[Matrix decompositions]], [[Matrix products]], [[Projections]], [[SVD]], [[Vector norms]], [[pandas]], [[scipy.signal]], [[xarray]]
 
 ### NVIDIA Triton  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
@@ -1492,8 +1497,8 @@
 
 ### pandas  ·  brique
 - tags : `dataframe`, `in-memory`
-- liens sortants : [[Apache Arrow]], [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[DuckDB]], [[Great Expectations]], [[Modin]], [[Polars]], [[numpy]], [[pandera]]
-- liens entrants : [[Alteryx]], [[Apache Arrow]], [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[DuckDB]], [[Great Expectations]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[pandera]], [[seaborn]], [[xarray]]
+- liens sortants : [[Apache Arrow]], [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[DuckDB]], [[Great Expectations]], [[Hypothesis]], [[Modin]], [[Polars]], [[numpy]], [[pandera]]
+- liens entrants : [[Alteryx]], [[Apache Arrow]], [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[DuckDB]], [[Great Expectations]], [[Hypothesis]], [[Modin]], [[Polars]], [[Ray]], [[altair]], [[connectorx]], [[datasets]], [[jupysql]], [[matplotlib]], [[numpy]], [[pandera]], [[seaborn]], [[xarray]]
 
 ### pandera  ·  brique
 - tags : `data-validation`, `data-quality`, `dataframe`
@@ -1663,7 +1668,7 @@
 ### Pydantic  ·  brique
 - tags : `data-validation`, `type-hints`
 - liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[SQLModel]], [[pandera]]
-- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]], [[Typer]], [[Web & API]], [[pandera]]
+- liens entrants : [[Constrained decoding]], [[FastAPI]], [[Guidance]], [[Hypothesis]], [[Instructor]], [[Outils de développement]], [[Outlines]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pydantic Settings]], [[PydanticAI]], [[Rule - Config typée]], [[SQLModel]], [[Structured outputs]], [[Typer]], [[Web & API]], [[pandera]]
 
 ### Pydantic Settings  ·  brique
 - tags : `config`, `data-validation`
@@ -1712,8 +1717,8 @@
 
 ### pytest  ·  brique
 - tags : `testing`
-- liens sortants : [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Qualité stricte]], [[jupytext]], [[mcpjam]], [[testcontainers]]
+- liens sortants : [[Hypothesis]], [[Outils de développement]], [[testcontainers]]
+- liens entrants : [[Hypothesis]], [[Notebooks-as-code]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Qualité stricte]], [[jupytext]], [[mcpjam]], [[testcontainers]]
 
 ### python-dotenv  ·  brique
 - tags : `config`
@@ -2947,8 +2952,8 @@
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
-- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Hypothesis]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[Hypothesis]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -5068,6 +5073,7 @@
 - `prompt-injection` : Prompt injection, Systèmes IA, Sécurité, garak
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
 - `prompting` : Chain-of-Thought, Prompt engineering, i-have-adhd  — pas de page concept dédiée
+- `property-based-testing` : Hypothesis  — pas de page concept dédiée
 - `pruning` : Pruning
 - `quantization` : Apprentissage profond, Choisir un modèle d'embedding, Comparatif - Exécution & serving LLM, Fine-tuning, LM Studio, ONNX Runtime, Ollama, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
 - `query-engine` : OLTP, OLAP et lakehouse, Trino  — pas de page concept dédiée
@@ -5139,7 +5145,7 @@
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
 - `terminal-ui` : Comparatif - Frameworks CLI, Rich, llmfit, pi  — pas de page concept dédiée
-- `testing` : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
+- `testing` : DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
 - `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
@@ -5324,6 +5330,7 @@
 - `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
+- `property-based-testing` (porté par : Hypothesis)
 - `query-engine` (porté par : OLTP, OLAP et lakehouse, Trino)
 - `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles)
 - `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss)
@@ -5364,7 +5371,7 @@
 - `templating` (porté par : Jinja2, Web & API)
 - `temporal-difference` (porté par : Q-learning and DQN)
 - `terminal-ui` (porté par : Comparatif - Frameworks CLI, Rich, llmfit, pi)
-- `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
+- `testing` (porté par : DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
 - `tls` (porté par : Caddy, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
