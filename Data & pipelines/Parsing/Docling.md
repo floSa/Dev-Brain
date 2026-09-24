@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Unstructured]]", "[[LlamaParse]]", "[[Marker]]", "[[pdf-inspector]]", "[[OpenDataLoader PDF]]", "[[MinerU]]", "[[olmOCR]]"]
-complements: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Tesseract]]", "[[EasyOCR]]", "[[Open WebUI]]", "[[RAGFlow]]"]
+complements: ["[[PyMuPDF]]", "[[pdfplumber]]", "[[Tesseract]]", "[[EasyOCR]]", "[[Open WebUI]]", "[[RAGFlow]]", "[[Cognee]]"]
 tags: [document-parsing, rag, table-extraction, layout-analysis]
 url_docs: https://docling-project.github.io/docling/
 url_repo: https://github.com/docling-project/docling
@@ -73,6 +73,7 @@ natives LangChain et LlamaIndex pour le RAG.
 - [[EasyOCR]] — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024. — un autre moteur OCR branchable, pour les scans et les images.
 - [[Open WebUI]] — Interface web de chat auto-hébergée pour modèles locaux (Ollama) et API OpenAI-compatibles, licence propre à clause de marque (BSD-3 + interdiction de retirer le nom et le logo au-delà de 50 utilisateurs, non OSI) — RAG, rôles et groupes, LDAP et OIDC, extensible par outils et fonctions Python.
 - [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
+- [[Cognee]] — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
 
 ## Ressources
 
