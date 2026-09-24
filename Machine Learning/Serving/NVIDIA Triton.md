@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[BentoML]]", "[[KServe]]", "[[Seldon Core]]", "[[TorchServe]]", "[[TensorFlow Serving]]", "[[Ray Serve]]"]
-complements: ["[[TensorRT]]", "[[ONNX Runtime]]"]
+complements: ["[[TensorRT]]", "[[ONNX Runtime]]", "[[OpenVINO]]"]
 tags: [model-serving, inference, gpu]
 url_docs: https://docs.nvidia.com/deeplearning/triton-inference-server/
 url_repo: https://github.com/triton-inference-server/server
@@ -69,6 +69,7 @@ releases conteneur mensuelles sur NGC.
 
 - [[TensorRT]] — SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM. — le backend qui exécute les moteurs compilés servis par Triton
 - [[ONNX Runtime]] — Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge. — le backend qui exécute les modèles exportés en ONNX
+- [[OpenVINO]] — Boîte à outils d'inférence d'Intel en C++, API Python, C et Node.js : lit ONNX, PyTorch, TensorFlow et TFLite, optimise pour CPU, GPU intégré et NPU Intel, avec un plug-in CPU ARM listé comme supporté mais sans support AMD ; quantification NNCF et serveur OpenVINO Model Server ; Apache-2.0. — son backend OpenVINO sert des modèles IR, ONNX, TensorFlow, TFLite et Paddle ; l'image publique ne vise que le CPU Intel d'après le README du backend.
 
 ## Ressources
 
