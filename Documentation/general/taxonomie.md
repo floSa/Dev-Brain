@@ -605,6 +605,12 @@ valeurs disparues et ne sont pas reconduites.
 - `devtools/client-api` — clients d'API : composer, envoyer et tester des requêtes
   HTTP/REST/GraphQL/gRPC, gérer collections et environnements. Distinct de `devtools/test`
   (frameworks de test de code, type pytest).
+- `devtools/qualite` — contrôler du code Python **sans l'exécuter**, ou avant qu'il n'entre dans
+  l'historique : lint, formatage, vérification statique de types, hooks de pré-commit. Promu le
+  2026-10-01 en dossier « Qualité du code » (5 pages pesantes). Distinct de `devtools/test`
+  (exécuter le code pour constater son comportement : pytest, Hypothesis), de `security/analyse`
+  (analyse statique orientée vulnérabilités et secrets : Semgrep, Gitleaks) et de
+  `devtools/validation` (valider des données à l'exécution, pas du code).
 - `docs/capture` — **capture de contenu** externe vers un format texte réutilisable : page web ou
   document converti en Markdown, à l'unité, par un geste manuel. Distinct de `data/scraping`
   (extraction programmatique et à l'échelle).

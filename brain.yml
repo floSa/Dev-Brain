@@ -1084,7 +1084,21 @@ axes:
               Distinct de devtools/test (frameworks de test de code, type pytest).
           paquet: {}
           test: {}
-          qualite: {}
+          qualite:
+            libelle: "Qualité du code"
+            motif: >
+              Ouvert au seuil le 2026-10-01 : 5 pages pesantes (Ruff, pre-commit, mypy,
+              Pyright et la notion « Typage statique en Python »). Libelle retenu par
+              floSa parmi « Qualite du code » et « Analyse statique » : le second est
+              trop etroit, pre-commit n est pas de l analyse statique. Ne redouble ni
+              le domaine parent, ni aucun nom de page (verifie, insensible a la casse).
+            frontiere: >
+              Controler du code Python sans l executer, ou avant qu il n entre dans
+              l historique : lint, formatage, verification statique de types, hooks de
+              pre-commit. Distinct de devtools/test (executer le code pour constater
+              son comportement), de security/analyse (analyse statique orientee
+              vulnerabilites et secrets : Semgrep, Gitleaks) et de devtools/validation
+              (valider des donnees a l execution, pas du code).
           validation:
             frontiere: "Valider des objets dans du code Python, pas des jeux de donnees livres."
 
