@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-core
 maturite: production
 alternatives: []
-complements: ["[[GitHub Actions]]", "[[Ruff]]"]
+complements: ["[[GitHub Actions]]", "[[Ruff]]", "[[pre-commit]]"]
 tags: [sast, supply-chain, ci-cd]
 url_docs: https://docs.semgrep.dev/
 url_repo: https://github.com/semgrep/semgrep
@@ -63,6 +63,7 @@ Outil d'**analyse statique de sécurité** : il cherche dans le code source des 
 
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — la documentation Semgrep en donne un modèle par conteneur `semgrep/semgrep`, sans jeton.
 - [[Ruff]] — Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil. — ses règles `S` sont un portage de flake8-bandit (documentation de Ruff) : un premier filet de motifs simples, dans l'outil de lint déjà installé, que Semgrep prolonge avec des règles propres et d'autres langages.
+- [[pre-commit]] — Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent. — dépôt officiel `semgrep/pre-commit` (hooks `semgrep` et `semgrep-ci`) ; avec des règles locales le hook tourne sans réseau, un `--config` pointant vers une URL le réclame.
 
 ## Ressources
 
