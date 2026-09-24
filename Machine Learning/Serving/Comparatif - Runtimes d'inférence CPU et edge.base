@@ -1,0 +1,34 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du sous-domaine.
+    # Le dossier Serving porte deux comparatifs sur la même `categorie:` ;
+    # celui-ci se distingue du comparatif des serveurs par le tag `edge-inference`.
+    - role == "brique"
+    - categorie == "ml/serving"
+    - file.hasTag("edge-inference")
+views:
+  - type: table
+    name: Runtimes d'inférence CPU et edge
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - langage
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-source maintenu
+    filters:
+      and:
+        - licence_type == "open-source"
+        - maturite != "deprecated"
+    order:
+      - file.name
+      - pitch
+      - langage
+    sort:
+      - property: file.name
+        direction: asc
