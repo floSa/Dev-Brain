@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: JavaScript
 scaling: single-node
-alternatives: ["[[asyncua]]"]
+alternatives: ["[[asyncua]]", "[[Telegraf]]"]
 complements: ["[[Mosquitto]]", "[[EMQX]]", "[[Docker Compose]]", "[[Authentik]]"]
 tags: [low-code, iiot, data-ingestion, self-hosted]
 url_docs: https://nodered.org/docs/
@@ -46,7 +46,7 @@ plus anciens, Pi Zero).
 
 | Prendre si | Écarter si |
 |---|---|
-| Relier vite un automate, un broker et une base par un flux visible, sans écrire de code : le cas d'une passerelle d'atelier | Une collecte de métriques pure, configurée par fichier et sans état à héberger : un agent comme Telegraf (MIT, sans fiche ici) |
+| Relier vite un automate, un broker et une base par un flux visible, sans écrire de code : le cas d'une passerelle d'atelier | Une collecte de métriques pure, configurée par fichier et sans état à héberger : un agent comme [[Telegraf]] (MIT) |
 | L'équipe d'atelier (automaticiens) doit lire et modifier le flux elle-même | Un lecteur OPC UA écrit, testé et versionné comme du code Python : [[asyncua]] |
 | Une passerelle en bordure en 64 bits (Raspberry Pi, images Docker amd64 et arm64) | Un Raspberry Pi 3b ou un Pi Zero : la 5.x ne supporte plus l'ARM 32 bits |
 | Un besoin de transformer un message à la volée (JavaScript dans un nœud Function) | Un éditeur exposé sans être protégé : il est **ouvert par défaut**, voir *Limites* |
@@ -79,7 +79,7 @@ plus anciens, Pi Zero).
 ### Alternatives
 
 - [[asyncua]] — Bibliothèque Python asynchrone, client et serveur OPC UA : lecture, écriture, abonnements, méthodes, historique, chiffrement X.509 et import de NodeSet XML ; LGPL-3.0, noyau de mainteneurs réduit, alarmes serveur non implémentées et pub/sub minimal. — le même besoin de lire un serveur OPC UA, mais en code Python versionné plutôt qu'en flux visuel.
-- voisin : **Telegraf** (MIT, InfluxData, v1.40.1 du 2026-09-21) — agent de collecte configuré en TOML, avec `inputs.opcua`, `inputs.modbus` et `inputs.mqtt_consumer` ; sans fiche dans le brain.
+- [[Telegraf]] — Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental. — le même trajet capteur vers base, décrit par un fichier TOML plutôt que dessiné en flux : rien à héberger côté navigateur, mais pas de logique de flux.
 - voisin : [[n8n]] — automatisation de workflows entre applications SaaS, pas de protocoles d'atelier ; d'autres catégories, autre licence (source-available).
 
 ### Compléments
