@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: single-node
 alternatives: ["[[TimescaleDB]]"]
-complements: ["[[EMQX]]"]
+complements: ["[[EMQX]]", "[[Telegraf]]"]
 tags: [timeseries]
 url_docs: https://docs.influxdata.com/
 url_repo: https://github.com/influxdata/influxdb
@@ -63,6 +63,7 @@ sur la pile Apache Arrow, DataFusion et Parquet.
 ### Compléments
 
 - [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — intégration de données documentée d'EMQX vers InfluxDB, sans passerelle séparée.
+- [[Telegraf]] — Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental. — l'agent d'InfluxData qui l'alimente ; `outputs.influxdb_v3` apparaît dans son CHANGELOG à la v1.38.0.
 
 ## Ressources
 
