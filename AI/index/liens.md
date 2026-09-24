@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 963 pages actives.
+> 964 pages actives.
 
 ## Par page
 
@@ -712,8 +712,8 @@
 
 ### Gitleaks  ·  brique
 - tags : `secret-scanning`, `supply-chain`, `ci-cd`
-- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Supply chain logicielle et SBOM]], [[Trivy]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]]
+- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Supply chain logicielle et SBOM]], [[Trivy]], [[pre-commit]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]], [[pre-commit]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -1610,6 +1610,11 @@
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Dify]], [[Langflow]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[mcp-protocol]], [[smolagents]]
 - liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenMAIC]], [[smolagents]]
 
+### pre-commit  ·  brique
+- tags : `git-hooks`
+- liens sortants : [[Gitleaks]], [[Outils de développement]], [[Ruff]], [[Semgrep]]
+- liens entrants : [[Gitleaks]], [[Outils de développement]], [[Ruff]], [[Semgrep]]
+
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Dask]], [[Kestra]], [[Mage]], [[Orchestration]], [[Temporal]], [[dbt Core]]
@@ -1847,8 +1852,8 @@
 
 ### Ruff  ·  brique
 - tags : `linter`, `formatter`
-- liens sortants : [[Outils de développement]], [[Semgrep]], [[uv]]
-- liens entrants : [[Comparatif - Scanners de sécurité]], [[Notebooks-as-code]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Qualité stricte]], [[Rule - Toolchain Python]], [[Semgrep]], [[jupytext]], [[uv]]
+- liens sortants : [[Outils de développement]], [[Semgrep]], [[pre-commit]], [[uv]]
+- liens entrants : [[Comparatif - Scanners de sécurité]], [[Notebooks-as-code]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Qualité stricte]], [[Rule - Toolchain Python]], [[Semgrep]], [[jupytext]], [[pre-commit]], [[uv]]
 
 ### RustFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -1927,8 +1932,8 @@
 
 ### Semgrep  ·  brique
 - tags : `sast`, `supply-chain`, `ci-cd`
-- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Ruff]], [[Supply chain logicielle et SBOM]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Ruff]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
+- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Ruff]], [[Supply chain logicielle et SBOM]], [[pre-commit]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Ruff]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[pre-commit]]
 
 ### sentence-transformers  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `reranking`, `nlp`
@@ -2952,8 +2957,8 @@
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
-- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Hypothesis]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[Hypothesis]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[DevOps]], [[Hypothesis]], [[Notebooks]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[Hypothesis]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -4941,6 +4946,7 @@
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
+- `git-hooks` : pre-commit  — pas de page concept dédiée
 - `gitops` : Argo CD, Du Compose à Kubernetes — quand changer d'échelle
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
@@ -5254,6 +5260,7 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
+- `git-hooks` (porté par : pre-commit)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
