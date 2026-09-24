@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[Ruff]]", "[[Gitleaks]]", "[[Semgrep]]"]
+complements: ["[[Ruff]]", "[[Gitleaks]]", "[[Semgrep]]", "[[mypy]]", "[[Pyright]]"]
 tags: [git-hooks]
 url_docs: https://pre-commit.com/
 url_repo: https://github.com/pre-commit/pre-commit
@@ -40,7 +40,7 @@ Version 4.6.2 du 2026-08-10, 15 603 étoiles le 2026-10-01, licence MIT.
 |---|---|
 | Faire tourner les mêmes contrôles sur chaque poste avant le commit : [[Ruff]] (lint et format), détection de secrets avec [[Gitleaks]], motifs avec [[Semgrep]] | Environnement sans accès au réseau : la page principale de pre-commit.com ne décrit aucun mode hors ligne, il faut un miroir git des dépôts de hooks **et** un miroir des paquets (PyPI, npm) |
 | Épingler les versions des outils de qualité dans le dépôt, avec `pre-commit autoupdate` pour les faire avancer | Un seul contrôle local suffit : `repo: local` avec `language: system` évite le clonage, mais alors la version de l'outil n'est plus épinglée par pre-commit |
-| Un catalogue de hooks prêt à l'emploi : le dépôt `pre-commit-hooks` et les hooks publiés par les éditeurs d'outils | Hooks de vérification de types : le hook tourne dans un environnement isolé qui ne voit pas les dépendances du projet, il faut `additional_dependencies` ou un hook local |
+| Un catalogue de hooks prêt à l'emploi : le dépôt `pre-commit-hooks` et les hooks publiés par les éditeurs d'outils | Hooks de vérification de types ([[mypy]], [[Pyright]]) : le hook tourne dans un environnement isolé qui ne voit pas les dépendances du projet, il faut `additional_dependencies` ou un hook local |
 | Les mêmes contrôles en CI sur tout le dépôt, par `pre-commit run --all-files` | Une chaîne sans Python ni Node sur le poste : un binaire unique (prek, lefthook) ou de simples scripts versionnés suffisent |
 
 ## Mise en œuvre
@@ -62,6 +62,8 @@ Version 4.6.2 du 2026-08-10, 15 603 étoiles le 2026-10-01, licence MIT.
 - [[Ruff]] — Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil. — dépôt `astral-sh/ruff-pre-commit` (version alignée sur celle de Ruff, ids `ruff-check` et `ruff-format`, `--fix` à placer avant le formateur) ; en alternative, un hook local `uv run ruff` garde une seule version, celle du verrou.
 - [[Gitleaks]] — Détecteur de secrets dans un dépôt Git, un répertoire ou un flux (MIT, Go) : 222 règles par défaut en expressions régulières, entropie et mots-clés, hook pre-commit, aucune vérification en ligne — mais l'auteur l'a déclaré « complet », sans nouvelles fonctions, et travaille sur son successeur Betterleaks ; l'action GitHub officielle n'est pas en MIT. — le dépôt publie son propre `.pre-commit-hooks.yaml` ; le hook `gitleaks` compile du Go à l'installation, `gitleaks-system` utilise le binaire déjà présent.
 - [[Semgrep]] — Analyse statique de code par motifs, en édition communautaire (moteur LGPL-2.1, Semgrep Inc.) : règles YAML, plus de 30 langages dont Python, sorties SARIF et JSON, utilisable hors ligne avec des règles locales — mais sans analyse entre fichiers ni entre fonctions, et avec des règles du registre sous une licence d'usage interne qui interdit de les redistribuer. — dépôt `semgrep/pre-commit` ; un `--config` pointant vers une URL réclame le réseau, des règles locales non.
+- [[mypy]] — Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour. — dépôt `pre-commit/mirrors-mypy` (même numéro de version que mypy) ; le hook tourne dans un environnement isolé qui ne voit pas les dépendances du projet : `additional_dependencies`, ou un hook local.
+- [[Pyright]] — Vérificateur de types statique de Microsoft (MIT, écrit en TypeScript), sans plugins : inférence plus poussée que mypy, quatre modes de rigueur, sortie JSON — mais il exige Node, et le paquet PyPI `pyright` est un wrapper communautaire non affilié à Microsoft ; Pylance, son extension VS Code, est propriétaire. — dépôt `RobertCraigie/pyright-python` ; même piège de l'environnement isolé, et le hook télécharge Node s'il n'en trouve pas.
 
 ## Ressources
 
@@ -70,4 +72,5 @@ Version 4.6.2 du 2026-08-10, 15 603 étoiles le 2026-10-01, licence MIT.
 
 ## Voir aussi
 
+- [[Qualité du code]] — le hub du sous-domaine
 - [[Outils de développement]] — le hub du domaine
