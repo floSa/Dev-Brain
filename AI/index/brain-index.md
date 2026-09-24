@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 964 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 969 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -282,7 +282,9 @@
 - **uv** — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
 ### devtools/qualite
+- **mypy** — Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour.
 - **pre-commit** — Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent.
+- **Pyright** — Vérificateur de types statique de Microsoft (MIT, écrit en TypeScript), sans plugins : inférence plus poussée que mypy, quatre modes de rigueur, sortie JSON — mais il exige Node, et le paquet PyPI `pyright` est un wrapper communautaire non affilié à Microsoft ; Pylance, son extension VS Code, est propriétaire.
 - **Ruff** — Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.
 
 ### devtools/test
@@ -761,6 +763,9 @@
 
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
+
+### devtools/qualite
+- **Typage statique en Python** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : Typage statique, typage graduel, gradual typing, type hints, annotations de type, static typing, type checking Python
 
 ### llm/agents
 - **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
@@ -1260,6 +1265,9 @@
 ### devtools/paquet
 - **Comparatif - Gestionnaires de paquets Python** — —
 
+### devtools/qualite
+- **Comparatif - Vérificateurs de types Python** — —
+
 ### llm/agent-de-code
 - **Comparatif - Assistants de code IA** — —
 
@@ -1440,6 +1448,7 @@
 - **Patterns** — Des combinaisons de briques déjà éprouvées — ce qui marche ensemble, et pourquoi ces briques-là.
 - **Plateformes data & IA** — Les suites qui couvrent tout le cycle sous une console unique — et la question qu'elles posent toutes : sur quel matériel, et à quel prix de sortie.
 - **Probabilités** — Ce qui rend l'inférence possible — les théorèmes qui disent qu'un échantillon converge, et les processus qui modélisent le hasard dans le temps.
+- **Qualité du code** — Contrôler du code Python sans l'exécuter, ou avant qu'il n'entre dans l'historique — style, types, hooks — par opposition au tester, qui exécute le code.
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.

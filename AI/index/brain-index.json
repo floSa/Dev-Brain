@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 964,
+  "count": 969,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1297,6 +1297,7 @@
       "statsforecast"
     ],
     "formatter": [
+      "Qualité du code",
       "Ruff",
       "Rule - Toolchain Python"
     ],
@@ -1337,6 +1338,7 @@
       "Video generation"
     ],
     "git-hooks": [
+      "Qualité du code",
       "pre-commit"
     ],
     "gitops": [
@@ -1733,6 +1735,7 @@
     ],
     "linter": [
       "Outils de développement",
+      "Qualité du code",
       "Ruff",
       "Rule - Qualité stricte",
       "Rule - Toolchain Python"
@@ -3722,16 +3725,27 @@
       "Tabulaire",
       "XGBoost"
     ],
+    "type-checker": [
+      "Comparatif - Vérificateurs de types Python",
+      "Pyright",
+      "Qualité du code",
+      "Typage statique en Python",
+      "mypy"
+    ],
     "type-hints": [
+      "Comparatif - Vérificateurs de types Python",
       "FastAPI",
       "Instructor",
       "Pydantic",
       "PydanticAI",
+      "Pyright",
       "Rule - Config typée",
       "Rule - Qualité stricte",
       "SQLAlchemy",
       "SQLModel",
-      "Typer"
+      "Typage statique en Python",
+      "Typer",
+      "mypy"
     ],
     "unsupervised": [
       "Analyse factorielle",
@@ -26577,7 +26591,189 @@
       "complements": [
         "[[Pydantic Settings]]",
         "[[SQLModel]]",
-        "[[pandera]]"
+        "[[pandera]]",
+        "[[mypy]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Qualité du code/Comparatif - Vérificateurs de types Python.md",
+      "nom": "Comparatif - Vérificateurs de types Python",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/qualite",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "type-checker",
+        "type-hints"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Qualité du code/Pyright.md",
+      "nom": "Pyright",
+      "alias": [
+        "pyright"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Vérificateur de types statique de Microsoft (MIT, écrit en TypeScript), sans plugins : inférence plus poussée que mypy, quatre modes de rigueur, sortie JSON — mais il exige Node, et le paquet PyPI `pyright` est un wrapper communautaire non affilié à Microsoft ; Pylance, son extension VS Code, est propriétaire.",
+      "tags": [
+        "type-checker",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[mypy]]"
+      ],
+      "complements": [
+        "[[Ruff]]",
+        "[[pre-commit]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Qualité du code/Qualité du code.md",
+      "nom": "Qualité du code",
+      "alias": [
+        "qualité de code",
+        "code quality",
+        "qualité statique"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Contrôler du code Python sans l'exécuter, ou avant qu'il n'entre dans l'historique — style, types, hooks — par opposition au tester, qui exécute le code.",
+      "tags": [
+        "linter",
+        "formatter",
+        "type-checker",
+        "git-hooks"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Qualité du code/Ruff.md",
+      "nom": "Ruff",
+      "alias": [
+        "ruff"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.",
+      "tags": [
+        "linter",
+        "formatter"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Semgrep]]",
+        "[[pre-commit]]",
+        "[[mypy]]",
+        "[[Pyright]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Qualité du code/Typage statique en Python.md",
+      "nom": "Typage statique en Python",
+      "alias": [
+        "Typage statique",
+        "typage graduel",
+        "gradual typing",
+        "type hints",
+        "annotations de type",
+        "static typing",
+        "type checking Python"
+      ],
+      "role": "notion",
+      "categorie": "devtools/qualite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "ml-eng",
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "type-checker",
+        "type-hints"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Qualité du code/mypy.md",
+      "nom": "mypy",
+      "alias": [
+        "Mypy"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour.",
+      "tags": [
+        "type-checker",
+        "type-hints"
+      ],
+      "alternatives": [
+        "[[Pyright]]"
+      ],
+      "complements": [
+        "[[Ruff]]",
+        "[[pre-commit]]",
+        "[[Pydantic]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Qualité du code/pre-commit.md",
+      "nom": "pre-commit",
+      "alias": [
+        "pre-commit hooks"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent.",
+      "tags": [
+        "git-hooks"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Ruff]]",
+        "[[Gitleaks]]",
+        "[[Semgrep]]",
+        "[[mypy]]",
+        "[[Pyright]]"
       ],
       "maturite": "production"
     },
@@ -26599,29 +26795,6 @@
       "alternatives": [],
       "complements": [
         "[[Typer]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Outils de développement/Ruff.md",
-      "nom": "Ruff",
-      "alias": [
-        "ruff"
-      ],
-      "role": "brique",
-      "categorie": "devtools/qualite",
-      "famille": "cli",
-      "langage": "Rust",
-      "domaines": null,
-      "pitch": "Linter et formateur Python écrit en Rust, 10–100× plus rapide : remplace Flake8, Black, isort, pyupgrade et leurs plugins en un seul outil.",
-      "tags": [
-        "linter",
-        "formatter"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[Semgrep]]",
-        "[[pre-commit]]"
       ],
       "maturite": "production"
     },
@@ -26711,29 +26884,6 @@
         "[[uv]]"
       ],
       "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Outils de développement/pre-commit.md",
-      "nom": "pre-commit",
-      "alias": [
-        "pre-commit hooks"
-      ],
-      "role": "brique",
-      "categorie": "devtools/qualite",
-      "famille": "cli",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent.",
-      "tags": [
-        "git-hooks"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[Ruff]]",
-        "[[Gitleaks]]",
-        "[[Semgrep]]"
-      ],
       "maturite": "production"
     },
     {
