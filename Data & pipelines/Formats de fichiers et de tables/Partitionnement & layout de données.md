@@ -57,6 +57,7 @@ tags: [partitioning, file-format, lakehouse, olap]
 - [[Architecture médaillon]] — chaque couche se partitionne selon ses propres requêtes.
 - [[ELT vs ETL & idempotence]] — la partition comme unité de rejeu.
 - [[Stream processing]] — source classique du small files problem, à compacter en aval.
+- Voir aussi : [[Trino]].
 
 ## Pour aller plus loin
 
