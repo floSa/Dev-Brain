@@ -57,6 +57,7 @@ tags: [streaming, data-pipeline, idempotence]
 - [[ELT vs ETL & idempotence]] — l'alternative micro-batch, et la clé de l'exactly-once (idempotence du sink).
 - [[Partitionnement & layout de données]] — gérer les petits fichiers générés en sortie de flux.
 - Alternative : batch incrémental planifié — plus simple à opérer quand la latence de quelques minutes est tolérable.
+- Voir aussi : [[Kafka]].
 
 ## Pour aller plus loin
 
