@@ -44,6 +44,7 @@ tags: [model-registry, experiment-tracking]
 - [[Monitoring de modèle en production]] — rattache les métriques de prod à une version précise du registre.
 - [[Data drift]] — un drift mesuré déclenche un nouveau run → une nouvelle version enregistrée.
 - [[MLflow]] — implémentation de référence (tracking + registre couplés).
+- Voir aussi : [[DVC]], [[lakeFS]], [[Delta Lake]], [[CI-CD pour le ML]].
 
 ## Pour aller plus loin
 
