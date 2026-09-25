@@ -46,6 +46,7 @@ tags: [jailbreak, safety, llm]
 - [[Guardrails]] — la défense système concrète.
 - [[RLHF and DPO]] — l'alignement que le jailbreak cherche à contourner.
 - [[Reasoning models]] — le raisonnement long ouvre de nouvelles surfaces (et défenses) de refus.
+- Voir aussi : [[garak]], [[NeMo Guardrails]].
 
 ## Pour aller plus loin
 

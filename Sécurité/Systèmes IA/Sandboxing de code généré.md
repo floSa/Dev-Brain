@@ -57,6 +57,7 @@ Un bac à sable jetable est le plus sûr : chaque exécution repart d'un état p
 - [[Human-in-the-loop]] — faire valider une action à fort enjeu plutôt que de l'isoler.
 - [[agent-loops]] — l'exécution de code est une action de la boucle, avec son coût et sa latence.
 - Alternative : **ne pas exécuter de code du tout** — restreindre l'agent à des outils fixes et audités. Beaucoup plus sûr, nettement moins capable.
+- Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[garak]], [[Comparatif - Garde-fous pour LLM]].
 
 ## Pour aller plus loin
 

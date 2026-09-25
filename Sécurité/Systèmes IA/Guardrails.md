@@ -49,6 +49,7 @@ tags: [guardrails, safety, llm]
 - [[LLM-as-judge]] — sert de garde-fou sémantique (notation de conformité).
 - [[LLM observability]] — mesurer l'efficacité et la dérive des garde-fous.
 - [[Human-in-the-loop]] — au lieu de bloquer, router une action douteuse vers une revue humaine.
+- Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[Comparatif - Garde-fous pour LLM]].
 
 ## Pour aller plus loin
 
