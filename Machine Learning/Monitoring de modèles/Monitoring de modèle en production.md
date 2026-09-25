@@ -50,6 +50,7 @@ tags: [model-monitoring, data-drift, concept-drift]
 - [[Calibration]] — la fiabilité des probabilités prédites se dégrade typiquement avec la dérive.
 - [[Evidently]] — framework qui outille les quatre couches (données, drift, performance) avec rapports, tests et dashboards.
 - [[MLflow]] — où journaliser drift et performance par version.
+- Voir aussi : [[NannyML]], [[Deepchecks]], [[Comparatif - Monitoring de modèles]], [[CI-CD pour le ML]].
 
 ## Pour aller plus loin
 

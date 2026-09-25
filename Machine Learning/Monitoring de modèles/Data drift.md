@@ -54,6 +54,7 @@ tags: [data-drift, concept-drift, model-monitoring]
 - [[MLflow]] — tracking / registre où journaliser drift et performance pour le monitoring.
 - [[Evidently]] — outillage de détection de drift et de monitoring (PSI, KS, 20+ méthodes, rapports et dashboards).
 - [[River]] — apprentissage en ligne qui s'adapte à la dérive en continu (détecteurs ADWIN / Page-Hinkley intégrés), plutôt que de la détecter pour ré-entraîner en batch.
+- Voir aussi : [[NannyML]], [[Deepchecks]], [[Comparatif - Monitoring de modèles]].
 
 ## Pour aller plus loin
 
