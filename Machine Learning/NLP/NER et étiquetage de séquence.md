@@ -52,6 +52,7 @@ tags: [nlp, ner, sequence-labeling, supervised]
 - [[embeddings]] — représentations de tokens en entrée du modèle.
 - [[Cross-entropy]] — la perte d'apprentissage (au niveau token ou séquence).
 - [[Traitement du langage naturel]] — page chapeau du sous-domaine.
+- Voir aussi : [[Label Studio]], [[Annotation de données]].
 
 ## Pour aller plus loin
 
