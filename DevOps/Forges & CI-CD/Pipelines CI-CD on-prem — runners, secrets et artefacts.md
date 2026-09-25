@@ -89,3 +89,4 @@ tags: [ci-cd, self-hosted, container, supply-chain, reproducibility]
 - **Les orchestrateurs de données** ([[Airflow]] et cousins) ne sont pas des CI : ils planifient des traitements, pas des builds.
 - **CI spécialisées pour le ML** : voir [[CI-CD pour le ML]].
 - **Autres moteurs** sans fiche : Tekton (sur Kubernetes), Concourse, Buildbot, Drone ; le comparatif dit pourquoi : [[Comparatif - CI-CD auto-hébergé]].
+- Voir aussi : [[Harbor]], [[Zot]], [[Comparatif - Registres d'images]].
