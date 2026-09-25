@@ -52,6 +52,7 @@ tags: [rag, llm, retrieval]
 - [[Hybrid retrieval]], [[Reranking]], [[Chunking strategies]] — les briques mobilisées ici.
 - [[embeddings]] — toujours la représentation de base.
 - Frameworks : [[LlamaIndex]], [[Haystack]], [[LangChain]].
+- Voir aussi : [[RAG documentaire on-prem - clé en main ou assemblé]].
 
 ## Pour aller plus loin
 

@@ -64,6 +64,7 @@ tags: [rag, llm, retrieval, local-llm, self-hosted]
 - [[LlamaIndex]] · [[Haystack]] — l'assemblage en bibliothèque.
 - [[Comparatif - Plateformes LLM auto-hébergées]] — ce que chaque plateforme permet, licence et SSO compris.
 - [[Reranking]] · [[Hybrid retrieval]] · [[GraphRAG]] — ce qu'un assemblage peut ajouter et qu'un moteur propose ou non.
+- Voir aussi : [[RAG visuel - retrouver des documents sans OCR]].
 
 ## Pour aller plus loin
 
