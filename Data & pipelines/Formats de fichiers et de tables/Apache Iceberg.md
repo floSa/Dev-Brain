@@ -51,7 +51,7 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 
 - Installation — bibliothèques par langage : cœur Java, PyIceberg, Rust, Go
 - Point d'entrée — aucune API propre : un moteur ([[Spark]], Trino, [[Flink]], [[DuckDB]]) lit et écrit les tables
-- Prérequis — un catalogue qui suit les métadonnées (REST catalog, AWS Glue, Hive Metastore, Nessie, Polaris) et un stockage objet (S3, MinIO, HDFS) ; vérifier quelle version de spec (v1 / v2 / v3) le moteur retenu supporte
+- Prérequis — un catalogue qui suit les métadonnées (REST catalog, AWS Glue, Hive Metastore, Nessie, Polaris) et un stockage objet (S3, [[MinIO]], HDFS ; MinIO est un projet archivé, voir sa fiche ; [[SeaweedFS]], [[Garage]] ou [[Ceph]] comme alternatives) ; vérifier quelle version de spec (v1 / v2 / v3) le moteur retenu supporte
 - Exécution — rien à exécuter en propre : le calcul est celui du moteur, le stockage celui de l'objet
 - Coût — gratuit, Apache-2.0 ; les catalogues managés (AWS Glue, Snowflake, Databricks) sont facturés
 

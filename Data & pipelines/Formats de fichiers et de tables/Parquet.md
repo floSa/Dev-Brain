@@ -41,7 +41,7 @@ ligne à jour, c'est réécrire un fichier entier.
 | Prendre si | Écarter si |
 |---|---|
 | Scans analytiques lisant peu de colonnes sur beaucoup de lignes | Écriture ou append enregistrement par enregistrement, messages de flux → [[Avro]] |
-| Stockage durable de tables sur object storage (S3, MinIO), lu par [[DuckDB]], [[Spark]], [[Polars]], ClickHouse | Mises à jour fréquentes de lignes, OLTP → [[Postgres]] |
+| Stockage durable de tables sur object storage (S3, [[MinIO]] — projet archivé, voir sa fiche ; [[SeaweedFS]], [[Garage]] ou [[Ceph]] comme alternatives), lu par [[DuckDB]], [[Spark]], [[Polars]], ClickHouse | Mises à jour fréquentes de lignes, OLTP → [[Postgres]] |
 | Interop colonnaire via Apache Arrow / PyArrow, en lecture quasi zéro-copie | Sémantique de table — ACID, time travel, évolution de schéma → [[Apache Iceberg]], couche posée par-dessus Parquet |
 | Compression forte et requêtes sélectives sur de gros volumes | Le *small files problem* : beaucoup de petits fichiers font exploser le coût des métadonnées, prévoir une compaction |
 | | Taille de row group à régler selon le moteur et le stockage ; schéma à tenir cohérent entre les fichiers d'un même jeu, et rien n'est lisible à l'œil |
