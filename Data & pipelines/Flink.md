@@ -67,7 +67,7 @@ et `EXACTLY_ONCE` (transactions Kafka, lisibles sans doublon par un consommateur
 - Installation — distribution Apache ; cluster JobManager + TaskManagers sur Kubernetes, YARN ou standalone
 - Point d'entrée — API DataStream, Table API et Flink SQL, ou PyFlink
 - Prérequis — une JVM et son tuning mémoire, un state backend (RocksDB, système de fichiers distribué) ; la migration 1.x → 2.0 n'est pas triviale, l'architecture d'état ayant été revue
-- Exécution — self-hébergé en cluster, ou managé : Amazon Managed Service for Apache Flink, Ververica, Confluent, Decodable
+- Exécution — self-hébergé en cluster, ou managé : Amazon Managed Service for Apache Flink, Ververica, Confluent (Confluent Cloud for Apache Flink ; Confluent est passé sous IBM, rachat finalisé le 2026-03-17), Decodable (racheté par Redis, annonce du 2025-09-04)
 - Coût — gratuit en self-host, Apache-2.0 ; le coût réel est l'exploitation — état et checkpoints — pas la licence
 
 ## Écosystème
