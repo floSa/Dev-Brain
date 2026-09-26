@@ -44,7 +44,7 @@ tags: [dimensionality-reduction, manifold, unsupervised]
 
 - [[Réduction de dimension]] — la famille ; PGA en est la branche non euclidienne.
 - [[PCA]] — le cas plat dont PGA est l'extension.
-- t-SNE, UMAP, Isomap, autoencodeurs — autres réductions non linéaires (apprises, non riemanniennes) hors brain.
+- [[t-SNE and UMAP]], [[Manifold learning|Isomap]], [[Autoencodeurs]] — autres réductions non linéaires (apprises, non riemanniennes).
 
 ## Pour aller plus loin
 
