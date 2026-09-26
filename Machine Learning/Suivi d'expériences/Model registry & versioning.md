@@ -17,7 +17,7 @@ tags: [model-registry, experiment-tracking]
 ## Concepts clés
 
 ### Versions & stades
-- Chaque réentraînement crée une **version** immuable. Les versions transitent par des **stades** : `None` → `Staging` → `Production` → `Archived` (modèle MLflow historique), ou des **alias** mobiles modernes (`champion`, `challenger`) déplacés d'une version à l'autre.
+- Chaque réentraînement crée une **version** immuable. Les versions se désignent par des **alias** mobiles (`champion`, `challenger`) déplacés d'une version à l'autre ; les **stades** `None` → `Staging` → `Production` → `Archived` de MLflow sont dépréciés depuis la 2.9.0.
 - La promotion est une **décision gouvernée** (validation, revue), pas un simple `git push`.
 
 ### Lignage (lineage)
@@ -34,7 +34,7 @@ tags: [model-registry, experiment-tracking]
 ## En pratique
 
 - Le registre est alimenté par le **suivi d'expériences** : on enregistre le meilleur run, on le promeut. [[MLflow]] couple les deux (Tracking + Model Registry).
-- Promouvoir = changer le stade / l'alias, **pas** recopier des fichiers : les consommateurs (serving) chargent « la version `Production` » par référence stable.
+- Promouvoir = déplacer l'alias (ou, dans l'ancien schéma, changer le stade), **pas** recopier des fichiers : les consommateurs (serving) chargent « la version `champion` » par référence stable.
 - Versionner aussi les **données** et le code, sinon le lignage est troué (un modèle n'est reproductible que si ses entrées le sont).
 - Brancher le déploiement sur le registre : le [[Déploiement de modèles|rollout]] consomme la version promue, le [[Monitoring de modèle en production|monitoring]] reporte sur cette version.
 
@@ -48,5 +48,5 @@ tags: [model-registry, experiment-tracking]
 
 ## Pour aller plus loin
 
-- Versionnage de données complémentaire (DVC, lakeFS, Delta) pour boucler le lignage.
+- Versionnage de données complémentaire ([[DVC]], [[lakeFS]], [[Delta Lake]]) pour boucler le lignage.
 - Documentation MLflow Model Registry — stades, alias et webhooks de promotion.
