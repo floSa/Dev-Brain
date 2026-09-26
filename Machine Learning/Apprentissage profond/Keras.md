@@ -66,3 +66,4 @@ Une API de deep learning centrée sur la productivité : on décrit un réseau c
 ## Voir aussi
 
 - [[Apprentissage profond]] — le hub du domaine
+- [[Rétropropagation et différentiation automatique]] — le calcul de gradient que les backends de Keras 3 fournissent derrière `fit`
