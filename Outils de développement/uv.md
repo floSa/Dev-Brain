@@ -27,7 +27,9 @@ url_repo: https://github.com/astral-sh/uv
 
 ## Définition
 
-Gestionnaire de paquets et de projets Python écrit par Astral, les auteurs de [[Ruff]]. Un
+Gestionnaire de paquets et de projets Python écrit par Astral, les auteurs de [[Ruff]] — qui a
+annoncé le 2026-03-19 un accord pour rejoindre OpenAI (équipe Codex), en promettant de continuer
+à développer Ruff, uv et ty publiquement, avec la communauté ; aucune clôture annoncée trouvée au 2026-10-01. Un
 résolveur natif et un cache global partagé entre projets rendent l'installation dix à cent
 fois plus rapide que pip. Surtout, c'est un outil **unique** : il absorbe les rôles de pip,
 pip-tools, pipx, poetry, pyenv, virtualenv et twine — projet décrit dans `pyproject.toml`,
@@ -62,6 +64,7 @@ télécharge et installe.
 
 - Documentation — https://docs.astral.sh/uv/
 - Dépôt — https://github.com/astral-sh/uv
+- Article — https://astral.sh/blog/openai (annonce d'Astral, 2026-03-19)
 
 ## Voir aussi
 
