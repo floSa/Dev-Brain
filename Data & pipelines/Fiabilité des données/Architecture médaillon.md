@@ -57,5 +57,5 @@ tags: [data-modeling, data-pipeline, lakehouse, data-quality]
 ## Pour aller plus loin
 
 - Implémentations de référence : Databricks (origine du terme « medallion »), équivalents sur Iceberg + dbt.
-- Format de table sous-jacent : [[Apache Iceberg]] (ACID, time travel) — service Dev.
-- Outil de transformation entre couches : dbt (modèles SQL versionnés) — non encore fiché.
+- Format de table sous-jacent : [[Apache Iceberg]] (ACID, time travel) — brique du brain.
+- Outil de transformation entre couches : [[dbt Core]] (modèles SQL versionnés), ou [[SQLMesh]].
