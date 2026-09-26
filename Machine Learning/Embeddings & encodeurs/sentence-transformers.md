@@ -94,5 +94,7 @@ jours, relevés le 2026-09-30.
 - [[Choisir un modèle d'embedding]] — la notion sœur : quel modèle charger, et ce que les benchmarks ne disent pas
 - [[Comparatif - Embeddings]] — ce qui départage les outils et les modèles du dossier
 - [[Recherche d'information]] · [[Reranking]] · [[RAG]] — ses usages
+- [[Apprentissage contrastif]] — les pertes contrastives (`MultipleNegativesRankingLoss`) qui servent à le fine-tuner
+- [[Méta-apprentissage et few-shot learning]] — l'encodeur comme embedding d'une classification few-shot par prototypes
 - [[PyTorch]] — le framework de calcul sous-jacent
 - [[Comparatif - NLP]] — ce qui départage les outils de la chaîne texte
