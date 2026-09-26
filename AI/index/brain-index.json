@@ -2724,6 +2724,9 @@
     "perplexity": [
       "Perplexity"
     ],
+    "pii": [
+      "Presidio"
+    ],
     "planning": [
       "AlphaZero and self-play",
       "Monte Carlo Tree Search",
@@ -2943,6 +2946,10 @@
     "recon": [
       "Sécurité",
       "Web-Check"
+    ],
+    "red-teaming": [
+      "garak",
+      "promptfoo"
     ],
     "regression": [
       "Analyse de survie",
@@ -11925,7 +11932,6 @@
         "[[AutoGen]]",
         "[[OpenAI Agents SDK]]",
         "[[smolagents]]",
-        "[[Letta]]",
         "[[PraisonAI]]"
       ],
       "complements": [],
@@ -11983,7 +11989,6 @@
         "[[OpenAI Agents SDK]]",
         "[[Agno]]",
         "[[smolagents]]",
-        "[[Letta]]",
         "[[swarm-forge]]",
         "[[PraisonAI]]"
       ],
@@ -12063,7 +12068,6 @@
         "[[OpenAI Agents SDK]]",
         "[[Agno]]",
         "[[smolagents]]",
-        "[[Letta]]",
         "[[swarm-forge]]",
         "[[PraisonAI]]"
       ],
@@ -12265,8 +12269,7 @@
         "[[CrewAI]]",
         "[[AutoGen]]",
         "[[Agno]]",
-        "[[smolagents]]",
-        "[[Letta]]"
+        "[[smolagents]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -12512,7 +12515,6 @@
         "[[CrewAI]]",
         "[[Agno]]",
         "[[AutoGen]]",
-        "[[Letta]]",
         "[[PraisonAI]]"
       ],
       "complements": [],
@@ -14065,11 +14067,6 @@
         "tool-use"
       ],
       "alternatives": [
-        "[[Agno]]",
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[OpenAI Agents SDK]]",
-        "[[smolagents]]",
         "[[OpenViking]]",
         "[[Mem0]]",
         "[[Graphiti]]",
@@ -16623,7 +16620,8 @@
         "llm",
         "llm-eval",
         "testing",
-        "ai-security"
+        "ai-security",
+        "red-teaming"
       ],
       "alternatives": [
         "[[DeepEval]]",
@@ -30440,7 +30438,8 @@
       "tags": [
         "privacy",
         "ner",
-        "ai-security"
+        "ai-security",
+        "pii"
       ],
       "alternatives": [],
       "complements": [
@@ -30551,7 +30550,8 @@
         "ai-security",
         "prompt-injection",
         "jailbreak",
-        "llm-eval"
+        "llm-eval",
+        "red-teaming"
       ],
       "alternatives": [
         "[[promptfoo]]"
