@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 982 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 987 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -889,6 +889,7 @@
 - **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
 
 ### math/theorie-apprentissage
+- **Double descente et généralisation des grands modèles** — domaines : data-sci, ml-eng · alias : Double descente, double descent, deep double descent, model-wise double descent, epoch-wise double descent, seuil d'interpolation, interpolation threshold, surparamétrisation, overparameterization, benign overfitting, surapprentissage bénin, interpolation, multiple descent
 - **Generalization bounds** — domaines : data-sci, ml-eng · alias : Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap
 - **No Free Lunch theorem** — domaines : data-sci, ml-eng · alias : Théorème No Free Lunch, No Free Lunch, NFL, pas de repas gratuit, théorème du pas de modèle universel
 - **PAC learning** — domaines : data-sci, ml-eng · alias : Apprentissage PAC, Probably Approximately Correct, PAC, PAC learnability, apprenabilité PAC
@@ -900,6 +901,7 @@
 
 ### ml/apprentissage-profond
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
+- **Apprentissage contrastif** — domaines : ml-eng, ai-eng · alias : Contrastive learning, apprentissage par contraste, perte contrastive, InfoNCE, NT-Xent, SimCLR, MoCo, CLIP, BYOL, VICReg, SimSiam, SigLIP, négatifs, collapse de représentation, température
 - **Architectures hybrides LLM** — domaines : ml-eng, ai-eng · alias : hybrid attention, architecture hybride, hybrid linear attention, ratio 3:1, Kimi Linear, Qwen3-Next, Nemotron-3, Jamba, MiniMax-01, interleaved attention
 - **Attention linéaire** — domaines : ml-eng, ai-eng · alias : linear attention, attention sans softmax, DeltaNet, Gated DeltaNet, GDN, KDA, règle delta, delta rule, mémoire associative, RWKV, Transformers are RNNs
 - **Attention Residuals** — domaines : ml-eng, ai-eng · alias : AttnRes, Block AttnRes, résiduels par attention, attention sur la profondeur, depth-wise attention, dilution PreNorm
@@ -920,9 +922,12 @@
 - **Mixed precision** — domaines : ml-eng · alias : Mixed precision, précision mixte, AMP, automatic mixed precision, fp16, bf16, float16, bfloat16, loss scaling, autocast, half precision, demi-précision
 - **Mixture of Experts** — domaines : ml-eng, ai-eng · alias : MoE, mélange d'experts, sparse MoE, Switch Transformer, experts conditionnels, top-k routing, fine-grained experts, shared experts, DeepSeekMoE, ratio de sparsité, expert parallelism
 - **Multi-head Latent Attention** — domaines : ml-eng, ai-eng · alias : MLA, attention latente multi-tête, latent attention, compression du KV-cache, low-rank KV compression, decoupled RoPE
+- **Méta-apprentissage et few-shot learning** — domaines : ml-eng, ai-eng · alias : Méta-apprentissage, meta-learning, learning to learn, apprendre à apprendre, few-shot learning, apprentissage à partir de peu d'exemples, one-shot learning, MAML, Reptile, réseaux prototypiques, prototypical networks, matching networks, apprentissage en contexte, in-context learning, épisodes, N-way K-shot
+- **Normalisation et initialisation des réseaux** — domaines : ml-eng · alias : Normalisation des réseaux, initialisation des poids, BatchNorm, batch normalization, LayerNorm, layer normalization, GroupNorm, group normalization, RMSNorm, pré-norme, post-norme, pre-LN, post-LN, Xavier, Glorot, initialisation de He, Kaiming, internal covariate shift, QK-norm
 - **Positional encoding** — domaines : ml-eng, ai-eng · alias : encodage de position, encodage positionnel, RoPE, rotary embeddings, ALiBi, sinusoidal positional encoding
 - **Pruning** — domaines : ml-eng, ai-eng · alias : Pruning, élagage, élagage de modèle, sparsity, sparsité, structured pruning, unstructured pruning, élagage structuré, élagage non structuré, magnitude pruning, lottery ticket
 - **Quantization** — domaines : ml-eng, ai-eng · alias : Quantification, quantisation, INT8, INT4, FP8, GGUF, GPTQ, AWQ, PTQ, QAT, K-quants, NVFP4, MXFP4, FP4, microscaling, block scaling, quantization 4 bits
+- **Rétropropagation et différentiation automatique** — domaines : ml-eng, data-sci · alias : Rétropropagation, rétropropagation du gradient, backpropagation, backprop, différentiation automatique, automatic differentiation, autodiff, mode inverse, reverse-mode AD, mode avant, forward-mode AD, gradients qui disparaissent, gradients qui explosent, vanishing gradient, exploding gradient, gradient clipping, torch.autograd, jax.grad, no_grad, detach, produit hessienne-vecteur
 - **Self-attention** — domaines : ml-eng, ai-eng · alias : auto-attention, scaled dot-product attention, multi-head attention, MHA, attention QKV, cross-attention
 - **Speech models** — domaines : ml-eng, ai-eng · alias : ASR, TTS, speech-to-text, text-to-speech, reconnaissance vocale, synthèse vocale, Whisper, modèles de parole, speech-to-speech
 - **State Space Models** — domaines : ml-eng, ai-eng · alias : SSM, modèles à espace d'états, Mamba, Mamba-2, Mamba-3, S4, S5, selective state space, linear-time sequence model, MIMO, discrétisation trapézoïdale

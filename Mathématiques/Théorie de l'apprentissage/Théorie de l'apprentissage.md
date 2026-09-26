@@ -33,6 +33,7 @@ tags: [learning-theory, pac-learning, vc-dimension, rademacher-complexity, gener
 
 <!-- AUTO:START -->
 ### Notions
+- [[Double descente et généralisation des grands modèles]] — domaines : data-sci, ml-eng
 - [[Generalization bounds]] — domaines : data-sci, ml-eng
 - [[No Free Lunch theorem]] — domaines : data-sci, ml-eng
 - [[PAC learning]] — domaines : data-sci, ml-eng
