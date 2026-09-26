@@ -50,5 +50,5 @@ tags: [data-versioning]
 
 ## Pour aller plus loin
 
-- Outils non encore fichés : **DVC** (Git-centric, MLOps), **lakeFS** (Git sur object store), Git LFS, Delta Lake / Iceberg (time travel) — candidats `Dev/Services/` (`data/versioning`).
+- Outils fichés : [[DVC]] (Git-centric, MLOps ; racheté par lakeFS le 2025-11-18, reste Apache-2.0), [[lakeFS]] (Git sur object store ; BSL 1.1 depuis la v1.87.0, au lieu d'Apache-2.0), [[Delta Lake]] et [[Apache Iceberg]] (time travel). Seul Git LFS n'a pas de fiche.
 - Notion connexe : *data lineage* — tracer la donnée de la source au livrable.
