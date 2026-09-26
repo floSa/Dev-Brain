@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 978,
+  "count": 982,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1102,6 +1102,14 @@
       "sweetviz",
       "ydata-profiling"
     ],
+    "edge-inference": [
+      "Comparatif - Runtimes d'inférence CPU et edge",
+      "Inférence en bordure - modèles sur du matériel d'atelier",
+      "LiteRT",
+      "ONNX Runtime",
+      "OpenVINO",
+      "TensorRT"
+    ],
     "education": [
       "OpenMAIC"
     ],
@@ -1123,6 +1131,7 @@
       "DuckDB",
       "Faiss",
       "LanceDB",
+      "LiteRT",
       "Lucene",
       "SQLite",
       "ScaNN",
@@ -1512,6 +1521,7 @@
     "iiot": [
       "Données industrielles",
       "EMQX",
+      "Inférence en bordure - modèles sur du matériel d'atelier",
       "Mosquitto",
       "Node-RED",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
@@ -1546,19 +1556,23 @@
     "inference": [
       "BentoML",
       "Comparatif - Exécution & serving LLM",
+      "Comparatif - Runtimes d'inférence CPU et edge",
       "Comparatif - Serving de modèles",
       "Déploiement de modèles",
       "Embeddings & encodeurs",
       "FastEmbed",
       "Inference optimization",
       "Infinity",
+      "Inférence en bordure - modèles sur du matériel d'atelier",
       "KServe",
       "LM Studio",
       "LiteLLM",
+      "LiteRT",
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ollama",
       "OpenRouter",
+      "OpenVINO",
       "Ray Serve",
       "Runtimes",
       "SGLang",
@@ -2303,10 +2317,12 @@
       "Embeddings & encodeurs",
       "Google Cloud Vertex AI",
       "Infinity",
+      "Inférence en bordure - modèles sur du matériel d'atelier",
       "KServe",
       "Microsoft Azure Machine Learning",
       "NVIDIA Triton",
       "ONNX Runtime",
+      "OpenVINO",
       "Ray Serve",
       "Runtimes",
       "SGLang",
@@ -2796,10 +2812,13 @@
       "Apprentissage profond",
       "Choisir un modèle d'embedding",
       "Comparatif - Exécution & serving LLM",
+      "Comparatif - Runtimes d'inférence CPU et edge",
       "Fine-tuning",
       "LM Studio",
+      "LiteRT",
       "ONNX Runtime",
       "Ollama",
+      "OpenVINO",
       "Quantization",
       "Runtimes",
       "TensorRT",
@@ -4724,7 +4743,6 @@
       "nom": "Neo4j",
       "alias": [
         "neo4j",
-        "neo4J",
         "neo 4j"
       ],
       "role": "brique",
@@ -9242,7 +9260,7 @@
       "famille": "paquet",
       "langage": "Python",
       "domaines": null,
-      "pitch": "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.",
+      "pitch": "Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.",
       "tags": [
         "ocr",
         "document-parsing",
@@ -21368,6 +21386,25 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Serving/Comparatif - Runtimes d'inférence CPU et edge.md",
+      "nom": "Comparatif - Runtimes d'inférence CPU et edge",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/serving",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "inference",
+        "edge-inference",
+        "quantization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Serving/Comparatif - Serving de modèles.md",
       "nom": "Comparatif - Serving de modèles",
       "alias": null,
@@ -21417,6 +21454,37 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Serving/Inférence en bordure - modèles sur du matériel d'atelier.md",
+      "nom": "Inférence en bordure - modèles sur du matériel d'atelier",
+      "alias": [
+        "Inférence en bordure : modèles sur du matériel d'atelier",
+        "inférence en bordure",
+        "inférence edge",
+        "edge inference",
+        "edge AI",
+        "inférence sur site",
+        "IA en bordure"
+      ],
+      "role": "notion",
+      "categorie": "ml/serving",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "edge-inference",
+        "inference",
+        "iiot",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Serving/KServe.md",
       "nom": "KServe",
       "alias": [
@@ -21449,6 +21517,36 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Serving/LiteRT.md",
+      "nom": "LiteRT",
+      "alias": [
+        "TensorFlow Lite",
+        "TFLite",
+        "ai-edge-litert",
+        "Google AI Edge LiteRT",
+        "tflite-runtime"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "paquet",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Runtime d'inférence de Google pour modèles .tflite (ex TensorFlow Lite, renommé en 2024), cœur C++ avec API Python, Kotlin, JavaScript et Swift : CPU via XNNPACK, GPU et NPU selon la plate-forme, conversion PyTorch par litert-torch encore en bêta, aucun serveur intégré ; Apache-2.0.",
+      "tags": [
+        "inference",
+        "edge-inference",
+        "quantization",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[ONNX Runtime]]"
+      ],
+      "complements": [
+        "[[Ultralytics YOLO]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Serving/NVIDIA Triton.md",
       "nom": "NVIDIA Triton",
       "alias": [
@@ -21477,7 +21575,8 @@
       ],
       "complements": [
         "[[TensorRT]]",
-        "[[ONNX Runtime]]"
+        "[[ONNX Runtime]]",
+        "[[OpenVINO]]"
       ],
       "maturite": "production"
     },
@@ -21497,16 +21596,50 @@
       "pitch": "Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.",
       "tags": [
         "inference",
+        "edge-inference",
         "model-serving",
         "inference-optimization",
         "gpu",
         "quantization"
       ],
       "alternatives": [
-        "[[TensorRT]]"
+        "[[TensorRT]]",
+        "[[OpenVINO]]",
+        "[[LiteRT]]"
       ],
       "complements": [
         "[[NVIDIA Triton]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Serving/OpenVINO.md",
+      "nom": "OpenVINO",
+      "alias": [
+        "OpenVINO Toolkit",
+        "Intel OpenVINO",
+        "OpenVINO Runtime",
+        "openvino-toolkit"
+      ],
+      "role": "brique",
+      "categorie": "ml/serving",
+      "famille": "paquet",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Boîte à outils d'inférence d'Intel en C++, API Python, C et Node.js : lit ONNX, PyTorch, TensorFlow et TFLite, optimise pour CPU, GPU intégré et NPU Intel, avec un plug-in CPU ARM listé comme supporté mais sans support AMD ; quantification NNCF et serveur OpenVINO Model Server ; Apache-2.0.",
+      "tags": [
+        "inference",
+        "edge-inference",
+        "model-serving",
+        "quantization"
+      ],
+      "alternatives": [
+        "[[ONNX Runtime]]",
+        "[[TensorRT]]"
+      ],
+      "complements": [
+        "[[NVIDIA Triton]]",
+        "[[Ultralytics YOLO]]"
       ],
       "maturite": "production"
     },
@@ -21648,13 +21781,15 @@
       "pitch": "SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.",
       "tags": [
         "inference",
+        "edge-inference",
         "inference-optimization",
         "model-serving",
         "gpu",
         "quantization"
       ],
       "alternatives": [
-        "[[ONNX Runtime]]"
+        "[[ONNX Runtime]]",
+        "[[OpenVINO]]"
       ],
       "complements": [
         "[[NVIDIA Triton]]"
@@ -24385,7 +24520,9 @@
       "complements": [
         "[[supervision]]",
         "[[Label Studio]]",
-        "[[CVAT]]"
+        "[[CVAT]]",
+        "[[OpenVINO]]",
+        "[[LiteRT]]"
       ],
       "maturite": "production"
     },

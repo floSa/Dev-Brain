@@ -112,7 +112,7 @@
 
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`, `data-versioning`
-- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[Trino]], [[dbt Core]]
+- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Ceph]], [[Comparatif - Versionnage de données]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Flink]], [[Garage]], [[MinIO]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[SeaweedFS]], [[Spark]], [[Trino]], [[dbt Core]]
 - liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Delta Lake]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[Versionnage de données]], [[dbt Core]], [[lakeFS]]
 
 ### Apache NiFi  ·  brique
@@ -278,7 +278,7 @@
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[lakeFS]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[lakeFS]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Garage]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[croc]], [[lakeFS]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
@@ -372,7 +372,7 @@
 
 ### croc  ·  brique
 - tags : `file-transfer`, `networking`, `cryptography`, `cli`, `self-hosted`
-- liens sortants : [[MinIO]], [[Réseau]], [[Sniffnet]]
+- liens sortants : [[Ceph]], [[Garage]], [[MinIO]], [[Réseau]], [[SeaweedFS]], [[Sniffnet]]
 - liens entrants : [[Réseau]]
 
 ### CuPy  ·  brique
@@ -473,7 +473,7 @@
 ### Deepchecks  ·  brique
 - tags : `model-monitoring`, `data-drift`, `model-evaluation`, `data-validation`
 - liens sortants : [[Airflow]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Evidently]], [[GitHub Actions]], [[Monitoring de modèle en production]], [[NannyML]]
-- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[Serving]]
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
@@ -517,7 +517,7 @@
 
 ### Docker  ·  brique
 - tags : `container`
-- liens sortants : [[Ansible]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Jenkins]], [[Podman]], [[Trivy]], [[Woodpecker CI]], [[Zot]]
+- liens sortants : [[Ansible]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[Garage]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Jenkins]], [[Podman]], [[SeaweedFS]], [[Trivy]], [[Woodpecker CI]], [[Zot]]
 - liens entrants : [[Ansible]], [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Trivy]], [[Web-Check]], [[Woodpecker CI]], [[Zot]]
 
 ### Docker Compose  ·  brique
@@ -693,7 +693,7 @@
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[Métriques, logs et traces]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[Parquet]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]]
 
 ### garak  ·  brique
 - tags : `ai-security`, `prompt-injection`, `jailbreak`, `llm-eval`
@@ -1238,7 +1238,7 @@
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[lakeFS]]
-- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[croc]], [[dlt]], [[lakeFS]]
+- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[MLflow]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[croc]], [[dlt]], [[lakeFS]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
@@ -1252,7 +1252,7 @@
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
-- liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[DVC]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]], [[lakeFS]]
+- liens sortants : [[Aim]], [[Ceph]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[DVC]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Garage]], [[MinIO]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[SeaweedFS]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]], [[lakeFS]]
 - liens entrants : [[Aim]], [[CI-CD pour le ML]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Kubeflow]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]], [[lakeFS]]
 
 ### Modal  ·  brique
@@ -1303,7 +1303,7 @@
 ### NannyML  ·  brique
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
 - liens sortants : [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Monitoring de modèle en production]]
-- liens entrants : [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]]
+- liens entrants : [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Serving]]
 
 ### NATS  ·  brique
 - tags : `message-broker`, `distributed`, `self-hosted`
@@ -1552,7 +1552,7 @@
 
 ### Parquet  ·  brique
 - tags : `file-format`, `columnar`, `olap`
-- liens sortants : [[Airbyte]], [[Apache Arrow]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Delta Lake]], [[DuckDB]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[Spark]], [[dbt Core]], [[dlt]]
+- liens sortants : [[Airbyte]], [[Apache Arrow]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Ceph]], [[Delta Lake]], [[DuckDB]], [[Garage]], [[MinIO]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[SeaweedFS]], [[Spark]], [[dbt Core]], [[dlt]]
 - liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Partitionnement & layout de données]], [[Spark]], [[Trino]], [[dbt Core]], [[dlt]]
 
 ### pdf-inspector  ·  brique
@@ -1953,7 +1953,7 @@
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2937,7 +2937,7 @@
 
 ### Interprétabilité  ·  hub
 - tags : `explainability`, `deep-learning`, `transformers`, `llm`, `model-evaluation`
-- liens sortants : [[Attribution par gradient]], [[Captum]], [[Comparatif - Explicabilité]], [[Data leakage]], [[Evidently]], [[Explicabilité des modèles]], [[Interprétabilité mécaniste]], [[LIME]], [[Probing]], [[SAELens]], [[SHAP]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Superposition]], [[Tabulaire]], [[TransformerLens]], [[interpreto]], [[nnsight]]
+- liens sortants : [[Attribution par gradient]], [[Captum]], [[Comparatif - Explicabilité]], [[Data leakage]], [[Evidently]], [[Explicabilité des modèles]], [[Interprétabilité mécaniste]], [[LIME]], [[Monitoring de modèles]], [[Probing]], [[SAELens]], [[SHAP]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Superposition]], [[Tabulaire]], [[TransformerLens]], [[interpreto]], [[nnsight]]
 - liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[Tabulaire]]
 
 ### LLM & IA générative  ·  hub
@@ -2978,7 +2978,7 @@
 ### Monitoring de modèles  ·  hub
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
 - liens sortants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Grafana]], [[Monitoring de modèle en production]], [[NannyML]], [[Prometheus]]
-- liens entrants : [[Comparatif - Monitoring de modèles]], [[Evidently]], [[Machine Learning]]
+- liens entrants : [[Comparatif - Monitoring de modèles]], [[Evidently]], [[Interprétabilité]], [[Machine Learning]], [[Serving]]
 
 ### Médias  ·  hub
 - tags : `video-editing`, `media-player`, `speech`, `multimodal`
@@ -3102,7 +3102,7 @@
 
 ### Serving  ·  hub
 - tags : `model-serving`, `inference`, `deployment-strategy`, `kubernetes`, `gpu`, `inference-optimization`
-- liens sortants : [[Apprentissage profond]], [[BentoML]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Data drift]], [[Distillation]], [[Données industrielles]], [[Déploiement de modèles]], [[Evidently]], [[Feast]], [[Feature store — concept]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[KServe]], [[LiteRT]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[Pruning]], [[Quantization]], [[Ray Serve]], [[Runtimes]], [[Seldon Core]], [[Suivi d'expériences]], [[Séries temporelles]], [[Tabulaire]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens sortants : [[Apprentissage profond]], [[BentoML]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Data drift]], [[Deepchecks]], [[Distillation]], [[Données industrielles]], [[Déploiement de modèles]], [[Evidently]], [[Feast]], [[Feature store — concept]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[KServe]], [[LiteRT]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NVIDIA Triton]], [[NannyML]], [[ONNX Runtime]], [[OpenVINO]], [[Pruning]], [[Quantization]], [[Ray Serve]], [[Runtimes]], [[Seldon Core]], [[Suivi d'expériences]], [[Séries temporelles]], [[Tabulaire]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 - liens entrants : [[Apprentissage profond]], [[Infinity]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[MLOps]], [[Machine Learning]], [[Suivi d'expériences]], [[Séries temporelles]], [[Text Embeddings Inference]], [[Vision]]
 
 ### Signal & audio  ·  hub

@@ -12,7 +12,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 
 - Un comparatif ne décrit aucune brique : il dit **ce qui les sépare**. On l'ouvre quand on hésite entre deux outils du même thème, pas quand on cherche à comprendre l'un d'eux.
 - Chaque page embarque une vue `.base` — un tableau qui se remplit seul, filtré sur `categorie:` ou sur un tag — puis une section « Ce qui départage », une puce par membre, écrite à la main. C'est cette section qui porte l'arbitrage ; le tableau ne fait que le préparer.
-- **Ce dossier ne porte aucun comparatif, et c'est voulu.** Les 47 pages vivent dans le dossier du domaine qu'elles comparent, à côté des briques qu'elles départagent : c'est ce qui les rend trouvables par `ls`, et la règle de propagation en dépend (`brain-v3.md` §10, ligne P3). Ce hub est le seul endroit qui les réunit toutes — son périmètre est un `role:`, pas un dossier, comme celui des six pages de `Métiers/`.
+- **Ce dossier ne porte aucun comparatif, et c'est voulu.** Les 72 pages vivent dans le dossier du domaine qu'elles comparent, à côté des briques qu'elles départagent : c'est ce qui les rend trouvables par `ls`, et la règle de propagation en dépend (`brain-v3.md` §10, ligne P3). Ce hub est le seul endroit qui les réunit toutes — son périmètre est un `role:`, pas un dossier, comme celui des six pages de `Métiers/`.
 - La liste ci-dessous est **générée** par `AI/scripts/build_mocs.py` depuis `role: comparatif`. Elle n'est pas tenue à la main : une liste manuelle mentirait au premier comparatif ajouté, et personne ne s'en apercevrait.
 
 ## Choisir
@@ -96,6 +96,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Orchestrateurs ML]]
 - [[Comparatif - Plateformes data & IA]]
 - [[Comparatif - Reinforcement learning]]
+- [[Comparatif - Runtimes d'inférence CPU et edge]]
 - [[Comparatif - Réduction de dimension]]
 - [[Comparatif - Serving de modèles]]
 - [[Comparatif - Suivi d'expériences ML]]
