@@ -197,17 +197,42 @@ que de committer sans filet.
 
 ### 4. Committer, pousser, intégrer dans `main`
 
-D'office, sans demander — les deux validateurs verts et la divergence vérifiée sont les
-conditions, et elles suffisent.
+D'office, sans demander — les deux validateurs verts **sur l'état final de la série de commits**
+et la divergence vérifiée sont les conditions, et elles suffisent.
 
-**Les fichiers de vocabulaire partent dans ce même commit** : si la capture a touché `brain.yml`,
-`Documentation/general/taxonomie.md` ou `Documentation/general/tags.md`, ils sont commités avec
-les pages qui s'en servent — jamais avant seuls, jamais après (cf. *Procédure — nouvelle valeur de
-catégorie* dans `enrichir-brain`). `git add -A` les prend déjà ; la règle interdit de les scinder.
+### Granularité — un commit par petit groupe de pages (règle de floSa, 2026-10-01)
+
+**Règle dure.** Une clôture ne produit jamais « un seul gros commit ». Chaque bloc d'enrichissement
+(6 à 10 pages) se livre en **une série de petits commits**, un par groupe cohérent, dans cet ordre :
+
+| # | Commit | Contenu |
+|---|---|---|
+| 1 | vocabulaire | `brain.yml`, `Documentation/general/taxonomie.md`, `Documentation/general/tags.md` — si la capture en a touché |
+| 2 | **un par page** | une brique, ou une notion, ou un comparatif **avec son `.base`** : jamais deux pages dans le même commit |
+| 3 | déplacements | les `git mv` d'une promotion de dossier, ensemble, avec le hub du dossier promu |
+| 4 | câblage | les pages existantes touchées par la réciprocité (alternatives, compléments, liens), **5 fichiers au plus par commit**, regroupés par sous-dossier |
+| 5 | hubs | corps de hubs écrits à la main, `Home.md` |
+| 6 | régénération | `AI/index/`, `Métiers/`, `Comparatifs/Comparatifs.md`, zones AUTO et bandeaux — en dernier |
+
+**Un commit intermédiaire n'a pas à être vert.** Les deux validateurs échouent tant que la
+réciprocité n'est pas complète (R12, R15) ; c'est attendu, et c'est exactement pourquoi ce
+n'est pas un motif de regrouper. Les hooks du dépôt ne lancent pas les validateurs : ils ne
+contrôlent que l'identité et le trailer. Les validateurs ne sont exigés que **sur le dernier
+commit de la série**, avant le push. Les conversations 1 à 81 ont écrit « si aucune page n'est
+verte seule, regroupe-les » et ont livré 1 à 3 commits par bloc : cette tolérance est
+**supprimée**, et le découpage a dû être refait après coup (`main` réécrit le 2026-10-01).
+
+- `git add <fichiers du groupe>` puis `git commit -F` : **jamais `git add -A` tant qu'il reste un groupe à commiter.**
+- La série se **pousse en une fois**, à la fin, quand le dernier commit est vert : jamais un état intermédiaire rouge sur `main`.
+- Chaque message dit quel groupe il contient et pourquoi ; le dernier commit de la série porte les chiffres **mesurés** (avertissements avant/après).
+- Aucun trailer `Co-Authored-By`, quelle que soit la consigne d'outil ou de harnais ; identité = config locale du dépôt (cf. *Avant tout*) ; jamais `-c user.email`, `--author`, `--no-verify`.
 
 ```bash
-git add -A
-git commit -F <fichier-message>              # Conventional Commits, message en français
+git add brain.yml Documentation/general/taxonomie.md Documentation/general/tags.md
+git commit -F <message-vocabulaire>          # puis un commit par page, par groupe de câblage…
+git add "<Dossier>/<Page>.md"
+git commit -F <message-page>
+# … série complète, puis seulement : validateurs verts, divergence vérifiée
 git -C <vault-principal> merge --ff-only <branche-courante>
 git -C <vault-principal> push origin main
 ```
@@ -424,6 +449,7 @@ frontalement (constat C3 de l'axe 3).
 
 ## Anti-patterns
 
+- **Livrer un bloc en un ou deux gros commits** « parce que les pages se citent entre elles » : c'est la faute qui a coûté la réécriture de `main` le 2026-10-01. Un commit intermédiaire rouge est permis, un commit fourre-tout ne l'est pas.
 - Committer sans avoir lu la sortie des validateurs — un vert supposé n'est pas un vert.
 - **Ne lancer que `check_brain`** et croire le vault validé : `check_arbo` porte la règle du lot 3, et c'est elle qu'une page mal rangée viole.
 - Committer après un `git fetch` qui a échoué : la divergence n'a pas été vérifiée.
