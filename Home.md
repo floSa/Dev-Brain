@@ -9,26 +9,26 @@ tags: [meta]
 
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
-- [[Machine Learning]] — 85 briques, 9 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]]
-- [[LLM & IA générative]] — 74 briques, 6 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]]
-- [[Bases de données]] — 47 briques, 4 sous-domaines
-- [[Statistiques & inférence]] — 10 briques
-- [[Data & pipelines]] — 65 briques, 7 sous-domaines
-- [[Mathématiques]] — 1 brique
-- [[Outils de développement]] — 20 briques, 1 sous-domaine
-- [[Signal & audio]] — 3 briques
-- [[Design & diagrammes]] — 7 briques, 1 sous-domaine
+- [[Machine Learning]] — 105 briques, 15 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Plateformes data & IA]], [[Socle]], [[Évaluation de modèles]]
+- [[LLM & IA générative]] — 97 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
+- [[Bases de données]] — 58 briques, 5 sous-domaines
+- [[Statistiques & inférence]] — 10 briques, 4 sous-domaines
+- [[Data & pipelines]] — 85 briques, 10 sous-domaines
+- [[Mathématiques]] — 1 brique, 4 sous-domaines
+- [[Outils de développement]] — 24 briques, 2 sous-domaines
+- [[Signal & audio]] — 3 briques, 1 sous-domaine
+- [[Design & diagrammes]] — 8 briques, 1 sous-domaine
 - [[Calcul distribué]] — 7 briques
-- [[Web & API]] — 6 briques
-- [[Stockage]] — 6 briques
+- [[Web & API]] — 10 briques, 1 sous-domaine
+- [[Stockage]] — 9 briques
 - [[Automatisation no-code]] — 5 briques
 - [[Médias]] — 4 briques
 - [[Interfaces & apps data]] — 4 briques
-- [[Sécurité]] — 13 briques, 3 sous-domaines
-- [[Observabilité]] — 3 briques
+- [[Sécurité]] — 17 briques, 3 sous-domaines
+- [[Observabilité]] — 12 briques
 - [[Réseau]] — 2 briques
 - [[Documents]] — 2 briques
-- [[DevOps]] — 2 briques
+- [[DevOps]] — 16 briques, 2 sous-domaines
 
 ## Métiers — les 6 axes transverses
 
@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 47 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 72 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 
