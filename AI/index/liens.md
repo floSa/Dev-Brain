@@ -703,7 +703,7 @@
 ### Gemma  ·  brique
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`, `vision-language`
 - liens sortants : [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Ollama]], [[Qwen]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[TRL]], [[Unsloth]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[ColPali]], [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[RAG visuel - retrouver des documents sans OCR]], [[SGLang]], [[Small Language Models]], [[TRL]], [[Unsloth]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[ColPali]], [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[RAG visuel - retrouver des documents sans OCR]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[TRL]], [[Unsloth]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
 
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
@@ -738,7 +738,7 @@
 ### gpt-oss  ·  brique
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`
 - liens sortants : [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Ollama]], [[Qwen]], [[Reasoning models]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[Reasoning models]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[Reasoning models]], [[Vision Language Models]], [[llama.cpp]], [[vLLM]]
 
 ### Gradio  ·  brique
 - tags : `ml-demo`, `web-framework`
@@ -1953,7 +1953,7 @@
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2053,7 +2053,7 @@
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
 - liens sortants : [[Apache Arrow]], [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Delta Lake]], [[DuckDB]], [[Great Expectations]], [[OpenLineage]], [[Parquet]], [[Polars]], [[Ray]], [[SQLMesh]], [[dbt Core]], [[lakeFS]], [[pandera]]
-- liens entrants : [[Apache Arrow]], [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Delta Lake]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Hyperopt]], [[OpenLineage]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[dbt Core]], [[lakeFS]], [[pandera]]
+- liens entrants : [[Apache Arrow]], [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Delta Lake]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Hyperopt]], [[OpenLineage]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[Stream processing]], [[dbt Core]], [[lakeFS]], [[pandera]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
@@ -3383,7 +3383,7 @@
 ### Autoencodeurs  ·  notion
 - tags : `deep-learning`, `unsupervised`, `representation-learning`, `dimensionality-reduction`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Diffusion models]], [[Détection d'outliers multivariée]], [[GANs]], [[KL divergence]], [[Keras]], [[Manifold learning]], [[PCA]], [[PyOD]], [[PyTorch]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Time series anomaly detection]], [[embeddings]], [[t-SNE and UMAP]]
-- liens entrants : [[Apprentissage profond]], [[Diffusion models]], [[PCA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]]
+- liens entrants : [[Apprentissage profond]], [[Diffusion models]], [[PCA]], [[PGA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]]
 
 ### Bagging  ·  notion
 - tags : `supervised`, `ensemble`, `bagging`
@@ -4053,7 +4053,7 @@
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[PCA]], [[PGA]], [[Réduction de dimension]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Non supervisé]], [[Réduction de dimension]], [[t-SNE and UMAP]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Non supervisé]], [[PGA]], [[Réduction de dimension]], [[t-SNE and UMAP]]
 
 ### MANOVA et tests multivariés  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `multivariate`, `effect-size`
@@ -4207,7 +4207,7 @@
 
 ### Métriques, logs et traces  ·  notion
 - tags : `observability`, `metrics`, `logging`, `tracing`
-- liens sortants : [[Ceph]], [[Garage]], [[Grafana]], [[LLM observability]], [[Loki]], [[MinIO]], [[Monitoring de modèle en production]], [[Netdata]], [[OpenTelemetry]], [[Prometheus]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
+- liens sortants : [[Ceph]], [[Garage]], [[Grafana]], [[LLM observability]], [[Loki]], [[MinIO]], [[Monitoring de modèle en production]], [[Netdata]], [[OpenTelemetry]], [[Prometheus]], [[SLO et alerting]], [[SeaweedFS]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
 - liens entrants : [[Grafana]], [[Loki]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]]
 
 ### Naive Bayes  ·  notion
@@ -4337,7 +4337,7 @@
 
 ### PGA  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
-- liens sortants : [[PCA]], [[Réduction de dimension]]
+- liens sortants : [[Autoencodeurs]], [[Manifold learning]], [[PCA]], [[Réduction de dimension]], [[t-SNE and UMAP]]
 - liens entrants : [[Analyse factorielle]], [[Manifold learning]], [[PCA]], [[Réduction de dimension]]
 
 ### Pipelines CI-CD on-prem — runners, secrets et artefacts  ·  notion
@@ -4467,7 +4467,7 @@
 
 ### Reasoning models  ·  notion
 - tags : `reasoning`, `llm`, `alignment`
-- liens sortants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Comparatif - Modèles de langage open weights]], [[GRPO]], [[Inference optimization]], [[Licences de modèles open weights]], [[Mistral]], [[Qwen]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[gpt-oss]], [[vLLM]]
+- liens sortants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Comparatif - Modèles de langage open weights]], [[GRPO]], [[Gemma]], [[Inference optimization]], [[Licences de modèles open weights]], [[Mistral]], [[Qwen]], [[RL for LLMs]], [[RLHF and DPO]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[gpt-oss]], [[vLLM]]
 - liens entrants : [[Calculs adaptatifs]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[GRPO]], [[Gemma]], [[Harnais d'agent]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[LLM benchmarks]], [[Mistral]], [[Modèles de langage]], [[Qwen]], [[RL for LLMs]], [[Reward modeling]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Synthetic data generation]], [[gpt-oss]], [[vLLM]], [[Évaluation]]
 
 ### Recherche d'information  ·  notion
@@ -4682,7 +4682,7 @@
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
-- liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Partitionnement & layout de données]]
+- liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Partitionnement & layout de données]], [[Spark]]
 - liens entrants : [[Architecture pilotée par les événements]], [[Avro]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Flink]], [[Messagerie]], [[Partitionnement & layout de données]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
 
 ### Structured outputs  ·  notion
@@ -4733,7 +4733,7 @@
 ### t-SNE and UMAP  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Clustering hiérarchique par densité]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
-- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[Non supervisé]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
+- liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[Non supervisé]], [[PCA]], [[PGA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
 
 ### Test du khi-deux  ·  notion
 - tags : `hypothesis-testing`, `p-value`
@@ -4862,7 +4862,7 @@
 
 ### Vision Language Models  ·  notion
 - tags : `vision-language`, `multimodal`, `transformers`, `llm`
-- liens sortants : [[Architectures CNN]], [[CNN]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[Image generation]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de fondation vision]], [[PEFT]], [[Qwen]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
+- liens sortants : [[Architectures CNN]], [[CNN]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[Image generation]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de fondation vision]], [[PEFT]], [[Qwen]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[gpt-oss]]
 - liens entrants : [[Gemma]], [[Image generation]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Qwen]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
 
 ### Vision par ordinateur  ·  notion

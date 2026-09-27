@@ -82,6 +82,6 @@ Les trois s'annoncent « on-premise » en avant-vente. Il faut demander lequel d
 
 ## Pour aller plus loin
 
-- [[Comparatif - Plateformes data & IA]] — les huit suites du dossier, et le critère qui les départage vraiment.
+- [[Comparatif - Plateformes data & IA]] — les neuf suites du dossier, dont [[Kubeflow]], seule plateforme open source sans éditeur, et le critère qui les départage vraiment.
 - [[Plateformes data & IA]] — le hub du dossier.
 - [[Architecture médaillon]] — le découpage en couches que ces plateformes présupposent souvent.

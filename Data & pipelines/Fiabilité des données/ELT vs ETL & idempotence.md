@@ -28,7 +28,7 @@ tags: [data-pipeline, idempotence]
 
 ### Idempotence
 - Un traitement est idempotent si l'appliquer une fois ou N fois donne le même résultat. C'est ce qui permet de relancer un job en échec sans corrompre les données.
-- Mécanismes courants : écriture par `MERGE`/upsert sur clé, `INSERT OVERWRITE` d'une partition entière, `DELETE`+`INSERT` bornés par fenêtre, plutôt qu'un `INSERT` aveugle qui duplique.
+- Mécanismes courants : écriture par `MERGE`/upsert sur clé, `INSERT OVERWRITE` d'une partition entière, `DELETE`+`INSERT` bornés par fenêtre, plutôt qu'un `INSERT` aveugle qui duplique. Un mécanisme nommé n'est pas pour autant idempotent : trois *kinds* de [[SQLMesh]] ne le sont pas (`INCREMENTAL_BY_UNIQUE_KEY`, `INCREMENTAL_BY_PARTITION`, `INCREMENTAL_UNMANAGED`), et un restatement peut y perdre des données.
 
 ### Reruns & backfills
 - **Rerun** : rejouer un run échoué — n'est sûr que si l'étape est idempotente.
@@ -54,5 +54,5 @@ tags: [data-pipeline, idempotence]
 
 ## Pour aller plus loin
 
-- Transformation ELT en code : dbt (modèles SQL versionnés, tests, matérialisations incrémentales) — service non encore fiché.
+- Transformation ELT en code : [[dbt Core]] (modèles SQL versionnés, tests, matérialisations incrémentales).
 - Principe directeur : *functional data engineering* (Maxime Beauchemin) — tâches pures, partitions immuables, rejeu déterministe.

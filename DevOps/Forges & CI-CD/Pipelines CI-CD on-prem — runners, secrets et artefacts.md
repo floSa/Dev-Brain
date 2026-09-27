@@ -50,7 +50,7 @@ tags: [ci-cd, self-hosted, container, supply-chain, reproducibility]
 
 - **Cache** : ce que l'on retélécharge sinon (paquets, couches). Il est **au mieux** : GitLab précise que la mise en cache est une optimisation, pas une garantie, et que des projets différents ne partagent pas le cache. **Artefact** : un résultat à passer d'une étape à l'autre ou à garder, avec une expiration (30 jours par défaut chez GitLab).
 - **Le cache est un vecteur d'empoisonnement.** GitHub le nomme *cache poisoning* : un déclencheur peu fiable (demande de fusion, commentaire) peut y écrire ce qu'un pipeline de confiance restaurera ensuite. Sa parade : seuls `push`, `workflow_dispatch` et `schedule` écrivent dans le cache de la branche par défaut, les autres lisent seulement. Le cache GitHub : 10 Go par dépôt, expiré après 7 jours sans accès.
-- **Plusieurs runners sans disque commun** : le cache se met sur un stockage objet compatible S3 (GitLab le documente), soit [[MinIO]], [[SeaweedFS]], [[Garage]] ou [[Ceph]] chez soi.
+- **Plusieurs runners sans disque commun** : le cache se met sur un stockage objet compatible S3 (GitLab le documente), soit [[SeaweedFS]], [[Garage]] ou [[Ceph]] chez soi ([[MinIO]], longtemps le choix par défaut, est archivé depuis le 2026-04-25).
 - **Les données d'un pipeline ML** ne passent pas par l'artefact de CI : c'est le travail de [[DVC]] et du stockage objet, pas de la CI.
 
 ### Registre d'images interne

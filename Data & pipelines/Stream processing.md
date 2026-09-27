@@ -43,7 +43,7 @@ tags: [streaming, data-pipeline, idempotence]
 
 ## En pratique
 
-- Moteur de référence en brain : [[Flink]] — vrai streaming stateful, event-time/watermarks natifs, exactly-once par checkpointing. Alternatives hors brain : Spark Structured Streaming (micro-batch), Kafka Streams (bibliothèque couplée à Kafka).
+- Moteur de référence en brain : [[Flink]] — vrai streaming stateful, event-time/watermarks natifs, exactly-once par checkpointing. Alternatives : [[Spark]] Structured Streaming (micro-batch) ; hors brain : Kafka Streams, bibliothèque de [[Kafka]] sans fiche propre, couplée à lui.
 - Raisonner d'abord en **event-time** et fixer la politique de watermark / late data **avant** de coder les fenêtres : c'est là que se logent les bugs silencieux.
 - Rendre les sinks **idempotents** (upsert par clé) : c'est ce qui transforme un at-least-once robuste en résultat exactly-once observable, sans dépendre d'un commit transactionnel parfait.
 - Côté stockage aval : un sink streaming produit beaucoup de petits fichiers → prévoir la compaction. Cf. [[Partitionnement & layout de données]].
@@ -62,4 +62,4 @@ tags: [streaming, data-pipeline, idempotence]
 ## Pour aller plus loin
 
 - Le « Dataflow model » (Google) — cadre de référence event-time / windowing / watermarks / triggers.
-- Bus de messages amont : Apache Kafka (source/sink de flux le plus courant) — candidat service Dev.
+- Bus de messages amont : [[Kafka]] (source/sink de flux le plus courant).
