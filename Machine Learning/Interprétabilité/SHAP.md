@@ -65,3 +65,4 @@ Le standard de fait de l'[[Explicabilité des modèles]] post-hoc. Chaque variab
 - [[Explicabilité des modèles]] — le cadre qu'il outille : Shapley, et l'articulation local ↔ global
 - [[Comparatif - Explicabilité|Comparatif — Explicabilité]] — ce qui départage les outils du dossier
 - [[XGBoost]] · [[LightGBM]] · [[CatBoost]] — les modèles où TreeSHAP est exact et natif
+- [[Équité et biais algorithmique]] — voir ce qui pèse dans une prédiction n'est pas mesurer un critère d'équité
