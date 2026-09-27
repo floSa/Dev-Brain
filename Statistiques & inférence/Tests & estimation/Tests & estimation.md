@@ -43,6 +43,8 @@ tags: [statistical-inference, hypothesis-testing, confidence-interval, p-value, 
 - [[Intervalles de confiance]] — domaines : data-sci
 - [[MANOVA et tests multivariés]] — domaines : data-sci
 - [[Maximum de vraisemblance]] — domaines : data-sci
+- [[Modèles à effets mixtes]] — domaines : data-sci
+- [[Prédiction conforme]] — domaines : data-sci
 - [[Test du khi-deux]] — domaines : data-sci
 - [[Test t et ANOVA]] — domaines : data-sci
 - [[Tests d'hypothèse]] — domaines : data-sci

@@ -29,4 +29,12 @@ tags: [causal-inference, statistical-inference]
 - Planifier l'expérience elle-même → [[A-B testing]], au dossier [[Statistiques & inférence]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Diff-in-Diff]] — domaines : data-sci
+- [[Découverte causale]] — domaines : data-sci
+- [[Inférence causale]] — domaines : data-sci
+- [[Modélisation d'uplift]] — domaines : data-sci
+
+### Briques
+- [[CausalImpact]] — Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.
 <!-- AUTO:END -->

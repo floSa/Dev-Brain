@@ -43,16 +43,11 @@ tags: [statistical-inference, bayesian, causal-inference, factor-analysis]
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Analyse factorielle]] · [[Bayésien]] · [[Probabilités]] · [[Tests & estimation]]
+- [[Analyse factorielle]] · [[Bayésien]] · [[Méthodes causales]] · [[Probabilités]] · [[Tests & estimation]]
 
 ### Notions
 - [[A-B testing|A/B testing]] — domaines : data-sci
 - [[CUPED]] — domaines : data-sci
-- [[Diff-in-Diff]] — domaines : data-sci
-- [[Inférence causale]] — domaines : data-sci
 - [[Multi-armed bandits]] — domaines : data-sci
 - [[Sequential testing]] — domaines : data-sci
-
-### Briques
-- [[CausalImpact]] — Effet causal d'une intervention par séries temporelles structurelles bayésiennes — contrefactuel prédit depuis des séries de contrôle.
 <!-- AUTO:END -->
