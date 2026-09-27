@@ -67,4 +67,5 @@ coexiste avec l'API par classes, et les deux ne se mélangent pas.
 ## Voir aussi
 
 - [[Régression linéaire]] · [[GLM]] · [[GAM]] · [[Test t et ANOVA]] · [[Tests d'hypothèse]] — les notions implémentées
+- [[Modèles à effets mixtes]] · [[Modèles de Markov cachés et filtre de Kalman]] — `MixedLM` et le module `tsa.statespace` (filtre de Kalman, régimes de Markov)
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier

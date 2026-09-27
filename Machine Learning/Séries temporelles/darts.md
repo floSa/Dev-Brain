@@ -70,6 +70,8 @@ réconciliation hiérarchique et détection d'anomalies.
 ## Voir aussi
 
 - [[Forecasting framing]] — la notion que son backtesting matérialise : horizon, covariables, origine glissante
+- [[Prédiction conforme]] — la garantie de couverture derrière ses modèles conformes
+- [[Modèles de Markov cachés et filtre de Kalman]] — le cadre de son `KalmanFilter`
 - [[PyTorch]] — le backend (Lightning) de ses modèles neuronaux
 - [[LightGBM]] · [[XGBoost]] · [[CatBoost]] — les gradient boostings qu'il enveloppe comme modèles de prévision
 - [[Comparatif - Forecasting]] — ce qui départage les briques du dossier

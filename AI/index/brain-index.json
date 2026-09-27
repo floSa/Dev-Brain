@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 992,
+  "count": 998,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -336,7 +336,10 @@
       "CausalImpact",
       "Comparatif - Outils stats",
       "Diff-in-Diff",
+      "Découverte causale",
       "Inférence causale",
+      "Modélisation d'uplift",
+      "Méthodes causales",
       "Statistiques & inférence"
     ],
     "cdc": [
@@ -543,6 +546,7 @@
     "confidence-interval": [
       "Bootstrap",
       "Intervalles de confiance",
+      "Prédiction conforme",
       "Tests & estimation",
       "scipy.stats"
     ],
@@ -1211,6 +1215,7 @@
     "experimentation": [
       "A/B testing",
       "CUPED",
+      "Modélisation d'uplift",
       "Multi-armed bandits",
       "Sequential testing"
     ],
@@ -1323,6 +1328,7 @@
       "Foundation models pour séries temporelles",
       "Hierarchical forecasting",
       "Intermittent demand",
+      "Modèles de Markov cachés et filtre de Kalman",
       "Prophet",
       "Séries temporelles",
       "Time series feature engineering",
@@ -1769,6 +1775,7 @@
       "Analyse discriminante",
       "GAM",
       "GLM",
+      "Modèles à effets mixtes",
       "Régression linéaire",
       "Régression logistique",
       "Régression quantile",
@@ -2104,6 +2111,7 @@
       "Chaînes de Markov",
       "MCMC",
       "Markov Decision Process",
+      "Modèles de Markov cachés et filtre de Kalman",
       "Probabilités",
       "PyMC",
       "Stan"
@@ -2284,6 +2292,7 @@
       "NannyML",
       "Optimisation d'hyperparamètres",
       "Perplexity",
+      "Prédiction conforme",
       "ROC-AUC / courbe PR",
       "Ranking metrics",
       "Regression metrics",
@@ -2982,6 +2991,8 @@
       "GLM",
       "Gaussian Process",
       "Maintenance prédictive et RUL",
+      "Modèles à effets mixtes",
+      "Modélisation d'uplift",
       "Perceptron et MLP",
       "Regression metrics",
       "Régression",
@@ -3478,10 +3489,14 @@
     ],
     "statistical-inference": [
       "Comparatif - Outils stats",
+      "Découverte causale",
       "Inférence bayésienne",
       "Inférence causale",
       "Intervalles de confiance",
       "Maximum de vraisemblance",
+      "Modèles à effets mixtes",
+      "Méthodes causales",
+      "Prédiction conforme",
       "Statistiques & inférence",
       "Tests & estimation",
       "Tests d'hypothèse",
@@ -3499,6 +3514,7 @@
     "stochastic-process": [
       "Autocorrelation",
       "Chaînes de Markov",
+      "Modèles de Markov cachés et filtre de Kalman",
       "Mouvement brownien",
       "Probabilités",
       "Processus de Poisson",
@@ -29058,7 +29074,34 @@
       "maturite": null
     },
     {
-      "path": "Statistiques & inférence/CausalImpact.md",
+      "path": "Statistiques & inférence/Multi-armed bandits.md",
+      "nom": "Multi-armed bandits",
+      "alias": [
+        "MAB",
+        "bandit manchot",
+        "bandits",
+        "Epsilon-Greedy",
+        "Thompson Sampling",
+        "exploration-exploitation"
+      ],
+      "role": "notion",
+      "categorie": "stats/experimentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "experimentation",
+        "multi-armed-bandit"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Méthodes causales/CausalImpact.md",
       "nom": "CausalImpact",
       "alias": [
         "tfcausalimpact",
@@ -29081,7 +29124,7 @@
       "maturite": "production"
     },
     {
-      "path": "Statistiques & inférence/Diff-in-Diff.md",
+      "path": "Statistiques & inférence/Méthodes causales/Diff-in-Diff.md",
       "nom": "Diff-in-Diff",
       "alias": [
         "DiD",
@@ -29106,7 +29149,48 @@
       "maturite": null
     },
     {
-      "path": "Statistiques & inférence/Inférence causale.md",
+      "path": "Statistiques & inférence/Méthodes causales/Découverte causale.md",
+      "nom": "Découverte causale",
+      "alias": [
+        "causal discovery",
+        "structure learning causale",
+        "apprentissage de structure causale",
+        "causal structure learning",
+        "PC algorithm",
+        "algorithme PC",
+        "FCI",
+        "GES",
+        "greedy equivalence search",
+        "LiNGAM",
+        "NOTEARS",
+        "d-séparation",
+        "d-separation",
+        "CPDAG",
+        "classe d'équivalence de Markov",
+        "Markov equivalence class",
+        "varsortability",
+        "fidélité",
+        "faithfulness",
+        "suffisance causale"
+      ],
+      "role": "notion",
+      "categorie": "stats/causal",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "causal-inference",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Méthodes causales/Inférence causale.md",
       "nom": "Inférence causale",
       "alias": [
         "causal inference",
@@ -29136,18 +29220,35 @@
       "maturite": null
     },
     {
-      "path": "Statistiques & inférence/Multi-armed bandits.md",
-      "nom": "Multi-armed bandits",
+      "path": "Statistiques & inférence/Méthodes causales/Modélisation d'uplift.md",
+      "nom": "Modélisation d'uplift",
       "alias": [
-        "MAB",
-        "bandit manchot",
-        "bandits",
-        "Epsilon-Greedy",
-        "Thompson Sampling",
-        "exploration-exploitation"
+        "uplift modeling",
+        "uplift",
+        "modélisation de l'uplift",
+        "effet incrémental",
+        "CATE",
+        "conditional average treatment effect",
+        "effet de traitement hétérogène",
+        "heterogeneous treatment effects",
+        "HTE",
+        "meta-learner",
+        "S-learner",
+        "T-learner",
+        "X-learner",
+        "R-learner",
+        "DR-learner",
+        "causal tree",
+        "arbre causal",
+        "causal forest",
+        "forêt causale",
+        "courbe de Qini",
+        "Qini",
+        "AUUC",
+        "ciblage marketing"
       ],
       "role": "notion",
-      "categorie": "stats/experimentation",
+      "categorie": "stats/causal",
       "famille": null,
       "langage": null,
       "domaines": [
@@ -29155,8 +29256,33 @@
       ],
       "pitch": null,
       "tags": [
+        "causal-inference",
         "experimentation",
-        "multi-armed-bandit"
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Méthodes causales/Méthodes causales.md",
+      "nom": "Méthodes causales",
+      "alias": [
+        "causal methods",
+        "méthodes causales",
+        "inférence causale et découverte causale"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": "Passer de « ces deux choses varient ensemble » à « celle-ci fait varier celle-là » — estimer un effet sans randomisation simple, par individu, ou retrouver le graphe qui le porte.",
+      "tags": [
+        "causal-inference",
+        "statistical-inference"
       ],
       "alternatives": null,
       "complements": null,
@@ -29231,6 +29357,50 @@
       "tags": [
         "probability",
         "convergence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Modèles de Markov cachés et filtre de Kalman.md",
+      "nom": "Modèles de Markov cachés et filtre de Kalman",
+      "alias": [
+        "HMM",
+        "hidden Markov model",
+        "modèle de Markov caché",
+        "Kalman filter",
+        "filtre de Kalman",
+        "state-space model",
+        "modèle à espace d'états",
+        "modèle d'état latent",
+        "Baum-Welch",
+        "Viterbi",
+        "forward-backward",
+        "EKF",
+        "UKF",
+        "extended Kalman filter",
+        "unscented Kalman filter",
+        "particle filter",
+        "filtre particulaire",
+        "RTS smoother",
+        "lisseur de Kalman",
+        "HSMM",
+        "linear Gaussian state-space model",
+        "LGSSM"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "stochastic-process",
+        "markov",
+        "forecasting"
       ],
       "alternatives": null,
       "complements": null,
@@ -29588,6 +29758,89 @@
         "maximum-likelihood",
         "point-estimation",
         "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Modèles à effets mixtes.md",
+      "nom": "Modèles à effets mixtes",
+      "alias": [
+        "mixed effects models",
+        "mixed models",
+        "modèles mixtes",
+        "modèles linéaires mixtes",
+        "LMM",
+        "linear mixed model",
+        "multilevel model",
+        "modèle multiniveau",
+        "modèle hiérarchique",
+        "random effects",
+        "effets aléatoires",
+        "random intercept",
+        "intercept aléatoire",
+        "random slope",
+        "pente aléatoire",
+        "REML",
+        "pseudo-réplication",
+        "pseudoreplication",
+        "partial pooling",
+        "lme4",
+        "MixedLM"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-inference",
+        "regression",
+        "linear-model"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Prédiction conforme.md",
+      "nom": "Prédiction conforme",
+      "alias": [
+        "conformal prediction",
+        "conformal inference",
+        "inférence conforme",
+        "split conformal",
+        "conformal split",
+        "jackknife+",
+        "CV+",
+        "full conformal",
+        "ensembles de prédiction",
+        "prediction sets",
+        "intervalle de prédiction",
+        "distribution-free",
+        "couverture marginale",
+        "couverture conditionnelle",
+        "conformal risk control",
+        "adaptive conformal inference",
+        "ACI",
+        "MAPIE"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-inference",
+        "confidence-interval",
+        "model-evaluation"
       ],
       "alternatives": null,
       "complements": null,

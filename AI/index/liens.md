@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 992 pages actives.
+> 998 pages actives.
 
 ## Par page
 
@@ -268,7 +268,7 @@
 ### CausalImpact  ·  brique
 - tags : `causal-inference`, `bayesian`, `timeseries`
 - liens sortants : [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[statsmodels]]
-- liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Statistiques & inférence]]
+- liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Celery  ·  brique
 - tags : `task-queue`, `orchestration`, `distributed`
@@ -397,8 +397,8 @@
 
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
-- liens sortants : [[CatBoost]], [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[LightGBM]], [[Prophet]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens sortants : [[CatBoost]], [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[LightGBM]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prophet]], [[Prédiction conforme]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
@@ -1622,8 +1622,8 @@
 
 ### pmdarima  ·  brique
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Séries temporelles]], [[darts]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
+- liens entrants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Séries temporelles]], [[darts]], [[statsforecast]]
 
 ### Podman  ·  brique
 - tags : `container`, `self-hosted`
@@ -1737,8 +1737,8 @@
 
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
-- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Stan]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Stan]], [[Statistiques & inférence]]
+- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Modèles à effets mixtes]], [[Stan]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[Stan]], [[Statistiques & inférence]]
 
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
@@ -2087,18 +2087,18 @@
 
 ### Stan  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`
-- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Statistiques & inférence]]
+- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[PyMC]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[PyMC]], [[Statistiques & inférence]]
 
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
-- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]]
+- liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[Prédiction conforme]], [[darts]], [[neuralforecast]], [[pmdarima]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]]
 
 ### statsmodels  ·  brique
 - tags : `statistical-inference`, `hypothesis-testing`, `parametric-test`, `p-value`
-- liens sortants : [[Comparatif - Outils stats]], [[GAM]], [[GLM]], [[Régression linéaire]], [[Scikit-Learn]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
-- liens entrants : [[CausalImpact]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence causale]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Tests & estimation]], [[pingouin]], [[scipy.stats]]
+- liens sortants : [[Comparatif - Outils stats]], [[GAM]], [[GLM]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles à effets mixtes]], [[Régression linéaire]], [[Scikit-Learn]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
+- liens entrants : [[CausalImpact]], [[Comparatif - Outils stats]], [[Diff-in-Diff]], [[Inférence causale]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles à effets mixtes]], [[Régression]], [[Régression quantile]], [[Scikit-Learn]], [[Statistiques & inférence]], [[Tests & estimation]], [[pingouin]], [[scipy.stats]]
 
 ### Stirling PDF  ·  brique
 - tags : `pdf`, `ocr`, `self-hosted`
@@ -2990,6 +2990,11 @@
 - liens sortants : [[Agent memory]], [[Cognee]], [[Comparatif - Mémoire pour agents]], [[Graphiti]], [[Headroom]], [[Letta]], [[Mem0]], [[OpenViking]], [[ai-memory]]
 - liens entrants : [[Cognee]], [[Graphiti]], [[LLM & IA générative]], [[Mem0]]
 
+### Méthodes causales  ·  hub
+- tags : `causal-inference`, `statistical-inference`
+- liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Inférence causale]], [[Modélisation d'uplift]], [[Multi-armed bandits]], [[Sequential testing]], [[Statistiques & inférence]]
+- liens entrants : [[Statistiques & inférence]]
+
 ### NLP  ·  hub
 - tags : `nlp`, `ner`, `sequence-labeling`, `text-classification`, `information-retrieval`, `tokenization`, `string-matching`
 - liens sortants : [[BM25]], [[Classification de texte]], [[Comparatif - NLP]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[LLM & IA générative]], [[NER et étiquetage de séquence]], [[NLTK]], [[Recherche]], [[Recherche d'information]], [[SetFit]], [[TF-IDF]], [[Traitement du langage naturel]], [[Vectoriel]], [[embeddings]], [[pytorch-crf]], [[sentence-transformers]], [[sentencepiece]], [[seqeval]], [[spaCy]]
@@ -3052,7 +3057,7 @@
 
 ### Probabilités  ·  hub
 - tags : `probability`, `convergence`, `concentration`, `stochastic-process`, `markov`, `monte-carlo`
-- liens sortants : [[Bayésien]], [[Chaînes de Markov]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[MCMC]], [[Mathématiques]], [[Mouvement brownien]], [[Processus de Poisson]], [[Tests & estimation]], [[Théorème central limite]], [[scipy.stats]]
+- liens sortants : [[Bayésien]], [[Chaînes de Markov]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[MCMC]], [[Mathématiques]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Processus de Poisson]], [[Tests & estimation]], [[Théorème central limite]], [[scipy.stats]]
 - liens entrants : [[Mathématiques]], [[Statistiques & inférence]]
 
 ### Qualité du code  ·  hub
@@ -3122,8 +3127,8 @@
 
 ### Statistiques & inférence  ·  hub
 - tags : `statistical-inference`, `bayesian`, `causal-inference`, `factor-analysis`
-- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Analyse factorielle]], [[ArviZ]], [[Bayésien]], [[CA]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[FAMD]], [[Fanalysis]], [[ICA]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[Multi-armed bandits]], [[NMF]], [[PCA]], [[Prince]], [[Probabilités]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Sequential testing]], [[Stan]], [[Tests & estimation]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]], [[t-SNE and UMAP]]
-- liens entrants : [[Data Science]], [[Interprétabilité]], [[Mathématiques]], [[Théorie de l'information]]
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Analyse factorielle]], [[ArviZ]], [[Bayésien]], [[CA]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[FAMD]], [[Fanalysis]], [[ICA]], [[Inférence bayésienne]], [[Inférence causale]], [[Intervalles de confiance]], [[MCA]], [[MCMC]], [[Machine Learning]], [[Modèles à effets mixtes]], [[Modélisation d'uplift]], [[Multi-armed bandits]], [[Méthodes causales]], [[NMF]], [[PCA]], [[Prince]], [[Probabilités]], [[Prédiction conforme]], [[PyMC]], [[Réduction de dimension]], [[Scikit-Learn]], [[Sequential testing]], [[Stan]], [[Tests & estimation]], [[Tests d'hypothèse]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]], [[t-SNE and UMAP]]
+- liens entrants : [[Data Science]], [[Interprétabilité]], [[Mathématiques]], [[Méthodes causales]], [[Théorie de l'information]]
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
@@ -3157,7 +3162,7 @@
 
 ### Tests & estimation  ·  hub
 - tags : `statistical-inference`, `hypothesis-testing`, `confidence-interval`, `p-value`, `non-parametric`, `parametric-test`, `effect-size`, `maximum-likelihood`, `resampling`, `survival-analysis`
-- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Bayésien]], [[Bootstrap]], [[CUPED]], [[Comparatif - Outils stats]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Multi-armed bandits]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Bayésien]], [[Bootstrap]], [[CUPED]], [[Comparatif - Outils stats]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Modèles à effets mixtes]], [[Multi-armed bandits]], [[Prédiction conforme]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 - liens entrants : [[Bayésien]], [[Probabilités]], [[Statistiques & inférence]]
 
 ### Text-to-SQL  ·  hub
@@ -3217,8 +3222,8 @@
 
 ### A/B testing  ·  notion
 - tags : `experimentation`, `ab-testing`, `hypothesis-testing`
-- liens sortants : [[Analyse de puissance]], [[CUPED]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Intervalles de confiance]], [[Multi-armed bandits]], [[Sequential testing]], [[Tests d'hypothèse]]
-- liens entrants : [[A priori conjugués]], [[Analyse de puissance]], [[CUPED]], [[Diff-in-Diff]], [[Déploiement de modèles]], [[Exploration vs exploitation]], [[Inférence bayésienne]], [[Inférence causale]], [[Multi-armed bandits]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Tests d'hypothèse]]
+- liens sortants : [[Analyse de puissance]], [[CUPED]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Intervalles de confiance]], [[Modélisation d'uplift]], [[Multi-armed bandits]], [[Sequential testing]], [[Tests d'hypothèse]]
+- liens entrants : [[A priori conjugués]], [[Analyse de puissance]], [[CUPED]], [[Diff-in-Diff]], [[Découverte causale]], [[Déploiement de modèles]], [[Exploration vs exploitation]], [[Inférence bayésienne]], [[Inférence causale]], [[Modélisation d'uplift]], [[Multi-armed bandits]], [[Méthodes causales]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Tests d'hypothèse]]
 
 ### a2a-protocol  ·  notion
 - tags : `agents`, `multi-agent`, `llm`, `tool-use`
@@ -3288,12 +3293,12 @@
 ### Analyse de puissance  ·  notion
 - tags : `statistical-power`, `hypothesis-testing`, `effect-size`
 - liens sortants : [[A/B testing]], [[Bootstrap]], [[Correction des tests multiples]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Sequential testing]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Modélisation d'uplift]], [[Sequential testing]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]]
 
 ### Analyse de survie  ·  notion
 - tags : `survival-analysis`, `regression`, `non-parametric`
 - liens sortants : [[GLM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[lifelines]]
-- liens entrants : [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Types de données et choix de modèle]], [[lifelines]]
+- liens entrants : [[Modèles à effets mixtes]], [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Types de données et choix de modèle]], [[lifelines]]
 
 ### Analyse discriminante  ·  notion
 - tags : `supervised`, `classification`, `bayesian`, `linear-model`
@@ -3432,8 +3437,8 @@
 
 ### Bootstrap  ·  notion
 - tags : `resampling`, `confidence-interval`, `non-parametric`
-- liens sortants : [[Analyse de puissance]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
-- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Régression]], [[Régression quantile]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
+- liens sortants : [[Analyse de puissance]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Prédiction conforme]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
+- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Prédiction conforme]], [[Régression]], [[Régression quantile]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
 
 ### CA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -3448,7 +3453,7 @@
 ### Calibration  ·  notion
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Imbalanced classification]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[ROC-AUC / courbe PR]], [[SVM]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
+- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Imbalanced classification]], [[Machine Learning]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[SVM]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
 
 ### Catalogue de données et lignage  ·  notion
 - tags : `data-catalog`, `data-lineage`, `data-governance`
@@ -3467,8 +3472,8 @@
 
 ### Chaînes de Markov  ·  notion
 - tags : `stochastic-process`, `markov`, `probability`
-- liens sortants : [[MCMC]], [[Markov Decision Process]], [[Mouvement brownien]], [[Processus de Poisson]], [[PyMC]], [[Stan]]
-- liens entrants : [[Bayésien]], [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Mouvement brownien]], [[Probabilités]], [[Processus de Poisson]], [[PyMC]]
+- liens sortants : [[MCMC]], [[Markov Decision Process]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Processus de Poisson]], [[PyMC]], [[Stan]]
+- liens entrants : [[Bayésien]], [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Probabilités]], [[Processus de Poisson]], [[PyMC]]
 
 ### Choisir un modèle d'embedding  ·  notion
 - tags : `embeddings`, `semantic-search`, `retrieval`, `hybrid-search`, `benchmark`, `quantization`, `self-hosted`
@@ -3593,7 +3598,7 @@
 ### CUPED  ·  notion
 - tags : `experimentation`, `variance-reduction`, `ab-testing`
 - liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Inférence causale]], [[Intervalles de confiance]]
-- liens entrants : [[A/B testing]], [[Inférence causale]], [[Statistiques & inférence]], [[Tests & estimation]]
+- liens entrants : [[A/B testing]], [[Inférence causale]], [[Modélisation d'uplift]], [[Méthodes causales]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
@@ -3623,7 +3628,7 @@
 ### Diff-in-Diff  ·  notion
 - tags : `causal-inference`, `hypothesis-testing`
 - liens sortants : [[A/B testing]], [[CausalImpact]], [[Inférence causale]], [[Tests d'hypothèse]], [[statsmodels]]
-- liens entrants : [[A/B testing]], [[CausalImpact]], [[Explicabilité des modèles]], [[Inférence causale]], [[Statistiques & inférence]]
+- liens entrants : [[A/B testing]], [[CausalImpact]], [[Découverte causale]], [[Explicabilité des modèles]], [[Inférence causale]], [[Modélisation d'uplift]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Diffusion models  ·  notion
 - tags : `generative-model`, `diffusion`, `deep-learning`
@@ -3649,6 +3654,11 @@
 - tags : `container`, `kubernetes`, `gitops`, `ci-cd`
 - liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Registres d'images]], [[Docker Compose]], [[GitHub Actions]], [[Harbor]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Ray Serve]], [[Reverse proxy et TLS]], [[Seldon Core]], [[Traefik]], [[Zot]], [[k3s]]
 - liens entrants : [[Argo CD]], [[CI-CD pour le ML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubeflow]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[k3s]]
+
+### Découverte causale  ·  notion
+- tags : `causal-inference`, `statistical-inference`
+- liens sortants : [[A/B testing]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Modélisation d'uplift]]
+- liens entrants : [[Inférence causale]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
@@ -3763,7 +3773,7 @@
 ### Forecasting metrics  ·  notion
 - tags : `forecasting`, `timeseries`, `model-evaluation`
 - liens sortants : [[Forecasting framing]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Regression metrics]], [[Walk-forward CV]], [[darts]], [[statsforecast]]
-- liens entrants : [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Regression metrics]], [[Séries temporelles]], [[Walk-forward CV]]
+- liens entrants : [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prédiction conforme]], [[Regression metrics]], [[Séries temporelles]], [[Walk-forward CV]]
 
 ### Foundation models pour séries temporelles  ·  notion
 - tags : `timeseries`, `forecasting`, `transformers`, `deep-learning`
@@ -3808,7 +3818,7 @@
 ### GLM  ·  notion
 - tags : `regression`, `linear-model`, `supervised`, `maximum-likelihood`
 - liens sortants : [[GAM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
-- liens entrants : [[Analyse de survie]], [[Apprentissage supervisé]], [[Explicabilité des modèles]], [[GAM]], [[Machine Learning]], [[Maximum de vraisemblance]], [[Newton & quasi-Newton]], [[Regression metrics]], [[Régression]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SHAP]], [[Socle]], [[Types de données et choix de modèle]], [[statsmodels]]
+- liens entrants : [[Analyse de survie]], [[Apprentissage supervisé]], [[Explicabilité des modèles]], [[GAM]], [[Machine Learning]], [[Maximum de vraisemblance]], [[Modèles à effets mixtes]], [[Newton & quasi-Newton]], [[Regression metrics]], [[Régression]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[SHAP]], [[Socle]], [[Types de données et choix de modèle]], [[statsmodels]]
 
 ### GPA  ·  notion
 - tags : `factor-analysis`, `dimensionality-reduction`
@@ -3923,12 +3933,12 @@
 ### Inférence bayésienne  ·  notion
 - tags : `bayesian`, `statistical-inference`, `prior`
 - liens sortants : [[A priori conjugués]], [[A/B testing]], [[ArviZ]], [[CausalImpact]], [[Estimation MAP]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[PyMC]], [[Stan]], [[Tests d'hypothèse]], [[scipy.stats]]
-- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[Bayésien]], [[CausalImpact]], [[Classification metrics]], [[Estimation MAP]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
+- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[Bayésien]], [[CausalImpact]], [[Classification metrics]], [[Découverte causale]], [[Estimation MAP]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles à effets mixtes]], [[Naive Bayes]], [[Prédiction conforme]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
 
 ### Inférence causale  ·  notion
 - tags : `causal-inference`, `statistical-inference`
-- liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[statsmodels]]
-- liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Statistiques & inférence]]
+- liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Modélisation d'uplift]], [[statsmodels]]
+- liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Modélisation d'uplift]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Inférence en bordure - modèles sur du matériel d'atelier  ·  notion
 - tags : `edge-inference`, `inference`, `iiot`, `model-serving`
@@ -3957,8 +3967,8 @@
 
 ### Intervalles de confiance  ·  notion
 - tags : `statistical-inference`, `confidence-interval`
-- liens sortants : [[Analyse de puissance]], [[Bootstrap]], [[Inférence bayésienne]], [[Tests d'hypothèse]], [[Théorème central limite]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Inférence bayésienne]], [[Probabilités]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Théorème central limite]], [[scipy.stats]]
+- liens sortants : [[Analyse de puissance]], [[Bootstrap]], [[Inférence bayésienne]], [[Prédiction conforme]], [[Tests d'hypothèse]], [[Théorème central limite]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Inférence bayésienne]], [[Probabilités]], [[Prédiction conforme]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Théorème central limite]], [[scipy.stats]]
 
 ### Inégalités de concentration  ·  notion
 - tags : `probability`, `concentration`
@@ -4083,7 +4093,7 @@
 ### Markov Decision Process  ·  notion
 - tags : `reinforcement-learning`, `markov-decision-process`, `markov`
 - liens sortants : [[Bellman equations]], [[Chaînes de Markov]], [[Reinforcement learning]], [[Value functions]]
-- liens entrants : [[Apprentissage par renforcement]], [[Bellman equations]], [[Chaînes de Markov]], [[Gymnasium]], [[Model-based RL]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Value functions]]
+- liens entrants : [[Apprentissage par renforcement]], [[Bellman equations]], [[Chaînes de Markov]], [[Gymnasium]], [[Model-based RL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Value functions]]
 
 ### Matrix decompositions  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`
@@ -4113,7 +4123,7 @@
 ### MCMC  ·  notion
 - tags : `monte-carlo`, `markov`, `bayesian`
 - liens sortants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[PyMC]], [[Stan]]
-- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Probabilités]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Modèles de Markov cachés et filtre de Kalman]], [[Probabilités]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### mcp-protocol  ·  notion
 - tags : `mcp`, `tool-use`, `llm`, `agents`
@@ -4165,6 +4175,21 @@
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[HuggingFace]], [[Segment Anything (SAM)]], [[Transfer learning vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[embeddings]]
 - liens entrants : [[Apprentissage auto-supervisé en vision]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[segment-anything]]
 
+### Modèles de Markov cachés et filtre de Kalman  ·  notion
+- tags : `stochastic-process`, `markov`, `forecasting`
+- liens sortants : [[Chaînes de Markov]], [[Inférence bayésienne]], [[MCMC]], [[Markov Decision Process]], [[Stationarity]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
+- liens entrants : [[Chaînes de Markov]], [[Probabilités]], [[darts]], [[pmdarima]], [[statsmodels]]
+
+### Modèles à effets mixtes  ·  notion
+- tags : `statistical-inference`, `regression`, `linear-model`
+- liens sortants : [[Analyse de survie]], [[GLM]], [[Inférence bayésienne]], [[PyMC]], [[Régression linéaire]], [[Stan]], [[Test t et ANOVA]], [[statsmodels]]
+- liens entrants : [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests & estimation]], [[statsmodels]]
+
+### Modélisation d'uplift  ·  notion
+- tags : `causal-inference`, `experimentation`, `regression`
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[CUPED]], [[Calibration]], [[Diff-in-Diff]], [[Inférence causale]], [[Multi-armed bandits]]
+- liens entrants : [[A/B testing]], [[Découverte causale]], [[Inférence causale]], [[Méthodes causales]], [[Statistiques & inférence]]
+
 ### Modélisation dimensionnelle  ·  notion
 - tags : `data-modeling`, `data-transformation`, `data-pipeline`
 - liens sortants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Great Expectations]], [[OLTP, OLAP et lakehouse]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Soda Core]], [[Versionnage de données]], [[dbt Core]], [[pandera]]
@@ -4193,7 +4218,7 @@
 ### Multi-armed bandits  ·  notion
 - tags : `experimentation`, `multi-armed-bandit`
 - liens sortants : [[A/B testing]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Reinforcement learning]], [[Sequential testing]]
-- liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Théorie des jeux]]
+- liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Modélisation d'uplift]], [[Monte Carlo Tree Search]], [[Méthodes causales]], [[Reinforcement learning]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Théorie des jeux]]
 
 ### Multi-head Latent Attention  ·  notion
 - tags : `attention`, `inference-optimization`, `transformers`, `gpu`
@@ -4430,6 +4455,11 @@
 - liens sortants : [[Distillation]], [[Inference optimization]], [[PyTorch]], [[Quantization]], [[Small Language Models]]
 - liens entrants : [[Apprentissage profond]], [[Calculs adaptatifs]], [[Distillation]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[PyTorch]], [[Quantization]], [[Serving]], [[Superposition]]
 
+### Prédiction conforme  ·  notion
+- tags : `statistical-inference`, `confidence-interval`, `model-evaluation`
+- liens sortants : [[Bootstrap]], [[Calibration]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[darts]], [[statsforecast]]
+- liens entrants : [[Bootstrap]], [[Intervalles de confiance]], [[Statistiques & inférence]], [[Tests & estimation]], [[darts]], [[statsforecast]]
+
 ### Q-learning and DQN  ·  notion
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[Bellman equations]], [[Exploration vs exploitation]], [[Gymnasium]], [[Policy gradient]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]], [[Value functions]]
@@ -4583,7 +4613,7 @@
 ### Régression linéaire  ·  notion
 - tags : `regression`, `linear-model`, `supervised`
 - liens sortants : [[Arbres de décision]], [[GAM]], [[GLM]], [[Gradient descent]], [[Maximum de vraisemblance]], [[Random Forest]], [[Régression]], [[Régression logistique]], [[Régularisation]], [[Scikit-Learn]], [[k-NN]]
-- liens entrants : [[Analyse de survie]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Convexity]], [[Double descente et généralisation des grands modèles]], [[GAM]], [[GLM]], [[Gradient descent]], [[Machine Learning]], [[Maximum de vraisemblance]], [[Projections]], [[Regression metrics]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[Scikit-Learn]], [[Socle]], [[Types de données et choix de modèle]], [[statsmodels]]
+- liens entrants : [[Analyse de survie]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Convexity]], [[Double descente et généralisation des grands modèles]], [[GAM]], [[GLM]], [[Gradient descent]], [[Machine Learning]], [[Maximum de vraisemblance]], [[Modèles à effets mixtes]], [[Projections]], [[Regression metrics]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[Scikit-Learn]], [[Socle]], [[Types de données et choix de modèle]], [[statsmodels]]
 
 ### Régression logistique  ·  notion
 - tags : `classification`, `linear-model`, `supervised`, `maximum-likelihood`
@@ -4593,7 +4623,7 @@
 ### Régression quantile  ·  notion
 - tags : `regression`, `supervised`, `linear-model`, `non-parametric`
 - liens sortants : [[Bootstrap]], [[Détection d'outliers univariée]], [[GLM]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[Intervalles de confiance]], [[LightGBM]], [[Programmation linéaire en nombres entiers (MIP)]], [[Regression metrics]], [[Régression]], [[Régression linéaire]], [[Régularisation]], [[Scikit-Learn]], [[statsmodels]]
-- liens entrants : [[Gaussian Process]], [[Machine Learning]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
+- liens entrants : [[Gaussian Process]], [[Machine Learning]], [[Prédiction conforme]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
 
 ### Régularisation  ·  notion
 - tags : `regularization`, `linear-model`, `supervised`
@@ -4633,7 +4663,7 @@
 ### Sequential testing  ·  notion
 - tags : `experimentation`, `sequential-analysis`, `hypothesis-testing`
 - liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Correction des tests multiples]], [[Multi-armed bandits]]
-- liens entrants : [[A/B testing]], [[Correction des tests multiples]], [[Multi-armed bandits]], [[Statistiques & inférence]], [[Tests & estimation]]
+- liens entrants : [[A/B testing]], [[Correction des tests multiples]], [[Multi-armed bandits]], [[Méthodes causales]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### Server-Sent Events & streaming LLM  ·  notion
 - tags : `streaming`, `llm`, `web-framework`
@@ -4688,7 +4718,7 @@
 ### Stationarity  ·  notion
 - tags : `timeseries`, `stochastic-process`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[darts]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Time series anomaly detection]], [[Traitement du signal]], [[pmdarima]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prédiction conforme]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Time series anomaly detection]], [[Traitement du signal]], [[pmdarima]]
 
 ### STFT et spectrogramme  ·  notion
 - tags : `signal-processing`, `spectrogram`, `fourier`
@@ -4713,7 +4743,7 @@
 ### Suivi d'objets  ·  notion
 - tags : `object-tracking`, `object-detection`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Métriques vision]], [[Vision par ordinateur]], [[supervision]]
-- liens entrants : [[Détection d'objets]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[OpenCV]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[supervision]]
+- liens entrants : [[Détection d'objets]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Modèles de Markov cachés et filtre de Kalman]], [[OpenCV]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[supervision]]
 
 ### Superposition  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`
@@ -4763,7 +4793,7 @@
 ### Test t et ANOVA  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `effect-size`
 - liens sortants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests d'hypothèse]], [[Tests non paramétriques]]
-- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[MANOVA et tests multivariés]], [[Modèles à effets mixtes]], [[Test du khi-deux]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 
 ### Tests d'hypothèse  ·  notion
 - tags : `statistical-inference`, `hypothesis-testing`, `p-value`
@@ -4793,7 +4823,7 @@
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Autoencodeurs]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Forecasting framing]], [[Imbalanced classification]], [[Maintenance prédictive et RUL]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]]
-- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[Traitement du signal]]
+- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[Traitement du signal]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
@@ -4994,7 +5024,7 @@
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
 - `caching` : Headroom, LLM caching, Passerelles, prompt-caching  — pas de page concept dédiée
 - `calibration` : Calibration, Évaluation de modèles
-- `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Inférence causale, Statistiques & inférence
+- `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Découverte causale, Inférence causale, Modélisation d'uplift, Méthodes causales, Statistiques & inférence
 - `cdc` : Airbyte, Change Data Capture (CDC), Debezium, Ingestion de données
 - `chunking` : Chunking strategies, RAG & retrieval, RAGFlow
 - `ci-cd` : Argo CD, CI-CD pour le ML, Comparatif - CI-CD auto-hébergé, DevOps, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI  — pas de page concept dédiée
@@ -5010,7 +5040,7 @@
 - `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River  — pas de page concept dédiée
-- `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
+- `confidence-interval` : Bootstrap, Intervalles de confiance, Prédiction conforme, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
 - `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers  — pas de page concept dédiée
@@ -5069,7 +5099,7 @@
 - `entropy` : Shannon entropy, Théorie de l'information
 - `event-driven` : Architecture pilotée par les événements  — pas de page concept dédiée
 - `experiment-tracking` : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases  — pas de page concept dédiée
-- `experimentation` : A/B testing, CUPED, Multi-armed bandits, Sequential testing  — pas de page concept dédiée
+- `experimentation` : A/B testing, CUPED, Modélisation d'uplift, Multi-armed bandits, Sequential testing  — pas de page concept dédiée
 - `explainability` : Attribution par gradient, Captum, Comparatif - Explicabilité, Explicabilité des modèles, Interprétabilité, Interprétabilité mécaniste, LIME, Machine Learning, Probing, SAELens, SHAP, Sparse autoencoders, Superposition, TransformerLens, interpreto, nnsight
 - `exploration-exploitation` : Apprentissage par renforcement, Exploration vs exploitation
 - `factor-analysis` : Analyse factorielle, CA, Comparatif - Outils stats, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence  — pas de page concept dédiée
@@ -5079,7 +5109,7 @@
 - `file-format` : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `file-transfer` : Réseau, croc  — pas de page concept dédiée
 - `fine-tuning` : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
-- `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
+- `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Modèles de Markov cachés et filtre de Kalman, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Qualité du code, Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
 - `fourier` : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
@@ -5126,7 +5156,7 @@
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
 - `learning-theory` : Double descente et généralisation des grands modèles, Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
 - `linear-algebra` : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
-- `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
+- `linear-model` : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
 - `linear-programming` : Comparatif - Solveurs d'optimisation, Mathématiques, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
 - `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, Qwen, RAG, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
@@ -5141,7 +5171,7 @@
 - `low-code` : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector  — pas de page concept dédiée
-- `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan  — pas de page concept dédiée
+- `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Apprentissage par renforcement, Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
 - `maximum-likelihood` : GLM, Gaussian Mixture Models (GMM), Maximum de vraisemblance, Régression logistique, Tests & estimation
@@ -5160,7 +5190,7 @@
 - `ml-platform` : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantization  — pas de page concept dédiée
-- `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles  — pas de page concept dédiée
+- `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles  — pas de page concept dédiée
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
@@ -5235,7 +5265,7 @@
 - `recommender-systems` : Systèmes de recommandation
 - `recon` : Sécurité, Web-Check  — pas de page concept dédiée
 - `red-teaming` : garak, promptfoo  — pas de page concept dédiée
-- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
+- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Modèles à effets mixtes, Modélisation d'uplift, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
 - `regularization` : Augmentation d'images, Double descente et généralisation des grands modèles, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Comparatif - Reinforcement learning, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
@@ -5276,12 +5306,12 @@
 - `spectrogram` : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `sso` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
-- `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
+- `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models
 - `static-viz` : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
-- `statistical-inference` : Comparatif - Outils stats, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
+- `statistical-inference` : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles à effets mixtes, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
 - `statistical-power` : Analyse de puissance, pingouin
 - `statistical-viz` : Visualisation, seaborn, sweetviz  — pas de page concept dédiée
-- `stochastic-process` : Autocorrelation, Chaînes de Markov, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity  — pas de page concept dédiée
+- `stochastic-process` : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity  — pas de page concept dédiée
 - `streaming` : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
 - `string-matching` : Fuzzy matching & similarité de chaînes, NLP, Pattern - Pipeline scraping → matching → optimisation
 - `structured-output` : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use  — pas de page concept dédiée
@@ -5393,13 +5423,13 @@
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
 - `event-driven` (porté par : Architecture pilotée par les événements)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
-- `experimentation` (porté par : A/B testing, CUPED, Multi-armed bandits, Sequential testing)
+- `experimentation` (porté par : A/B testing, CUPED, Modélisation d'uplift, Multi-armed bandits, Sequential testing)
 - `factor-analysis` (porté par : Analyse factorielle, CA, Comparatif - Outils stats, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence)
 - `federation` (porté par : OLTP, OLAP et lakehouse, Trino)
 - `file-format` (porté par : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données)
 - `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
-- `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
+- `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Modèles de Markov cachés et filtre de Kalman, Prophet, Séries temporelles, Time series feature engineering, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Qualité du code, Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
@@ -5425,7 +5455,7 @@
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
 - `learning-theory` (porté par : Double descente et généralisation des grands modèles, Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension)
 - `linear-algebra` (porté par : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
-- `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
+- `linear-model` (porté par : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
 - `linter` (porté par : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
 - `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, Qwen, RAG, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, garak, promptfoo, Évaluation)
@@ -5436,7 +5466,7 @@
 - `low-code` (porté par : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector)
-- `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan)
+- `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
@@ -5447,7 +5477,7 @@
 - `ml-pipeline` (porté par : AWS SageMaker, CI-CD pour le ML, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
 - `ml-platform` (porté par : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
-- `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles)
+- `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles)
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
 - `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
@@ -5509,11 +5539,10 @@
 - `spectrogram` (porté par : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `sso` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité)
-- `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn)
-- `statistical-inference` (porté par : Comparatif - Outils stats, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels)
+- `statistical-inference` (porté par : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles à effets mixtes, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels)
 - `statistical-viz` (porté par : Visualisation, seaborn, sweetviz)
-- `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
+- `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
 - `streaming` (porté par : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use)
 - `supervised` (porté par : Active learning, AdaBoost, Analyse discriminante, Annotation de données, Apprentissage semi-supervisé, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN, Équité et biais algorithmique)
