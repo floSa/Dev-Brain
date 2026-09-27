@@ -68,5 +68,6 @@ série, sans vectorisation.
 ## Voir aussi
 
 - [[ARIMA SARIMA]] — la notion : le modèle dont pmdarima automatise la sélection
+- [[Modèles de Markov cachés et filtre de Kalman]] — le filtre de Kalman qui ajuste le `SARIMAX` de statsmodels qu'il enveloppe
 - [[Forecasting framing]] — cadrer horizon, exogènes et évaluation avant d'ajuster
 - [[Comparatif - Forecasting]] — ce qui départage les briques du dossier
