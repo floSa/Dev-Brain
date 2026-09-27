@@ -35,7 +35,7 @@ pipelines, entraînement distribué, optimisation d'hyperparamètres, registre d
 derrière un **tableau de bord central** et des **profils** qui isolent les utilisateurs par
 namespace. Ce n'est pas un produit unique mais une **distribution** de composants indépendants
 (dépôt `kubeflow/manifests`) que chacun peut aussi installer seul. Le projet est entré à la CNCF
-en juillet 2023 et y est devenu **gradué le 2026-07-24** (page projet CNCF). Il se classe parmi
+en juillet 2023 et y est devenu **gradué le 2026-07-24** (page projet CNCF) ; la CNCF a annoncé la graduation le 2026-08-17. Il se classe parmi
 les plateformes parce qu'il porte, à lui seul, calcul, pipelines, serving et droits. Mais,
 contrairement à [[Dataiku]] ou à [[Databricks]], il ne se vend pas : on l'assemble, on l'exploite et
 on le met à jour soi-même, ou on passe par une distribution tierce.
