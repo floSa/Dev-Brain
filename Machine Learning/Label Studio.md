@@ -101,3 +101,4 @@ HumanSignal (ex-Heartex).
 - [[Machine Learning]] — le hub du domaine
 - [[Annotation de données]] — la notion : types de tâches, guides, accord entre annotateurs, pré-annotation et ses biais, active learning, annotation sur site
 - [[NER et étiquetage de séquence]] — le cas du texte, où l'outil sert à produire les spans IOB
+- [[Active learning]] — la notion : stratégies de sélection, démarrage à froid et critiques ; la boucle automatique de l'outil est réservée à Enterprise
