@@ -52,6 +52,7 @@ tags: [model-evaluation, supervised]
 - [[Validation croisée]] — l'outil de mesure du point d'équilibre.
 - [[Generalization bounds]] — la version quantifiée du compromis : risque empirique (biais+bruit) + pénalité de capacité (variance).
 - [[VC dimension]] — mesure formelle de la capacité d'un modèle, soit le versant variance de ce compromis.
+- [[Double descente et généralisation des grands modèles]] — là où le U classique ne tient plus : l'erreur de test redescend après le seuil d'interpolation.
 
 ## Pour aller plus loin
 

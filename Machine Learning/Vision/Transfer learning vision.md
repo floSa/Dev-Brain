@@ -45,6 +45,7 @@ tags: [transfer-learning, fine-tuning, computer-vision, deep-learning]
 - [[PEFT]] / [[SFT]] — les analogues côté LLM (LoRA/adapters, fine-tuning supervisé) : même idée, autre modalité.
 - [[Distillation]] — transférer le savoir d'un gros modèle vers un petit, complémentaire du transfert de poids.
 - [[Architectures CNN]] / [[CNN]] — ce que l'on transfère ; [[Vision par ordinateur]] — le cadre d'ensemble.
+- [[Méta-apprentissage et few-shot learning]] — le cas peu d'exemples : un embedding pré-entraîné et un classifieur simple rivalisent avec les méthodes de méta-apprentissage (Chen et al. 2019, Tian et al. 2020).
 
 ## Pour aller plus loin
 

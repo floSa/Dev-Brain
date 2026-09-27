@@ -70,6 +70,7 @@ tags: [learning-rate, scaling-laws, hyperparameter-tuning, optimization, deep-le
 - [[Mixed precision]] — l'interaction avec la basse précision motive u-µP (unit scaling).
 - [[Attention Residuals]] — autre levier sur la stabilité en profondeur, côté **architecture** plutôt que paramétrisation.
 - Alternative pragmatique : **règles empiriques de mise à l'échelle du LR** (heuristiques en $1/\sqrt{d}$, LR ∝ batch size) — moins fondées, sans garantie de transfert, mais sans coût d'implémentation.
+- [[Normalisation et initialisation des réseaux]] — l'initialisation et la normalisation gardent l'échelle des signaux stable ; µP règle, lui, l'échelle des mises à jour selon la largeur.
 
 ## Pour aller plus loin
 
