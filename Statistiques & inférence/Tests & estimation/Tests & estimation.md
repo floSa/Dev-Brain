@@ -19,6 +19,8 @@ tags: [statistical-inference, hypothesis-testing, confidence-interval, p-value, 
 - **Une p-value seule ne décide rien.** Elle dépend de $n$ autant que de l'effet : avec assez de lignes, tout devient significatif. La taille d'effet est ce qui rend le résultat lisible, et [[Analyse de puissance]] est ce qui aurait dû être fait **avant** — c'est elle qui donne le $n$ nécessaire pour détecter un effet donné, et elle explique après coup autant les résultats manqués que les significativités creuses.
 - **Multiplier les tests fabrique des faux positifs mécaniquement**, et c'est le piège le plus fréquent dès qu'un tableau de bord compare vingt métriques : [[Correction des tests multiples]]. Deux philosophies à ne pas confondre — contrôler le risque d'au moins un faux positif (FWER, conservateur) ou la part de faux positifs parmi les rejets (FDR, adapté au criblage).
 - **Quand la formule manque, le rééchantillonnage la remplace.** [[Bootstrap]] donne un intervalle pour une statistique dont personne ne connaît la loi d'échantillonnage — médiane, ratio, quantile, métrique métier composite. C'est souvent la réponse la plus courte à « quelle est l'incertitude de ce chiffre ? ».
+- **Des lignes qui se ressemblent ne sont pas des échantillons indépendants.** Des élèves dans des écoles, des mesures répétées sur une machine : traiter chaque ligne comme indépendante rend les erreurs-types trop petites (pseudo-réplication). [[Modèles à effets mixtes]] donne à chaque groupe un écart tiré d'une loi, au lieu d'une indicatrice par groupe ; [[statsmodels]] en offre le cas linéaire (`MixedLM`).
+- **Un intervalle de confiance encadre un paramètre ; pour encadrer une observation à venir, c'est un autre outil.** [[Prédiction conforme]] fabrique des intervalles (ou des ensembles de classes) de couverture garantie à taille finie autour de n'importe quel modèle, sans loi supposée, à condition que les données soient échangeables.
 - **Deux familles de données ont leur traitement propre**, et un test ordinaire y ment. [[Analyse de survie]] ([[lifelines]]) parce que la **censure** — l'événement pas encore survenu à la fin de l'étude — n'est ni une absence d'événement ni une ligne à jeter. [[Maximum de vraisemblance]] parce que c'est le principe d'estimation qui sous-tend la régression, les GLM et une grande partie du reste : le connaître évite de traiter chaque modèle comme une boîte à part.
 
 ## Choisir
@@ -28,6 +30,8 @@ tags: [statistical-inference, hypothesis-testing, confidence-interval, p-value, 
 - Quelques tests à lire vite, tailles d'effet incluses → [[pingouin]].
 - Un temps jusqu'à un événement, avec des observations censurées → [[lifelines]].
 - Une incertitude sans formule analytique → [[Bootstrap]], à la main sur `scipy`.
+- Des mesures groupées ou répétées, à ne pas traiter comme indépendantes → [[Modèles à effets mixtes]].
+- Un intervalle sur une prédiction individuelle, valide à taille finie → [[Prédiction conforme]].
 - Une distribution a posteriori plutôt qu'une p-value → [[Bayésien]], pas ce dossier.
 
 <!-- AUTO:START -->
