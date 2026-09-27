@@ -54,6 +54,8 @@ tags: [causal-inference, statistical-inference]
 - [[Diff-in-Diff]] — quasi-expérience exploitant la variation avant/après croisée aux groupes.
 - [[CausalImpact]] — contrefactuel prédit par séries temporelles structurelles bayésiennes.
 - [[CUPED]] — réduction de variance dans les essais randomisés (efficacité de l'estimation, pas identification).
+- [[Modélisation d'uplift]] — de l'effet moyen à l'effet conditionnel par individu : à qui adresser l'action.
+- [[Découverte causale]] — retrouver le graphe que cette page suppose connu.
 - Variables instrumentales, régression sur discontinuité, contrôle synthétique — autres stratégies d'identification, selon la source de variation exogène disponible.
 
 ## Pour aller plus loin

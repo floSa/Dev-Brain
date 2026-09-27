@@ -51,6 +51,7 @@ tags: [statistical-inference, confidence-interval]
 - [[Bootstrap]] — IC sans hypothèse de distribution, par rééchantillonnage.
 - [[Analyse de puissance]] — viser une précision cible (largeur d'IC) pour fixer $n$.
 - [[Inférence bayésienne]] — son intervalle de crédibilité est l'analogue, avec interprétation probabiliste directe.
+- [[Prédiction conforme]] — encadre une observation future, pas un paramètre, sans hypothèse de loi.
 
 ## Pour aller plus loin
 

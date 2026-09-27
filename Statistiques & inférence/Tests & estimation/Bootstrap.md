@@ -56,6 +56,7 @@ tags: [resampling, confidence-interval, non-parametric]
 - [[Loi des grands nombres]] — fonde la convergence du bootstrap quand $B$ grandit.
 - [[Validation croisée]] — l'autre grande technique de rééchantillonnage : partitionne sans remise pour estimer la généralisation d'un modèle.
 - Méthode delta / jackknife — alternatives analytiques ou antérieures au bootstrap.
+- [[Prédiction conforme]] — encadre une observation future avec une garantie de couverture sans loi ; son jackknife+ prolonge l'idée du jackknife.
 
 ## Pour aller plus loin
 
