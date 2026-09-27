@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 987,
+  "count": 992,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -142,6 +142,8 @@
     ],
     "ai-security": [
       "AI security",
+      "Apprentissage fédéré",
+      "Confidentialité différentielle",
       "Daytona",
       "Données personnelles et anonymisation pour LLM",
       "E2B",
@@ -188,6 +190,7 @@
       "hnswlib"
     ],
     "annotation": [
+      "Active learning",
       "Annotation de données",
       "CVAT",
       "Label Studio"
@@ -395,6 +398,7 @@
       "Types de données et choix de modèle",
       "imbalanced-learn",
       "k-NN",
+      "Équité et biais algorithmique",
       "Évaluation de modèles"
     ],
     "cli": [
@@ -872,6 +876,7 @@
       "Captum",
       "Chronos",
       "Classification d'images",
+      "Confidentialité différentielle",
       "DeepSpeed",
       "Detectron2",
       "Diffusion models",
@@ -1010,6 +1015,7 @@
       "Apache Cassandra",
       "Apache Solr",
       "Apache Superset",
+      "Apprentissage fédéré",
       "ArangoDB",
       "Bases graphe — modèles et langages de requête",
       "Calcul distribué",
@@ -1455,6 +1461,7 @@
       "llmfit"
     ],
     "human-in-the-loop": [
+      "Active learning",
       "Annotation de données",
       "CVAT",
       "Human-in-the-loop",
@@ -2285,6 +2292,7 @@
       "Walk-forward CV",
       "evaluate",
       "seqeval",
+      "Équité et biais algorithmique",
       "Évaluation",
       "Évaluation de modèles"
     ],
@@ -2778,6 +2786,8 @@
       "PyMC"
     ],
     "privacy": [
+      "Apprentissage fédéré",
+      "Confidentialité différentielle",
       "Données personnelles et anonymisation pour LLM",
       "OpenCut",
       "Page to Markdown",
@@ -3526,9 +3536,11 @@
       "tool-use"
     ],
     "supervised": [
+      "Active learning",
       "AdaBoost",
       "Analyse discriminante",
       "Annotation de données",
+      "Apprentissage semi-supervisé",
       "Apprentissage supervisé",
       "Arbres de décision",
       "Bagging",
@@ -3572,7 +3584,8 @@
       "Validation croisée",
       "XGBoost",
       "imbalanced-learn",
-      "k-NN"
+      "k-NN",
+      "Équité et biais algorithmique"
     ],
     "supply-chain": [
       "Analyse de vulnérabilités",
@@ -3833,6 +3846,7 @@
     "unsupervised": [
       "Analyse factorielle",
       "Apprentissage non supervisé",
+      "Apprentissage semi-supervisé",
       "Autoencodeurs",
       "Classification hiérarchique (CAH)",
       "Clustering",
@@ -16677,6 +16691,45 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Active learning.md",
+      "nom": "Active learning",
+      "alias": [
+        "Apprentissage actif",
+        "active learning",
+        "apprentissage actif profond",
+        "deep active learning",
+        "échantillonnage par incertitude",
+        "uncertainty sampling",
+        "query by committee",
+        "requête par comité",
+        "pool-based sampling",
+        "sélection d'exemples à étiqueter",
+        "core-set",
+        "BADGE",
+        "BALD",
+        "TypiClust",
+        "démarrage à froid en apprentissage actif",
+        "oracle d'annotation"
+      ],
+      "role": "notion",
+      "categorie": "ml/annotation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "annotation",
+        "human-in-the-loop",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Annotation de données.md",
       "nom": "Annotation de données",
       "alias": [
@@ -22035,6 +22088,91 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Socle/Apprentissage fédéré.md",
+      "nom": "Apprentissage fédéré",
+      "alias": [
+        "Federated learning",
+        "FL",
+        "apprentissage fédéré",
+        "entraînement fédéré",
+        "FedAvg",
+        "Federated Averaging",
+        "FedProx",
+        "FedSGD",
+        "cross-device",
+        "cross-silo",
+        "inter-appareils",
+        "inter-silos",
+        "non-IID",
+        "hétérogénéité des clients",
+        "fuite de gradients",
+        "gradient inversion",
+        "deep leakage from gradients",
+        "agrégation sécurisée",
+        "secure aggregation",
+        "apprentissage collaboratif sans partage de données"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "privacy",
+        "distributed",
+        "ai-security"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Apprentissage semi-supervisé.md",
+      "nom": "Apprentissage semi-supervisé",
+      "alias": [
+        "Semi-supervised learning",
+        "SSL",
+        "apprentissage semi supervisé",
+        "peu d'étiquettes",
+        "données non étiquetées",
+        "auto-apprentissage",
+        "self-training",
+        "pseudo-étiquettes",
+        "pseudo-labels",
+        "pseudo-labeling",
+        "régularisation par cohérence",
+        "consistency regularization",
+        "Mean Teacher",
+        "FixMatch",
+        "propagation de labels",
+        "label propagation",
+        "label spreading",
+        "hypothèse de cluster",
+        "hypothèse de la variété",
+        "apprentissage transductif"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Socle/Apprentissage supervisé.md",
       "nom": "Apprentissage supervisé",
       "alias": [
@@ -22081,6 +22219,48 @@
       "tags": [
         "classification",
         "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Confidentialité différentielle.md",
+      "nom": "Confidentialité différentielle",
+      "alias": [
+        "Differential privacy",
+        "DP",
+        "ε-DP",
+        "(ε",
+        "δ)-DP",
+        "budget de confidentialité",
+        "privacy budget",
+        "mécanisme de Laplace",
+        "mécanisme gaussien",
+        "sensibilité",
+        "composition",
+        "DP-SGD",
+        "moments accountant",
+        "écrêtage des gradients",
+        "Opacus",
+        "JAX Privacy",
+        "TensorFlow Privacy",
+        "VaultGemma",
+        "unité de confidentialité"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "privacy",
+        "ai-security",
+        "deep-learning"
       ],
       "alternatives": null,
       "complements": null,
@@ -24077,8 +24257,7 @@
         "BYOL",
         "DINO",
         "MAE",
-        "masked autoencoder",
-        "apprentissage contrastif"
+        "masked autoencoder"
       ],
       "role": "notion",
       "categorie": "ml/vision",
@@ -25290,6 +25469,54 @@
         "[[evaluate]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Évaluation de modèles/Équité et biais algorithmique.md",
+      "nom": "Équité et biais algorithmique",
+      "alias": [
+        "Fairness",
+        "équité algorithmique",
+        "fairness in machine learning",
+        "biais algorithmique",
+        "algorithmic bias",
+        "parité démographique",
+        "demographic parity",
+        "parité statistique",
+        "statistical parity",
+        "égalité des chances",
+        "equal opportunity",
+        "equalized odds",
+        "odds égalisées",
+        "parité prédictive",
+        "predictive parity",
+        "calibration par groupe",
+        "disparate impact",
+        "règle des quatre cinquièmes",
+        "règle des 80 %",
+        "théorème d'impossibilité de l'équité",
+        "anti-classification",
+        "COMPAS",
+        "attribut sensible",
+        "reweighing",
+        "AI Act et biais"
+      ],
+      "role": "notion",
+      "categorie": "ml/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "model-evaluation",
+        "classification",
+        "supervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Évaluation de modèles/Évaluation de modèles.md",

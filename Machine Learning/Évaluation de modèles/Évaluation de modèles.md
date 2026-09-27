@@ -45,6 +45,7 @@ tags: [model-evaluation, classification, regression, ranking, calibration, resam
 - [[Regression metrics]] — domaines : data-sci, ml-eng
 - [[ROC-AUC & courbe PR|ROC-AUC / courbe PR]] — domaines : data-sci, ml-eng
 - [[Validation croisée]] — domaines : data-sci, ml-eng
+- [[Équité et biais algorithmique]] — domaines : data-sci, ml-eng
 
 ### Briques
 - [[evaluate]] — Bibliothèque HuggingFace de métriques d'évaluation ML prêtes à l'emploi — accuracy, F1, BLEU, ROUGE, exact match… chargées depuis le Hub via une API unique load/compute, comparables d'un projet à l'autre.
