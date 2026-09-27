@@ -71,3 +71,4 @@ vite si `num_leaves` n'est pas borné.
 - [[Gradient Boosting (GBDT)]] — la notion qu'il implémente
 - [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
 - [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier
+- [[Learning to rank]] — ses objectifs `lambdarank` et `rank_xendcg` y sont décrits, avec la troncature et le biais de position

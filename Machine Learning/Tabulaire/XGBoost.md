@@ -71,3 +71,4 @@ l'autre native (`xgb.train` sur `DMatrix`).
 - [[Gradient Boosting (GBDT)]] — la notion qu'il implémente
 - [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
 - [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier
+- [[Learning to rank]] — ses objectifs `rank:ndcg`, `rank:map` et `rank:pairwise` y sont décrits, avec le débiaisage de position

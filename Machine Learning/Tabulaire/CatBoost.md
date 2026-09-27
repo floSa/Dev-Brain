@@ -72,3 +72,4 @@ numériques.
 - [[Arbres de décision]] — la brique de base sur laquelle le boosting empile
 - [[Encodage des variables catégorielles]] — la notion que son *ordered target encoding* internalise
 - [[Comparatif - Boosting]] — ce qui départage les trois implémentations du dossier
+- [[Learning to rank]] — ses pertes de classement (`YetiRank`, `PairLogit`, `LambdaMart`) et le cadre qu'elles servent
