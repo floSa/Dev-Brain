@@ -111,7 +111,6 @@ Aucune enquête générale récente de qualité n'a été retrouvée dans cette 
 - [[Forecasting metrics]] — mesurer la qualité d'une prévision ponctuelle ; la prédiction conforme ajoute un encadrement de l'incertitude.
 - [[statsforecast]] — intervalles conformes pour séries, par validation croisée.
 - [[darts]] — modèles conformes autour d'un prévisionniste global.
-- [[Scikit-Learn]] — pas de support conforme natif ; MAPIE s'y branche.
 
 ## Pour aller plus loin
 

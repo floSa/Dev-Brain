@@ -93,7 +93,7 @@ Ce sont des prépublications d'un seul travail chacune, non répliquées ici.
 - [[Diff-in-Diff]] — quasi-expérience pour un effet moyen sans randomisation ; ne produit pas un effet par individu.
 - [[CUPED]] — réduit la variance de l'ATE par une covariable de pré-période ; vise l'efficacité de l'estimation, pas l'hétérogénéité.
 - [[Calibration]] — vérifie que les probabilités sont fiables ; l'évaluation par Qini n'en dit rien.
-- Briques du brain : **sans objet** — aucune bibliothèque d'uplift (CausalML, EconML, scikit-uplift) n'a de fiche ; les modèles de base peuvent venir de [[Scikit-Learn]].
+- Briques du brain : **sans objet** — aucune bibliothèque d'uplift (CausalML, EconML, scikit-uplift) n'a de fiche ; les modèles de base peuvent venir de scikit-learn.
 
 ## Pour aller plus loin
 
