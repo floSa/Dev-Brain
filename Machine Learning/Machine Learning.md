@@ -49,6 +49,8 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - Récupérer un modèle ou un jeu de données déjà publié → [[HuggingFace]].
 - Étiqueter soi-même des données pour l'apprentissage supervisé, sur des machines sans cloud → [[Annotation de données]] : [[CVAT]] pour les images, la vidéo et le 3D, [[Label Studio]] pour le texte, l'audio, les séries et les images ; rôles, SSO et contrôle qualité automatique sont payants dans les deux.
 - Faire générer du texte, du code ou une image par un modèle de fondation → [[LLM & IA générative]], pas ce domaine.
+- Peu d'étiquettes et beaucoup de données brutes → [[Apprentissage semi-supervisé]] ; choisir quoi étiqueter → [[Active learning]] ; des données qui ne peuvent pas quitter leur propriétaire → [[Apprentissage fédéré]] ; une garantie formelle de confidentialité → [[Confidentialité différentielle]] (les trois autres sont rangés dans [[Socle]]).
+- Un écart de décisions ou d'erreurs entre groupes de personnes → [[Équité et biais algorithmique]], dans [[Évaluation de modèles]].
 
 <!-- AUTO:START -->
 ### Sous-domaines

@@ -19,6 +19,7 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 - **Les modèles simples ne sont pas des modèles pauvres.** [[Régression linéaire]] et [[Régression logistique]] sont la référence de comparaison obligatoire — un modèle plus complexe qui ne les bat pas ne se justifie pas. [[GLM]] les étend aux lois non gaussiennes (comptages, durées, proportions), [[GAM]] à la non-linéarité qui reste lisible, [[Régression quantile]] à la prédiction d'un intervalle plutôt que d'une moyenne. [[Régularisation]] est ce qui les rend utilisables en grande dimension, et c'est le réglage le plus rentable de la famille.
 - **Le reste de la boîte classique se choisit sur une hypothèse, pas sur un classement.** [[Naive Bayes]] suppose l'indépendance conditionnelle et gagne son pari en très grande dimension ; [[k-NN]] ne suppose rien mais repousse tout le coût à la prédiction ; [[Analyse discriminante]] suppose la normalité par classe ; [[SVM]] cherche la marge maximale et passe au non linéaire par le noyau ; [[Gaussian Process]] est le seul à rendre nativement son incertitude — il sait qu'il ne sait pas ; [[Perceptron et MLP]] est l'origine des réseaux, et la porte vers [[Apprentissage profond]].
 - **Sur des colonnes, ce dossier n'est pas le dernier mot** : le gradient boosting bat ces modèles-là sur données hétérogènes, et il est rangé dans [[Tabulaire]] avec la préparation des variables. Le partage est net — ici ce qui vaut quelle que soit la donnée, là ce qui suppose des colonnes.
+- **Quand les étiquettes sont rares, ou que les données ne peuvent pas circuler.** [[Apprentissage semi-supervisé]] exploite les exemples bruts, mais ses benchmarks ont été jugés flatteurs : un modèle pré-entraîné ajusté avec peu d'étiquettes rivalise souvent. [[Active learning]] choisit *quoi* étiqueter plutôt que d'en exploiter le reste. [[Apprentissage fédéré]] et [[Confidentialité différentielle]] règlent la circulation et la confidentialité ; le fédéré seul n'offre aucune garantie formelle, la confidentialité différentielle la donne au prix d'une utilité perdue.
 
 ## Choisir
 
@@ -33,6 +34,8 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 - Apprendre en flux, sur une donnée qui n'entre pas en mémoire → [[River]].
 - Des colonnes et une cible, une fois la baseline posée → [[Tabulaire]].
 - Un réseau de neurones → [[Apprentissage profond]].
+- Quelques étiquettes et beaucoup de données brutes → [[Apprentissage semi-supervisé]], après avoir réglé une baseline supervisée et essayé un modèle pré-entraîné ; choisir lesquelles étiqueter → [[Active learning]].
+- Des données qui ne peuvent pas être centralisées → [[Apprentissage fédéré]] ; une garantie formelle de confidentialité sur ce que le modèle laisse fuiter → [[Confidentialité différentielle]].
 
 <!-- AUTO:START -->
 ### Notions
