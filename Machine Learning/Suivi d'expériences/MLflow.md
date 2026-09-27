@@ -31,7 +31,7 @@ url_repo: https://github.com/mlflow/mlflow
 
 Standard du cycle de vie ML hébergé par la Linux Foundation, en quatre briques modulaires :
 *Tracking* journalise paramètres, métriques, artefacts et code de chaque exécution ; *Model
-Registry* versionne les modèles et porte leurs stades et leurs promotions ; *Projects*
+Registry* versionne les modèles et les promeut par **alias** et tags de version (les **stades** Staging / Production / Archived sont dépréciés depuis la 2.9.0) ; *Projects*
 empaquette une exécution reproductible ; *Models* définit un format d'échange déployable sur
 plusieurs cibles. L'ensemble est agnostique au framework comme au cloud, et l'*autologging*
 capture l'essentiel sans instrumenter le code. C'est le seul du dossier à porter un registre
@@ -42,7 +42,7 @@ de modèles ouvert.
 | Prendre si | Écarter si |
 |---|---|
 | Tracking auto-hébergeable et gratuit, sans dépendance à un service tiers | Le serveur de tracking par défaut n'a aucune authentification : à placer derrière un reverse-proxy ou un SSO |
-| Registre de modèles ouvert, pour gérer stades et promotions | Le `mlruns/` sur disque grossit vite : viser tôt un backend SQL et un stockage objet |
+| Registre de modèles ouvert, pour gérer alias, tags et promotions (les stades sont dépréciés depuis la 2.9.0, à ne pas adopter pour un nouveau registre) | Le `mlruns/` sur disque grossit vite : viser tôt un backend SQL et un stockage objet |
 | Stack hétérogène : un seul format de modèle pour servir partout | L'autologging ne capture pas la même chose selon le framework : vérifier ce qui part réellement |
 | Déjà sur Databricks : Managed MLflow intégré (auth, Unity Catalog), rien à opérer | Serveur de tracking mono-nœud : ce n'est pas une plateforme d'orchestration |
 
@@ -75,6 +75,7 @@ de modèles ouvert.
 ## Ressources
 
 - Documentation — https://mlflow.org/docs/latest/
+- Documentation — dépréciation des stades de modèles, au profit des alias et des tags de version (depuis la 2.9.0) : https://mlflow.org/docs/latest/ml/model-registry/workflow/
 - Dépôt — https://github.com/mlflow/mlflow
 
 ## Voir aussi
