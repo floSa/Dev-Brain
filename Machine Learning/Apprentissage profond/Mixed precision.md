@@ -45,6 +45,8 @@ tags: [mixed-precision, deep-learning, gpu, memory-optimization]
 - [[Maximal Update Parametrization]] — l'interaction entre paramétrisation et basse précision motive la variante *u-µP* (unit-scaled µP).
 - [[Entraînement distribué]] — la précision mixte y est quasi systématique (FSDP/ZeRO en bf16).
 - [[PyTorch]] — `torch.amp` (autocast + GradScaler) en standard.
+- [[Rétropropagation et différentiation automatique]] — la passe arrière en fp16/bf16 : le *loss scaling* existe parce que de petits gradients tombent à zéro.
+- [[Normalisation et initialisation des réseaux]] — normalisations et softmax se calculent en fp32 sous `autocast` ; le placement de la norme interagit avec la précision.
 
 ## Pour aller plus loin
 

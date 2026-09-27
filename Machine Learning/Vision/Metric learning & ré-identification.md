@@ -47,6 +47,7 @@ tags: [metric-learning, re-identification, representation-learning, computer-vis
 - [[Détection d'objets]] — fournit les crops sur lesquels la ré-id opère.
 - [[Bases de données vectorielles]] — recherche du plus proche voisin à grande échelle.
 - [[Vision par ordinateur]] / [[CNN]] — le cadre et les backbones.
+- [[Apprentissage contrastif]] — la famille de pertes (InfoNCE, NT-Xent) vue côté perte et réglages, avec ou sans étiquettes.
 
 ## Pour aller plus loin
 

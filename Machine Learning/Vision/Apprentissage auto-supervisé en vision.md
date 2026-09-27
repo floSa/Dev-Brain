@@ -47,6 +47,7 @@ tags: [self-supervised, representation-learning, computer-vision, deep-learning]
 - [[Metric learning & ré-identification]] — cousine **supervisée** : mêmes pertes contrastives / triplet, mais avec des étiquettes de similarité.
 - [[Transfer learning vision]] — l'usage en aval des backbones auto-supervisés.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
+- [[Apprentissage contrastif]] — la **perte** (InfoNCE, NT-Xent) et ses réglages (négatifs, température) ; cette page-ci porte le domaine vision.
 
 ## Pour aller plus loin
 
