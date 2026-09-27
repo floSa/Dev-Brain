@@ -69,4 +69,5 @@ surcoût de démarrage sensible sur les petits modèles.
 ## Voir aussi
 
 - [[Inférence bayésienne]] · [[MCMC]] · [[Estimation MAP]] · [[Chaînes de Markov]] — les notions implémentées
+- [[Modèles à effets mixtes]] — la version bayésienne hiérarchique d'un modèle à effets aléatoires
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
