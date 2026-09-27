@@ -47,6 +47,7 @@ tags: [optimization, gradient-descent, deep-learning, learning-rate]
 - [[Loss landscape and saddle points]] — la géométrie que momentum et mise à l'échelle aident à traverser.
 - [[Newton & quasi-Newton]] — autre manière d'exploiter la courbure ; $\sqrt{\hat{v}}$ d'Adam en est une approximation diagonale bon marché.
 - [[Convexity]] — cadre où les garanties de convergence sont les plus nettes.
+- [[Rétropropagation et différentiation automatique]] — d'où vient le gradient qu'Adam consomme ; ses deux moments s'ajoutent à la mémoire des activations.
 
 ## Pour aller plus loin
 

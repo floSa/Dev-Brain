@@ -48,6 +48,7 @@ tags: [optimization, learning-rate]
 - [[Loss landscape and saddle points]] — la géométrie qui dicte le pas à chaque phase.
 - [[Optimisation d'hyperparamètres]] — le LR est l'hyperparamètre numéro un à régler.
 - [[Maximal Update Parametrization]] — fixe l'**échelle** du LR selon la largeur du modèle (et la rend transférable d'un proxy vers la cible) ; le calendrier reste un problème distinct qui ne transfère pas automatiquement.
+- [[Normalisation et initialisation des réseaux]] — Post-LN impose un warm-up du taux d'apprentissage que Pre-LN permet de retirer.
 
 ## Pour aller plus loin
 

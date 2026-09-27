@@ -49,6 +49,7 @@ tags: [optimization, loss-landscape]
 - [[Newton & quasi-Newton]] — exploite la courbure, mais piégé par les selles.
 - [[Learning rate schedules]] — règle le pas pour franchir plateaux et ravins.
 - [[Eigendecomposition]] — le spectre de la hessienne classe les points critiques.
+- [[Rétropropagation et différentiation automatique]] — le produit hessienne-vecteur donne accès à la courbure sans former la hessienne.
 
 ## Pour aller plus loin
 

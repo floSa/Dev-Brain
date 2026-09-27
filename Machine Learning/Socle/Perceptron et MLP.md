@@ -70,6 +70,7 @@ tags: [supervised, deep-learning, classification, regression]
 - [[Régularisation]] — la pénalité `alpha`, le dropout, l'early stopping.
 - [[Kolmogorov-Arnold Networks]] — alternative récente : apprendre les activations plutôt que les poids.
 - [[Types de données et choix de modèle]] — quand un réseau se justifie.
+- [[Rétropropagation et différentiation automatique]] — comment le gradient d'un MLP se calcule, couche par couche.
 
 ## Pour aller plus loin
 
