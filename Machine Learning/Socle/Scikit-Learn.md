@@ -79,3 +79,4 @@ Le socle du machine learning sur données tabulaires en mémoire, au-dessus de N
 - [[Prince]] — l'analyse factorielle écrite sur l'API scikit-learn
 - [[Comparatif - Réduction de dimension]] — PCA et t-SNE face à UMAP et PaCMAP
 - [[Apprentissage semi-supervisé]] — `SelfTrainingClassifier`, `LabelPropagation` et `LabelSpreading` du module `semi_supervised`, et ce que le non-étiqueté apporte ou non
+- [[Méthodes à noyau]] — `SVC`, `SVR`, `KernelRidge` et, dans `kernel_approximation`, `Nystroem`, `RBFSampler` et `PolynomialCountSketch`
