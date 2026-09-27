@@ -80,3 +80,4 @@ n'ont pas été relues ici.
 - [[embeddings]] — le premier étage bi-encoder que ce cross-encoder corrige
 - [[Hybrid retrieval]] — l'étage amont qui fournit le top-k
 - [[Comparatif - Rerankers]] — ce qui départage les rerankers du dossier
+- [[Learning to rank]] — le cadre d'apprentissage dont un cross-encoder est le cas pointwise
