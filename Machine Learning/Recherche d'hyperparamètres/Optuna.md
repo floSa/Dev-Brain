@@ -73,3 +73,4 @@ avec le process. Maintenu par Preferred Networks.
 - [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
 - [[Validation croisée]] — d'où vient le score qu'il optimise
 - [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage
+- [[Optimisation bayésienne]] — le mécanisme (substitut, acquisition) derrière ses samplers TPE et GP, et ses limites

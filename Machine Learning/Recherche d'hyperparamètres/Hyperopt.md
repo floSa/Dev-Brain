@@ -72,3 +72,4 @@ Spark/Databricks et à Freqtrade.
 - [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
 - [[Spark]] — le cluster qui porte `SparkTrials`
 - [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage
+- [[Optimisation bayésienne]] — le mécanisme (substitut, acquisition) derrière TPE, et ses limites
