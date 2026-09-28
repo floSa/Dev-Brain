@@ -60,6 +60,7 @@ tags: [timeseries, anomaly-detection]
 - [[Imbalanced classification]] — anomalies = classe rare, mêmes pièges d'évaluation.
 - [[DBSCAN]] — détection d'outliers par densité, transposable aux sous-séquences.
 - Voir aussi : [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
+- [[Modèles de Markov cachés et filtre de Kalman]] — un état latent donne un score d'anomalie (innovation du filtre, vraisemblance d'un HMM) ; la page cible présente cet usage comme un raisonnement, non appuyé par une source lue.
 
 ## Pour aller plus loin
 

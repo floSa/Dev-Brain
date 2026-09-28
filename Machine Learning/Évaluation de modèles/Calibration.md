@@ -51,6 +51,7 @@ tags: [model-evaluation, calibration, classification]
 - [[Classification metrics]] — log-loss et Brier, métriques propres sensibles à la calibration.
 - [[Régression logistique]] — exemple type de modèle naturellement calibré.
 - [[Validation croisée]] — recalibrer dans les plis pour éviter la fuite d'information.
+- [[Prédiction conforme]] — une garantie de couverture qui n'exige pas de probabilités fiables ; à ne pas confondre avec la calibration, qui rend les probabilités prédites fiables.
 
 ## Pour aller plus loin
 

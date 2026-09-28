@@ -51,6 +51,7 @@ tags: [regression, linear-model, supervised, maximum-likelihood]
 - [[Régularisation]] — GLM pénalisés (déviance + L1/L2).
 - [[GAM]] — relâche la linéarité du prédicteur via des fonctions de lissage.
 - [[Maximum de vraisemblance]] — le principe d'estimation commun.
+- [[Modèles à effets mixtes]] — le GLM quand les observations sont groupées ou répétées : l'effet aléatoire ajouté en fait un GLMM, une extension et non un concurrent.
 
 ## Pour aller plus loin
 
