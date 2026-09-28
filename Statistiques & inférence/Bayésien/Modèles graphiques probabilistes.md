@@ -103,7 +103,7 @@ tags: [bayesian, probability, markov, statistical-inference]
   - estimation de paramètres : `MaximumLikelihoodEstimator`, `BayesianEstimator` (a priori `dirichlet`, `BDeu` par défaut, `K2`), `ExpectationMaximization` ;
   - structure : `PC` (variantes `orig`, `stable`, `parallel`), `HillClimbSearch` (scores `k2`, `bdeu`, `bds`, `bic-d`, `aic-d` et leurs variantes gaussiennes), `GES`, `TreeSearch`, `MmhcEstimator`.
   - **Limites relevées** : les scores discrets exigent des variables discrètes (BIC lève une `ValueError` sur des variables continues) ; les valeurs manquantes se codent en `numpy.nan`. Aucune mesure de performance n'a été faite. Pas de brique pgmpy dans le brain.
-- **scikit-learn** : `sklearn.covariance.GraphicalLasso` estime une **matrice de précision parcimonieuse** par pénalité $\ell_1$, ce qui revient à apprendre un champ de Markov gaussien (la structure se lit dans les zéros de la précision) ; scikit-learn n'a pas de réseau bayésien général (non vérifié exhaustivement). Voir [[Scikit-Learn]].
+- **scikit-learn** : `sklearn.covariance.GraphicalLasso` estime une **matrice de précision parcimonieuse** par pénalité $\ell_1$, ce qui revient à apprendre un champ de Markov gaussien (la structure se lit dans les zéros de la précision) ; scikit-learn n'a pas de réseau bayésien général (non vérifié exhaustivement).
 - **Programmation probabiliste** : [[PyMC]] et NumPyro expriment un modèle bayésien comme un graphe de variables aléatoires, mais leur documentation sur ce point n'a pas été lue pour cette page.
 
 ### Travaux récents
@@ -127,7 +127,6 @@ Aucun article récent sur l'inférence exacte et la largeur d'arbre n'a été re
 - [[Chaînes de Markov]] — le cas d'un graphe linéaire.
 - [[Maximum de vraisemblance]] — l'estimation des paramètres, nœud par nœud, avec données complètes.
 - [[A priori conjugués]] — l'a priori de Dirichlet des tables de probabilités conditionnelles.
-- [[Scikit-Learn]] — `GraphicalLasso` pour un champ de Markov gaussien.
 - [[PyMC]] — pour exprimer un modèle bayésien sous forme de programme.
 
 ## Pour aller plus loin
@@ -146,7 +145,7 @@ Aucun article récent sur l'inférence exacte et la largeur d'arbre n'a été re
 - Reisach, Seiler, Weichwald (2021), *Beware of the Simulated DAG! Causal Discovery Benchmarks May Be Easy To Game*, NeurIPS : <https://arxiv.org/abs/2102.13647> — résumé seul : la variance marginale croît souvent le long de l'ordre causal dans les DAG simulés, et des algorithmes qui l'exploitent échouent après standardisation des données.
 - Wainwright et Jordan (2008), *Graphical Models, Exponential Families, and Variational Inference*, Found. Trends ML 1(1-2) — métadonnées seules.
 - Documentation : [pgmpy](https://github.com/pgmpy/pgmpy) (dépôt, API et code lus).
-- Connexions brain : [[Inférence bayésienne]], [[Découverte causale]], [[Modèles de Markov cachés et filtre de Kalman]], [[MCMC]], [[PyMC]], [[Scikit-Learn]].
+- Connexions brain : [[Inférence bayésienne]], [[Découverte causale]], [[Modèles de Markov cachés et filtre de Kalman]], [[MCMC]], [[PyMC]].
 
 ### Points ouverts
 
