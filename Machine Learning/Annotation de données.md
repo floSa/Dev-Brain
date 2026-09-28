@@ -108,4 +108,4 @@ tags: [annotation, human-in-the-loop, supervised, self-hosted]
 - Northcutt, C., Athalye, A. et Mueller, J. (2021), *Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks*, NeurIPS 2021, Datasets and Benchmarks — https://arxiv.org/abs/2103.14749
 - Snow, R. et al. (2008), *Cheap and Fast — But is it Good? Evaluating Non-Expert Annotations for Natural Language Tasks*, EMNLP 2008 — https://aclanthology.org/D08-1027/
 - Gu, Y. et al. (2025), *Large Language Models Are Effective Human Annotation Assistants, But Not Good Independent Annotators*, arXiv 2503.06778 (prépublication ; venue non vérifiée) — https://arxiv.org/abs/2503.06778 ; sur le seul volet « l'IA comme assistante » : les experts reprennent les arguments extraits par l'IA 60 % du temps, pour 25 % de temps d'extraction en moins.
-- Le sujet voisin de l'**active learning** n'a pas de page propre dans le brain : à créer si le besoin revient.
+- Le sujet voisin de l'**active learning** a sa propre notion, [[Active learning]], qui détaille les stratégies de sélection et leurs limites.
