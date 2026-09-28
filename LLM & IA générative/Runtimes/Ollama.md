@@ -93,3 +93,5 @@ source de surprise.
 - [[Comparatif - Exécution & serving LLM]] — ce qui départage les moteurs du dossier
 - [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet, d'où viennent les deux bornes `/v1` et 4 096 tokens
 - [[HuggingFace]] — d'où viennent les poids, convertis en GGUF
+- [[Contexte long]] — le coût mémoire du cache KV par séquence et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel pris en charge et pièges de la quantification pour servir un LLM

@@ -90,3 +90,5 @@ OpenAI-compatible. Projet hébergé par la PyTorch Foundation depuis 2025.
 - [[Quantization]] — AWQ, GPTQ et FP8, pour réduire l'empreinte VRAM
 - [[Small Language Models]] · [[Reasoning models]] — deux familles de modèles qu'il sert
 - [[HuggingFace]] — d'où viennent les poids
+- [[Contexte long]] — le coût mémoire du cache KV par séquence et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel pris en charge et pièges de la quantification pour servir un LLM

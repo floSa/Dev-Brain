@@ -76,3 +76,5 @@ parallélisme tensoriel, pipeline et expert sur plusieurs GPU et nœuds.
 - [[NVIDIA Triton]] — le serveur dont il est un backend d'inférence
 - [[Quantization]] — FP8, INT4 et FP4, les précisions réduites qu'il exploite
 - [[HuggingFace]] — d'où viennent les poids, avant conversion en moteur TensorRT
+- [[Contexte long]] — le coût mémoire du cache KV par séquence et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel pris en charge et pièges de la quantification pour servir un LLM

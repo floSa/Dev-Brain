@@ -85,3 +85,5 @@ enveloppent, et il vise **une** machine.
 - [[Comparatif - Exécution & serving LLM]] — ce qui départage les moteurs du dossier
 - [[Quantization]] — le mécanisme dont GGUF, les K-quants et l'*imatrix* sont la mise en œuvre
 - [[HuggingFace]] — d'où viennent les poids, convertis en GGUF
+- [[Contexte long]] — le coût mémoire du cache KV par séquence et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel pris en charge et pièges de la quantification pour servir un LLM
