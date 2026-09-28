@@ -71,3 +71,4 @@ est le socle open-source de **Snowflake AI Observability**.
 - [[LLM eval metrics]] — la notion du dossier
 - [[LLM-as-judge]] — le mécanisme derrière ses feedback functions ; [[RAG eval]] pour le *RAG triad*
 - [[Comparatif - Évaluation LLM]] — ce qui départage les outils du dossier
+- [[Hallucinations des LLM]] — la groundedness comme une des deux familles d'hallucination, avec les limites de sa mesure

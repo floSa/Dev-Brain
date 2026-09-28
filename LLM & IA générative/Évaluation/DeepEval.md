@@ -74,3 +74,5 @@ datasets partagés et suivi de régression.
 - [[LLM eval metrics]] — la notion du dossier
 - [[RAG eval]] — ce que mesurent ses métriques RAG
 - [[Comparatif - Évaluation LLM]] — ce qui départage les outils du dossier
+- [[Hallucinations des LLM]] — typologie, mesure et limites des détecteurs derrière une métrique d'hallucination
+- [[RAG agentique]] — évaluer un système de récupération multi-étapes, au-delà de la réponse finale

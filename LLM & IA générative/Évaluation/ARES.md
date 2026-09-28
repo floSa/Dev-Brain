@@ -74,3 +74,4 @@ voisin : [[Ragas]] — l'approche sans référence par LLM généraliste, quand 
 - [[LLM-as-judge]] — le mécanisme, ici avec des juges affinés
 - [[LLM eval metrics]] — la notion du dossier
 - [[Comparatif - Évaluation LLM]] — ce qui départage les outils du dossier
+- [[Hallucinations des LLM]] — typologie des hallucinations et limites des juges qui les mesurent
