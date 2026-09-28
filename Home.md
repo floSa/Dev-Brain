@@ -9,7 +9,7 @@ tags: [meta]
 
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
-- [[Machine Learning]] — 105 briques, 15 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Plateformes data & IA]], [[Socle]], [[Évaluation de modèles]]
+- [[Machine Learning]] — 105 briques, 16 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
 - [[LLM & IA générative]] — 97 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
 - [[Bases de données]] — 58 briques, 5 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
