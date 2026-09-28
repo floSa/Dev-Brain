@@ -48,6 +48,7 @@ tags: [model-evaluation, ranking]
 - [[ROC-AUC & courbe PR]] — l'AUC-ROC mesure la qualité d'un ordre global (paires bien classées).
 - [[Classification metrics]] — Precision@k et Recall@k transposent précision et rappel à une liste tronquée.
 - [[Validation croisée]] — découpage par requête pour estimer ces métriques sans fuite.
+- Voir aussi : [[Learning to rank]]
 
 ## Pour aller plus loin
 
