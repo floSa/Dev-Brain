@@ -95,6 +95,35 @@ MOC générées tenaient ce rôle. Le dossier est mort à la clôture du lot 4.
 > réappliquer à la main sur chaque poste. L'extrait CSS `.obsidian/snippets/roles.css`, lui,
 > est versionné — il colore l'explorateur, les onglets et le badge de propriété, pas le graphe.
 
+### Ce que le graphe ne montre pas — le filtre `search` (2026-10-02)
+
+Un nœud sans couleur ou sans lien est un bruit, pas une information. Le graphe global masque donc
+tout ce qui n'est pas une page de contenu, par la clé `search` de `.obsidian/graph.json` :
+
+```
+-path:AI/ -path:Documentation/ -path:Templates/ -path:Projects/ -path:docs/ -path:.claude/ -path:.base
+-file:CHANGELOG -file:INSTALL -file:README -file:CONTRIBUTING -file:CLAUDE -file:Inbox
+```
+
+| Masqué | Pourquoi |
+|---|---|
+| `*.base` (`path:.base`) | Une vue de comparatif n'a **ni frontmatter ni corps** : donc ni rôle, ni couleur, un seul lien (la page du comparatif qui l'embarque). C'est la page `role: comparatif`, en rouge, qui représente le comparatif ; le `.base` n'est que sa vue |
+| `Templates/` | Cinq gabarits portent un `role:` (ils colorent) mais n'ont aucun lien : cinq nœuds isolés qui imitent des pages |
+| `AI/`, `Documentation/`, `.claude/`, `docs/`, `Projects/` | Gouvernance, migration, journaux de session, rapports : environ 45 pages sans rôle dont 28 sans aucun lien |
+| fichiers racine (`CHANGELOG`, `INSTALL`, `README`, `CONTRIBUTING`, `CLAUDE*`, `Inbox`) | Même raison |
+
+**Rien n'est supprimé** : le filtre ne touche que l'affichage. `Home.md` reste visible, c'est la porte
+d'entrée (il cite les hubs).
+
+**Gris voulu** : les `Rule - …` (par exemple `Rule - Config typée`) et les `Pattern - …` portent
+`role: rule` ou `role: pattern`, qui partagent la dernière règle de couleur (gris). Un nœud gris qui
+porte un de ces deux rôles est normal ; un nœud gris qui n'en porte aucun est un défaut à corriger.
+
+**Contrôle** (mesuré le 2026-10-02 sur les 1011 pages de contenu) : aucune page `brique`, `notion`,
+`hub`, `comparatif`, `pattern` ou `rule` n'est sans lien entrant, sans lien sortant ou isolée, hors les
+cinq gabarits de `Templates/`. `graph.json` étant ignoré par git, le filtre se repose à la main sur
+un autre poste ; Obsidian doit être fermé ou le graphe rouvert pour qu'il soit lu.
+
 ## 2. Hiérarchie de navigation (MOC)
 
 Les pages hub sont générées par `AI/scripts/build_mocs.py` sur 2 étages — il y en avait 3 jusqu'au 2026-09-05 :
