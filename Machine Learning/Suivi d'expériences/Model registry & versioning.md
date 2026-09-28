@@ -11,13 +11,13 @@ tags: [model-registry, experiment-tracking]
 
 ## Aperçu
 
-- Un **point de vérité unique** pour les modèles entraînés : chaque modèle y est versionné, daté, traçable jusqu'à son run d'entraînement, et promu par stades avant d'atteindre la production.
+- Un **point de vérité unique** pour les modèles entraînés : chaque modèle y est versionné, daté, traçable jusqu'à son run d'entraînement, et promu par déplacement d'**alias** avant d'atteindre la production.
 - Répond à trois questions : *quelle version tourne en prod ?*, *d'où vient-elle (données, code, params) ?*, *comment revenir en arrière ?*
 
 ## Concepts clés
 
-### Versions & stades
-- Chaque réentraînement crée une **version** immuable. Les versions se désignent par des **alias** mobiles (`champion`, `challenger`) déplacés d'une version à l'autre ; les **stades** `None` → `Staging` → `Production` → `Archived` de MLflow sont dépréciés depuis la 2.9.0.
+### Versions & alias
+- Chaque réentraînement crée une **version** immuable. Les versions se désignent par des **alias** mobiles (`champion`, `challenger`) déplacés d'une version à l'autre ; les **stades** `None` → `Staging` → `Production` → `Archived` de MLflow sont dépréciés depuis la 2.9.0 (la documentation annonce leur retrait dans une version majeure future) ; des **alias** et des **tags de version** (`validation_status: passed`, par exemple) les remplacent.
 - La promotion est une **décision gouvernée** (validation, revue), pas un simple `git push`.
 
 ### Lignage (lineage)
@@ -49,4 +49,4 @@ tags: [model-registry, experiment-tracking]
 ## Pour aller plus loin
 
 - Versionnage de données complémentaire ([[DVC]], [[lakeFS]], [[Delta Lake]]) pour boucler le lignage.
-- Documentation MLflow Model Registry — stades, alias et webhooks de promotion.
+- Documentation MLflow Model Registry — alias et tags de version, qui remplacent les stades dépréciés depuis la 2.9.0 : https://mlflow.org/docs/latest/ml/model-registry/workflow/
