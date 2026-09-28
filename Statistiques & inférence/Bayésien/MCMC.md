@@ -53,6 +53,8 @@ tags: [monte-carlo, markov, bayesian]
 - [[Inférence bayésienne]] — le principal débouché : échantillonner l'a posteriori.
 - [[A priori conjugués]] — quand ils s'appliquent, ils rendent le MCMC inutile (forme fermée).
 - [[Loi des grands nombres]] — fonde l'estimation Monte-Carlo des espérances a posteriori.
+- [[Monte Carlo et inférence variationnelle]] — le contexte : Monte Carlo simple, échantillonnage préférentiel, et l'inférence variationnelle quand la chaîne est trop lente.
+- [[Modèles graphiques probabilistes]] — l'échantillonnage de Gibbs y est l'inférence approchée naturelle d'un graphe.
 
 ## Pour aller plus loin
 

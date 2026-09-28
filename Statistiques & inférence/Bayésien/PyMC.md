@@ -71,3 +71,4 @@ surcoût de démarrage sensible sur les petits modèles.
 - [[Inférence bayésienne]] · [[MCMC]] · [[Estimation MAP]] · [[Chaînes de Markov]] — les notions implémentées
 - [[Modèles à effets mixtes]] — la version bayésienne hiérarchique d'un modèle à effets aléatoires
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Modèles graphiques probabilistes]] · [[Monte Carlo et inférence variationnelle]] — la structure de graphe d'un modèle bayésien, et l'approximation variationnelle (`pm.fit`, ADVI) comme alternative au MCMC

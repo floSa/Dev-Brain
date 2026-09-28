@@ -51,6 +51,7 @@ tags: [probability, convergence]
 - [[Intervalles de confiance]] — le TCL fournit la forme normale qui les calibre.
 - [[Tests d'hypothèse]] — t-test, z-test, ANOVA reposent sur la normalité asymptotique de la moyenne.
 - [[Bootstrap]] — alternative par simulation quand l'approximation gaussienne ne tient pas.
+- [[Théorie des valeurs extrêmes]] — le pendant pour les maxima : la loi limite d'un maximum est GEV, non gaussienne.
 
 ## Pour aller plus loin
 

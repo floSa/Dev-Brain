@@ -53,6 +53,7 @@ tags: [statistical-power, hypothesis-testing, effect-size]
 - [[Correction des tests multiples]] — son coût en puissance se planifie ici.
 - [[A-B testing|A/B testing]] — c'est ici que se fixent son MDE et sa durée.
 - [[Bootstrap]] — simulation quand aucune formule fermée ne s'applique.
+- [[Facteurs de Bayes et tailles d'effet]] — la taille d'effet que la puissance suppose, et comment la rapporter avec son intervalle.
 
 ## Pour aller plus loin
 
