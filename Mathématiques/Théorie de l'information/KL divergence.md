@@ -48,6 +48,7 @@ tags: [information-theory, kl-divergence]
 - [[Mutual information]] — c'est une KL entre la loi conjointe et le produit des marges.
 - [[Inférence bayésienne]] — l'inférence variationnelle minimise une KL à l'a posteriori.
 - [[Shannon entropy]] — la KL s'annule quand $q = p$, ramenant l'entropie croisée à l'entropie.
+- [[Monte Carlo et inférence variationnelle]] — l'inférence variationnelle minimise $\mathrm{KL}(q\,\|\,p)$ à l'a posteriori, et en tire l'ELBO.
 
 ## Pour aller plus loin
 
