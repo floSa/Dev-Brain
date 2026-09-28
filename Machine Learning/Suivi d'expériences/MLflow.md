@@ -80,7 +80,7 @@ de modèles ouvert.
 
 ## Voir aussi
 
-- [[Model registry & versioning]] — la notion du dossier qu'il implémente : stades, alias, lignage
+- [[Model registry & versioning]] — la notion du dossier qu'il implémente : alias, tags de version, lignage (les stades sont dépréciés depuis la 2.9.0)
 - [[Déploiement de modèles]] — l'étape aval que son format de modèle sert
 - [[Monitoring de modèle en production]] — ce qui prend le relais une fois le modèle servi
 - [[PyTorch]] · [[Scikit-Learn]] · [[XGBoost]] · [[Optuna]] — les frameworks que son autologging reconnaît
