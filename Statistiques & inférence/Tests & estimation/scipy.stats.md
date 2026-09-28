@@ -69,3 +69,4 @@ niveau sur lequel statsmodels et pingouin sont bâtis.
 - [[Tests d'hypothèse]] · [[Intervalles de confiance]] · [[Test t et ANOVA]] · [[Test du khi-deux]] · [[Tests non paramétriques]] — les notions implémentées
 - [[Classification hiérarchique (CAH)|CAH]] — via `scipy.cluster.hierarchy`, le sous-module voisin
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Théorie des valeurs extrêmes]] — `genextreme` et `genpareto` (attention : `genextreme` utilise $c = -\xi$) · [[Facteurs de Bayes et tailles d'effet]] — rapport de cotes et mesures d'association, ni $d$ ni facteur de Bayes
