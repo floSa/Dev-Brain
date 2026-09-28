@@ -41,6 +41,7 @@ tags: [statistical-inference, hypothesis-testing, confidence-interval, p-value, 
 - [[Analyse de survie]] — domaines : data-sci
 - [[Bootstrap]] — domaines : data-sci
 - [[Correction des tests multiples]] — domaines : data-sci
+- [[Facteurs de Bayes et tailles d'effet]] — domaines : data-sci
 - [[Intervalles de confiance]] — domaines : data-sci
 - [[MANOVA et tests multivariés]] — domaines : data-sci
 - [[Maximum de vraisemblance]] — domaines : data-sci

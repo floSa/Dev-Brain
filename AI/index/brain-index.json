@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 998,
+  "count": 1002,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -206,6 +206,7 @@
       "PyOD",
       "STUMPY",
       "Séries temporelles",
+      "Théorie des valeurs extrêmes",
       "Time series anomaly detection"
     ],
     "api-client": [
@@ -280,10 +281,13 @@
       "CausalImpact",
       "Comparatif - Outils stats",
       "Estimation MAP",
+      "Facteurs de Bayes et tailles d'effet",
       "Gaussian Process",
       "Hyperopt",
       "Inférence bayésienne",
       "MCMC",
+      "Modèles graphiques probabilistes",
+      "Monte Carlo et inférence variationnelle",
       "Naive Bayes",
       "Optimisation d'hyperparamètres",
       "Optuna",
@@ -1130,6 +1134,7 @@
     ],
     "effect-size": [
       "Analyse de puissance",
+      "Facteurs de Bayes et tailles d'effet",
       "MANOVA et tests multivariés",
       "Test t et ANOVA",
       "Tests & estimation",
@@ -1509,6 +1514,7 @@
       "Comparatif - Outils stats",
       "Correction des tests multiples",
       "Diff-in-Diff",
+      "Facteurs de Bayes et tailles d'effet",
       "MANOVA et tests multivariés",
       "Sequential testing",
       "Test du khi-deux",
@@ -2112,6 +2118,7 @@
       "MCMC",
       "Markov Decision Process",
       "Modèles de Markov cachés et filtre de Kalman",
+      "Modèles graphiques probabilistes",
       "Probabilités",
       "PyMC",
       "Stan"
@@ -2368,6 +2375,7 @@
       "Bayésien",
       "MCMC",
       "Monte Carlo Tree Search",
+      "Monte Carlo et inférence variationnelle",
       "Probabilités",
       "PyMC",
       "Stan"
@@ -2691,6 +2699,7 @@
     ],
     "p-value": [
       "Correction des tests multiples",
+      "Facteurs de Bayes et tailles d'effet",
       "Test du khi-deux",
       "Tests & estimation",
       "Tests d'hypothèse",
@@ -2805,6 +2814,7 @@
     ],
     "probabilistic-programming": [
       "Bayésien",
+      "Monte Carlo et inférence variationnelle",
       "PyMC",
       "Stan"
     ],
@@ -2812,9 +2822,11 @@
       "Chaînes de Markov",
       "Inégalités de concentration",
       "Loi des grands nombres",
+      "Modèles graphiques probabilistes",
       "Mouvement brownien",
       "Probabilités",
       "Processus de Poisson",
+      "Théorie des valeurs extrêmes",
       "Théorème central limite"
     ],
     "projection": [
@@ -3077,7 +3089,8 @@
     "reliability": [
       "Human-in-the-loop",
       "OmniRoute",
-      "Reliability patterns"
+      "Reliability patterns",
+      "Théorie des valeurs extrêmes"
     ],
     "representation-learning": [
       "Apprentissage auto-supervisé en vision",
@@ -3494,12 +3507,15 @@
       "Inférence causale",
       "Intervalles de confiance",
       "Maximum de vraisemblance",
+      "Modèles graphiques probabilistes",
       "Modèles à effets mixtes",
+      "Monte Carlo et inférence variationnelle",
       "Méthodes causales",
       "Prédiction conforme",
       "Statistiques & inférence",
       "Tests & estimation",
       "Tests d'hypothèse",
+      "Théorie des valeurs extrêmes",
       "statsmodels"
     ],
     "statistical-power": [
@@ -28993,6 +29009,100 @@
       "maturite": null
     },
     {
+      "path": "Statistiques & inférence/Bayésien/Modèles graphiques probabilistes.md",
+      "nom": "Modèles graphiques probabilistes",
+      "alias": [
+        "Modèles graphiques probabilistes",
+        "modèles graphiques",
+        "probabilistic graphical models",
+        "PGM",
+        "réseaux bayésiens",
+        "réseau bayésien",
+        "Bayesian network",
+        "Bayes net",
+        "belief network",
+        "champs de Markov",
+        "champ de Markov",
+        "Markov random field",
+        "MRF",
+        "réseau de Markov",
+        "modèle graphique orienté",
+        "modèle graphique non orienté",
+        "d-séparation",
+        "d-separation",
+        "élimination de variables",
+        "variable elimination",
+        "arbre de jonction",
+        "junction tree",
+        "propagation de croyances",
+        "belief propagation",
+        "loopy belief propagation",
+        "pgmpy"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "bayesian",
+        "probability",
+        "markov",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Bayésien/Monte Carlo et inférence variationnelle.md",
+      "nom": "Monte Carlo et inférence variationnelle",
+      "alias": [
+        "Monte Carlo et inférence variationnelle",
+        "Monte Carlo",
+        "méthodes de Monte Carlo",
+        "inférence variationnelle",
+        "variational inference",
+        "VI",
+        "ELBO",
+        "evidence lower bound",
+        "champ moyen",
+        "mean field",
+        "CAVI",
+        "ADVI",
+        "échantillonnage préférentiel",
+        "importance sampling",
+        "échantillonnage par rejet",
+        "rejection sampling",
+        "reparameterization trick",
+        "astuce de reparamétrisation",
+        "SVI",
+        "BBVI",
+        "PSIS",
+        "Pareto smoothed importance sampling"
+      ],
+      "role": "notion",
+      "categorie": "stats/bayesien",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "monte-carlo",
+        "bayesian",
+        "probabilistic-programming",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Statistiques & inférence/Bayésien/PyMC.md",
       "nom": "PyMC",
       "alias": [
@@ -29481,6 +29591,58 @@
       "maturite": null
     },
     {
+      "path": "Statistiques & inférence/Probabilités/Théorie des valeurs extrêmes.md",
+      "nom": "Théorie des valeurs extrêmes",
+      "alias": [
+        "Théorie des valeurs extrêmes",
+        "valeurs extrêmes",
+        "extreme value theory",
+        "EVT",
+        "loi des extrêmes",
+        "GEV",
+        "loi GEV",
+        "generalized extreme value",
+        "loi de Pareto généralisée",
+        "GPD",
+        "generalized Pareto",
+        "POT",
+        "peaks over threshold",
+        "dépassements de seuil",
+        "block maxima",
+        "maxima par blocs",
+        "niveau de retour",
+        "return level",
+        "période de retour",
+        "return period",
+        "indice de queue",
+        "tail index",
+        "estimateur de Hill",
+        "Fisher-Tippett-Gnedenko",
+        "Pickands-Balkema-de Haan",
+        "loi de Gumbel",
+        "loi de Fréchet",
+        "SPOT",
+        "DSPOT"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "probability",
+        "statistical-inference",
+        "anomaly-detection",
+        "reliability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Statistiques & inférence/Probabilités/Théorème central limite.md",
       "nom": "Théorème central limite",
       "alias": [
@@ -29677,6 +29839,56 @@
       "tags": [
         "hypothesis-testing",
         "multiple-testing",
+        "p-value"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Tests & estimation/Facteurs de Bayes et tailles d'effet.md",
+      "nom": "Facteurs de Bayes et tailles d'effet",
+      "alias": [
+        "Facteurs de Bayes et tailles d'effet",
+        "facteur de Bayes",
+        "facteurs de Bayes",
+        "Bayes factor",
+        "BF",
+        "BF10",
+        "taille d'effet",
+        "tailles d'effet",
+        "effect size",
+        "d de Cohen",
+        "Cohen's d",
+        "g de Hedges",
+        "Hedges' g",
+        "eta carré",
+        "êta carré",
+        "omega carré",
+        "f² de Cohen",
+        "rapport de cotes",
+        "odds ratio",
+        "a priori JZS",
+        "Cauchy prior",
+        "paradoxe de Jeffreys-Lindley",
+        "Jeffreys-Lindley paradox",
+        "déclaration de l'ASA sur les p-valeurs",
+        "significativité statistique",
+        "e-values",
+        "ROPE"
+      ],
+      "role": "notion",
+      "categorie": "stats/inference",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "effect-size",
+        "hypothesis-testing",
+        "bayesian",
         "p-value"
       ],
       "alternatives": null,

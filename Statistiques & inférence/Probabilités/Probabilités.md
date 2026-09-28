@@ -38,5 +38,6 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 - [[Modèles de Markov cachés et filtre de Kalman]] — domaines : data-sci
 - [[Mouvement brownien]] — domaines : data-sci
 - [[Processus de Poisson]] — domaines : data-sci
+- [[Théorie des valeurs extrêmes]] — domaines : data-sci
 - [[Théorème central limite]] — domaines : data-sci
 <!-- AUTO:END -->

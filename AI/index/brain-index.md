@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 998 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1002 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1136,6 +1136,8 @@
 - **Estimation MAP** — domaines : data-sci · alias : MAP, maximum a posteriori, maximum a posteriori estimation, estimation maximum a posteriori
 - **Inférence bayésienne** — domaines : data-sci · alias : Bayesian inference, inference bayesienne, Bayes, statistique bayésienne
 - **MCMC** — domaines : data-sci · alias : Markov chain Monte Carlo, Monte-Carlo par chaînes de Markov, Metropolis-Hastings, NUTS, Gibbs
+- **Modèles graphiques probabilistes** — domaines : data-sci · alias : Modèles graphiques probabilistes, modèles graphiques, probabilistic graphical models, PGM, réseaux bayésiens, réseau bayésien, Bayesian network, Bayes net, belief network, champs de Markov, champ de Markov, Markov random field, MRF, réseau de Markov, modèle graphique orienté, modèle graphique non orienté, d-séparation, d-separation, élimination de variables, variable elimination, arbre de jonction, junction tree, propagation de croyances, belief propagation, loopy belief propagation, pgmpy
+- **Monte Carlo et inférence variationnelle** — domaines : data-sci · alias : Monte Carlo et inférence variationnelle, Monte Carlo, méthodes de Monte Carlo, inférence variationnelle, variational inference, VI, ELBO, evidence lower bound, champ moyen, mean field, CAVI, ADVI, échantillonnage préférentiel, importance sampling, échantillonnage par rejet, rejection sampling, reparameterization trick, astuce de reparamétrisation, SVI, BBVI, PSIS, Pareto smoothed importance sampling
 
 ### stats/causal
 - **Diff-in-Diff** — domaines : data-sci · alias : DiD, difference-in-differences, différence des différences, doubles différences
@@ -1165,6 +1167,7 @@
 - **Analyse de survie** — domaines : data-sci · alias : survival analysis, time-to-event, analyse de survie, Kaplan-Meier, Cox, risques proportionnels, hazard, censure
 - **Bootstrap** — domaines : data-sci · alias : resampling, rééchantillonnage
 - **Correction des tests multiples** — domaines : data-sci · alias : multiple testing, multiple comparisons, Bonferroni, FDR
+- **Facteurs de Bayes et tailles d'effet** — domaines : data-sci · alias : Facteurs de Bayes et tailles d'effet, facteur de Bayes, facteurs de Bayes, Bayes factor, BF, BF10, taille d'effet, tailles d'effet, effect size, d de Cohen, Cohen's d, g de Hedges, Hedges' g, eta carré, êta carré, omega carré, f² de Cohen, rapport de cotes, odds ratio, a priori JZS, Cauchy prior, paradoxe de Jeffreys-Lindley, Jeffreys-Lindley paradox, déclaration de l'ASA sur les p-valeurs, significativité statistique, e-values, ROPE
 - **Intervalles de confiance** — domaines : data-sci · alias : confidence interval, confidence intervals, IC
 - **MANOVA et tests multivariés** — domaines : data-sci · alias : MANOVA, tests multivariés, multivariate analysis of variance, Hotelling, Hotelling T2, Wilks lambda, trace de Pillai
 - **Maximum de vraisemblance** — domaines : data-sci · alias : MLE, maximum likelihood estimation, maximum likelihood, vraisemblance maximale
@@ -1182,6 +1185,7 @@
 - **Modèles de Markov cachés et filtre de Kalman** — domaines : data-sci · alias : HMM, hidden Markov model, modèle de Markov caché, Kalman filter, filtre de Kalman, state-space model, modèle à espace d'états, modèle d'état latent, Baum-Welch, Viterbi, forward-backward, EKF, UKF, extended Kalman filter, unscented Kalman filter, particle filter, filtre particulaire, RTS smoother, lisseur de Kalman, HSMM, linear Gaussian state-space model, LGSSM
 - **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
 - **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
+- **Théorie des valeurs extrêmes** — domaines : data-sci · alias : Théorie des valeurs extrêmes, valeurs extrêmes, extreme value theory, EVT, loi des extrêmes, GEV, loi GEV, generalized extreme value, loi de Pareto généralisée, GPD, generalized Pareto, POT, peaks over threshold, dépassements de seuil, block maxima, maxima par blocs, niveau de retour, return level, période de retour, return period, indice de queue, tail index, estimateur de Hill, Fisher-Tippett-Gnedenko, Pickands-Balkema-de Haan, loi de Gumbel, loi de Fréchet, SPOT, DSPOT
 - **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
 
 ### storage/objet
