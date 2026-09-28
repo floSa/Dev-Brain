@@ -17,7 +17,7 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 - **Ces deux théorèmes sont asymptotiques, et c'est leur limite pratique** : ils disent qu'on converge, pas où on en est à $n = 200$. [[Inégalités de concentration]] répond à cette question — Markov, Chebyshev, Hoeffding, Bernstein bornent l'écart à $n$ **fini**, sans passer à la limite. C'est la version utilisable quand il faut une garantie chiffrée plutôt qu'une promesse.
 - **Un processus stochastique modélise le hasard qui se déroule**, là où les théorèmes ci-dessus regardent un tas d'observations. [[Chaînes de Markov]] pour un état qui n'a pas de mémoire du chemin parcouru ; [[Processus de Poisson]] pour des événements indépendants à taux constant, dont les inter-arrivées sont exponentielles ; [[Mouvement brownien]] pour la version à temps et trajectoires continus ; [[Modèles de Markov cachés et filtre de Kalman]] quand l'état n'est pas observé directement et qu'on n'en voit que des mesures bruitées.
 - **Trois de ces pages sont la mécanique d'outils qu'on utilise ailleurs sans le voir.** Les [[Chaînes de Markov]] sont la brique de [[MCMC]] — c'est leur loi stationnaire qu'on échantillonne, et l'ergodicité qui rend l'échantillon valide. Le [[Mouvement brownien]] est le socle des modèles génératifs par diffusion. Le [[Processus de Poisson]] est le modèle par défaut de tout comptage d'événements — trafic, pannes, arrivées.
-- **La frontière avec [[Mathématiques]] est assumée et datée.** Ces sept pages y auraient aussi leur place, mais les quatre piliers de ce domaine sont l'algèbre linéaire, l'optimisation, la théorie de l'information et la théorie de l'apprentissage. Ces pages-ci se justifient toutes par l'inférence, et c'est pourquoi elles sont rangées avec elle (arbitrage du 2026-09-05, lot 4).
+- **La frontière avec [[Mathématiques]] est assumée et datée.** Ces huit pages y auraient aussi leur place, mais les quatre piliers de ce domaine sont l'algèbre linéaire, l'optimisation, la théorie de l'information et la théorie de l'apprentissage. Ces pages-ci se justifient toutes par l'inférence, et c'est pourquoi elles sont rangées avec elle (arbitrage du 2026-09-05, lot 4).
 
 ## Choisir
 
@@ -26,6 +26,7 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 - Modéliser des transitions entre états → [[Chaînes de Markov]].
 - Modéliser des arrivées ou des comptages d'événements → [[Processus de Poisson]].
 - Reconstituer un état caché à partir de mesures bruitées, discret ou continu → [[Modèles de Markov cachés et filtre de Kalman]].
+- Modéliser le maximum d'une série ou le dépassement d'un seuil élevé (crues, pannes, seuil d'alerte) → [[Théorie des valeurs extrêmes]].
 - Simuler ces lois en Python → [[scipy.stats]], au dossier [[Tests & estimation]].
 - Les échantillonner pour approcher un a posteriori → [[MCMC]], au dossier [[Bayésien]].
 

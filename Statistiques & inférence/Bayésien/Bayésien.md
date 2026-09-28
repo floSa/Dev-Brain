@@ -25,6 +25,8 @@ tags: [bayesian, prior, probabilistic-programming, monte-carlo, markov, point-es
 - Un modèle difficile, ou une équipe déjà sur le langage Stan → [[Stan]], dont l'échantillonneur NUTS est la référence.
 - Diagnostiquer et comparer des a posteriori, quel que soit le moteur → [[ArviZ]].
 - Un modèle standard, un gros échantillon, une p-value attendue par l'interlocuteur → [[Tests & estimation]], plus court et plus lisible pour tout le monde.
+- Approcher un a posteriori sans chaîne de Markov, ou quand le MCMC est trop lent → [[Monte Carlo et inférence variationnelle]].
+- Structurer un modèle de nombreuses variables liées par des indépendances conditionnelles → [[Modèles graphiques probabilistes]].
 - L'effet causal d'une intervention datée sur une série → [[CausalImpact]], bayésien lui aussi mais rangé au niveau du domaine avec [[Inférence causale]].
 
 <!-- AUTO:START -->
