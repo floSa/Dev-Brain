@@ -92,6 +92,7 @@ tags: [annotation, human-in-the-loop, supervised, self-hosted]
 - **Pourquoi aucun comparatif** : les deux briques retenues ne couvrent pas les mêmes données — le recouvrement (images, vidéo) est borné — et la comparaison tient dans leurs fiches et ici.
 - [[Augmentation d'images]] — multiplier les exemples étiquetés sans annoter davantage.
 - [[Validation croisée]] et [[Data leakage]] — ce qu'une annotation mal séparée fausse dans la mesure.
+- [[Apprentissage semi-supervisé]] — l'autre réponse au coût des étiquettes : peu d'exemples étiquetés, beaucoup d'exemples bruts, et ce que ces derniers apportent ou non.
 
 ## Pour aller plus loin
 

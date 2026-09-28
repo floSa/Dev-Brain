@@ -53,6 +53,7 @@ tags: [classification, supervised, class-imbalance]
 - [[k-NN]] — particulièrement vulnérable au déséquilibre : les voisins d'un point rare sont majoritairement fréquents.
 - [[Calibration]] — après rééchantillonnage les probabilités sont biaisées ; recalibrer.
 - [[Data leakage]] — rééchantillonner hors du pli d'entraînement est une cause classique de fuite.
+- [[Équité et biais algorithmique]] — un groupe aux petits effectifs pose les mêmes précautions qu'une classe rare : effectifs et choix du seuil.
 
 ## Pour aller plus loin
 
