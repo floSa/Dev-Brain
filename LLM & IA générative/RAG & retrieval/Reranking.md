@@ -48,6 +48,7 @@ tags: [retrieval, reranking, ranking, rag]
 - [[Ranking metrics]] — NDCG, MAP, MRR pour évaluer la qualité d'un reclassement.
 - [[Late-interaction retrieval]] — alternative multi-vecteur (ColBERT, MaxSim) au cross-encoder pour l'étage de précision.
 - [[Recherche d'information]] — le cadre général (lexical / dense / hybride) dont le reranking est l'étage final.
+- Voir aussi : [[Learning to rank]]
 
 ## Pour aller plus loin
 
