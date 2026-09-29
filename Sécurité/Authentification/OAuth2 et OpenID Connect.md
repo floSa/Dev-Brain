@@ -75,6 +75,7 @@ tags: [authentication, sso, identity-provider]
 - **Sessions de serveur classiques**, **clés d'API** et **mTLS** (RFC 8705, jetons liés à un certificat) répondent à d'autres besoins ; [[PyJWT]] rappelle quand un token signé n'apporte que de la complexité.
 - **Bibliothèques Python voisines** de PyJWT : Authlib (client et serveur OAuth, 1.8.0 du 2026-08-30), joserfc (1.7.5), jwcrypto (1.6.1) ; python-jose n'a pas eu de version depuis mai 2025.
 - **Gestion des secrets** : un `client_secret` est un secret comme un autre — [[Gestion des secrets]].
+- [[API REST, GraphQL et gRPC]] — les styles d'API qui portent le jeton : REST, GraphQL, gRPC.
 
 ## Pour aller plus loin
 
