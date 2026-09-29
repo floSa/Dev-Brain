@@ -110,7 +110,6 @@ Ils n'ont **rien à voir avec BrainKit** et le lot 9 ne les a pas touchés.
 | `session_to_devbrain.py` | hook `Stop` — écrit le résumé de session | `AI/sessions/…` |
 | `verifier_fraicheur.py` | les règles **hors ligne** de fraîcheur : URL mortes, licence constatée contre `licence_type:`, corps qui décrit un déclin sous une `maturite:` vive, croisement avec les puces de fin de vie des comparatifs | `AI/index/fraicheur-hors-ligne.json` |
 | `audit_inventaire.py` | l'inventaire est-il fidèle au disque : index ↔ fichiers (N1), en-têtes et zones AUTO des artefacts, générateurs en `--check` si le kit est trouvable (N2), chiffres de `Home.md`, `CLAUDE.md`, `taxonomie.md` (N3). Lecture seule, ~2 s, pas de `--fix`. Code 0 conforme · 1 écart · 2 contrôle sauté (kit introuvable) ; `--json` pour une machine, `--racine` pour auditer une copie | terminal |
-| `audit_mesures.py` | audit des mesures citées dans les fiches | terminal |
 | `list_reservoir.py`, `sync_reservoir.py` | le réservoir v1, hors du vault | terminal |
 | `audit-vault.ps1`, `report-ghosts.ps1`, `find-connexes.ps1`, `discover-links.ps1`, `audit-links.ps1`, `add-wikilinks.ps1`, `gen-stubs-batch.ps1` | audits PowerShell hérités de la v2 | `AI/audits/…` |
 
