@@ -35,7 +35,7 @@ tags: [llm-as-judge, llm-eval, llm]
 ### Juges spécialisés (modèles entraînés pour juger)
 - **Principe** : affiner un modèle ouvert, plus petit, sur des jugements (souvent produits par un juge fort) pour remplacer le juge propriétaire — moins cher, exécutable en local, figé donc comparable dans le temps.
 - **Prometheus** (Kim et al., 2023) : modèle 13B entraîné sur la *Feedback Collection* (1 000 rubriques, 20 000 instructions, 100 000 réponses avec retours générés par GPT-4) ; la rubrique est fournie à l'inférence. Les auteurs rapportent une corrélation de Pearson de 0,897 avec des humains sur rubriques personnalisées, contre 0,882 pour GPT-4.
-- **Prometheus 2** (Kim et al., 2024) : notation directe **et** pairwise selon des critères définis par l'utilisateur ; les auteurs rapportent la meilleure corrélation et le meilleur accord avec les humains et les juges propriétaires parmi les évaluateurs ouverts testés, sur huit benchmarks. Poids 7B (base Mistral) et 8x7B ; dépôt `prometheus-eval` et carte du modèle sous Apache-2.0.
+- **Prometheus 2** ([[Prometheus-Eval]], Kim et al., 2024) : notation directe **et** pairwise selon des critères définis par l'utilisateur ; les auteurs rapportent la meilleure corrélation et le meilleur accord avec les humains et les juges propriétaires parmi les évaluateurs ouverts testés, sur huit benchmarks. Poids 7B (base Mistral) et 8x7B ; dépôt `prometheus-eval` et carte du modèle sous Apache-2.0.
 - **JudgeLM** (Zhu et al.) : 7B, 13B, 33B. Traite explicitement trois biais du juge affiné — position, connaissance, format — par *swap augmentation*, *reference support* et *reference drop*. L'accord de plus de 90 % annoncé est mesuré **avec GPT-4, son professeur**, pas avec des humains. Poids sous licence LLaMA.
 - **Selene Mini** (Atla) : 8B sur base Llama 3.1, carte du modèle sous Apache-2.0. Annoncé par l'éditeur comme meilleur modèle génératif 8B sur RewardBench.
 - **GLIDER** (Patronus AI) : petit modèle (≈4B, base Phi-3.5-mini) à critères et échelles libres (binaire, Likert) ; sort les raisons du score et les passages décisifs. Licence **CC-BY-NC-4.0** : usage non commercial, donc bloquant pour une livraison chez un client sans accord.
@@ -78,7 +78,7 @@ tags: [llm-as-judge, llm-eval, llm]
 - **Publier la variance** avec le score : taux de bascule et accord humain à côté de la moyenne.
 - **Choisir le juge** : un modèle propriétaire fort (précis, mais coûteux, opaque, sujet à mise à jour silencieuse) ou un juge spécialisé ouvert (local, figé, moins cher — **lire la licence** : GLIDER est non commercial).
 - Coût et latence non négligeables : un juge fort par requête peut coûter plus que la génération évaluée.
-- Outiller : [[DeepEval]] (G-Eval), [[Ragas]] (métriques reference-free), [[TruLens]] (feedback functions), [[Langfuse]] (évals en ligne).
+- Outiller : [[DeepEval]] (G-Eval), [[Ragas]] (métriques reference-free), [[TruLens]] (feedback functions), [[Inspect AI]] (scorers notés par un modèle), [[Langfuse]] (évals en ligne).
 
 ## Approches voisines & alternatives
 

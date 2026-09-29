@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 794 pages actives.
+> 796 pages actives.
 
 ## Par page
 
@@ -342,8 +342,8 @@
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
-- liens sortants : [[Comparatif - Évaluation LLM]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
+- liens sortants : [[Comparatif - Évaluation LLM]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
+- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
 
 ### DeepSpeed  ·  brique
 - tags : `distributed-training`, `memory-optimization`, `deep-learning`, `gpu`, `mixed-precision`
@@ -624,6 +624,11 @@
 - tags : `timeseries`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[Postgres]], [[TimescaleDB]]
 - liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Grafana]], [[TimescaleDB]]
+
+### Inspect AI  ·  brique
+- tags : `llm`, `llm-eval`, `llm-as-judge`, `agents`, `benchmark`
+- liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM-as-judge]], [[Ragas]], [[promptfoo]]
+- liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM-as-judge]], [[Prometheus-Eval]], [[promptfoo]], [[Évaluation]]
 
 ### Instructor  ·  brique
 - tags : `llm`, `structured-output`, `data-validation`, `type-hints`
@@ -1205,10 +1210,15 @@
 - liens sortants : [[Comparatif - ORM]], [[FastAPI]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[ORM]], [[SQLAlchemy]], [[SQLModel]]
 - liens entrants : [[Alembic]], [[Bases de données]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[ORM]], [[SQLAlchemy]], [[SQLModel]]
 
+### Prometheus-Eval  ·  brique
+- tags : `llm`, `llm-eval`, `llm-as-judge`, `local-llm`
+- liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM-as-judge]], [[Ragas]], [[promptfoo]]
+- liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM-as-judge]], [[Évaluation]]
+
 ### promptfoo  ·  brique
 - tags : `llm`, `llm-eval`, `testing`, `ai-security`
-- liens sortants : [[AI security]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]]
-- liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Ragas]], [[TruLens]], [[Évaluation]]
+- liens sortants : [[AI security]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]]
+- liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[TruLens]], [[Évaluation]]
 
 ### Prophet  ·  brique
 - tags : `forecasting`, `timeseries`
@@ -1318,7 +1328,7 @@
 ### Ragas  ·  brique
 - tags : `llm`, `llm-eval`, `rag-eval`, `rag`
 - liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangChain]], [[Langfuse]], [[LlamaIndex]], [[Phoenix Arize]], [[RAG eval]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
 
 ### RAGatouille  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `nlp`
@@ -2027,8 +2037,8 @@
 
 ### Comparatif - Évaluation LLM  ·  comparatif
 - tags : `llm-eval`, `rag-eval`, `llm-as-judge`
-- liens sortants : [[Comparatif - Évaluation LLM.base]], [[Comparatifs]], [[DeepEval]], [[Ragas]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Comparatifs]], [[DeepEval]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
+- liens sortants : [[Comparatif - Évaluation LLM.base]], [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
+- liens entrants : [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
 
 ### Administration  ·  hub
 - tags : —
@@ -2397,7 +2407,7 @@
 
 ### Évaluation  ·  hub
 - tags : `llm-eval`, `benchmark`, `rag-eval`, `llm-as-judge`, `model-evaluation`
-- liens sortants : [[Agent evaluation]], [[Code and math benchmarks]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Machine Learning]], [[Observabilité des LLM]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reasoning models]], [[TruLens]], [[promptfoo]]
+- liens sortants : [[Agent evaluation]], [[Code and math benchmarks]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Machine Learning]], [[Observabilité des LLM]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reasoning models]], [[TruLens]], [[promptfoo]]
 - liens entrants : [[LLM & IA générative]], [[Modèles de langage]], [[Observabilité des LLM]], [[RAG & retrieval]], [[Évaluation de modèles]]
 
 ### Évaluation de modèles  ·  hub
@@ -3142,8 +3152,8 @@
 
 ### LLM-as-judge  ·  notion
 - tags : `llm-as-judge`, `llm-eval`, `llm`
-- liens sortants : [[Agent evaluation]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[DeepEval]], [[Harnais d'agent]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[TruLens]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Guardrails]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Perplexity]], [[Phoenix Arize]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[Synthetic data generation]], [[TruLens]], [[promptfoo]], [[Évaluation]]
+- liens sortants : [[Agent evaluation]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[DeepEval]], [[Harnais d'agent]], [[Inspect AI]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[TruLens]]
+- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Guardrails]], [[Inspect AI]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Perplexity]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[Synthetic data generation]], [[TruLens]], [[promptfoo]], [[Évaluation]]
 
 ### Local Outlier Factor  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -3981,7 +3991,7 @@
 - `accessibility` : OpenDataLoader PDF  — pas de page concept dédiée
 - `agent-memory` : Agents, Assistants, OpenViking, ai-memory
 - `agent-skill` : Agents de code, Archify, Assistants, BMAD, i-have-adhd
-- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Claude Agent SDK, Cline, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Context engineering, Continue, CrewAI, Daytona, Deep Agents, Deep research, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
+- `agents` : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Claude Agent SDK, Cline, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Context engineering, Continue, CrewAI, Daytona, Deep Agents, Deep research, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
 - `ai-security` : AI security, Daytona, E2B, Maka, Prompt injection, Sandboxing de code généré, Systèmes IA, Sécurité, promptfoo
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
@@ -3996,7 +4006,7 @@
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence  — pas de page concept dédiée
-- `benchmark` : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
+- `benchmark` : Code and math benchmarks, Inspect AI, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
 - `caching` : Headroom, LLM caching, Passerelles, prompt-caching  — pas de page concept dédiée
@@ -4122,12 +4132,12 @@
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
 - `linear-programming` : Comparatif - Solveurs d'optimisation, Mathématiques, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
-- `llm-as-judge` : Comparatif - Évaluation LLM, DeepEval, LLM-as-judge, TruLens, Évaluation
-- `llm-eval` : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation  — pas de page concept dédiée
+- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm-as-judge` : Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, TruLens, Évaluation
+- `llm-eval` : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
 - `llm-observability` : Comparatif - Observabilité LLM, Helicone, LLM & IA générative, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize
-- `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
+- `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
 - `logging` : Beats, Kibana, Logstash, Loki, Observabilité  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
@@ -4307,7 +4317,7 @@
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
 - `accessibility` (porté par : OpenDataLoader PDF)
-- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Claude Agent SDK, Cline, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Context engineering, Continue, CrewAI, Daytona, Deep Agents, Deep research, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code)
+- `agents` (porté par : Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Claude Agent SDK, Cline, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Context engineering, Continue, CrewAI, Daytona, Deep Agents, Deep research, Dify, E2B, Flowise, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LlamaIndex, Maka, Modal, Multi-agent systems, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenViking, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Reliability patterns, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, WrenAI, Zapier, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API)
 - `array` (porté par : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray)
@@ -4317,7 +4327,7 @@
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence)
-- `benchmark` (porté par : Code and math benchmarks, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
+- `benchmark` (porté par : Code and math benchmarks, Inspect AI, LLM benchmarks, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
 - `ci-cd` (porté par : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
@@ -4390,10 +4400,10 @@
 - `linear-algebra` (porté par : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
 - `linter` (porté par : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
-- `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation)
+- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
-- `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
+- `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Beats, Kibana, Logstash, Loki, Observabilité)
 - `low-code` (porté par : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)

@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[DeepEval]]", "[[Ragas]]", "[[TruLens]]"]
+alternatives: ["[[DeepEval]]", "[[Ragas]]", "[[TruLens]]", "[[Inspect AI]]"]
 complements: []
 tags: [llm, llm-eval, testing, ai-security]
 url_docs: https://www.promptfoo.dev/docs/intro/
@@ -60,6 +60,7 @@ utilisé par OpenAI et Anthropic, et a été racheté par OpenAI en mars 2026.
 - [[DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
 - [[Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
 - [[TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
+- [[Inspect AI]] — Framework d'évaluation de LLM et d'agents (MIT, UK AI Security Institute et Meridian Labs) — des tâches composées d'un dataset, d'un solver et d'un scorer (texte ou noté par un modèle), 200+ évaluations prêtes à lancer, sandbox pour le code non fiable, visualiseur web et extension VS Code.
 
 ## Ressources
 
