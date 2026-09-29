@@ -34,8 +34,7 @@ manifeste: 1
 # l instance ne recevra plus de correctif.
 kit:
   version: "0.1.0"
-  mode: branche
-
+  mode: fige
 brain:
   nom: DevBrain
   sujet: "Les briques et les notions du developpement data, ML et IA, rangees par domaine."
@@ -2461,3 +2460,5 @@ frontieres_d_ecriture:
     voisine d une unite, dans le meme dossier, sous le meme hub, peut etre une
     notion protegee — la regle change, l emplacement ne le dit pas. Donc lire le
     frontmatter avant d ecrire.
+
+# Figé le 2026-09-29 par `brainkit freeze`.
