@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 803,
+  "count": 813,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -137,6 +137,14 @@
       "Systèmes IA",
       "Sécurité",
       "promptfoo"
+    ],
+    "alerting": [
+      "Alertmanager",
+      "Netdata",
+      "Prometheus",
+      "SLO et alerting",
+      "Uptime Kuma",
+      "Zabbix"
     ],
     "alignment": [
       "Comparatif - Fine-tuning LLM",
@@ -536,9 +544,12 @@
       "Grafana",
       "Interfaces & apps data",
       "Kibana",
+      "Netdata",
       "Observabilité",
       "Shiny for Python",
-      "WrenAI"
+      "Uptime Kuma",
+      "WrenAI",
+      "Zabbix"
     ],
     "data-app": [
       "Comparatif - Apps data & démos ML",
@@ -1668,7 +1679,9 @@
       "Kibana",
       "Logstash",
       "Loki",
-      "Observabilité"
+      "Métriques, logs et traces",
+      "Observabilité",
+      "OpenTelemetry"
     ],
     "loss-landscape": [
       "Loss landscape and saddle points"
@@ -1782,7 +1795,13 @@
     "metrics": [
       "Beszel",
       "Grafana",
-      "Observabilité"
+      "Métriques, logs et traces",
+      "Netdata",
+      "Observabilité",
+      "OpenTelemetry",
+      "Prometheus",
+      "VictoriaMetrics",
+      "Zabbix"
     ],
     "migration": [
       "Alembic",
@@ -2100,12 +2119,22 @@
       "supervision"
     ],
     "observability": [
+      "Alertmanager",
       "Beszel",
       "Grafana",
       "Kibana",
       "Loki",
+      "Métriques, logs et traces",
+      "Netdata",
       "Observabilité",
-      "Observabilité des LLM"
+      "Observabilité des LLM",
+      "OpenTelemetry",
+      "Prometheus",
+      "SLO et alerting",
+      "Tempo",
+      "Uptime Kuma",
+      "VictoriaMetrics",
+      "Zabbix"
     ],
     "ocr": [
       "Comparatif - Parsing de documents",
@@ -2694,16 +2723,24 @@
       "segment-anything"
     ],
     "self-hosted": [
+      "Alertmanager",
       "Automatisation no-code",
       "Beszel",
       "Dataiku",
       "Meilisearch",
+      "Netdata",
       "Observabilité",
       "OpenMAIC",
+      "OpenTelemetry",
+      "Prometheus",
       "Stirling PDF",
       "Stockage",
+      "Tempo",
       "Typesense",
+      "Uptime Kuma",
+      "VictoriaMetrics",
       "Web-Check",
+      "Zabbix",
       "croc"
     ],
     "self-play": [
@@ -2762,6 +2799,9 @@
       "Transformée de Fourier",
       "librosa",
       "scipy.signal"
+    ],
+    "slo": [
+      "SLO et alerting"
     ],
     "small-language-model": [
       "Distillation",
@@ -3042,8 +3082,11 @@
       "LLM observability",
       "LangSmith",
       "Langfuse",
+      "Métriques, logs et traces",
       "Observabilité des LLM",
+      "OpenTelemetry",
       "Phoenix Arize",
+      "Tempo",
       "TruLens"
     ],
     "traffic-analysis": [
@@ -3142,6 +3185,9 @@
       "k-médoïds (PAM)",
       "t-SNE and UMAP",
       "umap-learn"
+    ],
+    "uptime": [
+      "Uptime Kuma"
     ],
     "value-function": [
       "Actor-Critic methods",
@@ -21438,6 +21484,30 @@
       "maturite": null
     },
     {
+      "path": "Observabilité/Alertmanager.md",
+      "nom": "Alertmanager",
+      "alias": [
+        "alertmanager"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Routeur d'alertes open-source (Apache-2.0, Go) du projet Prometheus — dédoublonne, regroupe, inhibe et met en silence les alertes reçues, puis les route vers le bon récepteur (courriel, PagerDuty, OpsGenie…) ; cluster haute disponibilité.",
+      "tags": [
+        "observability",
+        "alerting",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Prometheus]]",
+        "[[VictoriaMetrics]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Observabilité/Beszel.md",
       "nom": "Beszel",
       "alias": [
@@ -21457,7 +21527,9 @@
         "dashboard",
         "container"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Netdata]]"
+      ],
       "complements": [],
       "maturite": "production"
     },
@@ -21483,7 +21555,10 @@
         "[[Kibana]]"
       ],
       "complements": [
-        "[[Loki]]"
+        "[[Loki]]",
+        "[[Prometheus]]",
+        "[[Tempo]]",
+        "[[VictoriaMetrics]]"
       ],
       "maturite": "production"
     },
@@ -21533,8 +21608,66 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[Grafana]]"
+        "[[Grafana]]",
+        "[[Tempo]]"
       ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Métriques, logs et traces.md",
+      "nom": "Métriques, logs et traces",
+      "alias": [
+        "three pillars",
+        "trois piliers",
+        "télémétrie",
+        "telemetry",
+        "signaux d'observabilité",
+        "métriques logs traces"
+      ],
+      "role": "notion",
+      "categorie": "observability/supervision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "observability",
+        "metrics",
+        "logging",
+        "tracing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Observabilité/Netdata.md",
+      "nom": "Netdata",
+      "alias": [
+        "netdata",
+        "Netdata Agent"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "application",
+      "langage": "Go, C, Rust",
+      "domaines": null,
+      "pitch": "Agent de supervision temps réel (GPLv3+, Go, C, Rust) — métriques à la seconde d'hôtes, conteneurs et applications sans configuration, tableau de bord local sur le port 19999, alertes locales ; interface sous licence propriétaire NCUL1, Netdata Cloud optionnel.",
+      "tags": [
+        "observability",
+        "metrics",
+        "alerting",
+        "dashboard",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Beszel]]",
+        "[[Zabbix]]"
+      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -21564,6 +21697,201 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Observabilité/OpenTelemetry.md",
+      "nom": "OpenTelemetry",
+      "alias": [
+        "opentelemetry",
+        "otel",
+        "OTLP",
+        "OpenTelemetry Collector"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Cadre d'observabilité open-source (Apache-2.0, CNCF) neutre vis-à-vis des fournisseurs — spécification, protocole OTLP, SDK, instrumentation automatique et Collector qui reçoit, traite et exporte traces, métriques et logs ; n'est pas un backend.",
+      "tags": [
+        "observability",
+        "metrics",
+        "logging",
+        "tracing",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Tempo]]",
+        "[[Prometheus]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Prometheus.md",
+      "nom": "Prometheus",
+      "alias": [
+        "prometheus"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Système de supervision et base de séries temporelles open-source (Apache-2.0, Go) — scrape les métriques exposées en HTTP, modèle de données à labels, requêtes PromQL, règles d'alerte transmises à Alertmanager ; stockage local mono-nœud, sans cluster natif.",
+      "tags": [
+        "observability",
+        "metrics",
+        "alerting",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[VictoriaMetrics]]",
+        "[[Zabbix]]"
+      ],
+      "complements": [
+        "[[Alertmanager]]",
+        "[[Grafana]]",
+        "[[OpenTelemetry]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/SLO et alerting.md",
+      "nom": "SLO et alerting",
+      "alias": [
+        "SLO",
+        "SLI",
+        "SLA",
+        "service level objective",
+        "budget d'erreur",
+        "error budget",
+        "burn rate",
+        "taux de consommation",
+        "alerting",
+        "alerte sur les SLO"
+      ],
+      "role": "notion",
+      "categorie": "observability/supervision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "observability",
+        "alerting",
+        "slo"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Observabilité/Tempo.md",
+      "nom": "Tempo",
+      "alias": [
+        "tempo",
+        "Grafana Tempo"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Backend de traces distribuées open-source (AGPL-3.0, Go) de Grafana Labs — stockage sur object store sans index, accepte OTLP, Jaeger et Zipkin, requêté en TraceQL depuis Grafana ; mode monolithique ou microservices, Grafana Cloud Traces pour le managé.",
+      "tags": [
+        "observability",
+        "tracing",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Grafana]]",
+        "[[Loki]]",
+        "[[OpenTelemetry]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Uptime Kuma.md",
+      "nom": "Uptime Kuma",
+      "alias": [
+        "uptime-kuma",
+        "uptime kuma",
+        "kuma"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "application",
+      "langage": "JavaScript",
+      "domaines": null,
+      "pitch": "Surveillance de disponibilité auto-hébergée (MIT, Node.js) — sondes HTTP, TCP, ping, DNS, push et conteneurs Docker, notifications vers plus de 90 services, pages de statut publiques ; interface web, sonde de l'extérieur uniquement.",
+      "tags": [
+        "observability",
+        "uptime",
+        "alerting",
+        "dashboard",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/VictoriaMetrics.md",
+      "nom": "VictoriaMetrics",
+      "alias": [
+        "victoriametrics",
+        "MetricsQL"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Base de séries temporelles et stockage long terme compatible Prometheus (Apache-2.0, Go) — binaire unique sans dépendance ou version cluster, ingestion remote write, requêtes PromQL et MetricsQL ; édition Enterprise et VictoriaMetrics Cloud.",
+      "tags": [
+        "observability",
+        "metrics",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Prometheus]]"
+      ],
+      "complements": [
+        "[[Grafana]]",
+        "[[Alertmanager]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Zabbix.md",
+      "nom": "Zabbix",
+      "alias": [
+        "zabbix"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "plateforme",
+      "langage": "C, PHP, Go",
+      "domaines": null,
+      "pitch": "Plateforme de supervision distribuée d'entreprise (AGPL-3.0 depuis la 7.0, C, PHP, Go) — serveur, agents actifs ou passifs, collecte sans agent (SNMP, IPMI), modèles, déclencheurs et tableaux de bord sur MySQL, MariaDB ou PostgreSQL ; proxies pour les sites distants.",
+      "tags": [
+        "observability",
+        "metrics",
+        "alerting",
+        "dashboard",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Netdata]]",
+        "[[Prometheus]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Bruno.md",
