@@ -95,7 +95,14 @@ uv run AI/scripts/build_index.py     # brain-index.json + brain-index.md
 uv run AI/scripts/build_mocs.py      # zones AUTO des hubs de l'arbre + Métiers/
 uv run AI/scripts/build_bandeau.py   # zones AUTO:BANDEAU des pages, depuis le frontmatter
 uv run AI/scripts/build_links.py     # carte des liens (AI/index/liens.md)
+uv run AI/scripts/build_carte.py     # carte de lecture (AI/index/carte.md + carte/<Dossier>.md)
 ```
+
+`build_carte` (ajouté le 2026-10-02) lit les **pages** et aucun artefact : il commute avec
+les trois premiers et ne dépend pas de `build_links`. Il passe en dernier par convention.
+Il extrait la description d'une ligne de chaque page (pitch, première puce d'Aperçu, ligne
+« On tranche sur », Contexte, Principe) : un pitch ou un Aperçu modifié change donc la carte,
+et c'est la raison de le relancer à chaque clôture.
 
 **L'ordre compte pour un seul couple, mesuré le 2026-10-01 sur 11 permutations des quatre
 scripts : `build_links` doit passer APRÈS `build_mocs`.** La carte des liens lit les
@@ -128,6 +135,7 @@ stade est un lien mort que l'étape 2 va confirmer.
 uv run AI/scripts/check_brain.py            # le contenu : frontmatter, enums, réciprocité, pitchs, liens
 uv run AI/scripts/check_arbo.py             # la structure : chemin ↔ categorie, seuil, un hub par dossier
 uv run AI/scripts/build_bandeau.py --check  # les bandeaux : concordance avec le frontmatter (sort 2 sinon)
+uv run AI/scripts/build_carte.py --check    # la carte de lecture : concordance avec les pages (sort 2 sinon)
 ```
 
 Ils ne contrôlent pas la même chose et **aucun ne remplace l'autre**. `check_brain` valide ce
@@ -158,7 +166,7 @@ n'est plus la référence de ce qu'on annonce : voir *Clôture bloquée par une 
 
 Fin d'étape vérifiable : `OK — aucune violation dure`, `OK — chemin et catégorie
 concordent partout` **et** `OK — tous les bandeaux concordent avec leur frontmatter`, avec un
-code de retour 0 pour les trois.
+code de retour 0 pour les trois ; et `build_carte.py --check` sort en 0.
 
 > **Les dix règles du §10 sont dures depuis le lot 8**, à trois exceptions écrites : la
 > règle 4 (voisinage déclaré, R20) reste un avertissement par conception ; la moitié
@@ -307,7 +315,7 @@ Le critère n'est pas « ce qui a l'air facile », c'est **qui écrit le fichier
 
 | Famille | Fichiers | Qui l'écrit | Résolution |
 |---|---|---|---|
-| Entièrement générés | `AI/index/brain-index.json`, `brain-index.md`, `liens.md` | `build_index`, `build_links` | garder un côté (n'importe lequel), **puis régénérer** |
+| Entièrement générés | `AI/index/brain-index.json`, `brain-index.md`, `liens.md`, `carte.md`, `carte/*.md` | `build_index`, `build_links`, `build_carte` | garder un côté (n'importe lequel), **puis régénérer** |
 | Zones générées d'un fichier écrit à la main | zone `<!-- AUTO -->` des hubs (hub de chaque dossier, `Métiers/*`, `Comparatifs/Comparatifs.md`) ; zone `<!-- AUTO:BANDEAU -->` des briques | `build_mocs`, `build_bandeau` | **si tous les marqueurs tombent entre les balises** : garder un côté des seuls blocs en conflit, **puis régénérer**. Un marqueur hors balises = corps écrit à la main → dernière ligne du tableau |
 | Vocabulaire et compteurs, écrits à la main | `brain.yml`, `Documentation/general/taxonomie.md`, `Documentation/general/tags.md`, `Home.md` | personne d'autre que les conversations | **garder les ajouts des deux côtés**, selon les règles ci-dessous |
 | Tout le reste, écrit à la main | corps d'un hub (hors zone), briques, notions, patterns, règles, tout autre fichier de `Documentation/`, `AI/index/fraicheur.json` (écrit par `verifier_fraicheur.py`, hors clôture : rien ne le régénère ici) | — | **s'arrêter et demander** : `git merge --abort` |
@@ -351,7 +359,7 @@ keep_ours() { awk '/^<<<<<<< /{s=1;next} s==1&&/^=======$/{s=2;next} s==2&&/^>>>
 
 ```bash
 uv run AI/scripts/build_index.py ; uv run AI/scripts/build_mocs.py        # dans l'ordre de l'étape 1 : links en dernier
-uv run AI/scripts/build_bandeau.py ; uv run AI/scripts/build_links.py
+uv run AI/scripts/build_bandeau.py ; uv run AI/scripts/build_links.py ; uv run AI/scripts/build_carte.py
 git grep -nE '^(<<<<<<<|>>>>>>>) ' -- ':!*.base'                           # aucun marqueur de conflit restant
 git add -A
 uv run AI/scripts/check_brain.py 2>&1 | tail -1
