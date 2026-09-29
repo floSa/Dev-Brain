@@ -7,7 +7,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 
 # Comparatif - Diagrammes
 
-> On tranche sur : ce que le diagramme est — du texte versionné, un fichier posé à la main, ou un artefact produit par un agent — et donc qui en garde la maîtrise de la mise en page.
+> On tranche sur : ce que le diagramme est — du texte versionné, un fichier posé à la main, un artefact produit par un agent, ou une lecture de dépôt par un modèle — et donc qui en garde la maîtrise de la mise en page.
 
 ![[Comparatif - Diagrammes.base]]
 
@@ -18,6 +18,8 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[Excalidraw]] — le style **croquis à main levée**, qui est un choix de communication avant d'être un choix d'outil : il signale « schéma conceptuel, pas spec figée ». Whiteboard collaboratif, pas éditeur normé — peu de formes structurées, et les grands tableaux rament côté navigateur.
 - [[FossFLOW]] — le seul à faire de l'**isométrique 3D** d'infrastructure, avec les jeux d'icônes cloud standard, en PWA qui tourne entièrement dans le navigateur, hors ligne comprise. Périmètre étroit assumé, et le stockage est celui du navigateur : exporter le JSON ou perdre son travail en changeant de poste.
 - [[Archify]] — le seul qui ne s'utilise pas à la main : c'est un **skill pour agent de code**, où l'agent remplit une **IR JSON typée** que la chaîne compile de façon **déterministe** en HTML autonome validé — même IR, même rendu. Quatre absences documentées par le projet lui-même : pas de parsing Mermaid, pas d'auto-layout généraliste, pas de partage hébergé, pas d'édition WYSIWYG.
+
+- [[GitDiagram]] — le seul qui part d'une **URL de dépôt** : rien à dessiner ni à installer, un LLM lit le dépôt et rend un diagramme interactif dont chaque composant renvoie à son fichier sur GitHub, avec la source Mermaid et un serveur MCP en sortie. Ce que [[Archify]] fait avec un agent et une IR reproductible, il le fait sans agent, mais le schéma est **régénéré par un modèle** : le banc d'essai du projet mesure encore 17 % de flèches pleines non étayées par le code, donc à relire avant de le publier. À écarter dès que le code ne doit pas partir chez un fournisseur LLM.
 
 ## Voir aussi
 

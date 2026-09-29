@@ -16,6 +16,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - La ligne de fracture du sous-domaine est le **support**, pas le rendu. Un **diagramme-as-code** ([[Mermaid]]) est du texte : il vit dans le dépôt, se relit en diff, se régénère, et le moteur décide du placement. Un **canevas** ([[draw.io]], [[Excalidraw]]) est un dessin : on place à la main, donc on obtient exactement ce qu'on veut, et le fichier ne se relit pas en diff.
 - Le corollaire pratique : un schéma qui doit **rester juste dans six mois** gagne à être du code, parce qu'on le corrige en éditant deux lignes. Un schéma qui doit **convaincre à l'écran maintenant** gagne à être dessiné.
 - Le placement automatique est la vraie limite du diagramme-as-code : au-delà d'une vingtaine de nœuds, aucun moteur ne produit une mise en page lisible sans indices manuels.
+- Un troisième support est apparu : le diagramme **produit par un modèle** à partir d'un dépôt ([[Archify]] via un agent, [[GitDiagram]] via une URL). Personne n'y place rien, donc personne n'en répond : il se relit comme une hypothèse, pas comme une spécification.
 - L'**isométrique** ([[FossFLOW]]) est un cas à part : il ne sert pas à expliquer une logique mais à donner à voir une infrastructure. Joli, peu maintenable.
 
 ## Choisir
@@ -24,7 +25,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - Un schéma d'architecture riche, avec des icônes fournisseur et un contrôle fin du placement → [[draw.io]].
 - Un croquis à main levée pour une réunion ou une explication rapide → [[Excalidraw]].
 - Une vue isométrique d'infrastructure, pour une présentation → [[FossFLOW]].
-- Générer le schéma depuis un dépôt existant plutôt que le dessiner → [[Archify]].
+- Générer le schéma depuis un dépôt existant plutôt que le dessiner → [[Archify]] si un agent de code est dans la boucle et que le rendu doit être reproductible, [[GitDiagram]] pour un coup d'œil immédiat à partir d'une URL, en acceptant que le code passe par un fournisseur LLM.
 
 <!-- AUTO:START -->
 ### Briques
@@ -32,6 +33,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
+- [[GitDiagram]] — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### Comparatifs
