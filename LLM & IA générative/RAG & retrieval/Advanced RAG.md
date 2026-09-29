@@ -53,6 +53,7 @@ tags: [rag, llm, retrieval]
 - [[embeddings]] — toujours la représentation de base.
 - Frameworks : [[LlamaIndex]], [[Haystack]], [[LangChain]].
 - Voir aussi : [[RAG documentaire on-prem - clé en main ou assemblé]].
+- [[RAG agentique]] — le patron « Agentic RAG » développé : méthodes, évaluation, coût et pièges
 
 ## Pour aller plus loin
 
