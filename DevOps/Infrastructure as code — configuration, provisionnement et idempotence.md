@@ -80,6 +80,7 @@ tags: [infrastructure-as-code, reproducibility]
 - **Puppet, Chef, SaltStack** : gestion de configuration avec agent ; la fiche [[Ansible]] dit pourquoi ils n'ont pas de fiche.
 - **Le GitOps** déplace la réconciliation de l'infrastructure vers un agent qui tire depuis Git : [[Argo CD]] pour un cluster.
 - **Un orchestrateur** ([[Kubernetes]], [[k3s]]) fait de la configuration en continu pour les conteneurs : voir [[Du Compose à Kubernetes — quand changer d'échelle]].
+- [[Packaging Python et environnements reproductibles]] — le verrouillage des dépendances et le miroir interne en réseau fermé.
 
 ## Pour aller plus loin
 

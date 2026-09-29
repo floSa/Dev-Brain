@@ -76,6 +76,7 @@ tags: [reverse-proxy, tls, load-balancer, kubernetes, self-hosted]
 - **Contour** (CNCF incubation, v1.33.7) est actif, mais absent de la liste des implémentations Gateway API. **Emissary** aussi est actif.
 - Les VPN et réseaux maillés ne sont pas traités : écartés du périmètre.
 - Voir aussi : [[OpenBao]], [[Gestion des secrets]], [[Authelia]], [[Authentik]].
+- [[API REST, GraphQL et gRPC]] — les styles d'API que le proxy ou la passerelle expose, dont gRPC (HTTP/2 et trailers).
 
 ## Pour aller plus loin
 

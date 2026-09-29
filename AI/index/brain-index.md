@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1011 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1015 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -772,6 +772,9 @@
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 
+### devtools/paquet
+- **Packaging Python et environnements reproductibles** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : packaging Python, pyproject.toml, fichier de verrouillage, lockfile, uv.lock, pylock.toml, wheel, sdist, environnement virtuel, venv, miroir PyPI, dépendances en réseau fermé, build reproductible
+
 ### devtools/qualite
 - **Typage statique en Python** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : Typage statique, typage graduel, gradual typing, type hints, annotations de type, static typing, type checking Python
 
@@ -1112,6 +1115,7 @@
 - **Vision Transformers (ViT)** — domaines : ml-eng, ai-eng · alias : ViT, Vision Transformer, vision transformers, DeiT, Swin Transformer, transformeur de vision
 
 ### observability/supervision
+- **Journalisation structurée et traçabilité** — domaines : infra-ops, mlops · alias : logs structurés, structured logging, logging Python, structlog, loguru, identifiant de corrélation, correlation id, canonical log lines, wide events, journalisation, syslog
 - **Métriques, logs et traces** — domaines : infra-ops, mlops · alias : three pillars, trois piliers, télémétrie, telemetry, signaux d'observabilité, métriques logs traces
 - **SLO et alerting** — domaines : infra-ops, mlops · alias : SLO, SLI, SLA, service level objective, budget d'erreur, error budget, burn rate, taux de consommation, alerting, alerte sur les SLO
 
@@ -1198,6 +1202,12 @@
 
 ### storage/objet
 - **Stockage objet et API S3** — domaines : data-eng, mlops, infra-ops · alias : API S3, compatibilité S3, S3-compatible, choisir un stockage objet on-prem
+
+### web/api
+- **API REST, GraphQL et gRPC** — domaines : ai-eng, data-eng, mlops · alias : REST, API REST, GraphQL, gRPC, protocol buffers, protobuf, openapi, problem details, pagination par curseur, versionnage d'API, api first
+
+### web/backend
+- **Programmation asynchrone en Python** — domaines : ai-eng, mlops, data-eng · alias : asyncio, async await, coroutines Python, boucle d'événements, event loop, TaskGroup, concurrence structurée, structured concurrency, python sans gil, free-threading, bloquer la boucle
 
 ### web/proxy
 - **Reverse proxy et TLS** — domaines : infra-ops, mlops · alias : reverse proxy, terminaison tls, tls interne, autorité de certification interne, gateway api et ingress

@@ -70,3 +70,4 @@ télécharge et installe.
 
 - [[Outils de développement]] — le hub du domaine
 - [[Comparatif - Gestionnaires de paquets Python]] — ce qui départage les gestionnaires du dossier
+- [[Packaging Python et environnements reproductibles]] — la notion : pyproject.toml, verrouillage, miroir interne, image Docker reproductible
