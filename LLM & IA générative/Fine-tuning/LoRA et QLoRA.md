@@ -45,6 +45,8 @@ tags: [fine-tuning, llm]
 - [[Quantization]] — la 4-bit (NF4) qui rend QLoRA possible ; sert aussi à l'inférence légère.
 - [[SFT]] — l'objectif d'entraînement le plus souvent exécuté en LoRA.
 - [[RLHF and DPO]] — l'alignement tourne aussi en LoRA pour rester abordable.
+- [[Fusion de modèles]] — combiner plusieurs adaptateurs ou modèles ajustés (TIES, DARE, task arithmetic)
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — NF4 face aux autres formats pour servir un LLM
 
 ## Pour aller plus loin
 

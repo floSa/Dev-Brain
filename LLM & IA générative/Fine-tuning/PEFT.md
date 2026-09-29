@@ -45,6 +45,7 @@ tags: [fine-tuning, llm]
 - [[LoRA et QLoRA]] — la méthode PEFT la plus citée : adaptation de rang faible, avec ou sans base quantifiée 4 bits.
 - [[Quantization]] — la 4-bit qui rend QLoRA possible ; sert aussi à l'inférence légère.
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.
+- [[Fusion de modèles]] — fusionner ou combiner des adaptateurs et des modèles ajustés
 
 ## Pour aller plus loin
 

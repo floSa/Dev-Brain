@@ -47,6 +47,7 @@ tags: [model-compression, deep-learning, small-language-model, synthetic-data, f
 - [[PEFT]] — réduit le **coût d'adaptation** (LoRA) sans changer la taille ; complémentaire.
 - [[Cross-entropy]] / [[KL divergence]] — les pertes qui mesurent l'écart élève↔professeur.
 - [[Confidentialité différentielle]] — la garantie formelle quand un modèle est entraîné sur des données personnelles : DP-SGD y est la méthode de référence en apprentissage.
+- [[Fusion de modèles]] — combiner des modèles existants sans entraîner d'élève
 
 ## Pour aller plus loin
 
