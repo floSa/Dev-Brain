@@ -36,6 +36,7 @@ tags: [observability, logging, metrics, dashboard, self-hosted]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Journalisation structurée et traçabilité]] — domaines : infra-ops, mlops
 - [[Métriques, logs et traces]] — domaines : infra-ops, mlops
 - [[SLO et alerting]] — domaines : infra-ops, mlops
 

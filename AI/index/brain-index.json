@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1006,
+  "count": 1010,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1532,6 +1532,7 @@
       "statsmodels"
     ],
     "idempotence": [
+      "API REST, GraphQL et gRPC",
       "Architecture pilotée par les événements",
       "ELT vs ETL & idempotence",
       "Fiabilité des données",
@@ -2062,6 +2063,7 @@
     "logging": [
       "Beats",
       "Ingestion de données",
+      "Journalisation structurée et traçabilité",
       "Kibana",
       "Logstash",
       "Loki",
@@ -2579,6 +2581,7 @@
       "Alertmanager",
       "Beszel",
       "Grafana",
+      "Journalisation structurée et traçabilité",
       "Kibana",
       "Loki",
       "Métriques, logs et traces",
@@ -2722,6 +2725,7 @@
     "package-manager": [
       "Comparatif - Gestionnaires de paquets Python",
       "Outils de développement",
+      "Packaging Python et environnements reproductibles",
       "Rule - Toolchain Python",
       "pip",
       "uv"
@@ -2731,6 +2735,7 @@
       "Comparatif - Calcul distribué",
       "Dask",
       "Modin",
+      "Programmation asynchrone en Python",
       "Ray"
     ],
     "parametric-test": [
@@ -3126,6 +3131,7 @@
       "Notebooks",
       "Notebooks-as-code",
       "OpenTofu",
+      "Packaging Python et environnements reproductibles",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Quarto",
       "Rule - Packaging démo",
@@ -3270,6 +3276,7 @@
       "Comparatif - Orchestrateurs data"
     ],
     "schema-evolution": [
+      "API REST, GraphQL et gRPC",
       "Apache Iceberg",
       "Avro",
       "Contrats de données & qualité",
@@ -3452,6 +3459,7 @@
       "Sequential testing"
     ],
     "serialization": [
+      "API REST, GraphQL et gRPC",
       "Apache Arrow",
       "Avro"
     ],
@@ -3806,6 +3814,7 @@
     "tracing": [
       "Comparatif - Observabilité LLM",
       "Helicone",
+      "Journalisation structurée et traçabilité",
       "LLM observability",
       "LangSmith",
       "Langfuse",
@@ -4023,12 +4032,14 @@
       "Traitement"
     ],
     "web-framework": [
+      "API REST, GraphQL et gRPC",
       "Comparatif - Apps data & démos ML",
       "Comparatif - Frontends web légers",
       "Dash",
       "FastAPI",
       "Flask",
       "Gradio",
+      "Programmation asynchrone en Python",
       "Server-Sent Events & streaming LLM",
       "Shiny for Python",
       "Streamlit",
@@ -26954,6 +26965,40 @@
       "maturite": "production"
     },
     {
+      "path": "Observabilité/Journalisation structurée et traçabilité.md",
+      "nom": "Journalisation structurée et traçabilité",
+      "alias": [
+        "logs structurés",
+        "structured logging",
+        "logging Python",
+        "structlog",
+        "loguru",
+        "identifiant de corrélation",
+        "correlation id",
+        "canonical log lines",
+        "wide events",
+        "journalisation",
+        "syslog"
+      ],
+      "role": "notion",
+      "categorie": "observability/supervision",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "observability",
+        "logging",
+        "tracing"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Observabilité/Kibana.md",
       "nom": "Kibana",
       "alias": [
@@ -27612,6 +27657,44 @@
         "cli",
         "api-client",
         "data-validation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Packaging Python et environnements reproductibles.md",
+      "nom": "Packaging Python et environnements reproductibles",
+      "alias": [
+        "packaging Python",
+        "pyproject.toml",
+        "fichier de verrouillage",
+        "lockfile",
+        "uv.lock",
+        "pylock.toml",
+        "wheel",
+        "sdist",
+        "environnement virtuel",
+        "venv",
+        "miroir PyPI",
+        "dépendances en réseau fermé",
+        "build reproductible"
+      ],
+      "role": "notion",
+      "categorie": "devtools/paquet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "ml-eng",
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "package-manager",
+        "reproducibility"
       ],
       "alternatives": null,
       "complements": null,
@@ -31693,6 +31776,42 @@
       "maturite": "deprecated"
     },
     {
+      "path": "Web & API/API REST, GraphQL et gRPC.md",
+      "nom": "API REST, GraphQL et gRPC",
+      "alias": [
+        "REST",
+        "API REST",
+        "GraphQL",
+        "gRPC",
+        "protocol buffers",
+        "protobuf",
+        "openapi",
+        "problem details",
+        "pagination par curseur",
+        "versionnage d'API",
+        "api first"
+      ],
+      "role": "notion",
+      "categorie": "web/api",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "web-framework",
+        "schema-evolution",
+        "idempotence",
+        "serialization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Web & API/FastAPI.md",
       "nom": "FastAPI",
       "alias": [
@@ -31788,6 +31907,40 @@
         "[[HTMX]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Web & API/Programmation asynchrone en Python.md",
+      "nom": "Programmation asynchrone en Python",
+      "alias": [
+        "asyncio",
+        "async await",
+        "coroutines Python",
+        "boucle d'événements",
+        "event loop",
+        "TaskGroup",
+        "concurrence structurée",
+        "structured concurrency",
+        "python sans gil",
+        "free-threading",
+        "bloquer la boucle"
+      ],
+      "role": "notion",
+      "categorie": "web/backend",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "parallel",
+        "web-framework"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Web & API/Reverse proxies/Caddy.md",

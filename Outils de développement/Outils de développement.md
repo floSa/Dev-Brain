@@ -33,6 +33,9 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 ### Sous-domaines
 - [[Notebooks]] · [[Qualité du code]]
 
+### Notions
+- [[Packaging Python et environnements reproductibles]] — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops
+
 ### Briques
 - [[Bruno]] — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 - [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
