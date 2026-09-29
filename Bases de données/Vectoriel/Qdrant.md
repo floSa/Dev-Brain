@@ -80,3 +80,5 @@ sauvegarde.
 - [[Bases de données vectorielles]] — la notion du dossier
 - [[Index ANN — internes]] — les réglages HNSW que cette base expose
 - [[Comparatif - Bases vectorielles]] — ce qui départage les moteurs du dossier
+- [[Contexte long]] — l'alternative : ne récupérer que les passages utiles plutôt que remplir la fenêtre
+- [[RAG agentique]] — la base interrogée par la boucle de récupération d'un agent
