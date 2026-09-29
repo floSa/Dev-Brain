@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 796 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 803 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -265,11 +265,13 @@
 - **OpenMAIC** — Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.
 
 ### llm/eval
+- **ARES** — Framework d'évaluation de RAG (Apache-2.0, Stanford) — génère des données synthétiques, affine de petits juges LM pour la pertinence du contexte, la fidélité et la pertinence de la réponse, puis corrige leurs scores par prediction-powered inference avec quelques centaines d'annotations humaines ; NAACL 2024.
 - **DeepEval** — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
 - **Inspect AI** — Framework d'évaluation de LLM et d'agents (MIT, UK AI Security Institute et Meridian Labs) — des tâches composées d'un dataset, d'un solver et d'un scorer (texte ou noté par un modèle), 200+ évaluations prêtes à lancer, sandbox pour le code non fiable, visualiseur web et extension VS Code.
 - **Prometheus-Eval** — Modèles-juges ouverts et bibliothèque Python (Apache-2.0) — Prometheus 2 en 7B et 8x7B note une réponse de 1 à 5 selon une rubrique ou choisit entre deux réponses, en local via vLLM ou par API via LiteLLM ; M-Prometheus (3B, 7B, 14B) pour le multilingue.
 - **promptfoo** — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 - **Ragas** — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
+- **RAGChecker** — Framework de diagnostic de RAG (Apache-2.0, Amazon Science) — extrait des claims de la réponse et les vérifie par entailment pour séparer les fautes du retriever (claim recall, context precision) de celles du générateur (fidélité, hallucination, sensibilité au bruit) ; juges via LiteLLM.
 - **TruLens** — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
 
 ### llm/finetuning
@@ -308,7 +310,11 @@
 - **mcpjam** — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
 
 ### llm/rag
+- **bge-reranker** — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
+- **Cohere Rerank** — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
+- **FlashRank** — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
+- **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 - **LlamaIndex** — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - **RAGatouille** — Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
 
@@ -1051,6 +1057,9 @@
 
 ### llm/observabilite
 - **Comparatif - Observabilité LLM** — —
+
+### llm/rag
+- **Comparatif - Rerankers** — —
 
 ### llm/runtime
 - **Comparatif - Exécution & serving LLM** — —

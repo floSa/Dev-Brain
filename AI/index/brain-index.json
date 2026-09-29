@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 796,
+  "count": 803,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -929,11 +929,13 @@
       "Bases de données vectorielles",
       "HuggingFace",
       "Index ANN — internes",
+      "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex",
       "RAG",
       "Recherche sémantique",
       "Systèmes de recommandation",
+      "bge-reranker",
       "embeddings",
       "sentence-transformers",
       "txtai"
@@ -1450,6 +1452,7 @@
     ],
     "llm": [
       "AI security",
+      "ARES",
       "Advanced RAG",
       "Agent evaluation",
       "Agent memory",
@@ -1540,6 +1543,7 @@
       "PydanticAI",
       "Query transformations",
       "RAG",
+      "RAGChecker",
       "RL for LLMs",
       "RLHF and DPO",
       "Ragas",
@@ -1590,15 +1594,18 @@
       "vLLM"
     ],
     "llm-as-judge": [
+      "ARES",
       "Comparatif - Évaluation LLM",
       "DeepEval",
       "Inspect AI",
       "LLM-as-judge",
       "Prometheus-Eval",
+      "RAGChecker",
       "TruLens",
       "Évaluation"
     ],
     "llm-eval": [
+      "ARES",
       "Agent evaluation",
       "Code and math benchmarks",
       "Comparatif - Évaluation LLM",
@@ -1614,6 +1621,7 @@
       "Prometheus-Eval",
       "RAG benchmarks",
       "RAG eval",
+      "RAGChecker",
       "Ragas",
       "TruLens",
       "promptfoo",
@@ -2353,20 +2361,25 @@
       "Théorie de l'apprentissage"
     ],
     "rag": [
+      "ARES",
       "Advanced RAG",
       "Bases de données vectorielles",
       "Chroma",
       "Chunking strategies",
+      "Cohere Rerank",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
       "Comparatif - Parsing de documents",
+      "Comparatif - Rerankers",
       "DB-GPT",
       "Dify",
       "Docling",
+      "FlashRank",
       "Flowise",
       "GraphRAG",
       "Haystack",
       "Hybrid retrieval",
+      "Jina Reranker",
       "LLM & IA générative",
       "LangChain",
       "Langflow",
@@ -2386,6 +2399,7 @@
       "RAG & retrieval",
       "RAG benchmarks",
       "RAG eval",
+      "RAGChecker",
       "RAGatouille",
       "Ragas",
       "Reranking",
@@ -2394,13 +2408,16 @@
       "Unstructured",
       "Vanna",
       "Weaviate",
+      "bge-reranker",
       "pgvector",
       "txtai"
     ],
     "rag-eval": [
+      "ARES",
       "Comparatif - Évaluation LLM",
       "RAG benchmarks",
       "RAG eval",
+      "RAGChecker",
       "Ragas",
       "Évaluation"
     ],
@@ -2550,10 +2567,15 @@
       "papermill"
     ],
     "reranking": [
+      "Cohere Rerank",
+      "Comparatif - Rerankers",
+      "FlashRank",
+      "Jina Reranker",
       "Late-interaction retrieval",
       "RAG & retrieval",
       "RAGatouille",
       "Reranking",
+      "bge-reranker",
       "sentence-transformers"
     ],
     "resampling": [
@@ -2567,9 +2589,13 @@
       "Advanced RAG",
       "Agent memory",
       "Chunking strategies",
+      "Cohere Rerank",
+      "Comparatif - Rerankers",
       "Deep research",
+      "FlashRank",
       "GraphRAG",
       "Hybrid retrieval",
+      "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex NLSQLTableQueryEngine",
       "OpenViking",
@@ -2583,6 +2609,7 @@
       "Reranking",
       "Systèmes de recommandation",
       "ai-memory",
+      "bge-reranker",
       "open_deep_research",
       "sentence-transformers"
     ],
@@ -10574,6 +10601,53 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/Cohere Rerank.md",
+      "nom": "Cohere Rerank",
+      "alias": [
+        "cohere-rerank",
+        "Rerank 3.5",
+        "Rerank 4",
+        "rerank-v4.0"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.",
+      "tags": [
+        "retrieval",
+        "reranking",
+        "rag"
+      ],
+      "alternatives": [
+        "[[bge-reranker]]",
+        "[[FlashRank]]",
+        "[[Jina Reranker]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Comparatif - Rerankers.md",
+      "nom": "Comparatif - Rerankers",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "reranking",
+        "retrieval",
+        "rag"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/Construction de graphes de connaissances.md",
       "nom": "Construction de graphes de connaissances",
       "alias": [
@@ -10600,6 +10674,31 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/FlashRank.md",
+      "nom": "FlashRank",
+      "alias": [
+        "flashrank"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.",
+      "tags": [
+        "retrieval",
+        "reranking",
+        "rag"
+      ],
+      "alternatives": [
+        "[[bge-reranker]]",
+        "[[Cohere Rerank]]",
+        "[[Jina Reranker]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/RAG & retrieval/GraphRAG.md",
@@ -10685,6 +10784,37 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Jina Reranker.md",
+      "nom": "Jina Reranker",
+      "alias": [
+        "jina-reranker",
+        "jina-reranker-v3",
+        "jina-reranker-v2-base-multilingual",
+        "jina-reranker-m0"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.",
+      "tags": [
+        "retrieval",
+        "reranking",
+        "rag",
+        "embeddings"
+      ],
+      "alternatives": [
+        "[[bge-reranker]]",
+        "[[Cohere Rerank]]",
+        "[[FlashRank]]"
+      ],
+      "complements": [
+        "[[sentence-transformers]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/RAG & retrieval/Late-interaction retrieval.md",
@@ -10884,6 +11014,37 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/bge-reranker.md",
+      "nom": "bge-reranker",
+      "alias": [
+        "FlagEmbedding",
+        "BGE reranker",
+        "bge-reranker-v2-m3",
+        "BAAI reranker"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.",
+      "tags": [
+        "retrieval",
+        "reranking",
+        "rag",
+        "embeddings"
+      ],
+      "alternatives": [
+        "[[Cohere Rerank]]",
+        "[[FlashRank]]",
+        "[[Jina Reranker]]"
+      ],
+      "complements": [
+        "[[sentence-transformers]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Runtimes/Comparatif - Exécution & serving LLM.md",
@@ -11847,6 +12008,33 @@
       "maturite": "beta"
     },
     {
+      "path": "LLM & IA générative/Évaluation/ARES.md",
+      "nom": "ARES",
+      "alias": [
+        "ares",
+        "ares-ai",
+        "Automated RAG Evaluation System"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework d'évaluation de RAG (Apache-2.0, Stanford) — génère des données synthétiques, affine de petits juges LM pour la pertinence du contexte, la fidélité et la pertinence de la réponse, puis corrige leurs scores par prediction-powered inference avec quelques centaines d'annotations humaines ; NAACL 2024.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "rag-eval",
+        "llm-as-judge",
+        "rag"
+      ],
+      "alternatives": [
+        "[[RAGChecker]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "LLM & IA générative/Évaluation/Agent evaluation.md",
       "nom": "Agent evaluation",
       "alias": [
@@ -12173,6 +12361,33 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/RAGChecker.md",
+      "nom": "RAGChecker",
+      "alias": [
+        "ragchecker",
+        "RAG Checker",
+        "ragchecker-amazon"
+      ],
+      "role": "brique",
+      "categorie": "llm/eval",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework de diagnostic de RAG (Apache-2.0, Amazon Science) — extrait des claims de la réponse et les vérifie par entailment pour séparer les fautes du retriever (claim recall, context precision) de celles du générateur (fidélité, hallucination, sensibilité au bruit) ; juges via LiteLLM.",
+      "tags": [
+        "llm",
+        "llm-eval",
+        "rag-eval",
+        "llm-as-judge",
+        "rag"
+      ],
+      "alternatives": [
+        "[[ARES]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/Évaluation/Ragas.md",
@@ -19767,7 +19982,9 @@
       "complements": [
         "[[HuggingFace]]",
         "[[SetFit]]",
-        "[[txtai]]"
+        "[[txtai]]",
+        "[[bge-reranker]]",
+        "[[Jina Reranker]]"
       ],
       "maturite": "production"
     },

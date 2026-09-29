@@ -66,3 +66,23 @@ File validée (GO utilisateur). 5 concepts `concept/dl`, galaxie wiki. Chapeau �
 
 > Pistes d'évolution **structurelles** du vault (gabarits, frontmatter, scripts) :
 > voir `AI/ameliorations-devbrain.md`. Ce backlog-ci suit les **contenus** à écrire.
+
+## Sujet « Reranking et évaluation du RAG » (2026-09-29) — LIVRÉ
+
+File validée (GO utilisateur, plan tel quel). « Métriques de retrieval » n'est **pas** recréée : la notion existe, c'est [[Ranking metrics]] (`Machine Learning/Évaluation de modèles/`), dont les alias couvrent NDCG, MRR, Recall@k et Hit Rate.
+
+### Briques (tags du vocabulaire existant, aucun à créer)
+- [x] Cohere Rerank — `llm/rag` → `LLM & IA générative/RAG & retrieval/`, famille `saas`
+- [x] bge-reranker (alias FlagEmbedding) — `llm/rag`, famille `modele`
+- [x] FlashRank — `llm/rag`, famille `paquet`
+- [x] Jina Reranker — `llm/rag`, famille `modele`, licence `source-available` (poids CC-BY-NC 4.0)
+- [x] ARES — `llm/eval` → `LLM & IA générative/Évaluation/`, famille `paquet`
+- [x] RAGChecker — `llm/eval`, famille `paquet`
+- [x] Comparatif - Rerankers (page + `.base`, filtre `categorie` + tag `reranking`)
+- [x] sentence-transformers : `complements:` bge-reranker et Jina Reranker (v2), réciprocité posée
+
+### Propositions sur les notions de floSa — NON écrites, en attente d'accord
+- [ ] **Reranking** : lier `[[bge-reranker]]`, `[[Cohere Rerank]]`, `[[Jina Reranker]]` dans « Variantes » (aujourd'hui du texte nu), ajouter `[[FlashRank]]` comme voie CPU, et citer la contrainte de licence de Jina (poids CC-BY-NC). Le texte cite aussi mxbai-rerank, sans fiche.
+- [ ] **RAG eval** : passer `RAGChecker` et `ARES` en wikilinks (« En pratique » et « Approches voisines ») ; ajouter `[[Ranking metrics]]` en lien direct (aujourd'hui le lien passe par `[[Reranking|métriques d'ordonnancement]]`) ; distinguer context precision/recall (jugées par LLM) de Recall@k/nDCG (golden set de passages).
+- [ ] **RAG eval — écart à trancher** : la notion écrit qu'ARES calibre ses juges sur « ~150 annotations humaines ». Le papier dit « quelques centaines » et le README « au moins 50, plusieurs centaines idéalement » ; 150 n'apparaît dans aucune des deux sources lues.
+- [ ] **Ranking metrics** : ajouter les alias « Métriques de retrieval » et « retrieval metrics » ; un renvoi vers `[[RAG eval]]`.

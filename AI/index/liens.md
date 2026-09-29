@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 796 pages actives.
+> 803 pages actives.
 
 ## Par page
 
@@ -95,6 +95,11 @@
 - liens sortants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Context engineering]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Graphify]], [[Harnais d'agent]], [[Mermaid]], [[draw.io]]
 - liens entrants : [[Agent skills]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Mermaid]], [[draw.io]], [[i-have-adhd]]
 
+### ARES  ·  brique
+- tags : `llm`, `llm-eval`, `rag-eval`, `llm-as-judge`, `rag`
+- liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[RAG]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[TruLens]]
+- liens entrants : [[Comparatif - Évaluation LLM]], [[RAGChecker]], [[Évaluation]]
+
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
 - liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
@@ -139,6 +144,11 @@
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
 - liens sortants : [[Docker]], [[Grafana]], [[Loki]], [[Observabilité]], [[Sniffnet]]
 - liens entrants : [[Grafana]], [[Observabilité]], [[Sniffnet]], [[Web-Check]]
+
+### bge-reranker  ·  brique
+- tags : `retrieval`, `reranking`, `rag`, `embeddings`
+- liens sortants : [[Chunking strategies]], [[Cohere Rerank]], [[Comparatif - Rerankers]], [[FlashRank]], [[Hybrid retrieval]], [[Jina Reranker]], [[Reranking]], [[embeddings]], [[sentence-transformers]]
+- liens entrants : [[Cohere Rerank]], [[Comparatif - Rerankers]], [[FlashRank]], [[Jina Reranker]], [[RAG & retrieval]], [[sentence-transformers]]
 
 ### bm25s  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
@@ -234,6 +244,11 @@
 - tags : `relational`, `distributed`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[SQLite]]
 - liens entrants : [[Bases de données]], [[Comparatif - Bases relationnelles]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[Postgres]], [[Relationnel]], [[SQLite]]
+
+### Cohere Rerank  ·  brique
+- tags : `retrieval`, `reranking`, `rag`
+- liens sortants : [[Advanced RAG]], [[Comparatif - Rerankers]], [[FlashRank]], [[Hybrid retrieval]], [[Jina Reranker]], [[RAG]], [[Reranking]], [[bge-reranker]]
+- liens entrants : [[Comparatif - Rerankers]], [[FlashRank]], [[Jina Reranker]], [[RAG & retrieval]], [[bge-reranker]]
 
 ### Comet  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -343,7 +358,7 @@
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
 - liens sortants : [[Comparatif - Évaluation LLM]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
 
 ### DeepSpeed  ·  brique
 - tags : `distributed-training`, `memory-optimization`, `deep-learning`, `gpu`, `mixed-precision`
@@ -464,6 +479,11 @@
 - tags : `web-scraping`, `markdown-conversion`
 - liens sortants : [[Comparatif - Scraping]], [[Maxun]], [[Web scraping]], [[pdf-inspector]]
 - liens entrants : [[Comparatif - Scraping]], [[Maxun]], [[Page to Markdown]], [[Scraping]], [[Web scraping]], [[pdf-inspector]]
+
+### FlashRank  ·  brique
+- tags : `retrieval`, `reranking`, `rag`
+- liens sortants : [[Cohere Rerank]], [[Comparatif - Rerankers]], [[Hybrid retrieval]], [[Jina Reranker]], [[RAG eval]], [[Reranking]], [[bge-reranker]], [[sentence-transformers]]
+- liens entrants : [[Cohere Rerank]], [[Comparatif - Rerankers]], [[Jina Reranker]], [[RAG & retrieval]], [[bge-reranker]]
 
 ### Flask  ·  brique
 - tags : `web-framework`
@@ -645,6 +665,11 @@
 - liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow]], [[numpy]]
 - liens entrants : [[Acme]], [[Apprentissage profond]], [[Comparatif - Calcul distribué]], [[CuPy]], [[HuggingFace]], [[Keras]], [[PyMC]], [[PyTorch]], [[RLax]], [[Scikit-Learn]], [[TensorFlow]], [[Tunix]], [[accelerate]], [[numpy]]
 
+### Jina Reranker  ·  brique
+- tags : `retrieval`, `reranking`, `rag`, `embeddings`
+- liens sortants : [[Cohere Rerank]], [[Comparatif - Rerankers]], [[FlashRank]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Reranking]], [[bge-reranker]], [[sentence-transformers]]
+- liens entrants : [[Cohere Rerank]], [[Comparatif - Rerankers]], [[FlashRank]], [[RAG & retrieval]], [[bge-reranker]], [[sentence-transformers]]
+
 ### Jinja2  ·  brique
 - tags : `templating`
 - liens sortants : [[FastAPI]], [[Flask]], [[HTMX]], [[Web & API]]
@@ -768,7 +793,7 @@
 ### LlamaIndex  ·  brique
 - tags : `llm`, `rag`, `embeddings`, `agents`
 - liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Docling]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[LlamaParse]], [[Qdrant]], [[RAG]], [[Reranking]], [[Text-to-SQL]], [[Unstructured]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAGChecker]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]]
 
 ### LlamaIndex NLSQLTableQueryEngine  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `retrieval`
@@ -1328,12 +1353,17 @@
 ### Ragas  ·  brique
 - tags : `llm`, `llm-eval`, `rag-eval`, `rag`
 - liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangChain]], [[Langfuse]], [[LlamaIndex]], [[Phoenix Arize]], [[RAG eval]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG eval]], [[RAGChecker]], [[TruLens]], [[evaluate]], [[promptfoo]], [[Évaluation]]
 
 ### RAGatouille  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `nlp`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[sentence-transformers]]
-- liens entrants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Late-interaction retrieval]], [[RAG & retrieval]]
+- liens entrants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[Late-interaction retrieval]], [[RAG & retrieval]]
+
+### RAGChecker  ·  brique
+- tags : `llm`, `llm-eval`, `rag-eval`, `llm-as-judge`, `rag`
+- liens sortants : [[ARES]], [[Chunking strategies]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM-as-judge]], [[LlamaIndex]], [[RAG]], [[RAG eval]], [[Ragas]], [[Ranking metrics]], [[Reranking]], [[TruLens]]
+- liens entrants : [[ARES]], [[Comparatif - Évaluation LLM]], [[Évaluation]]
 
 ### rank-bm25  ·  brique
 - tags : `information-retrieval`, `ranking`, `search`
@@ -1457,8 +1487,8 @@
 
 ### sentence-transformers  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `reranking`, `nlp`
-- liens sortants : [[Comparatif - NLP]], [[Elasticsearch]], [[HuggingFace]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[embeddings]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[HuggingFace]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[Recherche sémantique]], [[SetFit]], [[Traitement du langage naturel]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens sortants : [[Comparatif - NLP]], [[Elasticsearch]], [[HuggingFace]], [[Jina Reranker]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[bge-reranker]], [[embeddings]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Classification de texte]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[FlashRank]], [[HuggingFace]], [[Jina Reranker]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAGatouille]], [[Recherche sémantique]], [[SetFit]], [[Traitement du langage naturel]], [[bge-reranker]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### sentencepiece  ·  brique
 - tags : `tokenization`, `nlp`
@@ -1683,7 +1713,7 @@
 ### TruLens  ·  brique
 - tags : `llm`, `llm-eval`, `tracing`, `llm-as-judge`
 - liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[promptfoo]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Agent evaluation]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Phoenix Arize]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[promptfoo]], [[Évaluation]]
 
 ### Tunix  ·  brique
 - tags : `llm`, `reinforcement-learning`, `fine-tuning`
@@ -2000,6 +2030,11 @@
 - liens sortants : [[Acme]], [[Comparatif - Reinforcement learning.base]], [[Comparatifs]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
 - liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatifs]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
 
+### Comparatif - Rerankers  ·  comparatif
+- tags : `reranking`, `retrieval`, `rag`
+- liens sortants : [[Cohere Rerank]], [[Comparatif - Rerankers.base]], [[Comparatifs]], [[FlashRank]], [[Jina Reranker]], [[Late-interaction retrieval]], [[RAGatouille]], [[bge-reranker]], [[sentence-transformers]]
+- liens entrants : [[Cohere Rerank]], [[Comparatifs]], [[FlashRank]], [[Jina Reranker]], [[RAG & retrieval]], [[bge-reranker]]
+
 ### Comparatif - Réduction de dimension  ·  comparatif
 - tags : `dimensionality-reduction`, `manifold`, `factor-analysis`
 - liens sortants : [[Comparatif - Réduction de dimension.base]], [[Comparatifs]], [[Fanalysis]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
@@ -2037,8 +2072,8 @@
 
 ### Comparatif - Évaluation LLM  ·  comparatif
 - tags : `llm-eval`, `rag-eval`, `llm-as-judge`
-- liens sortants : [[Comparatif - Évaluation LLM.base]], [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[TruLens]], [[promptfoo]]
-- liens entrants : [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
+- liens sortants : [[ARES]], [[Comparatif - Évaluation LLM.base]], [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[RAGChecker]], [[Ragas]], [[TruLens]], [[promptfoo]]
+- liens entrants : [[ARES]], [[Comparatifs]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[RAGChecker]], [[Ragas]], [[TruLens]], [[llmfit]], [[promptfoo]], [[Évaluation]]
 
 ### Administration  ·  hub
 - tags : —
@@ -2107,8 +2142,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
@@ -2272,7 +2307,7 @@
 
 ### RAG & retrieval  ·  hub
 - tags : `rag`, `retrieval`, `chunking`, `reranking`, `semantic-search`, `knowledge-graph`
-- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[Évaluation]]
+- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Cohere Rerank]], [[Comparatif - Rerankers]], [[Construction de graphes de connaissances]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[bge-reranker]], [[Évaluation]]
 - liens entrants : [[LLM & IA générative]]
 
 ### Recherche  ·  hub
@@ -2407,7 +2442,7 @@
 
 ### Évaluation  ·  hub
 - tags : `llm-eval`, `benchmark`, `rag-eval`, `llm-as-judge`, `model-evaluation`
-- liens sortants : [[Agent evaluation]], [[Code and math benchmarks]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Machine Learning]], [[Observabilité des LLM]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reasoning models]], [[TruLens]], [[promptfoo]]
+- liens sortants : [[ARES]], [[Agent evaluation]], [[Code and math benchmarks]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Machine Learning]], [[Observabilité des LLM]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[Reasoning models]], [[TruLens]], [[promptfoo]]
 - liens entrants : [[LLM & IA générative]], [[Modèles de langage]], [[Observabilité des LLM]], [[RAG & retrieval]], [[Évaluation de modèles]]
 
 ### Évaluation de modèles  ·  hub
@@ -2448,7 +2483,7 @@
 ### Advanced RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`
 - liens sortants : [[Chunking strategies]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG eval]], [[Reranking]], [[Routing and cascading]], [[embeddings]]
-- liens entrants : [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Deep research]], [[Dify]], [[Flowise]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain]], [[Langflow]], [[LlamaIndex]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[Recherche d'information]], [[Reranking]], [[Routing and cascading]], [[Tool use patterns]]
+- liens entrants : [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Cohere Rerank]], [[Deep research]], [[Dify]], [[Flowise]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain]], [[Langflow]], [[LlamaIndex]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[Recherche d'information]], [[Reranking]], [[Routing and cascading]], [[Tool use patterns]]
 
 ### Agent evaluation  ·  notion
 - tags : `agents`, `llm-eval`, `llm`
@@ -2638,7 +2673,7 @@
 ### Chunking strategies  ·  notion
 - tags : `rag`, `chunking`, `retrieval`
 - liens sortants : [[Advanced RAG]], [[Docling]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[LlamaParse]], [[RAG]], [[Reranking]], [[Unstructured]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[RAG & retrieval]], [[Reranking]], [[pdf-inspector]]
+- liens entrants : [[Advanced RAG]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[RAG & retrieval]], [[RAGChecker]], [[Reranking]], [[bge-reranker]], [[pdf-inspector]]
 
 ### Classification  ·  notion
 - tags : `classification`, `supervised`
@@ -2823,7 +2858,7 @@
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
 - liens sortants : [[Bases de données vectorielles]], [[Clustering]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Réduction de dimension]], [[TF-IDF]], [[t-SNE and UMAP]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Non supervisé]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Classification]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Diffusion models]], [[Fuzzy matching & similarité de chaînes]], [[Graph Neural Networks]], [[Hybrid retrieval]], [[Image generation]], [[Index ANN — internes]], [[LLM caching]], [[LLM eval metrics]], [[Late-interaction retrieval]], [[Local Outlier Factor]], [[Machine Learning]], [[Matrix products]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Mutual information]], [[NER et étiquetage de séquence]], [[NLP]], [[Non supervisé]], [[Perceptron et MLP]], [[Probing]], [[Query transformations]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Routing and cascading]], [[Superposition]], [[Systèmes de recommandation]], [[TF-IDF]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vector norms]], [[Vision Language Models]], [[bge-reranker]], [[k-NN]], [[sentence-transformers]], [[t-SNE and UMAP]], [[txtai]]
 
 ### Encodage des variables catégorielles  ·  notion
 - tags : `feature-engineering`
@@ -3003,7 +3038,7 @@
 ### Hybrid retrieval  ·  notion
 - tags : `retrieval`, `hybrid-search`, `semantic-search`, `search`, `rag`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Haystack]], [[Index inversé]], [[Meilisearch]], [[OpenSearch]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[TF-IDF]], [[Typesense]], [[Weaviate]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Elasticsearch]], [[GraphRAG]], [[Haystack]], [[Index inversé]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Meilisearch]], [[OpenSearch]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Traitement du langage naturel]], [[Typesense]], [[Vespa]], [[ai-memory]], [[bm25s]], [[rank-bm25]]
+- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Cohere Rerank]], [[Elasticsearch]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Index inversé]], [[Jina Reranker]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Meilisearch]], [[OpenSearch]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Traitement du langage naturel]], [[Typesense]], [[Vespa]], [[ai-memory]], [[bge-reranker]], [[bm25s]], [[rank-bm25]]
 
 ### ICA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -3123,7 +3158,7 @@
 ### Late-interaction retrieval  ·  notion
 - tags : `retrieval`, `reranking`, `embeddings`, `semantic-search`, `information-retrieval`, `rag`
 - liens sortants : [[Hybrid retrieval]], [[Qdrant]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[Weaviate]], [[embeddings]]
-- liens entrants : [[LLM & IA générative]], [[RAG & retrieval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]]
+- liens entrants : [[Comparatif - Rerankers]], [[Jina Reranker]], [[LLM & IA générative]], [[RAG & retrieval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]]
 
 ### Learning rate schedules  ·  notion
 - tags : `optimization`, `learning-rate`
@@ -3143,7 +3178,7 @@
 ### LLM eval metrics  ·  notion
 - tags : `llm-eval`, `model-evaluation`, `llm`, `nlp`
 - liens sortants : [[Code and math benchmarks]], [[DeepEval]], [[LLM benchmarks]], [[LLM observability]], [[LLM-as-judge]], [[Perplexity]], [[RAG eval]], [[Ragas]], [[TruLens]], [[embeddings]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Fine-tuning]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Perplexity]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Fine-tuning]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Perplexity]], [[RAG eval]], [[Ragas]], [[TruLens]], [[promptfoo]], [[Évaluation]]
 
 ### LLM observability  ·  notion
 - tags : `llm-observability`, `tracing`, `llm`
@@ -3153,7 +3188,7 @@
 ### LLM-as-judge  ·  notion
 - tags : `llm-as-judge`, `llm-eval`, `llm`
 - liens sortants : [[Agent evaluation]], [[Chain-of-Thought]], [[Code and math benchmarks]], [[DeepEval]], [[Harnais d'agent]], [[Inspect AI]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Prometheus-Eval]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[TruLens]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Guardrails]], [[Inspect AI]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Perplexity]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[Ragas]], [[Reward modeling]], [[Synthetic data generation]], [[TruLens]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Agent evaluation]], [[Code and math benchmarks]], [[DeepEval]], [[Guardrails]], [[Inspect AI]], [[LLM & IA générative]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM observability]], [[Langfuse]], [[Perplexity]], [[Phoenix Arize]], [[Prometheus-Eval]], [[RAG benchmarks]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[Reward modeling]], [[Synthetic data generation]], [[TruLens]], [[promptfoo]], [[Évaluation]]
 
 ### Local Outlier Factor  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -3518,7 +3553,7 @@
 ### RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`, `embeddings`, `semantic-search`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Chunking strategies]], [[Context engineering]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[Query transformations]], [[RAG eval]], [[Reranking]], [[Routing and cascading]], [[SFT]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Deep research]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[Vanna]], [[pdf-inspector]], [[sentence-transformers]], [[txtai]]
+- liens entrants : [[ARES]], [[Advanced RAG]], [[Agent memory]], [[Agent patterns]], [[Chunking strategies]], [[Cohere Rerank]], [[Construction de graphes de connaissances]], [[Context engineering]], [[Deep research]], [[Fine-tuning]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LLM observability]], [[LangChain]], [[LlamaIndex]], [[NER et étiquetage de séquence]], [[OpenDataLoader PDF]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[RAGChecker]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Reranking]], [[SFT]], [[Text-to-SQL]], [[Tool use patterns]], [[Traitement du langage naturel]], [[Vanna]], [[pdf-inspector]], [[sentence-transformers]], [[txtai]]
 
 ### RAG benchmarks  ·  notion
 - tags : `benchmark`, `rag-eval`, `rag`, `retrieval`, `llm-eval`
@@ -3528,7 +3563,7 @@
 ### RAG eval  ·  notion
 - tags : `rag-eval`, `llm-eval`, `rag`, `retrieval`
 - liens sortants : [[Advanced RAG]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[Ragas]], [[Reranking]], [[Routing and cascading]], [[TruLens]]
-- liens entrants : [[Advanced RAG]], [[Agent evaluation]], [[DeepEval]], [[GraphRAG]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[Ragas]], [[Routing and cascading]], [[TruLens]], [[promptfoo]], [[Évaluation]]
+- liens entrants : [[ARES]], [[Advanced RAG]], [[Agent evaluation]], [[DeepEval]], [[FlashRank]], [[GraphRAG]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAGChecker]], [[Ragas]], [[Routing and cascading]], [[TruLens]], [[promptfoo]], [[Évaluation]]
 
 ### Random Forest  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `bagging`
@@ -3538,7 +3573,7 @@
 ### Ranking metrics  ·  notion
 - tags : `model-evaluation`, `ranking`
 - liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[BM25]], [[Classification metrics]], [[Machine Learning]], [[ROC-AUC / courbe PR]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[Systèmes de recommandation]], [[bm25s]], [[evaluate]], [[Évaluation de modèles]]
+- liens entrants : [[BM25]], [[Classification metrics]], [[Machine Learning]], [[RAGChecker]], [[ROC-AUC / courbe PR]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[Systèmes de recommandation]], [[bm25s]], [[evaluate]], [[Évaluation de modèles]]
 
 ### Reasoning models  ·  notion
 - tags : `reasoning`, `llm`, `alignment`
@@ -3583,7 +3618,7 @@
 ### Reranking  ·  notion
 - tags : `retrieval`, `reranking`, `ranking`, `rag`
 - liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[RAG]], [[Ranking metrics]], [[Recherche d'information]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[LLM & IA générative]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Traitement du langage naturel]], [[Vespa]], [[sentence-transformers]]
+- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Cohere Rerank]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[LLM & IA générative]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG eval]], [[RAGChecker]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Traitement du langage naturel]], [[Vespa]], [[bge-reranker]], [[sentence-transformers]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -4075,7 +4110,7 @@
 - `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
 - `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
-- `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Late-interaction retrieval, LlamaIndex, RAG, Recherche sémantique, Systèmes de recommandation, embeddings, sentence-transformers, txtai
+- `embeddings` : Bases de données vectorielles, HuggingFace, Index ANN — internes, Jina Reranker, Late-interaction retrieval, LlamaIndex, RAG, Recherche sémantique, Systèmes de recommandation, bge-reranker, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy, Théorie de l'information
 - `experiment-tracking` : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases  — pas de page concept dédiée
@@ -4132,9 +4167,9 @@
 - `linear-model` : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
 - `linear-programming` : Comparatif - Solveurs d'optimisation, Mathématiques, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
 - `linter` : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
-- `llm-as-judge` : Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, TruLens, Évaluation
-- `llm-eval` : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation  — pas de page concept dédiée
+- `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RAGChecker, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm-as-judge` : ARES, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, RAGChecker, TruLens, Évaluation
+- `llm-eval` : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, promptfoo, Évaluation  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
 - `llm-observability` : Comparatif - Observabilité LLM, Helicone, LLM & IA générative, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize
 - `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
@@ -4223,8 +4258,8 @@
 - `quantization` : Apprentissage profond, Comparatif - Exécution & serving LLM, Fine-tuning, LM Studio, ONNX Runtime, Ollama, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
 - `query-transformation` : Query transformations
 - `rademacher-complexity` : Rademacher complexity, Théorie de l'apprentissage
-- `rag` : Advanced RAG, Bases de données vectorielles, Chroma, Chunking strategies, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, DB-GPT, Dify, Docling, Flowise, GraphRAG, Haystack, Hybrid retrieval, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, pgvector, txtai
-- `rag-eval` : Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, Ragas, Évaluation
+- `rag` : ARES, Advanced RAG, Bases de données vectorielles, Chroma, Chunking strategies, Cohere Rerank, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Rerankers, DB-GPT, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGChecker, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
+- `rag-eval` : ARES, Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, RAGChecker, Ragas, Évaluation
 - `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
 - `re-identification` : Metric learning & ré-identification
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Modèles de langage, Reasoning models  — pas de page concept dédiée
@@ -4239,9 +4274,9 @@
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill  — pas de page concept dédiée
-- `reranking` : Late-interaction retrieval, RAG & retrieval, RAGatouille, Reranking, sentence-transformers
+- `reranking` : Cohere Rerank, Comparatif - Rerankers, FlashRank, Jina Reranker, Late-interaction retrieval, RAG & retrieval, RAGatouille, Reranking, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
-- `retrieval` : Advanced RAG, Agent memory, Chunking strategies, Deep research, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, open_deep_research, sentence-transformers  — pas de page concept dédiée
+- `retrieval` : Advanced RAG, Agent memory, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
@@ -4400,8 +4435,8 @@
 - `linear-algebra` (porté par : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
 - `linter` (porté par : Outils de développement, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
-- `llm-eval` (porté par : Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, Ragas, TruLens, promptfoo, Évaluation)
+- `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RAGChecker, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm-eval` (porté par : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
 - `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Beats, Kibana, Logstash, Loki, Observabilité)
@@ -4462,7 +4497,7 @@
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
-- `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, Deep research, GraphRAG, Hybrid retrieval, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, open_deep_research, sentence-transformers)
+- `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, SeaweedFS, Stockage)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)

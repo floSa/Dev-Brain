@@ -28,6 +28,8 @@ tags: [llm-eval, benchmark, rag-eval, llm-as-judge, model-evaluation]
 - Instrumenter un stack existant sans le réécrire → [[TruLens]].
 - Évaluer des agents, ou lancer un des 200+ bancs d'essai existants sur un modèle → [[Inspect AI]].
 - Faire tourner le juge lui-même en local, avec un modèle ouvert entraîné pour ça → [[Prometheus-Eval]].
+- Savoir si un RAG rate côté retriever ou côté générateur, claim par claim → [[RAGChecker]].
+- Un score RAG avec un intervalle de confiance, en échange de quelques dizaines d'annotations humaines → [[ARES]].
 - Regarder le trafic réel plutôt qu'un jeu figé → [[Observabilité des LLM]].
 - Évaluer un modèle ML classique (accuracy, F1, BLEU) plutôt qu'un système LLM → [[Machine Learning]].
 
@@ -42,11 +44,13 @@ tags: [llm-eval, benchmark, rag-eval, llm-as-judge, model-evaluation]
 - [[RAG eval]] — domaines : ai-eng
 
 ### Briques
+- [[ARES]] — Framework d'évaluation de RAG (Apache-2.0, Stanford) — génère des données synthétiques, affine de petits juges LM pour la pertinence du contexte, la fidélité et la pertinence de la réponse, puis corrige leurs scores par prediction-powered inference avec quelques centaines d'annotations humaines ; NAACL 2024.
 - [[DeepEval]] — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
 - [[Inspect AI]] — Framework d'évaluation de LLM et d'agents (MIT, UK AI Security Institute et Meridian Labs) — des tâches composées d'un dataset, d'un solver et d'un scorer (texte ou noté par un modèle), 200+ évaluations prêtes à lancer, sandbox pour le code non fiable, visualiseur web et extension VS Code.
 - [[Prometheus-Eval]] — Modèles-juges ouverts et bibliothèque Python (Apache-2.0) — Prometheus 2 en 7B et 8x7B note une réponse de 1 à 5 selon une rubrique ou choisit entre deux réponses, en local via vLLM ou par API via LiteLLM ; M-Prometheus (3B, 7B, 14B) pour le multilingue.
 - [[promptfoo]] — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 - [[Ragas]] — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
+- [[RAGChecker]] — Framework de diagnostic de RAG (Apache-2.0, Amazon Science) — extrait des claims de la réponse et les vérifie par entailment pour séparer les fautes du retriever (claim recall, context precision) de celles du générateur (fidélité, hallucination, sensibilité au bruit) ; juges via LiteLLM.
 - [[TruLens]] — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions (groundedness, context/answer relevance) ; socle de Snowflake AI Observability.
 
 ### Comparatifs

@@ -64,6 +64,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Frameworks LLM]]
 - [[Comparatif - Frameworks text-to-SQL]]
 - [[Comparatif - Observabilité LLM]]
+- [[Comparatif - Rerankers]]
 - [[Comparatif - Évaluation LLM]]
 
 ### Machine Learning

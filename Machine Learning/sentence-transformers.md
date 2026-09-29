@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[HuggingFace]]", "[[SetFit]]", "[[txtai]]"]
+complements: ["[[HuggingFace]]", "[[SetFit]]", "[[txtai]]", "[[bge-reranker]]", "[[Jina Reranker]]"]
 tags: [embeddings, semantic-search, retrieval, reranking, nlp]
 url_docs: https://www.sbert.net
 url_repo: https://github.com/huggingface/sentence-transformers
@@ -42,7 +42,7 @@ modèles donnent deux espaces incompatibles. Maintenu par Hugging Face.
 |---|---|
 | Produire des [[embeddings]] de phrases ou de documents : recherche sémantique, [[RAG]], clustering, déduplication | Recherche purement **lexicale** sur mots exacts → [[rank-bm25]], ou un moteur comme [[Elasticsearch]] |
 | Étage **dense** d'un pipeline de [[Recherche d'information]] | Un **cross-encoder ne se pré-calcule pas** : le réserver au top-k, jamais à l'indexation |
-| [[Reranking]] avec un cross-encoder — BGE-reranker, mxbai | Le modèle doit être **adapté à la langue et au domaine** : un multilingue générique dégrade sur un corpus spécialisé |
+| [[Reranking]] avec un cross-encoder — [[bge-reranker]], [[Jina Reranker]] (v2), mxbai | Le modèle doit être **adapté à la langue et au domaine** : un multilingue générique dégrade sur un corpus spécialisé |
 | Fine-tuner un encodeur sur son domaine, par perte contrastive (`MultipleNegativesRankingLoss`) | Embeddings **managés** par API : c'est une alternative d'infrastructure hors brain — OpenAI, Cohere, Voyage |
 | | Génération de texte : c'est de l'encodage, pas un LLM génératif |
 
@@ -66,6 +66,8 @@ modèles donnent deux espaces incompatibles. Maintenu par Hugging Face.
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — le socle de modèles et le Hub d'où viennent les encodeurs.
 - [[SetFit]] — Few-shot text classification sans prompt — fine-tuning contrastif d'un sentence-transformer puis tête de classification ; performant avec quelques dizaines d'exemples, sans LLM — bâti dessus, pour la classification few-shot.
 - [[txtai]] — Base d'embeddings tout-en-un en Python (Apache-2.0, NeuML) — recherche sémantique, SQL et graphe sur un même index, plus orchestration de workflows LLM ; du notebook embarqué à l'API FastAPI. — l'index et les workflows qui se montent au-dessus des embeddings produits
+- [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local. — les poids que `CrossEncoder` charge pour reclasser un top-k.
+- [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem. — la v2 se charge par `CrossEncoder` ; poids non commerciaux sans licence.
 
 ## Ressources
 
