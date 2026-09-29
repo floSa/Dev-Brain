@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 776 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 782 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -238,8 +238,11 @@
 ### llm/agents
 - **Agno** — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
 - **AutoGen** — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- **Claude Agent SDK** — SDK d'Anthropic qui expose la boucle d'agent de Claude Code comme bibliothèque (Python, TypeScript) — outils intégrés (fichiers, shell, web), sous-agents, hooks, permissions, sessions, MCP, skills ; réservé aux modèles Claude, sous conditions commerciales d'Anthropic.
 - **CrewAI** — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- **Deep Agents** — Harnais d'agent « batteries incluses » de l'équipe LangChain (MIT), construit sur LangGraph — système de fichiers à backends interchangeables, sous-agents à contexte isolé (outil `task`), résumé et déport du contexte sur disque, planification en option (`write_todos`) ; agnostique du modèle, Python et TypeScript.
 - **LangGraph** — Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.
+- **open_deep_research** — Agent de recherche approfondie open source de LangChain (MIT) — clarifie la demande, rédige un brief, délègue à des chercheurs parallèles pilotés par un superviseur LangGraph, puis produit le rapport ; modèles, moteurs de recherche et MCP configurables ; dépôt archivé (dernier commit 2026-08-10).
 - **OpenAI Agents SDK** — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
 - **PraisonAI** — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 - **PydanticAI** — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
@@ -582,10 +585,13 @@
 - **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
 - **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
 - **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
+- **Architecture deep agent** — domaines : ai-eng · alias : deep agent, agent profond, agents profonds, agents à planification
+- **Deep research** — domaines : ai-eng · alias : recherche approfondie, deep research agent, agent de recherche approfondie
 - **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
 - **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
 - **Multi-agent systems** — domaines : ai-eng · alias : systèmes multi-agents, multi-agent systems, MAS
 - **Reliability patterns** — domaines : ai-eng · alias : patrons de fiabilité, reliability patterns, fiabilité des apps LLM
+- **Sous-agents et isolation du contexte** — domaines : ai-eng · alias : sous-agents, subagents, sub-agents, isolation du contexte, context isolation
 - **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
 - **tool-use** — domaines : ai-eng · alias : function calling, appel d'outils, tool calling, appel de fonctions
 

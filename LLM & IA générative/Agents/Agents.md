@@ -19,6 +19,7 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - **Le multi-agent est un choix coûteux**, pas un progrès automatique. [[Multi-agent systems]] pose la question honnêtement : découper en rôles clarifie les prompts, et multiplie les appels, la latence et les modes de défaillance. Un agent unique bien outillé bat souvent trois agents qui se parlent — le multi-agent gagne quand les rôles ont de vraies frontières d'information ou d'autorisation.
 - **Les outils sont l'agent.** [[tool-use]] est le mécanisme d'échange, [[Tool use patterns]] la façon de les concevoir : peu d'outils, aux noms sans ambiguïté, aux erreurs lisibles par le modèle. Un agent médiocre est presque toujours un agent mal outillé. La forme portable de l'outillage est MCP ([[mcp-protocol]]), et [[a2a-protocol]] traite l'étage au-dessus — deux agents de fournisseurs différents qui se parlent.
 - Le **harnais** est ce qui entoure la boucle et décide de sa fiabilité réelle : [[Harnais d'agent]] — quels outils sont exposés, quel contexte est rechargé à chaque tour, quelle action demande une confirmation. C'est du ressort de l'application, pas du framework.
+- **Une tâche longue ne se règle pas avec une meilleure boucle, mais avec de la place.** Le contexte sature avant la fin : le patron [[Architecture deep agent]] le contourne en déportant l'information hors de la fenêtre — un système de fichiers pour les résultats, des sous-agents dont seul le rapport final remonte ([[Sous-agents et isolation du contexte]]), une liste de tâches pour tenir le fil. [[Deep Agents]] et [[Claude Agent SDK]] livrent cet assemblage tout fait ; le premier reste agnostique du modèle, le second est verrouillé sur Claude. Le cas d'usage type est la [[Deep research]], dont [[open_deep_research]] reste la référence d'architecture — son dépôt est archivé.
 - **Évaluer un agent n'est pas évaluer un LLM** : ce qui compte est la trajectoire, pas la dernière réponse. [[Agent evaluation]] — l'agent a-t-il appelé le bon outil, dans le bon ordre, s'est-il arrêté. Un agent qui donne la bonne réponse par un chemin faux régressera silencieusement.
 - Deux choix structurels reviennent dans les fiches et méritent d'être compris avant de choisir : **l'action écrite en code** plutôt qu'en JSON ([[smolagents]] et son CodeAgent — plus expressif, mais il faut une sandbox), et **la sortie typée et validée** comme contrat de bout en bout ([[PydanticAI]]).
 
@@ -28,6 +29,9 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - Des sorties typées et validées, une base de code Python déjà typée → [[PydanticAI]].
 - Le minimum viable, agnostique du fournisseur, tracing inclus → [[OpenAI Agents SDK]].
 - Une boucle courte à lire en entier, l'action écrite en Python → [[smolagents]], avec sandbox.
+- Une tâche longue qui déborde la fenêtre, avec fichiers et sous-agents déjà câblés, sur le modèle de son choix → [[Deep Agents]].
+- Le même harnais que Claude Code, embarqué dans mon application, sur Claude uniquement → [[Claude Agent SDK]].
+- Un agent de recherche approfondie à étudier de bout en bout → [[open_deep_research]], en sachant que son dépôt est archivé ; pour construire, partir de [[Deep Agents]].
 - Une équipe d'agents à rôles, vite montée → [[CrewAI]].
 - Déclarer agents et tâches en YAML sans écrire de code → [[PraisonAI]].
 - Un runtime d'agents à héberger avec mémoire et connaissance intégrées → [[Agno]].
@@ -41,18 +45,24 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - [[Agent patterns]] — domaines : ai-eng
 - [[Agent skills]] — domaines : ai-eng
 - [[agent-loops]] — domaines : ai-eng
+- [[Architecture deep agent]] — domaines : ai-eng
+- [[Deep research]] — domaines : ai-eng
 - [[Harnais d'agent]] — domaines : ai-eng
 - [[Human-in-the-loop]] — domaines : ai-eng
 - [[Multi-agent systems]] — domaines : ai-eng
 - [[Reliability patterns]] — domaines : ai-eng
+- [[Sous-agents et isolation du contexte]] — domaines : ai-eng
 - [[Tool use patterns]] — domaines : ai-eng
 - [[tool-use]] — domaines : ai-eng
 
 ### Briques
 - [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
 - [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
+- [[Claude Agent SDK]] — SDK d'Anthropic qui expose la boucle d'agent de Claude Code comme bibliothèque (Python, TypeScript) — outils intégrés (fichiers, shell, web), sous-agents, hooks, permissions, sessions, MCP, skills ; réservé aux modèles Claude, sous conditions commerciales d'Anthropic.
 - [[CrewAI]] — Framework multi-agents Python autonome (indépendant de LangChain) — orchestre des agents en rôles via des Crews et des Flows ; open-source avec une plateforme Enterprise managée pour la production.
+- [[Deep Agents]] — Harnais d'agent « batteries incluses » de l'équipe LangChain (MIT), construit sur LangGraph — système de fichiers à backends interchangeables, sous-agents à contexte isolé (outil `task`), résumé et déport du contexte sur disque, planification en option (`write_todos`) ; agnostique du modèle, Python et TypeScript.
 - [[LangGraph]] — Bibliothèque d'orchestration d'agents stateful de l'équipe LangChain — graphes cycliques avec état persistant, reprise, human-in-the-loop et streaming ; la couche bas niveau pour agents fiables, utilisable sans LangChain.
+- [[open_deep_research]] — Agent de recherche approfondie open source de LangChain (MIT) — clarifie la demande, rédige un brief, délègue à des chercheurs parallèles pilotés par un superviseur LangGraph, puis produit le rapport ; modèles, moteurs de recherche et MCP configurables ; dépôt archivé (dernier commit 2026-08-10).
 - [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
 - [[PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 - [[PydanticAI]] — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).

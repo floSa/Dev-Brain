@@ -46,6 +46,7 @@ tags: [agents, llm, tool-use]
 ## Approches voisines & alternatives
 
 - [[Harnais d'agent]] — ces patrons décrivent l'organisation interne du harnais.
+- [[Architecture deep agent]] — l'assemblage de plan-and-execute, d'orchestrateur–exécutants et de gestion active du contexte, pour les tâches qui dépassent la fenêtre ; mis en œuvre par [[Deep Agents]].
 
 - [[agent-loops]] — le moteur d'exécution que ces patrons orchestrent.
 - [[Tool use patterns]] — comment l'agent agit sur le monde.

@@ -7,7 +7,7 @@ tags: [agents, rag, structured-output, multi-agent]
 
 # Comparatif - Frameworks LLM
 
-> On tranche sur : la couche qu'on importe — assembler, orchestrer une boucle d'agents, indexer et récupérer, ou contraindre la forme de la sortie — puis, dans chaque couche, ce que la brique fait que ses voisines ne font pas.
+> On tranche sur : la couche qu'on importe — assembler, orchestrer une boucle d'agents (à écrire soi-même, ou fournie avec ses outils et sa gestion du contexte), indexer et récupérer, ou contraindre la forme de la sortie — puis, dans chaque couche, ce que la brique fait que ses voisines ne font pas.
 
 ![[Comparatif - Frameworks LLM.base]]
 
@@ -21,6 +21,9 @@ tags: [agents, rag, structured-output, multi-agent]
 - [[Semantic Kernel]] — la **parité multi-langage** C#/.NET, Python et Java, seul du lot à l'offrir : c'est le choix d'un écosystème .NET/JVM, pas d'un projet Python. Même réserve de cycle de vie — Microsoft annonce Agent Framework comme son successeur, et ses « planners » ont été refondus plusieurs fois.
 - [[OpenAI Agents SDK]] — la **minimalité** assumée : agents, **handoffs**, guardrails, sessions, et un tracing intégré. Peu de garde-fous au-delà des primitives — retries, fallback et timeouts restent à câbler — et le tracing part **par défaut chez OpenAI**.
 - [[PydanticAI]] — le **typage** de bout en bout : sortie qui est un objet Pydantic validé, injection de dépendances typée, erreurs capturées à l'écriture par mypy/pyright. L'argument ne vaut que si le type-checker tourne en CI, et les intégrations toutes faites y sont plus rares que chez LangChain.
+- [[Deep Agents]] — le **harnais complet** posé sur LangGraph : système de fichiers à backends interchangeables, sous-agents à contexte isolé, résumé et déport du contexte sur disque — pour les tâches longues qu'une boucle nue ne finit pas. Agnostique du modèle, contrairement à [[Claude Agent SDK]]. Version 0.x, et la planification est passée d'incluse à optionnelle en 0.7.
+- [[Claude Agent SDK]] — la **boucle de Claude Code en bibliothèque** : outils de fichiers et de shell, sous-agents, hooks, permissions, sessions et MCP fournis, sans câbler quoi que ce soit. Verrouillé sur Claude et régi par les conditions commerciales d'Anthropic : il faut l'API pour tourner.
+- [[open_deep_research]] — le seul du lot qui soit une **application** à cloner et non une bibliothèque : un agent de recherche approfondie complet, superviseur et chercheurs parallèles. Son dépôt est **archivé** (dernier commit août 2026) — à lire comme référence d'architecture, [[Deep Agents]] étant la relève maintenue.
 - [[smolagents]] — le **CodeAgent** : l'agent écrit ses actions en **code Python exécutable** plutôt qu'en appels d'outils JSON, ce qui réduit le nombre d'étapes ; cœur en ~1000 lignes, donc auditable de bout en bout. Contrepartie explicite : `LocalPythonExecutor` **n'est pas une frontière de sécurité**.
 - [[Agno]] — mémoire, connaissance et raisonnement livrés comme **briques de base**, plus **AgentOS**, un runtime self-host avec API, RBAC et scheduling : c'est le seul à fournir le plan de contrôle de production avec la bibliothèque. Son « le plus rapide » porte sur l'instanciation en mémoire, pas sur la latence réelle, dominée par le LLM.
 - [[PraisonAI]] — l'entrée **low-code** : un `agents.yaml` déclare agents, tâches et processus, et le SDK reste là pour ce qui déborde. Second trait propre, l'**auto-réflexion** — l'agent relit sa sortie avant de la rendre, ce qui double au moins le nombre d'appels.
