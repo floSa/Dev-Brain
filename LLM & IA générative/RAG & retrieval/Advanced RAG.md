@@ -29,7 +29,7 @@ tags: [rag, llm, retrieval]
 - **Compression / filtrage** du contexte : ne garder que les phrases utiles (moins de bruit, moins de tokens).
 
 ### Patterns établis
-- **Self-RAG / corrective RAG** : le modèle juge la pertinence du contexte récupéré et relance si besoin.
+- **Self-RAG** : des jetons de réflexion font décider au modèle de récupérer à la demande, puis juger la pertinence des passages et la qualité de sa propre sortie (Asai et al. 2023). **Corrective RAG (CRAG)** : un évaluateur léger note les documents récupérés et déclenche une action (raffiner, compléter par une recherche web, ou combiner), sans boucle de reformulation (Yan et al. 2024). Les boucles de récupération sont traitées dans [[RAG agentique]].
 - **[[GraphRAG]]** : retrieval sur un graphe de connaissances pour les questions globales / multi-hop.
 - **Agentic RAG** : un agent décide quand et quoi récupérer, en boucle.
 
