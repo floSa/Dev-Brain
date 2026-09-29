@@ -35,7 +35,7 @@ tags: [retrieval, hybrid-search, semantic-search, search, rag]
 
 ## En pratique
 
-- Beaucoup de moteurs le font nativement : [[Elasticsearch]] / OpenSearch (BM25 + kNN), [[Weaviate]], [[Qdrant]] ; côté framework, [[Haystack]] expose des retrievers hybrides.
+- Beaucoup de moteurs le font nativement : [[Elasticsearch]] / [[OpenSearch]] (BM25 + kNN), [[Meilisearch]], [[Typesense]], [[Weaviate]], [[Qdrant]] ; côté framework, [[Haystack]] expose des retrievers hybrides.
 - Récupérer large en hybride, puis resserrer avec [[Reranking]] : combinaison gagnante.
 - Régler la pondération sur **son** corpus ; choisir RRF si l'on ne veut pas calibrer.
 - Piège : croire que le dense suffit — sur entités exactes et requêtes courtes, BM25 reste imbattable.
@@ -48,6 +48,9 @@ tags: [retrieval, hybrid-search, semantic-search, search, rag]
 - [[Advanced RAG]] — l'hybride y est une brique standard.
 - [[Bases de données vectorielles]] — beaucoup intègrent désormais BM25 + ANN dans le même moteur.
 - [[Recherche d'information]] — la discipline générale dont l'hybride est une stratégie ; [[TF-IDF]] et [[BM25]] en sont le versant lexical.
+- [[Index inversé]] — la structure derrière la moitié lexicale.
+- [[Recherche vectorielle approximative]] — la moitié dense, côté moteur de recherche.
+- [[Recherche sémantique]] — la moitié dense, vue par l'usage.
 
 ## Pour aller plus loin
 

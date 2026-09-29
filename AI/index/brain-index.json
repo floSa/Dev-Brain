@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 782,
+  "count": 793,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -152,9 +152,12 @@
       "Annoy",
       "Faiss",
       "Index ANN — internes",
+      "Lucene",
       "Milvus",
       "Qdrant",
+      "Recherche vectorielle approximative",
       "ScaNN",
+      "Typesense",
       "hnswlib"
     ],
     "anomaly-detection": [
@@ -530,6 +533,7 @@
       "Dash",
       "Grafana",
       "Interfaces & apps data",
+      "Kibana",
       "Observabilité",
       "Shiny for Python",
       "WrenAI"
@@ -578,6 +582,7 @@
       "Airflow",
       "Alteryx",
       "Architecture médaillon",
+      "Beats",
       "Change Data Capture (CDC)",
       "Comparatif - Orchestrateurs data",
       "Dagster",
@@ -585,6 +590,7 @@
       "Databricks",
       "ELT vs ETL & idempotence",
       "Kestra",
+      "Logstash",
       "Mage",
       "Orchestration",
       "Pattern - Pipeline scraping → matching → optimisation",
@@ -815,6 +821,7 @@
     "distributed": [
       "AWS SageMaker",
       "Apache Cassandra",
+      "Apache Solr",
       "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
@@ -828,6 +835,7 @@
       "Loki",
       "Modin",
       "Nebula Graph",
+      "OpenSearch",
       "Optuna",
       "PyTorch",
       "PyTorch Lightning",
@@ -909,6 +917,7 @@
       "DuckDB",
       "Faiss",
       "LanceDB",
+      "Lucene",
       "SQLite",
       "ScaNN",
       "hnswlib"
@@ -920,6 +929,7 @@
       "Late-interaction retrieval",
       "LlamaIndex",
       "RAG",
+      "Recherche sémantique",
       "Systèmes de recommandation",
       "embeddings",
       "sentence-transformers",
@@ -1189,7 +1199,10 @@
     "hybrid-search": [
       "Haystack",
       "Hybrid retrieval",
+      "Meilisearch",
+      "OpenSearch",
       "Recherche d'information",
+      "Typesense",
       "Vespa",
       "Weaviate"
     ],
@@ -1302,6 +1315,7 @@
       "BM25",
       "Comparatif - NLP",
       "Fuzzy matching & similarité de chaînes",
+      "Index inversé",
       "Late-interaction retrieval",
       "NLP",
       "Recherche d'information",
@@ -1631,6 +1645,9 @@
       "text-generation-webui"
     ],
     "logging": [
+      "Beats",
+      "Kibana",
+      "Logstash",
       "Loki",
       "Observabilité"
     ],
@@ -2065,6 +2082,7 @@
     "observability": [
       "Beszel",
       "Grafana",
+      "Kibana",
       "Loki",
       "Observabilité",
       "Observabilité des LLM"
@@ -2602,12 +2620,20 @@
       "Contrats de données & qualité"
     ],
     "search": [
+      "Apache Solr",
       "BM25",
       "Bases de données",
       "Comparatif - Moteurs de recherche",
       "Elasticsearch",
       "Hybrid retrieval",
+      "Index inversé",
+      "Lucene",
       "Marqo",
+      "Meilisearch",
+      "OpenSearch",
+      "Recherche sémantique",
+      "Recherche vectorielle approximative",
+      "Typesense",
       "Vespa",
       "bm25s",
       "rank-bm25",
@@ -2632,10 +2658,12 @@
       "Automatisation no-code",
       "Beszel",
       "Dataiku",
+      "Meilisearch",
       "Observabilité",
       "OpenMAIC",
       "Stirling PDF",
       "Stockage",
+      "Typesense",
       "Web-Check",
       "croc"
     ],
@@ -2657,10 +2685,14 @@
       "LLM caching",
       "Late-interaction retrieval",
       "Marqo",
+      "Meilisearch",
+      "OpenSearch",
       "Pinecone",
       "RAG",
       "RAG & retrieval",
       "Recherche d'information",
+      "Recherche sémantique",
+      "Recherche vectorielle approximative",
       "embeddings",
       "sentence-transformers",
       "txtai"
@@ -4074,6 +4106,31 @@
       "maturite": "production"
     },
     {
+      "path": "Bases de données/Recherche/Apache Solr.md",
+      "nom": "Apache Solr",
+      "alias": [
+        "solr",
+        "apache solr",
+        "solrcloud"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Plateforme de recherche Apache (Apache-2.0) bâtie sur Lucene — full-text, vectoriel et géospatial, distribuée par SolrCloud (réplication, bascule automatique).",
+      "tags": [
+        "search",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Elasticsearch]]",
+        "[[OpenSearch]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Bases de données/Recherche/Comparatif - Moteurs de recherche.md",
       "nom": "Comparatif - Moteurs de recherche",
       "alias": null,
@@ -4111,8 +4168,64 @@
       "alternatives": [
         "[[Vespa]]",
         "[[txtai]]",
-        "[[Marqo]]"
+        "[[Marqo]]",
+        "[[OpenSearch]]",
+        "[[Meilisearch]]",
+        "[[Typesense]]",
+        "[[Apache Solr]]"
       ],
+      "complements": [
+        "[[Kibana]]",
+        "[[Logstash]]",
+        "[[Beats]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/Index inversé.md",
+      "nom": "Index inversé",
+      "alias": [
+        "inverted index",
+        "index inverse",
+        "postings list",
+        "liste de postings"
+      ],
+      "role": "notion",
+      "categorie": "database/recherche",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "search",
+        "information-retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Recherche/Lucene.md",
+      "nom": "Lucene",
+      "alias": [
+        "lucene",
+        "apache lucene"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "paquet",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Bibliothèque Java de recherche plein texte (Apache-2.0) — le moteur d'indexation sous Elasticsearch et Solr ; index inversé et HNSW natifs, à embarquer dans une application JVM.",
+      "tags": [
+        "search",
+        "ann",
+        "embedded"
+      ],
+      "alternatives": [],
       "complements": [],
       "maturite": "production"
     },
@@ -4144,6 +4257,111 @@
       "maturite": "deprecated"
     },
     {
+      "path": "Bases de données/Recherche/Meilisearch.md",
+      "nom": "Meilisearch",
+      "alias": [
+        "meilisearch",
+        "meili"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Moteur de recherche instantané en Rust — full-text tolérant aux fautes de frappe, sémantique et hybride derrière une API REST ; édition communautaire MIT, sharding réservé à l'édition Enterprise.",
+      "tags": [
+        "search",
+        "hybrid-search",
+        "semantic-search",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Elasticsearch]]",
+        "[[Typesense]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/OpenSearch.md",
+      "nom": "OpenSearch",
+      "alias": [
+        "opensearch",
+        "aws opensearch"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Moteur de recherche et d'analytique distribué (Apache-2.0) — fork d'Elasticsearch 7.10.2 : full-text, k-NN et recherche hybride, visualisé dans OpenSearch Dashboards.",
+      "tags": [
+        "search",
+        "distributed",
+        "hybrid-search",
+        "semantic-search"
+      ],
+      "alternatives": [
+        "[[Elasticsearch]]",
+        "[[Apache Solr]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Recherche/Recherche sémantique.md",
+      "nom": "Recherche sémantique",
+      "alias": [
+        "semantic search",
+        "recherche par le sens",
+        "recherche dense"
+      ],
+      "role": "notion",
+      "categorie": "database/recherche",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "search",
+        "semantic-search",
+        "embeddings"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Recherche/Recherche vectorielle approximative.md",
+      "nom": "Recherche vectorielle approximative",
+      "alias": [
+        "approximate kNN",
+        "kNN approximatif",
+        "recherche kNN approximative",
+        "recherche des plus proches voisins approximative"
+      ],
+      "role": "notion",
+      "categorie": "database/recherche",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "search",
+        "ann",
+        "semantic-search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/Recherche/Recherche.md",
       "nom": "Recherche",
       "alias": null,
@@ -4160,6 +4378,31 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Bases de données/Recherche/Typesense.md",
+      "nom": "Typesense",
+      "alias": [
+        "typesense"
+      ],
+      "role": "brique",
+      "categorie": "database/recherche",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Moteur de recherche tolérant aux fautes de frappe (GPL-3.0, C++) — index en mémoire pour du search-as-you-type sous 50 ms, avec recherche vectorielle HNSW et hybride ; alternative ouverte à Algolia.",
+      "tags": [
+        "search",
+        "hybrid-search",
+        "ann",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Elasticsearch]]",
+        "[[Meilisearch]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Bases de données/Recherche/Vespa.md",
@@ -5328,6 +5571,32 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Beats.md",
+      "nom": "Beats",
+      "alias": [
+        "beats",
+        "elastic beats",
+        "filebeat",
+        "metricbeat"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash.",
+      "tags": [
+        "logging",
+        "data-pipeline"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Elasticsearch]]",
+        "[[Logstash]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Change Data Capture (CDC).md",
       "nom": "Change Data Capture (CDC)",
       "alias": [
@@ -5704,6 +5973,30 @@
       ],
       "alternatives": [],
       "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Logstash.md",
+      "nom": "Logstash",
+      "alias": [
+        "logstash",
+        "elastic logstash"
+      ],
+      "role": "brique",
+      "categorie": "data/ingestion",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire.",
+      "tags": [
+        "logging",
+        "data-pipeline"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Elasticsearch]]",
+        "[[Beats]]"
+      ],
       "maturite": "production"
     },
     {
@@ -20872,9 +21165,37 @@
         "dashboard",
         "dataviz"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Kibana]]"
+      ],
       "complements": [
         "[[Loki]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Observabilité/Kibana.md",
+      "nom": "Kibana",
+      "alias": [
+        "kibana",
+        "elastic kibana"
+      ],
+      "role": "brique",
+      "categorie": "observability/supervision",
+      "famille": "application",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui.",
+      "tags": [
+        "observability",
+        "logging",
+        "dashboard"
+      ],
+      "alternatives": [
+        "[[Grafana]]"
+      ],
+      "complements": [
+        "[[Elasticsearch]]"
       ],
       "maturite": "production"
     },
