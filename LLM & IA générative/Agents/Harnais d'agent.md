@@ -34,6 +34,7 @@ Le modèle **propose**, le harnais **dispose**. Un modèle ne lit pas un fichier
 - **Reprise sur erreur** — retenter, reformuler, dégrader proprement plutôt que planter.
 - **Bornage** — plafond d'itérations, budget de tokens, délai (cf. [[agent-loops]]).
 - **Isolation** — exécuter le code produit sans exposer l'hôte (cf. [[Sandboxing de code généré]]).
+- **Délégation** — lancer des sous-agents à contexte isolé, dont seul le résultat remonte (cf. [[Sous-agents et isolation du contexte]]).
 
 ### Même modèle, harnais différent, résultat différent
 
@@ -64,11 +65,13 @@ Ce qui relevait du harnais migre progressivement dans le modèle : la planificat
 - [[Agent patterns]] — les façons d'organiser le harnais (ReAct, plan-execute, réflexion).
 - [[Tool use patterns]] / [[tool-use]] — l'interface par laquelle le modèle agit.
 - [[Context engineering]] — la part du harnais qui décide du contenu de la fenêtre.
+- [[Architecture deep agent]] — un harnais particulièrement fourni : fichiers, sous-agents, résumé du contexte.
 - [[Agent skills]] — des procédures chargées par le harnais à la demande.
 - [[Agent evaluation]] — mesurer le couple, et savoir à qui imputer l'échec.
 - [[mcp-protocol]] — standardise la fourniture d'outils au harnais.
 - Alternative : **appeler le modèle directement**, sans échafaudage — suffisant pour une tâche en un coup, incapable de la moindre action.
 - Harnais fichés : [[pi]] (boucle, TUI et API LLM unifiée), [[Maka]] (journal append-only de chaque décision), [[t3code]] (plan de contrôle au-dessus de plusieurs harnais).
+- Harnais livrés en bibliothèque : [[Deep Agents]] (agnostique du modèle) et [[Claude Agent SDK]] (Claude uniquement).
 
 ## Pour aller plus loin
 
