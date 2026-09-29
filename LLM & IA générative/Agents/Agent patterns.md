@@ -57,6 +57,7 @@ tags: [agents, llm, tool-use]
 - [[Human-in-the-loop]] — patron de contrôle : un humain valide les actions à fort enjeu avant exécution.
 - [[RAG]] / [[Advanced RAG]] — l'**agentic RAG** est un patron où l'agent décide quand et quoi récupérer.
 - Alternative la plus simple : un **workflow déterministe** (chaîne fixe d'appels LLM) — préférable quand les étapes sont connues d'avance ; l'agent ne se justifie que si le chemin dépend des observations.
+- [[RAG agentique]] — le patron « agentic RAG » développé : boucles de récupération, évaluation, pièges
 
 ## Pour aller plus loin
 

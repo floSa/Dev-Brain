@@ -52,6 +52,7 @@ tags: [decoding, llm, nlp]
 - [[Server-Sent Events & streaming LLM]] — le décodage token par token **alimente** le flux streamé au client.
 - [[Speculative decoding]] — accélère la génération sans changer la distribution cible.
 - [[Multi-Token Prediction]] — têtes auxiliaires qui prédisent plusieurs positions d'avance ; change le rythme de validation, pas le choix du token.
+- [[Hallucinations des LLM]] — le décodage comme cause et comme levier d'hallucination
 
 ## Pour aller plus loin
 
