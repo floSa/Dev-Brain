@@ -156,6 +156,11 @@ ne l'est pas : proposer, et attendre.
 - **Liens nus, toujours** : `[[Qdrant]]`, jamais `[[Bases de données/Vectoriel/Qdrant|Qdrant]]`. Le pipe ne sert qu'à changer le texte affiché (`[[Qdrant|la base vectorielle]]`), jamais à porter un chemin — un chemin casse au premier `git mv`, et le lot 3 en a fait 682 sans toucher un lien. Contrepartie : **le nom de fichier d'une page nouvelle doit être unique dans le vault**, à la casse près (le système de fichiers de floSa est insensible à la casse). Vérifier avant de créer, y compris pour un hub à créer.
 - **Catégorie ou tag manquant → demander**, jamais inventer. L'ajout se fait d'abord dans `Documentation/general/`.
 - **Faits vérifiés sur le web, d'office (sans demander la permission)** : avant d'écrire une fiche, vérifier en ligne (WebSearch / WebFetch) les champs factuels — `licence_type`, `langage`, `maturite`, `hosted`, `scaling`, `url_docs` / `url_repo`, statut actuel (actif / déprécié / racheté). Ne jamais demander l'autorisation de vérifier : le faire directement. Info introuvable ou ambiguë → laisser le champ vide, ne pas inventer.
+- **Le corps d'une page ne s'écrit pas de mémoire — brique comme notion (d'office, sans demander)** : le modèle qui écrit peut avoir une connaissance périmée, et une page qui la recopie est fausse le jour où elle est écrite. Avant de rédiger le **contenu** (définition, fonctionnement, fonctionnalités, versions, limites, état de l'art), le chercher en ligne et écrire **depuis ce qu'on a lu**, pas depuis ce qu'on croit savoir :
+  - **Brique** : la doc officielle et le dépôt (README, releases, changelog) pour ce que l'outil fait *aujourd'hui* ; les faits qui datent (version, fonctionnalités récentes, dépréciation) portent leur source.
+  - **Notion** : des **sources primaires**, pas les premiers résultats d'un moteur — articles de recherche (arXiv, ACL, NeurIPS, ICLR…), documentation officielle, billets techniques des équipes qui ont construit la méthode ; pour un domaine actif, aussi les travaux des ~12 derniers mois et les **critiques ou limites connues**, pas seulement la version canonique. Chaque papier retenu est ouvert et vérifié (titre, auteurs, année, résultat annoncé) avant d'être cité, avec son lien.
+  - **Désaccord** entre deux sources : l'écrire tel quel, ne pas trancher. **Rien de trouvé** : ne pas l'écrire, et le dire à floSa en fin de capture.
+  - **Confronter à l'existant** : si une notion ou une brique voisine du vault dit autre chose que la source, ne pas la réécrire (une notion se propose, cf. plus bas) — le signaler.
 
 ---
 
@@ -506,6 +511,7 @@ attendre. Une notion neuve, en revanche, se crée normalement (ligne P4).
 - **Deviner le dossier au lieu de le dériver.** `categorie:` → `arbo.py` → chemin. Un fichier posé à vue fait échouer `check_arbo.py`, et il le fait après coup.
 - **Sauter le contrôle de l'étape 8.** Confronter `git status` au `ls` du dossier est ce qui transforme une intention en fait vérifié.
 - Créer la page demandée mais oublier la notion (P4) ou la réciprocité des alternatives (P5).
+- **Rédiger le corps d'une page de mémoire**, sans recherche en ligne : le modèle peut être périmé, et une notion écrite de mémoire n'a ni source ni état de l'art.
 - Inventer une catégorie, un tag, une famille ou un score (le score n'existe plus).
 - Recopier un pitch divergent au lieu de réinjecter le `pitch:` de la cible.
 - **Modifier un champ d'une page existante sans dérouler la table des effets de bord** : c'est l'origine mesurée des pitchs périmés du vault (constat C1 de l'audit axe 2).
