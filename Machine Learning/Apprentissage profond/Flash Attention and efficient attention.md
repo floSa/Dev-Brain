@@ -55,6 +55,7 @@ tags: [attention, inference-optimization, gpu, transformers]
 - [[Attention linéaire]] — rupture plus radicale : abandonner le softmax et le cache pour un état de taille fixe.
 - [[Architectures hybrides LLM]] — combine les deux mondes ; les couches d'attention globale y restent servies par ces noyaux.
 - [[Speculative decoding]] — autre levier d'accélération, orthogonal (plusieurs tokens par passe).
+- [[Contexte long]] — le coût de la longueur de contexte et ce que la longueur annoncée vaut à l'usage
 
 ## Pour aller plus loin
 
