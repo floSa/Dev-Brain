@@ -68,6 +68,7 @@ tags: [llm, local-llm, self-hosted]
 - [[vLLM]] · [[Ollama]] — les runtimes qui servent les poids, donc l'endroit où « héberger » devient un service.
 - [[HuggingFace]] — d'où viennent les poids ; certains dépôts sont à accès sur demande.
 - [[LLM benchmarks]] — le critère qui n'est pas ici : la licence se lit avant les classements.
+- [[Fusion de modèles]] — un modèle fusionné hérite des licences de ses parents
 
 ## Pour aller plus loin
 

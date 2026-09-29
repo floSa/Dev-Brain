@@ -72,6 +72,7 @@ tags: [mixture-of-experts, transformers, deep-learning, scaling-laws]
 - [[Quantization]] — réduit la mémoire que le MoE ne réduit pas ; les deux se combinent systématiquement.
 - [[PEFT]] — autre façon de découpler capacité et coût, mais côté **adaptation** (adapters, LoRA) plutôt qu'architecture.
 - [[Entraînement distribué]] — l'expert parallelism est un mode de parallélisme à part entière, propre au MoE.
+- [[Fusion de modèles]] — construire un MoE à partir de modèles denses (upcycling, Branch-Train-MiX, mergekit-moe)
 
 ## Pour aller plus loin
 
