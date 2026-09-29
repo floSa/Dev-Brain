@@ -84,3 +84,5 @@ Les modèles de langage ouverts de Google DeepMind. La génération lue le 2026-
 - [[Small Language Models]] — E2B, E4B et le 12 B
 - [[Vision Language Models]] — l'image en entrée pour toutes les tailles
 - [[Reasoning models]] — le mode pensée configurable
+- [[Contexte long]] — le coût du cache KV et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats quantifiés, matériel et pièges pour servir ce modèle

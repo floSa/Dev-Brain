@@ -85,3 +85,5 @@ Famille de modèles de langage de l'équipe Qwen d'Alibaba, publiée en poids ou
 - [[Reasoning models]] — ce que le mode pensée dépense à l'inférence
 - [[Vision Language Models]] — le 27 B branche un encodeur visuel sur un LLM
 - [[Small Language Models]] — les petites tailles de Qwen3.5
+- [[Contexte long]] — le coût du cache KV et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats quantifiés, matériel et pièges pour servir ce modèle

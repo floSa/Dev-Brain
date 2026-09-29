@@ -81,3 +81,5 @@ Les modèles de Mistral AI dont les poids sont téléchargeables sur Hugging Fac
 - [[Comparatif - Modèles de langage open weights]] — ce qui départage les familles du dossier
 - [[Reasoning models]] — `reasoning_effort` et les variantes Reasoning
 - [[Small Language Models]] — Ministral 3, de 3 à 14 B
+- [[Contexte long]] — le coût du cache KV et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats quantifiés, matériel et pièges pour servir ce modèle
