@@ -108,6 +108,7 @@ tags: [parallel, web-framework]
 - **Trio** et **AnyIO** (sans fiche) — la concurrence structurée « de niveau » : AnyIO sert de socle à Starlette, donc à FastAPI.
 - **`threading`, `concurrent.futures`, `multiprocessing`** — le modèle préemptif, non traité en détail ici.
 - Voir aussi : [[Typage statique en Python]], [[Métriques, logs et traces]].
+- [[API REST, GraphQL et gRPC]] — les styles d'API des services ASGI ; [[Journalisation structurée et traçabilité]] — le contexte des logs à travers les tâches (contextvars).
 
 ## Pour aller plus loin
 

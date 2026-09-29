@@ -112,6 +112,7 @@ Cette section est du raisonnement de rédaction, pas une source lue.
 - [[Programmation asynchrone en Python]] — le modèle d'exécution des services ASGI qui exposent ces API.
 - Voir aussi : [[Architecture pilotée par les événements]], [[Reverse proxy et TLS]], [[OAuth2 et OpenID Connect]].
 - Non traités : SOAP, JSON-RPC, WebSocket, tRPC.
+- [[Journalisation structurée et traçabilité]] — journaliser une requête sans fuiter de données ni d'exception.
 
 ## Pour aller plus loin
 
