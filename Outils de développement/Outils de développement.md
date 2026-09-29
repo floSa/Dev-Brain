@@ -27,6 +27,7 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 - Une CLI → [[Typer]] ; l'affichage soigné dans le terminal → [[Rich]] (les deux se combinent).
 - Tester une API à la main : [[Bruno]] si les collections doivent vivre dans le dépôt git ; [[Postman]] si l'équipe et la collaboration cloud priment.
 - Notebooks → voir [[Notebooks]].
+- Rendre une installation reproductible, y compris sans accès à PyPI (verrou, miroir interne, image Docker) → [[Packaging Python et environnements reproductibles]].
 
 <!-- AUTO:START -->
 ### Sous-domaines

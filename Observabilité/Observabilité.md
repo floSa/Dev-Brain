@@ -32,6 +32,7 @@ tags: [observability, logging, metrics, dashboard, self-hosted]
 - Des tableaux de bord et des alertes sur des sources existantes → [[Grafana]].
 - Centraliser les logs de plusieurs services sans payer un index plein texte → [[Loki]], lu depuis [[Grafana]].
 - Explorer et visualiser des logs déjà indexés dans [[Elasticsearch]] → [[Kibana]] ; il ne lit que cette source, là où [[Grafana]] en branche plus de 150.
+- Écrire des logs exploitables avant de les stocker (événements structurés, identifiant de corrélation, lien avec les traces, ce qu'il ne faut pas y mettre) → [[Journalisation structurée et traçabilité]].
 
 <!-- AUTO:START -->
 ### Notions
