@@ -94,9 +94,8 @@ Aucune n'a la maturité ni l'écosystème de Celery ; **RQ** est la seule qui p�
 
 ## Ressources
 
-- Documentation — https://docs.celeryq.dev/en/stable/
+- Documentation — https://docs.celeryq.dev/en/stable/ ; brokers et backends : https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/index.html
 - Dépôt — https://github.com/celery/celery
-- Documentation — https://docs.celeryq.dev/en/stable/getting-started/backends-and-brokers/index.html (brokers et backends)
 
 ## Voir aussi
 
