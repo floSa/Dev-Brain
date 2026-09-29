@@ -77,3 +77,4 @@ entre services à partir des traces. Une trace n'a pas de « fin » : interroger
 
 - [[Observabilité]] — le hub du domaine
 - [[Métriques, logs et traces]] — la notion : ce que la trace apporte que la métrique et le log ne disent pas
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser
