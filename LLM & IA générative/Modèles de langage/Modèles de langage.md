@@ -32,6 +32,8 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning, ll
 - Livrer un modèle à poids ouverts chez un client, ou savoir ce que sa licence permet → [[Licences de modèles open weights]], puis [[Comparatif - Modèles de langage open weights]].
 - Une famille précise, sa licence lue à la source et sa VRAM → [[Qwen]] · [[Mistral]] · [[Gemma]] · [[gpt-oss]].
 - Faire tourner concrètement l'un de ces modèles → [[Runtimes]] ; l'ajuster → [[Fine-tuning]].
+- Une réponse plausible mais fausse, et savoir si la cause est le modèle, le contexte ou l'évaluation → [[Hallucinations des LLM]].
+- Une fenêtre annoncée à plusieurs centaines de milliers de jetons : ce qu'elle coûte en mémoire et ce qu'elle vaut à l'usage → [[Contexte long]].
 
 <!-- AUTO:START -->
 ### Notions
