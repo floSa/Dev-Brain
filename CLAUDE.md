@@ -207,7 +207,7 @@ Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role:
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
-Comparatifs/                 ← Comparatifs.md (hub) et RIEN d'autre : les 47 pages
+Comparatifs/                 ← Comparatifs.md (hub) et RIEN d'autre : les 72 pages
                                `role: comparatif` restent dans le dossier des briques
                                qu'elles départagent. Ce hub les réunit, il ne les range
                                pas — zone AUTO générée depuis `role:`, lien retour dans
