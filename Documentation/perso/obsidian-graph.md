@@ -121,8 +121,10 @@ porte un de ces deux rôles est normal ; un nœud gris qui n'en porte aucun est 
 
 **Contrôle** (mesuré le 2026-10-02 sur les 1011 pages de contenu) : aucune page `brique`, `notion`,
 `hub`, `comparatif`, `pattern` ou `rule` n'est sans lien entrant, sans lien sortant ou isolée, hors les
-cinq gabarits de `Templates/`. `graph.json` étant ignoré par git, le filtre se repose à la main sur
-un autre poste ; Obsidian doit être fermé ou le graphe rouvert pour qu'il soit lu.
+cinq gabarits de `Templates/`. `.obsidian/graph.json` est **versionné** depuis le 2026-10-02 (il était ignoré par git, et un `git pull`
+ne rapportait donc ni les couleurs ni le filtre sur un autre poste). Après un `git pull`, fermer puis rouvrir
+le graphe pour qu'Obsidian relise le fichier. Les clés `scale` et `close` changent à chaque ouverture du graphe :
+un `git status` qui montre ce seul fichier modifié n'est pas une régression.
 
 ## 2. Hiérarchie de navigation (MOC)
 

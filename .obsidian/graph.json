@@ -1,0 +1,72 @@
+{
+  "collapse-filter": true,
+  "search": "-path:AI/ -path:Documentation/ -path:Templates/ -path:Projects/ -path:docs/ -path:.claude/ -path:.base -file:CHANGELOG -file:INSTALL -file:README -file:CONTRIBUTING -file:CLAUDE -file:Inbox",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Comparatifs/",
+      "color": {
+        "a": 1,
+        "rgb": 15680580
+      }
+    },
+    {
+      "query": "path:Métiers/",
+      "color": {
+        "a": 1,
+        "rgb": 16766011
+      }
+    },
+    {
+      "query": "[\"role\":\"hub\"]",
+      "color": {
+        "a": 1,
+        "rgb": 16749099
+      }
+    },
+    {
+      "query": "[\"role\":\"brique\"]",
+      "color": {
+        "a": 1,
+        "rgb": 4271325
+      }
+    },
+    {
+      "query": "[\"role\":\"notion\"]",
+      "color": {
+        "a": 1,
+        "rgb": 8042496
+      }
+    },
+    {
+      "query": "[\"role\":\"comparatif\"]",
+      "color": {
+        "a": 1,
+        "rgb": 15680580
+      }
+    },
+    {
+      "query": "[\"role\":\"pattern\"] OR [\"role\":\"rule\"]",
+      "color": {
+        "a": 1,
+        "rgb": 9741240
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.5,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.14577765249366997,
+  "close": false
+}
