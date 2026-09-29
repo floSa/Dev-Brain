@@ -35,7 +35,7 @@ Si aucune ne répond, les ponts **s'arrêtent en 2** et disent les trois pistes.
 Ils ne devinent pas : un kit deviné est un verdict rendu par un code qu'on n'a
 pas choisi.
 
-## Les sept ponts
+## Les huit ponts
 
 | Fichier | Ce qu'il appelle | Ce qu'il contrôle ou produit |
 |---|---|---|
@@ -45,6 +45,7 @@ pas choisi.
 | [`build_mocs.py`](build_mocs.py) | `brainkit generer --quoi hubs` | les zones `<!-- AUTO -->` des 74 hubs, `Métiers/`, `Comparatifs.md` |
 | [`build_links.py`](build_links.py) | `brainkit generer --quoi liens` | `AI/index/liens.md`, dont la section « à créer » |
 | [`build_bandeau.py`](build_bandeau.py) | `brainkit generer --quoi bandeau` | les zones `<!-- AUTO:BANDEAU -->` des 337 briques |
+| [`build_carte.py`](build_carte.py) | `brainkit generer --quoi carte` | `AI/index/carte.md` (L0, moins de 100 lignes) et `AI/index/carte/<Dossier>.md` (L1, 8 000 jetons au plus, une ligne par page) — la vue d'ensemble d'un domaine sans lire l'index |
 | [`sonder_amont.py`](sonder_amont.py) | `brainkit sonder` | `AI/index/fraicheur.json` : dernière version publiée, dernier commit, dépôt archivé. **N'écrit dans aucune page** |
 
 Plus une **bibliothèque**, [`arbo.py`](arbo.py) : la dérivation
@@ -81,9 +82,11 @@ uv run AI/scripts/build_index.py
 uv run AI/scripts/build_mocs.py
 uv run AI/scripts/build_bandeau.py
 uv run AI/scripts/build_links.py
+uv run AI/scripts/build_carte.py
 uv run AI/scripts/check_brain.py            # doit finir par « OK — aucune violation dure. »
 uv run AI/scripts/check_arbo.py
 uv run AI/scripts/build_bandeau.py --check  # doit sortir en 0
+uv run AI/scripts/build_carte.py --check    # doit sortir en 0
 ```
 
 Le kit s'utilise aussi directement, depuis la racine du vault — il y trouve
