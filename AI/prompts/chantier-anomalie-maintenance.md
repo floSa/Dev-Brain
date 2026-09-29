@@ -7,7 +7,7 @@ tags: [meta, backlog]
 
 # Chantier — détection d'anomalies et maintenance prédictive
 
-Plan unique du chantier. Chaque conversation lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, six lots numérotés de 1 à 6. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -33,7 +33,7 @@ on-prem industriel, ESN.
 6. **Frugalité.** Commence par `AI/index/carte.md`, puis le fichier `AI/index/carte/<Domaine>.md` voulu. Interdit : charger en entier `brain-index.json`, `brain-index.md`, `liens.md`. Utilise `AI/scripts/query_index.py` pour tester l'existence d'un nom.
 7. **Vérifier l'amont de chaque brique** avant d'écrire : licence, dernière version, dernier push, dépôt archivé, URL de doc. Ne devine jamais une licence, une maturité ou une date. Un fait non vérifié se demande ou s'omet.
 8. **Nom unique** dans tout le vault, à la casse près, avant de créer une page.
-9. **Pages `role: notion` existantes** : ne les modifie pas. Propose le changement dans ta synthèse. Exception : le lot 0 (voir plus bas).
+9. **Pages `role: notion` existantes** : ne les modifie pas. Propose le changement dans ta synthèse. Exception : le lot 1 (voir plus bas).
 10. **Chaque lot ajoute les liens dans les deux sens**, vers les pages existantes citées plus haut, par la procédure de `enrichir-brain`.
 11. **Si ça sort de ton périmètre**, ou si un domaine tombe en D14 (arbre de `taxonomie.md`) : demande, n'invente pas.
 12. **Contexte.** Vise 250 000 jetons au plus. Si tu approches, arrête-toi sur un commit propre et liste dans la synthèse les pages restantes.
@@ -44,10 +44,10 @@ on-prem industriel, ESN.
 
 | Vague | Conversations | Dépend de |
 |---|---|---|
-| 1 | C0 | — |
-| 2 | C1, C2, C3 (en parallèle) | C0 clos et poussé |
-| 3 | C4 | C3 |
-| 4 | C5 | C1, C2, C3, C4 |
+| 1 | Lot 1 | — |
+| 2 | Lots 2, 3, 4 (en parallèle) | Lot 1 clos et poussé |
+| 3 | Lot 5 | Lot 4 |
+| 4 | Lot 6 | Lots 2, 3, 4, 5 |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -62,7 +62,7 @@ on-prem industriel, ESN.
 - scikit-survival : licence **GPL-3.0**. À signaler dans la fiche (usage ESN).
 - Introuvables à l'adresse supposée : ADTK, ceruleo. Cherche la bonne adresse, sinon omets.
 
-## C0 — Ouverture et socle (vague 1)
+## Lot 1 — Ouverture et socle (vague 1)
 
 **Accord explicite de floSa** : tu peux changer la ligne `categorie:` des 7 notions listées ci-dessous, par `git mv` + édition de cette seule ligne. Aucune autre ligne de ces notions ne change.
 
@@ -78,7 +78,7 @@ on-prem industriel, ESN.
    - **Détection hors distribution (OOD)** (notion) : confiance softmax, énergie, Mahalanobis, kNN sur embeddings ; frontière avec Data drift.
    - **Jeux de données d'anomalies** (brique, `famille: annuaire`) : MVTec AD, MVTec AD 2, VisA, Real-IAD, NAB, SMD, SMAP/MSL, SWaT, TSB-AD, ADBench, ODDS. Licence de chaque jeu à vérifier (usage commercial ?).
 
-## C1 — Anomalie visuelle (vague 2)
+## Lot 2 — Anomalie visuelle (vague 2)
 
 Neuf pages, `ml/anomalie`.
 
@@ -90,7 +90,7 @@ Neuf pages, `ml/anomalie`.
 - **Comparatif - Détection d'anomalies visuelles** (`.md` + `.base`) : ce qui départage les quatre.
 - Citer : Vision par ordinateur, Segmentation, Transfer learning vision, Modèles de fondation vision, Autoencodeurs, Métriques vision.
 
-## C2 — Séries temporelles : méthodes et outils (vague 2)
+## Lot 3 — Séries temporelles : méthodes et outils (vague 2)
 
 Quinze pages, `ml/anomalie`.
 
@@ -103,7 +103,7 @@ Quinze pages, `ml/anomalie`.
 - **Comparatif - Détection d'anomalies en séries temporelles** (`.md` + `.base`).
 - Citer : STUMPY, darts, River, Time series anomaly detection (sans la modifier), Forecasting metrics.
 
-## C3 — Maintenance prédictive : concepts (vague 2)
+## Lot 4 — Maintenance prédictive : concepts (vague 2)
 
 Dix pages, `ml/maintenance` (sauf l'analyse vibratoire).
 
@@ -119,16 +119,16 @@ Dix pages, `ml/maintenance` (sauf l'analyse vibratoire).
 - **Jeux de données PHM** (brique, `famille: annuaire`) : C-MAPSS, PRONOSTIA/FEMTO, CWRU, IMS, XJTU-SY, batteries NASA, Paderborn, MIMII. Licences à vérifier.
 - Ne modifie pas « Maintenance prédictive et RUL » : propose ses ajouts dans ta synthèse.
 
-## C4 — Maintenance prédictive : outils et offres (vague 3)
+## Lot 5 — Maintenance prédictive : outils et offres (vague 3)
 
 Une dizaine de pages, `ml/maintenance` ou domaine dérivé (lifelines est en `stats/inference` : applique le même arbre et justifie).
 
 - Briques libres : **scikit-survival** (GPL-3.0), **tsfresh**, **sktime**.
 - Offres : **Siemens Insights Hub** (ex-MindSphere), **Cognite Data Fusion**, **Seeq**, **AVEVA PI System** (historien, pas un outil ML), **AWS Lookout for Equipment** (fermeture le 2026-10-07), **AWS Monitron** (statut à vérifier). Faits publics seulement, aucun argumentaire commercial. Dis pour chacune si elle s'auto-héberge (axe on-prem).
 - **Comparatif - Offres de maintenance prédictive** (`.md` + `.base`) : sur l'auto-hébergement, la licence, l'ouverture des données.
-- Cite les notions de C3.
+- Cite les notions du lot 4.
 
-## C5 — Patterns, rules et bord d'usine (vague 4)
+## Lot 6 — Patterns, rules et bord d'usine (vague 4)
 
 Six pages.
 
@@ -142,9 +142,9 @@ Six pages.
 
 ## Suivi
 
-- [ ] C0 — ouverture et socle
-- [ ] C1 — anomalie visuelle
-- [ ] C2 — séries temporelles
-- [ ] C3 — maintenance, concepts
-- [ ] C4 — maintenance, outils et offres
-- [ ] C5 — patterns, rules, bord d'usine
+- [ ] Lot 1 — ouverture et socle
+- [ ] Lot 2 — anomalie visuelle
+- [ ] Lot 3 — séries temporelles
+- [ ] Lot 4 — maintenance, concepts
+- [ ] Lot 5 — maintenance, outils et offres
+- [ ] Lot 6 — patterns, rules, bord d'usine
