@@ -60,7 +60,8 @@ LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 # Les rôles qu'un dossier de domaine ne range pas, mais qui ont un dossier à la racine.
 HORS_DOMAINE = {"Métiers", "Patterns", "Rules", "Comparatifs"}
-GENERATEURS = ["build_index.py", "build_mocs.py", "build_links.py", "build_bandeau.py"]
+GENERATEURS = ["build_index.py", "build_mocs.py", "build_links.py", "build_bandeau.py",
+               "build_carte.py"]
 
 
 def nfc(s: str) -> str:
