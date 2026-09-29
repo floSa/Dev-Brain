@@ -2581,6 +2581,8 @@ genere:
     - { chemin: "Métiers/", par: build_mocs }
     - { chemin: "Comparatifs/Comparatifs.md", par: build_mocs }
     - { chemin: "AI/index/liens.md", par: build_links }
+    - { chemin: "AI/index/carte.md", par: build_carte }
+    - { chemin: "AI/index/carte/", par: build_carte }
     - { chemin: "bandeaux des 337 briques", par: build_bandeau, balises: ["<!-- AUTO:BANDEAU:START -->", "<!-- AUTO:BANDEAU:END -->"] }
     - { chemin: "Documentation/general/taxonomie.md", par: kit, depuis: axes }
     - { chemin: "Templates/", par: kit, depuis: "roles[].champs et roles[].corps" }
@@ -2651,6 +2653,30 @@ genere:
     motif_a_creer: "Les liens NON RESOLUS sont un mecanisme de backlog qui vaut pour tout sujet."
     masque_du_graphe: true
     signature: "AI/scripts/build_links.py"     # AJOUTE AU LOT 4, cf. index.signature
+  # --- AJOUTE LE 2026-10-02 --------------------------------------------------
+  # La carte de lecture : cinquieme artefact, facultatif dans le kit, declare ici.
+  carte:
+    fichier: "AI/index/carte.md"
+    dossier: "AI/index/carte"
+    signature: "AI/scripts/build_carte.py"
+    seuil_jetons: 8000
+    caracteres_par_jeton: 3.5
+    description_max: 160
+    lignes_max: 100
+    descriptions:
+      brique: { champ: pitch }
+      notion: { section: "Aperçu", forme: premiere_puce }
+      comparatif: { ligne: "On tranche sur" }
+      pattern: { section: "Contexte", forme: premier_paragraphe }
+      rule: { section: "Principe", forme: premier_paragraphe }
+    motif: >
+      Prendre la vue d ensemble d un domaine coutait 28 000 jetons de hubs ou
+      40 000 d index, sans une ligne sur les notions. La carte la rend en
+      ~2 200 jetons (L0) plus un fichier L1 de 8 000 jetons au plus. La
+      description d une ligne est EXTRAITE de la page (pitch, premiere puce
+      d Apercu, ligne On tranche sur, Contexte, Principe) et jamais stockee :
+      un champ derivable ne se stocke pas. Un dossier au-dela du seuil est
+      coupe par sous-dossier, en remplissage glouton.
 
   # --- AJOUTE AU LOT 4 -------------------------------------------------------
   # Les gabarits de phrase des documents generes. Le kit en porte un jeu par
