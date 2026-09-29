@@ -78,3 +78,4 @@ ligne. Sous le capot, l'écosystème Hugging Face et TRL, avec des accélératio
 - [[RLHF and DPO]] · [[Quantization]] — les méthodes couvertes par sa config
 - [[Entraînement distribué]] — DeepSpeed, pour le multi-GPU
 - [[HuggingFace]] · [[DeepSpeed]] — les briques sous-jacentes
+- [[Fusion de modèles]] — fusionner un adaptateur dans le modèle de base, ou combiner plusieurs modèles ajustés

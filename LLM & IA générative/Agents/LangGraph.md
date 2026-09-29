@@ -83,3 +83,4 @@ NetworkX, elle se situe **au-dessus de** LangChain dans le stack — LangChain f
 - [[Sous-agents et isolation du contexte]] — un graphe compilé peut servir de sous-agent
 - [[Tool use patterns]] — patrons d'appel d'outils
 - [[Agent memory]] — mémoire persistante d'agent
+- [[RAG agentique]] — la boucle récupérer, évaluer, relancer comme graphe cyclique, et ses pièges

@@ -77,3 +77,4 @@ utilisable sur une stack hétérogène. Elle sait rejouer sur ses traces des év
 - [[LLM observability]] — la notion du dossier
 - [[LLM-as-judge]] — le mécanisme de ses évals en ligne
 - [[Comparatif - Observabilité LLM]] — ce qui départage les plateformes du dossier
+- [[RAG agentique]] — tracer chaque étape d'une trajectoire de recherche pour comprendre un échec

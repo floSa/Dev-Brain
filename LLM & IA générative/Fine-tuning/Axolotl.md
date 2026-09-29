@@ -73,3 +73,4 @@ fichier versionnable, donc rejouable à l'identique.
 - [[RLHF and DPO]] — les méthodes de préférence pilotées par la config
 - [[Entraînement distribué]] — DeepSpeed et FSDP, exposés à la config
 - [[HuggingFace]] · [[DeepSpeed]] — les briques sous-jacentes
+- [[Fusion de modèles]] — fusionner un adaptateur dans le modèle de base, ou combiner plusieurs modèles ajustés
