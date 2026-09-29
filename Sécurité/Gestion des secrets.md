@@ -63,6 +63,7 @@ tags: [secrets-management, cryptography, self-hosted]
 - **Sealed Secrets** (Apache-2.0, v0.40.0 du 2026-09-10) : chiffrement asymétrique pour Kubernetes seulement. Le dépôt est passé de `bitnami-labs` à `bitnami` ; le retrait du catalogue d'images Bitnami annoncé par Broadcom en 2025 ne mentionne pas Sealed Secrets, mais aucune source primaire ne confirme qu'il n'est pas touché.
 - **Configuration applicative** ([[python-dotenv]], [[Pydantic Settings]]) : elles *lisent* un secret, elles ne le gardent pas.
 - Voir aussi : [[Gitleaks]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Ansible]], [[OpenTofu]].
+- [[Journalisation structurée et traçabilité]] — ce qu'il ne faut pas laisser fuiter dans un journal.
 
 ## Pour aller plus loin
 

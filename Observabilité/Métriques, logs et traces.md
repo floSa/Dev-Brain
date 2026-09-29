@@ -58,6 +58,7 @@ tags: [observability, metrics, logging, tracing]
 - [[LLM observability]] — la même notion de trace et de span, appliquée aux appels d'un modèle de langage.
 - [[Monitoring de modèle en production]] — la dérive d'un modèle, qui ne se lit pas dans les signaux d'infrastructure.
 - [[Zabbix]] et [[Netdata]] — des outils de supervision d'hôtes qui rassemblent collecte, stockage et tableau de bord, sans séparer les signaux en trois briques.
+- [[Journalisation structurée et traçabilité]] — écrire, contextualiser et relier le log aux traces, ce qu'il ne faut pas y mettre.
 
 ## Pour aller plus loin
 
