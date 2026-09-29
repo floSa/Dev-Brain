@@ -36,6 +36,7 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 
 <!-- AUTO:START -->
 ### Notions
+- [[Fusion de modèles]] — domaines : ai-eng, ml-eng
 - [[GRPO]] — domaines : ml-eng, ai-eng
 - [[LoRA et QLoRA]] — domaines : ml-eng, ai-eng
 - [[PEFT]] — domaines : ml-eng, ai-eng

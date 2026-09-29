@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1006 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1011 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -799,6 +799,7 @@
 - **RAG eval** — domaines : ai-eng · alias : RAG evaluation, évaluation RAG, évaluation des pipelines RAG, faithfulness, groundedness, context precision, context recall, answer relevancy
 
 ### llm/finetuning
+- **Fusion de modèles** — domaines : ai-eng, ml-eng · alias : model merging, merge de modèles, model soups, soupe de modèles, Task Arithmetic, task vectors, TIES-Merging, DARE, SLERP, mergekit, frankenmerge, depth up-scaling, fusion de poids, weight averaging
 - **GRPO** — domaines : ml-eng, ai-eng · alias : Group Relative Policy Optimization, optimisation de politique par groupes, optimisation de politique relative par groupe
 - **LoRA et QLoRA** — domaines : ml-eng, ai-eng · alias : LoRA, Low-Rank Adaptation, QLoRA, quantized LoRA, adapters LoRA, low-rank adapters
 - **PEFT** — domaines : ml-eng, ai-eng · alias : parameter-efficient fine-tuning, fine-tuning paramétriquement efficace, adapters
@@ -812,7 +813,9 @@
 - **Agent memory** — domaines : ai-eng · alias : mémoire d'agent, agent memory, mémoire LLM
 
 ### llm/modele
+- **Contexte long** — domaines : ai-eng, ml-eng · alias : fenêtre de contexte, longueur de contexte, long context, context window, contexte étendu, lost in the middle, needle in a haystack, NIAH, RULER, longueur effective, context rot, extension de contexte, RoPE scaling, YaRN, interpolation de positions
 - **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
+- **Hallucinations des LLM** — domaines : ai-eng · alias : hallucination, hallucinations, confabulation, confabulations, factualité, fidélité au contexte, faithfulness hallucination, factuality hallucination, SelfCheckGPT, FActScore, entropie sémantique
 - **Licences de modèles open weights** — domaines : ai-eng, ml-eng · alias : open weights, poids ouverts, licences de modèles, licence d'un modèle de langage, open-weight licensing, Llama Community License, open washing
 - **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
 - **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
@@ -846,6 +849,7 @@
 - **Late-interaction retrieval** — domaines : ai-eng · alias : colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim
 - **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
+- **RAG agentique** — domaines : ai-eng · alias : agentic RAG, RAG agentique, récupération adaptative, adaptive retrieval, Self-RAG, corrective RAG, recherche agentique, agentic search, active retrieval, FLARE, IRCoT, Search-R1
 - **RAG documentaire on-prem - clé en main ou assemblé** — domaines : ai-eng · alias : RAG documentaire on-prem, RAG on-prem, RAG documentaire on-prem : clé en main ou assemblé, moteur RAG clé en main, RAG clé en main ou assemblé, RAG interne
 - **RAG visuel - retrouver des documents sans OCR** — domaines : ai-eng, data-eng · alias : RAG visuel : retrouver des documents sans OCR, RAG visuel, visual RAG, visual document retrieval, recherche de pages par image
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
@@ -854,6 +858,7 @@
 - **Inference optimization** — domaines : ai-eng, mlops · alias : optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM
 - **Multi-Token Prediction** — domaines : ml-eng, ai-eng · alias : MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding
 - **prompt-caching** — domaines : ai-eng · alias : prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching
+- **Quantification des LLM - GGUF, AWQ, GPTQ** — domaines : ai-eng, mlops, ml-eng · alias : Quantification des LLM : GGUF, AWQ, GPTQ, quantification de modèles de langage, quantification pour le serving, Q4_K_M, imatrix, SmoothQuant, NF4, W4A16, W8A8, quantification du cache KV, LLM.int8, bitsandbytes
 - **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
 - **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
 

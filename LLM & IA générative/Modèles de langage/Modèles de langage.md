@@ -37,7 +37,9 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning, ll
 
 <!-- AUTO:START -->
 ### Notions
+- [[Contexte long]] — domaines : ai-eng, ml-eng
 - [[Decoding strategies]] — domaines : ai-eng
+- [[Hallucinations des LLM]] — domaines : ai-eng
 - [[Licences de modèles open weights]] — domaines : ai-eng, ml-eng
 - [[Perplexity]] — domaines : ai-eng
 - [[Reasoning models]] — domaines : ai-eng

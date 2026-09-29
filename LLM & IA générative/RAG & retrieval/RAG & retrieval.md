@@ -45,6 +45,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - [[Late-interaction retrieval]] — domaines : ai-eng
 - [[Query transformations]] — domaines : ai-eng
 - [[RAG]] — domaines : ai-eng
+- [[RAG agentique]] — domaines : ai-eng
 - [[RAG documentaire on-prem - clé en main ou assemblé]] — domaines : ai-eng
 - [[RAG visuel - retrouver des documents sans OCR]] — domaines : ai-eng, data-eng
 - [[Reranking]] — domaines : ai-eng
