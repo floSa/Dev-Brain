@@ -43,16 +43,14 @@ La frontière de l'outil n'est pas le catalogue, c'est l'âge : sa première ver
 juillet 2025, et la version stable de septembre 2026.
 
 *Constat du 2026-09-30 :* version **1.0.0**, publiée le **2026-09-16** ; environ **34,2 k
-étoiles** GitHub. Chronologie lue dans les releases du dépôt : première alpha le 2025-07-02,
-première bêta le 2026-04-29, première version candidate le 2026-08-08, stable le 2026-09-16.
-Des préversions `1.0.1-preview` ont déjà suivi.
+étoiles** GitHub. Des préversions `1.0.1-preview` ont déjà suivi.
 
 ## Maturité — à lire avant d'adopter
 
 La fiche est classée **bêta**, par prudence, alors que le projet se déclare prêt pour la
 production depuis le 2026-09-16. Les raisons :
 
-- **Deux semaines de version stable.** L'annonce de la 1.0.0 dit que la capacité centrale, l'objet, est stable et utilisable en production. Elle ne donne ni limite connue ni guide de migration depuis la bêta (source : https://rustfs.com/blog/announcing-rustfs-1-0-0-ga/, 2026-09-16). Les sources antérieures à la 1.0 disaient « alpha, ne pas utiliser en production » ; elles sont dépassées, mais elles datent de quelques mois.
+- **Deux semaines de version stable.** Chronologie lue dans les releases du dépôt : première alpha le 2025-07-02, premier jalon bêta le 2026-04-29, première version candidate le 2026-08-08, stable le 2026-09-16. L'annonce de la 1.0.0 dit que la capacité centrale, l'objet, est stable et utilisable en production. Elle ne donne ni limite connue ni guide de migration depuis la bêta (source : https://rustfs.com/blog/announcing-rustfs-1-0-0-ga/, 2026-09-16). Les sources antérieures à la 1.0 disaient « alpha, ne pas utiliser en production » ; elles sont dépassées, mais elles datent de quelques mois.
 - **Avis de sécurité nombreux.** L'API GitHub du dépôt liste **35 avis** publiés entre le 2025-12-30 et le 2026-09-08 (lue le 2026-09-30). Plusieurs sont critiques ou élevés et touchent exactement ce qui compte pour un stockage souverain : création de comptes de service sous root par un import IAM (2026-05-09), secret HMAC par défaut pour les appels entre nœuds (2026-05-09), contournement de l'Object Lock quand les métadonnées d'un bucket sont illisibles (2026-08-09). Le dernier, du 2026-09-08, vise la 1.0.0-beta.12. Le dépôt corrige vite ; la densité de failles d'authentification montre que la surface est encore en cours de durcissement.
 - **Aucune évaluation indépendante postérieure à la version stable** n'a été trouvée.
 
@@ -95,3 +93,5 @@ l'éditeur parti. Ici, le code est jeune et l'éditeur actif.
 ## Voir aussi
 
 - [[Stockage]] — le hub du domaine
+- [[Stockage objet et API S3]] — la notion : ce que l'API S3 fixe, ce qu'elle laisse à chaque implémentation, et comment choisir un backend on-prem
+- [[Comparatif - Stockage objet]] — ce qui départage les briques du dossier

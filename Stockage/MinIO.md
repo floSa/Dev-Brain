@@ -59,8 +59,7 @@ depuis, et aucun correctif de sécurité officiel à attendre.
 ## Forks et suites
 
 - **AIStor** — l'offre de l'éditeur. *Free* n'est pas une option de cluster : mononœud, licence propriétaire. Le multinœud est payant, sur devis.
-- **`pgsty/minio`** — fork communautaire de Pigsty, **AGPL-3.0**, créé le 2025-10-25, environ 3,6 k étoiles, dernière release le 2026-09-16. Il rétablit la console, les binaires, les images et les paquets RPM/DEB. Périmètre annoncé : correctifs de bugs et de CVE, pas de fonction nouvelle. Il est maintenu par une petite structure, non affiliée à MinIO Inc. (source : billet de son mainteneur, partie prenante).
-- **OpenMaxIO** — fork de la console seule, inactif depuis juin 2025 : pas une suite.
+- **`pgsty/minio`** — fork communautaire de Pigsty, **AGPL-3.0**, créé le 2025-10-25, environ 3,6 k étoiles, dernière release le 2026-09-16. Il rétablit la console, les binaires, les images et les paquets RPM/DEB. Périmètre annoncé : correctifs de bugs et de CVE, pas de fonction nouvelle. Il est maintenu par une petite structure, non affiliée à MinIO Inc. (source : billet de son mainteneur, partie prenante). OpenMaxIO, fork de la console seule, est inactif depuis juin 2025 : pas une suite.
 
 ## Prendre si / Écarter si
 
@@ -99,9 +98,10 @@ depuis, et aucun correctif de sécurité officiel à attendre.
 
 - Documentation — https://min.io/docs/minio/linux/index.html
 - Dépôt — https://github.com/minio/minio (archivé)
-- Dépôt — https://github.com/pgsty/minio (fork communautaire)
 - Article — https://www.min.io/blog/introducing-new-subscription-tiers-for-minio-aistor-free-enterprise-lite-and-enterprise
 
 ## Voir aussi
 
 - [[Stockage]] — le hub du domaine
+- [[Stockage objet et API S3]] — la notion : ce que l'API S3 fixe, ce qu'elle laisse à chaque implémentation, et comment choisir un backend on-prem
+- [[Comparatif - Stockage objet]] — ce qui départage les briques du dossier

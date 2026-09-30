@@ -97,3 +97,5 @@ serveur S3 pour la plupart des outils de données modernes.
 ## Voir aussi
 
 - [[Stockage]] — le hub du domaine
+- [[Stockage objet et API S3]] — la notion : ce que l'API S3 fixe, ce qu'elle laisse à chaque implémentation, et comment choisir un backend on-prem
+- [[Comparatif - Stockage objet]] — ce qui départage les briques du dossier
