@@ -24,7 +24,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Automatisation no-code]] — 5 briques
 - [[Médias]] — 4 briques
 - [[Interfaces & apps data]] — 4 briques
-- [[Sécurité]] — 3 briques
+- [[Sécurité]] — 8 briques, 2 sous-domaines
 - [[Observabilité]] — 3 briques
 - [[Réseau]] — 2 briques
 - [[Documents]] — 2 briques
