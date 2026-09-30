@@ -1,7 +1,7 @@
 ---
 nom: tags
 created: 2026-06-04
-modified: 2026-09-02
+modified: 2026-09-30
 tags: [meta, gouvernance, vocabulaire]
 ---
 
@@ -156,6 +156,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `partitioning` | Partitionnement & layout physique des données — clé de partition (répertoires/fichiers), bucketing, partition pruning, taille de fichiers / small files problem (distinct de `pruning`, l'élagage de modèle) |
 | `data-modeling` | Modélisation / organisation logique des données en couches ou schémas (architecture médaillon bronze/silver/gold, schéma en étoile, normalisation) |
 | `data-transformation` | Transformation de données par modèles versionnés (SQL ou Python) : graphe de dépendances, matérialisations, environnements — dbt, SQLMesh ; distinct de `data-pipeline` (le pipeline entier) et de `orchestration` (l'exécution) |
+| `data-ingestion` | Ingestion de données — amener la donnée d'une source (base, API, fichier, journal) vers sa destination : connecteurs, synchronisation full refresh ou incrémentale, capture de changements ; distinct de `data-pipeline` (le pipeline entier) et de `data-transformation` (dériver des tables de tables déjà chargées) |
 | `document-parsing` | Extraction de contenu structuré depuis des documents (PDF, Office, HTML, images) |
 | `pdf` | Traitement de fichiers PDF |
 | `ocr` | Reconnaissance optique de caractères (texte dans images / scans) |

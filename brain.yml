@@ -866,11 +866,17 @@ axes:
         portee: "déplacer et transformer de la donnée pour une machine"
         sous:
           ingestion:
+            libelle: "Ingestion de données"
+            motif: "Promu en dossier le 2026-09-30 : 9 pages (7 briques, 2 notions) franchissent le seuil de 5."
             frontiere: >
-              Connecteurs vers des sources structurees ou des API. Un connecteur
-              qui RAPATRIE des lignes vers un DataFrame est ici — connectorx ;
-              un database/driver transporte du SQL sans construire de table en
-              memoire (D-R6).
+              Amener la donnee d une SOURCE (base, API, fichier, journal) vers sa
+              destination, sans la remodeler : connecteurs et outils d ingestion
+              (Airbyte, dlt, Apache NiFi), capture de changements (Debezium),
+              collecte de logs (Beats, Logstash). Un connecteur qui RAPATRIE des
+              lignes vers un DataFrame est ici — connectorx ; un database/driver
+              transporte du SQL sans construire de table en memoire (D-R6).
+              Distinct de data/transformation (deriver des tables de tables deja
+              chargees) et de data/orchestration (planifier et relancer).
           parsing:
             libelle: "Parsing"
             frontiere: >

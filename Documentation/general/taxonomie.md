@@ -282,6 +282,13 @@ valeurs disparues et ne sont pas reconduites.
 - `database/driver` — pilote / adaptateur bas niveau d'accès à une base (DB-API 2.0, wrapper
   libpq) : psycopg2, ADBC. Distinct de `database/orm` (mapping objet) : le driver transporte le
   SQL, il n'abstrait pas le schéma. Et distinct de `data/ingestion` par D-R6.
+- `data/ingestion` — **promu en dossier le 2026-09-30** (9 pages : 7 briques, 2 notions). Amener la
+  donnée d'une **source** (base, API, fichier, journal) vers sa destination **sans la remodeler** :
+  outils d'ingestion (Airbyte, dlt, Apache NiFi), capture de changements (Debezium), collecte de
+  logs (Beats, Logstash), et le chargement d'un résultat SQL vers un DataFrame (connectorx, D-R6).
+  Distinct de `data/transformation` (dériver des tables de tables déjà chargées), de
+  `data/orchestration` (planifier et relancer) et de `data/streaming` (traiter le flux, pas le
+  produire).
 - `data/scraping` — récupération de données depuis des **pages web** : clients HTTP furtifs
   (empreinte TLS), navigateurs headless, contournement d'anti-bot, parsing HTML. Distinct de
   `data/ingestion` (connecteurs vers des sources structurées ou des API).
