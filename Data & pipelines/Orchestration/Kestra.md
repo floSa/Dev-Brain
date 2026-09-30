@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Airflow]]", "[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Temporal]]"]
-complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]", "[[Kafka]]", "[[NATS]]", "[[RabbitMQ]]"]
 tags: [orchestration, data-pipeline, declarative-config]
 url_docs: https://kestra.io/docs
 url_repo: https://github.com/kestra-io/kestra
@@ -71,6 +71,9 @@ Kestra 1.0 (LTS, septembre 2025) en fait une plateforme d'entreprise.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — Kestra figure dans la liste officielle des intégrations de SQLMesh, avec un plugin dédié ; l'intégration Airflow documentée, elle, exige Tobiko Cloud.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — Kestra publie un plugin Airbyte pour déclencher des synchronisations.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — Kestra publie un plugin dlt.
+- [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — plugin Kafka : tâches Produce et Consume, déclencheurs Trigger et RealtimeTrigger ; Kafka comme backend de Kestra est réservé à l'édition Enterprise.
+- [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF. — plugin NATS : Produce et Consume sur JetStream, Request, key-value, déclencheurs Trigger et RealtimeTrigger.
+- [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — plugin AMQP : Publish, Consume, création de files et d'exchanges, déclencheurs Trigger et RealtimeTrigger.
 
 ## Ressources
 
