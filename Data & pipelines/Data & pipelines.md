@@ -35,6 +35,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - En faire un graphique → [[Visualisation]].
 - Traiter au fil de l'eau plutôt que par lots → [[Flink]], et [[Stream processing]] pour la théorie.
 - Faire circuler des événements ou des tâches entre services, sur site → [[Messagerie]] : [[Kafka]] (journal rejouable), [[NATS]] (un binaire léger), [[RabbitMQ]] (files et routage), [[Redpanda]] (protocole Kafka, licence BSL), et [[Celery]] pour les tâches Python.
+- Recevoir les mesures de capteurs et d'automates par MQTT, sur site : un nœud léger sous licence libre → [[Mosquitto]] ; un cluster, sous licence BSL → [[EMQX]]. Cf. [[Comparatif - Brokers MQTT]].
 - Sortir vite une table SQL vers un DataFrame → [[connectorx]].
 - Poser une table analytique durable sur du stockage objet → [[Parquet]] plus [[Apache Iceberg]], ou [[Delta Lake]] quand le socle est Spark (cf. [[Formats de fichiers et de tables]]).
 - Échanger des messages à schéma versionné → [[Avro]].
@@ -60,10 +61,12 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 ### Briques
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit).
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale).
 - [[Faker]] — Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.
 - [[Flink]] — Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch.
 - [[Mimesis]] — Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
 - [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
+- [[Mosquitto]] — Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse.
 - [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data).
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate).
 - [[SDV]] — Génère des données tabulaires synthétiques en apprenant la distribution du réel — synthétiseurs statistiques (GaussianCopula) et profonds (CTGAN, TVAE) pour table unique, multi-tables relationnelles ou séquentielles, avec rapports de qualité ; licence source-available (BSL).
@@ -72,6 +75,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 
 ### Comparatifs
+- [[Comparatif - Brokers MQTT]]
 - [[Comparatif - Catalogues et lignage de données]]
 - [[Comparatif - Outils EDA - profiling]]
 - [[Comparatif - Transformation SQL]]
