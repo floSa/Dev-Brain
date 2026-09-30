@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Airflow]]", "[[Dagster]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: []
+complements: ["[[dbt Core]]"]
 tags: [orchestration, data-pipeline]
 url_docs: https://docs.prefect.io/
 url_repo: https://github.com/PrefectHQ/prefect
@@ -64,6 +64,10 @@ DAG déclaré, les patterns d'avant la 2.0 ne s'appliquent plus.
 - [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 - [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
+
+### Compléments
+
+- [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `prefect-dbt` (0.7.25, 2026-06-05, Apache-2.0) lance dbt Core depuis un flow : `PrefectDbtRunner` observe chaque nœud dbt comme une tâche, `PrefectDbtOrchestrator` (bêta) fait piloter chaque nœud par Prefect, avec reprises et cache par nœud.
 
 ## Ressources
 

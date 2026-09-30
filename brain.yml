@@ -914,7 +914,24 @@ axes:
               continue, versionnage des jeux. Distinct de data/orchestration
               (Airflow ne dit pas si le sink est idempotent), de
               devtools/validation (valider des objets dans du code Python, pas des
-              jeux de donnees livres) et de data/format.
+              jeux de donnees livres) et de data/format. Elargie le 2026-09-30 : la
+              valeur range aussi les OUTILS qui verifient un jeu livre (Great
+              Expectations, Soda Core, pandera) ; ils valident des colonnes, des
+              volumes, une fraicheur, pas la forme d un objet applicatif.
+          transformation:
+            libelle: "Transformation"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur data/*
+              ne rangeait dbt Core ni SQLMesh. data/orchestration execute et
+              planifie le graphe, data/fiabilite decrit les garanties.
+            frontiere: >
+              Deriver des tables a partir d autres tables par des modeles
+              versionnes : un SELECT par modele, un graphe de dependances, des
+              materialisations (vue, table, incremental) et des environnements.
+              Distinct de data/orchestration (l outil qui execute et planifie),
+              de data/ingestion (rapatrier les lignes, pas les remodeler) et de
+              database/analytique (le moteur qui execute le SQL, pas l outil qui
+              le structure).
 
       - cle: devtools
         dossier: "Outils de développement"

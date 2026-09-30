@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Airflow]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: []
+complements: ["[[dbt Core]]"]
 tags: [orchestration, data-pipeline]
 url_docs: https://docs.dagster.io/
 url_repo: https://github.com/dagster-io/dagster
@@ -64,6 +64,10 @@ une documentation trouvée en ligne peut décrire une API qui n'existe plus.
 - [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 - [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
+
+### Compléments
+
+- [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dagster-dbt` (0.29.24, 2026-09-21, Apache-2.0) représente les modèles, seeds et snapshots dbt comme des assets Dagster et les tests comme des asset checks ; dbt Core 1.7 à 1.12, et Fusion en preview sans lignage au niveau colonne d'après la documentation de Dagster.
 
 ## Ressources
 
