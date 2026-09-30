@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 904,
+  "count": 907,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -168,6 +168,11 @@
       "ScaNN",
       "Typesense",
       "hnswlib"
+    ],
+    "annotation": [
+      "Annotation de données",
+      "CVAT",
+      "Label Studio"
     ],
     "anomaly-detection": [
       "Comparatif - Détection d'anomalies",
@@ -452,6 +457,7 @@
       "Architectures CNN",
       "Augmentation d'images",
       "CNN",
+      "CVAT",
       "Classification d'images",
       "Comparatif - Détection & segmentation",
       "Detectron2",
@@ -459,6 +465,7 @@
       "EasyOCR",
       "Estimation de pose",
       "Kornia",
+      "Label Studio",
       "Metric learning & ré-identification",
       "Modèles de fondation vision",
       "Métriques vision",
@@ -1349,7 +1356,10 @@
       "llmfit"
     ],
     "human-in-the-loop": [
+      "Annotation de données",
+      "CVAT",
       "Human-in-the-loop",
+      "Label Studio",
       "Pattern - RAG structuré graphe + human-in-the-loop"
     ],
     "hybrid-search": [
@@ -2206,6 +2216,7 @@
       "Comparatif - NLP",
       "Construction de graphes de connaissances",
       "GLiNER",
+      "Label Studio",
       "NER et étiquetage de séquence",
       "NLP",
       "pytorch-crf",
@@ -2288,6 +2299,7 @@
       "papermill"
     ],
     "object-detection": [
+      "CVAT",
       "Comparatif - Détection & segmentation",
       "Detectron2",
       "Détection d'objets",
@@ -2981,6 +2993,7 @@
       "Sécurité"
     ],
     "segmentation": [
+      "CVAT",
       "Comparatif - Détection & segmentation",
       "Detectron2",
       "Métriques vision",
@@ -2994,12 +3007,14 @@
     "self-hosted": [
       "Airbyte",
       "Alertmanager",
+      "Annotation de données",
       "Apache NiFi",
       "Argo CD",
       "Authelia",
       "Authentik",
       "Automatisation no-code",
       "Beszel",
+      "CVAT",
       "Caddy",
       "Choisir un modèle d'embedding",
       "Dataiku",
@@ -3011,6 +3026,7 @@
       "Kafka",
       "Keycloak",
       "Kubernetes",
+      "Label Studio",
       "Meilisearch",
       "NATS",
       "Netdata",
@@ -3209,6 +3225,7 @@
     "supervised": [
       "AdaBoost",
       "Analyse discriminante",
+      "Annotation de données",
       "Apprentissage supervisé",
       "Arbres de décision",
       "Bagging",
@@ -5371,7 +5388,9 @@
         "[[Debezium]]",
         "[[Apache NiFi]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Label Studio]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -9539,7 +9558,9 @@
         "[[Podman]]",
         "[[Traefik]]",
         "[[Caddy]]",
-        "[[Nginx]]"
+        "[[Nginx]]",
+        "[[Label Studio]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -9663,7 +9684,9 @@
         "[[NATS]]",
         "[[RabbitMQ]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Label Studio]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -14641,6 +14664,37 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Annotation de données.md",
+      "nom": "Annotation de données",
+      "alias": [
+        "annotation",
+        "data labeling",
+        "étiquetage de données",
+        "labellisation",
+        "labeling",
+        "annotation d'images",
+        "annotation de texte"
+      ],
+      "role": "notion",
+      "categorie": "ml/annotation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "annotation",
+        "human-in-the-loop",
+        "supervised",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage par renforcement/Acme.md",
       "nom": "Acme",
       "alias": [
@@ -16523,6 +16577,42 @@
       "maturite": "experimental"
     },
     {
+      "path": "Machine Learning/CVAT.md",
+      "nom": "CVAT",
+      "alias": [
+        "cvat",
+        "Computer Vision Annotation Tool",
+        "cvat.ai"
+      ],
+      "role": "brique",
+      "categorie": "ml/annotation",
+      "famille": "application",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise.",
+      "tags": [
+        "annotation",
+        "computer-vision",
+        "object-detection",
+        "segmentation",
+        "human-in-the-loop",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Label Studio]]"
+      ],
+      "complements": [
+        "[[Ultralytics YOLO]]",
+        "[[Detectron2]]",
+        "[[segment-anything]]",
+        "[[Postgres]]",
+        "[[Docker Compose]]",
+        "[[Kubernetes]]",
+        "[[Keycloak]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Comparatif - Optimisation d'hyperparamètres.md",
       "nom": "Comparatif - Optimisation d'hyperparamètres",
       "alias": null,
@@ -17452,6 +17542,41 @@
       "maturite": "beta"
     },
     {
+      "path": "Machine Learning/Label Studio.md",
+      "nom": "Label Studio",
+      "alias": [
+        "label-studio",
+        "labelstudio",
+        "HumanSignal Label Studio"
+      ],
+      "role": "brique",
+      "categorie": "ml/annotation",
+      "famille": "application",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes.",
+      "tags": [
+        "annotation",
+        "human-in-the-loop",
+        "self-hosted",
+        "computer-vision",
+        "ner"
+      ],
+      "alternatives": [
+        "[[CVAT]]"
+      ],
+      "complements": [
+        "[[Ultralytics YOLO]]",
+        "[[segment-anything]]",
+        "[[spaCy]]",
+        "[[GLiNER]]",
+        "[[Postgres]]",
+        "[[Docker Compose]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Machine Learning.md",
       "nom": "Machine Learning",
       "alias": [
@@ -17665,7 +17790,9 @@
       "alternatives": [
         "[[spaCy]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Label Studio]]"
+      ],
       "maturite": "beta"
     },
     {
@@ -17928,7 +18055,8 @@
         "[[NLTK]]"
       ],
       "complements": [
-        "[[HuggingFace]]"
+        "[[HuggingFace]]",
+        "[[Label Studio]]"
       ],
       "maturite": "production"
     },
@@ -21630,7 +21758,8 @@
         "[[segment-anything]]"
       ],
       "complements": [
-        "[[supervision]]"
+        "[[supervision]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -22093,7 +22222,9 @@
         "[[Detectron2]]"
       ],
       "complements": [
-        "[[supervision]]"
+        "[[supervision]]",
+        "[[Label Studio]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -22239,7 +22370,9 @@
         "[[Detectron2]]"
       ],
       "complements": [
-        "[[supervision]]"
+        "[[supervision]]",
+        "[[Label Studio]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
@@ -27451,7 +27584,8 @@
         "[[Argo CD]]",
         "[[Kubernetes]]",
         "[[OpenMetadata]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[CVAT]]"
       ],
       "maturite": "production"
     },
