@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 875,
+  "count": 878,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -626,6 +626,7 @@
       "Beats",
       "Change Data Capture (CDC)",
       "Comparatif - Orchestrateurs data",
+      "Comparatif - Transformation SQL",
       "Dagster",
       "Data & pipelines",
       "Databricks",
@@ -636,16 +637,25 @@
       "Orchestration",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Prefect",
+      "SQLMesh",
       "Scraping",
       "Stream processing",
-      "Web scraping"
+      "Web scraping",
+      "dbt Core"
     ],
     "data-quality": [
       "Alteryx",
       "Architecture médaillon",
       "Comparatif - Outils EDA - profiling",
       "Contrats de données & qualité",
+      "SQLMesh",
+      "dbt Core",
       "ydata-profiling"
+    ],
+    "data-transformation": [
+      "Comparatif - Transformation SQL",
+      "SQLMesh",
+      "dbt Core"
     ],
     "data-validation": [
       "Contrats de données & qualité",
@@ -4351,7 +4361,10 @@
         "[[DuckDB]]",
         "[[Snowflake]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]",
+        "[[SQLMesh]]"
+      ],
       "maturite": "production"
     },
     {
@@ -4464,7 +4477,9 @@
       "complements": [
         "[[pandas]]",
         "[[Polars]]",
-        "[[jupysql]]"
+        "[[jupysql]]",
+        "[[dbt Core]]",
+        "[[SQLMesh]]"
       ],
       "maturite": "production"
     },
@@ -5224,7 +5239,9 @@
         "[[pgAdmin]]",
         "[[TimescaleDB]]",
         "[[psycopg2]]",
-        "[[Apache AGE]]"
+        "[[Apache AGE]]",
+        "[[dbt Core]]",
+        "[[SQLMesh]]"
       ],
       "maturite": "production"
     },
@@ -6010,7 +6027,9 @@
         "[[Ray]]"
       ],
       "complements": [
-        "[[Databricks]]"
+        "[[Databricks]]",
+        "[[dbt Core]]",
+        "[[SQLMesh]]"
       ],
       "maturite": "production"
     },
@@ -6048,7 +6067,9 @@
         "schema-evolution"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6170,6 +6191,24 @@
         "eda",
         "data-quality",
         "missing-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Comparatif - Transformation SQL.md",
+      "nom": "Comparatif - Transformation SQL",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/transformation",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-transformation",
+        "data-pipeline"
       ],
       "alternatives": null,
       "complements": null,
@@ -6583,7 +6622,8 @@
       ],
       "complements": [
         "[[Keycloak]]",
-        "[[Authentik]]"
+        "[[Authentik]]",
+        "[[dbt Core]]"
       ],
       "maturite": "production"
     },
@@ -6630,7 +6670,9 @@
         "[[Kestra]]",
         "[[Temporal]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6657,7 +6699,10 @@
         "[[Mage]]",
         "[[Temporal]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]",
+        "[[SQLMesh]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6737,7 +6782,9 @@
         "[[Kestra]]",
         "[[Temporal]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6789,7 +6836,9 @@
       "alternatives": [
         "[[Avro]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[dbt Core]]"
+      ],
       "maturite": "production"
     },
     {
@@ -7462,6 +7511,36 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/SQLMesh.md",
+      "nom": "SQLMesh",
+      "alias": [
+        "sqlmesh",
+        "Tobiko SQLMesh"
+      ],
+      "role": "brique",
+      "categorie": "data/transformation",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran.",
+      "tags": [
+        "data-transformation",
+        "data-pipeline",
+        "data-quality"
+      ],
+      "alternatives": [
+        "[[dbt Core]]"
+      ],
+      "complements": [
+        "[[Postgres]]",
+        "[[DuckDB]]",
+        "[[ClickHouse]]",
+        "[[Spark]]",
+        "[[Kestra]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Scraping/Comparatif - Scraping.md",
       "nom": "Comparatif - Scraping",
       "alias": null,
@@ -8002,6 +8081,44 @@
       ],
       "complements": [
         "[[Polars]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/dbt Core.md",
+      "nom": "dbt Core",
+      "alias": [
+        "dbt",
+        "dbt-core",
+        "dbt OSS",
+        "dbt v1",
+        "dbt v2"
+      ],
+      "role": "brique",
+      "categorie": "data/transformation",
+      "famille": "cli",
+      "langage": "Python, Rust",
+      "domaines": null,
+      "pitch": "Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit).",
+      "tags": [
+        "data-transformation",
+        "data-pipeline",
+        "data-quality"
+      ],
+      "alternatives": [
+        "[[SQLMesh]]"
+      ],
+      "complements": [
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[Prefect]]",
+        "[[Kestra]]",
+        "[[Postgres]]",
+        "[[DuckDB]]",
+        "[[ClickHouse]]",
+        "[[Spark]]",
+        "[[Parquet]]",
+        "[[Apache Iceberg]]"
       ],
       "maturite": "production"
     },

@@ -47,6 +47,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Outils EDA - profiling]]
 - [[Comparatif - Parsing de documents]]
 - [[Comparatif - Scraping]]
+- [[Comparatif - Transformation SQL]]
 - [[Comparatif - Visualisation]]
 
 ### Design & diagrammes
