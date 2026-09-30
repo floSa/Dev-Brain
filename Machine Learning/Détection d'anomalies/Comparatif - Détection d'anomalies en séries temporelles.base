@@ -1,0 +1,23 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du dossier.
+    # Le tag `timeseries` sépare les outils de séries des détecteurs tabulaires
+    # (PyOD…), que le comparatif générique du dossier départage.
+    - role == "brique"
+    - categorie == "ml/anomalie"
+    - file.hasTag("timeseries")
+views:
+  - type: table
+    name: Détection d'anomalies en séries temporelles
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - hosted
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
