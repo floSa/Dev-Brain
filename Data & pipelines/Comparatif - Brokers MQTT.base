@@ -1,0 +1,24 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # rangees sous la meme categorie hors de la vue.
+    - role == "brique"
+    - categorie == "data/industrie"
+views:
+  - type: table
+    name: Brokers MQTT
+    filters:
+      and:
+        - tags.contains("mqtt")
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - langage
+      - maturite
+      - hosted
+      - scaling
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
