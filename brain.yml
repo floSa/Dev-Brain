@@ -1152,6 +1152,23 @@ axes:
               systeme (mots de passe de service, cles d API, cles de chiffrement,
               certificats). Distinct de security/auth (prouver QUI appelle) et de
               devtools/config (charger une configuration, secrete ou non).
+          analyse:
+            libelle: "Analyse de vulnérabilités"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur
+              security/* ne rangeait un scanner. security/recon regarde une cible
+              de l exterieur, security/secrets stocke un secret, security/auth
+              prouve qui appelle, security/ia porte les systemes a modele.
+              Libelle « Analyse de vulnerabilites » et NON « Analyse de securite » :
+              ce dernier redoublerait le nom du domaine parent, defaut deja ecarte
+              pour « Systemes IA » et pour « Inference ».
+            frontiere: >
+              Examiner son propre code, ses dependances, ses images et ses depots
+              avant livraison : composants vulnerables, failles dans le code,
+              secrets exposes, inventaire SBOM. Distinct de security/secrets
+              (stocker un secret ; en detecter un deja fuite est de l analyse),
+              de security/recon (une cible vue de l exterieur) et de security/ia
+              (la surface d attaque d un systeme a modele).
           ia:
             libelle: "Systèmes IA"
             motif: >
