@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 917 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 918 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -921,6 +921,9 @@
 - **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
+
+### ml/orchestration
+- **CI-CD pour le ML** — domaines : mlops · alias : CI/CD pour le ML, CI/CD ML, CD4ML, intégration continue ML, livraison continue ML, entraînement continu, continuous training
 
 ### ml/plateforme
 - **Plateforme data & IA — concept** — domaines : data-sci, data-eng, mlops, ml-eng · alias : plateforme ML, plateforme data science, build vs buy, enfermement fournisseur, vendor lock-in
