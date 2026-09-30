@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Authentik]]", "[[Authelia]]"]
-complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]", "[[CVAT]]", "[[LibreChat]]"]
+complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]", "[[CVAT]]", "[[LibreChat]]", "[[GitLab CE]]", "[[Forgejo]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://www.keycloak.org/documentation
 url_repo: https://github.com/keycloak/keycloak
@@ -76,6 +76,8 @@ Fournisseur d'identité et de gestion des accès en Java sur Quarkus. Il tient l
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — OIDC : la documentation de DataHub le cite en lien de référence, sans guide dédié.
 - [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — guide de configuration OIDC et SAML dans la page SSO de CVAT, valable pour l'édition Enterprise seulement.
 - [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
+- [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — authentification unique en OIDC ou SAML pour la forge.
+- [[Forgejo]] — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie. — authentification unique via OAuth2 pour la forge.
 
 ## Ressources
 
