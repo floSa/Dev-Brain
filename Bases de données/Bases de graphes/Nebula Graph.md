@@ -24,7 +24,7 @@ url_repo: https://github.com/vesoft-inc/nebula
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Plateforme C++ | open-source | self-hébergé ou managé · distribué | production | à jour · 2026-07-09 |
+| Plateforme C++ | open-source | self-hébergé ou managé · distribué | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

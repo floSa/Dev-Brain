@@ -11,6 +11,7 @@ views:
     order:
       - file.name
       - pitch
+      - famille
       - hosted
       - scaling
       - langage
@@ -43,6 +44,19 @@ views:
       - pitch
       - hosted
       - langage
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Licence restrictive
+    filters:
+      and:
+        - licence_type != "open-source"
+    order:
+      - file.name
+      - licence_type
+      - pitch
+      - hosted
     sort:
       - property: file.name
         direction: asc
