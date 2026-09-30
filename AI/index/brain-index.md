@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 907 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 912 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -36,13 +36,16 @@
 - **ydata-profiling** — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 
 ### data/fiabilite
+- **DVC** — Versionnage de données et de modèles en ligne de commande, posé sur Git : des pointeurs `.dvc` dans le dépôt, le contenu dans un cache adressé par le hash et des remotes (S3 compatible, SSH, NAS), plus des pipelines reproductibles par `dvc repro` ; Apache-2.0, projet racheté par lakeFS en novembre 2025.
 - **Great Expectations** — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026.
+- **lakeFS** — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur.
 - **pandera** — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT).
 - **Soda Core** — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud.
 
 ### data/format
 - **Apache Iceberg** — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).
 - **Avro** — Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.
+- **Delta Lake** — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source.
 - **Parquet** — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
 ### data/ingestion
@@ -1112,6 +1115,7 @@
 
 ### data/fiabilite
 - **Comparatif - Qualité de données** — —
+- **Comparatif - Versionnage de données** — —
 
 ### data/ingestion
 - **Comparatif - Ingestion de données** — —
@@ -1324,6 +1328,7 @@
 - **Embeddings & encodeurs** — Produire des vecteurs à partir de texte — choisir le modèle, puis l'outil qui le calcule ou le sert, sans dépendre d'une API externe.
 - **Fiabilité des données** — Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
+- **Formats de fichiers et de tables** — Comment la donnée est rangée sur disque ou sur stockage objet — le format de fichier qui décide de la vitesse de lecture, le format de table posé par-dessus qui apporte transactions et time travel.
 - **Infrastructure & Ops** — Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
 - **Ingestion de données** — Amener la donnée d'une source — base, API, fichier, journal — jusqu'à sa destination, sans la remodeler, et savoir la recharger sans tout relire.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
