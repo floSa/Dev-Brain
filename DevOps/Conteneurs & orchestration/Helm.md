@@ -84,3 +84,4 @@ Environ 30 300 étoiles, Apache-2.0, projet CNCF diplômé (graduated) le 2020-0
 ## Voir aussi
 
 - [[Conteneurs & orchestration]] — le hub du sous-domaine
+- [[Du Compose à Kubernetes — quand changer d'échelle]] — la notion : ce que Compose ne fait pas, ce que coûte un cluster, le critère de bascule et le GitOps

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 849 pages actives.
+> 851 pages actives.
 
 ## Par page
 
@@ -122,8 +122,8 @@
 
 ### Argo CD  ·  brique
 - tags : `ci-cd`, `kubernetes`, `gitops`, `self-hosted`
-- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
-- liens entrants : [[Conteneurs & orchestration]], [[DevOps]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
+- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
@@ -163,7 +163,7 @@
 ### BentoML  ·  brique
 - tags : `model-serving`, `inference`
 - liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Beszel  ·  brique
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
@@ -412,13 +412,13 @@
 
 ### Docker  ·  brique
 - tags : `container`
-- liens sortants : [[DevOps]], [[Docker Compose]], [[GitHub Actions]], [[Podman]]
-- liens entrants : [[Beszel]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
+- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Podman]]
+- liens entrants : [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
 
 ### Docker Compose  ·  brique
 - tags : `container`
-- liens sortants : [[DevOps]], [[Docker]], [[Kubernetes]], [[Podman]], [[k3s]]
-- liens entrants : [[Conteneurs & orchestration]], [[Docker]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -583,7 +583,7 @@
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
 - liens sortants : [[Argo CD]], [[DevOps]], [[Docker]]
-- liens entrants : [[Argo CD]], [[DevOps]], [[Docker]], [[Rule - Qualité stricte]]
+- liens entrants : [[Argo CD]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Rule - Qualité stricte]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -652,8 +652,8 @@
 
 ### Helm  ·  brique
 - tags : `kubernetes`
-- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Kubernetes]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Conteneurs & orchestration]], [[Kubernetes]], [[k3s]]
+- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[k3s]]
 
 ### Hermes Agent  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -752,8 +752,8 @@
 
 ### k3s  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[Kubernetes]]
-- liens entrants : [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[Kubernetes]]
+- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -778,12 +778,12 @@
 ### KServe  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Déploiement de modèles]], [[Feast]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1317,8 +1317,8 @@
 
 ### Podman  ·  brique
 - tags : `container`, `self-hosted`
-- liens sortants : [[DevOps]], [[Docker]], [[Docker Compose]]
-- liens entrants : [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]]
+- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -1518,7 +1518,7 @@
 ### Ray Serve  ·  brique
 - tags : `model-serving`, `inference`, `distributed`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### Ray Tune  ·  brique
 - tags : `hyperparameter-tuning`, `distributed`, `bayesian`
@@ -1618,7 +1618,7 @@
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### selectolax  ·  brique
 - tags : `web-scraping`, `document-parsing`
@@ -2180,6 +2180,11 @@
 - liens sortants : [[Comparatif - Orchestrateurs ML.base]], [[Comparatifs]], [[Flyte]], [[Metaflow]], [[ZenML]]
 - liens entrants : [[Comparatif - Plateformes data & IA]], [[Comparatifs]], [[DataRobot]], [[Flyte]], [[Machine Learning]], [[Metaflow]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[ZenML]]
 
+### Comparatif - Orchestration de conteneurs  ·  comparatif
+- tags : `container`
+- liens sortants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs.base]], [[Comparatifs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens entrants : [[Comparatifs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Kubernetes]], [[Podman]], [[k3s]]
+
 ### Comparatif - ORM  ·  comparatif
 - tags : `orm`
 - liens sortants : [[Alembic]], [[Comparatif - ORM.base]], [[Comparatifs]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
@@ -2332,13 +2337,13 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
-- liens sortants : [[Argo CD]], [[Docker]], [[Docker Compose]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Seldon Core]], [[k3s]]
-- liens entrants : [[Argo CD]], [[DevOps]], [[Helm]], [[Kubernetes]], [[k3s]]
+- liens sortants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Seldon Core]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[DevOps]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
@@ -2368,7 +2373,7 @@
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
 - liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Docker]], [[GitHub Actions]], [[Kubernetes]], [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[Argo CD]], [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]], [[Podman]]
+- liens entrants : [[Argo CD]], [[GitHub Actions]], [[Infrastructure & Ops]], [[MLOps]], [[Outils de développement]]
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
@@ -2392,7 +2397,7 @@
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
-- liens sortants : [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]]
+- liens sortants : [[DevOps]], [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]]
 - liens entrants : —
 
 ### Interfaces & apps data  ·  hub
@@ -3029,6 +3034,11 @@
 - tags : `model-compression`, `deep-learning`, `small-language-model`, `synthetic-data`, `fine-tuning`
 - liens sortants : [[Cross-entropy]], [[KL divergence]], [[PEFT]], [[Pruning]], [[Quantization]], [[SFT]], [[Small Language Models]], [[Synthetic data generation]]
 - liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Diffusion models]], [[Pruning]], [[Quantization]], [[Serving]], [[Small Language Models]], [[Superposition]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
+
+### Du Compose à Kubernetes — quand changer d'échelle  ·  notion
+- tags : `container`, `kubernetes`, `gitops`, `ci-cd`
+- liens sortants : [[Argo CD]], [[BentoML]], [[Docker Compose]], [[GitHub Actions]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
@@ -4280,7 +4290,7 @@
 - `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Inférence causale, Statistiques & inférence
 - `cdc` : Change Data Capture (CDC)
 - `chunking` : Chunking strategies, RAG & retrieval
-- `ci-cd` : Argo CD, DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
+- `ci-cd` : Argo CD, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
 - `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
@@ -4296,7 +4306,7 @@
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
-- `container` : Beszel, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
@@ -4362,7 +4372,7 @@
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
-- `gitops` : Argo CD  — pas de page concept dédiée
+- `gitops` : Argo CD, Du Compose à Kubernetes — quand changer d'échelle
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
@@ -4389,7 +4399,7 @@
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
-- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s  — pas de page concept dédiée
+- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
@@ -4599,7 +4609,7 @@
 - `benchmark` (porté par : Choisir un modèle d'embedding, Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
-- `ci-cd` (porté par : Argo CD, DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
+- `ci-cd` (porté par : Argo CD, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
@@ -4607,7 +4617,7 @@
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers)
+- `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
@@ -4649,7 +4659,6 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `gitops` (porté par : Argo CD)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
@@ -4661,7 +4670,7 @@
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
-- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s)
+- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)

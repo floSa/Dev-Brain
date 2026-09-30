@@ -95,3 +95,5 @@ CNCF diplômé (graduated) le 2018-03-06.
 ## Voir aussi
 
 - [[Conteneurs & orchestration]] — le hub du sous-domaine
+- [[Comparatif - Orchestration de conteneurs]] — ce qui départage les moteurs, la pile locale et les orchestrateurs du dossier
+- [[Du Compose à Kubernetes — quand changer d'échelle]] — la notion : ce que Compose ne fait pas, ce que coûte un cluster, le critère de bascule et le GitOps

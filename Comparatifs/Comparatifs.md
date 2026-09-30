@@ -53,6 +53,9 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Design & prototypage]]
 - [[Comparatif - Diagrammes]]
 
+### DevOps
+- [[Comparatif - Orchestration de conteneurs]]
+
 ### Interfaces & apps data
 - [[Comparatif - Apps data & démos ML]]
 - [[Comparatif - Frontends web légers]]
