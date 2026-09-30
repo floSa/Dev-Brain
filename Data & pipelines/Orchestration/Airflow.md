@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]", "[[Airbyte]]", "[[dlt]]", "[[Celery]]"]
+complements: ["[[Keycloak]]", "[[Authentik]]", "[[dbt Core]]", "[[Great Expectations]]", "[[Airbyte]]", "[[dlt]]", "[[Celery]]", "[[OpenLineage]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [orchestration, data-pipeline, scheduler]
 url_docs: https://airflow.apache.org/docs/
 url_repo: https://github.com/apache/airflow
@@ -75,6 +75,9 @@ ajoute l'Edge Executor pour l'exécution distante.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — le fournisseur `apache-airflow-providers-airbyte` (6.1.0, 2026-09-29) déclenche et surveille les synchronisations Airbyte.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — `PipelineTasksGroup` transforme un pipeline dlt en groupe de tâches (modes sérialisé, parallèle, parallèle isolé).
 - [[Celery]] — File de tâches distribuée pour Python : des workers exécutent des fonctions asynchrones postées sur un broker (RabbitMQ, Redis, SQS), avec relances, planification (Beat) et enchaînements (canvas) ; au moins une fois, BSD-3-Clause. — CeleryExecutor : Celery distribue les tâches aux workers, avec RabbitMQ, Redis ou Redis Sentinel comme broker ; la doc recommande un backend de résultats en base de données.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — fournisseur `apache-airflow-providers-openlineage` (2.20.2, 2026-09-29) dans l'écosystème Airflow : Airflow 2.11.0 ou plus, interface d'écouteur d'Airflow 3 gérée depuis la 2.1.0 ; le paquet historique `openlineage-airflow` n'est plus maintenu.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — l'ingestion classique d'OpenMetadata s'exécute sur Airflow (2.10.5 dans les prérequis) ; un orchestrateur Kubernetes natif la remplace depuis la 1.12.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — le plugin Airflow de DataHub est recommandé pour un couplage plus fin que le récepteur OpenLineage.
 
 ## Ressources
 
