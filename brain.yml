@@ -822,7 +822,23 @@ axes:
               Reserve aux moteurs dont l UNIQUE index est vectoriel — Qdrant,
               Milvus, Weaviate (D-R4).
           series-temporelles: {}
-          graphe: {}
+          graphe:
+            libelle: "Bases de graphes"
+            motif: >
+              Ouvert le 2026-09-30, quand le sous-domaine a franchi le seuil
+              (Neo4j, Nebula Graph, Memgraph, Apache AGE, ArangoDB). Et NON
+              « Graphe » seul : `ml/graphe` (PyTorch Geometric, Graph Neural
+              Networks) porte la meme valeur par defaut, et le jour ou il sera
+              promu a son tour, deux hubs « Graphe » ne resoudraient plus de
+              facon deterministe avec des liens nus.
+            frontiere: >
+              Un MOTEUR qui stocke et interroge un graphe (noeuds, aretes,
+              proprietes ou triplets) : Neo4j, Memgraph, Apache AGE, ArangoDB,
+              JanusGraph, Dgraph, Nebula Graph. Distinct de ml/graphe, qui
+              APPREND sur un graphe (GNN), et de llm/rag, qui en fait un
+              pipeline de retrieval (GraphRAG). Un moteur multi-modele dont le
+              graphe est l un des modeles (ArangoDB) s y range par arbitrage,
+              faute de valeur « multi-modele » dans le vocabulaire.
           analytique: {}
           recherche:
             libelle: "Recherche"
