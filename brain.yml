@@ -905,7 +905,8 @@ axes:
             libelle: "Visualisation"
             frontiere: "Graphiques de donnees. Distinct de design/diagramme (schemas techniques) et de design/ui (interfaces produit)."
           fiabilite:
-            motif: "Ouvert au lot 4."
+            libelle: "Fiabilité des données"
+            motif: "Ouvert au lot 4. Promu en dossier le 2026-09-30 : 7 pages (4 notions, 3 briques) franchissent le seuil de 5."
             frontiere: >
               Ce qui rend une donnee digne de confiance, quel que soit l outil qui
               la deplace : ordre d assemblage et rejouabilite (ETL/ELT,
