@@ -89,3 +89,4 @@ Les mainteneurs viennent de plusieurs entreprises (Intuit, Akuity, Red Hat, Octo
 
 - [[DevOps]] — le hub du domaine
 - [[Conteneurs & orchestration]] — le sous-domaine des orchestrateurs qu'il pilote
+- [[Du Compose à Kubernetes — quand changer d'échelle]] — la notion : ce que Compose ne fait pas, ce que coûte un cluster, le critère de bascule et le GitOps
