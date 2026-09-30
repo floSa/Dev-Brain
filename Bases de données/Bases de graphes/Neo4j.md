@@ -81,6 +81,7 @@ session et de transaction en langage manque encore.
 
 - [[Bases de données]] — le hub du domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (Cypher, GQL et les limites du passage à l'échelle)
 - [[GraphRAG]] — le retrieval RAG sur graphe de connaissances, souvent stocké ici
 - [[Construction de graphes de connaissances]] — peupler le graphe par extraction d'entités et de relations
 - [[Graph Neural Networks]] — le ML sur graphes, branché sur les données stockées ici
