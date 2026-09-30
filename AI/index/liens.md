@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 899 pages actives.
+> 902 pages actives.
 
 ## Par page
 
@@ -52,8 +52,8 @@
 
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
-- liens sortants : [[Airbyte]], [[Authentik]], [[Celery]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Great Expectations]], [[Kestra]], [[Keycloak]], [[Mage]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Authentik]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Great Expectations]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Keycloak]], [[Mage]], [[Metaflow]], [[OAuth2 et OpenID Connect]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]]
+- liens sortants : [[Airbyte]], [[Authentik]], [[Celery]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kestra]], [[Keycloak]], [[Mage]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Authentik]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Dagster]], [[DataHub]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Great Expectations]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Keycloak]], [[Mage]], [[Metaflow]], [[OAuth2 et OpenID Connect]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]]
 
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
@@ -97,13 +97,13 @@
 
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`
-- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Debezium]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[dbt Core]]
-- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Databricks]], [[Debezium]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[dbt Core]]
+- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[dbt Core]]
+- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[dbt Core]]
 
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Ingestion de données]], [[Logstash]], [[MySQL]], [[Postgres]], [[SQLMesh]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[Postgres]], [[dlt]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[DataHub]], [[Ingestion de données]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[SQLMesh]], [[dbt Core]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[DataHub]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[dlt]]
 
 ### Apache Ozone  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -282,8 +282,8 @@
 
 ### ClickHouse  ·  brique
 - tags : `columnar`, `olap`, `distributed`
-- liens sortants : [[Airbyte]], [[Bases de données]], [[Comparatif - Bases colonnes]], [[DuckDB]], [[Postgres]], [[SQLMesh]], [[Snowflake]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Bases de données]], [[Comparatif - Bases colonnes]], [[DuckDB]], [[Elasticsearch]], [[InfluxDB]], [[Plateformes data & IA]], [[Relationnel]], [[SQLMesh]], [[Snowflake]], [[TimescaleDB]], [[dbt Core]], [[dlt]]
+- liens sortants : [[Airbyte]], [[Bases de données]], [[Comparatif - Bases colonnes]], [[DataHub]], [[DuckDB]], [[OpenMetadata]], [[Postgres]], [[SQLMesh]], [[Snowflake]], [[dbt Core]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Bases de données]], [[Comparatif - Bases colonnes]], [[DataHub]], [[DuckDB]], [[Elasticsearch]], [[InfluxDB]], [[OpenMetadata]], [[Plateformes data & IA]], [[Relationnel]], [[SQLMesh]], [[Snowflake]], [[TimescaleDB]], [[dbt Core]], [[dlt]]
 
 ### Cline  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`, `mcp`
@@ -352,8 +352,8 @@
 
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
-- liens sortants : [[Airbyte]], [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]], [[pandera]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]], [[pandera]]
+- liens sortants : [[Airbyte]], [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[OpenLineage]], [[Orchestration]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]], [[pandera]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Mage]], [[Metaflow]], [[OpenLineage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]], [[pandera]]
 
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
@@ -379,6 +379,11 @@
 - tags : `db-client`, `relational`, `nosql`
 - liens sortants : [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
 - liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Clients de bases de données]], [[DBeaver]], [[HeidiSQL]]
+
+### DataHub  ·  brique
+- tags : `data-catalog`, `data-lineage`, `data-governance`, `data-contract`
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[ClickHouse]], [[Data & pipelines]], [[Elasticsearch]], [[Great Expectations]], [[Kafka]], [[Keycloak]], [[Kubernetes]], [[MySQL]], [[OpenLineage]], [[OpenMetadata]], [[OpenSearch]], [[Postgres]], [[Spark]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[ClickHouse]], [[Data & pipelines]], [[Elasticsearch]], [[Great Expectations]], [[Kafka]], [[Keycloak]], [[Kubernetes]], [[MySQL]], [[OpenLineage]], [[OpenMetadata]], [[OpenSearch]], [[Postgres]], [[Spark]]
 
 ### Dataiku  ·  brique
 - tags : `ml-platform`, `low-code`, `data-governance`, `automl`, `ml-pipeline`, `self-hosted`
@@ -412,8 +417,8 @@
 
 ### dbt Core  ·  brique
 - tags : `data-transformation`, `data-pipeline`, `data-quality`
-- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]], [[dlt]]
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]], [[dlt]]
 
 ### Debezium  ·  brique
 - tags : `data-ingestion`, `cdc`, `streaming`, `self-hosted`
@@ -512,8 +517,8 @@
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
-- liens sortants : [[Apache Solr]], [[Bases de données]], [[Beats]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[Hybrid retrieval]], [[Index inversé]], [[JanusGraph]], [[Kibana]], [[Logstash]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Postgres]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[txtai]]
-- liens entrants : [[Apache Solr]], [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Comparatif - Moteurs de recherche]], [[Data & pipelines]], [[Haystack]], [[Hybrid retrieval]], [[Index inversé]], [[JanusGraph]], [[Kibana]], [[Logstash]], [[Loki]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[Observabilité]], [[OpenSearch]], [[Recherche]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
+- liens sortants : [[Apache Solr]], [[Bases de données]], [[Beats]], [[ClickHouse]], [[Comparatif - Moteurs de recherche]], [[DataHub]], [[Hybrid retrieval]], [[Index inversé]], [[JanusGraph]], [[Kibana]], [[Logstash]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenMetadata]], [[OpenSearch]], [[Postgres]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[txtai]]
+- liens entrants : [[Apache Solr]], [[BM25]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Comparatif - Moteurs de recherche]], [[Data & pipelines]], [[DataHub]], [[Haystack]], [[Hybrid retrieval]], [[Index inversé]], [[JanusGraph]], [[Kibana]], [[Logstash]], [[Loki]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[Observabilité]], [[OpenMetadata]], [[OpenSearch]], [[Recherche]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
 
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
@@ -592,8 +597,8 @@
 
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
-- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Debezium]], [[DuckDB]], [[Kafka]], [[Spark]], [[Stream processing]]
-- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Data & pipelines]], [[Debezium]], [[Kafka]], [[Messagerie]], [[Orchestration]], [[Stream processing]], [[Temporal]]
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Dagster]], [[Debezium]], [[DuckDB]], [[Kafka]], [[OpenLineage]], [[Spark]], [[Stream processing]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Data & pipelines]], [[Debezium]], [[Kafka]], [[Messagerie]], [[OpenLineage]], [[Orchestration]], [[Stream processing]], [[Temporal]]
 
 ### Flowise  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
@@ -667,8 +672,8 @@
 
 ### Great Expectations  ·  brique
 - tags : `data-quality`, `data-validation`, `data-contract`
-- liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Evidently]], [[Fiabilité des données]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
-- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
+- liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[DataHub]], [[Evidently]], [[Fiabilité des données]], [[OpenLineage]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
+- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[DataHub]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
 
 ### Grype  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `container`, `ci-cd`
@@ -827,8 +832,8 @@
 
 ### Kafka  ·  brique
 - tags : `message-broker`, `streaming`, `distributed`, `self-hosted`
-- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[Debezium]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[Postgres]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Debezium]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Postgres]], [[RabbitMQ]], [[Redpanda]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[DataHub]], [[Debezium]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[RabbitMQ]], [[Redpanda]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -842,8 +847,8 @@
 
 ### Keycloak  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
-- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]]
-- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]]
+- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]]
+- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Gestion des secrets]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]], [[PyJWT]], [[Sécurité]]
 
 ### Kibana  ·  brique
 - tags : `observability`, `logging`, `dashboard`
@@ -862,8 +867,8 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1122,8 +1127,8 @@
 
 ### MySQL  ·  brique
 - tags : `relational`
-- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Debezium]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[SQLite]]
-- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Debezium]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[Postgres]], [[Relationnel]], [[SQLite]]
+- liens sortants : [[Airbyte]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[OpenMetadata]], [[Postgres]], [[SQLite]]
+- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL Workbench]], [[OpenMetadata]], [[Postgres]], [[Relationnel]], [[SQLite]]
 
 ### MySQL Workbench  ·  brique
 - tags : `db-client`, `relational`
@@ -1260,10 +1265,20 @@
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[Assistants]], [[AutoGen]], [[CrewAI]], [[Hermes Agent]], [[LangGraph]], [[Maka]], [[OpenAI Agents SDK]], [[OpenClaw]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
 - liens entrants : [[Assistants]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio Bionic]], [[Maka]], [[OpenClaw]]
 
+### OpenLineage  ·  brique
+- tags : `data-lineage`, `data-governance`, `data-pipeline`
+- liens sortants : [[Airflow]], [[Dagster]], [[Data & pipelines]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kafka]], [[OpenMetadata]], [[Spark]], [[dbt Core]]
+- liens entrants : [[Airflow]], [[Dagster]], [[Data & pipelines]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kafka]], [[OpenMetadata]], [[Spark]], [[dbt Core]]
+
 ### OpenMAIC  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `education`, `self-hosted`
 - liens sortants : [[Agent patterns]], [[Assistants]], [[CrewAI]], [[LangGraph]], [[Multi-agent systems]], [[OpenClaw]], [[PraisonAI]]
 - liens entrants : [[Assistants]], [[Multi-agent systems]], [[OpenClaw]]
+
+### OpenMetadata  ·  brique
+- tags : `data-catalog`, `data-lineage`, `data-governance`, `data-quality`
+- liens sortants : [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Data & pipelines]], [[DataHub]], [[Elasticsearch]], [[Kafka]], [[Keycloak]], [[Kubernetes]], [[MySQL]], [[OpenLineage]], [[OpenSearch]], [[Postgres]]
+- liens entrants : [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Data & pipelines]], [[DataHub]], [[Elasticsearch]], [[Kafka]], [[Keycloak]], [[Kubernetes]], [[MySQL]], [[OpenLineage]], [[OpenSearch]], [[Postgres]]
 
 ### OpenRouter  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `inference`
@@ -1272,8 +1287,8 @@
 
 ### OpenSearch  ·  brique
 - tags : `search`, `distributed`, `hybrid-search`, `semantic-search`
-- liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Recherche]], [[Recherche vectorielle approximative]]
-- liens entrants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Lucene]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
+- liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[DataHub]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[OpenMetadata]], [[Recherche]], [[Recherche vectorielle approximative]]
+- liens entrants : [[Apache Solr]], [[Comparatif - Moteurs de recherche]], [[DataHub]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index inversé]], [[Lucene]], [[OpenMetadata]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]]
 
 ### OpenSpiel  ·  brique
 - tags : `reinforcement-learning`, `game-theory`
@@ -1427,8 +1442,8 @@
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
-- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Debezium]], [[Great Expectations]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Great Expectations]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1817,8 +1832,8 @@
 
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
-- liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Databricks]], [[DuckDB]], [[Great Expectations]], [[Parquet]], [[Polars]], [[Ray]], [[SQLMesh]], [[dbt Core]], [[pandera]]
-- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[Databricks]], [[Flink]], [[Great Expectations]], [[Hyperopt]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[dbt Core]], [[pandera]]
+- liens sortants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[DuckDB]], [[Great Expectations]], [[OpenLineage]], [[Parquet]], [[Polars]], [[Ray]], [[SQLMesh]], [[dbt Core]], [[pandera]]
+- liens entrants : [[Apache Iceberg]], [[Calcul distribué]], [[Comparatif - Calcul distribué]], [[Dask]], [[DataHub]], [[Databricks]], [[Flink]], [[Great Expectations]], [[Hyperopt]], [[OpenLineage]], [[Parquet]], [[Plateforme data & IA — concept]], [[Ray]], [[River]], [[SQLMesh]], [[dbt Core]], [[pandera]]
 
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
@@ -2532,8 +2547,8 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[DataFrames]], [[Debezium]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[AI Engineering]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[MLOps]], [[Machine Learning]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[DataFrames]], [[DataHub]], [[Debezium]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[AI Engineering]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[MLOps]], [[Machine Learning]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -4555,14 +4570,16 @@
 - `dashboard` : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix  — pas de page concept dédiée
 - `data-app` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, Vision, albumentations, torchvision
-- `data-contract` : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Soda Core
+- `data-catalog` : DataHub, OpenMetadata  — pas de page concept dédiée
+- `data-contract` : Comparatif - Qualité de données, Contrats de données & qualité, DataHub, Fiabilité des données, Great Expectations, Soda Core
 - `data-drift` : Data drift, Evidently, Monitoring de modèle en production
-- `data-governance` : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
+- `data-governance` : Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `data-ingestion` : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, dlt  — pas de page concept dédiée
 - `data-leakage` : Data leakage
+- `data-lineage` : DataHub, OpenLineage, OpenMetadata
 - `data-modeling` : Architecture médaillon, Modélisation dimensionnelle  — pas de page concept dédiée
-- `data-pipeline` : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt  — pas de page concept dédiée
-- `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, SQLMesh, Soda Core, dbt Core, pandera, ydata-profiling
+- `data-pipeline` : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt  — pas de page concept dédiée
+- `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, OpenMetadata, SQLMesh, Soda Core, dbt Core, pandera, ydata-profiling
 - `data-transformation` : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core  — pas de page concept dédiée
 - `data-validation` : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera  — pas de page concept dédiée
 - `data-versioning` : Fiabilité des données, Versionnage de données
@@ -4878,10 +4895,11 @@
 - `cryptography` (porté par : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
-- `data-governance` (porté par : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
+- `data-catalog` (porté par : DataHub, OpenMetadata)
+- `data-governance` (porté par : Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `data-ingestion` (porté par : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, dlt)
 - `data-modeling` (porté par : Architecture médaillon, Modélisation dimensionnelle)
-- `data-pipeline` (porté par : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt)
+- `data-pipeline` (porté par : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt)
 - `data-transformation` (porté par : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core)
 - `data-validation` (porté par : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera)
 - `dataframe` (porté par : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling)

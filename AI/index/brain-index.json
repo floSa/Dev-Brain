@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 899,
+  "count": 902,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -599,9 +599,14 @@
       "albumentations",
       "torchvision"
     ],
+    "data-catalog": [
+      "DataHub",
+      "OpenMetadata"
+    ],
     "data-contract": [
       "Comparatif - Qualité de données",
       "Contrats de données & qualité",
+      "DataHub",
       "Fiabilité des données",
       "Great Expectations",
       "Soda Core"
@@ -613,9 +618,12 @@
     ],
     "data-governance": [
       "Comparatif - Plateformes data & IA",
+      "DataHub",
       "DataRobot",
       "Databricks",
       "Dataiku",
+      "OpenLineage",
+      "OpenMetadata",
       "Plateforme data & IA — concept",
       "Plateformes data & IA",
       "Snowflake"
@@ -631,6 +639,11 @@
     ],
     "data-leakage": [
       "Data leakage"
+    ],
+    "data-lineage": [
+      "DataHub",
+      "OpenLineage",
+      "OpenMetadata"
     ],
     "data-modeling": [
       "Architecture médaillon",
@@ -657,6 +670,7 @@
       "Logstash",
       "Mage",
       "Modélisation dimensionnelle",
+      "OpenLineage",
       "Orchestration",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Prefect",
@@ -675,6 +689,7 @@
       "Contrats de données & qualité",
       "Fiabilité des données",
       "Great Expectations",
+      "OpenMetadata",
       "SQLMesh",
       "Soda Core",
       "dbt Core",
@@ -4443,7 +4458,9 @@
         "[[dbt Core]]",
         "[[SQLMesh]]",
         "[[Airbyte]]",
-        "[[dlt]]"
+        "[[dlt]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -4808,7 +4825,9 @@
         "[[Kibana]]",
         "[[Logstash]]",
         "[[Beats]]",
-        "[[JanusGraph]]"
+        "[[JanusGraph]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -4936,7 +4955,10 @@
         "[[Elasticsearch]]",
         "[[Apache Solr]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
+      ],
       "maturite": "production"
     },
     {
@@ -5298,7 +5320,9 @@
         "[[MySQL Workbench]]",
         "[[Airbyte]]",
         "[[Debezium]]",
-        "[[Apache NiFi]]"
+        "[[Apache NiFi]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -5340,7 +5364,9 @@
         "[[Airbyte]]",
         "[[dlt]]",
         "[[Debezium]]",
-        "[[Apache NiFi]]"
+        "[[Apache NiFi]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -6130,7 +6156,9 @@
         "[[dbt Core]]",
         "[[SQLMesh]]",
         "[[Great Expectations]]",
-        "[[pandera]]"
+        "[[pandera]]",
+        "[[OpenLineage]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -6172,7 +6200,8 @@
         "[[dbt Core]]",
         "[[Airbyte]]",
         "[[Debezium]]",
-        "[[Apache NiFi]]"
+        "[[Apache NiFi]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -6446,6 +6475,48 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/DataHub.md",
+      "nom": "DataHub",
+      "alias": [
+        "datahub",
+        "DataHub Core",
+        "Acryl DataHub",
+        "DataHub Cloud"
+      ],
+      "role": "brique",
+      "categorie": "data/catalogue",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).",
+      "tags": [
+        "data-catalog",
+        "data-lineage",
+        "data-governance",
+        "data-contract"
+      ],
+      "alternatives": [
+        "[[OpenMetadata]]"
+      ],
+      "complements": [
+        "[[OpenLineage]]",
+        "[[Kafka]]",
+        "[[Airflow]]",
+        "[[Great Expectations]]",
+        "[[Spark]]",
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[ClickHouse]]",
+        "[[Apache Iceberg]]",
+        "[[Elasticsearch]]",
+        "[[OpenSearch]]",
+        "[[Kubernetes]]",
+        "[[Keycloak]]",
+        "[[Apache NiFi]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/EDA automatisée & profiling.md",
       "nom": "EDA automatisée & profiling",
       "alias": [
@@ -6653,7 +6724,9 @@
         "[[Airflow]]",
         "[[Postgres]]",
         "[[pandas]]",
-        "[[Spark]]"
+        "[[Spark]]",
+        "[[OpenLineage]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -6794,7 +6867,8 @@
       "alternatives": [],
       "complements": [
         "[[Debezium]]",
-        "[[Kafka]]"
+        "[[Kafka]]",
+        "[[OpenLineage]]"
       ],
       "maturite": "production"
     },
@@ -6866,7 +6940,9 @@
       "complements": [
         "[[Postgres]]",
         "[[MySQL]]",
-        "[[Apache Iceberg]]"
+        "[[Apache Iceberg]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -7229,7 +7305,10 @@
       "complements": [
         "[[Debezium]]",
         "[[Flink]]",
-        "[[Kestra]]"
+        "[[Kestra]]",
+        "[[OpenLineage]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -7382,6 +7461,76 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/OpenLineage.md",
+      "nom": "OpenLineage",
+      "alias": [
+        "openlineage",
+        "Open Lineage",
+        "OpenLineage spec"
+      ],
+      "role": "brique",
+      "categorie": "data/catalogue",
+      "famille": "specification",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data).",
+      "tags": [
+        "data-lineage",
+        "data-governance",
+        "data-pipeline"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[OpenMetadata]]",
+        "[[DataHub]]",
+        "[[Airflow]]",
+        "[[Dagster]]",
+        "[[dbt Core]]",
+        "[[Spark]]",
+        "[[Flink]]",
+        "[[Kafka]]",
+        "[[Great Expectations]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/OpenMetadata.md",
+      "nom": "OpenMetadata",
+      "alias": [
+        "openmetadata",
+        "Open Metadata"
+      ],
+      "role": "brique",
+      "categorie": "data/catalogue",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate).",
+      "tags": [
+        "data-catalog",
+        "data-lineage",
+        "data-governance",
+        "data-quality"
+      ],
+      "alternatives": [
+        "[[DataHub]]"
+      ],
+      "complements": [
+        "[[OpenLineage]]",
+        "[[Airflow]]",
+        "[[Kafka]]",
+        "[[Postgres]]",
+        "[[MySQL]]",
+        "[[ClickHouse]]",
+        "[[Elasticsearch]]",
+        "[[OpenSearch]]",
+        "[[Kubernetes]]",
+        "[[Keycloak]]",
+        "[[Apache NiFi]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Orchestration/Airflow.md",
       "nom": "Airflow",
       "alias": [
@@ -7413,7 +7562,10 @@
         "[[Great Expectations]]",
         "[[Airbyte]]",
         "[[dlt]]",
-        "[[Celery]]"
+        "[[Celery]]",
+        "[[OpenLineage]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -7464,7 +7616,8 @@
         "[[dbt Core]]",
         "[[pandera]]",
         "[[Airbyte]]",
-        "[[dlt]]"
+        "[[dlt]]",
+        "[[OpenLineage]]"
       ],
       "maturite": "production"
     },
@@ -8867,7 +9020,8 @@
         "[[ClickHouse]]",
         "[[Spark]]",
         "[[Parquet]]",
-        "[[Apache Iceberg]]"
+        "[[Apache Iceberg]]",
+        "[[OpenLineage]]"
       ],
       "maturite": "production"
     },
@@ -9453,7 +9607,9 @@
         "[[Trivy]]",
         "[[Redpanda]]",
         "[[NATS]]",
-        "[[RabbitMQ]]"
+        "[[RabbitMQ]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },
@@ -27239,7 +27395,9 @@
         "[[Airflow]]",
         "[[Langfuse]]",
         "[[Argo CD]]",
-        "[[Kubernetes]]"
+        "[[Kubernetes]]",
+        "[[OpenMetadata]]",
+        "[[DataHub]]"
       ],
       "maturite": "production"
     },

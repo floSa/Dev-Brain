@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Authentik]]", "[[Authelia]]"]
-complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]"]
+complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://www.keycloak.org/documentation
 url_repo: https://github.com/keycloak/keycloak
@@ -72,6 +72,8 @@ Fournisseur d'identité et de gestion des accès en Java sur Quarkus. Il tient l
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry. — variables `AUTH_KEYCLOAK_*` dédiées à l'authentification unique.
 - [[Argo CD]] — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé). — sa documentation décrit Keycloak en OIDC natif avec PKCE.
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — l'opérateur Keycloak s'y déploie ; l'API de Kubernetes accepte l'OIDC mais ne fournit pas de fournisseur.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — SSO listé parmi les fournisseurs de la page de sécurité d'OpenMetadata.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — OIDC : la documentation de DataHub le cite en lien de référence, sans guide dédié.
 
 ## Ressources
 

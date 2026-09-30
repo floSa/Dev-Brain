@@ -11,7 +11,7 @@ maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[Postgres]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[MySQL Workbench]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]"]
+complements: ["[[MySQL Workbench]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [relational]
 url_docs: https://dev.mysql.com/doc/
 url_repo: https://github.com/mysql/mysql-server
@@ -69,6 +69,8 @@ commerciale.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — source avec CDC par le binlog, marquée alpha dans son `metadata.yaml`.
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — source par le binlog (`binlog_format=ROW`), versions 8.0, 8.4 et 9.7.
 - [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — `CaptureChangeMySQL` lit son journal : la seule base dotée d'un processeur CDC.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — base possible du serveur (MySQL 8.0.42 ou plus) et connecteur de base.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — base possible du serveur et source listée en GA.
 
 ## Ressources
 

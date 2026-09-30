@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: "Python, Rust"
 alternatives: ["[[SQLMesh]]"]
-complements: ["[[Airflow]]", "[[Dagster]]", "[[Prefect]]", "[[Kestra]]", "[[Postgres]]", "[[DuckDB]]", "[[ClickHouse]]", "[[Spark]]", "[[Parquet]]", "[[Apache Iceberg]]"]
+complements: ["[[Airflow]]", "[[Dagster]]", "[[Prefect]]", "[[Kestra]]", "[[Postgres]]", "[[DuckDB]]", "[[ClickHouse]]", "[[Spark]]", "[[Parquet]]", "[[Apache Iceberg]]", "[[OpenLineage]]"]
 tags: [data-transformation, data-pipeline, data-quality]
 url_docs: https://docs.getdbt.com/
 url_repo: https://github.com/dbt-labs/dbt-core
@@ -89,6 +89,7 @@ Deux sources se contredisent sur le lignage colonne : la feuille de route de jui
 - [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark. — `dbt-spark` (1.11.0, 2026-07-16), maintenu par dbt Labs ; connexions ODBC, Thrift, HTTP et session, formats de fichier `parquet`, `delta`, `iceberg` et `hudi` ; en dbt v2 il est en bêta, limité à Spark 3.0.
 - [[Parquet]] — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet. — dbt-duckdb écrit du Parquet par la matérialisation `external` (`format: parquet`) et dbt-spark le prend comme `file_format`.
 - [[Apache Iceberg]] — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB). — dbt-spark accepte `file_format: iceberg` ; la documentation dbt des catalogues Iceberg (`catalogs.yml`, dbt 1.10) détaille Snowflake, BigQuery, Databricks et DuckDB (ce dernier en dbt v2 seulement) et ne dit rien d'Iceberg pour Trino ni pour ClickHouse.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — `dbt-ol` (1.53.0) remplace la commande `dbt` un pour un, en mode artefacts (`manifest.json`, `run_results.json`, `catalog.json`) ou journaux structurés ; lignage colonne si l'analyse est activée. Le paquet exige dbt-core 1.0 ou plus ; la compatibilité avec dbt v2 n'a pas été relevée.
 
 ## Ressources
 

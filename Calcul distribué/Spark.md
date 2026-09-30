@@ -11,7 +11,7 @@ maturite: production
 langage: Scala / JVM
 scaling: distributed
 alternatives: ["[[Dask]]", "[[Ray]]"]
-complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[pandera]]"]
+complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[pandera]]", "[[OpenLineage]]", "[[DataHub]]"]
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
 url_repo: https://github.com/apache/spark
@@ -69,6 +69,8 @@ ajoute Spark Connect, le type VARIANT, l'ANSI SQL par défaut et Java 21.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge, conçu et testé pour un seul catalogue, qui ne peut pas héberger l'état.
 - [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — les DataFrames Spark se valident par `add_spark(...)` (extra `spark`) et Spark figure dans la liste de compatibilité officielle.
 - [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — PySpark SQL est de première classe (schéma, modèle, checks, validation paresseuse), par l'extra `pyspark`.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — écouteur `OpenLineageSparkListener` (`spark.extraListeners`), avec une section de lignage colonne dans la documentation.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — agent Spark propre à DataHub, qui complète l'écouteur OpenLineage (PathSpec, lignage colonne).
 
 ## Ressources
 
