@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Authentik]]", "[[Authelia]]"]
-complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]"]
+complements: ["[[Grafana]]", "[[Airflow]]", "[[Langfuse]]", "[[Argo CD]]", "[[Kubernetes]]", "[[OpenMetadata]]", "[[DataHub]]", "[[CVAT]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://www.keycloak.org/documentation
 url_repo: https://github.com/keycloak/keycloak
@@ -74,6 +74,7 @@ Fournisseur d'identité et de gestion des accès en Java sur Quarkus. Il tient l
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — l'opérateur Keycloak s'y déploie ; l'API de Kubernetes accepte l'OIDC mais ne fournit pas de fournisseur.
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — SSO listé parmi les fournisseurs de la page de sécurité d'OpenMetadata.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — OIDC : la documentation de DataHub le cite en lien de référence, sans guide dédié.
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — guide de configuration OIDC et SAML dans la page SSO de CVAT, valable pour l'édition Enterprise seulement.
 
 ## Ressources
 

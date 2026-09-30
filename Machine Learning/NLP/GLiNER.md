@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: beta
 langage: Python
 alternatives: ["[[spaCy]]"]
-complements: []
+complements: ["[[Label Studio]]"]
 tags: [ner, nlp, transformers]
 url_docs: https://github.com/urchade/GLiNER
 url_repo: https://github.com/urchade/GLiNER
@@ -57,6 +57,10 @@ existent.
 ### Alternatives
 
 - [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs.
+
+### Compléments
+
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemple officiel `gliner` : reconnaissance d'entités à zéro exemple, pour amorcer l'annotation avant d'avoir des étiquettes.
 
 ## Ressources
 

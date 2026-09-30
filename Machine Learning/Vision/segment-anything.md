@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Detectron2]]"]
-complements: ["[[supervision]]"]
+complements: ["[[supervision]]", "[[Label Studio]]", "[[CVAT]]"]
 tags: [segmentation, foundation-model, computer-vision, transformers, deep-learning, gpu]
 url_docs: https://segment-anything.com/
 url_repo: https://github.com/facebookresearch/segment-anything
@@ -63,6 +63,8 @@ SAM segmente mais ne nomme pas : le nommage vient d'un modèle en amont.
 ### Compléments
 
 - [[supervision]] — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application. — le connecteur qui exploite les masques SAM en aval
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemples officiels `segment_anything_model`, `segment_anything_2_image` et `segment_anything_2_video` : segmentation interactive à partir de points ou de boîtes.
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — fonction serverless `pytorch/facebookresearch/sam` pour segmenter par clic ; SAM 2 et SAM 3 sont réservés à Enterprise et Online.
 
 ## Ressources
 

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 904 pages actives.
+> 907 pages actives.
 
 ## Par page
 
@@ -350,6 +350,11 @@
 - liens sortants : [[Comparatif - Scraping]], [[Playwright]], [[Web scraping]], [[cloudscraper]], [[selectolax]]
 - liens entrants : [[Comparatif - Scraping]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Playwright]], [[Scraping]], [[Web scraping]], [[cloudscraper]], [[selectolax]]
 
+### CVAT  ·  brique
+- tags : `annotation`, `computer-vision`, `object-detection`, `segmentation`, `human-in-the-loop`, `self-hosted`
+- liens sortants : [[Annotation de données]], [[Detectron2]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[Label Studio]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
+- liens entrants : [[Annotation de données]], [[Detectron2]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[Label Studio]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]]
+
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[OpenLineage]], [[Orchestration]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]], [[pandera]]
@@ -447,8 +452,8 @@
 
 ### Detectron2  ·  brique
 - tags : `object-detection`, `segmentation`, `computer-vision`, `deep-learning`, `gpu`
-- liens sortants : [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[HuggingFace]], [[PyTorch]], [[Segmentation]], [[Ultralytics YOLO]], [[segment-anything]], [[supervision]], [[torchvision]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]], [[supervision]]
+- liens sortants : [[CVAT]], [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[HuggingFace]], [[PyTorch]], [[Segmentation]], [[Ultralytics YOLO]], [[segment-anything]], [[supervision]], [[torchvision]]
+- liens entrants : [[Annotation de données]], [[CVAT]], [[Comparatif - Détection & segmentation]], [[Détection d'objets]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]], [[supervision]]
 
 ### Dgraph  ·  brique
 - tags : `graph-db`, `distributed`
@@ -472,8 +477,8 @@
 
 ### Docker Compose  ·  brique
 - tags : `container`
-- liens sortants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
-- liens entrants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
+- liens sortants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
+- liens entrants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -647,8 +652,8 @@
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
-- liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[Traitement du langage naturel]], [[spaCy]]
-- liens entrants : [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[NER et étiquetage de séquence]], [[NLP]], [[Traitement du langage naturel]], [[needle]], [[spaCy]]
+- liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[Label Studio]], [[NER et étiquetage de séquence]], [[Traitement du langage naturel]], [[spaCy]]
+- liens entrants : [[Annotation de données]], [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[Label Studio]], [[NER et étiquetage de séquence]], [[NLP]], [[Traitement du langage naturel]], [[needle]], [[spaCy]]
 
 ### Google Cloud Vertex AI  ·  brique
 - tags : `ml-platform`, `model-serving`, `model-registry`, `ml-pipeline`, `automl`, `llm`
@@ -847,8 +852,8 @@
 
 ### Keycloak  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
-- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]]
-- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Gestion des secrets]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]], [[PyJWT]], [[Sécurité]]
+- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]]
+- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Gestion des secrets]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]], [[PyJWT]], [[Sécurité]]
 
 ### Kibana  ·  brique
 - tags : `observability`, `logging`, `dashboard`
@@ -867,8 +872,13 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[k3s]]
+
+### Label Studio  ·  brique
+- tags : `annotation`, `human-in-the-loop`, `self-hosted`, `computer-vision`, `ner`
+- liens sortants : [[Annotation de données]], [[CVAT]], [[Docker Compose]], [[GLiNER]], [[Kubernetes]], [[Machine Learning]], [[NER et étiquetage de séquence]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]], [[spaCy]]
+- liens entrants : [[Annotation de données]], [[CVAT]], [[Docker Compose]], [[GLiNER]], [[Kubernetes]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]], [[spaCy]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1442,8 +1452,8 @@
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
-- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Great Expectations]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Bases de données]], [[CVAT]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Great Expectations]], [[Label Studio]], [[MariaDB]], [[Microsoft SQL Server]], [[MySQL]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1737,8 +1747,8 @@
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
-- liens sortants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[HuggingFace]], [[Modèles de fondation vision]], [[PyTorch]], [[Segment Anything (SAM)]], [[Segmentation]], [[supervision]], [[torchvision]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Segment Anything (SAM)]], [[Vision]], [[supervision]]
+- liens sortants : [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[HuggingFace]], [[Label Studio]], [[Modèles de fondation vision]], [[PyTorch]], [[Segment Anything (SAM)]], [[Segmentation]], [[supervision]], [[torchvision]]
+- liens entrants : [[Annotation de données]], [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Label Studio]], [[Segment Anything (SAM)]], [[Vision]], [[supervision]]
 
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
@@ -1827,8 +1837,8 @@
 
 ### spaCy  ·  brique
 - tags : `nlp`, `ner`, `sequence-labeling`, `tokenization`
-- liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[GLiNER]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[NLTK]], [[Scikit-Learn]], [[Tokenization]], [[Traitement du langage naturel]]
-- liens entrants : [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[GLiNER]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[TF-IDF]], [[Traitement du langage naturel]]
+- liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[GLiNER]], [[HuggingFace]], [[Label Studio]], [[NER et étiquetage de séquence]], [[NLTK]], [[Scikit-Learn]], [[Tokenization]], [[Traitement du langage naturel]]
+- liens entrants : [[Annotation de données]], [[Comparatif - NLP]], [[Construction de graphes de connaissances]], [[GLiNER]], [[HuggingFace]], [[Label Studio]], [[NER et étiquetage de séquence]], [[NLP]], [[NLTK]], [[TF-IDF]], [[Traitement du langage naturel]]
 
 ### Spark  ·  brique
 - tags : `distributed`, `dataframe`, `streaming`, `out-of-core`
@@ -2052,8 +2062,8 @@
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
-- liens sortants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[supervision]], [[torchvision]]
-- liens entrants : [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Vision]], [[supervision]]
+- liens sortants : [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Label Studio]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[supervision]], [[torchvision]]
+- liens entrants : [[Annotation de données]], [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Label Studio]], [[Vision]], [[supervision]]
 
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -2632,8 +2642,8 @@
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
-- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[LLM & IA générative]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
+- liens sortants : [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
+- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -2858,7 +2868,7 @@
 ### Vision  ·  hub
 - tags : `computer-vision`, `cnn`, `vit`, `object-detection`, `segmentation`, `image-classification`, `data-augmentation`, `object-tracking`, `transfer-learning`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Classification d'images]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Documents]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[LLM & IA générative]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Modèles de langage]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Parsing]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Serving]], [[Suivi d'objets]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[supervision]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage profond]], [[Kornia]], [[Machine Learning]], [[Modèles de langage]], [[timm]], [[torchvision]]
+- liens entrants : [[Apprentissage profond]], [[CVAT]], [[Kornia]], [[Machine Learning]], [[Modèles de langage]], [[timm]], [[torchvision]]
 
 ### Visualisation  ·  hub
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `statistical-viz`
@@ -2965,6 +2975,11 @@
 - liens sortants : [[Classification]], [[Compromis biais-variance]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[MANOVA et tests multivariés]], [[Mise à l'échelle]], [[Naive Bayes]], [[PCA]], [[Réduction de dimension]], [[Régression logistique]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
 - liens entrants : [[Apprentissage supervisé]], [[Classification]], [[MANOVA et tests multivariés]], [[Machine Learning]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
 
+### Annotation de données  ·  notion
+- tags : `annotation`, `human-in-the-loop`, `supervised`, `self-hosted`
+- liens sortants : [[Augmentation d'images]], [[CVAT]], [[Data leakage]], [[Detectron2]], [[GLiNER]], [[Label Studio]], [[NER et étiquetage de séquence]], [[Ultralytics YOLO]], [[Validation croisée]], [[Versionnage de données]], [[segment-anything]], [[spaCy]]
+- liens entrants : [[CVAT]], [[Label Studio]], [[Machine Learning]]
+
 ### Apprentissage auto-supervisé en vision  ·  notion
 - tags : `self-supervised`, `representation-learning`, `computer-vision`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
@@ -3033,7 +3048,7 @@
 ### Augmentation d'images  ·  notion
 - tags : `data-augmentation`, `regularization`, `computer-vision`, `deep-learning`
 - liens sortants : [[CNN]], [[Compromis biais-variance]], [[Cross-entropy]], [[Distillation]], [[Imbalanced classification]], [[Kornia]], [[Transfer learning vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[Segmentation]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
+- liens entrants : [[Annotation de données]], [[Apprentissage auto-supervisé en vision]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Kornia]], [[Segmentation]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[torchvision]]
 
 ### Autocorrelation  ·  notion
 - tags : `timeseries`, `stochastic-process`
@@ -3238,7 +3253,7 @@
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
 - liens sortants : [[Encodage des variables catégorielles]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Validation croisée]]
-- liens entrants : [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Featuretools]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Plateforme data & IA — concept]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[category_encoders]], [[imbalanced-learn]], [[ydata-profiling]], [[Évaluation de modèles]]
+- liens entrants : [[Annotation de données]], [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Featuretools]], [[Imbalanced classification]], [[Interprétabilité]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Plateforme data & IA — concept]], [[Probing]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[category_encoders]], [[imbalanced-learn]], [[ydata-profiling]], [[Évaluation de modèles]]
 
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -3843,7 +3858,7 @@
 ### NER et étiquetage de séquence  ·  notion
 - tags : `nlp`, `ner`, `sequence-labeling`, `supervised`
 - liens sortants : [[Classification de texte]], [[Construction de graphes de connaissances]], [[Cross-entropy]], [[GLiNER]], [[HuggingFace]], [[RAG]], [[Self-attention]], [[Tokenization]], [[Traitement du langage naturel]], [[Transformer architectures]], [[embeddings]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
-- liens entrants : [[Classification de texte]], [[Construction de graphes de connaissances]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[NLP]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Traitement du langage naturel]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
+- liens entrants : [[Annotation de données]], [[Classification de texte]], [[Construction de graphes de connaissances]], [[Fuzzy matching & similarité de chaînes]], [[GLiNER]], [[Label Studio]], [[NLP]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Traitement du langage naturel]], [[pytorch-crf]], [[seqeval]], [[spaCy]]
 
 ### Newton & quasi-Newton  ·  notion
 - tags : `optimization`, `second-order`
@@ -4418,7 +4433,7 @@
 ### Validation croisée  ·  notion
 - tags : `model-evaluation`, `resampling`, `supervised`
 - liens sortants : [[Apprentissage supervisé]], [[Bootstrap]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[ROC-AUC / courbe PR]], [[Regression metrics]], [[Scikit-Learn]], [[Walk-forward CV]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Plateforme data & IA — concept]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]], [[Évaluation de modèles]]
+- liens entrants : [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Plateforme data & IA — concept]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]], [[Évaluation de modèles]]
 
 ### Value functions  ·  notion
 - tags : `reinforcement-learning`, `value-function`
@@ -4438,7 +4453,7 @@
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
 - liens sortants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]]
-- liens entrants : [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]]
+- liens entrants : [[Annotation de données]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]]
 
 ### Video generation  ·  notion
 - tags : `generative-model`, `video-generation`, `diffusion`, `multimodal`
@@ -4536,6 +4551,7 @@
 - `alerting` : Alertmanager, Netdata, Prometheus, SLO et alerting, Uptime Kuma, Zabbix
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
+- `annotation` : Annotation de données, CVAT, Label Studio
 - `anomaly-detection` : Comparatif - Détection d'anomalies, Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
@@ -4565,7 +4581,7 @@
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, LanceDB, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, Optimisation, Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
-- `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
+- `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, River  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
@@ -4649,7 +4665,7 @@
 - `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
 - `guardrails` : Guardrails, Systèmes IA, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
-- `human-in-the-loop` : Human-in-the-loop, Pattern - RAG structuré graphe + human-in-the-loop
+- `human-in-the-loop` : Annotation de données, CVAT, Human-in-the-loop, Label Studio, Pattern - RAG structuré graphe + human-in-the-loop
 - `hybrid-search` : Choisir un modèle d'embedding, FastEmbed, Haystack, Hybrid retrieval, Meilisearch, OpenSearch, Recherche d'information, Typesense, Vespa, Weaviate, bge-m3
 - `hypermedia` : Comparatif - Frontends web légers, HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Comparatif - Optimisation d'hyperparamètres, Hyperopt, Machine Learning, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune, Suivi d'expériences
@@ -4724,7 +4740,7 @@
 - `multiple-testing` : Correction des tests multiples
 - `multivariate` : MANOVA et tests multivariés  — pas de page concept dédiée
 - `mutual-information` : Mutual information, Théorie de l'information
-- `ner` : Comparatif - NLP, Construction de graphes de connaissances, GLiNER, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
+- `ner` : Comparatif - NLP, Construction de graphes de connaissances, GLiNER, Label Studio, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
 - `networking` : Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
 - `neural-rendering` : Rendu neuronal 3D & estimation de profondeur  — pas de page concept dédiée
 - `nlp` : BM25, Classification de texte, Comparatif - NLP, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLP, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
@@ -4733,7 +4749,7 @@
 - `nosql` : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
-- `object-detection` : Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
+- `object-detection` : CVAT, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
 - `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
@@ -4807,8 +4823,8 @@
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
-- `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Airbyte, Alertmanager, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
+- `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
+- `self-hosted` : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4830,7 +4846,7 @@
 - `streaming` : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
 - `string-matching` : Fuzzy matching & similarité de chaînes, NLP, Pattern - Pipeline scraping → matching → optimisation
 - `structured-output` : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use  — pas de page concept dédiée
-- `supervised` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN  — pas de page concept dédiée
+- `supervised` : AdaBoost, Analyse discriminante, Annotation de données, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN  — pas de page concept dédiée
 - `supply-chain` : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy  — pas de page concept dédiée
 - `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, Tests & estimation, lifelines
 - `synthetic-data` : Distillation, Faker, Fine-tuning, Mimesis, SDV, Synthetic data generation
@@ -5039,7 +5055,7 @@
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
-- `self-hosted` (porté par : Airbyte, Alertmanager, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
+- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubernetes, Label Studio, Meilisearch, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
@@ -5053,7 +5069,7 @@
 - `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
 - `streaming` (porté par : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use)
-- `supervised` (porté par : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
+- `supervised` (porté par : AdaBoost, Analyse discriminante, Annotation de données, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
 - `supply-chain` (porté par : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy)
 - `table-extraction` (porté par : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber)
 - `task-queue` (porté par : Celery, Comparatif - Brokers de messages, Messagerie)
