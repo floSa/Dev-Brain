@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[Neo4j]]"]
+alternatives: ["[[Neo4j]]", "[[JanusGraph]]", "[[Dgraph]]"]
 complements: []
 tags: [graph-db, distributed]
 url_docs: https://docs.nebula-graph.io/
@@ -64,6 +64,8 @@ vectorielle sont annoncés dans l'édition Enterprise 5.x, dont le code n'est pa
 ### Alternatives
 
 - [[Neo4j]] — SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).
+- [[JanusGraph]] — Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024.
+- [[Dgraph]] — Base de graphes distribuée en Go (Apache-2.0) — sharding par prédicat, Raft, DQL et GraphQL natif ; reprise par Istari Digital en 2025, sans offre managée ni Cypher, et à la gouvernance encore fragile.
 
 ## Ressources
 
