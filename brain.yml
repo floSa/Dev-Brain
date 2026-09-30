@@ -1088,6 +1088,21 @@ axes:
           frontend: {}
           api:
             frontiere: "Accueille un annuaire multi-domaines dont l intention de recherche est l API — public-apis (D-R7)."
+          proxy:
+            libelle: "Reverse proxies"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur
+              existante ne rangeait un reverse proxy (web/backend l aurait mele a
+              Uvicorn et Flask, et le comparatif, filtre par categorie, aurait
+              liste FastAPI avec Traefik). Libelle « Reverse proxies » : le nom
+              d usage, et il ne redouble ni « Web & API » ni le nom d une page
+              (la notion s appelle « Reverse proxy et TLS »).
+            frontiere: >
+              L intermediaire place DEVANT des services pour les exposer :
+              terminaison TLS, certificats, repartition de charge, routage par
+              nom d hote ou par chemin. Distinct de web/backend (le serveur qui
+              EXECUTE l application) et de network/analyse (observer le trafic
+              sans le router).
 
       - cle: ui
         dossier: "Interfaces & apps data"
