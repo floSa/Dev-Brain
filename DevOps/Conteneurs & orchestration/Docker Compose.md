@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[k3s]]", "[[Kubernetes]]"]
-complements: ["[[Docker]]", "[[Podman]]"]
+complements: ["[[Docker]]", "[[Podman]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]"]
 tags: [container]
 url_docs: https://docs.docker.com/compose/
 url_repo: https://github.com/docker/compose
@@ -72,6 +72,9 @@ supporté depuis juin 2023.
 
 - [[Docker]] — Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre. — le moteur que Compose pilote
 - [[Podman]] — Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.
+- [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — le provider Docker lit les labels des services de la pile.
+- [[Caddy]] — Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire. — l'image officielle et ses deux volumes tiennent dans un service de la pile.
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — `nginx-proxy` et `acme-companion` lisent les conteneurs de la pile.
 
 ## Ressources
 

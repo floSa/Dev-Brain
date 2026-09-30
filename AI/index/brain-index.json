@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 851,
+  "count": 855,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -512,6 +512,7 @@
       "Podman",
       "Rule - Packaging démo",
       "Sandboxing de code généré",
+      "Traefik",
       "k3s",
       "testcontainers"
     ],
@@ -1453,8 +1454,10 @@
       "KServe",
       "Kubernetes",
       "Microsoft Azure Machine Learning",
+      "Nginx",
       "Seldon Core",
       "Serving",
+      "Traefik",
       "k3s"
     ],
     "lakehouse": [
@@ -1723,6 +1726,11 @@
       "Langfuse",
       "Observabilité des LLM",
       "Phoenix Arize"
+    ],
+    "load-balancer": [
+      "HAProxy",
+      "Nginx",
+      "Traefik"
     ],
     "local-llm": [
       "Assistants",
@@ -2744,6 +2752,12 @@
       "open_deep_research",
       "sentence-transformers"
     ],
+    "reverse-proxy": [
+      "Caddy",
+      "HAProxy",
+      "Nginx",
+      "Traefik"
+    ],
     "reward-shaping": [
       "Reward shaping and hacking"
     ],
@@ -2834,12 +2848,15 @@
       "Argo CD",
       "Automatisation no-code",
       "Beszel",
+      "Caddy",
       "Choisir un modèle d'embedding",
       "Dataiku",
+      "HAProxy",
       "Infinity",
       "Kubernetes",
       "Meilisearch",
       "Netdata",
+      "Nginx",
       "Observabilité",
       "OpenMAIC",
       "OpenTelemetry",
@@ -2849,6 +2866,7 @@
       "Stockage",
       "Tempo",
       "Text Embeddings Inference",
+      "Traefik",
       "Typesense",
       "Uptime Kuma",
       "VictoriaMetrics",
@@ -3151,6 +3169,12 @@
       "neuralforecast",
       "pmdarima",
       "statsforecast"
+    ],
+    "tls": [
+      "Caddy",
+      "HAProxy",
+      "Nginx",
+      "Traefik"
     ],
     "token-optimization": [
       "Headroom"
@@ -8270,7 +8294,9 @@
       "complements": [
         "[[Kubernetes]]",
         "[[Helm]]",
-        "[[GitHub Actions]]"
+        "[[GitHub Actions]]",
+        "[[Traefik]]",
+        "[[Nginx]]"
       ],
       "maturite": "production"
     },
@@ -8340,7 +8366,10 @@
       ],
       "complements": [
         "[[Docker]]",
-        "[[Podman]]"
+        "[[Podman]]",
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]"
       ],
       "maturite": "production"
     },
@@ -8450,7 +8479,10 @@
         "[[KServe]]",
         "[[Seldon Core]]",
         "[[Ray Serve]]",
-        "[[BentoML]]"
+        "[[BentoML]]",
+        "[[Traefik]]",
+        "[[Nginx]]",
+        "[[HAProxy]]"
       ],
       "maturite": "production"
     },
@@ -8502,7 +8534,8 @@
         "[[Docker Compose]]"
       ],
       "complements": [
-        "[[Helm]]"
+        "[[Helm]]",
+        "[[Traefik]]"
       ],
       "maturite": "production"
     },
@@ -22873,7 +22906,11 @@
       "complements": [
         "[[Alertmanager]]",
         "[[Grafana]]",
-        "[[OpenTelemetry]]"
+        "[[OpenTelemetry]]",
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]",
+        "[[HAProxy]]"
       ],
       "maturite": "production"
     },
@@ -26108,6 +26145,34 @@
       "maturite": "deprecated"
     },
     {
+      "path": "Web & API/Caddy.md",
+      "nom": "Caddy",
+      "alias": [
+        "caddy server"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Traefik]]",
+        "[[Nginx]]",
+        "[[HAProxy]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]",
+        "[[Prometheus]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Web & API/FastAPI.md",
       "nom": "FastAPI",
       "alias": [
@@ -26129,7 +26194,9 @@
       "complements": [
         "[[Uvicorn]]",
         "[[HTMX]]",
-        "[[SQLModel]]"
+        "[[SQLModel]]",
+        "[[Traefik]]",
+        "[[Nginx]]"
       ],
       "maturite": "production"
     },
@@ -26151,7 +26218,38 @@
       "alternatives": [
         "[[FastAPI]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Nginx]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/HAProxy.md",
+      "nom": "HAProxy",
+      "alias": [
+        "haproxy.cfg"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Répartiteur de charge TCP et HTTP à haute performance, configuré dans un seul haproxy.cfg (GPL-2.0, C, HAProxy Technologies) — health checks actifs, stick-tables et rechargement sans coupure ; ne sert pas de fichiers statiques, ACME natif encore expérimental, WAF et synchronisation multi-nœuds réservés à l'édition Enterprise.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]"
+      ],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[Prometheus]]"
+      ],
       "maturite": "production"
     },
     {
@@ -26199,6 +26297,76 @@
       "maturite": "production"
     },
     {
+      "path": "Web & API/Nginx.md",
+      "nom": "Nginx",
+      "alias": [
+        "nginx.conf"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer",
+        "kubernetes",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[HAProxy]]"
+      ],
+      "complements": [
+        "[[Uvicorn]]",
+        "[[Docker Compose]]",
+        "[[Kubernetes]]",
+        "[[Argo CD]]",
+        "[[Prometheus]]",
+        "[[FastAPI]]",
+        "[[Flask]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Web & API/Traefik.md",
+      "nom": "Traefik",
+      "alias": [
+        "traefik proxy"
+      ],
+      "role": "brique",
+      "categorie": "web/proxy",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub.",
+      "tags": [
+        "reverse-proxy",
+        "tls",
+        "load-balancer",
+        "container",
+        "kubernetes",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Caddy]]",
+        "[[Nginx]]",
+        "[[HAProxy]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]",
+        "[[k3s]]",
+        "[[Kubernetes]]",
+        "[[Argo CD]]",
+        "[[Prometheus]]",
+        "[[FastAPI]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Web & API/Uvicorn.md",
       "nom": "Uvicorn",
       "alias": [
@@ -26215,7 +26383,8 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[FastAPI]]"
+        "[[FastAPI]]",
+        "[[Nginx]]"
       ],
       "maturite": "production"
     },

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 851 pages actives.
+> 855 pages actives.
 
 ## Par page
 
@@ -122,8 +122,8 @@
 
 ### Argo CD  ·  brique
 - tags : `ci-cd`, `kubernetes`, `gitops`, `self-hosted`
-- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
+- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]], [[Nginx]], [[Traefik]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]], [[Nginx]], [[Traefik]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
@@ -199,6 +199,11 @@
 - tags : `api-client`, `version-control`
 - liens sortants : [[Comparatif - Clients d'API]], [[Outils de développement]], [[Postman]]
 - liens entrants : [[Comparatif - Clients d'API]], [[Outils de développement]], [[Postman]], [[public-apis]]
+
+### Caddy  ·  brique
+- tags : `reverse-proxy`, `tls`, `self-hosted`
+- liens sortants : [[Docker Compose]], [[HAProxy]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Web & API]]
+- liens entrants : [[Docker Compose]], [[HAProxy]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Web & API]]
 
 ### Captum  ·  brique
 - tags : `explainability`, `deep-learning`
@@ -417,8 +422,8 @@
 
 ### Docker Compose  ·  brique
 - tags : `container`
-- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Podman]], [[k3s]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens sortants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
+- liens entrants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -497,8 +502,8 @@
 
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
-- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Pydantic]], [[SQLModel]], [[Uvicorn]], [[Web & API]]
-- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]]
+- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Nginx]], [[Pydantic]], [[SQLModel]], [[Traefik]], [[Uvicorn]], [[Web & API]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[Nginx]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Traefik]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]]
 
 ### FastEmbed  ·  brique
 - tags : `embeddings`, `inference`, `semantic-search`, `reranking`, `hybrid-search`
@@ -537,8 +542,8 @@
 
 ### Flask  ·  brique
 - tags : `web-framework`
-- liens sortants : [[FastAPI]], [[Jinja2]], [[Web & API]]
-- liens entrants : [[FastAPI]], [[HTMX]], [[Jinja2]], [[Web & API]]
+- liens sortants : [[FastAPI]], [[Jinja2]], [[Nginx]], [[Web & API]]
+- liens entrants : [[FastAPI]], [[HTMX]], [[Jinja2]], [[Nginx]], [[Web & API]]
 
 ### Flink  ·  brique
 - tags : `streaming`, `distributed`
@@ -624,6 +629,11 @@
 - tags : `reinforcement-learning`
 - liens sortants : [[Comparatif - Reinforcement learning]], [[Markov Decision Process]], [[OpenSpiel]], [[Reinforcement learning]], [[Stable-Baselines3]], [[TF-Agents]]
 - liens entrants : [[Acme]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[OpenSpiel]], [[PPO]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Q-learning and DQN]], [[Reinforcement learning]], [[Stable-Baselines3]], [[TF-Agents]]
+
+### HAProxy  ·  brique
+- tags : `reverse-proxy`, `tls`, `load-balancer`, `self-hosted`
+- liens sortants : [[Caddy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Web & API]]
+- liens entrants : [[Caddy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Web & API]]
 
 ### Haystack  ·  brique
 - tags : `llm`, `rag`, `semantic-search`, `hybrid-search`, `agents`
@@ -752,8 +762,8 @@
 
 ### k3s  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]]
+- liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]], [[Traefik]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]], [[Traefik]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -782,8 +792,8 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Nginx]], [[Ray Serve]], [[Seldon Core]], [[Traefik]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Nginx]], [[Ray Serve]], [[Seldon Core]], [[Traefik]], [[k3s]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1085,6 +1095,11 @@
 - liens sortants : [[Comparatif - Forecasting]], [[Forecasting framing]], [[Prophet]], [[PyTorch]], [[darts]], [[statsforecast]]
 - liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Foundation models pour séries temporelles]], [[Prophet]], [[Séries temporelles]], [[Time series feature engineering]], [[darts]], [[pmdarima]], [[statsforecast]]
 
+### Nginx  ·  brique
+- tags : `reverse-proxy`, `tls`, `load-balancer`, `kubernetes`, `self-hosted`
+- liens sortants : [[Argo CD]], [[Caddy]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[Web & API]]
+- liens entrants : [[Argo CD]], [[Caddy]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[Web & API]]
+
 ### NLTK  ·  brique
 - tags : `nlp`, `tokenization`, `text-classification`
 - liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[Tokenization]], [[Traitement du langage naturel]], [[spaCy]]
@@ -1357,8 +1372,8 @@
 
 ### Prometheus  ·  brique
 - tags : `observability`, `metrics`, `alerting`, `self-hosted`
-- liens sortants : [[Alertmanager]], [[Grafana]], [[Loki]], [[Métriques, logs et traces]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus-Eval]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
-- liens entrants : [[Alertmanager]], [[Grafana]], [[Métriques, logs et traces]], [[Netdata]], [[Observabilité]], [[OpenTelemetry]], [[SLO et alerting]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
+- liens sortants : [[Alertmanager]], [[Caddy]], [[Grafana]], [[HAProxy]], [[Loki]], [[Métriques, logs et traces]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus-Eval]], [[SLO et alerting]], [[Tempo]], [[Traefik]], [[VictoriaMetrics]], [[Zabbix]]
+- liens entrants : [[Alertmanager]], [[Caddy]], [[Grafana]], [[HAProxy]], [[Métriques, logs et traces]], [[Netdata]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[SLO et alerting]], [[Traefik]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
 
 ### Prometheus-Eval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `local-llm`
@@ -1860,6 +1875,11 @@
 - liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Kornia]], [[OpenCV]], [[PyTorch]], [[Transfer learning vision]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[timm]]
 - liens entrants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Detectron2]], [[Détection d'objets]], [[Kornia]], [[OpenCV]], [[PyTorch Geometric]], [[Transfer learning vision]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[segment-anything]], [[timm]]
 
+### Traefik  ·  brique
+- tags : `reverse-proxy`, `tls`, `load-balancer`, `container`, `kubernetes`, `self-hosted`
+- liens sortants : [[Argo CD]], [[Caddy]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Web & API]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Caddy]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Web & API]], [[k3s]]
+
 ### TransformerLens  ·  brique
 - tags : `explainability`, `llm`
 - liens sortants : [[Captum]], [[Comparatif - Explicabilité]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[SAELens]], [[Self-attention]], [[Sparse autoencoders]], [[Superposition]], [[Transformer architectures]], [[interpreto]], [[nnsight]]
@@ -1927,8 +1947,8 @@
 
 ### Uvicorn  ·  brique
 - tags : `web-framework`
-- liens sortants : [[FastAPI]], [[Web & API]]
-- liens entrants : [[FastAPI]], [[Pattern - Stack démo ML locale multi-services]], [[Web & API]]
+- liens sortants : [[FastAPI]], [[Nginx]], [[Web & API]]
+- liens entrants : [[FastAPI]], [[Nginx]], [[Pattern - Stack démo ML locale multi-services]], [[Web & API]]
 
 ### Vanna  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `local-llm`
@@ -2642,8 +2662,8 @@
 
 ### Web & API  ·  hub
 - tags : `web-framework`, `api-client`, `hypermedia`, `templating`
-- liens sortants : [[FastAPI]], [[Flask]], [[Gradio]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Pydantic]], [[Streamlit]], [[Uvicorn]], [[public-apis]]
-- liens entrants : [[AI Engineering]], [[Data Engineering]], [[FastAPI]], [[Flask]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[MLOps]], [[Uvicorn]], [[public-apis]]
+- liens sortants : [[Caddy]], [[FastAPI]], [[Flask]], [[Gradio]], [[HAProxy]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[Nginx]], [[Pydantic]], [[Streamlit]], [[Traefik]], [[Uvicorn]], [[public-apis]]
+- liens entrants : [[AI Engineering]], [[Caddy]], [[Data Engineering]], [[FastAPI]], [[Flask]], [[HAProxy]], [[HTMX]], [[Interfaces & apps data]], [[Jinja2]], [[MLOps]], [[Nginx]], [[Traefik]], [[Uvicorn]], [[public-apis]]
 
 ### Évaluation  ·  hub
 - tags : `llm-eval`, `benchmark`, `rag-eval`, `llm-as-judge`, `model-evaluation`
@@ -4306,7 +4326,7 @@
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
-- `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, k3s, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
@@ -4399,7 +4419,7 @@
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
-- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s  — pas de page concept dédiée
+- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
@@ -4414,6 +4434,7 @@
 - `llm-eval` : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, promptfoo, Évaluation  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
 - `llm-observability` : Comparatif - Observabilité LLM, Helicone, LLM & IA générative, LLM observability, LangSmith, Langfuse, Observabilité des LLM, Phoenix Arize
+- `load-balancer` : HAProxy, Nginx, Traefik  — pas de page concept dédiée
 - `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
 - `logging` : Beats, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
@@ -4519,6 +4540,7 @@
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
+- `reverse-proxy` : Caddy, HAProxy, Nginx, Traefik  — pas de page concept dédiée
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
@@ -4530,7 +4552,7 @@
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Alertmanager, Argo CD, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Kubernetes, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Alertmanager, Argo CD, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, HAProxy, Infinity, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4562,6 +4584,7 @@
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
 - `timeseries` : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
+- `tls` : Caddy, HAProxy, Nginx, Traefik  — pas de page concept dédiée
 - `token-optimization` : Headroom  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, Modèles de langage, NLP, NLTK, Tokenization, sentencepiece, spaCy
 - `tool-use` : Agent patterns, Agent skills, Agents, Agno, Architecture deep agent, AutoGen, Claude Agent SDK, CrewAI, Deep Agents, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, Maka, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PraisonAI, PydanticAI, Semantic Kernel, Sous-agents et isolation du contexte, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, mcp-protocol, mcpjam, needle, pi, smolagents, tool-use
@@ -4617,7 +4640,7 @@
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers)
+- `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, k3s, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
@@ -4670,7 +4693,7 @@
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
-- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s)
+- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, Seldon Core, Serving, Traefik, k3s)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
@@ -4682,6 +4705,7 @@
 - `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Construction de graphes de connaissances, Context engineering, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, GRPO, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Modal, Multi-Token Prediction, Multi-agent systems, Ollama, OmniRoute, OpenAI Agents SDK, OpenClaw, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Query transformations, RAG, RAGChecker, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, a2a-protocol, agent-loops, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
+- `load-balancer` (porté par : HAProxy, Nginx, Traefik)
 - `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Beats, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry)
 - `low-code` (porté par : Activepieces, Alteryx, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
@@ -4742,13 +4766,14 @@
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
+- `reverse-proxy` (porté par : Caddy, HAProxy, Nginx, Traefik)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Alertmanager, Argo CD, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Kubernetes, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
+- `self-hosted` (porté par : Alertmanager, Argo CD, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, HAProxy, Infinity, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
@@ -4769,6 +4794,7 @@
 - `testing` (porté par : DeepEval, Faker, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
 - `timeseries` (porté par : ARIMA SARIMA, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Maintenance prédictive et RUL, Prophet, STUMPY, Stationarity, Séries temporelles, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, darts, neuralforecast, pmdarima, statsforecast)
+- `tls` (porté par : Caddy, HAProxy, Nginx, Traefik)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Comparatif - Observabilité LLM, Helicone, LLM observability, LangSmith, Langfuse, Métriques, logs et traces, Observabilité des LLM, OpenTelemetry, Phoenix Arize, Tempo, TruLens)
 - `traffic-analysis` (porté par : Réseau, Sniffnet)
