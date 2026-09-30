@@ -47,6 +47,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - Un graphe en entrée → [[PyTorch Geometric]].
 - Représenter des phrases par des vecteurs → [[sentence-transformers]], et [[Embeddings & encodeurs]] pour choisir le modèle et l'outil qui le sert (cf. [[Comparatif - Embeddings]]) ; charger un jeu de données public → [[datasets]] ; calculer une métrique standard → [[evaluate]], ou [[seqeval]] pour l'étiquetage de séquence.
 - Récupérer un modèle ou un jeu de données déjà publié → [[HuggingFace]].
+- Étiqueter soi-même des données pour l'apprentissage supervisé, sur des machines sans cloud → [[Annotation de données]] : [[CVAT]] pour les images, la vidéo et le 3D, [[Label Studio]] pour le texte, l'audio, les séries et les images ; rôles, SSO et contrôle qualité automatique sont payants dans les deux.
 - Faire générer du texte, du code ou une image par un modèle de fondation → [[LLM & IA générative]], pas ce domaine.
 
 <!-- AUTO:START -->
@@ -54,18 +55,21 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - [[Apprentissage par renforcement]] · [[Apprentissage profond]] · [[Embeddings & encodeurs]] · [[Interprétabilité]] · [[NLP]] · [[Non supervisé]] · [[Plateformes data & IA]] · [[Serving]] · [[Socle]] · [[Suivi d'expériences]] · [[Séries temporelles]] · [[Tabulaire]] · [[Vision]] · [[Évaluation de modèles]]
 
 ### Notions
+- [[Annotation de données]] — domaines : data-sci, ml-eng
 - [[Data drift]] — domaines : mlops, data-sci
 - [[Feature store — concept]] — domaines : mlops, data-eng
 - [[Monitoring de modèle en production]] — domaines : mlops
 - [[Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
 
 ### Briques
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise.
 - [[datasets]] — Bibliothèque HuggingFace de chargement et traitement de datasets — backend Apache Arrow memory-mappé et mode streaming pour des jeux plus grands que la RAM, une ligne pour charger texte/image/audio depuis le Hub.
 - [[Evidently]] — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.
 - [[Feast]] — Feature store open-source (Python) : définit, matérialise et sert des features ML de façon cohérente entre entraînement (offline store) et inférence temps réel (online store), au-dessus de l'infra existante (Redis, BigQuery, Snowflake, S3…).
 - [[Flyte]] — Orchestrateur de workflows ML/data Kubernetes-natif (backend Go, SDK Python flytekit) : tâches fortement typées, conteneurisées et versionnées, isolation des ressources et cache d'exécution ; projet gradué LF AI & Data, édition entreprise Union.ai.
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes.
 - [[Hyperopt]] — Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes.
 - [[Metaflow]] — Framework ML human-centric de Netflix (Python) : des flows à étapes qui s'exécutent en local puis scalent sans changer le code sur AWS Batch / Step Functions / Kubernetes ; versionnage, artefacts et reprise intégrés. Édition managée via Outerbounds.
 - [[Optuna]] — Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.
 - [[PyTorch Geometric]] — Bibliothèque de référence de deep learning sur graphes pour PyTorch — couches de message passing (GCN, GAT, GraphSAGE…), mini-batching par voisinage et datasets de graphes prêts à l'emploi pour construire et entraîner des GNN.
