@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Keycloak]]", "[[Authelia]]"]
-complements: ["[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Airflow]]", "[[Langfuse]]"]
+complements: ["[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Airflow]]", "[[Langfuse]]", "[[Node-RED]]"]
 tags: [authentication, sso, identity-provider, self-hosted]
 url_docs: https://docs.goauthentik.io/
 url_repo: https://github.com/goauthentik/authentik
@@ -74,6 +74,7 @@ Fournisseur d'identité dont la logique de connexion se **construit** : chaque p
 - [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — page d'intégration officielle, dont ingress-nginx.
 - [[Airflow]] — Ordonnanceur de DAGs de référence : tâches définies en Python, planification cron et vaste écosystème de connecteurs ; le standard historique de l'orchestration data. — le fournisseur `authentik` figure dans la liste OAuth du provider FAB.
 - [[Langfuse]] — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry. — variables d'environnement `AUTH_AUTHENTIK_*` dédiées à l'authentification unique.
+- [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — page d'intégration « Node-RED » dans la doc d'Authentik (support communautaire), par `passport-openidconnect`.
 
 ## Ressources
 
