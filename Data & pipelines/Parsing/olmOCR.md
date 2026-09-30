@@ -82,5 +82,6 @@ release depuis six mois.
 
 - [[Parsing]] — le hub du dossier
 - [[OCR]] — la notion : deux étages, CTC contre attention, CER/WER, panorama des moteurs
+- [[OCR classique vs modèles vision-langage pour documents]] — la notion : quand un pipeline en étages, quand un modèle vision-langage, et comment chacun échoue
 - [[Vision Language Models]] — la famille de modèles dont il est un dérivé spécialisé
 - [[Comparatif - Parsing de documents]] — ce qui départage les outils du dossier
