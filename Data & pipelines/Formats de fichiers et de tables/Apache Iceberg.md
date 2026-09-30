@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: ["[[Delta Lake]]"]
-complements: ["[[dbt Core]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]", "[[DataHub]]"]
+complements: ["[[dbt Core]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]", "[[DataHub]]", "[[Trino]]"]
 tags: [lakehouse, olap, schema-evolution, data-versioning]
 url_docs: https://iceberg.apache.org/docs/latest/
 url_repo: https://github.com/apache/iceberg
@@ -68,6 +68,7 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — cible par le puits communautaire de Debezium Server ; Apache Iceberg figure aussi parmi les intégrations de la page des utilisateurs de Debezium.
 - [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — destination par le processeur `PutIcebergRecord`.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée sur la page des intégrations, en bêta.
+- [[Trino]] — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java. — moteur SQL distribué qui lit et écrit les tables (MERGE compris) ; catalogue JDBC, REST, Nessie, Glue ou Hive.
 
 ## Ressources
 

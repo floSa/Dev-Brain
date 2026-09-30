@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: ["[[Avro]]"]
-complements: ["[[dbt Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]"]
+complements: ["[[dbt Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]", "[[Apache Arrow]]"]
 tags: [file-format, columnar, olap]
 url_docs: https://parquet.apache.org/docs/
 url_repo: https://github.com/apache/parquet-format
@@ -66,6 +66,7 @@ ligne à jour, c'est réécrire un fichier entier.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — la destination S3 écrit des fichiers Parquet.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — format d'écriture de la destination `filesystem`, à côté de JSONL (défaut) et CSV.
 - [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — les fichiers de données d'une table Delta sont du Parquet ; le journal `_delta_log` décrit l'état de la table, il ne remplace pas le format.
+- [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — pyarrow lit et écrit le Parquet vers des structures Arrow en mémoire.
 
 ## Ressources
 

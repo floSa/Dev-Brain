@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Scala
 alternatives: ["[[Apache Iceberg]]"]
-complements: ["[[Parquet]]", "[[Spark]]", "[[Flink]]", "[[DuckDB]]", "[[MinIO]]", "[[lakeFS]]"]
+complements: ["[[Parquet]]", "[[Spark]]", "[[Flink]]", "[[DuckDB]]", "[[MinIO]]", "[[lakeFS]]", "[[Trino]]"]
 tags: [lakehouse, file-format, schema-evolution, data-versioning]
 url_docs: https://docs.delta.io/
 url_repo: https://github.com/delta-io/delta
@@ -89,6 +89,7 @@ Relevé le 2026-09-30 : **Delta 4.4.0** du 2026-08-20 (9 000 étoiles, dernier c
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur. — extension `delta` fondée sur `delta-kernel-rs` : lecture, et écriture limitée à des ajouts d'enregistrements.
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé en Go, sous AGPLv3 : dépôt communautaire archivé et déclaré non maintenu par l'éditeur (2026-04-25), dernière release en octobre 2025 ; la suite est AIStor (propriétaire) ou un fork communautaire. — stockage S3-compatible que la documentation de delta-rs décrit avec `aws_conditional_put`, et que Delta cite parmi ses intégrations communautaires ; la brique est non maintenue.
 - [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — versionne le dépôt d'objets qui contient les fichiers Delta : une branche entière de tables, là où Delta ne versionne qu'une table.
+- [[Trino]] — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java. — connecteur Delta Lake ; catalogue Hive Metastore ou Glue uniquement.
 
 ## Ressources
 
