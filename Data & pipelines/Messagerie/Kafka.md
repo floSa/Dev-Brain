@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Redpanda]]", "[[RabbitMQ]]", "[[NATS]]"]
-complements: ["[[Debezium]]", "[[Flink]]", "[[Kestra]]"]
+complements: ["[[Debezium]]", "[[Flink]]", "[[Kestra]]", "[[OpenLineage]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [message-broker, streaming, distributed, self-hosted]
 url_docs: https://kafka.apache.org/documentation/
 url_repo: https://github.com/apache/kafka
@@ -87,6 +87,9 @@ ligne précédente, date du 2026-09-29. Apache-2.0, environ 33 900 étoiles, der
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — Kafka Connect est le mode de déploiement le plus courant de Debezium (« most commonly », d'après sa doc d'architecture) : les connecteurs Debezium y tournent.
 - [[Flink]] — Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch. — connecteur officiel Kafka pour Flink (5.0.0, pour Flink 2.1 et 2.2 ; aucun connecteur encore pour Flink 2.3), avec écriture exactly-once par les transactions Kafka.
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches. — plugin Kafka de Kestra : tâches Produce et Consume, déclencheurs à l'interrogation ou en temps réel ; Kafka comme backend de Kestra est réservé à l'édition Enterprise.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — transport d'événements de lignage côté client (`openlineage-python[kafka]`).
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — connecteur de messagerie listé ; canal de réception du connecteur OpenLineage. Le serveur n'en dépend pas.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — composant obligatoire : bus des événements de métadonnées, avec un registre de schémas.
 
 ## Ressources
 
