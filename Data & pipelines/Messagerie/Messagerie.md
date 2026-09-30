@@ -15,6 +15,7 @@ tags: [message-broker, task-queue, streaming]
 
 - Ce dossier range ce qui **transporte** des messages, pas ce qui les **traite** : fenêtres, état et agrégations relèvent de [[Stream processing]] et de [[Flink]] ; le suivi d'un graphe de tâches relève de l'[[Orchestration]]. [[Debezium]] *produit* un flux depuis une base, il ne le transporte pas.
 - **Deux formes de broker, qui ne se remplacent pas toujours.** Un *journal* ([[Kafka]], [[Redpanda]]) conserve les messages et laisse chaque consommateur relire à sa position ; une *file* ([[RabbitMQ]]) retire le message une fois acquitté, et route selon des règles. [[NATS]] tient les deux dans un seul binaire (Core NATS en mémoire, JetStream persistant). Les streams de RabbitMQ et les *share groups* de Kafka 4.2 brouillent la frontière sans l'effacer.
+- La notion [[Architecture pilotée par les événements]] pose le vocabulaire (événement, commande, file, journal, garanties de livraison, idempotence, contre-pression, file de rebut) et dit quand **aucun broker** n'est nécessaire ; [[Comparatif - Brokers de messages]] départage les quatre brokers.
 - **[[Celery]] n'est pas un broker** : c'est une file de tâches Python qui *emploie* un broker ([[RabbitMQ]] par défaut, ou [[Redis]]). Il ne se compare pas aux brokers, il s'y branche.
 - **Les licences ne sont pas les mêmes, et l'une est restrictive** : [[Kafka]] et [[NATS]] sont en Apache-2.0, [[RabbitMQ]] en MPL-2.0 (copyright Broadcom, support communautaire limité à la dernière série), [[Celery]] en BSD-3-Clause. [[Redpanda]] est sous **BSL 1.1** : source-available, offrir Redpanda comme service de streaming est interdit, et les fonctions d'exploitation d'un cluster critique (audit, RBAC, tiered storage) sont Enterprise.
 - **Deux changements de propriétaire à connaître** : Confluent, l'éditeur autour de Kafka, a été racheté par IBM (finalisé le 2026-03-17) sans effet documenté sur le projet Apache ; RabbitMQ appartient à Broadcom depuis le rachat de VMware, avec le resserrement du support qui va avec. NATS a traversé en 2025 un litige entre Synadia et la CNCF, clos sans changement de licence.
@@ -30,12 +31,19 @@ tags: [message-broker, task-queue, streaming]
 - Sortir un travail long d'une application Python → [[Celery]], avec [[RabbitMQ]] ou [[Redis]] comme broker.
 - Capter les changements d'une base vers un broker → [[Debezium]].
 - Traiter le flux, pas le transporter → [[Flink]].
+- Se demander si un broker est nécessaire, ou si une table [[Postgres]] avec `SKIP LOCKED` suffit → [[Architecture pilotée par les événements]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Architecture pilotée par les événements]] — domaines : data-eng
+
 ### Briques
 - [[Celery]] — File de tâches distribuée pour Python : des workers exécutent des fonctions asynchrones postées sur un broker (RabbitMQ, Redis, SQS), avec relances, planification (Beat) et enchaînements (canvas) ; au moins une fois, BSD-3-Clause.
 - [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0).
 - [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF.
 - [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série.
 - [[Redpanda]] — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale.
+
+### Comparatifs
+- [[Comparatif - Brokers de messages]]
 <!-- AUTO:END -->

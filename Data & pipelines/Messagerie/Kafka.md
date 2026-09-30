@@ -97,3 +97,5 @@ ligne précédente, date du 2026-09-29. Apache-2.0, environ 33 900 étoiles, der
 ## Voir aussi
 
 - [[Messagerie]] — le hub du dossier
+- [[Comparatif - Brokers de messages]] — ce qui départage Kafka, Redpanda, NATS et RabbitMQ, et la vue à part de Celery
+- [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison, idempotence

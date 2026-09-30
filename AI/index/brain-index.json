@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 897,
+  "count": 899,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1076,6 +1076,9 @@
       "Shannon entropy",
       "Théorie de l'information"
     ],
+    "event-driven": [
+      "Architecture pilotée par les événements"
+    ],
     "experiment-tracking": [
       "Aim",
       "ClearML",
@@ -1375,6 +1378,7 @@
       "statsmodels"
     ],
     "idempotence": [
+      "Architecture pilotée par les événements",
       "ELT vs ETL & idempotence",
       "Fiabilité des données",
       "Ingestion incrémentale et curseurs",
@@ -1952,6 +1956,8 @@
       "Unsloth"
     ],
     "message-broker": [
+      "Architecture pilotée par les événements",
+      "Comparatif - Brokers de messages",
       "Kafka",
       "Messagerie",
       "NATS",
@@ -3261,6 +3267,7 @@
     ],
     "task-queue": [
       "Celery",
+      "Comparatif - Brokers de messages",
       "Messagerie"
     ],
     "templating": [
@@ -7115,6 +7122,38 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Messagerie/Architecture pilotée par les événements.md",
+      "nom": "Architecture pilotée par les événements",
+      "alias": [
+        "event-driven architecture",
+        "EDA",
+        "architecture événementielle",
+        "pub/sub",
+        "at-least-once",
+        "exactly-once",
+        "dead letter queue",
+        "outbox pattern",
+        "idempotent consumer",
+        "contre-pression"
+      ],
+      "role": "notion",
+      "categorie": "data/messagerie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "event-driven",
+        "message-broker",
+        "idempotence"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Messagerie/Celery.md",
       "nom": "Celery",
       "alias": [
@@ -7142,6 +7181,24 @@
         "[[FastAPI]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Messagerie/Comparatif - Brokers de messages.md",
+      "nom": "Comparatif - Brokers de messages",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/messagerie",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "message-broker",
+        "task-queue"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Messagerie/Kafka.md",

@@ -101,3 +101,5 @@ Aucune n'a la maturité ni l'écosystème de Celery ; **RQ** est la seule qui p�
 ## Voir aussi
 
 - [[Messagerie]] — le hub du dossier
+- [[Comparatif - Brokers de messages]] — ce qui départage Kafka, Redpanda, NATS et RabbitMQ, et la vue à part de Celery
+- [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison, idempotence

@@ -98,3 +98,5 @@ des cycles de release de six mois (billet du 2025-05-13). Statut CNCF : *incubat
 ## Voir aussi
 
 - [[Messagerie]] — le hub du dossier
+- [[Comparatif - Brokers de messages]] — ce qui départage Kafka, Redpanda, NATS et RabbitMQ, et la vue à part de Celery
+- [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison, idempotence
