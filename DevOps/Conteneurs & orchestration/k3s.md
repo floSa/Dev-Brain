@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Kubernetes]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]"]
+complements: ["[[Helm]]", "[[Traefik]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://docs.k3s.io/
 url_repo: https://github.com/k3s-io/k3s
@@ -66,6 +66,7 @@ Apache-2.0 ; projet de la CNCF au niveau Sandbox.
 ### Compléments
 
 - [[Helm]] — Gestionnaire de paquets de Kubernetes : un chart décrit, versionne et installe un ensemble de ressources (Apache-2.0, Go, CNCF diplômé). — un contrôleur Helm est intégré à k3s
+- [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — c'est l'ingress que k3s livre par défaut.
 
 ## Ressources
 
