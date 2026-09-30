@@ -33,6 +33,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - Charger, filtrer, joindre, agréger en mémoire → [[DataFrames]].
 - Faire tourner tout ça chaque nuit, avec dépendances et reprises → [[Orchestration]].
 - En faire un graphique → [[Visualisation]].
+- Donner à des équipes métier des tableaux de bord et des requêtes libres, sur site → [[Comparatif - BI auto-hébergée]] : [[Metabase]] (sans code, open-core AGPL) ou [[Apache Superset]] (Apache-2.0, plus de pièces à exploiter).
 - Traiter au fil de l'eau plutôt que par lots → [[Flink]], et [[Stream processing]] pour la théorie.
 - Faire circuler des événements ou des tâches entre services, sur site → [[Messagerie]] : [[Kafka]] (journal rejouable), [[NATS]] (un binaire léger), [[RabbitMQ]] (files et routage), [[Redpanda]] (protocole Kafka, licence BSL), et [[Celery]] pour les tâches Python.
 - Recevoir les mesures de capteurs et d'automates par MQTT, sur site : un nœud léger sous licence libre → [[Mosquitto]] ; un cluster, sous licence BSL → [[EMQX]] ; le reste de l'atelier (OPC UA, Modbus, flux) est dans [[Données industrielles]]. Cf. [[Comparatif - Brokers MQTT]].
@@ -59,10 +60,12 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - [[Stream processing]] — domaines : data-eng
 
 ### Briques
+- [[Apache Superset]] — BI auto-hébergée Apache-2.0 tournée vers l'exploration : SQL Lab, constructeur de graphiques, tableaux de bord, droits par ligne, alertes et embedding sans édition payante ; exploitation plus lourde (base de métadonnées, Redis, Celery).
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit).
 - [[Faker]] — Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.
 - [[Flink]] — Moteur de traitement de flux stateful et distribué : exactly-once par checkpointing, sémantique d'event-time avec watermarks, API DataStream / Table / SQL et PyFlink ; traitement unifié flux et batch.
+- [[Metabase]] — BI auto-hébergée orientée utilisateurs métier : questions sans code et SQL natif, tableaux de bord, alertes, en un seul conteneur Java ; AGPL-3.0 avec SSO avancé, droits par ligne et embedding complet réservés aux éditions payantes.
 - [[Mimesis]] — Générateur de données factices Python rapide et entièrement typé — providers et schémas déclaratifs, dizaines de locales ; nettement plus rapide que Faker, pensé pour de gros volumes de données de test.
 - [[missingno]] — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
 - [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data).
@@ -73,6 +76,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 
 ### Comparatifs
+- [[Comparatif - BI auto-hébergée]]
 - [[Comparatif - Catalogues et lignage de données]]
 - [[Comparatif - Outils EDA - profiling]]
 - [[Comparatif - Transformation SQL]]

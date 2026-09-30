@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 112 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 113 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (112 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (113 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -190,7 +190,7 @@ llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie}
+      synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie, bi}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -359,6 +359,16 @@ valeurs disparues et ne sont pas reconduites.
   stocke le résultat), de `network/*` (ce qui circule entre machines, sans modèle de données) et
   de `automation/*` (Node-RED est ici : D4 passe avant D13, il déplace de la donnée machine et non
   des applications SaaS). Libellé du dossier : « Données industrielles ».
+- `data/bi` — **ouvert au lot « requêtes analytiques et BI » (2026-09-30, conversation 19), sur
+  arbitrage de floSa** : aucune valeur ne rangeait un outil de BI auto-hébergé. `data/viz` est
+  défini comme « graphiques de données » et ses membres sont des bibliothèques ; `ui/data-app`
+  range des applications *écrites* en code. **Un outil de BI servi à des utilisateurs métier** :
+  connexions à des bases, modèle de données, requêtes sans code et SQL libre, tableaux de bord
+  partagés, droits et authentification (Metabase, Superset). Distinct de `data/viz` (la
+  bibliothèque qu'un développeur appelle), de `ui/data-app` (l'application qu'il écrit), de
+  `observability/*` (Grafana : métriques et séries techniques) et de `database/analytique` (le
+  moteur qui exécute le SQL, pas l'outil qui l'expose). Libellé du dossier : « BI et tableaux de
+  bord ».
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et

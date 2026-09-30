@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[pandas]]", "[[Modin]]", "[[Dask]]"]
-complements: ["[[ADBC]]", "[[DuckDB]]", "[[connectorx]]", "[[pandera]]"]
+complements: ["[[ADBC]]", "[[DuckDB]]", "[[connectorx]]", "[[pandera]]", "[[Apache Arrow]]"]
 tags: [dataframe, columnar, lazy-evaluation, out-of-core]
 url_docs: https://docs.pola.rs/
 url_repo: https://github.com/pola-rs/polars
@@ -67,6 +67,7 @@ API d'expressions (`pl.col(...)`) qui ne se devine pas depuis pandas.
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur. — intégration directe via Arrow, dans les deux sens.
 - [[connectorx]] — Charge des données d'une base SQL vers un DataFrame (pandas, Polars, Arrow) à vitesse maximale — moteur Rust zero-copy, copie unique source→destination. — le moteur derrière `read_database(engine="connectorx")`
 - [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — backend natif de première classe ; sur une `LazyFrame`, seuls les noms et les types sont contrôlés, sans `.collect()`.
+- [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — Polars implémente le format lui-même et échange avec pyarrow par PyCapsule.
 
 ## Ressources
 

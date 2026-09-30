@@ -8,8 +8,8 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[ClickHouse]]", "[[Snowflake]]"]
-complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]"]
+alternatives: ["[[ClickHouse]]", "[[Snowflake]]", "[[Trino]]"]
+complements: ["[[pandas]]", "[[Polars]]", "[[jupysql]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]", "[[Apache Arrow]]"]
 tags: [columnar, olap, embedded]
 url_docs: https://duckdb.org/docs/
 url_repo: https://github.com/duckdb/duckdb
@@ -56,6 +56,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 
 - [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 - [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — l'extrême opposé : rien ne tourne en local, tout est managé, et le volume n'est plus borné par le poste ; rangé en plateforme, pas en base, cf. la règle D-R8 de la taxonomie.
+- [[Trino]] — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java. — le même SQL sur Parquet et Iceberg, mais distribué, fédéré et multi-utilisateurs.
 
 ### Compléments
 
@@ -68,6 +69,7 @@ s'interface avec pandas, Polars et Arrow. La base est soit en mémoire, soit un 
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination communautaire en bêta (`destination-duckdb` 0.6.0).
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination locale, la plus simple pour essayer un pipeline.
 - [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — extension `delta` fondée sur `delta-kernel-rs` : lecture, et écriture limitée à des ajouts d'enregistrements.
+- [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — DuckDB interroge les tables et flux Arrow et exporte ses résultats en Arrow.
 
 ## Ressources
 

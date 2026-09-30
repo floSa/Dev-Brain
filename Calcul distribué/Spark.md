@@ -11,7 +11,7 @@ maturite: production
 langage: Scala / JVM
 scaling: distributed
 alternatives: ["[[Dask]]", "[[Ray]]"]
-complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[pandera]]", "[[OpenLineage]]", "[[DataHub]]", "[[Delta Lake]]", "[[lakeFS]]"]
+complements: ["[[Databricks]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[pandera]]", "[[OpenLineage]]", "[[DataHub]]", "[[Delta Lake]]", "[[lakeFS]]", "[[Apache Arrow]]"]
 tags: [distributed, dataframe, streaming, out-of-core]
 url_docs: https://spark.apache.org/docs/latest/
 url_repo: https://github.com/apache/spark
@@ -73,6 +73,7 @@ ajoute Spark Connect, le type VARIANT, l'ANSI SQL par défaut et Java 21.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — agent Spark propre à DataHub, qui complète l'écouteur OpenLineage (PathSpec, lignage colonne).
 - [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — moteur natif de Delta Lake : lecture et écriture complètes, `MERGE`, Change Data Feed (paquet `delta-spark` 4.4.0 du 2026-08-20).
 - [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — client Hadoop FS de lakeFS et ramasse-miettes Spark pour lire et nettoyer un dépôt d'objets depuis Spark.
+- [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — PySpark s'en sert pour toPandas() et les pandas UDF, activé par défaut depuis Spark 4.0.
 
 ## Ressources
 

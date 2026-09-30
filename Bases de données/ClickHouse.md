@@ -10,8 +10,8 @@ hosted: [self, managed]
 maturite: production
 langage: C++
 scaling: distributed
-alternatives: ["[[DuckDB]]", "[[Snowflake]]"]
-complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]", "[[OpenMetadata]]", "[[DataHub]]"]
+alternatives: ["[[DuckDB]]", "[[Snowflake]]", "[[Trino]]"]
+complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Metabase]]"]
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
 url_repo: https://github.com/ClickHouse/ClickHouse
@@ -59,6 +59,7 @@ les performances de toutes les requêtes qui suivront.
 
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 - [[Snowflake]] — Entrepôt de données managé à stockage et calcul séparés, devenu plateforme : Snowpark exécute du Python dans le moteur, Cortex y ajoute des fonctions LLM en SQL, Snowflake ML l'entraînement et le registre de modèles ; aucun auto-hébergement. — la même analytique colonnes, mais sans cluster à opérer et sans possibilité d'auto-hébergement ; rangé en plateforme, pas en base, cf. la règle D-R8 de la taxonomie.
+- [[Trino]] — Moteur de requête SQL distribué et fédéré, séparé du stockage : une requête interactive joint des tables Iceberg, Delta ou Hive et des bases (PostgreSQL, MySQL…) sans rien stocker lui-même ; Apache-2.0, coordinateur et workers en Java. — interroge des sources sans les stocker : ni ingestion ni stockage propre.
 
 ### Compléments
 
@@ -68,6 +69,7 @@ les performances de toutes les requêtes qui suivront.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination documentée, utilisable sur site.
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — connecteur de base listé.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée en GA.
+- [[Metabase]] — BI auto-hébergée orientée utilisateurs métier : questions sans code et SQL natif, tableaux de bord, alertes, en un seul conteneur Java ; AGPL-3.0 avec SSO avancé, droits par ligne et embedding complet réservés aux éditions payantes. — ClickHouse y est un driver officiel.
 
 ## Ressources
 

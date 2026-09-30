@@ -1,0 +1,45 @@
+filters:
+  and:
+    - role == "brique"
+    - categorie == "data/bi"
+views:
+  - type: table
+    name: BI auto-hébergée
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Licence libre
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Open-core
+    filters:
+      and:
+        - licence_type == "open-core"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
