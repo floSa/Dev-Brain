@@ -11,7 +11,7 @@ maturite: production
 langage: C/C++
 scaling: single-node
 alternatives: ["[[MySQL]]", "[[Postgres]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: []
+complements: ["[[Debezium]]"]
 tags: [relational]
 url_docs: https://mariadb.com/kb/en/documentation/
 url_repo: https://github.com/MariaDB/server
@@ -62,6 +62,10 @@ distributions Linux.
 - [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
 - [[Microsoft SQL Server]] — SGBD d'entreprise Microsoft, intégré à l'écosystème .NET/Azure, T-SQL et outillage riche.
+
+### Compléments
+
+- [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — connecteur dédié, classé stable.
 
 ## Ressources
 

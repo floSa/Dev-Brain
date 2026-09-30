@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: single-node
 alternatives: ["[[Postgres]]", "[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]"]
-complements: []
+complements: ["[[Airbyte]]", "[[Debezium]]"]
 tags: [relational]
 url_docs: https://learn.microsoft.com/en-us/sql/sql-server/
 url_repo: 
@@ -62,6 +62,11 @@ chiffrées, index columnstore. Il tourne sur Linux et en conteneur depuis 2017.
 - [[MariaDB]] — Fork communautaire de MySQL, 100 % open-source, gouvernance indépendante d'Oracle.
 - [[SQLite]] — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 - [[CockroachDB]] — Relationnel distribué (NewSQL) compatible Postgres : scale horizontal et forte cohérence multi-région.
+
+### Compléments
+
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — source avec CDC (SQL Server 2016 SP1 ou plus), marquée alpha, qui s'appuie sur Debezium d'après son journal des modifications.
+- [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — source par les tables CDC de SQL Server (CDC activé sur la base et sur chaque table, SQL Server Agent démarré).
 
 ## Ressources
 
