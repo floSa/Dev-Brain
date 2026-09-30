@@ -68,4 +68,5 @@ un fine-tuning complet reprend l'avantage.
 
 - [[Classification de texte]] — son cas d'usage, et où sont décrites les voies concurrentes : baseline TF-IDF, fine-tuning de transformeur, prompting LLM
 - [[Traitement du langage naturel]] — la notion chapeau du dossier
+- [[Choisir un modèle d'embedding]] — le corps sentence-transformers à fine-tuner se choisit comme un modèle d'embedding
 - [[Comparatif - NLP]] — ce qui départage les outils du dossier
