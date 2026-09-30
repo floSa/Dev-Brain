@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[Caddy]]", "[[Nginx]]", "[[HAProxy]]"]
-complements: ["[[Docker Compose]]", "[[k3s]]", "[[Kubernetes]]", "[[Argo CD]]", "[[Prometheus]]", "[[FastAPI]]"]
+complements: ["[[Docker Compose]]", "[[k3s]]", "[[Kubernetes]]", "[[Argo CD]]", "[[Prometheus]]", "[[FastAPI]]", "[[Authelia]]", "[[Authentik]]"]
 tags: [reverse-proxy, tls, load-balancer, container, kubernetes, self-hosted]
 url_docs: https://doc.traefik.io/traefik/
 url_repo: https://github.com/traefik/traefik
@@ -68,6 +68,8 @@ Reverse proxy en Go dont la configuration se scinde en deux : la partie **statiq
 - [[Argo CD]] — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé). — sa documentation décrit Traefik pour exposer le serveur, TLS terminé au proxy et `--insecure` côté Argo CD
 - [[Prometheus]] — Système de supervision et base de séries temporelles open-source (Apache-2.0, Go) — scrape les métriques exposées en HTTP, modèle de données à labels, requêtes PromQL, règles d'alerte transmises à Alertmanager ; stockage local mono-nœud, sans cluster natif. — Traefik expose ses métriques nativement
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — sa documentation prend Traefik pour exemple de proxy, avec `--root-path` et `--forwarded-allow-ips`.
+- [[Authelia]] — Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante). — sa page d'intégration décrit le middleware ForwardAuth vers `/api/authz/forward-auth` — la voie libre, l'OIDC natif de Traefik étant dans l'offre Hub.
+- [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — page d'intégration du *provider* proxy avec forward auth.
 
 ## Ressources
 
