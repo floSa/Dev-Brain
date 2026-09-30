@@ -2,7 +2,7 @@
 role: notion
 nom: One-Class SVM
 alias: [OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection]
-categorie: ml/non-supervise
+categorie: ml/anomalie
 domaines: [data-sci, ml-eng]
 tags: [anomaly-detection, unsupervised]
 ---

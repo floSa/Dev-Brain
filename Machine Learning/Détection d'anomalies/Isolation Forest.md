@@ -2,7 +2,7 @@
 role: notion
 nom: Isolation Forest
 alias: [iForest, Forêt d'isolement, IsolationForest]
-categorie: ml/non-supervise
+categorie: ml/anomalie
 domaines: [data-sci, ml-eng]
 tags: [anomaly-detection, unsupervised, tree-based, ensemble]
 ---
