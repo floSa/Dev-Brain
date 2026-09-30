@@ -1344,7 +1344,25 @@ axes:
         dossier: "DevOps"
         portee: "déployer du logiciel en production"
         sous:
-          ci: {}
+          ci:
+            libelle: "Forges & CI-CD"
+            motif: >
+              Ouvert le 2026-09-30, quand le sous-domaine a franchi le seuil
+              (GitHub Actions, Argo CD, puis GitLab CE, Forgejo, Jenkins et
+              Woodpecker CI). Les deux sous-domaines de DevOps se partagent le
+              domaine : la condition de non-vidage ne s applique pas (n different
+              du total). Libelle « Forges & CI-CD » et non « CI » seul : le
+              sous-domaine porte la forge qui heberge le code, le serveur qui
+              execute les pipelines et le deploiement qui en sort.
+            frontiere: >
+              Heberger le code et executer ce qui le construit, le teste et le
+              livre : forge Git (GitLab CE, Forgejo), serveur de CI (Jenkins,
+              Woodpecker CI), CI integree a une forge (GitHub Actions) et
+              livraison continue depuis Git (Argo CD). Distinct de
+              devops/conteneur (l executer : le moteur, l orchestrateur, le
+              chart), de devtools/test (le framework de test lance par le
+              pipeline) et de security/analyse (les scanners que le pipeline
+              appelle).
           conteneur:
             libelle: "Conteneurs & orchestration"
             motif: >
