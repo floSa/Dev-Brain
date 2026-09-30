@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[k3s]]", "[[Kubernetes]]"]
-complements: ["[[Docker]]", "[[Podman]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]"]
+complements: ["[[Docker]]", "[[Podman]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Label Studio]]", "[[CVAT]]"]
 tags: [container]
 url_docs: https://docs.docker.com/compose/
 url_repo: https://github.com/docker/compose
@@ -75,6 +75,8 @@ supporté depuis juin 2023.
 - [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — le provider Docker lit les labels des services de la pile.
 - [[Caddy]] — Serveur web et reverse proxy à HTTPS automatique : un Caddyfile de quelques lignes obtient et renouvelle ses certificats, publics par ACME ou internes par sa propre autorité (Apache-2.0, Go, ZeroSSL) — pas de découverte Docker native, et tout module tiers impose de recompiler le binaire. — l'image officielle et ses deux volumes tiennent dans un service de la pile.
 - [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — `nginx-proxy` et `acme-companion` lisent les conteneurs de la pile.
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — mode d'installation documenté, avec PostgreSQL.
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — mode d'installation officiel de l'édition Community : `docker compose up -d`.
 
 ## Ressources
 
