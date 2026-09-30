@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: []
-complements: ["[[Kubernetes]]", "[[Helm]]", "[[GitHub Actions]]", "[[Traefik]]", "[[Nginx]]"]
+complements: ["[[Kubernetes]]", "[[Helm]]", "[[GitHub Actions]]", "[[Traefik]]", "[[Nginx]]", "[[Keycloak]]"]
 tags: [ci-cd, kubernetes, gitops, self-hosted]
 url_docs: https://argo-cd.readthedocs.io/
 url_repo: https://github.com/argoproj/argo-cd
@@ -76,6 +76,7 @@ Les mainteneurs viennent de plusieurs entreprises (Intuit, Akuity, Red Hat, Octo
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — la CI qui construit l'image et met à jour le dépôt de configuration
 - [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — la documentation d'Argo CD donne la configuration pour exposer le serveur derrière lui : TLS terminé au proxy, `--insecure` côté Argo CD.
 - [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — la documentation d'Argo CD décrit le F5 NGINX Ingress Controller pour exposer le serveur.
+- [[Keycloak]] — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter. — sa documentation décrit Keycloak en OIDC natif, avec PKCE.
 
 ## Ressources
 
