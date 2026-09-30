@@ -77,4 +77,5 @@ vectorielle sont annoncés dans l'édition Enterprise 5.x, dont le code n'est pa
 
 - [[Bases de données]] — le hub du domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (nGQL, la partition statique et le doublement des arêtes)
 - [[Graph Neural Networks]] — le ML sur graphes, branché sur les données stockées ici

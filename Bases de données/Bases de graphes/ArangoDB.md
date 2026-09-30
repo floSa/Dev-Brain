@@ -81,4 +81,5 @@ en douze mois. La documentation ne mentionne ni Cypher, ni Gremlin.
 
 - [[Bases de graphes]] — le hub du sous-domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (un moteur multi-modèle et son langage AQL)
 - [[MongoDB]] — le document pur, sans graphe

@@ -86,3 +86,4 @@ Elasticsearch 9) sans date dans la documentation, environ 5 840 étoiles.
 
 - [[Bases de graphes]] — le hub du sous-domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (Gremlin face à Cypher et GQL)

@@ -85,4 +85,5 @@ depuis juin 2022, après deux ans d'incubation.
 
 - [[Bases de graphes]] — le hub du sous-domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (openCypher dans SQL, SQL/PGQ et le retrait de PostgreSQL 19)
 - [[pgvector]] — la recherche vectorielle dans la même base, pour coupler graphe et similarité

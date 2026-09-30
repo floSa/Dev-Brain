@@ -81,3 +81,4 @@ une vingtaine de releases en douze mois.
 
 - [[Bases de graphes]] — le hub du sous-domaine
 - [[Comparatif - Bases graphes]] — ce qui départage les moteurs du dossier
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel (Cypher et Bolt, et ce qui les distingue de GQL)

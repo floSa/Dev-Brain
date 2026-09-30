@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 841 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 842 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -616,6 +616,9 @@
 
 ### data/streaming
 - **Stream processing** — domaines : data-eng · alias : stream processing, traitement de flux, windowing, fenêtrage, watermarks, exactly-once, event-time
+
+### database/graphe
+- **Bases graphe — modèles et langages de requête** — domaines : data-eng, ai-eng · alias : {'Bases graphe': 'modèles et langages de requête'}, property graph vs RDF, Cypher GQL Gremlin, langages de requête de graphe, graphe ou relationnel
 
 ### database/migration
 - **Migrations de schéma** — domaines : data-eng · alias : migration, migrations, schema migration, db migration
