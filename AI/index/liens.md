@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 842 pages actives.
+> 844 pages actives.
 
 ## Par page
 
@@ -407,8 +407,13 @@
 
 ### Docker  ·  brique
 - tags : `container`
-- liens sortants : [[DevOps]], [[GitHub Actions]]
-- liens entrants : [[Beszel]], [[DevOps]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
+- liens sortants : [[DevOps]], [[Docker Compose]], [[GitHub Actions]], [[Podman]]
+- liens entrants : [[Beszel]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
+
+### Docker Compose  ·  brique
+- tags : `container`
+- liens sortants : [[DevOps]], [[Docker]], [[Podman]]
+- liens entrants : [[DevOps]], [[Docker]], [[Podman]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -1289,6 +1294,11 @@
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
 - liens entrants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Séries temporelles]], [[darts]], [[statsforecast]]
+
+### Podman  ·  brique
+- tags : `container`, `self-hosted`
+- liens sortants : [[DevOps]], [[Docker]], [[Docker Compose]]
+- liens entrants : [[DevOps]], [[Docker]], [[Docker Compose]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -2332,8 +2342,8 @@
 
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
-- liens sortants : [[Docker]], [[GitHub Actions]], [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[Docker]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]]
+- liens sortants : [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[Outils de développement]], [[Podman]], [[testcontainers]]
+- liens entrants : [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]], [[Podman]]
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
@@ -4261,7 +4271,7 @@
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
-- `container` : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Daytona, DevOps, Docker, Docker Compose, E2B, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
@@ -4484,7 +4494,7 @@
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4571,7 +4581,7 @@
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Daytona, DevOps, Docker, E2B, Modal, Pattern - Stack démo ML locale multi-services, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
+- `container` (porté par : Beszel, Daytona, DevOps, Docker, Docker Compose, E2B, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
@@ -4702,7 +4712,7 @@
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR)
+- `self-hosted` (porté par : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
