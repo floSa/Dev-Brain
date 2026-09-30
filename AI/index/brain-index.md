@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 858 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 867 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -534,11 +534,18 @@
 - **Zabbix** — Plateforme de supervision distribuée d'entreprise (AGPL-3.0 depuis la 7.0, C, PHP, Go) — serveur, agents actifs ou passifs, collecte sans agent (SNMP, IPMI), modèles, déclencheurs et tableaux de bord sur MySQL, MariaDB ou PostgreSQL ; proxies pour les sites distants.
 
 ### security/auth
+- **Authelia** — Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante).
+- **Authentik** — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois.
+- **Keycloak** — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter.
 - **PyJWT** — Implémentation Python de référence des JSON Web Tokens (RFC 7519) — encode, décode et vérifie des tokens signés (HMAC, RSA, ECDSA, EdDSA) avec validation des claims (exp, aud, iss) ; brique d'auth stateless pour API.
 
 ### security/recon
 - **osint4all** — Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.
 - **Web-Check** — Audit d'un site depuis sa seule URL, sans accès privilégié : DNS, TLS, en-têtes de sécurité, technologies détectées, redirections, ports, traceroute, listes de blocage et archives — auto-hébergeable en Docker.
+
+### security/secrets
+- **OpenBao** — Serveur de secrets sous MPL-2.0, fork communautaire de HashiCorp Vault (LF Edge puis OpenSSF, Go) : coffre clé-valeur, secrets dynamiques de bases de données, PKI, Transit, scellement Shamir ou auto-unseal, Raft intégré — sans fonction gardée en payant, mais qui diverge volontairement de Vault et ne corrige que sa dernière version.
+- **SOPS** — Chiffre les valeurs d'un fichier YAML, JSON, ENV ou INI en laissant clés et structure lisibles (MPL-2.0, Go, CNCF Sandbox) — clés age, PGP, KMS cloud ou Transit de Vault ou OpenBao ; le fichier chiffré se versionne dans Git, mais sans serveur : ni audit, ni révocation, ni rotation automatique.
 
 ### signal/audio
 - **librosa** — Bibliothèque d'analyse audio et musicale en Python — chargement, STFT, mel-spectrogramme et MFCC, estimation de tempo et de hauteur, séparation harmonique/percussive ; la référence pour extraire des features audio.
@@ -965,12 +972,18 @@
 - **Métriques, logs et traces** — domaines : infra-ops, mlops · alias : three pillars, trois piliers, télémétrie, telemetry, signaux d'observabilité, métriques logs traces
 - **SLO et alerting** — domaines : infra-ops, mlops · alias : SLO, SLI, SLA, service level objective, budget d'erreur, error budget, burn rate, taux de consommation, alerting, alerte sur les SLO
 
+### security/auth
+- **OAuth2 et OpenID Connect** — domaines : infra-ops, ai-eng · alias : oauth2, oauth 2.0, oidc, openid connect, authorization code pkce, jeton d'accès, id token
+
 ### security/ia
 - **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM
 - **Guardrails** — domaines : ai-eng · alias : garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie
 - **Jailbreaking and defenses** — domaines : ai-eng · alias : jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN
 - **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
 - **Sandboxing de code généré** — domaines : ai-eng · alias : sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM
+
+### security/secrets
+- **Gestion des secrets** — domaines : infra-ops, mlops · alias : secrets management, gestion de secrets, coffre à secrets, secret zéro, rotation des secrets
 
 ### signal/traitement
 - **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
@@ -1174,6 +1187,9 @@
 ### ml/vision
 - **Comparatif - Détection & segmentation** — —
 
+### security/auth
+- **Comparatif - Fournisseurs d'identité** — —
+
 ### signal/traitement
 - **Comparatif - Traitement du signal** — —
 
@@ -1220,6 +1236,7 @@
 - **Apprentissage par renforcement** — Apprendre par interaction plutôt que sur un jeu de données figé — un agent agit, reçoit une récompense, et ajuste sa politique.
 - **Apprentissage profond** — Comment un réseau de neurones est fait et comment on l'entraîne — architectures, optimisation, mise à l'échelle, compression — et les socles qui le font tourner.
 - **Assistants** — Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.
+- **Authentification** — Prouver qui appelle — vérifier un jeton dans le code d'une API, ou déléguer la connexion à un fournisseur d'identité ou à un portail placé devant le reverse proxy.
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
 - **Bases de graphes** — Stocker des entités et leurs relations, et interroger des chemins de profondeur variable — les moteurs de graphe, leurs langages et ce que leur licence permet.
@@ -1276,7 +1293,7 @@
 - **Stockage** — Ranger des fichiers en masse et les servir par le réseau — le sol sur lequel reposent les lakehouses et les artefacts de modèle.
 - **Suivi d'expériences** — Enregistrer ce qui a produit quel modèle — paramètres, métriques, données, artefacts — pour pouvoir le comparer et le refaire.
 - **Systèmes IA** — La surface d'attaque d'un système qui embarque un modèle, et les défenses qui tiennent.
-- **Sécurité** — Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
+- **Sécurité** — Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 - **Séries temporelles** — Les bibliothèques dont l'entrée est indexée par le temps — prévoir, détecter une rupture, et valider sans tricher avec le futur.
 - **Tabulaire** — Des lignes, des colonnes, une cible — les arbres et leurs ensembles, et le travail sur les variables qui décide de leur score.
 - **Tests & estimation** — Ce qu'un échantillon déjà collecté permet de conclure — une décision binaire, une fourchette, ou un paramètre estimé.

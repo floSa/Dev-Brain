@@ -103,6 +103,9 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 ### Stockage
 - [[Comparatif - Stockage objet]]
 
+### Sécurité
+- [[Comparatif - Fournisseurs d'identité]]
+
 ### Web & API
 - [[Comparatif - Reverse proxies]]
 <!-- AUTO:END -->
