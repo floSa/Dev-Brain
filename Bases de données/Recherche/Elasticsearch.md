@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]", "[[OpenSearch]]", "[[Meilisearch]]", "[[Typesense]]", "[[Apache Solr]]"]
-complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]", "[[JanusGraph]]"]
+complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]", "[[JanusGraph]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
 url_repo: https://github.com/elastic/elasticsearch
@@ -72,6 +72,8 @@ visualisation.
 - [[Logstash]] — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire. — le pipeline qui transforme les événements avant l'indexation.
 - [[Beats]] — Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash. — les agents qui expédient logs et métriques depuis les machines sources.
 - [[JanusGraph]] — Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024. — la couche de graphe qui s'appuie sur Elasticsearch comme index externe pour la recherche par propriété.
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — moteur de recherche obligatoire du serveur, en 9.x.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — moteur de recherche du serveur, en 8.x ; l'index de graphe s'y appuie aussi.
 
 ## Ressources
 
