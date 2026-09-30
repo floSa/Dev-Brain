@@ -28,6 +28,8 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - OCR imprimé sur CPU seul, sans framework de deep learning, ou PDF cherchable à produire → [[Tesseract]].
 - OCR multilingue et mise en page, tableaux ou formules dans le même outil, Apache 2.0 → [[PaddleOCR]].
 - Prototype OCR Python multilingue en quelques lignes, sans exigence de maintenance → [[EasyOCR]].
+- Gros corpus de PDF en Markdown par un modèle vision-langage, GPU disponible, code et poids Apache 2.0 → [[olmOCR]].
+- Mise en page lourde, formules et tableaux, qualité réglable du CPU au GPU, licence non standard à faire valider → [[MinerU]].
 - Documents variés (PDF, Office, HTML, e-mails) à partitionner pour un RAG → [[Unstructured]].
 - Mise en page et tableaux complexes, exécution locale, Apache/MIT → [[Docling]].
 - Markdown de haute qualité, GPU disponible, licence GPL acceptée → [[Marker]].
@@ -41,6 +43,8 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - [[EasyOCR]] — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
 - [[LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
+- [[MinerU]] — Extracteur de documents d'OpenDataLab vers Markdown, HTML, LaTeX et JSON : quatre niveaux de qualité, du traitement natif sur CPU jusqu'à un modèle vision-langage de 1,2 milliard de paramètres ; licence propre (Apache 2.0 plus conditions, seuils à 100 M d'utilisateurs ou 20 M$ de revenu mensuel), version 4.0 incompatible avec la 3.x.
+- [[olmOCR]] — Toolkit d'Ai2 qui convertit PDF et images en Markdown avec un modèle vision-langage de 7 milliards de paramètres affiné pour l'OCR : tableaux, équations et ordre de lecture, traitement en lot sur GPU via vLLM ; code et poids Apache 2.0, GPU obligatoire.
 - [[OpenDataLoader PDF]] — Parseur PDF Java sous Apache 2.0 orienté données AI-ready : sortie déterministe en JSON à bounding boxes, Markdown et HTML avec ordre de lecture XY-Cut++, plus l'auto-tagging d'un PDF non balisé en Tagged PDF ; mode hybride optionnel qui route les pages complexes vers un backend IA.
 - [[PaddleOCR]] — Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.
 - [[pdf-inspector]] — Bibliothèque et CLI Rust qui classent un PDF (texte natif, scanné, mixte) en quelques dizaines de millisecondes et en extraient le texte positionné vers du Markdown, pour ne router vers l'OCR que les pages qui en ont besoin ; bindings Python, Node et WASM.
