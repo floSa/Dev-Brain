@@ -708,7 +708,14 @@ axes:
               Et non « Inference », qui est deja un alias du hub Serving (meme
               role -> avertissement R5) et redoublerait le nom du domaine parent.
           monitoring:
-            frontiere: "Derive de modele. Distinct d observability/supervision (logiciel deploye). Sous le seuil : 3 pages."
+            libelle: "Monitoring de modèles"
+            motif: >
+              Promu le 2026-09-30 sur arbitrage de floSa (conversation 15,
+              NannyML et Deepchecks) : avec Evidently et les deux notions, le
+              sous-domaine atteint 5 pages pesantes. Le pluriel distingue le
+              hub de la notion « Monitoring de modèle en production », qui ne
+              partage aucun alias avec lui ; nom de fichier verifie unique.
+            frontiere: "Derive de modele, estimation de performance sans verite terrain, tests de validation avant deploiement. Distinct d observability/supervision (logiciel deploye)."
           feature-store:
             frontiere: "Sous le seuil : 2 pages, pas de dossier, donc pas de libelle."
           annotation:
