@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[FastAPI]]"]
-complements: []
+complements: ["[[Nginx]]"]
 tags: [web-framework]
 url_docs: https://flask.palletsprojects.com
 url_repo: https://github.com/pallets/flask
@@ -59,6 +59,10 @@ Armin Ronacher), ligne 3.1.x, et de loin le framework web Python le plus téléc
 ### Alternatives
 
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
+
+### Compléments
+
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — la documentation de Flask a une page dédiée à Nginx, à compléter par `ProxyFix` pour que l'application lise les en-têtes transférés.
 
 ## Ressources
 

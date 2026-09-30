@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Flask]]"]
-complements: ["[[Uvicorn]]", "[[HTMX]]", "[[SQLModel]]"]
+complements: ["[[Uvicorn]]", "[[HTMX]]", "[[SQLModel]]", "[[Traefik]]", "[[Nginx]]"]
 tags: [web-framework, type-hints]
 url_docs: https://fastapi.tiangolo.com
 url_repo: https://github.com/fastapi/fastapi
@@ -63,6 +63,8 @@ branche ailleurs. Créé par Sebastián Ramírez (tiangolo), ligne 0.13x en 2026
 - [[Uvicorn]] — Serveur ASGI Python performant (uvloop/httptools) qui exécute les applications async comme FastAPI. — la brique d'exécution, sans laquelle l'application ne tourne pas
 - [[HTMX]] — Bibliothèque hypermedia : des attributs HTML déclenchent des requêtes AJAX et remplacent des fragments de page renvoyés en HTML, pour de l'interactivité riche sans JavaScript lourd. — la couche d'interactivité quand ce backend doit aussi servir des pages
 - [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI. — la couche de persistance typée du même auteur, modèles partagés entre table et schéma d'API
+- [[Traefik]] — Reverse proxy à configuration dynamique : il découvre ses routes dans les labels Docker, dans Kubernetes (Ingress, IngressRoute, Gateway API) ou dans des fichiers (MIT, Go, Traefik Labs) — ACME, tableau de bord et métriques intégrés ; OIDC, JWT, WAF et Let's Encrypt multi-instance sont réservés à l'offre commerciale Traefik Hub. — la page « Behind a Proxy » de FastAPI prend Traefik pour exemple : `--root-path` quand le proxy retire un préfixe, `--forwarded-allow-ips` pour les en-têtes transférés.
+- [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — cité par la même page de FastAPI comme proxy possible.
 
 ## Ressources
 
