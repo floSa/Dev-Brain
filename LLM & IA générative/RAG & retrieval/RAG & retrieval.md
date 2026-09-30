@@ -22,6 +22,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 
 ## Choisir
 
+- Un moteur RAG livré avec parsing par mise en page, index, chat et droits, plutôt qu'un assemblage → [[RAGFlow]] ; le choix entre clé en main et assemblé est dans [[RAG documentaire on-prem - clé en main ou assemblé]].
 - Partir d'un pipeline complet, orienté indexation de documents → [[LlamaIndex]].
 - Un pipeline explicite, composant par composant, plutôt qu'une abstraction → [[Haystack]].
 - Ajouter du ColBERT à un pipeline qui existe déjà → [[RAGatouille]].
@@ -42,6 +43,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - [[Late-interaction retrieval]] — domaines : ai-eng
 - [[Query transformations]] — domaines : ai-eng
 - [[RAG]] — domaines : ai-eng
+- [[RAG documentaire on-prem - clé en main ou assemblé]] — domaines : ai-eng
 - [[Reranking]] — domaines : ai-eng
 
 ### Briques
@@ -52,6 +54,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 - [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - [[RAGatouille]] — Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ### Comparatifs
 - [[Comparatif - Rerankers]]
