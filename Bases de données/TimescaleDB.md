@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C
 alternatives: ["[[InfluxDB]]"]
-complements: ["[[Postgres]]"]
+complements: ["[[Postgres]]", "[[EMQX]]"]
 tags: [timeseries, postgres]
 url_docs: https://www.tigerdata.com/docs
 url_repo: https://github.com/timescale/timescaledb
@@ -60,6 +60,7 @@ par Tiger Data, ex-Timescale.
 ### Compléments
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — le moteur hôte, sans lequel l'extension n'existe pas.
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — intégration de données documentée d'EMQX vers Timescale.
 
 ## Ressources
 

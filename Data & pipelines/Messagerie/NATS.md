@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[Kafka]]", "[[Redpanda]]", "[[RabbitMQ]]"]
+alternatives: ["[[Kafka]]", "[[Redpanda]]", "[[RabbitMQ]]", "[[Mosquitto]]", "[[EMQX]]"]
 complements: ["[[Prometheus]]", "[[Kubernetes]]", "[[Debezium]]", "[[Kestra]]"]
 tags: [message-broker, distributed, self-hosted]
 url_docs: https://docs.nats.io/
@@ -81,6 +81,8 @@ des cycles de release de six mois (billet du 2025-05-13). Statut CNCF : *incubat
 - [[Kafka]] — Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0). — l'écosystème d'intégration (Connect, Streams) et l'ancienneté d'exploitation d'un journal partitionné, au prix de plusieurs composants.
 - [[Redpanda]] — Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale. — le protocole Kafka pour brancher clients et connecteurs existants, sous licence BSL.
 - [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — routage par exchanges, files de travail avec acquittement, AMQP 1.0 natif.
+- [[Mosquitto]] — Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse. — un broker dédié à MQTT pour un nœud d'atelier, qui accepte MQTT 5.0 là où NATS refuse la version 5, sans JetStream obligatoire.
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — un cluster MQTT natif avec MQTT 5 et intégrations de données, au prix d'une licence BSL.
 
 ### Compléments
 
