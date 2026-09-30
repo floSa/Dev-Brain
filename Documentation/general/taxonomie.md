@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 105 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 106 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (105 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (106 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -200,7 +200,7 @@ storage/{objet}
 web/{backend, frontend, api, proxy}
 ui/{data-app}
 network/{analyse, transfert}
-security/{recon, auth, ia}
+security/{recon, auth, secrets, ia}
 devops/{ci, conteneur}
 observability/{supervision}
 automation/{no-code}
@@ -457,6 +457,14 @@ valeurs disparues et ne sont pas reconduites.
   ne l'exécute pas, il lui route), de `network/analyse` (observer le trafic, sans le router) et de
   `devops/conteneur` (l'orchestrateur qui livre un ingress par défaut, comme k3s, n'en fait pas un
   proxy). Les passerelles d'API et les VPN ne sont pas rangés ici : aucun n'a de fiche.
+- `security/secrets` — **ouvert le 2026-09-30**, arbitrage de floSa. Stocker, distribuer, chiffrer et
+  faire tourner les **secrets** d'un système (mots de passe de service, clés d'API, clés de
+  chiffrement, certificats) : coffre à secrets, chiffrement de fichiers versionnables. Rangé sous
+  `security/` et non sous `database/*` bien que D3 (stocker et interroger) passe avant D9 : un coffre
+  n'est pas un SGBD, on n'y range pas de données mais de quoi ouvrir les autres. Distinct de
+  `security/auth` (prouver **qui** appelle : fournisseurs d'identité, jetons) et de `devtools/config`
+  (charger une configuration applicative, secrète ou non : python-dotenv, Pydantic Settings — qui
+  lisent un secret sans le garder).
 - `network/analyse` — observation et analyse du **trafic** (qui parle à qui, ports, protocoles,
   volumes, alertes). Distinct d'`observability/supervision`, qui instrumente des machines et des
   applications *depuis l'intérieur*.
