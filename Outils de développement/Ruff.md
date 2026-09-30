@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: []
-complements: []
+complements: ["[[Semgrep]]"]
 tags: [linter, formatter]
 url_docs: https://docs.astral.sh/ruff/
 url_repo: https://github.com/astral-sh/ruff
@@ -51,6 +51,16 @@ l'autre : `ruff check` lint, `ruff format` formate.
 - Prérequis — la configuration tient dans `pyproject.toml` ; extension VS Code officielle pour l'éditeur
 - Exécution — sur le poste, dans l'éditeur et en CI ; rien à héberger
 - Coût — gratuit sous licence MIT
+
+## Écosystème
+
+### Alternatives
+
+- *Aucune alternative déclarée pour ce dossier.*
+
+### Compléments
+
+- [[Semgrep]] — Analyse statique de code par motifs, en édition communautaire (moteur LGPL-2.1, Semgrep Inc.) : règles YAML, plus de 30 langages dont Python, sorties SARIF et JSON, utilisable hors ligne avec des règles locales — mais sans analyse entre fichiers ni entre fonctions, et avec des règles du registre sous une licence d'usage interne qui interdit de les redistribuer. — les règles `S` de Ruff sont un portage de flake8-bandit (documentation de Ruff), un premier filet de motifs simples ; Semgrep le prolonge avec des règles propres et d'autres langages.
 
 ## Ressources
 
