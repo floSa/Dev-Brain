@@ -11,6 +11,7 @@ Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine
 
 - [[Observabilité]] — 2 page(s)
 - [[Réseau]] — 2 page(s)
+- [[DevOps]] — 1 page(s)
 - [[Stockage]] — 1 page(s)
 - [[Sécurité]] — 1 page(s)
 <!-- AUTO:END -->
