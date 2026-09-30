@@ -27,7 +27,7 @@ Axe métier **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis de
 
 - [[LLM & IA générative]] — 75 page(s)
 - [[Machine Learning]] — 45 page(s)
-- [[Bases de données]] — 5 page(s)
+- [[Bases de données]] — 6 page(s)
 - [[Sécurité]] — 5 page(s)
 - [[Mathématiques]] — 3 page(s)
 - [[Design & diagrammes]] — 2 page(s)

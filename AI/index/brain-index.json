@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 841,
+  "count": 842,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -843,6 +843,7 @@
       "Apache Cassandra",
       "Apache Solr",
       "ArangoDB",
+      "Bases graphe — modèles et langages de requête",
       "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
@@ -1225,6 +1226,7 @@
       "ArangoDB",
       "Bases de données",
       "Bases de graphes",
+      "Bases graphe — modèles et langages de requête",
       "Comparatif - Bases graphes",
       "Dgraph",
       "GraphRAG",
@@ -1419,6 +1421,7 @@
       "Théorie de l'information"
     ],
     "knowledge-graph": [
+      "Bases graphe — modèles et langages de requête",
       "Construction de graphes de connaissances",
       "GraphRAG",
       "Graphify",
@@ -2617,6 +2620,7 @@
     "relational": [
       "Alembic",
       "Bases de données",
+      "Bases graphe — modèles et langages de requête",
       "CockroachDB",
       "Comparatif - Bases relationnelles",
       "DBeaver",
@@ -4001,6 +4005,37 @@
       "pitch": "Stocker des entités et leurs relations, et interroger des chemins de profondeur variable — les moteurs de graphe, leurs langages et ce que leur licence permet.",
       "tags": [
         "graph-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Bases graphe — modèles et langages de requête.md",
+      "nom": "Bases graphe — modèles et langages de requête",
+      "alias": [
+        {
+          "Bases graphe": "modèles et langages de requête"
+        },
+        "property graph vs RDF",
+        "Cypher GQL Gremlin",
+        "langages de requête de graphe",
+        "graphe ou relationnel"
+      ],
+      "role": "notion",
+      "categorie": "database/graphe",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "graph-db",
+        "knowledge-graph",
+        "relational",
+        "distributed"
       ],
       "alternatives": null,
       "complements": null,
