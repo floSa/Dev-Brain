@@ -1,7 +1,7 @@
 ---
 role: comparatif
 nom: Comparatif - Détection d'anomalies
-categorie: ml/non-supervise
+categorie: ml/anomalie
 tags: [anomaly-detection, unsupervised]
 ---
 
