@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 916,
+  "count": 917,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1399,6 +1399,7 @@
     "hyperparameter-tuning": [
       "Comparatif - Optimisation d'hyperparamètres",
       "Hyperopt",
+      "Kubeflow",
       "Machine Learning",
       "Maximal Update Parametrization",
       "Optimisation d'hyperparamètres",
@@ -1580,6 +1581,7 @@
       "Flyte",
       "Helm",
       "KServe",
+      "Kubeflow",
       "Kubernetes",
       "Microsoft Azure Machine Learning",
       "Nginx",
@@ -2063,6 +2065,7 @@
       "Dataiku",
       "Flyte",
       "Google Cloud Vertex AI",
+      "Kubeflow",
       "Machine Learning",
       "Metaflow",
       "Microsoft Azure Machine Learning",
@@ -2079,6 +2082,7 @@
       "Databricks",
       "Dataiku",
       "Google Cloud Vertex AI",
+      "Kubeflow",
       "Microsoft Azure Machine Learning",
       "Plateforme data & IA — concept",
       "Plateformes data & IA",
@@ -2317,6 +2321,7 @@
       "Page to Markdown"
     ],
     "notebook": [
+      "Kubeflow",
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
@@ -3058,6 +3063,7 @@
       "Infinity",
       "Kafka",
       "Keycloak",
+      "Kubeflow",
       "Kubernetes",
       "Label Studio",
       "Meilisearch",
@@ -9871,7 +9877,8 @@
         "[[DataHub]]",
         "[[Label Studio]]",
         "[[CVAT]]",
-        "[[lakeFS]]"
+        "[[lakeFS]]",
+        "[[Kubeflow]]"
       ],
       "maturite": "production"
     },
@@ -17199,7 +17206,8 @@
       ],
       "alternatives": [
         "[[ZenML]]",
-        "[[Metaflow]]"
+        "[[Metaflow]]",
+        "[[Kubeflow]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -17759,7 +17767,8 @@
       ],
       "alternatives": [
         "[[ZenML]]",
-        "[[Flyte]]"
+        "[[Flyte]]",
+        "[[Kubeflow]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -19281,6 +19290,42 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Plateformes data & IA/Kubeflow.md",
+      "nom": "Kubeflow",
+      "alias": [
+        "kubeflow",
+        "kubeflow platform",
+        "kubeflow pipelines"
+      ],
+      "role": "brique",
+      "categorie": "ml/plateforme",
+      "famille": "plateforme",
+      "langage": "Go, Python",
+      "domaines": [
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": "Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer.",
+      "tags": [
+        "ml-platform",
+        "ml-pipeline",
+        "kubernetes",
+        "hyperparameter-tuning",
+        "notebook",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Flyte]]",
+        "[[Metaflow]]",
+        "[[ZenML]]"
+      ],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[KServe]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Plateformes data & IA/Microsoft Azure Machine Learning.md",
       "nom": "Microsoft Azure Machine Learning",
       "alias": [
@@ -19573,7 +19618,8 @@
         "[[Ray Serve]]"
       ],
       "complements": [
-        "[[Kubernetes]]"
+        "[[Kubernetes]]",
+        "[[Kubeflow]]"
       ],
       "maturite": "production"
     },
@@ -22770,7 +22816,8 @@
       ],
       "alternatives": [
         "[[Metaflow]]",
-        "[[Flyte]]"
+        "[[Flyte]]",
+        "[[Kubeflow]]"
       ],
       "complements": [],
       "maturite": "production"
