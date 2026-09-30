@@ -16,6 +16,7 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Un PDF ne contient pas de texte structuré : il contient des instructions de dessin. Il n'y a ni paragraphe, ni tableau, ni ordre de lecture — tout cela est **reconstruit par inférence**, et c'est pourquoi deux outils donnent deux résultats sur le même fichier. C'est la difficulté centrale du domaine, pas un défaut d'implémentation.
 - Le clivage qui décide de tout est **le PDF porte-t-il du texte natif ou une image**. Natif, l'extraction est déterministe et rapide ([[PyMuPDF]], [[pdfplumber]]). Scanné, il faut de l'[[OCR]] ([[docTR]]) et le résultat devient probabiliste. Un corpus réel est mixte, d'où l'intérêt de **classer avant de router** ([[pdf-inspector]]) : ne payer l'OCR que sur les pages qui en ont besoin.
 - Les **tableaux** sont le point où les outils se séparent vraiment. Le texte, tout le monde le sort ; une structure de lignes et de colonnes fidèle, presque personne. C'est le critère à tester sur ses propres fichiers avant de choisir, et non à lire dans une documentation.
+- Sur un document scanné, un second choix s'ouvre : un **pipeline OCR en étages** ([[Tesseract]], [[docTR]], [[PaddleOCR]]) ou un **modèle vision-langage** qui lit la page entière ([[olmOCR]], [[MinerU]]). Le premier se trompe en bruit local ; le second lit mieux les tableaux, les formules et les colonnes, mais peut réécrire ce qu'il lit, et demande un GPU. Les sources de 2026 ne donnent pas de vainqueur : cf. [[OCR classique vs modèles vision-langage pour documents]].
 - Un second clivage traverse le domaine : **quelle sortie**. Un accès objet par objet, pour piloter l'extraction soi-même ([[pdfplumber]], [[PyMuPDF]]) ; ou du Markdown prêt à découper et embarquer pour un RAG ([[Marker]], [[Docling]], [[Unstructured]]). Cf. [[Chunking strategies]].
 - La **licence** est ici un critère de premier rang, plus que dans le reste du brain : [[PyMuPDF]] est AGPL ou commerciale, [[Marker]] est GPL avec des poids à licence restreinte, [[LlamaParse]] n'est pas ouvert du tout. Sur un projet client, ce point se règle avant le benchmark.
 
@@ -40,6 +41,9 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Rien à héberger, PDF complexes, budget par crédits → [[LlamaParse]].
 
 <!-- AUTO:START -->
+### Notions
+- [[OCR classique vs modèles vision-langage pour documents]] — domaines : data-eng, ai-eng
+
 ### Briques
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[docTR]] — Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.
