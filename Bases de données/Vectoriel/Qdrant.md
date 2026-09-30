@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Weaviate]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: []
+complements: ["[[FastEmbed]]"]
 tags: [vector-db, rag, ann]
 url_docs: https://qdrant.tech/documentation/
 url_repo: https://github.com/qdrant/qdrant
@@ -62,6 +62,10 @@ sauvegarde.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+
+### Compléments
+
+- [[FastEmbed]] — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut. — produit les vecteurs à insérer, avec l'intégration `qdrant-client[fastembed]`.
 
 ## Ressources
 
