@@ -50,6 +50,7 @@ tags: [mqtt, message-broker]
 ## Voir aussi
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
-- [[Data & pipelines]] — le hub du domaine.
+- [[Données industrielles]] — le hub du dossier.
+- [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — la notion : Sparkplug B, pourquoi un broker, sécurité d'un réseau d'atelier.
 - [[Comparatif - Brokers de messages]] — les brokers génériques : journal, file, binaire unique.
 - [[Architecture pilotée par les événements]] — événement contre commande, file contre journal, garanties de livraison.

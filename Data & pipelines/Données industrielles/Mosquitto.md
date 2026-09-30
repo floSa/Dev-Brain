@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[EMQX]]", "[[NATS]]", "[[RabbitMQ]]"]
-complements: []
+complements: ["[[Node-RED]]"]
 tags: [mqtt, message-broker, iiot, self-hosted]
 url_docs: https://mosquitto.org/documentation/
 url_repo: https://github.com/eclipse-mosquitto/mosquitto
@@ -49,7 +49,7 @@ sont tous du même auteur.
 | Prendre si | Écarter si |
 |---|---|
 | Un nœud suffit : une cellule d'atelier, une passerelle en bordure, un Raspberry Pi | Des centaines de milliers de connexions à répartir sur plusieurs nœuds, ou une haute disponibilité : [[EMQX]] (le cluster y exige une licence, voir *Licence*) |
-| La licence doit être sans condition : EPL-2.0 ou EDL-1.0 (BSD-3-Clause), aucun palier payant dans le dépôt | Une administration en interface graphique, une intégration de données vers Kafka ou une base sans écrire de passerelle : [[EMQX]], ou un outil de flux devant Mosquitto |
+| La licence doit être sans condition : EPL-2.0 ou EDL-1.0 (BSD-3-Clause), aucun palier payant dans le dépôt | Une administration en interface graphique, une intégration de données vers Kafka ou une base sans écrire de passerelle : [[EMQX]], ou [[Node-RED]] devant Mosquitto |
 | Un bridge vers un broker central, pour que l'atelier pousse vers le site sans qu'aucune connexion n'entre | Un support Sparkplug B validé : le plugin est livré avec la 2.1 mais sa documentation dit qu'il n'est pas testé avec le TCK officiel |
 | Les clients sont des automates ou des passerelles qui ne demandent que MQTT, avec une empreinte de quelques mégaoctets | Une authentification par annuaire ou OIDC des clients : la doc officielle n'en décrit pas ; MySQL, JWT et Redis passent par un plugin tiers, `mosquitto-go-auth` |
 
@@ -84,8 +84,7 @@ sont tous du même auteur.
 - [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — déjà déployé pour les files de travail, il accepte MQTT par plugin, sans QoS 2 ni abonnements partagés.
 
 ### Compléments
-
-Aucun complément déclaré : la passerelle vers une base de séries temporelles se fait par un outil de flux, voir le hub du dossier.
+- [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — [[Node-RED]] lit et publie sur Mosquitto par ses nœuds MQTT du cœur : le montage courant d'une passerelle d'atelier.
 
 ## Ressources
 
@@ -95,6 +94,7 @@ Aucun complément déclaré : la passerelle vers une base de séries temporelles
 
 ## Voir aussi
 
-- [[Data & pipelines]] — le hub du domaine
+- [[Données industrielles]] — le hub du dossier
+- [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — la notion : MQTT, OPC UA, Modbus, Sparkplug B, sécurité d'un réseau d'atelier
 - [[Comparatif - Brokers MQTT]] — ce qui départage Mosquitto et EMQX, et les deux brokers écartés
 - [[Architecture pilotée par les événements]] — la notion : file contre journal, garanties de livraison
