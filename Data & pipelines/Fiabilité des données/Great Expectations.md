@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Soda Core]]", "[[pandera]]"]
-complements: ["[[Airflow]]", "[[Postgres]]", "[[pandas]]", "[[Spark]]"]
+complements: ["[[Airflow]]", "[[Postgres]]", "[[pandas]]", "[[Spark]]", "[[OpenLineage]]", "[[DataHub]]"]
 tags: [data-quality, data-validation, data-contract]
 url_docs: https://docs.greatexpectations.io/
 url_repo: https://github.com/fivetran/great_expectations
@@ -82,6 +82,8 @@ communauté ».
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — source SQL de la liste de compatibilité officielle de GX (extra `postgresql`).
 - [[pandas]] — DataFrames Python de référence : Series/DataFrame en mémoire, indexation riche, group-by, jointures et séries temporelles ; le pivot de l'écosystème data Python. — les DataFrames pandas se valident par `context.data_sources.add_pandas(...)` ; Polars n'est pas supporté.
 - [[Spark]] — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark. — les DataFrames Spark se valident par `add_spark(...)` (extra `spark`) et Spark figure dans la liste de compatibilité officielle.
+- [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — intégration listée par la documentation d'OpenLineage, par la liste d'actions d'un checkpoint.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — source listée en GA sur la page des intégrations de DataHub.
 
 ## Ressources
 
