@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 858,
+  "count": 867,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -216,6 +216,11 @@
       "Maka"
     ],
     "authentication": [
+      "Authelia",
+      "Authentification",
+      "Authentik",
+      "Keycloak",
+      "OAuth2 et OpenID Connect",
       "PyJWT",
       "Sécurité"
     ],
@@ -547,7 +552,10 @@
       "Théorie de l'information"
     ],
     "cryptography": [
+      "Gestion des secrets",
+      "OpenBao",
       "PyJWT",
+      "SOPS",
       "Sécurité",
       "croc"
     ],
@@ -1312,6 +1320,15 @@
       "Orchestration",
       "Stream processing"
     ],
+    "identity-provider": [
+      "Authelia",
+      "Authentification",
+      "Authentik",
+      "Comparatif - Fournisseurs d'identité",
+      "Keycloak",
+      "OAuth2 et OpenID Connect",
+      "Sécurité"
+    ],
     "image-classification": [
       "Classification d'images",
       "Vision"
@@ -1455,6 +1472,7 @@
       "Kubernetes",
       "Microsoft Azure Machine Learning",
       "Nginx",
+      "OpenBao",
       "Reverse proxy et TLS",
       "Seldon Core",
       "Serving",
@@ -2756,6 +2774,7 @@
       "sentence-transformers"
     ],
     "reverse-proxy": [
+      "Authelia",
       "Caddy",
       "Comparatif - Reverse proxies",
       "HAProxy",
@@ -2838,6 +2857,12 @@
       "Newton & quasi-Newton",
       "Optimisation"
     ],
+    "secrets-management": [
+      "Gestion des secrets",
+      "OpenBao",
+      "SOPS",
+      "Sécurité"
+    ],
     "segmentation": [
       "Comparatif - Détection & segmentation",
       "Detectron2",
@@ -2852,18 +2877,23 @@
     "self-hosted": [
       "Alertmanager",
       "Argo CD",
+      "Authelia",
+      "Authentik",
       "Automatisation no-code",
       "Beszel",
       "Caddy",
       "Choisir un modèle d'embedding",
       "Dataiku",
+      "Gestion des secrets",
       "HAProxy",
       "Infinity",
+      "Keycloak",
       "Kubernetes",
       "Meilisearch",
       "Netdata",
       "Nginx",
       "Observabilité",
+      "OpenBao",
       "OpenMAIC",
       "OpenTelemetry",
       "Podman",
@@ -2971,6 +3001,14 @@
       "Médias",
       "Speech models",
       "Superwhisper"
+    ],
+    "sso": [
+      "Authelia",
+      "Authentification",
+      "Authentik",
+      "Keycloak",
+      "OAuth2 et OpenID Connect",
+      "Sécurité"
     ],
     "state-space-model": [
       "Architectures hybrides LLM",
@@ -6498,7 +6536,10 @@
         "[[Kestra]]",
         "[[Temporal]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Keycloak]]",
+        "[[Authentik]]"
+      ],
       "maturite": "production"
     },
     {
@@ -8305,7 +8346,8 @@
         "[[Helm]]",
         "[[GitHub Actions]]",
         "[[Traefik]]",
-        "[[Nginx]]"
+        "[[Nginx]]",
+        "[[Keycloak]]"
       ],
       "maturite": "production"
     },
@@ -8491,7 +8533,10 @@
         "[[BentoML]]",
         "[[Traefik]]",
         "[[Nginx]]",
-        "[[HAProxy]]"
+        "[[HAProxy]]",
+        "[[Keycloak]]",
+        "[[OpenBao]]",
+        "[[SOPS]]"
       ],
       "maturite": "production"
     },
@@ -11240,7 +11285,10 @@
         "[[Phoenix Arize]]",
         "[[Helicone]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Keycloak]]",
+        "[[Authentik]]"
+      ],
       "maturite": "production"
     },
     {
@@ -22721,7 +22769,8 @@
         "[[Loki]]",
         "[[Prometheus]]",
         "[[Tempo]]",
-        "[[VictoriaMetrics]]"
+        "[[VictoriaMetrics]]",
+        "[[Keycloak]]"
       ],
       "maturite": "production"
     },
@@ -25895,7 +25944,178 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/PyJWT.md",
+      "path": "Sécurité/Authentification/Authelia.md",
+      "nom": "Authelia",
+      "alias": [
+        "authelia sso",
+        "portail d'authentification"
+      ],
+      "role": "brique",
+      "categorie": "security/auth",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante).",
+      "tags": [
+        "authentication",
+        "sso",
+        "identity-provider",
+        "self-hosted",
+        "reverse-proxy"
+      ],
+      "alternatives": [
+        "[[Keycloak]]",
+        "[[Authentik]]"
+      ],
+      "complements": [
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Authentification/Authentification.md",
+      "nom": "Authentification",
+      "alias": [
+        "authentification",
+        "sso",
+        "identité",
+        "fournisseurs d'identité",
+        "iam"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "ai-eng"
+      ],
+      "pitch": "Prouver qui appelle — vérifier un jeton dans le code d'une API, ou déléguer la connexion à un fournisseur d'identité ou à un portail placé devant le reverse proxy.",
+      "tags": [
+        "authentication",
+        "sso",
+        "identity-provider"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Authentification/Authentik.md",
+      "nom": "Authentik",
+      "alias": [
+        "authentik sso",
+        "goauthentik"
+      ],
+      "role": "brique",
+      "categorie": "security/auth",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois.",
+      "tags": [
+        "authentication",
+        "sso",
+        "identity-provider",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Keycloak]]",
+        "[[Authelia]]"
+      ],
+      "complements": [
+        "[[Traefik]]",
+        "[[Caddy]]",
+        "[[Nginx]]",
+        "[[Airflow]]",
+        "[[Langfuse]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Authentification/Comparatif - Fournisseurs d'identité.md",
+      "nom": "Comparatif - Fournisseurs d'identité",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "security/auth",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "identity-provider"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Authentification/Keycloak.md",
+      "nom": "Keycloak",
+      "alias": [
+        "keycloak sso",
+        "red hat build of keycloak",
+        "rhbk"
+      ],
+      "role": "brique",
+      "categorie": "security/auth",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter.",
+      "tags": [
+        "authentication",
+        "sso",
+        "identity-provider",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Authentik]]",
+        "[[Authelia]]"
+      ],
+      "complements": [
+        "[[Grafana]]",
+        "[[Airflow]]",
+        "[[Langfuse]]",
+        "[[Argo CD]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Authentification/OAuth2 et OpenID Connect.md",
+      "nom": "OAuth2 et OpenID Connect",
+      "alias": [
+        "oauth2",
+        "oauth 2.0",
+        "oidc",
+        "openid connect",
+        "authorization code pkce",
+        "jeton d'accès",
+        "id token"
+      ],
+      "role": "notion",
+      "categorie": "security/auth",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "authentication",
+        "sso",
+        "identity-provider"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Authentification/PyJWT.md",
       "nom": "PyJWT",
       "alias": [
         "pyjwt",
@@ -25912,7 +26132,93 @@
         "cryptography"
       ],
       "alternatives": [],
-      "complements": [],
+      "complements": [
+        "[[FastAPI]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Gestion des secrets.md",
+      "nom": "Gestion des secrets",
+      "alias": [
+        "secrets management",
+        "gestion de secrets",
+        "coffre à secrets",
+        "secret zéro",
+        "rotation des secrets"
+      ],
+      "role": "notion",
+      "categorie": "security/secrets",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "secrets-management",
+        "cryptography",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/OpenBao.md",
+      "nom": "OpenBao",
+      "alias": [
+        "openbao",
+        "bao",
+        "fork de vault",
+        "vault open source"
+      ],
+      "role": "brique",
+      "categorie": "security/secrets",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Serveur de secrets sous MPL-2.0, fork communautaire de HashiCorp Vault (LF Edge puis OpenSSF, Go) : coffre clé-valeur, secrets dynamiques de bases de données, PKI, Transit, scellement Shamir ou auto-unseal, Raft intégré — sans fonction gardée en payant, mais qui diverge volontairement de Vault et ne corrige que sa dernière version.",
+      "tags": [
+        "secrets-management",
+        "cryptography",
+        "self-hosted",
+        "kubernetes"
+      ],
+      "alternatives": [
+        "[[SOPS]]"
+      ],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Sécurité/SOPS.md",
+      "nom": "SOPS",
+      "alias": [
+        "sops",
+        "mozilla sops",
+        "getsops",
+        "secrets operations"
+      ],
+      "role": "brique",
+      "categorie": "security/secrets",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Chiffre les valeurs d'un fichier YAML, JSON, ENV ou INI en laissant clés et structure lisibles (MPL-2.0, Go, CNCF Sandbox) — clés age, PGP, KMS cloud ou Transit de Vault ou OpenBao ; le fichier chiffré se versionne dans Git, mais sans serveur : ni audit, ni révocation, ni rotation automatique.",
+      "tags": [
+        "secrets-management",
+        "cryptography"
+      ],
+      "alternatives": [
+        "[[OpenBao]]"
+      ],
+      "complements": [
+        "[[Kubernetes]]"
+      ],
       "maturite": "production"
     },
     {
@@ -26093,9 +26399,12 @@
         "ai-eng",
         "infra-ops"
       ],
-      "pitch": "Prouver qui appelle, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.",
+      "pitch": "Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.",
       "tags": [
         "authentication",
+        "sso",
+        "identity-provider",
+        "secrets-management",
         "recon",
         "osint",
         "cryptography",
@@ -26177,7 +26486,8 @@
         "[[HTMX]]",
         "[[SQLModel]]",
         "[[Traefik]]",
-        "[[Nginx]]"
+        "[[Nginx]]",
+        "[[PyJWT]]"
       ],
       "maturite": "production"
     },
@@ -26272,7 +26582,9 @@
       ],
       "complements": [
         "[[Docker Compose]]",
-        "[[Prometheus]]"
+        "[[Prometheus]]",
+        "[[Authelia]]",
+        "[[Authentik]]"
       ],
       "maturite": "production"
     },
@@ -26353,7 +26665,9 @@
         "[[Argo CD]]",
         "[[Prometheus]]",
         "[[FastAPI]]",
-        "[[Flask]]"
+        "[[Flask]]",
+        "[[Authelia]]",
+        "[[Authentik]]"
       ],
       "maturite": "production"
     },
@@ -26444,7 +26758,9 @@
         "[[Kubernetes]]",
         "[[Argo CD]]",
         "[[Prometheus]]",
-        "[[FastAPI]]"
+        "[[FastAPI]]",
+        "[[Authelia]]",
+        "[[Authentik]]"
       ],
       "maturite": "production"
     },

@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Kestra]]", "[[Temporal]]"]
-complements: []
+complements: ["[[Keycloak]]", "[[Authentik]]"]
 tags: [orchestration, data-pipeline, scheduler]
 url_docs: https://airflow.apache.org/docs/
 url_repo: https://github.com/apache/airflow
@@ -65,6 +65,11 @@ ajoute l'Edge Executor pour l'exécution distante.
 - [[Mage]] — Orchestrateur ELT hybride low-code : pipelines assemblés par blocs dans une UI type notebook, de l'ingestion à la transformation.
 - [[Kestra]] — Orchestrateur déclaratif : workflows en YAML, moteur JVM event-driven ; la logique d'orchestration est découplée du langage des tâches.
 - [[Temporal]] — Moteur de workflows durables : le code applicatif (Go, Java, Python, TypeScript…) s'exécute de façon résiliente, l'état est persisté à chaque étape et reprend automatiquement après panne, retry ou redémarrage.
+
+### Compléments
+
+- [[Keycloak]] — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter. — fournisseur `keycloak` de la liste OAuth du provider FAB, et un *auth manager* Keycloak déclaré alpha.
+- [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — fournisseur `authentik` de la liste OAuth du provider FAB.
 
 ## Ressources
 

@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[Traefik]]", "[[Nginx]]", "[[HAProxy]]"]
-complements: ["[[Docker Compose]]", "[[Prometheus]]"]
+complements: ["[[Docker Compose]]", "[[Prometheus]]", "[[Authelia]]", "[[Authentik]]"]
 tags: [reverse-proxy, tls, self-hosted]
 url_docs: https://caddyserver.com/docs/
 url_repo: https://github.com/caddyserver/caddy
@@ -63,6 +63,8 @@ Licence **Apache-2.0**. Le README présente Caddy comme un projet de ZeroSSL, so
 
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling. — l'image officielle et ses deux volumes tiennent dans un service de la pile
 - [[Prometheus]] — Système de supervision et base de séries temporelles open-source (Apache-2.0, Go) — scrape les métriques exposées en HTTP, modèle de données à labels, requêtes PromQL, règles d'alerte transmises à Alertmanager ; stockage local mono-nœud, sans cluster natif. — Caddy expose ses métriques sur son port d'administration
+- [[Authelia]] — Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante). — l'exemple officiel de la directive `forward_auth` de Caddy nomme Authelia.
+- [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — page d'intégration du forward auth avec Caddy.
 
 ## Ressources
 

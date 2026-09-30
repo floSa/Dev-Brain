@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 858 pages actives.
+> 867 pages actives.
 
 ## Par page
 
@@ -47,8 +47,8 @@
 
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
-- liens sortants : [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Mage]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]]
-- liens entrants : [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Mage]], [[Metaflow]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
+- liens sortants : [[Authentik]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Flink]], [[Kestra]], [[Keycloak]], [[Mage]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]]
+- liens entrants : [[Authentik]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Flink]], [[Flyte]], [[Kestra]], [[Keycloak]], [[Mage]], [[Metaflow]], [[OAuth2 et OpenID Connect]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[n8n]]
 
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
@@ -122,13 +122,23 @@
 
 ### Argo CD  ·  brique
 - tags : `ci-cd`, `kubernetes`, `gitops`, `self-hosted`
-- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]], [[Nginx]], [[Traefik]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Kubernetes]], [[Nginx]], [[Traefik]]
+- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[Nginx]], [[Traefik]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitHub Actions]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[SOPS]], [[Traefik]]
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
 - liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
 - liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+
+### Authelia  ·  brique
+- tags : `authentication`, `sso`, `identity-provider`, `self-hosted`, `reverse-proxy`
+- liens sortants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Traefik]]
+- liens entrants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]], [[Traefik]]
+
+### Authentik  ·  brique
+- tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
+- liens sortants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Traefik]]
+- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]], [[Traefik]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -202,8 +212,8 @@
 
 ### Caddy  ·  brique
 - tags : `reverse-proxy`, `tls`, `self-hosted`
-- liens sortants : [[Comparatif - Reverse proxies]], [[Docker Compose]], [[HAProxy]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
-- liens entrants : [[Comparatif - Reverse proxies]], [[Docker Compose]], [[HAProxy]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Web & API]]
+- liens sortants : [[Authelia]], [[Authentik]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[HAProxy]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
+- liens entrants : [[Authelia]], [[Authentik]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[HAProxy]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Web & API]]
 
 ### Captum  ·  brique
 - tags : `explainability`, `deep-learning`
@@ -413,7 +423,7 @@
 ### Dify  ·  brique
 - tags : `llm`, `low-code`, `agents`, `rag`
 - liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Context engineering]], [[Flowise]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
-- liens entrants : [[Flowise]], [[LLM & IA générative]], [[Langflow]], [[OpenRouter]], [[PraisonAI]]
+- liens entrants : [[Flowise]], [[LLM & IA générative]], [[Langflow]], [[OAuth2 et OpenID Connect]], [[OpenRouter]], [[PraisonAI]]
 
 ### Docker  ·  brique
 - tags : `container`
@@ -423,7 +433,7 @@
 ### Docker Compose  ·  brique
 - tags : `container`
 - liens sortants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
-- liens entrants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
+- liens entrants : [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Nginx]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -502,8 +512,8 @@
 
 ### FastAPI  ·  brique
 - tags : `web-framework`, `type-hints`
-- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Nginx]], [[Pydantic]], [[SQLModel]], [[Traefik]], [[Uvicorn]], [[Web & API]]
-- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[Nginx]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Traefik]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]]
+- liens sortants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Nginx]], [[PyJWT]], [[Pydantic]], [[SQLModel]], [[Traefik]], [[Uvicorn]], [[Web & API]]
+- liens entrants : [[Comparatif - Frontends web légers]], [[Flask]], [[HTMX]], [[Jinja2]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Pattern - Stack démo ML locale multi-services]], [[Prisma]], [[PyJWT]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[SQLModel]], [[Server-Sent Events & streaming LLM]], [[Traefik]], [[Typer]], [[Uvicorn]], [[Web & API]], [[txtai]]
 
 ### FastEmbed  ·  brique
 - tags : `embeddings`, `inference`, `semantic-search`, `reranking`, `hybrid-search`
@@ -607,8 +617,8 @@
 
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
-- liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Netdata]], [[Observabilité]], [[Prometheus]], [[SLO et alerting]], [[Streamlit]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
-- liens entrants : [[Alertmanager]], [[Beszel]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Netdata]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]]
+- liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Keycloak]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Netdata]], [[Observabilité]], [[Prometheus]], [[SLO et alerting]], [[Streamlit]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
+- liens entrants : [[Alertmanager]], [[Beszel]], [[Keycloak]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Netdata]], [[OAuth2 et OpenID Connect]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]]
 
 ### Graphify  ·  brique
 - tags : `code-assistant`, `knowledge-graph`, `mcp`, `context-engineering`
@@ -775,6 +785,11 @@
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Mage]], [[Orchestration]], [[Prefect]], [[Temporal]]
 
+### Keycloak  ·  brique
+- tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
+- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]]
+- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]]
+
 ### Kibana  ·  brique
 - tags : `observability`, `logging`, `dashboard`
 - liens sortants : [[Beats]], [[Elasticsearch]], [[Grafana]], [[Logstash]], [[Loki]], [[Observabilité]]
@@ -792,8 +807,8 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Nginx]], [[Ray Serve]], [[Seldon Core]], [[Traefik]], [[k3s]]
-- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Nginx]], [[Ray Serve]], [[Reverse proxy et TLS]], [[Seldon Core]], [[Traefik]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Nginx]], [[OpenBao]], [[Ray Serve]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Helm]], [[KServe]], [[Keycloak]], [[Nginx]], [[OpenBao]], [[Ray Serve]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[k3s]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -817,8 +832,8 @@
 
 ### Langfuse  ·  brique
 - tags : `llm`, `llm-observability`, `tracing`, `llm-eval`
-- liens sortants : [[Comparatif - Observabilité LLM]], [[DeepEval]], [[Helicone]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[LangSmith]], [[LiteLLM]], [[Phoenix Arize]], [[Ragas]]
-- liens entrants : [[Agent evaluation]], [[Comparatif - Observabilité LLM]], [[DeepEval]], [[Helicone]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[Observabilité des LLM]], [[Phoenix Arize]], [[Ragas]], [[Reliability patterns]], [[TruLens]], [[promptfoo]]
+- liens sortants : [[Authentik]], [[Comparatif - Observabilité LLM]], [[DeepEval]], [[Helicone]], [[Keycloak]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[LangSmith]], [[LiteLLM]], [[Phoenix Arize]], [[Ragas]]
+- liens entrants : [[Agent evaluation]], [[Authentik]], [[Comparatif - Observabilité LLM]], [[DeepEval]], [[Helicone]], [[Keycloak]], [[LLM observability]], [[LLM-as-judge]], [[LangSmith]], [[OAuth2 et OpenID Connect]], [[Observabilité des LLM]], [[Phoenix Arize]], [[Ragas]], [[Reliability patterns]], [[TruLens]], [[promptfoo]]
 
 ### LangGraph  ·  brique
 - tags : `llm`, `agents`, `tool-use`
@@ -1028,7 +1043,7 @@
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
+- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]]
 
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
@@ -1097,8 +1112,8 @@
 
 ### Nginx  ·  brique
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Uvicorn]]
-- liens entrants : [[Argo CD]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Uvicorn]], [[Web & API]]
+- liens sortants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Uvicorn]]
+- liens entrants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[HAProxy]], [[Kubernetes]], [[OAuth2 et OpenID Connect]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Uvicorn]], [[Web & API]]
 
 ### NLTK  ·  brique
 - tags : `nlp`, `tokenization`, `text-classification`
@@ -1154,6 +1169,11 @@
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
 - liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[Letta]], [[OpenClaw]], [[OpenHands]], [[smolagents]]
+
+### OpenBao  ·  brique
+- tags : `secrets-management`, `cryptography`, `self-hosted`, `kubernetes`
+- liens sortants : [[Gestion des secrets]], [[Kubernetes]], [[SOPS]], [[Sécurité]]
+- liens entrants : [[Gestion des secrets]], [[Kubernetes]], [[SOPS]], [[Sécurité]]
 
 ### OpenClaw  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -1413,7 +1433,7 @@
 ### Pydantic Settings  ·  brique
 - tags : `config`, `data-validation`
 - liens sortants : [[Outils de développement]], [[Pydantic]], [[dynaconf]], [[hydra]], [[python-dotenv]]
-- liens entrants : [[Outils de développement]], [[Pydantic]], [[Rule - Config typée]], [[dynaconf]], [[hydra]], [[python-dotenv]]
+- liens entrants : [[Gestion des secrets]], [[Outils de développement]], [[Pydantic]], [[Rule - Config typée]], [[dynaconf]], [[hydra]], [[python-dotenv]]
 
 ### PydanticAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `structured-output`, `type-hints`
@@ -1422,8 +1442,8 @@
 
 ### PyJWT  ·  brique
 - tags : `authentication`, `cryptography`
-- liens sortants : [[FastAPI]], [[Sécurité]]
-- liens entrants : [[Sécurité]]
+- liens sortants : [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[FastAPI]], [[Keycloak]], [[OAuth2 et OpenID Connect]]
+- liens entrants : [[Authentification]], [[FastAPI]], [[OAuth2 et OpenID Connect]], [[Sécurité]]
 
 ### pykan  ·  brique
 - tags : `deep-learning`
@@ -1463,7 +1483,7 @@
 ### python-dotenv  ·  brique
 - tags : `config`
 - liens sortants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
-- liens entrants : [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
+- liens entrants : [[Gestion des secrets]], [[Outils de développement]], [[Pydantic Settings]], [[dynaconf]], [[hydra]]
 
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
@@ -1700,6 +1720,11 @@
 - liens sortants : [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Comparatif - Plateformes data & IA]], [[Databricks]], [[DuckDB]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Streamlit]]
 - liens entrants : [[Alteryx]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Comparatif - Plateformes data & IA]], [[Databricks]], [[DuckDB]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Streamlit]]
 
+### SOPS  ·  brique
+- tags : `secrets-management`, `cryptography`
+- liens sortants : [[Argo CD]], [[Gestion des secrets]], [[Kubernetes]], [[OpenBao]], [[Sécurité]]
+- liens entrants : [[Gestion des secrets]], [[Kubernetes]], [[OpenBao]], [[Sécurité]]
+
 ### spaCy  ·  brique
 - tags : `nlp`, `ner`, `sequence-labeling`, `tokenization`
 - liens sortants : [[Classification de texte]], [[Comparatif - NLP]], [[GLiNER]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[NLTK]], [[Scikit-Learn]], [[Tokenization]], [[Traitement du langage naturel]]
@@ -1877,8 +1902,8 @@
 
 ### Traefik  ·  brique
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Argo CD]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Web & API]], [[k3s]]
+- liens sortants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Web & API]], [[k3s]]
 
 ### TransformerLens  ·  brique
 - tags : `explainability`, `llm`
@@ -2135,6 +2160,11 @@
 - liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Comparatifs]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 - liens entrants : [[Chronos]], [[Comparatifs]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[statsforecast]]
 
+### Comparatif - Fournisseurs d'identité  ·  comparatif
+- tags : `identity-provider`
+- liens sortants : [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité.base]], [[Comparatifs]], [[Keycloak]], [[OAuth2 et OpenID Connect]]
+- liens entrants : [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatifs]], [[Keycloak]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]]
+
 ### Comparatif - Frameworks CLI  ·  comparatif
 - tags : `cli`, `terminal-ui`
 - liens sortants : [[Comparatif - Frameworks CLI.base]], [[Comparatifs]], [[Rich]], [[Typer]]
@@ -2335,6 +2365,11 @@
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Agents de code]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[LM Studio Bionic]], [[Letta]], [[Maka]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]], [[Prompt injection]]
 - liens entrants : [[Agents]], [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[OpenClaw]], [[OpenHands]], [[OpenMAIC]]
 
+### Authentification  ·  hub
+- tags : `authentication`, `sso`, `identity-provider`
+- liens sortants : [[Authelia]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Reverse proxy et TLS]]
+- liens entrants : [[Authelia]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[PyJWT]], [[Sécurité]]
+
 ### Automatisation no-code  ·  hub
 - tags : `low-code`, `orchestration`, `self-hosted`
 - liens sortants : [[Activepieces]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]], [[n8n]]
@@ -2362,8 +2397,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -2457,7 +2492,7 @@
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Stockage]], [[Suivi d'expériences]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Stockage]], [[Suivi d'expériences]], [[Sécurité]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Modèles de langage  ·  hub
@@ -2616,9 +2651,9 @@
 - liens entrants : [[LLM & IA générative]], [[Sécurité]]
 
 ### Sécurité  ·  hub
-- tags : `authentication`, `recon`, `osint`, `cryptography`, `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
-- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[Prompt injection]], [[PyJWT]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
-- liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[PyJWT]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
+- tags : `authentication`, `sso`, `identity-provider`, `secrets-management`, `recon`, `osint`, `cryptography`, `ai-security`, `prompt-injection`, `jailbreak`, `guardrails`
+- liens sortants : [[AI security]], [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Guardrails]], [[Jailbreaking and defenses]], [[Keycloak]], [[LLM & IA générative]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[Prompt injection]], [[PyJWT]], [[Reliability patterns]], [[SOPS]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
+- liens entrants : [[AI Engineering]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[MLOps]], [[OpenBao]], [[SOPS]], [[Systèmes IA]], [[Web-Check]], [[osint4all]]
 
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
@@ -3220,6 +3255,11 @@
 - liens sortants : [[Compromis biais-variance]], [[Inégalités de concentration]], [[Optimisation d'hyperparamètres]], [[PAC learning]], [[Rademacher complexity]], [[Régularisation]], [[Scikit-Learn]], [[VC dimension]], [[Validation croisée]]
 - liens entrants : [[Compromis biais-variance]], [[No Free Lunch theorem]], [[PAC learning]], [[Rademacher complexity]], [[Théorie de l'apprentissage]], [[VC dimension]]
 
+### Gestion des secrets  ·  notion
+- tags : `secrets-management`, `cryptography`, `self-hosted`
+- liens sortants : [[Authentik]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[Pydantic Settings]], [[Reverse proxy et TLS]], [[SOPS]], [[python-dotenv]]
+- liens entrants : [[Authentification]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[SOPS]], [[Sécurité]]
+
 ### GLM  ·  notion
 - tags : `regression`, `linear-model`, `supervised`, `maximum-likelihood`
 - liens sortants : [[GAM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
@@ -3645,6 +3685,11 @@
 - liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[papermill]], [[pytest]], [[uv]]
 - liens entrants : [[Data & pipelines]], [[Marimo]], [[Notebooks]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[papermill]]
 
+### OAuth2 et OpenID Connect  ·  notion
+- tags : `authentication`, `sso`, `identity-provider`
+- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Dify]], [[FastAPI]], [[Gestion des secrets]], [[Grafana]], [[Keycloak]], [[Langfuse]], [[MLflow]], [[Nginx]], [[PyJWT]], [[Traefik]]
+- liens entrants : [[Authelia]], [[Authentification]], [[Authentik]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[PyJWT]], [[Sécurité]]
+
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
 - liens sortants : [[Détection d'objets]], [[Métriques vision]], [[OpenDataLoader PDF]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[pdf-inspector]]
@@ -3883,7 +3928,7 @@
 ### Reverse proxy et TLS  ·  notion
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `kubernetes`, `self-hosted`
 - liens sortants : [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[Grafana]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[k3s]]
-- liens entrants : [[Caddy]], [[Comparatif - Reverse proxies]], [[HAProxy]], [[Nginx]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
+- liens entrants : [[Authentification]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Gestion des secrets]], [[HAProxy]], [[Nginx]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -4312,7 +4357,7 @@
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Classification audio par spectrogramme, Signal & audio
 - `audit-log` : Maka  — pas de page concept dédiée
-- `authentication` : PyJWT, Sécurité  — pas de page concept dédiée
+- `authentication` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, PyJWT, Sécurité  — pas de page concept dédiée
 - `autograd` : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow  — pas de page concept dédiée
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
@@ -4346,7 +4391,7 @@
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
-- `cryptography` : PyJWT, Sécurité, croc  — pas de page concept dédiée
+- `cryptography` : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc  — pas de page concept dédiée
 - `dashboard` : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix  — pas de page concept dédiée
 - `data-app` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, Vision, albumentations, torchvision
@@ -4420,6 +4465,7 @@
 - `hyperparameter-tuning` : Comparatif - Optimisation d'hyperparamètres, Hyperopt, Machine Learning, Maximal Update Parametrization, Optimisation d'hyperparamètres, Optuna, Ray Tune, Suivi d'expériences
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : ELT vs ETL & idempotence, Orchestration, Stream processing
+- `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
@@ -4434,7 +4480,7 @@
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
-- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
+- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
@@ -4555,7 +4601,7 @@
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
-- `reverse-proxy` : Caddy, Comparatif - Reverse proxies, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik
+- `reverse-proxy` : Authelia, Caddy, Comparatif - Reverse proxies, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
@@ -4566,8 +4612,9 @@
 - `schema-evolution` : Apache Iceberg, Avro, Contrats de données & qualité  — pas de page concept dédiée
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
+- `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Alertmanager, Argo CD, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, HAProxy, Infinity, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Alertmanager, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, Gestion des secrets, HAProxy, Infinity, Keycloak, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4579,6 +4626,7 @@
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
 - `spectrogram` : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
+- `sso` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models  — pas de page concept dédiée
 - `static-viz` : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
 - `statistical-inference` : Comparatif - Outils stats, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
@@ -4640,7 +4688,7 @@
 - `array` (porté par : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray)
 - `attention` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
 - `audit-log` (porté par : Maka)
-- `authentication` (porté par : PyJWT, Sécurité)
+- `authentication` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, PyJWT, Sécurité)
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Stan, Statistiques & inférence)
@@ -4657,7 +4705,7 @@
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, k3s, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
-- `cryptography` (porté par : PyJWT, Sécurité, croc)
+- `cryptography` (porté par : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
@@ -4701,6 +4749,7 @@
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
+- `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
 - `in-memory` (porté par : Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
@@ -4708,7 +4757,7 @@
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
-- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s)
+- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
@@ -4787,12 +4836,13 @@
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Alertmanager, Argo CD, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, HAProxy, Infinity, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
+- `self-hosted` (porté par : Alertmanager, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, Caddy, Choisir un modèle d'embedding, Dataiku, Gestion des secrets, HAProxy, Infinity, Keycloak, Kubernetes, Meilisearch, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
 - `spectrogram` (porté par : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
+- `sso` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité)
 - `state-space-model` (porté par : Architectures hybrides LLM, Attention linéaire, State Space Models)
 - `static-viz` (porté par : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn)
 - `statistical-inference` (porté par : Comparatif - Outils stats, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels)

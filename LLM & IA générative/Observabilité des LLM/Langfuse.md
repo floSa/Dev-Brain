@@ -11,7 +11,7 @@ maturite: production
 langage: TypeScript
 scaling: distributed
 alternatives: ["[[LangSmith]]", "[[Phoenix Arize]]", "[[Helicone]]"]
-complements: []
+complements: ["[[Keycloak]]", "[[Authentik]]"]
 tags: [llm, llm-observability, tracing, llm-eval]
 url_docs: https://langfuse.com/docs
 url_repo: https://github.com/langfuse/langfuse
@@ -61,6 +61,11 @@ utilisable sur une stack hétérogène. Elle sait rejouer sur ses traces des év
 - [[LangSmith]] — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de LangChain ; cloud managé, self-host réservé à l'offre entreprise.
 - [[Phoenix Arize]] — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et expérimentations ; auto-hébergeable (un conteneur) ou cloud, version OSS de la plateforme Arize AX.
 - [[Helicone]] — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
+
+### Compléments
+
+- [[Keycloak]] — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter. — variables `AUTH_KEYCLOAK_*` dédiées à l'authentification unique en auto-hébergement.
+- [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — variables `AUTH_AUTHENTIK_*` dédiées à l'authentification unique en auto-hébergement.
 
 ## Ressources
 

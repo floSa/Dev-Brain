@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[Traefik]]", "[[Caddy]]", "[[HAProxy]]"]
-complements: ["[[Uvicorn]]", "[[Docker Compose]]", "[[Kubernetes]]", "[[Argo CD]]", "[[Prometheus]]", "[[FastAPI]]", "[[Flask]]"]
+complements: ["[[Uvicorn]]", "[[Docker Compose]]", "[[Kubernetes]]", "[[Argo CD]]", "[[Prometheus]]", "[[FastAPI]]", "[[Flask]]", "[[Authelia]]", "[[Authentik]]"]
 tags: [reverse-proxy, tls, load-balancer, kubernetes, self-hosted]
 url_docs: https://nginx.org/en/docs/
 url_repo: https://github.com/nginx/nginx
@@ -75,6 +75,8 @@ Serveur web et reverse proxy en C, piloté par des fichiers texte (`nginx.conf`)
 - [[Prometheus]] — Système de supervision et base de séries temporelles open-source (Apache-2.0, Go) — scrape les métriques exposées en HTTP, modèle de données à labels, requêtes PromQL, règles d'alerte transmises à Alertmanager ; stockage local mono-nœud, sans cluster natif. — par `nginx-prometheus-exporter`, en lisant `stub_status`
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement. — sa documentation le cite comme proxy possible.
 - [[Flask]] — Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions. — sa documentation lui consacre une page, avec `ProxyFix` côté application.
+- [[Authelia]] — Portail d'authentification et de SSO placé devant un reverse proxy (forward auth pour Traefik, Caddy et Nginx) : mot de passe plus MFA (TOTP, WebAuthn, Duo), utilisateurs en fichier ou LDAP, et fournisseur OIDC certifié — pas de SAML, pas de déconnexions OIDC (Apache-2.0, Go, communautaire, aucune offre payante). — intégration par `auth_request`, module à compiler (`--with-http_auth_request_module`).
+- [[Authentik]] — Fournisseur d'identité à flux configurables : OIDC, SAML, LDAP, SCIM, RADIUS et proxy avec forward auth pour Traefik, Caddy et Nginx, sur PostgreSQL seul (MIT, Python, Authentik Security) — audit renforcé, PAM, mTLS et synchronisation Entra ou Google sont réservés à l'édition Enterprise, 5 $ par utilisateur et par mois. — page d'intégration par `auth_request`, ingress-nginx compris.
 
 ## Ressources
 
