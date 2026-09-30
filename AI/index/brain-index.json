@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 818,
+  "count": 821,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -899,7 +899,10 @@
       "docTR",
       "olmOCR",
       "pdf-inspector",
+      "pdfminer.six",
       "pdfplumber",
+      "pypdf",
+      "pypdfium2",
       "selectolax"
     ],
     "durable-execution": [
@@ -1417,7 +1420,8 @@
       "OpenDataLoader PDF",
       "PaddleOCR",
       "docTR",
-      "pdf-inspector"
+      "pdf-inspector",
+      "pdfminer.six"
     ],
     "lazy-evaluation": [
       "Dask",
@@ -2305,7 +2309,10 @@
       "Tesseract",
       "olmOCR",
       "pdf-inspector",
-      "pdfplumber"
+      "pdfminer.six",
+      "pdfplumber",
+      "pypdf",
+      "pypdfium2"
     ],
     "perplexity": [
       "Perplexity"
@@ -6451,7 +6458,8 @@
         "[[Tesseract]]"
       ],
       "complements": [
-        "[[Docling]]"
+        "[[Docling]]",
+        "[[pypdfium2]]"
       ],
       "maturite": "production"
     },
@@ -6667,7 +6675,10 @@
       ],
       "alternatives": [
         "[[pdfplumber]]",
-        "[[pdf-inspector]]"
+        "[[pdf-inspector]]",
+        "[[pypdf]]",
+        "[[pypdfium2]]",
+        "[[pdfminer.six]]"
       ],
       "complements": [
         "[[Docling]]",
@@ -6705,7 +6716,8 @@
       "complements": [
         "[[PyMuPDF]]",
         "[[Docling]]",
-        "[[Unstructured]]"
+        "[[Unstructured]]",
+        "[[pypdfium2]]"
       ],
       "maturite": "production"
     },
@@ -6835,6 +6847,34 @@
       "maturite": "beta"
     },
     {
+      "path": "Data & pipelines/Parsing/pdfminer.six.md",
+      "nom": "pdfminer.six",
+      "alias": [
+        "pdfminer",
+        "pdfminer six"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python pure sous MIT qui analyse la mise en page d'un PDF (caractères, mots, lignes, boîtes via LAParams) et en extrait texte et positions ; base de pdfplumber, lecture seule, sans OCR, lente et à maintenance ralentie.",
+      "tags": [
+        "pdf",
+        "document-parsing",
+        "layout-analysis"
+      ],
+      "alternatives": [
+        "[[pypdf]]",
+        "[[PyMuPDF]]",
+        "[[pypdfium2]]"
+      ],
+      "complements": [
+        "[[pdfplumber]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Parsing/pdfplumber.md",
       "nom": "pdfplumber",
       "alias": [
@@ -6854,12 +6894,69 @@
       ],
       "alternatives": [
         "[[PyMuPDF]]",
-        "[[pdf-inspector]]"
+        "[[pdf-inspector]]",
+        "[[pypdf]]"
       ],
       "complements": [
         "[[Docling]]",
         "[[Unstructured]]",
-        "[[OpenDataLoader PDF]]"
+        "[[OpenDataLoader PDF]]",
+        "[[pdfminer.six]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/pypdf.md",
+      "nom": "pypdf",
+      "alias": [
+        "PyPDF2",
+        "py-pdf"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python pure sous BSD-3 pour lire, fusionner, découper, chiffrer, annoter et remplir des PDF, avec extraction de texte (modes plain et layout) ; aucune dépendance obligatoire, ni OCR ni rendu d'image.",
+      "tags": [
+        "pdf",
+        "document-parsing"
+      ],
+      "alternatives": [
+        "[[PyMuPDF]]",
+        "[[pdfplumber]]",
+        "[[pypdfium2]]",
+        "[[pdfminer.six]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/pypdfium2.md",
+      "nom": "pypdfium2",
+      "alias": [
+        "pypdfium",
+        "PDFium Python",
+        "pypdfium2-team"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page.",
+      "tags": [
+        "pdf",
+        "document-parsing"
+      ],
+      "alternatives": [
+        "[[PyMuPDF]]",
+        "[[pypdf]]",
+        "[[pdfminer.six]]"
+      ],
+      "complements": [
+        "[[Tesseract]]",
+        "[[EasyOCR]]"
       ],
       "maturite": "production"
     },
