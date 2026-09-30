@@ -939,6 +939,25 @@ axes:
               de data/ingestion (rapatrier les lignes, pas les remodeler) et de
               database/analytique (le moteur qui execute le SQL, pas l outil qui
               le structure).
+          messagerie:
+            libelle: "Messagerie"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa : aucune valeur ne
+              rangeait un broker de messages. Choisi contre un 21e prefixe
+              messaging/* (un domaine racine entier pour cinq briques) et contre
+              l elargissement de data/streaming (qui brouillerait la frontiere
+              avec Flink).
+            frontiere: >
+              TRANSPORTER et mettre en file des evenements ou des taches entre
+              services, sans les interpreter : brokers en journal ou en file
+              (Kafka, Redpanda, NATS, RabbitMQ) et file de taches adossee a un
+              broker (Celery). Distinct de data/streaming (TRAITER le flux :
+              fenetres, etat, agregations), de data/orchestration (un
+              orchestrateur suit un graphe de taches ; une file execute un appel
+              isole), de data/ingestion (Debezium produit un flux, il ne le
+              transporte pas) et de database/cle-valeur (Redis sert aussi de
+              file, mais son sujet est le stockage). Les protocoles industriels
+              de capteurs (MQTT, OPC UA) forment un bloc a part.
 
       - cle: devtools
         dossier: "Outils de développement"
