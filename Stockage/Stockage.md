@@ -15,8 +15,8 @@ tags: [object-storage, s3-compatible, self-hosted]
 
 - Le stockage **objet** est la seule famille peuplée du domaine, et ce n'est pas un hasard : c'est celle sur laquelle repose tout le reste de la pile data moderne. Un lakehouse, un registre de modèles, un cache de features sont des conventions posées sur des objets.
 - Un objet n'est pas un fichier. Pas d'arborescence réelle (le `/` est dans la clé), pas d'écriture partielle, pas de renommage atomique. C'est ce qui rend le stockage objet extensible à l'infini, et ce qui oblige les formats de table (Delta, [[Apache Iceberg|Iceberg]]) à réinventer la transaction par-dessus.
-- Six briques, une seule interface : toutes parlent **S3**. Le code applicatif ne les distingue pas, ce qui déplace entièrement la décision vers l'exploitation — qui héberge, à quel coût, avec quelle équipe.
-- Trois natures se cachent derrière l'interface commune, et elles n'ont pas les mêmes contraintes. Un **service managé** ([[AWS S3]], [[Cloudflare R2]]) ne demande aucune exploitation mais facture le stockage, les requêtes et parfois la sortie. Un **serveur objet** ([[MinIO]], [[Garage]], [[SeaweedFS]]) est un binaire qu'on installe et qu'on sauvegarde soi-même. Un **système de stockage distribué** ([[Ceph]]) est une infrastructure à part entière, avec l'équipe qui va avec.
+- Neuf briques, une seule interface : toutes parlent **S3** (Swift parle aussi son API native). Le code applicatif ne les distingue pas, ce qui déplace la décision vers l'exploitation — qui héberge, à quel coût, avec quelle équipe — et vers ce que l'API ne fixe pas : fonctions réellement couvertes (versioning, Object Lock), état du projet, licence. La notion [[Stockage objet et API S3]] détaille ce contrat, et le [[Comparatif - Stockage objet]] départage les neuf.
+- Trois natures se cachent derrière l'interface commune, et elles n'ont pas les mêmes contraintes. Un **service managé** ([[AWS S3]], [[Cloudflare R2]]) ne demande aucune exploitation mais facture le stockage, les requêtes et parfois la sortie. Un **serveur objet** ([[RustFS]], [[Garage]], [[SeaweedFS]], et [[MinIO]], aujourd'hui abandonné) est un binaire qu'on installe et qu'on sauvegarde soi-même. Un **système de stockage distribué** ([[Ceph]], [[Apache Ozone]], [[OpenStack Swift]]) est une infrastructure à part entière, avec l'équipe qui va avec.
 - Le poste de coût qui surprend n'est pas le stockage mais l'**égress** : sortir la donnée du fournisseur. C'est l'argument central de [[Cloudflare R2]], qui ne le facture pas, et une raison fréquente de rapatrier en on-prem.
 - La forme des objets décide plus qu'on ne croit. **Beaucoup de petits fichiers** est le cas qui met en difficulté la plupart des moteurs — d'où [[SeaweedFS]], conçu pour ça. **Peu de gros fichiers** convient à tout le monde.
 
@@ -24,12 +24,19 @@ tags: [object-storage, s3-compatible, self-hosted]
 
 - Déjà sur AWS → [[AWS S3]], et la question ne se pose pas.
 - Beaucoup de lectures depuis l'extérieur → [[Cloudflare R2]], pour l'égress gratuit.
-- Un serveur S3 self-hébergé à mettre en route vite, en dev comme en prod → [[MinIO]].
+- Un serveur S3 self-hébergé pour la production, avec une licence sans copyleft → [[SeaweedFS]] ; son concurrent direct né de l'arrêt de MinIO, [[RustFS]], est à piloter avant de s'y fier (version stable du 2026-09-16).
+- Une installation [[MinIO]] existante → la maintenir le temps de migrer : le dépôt est archivé depuis le 2026-04-25, plus de release depuis octobre 2025.
+- Du WORM (Object Lock) sur site → [[SeaweedFS]], [[Ceph]] ou [[RustFS]] ; ni [[Garage]] ni [[Apache Ozone]] ne l'offrent.
 - Plusieurs petits sites, liens lents, matériel hétérogène → [[Garage]].
 - Des milliards de petits objets → [[SeaweedFS]].
 - Un besoin de stockage unifié bloc + fichier + objet à l'échelle du datacenter → [[Ceph]].
+- De l'analytique Hadoop ou Spark sur des milliards d'objets, sur site → [[Apache Ozone]].
+- Un cloud privé OpenStack existant → [[OpenStack Swift]], qui n'est pas un choix de nouvelle installation.
 
 <!-- AUTO:START -->
+### Notions
+- [[Stockage objet et API S3]] — domaines : data-eng, mlops, infra-ops
+
 ### Briques
 - [[Apache Ozone]] — Stockage objet distribué d'Apache (Apache 2.0) pour les très gros volumes analytiques sur site : espace de noms à milliards d'objets, accès S3 et système de fichiers Hadoop, erasure coding et cohérence forte par Raft, mais une douzaine de machines au minimum et un S3 sans versioning, Object Lock ni politiques de bucket.
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
@@ -40,4 +47,7 @@ tags: [object-storage, s3-compatible, self-hosted]
 - [[OpenStack Swift]] — Stockage objet d'OpenStack (Apache 2.0) : proxy, anneau de placement et réplication ou erasure coding, API native Swift plus S3 par middleware ; maintenu mais historique, pertinent dans un parc OpenStack existant, cohérence à terme et sans cycle de vie ni étiquettes S3.
 - [[RustFS]] — Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.
 - [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
+
+### Comparatifs
+- [[Comparatif - Stockage objet]]
 <!-- AUTO:END -->

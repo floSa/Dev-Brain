@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 825 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 827 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -998,6 +998,9 @@
 - **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
 - **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
 
+### storage/objet
+- **Stockage objet et API S3** — domaines : data-eng, mlops, infra-ops · alias : API S3, compatibilité S3, S3-compatible, choisir un stockage objet on-prem
+
 ## Comparatifs — ce qui départage plusieurs briques
 
 ### automation/no-code
@@ -1138,6 +1141,9 @@
 
 ### stats/inference
 - **Comparatif - Outils stats** — —
+
+### storage/objet
+- **Comparatif - Stockage objet** — —
 
 ### ui/data-app
 - **Comparatif - Apps data & démos ML** — —

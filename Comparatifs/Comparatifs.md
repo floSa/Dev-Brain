@@ -95,4 +95,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 
 ### Statistiques & inférence
 - [[Comparatif - Outils stats]]
+
+### Stockage
+- [[Comparatif - Stockage objet]]
 <!-- AUTO:END -->
