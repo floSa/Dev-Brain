@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[TRL]]", "[[Unsloth]]", "[[Axolotl]]", "[[Tunix]]"]
-complements: []
+complements: ["[[Qwen]]"]
 tags: [fine-tuning, declarative-config, low-code, distributed-training, llm]
 url_docs: https://llamafactory.readthedocs.io/en/latest/
 url_repo: https://github.com/hiyouga/LLaMA-Factory
@@ -60,6 +60,10 @@ ligne. Sous le capot, l'écosystème Hugging Face et TRL, avec des accélératio
 - [[Unsloth]] — Fine-tuning de LLM ~2× plus rapide avec 70-80 % de VRAM en moins via des kernels Triton sur mesure — LoRA/QLoRA et GRPO sur un seul GPU grand public, sans perte de précision.
 - [[Axolotl]] — Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.
 - [[Tunix]] — Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.
+
+### Compléments
+
+- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — cité par le README de Qwen3.8.
 
 ## Ressources
 

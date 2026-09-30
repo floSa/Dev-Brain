@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Unsloth]]", "[[Axolotl]]", "[[LLaMA-Factory]]", "[[Tunix]]"]
-complements: []
+complements: ["[[Gemma]]"]
 tags: [fine-tuning, alignment, reinforcement-learning, transformers, llm]
 url_docs: https://huggingface.co/docs/trl
 url_repo: https://github.com/huggingface/trl
@@ -62,6 +62,10 @@ sans attendre qu'un wrapper la supporte. Intégration native avec `transformers`
 - [[Axolotl]] — Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.
 - [[LLaMA-Factory]] — Plateforme unifiée de fine-tuning de 100+ LLM/VLM — SFT, DPO, PPO, KTO en LoRA/QLoRA, pilotable en CLI, YAML ou interface web (LLaMA Board), zéro code requis.
 - [[Tunix]] — Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL.
+
+### Compléments
+
+- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — décrit dans la documentation Gemma pour le finetuning complet.
 
 ## Ressources
 
