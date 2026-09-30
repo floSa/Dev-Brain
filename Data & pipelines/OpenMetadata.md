@@ -99,3 +99,5 @@ Relevé le 2026-09-30 : **2.0.3** du 2026-09-30 (la branche 1.13.x reste mainten
 ## Voir aussi
 
 - [[Data & pipelines]] — le hub du dossier
+- [[Catalogue de données et lignage]] — la notion : catalogue contre lignage contre glossaire, collecte tirée ou poussée
+- [[Comparatif - Catalogues et lignage de données]] — ce qui départage OpenMetadata, DataHub et OpenLineage

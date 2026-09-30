@@ -96,3 +96,5 @@ semaines), schéma de la spécification **2-0-2**, environ 2 680 étoiles, Apach
 ## Voir aussi
 
 - [[Data & pipelines]] — le hub du dossier
+- [[Catalogue de données et lignage]] — la notion : le lignage émis contre le lignage reconstruit, table contre colonne
+- [[Comparatif - Catalogues et lignage de données]] — où la spécification se situe par rapport aux deux catalogues

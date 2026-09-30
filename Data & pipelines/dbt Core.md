@@ -102,5 +102,4 @@ Deux sources se contredisent sur le lignage colonne : la feuille de route de jui
 - [[Data & pipelines]] — le hub du dossier
 - [[Comparatif - Transformation SQL]] — ce qui départage dbt Core et SQLMesh
 - [[ELT vs ETL & idempotence]] — l'ordre d'assemblage dont dbt est le T ; en amont, [[Comparatif - Ingestion de données]] pour les outils qui chargent la donnée
-- [[Architecture médaillon]] — les couches que les modèles dbt raffinent
-- [[Modélisation dimensionnelle]] — les tables de faits et de dimensions que dbt construit et historise (snapshots en SCD de type 2)
+- [[Architecture médaillon]] — les couches que les modèles dbt raffinent ; [[Modélisation dimensionnelle]] — les tables de faits et de dimensions que dbt construit et historise (snapshots en SCD de type 2)
