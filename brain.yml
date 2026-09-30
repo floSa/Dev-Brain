@@ -634,7 +634,28 @@ axes:
               technique, c est l absence de cible. Distincte de stats/exploratoire
               (interpreter des axes).
           graphe: {}
-          embeddings: {}
+          embeddings:
+            libelle: "Embeddings & encodeurs"
+            motif: >
+              Ouvert le 2026-09-30, quand le sous-domaine a franchi le seuil
+              (sentence-transformers, FastEmbed, Text Embeddings Inference,
+              Infinity, bge-m3, Qwen3-Embedding). Et NON « Embeddings » seul : c
+              est le nom de fichier de la notion `embeddings.md`, que le systeme
+              de fichiers de floSa ne distingue pas d un hub « Embeddings » a la
+              casse pres — un lien nu ne resoudrait plus de facon deterministe
+              (meme motif que « Evaluation de modeles » et « RAG & retrieval »).
+            frontiere: >
+              Ce qui PRODUIT des vecteurs : les bibliotheques qui les calculent
+              (sentence-transformers, FastEmbed), les serveurs qui les servent
+              (Text Embeddings Inference, Infinity) et les jeux de poids qu on
+              charge (bge-m3, Qwen3-Embedding). Distincte de database/vecteur,
+              qui STOCKE et interroge les vecteurs, de database/recherche (un
+              moteur qui indexe, meme s il embarque des embeddings — D-R4, txtai)
+              et de llm/rag, qui en fait un pipeline (les rerankers y sont).
+              Distincte de ml/serving pour les serveurs : Text Embeddings
+              Inference et Infinity ne servent QUE des embeddings et des
+              rerankers, donc le sujet l emporte sur la nature (famille
+              `plateforme` la porte). Arbitrage confirme par floSa le 2026-09-30.
           interpretabilite:
             libelle: "Interprétabilité"
           eval:

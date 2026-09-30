@@ -71,6 +71,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Boosting]]
 - [[Comparatif - Détection & segmentation]]
 - [[Comparatif - Détection d'anomalies]]
+- [[Comparatif - Embeddings]]
 - [[Comparatif - Explicabilité]]
 - [[Comparatif - Forecasting]]
 - [[Comparatif - NLP]]
