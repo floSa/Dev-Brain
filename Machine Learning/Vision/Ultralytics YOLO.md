@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Detectron2]]"]
-complements: ["[[supervision]]"]
+complements: ["[[supervision]]", "[[Label Studio]]", "[[CVAT]]"]
 tags: [object-detection, segmentation, pose-estimation, object-tracking, computer-vision, deep-learning, gpu]
 url_docs: https://docs.ultralytics.com/
 url_repo: https://github.com/ultralytics/ultralytics
@@ -62,6 +62,8 @@ un détecteur qui marche vite, sans assembler soi-même backbone, têtes et post
 ### Compléments
 
 - [[supervision]] — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application. — l'outillage qui annote et suit ses sorties en aval
+- [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemple officiel `yolo` dans le dépôt du SDK des backends ML : les prédictions du modèle arrivent comme pré-annotations, et l'export sort au format YOLO.
+- [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — cinq formats d'import et d'export Ultralytics (détection, segmentation, pose, boîtes orientées, classification) ; la fonction d'auto-annotation fournie utilise YOLOv7, pas ce paquet.
 
 ## Ressources
 
