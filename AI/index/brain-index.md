@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 921 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 925 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -49,8 +49,10 @@
 - **Parquet** — Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.
 
 ### data/industrie
+- **asyncua** — Bibliothèque Python asynchrone, client et serveur OPC UA : lecture, écriture, abonnements, méthodes, historique, chiffrement X.509 et import de NodeSet XML ; LGPL-3.0, noyau de mainteneurs réduit, alarmes serveur non implémentées et pub/sub minimal.
 - **EMQX** — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale).
 - **Mosquitto** — Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse.
+- **Node-RED** — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut.
 
 ### data/ingestion
 - **Airbyte** — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes.
@@ -673,6 +675,9 @@
 
 ### data/format
 - **Partitionnement & layout de données** — domaines : data-eng · alias : partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem
+
+### data/industrie
+- **Protocoles de l'atelier - MQTT, OPC UA et Modbus** — domaines : data-eng, infra-ops · alias : Protocoles de l'atelier : MQTT, OPC UA et Modbus, protocoles industriels, MQTT, OPC UA, Modbus, Sparkplug B, ISA-95, modèle de Purdue, Unified Namespace
 
 ### data/ingestion
 - **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
@@ -1341,6 +1346,7 @@
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
+- **Données industrielles** — Amener la donnée de l'atelier jusqu'au système d'information par les protocoles industriels — brokers MQTT, piles OPC UA, outils de flux — et sécuriser le chemin.
 - **Embeddings & encodeurs** — Produire des vecteurs à partir de texte — choisir le modèle, puis l'outil qui le calcule ou le sert, sans dépendre d'une API externe.
 - **Fiabilité des données** — Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
