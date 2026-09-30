@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 110 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 111 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (110 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (111 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -183,7 +183,7 @@ le sous-domaine se lit dans le bloc, à l'intérieur de la branche retenue.
 ```domaine
 ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl,
     non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
-    orchestration, plateforme, tracking, serving, monitoring, feature-store, hub}
+    orchestration, plateforme, tracking, serving, monitoring, feature-store, annotation, hub}
 llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
      sortie-structuree, text-to-sql, low-code, protocole, passerelle, runtime,
      finetuning, eval, observabilite, outillage}
@@ -426,6 +426,16 @@ valeurs disparues et ne sont pas reconduites.
     départage ». Il n'entre pas dans la **vue** `.base` de ce comparatif, filtrée sur
     `categorie: database/analytique` — c'est la conséquence assumée du rangement, pas un défaut à
     contourner en codant un nom en dur dans le filtre.
+- `ml/annotation` — **ouvert le 2026-09-30, sur arbitrage de floSa** (conversation 14,
+  [[Label Studio]] et [[CVAT]]). Ce qui produit des **étiquettes** sur des données brutes —
+  images, texte, audio, vidéo, séries — avec des humains dans la boucle : interface
+  d'annotation, pré-annotation par un modèle, revue et accord entre annotateurs, export vers les
+  formats d'entraînement. Rangé sous `ml` et non sous `data` : une étiquette n'existe que pour
+  entraîner ou évaluer un modèle supervisé, comme un feature store. Distinct de `data/fiabilite`
+  (la confiance dans un jeu **déjà livré** : contrats, qualité, versionnage — annoter **crée** la
+  donnée), de `ml/tracking` (suivre des runs et des modèles, pas des étiquettes) et de
+  `data/synthetique` (fabriquer des données sans annotateur). Sous le seuil de promotion (3 pages),
+  donc pas de dossier propre.
 - `ml/eval` — **élargi au lot 4.** Mesurer ce que vaut un modèle : le **protocole** qui rend
   le chiffre honnête (validation croisée, fuite de données, compromis biais-variance) et les
   **métriques** qui disent ce qu'il décrit (classification, régression, ranking, courbes ROC

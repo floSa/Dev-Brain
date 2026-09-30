@@ -711,6 +711,24 @@ axes:
             frontiere: "Derive de modele. Distinct d observability/supervision (logiciel deploye). Sous le seuil : 3 pages."
           feature-store:
             frontiere: "Sous le seuil : 2 pages, pas de dossier, donc pas de libelle."
+          annotation:
+            libelle: "Annotation"
+            motif: >
+              Ouvert le 2026-09-30 sur arbitrage de floSa (conversation 14,
+              Label Studio et CVAT) : aucune valeur ne rangeait un outil
+              d etiquetage. Retenu sous ml plutot que sous data : une etiquette
+              n existe que pour entrainer ou evaluer un modele supervise, comme
+              un feature store. Sous le seuil : 3 pages, pas de dossier.
+            frontiere: >
+              Ce qui produit des ETIQUETTES sur des donnees brutes (images,
+              texte, audio, video, series) avec des humains dans la boucle :
+              interface d annotation, pre-annotation par un modele, revue et
+              accord entre annotateurs, export vers les formats
+              d entrainement. Distinct de data/fiabilite (la confiance dans un
+              jeu DEJA livre : contrats, qualite, versionnage — annoter cree
+              la donnee, n en verifie pas l etat), de ml/tracking (suivre des
+              runs et des modeles, pas des etiquettes) et de data/synthetique
+              (fabriquer des donnees sans annotateur).
           hub: {}
 
       - cle: llm
