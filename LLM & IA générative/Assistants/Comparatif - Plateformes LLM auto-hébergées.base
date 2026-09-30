@@ -1,0 +1,45 @@
+filters:
+  and:
+    # Un comparatif compare des briques (clause du lot 4).
+    - role == "brique"
+    # Les plateformes qu'on DEPLOIE pour donner un assistant ou un RAG a des utilisateurs :
+    # interfaces de chat (`llm/assistant`), constructeurs visuels (`llm/low-code`) et moteur
+    # RAG cle en main (`llm/rag`). Le tag `rag` et la famille ecartent le reste de ces
+    # categories : les assistants d'agent (OpenClaw, OpenHands…) n'ont pas de RAG, et les
+    # bibliotheques, rerankers et modeles de `llm/rag` ne sont ni plateforme ni application.
+    - tags.contains("rag")
+    - or:
+        - categorie == "llm/assistant"
+        - categorie == "llm/low-code"
+        - categorie == "llm/rag"
+    - or:
+        - famille == "plateforme"
+        - famille == "application"
+views:
+  - type: table
+    name: Plateformes LLM auto-hébergées
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Licence autre que libre pur
+    filters:
+      and:
+        - licence_type != "open-source"
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
