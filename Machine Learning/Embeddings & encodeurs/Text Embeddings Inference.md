@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: single-node
 alternatives: ["[[sentence-transformers]]", "[[Infinity]]", "[[FastEmbed]]"]
-complements: ["[[bge-m3]]", "[[Qwen3-Embedding]]", "[[bge-reranker]]"]
+complements: ["[[bge-m3]]", "[[Qwen3-Embedding]]", "[[bge-reranker]]", "[[RAGFlow]]"]
 tags: [embeddings, model-serving, inference, semantic-search, reranking, self-hosted]
 url_docs: https://huggingface.co/docs/text-embeddings-inference
 url_repo: https://github.com/huggingface/text-embeddings-inference
@@ -77,6 +77,7 @@ Face pour les embeddings, et un dépôt actif : v1.9.4 publiée le 2026-09-15, d
 - [[bge-m3]] — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle. — servi en dense.
 - [[Qwen3-Embedding]] — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche. — cité dans l'exemple du README.
 - [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local. — le point d'appel `/rerank` sert les rerankers XLM-R.
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources
 

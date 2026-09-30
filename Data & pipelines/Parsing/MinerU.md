@@ -9,7 +9,7 @@ licence_type: source-available
 maturite: production
 langage: Python
 alternatives: ["[[olmOCR]]", "[[Marker]]", "[[Docling]]", "[[PaddleOCR]]"]
-complements: []
+complements: ["[[RAGFlow]]"]
 tags: [document-parsing, pdf, ocr, markdown-conversion, layout-analysis, table-extraction, vision-language, rag]
 url_docs: https://opendatalab.github.io/MinerU/
 url_repo: https://github.com/opendatalab/MinerU
@@ -83,6 +83,10 @@ licence non standard, qu'un service juridique doit lire.
 - [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[PaddleOCR]] — Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.
+
+### Compléments
+
+- [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources
 

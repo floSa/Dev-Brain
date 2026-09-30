@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C
 alternatives: ["[[Weaviate]]", "[[Qdrant]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: ["[[Postgres]]"]
+complements: ["[[Postgres]]", "[[LibreChat]]"]
 tags: [vector-db, rag, postgres]
 url_docs: https://github.com/pgvector/pgvector#readme
 url_repo: https://github.com/pgvector/pgvector
@@ -62,6 +62,7 @@ construit plus vite.
 ### Compléments
 
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — le moteur hôte, dont l'extension étend le type système
+- [[LibreChat]] — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 
 ## Ressources
 

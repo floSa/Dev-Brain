@@ -73,5 +73,7 @@ Version **1.17.1** du 2026-09-10, 157 603 étoiles le 2026-09-30, une publicatio
 - [[Agent patterns]] — la notion : les formes d'agent que ses workflows assemblent
 - [[Advanced RAG]] — la notion : ce que ses pipelines de récupération mettent en œuvre
 - [[Context engineering]] — la notion du dossier
+- [[Comparatif - Plateformes LLM auto-hébergées]] — le comparatif qui situe les interfaces de chat, le moteur RAG et les constructeurs visuels
+- [[RAG documentaire on-prem - clé en main ou assemblé]] — la notion : ce que fige une base de connaissances intégrée
 - Routage multi-fournisseurs possible via [[LiteLLM]] ou [[OpenRouter]]
 - [[LLM & IA générative]] — le hub du domaine
