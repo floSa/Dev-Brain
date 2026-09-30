@@ -74,5 +74,6 @@ JavaScript, Java, Rust et Go.
 - [[Recherche d'information]] — le cadre (lexical / dense / hybride) que txtai met en œuvre
 - [[Bases de données vectorielles]] — ce qu'il stocke et recherche
 - [[embeddings]] — la représentation qu'il indexe
+- [[Choisir un modèle d'embedding]] — comment choisir le modèle d'embedding qu'il charge, et ce que les benchmarks ne disent pas
 - [[RAG]] — son usage phare, avec workflows et pipelines intégrés
 - [[Comparatif - Moteurs de recherche]] — ce qui départage les moteurs du dossier
