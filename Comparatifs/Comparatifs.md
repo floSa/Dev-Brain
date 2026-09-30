@@ -87,6 +87,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Boosting]]
 - [[Comparatif - Détection & segmentation]]
 - [[Comparatif - Détection d'anomalies]]
+- [[Comparatif - Détection d'anomalies en séries temporelles]]
 - [[Comparatif - Embeddings]]
 - [[Comparatif - Explicabilité]]
 - [[Comparatif - Forecasting]]

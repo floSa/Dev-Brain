@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1021,
+  "count": 1036,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,11 +197,16 @@
       "Label Studio"
     ],
     "anomaly-detection": [
+      "Anomalies multivariées par apprentissage profond",
       "Comparatif - Détection d'anomalies",
+      "Contrôle statistique de procédé (SPC)",
       "Détection d'anomalies",
+      "Détection d'anomalies en ligne",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
+      "Détection de ruptures",
       "Détection hors distribution (OOD)",
+      "Foundation models et anomalies de séries",
       "Isolation Forest",
       "Local Outlier Factor",
       "Non supervisé",
@@ -306,13 +311,19 @@
       "Statistiques & inférence"
     ],
     "benchmark": [
+      "Anomalies multivariées par apprentissage profond",
       "Choisir un modèle d'embedding",
       "Code and math benchmarks",
+      "Comparatif - Détection d'anomalies en séries temporelles",
+      "Foundation models et anomalies de séries",
       "Inspect AI",
       "Jeux de données d'anomalies",
       "LLM benchmarks",
+      "Merlion",
       "OCR classique vs modèles vision-langage pour documents",
+      "Orion",
       "RAG benchmarks",
+      "TSB-AD",
       "Text-to-SQL",
       "evaluate",
       "llmfit",
@@ -362,6 +373,13 @@
       "Change Data Capture (CDC)",
       "Debezium",
       "Ingestion de données"
+    ],
+    "change-point": [
+      "Azure AI Anomaly Detector",
+      "Détection de ruptures",
+      "Kats",
+      "Merlion",
+      "ruptures"
     ],
     "chunking": [
       "Chunking strategies",
@@ -416,6 +434,7 @@
       "SVM",
       "Socle",
       "Types de données et choix de modèle",
+      "aeon",
       "imbalanced-learn",
       "k-NN",
       "Équité et biais algorithmique",
@@ -443,6 +462,7 @@
       "K-Means",
       "Machine Learning",
       "Non supervisé",
+      "aeon",
       "hdbscan",
       "k-médoïds (PAM)"
     ],
@@ -886,6 +906,7 @@
     "deep-learning": [
       "Adam optimizer",
       "AlphaZero and self-play",
+      "Anomalies multivariées par apprentissage profond",
       "Apprentissage auto-supervisé en vision",
       "Apprentissage profond",
       "Architectures CNN",
@@ -899,6 +920,7 @@
       "Chronos",
       "Classification d'images",
       "Confidentialité différentielle",
+      "DeepOD",
       "DeepSpeed",
       "Detectron2",
       "Diffusion models",
@@ -926,6 +948,7 @@
       "Méta-apprentissage et few-shot learning",
       "Normalisation et initialisation des réseaux",
       "OCR",
+      "Orion",
       "PaddleOCR",
       "Perceptron et MLP",
       "Probing",
@@ -963,6 +986,7 @@
       "pykan",
       "pytorch-crf",
       "segment-anything",
+      "time-series-anomaly-detector",
       "timm",
       "torchvision"
     ],
@@ -1345,13 +1369,17 @@
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
+      "Foundation models et anomalies de séries",
       "Foundation models pour séries temporelles",
       "Hierarchical forecasting",
       "Intermittent demand",
+      "Kats",
+      "Merlion",
       "Modèles de Markov cachés et filtre de Kalman",
       "Prophet",
       "Séries temporelles",
       "Time series feature engineering",
+      "aeon",
       "darts",
       "neuralforecast",
       "pmdarima",
@@ -1364,6 +1392,7 @@
     ],
     "foundation-model": [
       "Chronos",
+      "Foundation models et anomalies de séries",
       "Modèles de fondation vision",
       "Séries temporelles",
       "segment-anything"
@@ -1385,6 +1414,7 @@
     ],
     "gan": [
       "GANs",
+      "Orion",
       "SDV"
     ],
     "generalization-bound": [
@@ -2335,6 +2365,7 @@
       "Ranking metrics",
       "Regression metrics",
       "Scikit-Learn",
+      "TSB-AD",
       "Validation croisée",
       "Walk-forward CV",
       "evaluate",
@@ -2469,7 +2500,10 @@
       "Correction des tests multiples"
     ],
     "multivariate": [
-      "MANOVA et tests multivariés"
+      "Azure AI Anomaly Detector",
+      "Kats",
+      "MANOVA et tests multivariés",
+      "time-series-anomaly-detector"
     ],
     "mutual-information": [
       "Mutual information",
@@ -3575,6 +3609,9 @@
       "Analyse de puissance",
       "pingouin"
     ],
+    "statistical-process-control": [
+      "Contrôle statistique de procédé (SPC)"
+    ],
     "statistical-viz": [
       "Visualisation",
       "seaborn",
@@ -3590,8 +3627,10 @@
       "Stationarity"
     ],
     "streaming": [
+      "Azure AI Anomaly Detector",
       "Change Data Capture (CDC)",
       "Debezium",
+      "Détection d'anomalies en ligne",
       "Flink",
       "Kafka",
       "Messagerie",
@@ -3755,36 +3794,53 @@
       "WrenAI"
     ],
     "thresholding": [
-      "Score et seuil d'alerte"
+      "Merlion",
+      "Score et seuil d'alerte",
+      "time-series-anomaly-detector"
     ],
     "timeseries": [
       "ARIMA SARIMA",
+      "Anomalies multivariées par apprentissage profond",
       "Autocorrelation",
+      "Azure AI Anomaly Detector",
       "Bases de données",
       "CausalImpact",
       "Chronos",
       "Comparatif - Bases temporelles",
+      "Comparatif - Détection d'anomalies en séries temporelles",
       "Comparatif - Forecasting",
+      "Contrôle statistique de procédé (SPC)",
+      "DeepOD",
+      "Détection d'anomalies en ligne",
+      "Détection de ruptures",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
+      "Foundation models et anomalies de séries",
       "Foundation models pour séries temporelles",
       "Hierarchical forecasting",
       "InfluxDB",
       "Intermittent demand",
+      "Kats",
       "Maintenance prédictive et RUL",
+      "Merlion",
+      "Orion",
       "Prophet",
       "STUMPY",
       "Stationarity",
       "Séries temporelles",
+      "TSB-AD",
       "Time series anomaly detection",
       "Time series feature engineering",
       "TimescaleDB",
       "Walk-forward CV",
+      "aeon",
       "darts",
       "neuralforecast",
       "pmdarima",
-      "statsforecast"
+      "ruptures",
+      "statsforecast",
+      "time-series-anomaly-detector"
     ],
     "tls": [
       "Caddy",
@@ -3874,6 +3930,7 @@
       "torchvision"
     ],
     "transformers": [
+      "Anomalies multivariées par apprentissage profond",
       "Apprentissage profond",
       "Architectures hybrides LLM",
       "Attention Residuals",
@@ -3946,6 +4003,7 @@
       "Clustering hiérarchique par densité",
       "Comparatif - Détection d'anomalies",
       "DBSCAN",
+      "DeepOD",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Fanalysis",
@@ -3960,6 +4018,7 @@
       "NMF",
       "Non supervisé",
       "One-Class SVM",
+      "Orion",
       "PCA",
       "PGA",
       "PaCMAP",
@@ -4110,6 +4169,9 @@
     ],
     "wide-column": [
       "Apache Cassandra"
+    ],
+    "zero-shot": [
+      "Foundation models et anomalies de séries"
     ]
   },
   "pages": [
@@ -19172,6 +19234,82 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Anomalies multivariées par apprentissage profond.md",
+      "nom": "Anomalies multivariées par apprentissage profond",
+      "alias": [
+        "Deep learning pour anomalies multivariées",
+        "USAD",
+        "TranAD",
+        "Anomaly Transformer",
+        "LSTM-AE",
+        "TimesNet"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "timeseries",
+        "deep-learning",
+        "transformers",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Azure AI Anomaly Detector.md",
+      "nom": "Azure AI Anomaly Detector",
+      "alias": [
+        "Azure Anomaly Detector",
+        "Anomaly Detector Azure",
+        "Azure Cognitive Services Anomaly Detector",
+        "AI Services Anomaly Detector"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.",
+      "tags": [
+        "timeseries",
+        "multivariate",
+        "change-point",
+        "streaming"
+      ],
+      "alternatives": [
+        "[[time-series-anomaly-detector]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies en séries temporelles.md",
+      "nom": "Comparatif - Détection d'anomalies en séries temporelles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "timeseries",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies.md",
       "nom": "Comparatif - Détection d'anomalies",
       "alias": null,
@@ -19184,6 +19322,97 @@
       "tags": [
         "anomaly-detection",
         "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Contrôle statistique de procédé (SPC).md",
+      "nom": "Contrôle statistique de procédé (SPC)",
+      "alias": [
+        "SPC",
+        "Statistical process control",
+        "Maîtrise statistique des procédés",
+        "Cartes de contrôle",
+        "Control charts",
+        "Carte de Shewhart",
+        "Cartes EWMA",
+        "Capabilité de procédé",
+        "Cpk",
+        "Western Electric",
+        "Average run length"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-process-control",
+        "anomaly-detection",
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/DeepOD.md",
+      "nom": "DeepOD",
+      "alias": [
+        "deepod",
+        "Deep Outlier Detection",
+        "xuhongzuo DeepOD"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de détecteurs d'anomalies profonds, tabulaires et séries temporelles (Deep SVDD, REPEN, RDP, GOAD, USAD, TimesNet, Anomaly Transformer, DCdetector…), sous une API fit / decision_function à la PyOD, avec un banc d'essai de recherche ; PyTorch, dépendances épinglées anciennes et dernière release en 2023.",
+      "tags": [
+        "timeseries",
+        "deep-learning",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[aeon]]",
+        "[[Orion]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection d'anomalies en ligne.md",
+      "nom": "Détection d'anomalies en ligne",
+      "alias": [
+        "Online anomaly detection",
+        "Streaming anomaly detection",
+        "Détection d'anomalies sur flux",
+        "Détection d'anomalies en streaming",
+        "Half-Space Trees",
+        "Random Cut Forest",
+        "RRCF"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "streaming",
+        "timeseries"
       ],
       "alternatives": null,
       "complements": null,
@@ -19268,6 +19497,36 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Détection de ruptures.md",
+      "nom": "Détection de ruptures",
+      "alias": [
+        "Change point detection",
+        "Changepoint detection",
+        "Détection de points de rupture",
+        "Segmentation de séries temporelles",
+        "CUSUM",
+        "PELT",
+        "BOCPD"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "change-point",
+        "anomaly-detection",
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Détection hors distribution (OOD).md",
       "nom": "Détection hors distribution (OOD)",
       "alias": [
@@ -19290,6 +19549,37 @@
         "out-of-distribution",
         "anomaly-detection",
         "model-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Foundation models et anomalies de séries.md",
+      "nom": "Foundation models et anomalies de séries",
+      "alias": [
+        "Détection d'anomalies zero-shot",
+        "Résidus de prévision zero-shot",
+        "TSFM pour anomalies",
+        "MOMENT",
+        "TimesFM"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "timeseries",
+        "foundation-model",
+        "forecasting",
+        "zero-shot",
+        "benchmark"
       ],
       "alternatives": null,
       "complements": null,
@@ -19346,6 +19636,34 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Kats.md",
+      "nom": "Kats",
+      "alias": [
+        "facebookresearch/Kats",
+        "Kats Meta",
+        "kit to analyze time series"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils Python de Meta pour l'analyse de séries temporelles — détection (CUSUM, BOCPD, statistiques robustes, outliers), prévision, extraction de features — mais dernière version publiée en 2022 et paquet PyPI aux dépendances épinglées, classé alpha.",
+      "tags": [
+        "timeseries",
+        "forecasting",
+        "change-point",
+        "multivariate"
+      ],
+      "alternatives": [
+        "[[ruptures]]",
+        "[[aeon]]",
+        "[[Merlion]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Local Outlier Factor.md",
       "nom": "Local Outlier Factor",
       "alias": [
@@ -19370,6 +19688,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Merlion.md",
+      "nom": "Merlion",
+      "alias": [
+        "salesforce-merlion",
+        "salesforce/Merlion",
+        "Merlion Salesforce"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de Salesforce « time series intelligence » — prévision, détection d'anomalies et de ruptures sous une interface commune, avec ensembles, post-traitement des scores, AutoML et benchmark — dépôt archivé, plus maintenu depuis la 2.0.4 (juin 2024).",
+      "tags": [
+        "timeseries",
+        "forecasting",
+        "benchmark",
+        "change-point",
+        "thresholding"
+      ],
+      "alternatives": [
+        "[[aeon]]",
+        "[[Kats]]"
+      ],
+      "complements": [],
+      "maturite": "deprecated"
     },
     {
       "path": "Machine Learning/Détection d'anomalies/One-Class SVM.md",
@@ -19397,6 +19743,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Orion.md",
+      "nom": "Orion",
+      "alias": [
+        "orion-ml",
+        "sintel-dev/Orion",
+        "Orion DAI-Lab",
+        "Sintel Orion"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python du Data to AI Lab (MIT) de détection d'anomalies non supervisée sur séries temporelles — pipelines « vérifiés » prêts à l'emploi (AER, TadGAN, LSTM à seuil dynamique, autoencodeurs, matrix profile…), benchmark intégré, statut officiel pre-alpha.",
+      "tags": [
+        "timeseries",
+        "unsupervised",
+        "deep-learning",
+        "gan",
+        "benchmark"
+      ],
+      "alternatives": [
+        "[[DeepOD]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
     },
     {
       "path": "Machine Learning/Détection d'anomalies/PyOD.md",
@@ -19472,6 +19846,29 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/TSB-AD.md",
+      "nom": "TSB-AD",
+      "alias": [
+        "TSB_AD",
+        "TheDatumOrg TSB-AD",
+        "The Elephant in the Room"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Banc d'essai et bibliothèque Python de détection d'anomalies en séries temporelles (NeurIPS 2024) — 1 070 séries univariées et multivariées tirées de 40 jeux, une quarantaine d'algorithmes statistiques, neuronaux et modèles de fondation sous une même fonction, et VUS-PR comme métrique de référence ; sert à comparer et à évaluer, pas à déployer.",
+      "tags": [
+        "timeseries",
+        "benchmark",
+        "model-evaluation"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Time series anomaly detection.md",
       "nom": "Time series anomaly detection",
       "alias": [
@@ -19524,6 +19921,85 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/aeon.md",
+      "nom": "aeon",
+      "alias": [
+        "aeon-toolkit",
+        "aeon toolkit",
+        "aeon time series"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils Python compatible scikit-learn pour l'apprentissage sur séries temporelles — classification, régression, clustering, prévision, segmentation et anomalies ; son module d'anomalies est modeste (une quinzaine de détecteurs fenêtrés ou à distance, aucun réseau profond) : l'intérêt est de rester dans la même API que le reste.",
+      "tags": [
+        "timeseries",
+        "classification",
+        "clustering",
+        "forecasting"
+      ],
+      "alternatives": [
+        "[[Kats]]",
+        "[[Merlion]]",
+        "[[DeepOD]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/ruptures.md",
+      "nom": "ruptures",
+      "alias": [
+        "deepcharles/ruptures",
+        "change point detection python",
+        "rpt"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de détection de ruptures hors ligne — segmente un signal en régimes avec des algorithmes de recherche (PELT, Binseg, BottomUp, Window, Dynp, KernelCPD) combinables à des fonctions de coût (L2, RBF, normale, rang…) ; elle rend des points de changement, pas des scores d'anomalie.",
+      "tags": [
+        "timeseries",
+        "change-point"
+      ],
+      "alternatives": [
+        "[[Kats]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/time-series-anomaly-detector.md",
+      "nom": "time-series-anomaly-detector",
+      "alias": [
+        "microsoft/anomaly-detector",
+        "anomaly_detector",
+        "Microsoft Anomaly Detector open source",
+        "MVAD UVAD"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python open source de Microsoft, issue des algorithmes du service Azure AI Anomaly Detector — détecteurs univariés (résidu spectral, ESD, z-score) et détecteur multivarié à attention sur graphe, exécutés en local ; la voie de sortie que Microsoft recommande après le retrait du service.",
+      "tags": [
+        "timeseries",
+        "multivariate",
+        "deep-learning",
+        "thresholding"
+      ],
+      "alternatives": [
+        "[[Azure AI Anomaly Detector]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Machine Learning/Détection d'anomalies/Évaluer une détection d'anomalies.md",
