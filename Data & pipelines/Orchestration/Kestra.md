@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Airflow]]", "[[Dagster]]", "[[Prefect]]", "[[Mage]]", "[[Temporal]]"]
-complements: ["[[dbt Core]]", "[[SQLMesh]]"]
+complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]"]
 tags: [orchestration, data-pipeline, declarative-config]
 url_docs: https://kestra.io/docs
 url_repo: https://github.com/kestra-io/kestra
@@ -69,6 +69,8 @@ Kestra 1.0 (LTS, septembre 2025) en fait une plateforme d'entreprise.
 
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — le plugin dbt de Kestra (Apache-2.0) lance n'importe quelle commande dbt dans un conteneur par la tâche `DbtCLI` et parse les résultats ; il sait aussi déclencher un job dbt Cloud.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — Kestra figure dans la liste officielle des intégrations de SQLMesh, avec un plugin dédié ; l'intégration Airflow documentée, elle, exige Tobiko Cloud.
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — Kestra publie un plugin Airbyte pour déclencher des synchronisations.
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — Kestra publie un plugin dlt.
 
 ## Ressources
 
