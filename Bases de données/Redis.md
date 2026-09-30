@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[MongoDB]]", "[[Apache Cassandra]]"]
-complements: ["[[Redis Insight]]", "[[Apache Superset]]"]
+complements: ["[[Redis Insight]]", "[[Apache Superset]]", "[[GitLab CE]]"]
 tags: [nosql, key-value, in-memory]
 url_docs: https://redis.io/docs/
 url_repo: https://github.com/redis/redis
@@ -65,6 +65,7 @@ persistance est optionnelle : snapshots RDB ou journal AOF.
 
 - [[Redis Insight]] — Client graphique officiel de Redis : exploration des clés, profiling et workbench pour modules (JSON, Search). — le client officiel pour explorer les clés et profiler l'instance.
 - [[Apache Superset]] — BI auto-hébergée Apache-2.0 tournée vers l'exploration : SQL Lab, constructeur de graphiques, tableaux de bord, droits par ligne, alertes et embedding sans édition payante ; exploitation plus lourde (base de métadonnées, Redis, Celery). — Redis y sert de cache et de broker Celery.
+- [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — cache et files de GitLab, en instance autonome.
 
 ## Ressources
 
