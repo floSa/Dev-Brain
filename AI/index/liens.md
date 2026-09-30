@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 917 pages actives.
+> 918 pages actives.
 
 ## Par page
 
@@ -53,7 +53,7 @@
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
 - liens sortants : [[Airbyte]], [[Authentik]], [[Celery]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kestra]], [[Keycloak]], [[Mage]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Postgres]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Authentik]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Dagster]], [[DataHub]], [[Deepchecks]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Flink]], [[Flyte]], [[Great Expectations]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Keycloak]], [[Mage]], [[Metaflow]], [[OAuth2 et OpenID Connect]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]]
+- liens entrants : [[Airbyte]], [[Authentik]], [[CI-CD pour le ML]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Dagster]], [[DataHub]], [[Deepchecks]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Flink]], [[Flyte]], [[Great Expectations]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Keycloak]], [[Mage]], [[Metaflow]], [[OAuth2 et OpenID Connect]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Prefect]], [[Temporal]], [[Windmill]], [[ZenML]], [[datasets]], [[dbt Core]], [[dlt]], [[n8n]]
 
 ### albumentations  ·  brique
 - tags : `computer-vision`, `data-augmentation`, `object-detection`, `segmentation`, `deep-learning`
@@ -438,7 +438,7 @@
 ### Deepchecks  ·  brique
 - tags : `model-monitoring`, `data-drift`, `model-evaluation`, `data-validation`
 - liens sortants : [[Airflow]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Evidently]], [[GitHub Actions]], [[Monitoring de modèle en production]], [[NannyML]]
-- liens entrants : [[Comparatif - Monitoring de modèles]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèles]], [[NannyML]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Evidently]], [[Machine Learning]], [[Monitoring de modèles]], [[NannyML]]
 
 ### DeepEval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `testing`
@@ -518,7 +518,7 @@
 ### DVC  ·  brique
 - tags : `data-versioning`, `reproducibility`, `ml-pipeline`
 - liens sortants : [[Apache Iceberg]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Delta Lake]], [[Fiabilité des données]], [[MLflow]], [[MinIO]], [[Model registry & versioning]], [[Versionnage de données]], [[lakeFS]]
-- liens entrants : [[Ceph]], [[Comparatif - Versionnage de données]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[MLflow]], [[MinIO]], [[lakeFS]]
+- liens entrants : [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[MLflow]], [[MinIO]], [[lakeFS]]
 
 ### dynaconf  ·  brique
 - tags : `config`
@@ -548,7 +548,7 @@
 ### Evidently  ·  brique
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
 - liens sortants : [[Airflow]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Grafana]], [[MLflow]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]]
-- liens entrants : [[Comparatif - Monitoring de modèles]], [[Comparatif - Qualité de données]], [[Data drift]], [[Deepchecks]], [[Fiabilité des données]], [[Great Expectations]], [[Interprétabilité]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[Serving]], [[Soda Core]], [[Suivi d'expériences]], [[pandera]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Qualité de données]], [[Data drift]], [[Deepchecks]], [[Fiabilité des données]], [[Great Expectations]], [[Interprétabilité]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[Serving]], [[Soda Core]], [[Suivi d'expériences]], [[pandera]]
 
 ### Excalidraw  ·  brique
 - tags : `diagram`, `whiteboard`
@@ -628,7 +628,7 @@
 ### Flyte  ·  brique
 - tags : `orchestration`, `ml-pipeline`, `kubernetes`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[ZenML]]
-- liens entrants : [[Comparatif - Orchestrateurs ML]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[ZenML]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[ZenML]]
 
 ### Flyway  ·  brique
 - tags : `migration`, `relational`
@@ -658,7 +658,7 @@
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
 - liens sortants : [[Argo CD]], [[DevOps]], [[Docker]], [[Gitleaks]], [[Grype]], [[Semgrep]], [[Trivy]]
-- liens entrants : [[Argo CD]], [[Deepchecks]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gitleaks]], [[Grype]], [[Rule - Qualité stricte]], [[Semgrep]], [[Trivy]]
+- liens entrants : [[Argo CD]], [[CI-CD pour le ML]], [[Deepchecks]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gitleaks]], [[Grype]], [[Rule - Qualité stricte]], [[Semgrep]], [[Trivy]]
 
 ### Gitleaks  ·  brique
 - tags : `secret-scanning`, `supply-chain`, `ci-cd`
@@ -883,12 +883,12 @@
 ### KServe  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[Kubeflow]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[Kubeflow]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[Kubeflow]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Kubeflow  ·  brique
 - tags : `ml-platform`, `ml-pipeline`, `kubernetes`, `hyperparameter-tuning`, `notebook`, `self-hosted`
 - liens sortants : [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Databricks]], [[Dataiku]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Flyte]], [[KServe]], [[Keycloak]], [[Kubernetes]], [[MLflow]], [[Metaflow]], [[Model registry & versioning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[ZenML]]
-- liens entrants : [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Flyte]], [[KServe]], [[Kubernetes]], [[Metaflow]], [[Plateformes data & IA]], [[ZenML]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Flyte]], [[KServe]], [[Kubernetes]], [[Metaflow]], [[Plateformes data & IA]], [[ZenML]]
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
@@ -1093,7 +1093,7 @@
 ### Metaflow  ·  brique
 - tags : `orchestration`, `ml-pipeline`
 - liens sortants : [[AWS S3]], [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Flyte]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[ZenML]]
-- liens entrants : [[AWS SageMaker]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Kubeflow]], [[Machine Learning]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[ZenML]]
+- liens entrants : [[AWS SageMaker]], [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Kubeflow]], [[Machine Learning]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[ZenML]]
 
 ### Microsoft Azure Machine Learning  ·  brique
 - tags : `ml-platform`, `model-serving`, `model-registry`, `ml-pipeline`, `automl`, `kubernetes`
@@ -1138,7 +1138,7 @@
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[DVC]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[Optuna]], [[PyTorch]], [[Scikit-Learn]], [[TensorBoard]], [[Weights & Biases]], [[XGBoost]], [[lakeFS]]
-- liens entrants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Kubeflow]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]], [[lakeFS]]
+- liens entrants : [[Aim]], [[CI-CD pour le ML]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data drift]], [[Databricks]], [[Déploiement de modèles]], [[Evidently]], [[Kubeflow]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Neptune]], [[OAuth2 et OpenID Connect]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]], [[ZenML]], [[evaluate]], [[lakeFS]]
 
 ### Modal  ·  brique
 - tags : `agents`, `gpu`, `llm`, `container`
@@ -1783,7 +1783,7 @@
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### selectolax  ·  brique
 - tags : `web-scraping`, `document-parsing`
@@ -2198,7 +2198,7 @@
 ### ZenML  ·  brique
 - tags : `orchestration`, `ml-pipeline`
 - liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Metaflow]]
-- liens entrants : [[AWS SageMaker]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Google Cloud Vertex AI]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]]
+- liens entrants : [[AWS SageMaker]], [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Google Cloud Vertex AI]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]]
 
 ### Comparatif - Apps data & démos ML  ·  comparatif
 - tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
@@ -2687,7 +2687,7 @@
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
+- liens sortants : [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
 - liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
@@ -2717,7 +2717,7 @@
 
 ### Monitoring de modèles  ·  hub
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
-- liens sortants : [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Grafana]], [[Monitoring de modèle en production]], [[NannyML]], [[Prometheus]]
+- liens sortants : [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Evidently]], [[Grafana]], [[Monitoring de modèle en production]], [[NannyML]], [[Prometheus]]
 - liens entrants : [[Comparatif - Monitoring de modèles]], [[Evidently]], [[Machine Learning]]
 
 ### Médias  ·  hub
@@ -3190,6 +3190,11 @@
 - liens sortants : [[Advanced RAG]], [[Docling]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[LlamaParse]], [[RAG]], [[Reranking]], [[Unstructured]], [[embeddings]]
 - liens entrants : [[Advanced RAG]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[RAG & retrieval]], [[RAGChecker]], [[Reranking]], [[bge-reranker]], [[pdf-inspector]]
 
+### CI-CD pour le ML  ·  notion
+- tags : `ci-cd`, `ml-pipeline`, `deployment-strategy`, `reproducibility`, `model-registry`
+- liens sortants : [[Airflow]], [[DVC]], [[Data drift]], [[Deepchecks]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Evidently]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Metaflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Seldon Core]], [[ZenML]]
+- liens entrants : [[Machine Learning]], [[Monitoring de modèles]]
+
 ### Classification  ·  notion
 - tags : `classification`, `supervised`
 - liens sortants : [[AdaBoost]], [[Analyse discriminante]], [[Apprentissage supervisé]], [[Arbres de décision]], [[CNN]], [[Calibration]], [[Classification metrics]], [[Clustering]], [[Cross-entropy]], [[Extra Trees]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[LightGBM]], [[Naive Bayes]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression logistique]], [[SVM]], [[Scikit-Learn]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Validation croisée]], [[XGBoost]], [[embeddings]], [[imbalanced-learn]], [[k-NN]]
@@ -3298,7 +3303,7 @@
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
 - liens sortants : [[Calibration]], [[Data leakage]], [[Evidently]], [[Jensen-Shannon divergence]], [[KL divergence]], [[MLflow]], [[Monitoring de modèle en production]], [[River]], [[Wasserstein distance]]
-- liens entrants : [[Apprentissage supervisé]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Evidently]], [[Explicabilité des modèles]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[Apprentissage supervisé]], [[CI-CD pour le ML]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Evidently]], [[Explicabilité des modèles]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Serving]], [[Suivi d'expériences]]
 
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
@@ -3338,12 +3343,12 @@
 ### Du Compose à Kubernetes — quand changer d'échelle  ·  notion
 - tags : `container`, `kubernetes`, `gitops`, `ci-cd`
 - liens sortants : [[Argo CD]], [[BentoML]], [[Docker Compose]], [[GitHub Actions]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubeflow]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens entrants : [[Argo CD]], [[CI-CD pour le ML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubeflow]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
 - liens sortants : [[A/B testing]], [[BentoML]], [[Data drift]], [[KServe]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]]
-- liens entrants : [[BentoML]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Plateforme data & IA — concept]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Plateforme data & IA — concept]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 
 ### Détection d'objets  ·  notion
 - tags : `object-detection`, `computer-vision`, `deep-learning`
@@ -3828,7 +3833,7 @@
 ### Model registry & versioning  ·  notion
 - tags : `model-registry`, `experiment-tracking`
 - liens sortants : [[Data drift]], [[Déploiement de modèles]], [[MLflow]], [[Monitoring de modèle en production]]
-- liens entrants : [[Comparatif - Versionnage de données]], [[DVC]], [[Déploiement de modèles]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Déploiement de modèles]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
 
 ### Model-based RL  ·  notion
 - tags : `reinforcement-learning`, `model-based-rl`, `dynamic-programming`
@@ -3848,7 +3853,7 @@
 ### Monitoring de modèle en production  ·  notion
 - tags : `model-monitoring`, `data-drift`, `concept-drift`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[MLflow]], [[Model registry & versioning]]
-- liens entrants : [[Data drift]], [[DataRobot]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[Feature store — concept]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NannyML]], [[Plateforme data & IA — concept]], [[SLO et alerting]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[CI-CD pour le ML]], [[Data drift]], [[DataRobot]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[Feature store — concept]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NannyML]], [[Plateforme data & IA — concept]], [[SLO et alerting]], [[Serving]], [[Suivi d'expériences]]
 
 ### Monte Carlo Tree Search  ·  notion
 - tags : `planning`, `monte-carlo`, `model-based-rl`
@@ -4621,7 +4626,7 @@
 - `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Inférence causale, Statistiques & inférence
 - `cdc` : Airbyte, Change Data Capture (CDC), Debezium, Ingestion de données
 - `chunking` : Chunking strategies, RAG & retrieval
-- `ci-cd` : Argo CD, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Gitleaks, Grype, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy  — pas de page concept dédiée
+- `ci-cd` : Argo CD, CI-CD pour le ML, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Gitleaks, Grype, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
 - `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
@@ -4667,7 +4672,7 @@
 - `declarative-viz` : Comparatif - Visualisation, altair  — pas de page concept dédiée
 - `decoding` : Constrained decoding, Decoding strategies, Guidance, Modèles de langage, Multi-Token Prediction, Outlines, Sortie typée, Speculative decoding  — pas de page concept dédiée
 - `deep-learning` : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision  — pas de page concept dédiée
-- `deployment-strategy` : DevOps, Déploiement de modèles, Serving  — pas de page concept dédiée
+- `deployment-strategy` : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
 - `design-tool` : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
 - `diagram` : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, draw.io  — pas de page concept dédiée
@@ -4773,14 +4778,14 @@
 - `mixed-precision` : Apprentissage profond, DeepSpeed, Mixed precision, accelerate
 - `mixture-of-experts` : Calculs adaptatifs, Mixture of Experts
 - `ml-demo` : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `ml-pipeline` : AWS SageMaker, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
+- `ml-pipeline` : AWS SageMaker, CI-CD pour le ML, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML  — pas de page concept dédiée
 - `ml-platform` : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantization  — pas de page concept dédiée
 - `model-evaluation` : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles  — pas de page concept dédiée
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
-- `model-registry` : AWS SageMaker, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
+- `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
 - `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
 - `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
@@ -4854,7 +4859,7 @@
 - `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
-- `reproducibility` : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill  — pas de page concept dédiée
+- `reproducibility` : CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill  — pas de page concept dédiée
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
@@ -4958,7 +4963,7 @@
 - `benchmark` (porté par : Choisir un modèle d'embedding, Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
-- `ci-cd` (porté par : Argo CD, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Gitleaks, Grype, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy)
+- `ci-cd` (porté par : Argo CD, CI-CD pour le ML, DevOps, Du Compose à Kubernetes — quand changer d'échelle, GitHub Actions, Gitleaks, Grype, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy)
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
@@ -4985,7 +4990,7 @@
 - `declarative-viz` (porté par : Comparatif - Visualisation, altair)
 - `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Modèles de langage, Multi-Token Prediction, Outlines, Sortie typée, Speculative decoding)
 - `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, DeepSpeed, Detectron2, Diffusion models, Distillation, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, OCR, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, timm, torchvision)
-- `deployment-strategy` (porté par : DevOps, Déploiement de modèles, Serving)
+- `deployment-strategy` (porté par : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving)
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, draw.io)
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
@@ -5049,7 +5054,7 @@
 - `metrics` (porté par : Beszel, Grafana, Métriques, logs et traces, Netdata, Observabilité, OpenTelemetry, Prometheus, VictoriaMetrics, Zabbix)
 - `missing-data` (porté par : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno)
 - `ml-demo` (porté par : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
-- `ml-pipeline` (porté par : AWS SageMaker, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
+- `ml-pipeline` (porté par : AWS SageMaker, CI-CD pour le ML, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
 - `ml-platform` (porté par : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles)
@@ -5095,7 +5100,7 @@
 - `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
-- `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill)
+- `reproducibility` (porté par : CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)

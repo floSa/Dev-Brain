@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 917,
+  "count": 918,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -324,6 +324,7 @@
     ],
     "ci-cd": [
       "Argo CD",
+      "CI-CD pour le ML",
       "DevOps",
       "Du Compose à Kubernetes — quand changer d'échelle",
       "GitHub Actions",
@@ -887,6 +888,7 @@
       "torchvision"
     ],
     "deployment-strategy": [
+      "CI-CD pour le ML",
       "DevOps",
       "Déploiement de modèles",
       "Serving"
@@ -2060,6 +2062,7 @@
     ],
     "ml-pipeline": [
       "AWS SageMaker",
+      "CI-CD pour le ML",
       "Comparatif - Orchestrateurs ML",
       "DVC",
       "Dataiku",
@@ -2146,6 +2149,7 @@
     ],
     "model-registry": [
       "AWS SageMaker",
+      "CI-CD pour le ML",
       "ClearML",
       "Comet",
       "Comparatif - Suivi d'expériences ML",
@@ -2848,6 +2852,7 @@
       "embeddings"
     ],
     "reproducibility": [
+      "CI-CD pour le ML",
       "Comparatif - Gestionnaires de paquets Python",
       "Comparatif - Orchestrateurs ML",
       "DVC",
@@ -16767,6 +16772,37 @@
         "[[PyTorch]]"
       ],
       "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/CI-CD pour le ML.md",
+      "nom": "CI-CD pour le ML",
+      "alias": [
+        "CI/CD pour le ML",
+        "CI/CD ML",
+        "CD4ML",
+        "intégration continue ML",
+        "livraison continue ML",
+        "entraînement continu",
+        "continuous training"
+      ],
+      "role": "notion",
+      "categorie": "ml/orchestration",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "ci-cd",
+        "ml-pipeline",
+        "deployment-strategy",
+        "reproducibility",
+        "model-registry"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/CVAT.md",
