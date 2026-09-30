@@ -68,3 +68,7 @@ seul code, plutôt que de miser sur un seul détecteur. Le seuil binaire vient d
 - [[Détection d'outliers multivariée]] — la notion qu'il outille : LOF, IForest, ECOD, COPOD
 - [[Comparatif - Détection d'anomalies]] — ce qui départage les briques du dossier
 - [[Apprentissage non supervisé]] — le cadre
+- [[Types d'anomalies et régimes de supervision]] — outlier ou novelty, normal propre ou contaminé : ce que ses détecteurs supposent
+- [[Score et seuil d'alerte]] — passer du score de ses détecteurs à une décision
+- [[Évaluer une détection d'anomalies]] — les métriques à employer pour les comparer sans se tromper
+- [[Jeux de données d'anomalies]] — les jeux publics sur lesquels on le compare

@@ -19,3 +19,4 @@ tags: [anomaly-detection, unsupervised]
 ## Voir aussi
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
+- [[Détection d'anomalies]] — le dossier qui range ces briques et les notions qui les expliquent
