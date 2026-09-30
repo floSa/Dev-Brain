@@ -3,7 +3,7 @@ role: brique
 nom: STUMPY
 alias: [stumpy, matrix profile python]
 pitch: "Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles."
-categorie: ml/series-temporelles
+categorie: ml/anomalie
 famille: paquet
 licence_type: open-source
 maturite: production
