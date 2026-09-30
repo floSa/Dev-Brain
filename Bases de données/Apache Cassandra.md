@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[MongoDB]]", "[[Redis]]"]
-complements: []
+complements: ["[[JanusGraph]]"]
 tags: [nosql, wide-column, distributed]
 url_docs: https://cassandra.apache.org/doc/
 url_repo: https://github.com/apache/cassandra
@@ -60,6 +60,10 @@ modélise par pattern d'accès, pas par entité.
 
 - [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
 - [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
+
+### Compléments
+
+- [[JanusGraph]] — Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024. — la couche de graphe qui peut s'appuyer sur Cassandra comme backend de stockage.
 
 ## Ressources
 
