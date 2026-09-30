@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 878,
+  "count": 883,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -597,7 +597,11 @@
       "torchvision"
     ],
     "data-contract": [
-      "Contrats de données & qualité"
+      "Comparatif - Qualité de données",
+      "Contrats de données & qualité",
+      "Fiabilité des données",
+      "Great Expectations",
+      "Soda Core"
     ],
     "data-drift": [
       "Data drift",
@@ -647,9 +651,14 @@
       "Alteryx",
       "Architecture médaillon",
       "Comparatif - Outils EDA - profiling",
+      "Comparatif - Qualité de données",
       "Contrats de données & qualité",
+      "Fiabilité des données",
+      "Great Expectations",
       "SQLMesh",
+      "Soda Core",
       "dbt Core",
+      "pandera",
       "ydata-profiling"
     ],
     "data-transformation": [
@@ -658,17 +667,23 @@
       "dbt Core"
     ],
     "data-validation": [
+      "Comparatif - Qualité de données",
       "Contrats de données & qualité",
+      "Fiabilité des données",
+      "Great Expectations",
       "Instructor",
       "Outils de développement",
       "Pydantic",
       "Pydantic Settings",
       "Rule - Config typée",
       "SQLModel",
+      "Soda Core",
       "Sortie typée",
-      "Structured outputs"
+      "Structured outputs",
+      "pandera"
     ],
     "data-versioning": [
+      "Fiabilité des données",
       "Versionnage de données"
     ],
     "dataframe": [
@@ -681,6 +696,7 @@
       "connectorx",
       "jupysql",
       "pandas",
+      "pandera",
       "sweetviz",
       "ydata-profiling"
     ],
@@ -1333,6 +1349,7 @@
     ],
     "idempotence": [
       "ELT vs ETL & idempotence",
+      "Fiabilité des données",
       "Orchestration",
       "Stream processing"
     ],
@@ -4479,7 +4496,8 @@
         "[[Polars]]",
         "[[jupysql]]",
         "[[dbt Core]]",
-        "[[SQLMesh]]"
+        "[[SQLMesh]]",
+        "[[Soda Core]]"
       ],
       "maturite": "production"
     },
@@ -5241,7 +5259,9 @@
         "[[psycopg2]]",
         "[[Apache AGE]]",
         "[[dbt Core]]",
-        "[[SQLMesh]]"
+        "[[SQLMesh]]",
+        "[[Great Expectations]]",
+        "[[Soda Core]]"
       ],
       "maturite": "production"
     },
@@ -6029,7 +6049,9 @@
       "complements": [
         "[[Databricks]]",
         "[[dbt Core]]",
-        "[[SQLMesh]]"
+        "[[SQLMesh]]",
+        "[[Great Expectations]]",
+        "[[pandera]]"
       ],
       "maturite": "production"
     },
@@ -6071,35 +6093,6 @@
         "[[dbt Core]]"
       ],
       "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Architecture médaillon.md",
-      "nom": "Architecture médaillon",
-      "alias": [
-        "medallion",
-        "médaillon",
-        "architecture médaillon",
-        "bronze silver gold",
-        "bronze/silver/gold",
-        "multi-hop architecture"
-      ],
-      "role": "notion",
-      "categorie": "data/fiabilite",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-modeling",
-        "data-pipeline",
-        "lakehouse",
-        "data-quality"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
     },
     {
       "path": "Data & pipelines/Avro.md",
@@ -6209,36 +6202,6 @@
       "tags": [
         "data-transformation",
         "data-pipeline"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Data & pipelines/Contrats de données & qualité.md",
-      "nom": "Contrats de données & qualité",
-      "alias": [
-        "data contract",
-        "contrat de données",
-        "data quality",
-        "qualité des données",
-        "freshness",
-        "fraîcheur",
-        "validation de données"
-      ],
-      "role": "notion",
-      "categorie": "data/fiabilite",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-contract",
-        "data-quality",
-        "data-validation",
-        "schema-evolution"
       ],
       "alternatives": null,
       "complements": null,
@@ -6368,7 +6331,8 @@
       "complements": [
         "[[ADBC]]",
         "[[DuckDB]]",
-        "[[connectorx]]"
+        "[[connectorx]]",
+        "[[pandera]]"
       ],
       "maturite": "production"
     },
@@ -6419,7 +6383,9 @@
         "[[Dask]]"
       ],
       "complements": [
-        "[[DuckDB]]"
+        "[[DuckDB]]",
+        "[[Great Expectations]]",
+        "[[pandera]]"
       ],
       "maturite": "production"
     },
@@ -6477,7 +6443,109 @@
       "maturite": null
     },
     {
-      "path": "Data & pipelines/ELT vs ETL & idempotence.md",
+      "path": "Data & pipelines/Faker.md",
+      "nom": "Faker",
+      "alias": [
+        "faker",
+        "fake-factory",
+        "joke2k faker"
+      ],
+      "role": "brique",
+      "categorie": "data/synthetique",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.",
+      "tags": [
+        "synthetic-data",
+        "testing"
+      ],
+      "alternatives": [
+        "[[Mimesis]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Architecture médaillon.md",
+      "nom": "Architecture médaillon",
+      "alias": [
+        "medallion",
+        "médaillon",
+        "architecture médaillon",
+        "bronze silver gold",
+        "bronze/silver/gold",
+        "multi-hop architecture"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-modeling",
+        "data-pipeline",
+        "lakehouse",
+        "data-quality"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Comparatif - Qualité de données.md",
+      "nom": "Comparatif - Qualité de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-quality",
+        "data-validation",
+        "data-contract"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Contrats de données & qualité.md",
+      "nom": "Contrats de données & qualité",
+      "alias": [
+        "data contract",
+        "contrat de données",
+        "data quality",
+        "qualité des données",
+        "freshness",
+        "fraîcheur",
+        "validation de données"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-contract",
+        "data-quality",
+        "data-validation",
+        "schema-evolution"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/ELT vs ETL & idempotence.md",
       "nom": "ELT vs ETL & idempotence",
       "alias": [
         "ELT",
@@ -6504,27 +6572,146 @@
       "maturite": null
     },
     {
-      "path": "Data & pipelines/Faker.md",
-      "nom": "Faker",
+      "path": "Data & pipelines/Fiabilité des données/Fiabilité des données.md",
+      "nom": "Fiabilité des données",
+      "alias": [],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": "Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.",
+      "tags": [
+        "data-quality",
+        "data-contract",
+        "idempotence",
+        "data-versioning",
+        "data-validation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Great Expectations.md",
+      "nom": "Great Expectations",
       "alias": [
-        "faker",
-        "fake-factory",
-        "joke2k faker"
+        "GX",
+        "GX Core",
+        "great_expectations",
+        "great-expectations"
       ],
       "role": "brique",
-      "categorie": "data/synthetique",
+      "categorie": "data/fiabilite",
       "famille": "paquet",
       "langage": "Python",
       "domaines": null,
-      "pitch": "Génère des données factices réalistes en Python — noms, adresses, emails, textes, dates — via un système de providers et des dizaines de locales ; le standard pour peupler tests, fixtures et démos.",
+      "pitch": "Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026.",
       "tags": [
-        "synthetic-data",
-        "testing"
+        "data-quality",
+        "data-validation",
+        "data-contract"
       ],
       "alternatives": [
-        "[[Mimesis]]"
+        "[[Soda Core]]",
+        "[[pandera]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Airflow]]",
+        "[[Postgres]]",
+        "[[pandas]]",
+        "[[Spark]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Soda Core.md",
+      "nom": "Soda Core",
+      "alias": [
+        "Soda",
+        "soda-core",
+        "Soda Core 4",
+        "SodaCL"
+      ],
+      "role": "brique",
+      "categorie": "data/fiabilite",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud.",
+      "tags": [
+        "data-quality",
+        "data-contract",
+        "data-validation"
+      ],
+      "alternatives": [
+        "[[Great Expectations]]",
+        "[[pandera]]"
+      ],
+      "complements": [
+        "[[Postgres]]",
+        "[[DuckDB]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Versionnage de données.md",
+      "nom": "Versionnage de données",
+      "alias": [
+        "data versioning",
+        "versionnage de données",
+        "DVC",
+        "lakeFS",
+        "time travel",
+        "data lineage"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-versioning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/pandera.md",
+      "nom": "pandera",
+      "alias": [
+        "Pandera",
+        "pandera-pandas"
+      ],
+      "role": "brique",
+      "categorie": "data/fiabilite",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT).",
+      "tags": [
+        "data-validation",
+        "data-quality",
+        "dataframe"
+      ],
+      "alternatives": [
+        "[[Great Expectations]]",
+        "[[Soda Core]]"
+      ],
+      "complements": [
+        "[[pandas]]",
+        "[[Polars]]",
+        "[[Spark]]",
+        "[[Pydantic]]",
+        "[[Dagster]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6623,7 +6810,8 @@
       "complements": [
         "[[Keycloak]]",
         "[[Authentik]]",
-        "[[dbt Core]]"
+        "[[dbt Core]]",
+        "[[Great Expectations]]"
       ],
       "maturite": "production"
     },
@@ -6671,7 +6859,8 @@
         "[[Temporal]]"
       ],
       "complements": [
-        "[[dbt Core]]"
+        "[[dbt Core]]",
+        "[[pandera]]"
       ],
       "maturite": "production"
     },
@@ -7862,33 +8051,6 @@
         "streaming",
         "data-pipeline",
         "idempotence"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Data & pipelines/Versionnage de données.md",
-      "nom": "Versionnage de données",
-      "alias": [
-        "data versioning",
-        "versionnage de données",
-        "DVC",
-        "lakeFS",
-        "time travel",
-        "data lineage"
-      ],
-      "role": "notion",
-      "categorie": "data/fiabilite",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "data-versioning"
       ],
       "alternatives": null,
       "complements": null,
@@ -23653,7 +23815,8 @@
       "alternatives": [],
       "complements": [
         "[[Pydantic Settings]]",
-        "[[SQLModel]]"
+        "[[SQLModel]]",
+        "[[pandera]]"
       ],
       "maturite": "production"
     },
