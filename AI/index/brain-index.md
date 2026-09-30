@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 897 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 899 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -656,6 +656,9 @@
 - **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
 - **Ingestion incrémentale et curseurs** — domaines : data-eng · alias : ingestion incrémentale, incremental load, curseur, cursor, watermark, high-water mark, full refresh, attribution window, backfill incrémental
 
+### data/messagerie
+- **Architecture pilotée par les événements** — domaines : data-eng · alias : event-driven architecture, EDA, architecture événementielle, pub/sub, at-least-once, exactly-once, dead letter queue, outbox pattern, idempotent consumer, contre-pression
+
 ### data/parsing
 - **OCR classique vs modèles vision-langage pour documents** — domaines : data-eng, ai-eng · alias : OCR vs VLM, OCR classique ou VLM, pipeline OCR vs VLM, OCR end-to-end, VLM pour l'OCR
 
@@ -1094,6 +1097,9 @@
 
 ### data/ingestion
 - **Comparatif - Ingestion de données** — —
+
+### data/messagerie
+- **Comparatif - Brokers de messages** — —
 
 ### data/orchestration
 - **Comparatif - Orchestrateurs data** — —
