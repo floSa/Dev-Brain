@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: []
-complements: ["[[Kubernetes]]", "[[k3s]]", "[[Argo CD]]"]
+complements: ["[[Kubernetes]]", "[[k3s]]", "[[Argo CD]]", "[[GitLab CE]]"]
 tags: [kubernetes]
 url_docs: https://helm.sh/docs/
 url_repo: https://github.com/helm/helm
@@ -70,6 +70,7 @@ Environ 30 300 étoiles, Apache-2.0, projet CNCF diplômé (graduated) le 2020-0
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — la cible des charts
 - [[k3s]] — Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem. — un contrôleur Helm y est intégré
 - [[Argo CD]] — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé). — rend les charts depuis Git
+- [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — son chart officiel, l'une des méthodes d'installation décrites.
 
 ## Ressources
 

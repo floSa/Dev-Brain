@@ -6,11 +6,11 @@ pitch: "CI/CD intégrée à GitHub : workflows YAML déclenchés sur événement
 categorie: devops/ci
 famille: saas
 licence_type: proprietary
-hosted: [managed]
+hosted: [self, managed]
 maturite: production
 langage: 
 scaling: serverless
-alternatives: []
+alternatives: ["[[GitLab CE]]", "[[Forgejo]]", "[[Jenkins]]", "[[Woodpecker CI]]"]
 complements: ["[[Docker]]", "[[Argo CD]]", "[[Trivy]]", "[[Grype]]", "[[Gitleaks]]", "[[Semgrep]]"]
 tags: [ci-cd]
 url_docs: https://docs.github.com/actions
@@ -24,7 +24,7 @@ url_repo: https://github.com/actions/runner
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| SaaS | propriétaire | managé · serverless | production | à jour · 2026-08-26 |
+| SaaS | propriétaire | self-hébergé ou managé · serverless | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -35,8 +35,10 @@ Plateforme de CI/CD intégrée à GitHub. Des **workflows** décrits en YAML dan
 machines éphémères hébergées par GitHub ou auto-hébergées. La force du modèle est la
 proximité du code : rien à brancher quand le dépôt est déjà sur GitHub, et une marketplace
 d'actions réutilisables (`actions/checkout`, `setup-python`, déploiements) évite de tout
-réécrire. L'offre **sur site** existe : GitHub Enterprise Server exécute Actions, mais
-uniquement sur des runners auto-hébergés. Relevé le 2026-09-30 : runner `actions/runner`
+réécrire. L'offre **sur site** existe : GitHub Enterprise Server (version 3.22 dans la documentation
+lue le 2026-09-30) exécute Actions, mais uniquement sur des runners auto-hébergés ; le dépôt
+`actions/actions-runner-controller` (ARC, Apache-2.0, environ 6 500 étoiles, dernière version
+`gha-runner-scale-set-0.14.2` du 2026-05-22) les fait vivre sur Kubernetes. Relevé le 2026-09-30 : runner `actions/runner`
 **v2.337.0** (2026-08-26), environ 6 300 étoiles, licence MIT. C'est aussi sa surface d'attaque, et elle est réelle : une action tierce
 s'exécute avec les droits du workflow, donc elle s'épingle par **SHA** et non par un tag
 mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à son défaut.
@@ -45,7 +47,7 @@ mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à
 
 | Prendre si | Écarter si |
 |---|---|
-| Le code est déjà sur GitHub : CI/CD sans aucun outil externe à connecter | Code hébergé ailleurs — GitLab, Bitbucket : la CI native de la plateforme est plus naturelle (hors brain) |
+| Le code est déjà sur GitHub : CI/CD sans aucun outil externe à connecter | Code hébergé ailleurs, ou interdit chez GitHub : la CI de la forge interne ([[GitLab CE]], [[Forgejo]] avec [[Woodpecker CI]] ou Forgejo Actions) ou [[Jenkins]] ; le comparatif les départage : [[Comparatif - CI-CD auto-hébergé]] |
 | Tests, lint, build d'images et déploiement automatisés sur chaque push ou pull request | Orchestration de pipelines data ou ML avec dépendances et reprises : un orchestrateur dédié (Airflow, Dagster) complète mieux qu'une CI |
 | Tâches planifiées (`schedule`) ou déclenchées à la demande (`workflow_dispatch`) | Parc important de runners auto-hébergés : un frais de plateforme de 0,002 $/min a été annoncé le 2025-12-16 pour le 2026-03-01, reporté le lendemain « pour réévaluer l'approche » ; au 2026-09-30, aucune nouvelle date n'est publiée et la doc de facturation dit l'usage gratuit sur ces runners |
 | Réutiliser des briques toutes faites de la marketplace plutôt que scripter depuis zéro | Dépôts privés à gros volume : le quota de minutes part vite sur des matrices de builds ou des runners gonflés — cacher les dépendances et borner les matrices |
@@ -62,7 +64,10 @@ mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à
 
 ### Alternatives
 
-- *Aucune alternative déclarée : seule page de la catégorie `devops/ci`. GitLab CI, Jenkins et CircleCI seraient les candidats naturels, aucun n'est fiché — le cas du code hébergé ailleurs est pointé dans le tableau ci-dessus.*
+- [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — la forge complète hébergeable chez soi, cœur MIT ; approbations obligatoires et SAST avancé en éditions payantes.
+- [[Forgejo]] — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie. — la forge légère dont les Actions reprennent la syntaxe de celles de GitHub, avec une compatibilité partielle.
+- [[Jenkins]] — Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois. — le serveur de CI sans forge, plus de 2 000 plugins, à brancher sur des dépôts hébergés ailleurs.
+- [[Woodpecker CI]] — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge. — la CI légère, une étape par conteneur, qui s'appuie sur une forge existante.
 
 ### Compléments
 
@@ -81,3 +86,5 @@ mobile, et `GITHUB_TOKEN` se restreint par `permissions:` plutôt que laissé à
 ## Voir aussi
 
 - [[DevOps]] — le hub du domaine
+- [[Comparatif - CI-CD auto-hébergé]] — le comparatif : forge intégrée ou séparée, format de pipeline, licence.
+- [[Pipelines CI-CD on-prem — runners, secrets et artefacts]] — la notion : runners éphémères, isolation, artefacts, réseau fermé.

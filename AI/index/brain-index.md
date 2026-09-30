@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 943 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 950 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -236,7 +236,11 @@
 
 ### devops/ci
 - **Argo CD** — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé).
+- **Forgejo** — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie.
 - **GitHub Actions** — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.
+- **GitLab CE** — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes.
+- **Jenkins** — Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois.
+- **Woodpecker CI** — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge.
 
 ### devops/conteneur
 - **Docker** — Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.
@@ -732,6 +736,9 @@
 - **Bases de données vectorielles** — domaines : data-eng, ai-eng · alias : vector db, vector store, base vectorielle
 - **Index ANN — internes** — domaines : data-eng, ai-eng · alias : ANN, index ANN, HNSW, IVF, PQ, product quantization, approximate nearest neighbor, recherche ANN
 
+### devops/ci
+- **Pipelines CI-CD on-prem — runners, secrets et artefacts** — domaines : infra-ops, mlops · alias : {'Pipelines CI/CD on-prem': 'runners'}, secrets et artefacts, ci on-prem, runner ci, runners auto-hébergés, pipeline ci-cd on-prem
+
 ### devops/conteneur
 - **Du Compose à Kubernetes — quand changer d'échelle** — domaines : mlops, infra-ops · alias : compose vers kubernetes, quand passer à kubernetes, migrer de compose à k8s, gitops
 
@@ -1219,6 +1226,9 @@
 ### design/ui
 - **Comparatif - Design & prototypage** — —
 
+### devops/ci
+- **Comparatif - CI-CD auto-hébergé** — —
+
 ### devops/conteneur
 - **Comparatif - Orchestration de conteneurs** — —
 
@@ -1380,6 +1390,7 @@
 - **Embeddings & encodeurs** — Produire des vecteurs à partir de texte — choisir le modèle, puis l'outil qui le calcule ou le sert, sans dépendre d'une API externe.
 - **Fiabilité des données** — Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
+- **Forges & CI-CD** — Héberger le code et exécuter ce qui le construit, le teste et le livre — la forge, le serveur de CI, et le déploiement depuis Git.
 - **Formats de fichiers et de tables** — Comment la donnée est rangée sur disque ou sur stockage objet — le format de fichier qui décide de la vitesse de lecture, le format de table posé par-dessus qui apporte transactions et time travel.
 - **Infrastructure & Ops** — Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
 - **Ingestion de données** — Amener la donnée d'une source — base, API, fichier, journal — jusqu'à sa destination, sans la remodeler, et savoir la recharger sans tout relire.

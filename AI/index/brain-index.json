@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 943,
+  "count": 950,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -334,15 +334,22 @@
     "ci-cd": [
       "Argo CD",
       "CI-CD pour le ML",
+      "Comparatif - CI-CD auto-hébergé",
       "DevOps",
       "Du Compose à Kubernetes — quand changer d'échelle",
+      "Forgejo",
+      "Forges & CI-CD",
       "GitHub Actions",
+      "GitLab CE",
       "Gitleaks",
       "Grype",
+      "Jenkins",
+      "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Rule - Packaging démo",
       "Rule - Qualité stricte",
       "Semgrep",
-      "Trivy"
+      "Trivy",
+      "Woodpecker CI"
     ],
     "class-imbalance": [
       "Classification de texte",
@@ -544,11 +551,13 @@
       "Kubernetes",
       "Modal",
       "Pattern - Stack démo ML locale multi-services",
+      "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Podman",
       "Rule - Packaging démo",
       "Sandboxing de code généré",
       "Traefik",
       "Trivy",
+      "Woodpecker CI",
       "k3s",
       "testcontainers"
     ],
@@ -2957,6 +2966,7 @@
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
+      "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Quarto",
       "Rule - Packaging démo",
       "Rule - Structure de projet",
@@ -3163,15 +3173,20 @@
       "Caddy",
       "Choisir un modèle d'embedding",
       "Comparatif - BI auto-hébergée",
+      "Comparatif - CI-CD auto-hébergé",
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Dataiku",
       "Debezium",
       "Dependency-Track",
       "EMQX",
+      "Forgejo",
+      "Forges & CI-CD",
       "Gestion des secrets",
+      "GitLab CE",
       "HAProxy",
       "Infinity",
+      "Jenkins",
       "Kafka",
       "Keycloak",
       "Kubeflow",
@@ -3191,6 +3206,7 @@
       "OpenBao",
       "OpenMAIC",
       "OpenTelemetry",
+      "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Podman",
       "Prometheus",
       "RAG documentaire on-prem - clé en main ou assemblé",
@@ -3207,6 +3223,7 @@
       "Uptime Kuma",
       "VictoriaMetrics",
       "Web-Check",
+      "Woodpecker CI",
       "Zabbix",
       "croc",
       "k3s",
@@ -3436,6 +3453,7 @@
       "Dependency-Track",
       "Gitleaks",
       "Grype",
+      "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Semgrep",
       "Supply chain logicielle et SBOM",
       "Sécurité",
@@ -3755,6 +3773,9 @@
       "Aider",
       "Bruno",
       "Comparatif - Clients d'API",
+      "Forgejo",
+      "Forges & CI-CD",
+      "GitLab CE",
       "Notebooks",
       "Notebooks-as-code",
       "jupytext",
@@ -5419,7 +5440,8 @@
       ],
       "complements": [
         "[[Redis Insight]]",
-        "[[Apache Superset]]"
+        "[[Apache Superset]]",
+        "[[GitLab CE]]"
       ],
       "maturite": "production"
     },
@@ -5605,7 +5627,9 @@
         "[[lakeFS]]",
         "[[Open WebUI]]",
         "[[Metabase]]",
-        "[[Apache Superset]]"
+        "[[Apache Superset]]",
+        "[[GitLab CE]]",
+        "[[Forgejo]]"
       ],
       "maturite": "production"
     },
@@ -10180,38 +10204,6 @@
       "maturite": null
     },
     {
-      "path": "DevOps/Argo CD.md",
-      "nom": "Argo CD",
-      "alias": [
-        "argocd",
-        "argo-cd",
-        "argo cd",
-        "argo"
-      ],
-      "role": "brique",
-      "categorie": "devops/ci",
-      "famille": "plateforme",
-      "langage": "Go",
-      "domaines": null,
-      "pitch": "Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé).",
-      "tags": [
-        "ci-cd",
-        "kubernetes",
-        "gitops",
-        "self-hosted"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[Kubernetes]]",
-        "[[Helm]]",
-        "[[GitHub Actions]]",
-        "[[Traefik]]",
-        "[[Nginx]]",
-        "[[Keycloak]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "DevOps/Conteneurs & orchestration/Comparatif - Orchestration de conteneurs.md",
       "nom": "Comparatif - Orchestration de conteneurs",
       "alias": null,
@@ -10309,7 +10301,11 @@
         "[[Docker Compose]]",
         "[[GitHub Actions]]",
         "[[Trivy]]",
-        "[[Grype]]"
+        "[[Grype]]",
+        "[[GitLab CE]]",
+        "[[Forgejo]]",
+        "[[Jenkins]]",
+        "[[Woodpecker CI]]"
       ],
       "maturite": "production"
     },
@@ -10362,7 +10358,8 @@
       "complements": [
         "[[Kubernetes]]",
         "[[k3s]]",
-        "[[Argo CD]]"
+        "[[Argo CD]]",
+        "[[GitLab CE]]"
       ],
       "maturite": "production"
     },
@@ -10412,7 +10409,10 @@
         "[[CVAT]]",
         "[[lakeFS]]",
         "[[Kubeflow]]",
-        "[[EMQX]]"
+        "[[EMQX]]",
+        "[[GitLab CE]]",
+        "[[Jenkins]]",
+        "[[Woodpecker CI]]"
       ],
       "maturite": "production"
     },
@@ -10498,7 +10498,114 @@
       "maturite": null
     },
     {
-      "path": "DevOps/GitHub Actions.md",
+      "path": "DevOps/Forges & CI-CD/Argo CD.md",
+      "nom": "Argo CD",
+      "alias": [
+        "argocd",
+        "argo-cd",
+        "argo cd",
+        "argo"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé).",
+      "tags": [
+        "ci-cd",
+        "kubernetes",
+        "gitops",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Kubernetes]]",
+        "[[Helm]]",
+        "[[GitHub Actions]]",
+        "[[Traefik]]",
+        "[[Nginx]]",
+        "[[Keycloak]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Comparatif - CI-CD auto-hébergé.md",
+      "nom": "Comparatif - CI-CD auto-hébergé",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devops/ci",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "ci-cd",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Forgejo.md",
+      "nom": "Forgejo",
+      "alias": [
+        "forgejo"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie.",
+      "tags": [
+        "ci-cd",
+        "version-control",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[GitHub Actions]]",
+        "[[GitLab CE]]",
+        "[[Jenkins]]"
+      ],
+      "complements": [
+        "[[Woodpecker CI]]",
+        "[[Docker]]",
+        "[[Postgres]]",
+        "[[Keycloak]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Forges & CI-CD.md",
+      "nom": "Forges & CI-CD",
+      "alias": [
+        "forge git",
+        "ci-cd",
+        "ci/cd",
+        "forges et ci"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": "Héberger le code et exécuter ce qui le construit, le teste et le livre — la forge, le serveur de CI, et le déploiement depuis Git.",
+      "tags": [
+        "ci-cd",
+        "version-control",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/GitHub Actions.md",
       "nom": "GitHub Actions",
       "alias": [
         "github actions",
@@ -10514,7 +10621,12 @@
       "tags": [
         "ci-cd"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[GitLab CE]]",
+        "[[Forgejo]]",
+        "[[Jenkins]]",
+        "[[Woodpecker CI]]"
+      ],
       "complements": [
         "[[Docker]]",
         "[[Argo CD]]",
@@ -10522,6 +10634,134 @@
         "[[Grype]]",
         "[[Gitleaks]]",
         "[[Semgrep]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/GitLab CE.md",
+      "nom": "GitLab CE",
+      "alias": [
+        "gitlab",
+        "gitlab-ce",
+        "gitlab community edition",
+        "gitlab ce"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Ruby",
+      "domaines": null,
+      "pitch": "Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes.",
+      "tags": [
+        "ci-cd",
+        "version-control",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[GitHub Actions]]",
+        "[[Forgejo]]",
+        "[[Jenkins]]",
+        "[[Woodpecker CI]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Kubernetes]]",
+        "[[Helm]]",
+        "[[Postgres]]",
+        "[[Redis]]",
+        "[[Keycloak]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Jenkins.md",
+      "nom": "Jenkins",
+      "alias": [
+        "jenkins ci",
+        "jenkinsfile"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois.",
+      "tags": [
+        "ci-cd",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[GitHub Actions]]",
+        "[[GitLab CE]]",
+        "[[Forgejo]]",
+        "[[Woodpecker CI]]"
+      ],
+      "complements": [
+        "[[Docker]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Pipelines CI-CD on-prem — runners, secrets et artefacts.md",
+      "nom": "Pipelines CI-CD on-prem — runners, secrets et artefacts",
+      "alias": [
+        {
+          "Pipelines CI/CD on-prem": "runners"
+        },
+        "secrets et artefacts",
+        "ci on-prem",
+        "runner ci",
+        "runners auto-hébergés",
+        "pipeline ci-cd on-prem"
+      ],
+      "role": "notion",
+      "categorie": "devops/ci",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "infra-ops",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "ci-cd",
+        "self-hosted",
+        "container",
+        "supply-chain",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "DevOps/Forges & CI-CD/Woodpecker CI.md",
+      "nom": "Woodpecker CI",
+      "alias": [
+        "woodpecker",
+        "woodpecker-ci"
+      ],
+      "role": "brique",
+      "categorie": "devops/ci",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge.",
+      "tags": [
+        "ci-cd",
+        "self-hosted",
+        "container"
+      ],
+      "alternatives": [
+        "[[GitHub Actions]]",
+        "[[GitLab CE]]",
+        "[[Jenkins]]"
+      ],
+      "complements": [
+        "[[Forgejo]]",
+        "[[Docker]]",
+        "[[Kubernetes]]"
       ],
       "maturite": "production"
     },
@@ -28932,7 +29172,9 @@
         "[[OpenMetadata]]",
         "[[DataHub]]",
         "[[CVAT]]",
-        "[[LibreChat]]"
+        "[[LibreChat]]",
+        "[[GitLab CE]]",
+        "[[Forgejo]]"
       ],
       "maturite": "production"
     },
