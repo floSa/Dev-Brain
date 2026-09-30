@@ -21,6 +21,13 @@ tags: [graph-db]
 - [[JanusGraph]] — une couche de graphe sans stockage propre : Gremlin sur Cassandra, ScyllaDB ou HBase, avec un index externe ; la plus extensible, la plus lourde à exploiter, et sans version stable depuis novembre 2024.
 - [[Dgraph]] — distribuée et en Apache-2.0 pur, partagée par prédicat, avec GraphQL natif ; reprise par Istari Digital en 2025, sans offre managée ni Cypher.
 
+**Pas de fiche ici**, faute d'être éprouvés pour l'on-prem :
+
+- FalkorDB — fork de RedisGraph (abandonné par Redis, fin de support le 2025-01-31), module Redis en SSPL v1 : une offre en service obligerait à ouvrir le code de l'infrastructure. Projet de 2023, société financée par un seed de 3 M$ ; la v6.0.0 du 2026-09-29 est un moteur entièrement réécrit en Rust, sorti la veille du relevé, et un graphe ne se répartit pas sur plusieurs shards.
+- Kùzu — base de graphes embarquée : dépôt archivé par son propriétaire le 2025-10-10, dernière release 0.11.3 ; la société aurait été rachetée par Apple, d'après la presse (heise, 2026-02-16, article non ouvert). Les forks sont jeunes : LadybugDB (actif, équipe non nommée), RyuGraph (sans activité depuis janvier 2026).
+
 ## Voir aussi
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
+- [[Bases de graphes]] — le hub du dossier.
+- [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel.
