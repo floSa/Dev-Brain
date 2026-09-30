@@ -1,0 +1,41 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Clause ajoutée au lot 4 : depuis que
+    # les notions se rangent sur la même `categorie:` que les briques, un filtre
+    # de catégorie seul absorbe les notions du sous-domaine.
+    - role == "brique"
+    - categorie == "devops/conteneur"
+views:
+  - type: table
+    name: Orchestration de conteneurs
+    # Helm n'est pas un concurrent des cinq : il s'installe SUR Kubernetes.
+    # Il reste visible dans la vue suivante, filtrée par le tag `kubernetes`.
+    filters:
+      and:
+        - tags.contains("container")
+    order:
+      - file.name
+      - pitch
+      - famille
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Kubernetes et distributions
+    filters:
+      and:
+        - tags.contains("kubernetes")
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc
