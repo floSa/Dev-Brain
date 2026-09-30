@@ -34,8 +34,11 @@ déclarative **`InferenceService`**, et l'opérateur gère serveur, routes, auto
 rollout. L'intégration **Knative** apporte l'autoscaling au trafic, le **scale-to-zero** — pas
 de coût quand aucune requête n'arrive — et les déploiements canary. Multi-framework
 (scikit-learn, PyTorch, TensorFlow, XGBoost, ONNX, Triton), et désormais serving génératif.
-Né en 2019 comme KFServing sous Kubeflow, renommé KServe en 2022, projet CNCF en incubation
-depuis fin 2025 — gouvernance neutre.
+Né en 2019 comme KFServing sous Kubeflow, sorti de Kubeflow et renommé KServe en 2022, projet CNCF en incubation
+(accepté le 29 septembre 2025, annonce le 11 novembre) — gouvernance neutre. Il reste livré en
+add-on dans les manifests de la distribution Kubeflow (v0.20.0 sur la branche master des manifests, Kubeflow devenu projet CNCF gradué en juillet 2026),
+mais la doc Kubeflow le classe dans l'écosystème, pas parmi ses sous-projets. Version constatée
+le 2026-09-30 : v0.21.0 du 2026-09-25, 6 053 étoiles, Apache-2.0, commits quotidiens.
 
 ## Prendre si / Écarter si
 
@@ -43,8 +46,8 @@ depuis fin 2025 — gouvernance neutre.
 |---|---|
 | Déjà sur Kubernetes : les modèles se déploient et se versionnent comme le reste de l'infra (GitOps, CRD) | Knative et une couche réseau (Istio…) sont à opérer en plus : la courbe d'apprentissage est celle de Kubernetes, pas celle de KServe |
 | Charge variable ou sporadique : le scale-to-zero ne fait payer le GPU que sous trafic | Le scale-from-zero ajoute une latence de démarrage à froid, critique sur un gros modèle GPU |
-| Parc multi-framework à standardiser derrière une abstraction commune | Deux modes de déploiement, Serverless et RawDeployment, aux comportements différents : à choisir tôt |
-| Rollouts progressifs en canary, transformers et explainers branchés dans le graphe de service | |
+| Parc multi-framework à standardiser derrière une abstraction commune | Deux modes de déploiement, Standard et Knative/Serverless dans la terminologie actuelle de la doc (l'ancien nom RawDeployment n'y figure plus dans l'aperçu d'administration), aux comportements différents : à choisir tôt. Le canary par `canaryTrafficPercent` n'est documenté qu'en mode Knative/Serverless |
+| Rollouts progressifs en canary, transformers et explainers branchés dans le graphe de service | Détection de dérive par Alibi Detect : l'exemple officiel (CIFAR-10, journalisation de charge vers Knative Eventing) dépend d'une bibliothèque passée sous BSL 1.1 ; pour un service on-prem, préférer un contrôle de dérive à côté du serving ([[Comparatif - Monitoring de modèles]]) |
 
 ## Mise en œuvre
 

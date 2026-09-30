@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 912 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 916 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -454,7 +454,9 @@
 - **TransformerLens** — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
 
 ### ml/monitoring
+- **Deepchecks** — Bibliothèque Python de validation continue pour le ML — suites de checks sur données et modèles tabulaires, NLP et vision, avec conditions pass/fail rejouables en CI ; cœur AGPL-3.0, monitoring auto-hébergé limité à un modèle, évaluation de LLM et fonctions premium commerciales.
 - **Evidently** — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.
+- **NannyML** — Bibliothèque Python open source d'estimation de performance sans vérité terrain (CBPE, DLE) et de détection de dérive univariée et multivariée sur données tabulaires — édition libre figée depuis juillet 2025, fonctions avancées réservées à NannyML Cloud.
 
 ### ml/nlp
 - **GLiNER** — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
@@ -1225,6 +1227,9 @@
 ### ml/interpretabilite
 - **Comparatif - Explicabilité** — —
 
+### ml/monitoring
+- **Comparatif - Monitoring de modèles** — —
+
 ### ml/nlp
 - **Comparatif - NLP** — —
 
@@ -1340,6 +1345,7 @@
 - **ML Engineering** — Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.
 - **MLOps** — Mettre un modèle en production et savoir, ensuite, s'il marche encore.
 - **Modèles de langage** — Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.
+- **Monitoring de modèles** — Savoir qu'un modèle déployé se dégrade avant que ses utilisateurs ne le disent — dérive, performance sans étiquettes, tests avant mise en production.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Non supervisé** — Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.
