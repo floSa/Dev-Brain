@@ -63,7 +63,7 @@ complète « dbt » est un binaire sous licence produit ; « dbt Core » n'y dé
 - **2026-06-01** — clôture de la fusion. Le code de Fusion est relicencié **Apache-2.0** et versé dans `dbt-core` (le dépôt `dbt-fusion` est archivé) ; `dbt-labs/dbt-core` redirige vers `dbt-labs/dbt`, dont `main` porte le code Rust.
 - **2026-09-14** — dbt 2.0.0 ; la v1 continue sur la branche `1.latest`. 1.13 sera la **dernière mineure** de la série 1.x, 1.12 est en support actif jusqu'au 2027-07-15, avec un support critique de « plusieurs (3-5) ans » sans date d'arrêt fixée.
 
-Deux sources se contredisent sur le lignage colonne : la feuille de route de juin 2026 le range derrière `dbt login`, la documentation du 2026-09-28 le dit utilisable **sans compte** dans la distribution complète. À revérifier avant de le promettre à un client.
+Deux sources se contredisent sur le lignage colonne : la feuille de route de juin 2026 le range derrière `dbt login`, la documentation du 2026-09-28 le dit utilisable **sans compte** — à revérifier avant de le promettre.
 
 ## Limites à connaître
 
@@ -95,7 +95,6 @@ Deux sources se contredisent sur le lignage colonne : la feuille de route de jui
 - Documentation — https://docs.getdbt.com/
 - Dépôt — https://github.com/dbt-labs/dbt-core
 - Documentation — https://www.getdbt.com/licenses-faq
-- Article — https://docs.getdbt.com/blog/dbt-core-v2-is-here
 
 ## Voir aussi
 
@@ -103,3 +102,4 @@ Deux sources se contredisent sur le lignage colonne : la feuille de route de jui
 - [[Comparatif - Transformation SQL]] — ce qui départage dbt Core et SQLMesh
 - [[ELT vs ETL & idempotence]] — l'ordre d'assemblage dont dbt est le T
 - [[Architecture médaillon]] — les couches que les modèles dbt raffinent
+- [[Modélisation dimensionnelle]] — les tables de faits et de dimensions que dbt construit et historise (snapshots en SCD de type 2)

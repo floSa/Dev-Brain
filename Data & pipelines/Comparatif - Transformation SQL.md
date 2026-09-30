@@ -45,3 +45,4 @@ tags: [data-transformation, data-pipeline]
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
 - [[Data & pipelines]] — le hub du dossier.
 - [[ELT vs ETL & idempotence]] — l'ordre d'assemblage dont ces outils sont le T.
+- [[Modélisation dimensionnelle]] — ce que ces outils construisent : faits, dimensions, dimensions à historique.
