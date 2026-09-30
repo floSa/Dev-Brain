@@ -12411,7 +12411,7 @@
       "famille": "plateforme",
       "langage": "TypeScript",
       "domaines": null,
-      "pitch": "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.",
+      "pitch": "Constructeur visuel d'agents et de chaînes LLM (Apache-2.0 hors dossier enterprise, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; dépôt archivé depuis le 2026-08-13, sans correctifs à attendre.",
       "tags": [
         "llm",
         "low-code",
@@ -12423,7 +12423,7 @@
         "[[Dify]]"
       ],
       "complements": [],
-      "maturite": "production"
+      "maturite": "deprecated"
     },
     {
       "path": "LLM & IA générative/Headroom.md",
