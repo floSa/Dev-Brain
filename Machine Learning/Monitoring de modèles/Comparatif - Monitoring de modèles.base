@@ -1,0 +1,20 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Les notions du sous-domaine
+    # (Data drift, Monitoring de modèle en production) portent la même categorie.
+    - role == "brique"
+    - categorie == "ml/monitoring"
+views:
+  - type: table
+    name: Monitoring de modèles
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
