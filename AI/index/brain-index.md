@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 855 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 858 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1030,6 +1030,9 @@
 ### storage/objet
 - **Stockage objet et API S3** — domaines : data-eng, mlops, infra-ops · alias : API S3, compatibilité S3, S3-compatible, choisir un stockage objet on-prem
 
+### web/proxy
+- **Reverse proxy et TLS** — domaines : infra-ops, mlops · alias : reverse proxy, terminaison tls, tls interne, autorité de certification interne, gateway api et ingress
+
 ## Comparatifs — ce qui départage plusieurs briques
 
 ### automation/no-code
@@ -1184,6 +1187,9 @@
 - **Comparatif - Apps data & démos ML** — —
 - **Comparatif - Frontends web légers** — —
 
+### web/proxy
+- **Comparatif - Reverse proxies** — —
+
 ## Patterns — architectures éprouvées
 
 ### (sans catégorie)
@@ -1257,6 +1263,7 @@
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
+- **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
 - **Runtimes** — Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.

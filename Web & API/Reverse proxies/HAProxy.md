@@ -77,4 +77,6 @@ Répartiteur de charge et reverse proxy L4 et L7 en C, dont Willy Tarreau est le
 
 ## Voir aussi
 
-- [[Web & API]] — le hub du domaine
+- [[Reverse proxies]] — le hub du sous-domaine
+- [[Comparatif - Reverse proxies]] — ce qui départage les quatre proxys : configuration, découverte, certificats, performance, exploitation
+- [[Reverse proxy et TLS]] — la notion : terminaison TLS, ACME contre autorité interne, en-têtes, Ingress et Gateway API

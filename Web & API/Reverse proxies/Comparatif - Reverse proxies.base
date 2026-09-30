@@ -1,0 +1,35 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # du sous-domaine hors de la vue (cf. Comparatif - Orchestration de conteneurs).
+    - role == "brique"
+    - categorie == "web/proxy"
+views:
+  - type: table
+    name: Reverse proxies
+    order:
+      - file.name
+      - pitch
+      - famille
+      - scaling
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Répartition de charge
+    filters:
+      and:
+        - tags.contains("load-balancer")
+    order:
+      - file.name
+      - pitch
+      - hosted
+      - scaling
+      - licence_type
+    sort:
+      - property: file.name
+        direction: asc

@@ -78,4 +78,6 @@ Licence **Apache-2.0**. Le README présente Caddy comme un projet de ZeroSSL, so
 
 ## Voir aussi
 
-- [[Web & API]] — le hub du domaine
+- [[Reverse proxies]] — le hub du sous-domaine
+- [[Comparatif - Reverse proxies]] — ce qui départage les quatre proxys : configuration, découverte, certificats, performance, exploitation
+- [[Reverse proxy et TLS]] — la notion : terminaison TLS, ACME contre autorité interne, en-têtes, Ingress et Gateway API
