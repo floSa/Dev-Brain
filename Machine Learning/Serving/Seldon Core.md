@@ -34,14 +34,15 @@ modèle, elle compose des **graphes d'inférence** multi-étapes — transformer
 combiners, détecteurs de drift, explainers — déployés comme un seul service. Multi-framework,
 elle s'appuie sur **MLServer**, son serveur d'inférence de bas niveau au protocole V2,
 compatible KServe. Brique historique du serving ML sur Kubernetes, et co-créatrice de KServe.
-Deux générations coexistent, Core v1 et v2/MLServer, aux architectures différentes.
+Deux générations coexistent, Core v1 et v2/MLServer, aux architectures différentes : la FAQ de Core 2 place Core 1 en mode maintenance (« no longer actively developed ») et recommande Core 2 pour tout nouveau déploiement. Seldon a été racheté par TrueFoundry (annonce du 24 juin 2026) ; le communiqué dit que Seldon Core reste open source sans changement de modèle, sans parler de la licence BSL. Dernière release constatée le 2026-09-30 : Core v1 1.19.0 (2026-01-23), Core v2 2.10.2 (2025-12-19), dépôt à 4 782 étoiles ; aucune activité visible depuis fin janvier 2026.
 
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
 |---|---|
 | Pipelines d'inférence complexes : pré/post-traitement, routage A/B, ensembles, explainers en un seul graphe | Usage en production sous contrainte d'open-source strict : la BSL 1.1 impose une licence commerciale, et l'éligibilité se vérifie avant, pas après |
-| Explicabilité (Alibi Explain) et détection de drift ou d'outliers (Alibi Detect) intégrées au serving | Deux générations aux architectures différentes, Core v1 et v2/MLServer : ne pas mélanger les documentations |
+| Explicabilité (Alibi Explain) et détection de drift ou d'outliers (Alibi Detect) intégrées au serving | Alibi Explain et Alibi Detect sont eux aussi sous BSL 1.1 depuis janvier 2024, avec le même cadre : la détection de dérive branchée au serving hérite de la contrainte de licence, et Alibi Detect n'a plus de commit depuis décembre 2025 (cf. [[Comparatif - Monitoring de modèles]]) |
+| | Deux générations aux architectures différentes, Core v1 et v2/MLServer : ne pas mélanger les documentations |
 | Déjà sur Kubernetes, avec une équipe à l'aise pour opérer une plateforme MLOps complète | Surface opérationnelle large : Kubernetes, réseau et observabilité restent à câbler |
 | Termes BSL acceptés : gratuit hors production, licence commerciale en production | |
 
@@ -51,7 +52,7 @@ Deux générations coexistent, Core v1 et v2/MLServer, aux architectures différ
 - Point d'entrée — un graphe d'inférence déclaré en CRD ; MLServer comme serveur de bas niveau, protocole V2
 - Prérequis — un cluster Kubernetes déjà opéré, et l'éligibilité aux termes BSL vérifiée avant toute mise en production
 - Exécution — self-hébergé sur Kubernetes ; réplicas et graphes répartis sur le cluster
-- Coût — BSL 1.1 depuis le 22 janvier 2024 : gratuit hors production, licence commerciale en production, conversion en Apache-2.0 quatre ans après chaque release. MLServer seul reste Apache-2.0
+- Coût — BSL 1.1 depuis le 22 janvier 2024 : gratuit hors production, licence commerciale en production, conversion en Apache-2.0 quatre ans après chaque release (première conversion le 2028-01-22). La bascule couvre Core v1 à partir de 1.18.0 et Core v2 à partir de 2.7.0 ; les versions antérieures (v1 ≤ 1.17.x, v2 ≤ 2.6.x) et MLServer restent Apache-2.0. L'Additional Use Grant ne couvre que les établissements d'enseignement à but non lucratif pour la production : une entreprise doit passer par une licence commerciale (seldon.io/pricing)
 
 ## Écosystème
 
