@@ -1,0 +1,21 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les quatre
+    # notions de data/fiabilite (contrats, medaillon, ELT, versionnage) hors de la vue.
+    - role == "brique"
+    - categorie == "data/fiabilite"
+views:
+  - type: table
+    name: Qualité de données
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

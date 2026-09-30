@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]"]
+complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[Soda Core]]"]
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
 url_repo: https://github.com/postgres/postgres
@@ -72,6 +72,8 @@ le relationnel. C'est le défaut raisonnable pour une base applicative.
 - [[psycopg2]] — Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3. — le driver DB-API historique, sous la plupart des accès Python à cette base
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dbt-postgres` (1.11.0, 2026-07-16), adaptateur `Trusted` maintenu par dbt Labs ; il n'existe pas en dbt v2.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur d'exécution pris en charge (extra `postgres`) et base d'état recommandée (`state_connection`), à côté du moteur de données.
+- [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — source SQL de la liste de compatibilité officielle de GX (extra `postgresql`).
+- [[Soda Core]] — Vérification de la qualité des données par contrats YAML, exécutée en ligne de commande ou en Python sur PostgreSQL, Trino, DuckDB et une quinzaine d'autres sources ; licence Elastic 2.0 depuis la v4 (source-available), historique et alertes réservés à Soda Cloud. — paquet `soda-postgres` : les contrôles s'exécutent en SQL dans la base.
 
 ## Ressources
 

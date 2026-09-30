@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python / Rust
 alternatives: []
-complements: ["[[Pydantic Settings]]", "[[SQLModel]]"]
+complements: ["[[Pydantic Settings]]", "[[SQLModel]]", "[[pandera]]"]
 tags: [data-validation, type-hints]
 url_docs: https://pydantic.dev/docs/validation/
 url_repo: https://github.com/pydantic/pydantic
@@ -58,6 +58,7 @@ s'appuient dessus pour leurs schémas.
 
 - [[Pydantic Settings]] — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic. — la configuration d'application bâtie sur ce socle
 - [[SQLModel]] — Une couche fine au-dessus de Pydantic et SQLAlchemy : une seule classe typée sert à la fois de modèle de validation et de table ORM, taillée pour FastAPI. — la variante ORM bâtie sur ce socle : un modèle sert de schéma et de table
+- [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — intégration dans les deux sens : un champ `DataFrame[Schema]` dans un modèle Pydantic, ou un modèle Pydantic comme validateur ligne à ligne, au prix d'une performance dégradée sur les gros jeux d'après la documentation.
 
 ## Ressources
 

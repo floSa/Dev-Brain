@@ -46,6 +46,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Orchestrateurs data]]
 - [[Comparatif - Outils EDA - profiling]]
 - [[Comparatif - Parsing de documents]]
+- [[Comparatif - Qualité de données]]
 - [[Comparatif - Scraping]]
 - [[Comparatif - Transformation SQL]]
 - [[Comparatif - Visualisation]]
