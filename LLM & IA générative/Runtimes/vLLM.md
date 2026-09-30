@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[TGI]]", "[[SGLang]]", "[[TensorRT-LLM]]"]
-complements: ["[[Tunix]]"]
+complements: ["[[Tunix]]", "[[Qwen]]", "[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]"]
 tags: [llm, model-serving, inference, gpu]
 url_docs: https://docs.vllm.ai/
 url_repo: https://github.com/vllm-project/vllm
@@ -69,6 +69,10 @@ OpenAI-compatible. Projet hébergé par la PyTorch Foundation depuis 2025.
 ### Compléments
 
 - [[Tunix]] — Bibliothèque Google de post-training de LLM en JAX (Flax NNX) — SFT, préférences (DPO/ORPO), RL (GRPO, PPO, RL agentique) et distillation, pensée TPU et passage à l'échelle ; le pendant JAX/TPU de TRL. — vLLM lui sert de moteur de rollouts pour le RL.
+- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — architectures Qwen3 à Qwen3.5 dans sa documentation des modèles pris en charge.
+- [[Mistral]] — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement. — architectures Mistral3 et MistralLarge3 dans sa documentation ; la carte de Small 4 le recommande.
+- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — architectures Gemma4 dans sa documentation, et une recette dédiée.
+- [[gpt-oss]] — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire. — architecture `GptOssForCausalLM` dans sa documentation.
 
 ## Ressources
 

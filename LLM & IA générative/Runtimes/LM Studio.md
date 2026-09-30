@@ -11,7 +11,7 @@ maturite: production
 langage: 
 scaling: single-node
 alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[SGLang]]", "[[TensorRT-LLM]]"]
-complements: ["[[LM Studio Bionic]]"]
+complements: ["[[LM Studio Bionic]]", "[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]"]
 tags: [llm, local-llm, inference, gpu, quantization]
 url_docs: https://lmstudio.ai/docs
 url_repo: 
@@ -68,6 +68,9 @@ aussi en version **headless** (`llmster`) et en **CLI** (`lms`), pour les serveu
 ### Compléments
 
 - [[LM Studio Bionic]] — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes. — la couche agentique du même éditeur, posée sur ce runtime ; application distincte, pas un mode.
+- [[Mistral]] — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement. — remercié par la carte de Devstral Small 2.
+- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — cité par la documentation Gemma.
+- [[gpt-oss]] — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire. — cité par le README du dépôt gpt-oss.
 
 ## Ressources
 
