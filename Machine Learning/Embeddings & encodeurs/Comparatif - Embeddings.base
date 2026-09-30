@@ -1,0 +1,21 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions qui partagent la categorie.
+    - role == "brique"
+    - categorie == "ml/embeddings"
+views:
+  - type: table
+    name: Outils et modèles d'embedding
+    order:
+      - file.name
+      - famille
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - hosted
+      - scaling
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
