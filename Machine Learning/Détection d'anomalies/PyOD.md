@@ -72,3 +72,4 @@ seul code, plutôt que de miser sur un seul détecteur. Le seuil binaire vient d
 - [[Score et seuil d'alerte]] — passer du score de ses détecteurs à une décision
 - [[Évaluer une détection d'anomalies]] — les métriques à employer pour les comparer sans se tromper
 - [[Jeux de données d'anomalies]] — les jeux publics sur lesquels on le compare
+- [[DeepOD]] — les détecteurs profonds, tabulaires et séries, sous une API construite à sa manière

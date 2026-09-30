@@ -61,3 +61,4 @@ L'apprentissage **en ligne** en Python : les modèles apprennent **un échantill
 
 - [[Socle]] — le hub du domaine
 - [[Data drift]] — ce à quoi River répond, par apprentissage incrémental et détecteurs intégrés
+- [[Détection d'anomalies en ligne]] — la notion qui replace ses détecteurs de flux (Half-Space Trees) face aux autres
