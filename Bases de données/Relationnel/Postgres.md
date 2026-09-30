@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Debezium]]", "[[Apache NiFi]]"]
+complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]", "[[dbt Core]]", "[[SQLMesh]]", "[[Great Expectations]]", "[[Soda Core]]", "[[Airbyte]]", "[[dlt]]", "[[Debezium]]", "[[Apache NiFi]]", "[[OpenMetadata]]", "[[DataHub]]"]
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
 url_repo: https://github.com/postgres/postgres
@@ -78,6 +78,8 @@ le relationnel. C'est le défaut raisonnable pour une base applicative.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination, et source CDC par `pg_replication` (slot logique `pgoutput`, sans Kafka).
 - [[Debezium]] — Capture de changements (CDC) par le journal de transactions : événements par ligne (avant/après) depuis Postgres, MySQL, MariaDB, SQL Server, Oracle et MongoDB, via Kafka Connect, un serveur autonome sans Kafka ou un moteur Java embarqué (Apache-2.0). — source de capture par décodage logique (`wal_level=logical`, `pgoutput`), versions 14 à 18.
 - [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker. — lu et écrit par les processeurs JDBC (`ExecuteSQL`, `QueryDatabaseTable`, `PutDatabaseRecord`).
+- [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — base possible du serveur (PostgreSQL 15 ou plus) et connecteur de base.
+- [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — base possible du serveur et source listée en GA.
 
 ## Ressources
 
