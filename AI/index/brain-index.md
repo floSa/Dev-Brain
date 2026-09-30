@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 844 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 849 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -195,11 +195,15 @@
 - **Penpot** — Alternative open-source (MPL-2.0) et self-hostable à Figma : design d'interface et prototypage collaboratifs basés sur des standards web (SVG), déployable on-prem — pertinent quand la souveraineté des données compte.
 
 ### devops/ci
+- **Argo CD** — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé).
 - **GitHub Actions** — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions.
 
 ### devops/conteneur
 - **Docker** — Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.
 - **Docker Compose** — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling.
+- **Helm** — Gestionnaire de paquets de Kubernetes : un chart décrit, versionne et installe un ensemble de ressources (Apache-2.0, Go, CNCF diplômé).
+- **k3s** — Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem.
+- **Kubernetes** — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter.
 - **Podman** — Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.
 
 ### devtools/cli
@@ -1204,6 +1208,7 @@
 - **Bayésien** — Traiter le paramètre comme une variable aléatoire — une distribution en sortie plutôt qu'un point, au prix d'un a priori assumé et d'un échantillonnage à faire converger.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
 - **Comparatifs** — Ce qui départage plusieurs briques d'un même thème — un tableau par thème, rangé dans le domaine qu'il compare.
+- **Conteneurs & orchestration** — Exécuter des applications en conteneurs, de la machine unique au cluster — le moteur, la pile locale, l'orchestrateur et l'outil qui installe dessus.
 - **Data & pipelines** — Amener la donnée d'où elle est jusqu'à une forme exploitable — la collecter, la mettre en forme, la faire circuler, la regarder.
 - **Data Engineering** — Amener la donnée d'où elle naît jusqu'où elle sert, de façon répétable, traçable et vérifiable.
 - **Data Science** — Comprendre un jeu de données et en tirer un modèle qui répond à une question — explorer, tester, mesurer, expliquer.

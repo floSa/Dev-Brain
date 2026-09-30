@@ -1142,7 +1142,24 @@ axes:
         sous:
           ci: {}
           conteneur:
-            frontiere: "Packaging et deploiement d applications DE CONFIANCE. Distinct de compute/a-la-demande."
+            libelle: "Conteneurs & orchestration"
+            motif: >
+              Ouvert le 2026-09-30, quand le sous-domaine a franchi le seuil
+              (Docker, Docker Compose, Podman, Kubernetes, k3s, puis Helm). Le
+              domaine garde a son niveau les pages de devops/ci (GitHub Actions,
+              Argo CD), ce qui satisfait la condition de non-vidage. Libelle « Conteneurs
+              & orchestration » et non « Conteneurs » seul : le sous-domaine
+              porte le moteur, la pile locale et l orchestrateur, pas seulement
+              l image.
+            frontiere: >
+              Packaging et deploiement d applications DE CONFIANCE : le moteur
+              qui execute une image (Docker, Podman), la pile multi-conteneurs
+              d une machine (Docker Compose), l orchestrateur qui replace et met
+              a l echelle (Kubernetes, k3s) et l outil qui installe sur lui
+              (Helm). Distinct de compute/a-la-demande (code non fiable, isolation
+              microVM), de devops/ci (la livraison : GitHub Actions, Argo CD) et
+              de ml/serving (servir un modele, meme quand il se deploie sur
+              Kubernetes).
 
       - cle: observability
         dossier: "Observabilité"

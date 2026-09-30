@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 844 pages actives.
+> 849 pages actives.
 
 ## Par page
 
@@ -120,6 +120,11 @@
 - liens sortants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[RAG]], [[RAG eval]], [[RAGChecker]], [[Ragas]], [[TruLens]]
 - liens entrants : [[Comparatif - Évaluation LLM]], [[RAGChecker]], [[Évaluation]]
 
+### Argo CD  ·  brique
+- tags : `ci-cd`, `kubernetes`, `gitops`, `self-hosted`
+- liens sortants : [[Conteneurs & orchestration]], [[DevOps]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
+- liens entrants : [[Conteneurs & orchestration]], [[DevOps]], [[GitHub Actions]], [[Helm]], [[Kubernetes]]
+
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
 - liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
@@ -157,8 +162,8 @@
 
 ### BentoML  ·  brique
 - tags : `model-serving`, `inference`
-- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Beszel  ·  brique
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
@@ -408,12 +413,12 @@
 ### Docker  ·  brique
 - tags : `container`
 - liens sortants : [[DevOps]], [[Docker Compose]], [[GitHub Actions]], [[Podman]]
-- liens entrants : [[Beszel]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
+- liens entrants : [[Beszel]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[GitHub Actions]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Web-Check]]
 
 ### Docker Compose  ·  brique
 - tags : `container`
-- liens sortants : [[DevOps]], [[Docker]], [[Podman]]
-- liens entrants : [[DevOps]], [[Docker]], [[Podman]]
+- liens sortants : [[DevOps]], [[Docker]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens entrants : [[Conteneurs & orchestration]], [[Docker]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -577,8 +582,8 @@
 
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
-- liens sortants : [[DevOps]], [[Docker]]
-- liens entrants : [[DevOps]], [[Docker]], [[Rule - Qualité stricte]]
+- liens sortants : [[Argo CD]], [[DevOps]], [[Docker]]
+- liens entrants : [[Argo CD]], [[DevOps]], [[Docker]], [[Rule - Qualité stricte]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -644,6 +649,11 @@
 - tags : `llm`, `llm-observability`, `llm-gateway`, `tracing`
 - liens sortants : [[Comparatif - Observabilité LLM]], [[LLM observability]], [[LangSmith]], [[Langfuse]], [[LiteLLM]], [[Phoenix Arize]]
 - liens entrants : [[Comparatif - Observabilité LLM]], [[LLM observability]], [[LangSmith]], [[Langfuse]], [[Observabilité des LLM]], [[OmniRoute]], [[Phoenix Arize]]
+
+### Helm  ·  brique
+- tags : `kubernetes`
+- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Kubernetes]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Conteneurs & orchestration]], [[Kubernetes]], [[k3s]]
 
 ### Hermes Agent  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -740,6 +750,11 @@
 - liens sortants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[Ruff]], [[papermill]], [[pytest]]
 - liens entrants : [[Marimo]], [[Notebooks]], [[Notebooks-as-code]], [[Quarto]], [[papermill]]
 
+### k3s  ·  brique
+- tags : `container`, `kubernetes`, `self-hosted`
+- liens sortants : [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[Kubernetes]]
+- liens entrants : [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[Kubernetes]]
+
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
 - liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[PyTorch]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[XGBoost]]
@@ -762,8 +777,13 @@
 
 ### KServe  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Feast]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Déploiement de modèles]], [[Feast]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+
+### Kubernetes  ·  brique
+- tags : `container`, `kubernetes`, `self-hosted`
+- liens sortants : [[Argo CD]], [[BentoML]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens entrants : [[Argo CD]], [[BentoML]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[Helm]], [[KServe]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1298,7 +1318,7 @@
 ### Podman  ·  brique
 - tags : `container`, `self-hosted`
 - liens sortants : [[DevOps]], [[Docker]], [[Docker Compose]]
-- liens entrants : [[DevOps]], [[Docker]], [[Docker Compose]]
+- liens entrants : [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -1497,8 +1517,8 @@
 
 ### Ray Serve  ·  brique
 - tags : `model-serving`, `inference`, `distributed`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Calcul distribué]], [[Comparatif - Serving de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray]], [[Ray Tune]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### Ray Tune  ·  brique
 - tags : `hyperparameter-tuning`, `distributed`, `bayesian`
@@ -1597,8 +1617,8 @@
 
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[TensorFlow Serving]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]]
 
 ### selectolax  ·  brique
 - tags : `web-scraping`, `document-parsing`
@@ -2315,6 +2335,11 @@
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
+### Conteneurs & orchestration  ·  hub
+- tags : `container`, `kubernetes`
+- liens sortants : [[Argo CD]], [[Docker]], [[Docker Compose]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Seldon Core]], [[k3s]]
+- liens entrants : [[Argo CD]], [[DevOps]], [[Helm]], [[Kubernetes]], [[k3s]]
+
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Flink]], [[Index ANN — internes]], [[Logstash]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
@@ -2342,8 +2367,8 @@
 
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
-- liens sortants : [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[Outils de développement]], [[Podman]], [[testcontainers]]
-- liens entrants : [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]], [[Podman]]
+- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Docker]], [[GitHub Actions]], [[Kubernetes]], [[Outils de développement]], [[testcontainers]]
+- liens entrants : [[Argo CD]], [[Docker]], [[Docker Compose]], [[GitHub Actions]], [[MLOps]], [[Outils de développement]], [[Podman]]
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
@@ -4255,7 +4280,7 @@
 - `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Inférence causale, Statistiques & inférence
 - `cdc` : Change Data Capture (CDC)
 - `chunking` : Chunking strategies, RAG & retrieval
-- `ci-cd` : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
+- `ci-cd` : Argo CD, DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, imbalanced-learn, k-NN, Évaluation de modèles
 - `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
@@ -4271,7 +4296,7 @@
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
-- `container` : Beszel, Daytona, DevOps, Docker, Docker Compose, E2B, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
@@ -4337,6 +4362,7 @@
 - `gan` : GANs, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
+- `gitops` : Argo CD  — pas de page concept dédiée
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation
@@ -4363,7 +4389,7 @@
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
 - `knowledge-graph` : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
-- `kubernetes` : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving  — pas de page concept dédiée
+- `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
@@ -4494,7 +4520,7 @@
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
 - `segmentation` : Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Alertmanager, Argo CD, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Kubernetes, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4573,7 +4599,7 @@
 - `benchmark` (porté par : Choisir un modèle d'embedding, Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
-- `ci-cd` (porté par : DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
+- `ci-cd` (porté par : Argo CD, DevOps, GitHub Actions, Rule - Packaging démo, Rule - Qualité stricte)
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code)
@@ -4581,7 +4607,7 @@
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Daytona, DevOps, Docker, Docker Compose, E2B, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, testcontainers)
+- `container` (porté par : Beszel, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, E2B, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Podman, Rule - Packaging démo, Sandboxing de code généré, k3s, testcontainers)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : PyJWT, Sécurité, croc)
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
@@ -4623,6 +4649,7 @@
 - `foundation-model` (porté par : Chronos, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
+- `gitops` (porté par : Argo CD)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
@@ -4634,7 +4661,7 @@
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
-- `kubernetes` (porté par : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving)
+- `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Flyte, Helm, KServe, Kubernetes, Microsoft Azure Machine Learning, Seldon Core, Serving, k3s)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
@@ -4712,7 +4739,7 @@
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `self-hosted` (porté par : Alertmanager, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, olmOCR)
+- `self-hosted` (porté par : Alertmanager, Argo CD, Automatisation no-code, Beszel, Choisir un modèle d'embedding, Dataiku, Infinity, Kubernetes, Meilisearch, Netdata, Observabilité, OpenMAIC, OpenTelemetry, Podman, Prometheus, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)

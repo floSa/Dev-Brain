@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Go
-alternatives: []
+alternatives: ["[[k3s]]", "[[Kubernetes]]"]
 complements: ["[[Docker]]", "[[Podman]]"]
 tags: [container]
 url_docs: https://docs.docker.com/compose/
@@ -65,7 +65,8 @@ supporté depuis juin 2023.
 
 ### Alternatives
 
-- *Aucune alternative déclarée : le comparatif d'orchestration n'est pas encore écrit.*
+- [[k3s]] — Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem. — le pas suivant quand une seule machine ne suffit plus.
+- [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — l'orchestrateur complet, pour plusieurs équipes ou plusieurs dizaines de services.
 
 ### Compléments
 
