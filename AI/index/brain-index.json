@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 902,
+  "count": 904,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -600,6 +600,8 @@
       "torchvision"
     ],
     "data-catalog": [
+      "Catalogue de données et lignage",
+      "Comparatif - Catalogues et lignage de données",
       "DataHub",
       "OpenMetadata"
     ],
@@ -617,6 +619,7 @@
       "Monitoring de modèle en production"
     ],
     "data-governance": [
+      "Catalogue de données et lignage",
       "Comparatif - Plateformes data & IA",
       "DataHub",
       "DataRobot",
@@ -641,6 +644,8 @@
       "Data leakage"
     ],
     "data-lineage": [
+      "Catalogue de données et lignage",
+      "Comparatif - Catalogues et lignage de données",
       "DataHub",
       "OpenLineage",
       "OpenMetadata"
@@ -6228,6 +6233,55 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Catalogue de données et lignage.md",
+      "nom": "Catalogue de données et lignage",
+      "alias": [
+        "catalogue de données",
+        "data catalog",
+        "metadata catalog",
+        "catalogue de métadonnées",
+        "lignage de données",
+        "lignage colonne",
+        "column-level lineage",
+        "glossaire métier",
+        "gestion des métadonnées"
+      ],
+      "role": "notion",
+      "categorie": "data/catalogue",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-catalog",
+        "data-lineage",
+        "data-governance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Comparatif - Catalogues et lignage de données.md",
+      "nom": "Comparatif - Catalogues et lignage de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/catalogue",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-catalog",
+        "data-lineage"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Comparatif - Outils EDA - profiling.md",
