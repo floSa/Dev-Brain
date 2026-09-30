@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Java
 scaling: distributed
-alternatives: []
+alternatives: ["[[Apache NiFi]]"]
 complements: ["[[Elasticsearch]]", "[[Beats]]"]
 tags: [logging, data-pipeline]
 url_docs: https://www.elastic.co/docs/get-started
@@ -36,6 +36,11 @@ pas seulement des logs. Le cœur est écrit en Java et en Ruby, exécuté sur JR
 sous Apache-2.0 hors du dossier `x-pack`, qui est sous Elastic License ; les binaires `-oss`
 n'embarquent que le code Apache-2.0.
 
+Relevé le 2026-09-30 : **9.5.4** du 2026-09-15 (8.19.22 du 2026-09-23 sur la branche 8), environ 14 950
+étoiles, dernier commit du jour. Le fichier `LICENSE.txt` du dépôt dit toujours Apache-2.0 hors `x-pack`, Elastic License dans `x-pack`, et
+deux jeux de binaires ; les binaires `-oss` existent encore pour la 9.5.4 (vérifié le même jour). L'ajout de l'AGPLv3 d'août 2024
+ne touche qu'Elasticsearch et Kibana, pas Logstash d'après la FAQ des licences d'Elastic, lue par résumé.
+
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
@@ -56,7 +61,7 @@ n'embarquent que le code Apache-2.0.
 
 ### Alternatives
 
-- *Aucune alternative déclarée : aucun autre collecteur n'est fiché dans `data/ingestion`.*
+- [[Apache NiFi]] — Plateforme de flux de données à interface graphique : des centaines de processeurs (fichiers, SFTP, JDBC, MQTT, syslog, Kafka…) reliés par des files avec contre-pression, provenance de chaque donnée et livraison garantie ; Apache-2.0, JVM, sans broker.
 
 ### Compléments
 
@@ -70,6 +75,7 @@ n'embarquent que le code Apache-2.0.
 
 ## Voir aussi
 
-- [[Data & pipelines]] — le hub du domaine
+- [[Ingestion de données]] — le hub du dossier
+- [[Comparatif - Ingestion de données]] — Logstash y est situé face aux outils d'ingestion généralistes
 - [[Kibana]] — l'interface qui visualise ce que Logstash a alimenté dans Elasticsearch
 - [[Change Data Capture (CDC)]] — autre façon de produire un flux, depuis une base
