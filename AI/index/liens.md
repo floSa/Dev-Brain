@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 825 pages actives.
+> 827 pages actives.
 
 ## Par page
 
@@ -88,12 +88,12 @@
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`
 - liens sortants : [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]]
-- liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Databricks]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]]
+- liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Databricks]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### Apache Ozone  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[Ceph]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[Ceph]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]]
+- liens sortants : [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Ceph]], [[Comparatif - Stockage objet]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### Apache Solr  ·  brique
 - tags : `search`, `distributed`
@@ -127,8 +127,8 @@
 
 ### AWS S3  ·  brique
 - tags : `object-storage`
-- liens sortants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Metaflow]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
+- liens sortants : [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[Metaflow]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### AWS SageMaker  ·  brique
 - tags : `ml-platform`, `model-serving`, `model-registry`, `ml-pipeline`, `automl`, `distributed`
@@ -202,8 +202,8 @@
 
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
@@ -242,8 +242,8 @@
 
 ### Cloudflare R2  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### cloudscraper  ·  brique
 - tags : `web-scraping`
@@ -537,8 +537,8 @@
 
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[Métriques, logs et traces]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[Métriques, logs et traces]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]]
 
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
@@ -942,8 +942,8 @@
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]], [[croc]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
@@ -1122,8 +1122,8 @@
 
 ### OpenStack Swift  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[Apache Ozone]], [[Ceph]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[Apache Ozone]], [[Ceph]], [[SeaweedFS]], [[Stockage]]
+- liens sortants : [[Apache Ozone]], [[Ceph]], [[Comparatif - Stockage objet]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Apache Ozone]], [[Ceph]], [[Comparatif - Stockage objet]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### OpenTelemetry  ·  brique
 - tags : `observability`, `metrics`, `logging`, `tracing`, `self-hosted`
@@ -1482,8 +1482,8 @@
 
 ### RustFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[Apache Ozone]], [[Ceph]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]]
+- liens sortants : [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Apache Ozone]], [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### SAELens  ·  brique
 - tags : `explainability`, `llm`
@@ -1532,8 +1532,8 @@
 
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2150,6 +2150,11 @@
 - liens sortants : [[Comparatif - Solveurs d'optimisation.base]], [[Comparatifs]], [[PuLP]]
 - liens entrants : [[Comparatifs]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]]
 
+### Comparatif - Stockage objet  ·  comparatif
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet.base]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+
 ### Comparatif - Suivi d'expériences ML  ·  comparatif
 - tags : `experiment-tracking`, `model-registry`
 - liens sortants : [[Aim]], [[ClearML]], [[Comet]], [[Comparatif - Suivi d'expériences ML.base]], [[Comparatifs]], [[MLflow]], [[Neptune]], [[TensorBoard]], [[Weights & Biases]]
@@ -2237,8 +2242,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Calcul distribué]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
@@ -2287,7 +2292,7 @@
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
-- liens sortants : [[Observabilité]], [[Réseau]], [[Sécurité]]
+- liens sortants : [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]]
 - liens entrants : —
 
 ### Interfaces & apps data  ·  hub
@@ -2322,7 +2327,7 @@
 
 ### MLOps  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Suivi d'expériences]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[Data Engineering]], [[DevOps]], [[LLM & IA générative]], [[ML Engineering]], [[Machine Learning]], [[Observabilité]], [[Outils de développement]], [[Serving]], [[Stockage]], [[Suivi d'expériences]], [[Web & API]]
 - liens entrants : [[Data Engineering]], [[ML Engineering]]
 
 ### Modèles de langage  ·  hub
@@ -2462,8 +2467,8 @@
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
-- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Data Engineering]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Réseau]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Data Engineering]], [[Garage]], [[Infrastructure & Ops]], [[MLOps]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Réseau]], [[SeaweedFS]], [[Stockage objet et API S3]]
 
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
@@ -3880,6 +3885,11 @@
 - liens sortants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[Ondelettes]], [[Stationarity]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 - liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
 
+### Stockage objet et API S3  ·  notion
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
 - liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Partitionnement & layout de données]]
@@ -4330,7 +4340,7 @@
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
-- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
+- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
@@ -4391,7 +4401,7 @@
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
-- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
+- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3
 - `safety` : AI security, Guardrails, Jailbreaking and defenses  — pas de page concept dédiée
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow, Comparatif - Orchestrateurs data  — pas de page concept dédiée
@@ -4579,7 +4589,7 @@
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
-- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage)
+- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
 - `olap` (porté par : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake)
 - `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
@@ -4612,7 +4622,6 @@
 - `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
-- `s3-compatible` (porté par : Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)

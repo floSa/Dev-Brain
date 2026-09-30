@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 825,
+  "count": 827,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -2127,13 +2127,15 @@
       "Apache Ozone",
       "Ceph",
       "Cloudflare R2",
+      "Comparatif - Stockage objet",
       "Garage",
       "MinIO",
       "OpenStack Swift",
       "Pattern - Stack démo ML locale multi-services",
       "RustFS",
       "SeaweedFS",
-      "Stockage"
+      "Stockage",
+      "Stockage objet et API S3"
     ],
     "object-tracking": [
       "OpenCV",
@@ -2699,12 +2701,14 @@
       "Apache Ozone",
       "Ceph",
       "Cloudflare R2",
+      "Comparatif - Stockage objet",
       "Garage",
       "MinIO",
       "OpenStack Swift",
       "RustFS",
       "SeaweedFS",
-      "Stockage"
+      "Stockage",
+      "Stockage objet et API S3"
     ],
     "safety": [
       "AI security",
@@ -24859,6 +24863,24 @@
       "maturite": "production"
     },
     {
+      "path": "Stockage/Comparatif - Stockage objet.md",
+      "nom": "Comparatif - Stockage objet",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "storage/objet",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Stockage/Garage.md",
       "nom": "Garage",
       "alias": [
@@ -24994,6 +25016,33 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Stockage/Stockage objet et API S3.md",
+      "nom": "Stockage objet et API S3",
+      "alias": [
+        "API S3",
+        "compatibilité S3",
+        "S3-compatible",
+        "choisir un stockage objet on-prem"
+      ],
+      "role": "notion",
+      "categorie": "storage/objet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "mlops",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Stockage/Stockage.md",
