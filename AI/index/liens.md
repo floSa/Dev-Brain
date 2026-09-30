@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 921 pages actives.
+> 925 pages actives.
 
 ## Par page
 
@@ -103,7 +103,7 @@
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
 - liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[DataHub]], [[Ingestion de données]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[SQLMesh]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[DataHub]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[DataHub]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[dlt]]
 
 ### Apache Ozone  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -140,6 +140,11 @@
 - liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
 - liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
+### asyncua  ·  brique
+- tags : `opc-ua`, `iiot`, `data-ingestion`
+- liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
+- liens entrants : [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
+
 ### Authelia  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`, `reverse-proxy`
 - liens sortants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Traefik]]
@@ -147,8 +152,8 @@
 
 ### Authentik  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
-- liens sortants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Traefik]]
-- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]], [[Traefik]]
+- liens sortants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[Traefik]]
+- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[Langfuse]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]], [[Traefik]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -487,8 +492,8 @@
 
 ### Docker Compose  ·  brique
 - tags : `container`
-- liens sortants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Podman]], [[Traefik]], [[k3s]]
-- liens entrants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
+- liens sortants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Node-RED]], [[Podman]], [[Traefik]], [[k3s]]
+- liens entrants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Node-RED]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -542,8 +547,8 @@
 
 ### EMQX  ·  brique
 - tags : `mqtt`, `message-broker`, `iiot`, `distributed`, `self-hosted`
-- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[InfluxDB]], [[Kafka]], [[Kubernetes]], [[Mosquitto]], [[NATS]], [[Prometheus]], [[RabbitMQ]], [[TimescaleDB]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[InfluxDB]], [[Kafka]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Prometheus]], [[RabbitMQ]], [[TimescaleDB]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[InfluxDB]], [[Kafka]], [[Kubernetes]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[TimescaleDB]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[Données industrielles]], [[InfluxDB]], [[Kafka]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[TimescaleDB]]
 
 ### evaluate  ·  brique
 - tags : `model-evaluation`, `nlp`, `benchmark`
@@ -803,7 +808,7 @@
 ### InfluxDB  ·  brique
 - tags : `timeseries`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[Postgres]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[EMQX]], [[Grafana]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]]
 
 ### Inspect AI  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `agents`, `benchmark`
@@ -858,7 +863,7 @@
 ### Kafka  ·  brique
 - tags : `message-broker`, `streaming`, `distributed`, `self-hosted`
 - liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Postgres]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[DataHub]], [[Debezium]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[RabbitMQ]], [[Redpanda]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[DataHub]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -1167,8 +1172,8 @@
 
 ### Mosquitto  ·  brique
 - tags : `mqtt`, `message-broker`, `iiot`, `self-hosted`
-- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[EMQX]], [[NATS]], [[RabbitMQ]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[NATS]], [[RabbitMQ]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[NATS]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[NATS]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]]
 
 ### MySQL  ·  brique
 - tags : `relational`
@@ -1183,7 +1188,7 @@
 ### n8n  ·  brique
 - tags : `low-code`, `orchestration`, `agents`
 - liens sortants : [[Activepieces]], [[Airflow]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Dagster]], [[Prefect]], [[Windmill]], [[Zapier]], [[gumloop]]
-- liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Windmill]], [[Zapier]], [[gumloop]]
+- liens entrants : [[Activepieces]], [[Automatisation no-code]], [[Comparatif - Automatisation no-code]], [[Node-RED]], [[Windmill]], [[Zapier]], [[gumloop]]
 
 ### NannyML  ·  brique
 - tags : `model-monitoring`, `data-drift`, `concept-drift`, `model-evaluation`
@@ -1193,7 +1198,7 @@
 ### NATS  ·  brique
 - tags : `message-broker`, `distributed`, `self-hosted`
 - liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers de messages]], [[Debezium]], [[EMQX]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[Prometheus]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Debezium]], [[EMQX]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[Prometheus]], [[RabbitMQ]], [[Redpanda]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
 
 ### Nebula Graph  ·  brique
 - tags : `graph-db`, `distributed`
@@ -1239,6 +1244,11 @@
 - tags : `explainability`, `llm`
 - liens sortants : [[Captum]], [[Comparatif - Explicabilité]], [[HuggingFace]], [[Interprétabilité mécaniste]], [[Probing]], [[Sparse autoencoders]], [[Transformer architectures]], [[TransformerLens]], [[interpreto]]
 - liens entrants : [[Captum]], [[Comparatif - Explicabilité]], [[Interprétabilité]], [[Interprétabilité mécaniste]], [[Probing]], [[Sparse autoencoders]], [[TransformerLens]], [[interpreto]]
+
+### Node-RED  ·  brique
+- tags : `low-code`, `iiot`, `data-ingestion`, `self-hosted`
+- liens sortants : [[Authentik]], [[Comparatif - Brokers MQTT]], [[Docker Compose]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[asyncua]], [[n8n]]
+- liens entrants : [[Authentik]], [[Docker Compose]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[asyncua]]
 
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
@@ -1658,7 +1668,7 @@
 ### RabbitMQ  ·  brique
 - tags : `message-broker`, `distributed`, `self-hosted`
 - liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Debezium]], [[EMQX]], [[Grafana]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Prometheus]], [[Redpanda]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Debezium]], [[EMQX]], [[Grafana]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Prometheus]], [[Redpanda]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[Kafka]], [[Kestra]], [[Kubernetes]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Redpanda]]
 
 ### Ragas  ·  brique
 - tags : `llm`, `llm-eval`, `rag-eval`, `rag`
@@ -2038,7 +2048,7 @@
 ### TimescaleDB  ·  brique
 - tags : `timeseries`, `postgres`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[InfluxDB]], [[Postgres]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[EMQX]], [[InfluxDB]], [[Postgres]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
 
 ### timm  ·  brique
 - tags : `computer-vision`, `cnn`, `vit`, `transfer-learning`, `fine-tuning`, `deep-learning`, `model-hub`
@@ -2248,7 +2258,7 @@
 ### Comparatif - Bases temporelles  ·  comparatif
 - tags : `timeseries`
 - liens sortants : [[Comparatif - Bases temporelles.base]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatifs]], [[Données industrielles]], [[InfluxDB]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]]
 
 ### Comparatif - Bases vectorielles  ·  comparatif
 - tags : `vector-db`
@@ -2262,13 +2272,13 @@
 
 ### Comparatif - Brokers de messages  ·  comparatif
 - tags : `message-broker`, `task-queue`
-- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages.base]], [[Comparatifs]], [[Kafka]], [[Messagerie]], [[NATS]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatifs]], [[Kafka]], [[Messagerie]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages.base]], [[Comparatifs]], [[Données industrielles]], [[Kafka]], [[Messagerie]], [[NATS]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatifs]], [[Kafka]], [[Messagerie]], [[NATS]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
 
 ### Comparatif - Brokers MQTT  ·  comparatif
 - tags : `mqtt`, `message-broker`
-- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT.base]], [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Data & pipelines]], [[EMQX]], [[Kafka]], [[Mosquitto]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[RabbitMQ]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT.base]], [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Données industrielles]], [[EMQX]], [[Kafka]], [[Mosquitto]], [[NATS]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
+- liens entrants : [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[asyncua]]
 
 ### Comparatif - Calcul distribué  ·  comparatif
 - tags : `distributed`, `parallel`, `gpu`, `out-of-core`
@@ -2588,7 +2598,7 @@
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
 - liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache AGE]], [[Apache Cassandra]], [[ArangoDB]], [[Bases de données vectorielles]], [[Bases de graphes]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[Dgraph]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[JanusGraph]], [[Liquibase]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[DataGrip]], [[Données industrielles]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
 
 ### Bases de graphes  ·  hub
 - tags : `graph-db`
@@ -2617,8 +2627,8 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers MQTT]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[DataFrames]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[EMQX]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[Mosquitto]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[lakeFS]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[AI Engineering]], [[Comparatif - Brokers MQTT]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[EMQX]], [[MLOps]], [[Machine Learning]], [[Mosquitto]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers MQTT]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[DataFrames]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[Données industrielles]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[EMQX]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[Mosquitto]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[lakeFS]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[AI Engineering]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[Infrastructure & Ops]], [[MLOps]], [[Machine Learning]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -2655,6 +2665,11 @@
 - liens sortants : [[Comparatif - Parsing de documents]], [[Page to Markdown]], [[Stirling PDF]], [[Web scraping]]
 - liens entrants : [[AI Engineering]], [[Page to Markdown]], [[Stirling PDF]], [[Vision]]
 
+### Données industrielles  ·  hub
+- tags : `mqtt`, `opc-ua`, `iiot`, `message-broker`
+- liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[EMQX]], [[InfluxDB]], [[Ingestion de données]], [[Kafka]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[TimescaleDB]], [[asyncua]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[asyncua]]
+
 ### Embeddings & encodeurs  ·  hub
 - tags : `embeddings`, `semantic-search`, `retrieval`, `model-serving`, `inference`
 - liens sortants : [[Bases de données]], [[Bases de données vectorielles]], [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[FastEmbed]], [[Infinity]], [[LLM & IA générative]], [[Qwen3-Embedding]], [[Text Embeddings Inference]], [[bge-m3]], [[bge-reranker]], [[embeddings]], [[sentence-transformers]]
@@ -2677,13 +2692,13 @@
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
-- liens sortants : [[DevOps]], [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[DevOps]], [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]], [[Web & API]]
 - liens entrants : —
 
 ### Ingestion de données  ·  hub
 - tags : `data-ingestion`, `data-pipeline`, `cdc`, `logging`
 - liens sortants : [[Airbyte]], [[Apache NiFi]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[Messagerie]], [[Orchestration]], [[SQLMesh]], [[connectorx]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Debezium]], [[Logstash]], [[connectorx]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Debezium]], [[Données industrielles]], [[Logstash]], [[connectorx]], [[dlt]]
 
 ### Interfaces & apps data  ·  hub
 - tags : `data-app`, `ml-demo`, `dashboard`, `interactive-viz`
@@ -2712,8 +2727,8 @@
 
 ### Messagerie  ·  hub
 - tags : `message-broker`, `task-queue`, `streaming`
-- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Debezium]], [[EMQX]], [[Flink]], [[Kafka]], [[Mosquitto]], [[NATS]], [[Orchestration]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Ingestion de données]], [[Kafka]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
+- liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Flink]], [[Kafka]], [[Mosquitto]], [[NATS]], [[Orchestration]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Données industrielles]], [[Ingestion de données]], [[Kafka]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
 
 ### ML Engineering  ·  hub
 - tags : —
@@ -3078,7 +3093,7 @@
 ### Architecture pilotée par les événements  ·  notion
 - tags : `event-driven`, `message-broker`, `idempotence`
 - liens sortants : [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers de messages]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Messagerie]], [[NATS]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]], [[Temporal]]
-- liens entrants : [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[EMQX]], [[Kafka]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[RabbitMQ]], [[Redpanda]]
+- liens entrants : [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[EMQX]], [[Kafka]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
 
 ### Architectures CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -3763,7 +3778,7 @@
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
 - liens sortants : [[Détection d'outliers multivariée]], [[Forecasting framing]], [[Imputation des valeurs manquantes]], [[Regression metrics]], [[STUMPY]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[lifelines]]
-- liens entrants : [[Séries temporelles]], [[Time series anomaly detection]]
+- liens entrants : [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Séries temporelles]], [[Time series anomaly detection]]
 
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -4095,6 +4110,11 @@
 - liens sortants : [[Context engineering]], [[Inference optimization]], [[LLM caching]]
 - liens entrants : [[Context engineering]], [[Inference optimization]], [[LLM & IA générative]], [[LLM caching]], [[LLM observability]], [[Passerelles]], [[Runtimes]], [[SGLang]]
 
+### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
+- tags : `mqtt`, `opc-ua`, `iiot`, `networking`
+- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Node-RED]], [[asyncua]]
+
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[PyTorch]], [[Quantization]], [[Small Language Models]]
@@ -4193,7 +4213,7 @@
 ### Reverse proxy et TLS  ·  notion
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `kubernetes`, `self-hosted`
 - liens sortants : [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[Grafana]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[k3s]]
-- liens entrants : [[Authentification]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Gestion des secrets]], [[HAProxy]], [[Nginx]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
+- liens entrants : [[Authentification]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Gestion des secrets]], [[HAProxy]], [[Nginx]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -4358,7 +4378,7 @@
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
 - liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Partitionnement & layout de données]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Avro]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Flink]], [[Messagerie]], [[Partitionnement & layout de données]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Avro]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Flink]], [[Messagerie]], [[Partitionnement & layout de données]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
 
 ### Structured outputs  ·  notion
 - tags : `structured-output`, `llm`, `tool-use`, `data-validation`
@@ -4448,7 +4468,7 @@
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Autoencodeurs]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Forecasting framing]], [[Imbalanced classification]], [[Maintenance prédictive et RUL]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]]
-- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[STUMPY]], [[Séries temporelles]], [[Traitement du signal]]
+- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[Traitement du signal]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
@@ -4670,7 +4690,7 @@
 - `data-contract` : Comparatif - Qualité de données, Contrats de données & qualité, DataHub, Fiabilité des données, Great Expectations, Soda Core
 - `data-drift` : Comparatif - Monitoring de modèles, Data drift, Deepchecks, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `data-governance` : Catalogue de données et lignage, Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
-- `data-ingestion` : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, dlt  — pas de page concept dédiée
+- `data-ingestion` : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, asyncua, dlt  — pas de page concept dédiée
 - `data-leakage` : Data leakage
 - `data-lineage` : Catalogue de données et lignage, Comparatif - Catalogues et lignage de données, DataHub, OpenLineage, OpenMetadata
 - `data-modeling` : Architecture médaillon, Modélisation dimensionnelle  — pas de page concept dédiée
@@ -4742,7 +4762,7 @@
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : Architecture pilotée par les événements, ELT vs ETL & idempotence, Fiabilité des données, Ingestion incrémentale et curseurs, Orchestration, Stream processing
 - `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
-- `iiot` : EMQX, Mosquitto  — pas de page concept dédiée
+- `iiot` : Données industrielles, EMQX, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, asyncua  — pas de page concept dédiée
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
@@ -4776,7 +4796,7 @@
 - `local-llm` : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
 - `logging` : Beats, Ingestion de données, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
-- `low-code` : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
+- `low-code` : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector  — pas de page concept dédiée
 - `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan  — pas de page concept dédiée
@@ -4786,7 +4806,7 @@
 - `mcp` : Activepieces, Agents de code, Assistants, Claude Agent SDK, Cline, Comparatif - Automatisation no-code, Deep Agents, GitDiagram, Graphify, Headroom, Hermes Agent, LLM & IA générative, LM Studio Bionic, OpenClaw, OpenViking, PraisonAI, ai-memory, fastmcp, mcp-protocol, mcpjam, open_deep_research, smolagents
 - `media-player` : Médias, SmartTube  — pas de page concept dédiée
 - `memory-optimization` : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth  — pas de page concept dédiée
-- `message-broker` : Architecture pilotée par les événements, Comparatif - Brokers MQTT, Comparatif - Brokers de messages, EMQX, Kafka, Messagerie, Mosquitto, NATS, RabbitMQ, Redpanda  — pas de page concept dédiée
+- `message-broker` : Architecture pilotée par les événements, Comparatif - Brokers MQTT, Comparatif - Brokers de messages, Données industrielles, EMQX, Kafka, Messagerie, Mosquitto, NATS, RabbitMQ, Redpanda  — pas de page concept dédiée
 - `metric-learning` : Metric learning & ré-identification
 - `metrics` : Beszel, Grafana, Métriques, logs et traces, Netdata, Observabilité, OpenTelemetry, Prometheus, VictoriaMetrics, Zabbix  — pas de page concept dédiée
 - `migration` : Alembic, Comparatif - Migrations de schéma, Flyway, Liquibase, Migrations de schéma
@@ -4804,7 +4824,7 @@
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
 - `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
 - `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
-- `mqtt` : Comparatif - Brokers MQTT, EMQX, Mosquitto  — pas de page concept dédiée
+- `mqtt` : Comparatif - Brokers MQTT, Données industrielles, EMQX, Mosquitto, Protocoles de l'atelier - MQTT, OPC UA et Modbus
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
 - `multi-armed-bandit` : Exploration vs exploitation, Multi-armed bandits  — pas de page concept dédiée
 - `multi-output` : Régression et classification multi-sorties
@@ -4813,7 +4833,7 @@
 - `multivariate` : MANOVA et tests multivariés  — pas de page concept dédiée
 - `mutual-information` : Mutual information, Théorie de l'information
 - `ner` : Comparatif - NLP, Construction de graphes de connaissances, GLiNER, Label Studio, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
-- `networking` : Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
+- `networking` : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
 - `neural-rendering` : Rendu neuronal 3D & estimation de profondeur  — pas de page concept dédiée
 - `nlp` : BM25, Classification de texte, Comparatif - NLP, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLP, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem, Théorie de l'apprentissage
@@ -4828,6 +4848,7 @@
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake  — pas de page concept dédiée
+- `opc-ua` : Données industrielles, Protocoles de l'atelier - MQTT, OPC UA et Modbus, asyncua
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
 - `optimization` : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
@@ -4896,7 +4917,7 @@
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, EMQX, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, Meilisearch, Mosquitto, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, EMQX, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, Meilisearch, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -4994,7 +5015,7 @@
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Catalogue de données et lignage, Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
-- `data-ingestion` (porté par : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, dlt)
+- `data-ingestion` (porté par : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, asyncua, dlt)
 - `data-modeling` (porté par : Architecture médaillon, Modélisation dimensionnelle)
 - `data-pipeline` (porté par : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt)
 - `data-transformation` (porté par : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core)
@@ -5038,7 +5059,7 @@
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
-- `iiot` (porté par : EMQX, Mosquitto)
+- `iiot` (porté par : Données industrielles, EMQX, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, asyncua)
 - `in-memory` (porté par : Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
@@ -5061,14 +5082,14 @@
 - `load-balancer` (porté par : HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
 - `local-llm` (porté par : Assistants, Comparatif - Exécution & serving LLM, LM Studio, LM Studio Bionic, Ollama, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Runtimes, Small Language Models, Superwhisper, Vanna, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Beats, Ingestion de données, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry)
-- `low-code` (porté par : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
+- `low-code` (porté par : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector)
 - `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
-- `message-broker` (porté par : Architecture pilotée par les événements, Comparatif - Brokers MQTT, Comparatif - Brokers de messages, EMQX, Kafka, Messagerie, Mosquitto, NATS, RabbitMQ, Redpanda)
+- `message-broker` (porté par : Architecture pilotée par les événements, Comparatif - Brokers MQTT, Comparatif - Brokers de messages, Données industrielles, EMQX, Kafka, Messagerie, Mosquitto, NATS, RabbitMQ, Redpanda)
 - `metrics` (porté par : Beszel, Grafana, Métriques, logs et traces, Netdata, Observabilité, OpenTelemetry, Prometheus, VictoriaMetrics, Zabbix)
 - `missing-data` (porté par : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, Imputation des valeurs manquantes, Mécanismes de données manquantes, missingno)
 - `ml-demo` (porté par : Comparatif - Apps data & démos ML, Gradio, Interfaces & apps data, Pattern - Stack démo ML locale multi-services)
@@ -5079,12 +5100,11 @@
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
 - `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
-- `mqtt` (porté par : Comparatif - Brokers MQTT, EMQX, Mosquitto)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)
 - `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models)
 - `multivariate` (porté par : MANOVA et tests multivariés)
-- `networking` (porté par : Réseau, Sniffnet, Web-Check, croc)
+- `networking` (porté par : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
@@ -5129,7 +5149,7 @@
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
-- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, EMQX, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, Meilisearch, Mosquitto, NATS, Netdata, Nginx, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR)
+- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, Apache NiFi, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Dataiku, Debezium, Dependency-Track, EMQX, Gestion des secrets, HAProxy, Infinity, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, Meilisearch, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, OpenBao, OpenMAIC, OpenTelemetry, Podman, Prometheus, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Zabbix, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Avro)
