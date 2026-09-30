@@ -13,8 +13,8 @@ tags: [graph-db]
 
 ## Ce qui départage
 
-- [[Neo4j]] — le plus mûr : Cypher, algorithmes GDS, outillage de viz ; mais Community est mono-instance et la montée en charge reste verticale.
-- [[Nebula Graph]] — distribuée nativement (graphd, storaged, metad, réplication Raft) : trois services à exploiter, et le nombre de partitions se fige à la création.
+- [[Neo4j]] — le plus mûr : Cypher, algorithmes GDS, outillage de viz ; mais Community (GPLv3) est mono-instance et la montée en charge reste verticale ; cluster et sauvegarde en ligne demandent Enterprise.
+- [[Nebula Graph]] — distribuée nativement (graphd, storaged, metad, réplication Raft) : trois services à exploiter, le nombre de partitions se fige à la création, et la Community n'a pas reçu de release depuis la 3.8.0 (mai 2024).
 
 ## Voir aussi
 
