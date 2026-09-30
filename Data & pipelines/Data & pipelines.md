@@ -19,6 +19,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - Un pipeline se juge sur sa **rejouabilité** avant sa vitesse. Rejouer un jour manquant sans dupliquer ni décaler est la propriété qui distingue un pipeline d'un script — cf. [[ELT vs ETL & idempotence]]. C'est le fil du dossier [[Fiabilité des données]], où quatre notions et trois outils de vérification répondent tous à « à quoi peut-on se fier » plutôt qu'à « comment ça tourne » : l'ordre d'assemblage et l'idempotence, le découpage en couches de raffinage ([[Architecture médaillon]]), ce qu'on promet au consommateur ([[Contrats de données & qualité]]), et l'état figé qui rend un résultat reproductible ([[Versionnage de données]]). L'orchestrateur exécute ; il ne garantit rien de tout ça.
 - **Transformer** et **vérifier** sont deux gestes distincts, qu'un même projet porte souvent. La transformation dérive des tables d'autres tables par des modèles versionnés : [[dbt Core]] exécute dans le moteur sans état à héberger, [[SQLMesh]] garde un état et fabrique des environnements virtuels — cf. [[Comparatif - Transformation SQL]], et [[Modélisation dimensionnelle]] pour la forme des tables produites. La vérification, elle, teste des règles connues sur un lot livré ; elle vit dans [[Fiabilité des données]]. Ni l'une ni l'autre ne planifie quoi que ce soit : c'est le rôle d'[[Orchestration]].
 - **Au fil de l'eau, deux pages distinctes que le mot « streaming » confond.** [[Change Data Capture (CDC)]] *produit* le flux — il lit le journal de transactions d'une base et en sort les changements ; [[Stream processing]] le *consomme* — fenêtrage, event-time, watermarks, exactly-once. L'un est de l'ingestion ([[Debezium]] en est l'outil de référence), l'autre du traitement, et leurs pièges n'ont rien à voir.
+- **Décrire** la donnée est un travail distinct de la **garantir**. Un catalogue dit ce qui existe, qui en répond et d'où cela vient ; il n'impose ni contrat ni test. Le lignage se collecte de deux façons, tirée (le catalogue interroge les sources) ou poussée (l'outil qui exécute émet des événements) — cf. [[Catalogue de données et lignage]]. Les fiches [[OpenMetadata]], [[DataHub]] et [[OpenLineage]] sont ici, à côté de l'orchestration qui émet.
 - La **donnée factice** et la **donnée synthétique** sont deux besoins distincts, souvent confondus. [[Faker]] et [[Mimesis]] fabriquent des valeurs plausibles champ par champ, indépendamment les unes des autres — parfait pour peupler des tests. [[SDV]] apprend la distribution jointe du réel — nécessaire dès qu'on veut que les corrélations tiennent. Cf. [[Synthetic data generation]].
 - Le **profilage** ([[ydata-profiling]], [[sweetviz]], [[missingno]]) est le premier geste sur un jeu inconnu, et il précède toute modélisation : cf. [[EDA automatisée & profiling]].
 
@@ -27,6 +28,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - Extraire depuis des pages web → [[Scraping]].
 - Extraire depuis des documents (PDF, Office, scans) → [[Parsing]].
 - Amener la donnée d'une source vers un entrepôt ou un lac : catalogue de connecteurs → [[Airbyte]] (licence Elastic 2.0) ; en code Python → [[dlt]] ; flux de fichiers et de protocoles → [[Apache NiFi]] ; les changements d'une base par son journal → [[Debezium]]. Cf. [[Comparatif - Ingestion de données]], et [[Ingestion incrémentale et curseurs]] pour ce qu'un rechargement rate.
+- Savoir d'où vient une donnée, qui l'utilise et qui en répond : un catalogue complet sans Kafka → [[OpenMetadata]] ; un catalogue par événements, avec Kafka → [[DataHub]] ; le lignage émis par Spark, Flink, dbt ou Airflow, quel que soit le catalogue → [[OpenLineage]] (une spécification, pas un catalogue). Cf. [[Comparatif - Catalogues et lignage de données]], et [[Catalogue de données et lignage]] pour ce qu'un catalogue ne remplace pas.
 - Collecter des logs et des métriques sur des machines, et les transformer avant de les indexer dans [[Elasticsearch]] → [[Beats]] (agents) et [[Logstash]] (pipeline).
 - Charger, filtrer, joindre, agréger en mémoire → [[DataFrames]].
 - Faire tourner tout ça chaque nuit, avec dépendances et reprises → [[Orchestration]].
@@ -50,6 +52,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - [[DataFrames]] · [[Fiabilité des données]] · [[Ingestion de données]] · [[Messagerie]] · [[Orchestration]] · [[Parsing]] · [[Scraping]] · [[Visualisation]]
 
 ### Notions
+- [[Catalogue de données et lignage]] — domaines : data-eng
 - [[EDA automatisée & profiling]] — domaines : data-sci, data-eng
 - [[Partitionnement & layout de données]] — domaines : data-eng
 - [[Stream processing]] — domaines : data-eng
@@ -72,6 +75,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - [[ydata-profiling]] — Profiling EDA en une ligne — génère un rapport HTML exhaustif (types, distributions, manquants, corrélations, alertes) sur DataFrames pandas et Spark.
 
 ### Comparatifs
+- [[Comparatif - Catalogues et lignage de données]]
 - [[Comparatif - Outils EDA - profiling]]
 - [[Comparatif - Transformation SQL]]
 <!-- AUTO:END -->

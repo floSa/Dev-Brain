@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 902 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 904 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -644,6 +644,9 @@
 
 ## Notions — ce qu'il faut comprendre
 
+### data/catalogue
+- **Catalogue de données et lignage** — domaines : data-eng · alias : catalogue de données, data catalog, metadata catalog, catalogue de métadonnées, lignage de données, lignage colonne, column-level lineage, glossaire métier, gestion des métadonnées
+
 ### data/eda
 - **EDA automatisée & profiling** — domaines : data-sci, data-eng · alias : EDA, analyse exploratoire, exploratory data analysis, data profiling, profiling de données
 
@@ -1093,6 +1096,9 @@
 
 ### compute/distribue
 - **Comparatif - Calcul distribué** — —
+
+### data/catalogue
+- **Comparatif - Catalogues et lignage de données** — —
 
 ### data/eda
 - **Comparatif - Outils EDA - profiling** — —

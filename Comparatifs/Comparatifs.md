@@ -43,6 +43,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 
 ### Data & pipelines
 - [[Comparatif - Brokers de messages]]
+- [[Comparatif - Catalogues et lignage de données]]
 - [[Comparatif - Ingestion de données]]
 - [[Comparatif - Manipulation de données]]
 - [[Comparatif - Orchestrateurs data]]
