@@ -13,7 +13,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[LLM & IA générative]] — 74 briques, 6 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]]
 - [[Bases de données]] — 47 briques, 4 sous-domaines
 - [[Statistiques & inférence]] — 10 briques
-- [[Data & pipelines]] — 61 briques, 6 sous-domaines
+- [[Data & pipelines]] — 65 briques, 7 sous-domaines
 - [[Mathématiques]] — 1 brique
 - [[Outils de développement]] — 20 briques, 1 sous-domaine
 - [[Signal & audio]] — 3 briques
