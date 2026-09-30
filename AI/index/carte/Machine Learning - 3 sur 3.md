@@ -1,7 +1,7 @@
 # Machine Learning — carte (3 sur 3)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 81 pages, chacune avec son chemin et une ligne.
+> 78 pages, chacune avec son chemin et une ligne.
 > Couvre : Séries temporelles, Tabulaire, Vision, Évaluation de modèles.
 
 ## Séries temporelles
@@ -11,7 +11,6 @@
 - [[pmdarima]] · brique · `Machine Learning/Séries temporelles/pmdarima.md` — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une…
 - [[Prophet]] · brique · `Machine Learning/Séries temporelles/Prophet.md` — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable…
 - [[statsforecast]] · brique · `Machine Learning/Séries temporelles/statsforecast.md` — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
-- [[STUMPY]] · brique · `Machine Learning/Séries temporelles/STUMPY.md` — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords…
 - [[ARIMA SARIMA]] · notion · `Machine Learning/Séries temporelles/ARIMA SARIMA.md` — Famille de modèles linéaires combinant autorégression (AR), différenciation (I) et moyenne mobile (MA).
 - [[Autocorrelation]] · notion · `Machine Learning/Séries temporelles/Autocorrelation.md` — Corrélation d'une série avec une version d'elle-même décalée de $k$ pas.
 - [[Exponential smoothing]] · notion · `Machine Learning/Séries temporelles/Exponential smoothing.md` — Prévision par moyenne pondérée des observations passées, les poids décroissant exponentiellement vers le passé : le récent compte plus que l'ancien.
@@ -20,9 +19,7 @@
 - [[Foundation models pour séries temporelles]] · notion · `Machine Learning/Séries temporelles/Foundation models pour séries temporelles.md` — Grands modèles pré-entraînés sur d'immenses corpus de séries hétérogènes, utilisables en zero-shot (ou few-shot) sur une série jamais vue, sans entraîner un…
 - [[Hierarchical forecasting]] · notion · `Machine Learning/Séries temporelles/Hierarchical forecasting.md` — Prévoir un ensemble de séries liées par des contraintes d'agrégation : total → régions → magasins, ou produit × géographie.
 - [[Intermittent demand]] · notion · `Machine Learning/Séries temporelles/Intermittent demand.md` — Séries où la demande est sporadique : beaucoup de périodes à zéro entrecoupées de demandes non nulles (pièces détachées, articles à faible rotation).
-- [[Maintenance prédictive et RUL]] · notion · `Machine Learning/Séries temporelles/Maintenance prédictive et RUL.md` — Maintenance prédictive (PdM) : anticiper la défaillance d'un équipement à partir de données de capteurs / de condition, pour intervenir juste avant la panne —…
 - [[Stationarity]] · notion · `Machine Learning/Séries temporelles/Stationarity.md` — Une série est stationnaire quand ses propriétés statistiques (moyenne, variance, structure d'autocovariance) ne changent pas dans le temps.
-- [[Time series anomaly detection]] · notion · `Machine Learning/Séries temporelles/Time series anomaly detection.md` — Repérer les points ou segments d'une série qui s'écartent du comportement normal : pannes de capteurs, fraudes, incidents, ruptures.
 - [[Time series feature engineering]] · notion · `Machine Learning/Séries temporelles/Time series feature engineering.md` — Transformer une série (ou un parc de séries) en table de features exploitable par un modèle ML/global : gradient boosting, réseaux.
 - [[Walk-forward CV]] · notion · `Machine Learning/Séries temporelles/Walk-forward CV.md` — Protocole d'évaluation temporel : avancer l'origine de prévision dans le temps et toujours tester sur du futur.
 - [[Comparatif - Forecasting]] · comparatif · `Machine Learning/Séries temporelles/Comparatif - Forecasting.md` — entraîner un modèle par série, un modèle global, ou n'en entraîner aucun — puis le nombre de séries à couvrir et le budget de calcul, CPU compilé ou GPU.

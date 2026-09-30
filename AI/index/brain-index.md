@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1015 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1021 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -449,6 +449,11 @@
 - **CVAT** — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise.
 - **Label Studio** — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes.
 
+### ml/anomalie
+- **Jeux de données d'anomalies** — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
+- **PyOD** — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
+- **STUMPY** — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
+
 ### ml/apprentissage-profond
 - **accelerate** — Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.
 - **DeepSpeed** — Bibliothèque Microsoft d'optimisation de l'entraînement (et de l'inférence) à grande échelle — ZeRO shardle les états entre GPU pour entraîner des modèles à des dizaines/centaines de milliards de paramètres, avec offload CPU/NVMe, 3D-parallelism et précision mixte.
@@ -511,7 +516,6 @@
 ### ml/non-supervise
 - **hdbscan** — Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le bruit, avec un seul paramètre intuitif (taille minimale de cluster).
 - **PaCMAP** — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et UMAP, et scalable.
-- **PyOD** — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 - **umap-learn** — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en préservant mieux la structure globale que t-SNE et bien plus vite.
 
 ### ml/orchestration
@@ -545,7 +549,6 @@
 - **pmdarima** — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 - **Prophet** — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
 - **statsforecast** — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
-- **STUMPY** — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
 ### ml/serving
 - **BentoML** — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
@@ -908,6 +911,18 @@
 - **Active learning** — domaines : data-sci, ml-eng · alias : Apprentissage actif, active learning, apprentissage actif profond, deep active learning, échantillonnage par incertitude, uncertainty sampling, query by committee, requête par comité, pool-based sampling, sélection d'exemples à étiqueter, core-set, BADGE, BALD, TypiClust, démarrage à froid en apprentissage actif, oracle d'annotation
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
+### ml/anomalie
+- **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
+- **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
+- **Détection hors distribution (OOD)** — domaines : ml-eng, mlops, data-sci · alias : OOD, Out-of-distribution detection, Détection OOD, Entrée hors distribution
+- **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
+- **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
+- **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
+- **Score et seuil d'alerte** — domaines : data-sci, ml-eng, mlops · alias : Seuil d'alerte, Seuillage des scores d'anomalie, Fatigue d'alerte, Taux de fausses alertes
+- **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
+- **Types d'anomalies et régimes de supervision** — domaines : data-sci, ml-eng · alias : Typologie des anomalies, Anomalie ponctuelle contextuelle collective, Outlier novelty OOD, Contamination
+- **Évaluer une détection d'anomalies** — domaines : data-sci, ml-eng · alias : Évaluation de la détection d'anomalies, Point-adjust, Métriques d'anomalies, VUS-PR, AU-PRO
+
 ### ml/apprentissage-profond
 - **Adam optimizer** — domaines : data-sci, ml-eng · alias : Adam, AdamW, adaptive moment estimation, RMSprop, Adagrad, optimiseur adaptatif
 - **Apprentissage contrastif** — domaines : ml-eng, ai-eng · alias : Contrastive learning, apprentissage par contraste, perte contrastive, InfoNCE, NT-Xent, SimCLR, MoCo, CLIP, BYOL, VICReg, SimSiam, SigLIP, négatifs, collapse de représentation, température
@@ -973,6 +988,9 @@
 - **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
 
+### ml/maintenance
+- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+
 ### ml/monitoring
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
 - **Monitoring de modèle en production** — domaines : mlops · alias : model monitoring, monitoring ML, surveillance de modèle, observabilité ML, ML monitoring
@@ -993,17 +1011,12 @@
 - **Clustering evaluation** — domaines : data-sci · alias : Évaluation du clustering, évaluation de clustering, silhouette, indice de silhouette, ARI, Adjusted Rand Index, NMI, AMI, Davies-Bouldin, Calinski-Harabasz, DBCV
 - **Clustering hiérarchique par densité** — domaines : data-sci · alias : Hierarchical DBSCAN, Hierarchical Density-Based Spatial Clustering
 - **DBSCAN** — domaines : data-sci · alias : Density-Based Spatial Clustering, Density-Based Spatial Clustering of Applications with Noise
-- **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
-- **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **Gaussian Mixture Models (GMM)** — domaines : data-sci · alias : GMM, Mélange de gaussiennes, Modèle de mélange gaussien, Mixture models, Mélanges gaussiens
 - **ICA** — domaines : data-sci · alias : Independent Component Analysis, Analyse en composantes indépendantes, ACI, FastICA, Séparation aveugle de sources, Blind source separation
-- **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
 - **K-Means** — domaines : data-sci · alias : K-means, kmeans, K-moyennes, Lloyd, k-means++
 - **k-médoïds (PAM)** — domaines : data-sci · alias : k-medoids, PAM, Partitioning Around Medoids, k-médoïdes, CLARA
-- **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
 - **Manifold learning** — domaines : data-sci · alias : manifold learning, apprentissage de variété, Isomap, LLE, Locally Linear Embedding, Kernel PCA, Laplacian Eigenmaps, spectral embedding
 - **NMF** — domaines : data-sci · alias : Non-negative Matrix Factorization, Factorisation en matrices non négatives, Factorisation non négative, NNMF, Semi-NMF, Convex NMF
-- **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
 - **t-SNE and UMAP** — domaines : data-sci · alias : t-SNE, UMAP, visualisation haute dimension
 
 ### ml/orchestration
@@ -1040,9 +1053,7 @@
 - **Foundation models pour séries temporelles** — domaines : data-sci, ml-eng · alias : Time series foundation models, TSFM, Modèles de fondation séries temporelles, Foundation models time series, Zero-shot forecasting
 - **Hierarchical forecasting** — domaines : data-sci, ml-eng · alias : Prévision hiérarchique, Réconciliation, Hierarchical reconciliation, MinT, bottom-up, top-down
 - **Intermittent demand** — domaines : data-sci, ml-eng · alias : Demande intermittente, Croston, SBA, TSB, demande sporadique, slow movers
-- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
 - **Stationarity** — domaines : data-sci · alias : Stationnarité, Série stationnaire, Stationnaire, Racine unitaire
-- **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
 - **Time series feature engineering** — domaines : data-sci, ml-eng · alias : Features temporelles, Lag features, Rolling features, Fourier terms, Time series features
 - **Walk-forward CV** — domaines : data-sci, ml-eng · alias : Validation glissante, Backtesting, Rolling origin, Expanding window, Time series cross-validation, cutoff, cutoffs
 
@@ -1351,6 +1362,9 @@
 ### math/optimisation
 - **Comparatif - Solveurs d'optimisation** — —
 
+### ml/anomalie
+- **Comparatif - Détection d'anomalies** — —
+
 ### ml/embeddings
 - **Comparatif - Embeddings** — —
 
@@ -1367,7 +1381,6 @@
 - **Comparatif - NLP** — —
 
 ### ml/non-supervise
-- **Comparatif - Détection d'anomalies** — —
 - **Comparatif - Réduction de dimension** — —
 
 ### ml/orchestration
@@ -1468,6 +1481,7 @@
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Données industrielles** — Amener la donnée de l'atelier jusqu'au système d'information par les protocoles industriels — brokers MQTT, piles OPC UA, outils de flux — et sécuriser le chemin.
+- **Détection d'anomalies** — Repérer ce qui s'écarte du normal — points, motifs, images — et décider à partir de quel écart on alerte.
 - **Embeddings & encodeurs** — Produire des vecteurs à partir de texte — choisir le modèle, puis l'outil qui le calcule ou le sert, sans dépendre d'une API externe.
 - **Fiabilité des données** — Savoir à quoi se fier dans une donnée — la rejouer sans doublon, la raffiner par couches, la contractualiser, la vérifier, la figer.
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
@@ -1489,7 +1503,7 @@
 - **Mémoire des agents** — Garder ce qu'un agent a appris d'une session à l'autre — faits, graphe daté, contexte comprimé — sans envoyer les données chez un tiers.
 - **Méthodes causales** — Passer de « ces deux choses varient ensemble » à « celle-ci fait varier celle-là » — estimer un effet sans randomisation simple, par individu, ou retrouver le graphe qui le porte.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
-- **Non supervisé** — Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.
+- **Non supervisé** — Chercher une structure sans cible — regrouper, réduire — sans plus rien qui dise qu'on a raison.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
 - **Observabilité des LLM** — Voir ce qu'une application LLM fait en production — traces, coût, latence, qualité sur le trafic réel.

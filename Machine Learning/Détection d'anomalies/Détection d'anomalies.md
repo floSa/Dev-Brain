@@ -34,12 +34,17 @@ tags: [anomaly-detection]
 ### Notions
 - [[Détection d'outliers multivariée]] — domaines : data-sci, ml-eng
 - [[Détection d'outliers univariée]] — domaines : data-sci, ml-eng
+- [[Détection hors distribution (OOD)]] — domaines : ml-eng, mlops, data-sci
 - [[Isolation Forest]] — domaines : data-sci, ml-eng
 - [[Local Outlier Factor]] — domaines : data-sci, ml-eng
 - [[One-Class SVM]] — domaines : data-sci, ml-eng
+- [[Score et seuil d'alerte]] — domaines : data-sci, ml-eng, mlops
 - [[Time series anomaly detection]] — domaines : data-sci, mlops
+- [[Types d'anomalies et régimes de supervision]] — domaines : data-sci, ml-eng
+- [[Évaluer une détection d'anomalies]] — domaines : data-sci, ml-eng
 
 ### Briques
+- [[Jeux de données d'anomalies]] — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
 - [[PyOD]] — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 - [[STUMPY]] — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
