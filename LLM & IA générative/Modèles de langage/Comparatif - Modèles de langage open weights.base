@@ -1,0 +1,17 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du même sous-domaine.
+    - role == "brique"
+    - categorie == "llm/modele"
+views:
+  - type: table
+    name: Modèles de langage open weights
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
