@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Vespa]]", "[[txtai]]", "[[Marqo]]", "[[OpenSearch]]", "[[Meilisearch]]", "[[Typesense]]", "[[Apache Solr]]"]
-complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]"]
+complements: ["[[Kibana]]", "[[Logstash]]", "[[Beats]]", "[[JanusGraph]]"]
 tags: [search, distributed]
 url_docs: https://www.elastic.co/guide/index.html
 url_repo: https://github.com/elastic/elasticsearch
@@ -71,6 +71,7 @@ visualisation.
 - [[Kibana]] — Interface web de la suite Elastic (triple AGPL / SSPL / ELv2) — explore (Discover), visualise (Lens, dashboards) et alerte sur les données d'Elasticsearch ; ne fonctionne qu'avec lui. — l'interface d'exploration et de dashboards de la pile Elastic.
 - [[Logstash]] — Pipeline de collecte et de transformation de données côté serveur (Apache-2.0, x-pack sous Elastic License) — plugins d'entrée, de filtre et de sortie ; alimente Elasticsearch ou tout autre destinataire. — le pipeline qui transforme les événements avant l'indexation.
 - [[Beats]] — Agents de collecte légers en Go (Apache-2.0, x-pack sous Elastic License) — Filebeat, Metricbeat, Auditbeat… expédient logs et métriques vers Elasticsearch ou Logstash. — les agents qui expédient logs et métriques depuis les machines sources.
+- [[JanusGraph]] — Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024. — la couche de graphe qui s'appuie sur Elasticsearch comme index externe pour la recherche par propriété.
 
 ## Ressources
 
