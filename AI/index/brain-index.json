@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 925,
+  "count": 931,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1698,6 +1698,7 @@
       "Cline",
       "Code and math benchmarks",
       "Comparatif - Fine-tuning LLM",
+      "Comparatif - Modèles de langage open weights",
       "Construction de graphes de connaissances",
       "Context engineering",
       "Continue",
@@ -1713,6 +1714,7 @@
       "E2B",
       "Flowise",
       "GRPO",
+      "Gemma",
       "GitDiagram",
       "Google Cloud Vertex AI",
       "GraphRAG",
@@ -1746,11 +1748,14 @@
       "Langflow",
       "Langfuse",
       "Letta",
+      "Licences de modèles open weights",
       "LiteLLM",
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
+      "Mistral",
       "Modal",
+      "Modèles de langage",
       "Multi-Token Prediction",
       "Multi-agent systems",
       "Ollama",
@@ -1771,6 +1776,7 @@
       "Prompt injection",
       "PydanticAI",
       "Query transformations",
+      "Qwen",
       "RAG",
       "RAGChecker",
       "RL for LLMs",
@@ -1810,6 +1816,7 @@
       "WrenAI",
       "a2a-protocol",
       "agent-loops",
+      "gpt-oss",
       "interpreto",
       "llama.cpp",
       "mcp-protocol",
@@ -1884,15 +1891,21 @@
     "local-llm": [
       "Assistants",
       "Comparatif - Exécution & serving LLM",
+      "Comparatif - Modèles de langage open weights",
+      "Gemma",
       "LM Studio",
       "LM Studio Bionic",
+      "Licences de modèles open weights",
+      "Mistral",
       "Ollama",
       "Pattern - Agent sur LLM auto-hébergé",
       "Prometheus-Eval",
+      "Qwen",
       "Runtimes",
       "Small Language Models",
       "Superwhisper",
       "Vanna",
+      "gpt-oss",
       "llama.cpp",
       "llmfit",
       "needle",
@@ -2766,8 +2779,12 @@
       "Chain-of-Thought",
       "Code and math benchmarks",
       "GRPO",
+      "Gemma",
+      "Mistral",
       "Modèles de langage",
-      "Reasoning models"
+      "Qwen",
+      "Reasoning models",
+      "gpt-oss"
     ],
     "recommender-systems": [
       "Systèmes de recommandation"
@@ -3089,6 +3106,7 @@
       "CVAT",
       "Caddy",
       "Choisir un modèle d'embedding",
+      "Comparatif - Modèles de langage open weights",
       "Dataiku",
       "Debezium",
       "Dependency-Track",
@@ -3101,6 +3119,7 @@
       "Kubeflow",
       "Kubernetes",
       "Label Studio",
+      "Licences de modèles open weights",
       "Meilisearch",
       "Mosquitto",
       "NATS",
@@ -3483,6 +3502,7 @@
       "Claude Agent SDK",
       "CrewAI",
       "Deep Agents",
+      "Gemma",
       "Harnais d'agent",
       "Hermes Agent",
       "LangChain",
@@ -3490,12 +3510,14 @@
       "LangGraph",
       "Letta",
       "Maka",
+      "Mistral",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
       "Pattern - Agent sur LLM auto-hébergé",
       "PraisonAI",
       "PydanticAI",
+      "Qwen",
       "Semantic Kernel",
       "Sous-agents et isolation du contexte",
       "Structured outputs",
@@ -3503,6 +3525,7 @@
       "a2a-protocol",
       "agent-loops",
       "fastmcp",
+      "gpt-oss",
       "mcp-protocol",
       "mcpjam",
       "needle",
@@ -3681,9 +3704,12 @@
       "Video generation"
     ],
     "vision-language": [
+      "Gemma",
       "MinerU",
+      "Mistral",
       "Modèles de fondation vision",
       "OCR classique vs modèles vision-langage pour documents",
+      "Qwen",
       "Vision Language Models",
       "olmOCR"
     ],
@@ -12074,7 +12100,9 @@
         "[[Axolotl]]",
         "[[Tunix]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Qwen]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12302,7 +12330,9 @@
         "[[LLaMA-Factory]]",
         "[[Tunix]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Gemma]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12363,7 +12393,10 @@
         "[[LLaMA-Factory]]",
         "[[Tunix]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Qwen]]",
+        "[[Gemma]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12535,6 +12568,25 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/Comparatif - Modèles de langage open weights.md",
+      "nom": "Comparatif - Modèles de langage open weights",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "llm",
+        "local-llm",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Modèles de langage/Decoding strategies.md",
       "nom": "Decoding strategies",
       "alias": [
@@ -12566,6 +12618,112 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/Gemma.md",
+      "nom": "Gemma",
+      "alias": [
+        "Gemma 4",
+        "Gemma 3",
+        "Google Gemma",
+        "Gemma-4-31B-it"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use",
+        "vision-language"
+      ],
+      "alternatives": [
+        "[[Qwen]]",
+        "[[Mistral]]",
+        "[[gpt-oss]]"
+      ],
+      "complements": [
+        "[[vLLM]]",
+        "[[SGLang]]",
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]",
+        "[[Unsloth]]",
+        "[[TRL]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Licences de modèles open weights.md",
+      "nom": "Licences de modèles open weights",
+      "alias": [
+        "open weights",
+        "poids ouverts",
+        "licences de modèles",
+        "licence d'un modèle de langage",
+        "open-weight licensing",
+        "Llama Community License",
+        "open washing"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "local-llm",
+        "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Mistral.md",
+      "nom": "Mistral",
+      "alias": [
+        "Mistral AI",
+        "Mistral Small",
+        "Ministral",
+        "Ministral 3",
+        "Devstral",
+        "Magistral",
+        "Mistral Medium"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use",
+        "vision-language"
+      ],
+      "alternatives": [
+        "[[Qwen]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
+      ],
+      "complements": [
+        "[[vLLM]]",
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "LLM & IA générative/Modèles de langage/Modèles de langage.md",
       "nom": "Modèles de langage",
       "alias": null,
@@ -12583,7 +12741,8 @@
         "decoding",
         "scaling-laws",
         "small-language-model",
-        "reasoning"
+        "reasoning",
+        "llm"
       ],
       "alternatives": null,
       "complements": null,
@@ -12613,6 +12772,46 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Qwen.md",
+      "nom": "Qwen",
+      "alias": [
+        "Qwen3.8",
+        "Qwen3.6",
+        "Qwen3.5",
+        "Qwen3.8-27B",
+        "Qwen3 LLM",
+        "Tongyi Qianwen"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use",
+        "vision-language"
+      ],
+      "alternatives": [
+        "[[Mistral]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
+      ],
+      "complements": [
+        "[[vLLM]]",
+        "[[SGLang]]",
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[Unsloth]]",
+        "[[LLaMA-Factory]]",
+        "[[Qwen3-Embedding]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Modèles de langage/Reasoning models.md",
@@ -12758,6 +12957,40 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/gpt-oss.md",
+      "nom": "gpt-oss",
+      "alias": [
+        "gpt-oss-20b",
+        "gpt-oss-120b",
+        "OpenAI gpt-oss",
+        "GPT OSS"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[Qwen]]",
+        "[[Mistral]]",
+        "[[Gemma]]"
+      ],
+      "complements": [
+        "[[vLLM]]",
+        "[[Ollama]]",
+        "[[llama.cpp]]",
+        "[[LM Studio]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md",
@@ -13735,7 +13968,10 @@
         "[[TensorRT-LLM]]"
       ],
       "complements": [
-        "[[LM Studio Bionic]]"
+        "[[LM Studio Bionic]]",
+        "[[Mistral]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
       ],
       "maturite": "production"
     },
@@ -13798,7 +14034,12 @@
         "[[TensorRT-LLM]]",
         "[[needle]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Qwen]]",
+        "[[Mistral]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
+      ],
       "maturite": "production"
     },
     {
@@ -13856,7 +14097,10 @@
         "[[TGI]]",
         "[[TensorRT-LLM]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Qwen]]",
+        "[[Gemma]]"
+      ],
       "maturite": "production"
     },
     {
@@ -14017,7 +14261,12 @@
         "[[TensorRT-LLM]]",
         "[[needle]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Qwen]]",
+        "[[Mistral]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
+      ],
       "maturite": "production"
     },
     {
@@ -14137,7 +14386,11 @@
         "[[TensorRT-LLM]]"
       ],
       "complements": [
-        "[[Tunix]]"
+        "[[Tunix]]",
+        "[[Qwen]]",
+        "[[Mistral]]",
+        "[[Gemma]]",
+        "[[gpt-oss]]"
       ],
       "maturite": "production"
     },
@@ -17287,7 +17540,8 @@
       ],
       "complements": [
         "[[sentence-transformers]]",
-        "[[Text Embeddings Inference]]"
+        "[[Text Embeddings Inference]]",
+        "[[Qwen]]"
       ],
       "maturite": "production"
     },

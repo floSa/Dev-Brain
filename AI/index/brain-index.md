@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 925 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 931 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -343,6 +343,12 @@
 - **Headroom** — Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
 - **Letta** — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
 - **OpenViking** — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
+
+### llm/modele
+- **Gemma** — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.
+- **gpt-oss** — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.
+- **Mistral** — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.
+- **Qwen** — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.
 
 ### llm/observabilite
 - **Helicone** — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
@@ -757,6 +763,7 @@
 
 ### llm/modele
 - **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
+- **Licences de modèles open weights** — domaines : ai-eng, ml-eng · alias : open weights, poids ouverts, licences de modèles, licence d'un modèle de langage, open-weight licensing, Llama Community License, open washing
 - **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
 - **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
 - **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
@@ -1218,6 +1225,9 @@
 
 ### llm/finetuning
 - **Comparatif - Fine-tuning LLM** — —
+
+### llm/modele
+- **Comparatif - Modèles de langage open weights** — —
 
 ### llm/observabilite
 - **Comparatif - Observabilité LLM** — —
