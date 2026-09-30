@@ -73,6 +73,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Fine-tuning LLM]]
 - [[Comparatif - Frameworks LLM]]
 - [[Comparatif - Frameworks text-to-SQL]]
+- [[Comparatif - Modèles de langage open weights]]
 - [[Comparatif - Observabilité LLM]]
 - [[Comparatif - Rerankers]]
 - [[Comparatif - Évaluation LLM]]

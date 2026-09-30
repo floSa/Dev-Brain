@@ -495,7 +495,12 @@ valeurs disparues et ne sont pas reconduites.
   ([[Decoding strategies]]), ce qui se mesure sur lui sans tâche applicative
   ([[Perplexity]]), ce que sa taille achète ([[Scaling laws]]) et les deux classes de
   modèles que ce compromis a fait naître — les compacts ([[Small Language Models]]) et
-  ceux qui dépensent à l'inférence ([[Reasoning models]]). Distinct de `llm/runtime`, qui
+  ceux qui dépensent à l'inférence ([[Reasoning models]]). Range aussi, depuis le
+  2026-09-30, les fiches des **familles de modèles à poids ouverts** (`famille: modele` :
+  [[Qwen]], [[Mistral]], [[Gemma]], [[gpt-oss]]) et la notion de leurs licences
+  ([[Licences de modèles open weights]]). Distinct de `ml/embeddings`, dont la sortie est
+  un **vecteur** ([[bge-m3]], [[Qwen3-Embedding]]) : un modèle qui génère du texte est ici,
+  un modèle qui encode du texte en vecteur est là-bas. Distinct de `llm/runtime`, qui
   le **sert** (le mécanisme est ici, la machine qui le fait tourner est là-bas), de
   `llm/finetuning`, qui l'**ajuste**, et de `llm/eval`, qui mesure une **application** :
   la perplexité juge un modèle sur un corpus, pas un produit sur sa tâche.

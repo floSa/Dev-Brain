@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[bge-m3]]"]
-complements: ["[[sentence-transformers]]", "[[Text Embeddings Inference]]"]
+complements: ["[[sentence-transformers]]", "[[Text Embeddings Inference]]", "[[Qwen]]"]
 tags: [embeddings, semantic-search, retrieval, transformers, reranking]
 url_docs: https://qwenlm.github.io/blog/qwen3-embedding/
 url_repo: https://github.com/QwenLM/Qwen3-Embedding
@@ -75,6 +75,7 @@ le 0,6 B, 1,83 M pour le 4 B, 2,55 M pour le 8 B.
 
 - [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi. — le charge : le Hub le déclare pour cette bibliothèque.
 - [[Text Embeddings Inference]] — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026. — le sert ; la famille Qwen3 est dans ses architectures supportées.
+- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — la famille de génération de la même équipe.
 
 ## Ressources
 
