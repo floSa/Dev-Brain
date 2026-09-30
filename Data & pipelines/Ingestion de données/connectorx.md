@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[ADBC]]"]
-complements: ["[[Polars]]"]
+complements: ["[[Polars]]", "[[dlt]]"]
 tags: [dataframe, columnar]
 url_docs: https://sfu-db.github.io/connector-x/
 url_repo: https://github.com/sfu-db/connector-x
@@ -22,7 +22,7 @@ url_repo: https://github.com/sfu-db/connector-x
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | à jour · 2026-01-18 |
+| Librairie Rust | open-source | en bibliothèque, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -31,10 +31,14 @@ Bibliothèque spécialisée dans une seule opération : sortir le résultat d'un
 un DataFrame Python, le plus vite possible et avec le moins de mémoire. Le principe est le
 **zero-copy** — la donnée est copiée exactement une fois, de la source vers la destination,
 sans objets Python intermédiaires — et la lecture se **parallélise** en partitionnant la
-requête sur une colonne. Sources : PostgreSQL, MySQL, SQLite, SQL Server, Oracle, BigQuery.
+requête sur une colonne. Sources : PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Oracle, BigQuery, Redshift, ClickHouse, Trino.
 Destinations : pandas, Polars, Arrow, Modin, Dask, NumPy. C'est le moteur derrière
 `read_database(engine="connectorx")` côté Polars. Le corollaire de cette spécialisation est
 qu'il ne fait rien d'autre : il charge, il n'écrit pas.
+
+Relevé le 2026-09-30 : **0.4.6** du 2026-09-17 (une préversion 0.4.7a1 le 2026-09-30), MIT, environ 2 650 étoiles, Python ≥ 3.10.
+Les versions stables sont espacées (0.4.4 le 2025-08-26, 0.4.5 le 2026-01-18, 0.4.6 en septembre 2026) mais les commits sont
+quotidiens en septembre 2026, autour d'un nouveau pilote SQL Server (`mssql-tds`) devenu le défaut.
 
 ## Prendre si / Écarter si
 
@@ -64,6 +68,7 @@ qu'il ne fait rien d'autre : il charge, il n'écrit pas.
 ### Compléments
 
 - [[Polars]] — DataFrames haute performance écrits en Rust sur Apache Arrow : API lazy avec optimiseur de requêtes, exécution multi-thread et moteur streaming out-of-core. Il appelle connectorx comme moteur de son `read_database`.
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — moteur de lecture de la source `sql_database` de dlt, avec SQLAlchemy, PyArrow et pandas.
 
 ## Ressources
 
@@ -72,5 +77,7 @@ qu'il ne fait rien d'autre : il charge, il n'écrit pas.
 
 ## Voir aussi
 
+- [[Ingestion de données]] — le hub du dossier
+- [[Comparatif - Ingestion de données]] — connectorx y est situé face aux outils d'ingestion
 - [[ELT vs ETL & idempotence]] — l'étape d'extraction que cette bibliothèque exécute
 - [[Comparatif - Manipulation de données]] — où atterrissent les DataFrames chargés

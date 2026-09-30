@@ -36,6 +36,11 @@ Winlogbeat (journaux Windows) et Osquerybeat. Ils envoient leurs données à
 bibliothèque libbeat permet d'écrire ses propres Beats. Le code est sous Apache-2.0, le dossier
 `x-pack` sous Elastic License.
 
+Relevé le 2026-09-30 : **9.5.4** du 2026-09-15 (8.19.22 du 2026-09-23 sur la branche 8), environ 12 660 étoiles, dernier
+commit du jour ; même `LICENSE.txt` que Logstash, et les binaires `-oss` (par exemple `filebeat-oss-9.5.4`) sont toujours publiés.
+Elastic recommande Elastic Agent géré par Fleet à la plupart des utilisateurs, mais aucune dépréciation de Beats autonome n'a été trouvée,
+seulement celle de certains modules Filebeat.
+
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
@@ -56,7 +61,8 @@ bibliothèque libbeat permet d'écrire ses propres Beats. Le code est sous Apach
 
 ### Alternatives
 
-- *Aucune alternative déclarée : aucun autre collecteur n'est fiché dans `data/ingestion`.*
+- *Aucune alternative déclarée : aucun autre collecteur d'agents de logs n'est fiché ; le voisin le plus proche par le rôle est ci-dessous.*
+- [[Apache NiFi]] — voisin : son agent de périphérie MiNiFi (Java 2.12.0, C++ 1.0.0) joue le même rôle d'agent léger, mais achemine vers des destinations de toute nature et non vers la seule pile Elastic.
 
 ### Compléments
 
@@ -70,6 +76,7 @@ bibliothèque libbeat permet d'écrire ses propres Beats. Le code est sous Apach
 
 ## Voir aussi
 
-- [[Data & pipelines]] — le hub du domaine
+- [[Ingestion de données]] — le hub du dossier
+- [[Comparatif - Ingestion de données]] — Beats y est situé face aux outils d'ingestion généralistes
 - [[Kibana]] — l'interface qui visualise les données collectées
 - [[Loki]] — voisin côté logs, avec son propre agent de collecte

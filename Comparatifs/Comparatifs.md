@@ -42,6 +42,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Calcul distribué]]
 
 ### Data & pipelines
+- [[Comparatif - Ingestion de données]]
 - [[Comparatif - Manipulation de données]]
 - [[Comparatif - Orchestrateurs data]]
 - [[Comparatif - Outils EDA - profiling]]

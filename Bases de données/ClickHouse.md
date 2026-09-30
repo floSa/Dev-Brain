@@ -11,7 +11,7 @@ maturite: production
 langage: C++
 scaling: distributed
 alternatives: ["[[DuckDB]]", "[[Snowflake]]"]
-complements: ["[[dbt Core]]", "[[SQLMesh]]"]
+complements: ["[[dbt Core]]", "[[SQLMesh]]", "[[Airbyte]]", "[[dlt]]"]
 tags: [columnar, olap, distributed]
 url_docs: https://clickhouse.com/docs
 url_repo: https://github.com/ClickHouse/ClickHouse
@@ -64,6 +64,8 @@ les performances de toutes les requêtes qui suivront.
 
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — `dbt-clickhouse` (1.10.3, 2026-09-15), maintenu par ClickHouse Inc. ; vues matérialisées et tables distribuées expérimentales ; en dbt v2 il est en *private beta*, sans `ON CLUSTER` ni matérialisations distribuées.
 - [[SQLMesh]] — Framework de transformation SQL à environnements virtuels : plan/apply sur des modèles versionnés, lignage au niveau colonne, exécution incrémentale par intervalles suivis et audits (Apache-2.0, Python) ; sous gouvernance Linux Foundation depuis mars 2026 après le rachat de Tobiko par Fivetran. — moteur pris en charge mais contraint : pas d'upsert (échange de tables et de partitions qui copient l'existant), ne peut pas héberger l'état, et une issue ouverte le 2026-09-23 signale des échecs silencieux de l'échange.
+- [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — destination certifiée en disponibilité générale.
+- [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — destination documentée, utilisable sur site.
 
 ## Ressources
 
