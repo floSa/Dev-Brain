@@ -20,3 +20,4 @@ tags: [orchestration, ml-pipeline, reproducibility]
 ## Voir aussi
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
+- [[Kubeflow]] — l'option plateforme, au lieu d'un pipeline seul : pipelines, entraînement, serving et droits sur un cluster Kubernetes, rangé parmi les plateformes (règle D-R9).
