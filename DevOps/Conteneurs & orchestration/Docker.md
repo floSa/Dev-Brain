@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[Podman]]"]
-complements: ["[[Docker Compose]]", "[[GitHub Actions]]", "[[Trivy]]", "[[Grype]]"]
+complements: ["[[Docker Compose]]", "[[GitHub Actions]]", "[[Trivy]]", "[[Grype]]", "[[GitLab CE]]", "[[Forgejo]]", "[[Jenkins]]", "[[Woodpecker CI]]"]
 tags: [container]
 url_docs: https://docs.docker.com/
 url_repo: https://github.com/moby/moby
@@ -72,6 +72,10 @@ et les produits payants.
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — la CI qui construit et publie les images
 - [[Trivy]] — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées). — l'image construite se scanne avant livraison, lue par le socket Docker (vulnérabilités, secrets, configuration du Dockerfile).
 - [[Grype]] — Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours. — l'image locale se compare à sa base par `--from docker`, ou à un SBOM Syft produit à la construction.
+- [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — l'image officielle de GitLab, et l'exécuteur Docker de ses runners.
+- [[Forgejo]] — Forge Git légère issue du fork de Gitea (GPL-3.0-or-later depuis la v9, Go, gouvernance liée à l'association Codeberg e.V.) : dépôts, revues, registres de paquets et Forgejo Actions, dont la syntaxe s'inspire de celle de GitHub Actions sans en être une copie. — l'image officielle du serveur, et le moteur des jobs de son runner.
+- [[Jenkins]] — Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois. — l'image officielle du contrôleur, et les conteneurs de build des agents.
+- [[Woodpecker CI]] — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge. — le moteur par défaut de chaque étape de pipeline.
 
 ## Ressources
 
