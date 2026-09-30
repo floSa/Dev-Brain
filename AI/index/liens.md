@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 823 pages actives.
+> 825 pages actives.
 
 ## Par page
 
@@ -89,6 +89,11 @@
 - tags : `lakehouse`, `olap`, `schema-evolution`
 - liens sortants : [[Architecture médaillon]], [[Avro]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]]
 - liens entrants : [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Databricks]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]]
+
+### Apache Ozone  ·  brique
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[Ceph]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[Ceph]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]]
 
 ### Apache Solr  ·  brique
 - tags : `search`, `distributed`
@@ -197,8 +202,8 @@
 
 ### Ceph  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[Métriques, logs et traces]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
 
 ### Chroma  ·  brique
 - tags : `vector-db`, `rag`, `embedded`
@@ -533,7 +538,7 @@
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[Métriques, logs et traces]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[MinIO]], [[Métriques, logs et traces]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]]
 
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
@@ -937,8 +942,8 @@
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]], [[croc]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[Métriques, logs et traces]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Tempo]], [[croc]]
 
 ### missingno  ·  brique
 - tags : `missing-data`, `eda`, `static-viz`
@@ -1114,6 +1119,11 @@
 - tags : `reinforcement-learning`, `game-theory`
 - liens sortants : [[AlphaZero and self-play]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Théorie des jeux]]
 - liens entrants : [[AlphaZero and self-play]], [[Apprentissage par renforcement]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Gymnasium]], [[Monte Carlo Tree Search]], [[Reinforcement learning]], [[Théorie des jeux]]
+
+### OpenStack Swift  ·  brique
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[Apache Ozone]], [[Ceph]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[Apache Ozone]], [[Ceph]], [[SeaweedFS]], [[Stockage]]
 
 ### OpenTelemetry  ·  brique
 - tags : `observability`, `metrics`, `logging`, `tracing`, `self-hosted`
@@ -1473,7 +1483,7 @@
 ### RustFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[Ceph]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]]
+- liens entrants : [[Apache Ozone]], [[Ceph]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]]
 
 ### SAELens  ·  brique
 - tags : `explainability`, `llm`
@@ -1522,8 +1532,8 @@
 
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[RustFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[RustFS]], [[Stockage]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2452,8 +2462,8 @@
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
-- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[RustFS]], [[SeaweedFS]]
-- liens entrants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Data Engineering]], [[Garage]], [[MinIO]], [[RustFS]], [[Réseau]], [[SeaweedFS]]
+- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Data Engineering]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Réseau]], [[SeaweedFS]]
 
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
@@ -4320,7 +4330,7 @@
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, albumentations, supervision
-- `object-storage` : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
+- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
@@ -4381,7 +4391,7 @@
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
-- `s3-compatible` : Ceph, Cloudflare R2, Garage, MinIO, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
+- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage  — pas de page concept dédiée
 - `safety` : AI security, Guardrails, Jailbreaking and defenses  — pas de page concept dédiée
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow, Comparatif - Orchestrateurs data  — pas de page concept dédiée
@@ -4569,7 +4579,7 @@
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
-- `object-storage` (porté par : AWS S3, Ceph, Cloudflare R2, Garage, MinIO, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage)
+- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
 - `olap` (porté par : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, Parquet, Partitionnement & layout de données, Snowflake)
 - `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Optimal transport, Optimisation, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
@@ -4602,7 +4612,7 @@
 - `reproducibility` (porté par : Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, Marimo, Notebooks, Notebooks-as-code, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Chunking strategies, Cohere Rerank, Comparatif - Rerankers, Deep research, FlashRank, GraphRAG, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, OpenViking, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG eval, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
-- `s3-compatible` (porté par : Ceph, Cloudflare R2, Garage, MinIO, RustFS, SeaweedFS, Stockage)
+- `s3-compatible` (porté par : Apache Ozone, Ceph, Cloudflare R2, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
 - `schema-evolution` (porté par : Apache Iceberg, Avro, Contrats de données & qualité)
