@@ -37,6 +37,8 @@ contrepartie de cette couverture est double : la stack est lourde — API, worke
 base, plusieurs conteneurs à faire tourner —, et le verrouillage guette dès que toute la
 logique métier vit dans la console plutôt que dans du code portable.
 
+Version **1.17.1** du 2026-09-10, 157 603 étoiles le 2026-09-30, une publication toutes les deux à quatre semaines. **Le SSO n'est pas dans l'édition libre** : la Community propose e-mail et mot de passe, un code par e-mail et un OAuth GitHub/Google optionnel ; SAML, OIDC, OAuth2, RBAC fin, journaux d'audit, marque blanche et gestion multi-espaces sont réservés à l'édition Enterprise (sur devis). La Community n'a qu'un seul espace de travail. La licence : Apache 2.0 modifiée, avec deux conditions — pas d'environnement multi-tenant (un tenant = un espace de travail) sans autorisation écrite de Dify, et interdiction de retirer ou modifier le logo et le copyright de la console dès que le frontend (`web/`) est utilisé. Pour une ESN : une instance dédiée par client, avec le logo, est le cas nominal ; un SaaS multi-tenant ou le retrait du logo demandent une licence commerciale. Une instance par client se lit comme permise, lecture à faire valider par Dify ou par un juriste.
+
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
@@ -59,7 +61,7 @@ logique métier vit dans la console plutôt que dans du code portable.
 ### Alternatives
 
 - [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
-- [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; self-host ou Flowise Cloud.
+- [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0 hors dossier enterprise, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; dépôt archivé depuis le 2026-08-13, sans correctifs à attendre.
 
 ## Ressources
 
