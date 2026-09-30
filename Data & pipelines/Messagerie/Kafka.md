@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: distributed
 alternatives: ["[[Redpanda]]", "[[RabbitMQ]]", "[[NATS]]"]
-complements: ["[[Debezium]]", "[[Flink]]", "[[Kestra]]", "[[OpenLineage]]", "[[OpenMetadata]]", "[[DataHub]]"]
+complements: ["[[Debezium]]", "[[Flink]]", "[[Kestra]]", "[[OpenLineage]]", "[[OpenMetadata]]", "[[DataHub]]", "[[EMQX]]"]
 tags: [message-broker, streaming, distributed, self-hosted]
 url_docs: https://kafka.apache.org/documentation/
 url_repo: https://github.com/apache/kafka
@@ -90,6 +90,7 @@ ligne précédente, date du 2026-09-29. Apache-2.0, environ 33 900 étoiles, der
 - [[OpenLineage]] — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data). — transport d'événements de lignage côté client (`openlineage-python[kafka]`).
 - [[OpenMetadata]] — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate). — connecteur de messagerie listé ; canal de réception du connecteur OpenLineage. Le serveur n'en dépend pas.
 - [[DataHub]] — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud). — composant obligatoire : bus des événements de métadonnées, avec un registre de schémas.
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — pont Kafka intégré à EMQX : les messages MQTT des capteurs sont produits vers Kafka, qui n'a aucun protocole MQTT natif.
 
 ## Ressources
 
