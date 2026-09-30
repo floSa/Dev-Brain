@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 883 pages actives.
+> 884 pages actives.
 
 ## Par page
 
@@ -397,8 +397,8 @@
 
 ### dbt Core  ·  brique
 - tags : `data-transformation`, `data-pipeline`, `data-quality`
-- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
-- liens entrants : [[Airflow]], [[Apache Iceberg]], [[ClickHouse]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Kestra]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
+- liens sortants : [[Airflow]], [[Apache Iceberg]], [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[ClickHouse]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Kestra]], [[Modélisation dimensionnelle]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
 
 ### Deep Agents  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `context-engineering`, `mcp`
@@ -643,7 +643,7 @@
 ### Great Expectations  ·  brique
 - tags : `data-quality`, `data-validation`, `data-contract`
 - liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Evidently]], [[Fiabilité des données]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
-- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Fiabilité des données]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
+- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
 
 ### Grype  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `container`, `ci-cd`
@@ -1298,7 +1298,7 @@
 ### pandera  ·  brique
 - tags : `data-validation`, `data-quality`, `dataframe`
 - liens sortants : [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Dagster]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
-- liens entrants : [[Comparatif - Qualité de données]], [[Dagster]], [[Fiabilité des données]], [[Great Expectations]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
+- liens entrants : [[Comparatif - Qualité de données]], [[Dagster]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
 
 ### papermill  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1758,7 +1758,7 @@
 ### Soda Core  ·  brique
 - tags : `data-quality`, `data-contract`, `data-validation`
 - liens sortants : [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[DuckDB]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Postgres]], [[pandera]]
-- liens entrants : [[Comparatif - Qualité de données]], [[DuckDB]], [[Fiabilité des données]], [[Great Expectations]], [[Postgres]], [[pandera]]
+- liens entrants : [[Comparatif - Qualité de données]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Postgres]], [[pandera]]
 
 ### SOPS  ·  brique
 - tags : `secrets-management`, `cryptography`
@@ -1792,8 +1792,8 @@
 
 ### SQLMesh  ·  brique
 - tags : `data-transformation`, `data-pipeline`, `data-quality`
-- liens sortants : [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Postgres]], [[Spark]], [[dbt Core]]
-- liens entrants : [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[Kestra]], [[Postgres]], [[Spark]], [[dbt Core]]
+- liens sortants : [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Postgres]], [[Spark]], [[dbt Core]]
+- liens entrants : [[ClickHouse]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[Kestra]], [[Modélisation dimensionnelle]], [[Postgres]], [[Spark]], [[dbt Core]]
 
 ### SQLModel  ·  brique
 - tags : `orm`, `relational`, `type-hints`, `data-validation`
@@ -2372,7 +2372,7 @@
 
 ### Comparatif - Transformation SQL  ·  comparatif
 - tags : `data-transformation`, `data-pipeline`
-- liens sortants : [[Airflow]], [[Comparatif - Transformation SQL.base]], [[Comparatifs]], [[Dagster]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Prefect]], [[SQLMesh]], [[dbt Core]]
+- liens sortants : [[Airflow]], [[Comparatif - Transformation SQL.base]], [[Comparatifs]], [[Dagster]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Prefect]], [[SQLMesh]], [[dbt Core]]
 - liens entrants : [[Comparatifs]], [[Data & pipelines]], [[SQLMesh]], [[dbt Core]]
 
 ### Comparatif - Visualisation  ·  comparatif
@@ -2476,8 +2476,8 @@
 - liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[DevOps]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubernetes]], [[Podman]], [[k3s]]
 
 ### Data & pipelines  ·  hub
-- tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`
-- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Index ANN — internes]], [[Logstash]], [[Migrations de schéma]], [[Mimesis]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[missingno]], [[pandas]], [[sweetviz]], [[ydata-profiling]]
+- tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[DataFrames]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Great Expectations]], [[Index ANN — internes]], [[Logstash]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]], [[ORM]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
 - liens entrants : [[AI Engineering]], [[Beats]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[Logstash]], [[MLOps]], [[Machine Learning]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
 
 ### Data Engineering  ·  hub
@@ -2522,7 +2522,7 @@
 
 ### Fiabilité des données  ·  hub
 - tags : `data-quality`, `data-contract`, `idempotence`, `data-versioning`, `data-validation`
-- liens sortants : [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Great Expectations]], [[Orchestration]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
+- liens sortants : [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Evidently]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Orchestration]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
 - liens entrants : [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Great Expectations]], [[Soda Core]], [[pandera]]
 
 ### Fine-tuning  ·  hub
@@ -2908,7 +2908,7 @@
 ### Architecture médaillon  ·  notion
 - tags : `data-modeling`, `data-pipeline`, `lakehouse`, `data-quality`
 - liens sortants : [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Partitionnement & layout de données]], [[Versionnage de données]]
-- liens entrants : [[Apache Iceberg]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[SQLMesh]], [[Soda Core]], [[dbt Core]]
+- liens entrants : [[Apache Iceberg]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[SQLMesh]], [[Soda Core]], [[dbt Core]]
 
 ### Architectures CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
@@ -3108,7 +3108,7 @@
 ### Contrats de données & qualité  ·  notion
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Dagster]], [[Data drift]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]]
-- liens entrants : [[Architecture médaillon]], [[Avro]], [[Change Data Capture (CDC)]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
+- liens entrants : [[Architecture médaillon]], [[Avro]], [[Change Data Capture (CDC)]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
 
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
@@ -3213,7 +3213,7 @@
 ### ELT vs ETL & idempotence  ·  notion
 - tags : `data-pipeline`, `idempotence`
 - liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[Migrations de schéma]], [[Versionnage de données]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Fiabilité des données]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Stream processing]], [[Versionnage de données]], [[connectorx]], [[dbt Core]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Stream processing]], [[Versionnage de données]], [[connectorx]], [[dbt Core]]
 
 ### embeddings  ·  notion
 - tags : `embeddings`, `semantic-search`, `representation-learning`
@@ -3675,6 +3675,11 @@
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[HuggingFace]], [[Segment Anything (SAM)]], [[Transfer learning vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[embeddings]]
 - liens entrants : [[Apprentissage auto-supervisé en vision]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[segment-anything]]
 
+### Modélisation dimensionnelle  ·  notion
+- tags : `data-modeling`, `data-transformation`, `data-pipeline`
+- liens sortants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Great Expectations]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Soda Core]], [[Versionnage de données]], [[dbt Core]], [[pandera]]
+- liens entrants : [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[Fiabilité des données]], [[SQLMesh]], [[dbt Core]]
+
 ### Monitoring de modèle en production  ·  notion
 - tags : `model-monitoring`, `data-drift`, `concept-drift`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[MLflow]], [[Model registry & versioning]]
@@ -3823,7 +3828,7 @@
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]]
-- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Parquet]], [[Stream processing]]
+- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Modélisation dimensionnelle]], [[Parquet]], [[Stream processing]]
 
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -4333,7 +4338,7 @@
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
 - liens sortants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]]
-- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Notebooks-as-code]]
+- liens entrants : [[Architecture médaillon]], [[Change Data Capture (CDC)]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]]
 
 ### Video generation  ·  notion
 - tags : `generative-model`, `video-generation`, `diffusion`, `multimodal`
@@ -4479,10 +4484,10 @@
 - `data-drift` : Data drift, Evidently, Monitoring de modèle en production
 - `data-governance` : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `data-leakage` : Data leakage
-- `data-modeling` : Architecture médaillon  — pas de page concept dédiée
-- `data-pipeline` : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core  — pas de page concept dédiée
+- `data-modeling` : Architecture médaillon, Modélisation dimensionnelle  — pas de page concept dédiée
+- `data-pipeline` : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Modélisation dimensionnelle, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core  — pas de page concept dédiée
 - `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, SQLMesh, Soda Core, dbt Core, pandera, ydata-profiling
-- `data-transformation` : Comparatif - Transformation SQL, SQLMesh, dbt Core  — pas de page concept dédiée
+- `data-transformation` : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core  — pas de page concept dédiée
 - `data-validation` : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera  — pas de page concept dédiée
 - `data-versioning` : Fiabilité des données, Versionnage de données
 - `dataframe` : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling  — pas de page concept dédiée
@@ -4795,9 +4800,9 @@
 - `dashboard` (porté par : Beszel, Comparatif - Apps data & démos ML, Dash, Grafana, Interfaces & apps data, Kibana, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
-- `data-modeling` (porté par : Architecture médaillon)
-- `data-pipeline` (porté par : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core)
-- `data-transformation` (porté par : Comparatif - Transformation SQL, SQLMesh, dbt Core)
+- `data-modeling` (porté par : Architecture médaillon, Modélisation dimensionnelle)
+- `data-pipeline` (porté par : Airflow, Alteryx, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Kestra, Logstash, Mage, Modélisation dimensionnelle, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core)
+- `data-transformation` (porté par : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core)
 - `data-validation` (porté par : Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera)
 - `dataframe` (porté par : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling)
 - `dataviz` (porté par : Comparatif - Visualisation, Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn)
