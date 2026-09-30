@@ -17,7 +17,7 @@ tags: [container, ci-cd, deployment-strategy]
 - Le domaine se lit en deux gestes. **Ce qui tourne, et où** : une image reproductible, puis son exécution sur une machine ou sur un cluster — c'est le sous-domaine [[Conteneurs & orchestration]], de [[Docker]] à [[Kubernetes]]. **Quand ça tourne** : à chaque poussée, chaque tag, chaque nuit — [[GitHub Actions]] construit et teste, [[Argo CD]] déploie depuis Git sur un cluster.
 - Pour un projet data, l'image est ce qui rend un modèle transportable — la version de Python, celle de CUDA, les bibliothèques natives que `pip` ne gère pas. C'est aussi ce qui explique le poids des images ML, et pourquoi le multi-stage et le cache de couches y comptent plus qu'ailleurs.
 - L'usage de [[Docker]] en **test** mérite d'être connu à part : [[testcontainers]] démarre une vraie base ou un vrai broker le temps d'un test, ce qui supprime une catégorie entière de mocks.
-- Le domaine reste incomplet, et le dit : la spécialité de ce brain est l'**on-prem**, et Terraform, Ansible, les reverse proxies et un registre d'images n'y ont pas encore de fiche. C'est un manque connu, pas un choix.
+- Le domaine reste incomplet, et le dit : la spécialité de ce brain est l'**on-prem**, et Terraform, Ansible et un registre d'images n'y ont pas encore de fiche. Les reverse proxies et le TLS sont dans [[Reverse proxies]] (domaine Web & API), parce qu'ils exposent une application avant de la déployer. C'est un manque connu, pas un choix.
 
 ## Choisir
 
