@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 883,
+  "count": 884,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -621,7 +621,8 @@
       "Data leakage"
     ],
     "data-modeling": [
-      "Architecture médaillon"
+      "Architecture médaillon",
+      "Modélisation dimensionnelle"
     ],
     "data-pipeline": [
       "Airflow",
@@ -638,6 +639,7 @@
       "Kestra",
       "Logstash",
       "Mage",
+      "Modélisation dimensionnelle",
       "Orchestration",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Prefect",
@@ -663,6 +665,8 @@
     ],
     "data-transformation": [
       "Comparatif - Transformation SQL",
+      "Data & pipelines",
+      "Modélisation dimensionnelle",
       "SQLMesh",
       "dbt Core"
     ],
@@ -6227,7 +6231,8 @@
         "dataframe",
         "web-scraping",
         "document-parsing",
-        "dataviz"
+        "dataviz",
+        "data-transformation"
       ],
       "alternatives": null,
       "complements": null,
@@ -6625,6 +6630,35 @@
         "[[Spark]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/Modélisation dimensionnelle.md",
+      "nom": "Modélisation dimensionnelle",
+      "alias": [
+        "dimensional modeling",
+        "modélisation de Kimball",
+        "schéma en étoile",
+        "star schema",
+        "faits et dimensions",
+        "SCD",
+        "slowly changing dimensions"
+      ],
+      "role": "notion",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "data-modeling",
+        "data-transformation",
+        "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Fiabilité des données/Soda Core.md",

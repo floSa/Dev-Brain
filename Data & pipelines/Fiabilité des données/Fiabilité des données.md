@@ -17,6 +17,7 @@ tags: [data-quality, data-contract, idempotence, data-versioning, data-validatio
 - Un contrat est une **promesse**, un outil de vérification est ce qui la **teste**. [[Great Expectations]], [[Soda Core]] et [[pandera]] vérifient ; aucun ne décide de ce qu'il faut promettre, ni ne rend un traitement rejouable.
 - Le clivage qui départage les trois est **où vit la donnée qu'on vérifie**. Une table en base se vérifie sur place, en SQL, sans rapatrier les lignes ([[Soda Core]], et [[Great Expectations]] sur ses sources SQL) ; un DataFrame en mémoire se vérifie dans le code ([[pandera]]). Le détail est dans [[Comparatif - Qualité de données]].
 - Les licences ne sont pas les mêmes, et la plus restrictive n'est pas celle qu'on croit : [[Soda Core]] est passé d'Apache-2.0 à Elastic License 2.0 avec la v4 (sources lisibles, service hébergé à des tiers interdit), là où [[Great Expectations]] reste Apache-2.0 et [[pandera]] MIT.
+- Les tables produites se rangent, en aval, en faits et en dimensions : c'est l'objet de [[Modélisation dimensionnelle]], qui décide de la forme de la couche gold.
 - Une porte de qualité se pose là où une erreur coûte le moins cher à corriger : au passage entre couches, avant que la donnée ne soit propagée — cf. [[Architecture médaillon]].
 
 ## Choisir
@@ -25,6 +26,7 @@ tags: [data-quality, data-contract, idempotence, data-versioning, data-validatio
 - Organiser bronze, silver et gold → [[Architecture médaillon]].
 - Écrire ce que la donnée promet à ses consommateurs → [[Contrats de données & qualité]].
 - Figer un état reproductible d'un jeu de données → [[Versionnage de données]].
+- Ranger des tables en faits et dimensions, avec l'historique des dimensions → [[Modélisation dimensionnelle]].
 - Vérifier une table en base avec un rapport HTML lisible par des non-développeurs → [[Great Expectations]].
 - Vérifier une table en base par des contrats YAML, avec un code de sortie pour la CI → [[Soda Core]] (licence à lire avant de redistribuer).
 - Vérifier un DataFrame pandas, Polars ou PySpark dans le code → [[pandera]].
@@ -35,6 +37,7 @@ tags: [data-quality, data-contract, idempotence, data-versioning, data-validatio
 - [[Architecture médaillon]] — domaines : data-eng
 - [[Contrats de données & qualité]] — domaines : data-eng
 - [[ELT vs ETL & idempotence]] — domaines : data-eng
+- [[Modélisation dimensionnelle]] — domaines : data-eng
 - [[Versionnage de données]] — domaines : data-eng, mlops
 
 ### Briques

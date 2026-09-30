@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 883 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 884 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -635,6 +635,7 @@
 - **Architecture médaillon** — domaines : data-eng · alias : medallion, médaillon, architecture médaillon, bronze silver gold, bronze/silver/gold, multi-hop architecture
 - **Contrats de données & qualité** — domaines : data-eng · alias : data contract, contrat de données, data quality, qualité des données, freshness, fraîcheur, validation de données
 - **ELT vs ETL & idempotence** — domaines : data-eng · alias : ELT, ETL, idempotence, rejouabilité, backfill, rerun
+- **Modélisation dimensionnelle** — domaines : data-eng · alias : dimensional modeling, modélisation de Kimball, schéma en étoile, star schema, faits et dimensions, SCD, slowly changing dimensions
 - **Versionnage de données** — domaines : data-eng, mlops · alias : data versioning, versionnage de données, DVC, lakeFS, time travel, data lineage
 
 ### data/format
