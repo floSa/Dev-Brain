@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 899 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 902 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -24,6 +24,11 @@
 
 ### compute/gpu
 - **CuPy** — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
+
+### data/catalogue
+- **DataHub** — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).
+- **OpenLineage** — Spécification ouverte d'événements de lignage — jobs, runs, jeux de données et facettes, dont le lignage colonne — avec des clients Python, Java et Go et des intégrations Spark, Flink, dbt et Airflow ; un standard qu'un catalogue consomme, pas un catalogue (Apache-2.0, LF AI & Data).
+- **OpenMetadata** — Catalogue de métadonnées open source : découverte, lignage table et colonne, glossaire, propriétaires, RBAC, tests de qualité et contrats de données sur plus de 130 connecteurs ; un serveur, une base SQL et un moteur de recherche à héberger (Apache-2.0, éditeur commercial Collate).
 
 ### data/eda
 - **missingno** — Boîte à outils de visualisation des valeurs manquantes — matrice, barres, heatmap et dendrogramme de nullité pour repérer la structure des trous d'un jeu pandas.
