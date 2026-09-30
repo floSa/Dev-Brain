@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[k3s]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]"]
+complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://kubernetes.io/docs/
 url_repo: https://github.com/kubernetes/kubernetes
@@ -86,6 +86,7 @@ CNCF diplômé (graduated) le 2018-03-06.
 - [[Keycloak]] — Fournisseur d'identité complet : OIDC, OAuth 2.0 et SAML 2.0, fédération LDAP et Active Directory, courtage vers d'autres fournisseurs, MFA (TOTP, WebAuthn, passkeys) et plusieurs realms (Apache-2.0, Java sur Quarkus, CNCF incubating) — aucune fonction gardée en édition payante, mais une JVM et une base SQL à exploiter. — l'opérateur Keycloak s'y déploie ; l'API de Kubernetes accepte l'OIDC (`--oidc-issuer-url`) mais ne fournit pas de fournisseur d'identité.
 - [[OpenBao]] — Serveur de secrets sous MPL-2.0, fork communautaire de HashiCorp Vault (LF Edge puis OpenSSF, Go) : coffre clé-valeur, secrets dynamiques de bases de données, PKI, Transit, scellement Shamir ou auto-unseal, Raft intégré — sans fonction gardée en payant, mais qui diverge volontairement de Vault et ne corrige que sa dernière version. — chart Helm, fournisseur CSI et méthode d'authentification Kubernetes ; External Secrets Operator y synchronise ses secrets.
 - [[SOPS]] — Chiffre les valeurs d'un fichier YAML, JSON, ENV ou INI en laissant clés et structure lisibles (MPL-2.0, Go, CNCF Sandbox) — clés age, PGP, KMS cloud ou Transit de Vault ou OpenBao ; le fichier chiffré se versionne dans Git, mais sans serveur : ni audit, ni révocation, ni rotation automatique. — chiffre les manifestes Secret dans Git ; Flux les déchiffre dans le cluster, alors que les Secrets restent non chiffrés dans etcd par défaut.
+- [[Trivy]] — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées). — `trivy k8s` scanne un cluster et ses manifestes (fonction expérimentale) ; l'opérateur Trivy est un projet séparé.
 
 ## Ressources
 

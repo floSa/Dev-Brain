@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[Podman]]"]
-complements: ["[[Docker Compose]]", "[[GitHub Actions]]"]
+complements: ["[[Docker Compose]]", "[[GitHub Actions]]", "[[Trivy]]", "[[Grype]]"]
 tags: [container]
 url_docs: https://docs.docker.com/
 url_repo: https://github.com/moby/moby
@@ -70,6 +70,8 @@ et les produits payants.
 
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling. — la pile de services décrite dans un fichier, sur une machine
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — la CI qui construit et publie les images
+- [[Trivy]] — Scanner tout-en-un d'Aqua Security (Apache-2.0, Go) : vulnérabilités, secrets, configurations IaC et licences d'une image, d'un dépôt, d'un système de fichiers ou d'un SBOM, avec génération CycloneDX et SPDX et une base miroitable hors ligne — mais sa release, ses actions GitHub et ses images Docker Hub ont été compromises du 2026-03-19 au 2026-03-23 (versions sûres publiées). — l'image construite se scanne avant livraison, lue par le socket Docker (vulnérabilités, secrets, configuration du Dockerfile).
+- [[Grype]] — Scanner de vulnérabilités d'Anchore (Apache-2.0, Go) pour images, répertoires et SBOM — il lit un SBOM produit par Syft et le compare à une base quotidienne de 18 sources, importable à la main pour un site isolé ; il ne cherche ni secrets ni configurations, et refuse de scanner avec une base de plus de 5 jours. — l'image locale se compare à sa base par `--from docker`, ou à un SBOM Syft produit à la construction.
 
 ## Ressources
 

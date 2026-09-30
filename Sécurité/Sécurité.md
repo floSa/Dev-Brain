@@ -2,18 +2,18 @@
 role: hub
 nom: Sécurité
 alias: [securite, security, appsec]
-pitch: Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
+pitch: Prouver qui appelle, garder les secrets hors du code, savoir ce que contient et ce qu'expose ce qu'on livre, voir ce qu'un système montre de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 domaines: [ai-eng, infra-ops]
-tags: [authentication, sso, identity-provider, secrets-management, recon, osint, cryptography, ai-security, prompt-injection, jailbreak, guardrails]
+tags: [authentication, sso, identity-provider, secrets-management, vulnerability-scanning, sbom, secret-scanning, sast, supply-chain, recon, osint, cryptography, ai-security, prompt-injection, jailbreak, guardrails]
 ---
 
 # Sécurité
 
-> Prouver qui appelle, garder les secrets hors du code, voir ce qu'un système expose de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
+> Prouver qui appelle, garder les secrets hors du code, savoir ce que contient et ce qu'expose ce qu'on livre, voir ce qu'un système montre de lui-même vu de l'extérieur, et tenir un modèle qui obéit à ce qu'on lui donne à lire.
 
 ## Ce qu'il faut comprendre
 
-- **Quatre** activités sans recouvrement partagent ce domaine. **Authentifier** est le sous-domaine [[Authentification]] : vérifier un jeton dans son propre service ([[PyJWT]]), ou déléguer la connexion à un fournisseur d'identité ([[Keycloak]], [[Authentik]], [[Authelia]]) — [[OAuth2 et OpenID Connect]] en est la notion. **Garder les secrets** ([[OpenBao]], [[SOPS]]) est le pendant : ce qui ouvre les autres services ne vit ni dans le dépôt ni dans l'image — [[Gestion des secrets]]. **Reconnaître** ([[Web-Check]], [[osint4all]]) est une inspection depuis l'extérieur, sans accès privilégié. **Tenir un système qui embarque un modèle** est une discipline entière, arrivée ici au lot 4 et assez fournie depuis pour tenir son propre dossier — [[Systèmes IA]] : ce n'est pas un sous-sujet de l'IA générative, c'est une pratique de sécurité qui traverse les modèles.
+- **Cinq** activités sans recouvrement partagent ce domaine. **Authentifier** est le sous-domaine [[Authentification]] : vérifier un jeton dans son propre service ([[PyJWT]]), ou déléguer la connexion à un fournisseur d'identité ([[Keycloak]], [[Authentik]], [[Authelia]]) — [[OAuth2 et OpenID Connect]] en est la notion. **Garder les secrets** ([[OpenBao]], [[SOPS]]) est le pendant : ce qui ouvre les autres services ne vit ni dans le dépôt ni dans l'image — [[Gestion des secrets]]. **Analyser ce qu'on livre** est le sous-domaine [[Analyse de vulnérabilités]] : composants vulnérables d'une image ou d'un dépôt ([[Trivy]], [[Grype]]), secrets oubliés dans l'historique Git ([[Gitleaks]]), motifs dangereux dans le code ([[Semgrep]]) et suivi des versions déjà livrées ([[Dependency-Track]]) — [[Supply chain logicielle et SBOM]] en est la notion. **Reconnaître** ([[Web-Check]], [[osint4all]]) est une inspection depuis l'extérieur, sans accès privilégié. **Tenir un système qui embarque un modèle** est une discipline entière, arrivée ici au lot 4 et assez fournie depuis pour tenir son propre dossier — [[Systèmes IA]] : ce n'est pas un sous-sujet de l'IA générative, c'est une pratique de sécurité qui traverse les modèles.
 - Sur les JWT, la faute classique n'est pas cryptographique mais logique : **un token décodé n'est pas un token vérifié**. Lire les revendications sans valider la signature, l'algorithme attendu, l'émetteur et l'expiration revient à faire confiance à l'appelant. [[PyJWT]] rend la vérification explicite ; c'est au code de la demander.
 - Un JWT est **porteur** (*bearer*) : quiconque l'a l'utilise, et il reste valide jusqu'à son expiration. Il n'y a pas de révocation sans état côté serveur. D'où des durées de vie courtes, et un jeton de rafraîchissement séparé.
 - La reconnaissance passive ([[Web-Check]]) est aussi un outil **défensif** : elle dit ce qu'un tiers voit de votre propre infrastructure — en-têtes manquants, certificats, sous-domaines oubliés, technologies annoncées.
@@ -25,6 +25,7 @@ tags: [authentication, sso, identity-provider, secrets-management, recon, osint,
 
 - Tout ce qui prouve qui appelle — jetons, connexion unique, fournisseur d'identité → [[Authentification]] : [[PyJWT]] pour vérifier un JWT en Python, [[Keycloak]], [[Authentik]] ou [[Authelia]] pour déléguer la connexion ([[Comparatif - Fournisseurs d'identité]]).
 - Stocker, distribuer et faire tourner des secrets hors du code → [[OpenBao]] (un serveur qui journalise et révoque, fork open source de Vault) ou [[SOPS]] (un fichier chiffré versionné avec le code) ; [[Gestion des secrets]] dit ce qu'il ne faut pas faire.
+- Savoir ce que contient une image ou un paquet qu'on livre, chercher un secret oublié dans un dépôt, passer le code en revue ou suivre les versions livrées → [[Analyse de vulnérabilités]] : [[Trivy]] ou [[Grype]] pour les composants, [[Gitleaks]] pour les secrets, [[Semgrep]] pour le code, [[Dependency-Track]] pour le suivi ([[Comparatif - Scanners de sécurité]]).
 - Auditer un site depuis sa seule URL, en défense comme en reconnaissance → [[Web-Check]].
 - Chercher par où commencer une recherche en source ouverte → [[osint4all]].
 - Tout ce qui touche à la sécurité d'un système qui embarque un modèle → [[Systèmes IA]] : le panorama ([[AI security]]), l'entrée non fiable qui détourne les instructions ([[Prompt injection]]), le contournement de l'alignement ([[Jailbreaking and defenses]]), le filtrage d'entrée et de sortie ([[Guardrails]]) et l'isolation du code généré ([[Sandboxing de code généré]]).
@@ -32,7 +33,7 @@ tags: [authentication, sso, identity-provider, secrets-management, recon, osint,
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Authentification]] · [[Systèmes IA]]
+- [[Analyse de vulnérabilités]] · [[Authentification]] · [[Systèmes IA]]
 
 ### Notions
 - [[Gestion des secrets]] — domaines : infra-ops, mlops
