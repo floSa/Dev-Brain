@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[docTR]]", "[[PaddleOCR]]", "[[Tesseract]]"]
-complements: ["[[Docling]]"]
+complements: ["[[Docling]]", "[[pypdfium2]]"]
 tags: [ocr, document-parsing, computer-vision, deep-learning]
 url_docs: https://www.jaided.ai/easyocr/documentation/
 url_repo: https://github.com/JaidedAI/EasyOCR
@@ -67,6 +67,7 @@ release date de septembre 2024.
 ### Compléments
 
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local. — l'étage de conversion structurée, qui l'accepte comme moteur OCR.
+- [[pypdfium2]] — Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page. — rend la page PDF en image pour cet OCR qui lit des images.
 
 ## Ressources
 

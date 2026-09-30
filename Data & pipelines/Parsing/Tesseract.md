@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[docTR]]", "[[PaddleOCR]]", "[[EasyOCR]]"]
-complements: ["[[PyMuPDF]]", "[[Docling]]", "[[Unstructured]]"]
+complements: ["[[PyMuPDF]]", "[[Docling]]", "[[Unstructured]]", "[[pypdfium2]]"]
 tags: [ocr, document-parsing, pdf]
 url_docs: https://tesseract-ocr.github.io/tessdoc/
 url_repo: https://github.com/tesseract-ocr/tesseract
@@ -71,6 +71,7 @@ redressement.
 - [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale. — son OCR intégré s'appuie sur Tesseract, à installer à part.
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local. — l'un des moteurs OCR que Docling sait brancher, en ligne de commande ou via tesserocr.
 - [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG. — l'OCR dont son parsing avancé dépend comme binaire système.
+- [[pypdfium2]] — Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page. — rend la page PDF en image pour ce moteur qui lit des images.
 
 ## Ressources
 

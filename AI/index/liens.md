@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 818 pages actives.
+> 821 pages actives.
 
 ## Par page
 
@@ -388,12 +388,12 @@
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens entrants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
 
 ### draw.io  ·  brique
 - tags : `diagram`
@@ -422,8 +422,8 @@
 
 ### EasyOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Tesseract]], [[docTR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Tesseract]], [[docTR]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[pypdfium2]]
 
 ### Elasticsearch  ·  brique
 - tags : `search`, `distributed`
@@ -1148,7 +1148,7 @@
 ### PaddleOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `table-extraction`, `computer-vision`, `deep-learning`
 - liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1175,10 +1175,15 @@
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
 - liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
 
+### pdfminer.six  ·  brique
+- tags : `pdf`, `document-parsing`, `layout-analysis`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+
 ### pdfplumber  ·  brique
 - tags : `pdf`, `table-extraction`, `document-parsing`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### Penpot  ·  brique
 - tags : `design-tool`
@@ -1337,13 +1342,23 @@
 
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[STUMPY]], [[Scikit-Learn]]
 - liens entrants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[STUMPY]]
+
+### pypdf  ·  brique
+- tags : `pdf`, `document-parsing`
+- liens sortants : [[Comparatif - Parsing de documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[docTR]], [[pdfminer.six]], [[pdfplumber]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Parsing]], [[PyMuPDF]], [[pdfminer.six]], [[pdfplumber]], [[pypdfium2]]
+
+### pypdfium2  ·  brique
+- tags : `pdf`, `document-parsing`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pypdf]]
 
 ### pytest  ·  brique
 - tags : `testing`
@@ -1707,8 +1722,8 @@
 
 ### Tesseract  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
@@ -2082,8 +2097,8 @@
 
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Comparatif - Plateformes data & IA  ·  comparatif
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`
@@ -2347,8 +2362,8 @@
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Passerelles  ·  hub
 - tags : `llm-gateway`, `routing`, `caching`
@@ -4178,7 +4193,7 @@
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfplumber, selectolax  — pas de page concept dédiée
+- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
@@ -4235,7 +4250,7 @@
 - `knowledge-graph` : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA  — pas de page concept dédiée
-- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector  — pas de page concept dédiée
+- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
 - `learning-theory` : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
@@ -4314,7 +4329,7 @@
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfplumber  — pas de page concept dédiée
+- `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
 - `point-estimation` : Bayésien, Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
@@ -4474,7 +4489,7 @@
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Calcul distribué, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Elasticsearch, Flink, Hyperopt, LightGBM, Loki, Modin, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, Ray, Ray Serve, Ray Tune, Snowflake, Spark, Temporal, TensorFlow, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfplumber, selectolax)
+- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
@@ -4506,7 +4521,7 @@
 - `knowledge-graph` (porté par : Construction de graphes de connaissances, GraphRAG, Graphify, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Comparatif - Serving de modèles, DataRobot, Flyte, KServe, Microsoft Azure Machine Learning, Seldon Core, Serving)
 - `lakehouse` (porté par : Apache Iceberg, Architecture médaillon, Databricks, Partitionnement & layout de données, Plateformes data & IA)
-- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector)
+- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
 - `learning-theory` (porté par : Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension)
@@ -4556,7 +4571,7 @@
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
-- `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfplumber)
+- `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
