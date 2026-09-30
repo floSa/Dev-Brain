@@ -11,7 +11,7 @@ os:
 langage: 
 alternatives: []
 complements: []
-tags: [anomaly-detection, benchmark]
+tags: [benchmark]
 url_docs: https://thedatumorg.github.io/TSB-AD/
 url_repo: https://github.com/TheDatumOrg/TSB-AD
 ---
@@ -19,6 +19,11 @@ url_repo: https://github.com/TheDatumOrg/TSB-AD
 # Jeux de données d'anomalies
 
 <!-- AUTO:BANDEAU:START -->
+> Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Annuaire | — | rien à exécuter | — | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -80,8 +85,7 @@ Trois jeux appellent une lecture plus fine :
 - Papier — MVTec AD (CVPR 2019) : https://openaccess.thecvf.com/content_CVPR_2019/html/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.html
 - Documentation — MVTec AD 2 : https://www.mvtec.com/company/research/datasets/mvtec-ad-2 (serveur d'évaluation : https://benchmark.mvtec.com/)
 - Papier — MVTec AD 2 : https://arxiv.org/abs/2503.21622
-- Dépôt — VisA : https://github.com/amazon-science/spot-diff
-- Papier — VisA (ECCV 2022) : https://arxiv.org/abs/2207.14315
+- Dépôt — VisA : https://github.com/amazon-science/spot-diff (article ECCV 2022 : https://arxiv.org/abs/2207.14315)
 - Documentation — Real-IAD : https://realiad4ad.github.io/Real-IAD/ (données : https://huggingface.co/datasets/Real-IAD/Real-IAD)
 - Papier — Real-IAD (CVPR 2024) : https://arxiv.org/abs/2403.12580
 - Dépôt — NAB : https://github.com/numenta/NAB
@@ -89,8 +93,7 @@ Trois jeux appellent une lecture plus fine :
 - Dépôt — SMAP/MSL : https://github.com/khundman/telemanom
 - Documentation — SWaT : https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/ (conditions d'usage : https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/)
 - Dépôt — TSB-AD : https://github.com/TheDatumOrg/TSB-AD (page du projet : https://thedatumorg.github.io/TSB-AD/)
-- Dépôt — ADBench : https://github.com/Minqi824/ADBench
-- Papier — ADBench (NeurIPS 2022) : https://arxiv.org/abs/2206.09426
+- Dépôt — ADBench : https://github.com/Minqi824/ADBench (article NeurIPS 2022 : https://arxiv.org/abs/2206.09426)
 - Documentation — ODDS : https://odds.cs.stonybrook.edu/ (page non ouverte le 2026-10-02)
 - Papier — Wu et Keogh, critique des jeux de séries : https://arxiv.org/abs/2009.13807
 
