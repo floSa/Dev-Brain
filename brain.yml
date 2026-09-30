@@ -911,7 +911,20 @@ axes:
           tableau:
             libelle: "DataFrames"
           format:
-            frontiere: "Le rangement physique sur disque, qui decide de la vitesse de lecture et non de la confiance."
+            libelle: "Formats de fichiers et de tables"
+            motif: >
+              Promu le 2026-09-30, sur arbitrage de floSa : l insertion de Delta
+              Lake porte la valeur a 5 pages (Parquet, Avro, Apache Iceberg,
+              Partitionnement & layout, Delta Lake). Libelle au pluriel et en
+              deux termes parce que le dossier range les DEUX etages : le format
+              de fichier (Parquet, Avro) et le format de table posé par-dessus
+              (Iceberg, Delta Lake). Nom verifie unique dans le vault.
+            frontiere: >
+              Le rangement physique sur disque, qui decide de la vitesse de
+              lecture et non de la confiance. Couvre aussi le format de TABLE
+              (Iceberg, Delta Lake) dont le time travel est un effet du format.
+              Un OUTIL de versionnage qui s applique de l exterieur a des
+              fichiers ou a un depot d objets (DVC, lakeFS) est data/fiabilite.
           orchestration:
             libelle: "Orchestration"
             frontiere: >
@@ -943,6 +956,9 @@ axes:
               valeur range aussi les OUTILS qui verifient un jeu livre (Great
               Expectations, Soda Core, pandera) ; ils valident des colonnes, des
               volumes, une fraicheur, pas la forme d un objet applicatif.
+              Elargie le 2026-09-30 (conversation 14) : elle range aussi les OUTILS
+              de versionnage de jeux (DVC, lakeFS), comme elle range les outils de
+              qualite. Le time travel d un format de table reste data/format.
           transformation:
             libelle: "Transformation"
             motif: >

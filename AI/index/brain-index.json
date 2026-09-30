@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 907,
+  "count": 912,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -438,6 +438,7 @@
       "Comparatif - Bases colonnes",
       "Comparatif - Manipulation de données",
       "DuckDB",
+      "Formats de fichiers et de tables",
       "LanceDB",
       "Parquet",
       "Polars",
@@ -732,8 +733,14 @@
       "pandera"
     ],
     "data-versioning": [
+      "Apache Iceberg",
+      "Comparatif - Versionnage de données",
+      "DVC",
+      "Delta Lake",
       "Fiabilité des données",
-      "Versionnage de données"
+      "Formats de fichiers et de tables",
+      "Versionnage de données",
+      "lakeFS"
     ],
     "dataframe": [
       "Comparatif - Manipulation de données",
@@ -1189,6 +1196,8 @@
     ],
     "file-format": [
       "Avro",
+      "Delta Lake",
+      "Formats de fichiers et de tables",
       "Parquet",
       "Partitionnement & layout de données"
     ],
@@ -1578,6 +1587,8 @@
       "Apache Iceberg",
       "Architecture médaillon",
       "Databricks",
+      "Delta Lake",
+      "Formats de fichiers et de tables",
       "Partitionnement & layout de données",
       "Plateformes data & IA"
     ],
@@ -2041,6 +2052,7 @@
     "ml-pipeline": [
       "AWS SageMaker",
       "Comparatif - Orchestrateurs ML",
+      "DVC",
       "Dataiku",
       "Flyte",
       "Google Cloud Vertex AI",
@@ -2324,7 +2336,8 @@
       "RustFS",
       "SeaweedFS",
       "Stockage",
-      "Stockage objet et API S3"
+      "Stockage objet et API S3",
+      "lakeFS"
     ],
     "object-tracking": [
       "OpenCV",
@@ -2817,6 +2830,7 @@
     "reproducibility": [
       "Comparatif - Gestionnaires de paquets Python",
       "Comparatif - Orchestrateurs ML",
+      "DVC",
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
@@ -2825,6 +2839,7 @@
       "Rule - Structure de projet",
       "Suivi d'expériences",
       "jupytext",
+      "lakeFS",
       "papermill"
     ],
     "reranking": [
@@ -2919,7 +2934,8 @@
       "RustFS",
       "SeaweedFS",
       "Stockage",
-      "Stockage objet et API S3"
+      "Stockage objet et API S3",
+      "lakeFS"
     ],
     "safety": [
       "AI security",
@@ -2954,6 +2970,8 @@
       "Apache Iceberg",
       "Avro",
       "Contrats de données & qualité",
+      "Delta Lake",
+      "Formats de fichiers et de tables",
       "dlt"
     ],
     "search": [
@@ -3052,6 +3070,7 @@
       "Zabbix",
       "croc",
       "k3s",
+      "lakeFS",
       "olmOCR"
     ],
     "self-play": [
@@ -4601,7 +4620,8 @@
         "[[SQLMesh]]",
         "[[Soda Core]]",
         "[[Airbyte]]",
-        "[[dlt]]"
+        "[[dlt]]",
+        "[[Delta Lake]]"
       ],
       "maturite": "production"
     },
@@ -5390,7 +5410,8 @@
         "[[OpenMetadata]]",
         "[[DataHub]]",
         "[[Label Studio]]",
-        "[[CVAT]]"
+        "[[CVAT]]",
+        "[[lakeFS]]"
       ],
       "maturite": "production"
     },
@@ -6182,7 +6203,9 @@
         "[[Great Expectations]]",
         "[[pandera]]",
         "[[OpenLineage]]",
-        "[[DataHub]]"
+        "[[DataHub]]",
+        "[[Delta Lake]]",
+        "[[lakeFS]]"
       ],
       "maturite": "production"
     },
@@ -6200,58 +6223,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "Data & pipelines/Apache Iceberg.md",
-      "nom": "Apache Iceberg",
-      "alias": [
-        "Iceberg",
-        "iceberg"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "langage": "Java",
-      "domaines": null,
-      "pitch": "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).",
-      "tags": [
-        "lakehouse",
-        "olap",
-        "schema-evolution"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[dbt Core]]",
-        "[[Airbyte]]",
-        "[[Debezium]]",
-        "[[Apache NiFi]]",
-        "[[DataHub]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Avro.md",
-      "nom": "Avro",
-      "alias": [
-        "avro",
-        "Apache Avro"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "langage": "Java",
-      "domaines": null,
-      "pitch": "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.",
-      "tags": [
-        "file-format",
-        "serialization",
-        "schema-evolution"
-      ],
-      "alternatives": [
-        "[[Parquet]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Catalogue de données et lignage.md",
@@ -6690,6 +6661,23 @@
       "maturite": null
     },
     {
+      "path": "Data & pipelines/Fiabilité des données/Comparatif - Versionnage de données.md",
+      "nom": "Comparatif - Versionnage de données",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "data/fiabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "data-versioning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Fiabilité des données/Contrats de données & qualité.md",
       "nom": "Contrats de données & qualité",
       "alias": [
@@ -6718,6 +6706,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Fiabilité des données/DVC.md",
+      "nom": "DVC",
+      "alias": [
+        "dvc",
+        "Data Version Control"
+      ],
+      "role": "brique",
+      "categorie": "data/fiabilite",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Versionnage de données et de modèles en ligne de commande, posé sur Git : des pointeurs `.dvc` dans le dépôt, le contenu dans un cache adressé par le hash et des remotes (S3 compatible, SSH, NAS), plus des pipelines reproductibles par `dvc repro` ; Apache-2.0, projet racheté par lakeFS en novembre 2025.",
+      "tags": [
+        "data-versioning",
+        "reproducibility",
+        "ml-pipeline"
+      ],
+      "alternatives": [
+        "[[lakeFS]]"
+      ],
+      "complements": [
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[MLflow]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Fiabilité des données/ELT vs ETL & idempotence.md",
@@ -6890,6 +6906,40 @@
       "maturite": null
     },
     {
+      "path": "Data & pipelines/Fiabilité des données/lakeFS.md",
+      "nom": "lakeFS",
+      "alias": [
+        "lakefs",
+        "lakeFS Community"
+      ],
+      "role": "brique",
+      "categorie": "data/fiabilite",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur.",
+      "tags": [
+        "data-versioning",
+        "reproducibility",
+        "object-storage",
+        "s3-compatible",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[DVC]]"
+      ],
+      "complements": [
+        "[[MinIO]]",
+        "[[Ceph]]",
+        "[[Postgres]]",
+        "[[Spark]]",
+        "[[Delta Lake]]",
+        "[[MLflow]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Fiabilité des données/pandera.md",
       "nom": "pandera",
       "alias": [
@@ -6941,9 +6991,187 @@
       "complements": [
         "[[Debezium]]",
         "[[Kafka]]",
-        "[[OpenLineage]]"
+        "[[OpenLineage]]",
+        "[[Delta Lake]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Apache Iceberg.md",
+      "nom": "Apache Iceberg",
+      "alias": [
+        "Iceberg",
+        "iceberg"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).",
+      "tags": [
+        "lakehouse",
+        "olap",
+        "schema-evolution",
+        "data-versioning"
+      ],
+      "alternatives": [
+        "[[Delta Lake]]"
+      ],
+      "complements": [
+        "[[dbt Core]]",
+        "[[Airbyte]]",
+        "[[Debezium]]",
+        "[[Apache NiFi]]",
+        "[[DataHub]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Avro.md",
+      "nom": "Avro",
+      "alias": [
+        "avro",
+        "Apache Avro"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Format de sérialisation orienté ligne avec schéma JSON embarqué : encodage binaire compact et évolution de schéma (compatibilité ascendante / descendante) ; pivot de l'échange de données et des messages Kafka.",
+      "tags": [
+        "file-format",
+        "serialization",
+        "schema-evolution"
+      ],
+      "alternatives": [
+        "[[Parquet]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Delta Lake.md",
+      "nom": "Delta Lake",
+      "alias": [
+        "delta lake",
+        "Delta",
+        "delta-rs",
+        "deltalake"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "langage": "Scala",
+      "domaines": null,
+      "pitch": "Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source.",
+      "tags": [
+        "lakehouse",
+        "file-format",
+        "schema-evolution",
+        "data-versioning"
+      ],
+      "alternatives": [
+        "[[Apache Iceberg]]"
+      ],
+      "complements": [
+        "[[Parquet]]",
+        "[[Spark]]",
+        "[[Flink]]",
+        "[[DuckDB]]",
+        "[[MinIO]]",
+        "[[lakeFS]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Formats de fichiers et de tables.md",
+      "nom": "Formats de fichiers et de tables",
+      "alias": [
+        "formats de données",
+        "formats de table",
+        "lakehouse"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "data-sci"
+      ],
+      "pitch": "Comment la donnée est rangée sur disque ou sur stockage objet — le format de fichier qui décide de la vitesse de lecture, le format de table posé par-dessus qui apporte transactions et time travel.",
+      "tags": [
+        "file-format",
+        "lakehouse",
+        "schema-evolution",
+        "data-versioning",
+        "columnar"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Parquet.md",
+      "nom": "Parquet",
+      "alias": [
+        "parquet",
+        "Apache Parquet"
+      ],
+      "role": "brique",
+      "categorie": "data/format",
+      "famille": "specification",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.",
+      "tags": [
+        "file-format",
+        "columnar",
+        "olap"
+      ],
+      "alternatives": [
+        "[[Avro]]"
+      ],
+      "complements": [
+        "[[dbt Core]]",
+        "[[Airbyte]]",
+        "[[dlt]]",
+        "[[Delta Lake]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Formats de fichiers et de tables/Partitionnement & layout de données.md",
+      "nom": "Partitionnement & layout de données",
+      "alias": [
+        "partitionnement",
+        "partitioning",
+        "data layout",
+        "layout de données",
+        "bucketing",
+        "partition pruning",
+        "taille de fichiers",
+        "small files problem"
+      ],
+      "role": "notion",
+      "categorie": "data/format",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "partitioning",
+        "file-format",
+        "lakehouse",
+        "olap"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Ingestion de données/Airbyte.md",
@@ -7841,34 +8069,6 @@
       "maturite": "production"
     },
     {
-      "path": "Data & pipelines/Parquet.md",
-      "nom": "Parquet",
-      "alias": [
-        "parquet",
-        "Apache Parquet"
-      ],
-      "role": "brique",
-      "categorie": "data/format",
-      "famille": "specification",
-      "langage": "Java",
-      "domaines": null,
-      "pitch": "Format de fichier colonnaire sur disque : stockage par colonnes, encodage et compression par colonne, statistiques par row group pour le predicate / projection pushdown ; la lingua franca de l'analytique sur stockage objet.",
-      "tags": [
-        "file-format",
-        "columnar",
-        "olap"
-      ],
-      "alternatives": [
-        "[[Avro]]"
-      ],
-      "complements": [
-        "[[dbt Core]]",
-        "[[Airbyte]]",
-        "[[dlt]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Data & pipelines/Parsing/Comparatif - Parsing de documents.md",
       "nom": "Comparatif - Parsing de documents",
       "alias": null,
@@ -8482,37 +8682,6 @@
         "[[EasyOCR]]"
       ],
       "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Partitionnement & layout de données.md",
-      "nom": "Partitionnement & layout de données",
-      "alias": [
-        "partitionnement",
-        "partitioning",
-        "data layout",
-        "layout de données",
-        "bucketing",
-        "partition pruning",
-        "taille de fichiers",
-        "small files problem"
-      ],
-      "role": "notion",
-      "categorie": "data/format",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "partitioning",
-        "file-format",
-        "lakehouse",
-        "olap"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
     },
     {
       "path": "Data & pipelines/SDV.md",
@@ -9686,7 +9855,8 @@
         "[[OpenMetadata]]",
         "[[DataHub]]",
         "[[Label Studio]]",
-        "[[CVAT]]"
+        "[[CVAT]]",
+        "[[lakeFS]]"
       ],
       "maturite": "production"
     },
@@ -20256,7 +20426,9 @@
       ],
       "complements": [
         "[[Evidently]]",
-        "[[Databricks]]"
+        "[[Databricks]]",
+        "[[lakeFS]]",
+        "[[DVC]]"
       ],
       "maturite": "production"
     },
@@ -26976,7 +27148,10 @@
         "[[AWS S3]]",
         "[[Cloudflare R2]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[lakeFS]]",
+        "[[DVC]]"
+      ],
       "maturite": "production"
     },
     {
@@ -27076,7 +27251,11 @@
         "[[AWS S3]]",
         "[[Cloudflare R2]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Delta Lake]]",
+        "[[lakeFS]]",
+        "[[DVC]]"
+      ],
       "maturite": "deprecated"
     },
     {
