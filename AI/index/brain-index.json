@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 842,
+  "count": 844,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -499,9 +499,11 @@
       "Daytona",
       "DevOps",
       "Docker",
+      "Docker Compose",
       "E2B",
       "Modal",
       "Pattern - Stack démo ML locale multi-services",
+      "Podman",
       "Rule - Packaging démo",
       "Sandboxing de code généré",
       "testcontainers"
@@ -2822,6 +2824,7 @@
       "Observabilité",
       "OpenMAIC",
       "OpenTelemetry",
+      "Podman",
       "Prometheus",
       "Stirling PDF",
       "Stockage",
@@ -8249,6 +8252,31 @@
       "maturite": null
     },
     {
+      "path": "DevOps/Docker Compose.md",
+      "nom": "Docker Compose",
+      "alias": [
+        "compose",
+        "docker-compose",
+        "docker compose",
+        "compose.yaml"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling.",
+      "tags": [
+        "container"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Docker]]",
+        "[[Podman]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "DevOps/Docker.md",
       "nom": "Docker",
       "alias": [
@@ -8263,8 +8291,11 @@
       "tags": [
         "container"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Podman]]"
+      ],
       "complements": [
+        "[[Docker Compose]]",
         "[[GitHub Actions]]"
       ],
       "maturite": "production"
@@ -8289,6 +8320,32 @@
       "alternatives": [],
       "complements": [
         "[[Docker]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/Podman.md",
+      "nom": "Podman",
+      "alias": [
+        "podman",
+        "podman desktop",
+        "quadlet"
+      ],
+      "role": "brique",
+      "categorie": "devops/conteneur",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.",
+      "tags": [
+        "container",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Docker]]"
+      ],
+      "complements": [
+        "[[Docker Compose]]"
       ],
       "maturite": "production"
     },
