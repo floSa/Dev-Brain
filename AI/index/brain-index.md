@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 931 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 937 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -311,8 +311,11 @@
 - **smolagents** — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
 
 ### llm/assistant
+- **AnythingLLM** — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
 - **Hermes Agent** — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
+- **LibreChat** — Interface de chat auto-hébergée multi-fournisseurs (MIT, rachetée par ClickHouse en novembre 2025) — agents avec MCP et interpréteur de code, artefacts, RAG par service dédié, SSO OIDC, SAML et LDAP, panneau d'administration ; exige MongoDB.
 - **LM Studio Bionic** — Agent de bureau pour modèles ouverts (LM Studio, juillet 2026, propriétaire mais gratuit en local) — projets Work et Code, transcription vocale hors ligne, serveurs MCP ; inférence locale par défaut, bascule optionnelle vers un cloud à rétention zéro pour les tâches lourdes.
+- **Open WebUI** — Interface web de chat auto-hébergée pour modèles locaux (Ollama) et API OpenAI-compatibles, licence propre à clause de marque (BSD-3 + interdiction de retirer le nom et le logo au-delà de 50 utilisateurs, non OSI) — RAG, rôles et groupes, LDAP et OIDC, extensible par outils et fonctions Python.
 - **OpenClaw** — Assistant personnel IA auto-hébergé (MIT, ex-Warelay/Moltbot, gouverné par une fondation à but non lucratif) — agent joignable depuis WhatsApp, Telegram, Discord ou Signal, qui exécute des tâches via outils, skills et serveurs MCP sur la machine de l'utilisateur.
 - **OpenHands** — Agent de développement autonome open-source (ex-OpenDevin, All Hands AI, MIT) — écrit du code, exécute des commandes shell et navigue le web pour réaliser des tâches d'ingénierie de bout en bout ; self-host ou OpenHands Cloud managé.
 - **OpenMAIC** — Application de classe virtuelle multi-agents (MIT, THU-MAIC / Tsinghua) — transforme un sujet ou un document en cours interactif : slides narrées, quiz, simulations HTML, professeur et camarades IA qui parlent et dessinent au tableau ; export PPTX/HTML, hébergé ou auto-déployé.
@@ -376,6 +379,7 @@
 - **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 - **LlamaIndex** — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - **RAGatouille** — Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
+- **RAGFlow** — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ### llm/runtime
 - **llama.cpp** — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
@@ -796,6 +800,7 @@
 - **Late-interaction retrieval** — domaines : ai-eng · alias : colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim
 - **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
+- **RAG documentaire on-prem - clé en main ou assemblé** — domaines : ai-eng · alias : RAG documentaire on-prem, RAG on-prem, RAG documentaire on-prem : clé en main ou assemblé, moteur RAG clé en main, RAG clé en main ou assemblé, RAG interne
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
 
 ### llm/runtime
@@ -1219,6 +1224,9 @@
 
 ### llm/agents
 - **Comparatif - Frameworks LLM** — —
+
+### llm/assistant
+- **Comparatif - Plateformes LLM auto-hébergées** — —
 
 ### llm/eval
 - **Comparatif - Évaluation LLM** — —
