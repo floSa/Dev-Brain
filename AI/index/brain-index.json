@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 839,
+  "count": 841,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -849,9 +849,11 @@
       "Comparatif - Calcul distribué",
       "Dask",
       "Databricks",
+      "Dgraph",
       "Elasticsearch",
       "Flink",
       "Hyperopt",
+      "JanusGraph",
       "LightGBM",
       "Loki",
       "Modin",
@@ -1224,7 +1226,9 @@
       "Bases de données",
       "Bases de graphes",
       "Comparatif - Bases graphes",
+      "Dgraph",
       "GraphRAG",
+      "JanusGraph",
       "Memgraph",
       "Nebula Graph",
       "Neo4j",
@@ -3884,7 +3888,9 @@
         "[[MongoDB]]",
         "[[Redis]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[JanusGraph]]"
+      ],
       "maturite": "production"
     },
     {
@@ -3968,7 +3974,8 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Neo4j]]"
+        "[[Neo4j]]",
+        "[[Dgraph]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4017,6 +4024,62 @@
       "maturite": null
     },
     {
+      "path": "Bases de données/Bases de graphes/Dgraph.md",
+      "nom": "Dgraph",
+      "alias": [
+        "dgraph",
+        "Dgraph Labs",
+        "DQL",
+        "dgraph-io"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Base de graphes distribuée en Go (Apache-2.0) — sharding par prédicat, Raft, DQL et GraphQL natif ; reprise par Istari Digital en 2025, sans offre managée ni Cypher, et à la gouvernance encore fragile.",
+      "tags": [
+        "graph-db",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Nebula Graph]]",
+        "[[ArangoDB]]",
+        "[[JanusGraph]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de graphes/JanusGraph.md",
+      "nom": "JanusGraph",
+      "alias": [
+        "janusgraph",
+        "Janus",
+        "Janus Graph",
+        "TinkerPop JanusGraph"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Couche de graphe Java au-dessus de Cassandra, ScyllaDB ou HBase et d'un index Elasticsearch ou Solr (Apache-2.0, Linux Foundation) — Gremlin, milliards de sommets ; trois composants à opérer, et aucune version stable depuis novembre 2024.",
+      "tags": [
+        "graph-db",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Nebula Graph]]",
+        "[[Dgraph]]"
+      ],
+      "complements": [
+        "[[Apache Cassandra]]",
+        "[[Elasticsearch]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Bases de données/Bases de graphes/Memgraph.md",
       "nom": "Memgraph",
       "alias": [
@@ -4060,7 +4123,9 @@
         "distributed"
       ],
       "alternatives": [
-        "[[Neo4j]]"
+        "[[Neo4j]]",
+        "[[JanusGraph]]",
+        "[[Dgraph]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -4468,7 +4533,8 @@
       "complements": [
         "[[Kibana]]",
         "[[Logstash]]",
-        "[[Beats]]"
+        "[[Beats]]",
+        "[[JanusGraph]]"
       ],
       "maturite": "production"
     },

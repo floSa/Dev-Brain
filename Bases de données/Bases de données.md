@@ -33,7 +33,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 ### Graphe
 - Nœuds et arêtes typées ; idéal pour les données fortement connectées et le parcours de relations profondes que SQL exprime mal.
-- Implémentations : [[Neo4j]] (natif, mono-instance en Community), [[Memgraph]] (en mémoire), [[Apache AGE]] (extension Postgres), [[ArangoDB]] (multi-modèle) et le distribué [[Nebula Graph]]. Le sous-domaine a son hub : [[Bases de graphes]].
+- Implémentations : [[Neo4j]] (natif, mono-instance en Community), [[Memgraph]] (en mémoire), [[Apache AGE]] (extension Postgres), [[ArangoDB]] (multi-modèle) et les distribués [[Nebula Graph]], [[Dgraph]] et [[JanusGraph]]. Le sous-domaine a son hub : [[Bases de graphes]].
 
 ### Vectoriel
 - Stocke des embeddings et retrouve les plus proches par recherche ANN. Détail : [[Bases de données vectorielles]].
@@ -61,7 +61,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 - Implémentations relationnelles (Dev) : [[Postgres]], [[MySQL]], [[MariaDB]], [[SQLite]], [[CockroachDB]], [[Microsoft SQL Server]].
 - Implémentations NoSQL (Dev) : [[MongoDB]] (document), [[Redis]] (clé-valeur), [[Apache Cassandra]] (wide-column).
-- Implémentations graphe : [[Neo4j]], [[Memgraph]], [[Apache AGE]], [[ArangoDB]], [[Nebula Graph]] (distribué) — détail dans [[Bases de graphes]].
+- Implémentations graphe : [[Neo4j]], [[Memgraph]], [[Apache AGE]], [[ArangoDB]], [[Nebula Graph]], [[Dgraph]], [[JanusGraph]] (distribués) — détail dans [[Bases de graphes]].
 - Implémentations colonne / OLAP (Dev) : [[ClickHouse]] (distribué), [[DuckDB]] (embarqué).
 - Implémentations temporelles (Dev) : [[TimescaleDB]] (extension Postgres), [[InfluxDB]] (serveur autonome).
 - Implémentation recherche / full-text (Dev) : [[Elasticsearch]].
