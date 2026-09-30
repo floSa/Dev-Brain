@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 891,
+  "count": 897,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -917,6 +917,7 @@
       "ArangoDB",
       "Bases graphe — modèles et langages de requête",
       "Calcul distribué",
+      "Celery",
       "ClickHouse",
       "CockroachDB",
       "Comparatif - Calcul distribué",
@@ -927,17 +928,21 @@
       "Flink",
       "Hyperopt",
       "JanusGraph",
+      "Kafka",
       "LightGBM",
       "Loki",
       "Modin",
+      "NATS",
       "Nebula Graph",
       "OpenSearch",
       "Optuna",
       "PyTorch",
       "PyTorch Lightning",
+      "RabbitMQ",
       "Ray",
       "Ray Serve",
       "Ray Tune",
+      "Redpanda",
       "Snowflake",
       "Spark",
       "Temporal",
@@ -1946,6 +1951,13 @@
       "Mixed precision",
       "Unsloth"
     ],
+    "message-broker": [
+      "Kafka",
+      "Messagerie",
+      "NATS",
+      "RabbitMQ",
+      "Redpanda"
+    ],
     "metric-learning": [
       "Metric learning & ré-identification"
     ],
@@ -2360,6 +2372,7 @@
       "Activepieces",
       "Airflow",
       "Automatisation no-code",
+      "Celery",
       "ClearML",
       "Comparatif - Automatisation no-code",
       "Comparatif - Orchestrateurs ML",
@@ -2969,9 +2982,11 @@
       "Gestion des secrets",
       "HAProxy",
       "Infinity",
+      "Kafka",
       "Keycloak",
       "Kubernetes",
       "Meilisearch",
+      "NATS",
       "Netdata",
       "Nginx",
       "Observabilité",
@@ -2980,6 +2995,8 @@
       "OpenTelemetry",
       "Podman",
       "Prometheus",
+      "RabbitMQ",
+      "Redpanda",
       "Reverse proxy et TLS",
       "Stirling PDF",
       "Stockage",
@@ -3136,6 +3153,9 @@
       "Change Data Capture (CDC)",
       "Debezium",
       "Flink",
+      "Kafka",
+      "Messagerie",
+      "Redpanda",
       "River",
       "Server-Sent Events & streaming LLM",
       "Spark",
@@ -3238,6 +3258,10 @@
       "OpenDataLoader PDF",
       "PaddleOCR",
       "pdfplumber"
+    ],
+    "task-queue": [
+      "Celery",
+      "Messagerie"
     ],
     "templating": [
       "Jinja2",
@@ -6762,7 +6786,8 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[Debezium]]"
+        "[[Debezium]]",
+        "[[Kafka]]"
       ],
       "maturite": "production"
     },
@@ -6938,7 +6963,10 @@
         "[[Microsoft SQL Server]]",
         "[[MongoDB]]",
         "[[Apache Iceberg]]",
-        "[[Flink]]"
+        "[[Flink]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]",
+        "[[Kafka]]"
       ],
       "maturite": "production"
     },
@@ -7087,6 +7115,193 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Messagerie/Celery.md",
+      "nom": "Celery",
+      "alias": [
+        "celery",
+        "Celery Beat",
+        "Flower"
+      ],
+      "role": "brique",
+      "categorie": "data/messagerie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "File de tâches distribuée pour Python : des workers exécutent des fonctions asynchrones postées sur un broker (RabbitMQ, Redis, SQS), avec relances, planification (Beat) et enchaînements (canvas) ; au moins une fois, BSD-3-Clause.",
+      "tags": [
+        "task-queue",
+        "orchestration",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Temporal]]"
+      ],
+      "complements": [
+        "[[RabbitMQ]]",
+        "[[Airflow]]",
+        "[[FastAPI]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Messagerie/Kafka.md",
+      "nom": "Kafka",
+      "alias": [
+        "kafka",
+        "Apache Kafka",
+        "Kafka Connect",
+        "Kafka Streams"
+      ],
+      "role": "brique",
+      "categorie": "data/messagerie",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Journal d'événements distribué, partitionné et répliqué : messages conservés et rejouables par offset, groupes de consommateurs, exactly-once de Kafka vers Kafka, Kafka Connect et Kafka Streams livrés ; KRaft sans ZooKeeper depuis la 4.0 (Apache-2.0).",
+      "tags": [
+        "message-broker",
+        "streaming",
+        "distributed",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Redpanda]]",
+        "[[RabbitMQ]]",
+        "[[NATS]]"
+      ],
+      "complements": [
+        "[[Debezium]]",
+        "[[Flink]]",
+        "[[Kestra]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Messagerie/Messagerie.md",
+      "nom": "Messagerie",
+      "alias": [
+        "messaging",
+        "brokers de messages"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "infra-ops"
+      ],
+      "pitch": "Transporter des événements et des tâches entre services sans les interpréter — brokers en journal ou en file, file de tâches Python par-dessus — et savoir ce que chacun garantit à la livraison.",
+      "tags": [
+        "message-broker",
+        "task-queue",
+        "streaming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Messagerie/NATS.md",
+      "nom": "NATS",
+      "alias": [
+        "nats",
+        "NATS JetStream",
+        "JetStream",
+        "nats-server"
+      ],
+      "role": "brique",
+      "categorie": "data/messagerie",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF.",
+      "tags": [
+        "message-broker",
+        "distributed",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kafka]]",
+        "[[Redpanda]]",
+        "[[RabbitMQ]]"
+      ],
+      "complements": [
+        "[[Prometheus]]",
+        "[[Kubernetes]]",
+        "[[Debezium]]",
+        "[[Kestra]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Messagerie/RabbitMQ.md",
+      "nom": "RabbitMQ",
+      "alias": [
+        "rabbitmq",
+        "RabbitMQ Streams",
+        "Tanzu RabbitMQ"
+      ],
+      "role": "brique",
+      "categorie": "data/messagerie",
+      "famille": "plateforme",
+      "langage": "Erlang",
+      "domaines": null,
+      "pitch": "Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série.",
+      "tags": [
+        "message-broker",
+        "distributed",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kafka]]",
+        "[[Redpanda]]",
+        "[[NATS]]"
+      ],
+      "complements": [
+        "[[Prometheus]]",
+        "[[Grafana]]",
+        "[[Kubernetes]]",
+        "[[Debezium]]",
+        "[[Kestra]]",
+        "[[Celery]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Messagerie/Redpanda.md",
+      "nom": "Redpanda",
+      "alias": [
+        "redpanda",
+        "Redpanda Data",
+        "Redpanda Console",
+        "Redpanda Connect"
+      ],
+      "role": "brique",
+      "categorie": "data/messagerie",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Broker compatible avec le protocole Kafka, en un seul binaire C++ sans JVM ni ZooKeeper ; cœur sous licence BSL 1.1 (source-available : offrir Redpanda comme service de streaming ou de file est interdit) et fonctions Enterprise (audit, RBAC, tiered storage, rééquilibrage continu) sous licence commerciale.",
+      "tags": [
+        "message-broker",
+        "streaming",
+        "distributed",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kafka]]",
+        "[[RabbitMQ]]",
+        "[[NATS]]"
+      ],
+      "complements": [
+        "[[Prometheus]]",
+        "[[Grafana]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Mimesis.md",
       "nom": "Mimesis",
       "alias": [
@@ -7140,7 +7355,8 @@
         "[[dbt Core]]",
         "[[Great Expectations]]",
         "[[Airbyte]]",
-        "[[dlt]]"
+        "[[dlt]]",
+        "[[Celery]]"
       ],
       "maturite": "production"
     },
@@ -7223,7 +7439,10 @@
         "[[dbt Core]]",
         "[[SQLMesh]]",
         "[[Airbyte]]",
-        "[[dlt]]"
+        "[[dlt]]",
+        "[[Kafka]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]"
       ],
       "maturite": "production"
     },
@@ -7332,7 +7551,8 @@
         "[[Dagster]]",
         "[[Prefect]]",
         "[[Mage]]",
-        "[[Kestra]]"
+        "[[Kestra]]",
+        "[[Celery]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -9173,7 +9393,10 @@
         "[[Keycloak]]",
         "[[OpenBao]]",
         "[[SOPS]]",
-        "[[Trivy]]"
+        "[[Trivy]]",
+        "[[Redpanda]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]"
       ],
       "maturite": "production"
     },
@@ -23413,7 +23636,9 @@
         "[[Prometheus]]",
         "[[Tempo]]",
         "[[VictoriaMetrics]]",
-        "[[Keycloak]]"
+        "[[Keycloak]]",
+        "[[Redpanda]]",
+        "[[RabbitMQ]]"
       ],
       "maturite": "production"
     },
@@ -23611,7 +23836,10 @@
         "[[Traefik]]",
         "[[Caddy]]",
         "[[Nginx]]",
-        "[[HAProxy]]"
+        "[[HAProxy]]",
+        "[[Redpanda]]",
+        "[[NATS]]",
+        "[[RabbitMQ]]"
       ],
       "maturite": "production"
     },
@@ -27366,7 +27594,8 @@
         "[[SQLModel]]",
         "[[Traefik]]",
         "[[Nginx]]",
-        "[[PyJWT]]"
+        "[[PyJWT]]",
+        "[[Celery]]"
       ],
       "maturite": "production"
     },
