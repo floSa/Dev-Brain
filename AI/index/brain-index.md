@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 821 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 822 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -594,6 +594,9 @@
 
 ### data/ingestion
 - **Change Data Capture (CDC)** — domaines : data-eng · alias : CDC, change data capture, capture de changements, log-based replication
+
+### data/parsing
+- **OCR classique vs modèles vision-langage pour documents** — domaines : data-eng, ai-eng · alias : OCR vs VLM, OCR classique ou VLM, pipeline OCR vs VLM, OCR end-to-end, VLM pour l'OCR
 
 ### data/scraping
 - **Web scraping** — domaines : data-eng · alias : scraping, web scraping, crawling, extraction de données web, headless browsing
