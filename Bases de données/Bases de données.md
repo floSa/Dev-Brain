@@ -33,7 +33,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 ### Graphe
 - Nœuds et arêtes typées ; idéal pour les données fortement connectées et le parcours de relations profondes que SQL exprime mal.
-- Implémentations Dev : [[Neo4j]] (natif, mono-instance) et le distribué [[Nebula Graph]].
+- Implémentations : [[Neo4j]] (natif, mono-instance en Community), [[Memgraph]] (en mémoire), [[Apache AGE]] (extension Postgres), [[ArangoDB]] (multi-modèle) et le distribué [[Nebula Graph]]. Le sous-domaine a son hub : [[Bases de graphes]].
 
 ### Vectoriel
 - Stocke des embeddings et retrouve les plus proches par recherche ANN. Détail : [[Bases de données vectorielles]].
@@ -61,7 +61,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 - Implémentations relationnelles (Dev) : [[Postgres]], [[MySQL]], [[MariaDB]], [[SQLite]], [[CockroachDB]], [[Microsoft SQL Server]].
 - Implémentations NoSQL (Dev) : [[MongoDB]] (document), [[Redis]] (clé-valeur), [[Apache Cassandra]] (wide-column).
-- Implémentations graphe (Dev) : [[Neo4j]], [[Nebula Graph]] (distribué).
+- Implémentations graphe : [[Neo4j]], [[Memgraph]], [[Apache AGE]], [[ArangoDB]], [[Nebula Graph]] (distribué) — détail dans [[Bases de graphes]].
 - Implémentations colonne / OLAP (Dev) : [[ClickHouse]] (distribué), [[DuckDB]] (embarqué).
 - Implémentations temporelles (Dev) : [[TimescaleDB]] (extension Postgres), [[InfluxDB]] (serveur autonome).
 - Implémentation recherche / full-text (Dev) : [[Elasticsearch]].
@@ -87,7 +87,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Administration]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
+- [[Administration]] · [[Bases de graphes]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
 
 ### Notions
 - [[Migrations de schéma]] — domaines : data-eng
@@ -103,8 +103,6 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 - [[InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
 - [[Liquibase]] — Outil de migration de schéma piloté par changelog (XML/YAML/JSON/SQL), multi-SGBD et orienté CI/CD.
 - [[MongoDB]] — Base NoSQL orientée documents (BSON/JSON) : schéma souple et scale horizontal natif par sharding.
-- [[Nebula Graph]] — Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.
-- [[Neo4j]] — SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).
 - [[Prisma]] — ORM TypeScript nouvelle génération : schéma déclaratif, client typé et migrations générées.
 - [[psycopg2]] — Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.
 - [[Redis]] — Store clé-valeur en mémoire ultra-rapide : cache, sessions, files et broker pub/sub.
@@ -115,7 +113,6 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 ### Comparatifs
 - [[Comparatif - Bases NoSQL]]
 - [[Comparatif - Bases colonnes]]
-- [[Comparatif - Bases graphes]]
 - [[Comparatif - Bases temporelles]]
 - [[Comparatif - Migrations de schéma]]
 - [[Comparatif - ORM]]

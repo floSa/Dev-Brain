@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 835,
+  "count": 839,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -842,6 +842,7 @@
       "AWS SageMaker",
       "Apache Cassandra",
       "Apache Solr",
+      "ArangoDB",
       "Calcul distribué",
       "ClickHouse",
       "CockroachDB",
@@ -880,6 +881,7 @@
       "accelerate"
     ],
     "document-db": [
+      "ArangoDB",
       "MongoDB",
       "MongoDB Compass"
     ],
@@ -1217,9 +1219,13 @@
       "Optimisation"
     ],
     "graph-db": [
+      "Apache AGE",
+      "ArangoDB",
       "Bases de données",
+      "Bases de graphes",
       "Comparatif - Bases graphes",
       "GraphRAG",
+      "Memgraph",
       "Nebula Graph",
       "Neo4j",
       "Pattern - RAG structuré graphe + human-in-the-loop"
@@ -1301,6 +1307,7 @@
     "in-memory": [
       "Faiss",
       "LLM caching",
+      "Memgraph",
       "Redis",
       "Redis Insight",
       "ScaNN",
@@ -2369,6 +2376,7 @@
       "Positional encoding"
     ],
     "postgres": [
+      "Apache AGE",
       "Postgres",
       "TimescaleDB",
       "pgAdmin",
@@ -3913,6 +3921,177 @@
       "maturite": null
     },
     {
+      "path": "Bases de données/Bases de graphes/Apache AGE.md",
+      "nom": "Apache AGE",
+      "alias": [
+        "AGE",
+        "apache age",
+        "AGE PostgreSQL",
+        "A Graph Extension"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "extension",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre.",
+      "tags": [
+        "graph-db",
+        "postgres"
+      ],
+      "alternatives": [
+        "[[Neo4j]]",
+        "[[Memgraph]]"
+      ],
+      "complements": [
+        "[[Postgres]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de graphes/ArangoDB.md",
+      "nom": "ArangoDB",
+      "alias": [
+        "arangodb",
+        "Arango",
+        "AQL"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Base multi-modèle (documents, graphes, clé-valeur, recherche) interrogée en AQL (C++, BSL 1.1) — cluster complet, mais binaires Community limités à un usage interne sous 100 Go de données, licence commerciale au-delà.",
+      "tags": [
+        "graph-db",
+        "document-db",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Neo4j]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Bases de graphes.md",
+      "nom": "Bases de graphes",
+      "alias": [
+        "bases graphes",
+        "graph databases",
+        "bdd graphe",
+        "bases de données graphe"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": "Stocker des entités et leurs relations, et interroger des chemins de profondeur variable — les moteurs de graphe, leurs langages et ce que leur licence permet.",
+      "tags": [
+        "graph-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Comparatif - Bases graphes.md",
+      "nom": "Comparatif - Bases graphes",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/graphe",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "graph-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Memgraph.md",
+      "nom": "Memgraph",
+      "alias": [
+        "memgraph",
+        "Memgraph DB",
+        "memgraph community"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Base de graphes en mémoire, compatible Cypher et Bolt (C++, BSL 1.1) — temps réel et flux Kafka, mono-nœud ; haute disponibilité automatique, RBAC et SSO réservés à l'édition Enterprise.",
+      "tags": [
+        "graph-db",
+        "in-memory"
+      ],
+      "alternatives": [
+        "[[Neo4j]]",
+        "[[Apache AGE]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Nebula Graph.md",
+      "nom": "Nebula Graph",
+      "alias": [
+        "nebula",
+        "nebula graph",
+        "nebulagraph"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.",
+      "tags": [
+        "graph-db",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Neo4j]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Bases de graphes/Neo4j.md",
+      "nom": "Neo4j",
+      "alias": [
+        "neo4j",
+        "neo4J",
+        "neo 4j"
+      ],
+      "role": "brique",
+      "categorie": "database/graphe",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).",
+      "tags": [
+        "graph-db"
+      ],
+      "alternatives": [
+        "[[Nebula Graph]]",
+        "[[Memgraph]]",
+        "[[ArangoDB]]",
+        "[[Apache AGE]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Bases de données/ClickHouse.md",
       "nom": "ClickHouse",
       "alias": [
@@ -3966,23 +4145,6 @@
       "tags": [
         "columnar",
         "olap"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Bases de données/Comparatif - Bases graphes.md",
-      "nom": "Comparatif - Bases graphes",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "database/graphe",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "graph-db"
       ],
       "alternatives": null,
       "complements": null,
@@ -4184,53 +4346,6 @@
       "complements": [
         "[[MongoDB Compass]]"
       ],
-      "maturite": "production"
-    },
-    {
-      "path": "Bases de données/Nebula Graph.md",
-      "nom": "Nebula Graph",
-      "alias": [
-        "nebula",
-        "nebula graph",
-        "nebulagraph"
-      ],
-      "role": "brique",
-      "categorie": "database/graphe",
-      "famille": "plateforme",
-      "langage": "C++",
-      "domaines": null,
-      "pitch": "Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.",
-      "tags": [
-        "graph-db",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Neo4j]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Bases de données/Neo4j.md",
-      "nom": "Neo4j",
-      "alias": [
-        "neo4j",
-        "neo4J",
-        "neo 4j"
-      ],
-      "role": "brique",
-      "categorie": "database/graphe",
-      "famille": "plateforme",
-      "langage": "Java",
-      "domaines": null,
-      "pitch": "SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).",
-      "tags": [
-        "graph-db"
-      ],
-      "alternatives": [
-        "[[Nebula Graph]]"
-      ],
-      "complements": [],
       "maturite": "production"
     },
     {
@@ -4868,7 +4983,8 @@
         "[[pgvector]]",
         "[[pgAdmin]]",
         "[[TimescaleDB]]",
-        "[[psycopg2]]"
+        "[[psycopg2]]",
+        "[[Apache AGE]]"
       ],
       "maturite": "production"
     },

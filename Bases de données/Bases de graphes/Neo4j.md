@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Java
 scaling: single-node
-alternatives: ["[[Nebula Graph]]"]
+alternatives: ["[[Nebula Graph]]", "[[Memgraph]]", "[[ArangoDB]]", "[[Apache AGE]]"]
 complements: []
 tags: [graph-db]
 url_docs: https://neo4j.com/docs/
@@ -24,7 +24,7 @@ url_repo: https://github.com/neo4j/neo4j
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production | à jour · 2026-08-25 |
+| Plateforme Java | open-core | self-hébergé ou managé · mono-nœud | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -66,6 +66,9 @@ session et de transaction en langage manque encore.
 ### Alternatives
 
 - [[Nebula Graph]] — Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.
+- [[Memgraph]] — Base de graphes en mémoire, compatible Cypher et Bolt (C++, BSL 1.1) — temps réel et flux Kafka, mono-nœud ; haute disponibilité automatique, RBAC et SSO réservés à l'édition Enterprise.
+- [[ArangoDB]] — Base multi-modèle (documents, graphes, clé-valeur, recherche) interrogée en AQL (C++, BSL 1.1) — cluster complet, mais binaires Community limités à un usage interne sous 100 Go de données, licence commerciale au-delà.
+- [[Apache AGE]] — Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre.
 
 ## Ressources
 

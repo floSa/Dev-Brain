@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 835 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 839 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -126,6 +126,9 @@
 - **psycopg2** — Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3.
 
 ### database/graphe
+- **Apache AGE** — Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre.
+- **ArangoDB** — Base multi-modèle (documents, graphes, clé-valeur, recherche) interrogée en AQL (C++, BSL 1.1) — cluster complet, mais binaires Community limités à un usage interne sous 100 Go de données, licence commerciale au-delà.
+- **Memgraph** — Base de graphes en mémoire, compatible Cypher et Bolt (C++, BSL 1.1) — temps réel et flux Kafka, mono-nœud ; haute disponibilité automatique, RBAC et SSO réservés à l'édition Enterprise.
 - **Nebula Graph** — Base de graphes distribuée nativement (Apache-2.0, C++, Raft) pour jeux de données massifs — l'édition Community est figée sur la 3.8.0 de mai 2024, l'évolution passe par l'édition Enterprise, fermée.
 - **Neo4j** — SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale).
 
@@ -1190,6 +1193,7 @@
 - **Assistants** — Les applications d'agent prêtes à déployer — un produit devant un utilisateur, pas une bibliothèque à assembler.
 - **Automatisation no-code** — Enchaîner des services par un graphe plutôt que par du code — utile pour l'intégration, trompeur pour la logique métier.
 - **Bases de données** — Stocker et interroger de la donnée de façon durable — les familles de moteurs, leurs compromis, et quand basculer de l'une à l'autre.
+- **Bases de graphes** — Stocker des entités et leurs relations, et interroger des chemins de profondeur variable — les moteurs de graphe, leurs langages et ce que leur licence permet.
 - **Bayésien** — Traiter le paramètre comme une variable aléatoire — une distribution en sortie plutôt qu'un point, au prix d'un a priori assumé et d'un échantillonnage à faire converger.
 - **Calcul distribué** — Faire tourner un calcul qui ne tient pas sur une machine — sur plusieurs nœuds, sur GPU, ou sur une infrastructure louée à la demande.
 - **Comparatifs** — Ce qui départage plusieurs briques d'un même thème — un tableau par thème, rangé dans le domaine qu'il compare.

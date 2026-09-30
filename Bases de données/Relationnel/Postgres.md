@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[MySQL]]", "[[MariaDB]]", "[[SQLite]]", "[[CockroachDB]]", "[[Microsoft SQL Server]]"]
-complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]"]
+complements: ["[[pgvector]]", "[[pgAdmin]]", "[[TimescaleDB]]", "[[psycopg2]]", "[[Apache AGE]]"]
 tags: [relational, postgres]
 url_docs: https://www.postgresql.org/docs/
 url_repo: https://github.com/postgres/postgres
@@ -68,6 +68,7 @@ le relationnel. C'est le défaut raisonnable pour une base applicative.
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place. — la recherche vectorielle dans la base métier, sans second moteur
 - [[pgAdmin]] — Console d'administration web officielle de PostgreSQL : gestion, requêtes et supervision du serveur. — l'administration et la supervision graphiques du serveur
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres. — l'extension qui ajoute les hypertables et les agrégats continus, sans changer de moteur
+- [[Apache AGE]] — Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre. — l'extension qui ajoute un graphe de propriétés, sans second moteur.
 - [[psycopg2]] — Adaptateur PostgreSQL de référence pour Python (LGPL) — implémentation DB-API 2.0 en C au-dessus de libpq, sûre et performante ; figé en fonctionnalités, successeur psycopg 3. — le driver DB-API historique, sous la plupart des accès Python à cette base
 
 ## Ressources
