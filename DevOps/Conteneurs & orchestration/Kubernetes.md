@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[k3s]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]"]
+complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]", "[[EMQX]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://kubernetes.io/docs/
 url_repo: https://github.com/kubernetes/kubernetes
@@ -96,6 +96,7 @@ CNCF diplômé (graduated) le 2018-03-06.
 - [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — chart Helm documenté, avec PostgreSQL, Redis, ClickHouse en option et Nuclio ; stockage RWX requis sur plusieurs nœuds.
 - [[lakeFS]] — Versionnage d'un dépôt d'objets à la manière de Git — branches, commits, merges atomiques, retour en arrière, hooks — au-dessus d'un stockage S3-compatible, sans copier les données ; serveur Go avec PostgreSQL, sous licence BSL 1.1 depuis la v1.87.0 (usage interne non modifié), édition libre limitée à un utilisateur. — chart Helm documenté pour installer lakeFS sur site.
 - [[Kubeflow]] — Boîte à outils ML open source sur Kubernetes (CNCF, gradué en 2026) — notebooks, pipelines sur Argo Workflows, entraînement distribué, optimisation d'hyperparamètres, registre et serving derrière un tableau de bord multi-utilisateurs ; se déploie composant par composant, l'installation complète est lourde à opérer. — la plateforme ML qui s'installe sur le cluster.
+- [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — Operator et chart Helm officiels pour déployer un cluster EMQX.
 
 ## Ressources
 
