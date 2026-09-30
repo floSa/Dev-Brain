@@ -18,8 +18,8 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - **La validation ne peut pas être une validation croisée ordinaire** : [[Walk-forward CV]] est le seul protocole honnête, parce qu'il n'entraîne jamais sur des données postérieures à ce qu'il prédit. Les métriques ont leurs pièges propres — échelle, zéros, saisonnalité — cf. [[Forecasting metrics]].
 - **Les modèles statistiques classiques restent des références difficiles à battre**, surtout sur peu d'historique : [[ARIMA SARIMA]] et [[Exponential smoothing]]. Ils supposent des propriétés à vérifier d'abord — [[Stationarity]] et [[Autocorrelation]] sont les deux diagnostics à poser avant tout ajustement.
 - **Le deep learning gagne quand il y a beaucoup de séries, pas beaucoup d'historique** : un réseau apprend des motifs partagés entre milliers de séries là où un modèle par série n'a rien à généraliser. Les [[Foundation models pour séries temporelles]] poussent l'idée jusqu'au zero-shot — plus aucun entraînement par série.
-- **Trois situations métier cassent les modèles génériques** et méritent d'être reconnues avant de choisir : [[Hierarchical forecasting]], quand les prévisions doivent se sommer d'un niveau à l'autre ; [[Intermittent demand]], quand la série est majoritairement à zéro et qu'une erreur quadratique n'a plus de sens ; [[Maintenance prédictive et RUL]], où la cible est une durée de vie restante et non une valeur future.
-- **La détection d'anomalies temporelle n'est pas la détection d'outliers** : ce qui est anormal est une *forme* dans le temps, pas une valeur extrême. [[Time series anomaly detection]] ; l'outillage tabulaire est dans [[Non supervisé]], cf. [[Comparatif - Détection d'anomalies]].
+- **Trois situations métier cassent les modèles génériques** et méritent d'être reconnues avant de choisir : [[Hierarchical forecasting]], quand les prévisions doivent se sommer d'un niveau à l'autre ; [[Intermittent demand]], quand la série est majoritairement à zéro et qu'une erreur quadratique n'a plus de sens ; [[Maintenance prédictive et RUL]] (rangée au niveau du domaine, hors de ce dossier depuis le 2026-10-02), où la cible est une durée de vie restante et non une valeur future.
+- **La détection d'anomalies temporelle n'est pas la détection d'outliers** : ce qui est anormal est une *forme* dans le temps, pas une valeur extrême. [[Time series anomaly detection]] ; le dossier [[Détection d'anomalies]] porte la notion, [[STUMPY]], l'outillage tabulaire et l'évaluation ([[Évaluer une détection d'anomalies]]), cf. [[Comparatif - Détection d'anomalies]].
 - Enfin, la voie souvent la plus rentable : transformer le problème en tabulaire par [[Time series feature engineering]] — retards, fenêtres glissantes, calendrier — puis appliquer un modèle de [[Tabulaire]].
 
 ## Choisir
@@ -30,7 +30,7 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - Des réseaux de neurones de prévision, récents et prêts à l'emploi → [[neuralforecast]].
 - Une API unique pour comparer statistique et neuronal sur le même jeu → [[darts]].
 - Prévoir sans entraîner de modèle par série → [[Chronos]]. Cf. [[Comparatif - Forecasting]].
-- Chercher des motifs répétés ou des ruptures de forme → [[STUMPY]], par matrix profile.
+- Chercher des motifs répétés ou des ruptures de forme → [[STUMPY]], par matrix profile, rangé dans [[Détection d'anomalies]].
 - Transformer la série en colonnes puis modéliser → [[Tabulaire]] ; industrialiser le réentraînement → [[Suivi d'expériences]] et [[Serving]].
 
 <!-- AUTO:START -->
@@ -43,9 +43,7 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - [[Foundation models pour séries temporelles]] — domaines : data-sci, ml-eng
 - [[Hierarchical forecasting]] — domaines : data-sci, ml-eng
 - [[Intermittent demand]] — domaines : data-sci, ml-eng
-- [[Maintenance prédictive et RUL]] — domaines : data-sci, mlops
 - [[Stationarity]] — domaines : data-sci
-- [[Time series anomaly detection]] — domaines : data-sci, mlops
 - [[Time series feature engineering]] — domaines : data-sci, ml-eng
 - [[Walk-forward CV]] — domaines : data-sci, ml-eng
 
@@ -56,7 +54,6 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - [[pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 - [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
 - [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
-- [[STUMPY]] — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
 ### Comparatifs
 - [[Comparatif - Forecasting]]
