@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[k3s]]", "[[Kubernetes]]"]
-complements: ["[[Docker]]", "[[Podman]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Label Studio]]", "[[CVAT]]"]
+complements: ["[[Docker]]", "[[Podman]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[Label Studio]]", "[[CVAT]]", "[[Node-RED]]"]
 tags: [container]
 url_docs: https://docs.docker.com/compose/
 url_repo: https://github.com/docker/compose
@@ -77,6 +77,7 @@ supporté depuis juin 2023.
 - [[Nginx]] — Serveur web et reverse proxy de référence, configuré à la main dans nginx.conf (BSD-2-Clause, C, F5) — le plus déployé, HTTP/3 et ACME en module ; health checks actifs, API dynamique et JWT réservés à NGINX Plus, l'offre payante ; le contrôleur communautaire ingress-nginx pour Kubernetes est archivé depuis le 2026-03-24. — `nginx-proxy` et `acme-companion` lisent les conteneurs de la pile.
 - [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — mode d'installation documenté, avec PostgreSQL.
 - [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise. — mode d'installation officiel de l'édition Community : `docker compose up -d`.
+- [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — la doc de Node-RED fournit un exemple `docker-compose-node-red.yml`.
 
 ## Ressources
 
