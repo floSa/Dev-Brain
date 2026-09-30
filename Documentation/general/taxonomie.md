@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 108 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 109 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (108 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (109 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -190,7 +190,7 @@ llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz, fiabilite, transformation}
+      synthetique, eda, viz, fiabilite, transformation, messagerie}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -320,6 +320,16 @@ valeurs disparues et ne sont pas reconduites.
   `data/orchestration` (l'outil qui **exécute** et planifie le graphe : dbt ne planifie rien
   seul), de `data/ingestion` (rapatrier les lignes, pas les remodeler) et de
   `database/analytique` (le moteur qui exécute le SQL, pas l'outil qui le structure).
+- `data/messagerie` — **ouvert au lot « messagerie et brokers » (2026-09-30), sur arbitrage de
+  floSa** : aucune valeur ne rangeait un broker de messages. **Transporter et mettre en file**
+  des événements ou des tâches entre services, sans les interpréter : brokers en journal ou en
+  file (Kafka, Redpanda, NATS, RabbitMQ) et file de tâches qui s'appuie sur un broker (Celery).
+  Distinct de `data/streaming` (**traiter** le flux — fenêtres, état, agrégations : Flink —
+  pas le transporter), de `data/orchestration` (un orchestrateur planifie un graphe de tâches
+  et en suit l'état ; une file de tâches exécute un appel isolé sans connaître le graphe), de
+  `data/ingestion` (Debezium *produit* un flux depuis une base, il ne le transporte pas) et de
+  `database/cle-valeur` (Redis sert aussi de file, mais son sujet est le stockage). Les
+  protocoles industriels de capteurs (MQTT, OPC UA) ne sont pas ici : ils forment un bloc à part.
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
