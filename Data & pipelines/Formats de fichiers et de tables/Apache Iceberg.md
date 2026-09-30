@@ -8,9 +8,9 @@ famille: specification
 licence_type: open-source
 maturite: production
 langage: Java
-alternatives: []
+alternatives: ["[[Delta Lake]]"]
 complements: ["[[dbt Core]]", "[[Airbyte]]", "[[Debezium]]", "[[Apache NiFi]]", "[[DataHub]]"]
-tags: [lakehouse, olap, schema-evolution]
+tags: [lakehouse, olap, schema-evolution, data-versioning]
 url_docs: https://iceberg.apache.org/docs/latest/
 url_repo: https://github.com/apache/iceberg
 ---
@@ -22,7 +22,7 @@ url_repo: https://github.com/apache/iceberg
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-05-20 |
+| Spécification Java | open-source | rien à exécuter | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -42,7 +42,7 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 |---|---|
 | Tables analytiques sur data lake exigeant ACID, écrivains concurrents et time travel | Un simple fichier, sans besoin de sémantique de table → [[Parquet]] seul |
 | Faire évoluer schéma **et** partitionnement sans réécrire ni casser l'historique | Upserts et CDC intensifs sur clés primaires en flux : Apache Hudi, hors brain, est taillé pour ça |
-| Donner accès au même jeu de données à plusieurs moteurs, sans verrouillage propriétaire | Maison déjà 100 % Databricks / Spark sur Delta Lake : le format de table y est en place |
+| Donner accès au même jeu de données à plusieurs moteurs, sans verrouillage propriétaire | Maison déjà 100 % Databricks / Spark sur [[Delta Lake]] : le format de table y est en place |
 | Remplacer des tables Hive vieillissantes | Transactionnel ligne à ligne, OLTP → [[Postgres]] |
 | | Le catalogue est une dépendance dure et un point de migration ; la promesse « ouvert » suppose des catalogues interopérables, et en pratique il peut lier à un fournisseur |
 | | Snapshots et petits fichiers s'accumulent : compaction et expiration des snapshots sont une maintenance obligatoire, pas une option |
@@ -59,7 +59,7 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 
 ### Alternatives
 
-- Aucun autre format de table dans le brain. Concurrents directs hors brain : **Delta Lake** (écosystème Databricks / Spark) et **Apache Hudi** (orienté upserts et CDC en flux).
+- [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — le même besoin de table transactionnelle sur Parquet ; Delta naît autour de Spark et de Databricks, Iceberg se branche sur plusieurs catalogues (REST, Glue, Hive Metastore, Nessie, Polaris), et UniForm rend une table Delta lisible comme une table Iceberg. Apache Hudi, hors brain, est taillé pour les upserts et le CDC en flux.
 
 ### Compléments
 
@@ -79,3 +79,4 @@ Databricks a racheté Tabular, fondé par ses créateurs, en 2024.
 - [[Partitionnement & layout de données]] — le partitionnement caché et la compaction que ce format automatise
 - [[Architecture médaillon]] — le cadre où ces tables s'empilent en bronze / silver / gold
 - [[Avro]] — le format des fichiers de métadonnées (manifests)
+- [[Comparatif - Versionnage de données]] — le time travel d'une table face au versionnage de fichiers ou de dépôt

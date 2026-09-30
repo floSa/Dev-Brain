@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Java
 alternatives: ["[[Avro]]"]
-complements: ["[[dbt Core]]", "[[Airbyte]]", "[[dlt]]"]
+complements: ["[[dbt Core]]", "[[Airbyte]]", "[[dlt]]", "[[Delta Lake]]"]
 tags: [file-format, columnar, olap]
 url_docs: https://parquet.apache.org/docs/
 url_repo: https://github.com/apache/parquet-format
@@ -22,7 +22,7 @@ url_repo: https://github.com/apache/parquet-format
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Spécification Java | open-source | rien à exécuter | production | à jour · 2026-09-07 |
+| Spécification Java | open-source | rien à exécuter | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -65,6 +65,7 @@ ligne à jour, c'est réécrire un fichier entier.
 - [[dbt Core]] — Transformation SQL par modèles versionnés : un SELECT par fichier, graphe déduit des ref(), tests, snapshots et matérialisations (vue, table, incrémental) exécutés dans le moteur ; v1 en Python (Apache-2.0), v2 réécrite en Rust (code Apache-2.0, distribution complète sous licence produit). — dbt-duckdb écrit du Parquet par la matérialisation `external` (`format: parquet`) et dbt-spark le prend comme `file_format`.
 - [[Airbyte]] — Plateforme d'ingestion par catalogue de connecteurs : sources API, bases et fichiers vers entrepôts et lacs, synchronisations full refresh ou incrémentales (curseur ou CDC), interface, API et Connector Builder ; Elastic License 2.0 (source-available), déploiement Kubernetes. — la destination S3 écrit des fichiers Parquet.
 - [[dlt]] — Bibliothèque Python d'ingestion : des générateurs Python deviennent des tables typées chargées dans DuckDB, Postgres, ClickHouse ou des fichiers, avec schéma inféré, état et curseurs incrémentaux stockés dans la destination, sans serveur (Apache-2.0). — format d'écriture de la destination `filesystem`, à côté de JSONL (défaut) et CSV.
+- [[Delta Lake]] — Format de table ouvert pour le lakehouse, sous la Linux Foundation : un journal de transactions `_delta_log` au-dessus de fichiers Parquet, ACID, time travel, MERGE, évolution de schéma et Change Data Feed ; implémentations Spark, Rust (delta-rs) et Delta Kernel en Apache-2.0, avec des fonctions d'optimisation propres à Databricks hors de l'open source. — les fichiers de données d'une table Delta sont du Parquet ; le journal `_delta_log` décrit l'état de la table, il ne remplace pas le format.
 
 ## Ressources
 
