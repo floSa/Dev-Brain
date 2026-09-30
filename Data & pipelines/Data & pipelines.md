@@ -13,10 +13,10 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 
 ## Ce qu'il faut comprendre
 
-- Le domaine suit la trajectoire d'une donnée, et ses cinq sous-dossiers sont les cinq étapes de cette trajectoire : on la **collecte** ([[Scraping]], [[Parsing]]), on la **manipule** ([[DataFrames]]), on **planifie** son passage ([[Orchestration]]), on la **regarde** ([[Visualisation]]). Ce qui reste au niveau du domaine est ce qui **traverse** ces étapes : les formats sur disque, la génération de faux, le profilage, le fil de l'eau — et ce qu'un pipeline doit garantir quel que soit l'outil qui l'exécute.
+- Le domaine suit la trajectoire d'une donnée, et ses six sous-dossiers sont six étapes de cette trajectoire : on la **collecte** ([[Scraping]], [[Parsing]]), on la **manipule** ([[DataFrames]]), on **planifie** son passage ([[Orchestration]]), on **s'y fie** ([[Fiabilité des données]]), on la **regarde** ([[Visualisation]]). Ce qui reste au niveau du domaine est ce qui **traverse** ces étapes : les formats sur disque, la génération de faux, le profilage, le fil de l'eau.
 - Le clivage qui structure le plus les choix est **la donnée tient-elle en mémoire**. En dessous, tout marche et [[pandas]] suffit. Au-dessus, il faut un moteur qui construise un plan avant d'exécuter ([[Polars]]) ou qui distribue ([[Flink]]) — et le code change, pas seulement la machine.
 - Le **format sur disque** n'est pas un détail d'implémentation, c'est ce qui décide de la vitesse de lecture. [[Parquet]] est colonnaire, donc rapide en analytique et lent à la ligne ; [[Avro]] est en lignes, donc adapté à l'échange et aux messages ; [[Apache Iceberg]] n'est ni l'un ni l'autre — c'est une couche de table transactionnelle **par-dessus** ces fichiers, ce qui donne au [[Architecture médaillon|lakehouse]] ce que le stockage objet ne sait pas faire : l'ACID et le time travel. Cf. [[Partitionnement & layout de données]].
-- Un pipeline se juge sur sa **rejouabilité** avant sa vitesse. Rejouer un jour manquant sans dupliquer ni décaler est la propriété qui distingue un pipeline d'un script — cf. [[ELT vs ETL & idempotence]]. C'est le fil des quatre notions rangées en `data/fiabilite`, qui répondent toutes à « à quoi peut-on se fier » plutôt qu'à « comment ça tourne » : l'ordre d'assemblage et l'idempotence, le découpage en couches de raffinage ([[Architecture médaillon]]), ce qu'on promet au consommateur ([[Contrats de données & qualité]]), et l'état figé qui rend un résultat reproductible ([[Versionnage de données]]). L'orchestrateur exécute ; il ne garantit rien de tout ça.
+- Un pipeline se juge sur sa **rejouabilité** avant sa vitesse. Rejouer un jour manquant sans dupliquer ni décaler est la propriété qui distingue un pipeline d'un script — cf. [[ELT vs ETL & idempotence]]. C'est le fil du dossier [[Fiabilité des données]], où quatre notions et trois outils de vérification répondent tous à « à quoi peut-on se fier » plutôt qu'à « comment ça tourne » : l'ordre d'assemblage et l'idempotence, le découpage en couches de raffinage ([[Architecture médaillon]]), ce qu'on promet au consommateur ([[Contrats de données & qualité]]), et l'état figé qui rend un résultat reproductible ([[Versionnage de données]]). L'orchestrateur exécute ; il ne garantit rien de tout ça.
 - **Au fil de l'eau, deux pages distinctes que le mot « streaming » confond.** [[Change Data Capture (CDC)]] *produit* le flux — il lit le journal de transactions d'une base et en sort les changements ; [[Stream processing]] le *consomme* — fenêtrage, event-time, watermarks, exactly-once. L'un est de l'ingestion, l'autre du traitement, et leurs pièges n'ont rien à voir.
 - La **donnée factice** et la **donnée synthétique** sont deux besoins distincts, souvent confondus. [[Faker]] et [[Mimesis]] fabriquent des valeurs plausibles champ par champ, indépendamment les unes des autres — parfait pour peupler des tests. [[SDV]] apprend la distribution jointe du réel — nécessaire dès qu'on veut que les corrélations tiennent. Cf. [[Synthetic data generation]].
 - Le **profilage** ([[ydata-profiling]], [[sweetviz]], [[missingno]]) est le premier geste sur un jeu inconnu, et il précède toute modélisation : cf. [[EDA automatisée & profiling]].
@@ -41,17 +41,13 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz]
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[DataFrames]] · [[Orchestration]] · [[Parsing]] · [[Scraping]] · [[Visualisation]]
+- [[DataFrames]] · [[Fiabilité des données]] · [[Orchestration]] · [[Parsing]] · [[Scraping]] · [[Visualisation]]
 
 ### Notions
-- [[Architecture médaillon]] — domaines : data-eng
 - [[Change Data Capture (CDC)]] — domaines : data-eng
-- [[Contrats de données & qualité]] — domaines : data-eng
 - [[EDA automatisée & profiling]] — domaines : data-sci, data-eng
-- [[ELT vs ETL & idempotence]] — domaines : data-eng
 - [[Partitionnement & layout de données]] — domaines : data-eng
 - [[Stream processing]] — domaines : data-eng
-- [[Versionnage de données]] — domaines : data-eng, mlops
 
 ### Briques
 - [[Apache Iceberg]] — Format de table ouvert pour le lakehouse : transactions ACID, time travel, évolution de schéma et de partitionnement au-dessus de fichiers Parquet / ORC / Avro sur stockage objet ; lu par tous les moteurs (Spark, Trino, Flink, DuckDB).
