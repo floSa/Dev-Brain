@@ -155,6 +155,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `data-versioning` | Versionnage de données — états immuables et adressables d'un jeu / dépôt de données (snapshots, commits, time travel) pour la reproductibilité |
 | `partitioning` | Partitionnement & layout physique des données — clé de partition (répertoires/fichiers), bucketing, partition pruning, taille de fichiers / small files problem (distinct de `pruning`, l'élagage de modèle) |
 | `data-modeling` | Modélisation / organisation logique des données en couches ou schémas (architecture médaillon bronze/silver/gold, schéma en étoile, normalisation) |
+| `data-transformation` | Transformation de données par modèles versionnés (SQL ou Python) : graphe de dépendances, matérialisations, environnements — dbt, SQLMesh ; distinct de `data-pipeline` (le pipeline entier) et de `orchestration` (l'exécution) |
 | `document-parsing` | Extraction de contenu structuré depuis des documents (PDF, Office, HTML, images) |
 | `pdf` | Traitement de fichiers PDF |
 | `ocr` | Reconnaissance optique de caractères (texte dans images / scans) |

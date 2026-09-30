@@ -190,7 +190,7 @@ llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
 database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
-      synthetique, eda, viz, fiabilite}
+      synthetique, eda, viz, fiabilite, transformation}
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
@@ -300,6 +300,19 @@ valeurs disparues et ne sont pas reconduites.
   pipeline — Airflow ne dit pas si le sink est idempotent), de `devtools/validation` (valider
   des objets dans du code Python, pas des jeux de données livrés) et de `data/format` (le
   rangement physique sur disque, qui décide de la vitesse de lecture et non de la confiance).
+  **Élargie au lot « transformation & qualité » (2026-09-30)** : la valeur range aussi les
+  **outils qui vérifient** un jeu de données livré — Great Expectations, Soda Core, pandera —
+  et pas seulement les pages qui décrivent la garantie. Ce qui les sépare de
+  `devtools/validation` : ils valident un **jeu de données** (colonnes, volumes, fraîcheur,
+  règles métier), pas la forme d'un objet applicatif comme le fait Pydantic.
+- `data/transformation` — **ouvert au lot « transformation & qualité » (2026-09-30).**
+  Dériver des tables à partir d'autres tables **par des modèles versionnés** — un `SELECT`
+  par modèle, un graphe de dépendances, des matérialisations (vue, table, incrémental) et des
+  environnements : dbt Core, SQLMesh. La valeur nomme la **transformation** et non l'ELT,
+  qui décrit un ordre d'assemblage (notion, `data/fiabilite`). Distinct de
+  `data/orchestration` (l'outil qui **exécute** et planifie le graphe : dbt ne planifie rien
+  seul), de `data/ingestion` (rapatrier les lignes, pas les remodeler) et de
+  `database/analytique` (le moteur qui exécute le SQL, pas l'outil qui le structure).
 - `compute/a-la-demande` — capacité de calcul créée et détruite à la demande, facturée à
   l'usage : bacs à sable d'exécution de code **non fiable** (typiquement généré par un LLM,
   isolation microVM) et plateformes scale-to-zero. Distinct de `devops/conteneur` (packaging et
