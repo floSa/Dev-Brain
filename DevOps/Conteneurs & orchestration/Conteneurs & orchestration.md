@@ -26,7 +26,7 @@ tags: [container, kubernetes]
 - Un serveur Linux où tout doit repartir seul après un redémarrage, sans démon root → [[Podman]] et ses fichiers Quadlet.
 - Plusieurs machines, une bascule si l'une tombe, des déploiements sans coupure, peu de monde pour l'opérer → [[k3s]].
 - Plusieurs équipes, des dizaines de services, des règles d'accès fines → [[Kubernetes]].
-- Installer un logiciel tiers sur un cluster, ou le décliner par environnement → [[Helm]] ; le piloter depuis Git → [[Argo CD]] (dossier parent).
+- Installer un logiciel tiers sur un cluster, ou le décliner par environnement → [[Helm]] ; le piloter depuis Git → [[Argo CD]] (dossier voisin, « Forges & CI-CD »).
 - Servir un modèle sur un cluster → [[KServe]] ou [[Seldon Core]], dans « Machine Learning/Serving ».
 
 <!-- AUTO:START -->
