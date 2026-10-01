@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[Qdrant]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: []
+complements: ["[[ColPali]]"]
 tags: [vector-db, rag, hybrid-search]
 url_docs: https://weaviate.io/developers/weaviate
 url_repo: https://github.com/weaviate/weaviate
@@ -60,6 +60,10 @@ modèle est explicite : classes, propriétés et vectorizer se déclarent avant 
 - [[pgvector]] — Extension Postgres qui ajoute le type vector — idéale quand du Postgres est déjà en place.
 - [[Milvus]] — Base vectorielle distribuée costaude, pour gros volumes (multi-index HNSW/IVF/DiskANN).
 - [[Pinecone]] — Base vectorielle 100 % managée et serverless — zéro infra à gérer, scaling automatique, propriétaire.
+
+### Compléments
+
+- [[ColPali]] — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 
 ## Ressources
 
