@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: []
-complements: ["[[Ansible]]", "[[OpenBao]]", "[[Kubernetes]]"]
+complements: ["[[Ansible]]", "[[OpenBao]]", "[[Kubernetes]]", "[[Harbor]]"]
 tags: [infrastructure-as-code, reproducibility]
 url_docs: https://opentofu.org/docs/
 url_repo: https://github.com/opentofu/opentofu
@@ -72,6 +72,7 @@ Outil de **provisionnement** : on décrit dans des fichiers HCL les ressources v
 - [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil. — complément, pas concurrent : OpenTofu crée l'infrastructure et suit son état, Ansible configure ce qu'il a créé.
 - [[OpenBao]] — Serveur de secrets sous MPL-2.0, fork communautaire de HashiCorp Vault (LF Edge puis OpenSSF, Go) : coffre clé-valeur, secrets dynamiques de bases de données, PKI, Transit, scellement Shamir ou auto-unseal, Raft intégré — sans fonction gardée en payant, mais qui diverge volontairement de Vault et ne corrige que sa dernière version. — fournisseur de clé du chiffrement natif de l'état (moteur Transit) ; le fournisseur `hashicorp/vault` sert de client pour gérer ses ressources.
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — les fournisseurs `hashicorp/kubernetes` et `hashicorp/helm` créent des ressources d'un cluster, mais l'état dérive vite si un outil GitOps agit aussi dessus.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo). — le fournisseur `goharbor/harbor` d'OpenTofu décrit projets, utilisateurs et réplications.
 
 ## Ressources
 
