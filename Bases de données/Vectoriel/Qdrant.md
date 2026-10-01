@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: distributed
 alternatives: ["[[Weaviate]]", "[[pgvector]]", "[[Milvus]]", "[[Pinecone]]"]
-complements: ["[[FastEmbed]]", "[[AnythingLLM]]"]
+complements: ["[[FastEmbed]]", "[[AnythingLLM]]", "[[Mem0]]"]
 tags: [vector-db, rag, ann]
 url_docs: https://qdrant.tech/documentation/
 url_repo: https://github.com/qdrant/qdrant
@@ -67,6 +67,7 @@ sauvegarde.
 
 - [[FastEmbed]] — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut. — produit les vecteurs à insérer, avec l'intégration `qdrant-client[fastembed]`.
 - [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
+- [[Mem0]] — Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.
 
 ## Ressources
 
