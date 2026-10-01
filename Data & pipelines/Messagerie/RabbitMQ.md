@@ -63,10 +63,8 @@ versions.
 - **MPL-2.0** pour le serveur et les plugins de premier niveau (quelques fichiers en Apache-2.0). La licence est restée MPL-2.0 après le changement de politique de 2024.
 - **Propriétaire : Broadcom** (copyright « 2007-2026 Broadcom », via le rachat de VMware). Aucune fondation n'a été trouvée dans les sources lues.
 - **Effet du rachat sur le support** — et c'est le point à connaître :
-  - depuis le 2024-06-01, le support de l'équipe cœur va aux clients d'une licence commerciale, aux contributeurs actifs et aux utilisateurs qui fournissent un rapport reproductible ; les séries 3.12 et antérieures n'ont plus de correctif communautaire ;
-  - depuis la 4.1.0, la série 4.0.x est réservée aux clients payants via le portail Broadcom ; les autres doivent monter en 4.1 ;
-  - le fichier `COMMUNITY_SUPPORT.md` du dépôt dit que seule la dernière série mineure reçoit des correctifs pour les non-payants, hors failles critiques, et que l'équipe « n'a aucune obligation de répondre » ;
-  - une série ne reçoit donc que **quelques mois** de correctifs communautaires : 4.3 du 2026-04-23 au 2026-11-30, 4.2 close depuis le 2026-07-31. Les binaires et images de la série courante restent publics.
+  - depuis le 2024-06-01, le support de l'équipe cœur va aux clients d'une licence commerciale, aux contributeurs actifs et aux utilisateurs qui fournissent un rapport reproductible ; les séries 3.12 et antérieures n'ont plus de correctif communautaire ; depuis la 4.1.0, la série 4.0.x est réservée aux clients payants via le portail Broadcom ; les autres doivent monter en 4.1 ;
+  - le fichier `COMMUNITY_SUPPORT.md` du dépôt dit que seule la dernière série mineure reçoit des correctifs pour les non-payants, hors failles critiques, et que l'équipe « n'a aucune obligation de répondre » ; une série ne reçoit donc que **quelques mois** de correctifs communautaires : 4.3 du 2026-04-23 au 2026-11-30, 4.2 close depuis le 2026-07-31. Les binaires et images de la série courante restent publics.
 - **Fonctions payantes** (Tanzu RabbitMQ, produit distinct) : support étendu, FIPS 140-2 pour TLS, réplication *warm standby* vers un cluster distant, *shovels* distribués, AMQP 1.0 sur WebSocket, compression intra-cluster, audit sur Kubernetes, « Stream Browser » dans l'interface.
 
 ## Limites à connaître
@@ -98,10 +96,9 @@ versions.
 
 ## Ressources
 
-- Documentation — https://www.rabbitmq.com/docs
+- Documentation — https://www.rabbitmq.com/docs ; https://www.rabbitmq.com/docs/compare/kafka (comparaison avec Kafka)
 - Dépôt — https://github.com/rabbitmq/rabbitmq-server
 - Article — https://www.rabbitmq.com/blog/2024/05/31/new-community-support-policy
-- Documentation — https://www.rabbitmq.com/docs/compare/kafka (comparaison avec Kafka)
 
 ## Voir aussi
 
