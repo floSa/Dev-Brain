@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[Grype]]", "[[Gitleaks]]"]
-complements: ["[[Docker]]", "[[Podman]]", "[[Kubernetes]]", "[[GitHub Actions]]", "[[Dependency-Track]]"]
+complements: ["[[Docker]]", "[[Podman]]", "[[Kubernetes]]", "[[GitHub Actions]]", "[[Dependency-Track]]", "[[Harbor]]", "[[Zot]]"]
 tags: [vulnerability-scanning, sbom, secret-scanning, supply-chain, container, ci-cd]
 url_docs: https://trivy.dev/latest/docs/
 url_repo: https://github.com/aquasecurity/trivy
@@ -82,6 +82,8 @@ Scanner en ligne de commande d'Aqua Security. Une commande, plusieurs **cibles**
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — `trivy k8s` scanne un cluster (fonction expérimentale) ; l'opérateur Trivy est un projet distinct.
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — l'action officielle `aquasecurity/trivy-action` est celle qui a été détournée en mars 2026 : épinglage par SHA.
 - [[Dependency-Track]] — Plateforme OWASP (Apache-2.0, Java) qui ingère des SBOM CycloneDX et suit dans la durée les vulnérabilités des composants d'un portefeuille de projets, avec alertes sur les nouvelles CVE, politiques et VEX — elle ne scanne rien elle-même, exige PostgreSQL, et sa documentation hors ligne est encore incomplète. — Trivy produit le SBOM CycloneDX que Dependency-Track ingère, et peut servir d'analyseur via un serveur Trivy séparé.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo). — son adaptateur Trivy fait de Harbor un point de scan à la publication.
+- [[Zot]] — Registre OCI léger en un seul binaire (Apache-2.0, Go, CNCF sandbox) : stockage sur disque ou S3 compatible, sans base de données externe, synchronisation et miroir à la demande, scan Trivy embarqué ; interface et recherche en extensions, contrôle d'accès par dépôt et non par projet. — l'embarque comme bibliothèque pour scanner les images du registre.
 
 ## Ressources
 
