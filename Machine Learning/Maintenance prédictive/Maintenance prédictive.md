@@ -31,6 +31,19 @@ tags: [predictive-maintenance]
 - Mesurer sur un terrain public → [[Jeux de données PHM]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Diagnostic de défauts de roulements]] — domaines : data-sci, mlops
+- [[Indicateurs de santé]] — domaines : data-sci, mlops
+- [[Jumeau numérique et modèles hybrides]] — domaines : data-sci, ml-eng
+- [[Maintenance prédictive avec peu de pannes]] — domaines : data-sci, ml-eng, mlops
+- [[Maintenance prédictive et RUL]] — domaines : data-sci, mlops
+- [[Politique de maintenance et coût]] — domaines : data-sci, mlops
+- [[RUL par analyse de survie]] — domaines : data-sci, mlops
+- [[RUL par apprentissage profond]] — domaines : data-sci, ml-eng
+- [[Surveillance conditionnelle et modes de défaillance]] — domaines : data-sci, infra-ops
+
+### Briques
+- [[Jeux de données PHM]] — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
 <!-- AUTO:END -->
 
 ## Notes

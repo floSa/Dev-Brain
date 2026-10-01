@@ -63,7 +63,6 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - [[Annotation de données]] — domaines : data-sci, ml-eng
 - [[CI-CD pour le ML]] — domaines : mlops
 - [[Feature store — concept]] — domaines : mlops, data-eng
-- [[Maintenance prédictive et RUL]] — domaines : data-sci, mlops
 
 ### Briques
 - [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise.

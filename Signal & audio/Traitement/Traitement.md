@@ -32,6 +32,7 @@ tags: [signal-processing, fourier, spectrogram, wavelet, digital-filter]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Analyse vibratoire]] — domaines : data-sci, ml-eng
 - [[Filtrage numérique]] — domaines : data-sci, ml-eng
 - [[Ondelettes]] — domaines : data-sci, ml-eng
 - [[STFT et spectrogramme]] — domaines : data-sci, ml-eng
