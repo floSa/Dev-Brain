@@ -10,7 +10,7 @@ maturite: production
 langage: Python
 alternatives: []
 complements: ["[[spaCy]]", "[[GLiNER]]", "[[LiteLLM]]", "[[NeMo Guardrails]]"]
-tags: [privacy, ner, ai-security]
+tags: [privacy, ner, ai-security, pii]
 url_docs: https://presidio.dataprivacystack.org/
 url_repo: https://github.com/data-privacy-stack/presidio
 ---
