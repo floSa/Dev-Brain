@@ -790,6 +790,14 @@ axes:
               resoudrait plus de facon deterministe. Le libelle nomme donc la
               population, retrieval compris.
           memoire:
+            libelle: "Mémoire des agents"
+            motif: >
+              Ouvert le 2026-10-01, arbitrage de floSa : llm/memoire atteint 5
+              pages avec Mem0, Graphiti et Cognee (Agent memory, Letta, Headroom,
+              OpenViking + elles). Et NON « Agent memory » : c est le nom de
+              fichier de la NOTION qui vit dans le dossier — un hub homonyme ne
+              se distinguerait pas de la notion, un lien nu ne resoudrait plus de
+              facon deterministe (meme motif que « RAG & retrieval »).
             frontiere: >
               Memoire et contexte PERSISTANTS d un agent : compression du contexte,
               elagage, reinjection a la demande, base de faits qui survit a la
