@@ -9,7 +9,7 @@ tags: [meta]
 
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
-- [[Machine Learning]] — 106 briques, 17 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Détection d'anomalies]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
+- [[Machine Learning]] — 110 briques, 17 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Détection d'anomalies]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
 - [[LLM & IA générative]] — 97 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
 - [[Bases de données]] — 58 briques, 5 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 72 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 73 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 
