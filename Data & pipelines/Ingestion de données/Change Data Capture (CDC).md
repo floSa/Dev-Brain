@@ -47,6 +47,7 @@ tags: [cdc, streaming, data-pipeline]
 - [[Versionnage de données]] — figer des états cohérents en aval d'un flux continu.
 - Alternative naïve : rechargement complet (*full load*) périodique — simple mais lourd et sans historique des changements.
 - Orchestrateurs : [[Airflow]], [[Dagster]].
+- Voir aussi : [[Debezium]], [[Airbyte]], [[Apache NiFi]], [[Kafka]], [[Ingestion incrémentale et curseurs]].
 
 ## Pour aller plus loin
 

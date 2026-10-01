@@ -50,6 +50,7 @@ tags: [data-pipeline, idempotence]
 - [[Versionnage de données]] — snapshots qui rendent un rerun/backfill reproductible.
 - [[Migrations de schéma]] — même exigence d'idempotence, côté structure de base.
 - Orchestrateurs : [[Airflow]], [[Dagster]] (cf. [[Comparatif - Orchestrateurs data]]).
+- Voir aussi : [[dbt Core]], [[SQLMesh]], [[dlt]], [[Airbyte]], [[Ingestion incrémentale et curseurs]].
 
 ## Pour aller plus loin
 

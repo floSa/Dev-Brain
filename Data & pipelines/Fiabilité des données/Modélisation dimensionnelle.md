@@ -56,6 +56,7 @@ tags: [data-modeling, data-transformation, data-pipeline]
 - [[Partitionnement & layout de données]] — comment ranger une grande table de faits physiquement.
 - [[dbt Core]] et [[SQLMesh]] — les outils qui matérialisent faits et dimensions ; [[Great Expectations]], [[Soda Core]] et [[pandera]] vérifient les tables produites.
 - Alternatives de modélisation : **Data Vault 2.0** (Dan Linstedt : hubs, links, satellites), plus adapté à l'intégration agile de sources nombreuses, avec des étoiles construites au-dessus pour le reporting ; **Inmon** (entrepôt d'entreprise normalisé, dimensionnel en aval). Le désaccord de fond, exposé côté Kimball par Margy Ross en 2004, porte sur la forme de la donnée atomique : normalisée pour Inmon, dimensionnelle pour Kimball. Un comparatif de 2026 conclut qu'aucune méthode n'est universellement meilleure : le choix dépend de l'échelle, du cadre réglementaire, de la maturité analytique et de l'investissement initial acceptable.
+- Voir aussi : [[OLTP, OLAP et lakehouse]].
 
 ## Pour aller plus loin
 

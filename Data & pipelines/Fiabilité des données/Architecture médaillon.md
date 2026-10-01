@@ -52,6 +52,7 @@ tags: [data-modeling, data-pipeline, lakehouse, data-quality]
 - [[Versionnage de données]] — snapshots/time travel par couche, pour figer un état reproductible.
 - [[Change Data Capture (CDC)]] — alimente fréquemment la couche Bronze.
 - Alternative de modélisation : Data Vault (hubs/links/satellites) ou Kimball pur (étoile sans couche brute durable) — autres façons d'organiser le raffinage.
+- Voir aussi : [[dbt Core]], [[SQLMesh]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Catalogue de données et lignage]], [[Delta Lake]], [[OLTP, OLAP et lakehouse]].
 
 ## Pour aller plus loin
 

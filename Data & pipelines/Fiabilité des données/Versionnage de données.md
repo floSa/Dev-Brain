@@ -46,6 +46,7 @@ tags: [data-versioning]
 - [[Migrations de schéma]] — versionner la structure, pas le contenu.
 - [[Contrats de données & qualité]] — un contrat respecté rend une version exploitable en confiance.
 - [[Notebooks-as-code]] — versionner le **code** des notebooks ; pendant côté code de la reproductibilité.
+- Voir aussi : [[DVC]], [[lakeFS]], [[Delta Lake]], [[Apache Iceberg]], [[Comparatif - Versionnage de données]].
 
 ## Pour aller plus loin
 

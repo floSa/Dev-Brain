@@ -48,7 +48,7 @@
 ### Airbyte  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `cdc`, `self-hosted`
 - liens sortants : [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[Change Data Capture (CDC)]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[Debezium]], [[DuckDB]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Microsoft SQL Server]], [[MinIO]], [[MongoDB]], [[MySQL]], [[Parquet]], [[Postgres]], [[SQLMesh]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[Data & pipelines]], [[Debezium]], [[DuckDB]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Parquet]], [[Postgres]], [[dlt]]
+- liens entrants : [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[Change Data Capture (CDC)]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[Data & pipelines]], [[Debezium]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Parquet]], [[Postgres]], [[dlt]]
 
 ### Airflow  ·  brique
 - tags : `orchestration`, `data-pipeline`, `scheduler`
@@ -113,12 +113,12 @@
 ### Apache Iceberg  ·  brique
 - tags : `lakehouse`, `olap`, `schema-evolution`, `data-versioning`
 - liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Flink]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[Spark]], [[Trino]], [[dbt Core]]
-- liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Delta Lake]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[dbt Core]], [[lakeFS]]
+- liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Delta Lake]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[Versionnage de données]], [[dbt Core]], [[lakeFS]]
 
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
 - liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[DataHub]], [[Ingestion de données]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[SQLMesh]], [[dbt Core]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[DataHub]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Beats]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[DataHub]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[MySQL]], [[OpenMetadata]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[dlt]]
 
 ### Apache Ozone  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -458,12 +458,12 @@
 ### dbt Core  ·  brique
 - tags : `data-transformation`, `data-pipeline`, `data-quality`
 - liens sortants : [[Airflow]], [[Apache Iceberg]], [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[Catalogue de données et lignage]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache Iceberg]], [[Apache NiFi]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Qualité de données]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Parquet]], [[Postgres]], [[Prefect]], [[SQLMesh]], [[Spark]], [[dlt]]
 
 ### Debezium  ·  brique
 - tags : `data-ingestion`, `cdc`, `streaming`, `self-hosted`
 - liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Flink]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[MariaDB]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[NATS]], [[Postgres]], [[RabbitMQ]]
-- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Flink]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[MariaDB]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[NATS]], [[Postgres]], [[RabbitMQ]]
+- liens entrants : [[Airbyte]], [[Apache Iceberg]], [[Architecture pilotée par les événements]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Flink]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[MariaDB]], [[Messagerie]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[NATS]], [[Postgres]], [[RabbitMQ]]
 
 ### Deep Agents  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `context-engineering`, `mcp`
@@ -488,7 +488,7 @@
 ### Delta Lake  ·  brique
 - tags : `lakehouse`, `file-format`, `schema-evolution`, `data-versioning`
 - liens sortants : [[Apache Iceberg]], [[Comparatif - Versionnage de données]], [[DVC]], [[DuckDB]], [[Flink]], [[Formats de fichiers et de tables]], [[MinIO]], [[Parquet]], [[Partitionnement & layout de données]], [[Spark]], [[Trino]], [[Versionnage de données]], [[lakeFS]]
-- liens entrants : [[Apache Iceberg]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Spark]], [[Trino]], [[lakeFS]]
+- liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Spark]], [[Trino]], [[Versionnage de données]], [[lakeFS]]
 
 ### Dependency-Track  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `self-hosted`
@@ -513,7 +513,7 @@
 ### dlt  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `schema-evolution`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[MinIO]], [[Parquet]], [[Postgres]], [[SQLMesh]], [[connectorx]], [[dbt Core]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Parquet]], [[Postgres]], [[connectorx]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[Parquet]], [[Postgres]], [[connectorx]]
 
 ### Docker  ·  brique
 - tags : `container`
@@ -553,7 +553,7 @@
 ### DVC  ·  brique
 - tags : `data-versioning`, `reproducibility`, `ml-pipeline`
 - liens sortants : [[Apache Iceberg]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Delta Lake]], [[Fiabilité des données]], [[MLflow]], [[MinIO]], [[Model registry & versioning]], [[Versionnage de données]], [[lakeFS]]
-- liens entrants : [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[MLflow]], [[MinIO]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[lakeFS]]
+- liens entrants : [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - Versionnage de données]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[MLflow]], [[MinIO]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Versionnage de données]], [[lakeFS]]
 
 ### dynaconf  ·  brique
 - tags : `config`
@@ -763,7 +763,7 @@
 ### Great Expectations  ·  brique
 - tags : `data-quality`, `data-validation`, `data-contract`
 - liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[DataHub]], [[Evidently]], [[Fiabilité des données]], [[OpenLineage]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
-- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[DataHub]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
+- liens entrants : [[Airflow]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Data & pipelines]], [[DataHub]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[Postgres]], [[Soda Core]], [[Spark]], [[pandas]], [[pandera]]
 
 ### Grype  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `container`, `ci-cd`
@@ -938,7 +938,7 @@
 ### Kafka  ·  brique
 - tags : `message-broker`, `streaming`, `distributed`, `self-hosted`
 - liens sortants : [[Architecture pilotée par les événements]], [[Celery]], [[Comparatif - Brokers de messages]], [[DataHub]], [[Debezium]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Postgres]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[DataHub]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]], [[Telegraf]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[DataHub]], [[Debezium]], [[Données industrielles]], [[EMQX]], [[Flink]], [[Kestra]], [[Messagerie]], [[NATS]], [[OpenLineage]], [[OpenMetadata]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]], [[Stream processing]], [[Telegraf]]
 
 ### Keras  ·  brique
 - tags : `deep-learning`, `gpu`
@@ -988,7 +988,7 @@
 ### lakeFS  ·  brique
 - tags : `data-versioning`, `reproducibility`, `object-storage`, `s3-compatible`, `self-hosted`
 - liens sortants : [[Apache Iceberg]], [[Ceph]], [[Comparatif - Versionnage de données]], [[DVC]], [[Delta Lake]], [[Fiabilité des données]], [[Kubernetes]], [[MLflow]], [[MinIO]], [[Postgres]], [[Spark]], [[Stockage objet et API S3]], [[Versionnage de données]]
-- liens entrants : [[Ceph]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[Kubernetes]], [[MLflow]], [[MinIO]], [[Postgres]], [[Spark]]
+- liens entrants : [[Ceph]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[Kubernetes]], [[MLflow]], [[MinIO]], [[Postgres]], [[Spark]], [[Versionnage de données]]
 
 ### LanceDB  ·  brique
 - tags : `vector-db`, `embedded`, `multimodal`, `columnar`
@@ -1408,7 +1408,7 @@
 ### open62541  ·  brique
 - tags : `opc-ua`, `iiot`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]]
-- liens entrants : [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Telegraf]], [[asyncua]]
+- liens entrants : [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]]
 
 ### open_deep_research  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `retrieval`, `mcp`
@@ -1453,7 +1453,7 @@
 ### OpenLineage  ·  brique
 - tags : `data-lineage`, `data-governance`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Catalogue de données et lignage]], [[Comparatif - Catalogues et lignage de données]], [[Dagster]], [[Data & pipelines]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kafka]], [[OpenMetadata]], [[Spark]], [[dbt Core]]
-- liens entrants : [[Airflow]], [[Catalogue de données et lignage]], [[Comparatif - Catalogues et lignage de données]], [[Dagster]], [[Data & pipelines]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kafka]], [[OpenMetadata]], [[Spark]], [[dbt Core]]
+- liens entrants : [[Airflow]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Comparatif - Catalogues et lignage de données]], [[Dagster]], [[Data & pipelines]], [[DataHub]], [[Flink]], [[Great Expectations]], [[Kafka]], [[OpenMetadata]], [[Spark]], [[dbt Core]]
 
 ### OpenMAIC  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `education`, `self-hosted`
@@ -1543,7 +1543,7 @@
 ### pandera  ·  brique
 - tags : `data-validation`, `data-quality`, `dataframe`
 - liens sortants : [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Dagster]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
-- liens entrants : [[Comparatif - Qualité de données]], [[Dagster]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
+- liens entrants : [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Dagster]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Polars]], [[Pydantic]], [[Soda Core]], [[Spark]], [[pandas]]
 
 ### papermill  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -2038,7 +2038,7 @@
 ### Soda Core  ·  brique
 - tags : `data-quality`, `data-contract`, `data-validation`
 - liens sortants : [[Architecture médaillon]], [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[DuckDB]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Postgres]], [[pandera]]
-- liens entrants : [[Comparatif - Qualité de données]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Postgres]], [[pandera]]
+- liens entrants : [[Comparatif - Qualité de données]], [[Contrats de données & qualité]], [[Data & pipelines]], [[DuckDB]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[Postgres]], [[pandera]]
 
 ### SOPS  ·  brique
 - tags : `secrets-management`, `cryptography`
@@ -2073,7 +2073,7 @@
 ### SQLMesh  ·  brique
 - tags : `data-transformation`, `data-pipeline`, `data-quality`
 - liens sortants : [[Architecture médaillon]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Kestra]], [[Modélisation dimensionnelle]], [[Postgres]], [[Spark]], [[dbt Core]]
-- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Catalogue de données et lignage]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[Postgres]], [[Spark]], [[dbt Core]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Kestra]], [[Modélisation dimensionnelle]], [[Postgres]], [[Spark]], [[dbt Core]], [[dlt]]
 
 ### SQLModel  ·  brique
 - tags : `orm`, `relational`, `type-hints`, `data-validation`
@@ -2143,7 +2143,7 @@
 ### Telegraf  ·  brique
 - tags : `iiot`, `metrics`, `data-ingestion`, `opc-ua`, `mqtt`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[InfluxDB]], [[Kafka]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Données industrielles]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[TimescaleDB]], [[open62541]]
+- liens entrants : [[Données industrielles]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]], [[open62541]]
 
 ### Tempo  ·  brique
 - tags : `observability`, `tracing`, `self-hosted`
@@ -2243,7 +2243,7 @@
 ### Trino  ·  brique
 - tags : `query-engine`, `federation`, `olap`, `distributed`, `lakehouse`
 - liens sortants : [[Apache Iceberg]], [[Apache Superset]], [[Bases de données]], [[Ceph]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Delta Lake]], [[DuckDB]], [[Helm]], [[Kubernetes]], [[Metabase]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Postgres]], [[SeaweedFS]]
-- liens entrants : [[Apache Arrow]], [[Apache Iceberg]], [[Apache Superset]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Delta Lake]], [[DuckDB]], [[MinIO]], [[OLTP, OLAP et lakehouse]]
+- liens entrants : [[Apache Arrow]], [[Apache Iceberg]], [[Apache Superset]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases colonnes]], [[Delta Lake]], [[DuckDB]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[Partitionnement & layout de données]]
 
 ### Trivy  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `secret-scanning`, `supply-chain`, `container`, `ci-cd`
@@ -2668,7 +2668,7 @@
 ### Comparatif - Qualité de données  ·  comparatif
 - tags : `data-quality`, `data-validation`, `data-contract`
 - liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données.base]], [[Comparatifs]], [[Contrats de données & qualité]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[dbt Core]], [[pandera]]
-- liens entrants : [[Comparatif - Catalogues et lignage de données]], [[Comparatifs]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[pandera]]
+- liens entrants : [[Comparatif - Catalogues et lignage de données]], [[Comparatifs]], [[Contrats de données & qualité]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[pandera]]
 
 ### Comparatif - Registres d'images  ·  comparatif
 - tags : `container-registry`, `self-hosted`
@@ -2743,7 +2743,7 @@
 ### Comparatif - Versionnage de données  ·  comparatif
 - tags : `data-versioning`
 - liens sortants : [[Apache Iceberg]], [[ClearML]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Versionnage de données.base]], [[Comparatifs]], [[DVC]], [[Delta Lake]], [[Fiabilité des données]], [[MLflow]], [[Model registry & versioning]], [[Versionnage de données]], [[lakeFS]]
-- liens entrants : [[Apache Iceberg]], [[Comparatifs]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[lakeFS]]
+- liens entrants : [[Apache Iceberg]], [[Comparatifs]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[Fiabilité des données]], [[Formats de fichiers et de tables]], [[Versionnage de données]], [[lakeFS]]
 
 ### Comparatif - Visualisation  ·  comparatif
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `declarative-viz`
@@ -2893,7 +2893,7 @@
 ### Données industrielles  ·  hub
 - tags : `mqtt`, `opc-ua`, `iiot`, `message-broker`
 - liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[EMQX]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Ingestion de données]], [[Kafka]], [[LiteRT]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[OpenVINO]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Serving]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Serving]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Embeddings & encodeurs  ·  hub
 - tags : `embeddings`, `semantic-search`, `retrieval`, `model-serving`, `inference`
@@ -3327,12 +3327,12 @@
 
 ### Architecture médaillon  ·  notion
 - tags : `data-modeling`, `data-pipeline`, `lakehouse`, `data-quality`
-- liens sortants : [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Partitionnement & layout de données]], [[Versionnage de données]]
+- liens sortants : [[Apache Iceberg]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Delta Lake]], [[ELT vs ETL & idempotence]], [[Modélisation dimensionnelle]], [[OLTP, OLAP et lakehouse]], [[OpenLineage]], [[Parquet]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Versionnage de données]], [[dbt Core]]
 - liens entrants : [[Apache Iceberg]], [[Catalogue de données et lignage]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[Fiabilité des données]], [[Great Expectations]], [[Modélisation dimensionnelle]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[SQLMesh]], [[Soda Core]], [[dbt Core]]
 
 ### Architecture pilotée par les événements  ·  notion
 - tags : `event-driven`, `message-broker`, `idempotence`
-- liens sortants : [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers de messages]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Messagerie]], [[NATS]], [[Postgres]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]], [[Temporal]]
+- liens sortants : [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - Brokers de messages]], [[Debezium]], [[Données industrielles]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Messagerie]], [[NATS]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redis]], [[Redpanda]], [[Stream processing]], [[Temporal]]
 - liens entrants : [[Celery]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[EMQX]], [[Kafka]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
 
 ### Architectures CNN  ·  notion
@@ -3433,7 +3433,7 @@
 ### Catalogue de données et lignage  ·  notion
 - tags : `data-catalog`, `data-lineage`, `data-governance`
 - liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Catalogues et lignage de données]], [[Contrats de données & qualité]], [[Dagster]], [[DataHub]], [[Modélisation dimensionnelle]], [[OpenLineage]], [[OpenMetadata]], [[SQLMesh]], [[Versionnage de données]], [[dbt Core]]
-- liens entrants : [[Comparatif - Catalogues et lignage de données]], [[Data & pipelines]], [[DataHub]], [[OpenLineage]], [[OpenMetadata]]
+- liens entrants : [[Architecture médaillon]], [[Comparatif - Catalogues et lignage de données]], [[Contrats de données & qualité]], [[Data & pipelines]], [[DataHub]], [[OpenLineage]], [[OpenMetadata]]
 
 ### Chain-of-Thought  ·  notion
 - tags : `prompting`, `reasoning`, `llm`
@@ -3442,7 +3442,7 @@
 
 ### Change Data Capture (CDC)  ·  notion
 - tags : `cdc`, `streaming`, `data-pipeline`
-- liens sortants : [[Airflow]], [[Contrats de données & qualité]], [[Dagster]], [[ELT vs ETL & idempotence]], [[Versionnage de données]]
+- liens sortants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[Contrats de données & qualité]], [[Dagster]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Versionnage de données]]
 - liens entrants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Architecture pilotée par les événements]], [[Comparatif - Brokers de messages]], [[Comparatif - Ingestion de données]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Logstash]], [[Stream processing]], [[Versionnage de données]]
 
 ### Chaînes de Markov  ·  notion
@@ -3542,7 +3542,7 @@
 
 ### Contrats de données & qualité  ·  notion
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
-- liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Dagster]], [[Data drift]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]]
+- liens sortants : [[Airflow]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Comparatif - Qualité de données]], [[Dagster]], [[Data drift]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[Great Expectations]], [[Migrations de schéma]], [[Soda Core]], [[dbt Core]], [[pandera]]
 - liens entrants : [[Architecture médaillon]], [[Avro]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Qualité de données]], [[Data & pipelines]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Great Expectations]], [[Ingestion incrémentale et curseurs]], [[Modélisation dimensionnelle]], [[Soda Core]], [[Versionnage de données]], [[pandera]]
 
 ### Convexity  ·  notion
@@ -3652,7 +3652,7 @@
 
 ### ELT vs ETL & idempotence  ·  notion
 - tags : `data-pipeline`, `idempotence`
-- liens sortants : [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[Migrations de schéma]], [[Versionnage de données]]
+- liens sortants : [[Airbyte]], [[Airflow]], [[Change Data Capture (CDC)]], [[Comparatif - Orchestrateurs data]], [[Contrats de données & qualité]], [[Dagster]], [[Ingestion incrémentale et curseurs]], [[Migrations de schéma]], [[SQLMesh]], [[Versionnage de données]], [[dbt Core]], [[dlt]]
 - liens entrants : [[Architecture médaillon]], [[Architecture pilotée par les événements]], [[Change Data Capture (CDC)]], [[Comparatif - Transformation SQL]], [[Contrats de données & qualité]], [[Data & pipelines]], [[Fiabilité des données]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]], [[Orchestration]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Stream processing]], [[Versionnage de données]], [[connectorx]], [[dbt Core]], [[dlt]]
 
 ### embeddings  ·  notion
@@ -3908,7 +3908,7 @@
 ### Ingestion incrémentale et curseurs  ·  notion
 - tags : `data-ingestion`, `data-pipeline`, `idempotence`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Dagster]], [[Debezium]], [[ELT vs ETL & idempotence]], [[dlt]]
-- liens entrants : [[Airbyte]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Debezium]], [[Ingestion de données]], [[dlt]]
+- liens entrants : [[Airbyte]], [[Change Data Capture (CDC)]], [[Comparatif - Ingestion de données]], [[Data & pipelines]], [[Debezium]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[dlt]]
 
 ### Ingénierie des caractéristiques  ·  notion
 - tags : `feature-engineering`
@@ -4137,8 +4137,8 @@
 
 ### Modélisation dimensionnelle  ·  notion
 - tags : `data-modeling`, `data-transformation`, `data-pipeline`
-- liens sortants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Great Expectations]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Soda Core]], [[Versionnage de données]], [[dbt Core]], [[pandera]]
-- liens entrants : [[Catalogue de données et lignage]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[Fiabilité des données]], [[OLTP, OLAP et lakehouse]], [[SQLMesh]], [[dbt Core]]
+- liens sortants : [[Architecture médaillon]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Great Expectations]], [[OLTP, OLAP et lakehouse]], [[Partitionnement & layout de données]], [[SQLMesh]], [[Soda Core]], [[Versionnage de données]], [[dbt Core]], [[pandera]]
+- liens entrants : [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Comparatif - Transformation SQL]], [[Data & pipelines]], [[Fiabilité des données]], [[OLTP, OLAP et lakehouse]], [[SQLMesh]], [[dbt Core]]
 
 ### Monitoring de modèle en production  ·  notion
 - tags : `model-monitoring`, `data-drift`, `concept-drift`
@@ -4248,7 +4248,7 @@
 ### OLTP, OLAP et lakehouse  ·  notion
 - tags : `olap`, `columnar`, `lakehouse`, `query-engine`, `federation`
 - liens sortants : [[ADBC]], [[Apache Arrow]], [[Apache Iceberg]], [[Apache Superset]], [[Architecture médaillon]], [[Bases de données]], [[Ceph]], [[ClickHouse]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases colonnes]], [[Delta Lake]], [[DuckDB]], [[Formats de fichiers et de tables]], [[Metabase]], [[MinIO]], [[Modélisation dimensionnelle]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[SeaweedFS]], [[Trino]]
-- liens entrants : [[Apache Arrow]], [[Apache Superset]], [[Bases de données]], [[Metabase]], [[Trino]]
+- liens entrants : [[Apache Arrow]], [[Apache Superset]], [[Architecture médaillon]], [[Bases de données]], [[Metabase]], [[Modélisation dimensionnelle]], [[Trino]]
 
 ### Ondelettes  ·  notion
 - tags : `signal-processing`, `wavelet`
@@ -4292,7 +4292,7 @@
 
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
-- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]]
+- liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]], [[Trino]]
 - liens entrants : [[Apache Iceberg]], [[Architecture médaillon]], [[Data & pipelines]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[Modélisation dimensionnelle]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Stream processing]]
 
 ### PCA  ·  notion
@@ -4382,8 +4382,8 @@
 
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
-- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
@@ -4657,7 +4657,7 @@
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
-- liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Partitionnement & layout de données]]
+- liens sortants : [[Change Data Capture (CDC)]], [[ELT vs ETL & idempotence]], [[Flink]], [[Kafka]], [[Partitionnement & layout de données]]
 - liens entrants : [[Architecture pilotée par les événements]], [[Avro]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[Flink]], [[Messagerie]], [[Partitionnement & layout de données]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
 
 ### Structured outputs  ·  notion
@@ -4827,7 +4827,7 @@
 
 ### Versionnage de données  ·  notion
 - tags : `data-versioning`
-- liens sortants : [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]]
+- liens sortants : [[Apache Iceberg]], [[Change Data Capture (CDC)]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[Delta Lake]], [[ELT vs ETL & idempotence]], [[Migrations de schéma]], [[Notebooks-as-code]], [[lakeFS]]
 - liens entrants : [[Annotation de données]], [[Architecture médaillon]], [[Catalogue de données et lignage]], [[Change Data Capture (CDC)]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[Delta Lake]], [[ELT vs ETL & idempotence]], [[Fiabilité des données]], [[Modélisation dimensionnelle]], [[Notebooks-as-code]], [[lakeFS]]
 
 ### Video generation  ·  notion
