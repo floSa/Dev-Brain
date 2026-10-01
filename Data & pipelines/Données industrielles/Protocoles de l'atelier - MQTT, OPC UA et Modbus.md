@@ -93,6 +93,7 @@ tags: [mqtt, opc-ua, iiot, networking]
 - [[Stream processing]] — traiter le flux une fois transporté.
 - [[Maintenance prédictive et RUL]] et [[Time series anomaly detection]] — ce que l'on fait des séries une fois stockées.
 - [[Apache NiFi]] — l'ingestion de fichiers et de protocoles, hors du périmètre d'atelier.
+- Voir aussi : [[Telegraf]], [[open62541]].
 
 ## Pour aller plus loin
 
