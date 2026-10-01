@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python / Cython
 alternatives: ["[[Polars]]", "[[Modin]]", "[[Dask]]"]
-complements: ["[[DuckDB]]", "[[Great Expectations]]", "[[pandera]]", "[[Apache Arrow]]"]
+complements: ["[[DuckDB]]", "[[Great Expectations]]", "[[pandera]]", "[[Apache Arrow]]", "[[Hypothesis]]"]
 tags: [dataframe, in-memory]
 url_docs: https://pandas.pydata.org/docs/
 url_repo: https://github.com/pandas-dev/pandas
@@ -69,6 +69,7 @@ optionnel réduit le coût des chaînes et accélère la lecture Parquet.
 - [[Great Expectations]] — Cadre de validation de données en Python : des Expectations groupées en suites, exécutées par des Checkpoints sur des tables SQL, pandas ou Spark, avec rapports HTML Data Docs (GX Core, Apache-2.0) ; dépôt repris par Fivetran en 2026. — les DataFrames pandas se valident par `context.data_sources.add_pandas(...)` ; Polars n'est pas supporté.
 - [[pandera]] — Validation de DataFrames en Python par schémas déclaratifs ou modèles typés (pandas, Polars, PySpark, Ibis) : checks vectorisés, validation paresseuse qui remonte toutes les erreurs, sans rapport ni historique (MIT). — backend le plus riche : seul à offrir l'inférence de schéma, le YAML, les tests d'hypothèse et les intégrations FastAPI et Pydantic.
 - [[Apache Arrow]] — Format colonnaire en mémoire et bibliothèques multi-langages pour échanger des données entre moteurs sans copie ni conversion : spécification, IPC, Flight, C++ et pyarrow (Apache-2.0). — pandas 3.0 adosse son type str à pyarrow s'il est installé et échange par __arrow_c_stream__.
+- [[Hypothesis]] — Test par propriétés pour Python : on décrit les entrées valides, la bibliothèque en génère des centaines, cherche un contre-exemple et le réduit au plus petit cas qui échoue. — `hypothesis.extra.pandas` génère DataFrames, colonnes, séries et index (`data_frames`, `column`, `series`, `indexes`), pour tester des fonctions de transformation par propriétés.
 
 ## Ressources
 

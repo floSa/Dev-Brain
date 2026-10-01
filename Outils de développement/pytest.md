@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[testcontainers]]"]
+complements: ["[[Hypothesis]]", "[[testcontainers]]"]
 tags: [testing]
 url_docs: https://docs.pytest.org/
 url_repo: https://github.com/pytest-dev/pytest
@@ -57,6 +57,7 @@ conventions de nommage.
 
 ### Compléments
 
+- [[Hypothesis]] — Test par propriétés pour Python : on décrit les entrées valides, la bibliothèque en génère des centaines, cherche un contre-exemple et le réduit au plus petit cas qui échoue. — son plugin pytest est livré dans le paquet : un `@given` se pose sur un test ordinaire, avec des profils (`--hypothesis-profile`) et une graine reproductible (`--hypothesis-seed`).
 - [[testcontainers]] — Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement. — les conteneurs s'exposent en fixtures pour les tests d'intégration
 
 ## Ressources
