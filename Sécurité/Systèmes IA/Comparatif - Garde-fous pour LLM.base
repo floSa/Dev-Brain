@@ -1,0 +1,34 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de role garde les notions
+    # du dossier (AI security, Guardrails…) hors de la vue.
+    - role == "brique"
+    - categorie == "security/ia"
+views:
+  - type: table
+    name: Garde-fous (filtrer entrées et sorties)
+    filters:
+      and:
+        - file.hasTag("guardrails")
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Toute la catégorie
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc

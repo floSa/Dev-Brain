@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: beta
 langage: Python
 alternatives: ["[[spaCy]]"]
-complements: ["[[Label Studio]]"]
+complements: ["[[Label Studio]]", "[[Presidio]]"]
 tags: [ner, nlp, transformers]
 url_docs: https://github.com/urchade/GLiNER
 url_repo: https://github.com/urchade/GLiNER
@@ -61,6 +61,7 @@ existent.
 ### Compléments
 
 - [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemple officiel `gliner` : reconnaissance d'entités à zéro exemple, pour amorcer l'annotation avant d'avoir des étiquettes.
+- [[Presidio]] — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France. — la documentation de Presidio le cite parmi les moteurs qui se branchent comme reconnaisseur personnalisé : un NER zero-shot pour des types d'entités qu'aucune règle ne décrit.
 
 ## Ressources
 
