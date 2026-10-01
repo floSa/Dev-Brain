@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 963,
+  "count": 964,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1335,6 +1335,9 @@
       "Image generation",
       "SDV",
       "Video generation"
+    ],
+    "git-hooks": [
+      "pre-commit"
     ],
     "gitops": [
       "Argo CD",
@@ -26617,7 +26620,8 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[Semgrep]]"
+        "[[Semgrep]]",
+        "[[pre-commit]]"
       ],
       "maturite": "production"
     },
@@ -26707,6 +26711,29 @@
         "[[uv]]"
       ],
       "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/pre-commit.md",
+      "nom": "pre-commit",
+      "alias": [
+        "pre-commit hooks"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent.",
+      "tags": [
+        "git-hooks"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Ruff]]",
+        "[[Gitleaks]]",
+        "[[Semgrep]]"
+      ],
       "maturite": "production"
     },
     {
@@ -29146,7 +29173,8 @@
         "[[Trivy]]"
       ],
       "complements": [
-        "[[GitHub Actions]]"
+        "[[GitHub Actions]]",
+        "[[pre-commit]]"
       ],
       "maturite": "production"
     },
@@ -29204,7 +29232,8 @@
       "alternatives": [],
       "complements": [
         "[[GitHub Actions]]",
-        "[[Ruff]]"
+        "[[Ruff]]",
+        "[[pre-commit]]"
       ],
       "maturite": "production"
     },
