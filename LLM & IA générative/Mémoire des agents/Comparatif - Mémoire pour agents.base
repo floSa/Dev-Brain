@@ -1,0 +1,23 @@
+filters:
+  and:
+    # Un comparatif compare des briques. Le dossier ne porte qu'une catégorie,
+    # `llm/memoire` : le filtre de catégorie suffit, et toute nouvelle brique de
+    # mémoire entre dans la vue sans toucher à ce fichier.
+    - role == "brique"
+    - categorie == "llm/memoire"
+views:
+  - type: table
+    name: Mémoire pour agents
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
