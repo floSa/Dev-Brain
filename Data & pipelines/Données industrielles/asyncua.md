@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Node-RED]]"]
+alternatives: ["[[Node-RED]]", "[[open62541]]"]
 complements: []
 tags: [opc-ua, iiot, data-ingestion]
 url_docs: https://opcua-asyncio.readthedocs.io/
@@ -44,7 +44,7 @@ mentionnent aussi 3.14, que PyPI ne classe pas.
 
 | Prendre si | Écarter si |
 |---|---|
-| Collecter des variables d'un automate ou d'un serveur OPC UA depuis du code Python : un pipeline, un notebook, un service | Un serveur embarqué sur microcontrôleur, en C : open62541 (MPL-2.0, sans fiche ici) |
+| Collecter des variables d'un automate ou d'un serveur OPC UA depuis du code Python : un pipeline, un notebook, un service | Un serveur embarqué sur microcontrôleur, en C : [[open62541]] (MPL-2.0) |
 | Publier ensuite vers un broker MQTT ou une base : la bibliothèque ne connaît que OPC UA, le reste est du Python ordinaire | Les équipes d'atelier doivent lire et modifier le flux sans écrire de code : [[Node-RED]] |
 | Un serveur OPC UA de test ou de simulation, rapide à écrire, pour développer sans automate | Une passerelle Java à embarquer ou à faire certifier : Eclipse Milo (EPL-2.0, sans fiche ici) |
 | Charger un modèle d'information depuis un fichier NodeSet2 XML | Les alarmes et conditions côté serveur : le README les liste comme non implémentées |
@@ -66,7 +66,7 @@ mentionnent aussi 3.14, que PyPI ne classe pas.
 
 - **Un README en retard sur les notes de version** : il classe encore la reconnexion automatique du client parmi les fonctions « peut-être » non implémentées, alors que les notes de la 2.0 l'annoncent et que l'exemple officiel l'emploie. Il annonce aussi Python 3.14 sans classifieur PyPI. Se fier aux notes et aux exemples, et tester.
 - **Serveur : des fonctions absentes** : alarmes, vues, restauration de session, WebSocket et XML ne sont pas implémentés selon le README ; le modèle d'utilisateur est basique (un seul utilisateur en écriture). Le pub/sub est annoncé en « MVP » dans les notes de la 2.0.
-- **Pas d'empreinte mémoire ni de profil Nano ou Micro documentés** : la bibliothèque est du Python, elle suppose un interpréteur. Sur microcontrôleur, une pile C comme open62541 est un autre choix.
+- **Pas d'empreinte mémoire ni de profil Nano ou Micro documentés** : la bibliothèque est du Python, elle suppose un interpréteur. Sur microcontrôleur, une pile C comme [[open62541]] est un autre choix.
 - **Pas de passerelle prête à l'emploi** : aucun exemple officiel n'illustre la publication vers MQTT ou une base. Ce montage est courant, il est à écrire.
 - **Adoption** : environ 710 000 téléchargements PyPI en septembre 2026 hors miroirs, environ 740 dépôts dépendants sur GitHub (exemples : Conpot, MyEMS). Aucun produit industriel qui l'embarque n'a été trouvé.
 
@@ -75,7 +75,7 @@ mentionnent aussi 3.14, que PyPI ne classe pas.
 ### Alternatives
 
 - [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — le même besoin, par un flux visuel que lisent les automaticiens, plutôt que par du code Python versionné.
-- voisin : **open62541** (MPL-2.0, C, v1.5.8 du 2026-09-06, environ 3 200 étoiles) — pile C client et serveur, profil *Micro Embedded Device Server*, serveur exemple certifié profil *Standard Server 2017* ; o6 Automation emploie les contributeurs principaux, sans double licence commerciale, seulement du support ; sans fiche dans le brain.
+- [[open62541]] — Pile OPC UA client et serveur en C, cœur sans dépendance hors bibliothèque standard, de Linux à FreeRTOS et Zephyr : sécurité X.509 (mbedTLS ou OpenSSL), PubSub UADP et MQTT encore annoncé expérimental, serveur d'exemple certifié (profil Standard 2017, v1.4) ; MPL-2.0, support commercial chez o6 Automation. — la même norme en C, à compiler et à porter, plutôt qu'en Python pur : un serveur embarqué, un produit livré, des politiques de sécurité plus récentes.
 - voisin : **Eclipse Milo** (EPL-2.0, Java, v1.1.7 du 2026-09-09, environ 1 400 étoiles) — pile Java client et serveur de la fondation Eclipse, sur laquelle Ignition est bâti d'après son mainteneur ; 32 contributeurs, dont un signe presque tout ; sans fiche dans le brain.
 - voisin : **node-opcua** (MIT, Node.js) — le pub/sub et le serveur de découverte (GDS) y sont un module commercial de Sterfive ; sans fiche dans le brain.
 
