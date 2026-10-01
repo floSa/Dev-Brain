@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 969,
+  "count": 971,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -687,6 +687,7 @@
       "Ingestion de données",
       "Ingestion incrémentale et curseurs",
       "Node-RED",
+      "Telegraf",
       "asyncua",
       "dlt"
     ],
@@ -1500,7 +1501,9 @@
       "Mosquitto",
       "Node-RED",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
-      "asyncua"
+      "Telegraf",
+      "asyncua",
+      "open62541"
     ],
     "image-classification": [
       "Classification d'images",
@@ -2133,6 +2136,7 @@
       "Observabilité",
       "OpenTelemetry",
       "Prometheus",
+      "Telegraf",
       "VictoriaMetrics",
       "Zabbix"
     ],
@@ -2308,7 +2312,8 @@
       "Données industrielles",
       "EMQX",
       "Mosquitto",
-      "Protocoles de l'atelier - MQTT, OPC UA et Modbus"
+      "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
+      "Telegraf"
     ],
     "multi-agent": [
       "Agents",
@@ -2541,7 +2546,9 @@
     "opc-ua": [
       "Données industrielles",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
-      "asyncua"
+      "Telegraf",
+      "asyncua",
+      "open62541"
     ],
     "optimal-transport": [
       "Optimal transport",
@@ -4900,7 +4907,8 @@
         "[[TimescaleDB]]"
       ],
       "complements": [
-        "[[EMQX]]"
+        "[[EMQX]]",
+        "[[Telegraf]]"
       ],
       "maturite": "production"
     },
@@ -5814,7 +5822,8 @@
       ],
       "complements": [
         "[[Postgres]]",
-        "[[EMQX]]"
+        "[[EMQX]]",
+        "[[Telegraf]]"
       ],
       "maturite": "production"
     },
@@ -7034,7 +7043,8 @@
         "[[RabbitMQ]]"
       ],
       "complements": [
-        "[[Node-RED]]"
+        "[[Node-RED]]",
+        "[[Telegraf]]"
       ],
       "maturite": "production"
     },
@@ -7061,7 +7071,8 @@
         "self-hosted"
       ],
       "alternatives": [
-        "[[asyncua]]"
+        "[[asyncua]]",
+        "[[Telegraf]]"
       ],
       "complements": [
         "[[Mosquitto]]",
@@ -7105,6 +7116,38 @@
       "maturite": null
     },
     {
+      "path": "Data & pipelines/Données industrielles/Telegraf.md",
+      "nom": "Telegraf",
+      "alias": [
+        "InfluxData Telegraf",
+        "agent Telegraf",
+        "telegraf.conf"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental.",
+      "tags": [
+        "iiot",
+        "metrics",
+        "data-ingestion",
+        "opc-ua",
+        "mqtt"
+      ],
+      "alternatives": [
+        "[[Node-RED]]"
+      ],
+      "complements": [
+        "[[Mosquitto]]",
+        "[[InfluxDB]]",
+        "[[TimescaleDB]]",
+        "[[Prometheus]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Données industrielles/asyncua.md",
       "nom": "asyncua",
       "alias": [
@@ -7124,7 +7167,32 @@
         "data-ingestion"
       ],
       "alternatives": [
-        "[[Node-RED]]"
+        "[[Node-RED]]",
+        "[[open62541]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Données industrielles/open62541.md",
+      "nom": "open62541",
+      "alias": [
+        "open62541 OPC UA",
+        "libopen62541",
+        "open62541 stack"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "paquet",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Pile OPC UA client et serveur en C, cœur sans dépendance hors bibliothèque standard, de Linux à FreeRTOS et Zephyr : sécurité X.509 (mbedTLS ou OpenSSL), PubSub UADP et MQTT encore annoncé expérimental, serveur d'exemple certifié (profil Standard 2017, v1.4) ; MPL-2.0, support commercial chez o6 Automation.",
+      "tags": [
+        "opc-ua",
+        "iiot"
+      ],
+      "alternatives": [
+        "[[asyncua]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -26054,7 +26122,8 @@
         "[[Redpanda]]",
         "[[NATS]]",
         "[[RabbitMQ]]",
-        "[[EMQX]]"
+        "[[EMQX]]",
+        "[[Telegraf]]"
       ],
       "maturite": "production"
     },
