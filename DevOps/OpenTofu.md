@@ -92,3 +92,4 @@ Outil de **provisionnement** : on décrit dans des fichiers HCL les ressources v
 ## Voir aussi
 
 - [[DevOps]] — le hub du domaine
+- [[Infrastructure as code — configuration, provisionnement et idempotence]] — la notion : provisionnement et configuration, état et dérive, image immuable, réseau fermé.

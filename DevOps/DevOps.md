@@ -26,12 +26,15 @@ tags: [container, ci-cd, deployment-strategy]
 - Déployer sur un cluster Kubernetes depuis un dépôt Git, avec la trace de chaque changement → [[Argo CD]].
 - Une forge Git et une CI internes, quand le code n'a pas le droit d'aller chez GitHub → [[Comparatif - CI-CD auto-hébergé]] : [[GitLab CE]] (tout-en-un, lourd, une partie payante), [[Forgejo]] (légère) avec [[Woodpecker CI]], ou [[Jenkins]] (le plus souple, le plus exposé). Les règles d'un pipeline sur site : [[Pipelines CI-CD on-prem — runners, secrets et artefacts]].
 - Héberger ses propres images de conteneurs, en miroir ou en réseau fermé → [[Comparatif - Registres d'images]] : [[Harbor]] (complet, plus lourd) ou [[Zot]] (léger, un binaire).
-- Configurer des serveurs en SSH, sans agent, et pouvoir rejouer la configuration chez chaque client → [[Ansible]] ; créer des machines, des réseaux ou des ressources de cluster avec un plan avant chaque changement, sous une licence libre → [[OpenTofu]] (Terraform est sous BUSL depuis 2023, sa situation est dans la fiche).
+- Configurer des serveurs en SSH, sans agent, et pouvoir rejouer la configuration chez chaque client → [[Ansible]] ; créer des machines, des réseaux ou des ressources de cluster avec un plan avant chaque changement, sous une licence libre → [[OpenTofu]] (Terraform est sous BUSL depuis 2023, sa situation est dans la fiche). Les notions de base, idempotence, état, dérive, serveur immuable : [[Infrastructure as code — configuration, provisionnement et idempotence]].
 - Des dépendances jetables pendant un test → [[testcontainers]], au-dessus de Docker.
 
 <!-- AUTO:START -->
 ### Sous-domaines
 - [[Conteneurs & orchestration]] · [[Forges & CI-CD]]
+
+### Notions
+- [[Infrastructure as code — configuration, provisionnement et idempotence]] — domaines : infra-ops, mlops
 
 ### Briques
 - [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil.

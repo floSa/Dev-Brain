@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 955 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 956 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -747,6 +747,9 @@
 
 ### devops/conteneur
 - **Du Compose à Kubernetes — quand changer d'échelle** — domaines : mlops, infra-ops · alias : compose vers kubernetes, quand passer à kubernetes, migrer de compose à k8s, gitops
+
+### devops/infrastructure
+- **Infrastructure as code — configuration, provisionnement et idempotence** — domaines : infra-ops, mlops · alias : {'Infrastructure as code': 'configuration'}, provisionnement et idempotence, infrastructure as code, iac, idempotence, dérive de configuration, provisionnement et configuration
 
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
