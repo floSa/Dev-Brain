@@ -52,6 +52,7 @@ tags: [prompt-injection, ai-security, llm]
 - [[Sandboxing de code généré]] — contient les dégâts quand l'injection aboutit à de l'exécution de code.
 - [[mcp-protocol]] — *resources* et outils tiers sont des vecteurs d'injection indirecte.
 - [[RAG]] — le contenu récupéré est une entrée non fiable comme une autre.
+- Voir aussi : [[garak]], [[NeMo Guardrails]].
 
 ## Pour aller plus loin
 

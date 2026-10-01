@@ -75,6 +75,7 @@ tags: [reverse-proxy, tls, load-balancer, kubernetes, self-hosted]
 - **Envoy** (Apache-2.0, C++, CNCF diplômé depuis 2018, v1.39.1 du 2026-08-27, environ 29 000 étoiles), sans fiche. C'est un plan de données piloté par API (xDS), embarqué dans Istio, Cilium et Envoy Gateway. Il n'a **pas d'ACME natif** (demande ouverte depuis 2016), et un reverse proxy TLS coûte environ 40 à 50 lignes de YAML typé, sans découverte Docker. À rencontrer sans avoir à le configurer. **Envoy Gateway** (Apache-2.0, v1.9.2 du 2026-09-28, conforme Gateway API) est l'usage naturel sur Kubernetes ; son mode hors Kubernetes est déclaré expérimental, à ne pas utiliser en production.
 - **Contour** (CNCF incubation, v1.33.7) est actif, mais absent de la liste des implémentations Gateway API. **Emissary** aussi est actif.
 - Les VPN et réseaux maillés ne sont pas traités : écartés du périmètre.
+- Voir aussi : [[OpenBao]], [[Gestion des secrets]], [[Authelia]], [[Authentik]].
 
 ## Pour aller plus loin
 

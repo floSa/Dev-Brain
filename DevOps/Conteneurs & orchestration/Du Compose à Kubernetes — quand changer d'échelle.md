@@ -77,6 +77,7 @@ Aucun de ces quatre besoins n'est atteint par le seul fait d'avoir « beaucoup d
 - **HashiCorp Nomad.** Planificateur de conteneurs, de binaires et de machines virtuelles, sous licence BSL 1.1 dont le titulaire est IBM : le comparatif du dossier dit pourquoi il n'a pas de fiche.
 - **Les distributions Kubernetes** autres que k3s : RKE2, Talos Linux, MicroK8s, OKD.
 - Pour les modèles : [[KServe]] et [[Seldon Core]] présupposent un cluster ; [[Ray Serve]] et [[BentoML]] se déploient aussi sur une machine seule.
+- Voir aussi : [[Reverse proxy et TLS]], [[Traefik]], [[Harbor]], [[Zot]], [[Comparatif - Registres d'images]].
 
 ## Pour aller plus loin
 

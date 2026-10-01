@@ -62,6 +62,7 @@ tags: [secrets-management, cryptography, self-hosted]
 - **age** (BSD-3-Clause, Go, v1.3.2 du 2026-08-29) est l'outil de chiffrement de fichiers dont SOPS reprend les clés : X25519 ou clés SSH, ChaCha20-Poly1305, pas de négociation d'algorithmes. Le README ne le compare pas formellement à PGP.
 - **Sealed Secrets** (Apache-2.0, v0.40.0 du 2026-09-10) : chiffrement asymétrique pour Kubernetes seulement. Le dépôt est passé de `bitnami-labs` à `bitnami` ; le retrait du catalogue d'images Bitnami annoncé par Broadcom en 2025 ne mentionne pas Sealed Secrets, mais aucune source primaire ne confirme qu'il n'est pas touché.
 - **Configuration applicative** ([[python-dotenv]], [[Pydantic Settings]]) : elles *lisent* un secret, elles ne le gardent pas.
+- Voir aussi : [[Gitleaks]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Ansible]], [[OpenTofu]].
 
 ## Pour aller plus loin
 
